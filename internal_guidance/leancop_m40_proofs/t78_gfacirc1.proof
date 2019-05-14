@@ -1,0 +1,46 @@
+
+t78_gfacirc1 is a Theorem
+Start of proof for t78_gfacirc1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v1_xtuple_0(1^[])]
+ (2)  [v1_xtuple_0(2^[])]
+ (3)  [v1_xtuple_0(3^[])]
+ (4)  [-v1_facirc_1(k2_msafree2(k31_gfacirc1(1^[], 2^[], 3^[])))]
+ (5)  [-v1_xtuple_0(k4_tarski(_G7821, _G7862))]
+ (6)  [v1_facirc_1(k1_enumset1(_G7991, _G8061, _G8132)), -v1_xtuple_0(_G7991), -v1_xtuple_0(_G8061), -v1_xtuple_0(_G8132)]
+ (7)  [- (_G8548=k4_tarski(k10_finseq_1(_G8648, _G8749), k3_gfacirc1)), - (_G8648=k4_tarski(k10_finseq_1(_G8749, _G8548), k4_twoscomp)), - (_G8749=k4_tarski(k10_finseq_1(_G8548, _G8648), k3_twoscomp)), - (k2_msafree2(k31_gfacirc1(_G8548, _G8648, _G8749))=k1_enumset1(_G8548, _G8648, _G8749))]
+ (8)  [- (_G2826=_G2826)]
+ (9)  [_G2925=_G2970, - (_G2970=_G2925)]
+ (10)  [- (_G3158=_G3271), _G3158=_G3214, _G3214=_G3271]
+ (11)  [-v1_xtuple_0(_G3657), _G3608=_G3657, v1_xtuple_0(_G3608)]
+ (12)  [-v1_facirc_1(_G3926), _G3877=_G3926, v1_facirc_1(_G3877)]
+ (13)  [- (k4_tarski(_G4197, _G4332)=k4_tarski(_G4264, _G4401)), _G4197=_G4264, _G4332=_G4401]
+ (14)  [- (k10_finseq_1(_G4794, _G4929)=k10_finseq_1(_G4861, _G4998)), _G4794=_G4861, _G4929=_G4998]
+ (15)  [- (k1_enumset1(_G5391, _G5562, _G5737)=k1_enumset1(_G5476, _G5649, _G5826)), _G5391=_G5476, _G5562=_G5649, _G5737=_G5826]
+ (16)  [_G6419=_G6468, - (k2_msafree2(_G6419)=k2_msafree2(_G6468))]
+ (17)  [- (k31_gfacirc1(_G6688, _G6859, _G7034)=k31_gfacirc1(_G6773, _G6946, _G7123)), _G6688=_G6773, _G6859=_G6946, _G7034=_G7123]
+
+Connection Proof:
+-----------------
+1  [v1_xtuple_0(1^[])]   (1)  
+1.1  [-v1_xtuple_0(1^[]), v1_facirc_1(k1_enumset1(1^[], 2^[], 3^[])), -v1_xtuple_0(2^[]), -v1_xtuple_0(3^[])]   (6)  substitution:[[_G7991, _G8061, _G8132], [1^[], 2^[], 3^[]]]
+1.1.1  [-v1_facirc_1(k1_enumset1(1^[], 2^[], 3^[])), k2_msafree2(k31_gfacirc1(1^[], 2^[], 3^[]))=k1_enumset1(1^[], 2^[], 3^[]), v1_facirc_1(k2_msafree2(k31_gfacirc1(1^[], 2^[], 3^[])))]   (12)  substitution:[[_G3926, _G3877], [k1_enumset1(1^[], 2^[], 3^[]), k2_msafree2(k31_gfacirc1(1^[], 2^[], 3^[]))]]
+1.1.1.1  [- (k2_msafree2(k31_gfacirc1(1^[], 2^[], 3^[]))=k1_enumset1(1^[], 2^[], 3^[])), - (1^[]=k4_tarski(k10_finseq_1(2^[], 3^[]), k3_gfacirc1)), - (2^[]=k4_tarski(k10_finseq_1(3^[], 1^[]), k4_twoscomp)), - (3^[]=k4_tarski(k10_finseq_1(1^[], 2^[]), k3_twoscomp))]   (7)  substitution:[[_G8548, _G8648, _G8749], [1^[], 2^[], 3^[]]]
+1.1.1.1.1  [1^[]=k4_tarski(k10_finseq_1(2^[], 3^[]), k3_gfacirc1), - (k4_tarski(k10_finseq_1(2^[], 3^[]), k3_gfacirc1)=1^[])]   (9)  substitution:[[_G2925, _G2970], [1^[], k4_tarski(k10_finseq_1(2^[], 3^[]), k3_gfacirc1)]]
+1.1.1.1.1.1  [k4_tarski(k10_finseq_1(2^[], 3^[]), k3_gfacirc1)=1^[], -v1_xtuple_0(1^[]), v1_xtuple_0(k4_tarski(k10_finseq_1(2^[], 3^[]), k3_gfacirc1))]   (11)  substitution:[[_G3608, _G3657], [k4_tarski(k10_finseq_1(2^[], 3^[]), k3_gfacirc1), 1^[]]]
+1.1.1.1.1.1.1  [v1_xtuple_0(1^[])]   (1)  
+1.1.1.1.1.1.2  [-v1_xtuple_0(k4_tarski(k10_finseq_1(2^[], 3^[]), k3_gfacirc1))]   (5)  substitution:[[_G7821, _G7862], [k10_finseq_1(2^[], 3^[]), k3_gfacirc1]]
+1.1.1.1.2  [2^[]=k4_tarski(k10_finseq_1(3^[], 1^[]), k4_twoscomp), - (k4_tarski(k10_finseq_1(3^[], 1^[]), k4_twoscomp)=2^[])]   (9)  substitution:[[_G2925, _G2970], [2^[], k4_tarski(k10_finseq_1(3^[], 1^[]), k4_twoscomp)]]
+1.1.1.1.2.1  [k4_tarski(k10_finseq_1(3^[], 1^[]), k4_twoscomp)=2^[], -v1_xtuple_0(2^[]), v1_xtuple_0(k4_tarski(k10_finseq_1(3^[], 1^[]), k4_twoscomp))]   (11)  substitution:[[_G3608, _G3657], [k4_tarski(k10_finseq_1(3^[], 1^[]), k4_twoscomp), 2^[]]]
+1.1.1.1.2.1.1  [v1_xtuple_0(2^[])]   (2)  
+1.1.1.1.2.1.2  [-v1_xtuple_0(k4_tarski(k10_finseq_1(3^[], 1^[]), k4_twoscomp))]   (5)  substitution:[[_G7821, _G7862], [k10_finseq_1(3^[], 1^[]), k4_twoscomp]]
+1.1.1.1.3  [3^[]=k4_tarski(k10_finseq_1(1^[], 2^[]), k3_twoscomp), - (k4_tarski(k10_finseq_1(1^[], 2^[]), k3_twoscomp)=3^[])]   (9)  substitution:[[_G2925, _G2970], [3^[], k4_tarski(k10_finseq_1(1^[], 2^[]), k3_twoscomp)]]
+1.1.1.1.3.1  [k4_tarski(k10_finseq_1(1^[], 2^[]), k3_twoscomp)=3^[], -v1_xtuple_0(3^[]), v1_xtuple_0(k4_tarski(k10_finseq_1(1^[], 2^[]), k3_twoscomp))]   (11)  substitution:[[_G3608, _G3657], [k4_tarski(k10_finseq_1(1^[], 2^[]), k3_twoscomp), 3^[]]]
+1.1.1.1.3.1.1  [v1_xtuple_0(3^[])]   (3)  
+1.1.1.1.3.1.2  [-v1_xtuple_0(k4_tarski(k10_finseq_1(1^[], 2^[]), k3_twoscomp))]   (5)  substitution:[[_G7821, _G7862], [k10_finseq_1(1^[], 2^[]), k3_twoscomp]]
+1.1.1.2  [-v1_facirc_1(k2_msafree2(k31_gfacirc1(1^[], 2^[], 3^[])))]   (4)  
+1.1.2  [v1_xtuple_0(2^[])]   (2)  
+1.1.3  [v1_xtuple_0(3^[])]   (3)  
+------------------------------------------------------
+End of proof for t78_gfacirc1

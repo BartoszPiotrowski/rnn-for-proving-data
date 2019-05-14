@@ -1,0 +1,32 @@
+
+t8_scmfsa_1 is a Theorem
+Start of proof for t8_scmfsa_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k1_scmfsa_1=k2_xboole_0(k2_xboole_0(k1_tarski(k5_numbers), k2_scmfsa_1), k3_scmfsa_1)]
+ (2)  [- (k1_ami_2=k2_xboole_0(k1_tarski(k5_numbers), k2_scm_inst))]
+ (3)  [- (k1_scmfsa_1=k2_xboole_0(k1_ami_2, k1_scmfsa_i))]
+ (4)  [- (k2_scmfsa_1=k2_scm_inst)]
+ (5)  [- (k3_scmfsa_1=k1_scmfsa_i)]
+ (6)  [- (_G1064=_G1064)]
+ (7)  [_G1163=_G1208, - (_G1208=_G1163)]
+ (8)  [- (_G1396=_G1509), _G1396=_G1452, _G1452=_G1509]
+ (9)  [_G2434=_G2483, - (k1_tarski(_G2434)=k1_tarski(_G2483))]
+ (10)  [- (k2_xboole_0(_G1846, _G1981)=k2_xboole_0(_G1913, _G2050)), _G1846=_G1913, _G1981=_G2050]
+
+Connection Proof:
+-----------------
+1  [k1_scmfsa_1=k2_xboole_0(k2_xboole_0(k1_tarski(k5_numbers), k2_scmfsa_1), k3_scmfsa_1)]   (1)  
+1.1  [- (k1_scmfsa_1=k2_xboole_0(k2_xboole_0(k1_tarski(k5_numbers), k2_scmfsa_1), k3_scmfsa_1)), k1_scmfsa_1=k2_xboole_0(k1_ami_2, k1_scmfsa_i), k2_xboole_0(k1_ami_2, k1_scmfsa_i)=k2_xboole_0(k2_xboole_0(k1_tarski(k5_numbers), k2_scmfsa_1), k3_scmfsa_1)]   (8)  substitution:[[_G1396, _G1509, _G1452], [k1_scmfsa_1, k2_xboole_0(k2_xboole_0(k1_tarski(k5_numbers), k2_scmfsa_1), k3_scmfsa_1), k2_xboole_0(k1_ami_2, k1_scmfsa_i)]]
+1.1.1  [- (k1_scmfsa_1=k2_xboole_0(k1_ami_2, k1_scmfsa_i))]   (3)  
+1.1.2  [- (k2_xboole_0(k1_ami_2, k1_scmfsa_i)=k2_xboole_0(k2_xboole_0(k1_tarski(k5_numbers), k2_scmfsa_1), k3_scmfsa_1)), k1_ami_2=k2_xboole_0(k1_tarski(k5_numbers), k2_scmfsa_1), k1_scmfsa_i=k3_scmfsa_1]   (10)  substitution:[[_G1846, _G1981, _G1913, _G2050], [k1_ami_2, k1_scmfsa_i, k2_xboole_0(k1_tarski(k5_numbers), k2_scmfsa_1), k3_scmfsa_1]]
+1.1.2.1  [- (k1_ami_2=k2_xboole_0(k1_tarski(k5_numbers), k2_scmfsa_1)), k1_ami_2=k2_xboole_0(k1_tarski(k5_numbers), k2_scm_inst), k2_xboole_0(k1_tarski(k5_numbers), k2_scm_inst)=k2_xboole_0(k1_tarski(k5_numbers), k2_scmfsa_1)]   (8)  substitution:[[_G1396, _G1509, _G1452], [k1_ami_2, k2_xboole_0(k1_tarski(k5_numbers), k2_scmfsa_1), k2_xboole_0(k1_tarski(k5_numbers), k2_scm_inst)]]
+1.1.2.1.1  [- (k1_ami_2=k2_xboole_0(k1_tarski(k5_numbers), k2_scm_inst))]   (2)  
+1.1.2.1.2  [- (k2_xboole_0(k1_tarski(k5_numbers), k2_scm_inst)=k2_xboole_0(k1_tarski(k5_numbers), k2_scmfsa_1)), k1_tarski(k5_numbers)=k1_tarski(k5_numbers), k2_scm_inst=k2_scmfsa_1]   (10)  substitution:[[_G1846, _G1981, _G1913, _G2050], [k1_tarski(k5_numbers), k2_scm_inst, k1_tarski(k5_numbers), k2_scmfsa_1]]
+1.1.2.1.2.1  [- (k1_tarski(k5_numbers)=k1_tarski(k5_numbers))]   (6)  substitution:[[_G1064], [k1_tarski(k5_numbers)]]
+1.1.2.1.2.2  [- (k2_scm_inst=k2_scmfsa_1), k2_scmfsa_1=k2_scm_inst]   (7)  substitution:[[_G1208, _G1163], [k2_scm_inst, k2_scmfsa_1]]
+1.1.2.1.2.2.1  [- (k2_scmfsa_1=k2_scm_inst)]   (4)  
+1.1.2.2  [- (k1_scmfsa_i=k3_scmfsa_1), k3_scmfsa_1=k1_scmfsa_i]   (7)  substitution:[[_G1208, _G1163], [k1_scmfsa_i, k3_scmfsa_1]]
+1.1.2.2.1  [- (k3_scmfsa_1=k1_scmfsa_i)]   (5)  
+------------------------------------------------------
+End of proof for t8_scmfsa_1

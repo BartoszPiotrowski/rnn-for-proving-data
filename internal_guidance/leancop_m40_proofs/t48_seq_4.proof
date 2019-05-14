@@ -1,0 +1,63 @@
+
+t48_seq_4 is a Theorem
+Start of proof for t48_seq_4
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v1_xboole_0(1^[])]
+ (2)  [-v3_membered(1^[])]
+ (3)  [-v3_membered(2^[])]
+ (4)  [-r1_tarski(1^[], 2^[])]
+ (5)  [-v4_xxreal_2(2^[])]
+ (6)  [r1_xxreal_0(k2_seq_4(1^[]), k2_seq_4(2^[]))]
+ (7)  [v1_xboole_0(_G7935), m1_subset_1(_G8018, k1_zfmisc_1(_G7935)), -v1_xboole_0(_G8018)]
+ (8)  [v3_membered(_G8226), -v2_membered(_G8226)]
+ (9)  [- (k2_seq_4(_G8357)=k1_xxreal_2(_G8357)), -v1_xboole_0(_G8357), v3_membered(_G8357), v4_xxreal_2(_G8357)]
+ (10)  [m1_subset_1(_G8678, k1_zfmisc_1(_G8725)), -r1_tarski(_G8678, _G8725)]
+ (11)  [-m1_subset_1(_G8678, k1_zfmisc_1(_G8725)), r1_tarski(_G8678, _G8725)]
+ (12)  [v2_membered(_G9328), v2_membered(_G9419), r1_tarski(_G9328, _G9419), -r1_xxreal_0(k1_xxreal_2(_G9328), k1_xxreal_2(_G9419))]
+ (13)  [v2_membered(_G8938), v2_membered(_G9029), -v4_xxreal_2(_G8938), r1_tarski(_G8938, _G9029), v4_xxreal_2(_G9029)]
+ (14)  [_G7047=_G7096, - (k1_zfmisc_1(_G7047)=k1_zfmisc_1(_G7096))]
+ (15)  [_G7325=_G7374, - (k1_xxreal_2(_G7325)=k1_xxreal_2(_G7374))]
+ (16)  [_G7594=_G7643, - (k2_seq_4(_G7594)=k2_seq_4(_G7643))]
+ (17)  [- (_G3224=_G3224)]
+ (18)  [_G3323=_G3368, - (_G3368=_G3323)]
+ (19)  [- (_G3556=_G3669), _G3556=_G3612, _G3612=_G3669]
+ (20)  [-m1_subset_1(_G4073, _G4210), m1_subset_1(_G4006, _G4141), _G4006=_G4073, _G4141=_G4210]
+ (21)  [-v2_membered(_G4652), _G4603=_G4652, v2_membered(_G4603)]
+ (22)  [-v1_xboole_0(_G4930), _G4881=_G4930, v1_xboole_0(_G4881)]
+ (23)  [-v3_membered(_G5208), _G5159=_G5208, v3_membered(_G5159)]
+ (24)  [-r1_tarski(_G5504, _G5641), r1_tarski(_G5437, _G5572), _G5437=_G5504, _G5572=_G5641]
+ (25)  [-v4_xxreal_2(_G6083), _G6034=_G6083, v4_xxreal_2(_G6034)]
+ (26)  [-r1_xxreal_0(_G6370, _G6507), r1_xxreal_0(_G6303, _G6438), _G6303=_G6370, _G6438=_G6507]
+
+Connection Proof:
+-----------------
+1  [r1_xxreal_0(k2_seq_4(1^[]), k2_seq_4(2^[]))]   (6)  
+1.1  [-r1_xxreal_0(k2_seq_4(1^[]), k2_seq_4(2^[])), r1_xxreal_0(k1_xxreal_2(1^[]), k1_xxreal_2(2^[])), k1_xxreal_2(1^[])=k2_seq_4(1^[]), k1_xxreal_2(2^[])=k2_seq_4(2^[])]   (26)  substitution:[[_G6370, _G6507, _G6303, _G6438], [k2_seq_4(1^[]), k2_seq_4(2^[]), k1_xxreal_2(1^[]), k1_xxreal_2(2^[])]]
+1.1.1  [-r1_xxreal_0(k1_xxreal_2(1^[]), k1_xxreal_2(2^[])), v2_membered(1^[]), v2_membered(2^[]), r1_tarski(1^[], 2^[])]   (12)  substitution:[[_G9328, _G9419], [1^[], 2^[]]]
+1.1.1.1  [-v2_membered(1^[]), v3_membered(1^[])]   (8)  substitution:[[_G8226], [1^[]]]
+1.1.1.1.1  [-v3_membered(1^[])]   (2)  
+1.1.1.2  [-v2_membered(2^[]), v3_membered(2^[])]   (8)  substitution:[[_G8226], [2^[]]]
+1.1.1.2.1  [-v3_membered(2^[])]   (3)  
+1.1.1.3  [-r1_tarski(1^[], 2^[])]   (4)  
+1.1.2  [- (k1_xxreal_2(1^[])=k2_seq_4(1^[])), k2_seq_4(1^[])=k1_xxreal_2(1^[])]   (18)  substitution:[[_G3368, _G3323], [k1_xxreal_2(1^[]), k2_seq_4(1^[])]]
+1.1.2.1  [- (k2_seq_4(1^[])=k1_xxreal_2(1^[])), -v1_xboole_0(1^[]), v3_membered(1^[]), v4_xxreal_2(1^[])]   (9)  substitution:[[_G8357], [1^[]]]
+1.1.2.1.1  [v1_xboole_0(1^[])]   (1)  
+1.1.2.1.2  [-v3_membered(1^[])]   (2)  
+1.1.2.1.3  [-v4_xxreal_2(1^[]), v2_membered(1^[]), v2_membered(2^[]), r1_tarski(1^[], 2^[]), v4_xxreal_2(2^[])]   (13)  substitution:[[_G8938, _G9029], [1^[], 2^[]]]
+1.1.2.1.3.1  [-v2_membered(1^[]), v3_membered(1^[])]   (8)  substitution:[[_G8226], [1^[]]]
+1.1.2.1.3.1.1  [-v3_membered(1^[])]   (2)  
+1.1.2.1.3.2  [-v2_membered(2^[]), v3_membered(2^[])]   (8)  substitution:[[_G8226], [2^[]]]
+1.1.2.1.3.2.1  [-v3_membered(2^[])]   (3)  
+1.1.2.1.3.3  [-r1_tarski(1^[], 2^[])]   (4)  
+1.1.2.1.3.4  [-v4_xxreal_2(2^[])]   (5)  
+1.1.3  [- (k1_xxreal_2(2^[])=k2_seq_4(2^[])), k2_seq_4(2^[])=k1_xxreal_2(2^[])]   (18)  substitution:[[_G3368, _G3323], [k1_xxreal_2(2^[]), k2_seq_4(2^[])]]
+1.1.3.1  [- (k2_seq_4(2^[])=k1_xxreal_2(2^[])), -v1_xboole_0(2^[]), v3_membered(2^[]), v4_xxreal_2(2^[])]   (9)  substitution:[[_G8357], [2^[]]]
+1.1.3.1.1  [v1_xboole_0(2^[]), m1_subset_1(1^[], k1_zfmisc_1(2^[])), -v1_xboole_0(1^[])]   (7)  substitution:[[_G7935, _G8018], [2^[], 1^[]]]
+1.1.3.1.1.1  [-m1_subset_1(1^[], k1_zfmisc_1(2^[])), r1_tarski(1^[], 2^[])]   (11)  substitution:[[_G8678, _G8725], [1^[], 2^[]]]
+1.1.3.1.1.1.1  [-r1_tarski(1^[], 2^[])]   (4)  
+1.1.3.1.1.2  [v1_xboole_0(1^[])]   (1)  
+1.1.3.1.2  [-v3_membered(2^[])]   (3)  
+1.1.3.1.3  [-v4_xxreal_2(2^[])]   (5)  
+------------------------------------------------------
+End of proof for t48_seq_4

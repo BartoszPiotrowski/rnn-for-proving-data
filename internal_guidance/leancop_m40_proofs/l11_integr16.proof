@@ -1,0 +1,57 @@
+
+l11_integr16 is a Theorem
+Start of proof for l11_integr16
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m2_finseq_1(1^[], k2_numbers)]
+ (2)  [-m1_subset_1(2^[], k2_numbers)]
+ (3)  [k17_rvsum_1(k8_finseq_1(k2_numbers, 1^[], k12_finseq_1(k2_numbers, 2^[])))=k3_binop_2(k17_rvsum_1(1^[]), 2^[])]
+ (4)  [m2_finseq_1(_G12060, k2_numbers), - (k17_rvsum_1(_G12060)=k1_finsop_1(k2_numbers, _G12060, k27_binop_2))]
+ (5)  [-m2_finseq_1(k12_finseq_1(_G12345, _G12400), _G12345), -v1_xboole_0(_G12345), m1_subset_1(_G12400, _G12345)]
+ (6)  [-v1_funct_1(k27_binop_2)]
+ (7)  [-v1_funct_2(k27_binop_2, k2_zfmisc_1(k2_numbers, k2_numbers), k2_numbers)]
+ (8)  [-m1_subset_1(k27_binop_2, k1_zfmisc_1(k2_zfmisc_1(k2_zfmisc_1(k2_numbers, k2_numbers), k2_numbers)))]
+ (9)  [v1_xboole_0(k2_numbers)]
+ (10)  [m2_finseq_1(_G14104, k2_numbers), m2_finseq_1(_G14225, k2_numbers), - (k17_rvsum_1(k8_finseq_1(k2_numbers, _G14104, _G14225))=k3_binop_2(k17_rvsum_1(_G14104), k17_rvsum_1(_G14225)))]
+ (11)  [-v1_xboole_0(_G13121), m1_subset_1(_G13260, _G13121), - (k1_finsop_1(_G13121, k12_finseq_1(_G13121, _G13260), _G13404)=_G13260), v1_funct_1(_G13404), v1_funct_2(_G13404, k2_zfmisc_1(_G13121, _G13121), _G13121), m1_subset_1(_G13404, k1_zfmisc_1(k2_zfmisc_1(k2_zfmisc_1(_G13121, _G13121), _G13121)))]
+ (12)  [_G7519=_G7568, - (k1_zfmisc_1(_G7519)=k1_zfmisc_1(_G7568))]
+ (13)  [- (k2_zfmisc_1(_G7797, _G7932)=k2_zfmisc_1(_G7864, _G8001)), _G7797=_G7864, _G7932=_G8001]
+ (14)  [- (k1_finsop_1(_G8394, _G8565, _G8740)=k1_finsop_1(_G8479, _G8652, _G8829)), _G8394=_G8479, _G8565=_G8652, _G8740=_G8829]
+ (15)  [- (k8_finseq_1(_G9422, _G9593, _G9768)=k8_finseq_1(_G9507, _G9680, _G9857)), _G9422=_G9507, _G9593=_G9680, _G9768=_G9857]
+ (16)  [- (k12_finseq_1(_G10450, _G10585)=k12_finseq_1(_G10517, _G10654)), _G10450=_G10517, _G10585=_G10654]
+ (17)  [_G11635=_G11684, - (k17_rvsum_1(_G11635)=k17_rvsum_1(_G11684))]
+ (18)  [- (k3_binop_2(_G11047, _G11182)=k3_binop_2(_G11114, _G11251)), _G11047=_G11114, _G11182=_G11251]
+ (19)  [- (_G3863=_G3863)]
+ (20)  [_G3962=_G4007, - (_G4007=_G3962)]
+ (21)  [- (_G4195=_G4308), _G4195=_G4251, _G4251=_G4308]
+ (22)  [-v1_xboole_0(_G4694), _G4645=_G4694, v1_xboole_0(_G4645)]
+ (23)  [-v1_funct_1(_G4972), _G4923=_G4972, v1_funct_1(_G4923)]
+ (24)  [-v1_funct_2(_G5286, _G5459, _G5636), v1_funct_2(_G5201, _G5372, _G5547), _G5201=_G5286, _G5372=_G5459, _G5547=_G5636]
+ (25)  [-m2_finseq_1(_G6296, _G6433), m2_finseq_1(_G6229, _G6364), _G6229=_G6296, _G6364=_G6433]
+ (26)  [-m1_subset_1(_G6884, _G7021), m1_subset_1(_G6817, _G6952), _G6817=_G6884, _G6952=_G7021]
+
+Connection Proof:
+-----------------
+1  [k17_rvsum_1(k8_finseq_1(k2_numbers, 1^[], k12_finseq_1(k2_numbers, 2^[])))=k3_binop_2(k17_rvsum_1(1^[]), 2^[])]   (3)  
+1.1  [- (k17_rvsum_1(k8_finseq_1(k2_numbers, 1^[], k12_finseq_1(k2_numbers, 2^[])))=k3_binop_2(k17_rvsum_1(1^[]), 2^[])), k17_rvsum_1(k8_finseq_1(k2_numbers, 1^[], k12_finseq_1(k2_numbers, 2^[])))=k3_binop_2(k17_rvsum_1(1^[]), k17_rvsum_1(k12_finseq_1(k2_numbers, 2^[]))), k3_binop_2(k17_rvsum_1(1^[]), k17_rvsum_1(k12_finseq_1(k2_numbers, 2^[])))=k3_binop_2(k17_rvsum_1(1^[]), 2^[])]   (21)  substitution:[[_G4195, _G4308, _G4251], [k17_rvsum_1(k8_finseq_1(k2_numbers, 1^[], k12_finseq_1(k2_numbers, 2^[]))), k3_binop_2(k17_rvsum_1(1^[]), 2^[]), k3_binop_2(k17_rvsum_1(1^[]), k17_rvsum_1(k12_finseq_1(k2_numbers, 2^[])))]]
+1.1.1  [- (k17_rvsum_1(k8_finseq_1(k2_numbers, 1^[], k12_finseq_1(k2_numbers, 2^[])))=k3_binop_2(k17_rvsum_1(1^[]), k17_rvsum_1(k12_finseq_1(k2_numbers, 2^[])))), m2_finseq_1(1^[], k2_numbers), m2_finseq_1(k12_finseq_1(k2_numbers, 2^[]), k2_numbers)]   (10)  substitution:[[_G14104, _G14225], [1^[], k12_finseq_1(k2_numbers, 2^[])]]
+1.1.1.1  [-m2_finseq_1(1^[], k2_numbers)]   (1)  
+1.1.1.2  [-m2_finseq_1(k12_finseq_1(k2_numbers, 2^[]), k2_numbers), -v1_xboole_0(k2_numbers), m1_subset_1(2^[], k2_numbers)]   (5)  substitution:[[_G12345, _G12400], [k2_numbers, 2^[]]]
+1.1.1.2.1  [v1_xboole_0(k2_numbers)]   (9)  
+1.1.1.2.2  [-m1_subset_1(2^[], k2_numbers)]   (2)  
+1.1.2  [- (k3_binop_2(k17_rvsum_1(1^[]), k17_rvsum_1(k12_finseq_1(k2_numbers, 2^[])))=k3_binop_2(k17_rvsum_1(1^[]), 2^[])), k17_rvsum_1(1^[])=k17_rvsum_1(1^[]), k17_rvsum_1(k12_finseq_1(k2_numbers, 2^[]))=2^[]]   (18)  substitution:[[_G11047, _G11182, _G11114, _G11251], [k17_rvsum_1(1^[]), k17_rvsum_1(k12_finseq_1(k2_numbers, 2^[])), k17_rvsum_1(1^[]), 2^[]]]
+1.1.2.1  [- (k17_rvsum_1(1^[])=k17_rvsum_1(1^[])), 1^[]=1^[]]   (17)  substitution:[[_G11635, _G11684], [1^[], 1^[]]]
+1.1.2.1.1  [- (1^[]=1^[])]   (19)  substitution:[[_G3863], [1^[]]]
+1.1.2.2  [- (k17_rvsum_1(k12_finseq_1(k2_numbers, 2^[]))=2^[]), k17_rvsum_1(k12_finseq_1(k2_numbers, 2^[]))=k1_finsop_1(k2_numbers, k12_finseq_1(k2_numbers, 2^[]), k27_binop_2), k1_finsop_1(k2_numbers, k12_finseq_1(k2_numbers, 2^[]), k27_binop_2)=2^[]]   (21)  substitution:[[_G4195, _G4308, _G4251], [k17_rvsum_1(k12_finseq_1(k2_numbers, 2^[])), 2^[], k1_finsop_1(k2_numbers, k12_finseq_1(k2_numbers, 2^[]), k27_binop_2)]]
+1.1.2.2.1  [- (k17_rvsum_1(k12_finseq_1(k2_numbers, 2^[]))=k1_finsop_1(k2_numbers, k12_finseq_1(k2_numbers, 2^[]), k27_binop_2)), m2_finseq_1(k12_finseq_1(k2_numbers, 2^[]), k2_numbers)]   (4)  substitution:[[_G12060], [k12_finseq_1(k2_numbers, 2^[])]]
+1.1.2.2.1.1  [-m2_finseq_1(k12_finseq_1(k2_numbers, 2^[]), k2_numbers), -v1_xboole_0(k2_numbers), m1_subset_1(2^[], k2_numbers)]   (5)  substitution:[[_G12345, _G12400], [k2_numbers, 2^[]]]
+1.1.2.2.1.1.1  [v1_xboole_0(k2_numbers)]   (9)  
+1.1.2.2.1.1.2  [-m1_subset_1(2^[], k2_numbers)]   (2)  
+1.1.2.2.2  [- (k1_finsop_1(k2_numbers, k12_finseq_1(k2_numbers, 2^[]), k27_binop_2)=2^[]), -v1_xboole_0(k2_numbers), m1_subset_1(2^[], k2_numbers), v1_funct_1(k27_binop_2), v1_funct_2(k27_binop_2, k2_zfmisc_1(k2_numbers, k2_numbers), k2_numbers), m1_subset_1(k27_binop_2, k1_zfmisc_1(k2_zfmisc_1(k2_zfmisc_1(k2_numbers, k2_numbers), k2_numbers)))]   (11)  substitution:[[_G13121, _G13260, _G13404], [k2_numbers, 2^[], k27_binop_2]]
+1.1.2.2.2.1  [v1_xboole_0(k2_numbers)]   (9)  
+1.1.2.2.2.2  [-m1_subset_1(2^[], k2_numbers)]   (2)  
+1.1.2.2.2.3  [-v1_funct_1(k27_binop_2)]   (6)  
+1.1.2.2.2.4  [-v1_funct_2(k27_binop_2, k2_zfmisc_1(k2_numbers, k2_numbers), k2_numbers)]   (7)  
+1.1.2.2.2.5  [-m1_subset_1(k27_binop_2, k1_zfmisc_1(k2_zfmisc_1(k2_zfmisc_1(k2_numbers, k2_numbers), k2_numbers)))]   (8)  
+------------------------------------------------------
+End of proof for l11_integr16

@@ -1,0 +1,51 @@
+
+t2_supinf_1 is a Theorem
+Start of proof for t2_supinf_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v2_membered(2^[])]
+ (2)  [-v2_membered(3^[])]
+ (3)  [-r1_tarski(2^[], 3^[])]
+ (4)  [-v1_xxreal_0(4^[])]
+ (5)  [-r2_hidden(4^[], k4_supinf_1(3^[]))]
+ (6)  [r2_hidden(4^[], k4_supinf_1(2^[]))]
+ (7)  [v2_membered(_G6534), -v2_membered(k4_supinf_1(_G6534))]
+ (8)  [v2_membered(_G6672), v2_membered(_G6770), r1_tarski(_G6672, _G6770), m2_xxreal_2(_G6921, _G6770), -m2_xxreal_2(_G6921, _G6672)]
+ (9)  [v2_membered(_G5925), v2_membered(_G6030), - (_G6030=k4_supinf_1(_G5925)), -v1_xxreal_0(1^[_G6030, _G5925])]
+ (10)  [v2_membered(_G5925), v2_membered(_G6030), - (_G6030=k4_supinf_1(_G5925)), r2_hidden(1^[_G6030, _G5925], _G6030), m2_xxreal_2(1^[_G6030, _G5925], _G5925)]
+ (11)  [v2_membered(_G5925), v2_membered(_G6030), - (_G6030=k4_supinf_1(_G5925)), -r2_hidden(1^[_G6030, _G5925], _G6030), -m2_xxreal_2(1^[_G6030, _G5925], _G5925)]
+ (12)  [v2_membered(_G5925), v2_membered(_G6030), _G6030=k4_supinf_1(_G5925), v1_xxreal_0(_G6202), r2_hidden(_G6202, _G6030), -m2_xxreal_2(_G6202, _G5925)]
+ (13)  [v2_membered(_G5925), v2_membered(_G6030), _G6030=k4_supinf_1(_G5925), v1_xxreal_0(_G6202), -r2_hidden(_G6202, _G6030), m2_xxreal_2(_G6202, _G5925)]
+ (14)  [_G5626=_G5675, - (k4_supinf_1(_G5626)=k4_supinf_1(_G5675))]
+ (15)  [- (_G2410=_G2410)]
+ (16)  [_G2509=_G2554, - (_G2554=_G2509)]
+ (17)  [- (_G2742=_G2855), _G2742=_G2798, _G2798=_G2855]
+ (18)  [-m2_xxreal_2(_G3259, _G3396), m2_xxreal_2(_G3192, _G3327), _G3192=_G3259, _G3327=_G3396]
+ (19)  [-v2_membered(_G3838), _G3789=_G3838, v2_membered(_G3789)]
+ (20)  [-r1_tarski(_G4134, _G4271), r1_tarski(_G4067, _G4202), _G4067=_G4134, _G4202=_G4271]
+ (21)  [-v1_xxreal_0(_G4713), _G4664=_G4713, v1_xxreal_0(_G4664)]
+ (22)  [-r2_hidden(_G5000, _G5137), r2_hidden(_G4933, _G5068), _G4933=_G5000, _G5068=_G5137]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(4^[], k4_supinf_1(2^[]))]   (6)  
+1.1  [-r2_hidden(4^[], k4_supinf_1(2^[])), v2_membered(2^[]), v2_membered(k4_supinf_1(2^[])), k4_supinf_1(2^[])=k4_supinf_1(2^[]), v1_xxreal_0(4^[]), m2_xxreal_2(4^[], 2^[])]   (13)  substitution:[[_G6202, _G6030, _G5925], [4^[], k4_supinf_1(2^[]), 2^[]]]
+1.1.1  [-v2_membered(2^[])]   (1)  
+1.1.2  [-v2_membered(k4_supinf_1(2^[])), v2_membered(2^[])]   (7)  substitution:[[_G6534], [2^[]]]
+1.1.2.1  [-v2_membered(2^[])]   (1)  
+1.1.3  [- (k4_supinf_1(2^[])=k4_supinf_1(2^[])), 2^[]=2^[]]   (14)  substitution:[[_G5626, _G5675], [2^[], 2^[]]]
+1.1.3.1  [- (2^[]=2^[])]   (15)  substitution:[[_G2410], [2^[]]]
+1.1.4  [-v1_xxreal_0(4^[])]   (4)  
+1.1.5  [-m2_xxreal_2(4^[], 2^[]), v2_membered(2^[]), v2_membered(3^[]), r1_tarski(2^[], 3^[]), m2_xxreal_2(4^[], 3^[])]   (8)  substitution:[[_G6921, _G6672, _G6770], [4^[], 2^[], 3^[]]]
+1.1.5.1  [-v2_membered(2^[])]   (1)  
+1.1.5.2  [-v2_membered(3^[])]   (2)  
+1.1.5.3  [-r1_tarski(2^[], 3^[])]   (3)  
+1.1.5.4  [-m2_xxreal_2(4^[], 3^[]), v2_membered(3^[]), v2_membered(k4_supinf_1(3^[])), k4_supinf_1(3^[])=k4_supinf_1(3^[]), v1_xxreal_0(4^[]), r2_hidden(4^[], k4_supinf_1(3^[]))]   (12)  substitution:[[_G6202, _G5925, _G6030], [4^[], 3^[], k4_supinf_1(3^[])]]
+1.1.5.4.1  [-v2_membered(3^[])]   (2)  
+1.1.5.4.2  [-v2_membered(k4_supinf_1(3^[])), v2_membered(3^[])]   (7)  substitution:[[_G6534], [3^[]]]
+1.1.5.4.2.1  [-v2_membered(3^[])]   (2)  
+1.1.5.4.3  [- (k4_supinf_1(3^[])=k4_supinf_1(3^[]))]   (15)  substitution:[[_G2410], [k4_supinf_1(3^[])]]
+1.1.5.4.4  [-v1_xxreal_0(4^[])]   (4)  
+1.1.5.4.5  [-r2_hidden(4^[], k4_supinf_1(3^[]))]   (5)  
+------------------------------------------------------
+End of proof for t2_supinf_1

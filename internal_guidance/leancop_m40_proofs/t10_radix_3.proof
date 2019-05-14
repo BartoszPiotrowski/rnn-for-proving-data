@@ -1,0 +1,27 @@
+
+t10_radix_3 is a Theorem
+Start of proof for t10_radix_3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v7_ordinal1(2^[])]
+ (2)  [r1_tarski(k1_radix_3(2^[]), k4_numbers)]
+ (3)  [v7_ordinal1(_G1177), -r1_tarski(k1_radix_3(_G1177), k2_radix_3(_G1177))]
+ (4)  [v7_ordinal1(_G1357), -r1_tarski(k2_radix_3(_G1357), k4_numbers)]
+ (5)  [-r1_tarski(_G775, _G831), -r2_hidden(1^[_G831, _G775], _G775)]
+ (6)  [-r1_tarski(_G775, _G831), r2_hidden(1^[_G831, _G775], _G831)]
+ (7)  [r1_tarski(_G775, _G831), r2_hidden(_G945, _G775), -r2_hidden(_G945, _G831)]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k1_radix_3(2^[]), k4_numbers)]   (2)  
+1.1  [-r1_tarski(k1_radix_3(2^[]), k4_numbers), -r2_hidden(1^[k4_numbers, k1_radix_3(2^[])], k1_radix_3(2^[]))]   (5)  substitution:[[_G775, _G831], [k1_radix_3(2^[]), k4_numbers]]
+1.1.1  [r2_hidden(1^[k4_numbers, k1_radix_3(2^[])], k1_radix_3(2^[])), r1_tarski(k1_radix_3(2^[]), k2_radix_3(2^[])), -r2_hidden(1^[k4_numbers, k1_radix_3(2^[])], k2_radix_3(2^[]))]   (7)  substitution:[[_G945, _G775, _G831], [1^[k4_numbers, k1_radix_3(2^[])], k1_radix_3(2^[]), k2_radix_3(2^[])]]
+1.1.1.1  [-r1_tarski(k1_radix_3(2^[]), k2_radix_3(2^[])), v7_ordinal1(2^[])]   (3)  substitution:[[_G1177], [2^[]]]
+1.1.1.1.1  [-v7_ordinal1(2^[])]   (1)  
+1.1.1.2  [r2_hidden(1^[k4_numbers, k1_radix_3(2^[])], k2_radix_3(2^[])), r1_tarski(k2_radix_3(2^[]), k4_numbers), -r2_hidden(1^[k4_numbers, k1_radix_3(2^[])], k4_numbers)]   (7)  substitution:[[_G945, _G775, _G831], [1^[k4_numbers, k1_radix_3(2^[])], k2_radix_3(2^[]), k4_numbers]]
+1.1.1.2.1  [-r1_tarski(k2_radix_3(2^[]), k4_numbers), v7_ordinal1(2^[])]   (4)  substitution:[[_G1357], [2^[]]]
+1.1.1.2.1.1  [-v7_ordinal1(2^[])]   (1)  
+1.1.1.2.2  [r2_hidden(1^[k4_numbers, k1_radix_3(2^[])], k4_numbers), -r1_tarski(k1_radix_3(2^[]), k4_numbers)]   (6)  substitution:[[_G831, _G775], [k4_numbers, k1_radix_3(2^[])]]
+1.1.1.2.2.1  [r1_tarski(k1_radix_3(2^[]), k4_numbers)]   (2)  
+------------------------------------------------------
+End of proof for t10_radix_3

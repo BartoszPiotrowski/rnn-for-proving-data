@@ -1,0 +1,32 @@
+
+l3_pepin is a Theorem
+Start of proof for l3_pepin
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v7_ordinal1(1^[])]
+ (2)  [1^[]=k6_numbers]
+ (3)  [r1_xxreal_0(k6_numbers, k6_xcmplx_0(1^[], np__1))]
+ (4)  [- (k6_numbers=k1_xboole_0)]
+ (5)  [v7_ordinal1(_G3580), - (_G3580=k1_xboole_0), -r1_xxreal_0(k1_xboole_0, k6_xcmplx_0(_G3580, np__1))]
+ (6)  [- (k6_xcmplx_0(_G2962, _G3097)=k6_xcmplx_0(_G3029, _G3166)), _G2962=_G3029, _G3097=_G3166]
+ (7)  [- (_G1281=_G1281)]
+ (8)  [_G1380=_G1425, - (_G1425=_G1380)]
+ (9)  [- (_G1613=_G1726), _G1613=_G1669, _G1669=_G1726]
+ (10)  [-v7_ordinal1(_G2112), _G2063=_G2112, v7_ordinal1(_G2063)]
+ (11)  [-r1_xxreal_0(_G2399, _G2536), r1_xxreal_0(_G2332, _G2467), _G2332=_G2399, _G2467=_G2536]
+
+Connection Proof:
+-----------------
+1  [1^[]=k6_numbers]   (2)  
+1.1  [- (1^[]=k6_numbers), 1^[]=k1_xboole_0, k1_xboole_0=k6_numbers]   (9)  substitution:[[_G1613, _G1726, _G1669], [1^[], k6_numbers, k1_xboole_0]]
+1.1.1  [- (1^[]=k1_xboole_0), v7_ordinal1(1^[]), -r1_xxreal_0(k1_xboole_0, k6_xcmplx_0(1^[], np__1))]   (5)  substitution:[[_G3580], [1^[]]]
+1.1.1.1  [-v7_ordinal1(1^[])]   (1)  
+1.1.1.2  [r1_xxreal_0(k1_xboole_0, k6_xcmplx_0(1^[], np__1)), -r1_xxreal_0(k6_numbers, k6_xcmplx_0(1^[], np__1)), k1_xboole_0=k6_numbers, k6_xcmplx_0(1^[], np__1)=k6_xcmplx_0(1^[], np__1)]   (11)  substitution:[[_G2332, _G2467, _G2399, _G2536], [k1_xboole_0, k6_xcmplx_0(1^[], np__1), k6_numbers, k6_xcmplx_0(1^[], np__1)]]
+1.1.1.2.1  [r1_xxreal_0(k6_numbers, k6_xcmplx_0(1^[], np__1))]   (3)  
+1.1.1.2.2  [- (k1_xboole_0=k6_numbers), k6_numbers=k1_xboole_0]   (8)  substitution:[[_G1425, _G1380], [k1_xboole_0, k6_numbers]]
+1.1.1.2.2.1  [- (k6_numbers=k1_xboole_0)]   (4)  
+1.1.1.2.3  [- (k6_xcmplx_0(1^[], np__1)=k6_xcmplx_0(1^[], np__1))]   (7)  substitution:[[_G1281], [k6_xcmplx_0(1^[], np__1)]]
+1.1.2  [- (k1_xboole_0=k6_numbers), k6_numbers=k1_xboole_0]   (8)  substitution:[[_G1425, _G1380], [k1_xboole_0, k6_numbers]]
+1.1.2.1  [- (k6_numbers=k1_xboole_0)]   (4)  
+------------------------------------------------------
+End of proof for l3_pepin

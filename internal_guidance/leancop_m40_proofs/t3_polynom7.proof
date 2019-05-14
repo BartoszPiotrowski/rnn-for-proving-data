@@ -1,0 +1,54 @@
+
+t3_polynom7 is a Theorem
+Start of proof for t3_polynom7
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(1^[])]
+ (2)  [-v4_relat_1(1^[], k1_xboole_0)]
+ (3)  [-v1_funct_1(1^[])]
+ (4)  [-v1_partfun1(1^[], k1_xboole_0)]
+ (5)  [-v4_valued_0(1^[])]
+ (6)  [-v2_pre_poly(1^[])]
+ (7)  [1^[]=k16_pre_poly(k1_xboole_0)]
+ (8)  [- (k16_pre_poly(_G7245)=k8_funcop_1(k5_numbers, _G7245, k6_numbers))]
+ (9)  [- (k5_numbers=k4_ordinal1)]
+ (10)  [- (k6_numbers=k1_xboole_0)]
+ (11)  [-v1_relat_1(k8_funcop_1(k5_numbers, _G7934, k6_numbers))]
+ (12)  [-v4_relat_1(k8_funcop_1(k5_numbers, _G7934, k6_numbers), _G7934)]
+ (13)  [-v1_funct_1(k8_funcop_1(k5_numbers, _G7934, k6_numbers))]
+ (14)  [-v1_partfun1(k8_funcop_1(k5_numbers, _G7934, k6_numbers), _G7934)]
+ (15)  [-v4_valued_0(k8_funcop_1(k5_numbers, _G7934, k6_numbers))]
+ (16)  [-v2_pre_poly(k8_funcop_1(k5_numbers, _G7934, k6_numbers))]
+ (17)  [- (_G7560=k1_xboole_0), v1_relat_1(_G7560), v4_relat_1(_G7560, k1_xboole_0), v1_funct_1(_G7560), v1_partfun1(_G7560, k1_xboole_0)]
+ (18)  [_G6925=_G6974, - (k16_pre_poly(_G6925)=k16_pre_poly(_G6974))]
+ (19)  [- (k8_funcop_1(_G5906, _G6077, _G6252)=k8_funcop_1(_G5991, _G6164, _G6341)), _G5906=_G5991, _G6077=_G6164, _G6252=_G6341]
+ (20)  [- (_G2701=_G2701)]
+ (21)  [_G2800=_G2845, - (_G2845=_G2800)]
+ (22)  [- (_G3033=_G3146), _G3033=_G3089, _G3089=_G3146]
+ (23)  [-v1_relat_1(_G3532), _G3483=_G3532, v1_relat_1(_G3483)]
+ (24)  [-v4_relat_1(_G3828, _G3965), v4_relat_1(_G3761, _G3896), _G3761=_G3828, _G3896=_G3965]
+ (25)  [-v1_funct_1(_G4407), _G4358=_G4407, v1_funct_1(_G4358)]
+ (26)  [-v1_partfun1(_G4703, _G4840), v1_partfun1(_G4636, _G4771), _G4636=_G4703, _G4771=_G4840]
+ (27)  [-v4_valued_0(_G5282), _G5233=_G5282, v4_valued_0(_G5233)]
+ (28)  [-v2_pre_poly(_G5551), _G5502=_G5551, v2_pre_poly(_G5502)]
+
+Connection Proof:
+-----------------
+1  [1^[]=k16_pre_poly(k1_xboole_0)]   (7)  
+1.1  [- (1^[]=k16_pre_poly(k1_xboole_0)), k16_pre_poly(k1_xboole_0)=1^[]]   (21)  substitution:[[_G2845, _G2800], [1^[], k16_pre_poly(k1_xboole_0)]]
+1.1.1  [- (k16_pre_poly(k1_xboole_0)=1^[]), k16_pre_poly(k1_xboole_0)=k8_funcop_1(k5_numbers, k1_xboole_0, k6_numbers), k8_funcop_1(k5_numbers, k1_xboole_0, k6_numbers)=1^[]]   (22)  substitution:[[_G3033, _G3146, _G3089], [k16_pre_poly(k1_xboole_0), 1^[], k8_funcop_1(k5_numbers, k1_xboole_0, k6_numbers)]]
+1.1.1.1  [- (k16_pre_poly(k1_xboole_0)=k8_funcop_1(k5_numbers, k1_xboole_0, k6_numbers))]   (8)  substitution:[[_G7245], [k1_xboole_0]]
+1.1.1.2  [- (k8_funcop_1(k5_numbers, k1_xboole_0, k6_numbers)=1^[]), k8_funcop_1(k5_numbers, k1_xboole_0, k6_numbers)=k1_xboole_0, k1_xboole_0=1^[]]   (22)  substitution:[[_G3033, _G3146, _G3089], [k8_funcop_1(k5_numbers, k1_xboole_0, k6_numbers), 1^[], k1_xboole_0]]
+1.1.1.2.1  [- (k8_funcop_1(k5_numbers, k1_xboole_0, k6_numbers)=k1_xboole_0), v1_relat_1(k8_funcop_1(k5_numbers, k1_xboole_0, k6_numbers)), v4_relat_1(k8_funcop_1(k5_numbers, k1_xboole_0, k6_numbers), k1_xboole_0), v1_funct_1(k8_funcop_1(k5_numbers, k1_xboole_0, k6_numbers)), v1_partfun1(k8_funcop_1(k5_numbers, k1_xboole_0, k6_numbers), k1_xboole_0)]   (17)  substitution:[[_G7560], [k8_funcop_1(k5_numbers, k1_xboole_0, k6_numbers)]]
+1.1.1.2.1.1  [-v1_relat_1(k8_funcop_1(k5_numbers, k1_xboole_0, k6_numbers))]   (11)  substitution:[[_G7934], [k1_xboole_0]]
+1.1.1.2.1.2  [-v4_relat_1(k8_funcop_1(k5_numbers, k1_xboole_0, k6_numbers), k1_xboole_0)]   (12)  substitution:[[_G7934], [k1_xboole_0]]
+1.1.1.2.1.3  [-v1_funct_1(k8_funcop_1(k5_numbers, k1_xboole_0, k6_numbers))]   (13)  substitution:[[_G7934], [k1_xboole_0]]
+1.1.1.2.1.4  [-v1_partfun1(k8_funcop_1(k5_numbers, k1_xboole_0, k6_numbers), k1_xboole_0)]   (14)  substitution:[[_G7934], [k1_xboole_0]]
+1.1.1.2.2  [- (k1_xboole_0=1^[]), 1^[]=k1_xboole_0]   (21)  substitution:[[_G2845, _G2800], [k1_xboole_0, 1^[]]]
+1.1.1.2.2.1  [- (1^[]=k1_xboole_0), v1_relat_1(1^[]), v4_relat_1(1^[], k1_xboole_0), v1_funct_1(1^[]), v1_partfun1(1^[], k1_xboole_0)]   (17)  substitution:[[_G7560], [1^[]]]
+1.1.1.2.2.1.1  [-v1_relat_1(1^[])]   (1)  
+1.1.1.2.2.1.2  [-v4_relat_1(1^[], k1_xboole_0)]   (2)  
+1.1.1.2.2.1.3  [-v1_funct_1(1^[])]   (3)  
+1.1.1.2.2.1.4  [-v1_partfun1(1^[], k1_xboole_0)]   (4)  
+------------------------------------------------------
+End of proof for t3_polynom7

@@ -1,0 +1,48 @@
+
+t24_tops_3 is a Theorem
+Start of proof for t24_tops_3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(1^[])]
+ (2)  [-v2_pre_topc(1^[])]
+ (3)  [-l1_pre_topc(1^[])]
+ (4)  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]
+ (5)  [-v3_tops_1(2^[], 1^[])]
+ (6)  [v3_tops_1(k2_pre_topc(1^[], 2^[]), 1^[])]
+ (7)  [l1_pre_topc(_G7501), m1_subset_1(_G7599, k1_zfmisc_1(u1_struct_0(_G7501))), v3_tops_1(_G7599, _G7501), - (k1_tops_1(_G7501, k2_pre_topc(_G7501, _G7599))=k1_xboole_0)]
+ (8)  [l1_pre_topc(_G7501), m1_subset_1(_G7599, k1_zfmisc_1(u1_struct_0(_G7501))), -v3_tops_1(_G7599, _G7501), k1_tops_1(_G7501, k2_pre_topc(_G7501, _G7599))=k1_xboole_0]
+ (9)  [-m1_subset_1(k2_pre_topc(_G8017, _G8078), k1_zfmisc_1(u1_struct_0(_G8017))), l1_pre_topc(_G8017), m1_subset_1(_G8078, k1_zfmisc_1(u1_struct_0(_G8017)))]
+ (10)  [- (k2_pre_topc(_G8430, k2_pre_topc(_G8430, _G8493))=k2_pre_topc(_G8430, _G8493)), l1_pre_topc(_G8430), m1_subset_1(_G8493, k1_zfmisc_1(u1_struct_0(_G8430)))]
+ (11)  [- (k1_tops_1(_G5676, _G5811)=k1_tops_1(_G5743, _G5880)), _G5676=_G5743, _G5811=_G5880]
+ (12)  [_G6273=_G6322, - (k1_zfmisc_1(_G6273)=k1_zfmisc_1(_G6322))]
+ (13)  [_G6551=_G6600, - (u1_struct_0(_G6551)=u1_struct_0(_G6600))]
+ (14)  [- (k2_pre_topc(_G6820, _G6955)=k2_pre_topc(_G6887, _G7024)), _G6820=_G6887, _G6955=_G7024]
+ (15)  [- (_G2770=_G2770)]
+ (16)  [_G2869=_G2914, - (_G2914=_G2869)]
+ (17)  [- (_G3102=_G3215), _G3102=_G3158, _G3158=_G3215]
+ (18)  [-v2_struct_0(_G3601), _G3552=_G3601, v2_struct_0(_G3552)]
+ (19)  [-v2_pre_topc(_G3879), _G3830=_G3879, v2_pre_topc(_G3830)]
+ (20)  [-l1_pre_topc(_G4157), _G4108=_G4157, l1_pre_topc(_G4108)]
+ (21)  [-m1_subset_1(_G4453, _G4590), m1_subset_1(_G4386, _G4521), _G4386=_G4453, _G4521=_G4590]
+ (22)  [-v3_tops_1(_G5041, _G5178), v3_tops_1(_G4974, _G5109), _G4974=_G5041, _G5109=_G5178]
+
+Connection Proof:
+-----------------
+1  [v3_tops_1(k2_pre_topc(1^[], 2^[]), 1^[])]   (6)  
+1.1  [-v3_tops_1(k2_pre_topc(1^[], 2^[]), 1^[]), l1_pre_topc(1^[]), m1_subset_1(k2_pre_topc(1^[], 2^[]), k1_zfmisc_1(u1_struct_0(1^[]))), k1_tops_1(1^[], k2_pre_topc(1^[], k2_pre_topc(1^[], 2^[])))=k1_xboole_0]   (8)  substitution:[[_G7599, _G7501], [k2_pre_topc(1^[], 2^[]), 1^[]]]
+1.1.1  [-l1_pre_topc(1^[])]   (3)  
+1.1.2  [-m1_subset_1(k2_pre_topc(1^[], 2^[]), k1_zfmisc_1(u1_struct_0(1^[]))), l1_pre_topc(1^[]), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (9)  substitution:[[_G8017, _G8078], [1^[], 2^[]]]
+1.1.2.1  [-l1_pre_topc(1^[])]   (3)  
+1.1.2.2  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (4)  
+1.1.3  [- (k1_tops_1(1^[], k2_pre_topc(1^[], k2_pre_topc(1^[], 2^[])))=k1_xboole_0), k1_tops_1(1^[], k2_pre_topc(1^[], k2_pre_topc(1^[], 2^[])))=k1_tops_1(1^[], k2_pre_topc(1^[], 2^[])), k1_tops_1(1^[], k2_pre_topc(1^[], 2^[]))=k1_xboole_0]   (17)  substitution:[[_G3102, _G3215, _G3158], [k1_tops_1(1^[], k2_pre_topc(1^[], k2_pre_topc(1^[], 2^[]))), k1_xboole_0, k1_tops_1(1^[], k2_pre_topc(1^[], 2^[]))]]
+1.1.3.1  [- (k1_tops_1(1^[], k2_pre_topc(1^[], k2_pre_topc(1^[], 2^[])))=k1_tops_1(1^[], k2_pre_topc(1^[], 2^[]))), 1^[]=1^[], k2_pre_topc(1^[], k2_pre_topc(1^[], 2^[]))=k2_pre_topc(1^[], 2^[])]   (11)  substitution:[[_G5676, _G5811, _G5743, _G5880], [1^[], k2_pre_topc(1^[], k2_pre_topc(1^[], 2^[])), 1^[], k2_pre_topc(1^[], 2^[])]]
+1.1.3.1.1  [- (1^[]=1^[])]   (15)  substitution:[[_G2770], [1^[]]]
+1.1.3.1.2  [- (k2_pre_topc(1^[], k2_pre_topc(1^[], 2^[]))=k2_pre_topc(1^[], 2^[])), l1_pre_topc(1^[]), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (10)  substitution:[[_G8430, _G8493], [1^[], 2^[]]]
+1.1.3.1.2.1  [-l1_pre_topc(1^[])]   (3)  
+1.1.3.1.2.2  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (4)  
+1.1.3.2  [- (k1_tops_1(1^[], k2_pre_topc(1^[], 2^[]))=k1_xboole_0), l1_pre_topc(1^[]), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[]))), v3_tops_1(2^[], 1^[])]   (7)  substitution:[[_G7501, _G7599], [1^[], 2^[]]]
+1.1.3.2.1  [-l1_pre_topc(1^[])]   (3)  
+1.1.3.2.2  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (4)  
+1.1.3.2.3  [-v3_tops_1(2^[], 1^[])]   (5)  
+------------------------------------------------------
+End of proof for t24_tops_3

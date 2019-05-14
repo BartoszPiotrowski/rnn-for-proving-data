@@ -1,0 +1,25 @@
+
+t3_topmetr is a Theorem
+Start of proof for t3_topmetr
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v2_pre_topc(1^[])]
+ (2)  [-l1_pre_topc(1^[])]
+ (3)  [-m1_pre_topc(2^[], 1^[])]
+ (4)  [-m1_pre_topc(3^[], 1^[])]
+ (5)  [-r1_tarski(u1_struct_0(2^[]), u1_struct_0(3^[]))]
+ (6)  [m1_pre_topc(2^[], 3^[])]
+ (7)  [l1_pre_topc(_G814), v2_pre_topc(_G814), m1_pre_topc(_G975, _G814), m1_pre_topc(_G1099, _G814), r1_tarski(u1_struct_0(_G975), u1_struct_0(_G1099)), -m1_pre_topc(_G975, _G1099)]
+ (8)  [l1_pre_topc(_G814), v2_pre_topc(_G814), m1_pre_topc(_G975, _G814), m1_pre_topc(_G1099, _G814), -r1_tarski(u1_struct_0(_G975), u1_struct_0(_G1099)), m1_pre_topc(_G975, _G1099)]
+
+Connection Proof:
+-----------------
+1  [m1_pre_topc(2^[], 3^[])]   (6)  
+1.1  [-m1_pre_topc(2^[], 3^[]), l1_pre_topc(1^[]), v2_pre_topc(1^[]), m1_pre_topc(2^[], 1^[]), m1_pre_topc(3^[], 1^[]), r1_tarski(u1_struct_0(2^[]), u1_struct_0(3^[]))]   (7)  substitution:[[_G975, _G1099, _G814], [2^[], 3^[], 1^[]]]
+1.1.1  [-l1_pre_topc(1^[])]   (2)  
+1.1.2  [-v2_pre_topc(1^[])]   (1)  
+1.1.3  [-m1_pre_topc(2^[], 1^[])]   (3)  
+1.1.4  [-m1_pre_topc(3^[], 1^[])]   (4)  
+1.1.5  [-r1_tarski(u1_struct_0(2^[]), u1_struct_0(3^[]))]   (5)  
+------------------------------------------------------
+End of proof for t3_topmetr

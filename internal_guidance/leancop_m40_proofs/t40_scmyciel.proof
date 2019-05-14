@@ -1,0 +1,31 @@
+
+t40_scmyciel is a Theorem
+Start of proof for t40_scmyciel
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v4_scmyciel(1^[])]
+ (2)  [k3_tarski(1^[])=k3_tarski(k6_scmyciel(1^[]))]
+ (3)  [v4_scmyciel(_G4522), - (k6_scmyciel(_G4522)=k6_subset_1(k5_scmyciel(k3_tarski(_G4522)), k1_scmyciel(_G4522)))]
+ (4)  [v4_scmyciel(_G4776), - (k3_tarski(_G4776)=k3_tarski(k6_subset_1(k5_scmyciel(k3_tarski(_G4776)), k1_scmyciel(_G4776))))]
+ (5)  [-v4_scmyciel(_G2467), _G2418=_G2467, v4_scmyciel(_G2418)]
+ (6)  [- (_G1645=_G1645)]
+ (7)  [_G1744=_G1789, - (_G1789=_G1744)]
+ (8)  [- (_G1977=_G2090), _G1977=_G2033, _G2033=_G2090]
+ (9)  [- (k6_subset_1(_G2717, _G2852)=k6_subset_1(_G2784, _G2921)), _G2717=_G2784, _G2852=_G2921]
+ (10)  [_G3314=_G3363, - (k5_scmyciel(_G3314)=k5_scmyciel(_G3363))]
+ (11)  [_G3592=_G3641, - (k1_scmyciel(_G3592)=k1_scmyciel(_G3641))]
+ (12)  [_G3870=_G3919, - (k3_tarski(_G3870)=k3_tarski(_G3919))]
+ (13)  [_G4139=_G4188, - (k6_scmyciel(_G4139)=k6_scmyciel(_G4188))]
+
+Connection Proof:
+-----------------
+1  [k3_tarski(1^[])=k3_tarski(k6_scmyciel(1^[]))]   (2)  
+1.1  [- (k3_tarski(1^[])=k3_tarski(k6_scmyciel(1^[]))), k3_tarski(1^[])=k3_tarski(k6_subset_1(k5_scmyciel(k3_tarski(1^[])), k1_scmyciel(1^[]))), k3_tarski(k6_subset_1(k5_scmyciel(k3_tarski(1^[])), k1_scmyciel(1^[])))=k3_tarski(k6_scmyciel(1^[]))]   (8)  substitution:[[_G1977, _G2090, _G2033], [k3_tarski(1^[]), k3_tarski(k6_scmyciel(1^[])), k3_tarski(k6_subset_1(k5_scmyciel(k3_tarski(1^[])), k1_scmyciel(1^[])))]]
+1.1.1  [- (k3_tarski(1^[])=k3_tarski(k6_subset_1(k5_scmyciel(k3_tarski(1^[])), k1_scmyciel(1^[])))), v4_scmyciel(1^[])]   (4)  substitution:[[_G4776], [1^[]]]
+1.1.1.1  [-v4_scmyciel(1^[])]   (1)  
+1.1.2  [- (k3_tarski(k6_subset_1(k5_scmyciel(k3_tarski(1^[])), k1_scmyciel(1^[])))=k3_tarski(k6_scmyciel(1^[]))), k3_tarski(k6_scmyciel(1^[]))=k3_tarski(k6_subset_1(k5_scmyciel(k3_tarski(1^[])), k1_scmyciel(1^[])))]   (7)  substitution:[[_G1789, _G1744], [k3_tarski(k6_subset_1(k5_scmyciel(k3_tarski(1^[])), k1_scmyciel(1^[]))), k3_tarski(k6_scmyciel(1^[]))]]
+1.1.2.1  [- (k3_tarski(k6_scmyciel(1^[]))=k3_tarski(k6_subset_1(k5_scmyciel(k3_tarski(1^[])), k1_scmyciel(1^[])))), k6_scmyciel(1^[])=k6_subset_1(k5_scmyciel(k3_tarski(1^[])), k1_scmyciel(1^[]))]   (12)  substitution:[[_G3870, _G3919], [k6_scmyciel(1^[]), k6_subset_1(k5_scmyciel(k3_tarski(1^[])), k1_scmyciel(1^[]))]]
+1.1.2.1.1  [- (k6_scmyciel(1^[])=k6_subset_1(k5_scmyciel(k3_tarski(1^[])), k1_scmyciel(1^[]))), v4_scmyciel(1^[])]   (3)  substitution:[[_G4522], [1^[]]]
+1.1.2.1.1.1  [-v4_scmyciel(1^[])]   (1)  
+------------------------------------------------------
+End of proof for t40_scmyciel

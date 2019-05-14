@@ -1,0 +1,41 @@
+
+t109_member_1 is a Theorem
+Start of proof for t109_member_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v2_membered(1^[])]
+ (2)  [-v2_membered(2^[])]
+ (3)  [-v2_membered(3^[])]
+ (4)  [k12_member_1(k14_member_1(1^[], 2^[]), 3^[])=k14_member_1(k12_member_1(1^[], 3^[]), 2^[])]
+ (5)  [- (k12_member_1(_G4430, _G4485)=k12_member_1(_G4485, _G4430)), v2_membered(_G4430), v2_membered(_G4485)]
+ (6)  [-v2_membered(k14_member_1(_G4798, _G4849)), v2_membered(_G4798), v2_membered(_G4849)]
+ (7)  [v2_membered(_G5085), v2_membered(_G5188), v2_membered(_G5287), - (k14_member_1(k12_member_1(_G5085, _G5188), _G5287)=k12_member_1(_G5085, k14_member_1(_G5188, _G5287)))]
+ (8)  [- (k14_member_1(_G3203, _G3338)=k14_member_1(_G3270, _G3407)), _G3203=_G3270, _G3338=_G3407]
+ (9)  [- (k12_member_1(_G3791, _G3926)=k12_member_1(_G3858, _G3995)), _G3791=_G3858, _G3926=_G3995]
+ (10)  [-v2_membered(_G2953), _G2904=_G2953, v2_membered(_G2904)]
+ (11)  [- (_G2131=_G2131)]
+ (12)  [_G2230=_G2275, - (_G2275=_G2230)]
+ (13)  [- (_G2463=_G2576), _G2463=_G2519, _G2519=_G2576]
+
+Connection Proof:
+-----------------
+1  [k12_member_1(k14_member_1(1^[], 2^[]), 3^[])=k14_member_1(k12_member_1(1^[], 3^[]), 2^[])]   (4)  
+1.1  [- (k12_member_1(k14_member_1(1^[], 2^[]), 3^[])=k14_member_1(k12_member_1(1^[], 3^[]), 2^[])), k12_member_1(k14_member_1(1^[], 2^[]), 3^[])=k12_member_1(3^[], k14_member_1(1^[], 2^[])), k12_member_1(3^[], k14_member_1(1^[], 2^[]))=k14_member_1(k12_member_1(1^[], 3^[]), 2^[])]   (13)  substitution:[[_G2463, _G2576, _G2519], [k12_member_1(k14_member_1(1^[], 2^[]), 3^[]), k14_member_1(k12_member_1(1^[], 3^[]), 2^[]), k12_member_1(3^[], k14_member_1(1^[], 2^[]))]]
+1.1.1  [- (k12_member_1(k14_member_1(1^[], 2^[]), 3^[])=k12_member_1(3^[], k14_member_1(1^[], 2^[]))), v2_membered(k14_member_1(1^[], 2^[])), v2_membered(3^[])]   (5)  substitution:[[_G4430, _G4485], [k14_member_1(1^[], 2^[]), 3^[]]]
+1.1.1.1  [-v2_membered(k14_member_1(1^[], 2^[])), v2_membered(1^[]), v2_membered(2^[])]   (6)  substitution:[[_G4798, _G4849], [1^[], 2^[]]]
+1.1.1.1.1  [-v2_membered(1^[])]   (1)  
+1.1.1.1.2  [-v2_membered(2^[])]   (2)  
+1.1.1.2  [-v2_membered(3^[])]   (3)  
+1.1.2  [- (k12_member_1(3^[], k14_member_1(1^[], 2^[]))=k14_member_1(k12_member_1(1^[], 3^[]), 2^[])), k12_member_1(3^[], k14_member_1(1^[], 2^[]))=k14_member_1(k12_member_1(3^[], 1^[]), 2^[]), k14_member_1(k12_member_1(3^[], 1^[]), 2^[])=k14_member_1(k12_member_1(1^[], 3^[]), 2^[])]   (13)  substitution:[[_G2463, _G2576, _G2519], [k12_member_1(3^[], k14_member_1(1^[], 2^[])), k14_member_1(k12_member_1(1^[], 3^[]), 2^[]), k14_member_1(k12_member_1(3^[], 1^[]), 2^[])]]
+1.1.2.1  [- (k12_member_1(3^[], k14_member_1(1^[], 2^[]))=k14_member_1(k12_member_1(3^[], 1^[]), 2^[])), k14_member_1(k12_member_1(3^[], 1^[]), 2^[])=k12_member_1(3^[], k14_member_1(1^[], 2^[]))]   (12)  substitution:[[_G2275, _G2230], [k12_member_1(3^[], k14_member_1(1^[], 2^[])), k14_member_1(k12_member_1(3^[], 1^[]), 2^[])]]
+1.1.2.1.1  [- (k14_member_1(k12_member_1(3^[], 1^[]), 2^[])=k12_member_1(3^[], k14_member_1(1^[], 2^[]))), v2_membered(3^[]), v2_membered(1^[]), v2_membered(2^[])]   (7)  substitution:[[_G5085, _G5188, _G5287], [3^[], 1^[], 2^[]]]
+1.1.2.1.1.1  [-v2_membered(3^[])]   (3)  
+1.1.2.1.1.2  [-v2_membered(1^[])]   (1)  
+1.1.2.1.1.3  [-v2_membered(2^[])]   (2)  
+1.1.2.2  [- (k14_member_1(k12_member_1(3^[], 1^[]), 2^[])=k14_member_1(k12_member_1(1^[], 3^[]), 2^[])), k12_member_1(3^[], 1^[])=k12_member_1(1^[], 3^[]), 2^[]=2^[]]   (8)  substitution:[[_G3203, _G3338, _G3270, _G3407], [k12_member_1(3^[], 1^[]), 2^[], k12_member_1(1^[], 3^[]), 2^[]]]
+1.1.2.2.1  [- (k12_member_1(3^[], 1^[])=k12_member_1(1^[], 3^[])), v2_membered(3^[]), v2_membered(1^[])]   (5)  substitution:[[_G4430, _G4485], [3^[], 1^[]]]
+1.1.2.2.1.1  [-v2_membered(3^[])]   (3)  
+1.1.2.2.1.2  [-v2_membered(1^[])]   (1)  
+1.1.2.2.2  [- (2^[]=2^[])]   (11)  substitution:[[_G2131], [2^[]]]
+------------------------------------------------------
+End of proof for t109_member_1

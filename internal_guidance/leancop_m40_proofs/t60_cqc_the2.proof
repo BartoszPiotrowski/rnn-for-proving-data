@@ -1,0 +1,42 @@
+
+t60_cqc_the2 is a Theorem
+Start of proof for t60_cqc_the2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_qc_lang1(1^[])]
+ (2)  [-m2_subset_1(2^[], k9_qc_lang1(1^[]), k3_cqc_lang(1^[]))]
+ (3)  [-m2_subset_1(3^[], k2_qc_lang1(1^[]), k3_qc_lang1(1^[]))]
+ (4)  [v2_cqc_the1(k12_cqc_lang(1^[], 3^[], k10_cqc_lang(1^[], 2^[], 2^[])), 1^[])]
+ (5)  [v1_xboole_0(_G1511), m1_subset_1(_G1594, k1_zfmisc_1(_G1511)), -v1_xboole_0(_G1594)]
+ (6)  [-m2_subset_1(k10_cqc_lang(_G1802, _G1876, _G1951), k9_qc_lang1(_G1802), k3_cqc_lang(_G1802)), m1_qc_lang1(_G1802), m1_subset_1(_G1876, k3_cqc_lang(_G1802)), m1_subset_1(_G1951, k3_cqc_lang(_G1802))]
+ (7)  [m1_qc_lang1(_G2498), -m1_subset_1(k3_cqc_lang(_G2498), k1_zfmisc_1(k9_qc_lang1(_G2498)))]
+ (8)  [m1_qc_lang1(_G2703), v1_xboole_0(k3_cqc_lang(_G2703))]
+ (9)  [m1_qc_lang1(_G2866), m2_subset_1(_G2957, k9_qc_lang1(_G2866), k3_cqc_lang(_G2866)), -v2_cqc_the1(k10_cqc_lang(_G2866, _G2957, _G2957), _G2866)]
+ (10)  [m1_qc_lang1(_G3956), m2_subset_1(_G4069, k9_qc_lang1(_G3956), k3_cqc_lang(_G3956)), m2_subset_1(_G4274, k2_qc_lang1(_G3956), k3_qc_lang1(_G3956)), v2_cqc_the1(_G4069, _G3956), -v2_cqc_the1(k12_cqc_lang(_G3956, _G4274, _G4069), _G3956)]
+ (11)  [m1_subset_1(_G3410, k1_zfmisc_1(_G3337)), -v1_xboole_0(_G3410), -v1_xboole_0(_G3337), m2_subset_1(_G3689, _G3337, _G3410), -m1_subset_1(_G3689, _G3410)]
+ (12)  [m1_subset_1(_G3410, k1_zfmisc_1(_G3337)), -v1_xboole_0(_G3410), -v1_xboole_0(_G3337), -m2_subset_1(_G3689, _G3337, _G3410), m1_subset_1(_G3689, _G3410)]
+
+Connection Proof:
+-----------------
+1  [m1_qc_lang1(1^[]), v1_xboole_0(k3_cqc_lang(1^[]))]   (8)  substitution:[[_G2703], [1^[]]]
+1.1  [-m1_qc_lang1(1^[])]   (1)  
+1.2  [-v1_xboole_0(k3_cqc_lang(1^[])), m1_subset_1(k3_cqc_lang(1^[]), k1_zfmisc_1(k9_qc_lang1(1^[]))), -v1_xboole_0(k9_qc_lang1(1^[])), m2_subset_1(2^[], k9_qc_lang1(1^[]), k3_cqc_lang(1^[])), -m1_subset_1(2^[], k3_cqc_lang(1^[]))]   (11)  substitution:[[_G3410, _G3337, _G3689], [k3_cqc_lang(1^[]), k9_qc_lang1(1^[]), 2^[]]]
+1.2.1  [-m1_subset_1(k3_cqc_lang(1^[]), k1_zfmisc_1(k9_qc_lang1(1^[]))), m1_qc_lang1(1^[])]   (7)  substitution:[[_G2498], [1^[]]]
+1.2.1.1  [-m1_qc_lang1(1^[])]   (1)  
+1.2.2  [v1_xboole_0(k9_qc_lang1(1^[])), m1_subset_1(k3_cqc_lang(1^[]), k1_zfmisc_1(k9_qc_lang1(1^[]))), -v1_xboole_0(k3_cqc_lang(1^[]))]   (5)  substitution:[[_G1511, _G1594], [k9_qc_lang1(1^[]), k3_cqc_lang(1^[])]]
+1.2.2.1  [-m1_subset_1(k3_cqc_lang(1^[]), k1_zfmisc_1(k9_qc_lang1(1^[]))), m1_qc_lang1(1^[])]   (7)  substitution:[[_G2498], [1^[]]]
+1.2.2.1.1  [-m1_qc_lang1(1^[])]   (1)  
+1.2.2.2  [v1_xboole_0(k3_cqc_lang(1^[]))]   (reduction:1)  
+1.2.3  [-m2_subset_1(2^[], k9_qc_lang1(1^[]), k3_cqc_lang(1^[]))]   (2)  
+1.2.4  [m1_subset_1(2^[], k3_cqc_lang(1^[])), -m2_subset_1(k10_cqc_lang(1^[], 2^[], 2^[]), k9_qc_lang1(1^[]), k3_cqc_lang(1^[])), m1_qc_lang1(1^[]), m1_subset_1(2^[], k3_cqc_lang(1^[]))]   (6)  substitution:[[_G1876, _G1802, _G1951], [2^[], 1^[], 2^[]]]
+1.2.4.1  [m2_subset_1(k10_cqc_lang(1^[], 2^[], 2^[]), k9_qc_lang1(1^[]), k3_cqc_lang(1^[])), m1_qc_lang1(1^[]), m2_subset_1(3^[], k2_qc_lang1(1^[]), k3_qc_lang1(1^[])), v2_cqc_the1(k10_cqc_lang(1^[], 2^[], 2^[]), 1^[]), -v2_cqc_the1(k12_cqc_lang(1^[], 3^[], k10_cqc_lang(1^[], 2^[], 2^[])), 1^[])]   (10)  substitution:[[_G4069, _G3956, _G4274], [k10_cqc_lang(1^[], 2^[], 2^[]), 1^[], 3^[]]]
+1.2.4.1.1  [-m1_qc_lang1(1^[])]   (1)  
+1.2.4.1.2  [-m2_subset_1(3^[], k2_qc_lang1(1^[]), k3_qc_lang1(1^[]))]   (3)  
+1.2.4.1.3  [-v2_cqc_the1(k10_cqc_lang(1^[], 2^[], 2^[]), 1^[]), m1_qc_lang1(1^[]), m2_subset_1(2^[], k9_qc_lang1(1^[]), k3_cqc_lang(1^[]))]   (9)  substitution:[[_G2866, _G2957], [1^[], 2^[]]]
+1.2.4.1.3.1  [-m1_qc_lang1(1^[])]   (1)  
+1.2.4.1.3.2  [-m2_subset_1(2^[], k9_qc_lang1(1^[]), k3_cqc_lang(1^[]))]   (2)  
+1.2.4.1.4  [v2_cqc_the1(k12_cqc_lang(1^[], 3^[], k10_cqc_lang(1^[], 2^[], 2^[])), 1^[])]   (4)  
+1.2.4.2  [-m1_qc_lang1(1^[])]   (1)  
+1.2.4.3  [-m1_subset_1(2^[], k3_cqc_lang(1^[]))]   (reduction:1.2)  
+------------------------------------------------------
+End of proof for t60_cqc_the2

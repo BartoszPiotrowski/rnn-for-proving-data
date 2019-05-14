@@ -1,0 +1,40 @@
+
+l19_cqc_sim1 is a Theorem
+Start of proof for l19_cqc_sim1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_qc_lang1(1^[])]
+ (2)  [-m1_subset_1(2^[], k5_numbers)]
+ (3)  [-v5_relat_1(3^[], k3_qc_lang1(1^[]))]
+ (4)  [-v3_card_1(3^[], 2^[])]
+ (5)  [-m2_finseq_1(3^[], k2_qc_lang1(1^[]))]
+ (6)  [m2_finseq_1(3^[], k3_qc_lang1(1^[]))]
+ (7)  [v1_relat_1(_G1157), v5_relat_1(_G1157, _G1105), -r1_tarski(k10_xtuple_0(_G1157), _G1105)]
+ (8)  [v1_relat_1(_G1157), -v5_relat_1(_G1157, _G1105), r1_tarski(k10_xtuple_0(_G1157), _G1105)]
+ (9)  [v1_finseq_1(_G1490), v1_funct_1(_G1490), v1_relat_1(_G1490), m1_finseq_1(_G1490, _G1428), -r1_tarski(k10_xtuple_0(_G1490), _G1428)]
+ (10)  [v1_finseq_1(_G1490), v1_funct_1(_G1490), v1_relat_1(_G1490), -m1_finseq_1(_G1490, _G1428), r1_tarski(k10_xtuple_0(_G1490), _G1428)]
+ (11)  [m1_finseq_1(_G1931, _G1877), -v1_relat_1(_G1931)]
+ (12)  [m1_finseq_1(_G1931, _G1877), -v1_funct_1(_G1931)]
+ (13)  [m1_finseq_1(_G1931, _G1877), -v1_finseq_1(_G1931)]
+ (14)  [m2_finseq_1(_G2254, _G2209), -m1_finseq_1(_G2254, _G2209)]
+ (15)  [-m2_finseq_1(_G2254, _G2209), m1_finseq_1(_G2254, _G2209)]
+
+Connection Proof:
+-----------------
+1  [m2_finseq_1(3^[], k3_qc_lang1(1^[]))]   (6)  
+1.1  [-m2_finseq_1(3^[], k3_qc_lang1(1^[])), m1_finseq_1(3^[], k3_qc_lang1(1^[]))]   (15)  substitution:[[_G2254, _G2209], [3^[], k3_qc_lang1(1^[])]]
+1.1.1  [-m1_finseq_1(3^[], k3_qc_lang1(1^[])), v1_finseq_1(3^[]), v1_funct_1(3^[]), v1_relat_1(3^[]), r1_tarski(k10_xtuple_0(3^[]), k3_qc_lang1(1^[]))]   (10)  substitution:[[_G1490, _G1428], [3^[], k3_qc_lang1(1^[])]]
+1.1.1.1  [-v1_finseq_1(3^[]), m1_finseq_1(3^[], k2_qc_lang1(1^[]))]   (13)  substitution:[[_G1931, _G1877], [3^[], k2_qc_lang1(1^[])]]
+1.1.1.1.1  [-m1_finseq_1(3^[], k2_qc_lang1(1^[])), m2_finseq_1(3^[], k2_qc_lang1(1^[]))]   (14)  substitution:[[_G2254, _G2209], [3^[], k2_qc_lang1(1^[])]]
+1.1.1.1.1.1  [-m2_finseq_1(3^[], k2_qc_lang1(1^[]))]   (5)  
+1.1.1.2  [-v1_funct_1(3^[]), m1_finseq_1(3^[], k2_qc_lang1(1^[]))]   (12)  substitution:[[_G1931, _G1877], [3^[], k2_qc_lang1(1^[])]]
+1.1.1.2.1  [-m1_finseq_1(3^[], k2_qc_lang1(1^[])), m2_finseq_1(3^[], k2_qc_lang1(1^[]))]   (14)  substitution:[[_G2254, _G2209], [3^[], k2_qc_lang1(1^[])]]
+1.1.1.2.1.1  [-m2_finseq_1(3^[], k2_qc_lang1(1^[]))]   (5)  
+1.1.1.3  [-v1_relat_1(3^[]), m1_finseq_1(3^[], k2_qc_lang1(1^[]))]   (11)  substitution:[[_G1931, _G1877], [3^[], k2_qc_lang1(1^[])]]
+1.1.1.3.1  [-m1_finseq_1(3^[], k2_qc_lang1(1^[])), m2_finseq_1(3^[], k2_qc_lang1(1^[]))]   (14)  substitution:[[_G2254, _G2209], [3^[], k2_qc_lang1(1^[])]]
+1.1.1.3.1.1  [-m2_finseq_1(3^[], k2_qc_lang1(1^[]))]   (5)  
+1.1.1.4  [-r1_tarski(k10_xtuple_0(3^[]), k3_qc_lang1(1^[])), v1_relat_1(3^[]), v5_relat_1(3^[], k3_qc_lang1(1^[]))]   (7)  substitution:[[_G1157, _G1105], [3^[], k3_qc_lang1(1^[])]]
+1.1.1.4.1  [-v1_relat_1(3^[])]   (lemmata:1.1.1)  
+1.1.1.4.2  [-v5_relat_1(3^[], k3_qc_lang1(1^[]))]   (3)  
+------------------------------------------------------
+End of proof for l19_cqc_sim1

@@ -1,0 +1,115 @@
+
+t32_trees_3 is a Theorem
+Start of proof for t32_trees_3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-4^[], v5_trees_3(k10_finseq_1(1^[], 2^[]))]
+ (2)  [-4^[], -v1_trees_1(2^[])]
+ (3)  [-4^[], -v1_finset_1(2^[])]
+ (4)  [-4^[], v1_xboole_0(2^[])]
+ (5)  [-4^[], -v1_trees_1(1^[])]
+ (6)  [-4^[], -v1_finset_1(1^[])]
+ (7)  [-4^[], v1_xboole_0(1^[])]
+ (8)  [-3^[], v1_trees_1(1^[]), v1_finset_1(1^[]), -v1_xboole_0(1^[]), -v1_xboole_0(2^[]), v1_finset_1(2^[]), v1_trees_1(2^[])]
+ (9)  [-3^[], -v5_trees_3(k10_finseq_1(1^[], 2^[]))]
+ (10)  [4^[], 3^[]]
+ (11)  [v1_funct_1(_G7226), v1_relat_1(_G7226), v5_trees_3(_G7226), -v2_trees_3(k10_xtuple_0(_G7226))]
+ (12)  [v1_funct_1(_G7226), v1_relat_1(_G7226), -v5_trees_3(_G7226), v2_trees_3(k10_xtuple_0(_G7226))]
+ (13)  [-v1_relat_1(k10_finseq_1(_G7489, _G7538))]
+ (14)  [-v1_funct_1(k10_finseq_1(_G7489, _G7538))]
+ (15)  [- (k10_xtuple_0(k10_finseq_1(_G7767, _G7814))=k2_tarski(_G7767, _G7814))]
+ (16)  [v2_trees_3(k2_tarski(_G8018, _G8093)), v1_xboole_0(_G8018)]
+ (17)  [v2_trees_3(k2_tarski(_G8018, _G8093)), -v1_finset_1(_G8018)]
+ (18)  [v2_trees_3(k2_tarski(_G8018, _G8093)), -v1_trees_1(_G8018)]
+ (19)  [v2_trees_3(k2_tarski(_G8018, _G8093)), v1_xboole_0(_G8093)]
+ (20)  [v2_trees_3(k2_tarski(_G8018, _G8093)), -v1_finset_1(_G8093)]
+ (21)  [v2_trees_3(k2_tarski(_G8018, _G8093)), -v1_trees_1(_G8093)]
+ (22)  [-v2_trees_3(k2_tarski(_G8018, _G8093)), v1_trees_1(_G8018), v1_finset_1(_G8018), -v1_xboole_0(_G8018), -v1_xboole_0(_G8093), v1_finset_1(_G8093), v1_trees_1(_G8093)]
+ (23)  [_G5700=_G5749, - (k10_xtuple_0(_G5700)=k10_xtuple_0(_G5749))]
+ (24)  [- (k2_tarski(_G5978, _G6113)=k2_tarski(_G6045, _G6182)), _G5978=_G6045, _G6113=_G6182]
+ (25)  [- (k10_finseq_1(_G6566, _G6701)=k10_finseq_1(_G6633, _G6770)), _G6566=_G6633, _G6701=_G6770]
+ (26)  [- (_G2834=_G2834)]
+ (27)  [_G2933=_G2978, - (_G2978=_G2933)]
+ (28)  [- (_G3166=_G3279), _G3166=_G3222, _G3222=_G3279]
+ (29)  [-v1_relat_1(_G3665), _G3616=_G3665, v1_relat_1(_G3616)]
+ (30)  [-v1_funct_1(_G3943), _G3894=_G3943, v1_funct_1(_G3894)]
+ (31)  [-v2_trees_3(_G4221), _G4172=_G4221, v2_trees_3(_G4172)]
+ (32)  [-v5_trees_3(_G4499), _G4450=_G4499, v5_trees_3(_G4450)]
+ (33)  [-v1_xboole_0(_G4777), _G4728=_G4777, v1_xboole_0(_G4728)]
+ (34)  [-v1_finset_1(_G5055), _G5006=_G5055, v1_finset_1(_G5006)]
+ (35)  [-v1_trees_1(_G5324), _G5275=_G5324, v1_trees_1(_G5275)]
+
+Connection Proof:
+-----------------
+1  [4^[], 3^[]]   (10)  
+1.1  [-4^[], -v1_trees_1(2^[])]   (2)  
+1.1.1  [v1_trees_1(2^[]), -v2_trees_3(k2_tarski(1^[], 2^[])), v1_trees_1(1^[]), v1_finset_1(1^[]), -v1_xboole_0(1^[]), -v1_xboole_0(2^[]), v1_finset_1(2^[])]   (22)  substitution:[[_G8093, _G8018], [2^[], 1^[]]]
+1.1.1.1  [v2_trees_3(k2_tarski(1^[], 2^[])), -v2_trees_3(k10_xtuple_0(k10_finseq_1(1^[], 2^[]))), k2_tarski(1^[], 2^[])=k10_xtuple_0(k10_finseq_1(1^[], 2^[]))]   (31)  substitution:[[_G4172, _G4221], [k2_tarski(1^[], 2^[]), k10_xtuple_0(k10_finseq_1(1^[], 2^[]))]]
+1.1.1.1.1  [v2_trees_3(k10_xtuple_0(k10_finseq_1(1^[], 2^[]))), v1_funct_1(k10_finseq_1(1^[], 2^[])), v1_relat_1(k10_finseq_1(1^[], 2^[])), -v5_trees_3(k10_finseq_1(1^[], 2^[]))]   (12)  substitution:[[_G7226], [k10_finseq_1(1^[], 2^[])]]
+1.1.1.1.1.1  [-v1_funct_1(k10_finseq_1(1^[], 2^[]))]   (14)  substitution:[[_G7489, _G7538], [1^[], 2^[]]]
+1.1.1.1.1.2  [-v1_relat_1(k10_finseq_1(1^[], 2^[]))]   (13)  substitution:[[_G7489, _G7538], [1^[], 2^[]]]
+1.1.1.1.1.3  [v5_trees_3(k10_finseq_1(1^[], 2^[])), -4^[]]   (1)  
+1.1.1.1.1.3.1  [4^[]]   (reduction:1)  
+1.1.1.1.2  [- (k2_tarski(1^[], 2^[])=k10_xtuple_0(k10_finseq_1(1^[], 2^[]))), k10_xtuple_0(k10_finseq_1(1^[], 2^[]))=k2_tarski(1^[], 2^[])]   (27)  substitution:[[_G2978, _G2933], [k2_tarski(1^[], 2^[]), k10_xtuple_0(k10_finseq_1(1^[], 2^[]))]]
+1.1.1.1.2.1  [- (k10_xtuple_0(k10_finseq_1(1^[], 2^[]))=k2_tarski(1^[], 2^[]))]   (15)  substitution:[[_G7767, _G7814], [1^[], 2^[]]]
+1.1.1.2  [-v1_trees_1(1^[]), -4^[]]   (5)  
+1.1.1.2.1  [4^[]]   (reduction:1)  
+1.1.1.3  [-v1_finset_1(1^[]), -4^[]]   (6)  
+1.1.1.3.1  [4^[]]   (reduction:1)  
+1.1.1.4  [v1_xboole_0(1^[]), -4^[]]   (7)  
+1.1.1.4.1  [4^[]]   (reduction:1)  
+1.1.1.5  [v1_xboole_0(2^[]), -4^[]]   (4)  
+1.1.1.5.1  [4^[]]   (reduction:1)  
+1.1.1.6  [-v1_finset_1(2^[]), -4^[]]   (3)  
+1.1.1.6.1  [4^[]]   (reduction:1)  
+1.2  [-3^[], v1_trees_1(1^[]), v1_finset_1(1^[]), -v1_xboole_0(1^[]), -v1_xboole_0(2^[]), v1_finset_1(2^[]), v1_trees_1(2^[])]   (8)  
+1.2.1  [-v1_trees_1(1^[]), v2_trees_3(k2_tarski(1^[], 2^[]))]   (18)  substitution:[[_G8018, _G8093], [1^[], 2^[]]]
+1.2.1.1  [-v2_trees_3(k2_tarski(1^[], 2^[])), k10_xtuple_0(k10_finseq_1(1^[], 2^[]))=k2_tarski(1^[], 2^[]), v2_trees_3(k10_xtuple_0(k10_finseq_1(1^[], 2^[])))]   (31)  substitution:[[_G4221, _G4172], [k2_tarski(1^[], 2^[]), k10_xtuple_0(k10_finseq_1(1^[], 2^[]))]]
+1.2.1.1.1  [- (k10_xtuple_0(k10_finseq_1(1^[], 2^[]))=k2_tarski(1^[], 2^[]))]   (15)  substitution:[[_G7767, _G7814], [1^[], 2^[]]]
+1.2.1.1.2  [-v2_trees_3(k10_xtuple_0(k10_finseq_1(1^[], 2^[]))), v1_funct_1(k10_finseq_1(1^[], 2^[])), v1_relat_1(k10_finseq_1(1^[], 2^[])), v5_trees_3(k10_finseq_1(1^[], 2^[]))]   (11)  substitution:[[_G7226], [k10_finseq_1(1^[], 2^[])]]
+1.2.1.1.2.1  [-v1_funct_1(k10_finseq_1(1^[], 2^[]))]   (14)  substitution:[[_G7489, _G7538], [1^[], 2^[]]]
+1.2.1.1.2.2  [-v1_relat_1(k10_finseq_1(1^[], 2^[]))]   (13)  substitution:[[_G7489, _G7538], [1^[], 2^[]]]
+1.2.1.1.2.3  [-v5_trees_3(k10_finseq_1(1^[], 2^[])), -3^[]]   (9)  
+1.2.1.1.2.3.1  [3^[]]   (reduction:1)  
+1.2.2  [-v1_finset_1(1^[]), v2_trees_3(k2_tarski(1^[], 2^[]))]   (17)  substitution:[[_G8018, _G8093], [1^[], 2^[]]]
+1.2.2.1  [-v2_trees_3(k2_tarski(1^[], 2^[])), k10_xtuple_0(k10_finseq_1(1^[], 2^[]))=k2_tarski(1^[], 2^[]), v2_trees_3(k10_xtuple_0(k10_finseq_1(1^[], 2^[])))]   (31)  substitution:[[_G4221, _G4172], [k2_tarski(1^[], 2^[]), k10_xtuple_0(k10_finseq_1(1^[], 2^[]))]]
+1.2.2.1.1  [- (k10_xtuple_0(k10_finseq_1(1^[], 2^[]))=k2_tarski(1^[], 2^[]))]   (15)  substitution:[[_G7767, _G7814], [1^[], 2^[]]]
+1.2.2.1.2  [-v2_trees_3(k10_xtuple_0(k10_finseq_1(1^[], 2^[]))), v1_funct_1(k10_finseq_1(1^[], 2^[])), v1_relat_1(k10_finseq_1(1^[], 2^[])), v5_trees_3(k10_finseq_1(1^[], 2^[]))]   (11)  substitution:[[_G7226], [k10_finseq_1(1^[], 2^[])]]
+1.2.2.1.2.1  [-v1_funct_1(k10_finseq_1(1^[], 2^[]))]   (14)  substitution:[[_G7489, _G7538], [1^[], 2^[]]]
+1.2.2.1.2.2  [-v1_relat_1(k10_finseq_1(1^[], 2^[]))]   (13)  substitution:[[_G7489, _G7538], [1^[], 2^[]]]
+1.2.2.1.2.3  [-v5_trees_3(k10_finseq_1(1^[], 2^[])), -3^[]]   (9)  
+1.2.2.1.2.3.1  [3^[]]   (reduction:1)  
+1.2.3  [v1_xboole_0(1^[]), v2_trees_3(k2_tarski(1^[], 2^[]))]   (16)  substitution:[[_G8018, _G8093], [1^[], 2^[]]]
+1.2.3.1  [-v2_trees_3(k2_tarski(1^[], 2^[])), k10_xtuple_0(k10_finseq_1(1^[], 2^[]))=k2_tarski(1^[], 2^[]), v2_trees_3(k10_xtuple_0(k10_finseq_1(1^[], 2^[])))]   (31)  substitution:[[_G4221, _G4172], [k2_tarski(1^[], 2^[]), k10_xtuple_0(k10_finseq_1(1^[], 2^[]))]]
+1.2.3.1.1  [- (k10_xtuple_0(k10_finseq_1(1^[], 2^[]))=k2_tarski(1^[], 2^[]))]   (15)  substitution:[[_G7767, _G7814], [1^[], 2^[]]]
+1.2.3.1.2  [-v2_trees_3(k10_xtuple_0(k10_finseq_1(1^[], 2^[]))), v1_funct_1(k10_finseq_1(1^[], 2^[])), v1_relat_1(k10_finseq_1(1^[], 2^[])), v5_trees_3(k10_finseq_1(1^[], 2^[]))]   (11)  substitution:[[_G7226], [k10_finseq_1(1^[], 2^[])]]
+1.2.3.1.2.1  [-v1_funct_1(k10_finseq_1(1^[], 2^[]))]   (14)  substitution:[[_G7489, _G7538], [1^[], 2^[]]]
+1.2.3.1.2.2  [-v1_relat_1(k10_finseq_1(1^[], 2^[]))]   (13)  substitution:[[_G7489, _G7538], [1^[], 2^[]]]
+1.2.3.1.2.3  [-v5_trees_3(k10_finseq_1(1^[], 2^[])), -3^[]]   (9)  
+1.2.3.1.2.3.1  [3^[]]   (reduction:1)  
+1.2.4  [v1_xboole_0(2^[]), v2_trees_3(k2_tarski(1^[], 2^[]))]   (19)  substitution:[[_G8093, _G8018], [2^[], 1^[]]]
+1.2.4.1  [-v2_trees_3(k2_tarski(1^[], 2^[])), k10_xtuple_0(k10_finseq_1(1^[], 2^[]))=k2_tarski(1^[], 2^[]), v2_trees_3(k10_xtuple_0(k10_finseq_1(1^[], 2^[])))]   (31)  substitution:[[_G4221, _G4172], [k2_tarski(1^[], 2^[]), k10_xtuple_0(k10_finseq_1(1^[], 2^[]))]]
+1.2.4.1.1  [- (k10_xtuple_0(k10_finseq_1(1^[], 2^[]))=k2_tarski(1^[], 2^[]))]   (15)  substitution:[[_G7767, _G7814], [1^[], 2^[]]]
+1.2.4.1.2  [-v2_trees_3(k10_xtuple_0(k10_finseq_1(1^[], 2^[]))), v1_funct_1(k10_finseq_1(1^[], 2^[])), v1_relat_1(k10_finseq_1(1^[], 2^[])), v5_trees_3(k10_finseq_1(1^[], 2^[]))]   (11)  substitution:[[_G7226], [k10_finseq_1(1^[], 2^[])]]
+1.2.4.1.2.1  [-v1_funct_1(k10_finseq_1(1^[], 2^[]))]   (14)  substitution:[[_G7489, _G7538], [1^[], 2^[]]]
+1.2.4.1.2.2  [-v1_relat_1(k10_finseq_1(1^[], 2^[]))]   (13)  substitution:[[_G7489, _G7538], [1^[], 2^[]]]
+1.2.4.1.2.3  [-v5_trees_3(k10_finseq_1(1^[], 2^[])), -3^[]]   (9)  
+1.2.4.1.2.3.1  [3^[]]   (reduction:1)  
+1.2.5  [-v1_finset_1(2^[]), v2_trees_3(k2_tarski(1^[], 2^[]))]   (20)  substitution:[[_G8093, _G8018], [2^[], 1^[]]]
+1.2.5.1  [-v2_trees_3(k2_tarski(1^[], 2^[])), k10_xtuple_0(k10_finseq_1(1^[], 2^[]))=k2_tarski(1^[], 2^[]), v2_trees_3(k10_xtuple_0(k10_finseq_1(1^[], 2^[])))]   (31)  substitution:[[_G4221, _G4172], [k2_tarski(1^[], 2^[]), k10_xtuple_0(k10_finseq_1(1^[], 2^[]))]]
+1.2.5.1.1  [- (k10_xtuple_0(k10_finseq_1(1^[], 2^[]))=k2_tarski(1^[], 2^[]))]   (15)  substitution:[[_G7767, _G7814], [1^[], 2^[]]]
+1.2.5.1.2  [-v2_trees_3(k10_xtuple_0(k10_finseq_1(1^[], 2^[]))), v1_funct_1(k10_finseq_1(1^[], 2^[])), v1_relat_1(k10_finseq_1(1^[], 2^[])), v5_trees_3(k10_finseq_1(1^[], 2^[]))]   (11)  substitution:[[_G7226], [k10_finseq_1(1^[], 2^[])]]
+1.2.5.1.2.1  [-v1_funct_1(k10_finseq_1(1^[], 2^[]))]   (14)  substitution:[[_G7489, _G7538], [1^[], 2^[]]]
+1.2.5.1.2.2  [-v1_relat_1(k10_finseq_1(1^[], 2^[]))]   (13)  substitution:[[_G7489, _G7538], [1^[], 2^[]]]
+1.2.5.1.2.3  [-v5_trees_3(k10_finseq_1(1^[], 2^[])), -3^[]]   (9)  
+1.2.5.1.2.3.1  [3^[]]   (reduction:1)  
+1.2.6  [-v1_trees_1(2^[]), v2_trees_3(k2_tarski(1^[], 2^[]))]   (21)  substitution:[[_G8093, _G8018], [2^[], 1^[]]]
+1.2.6.1  [-v2_trees_3(k2_tarski(1^[], 2^[])), k10_xtuple_0(k10_finseq_1(1^[], 2^[]))=k2_tarski(1^[], 2^[]), v2_trees_3(k10_xtuple_0(k10_finseq_1(1^[], 2^[])))]   (31)  substitution:[[_G4221, _G4172], [k2_tarski(1^[], 2^[]), k10_xtuple_0(k10_finseq_1(1^[], 2^[]))]]
+1.2.6.1.1  [- (k10_xtuple_0(k10_finseq_1(1^[], 2^[]))=k2_tarski(1^[], 2^[]))]   (15)  substitution:[[_G7767, _G7814], [1^[], 2^[]]]
+1.2.6.1.2  [-v2_trees_3(k10_xtuple_0(k10_finseq_1(1^[], 2^[]))), v1_funct_1(k10_finseq_1(1^[], 2^[])), v1_relat_1(k10_finseq_1(1^[], 2^[])), v5_trees_3(k10_finseq_1(1^[], 2^[]))]   (11)  substitution:[[_G7226], [k10_finseq_1(1^[], 2^[])]]
+1.2.6.1.2.1  [-v1_funct_1(k10_finseq_1(1^[], 2^[]))]   (14)  substitution:[[_G7489, _G7538], [1^[], 2^[]]]
+1.2.6.1.2.2  [-v1_relat_1(k10_finseq_1(1^[], 2^[]))]   (13)  substitution:[[_G7489, _G7538], [1^[], 2^[]]]
+1.2.6.1.2.3  [-v5_trees_3(k10_finseq_1(1^[], 2^[])), -3^[]]   (9)  
+1.2.6.1.2.3.1  [3^[]]   (reduction:1)  
+------------------------------------------------------
+End of proof for t32_trees_3

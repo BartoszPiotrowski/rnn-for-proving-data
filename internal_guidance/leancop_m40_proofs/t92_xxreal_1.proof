@@ -1,0 +1,45 @@
+
+t92_xxreal_1 is a Theorem
+Start of proof for t92_xxreal_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xxreal_0(2^[])]
+ (2)  [-v1_xxreal_0(3^[])]
+ (3)  [-v1_xxreal_0(4^[])]
+ (4)  [-v1_xxreal_0(5^[])]
+ (5)  [-r1_xxreal_0(2^[], 3^[])]
+ (6)  [r1_xboole_0(k3_xxreal_1(4^[], 2^[]), k3_xxreal_1(3^[], 5^[]))]
+ (7)  [v1_xxreal_0(_G7296), v1_xxreal_0(_G7403), r2_hidden(_G7222, k3_xxreal_1(_G7296, _G7403)), -r2_hidden(_G7222, k1_xxreal_1(_G7296, _G7403))]
+ (8)  [v1_xxreal_0(_G7296), v1_xxreal_0(_G7403), r2_hidden(_G7222, k3_xxreal_1(_G7296, _G7403)), _G7222=_G7296]
+ (9)  [-r1_xboole_0(_G7877, _G7964), -r2_hidden(1^[_G7964, _G7877], _G7877)]
+ (10)  [-r1_xboole_0(_G7877, _G7964), -r2_hidden(1^[_G7964, _G7877], _G7964)]
+ (11)  [r1_xboole_0(_G7877, _G7964), r2_hidden(_G8384, _G7877), r2_hidden(_G8384, _G7964)]
+ (12)  [v1_xxreal_0(_G8684), v1_xxreal_0(_G8797), v1_xxreal_0(_G8906), v1_xxreal_0(_G9011), r1_xxreal_0(_G8684, _G8797), -r1_xboole_0(k1_xxreal_1(_G8906, _G8684), k3_xxreal_1(_G8797, _G9011))]
+ (13)  [- (k1_xxreal_1(_G5995, _G6130)=k1_xxreal_1(_G6062, _G6199)), _G5995=_G6062, _G6130=_G6199]
+ (14)  [- (k3_xxreal_1(_G6583, _G6718)=k3_xxreal_1(_G6650, _G6787)), _G6583=_G6650, _G6718=_G6787]
+ (15)  [- (_G3069=_G3069)]
+ (16)  [_G3168=_G3213, - (_G3213=_G3168)]
+ (17)  [- (_G3401=_G3514), _G3401=_G3457, _G3457=_G3514]
+ (18)  [-r2_hidden(_G3918, _G4055), r2_hidden(_G3851, _G3986), _G3851=_G3918, _G3986=_G4055]
+ (19)  [-v1_xxreal_0(_G4497), _G4448=_G4497, v1_xxreal_0(_G4448)]
+ (20)  [-r1_xxreal_0(_G4793, _G4930), r1_xxreal_0(_G4726, _G4861), _G4726=_G4793, _G4861=_G4930]
+ (21)  [-r1_xboole_0(_G5381, _G5518), r1_xboole_0(_G5314, _G5449), _G5314=_G5381, _G5449=_G5518]
+
+Connection Proof:
+-----------------
+1  [r1_xboole_0(k1_xxreal_1(4^[], 2^[]), k3_xxreal_1(3^[], 5^[])), r2_hidden(1^[k3_xxreal_1(3^[], 5^[]), k3_xxreal_1(4^[], 2^[])], k1_xxreal_1(4^[], 2^[])), r2_hidden(1^[k3_xxreal_1(3^[], 5^[]), k3_xxreal_1(4^[], 2^[])], k3_xxreal_1(3^[], 5^[]))]   (11)  substitution:[[_G7877, _G7964, _G8384], [k1_xxreal_1(4^[], 2^[]), k3_xxreal_1(3^[], 5^[]), 1^[k3_xxreal_1(3^[], 5^[]), k3_xxreal_1(4^[], 2^[])]]]
+1.1  [-r1_xboole_0(k1_xxreal_1(4^[], 2^[]), k3_xxreal_1(3^[], 5^[])), v1_xxreal_0(2^[]), v1_xxreal_0(3^[]), v1_xxreal_0(4^[]), v1_xxreal_0(5^[]), r1_xxreal_0(2^[], 3^[])]   (12)  substitution:[[_G8906, _G8684, _G8797, _G9011], [4^[], 2^[], 3^[], 5^[]]]
+1.1.1  [-v1_xxreal_0(2^[])]   (1)  
+1.1.2  [-v1_xxreal_0(3^[])]   (2)  
+1.1.3  [-v1_xxreal_0(4^[])]   (3)  
+1.1.4  [-v1_xxreal_0(5^[])]   (4)  
+1.1.5  [-r1_xxreal_0(2^[], 3^[])]   (5)  
+1.2  [-r2_hidden(1^[k3_xxreal_1(3^[], 5^[]), k3_xxreal_1(4^[], 2^[])], k1_xxreal_1(4^[], 2^[])), v1_xxreal_0(4^[]), v1_xxreal_0(2^[]), r2_hidden(1^[k3_xxreal_1(3^[], 5^[]), k3_xxreal_1(4^[], 2^[])], k3_xxreal_1(4^[], 2^[]))]   (7)  substitution:[[_G7222, _G7296, _G7403], [1^[k3_xxreal_1(3^[], 5^[]), k3_xxreal_1(4^[], 2^[])], 4^[], 2^[]]]
+1.2.1  [-v1_xxreal_0(4^[])]   (3)  
+1.2.2  [-v1_xxreal_0(2^[])]   (1)  
+1.2.3  [-r2_hidden(1^[k3_xxreal_1(3^[], 5^[]), k3_xxreal_1(4^[], 2^[])], k3_xxreal_1(4^[], 2^[])), -r1_xboole_0(k3_xxreal_1(4^[], 2^[]), k3_xxreal_1(3^[], 5^[]))]   (9)  substitution:[[_G7964, _G7877], [k3_xxreal_1(3^[], 5^[]), k3_xxreal_1(4^[], 2^[])]]
+1.2.3.1  [r1_xboole_0(k3_xxreal_1(4^[], 2^[]), k3_xxreal_1(3^[], 5^[]))]   (6)  
+1.3  [-r2_hidden(1^[k3_xxreal_1(3^[], 5^[]), k3_xxreal_1(4^[], 2^[])], k3_xxreal_1(3^[], 5^[])), -r1_xboole_0(k3_xxreal_1(4^[], 2^[]), k3_xxreal_1(3^[], 5^[]))]   (10)  substitution:[[_G7964, _G7877], [k3_xxreal_1(3^[], 5^[]), k3_xxreal_1(4^[], 2^[])]]
+1.3.1  [r1_xboole_0(k3_xxreal_1(4^[], 2^[]), k3_xxreal_1(3^[], 5^[]))]   (6)  
+------------------------------------------------------
+End of proof for t92_xxreal_1

@@ -1,0 +1,26 @@
+
+t48_quatern3 is a Theorem
+Start of proof for t48_quatern3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k8_quatern2(k2_quatern2)=k2_quatern2]
+ (2)  [- (k5_struct_0(k16_quatern2)=k2_quatern2)]
+ (3)  [- (k8_quatern2(k5_struct_0(k16_quatern2))=k5_struct_0(k16_quatern2))]
+ (4)  [_G1667=_G1716, - (k5_struct_0(_G1667)=k5_struct_0(_G1716))]
+ (5)  [_G1936=_G1985, - (k8_quatern2(_G1936)=k8_quatern2(_G1985))]
+ (6)  [- (_G885=_G885)]
+ (7)  [_G984=_G1029, - (_G1029=_G984)]
+ (8)  [- (_G1217=_G1330), _G1217=_G1273, _G1273=_G1330]
+
+Connection Proof:
+-----------------
+1  [k8_quatern2(k2_quatern2)=k2_quatern2]   (1)  
+1.1  [- (k8_quatern2(k2_quatern2)=k2_quatern2), k8_quatern2(k2_quatern2)=k8_quatern2(k5_struct_0(k16_quatern2)), k8_quatern2(k5_struct_0(k16_quatern2))=k2_quatern2]   (8)  substitution:[[_G1217, _G1330, _G1273], [k8_quatern2(k2_quatern2), k2_quatern2, k8_quatern2(k5_struct_0(k16_quatern2))]]
+1.1.1  [- (k8_quatern2(k2_quatern2)=k8_quatern2(k5_struct_0(k16_quatern2))), k2_quatern2=k5_struct_0(k16_quatern2)]   (5)  substitution:[[_G1936, _G1985], [k2_quatern2, k5_struct_0(k16_quatern2)]]
+1.1.1.1  [- (k2_quatern2=k5_struct_0(k16_quatern2)), k5_struct_0(k16_quatern2)=k2_quatern2]   (7)  substitution:[[_G1029, _G984], [k2_quatern2, k5_struct_0(k16_quatern2)]]
+1.1.1.1.1  [- (k5_struct_0(k16_quatern2)=k2_quatern2)]   (2)  
+1.1.2  [- (k8_quatern2(k5_struct_0(k16_quatern2))=k2_quatern2), k8_quatern2(k5_struct_0(k16_quatern2))=k5_struct_0(k16_quatern2), k5_struct_0(k16_quatern2)=k2_quatern2]   (8)  substitution:[[_G1217, _G1330, _G1273], [k8_quatern2(k5_struct_0(k16_quatern2)), k2_quatern2, k5_struct_0(k16_quatern2)]]
+1.1.2.1  [- (k8_quatern2(k5_struct_0(k16_quatern2))=k5_struct_0(k16_quatern2))]   (3)  
+1.1.2.2  [- (k5_struct_0(k16_quatern2)=k2_quatern2)]   (2)  
+------------------------------------------------------
+End of proof for t48_quatern3

@@ -1,0 +1,61 @@
+
+t44_pboole is a Theorem
+Start of proof for t44_pboole
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(2^[])]
+ (2)  [-v4_relat_1(2^[], 1^[])]
+ (3)  [-v1_funct_1(2^[])]
+ (4)  [-v1_partfun1(2^[], 1^[])]
+ (5)  [-r2_pboole(1^[], 2^[], k1_pboole(1^[]))]
+ (6)  [r6_pboole(1^[], 2^[], k1_pboole(1^[]))]
+ (7)  [- (k1_pboole(_G9541)=k7_funcop_1(_G9541, k1_xboole_0))]
+ (8)  [-v1_relat_1(k1_pboole(_G9698))]
+ (9)  [-v4_relat_1(k1_pboole(_G9698), _G9698)]
+ (10)  [-v1_funct_1(k1_pboole(_G9698))]
+ (11)  [-v1_partfun1(k1_pboole(_G9698), _G9698)]
+ (12)  [v1_partfun1(_G10163, _G10061), v1_funct_1(_G10163), v4_relat_1(_G10163, _G10061), v1_relat_1(_G10163), r2_pboole(_G10061, _G10507, _G10163), r2_pboole(_G10061, _G10163, _G10507), - (_G10163=_G10507), v1_relat_1(_G10507), v4_relat_1(_G10507, _G10061), v1_funct_1(_G10507), v1_partfun1(_G10507, _G10061)]
+ (13)  [-r2_pboole(_G12200, k1_pboole(_G12200), _G12264), v1_relat_1(_G12264), v4_relat_1(_G12264, _G12200), v1_funct_1(_G12264), v1_partfun1(_G12264, _G12200)]
+ (14)  [- (_G11290=_G11386), r6_pboole(_G11195, _G11290, _G11386), v1_partfun1(_G11290, _G11195), v1_funct_1(_G11290), v4_relat_1(_G11290, _G11195), v1_relat_1(_G11290), v1_relat_1(_G11386), v4_relat_1(_G11386, _G11195), v1_funct_1(_G11386), v1_partfun1(_G11386, _G11195)]
+ (15)  [_G11290=_G11386, -r6_pboole(_G11195, _G11290, _G11386), v1_partfun1(_G11290, _G11195), v1_funct_1(_G11290), v4_relat_1(_G11290, _G11195), v1_relat_1(_G11290), v1_relat_1(_G11386), v4_relat_1(_G11386, _G11195), v1_funct_1(_G11386), v1_partfun1(_G11386, _G11195)]
+ (16)  [_G9221=_G9270, - (k1_pboole(_G9221)=k1_pboole(_G9270))]
+ (17)  [- (k7_funcop_1(_G8633, _G8768)=k7_funcop_1(_G8700, _G8837)), _G8633=_G8700, _G8768=_G8837]
+ (18)  [- (_G3928=_G3928)]
+ (19)  [_G4027=_G4072, - (_G4072=_G4027)]
+ (20)  [- (_G4260=_G4373), _G4260=_G4316, _G4316=_G4373]
+ (21)  [-v1_relat_1(_G4759), _G4710=_G4759, v1_relat_1(_G4710)]
+ (22)  [-v4_relat_1(_G5055, _G5192), v4_relat_1(_G4988, _G5123), _G4988=_G5055, _G5123=_G5192]
+ (23)  [-v1_funct_1(_G5634), _G5585=_G5634, v1_funct_1(_G5585)]
+ (24)  [-v1_partfun1(_G5930, _G6067), v1_partfun1(_G5863, _G5998), _G5863=_G5930, _G5998=_G6067]
+ (25)  [-r2_pboole(_G6545, _G6718, _G6895), r2_pboole(_G6460, _G6631, _G6806), _G6460=_G6545, _G6631=_G6718, _G6806=_G6895]
+ (26)  [-r6_pboole(_G7564, _G7737, _G7914), r6_pboole(_G7479, _G7650, _G7825), _G7479=_G7564, _G7650=_G7737, _G7825=_G7914]
+
+Connection Proof:
+-----------------
+1  [r6_pboole(1^[], 2^[], k1_pboole(1^[]))]   (6)  
+1.1  [-r6_pboole(1^[], 2^[], k1_pboole(1^[])), 2^[]=k1_pboole(1^[]), v1_partfun1(2^[], 1^[]), v1_funct_1(2^[]), v4_relat_1(2^[], 1^[]), v1_relat_1(2^[]), v1_relat_1(k1_pboole(1^[])), v4_relat_1(k1_pboole(1^[]), 1^[]), v1_funct_1(k1_pboole(1^[])), v1_partfun1(k1_pboole(1^[]), 1^[])]   (15)  substitution:[[_G11195, _G11290, _G11386], [1^[], 2^[], k1_pboole(1^[])]]
+1.1.1  [- (2^[]=k1_pboole(1^[])), v1_partfun1(2^[], 1^[]), v1_funct_1(2^[]), v4_relat_1(2^[], 1^[]), v1_relat_1(2^[]), r2_pboole(1^[], k1_pboole(1^[]), 2^[]), r2_pboole(1^[], 2^[], k1_pboole(1^[])), v1_relat_1(k1_pboole(1^[])), v4_relat_1(k1_pboole(1^[]), 1^[]), v1_funct_1(k1_pboole(1^[])), v1_partfun1(k1_pboole(1^[]), 1^[])]   (12)  substitution:[[_G10163, _G10507, _G10061], [2^[], k1_pboole(1^[]), 1^[]]]
+1.1.1.1  [-v1_partfun1(2^[], 1^[])]   (4)  
+1.1.1.2  [-v1_funct_1(2^[])]   (3)  
+1.1.1.3  [-v4_relat_1(2^[], 1^[])]   (2)  
+1.1.1.4  [-v1_relat_1(2^[])]   (1)  
+1.1.1.5  [-r2_pboole(1^[], k1_pboole(1^[]), 2^[]), v1_relat_1(2^[]), v4_relat_1(2^[], 1^[]), v1_funct_1(2^[]), v1_partfun1(2^[], 1^[])]   (13)  substitution:[[_G12200, _G12264], [1^[], 2^[]]]
+1.1.1.5.1  [-v1_relat_1(2^[])]   (1)  
+1.1.1.5.2  [-v4_relat_1(2^[], 1^[])]   (2)  
+1.1.1.5.3  [-v1_funct_1(2^[])]   (3)  
+1.1.1.5.4  [-v1_partfun1(2^[], 1^[])]   (4)  
+1.1.1.6  [-r2_pboole(1^[], 2^[], k1_pboole(1^[]))]   (5)  
+1.1.1.7  [-v1_relat_1(k1_pboole(1^[]))]   (8)  substitution:[[_G9698], [1^[]]]
+1.1.1.8  [-v4_relat_1(k1_pboole(1^[]), 1^[])]   (9)  substitution:[[_G9698], [1^[]]]
+1.1.1.9  [-v1_funct_1(k1_pboole(1^[]))]   (10)  substitution:[[_G9698], [1^[]]]
+1.1.1.10  [-v1_partfun1(k1_pboole(1^[]), 1^[])]   (11)  substitution:[[_G9698], [1^[]]]
+1.1.2  [-v1_partfun1(2^[], 1^[])]   (4)  
+1.1.3  [-v1_funct_1(2^[])]   (3)  
+1.1.4  [-v4_relat_1(2^[], 1^[])]   (2)  
+1.1.5  [-v1_relat_1(2^[])]   (1)  
+1.1.6  [-v1_relat_1(k1_pboole(1^[]))]   (8)  substitution:[[_G9698], [1^[]]]
+1.1.7  [-v4_relat_1(k1_pboole(1^[]), 1^[])]   (9)  substitution:[[_G9698], [1^[]]]
+1.1.8  [-v1_funct_1(k1_pboole(1^[]))]   (10)  substitution:[[_G9698], [1^[]]]
+1.1.9  [-v1_partfun1(k1_pboole(1^[]), 1^[])]   (11)  substitution:[[_G9698], [1^[]]]
+------------------------------------------------------
+End of proof for t44_pboole

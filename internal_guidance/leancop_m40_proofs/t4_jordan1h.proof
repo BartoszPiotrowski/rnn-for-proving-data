@@ -1,0 +1,52 @@
+
+t4_jordan1h is a Theorem
+Start of proof for t4_jordan1h
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(3^[], k1_numbers)]
+ (2)  [-m1_subset_1(4^[], k1_numbers)]
+ (3)  [-r2_hidden(k4_tarski(3^[], 4^[]), k1_jordan1h)]
+ (4)  [r1_xxreal_0(3^[], 4^[])]
+ (5)  [- (k1_jordan1h=a_0_0_jordan1h)]
+ (6)  [k4_tarski(_G5916, _G5983)=k4_tarski(_G6051, _G6120), - (_G5916=_G6051)]
+ (7)  [k4_tarski(_G5916, _G5983)=k4_tarski(_G6051, _G6120), - (_G5983=_G6120)]
+ (8)  [r2_hidden(_G5289, a_0_0_jordan1h), -m1_subset_1(1^[_G5289], k1_numbers)]
+ (9)  [r2_hidden(_G5289, a_0_0_jordan1h), -m1_subset_1(2^[_G5289], k1_numbers)]
+ (10)  [r2_hidden(_G5289, a_0_0_jordan1h), - (_G5289=k4_tarski(1^[_G5289], 2^[_G5289]))]
+ (11)  [r2_hidden(_G5289, a_0_0_jordan1h), -r1_xxreal_0(1^[_G5289], 2^[_G5289])]
+ (12)  [-r2_hidden(_G5289, a_0_0_jordan1h), m1_subset_1(_G5483, k1_numbers), m1_subset_1(_G5417, k1_numbers), _G5289=k4_tarski(_G5417, _G5483), r1_xxreal_0(_G5417, _G5483)]
+ (13)  [- (k4_tarski(_G4614, _G4749)=k4_tarski(_G4681, _G4818)), _G4614=_G4681, _G4749=_G4818]
+ (14)  [- (_G1996=_G1996)]
+ (15)  [_G2095=_G2140, - (_G2140=_G2095)]
+ (16)  [- (_G2328=_G2441), _G2328=_G2384, _G2384=_G2441]
+ (17)  [-m1_subset_1(_G2845, _G2982), m1_subset_1(_G2778, _G2913), _G2778=_G2845, _G2913=_G2982]
+ (18)  [-r2_hidden(_G3442, _G3579), r2_hidden(_G3375, _G3510), _G3375=_G3442, _G3510=_G3579]
+ (19)  [-r1_xxreal_0(_G4030, _G4167), r1_xxreal_0(_G3963, _G4098), _G3963=_G4030, _G4098=_G4167]
+
+Connection Proof:
+-----------------
+1  [r1_xxreal_0(3^[], 4^[])]   (4)  
+1.1  [-r1_xxreal_0(3^[], 4^[]), r1_xxreal_0(1^[k4_tarski(3^[], 4^[])], 2^[k4_tarski(3^[], 4^[])]), 1^[k4_tarski(3^[], 4^[])]=3^[], 2^[k4_tarski(3^[], 4^[])]=4^[]]   (19)  substitution:[[_G4030, _G4167, _G3963, _G4098], [3^[], 4^[], 1^[k4_tarski(3^[], 4^[])], 2^[k4_tarski(3^[], 4^[])]]]
+1.1.1  [-r1_xxreal_0(1^[k4_tarski(3^[], 4^[])], 2^[k4_tarski(3^[], 4^[])]), r2_hidden(k4_tarski(3^[], 4^[]), a_0_0_jordan1h)]   (11)  substitution:[[_G5289], [k4_tarski(3^[], 4^[])]]
+1.1.1.1  [-r2_hidden(k4_tarski(3^[], 4^[]), a_0_0_jordan1h), r2_hidden(k4_tarski(3^[], 4^[]), k1_jordan1h), k4_tarski(3^[], 4^[])=k4_tarski(3^[], 4^[]), k1_jordan1h=a_0_0_jordan1h]   (18)  substitution:[[_G3442, _G3579, _G3375, _G3510], [k4_tarski(3^[], 4^[]), a_0_0_jordan1h, k4_tarski(3^[], 4^[]), k1_jordan1h]]
+1.1.1.1.1  [-r2_hidden(k4_tarski(3^[], 4^[]), k1_jordan1h)]   (3)  
+1.1.1.1.2  [- (k4_tarski(3^[], 4^[])=k4_tarski(3^[], 4^[])), k4_tarski(k4_tarski(3^[], 4^[]), _G11523)=k4_tarski(k4_tarski(3^[], 4^[]), _G11523)]   (6)  substitution:[[_G5916, _G6051, _G5983, _G6120], [k4_tarski(3^[], 4^[]), k4_tarski(3^[], 4^[]), _G11523, _G11523]]
+1.1.1.1.2.1  [- (k4_tarski(k4_tarski(3^[], 4^[]), _G11523)=k4_tarski(k4_tarski(3^[], 4^[]), _G11523)), k4_tarski(k4_tarski(k4_tarski(3^[], 4^[]), _G11523), _G11554)=k4_tarski(k4_tarski(k4_tarski(3^[], 4^[]), _G11523), _G11554)]   (6)  substitution:[[_G5916, _G6051, _G5983, _G6120], [k4_tarski(k4_tarski(3^[], 4^[]), _G11523), k4_tarski(k4_tarski(3^[], 4^[]), _G11523), _G11554, _G11554]]
+1.1.1.1.2.1.1  [- (k4_tarski(k4_tarski(k4_tarski(3^[], 4^[]), _G11523), _G11554)=k4_tarski(k4_tarski(k4_tarski(3^[], 4^[]), _G11523), _G11554))]   (14)  substitution:[[_G1996], [k4_tarski(k4_tarski(k4_tarski(3^[], 4^[]), _G11523), _G11554)]]
+1.1.1.1.3  [- (k1_jordan1h=a_0_0_jordan1h)]   (5)  
+1.1.2  [- (1^[k4_tarski(3^[], 4^[])]=3^[]), k4_tarski(1^[k4_tarski(3^[], 4^[])], 2^[k4_tarski(3^[], 4^[])])=k4_tarski(3^[], 4^[])]   (6)  substitution:[[_G5916, _G6051, _G5983, _G6120], [1^[k4_tarski(3^[], 4^[])], 3^[], 2^[k4_tarski(3^[], 4^[])], 4^[]]]
+1.1.2.1  [- (k4_tarski(1^[k4_tarski(3^[], 4^[])], 2^[k4_tarski(3^[], 4^[])])=k4_tarski(3^[], 4^[])), k4_tarski(3^[], 4^[])=k4_tarski(1^[k4_tarski(3^[], 4^[])], 2^[k4_tarski(3^[], 4^[])])]   (15)  substitution:[[_G2140, _G2095], [k4_tarski(1^[k4_tarski(3^[], 4^[])], 2^[k4_tarski(3^[], 4^[])]), k4_tarski(3^[], 4^[])]]
+1.1.2.1.1  [- (k4_tarski(3^[], 4^[])=k4_tarski(1^[k4_tarski(3^[], 4^[])], 2^[k4_tarski(3^[], 4^[])])), r2_hidden(k4_tarski(3^[], 4^[]), a_0_0_jordan1h)]   (10)  substitution:[[_G5289], [k4_tarski(3^[], 4^[])]]
+1.1.2.1.1.1  [-r2_hidden(k4_tarski(3^[], 4^[]), a_0_0_jordan1h), r2_hidden(k4_tarski(3^[], 4^[]), k1_jordan1h), k4_tarski(3^[], 4^[])=k4_tarski(3^[], 4^[]), k1_jordan1h=a_0_0_jordan1h]   (18)  substitution:[[_G3442, _G3579, _G3375, _G3510], [k4_tarski(3^[], 4^[]), a_0_0_jordan1h, k4_tarski(3^[], 4^[]), k1_jordan1h]]
+1.1.2.1.1.1.1  [-r2_hidden(k4_tarski(3^[], 4^[]), k1_jordan1h)]   (3)  
+1.1.2.1.1.1.2  [- (k4_tarski(3^[], 4^[])=k4_tarski(3^[], 4^[]))]   (14)  substitution:[[_G1996], [k4_tarski(3^[], 4^[])]]
+1.1.2.1.1.1.3  [- (k1_jordan1h=a_0_0_jordan1h)]   (5)  
+1.1.3  [- (2^[k4_tarski(3^[], 4^[])]=4^[]), k4_tarski(1^[k4_tarski(3^[], 4^[])], 2^[k4_tarski(3^[], 4^[])])=k4_tarski(3^[], 4^[])]   (7)  substitution:[[_G5983, _G6120, _G5916, _G6051], [2^[k4_tarski(3^[], 4^[])], 4^[], 1^[k4_tarski(3^[], 4^[])], 3^[]]]
+1.1.3.1  [- (k4_tarski(1^[k4_tarski(3^[], 4^[])], 2^[k4_tarski(3^[], 4^[])])=k4_tarski(3^[], 4^[])), k4_tarski(3^[], 4^[])=k4_tarski(1^[k4_tarski(3^[], 4^[])], 2^[k4_tarski(3^[], 4^[])])]   (15)  substitution:[[_G2140, _G2095], [k4_tarski(1^[k4_tarski(3^[], 4^[])], 2^[k4_tarski(3^[], 4^[])]), k4_tarski(3^[], 4^[])]]
+1.1.3.1.1  [- (k4_tarski(3^[], 4^[])=k4_tarski(1^[k4_tarski(3^[], 4^[])], 2^[k4_tarski(3^[], 4^[])])), r2_hidden(k4_tarski(3^[], 4^[]), a_0_0_jordan1h)]   (10)  substitution:[[_G5289], [k4_tarski(3^[], 4^[])]]
+1.1.3.1.1.1  [-r2_hidden(k4_tarski(3^[], 4^[]), a_0_0_jordan1h), r2_hidden(k4_tarski(3^[], 4^[]), k1_jordan1h), k4_tarski(3^[], 4^[])=k4_tarski(3^[], 4^[]), k1_jordan1h=a_0_0_jordan1h]   (18)  substitution:[[_G3442, _G3579, _G3375, _G3510], [k4_tarski(3^[], 4^[]), a_0_0_jordan1h, k4_tarski(3^[], 4^[]), k1_jordan1h]]
+1.1.3.1.1.1.1  [-r2_hidden(k4_tarski(3^[], 4^[]), k1_jordan1h)]   (3)  
+1.1.3.1.1.1.2  [- (k4_tarski(3^[], 4^[])=k4_tarski(3^[], 4^[]))]   (14)  substitution:[[_G1996], [k4_tarski(3^[], 4^[])]]
+1.1.3.1.1.1.3  [- (k1_jordan1h=a_0_0_jordan1h)]   (5)  
+------------------------------------------------------
+End of proof for t4_jordan1h

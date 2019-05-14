@@ -1,0 +1,42 @@
+
+t22_partit_2 is a Theorem
+Start of proof for t22_partit_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v1_xboole_0(3^[])]
+ (2)  [-m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(3^[], 3^[])))]
+ (3)  [-r3_relat_2(4^[], 3^[])]
+ (4)  [v3_relat_2(4^[])]
+ (5)  [m1_subset_1(_G1278, k1_zfmisc_1(k2_zfmisc_1(_G1169, _G1223))), -v1_relat_1(_G1278)]
+ (6)  [v1_relat_1(_G1521), v3_relat_2(_G1521), -r3_relat_2(_G1521, k1_relat_1(_G1521))]
+ (7)  [v1_relat_1(_G1521), -v3_relat_2(_G1521), r3_relat_2(_G1521, k1_relat_1(_G1521))]
+ (8)  [m1_subset_1(_G2818, k1_zfmisc_1(k2_zfmisc_1(_G2741, _G2741))), r2_hidden(k4_tarski(_G2590, _G2665), _G2818), -r2_hidden(_G2590, _G2741)]
+ (9)  [m1_subset_1(_G2818, k1_zfmisc_1(k2_zfmisc_1(_G2741, _G2741))), r2_hidden(k4_tarski(_G2590, _G2665), _G2818), -r2_hidden(_G2665, _G2741)]
+ (10)  [v1_relat_1(_G1752), -r3_relat_2(_G1752, _G1868), -r2_hidden(1^[_G1868, _G1752], _G1868)]
+ (11)  [v1_relat_1(_G1752), -r3_relat_2(_G1752, _G1868), -r2_hidden(2^[_G1868, _G1752], _G1868)]
+ (12)  [v1_relat_1(_G1752), -r3_relat_2(_G1752, _G1868), -r2_hidden(k4_tarski(1^[_G1868, _G1752], 2^[_G1868, _G1752]), _G1752)]
+ (13)  [v1_relat_1(_G1752), -r3_relat_2(_G1752, _G1868), r2_hidden(k4_tarski(2^[_G1868, _G1752], 1^[_G1868, _G1752]), _G1752)]
+ (14)  [v1_relat_1(_G1752), r3_relat_2(_G1752, _G1868), -r2_hidden(k4_tarski(_G2080, _G2005), _G1752), r2_hidden(_G2005, _G1868), r2_hidden(_G2080, _G1868), r2_hidden(k4_tarski(_G2005, _G2080), _G1752)]
+
+Connection Proof:
+-----------------
+1  [v3_relat_2(4^[])]   (4)  
+1.1  [-v3_relat_2(4^[]), v1_relat_1(4^[]), r3_relat_2(4^[], k1_relat_1(4^[]))]   (7)  substitution:[[_G1521], [4^[]]]
+1.1.1  [-v1_relat_1(4^[]), m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(3^[], 3^[])))]   (5)  substitution:[[_G1278, _G1169, _G1223], [4^[], 3^[], 3^[]]]
+1.1.1.1  [-m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(3^[], 3^[])))]   (2)  
+1.1.2  [-r3_relat_2(4^[], k1_relat_1(4^[])), v1_relat_1(4^[]), -r2_hidden(k4_tarski(1^[k1_relat_1(4^[]), 4^[]], 2^[k1_relat_1(4^[]), 4^[]]), 4^[])]   (12)  substitution:[[_G1752, _G1868], [4^[], k1_relat_1(4^[])]]
+1.1.2.1  [-v1_relat_1(4^[])]   (lemmata:1.1)  
+1.1.2.2  [r2_hidden(k4_tarski(1^[k1_relat_1(4^[]), 4^[]], 2^[k1_relat_1(4^[]), 4^[]]), 4^[]), v1_relat_1(4^[]), r3_relat_2(4^[], 3^[]), -r2_hidden(k4_tarski(2^[k1_relat_1(4^[]), 4^[]], 1^[k1_relat_1(4^[]), 4^[]]), 4^[]), r2_hidden(1^[k1_relat_1(4^[]), 4^[]], 3^[]), r2_hidden(2^[k1_relat_1(4^[]), 4^[]], 3^[])]   (14)  substitution:[[_G2005, _G2080, _G1752, _G1868], [1^[k1_relat_1(4^[]), 4^[]], 2^[k1_relat_1(4^[]), 4^[]], 4^[], 3^[]]]
+1.1.2.2.1  [-v1_relat_1(4^[])]   (lemmata:1.1.2)  
+1.1.2.2.2  [-r3_relat_2(4^[], 3^[])]   (3)  
+1.1.2.2.3  [r2_hidden(k4_tarski(2^[k1_relat_1(4^[]), 4^[]], 1^[k1_relat_1(4^[]), 4^[]]), 4^[]), v1_relat_1(4^[]), -r3_relat_2(4^[], k1_relat_1(4^[]))]   (13)  substitution:[[_G1868, _G1752], [k1_relat_1(4^[]), 4^[]]]
+1.1.2.2.3.1  [-v1_relat_1(4^[])]   (lemmata:1.1.2.2)  
+1.1.2.2.3.2  [r3_relat_2(4^[], k1_relat_1(4^[]))]   (reduction:1.1)  
+1.1.2.2.4  [-r2_hidden(1^[k1_relat_1(4^[]), 4^[]], 3^[]), m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(3^[], 3^[]))), r2_hidden(k4_tarski(1^[k1_relat_1(4^[]), 4^[]], 2^[k1_relat_1(4^[]), 4^[]]), 4^[])]   (8)  substitution:[[_G2590, _G2741, _G2818, _G2665], [1^[k1_relat_1(4^[]), 4^[]], 3^[], 4^[], 2^[k1_relat_1(4^[]), 4^[]]]]
+1.1.2.2.4.1  [-m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(3^[], 3^[])))]   (2)  
+1.1.2.2.4.2  [-r2_hidden(k4_tarski(1^[k1_relat_1(4^[]), 4^[]], 2^[k1_relat_1(4^[]), 4^[]]), 4^[])]   (reduction:1.1.2)  
+1.1.2.2.5  [-r2_hidden(2^[k1_relat_1(4^[]), 4^[]], 3^[]), m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(3^[], 3^[]))), r2_hidden(k4_tarski(1^[k1_relat_1(4^[]), 4^[]], 2^[k1_relat_1(4^[]), 4^[]]), 4^[])]   (9)  substitution:[[_G2665, _G2741, _G2818, _G2590], [2^[k1_relat_1(4^[]), 4^[]], 3^[], 4^[], 1^[k1_relat_1(4^[]), 4^[]]]]
+1.1.2.2.5.1  [-m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(3^[], 3^[])))]   (2)  
+1.1.2.2.5.2  [-r2_hidden(k4_tarski(1^[k1_relat_1(4^[]), 4^[]], 2^[k1_relat_1(4^[]), 4^[]]), 4^[])]   (reduction:1.1.2)  
+------------------------------------------------------
+End of proof for t22_partit_2

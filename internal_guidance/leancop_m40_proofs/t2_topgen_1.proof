@@ -1,0 +1,53 @@
+
+t2_topgen_1 is a Theorem
+Start of proof for t2_topgen_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-3^[], v1_orders_4(1^[])]
+ (2)  [-3^[], -r1_ordinal1(k1_card_1(k2_struct_0(1^[])), k4_ordinal1)]
+ (3)  [-2^[], r1_ordinal1(k1_card_1(k2_struct_0(1^[])), k4_ordinal1)]
+ (4)  [-2^[], -v1_orders_4(1^[])]
+ (5)  [-l1_struct_0(1^[])]
+ (6)  [2^[], 3^[]]
+ (7)  [v4_card_3(_G4911), -r1_ordinal1(k1_card_1(_G4911), k4_ordinal1)]
+ (8)  [-v4_card_3(_G4911), r1_ordinal1(k1_card_1(_G4911), k4_ordinal1)]
+ (9)  [l1_struct_0(_G5280), - (k2_struct_0(_G5280)=u1_struct_0(_G5280))]
+ (10)  [l1_struct_0(_G5084), v1_orders_4(_G5084), -v4_card_3(u1_struct_0(_G5084))]
+ (11)  [l1_struct_0(_G5084), -v1_orders_4(_G5084), v4_card_3(u1_struct_0(_G5084))]
+ (12)  [_G4023=_G4072, - (u1_struct_0(_G4023)=u1_struct_0(_G4072))]
+ (13)  [_G4301=_G4350, - (k1_card_1(_G4301)=k1_card_1(_G4350))]
+ (14)  [_G4570=_G4619, - (k2_struct_0(_G4570)=k2_struct_0(_G4619))]
+ (15)  [- (_G1735=_G1735)]
+ (16)  [_G1834=_G1879, - (_G1879=_G1834)]
+ (17)  [- (_G2067=_G2180), _G2067=_G2123, _G2123=_G2180]
+ (18)  [-v4_card_3(_G2566), _G2517=_G2566, v4_card_3(_G2517)]
+ (19)  [-l1_struct_0(_G2844), _G2795=_G2844, l1_struct_0(_G2795)]
+ (20)  [-v1_orders_4(_G3122), _G3073=_G3122, v1_orders_4(_G3073)]
+ (21)  [-r1_ordinal1(_G3409, _G3546), r1_ordinal1(_G3342, _G3477), _G3342=_G3409, _G3477=_G3546]
+
+Connection Proof:
+-----------------
+1  [2^[], 3^[]]   (6)  
+1.1  [-2^[], r1_ordinal1(k1_card_1(k2_struct_0(1^[])), k4_ordinal1)]   (3)  
+1.1.1  [-r1_ordinal1(k1_card_1(k2_struct_0(1^[])), k4_ordinal1), r1_ordinal1(k1_card_1(u1_struct_0(1^[])), k4_ordinal1), k1_card_1(u1_struct_0(1^[]))=k1_card_1(k2_struct_0(1^[])), k4_ordinal1=k4_ordinal1]   (21)  substitution:[[_G3409, _G3546, _G3342, _G3477], [k1_card_1(k2_struct_0(1^[])), k4_ordinal1, k1_card_1(u1_struct_0(1^[])), k4_ordinal1]]
+1.1.1.1  [-r1_ordinal1(k1_card_1(u1_struct_0(1^[])), k4_ordinal1), v4_card_3(u1_struct_0(1^[]))]   (7)  substitution:[[_G4911], [u1_struct_0(1^[])]]
+1.1.1.1.1  [-v4_card_3(u1_struct_0(1^[])), l1_struct_0(1^[]), v1_orders_4(1^[])]   (10)  substitution:[[_G5084], [1^[]]]
+1.1.1.1.1.1  [-l1_struct_0(1^[])]   (5)  
+1.1.1.1.1.2  [-v1_orders_4(1^[]), -2^[]]   (4)  
+1.1.1.1.1.2.1  [2^[]]   (reduction:1)  
+1.1.1.2  [- (k1_card_1(u1_struct_0(1^[]))=k1_card_1(k2_struct_0(1^[]))), u1_struct_0(1^[])=k2_struct_0(1^[])]   (13)  substitution:[[_G4301, _G4350], [u1_struct_0(1^[]), k2_struct_0(1^[])]]
+1.1.1.2.1  [- (u1_struct_0(1^[])=k2_struct_0(1^[])), k2_struct_0(1^[])=u1_struct_0(1^[])]   (16)  substitution:[[_G1879, _G1834], [u1_struct_0(1^[]), k2_struct_0(1^[])]]
+1.1.1.2.1.1  [- (k2_struct_0(1^[])=u1_struct_0(1^[])), l1_struct_0(1^[])]   (9)  substitution:[[_G5280], [1^[]]]
+1.1.1.2.1.1.1  [-l1_struct_0(1^[])]   (5)  
+1.1.1.3  [- (k4_ordinal1=k4_ordinal1)]   (15)  substitution:[[_G1735], [k4_ordinal1]]
+1.2  [-3^[], v1_orders_4(1^[])]   (1)  
+1.2.1  [-v1_orders_4(1^[]), l1_struct_0(1^[]), v4_card_3(u1_struct_0(1^[]))]   (11)  substitution:[[_G5084], [1^[]]]
+1.2.1.1  [-l1_struct_0(1^[])]   (5)  
+1.2.1.2  [-v4_card_3(u1_struct_0(1^[])), k2_struct_0(1^[])=u1_struct_0(1^[]), v4_card_3(k2_struct_0(1^[]))]   (18)  substitution:[[_G2566, _G2517], [u1_struct_0(1^[]), k2_struct_0(1^[])]]
+1.2.1.2.1  [- (k2_struct_0(1^[])=u1_struct_0(1^[])), l1_struct_0(1^[])]   (9)  substitution:[[_G5280], [1^[]]]
+1.2.1.2.1.1  [-l1_struct_0(1^[])]   (5)  
+1.2.1.2.2  [-v4_card_3(k2_struct_0(1^[])), r1_ordinal1(k1_card_1(k2_struct_0(1^[])), k4_ordinal1)]   (8)  substitution:[[_G4911], [k2_struct_0(1^[])]]
+1.2.1.2.2.1  [-r1_ordinal1(k1_card_1(k2_struct_0(1^[])), k4_ordinal1), -3^[]]   (2)  
+1.2.1.2.2.1.1  [3^[]]   (reduction:1)  
+------------------------------------------------------
+End of proof for t2_topgen_1

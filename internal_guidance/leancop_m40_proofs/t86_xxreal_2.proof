@@ -1,0 +1,63 @@
+
+t86_xxreal_2 is a Theorem
+Start of proof for t86_xxreal_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v2_membered(5^[])]
+ (2)  [v6_xxreal_2(5^[])]
+ (3)  [v1_xxreal_0(_G5535), v1_xxreal_0(_G5545), r2_hidden(_G5535, 5^[]), -r1_xxreal_0(_G5545, k2_xxreal_2(5^[])), -r1_xxreal_0(_G5535, _G5545), -r2_hidden(_G5545, 5^[])]
+ (4)  [-v2_membered(_G1447), -r2_hidden(1^[_G1447], _G1447)]
+ (5)  [-v2_membered(_G1447), v1_xxreal_0(1^[_G1447])]
+ (6)  [v2_membered(_G1447), r2_hidden(_G1528, _G1447), -v1_xxreal_0(_G1528)]
+ (7)  [v2_membered(_G1720), -v1_xxreal_0(k2_xxreal_2(_G1720))]
+ (8)  [v1_xxreal_0(_G1867), v1_xxreal_0(_G1970), v1_xxreal_0(_G2069), -r1_xxreal_0(_G1867, _G2069), r1_xxreal_0(_G1867, _G1970), r1_xxreal_0(_G1970, _G2069)]
+ (9)  [v2_membered(_G2836), -v1_xxreal_0(2^[_G2836]), -v6_xxreal_2(_G2836)]
+ (10)  [v2_membered(_G2836), -v1_xxreal_0(3^[_G2836]), -v6_xxreal_2(_G2836)]
+ (11)  [v2_membered(_G2836), -v1_xxreal_0(4^[_G2836]), -v6_xxreal_2(_G2836)]
+ (12)  [v2_membered(_G2836), -r2_hidden(2^[_G2836], _G2836), -v6_xxreal_2(_G2836)]
+ (13)  [v2_membered(_G2836), -r2_hidden(3^[_G2836], _G2836), -v6_xxreal_2(_G2836)]
+ (14)  [v2_membered(_G2836), r1_xxreal_0(4^[_G2836], 2^[_G2836]), -v6_xxreal_2(_G2836)]
+ (15)  [v2_membered(_G2836), r1_xxreal_0(3^[_G2836], 4^[_G2836]), -v6_xxreal_2(_G2836)]
+ (16)  [v2_membered(_G2836), r2_hidden(4^[_G2836], _G2836), -v6_xxreal_2(_G2836)]
+ (17)  [v1_xxreal_0(_G2464), v2_membered(_G2553), r2_hidden(_G2464, _G2553), -r1_xxreal_0(k2_xxreal_2(_G2553), _G2464)]
+
+Connection Proof:
+-----------------
+1  [v6_xxreal_2(5^[])]   (2)  
+1.1  [-v6_xxreal_2(5^[]), v2_membered(5^[]), r1_xxreal_0(3^[5^[]], 4^[5^[]])]   (15)  substitution:[[_G2836], [5^[]]]
+1.1.1  [-v2_membered(5^[])]   (1)  
+1.1.2  [-r1_xxreal_0(3^[5^[]], 4^[5^[]]), v1_xxreal_0(3^[5^[]]), v1_xxreal_0(4^[5^[]]), r2_hidden(3^[5^[]], 5^[]), -r1_xxreal_0(4^[5^[]], k2_xxreal_2(5^[])), -r2_hidden(4^[5^[]], 5^[])]   (3)  substitution:[[_G5535, _G5545], [3^[5^[]], 4^[5^[]]]]
+1.1.2.1  [-v1_xxreal_0(3^[5^[]]), v2_membered(5^[]), r2_hidden(3^[5^[]], 5^[])]   (6)  substitution:[[_G1528, _G1447], [3^[5^[]], 5^[]]]
+1.1.2.1.1  [-v2_membered(5^[])]   (1)  
+1.1.2.1.2  [-r2_hidden(3^[5^[]], 5^[]), v2_membered(5^[]), -v6_xxreal_2(5^[])]   (13)  substitution:[[_G2836], [5^[]]]
+1.1.2.1.2.1  [-v2_membered(5^[])]   (1)  
+1.1.2.1.2.2  [v6_xxreal_2(5^[])]   (2)  
+1.1.2.2  [-v1_xxreal_0(4^[5^[]]), v2_membered(5^[]), -v6_xxreal_2(5^[])]   (11)  substitution:[[_G2836], [5^[]]]
+1.1.2.2.1  [-v2_membered(5^[])]   (1)  
+1.1.2.2.2  [v6_xxreal_2(5^[])]   (2)  
+1.1.2.3  [-r2_hidden(3^[5^[]], 5^[]), v2_membered(5^[]), -v6_xxreal_2(5^[])]   (13)  substitution:[[_G2836], [5^[]]]
+1.1.2.3.1  [-v2_membered(5^[])]   (1)  
+1.1.2.3.2  [v6_xxreal_2(5^[])]   (2)  
+1.1.2.4  [r1_xxreal_0(4^[5^[]], k2_xxreal_2(5^[])), v1_xxreal_0(4^[5^[]]), v1_xxreal_0(k2_xxreal_2(5^[])), v1_xxreal_0(2^[5^[]]), -r1_xxreal_0(4^[5^[]], 2^[5^[]]), r1_xxreal_0(k2_xxreal_2(5^[]), 2^[5^[]])]   (8)  substitution:[[_G1867, _G1970, _G2069], [4^[5^[]], k2_xxreal_2(5^[]), 2^[5^[]]]]
+1.1.2.4.1  [-v1_xxreal_0(4^[5^[]])]   (lemmata:1.1.2)  
+1.1.2.4.2  [-v1_xxreal_0(k2_xxreal_2(5^[])), v2_membered(5^[])]   (7)  substitution:[[_G1720], [5^[]]]
+1.1.2.4.2.1  [-v2_membered(5^[])]   (1)  
+1.1.2.4.3  [-v1_xxreal_0(2^[5^[]]), v2_membered(5^[]), r2_hidden(2^[5^[]], 5^[])]   (6)  substitution:[[_G1528, _G1447], [2^[5^[]], 5^[]]]
+1.1.2.4.3.1  [-v2_membered(5^[])]   (1)  
+1.1.2.4.3.2  [-r2_hidden(2^[5^[]], 5^[]), v2_membered(5^[]), -v6_xxreal_2(5^[])]   (12)  substitution:[[_G2836], [5^[]]]
+1.1.2.4.3.2.1  [-v2_membered(5^[])]   (1)  
+1.1.2.4.3.2.2  [v6_xxreal_2(5^[])]   (2)  
+1.1.2.4.4  [r1_xxreal_0(4^[5^[]], 2^[5^[]]), v2_membered(5^[]), -v6_xxreal_2(5^[])]   (14)  substitution:[[_G2836], [5^[]]]
+1.1.2.4.4.1  [-v2_membered(5^[])]   (1)  
+1.1.2.4.4.2  [v6_xxreal_2(5^[])]   (2)  
+1.1.2.4.5  [-r1_xxreal_0(k2_xxreal_2(5^[]), 2^[5^[]]), v1_xxreal_0(2^[5^[]]), v2_membered(5^[]), r2_hidden(2^[5^[]], 5^[])]   (17)  substitution:[[_G2553, _G2464], [5^[], 2^[5^[]]]]
+1.1.2.4.5.1  [-v1_xxreal_0(2^[5^[]])]   (lemmata:1.1.2.4)  
+1.1.2.4.5.2  [-v2_membered(5^[])]   (1)  
+1.1.2.4.5.3  [-r2_hidden(2^[5^[]], 5^[]), v2_membered(5^[]), -v6_xxreal_2(5^[])]   (12)  substitution:[[_G2836], [5^[]]]
+1.1.2.4.5.3.1  [-v2_membered(5^[])]   (1)  
+1.1.2.4.5.3.2  [v6_xxreal_2(5^[])]   (2)  
+1.1.2.5  [r2_hidden(4^[5^[]], 5^[]), v2_membered(5^[]), -v6_xxreal_2(5^[])]   (16)  substitution:[[_G2836], [5^[]]]
+1.1.2.5.1  [-v2_membered(5^[])]   (1)  
+1.1.2.5.2  [v6_xxreal_2(5^[])]   (2)  
+------------------------------------------------------
+End of proof for t86_xxreal_2

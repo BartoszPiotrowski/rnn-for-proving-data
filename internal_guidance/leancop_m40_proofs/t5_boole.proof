@@ -1,0 +1,30 @@
+
+t5_boole is a Theorem
+Start of proof for t5_boole
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k5_xboole_0(1^[], k1_xboole_0)=1^[]]
+ (2)  [- (k1_xboole_0=o_0_0_xboole_0)]
+ (3)  [- (k5_xboole_0(_G4197, _G4248)=k2_xboole_0(k4_xboole_0(_G4197, _G4248), k4_xboole_0(_G4248, _G4197)))]
+ (4)  [- (k2_xboole_0(_G4529, k1_xboole_0)=_G4529)]
+ (5)  [- (k4_xboole_0(_G4670, k1_xboole_0)=_G4670)]
+ (6)  [- (k4_xboole_0(k1_xboole_0, _G4802)=k1_xboole_0)]
+ (7)  [- (_G1513=_G1513)]
+ (8)  [_G1612=_G1657, - (_G1657=_G1612)]
+ (9)  [- (_G1845=_G1958), _G1845=_G1901, _G1901=_G1958]
+ (10)  [- (k2_xboole_0(_G2295, _G2430)=k2_xboole_0(_G2362, _G2499)), _G2295=_G2362, _G2430=_G2499]
+ (11)  [- (k4_xboole_0(_G2892, _G3027)=k4_xboole_0(_G2959, _G3096)), _G2892=_G2959, _G3027=_G3096]
+ (12)  [- (k5_xboole_0(_G3480, _G3615)=k5_xboole_0(_G3547, _G3684)), _G3480=_G3547, _G3615=_G3684]
+
+Connection Proof:
+-----------------
+1  [k5_xboole_0(1^[], k1_xboole_0)=1^[]]   (1)  
+1.1  [- (k5_xboole_0(1^[], k1_xboole_0)=1^[]), k5_xboole_0(1^[], k1_xboole_0)=k2_xboole_0(k4_xboole_0(1^[], k1_xboole_0), k4_xboole_0(k1_xboole_0, 1^[])), k2_xboole_0(k4_xboole_0(1^[], k1_xboole_0), k4_xboole_0(k1_xboole_0, 1^[]))=1^[]]   (9)  substitution:[[_G1845, _G1958, _G1901], [k5_xboole_0(1^[], k1_xboole_0), 1^[], k2_xboole_0(k4_xboole_0(1^[], k1_xboole_0), k4_xboole_0(k1_xboole_0, 1^[]))]]
+1.1.1  [- (k5_xboole_0(1^[], k1_xboole_0)=k2_xboole_0(k4_xboole_0(1^[], k1_xboole_0), k4_xboole_0(k1_xboole_0, 1^[])))]   (3)  substitution:[[_G4197, _G4248], [1^[], k1_xboole_0]]
+1.1.2  [- (k2_xboole_0(k4_xboole_0(1^[], k1_xboole_0), k4_xboole_0(k1_xboole_0, 1^[]))=1^[]), k2_xboole_0(k4_xboole_0(1^[], k1_xboole_0), k4_xboole_0(k1_xboole_0, 1^[]))=k2_xboole_0(1^[], k1_xboole_0), k2_xboole_0(1^[], k1_xboole_0)=1^[]]   (9)  substitution:[[_G1845, _G1958, _G1901], [k2_xboole_0(k4_xboole_0(1^[], k1_xboole_0), k4_xboole_0(k1_xboole_0, 1^[])), 1^[], k2_xboole_0(1^[], k1_xboole_0)]]
+1.1.2.1  [- (k2_xboole_0(k4_xboole_0(1^[], k1_xboole_0), k4_xboole_0(k1_xboole_0, 1^[]))=k2_xboole_0(1^[], k1_xboole_0)), k4_xboole_0(1^[], k1_xboole_0)=1^[], k4_xboole_0(k1_xboole_0, 1^[])=k1_xboole_0]   (10)  substitution:[[_G2295, _G2430, _G2362, _G2499], [k4_xboole_0(1^[], k1_xboole_0), k4_xboole_0(k1_xboole_0, 1^[]), 1^[], k1_xboole_0]]
+1.1.2.1.1  [- (k4_xboole_0(1^[], k1_xboole_0)=1^[])]   (5)  substitution:[[_G4670], [1^[]]]
+1.1.2.1.2  [- (k4_xboole_0(k1_xboole_0, 1^[])=k1_xboole_0)]   (6)  substitution:[[_G4802], [1^[]]]
+1.1.2.2  [- (k2_xboole_0(1^[], k1_xboole_0)=1^[])]   (4)  substitution:[[_G4529], [1^[]]]
+------------------------------------------------------
+End of proof for t5_boole

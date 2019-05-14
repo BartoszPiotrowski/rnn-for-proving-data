@@ -1,0 +1,44 @@
+
+t15_cgames_1 is a Theorem
+Start of proof for t15_cgames_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v2_cgames_1(2^[])]
+ (2)  [-v2_cgames_1(3^[])]
+ (3)  [r2_hidden(k9_cgames_1(2^[]), k9_cgames_1(3^[]))]
+ (4)  [-r2_hidden(2^[], k6_cgames_1(3^[])), -r2_hidden(2^[], k7_cgames_1(3^[]))]
+ (5)  [v2_cgames_1(_G6508), - (k8_cgames_1(_G6508)=k2_xboole_0(k6_cgames_1(_G6508), k7_cgames_1(_G6508)))]
+ (6)  [v2_cgames_1(_G6746), v2_cgames_1(_G6839), r2_hidden(_G6746, k8_cgames_1(_G6839)), -r2_hidden(k9_cgames_1(_G6746), k9_cgames_1(_G6839))]
+ (7)  [_G6010=k2_xboole_0(_G5869, _G5939), -r2_hidden(_G6178, _G6010), r2_hidden(_G6178, _G5869)]
+ (8)  [_G6010=k2_xboole_0(_G5869, _G5939), -r2_hidden(_G6178, _G6010), r2_hidden(_G6178, _G5939)]
+ (9)  [_G6010=k2_xboole_0(_G5869, _G5939), r2_hidden(_G6178, _G6010), -r2_hidden(_G6178, _G5869), -r2_hidden(_G6178, _G5939)]
+ (10)  [- (_G6010=k2_xboole_0(_G5869, _G5939)), r2_hidden(1^[_G6010, _G5939, _G5869], _G6010), r2_hidden(1^[_G6010, _G5939, _G5869], _G5869)]
+ (11)  [- (_G6010=k2_xboole_0(_G5869, _G5939)), r2_hidden(1^[_G6010, _G5939, _G5869], _G6010), r2_hidden(1^[_G6010, _G5939, _G5869], _G5939)]
+ (12)  [- (_G6010=k2_xboole_0(_G5869, _G5939)), -r2_hidden(1^[_G6010, _G5939, _G5869], _G6010), -r2_hidden(1^[_G6010, _G5939, _G5869], _G5869), -r2_hidden(1^[_G6010, _G5939, _G5869], _G5939)]
+ (13)  [- (k2_xboole_0(_G4064, _G4199)=k2_xboole_0(_G4131, _G4268)), _G4064=_G4131, _G4199=_G4268]
+ (14)  [_G4661=_G4710, - (k8_cgames_1(_G4661)=k8_cgames_1(_G4710))]
+ (15)  [_G4939=_G4988, - (k6_cgames_1(_G4939)=k6_cgames_1(_G4988))]
+ (16)  [_G5217=_G5266, - (k7_cgames_1(_G5217)=k7_cgames_1(_G5266))]
+ (17)  [_G5486=_G5535, - (k9_cgames_1(_G5486)=k9_cgames_1(_G5535))]
+ (18)  [- (_G2374=_G2374)]
+ (19)  [_G2473=_G2518, - (_G2518=_G2473)]
+ (20)  [- (_G2706=_G2819), _G2706=_G2762, _G2762=_G2819]
+ (21)  [-v2_cgames_1(_G3205), _G3156=_G3205, v2_cgames_1(_G3156)]
+ (22)  [-r2_hidden(_G3492, _G3629), r2_hidden(_G3425, _G3560), _G3425=_G3492, _G3560=_G3629]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(k9_cgames_1(2^[]), k9_cgames_1(3^[]))]   (3)  
+1.1  [-r2_hidden(k9_cgames_1(2^[]), k9_cgames_1(3^[])), v2_cgames_1(2^[]), v2_cgames_1(3^[]), r2_hidden(2^[], k8_cgames_1(3^[]))]   (6)  substitution:[[_G6746, _G6839], [2^[], 3^[]]]
+1.1.1  [-v2_cgames_1(2^[])]   (1)  
+1.1.2  [-v2_cgames_1(3^[])]   (2)  
+1.1.3  [-r2_hidden(2^[], k8_cgames_1(3^[])), k8_cgames_1(3^[])=k2_xboole_0(k6_cgames_1(3^[]), k7_cgames_1(3^[])), r2_hidden(2^[], k6_cgames_1(3^[]))]   (7)  substitution:[[_G6178, _G6010, _G5869, _G5939], [2^[], k8_cgames_1(3^[]), k6_cgames_1(3^[]), k7_cgames_1(3^[])]]
+1.1.3.1  [- (k8_cgames_1(3^[])=k2_xboole_0(k6_cgames_1(3^[]), k7_cgames_1(3^[]))), v2_cgames_1(3^[])]   (5)  substitution:[[_G6508], [3^[]]]
+1.1.3.1.1  [-v2_cgames_1(3^[])]   (2)  
+1.1.3.2  [-r2_hidden(2^[], k6_cgames_1(3^[])), -r2_hidden(2^[], k7_cgames_1(3^[]))]   (4)  
+1.1.3.2.1  [r2_hidden(2^[], k7_cgames_1(3^[])), k8_cgames_1(3^[])=k2_xboole_0(k6_cgames_1(3^[]), k7_cgames_1(3^[])), -r2_hidden(2^[], k8_cgames_1(3^[]))]   (8)  substitution:[[_G6178, _G5939, _G6010, _G5869], [2^[], k7_cgames_1(3^[]), k8_cgames_1(3^[]), k6_cgames_1(3^[])]]
+1.1.3.2.1.1  [- (k8_cgames_1(3^[])=k2_xboole_0(k6_cgames_1(3^[]), k7_cgames_1(3^[]))), v2_cgames_1(3^[])]   (5)  substitution:[[_G6508], [3^[]]]
+1.1.3.2.1.1.1  [-v2_cgames_1(3^[])]   (2)  
+1.1.3.2.1.2  [r2_hidden(2^[], k8_cgames_1(3^[]))]   (reduction:1.1)  
+------------------------------------------------------
+End of proof for t15_cgames_1

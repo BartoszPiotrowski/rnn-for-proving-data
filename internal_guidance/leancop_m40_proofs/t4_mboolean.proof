@@ -1,0 +1,30 @@
+
+t4_mboolean is a Theorem
+Start of proof for t4_mboolean
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [r6_pboole(1^[], k1_mboolean(1^[], k7_funcop_1(1^[], k1_tarski(2^[]))), k7_funcop_1(1^[], k2_tarski(k1_xboole_0, k1_tarski(2^[]))))]
+ (2)  [- (k1_zfmisc_1(k1_tarski(_G5926))=k2_tarski(k1_xboole_0, k1_tarski(_G5926)))]
+ (3)  [-r6_pboole(_G6106, k1_mboolean(_G6106, k7_funcop_1(_G6106, _G6157)), k7_funcop_1(_G6106, k1_zfmisc_1(_G6157)))]
+ (4)  [-r6_pboole(_G2519, _G2692, _G2869), r6_pboole(_G2434, _G2605, _G2780), _G2434=_G2519, _G2605=_G2692, _G2780=_G2869]
+ (5)  [- (_G1661=_G1661)]
+ (6)  [_G1760=_G1805, - (_G1805=_G1760)]
+ (7)  [- (_G1993=_G2106), _G1993=_G2049, _G2049=_G2106]
+ (8)  [_G3483=_G3532, - (k1_zfmisc_1(_G3483)=k1_zfmisc_1(_G3532))]
+ (9)  [- (k1_mboolean(_G3761, _G3896)=k1_mboolean(_G3828, _G3965)), _G3761=_G3828, _G3896=_G3965]
+ (10)  [- (k7_funcop_1(_G4358, _G4493)=k7_funcop_1(_G4425, _G4562)), _G4358=_G4425, _G4493=_G4562]
+ (11)  [_G5543=_G5592, - (k1_tarski(_G5543)=k1_tarski(_G5592))]
+ (12)  [- (k2_tarski(_G4955, _G5090)=k2_tarski(_G5022, _G5159)), _G4955=_G5022, _G5090=_G5159]
+
+Connection Proof:
+-----------------
+1  [r6_pboole(1^[], k1_mboolean(1^[], k7_funcop_1(1^[], k1_tarski(2^[]))), k7_funcop_1(1^[], k2_tarski(k1_xboole_0, k1_tarski(2^[]))))]   (1)  
+1.1  [-r6_pboole(1^[], k1_mboolean(1^[], k7_funcop_1(1^[], k1_tarski(2^[]))), k7_funcop_1(1^[], k2_tarski(k1_xboole_0, k1_tarski(2^[])))), r6_pboole(1^[], k1_mboolean(1^[], k7_funcop_1(1^[], k1_tarski(2^[]))), k7_funcop_1(1^[], k1_zfmisc_1(k1_tarski(2^[])))), 1^[]=1^[], k1_mboolean(1^[], k7_funcop_1(1^[], k1_tarski(2^[])))=k1_mboolean(1^[], k7_funcop_1(1^[], k1_tarski(2^[]))), k7_funcop_1(1^[], k1_zfmisc_1(k1_tarski(2^[])))=k7_funcop_1(1^[], k2_tarski(k1_xboole_0, k1_tarski(2^[])))]   (4)  substitution:[[_G2519, _G2692, _G2869, _G2434, _G2605, _G2780], [1^[], k1_mboolean(1^[], k7_funcop_1(1^[], k1_tarski(2^[]))), k7_funcop_1(1^[], k2_tarski(k1_xboole_0, k1_tarski(2^[]))), 1^[], k1_mboolean(1^[], k7_funcop_1(1^[], k1_tarski(2^[]))), k7_funcop_1(1^[], k1_zfmisc_1(k1_tarski(2^[])))]]
+1.1.1  [-r6_pboole(1^[], k1_mboolean(1^[], k7_funcop_1(1^[], k1_tarski(2^[]))), k7_funcop_1(1^[], k1_zfmisc_1(k1_tarski(2^[]))))]   (3)  substitution:[[_G6106, _G6157], [1^[], k1_tarski(2^[])]]
+1.1.2  [- (1^[]=1^[])]   (5)  substitution:[[_G1661], [1^[]]]
+1.1.3  [- (k1_mboolean(1^[], k7_funcop_1(1^[], k1_tarski(2^[])))=k1_mboolean(1^[], k7_funcop_1(1^[], k1_tarski(2^[]))))]   (5)  substitution:[[_G1661], [k1_mboolean(1^[], k7_funcop_1(1^[], k1_tarski(2^[])))]]
+1.1.4  [- (k7_funcop_1(1^[], k1_zfmisc_1(k1_tarski(2^[])))=k7_funcop_1(1^[], k2_tarski(k1_xboole_0, k1_tarski(2^[])))), 1^[]=1^[], k1_zfmisc_1(k1_tarski(2^[]))=k2_tarski(k1_xboole_0, k1_tarski(2^[]))]   (10)  substitution:[[_G4358, _G4493, _G4425, _G4562], [1^[], k1_zfmisc_1(k1_tarski(2^[])), 1^[], k2_tarski(k1_xboole_0, k1_tarski(2^[]))]]
+1.1.4.1  [- (1^[]=1^[])]   (5)  substitution:[[_G1661], [1^[]]]
+1.1.4.2  [- (k1_zfmisc_1(k1_tarski(2^[]))=k2_tarski(k1_xboole_0, k1_tarski(2^[])))]   (2)  substitution:[[_G5926], [2^[]]]
+------------------------------------------------------
+End of proof for t4_mboolean

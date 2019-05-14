@@ -1,0 +1,45 @@
+
+t93_xxreal_2 is a Theorem
+Start of proof for t93_xxreal_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v1_xboole_0(2^[])]
+ (2)  [-m1_subset_1(2^[], k1_zfmisc_1(k7_numbers))]
+ (3)  [2^[]=k1_tarski(k1_xxreal_0)]
+ (4)  [m1_subset_1(_G9854, k7_numbers), r2_hidden(_G9854, 2^[]), -r1_xxreal_0(k1_xxreal_0, _G9854)]
+ (5)  [m1_subset_1(_G6617, k7_numbers), -v1_xxreal_0(_G6617)]
+ (6)  [m1_subset_1(_G6774, _G6824), -v1_xboole_0(_G6824), -r2_hidden(_G6774, _G6824)]
+ (7)  [-v1_xboole_0(_G7079), - (_G7079=k1_tarski(_G7194)), -m1_subset_1(1^[_G7194, _G7079], _G7079)]
+ (8)  [-v1_xboole_0(_G7079), - (_G7079=k1_tarski(_G7194)), 1^[_G7194, _G7079]=_G7194]
+ (9)  [-m1_subset_1(_G7609, _G7726), r2_hidden(_G7609, _G7667), m1_subset_1(_G7667, k1_zfmisc_1(_G7726))]
+ (10)  [v1_xxreal_0(_G8028), r1_xxreal_0(k1_xxreal_0, _G8028), - (_G8028=k1_xxreal_0)]
+ (11)  [_G6028=_G6077, - (k1_zfmisc_1(_G6028)=k1_zfmisc_1(_G6077))]
+ (12)  [_G6297=_G6346, - (k1_tarski(_G6297)=k1_tarski(_G6346))]
+ (13)  [- (_G2803=_G2803)]
+ (14)  [_G2902=_G2947, - (_G2947=_G2902)]
+ (15)  [- (_G3135=_G3248), _G3135=_G3191, _G3191=_G3248]
+ (16)  [-v1_xxreal_0(_G3634), _G3585=_G3634, v1_xxreal_0(_G3585)]
+ (17)  [-v1_xboole_0(_G3912), _G3863=_G3912, v1_xboole_0(_G3863)]
+ (18)  [-m1_subset_1(_G4208, _G4345), m1_subset_1(_G4141, _G4276), _G4141=_G4208, _G4276=_G4345]
+ (19)  [-r2_hidden(_G4805, _G4942), r2_hidden(_G4738, _G4873), _G4738=_G4805, _G4873=_G4942]
+ (20)  [-r1_xxreal_0(_G5393, _G5530), r1_xxreal_0(_G5326, _G5461), _G5326=_G5393, _G5461=_G5530]
+
+Connection Proof:
+-----------------
+1  [v1_xboole_0(2^[])]   (1)  
+1.1  [-v1_xboole_0(2^[]), m1_subset_1(1^[k1_xxreal_0, 2^[]], 2^[]), -r2_hidden(1^[k1_xxreal_0, 2^[]], 2^[])]   (6)  substitution:[[_G6824, _G6774], [2^[], 1^[k1_xxreal_0, 2^[]]]]
+1.1.1  [-m1_subset_1(1^[k1_xxreal_0, 2^[]], 2^[]), -v1_xboole_0(2^[]), - (2^[]=k1_tarski(k1_xxreal_0))]   (7)  substitution:[[_G7194, _G7079], [k1_xxreal_0, 2^[]]]
+1.1.1.1  [v1_xboole_0(2^[])]   (1)  
+1.1.1.2  [2^[]=k1_tarski(k1_xxreal_0)]   (3)  
+1.1.2  [r2_hidden(1^[k1_xxreal_0, 2^[]], 2^[]), m1_subset_1(1^[k1_xxreal_0, 2^[]], k7_numbers), -r1_xxreal_0(k1_xxreal_0, 1^[k1_xxreal_0, 2^[]])]   (4)  substitution:[[_G9854], [1^[k1_xxreal_0, 2^[]]]]
+1.1.2.1  [-m1_subset_1(1^[k1_xxreal_0, 2^[]], k7_numbers), r2_hidden(1^[k1_xxreal_0, 2^[]], 2^[]), m1_subset_1(2^[], k1_zfmisc_1(k7_numbers))]   (9)  substitution:[[_G7609, _G7726, _G7667], [1^[k1_xxreal_0, 2^[]], k7_numbers, 2^[]]]
+1.1.2.1.1  [-r2_hidden(1^[k1_xxreal_0, 2^[]], 2^[])]   (reduction:1.1)  
+1.1.2.1.2  [-m1_subset_1(2^[], k1_zfmisc_1(k7_numbers))]   (2)  
+1.1.2.2  [r1_xxreal_0(k1_xxreal_0, 1^[k1_xxreal_0, 2^[]]), v1_xxreal_0(1^[k1_xxreal_0, 2^[]]), - (1^[k1_xxreal_0, 2^[]]=k1_xxreal_0)]   (10)  substitution:[[_G8028], [1^[k1_xxreal_0, 2^[]]]]
+1.1.2.2.1  [-v1_xxreal_0(1^[k1_xxreal_0, 2^[]]), m1_subset_1(1^[k1_xxreal_0, 2^[]], k7_numbers)]   (5)  substitution:[[_G6617], [1^[k1_xxreal_0, 2^[]]]]
+1.1.2.2.1.1  [-m1_subset_1(1^[k1_xxreal_0, 2^[]], k7_numbers)]   (lemmata:1.1.2)  
+1.1.2.2.2  [1^[k1_xxreal_0, 2^[]]=k1_xxreal_0, -v1_xboole_0(2^[]), - (2^[]=k1_tarski(k1_xxreal_0))]   (8)  substitution:[[_G7194, _G7079], [k1_xxreal_0, 2^[]]]
+1.1.2.2.2.1  [v1_xboole_0(2^[])]   (1)  
+1.1.2.2.2.2  [2^[]=k1_tarski(k1_xxreal_0)]   (3)  
+------------------------------------------------------
+End of proof for t93_xxreal_2

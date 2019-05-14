@@ -1,0 +1,39 @@
+
+l40_binop_2 is a Theorem
+Start of proof for l40_binop_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [m1_subset_1(np__1, k4_numbers)]
+ (2)  [- (k5_numbers=k4_ordinal1)]
+ (3)  [-v2_xxreal_0(np__1)]
+ (4)  [-m2_subset_1(np__1, k1_numbers, k5_numbers)]
+ (5)  [-m1_subset_1(np__1, k5_numbers)]
+ (6)  [-m1_subset_1(np__1, k1_numbers)]
+ (7)  [r2_hidden(_G6585, _G6630), -m1_subset_1(_G6585, _G6630)]
+ (8)  [_G5522=k4_numbers, r2_hidden(_G5656, _G5522), -m2_subset_1(1^[_G5656, _G5522], k1_numbers, k5_numbers)]
+ (9)  [_G5522=k4_numbers, r2_hidden(_G5656, _G5522), - (_G5656=1^[_G5656, _G5522]), - (_G5656=k1_real_1(1^[_G5656, _G5522]))]
+ (10)  [_G5522=k4_numbers, -r2_hidden(_G5656, _G5522), m2_subset_1(_G5791, k1_numbers, k5_numbers), _G5656=_G5791]
+ (11)  [_G5522=k4_numbers, -r2_hidden(_G5656, _G5522), m2_subset_1(_G5791, k1_numbers, k5_numbers), _G5656=k1_real_1(_G5791)]
+ (12)  [- (_G5522=k4_numbers), r2_hidden(2^[_G5522], _G5522), m2_subset_1(_G7538, k1_numbers, k5_numbers), 2^[_G5522]=_G7538]
+ (13)  [- (_G5522=k4_numbers), r2_hidden(2^[_G5522], _G5522), m2_subset_1(_G7538, k1_numbers, k5_numbers), 2^[_G5522]=k1_real_1(_G7538)]
+ (14)  [- (_G5522=k4_numbers), -r2_hidden(2^[_G5522], _G5522), -m2_subset_1(3^[_G5522], k1_numbers, k5_numbers)]
+ (15)  [- (_G5522=k4_numbers), -r2_hidden(2^[_G5522], _G5522), - (2^[_G5522]=3^[_G5522]), - (2^[_G5522]=k1_real_1(3^[_G5522]))]
+ (16)  [_G5223=_G5272, - (k1_real_1(_G5223)=k1_real_1(_G5272))]
+ (17)  [- (_G1875=_G1875)]
+ (18)  [_G1974=_G2019, - (_G2019=_G1974)]
+ (19)  [- (_G2207=_G2320), _G2207=_G2263, _G2263=_G2320]
+ (20)  [-v2_xxreal_0(_G2706), _G2657=_G2706, v2_xxreal_0(_G2657)]
+ (21)  [-m2_subset_1(_G3020, _G3193, _G3370), m2_subset_1(_G2935, _G3106, _G3281), _G2935=_G3020, _G3106=_G3193, _G3281=_G3370]
+ (22)  [-r2_hidden(_G4030, _G4167), r2_hidden(_G3963, _G4098), _G3963=_G4030, _G4098=_G4167]
+ (23)  [-m1_subset_1(_G4618, _G4755), m1_subset_1(_G4551, _G4686), _G4551=_G4618, _G4686=_G4755]
+
+Connection Proof:
+-----------------
+1  [m1_subset_1(np__1, k4_numbers)]   (1)  
+1.1  [-m1_subset_1(np__1, k4_numbers), r2_hidden(np__1, k4_numbers)]   (7)  substitution:[[_G6585, _G6630], [np__1, k4_numbers]]
+1.1.1  [-r2_hidden(np__1, k4_numbers), k4_numbers=k4_numbers, m2_subset_1(np__1, k1_numbers, k5_numbers), np__1=np__1]   (10)  substitution:[[_G5656, _G5522, _G5791], [np__1, k4_numbers, np__1]]
+1.1.1.1  [- (k4_numbers=k4_numbers)]   (17)  substitution:[[_G1875], [k4_numbers]]
+1.1.1.2  [-m2_subset_1(np__1, k1_numbers, k5_numbers)]   (4)  
+1.1.1.3  [- (np__1=np__1)]   (17)  substitution:[[_G1875], [np__1]]
+------------------------------------------------------
+End of proof for l40_binop_2

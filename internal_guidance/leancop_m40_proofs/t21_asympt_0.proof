@@ -1,0 +1,71 @@
+
+t21_asympt_0 is a Theorem
+Start of proof for t21_asympt_0
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_funct_1(1^[])]
+ (2)  [-v1_funct_2(1^[], k5_numbers, k1_numbers)]
+ (3)  [-v2_asympt_0(1^[])]
+ (4)  [-m1_subset_1(1^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_numbers)))]
+ (5)  [-v1_funct_1(2^[])]
+ (6)  [-v1_funct_2(2^[], k5_numbers, k1_numbers)]
+ (7)  [-v2_asympt_0(2^[])]
+ (8)  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_numbers)))]
+ (9)  [-v1_funct_1(3^[])]
+ (10)  [-v1_funct_2(3^[], k5_numbers, k1_numbers)]
+ (11)  [-v2_asympt_0(3^[])]
+ (12)  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_numbers)))]
+ (13)  [-r2_hidden(1^[], k7_asympt_0(2^[]))]
+ (14)  [-r2_hidden(2^[], k7_asympt_0(3^[]))]
+ (15)  [r2_hidden(1^[], k7_asympt_0(3^[]))]
+ (16)  [m1_subset_1(_G3171, k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_numbers))), v2_asympt_0(_G3171), v1_funct_2(_G3171, k5_numbers, k1_numbers), v1_funct_1(_G3171), m1_subset_1(_G3603, k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_numbers))), v2_asympt_0(_G3603), v1_funct_2(_G3603, k5_numbers, k1_numbers), v1_funct_1(_G3603), r2_hidden(_G3171, k7_asympt_0(_G3603)), -r2_hidden(_G3603, k6_asympt_0(_G3171))]
+ (17)  [m1_subset_1(_G3171, k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_numbers))), v2_asympt_0(_G3171), v1_funct_2(_G3171, k5_numbers, k1_numbers), v1_funct_1(_G3171), m1_subset_1(_G3603, k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_numbers))), v2_asympt_0(_G3603), v1_funct_2(_G3603, k5_numbers, k1_numbers), v1_funct_1(_G3603), -r2_hidden(_G3171, k7_asympt_0(_G3603)), r2_hidden(_G3603, k6_asympt_0(_G3171))]
+ (18)  [m1_subset_1(_G1500, k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_numbers))), v2_asympt_0(_G1500), v1_funct_2(_G1500, k5_numbers, k1_numbers), v1_funct_1(_G1500), m1_subset_1(_G1968, k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_numbers))), v2_asympt_0(_G1968), v1_funct_2(_G1968, k5_numbers, k1_numbers), v1_funct_1(_G1968), r2_hidden(_G1968, k6_asympt_0(_G2414)), r2_hidden(_G1500, k6_asympt_0(_G1968)), -r2_hidden(_G1500, k6_asympt_0(_G2414)), v1_funct_1(_G2414), v1_funct_2(_G2414, k5_numbers, k1_numbers), v2_asympt_0(_G2414), m1_subset_1(_G2414, k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_numbers)))]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(1^[], k7_asympt_0(3^[]))]   (15)  
+1.1  [-r2_hidden(1^[], k7_asympt_0(3^[])), m1_subset_1(1^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_numbers))), v2_asympt_0(1^[]), v1_funct_2(1^[], k5_numbers, k1_numbers), v1_funct_1(1^[]), m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_numbers))), v2_asympt_0(3^[]), v1_funct_2(3^[], k5_numbers, k1_numbers), v1_funct_1(3^[]), r2_hidden(3^[], k6_asympt_0(1^[]))]   (17)  substitution:[[_G3171, _G3603], [1^[], 3^[]]]
+1.1.1  [-m1_subset_1(1^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_numbers)))]   (4)  
+1.1.2  [-v2_asympt_0(1^[])]   (3)  
+1.1.3  [-v1_funct_2(1^[], k5_numbers, k1_numbers)]   (2)  
+1.1.4  [-v1_funct_1(1^[])]   (1)  
+1.1.5  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_numbers)))]   (12)  
+1.1.6  [-v2_asympt_0(3^[])]   (11)  
+1.1.7  [-v1_funct_2(3^[], k5_numbers, k1_numbers)]   (10)  
+1.1.8  [-v1_funct_1(3^[])]   (9)  
+1.1.9  [-r2_hidden(3^[], k6_asympt_0(1^[])), m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_numbers))), v2_asympt_0(3^[]), v1_funct_2(3^[], k5_numbers, k1_numbers), v1_funct_1(3^[]), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_numbers))), v2_asympt_0(2^[]), v1_funct_2(2^[], k5_numbers, k1_numbers), v1_funct_1(2^[]), r2_hidden(2^[], k6_asympt_0(1^[])), r2_hidden(3^[], k6_asympt_0(2^[])), v1_funct_1(1^[]), v1_funct_2(1^[], k5_numbers, k1_numbers), v2_asympt_0(1^[]), m1_subset_1(1^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_numbers)))]   (18)  substitution:[[_G1500, _G2414, _G1968], [3^[], 1^[], 2^[]]]
+1.1.9.1  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_numbers)))]   (12)  
+1.1.9.2  [-v2_asympt_0(3^[])]   (11)  
+1.1.9.3  [-v1_funct_2(3^[], k5_numbers, k1_numbers)]   (10)  
+1.1.9.4  [-v1_funct_1(3^[])]   (9)  
+1.1.9.5  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_numbers)))]   (8)  
+1.1.9.6  [-v2_asympt_0(2^[])]   (7)  
+1.1.9.7  [-v1_funct_2(2^[], k5_numbers, k1_numbers)]   (6)  
+1.1.9.8  [-v1_funct_1(2^[])]   (5)  
+1.1.9.9  [-r2_hidden(2^[], k6_asympt_0(1^[])), m1_subset_1(1^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_numbers))), v2_asympt_0(1^[]), v1_funct_2(1^[], k5_numbers, k1_numbers), v1_funct_1(1^[]), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_numbers))), v2_asympt_0(2^[]), v1_funct_2(2^[], k5_numbers, k1_numbers), v1_funct_1(2^[]), r2_hidden(1^[], k7_asympt_0(2^[]))]   (16)  substitution:[[_G3603, _G3171], [2^[], 1^[]]]
+1.1.9.9.1  [-m1_subset_1(1^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_numbers)))]   (4)  
+1.1.9.9.2  [-v2_asympt_0(1^[])]   (3)  
+1.1.9.9.3  [-v1_funct_2(1^[], k5_numbers, k1_numbers)]   (2)  
+1.1.9.9.4  [-v1_funct_1(1^[])]   (1)  
+1.1.9.9.5  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_numbers)))]   (8)  
+1.1.9.9.6  [-v2_asympt_0(2^[])]   (7)  
+1.1.9.9.7  [-v1_funct_2(2^[], k5_numbers, k1_numbers)]   (6)  
+1.1.9.9.8  [-v1_funct_1(2^[])]   (5)  
+1.1.9.9.9  [-r2_hidden(1^[], k7_asympt_0(2^[]))]   (13)  
+1.1.9.10  [-r2_hidden(3^[], k6_asympt_0(2^[])), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_numbers))), v2_asympt_0(2^[]), v1_funct_2(2^[], k5_numbers, k1_numbers), v1_funct_1(2^[]), m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_numbers))), v2_asympt_0(3^[]), v1_funct_2(3^[], k5_numbers, k1_numbers), v1_funct_1(3^[]), r2_hidden(2^[], k7_asympt_0(3^[]))]   (16)  substitution:[[_G3603, _G3171], [3^[], 2^[]]]
+1.1.9.10.1  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_numbers)))]   (8)  
+1.1.9.10.2  [-v2_asympt_0(2^[])]   (7)  
+1.1.9.10.3  [-v1_funct_2(2^[], k5_numbers, k1_numbers)]   (6)  
+1.1.9.10.4  [-v1_funct_1(2^[])]   (5)  
+1.1.9.10.5  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_numbers)))]   (12)  
+1.1.9.10.6  [-v2_asympt_0(3^[])]   (11)  
+1.1.9.10.7  [-v1_funct_2(3^[], k5_numbers, k1_numbers)]   (10)  
+1.1.9.10.8  [-v1_funct_1(3^[])]   (9)  
+1.1.9.10.9  [-r2_hidden(2^[], k7_asympt_0(3^[]))]   (14)  
+1.1.9.11  [-v1_funct_1(1^[])]   (1)  
+1.1.9.12  [-v1_funct_2(1^[], k5_numbers, k1_numbers)]   (2)  
+1.1.9.13  [-v2_asympt_0(1^[])]   (3)  
+1.1.9.14  [-m1_subset_1(1^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_numbers)))]   (4)  
+------------------------------------------------------
+End of proof for t21_asympt_0

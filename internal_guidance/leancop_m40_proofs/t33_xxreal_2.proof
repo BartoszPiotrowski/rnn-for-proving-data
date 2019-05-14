@@ -1,0 +1,80 @@
+
+t33_xxreal_2 is a Theorem
+Start of proof for t33_xxreal_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xxreal_0(1^[])]
+ (2)  [-v1_xxreal_0(2^[])]
+ (3)  [-r1_xxreal_0(1^[], 2^[])]
+ (4)  [v1_xxreal_2(k1_xxreal_1(1^[], 2^[])), v2_xxreal_2(k1_xxreal_1(1^[], 2^[]))]
+ (5)  [v2_membered(_G8066), v1_xxreal_2(_G8066), -r2_hidden(k2_xxreal_2(_G8066), _G8066)]
+ (6)  [v2_membered(_G8066), -v1_xxreal_2(_G8066), r2_hidden(k2_xxreal_2(_G8066), _G8066)]
+ (7)  [v2_membered(_G8297), v2_xxreal_2(_G8297), -r2_hidden(k1_xxreal_2(_G8297), _G8297)]
+ (8)  [v2_membered(_G8297), -v2_xxreal_2(_G8297), r2_hidden(k1_xxreal_2(_G8297), _G8297)]
+ (9)  [-v2_membered(k1_xxreal_1(_G8528, _G8579)), v1_xxreal_0(_G8528), v1_xxreal_0(_G8579)]
+ (10)  [-r1_xxreal_0(_G8824, _G8824), v1_xxreal_0(_G8824), v1_xxreal_0(_G8873)]
+ (11)  [v1_xxreal_0(_G9102), v1_xxreal_0(_G9208), v1_xxreal_0(_G9310), r2_hidden(_G9102, k1_xxreal_1(_G9208, _G9310)), -r1_xxreal_0(_G9208, _G9102)]
+ (12)  [v1_xxreal_0(_G9102), v1_xxreal_0(_G9208), v1_xxreal_0(_G9310), r2_hidden(_G9102, k1_xxreal_1(_G9208, _G9310)), -r1_xxreal_0(_G9102, _G9310)]
+ (13)  [v1_xxreal_0(_G9102), v1_xxreal_0(_G9208), v1_xxreal_0(_G9310), -r2_hidden(_G9102, k1_xxreal_1(_G9208, _G9310)), r1_xxreal_0(_G9208, _G9102), r1_xxreal_0(_G9102, _G9310)]
+ (14)  [v1_xxreal_0(_G9747), v1_xxreal_0(_G9839), r1_xxreal_0(_G9747, _G9839), - (k2_xxreal_2(k1_xxreal_1(_G9747, _G9839))=_G9747)]
+ (15)  [v1_xxreal_0(_G10164), v1_xxreal_0(_G10256), r1_xxreal_0(_G10164, _G10256), - (k1_xxreal_2(k1_xxreal_1(_G10164, _G10256))=_G10256)]
+ (16)  [_G6859=_G6908, - (k2_xxreal_2(_G6859)=k2_xxreal_2(_G6908))]
+ (17)  [_G7137=_G7186, - (k1_xxreal_2(_G7137)=k1_xxreal_2(_G7186))]
+ (18)  [- (k1_xxreal_1(_G7406, _G7541)=k1_xxreal_1(_G7473, _G7610)), _G7406=_G7473, _G7541=_G7610]
+ (19)  [- (_G3654=_G3654)]
+ (20)  [_G3753=_G3798, - (_G3798=_G3753)]
+ (21)  [- (_G3986=_G4099), _G3986=_G4042, _G4042=_G4099]
+ (22)  [-v2_membered(_G4485), _G4436=_G4485, v2_membered(_G4436)]
+ (23)  [-r2_hidden(_G4781, _G4918), r2_hidden(_G4714, _G4849), _G4714=_G4781, _G4849=_G4918]
+ (24)  [-v1_xxreal_0(_G5360), _G5311=_G5360, v1_xxreal_0(_G5311)]
+ (25)  [-r1_xxreal_0(_G5656, _G5793), r1_xxreal_0(_G5589, _G5724), _G5589=_G5656, _G5724=_G5793]
+ (26)  [-v1_xxreal_2(_G6235), _G6186=_G6235, v1_xxreal_2(_G6186)]
+ (27)  [-v2_xxreal_2(_G6504), _G6455=_G6504, v2_xxreal_2(_G6455)]
+
+Connection Proof:
+-----------------
+1  [v1_xxreal_2(k1_xxreal_1(1^[], 2^[])), v2_xxreal_2(k1_xxreal_1(1^[], 2^[]))]   (4)  
+1.1  [-v1_xxreal_2(k1_xxreal_1(1^[], 2^[])), v2_membered(k1_xxreal_1(1^[], 2^[])), r2_hidden(k2_xxreal_2(k1_xxreal_1(1^[], 2^[])), k1_xxreal_1(1^[], 2^[]))]   (6)  substitution:[[_G8066], [k1_xxreal_1(1^[], 2^[])]]
+1.1.1  [-v2_membered(k1_xxreal_1(1^[], 2^[])), v1_xxreal_0(1^[]), v1_xxreal_0(2^[])]   (9)  substitution:[[_G8528, _G8579], [1^[], 2^[]]]
+1.1.1.1  [-v1_xxreal_0(1^[])]   (1)  
+1.1.1.2  [-v1_xxreal_0(2^[])]   (2)  
+1.1.2  [-r2_hidden(k2_xxreal_2(k1_xxreal_1(1^[], 2^[])), k1_xxreal_1(1^[], 2^[])), r2_hidden(1^[], k1_xxreal_1(1^[], 2^[])), 1^[]=k2_xxreal_2(k1_xxreal_1(1^[], 2^[])), k1_xxreal_1(1^[], 2^[])=k1_xxreal_1(1^[], 2^[])]   (23)  substitution:[[_G4781, _G4918, _G4714, _G4849], [k2_xxreal_2(k1_xxreal_1(1^[], 2^[])), k1_xxreal_1(1^[], 2^[]), 1^[], k1_xxreal_1(1^[], 2^[])]]
+1.1.2.1  [-r2_hidden(1^[], k1_xxreal_1(1^[], 2^[])), v1_xxreal_0(1^[]), v1_xxreal_0(1^[]), v1_xxreal_0(2^[]), r1_xxreal_0(1^[], 1^[]), r1_xxreal_0(1^[], 2^[])]   (13)  substitution:[[_G9102, _G9208, _G9310], [1^[], 1^[], 2^[]]]
+1.1.2.1.1  [-v1_xxreal_0(1^[])]   (1)  
+1.1.2.1.2  [-v1_xxreal_0(1^[])]   (1)  
+1.1.2.1.3  [-v1_xxreal_0(2^[])]   (2)  
+1.1.2.1.4  [-r1_xxreal_0(1^[], 1^[]), v1_xxreal_0(1^[]), v1_xxreal_0(1^[])]   (10)  substitution:[[_G8824, _G8873], [1^[], 1^[]]]
+1.1.2.1.4.1  [-v1_xxreal_0(1^[])]   (1)  
+1.1.2.1.4.2  [-v1_xxreal_0(1^[])]   (1)  
+1.1.2.1.5  [-r1_xxreal_0(1^[], 2^[])]   (3)  
+1.1.2.2  [- (1^[]=k2_xxreal_2(k1_xxreal_1(1^[], 2^[]))), k2_xxreal_2(k1_xxreal_1(1^[], 2^[]))=1^[]]   (20)  substitution:[[_G3798, _G3753], [1^[], k2_xxreal_2(k1_xxreal_1(1^[], 2^[]))]]
+1.1.2.2.1  [- (k2_xxreal_2(k1_xxreal_1(1^[], 2^[]))=1^[]), v1_xxreal_0(1^[]), v1_xxreal_0(2^[]), r1_xxreal_0(1^[], 2^[])]   (14)  substitution:[[_G9747, _G9839], [1^[], 2^[]]]
+1.1.2.2.1.1  [-v1_xxreal_0(1^[])]   (1)  
+1.1.2.2.1.2  [-v1_xxreal_0(2^[])]   (2)  
+1.1.2.2.1.3  [-r1_xxreal_0(1^[], 2^[])]   (3)  
+1.1.2.3  [- (k1_xxreal_1(1^[], 2^[])=k1_xxreal_1(1^[], 2^[])), 1^[]=1^[], 2^[]=2^[]]   (18)  substitution:[[_G7406, _G7541, _G7473, _G7610], [1^[], 2^[], 1^[], 2^[]]]
+1.1.2.3.1  [- (1^[]=1^[])]   (19)  substitution:[[_G3654], [1^[]]]
+1.1.2.3.2  [- (2^[]=2^[])]   (19)  substitution:[[_G3654], [2^[]]]
+1.2  [-v2_xxreal_2(k1_xxreal_1(1^[], 2^[])), v2_membered(k1_xxreal_1(1^[], 2^[])), r2_hidden(k1_xxreal_2(k1_xxreal_1(1^[], 2^[])), k1_xxreal_1(1^[], 2^[]))]   (8)  substitution:[[_G8297], [k1_xxreal_1(1^[], 2^[])]]
+1.2.1  [-v2_membered(k1_xxreal_1(1^[], 2^[])), v1_xxreal_0(1^[]), v1_xxreal_0(2^[])]   (9)  substitution:[[_G8528, _G8579], [1^[], 2^[]]]
+1.2.1.1  [-v1_xxreal_0(1^[])]   (1)  
+1.2.1.2  [-v1_xxreal_0(2^[])]   (2)  
+1.2.2  [-r2_hidden(k1_xxreal_2(k1_xxreal_1(1^[], 2^[])), k1_xxreal_1(1^[], 2^[])), r2_hidden(2^[], k1_xxreal_1(1^[], 2^[])), 2^[]=k1_xxreal_2(k1_xxreal_1(1^[], 2^[])), k1_xxreal_1(1^[], 2^[])=k1_xxreal_1(1^[], 2^[])]   (23)  substitution:[[_G4781, _G4918, _G4714, _G4849], [k1_xxreal_2(k1_xxreal_1(1^[], 2^[])), k1_xxreal_1(1^[], 2^[]), 2^[], k1_xxreal_1(1^[], 2^[])]]
+1.2.2.1  [-r2_hidden(2^[], k1_xxreal_1(1^[], 2^[])), v1_xxreal_0(2^[]), v1_xxreal_0(1^[]), v1_xxreal_0(2^[]), r1_xxreal_0(1^[], 2^[]), r1_xxreal_0(2^[], 2^[])]   (13)  substitution:[[_G9102, _G9208, _G9310], [2^[], 1^[], 2^[]]]
+1.2.2.1.1  [-v1_xxreal_0(2^[])]   (2)  
+1.2.2.1.2  [-v1_xxreal_0(1^[])]   (1)  
+1.2.2.1.3  [-v1_xxreal_0(2^[])]   (2)  
+1.2.2.1.4  [-r1_xxreal_0(1^[], 2^[])]   (3)  
+1.2.2.1.5  [-r1_xxreal_0(2^[], 2^[]), v1_xxreal_0(2^[]), v1_xxreal_0(1^[])]   (10)  substitution:[[_G8824, _G8873], [2^[], 1^[]]]
+1.2.2.1.5.1  [-v1_xxreal_0(2^[])]   (2)  
+1.2.2.1.5.2  [-v1_xxreal_0(1^[])]   (1)  
+1.2.2.2  [- (2^[]=k1_xxreal_2(k1_xxreal_1(1^[], 2^[]))), k1_xxreal_2(k1_xxreal_1(1^[], 2^[]))=2^[]]   (20)  substitution:[[_G3798, _G3753], [2^[], k1_xxreal_2(k1_xxreal_1(1^[], 2^[]))]]
+1.2.2.2.1  [- (k1_xxreal_2(k1_xxreal_1(1^[], 2^[]))=2^[]), v1_xxreal_0(1^[]), v1_xxreal_0(2^[]), r1_xxreal_0(1^[], 2^[])]   (15)  substitution:[[_G10164, _G10256], [1^[], 2^[]]]
+1.2.2.2.1.1  [-v1_xxreal_0(1^[])]   (1)  
+1.2.2.2.1.2  [-v1_xxreal_0(2^[])]   (2)  
+1.2.2.2.1.3  [-r1_xxreal_0(1^[], 2^[])]   (3)  
+1.2.2.3  [- (k1_xxreal_1(1^[], 2^[])=k1_xxreal_1(1^[], 2^[])), 1^[]=1^[], 2^[]=2^[]]   (18)  substitution:[[_G7406, _G7541, _G7473, _G7610], [1^[], 2^[], 1^[], 2^[]]]
+1.2.2.3.1  [- (1^[]=1^[])]   (19)  substitution:[[_G3654], [1^[]]]
+1.2.2.3.2  [- (2^[]=2^[])]   (19)  substitution:[[_G3654], [2^[]]]
+------------------------------------------------------
+End of proof for t33_xxreal_2

@@ -1,0 +1,25 @@
+
+t15_isomichi is a Theorem
+Start of proof for t15_isomichi
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v2_pre_topc(1^[])]
+ (2)  [-l1_pre_topc(1^[])]
+ (3)  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]
+ (4)  [v6_tops_1(k1_tops_1(1^[], k2_pre_topc(1^[], 2^[])), 1^[]), v5_tops_1(k2_pre_topc(1^[], k1_tops_1(1^[], 2^[])), 1^[])]
+ (5)  [l1_pre_topc(_G877), v2_pre_topc(_G877), m1_subset_1(_G1027, k1_zfmisc_1(u1_struct_0(_G877))), -v5_tops_1(k2_pre_topc(_G877, k1_tops_1(_G877, _G1027)), _G877)]
+ (6)  [l1_pre_topc(_G1352), v2_pre_topc(_G1352), m1_subset_1(_G1502, k1_zfmisc_1(u1_struct_0(_G1352))), -v6_tops_1(k1_tops_1(_G1352, k2_pre_topc(_G1352, _G1502)), _G1352)]
+
+Connection Proof:
+-----------------
+1  [v6_tops_1(k1_tops_1(1^[], k2_pre_topc(1^[], 2^[])), 1^[]), v5_tops_1(k2_pre_topc(1^[], k1_tops_1(1^[], 2^[])), 1^[])]   (4)  
+1.1  [-v6_tops_1(k1_tops_1(1^[], k2_pre_topc(1^[], 2^[])), 1^[]), l1_pre_topc(1^[]), v2_pre_topc(1^[]), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (6)  substitution:[[_G1352, _G1502], [1^[], 2^[]]]
+1.1.1  [-l1_pre_topc(1^[])]   (2)  
+1.1.2  [-v2_pre_topc(1^[])]   (1)  
+1.1.3  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (3)  
+1.2  [-v5_tops_1(k2_pre_topc(1^[], k1_tops_1(1^[], 2^[])), 1^[]), l1_pre_topc(1^[]), v2_pre_topc(1^[]), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (5)  substitution:[[_G877, _G1027], [1^[], 2^[]]]
+1.2.1  [-l1_pre_topc(1^[])]   (2)  
+1.2.2  [-v2_pre_topc(1^[])]   (1)  
+1.2.3  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (3)  
+------------------------------------------------------
+End of proof for t15_isomichi

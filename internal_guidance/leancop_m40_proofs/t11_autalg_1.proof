@@ -1,0 +1,73 @@
+
+t11_autalg_1 is a Theorem
+Start of proof for t11_autalg_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(2^[])]
+ (2)  [-v4_relat_1(2^[], k1_tarski(1^[]))]
+ (3)  [-v1_funct_1(2^[])]
+ (4)  [-v1_partfun1(2^[], k1_tarski(1^[]))]
+ (5)  [2^[]=k16_funcop_1(1^[], k1_funct_1(2^[], 1^[]))]
+ (6)  [v4_relat_1(_G10400, _G10341), v1_relat_1(_G10400), v1_partfun1(_G10400, _G10341), - (k1_relset_1(_G10341, _G10400)=_G10341)]
+ (7)  [v4_relat_1(_G10400, _G10341), v1_relat_1(_G10400), -v1_partfun1(_G10400, _G10341), k1_relset_1(_G10341, _G10400)=_G10341]
+ (8)  [- (k16_funcop_1(_G10781, _G10828)=k7_funcop_1(k1_tarski(_G10781), _G10828))]
+ (9)  [- (k1_relset_1(_G11041, _G11096)=k9_xtuple_0(_G11096)), v1_relat_1(_G11096), v4_relat_1(_G11096, _G11041)]
+ (10)  [- (k7_funcop_1(_G11409, _G11454)=k2_funcop_1(_G11409, _G11454))]
+ (11)  [v1_funct_1(_G11717), v1_relat_1(_G11717), k9_xtuple_0(_G11717)=k1_tarski(_G11651), - (k10_xtuple_0(_G11717)=k1_tarski(k1_funct_1(_G11717, _G11651)))]
+ (12)  [v1_funct_1(_G12127), v1_relat_1(_G12127), k10_xtuple_0(_G12127)=k1_tarski(_G12276), - (_G12127=k2_funcop_1(k9_xtuple_0(_G12127), _G12276))]
+ (13)  [- (_G3756=_G3756)]
+ (14)  [_G3855=_G3900, - (_G3900=_G3855)]
+ (15)  [- (_G4088=_G4201), _G4088=_G4144, _G4144=_G4201]
+ (16)  [-v1_relat_1(_G4587), _G4538=_G4587, v1_relat_1(_G4538)]
+ (17)  [-v4_relat_1(_G4883, _G5020), v4_relat_1(_G4816, _G4951), _G4816=_G4883, _G4951=_G5020]
+ (18)  [-v1_funct_1(_G5462), _G5413=_G5462, v1_funct_1(_G5413)]
+ (19)  [-v1_partfun1(_G5749, _G5886), v1_partfun1(_G5682, _G5817), _G5682=_G5749, _G5817=_G5886]
+ (20)  [- (k1_relset_1(_G6363, _G6498)=k1_relset_1(_G6430, _G6567)), _G6363=_G6430, _G6498=_G6567]
+ (21)  [- (k7_funcop_1(_G6960, _G7095)=k7_funcop_1(_G7027, _G7164)), _G6960=_G7027, _G7095=_G7164]
+ (22)  [_G7557=_G7606, - (k10_xtuple_0(_G7557)=k10_xtuple_0(_G7606))]
+ (23)  [- (k2_funcop_1(_G7835, _G7970)=k2_funcop_1(_G7902, _G8039)), _G7835=_G7902, _G7970=_G8039]
+ (24)  [_G8432=_G8481, - (k9_xtuple_0(_G8432)=k9_xtuple_0(_G8481))]
+ (25)  [_G8710=_G8759, - (k1_tarski(_G8710)=k1_tarski(_G8759))]
+ (26)  [- (k16_funcop_1(_G8988, _G9123)=k16_funcop_1(_G9055, _G9192)), _G8988=_G9055, _G9123=_G9192]
+ (27)  [- (k1_funct_1(_G9576, _G9711)=k1_funct_1(_G9643, _G9780)), _G9576=_G9643, _G9711=_G9780]
+
+Connection Proof:
+-----------------
+1  [2^[]=k16_funcop_1(1^[], k1_funct_1(2^[], 1^[]))]   (5)  
+1.1  [- (2^[]=k16_funcop_1(1^[], k1_funct_1(2^[], 1^[]))), 2^[]=k2_funcop_1(k9_xtuple_0(2^[]), k1_funct_1(2^[], 1^[])), k2_funcop_1(k9_xtuple_0(2^[]), k1_funct_1(2^[], 1^[]))=k16_funcop_1(1^[], k1_funct_1(2^[], 1^[]))]   (15)  substitution:[[_G4088, _G4201, _G4144], [2^[], k16_funcop_1(1^[], k1_funct_1(2^[], 1^[])), k2_funcop_1(k9_xtuple_0(2^[]), k1_funct_1(2^[], 1^[]))]]
+1.1.1  [- (2^[]=k2_funcop_1(k9_xtuple_0(2^[]), k1_funct_1(2^[], 1^[]))), v1_funct_1(2^[]), v1_relat_1(2^[]), k10_xtuple_0(2^[])=k1_tarski(k1_funct_1(2^[], 1^[]))]   (12)  substitution:[[_G12127, _G12276], [2^[], k1_funct_1(2^[], 1^[])]]
+1.1.1.1  [-v1_funct_1(2^[])]   (3)  
+1.1.1.2  [-v1_relat_1(2^[])]   (1)  
+1.1.1.3  [- (k10_xtuple_0(2^[])=k1_tarski(k1_funct_1(2^[], 1^[]))), v1_funct_1(2^[]), v1_relat_1(2^[]), k9_xtuple_0(2^[])=k1_tarski(1^[])]   (11)  substitution:[[_G11717, _G11651], [2^[], 1^[]]]
+1.1.1.3.1  [-v1_funct_1(2^[])]   (3)  
+1.1.1.3.2  [-v1_relat_1(2^[])]   (1)  
+1.1.1.3.3  [- (k9_xtuple_0(2^[])=k1_tarski(1^[])), k9_xtuple_0(2^[])=k1_relset_1(k1_tarski(1^[]), 2^[]), k1_relset_1(k1_tarski(1^[]), 2^[])=k1_tarski(1^[])]   (15)  substitution:[[_G4088, _G4201, _G4144], [k9_xtuple_0(2^[]), k1_tarski(1^[]), k1_relset_1(k1_tarski(1^[]), 2^[])]]
+1.1.1.3.3.1  [- (k9_xtuple_0(2^[])=k1_relset_1(k1_tarski(1^[]), 2^[])), k1_relset_1(k1_tarski(1^[]), 2^[])=k9_xtuple_0(2^[])]   (14)  substitution:[[_G3900, _G3855], [k9_xtuple_0(2^[]), k1_relset_1(k1_tarski(1^[]), 2^[])]]
+1.1.1.3.3.1.1  [- (k1_relset_1(k1_tarski(1^[]), 2^[])=k9_xtuple_0(2^[])), v1_relat_1(2^[]), v4_relat_1(2^[], k1_tarski(1^[]))]   (9)  substitution:[[_G11041, _G11096], [k1_tarski(1^[]), 2^[]]]
+1.1.1.3.3.1.1.1  [-v1_relat_1(2^[])]   (1)  
+1.1.1.3.3.1.1.2  [-v4_relat_1(2^[], k1_tarski(1^[]))]   (2)  
+1.1.1.3.3.2  [- (k1_relset_1(k1_tarski(1^[]), 2^[])=k1_tarski(1^[])), v4_relat_1(2^[], k1_tarski(1^[])), v1_relat_1(2^[]), v1_partfun1(2^[], k1_tarski(1^[]))]   (6)  substitution:[[_G10341, _G10400], [k1_tarski(1^[]), 2^[]]]
+1.1.1.3.3.2.1  [-v4_relat_1(2^[], k1_tarski(1^[]))]   (2)  
+1.1.1.3.3.2.2  [-v1_relat_1(2^[])]   (1)  
+1.1.1.3.3.2.3  [-v1_partfun1(2^[], k1_tarski(1^[]))]   (4)  
+1.1.2  [- (k2_funcop_1(k9_xtuple_0(2^[]), k1_funct_1(2^[], 1^[]))=k16_funcop_1(1^[], k1_funct_1(2^[], 1^[]))), k2_funcop_1(k9_xtuple_0(2^[]), k1_funct_1(2^[], 1^[]))=k7_funcop_1(k9_xtuple_0(2^[]), k1_funct_1(2^[], 1^[])), k7_funcop_1(k9_xtuple_0(2^[]), k1_funct_1(2^[], 1^[]))=k16_funcop_1(1^[], k1_funct_1(2^[], 1^[]))]   (15)  substitution:[[_G4088, _G4201, _G4144], [k2_funcop_1(k9_xtuple_0(2^[]), k1_funct_1(2^[], 1^[])), k16_funcop_1(1^[], k1_funct_1(2^[], 1^[])), k7_funcop_1(k9_xtuple_0(2^[]), k1_funct_1(2^[], 1^[]))]]
+1.1.2.1  [- (k2_funcop_1(k9_xtuple_0(2^[]), k1_funct_1(2^[], 1^[]))=k7_funcop_1(k9_xtuple_0(2^[]), k1_funct_1(2^[], 1^[]))), k7_funcop_1(k9_xtuple_0(2^[]), k1_funct_1(2^[], 1^[]))=k2_funcop_1(k9_xtuple_0(2^[]), k1_funct_1(2^[], 1^[]))]   (14)  substitution:[[_G3900, _G3855], [k2_funcop_1(k9_xtuple_0(2^[]), k1_funct_1(2^[], 1^[])), k7_funcop_1(k9_xtuple_0(2^[]), k1_funct_1(2^[], 1^[]))]]
+1.1.2.1.1  [- (k7_funcop_1(k9_xtuple_0(2^[]), k1_funct_1(2^[], 1^[]))=k2_funcop_1(k9_xtuple_0(2^[]), k1_funct_1(2^[], 1^[])))]   (10)  substitution:[[_G11409, _G11454], [k9_xtuple_0(2^[]), k1_funct_1(2^[], 1^[])]]
+1.1.2.2  [- (k7_funcop_1(k9_xtuple_0(2^[]), k1_funct_1(2^[], 1^[]))=k16_funcop_1(1^[], k1_funct_1(2^[], 1^[]))), k7_funcop_1(k9_xtuple_0(2^[]), k1_funct_1(2^[], 1^[]))=k7_funcop_1(k1_relset_1(k1_tarski(1^[]), 2^[]), k1_funct_1(2^[], 1^[])), k7_funcop_1(k1_relset_1(k1_tarski(1^[]), 2^[]), k1_funct_1(2^[], 1^[]))=k16_funcop_1(1^[], k1_funct_1(2^[], 1^[]))]   (15)  substitution:[[_G4088, _G4201, _G4144], [k7_funcop_1(k9_xtuple_0(2^[]), k1_funct_1(2^[], 1^[])), k16_funcop_1(1^[], k1_funct_1(2^[], 1^[])), k7_funcop_1(k1_relset_1(k1_tarski(1^[]), 2^[]), k1_funct_1(2^[], 1^[]))]]
+1.1.2.2.1  [- (k7_funcop_1(k9_xtuple_0(2^[]), k1_funct_1(2^[], 1^[]))=k7_funcop_1(k1_relset_1(k1_tarski(1^[]), 2^[]), k1_funct_1(2^[], 1^[]))), k7_funcop_1(k1_relset_1(k1_tarski(1^[]), 2^[]), k1_funct_1(2^[], 1^[]))=k7_funcop_1(k9_xtuple_0(2^[]), k1_funct_1(2^[], 1^[]))]   (14)  substitution:[[_G3900, _G3855], [k7_funcop_1(k9_xtuple_0(2^[]), k1_funct_1(2^[], 1^[])), k7_funcop_1(k1_relset_1(k1_tarski(1^[]), 2^[]), k1_funct_1(2^[], 1^[]))]]
+1.1.2.2.1.1  [- (k7_funcop_1(k1_relset_1(k1_tarski(1^[]), 2^[]), k1_funct_1(2^[], 1^[]))=k7_funcop_1(k9_xtuple_0(2^[]), k1_funct_1(2^[], 1^[]))), k1_relset_1(k1_tarski(1^[]), 2^[])=k9_xtuple_0(2^[]), k1_funct_1(2^[], 1^[])=k1_funct_1(2^[], 1^[])]   (21)  substitution:[[_G6960, _G7095, _G7027, _G7164], [k1_relset_1(k1_tarski(1^[]), 2^[]), k1_funct_1(2^[], 1^[]), k9_xtuple_0(2^[]), k1_funct_1(2^[], 1^[])]]
+1.1.2.2.1.1.1  [- (k1_relset_1(k1_tarski(1^[]), 2^[])=k9_xtuple_0(2^[])), v1_relat_1(2^[]), v4_relat_1(2^[], k1_tarski(1^[]))]   (9)  substitution:[[_G11041, _G11096], [k1_tarski(1^[]), 2^[]]]
+1.1.2.2.1.1.1.1  [-v1_relat_1(2^[])]   (1)  
+1.1.2.2.1.1.1.2  [-v4_relat_1(2^[], k1_tarski(1^[]))]   (2)  
+1.1.2.2.1.1.2  [- (k1_funct_1(2^[], 1^[])=k1_funct_1(2^[], 1^[]))]   (13)  substitution:[[_G3756], [k1_funct_1(2^[], 1^[])]]
+1.1.2.2.2  [- (k7_funcop_1(k1_relset_1(k1_tarski(1^[]), 2^[]), k1_funct_1(2^[], 1^[]))=k16_funcop_1(1^[], k1_funct_1(2^[], 1^[]))), k7_funcop_1(k1_relset_1(k1_tarski(1^[]), 2^[]), k1_funct_1(2^[], 1^[]))=k7_funcop_1(k1_tarski(1^[]), k1_funct_1(2^[], 1^[])), k7_funcop_1(k1_tarski(1^[]), k1_funct_1(2^[], 1^[]))=k16_funcop_1(1^[], k1_funct_1(2^[], 1^[]))]   (15)  substitution:[[_G4088, _G4201, _G4144], [k7_funcop_1(k1_relset_1(k1_tarski(1^[]), 2^[]), k1_funct_1(2^[], 1^[])), k16_funcop_1(1^[], k1_funct_1(2^[], 1^[])), k7_funcop_1(k1_tarski(1^[]), k1_funct_1(2^[], 1^[]))]]
+1.1.2.2.2.1  [- (k7_funcop_1(k1_relset_1(k1_tarski(1^[]), 2^[]), k1_funct_1(2^[], 1^[]))=k7_funcop_1(k1_tarski(1^[]), k1_funct_1(2^[], 1^[]))), k1_relset_1(k1_tarski(1^[]), 2^[])=k1_tarski(1^[]), k1_funct_1(2^[], 1^[])=k1_funct_1(2^[], 1^[])]   (21)  substitution:[[_G6960, _G7095, _G7027, _G7164], [k1_relset_1(k1_tarski(1^[]), 2^[]), k1_funct_1(2^[], 1^[]), k1_tarski(1^[]), k1_funct_1(2^[], 1^[])]]
+1.1.2.2.2.1.1  [- (k1_relset_1(k1_tarski(1^[]), 2^[])=k1_tarski(1^[])), v4_relat_1(2^[], k1_tarski(1^[])), v1_relat_1(2^[]), v1_partfun1(2^[], k1_tarski(1^[]))]   (6)  substitution:[[_G10341, _G10400], [k1_tarski(1^[]), 2^[]]]
+1.1.2.2.2.1.1.1  [-v4_relat_1(2^[], k1_tarski(1^[]))]   (2)  
+1.1.2.2.2.1.1.2  [-v1_relat_1(2^[])]   (1)  
+1.1.2.2.2.1.1.3  [-v1_partfun1(2^[], k1_tarski(1^[]))]   (4)  
+1.1.2.2.2.1.2  [- (k1_funct_1(2^[], 1^[])=k1_funct_1(2^[], 1^[]))]   (13)  substitution:[[_G3756], [k1_funct_1(2^[], 1^[])]]
+1.1.2.2.2.2  [- (k7_funcop_1(k1_tarski(1^[]), k1_funct_1(2^[], 1^[]))=k16_funcop_1(1^[], k1_funct_1(2^[], 1^[]))), k16_funcop_1(1^[], k1_funct_1(2^[], 1^[]))=k7_funcop_1(k1_tarski(1^[]), k1_funct_1(2^[], 1^[]))]   (14)  substitution:[[_G3900, _G3855], [k7_funcop_1(k1_tarski(1^[]), k1_funct_1(2^[], 1^[])), k16_funcop_1(1^[], k1_funct_1(2^[], 1^[]))]]
+1.1.2.2.2.2.1  [- (k16_funcop_1(1^[], k1_funct_1(2^[], 1^[]))=k7_funcop_1(k1_tarski(1^[]), k1_funct_1(2^[], 1^[])))]   (8)  substitution:[[_G10781, _G10828], [1^[], k1_funct_1(2^[], 1^[])]]
+------------------------------------------------------
+End of proof for t11_autalg_1

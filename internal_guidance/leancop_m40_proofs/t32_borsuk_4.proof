@@ -1,0 +1,59 @@
+
+t32_borsuk_4 is a Theorem
+Start of proof for t32_borsuk_4
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], k1_zfmisc_1(u1_struct_0(k5_topmetr)))]
+ (2)  [- (1^[]=u1_struct_0(k1_borsuk_4))]
+ (3)  [k1_borsuk_4=k1_pre_topc(k5_topmetr, 1^[])]
+ (4)  [l1_struct_0(_G7196), - (k2_struct_0(_G7196)=u1_struct_0(_G7196))]
+ (5)  [-l1_pre_topc(k17_borsuk_1)]
+ (6)  [-v1_pre_topc(k1_borsuk_4)]
+ (7)  [-m1_pre_topc(k1_borsuk_4, k5_topmetr)]
+ (8)  [l1_pre_topc(_G8255), -l1_struct_0(_G8255)]
+ (9)  [- (k5_topmetr=k17_borsuk_1)]
+ (10)  [l1_pre_topc(_G8386), m1_pre_topc(_G8467, _G8386), -l1_pre_topc(_G8467)]
+ (11)  [l1_pre_topc(_G7385), m1_subset_1(_G7498, k1_zfmisc_1(u1_struct_0(_G7385))), m1_pre_topc(_G7660, _G7385), v1_pre_topc(_G7660), _G7660=k1_pre_topc(_G7385, _G7498), - (k2_struct_0(_G7660)=_G7498)]
+ (12)  [l1_pre_topc(_G7385), m1_subset_1(_G7498, k1_zfmisc_1(u1_struct_0(_G7385))), m1_pre_topc(_G7660, _G7385), v1_pre_topc(_G7660), - (_G7660=k1_pre_topc(_G7385, _G7498)), k2_struct_0(_G7660)=_G7498]
+ (13)  [_G5690=_G5739, - (k2_struct_0(_G5690)=k2_struct_0(_G5739))]
+ (14)  [_G5968=_G6017, - (k1_zfmisc_1(_G5968)=k1_zfmisc_1(_G6017))]
+ (15)  [_G6246=_G6295, - (u1_struct_0(_G6246)=u1_struct_0(_G6295))]
+ (16)  [- (k1_pre_topc(_G6515, _G6650)=k1_pre_topc(_G6582, _G6719)), _G6515=_G6582, _G6650=_G6719]
+ (17)  [- (_G2784=_G2784)]
+ (18)  [_G2883=_G2928, - (_G2928=_G2883)]
+ (19)  [- (_G3116=_G3229), _G3116=_G3172, _G3172=_G3229]
+ (20)  [-v1_pre_topc(_G3615), _G3566=_G3615, v1_pre_topc(_G3566)]
+ (21)  [-l1_struct_0(_G3893), _G3844=_G3893, l1_struct_0(_G3844)]
+ (22)  [-m1_pre_topc(_G4189, _G4326), m1_pre_topc(_G4122, _G4257), _G4122=_G4189, _G4257=_G4326]
+ (23)  [-l1_pre_topc(_G4768), _G4719=_G4768, l1_pre_topc(_G4719)]
+ (24)  [-m1_subset_1(_G5055, _G5192), m1_subset_1(_G4988, _G5123), _G4988=_G5055, _G5123=_G5192]
+
+Connection Proof:
+-----------------
+1  [k1_borsuk_4=k1_pre_topc(k5_topmetr, 1^[])]   (3)  
+1.1  [- (k1_borsuk_4=k1_pre_topc(k5_topmetr, 1^[])), k1_borsuk_4=k1_pre_topc(k17_borsuk_1, u1_struct_0(k1_borsuk_4)), k1_pre_topc(k17_borsuk_1, u1_struct_0(k1_borsuk_4))=k1_pre_topc(k5_topmetr, 1^[])]   (19)  substitution:[[_G3116, _G3229, _G3172], [k1_borsuk_4, k1_pre_topc(k5_topmetr, 1^[]), k1_pre_topc(k17_borsuk_1, u1_struct_0(k1_borsuk_4))]]
+1.1.1  [- (k1_borsuk_4=k1_pre_topc(k17_borsuk_1, u1_struct_0(k1_borsuk_4))), l1_pre_topc(k17_borsuk_1), m1_subset_1(u1_struct_0(k1_borsuk_4), k1_zfmisc_1(u1_struct_0(k17_borsuk_1))), m1_pre_topc(k1_borsuk_4, k17_borsuk_1), v1_pre_topc(k1_borsuk_4), k2_struct_0(k1_borsuk_4)=u1_struct_0(k1_borsuk_4)]   (12)  substitution:[[_G7660, _G7385, _G7498], [k1_borsuk_4, k17_borsuk_1, u1_struct_0(k1_borsuk_4)]]
+1.1.1.1  [-l1_pre_topc(k17_borsuk_1)]   (5)  
+1.1.1.2  [-m1_subset_1(u1_struct_0(k1_borsuk_4), k1_zfmisc_1(u1_struct_0(k17_borsuk_1))), m1_subset_1(1^[], k1_zfmisc_1(u1_struct_0(k5_topmetr))), 1^[]=u1_struct_0(k1_borsuk_4), k1_zfmisc_1(u1_struct_0(k5_topmetr))=k1_zfmisc_1(u1_struct_0(k17_borsuk_1))]   (24)  substitution:[[_G5055, _G5192, _G4988, _G5123], [u1_struct_0(k1_borsuk_4), k1_zfmisc_1(u1_struct_0(k17_borsuk_1)), 1^[], k1_zfmisc_1(u1_struct_0(k5_topmetr))]]
+1.1.1.2.1  [-m1_subset_1(1^[], k1_zfmisc_1(u1_struct_0(k5_topmetr)))]   (1)  
+1.1.1.2.2  [- (1^[]=u1_struct_0(k1_borsuk_4))]   (2)  
+1.1.1.2.3  [- (k1_zfmisc_1(u1_struct_0(k5_topmetr))=k1_zfmisc_1(u1_struct_0(k17_borsuk_1))), u1_struct_0(k5_topmetr)=u1_struct_0(k17_borsuk_1)]   (14)  substitution:[[_G5968, _G6017], [u1_struct_0(k5_topmetr), u1_struct_0(k17_borsuk_1)]]
+1.1.1.2.3.1  [- (u1_struct_0(k5_topmetr)=u1_struct_0(k17_borsuk_1)), k5_topmetr=k17_borsuk_1]   (15)  substitution:[[_G6246, _G6295], [k5_topmetr, k17_borsuk_1]]
+1.1.1.2.3.1.1  [- (k5_topmetr=k17_borsuk_1)]   (9)  
+1.1.1.3  [-m1_pre_topc(k1_borsuk_4, k17_borsuk_1), m1_pre_topc(k1_borsuk_4, k5_topmetr), k1_borsuk_4=k1_borsuk_4, k5_topmetr=k17_borsuk_1]   (22)  substitution:[[_G4189, _G4326, _G4122, _G4257], [k1_borsuk_4, k17_borsuk_1, k1_borsuk_4, k5_topmetr]]
+1.1.1.3.1  [-m1_pre_topc(k1_borsuk_4, k5_topmetr)]   (7)  
+1.1.1.3.2  [- (k1_borsuk_4=k1_borsuk_4)]   (17)  substitution:[[_G2784], [k1_borsuk_4]]
+1.1.1.3.3  [- (k5_topmetr=k17_borsuk_1)]   (9)  
+1.1.1.4  [-v1_pre_topc(k1_borsuk_4)]   (6)  
+1.1.1.5  [- (k2_struct_0(k1_borsuk_4)=u1_struct_0(k1_borsuk_4)), l1_struct_0(k1_borsuk_4)]   (4)  substitution:[[_G7196], [k1_borsuk_4]]
+1.1.1.5.1  [-l1_struct_0(k1_borsuk_4), l1_pre_topc(k1_borsuk_4)]   (8)  substitution:[[_G8255], [k1_borsuk_4]]
+1.1.1.5.1.1  [-l1_pre_topc(k1_borsuk_4), l1_pre_topc(k17_borsuk_1), m1_pre_topc(k1_borsuk_4, k17_borsuk_1)]   (10)  substitution:[[_G8467, _G8386], [k1_borsuk_4, k17_borsuk_1]]
+1.1.1.5.1.1.1  [-l1_pre_topc(k17_borsuk_1)]   (5)  
+1.1.1.5.1.1.2  [-m1_pre_topc(k1_borsuk_4, k17_borsuk_1)]   (lemmata:1.1.1)  
+1.1.2  [- (k1_pre_topc(k17_borsuk_1, u1_struct_0(k1_borsuk_4))=k1_pre_topc(k5_topmetr, 1^[])), k17_borsuk_1=k5_topmetr, u1_struct_0(k1_borsuk_4)=1^[]]   (16)  substitution:[[_G6515, _G6650, _G6582, _G6719], [k17_borsuk_1, u1_struct_0(k1_borsuk_4), k5_topmetr, 1^[]]]
+1.1.2.1  [- (k17_borsuk_1=k5_topmetr), k5_topmetr=k17_borsuk_1]   (18)  substitution:[[_G2928, _G2883], [k17_borsuk_1, k5_topmetr]]
+1.1.2.1.1  [- (k5_topmetr=k17_borsuk_1)]   (9)  
+1.1.2.2  [- (u1_struct_0(k1_borsuk_4)=1^[]), 1^[]=u1_struct_0(k1_borsuk_4)]   (18)  substitution:[[_G2928, _G2883], [u1_struct_0(k1_borsuk_4), 1^[]]]
+1.1.2.2.1  [- (1^[]=u1_struct_0(k1_borsuk_4))]   (2)  
+------------------------------------------------------
+End of proof for t32_borsuk_4

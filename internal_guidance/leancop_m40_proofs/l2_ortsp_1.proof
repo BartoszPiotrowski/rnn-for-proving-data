@@ -1,0 +1,28 @@
+
+l2_ortsp_1 is a Theorem
+Start of proof for l2_ortsp_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [m1_subset_1(k6_numbers, c1__ortsp_1)]
+ (2)  [- (c1__ortsp_1=k1_tarski(k6_numbers))]
+ (3)  [r2_hidden(_G4121, _G4166), -m1_subset_1(_G4121, _G4166)]
+ (4)  [_G3697=k1_tarski(_G3639), r2_hidden(_G3827, _G3697), - (_G3827=_G3639)]
+ (5)  [_G3697=k1_tarski(_G3639), -r2_hidden(_G3827, _G3697), _G3827=_G3639]
+ (6)  [- (_G3697=k1_tarski(_G3639)), r2_hidden(1^[_G3697, _G3639], _G3697), 1^[_G3697, _G3639]=_G3639]
+ (7)  [- (_G3697=k1_tarski(_G3639)), -r2_hidden(1^[_G3697, _G3639], _G3697), - (1^[_G3697, _G3639]=_G3639)]
+ (8)  [_G3340=_G3389, - (k1_tarski(_G3340)=k1_tarski(_G3389))]
+ (9)  [- (_G1340=_G1340)]
+ (10)  [_G1439=_G1484, - (_G1484=_G1439)]
+ (11)  [- (_G1672=_G1785), _G1672=_G1728, _G1728=_G1785]
+ (12)  [-r2_hidden(_G2189, _G2326), r2_hidden(_G2122, _G2257), _G2122=_G2189, _G2257=_G2326]
+ (13)  [-m1_subset_1(_G2777, _G2914), m1_subset_1(_G2710, _G2845), _G2710=_G2777, _G2845=_G2914]
+
+Connection Proof:
+-----------------
+1  [m1_subset_1(k6_numbers, c1__ortsp_1)]   (1)  
+1.1  [-m1_subset_1(k6_numbers, c1__ortsp_1), r2_hidden(k6_numbers, c1__ortsp_1)]   (3)  substitution:[[_G4121, _G4166], [k6_numbers, c1__ortsp_1]]
+1.1.1  [-r2_hidden(k6_numbers, c1__ortsp_1), c1__ortsp_1=k1_tarski(k6_numbers), k6_numbers=k6_numbers]   (5)  substitution:[[_G3827, _G3697, _G3639], [k6_numbers, c1__ortsp_1, k6_numbers]]
+1.1.1.1  [- (c1__ortsp_1=k1_tarski(k6_numbers))]   (2)  
+1.1.1.2  [- (k6_numbers=k6_numbers)]   (9)  substitution:[[_G1340], [k6_numbers]]
+------------------------------------------------------
+End of proof for l2_ortsp_1

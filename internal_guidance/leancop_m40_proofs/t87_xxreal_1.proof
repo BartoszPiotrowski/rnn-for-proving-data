@@ -1,0 +1,33 @@
+
+t87_xxreal_1 is a Theorem
+Start of proof for t87_xxreal_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xxreal_0(1^[])]
+ (2)  [-v1_xxreal_0(2^[])]
+ (3)  [r1_xboole_0(k2_xxreal_1(1^[], 2^[]), k1_tarski(2^[]))]
+ (4)  [-r2_hidden(_G5941, _G5990), -r1_xboole_0(k1_tarski(_G5941), _G5990)]
+ (5)  [r1_xboole_0(_G6219, _G6264), -r1_xboole_0(_G6264, _G6219)]
+ (6)  [v1_xxreal_0(_G6526), v1_xxreal_0(_G6633), r2_hidden(_G6452, k2_xxreal_1(_G6526, _G6633)), -r2_hidden(_G6452, k1_xxreal_1(_G6526, _G6633))]
+ (7)  [v1_xxreal_0(_G6526), v1_xxreal_0(_G6633), r2_hidden(_G6452, k2_xxreal_1(_G6526, _G6633)), _G6452=_G6633]
+ (8)  [- (k1_xxreal_1(_G4415, _G4550)=k1_xxreal_1(_G4482, _G4619)), _G4415=_G4482, _G4550=_G4619]
+ (9)  [_G5600=_G5649, - (k1_tarski(_G5600)=k1_tarski(_G5649))]
+ (10)  [- (k2_xxreal_1(_G5012, _G5147)=k2_xxreal_1(_G5079, _G5216)), _G5012=_G5079, _G5147=_G5216]
+ (11)  [- (_G2107=_G2107)]
+ (12)  [_G2206=_G2251, - (_G2251=_G2206)]
+ (13)  [- (_G2439=_G2552), _G2439=_G2495, _G2495=_G2552]
+ (14)  [-r2_hidden(_G2956, _G3093), r2_hidden(_G2889, _G3024), _G2889=_G2956, _G3024=_G3093]
+ (15)  [-v1_xxreal_0(_G3535), _G3486=_G3535, v1_xxreal_0(_G3486)]
+ (16)  [-r1_xboole_0(_G3822, _G3959), r1_xboole_0(_G3755, _G3890), _G3755=_G3822, _G3890=_G3959]
+
+Connection Proof:
+-----------------
+1  [r1_xboole_0(k2_xxreal_1(1^[], 2^[]), k1_tarski(2^[]))]   (3)  
+1.1  [-r1_xboole_0(k2_xxreal_1(1^[], 2^[]), k1_tarski(2^[])), r1_xboole_0(k1_tarski(2^[]), k2_xxreal_1(1^[], 2^[]))]   (5)  substitution:[[_G6264, _G6219], [k2_xxreal_1(1^[], 2^[]), k1_tarski(2^[])]]
+1.1.1  [-r1_xboole_0(k1_tarski(2^[]), k2_xxreal_1(1^[], 2^[])), -r2_hidden(2^[], k2_xxreal_1(1^[], 2^[]))]   (4)  substitution:[[_G5941, _G5990], [2^[], k2_xxreal_1(1^[], 2^[])]]
+1.1.1.1  [r2_hidden(2^[], k2_xxreal_1(1^[], 2^[])), v1_xxreal_0(1^[]), v1_xxreal_0(2^[]), 2^[]=2^[]]   (7)  substitution:[[_G6452, _G6526, _G6633], [2^[], 1^[], 2^[]]]
+1.1.1.1.1  [-v1_xxreal_0(1^[])]   (1)  
+1.1.1.1.2  [-v1_xxreal_0(2^[])]   (2)  
+1.1.1.1.3  [- (2^[]=2^[])]   (11)  substitution:[[_G2107], [2^[]]]
+------------------------------------------------------
+End of proof for t87_xxreal_1

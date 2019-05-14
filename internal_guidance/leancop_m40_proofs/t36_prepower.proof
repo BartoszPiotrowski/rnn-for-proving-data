@@ -1,0 +1,57 @@
+
+t36_prepower is a Theorem
+Start of proof for t36_prepower
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xreal_0(1^[])]
+ (2)  [-v7_ordinal1(2^[])]
+ (3)  [k4_prepower(1^[], 2^[])=k1_newton(1^[], 2^[])]
+ (4)  [v7_ordinal1(_G8901), -v1_int_1(_G8901)]
+ (5)  [v7_ordinal1(_G9032), -v1_xreal_0(_G9032)]
+ (6)  [v1_xreal_0(_G9163), r1_xxreal_0(k6_numbers, _G9163), - (k16_complex1(_G9163)=_G9163)]
+ (7)  [v1_xreal_0(_G9163), -r1_xxreal_0(k6_numbers, _G9163), - (k16_complex1(_G9163)=k4_xcmplx_0(_G9163))]
+ (8)  [- (c1__axioms=k6_numbers)]
+ (9)  [- (k2_xcmplx_0(np__1, k4_xcmplx_0(np__1))=k6_numbers)]
+ (10)  [v1_int_1(_G10598), - (k1_int_2(_G10598)=k16_complex1(_G10598))]
+ (11)  [- (k2_xcmplx_0(np__1, k4_xcmplx_0(np__1))=np__0)]
+ (12)  [v7_ordinal1(_G10888), -r1_xxreal_0(k6_numbers, _G10888)]
+ (13)  [v1_xreal_0(_G9636), v1_int_1(_G9755), r1_xxreal_0(k6_numbers, _G9755), - (k4_prepower(_G9636, _G9755)=k1_newton(_G9636, k1_int_2(_G9755)))]
+ (14)  [v1_xreal_0(_G9636), v1_int_1(_G9755), -r1_xxreal_0(k6_numbers, _G9755), - (k4_prepower(_G9636, _G9755)=k5_xcmplx_0(k1_newton(_G9636, k1_int_2(_G9755))))]
+ (15)  [_G5860=_G5909, - (k5_xcmplx_0(_G5860)=k5_xcmplx_0(_G5909))]
+ (16)  [_G6138=_G6187, - (k1_int_2(_G6138)=k1_int_2(_G6187))]
+ (17)  [_G6416=_G6465, - (k16_complex1(_G6416)=k16_complex1(_G6465))]
+ (18)  [- (k2_xcmplx_0(_G6694, _G6829)=k2_xcmplx_0(_G6761, _G6898)), _G6694=_G6761, _G6829=_G6898]
+ (19)  [_G7291=_G7340, - (k4_xcmplx_0(_G7291)=k4_xcmplx_0(_G7340))]
+ (20)  [- (k4_prepower(_G7569, _G7704)=k4_prepower(_G7636, _G7773)), _G7569=_G7636, _G7704=_G7773]
+ (21)  [- (k1_newton(_G8157, _G8292)=k1_newton(_G8224, _G8361)), _G8157=_G8224, _G8292=_G8361]
+ (22)  [- (_G3572=_G3572)]
+ (23)  [_G3671=_G3716, - (_G3716=_G3671)]
+ (24)  [- (_G3904=_G4017), _G3904=_G3960, _G3960=_G4017]
+ (25)  [-v1_int_1(_G4403), _G4354=_G4403, v1_int_1(_G4354)]
+ (26)  [-r1_xxreal_0(_G4699, _G4836), r1_xxreal_0(_G4632, _G4767), _G4632=_G4699, _G4767=_G4836]
+ (27)  [-v1_xreal_0(_G5278), _G5229=_G5278, v1_xreal_0(_G5229)]
+ (28)  [-v7_ordinal1(_G5547), _G5498=_G5547, v7_ordinal1(_G5498)]
+
+Connection Proof:
+-----------------
+1  [k4_prepower(1^[], 2^[])=k1_newton(1^[], 2^[])]   (3)  
+1.1  [- (k4_prepower(1^[], 2^[])=k1_newton(1^[], 2^[])), k4_prepower(1^[], 2^[])=k1_newton(1^[], k1_int_2(2^[])), k1_newton(1^[], k1_int_2(2^[]))=k1_newton(1^[], 2^[])]   (24)  substitution:[[_G3904, _G4017, _G3960], [k4_prepower(1^[], 2^[]), k1_newton(1^[], 2^[]), k1_newton(1^[], k1_int_2(2^[]))]]
+1.1.1  [- (k4_prepower(1^[], 2^[])=k1_newton(1^[], k1_int_2(2^[]))), v1_xreal_0(1^[]), v1_int_1(2^[]), r1_xxreal_0(k6_numbers, 2^[])]   (13)  substitution:[[_G9636, _G9755], [1^[], 2^[]]]
+1.1.1.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.1.2  [-v1_int_1(2^[]), v7_ordinal1(2^[])]   (4)  substitution:[[_G8901], [2^[]]]
+1.1.1.2.1  [-v7_ordinal1(2^[])]   (2)  
+1.1.1.3  [-r1_xxreal_0(k6_numbers, 2^[]), v7_ordinal1(2^[])]   (12)  substitution:[[_G10888], [2^[]]]
+1.1.1.3.1  [-v7_ordinal1(2^[])]   (2)  
+1.1.2  [- (k1_newton(1^[], k1_int_2(2^[]))=k1_newton(1^[], 2^[])), 1^[]=1^[], k1_int_2(2^[])=2^[]]   (21)  substitution:[[_G8157, _G8292, _G8224, _G8361], [1^[], k1_int_2(2^[]), 1^[], 2^[]]]
+1.1.2.1  [- (1^[]=1^[])]   (22)  substitution:[[_G3572], [1^[]]]
+1.1.2.2  [- (k1_int_2(2^[])=2^[]), k1_int_2(2^[])=k16_complex1(2^[]), k16_complex1(2^[])=2^[]]   (24)  substitution:[[_G3904, _G4017, _G3960], [k1_int_2(2^[]), 2^[], k16_complex1(2^[])]]
+1.1.2.2.1  [- (k1_int_2(2^[])=k16_complex1(2^[])), v1_int_1(2^[])]   (10)  substitution:[[_G10598], [2^[]]]
+1.1.2.2.1.1  [-v1_int_1(2^[]), v7_ordinal1(2^[])]   (4)  substitution:[[_G8901], [2^[]]]
+1.1.2.2.1.1.1  [-v7_ordinal1(2^[])]   (2)  
+1.1.2.2.2  [- (k16_complex1(2^[])=2^[]), v1_xreal_0(2^[]), r1_xxreal_0(k6_numbers, 2^[])]   (6)  substitution:[[_G9163], [2^[]]]
+1.1.2.2.2.1  [-v1_xreal_0(2^[]), v7_ordinal1(2^[])]   (5)  substitution:[[_G9032], [2^[]]]
+1.1.2.2.2.1.1  [-v7_ordinal1(2^[])]   (2)  
+1.1.2.2.2.2  [-r1_xxreal_0(k6_numbers, 2^[]), v7_ordinal1(2^[])]   (12)  substitution:[[_G10888], [2^[]]]
+1.1.2.2.2.2.1  [-v7_ordinal1(2^[])]   (2)  
+------------------------------------------------------
+End of proof for t36_prepower

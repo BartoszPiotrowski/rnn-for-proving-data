@@ -1,0 +1,51 @@
+
+t1_jordan is a Theorem
+Start of proof for t1_jordan
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], k5_numbers)]
+ (2)  [-m1_subset_1(2^[], u1_struct_0(k15_euclid(1^[])))]
+ (3)  [-m1_subset_1(3^[], u1_struct_0(k15_euclid(1^[])))]
+ (4)  [2^[]=3^[]]
+ (5)  [- (k1_rlvect_1(k15_euclid(1^[]), k3_rlvect_1(k15_euclid(1^[]), 2^[], 3^[]), k10_real_1(np__1, np__2))=2^[])]
+ (6)  [v1_xboole_0(_G10355), m1_subset_1(_G10438, k1_zfmisc_1(_G10355)), -v1_xboole_0(_G10438)]
+ (7)  [-m1_subset_1(k5_numbers, k1_zfmisc_1(k1_numbers))]
+ (8)  [v1_xboole_0(k4_ordinal1)]
+ (9)  [-v3_ordinal1(k4_ordinal1)]
+ (10)  [- (k5_numbers=k4_ordinal1)]
+ (11)  [m2_subset_1(_G11492, k1_numbers, k5_numbers), m1_subset_1(_G11681, u1_struct_0(k15_euclid(_G11492))), m1_subset_1(_G11849, u1_struct_0(k15_euclid(_G11492))), _G11681=k1_rlvect_1(k15_euclid(_G11492), k3_rlvect_1(k15_euclid(_G11492), _G11681, _G11849), k10_real_1(np__1, np__2)), - (_G11681=_G11849)]
+ (12)  [m1_subset_1(_G10946, k1_zfmisc_1(_G10873)), -v1_xboole_0(_G10946), -v1_xboole_0(_G10873), m2_subset_1(_G11225, _G10873, _G10946), -m1_subset_1(_G11225, _G10946)]
+ (13)  [m1_subset_1(_G10946, k1_zfmisc_1(_G10873)), -v1_xboole_0(_G10946), -v1_xboole_0(_G10873), -m2_subset_1(_G11225, _G10873, _G10946), m1_subset_1(_G11225, _G10946)]
+ (14)  [_G6751=_G6800, - (k1_zfmisc_1(_G6751)=k1_zfmisc_1(_G6800))]
+ (15)  [_G7029=_G7078, - (u1_struct_0(_G7029)=u1_struct_0(_G7078))]
+ (16)  [- (k1_rlvect_1(_G7307, _G7478, _G7653)=k1_rlvect_1(_G7392, _G7565, _G7742)), _G7307=_G7392, _G7478=_G7565, _G7653=_G7742]
+ (17)  [- (k3_rlvect_1(_G8335, _G8506, _G8681)=k3_rlvect_1(_G8420, _G8593, _G8770)), _G8335=_G8420, _G8506=_G8593, _G8681=_G8770]
+ (18)  [_G9363=_G9412, - (k15_euclid(_G9363)=k15_euclid(_G9412))]
+ (19)  [- (k10_real_1(_G9632, _G9767)=k10_real_1(_G9699, _G9836)), _G9632=_G9699, _G9767=_G9836]
+ (20)  [- (_G3713=_G3713)]
+ (21)  [_G3812=_G3857, - (_G3857=_G3812)]
+ (22)  [- (_G4045=_G4158), _G4045=_G4101, _G4101=_G4158]
+ (23)  [-v3_ordinal1(_G4544), _G4495=_G4544, v3_ordinal1(_G4495)]
+ (24)  [-v1_xboole_0(_G4822), _G4773=_G4822, v1_xboole_0(_G4773)]
+ (25)  [-m1_subset_1(_G6137, _G6274), m1_subset_1(_G6070, _G6205), _G6070=_G6137, _G6205=_G6274]
+ (26)  [-m2_subset_1(_G5136, _G5309, _G5486), m2_subset_1(_G5051, _G5222, _G5397), _G5051=_G5136, _G5222=_G5309, _G5397=_G5486]
+
+Connection Proof:
+-----------------
+1  [2^[]=3^[]]   (4)  
+1.1  [- (2^[]=3^[]), m2_subset_1(1^[], k1_numbers, k5_numbers), m1_subset_1(2^[], u1_struct_0(k15_euclid(1^[]))), m1_subset_1(3^[], u1_struct_0(k15_euclid(1^[]))), 2^[]=k1_rlvect_1(k15_euclid(1^[]), k3_rlvect_1(k15_euclid(1^[]), 2^[], 3^[]), k10_real_1(np__1, np__2))]   (11)  substitution:[[_G11681, _G11849, _G11492], [2^[], 3^[], 1^[]]]
+1.1.1  [-m2_subset_1(1^[], k1_numbers, k5_numbers), m1_subset_1(k5_numbers, k1_zfmisc_1(k1_numbers)), -v1_xboole_0(k5_numbers), -v1_xboole_0(k1_numbers), m1_subset_1(1^[], k5_numbers)]   (13)  substitution:[[_G11225, _G10873, _G10946], [1^[], k1_numbers, k5_numbers]]
+1.1.1.1  [-m1_subset_1(k5_numbers, k1_zfmisc_1(k1_numbers))]   (7)  
+1.1.1.2  [v1_xboole_0(k5_numbers), -v1_xboole_0(k4_ordinal1), k5_numbers=k4_ordinal1]   (24)  substitution:[[_G4773, _G4822], [k5_numbers, k4_ordinal1]]
+1.1.1.2.1  [v1_xboole_0(k4_ordinal1)]   (8)  
+1.1.1.2.2  [- (k5_numbers=k4_ordinal1)]   (10)  
+1.1.1.3  [v1_xboole_0(k1_numbers), m1_subset_1(k5_numbers, k1_zfmisc_1(k1_numbers)), -v1_xboole_0(k5_numbers)]   (6)  substitution:[[_G10355, _G10438], [k1_numbers, k5_numbers]]
+1.1.1.3.1  [-m1_subset_1(k5_numbers, k1_zfmisc_1(k1_numbers))]   (7)  
+1.1.1.3.2  [v1_xboole_0(k5_numbers)]   (lemmata:1.1.1)  
+1.1.1.4  [-m1_subset_1(1^[], k5_numbers)]   (1)  
+1.1.2  [-m1_subset_1(2^[], u1_struct_0(k15_euclid(1^[])))]   (2)  
+1.1.3  [-m1_subset_1(3^[], u1_struct_0(k15_euclid(1^[])))]   (3)  
+1.1.4  [- (2^[]=k1_rlvect_1(k15_euclid(1^[]), k3_rlvect_1(k15_euclid(1^[]), 2^[], 3^[]), k10_real_1(np__1, np__2))), k1_rlvect_1(k15_euclid(1^[]), k3_rlvect_1(k15_euclid(1^[]), 2^[], 3^[]), k10_real_1(np__1, np__2))=2^[]]   (21)  substitution:[[_G3857, _G3812], [2^[], k1_rlvect_1(k15_euclid(1^[]), k3_rlvect_1(k15_euclid(1^[]), 2^[], 3^[]), k10_real_1(np__1, np__2))]]
+1.1.4.1  [- (k1_rlvect_1(k15_euclid(1^[]), k3_rlvect_1(k15_euclid(1^[]), 2^[], 3^[]), k10_real_1(np__1, np__2))=2^[])]   (5)  
+------------------------------------------------------
+End of proof for t1_jordan

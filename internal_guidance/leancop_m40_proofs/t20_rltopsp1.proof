@@ -1,0 +1,56 @@
+
+t20_rltopsp1 is a Theorem
+Start of proof for t20_rltopsp1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(1^[])]
+ (2)  [-v13_algstr_0(1^[])]
+ (3)  [-v2_rlvect_1(1^[])]
+ (4)  [-v3_rlvect_1(1^[])]
+ (5)  [-v4_rlvect_1(1^[])]
+ (6)  [-v5_rlvect_1(1^[])]
+ (7)  [-v6_rlvect_1(1^[])]
+ (8)  [-v7_rlvect_1(1^[])]
+ (9)  [-v8_rlvect_1(1^[])]
+ (10)  [-l1_rlvect_1(1^[])]
+ (11)  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]
+ (12)  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(1^[])))]
+ (13)  [-r1_tarski(2^[], 3^[])]
+ (14)  [r1_tarski(k3_convex1(1^[], 2^[]), k3_convex1(1^[], 3^[]))]
+ (15)  [-v1_convex1(k3_convex1(_G1644, _G1721), _G1644), m1_subset_1(_G1721, k1_zfmisc_1(u1_struct_0(_G1644))), -v2_struct_0(_G1644), l1_rlvect_1(_G1644)]
+ (16)  [-m1_subset_1(k3_convex1(_G1644, _G1721), k1_zfmisc_1(u1_struct_0(_G1644))), m1_subset_1(_G1721, k1_zfmisc_1(u1_struct_0(_G1644))), -v2_struct_0(_G1644), l1_rlvect_1(_G1644)]
+ (17)  [-r1_tarski(_G2282, _G2395), r1_tarski(_G2282, _G2338), r1_tarski(_G2338, _G2395)]
+ (18)  [l1_rlvect_1(_G2690), -v2_struct_0(_G2690), m1_subset_1(_G2880, k1_zfmisc_1(u1_struct_0(_G2690))), m1_subset_1(_G3045, k1_zfmisc_1(u1_struct_0(_G2690))), v1_convex1(_G3045, _G2690), r1_tarski(_G2880, _G3045), -r1_tarski(k3_convex1(_G2690, _G2880), _G3045)]
+ (19)  [-r1_tarski(_G4158, k3_convex1(_G3531, _G4158)), m1_subset_1(_G4158, k1_zfmisc_1(u1_struct_0(_G3531))), -v2_struct_0(_G3531), v13_algstr_0(_G3531), v2_rlvect_1(_G3531), v3_rlvect_1(_G3531), v4_rlvect_1(_G3531), v5_rlvect_1(_G3531), v6_rlvect_1(_G3531), v7_rlvect_1(_G3531), v8_rlvect_1(_G3531), l1_rlvect_1(_G3531)]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k3_convex1(1^[], 2^[]), k3_convex1(1^[], 3^[]))]   (14)  
+1.1  [-r1_tarski(k3_convex1(1^[], 2^[]), k3_convex1(1^[], 3^[])), l1_rlvect_1(1^[]), -v2_struct_0(1^[]), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[]))), m1_subset_1(k3_convex1(1^[], 3^[]), k1_zfmisc_1(u1_struct_0(1^[]))), v1_convex1(k3_convex1(1^[], 3^[]), 1^[]), r1_tarski(2^[], k3_convex1(1^[], 3^[]))]   (18)  substitution:[[_G2690, _G2880, _G3045], [1^[], 2^[], k3_convex1(1^[], 3^[])]]
+1.1.1  [-l1_rlvect_1(1^[])]   (10)  
+1.1.2  [v2_struct_0(1^[])]   (1)  
+1.1.3  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (11)  
+1.1.4  [-m1_subset_1(k3_convex1(1^[], 3^[]), k1_zfmisc_1(u1_struct_0(1^[]))), m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(1^[]))), -v2_struct_0(1^[]), l1_rlvect_1(1^[])]   (16)  substitution:[[_G1644, _G1721], [1^[], 3^[]]]
+1.1.4.1  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (12)  
+1.1.4.2  [v2_struct_0(1^[])]   (1)  
+1.1.4.3  [-l1_rlvect_1(1^[])]   (10)  
+1.1.5  [-v1_convex1(k3_convex1(1^[], 3^[]), 1^[]), m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(1^[]))), -v2_struct_0(1^[]), l1_rlvect_1(1^[])]   (15)  substitution:[[_G1644, _G1721], [1^[], 3^[]]]
+1.1.5.1  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (12)  
+1.1.5.2  [v2_struct_0(1^[])]   (1)  
+1.1.5.3  [-l1_rlvect_1(1^[])]   (10)  
+1.1.6  [-r1_tarski(2^[], k3_convex1(1^[], 3^[])), r1_tarski(2^[], 3^[]), r1_tarski(3^[], k3_convex1(1^[], 3^[]))]   (17)  substitution:[[_G2282, _G2395, _G2338], [2^[], k3_convex1(1^[], 3^[]), 3^[]]]
+1.1.6.1  [-r1_tarski(2^[], 3^[])]   (13)  
+1.1.6.2  [-r1_tarski(3^[], k3_convex1(1^[], 3^[])), m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(1^[]))), -v2_struct_0(1^[]), v13_algstr_0(1^[]), v2_rlvect_1(1^[]), v3_rlvect_1(1^[]), v4_rlvect_1(1^[]), v5_rlvect_1(1^[]), v6_rlvect_1(1^[]), v7_rlvect_1(1^[]), v8_rlvect_1(1^[]), l1_rlvect_1(1^[])]   (19)  substitution:[[_G4158, _G3531], [3^[], 1^[]]]
+1.1.6.2.1  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (12)  
+1.1.6.2.2  [v2_struct_0(1^[])]   (1)  
+1.1.6.2.3  [-v13_algstr_0(1^[])]   (2)  
+1.1.6.2.4  [-v2_rlvect_1(1^[])]   (3)  
+1.1.6.2.5  [-v3_rlvect_1(1^[])]   (4)  
+1.1.6.2.6  [-v4_rlvect_1(1^[])]   (5)  
+1.1.6.2.7  [-v5_rlvect_1(1^[])]   (6)  
+1.1.6.2.8  [-v6_rlvect_1(1^[])]   (7)  
+1.1.6.2.9  [-v7_rlvect_1(1^[])]   (8)  
+1.1.6.2.10  [-v8_rlvect_1(1^[])]   (9)  
+1.1.6.2.11  [-l1_rlvect_1(1^[])]   (10)  
+------------------------------------------------------
+End of proof for t20_rltopsp1

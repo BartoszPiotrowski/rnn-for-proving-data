@@ -1,0 +1,58 @@
+
+t10_cfdiff_1 is a Theorem
+Start of proof for t10_cfdiff_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(3^[], k1_zfmisc_1(k2_numbers))]
+ (2)  [-v6_cfdiff_1(3^[])]
+ (3)  [-v1_xcmplx_0(4^[])]
+ (4)  [-r2_hidden(4^[], 3^[])]
+ (5)  [m1_subset_1(_G4903, k1_numbers), r1_tarski(a_2_0_cfdiff_1(4^[], _G4903), 3^[])]
+ (6)  [v1_xcmplx_0(_G1302), m1_subset_1(_G1412, k1_zfmisc_1(k2_numbers)), m1_cfdiff_1(_G1412, _G1302), -m1_subset_1(1^[_G1412, _G1302], k1_numbers)]
+ (7)  [v1_xcmplx_0(_G1302), m1_subset_1(_G1412, k1_zfmisc_1(k2_numbers)), m1_cfdiff_1(_G1412, _G1302), r1_xxreal_0(1^[_G1412, _G1302], k6_numbers)]
+ (8)  [v1_xcmplx_0(_G1302), m1_subset_1(_G1412, k1_zfmisc_1(k2_numbers)), m1_cfdiff_1(_G1412, _G1302), -r1_tarski(a_2_0_cfdiff_1(_G1302, 1^[_G1412, _G1302]), _G1412)]
+ (9)  [v1_xcmplx_0(_G1302), m1_subset_1(_G1412, k1_zfmisc_1(k2_numbers)), -m1_cfdiff_1(_G1412, _G1302), m1_subset_1(_G1614, k1_numbers), -r1_xxreal_0(_G1614, k6_numbers), r1_tarski(a_2_0_cfdiff_1(_G1302, _G1614), _G1412)]
+ (10)  [v1_xcmplx_0(_G2030), m1_cfdiff_1(_G2112, _G2030), -m1_subset_1(_G2112, k1_zfmisc_1(k2_numbers))]
+ (11)  [-r1_tarski(_G2344, _G2457), r1_tarski(_G2344, _G2400), r1_tarski(_G2400, _G2457)]
+ (12)  [m1_subset_1(_G2743, k1_zfmisc_1(k2_numbers)), v6_cfdiff_1(_G2743), v1_xcmplx_0(_G2922), r2_hidden(_G2922, _G2743), -m1_cfdiff_1(2^[_G2922, _G2743], _G2922)]
+ (13)  [m1_subset_1(_G2743, k1_zfmisc_1(k2_numbers)), v6_cfdiff_1(_G2743), v1_xcmplx_0(_G2922), r2_hidden(_G2922, _G2743), -r1_tarski(2^[_G2922, _G2743], _G2743)]
+
+Connection Proof:
+-----------------
+1  [m1_subset_1(1^[2^[4^[], 3^[]], 4^[]], k1_numbers), r1_tarski(a_2_0_cfdiff_1(4^[], 1^[2^[4^[], 3^[]], 4^[]]), 3^[])]   (5)  substitution:[[_G4903], [1^[2^[4^[], 3^[]], 4^[]]]]
+1.1  [-m1_subset_1(1^[2^[4^[], 3^[]], 4^[]], k1_numbers), v1_xcmplx_0(4^[]), m1_subset_1(2^[4^[], 3^[]], k1_zfmisc_1(k2_numbers)), m1_cfdiff_1(2^[4^[], 3^[]], 4^[])]   (6)  substitution:[[_G1412, _G1302], [2^[4^[], 3^[]], 4^[]]]
+1.1.1  [-v1_xcmplx_0(4^[])]   (3)  
+1.1.2  [-m1_subset_1(2^[4^[], 3^[]], k1_zfmisc_1(k2_numbers)), v1_xcmplx_0(4^[]), m1_cfdiff_1(2^[4^[], 3^[]], 4^[])]   (10)  substitution:[[_G2112, _G2030], [2^[4^[], 3^[]], 4^[]]]
+1.1.2.1  [-v1_xcmplx_0(4^[])]   (3)  
+1.1.2.2  [-m1_cfdiff_1(2^[4^[], 3^[]], 4^[]), m1_subset_1(3^[], k1_zfmisc_1(k2_numbers)), v6_cfdiff_1(3^[]), v1_xcmplx_0(4^[]), r2_hidden(4^[], 3^[])]   (12)  substitution:[[_G2922, _G2743], [4^[], 3^[]]]
+1.1.2.2.1  [-m1_subset_1(3^[], k1_zfmisc_1(k2_numbers))]   (1)  
+1.1.2.2.2  [-v6_cfdiff_1(3^[])]   (2)  
+1.1.2.2.3  [-v1_xcmplx_0(4^[])]   (3)  
+1.1.2.2.4  [-r2_hidden(4^[], 3^[])]   (4)  
+1.1.3  [-m1_cfdiff_1(2^[4^[], 3^[]], 4^[]), m1_subset_1(3^[], k1_zfmisc_1(k2_numbers)), v6_cfdiff_1(3^[]), v1_xcmplx_0(4^[]), r2_hidden(4^[], 3^[])]   (12)  substitution:[[_G2922, _G2743], [4^[], 3^[]]]
+1.1.3.1  [-m1_subset_1(3^[], k1_zfmisc_1(k2_numbers))]   (1)  
+1.1.3.2  [-v6_cfdiff_1(3^[])]   (2)  
+1.1.3.3  [-v1_xcmplx_0(4^[])]   (3)  
+1.1.3.4  [-r2_hidden(4^[], 3^[])]   (4)  
+1.2  [-r1_tarski(a_2_0_cfdiff_1(4^[], 1^[2^[4^[], 3^[]], 4^[]]), 3^[]), r1_tarski(a_2_0_cfdiff_1(4^[], 1^[2^[4^[], 3^[]], 4^[]]), 2^[4^[], 3^[]]), r1_tarski(2^[4^[], 3^[]], 3^[])]   (11)  substitution:[[_G2344, _G2457, _G2400], [a_2_0_cfdiff_1(4^[], 1^[2^[4^[], 3^[]], 4^[]]), 3^[], 2^[4^[], 3^[]]]]
+1.2.1  [-r1_tarski(a_2_0_cfdiff_1(4^[], 1^[2^[4^[], 3^[]], 4^[]]), 2^[4^[], 3^[]]), v1_xcmplx_0(4^[]), m1_subset_1(2^[4^[], 3^[]], k1_zfmisc_1(k2_numbers)), m1_cfdiff_1(2^[4^[], 3^[]], 4^[])]   (8)  substitution:[[_G1302, _G1412], [4^[], 2^[4^[], 3^[]]]]
+1.2.1.1  [-v1_xcmplx_0(4^[])]   (3)  
+1.2.1.2  [-m1_subset_1(2^[4^[], 3^[]], k1_zfmisc_1(k2_numbers)), v1_xcmplx_0(4^[]), m1_cfdiff_1(2^[4^[], 3^[]], 4^[])]   (10)  substitution:[[_G2112, _G2030], [2^[4^[], 3^[]], 4^[]]]
+1.2.1.2.1  [-v1_xcmplx_0(4^[])]   (3)  
+1.2.1.2.2  [-m1_cfdiff_1(2^[4^[], 3^[]], 4^[]), m1_subset_1(3^[], k1_zfmisc_1(k2_numbers)), v6_cfdiff_1(3^[]), v1_xcmplx_0(4^[]), r2_hidden(4^[], 3^[])]   (12)  substitution:[[_G2922, _G2743], [4^[], 3^[]]]
+1.2.1.2.2.1  [-m1_subset_1(3^[], k1_zfmisc_1(k2_numbers))]   (1)  
+1.2.1.2.2.2  [-v6_cfdiff_1(3^[])]   (2)  
+1.2.1.2.2.3  [-v1_xcmplx_0(4^[])]   (3)  
+1.2.1.2.2.4  [-r2_hidden(4^[], 3^[])]   (4)  
+1.2.1.3  [-m1_cfdiff_1(2^[4^[], 3^[]], 4^[]), m1_subset_1(3^[], k1_zfmisc_1(k2_numbers)), v6_cfdiff_1(3^[]), v1_xcmplx_0(4^[]), r2_hidden(4^[], 3^[])]   (12)  substitution:[[_G2922, _G2743], [4^[], 3^[]]]
+1.2.1.3.1  [-m1_subset_1(3^[], k1_zfmisc_1(k2_numbers))]   (1)  
+1.2.1.3.2  [-v6_cfdiff_1(3^[])]   (2)  
+1.2.1.3.3  [-v1_xcmplx_0(4^[])]   (3)  
+1.2.1.3.4  [-r2_hidden(4^[], 3^[])]   (4)  
+1.2.2  [-r1_tarski(2^[4^[], 3^[]], 3^[]), m1_subset_1(3^[], k1_zfmisc_1(k2_numbers)), v6_cfdiff_1(3^[]), v1_xcmplx_0(4^[]), r2_hidden(4^[], 3^[])]   (13)  substitution:[[_G2922, _G2743], [4^[], 3^[]]]
+1.2.2.1  [-m1_subset_1(3^[], k1_zfmisc_1(k2_numbers))]   (1)  
+1.2.2.2  [-v6_cfdiff_1(3^[])]   (2)  
+1.2.2.3  [-v1_xcmplx_0(4^[])]   (3)  
+1.2.2.4  [-r2_hidden(4^[], 3^[])]   (4)  
+------------------------------------------------------
+End of proof for t10_cfdiff_1

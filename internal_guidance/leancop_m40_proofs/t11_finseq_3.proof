@@ -1,0 +1,53 @@
+
+t11_finseq_3 is a Theorem
+Start of proof for t11_finseq_3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v7_ordinal1(2^[])]
+ (2)  [-v7_ordinal1(3^[])]
+ (3)  [r1_xxreal_0(3^[], 2^[])]
+ (4)  [r2_hidden(k1_nat_1(2^[], np__1), k2_finseq_1(3^[]))]
+ (5)  [v7_ordinal1(_G7603), -v3_ordinal1(_G7603)]
+ (6)  [v7_ordinal1(_G7734), - (k1_ordinal1(_G7734)=k1_nat_1(_G7734, np__1))]
+ (7)  [-r1_tarski(_G7949, _G8005), -r2_hidden(1^[_G8005, _G7949], _G7949)]
+ (8)  [-r1_tarski(_G7949, _G8005), r2_hidden(1^[_G8005, _G7949], _G8005)]
+ (9)  [r1_tarski(_G7949, _G8005), r2_hidden(_G8119, _G7949), -r2_hidden(_G8119, _G8005)]
+ (10)  [-v7_ordinal1(k1_ordinal1(_G8351)), v3_ordinal1(_G8351), v7_ordinal1(_G8351)]
+ (11)  [v7_ordinal1(_G8556), v7_ordinal1(_G8648), -r1_xxreal_0(k1_nat_1(_G8648, np__1), _G8556), -r1_xxreal_0(_G8556, _G8648)]
+ (12)  [v7_ordinal1(_G8556), v7_ordinal1(_G8648), r1_xxreal_0(k1_nat_1(_G8648, np__1), _G8556), r1_xxreal_0(_G8556, _G8648)]
+ (13)  [v7_ordinal1(_G8982), -r2_hidden(k1_nat_1(_G8982, np__1), k2_finseq_1(k1_nat_1(_G8982, np__1)))]
+ (14)  [v7_ordinal1(_G9230), v7_ordinal1(_G9321), r1_xxreal_0(_G9230, _G9321), -r1_tarski(k2_finseq_1(_G9230), k2_finseq_1(_G9321))]
+ (15)  [v7_ordinal1(_G9230), v7_ordinal1(_G9321), -r1_xxreal_0(_G9230, _G9321), r1_tarski(k2_finseq_1(_G9230), k2_finseq_1(_G9321))]
+ (16)  [_G6396=_G6445, - (k1_ordinal1(_G6396)=k1_ordinal1(_G6445))]
+ (17)  [_G7262=_G7311, - (k2_finseq_1(_G7262)=k2_finseq_1(_G7311))]
+ (18)  [- (k1_nat_1(_G6674, _G6809)=k1_nat_1(_G6741, _G6878)), _G6674=_G6741, _G6809=_G6878]
+ (19)  [- (_G3171=_G3171)]
+ (20)  [_G3270=_G3315, - (_G3315=_G3270)]
+ (21)  [- (_G3503=_G3616), _G3503=_G3559, _G3559=_G3616]
+ (22)  [-v3_ordinal1(_G4002), _G3953=_G4002, v3_ordinal1(_G3953)]
+ (23)  [-r1_tarski(_G4298, _G4435), r1_tarski(_G4231, _G4366), _G4231=_G4298, _G4366=_G4435]
+ (24)  [-v7_ordinal1(_G4877), _G4828=_G4877, v7_ordinal1(_G4828)]
+ (25)  [-r1_xxreal_0(_G5173, _G5310), r1_xxreal_0(_G5106, _G5241), _G5106=_G5173, _G5241=_G5310]
+ (26)  [-r2_hidden(_G5761, _G5898), r2_hidden(_G5694, _G5829), _G5694=_G5761, _G5829=_G5898]
+
+Connection Proof:
+-----------------
+1  [r1_xxreal_0(3^[], 2^[])]   (3)  
+1.1  [-r1_xxreal_0(3^[], 2^[]), v7_ordinal1(3^[]), v7_ordinal1(2^[]), -r1_xxreal_0(k1_nat_1(2^[], np__1), 3^[])]   (11)  substitution:[[_G8556, _G8648], [3^[], 2^[]]]
+1.1.1  [-v7_ordinal1(3^[])]   (2)  
+1.1.2  [-v7_ordinal1(2^[])]   (1)  
+1.1.3  [r1_xxreal_0(k1_nat_1(2^[], np__1), 3^[]), v7_ordinal1(k1_nat_1(2^[], np__1)), v7_ordinal1(3^[]), -r1_tarski(k2_finseq_1(k1_nat_1(2^[], np__1)), k2_finseq_1(3^[]))]   (14)  substitution:[[_G9230, _G9321], [k1_nat_1(2^[], np__1), 3^[]]]
+1.1.3.1  [-v7_ordinal1(k1_nat_1(2^[], np__1)), k1_ordinal1(2^[])=k1_nat_1(2^[], np__1), v7_ordinal1(k1_ordinal1(2^[]))]   (24)  substitution:[[_G4877, _G4828], [k1_nat_1(2^[], np__1), k1_ordinal1(2^[])]]
+1.1.3.1.1  [- (k1_ordinal1(2^[])=k1_nat_1(2^[], np__1)), v7_ordinal1(2^[])]   (6)  substitution:[[_G7734], [2^[]]]
+1.1.3.1.1.1  [-v7_ordinal1(2^[])]   (1)  
+1.1.3.1.2  [-v7_ordinal1(k1_ordinal1(2^[])), v3_ordinal1(2^[]), v7_ordinal1(2^[])]   (10)  substitution:[[_G8351], [2^[]]]
+1.1.3.1.2.1  [-v3_ordinal1(2^[]), v7_ordinal1(2^[])]   (5)  substitution:[[_G7603], [2^[]]]
+1.1.3.1.2.1.1  [-v7_ordinal1(2^[])]   (1)  
+1.1.3.1.2.2  [-v7_ordinal1(2^[])]   (1)  
+1.1.3.2  [-v7_ordinal1(3^[])]   (2)  
+1.1.3.3  [r1_tarski(k2_finseq_1(k1_nat_1(2^[], np__1)), k2_finseq_1(3^[])), r2_hidden(k1_nat_1(2^[], np__1), k2_finseq_1(k1_nat_1(2^[], np__1))), -r2_hidden(k1_nat_1(2^[], np__1), k2_finseq_1(3^[]))]   (9)  substitution:[[_G7949, _G8005, _G8119], [k2_finseq_1(k1_nat_1(2^[], np__1)), k2_finseq_1(3^[]), k1_nat_1(2^[], np__1)]]
+1.1.3.3.1  [-r2_hidden(k1_nat_1(2^[], np__1), k2_finseq_1(k1_nat_1(2^[], np__1))), v7_ordinal1(2^[])]   (13)  substitution:[[_G8982], [2^[]]]
+1.1.3.3.1.1  [-v7_ordinal1(2^[])]   (1)  
+1.1.3.3.2  [r2_hidden(k1_nat_1(2^[], np__1), k2_finseq_1(3^[]))]   (4)  
+------------------------------------------------------
+End of proof for t11_finseq_3

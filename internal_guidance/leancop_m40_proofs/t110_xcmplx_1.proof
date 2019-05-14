@@ -1,0 +1,32 @@
+
+t110_xcmplx_1 is a Theorem
+Start of proof for t110_xcmplx_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xcmplx_0(1^[])]
+ (2)  [-v1_xcmplx_0(2^[])]
+ (3)  [1^[]=k6_numbers]
+ (4)  [2^[]=k7_xcmplx_0(2^[], k3_xcmplx_0(1^[], k7_xcmplx_0(np__1, 1^[])))]
+ (5)  [v1_xcmplx_0(_G4200), - (k7_xcmplx_0(_G4200, np__1)=_G4200)]
+ (6)  [v1_xcmplx_0(_G3868), - (_G3868=k6_numbers), - (k3_xcmplx_0(_G3868, k7_xcmplx_0(np__1, _G3868))=np__1)]
+ (7)  [- (k3_xcmplx_0(_G2641, _G2776)=k3_xcmplx_0(_G2708, _G2845)), _G2641=_G2708, _G2776=_G2845]
+ (8)  [- (k7_xcmplx_0(_G3229, _G3364)=k7_xcmplx_0(_G3296, _G3433)), _G3229=_G3296, _G3364=_G3433]
+ (9)  [-v1_xcmplx_0(_G2391), _G2342=_G2391, v1_xcmplx_0(_G2342)]
+ (10)  [- (_G1569=_G1569)]
+ (11)  [_G1668=_G1713, - (_G1713=_G1668)]
+ (12)  [- (_G1901=_G2014), _G1901=_G1957, _G1957=_G2014]
+
+Connection Proof:
+-----------------
+1  [1^[]=k6_numbers]   (3)  
+1.1  [- (1^[]=k6_numbers), v1_xcmplx_0(1^[]), - (k3_xcmplx_0(1^[], k7_xcmplx_0(np__1, 1^[]))=np__1)]   (6)  substitution:[[_G3868], [1^[]]]
+1.1.1  [-v1_xcmplx_0(1^[])]   (1)  
+1.1.2  [k3_xcmplx_0(1^[], k7_xcmplx_0(np__1, 1^[]))=np__1, - (k7_xcmplx_0(2^[], k3_xcmplx_0(1^[], k7_xcmplx_0(np__1, 1^[])))=k7_xcmplx_0(2^[], np__1)), 2^[]=2^[]]   (8)  substitution:[[_G3364, _G3433, _G3229, _G3296], [k3_xcmplx_0(1^[], k7_xcmplx_0(np__1, 1^[])), np__1, 2^[], 2^[]]]
+1.1.2.1  [k7_xcmplx_0(2^[], k3_xcmplx_0(1^[], k7_xcmplx_0(np__1, 1^[])))=k7_xcmplx_0(2^[], np__1), - (k7_xcmplx_0(2^[], k3_xcmplx_0(1^[], k7_xcmplx_0(np__1, 1^[])))=2^[]), k7_xcmplx_0(2^[], np__1)=2^[]]   (12)  substitution:[[_G1901, _G1957, _G2014], [k7_xcmplx_0(2^[], k3_xcmplx_0(1^[], k7_xcmplx_0(np__1, 1^[]))), k7_xcmplx_0(2^[], np__1), 2^[]]]
+1.1.2.1.1  [k7_xcmplx_0(2^[], k3_xcmplx_0(1^[], k7_xcmplx_0(np__1, 1^[])))=2^[], - (2^[]=k7_xcmplx_0(2^[], k3_xcmplx_0(1^[], k7_xcmplx_0(np__1, 1^[]))))]   (11)  substitution:[[_G1668, _G1713], [k7_xcmplx_0(2^[], k3_xcmplx_0(1^[], k7_xcmplx_0(np__1, 1^[]))), 2^[]]]
+1.1.2.1.1.1  [2^[]=k7_xcmplx_0(2^[], k3_xcmplx_0(1^[], k7_xcmplx_0(np__1, 1^[])))]   (4)  
+1.1.2.1.2  [- (k7_xcmplx_0(2^[], np__1)=2^[]), v1_xcmplx_0(2^[])]   (5)  substitution:[[_G4200], [2^[]]]
+1.1.2.1.2.1  [-v1_xcmplx_0(2^[])]   (2)  
+1.1.2.2  [- (2^[]=2^[])]   (10)  substitution:[[_G1569], [2^[]]]
+------------------------------------------------------
+End of proof for t110_xcmplx_1

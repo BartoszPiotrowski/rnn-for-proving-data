@@ -1,0 +1,45 @@
+
+l78_pepin is a Theorem
+Start of proof for l78_pepin
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k13_newton(np__3, np__2)=np__9]
+ (2)  [m1_subset_1(_G7685, k1_numbers), -v1_xreal_0(_G7685)]
+ (3)  [- (k3_xcmplx_0(np__3, np__3)=np__9)]
+ (4)  [-v2_xxreal_0(np__2)]
+ (5)  [-m2_subset_1(np__2, k1_numbers, k5_numbers)]
+ (6)  [-m1_subset_1(np__2, k5_numbers)]
+ (7)  [-m1_subset_1(np__2, k1_numbers)]
+ (8)  [-v2_xxreal_0(np__3)]
+ (9)  [-m2_subset_1(np__3, k1_numbers, k5_numbers)]
+ (10)  [-m1_subset_1(np__3, k5_numbers)]
+ (11)  [-m1_subset_1(np__3, k1_numbers)]
+ (12)  [v1_xreal_0(_G8969), - (k1_newton(_G8969, np__2)=k3_xcmplx_0(_G8969, _G8969))]
+ (13)  [v1_xreal_0(_G8969), - (k1_newton(k4_xcmplx_0(_G8969), np__2)=k1_newton(_G8969, np__2))]
+ (14)  [- (k13_newton(_G7842, _G7899)=k1_newton(_G7842, _G7899)), m1_subset_1(_G7842, k5_numbers), m1_subset_1(_G7899, k5_numbers)]
+ (15)  [- (k3_xcmplx_0(_G5541, _G5676)=k3_xcmplx_0(_G5608, _G5745)), _G5541=_G5608, _G5676=_G5745]
+ (16)  [_G6138=_G6187, - (k4_xcmplx_0(_G6138)=k4_xcmplx_0(_G6187))]
+ (17)  [- (k1_newton(_G6416, _G6551)=k1_newton(_G6483, _G6620)), _G6416=_G6483, _G6551=_G6620]
+ (18)  [- (k13_newton(_G7004, _G7139)=k13_newton(_G7071, _G7208)), _G7004=_G7071, _G7139=_G7208]
+ (19)  [- (_G2503=_G2503)]
+ (20)  [_G2602=_G2647, - (_G2647=_G2602)]
+ (21)  [- (_G2835=_G2948), _G2835=_G2891, _G2891=_G2948]
+ (22)  [-v2_xxreal_0(_G3334), _G3285=_G3334, v2_xxreal_0(_G3285)]
+ (23)  [-m2_subset_1(_G3648, _G3821, _G3998), m2_subset_1(_G3563, _G3734, _G3909), _G3563=_G3648, _G3734=_G3821, _G3909=_G3998]
+ (24)  [-v1_xreal_0(_G5228), _G5179=_G5228, v1_xreal_0(_G5179)]
+ (25)  [-m1_subset_1(_G4658, _G4795), m1_subset_1(_G4591, _G4726), _G4591=_G4658, _G4726=_G4795]
+
+Connection Proof:
+-----------------
+1  [k13_newton(np__3, np__2)=np__9]   (1)  
+1.1  [- (k13_newton(np__3, np__2)=np__9), k13_newton(np__3, np__2)=k1_newton(np__3, np__2), k1_newton(np__3, np__2)=np__9]   (21)  substitution:[[_G2835, _G2948, _G2891], [k13_newton(np__3, np__2), np__9, k1_newton(np__3, np__2)]]
+1.1.1  [- (k13_newton(np__3, np__2)=k1_newton(np__3, np__2)), m1_subset_1(np__3, k5_numbers), m1_subset_1(np__2, k5_numbers)]   (14)  substitution:[[_G7842, _G7899], [np__3, np__2]]
+1.1.1.1  [-m1_subset_1(np__3, k5_numbers)]   (10)  
+1.1.1.2  [-m1_subset_1(np__2, k5_numbers)]   (6)  
+1.1.2  [- (k1_newton(np__3, np__2)=np__9), k1_newton(np__3, np__2)=k3_xcmplx_0(np__3, np__3), k3_xcmplx_0(np__3, np__3)=np__9]   (21)  substitution:[[_G2835, _G2948, _G2891], [k1_newton(np__3, np__2), np__9, k3_xcmplx_0(np__3, np__3)]]
+1.1.2.1  [- (k1_newton(np__3, np__2)=k3_xcmplx_0(np__3, np__3)), v1_xreal_0(np__3)]   (12)  substitution:[[_G8969], [np__3]]
+1.1.2.1.1  [-v1_xreal_0(np__3), m1_subset_1(np__3, k1_numbers)]   (2)  substitution:[[_G7685], [np__3]]
+1.1.2.1.1.1  [-m1_subset_1(np__3, k1_numbers)]   (11)  
+1.1.2.2  [- (k3_xcmplx_0(np__3, np__3)=np__9)]   (3)  
+------------------------------------------------------
+End of proof for l78_pepin

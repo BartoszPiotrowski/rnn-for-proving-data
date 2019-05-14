@@ -1,0 +1,24 @@
+
+l3_jordan1a is a Theorem
+Start of proof for l3_jordan1a
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [np__1=k2_nat_1(k4_nat_1(np__2, k6_numbers), np__1)]
+ (2)  [- (k6_numbers=k4_nat_1(np__2, k6_numbers))]
+ (3)  [- (np__1=k2_nat_1(k6_numbers, np__1))]
+ (4)  [- (_G932=_G932)]
+ (5)  [_G1031=_G1076, - (_G1076=_G1031)]
+ (6)  [- (_G1264=_G1377), _G1264=_G1320, _G1320=_G1377]
+ (7)  [- (k2_nat_1(_G1714, _G1849)=k2_nat_1(_G1781, _G1918)), _G1714=_G1781, _G1849=_G1918]
+ (8)  [- (k4_nat_1(_G2302, _G2437)=k4_nat_1(_G2369, _G2506)), _G2302=_G2369, _G2437=_G2506]
+
+Connection Proof:
+-----------------
+1  [np__1=k2_nat_1(k4_nat_1(np__2, k6_numbers), np__1)]   (1)  
+1.1  [- (np__1=k2_nat_1(k4_nat_1(np__2, k6_numbers), np__1)), np__1=k2_nat_1(k6_numbers, np__1), k2_nat_1(k6_numbers, np__1)=k2_nat_1(k4_nat_1(np__2, k6_numbers), np__1)]   (6)  substitution:[[_G1264, _G1377, _G1320], [np__1, k2_nat_1(k4_nat_1(np__2, k6_numbers), np__1), k2_nat_1(k6_numbers, np__1)]]
+1.1.1  [- (np__1=k2_nat_1(k6_numbers, np__1))]   (3)  
+1.1.2  [- (k2_nat_1(k6_numbers, np__1)=k2_nat_1(k4_nat_1(np__2, k6_numbers), np__1)), k6_numbers=k4_nat_1(np__2, k6_numbers), np__1=np__1]   (7)  substitution:[[_G1714, _G1849, _G1781, _G1918], [k6_numbers, np__1, k4_nat_1(np__2, k6_numbers), np__1]]
+1.1.2.1  [- (k6_numbers=k4_nat_1(np__2, k6_numbers))]   (2)  
+1.1.2.2  [- (np__1=np__1)]   (4)  substitution:[[_G932], [np__1]]
+------------------------------------------------------
+End of proof for l3_jordan1a

@@ -1,0 +1,48 @@
+
+t28_topreal4 is a Theorem
+Start of proof for t28_topreal4
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], u1_struct_0(k15_euclid(np__2)))]
+ (2)  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(k15_euclid(np__2))))]
+ (3)  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(k15_euclid(np__2))))]
+ (4)  [-v2_topreal4(2^[], k15_euclid(np__2))]
+ (5)  [-r2_hidden(1^[], 2^[])]
+ (6)  [- (3^[]=a_2_1_topreal4(1^[], 2^[]))]
+ (7)  [2^[]=3^[]]
+ (8)  [_G8474=_G8525, -r1_tarski(_G8474, _G8525)]
+ (9)  [_G8474=_G8525, -r1_tarski(_G8525, _G8474)]
+ (10)  [- (_G8474=_G8525), r1_tarski(_G8474, _G8525), r1_tarski(_G8525, _G8474)]
+ (11)  [m1_subset_1(_G8806, u1_struct_0(k15_euclid(np__2))), m1_subset_1(_G8968, k1_zfmisc_1(u1_struct_0(k15_euclid(np__2)))), m1_subset_1(_G9139, k1_zfmisc_1(u1_struct_0(k15_euclid(np__2)))), -r1_tarski(_G9139, _G8968), r2_hidden(_G8806, _G8968), _G9139=a_2_1_topreal4(_G8806, _G8968)]
+ (12)  [m1_subset_1(_G9635, u1_struct_0(k15_euclid(np__2))), m1_subset_1(_G9803, k1_zfmisc_1(u1_struct_0(k15_euclid(np__2)))), m1_subset_1(_G9980, k1_zfmisc_1(u1_struct_0(k15_euclid(np__2)))), -r1_tarski(_G9803, _G9980), v2_topreal4(_G9803, k15_euclid(np__2)), r2_hidden(_G9635, _G9803), _G9980=a_2_1_topreal4(_G9635, _G9803)]
+ (13)  [_G6968=_G7017, - (k1_zfmisc_1(_G6968)=k1_zfmisc_1(_G7017))]
+ (14)  [_G7246=_G7295, - (u1_struct_0(_G7246)=u1_struct_0(_G7295))]
+ (15)  [_G7524=_G7573, - (k15_euclid(_G7524)=k15_euclid(_G7573))]
+ (16)  [- (a_2_1_topreal4(_G7793, _G7928)=a_2_1_topreal4(_G7860, _G7997)), _G7793=_G7860, _G7928=_G7997]
+ (17)  [- (_G3723=_G3723)]
+ (18)  [_G3822=_G3867, - (_G3867=_G3822)]
+ (19)  [- (_G4055=_G4168), _G4055=_G4111, _G4111=_G4168]
+ (20)  [-r1_tarski(_G4572, _G4709), r1_tarski(_G4505, _G4640), _G4505=_G4572, _G4640=_G4709]
+ (21)  [-m1_subset_1(_G5169, _G5306), m1_subset_1(_G5102, _G5237), _G5102=_G5169, _G5237=_G5306]
+ (22)  [-v2_topreal4(_G5766, _G5903), v2_topreal4(_G5699, _G5834), _G5699=_G5766, _G5834=_G5903]
+ (23)  [-r2_hidden(_G6354, _G6491), r2_hidden(_G6287, _G6422), _G6287=_G6354, _G6422=_G6491]
+
+Connection Proof:
+-----------------
+1  [2^[]=3^[]]   (7)  
+1.1  [- (2^[]=3^[]), r1_tarski(2^[], 3^[]), r1_tarski(3^[], 2^[])]   (10)  substitution:[[_G8474, _G8525], [2^[], 3^[]]]
+1.1.1  [-r1_tarski(2^[], 3^[]), m1_subset_1(1^[], u1_struct_0(k15_euclid(np__2))), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(k15_euclid(np__2)))), m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(k15_euclid(np__2)))), v2_topreal4(2^[], k15_euclid(np__2)), r2_hidden(1^[], 2^[]), 3^[]=a_2_1_topreal4(1^[], 2^[])]   (12)  substitution:[[_G9803, _G9980, _G9635], [2^[], 3^[], 1^[]]]
+1.1.1.1  [-m1_subset_1(1^[], u1_struct_0(k15_euclid(np__2)))]   (1)  
+1.1.1.2  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(k15_euclid(np__2))))]   (2)  
+1.1.1.3  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(k15_euclid(np__2))))]   (3)  
+1.1.1.4  [-v2_topreal4(2^[], k15_euclid(np__2))]   (4)  
+1.1.1.5  [-r2_hidden(1^[], 2^[])]   (5)  
+1.1.1.6  [- (3^[]=a_2_1_topreal4(1^[], 2^[]))]   (6)  
+1.1.2  [-r1_tarski(3^[], 2^[]), m1_subset_1(1^[], u1_struct_0(k15_euclid(np__2))), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(k15_euclid(np__2)))), m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(k15_euclid(np__2)))), r2_hidden(1^[], 2^[]), 3^[]=a_2_1_topreal4(1^[], 2^[])]   (11)  substitution:[[_G9139, _G8968, _G8806], [3^[], 2^[], 1^[]]]
+1.1.2.1  [-m1_subset_1(1^[], u1_struct_0(k15_euclid(np__2)))]   (1)  
+1.1.2.2  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(k15_euclid(np__2))))]   (2)  
+1.1.2.3  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(k15_euclid(np__2))))]   (3)  
+1.1.2.4  [-r2_hidden(1^[], 2^[])]   (5)  
+1.1.2.5  [- (3^[]=a_2_1_topreal4(1^[], 2^[]))]   (6)  
+------------------------------------------------------
+End of proof for t28_topreal4

@@ -1,0 +1,37 @@
+
+t47_xxreal_0 is a Theorem
+Start of proof for t47_xxreal_0
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xxreal_0(1^[])]
+ (2)  [-v1_xxreal_0(2^[])]
+ (3)  [-v1_xxreal_0(3^[])]
+ (4)  [-r2_hidden(1^[], k1_numbers)]
+ (5)  [-r1_xxreal_0(3^[], 1^[])]
+ (6)  [r1_xxreal_0(3^[], 2^[])]
+ (7)  [r2_hidden(3^[], k1_numbers)]
+ (8)  [v1_xxreal_0(_G4697), -r1_xxreal_0(k2_xxreal_0, _G4697)]
+ (9)  [v1_xxreal_0(_G4109), v1_xxreal_0(_G4214), r2_hidden(_G4109, k1_numbers), r1_xxreal_0(_G4214, _G4109), -r2_hidden(_G4214, k1_numbers), - (_G4214=k2_xxreal_0)]
+ (10)  [- (_G1801=_G1801)]
+ (11)  [_G1900=_G1945, - (_G1945=_G1900)]
+ (12)  [- (_G2133=_G2246), _G2133=_G2189, _G2189=_G2246]
+ (13)  [-v1_xxreal_0(_G2632), _G2583=_G2632, v1_xxreal_0(_G2583)]
+ (14)  [-r1_xxreal_0(_G2928, _G3065), r1_xxreal_0(_G2861, _G2996), _G2861=_G2928, _G2996=_G3065]
+ (15)  [-r2_hidden(_G3516, _G3653), r2_hidden(_G3449, _G3584), _G3449=_G3516, _G3584=_G3653]
+
+Connection Proof:
+-----------------
+1  [r1_xxreal_0(3^[], 2^[])]   (6)  
+1.1  [-r1_xxreal_0(3^[], 2^[]), r1_xxreal_0(k2_xxreal_0, 2^[]), k2_xxreal_0=3^[], 2^[]=2^[]]   (14)  substitution:[[_G2928, _G3065, _G2861, _G2996], [3^[], 2^[], k2_xxreal_0, 2^[]]]
+1.1.1  [-r1_xxreal_0(k2_xxreal_0, 2^[]), v1_xxreal_0(2^[])]   (8)  substitution:[[_G4697], [2^[]]]
+1.1.1.1  [-v1_xxreal_0(2^[])]   (2)  
+1.1.2  [- (k2_xxreal_0=3^[]), 3^[]=k2_xxreal_0]   (11)  substitution:[[_G1945, _G1900], [k2_xxreal_0, 3^[]]]
+1.1.2.1  [- (3^[]=k2_xxreal_0), v1_xxreal_0(1^[]), v1_xxreal_0(3^[]), r2_hidden(1^[], k1_numbers), r1_xxreal_0(3^[], 1^[]), -r2_hidden(3^[], k1_numbers)]   (9)  substitution:[[_G4214, _G4109], [3^[], 1^[]]]
+1.1.2.1.1  [-v1_xxreal_0(1^[])]   (1)  
+1.1.2.1.2  [-v1_xxreal_0(3^[])]   (3)  
+1.1.2.1.3  [-r2_hidden(1^[], k1_numbers)]   (4)  
+1.1.2.1.4  [-r1_xxreal_0(3^[], 1^[])]   (5)  
+1.1.2.1.5  [r2_hidden(3^[], k1_numbers)]   (7)  
+1.1.3  [- (2^[]=2^[])]   (10)  substitution:[[_G1801], [2^[]]]
+------------------------------------------------------
+End of proof for t47_xxreal_0

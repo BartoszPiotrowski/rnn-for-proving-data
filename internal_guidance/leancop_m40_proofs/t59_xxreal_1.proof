@@ -1,0 +1,40 @@
+
+t59_xxreal_1 is a Theorem
+Start of proof for t59_xxreal_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xxreal_0(1^[])]
+ (2)  [-v1_xxreal_0(2^[])]
+ (3)  [-v1_xxreal_0(3^[])]
+ (4)  [-v1_xxreal_0(4^[])]
+ (5)  [-r1_tarski(k4_xxreal_1(1^[], 2^[]), k3_xxreal_1(3^[], 4^[]))]
+ (6)  [r1_xxreal_0(2^[], 1^[])]
+ (7)  [r1_xxreal_0(3^[], 1^[]), r1_xxreal_0(2^[], 4^[])]
+ (8)  [-r1_tarski(_G1184, _G1297), r1_tarski(_G1184, _G1240), r1_tarski(_G1240, _G1297)]
+ (9)  [v1_xxreal_0(_G1592), v1_xxreal_0(_G1679), -r1_tarski(k3_xxreal_1(_G1592, _G1679), k1_xxreal_1(_G1592, _G1679))]
+ (10)  [v1_xxreal_0(_G1946), v1_xxreal_0(_G2071), v1_xxreal_0(_G2192), v1_xxreal_0(_G2309), r1_tarski(k4_xxreal_1(_G1946, _G2071), k1_xxreal_1(_G2192, _G2309)), -r1_xxreal_0(_G2071, _G1946), -r1_xxreal_0(_G2192, _G1946)]
+ (11)  [v1_xxreal_0(_G1946), v1_xxreal_0(_G2071), v1_xxreal_0(_G2192), v1_xxreal_0(_G2309), r1_tarski(k4_xxreal_1(_G1946, _G2071), k1_xxreal_1(_G2192, _G2309)), -r1_xxreal_0(_G2071, _G1946), -r1_xxreal_0(_G2071, _G2309)]
+
+Connection Proof:
+-----------------
+1  [r1_xxreal_0(2^[], 1^[])]   (6)  
+1.1  [-r1_xxreal_0(2^[], 1^[]), v1_xxreal_0(1^[]), v1_xxreal_0(2^[]), v1_xxreal_0(3^[]), v1_xxreal_0(4^[]), r1_tarski(k4_xxreal_1(1^[], 2^[]), k1_xxreal_1(3^[], 4^[])), -r1_xxreal_0(3^[], 1^[])]   (10)  substitution:[[_G2071, _G1946, _G2192, _G2309], [2^[], 1^[], 3^[], 4^[]]]
+1.1.1  [-v1_xxreal_0(1^[])]   (1)  
+1.1.2  [-v1_xxreal_0(2^[])]   (2)  
+1.1.3  [-v1_xxreal_0(3^[])]   (3)  
+1.1.4  [-v1_xxreal_0(4^[])]   (4)  
+1.1.5  [-r1_tarski(k4_xxreal_1(1^[], 2^[]), k1_xxreal_1(3^[], 4^[])), r1_tarski(k4_xxreal_1(1^[], 2^[]), k3_xxreal_1(3^[], 4^[])), r1_tarski(k3_xxreal_1(3^[], 4^[]), k1_xxreal_1(3^[], 4^[]))]   (8)  substitution:[[_G1184, _G1297, _G1240], [k4_xxreal_1(1^[], 2^[]), k1_xxreal_1(3^[], 4^[]), k3_xxreal_1(3^[], 4^[])]]
+1.1.5.1  [-r1_tarski(k4_xxreal_1(1^[], 2^[]), k3_xxreal_1(3^[], 4^[]))]   (5)  
+1.1.5.2  [-r1_tarski(k3_xxreal_1(3^[], 4^[]), k1_xxreal_1(3^[], 4^[])), v1_xxreal_0(3^[]), v1_xxreal_0(4^[])]   (9)  substitution:[[_G1592, _G1679], [3^[], 4^[]]]
+1.1.5.2.1  [-v1_xxreal_0(3^[])]   (3)  
+1.1.5.2.2  [-v1_xxreal_0(4^[])]   (4)  
+1.1.6  [r1_xxreal_0(3^[], 1^[]), r1_xxreal_0(2^[], 4^[])]   (7)  
+1.1.6.1  [-r1_xxreal_0(2^[], 4^[]), v1_xxreal_0(1^[]), v1_xxreal_0(2^[]), v1_xxreal_0(3^[]), v1_xxreal_0(4^[]), r1_tarski(k4_xxreal_1(1^[], 2^[]), k1_xxreal_1(3^[], 4^[])), -r1_xxreal_0(2^[], 1^[])]   (11)  substitution:[[_G2071, _G2309, _G1946, _G2192], [2^[], 4^[], 1^[], 3^[]]]
+1.1.6.1.1  [-v1_xxreal_0(1^[])]   (1)  
+1.1.6.1.2  [-v1_xxreal_0(2^[])]   (2)  
+1.1.6.1.3  [-v1_xxreal_0(3^[])]   (3)  
+1.1.6.1.4  [-v1_xxreal_0(4^[])]   (4)  
+1.1.6.1.5  [-r1_tarski(k4_xxreal_1(1^[], 2^[]), k1_xxreal_1(3^[], 4^[]))]   (lemmata:1.1)  
+1.1.6.1.6  [r1_xxreal_0(2^[], 1^[])]   (6)  
+------------------------------------------------------
+End of proof for t59_xxreal_1

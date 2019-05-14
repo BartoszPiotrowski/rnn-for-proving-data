@@ -1,0 +1,70 @@
+
+t7_tdlat_3 is a Theorem
+Start of proof for t7_tdlat_3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v2_pre_topc(1^[])]
+ (2)  [-l1_pre_topc(1^[])]
+ (3)  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]
+ (4)  [-v4_tops_1(2^[], 1^[])]
+ (5)  [-r1_tarski(k2_pre_topc(1^[], k1_tops_1(1^[], 2^[])), k1_tops_1(1^[], k2_pre_topc(1^[], 2^[])))]
+ (6)  [v6_tops_1(2^[], 1^[]), v5_tops_1(2^[], 1^[])]
+ (7)  [_G10182=_G10233, -r1_tarski(_G10182, _G10233)]
+ (8)  [_G10182=_G10233, -r1_tarski(_G10233, _G10182)]
+ (9)  [- (_G10182=_G10233), r1_tarski(_G10182, _G10233), r1_tarski(_G10233, _G10182)]
+ (10)  [l1_pre_topc(_G10514), m1_subset_1(_G10624, k1_zfmisc_1(u1_struct_0(_G10514))), v4_tops_1(_G10624, _G10514), -r1_tarski(k1_tops_1(_G10514, k2_pre_topc(_G10514, _G10624)), _G10624)]
+ (11)  [l1_pre_topc(_G10514), m1_subset_1(_G10624, k1_zfmisc_1(u1_struct_0(_G10514))), v4_tops_1(_G10624, _G10514), -r1_tarski(_G10624, k2_pre_topc(_G10514, k1_tops_1(_G10514, _G10624)))]
+ (12)  [l1_pre_topc(_G10514), m1_subset_1(_G10624, k1_zfmisc_1(u1_struct_0(_G10514))), -v4_tops_1(_G10624, _G10514), r1_tarski(k1_tops_1(_G10514, k2_pre_topc(_G10514, _G10624)), _G10624), r1_tarski(_G10624, k2_pre_topc(_G10514, k1_tops_1(_G10514, _G10624)))]
+ (13)  [l1_pre_topc(_G11210), m1_subset_1(_G11308, k1_zfmisc_1(u1_struct_0(_G11210))), v5_tops_1(_G11308, _G11210), - (_G11308=k2_pre_topc(_G11210, k1_tops_1(_G11210, _G11308)))]
+ (14)  [l1_pre_topc(_G11210), m1_subset_1(_G11308, k1_zfmisc_1(u1_struct_0(_G11210))), -v5_tops_1(_G11308, _G11210), _G11308=k2_pre_topc(_G11210, k1_tops_1(_G11210, _G11308))]
+ (15)  [-r1_tarski(_G12233, _G12346), r1_tarski(_G12233, _G12289), r1_tarski(_G12289, _G12346)]
+ (16)  [l1_pre_topc(_G11726), m1_subset_1(_G11824, k1_zfmisc_1(u1_struct_0(_G11726))), v6_tops_1(_G11824, _G11726), - (_G11824=k1_tops_1(_G11726, k2_pre_topc(_G11726, _G11824)))]
+ (17)  [l1_pre_topc(_G11726), m1_subset_1(_G11824, k1_zfmisc_1(u1_struct_0(_G11726))), -v6_tops_1(_G11824, _G11726), _G11824=k1_tops_1(_G11726, k2_pre_topc(_G11726, _G11824))]
+ (18)  [_G8357=_G8406, - (k1_zfmisc_1(_G8357)=k1_zfmisc_1(_G8406))]
+ (19)  [_G8635=_G8684, - (u1_struct_0(_G8635)=u1_struct_0(_G8684))]
+ (20)  [- (k1_tops_1(_G8913, _G9048)=k1_tops_1(_G8980, _G9117)), _G8913=_G8980, _G9048=_G9117]
+ (21)  [- (k2_pre_topc(_G9501, _G9636)=k2_pre_topc(_G9568, _G9705)), _G9501=_G9568, _G9636=_G9705]
+ (22)  [- (_G3896=_G3896)]
+ (23)  [_G3995=_G4040, - (_G4040=_G3995)]
+ (24)  [- (_G4228=_G4341), _G4228=_G4284, _G4284=_G4341]
+ (25)  [-v2_pre_topc(_G4727), _G4678=_G4727, v2_pre_topc(_G4678)]
+ (26)  [-l1_pre_topc(_G5005), _G4956=_G5005, l1_pre_topc(_G4956)]
+ (27)  [-m1_subset_1(_G5301, _G5438), m1_subset_1(_G5234, _G5369), _G5234=_G5301, _G5369=_G5438]
+ (28)  [-v4_tops_1(_G5898, _G6035), v4_tops_1(_G5831, _G5966), _G5831=_G5898, _G5966=_G6035]
+ (29)  [-r1_tarski(_G6495, _G6632), r1_tarski(_G6428, _G6563), _G6428=_G6495, _G6563=_G6632]
+ (30)  [-v6_tops_1(_G7092, _G7229), v6_tops_1(_G7025, _G7160), _G7025=_G7092, _G7160=_G7229]
+ (31)  [-v5_tops_1(_G7680, _G7817), v5_tops_1(_G7613, _G7748), _G7613=_G7680, _G7748=_G7817]
+
+Connection Proof:
+-----------------
+1  [v6_tops_1(2^[], 1^[]), v5_tops_1(2^[], 1^[])]   (6)  
+1.1  [-v6_tops_1(2^[], 1^[]), l1_pre_topc(1^[]), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[]))), 2^[]=k1_tops_1(1^[], k2_pre_topc(1^[], 2^[]))]   (17)  substitution:[[_G11824, _G11726], [2^[], 1^[]]]
+1.1.1  [-l1_pre_topc(1^[])]   (2)  
+1.1.2  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (3)  
+1.1.3  [- (2^[]=k1_tops_1(1^[], k2_pre_topc(1^[], 2^[]))), r1_tarski(2^[], k1_tops_1(1^[], k2_pre_topc(1^[], 2^[]))), r1_tarski(k1_tops_1(1^[], k2_pre_topc(1^[], 2^[])), 2^[])]   (9)  substitution:[[_G10182, _G10233], [2^[], k1_tops_1(1^[], k2_pre_topc(1^[], 2^[]))]]
+1.1.3.1  [-r1_tarski(2^[], k1_tops_1(1^[], k2_pre_topc(1^[], 2^[]))), r1_tarski(2^[], k2_pre_topc(1^[], k1_tops_1(1^[], 2^[]))), r1_tarski(k2_pre_topc(1^[], k1_tops_1(1^[], 2^[])), k1_tops_1(1^[], k2_pre_topc(1^[], 2^[])))]   (15)  substitution:[[_G12233, _G12346, _G12289], [2^[], k1_tops_1(1^[], k2_pre_topc(1^[], 2^[])), k2_pre_topc(1^[], k1_tops_1(1^[], 2^[]))]]
+1.1.3.1.1  [-r1_tarski(2^[], k2_pre_topc(1^[], k1_tops_1(1^[], 2^[]))), l1_pre_topc(1^[]), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[]))), v4_tops_1(2^[], 1^[])]   (11)  substitution:[[_G10624, _G10514], [2^[], 1^[]]]
+1.1.3.1.1.1  [-l1_pre_topc(1^[])]   (2)  
+1.1.3.1.1.2  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (3)  
+1.1.3.1.1.3  [-v4_tops_1(2^[], 1^[])]   (4)  
+1.1.3.1.2  [-r1_tarski(k2_pre_topc(1^[], k1_tops_1(1^[], 2^[])), k1_tops_1(1^[], k2_pre_topc(1^[], 2^[])))]   (5)  
+1.1.3.2  [-r1_tarski(k1_tops_1(1^[], k2_pre_topc(1^[], 2^[])), 2^[]), l1_pre_topc(1^[]), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[]))), v4_tops_1(2^[], 1^[])]   (10)  substitution:[[_G10514, _G10624], [1^[], 2^[]]]
+1.1.3.2.1  [-l1_pre_topc(1^[])]   (2)  
+1.1.3.2.2  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (3)  
+1.1.3.2.3  [-v4_tops_1(2^[], 1^[])]   (4)  
+1.2  [-v5_tops_1(2^[], 1^[]), l1_pre_topc(1^[]), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[]))), 2^[]=k2_pre_topc(1^[], k1_tops_1(1^[], 2^[]))]   (14)  substitution:[[_G11308, _G11210], [2^[], 1^[]]]
+1.2.1  [-l1_pre_topc(1^[])]   (2)  
+1.2.2  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (3)  
+1.2.3  [- (2^[]=k2_pre_topc(1^[], k1_tops_1(1^[], 2^[]))), r1_tarski(2^[], k2_pre_topc(1^[], k1_tops_1(1^[], 2^[]))), r1_tarski(k2_pre_topc(1^[], k1_tops_1(1^[], 2^[])), 2^[])]   (9)  substitution:[[_G10182, _G10233], [2^[], k2_pre_topc(1^[], k1_tops_1(1^[], 2^[]))]]
+1.2.3.1  [-r1_tarski(2^[], k2_pre_topc(1^[], k1_tops_1(1^[], 2^[]))), l1_pre_topc(1^[]), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[]))), v4_tops_1(2^[], 1^[])]   (11)  substitution:[[_G10624, _G10514], [2^[], 1^[]]]
+1.2.3.1.1  [-l1_pre_topc(1^[])]   (2)  
+1.2.3.1.2  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (3)  
+1.2.3.1.3  [-v4_tops_1(2^[], 1^[])]   (4)  
+1.2.3.2  [-r1_tarski(k2_pre_topc(1^[], k1_tops_1(1^[], 2^[])), 2^[]), r1_tarski(k2_pre_topc(1^[], k1_tops_1(1^[], 2^[])), k1_tops_1(1^[], k2_pre_topc(1^[], 2^[]))), r1_tarski(k1_tops_1(1^[], k2_pre_topc(1^[], 2^[])), 2^[])]   (15)  substitution:[[_G12233, _G12346, _G12289], [k2_pre_topc(1^[], k1_tops_1(1^[], 2^[])), 2^[], k1_tops_1(1^[], k2_pre_topc(1^[], 2^[]))]]
+1.2.3.2.1  [-r1_tarski(k2_pre_topc(1^[], k1_tops_1(1^[], 2^[])), k1_tops_1(1^[], k2_pre_topc(1^[], 2^[])))]   (5)  
+1.2.3.2.2  [-r1_tarski(k1_tops_1(1^[], k2_pre_topc(1^[], 2^[])), 2^[]), l1_pre_topc(1^[]), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[]))), v4_tops_1(2^[], 1^[])]   (10)  substitution:[[_G10514, _G10624], [1^[], 2^[]]]
+1.2.3.2.2.1  [-l1_pre_topc(1^[])]   (2)  
+1.2.3.2.2.2  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (3)  
+1.2.3.2.2.3  [-v4_tops_1(2^[], 1^[])]   (4)  
+------------------------------------------------------
+End of proof for t7_tdlat_3

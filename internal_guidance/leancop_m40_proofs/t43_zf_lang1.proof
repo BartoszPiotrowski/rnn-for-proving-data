@@ -1,0 +1,63 @@
+
+t43_zf_lang1 is a Theorem
+Start of proof for t43_zf_lang1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_zf_lang(1^[])]
+ (2)  [-m2_finseq_1(1^[], k5_numbers)]
+ (3)  [-v1_zf_lang(2^[])]
+ (4)  [-m2_finseq_1(2^[], k5_numbers)]
+ (5)  [-r3_zf_lang(1^[], 2^[])]
+ (6)  [-r3_zf_lang(2^[], 1^[])]
+ (7)  [m2_finseq_1(_G5659, k5_numbers), v1_zf_lang(_G5659), m2_finseq_1(_G5838, k5_numbers), v1_zf_lang(_G5838), r3_zf_lang(_G5659, _G5838), r2_zf_lang(_G5838, _G5659)]
+ (8)  [m2_finseq_1(_G5023, k5_numbers), v1_zf_lang(_G5023), m2_finseq_1(_G5208, k5_numbers), v1_zf_lang(_G5208), r3_zf_lang(_G5023, _G5208), -r2_zf_lang(_G5023, _G5208)]
+ (9)  [m2_finseq_1(_G5023, k5_numbers), v1_zf_lang(_G5023), m2_finseq_1(_G5208, k5_numbers), v1_zf_lang(_G5208), r3_zf_lang(_G5023, _G5208), _G5023=_G5208]
+ (10)  [m2_finseq_1(_G5023, k5_numbers), v1_zf_lang(_G5023), m2_finseq_1(_G5208, k5_numbers), v1_zf_lang(_G5208), -r3_zf_lang(_G5023, _G5208), r2_zf_lang(_G5023, _G5208), - (_G5023=_G5208)]
+ (11)  [- (_G2097=_G2097)]
+ (12)  [_G2196=_G2241, - (_G2241=_G2196)]
+ (13)  [- (_G2429=_G2542), _G2429=_G2485, _G2485=_G2542]
+ (14)  [-r2_zf_lang(_G2946, _G3083), r2_zf_lang(_G2879, _G3014), _G2879=_G2946, _G3014=_G3083]
+ (15)  [-v1_zf_lang(_G3525), _G3476=_G3525, v1_zf_lang(_G3476)]
+ (16)  [-m2_finseq_1(_G3821, _G3958), m2_finseq_1(_G3754, _G3889), _G3754=_G3821, _G3889=_G3958]
+ (17)  [-r3_zf_lang(_G4409, _G4546), r3_zf_lang(_G4342, _G4477), _G4342=_G4409, _G4477=_G4546]
+
+Connection Proof:
+-----------------
+1  [m2_finseq_1(1^[], k5_numbers), v1_zf_lang(1^[]), m2_finseq_1(1^[], k5_numbers), v1_zf_lang(1^[]), r3_zf_lang(1^[], 1^[]), r2_zf_lang(1^[], 1^[])]   (7)  substitution:[[_G5659, _G5838], [1^[], 1^[]]]
+1.1  [-m2_finseq_1(1^[], k5_numbers)]   (2)  
+1.2  [-v1_zf_lang(1^[])]   (1)  
+1.3  [-m2_finseq_1(1^[], k5_numbers)]   (2)  
+1.4  [-v1_zf_lang(1^[])]   (1)  
+1.5  [-r3_zf_lang(1^[], 1^[]), r3_zf_lang(1^[], 2^[]), 1^[]=1^[], 2^[]=1^[]]   (17)  substitution:[[_G4409, _G4546, _G4342, _G4477], [1^[], 1^[], 1^[], 2^[]]]
+1.5.1  [-r3_zf_lang(1^[], 2^[])]   (5)  
+1.5.2  [- (1^[]=1^[])]   (11)  substitution:[[_G2097], [1^[]]]
+1.5.3  [- (2^[]=1^[]), m2_finseq_1(2^[], k5_numbers), v1_zf_lang(2^[]), m2_finseq_1(1^[], k5_numbers), v1_zf_lang(1^[]), -r3_zf_lang(2^[], 1^[]), r2_zf_lang(2^[], 1^[])]   (10)  substitution:[[_G5023, _G5208], [2^[], 1^[]]]
+1.5.3.1  [-m2_finseq_1(2^[], k5_numbers)]   (4)  
+1.5.3.2  [-v1_zf_lang(2^[])]   (3)  
+1.5.3.3  [-m2_finseq_1(1^[], k5_numbers)]   (2)  
+1.5.3.4  [-v1_zf_lang(1^[])]   (1)  
+1.5.3.5  [r3_zf_lang(2^[], 1^[]), m2_finseq_1(2^[], k5_numbers), v1_zf_lang(2^[]), m2_finseq_1(1^[], k5_numbers), v1_zf_lang(1^[]), r2_zf_lang(1^[], 2^[])]   (7)  substitution:[[_G5659, _G5838], [2^[], 1^[]]]
+1.5.3.5.1  [-m2_finseq_1(2^[], k5_numbers)]   (4)  
+1.5.3.5.2  [-v1_zf_lang(2^[])]   (3)  
+1.5.3.5.3  [-m2_finseq_1(1^[], k5_numbers)]   (2)  
+1.5.3.5.4  [-v1_zf_lang(1^[])]   (1)  
+1.5.3.5.5  [-r2_zf_lang(1^[], 2^[]), m2_finseq_1(1^[], k5_numbers), v1_zf_lang(1^[]), m2_finseq_1(2^[], k5_numbers), v1_zf_lang(2^[]), r3_zf_lang(1^[], 2^[])]   (8)  substitution:[[_G5023, _G5208], [1^[], 2^[]]]
+1.5.3.5.5.1  [-m2_finseq_1(1^[], k5_numbers)]   (2)  
+1.5.3.5.5.2  [-v1_zf_lang(1^[])]   (1)  
+1.5.3.5.5.3  [-m2_finseq_1(2^[], k5_numbers)]   (4)  
+1.5.3.5.5.4  [-v1_zf_lang(2^[])]   (3)  
+1.5.3.5.5.5  [-r3_zf_lang(1^[], 2^[])]   (5)  
+1.5.3.6  [-r2_zf_lang(2^[], 1^[]), m2_finseq_1(2^[], k5_numbers), v1_zf_lang(2^[]), m2_finseq_1(1^[], k5_numbers), v1_zf_lang(1^[]), r3_zf_lang(2^[], 1^[])]   (8)  substitution:[[_G5023, _G5208], [2^[], 1^[]]]
+1.5.3.6.1  [-m2_finseq_1(2^[], k5_numbers)]   (4)  
+1.5.3.6.2  [-v1_zf_lang(2^[])]   (3)  
+1.5.3.6.3  [-m2_finseq_1(1^[], k5_numbers)]   (2)  
+1.5.3.6.4  [-v1_zf_lang(1^[])]   (1)  
+1.5.3.6.5  [-r3_zf_lang(2^[], 1^[])]   (6)  
+1.6  [-r2_zf_lang(1^[], 1^[]), m2_finseq_1(1^[], k5_numbers), v1_zf_lang(1^[]), m2_finseq_1(1^[], k5_numbers), v1_zf_lang(1^[]), r3_zf_lang(1^[], 1^[])]   (8)  substitution:[[_G5023, _G5208], [1^[], 1^[]]]
+1.6.1  [-m2_finseq_1(1^[], k5_numbers)]   (2)  
+1.6.2  [-v1_zf_lang(1^[])]   (1)  
+1.6.3  [-m2_finseq_1(1^[], k5_numbers)]   (2)  
+1.6.4  [-v1_zf_lang(1^[])]   (1)  
+1.6.5  [-r3_zf_lang(1^[], 1^[])]   (lemmata:1)  
+------------------------------------------------------
+End of proof for t43_zf_lang1

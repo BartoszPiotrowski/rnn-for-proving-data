@@ -1,0 +1,45 @@
+
+t3_margrel1 is a Theorem
+Start of proof for t3_margrel1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v3_finseq_1(3^[])]
+ (2)  [-v2_card_3(3^[])]
+ (3)  [3^[]=k1_xboole_0]
+ (4)  [r2_hidden(_G7544, 3^[]), v1_relat_1(_G7544), v1_funct_1(_G7544), v1_finseq_1(_G7544)]
+ (5)  [v1_xboole_0(_G5896), - (_G5896=k1_xboole_0)]
+ (6)  [v1_xboole_0(_G5677), r2_hidden(_G5755, _G5677)]
+ (7)  [-v1_xboole_0(_G5677), -r2_hidden(2^[_G5677], _G5677)]
+ (8)  [v3_finseq_1(_G5278), r2_hidden(_G5369, _G5278), -v1_relat_1(_G5369)]
+ (9)  [v3_finseq_1(_G5278), r2_hidden(_G5369, _G5278), -v1_funct_1(_G5369)]
+ (10)  [v3_finseq_1(_G5278), r2_hidden(_G5369, _G5278), -v1_finseq_1(_G5369)]
+ (11)  [-v3_finseq_1(_G5278), -r2_hidden(1^[_G5278], _G5278)]
+ (12)  [-v3_finseq_1(_G5278), v1_relat_1(1^[_G5278]), v1_funct_1(1^[_G5278]), v1_finseq_1(1^[_G5278])]
+ (13)  [- (_G2093=_G2093)]
+ (14)  [_G2192=_G2237, - (_G2237=_G2192)]
+ (15)  [- (_G2425=_G2538), _G2425=_G2481, _G2481=_G2538]
+ (16)  [-v1_xboole_0(_G2924), _G2875=_G2924, v1_xboole_0(_G2875)]
+ (17)  [-v3_finseq_1(_G3202), _G3153=_G3202, v3_finseq_1(_G3153)]
+ (18)  [-v2_card_3(_G3480), _G3431=_G3480, v2_card_3(_G3431)]
+ (19)  [-v1_relat_1(_G3758), _G3709=_G3758, v1_relat_1(_G3709)]
+ (20)  [-v1_funct_1(_G4036), _G3987=_G4036, v1_funct_1(_G3987)]
+ (21)  [-v1_finseq_1(_G4314), _G4265=_G4314, v1_finseq_1(_G4265)]
+ (22)  [-r2_hidden(_G4601, _G4738), r2_hidden(_G4534, _G4669), _G4534=_G4601, _G4669=_G4738]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(2^[3^[]], 3^[]), v1_relat_1(2^[3^[]]), v1_funct_1(2^[3^[]]), v1_finseq_1(2^[3^[]])]   (4)  substitution:[[_G7544], [2^[3^[]]]]
+1.1  [-r2_hidden(2^[3^[]], 3^[]), -v1_xboole_0(3^[])]   (7)  substitution:[[_G5677], [3^[]]]
+1.1.1  [v1_xboole_0(3^[]), - (3^[]=k1_xboole_0)]   (5)  substitution:[[_G5896], [3^[]]]
+1.1.1.1  [3^[]=k1_xboole_0]   (3)  
+1.2  [-v1_relat_1(2^[3^[]]), v3_finseq_1(3^[]), r2_hidden(2^[3^[]], 3^[])]   (8)  substitution:[[_G5369, _G5278], [2^[3^[]], 3^[]]]
+1.2.1  [-v3_finseq_1(3^[])]   (1)  
+1.2.2  [-r2_hidden(2^[3^[]], 3^[])]   (lemmata:1)  
+1.3  [-v1_funct_1(2^[3^[]]), v3_finseq_1(3^[]), r2_hidden(2^[3^[]], 3^[])]   (9)  substitution:[[_G5369, _G5278], [2^[3^[]], 3^[]]]
+1.3.1  [-v3_finseq_1(3^[])]   (1)  
+1.3.2  [-r2_hidden(2^[3^[]], 3^[])]   (lemmata:1)  
+1.4  [-v1_finseq_1(2^[3^[]]), v3_finseq_1(3^[]), r2_hidden(2^[3^[]], 3^[])]   (10)  substitution:[[_G5369, _G5278], [2^[3^[]], 3^[]]]
+1.4.1  [-v3_finseq_1(3^[])]   (1)  
+1.4.2  [-r2_hidden(2^[3^[]], 3^[])]   (lemmata:1)  
+------------------------------------------------------
+End of proof for t3_margrel1

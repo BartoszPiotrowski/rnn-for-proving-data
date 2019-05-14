@@ -1,0 +1,45 @@
+
+l20_scmring3 is a Theorem
+Start of proof for l20_scmring3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-r2_hidden(2^[], k9_xtuple_0(k9_finseq_1(3^[])))]
+ (2)  [2^[]=np__1]
+ (3)  [-v1_relat_1(k9_finseq_1(_G7859))]
+ (4)  [-v1_funct_1(k9_finseq_1(_G7859))]
+ (5)  [- (k2_finseq_1(np__1)=k1_tarski(np__1))]
+ (6)  [- (k2_finseq_1(np__2)=k2_tarski(np__1, np__2))]
+ (7)  [v1_funct_1(_G7374), v1_relat_1(_G7374), _G7374=k9_finseq_1(_G7306), - (k9_xtuple_0(_G7374)=k2_finseq_1(np__1))]
+ (8)  [v1_funct_1(_G7374), v1_relat_1(_G7374), _G7374=k9_finseq_1(_G7306), - (k1_funct_1(_G7374, np__1)=_G7306)]
+ (9)  [v1_funct_1(_G7374), v1_relat_1(_G7374), - (_G7374=k9_finseq_1(_G7306)), k9_xtuple_0(_G7374)=k2_finseq_1(np__1), k1_funct_1(_G7374, np__1)=_G7306]
+ (10)  [_G6944=k1_tarski(_G6886), r2_hidden(_G7074, _G6944), - (_G7074=_G6886)]
+ (11)  [_G6944=k1_tarski(_G6886), -r2_hidden(_G7074, _G6944), _G7074=_G6886]
+ (12)  [- (_G6944=k1_tarski(_G6886)), r2_hidden(1^[_G6944, _G6886], _G6944), 1^[_G6944, _G6886]=_G6886]
+ (13)  [- (_G6944=k1_tarski(_G6886)), -r2_hidden(1^[_G6944, _G6886], _G6944), - (1^[_G6944, _G6886]=_G6886)]
+ (14)  [- (k1_funct_1(_G4463, _G4598)=k1_funct_1(_G4530, _G4667)), _G4463=_G4530, _G4598=_G4667]
+ (15)  [_G5060=_G5109, - (k1_tarski(_G5060)=k1_tarski(_G5109))]
+ (16)  [_G5338=_G5387, - (k2_finseq_1(_G5338)=k2_finseq_1(_G5387))]
+ (17)  [- (k2_tarski(_G5616, _G5751)=k2_tarski(_G5683, _G5820)), _G5616=_G5683, _G5751=_G5820]
+ (18)  [_G6213=_G6262, - (k9_xtuple_0(_G6213)=k9_xtuple_0(_G6262))]
+ (19)  [_G6482=_G6531, - (k9_finseq_1(_G6482)=k9_finseq_1(_G6531))]
+ (20)  [- (_G2474=_G2474)]
+ (21)  [_G2573=_G2618, - (_G2618=_G2573)]
+ (22)  [- (_G2806=_G2919), _G2806=_G2862, _G2862=_G2919]
+ (23)  [-v1_relat_1(_G3305), _G3256=_G3305, v1_relat_1(_G3256)]
+ (24)  [-v1_funct_1(_G3583), _G3534=_G3583, v1_funct_1(_G3534)]
+ (25)  [-r2_hidden(_G3870, _G4007), r2_hidden(_G3803, _G3938), _G3803=_G3870, _G3938=_G4007]
+
+Connection Proof:
+-----------------
+1  [2^[]=np__1]   (2)  
+1.1  [- (2^[]=np__1), k2_finseq_1(np__1)=k1_tarski(np__1), r2_hidden(2^[], k2_finseq_1(np__1))]   (10)  substitution:[[_G7074, _G6886, _G6944], [2^[], np__1, k2_finseq_1(np__1)]]
+1.1.1  [- (k2_finseq_1(np__1)=k1_tarski(np__1))]   (5)  
+1.1.2  [-r2_hidden(2^[], k2_finseq_1(np__1)), r2_hidden(2^[], k9_xtuple_0(k9_finseq_1(3^[]))), 2^[]=2^[], k9_xtuple_0(k9_finseq_1(3^[]))=k2_finseq_1(np__1)]   (25)  substitution:[[_G3870, _G4007, _G3803, _G3938], [2^[], k2_finseq_1(np__1), 2^[], k9_xtuple_0(k9_finseq_1(3^[]))]]
+1.1.2.1  [-r2_hidden(2^[], k9_xtuple_0(k9_finseq_1(3^[])))]   (1)  
+1.1.2.2  [- (2^[]=2^[])]   (20)  substitution:[[_G2474], [2^[]]]
+1.1.2.3  [- (k9_xtuple_0(k9_finseq_1(3^[]))=k2_finseq_1(np__1)), v1_funct_1(k9_finseq_1(3^[])), v1_relat_1(k9_finseq_1(3^[])), k9_finseq_1(3^[])=k9_finseq_1(3^[])]   (7)  substitution:[[_G7374, _G7306], [k9_finseq_1(3^[]), 3^[]]]
+1.1.2.3.1  [-v1_funct_1(k9_finseq_1(3^[]))]   (4)  substitution:[[_G7859], [3^[]]]
+1.1.2.3.2  [-v1_relat_1(k9_finseq_1(3^[]))]   (3)  substitution:[[_G7859], [3^[]]]
+1.1.2.3.3  [- (k9_finseq_1(3^[])=k9_finseq_1(3^[]))]   (20)  substitution:[[_G2474], [k9_finseq_1(3^[])]]
+------------------------------------------------------
+End of proof for l20_scmring3

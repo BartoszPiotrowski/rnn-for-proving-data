@@ -1,0 +1,31 @@
+
+t33_topgen_4 is a Theorem
+Start of proof for t33_topgen_4
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [1^[]=k1_xboole_0]
+ (2)  [2^[]=k1_xboole_0]
+ (3)  [k1_setfam_1(k2_setfam_1(1^[], 2^[]))=k2_xboole_0(k1_setfam_1(1^[]), k1_setfam_1(2^[]))]
+ (4)  [-r1_tarski(k1_setfam_1(k2_setfam_1(_G6007, _G6058)), k2_xboole_0(k1_setfam_1(_G6007), k1_setfam_1(_G6058)))]
+ (5)  [- (_G5468=k1_xboole_0), - (_G5539=k1_xboole_0), -r1_tarski(k2_xboole_0(k1_setfam_1(_G5468), k1_setfam_1(_G5539)), k1_setfam_1(k2_setfam_1(_G5468, _G5539)))]
+ (6)  [_G5136=_G5187, -r1_tarski(_G5136, _G5187)]
+ (7)  [_G5136=_G5187, -r1_tarski(_G5187, _G5136)]
+ (8)  [- (_G5136=_G5187), r1_tarski(_G5136, _G5187), r1_tarski(_G5187, _G5136)]
+ (9)  [- (k2_setfam_1(_G3610, _G3745)=k2_setfam_1(_G3677, _G3814)), _G3610=_G3677, _G3745=_G3814]
+ (10)  [_G4795=_G4844, - (k1_setfam_1(_G4795)=k1_setfam_1(_G4844))]
+ (11)  [- (k2_xboole_0(_G4207, _G4342)=k2_xboole_0(_G4274, _G4411)), _G4207=_G4274, _G4342=_G4411]
+ (12)  [-r1_tarski(_G3059, _G3196), r1_tarski(_G2992, _G3127), _G2992=_G3059, _G3127=_G3196]
+ (13)  [- (_G2219=_G2219)]
+ (14)  [_G2318=_G2363, - (_G2363=_G2318)]
+ (15)  [- (_G2551=_G2664), _G2551=_G2607, _G2607=_G2664]
+
+Connection Proof:
+-----------------
+1  [k1_setfam_1(k2_setfam_1(1^[], 2^[]))=k2_xboole_0(k1_setfam_1(1^[]), k1_setfam_1(2^[]))]   (3)  
+1.1  [- (k1_setfam_1(k2_setfam_1(1^[], 2^[]))=k2_xboole_0(k1_setfam_1(1^[]), k1_setfam_1(2^[]))), r1_tarski(k1_setfam_1(k2_setfam_1(1^[], 2^[])), k2_xboole_0(k1_setfam_1(1^[]), k1_setfam_1(2^[]))), r1_tarski(k2_xboole_0(k1_setfam_1(1^[]), k1_setfam_1(2^[])), k1_setfam_1(k2_setfam_1(1^[], 2^[])))]   (8)  substitution:[[_G5136, _G5187], [k1_setfam_1(k2_setfam_1(1^[], 2^[])), k2_xboole_0(k1_setfam_1(1^[]), k1_setfam_1(2^[]))]]
+1.1.1  [-r1_tarski(k1_setfam_1(k2_setfam_1(1^[], 2^[])), k2_xboole_0(k1_setfam_1(1^[]), k1_setfam_1(2^[])))]   (4)  substitution:[[_G6007, _G6058], [1^[], 2^[]]]
+1.1.2  [-r1_tarski(k2_xboole_0(k1_setfam_1(1^[]), k1_setfam_1(2^[])), k1_setfam_1(k2_setfam_1(1^[], 2^[]))), - (1^[]=k1_xboole_0), - (2^[]=k1_xboole_0)]   (5)  substitution:[[_G5468, _G5539], [1^[], 2^[]]]
+1.1.2.1  [1^[]=k1_xboole_0]   (1)  
+1.1.2.2  [2^[]=k1_xboole_0]   (2)  
+------------------------------------------------------
+End of proof for t33_topgen_4

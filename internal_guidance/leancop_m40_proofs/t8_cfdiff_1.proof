@@ -1,0 +1,37 @@
+
+t8_cfdiff_1 is a Theorem
+Start of proof for t8_cfdiff_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_funct_1(2^[])]
+ (2)  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k2_numbers, k2_numbers)))]
+ (3)  [-r2_cfdiff_1(2^[], 1^[])]
+ (4)  [m1_subset_1(1^[], k1_zfmisc_1(k2_numbers))]
+ (5)  [m1_subset_1(_G1414, k1_zfmisc_1(k2_zfmisc_1(_G1305, _G1359))), -v1_relat_1(_G1414)]
+ (6)  [m1_subset_1(_G1780, k1_zfmisc_1(k2_zfmisc_1(_G1657, _G1718))), -v4_relat_1(_G1780, _G1657)]
+ (7)  [m1_subset_1(_G1780, k1_zfmisc_1(k2_zfmisc_1(_G1657, _G1718))), -v5_relat_1(_G1780, _G1718)]
+ (8)  [m1_subset_1(_G2133, k1_zfmisc_1(k2_zfmisc_1(k2_numbers, k2_numbers))), v1_funct_1(_G2133), r2_cfdiff_1(_G2133, _G2365), -r1_tarski(_G2365, k1_relset_1(k2_numbers, _G2133))]
+ (9)  [m1_subset_1(_G2133, k1_zfmisc_1(k2_zfmisc_1(k2_numbers, k2_numbers))), v1_funct_1(_G2133), r2_cfdiff_1(_G2133, _G2365), -v4_cfdiff_1(k5_relset_1(k2_numbers, k2_numbers, _G2133, _G2365))]
+ (10)  [m1_subset_1(_G2133, k1_zfmisc_1(k2_zfmisc_1(k2_numbers, k2_numbers))), v1_funct_1(_G2133), -r2_cfdiff_1(_G2133, _G2365), r1_tarski(_G2365, k1_relset_1(k2_numbers, _G2133)), v4_cfdiff_1(k5_relset_1(k2_numbers, k2_numbers, _G2133, _G2365))]
+ (11)  [-m1_subset_1(k1_relset_1(_G2813, _G2868), k1_zfmisc_1(_G2813)), v1_relat_1(_G2868), v4_relat_1(_G2868, _G2813)]
+ (12)  [-r1_tarski(_G3181, _G3294), r1_tarski(_G3181, _G3237), r1_tarski(_G3237, _G3294)]
+ (13)  [m1_subset_1(_G3580, k1_zfmisc_1(_G3627)), -r1_tarski(_G3580, _G3627)]
+ (14)  [-m1_subset_1(_G3580, k1_zfmisc_1(_G3627)), r1_tarski(_G3580, _G3627)]
+
+Connection Proof:
+-----------------
+1  [m1_subset_1(1^[], k1_zfmisc_1(k2_numbers))]   (4)  
+1.1  [-m1_subset_1(1^[], k1_zfmisc_1(k2_numbers)), r1_tarski(1^[], k2_numbers)]   (14)  substitution:[[_G3580, _G3627], [1^[], k2_numbers]]
+1.1.1  [-r1_tarski(1^[], k2_numbers), r1_tarski(1^[], k1_relset_1(k2_numbers, 2^[])), r1_tarski(k1_relset_1(k2_numbers, 2^[]), k2_numbers)]   (12)  substitution:[[_G3181, _G3294, _G3237], [1^[], k2_numbers, k1_relset_1(k2_numbers, 2^[])]]
+1.1.1.1  [-r1_tarski(1^[], k1_relset_1(k2_numbers, 2^[])), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k2_numbers, k2_numbers))), v1_funct_1(2^[]), r2_cfdiff_1(2^[], 1^[])]   (8)  substitution:[[_G2365, _G2133], [1^[], 2^[]]]
+1.1.1.1.1  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k2_numbers, k2_numbers)))]   (2)  
+1.1.1.1.2  [-v1_funct_1(2^[])]   (1)  
+1.1.1.1.3  [-r2_cfdiff_1(2^[], 1^[])]   (3)  
+1.1.1.2  [-r1_tarski(k1_relset_1(k2_numbers, 2^[]), k2_numbers), m1_subset_1(k1_relset_1(k2_numbers, 2^[]), k1_zfmisc_1(k2_numbers))]   (13)  substitution:[[_G3580, _G3627], [k1_relset_1(k2_numbers, 2^[]), k2_numbers]]
+1.1.1.2.1  [-m1_subset_1(k1_relset_1(k2_numbers, 2^[]), k1_zfmisc_1(k2_numbers)), v1_relat_1(2^[]), v4_relat_1(2^[], k2_numbers)]   (11)  substitution:[[_G2813, _G2868], [k2_numbers, 2^[]]]
+1.1.1.2.1.1  [-v1_relat_1(2^[]), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k2_numbers, k2_numbers)))]   (5)  substitution:[[_G1414, _G1305, _G1359], [2^[], k2_numbers, k2_numbers]]
+1.1.1.2.1.1.1  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k2_numbers, k2_numbers)))]   (2)  
+1.1.1.2.1.2  [-v4_relat_1(2^[], k2_numbers), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k2_numbers, k2_numbers)))]   (6)  substitution:[[_G1780, _G1657, _G1718], [2^[], k2_numbers, k2_numbers]]
+1.1.1.2.1.2.1  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k2_numbers, k2_numbers)))]   (2)  
+------------------------------------------------------
+End of proof for t8_cfdiff_1

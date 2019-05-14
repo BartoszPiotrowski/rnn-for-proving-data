@@ -1,0 +1,33 @@
+
+t18_euclid_3 is a Theorem
+Start of proof for t18_euclid_3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], u1_struct_0(k15_euclid(np__2)))]
+ (2)  [- (k2_euclid_3(1^[])=k5_complex1)]
+ (3)  [1^[]=k4_struct_0(k15_euclid(np__2))]
+ (4)  [- (k1_euclid_3(k5_complex1)=k4_struct_0(k15_euclid(np__2)))]
+ (5)  [m1_subset_1(_G4515, u1_struct_0(k15_euclid(np__2))), - (k1_euclid_3(k2_euclid_3(_G4515))=_G4515)]
+ (6)  [-m1_subset_1(_G2388, _G2525), m1_subset_1(_G2321, _G2456), _G2321=_G2388, _G2456=_G2525]
+ (7)  [- (_G1548=_G1548)]
+ (8)  [_G1647=_G1692, - (_G1692=_G1647)]
+ (9)  [- (_G1880=_G1993), _G1880=_G1936, _G1936=_G1993]
+ (10)  [_G2939=_G2988, - (k1_euclid_3(_G2939)=k1_euclid_3(_G2988))]
+ (11)  [_G3217=_G3266, - (u1_struct_0(_G3217)=u1_struct_0(_G3266))]
+ (12)  [_G3495=_G3544, - (k2_euclid_3(_G3495)=k2_euclid_3(_G3544))]
+ (13)  [_G3773=_G3822, - (k4_struct_0(_G3773)=k4_struct_0(_G3822))]
+ (14)  [_G4042=_G4091, - (k15_euclid(_G4042)=k15_euclid(_G4091))]
+
+Connection Proof:
+-----------------
+1  [1^[]=k4_struct_0(k15_euclid(np__2))]   (3)  
+1.1  [- (1^[]=k4_struct_0(k15_euclid(np__2))), 1^[]=k1_euclid_3(k2_euclid_3(1^[])), k1_euclid_3(k2_euclid_3(1^[]))=k4_struct_0(k15_euclid(np__2))]   (9)  substitution:[[_G1880, _G1993, _G1936], [1^[], k4_struct_0(k15_euclid(np__2)), k1_euclid_3(k2_euclid_3(1^[]))]]
+1.1.1  [- (1^[]=k1_euclid_3(k2_euclid_3(1^[]))), k1_euclid_3(k2_euclid_3(1^[]))=1^[]]   (8)  substitution:[[_G1692, _G1647], [1^[], k1_euclid_3(k2_euclid_3(1^[]))]]
+1.1.1.1  [- (k1_euclid_3(k2_euclid_3(1^[]))=1^[]), m1_subset_1(1^[], u1_struct_0(k15_euclid(np__2)))]   (5)  substitution:[[_G4515], [1^[]]]
+1.1.1.1.1  [-m1_subset_1(1^[], u1_struct_0(k15_euclid(np__2)))]   (1)  
+1.1.2  [- (k1_euclid_3(k2_euclid_3(1^[]))=k4_struct_0(k15_euclid(np__2))), k1_euclid_3(k2_euclid_3(1^[]))=k1_euclid_3(k5_complex1), k1_euclid_3(k5_complex1)=k4_struct_0(k15_euclid(np__2))]   (9)  substitution:[[_G1880, _G1993, _G1936], [k1_euclid_3(k2_euclid_3(1^[])), k4_struct_0(k15_euclid(np__2)), k1_euclid_3(k5_complex1)]]
+1.1.2.1  [- (k1_euclid_3(k2_euclid_3(1^[]))=k1_euclid_3(k5_complex1)), k2_euclid_3(1^[])=k5_complex1]   (10)  substitution:[[_G2939, _G2988], [k2_euclid_3(1^[]), k5_complex1]]
+1.1.2.1.1  [- (k2_euclid_3(1^[])=k5_complex1)]   (2)  
+1.1.2.2  [- (k1_euclid_3(k5_complex1)=k4_struct_0(k15_euclid(np__2)))]   (4)  
+------------------------------------------------------
+End of proof for t18_euclid_3

@@ -1,0 +1,41 @@
+
+t7_hilbert3 is a Theorem
+Start of proof for t7_hilbert3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k1_funct_1(k1_xboole_0, 1^[])=k1_xboole_0]
+ (2)  [v1_xboole_0(_G4657), -v1_funct_1(_G4657)]
+ (3)  [v1_xboole_0(_G4788), -v1_relat_1(_G4788)]
+ (4)  [-v3_relat_1(_G4919), v1_xboole_0(_G4919), v1_relat_1(_G4919)]
+ (5)  [- (k1_xboole_0=o_0_0_xboole_0)]
+ (6)  [-v1_xboole_0(o_0_0_xboole_0)]
+ (7)  [v1_xboole_0(_G5605), - (_G5605=k1_xboole_0)]
+ (8)  [-v1_xboole_0(k1_funct_1(_G5255, _G5311)), v1_relat_1(_G5255), v3_relat_1(_G5255), v1_funct_1(_G5255)]
+ (9)  [- (k1_funct_1(_G4039, _G4174)=k1_funct_1(_G4106, _G4243)), _G4039=_G4106, _G4174=_G4243]
+ (10)  [- (_G2079=_G2079)]
+ (11)  [_G2178=_G2223, - (_G2223=_G2178)]
+ (12)  [- (_G2411=_G2524), _G2411=_G2467, _G2467=_G2524]
+ (13)  [-v1_relat_1(_G2910), _G2861=_G2910, v1_relat_1(_G2861)]
+ (14)  [-v3_relat_1(_G3188), _G3139=_G3188, v3_relat_1(_G3139)]
+ (15)  [-v1_funct_1(_G3466), _G3417=_G3466, v1_funct_1(_G3417)]
+ (16)  [-v1_xboole_0(_G3735), _G3686=_G3735, v1_xboole_0(_G3686)]
+
+Connection Proof:
+-----------------
+1  [k1_funct_1(k1_xboole_0, 1^[])=k1_xboole_0]   (1)  
+1.1  [- (k1_funct_1(k1_xboole_0, 1^[])=k1_xboole_0), v1_xboole_0(k1_funct_1(k1_xboole_0, 1^[]))]   (7)  substitution:[[_G5605], [k1_funct_1(k1_xboole_0, 1^[])]]
+1.1.1  [-v1_xboole_0(k1_funct_1(k1_xboole_0, 1^[])), k1_funct_1(o_0_0_xboole_0, 1^[])=k1_funct_1(k1_xboole_0, 1^[]), v1_xboole_0(k1_funct_1(o_0_0_xboole_0, 1^[]))]   (16)  substitution:[[_G3735, _G3686], [k1_funct_1(k1_xboole_0, 1^[]), k1_funct_1(o_0_0_xboole_0, 1^[])]]
+1.1.1.1  [- (k1_funct_1(o_0_0_xboole_0, 1^[])=k1_funct_1(k1_xboole_0, 1^[])), o_0_0_xboole_0=k1_xboole_0, 1^[]=1^[]]   (9)  substitution:[[_G4039, _G4174, _G4106, _G4243], [o_0_0_xboole_0, 1^[], k1_xboole_0, 1^[]]]
+1.1.1.1.1  [- (o_0_0_xboole_0=k1_xboole_0), v1_xboole_0(o_0_0_xboole_0)]   (7)  substitution:[[_G5605], [o_0_0_xboole_0]]
+1.1.1.1.1.1  [-v1_xboole_0(o_0_0_xboole_0)]   (6)  
+1.1.1.1.2  [- (1^[]=1^[])]   (10)  substitution:[[_G2079], [1^[]]]
+1.1.1.2  [-v1_xboole_0(k1_funct_1(o_0_0_xboole_0, 1^[])), v1_relat_1(o_0_0_xboole_0), v3_relat_1(o_0_0_xboole_0), v1_funct_1(o_0_0_xboole_0)]   (8)  substitution:[[_G5255, _G5311], [o_0_0_xboole_0, 1^[]]]
+1.1.1.2.1  [-v1_relat_1(o_0_0_xboole_0), v1_xboole_0(o_0_0_xboole_0)]   (3)  substitution:[[_G4788], [o_0_0_xboole_0]]
+1.1.1.2.1.1  [-v1_xboole_0(o_0_0_xboole_0)]   (6)  
+1.1.1.2.2  [-v3_relat_1(o_0_0_xboole_0), v1_xboole_0(o_0_0_xboole_0), v1_relat_1(o_0_0_xboole_0)]   (4)  substitution:[[_G4919], [o_0_0_xboole_0]]
+1.1.1.2.2.1  [-v1_xboole_0(o_0_0_xboole_0)]   (6)  
+1.1.1.2.2.2  [-v1_relat_1(o_0_0_xboole_0)]   (lemmata:1.1.1.2)  
+1.1.1.2.3  [-v1_funct_1(o_0_0_xboole_0), v1_xboole_0(o_0_0_xboole_0)]   (2)  substitution:[[_G4657], [o_0_0_xboole_0]]
+1.1.1.2.3.1  [-v1_xboole_0(o_0_0_xboole_0)]   (6)  
+------------------------------------------------------
+End of proof for t7_hilbert3

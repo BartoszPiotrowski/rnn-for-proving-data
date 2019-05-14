@@ -1,0 +1,32 @@
+
+t2_mssubfam is a Theorem
+Start of proof for t2_mssubfam
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(5^[], k1_zfmisc_1(k1_zfmisc_1(3^[])))]
+ (2)  [-r2_hidden(4^[], 5^[])]
+ (3)  [r1_tarski(k8_setfam_1(3^[], 5^[]), 4^[])]
+ (4)  [-r1_tarski(_G1120, _G1176), -r2_hidden(1^[_G1176, _G1120], _G1120)]
+ (5)  [-r1_tarski(_G1120, _G1176), r2_hidden(1^[_G1176, _G1120], _G1176)]
+ (6)  [r1_tarski(_G1120, _G1176), r2_hidden(_G1290, _G1120), -r2_hidden(_G1290, _G1176)]
+ (7)  [m1_subset_1(_G1576, k1_zfmisc_1(k1_zfmisc_1(_G1522))), -m1_subset_1(k8_setfam_1(_G1522, _G1576), k1_zfmisc_1(_G1522))]
+ (8)  [m1_subset_1(_G1921, k1_zfmisc_1(_G1863)), r2_hidden(_G2051, _G1921), -r2_hidden(_G2051, _G1863)]
+ (9)  [m1_subset_1(_G2435, k1_zfmisc_1(k1_zfmisc_1(_G2274))), r2_hidden(_G2354, _G2274), -r2_hidden(_G2354, k8_setfam_1(_G2274, _G2435)), -r2_hidden(2^[_G2435, _G2354, _G2274], _G2435)]
+ (10)  [m1_subset_1(_G2435, k1_zfmisc_1(k1_zfmisc_1(_G2274))), r2_hidden(_G2354, _G2274), -r2_hidden(_G2354, k8_setfam_1(_G2274, _G2435)), r2_hidden(_G2354, 2^[_G2435, _G2354, _G2274])]
+ (11)  [m1_subset_1(_G2435, k1_zfmisc_1(k1_zfmisc_1(_G2274))), r2_hidden(_G2354, _G2274), r2_hidden(_G2354, k8_setfam_1(_G2274, _G2435)), r2_hidden(_G2755, _G2435), -r2_hidden(_G2354, _G2755)]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k8_setfam_1(3^[], 5^[]), 4^[])]   (3)  
+1.1  [-r1_tarski(k8_setfam_1(3^[], 5^[]), 4^[]), -r2_hidden(1^[4^[], k8_setfam_1(3^[], 5^[])], k8_setfam_1(3^[], 5^[]))]   (4)  substitution:[[_G1120, _G1176], [k8_setfam_1(3^[], 5^[]), 4^[]]]
+1.1.1  [r2_hidden(1^[4^[], k8_setfam_1(3^[], 5^[])], k8_setfam_1(3^[], 5^[])), m1_subset_1(k8_setfam_1(3^[], 5^[]), k1_zfmisc_1(3^[])), -r2_hidden(1^[4^[], k8_setfam_1(3^[], 5^[])], 3^[])]   (8)  substitution:[[_G2051, _G1921, _G1863], [1^[4^[], k8_setfam_1(3^[], 5^[])], k8_setfam_1(3^[], 5^[]), 3^[]]]
+1.1.1.1  [-m1_subset_1(k8_setfam_1(3^[], 5^[]), k1_zfmisc_1(3^[])), m1_subset_1(5^[], k1_zfmisc_1(k1_zfmisc_1(3^[])))]   (7)  substitution:[[_G1522, _G1576], [3^[], 5^[]]]
+1.1.1.1.1  [-m1_subset_1(5^[], k1_zfmisc_1(k1_zfmisc_1(3^[])))]   (1)  
+1.1.1.2  [r2_hidden(1^[4^[], k8_setfam_1(3^[], 5^[])], 3^[]), m1_subset_1(5^[], k1_zfmisc_1(k1_zfmisc_1(3^[]))), r2_hidden(1^[4^[], k8_setfam_1(3^[], 5^[])], k8_setfam_1(3^[], 5^[])), r2_hidden(4^[], 5^[]), -r2_hidden(1^[4^[], k8_setfam_1(3^[], 5^[])], 4^[])]   (11)  substitution:[[_G2354, _G2274, _G2435, _G2755], [1^[4^[], k8_setfam_1(3^[], 5^[])], 3^[], 5^[], 4^[]]]
+1.1.1.2.1  [-m1_subset_1(5^[], k1_zfmisc_1(k1_zfmisc_1(3^[])))]   (1)  
+1.1.1.2.2  [-r2_hidden(1^[4^[], k8_setfam_1(3^[], 5^[])], k8_setfam_1(3^[], 5^[]))]   (reduction:1.1)  
+1.1.1.2.3  [-r2_hidden(4^[], 5^[])]   (2)  
+1.1.1.2.4  [r2_hidden(1^[4^[], k8_setfam_1(3^[], 5^[])], 4^[]), -r1_tarski(k8_setfam_1(3^[], 5^[]), 4^[])]   (5)  substitution:[[_G1176, _G1120], [4^[], k8_setfam_1(3^[], 5^[])]]
+1.1.1.2.4.1  [r1_tarski(k8_setfam_1(3^[], 5^[]), 4^[])]   (3)  
+------------------------------------------------------
+End of proof for t2_mssubfam

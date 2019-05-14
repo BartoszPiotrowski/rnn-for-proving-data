@@ -1,0 +1,52 @@
+
+t3_classes1 is a Theorem
+Start of proof for t3_classes1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-r2_hidden(6^[], k1_classes1(7^[]))]
+ (2)  [-r1_tarski(8^[], 6^[])]
+ (3)  [r2_hidden(8^[], k1_classes1(7^[]))]
+ (4)  [-v1_classes1(_G7325), -r2_hidden(1^[_G7325], _G7325)]
+ (5)  [-v1_classes1(_G7325), -r1_tarski(2^[_G7325], 1^[_G7325])]
+ (6)  [-v1_classes1(_G7325), r2_hidden(2^[_G7325], _G7325)]
+ (7)  [v1_classes1(_G7325), -r2_hidden(_G7475, _G7325), r2_hidden(_G7418, _G7325), r1_tarski(_G7475, _G7418)]
+ (8)  [-v2_classes1(_G7791), v1_classes1(_G7791), -r2_hidden(3^[_G7791], _G7791), -r1_tarski(4^[_G7791], _G7791)]
+ (9)  [-v2_classes1(_G7791), v1_classes1(_G7791), -r2_hidden(3^[_G7791], _G7791), r2_tarski(4^[_G7791], _G7791)]
+ (10)  [-v2_classes1(_G7791), v1_classes1(_G7791), -r2_hidden(3^[_G7791], _G7791), r2_hidden(4^[_G7791], _G7791)]
+ (11)  [-v2_classes1(_G7791), v1_classes1(_G7791), r2_hidden(k9_setfam_1(3^[_G7791]), _G7791), -r1_tarski(4^[_G7791], _G7791)]
+ (12)  [-v2_classes1(_G7791), v1_classes1(_G7791), r2_hidden(k9_setfam_1(3^[_G7791]), _G7791), r2_tarski(4^[_G7791], _G7791)]
+ (13)  [-v2_classes1(_G7791), v1_classes1(_G7791), r2_hidden(k9_setfam_1(3^[_G7791]), _G7791), r2_hidden(4^[_G7791], _G7791)]
+ (14)  [v2_classes1(_G7791), -v1_classes1(_G7791)]
+ (15)  [v2_classes1(_G7791), r2_hidden(_G7950, _G7791), -r2_hidden(k9_setfam_1(_G7950), _G7791)]
+ (16)  [v2_classes1(_G7791), r1_tarski(_G8146, _G7791), -r2_tarski(_G8146, _G7791), -r2_hidden(_G8146, _G7791)]
+ (17)  [r1_classes1(_G8538, _G8588), -r2_hidden(_G8538, _G8588)]
+ (18)  [r1_classes1(_G8538, _G8588), -v2_classes1(_G8588)]
+ (19)  [-r1_classes1(_G8538, _G8588), r2_hidden(_G8538, _G8588), v2_classes1(_G8588)]
+ (20)  [_G8898=k1_classes1(_G8834), -r1_classes1(_G8834, _G8898)]
+ (21)  [_G8898=k1_classes1(_G8834), r1_classes1(_G8834, _G9091), -r1_tarski(_G8898, _G9091)]
+ (22)  [- (_G8898=k1_classes1(_G8834)), r1_classes1(_G8834, _G8898), -r1_classes1(_G8834, 5^[_G8898, _G8834])]
+ (23)  [- (_G8898=k1_classes1(_G8834)), r1_classes1(_G8834, _G8898), r1_tarski(_G8898, 5^[_G8898, _G8834])]
+ (24)  [_G6736=_G6785, - (k9_setfam_1(_G6736)=k9_setfam_1(_G6785))]
+ (25)  [_G7005=_G7054, - (k1_classes1(_G7005)=k1_classes1(_G7054))]
+ (26)  [- (_G2893=_G2893)]
+ (27)  [_G2992=_G3037, - (_G3037=_G2992)]
+ (28)  [- (_G3225=_G3338), _G3225=_G3281, _G3281=_G3338]
+ (29)  [-v1_classes1(_G3724), _G3675=_G3724, v1_classes1(_G3675)]
+ (30)  [-r2_tarski(_G4020, _G4157), r2_tarski(_G3953, _G4088), _G3953=_G4020, _G4088=_G4157]
+ (31)  [-v2_classes1(_G4599), _G4550=_G4599, v2_classes1(_G4550)]
+ (32)  [-r1_classes1(_G4895, _G5032), r1_classes1(_G4828, _G4963), _G4828=_G4895, _G4963=_G5032]
+ (33)  [-r1_tarski(_G5492, _G5629), r1_tarski(_G5425, _G5560), _G5425=_G5492, _G5560=_G5629]
+ (34)  [-r2_hidden(_G6080, _G6217), r2_hidden(_G6013, _G6148), _G6013=_G6080, _G6148=_G6217]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(8^[], k1_classes1(7^[]))]   (3)  
+1.1  [-r2_hidden(8^[], k1_classes1(7^[])), v1_classes1(k1_classes1(7^[])), r2_hidden(6^[], k1_classes1(7^[])), r1_tarski(8^[], 6^[])]   (7)  substitution:[[_G7475, _G7325, _G7418], [8^[], k1_classes1(7^[]), 6^[]]]
+1.1.1  [-v1_classes1(k1_classes1(7^[])), v2_classes1(k1_classes1(7^[]))]   (14)  substitution:[[_G7791], [k1_classes1(7^[])]]
+1.1.1.1  [-v2_classes1(k1_classes1(7^[])), r1_classes1(7^[], k1_classes1(7^[]))]   (18)  substitution:[[_G8588, _G8538], [k1_classes1(7^[]), 7^[]]]
+1.1.1.1.1  [-r1_classes1(7^[], k1_classes1(7^[])), k1_classes1(7^[])=k1_classes1(7^[])]   (20)  substitution:[[_G8834, _G8898], [7^[], k1_classes1(7^[])]]
+1.1.1.1.1.1  [- (k1_classes1(7^[])=k1_classes1(7^[]))]   (26)  substitution:[[_G2893], [k1_classes1(7^[])]]
+1.1.2  [-r2_hidden(6^[], k1_classes1(7^[]))]   (1)  
+1.1.3  [-r1_tarski(8^[], 6^[])]   (2)  
+------------------------------------------------------
+End of proof for t3_classes1

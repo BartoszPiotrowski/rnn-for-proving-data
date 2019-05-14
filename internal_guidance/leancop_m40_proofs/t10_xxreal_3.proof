@@ -1,0 +1,30 @@
+
+t10_xxreal_3 is a Theorem
+Start of proof for t10_xxreal_3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xxreal_0(1^[])]
+ (2)  [-v1_xxreal_0(2^[])]
+ (3)  [- (k2_xxreal_3(1^[])=k2_xxreal_3(2^[]))]
+ (4)  [1^[]=2^[]]
+ (5)  [v1_xxreal_0(_G2487), - (k2_xxreal_3(k2_xxreal_3(_G2487))=_G2487)]
+ (6)  [_G2197=_G2246, - (k2_xxreal_3(_G2197)=k2_xxreal_3(_G2246))]
+ (7)  [-v1_xxreal_0(_G1956), _G1907=_G1956, v1_xxreal_0(_G1907)]
+ (8)  [- (_G1134=_G1134)]
+ (9)  [_G1233=_G1278, - (_G1278=_G1233)]
+ (10)  [- (_G1466=_G1579), _G1466=_G1522, _G1522=_G1579]
+
+Connection Proof:
+-----------------
+1  [1^[]=2^[]]   (4)  
+1.1  [- (1^[]=2^[]), 1^[]=k2_xxreal_3(k2_xxreal_3(1^[])), k2_xxreal_3(k2_xxreal_3(1^[]))=2^[]]   (10)  substitution:[[_G1466, _G1579, _G1522], [1^[], 2^[], k2_xxreal_3(k2_xxreal_3(1^[]))]]
+1.1.1  [- (1^[]=k2_xxreal_3(k2_xxreal_3(1^[]))), k2_xxreal_3(k2_xxreal_3(1^[]))=1^[]]   (9)  substitution:[[_G1278, _G1233], [1^[], k2_xxreal_3(k2_xxreal_3(1^[]))]]
+1.1.1.1  [- (k2_xxreal_3(k2_xxreal_3(1^[]))=1^[]), v1_xxreal_0(1^[])]   (5)  substitution:[[_G2487], [1^[]]]
+1.1.1.1.1  [-v1_xxreal_0(1^[])]   (1)  
+1.1.2  [- (k2_xxreal_3(k2_xxreal_3(1^[]))=2^[]), k2_xxreal_3(k2_xxreal_3(1^[]))=k2_xxreal_3(k2_xxreal_3(2^[])), k2_xxreal_3(k2_xxreal_3(2^[]))=2^[]]   (10)  substitution:[[_G1466, _G1579, _G1522], [k2_xxreal_3(k2_xxreal_3(1^[])), 2^[], k2_xxreal_3(k2_xxreal_3(2^[]))]]
+1.1.2.1  [- (k2_xxreal_3(k2_xxreal_3(1^[]))=k2_xxreal_3(k2_xxreal_3(2^[]))), k2_xxreal_3(1^[])=k2_xxreal_3(2^[])]   (6)  substitution:[[_G2197, _G2246], [k2_xxreal_3(1^[]), k2_xxreal_3(2^[])]]
+1.1.2.1.1  [- (k2_xxreal_3(1^[])=k2_xxreal_3(2^[]))]   (3)  
+1.1.2.2  [- (k2_xxreal_3(k2_xxreal_3(2^[]))=2^[]), v1_xxreal_0(2^[])]   (5)  substitution:[[_G2487], [2^[]]]
+1.1.2.2.1  [-v1_xxreal_0(2^[])]   (2)  
+------------------------------------------------------
+End of proof for t10_xxreal_3

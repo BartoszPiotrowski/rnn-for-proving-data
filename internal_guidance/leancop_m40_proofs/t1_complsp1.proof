@@ -1,0 +1,47 @@
+
+t1_complsp1 is a Theorem
+Start of proof for t1_complsp1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], k5_numbers)]
+ (2)  [u1_pre_topc(k1_complsp1(1^[]))=k27_seq_4(1^[])]
+ (3)  [l1_pre_topc(_G7322), v1_pre_topc(_G7322), - (_G7322=g1_pre_topc(u1_struct_0(_G7322), u1_pre_topc(_G7322)))]
+ (4)  [m1_subset_1(_G7611, k5_numbers), - (k1_complsp1(_G7611)=g1_pre_topc(k14_seq_4(_G7611), k27_seq_4(_G7611)))]
+ (5)  [m1_subset_1(_G7943, k1_zfmisc_1(k1_zfmisc_1(_G7884))), -v1_pre_topc(g1_pre_topc(_G7884, _G7943))]
+ (6)  [m1_subset_1(_G7943, k1_zfmisc_1(k1_zfmisc_1(_G7884))), -l1_pre_topc(g1_pre_topc(_G7884, _G7943))]
+ (7)  [m1_subset_1(_G8288, k5_numbers), -m1_subset_1(k27_seq_4(_G8288), k1_zfmisc_1(k1_zfmisc_1(k14_seq_4(_G8288))))]
+ (8)  [m1_subset_1(_G8603, k1_zfmisc_1(k1_zfmisc_1(_G8526))), g1_pre_topc(_G8526, _G8603)=g1_pre_topc(_G8766, _G8835), - (_G8526=_G8766)]
+ (9)  [m1_subset_1(_G8603, k1_zfmisc_1(k1_zfmisc_1(_G8526))), g1_pre_topc(_G8526, _G8603)=g1_pre_topc(_G8766, _G8835), - (_G8603=_G8835)]
+ (10)  [_G4919=_G4968, - (u1_struct_0(_G4919)=u1_struct_0(_G4968))]
+ (11)  [_G5197=_G5246, - (k14_seq_4(_G5197)=k14_seq_4(_G5246))]
+ (12)  [_G5475=_G5524, - (k1_zfmisc_1(_G5475)=k1_zfmisc_1(_G5524))]
+ (13)  [- (g1_pre_topc(_G5753, _G5888)=g1_pre_topc(_G5820, _G5957)), _G5753=_G5820, _G5888=_G5957]
+ (14)  [_G6350=_G6399, - (u1_pre_topc(_G6350)=u1_pre_topc(_G6399))]
+ (15)  [_G6628=_G6677, - (k1_complsp1(_G6628)=k1_complsp1(_G6677))]
+ (16)  [_G6897=_G6946, - (k27_seq_4(_G6897)=k27_seq_4(_G6946))]
+ (17)  [- (_G2930=_G2930)]
+ (18)  [_G3029=_G3074, - (_G3074=_G3029)]
+ (19)  [- (_G3262=_G3375), _G3262=_G3318, _G3318=_G3375]
+ (20)  [-v1_pre_topc(_G3761), _G3712=_G3761, v1_pre_topc(_G3712)]
+ (21)  [-l1_pre_topc(_G4039), _G3990=_G4039, l1_pre_topc(_G3990)]
+ (22)  [-m1_subset_1(_G4326, _G4463), m1_subset_1(_G4259, _G4394), _G4259=_G4326, _G4394=_G4463]
+
+Connection Proof:
+-----------------
+1  [u1_pre_topc(k1_complsp1(1^[]))=k27_seq_4(1^[])]   (2)  
+1.1  [- (u1_pre_topc(k1_complsp1(1^[]))=k27_seq_4(1^[])), k27_seq_4(1^[])=u1_pre_topc(k1_complsp1(1^[]))]   (18)  substitution:[[_G3074, _G3029], [u1_pre_topc(k1_complsp1(1^[])), k27_seq_4(1^[])]]
+1.1.1  [- (k27_seq_4(1^[])=u1_pre_topc(k1_complsp1(1^[]))), k27_seq_4(1^[])=u1_pre_topc(g1_pre_topc(k14_seq_4(1^[]), k27_seq_4(1^[]))), u1_pre_topc(g1_pre_topc(k14_seq_4(1^[]), k27_seq_4(1^[])))=u1_pre_topc(k1_complsp1(1^[]))]   (19)  substitution:[[_G3262, _G3375, _G3318], [k27_seq_4(1^[]), u1_pre_topc(k1_complsp1(1^[])), u1_pre_topc(g1_pre_topc(k14_seq_4(1^[]), k27_seq_4(1^[])))]]
+1.1.1.1  [- (k27_seq_4(1^[])=u1_pre_topc(g1_pre_topc(k14_seq_4(1^[]), k27_seq_4(1^[])))), m1_subset_1(k27_seq_4(1^[]), k1_zfmisc_1(k1_zfmisc_1(k14_seq_4(1^[])))), g1_pre_topc(k14_seq_4(1^[]), k27_seq_4(1^[]))=g1_pre_topc(u1_struct_0(g1_pre_topc(k14_seq_4(1^[]), k27_seq_4(1^[]))), u1_pre_topc(g1_pre_topc(k14_seq_4(1^[]), k27_seq_4(1^[]))))]   (9)  substitution:[[_G8603, _G8835, _G8526, _G8766], [k27_seq_4(1^[]), u1_pre_topc(g1_pre_topc(k14_seq_4(1^[]), k27_seq_4(1^[]))), k14_seq_4(1^[]), u1_struct_0(g1_pre_topc(k14_seq_4(1^[]), k27_seq_4(1^[])))]]
+1.1.1.1.1  [-m1_subset_1(k27_seq_4(1^[]), k1_zfmisc_1(k1_zfmisc_1(k14_seq_4(1^[])))), m1_subset_1(1^[], k5_numbers)]   (7)  substitution:[[_G8288], [1^[]]]
+1.1.1.1.1.1  [-m1_subset_1(1^[], k5_numbers)]   (1)  
+1.1.1.1.2  [- (g1_pre_topc(k14_seq_4(1^[]), k27_seq_4(1^[]))=g1_pre_topc(u1_struct_0(g1_pre_topc(k14_seq_4(1^[]), k27_seq_4(1^[]))), u1_pre_topc(g1_pre_topc(k14_seq_4(1^[]), k27_seq_4(1^[]))))), l1_pre_topc(g1_pre_topc(k14_seq_4(1^[]), k27_seq_4(1^[]))), v1_pre_topc(g1_pre_topc(k14_seq_4(1^[]), k27_seq_4(1^[])))]   (3)  substitution:[[_G7322], [g1_pre_topc(k14_seq_4(1^[]), k27_seq_4(1^[]))]]
+1.1.1.1.2.1  [-l1_pre_topc(g1_pre_topc(k14_seq_4(1^[]), k27_seq_4(1^[]))), m1_subset_1(k27_seq_4(1^[]), k1_zfmisc_1(k1_zfmisc_1(k14_seq_4(1^[]))))]   (6)  substitution:[[_G7884, _G7943], [k14_seq_4(1^[]), k27_seq_4(1^[])]]
+1.1.1.1.2.1.1  [-m1_subset_1(k27_seq_4(1^[]), k1_zfmisc_1(k1_zfmisc_1(k14_seq_4(1^[]))))]   (lemmata:1.1.1.1)  
+1.1.1.1.2.2  [-v1_pre_topc(g1_pre_topc(k14_seq_4(1^[]), k27_seq_4(1^[]))), m1_subset_1(k27_seq_4(1^[]), k1_zfmisc_1(k1_zfmisc_1(k14_seq_4(1^[]))))]   (5)  substitution:[[_G7884, _G7943], [k14_seq_4(1^[]), k27_seq_4(1^[])]]
+1.1.1.1.2.2.1  [-m1_subset_1(k27_seq_4(1^[]), k1_zfmisc_1(k1_zfmisc_1(k14_seq_4(1^[]))))]   (lemmata:1.1.1.1)  
+1.1.1.2  [- (u1_pre_topc(g1_pre_topc(k14_seq_4(1^[]), k27_seq_4(1^[])))=u1_pre_topc(k1_complsp1(1^[]))), g1_pre_topc(k14_seq_4(1^[]), k27_seq_4(1^[]))=k1_complsp1(1^[])]   (14)  substitution:[[_G6350, _G6399], [g1_pre_topc(k14_seq_4(1^[]), k27_seq_4(1^[])), k1_complsp1(1^[])]]
+1.1.1.2.1  [- (g1_pre_topc(k14_seq_4(1^[]), k27_seq_4(1^[]))=k1_complsp1(1^[])), k1_complsp1(1^[])=g1_pre_topc(k14_seq_4(1^[]), k27_seq_4(1^[]))]   (18)  substitution:[[_G3074, _G3029], [g1_pre_topc(k14_seq_4(1^[]), k27_seq_4(1^[])), k1_complsp1(1^[])]]
+1.1.1.2.1.1  [- (k1_complsp1(1^[])=g1_pre_topc(k14_seq_4(1^[]), k27_seq_4(1^[]))), m1_subset_1(1^[], k5_numbers)]   (4)  substitution:[[_G7611], [1^[]]]
+1.1.1.2.1.1.1  [-m1_subset_1(1^[], k5_numbers)]   (1)  
+------------------------------------------------------
+End of proof for t1_complsp1

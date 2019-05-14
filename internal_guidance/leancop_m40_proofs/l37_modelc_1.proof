@@ -1,0 +1,111 @@
+
+l37_modelc_1 is a Theorem
+Start of proof for l37_modelc_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_modelc_1(1^[])]
+ (2)  [-m2_finseq_1(1^[], k5_numbers)]
+ (3)  [-v3_modelc_1(1^[])]
+ (4)  [-v2_modelc_1(1^[]), -v4_modelc_1(1^[]), -v5_modelc_1(1^[]), -v6_modelc_1(1^[]), -v7_modelc_1(1^[])]
+ (5)  [-v1_xboole_0(k1_xboole_0)]
+ (6)  [m2_finseq_1(_G8685, k5_numbers), v1_modelc_1(_G8685), v3_modelc_1(_G8685), - (k1_funct_1(_G8685, np__1)=k6_numbers)]
+ (7)  [m2_finseq_1(_G9026, k5_numbers), v1_modelc_1(_G9026), v4_modelc_1(_G9026), - (k1_funct_1(_G9026, np__1)=np__1)]
+ (8)  [m2_finseq_1(_G9367, k5_numbers), v1_modelc_1(_G9367), v5_modelc_1(_G9367), - (k1_funct_1(_G9367, np__1)=np__2)]
+ (9)  [m2_finseq_1(_G9708, k5_numbers), v1_modelc_1(_G9708), v6_modelc_1(_G9708), - (k1_funct_1(_G9708, np__1)=np__3)]
+ (10)  [m2_finseq_1(_G10049, k5_numbers), v1_modelc_1(_G10049), v7_modelc_1(_G10049), - (k1_funct_1(_G10049, np__1)=np__4)]
+ (11)  [- (k6_numbers=k1_xboole_0)]
+ (12)  [v1_xboole_0(np__1)]
+ (13)  [v1_xboole_0(np__2)]
+ (14)  [v1_xboole_0(np__3)]
+ (15)  [v1_xboole_0(np__4)]
+ (16)  [m2_finseq_1(_G10390, k5_numbers), v1_modelc_1(_G10390), v2_modelc_1(_G10390), k1_funct_1(_G10390, np__1)=k6_numbers]
+ (17)  [m2_finseq_1(_G10390, k5_numbers), v1_modelc_1(_G10390), v2_modelc_1(_G10390), k1_funct_1(_G10390, np__1)=np__1]
+ (18)  [m2_finseq_1(_G10390, k5_numbers), v1_modelc_1(_G10390), v2_modelc_1(_G10390), k1_funct_1(_G10390, np__1)=np__2]
+ (19)  [m2_finseq_1(_G10390, k5_numbers), v1_modelc_1(_G10390), v2_modelc_1(_G10390), k1_funct_1(_G10390, np__1)=np__3]
+ (20)  [m2_finseq_1(_G10390, k5_numbers), v1_modelc_1(_G10390), v2_modelc_1(_G10390), k1_funct_1(_G10390, np__1)=np__4]
+ (21)  [- (k1_funct_1(_G8035, _G8170)=k1_funct_1(_G8102, _G8239)), _G8035=_G8102, _G8170=_G8239]
+ (22)  [- (_G4261=_G4261)]
+ (23)  [_G4360=_G4405, - (_G4405=_G4360)]
+ (24)  [- (_G4593=_G4706), _G4593=_G4649, _G4649=_G4706]
+ (25)  [-v1_xboole_0(_G5092), _G5043=_G5092, v1_xboole_0(_G5043)]
+ (26)  [-v1_modelc_1(_G5370), _G5321=_G5370, v1_modelc_1(_G5321)]
+ (27)  [-m2_finseq_1(_G5666, _G5803), m2_finseq_1(_G5599, _G5734), _G5599=_G5666, _G5734=_G5803]
+ (28)  [-v3_modelc_1(_G6245), _G6196=_G6245, v3_modelc_1(_G6196)]
+ (29)  [-v2_modelc_1(_G6523), _G6474=_G6523, v2_modelc_1(_G6474)]
+ (30)  [-v4_modelc_1(_G6801), _G6752=_G6801, v4_modelc_1(_G6752)]
+ (31)  [-v5_modelc_1(_G7079), _G7030=_G7079, v5_modelc_1(_G7030)]
+ (32)  [-v6_modelc_1(_G7357), _G7308=_G7357, v6_modelc_1(_G7308)]
+ (33)  [-v7_modelc_1(_G7626), _G7577=_G7626, v7_modelc_1(_G7577)]
+
+Connection Proof:
+-----------------
+1  [m2_finseq_1(1^[], k5_numbers), v1_modelc_1(1^[]), v2_modelc_1(1^[]), k1_funct_1(1^[], np__1)=k6_numbers]   (16)  substitution:[[_G10390], [1^[]]]
+1.1  [-m2_finseq_1(1^[], k5_numbers)]   (2)  
+1.2  [-v1_modelc_1(1^[])]   (1)  
+1.3  [-v2_modelc_1(1^[]), -v4_modelc_1(1^[]), -v5_modelc_1(1^[]), -v6_modelc_1(1^[]), -v7_modelc_1(1^[])]   (4)  
+1.3.1  [v4_modelc_1(1^[]), m2_finseq_1(1^[], k5_numbers), v1_modelc_1(1^[]), - (k1_funct_1(1^[], np__1)=np__1)]   (7)  substitution:[[_G9026], [1^[]]]
+1.3.1.1  [-m2_finseq_1(1^[], k5_numbers)]   (2)  
+1.3.1.2  [-v1_modelc_1(1^[])]   (1)  
+1.3.1.3  [k1_funct_1(1^[], np__1)=np__1, - (k6_numbers=np__1), k6_numbers=k1_funct_1(1^[], np__1)]   (24)  substitution:[[_G4649, _G4706, _G4593], [k1_funct_1(1^[], np__1), np__1, k6_numbers]]
+1.3.1.3.1  [k6_numbers=np__1, - (k1_xboole_0=np__1), k1_xboole_0=k6_numbers]   (24)  substitution:[[_G4649, _G4706, _G4593], [k6_numbers, np__1, k1_xboole_0]]
+1.3.1.3.1.1  [k1_xboole_0=np__1, -v1_xboole_0(np__1), v1_xboole_0(k1_xboole_0)]   (25)  substitution:[[_G5043, _G5092], [k1_xboole_0, np__1]]
+1.3.1.3.1.1.1  [v1_xboole_0(np__1)]   (12)  
+1.3.1.3.1.1.2  [-v1_xboole_0(k1_xboole_0)]   (5)  
+1.3.1.3.1.2  [- (k1_xboole_0=k6_numbers), k6_numbers=k1_xboole_0]   (23)  substitution:[[_G4405, _G4360], [k1_xboole_0, k6_numbers]]
+1.3.1.3.1.2.1  [- (k6_numbers=k1_xboole_0)]   (11)  
+1.3.1.3.2  [- (k6_numbers=k1_funct_1(1^[], np__1)), k1_funct_1(1^[], np__1)=k6_numbers]   (23)  substitution:[[_G4405, _G4360], [k6_numbers, k1_funct_1(1^[], np__1)]]
+1.3.1.3.2.1  [- (k1_funct_1(1^[], np__1)=k6_numbers), m2_finseq_1(1^[], k5_numbers), v1_modelc_1(1^[]), v3_modelc_1(1^[])]   (6)  substitution:[[_G8685], [1^[]]]
+1.3.1.3.2.1.1  [-m2_finseq_1(1^[], k5_numbers)]   (2)  
+1.3.1.3.2.1.2  [-v1_modelc_1(1^[])]   (1)  
+1.3.1.3.2.1.3  [-v3_modelc_1(1^[])]   (3)  
+1.3.2  [v5_modelc_1(1^[]), m2_finseq_1(1^[], k5_numbers), v1_modelc_1(1^[]), - (k1_funct_1(1^[], np__1)=np__2)]   (8)  substitution:[[_G9367], [1^[]]]
+1.3.2.1  [-m2_finseq_1(1^[], k5_numbers)]   (2)  
+1.3.2.2  [-v1_modelc_1(1^[])]   (1)  
+1.3.2.3  [k1_funct_1(1^[], np__1)=np__2, - (k6_numbers=np__2), k6_numbers=k1_funct_1(1^[], np__1)]   (24)  substitution:[[_G4649, _G4706, _G4593], [k1_funct_1(1^[], np__1), np__2, k6_numbers]]
+1.3.2.3.1  [k6_numbers=np__2, - (k1_xboole_0=np__2), k1_xboole_0=k6_numbers]   (24)  substitution:[[_G4649, _G4706, _G4593], [k6_numbers, np__2, k1_xboole_0]]
+1.3.2.3.1.1  [k1_xboole_0=np__2, -v1_xboole_0(np__2), v1_xboole_0(k1_xboole_0)]   (25)  substitution:[[_G5043, _G5092], [k1_xboole_0, np__2]]
+1.3.2.3.1.1.1  [v1_xboole_0(np__2)]   (13)  
+1.3.2.3.1.1.2  [-v1_xboole_0(k1_xboole_0)]   (5)  
+1.3.2.3.1.2  [- (k1_xboole_0=k6_numbers), k6_numbers=k1_xboole_0]   (23)  substitution:[[_G4405, _G4360], [k1_xboole_0, k6_numbers]]
+1.3.2.3.1.2.1  [- (k6_numbers=k1_xboole_0)]   (11)  
+1.3.2.3.2  [- (k6_numbers=k1_funct_1(1^[], np__1)), k1_funct_1(1^[], np__1)=k6_numbers]   (23)  substitution:[[_G4405, _G4360], [k6_numbers, k1_funct_1(1^[], np__1)]]
+1.3.2.3.2.1  [- (k1_funct_1(1^[], np__1)=k6_numbers), m2_finseq_1(1^[], k5_numbers), v1_modelc_1(1^[]), v3_modelc_1(1^[])]   (6)  substitution:[[_G8685], [1^[]]]
+1.3.2.3.2.1.1  [-m2_finseq_1(1^[], k5_numbers)]   (2)  
+1.3.2.3.2.1.2  [-v1_modelc_1(1^[])]   (1)  
+1.3.2.3.2.1.3  [-v3_modelc_1(1^[])]   (3)  
+1.3.3  [v6_modelc_1(1^[]), m2_finseq_1(1^[], k5_numbers), v1_modelc_1(1^[]), - (k1_funct_1(1^[], np__1)=np__3)]   (9)  substitution:[[_G9708], [1^[]]]
+1.3.3.1  [-m2_finseq_1(1^[], k5_numbers)]   (2)  
+1.3.3.2  [-v1_modelc_1(1^[])]   (1)  
+1.3.3.3  [k1_funct_1(1^[], np__1)=np__3, - (k6_numbers=np__3), k6_numbers=k1_funct_1(1^[], np__1)]   (24)  substitution:[[_G4649, _G4706, _G4593], [k1_funct_1(1^[], np__1), np__3, k6_numbers]]
+1.3.3.3.1  [k6_numbers=np__3, - (k1_xboole_0=np__3), k1_xboole_0=k6_numbers]   (24)  substitution:[[_G4649, _G4706, _G4593], [k6_numbers, np__3, k1_xboole_0]]
+1.3.3.3.1.1  [k1_xboole_0=np__3, -v1_xboole_0(np__3), v1_xboole_0(k1_xboole_0)]   (25)  substitution:[[_G5043, _G5092], [k1_xboole_0, np__3]]
+1.3.3.3.1.1.1  [v1_xboole_0(np__3)]   (14)  
+1.3.3.3.1.1.2  [-v1_xboole_0(k1_xboole_0)]   (5)  
+1.3.3.3.1.2  [- (k1_xboole_0=k6_numbers), k6_numbers=k1_xboole_0]   (23)  substitution:[[_G4405, _G4360], [k1_xboole_0, k6_numbers]]
+1.3.3.3.1.2.1  [- (k6_numbers=k1_xboole_0)]   (11)  
+1.3.3.3.2  [- (k6_numbers=k1_funct_1(1^[], np__1)), k1_funct_1(1^[], np__1)=k6_numbers]   (23)  substitution:[[_G4405, _G4360], [k6_numbers, k1_funct_1(1^[], np__1)]]
+1.3.3.3.2.1  [- (k1_funct_1(1^[], np__1)=k6_numbers), m2_finseq_1(1^[], k5_numbers), v1_modelc_1(1^[]), v3_modelc_1(1^[])]   (6)  substitution:[[_G8685], [1^[]]]
+1.3.3.3.2.1.1  [-m2_finseq_1(1^[], k5_numbers)]   (2)  
+1.3.3.3.2.1.2  [-v1_modelc_1(1^[])]   (1)  
+1.3.3.3.2.1.3  [-v3_modelc_1(1^[])]   (3)  
+1.3.4  [v7_modelc_1(1^[]), m2_finseq_1(1^[], k5_numbers), v1_modelc_1(1^[]), - (k1_funct_1(1^[], np__1)=np__4)]   (10)  substitution:[[_G960], [1^[]]]
+1.3.4.1  [-m2_finseq_1(1^[], k5_numbers)]   (2)  
+1.3.4.2  [-v1_modelc_1(1^[])]   (1)  
+1.3.4.3  [k1_funct_1(1^[], np__1)=np__4, - (k6_numbers=np__4), k6_numbers=k1_funct_1(1^[], np__1)]   (24)  substitution:[[_G784, _G785, _G783], [k1_funct_1(1^[], np__1), np__4, k6_numbers]]
+1.3.4.3.1  [k6_numbers=np__4, - (k1_xboole_0=np__4), k1_xboole_0=k6_numbers]   (24)  substitution:[[_G784, _G785, _G783], [k6_numbers, np__4, k1_xboole_0]]
+1.3.4.3.1.1  [k1_xboole_0=np__4, -v1_xboole_0(np__4), v1_xboole_0(k1_xboole_0)]   (25)  substitution:[[_G795, _G796], [k1_xboole_0, np__4]]
+1.3.4.3.1.1.1  [v1_xboole_0(np__4)]   (15)  
+1.3.4.3.1.1.2  [-v1_xboole_0(k1_xboole_0)]   (5)  
+1.3.4.3.1.2  [- (k1_xboole_0=k6_numbers), k6_numbers=k1_xboole_0]   (23)  substitution:[[_G776, _G775], [k1_xboole_0, k6_numbers]]
+1.3.4.3.1.2.1  [- (k6_numbers=k1_xboole_0)]   (11)  
+1.3.4.3.2  [- (k6_numbers=k1_funct_1(1^[], np__1)), k1_funct_1(1^[], np__1)=k6_numbers]   (23)  substitution:[[_G776, _G775], [k6_numbers, k1_funct_1(1^[], np__1)]]
+1.3.4.3.2.1  [- (k1_funct_1(1^[], np__1)=k6_numbers), m2_finseq_1(1^[], k5_numbers), v1_modelc_1(1^[]), v3_modelc_1(1^[])]   (6)  substitution:[[_G904], [1^[]]]
+1.3.4.3.2.1.1  [-m2_finseq_1(1^[], k5_numbers)]   (2)  
+1.3.4.3.2.1.2  [-v1_modelc_1(1^[])]   (1)  
+1.3.4.3.2.1.3  [-v3_modelc_1(1^[])]   (3)  
+1.4  [- (k1_funct_1(1^[], np__1)=k6_numbers), m2_finseq_1(1^[], k5_numbers), v1_modelc_1(1^[]), v3_modelc_1(1^[])]   (6)  substitution:[[_G904], [1^[]]]
+1.4.1  [-m2_finseq_1(1^[], k5_numbers)]   (2)  
+1.4.2  [-v1_modelc_1(1^[])]   (1)  
+1.4.3  [-v3_modelc_1(1^[])]   (3)  
+------------------------------------------------------
+End of proof for l37_modelc_1

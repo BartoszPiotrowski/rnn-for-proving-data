@@ -1,0 +1,58 @@
+
+t2_pre_ff is a Theorem
+Start of proof for t2_pre_ff
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_int_1(1^[])]
+ (2)  [k5_int_1(1^[], np__1)=1^[]]
+ (3)  [v7_ordinal1(_G8504), -v1_int_1(_G8504)]
+ (4)  [v1_int_1(_G8635), -v1_xreal_0(_G8635)]
+ (5)  [v1_xreal_0(_G8766), -v1_xcmplx_0(_G8766)]
+ (6)  [m1_subset_1(_G8897, k4_ordinal1), -v7_ordinal1(_G8897)]
+ (7)  [v1_int_1(_G9054), v1_int_1(_G9143), - (k5_int_1(_G9054, _G9143)=k1_int_1(k7_xcmplx_0(_G9054, _G9143)))]
+ (8)  [- (k5_numbers=k4_ordinal1)]
+ (9)  [-v2_xxreal_0(np__1)]
+ (10)  [-m2_subset_1(np__1, k1_numbers, k5_numbers)]
+ (11)  [-m1_subset_1(np__1, k5_numbers)]
+ (12)  [-m1_subset_1(np__1, k1_numbers)]
+ (13)  [v1_xcmplx_0(_G10023), - (k7_xcmplx_0(_G10023, np__1)=_G10023)]
+ (14)  [v1_xreal_0(_G9801), k1_int_1(_G9801)=_G9801, -v1_int_1(_G9801)]
+ (15)  [v1_xreal_0(_G9801), - (k1_int_1(_G9801)=_G9801), v1_int_1(_G9801)]
+ (16)  [_G6978=_G7027, - (k1_int_1(_G6978)=k1_int_1(_G7027))]
+ (17)  [- (k7_xcmplx_0(_G7256, _G7391)=k7_xcmplx_0(_G7323, _G7460)), _G7256=_G7323, _G7391=_G7460]
+ (18)  [- (k5_int_1(_G7844, _G7979)=k5_int_1(_G7911, _G8048)), _G7844=_G7911, _G7979=_G8048]
+ (19)  [- (_G3043=_G3043)]
+ (20)  [_G3142=_G3187, - (_G3187=_G3142)]
+ (21)  [- (_G3375=_G3488), _G3375=_G3431, _G3431=_G3488]
+ (22)  [-v7_ordinal1(_G3874), _G3825=_G3874, v7_ordinal1(_G3825)]
+ (23)  [-v2_xxreal_0(_G4152), _G4103=_G4152, v2_xxreal_0(_G4103)]
+ (24)  [-m2_subset_1(_G4466, _G4639, _G4816), m2_subset_1(_G4381, _G4552, _G4727), _G4381=_G4466, _G4552=_G4639, _G4727=_G4816]
+ (25)  [-m1_subset_1(_G5476, _G5613), m1_subset_1(_G5409, _G5544), _G5409=_G5476, _G5544=_G5613]
+ (26)  [-v1_xreal_0(_G6055), _G6006=_G6055, v1_xreal_0(_G6006)]
+ (27)  [-v1_xcmplx_0(_G6333), _G6284=_G6333, v1_xcmplx_0(_G6284)]
+ (28)  [-v1_int_1(_G6602), _G6553=_G6602, v1_int_1(_G6553)]
+
+Connection Proof:
+-----------------
+1  [k5_int_1(1^[], np__1)=1^[]]   (2)  
+1.1  [- (k5_int_1(1^[], np__1)=1^[]), k5_int_1(1^[], np__1)=k1_int_1(k7_xcmplx_0(1^[], np__1)), k1_int_1(k7_xcmplx_0(1^[], np__1))=1^[]]   (21)  substitution:[[_G3375, _G3488, _G3431], [k5_int_1(1^[], np__1), 1^[], k1_int_1(k7_xcmplx_0(1^[], np__1))]]
+1.1.1  [- (k5_int_1(1^[], np__1)=k1_int_1(k7_xcmplx_0(1^[], np__1))), v1_int_1(1^[]), v1_int_1(np__1)]   (7)  substitution:[[_G9054, _G9143], [1^[], np__1]]
+1.1.1.1  [-v1_int_1(1^[])]   (1)  
+1.1.1.2  [-v1_int_1(np__1), v7_ordinal1(np__1)]   (3)  substitution:[[_G8504], [np__1]]
+1.1.1.2.1  [-v7_ordinal1(np__1), m1_subset_1(np__1, k4_ordinal1)]   (6)  substitution:[[_G8897], [np__1]]
+1.1.1.2.1.1  [-m1_subset_1(np__1, k4_ordinal1), m1_subset_1(np__1, k5_numbers), np__1=np__1, k5_numbers=k4_ordinal1]   (25)  substitution:[[_G5476, _G5613, _G5409, _G5544], [np__1, k4_ordinal1, np__1, k5_numbers]]
+1.1.1.2.1.1.1  [-m1_subset_1(np__1, k5_numbers)]   (11)  
+1.1.1.2.1.1.2  [- (np__1=np__1)]   (19)  substitution:[[_G3043], [np__1]]
+1.1.1.2.1.1.3  [- (k5_numbers=k4_ordinal1)]   (8)  
+1.1.2  [- (k1_int_1(k7_xcmplx_0(1^[], np__1))=1^[]), k1_int_1(k7_xcmplx_0(1^[], np__1))=k1_int_1(1^[]), k1_int_1(1^[])=1^[]]   (21)  substitution:[[_G3375, _G3488, _G3431], [k1_int_1(k7_xcmplx_0(1^[], np__1)), 1^[], k1_int_1(1^[])]]
+1.1.2.1  [- (k1_int_1(k7_xcmplx_0(1^[], np__1))=k1_int_1(1^[])), k7_xcmplx_0(1^[], np__1)=1^[]]   (16)  substitution:[[_G6978, _G7027], [k7_xcmplx_0(1^[], np__1), 1^[]]]
+1.1.2.1.1  [- (k7_xcmplx_0(1^[], np__1)=1^[]), v1_xcmplx_0(1^[])]   (13)  substitution:[[_G10023], [1^[]]]
+1.1.2.1.1.1  [-v1_xcmplx_0(1^[]), v1_xreal_0(1^[])]   (5)  substitution:[[_G8766], [1^[]]]
+1.1.2.1.1.1.1  [-v1_xreal_0(1^[]), v1_int_1(1^[])]   (4)  substitution:[[_G8635], [1^[]]]
+1.1.2.1.1.1.1.1  [-v1_int_1(1^[])]   (1)  
+1.1.2.2  [- (k1_int_1(1^[])=1^[]), v1_xreal_0(1^[]), v1_int_1(1^[])]   (15)  substitution:[[_G9801], [1^[]]]
+1.1.2.2.1  [-v1_xreal_0(1^[]), v1_int_1(1^[])]   (4)  substitution:[[_G8635], [1^[]]]
+1.1.2.2.1.1  [-v1_int_1(1^[])]   (1)  
+1.1.2.2.2  [-v1_int_1(1^[])]   (1)  
+------------------------------------------------------
+End of proof for t2_pre_ff

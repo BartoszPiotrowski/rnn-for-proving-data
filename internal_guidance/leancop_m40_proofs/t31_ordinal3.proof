@@ -1,0 +1,47 @@
+
+t31_ordinal3 is a Theorem
+Start of proof for t31_ordinal3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v3_ordinal1(1^[])]
+ (2)  [-v3_ordinal1(2^[])]
+ (3)  [- (k11_ordinal2(1^[], 2^[])=k1_xboole_0)]
+ (4)  [1^[]=k1_xboole_0]
+ (5)  [2^[]=k1_xboole_0]
+ (6)  [- (k11_ordinal2(_G4155, _G4290)=k11_ordinal2(_G4222, _G4359)), _G4155=_G4222, _G4290=_G4359]
+ (7)  [- (_G2474=_G2474)]
+ (8)  [_G2573=_G2618, - (_G2618=_G2573)]
+ (9)  [- (_G2806=_G2919), _G2806=_G2862, _G2862=_G2919]
+ (10)  [-v3_ordinal1(_G3893), _G3844=_G3893, v3_ordinal1(_G3844)]
+ (11)  [-r2_hidden(_G3323, _G3460), r2_hidden(_G3256, _G3391), _G3256=_G3323, _G3391=_G3460]
+ (12)  [r2_hidden(_G4773, _G4820), r2_hidden(_G4820, _G4773)]
+ (13)  [v3_ordinal1(_G5082), r2_hidden(_G5033, _G5082), -v3_ordinal1(_G5033)]
+ (14)  [v3_ordinal1(_G5311), - (k11_ordinal2(k1_xboole_0, _G5311)=k1_xboole_0)]
+ (15)  [v3_ordinal1(_G6194), - (_G6194=k1_xboole_0), -r2_hidden(k1_xboole_0, _G6194)]
+ (16)  [v3_ordinal1(_G5510), v3_ordinal1(_G5619), v3_ordinal1(_G5724), r2_hidden(_G5619, _G5724), - (_G5510=k1_xboole_0), -r2_hidden(k11_ordinal2(_G5619, _G5510), k11_ordinal2(_G5724, _G5510))]
+
+Connection Proof:
+-----------------
+1  [2^[]=k1_xboole_0]   (5)  
+1.1  [- (2^[]=k1_xboole_0), v3_ordinal1(2^[]), v3_ordinal1(k1_xboole_0), v3_ordinal1(1^[]), r2_hidden(k1_xboole_0, 1^[]), -r2_hidden(k11_ordinal2(k1_xboole_0, 2^[]), k11_ordinal2(1^[], 2^[]))]   (16)  substitution:[[_G5510, _G5619, _G5724], [2^[], k1_xboole_0, 1^[]]]
+1.1.1  [-v3_ordinal1(2^[])]   (2)  
+1.1.2  [-v3_ordinal1(k1_xboole_0), v3_ordinal1(1^[]), r2_hidden(k1_xboole_0, 1^[])]   (13)  substitution:[[_G5033, _G5082], [k1_xboole_0, 1^[]]]
+1.1.2.1  [-v3_ordinal1(1^[])]   (1)  
+1.1.2.2  [-r2_hidden(k1_xboole_0, 1^[]), v3_ordinal1(1^[]), - (1^[]=k1_xboole_0)]   (15)  substitution:[[_G6194], [1^[]]]
+1.1.2.2.1  [-v3_ordinal1(1^[])]   (1)  
+1.1.2.2.2  [1^[]=k1_xboole_0]   (4)  
+1.1.3  [-v3_ordinal1(1^[])]   (1)  
+1.1.4  [-r2_hidden(k1_xboole_0, 1^[]), r2_hidden(k1_xboole_0, 1^[]), k1_xboole_0=k1_xboole_0, 1^[]=1^[]]   (11)  substitution:[[_G3323, _G3460, _G3256, _G3391], [k1_xboole_0, 1^[], k1_xboole_0, 1^[]]]
+1.1.4.1  [-r2_hidden(k1_xboole_0, 1^[]), v3_ordinal1(1^[]), - (1^[]=k1_xboole_0)]   (15)  substitution:[[_G6194], [1^[]]]
+1.1.4.1.1  [-v3_ordinal1(1^[])]   (1)  
+1.1.4.1.2  [1^[]=k1_xboole_0]   (4)  
+1.1.4.2  [- (k1_xboole_0=k1_xboole_0)]   (7)  substitution:[[_G2474], [k1_xboole_0]]
+1.1.4.3  [- (1^[]=1^[])]   (7)  substitution:[[_G2474], [1^[]]]
+1.1.5  [r2_hidden(k11_ordinal2(k1_xboole_0, 2^[]), k11_ordinal2(1^[], 2^[])), -r2_hidden(k1_xboole_0, k1_xboole_0), k11_ordinal2(k1_xboole_0, 2^[])=k1_xboole_0, k11_ordinal2(1^[], 2^[])=k1_xboole_0]   (11)  substitution:[[_G3256, _G3391, _G3323, _G3460], [k11_ordinal2(k1_xboole_0, 2^[]), k11_ordinal2(1^[], 2^[]), k1_xboole_0, k1_xboole_0]]
+1.1.5.1  [r2_hidden(k1_xboole_0, k1_xboole_0), r2_hidden(k1_xboole_0, k1_xboole_0)]   (12)  substitution:[[_G4773, _G4820], [k1_xboole_0, k1_xboole_0]]
+1.1.5.1.1  [-r2_hidden(k1_xboole_0, k1_xboole_0)]   (reduction:1.1.5)  
+1.1.5.2  [- (k11_ordinal2(k1_xboole_0, 2^[])=k1_xboole_0), v3_ordinal1(2^[])]   (14)  substitution:[[_G5311], [2^[]]]
+1.1.5.2.1  [-v3_ordinal1(2^[])]   (2)  
+1.1.5.3  [- (k11_ordinal2(1^[], 2^[])=k1_xboole_0)]   (3)  
+------------------------------------------------------
+End of proof for t31_ordinal3

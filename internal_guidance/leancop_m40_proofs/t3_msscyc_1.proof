@@ -1,0 +1,41 @@
+
+t3_msscyc_1 is a Theorem
+Start of proof for t3_msscyc_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(1^[])]
+ (2)  [-l1_graph_1(1^[])]
+ (3)  [r1_tarski(k2_xboole_0(k10_xtuple_0(u1_graph_1(1^[])), k10_xtuple_0(u2_graph_1(1^[]))), u1_struct_0(1^[]))]
+ (4)  [m1_subset_1(_G1395, k1_zfmisc_1(k2_zfmisc_1(_G1286, _G1340))), -v1_relat_1(_G1395)]
+ (5)  [m1_subset_1(_G1761, k1_zfmisc_1(k2_zfmisc_1(_G1638, _G1699))), -v4_relat_1(_G1761, _G1638)]
+ (6)  [m1_subset_1(_G1761, k1_zfmisc_1(k2_zfmisc_1(_G1638, _G1699))), -v5_relat_1(_G1761, _G1699)]
+ (7)  [v1_relat_1(_G2166), v5_relat_1(_G2166, _G2114), -r1_tarski(k10_xtuple_0(_G2166), _G2114)]
+ (8)  [v1_relat_1(_G2166), -v5_relat_1(_G2166, _G2114), r1_tarski(k10_xtuple_0(_G2166), _G2114)]
+ (9)  [l1_graph_1(_G2437), -v1_funct_1(u1_graph_1(_G2437))]
+ (10)  [l1_graph_1(_G2437), -v1_funct_2(u1_graph_1(_G2437), u4_struct_0(_G2437), u1_struct_0(_G2437))]
+ (11)  [l1_graph_1(_G2437), -m1_subset_1(u1_graph_1(_G2437), k1_zfmisc_1(k2_zfmisc_1(u4_struct_0(_G2437), u1_struct_0(_G2437))))]
+ (12)  [l1_graph_1(_G2950), -v1_funct_1(u2_graph_1(_G2950))]
+ (13)  [l1_graph_1(_G2950), -v1_funct_2(u2_graph_1(_G2950), u4_struct_0(_G2950), u1_struct_0(_G2950))]
+ (14)  [l1_graph_1(_G2950), -m1_subset_1(u2_graph_1(_G2950), k1_zfmisc_1(k2_zfmisc_1(u4_struct_0(_G2950), u1_struct_0(_G2950))))]
+ (15)  [-r1_tarski(k2_xboole_0(_G3454, _G3573), _G3513), r1_tarski(_G3454, _G3513), r1_tarski(_G3573, _G3513)]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k2_xboole_0(k10_xtuple_0(u1_graph_1(1^[])), k10_xtuple_0(u2_graph_1(1^[]))), u1_struct_0(1^[]))]   (3)  
+1.1  [-r1_tarski(k2_xboole_0(k10_xtuple_0(u1_graph_1(1^[])), k10_xtuple_0(u2_graph_1(1^[]))), u1_struct_0(1^[])), r1_tarski(k10_xtuple_0(u1_graph_1(1^[])), u1_struct_0(1^[])), r1_tarski(k10_xtuple_0(u2_graph_1(1^[])), u1_struct_0(1^[]))]   (15)  substitution:[[_G3454, _G3573, _G3513], [k10_xtuple_0(u1_graph_1(1^[])), k10_xtuple_0(u2_graph_1(1^[])), u1_struct_0(1^[])]]
+1.1.1  [-r1_tarski(k10_xtuple_0(u1_graph_1(1^[])), u1_struct_0(1^[])), v1_relat_1(u1_graph_1(1^[])), v5_relat_1(u1_graph_1(1^[]), u1_struct_0(1^[]))]   (7)  substitution:[[_G2166, _G2114], [u1_graph_1(1^[]), u1_struct_0(1^[])]]
+1.1.1.1  [-v1_relat_1(u1_graph_1(1^[])), m1_subset_1(u1_graph_1(1^[]), k1_zfmisc_1(k2_zfmisc_1(u4_struct_0(1^[]), u1_struct_0(1^[]))))]   (4)  substitution:[[_G1395, _G1286, _G1340], [u1_graph_1(1^[]), u4_struct_0(1^[]), u1_struct_0(1^[])]]
+1.1.1.1.1  [-m1_subset_1(u1_graph_1(1^[]), k1_zfmisc_1(k2_zfmisc_1(u4_struct_0(1^[]), u1_struct_0(1^[])))), l1_graph_1(1^[])]   (11)  substitution:[[_G2437], [1^[]]]
+1.1.1.1.1.1  [-l1_graph_1(1^[])]   (2)  
+1.1.1.2  [-v5_relat_1(u1_graph_1(1^[]), u1_struct_0(1^[])), m1_subset_1(u1_graph_1(1^[]), k1_zfmisc_1(k2_zfmisc_1(u4_struct_0(1^[]), u1_struct_0(1^[]))))]   (6)  substitution:[[_G1761, _G1699, _G1638], [u1_graph_1(1^[]), u1_struct_0(1^[]), u4_struct_0(1^[])]]
+1.1.1.2.1  [-m1_subset_1(u1_graph_1(1^[]), k1_zfmisc_1(k2_zfmisc_1(u4_struct_0(1^[]), u1_struct_0(1^[])))), l1_graph_1(1^[])]   (11)  substitution:[[_G2437], [1^[]]]
+1.1.1.2.1.1  [-l1_graph_1(1^[])]   (2)  
+1.1.2  [-r1_tarski(k10_xtuple_0(u2_graph_1(1^[])), u1_struct_0(1^[])), v1_relat_1(u2_graph_1(1^[])), v5_relat_1(u2_graph_1(1^[]), u1_struct_0(1^[]))]   (7)  substitution:[[_G2166, _G2114], [u2_graph_1(1^[]), u1_struct_0(1^[])]]
+1.1.2.1  [-v1_relat_1(u2_graph_1(1^[])), m1_subset_1(u2_graph_1(1^[]), k1_zfmisc_1(k2_zfmisc_1(u4_struct_0(1^[]), u1_struct_0(1^[]))))]   (4)  substitution:[[_G1395, _G1286, _G1340], [u2_graph_1(1^[]), u4_struct_0(1^[]), u1_struct_0(1^[])]]
+1.1.2.1.1  [-m1_subset_1(u2_graph_1(1^[]), k1_zfmisc_1(k2_zfmisc_1(u4_struct_0(1^[]), u1_struct_0(1^[])))), l1_graph_1(1^[])]   (14)  substitution:[[_G2950], [1^[]]]
+1.1.2.1.1.1  [-l1_graph_1(1^[])]   (2)  
+1.1.2.2  [-v5_relat_1(u2_graph_1(1^[]), u1_struct_0(1^[])), m1_subset_1(u2_graph_1(1^[]), k1_zfmisc_1(k2_zfmisc_1(u4_struct_0(1^[]), u1_struct_0(1^[]))))]   (6)  substitution:[[_G1761, _G1699, _G1638], [u2_graph_1(1^[]), u1_struct_0(1^[]), u4_struct_0(1^[])]]
+1.1.2.2.1  [-m1_subset_1(u2_graph_1(1^[]), k1_zfmisc_1(k2_zfmisc_1(u4_struct_0(1^[]), u1_struct_0(1^[])))), l1_graph_1(1^[])]   (14)  substitution:[[_G2950], [1^[]]]
+1.1.2.2.1.1  [-l1_graph_1(1^[])]   (2)  
+------------------------------------------------------
+End of proof for t3_msscyc_1

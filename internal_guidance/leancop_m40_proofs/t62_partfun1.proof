@@ -1,0 +1,33 @@
+
+t62_partfun1 is a Theorem
+Start of proof for t62_partfun1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(2^[])]
+ (2)  [-v1_funct_1(2^[])]
+ (3)  [r1_partfun1(k5_relat_1(2^[], 1^[]), 2^[])]
+ (4)  [v1_funct_1(_G950), v1_relat_1(_G950), r1_tarski(_G1094, _G950), -v1_relat_1(_G1094)]
+ (5)  [v1_funct_1(_G950), v1_relat_1(_G950), r1_tarski(_G1094, _G950), -v1_funct_1(_G1094)]
+ (6)  [v1_relat_1(_G1866), -r1_tarski(k5_relat_1(_G1866, _G1819), _G1866)]
+ (7)  [v1_funct_1(_G1344), v1_relat_1(_G1344), v1_funct_1(_G1494), v1_relat_1(_G1494), r1_tarski(_G1344, _G1494), -r1_partfun1(_G1344, _G1494)]
+
+Connection Proof:
+-----------------
+1  [r1_partfun1(k5_relat_1(2^[], 1^[]), 2^[])]   (3)  
+1.1  [-r1_partfun1(k5_relat_1(2^[], 1^[]), 2^[]), v1_funct_1(k5_relat_1(2^[], 1^[])), v1_relat_1(k5_relat_1(2^[], 1^[])), v1_funct_1(2^[]), v1_relat_1(2^[]), r1_tarski(k5_relat_1(2^[], 1^[]), 2^[])]   (7)  substitution:[[_G1344, _G1494], [k5_relat_1(2^[], 1^[]), 2^[]]]
+1.1.1  [-v1_funct_1(k5_relat_1(2^[], 1^[])), v1_funct_1(2^[]), v1_relat_1(2^[]), r1_tarski(k5_relat_1(2^[], 1^[]), 2^[])]   (5)  substitution:[[_G1094, _G950], [k5_relat_1(2^[], 1^[]), 2^[]]]
+1.1.1.1  [-v1_funct_1(2^[])]   (2)  
+1.1.1.2  [-v1_relat_1(2^[])]   (1)  
+1.1.1.3  [-r1_tarski(k5_relat_1(2^[], 1^[]), 2^[]), v1_relat_1(2^[])]   (6)  substitution:[[_G1866, _G1819], [2^[], 1^[]]]
+1.1.1.3.1  [-v1_relat_1(2^[])]   (1)  
+1.1.2  [-v1_relat_1(k5_relat_1(2^[], 1^[])), v1_funct_1(2^[]), v1_relat_1(2^[]), r1_tarski(k5_relat_1(2^[], 1^[]), 2^[])]   (4)  substitution:[[_G1094, _G950], [k5_relat_1(2^[], 1^[]), 2^[]]]
+1.1.2.1  [-v1_funct_1(2^[])]   (2)  
+1.1.2.2  [-v1_relat_1(2^[])]   (1)  
+1.1.2.3  [-r1_tarski(k5_relat_1(2^[], 1^[]), 2^[]), v1_relat_1(2^[])]   (6)  substitution:[[_G1866, _G1819], [2^[], 1^[]]]
+1.1.2.3.1  [-v1_relat_1(2^[])]   (1)  
+1.1.3  [-v1_funct_1(2^[])]   (2)  
+1.1.4  [-v1_relat_1(2^[])]   (1)  
+1.1.5  [-r1_tarski(k5_relat_1(2^[], 1^[]), 2^[]), v1_relat_1(2^[])]   (6)  substitution:[[_G1866, _G1819], [2^[], 1^[]]]
+1.1.5.1  [-v1_relat_1(2^[])]   (1)  
+------------------------------------------------------
+End of proof for t62_partfun1

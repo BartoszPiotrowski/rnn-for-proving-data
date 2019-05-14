@@ -1,0 +1,34 @@
+
+t2_zfmisc_1 is a Theorem
+Start of proof for t2_zfmisc_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k3_tarski(k1_xboole_0)=k1_xboole_0]
+ (2)  [_G3157=_G3206, - (k3_tarski(_G3157)=k3_tarski(_G3206))]
+ (3)  [- (_G1476=_G1476)]
+ (4)  [_G1575=_G1620, - (_G1620=_G1575)]
+ (5)  [- (_G1808=_G1921), _G1808=_G1864, _G1864=_G1921]
+ (6)  [-v1_xboole_0(_G2895), _G2846=_G2895, v1_xboole_0(_G2846)]
+ (7)  [-r2_hidden(_G2325, _G2462), r2_hidden(_G2258, _G2393), _G2258=_G2325, _G2393=_G2462]
+ (8)  [v1_xboole_0(_G3456), r2_hidden(_G3534, _G3456)]
+ (9)  [-v1_xboole_0(_G3456), -r2_hidden(1^[_G3456], _G3456)]
+ (10)  [- (k1_xboole_0=o_0_0_xboole_0)]
+ (11)  [-v1_xboole_0(k1_xboole_0)]
+ (12)  [_G3810=k3_tarski(_G3741), r2_hidden(_G3951, _G3810), -r2_hidden(_G3951, 2^[_G3951, _G3810, _G3741])]
+ (13)  [_G3810=k3_tarski(_G3741), r2_hidden(_G3951, _G3810), -r2_hidden(2^[_G3951, _G3810, _G3741], _G3741)]
+ (14)  [_G3810=k3_tarski(_G3741), -r2_hidden(_G3951, _G3810), r2_hidden(_G3951, _G4071), r2_hidden(_G4071, _G3741)]
+ (15)  [- (_G3810=k3_tarski(_G3741)), -r2_hidden(3^[_G3810, _G3741], _G3810), -r2_hidden(3^[_G3810, _G3741], 4^[_G3810, _G3741])]
+ (16)  [- (_G3810=k3_tarski(_G3741)), -r2_hidden(3^[_G3810, _G3741], _G3810), -r2_hidden(4^[_G3810, _G3741], _G3741)]
+ (17)  [- (_G3810=k3_tarski(_G3741)), r2_hidden(3^[_G3810, _G3741], _G3810), r2_hidden(3^[_G3810, _G3741], _G5005), r2_hidden(_G5005, _G3741)]
+
+Connection Proof:
+-----------------
+1  [v1_xboole_0(k1_xboole_0), r2_hidden(3^[k1_xboole_0, k1_xboole_0], k1_xboole_0)]   (8)  substitution:[[_G3456, _G3534], [k1_xboole_0, 3^[k1_xboole_0, k1_xboole_0]]]
+1.1  [-v1_xboole_0(k1_xboole_0)]   (11)  
+1.2  [-r2_hidden(3^[k1_xboole_0, k1_xboole_0], k1_xboole_0), - (k1_xboole_0=k3_tarski(k1_xboole_0)), -r2_hidden(4^[k1_xboole_0, k1_xboole_0], k1_xboole_0)]   (16)  substitution:[[_G3810, _G3741], [k1_xboole_0, k1_xboole_0]]
+1.2.1  [k1_xboole_0=k3_tarski(k1_xboole_0), - (k3_tarski(k1_xboole_0)=k1_xboole_0)]   (4)  substitution:[[_G1575, _G1620], [k1_xboole_0, k3_tarski(k1_xboole_0)]]
+1.2.1.1  [k3_tarski(k1_xboole_0)=k1_xboole_0]   (1)  
+1.2.2  [r2_hidden(4^[k1_xboole_0, k1_xboole_0], k1_xboole_0), v1_xboole_0(k1_xboole_0)]   (8)  substitution:[[_G3534, _G3456], [4^[k1_xboole_0, k1_xboole_0], k1_xboole_0]]
+1.2.2.1  [-v1_xboole_0(k1_xboole_0)]   (11)  
+------------------------------------------------------
+End of proof for t2_zfmisc_1

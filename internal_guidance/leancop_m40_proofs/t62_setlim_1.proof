@@ -1,0 +1,42 @@
+
+t62_setlim_1 is a Theorem
+Start of proof for t62_setlim_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_funct_1(2^[])]
+ (2)  [-v1_funct_2(2^[], k5_numbers, k9_setfam_1(1^[]))]
+ (3)  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k9_setfam_1(1^[]))))]
+ (4)  [-v2_prob_1(2^[])]
+ (5)  [k3_kurato_0(1^[], 2^[])=k3_prob_1(1^[], 2^[])]
+ (6)  [- (k3_kurato_0(_G9705, _G9780)=k1_kurato_0(_G9705, k2_setlim_1(_G9705, _G9780))), v1_funct_1(_G9780), v1_funct_2(_G9780, k5_numbers, k9_setfam_1(_G9705)), m1_subset_1(_G9780, k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k9_setfam_1(_G9705))))]
+ (7)  [- (k1_kurato_0(_G10370, k2_setlim_1(_G10370, _G10450))=k3_prob_1(_G10370, _G10450)), v2_prob_1(_G10450), v1_funct_1(_G10450), v1_funct_2(_G10450, k5_numbers, k9_setfam_1(_G10370)), m1_subset_1(_G10450, k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k9_setfam_1(_G10370))))]
+ (8)  [- (k1_kurato_0(_G6026, _G6161)=k1_kurato_0(_G6093, _G6230)), _G6026=_G6093, _G6161=_G6230]
+ (9)  [- (k2_setlim_1(_G6623, _G6758)=k2_setlim_1(_G6690, _G6827)), _G6623=_G6690, _G6758=_G6827]
+ (10)  [_G7220=_G7269, - (k1_zfmisc_1(_G7220)=k1_zfmisc_1(_G7269))]
+ (11)  [- (k2_zfmisc_1(_G7498, _G7633)=k2_zfmisc_1(_G7565, _G7702)), _G7498=_G7565, _G7633=_G7702]
+ (12)  [_G8095=_G8144, - (k9_setfam_1(_G8095)=k9_setfam_1(_G8144))]
+ (13)  [- (k3_kurato_0(_G8373, _G8508)=k3_kurato_0(_G8440, _G8577)), _G8373=_G8440, _G8508=_G8577]
+ (14)  [- (k3_prob_1(_G8961, _G9096)=k3_prob_1(_G9028, _G9165)), _G8961=_G9028, _G9096=_G9165]
+ (15)  [- (_G2988=_G2988)]
+ (16)  [_G3087=_G3132, - (_G3132=_G3087)]
+ (17)  [- (_G3320=_G3433), _G3320=_G3376, _G3376=_G3433]
+ (18)  [-v1_funct_1(_G3819), _G3770=_G3819, v1_funct_1(_G3770)]
+ (19)  [-v1_funct_2(_G4133, _G4306, _G4483), v1_funct_2(_G4048, _G4219, _G4394), _G4048=_G4133, _G4219=_G4306, _G4394=_G4483]
+ (20)  [-v2_prob_1(_G5713), _G5664=_G5713, v2_prob_1(_G5664)]
+ (21)  [-m1_subset_1(_G5143, _G5280), m1_subset_1(_G5076, _G5211), _G5076=_G5143, _G5211=_G5280]
+
+Connection Proof:
+-----------------
+1  [k3_kurato_0(1^[], 2^[])=k3_prob_1(1^[], 2^[])]   (5)  
+1.1  [- (k3_kurato_0(1^[], 2^[])=k3_prob_1(1^[], 2^[])), k3_kurato_0(1^[], 2^[])=k1_kurato_0(1^[], k2_setlim_1(1^[], 2^[])), k1_kurato_0(1^[], k2_setlim_1(1^[], 2^[]))=k3_prob_1(1^[], 2^[])]   (17)  substitution:[[_G3320, _G3433, _G3376], [k3_kurato_0(1^[], 2^[]), k3_prob_1(1^[], 2^[]), k1_kurato_0(1^[], k2_setlim_1(1^[], 2^[]))]]
+1.1.1  [- (k3_kurato_0(1^[], 2^[])=k1_kurato_0(1^[], k2_setlim_1(1^[], 2^[]))), v1_funct_1(2^[]), v1_funct_2(2^[], k5_numbers, k9_setfam_1(1^[])), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k9_setfam_1(1^[]))))]   (6)  substitution:[[_G9705, _G9780], [1^[], 2^[]]]
+1.1.1.1  [-v1_funct_1(2^[])]   (1)  
+1.1.1.2  [-v1_funct_2(2^[], k5_numbers, k9_setfam_1(1^[]))]   (2)  
+1.1.1.3  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k9_setfam_1(1^[]))))]   (3)  
+1.1.2  [- (k1_kurato_0(1^[], k2_setlim_1(1^[], 2^[]))=k3_prob_1(1^[], 2^[])), v2_prob_1(2^[]), v1_funct_1(2^[]), v1_funct_2(2^[], k5_numbers, k9_setfam_1(1^[])), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k9_setfam_1(1^[]))))]   (7)  substitution:[[_G10370, _G10450], [1^[], 2^[]]]
+1.1.2.1  [-v2_prob_1(2^[])]   (4)  
+1.1.2.2  [-v1_funct_1(2^[])]   (1)  
+1.1.2.3  [-v1_funct_2(2^[], k5_numbers, k9_setfam_1(1^[]))]   (2)  
+1.1.2.4  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k9_setfam_1(1^[]))))]   (3)  
+------------------------------------------------------
+End of proof for t62_setlim_1

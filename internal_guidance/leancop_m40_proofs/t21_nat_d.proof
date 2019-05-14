@@ -1,0 +1,35 @@
+
+t21_nat_d is a Theorem
+Start of proof for t21_nat_d
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v7_ordinal1(1^[])]
+ (2)  [-v7_ordinal1(2^[])]
+ (3)  [-v7_ordinal1(3^[])]
+ (4)  [k4_nat_d(1^[], 2^[])=k4_nat_d(k2_xcmplx_0(k3_xcmplx_0(2^[], 3^[]), 1^[]), 2^[])]
+ (5)  [-v7_ordinal1(k3_xcmplx_0(_G5224, _G5275)), v7_ordinal1(_G5224), v7_ordinal1(_G5275)]
+ (6)  [v7_ordinal1(_G5520), v7_ordinal1(_G5607), - (k4_nat_d(k3_xcmplx_0(_G5520, _G5607), _G5520)=k6_numbers)]
+ (7)  [v7_ordinal1(_G5874), v7_ordinal1(_G5983), v7_ordinal1(_G6088), k4_nat_d(_G5874, _G5983)=k6_numbers, - (k4_nat_d(k2_xcmplx_0(_G5874, _G6088), _G5983)=k4_nat_d(_G6088, _G5983))]
+ (8)  [-v7_ordinal1(_G3129), _G3080=_G3129, v7_ordinal1(_G3080)]
+ (9)  [- (_G2307=_G2307)]
+ (10)  [_G2406=_G2451, - (_G2451=_G2406)]
+ (11)  [- (_G2639=_G2752), _G2639=_G2695, _G2695=_G2752]
+ (12)  [- (k4_nat_d(_G3379, _G3514)=k4_nat_d(_G3446, _G3583)), _G3379=_G3446, _G3514=_G3583]
+ (13)  [- (k2_xcmplx_0(_G3976, _G4111)=k2_xcmplx_0(_G4043, _G4180)), _G3976=_G4043, _G4111=_G4180]
+ (14)  [- (k3_xcmplx_0(_G4564, _G4699)=k3_xcmplx_0(_G4631, _G4768)), _G4564=_G4631, _G4699=_G4768]
+
+Connection Proof:
+-----------------
+1  [k4_nat_d(1^[], 2^[])=k4_nat_d(k2_xcmplx_0(k3_xcmplx_0(2^[], 3^[]), 1^[]), 2^[])]   (4)  
+1.1  [- (k4_nat_d(1^[], 2^[])=k4_nat_d(k2_xcmplx_0(k3_xcmplx_0(2^[], 3^[]), 1^[]), 2^[])), k4_nat_d(k2_xcmplx_0(k3_xcmplx_0(2^[], 3^[]), 1^[]), 2^[])=k4_nat_d(1^[], 2^[])]   (10)  substitution:[[_G2451, _G2406], [k4_nat_d(1^[], 2^[]), k4_nat_d(k2_xcmplx_0(k3_xcmplx_0(2^[], 3^[]), 1^[]), 2^[])]]
+1.1.1  [- (k4_nat_d(k2_xcmplx_0(k3_xcmplx_0(2^[], 3^[]), 1^[]), 2^[])=k4_nat_d(1^[], 2^[])), v7_ordinal1(k3_xcmplx_0(2^[], 3^[])), v7_ordinal1(2^[]), v7_ordinal1(1^[]), k4_nat_d(k3_xcmplx_0(2^[], 3^[]), 2^[])=k6_numbers]   (7)  substitution:[[_G5874, _G6088, _G5983], [k3_xcmplx_0(2^[], 3^[]), 1^[], 2^[]]]
+1.1.1.1  [-v7_ordinal1(k3_xcmplx_0(2^[], 3^[])), v7_ordinal1(2^[]), v7_ordinal1(3^[])]   (5)  substitution:[[_G5224, _G5275], [2^[], 3^[]]]
+1.1.1.1.1  [-v7_ordinal1(2^[])]   (2)  
+1.1.1.1.2  [-v7_ordinal1(3^[])]   (3)  
+1.1.1.2  [-v7_ordinal1(2^[])]   (2)  
+1.1.1.3  [-v7_ordinal1(1^[])]   (1)  
+1.1.1.4  [- (k4_nat_d(k3_xcmplx_0(2^[], 3^[]), 2^[])=k6_numbers), v7_ordinal1(2^[]), v7_ordinal1(3^[])]   (6)  substitution:[[_G5520, _G5607], [2^[], 3^[]]]
+1.1.1.4.1  [-v7_ordinal1(2^[])]   (2)  
+1.1.1.4.2  [-v7_ordinal1(3^[])]   (3)  
+------------------------------------------------------
+End of proof for t21_nat_d

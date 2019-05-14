@@ -1,0 +1,52 @@
+
+l27_arytm_1 is a Theorem
+Start of proof for l27_arytm_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], k2_arytm_2)]
+ (2)  [-m1_subset_1(2^[], k2_arytm_2)]
+ (3)  [-m1_subset_1(3^[], k2_arytm_2)]
+ (4)  [-r1_arytm_2(1^[], 2^[])]
+ (5)  [-r1_arytm_2(3^[], 1^[])]
+ (6)  [k1_arytm_1(2^[], k1_arytm_1(1^[], 3^[]))=k7_arytm_2(k1_arytm_1(2^[], 1^[]), 3^[])]
+ (7)  [- (k7_arytm_2(_G6245, _G6302)=k7_arytm_2(_G6302, _G6245)), m1_subset_1(_G6245, k2_arytm_2), m1_subset_1(_G6302, k2_arytm_2)]
+ (8)  [-m1_subset_1(k1_arytm_1(_G6667, _G6721), k2_arytm_2), m1_subset_1(_G6667, k2_arytm_2), m1_subset_1(_G6721, k2_arytm_2)]
+ (9)  [m1_subset_1(_G7044, k2_arytm_2), m1_subset_1(_G7181, k2_arytm_2), m1_subset_1(_G7313, k2_arytm_2), r1_arytm_2(_G7044, _G7181), - (k1_arytm_1(_G7313, k1_arytm_1(_G7181, _G7044))=k1_arytm_1(k7_arytm_2(_G7313, _G7044), _G7181))]
+ (10)  [m1_subset_1(_G7809, k2_arytm_2), m1_subset_1(_G7946, k2_arytm_2), m1_subset_1(_G8078, k2_arytm_2), r1_arytm_2(_G7809, _G7946), - (k7_arytm_2(_G8078, k1_arytm_1(_G7946, _G7809))=k1_arytm_1(k7_arytm_2(_G8078, _G7946), _G7809))]
+ (11)  [- (k7_arytm_2(_G5018, _G5153)=k7_arytm_2(_G5085, _G5222)), _G5018=_G5085, _G5153=_G5222]
+ (12)  [- (k1_arytm_1(_G5606, _G5741)=k1_arytm_1(_G5673, _G5810)), _G5606=_G5673, _G5741=_G5810]
+ (13)  [- (_G3009=_G3009)]
+ (14)  [_G3108=_G3153, - (_G3153=_G3108)]
+ (15)  [- (_G3341=_G3454), _G3341=_G3397, _G3397=_G3454]
+ (16)  [-m1_subset_1(_G3858, _G3995), m1_subset_1(_G3791, _G3926), _G3791=_G3858, _G3926=_G3995]
+ (17)  [-r1_arytm_2(_G4446, _G4583), r1_arytm_2(_G4379, _G4514), _G4379=_G4446, _G4514=_G4583]
+
+Connection Proof:
+-----------------
+1  [k1_arytm_1(2^[], k1_arytm_1(1^[], 3^[]))=k7_arytm_2(k1_arytm_1(2^[], 1^[]), 3^[])]   (6)  
+1.1  [- (k1_arytm_1(2^[], k1_arytm_1(1^[], 3^[]))=k7_arytm_2(k1_arytm_1(2^[], 1^[]), 3^[])), k1_arytm_1(2^[], k1_arytm_1(1^[], 3^[]))=k1_arytm_1(k7_arytm_2(2^[], 3^[]), 1^[]), k1_arytm_1(k7_arytm_2(2^[], 3^[]), 1^[])=k7_arytm_2(k1_arytm_1(2^[], 1^[]), 3^[])]   (15)  substitution:[[_G3341, _G3454, _G3397], [k1_arytm_1(2^[], k1_arytm_1(1^[], 3^[])), k7_arytm_2(k1_arytm_1(2^[], 1^[]), 3^[]), k1_arytm_1(k7_arytm_2(2^[], 3^[]), 1^[])]]
+1.1.1  [- (k1_arytm_1(2^[], k1_arytm_1(1^[], 3^[]))=k1_arytm_1(k7_arytm_2(2^[], 3^[]), 1^[])), m1_subset_1(3^[], k2_arytm_2), m1_subset_1(1^[], k2_arytm_2), m1_subset_1(2^[], k2_arytm_2), r1_arytm_2(3^[], 1^[])]   (9)  substitution:[[_G7313, _G7181, _G7044], [2^[], 1^[], 3^[]]]
+1.1.1.1  [-m1_subset_1(3^[], k2_arytm_2)]   (3)  
+1.1.1.2  [-m1_subset_1(1^[], k2_arytm_2)]   (1)  
+1.1.1.3  [-m1_subset_1(2^[], k2_arytm_2)]   (2)  
+1.1.1.4  [-r1_arytm_2(3^[], 1^[])]   (5)  
+1.1.2  [- (k1_arytm_1(k7_arytm_2(2^[], 3^[]), 1^[])=k7_arytm_2(k1_arytm_1(2^[], 1^[]), 3^[])), k1_arytm_1(k7_arytm_2(2^[], 3^[]), 1^[])=k1_arytm_1(k7_arytm_2(3^[], 2^[]), 1^[]), k1_arytm_1(k7_arytm_2(3^[], 2^[]), 1^[])=k7_arytm_2(k1_arytm_1(2^[], 1^[]), 3^[])]   (15)  substitution:[[_G3341, _G3454, _G3397], [k1_arytm_1(k7_arytm_2(2^[], 3^[]), 1^[]), k7_arytm_2(k1_arytm_1(2^[], 1^[]), 3^[]), k1_arytm_1(k7_arytm_2(3^[], 2^[]), 1^[])]]
+1.1.2.1  [- (k1_arytm_1(k7_arytm_2(2^[], 3^[]), 1^[])=k1_arytm_1(k7_arytm_2(3^[], 2^[]), 1^[])), k7_arytm_2(2^[], 3^[])=k7_arytm_2(3^[], 2^[]), 1^[]=1^[]]   (12)  substitution:[[_G5606, _G5741, _G5673, _G5810], [k7_arytm_2(2^[], 3^[]), 1^[], k7_arytm_2(3^[], 2^[]), 1^[]]]
+1.1.2.1.1  [- (k7_arytm_2(2^[], 3^[])=k7_arytm_2(3^[], 2^[])), m1_subset_1(2^[], k2_arytm_2), m1_subset_1(3^[], k2_arytm_2)]   (7)  substitution:[[_G6245, _G6302], [2^[], 3^[]]]
+1.1.2.1.1.1  [-m1_subset_1(2^[], k2_arytm_2)]   (2)  
+1.1.2.1.1.2  [-m1_subset_1(3^[], k2_arytm_2)]   (3)  
+1.1.2.1.2  [- (1^[]=1^[])]   (13)  substitution:[[_G3009], [1^[]]]
+1.1.2.2  [- (k1_arytm_1(k7_arytm_2(3^[], 2^[]), 1^[])=k7_arytm_2(k1_arytm_1(2^[], 1^[]), 3^[])), k7_arytm_2(k1_arytm_1(2^[], 1^[]), 3^[])=k1_arytm_1(k7_arytm_2(3^[], 2^[]), 1^[])]   (14)  substitution:[[_G3153, _G3108], [k1_arytm_1(k7_arytm_2(3^[], 2^[]), 1^[]), k7_arytm_2(k1_arytm_1(2^[], 1^[]), 3^[])]]
+1.1.2.2.1  [- (k7_arytm_2(k1_arytm_1(2^[], 1^[]), 3^[])=k1_arytm_1(k7_arytm_2(3^[], 2^[]), 1^[])), k7_arytm_2(k1_arytm_1(2^[], 1^[]), 3^[])=k7_arytm_2(3^[], k1_arytm_1(2^[], 1^[])), k7_arytm_2(3^[], k1_arytm_1(2^[], 1^[]))=k1_arytm_1(k7_arytm_2(3^[], 2^[]), 1^[])]   (15)  substitution:[[_G3341, _G3454, _G3397], [k7_arytm_2(k1_arytm_1(2^[], 1^[]), 3^[]), k1_arytm_1(k7_arytm_2(3^[], 2^[]), 1^[]), k7_arytm_2(3^[], k1_arytm_1(2^[], 1^[]))]]
+1.1.2.2.1.1  [- (k7_arytm_2(k1_arytm_1(2^[], 1^[]), 3^[])=k7_arytm_2(3^[], k1_arytm_1(2^[], 1^[]))), m1_subset_1(k1_arytm_1(2^[], 1^[]), k2_arytm_2), m1_subset_1(3^[], k2_arytm_2)]   (7)  substitution:[[_G6245, _G6302], [k1_arytm_1(2^[], 1^[]), 3^[]]]
+1.1.2.2.1.1.1  [-m1_subset_1(k1_arytm_1(2^[], 1^[]), k2_arytm_2), m1_subset_1(2^[], k2_arytm_2), m1_subset_1(1^[], k2_arytm_2)]   (8)  substitution:[[_G6667, _G6721], [2^[], 1^[]]]
+1.1.2.2.1.1.1.1  [-m1_subset_1(2^[], k2_arytm_2)]   (2)  
+1.1.2.2.1.1.1.2  [-m1_subset_1(1^[], k2_arytm_2)]   (1)  
+1.1.2.2.1.1.2  [-m1_subset_1(3^[], k2_arytm_2)]   (3)  
+1.1.2.2.1.2  [- (k7_arytm_2(3^[], k1_arytm_1(2^[], 1^[]))=k1_arytm_1(k7_arytm_2(3^[], 2^[]), 1^[])), m1_subset_1(1^[], k2_arytm_2), m1_subset_1(2^[], k2_arytm_2), m1_subset_1(3^[], k2_arytm_2), r1_arytm_2(1^[], 2^[])]   (10)  substitution:[[_G8078, _G7946, _G7809], [3^[], 2^[], 1^[]]]
+1.1.2.2.1.2.1  [-m1_subset_1(1^[], k2_arytm_2)]   (1)  
+1.1.2.2.1.2.2  [-m1_subset_1(2^[], k2_arytm_2)]   (2)  
+1.1.2.2.1.2.3  [-m1_subset_1(3^[], k2_arytm_2)]   (3)  
+1.1.2.2.1.2.4  [-r1_arytm_2(1^[], 2^[])]   (4)  
+------------------------------------------------------
+End of proof for l27_arytm_1

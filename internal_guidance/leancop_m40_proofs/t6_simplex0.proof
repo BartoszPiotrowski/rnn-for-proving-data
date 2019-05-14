@@ -1,0 +1,61 @@
+
+t6_simplex0 is a Theorem
+Start of proof for t6_simplex0
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-8^[], r1_setfam_1(5^[], 6^[])]
+ (2)  [-8^[], -r1_tarski(k1_simplex0(5^[]), k1_simplex0(6^[]))]
+ (3)  [-7^[], r1_tarski(k1_simplex0(5^[]), k1_simplex0(6^[]))]
+ (4)  [-7^[], -r1_setfam_1(5^[], 6^[])]
+ (5)  [7^[], 8^[]]
+ (6)  [r1_setfam_1(_G1166, _G1237), r2_hidden(_G1366, _G1166), -r2_hidden(1^[_G1366, _G1237, _G1166], _G1237)]
+ (7)  [r1_setfam_1(_G1166, _G1237), r2_hidden(_G1366, _G1166), -r1_tarski(_G1366, 1^[_G1366, _G1237, _G1166])]
+ (8)  [-r1_setfam_1(_G1166, _G1237), -r2_hidden(2^[_G1237, _G1166], _G1166)]
+ (9)  [-r1_setfam_1(_G1166, _G1237), r2_hidden(_G3646, _G1237), r1_tarski(2^[_G1237, _G1166], _G3646)]
+ (10)  [-r1_tarski(_G1787, _G1843), -r2_hidden(3^[_G1843, _G1787], _G1787)]
+ (11)  [-r1_tarski(_G1787, _G1843), r2_hidden(3^[_G1843, _G1787], _G1843)]
+ (12)  [r1_tarski(_G1787, _G1843), r2_hidden(_G1957, _G1787), -r2_hidden(_G1957, _G1843)]
+ (13)  [-r1_tarski(_G2189, _G2189)]
+ (14)  [-r1_tarski(_G2341, _G2454), r1_tarski(_G2341, _G2397), r1_tarski(_G2397, _G2454)]
+ (15)  [r2_hidden(_G2740, k1_simplex0(_G2798)), -r1_tarski(_G2740, 4^[_G2798, _G2740])]
+ (16)  [r2_hidden(_G2740, k1_simplex0(_G2798)), -r2_hidden(4^[_G2798, _G2740], _G2798)]
+ (17)  [-r2_hidden(_G2740, k1_simplex0(_G2798)), r1_tarski(_G2740, _G2928), r2_hidden(_G2928, _G2798)]
+
+Connection Proof:
+-----------------
+1  [7^[], 8^[]]   (5)  
+1.1  [-7^[], -r1_setfam_1(5^[], 6^[])]   (4)  
+1.1.1  [r1_setfam_1(5^[], 6^[]), r2_hidden(4^[5^[], 3^[k1_simplex0(6^[]), k1_simplex0(5^[])]], 5^[]), -r1_tarski(4^[5^[], 3^[k1_simplex0(6^[]), k1_simplex0(5^[])]], 1^[4^[5^[], 3^[k1_simplex0(6^[]), k1_simplex0(5^[])]], 6^[], 5^[]])]   (7)  substitution:[[_G1166, _G1237, _G1366], [5^[], 6^[], 4^[5^[], 3^[k1_simplex0(6^[]), k1_simplex0(5^[])]]]]
+1.1.1.1  [-r2_hidden(4^[5^[], 3^[k1_simplex0(6^[]), k1_simplex0(5^[])]], 5^[]), r2_hidden(3^[k1_simplex0(6^[]), k1_simplex0(5^[])], k1_simplex0(5^[]))]   (16)  substitution:[[_G2798, _G2740], [5^[], 3^[k1_simplex0(6^[]), k1_simplex0(5^[])]]]
+1.1.1.1.1  [-r2_hidden(3^[k1_simplex0(6^[]), k1_simplex0(5^[])], k1_simplex0(5^[])), -r1_tarski(k1_simplex0(5^[]), k1_simplex0(6^[]))]   (10)  substitution:[[_G1843, _G1787], [k1_simplex0(6^[]), k1_simplex0(5^[])]]
+1.1.1.1.1.1  [r1_tarski(k1_simplex0(5^[]), k1_simplex0(6^[])), -7^[]]   (3)  
+1.1.1.1.1.1.1  [7^[]]   (reduction:1)  
+1.1.1.2  [r1_tarski(4^[5^[], 3^[k1_simplex0(6^[]), k1_simplex0(5^[])]], 1^[4^[5^[], 3^[k1_simplex0(6^[]), k1_simplex0(5^[])]], 6^[], 5^[]]), -r1_tarski(3^[k1_simplex0(6^[]), k1_simplex0(5^[])], 1^[4^[5^[], 3^[k1_simplex0(6^[]), k1_simplex0(5^[])]], 6^[], 5^[]]), r1_tarski(3^[k1_simplex0(6^[]), k1_simplex0(5^[])], 4^[5^[], 3^[k1_simplex0(6^[]), k1_simplex0(5^[])]])]   (14)  substitution:[[_G2397, _G2454, _G2341], [4^[5^[], 3^[k1_simplex0(6^[]), k1_simplex0(5^[])]], 1^[4^[5^[], 3^[k1_simplex0(6^[]), k1_simplex0(5^[])]], 6^[], 5^[]], 3^[k1_simplex0(6^[]), k1_simplex0(5^[])]]]
+1.1.1.2.1  [r1_tarski(3^[k1_simplex0(6^[]), k1_simplex0(5^[])], 1^[4^[5^[], 3^[k1_simplex0(6^[]), k1_simplex0(5^[])]], 6^[], 5^[]]), -r2_hidden(3^[k1_simplex0(6^[]), k1_simplex0(5^[])], k1_simplex0(6^[])), r2_hidden(1^[4^[5^[], 3^[k1_simplex0(6^[]), k1_simplex0(5^[])]], 6^[], 5^[]], 6^[])]   (17)  substitution:[[_G2740, _G2928, _G2798], [3^[k1_simplex0(6^[]), k1_simplex0(5^[])], 1^[4^[5^[], 3^[k1_simplex0(6^[]), k1_simplex0(5^[])]], 6^[], 5^[]], 6^[]]]
+1.1.1.2.1.1  [r2_hidden(3^[k1_simplex0(6^[]), k1_simplex0(5^[])], k1_simplex0(6^[])), -r1_tarski(k1_simplex0(5^[]), k1_simplex0(6^[]))]   (11)  substitution:[[_G1843, _G1787], [k1_simplex0(6^[]), k1_simplex0(5^[])]]
+1.1.1.2.1.1.1  [r1_tarski(k1_simplex0(5^[]), k1_simplex0(6^[])), -7^[]]   (3)  
+1.1.1.2.1.1.1.1  [7^[]]   (reduction:1)  
+1.1.1.2.1.2  [-r2_hidden(1^[4^[5^[], 3^[k1_simplex0(6^[]), k1_simplex0(5^[])]], 6^[], 5^[]], 6^[]), r1_setfam_1(5^[], 6^[]), r2_hidden(4^[5^[], 3^[k1_simplex0(6^[]), k1_simplex0(5^[])]], 5^[])]   (6)  substitution:[[_G1366, _G1237, _G1166], [4^[5^[], 3^[k1_simplex0(6^[]), k1_simplex0(5^[])]], 6^[], 5^[]]]
+1.1.1.2.1.2.1  [-r1_setfam_1(5^[], 6^[])]   (reduction:1.1)  
+1.1.1.2.1.2.2  [-r2_hidden(4^[5^[], 3^[k1_simplex0(6^[]), k1_simplex0(5^[])]], 5^[])]   (lemmata:1.1.1)  
+1.1.1.2.2  [-r1_tarski(3^[k1_simplex0(6^[]), k1_simplex0(5^[])], 4^[5^[], 3^[k1_simplex0(6^[]), k1_simplex0(5^[])]]), r2_hidden(3^[k1_simplex0(6^[]), k1_simplex0(5^[])], k1_simplex0(5^[]))]   (15)  substitution:[[_G2740, _G2798], [3^[k1_simplex0(6^[]), k1_simplex0(5^[])], 5^[]]]
+1.1.1.2.2.1  [-r2_hidden(3^[k1_simplex0(6^[]), k1_simplex0(5^[])], k1_simplex0(5^[])), -r1_tarski(k1_simplex0(5^[]), k1_simplex0(6^[]))]   (10)  substitution:[[_G1843, _G1787], [k1_simplex0(6^[]), k1_simplex0(5^[])]]
+1.1.1.2.2.1.1  [r1_tarski(k1_simplex0(5^[]), k1_simplex0(6^[])), -7^[]]   (3)  
+1.1.1.2.2.1.1.1  [7^[]]   (reduction:1)  
+1.2  [-8^[], -r1_tarski(k1_simplex0(5^[]), k1_simplex0(6^[]))]   (2)  
+1.2.1  [r1_tarski(k1_simplex0(5^[]), k1_simplex0(6^[])), r2_hidden(2^[6^[], 5^[]], k1_simplex0(5^[])), -r2_hidden(2^[6^[], 5^[]], k1_simplex0(6^[]))]   (12)  substitution:[[_G1787, _G1843, _G1957], [k1_simplex0(5^[]), k1_simplex0(6^[]), 2^[6^[], 5^[]]]]
+1.2.1.1  [-r2_hidden(2^[6^[], 5^[]], k1_simplex0(5^[])), r1_tarski(2^[6^[], 5^[]], 2^[6^[], 5^[]]), r2_hidden(2^[6^[], 5^[]], 5^[])]   (17)  substitution:[[_G2740, _G2798, _G2928], [2^[6^[], 5^[]], 5^[], 2^[6^[], 5^[]]]]
+1.2.1.1.1  [-r1_tarski(2^[6^[], 5^[]], 2^[6^[], 5^[]]), -r2_hidden(3^[2^[6^[], 5^[]], 2^[6^[], 5^[]]], 2^[6^[], 5^[]])]   (10)  substitution:[[_G1787, _G1843], [2^[6^[], 5^[]], 2^[6^[], 5^[]]]]
+1.2.1.1.1.1  [r2_hidden(3^[2^[6^[], 5^[]], 2^[6^[], 5^[]]], 2^[6^[], 5^[]]), -r1_tarski(2^[6^[], 5^[]], 2^[6^[], 5^[]])]   (11)  substitution:[[_G1843, _G1787], [2^[6^[], 5^[]], 2^[6^[], 5^[]]]]
+1.2.1.1.1.1.1  [r1_tarski(2^[6^[], 5^[]], 2^[6^[], 5^[]])]   (reduction:1.2.1.1)  
+1.2.1.1.2  [-r2_hidden(2^[6^[], 5^[]], 5^[]), -r1_setfam_1(5^[], 6^[])]   (8)  substitution:[[_G1237, _G1166], [6^[], 5^[]]]
+1.2.1.1.2.1  [r1_setfam_1(5^[], 6^[]), -8^[]]   (1)  
+1.2.1.1.2.1.1  [8^[]]   (reduction:1)  
+1.2.1.2  [r2_hidden(2^[6^[], 5^[]], k1_simplex0(6^[])), -r1_tarski(2^[6^[], 5^[]], 4^[6^[], 2^[6^[], 5^[]]])]   (15)  substitution:[[_G2740, _G2798], [2^[6^[], 5^[]], 6^[]]]
+1.2.1.2.1  [r1_tarski(2^[6^[], 5^[]], 4^[6^[], 2^[6^[], 5^[]]]), -r1_setfam_1(5^[], 6^[]), r2_hidden(4^[6^[], 2^[6^[], 5^[]]], 6^[])]   (9)  substitution:[[_G1237, _G1166, _G3646], [6^[], 5^[], 4^[6^[], 2^[6^[], 5^[]]]]]
+1.2.1.2.1.1  [r1_setfam_1(5^[], 6^[]), -8^[]]   (1)  
+1.2.1.2.1.1.1  [8^[]]   (reduction:1)  
+1.2.1.2.1.2  [-r2_hidden(4^[6^[], 2^[6^[], 5^[]]], 6^[]), r2_hidden(2^[6^[], 5^[]], k1_simplex0(6^[]))]   (16)  substitution:[[_G2798, _G2740], [6^[], 2^[6^[], 5^[]]]]
+1.2.1.2.1.2.1  [-r2_hidden(2^[6^[], 5^[]], k1_simplex0(6^[]))]   (reduction:1.2.1)  
+------------------------------------------------------
+End of proof for t6_simplex0

@@ -1,0 +1,32 @@
+
+t5_toler_1 is a Theorem
+Start of proof for t5_toler_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v6_relat_2(k1_eqrel_1(1^[]))]
+ (2)  [- (k1_eqrel_1(_G4845)=k2_zfmisc_1(_G4845, _G4845))]
+ (3)  [-v1_relat_1(k2_zfmisc_1(_G5002, _G5043))]
+ (4)  [-v7_relat_2(k1_eqrel_1(_G5163))]
+ (5)  [-v1_relat_2(_G4540), v1_relat_1(_G4540), v7_relat_2(_G4540)]
+ (6)  [-v6_relat_2(_G4540), v1_relat_1(_G4540), v7_relat_2(_G4540)]
+ (7)  [_G4220=_G4269, - (k1_eqrel_1(_G4220)=k1_eqrel_1(_G4269))]
+ (8)  [- (k2_zfmisc_1(_G3632, _G3767)=k2_zfmisc_1(_G3699, _G3836)), _G3632=_G3699, _G3767=_G3836]
+ (9)  [- (_G1663=_G1663)]
+ (10)  [_G1762=_G1807, - (_G1807=_G1762)]
+ (11)  [- (_G1995=_G2108), _G1995=_G2051, _G2051=_G2108]
+ (12)  [-v1_relat_2(_G2494), _G2445=_G2494, v1_relat_2(_G2445)]
+ (13)  [-v1_relat_1(_G2772), _G2723=_G2772, v1_relat_1(_G2723)]
+ (14)  [-v7_relat_2(_G3050), _G3001=_G3050, v7_relat_2(_G3001)]
+ (15)  [-v6_relat_2(_G3319), _G3270=_G3319, v6_relat_2(_G3270)]
+
+Connection Proof:
+-----------------
+1  [v6_relat_2(k1_eqrel_1(1^[]))]   (1)  
+1.1  [-v6_relat_2(k1_eqrel_1(1^[])), v1_relat_1(k1_eqrel_1(1^[])), v7_relat_2(k1_eqrel_1(1^[]))]   (6)  substitution:[[_G4540], [k1_eqrel_1(1^[])]]
+1.1.1  [-v1_relat_1(k1_eqrel_1(1^[])), k2_zfmisc_1(1^[], 1^[])=k1_eqrel_1(1^[]), v1_relat_1(k2_zfmisc_1(1^[], 1^[]))]   (13)  substitution:[[_G2772, _G2723], [k1_eqrel_1(1^[]), k2_zfmisc_1(1^[], 1^[])]]
+1.1.1.1  [- (k2_zfmisc_1(1^[], 1^[])=k1_eqrel_1(1^[])), k1_eqrel_1(1^[])=k2_zfmisc_1(1^[], 1^[])]   (10)  substitution:[[_G1807, _G1762], [k2_zfmisc_1(1^[], 1^[]), k1_eqrel_1(1^[])]]
+1.1.1.1.1  [- (k1_eqrel_1(1^[])=k2_zfmisc_1(1^[], 1^[]))]   (2)  substitution:[[_G4845], [1^[]]]
+1.1.1.2  [-v1_relat_1(k2_zfmisc_1(1^[], 1^[]))]   (3)  substitution:[[_G5002, _G5043], [1^[], 1^[]]]
+1.1.2  [-v7_relat_2(k1_eqrel_1(1^[]))]   (4)  substitution:[[_G5163], [1^[]]]
+------------------------------------------------------
+End of proof for t5_toler_1

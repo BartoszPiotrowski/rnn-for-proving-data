@@ -1,0 +1,42 @@
+
+l47_integra8 is a Theorem
+Start of proof for l47_integra8
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k9_xtuple_0(k24_sin_cos)=k1_numbers]
+ (2)  [m1_subset_1(_G8792, k1_zfmisc_1(k2_zfmisc_1(_G8683, _G8737))), -v1_relat_1(_G8792)]
+ (3)  [m1_subset_1(_G9158, k1_zfmisc_1(k2_zfmisc_1(_G9035, _G9096))), -v4_relat_1(_G9158, _G9035)]
+ (4)  [m1_subset_1(_G9158, k1_zfmisc_1(k2_zfmisc_1(_G9035, _G9096))), -v5_relat_1(_G9158, _G9096)]
+ (5)  [-v1_funct_1(k24_sin_cos)]
+ (6)  [-v1_funct_2(k24_sin_cos, k1_numbers, k1_numbers)]
+ (7)  [-m1_subset_1(k24_sin_cos, k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]
+ (8)  [- (k1_relset_1(k1_numbers, k24_sin_cos)=k1_numbers)]
+ (9)  [- (k1_relset_1(_G9795, _G9850)=k9_xtuple_0(_G9850)), v1_relat_1(_G9850), v4_relat_1(_G9850, _G9795)]
+ (10)  [_G6858=_G6907, - (k1_zfmisc_1(_G6858)=k1_zfmisc_1(_G6907))]
+ (11)  [- (k2_zfmisc_1(_G7136, _G7271)=k2_zfmisc_1(_G7203, _G7340)), _G7136=_G7203, _G7271=_G7340]
+ (12)  [_G8321=_G8370, - (k9_xtuple_0(_G8321)=k9_xtuple_0(_G8370))]
+ (13)  [- (k1_relset_1(_G7733, _G7868)=k1_relset_1(_G7800, _G7937)), _G7733=_G7800, _G7868=_G7937]
+ (14)  [- (_G2584=_G2584)]
+ (15)  [_G2683=_G2728, - (_G2728=_G2683)]
+ (16)  [- (_G2916=_G3029), _G2916=_G2972, _G2972=_G3029]
+ (17)  [-v5_relat_1(_G3433, _G3570), v5_relat_1(_G3366, _G3501), _G3366=_G3433, _G3501=_G3570]
+ (18)  [-v1_funct_1(_G4012), _G3963=_G4012, v1_funct_1(_G3963)]
+ (19)  [-v1_funct_2(_G4326, _G4499, _G4676), v1_funct_2(_G4241, _G4412, _G4587), _G4241=_G4326, _G4412=_G4499, _G4587=_G4676]
+ (20)  [-m1_subset_1(_G5336, _G5473), m1_subset_1(_G5269, _G5404), _G5269=_G5336, _G5404=_G5473]
+ (21)  [-v1_relat_1(_G5915), _G5866=_G5915, v1_relat_1(_G5866)]
+ (22)  [-v4_relat_1(_G6202, _G6339), v4_relat_1(_G6135, _G6270), _G6135=_G6202, _G6270=_G6339]
+
+Connection Proof:
+-----------------
+1  [k9_xtuple_0(k24_sin_cos)=k1_numbers]   (1)  
+1.1  [- (k9_xtuple_0(k24_sin_cos)=k1_numbers), k1_numbers=k9_xtuple_0(k24_sin_cos)]   (15)  substitution:[[_G2728, _G2683], [k9_xtuple_0(k24_sin_cos), k1_numbers]]
+1.1.1  [- (k1_numbers=k9_xtuple_0(k24_sin_cos)), k1_numbers=k1_relset_1(k1_numbers, k24_sin_cos), k1_relset_1(k1_numbers, k24_sin_cos)=k9_xtuple_0(k24_sin_cos)]   (16)  substitution:[[_G2916, _G3029, _G2972], [k1_numbers, k9_xtuple_0(k24_sin_cos), k1_relset_1(k1_numbers, k24_sin_cos)]]
+1.1.1.1  [- (k1_numbers=k1_relset_1(k1_numbers, k24_sin_cos)), k1_relset_1(k1_numbers, k24_sin_cos)=k1_numbers]   (15)  substitution:[[_G2728, _G2683], [k1_numbers, k1_relset_1(k1_numbers, k24_sin_cos)]]
+1.1.1.1.1  [- (k1_relset_1(k1_numbers, k24_sin_cos)=k1_numbers)]   (8)  
+1.1.1.2  [- (k1_relset_1(k1_numbers, k24_sin_cos)=k9_xtuple_0(k24_sin_cos)), v1_relat_1(k24_sin_cos), v4_relat_1(k24_sin_cos, k1_numbers)]   (9)  substitution:[[_G9795, _G9850], [k1_numbers, k24_sin_cos]]
+1.1.1.2.1  [-v1_relat_1(k24_sin_cos), m1_subset_1(k24_sin_cos, k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]   (2)  substitution:[[_G8792, _G8683, _G8737], [k24_sin_cos, k1_numbers, k1_numbers]]
+1.1.1.2.1.1  [-m1_subset_1(k24_sin_cos, k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]   (7)  
+1.1.1.2.2  [-v4_relat_1(k24_sin_cos, k1_numbers), m1_subset_1(k24_sin_cos, k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]   (3)  substitution:[[_G9158, _G9035, _G9096], [k24_sin_cos, k1_numbers, k1_numbers]]
+1.1.1.2.2.1  [-m1_subset_1(k24_sin_cos, k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]   (7)  
+------------------------------------------------------
+End of proof for l47_integra8

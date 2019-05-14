@@ -1,0 +1,57 @@
+
+t68_euclid is a Theorem
+Start of proof for t68_euclid
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v7_ordinal1(1^[])]
+ (2)  [-m1_subset_1(2^[], u1_struct_0(k15_euclid(1^[])))]
+ (3)  [-v1_relat_1(3^[])]
+ (4)  [-v1_funct_1(3^[])]
+ (5)  [-v3_valued_0(3^[])]
+ (6)  [- (2^[]=3^[])]
+ (7)  [k4_algstr_0(k15_euclid(1^[]), 2^[])=k30_valued_1(3^[])]
+ (8)  [v7_ordinal1(_G7979), m1_subset_1(_G8064, u1_struct_0(k15_euclid(_G7979))), -v1_finseq_1(_G8064)]
+ (9)  [- (k6_rvsum_1(_G9155)=k30_valued_1(_G9155)), v1_relat_1(_G9155), v1_funct_1(_G9155), v3_valued_0(_G9155), v1_finseq_1(_G9155)]
+ (10)  [- (k4_algstr_0(k15_euclid(_G8288), _G8380)=k6_rvsum_1(_G8473)), _G8380=_G8473, v7_ordinal1(_G8288), m1_subset_1(_G8380, u1_struct_0(k15_euclid(_G8288))), v1_relat_1(_G8473), v1_funct_1(_G8473), v1_finseq_1(_G8473), v3_valued_0(_G8473)]
+ (11)  [_G6174=_G6223, - (k6_rvsum_1(_G6174)=k6_rvsum_1(_G6223))]
+ (12)  [_G6452=_G6501, - (u1_struct_0(_G6452)=u1_struct_0(_G6501))]
+ (13)  [- (k4_algstr_0(_G6730, _G6865)=k4_algstr_0(_G6797, _G6934)), _G6730=_G6797, _G6865=_G6934]
+ (14)  [_G7327=_G7376, - (k15_euclid(_G7327)=k15_euclid(_G7376))]
+ (15)  [_G7596=_G7645, - (k30_valued_1(_G7596)=k30_valued_1(_G7645))]
+ (16)  [- (_G3288=_G3288)]
+ (17)  [_G3387=_G3432, - (_G3432=_G3387)]
+ (18)  [- (_G3620=_G3733), _G3620=_G3676, _G3676=_G3733]
+ (19)  [-v1_finseq_1(_G4119), _G4070=_G4119, v1_finseq_1(_G4070)]
+ (20)  [-v7_ordinal1(_G4397), _G4348=_G4397, v7_ordinal1(_G4348)]
+ (21)  [-m1_subset_1(_G4693, _G4830), m1_subset_1(_G4626, _G4761), _G4626=_G4693, _G4761=_G4830]
+ (22)  [-v1_relat_1(_G5272), _G5223=_G5272, v1_relat_1(_G5223)]
+ (23)  [-v1_funct_1(_G5550), _G5501=_G5550, v1_funct_1(_G5501)]
+ (24)  [-v3_valued_0(_G5819), _G5770=_G5819, v3_valued_0(_G5770)]
+
+Connection Proof:
+-----------------
+1  [k4_algstr_0(k15_euclid(1^[]), 2^[])=k30_valued_1(3^[])]   (7)  
+1.1  [- (k4_algstr_0(k15_euclid(1^[]), 2^[])=k30_valued_1(3^[])), k4_algstr_0(k15_euclid(1^[]), 2^[])=k6_rvsum_1(3^[]), k6_rvsum_1(3^[])=k30_valued_1(3^[])]   (18)  substitution:[[_G3620, _G3733, _G3676], [k4_algstr_0(k15_euclid(1^[]), 2^[]), k30_valued_1(3^[]), k6_rvsum_1(3^[])]]
+1.1.1  [- (k4_algstr_0(k15_euclid(1^[]), 2^[])=k6_rvsum_1(3^[])), 2^[]=3^[], v7_ordinal1(1^[]), m1_subset_1(2^[], u1_struct_0(k15_euclid(1^[]))), v1_relat_1(3^[]), v1_funct_1(3^[]), v1_finseq_1(3^[]), v3_valued_0(3^[])]   (10)  substitution:[[_G8288, _G8380, _G8473], [1^[], 2^[], 3^[]]]
+1.1.1.1  [- (2^[]=3^[])]   (6)  
+1.1.1.2  [-v7_ordinal1(1^[])]   (1)  
+1.1.1.3  [-m1_subset_1(2^[], u1_struct_0(k15_euclid(1^[])))]   (2)  
+1.1.1.4  [-v1_relat_1(3^[])]   (3)  
+1.1.1.5  [-v1_funct_1(3^[])]   (4)  
+1.1.1.6  [-v1_finseq_1(3^[]), 2^[]=3^[], v1_finseq_1(2^[])]   (19)  substitution:[[_G4119, _G4070], [3^[], 2^[]]]
+1.1.1.6.1  [- (2^[]=3^[])]   (6)  
+1.1.1.6.2  [-v1_finseq_1(2^[]), v7_ordinal1(1^[]), m1_subset_1(2^[], u1_struct_0(k15_euclid(1^[])))]   (8)  substitution:[[_G8064, _G7979], [2^[], 1^[]]]
+1.1.1.6.2.1  [-v7_ordinal1(1^[])]   (1)  
+1.1.1.6.2.2  [-m1_subset_1(2^[], u1_struct_0(k15_euclid(1^[])))]   (2)  
+1.1.1.7  [-v3_valued_0(3^[])]   (5)  
+1.1.2  [- (k6_rvsum_1(3^[])=k30_valued_1(3^[])), v1_relat_1(3^[]), v1_funct_1(3^[]), v3_valued_0(3^[]), v1_finseq_1(3^[])]   (9)  substitution:[[_G9155], [3^[]]]
+1.1.2.1  [-v1_relat_1(3^[])]   (3)  
+1.1.2.2  [-v1_funct_1(3^[])]   (4)  
+1.1.2.3  [-v3_valued_0(3^[])]   (5)  
+1.1.2.4  [-v1_finseq_1(3^[]), 2^[]=3^[], v1_finseq_1(2^[])]   (19)  substitution:[[_G4119, _G4070], [3^[], 2^[]]]
+1.1.2.4.1  [- (2^[]=3^[])]   (6)  
+1.1.2.4.2  [-v1_finseq_1(2^[]), v7_ordinal1(1^[]), m1_subset_1(2^[], u1_struct_0(k15_euclid(1^[])))]   (8)  substitution:[[_G8064, _G7979], [2^[], 1^[]]]
+1.1.2.4.2.1  [-v7_ordinal1(1^[])]   (1)  
+1.1.2.4.2.2  [-m1_subset_1(2^[], u1_struct_0(k15_euclid(1^[])))]   (2)  
+------------------------------------------------------
+End of proof for t68_euclid

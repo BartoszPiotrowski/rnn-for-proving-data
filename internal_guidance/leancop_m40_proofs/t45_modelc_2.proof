@@ -1,0 +1,64 @@
+
+t45_modelc_2 is a Theorem
+Start of proof for t45_modelc_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-7^[], r2_hidden(4^[], k13_modelc_2(5^[]))]
+ (2)  [-7^[], -r2_modelc_2(4^[], 5^[])]
+ (3)  [-6^[], r2_modelc_2(4^[], 5^[])]
+ (4)  [-6^[], -r2_hidden(4^[], k13_modelc_2(5^[]))]
+ (5)  [-v1_modelc_2(4^[])]
+ (6)  [-m2_finseq_1(4^[], k5_numbers)]
+ (7)  [-v1_modelc_2(5^[])]
+ (8)  [-m2_finseq_1(5^[], k5_numbers)]
+ (9)  [6^[], 7^[]]
+ (10)  [m2_finseq_1(_G5119, k5_numbers), v1_modelc_2(_G5119), _G5320=k13_modelc_2(_G5119), r2_hidden(_G5472, _G5320), -v1_modelc_2(1^[_G5472, _G5320, _G5119])]
+ (11)  [m2_finseq_1(_G5119, k5_numbers), v1_modelc_2(_G5119), _G5320=k13_modelc_2(_G5119), r2_hidden(_G5472, _G5320), -m2_finseq_1(1^[_G5472, _G5320, _G5119], k5_numbers)]
+ (12)  [m2_finseq_1(_G5119, k5_numbers), v1_modelc_2(_G5119), _G5320=k13_modelc_2(_G5119), r2_hidden(_G5472, _G5320), - (1^[_G5472, _G5320, _G5119]=_G5472)]
+ (13)  [m2_finseq_1(_G5119, k5_numbers), v1_modelc_2(_G5119), _G5320=k13_modelc_2(_G5119), r2_hidden(_G5472, _G5320), -r2_modelc_2(1^[_G5472, _G5320, _G5119], _G5119)]
+ (14)  [m2_finseq_1(_G5119, k5_numbers), v1_modelc_2(_G5119), _G5320=k13_modelc_2(_G5119), -r2_hidden(_G5472, _G5320), m2_finseq_1(_G5603, k5_numbers), v1_modelc_2(_G5603), _G5603=_G5472, r2_modelc_2(_G5603, _G5119)]
+ (15)  [m2_finseq_1(_G5119, k5_numbers), v1_modelc_2(_G5119), - (_G5320=k13_modelc_2(_G5119)), -r2_hidden(2^[_G5320, _G5119], _G5320), -v1_modelc_2(3^[_G5320, _G5119])]
+ (16)  [m2_finseq_1(_G5119, k5_numbers), v1_modelc_2(_G5119), - (_G5320=k13_modelc_2(_G5119)), -r2_hidden(2^[_G5320, _G5119], _G5320), -m2_finseq_1(3^[_G5320, _G5119], k5_numbers)]
+ (17)  [m2_finseq_1(_G5119, k5_numbers), v1_modelc_2(_G5119), - (_G5320=k13_modelc_2(_G5119)), -r2_hidden(2^[_G5320, _G5119], _G5320), - (3^[_G5320, _G5119]=2^[_G5320, _G5119])]
+ (18)  [m2_finseq_1(_G5119, k5_numbers), v1_modelc_2(_G5119), - (_G5320=k13_modelc_2(_G5119)), -r2_hidden(2^[_G5320, _G5119], _G5320), -r2_modelc_2(3^[_G5320, _G5119], _G5119)]
+ (19)  [m2_finseq_1(_G5119, k5_numbers), v1_modelc_2(_G5119), - (_G5320=k13_modelc_2(_G5119)), r2_hidden(2^[_G5320, _G5119], _G5320), m2_finseq_1(_G7178, k5_numbers), v1_modelc_2(_G7178), _G7178=2^[_G5320, _G5119], r2_modelc_2(_G7178, _G5119)]
+ (20)  [_G4829=_G4878, - (k13_modelc_2(_G4829)=k13_modelc_2(_G4878))]
+ (21)  [- (_G1912=_G1912)]
+ (22)  [_G2011=_G2056, - (_G2056=_G2011)]
+ (23)  [- (_G2244=_G2357), _G2244=_G2300, _G2300=_G2357]
+ (24)  [-v1_modelc_2(_G2743), _G2694=_G2743, v1_modelc_2(_G2694)]
+ (25)  [-m2_finseq_1(_G3039, _G3176), m2_finseq_1(_G2972, _G3107), _G2972=_G3039, _G3107=_G3176]
+ (26)  [-r2_hidden(_G3636, _G3773), r2_hidden(_G3569, _G3704), _G3569=_G3636, _G3704=_G3773]
+ (27)  [-r2_modelc_2(_G4224, _G4361), r2_modelc_2(_G4157, _G4292), _G4157=_G4224, _G4292=_G4361]
+
+Connection Proof:
+-----------------
+1  [6^[], 7^[]]   (9)  
+1.1  [-6^[], r2_modelc_2(4^[], 5^[])]   (3)  
+1.1.1  [-r2_modelc_2(4^[], 5^[]), r2_modelc_2(1^[4^[], k13_modelc_2(5^[]), 5^[]], 5^[]), 1^[4^[], k13_modelc_2(5^[]), 5^[]]=4^[], 5^[]=5^[]]   (27)  substitution:[[_G4224, _G4361, _G4157, _G4292], [4^[], 5^[], 1^[4^[], k13_modelc_2(5^[]), 5^[]], 5^[]]]
+1.1.1.1  [-r2_modelc_2(1^[4^[], k13_modelc_2(5^[]), 5^[]], 5^[]), m2_finseq_1(5^[], k5_numbers), v1_modelc_2(5^[]), k13_modelc_2(5^[])=k13_modelc_2(5^[]), r2_hidden(4^[], k13_modelc_2(5^[]))]   (13)  substitution:[[_G5472, _G5320, _G5119], [4^[], k13_modelc_2(5^[]), 5^[]]]
+1.1.1.1.1  [-m2_finseq_1(5^[], k5_numbers)]   (8)  
+1.1.1.1.2  [-v1_modelc_2(5^[])]   (7)  
+1.1.1.1.3  [- (k13_modelc_2(5^[])=k13_modelc_2(5^[]))]   (21)  substitution:[[_G1912], [k13_modelc_2(5^[])]]
+1.1.1.1.4  [-r2_hidden(4^[], k13_modelc_2(5^[])), -6^[]]   (4)  
+1.1.1.1.4.1  [6^[]]   (reduction:1)  
+1.1.1.2  [- (1^[4^[], k13_modelc_2(5^[]), 5^[]]=4^[]), m2_finseq_1(5^[], k5_numbers), v1_modelc_2(5^[]), k13_modelc_2(5^[])=k13_modelc_2(5^[]), r2_hidden(4^[], k13_modelc_2(5^[]))]   (12)  substitution:[[_G5472, _G5320, _G5119], [4^[], k13_modelc_2(5^[]), 5^[]]]
+1.1.1.2.1  [-m2_finseq_1(5^[], k5_numbers)]   (8)  
+1.1.1.2.2  [-v1_modelc_2(5^[])]   (7)  
+1.1.1.2.3  [- (k13_modelc_2(5^[])=k13_modelc_2(5^[]))]   (21)  substitution:[[_G1912], [k13_modelc_2(5^[])]]
+1.1.1.2.4  [-r2_hidden(4^[], k13_modelc_2(5^[])), -6^[]]   (4)  
+1.1.1.2.4.1  [6^[]]   (reduction:1)  
+1.1.1.3  [- (5^[]=5^[])]   (21)  substitution:[[_G1912], [5^[]]]
+1.2  [-7^[], r2_hidden(4^[], k13_modelc_2(5^[]))]   (1)  
+1.2.1  [-r2_hidden(4^[], k13_modelc_2(5^[])), m2_finseq_1(5^[], k5_numbers), v1_modelc_2(5^[]), k13_modelc_2(5^[])=k13_modelc_2(5^[]), m2_finseq_1(4^[], k5_numbers), v1_modelc_2(4^[]), 4^[]=4^[], r2_modelc_2(4^[], 5^[])]   (14)  substitution:[[_G5472, _G5320, _G5119, _G5603], [4^[], k13_modelc_2(5^[]), 5^[], 4^[]]]
+1.2.1.1  [-m2_finseq_1(5^[], k5_numbers)]   (8)  
+1.2.1.2  [-v1_modelc_2(5^[])]   (7)  
+1.2.1.3  [- (k13_modelc_2(5^[])=k13_modelc_2(5^[])), 5^[]=5^[]]   (20)  substitution:[[_G4829, _G4878], [5^[], 5^[]]]
+1.2.1.3.1  [- (5^[]=5^[])]   (21)  substitution:[[_G1912], [5^[]]]
+1.2.1.4  [-m2_finseq_1(4^[], k5_numbers)]   (6)  
+1.2.1.5  [-v1_modelc_2(4^[])]   (5)  
+1.2.1.6  [- (4^[]=4^[])]   (21)  substitution:[[_G1912], [4^[]]]
+1.2.1.7  [-r2_modelc_2(4^[], 5^[]), -7^[]]   (2)  
+1.2.1.7.1  [7^[]]   (reduction:1)  
+------------------------------------------------------
+End of proof for t45_modelc_2

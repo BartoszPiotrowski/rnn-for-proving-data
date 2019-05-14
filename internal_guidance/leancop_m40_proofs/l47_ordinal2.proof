@@ -1,0 +1,26 @@
+
+l47_ordinal2 is a Theorem
+Start of proof for l47_ordinal2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [np__1=k1_ordinal1(k1_xboole_0)]
+ (2)  [- (k1_ordinal1(np__0)=np__1)]
+ (3)  [-v1_xboole_0(np__0)]
+ (4)  [v1_xboole_0(_G2434), - (_G2434=k1_xboole_0)]
+ (5)  [_G2041=_G2090, - (k1_ordinal1(_G2041)=k1_ordinal1(_G2090))]
+ (6)  [-v1_xboole_0(_G1800), _G1751=_G1800, v1_xboole_0(_G1751)]
+ (7)  [- (_G978=_G978)]
+ (8)  [_G1077=_G1122, - (_G1122=_G1077)]
+ (9)  [- (_G1310=_G1423), _G1310=_G1366, _G1366=_G1423]
+
+Connection Proof:
+-----------------
+1  [np__1=k1_ordinal1(k1_xboole_0)]   (1)  
+1.1  [- (np__1=k1_ordinal1(k1_xboole_0)), np__1=k1_ordinal1(np__0), k1_ordinal1(np__0)=k1_ordinal1(k1_xboole_0)]   (9)  substitution:[[_G1310, _G1423, _G1366], [np__1, k1_ordinal1(k1_xboole_0), k1_ordinal1(np__0)]]
+1.1.1  [- (np__1=k1_ordinal1(np__0)), k1_ordinal1(np__0)=np__1]   (8)  substitution:[[_G1122, _G1077], [np__1, k1_ordinal1(np__0)]]
+1.1.1.1  [- (k1_ordinal1(np__0)=np__1)]   (2)  
+1.1.2  [- (k1_ordinal1(np__0)=k1_ordinal1(k1_xboole_0)), np__0=k1_xboole_0]   (5)  substitution:[[_G2041, _G2090], [np__0, k1_xboole_0]]
+1.1.2.1  [- (np__0=k1_xboole_0), v1_xboole_0(np__0)]   (4)  substitution:[[_G2434], [np__0]]
+1.1.2.1.1  [-v1_xboole_0(np__0)]   (3)  
+------------------------------------------------------
+End of proof for l47_ordinal2

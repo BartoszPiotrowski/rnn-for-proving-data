@@ -1,0 +1,63 @@
+
+l10_modelc_3 is a Theorem
+Start of proof for l10_modelc_3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_modelc_2(1^[])]
+ (2)  [-m2_finseq_1(1^[], k5_numbers)]
+ (3)  [-v1_modelc_2(2^[])]
+ (4)  [-m2_finseq_1(2^[], k5_numbers)]
+ (5)  [-v1_modelc_2(3^[])]
+ (6)  [-m2_finseq_1(3^[], k5_numbers)]
+ (7)  [-r2_modelc_2(1^[], 2^[])]
+ (8)  [-r2_modelc_2(3^[], 2^[])]
+ (9)  [m1_subset_1(k2_tarski(1^[], 3^[]), k1_zfmisc_1(k13_modelc_2(2^[])))]
+ (10)  [-v1_xboole_0(k1_xboole_0)]
+ (11)  [r2_hidden(_G8236, _G8281), -m1_subset_1(_G8236, _G8281)]
+ (12)  [m1_subset_1(_G8547, _G8478), m1_subset_1(_G8674, _G8478), - (_G8478=k1_xboole_0), -m1_subset_1(k2_tarski(_G8547, _G8674), k1_zfmisc_1(_G8478))]
+ (13)  [r2_hidden(_G9610, _G9656), v1_xboole_0(_G9656)]
+ (14)  [m2_finseq_1(_G9064, k5_numbers), v1_modelc_2(_G9064), m2_finseq_1(_G9243, k5_numbers), v1_modelc_2(_G9243), r2_hidden(_G9064, k13_modelc_2(_G9243)), -r2_modelc_2(_G9064, _G9243)]
+ (15)  [m2_finseq_1(_G9064, k5_numbers), v1_modelc_2(_G9064), m2_finseq_1(_G9243, k5_numbers), v1_modelc_2(_G9243), -r2_hidden(_G9064, k13_modelc_2(_G9243)), r2_modelc_2(_G9064, _G9243)]
+ (16)  [- (k2_tarski(_G6997, _G7132)=k2_tarski(_G7064, _G7201)), _G6997=_G7064, _G7132=_G7201]
+ (17)  [_G7594=_G7643, - (k1_zfmisc_1(_G7594)=k1_zfmisc_1(_G7643))]
+ (18)  [_G7863=_G7912, - (k13_modelc_2(_G7863)=k13_modelc_2(_G7912))]
+ (19)  [- (_G3154=_G3154)]
+ (20)  [_G3253=_G3298, - (_G3298=_G3253)]
+ (21)  [- (_G3486=_G3599), _G3486=_G3542, _G3542=_G3599]
+ (22)  [-r2_hidden(_G4003, _G4140), r2_hidden(_G3936, _G4071), _G3936=_G4003, _G4071=_G4140]
+ (23)  [-v1_xboole_0(_G4582), _G4533=_G4582, v1_xboole_0(_G4533)]
+ (24)  [-v1_modelc_2(_G4860), _G4811=_G4860, v1_modelc_2(_G4811)]
+ (25)  [-m2_finseq_1(_G5156, _G5293), m2_finseq_1(_G5089, _G5224), _G5089=_G5156, _G5224=_G5293]
+ (26)  [-r2_modelc_2(_G5753, _G5890), r2_modelc_2(_G5686, _G5821), _G5686=_G5753, _G5821=_G5890]
+ (27)  [-m1_subset_1(_G6341, _G6478), m1_subset_1(_G6274, _G6409), _G6274=_G6341, _G6409=_G6478]
+
+Connection Proof:
+-----------------
+1  [m1_subset_1(k2_tarski(1^[], 3^[]), k1_zfmisc_1(k13_modelc_2(2^[])))]   (9)  
+1.1  [-m1_subset_1(k2_tarski(1^[], 3^[]), k1_zfmisc_1(k13_modelc_2(2^[]))), m1_subset_1(1^[], k13_modelc_2(2^[])), m1_subset_1(3^[], k13_modelc_2(2^[])), - (k13_modelc_2(2^[])=k1_xboole_0)]   (12)  substitution:[[_G8547, _G8674, _G8478], [1^[], 3^[], k13_modelc_2(2^[])]]
+1.1.1  [-m1_subset_1(1^[], k13_modelc_2(2^[])), r2_hidden(1^[], k13_modelc_2(2^[]))]   (11)  substitution:[[_G8236, _G8281], [1^[], k13_modelc_2(2^[])]]
+1.1.1.1  [-r2_hidden(1^[], k13_modelc_2(2^[])), m2_finseq_1(1^[], k5_numbers), v1_modelc_2(1^[]), m2_finseq_1(2^[], k5_numbers), v1_modelc_2(2^[]), r2_modelc_2(1^[], 2^[])]   (15)  substitution:[[_G9064, _G9243], [1^[], 2^[]]]
+1.1.1.1.1  [-m2_finseq_1(1^[], k5_numbers)]   (2)  
+1.1.1.1.2  [-v1_modelc_2(1^[])]   (1)  
+1.1.1.1.3  [-m2_finseq_1(2^[], k5_numbers)]   (4)  
+1.1.1.1.4  [-v1_modelc_2(2^[])]   (3)  
+1.1.1.1.5  [-r2_modelc_2(1^[], 2^[])]   (7)  
+1.1.2  [-m1_subset_1(3^[], k13_modelc_2(2^[])), r2_hidden(3^[], k13_modelc_2(2^[]))]   (11)  substitution:[[_G8236, _G8281], [3^[], k13_modelc_2(2^[])]]
+1.1.2.1  [-r2_hidden(3^[], k13_modelc_2(2^[])), m2_finseq_1(3^[], k5_numbers), v1_modelc_2(3^[]), m2_finseq_1(2^[], k5_numbers), v1_modelc_2(2^[]), r2_modelc_2(3^[], 2^[])]   (15)  substitution:[[_G9064, _G9243], [3^[], 2^[]]]
+1.1.2.1.1  [-m2_finseq_1(3^[], k5_numbers)]   (6)  
+1.1.2.1.2  [-v1_modelc_2(3^[])]   (5)  
+1.1.2.1.3  [-m2_finseq_1(2^[], k5_numbers)]   (4)  
+1.1.2.1.4  [-v1_modelc_2(2^[])]   (3)  
+1.1.2.1.5  [-r2_modelc_2(3^[], 2^[])]   (8)  
+1.1.3  [k13_modelc_2(2^[])=k1_xboole_0, -r2_hidden(1^[], k1_xboole_0), r2_hidden(1^[], k13_modelc_2(2^[])), 1^[]=1^[]]   (22)  substitution:[[_G4071, _G4140, _G4003, _G3936], [k13_modelc_2(2^[]), k1_xboole_0, 1^[], 1^[]]]
+1.1.3.1  [r2_hidden(1^[], k1_xboole_0), v1_xboole_0(k1_xboole_0)]   (13)  substitution:[[_G9610, _G9656], [1^[], k1_xboole_0]]
+1.1.3.1.1  [-v1_xboole_0(k1_xboole_0)]   (10)  
+1.1.3.2  [-r2_hidden(1^[], k13_modelc_2(2^[])), m2_finseq_1(1^[], k5_numbers), v1_modelc_2(1^[]), m2_finseq_1(2^[], k5_numbers), v1_modelc_2(2^[]), r2_modelc_2(1^[], 2^[])]   (15)  substitution:[[_G9064, _G9243], [1^[], 2^[]]]
+1.1.3.2.1  [-m2_finseq_1(1^[], k5_numbers)]   (2)  
+1.1.3.2.2  [-v1_modelc_2(1^[])]   (1)  
+1.1.3.2.3  [-m2_finseq_1(2^[], k5_numbers)]   (4)  
+1.1.3.2.4  [-v1_modelc_2(2^[])]   (3)  
+1.1.3.2.5  [-r2_modelc_2(1^[], 2^[])]   (7)  
+1.1.3.3  [- (1^[]=1^[])]   (19)  substitution:[[_G3154], [1^[]]]
+------------------------------------------------------
+End of proof for l10_modelc_3

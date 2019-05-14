@@ -1,0 +1,61 @@
+
+t31_zf_lang1 is a Theorem
+Start of proof for t31_zf_lang1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_zf_lang(1^[])]
+ (2)  [-m2_finseq_1(1^[], k5_numbers)]
+ (3)  [-v1_zf_lang(2^[])]
+ (4)  [-m2_finseq_1(2^[], k5_numbers)]
+ (5)  [k20_zf_lang(k11_zf_lang(1^[], 2^[]))=k7_zf_lang(1^[], k6_zf_lang(2^[]))]
+ (6)  [m2_finseq_1(_G7568, k5_numbers), v1_zf_lang(_G7568), - (k11_zf_lang(_G7568, _G7749)=k6_zf_lang(k7_zf_lang(_G7568, k6_zf_lang(_G7749)))), v1_zf_lang(_G7749), m2_finseq_1(_G7749, k5_numbers)]
+ (7)  [m1_finseq_1(_G8141, k5_numbers), -m2_finseq_1(k6_zf_lang(_G8141), k5_numbers)]
+ (8)  [-m2_finseq_1(k7_zf_lang(_G8340, _G8394), k5_numbers), m1_finseq_1(_G8340, k5_numbers), m1_finseq_1(_G8394, k5_numbers)]
+ (9)  [-v1_zf_lang(k6_zf_lang(_G8717)), v1_zf_lang(_G8717), m1_finseq_1(_G8717, k5_numbers)]
+ (10)  [-v1_zf_lang(k7_zf_lang(_G8948, _G9011)), m1_finseq_1(_G8948, k5_numbers), v1_zf_lang(_G8948), v1_zf_lang(_G9011), m1_finseq_1(_G9011, k5_numbers)]
+ (11)  [- (k20_zf_lang(k6_zf_lang(_G9657))=_G9657), v1_zf_lang(_G9657), m2_finseq_1(_G9657, k5_numbers)]
+ (12)  [m2_finseq_1(_G9469, _G9424), -m1_finseq_1(_G9469, _G9424)]
+ (13)  [-m2_finseq_1(_G9469, _G9424), m1_finseq_1(_G9469, _G9424)]
+ (14)  [_G5743=_G5792, - (k20_zf_lang(_G5743)=k20_zf_lang(_G5792))]
+ (15)  [- (k11_zf_lang(_G6021, _G6156)=k11_zf_lang(_G6088, _G6225)), _G6021=_G6088, _G6156=_G6225]
+ (16)  [_G7206=_G7255, - (k6_zf_lang(_G7206)=k6_zf_lang(_G7255))]
+ (17)  [- (k7_zf_lang(_G6618, _G6753)=k7_zf_lang(_G6685, _G6822)), _G6618=_G6685, _G6753=_G6822]
+ (18)  [- (_G3435=_G3435)]
+ (19)  [_G3534=_G3579, - (_G3579=_G3534)]
+ (20)  [- (_G3767=_G3880), _G3767=_G3823, _G3823=_G3880]
+ (21)  [-m1_finseq_1(_G4284, _G4421), m1_finseq_1(_G4217, _G4352), _G4217=_G4284, _G4352=_G4421]
+ (22)  [-v1_zf_lang(_G4863), _G4814=_G4863, v1_zf_lang(_G4814)]
+ (23)  [-m2_finseq_1(_G5150, _G5287), m2_finseq_1(_G5083, _G5218), _G5083=_G5150, _G5218=_G5287]
+
+Connection Proof:
+-----------------
+1  [k20_zf_lang(k11_zf_lang(1^[], 2^[]))=k7_zf_lang(1^[], k6_zf_lang(2^[]))]   (5)  
+1.1  [- (k20_zf_lang(k11_zf_lang(1^[], 2^[]))=k7_zf_lang(1^[], k6_zf_lang(2^[]))), k20_zf_lang(k11_zf_lang(1^[], 2^[]))=k20_zf_lang(k6_zf_lang(k7_zf_lang(1^[], k6_zf_lang(2^[])))), k20_zf_lang(k6_zf_lang(k7_zf_lang(1^[], k6_zf_lang(2^[]))))=k7_zf_lang(1^[], k6_zf_lang(2^[]))]   (20)  substitution:[[_G3767, _G3880, _G3823], [k20_zf_lang(k11_zf_lang(1^[], 2^[])), k7_zf_lang(1^[], k6_zf_lang(2^[])), k20_zf_lang(k6_zf_lang(k7_zf_lang(1^[], k6_zf_lang(2^[]))))]]
+1.1.1  [- (k20_zf_lang(k11_zf_lang(1^[], 2^[]))=k20_zf_lang(k6_zf_lang(k7_zf_lang(1^[], k6_zf_lang(2^[]))))), k11_zf_lang(1^[], 2^[])=k6_zf_lang(k7_zf_lang(1^[], k6_zf_lang(2^[])))]   (14)  substitution:[[_G5743, _G5792], [k11_zf_lang(1^[], 2^[]), k6_zf_lang(k7_zf_lang(1^[], k6_zf_lang(2^[])))]]
+1.1.1.1  [- (k11_zf_lang(1^[], 2^[])=k6_zf_lang(k7_zf_lang(1^[], k6_zf_lang(2^[])))), m2_finseq_1(1^[], k5_numbers), v1_zf_lang(1^[]), v1_zf_lang(2^[]), m2_finseq_1(2^[], k5_numbers)]   (6)  substitution:[[_G7568, _G7749], [1^[], 2^[]]]
+1.1.1.1.1  [-m2_finseq_1(1^[], k5_numbers)]   (2)  
+1.1.1.1.2  [-v1_zf_lang(1^[])]   (1)  
+1.1.1.1.3  [-v1_zf_lang(2^[])]   (3)  
+1.1.1.1.4  [-m2_finseq_1(2^[], k5_numbers)]   (4)  
+1.1.2  [- (k20_zf_lang(k6_zf_lang(k7_zf_lang(1^[], k6_zf_lang(2^[]))))=k7_zf_lang(1^[], k6_zf_lang(2^[]))), v1_zf_lang(k7_zf_lang(1^[], k6_zf_lang(2^[]))), m2_finseq_1(k7_zf_lang(1^[], k6_zf_lang(2^[])), k5_numbers)]   (11)  substitution:[[_G9657], [k7_zf_lang(1^[], k6_zf_lang(2^[]))]]
+1.1.2.1  [-v1_zf_lang(k7_zf_lang(1^[], k6_zf_lang(2^[]))), m1_finseq_1(1^[], k5_numbers), v1_zf_lang(1^[]), v1_zf_lang(k6_zf_lang(2^[])), m1_finseq_1(k6_zf_lang(2^[]), k5_numbers)]   (10)  substitution:[[_G8948, _G9011], [1^[], k6_zf_lang(2^[])]]
+1.1.2.1.1  [-m1_finseq_1(1^[], k5_numbers), m2_finseq_1(1^[], k5_numbers)]   (12)  substitution:[[_G9469, _G9424], [1^[], k5_numbers]]
+1.1.2.1.1.1  [-m2_finseq_1(1^[], k5_numbers)]   (2)  
+1.1.2.1.2  [-v1_zf_lang(1^[])]   (1)  
+1.1.2.1.3  [-v1_zf_lang(k6_zf_lang(2^[])), v1_zf_lang(2^[]), m1_finseq_1(2^[], k5_numbers)]   (9)  substitution:[[_G8717], [2^[]]]
+1.1.2.1.3.1  [-v1_zf_lang(2^[])]   (3)  
+1.1.2.1.3.2  [-m1_finseq_1(2^[], k5_numbers), m2_finseq_1(2^[], k5_numbers)]   (12)  substitution:[[_G9469, _G9424], [2^[], k5_numbers]]
+1.1.2.1.3.2.1  [-m2_finseq_1(2^[], k5_numbers)]   (4)  
+1.1.2.1.4  [-m1_finseq_1(k6_zf_lang(2^[]), k5_numbers), m2_finseq_1(k6_zf_lang(2^[]), k5_numbers)]   (12)  substitution:[[_G9469, _G9424], [k6_zf_lang(2^[]), k5_numbers]]
+1.1.2.1.4.1  [-m2_finseq_1(k6_zf_lang(2^[]), k5_numbers), m1_finseq_1(2^[], k5_numbers)]   (7)  substitution:[[_G8141], [2^[]]]
+1.1.2.1.4.1.1  [-m1_finseq_1(2^[], k5_numbers), m2_finseq_1(2^[], k5_numbers)]   (12)  substitution:[[_G9469, _G9424], [2^[], k5_numbers]]
+1.1.2.1.4.1.1.1  [-m2_finseq_1(2^[], k5_numbers)]   (4)  
+1.1.2.2  [-m2_finseq_1(k7_zf_lang(1^[], k6_zf_lang(2^[])), k5_numbers), m1_finseq_1(1^[], k5_numbers), m1_finseq_1(k6_zf_lang(2^[]), k5_numbers)]   (8)  substitution:[[_G8340, _G8394], [1^[], k6_zf_lang(2^[])]]
+1.1.2.2.1  [-m1_finseq_1(1^[], k5_numbers), m2_finseq_1(1^[], k5_numbers)]   (12)  substitution:[[_G9469, _G9424], [1^[], k5_numbers]]
+1.1.2.2.1.1  [-m2_finseq_1(1^[], k5_numbers)]   (2)  
+1.1.2.2.2  [-m1_finseq_1(k6_zf_lang(2^[]), k5_numbers), m2_finseq_1(k6_zf_lang(2^[]), k5_numbers)]   (12)  substitution:[[_G9469, _G9424], [k6_zf_lang(2^[]), k5_numbers]]
+1.1.2.2.2.1  [-m2_finseq_1(k6_zf_lang(2^[]), k5_numbers), m1_finseq_1(2^[], k5_numbers)]   (7)  substitution:[[_G8141], [2^[]]]
+1.1.2.2.2.1.1  [-m1_finseq_1(2^[], k5_numbers), m2_finseq_1(2^[], k5_numbers)]   (12)  substitution:[[_G9469, _G9424], [2^[], k5_numbers]]
+1.1.2.2.2.1.1.1  [-m2_finseq_1(2^[], k5_numbers)]   (4)  
+------------------------------------------------------
+End of proof for t31_zf_lang1

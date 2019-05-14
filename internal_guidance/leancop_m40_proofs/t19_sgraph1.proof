@@ -1,0 +1,50 @@
+
+t19_sgraph1 is a Theorem
+Start of proof for t19_sgraph1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_sgraph1(5^[], 4^[])]
+ (2)  [-r2_hidden(6^[], u1_sgraph1(5^[]))]
+ (3)  [r2_hidden(_G12886, u1_struct_0(5^[])), r2_hidden(_G12891, u1_struct_0(5^[])), - (_G12886=_G12891), 6^[]=k2_tarski(_G12886, _G12891)]
+ (4)  [-r1_tarski(_G8538, _G8594), -r2_hidden(1^[_G8594, _G8538], _G8538)]
+ (5)  [-r1_tarski(_G8538, _G8594), r2_hidden(1^[_G8594, _G8538], _G8594)]
+ (6)  [r1_tarski(_G8538, _G8594), r2_hidden(_G8708, _G8538), -r2_hidden(_G8708, _G8594)]
+ (7)  [m1_sgraph1(_G8999, _G8940), -r1_tarski(u1_struct_0(_G8999), _G8940)]
+ (8)  [m1_sgraph1(_G8999, _G8940), -r1_tarski(u1_sgraph1(_G8999), k2_sgraph1(u1_struct_0(_G8999)))]
+ (9)  [r2_hidden(_G9428, k2_sgraph1(_G9335)), -v1_finset_1(_G9428)]
+ (10)  [r2_hidden(_G9428, k2_sgraph1(_G9335)), -m1_subset_1(_G9428, k1_zfmisc_1(_G9335))]
+ (11)  [r2_hidden(_G9428, k2_sgraph1(_G9335)), -r2_hidden(2^[_G9428, _G9335], _G9335)]
+ (12)  [r2_hidden(_G9428, k2_sgraph1(_G9335)), -r2_hidden(3^[_G9428, _G9335], _G9335)]
+ (13)  [r2_hidden(_G9428, k2_sgraph1(_G9335)), 2^[_G9428, _G9335]=3^[_G9428, _G9335]]
+ (14)  [r2_hidden(_G9428, k2_sgraph1(_G9335)), - (_G9428=k2_tarski(2^[_G9428, _G9335], 3^[_G9428, _G9335]))]
+ (15)  [-r2_hidden(_G9428, k2_sgraph1(_G9335)), m1_subset_1(_G9428, k1_zfmisc_1(_G9335)), v1_finset_1(_G9428), r2_hidden(_G9717, _G9335), r2_hidden(_G9791, _G9335), - (_G9717=_G9791), _G9428=k2_tarski(_G9717, _G9791)]
+ (16)  [_G6733=_G6782, - (k2_sgraph1(_G6733)=k2_sgraph1(_G6782))]
+ (17)  [_G7011=_G7060, - (k1_zfmisc_1(_G7011)=k1_zfmisc_1(_G7060))]
+ (18)  [_G7289=_G7338, - (u1_sgraph1(_G7289)=u1_sgraph1(_G7338))]
+ (19)  [_G7567=_G7616, - (u1_struct_0(_G7567)=u1_struct_0(_G7616))]
+ (20)  [- (k2_tarski(_G7836, _G7971)=k2_tarski(_G7903, _G8040)), _G7836=_G7903, _G7971=_G8040]
+ (21)  [- (_G3189=_G3189)]
+ (22)  [_G3288=_G3333, - (_G3333=_G3288)]
+ (23)  [- (_G3521=_G3634), _G3521=_G3577, _G3577=_G3634]
+ (24)  [-r1_tarski(_G4038, _G4175), r1_tarski(_G3971, _G4106), _G3971=_G4038, _G4106=_G4175]
+ (25)  [-v1_finset_1(_G4617), _G4568=_G4617, v1_finset_1(_G4568)]
+ (26)  [-m1_subset_1(_G4913, _G5050), m1_subset_1(_G4846, _G4981), _G4846=_G4913, _G4981=_G5050]
+ (27)  [-m1_sgraph1(_G5510, _G5647), m1_sgraph1(_G5443, _G5578), _G5443=_G5510, _G5578=_G5647]
+ (28)  [-r2_hidden(_G6098, _G6235), r2_hidden(_G6031, _G6166), _G6031=_G6098, _G6166=_G6235]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(6^[], k2_sgraph1(u1_struct_0(5^[]))), 2^[6^[], u1_struct_0(5^[])]=3^[6^[], u1_struct_0(5^[])]]   (13)  substitution:[[_G9428, _G9335], [6^[], u1_struct_0(5^[])]]
+1.1  [-r2_hidden(6^[], k2_sgraph1(u1_struct_0(5^[]))), r1_tarski(u1_sgraph1(5^[]), k2_sgraph1(u1_struct_0(5^[]))), r2_hidden(6^[], u1_sgraph1(5^[]))]   (6)  substitution:[[_G8708, _G8594, _G8538], [6^[], k2_sgraph1(u1_struct_0(5^[])), u1_sgraph1(5^[])]]
+1.1.1  [-r1_tarski(u1_sgraph1(5^[]), k2_sgraph1(u1_struct_0(5^[]))), m1_sgraph1(5^[], 4^[])]   (8)  substitution:[[_G8999, _G8940], [5^[], 4^[]]]
+1.1.1.1  [-m1_sgraph1(5^[], 4^[])]   (1)  
+1.1.2  [-r2_hidden(6^[], u1_sgraph1(5^[]))]   (2)  
+1.2  [- (2^[6^[], u1_struct_0(5^[])]=3^[6^[], u1_struct_0(5^[])]), r2_hidden(2^[6^[], u1_struct_0(5^[])], u1_struct_0(5^[])), r2_hidden(3^[6^[], u1_struct_0(5^[])], u1_struct_0(5^[])), 6^[]=k2_tarski(2^[6^[], u1_struct_0(5^[])], 3^[6^[], u1_struct_0(5^[])])]   (3)  substitution:[[_G12886, _G12891], [2^[6^[], u1_struct_0(5^[])], 3^[6^[], u1_struct_0(5^[])]]]
+1.2.1  [-r2_hidden(2^[6^[], u1_struct_0(5^[])], u1_struct_0(5^[])), r2_hidden(6^[], k2_sgraph1(u1_struct_0(5^[])))]   (11)  substitution:[[_G9428, _G9335], [6^[], u1_struct_0(5^[])]]
+1.2.1.1  [-r2_hidden(6^[], k2_sgraph1(u1_struct_0(5^[])))]   (lemmata:1)  
+1.2.2  [-r2_hidden(3^[6^[], u1_struct_0(5^[])], u1_struct_0(5^[])), r2_hidden(6^[], k2_sgraph1(u1_struct_0(5^[])))]   (12)  substitution:[[_G9428, _G9335], [6^[], u1_struct_0(5^[])]]
+1.2.2.1  [-r2_hidden(6^[], k2_sgraph1(u1_struct_0(5^[])))]   (lemmata:1)  
+1.2.3  [- (6^[]=k2_tarski(2^[6^[], u1_struct_0(5^[])], 3^[6^[], u1_struct_0(5^[])])), r2_hidden(6^[], k2_sgraph1(u1_struct_0(5^[])))]   (14)  substitution:[[_G9428, _G9335], [6^[], u1_struct_0(5^[])]]
+1.2.3.1  [-r2_hidden(6^[], k2_sgraph1(u1_struct_0(5^[])))]   (lemmata:1)  
+------------------------------------------------------
+End of proof for t19_sgraph1

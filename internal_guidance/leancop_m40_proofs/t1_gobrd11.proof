@@ -1,0 +1,54 @@
+
+t1_gobrd11 is a Theorem
+Start of proof for t1_gobrd11
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(1^[])]
+ (2)  [-v2_pre_topc(1^[])]
+ (3)  [-l1_pre_topc(1^[])]
+ (4)  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]
+ (5)  [-m1_subset_1(3^[], u1_struct_0(1^[]))]
+ (6)  [-r2_hidden(3^[], 2^[])]
+ (7)  [-v2_connsp_1(2^[], 1^[])]
+ (8)  [r1_tarski(2^[], k1_connsp_1(1^[], 3^[]))]
+ (9)  [-r1_tarski(_G9484, _G9484)]
+ (10)  [l1_pre_topc(_G10563), v2_pre_topc(_G10563), m1_subset_1(_G10737, k1_zfmisc_1(u1_struct_0(_G10563))), -r1_tarski(_G10737, k1_connsp_3(_G10563, _G10737)), m1_subset_1(_G10911, k1_zfmisc_1(u1_struct_0(_G10563))), v2_connsp_1(_G10911, _G10563), r1_tarski(_G10737, _G10911)]
+ (11)  [l1_pre_topc(_G9636), v2_pre_topc(_G9636), -v2_struct_0(_G9636), m1_subset_1(_G9885, k1_zfmisc_1(u1_struct_0(_G9636))), m1_subset_1(_G10051, u1_struct_0(_G9636)), - (k1_connsp_1(_G9636, _G10051)=k1_connsp_3(_G9636, _G9885)), v2_connsp_1(_G9885, _G9636), r2_hidden(_G10051, _G9885)]
+ (12)  [- (k1_connsp_3(_G7659, _G7794)=k1_connsp_3(_G7726, _G7863)), _G7659=_G7726, _G7794=_G7863]
+ (13)  [_G8256=_G8305, - (k1_zfmisc_1(_G8256)=k1_zfmisc_1(_G8305))]
+ (14)  [_G8534=_G8583, - (u1_struct_0(_G8534)=u1_struct_0(_G8583))]
+ (15)  [- (k1_connsp_1(_G8803, _G8938)=k1_connsp_1(_G8870, _G9007)), _G8803=_G8870, _G8938=_G9007]
+ (16)  [- (_G3517=_G3517)]
+ (17)  [_G3616=_G3661, - (_G3661=_G3616)]
+ (18)  [- (_G3849=_G3962), _G3849=_G3905, _G3905=_G3962]
+ (19)  [-v2_struct_0(_G4348), _G4299=_G4348, v2_struct_0(_G4299)]
+ (20)  [-v2_pre_topc(_G4626), _G4577=_G4626, v2_pre_topc(_G4577)]
+ (21)  [-l1_pre_topc(_G4904), _G4855=_G4904, l1_pre_topc(_G4855)]
+ (22)  [-m1_subset_1(_G5200, _G5337), m1_subset_1(_G5133, _G5268), _G5133=_G5200, _G5268=_G5337]
+ (23)  [-r2_hidden(_G5797, _G5934), r2_hidden(_G5730, _G5865), _G5730=_G5797, _G5865=_G5934]
+ (24)  [-v2_connsp_1(_G6394, _G6531), v2_connsp_1(_G6327, _G6462), _G6327=_G6394, _G6462=_G6531]
+ (25)  [-r1_tarski(_G6982, _G7119), r1_tarski(_G6915, _G7050), _G6915=_G6982, _G7050=_G7119]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(2^[], k1_connsp_1(1^[], 3^[]))]   (8)  
+1.1  [-r1_tarski(2^[], k1_connsp_1(1^[], 3^[])), r1_tarski(2^[], k1_connsp_3(1^[], 2^[])), 2^[]=2^[], k1_connsp_3(1^[], 2^[])=k1_connsp_1(1^[], 3^[])]   (25)  substitution:[[_G6982, _G7119, _G6915, _G7050], [2^[], k1_connsp_1(1^[], 3^[]), 2^[], k1_connsp_3(1^[], 2^[])]]
+1.1.1  [-r1_tarski(2^[], k1_connsp_3(1^[], 2^[])), l1_pre_topc(1^[]), v2_pre_topc(1^[]), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[]))), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[]))), v2_connsp_1(2^[], 1^[]), r1_tarski(2^[], 2^[])]   (10)  substitution:[[_G10737, _G10563, _G10911], [2^[], 1^[], 2^[]]]
+1.1.1.1  [-l1_pre_topc(1^[])]   (3)  
+1.1.1.2  [-v2_pre_topc(1^[])]   (2)  
+1.1.1.3  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (4)  
+1.1.1.4  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (4)  
+1.1.1.5  [-v2_connsp_1(2^[], 1^[])]   (7)  
+1.1.1.6  [-r1_tarski(2^[], 2^[])]   (9)  substitution:[[_G9484], [2^[]]]
+1.1.2  [- (2^[]=2^[])]   (16)  substitution:[[_G3517], [2^[]]]
+1.1.3  [- (k1_connsp_3(1^[], 2^[])=k1_connsp_1(1^[], 3^[])), k1_connsp_1(1^[], 3^[])=k1_connsp_3(1^[], 2^[])]   (17)  substitution:[[_G3661, _G3616], [k1_connsp_3(1^[], 2^[]), k1_connsp_1(1^[], 3^[])]]
+1.1.3.1  [- (k1_connsp_1(1^[], 3^[])=k1_connsp_3(1^[], 2^[])), l1_pre_topc(1^[]), v2_pre_topc(1^[]), -v2_struct_0(1^[]), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[]))), m1_subset_1(3^[], u1_struct_0(1^[])), v2_connsp_1(2^[], 1^[]), r2_hidden(3^[], 2^[])]   (11)  substitution:[[_G9636, _G10051, _G9885], [1^[], 3^[], 2^[]]]
+1.1.3.1.1  [-l1_pre_topc(1^[])]   (3)  
+1.1.3.1.2  [-v2_pre_topc(1^[])]   (2)  
+1.1.3.1.3  [v2_struct_0(1^[])]   (1)  
+1.1.3.1.4  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (4)  
+1.1.3.1.5  [-m1_subset_1(3^[], u1_struct_0(1^[]))]   (5)  
+1.1.3.1.6  [-v2_connsp_1(2^[], 1^[])]   (7)  
+1.1.3.1.7  [-r2_hidden(3^[], 2^[])]   (6)  
+------------------------------------------------------
+End of proof for t1_gobrd11

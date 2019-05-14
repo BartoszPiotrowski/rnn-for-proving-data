@@ -1,0 +1,31 @@
+
+t12_grfunc_1 is a Theorem
+Start of proof for t12_grfunc_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(1^[])]
+ (2)  [-v1_funct_1(1^[])]
+ (3)  [-v1_relat_1(2^[])]
+ (4)  [-v1_funct_1(2^[])]
+ (5)  [-v2_funct_1(1^[])]
+ (6)  [v2_funct_1(k3_xboole_0(1^[], 2^[]))]
+ (7)  [-v1_funct_1(k3_xboole_0(_G1058, _G1109)), v1_relat_1(_G1058), v1_funct_1(_G1058)]
+ (8)  [v1_relat_1(_G1354), -v1_relat_1(k3_xboole_0(_G1354, _G1400))]
+ (9)  [-r1_tarski(k3_xboole_0(_G2098, _G2140), _G2098)]
+ (10)  [v1_funct_1(_G1587), v1_relat_1(_G1587), v1_funct_1(_G1741), v1_relat_1(_G1741), -v2_funct_1(_G1587), r1_tarski(_G1587, _G1741), v2_funct_1(_G1741)]
+
+Connection Proof:
+-----------------
+1  [v2_funct_1(k3_xboole_0(1^[], 2^[]))]   (6)  
+1.1  [-v2_funct_1(k3_xboole_0(1^[], 2^[])), v1_funct_1(k3_xboole_0(1^[], 2^[])), v1_relat_1(k3_xboole_0(1^[], 2^[])), v1_funct_1(1^[]), v1_relat_1(1^[]), r1_tarski(k3_xboole_0(1^[], 2^[]), 1^[]), v2_funct_1(1^[])]   (10)  substitution:[[_G1587, _G1741], [k3_xboole_0(1^[], 2^[]), 1^[]]]
+1.1.1  [-v1_funct_1(k3_xboole_0(1^[], 2^[])), v1_relat_1(1^[]), v1_funct_1(1^[])]   (7)  substitution:[[_G1058, _G1109], [1^[], 2^[]]]
+1.1.1.1  [-v1_relat_1(1^[])]   (1)  
+1.1.1.2  [-v1_funct_1(1^[])]   (2)  
+1.1.2  [-v1_relat_1(k3_xboole_0(1^[], 2^[])), v1_relat_1(1^[])]   (8)  substitution:[[_G1354, _G1400], [1^[], 2^[]]]
+1.1.2.1  [-v1_relat_1(1^[])]   (1)  
+1.1.3  [-v1_funct_1(1^[])]   (2)  
+1.1.4  [-v1_relat_1(1^[])]   (1)  
+1.1.5  [-r1_tarski(k3_xboole_0(1^[], 2^[]), 1^[])]   (9)  substitution:[[_G2098, _G2140], [1^[], 2^[]]]
+1.1.6  [-v2_funct_1(1^[])]   (5)  
+------------------------------------------------------
+End of proof for t12_grfunc_1

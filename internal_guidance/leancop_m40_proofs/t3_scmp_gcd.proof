@@ -1,0 +1,80 @@
+
+t3_scmp_gcd is a Theorem
+Start of proof for t3_scmp_gcd
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [- (k2_scmp_gcd=k3_scmp_gcd)]
+ (2)  [v1_xboole_0(_G8000), -v7_ordinal1(_G8000)]
+ (3)  [m1_subset_1(_G8131, k4_ordinal1), -v7_ordinal1(_G8131)]
+ (4)  [v7_ordinal1(_G8288), - (k1_scmp_gcd(_G8288)=k10_ami_3(_G8288))]
+ (5)  [- (k2_scmp_gcd=k1_scmp_gcd(k6_numbers))]
+ (6)  [- (k3_scmp_gcd=k1_scmp_gcd(np__1))]
+ (7)  [-v1_xboole_0(1^[])]
+ (8)  [-v1_xcmplx_0(1^[])]
+ (9)  [-v1_xxreal_0(1^[])]
+ (10)  [-v1_xreal_0(1^[])]
+ (11)  [- (k5_numbers=k4_ordinal1)]
+ (12)  [- (k6_numbers=k1_xboole_0)]
+ (13)  [v1_xboole_0(np__1)]
+ (14)  [-v2_xxreal_0(np__1)]
+ (15)  [-m2_subset_1(np__1, k1_numbers, k5_numbers)]
+ (16)  [-m1_subset_1(np__1, k5_numbers)]
+ (17)  [-m1_subset_1(np__1, k1_numbers)]
+ (18)  [v1_xboole_0(_G9761), - (_G9761=k1_xboole_0)]
+ (19)  [v7_ordinal1(_G9335), v7_ordinal1(_G9430), - (_G9335=_G9430), k10_ami_3(_G9335)=k10_ami_3(_G9430)]
+ (20)  [_G7411=_G7460, - (k1_scmp_gcd(_G7411)=k1_scmp_gcd(_G7460))]
+ (21)  [_G7680=_G7729, - (k10_ami_3(_G7680)=k10_ami_3(_G7729))]
+ (22)  [- (_G3177=_G3177)]
+ (23)  [_G3276=_G3321, - (_G3321=_G3276)]
+ (24)  [- (_G3509=_G3622), _G3509=_G3565, _G3565=_G3622]
+ (25)  [-v1_xcmplx_0(_G4008), _G3959=_G4008, v1_xcmplx_0(_G3959)]
+ (26)  [-v1_xxreal_0(_G4286), _G4237=_G4286, v1_xxreal_0(_G4237)]
+ (27)  [-v1_xreal_0(_G4564), _G4515=_G4564, v1_xreal_0(_G4515)]
+ (28)  [-v2_xxreal_0(_G4842), _G4793=_G4842, v2_xxreal_0(_G4793)]
+ (29)  [-m2_subset_1(_G5156, _G5329, _G5506), m2_subset_1(_G5071, _G5242, _G5417), _G5071=_G5156, _G5242=_G5329, _G5417=_G5506]
+ (30)  [-m1_subset_1(_G6166, _G6303), m1_subset_1(_G6099, _G6234), _G6099=_G6166, _G6234=_G6303]
+ (31)  [-v7_ordinal1(_G6745), _G6696=_G6745, v7_ordinal1(_G6696)]
+ (32)  [-v1_xboole_0(_G7014), _G6965=_G7014, v1_xboole_0(_G6965)]
+
+Connection Proof:
+-----------------
+1  [v1_xboole_0(np__1)]   (13)  
+1.1  [-v1_xboole_0(np__1), k1_xboole_0=np__1, v1_xboole_0(k1_xboole_0)]   (32)  substitution:[[_G7014, _G6965], [np__1, k1_xboole_0]]
+1.1.1  [- (k1_xboole_0=np__1), v7_ordinal1(k1_xboole_0), v7_ordinal1(np__1), k10_ami_3(k1_xboole_0)=k10_ami_3(np__1)]   (19)  substitution:[[_G9335, _G9430], [k1_xboole_0, np__1]]
+1.1.1.1  [-v7_ordinal1(k1_xboole_0), v1_xboole_0(k1_xboole_0)]   (2)  substitution:[[_G8000], [k1_xboole_0]]
+1.1.1.1.1  [-v1_xboole_0(k1_xboole_0), 1^[]=k1_xboole_0, v1_xboole_0(1^[])]   (32)  substitution:[[_G7014, _G6965], [k1_xboole_0, 1^[]]]
+1.1.1.1.1.1  [- (1^[]=k1_xboole_0), v1_xboole_0(1^[])]   (18)  substitution:[[_G9761], [1^[]]]
+1.1.1.1.1.1.1  [-v1_xboole_0(1^[])]   (7)  
+1.1.1.1.1.2  [-v1_xboole_0(1^[])]   (7)  
+1.1.1.2  [-v7_ordinal1(np__1), m1_subset_1(np__1, k4_ordinal1)]   (3)  substitution:[[_G8131], [np__1]]
+1.1.1.2.1  [-m1_subset_1(np__1, k4_ordinal1), m1_subset_1(np__1, k5_numbers), np__1=np__1, k5_numbers=k4_ordinal1]   (30)  substitution:[[_G6166, _G6303, _G6099, _G6234], [np__1, k4_ordinal1, np__1, k5_numbers]]
+1.1.1.2.1.1  [-m1_subset_1(np__1, k5_numbers)]   (16)  
+1.1.1.2.1.2  [- (np__1=np__1)]   (22)  substitution:[[_G3177], [np__1]]
+1.1.1.2.1.3  [- (k5_numbers=k4_ordinal1)]   (11)  
+1.1.1.3  [- (k10_ami_3(k1_xboole_0)=k10_ami_3(np__1)), k10_ami_3(k1_xboole_0)=k1_scmp_gcd(k6_numbers), k1_scmp_gcd(k6_numbers)=k10_ami_3(np__1)]   (24)  substitution:[[_G3509, _G3622, _G3565], [k10_ami_3(k1_xboole_0), k10_ami_3(np__1), k1_scmp_gcd(k6_numbers)]]
+1.1.1.3.1  [- (k10_ami_3(k1_xboole_0)=k1_scmp_gcd(k6_numbers)), k1_scmp_gcd(k6_numbers)=k10_ami_3(k1_xboole_0)]   (23)  substitution:[[_G3321, _G3276], [k10_ami_3(k1_xboole_0), k1_scmp_gcd(k6_numbers)]]
+1.1.1.3.1.1  [- (k1_scmp_gcd(k6_numbers)=k10_ami_3(k1_xboole_0)), k1_scmp_gcd(k6_numbers)=k1_scmp_gcd(k1_xboole_0), k1_scmp_gcd(k1_xboole_0)=k10_ami_3(k1_xboole_0)]   (24)  substitution:[[_G3509, _G3622, _G3565], [k1_scmp_gcd(k6_numbers), k10_ami_3(k1_xboole_0), k1_scmp_gcd(k1_xboole_0)]]
+1.1.1.3.1.1.1  [- (k1_scmp_gcd(k6_numbers)=k1_scmp_gcd(k1_xboole_0)), k6_numbers=k1_xboole_0]   (20)  substitution:[[_G7411, _G7460], [k6_numbers, k1_xboole_0]]
+1.1.1.3.1.1.1.1  [- (k6_numbers=k1_xboole_0)]   (12)  
+1.1.1.3.1.1.2  [- (k1_scmp_gcd(k1_xboole_0)=k10_ami_3(k1_xboole_0)), v7_ordinal1(k1_xboole_0)]   (4)  substitution:[[_G8288], [k1_xboole_0]]
+1.1.1.3.1.1.2.1  [-v7_ordinal1(k1_xboole_0)]   (lemmata:1.1.1)  
+1.1.1.3.2  [- (k1_scmp_gcd(k6_numbers)=k10_ami_3(np__1)), k1_scmp_gcd(k6_numbers)=k2_scmp_gcd, k2_scmp_gcd=k10_ami_3(np__1)]   (24)  substitution:[[_G3509, _G3622, _G3565], [k1_scmp_gcd(k6_numbers), k10_ami_3(np__1), k2_scmp_gcd]]
+1.1.1.3.2.1  [- (k1_scmp_gcd(k6_numbers)=k2_scmp_gcd), k2_scmp_gcd=k1_scmp_gcd(k6_numbers)]   (23)  substitution:[[_G3321, _G3276], [k1_scmp_gcd(k6_numbers), k2_scmp_gcd]]
+1.1.1.3.2.1.1  [- (k2_scmp_gcd=k1_scmp_gcd(k6_numbers))]   (5)  
+1.1.1.3.2.2  [- (k2_scmp_gcd=k10_ami_3(np__1)), k2_scmp_gcd=k1_scmp_gcd(np__1), k1_scmp_gcd(np__1)=k10_ami_3(np__1)]   (24)  substitution:[[_G3509, _G3622, _G3565], [k2_scmp_gcd, k10_ami_3(np__1), k1_scmp_gcd(np__1)]]
+1.1.1.3.2.2.1  [- (k2_scmp_gcd=k1_scmp_gcd(np__1)), k2_scmp_gcd=k3_scmp_gcd, k3_scmp_gcd=k1_scmp_gcd(np__1)]   (24)  substitution:[[_G3509, _G3622, _G3565], [k2_scmp_gcd, k1_scmp_gcd(np__1), k3_scmp_gcd]]
+1.1.1.3.2.2.1.1  [- (k2_scmp_gcd=k3_scmp_gcd)]   (1)  
+1.1.1.3.2.2.1.2  [- (k3_scmp_gcd=k1_scmp_gcd(np__1))]   (6)  
+1.1.1.3.2.2.2  [- (k1_scmp_gcd(np__1)=k10_ami_3(np__1)), v7_ordinal1(np__1)]   (4)  substitution:[[_G8288], [np__1]]
+1.1.1.3.2.2.2.1  [-v7_ordinal1(np__1)]   (lemmata:1.1.1)  
+1.1.2  [-v1_xboole_0(k1_xboole_0), k6_numbers=k1_xboole_0, v1_xboole_0(k6_numbers)]   (32)  substitution:[[_G7014, _G6965], [k1_xboole_0, k6_numbers]]
+1.1.2.1  [- (k6_numbers=k1_xboole_0)]   (12)  
+1.1.2.2  [-v1_xboole_0(k6_numbers), 1^[]=k6_numbers, v1_xboole_0(1^[])]   (32)  substitution:[[_G7014, _G6965], [k6_numbers, 1^[]]]
+1.1.2.2.1  [- (1^[]=k6_numbers), 1^[]=k1_xboole_0, k1_xboole_0=k6_numbers]   (24)  substitution:[[_G3509, _G3622, _G3565], [1^[], k6_numbers, k1_xboole_0]]
+1.1.2.2.1.1  [- (1^[]=k1_xboole_0), v1_xboole_0(1^[])]   (18)  substitution:[[_G9761], [1^[]]]
+1.1.2.2.1.1.1  [-v1_xboole_0(1^[])]   (7)  
+1.1.2.2.1.2  [- (k1_xboole_0=k6_numbers), k6_numbers=k1_xboole_0]   (23)  substitution:[[_G3321, _G3276], [k1_xboole_0, k6_numbers]]
+1.1.2.2.1.2.1  [- (k6_numbers=k1_xboole_0)]   (12)  
+1.1.2.2.2  [-v1_xboole_0(1^[])]   (7)  
+------------------------------------------------------
+End of proof for t3_scmp_gcd

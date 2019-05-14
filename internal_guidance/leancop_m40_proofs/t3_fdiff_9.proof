@@ -1,0 +1,42 @@
+
+t3_fdiff_9 is a Theorem
+Start of proof for t3_fdiff_9
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], k1_numbers)]
+ (2)  [-v7_ordinal1(2^[])]
+ (3)  [k5_prepower(k10_real_1(np__1, 1^[]), 2^[])=k10_real_1(np__1, k5_prepower(1^[], 2^[]))]
+ (4)  [m1_subset_1(_G6449, k1_numbers), -v1_xreal_0(_G6449)]
+ (5)  [v7_ordinal1(_G6606), -v1_int_1(_G6606)]
+ (6)  [- (k5_prepower(_G6737, _G6793)=k4_prepower(_G6737, _G6793)), m1_subset_1(_G6737, k1_numbers), v1_int_1(_G6793)]
+ (7)  [v1_xreal_0(_G7123), v1_int_1(_G7216), - (k5_prepower(k10_real_1(np__1, _G7123), _G7216)=k10_real_1(np__1, k4_prepower(_G7123, _G7216)))]
+ (8)  [- (k4_prepower(_G4604, _G4739)=k4_prepower(_G4671, _G4808)), _G4604=_G4671, _G4739=_G4808]
+ (9)  [- (k10_real_1(_G5201, _G5336)=k10_real_1(_G5268, _G5405)), _G5201=_G5268, _G5336=_G5405]
+ (10)  [- (k5_prepower(_G5789, _G5924)=k5_prepower(_G5856, _G5993)), _G5789=_G5856, _G5924=_G5993]
+ (11)  [- (_G2316=_G2316)]
+ (12)  [_G2415=_G2460, - (_G2460=_G2415)]
+ (13)  [- (_G2648=_G2761), _G2648=_G2704, _G2704=_G2761]
+ (14)  [-v1_xreal_0(_G3147), _G3098=_G3147, v1_xreal_0(_G3098)]
+ (15)  [-v1_int_1(_G3425), _G3376=_G3425, v1_int_1(_G3376)]
+ (16)  [-v7_ordinal1(_G4291), _G4242=_G4291, v7_ordinal1(_G4242)]
+ (17)  [-m1_subset_1(_G3721, _G3858), m1_subset_1(_G3654, _G3789), _G3654=_G3721, _G3789=_G3858]
+
+Connection Proof:
+-----------------
+1  [k5_prepower(k10_real_1(np__1, 1^[]), 2^[])=k10_real_1(np__1, k5_prepower(1^[], 2^[]))]   (3)  
+1.1  [- (k5_prepower(k10_real_1(np__1, 1^[]), 2^[])=k10_real_1(np__1, k5_prepower(1^[], 2^[]))), k10_real_1(np__1, k5_prepower(1^[], 2^[]))=k5_prepower(k10_real_1(np__1, 1^[]), 2^[])]   (12)  substitution:[[_G2460, _G2415], [k5_prepower(k10_real_1(np__1, 1^[]), 2^[]), k10_real_1(np__1, k5_prepower(1^[], 2^[]))]]
+1.1.1  [- (k10_real_1(np__1, k5_prepower(1^[], 2^[]))=k5_prepower(k10_real_1(np__1, 1^[]), 2^[])), k10_real_1(np__1, k5_prepower(1^[], 2^[]))=k10_real_1(np__1, k4_prepower(1^[], 2^[])), k10_real_1(np__1, k4_prepower(1^[], 2^[]))=k5_prepower(k10_real_1(np__1, 1^[]), 2^[])]   (13)  substitution:[[_G2648, _G2761, _G2704], [k10_real_1(np__1, k5_prepower(1^[], 2^[])), k5_prepower(k10_real_1(np__1, 1^[]), 2^[]), k10_real_1(np__1, k4_prepower(1^[], 2^[]))]]
+1.1.1.1  [- (k10_real_1(np__1, k5_prepower(1^[], 2^[]))=k10_real_1(np__1, k4_prepower(1^[], 2^[]))), np__1=np__1, k5_prepower(1^[], 2^[])=k4_prepower(1^[], 2^[])]   (9)  substitution:[[_G5201, _G5336, _G5268, _G5405], [np__1, k5_prepower(1^[], 2^[]), np__1, k4_prepower(1^[], 2^[])]]
+1.1.1.1.1  [- (np__1=np__1)]   (11)  substitution:[[_G2316], [np__1]]
+1.1.1.1.2  [- (k5_prepower(1^[], 2^[])=k4_prepower(1^[], 2^[])), m1_subset_1(1^[], k1_numbers), v1_int_1(2^[])]   (6)  substitution:[[_G6737, _G6793], [1^[], 2^[]]]
+1.1.1.1.2.1  [-m1_subset_1(1^[], k1_numbers)]   (1)  
+1.1.1.1.2.2  [-v1_int_1(2^[]), v7_ordinal1(2^[])]   (5)  substitution:[[_G6606], [2^[]]]
+1.1.1.1.2.2.1  [-v7_ordinal1(2^[])]   (2)  
+1.1.1.2  [- (k10_real_1(np__1, k4_prepower(1^[], 2^[]))=k5_prepower(k10_real_1(np__1, 1^[]), 2^[])), k5_prepower(k10_real_1(np__1, 1^[]), 2^[])=k10_real_1(np__1, k4_prepower(1^[], 2^[]))]   (12)  substitution:[[_G2460, _G2415], [k10_real_1(np__1, k4_prepower(1^[], 2^[])), k5_prepower(k10_real_1(np__1, 1^[]), 2^[])]]
+1.1.1.2.1  [- (k5_prepower(k10_real_1(np__1, 1^[]), 2^[])=k10_real_1(np__1, k4_prepower(1^[], 2^[]))), v1_xreal_0(1^[]), v1_int_1(2^[])]   (7)  substitution:[[_G7123, _G7216], [1^[], 2^[]]]
+1.1.1.2.1.1  [-v1_xreal_0(1^[]), m1_subset_1(1^[], k1_numbers)]   (4)  substitution:[[_G6449], [1^[]]]
+1.1.1.2.1.1.1  [-m1_subset_1(1^[], k1_numbers)]   (1)  
+1.1.1.2.1.2  [-v1_int_1(2^[]), v7_ordinal1(2^[])]   (5)  substitution:[[_G6606], [2^[]]]
+1.1.1.2.1.2.1  [-v7_ordinal1(2^[])]   (2)  
+------------------------------------------------------
+End of proof for t3_fdiff_9

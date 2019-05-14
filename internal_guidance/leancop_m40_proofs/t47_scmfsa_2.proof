@@ -1,0 +1,58 @@
+
+t47_scmfsa_2 is a Theorem
+Start of proof for t47_scmfsa_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(1^[])]
+ (2)  [-v4_relat_1(1^[], u1_struct_0(k1_scmfsa_2))]
+ (3)  [-v1_funct_1(1^[])]
+ (4)  [-v5_funct_1(1^[], k2_memstr_0(np__3, k1_scmfsa_2))]
+ (5)  [-v1_partfun1(1^[], u1_struct_0(k1_scmfsa_2))]
+ (6)  [k1_relset_1(k2_scmfsa_2, k5_relat_1(1^[], k2_scmfsa_2))=k2_scmfsa_2]
+ (7)  [v1_relat_1(_G9989), -v1_relat_1(k5_relat_1(_G9989, _G10035))]
+ (8)  [-v1_relat_1(k5_relat_1(_G10373, _G10222)), v1_relat_1(_G10373), v4_relat_1(_G10373, _G10297)]
+ (9)  [-v4_relat_1(k5_relat_1(_G10373, _G10222), _G10222), v1_relat_1(_G10373), v4_relat_1(_G10373, _G10297)]
+ (10)  [-v4_relat_1(k5_relat_1(_G10373, _G10222), _G10297), v1_relat_1(_G10373), v4_relat_1(_G10373, _G10297)]
+ (11)  [- (k1_relset_1(_G10910, _G10965)=k9_xtuple_0(_G10965)), v1_relat_1(_G10965), v4_relat_1(_G10965, _G10910)]
+ (12)  [v1_relat_1(_G11916), r1_tarski(_G11859, k9_xtuple_0(_G11916)), - (k9_xtuple_0(k5_relat_1(_G11916, _G11859))=_G11859)]
+ (13)  [-r1_tarski(k2_scmfsa_2, k1_relset_1(u1_struct_0(k1_scmfsa_2), _G11278)), v1_relat_1(_G11278), v4_relat_1(_G11278, u1_struct_0(k1_scmfsa_2)), v1_funct_1(_G11278), v5_funct_1(_G11278, k2_memstr_0(np__3, k1_scmfsa_2)), v1_partfun1(_G11278, u1_struct_0(k1_scmfsa_2))]
+ (14)  [_G7546=_G7595, - (k9_xtuple_0(_G7546)=k9_xtuple_0(_G7595))]
+ (15)  [- (k2_memstr_0(_G7824, _G7959)=k2_memstr_0(_G7891, _G8028)), _G7824=_G7891, _G7959=_G8028]
+ (16)  [_G8421=_G8470, - (u1_struct_0(_G8421)=u1_struct_0(_G8470))]
+ (17)  [- (k1_relset_1(_G8699, _G8834)=k1_relset_1(_G8766, _G8903)), _G8699=_G8766, _G8834=_G8903]
+ (18)  [- (k5_relat_1(_G9287, _G9422)=k5_relat_1(_G9354, _G9491)), _G9287=_G9354, _G9422=_G9491]
+ (19)  [- (_G3703=_G3703)]
+ (20)  [_G3802=_G3847, - (_G3847=_G3802)]
+ (21)  [- (_G4035=_G4148), _G4035=_G4091, _G4091=_G4148]
+ (22)  [-r1_tarski(_G4552, _G4689), r1_tarski(_G4485, _G4620), _G4485=_G4552, _G4620=_G4689]
+ (23)  [-v1_relat_1(_G5131), _G5082=_G5131, v1_relat_1(_G5082)]
+ (24)  [-v4_relat_1(_G5427, _G5564), v4_relat_1(_G5360, _G5495), _G5360=_G5427, _G5495=_G5564]
+ (25)  [-v1_funct_1(_G6006), _G5957=_G6006, v1_funct_1(_G5957)]
+ (26)  [-v5_funct_1(_G6302, _G6439), v5_funct_1(_G6235, _G6370), _G6235=_G6302, _G6370=_G6439]
+ (27)  [-v1_partfun1(_G6890, _G7027), v1_partfun1(_G6823, _G6958), _G6823=_G6890, _G6958=_G7027]
+
+Connection Proof:
+-----------------
+1  [k1_relset_1(k2_scmfsa_2, k5_relat_1(1^[], k2_scmfsa_2))=k2_scmfsa_2]   (6)  
+1.1  [- (k1_relset_1(k2_scmfsa_2, k5_relat_1(1^[], k2_scmfsa_2))=k2_scmfsa_2), k1_relset_1(k2_scmfsa_2, k5_relat_1(1^[], k2_scmfsa_2))=k9_xtuple_0(k5_relat_1(1^[], k2_scmfsa_2)), k9_xtuple_0(k5_relat_1(1^[], k2_scmfsa_2))=k2_scmfsa_2]   (21)  substitution:[[_G4035, _G4148, _G4091], [k1_relset_1(k2_scmfsa_2, k5_relat_1(1^[], k2_scmfsa_2)), k2_scmfsa_2, k9_xtuple_0(k5_relat_1(1^[], k2_scmfsa_2))]]
+1.1.1  [- (k1_relset_1(k2_scmfsa_2, k5_relat_1(1^[], k2_scmfsa_2))=k9_xtuple_0(k5_relat_1(1^[], k2_scmfsa_2))), v1_relat_1(k5_relat_1(1^[], k2_scmfsa_2)), v4_relat_1(k5_relat_1(1^[], k2_scmfsa_2), k2_scmfsa_2)]   (11)  substitution:[[_G10910, _G10965], [k2_scmfsa_2, k5_relat_1(1^[], k2_scmfsa_2)]]
+1.1.1.1  [-v1_relat_1(k5_relat_1(1^[], k2_scmfsa_2)), v1_relat_1(1^[])]   (7)  substitution:[[_G9989, _G10035], [1^[], k2_scmfsa_2]]
+1.1.1.1.1  [-v1_relat_1(1^[])]   (1)  
+1.1.1.2  [-v4_relat_1(k5_relat_1(1^[], k2_scmfsa_2), k2_scmfsa_2), v1_relat_1(1^[]), v4_relat_1(1^[], u1_struct_0(k1_scmfsa_2))]   (9)  substitution:[[_G10373, _G10222, _G10297], [1^[], k2_scmfsa_2, u1_struct_0(k1_scmfsa_2)]]
+1.1.1.2.1  [-v1_relat_1(1^[])]   (1)  
+1.1.1.2.2  [-v4_relat_1(1^[], u1_struct_0(k1_scmfsa_2))]   (2)  
+1.1.2  [- (k9_xtuple_0(k5_relat_1(1^[], k2_scmfsa_2))=k2_scmfsa_2), v1_relat_1(1^[]), r1_tarski(k2_scmfsa_2, k9_xtuple_0(1^[]))]   (12)  substitution:[[_G11916, _G11859], [1^[], k2_scmfsa_2]]
+1.1.2.1  [-v1_relat_1(1^[])]   (1)  
+1.1.2.2  [-r1_tarski(k2_scmfsa_2, k9_xtuple_0(1^[])), r1_tarski(k2_scmfsa_2, k1_relset_1(u1_struct_0(k1_scmfsa_2), 1^[])), k2_scmfsa_2=k2_scmfsa_2, k1_relset_1(u1_struct_0(k1_scmfsa_2), 1^[])=k9_xtuple_0(1^[])]   (22)  substitution:[[_G4552, _G4689, _G4485, _G4620], [k2_scmfsa_2, k9_xtuple_0(1^[]), k2_scmfsa_2, k1_relset_1(u1_struct_0(k1_scmfsa_2), 1^[])]]
+1.1.2.2.1  [-r1_tarski(k2_scmfsa_2, k1_relset_1(u1_struct_0(k1_scmfsa_2), 1^[])), v1_relat_1(1^[]), v4_relat_1(1^[], u1_struct_0(k1_scmfsa_2)), v1_funct_1(1^[]), v5_funct_1(1^[], k2_memstr_0(np__3, k1_scmfsa_2)), v1_partfun1(1^[], u1_struct_0(k1_scmfsa_2))]   (13)  substitution:[[_G11278], [1^[]]]
+1.1.2.2.1.1  [-v1_relat_1(1^[])]   (1)  
+1.1.2.2.1.2  [-v4_relat_1(1^[], u1_struct_0(k1_scmfsa_2))]   (2)  
+1.1.2.2.1.3  [-v1_funct_1(1^[])]   (3)  
+1.1.2.2.1.4  [-v5_funct_1(1^[], k2_memstr_0(np__3, k1_scmfsa_2))]   (4)  
+1.1.2.2.1.5  [-v1_partfun1(1^[], u1_struct_0(k1_scmfsa_2))]   (5)  
+1.1.2.2.2  [- (k2_scmfsa_2=k2_scmfsa_2)]   (19)  substitution:[[_G3703], [k2_scmfsa_2]]
+1.1.2.2.3  [- (k1_relset_1(u1_struct_0(k1_scmfsa_2), 1^[])=k9_xtuple_0(1^[])), v1_relat_1(1^[]), v4_relat_1(1^[], u1_struct_0(k1_scmfsa_2))]   (11)  substitution:[[_G10910, _G10965], [u1_struct_0(k1_scmfsa_2), 1^[]]]
+1.1.2.2.3.1  [-v1_relat_1(1^[])]   (1)  
+1.1.2.2.3.2  [-v4_relat_1(1^[], u1_struct_0(k1_scmfsa_2))]   (2)  
+------------------------------------------------------
+End of proof for t47_scmfsa_2

@@ -1,0 +1,69 @@
+
+t221_member_1 is a Theorem
+Start of proof for t221_member_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_membered(1^[])]
+ (2)  [-v1_xcmplx_0(2^[])]
+ (3)  [-v1_xcmplx_0(3^[])]
+ (4)  [r1_tarski(k25_member_1(1^[], k3_binop_2(2^[], 3^[])), k9_member_1(k25_member_1(1^[], 2^[]), k25_member_1(1^[], 3^[])))]
+ (5)  [m1_subset_1(_G8773, k2_numbers), -v1_xcmplx_0(_G8773)]
+ (6)  [v1_membered(_G8930), v1_xcmplx_0(_G9019), - (k25_member_1(_G8930, _G9019)=k15_member_1(k1_tarski(_G9019), _G8930))]
+ (7)  [-m1_subset_1(k3_binop_2(_G9311, _G9363), k2_numbers), v1_xcmplx_0(_G9311), v1_xcmplx_0(_G9363)]
+ (8)  [v1_xcmplx_0(_G9634), -v1_membered(k1_tarski(_G9634))]
+ (9)  [v1_xcmplx_0(_G10417), v1_xcmplx_0(_G10510), - (k9_member_1(k1_tarski(_G10417), k1_tarski(_G10510))=k1_tarski(k3_binop_2(_G10417, _G10510)))]
+ (10)  [v1_membered(_G9781), v1_membered(_G9887), v1_membered(_G9989), -r1_tarski(k15_member_1(k9_member_1(_G9781, _G9887), _G9989), k9_member_1(k15_member_1(_G9781, _G9989), k15_member_1(_G9887, _G9989)))]
+ (11)  [- (k15_member_1(_G6011, _G6146)=k15_member_1(_G6078, _G6215)), _G6011=_G6078, _G6146=_G6215]
+ (12)  [_G6608=_G6657, - (k1_tarski(_G6608)=k1_tarski(_G6657))]
+ (13)  [- (k3_binop_2(_G6886, _G7021)=k3_binop_2(_G6953, _G7090)), _G6886=_G6953, _G7021=_G7090]
+ (14)  [- (k9_member_1(_G7483, _G7618)=k9_member_1(_G7550, _G7687)), _G7483=_G7550, _G7618=_G7687]
+ (15)  [- (k25_member_1(_G8071, _G8206)=k25_member_1(_G8138, _G8275)), _G8071=_G8138, _G8206=_G8275]
+ (16)  [- (_G3404=_G3404)]
+ (17)  [_G3503=_G3548, - (_G3548=_G3503)]
+ (18)  [- (_G3736=_G3849), _G3736=_G3792, _G3792=_G3849]
+ (19)  [-m1_subset_1(_G4253, _G4390), m1_subset_1(_G4186, _G4321), _G4186=_G4253, _G4321=_G4390]
+ (20)  [-v1_membered(_G4832), _G4783=_G4832, v1_membered(_G4783)]
+ (21)  [-v1_xcmplx_0(_G5110), _G5061=_G5110, v1_xcmplx_0(_G5061)]
+ (22)  [-r1_tarski(_G5397, _G5534), r1_tarski(_G5330, _G5465), _G5330=_G5397, _G5465=_G5534]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k25_member_1(1^[], k3_binop_2(2^[], 3^[])), k9_member_1(k25_member_1(1^[], 2^[]), k25_member_1(1^[], 3^[])))]   (4)  
+1.1  [-r1_tarski(k25_member_1(1^[], k3_binop_2(2^[], 3^[])), k9_member_1(k25_member_1(1^[], 2^[]), k25_member_1(1^[], 3^[]))), r1_tarski(k15_member_1(k1_tarski(k3_binop_2(2^[], 3^[])), 1^[]), k9_member_1(k15_member_1(k1_tarski(2^[]), 1^[]), k15_member_1(k1_tarski(3^[]), 1^[]))), k15_member_1(k1_tarski(k3_binop_2(2^[], 3^[])), 1^[])=k25_member_1(1^[], k3_binop_2(2^[], 3^[])), k9_member_1(k15_member_1(k1_tarski(2^[]), 1^[]), k15_member_1(k1_tarski(3^[]), 1^[]))=k9_member_1(k25_member_1(1^[], 2^[]), k25_member_1(1^[], 3^[]))]   (22)  substitution:[[_G5397, _G5534, _G5330, _G5465], [k25_member_1(1^[], k3_binop_2(2^[], 3^[])), k9_member_1(k25_member_1(1^[], 2^[]), k25_member_1(1^[], 3^[])), k15_member_1(k1_tarski(k3_binop_2(2^[], 3^[])), 1^[]), k9_member_1(k15_member_1(k1_tarski(2^[]), 1^[]), k15_member_1(k1_tarski(3^[]), 1^[]))]]
+1.1.1  [-r1_tarski(k15_member_1(k1_tarski(k3_binop_2(2^[], 3^[])), 1^[]), k9_member_1(k15_member_1(k1_tarski(2^[]), 1^[]), k15_member_1(k1_tarski(3^[]), 1^[]))), r1_tarski(k15_member_1(k9_member_1(k1_tarski(2^[]), k1_tarski(3^[])), 1^[]), k9_member_1(k15_member_1(k1_tarski(2^[]), 1^[]), k15_member_1(k1_tarski(3^[]), 1^[]))), k15_member_1(k9_member_1(k1_tarski(2^[]), k1_tarski(3^[])), 1^[])=k15_member_1(k1_tarski(k3_binop_2(2^[], 3^[])), 1^[]), k9_member_1(k15_member_1(k1_tarski(2^[]), 1^[]), k15_member_1(k1_tarski(3^[]), 1^[]))=k9_member_1(k15_member_1(k1_tarski(2^[]), 1^[]), k15_member_1(k1_tarski(3^[]), 1^[]))]   (22)  substitution:[[_G5397, _G5534, _G5330, _G5465], [k15_member_1(k1_tarski(k3_binop_2(2^[], 3^[])), 1^[]), k9_member_1(k15_member_1(k1_tarski(2^[]), 1^[]), k15_member_1(k1_tarski(3^[]), 1^[])), k15_member_1(k9_member_1(k1_tarski(2^[]), k1_tarski(3^[])), 1^[]), k9_member_1(k15_member_1(k1_tarski(2^[]), 1^[]), k15_member_1(k1_tarski(3^[]), 1^[]))]]
+1.1.1.1  [-r1_tarski(k15_member_1(k9_member_1(k1_tarski(2^[]), k1_tarski(3^[])), 1^[]), k9_member_1(k15_member_1(k1_tarski(2^[]), 1^[]), k15_member_1(k1_tarski(3^[]), 1^[]))), v1_membered(k1_tarski(2^[])), v1_membered(k1_tarski(3^[])), v1_membered(1^[])]   (10)  substitution:[[_G9781, _G9887, _G9989], [k1_tarski(2^[]), k1_tarski(3^[]), 1^[]]]
+1.1.1.1.1  [-v1_membered(k1_tarski(2^[])), v1_xcmplx_0(2^[])]   (8)  substitution:[[_G9634], [2^[]]]
+1.1.1.1.1.1  [-v1_xcmplx_0(2^[])]   (2)  
+1.1.1.1.2  [-v1_membered(k1_tarski(3^[])), v1_xcmplx_0(3^[])]   (8)  substitution:[[_G9634], [3^[]]]
+1.1.1.1.2.1  [-v1_xcmplx_0(3^[])]   (3)  
+1.1.1.1.3  [-v1_membered(1^[])]   (1)  
+1.1.1.2  [- (k15_member_1(k9_member_1(k1_tarski(2^[]), k1_tarski(3^[])), 1^[])=k15_member_1(k1_tarski(k3_binop_2(2^[], 3^[])), 1^[])), k9_member_1(k1_tarski(2^[]), k1_tarski(3^[]))=k1_tarski(k3_binop_2(2^[], 3^[])), 1^[]=1^[]]   (11)  substitution:[[_G6011, _G6146, _G6078, _G6215], [k9_member_1(k1_tarski(2^[]), k1_tarski(3^[])), 1^[], k1_tarski(k3_binop_2(2^[], 3^[])), 1^[]]]
+1.1.1.2.1  [- (k9_member_1(k1_tarski(2^[]), k1_tarski(3^[]))=k1_tarski(k3_binop_2(2^[], 3^[]))), v1_xcmplx_0(2^[]), v1_xcmplx_0(3^[])]   (9)  substitution:[[_G10417, _G10510], [2^[], 3^[]]]
+1.1.1.2.1.1  [-v1_xcmplx_0(2^[])]   (2)  
+1.1.1.2.1.2  [-v1_xcmplx_0(3^[])]   (3)  
+1.1.1.2.2  [- (1^[]=1^[])]   (16)  substitution:[[_G3404], [1^[]]]
+1.1.1.3  [- (k9_member_1(k15_member_1(k1_tarski(2^[]), 1^[]), k15_member_1(k1_tarski(3^[]), 1^[]))=k9_member_1(k15_member_1(k1_tarski(2^[]), 1^[]), k15_member_1(k1_tarski(3^[]), 1^[]))), k15_member_1(k1_tarski(2^[]), 1^[])=k15_member_1(k1_tarski(2^[]), 1^[]), k15_member_1(k1_tarski(3^[]), 1^[])=k15_member_1(k1_tarski(3^[]), 1^[])]   (14)  substitution:[[_G7483, _G7618, _G7550, _G7687], [k15_member_1(k1_tarski(2^[]), 1^[]), k15_member_1(k1_tarski(3^[]), 1^[]), k15_member_1(k1_tarski(2^[]), 1^[]), k15_member_1(k1_tarski(3^[]), 1^[])]]
+1.1.1.3.1  [- (k15_member_1(k1_tarski(2^[]), 1^[])=k15_member_1(k1_tarski(2^[]), 1^[])), k1_tarski(2^[])=k1_tarski(2^[]), 1^[]=1^[]]   (11)  substitution:[[_G6011, _G6146, _G6078, _G6215], [k1_tarski(2^[]), 1^[], k1_tarski(2^[]), 1^[]]]
+1.1.1.3.1.1  [- (k1_tarski(2^[])=k1_tarski(2^[]))]   (16)  substitution:[[_G3404], [k1_tarski(2^[])]]
+1.1.1.3.1.2  [- (1^[]=1^[])]   (16)  substitution:[[_G3404], [1^[]]]
+1.1.1.3.2  [- (k15_member_1(k1_tarski(3^[]), 1^[])=k15_member_1(k1_tarski(3^[]), 1^[])), k1_tarski(3^[])=k1_tarski(3^[]), 1^[]=1^[]]   (11)  substitution:[[_G6011, _G6146, _G6078, _G6215], [k1_tarski(3^[]), 1^[], k1_tarski(3^[]), 1^[]]]
+1.1.1.3.2.1  [- (k1_tarski(3^[])=k1_tarski(3^[]))]   (16)  substitution:[[_G3404], [k1_tarski(3^[])]]
+1.1.1.3.2.2  [- (1^[]=1^[])]   (16)  substitution:[[_G3404], [1^[]]]
+1.1.2  [- (k15_member_1(k1_tarski(k3_binop_2(2^[], 3^[])), 1^[])=k25_member_1(1^[], k3_binop_2(2^[], 3^[]))), k25_member_1(1^[], k3_binop_2(2^[], 3^[]))=k15_member_1(k1_tarski(k3_binop_2(2^[], 3^[])), 1^[])]   (17)  substitution:[[_G3548, _G3503], [k15_member_1(k1_tarski(k3_binop_2(2^[], 3^[])), 1^[]), k25_member_1(1^[], k3_binop_2(2^[], 3^[]))]]
+1.1.2.1  [- (k25_member_1(1^[], k3_binop_2(2^[], 3^[]))=k15_member_1(k1_tarski(k3_binop_2(2^[], 3^[])), 1^[])), v1_membered(1^[]), v1_xcmplx_0(k3_binop_2(2^[], 3^[]))]   (6)  substitution:[[_G8930, _G9019], [1^[], k3_binop_2(2^[], 3^[])]]
+1.1.2.1.1  [-v1_membered(1^[])]   (1)  
+1.1.2.1.2  [-v1_xcmplx_0(k3_binop_2(2^[], 3^[])), m1_subset_1(k3_binop_2(2^[], 3^[]), k2_numbers)]   (5)  substitution:[[_G8773], [k3_binop_2(2^[], 3^[])]]
+1.1.2.1.2.1  [-m1_subset_1(k3_binop_2(2^[], 3^[]), k2_numbers), v1_xcmplx_0(2^[]), v1_xcmplx_0(3^[])]   (7)  substitution:[[_G9311, _G9363], [2^[], 3^[]]]
+1.1.2.1.2.1.1  [-v1_xcmplx_0(2^[])]   (2)  
+1.1.2.1.2.1.2  [-v1_xcmplx_0(3^[])]   (3)  
+1.1.3  [- (k9_member_1(k15_member_1(k1_tarski(2^[]), 1^[]), k15_member_1(k1_tarski(3^[]), 1^[]))=k9_member_1(k25_member_1(1^[], 2^[]), k25_member_1(1^[], 3^[]))), k15_member_1(k1_tarski(2^[]), 1^[])=k25_member_1(1^[], 2^[]), k15_member_1(k1_tarski(3^[]), 1^[])=k25_member_1(1^[], 3^[])]   (14)  substitution:[[_G7483, _G7618, _G7550, _G7687], [k15_member_1(k1_tarski(2^[]), 1^[]), k15_member_1(k1_tarski(3^[]), 1^[]), k25_member_1(1^[], 2^[]), k25_member_1(1^[], 3^[])]]
+1.1.3.1  [- (k15_member_1(k1_tarski(2^[]), 1^[])=k25_member_1(1^[], 2^[])), k25_member_1(1^[], 2^[])=k15_member_1(k1_tarski(2^[]), 1^[])]   (17)  substitution:[[_G3548, _G3503], [k15_member_1(k1_tarski(2^[]), 1^[]), k25_member_1(1^[], 2^[])]]
+1.1.3.1.1  [- (k25_member_1(1^[], 2^[])=k15_member_1(k1_tarski(2^[]), 1^[])), v1_membered(1^[]), v1_xcmplx_0(2^[])]   (6)  substitution:[[_G8930, _G9019], [1^[], 2^[]]]
+1.1.3.1.1.1  [-v1_membered(1^[])]   (1)  
+1.1.3.1.1.2  [-v1_xcmplx_0(2^[])]   (2)  
+1.1.3.2  [- (k15_member_1(k1_tarski(3^[]), 1^[])=k25_member_1(1^[], 3^[])), k25_member_1(1^[], 3^[])=k15_member_1(k1_tarski(3^[]), 1^[])]   (17)  substitution:[[_G3548, _G3503], [k15_member_1(k1_tarski(3^[]), 1^[]), k25_member_1(1^[], 3^[])]]
+1.1.3.2.1  [- (k25_member_1(1^[], 3^[])=k15_member_1(k1_tarski(3^[]), 1^[])), v1_membered(1^[]), v1_xcmplx_0(3^[])]   (6)  substitution:[[_G8930, _G9019], [1^[], 3^[]]]
+1.1.3.2.1.1  [-v1_membered(1^[])]   (1)  
+1.1.3.2.1.2  [-v1_xcmplx_0(3^[])]   (3)  
+------------------------------------------------------
+End of proof for t221_member_1

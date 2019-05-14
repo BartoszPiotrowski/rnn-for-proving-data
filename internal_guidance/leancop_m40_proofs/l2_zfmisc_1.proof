@@ -1,0 +1,54 @@
+
+l2_zfmisc_1 is a Theorem
+Start of proof for l2_zfmisc_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-r1_tarski(4^[], 5^[])]
+ (2)  [r2_hidden(6^[], 4^[])]
+ (3)  [r1_tarski(4^[], k4_xboole_0(5^[], k1_tarski(6^[])))]
+ (4)  [_G4707=_G4756, - (k1_tarski(_G4707)=k1_tarski(_G4756))]
+ (5)  [- (k4_xboole_0(_G4119, _G4254)=k4_xboole_0(_G4186, _G4323)), _G4119=_G4186, _G4254=_G4323]
+ (6)  [- (_G2110=_G2110)]
+ (7)  [_G2209=_G2254, - (_G2254=_G2209)]
+ (8)  [- (_G2442=_G2555), _G2442=_G2498, _G2498=_G2555]
+ (9)  [-r2_hidden(_G2959, _G3096), r2_hidden(_G2892, _G3027), _G2892=_G2959, _G3027=_G3096]
+ (10)  [-r1_tarski(_G3547, _G3684), r1_tarski(_G3480, _G3615), _G3480=_G3547, _G3615=_G3684]
+ (11)  [_G5085=k1_tarski(_G5027), r2_hidden(_G5215, _G5085), - (_G5215=_G5027)]
+ (12)  [_G5085=k1_tarski(_G5027), -r2_hidden(_G5215, _G5085), _G5215=_G5027]
+ (13)  [- (_G5085=k1_tarski(_G5027)), r2_hidden(1^[_G5085, _G5027], _G5085), 1^[_G5085, _G5027]=_G5027]
+ (14)  [- (_G5085=k1_tarski(_G5027)), -r2_hidden(1^[_G5085, _G5027], _G5085), - (1^[_G5085, _G5027]=_G5027)]
+ (15)  [-r1_tarski(_G5447, _G5503), -r2_hidden(2^[_G5503, _G5447], _G5447)]
+ (16)  [-r1_tarski(_G5447, _G5503), r2_hidden(2^[_G5503, _G5447], _G5503)]
+ (17)  [r1_tarski(_G5447, _G5503), r2_hidden(_G5617, _G5447), -r2_hidden(_G5617, _G5503)]
+ (18)  [_G5985=k4_xboole_0(_G5840, _G5912), r2_hidden(_G6155, _G5985), -r2_hidden(_G6155, _G5840)]
+ (19)  [_G5985=k4_xboole_0(_G5840, _G5912), r2_hidden(_G6155, _G5985), r2_hidden(_G6155, _G5912)]
+ (20)  [_G5985=k4_xboole_0(_G5840, _G5912), -r2_hidden(_G6155, _G5985), r2_hidden(_G6155, _G5840), -r2_hidden(_G6155, _G5912)]
+ (21)  [- (_G5985=k4_xboole_0(_G5840, _G5912)), -r2_hidden(3^[_G5985, _G5912, _G5840], _G5985), -r2_hidden(3^[_G5985, _G5912, _G5840], _G5840)]
+ (22)  [- (_G5985=k4_xboole_0(_G5840, _G5912)), -r2_hidden(3^[_G5985, _G5912, _G5840], _G5985), r2_hidden(3^[_G5985, _G5912, _G5840], _G5912)]
+ (23)  [- (_G5985=k4_xboole_0(_G5840, _G5912)), r2_hidden(3^[_G5985, _G5912, _G5840], _G5985), r2_hidden(3^[_G5985, _G5912, _G5840], _G5840), -r2_hidden(3^[_G5985, _G5912, _G5840], _G5912)]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(6^[], 4^[])]   (2)  
+1.1  [-r2_hidden(6^[], 4^[]), r2_hidden(2^[k4_xboole_0(5^[], k1_tarski(6^[])), 4^[]], 4^[]), 2^[k4_xboole_0(5^[], k1_tarski(6^[])), 4^[]]=6^[], 4^[]=4^[]]   (9)  substitution:[[_G2959, _G3096, _G2892, _G3027], [6^[], 4^[], 2^[k4_xboole_0(5^[], k1_tarski(6^[])), 4^[]], 4^[]]]
+1.1.1  [-r2_hidden(2^[k4_xboole_0(5^[], k1_tarski(6^[])), 4^[]], 4^[]), r2_hidden(2^[k4_xboole_0(5^[], k1_tarski(6^[])), 4^[]], 4^[]), 2^[k4_xboole_0(5^[], k1_tarski(6^[])), 4^[]]=2^[k4_xboole_0(5^[], k1_tarski(6^[])), 4^[]], 4^[]=4^[]]   (9)  substitution:[[_G2959, _G3096, _G2892, _G3027], [2^[k4_xboole_0(5^[], k1_tarski(6^[])), 4^[]], 4^[], 2^[k4_xboole_0(5^[], k1_tarski(6^[])), 4^[]], 4^[]]]
+1.1.1.1  [-r2_hidden(2^[k4_xboole_0(5^[], k1_tarski(6^[])), 4^[]], 4^[]), r2_hidden(2^[k4_xboole_0(5^[], k1_tarski(6^[])), 4^[]], 4^[]), 2^[k4_xboole_0(5^[], k1_tarski(6^[])), 4^[]]=2^[k4_xboole_0(5^[], k1_tarski(6^[])), 4^[]], 4^[]=4^[]]   (9)  substitution:[[_G2959, _G3096, _G2892, _G3027], [2^[k4_xboole_0(5^[], k1_tarski(6^[])), 4^[]], 4^[], 2^[k4_xboole_0(5^[], k1_tarski(6^[])), 4^[]], 4^[]]]
+1.1.1.1.1  [-r2_hidden(2^[k4_xboole_0(5^[], k1_tarski(6^[])), 4^[]], 4^[]), -r1_tarski(4^[], k4_xboole_0(5^[], k1_tarski(6^[])))]   (15)  substitution:[[_G5503, _G5447], [k4_xboole_0(5^[], k1_tarski(6^[])), 4^[]]]
+1.1.1.1.1.1  [r1_tarski(4^[], k4_xboole_0(5^[], k1_tarski(6^[])))]   (3)  
+1.1.1.1.2  [- (2^[k4_xboole_0(5^[], k1_tarski(6^[])), 4^[]]=2^[k4_xboole_0(5^[], k1_tarski(6^[])), 4^[]])]   (6)  substitution:[[_G2110], [2^[k4_xboole_0(5^[], k1_tarski(6^[])), 4^[]]]]
+1.1.1.1.3  [- (4^[]=4^[])]   (6)  substitution:[[_G2110], [4^[]]]
+1.1.1.2  [- (2^[k4_xboole_0(5^[], k1_tarski(6^[])), 4^[]]=2^[k4_xboole_0(5^[], k1_tarski(6^[])), 4^[]])]   (6)  substitution:[[_G2110], [2^[k4_xboole_0(5^[], k1_tarski(6^[])), 4^[]]]]
+1.1.1.3  [- (4^[]=4^[])]   (6)  substitution:[[_G2110], [4^[]]]
+1.1.2  [- (2^[k4_xboole_0(5^[], k1_tarski(6^[])), 4^[]]=6^[]), k1_tarski(6^[])=k1_tarski(6^[]), r2_hidden(2^[k4_xboole_0(5^[], k1_tarski(6^[])), 4^[]], k1_tarski(6^[]))]   (11)  substitution:[[_G5215, _G5027, _G5085], [2^[k4_xboole_0(5^[], k1_tarski(6^[])), 4^[]], 6^[], k1_tarski(6^[])]]
+1.1.2.1  [- (k1_tarski(6^[])=k1_tarski(6^[])), 6^[]=6^[]]   (4)  substitution:[[_G4707, _G4756], [6^[], 6^[]]]
+1.1.2.1.1  [- (6^[]=6^[])]   (6)  substitution:[[_G2110], [6^[]]]
+1.1.2.2  [-r2_hidden(2^[k4_xboole_0(5^[], k1_tarski(6^[])), 4^[]], k1_tarski(6^[])), k4_xboole_0(5^[], k1_tarski(6^[]))=k4_xboole_0(5^[], k1_tarski(6^[])), -r2_hidden(2^[k4_xboole_0(5^[], k1_tarski(6^[])), 4^[]], k4_xboole_0(5^[], k1_tarski(6^[]))), r2_hidden(2^[k4_xboole_0(5^[], k1_tarski(6^[])), 4^[]], 5^[])]   (20)  substitution:[[_G6155, _G5912, _G5985, _G5840], [2^[k4_xboole_0(5^[], k1_tarski(6^[])), 4^[]], k1_tarski(6^[]), k4_xboole_0(5^[], k1_tarski(6^[])), 5^[]]]
+1.1.2.2.1  [- (k4_xboole_0(5^[], k1_tarski(6^[]))=k4_xboole_0(5^[], k1_tarski(6^[])))]   (6)  substitution:[[_G2110], [k4_xboole_0(5^[], k1_tarski(6^[]))]]
+1.1.2.2.2  [r2_hidden(2^[k4_xboole_0(5^[], k1_tarski(6^[])), 4^[]], k4_xboole_0(5^[], k1_tarski(6^[]))), -r1_tarski(4^[], k4_xboole_0(5^[], k1_tarski(6^[])))]   (16)  substitution:[[_G5503, _G5447], [k4_xboole_0(5^[], k1_tarski(6^[])), 4^[]]]
+1.1.2.2.2.1  [r1_tarski(4^[], k4_xboole_0(5^[], k1_tarski(6^[])))]   (3)  
+1.1.2.2.3  [-r2_hidden(2^[k4_xboole_0(5^[], k1_tarski(6^[])), 4^[]], 5^[]), r1_tarski(4^[], 5^[]), r2_hidden(2^[k4_xboole_0(5^[], k1_tarski(6^[])), 4^[]], 4^[])]   (17)  substitution:[[_G5617, _G5503, _G5447], [2^[k4_xboole_0(5^[], k1_tarski(6^[])), 4^[]], 5^[], 4^[]]]
+1.1.2.2.3.1  [-r1_tarski(4^[], 5^[])]   (1)  
+1.1.2.2.3.2  [-r2_hidden(2^[k4_xboole_0(5^[], k1_tarski(6^[])), 4^[]], 4^[])]   (lemmata:1.1)  
+1.1.3  [- (4^[]=4^[])]   (6)  substitution:[[_G2110], [4^[]]]
+------------------------------------------------------
+End of proof for l2_zfmisc_1

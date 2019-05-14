@@ -1,0 +1,22 @@
+
+t13_partfun1 is a Theorem
+Start of proof for t13_partfun1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_funct_1(4^[])]
+ (2)  [-m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 2^[])))]
+ (3)  [v1_funct_1(k6_relset_1(1^[], 2^[], 3^[], 4^[])), m1_subset_1(k6_relset_1(1^[], 2^[], 3^[], 4^[]), k1_zfmisc_1(k2_zfmisc_1(1^[], 2^[])))]
+ (4)  [m1_subset_1(_G1162, k1_zfmisc_1(k2_zfmisc_1(_G949, _G1019))), -m1_subset_1(k6_relset_1(_G949, _G1019, _G1090, _G1162), k1_zfmisc_1(k2_zfmisc_1(_G949, _G1019)))]
+ (5)  [-v1_funct_1(k6_relset_1(_G1624, _G1709, _G1795, _G1882)), v1_funct_1(_G1882), m1_subset_1(_G1882, k1_zfmisc_1(k2_zfmisc_1(_G1624, _G1709)))]
+ (6)  [-m1_subset_1(k6_relset_1(_G1624, _G1709, _G1795, _G1882), k1_zfmisc_1(k2_zfmisc_1(_G1624, _G1795))), v1_funct_1(_G1882), m1_subset_1(_G1882, k1_zfmisc_1(k2_zfmisc_1(_G1624, _G1709)))]
+
+Connection Proof:
+-----------------
+1  [v1_funct_1(k6_relset_1(1^[], 2^[], 3^[], 4^[])), m1_subset_1(k6_relset_1(1^[], 2^[], 3^[], 4^[]), k1_zfmisc_1(k2_zfmisc_1(1^[], 2^[])))]   (3)  
+1.1  [-v1_funct_1(k6_relset_1(1^[], 2^[], 3^[], 4^[])), v1_funct_1(4^[]), m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 2^[])))]   (5)  substitution:[[_G1624, _G1709, _G1795, _G1882], [1^[], 2^[], 3^[], 4^[]]]
+1.1.1  [-v1_funct_1(4^[])]   (1)  
+1.1.2  [-m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 2^[])))]   (2)  
+1.2  [-m1_subset_1(k6_relset_1(1^[], 2^[], 3^[], 4^[]), k1_zfmisc_1(k2_zfmisc_1(1^[], 2^[]))), m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 2^[])))]   (4)  substitution:[[_G949, _G1019, _G1090, _G1162], [1^[], 2^[], 3^[], 4^[]]]
+1.2.1  [-m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 2^[])))]   (2)  
+------------------------------------------------------
+End of proof for t13_partfun1

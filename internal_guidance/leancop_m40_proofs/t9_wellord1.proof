@@ -1,0 +1,37 @@
+
+t9_wellord1 is a Theorem
+Start of proof for t9_wellord1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(3^[])]
+ (2)  [r1_tarski(k1_wellord1(3^[], 2^[]), k1_relat_1(3^[]))]
+ (3)  [-r1_tarski(_G6095, _G6151), -r2_hidden(1^[_G6151, _G6095], _G6095)]
+ (4)  [-r1_tarski(_G6095, _G6151), r2_hidden(1^[_G6151, _G6095], _G6151)]
+ (5)  [r1_tarski(_G6095, _G6151), r2_hidden(_G6265, _G6095), -r2_hidden(_G6265, _G6151)]
+ (6)  [v1_relat_1(_G6634), r2_hidden(k4_tarski(_G6497, _G6565), _G6634), -r2_hidden(_G6497, k1_relat_1(_G6634))]
+ (7)  [v1_relat_1(_G6634), r2_hidden(k4_tarski(_G6497, _G6565), _G6634), -r2_hidden(_G6565, k1_relat_1(_G6634))]
+ (8)  [v1_relat_1(_G7191), r2_hidden(_G7052, k1_wellord1(_G7191, _G7121)), _G7052=_G7121]
+ (9)  [v1_relat_1(_G7191), r2_hidden(_G7052, k1_wellord1(_G7191, _G7121)), -r2_hidden(k4_tarski(_G7052, _G7121), _G7191)]
+ (10)  [v1_relat_1(_G7191), -r2_hidden(_G7052, k1_wellord1(_G7191, _G7121)), - (_G7052=_G7121), r2_hidden(k4_tarski(_G7052, _G7121), _G7191)]
+ (11)  [- (k4_tarski(_G4569, _G4704)=k4_tarski(_G4636, _G4773)), _G4569=_G4636, _G4704=_G4773]
+ (12)  [_G5754=_G5803, - (k1_relat_1(_G5754)=k1_relat_1(_G5803))]
+ (13)  [- (k1_wellord1(_G5166, _G5301)=k1_wellord1(_G5233, _G5370)), _G5166=_G5233, _G5301=_G5370]
+ (14)  [- (_G2261=_G2261)]
+ (15)  [_G2360=_G2405, - (_G2405=_G2360)]
+ (16)  [- (_G2593=_G2706), _G2593=_G2649, _G2649=_G2706]
+ (17)  [-r2_hidden(_G3110, _G3247), r2_hidden(_G3043, _G3178), _G3043=_G3110, _G3178=_G3247]
+ (18)  [-v1_relat_1(_G3689), _G3640=_G3689, v1_relat_1(_G3640)]
+ (19)  [-r1_tarski(_G3976, _G4113), r1_tarski(_G3909, _G4044), _G3909=_G3976, _G4044=_G4113]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k1_wellord1(3^[], 2^[]), k1_relat_1(3^[]))]   (2)  
+1.1  [-r1_tarski(k1_wellord1(3^[], 2^[]), k1_relat_1(3^[])), -r2_hidden(1^[k1_relat_1(3^[]), k1_wellord1(3^[], 2^[])], k1_wellord1(3^[], 2^[]))]   (3)  substitution:[[_G6095, _G6151], [k1_wellord1(3^[], 2^[]), k1_relat_1(3^[])]]
+1.1.1  [r2_hidden(1^[k1_relat_1(3^[]), k1_wellord1(3^[], 2^[])], k1_wellord1(3^[], 2^[])), v1_relat_1(3^[]), -r2_hidden(k4_tarski(1^[k1_relat_1(3^[]), k1_wellord1(3^[], 2^[])], 2^[]), 3^[])]   (9)  substitution:[[_G7052, _G7191, _G7121], [1^[k1_relat_1(3^[]), k1_wellord1(3^[], 2^[])], 3^[], 2^[]]]
+1.1.1.1  [-v1_relat_1(3^[])]   (1)  
+1.1.1.2  [r2_hidden(k4_tarski(1^[k1_relat_1(3^[]), k1_wellord1(3^[], 2^[])], 2^[]), 3^[]), v1_relat_1(3^[]), -r2_hidden(1^[k1_relat_1(3^[]), k1_wellord1(3^[], 2^[])], k1_relat_1(3^[]))]   (6)  substitution:[[_G6497, _G6565, _G6634], [1^[k1_relat_1(3^[]), k1_wellord1(3^[], 2^[])], 2^[], 3^[]]]
+1.1.1.2.1  [-v1_relat_1(3^[])]   (1)  
+1.1.1.2.2  [r2_hidden(1^[k1_relat_1(3^[]), k1_wellord1(3^[], 2^[])], k1_relat_1(3^[])), -r1_tarski(k1_wellord1(3^[], 2^[]), k1_relat_1(3^[]))]   (4)  substitution:[[_G6151, _G6095], [k1_relat_1(3^[]), k1_wellord1(3^[], 2^[])]]
+1.1.1.2.2.1  [r1_tarski(k1_wellord1(3^[], 2^[]), k1_relat_1(3^[]))]   (2)  
+------------------------------------------------------
+End of proof for t9_wellord1

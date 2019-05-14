@@ -1,0 +1,93 @@
+
+t87_prepower is a Theorem
+Start of proof for t87_prepower
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xreal_0(2^[])]
+ (2)  [-v1_xreal_0(3^[])]
+ (3)  [-r1_xxreal_0(np__1, 2^[])]
+ (4)  [-r1_xxreal_0(3^[], k6_numbers)]
+ (5)  [r1_xxreal_0(k9_prepower(2^[], 3^[]), np__1)]
+ (6)  [m1_subset_1(_G9839, k1_numbers), -v1_xreal_0(_G9839)]
+ (7)  [v1_xboole_0(_G9996), v1_xxreal_0(_G9996), v2_xxreal_0(_G9996)]
+ (8)  [v3_xxreal_0(_G9996), v1_xxreal_0(_G9996), v2_xxreal_0(_G9996)]
+ (9)  [m2_subset_1(_G10333, k1_numbers, k5_numbers), -r1_xxreal_0(np__1, _G10333), - (_G10333=k6_numbers)]
+ (10)  [-v1_xboole_0(1^[])]
+ (11)  [-v1_xcmplx_0(1^[])]
+ (12)  [-v1_xxreal_0(1^[])]
+ (13)  [-v1_xreal_0(1^[])]
+ (14)  [r1_xxreal_0(np__1, np__0)]
+ (15)  [-v1_xboole_0(np__0)]
+ (16)  [-m2_subset_1(np__0, k1_numbers, k5_numbers)]
+ (17)  [-m1_subset_1(np__0, k5_numbers)]
+ (18)  [-m1_subset_1(np__0, k1_numbers)]
+ (19)  [-v2_xxreal_0(np__1)]
+ (20)  [-m2_subset_1(np__1, k1_numbers, k5_numbers)]
+ (21)  [-m1_subset_1(np__1, k5_numbers)]
+ (22)  [-m1_subset_1(np__1, k1_numbers)]
+ (23)  [v1_xreal_0(_G11575), v1_xreal_0(_G11670), r1_xxreal_0(_G11575, _G11670), -v2_xxreal_0(_G11670), v2_xxreal_0(_G11575)]
+ (24)  [v1_xboole_0(_G12010), - (_G12010=k1_xboole_0)]
+ (25)  [v1_xreal_0(_G12167), -r1_xxreal_0(_G12167, k6_numbers), - (k9_prepower(_G12167, k6_numbers)=np__1)]
+ (26)  [v1_xreal_0(_G12457), v1_xreal_0(_G12566), v1_xreal_0(_G12671), -r1_xxreal_0(k9_prepower(_G12457, _G12671), k9_prepower(_G12457, _G12566)), r1_xxreal_0(np__1, _G12457), r1_xxreal_0(_G12671, _G12566)]
+ (27)  [- (k9_prepower(_G9221, _G9356)=k9_prepower(_G9288, _G9425)), _G9221=_G9288, _G9356=_G9425]
+ (28)  [- (_G4378=_G4378)]
+ (29)  [_G4477=_G4522, - (_G4522=_G4477)]
+ (30)  [- (_G4710=_G4823), _G4710=_G4766, _G4766=_G4823]
+ (31)  [-v3_xxreal_0(_G5209), _G5160=_G5209, v3_xxreal_0(_G5160)]
+ (32)  [-v1_xcmplx_0(_G5487), _G5438=_G5487, v1_xcmplx_0(_G5438)]
+ (33)  [-v1_xxreal_0(_G5765), _G5716=_G5765, v1_xxreal_0(_G5716)]
+ (34)  [-m2_subset_1(_G6079, _G6252, _G6429), m2_subset_1(_G5994, _G6165, _G6340), _G5994=_G6079, _G6165=_G6252, _G6340=_G6429]
+ (35)  [-m1_subset_1(_G7089, _G7226), m1_subset_1(_G7022, _G7157), _G7022=_G7089, _G7157=_G7226]
+ (36)  [-v2_xxreal_0(_G7668), _G7619=_G7668, v2_xxreal_0(_G7619)]
+ (37)  [-v1_xboole_0(_G7946), _G7897=_G7946, v1_xboole_0(_G7897)]
+ (38)  [-v1_xreal_0(_G8224), _G8175=_G8224, v1_xreal_0(_G8175)]
+ (39)  [-r1_xxreal_0(_G8511, _G8648), r1_xxreal_0(_G8444, _G8579), _G8444=_G8511, _G8579=_G8648]
+
+Connection Proof:
+-----------------
+1  [v1_xboole_0(k6_numbers), v1_xxreal_0(k6_numbers), v2_xxreal_0(k6_numbers)]   (7)  substitution:[[_G9996], [k6_numbers]]
+1.1  [-v1_xboole_0(k6_numbers), np__0=k6_numbers, v1_xboole_0(np__0)]   (37)  substitution:[[_G7946, _G7897], [k6_numbers, np__0]]
+1.1.1  [- (np__0=k6_numbers), m2_subset_1(np__0, k1_numbers, k5_numbers), -r1_xxreal_0(np__1, np__0)]   (9)  substitution:[[_G10333], [np__0]]
+1.1.1.1  [-m2_subset_1(np__0, k1_numbers, k5_numbers)]   (16)  
+1.1.1.2  [r1_xxreal_0(np__1, np__0)]   (14)  
+1.1.2  [-v1_xboole_0(np__0)]   (15)  
+1.2  [-v1_xxreal_0(k6_numbers), np__0=k6_numbers, v1_xxreal_0(np__0)]   (33)  substitution:[[_G5765, _G5716], [k6_numbers, np__0]]
+1.2.1  [- (np__0=k6_numbers), m2_subset_1(np__0, k1_numbers, k5_numbers), -r1_xxreal_0(np__1, np__0)]   (9)  substitution:[[_G10333], [np__0]]
+1.2.1.1  [-m2_subset_1(np__0, k1_numbers, k5_numbers)]   (16)  
+1.2.1.2  [r1_xxreal_0(np__1, np__0)]   (14)  
+1.2.2  [-v1_xxreal_0(np__0), k1_xboole_0=np__0, v1_xxreal_0(k1_xboole_0)]   (33)  substitution:[[_G5765, _G5716], [np__0, k1_xboole_0]]
+1.2.2.1  [- (k1_xboole_0=np__0), np__0=k1_xboole_0]   (29)  substitution:[[_G4522, _G4477], [k1_xboole_0, np__0]]
+1.2.2.1.1  [- (np__0=k1_xboole_0), v1_xboole_0(np__0)]   (24)  substitution:[[_G12010], [np__0]]
+1.2.2.1.1.1  [-v1_xboole_0(np__0)]   (15)  
+1.2.2.2  [-v1_xxreal_0(k1_xboole_0), 1^[]=k1_xboole_0, v1_xxreal_0(1^[])]   (33)  substitution:[[_G5765, _G5716], [k1_xboole_0, 1^[]]]
+1.2.2.2.1  [- (1^[]=k1_xboole_0), v1_xboole_0(1^[])]   (24)  substitution:[[_G12010], [1^[]]]
+1.2.2.2.1.1  [-v1_xboole_0(1^[])]   (10)  
+1.2.2.2.2  [-v1_xxreal_0(1^[])]   (12)  
+1.3  [-v2_xxreal_0(k6_numbers), v1_xreal_0(2^[]), v1_xreal_0(k6_numbers), r1_xxreal_0(2^[], k6_numbers), v2_xxreal_0(2^[])]   (23)  substitution:[[_G11670, _G11575], [k6_numbers, 2^[]]]
+1.3.1  [-v1_xreal_0(2^[])]   (1)  
+1.3.2  [-v1_xreal_0(k6_numbers), m1_subset_1(k6_numbers, k1_numbers)]   (6)  substitution:[[_G9839], [k6_numbers]]
+1.3.2.1  [-m1_subset_1(k6_numbers, k1_numbers), m1_subset_1(np__0, k1_numbers), np__0=k6_numbers, k1_numbers=k1_numbers]   (35)  substitution:[[_G7089, _G7226, _G7022, _G7157], [k6_numbers, k1_numbers, np__0, k1_numbers]]
+1.3.2.1.1  [-m1_subset_1(np__0, k1_numbers)]   (18)  
+1.3.2.1.2  [- (np__0=k6_numbers), m2_subset_1(np__0, k1_numbers, k5_numbers), -r1_xxreal_0(np__1, np__0)]   (9)  substitution:[[_G10333], [np__0]]
+1.3.2.1.2.1  [-m2_subset_1(np__0, k1_numbers, k5_numbers)]   (16)  
+1.3.2.1.2.2  [r1_xxreal_0(np__1, np__0)]   (14)  
+1.3.2.1.3  [- (k1_numbers=k1_numbers)]   (28)  substitution:[[_G4378], [k1_numbers]]
+1.3.3  [-r1_xxreal_0(2^[], k6_numbers), v1_xreal_0(2^[]), - (k9_prepower(2^[], k6_numbers)=np__1)]   (25)  substitution:[[_G12167], [2^[]]]
+1.3.3.1  [-v1_xreal_0(2^[])]   (1)  
+1.3.3.2  [k9_prepower(2^[], k6_numbers)=np__1, -r1_xxreal_0(k9_prepower(2^[], 3^[]), np__1), r1_xxreal_0(k9_prepower(2^[], 3^[]), k9_prepower(2^[], k6_numbers)), k9_prepower(2^[], 3^[])=k9_prepower(2^[], 3^[])]   (39)  substitution:[[_G8579, _G8648, _G8511, _G8444], [k9_prepower(2^[], k6_numbers), np__1, k9_prepower(2^[], 3^[]), k9_prepower(2^[], 3^[])]]
+1.3.3.2.1  [r1_xxreal_0(k9_prepower(2^[], 3^[]), np__1)]   (5)  
+1.3.3.2.2  [-r1_xxreal_0(k9_prepower(2^[], 3^[]), k9_prepower(2^[], k6_numbers)), v1_xreal_0(2^[]), v1_xreal_0(k6_numbers), v1_xreal_0(3^[]), r1_xxreal_0(np__1, 2^[]), r1_xxreal_0(3^[], k6_numbers)]   (26)  substitution:[[_G12457, _G12671, _G12566], [2^[], 3^[], k6_numbers]]
+1.3.3.2.2.1  [-v1_xreal_0(2^[])]   (1)  
+1.3.3.2.2.2  [-v1_xreal_0(k6_numbers)]   (lemmata:1.3)  
+1.3.3.2.2.3  [-v1_xreal_0(3^[])]   (2)  
+1.3.3.2.2.4  [-r1_xxreal_0(np__1, 2^[])]   (3)  
+1.3.3.2.2.5  [-r1_xxreal_0(3^[], k6_numbers)]   (4)  
+1.3.3.2.3  [- (k9_prepower(2^[], 3^[])=k9_prepower(2^[], 3^[]))]   (28)  substitution:[[_G4378], [k9_prepower(2^[], 3^[])]]
+1.3.4  [-v2_xxreal_0(2^[]), v1_xreal_0(np__1), v1_xreal_0(2^[]), r1_xxreal_0(np__1, 2^[]), v2_xxreal_0(np__1)]   (23)  substitution:[[_G11670, _G11575], [2^[], np__1]]
+1.3.4.1  [-v1_xreal_0(np__1), m1_subset_1(np__1, k1_numbers)]   (6)  substitution:[[_G9839], [np__1]]
+1.3.4.1.1  [-m1_subset_1(np__1, k1_numbers)]   (22)  
+1.3.4.2  [-v1_xreal_0(2^[])]   (1)  
+1.3.4.3  [-r1_xxreal_0(np__1, 2^[])]   (3)  
+1.3.4.4  [-v2_xxreal_0(np__1)]   (19)  
+------------------------------------------------------
+End of proof for t87_prepower

@@ -1,0 +1,49 @@
+
+t28_trees_1 is a Theorem
+Start of proof for t28_trees_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(3^[], k5_numbers)]
+ (2)  [-m1_subset_1(4^[], k5_numbers)]
+ (3)  [r1_xxreal_0(4^[], 3^[])]
+ (4)  [r2_hidden(k12_finseq_1(k5_numbers, 3^[]), k2_trees_1(4^[]))]
+ (5)  [- (k1_xboole_0=o_0_0_xboole_0)]
+ (6)  [m1_subset_1(_G8174, k5_numbers), - (k2_trees_1(_G8174)=k2_xboole_0(a_1_0_trees_1(_G8174), k1_tarski(k1_xboole_0)))]
+ (7)  [- (k5_numbers=k4_ordinal1)]
+ (8)  [m1_subset_1(_G8520, k5_numbers), r2_hidden(_G8445, a_1_0_trees_1(_G8520)), -m1_subset_1(2^[_G8520, _G8445], k5_numbers)]
+ (9)  [m1_subset_1(_G8520, k5_numbers), r2_hidden(_G8445, a_1_0_trees_1(_G8520)), - (_G8445=k12_finseq_1(k5_numbers, 2^[_G8520, _G8445]))]
+ (10)  [m1_subset_1(_G8520, k5_numbers), r2_hidden(_G8445, a_1_0_trees_1(_G8520)), r1_xxreal_0(_G8520, 2^[_G8520, _G8445])]
+ (11)  [m1_subset_1(_G8520, k5_numbers), -r2_hidden(_G8445, a_1_0_trees_1(_G8520)), m1_subset_1(_G8724, k5_numbers), _G8445=k12_finseq_1(k5_numbers, _G8724), -r1_xxreal_0(_G8520, _G8724)]
+ (12)  [_G7676=k2_xboole_0(_G7535, _G7605), -r2_hidden(_G7844, _G7676), r2_hidden(_G7844, _G7535)]
+ (13)  [_G7676=k2_xboole_0(_G7535, _G7605), -r2_hidden(_G7844, _G7676), r2_hidden(_G7844, _G7605)]
+ (14)  [_G7676=k2_xboole_0(_G7535, _G7605), r2_hidden(_G7844, _G7676), -r2_hidden(_G7844, _G7535), -r2_hidden(_G7844, _G7605)]
+ (15)  [- (_G7676=k2_xboole_0(_G7535, _G7605)), r2_hidden(1^[_G7676, _G7605, _G7535], _G7676), r2_hidden(1^[_G7676, _G7605, _G7535], _G7535)]
+ (16)  [- (_G7676=k2_xboole_0(_G7535, _G7605)), r2_hidden(1^[_G7676, _G7605, _G7535], _G7676), r2_hidden(1^[_G7676, _G7605, _G7535], _G7605)]
+ (17)  [- (_G7676=k2_xboole_0(_G7535, _G7605)), -r2_hidden(1^[_G7676, _G7605, _G7535], _G7676), -r2_hidden(1^[_G7676, _G7605, _G7535], _G7535), -r2_hidden(1^[_G7676, _G7605, _G7535], _G7605)]
+ (18)  [- (k2_xboole_0(_G5354, _G5489)=k2_xboole_0(_G5421, _G5558)), _G5354=_G5421, _G5489=_G5558]
+ (19)  [_G5951=_G6000, - (k1_tarski(_G5951)=k1_tarski(_G6000))]
+ (20)  [_G6229=_G6278, - (a_1_0_trees_1(_G6229)=a_1_0_trees_1(_G6278))]
+ (21)  [_G7095=_G7144, - (k2_trees_1(_G7095)=k2_trees_1(_G7144))]
+ (22)  [- (k12_finseq_1(_G6507, _G6642)=k12_finseq_1(_G6574, _G6711)), _G6507=_G6574, _G6642=_G6711]
+ (23)  [- (_G2727=_G2727)]
+ (24)  [_G2826=_G2871, - (_G2871=_G2826)]
+ (25)  [- (_G3059=_G3172), _G3059=_G3115, _G3115=_G3172]
+ (26)  [-m1_subset_1(_G3576, _G3713), m1_subset_1(_G3509, _G3644), _G3509=_G3576, _G3644=_G3713]
+ (27)  [-r1_xxreal_0(_G4173, _G4310), r1_xxreal_0(_G4106, _G4241), _G4106=_G4173, _G4241=_G4310]
+ (28)  [-r2_hidden(_G4761, _G4898), r2_hidden(_G4694, _G4829), _G4694=_G4761, _G4829=_G4898]
+
+Connection Proof:
+-----------------
+1  [r1_xxreal_0(4^[], 3^[])]   (3)  
+1.1  [-r1_xxreal_0(4^[], 3^[]), m1_subset_1(4^[], k5_numbers), -r2_hidden(k12_finseq_1(k5_numbers, 3^[]), a_1_0_trees_1(4^[])), m1_subset_1(3^[], k5_numbers), k12_finseq_1(k5_numbers, 3^[])=k12_finseq_1(k5_numbers, 3^[])]   (11)  substitution:[[_G8520, _G8724, _G8445], [4^[], 3^[], k12_finseq_1(k5_numbers, 3^[])]]
+1.1.1  [-m1_subset_1(4^[], k5_numbers)]   (2)  
+1.1.2  [r2_hidden(k12_finseq_1(k5_numbers, 3^[]), a_1_0_trees_1(4^[])), k2_trees_1(4^[])=k2_xboole_0(a_1_0_trees_1(4^[]), k1_tarski(k1_xboole_0)), -r2_hidden(k12_finseq_1(k5_numbers, 3^[]), k2_trees_1(4^[]))]   (12)  substitution:[[_G7844, _G7535, _G7676, _G7605], [k12_finseq_1(k5_numbers, 3^[]), a_1_0_trees_1(4^[]), k2_trees_1(4^[]), k1_tarski(k1_xboole_0)]]
+1.1.2.1  [- (k2_trees_1(4^[])=k2_xboole_0(a_1_0_trees_1(4^[]), k1_tarski(k1_xboole_0))), m1_subset_1(4^[], k5_numbers)]   (6)  substitution:[[_G8174], [4^[]]]
+1.1.2.1.1  [-m1_subset_1(4^[], k5_numbers)]   (2)  
+1.1.2.2  [r2_hidden(k12_finseq_1(k5_numbers, 3^[]), k2_trees_1(4^[]))]   (4)  
+1.1.3  [-m1_subset_1(3^[], k5_numbers)]   (1)  
+1.1.4  [- (k12_finseq_1(k5_numbers, 3^[])=k12_finseq_1(k5_numbers, 3^[])), k5_numbers=k5_numbers, 3^[]=3^[]]   (22)  substitution:[[_G6507, _G6642, _G6574, _G6711], [k5_numbers, 3^[], k5_numbers, 3^[]]]
+1.1.4.1  [- (k5_numbers=k5_numbers)]   (23)  substitution:[[_G2727], [k5_numbers]]
+1.1.4.2  [- (3^[]=3^[])]   (23)  substitution:[[_G2727], [3^[]]]
+------------------------------------------------------
+End of proof for t28_trees_1

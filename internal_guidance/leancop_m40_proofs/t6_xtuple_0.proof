@@ -1,0 +1,49 @@
+
+t6_xtuple_0 is a Theorem
+Start of proof for t6_xtuple_0
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-r2_hidden(k4_tarski(5^[], 6^[]), 7^[])]
+ (2)  [r2_hidden(5^[], k3_tarski(k3_tarski(7^[])))]
+ (3)  [-r2_hidden(_G3171, _G3308), r2_hidden(_G3104, _G3239), _G3104=_G3171, _G3239=_G3308]
+ (4)  [- (_G2331=_G2331)]
+ (5)  [_G2430=_G2475, - (_G2475=_G2430)]
+ (6)  [- (_G2663=_G2776), _G2663=_G2719, _G2719=_G2776]
+ (7)  [- (k2_tarski(_G3722, _G3857)=k2_tarski(_G3789, _G3926)), _G3722=_G3789, _G3857=_G3926]
+ (8)  [_G4319=_G4368, - (k1_tarski(_G4319)=k1_tarski(_G4368))]
+ (9)  [_G5185=_G5234, - (k3_tarski(_G5185)=k3_tarski(_G5234))]
+ (10)  [- (k4_tarski(_G4597, _G4732)=k4_tarski(_G4664, _G4801)), _G4597=_G4664, _G4732=_G4801]
+ (11)  [- (k2_tarski(_G5547, _G5592)=k2_tarski(_G5592, _G5547))]
+ (12)  [_G5930=k2_tarski(_G5789, _G5859), -r2_hidden(_G6098, _G5930), _G6098=_G5789]
+ (13)  [_G5930=k2_tarski(_G5789, _G5859), -r2_hidden(_G6098, _G5930), _G6098=_G5859]
+ (14)  [_G5930=k2_tarski(_G5789, _G5859), r2_hidden(_G6098, _G5930), - (_G6098=_G5789), - (_G6098=_G5859)]
+ (15)  [- (_G5930=k2_tarski(_G5789, _G5859)), r2_hidden(1^[_G5930, _G5859, _G5789], _G5930), 1^[_G5930, _G5859, _G5789]=_G5789]
+ (16)  [- (_G5930=k2_tarski(_G5789, _G5859)), r2_hidden(1^[_G5930, _G5859, _G5789], _G5930), 1^[_G5930, _G5859, _G5789]=_G5859]
+ (17)  [- (_G5930=k2_tarski(_G5789, _G5859)), -r2_hidden(1^[_G5930, _G5859, _G5789], _G5930), - (1^[_G5930, _G5859, _G5789]=_G5789), - (1^[_G5930, _G5859, _G5789]=_G5859)]
+ (18)  [- (k4_tarski(_G7016, _G7066)=k2_tarski(k2_tarski(_G7016, _G7066), k1_tarski(_G7016)))]
+ (19)  [_G6497=k3_tarski(_G6428), r2_hidden(_G6638, _G6497), -r2_hidden(_G6638, 2^[_G6638, _G6497, _G6428])]
+ (20)  [_G6497=k3_tarski(_G6428), r2_hidden(_G6638, _G6497), -r2_hidden(2^[_G6638, _G6497, _G6428], _G6428)]
+ (21)  [_G6497=k3_tarski(_G6428), -r2_hidden(_G6638, _G6497), r2_hidden(_G6638, _G6758), r2_hidden(_G6758, _G6428)]
+ (22)  [- (_G6497=k3_tarski(_G6428)), -r2_hidden(3^[_G6497, _G6428], _G6497), -r2_hidden(3^[_G6497, _G6428], 4^[_G6497, _G6428])]
+ (23)  [- (_G6497=k3_tarski(_G6428)), -r2_hidden(3^[_G6497, _G6428], _G6497), -r2_hidden(4^[_G6497, _G6428], _G6428)]
+ (24)  [- (_G6497=k3_tarski(_G6428)), r2_hidden(3^[_G6497, _G6428], _G6497), r2_hidden(3^[_G6497, _G6428], _G8539), r2_hidden(_G8539, _G6428)]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(5^[], k3_tarski(k3_tarski(7^[])))]   (2)  
+1.1  [-r2_hidden(5^[], k3_tarski(k3_tarski(7^[]))), k3_tarski(k3_tarski(7^[]))=k3_tarski(k3_tarski(7^[])), r2_hidden(5^[], k2_tarski(5^[], 6^[])), r2_hidden(k2_tarski(5^[], 6^[]), k3_tarski(7^[]))]   (21)  substitution:[[_G6638, _G6497, _G6428, _G6758], [5^[], k3_tarski(k3_tarski(7^[])), k3_tarski(7^[]), k2_tarski(5^[], 6^[])]]
+1.1.1  [- (k3_tarski(k3_tarski(7^[]))=k3_tarski(k3_tarski(7^[])))]   (4)  substitution:[[_G2331], [k3_tarski(k3_tarski(7^[]))]]
+1.1.2  [-r2_hidden(5^[], k2_tarski(5^[], 6^[])), k2_tarski(5^[], 6^[])=k2_tarski(5^[], 6^[]), 5^[]=5^[]]   (12)  substitution:[[_G6098, _G5930, _G5789, _G5859], [5^[], k2_tarski(5^[], 6^[]), 5^[], 6^[]]]
+1.1.2.1  [- (k2_tarski(5^[], 6^[])=k2_tarski(5^[], 6^[]))]   (4)  substitution:[[_G2331], [k2_tarski(5^[], 6^[])]]
+1.1.2.2  [- (5^[]=5^[])]   (4)  substitution:[[_G2331], [5^[]]]
+1.1.3  [-r2_hidden(k2_tarski(5^[], 6^[]), k3_tarski(7^[])), k3_tarski(7^[])=k3_tarski(7^[]), r2_hidden(k2_tarski(5^[], 6^[]), k2_tarski(k2_tarski(5^[], 6^[]), k1_tarski(5^[]))), r2_hidden(k2_tarski(k2_tarski(5^[], 6^[]), k1_tarski(5^[])), 7^[])]   (21)  substitution:[[_G6638, _G6497, _G6428, _G6758], [k2_tarski(5^[], 6^[]), k3_tarski(7^[]), 7^[], k2_tarski(k2_tarski(5^[], 6^[]), k1_tarski(5^[]))]]
+1.1.3.1  [- (k3_tarski(7^[])=k3_tarski(7^[]))]   (4)  substitution:[[_G2331], [k3_tarski(7^[])]]
+1.1.3.2  [-r2_hidden(k2_tarski(5^[], 6^[]), k2_tarski(k2_tarski(5^[], 6^[]), k1_tarski(5^[]))), k2_tarski(k2_tarski(5^[], 6^[]), k1_tarski(5^[]))=k2_tarski(k2_tarski(5^[], 6^[]), k1_tarski(5^[])), k2_tarski(5^[], 6^[])=k2_tarski(5^[], 6^[])]   (12)  substitution:[[_G6098, _G5930, _G5789, _G5859], [k2_tarski(5^[], 6^[]), k2_tarski(k2_tarski(5^[], 6^[]), k1_tarski(5^[])), k2_tarski(5^[], 6^[]), k1_tarski(5^[])]]
+1.1.3.2.1  [- (k2_tarski(k2_tarski(5^[], 6^[]), k1_tarski(5^[]))=k2_tarski(k2_tarski(5^[], 6^[]), k1_tarski(5^[])))]   (4)  substitution:[[_G2331], [k2_tarski(k2_tarski(5^[], 6^[]), k1_tarski(5^[]))]]
+1.1.3.2.2  [- (k2_tarski(5^[], 6^[])=k2_tarski(5^[], 6^[]))]   (4)  substitution:[[_G2331], [k2_tarski(5^[], 6^[])]]
+1.1.3.3  [-r2_hidden(k2_tarski(k2_tarski(5^[], 6^[]), k1_tarski(5^[])), 7^[]), r2_hidden(k4_tarski(5^[], 6^[]), 7^[]), k4_tarski(5^[], 6^[])=k2_tarski(k2_tarski(5^[], 6^[]), k1_tarski(5^[])), 7^[]=7^[]]   (3)  substitution:[[_G3171, _G3308, _G3104, _G3239], [k2_tarski(k2_tarski(5^[], 6^[]), k1_tarski(5^[])), 7^[], k4_tarski(5^[], 6^[]), 7^[]]]
+1.1.3.3.1  [-r2_hidden(k4_tarski(5^[], 6^[]), 7^[])]   (1)  
+1.1.3.3.2  [- (k4_tarski(5^[], 6^[])=k2_tarski(k2_tarski(5^[], 6^[]), k1_tarski(5^[])))]   (18)  substitution:[[_G7016, _G7066], [5^[], 6^[]]]
+1.1.3.3.3  [- (7^[]=7^[])]   (4)  substitution:[[_G2331], [7^[]]]
+------------------------------------------------------
+End of proof for t6_xtuple_0

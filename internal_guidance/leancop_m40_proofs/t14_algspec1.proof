@@ -1,0 +1,23 @@
+
+t14_algspec1 is a Theorem
+Start of proof for t14_algspec1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [r6_pboole(1^[], k1_algspec1(1^[], k1_xboole_0), k6_partfun1(1^[]))]
+ (2)  [v1_xboole_0(_G833), -v1_funct_1(_G833)]
+ (3)  [v1_xboole_0(_G964), -v1_relat_1(_G964)]
+ (4)  [-v1_xboole_0(k1_xboole_0)]
+ (5)  [-r1_tarski(k1_xboole_0, _G1612)]
+ (6)  [v1_funct_1(_G1190), v1_relat_1(_G1190), r1_tarski(_G1190, k6_partfun1(_G1127)), -r6_pboole(_G1127, k1_algspec1(_G1127, _G1190), k6_partfun1(_G1127))]
+
+Connection Proof:
+-----------------
+1  [r6_pboole(1^[], k1_algspec1(1^[], k1_xboole_0), k6_partfun1(1^[]))]   (1)  
+1.1  [-r6_pboole(1^[], k1_algspec1(1^[], k1_xboole_0), k6_partfun1(1^[])), v1_funct_1(k1_xboole_0), v1_relat_1(k1_xboole_0), r1_tarski(k1_xboole_0, k6_partfun1(1^[]))]   (6)  substitution:[[_G1127, _G1190], [1^[], k1_xboole_0]]
+1.1.1  [-v1_funct_1(k1_xboole_0), v1_xboole_0(k1_xboole_0)]   (2)  substitution:[[_G833], [k1_xboole_0]]
+1.1.1.1  [-v1_xboole_0(k1_xboole_0)]   (4)  
+1.1.2  [-v1_relat_1(k1_xboole_0), v1_xboole_0(k1_xboole_0)]   (3)  substitution:[[_G964], [k1_xboole_0]]
+1.1.2.1  [-v1_xboole_0(k1_xboole_0)]   (4)  
+1.1.3  [-r1_tarski(k1_xboole_0, k6_partfun1(1^[]))]   (5)  substitution:[[_G1612], [k6_partfun1(1^[])]]
+------------------------------------------------------
+End of proof for t14_algspec1

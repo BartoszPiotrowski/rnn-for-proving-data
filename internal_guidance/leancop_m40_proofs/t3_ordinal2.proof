@@ -1,0 +1,38 @@
+
+t3_ordinal2 is a Theorem
+Start of proof for t3_ordinal2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v3_ordinal1(1^[])]
+ (2)  [r1_tarski(k1_ordinal1(1^[]), k9_setfam_1(1^[]))]
+ (3)  [- (k1_ordinal1(_G5609)=k2_xboole_0(_G5609, k1_tarski(_G5609)))]
+ (4)  [- (k9_setfam_1(_G5782)=k1_zfmisc_1(_G5782))]
+ (5)  [-r1_tarski(_G6093, k1_zfmisc_1(k3_tarski(_G6093)))]
+ (6)  [v3_ordinal1(_G5913), - (k3_tarski(k1_ordinal1(_G5913))=_G5913)]
+ (7)  [- (_G1815=_G1815)]
+ (8)  [_G1914=_G1959, - (_G1959=_G1914)]
+ (9)  [- (_G2147=_G2260), _G2147=_G2203, _G2203=_G2260]
+ (10)  [-v3_ordinal1(_G2646), _G2597=_G2646, v3_ordinal1(_G2597)]
+ (11)  [-r1_tarski(_G2933, _G3070), r1_tarski(_G2866, _G3001), _G2866=_G2933, _G3001=_G3070]
+ (12)  [- (k2_xboole_0(_G3505, _G3640)=k2_xboole_0(_G3572, _G3709)), _G3505=_G3572, _G3640=_G3709]
+ (13)  [_G4102=_G4151, - (k1_tarski(_G4102)=k1_tarski(_G4151))]
+ (14)  [_G4380=_G4429, - (k1_zfmisc_1(_G4380)=k1_zfmisc_1(_G4429))]
+ (15)  [_G4658=_G4707, - (k3_tarski(_G4658)=k3_tarski(_G4707))]
+ (16)  [_G4936=_G4985, - (k1_ordinal1(_G4936)=k1_ordinal1(_G4985))]
+ (17)  [_G5205=_G5254, - (k9_setfam_1(_G5205)=k9_setfam_1(_G5254))]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k1_ordinal1(1^[]), k9_setfam_1(1^[]))]   (2)  
+1.1  [-r1_tarski(k1_ordinal1(1^[]), k9_setfam_1(1^[])), r1_tarski(k1_ordinal1(1^[]), k1_zfmisc_1(k3_tarski(k1_ordinal1(1^[])))), k1_ordinal1(1^[])=k1_ordinal1(1^[]), k1_zfmisc_1(k3_tarski(k1_ordinal1(1^[])))=k9_setfam_1(1^[])]   (11)  substitution:[[_G2933, _G3070, _G2866, _G3001], [k1_ordinal1(1^[]), k9_setfam_1(1^[]), k1_ordinal1(1^[]), k1_zfmisc_1(k3_tarski(k1_ordinal1(1^[])))]]
+1.1.1  [-r1_tarski(k1_ordinal1(1^[]), k1_zfmisc_1(k3_tarski(k1_ordinal1(1^[]))))]   (5)  substitution:[[_G6093], [k1_ordinal1(1^[])]]
+1.1.2  [- (k1_ordinal1(1^[])=k1_ordinal1(1^[]))]   (7)  substitution:[[_G1815], [k1_ordinal1(1^[])]]
+1.1.3  [- (k1_zfmisc_1(k3_tarski(k1_ordinal1(1^[])))=k9_setfam_1(1^[])), k9_setfam_1(1^[])=k1_zfmisc_1(k3_tarski(k1_ordinal1(1^[])))]   (8)  substitution:[[_G1959, _G1914], [k1_zfmisc_1(k3_tarski(k1_ordinal1(1^[]))), k9_setfam_1(1^[])]]
+1.1.3.1  [- (k9_setfam_1(1^[])=k1_zfmisc_1(k3_tarski(k1_ordinal1(1^[])))), k9_setfam_1(1^[])=k1_zfmisc_1(1^[]), k1_zfmisc_1(1^[])=k1_zfmisc_1(k3_tarski(k1_ordinal1(1^[])))]   (9)  substitution:[[_G2147, _G2260, _G2203], [k9_setfam_1(1^[]), k1_zfmisc_1(k3_tarski(k1_ordinal1(1^[]))), k1_zfmisc_1(1^[])]]
+1.1.3.1.1  [- (k9_setfam_1(1^[])=k1_zfmisc_1(1^[]))]   (4)  substitution:[[_G5782], [1^[]]]
+1.1.3.1.2  [- (k1_zfmisc_1(1^[])=k1_zfmisc_1(k3_tarski(k1_ordinal1(1^[])))), k1_zfmisc_1(k3_tarski(k1_ordinal1(1^[])))=k1_zfmisc_1(1^[])]   (8)  substitution:[[_G1959, _G1914], [k1_zfmisc_1(1^[]), k1_zfmisc_1(k3_tarski(k1_ordinal1(1^[])))]]
+1.1.3.1.2.1  [- (k1_zfmisc_1(k3_tarski(k1_ordinal1(1^[])))=k1_zfmisc_1(1^[])), k3_tarski(k1_ordinal1(1^[]))=1^[]]   (14)  substitution:[[_G4380, _G4429], [k3_tarski(k1_ordinal1(1^[])), 1^[]]]
+1.1.3.1.2.1.1  [- (k3_tarski(k1_ordinal1(1^[]))=1^[]), v3_ordinal1(1^[])]   (6)  substitution:[[_G5913], [1^[]]]
+1.1.3.1.2.1.1.1  [-v3_ordinal1(1^[])]   (1)  
+------------------------------------------------------
+End of proof for t3_ordinal2

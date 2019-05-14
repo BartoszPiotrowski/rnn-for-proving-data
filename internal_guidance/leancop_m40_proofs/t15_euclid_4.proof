@@ -1,0 +1,43 @@
+
+t15_euclid_4 is a Theorem
+Start of proof for t15_euclid_4
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v7_ordinal1(1^[])]
+ (2)  [-m2_finseq_2(2^[], k1_numbers, k1_euclid(1^[]))]
+ (3)  [k12_euclid(2^[])=k7_square_1(k23_rvsum_1(2^[], 2^[]))]
+ (4)  [v7_ordinal1(_G8105), -m1_finseq_2(k1_euclid(_G8105), k1_numbers)]
+ (5)  [m1_finseq_2(_G8335, _G8278), m2_finseq_2(_G8450, _G8278, _G8335), -m1_subset_1(_G8450, _G8335)]
+ (6)  [m1_finseq_2(_G8335, _G8278), -m2_finseq_2(_G8450, _G8278, _G8335), m1_subset_1(_G8450, _G8335)]
+ (7)  [v7_ordinal1(_G8726), - (u1_struct_0(k15_euclid(_G8726))=k1_euclid(_G8726))]
+ (8)  [v7_ordinal1(_G8922), m1_subset_1(_G9015, u1_struct_0(k15_euclid(_G8922))), - (k12_euclid(_G9015)=k7_square_1(k23_rvsum_1(_G9015, _G9015)))]
+ (9)  [_G6001=_G6050, - (u1_struct_0(_G6001)=u1_struct_0(_G6050))]
+ (10)  [_G6279=_G6328, - (k15_euclid(_G6279)=k15_euclid(_G6328))]
+ (11)  [_G6557=_G6606, - (k1_euclid(_G6557)=k1_euclid(_G6606))]
+ (12)  [_G6835=_G6884, - (k12_euclid(_G6835)=k12_euclid(_G6884))]
+ (13)  [_G7113=_G7162, - (k7_square_1(_G7113)=k7_square_1(_G7162))]
+ (14)  [- (k23_rvsum_1(_G7382, _G7517)=k23_rvsum_1(_G7449, _G7586)), _G7382=_G7449, _G7517=_G7586]
+ (15)  [- (_G2644=_G2644)]
+ (16)  [_G2743=_G2788, - (_G2788=_G2743)]
+ (17)  [- (_G2976=_G3089), _G2976=_G3032, _G3032=_G3089]
+ (18)  [-m1_finseq_2(_G3493, _G3630), m1_finseq_2(_G3426, _G3561), _G3426=_G3493, _G3561=_G3630]
+ (19)  [-m1_subset_1(_G4090, _G4227), m1_subset_1(_G4023, _G4158), _G4023=_G4090, _G4158=_G4227]
+ (20)  [-v7_ordinal1(_G4669), _G4620=_G4669, v7_ordinal1(_G4620)]
+ (21)  [-m2_finseq_2(_G4974, _G5147, _G5324), m2_finseq_2(_G4889, _G5060, _G5235), _G4889=_G4974, _G5060=_G5147, _G5235=_G5324]
+
+Connection Proof:
+-----------------
+1  [k12_euclid(2^[])=k7_square_1(k23_rvsum_1(2^[], 2^[]))]   (3)  
+1.1  [- (k12_euclid(2^[])=k7_square_1(k23_rvsum_1(2^[], 2^[]))), v7_ordinal1(1^[]), m1_subset_1(2^[], u1_struct_0(k15_euclid(1^[])))]   (8)  substitution:[[_G9015, _G8922], [2^[], 1^[]]]
+1.1.1  [-v7_ordinal1(1^[])]   (1)  
+1.1.2  [-m1_subset_1(2^[], u1_struct_0(k15_euclid(1^[]))), m1_subset_1(2^[], k1_euclid(1^[])), 2^[]=2^[], k1_euclid(1^[])=u1_struct_0(k15_euclid(1^[]))]   (19)  substitution:[[_G4090, _G4227, _G4023, _G4158], [2^[], u1_struct_0(k15_euclid(1^[])), 2^[], k1_euclid(1^[])]]
+1.1.2.1  [-m1_subset_1(2^[], k1_euclid(1^[])), m1_finseq_2(k1_euclid(1^[]), k1_numbers), m2_finseq_2(2^[], k1_numbers, k1_euclid(1^[]))]   (5)  substitution:[[_G8450, _G8335, _G8278], [2^[], k1_euclid(1^[]), k1_numbers]]
+1.1.2.1.1  [-m1_finseq_2(k1_euclid(1^[]), k1_numbers), v7_ordinal1(1^[])]   (4)  substitution:[[_G8105], [1^[]]]
+1.1.2.1.1.1  [-v7_ordinal1(1^[])]   (1)  
+1.1.2.1.2  [-m2_finseq_2(2^[], k1_numbers, k1_euclid(1^[]))]   (2)  
+1.1.2.2  [- (2^[]=2^[])]   (15)  substitution:[[_G2644], [2^[]]]
+1.1.2.3  [- (k1_euclid(1^[])=u1_struct_0(k15_euclid(1^[]))), u1_struct_0(k15_euclid(1^[]))=k1_euclid(1^[])]   (16)  substitution:[[_G2788, _G2743], [k1_euclid(1^[]), u1_struct_0(k15_euclid(1^[]))]]
+1.1.2.3.1  [- (u1_struct_0(k15_euclid(1^[]))=k1_euclid(1^[])), v7_ordinal1(1^[])]   (7)  substitution:[[_G8726], [1^[]]]
+1.1.2.3.1.1  [-v7_ordinal1(1^[])]   (1)  
+------------------------------------------------------
+End of proof for t15_euclid_4

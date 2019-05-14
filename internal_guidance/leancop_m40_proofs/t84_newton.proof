@@ -1,0 +1,37 @@
+
+t84_newton is a Theorem
+Start of proof for t84_newton
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v7_ordinal1(1^[])]
+ (2)  [r1_xxreal_0(1^[], k6_numbers)]
+ (3)  [k2_newton(k6_numbers, 1^[])=k6_numbers]
+ (4)  [v7_ordinal1(_G3872), r1_xxreal_0(np__1, _G3872), - (k2_newton(k6_numbers, _G3872)=k6_numbers)]
+ (5)  [v7_ordinal1(_G4403), -r1_xxreal_0(k6_numbers, _G4403)]
+ (6)  [v7_ordinal1(_G4155), -r1_xxreal_0(np__1, _G4155), - (_G4155=k6_numbers)]
+ (7)  [- (k2_newton(_G3254, _G3389)=k2_newton(_G3321, _G3458)), _G3254=_G3321, _G3389=_G3458]
+ (8)  [- (_G1573=_G1573)]
+ (9)  [_G1672=_G1717, - (_G1717=_G1672)]
+ (10)  [- (_G1905=_G2018), _G1905=_G1961, _G1961=_G2018]
+ (11)  [-v7_ordinal1(_G2404), _G2355=_G2404, v7_ordinal1(_G2355)]
+ (12)  [-r1_xxreal_0(_G2691, _G2828), r1_xxreal_0(_G2624, _G2759), _G2624=_G2691, _G2759=_G2828]
+
+Connection Proof:
+-----------------
+1  [r1_xxreal_0(1^[], k6_numbers)]   (2)  
+1.1  [-r1_xxreal_0(1^[], k6_numbers), r1_xxreal_0(k6_numbers, 1^[]), k6_numbers=1^[], 1^[]=k6_numbers]   (12)  substitution:[[_G2691, _G2828, _G2624, _G2759], [1^[], k6_numbers, k6_numbers, 1^[]]]
+1.1.1  [-r1_xxreal_0(k6_numbers, 1^[]), v7_ordinal1(1^[])]   (5)  substitution:[[_G4403], [1^[]]]
+1.1.1.1  [-v7_ordinal1(1^[])]   (1)  
+1.1.2  [- (k6_numbers=1^[]), 1^[]=k6_numbers]   (9)  substitution:[[_G1717, _G1672], [k6_numbers, 1^[]]]
+1.1.2.1  [- (1^[]=k6_numbers), v7_ordinal1(1^[]), -r1_xxreal_0(np__1, 1^[])]   (6)  substitution:[[_G4155], [1^[]]]
+1.1.2.1.1  [-v7_ordinal1(1^[])]   (1)  
+1.1.2.1.2  [r1_xxreal_0(np__1, 1^[]), v7_ordinal1(1^[]), - (k2_newton(k6_numbers, 1^[])=k6_numbers)]   (4)  substitution:[[_G3872], [1^[]]]
+1.1.2.1.2.1  [-v7_ordinal1(1^[])]   (1)  
+1.1.2.1.2.2  [k2_newton(k6_numbers, 1^[])=k6_numbers]   (3)  
+1.1.3  [- (1^[]=k6_numbers), v7_ordinal1(1^[]), -r1_xxreal_0(np__1, 1^[])]   (6)  substitution:[[_G4155], [1^[]]]
+1.1.3.1  [-v7_ordinal1(1^[])]   (1)  
+1.1.3.2  [r1_xxreal_0(np__1, 1^[]), v7_ordinal1(1^[]), - (k2_newton(k6_numbers, 1^[])=k6_numbers)]   (4)  substitution:[[_G3872], [1^[]]]
+1.1.3.2.1  [-v7_ordinal1(1^[])]   (1)  
+1.1.3.2.2  [k2_newton(k6_numbers, 1^[])=k6_numbers]   (3)  
+------------------------------------------------------
+End of proof for t84_newton

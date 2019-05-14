@@ -1,0 +1,44 @@
+
+t9_sgraph1 is a Theorem
+Start of proof for t9_sgraph1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [r1_tarski(k2_sgraph1(4^[]), k1_zfmisc_1(4^[]))]
+ (2)  [-v1_xboole_0(_G7098), m1_subset_1(_G7166, _G7098), -r2_hidden(_G7166, _G7098)]
+ (3)  [-v1_xboole_0(_G7098), -m1_subset_1(_G7166, _G7098), r2_hidden(_G7166, _G7098)]
+ (4)  [v1_xboole_0(_G7098), m1_subset_1(_G7166, _G7098), -v1_xboole_0(_G7166)]
+ (5)  [v1_xboole_0(_G7098), -m1_subset_1(_G7166, _G7098), v1_xboole_0(_G7166)]
+ (6)  [-r1_tarski(_G7637, _G7693), -r2_hidden(1^[_G7693, _G7637], _G7637)]
+ (7)  [-r1_tarski(_G7637, _G7693), r2_hidden(1^[_G7693, _G7637], _G7693)]
+ (8)  [r1_tarski(_G7637, _G7693), r2_hidden(_G7807, _G7637), -r2_hidden(_G7807, _G7693)]
+ (9)  [v1_xboole_0(k1_zfmisc_1(_G8039))]
+ (10)  [r2_hidden(_G8228, k2_sgraph1(_G8135)), -v1_finset_1(_G8228)]
+ (11)  [r2_hidden(_G8228, k2_sgraph1(_G8135)), -m1_subset_1(_G8228, k1_zfmisc_1(_G8135))]
+ (12)  [r2_hidden(_G8228, k2_sgraph1(_G8135)), -r2_hidden(2^[_G8228, _G8135], _G8135)]
+ (13)  [r2_hidden(_G8228, k2_sgraph1(_G8135)), -r2_hidden(3^[_G8228, _G8135], _G8135)]
+ (14)  [r2_hidden(_G8228, k2_sgraph1(_G8135)), 2^[_G8228, _G8135]=3^[_G8228, _G8135]]
+ (15)  [r2_hidden(_G8228, k2_sgraph1(_G8135)), - (_G8228=k2_tarski(2^[_G8228, _G8135], 3^[_G8228, _G8135]))]
+ (16)  [-r2_hidden(_G8228, k2_sgraph1(_G8135)), m1_subset_1(_G8228, k1_zfmisc_1(_G8135)), v1_finset_1(_G8228), r2_hidden(_G8517, _G8135), r2_hidden(_G8591, _G8135), - (_G8517=_G8591), _G8228=k2_tarski(_G8517, _G8591)]
+ (17)  [- (k2_tarski(_G5891, _G6026)=k2_tarski(_G5958, _G6095)), _G5891=_G5958, _G6026=_G6095]
+ (18)  [_G6488=_G6537, - (k2_sgraph1(_G6488)=k2_sgraph1(_G6537))]
+ (19)  [_G6757=_G6806, - (k1_zfmisc_1(_G6757)=k1_zfmisc_1(_G6806))]
+ (20)  [- (_G2666=_G2666)]
+ (21)  [_G2765=_G2810, - (_G2810=_G2765)]
+ (22)  [- (_G2998=_G3111), _G2998=_G3054, _G3054=_G3111]
+ (23)  [-v1_xboole_0(_G3497), _G3448=_G3497, v1_xboole_0(_G3448)]
+ (24)  [-v1_finset_1(_G3775), _G3726=_G3775, v1_finset_1(_G3726)]
+ (25)  [-m1_subset_1(_G4071, _G4208), m1_subset_1(_G4004, _G4139), _G4004=_G4071, _G4139=_G4208]
+ (26)  [-r2_hidden(_G4668, _G4805), r2_hidden(_G4601, _G4736), _G4601=_G4668, _G4736=_G4805]
+ (27)  [-r1_tarski(_G5256, _G5393), r1_tarski(_G5189, _G5324), _G5189=_G5256, _G5324=_G5393]
+
+Connection Proof:
+-----------------
+1  [v1_xboole_0(k1_zfmisc_1(4^[]))]   (9)  substitution:[[_G8039], [4^[]]]
+1.1  [-v1_xboole_0(k1_zfmisc_1(4^[])), m1_subset_1(1^[k1_zfmisc_1(4^[]), k2_sgraph1(4^[])], k1_zfmisc_1(4^[])), -r2_hidden(1^[k1_zfmisc_1(4^[]), k2_sgraph1(4^[])], k1_zfmisc_1(4^[]))]   (2)  substitution:[[_G7098, _G7166], [k1_zfmisc_1(4^[]), 1^[k1_zfmisc_1(4^[]), k2_sgraph1(4^[])]]]
+1.1.1  [-m1_subset_1(1^[k1_zfmisc_1(4^[]), k2_sgraph1(4^[])], k1_zfmisc_1(4^[])), r2_hidden(1^[k1_zfmisc_1(4^[]), k2_sgraph1(4^[])], k2_sgraph1(4^[]))]   (11)  substitution:[[_G8228, _G8135], [1^[k1_zfmisc_1(4^[]), k2_sgraph1(4^[])], 4^[]]]
+1.1.1.1  [-r2_hidden(1^[k1_zfmisc_1(4^[]), k2_sgraph1(4^[])], k2_sgraph1(4^[])), -r1_tarski(k2_sgraph1(4^[]), k1_zfmisc_1(4^[]))]   (6)  substitution:[[_G7693, _G7637], [k1_zfmisc_1(4^[]), k2_sgraph1(4^[])]]
+1.1.1.1.1  [r1_tarski(k2_sgraph1(4^[]), k1_zfmisc_1(4^[]))]   (1)  
+1.1.2  [r2_hidden(1^[k1_zfmisc_1(4^[]), k2_sgraph1(4^[])], k1_zfmisc_1(4^[])), -r1_tarski(k2_sgraph1(4^[]), k1_zfmisc_1(4^[]))]   (7)  substitution:[[_G7693, _G7637], [k1_zfmisc_1(4^[]), k2_sgraph1(4^[])]]
+1.1.2.1  [r1_tarski(k2_sgraph1(4^[]), k1_zfmisc_1(4^[]))]   (1)  
+------------------------------------------------------
+End of proof for t9_sgraph1

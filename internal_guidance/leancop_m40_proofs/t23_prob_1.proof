@@ -1,0 +1,33 @@
+
+t23_prob_1 is a Theorem
+Start of proof for t23_prob_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v1_xboole_0(2^[])]
+ (2)  [-v1_prob_1(2^[], 1^[])]
+ (3)  [-v4_prob_1(2^[], 1^[])]
+ (4)  [-m1_subset_1(2^[], k1_zfmisc_1(k1_zfmisc_1(1^[])))]
+ (5)  [m1_prob_1(1^[], 1^[], 2^[])]
+ (6)  [-v2_finsub_1(_G1207), -v1_xboole_0(_G1207), v1_prob_1(_G1207, _G1297), v4_prob_1(_G1207, _G1297), m1_subset_1(_G1207, k1_zfmisc_1(k1_zfmisc_1(_G1297)))]
+ (7)  [-r2_hidden(_G2781, _G2848), -v1_xboole_0(_G2848), v2_finsub_1(_G2848), v1_prob_1(_G2848, _G2781), m1_subset_1(_G2848, k1_zfmisc_1(k1_zfmisc_1(_G2781)))]
+ (8)  [-m1_prob_1(_G2096, _G2016, _G2177), r2_hidden(_G2096, _G2177), -v1_xboole_0(_G2177), v1_prob_1(_G2177, _G2016), v4_prob_1(_G2177, _G2016), m1_subset_1(_G2177, k1_zfmisc_1(k1_zfmisc_1(_G2016)))]
+
+Connection Proof:
+-----------------
+1  [v1_xboole_0(2^[])]   (1)  
+1.1  [-v1_xboole_0(2^[]), -r2_hidden(1^[], 2^[]), v2_finsub_1(2^[]), v1_prob_1(2^[], 1^[]), m1_subset_1(2^[], k1_zfmisc_1(k1_zfmisc_1(1^[])))]   (7)  substitution:[[_G2848, _G2781], [2^[], 1^[]]]
+1.1.1  [r2_hidden(1^[], 2^[]), -m1_prob_1(1^[], 1^[], 2^[]), -v1_xboole_0(2^[]), v1_prob_1(2^[], 1^[]), v4_prob_1(2^[], 1^[]), m1_subset_1(2^[], k1_zfmisc_1(k1_zfmisc_1(1^[])))]   (8)  substitution:[[_G2096, _G2177, _G2016], [1^[], 2^[], 1^[]]]
+1.1.1.1  [m1_prob_1(1^[], 1^[], 2^[])]   (5)  
+1.1.1.2  [v1_xboole_0(2^[])]   (1)  
+1.1.1.3  [-v1_prob_1(2^[], 1^[])]   (2)  
+1.1.1.4  [-v4_prob_1(2^[], 1^[])]   (3)  
+1.1.1.5  [-m1_subset_1(2^[], k1_zfmisc_1(k1_zfmisc_1(1^[])))]   (4)  
+1.1.2  [-v2_finsub_1(2^[]), -v1_xboole_0(2^[]), v1_prob_1(2^[], 1^[]), v4_prob_1(2^[], 1^[]), m1_subset_1(2^[], k1_zfmisc_1(k1_zfmisc_1(1^[])))]   (6)  substitution:[[_G1207, _G1297], [2^[], 1^[]]]
+1.1.2.1  [v1_xboole_0(2^[])]   (1)  
+1.1.2.2  [-v1_prob_1(2^[], 1^[])]   (2)  
+1.1.2.3  [-v4_prob_1(2^[], 1^[])]   (3)  
+1.1.2.4  [-m1_subset_1(2^[], k1_zfmisc_1(k1_zfmisc_1(1^[])))]   (4)  
+1.1.3  [-v1_prob_1(2^[], 1^[])]   (2)  
+1.1.4  [-m1_subset_1(2^[], k1_zfmisc_1(k1_zfmisc_1(1^[])))]   (4)  
+------------------------------------------------------
+End of proof for t23_prob_1

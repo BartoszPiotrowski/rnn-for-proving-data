@@ -1,0 +1,27 @@
+
+t2_ordinal3 is a Theorem
+Start of proof for t2_ordinal3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-r1_tarski(k1_ordinal1(1^[]), 2^[])]
+ (2)  [r1_tarski(1^[], 2^[])]
+ (3)  [- (k1_ordinal1(_G3975)=k2_xboole_0(_G3975, k1_tarski(_G3975)))]
+ (4)  [r1_tarski(k2_xboole_0(_G4139, _G4192), _G4246), -r1_tarski(_G4139, _G4246)]
+ (5)  [_G2768=_G2817, - (k1_tarski(_G2768)=k1_tarski(_G2817))]
+ (6)  [_G3634=_G3683, - (k1_ordinal1(_G3634)=k1_ordinal1(_G3683))]
+ (7)  [- (k2_xboole_0(_G3046, _G3181)=k2_xboole_0(_G3113, _G3250)), _G3046=_G3113, _G3181=_G3250]
+ (8)  [-r1_tarski(_G2217, _G2354), r1_tarski(_G2150, _G2285), _G2150=_G2217, _G2285=_G2354]
+ (9)  [- (_G1377=_G1377)]
+ (10)  [_G1476=_G1521, - (_G1521=_G1476)]
+ (11)  [- (_G1709=_G1822), _G1709=_G1765, _G1765=_G1822]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(1^[], 2^[])]   (2)  
+1.1  [-r1_tarski(1^[], 2^[]), r1_tarski(k2_xboole_0(1^[], k1_tarski(1^[])), 2^[])]   (4)  substitution:[[_G4139, _G4246, _G4192], [1^[], 2^[], k1_tarski(1^[])]]
+1.1.1  [-r1_tarski(k2_xboole_0(1^[], k1_tarski(1^[])), 2^[]), r1_tarski(k1_ordinal1(1^[]), 2^[]), k1_ordinal1(1^[])=k2_xboole_0(1^[], k1_tarski(1^[])), 2^[]=2^[]]   (8)  substitution:[[_G2217, _G2354, _G2150, _G2285], [k2_xboole_0(1^[], k1_tarski(1^[])), 2^[], k1_ordinal1(1^[]), 2^[]]]
+1.1.1.1  [-r1_tarski(k1_ordinal1(1^[]), 2^[])]   (1)  
+1.1.1.2  [- (k1_ordinal1(1^[])=k2_xboole_0(1^[], k1_tarski(1^[])))]   (3)  substitution:[[_G3975], [1^[]]]
+1.1.1.3  [- (2^[]=2^[])]   (9)  substitution:[[_G1377], [2^[]]]
+------------------------------------------------------
+End of proof for t2_ordinal3

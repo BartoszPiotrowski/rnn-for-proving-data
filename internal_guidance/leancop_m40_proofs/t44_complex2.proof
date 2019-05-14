@@ -1,0 +1,30 @@
+
+t44_complex2 is a Theorem
+Start of proof for t44_complex2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], k2_numbers)]
+ (2)  [-m1_subset_1(2^[], k2_numbers)]
+ (3)  [k10_complex1(k1_complex2(1^[], 2^[]))=k1_complex2(1^[], k10_complex1(2^[]))]
+ (4)  [m1_subset_1(_G4058, k2_numbers), m1_subset_1(_G4176, k2_numbers), - (k1_complex2(k10_complex1(_G4058), _G4176)=k1_complex2(_G4058, k10_complex1(_G4176)))]
+ (5)  [m1_subset_1(_G4501, k2_numbers), m1_subset_1(_G4619, k2_numbers), - (k1_complex2(k10_complex1(_G4501), _G4619)=k10_complex1(k1_complex2(_G4501, _G4619)))]
+ (6)  [_G3738=_G3787, - (k10_complex1(_G3738)=k10_complex1(_G3787))]
+ (7)  [- (k1_complex2(_G3150, _G3285)=k1_complex2(_G3217, _G3354)), _G3150=_G3217, _G3285=_G3354]
+ (8)  [-m1_subset_1(_G2599, _G2736), m1_subset_1(_G2532, _G2667), _G2532=_G2599, _G2667=_G2736]
+ (9)  [- (_G1759=_G1759)]
+ (10)  [_G1858=_G1903, - (_G1903=_G1858)]
+ (11)  [- (_G2091=_G2204), _G2091=_G2147, _G2147=_G2204]
+
+Connection Proof:
+-----------------
+1  [k10_complex1(k1_complex2(1^[], 2^[]))=k1_complex2(1^[], k10_complex1(2^[]))]   (3)  
+1.1  [- (k10_complex1(k1_complex2(1^[], 2^[]))=k1_complex2(1^[], k10_complex1(2^[]))), k10_complex1(k1_complex2(1^[], 2^[]))=k1_complex2(k10_complex1(1^[]), 2^[]), k1_complex2(k10_complex1(1^[]), 2^[])=k1_complex2(1^[], k10_complex1(2^[]))]   (11)  substitution:[[_G2091, _G2204, _G2147], [k10_complex1(k1_complex2(1^[], 2^[])), k1_complex2(1^[], k10_complex1(2^[])), k1_complex2(k10_complex1(1^[]), 2^[])]]
+1.1.1  [- (k10_complex1(k1_complex2(1^[], 2^[]))=k1_complex2(k10_complex1(1^[]), 2^[])), k1_complex2(k10_complex1(1^[]), 2^[])=k10_complex1(k1_complex2(1^[], 2^[]))]   (10)  substitution:[[_G1903, _G1858], [k10_complex1(k1_complex2(1^[], 2^[])), k1_complex2(k10_complex1(1^[]), 2^[])]]
+1.1.1.1  [- (k1_complex2(k10_complex1(1^[]), 2^[])=k10_complex1(k1_complex2(1^[], 2^[]))), m1_subset_1(1^[], k2_numbers), m1_subset_1(2^[], k2_numbers)]   (5)  substitution:[[_G4501, _G4619], [1^[], 2^[]]]
+1.1.1.1.1  [-m1_subset_1(1^[], k2_numbers)]   (1)  
+1.1.1.1.2  [-m1_subset_1(2^[], k2_numbers)]   (2)  
+1.1.2  [- (k1_complex2(k10_complex1(1^[]), 2^[])=k1_complex2(1^[], k10_complex1(2^[]))), m1_subset_1(1^[], k2_numbers), m1_subset_1(2^[], k2_numbers)]   (4)  substitution:[[_G4058, _G4176], [1^[], 2^[]]]
+1.1.2.1  [-m1_subset_1(1^[], k2_numbers)]   (1)  
+1.1.2.2  [-m1_subset_1(2^[], k2_numbers)]   (2)  
+------------------------------------------------------
+End of proof for t44_complex2

@@ -1,0 +1,40 @@
+
+t151_xcmplx_1 is a Theorem
+Start of proof for t151_xcmplx_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xcmplx_0(1^[])]
+ (2)  [-v1_xcmplx_0(2^[])]
+ (3)  [1^[]=k6_xcmplx_0(1^[], k2_xcmplx_0(2^[], k4_xcmplx_0(2^[])))]
+ (4)  [- (k2_xcmplx_0(_G4373, k4_xcmplx_0(_G4430))=k6_xcmplx_0(_G4373, _G4430)), v1_xcmplx_0(_G4373), v1_xcmplx_0(_G4430)]
+ (5)  [v1_xcmplx_0(_G4759), - (k6_xcmplx_0(_G4759, _G4759)=k6_numbers)]
+ (6)  [v1_xcmplx_0(_G4949), - (k6_xcmplx_0(_G4949, k6_numbers)=_G4949)]
+ (7)  [-v1_xcmplx_0(_G2597), _G2548=_G2597, v1_xcmplx_0(_G2548)]
+ (8)  [- (_G1775=_G1775)]
+ (9)  [_G1874=_G1919, - (_G1919=_G1874)]
+ (10)  [- (_G2107=_G2220), _G2107=_G2163, _G2163=_G2220]
+ (11)  [- (k6_xcmplx_0(_G2847, _G2982)=k6_xcmplx_0(_G2914, _G3051)), _G2847=_G2914, _G2982=_G3051]
+ (12)  [_G4032=_G4081, - (k4_xcmplx_0(_G4032)=k4_xcmplx_0(_G4081))]
+ (13)  [- (k2_xcmplx_0(_G3444, _G3579)=k2_xcmplx_0(_G3511, _G3648)), _G3444=_G3511, _G3579=_G3648]
+
+Connection Proof:
+-----------------
+1  [1^[]=k6_xcmplx_0(1^[], k2_xcmplx_0(2^[], k4_xcmplx_0(2^[])))]   (3)  
+1.1  [- (1^[]=k6_xcmplx_0(1^[], k2_xcmplx_0(2^[], k4_xcmplx_0(2^[])))), k6_xcmplx_0(1^[], k2_xcmplx_0(2^[], k4_xcmplx_0(2^[])))=1^[]]   (9)  substitution:[[_G1919, _G1874], [1^[], k6_xcmplx_0(1^[], k2_xcmplx_0(2^[], k4_xcmplx_0(2^[])))]]
+1.1.1  [- (k6_xcmplx_0(1^[], k2_xcmplx_0(2^[], k4_xcmplx_0(2^[])))=1^[]), k6_xcmplx_0(1^[], k2_xcmplx_0(2^[], k4_xcmplx_0(2^[])))=k6_xcmplx_0(1^[], k6_xcmplx_0(2^[], 2^[])), k6_xcmplx_0(1^[], k6_xcmplx_0(2^[], 2^[]))=1^[]]   (10)  substitution:[[_G2107, _G2220, _G2163], [k6_xcmplx_0(1^[], k2_xcmplx_0(2^[], k4_xcmplx_0(2^[]))), 1^[], k6_xcmplx_0(1^[], k6_xcmplx_0(2^[], 2^[]))]]
+1.1.1.1  [- (k6_xcmplx_0(1^[], k2_xcmplx_0(2^[], k4_xcmplx_0(2^[])))=k6_xcmplx_0(1^[], k6_xcmplx_0(2^[], 2^[]))), k6_xcmplx_0(1^[], k2_xcmplx_0(2^[], k4_xcmplx_0(2^[])))=k6_xcmplx_0(1^[], k6_xcmplx_0(2^[], 2^[])), k6_xcmplx_0(1^[], k6_xcmplx_0(2^[], 2^[]))=k6_xcmplx_0(1^[], k6_xcmplx_0(2^[], 2^[]))]   (10)  substitution:[[_G2107, _G2220, _G2163], [k6_xcmplx_0(1^[], k2_xcmplx_0(2^[], k4_xcmplx_0(2^[]))), k6_xcmplx_0(1^[], k6_xcmplx_0(2^[], 2^[])), k6_xcmplx_0(1^[], k6_xcmplx_0(2^[], 2^[]))]]
+1.1.1.1.1  [- (k6_xcmplx_0(1^[], k2_xcmplx_0(2^[], k4_xcmplx_0(2^[])))=k6_xcmplx_0(1^[], k6_xcmplx_0(2^[], 2^[]))), 1^[]=1^[], k2_xcmplx_0(2^[], k4_xcmplx_0(2^[]))=k6_xcmplx_0(2^[], 2^[])]   (11)  substitution:[[_G2847, _G2982, _G2914, _G3051], [1^[], k2_xcmplx_0(2^[], k4_xcmplx_0(2^[])), 1^[], k6_xcmplx_0(2^[], 2^[])]]
+1.1.1.1.1.1  [- (1^[]=1^[])]   (8)  substitution:[[_G1775], [1^[]]]
+1.1.1.1.1.2  [- (k2_xcmplx_0(2^[], k4_xcmplx_0(2^[]))=k6_xcmplx_0(2^[], 2^[])), v1_xcmplx_0(2^[]), v1_xcmplx_0(2^[])]   (4)  substitution:[[_G4373, _G4430], [2^[], 2^[]]]
+1.1.1.1.1.2.1  [-v1_xcmplx_0(2^[])]   (2)  
+1.1.1.1.1.2.2  [-v1_xcmplx_0(2^[])]   (2)  
+1.1.1.1.2  [- (k6_xcmplx_0(1^[], k6_xcmplx_0(2^[], 2^[]))=k6_xcmplx_0(1^[], k6_xcmplx_0(2^[], 2^[])))]   (8)  substitution:[[_G1775], [k6_xcmplx_0(1^[], k6_xcmplx_0(2^[], 2^[]))]]
+1.1.1.2  [- (k6_xcmplx_0(1^[], k6_xcmplx_0(2^[], 2^[]))=1^[]), k6_xcmplx_0(1^[], k6_xcmplx_0(2^[], 2^[]))=k6_xcmplx_0(1^[], k6_numbers), k6_xcmplx_0(1^[], k6_numbers)=1^[]]   (10)  substitution:[[_G2107, _G2220, _G2163], [k6_xcmplx_0(1^[], k6_xcmplx_0(2^[], 2^[])), 1^[], k6_xcmplx_0(1^[], k6_numbers)]]
+1.1.1.2.1  [- (k6_xcmplx_0(1^[], k6_xcmplx_0(2^[], 2^[]))=k6_xcmplx_0(1^[], k6_numbers)), 1^[]=1^[], k6_xcmplx_0(2^[], 2^[])=k6_numbers]   (11)  substitution:[[_G2847, _G2982, _G2914, _G3051], [1^[], k6_xcmplx_0(2^[], 2^[]), 1^[], k6_numbers]]
+1.1.1.2.1.1  [- (1^[]=1^[])]   (8)  substitution:[[_G1775], [1^[]]]
+1.1.1.2.1.2  [- (k6_xcmplx_0(2^[], 2^[])=k6_numbers), v1_xcmplx_0(2^[])]   (5)  substitution:[[_G4759], [2^[]]]
+1.1.1.2.1.2.1  [-v1_xcmplx_0(2^[])]   (2)  
+1.1.1.2.2  [- (k6_xcmplx_0(1^[], k6_numbers)=1^[]), v1_xcmplx_0(1^[])]   (6)  substitution:[[_G4949], [1^[]]]
+1.1.1.2.2.1  [-v1_xcmplx_0(1^[])]   (1)  
+------------------------------------------------------
+End of proof for t151_xcmplx_1

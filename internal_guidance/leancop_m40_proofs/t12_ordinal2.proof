@@ -1,0 +1,60 @@
+
+t12_ordinal2 is a Theorem
+Start of proof for t12_ordinal2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [r1_tarski(k3_ordinal1(6^[]), k2_ordinal1(6^[]))]
+ (2)  [_G4761=_G4810, - (k3_ordinal1(_G4761)=k3_ordinal1(_G4810))]
+ (3)  [_G5030=_G5079, - (k2_ordinal1(_G5030)=k2_ordinal1(_G5079))]
+ (4)  [- (_G2154=_G2154)]
+ (5)  [_G2253=_G2298, - (_G2298=_G2253)]
+ (6)  [- (_G2486=_G2599), _G2486=_G2542, _G2542=_G2599]
+ (7)  [-v4_ordinal1(_G2985), _G2936=_G2985, v4_ordinal1(_G2936)]
+ (8)  [-r2_hidden(_G3281, _G3418), r2_hidden(_G3214, _G3349), _G3214=_G3281, _G3349=_G3418]
+ (9)  [-v3_ordinal1(_G3860), _G3811=_G3860, v3_ordinal1(_G3811)]
+ (10)  [-r1_tarski(_G4147, _G4284), r1_tarski(_G4080, _G4215), _G4080=_G4147, _G4215=_G4284]
+ (11)  [_G5429=k3_ordinal1(_G5350), r2_hidden(_G5580, _G5429), -r2_hidden(_G5580, _G5350)]
+ (12)  [_G5429=k3_ordinal1(_G5350), r2_hidden(_G5580, _G5429), -v3_ordinal1(1^[_G5580, _G5429, _G5350])]
+ (13)  [_G5429=k3_ordinal1(_G5350), r2_hidden(_G5580, _G5429), - (_G5580=1^[_G5580, _G5429, _G5350])]
+ (14)  [_G5429=k3_ordinal1(_G5350), r2_hidden(_G5580, _G5429), -v4_ordinal1(1^[_G5580, _G5429, _G5350])]
+ (15)  [_G5429=k3_ordinal1(_G5350), -r2_hidden(_G5580, _G5429), r2_hidden(_G5580, _G5350), v3_ordinal1(_G5767), _G5580=_G5767, v4_ordinal1(_G5767)]
+ (16)  [- (_G5429=k3_ordinal1(_G5350)), -r2_hidden(2^[_G5429, _G5350], _G5429), -r2_hidden(2^[_G5429, _G5350], _G5350)]
+ (17)  [- (_G5429=k3_ordinal1(_G5350)), -r2_hidden(2^[_G5429, _G5350], _G5429), -v3_ordinal1(3^[_G5429, _G5350])]
+ (18)  [- (_G5429=k3_ordinal1(_G5350)), -r2_hidden(2^[_G5429, _G5350], _G5429), - (2^[_G5429, _G5350]=3^[_G5429, _G5350])]
+ (19)  [- (_G5429=k3_ordinal1(_G5350)), -r2_hidden(2^[_G5429, _G5350], _G5429), -v4_ordinal1(3^[_G5429, _G5350])]
+ (20)  [- (_G5429=k3_ordinal1(_G5350)), r2_hidden(2^[_G5429, _G5350], _G5429), r2_hidden(2^[_G5429, _G5350], _G5350), v3_ordinal1(_G7744), 2^[_G5429, _G5350]=_G7744, v4_ordinal1(_G7744)]
+ (21)  [-r1_tarski(_G6087, _G6143), -r2_hidden(4^[_G6143, _G6087], _G6087)]
+ (22)  [-r1_tarski(_G6087, _G6143), r2_hidden(4^[_G6143, _G6087], _G6143)]
+ (23)  [r1_tarski(_G6087, _G6143), r2_hidden(_G6257, _G6087), -r2_hidden(_G6257, _G6143)]
+ (24)  [_G6543=k2_ordinal1(_G6480), r2_hidden(_G6678, _G6543), -r2_hidden(_G6678, _G6480)]
+ (25)  [_G6543=k2_ordinal1(_G6480), r2_hidden(_G6678, _G6543), -v3_ordinal1(_G6678)]
+ (26)  [_G6543=k2_ordinal1(_G6480), -r2_hidden(_G6678, _G6543), r2_hidden(_G6678, _G6480), v3_ordinal1(_G6678)]
+ (27)  [- (_G6543=k2_ordinal1(_G6480)), -r2_hidden(5^[_G6543, _G6480], _G6543), -r2_hidden(5^[_G6543, _G6480], _G6480)]
+ (28)  [- (_G6543=k2_ordinal1(_G6480)), -r2_hidden(5^[_G6543, _G6480], _G6543), -v3_ordinal1(5^[_G6543, _G6480])]
+ (29)  [- (_G6543=k2_ordinal1(_G6480)), r2_hidden(5^[_G6543, _G6480], _G6543), r2_hidden(5^[_G6543, _G6480], _G6480), v3_ordinal1(5^[_G6543, _G6480])]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k3_ordinal1(6^[]), k2_ordinal1(6^[]))]   (1)  
+1.1  [-r1_tarski(k3_ordinal1(6^[]), k2_ordinal1(6^[])), -r2_hidden(4^[k2_ordinal1(6^[]), k3_ordinal1(6^[])], k3_ordinal1(6^[]))]   (21)  substitution:[[_G6087, _G6143], [k3_ordinal1(6^[]), k2_ordinal1(6^[])]]
+1.1.1  [r2_hidden(4^[k2_ordinal1(6^[]), k3_ordinal1(6^[])], k3_ordinal1(6^[])), k3_ordinal1(6^[])=k3_ordinal1(6^[]), -v3_ordinal1(1^[4^[k2_ordinal1(6^[]), k3_ordinal1(6^[])], k3_ordinal1(6^[]), 6^[]])]   (12)  substitution:[[_G5580, _G5429, _G5350], [4^[k2_ordinal1(6^[]), k3_ordinal1(6^[])], k3_ordinal1(6^[]), 6^[]]]
+1.1.1.1  [- (k3_ordinal1(6^[])=k3_ordinal1(6^[])), 6^[]=6^[]]   (2)  substitution:[[_G4761, _G4810], [6^[], 6^[]]]
+1.1.1.1.1  [- (6^[]=6^[])]   (4)  substitution:[[_G2154], [6^[]]]
+1.1.1.2  [v3_ordinal1(1^[4^[k2_ordinal1(6^[]), k3_ordinal1(6^[])], k3_ordinal1(6^[]), 6^[]]), -v3_ordinal1(4^[k2_ordinal1(6^[]), k3_ordinal1(6^[])]), 1^[4^[k2_ordinal1(6^[]), k3_ordinal1(6^[])], k3_ordinal1(6^[]), 6^[]]=4^[k2_ordinal1(6^[]), k3_ordinal1(6^[])]]   (9)  substitution:[[_G3811, _G3860], [1^[4^[k2_ordinal1(6^[]), k3_ordinal1(6^[])], k3_ordinal1(6^[]), 6^[]], 4^[k2_ordinal1(6^[]), k3_ordinal1(6^[])]]]
+1.1.1.2.1  [v3_ordinal1(4^[k2_ordinal1(6^[]), k3_ordinal1(6^[])]), k2_ordinal1(6^[])=k2_ordinal1(6^[]), -r2_hidden(4^[k2_ordinal1(6^[]), k3_ordinal1(6^[])], k2_ordinal1(6^[])), r2_hidden(4^[k2_ordinal1(6^[]), k3_ordinal1(6^[])], 6^[])]   (26)  substitution:[[_G6678, _G6543, _G6480], [4^[k2_ordinal1(6^[]), k3_ordinal1(6^[])], k2_ordinal1(6^[]), 6^[]]]
+1.1.1.2.1.1  [- (k2_ordinal1(6^[])=k2_ordinal1(6^[])), 6^[]=6^[]]   (3)  substitution:[[_G5030, _G5079], [6^[], 6^[]]]
+1.1.1.2.1.1.1  [- (6^[]=6^[])]   (4)  substitution:[[_G2154], [6^[]]]
+1.1.1.2.1.2  [r2_hidden(4^[k2_ordinal1(6^[]), k3_ordinal1(6^[])], k2_ordinal1(6^[])), -r2_hidden(4^[k2_ordinal1(6^[]), k3_ordinal1(6^[])], k2_ordinal1(6^[])), 4^[k2_ordinal1(6^[]), k3_ordinal1(6^[])]=4^[k2_ordinal1(6^[]), k3_ordinal1(6^[])], k2_ordinal1(6^[])=k2_ordinal1(6^[])]   (8)  substitution:[[_G3214, _G3349, _G3281, _G3418], [4^[k2_ordinal1(6^[]), k3_ordinal1(6^[])], k2_ordinal1(6^[]), 4^[k2_ordinal1(6^[]), k3_ordinal1(6^[])], k2_ordinal1(6^[])]]
+1.1.1.2.1.2.1  [r2_hidden(4^[k2_ordinal1(6^[]), k3_ordinal1(6^[])], k2_ordinal1(6^[])), -r1_tarski(k3_ordinal1(6^[]), k2_ordinal1(6^[]))]   (22)  substitution:[[_G6143, _G6087], [k2_ordinal1(6^[]), k3_ordinal1(6^[])]]
+1.1.1.2.1.2.1.1  [r1_tarski(k3_ordinal1(6^[]), k2_ordinal1(6^[]))]   (1)  
+1.1.1.2.1.2.2  [- (4^[k2_ordinal1(6^[]), k3_ordinal1(6^[])]=4^[k2_ordinal1(6^[]), k3_ordinal1(6^[])])]   (4)  substitution:[[_G2154], [4^[k2_ordinal1(6^[]), k3_ordinal1(6^[])]]]
+1.1.1.2.1.2.3  [- (k2_ordinal1(6^[])=k2_ordinal1(6^[]))]   (4)  substitution:[[_G2154], [k2_ordinal1(6^[])]]
+1.1.1.2.1.3  [-r2_hidden(4^[k2_ordinal1(6^[]), k3_ordinal1(6^[])], 6^[]), k3_ordinal1(6^[])=k3_ordinal1(6^[]), r2_hidden(4^[k2_ordinal1(6^[]), k3_ordinal1(6^[])], k3_ordinal1(6^[]))]   (11)  substitution:[[_G5580, _G5350, _G5429], [4^[k2_ordinal1(6^[]), k3_ordinal1(6^[])], 6^[], k3_ordinal1(6^[])]]
+1.1.1.2.1.3.1  [- (k3_ordinal1(6^[])=k3_ordinal1(6^[]))]   (4)  substitution:[[_G2154], [k3_ordinal1(6^[])]]
+1.1.1.2.1.3.2  [-r2_hidden(4^[k2_ordinal1(6^[]), k3_ordinal1(6^[])], k3_ordinal1(6^[]))]   (reduction:1.1)  
+1.1.1.2.2  [- (1^[4^[k2_ordinal1(6^[]), k3_ordinal1(6^[])], k3_ordinal1(6^[]), 6^[]]=4^[k2_ordinal1(6^[]), k3_ordinal1(6^[])]), 4^[k2_ordinal1(6^[]), k3_ordinal1(6^[])]=1^[4^[k2_ordinal1(6^[]), k3_ordinal1(6^[])], k3_ordinal1(6^[]), 6^[]]]   (5)  substitution:[[_G2298, _G2253], [1^[4^[k2_ordinal1(6^[]), k3_ordinal1(6^[])], k3_ordinal1(6^[]), 6^[]], 4^[k2_ordinal1(6^[]), k3_ordinal1(6^[])]]]
+1.1.1.2.2.1  [- (4^[k2_ordinal1(6^[]), k3_ordinal1(6^[])]=1^[4^[k2_ordinal1(6^[]), k3_ordinal1(6^[])], k3_ordinal1(6^[]), 6^[]]), k3_ordinal1(6^[])=k3_ordinal1(6^[]), r2_hidden(4^[k2_ordinal1(6^[]), k3_ordinal1(6^[])], k3_ordinal1(6^[]))]   (13)  substitution:[[_G5580, _G5429, _G5350], [4^[k2_ordinal1(6^[]), k3_ordinal1(6^[])], k3_ordinal1(6^[]), 6^[]]]
+1.1.1.2.2.1.1  [- (k3_ordinal1(6^[])=k3_ordinal1(6^[]))]   (4)  substitution:[[_G2154], [k3_ordinal1(6^[])]]
+1.1.1.2.2.1.2  [-r2_hidden(4^[k2_ordinal1(6^[]), k3_ordinal1(6^[])], k3_ordinal1(6^[]))]   (reduction:1.1)  
+------------------------------------------------------
+End of proof for t12_ordinal2

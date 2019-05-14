@@ -1,0 +1,27 @@
+
+t34_rewrite2 is a Theorem
+Start of proof for t34_rewrite2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k8_afinsq_1(1^[]), k8_afinsq_1(1^[]))))]
+ (2)  [-m1_subset_1(3^[], k8_afinsq_1(1^[]))]
+ (3)  [-m1_subset_1(4^[], k8_afinsq_1(1^[]))]
+ (4)  [-r1_rewrite2(1^[], 2^[], 3^[], 4^[])]
+ (5)  [r3_rewrite2(1^[], 2^[], 3^[], 4^[])]
+ (6)  [m1_subset_1(_G1144, k1_zfmisc_1(k2_zfmisc_1(k8_afinsq_1(_G1054), k8_afinsq_1(_G1054)))), m1_subset_1(_G1373, k8_afinsq_1(_G1054)), m1_subset_1(_G1521, k8_afinsq_1(_G1054)), r1_rewrite2(_G1054, _G1144, _G1373, _G1521), -r2_rewrite2(_G1054, _G1144, _G1373, _G1521)]
+ (7)  [m1_subset_1(_G2145, k1_zfmisc_1(k2_zfmisc_1(k8_afinsq_1(_G2055), k8_afinsq_1(_G2055)))), m1_subset_1(_G2374, k8_afinsq_1(_G2055)), m1_subset_1(_G2522, k8_afinsq_1(_G2055)), r2_rewrite2(_G2055, _G2145, _G2374, _G2522), -r3_rewrite2(_G2055, _G2145, _G2374, _G2522)]
+
+Connection Proof:
+-----------------
+1  [r3_rewrite2(1^[], 2^[], 3^[], 4^[])]   (5)  
+1.1  [-r3_rewrite2(1^[], 2^[], 3^[], 4^[]), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k8_afinsq_1(1^[]), k8_afinsq_1(1^[])))), m1_subset_1(3^[], k8_afinsq_1(1^[])), m1_subset_1(4^[], k8_afinsq_1(1^[])), r2_rewrite2(1^[], 2^[], 3^[], 4^[])]   (7)  substitution:[[_G2055, _G2145, _G2374, _G2522], [1^[], 2^[], 3^[], 4^[]]]
+1.1.1  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k8_afinsq_1(1^[]), k8_afinsq_1(1^[]))))]   (1)  
+1.1.2  [-m1_subset_1(3^[], k8_afinsq_1(1^[]))]   (2)  
+1.1.3  [-m1_subset_1(4^[], k8_afinsq_1(1^[]))]   (3)  
+1.1.4  [-r2_rewrite2(1^[], 2^[], 3^[], 4^[]), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k8_afinsq_1(1^[]), k8_afinsq_1(1^[])))), m1_subset_1(3^[], k8_afinsq_1(1^[])), m1_subset_1(4^[], k8_afinsq_1(1^[])), r1_rewrite2(1^[], 2^[], 3^[], 4^[])]   (6)  substitution:[[_G1054, _G1144, _G1373, _G1521], [1^[], 2^[], 3^[], 4^[]]]
+1.1.4.1  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k8_afinsq_1(1^[]), k8_afinsq_1(1^[]))))]   (1)  
+1.1.4.2  [-m1_subset_1(3^[], k8_afinsq_1(1^[]))]   (2)  
+1.1.4.3  [-m1_subset_1(4^[], k8_afinsq_1(1^[]))]   (3)  
+1.1.4.4  [-r1_rewrite2(1^[], 2^[], 3^[], 4^[])]   (4)  
+------------------------------------------------------
+End of proof for t34_rewrite2

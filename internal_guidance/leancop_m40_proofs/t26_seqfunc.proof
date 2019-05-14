@@ -1,0 +1,50 @@
+
+t26_seqfunc is a Theorem
+Start of proof for t26_seqfunc
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v1_xboole_0(1^[])]
+ (2)  [-v1_funct_1(2^[])]
+ (3)  [-v1_funct_2(2^[], k5_numbers, k4_partfun1(1^[], k1_numbers))]
+ (4)  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k4_partfun1(1^[], k1_numbers))))]
+ (5)  [-r1_seqfunc(1^[], k1_numbers, 2^[], 3^[])]
+ (6)  [-m1_subset_1(4^[], 1^[])]
+ (7)  [-r2_hidden(4^[], 3^[])]
+ (8)  [r1_seqfunc(1^[], k1_numbers, 2^[], k1_tarski(4^[]))]
+ (9)  [-v1_xboole_0(k1_xboole_0)]
+ (10)  [v1_xboole_0(k1_tarski(_G11103))]
+ (11)  [r1_tarski(k1_tarski(_G11208), _G11255), -r2_hidden(_G11208, _G11255)]
+ (12)  [-r1_tarski(k1_tarski(_G11208), _G11255), r2_hidden(_G11208, _G11255)]
+ (13)  [-v1_xboole_0(_G11459), m1_subset_1(_G11612, k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k4_partfun1(_G11459, k1_numbers)))), v1_funct_2(_G11612, k5_numbers, k4_partfun1(_G11459, k1_numbers)), v1_funct_1(_G11612), r1_seqfunc(_G11459, k1_numbers, _G11612, _G12148), r1_tarski(_G12075, _G12148), - (_G12075=k1_xboole_0), -r1_seqfunc(_G11459, k1_numbers, _G11612, _G12075)]
+ (14)  [_G9246=_G9295, - (k1_zfmisc_1(_G9246)=k1_zfmisc_1(_G9295))]
+ (15)  [- (k2_zfmisc_1(_G9524, _G9659)=k2_zfmisc_1(_G9591, _G9728)), _G9524=_G9591, _G9659=_G9728]
+ (16)  [_G10709=_G10758, - (k1_tarski(_G10709)=k1_tarski(_G10758))]
+ (17)  [- (k4_partfun1(_G10121, _G10256)=k4_partfun1(_G10188, _G10325)), _G10121=_G10188, _G10256=_G10325]
+ (18)  [- (_G3416=_G3416)]
+ (19)  [_G3515=_G3560, - (_G3560=_G3515)]
+ (20)  [- (_G3748=_G3861), _G3748=_G3804, _G3804=_G3861]
+ (21)  [-r1_tarski(_G4265, _G4402), r1_tarski(_G4198, _G4333), _G4198=_G4265, _G4333=_G4402]
+ (22)  [-v1_xboole_0(_G4844), _G4795=_G4844, v1_xboole_0(_G4795)]
+ (23)  [-v1_funct_1(_G5122), _G5073=_G5122, v1_funct_1(_G5073)]
+ (24)  [-v1_funct_2(_G5436, _G5609, _G5786), v1_funct_2(_G5351, _G5522, _G5697), _G5351=_G5436, _G5522=_G5609, _G5697=_G5786]
+ (25)  [-m1_subset_1(_G6446, _G6583), m1_subset_1(_G6379, _G6514), _G6379=_G6446, _G6514=_G6583]
+ (26)  [-r2_hidden(_G7043, _G7180), r2_hidden(_G6976, _G7111), _G6976=_G7043, _G7111=_G7180]
+ (27)  [-r1_seqfunc(_G7667, _G7876, _G8089, _G8306), r1_seqfunc(_G7564, _G7771, _G7982, _G8197), _G7564=_G7667, _G7771=_G7876, _G7982=_G8089, _G8197=_G8306]
+
+Connection Proof:
+-----------------
+1  [v1_xboole_0(1^[])]   (1)  
+1.1  [-v1_xboole_0(1^[]), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k4_partfun1(1^[], k1_numbers)))), v1_funct_2(2^[], k5_numbers, k4_partfun1(1^[], k1_numbers)), v1_funct_1(2^[]), r1_seqfunc(1^[], k1_numbers, 2^[], 3^[]), r1_tarski(k1_tarski(4^[]), 3^[]), - (k1_tarski(4^[])=k1_xboole_0), -r1_seqfunc(1^[], k1_numbers, 2^[], k1_tarski(4^[]))]   (13)  substitution:[[_G11459, _G11612, _G12148, _G12075], [1^[], 2^[], 3^[], k1_tarski(4^[])]]
+1.1.1  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k4_partfun1(1^[], k1_numbers))))]   (4)  
+1.1.2  [-v1_funct_2(2^[], k5_numbers, k4_partfun1(1^[], k1_numbers))]   (3)  
+1.1.3  [-v1_funct_1(2^[])]   (2)  
+1.1.4  [-r1_seqfunc(1^[], k1_numbers, 2^[], 3^[])]   (5)  
+1.1.5  [-r1_tarski(k1_tarski(4^[]), 3^[]), r2_hidden(4^[], 3^[])]   (12)  substitution:[[_G11208, _G11255], [4^[], 3^[]]]
+1.1.5.1  [-r2_hidden(4^[], 3^[])]   (7)  
+1.1.6  [k1_tarski(4^[])=k1_xboole_0, - (k1_xboole_0=k1_tarski(4^[]))]   (19)  substitution:[[_G3515, _G3560], [k1_tarski(4^[]), k1_xboole_0]]
+1.1.6.1  [k1_xboole_0=k1_tarski(4^[]), -v1_xboole_0(k1_tarski(4^[])), v1_xboole_0(k1_xboole_0)]   (22)  substitution:[[_G4795, _G4844], [k1_xboole_0, k1_tarski(4^[])]]
+1.1.6.1.1  [v1_xboole_0(k1_tarski(4^[]))]   (10)  substitution:[[_G11103], [4^[]]]
+1.1.6.1.2  [-v1_xboole_0(k1_xboole_0)]   (9)  
+1.1.7  [r1_seqfunc(1^[], k1_numbers, 2^[], k1_tarski(4^[]))]   (8)  
+------------------------------------------------------
+End of proof for t26_seqfunc

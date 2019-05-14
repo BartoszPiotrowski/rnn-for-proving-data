@@ -1,0 +1,59 @@
+
+t15_borsuk_7 is a Theorem
+Start of proof for t15_borsuk_7
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v7_ordinal1(1^[])]
+ (2)  [-v1_relat_1(2^[])]
+ (3)  [-v1_funct_1(2^[])]
+ (4)  [-v1_valued_0(2^[])]
+ (5)  [2^[]=k5_euclid(1^[])]
+ (6)  [- (k30_valued_1(2^[])=k5_euclid(1^[]))]
+ (7)  [v7_ordinal1(_G9094), -m1_finseq_2(k1_euclid(_G9094), k1_numbers)]
+ (8)  [v7_ordinal1(_G9267), -m2_finseq_2(k5_euclid(_G9267), k1_numbers, k1_euclid(_G9267))]
+ (9)  [- (k30_valued_1(k30_valued_1(_G9500))=_G9500), v1_relat_1(_G9500), v1_funct_1(_G9500), v1_valued_0(_G9500)]
+ (10)  [- (k6_euclid(_G9805, _G9862)=k30_valued_1(_G9862)), v7_ordinal1(_G9805), m1_subset_1(_G9862, k1_euclid(_G9805))]
+ (11)  [v7_ordinal1(_G10630), - (k6_euclid(_G10630, k5_euclid(_G10630))=k5_euclid(_G10630))]
+ (12)  [m1_finseq_2(_G10248, _G10191), m2_finseq_2(_G10363, _G10191, _G10248), -m1_subset_1(_G10363, _G10248)]
+ (13)  [m1_finseq_2(_G10248, _G10191), -m2_finseq_2(_G10363, _G10191, _G10248), m1_subset_1(_G10363, _G10248)]
+ (14)  [_G7588=_G7637, - (k1_euclid(_G7588)=k1_euclid(_G7637))]
+ (15)  [- (k6_euclid(_G7866, _G8001)=k6_euclid(_G7933, _G8070)), _G7866=_G7933, _G8001=_G8070]
+ (16)  [_G8463=_G8512, - (k30_valued_1(_G8463)=k30_valued_1(_G8512))]
+ (17)  [_G8732=_G8781, - (k5_euclid(_G8732)=k5_euclid(_G8781))]
+ (18)  [- (_G3334=_G3334)]
+ (19)  [_G3433=_G3478, - (_G3478=_G3433)]
+ (20)  [- (_G3666=_G3779), _G3666=_G3722, _G3722=_G3779]
+ (21)  [-m1_finseq_2(_G4183, _G4320), m1_finseq_2(_G4116, _G4251), _G4116=_G4183, _G4251=_G4320]
+ (22)  [-m2_finseq_2(_G4798, _G4971, _G5148), m2_finseq_2(_G4713, _G4884, _G5059), _G4713=_G4798, _G4884=_G4971, _G5059=_G5148]
+ (23)  [-m1_subset_1(_G5808, _G5945), m1_subset_1(_G5741, _G5876), _G5741=_G5808, _G5876=_G5945]
+ (24)  [-v7_ordinal1(_G6387), _G6338=_G6387, v7_ordinal1(_G6338)]
+ (25)  [-v1_relat_1(_G6665), _G6616=_G6665, v1_relat_1(_G6616)]
+ (26)  [-v1_funct_1(_G6943), _G6894=_G6943, v1_funct_1(_G6894)]
+ (27)  [-v1_valued_0(_G7212), _G7163=_G7212, v1_valued_0(_G7163)]
+
+Connection Proof:
+-----------------
+1  [2^[]=k5_euclid(1^[])]   (5)  
+1.1  [- (2^[]=k5_euclid(1^[])), k5_euclid(1^[])=2^[]]   (19)  substitution:[[_G3478, _G3433], [2^[], k5_euclid(1^[])]]
+1.1.1  [- (k5_euclid(1^[])=2^[]), k5_euclid(1^[])=k6_euclid(1^[], k5_euclid(1^[])), k6_euclid(1^[], k5_euclid(1^[]))=2^[]]   (20)  substitution:[[_G3666, _G3779, _G3722], [k5_euclid(1^[]), 2^[], k6_euclid(1^[], k5_euclid(1^[]))]]
+1.1.1.1  [- (k5_euclid(1^[])=k6_euclid(1^[], k5_euclid(1^[]))), k6_euclid(1^[], k5_euclid(1^[]))=k5_euclid(1^[])]   (19)  substitution:[[_G3478, _G3433], [k5_euclid(1^[]), k6_euclid(1^[], k5_euclid(1^[]))]]
+1.1.1.1.1  [- (k6_euclid(1^[], k5_euclid(1^[]))=k5_euclid(1^[])), v7_ordinal1(1^[])]   (11)  substitution:[[_G10630], [1^[]]]
+1.1.1.1.1.1  [-v7_ordinal1(1^[])]   (1)  
+1.1.1.2  [- (k6_euclid(1^[], k5_euclid(1^[]))=2^[]), k6_euclid(1^[], k5_euclid(1^[]))=k30_valued_1(k5_euclid(1^[])), k30_valued_1(k5_euclid(1^[]))=2^[]]   (20)  substitution:[[_G3666, _G3779, _G3722], [k6_euclid(1^[], k5_euclid(1^[])), 2^[], k30_valued_1(k5_euclid(1^[]))]]
+1.1.1.2.1  [- (k6_euclid(1^[], k5_euclid(1^[]))=k30_valued_1(k5_euclid(1^[]))), v7_ordinal1(1^[]), m1_subset_1(k5_euclid(1^[]), k1_euclid(1^[]))]   (10)  substitution:[[_G9805, _G9862], [1^[], k5_euclid(1^[])]]
+1.1.1.2.1.1  [-v7_ordinal1(1^[])]   (1)  
+1.1.1.2.1.2  [-m1_subset_1(k5_euclid(1^[]), k1_euclid(1^[])), m1_finseq_2(k1_euclid(1^[]), k1_numbers), m2_finseq_2(k5_euclid(1^[]), k1_numbers, k1_euclid(1^[]))]   (12)  substitution:[[_G10363, _G10248, _G10191], [k5_euclid(1^[]), k1_euclid(1^[]), k1_numbers]]
+1.1.1.2.1.2.1  [-m1_finseq_2(k1_euclid(1^[]), k1_numbers), v7_ordinal1(1^[])]   (7)  substitution:[[_G9094], [1^[]]]
+1.1.1.2.1.2.1.1  [-v7_ordinal1(1^[])]   (1)  
+1.1.1.2.1.2.2  [-m2_finseq_2(k5_euclid(1^[]), k1_numbers, k1_euclid(1^[])), v7_ordinal1(1^[])]   (8)  substitution:[[_G9267], [1^[]]]
+1.1.1.2.1.2.2.1  [-v7_ordinal1(1^[])]   (1)  
+1.1.1.2.2  [- (k30_valued_1(k5_euclid(1^[]))=2^[]), k30_valued_1(k5_euclid(1^[]))=k30_valued_1(k30_valued_1(2^[])), k30_valued_1(k30_valued_1(2^[]))=2^[]]   (20)  substitution:[[_G3666, _G3779, _G3722], [k30_valued_1(k5_euclid(1^[])), 2^[], k30_valued_1(k30_valued_1(2^[]))]]
+1.1.1.2.2.1  [- (k30_valued_1(k5_euclid(1^[]))=k30_valued_1(k30_valued_1(2^[]))), k5_euclid(1^[])=k30_valued_1(2^[])]   (16)  substitution:[[_G8463, _G8512], [k5_euclid(1^[]), k30_valued_1(2^[])]]
+1.1.1.2.2.1.1  [- (k5_euclid(1^[])=k30_valued_1(2^[])), k30_valued_1(2^[])=k5_euclid(1^[])]   (19)  substitution:[[_G3478, _G3433], [k5_euclid(1^[]), k30_valued_1(2^[])]]
+1.1.1.2.2.1.1.1  [- (k30_valued_1(2^[])=k5_euclid(1^[]))]   (6)  
+1.1.1.2.2.2  [- (k30_valued_1(k30_valued_1(2^[]))=2^[]), v1_relat_1(2^[]), v1_funct_1(2^[]), v1_valued_0(2^[])]   (9)  substitution:[[_G9500], [2^[]]]
+1.1.1.2.2.2.1  [-v1_relat_1(2^[])]   (2)  
+1.1.1.2.2.2.2  [-v1_funct_1(2^[])]   (3)  
+1.1.1.2.2.2.3  [-v1_valued_0(2^[])]   (4)  
+------------------------------------------------------
+End of proof for t15_borsuk_7

@@ -1,0 +1,42 @@
+
+l97_xboole_1 is a Theorem
+Start of proof for l97_xboole_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [r1_xboole_0(k3_xboole_0(3^[], 4^[]), k5_xboole_0(3^[], 4^[]))]
+ (2)  [- (k3_xboole_0(_G4236, _G4371)=k3_xboole_0(_G4303, _G4440)), _G4236=_G4303, _G4371=_G4440]
+ (3)  [- (k5_xboole_0(_G4824, _G4959)=k5_xboole_0(_G4891, _G5028)), _G4824=_G4891, _G4959=_G5028]
+ (4)  [- (_G2227=_G2227)]
+ (5)  [_G2326=_G2371, - (_G2371=_G2326)]
+ (6)  [- (_G2559=_G2672), _G2559=_G2615, _G2615=_G2672]
+ (7)  [-r2_hidden(_G3076, _G3213), r2_hidden(_G3009, _G3144), _G3009=_G3076, _G3144=_G3213]
+ (8)  [-r1_xboole_0(_G3664, _G3801), r1_xboole_0(_G3597, _G3732), _G3597=_G3664, _G3732=_G3801]
+ (9)  [_G5604=k3_xboole_0(_G5463, _G5533), r2_hidden(_G5772, _G5604), -r2_hidden(_G5772, _G5463)]
+ (10)  [_G5604=k3_xboole_0(_G5463, _G5533), r2_hidden(_G5772, _G5604), -r2_hidden(_G5772, _G5533)]
+ (11)  [_G5604=k3_xboole_0(_G5463, _G5533), -r2_hidden(_G5772, _G5604), r2_hidden(_G5772, _G5463), r2_hidden(_G5772, _G5533)]
+ (12)  [- (_G5604=k3_xboole_0(_G5463, _G5533)), -r2_hidden(1^[_G5604, _G5533, _G5463], _G5604), -r2_hidden(1^[_G5604, _G5533, _G5463], _G5463)]
+ (13)  [- (_G5604=k3_xboole_0(_G5463, _G5533)), -r2_hidden(1^[_G5604, _G5533, _G5463], _G5604), -r2_hidden(1^[_G5604, _G5533, _G5463], _G5533)]
+ (14)  [- (_G5604=k3_xboole_0(_G5463, _G5533)), r2_hidden(1^[_G5604, _G5533, _G5463], _G5604), r2_hidden(1^[_G5604, _G5533, _G5463], _G5463), r2_hidden(1^[_G5604, _G5533, _G5463], _G5533)]
+ (15)  [-r1_xboole_0(_G6569, _G6656), -r2_hidden(2^[_G6656, _G6569], _G6569)]
+ (16)  [-r1_xboole_0(_G6569, _G6656), -r2_hidden(2^[_G6656, _G6569], _G6656)]
+ (17)  [r1_xboole_0(_G6569, _G6656), r2_hidden(_G7076, _G6569), r2_hidden(_G7076, _G6656)]
+ (18)  [r2_hidden(_G6102, k5_xboole_0(_G6163, _G6225)), r2_hidden(_G6102, _G6163), r2_hidden(_G6102, _G6225)]
+ (19)  [r2_hidden(_G6102, k5_xboole_0(_G6163, _G6225)), -r2_hidden(_G6102, _G6163), -r2_hidden(_G6102, _G6225)]
+ (20)  [-r2_hidden(_G6102, k5_xboole_0(_G6163, _G6225)), r2_hidden(_G6102, _G6163), -r2_hidden(_G6102, _G6225)]
+ (21)  [-r2_hidden(_G6102, k5_xboole_0(_G6163, _G6225)), -r2_hidden(_G6102, _G6163), r2_hidden(_G6102, _G6225)]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(2^[k5_xboole_0(3^[], 4^[]), k3_xboole_0(3^[], 4^[])], k5_xboole_0(3^[], 4^[])), r2_hidden(2^[k5_xboole_0(3^[], 4^[]), k3_xboole_0(3^[], 4^[])], 3^[]), r2_hidden(2^[k5_xboole_0(3^[], 4^[]), k3_xboole_0(3^[], 4^[])], 4^[])]   (18)  substitution:[[_G6102, _G6163, _G6225], [2^[k5_xboole_0(3^[], 4^[]), k3_xboole_0(3^[], 4^[])], 3^[], 4^[]]]
+1.1  [-r2_hidden(2^[k5_xboole_0(3^[], 4^[]), k3_xboole_0(3^[], 4^[])], k5_xboole_0(3^[], 4^[])), -r1_xboole_0(k3_xboole_0(3^[], 4^[]), k5_xboole_0(3^[], 4^[]))]   (16)  substitution:[[_G6656, _G6569], [k5_xboole_0(3^[], 4^[]), k3_xboole_0(3^[], 4^[])]]
+1.1.1  [r1_xboole_0(k3_xboole_0(3^[], 4^[]), k5_xboole_0(3^[], 4^[]))]   (1)  
+1.2  [-r2_hidden(2^[k5_xboole_0(3^[], 4^[]), k3_xboole_0(3^[], 4^[])], 3^[]), k3_xboole_0(3^[], 4^[])=k3_xboole_0(3^[], 4^[]), r2_hidden(2^[k5_xboole_0(3^[], 4^[]), k3_xboole_0(3^[], 4^[])], k3_xboole_0(3^[], 4^[]))]   (9)  substitution:[[_G5772, _G5463, _G5604, _G5533], [2^[k5_xboole_0(3^[], 4^[]), k3_xboole_0(3^[], 4^[])], 3^[], k3_xboole_0(3^[], 4^[]), 4^[]]]
+1.2.1  [- (k3_xboole_0(3^[], 4^[])=k3_xboole_0(3^[], 4^[]))]   (4)  substitution:[[_G2227], [k3_xboole_0(3^[], 4^[])]]
+1.2.2  [-r2_hidden(2^[k5_xboole_0(3^[], 4^[]), k3_xboole_0(3^[], 4^[])], k3_xboole_0(3^[], 4^[])), -r1_xboole_0(k3_xboole_0(3^[], 4^[]), k5_xboole_0(3^[], 4^[]))]   (15)  substitution:[[_G6656, _G6569], [k5_xboole_0(3^[], 4^[]), k3_xboole_0(3^[], 4^[])]]
+1.2.2.1  [r1_xboole_0(k3_xboole_0(3^[], 4^[]), k5_xboole_0(3^[], 4^[]))]   (1)  
+1.3  [-r2_hidden(2^[k5_xboole_0(3^[], 4^[]), k3_xboole_0(3^[], 4^[])], 4^[]), k3_xboole_0(3^[], 4^[])=k3_xboole_0(3^[], 4^[]), r2_hidden(2^[k5_xboole_0(3^[], 4^[]), k3_xboole_0(3^[], 4^[])], k3_xboole_0(3^[], 4^[]))]   (10)  substitution:[[_G5772, _G5533, _G5604, _G5463], [2^[k5_xboole_0(3^[], 4^[]), k3_xboole_0(3^[], 4^[])], 4^[], k3_xboole_0(3^[], 4^[]), 3^[]]]
+1.3.1  [- (k3_xboole_0(3^[], 4^[])=k3_xboole_0(3^[], 4^[]))]   (4)  substitution:[[_G2227], [k3_xboole_0(3^[], 4^[])]]
+1.3.2  [-r2_hidden(2^[k5_xboole_0(3^[], 4^[]), k3_xboole_0(3^[], 4^[])], k3_xboole_0(3^[], 4^[])), -r1_xboole_0(k3_xboole_0(3^[], 4^[]), k5_xboole_0(3^[], 4^[]))]   (15)  substitution:[[_G6656, _G6569], [k5_xboole_0(3^[], 4^[]), k3_xboole_0(3^[], 4^[])]]
+1.3.2.1  [r1_xboole_0(k3_xboole_0(3^[], 4^[]), k5_xboole_0(3^[], 4^[]))]   (1)  
+------------------------------------------------------
+End of proof for l97_xboole_1

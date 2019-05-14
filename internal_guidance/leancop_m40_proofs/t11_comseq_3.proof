@@ -1,0 +1,43 @@
+
+t11_comseq_3 is a Theorem
+Start of proof for t11_comseq_3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], k2_numbers)]
+ (2)  [k2_comseq_3(1^[], k6_numbers)=k6_complex1]
+ (3)  [m1_subset_1(_G5222, k2_numbers), -v1_xcmplx_0(_G5222)]
+ (4)  [m1_subset_1(_G5379, k4_ordinal1), -v7_ordinal1(_G5379)]
+ (5)  [- (k6_complex1=np__1)]
+ (6)  [- (k6_numbers=k1_xboole_0)]
+ (7)  [-m1_subset_1(k1_xboole_0, k4_ordinal1)]
+ (8)  [v1_xcmplx_0(_G6066), - (k1_newton(_G6066, k6_numbers)=np__1)]
+ (9)  [- (k2_comseq_3(_G5593, _G5648)=k1_newton(_G5593, _G5648)), v1_xcmplx_0(_G5593), v7_ordinal1(_G5648)]
+ (10)  [- (k1_newton(_G3995, _G4130)=k1_newton(_G4062, _G4199)), _G3995=_G4062, _G4130=_G4199]
+ (11)  [- (k2_comseq_3(_G4583, _G4718)=k2_comseq_3(_G4650, _G4787)), _G4583=_G4650, _G4718=_G4787]
+ (12)  [- (_G2006=_G2006)]
+ (13)  [_G2105=_G2150, - (_G2150=_G2105)]
+ (14)  [- (_G2338=_G2451), _G2338=_G2394, _G2394=_G2451]
+ (15)  [-v7_ordinal1(_G2837), _G2788=_G2837, v7_ordinal1(_G2788)]
+ (16)  [-v1_xcmplx_0(_G3115), _G3066=_G3115, v1_xcmplx_0(_G3066)]
+ (17)  [-m1_subset_1(_G3402, _G3539), m1_subset_1(_G3335, _G3470), _G3335=_G3402, _G3470=_G3539]
+
+Connection Proof:
+-----------------
+1  [k2_comseq_3(1^[], k6_numbers)=k6_complex1]   (2)  
+1.1  [- (k2_comseq_3(1^[], k6_numbers)=k6_complex1), k2_comseq_3(1^[], k6_numbers)=k1_newton(1^[], k6_numbers), k1_newton(1^[], k6_numbers)=k6_complex1]   (14)  substitution:[[_G2338, _G2451, _G2394], [k2_comseq_3(1^[], k6_numbers), k6_complex1, k1_newton(1^[], k6_numbers)]]
+1.1.1  [- (k2_comseq_3(1^[], k6_numbers)=k1_newton(1^[], k6_numbers)), v1_xcmplx_0(1^[]), v7_ordinal1(k6_numbers)]   (9)  substitution:[[_G5593, _G5648], [1^[], k6_numbers]]
+1.1.1.1  [-v1_xcmplx_0(1^[]), m1_subset_1(1^[], k2_numbers)]   (3)  substitution:[[_G5222], [1^[]]]
+1.1.1.1.1  [-m1_subset_1(1^[], k2_numbers)]   (1)  
+1.1.1.2  [-v7_ordinal1(k6_numbers), k1_xboole_0=k6_numbers, v7_ordinal1(k1_xboole_0)]   (15)  substitution:[[_G2837, _G2788], [k6_numbers, k1_xboole_0]]
+1.1.1.2.1  [- (k1_xboole_0=k6_numbers), k6_numbers=k1_xboole_0]   (13)  substitution:[[_G2150, _G2105], [k1_xboole_0, k6_numbers]]
+1.1.1.2.1.1  [- (k6_numbers=k1_xboole_0)]   (6)  
+1.1.1.2.2  [-v7_ordinal1(k1_xboole_0), m1_subset_1(k1_xboole_0, k4_ordinal1)]   (4)  substitution:[[_G5379], [k1_xboole_0]]
+1.1.1.2.2.1  [-m1_subset_1(k1_xboole_0, k4_ordinal1)]   (7)  
+1.1.2  [- (k1_newton(1^[], k6_numbers)=k6_complex1), k1_newton(1^[], k6_numbers)=np__1, np__1=k6_complex1]   (14)  substitution:[[_G2338, _G2451, _G2394], [k1_newton(1^[], k6_numbers), k6_complex1, np__1]]
+1.1.2.1  [- (k1_newton(1^[], k6_numbers)=np__1), v1_xcmplx_0(1^[])]   (8)  substitution:[[_G6066], [1^[]]]
+1.1.2.1.1  [-v1_xcmplx_0(1^[]), m1_subset_1(1^[], k2_numbers)]   (3)  substitution:[[_G5222], [1^[]]]
+1.1.2.1.1.1  [-m1_subset_1(1^[], k2_numbers)]   (1)  
+1.1.2.2  [- (np__1=k6_complex1), k6_complex1=np__1]   (13)  substitution:[[_G2150, _G2105], [np__1, k6_complex1]]
+1.1.2.2.1  [- (k6_complex1=np__1)]   (5)  
+------------------------------------------------------
+End of proof for t11_comseq_3

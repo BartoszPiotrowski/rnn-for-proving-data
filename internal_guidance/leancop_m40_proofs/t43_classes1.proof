@@ -1,0 +1,33 @@
+
+t43_classes1 is a Theorem
+Start of proof for t43_classes1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-4^[], r2_hidden(1^[], k4_classes1(2^[]))]
+ (2)  [-4^[], -r2_hidden(k1_tarski(1^[]), k4_classes1(k1_ordinal1(2^[])))]
+ (3)  [-3^[], r2_hidden(k1_tarski(1^[]), k4_classes1(k1_ordinal1(2^[])))]
+ (4)  [-3^[], -r2_hidden(1^[], k4_classes1(2^[]))]
+ (5)  [-v3_ordinal1(2^[])]
+ (6)  [3^[], 4^[]]
+ (7)  [r1_tarski(k1_tarski(_G756), _G803), -r2_hidden(_G756, _G803)]
+ (8)  [-r1_tarski(k1_tarski(_G756), _G803), r2_hidden(_G756, _G803)]
+ (9)  [v3_ordinal1(_G1063), r1_tarski(_G1007, k4_classes1(_G1063)), -r2_hidden(_G1007, k4_classes1(k1_ordinal1(_G1063)))]
+ (10)  [v3_ordinal1(_G1063), -r1_tarski(_G1007, k4_classes1(_G1063)), r2_hidden(_G1007, k4_classes1(k1_ordinal1(_G1063)))]
+
+Connection Proof:
+-----------------
+1  [3^[], 4^[]]   (6)  
+1.1  [-3^[], r2_hidden(k1_tarski(1^[]), k4_classes1(k1_ordinal1(2^[])))]   (3)  
+1.1.1  [-r2_hidden(k1_tarski(1^[]), k4_classes1(k1_ordinal1(2^[]))), v3_ordinal1(2^[]), r1_tarski(k1_tarski(1^[]), k4_classes1(2^[]))]   (9)  substitution:[[_G1007, _G1063], [k1_tarski(1^[]), 2^[]]]
+1.1.1.1  [-v3_ordinal1(2^[])]   (5)  
+1.1.1.2  [-r1_tarski(k1_tarski(1^[]), k4_classes1(2^[])), r2_hidden(1^[], k4_classes1(2^[]))]   (8)  substitution:[[_G756, _G803], [1^[], k4_classes1(2^[])]]
+1.1.1.2.1  [-r2_hidden(1^[], k4_classes1(2^[])), -3^[]]   (4)  
+1.1.1.2.1.1  [3^[]]   (reduction:1)  
+1.2  [-4^[], r2_hidden(1^[], k4_classes1(2^[]))]   (1)  
+1.2.1  [-r2_hidden(1^[], k4_classes1(2^[])), r1_tarski(k1_tarski(1^[]), k4_classes1(2^[]))]   (7)  substitution:[[_G756, _G803], [1^[], k4_classes1(2^[])]]
+1.2.1.1  [-r1_tarski(k1_tarski(1^[]), k4_classes1(2^[])), v3_ordinal1(2^[]), r2_hidden(k1_tarski(1^[]), k4_classes1(k1_ordinal1(2^[])))]   (10)  substitution:[[_G1007, _G1063], [k1_tarski(1^[]), 2^[]]]
+1.2.1.1.1  [-v3_ordinal1(2^[])]   (5)  
+1.2.1.1.2  [-r2_hidden(k1_tarski(1^[]), k4_classes1(k1_ordinal1(2^[]))), -4^[]]   (2)  
+1.2.1.1.2.1  [4^[]]   (reduction:1)  
+------------------------------------------------------
+End of proof for t43_classes1

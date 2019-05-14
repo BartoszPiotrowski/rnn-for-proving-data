@@ -1,0 +1,25 @@
+
+t26_zfmisc_1 is a Theorem
+Start of proof for t26_zfmisc_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k3_tarski(k2_tarski(k1_tarski(1^[]), k1_tarski(2^[])))=k2_tarski(1^[], 2^[])]
+ (2)  [- (k3_tarski(k2_tarski(_G4062, _G4109))=k2_xboole_0(_G4062, _G4109))]
+ (3)  [- (k2_tarski(_G4313, _G4362)=k2_xboole_0(k1_tarski(_G4313), k1_tarski(_G4362)))]
+ (4)  [- (_G1455=_G1455)]
+ (5)  [_G1554=_G1599, - (_G1599=_G1554)]
+ (6)  [- (_G1787=_G1900), _G1787=_G1843, _G1843=_G1900]
+ (7)  [- (k2_xboole_0(_G2237, _G2372)=k2_xboole_0(_G2304, _G2441)), _G2237=_G2304, _G2372=_G2441]
+ (8)  [_G2834=_G2883, - (k3_tarski(_G2834)=k3_tarski(_G2883))]
+ (9)  [_G3112=_G3161, - (k1_tarski(_G3112)=k1_tarski(_G3161))]
+ (10)  [- (k2_tarski(_G3381, _G3516)=k2_tarski(_G3448, _G3585)), _G3381=_G3448, _G3516=_G3585]
+
+Connection Proof:
+-----------------
+1  [k3_tarski(k2_tarski(k1_tarski(1^[]), k1_tarski(2^[])))=k2_tarski(1^[], 2^[])]   (1)  
+1.1  [- (k3_tarski(k2_tarski(k1_tarski(1^[]), k1_tarski(2^[])))=k2_tarski(1^[], 2^[])), k3_tarski(k2_tarski(k1_tarski(1^[]), k1_tarski(2^[])))=k2_xboole_0(k1_tarski(1^[]), k1_tarski(2^[])), k2_xboole_0(k1_tarski(1^[]), k1_tarski(2^[]))=k2_tarski(1^[], 2^[])]   (6)  substitution:[[_G1787, _G1900, _G1843], [k3_tarski(k2_tarski(k1_tarski(1^[]), k1_tarski(2^[]))), k2_tarski(1^[], 2^[]), k2_xboole_0(k1_tarski(1^[]), k1_tarski(2^[]))]]
+1.1.1  [- (k3_tarski(k2_tarski(k1_tarski(1^[]), k1_tarski(2^[])))=k2_xboole_0(k1_tarski(1^[]), k1_tarski(2^[])))]   (2)  substitution:[[_G4062, _G4109], [k1_tarski(1^[]), k1_tarski(2^[])]]
+1.1.2  [- (k2_xboole_0(k1_tarski(1^[]), k1_tarski(2^[]))=k2_tarski(1^[], 2^[])), k2_tarski(1^[], 2^[])=k2_xboole_0(k1_tarski(1^[]), k1_tarski(2^[]))]   (5)  substitution:[[_G1599, _G1554], [k2_xboole_0(k1_tarski(1^[]), k1_tarski(2^[])), k2_tarski(1^[], 2^[])]]
+1.1.2.1  [- (k2_tarski(1^[], 2^[])=k2_xboole_0(k1_tarski(1^[]), k1_tarski(2^[])))]   (3)  substitution:[[_G4313, _G4362], [1^[], 2^[]]]
+------------------------------------------------------
+End of proof for t26_zfmisc_1

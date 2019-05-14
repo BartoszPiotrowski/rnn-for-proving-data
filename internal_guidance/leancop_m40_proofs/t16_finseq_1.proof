@@ -1,0 +1,56 @@
+
+t16_finseq_1 is a Theorem
+Start of proof for t16_finseq_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(2^[])]
+ (2)  [-v1_funct_1(2^[])]
+ (3)  [-v1_relat_1(3^[])]
+ (4)  [-v1_funct_1(3^[])]
+ (5)  [-v1_finseq_1(3^[])]
+ (6)  [-r1_tarski(k10_xtuple_0(3^[]), k9_xtuple_0(2^[]))]
+ (7)  [v1_relat_1(k3_relat_1(3^[], 2^[])), v1_funct_1(k3_relat_1(3^[], 2^[])), v1_finseq_1(k3_relat_1(3^[], 2^[]))]
+ (8)  [v1_relat_1(_G7204), v1_finseq_1(_G7204), -v7_ordinal1(1^[_G7204])]
+ (9)  [v1_relat_1(_G7204), v1_finseq_1(_G7204), - (k9_xtuple_0(_G7204)=k2_finseq_1(1^[_G7204]))]
+ (10)  [v1_relat_1(_G7204), -v1_finseq_1(_G7204), v7_ordinal1(_G7326), k9_xtuple_0(_G7204)=k2_finseq_1(_G7326)]
+ (11)  [-v1_relat_1(k3_relat_1(_G7571, _G7612))]
+ (12)  [v1_relat_1(_G8262), v1_relat_1(_G8360), r1_tarski(k10_xtuple_0(_G8262), k9_xtuple_0(_G8360)), - (k9_xtuple_0(k3_relat_1(_G8262, _G8360))=k9_xtuple_0(_G8262))]
+ (13)  [-v1_relat_1(k3_relat_1(_G7741, _G7810)), v1_funct_1(_G7741), v1_relat_1(_G7741), v1_relat_1(_G7810), v1_funct_1(_G7810)]
+ (14)  [-v1_funct_1(k3_relat_1(_G7741, _G7810)), v1_funct_1(_G7741), v1_relat_1(_G7741), v1_relat_1(_G7810), v1_funct_1(_G7810)]
+ (15)  [_G5698=_G5747, - (k2_finseq_1(_G5698)=k2_finseq_1(_G5747))]
+ (16)  [_G5976=_G6025, - (k10_xtuple_0(_G5976)=k10_xtuple_0(_G6025))]
+ (17)  [_G6254=_G6303, - (k9_xtuple_0(_G6254)=k9_xtuple_0(_G6303))]
+ (18)  [- (k3_relat_1(_G6523, _G6658)=k3_relat_1(_G6590, _G6727)), _G6523=_G6590, _G6658=_G6727]
+ (19)  [- (_G3111=_G3111)]
+ (20)  [_G3210=_G3255, - (_G3255=_G3210)]
+ (21)  [- (_G3443=_G3556), _G3443=_G3499, _G3499=_G3556]
+ (22)  [-v7_ordinal1(_G3942), _G3893=_G3942, v7_ordinal1(_G3893)]
+ (23)  [-r1_tarski(_G4238, _G4375), r1_tarski(_G4171, _G4306), _G4171=_G4238, _G4306=_G4375]
+ (24)  [-v1_relat_1(_G4817), _G4768=_G4817, v1_relat_1(_G4768)]
+ (25)  [-v1_funct_1(_G5095), _G5046=_G5095, v1_funct_1(_G5046)]
+ (26)  [-v1_finseq_1(_G5364), _G5315=_G5364, v1_finseq_1(_G5315)]
+
+Connection Proof:
+-----------------
+1  [v1_relat_1(k3_relat_1(3^[], 2^[])), v1_funct_1(k3_relat_1(3^[], 2^[])), v1_finseq_1(k3_relat_1(3^[], 2^[]))]   (7)  
+1.1  [-v1_relat_1(k3_relat_1(3^[], 2^[]))]   (11)  substitution:[[_G7571, _G7612], [3^[], 2^[]]]
+1.2  [-v1_funct_1(k3_relat_1(3^[], 2^[])), v1_funct_1(3^[]), v1_relat_1(3^[]), v1_relat_1(2^[]), v1_funct_1(2^[])]   (14)  substitution:[[_G7741, _G7810], [3^[], 2^[]]]
+1.2.1  [-v1_funct_1(3^[])]   (4)  
+1.2.2  [-v1_relat_1(3^[])]   (3)  
+1.2.3  [-v1_relat_1(2^[])]   (1)  
+1.2.4  [-v1_funct_1(2^[])]   (2)  
+1.3  [-v1_finseq_1(k3_relat_1(3^[], 2^[])), v1_relat_1(k3_relat_1(3^[], 2^[])), v7_ordinal1(1^[3^[]]), k9_xtuple_0(k3_relat_1(3^[], 2^[]))=k2_finseq_1(1^[3^[]])]   (10)  substitution:[[_G7204, _G7326], [k3_relat_1(3^[], 2^[]), 1^[3^[]]]]
+1.3.1  [-v1_relat_1(k3_relat_1(3^[], 2^[]))]   (11)  substitution:[[_G7571, _G7612], [3^[], 2^[]]]
+1.3.2  [-v7_ordinal1(1^[3^[]]), v1_relat_1(3^[]), v1_finseq_1(3^[])]   (8)  substitution:[[_G7204], [3^[]]]
+1.3.2.1  [-v1_relat_1(3^[])]   (3)  
+1.3.2.2  [-v1_finseq_1(3^[])]   (5)  
+1.3.3  [- (k9_xtuple_0(k3_relat_1(3^[], 2^[]))=k2_finseq_1(1^[3^[]])), k9_xtuple_0(k3_relat_1(3^[], 2^[]))=k9_xtuple_0(3^[]), k9_xtuple_0(3^[])=k2_finseq_1(1^[3^[]])]   (21)  substitution:[[_G3443, _G3556, _G3499], [k9_xtuple_0(k3_relat_1(3^[], 2^[])), k2_finseq_1(1^[3^[]]), k9_xtuple_0(3^[])]]
+1.3.3.1  [- (k9_xtuple_0(k3_relat_1(3^[], 2^[]))=k9_xtuple_0(3^[])), v1_relat_1(3^[]), v1_relat_1(2^[]), r1_tarski(k10_xtuple_0(3^[]), k9_xtuple_0(2^[]))]   (12)  substitution:[[_G8262, _G8360], [3^[], 2^[]]]
+1.3.3.1.1  [-v1_relat_1(3^[])]   (3)  
+1.3.3.1.2  [-v1_relat_1(2^[])]   (1)  
+1.3.3.1.3  [-r1_tarski(k10_xtuple_0(3^[]), k9_xtuple_0(2^[]))]   (6)  
+1.3.3.2  [- (k9_xtuple_0(3^[])=k2_finseq_1(1^[3^[]])), v1_relat_1(3^[]), v1_finseq_1(3^[])]   (9)  substitution:[[_G7204], [3^[]]]
+1.3.3.2.1  [-v1_relat_1(3^[])]   (3)  
+1.3.3.2.2  [-v1_finseq_1(3^[])]   (5)  
+------------------------------------------------------
+End of proof for t16_finseq_1

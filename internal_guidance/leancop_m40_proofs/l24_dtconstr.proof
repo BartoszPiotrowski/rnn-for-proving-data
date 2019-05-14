@@ -1,0 +1,50 @@
+
+l24_dtconstr is a Theorem
+Start of proof for l24_dtconstr
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [r1_tarski(k6_domain_1(u1_struct_0(k5_dtconstr), c3__dtconstr), k2_lang1(k5_dtconstr))]
+ (2)  [- (c3__dtconstr=np__1)]
+ (3)  [-m1_subset_1(c3__dtconstr, u1_struct_0(k5_dtconstr))]
+ (4)  [v2_struct_0(k5_dtconstr)]
+ (5)  [-v1_lang1(k5_dtconstr)]
+ (6)  [-l1_lang1(k5_dtconstr)]
+ (7)  [l1_lang1(_G8723), -l1_struct_0(_G8723)]
+ (8)  [v1_xboole_0(u1_struct_0(_G8854)), -v2_struct_0(_G8854), l1_struct_0(_G8854)]
+ (9)  [-r2_hidden(c3__dtconstr, k2_lang1(k5_dtconstr))]
+ (10)  [- (k6_domain_1(_G9162, _G9219)=k1_tarski(_G9219)), -v1_xboole_0(_G9162), m1_subset_1(_G9219, _G9162)]
+ (11)  [r1_tarski(k1_tarski(_G9539), _G9586), -r2_hidden(_G9539, _G9586)]
+ (12)  [-r1_tarski(k1_tarski(_G9539), _G9586), r2_hidden(_G9539, _G9586)]
+ (13)  [_G6937=_G6986, - (k1_tarski(_G6937)=k1_tarski(_G6986))]
+ (14)  [- (k6_domain_1(_G7215, _G7350)=k6_domain_1(_G7282, _G7419)), _G7215=_G7282, _G7350=_G7419]
+ (15)  [_G7812=_G7861, - (u1_struct_0(_G7812)=u1_struct_0(_G7861))]
+ (16)  [_G8081=_G8130, - (k2_lang1(_G8081)=k2_lang1(_G8130))]
+ (17)  [- (_G2815=_G2815)]
+ (18)  [_G2914=_G2959, - (_G2959=_G2914)]
+ (19)  [- (_G3147=_G3260), _G3147=_G3203, _G3203=_G3260]
+ (20)  [-v1_lang1(_G3646), _G3597=_G3646, v1_lang1(_G3597)]
+ (21)  [-l1_lang1(_G3924), _G3875=_G3924, l1_lang1(_G3875)]
+ (22)  [-v2_struct_0(_G4202), _G4153=_G4202, v2_struct_0(_G4153)]
+ (23)  [-l1_struct_0(_G4480), _G4431=_G4480, l1_struct_0(_G4431)]
+ (24)  [-v1_xboole_0(_G4758), _G4709=_G4758, v1_xboole_0(_G4709)]
+ (25)  [-m1_subset_1(_G5054, _G5191), m1_subset_1(_G4987, _G5122), _G4987=_G5054, _G5122=_G5191]
+ (26)  [-r2_hidden(_G5651, _G5788), r2_hidden(_G5584, _G5719), _G5584=_G5651, _G5719=_G5788]
+ (27)  [-r1_tarski(_G6239, _G6376), r1_tarski(_G6172, _G6307), _G6172=_G6239, _G6307=_G6376]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k6_domain_1(u1_struct_0(k5_dtconstr), c3__dtconstr), k2_lang1(k5_dtconstr))]   (1)  
+1.1  [-r1_tarski(k6_domain_1(u1_struct_0(k5_dtconstr), c3__dtconstr), k2_lang1(k5_dtconstr)), r1_tarski(k1_tarski(c3__dtconstr), k2_lang1(k5_dtconstr)), k1_tarski(c3__dtconstr)=k6_domain_1(u1_struct_0(k5_dtconstr), c3__dtconstr), k2_lang1(k5_dtconstr)=k2_lang1(k5_dtconstr)]   (27)  substitution:[[_G6239, _G6376, _G6172, _G6307], [k6_domain_1(u1_struct_0(k5_dtconstr), c3__dtconstr), k2_lang1(k5_dtconstr), k1_tarski(c3__dtconstr), k2_lang1(k5_dtconstr)]]
+1.1.1  [-r1_tarski(k1_tarski(c3__dtconstr), k2_lang1(k5_dtconstr)), r2_hidden(c3__dtconstr, k2_lang1(k5_dtconstr))]   (12)  substitution:[[_G9539, _G9586], [c3__dtconstr, k2_lang1(k5_dtconstr)]]
+1.1.1.1  [-r2_hidden(c3__dtconstr, k2_lang1(k5_dtconstr))]   (9)  
+1.1.2  [- (k1_tarski(c3__dtconstr)=k6_domain_1(u1_struct_0(k5_dtconstr), c3__dtconstr)), k6_domain_1(u1_struct_0(k5_dtconstr), c3__dtconstr)=k1_tarski(c3__dtconstr)]   (18)  substitution:[[_G2959, _G2914], [k1_tarski(c3__dtconstr), k6_domain_1(u1_struct_0(k5_dtconstr), c3__dtconstr)]]
+1.1.2.1  [- (k6_domain_1(u1_struct_0(k5_dtconstr), c3__dtconstr)=k1_tarski(c3__dtconstr)), -v1_xboole_0(u1_struct_0(k5_dtconstr)), m1_subset_1(c3__dtconstr, u1_struct_0(k5_dtconstr))]   (10)  substitution:[[_G9162, _G9219], [u1_struct_0(k5_dtconstr), c3__dtconstr]]
+1.1.2.1.1  [v1_xboole_0(u1_struct_0(k5_dtconstr)), -v2_struct_0(k5_dtconstr), l1_struct_0(k5_dtconstr)]   (8)  substitution:[[_G8854], [k5_dtconstr]]
+1.1.2.1.1.1  [v2_struct_0(k5_dtconstr)]   (4)  
+1.1.2.1.1.2  [-l1_struct_0(k5_dtconstr), l1_lang1(k5_dtconstr)]   (7)  substitution:[[_G8723], [k5_dtconstr]]
+1.1.2.1.1.2.1  [-l1_lang1(k5_dtconstr)]   (6)  
+1.1.2.1.2  [-m1_subset_1(c3__dtconstr, u1_struct_0(k5_dtconstr))]   (3)  
+1.1.3  [- (k2_lang1(k5_dtconstr)=k2_lang1(k5_dtconstr)), k5_dtconstr=k5_dtconstr]   (16)  substitution:[[_G8081, _G8130], [k5_dtconstr, k5_dtconstr]]
+1.1.3.1  [- (k5_dtconstr=k5_dtconstr)]   (17)  substitution:[[_G2815], [k5_dtconstr]]
+------------------------------------------------------
+End of proof for l24_dtconstr

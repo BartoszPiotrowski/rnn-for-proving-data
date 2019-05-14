@@ -1,0 +1,19 @@
+
+l55_int_5 is a Theorem
+Start of proof for l55_int_5
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m2_finseq_1(1^[], k5_numbers)]
+ (2)  [m2_subset_1(k2_wsierp_1(1^[]), k1_numbers, k5_numbers)]
+ (3)  [m1_finseq_1(_G668, k5_numbers), -m2_subset_1(k2_wsierp_1(_G668), k1_numbers, k5_numbers)]
+ (4)  [m2_finseq_1(_G947, _G902), -m1_finseq_1(_G947, _G902)]
+ (5)  [-m2_finseq_1(_G947, _G902), m1_finseq_1(_G947, _G902)]
+
+Connection Proof:
+-----------------
+1  [m2_subset_1(k2_wsierp_1(1^[]), k1_numbers, k5_numbers)]   (2)  
+1.1  [-m2_subset_1(k2_wsierp_1(1^[]), k1_numbers, k5_numbers), m1_finseq_1(1^[], k5_numbers)]   (3)  substitution:[[_G668], [1^[]]]
+1.1.1  [-m1_finseq_1(1^[], k5_numbers), m2_finseq_1(1^[], k5_numbers)]   (4)  substitution:[[_G947, _G902], [1^[], k5_numbers]]
+1.1.1.1  [-m2_finseq_1(1^[], k5_numbers)]   (1)  
+------------------------------------------------------
+End of proof for l55_int_5

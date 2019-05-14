@@ -1,0 +1,50 @@
+
+t27_frechet2 is a Theorem
+Start of proof for t27_frechet2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(1^[])]
+ (2)  [-l1_metric_1(1^[])]
+ (3)  [-v1_funct_1(2^[])]
+ (4)  [-v1_funct_2(2^[], k5_numbers, u1_struct_0(k3_pcomps_1(1^[])))]
+ (5)  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, u1_struct_0(k3_pcomps_1(1^[])))))]
+ (6)  [v1_funct_1(2^[]), v1_funct_2(2^[], k5_numbers, u1_struct_0(1^[])), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, u1_struct_0(1^[]))))]
+ (7)  [l1_metric_1(_G7748), - (u1_struct_0(_G7748)=u1_struct_0(k3_pcomps_1(_G7748)))]
+ (8)  [l1_metric_1(_G7748), - (u1_pre_topc(k3_pcomps_1(_G7748))=k2_pcomps_1(_G7748))]
+ (9)  [_G5653=_G5702, - (u1_pre_topc(_G5653)=u1_pre_topc(_G5702))]
+ (10)  [_G5931=_G5980, - (k2_pcomps_1(_G5931)=k2_pcomps_1(_G5980))]
+ (11)  [_G6209=_G6258, - (k3_pcomps_1(_G6209)=k3_pcomps_1(_G6258))]
+ (12)  [_G6487=_G6536, - (k1_zfmisc_1(_G6487)=k1_zfmisc_1(_G6536))]
+ (13)  [_G7353=_G7402, - (u1_struct_0(_G7353)=u1_struct_0(_G7402))]
+ (14)  [- (k2_zfmisc_1(_G6765, _G6900)=k2_zfmisc_1(_G6832, _G6969)), _G6765=_G6832, _G6900=_G6969]
+ (15)  [- (_G2316=_G2316)]
+ (16)  [_G2415=_G2460, - (_G2460=_G2415)]
+ (17)  [- (_G2648=_G2761), _G2648=_G2704, _G2704=_G2761]
+ (18)  [-v2_struct_0(_G3147), _G3098=_G3147, v2_struct_0(_G3098)]
+ (19)  [-l1_metric_1(_G3425), _G3376=_G3425, l1_metric_1(_G3376)]
+ (20)  [-v1_funct_1(_G3703), _G3654=_G3703, v1_funct_1(_G3654)]
+ (21)  [-m1_subset_1(_G5018, _G5155), m1_subset_1(_G4951, _G5086), _G4951=_G5018, _G5086=_G5155]
+ (22)  [-v1_funct_2(_G4017, _G4190, _G4367), v1_funct_2(_G3932, _G4103, _G4278), _G3932=_G4017, _G4103=_G4190, _G4278=_G4367]
+
+Connection Proof:
+-----------------
+1  [v1_funct_1(2^[]), v1_funct_2(2^[], k5_numbers, u1_struct_0(1^[])), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, u1_struct_0(1^[]))))]   (6)  
+1.1  [-v1_funct_1(2^[])]   (3)  
+1.2  [-v1_funct_2(2^[], k5_numbers, u1_struct_0(1^[])), v1_funct_2(2^[], k5_numbers, u1_struct_0(k3_pcomps_1(1^[]))), 2^[]=2^[], k5_numbers=k5_numbers, u1_struct_0(k3_pcomps_1(1^[]))=u1_struct_0(1^[])]   (22)  substitution:[[_G4017, _G4190, _G4367, _G3932, _G4103, _G4278], [2^[], k5_numbers, u1_struct_0(1^[]), 2^[], k5_numbers, u1_struct_0(k3_pcomps_1(1^[]))]]
+1.2.1  [-v1_funct_2(2^[], k5_numbers, u1_struct_0(k3_pcomps_1(1^[])))]   (4)  
+1.2.2  [- (2^[]=2^[])]   (15)  substitution:[[_G2316], [2^[]]]
+1.2.3  [- (k5_numbers=k5_numbers)]   (15)  substitution:[[_G2316], [k5_numbers]]
+1.2.4  [- (u1_struct_0(k3_pcomps_1(1^[]))=u1_struct_0(1^[])), u1_struct_0(1^[])=u1_struct_0(k3_pcomps_1(1^[]))]   (16)  substitution:[[_G2460, _G2415], [u1_struct_0(k3_pcomps_1(1^[])), u1_struct_0(1^[])]]
+1.2.4.1  [- (u1_struct_0(1^[])=u1_struct_0(k3_pcomps_1(1^[]))), l1_metric_1(1^[])]   (7)  substitution:[[_G7748], [1^[]]]
+1.2.4.1.1  [-l1_metric_1(1^[])]   (2)  
+1.3  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, u1_struct_0(1^[])))), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, u1_struct_0(k3_pcomps_1(1^[]))))), 2^[]=2^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, u1_struct_0(k3_pcomps_1(1^[]))))=k1_zfmisc_1(k2_zfmisc_1(k5_numbers, u1_struct_0(1^[])))]   (21)  substitution:[[_G5018, _G5155, _G4951, _G5086], [2^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, u1_struct_0(1^[]))), 2^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, u1_struct_0(k3_pcomps_1(1^[]))))]]
+1.3.1  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, u1_struct_0(k3_pcomps_1(1^[])))))]   (5)  
+1.3.2  [- (2^[]=2^[])]   (15)  substitution:[[_G2316], [2^[]]]
+1.3.3  [- (k1_zfmisc_1(k2_zfmisc_1(k5_numbers, u1_struct_0(k3_pcomps_1(1^[]))))=k1_zfmisc_1(k2_zfmisc_1(k5_numbers, u1_struct_0(1^[])))), k2_zfmisc_1(k5_numbers, u1_struct_0(k3_pcomps_1(1^[])))=k2_zfmisc_1(k5_numbers, u1_struct_0(1^[]))]   (12)  substitution:[[_G6487, _G6536], [k2_zfmisc_1(k5_numbers, u1_struct_0(k3_pcomps_1(1^[]))), k2_zfmisc_1(k5_numbers, u1_struct_0(1^[]))]]
+1.3.3.1  [- (k2_zfmisc_1(k5_numbers, u1_struct_0(k3_pcomps_1(1^[])))=k2_zfmisc_1(k5_numbers, u1_struct_0(1^[]))), k5_numbers=k5_numbers, u1_struct_0(k3_pcomps_1(1^[]))=u1_struct_0(1^[])]   (14)  substitution:[[_G6765, _G6900, _G6832, _G6969], [k5_numbers, u1_struct_0(k3_pcomps_1(1^[])), k5_numbers, u1_struct_0(1^[])]]
+1.3.3.1.1  [- (k5_numbers=k5_numbers)]   (15)  substitution:[[_G2316], [k5_numbers]]
+1.3.3.1.2  [- (u1_struct_0(k3_pcomps_1(1^[]))=u1_struct_0(1^[])), u1_struct_0(1^[])=u1_struct_0(k3_pcomps_1(1^[]))]   (16)  substitution:[[_G2460, _G2415], [u1_struct_0(k3_pcomps_1(1^[])), u1_struct_0(1^[])]]
+1.3.3.1.2.1  [- (u1_struct_0(1^[])=u1_struct_0(k3_pcomps_1(1^[]))), l1_metric_1(1^[])]   (7)  substitution:[[_G7748], [1^[]]]
+1.3.3.1.2.1.1  [-l1_metric_1(1^[])]   (2)  
+------------------------------------------------------
+End of proof for t27_frechet2

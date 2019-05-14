@@ -1,0 +1,21 @@
+
+t88_zfmisc_1 is a Theorem
+Start of proof for t88_zfmisc_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-r2_hidden(k4_tarski(1^[], 2^[]), k2_zfmisc_1(3^[], 4^[]))]
+ (2)  [r2_hidden(k4_tarski(2^[], 1^[]), k2_zfmisc_1(4^[], 3^[]))]
+ (3)  [r2_hidden(k4_tarski(_G719, _G786), k2_zfmisc_1(_G854, _G923)), -r2_hidden(_G719, _G854)]
+ (4)  [r2_hidden(k4_tarski(_G719, _G786), k2_zfmisc_1(_G854, _G923)), -r2_hidden(_G786, _G923)]
+ (5)  [-r2_hidden(k4_tarski(_G719, _G786), k2_zfmisc_1(_G854, _G923)), r2_hidden(_G719, _G854), r2_hidden(_G786, _G923)]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(k4_tarski(2^[], 1^[]), k2_zfmisc_1(4^[], 3^[]))]   (2)  
+1.1  [-r2_hidden(k4_tarski(2^[], 1^[]), k2_zfmisc_1(4^[], 3^[])), r2_hidden(2^[], 4^[]), r2_hidden(1^[], 3^[])]   (5)  substitution:[[_G719, _G786, _G854, _G923], [2^[], 1^[], 4^[], 3^[]]]
+1.1.1  [-r2_hidden(2^[], 4^[]), r2_hidden(k4_tarski(1^[], 2^[]), k2_zfmisc_1(3^[], 4^[]))]   (4)  substitution:[[_G786, _G923, _G719, _G854], [2^[], 4^[], 1^[], 3^[]]]
+1.1.1.1  [-r2_hidden(k4_tarski(1^[], 2^[]), k2_zfmisc_1(3^[], 4^[]))]   (1)  
+1.1.2  [-r2_hidden(1^[], 3^[]), r2_hidden(k4_tarski(1^[], 2^[]), k2_zfmisc_1(3^[], 4^[]))]   (3)  substitution:[[_G719, _G854, _G786, _G923], [1^[], 3^[], 2^[], 4^[]]]
+1.1.2.1  [-r2_hidden(k4_tarski(1^[], 2^[]), k2_zfmisc_1(3^[], 4^[]))]   (1)  
+------------------------------------------------------
+End of proof for t88_zfmisc_1

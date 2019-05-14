@@ -1,0 +1,66 @@
+
+l46_mesfunc5 is a Theorem
+Start of proof for l46_mesfunc5
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(3^[])]
+ (2)  [-v1_funct_1(3^[])]
+ (3)  [-v1_finseq_1(3^[])]
+ (4)  [m2_finseq_1(3^[], 2^[])]
+ (5)  [v7_ordinal1(_G13004), r2_hidden(_G13004, k1_relset_1(k5_numbers, 3^[])), -r2_hidden(k1_funct_1(3^[], _G13004), 2^[])]
+ (6)  [-v4_relat_1(_G9039, k5_numbers), v1_relat_1(_G9039), v1_funct_1(_G9039), v1_finseq_1(_G9039)]
+ (7)  [- (k1_relset_1(_G9486, _G9541)=k9_xtuple_0(_G9541)), v1_relat_1(_G9541), v4_relat_1(_G9541, _G9486)]
+ (8)  [- (k4_finseq_1(_G9854)=k9_xtuple_0(_G9854)), v1_relat_1(_G9854), v1_funct_1(_G9854), v1_finseq_1(_G9854)]
+ (9)  [-m2_finseq_1(_G10150, _G10369), -v7_ordinal1(1^[_G10369, _G10150]), v1_relat_1(_G10150), v1_funct_1(_G10150), v1_finseq_1(_G10150)]
+ (10)  [-m2_finseq_1(_G10150, _G10369), -r2_hidden(1^[_G10369, _G10150], k4_finseq_1(_G10150)), v1_relat_1(_G10150), v1_funct_1(_G10150), v1_finseq_1(_G10150)]
+ (11)  [-m2_finseq_1(_G10150, _G10369), r2_hidden(k1_funct_1(_G10150, 1^[_G10369, _G10150]), _G10369), v1_relat_1(_G10150), v1_funct_1(_G10150), v1_finseq_1(_G10150)]
+ (12)  [_G7214=_G7263, - (k9_xtuple_0(_G7214)=k9_xtuple_0(_G7263))]
+ (13)  [_G7492=_G7541, - (k4_finseq_1(_G7492)=k4_finseq_1(_G7541))]
+ (14)  [- (k1_relset_1(_G7770, _G7905)=k1_relset_1(_G7837, _G7974)), _G7770=_G7837, _G7905=_G7974]
+ (15)  [- (k1_funct_1(_G8358, _G8493)=k1_funct_1(_G8425, _G8562)), _G8358=_G8425, _G8493=_G8562]
+ (16)  [- (_G3391=_G3391)]
+ (17)  [_G3490=_G3535, - (_G3535=_G3490)]
+ (18)  [- (_G3723=_G3836), _G3723=_G3779, _G3779=_G3836]
+ (19)  [-v4_relat_1(_G4240, _G4377), v4_relat_1(_G4173, _G4308), _G4173=_G4240, _G4308=_G4377]
+ (20)  [-v1_relat_1(_G4819), _G4770=_G4819, v1_relat_1(_G4770)]
+ (21)  [-v1_funct_1(_G5097), _G5048=_G5097, v1_funct_1(_G5048)]
+ (22)  [-v1_finseq_1(_G5375), _G5326=_G5375, v1_finseq_1(_G5326)]
+ (23)  [-v7_ordinal1(_G5653), _G5604=_G5653, v7_ordinal1(_G5604)]
+ (24)  [-r2_hidden(_G5949, _G6086), r2_hidden(_G5882, _G6017), _G5882=_G5949, _G6017=_G6086]
+ (25)  [-m2_finseq_1(_G6537, _G6674), m2_finseq_1(_G6470, _G6605), _G6470=_G6537, _G6605=_G6674]
+
+Connection Proof:
+-----------------
+1  [m2_finseq_1(3^[], 2^[])]   (4)  
+1.1  [-m2_finseq_1(3^[], 2^[]), -r2_hidden(1^[2^[], 3^[]], k4_finseq_1(3^[])), v1_relat_1(3^[]), v1_funct_1(3^[]), v1_finseq_1(3^[])]   (10)  substitution:[[_G10150, _G10369], [3^[], 2^[]]]
+1.1.1  [r2_hidden(1^[2^[], 3^[]], k4_finseq_1(3^[])), -r2_hidden(1^[2^[], 3^[]], k1_relset_1(k5_numbers, 3^[])), 1^[2^[], 3^[]]=1^[2^[], 3^[]], k4_finseq_1(3^[])=k1_relset_1(k5_numbers, 3^[])]   (24)  substitution:[[_G5882, _G6017, _G5949, _G6086], [1^[2^[], 3^[]], k4_finseq_1(3^[]), 1^[2^[], 3^[]], k1_relset_1(k5_numbers, 3^[])]]
+1.1.1.1  [r2_hidden(1^[2^[], 3^[]], k1_relset_1(k5_numbers, 3^[])), v7_ordinal1(1^[2^[], 3^[]]), -r2_hidden(k1_funct_1(3^[], 1^[2^[], 3^[]]), 2^[])]   (5)  substitution:[[_G13004], [1^[2^[], 3^[]]]]
+1.1.1.1.1  [-v7_ordinal1(1^[2^[], 3^[]]), -m2_finseq_1(3^[], 2^[]), v1_relat_1(3^[]), v1_funct_1(3^[]), v1_finseq_1(3^[])]   (9)  substitution:[[_G10369, _G10150], [2^[], 3^[]]]
+1.1.1.1.1.1  [m2_finseq_1(3^[], 2^[])]   (4)  
+1.1.1.1.1.2  [-v1_relat_1(3^[])]   (1)  
+1.1.1.1.1.3  [-v1_funct_1(3^[])]   (2)  
+1.1.1.1.1.4  [-v1_finseq_1(3^[])]   (3)  
+1.1.1.1.2  [r2_hidden(k1_funct_1(3^[], 1^[2^[], 3^[]]), 2^[]), -m2_finseq_1(3^[], 2^[]), v1_relat_1(3^[]), v1_funct_1(3^[]), v1_finseq_1(3^[])]   (11)  substitution:[[_G10150, _G10369], [3^[], 2^[]]]
+1.1.1.1.2.1  [m2_finseq_1(3^[], 2^[])]   (4)  
+1.1.1.1.2.2  [-v1_relat_1(3^[])]   (1)  
+1.1.1.1.2.3  [-v1_funct_1(3^[])]   (2)  
+1.1.1.1.2.4  [-v1_finseq_1(3^[])]   (3)  
+1.1.1.2  [- (1^[2^[], 3^[]]=1^[2^[], 3^[]])]   (16)  substitution:[[_G3391], [1^[2^[], 3^[]]]]
+1.1.1.3  [- (k4_finseq_1(3^[])=k1_relset_1(k5_numbers, 3^[])), k1_relset_1(k5_numbers, 3^[])=k4_finseq_1(3^[])]   (17)  substitution:[[_G3535, _G3490], [k4_finseq_1(3^[]), k1_relset_1(k5_numbers, 3^[])]]
+1.1.1.3.1  [- (k1_relset_1(k5_numbers, 3^[])=k4_finseq_1(3^[])), k1_relset_1(k5_numbers, 3^[])=k9_xtuple_0(3^[]), k9_xtuple_0(3^[])=k4_finseq_1(3^[])]   (18)  substitution:[[_G3723, _G3836, _G3779], [k1_relset_1(k5_numbers, 3^[]), k4_finseq_1(3^[]), k9_xtuple_0(3^[])]]
+1.1.1.3.1.1  [- (k1_relset_1(k5_numbers, 3^[])=k9_xtuple_0(3^[])), v1_relat_1(3^[]), v4_relat_1(3^[], k5_numbers)]   (7)  substitution:[[_G9486, _G9541], [k5_numbers, 3^[]]]
+1.1.1.3.1.1.1  [-v1_relat_1(3^[])]   (1)  
+1.1.1.3.1.1.2  [-v4_relat_1(3^[], k5_numbers), v1_relat_1(3^[]), v1_funct_1(3^[]), v1_finseq_1(3^[])]   (6)  substitution:[[_G9039], [3^[]]]
+1.1.1.3.1.1.2.1  [-v1_relat_1(3^[])]   (1)  
+1.1.1.3.1.1.2.2  [-v1_funct_1(3^[])]   (2)  
+1.1.1.3.1.1.2.3  [-v1_finseq_1(3^[])]   (3)  
+1.1.1.3.1.2  [- (k9_xtuple_0(3^[])=k4_finseq_1(3^[])), k4_finseq_1(3^[])=k9_xtuple_0(3^[])]   (17)  substitution:[[_G3535, _G3490], [k9_xtuple_0(3^[]), k4_finseq_1(3^[])]]
+1.1.1.3.1.2.1  [- (k4_finseq_1(3^[])=k9_xtuple_0(3^[])), v1_relat_1(3^[]), v1_funct_1(3^[]), v1_finseq_1(3^[])]   (8)  substitution:[[_G9854], [3^[]]]
+1.1.1.3.1.2.1.1  [-v1_relat_1(3^[])]   (1)  
+1.1.1.3.1.2.1.2  [-v1_funct_1(3^[])]   (2)  
+1.1.1.3.1.2.1.3  [-v1_finseq_1(3^[])]   (3)  
+1.1.2  [-v1_relat_1(3^[])]   (1)  
+1.1.3  [-v1_funct_1(3^[])]   (2)  
+1.1.4  [-v1_finseq_1(3^[])]   (3)  
+------------------------------------------------------
+End of proof for l46_mesfunc5

@@ -1,0 +1,48 @@
+
+t46_power is a Theorem
+Start of proof for t46_power
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xreal_0(1^[])]
+ (2)  [k3_power(1^[], np__2)=k3_square_1(1^[])]
+ (3)  [v1_xreal_0(_G8403), -v1_xcmplx_0(_G8403)]
+ (4)  [m1_subset_1(_G8534, k4_ordinal1), -v7_ordinal1(_G8534)]
+ (5)  [- (k5_numbers=k4_ordinal1)]
+ (6)  [-v2_xxreal_0(np__2)]
+ (7)  [-m2_subset_1(np__2, k1_numbers, k5_numbers)]
+ (8)  [-m1_subset_1(np__2, k5_numbers)]
+ (9)  [-m1_subset_1(np__2, k1_numbers)]
+ (10)  [v1_xcmplx_0(_G9416), - (k1_newton(_G9416, np__2)=k3_xcmplx_0(_G9416, _G9416))]
+ (11)  [v1_xcmplx_0(_G9416), - (k3_square_1(_G9416)=k1_newton(_G9416, np__2))]
+ (12)  [- (k3_power(_G8691, _G8746)=k1_newton(_G8691, _G8746)), v1_xreal_0(_G8691), v7_ordinal1(_G8746)]
+ (13)  [- (k3_xcmplx_0(_G6259, _G6394)=k3_xcmplx_0(_G6326, _G6463)), _G6259=_G6326, _G6394=_G6463]
+ (14)  [- (k1_newton(_G6856, _G6991)=k1_newton(_G6923, _G7060)), _G6856=_G6923, _G6991=_G7060]
+ (15)  [_G8041=_G8090, - (k3_square_1(_G8041)=k3_square_1(_G8090))]
+ (16)  [- (k3_power(_G7453, _G7588)=k3_power(_G7520, _G7657)), _G7453=_G7520, _G7588=_G7657]
+ (17)  [- (_G2623=_G2623)]
+ (18)  [_G2722=_G2767, - (_G2767=_G2722)]
+ (19)  [- (_G2955=_G3068), _G2955=_G3011, _G3011=_G3068]
+ (20)  [-v7_ordinal1(_G3454), _G3405=_G3454, v7_ordinal1(_G3405)]
+ (21)  [-v2_xxreal_0(_G3732), _G3683=_G3732, v2_xxreal_0(_G3683)]
+ (22)  [-m2_subset_1(_G4046, _G4219, _G4396), m2_subset_1(_G3961, _G4132, _G4307), _G3961=_G4046, _G4132=_G4219, _G4307=_G4396]
+ (23)  [-m1_subset_1(_G5056, _G5193), m1_subset_1(_G4989, _G5124), _G4989=_G5056, _G5124=_G5193]
+ (24)  [-v1_xcmplx_0(_G5635), _G5586=_G5635, v1_xcmplx_0(_G5586)]
+ (25)  [-v1_xreal_0(_G5904), _G5855=_G5904, v1_xreal_0(_G5855)]
+
+Connection Proof:
+-----------------
+1  [k3_power(1^[], np__2)=k3_square_1(1^[])]   (2)  
+1.1  [- (k3_power(1^[], np__2)=k3_square_1(1^[])), k3_power(1^[], np__2)=k1_newton(1^[], np__2), k1_newton(1^[], np__2)=k3_square_1(1^[])]   (19)  substitution:[[_G2955, _G3068, _G3011], [k3_power(1^[], np__2), k3_square_1(1^[]), k1_newton(1^[], np__2)]]
+1.1.1  [- (k3_power(1^[], np__2)=k1_newton(1^[], np__2)), v1_xreal_0(1^[]), v7_ordinal1(np__2)]   (12)  substitution:[[_G8691, _G8746], [1^[], np__2]]
+1.1.1.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.1.2  [-v7_ordinal1(np__2), m1_subset_1(np__2, k4_ordinal1)]   (4)  substitution:[[_G8534], [np__2]]
+1.1.1.2.1  [-m1_subset_1(np__2, k4_ordinal1), m1_subset_1(np__2, k5_numbers), np__2=np__2, k5_numbers=k4_ordinal1]   (23)  substitution:[[_G5056, _G5193, _G4989, _G5124], [np__2, k4_ordinal1, np__2, k5_numbers]]
+1.1.1.2.1.1  [-m1_subset_1(np__2, k5_numbers)]   (8)  
+1.1.1.2.1.2  [- (np__2=np__2)]   (17)  substitution:[[_G2623], [np__2]]
+1.1.1.2.1.3  [- (k5_numbers=k4_ordinal1)]   (5)  
+1.1.2  [- (k1_newton(1^[], np__2)=k3_square_1(1^[])), k3_square_1(1^[])=k1_newton(1^[], np__2)]   (18)  substitution:[[_G2767, _G2722], [k1_newton(1^[], np__2), k3_square_1(1^[])]]
+1.1.2.1  [- (k3_square_1(1^[])=k1_newton(1^[], np__2)), v1_xcmplx_0(1^[])]   (11)  substitution:[[_G9416], [1^[]]]
+1.1.2.1.1  [-v1_xcmplx_0(1^[]), v1_xreal_0(1^[])]   (3)  substitution:[[_G8403], [1^[]]]
+1.1.2.1.1.1  [-v1_xreal_0(1^[])]   (1)  
+------------------------------------------------------
+End of proof for t46_power

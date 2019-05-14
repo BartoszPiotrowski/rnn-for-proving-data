@@ -1,0 +1,45 @@
+
+t34_orders_1 is a Theorem
+Start of proof for t34_orders_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(1^[])]
+ (2)  [-v2_orders_1(1^[])]
+ (3)  [r2_orders_1(1^[], k1_relat_1(1^[]))]
+ (4)  [v1_relat_1(_G1070), v4_relat_2(_G1070), -r4_relat_2(_G1070, k1_relat_1(_G1070))]
+ (5)  [v1_relat_1(_G1070), -v4_relat_2(_G1070), r4_relat_2(_G1070, k1_relat_1(_G1070))]
+ (6)  [v1_relat_1(_G1301), v8_relat_2(_G1301), -r8_relat_2(_G1301, k1_relat_1(_G1301))]
+ (7)  [v1_relat_1(_G1301), -v8_relat_2(_G1301), r8_relat_2(_G1301, k1_relat_1(_G1301))]
+ (8)  [v1_relat_1(_G1532), v2_orders_1(_G1532), -v1_relat_2(_G1532)]
+ (9)  [v1_relat_1(_G1532), v2_orders_1(_G1532), -v8_relat_2(_G1532)]
+ (10)  [v1_relat_1(_G1532), v2_orders_1(_G1532), -v4_relat_2(_G1532)]
+ (11)  [v1_relat_1(_G1532), -v2_orders_1(_G1532), v1_relat_2(_G1532), v8_relat_2(_G1532), v4_relat_2(_G1532)]
+ (12)  [v1_relat_1(_G2308), v1_relat_2(_G2308), -r1_relat_2(_G2308, k1_relat_1(_G2308))]
+ (13)  [v1_relat_1(_G2308), -v1_relat_2(_G2308), r1_relat_2(_G2308, k1_relat_1(_G2308))]
+ (14)  [v1_relat_1(_G1837), r2_orders_1(_G1837, _G1931), -r1_relat_2(_G1837, _G1931)]
+ (15)  [v1_relat_1(_G1837), r2_orders_1(_G1837, _G1931), -r8_relat_2(_G1837, _G1931)]
+ (16)  [v1_relat_1(_G1837), r2_orders_1(_G1837, _G1931), -r4_relat_2(_G1837, _G1931)]
+ (17)  [v1_relat_1(_G1837), -r2_orders_1(_G1837, _G1931), r1_relat_2(_G1837, _G1931), r8_relat_2(_G1837, _G1931), r4_relat_2(_G1837, _G1931)]
+
+Connection Proof:
+-----------------
+1  [r2_orders_1(1^[], k1_relat_1(1^[]))]   (3)  
+1.1  [-r2_orders_1(1^[], k1_relat_1(1^[])), v1_relat_1(1^[]), r1_relat_2(1^[], k1_relat_1(1^[])), r8_relat_2(1^[], k1_relat_1(1^[])), r4_relat_2(1^[], k1_relat_1(1^[]))]   (17)  substitution:[[_G1837, _G1931], [1^[], k1_relat_1(1^[])]]
+1.1.1  [-v1_relat_1(1^[])]   (1)  
+1.1.2  [-r1_relat_2(1^[], k1_relat_1(1^[])), v1_relat_1(1^[]), v1_relat_2(1^[])]   (12)  substitution:[[_G2308], [1^[]]]
+1.1.2.1  [-v1_relat_1(1^[])]   (1)  
+1.1.2.2  [-v1_relat_2(1^[]), v1_relat_1(1^[]), v2_orders_1(1^[])]   (8)  substitution:[[_G1532], [1^[]]]
+1.1.2.2.1  [-v1_relat_1(1^[])]   (1)  
+1.1.2.2.2  [-v2_orders_1(1^[])]   (2)  
+1.1.3  [-r8_relat_2(1^[], k1_relat_1(1^[])), v1_relat_1(1^[]), v8_relat_2(1^[])]   (6)  substitution:[[_G1301], [1^[]]]
+1.1.3.1  [-v1_relat_1(1^[])]   (1)  
+1.1.3.2  [-v8_relat_2(1^[]), v1_relat_1(1^[]), v2_orders_1(1^[])]   (9)  substitution:[[_G1532], [1^[]]]
+1.1.3.2.1  [-v1_relat_1(1^[])]   (1)  
+1.1.3.2.2  [-v2_orders_1(1^[])]   (2)  
+1.1.4  [-r4_relat_2(1^[], k1_relat_1(1^[])), v1_relat_1(1^[]), v4_relat_2(1^[])]   (4)  substitution:[[_G1070], [1^[]]]
+1.1.4.1  [-v1_relat_1(1^[])]   (1)  
+1.1.4.2  [-v4_relat_2(1^[]), v1_relat_1(1^[]), v2_orders_1(1^[])]   (10)  substitution:[[_G1532], [1^[]]]
+1.1.4.2.1  [-v1_relat_1(1^[])]   (1)  
+1.1.4.2.2  [-v2_orders_1(1^[])]   (2)  
+------------------------------------------------------
+End of proof for t34_orders_1

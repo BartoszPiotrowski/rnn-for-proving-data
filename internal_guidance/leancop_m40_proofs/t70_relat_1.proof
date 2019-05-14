@@ -1,0 +1,18 @@
+
+t70_relat_1 is a Theorem
+Start of proof for t70_relat_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(2^[])]
+ (2)  [r1_tarski(k10_xtuple_0(k5_relat_1(2^[], 1^[])), k10_xtuple_0(2^[]))]
+ (3)  [v1_relat_1(_G759), -r1_tarski(k5_relat_1(_G759, _G712), _G759)]
+ (4)  [r1_tarski(_G963, _G1012), -r1_tarski(k10_xtuple_0(_G963), k10_xtuple_0(_G1012))]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k10_xtuple_0(k5_relat_1(2^[], 1^[])), k10_xtuple_0(2^[]))]   (2)  
+1.1  [-r1_tarski(k10_xtuple_0(k5_relat_1(2^[], 1^[])), k10_xtuple_0(2^[])), r1_tarski(k5_relat_1(2^[], 1^[]), 2^[])]   (4)  substitution:[[_G963, _G1012], [k5_relat_1(2^[], 1^[]), 2^[]]]
+1.1.1  [-r1_tarski(k5_relat_1(2^[], 1^[]), 2^[]), v1_relat_1(2^[])]   (3)  substitution:[[_G759, _G712], [2^[], 1^[]]]
+1.1.1.1  [-v1_relat_1(2^[])]   (1)  
+------------------------------------------------------
+End of proof for t70_relat_1

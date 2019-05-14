@@ -1,0 +1,33 @@
+
+t12_mcart_1 is a Theorem
+Start of proof for t12_mcart_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-r2_hidden(2^[], k2_zfmisc_1(k1_tarski(3^[]), 4^[]))]
+ (2)  [k1_xtuple_0(2^[])=3^[], r2_hidden(k2_xtuple_0(2^[]), 4^[])]
+ (3)  [r2_hidden(_G5191, k2_zfmisc_1(_G5254, _G5318)), -r2_hidden(k1_xtuple_0(_G5191), _G5254)]
+ (4)  [r2_hidden(_G5191, k2_zfmisc_1(_G5254, _G5318)), -r2_hidden(k2_xtuple_0(_G5191), _G5318)]
+ (5)  [_G4838=k1_tarski(_G4780), r2_hidden(_G4968, _G4838), - (_G4968=_G4780)]
+ (6)  [_G4838=k1_tarski(_G4780), -r2_hidden(_G4968, _G4838), _G4968=_G4780]
+ (7)  [- (_G4838=k1_tarski(_G4780)), r2_hidden(1^[_G4838, _G4780], _G4838), 1^[_G4838, _G4780]=_G4780]
+ (8)  [- (_G4838=k1_tarski(_G4780)), -r2_hidden(1^[_G4838, _G4780], _G4838), - (1^[_G4838, _G4780]=_G4780)]
+ (9)  [-r2_hidden(_G2723, _G2860), r2_hidden(_G2656, _G2791), _G2656=_G2723, _G2791=_G2860]
+ (10)  [- (_G1883=_G1883)]
+ (11)  [_G1982=_G2027, - (_G2027=_G1982)]
+ (12)  [- (_G2215=_G2328), _G2215=_G2271, _G2271=_G2328]
+ (13)  [- (k2_zfmisc_1(_G3274, _G3409)=k2_zfmisc_1(_G3341, _G3478)), _G3274=_G3341, _G3409=_G3478]
+ (14)  [_G3871=_G3920, - (k1_tarski(_G3871)=k1_tarski(_G3920))]
+ (15)  [_G4149=_G4198, - (k1_xtuple_0(_G4149)=k1_xtuple_0(_G4198))]
+ (16)  [_G4418=_G4467, - (k2_xtuple_0(_G4418)=k2_xtuple_0(_G4467))]
+
+Connection Proof:
+-----------------
+1  [k1_xtuple_0(2^[])=3^[], r2_hidden(k2_xtuple_0(2^[]), 4^[])]   (2)  
+1.1  [- (k1_xtuple_0(2^[])=3^[]), k1_tarski(3^[])=k1_tarski(3^[]), r2_hidden(k1_xtuple_0(2^[]), k1_tarski(3^[]))]   (5)  substitution:[[_G4968, _G4780, _G4838], [k1_xtuple_0(2^[]), 3^[], k1_tarski(3^[])]]
+1.1.1  [- (k1_tarski(3^[])=k1_tarski(3^[]))]   (10)  substitution:[[_G1883], [k1_tarski(3^[])]]
+1.1.2  [-r2_hidden(k1_xtuple_0(2^[]), k1_tarski(3^[])), r2_hidden(2^[], k2_zfmisc_1(k1_tarski(3^[]), 4^[]))]   (3)  substitution:[[_G5191, _G5254, _G5318], [2^[], k1_tarski(3^[]), 4^[]]]
+1.1.2.1  [-r2_hidden(2^[], k2_zfmisc_1(k1_tarski(3^[]), 4^[]))]   (1)  
+1.2  [-r2_hidden(k2_xtuple_0(2^[]), 4^[]), r2_hidden(2^[], k2_zfmisc_1(k1_tarski(3^[]), 4^[]))]   (4)  substitution:[[_G5191, _G5318, _G5254], [2^[], 4^[], k1_tarski(3^[])]]
+1.2.1  [-r2_hidden(2^[], k2_zfmisc_1(k1_tarski(3^[]), 4^[]))]   (1)  
+------------------------------------------------------
+End of proof for t12_mcart_1

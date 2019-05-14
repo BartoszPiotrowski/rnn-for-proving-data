@@ -1,0 +1,27 @@
+
+t18_exchsort is a Theorem
+Start of proof for t18_exchsort
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v3_ordinal1(3^[])]
+ (2)  [-v1_xboole_0(4^[])]
+ (3)  [v2_exchsort(4^[], 3^[])]
+ (4)  [v1_xboole_0(_G901), r2_hidden(_G979, _G901)]
+ (5)  [-v1_xboole_0(_G901), -r2_hidden(1^[_G901], _G901)]
+ (6)  [v1_xboole_0(_G1784), -v1_xboole_0(k9_xtuple_0(_G1784))]
+ (7)  [v3_ordinal1(_G1129), -v2_exchsort(_G1237, _G1129), -v3_ordinal1(2^[_G1237, _G1129])]
+ (8)  [v3_ordinal1(_G1129), -v2_exchsort(_G1237, _G1129), -r2_hidden(2^[_G1237, _G1129], k9_xtuple_0(_G1237))]
+ (9)  [v3_ordinal1(_G1129), -v2_exchsort(_G1237, _G1129), r2_hidden(_G1129, k9_xtuple_0(_G1237)), r1_ordinal1(_G1129, 2^[_G1237, _G1129])]
+ (10)  [v3_ordinal1(_G1129), v2_exchsort(_G1237, _G1129), v3_ordinal1(_G1366), r2_hidden(_G1366, k9_xtuple_0(_G1237)), -r2_hidden(_G1129, k9_xtuple_0(_G1237))]
+ (11)  [v3_ordinal1(_G1129), v2_exchsort(_G1237, _G1129), v3_ordinal1(_G1366), r2_hidden(_G1366, k9_xtuple_0(_G1237)), -r1_ordinal1(_G1129, _G1366)]
+
+Connection Proof:
+-----------------
+1  [v2_exchsort(4^[], 3^[])]   (3)  
+1.1  [-v2_exchsort(4^[], 3^[]), v3_ordinal1(3^[]), -r2_hidden(2^[4^[], 3^[]], k9_xtuple_0(4^[]))]   (8)  substitution:[[_G1237, _G1129], [4^[], 3^[]]]
+1.1.1  [-v3_ordinal1(3^[])]   (1)  
+1.1.2  [r2_hidden(2^[4^[], 3^[]], k9_xtuple_0(4^[])), v1_xboole_0(k9_xtuple_0(4^[]))]   (4)  substitution:[[_G979, _G901], [2^[4^[], 3^[]], k9_xtuple_0(4^[])]]
+1.1.2.1  [-v1_xboole_0(k9_xtuple_0(4^[])), v1_xboole_0(4^[])]   (6)  substitution:[[_G1784], [4^[]]]
+1.1.2.1.1  [-v1_xboole_0(4^[])]   (2)  
+------------------------------------------------------
+End of proof for t18_exchsort

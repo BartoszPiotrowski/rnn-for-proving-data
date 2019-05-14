@@ -1,0 +1,38 @@
+
+l27_heyting1 is a Theorem
+Start of proof for l27_heyting1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k5_finsub_1(k7_normform(k1_xboole_0))=k2_tarski(k1_xboole_0, k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0)))]
+ (2)  [-v1_finset_1(k1_tarski(_G5230))]
+ (3)  [- (k7_normform(k1_xboole_0)=k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0)))]
+ (4)  [- (k1_zfmisc_1(k1_tarski(_G5623))=k2_tarski(k1_xboole_0, k1_tarski(_G5623)))]
+ (5)  [v1_finset_1(_G5319), - (k5_finsub_1(_G5319)=k1_zfmisc_1(_G5319))]
+ (6)  [-v1_finset_1(_G2557), _G2508=_G2557, v1_finset_1(_G2508)]
+ (7)  [- (_G1735=_G1735)]
+ (8)  [_G1834=_G1879, - (_G1879=_G1834)]
+ (9)  [- (_G2067=_G2180), _G2067=_G2123, _G2123=_G2180]
+ (10)  [_G2807=_G2856, - (k1_zfmisc_1(_G2807)=k1_zfmisc_1(_G2856))]
+ (11)  [_G3085=_G3134, - (k5_finsub_1(_G3085)=k5_finsub_1(_G3134))]
+ (12)  [_G3363=_G3412, - (k7_normform(_G3363)=k7_normform(_G3412))]
+ (13)  [- (k2_tarski(_G3641, _G3776)=k2_tarski(_G3708, _G3845)), _G3641=_G3708, _G3776=_G3845]
+ (14)  [_G4238=_G4287, - (k1_tarski(_G4238)=k1_tarski(_G4287))]
+ (15)  [- (k4_tarski(_G4507, _G4642)=k4_tarski(_G4574, _G4711)), _G4507=_G4574, _G4642=_G4711]
+
+Connection Proof:
+-----------------
+1  [k5_finsub_1(k7_normform(k1_xboole_0))=k2_tarski(k1_xboole_0, k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0)))]   (1)  
+1.1  [- (k5_finsub_1(k7_normform(k1_xboole_0))=k2_tarski(k1_xboole_0, k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0)))), k5_finsub_1(k7_normform(k1_xboole_0))=k1_zfmisc_1(k7_normform(k1_xboole_0)), k1_zfmisc_1(k7_normform(k1_xboole_0))=k2_tarski(k1_xboole_0, k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0)))]   (9)  substitution:[[_G2067, _G2180, _G2123], [k5_finsub_1(k7_normform(k1_xboole_0)), k2_tarski(k1_xboole_0, k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0))), k1_zfmisc_1(k7_normform(k1_xboole_0))]]
+1.1.1  [- (k5_finsub_1(k7_normform(k1_xboole_0))=k1_zfmisc_1(k7_normform(k1_xboole_0))), v1_finset_1(k7_normform(k1_xboole_0))]   (5)  substitution:[[_G5319], [k7_normform(k1_xboole_0)]]
+1.1.1.1  [-v1_finset_1(k7_normform(k1_xboole_0)), k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0))=k7_normform(k1_xboole_0), v1_finset_1(k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0)))]   (6)  substitution:[[_G2557, _G2508], [k7_normform(k1_xboole_0), k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0))]]
+1.1.1.1.1  [- (k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0))=k7_normform(k1_xboole_0)), k7_normform(k1_xboole_0)=k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0))]   (8)  substitution:[[_G1879, _G1834], [k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0)), k7_normform(k1_xboole_0)]]
+1.1.1.1.1.1  [- (k7_normform(k1_xboole_0)=k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0)))]   (3)  
+1.1.1.1.2  [-v1_finset_1(k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0)))]   (2)  substitution:[[_G5230], [k4_tarski(k1_xboole_0, k1_xboole_0)]]
+1.1.2  [- (k1_zfmisc_1(k7_normform(k1_xboole_0))=k2_tarski(k1_xboole_0, k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0)))), k1_zfmisc_1(k7_normform(k1_xboole_0))=k2_tarski(k1_xboole_0, k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0))), k2_tarski(k1_xboole_0, k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0)))=k2_tarski(k1_xboole_0, k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0)))]   (9)  substitution:[[_G2067, _G2180, _G2123], [k1_zfmisc_1(k7_normform(k1_xboole_0)), k2_tarski(k1_xboole_0, k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0))), k2_tarski(k1_xboole_0, k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0)))]]
+1.1.2.1  [- (k1_zfmisc_1(k7_normform(k1_xboole_0))=k2_tarski(k1_xboole_0, k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0)))), k1_zfmisc_1(k7_normform(k1_xboole_0))=k1_zfmisc_1(k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0))), k1_zfmisc_1(k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0)))=k2_tarski(k1_xboole_0, k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0)))]   (9)  substitution:[[_G2067, _G2180, _G2123], [k1_zfmisc_1(k7_normform(k1_xboole_0)), k2_tarski(k1_xboole_0, k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0))), k1_zfmisc_1(k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0)))]]
+1.1.2.1.1  [- (k1_zfmisc_1(k7_normform(k1_xboole_0))=k1_zfmisc_1(k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0)))), k7_normform(k1_xboole_0)=k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0))]   (10)  substitution:[[_G2807, _G2856], [k7_normform(k1_xboole_0), k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0))]]
+1.1.2.1.1.1  [- (k7_normform(k1_xboole_0)=k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0)))]   (3)  
+1.1.2.1.2  [- (k1_zfmisc_1(k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0)))=k2_tarski(k1_xboole_0, k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0))))]   (4)  substitution:[[_G5623], [k4_tarski(k1_xboole_0, k1_xboole_0)]]
+1.1.2.2  [- (k2_tarski(k1_xboole_0, k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0)))=k2_tarski(k1_xboole_0, k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0))))]   (7)  substitution:[[_G1735], [k2_tarski(k1_xboole_0, k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0)))]]
+------------------------------------------------------
+End of proof for l27_heyting1

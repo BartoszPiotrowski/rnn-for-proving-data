@@ -1,0 +1,29 @@
+
+t3_integr10 is a Theorem
+Start of proof for t3_integr10
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], k1_numbers)]
+ (2)  [-m1_subset_1(2^[], k1_numbers)]
+ (3)  [k9_real_1(k1_seq_1(k24_sin_cos, 1^[]), k1_seq_1(k24_sin_cos, 2^[]))=k4_integra5(2^[], 1^[], k24_sin_cos)]
+ (4)  [m1_subset_1(_G5733, k1_numbers), -v1_xreal_0(_G5733)]
+ (5)  [v1_xreal_0(_G5881), v1_xreal_0(_G5975), - (k9_real_1(k1_seq_1(k24_sin_cos, _G5881), k1_seq_1(k24_sin_cos, _G5975))=k4_integra5(_G5975, _G5881, k24_sin_cos))]
+ (6)  [- (k9_real_1(_G3457, _G3592)=k9_real_1(_G3524, _G3661)), _G3457=_G3524, _G3592=_G3661]
+ (7)  [- (k1_seq_1(_G4054, _G4189)=k1_seq_1(_G4121, _G4258)), _G4054=_G4121, _G4189=_G4258]
+ (8)  [- (k4_integra5(_G4642, _G4813, _G4988)=k4_integra5(_G4727, _G4900, _G5077)), _G4642=_G4727, _G4813=_G4900, _G4988=_G5077]
+ (9)  [- (_G1767=_G1767)]
+ (10)  [_G1866=_G1911, - (_G1911=_G1866)]
+ (11)  [- (_G2099=_G2212), _G2099=_G2155, _G2155=_G2212]
+ (12)  [-v1_xreal_0(_G2598), _G2549=_G2598, v1_xreal_0(_G2549)]
+ (13)  [-m1_subset_1(_G2885, _G3022), m1_subset_1(_G2818, _G2953), _G2818=_G2885, _G2953=_G3022]
+
+Connection Proof:
+-----------------
+1  [k9_real_1(k1_seq_1(k24_sin_cos, 1^[]), k1_seq_1(k24_sin_cos, 2^[]))=k4_integra5(2^[], 1^[], k24_sin_cos)]   (3)  
+1.1  [- (k9_real_1(k1_seq_1(k24_sin_cos, 1^[]), k1_seq_1(k24_sin_cos, 2^[]))=k4_integra5(2^[], 1^[], k24_sin_cos)), v1_xreal_0(1^[]), v1_xreal_0(2^[])]   (5)  substitution:[[_G5881, _G5975], [1^[], 2^[]]]
+1.1.1  [-v1_xreal_0(1^[]), m1_subset_1(1^[], k1_numbers)]   (4)  substitution:[[_G5733], [1^[]]]
+1.1.1.1  [-m1_subset_1(1^[], k1_numbers)]   (1)  
+1.1.2  [-v1_xreal_0(2^[]), m1_subset_1(2^[], k1_numbers)]   (4)  substitution:[[_G5733], [2^[]]]
+1.1.2.1  [-m1_subset_1(2^[], k1_numbers)]   (2)  
+------------------------------------------------------
+End of proof for t3_integr10

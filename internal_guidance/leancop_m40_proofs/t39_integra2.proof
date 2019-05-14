@@ -1,0 +1,57 @@
+
+t39_integra2 is a Theorem
+Start of proof for t39_integra2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(2^[], k1_zfmisc_1(k1_numbers))]
+ (2)  [-m1_subset_1(3^[], k1_numbers)]
+ (3)  [-m1_subset_1(4^[], k1_numbers)]
+ (4)  [-r2_hidden(4^[], k1_integra2(2^[], 3^[]))]
+ (5)  [m1_subset_1(_G10160, k1_numbers), r2_hidden(_G10160, 2^[]), 4^[]=k8_real_1(3^[], _G10160)]
+ (6)  [m1_subset_1(_G7639, k1_numbers), m1_subset_1(_G7753, k1_zfmisc_1(k1_numbers)), - (k1_integra2(_G7753, _G7639)=a_2_0_integra2(_G7639, _G7753))]
+ (7)  [m1_subset_1(_G6923, k1_zfmisc_1(k1_numbers)), m1_subset_1(_G6837, k1_numbers), r2_hidden(_G6752, a_2_0_integra2(_G6837, _G6923)), -m1_subset_1(1^[_G6923, _G6837, _G6752], k1_numbers)]
+ (8)  [m1_subset_1(_G6923, k1_zfmisc_1(k1_numbers)), m1_subset_1(_G6837, k1_numbers), r2_hidden(_G6752, a_2_0_integra2(_G6837, _G6923)), - (_G6752=k8_real_1(_G6837, 1^[_G6923, _G6837, _G6752]))]
+ (9)  [m1_subset_1(_G6923, k1_zfmisc_1(k1_numbers)), m1_subset_1(_G6837, k1_numbers), r2_hidden(_G6752, a_2_0_integra2(_G6837, _G6923)), -r2_hidden(1^[_G6923, _G6837, _G6752], _G6923)]
+ (10)  [m1_subset_1(_G6923, k1_zfmisc_1(k1_numbers)), m1_subset_1(_G6837, k1_numbers), -r2_hidden(_G6752, a_2_0_integra2(_G6837, _G6923)), m1_subset_1(_G7255, k1_numbers), _G6752=k8_real_1(_G6837, _G7255), r2_hidden(_G7255, _G6923)]
+ (11)  [- (a_2_0_integra2(_G4608, _G4743)=a_2_0_integra2(_G4675, _G4812)), _G4608=_G4675, _G4743=_G4812]
+ (12)  [_G5205=_G5254, - (k1_zfmisc_1(_G5205)=k1_zfmisc_1(_G5254))]
+ (13)  [- (k1_integra2(_G5483, _G5618)=k1_integra2(_G5550, _G5687)), _G5483=_G5550, _G5618=_G5687]
+ (14)  [- (k8_real_1(_G6071, _G6206)=k8_real_1(_G6138, _G6275)), _G6071=_G6138, _G6206=_G6275]
+ (15)  [- (_G2599=_G2599)]
+ (16)  [_G2698=_G2743, - (_G2743=_G2698)]
+ (17)  [- (_G2931=_G3044), _G2931=_G2987, _G2987=_G3044]
+ (18)  [-m1_subset_1(_G3448, _G3585), m1_subset_1(_G3381, _G3516), _G3381=_G3448, _G3516=_G3585]
+ (19)  [-r2_hidden(_G4036, _G4173), r2_hidden(_G3969, _G4104), _G3969=_G4036, _G4104=_G4173]
+
+Connection Proof:
+-----------------
+1  [m1_subset_1(1^[2^[], 3^[], 4^[]], k1_numbers), r2_hidden(1^[2^[], 3^[], 4^[]], 2^[]), 4^[]=k8_real_1(3^[], 1^[2^[], 3^[], 4^[]])]   (5)  substitution:[[_G10160], [1^[2^[], 3^[], 4^[]]]]
+1.1  [-m1_subset_1(1^[2^[], 3^[], 4^[]], k1_numbers), m1_subset_1(2^[], k1_zfmisc_1(k1_numbers)), m1_subset_1(3^[], k1_numbers), r2_hidden(4^[], a_2_0_integra2(3^[], 2^[]))]   (7)  substitution:[[_G6923, _G6837, _G6752], [2^[], 3^[], 4^[]]]
+1.1.1  [-m1_subset_1(2^[], k1_zfmisc_1(k1_numbers))]   (1)  
+1.1.2  [-m1_subset_1(3^[], k1_numbers)]   (2)  
+1.1.3  [-r2_hidden(4^[], a_2_0_integra2(3^[], 2^[])), r2_hidden(4^[], k1_integra2(2^[], 3^[])), 4^[]=4^[], k1_integra2(2^[], 3^[])=a_2_0_integra2(3^[], 2^[])]   (19)  substitution:[[_G4036, _G4173, _G3969, _G4104], [4^[], a_2_0_integra2(3^[], 2^[]), 4^[], k1_integra2(2^[], 3^[])]]
+1.1.3.1  [-r2_hidden(4^[], k1_integra2(2^[], 3^[]))]   (4)  
+1.1.3.2  [- (4^[]=4^[])]   (15)  substitution:[[_G2599], [4^[]]]
+1.1.3.3  [- (k1_integra2(2^[], 3^[])=a_2_0_integra2(3^[], 2^[])), m1_subset_1(3^[], k1_numbers), m1_subset_1(2^[], k1_zfmisc_1(k1_numbers))]   (6)  substitution:[[_G7753, _G7639], [2^[], 3^[]]]
+1.1.3.3.1  [-m1_subset_1(3^[], k1_numbers)]   (2)  
+1.1.3.3.2  [-m1_subset_1(2^[], k1_zfmisc_1(k1_numbers))]   (1)  
+1.2  [-r2_hidden(1^[2^[], 3^[], 4^[]], 2^[]), m1_subset_1(2^[], k1_zfmisc_1(k1_numbers)), m1_subset_1(3^[], k1_numbers), r2_hidden(4^[], a_2_0_integra2(3^[], 2^[]))]   (9)  substitution:[[_G6923, _G6837, _G6752], [2^[], 3^[], 4^[]]]
+1.2.1  [-m1_subset_1(2^[], k1_zfmisc_1(k1_numbers))]   (1)  
+1.2.2  [-m1_subset_1(3^[], k1_numbers)]   (2)  
+1.2.3  [-r2_hidden(4^[], a_2_0_integra2(3^[], 2^[])), r2_hidden(4^[], k1_integra2(2^[], 3^[])), 4^[]=4^[], k1_integra2(2^[], 3^[])=a_2_0_integra2(3^[], 2^[])]   (19)  substitution:[[_G4036, _G4173, _G3969, _G4104], [4^[], a_2_0_integra2(3^[], 2^[]), 4^[], k1_integra2(2^[], 3^[])]]
+1.2.3.1  [-r2_hidden(4^[], k1_integra2(2^[], 3^[]))]   (4)  
+1.2.3.2  [- (4^[]=4^[])]   (15)  substitution:[[_G2599], [4^[]]]
+1.2.3.3  [- (k1_integra2(2^[], 3^[])=a_2_0_integra2(3^[], 2^[])), m1_subset_1(3^[], k1_numbers), m1_subset_1(2^[], k1_zfmisc_1(k1_numbers))]   (6)  substitution:[[_G7753, _G7639], [2^[], 3^[]]]
+1.2.3.3.1  [-m1_subset_1(3^[], k1_numbers)]   (2)  
+1.2.3.3.2  [-m1_subset_1(2^[], k1_zfmisc_1(k1_numbers))]   (1)  
+1.3  [- (4^[]=k8_real_1(3^[], 1^[2^[], 3^[], 4^[]])), m1_subset_1(2^[], k1_zfmisc_1(k1_numbers)), m1_subset_1(3^[], k1_numbers), r2_hidden(4^[], a_2_0_integra2(3^[], 2^[]))]   (8)  substitution:[[_G6752, _G6837, _G6923], [4^[], 3^[], 2^[]]]
+1.3.1  [-m1_subset_1(2^[], k1_zfmisc_1(k1_numbers))]   (1)  
+1.3.2  [-m1_subset_1(3^[], k1_numbers)]   (2)  
+1.3.3  [-r2_hidden(4^[], a_2_0_integra2(3^[], 2^[])), r2_hidden(4^[], k1_integra2(2^[], 3^[])), 4^[]=4^[], k1_integra2(2^[], 3^[])=a_2_0_integra2(3^[], 2^[])]   (19)  substitution:[[_G4036, _G4173, _G3969, _G4104], [4^[], a_2_0_integra2(3^[], 2^[]), 4^[], k1_integra2(2^[], 3^[])]]
+1.3.3.1  [-r2_hidden(4^[], k1_integra2(2^[], 3^[]))]   (4)  
+1.3.3.2  [- (4^[]=4^[])]   (15)  substitution:[[_G2599], [4^[]]]
+1.3.3.3  [- (k1_integra2(2^[], 3^[])=a_2_0_integra2(3^[], 2^[])), m1_subset_1(3^[], k1_numbers), m1_subset_1(2^[], k1_zfmisc_1(k1_numbers))]   (6)  substitution:[[_G7753, _G7639], [2^[], 3^[]]]
+1.3.3.3.1  [-m1_subset_1(3^[], k1_numbers)]   (2)  
+1.3.3.3.2  [-m1_subset_1(2^[], k1_zfmisc_1(k1_numbers))]   (1)  
+------------------------------------------------------
+End of proof for t39_integra2

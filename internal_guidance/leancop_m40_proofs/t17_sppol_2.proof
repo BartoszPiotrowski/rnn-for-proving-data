@@ -1,0 +1,50 @@
+
+t17_sppol_2 is a Theorem
+Start of proof for t17_sppol_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m2_finseq_1(2^[], u1_struct_0(k15_euclid(np__2)))]
+ (2)  [-m1_subset_1(3^[], u1_struct_0(k15_euclid(np__2)))]
+ (3)  [-m1_subset_1(4^[], k5_numbers)]
+ (4)  [-r2_hidden(3^[], k2_topreal1(np__2, 2^[], 4^[]))]
+ (5)  [r2_hidden(3^[], k3_topreal1(np__2, 2^[]))]
+ (6)  [m1_subset_1(_G10235, k4_ordinal1), -v7_ordinal1(_G10235)]
+ (7)  [- (k5_numbers=k4_ordinal1)]
+ (8)  [-v2_xxreal_0(np__2)]
+ (9)  [-m2_subset_1(np__2, k1_numbers, k5_numbers)]
+ (10)  [-m1_subset_1(np__2, k5_numbers)]
+ (11)  [-m1_subset_1(np__2, k1_numbers)]
+ (12)  [m1_subset_1(_G11151, k5_numbers), m2_finseq_1(_G11280, u1_struct_0(k15_euclid(_G11151))), v7_ordinal1(_G11432), -r1_tarski(k2_topreal1(_G11151, _G11280, _G11432), k3_topreal1(_G11151, _G11280))]
+ (13)  [-r1_tarski(_G10392, _G10448), -r2_hidden(1^[_G10448, _G10392], _G10392)]
+ (14)  [-r1_tarski(_G10392, _G10448), r2_hidden(1^[_G10448, _G10392], _G10448)]
+ (15)  [r1_tarski(_G10392, _G10448), r2_hidden(_G10562, _G10392), -r2_hidden(_G10562, _G10448)]
+ (16)  [_G7979=_G8028, - (u1_struct_0(_G7979)=u1_struct_0(_G8028))]
+ (17)  [_G8257=_G8306, - (k15_euclid(_G8257)=k15_euclid(_G8306))]
+ (18)  [- (k3_topreal1(_G9554, _G9689)=k3_topreal1(_G9621, _G9758)), _G9554=_G9621, _G9689=_G9758]
+ (19)  [- (k2_topreal1(_G8535, _G8706, _G8881)=k2_topreal1(_G8620, _G8793, _G8970)), _G8535=_G8620, _G8706=_G8793, _G8881=_G8970]
+ (20)  [- (_G3087=_G3087)]
+ (21)  [_G3186=_G3231, - (_G3231=_G3186)]
+ (22)  [- (_G3419=_G3532), _G3419=_G3475, _G3475=_G3532]
+ (23)  [-v2_xxreal_0(_G3918), _G3869=_G3918, v2_xxreal_0(_G3869)]
+ (24)  [-m2_subset_1(_G4232, _G4405, _G4582), m2_subset_1(_G4147, _G4318, _G4493), _G4147=_G4232, _G4318=_G4405, _G4493=_G4582]
+ (25)  [-v7_ordinal1(_G5224), _G5175=_G5224, v7_ordinal1(_G5175)]
+ (26)  [-r1_tarski(_G5520, _G5657), r1_tarski(_G5453, _G5588), _G5453=_G5520, _G5588=_G5657]
+ (27)  [-m2_finseq_1(_G6117, _G6254), m2_finseq_1(_G6050, _G6185), _G6050=_G6117, _G6185=_G6254]
+ (28)  [-m1_subset_1(_G6714, _G6851), m1_subset_1(_G6647, _G6782), _G6647=_G6714, _G6782=_G6851]
+ (29)  [-r2_hidden(_G7302, _G7439), r2_hidden(_G7235, _G7370), _G7235=_G7302, _G7370=_G7439]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(3^[], k3_topreal1(np__2, 2^[]))]   (5)  
+1.1  [-r2_hidden(3^[], k3_topreal1(np__2, 2^[])), r1_tarski(k2_topreal1(np__2, 2^[], 4^[]), k3_topreal1(np__2, 2^[])), r2_hidden(3^[], k2_topreal1(np__2, 2^[], 4^[]))]   (15)  substitution:[[_G10562, _G10448, _G10392], [3^[], k3_topreal1(np__2, 2^[]), k2_topreal1(np__2, 2^[], 4^[])]]
+1.1.1  [-r1_tarski(k2_topreal1(np__2, 2^[], 4^[]), k3_topreal1(np__2, 2^[])), m1_subset_1(np__2, k5_numbers), m2_finseq_1(2^[], u1_struct_0(k15_euclid(np__2))), v7_ordinal1(4^[])]   (12)  substitution:[[_G11151, _G11280, _G11432], [np__2, 2^[], 4^[]]]
+1.1.1.1  [-m1_subset_1(np__2, k5_numbers)]   (10)  
+1.1.1.2  [-m2_finseq_1(2^[], u1_struct_0(k15_euclid(np__2)))]   (1)  
+1.1.1.3  [-v7_ordinal1(4^[]), m1_subset_1(4^[], k4_ordinal1)]   (6)  substitution:[[_G10235], [4^[]]]
+1.1.1.3.1  [-m1_subset_1(4^[], k4_ordinal1), m1_subset_1(4^[], k5_numbers), 4^[]=4^[], k5_numbers=k4_ordinal1]   (28)  substitution:[[_G6714, _G6851, _G6647, _G6782], [4^[], k4_ordinal1, 4^[], k5_numbers]]
+1.1.1.3.1.1  [-m1_subset_1(4^[], k5_numbers)]   (3)  
+1.1.1.3.1.2  [- (4^[]=4^[])]   (20)  substitution:[[_G3087], [4^[]]]
+1.1.1.3.1.3  [- (k5_numbers=k4_ordinal1)]   (7)  
+1.1.2  [-r2_hidden(3^[], k2_topreal1(np__2, 2^[], 4^[]))]   (4)  
+------------------------------------------------------
+End of proof for t17_sppol_2

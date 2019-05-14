@@ -1,0 +1,33 @@
+
+t12_nat_1 is a Theorem
+Start of proof for t12_nat_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v7_ordinal1(1^[])]
+ (2)  [-v7_ordinal1(2^[])]
+ (3)  [-v7_ordinal1(3^[])]
+ (4)  [-r1_xxreal_0(1^[], 2^[])]
+ (5)  [r1_xxreal_0(1^[], k2_xcmplx_0(2^[], 3^[]))]
+ (6)  [v7_ordinal1(_G1078), -v1_xreal_0(_G1078)]
+ (7)  [-v7_ordinal1(k2_xcmplx_0(_G1209, _G1260)), v7_ordinal1(_G1209), v7_ordinal1(_G1260)]
+ (8)  [v7_ordinal1(_G2093), v7_ordinal1(_G2177), -r1_xxreal_0(_G2093, k2_xcmplx_0(_G2093, _G2177))]
+ (9)  [v1_xreal_0(_G1505), v1_xreal_0(_G1608), v1_xreal_0(_G1707), -r1_xxreal_0(_G1505, _G1707), r1_xxreal_0(_G1505, _G1608), r1_xxreal_0(_G1608, _G1707)]
+
+Connection Proof:
+-----------------
+1  [r1_xxreal_0(1^[], k2_xcmplx_0(2^[], 3^[]))]   (5)  
+1.1  [-r1_xxreal_0(1^[], k2_xcmplx_0(2^[], 3^[])), v1_xreal_0(1^[]), v1_xreal_0(2^[]), v1_xreal_0(k2_xcmplx_0(2^[], 3^[])), r1_xxreal_0(1^[], 2^[]), r1_xxreal_0(2^[], k2_xcmplx_0(2^[], 3^[]))]   (9)  substitution:[[_G1505, _G1707, _G1608], [1^[], k2_xcmplx_0(2^[], 3^[]), 2^[]]]
+1.1.1  [-v1_xreal_0(1^[]), v7_ordinal1(1^[])]   (6)  substitution:[[_G1078], [1^[]]]
+1.1.1.1  [-v7_ordinal1(1^[])]   (1)  
+1.1.2  [-v1_xreal_0(2^[]), v7_ordinal1(2^[])]   (6)  substitution:[[_G1078], [2^[]]]
+1.1.2.1  [-v7_ordinal1(2^[])]   (2)  
+1.1.3  [-v1_xreal_0(k2_xcmplx_0(2^[], 3^[])), v7_ordinal1(k2_xcmplx_0(2^[], 3^[]))]   (6)  substitution:[[_G1078], [k2_xcmplx_0(2^[], 3^[])]]
+1.1.3.1  [-v7_ordinal1(k2_xcmplx_0(2^[], 3^[])), v7_ordinal1(2^[]), v7_ordinal1(3^[])]   (7)  substitution:[[_G1209, _G1260], [2^[], 3^[]]]
+1.1.3.1.1  [-v7_ordinal1(2^[])]   (2)  
+1.1.3.1.2  [-v7_ordinal1(3^[])]   (3)  
+1.1.4  [-r1_xxreal_0(1^[], 2^[])]   (4)  
+1.1.5  [-r1_xxreal_0(2^[], k2_xcmplx_0(2^[], 3^[])), v7_ordinal1(2^[]), v7_ordinal1(3^[])]   (8)  substitution:[[_G2093, _G2177], [2^[], 3^[]]]
+1.1.5.1  [-v7_ordinal1(2^[])]   (2)  
+1.1.5.2  [-v7_ordinal1(3^[])]   (3)  
+------------------------------------------------------
+End of proof for t12_nat_1

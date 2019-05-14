@@ -1,0 +1,46 @@
+
+t20_ordinal6 is a Theorem
+Start of proof for t20_ordinal6
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k1_card_1(k9_xtuple_0(k2_ordinal6(2^[])))=k1_card_1(k2_ordinal1(2^[]))]
+ (2)  [- (k1_ordinal6(_G7220)=k2_wellord2(k1_wellord2(k2_ordinal1(_G7220))))]
+ (3)  [-v1_ordinal6(k2_ordinal1(_G7383))]
+ (4)  [- (k9_xtuple_0(k2_ordinal6(_G7472))=k1_ordinal6(_G7472))]
+ (5)  [- (k10_xtuple_0(k2_ordinal6(_G7472))=k2_ordinal1(_G7472))]
+ (6)  [v3_ordinal1(_G7742), r1_tarski(_G7832, _G7742), - (k1_card_1(_G7832)=k1_card_1(k2_wellord2(k1_wellord2(_G7832))))]
+ (7)  [v1_ordinal6(_G6947), -v3_ordinal1(1^[_G6947])]
+ (8)  [v1_ordinal6(_G6947), -r1_tarski(_G6947, 1^[_G6947])]
+ (9)  [-v1_ordinal6(_G6947), v3_ordinal1(_G7028), r1_tarski(_G6947, _G7028)]
+ (10)  [- (_G2575=_G2575)]
+ (11)  [_G2674=_G2719, - (_G2719=_G2674)]
+ (12)  [- (_G2907=_G3020), _G2907=_G2963, _G2963=_G3020]
+ (13)  [-v1_ordinal6(_G3406), _G3357=_G3406, v1_ordinal6(_G3357)]
+ (14)  [-v3_ordinal1(_G3684), _G3635=_G3684, v3_ordinal1(_G3635)]
+ (15)  [-r1_tarski(_G3971, _G4108), r1_tarski(_G3904, _G4039), _G3904=_G3971, _G4039=_G4108]
+ (16)  [_G4564=_G4613, - (k1_ordinal6(_G4564)=k1_ordinal6(_G4613))]
+ (17)  [_G4842=_G4891, - (k10_xtuple_0(_G4842)=k10_xtuple_0(_G4891))]
+ (18)  [_G5120=_G5169, - (k2_wellord2(_G5120)=k2_wellord2(_G5169))]
+ (19)  [_G5398=_G5447, - (k1_wellord2(_G5398)=k1_wellord2(_G5447))]
+ (20)  [_G5676=_G5725, - (k9_xtuple_0(_G5676)=k9_xtuple_0(_G5725))]
+ (21)  [_G5954=_G6003, - (k2_ordinal6(_G5954)=k2_ordinal6(_G6003))]
+ (22)  [_G6232=_G6281, - (k1_card_1(_G6232)=k1_card_1(_G6281))]
+ (23)  [_G6501=_G6550, - (k2_ordinal1(_G6501)=k2_ordinal1(_G6550))]
+
+Connection Proof:
+-----------------
+1  [k1_card_1(k9_xtuple_0(k2_ordinal6(2^[])))=k1_card_1(k2_ordinal1(2^[]))]   (1)  
+1.1  [- (k1_card_1(k9_xtuple_0(k2_ordinal6(2^[])))=k1_card_1(k2_ordinal1(2^[]))), k1_card_1(k2_ordinal1(2^[]))=k1_card_1(k9_xtuple_0(k2_ordinal6(2^[])))]   (11)  substitution:[[_G2719, _G2674], [k1_card_1(k9_xtuple_0(k2_ordinal6(2^[]))), k1_card_1(k2_ordinal1(2^[]))]]
+1.1.1  [- (k1_card_1(k2_ordinal1(2^[]))=k1_card_1(k9_xtuple_0(k2_ordinal6(2^[])))), k1_card_1(k2_ordinal1(2^[]))=k1_card_1(k2_wellord2(k1_wellord2(k2_ordinal1(2^[])))), k1_card_1(k2_wellord2(k1_wellord2(k2_ordinal1(2^[]))))=k1_card_1(k9_xtuple_0(k2_ordinal6(2^[])))]   (12)  substitution:[[_G2907, _G3020, _G2963], [k1_card_1(k2_ordinal1(2^[])), k1_card_1(k9_xtuple_0(k2_ordinal6(2^[]))), k1_card_1(k2_wellord2(k1_wellord2(k2_ordinal1(2^[]))))]]
+1.1.1.1  [- (k1_card_1(k2_ordinal1(2^[]))=k1_card_1(k2_wellord2(k1_wellord2(k2_ordinal1(2^[]))))), v3_ordinal1(1^[k2_ordinal1(2^[])]), r1_tarski(k2_ordinal1(2^[]), 1^[k2_ordinal1(2^[])])]   (6)  substitution:[[_G7832, _G7742], [k2_ordinal1(2^[]), 1^[k2_ordinal1(2^[])]]]
+1.1.1.1.1  [-v3_ordinal1(1^[k2_ordinal1(2^[])]), v1_ordinal6(k2_ordinal1(2^[]))]   (7)  substitution:[[_G6947], [k2_ordinal1(2^[])]]
+1.1.1.1.1.1  [-v1_ordinal6(k2_ordinal1(2^[]))]   (3)  substitution:[[_G7383], [2^[]]]
+1.1.1.1.2  [-r1_tarski(k2_ordinal1(2^[]), 1^[k2_ordinal1(2^[])]), v1_ordinal6(k2_ordinal1(2^[]))]   (8)  substitution:[[_G6947], [k2_ordinal1(2^[])]]
+1.1.1.1.2.1  [-v1_ordinal6(k2_ordinal1(2^[]))]   (3)  substitution:[[_G7383], [2^[]]]
+1.1.1.2  [- (k1_card_1(k2_wellord2(k1_wellord2(k2_ordinal1(2^[]))))=k1_card_1(k9_xtuple_0(k2_ordinal6(2^[])))), k1_card_1(k9_xtuple_0(k2_ordinal6(2^[])))=k1_card_1(k2_wellord2(k1_wellord2(k2_ordinal1(2^[]))))]   (11)  substitution:[[_G2719, _G2674], [k1_card_1(k2_wellord2(k1_wellord2(k2_ordinal1(2^[])))), k1_card_1(k9_xtuple_0(k2_ordinal6(2^[])))]]
+1.1.1.2.1  [- (k1_card_1(k9_xtuple_0(k2_ordinal6(2^[])))=k1_card_1(k2_wellord2(k1_wellord2(k2_ordinal1(2^[]))))), k9_xtuple_0(k2_ordinal6(2^[]))=k2_wellord2(k1_wellord2(k2_ordinal1(2^[])))]   (22)  substitution:[[_G6232, _G6281], [k9_xtuple_0(k2_ordinal6(2^[])), k2_wellord2(k1_wellord2(k2_ordinal1(2^[])))]]
+1.1.1.2.1.1  [- (k9_xtuple_0(k2_ordinal6(2^[]))=k2_wellord2(k1_wellord2(k2_ordinal1(2^[])))), k9_xtuple_0(k2_ordinal6(2^[]))=k1_ordinal6(2^[]), k1_ordinal6(2^[])=k2_wellord2(k1_wellord2(k2_ordinal1(2^[])))]   (12)  substitution:[[_G2907, _G3020, _G2963], [k9_xtuple_0(k2_ordinal6(2^[])), k2_wellord2(k1_wellord2(k2_ordinal1(2^[]))), k1_ordinal6(2^[])]]
+1.1.1.2.1.1.1  [- (k9_xtuple_0(k2_ordinal6(2^[]))=k1_ordinal6(2^[]))]   (4)  substitution:[[_G7472], [2^[]]]
+1.1.1.2.1.1.2  [- (k1_ordinal6(2^[])=k2_wellord2(k1_wellord2(k2_ordinal1(2^[]))))]   (2)  substitution:[[_G7220], [2^[]]]
+------------------------------------------------------
+End of proof for t20_ordinal6

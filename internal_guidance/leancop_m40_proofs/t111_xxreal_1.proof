@@ -1,0 +1,27 @@
+
+t111_xxreal_1 is a Theorem
+Start of proof for t111_xxreal_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xxreal_0(1^[])]
+ (2)  [-v1_xxreal_0(2^[])]
+ (3)  [-v1_xxreal_0(3^[])]
+ (4)  [-v1_xxreal_0(4^[])]
+ (5)  [r1_xxreal_0(2^[], 1^[])]
+ (6)  [r1_xxreal_0(3^[], 1^[])]
+ (7)  [-r1_tarski(k3_xxreal_1(1^[], 3^[]), k4_xxreal_1(2^[], 4^[]))]
+ (8)  [v1_xxreal_0(_G955), v1_xxreal_0(_G1082), v1_xxreal_0(_G1205), v1_xxreal_0(_G1324), r1_tarski(k3_xxreal_1(_G955, _G1082), k4_xxreal_1(_G1205, _G1324)), -r1_xxreal_0(_G1082, _G955), -r1_xxreal_0(_G1205, _G955)]
+ (9)  [v1_xxreal_0(_G955), v1_xxreal_0(_G1082), v1_xxreal_0(_G1205), v1_xxreal_0(_G1324), r1_tarski(k3_xxreal_1(_G955, _G1082), k4_xxreal_1(_G1205, _G1324)), -r1_xxreal_0(_G1082, _G955), r1_xxreal_0(_G1324, _G1082)]
+
+Connection Proof:
+-----------------
+1  [r1_xxreal_0(2^[], 1^[])]   (5)  
+1.1  [-r1_xxreal_0(2^[], 1^[]), v1_xxreal_0(1^[]), v1_xxreal_0(3^[]), v1_xxreal_0(2^[]), v1_xxreal_0(4^[]), r1_tarski(k3_xxreal_1(1^[], 3^[]), k4_xxreal_1(2^[], 4^[])), -r1_xxreal_0(3^[], 1^[])]   (8)  substitution:[[_G1205, _G955, _G1082, _G1324], [2^[], 1^[], 3^[], 4^[]]]
+1.1.1  [-v1_xxreal_0(1^[])]   (1)  
+1.1.2  [-v1_xxreal_0(3^[])]   (3)  
+1.1.3  [-v1_xxreal_0(2^[])]   (2)  
+1.1.4  [-v1_xxreal_0(4^[])]   (4)  
+1.1.5  [-r1_tarski(k3_xxreal_1(1^[], 3^[]), k4_xxreal_1(2^[], 4^[]))]   (7)  
+1.1.6  [r1_xxreal_0(3^[], 1^[])]   (6)  
+------------------------------------------------------
+End of proof for t111_xxreal_1

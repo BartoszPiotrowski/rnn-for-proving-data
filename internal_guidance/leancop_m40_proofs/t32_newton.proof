@@ -1,0 +1,59 @@
+
+t32_newton is a Theorem
+Start of proof for t32_newton
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v7_ordinal1(1^[])]
+ (2)  [k2_newton(np__2, 1^[])=k18_rvsum_1(k8_newton(1^[]))]
+ (3)  [m1_subset_1(_G10093, k1_numbers), -v1_xreal_0(_G10093)]
+ (4)  [- (k2_newton(_G10250, _G10306)=k1_newton(_G10250, _G10306)), m1_subset_1(_G10250, k1_numbers), v7_ordinal1(_G10306)]
+ (5)  [- (k2_xcmplx_0(np__1, np__1)=np__2)]
+ (6)  [-v2_xxreal_0(np__1)]
+ (7)  [-m2_subset_1(np__1, k1_numbers, k5_numbers)]
+ (8)  [-m1_subset_1(np__1, k5_numbers)]
+ (9)  [-m1_subset_1(np__1, k1_numbers)]
+ (10)  [-v2_xxreal_0(np__2)]
+ (11)  [-m2_subset_1(np__2, k1_numbers, k5_numbers)]
+ (12)  [-m1_subset_1(np__2, k5_numbers)]
+ (13)  [-m1_subset_1(np__2, k1_numbers)]
+ (14)  [v7_ordinal1(_G11965), - (k8_newton(_G11965)=k7_newton(np__1, np__1, _G11965))]
+ (15)  [v7_ordinal1(_G11359), v1_xreal_0(_G11462), v1_xreal_0(_G11561), - (k1_newton(k2_xcmplx_0(_G11462, _G11561), _G11359)=k18_rvsum_1(k7_newton(_G11462, _G11561, _G11359)))]
+ (16)  [- (k1_newton(_G6601, _G6736)=k1_newton(_G6668, _G6805)), _G6601=_G6668, _G6736=_G6805]
+ (17)  [- (k2_xcmplx_0(_G7198, _G7333)=k2_xcmplx_0(_G7265, _G7402)), _G7198=_G7265, _G7333=_G7402]
+ (18)  [- (k7_newton(_G7795, _G7966, _G8141)=k7_newton(_G7880, _G8053, _G8230)), _G7795=_G7880, _G7966=_G8053, _G8141=_G8230]
+ (19)  [- (k2_newton(_G8823, _G8958)=k2_newton(_G8890, _G9027)), _G8823=_G8890, _G8958=_G9027]
+ (20)  [_G9420=_G9469, - (k18_rvsum_1(_G9420)=k18_rvsum_1(_G9469))]
+ (21)  [_G9689=_G9738, - (k8_newton(_G9689)=k8_newton(_G9738))]
+ (22)  [- (_G3264=_G3264)]
+ (23)  [_G3363=_G3408, - (_G3408=_G3363)]
+ (24)  [- (_G3596=_G3709), _G3596=_G3652, _G3652=_G3709]
+ (25)  [-v2_xxreal_0(_G4095), _G4046=_G4095, v2_xxreal_0(_G4046)]
+ (26)  [-m2_subset_1(_G4409, _G4582, _G4759), m2_subset_1(_G4324, _G4495, _G4670), _G4324=_G4409, _G4495=_G4582, _G4670=_G4759]
+ (27)  [-m1_subset_1(_G5419, _G5556), m1_subset_1(_G5352, _G5487), _G5352=_G5419, _G5487=_G5556]
+ (28)  [-v1_xreal_0(_G5998), _G5949=_G5998, v1_xreal_0(_G5949)]
+ (29)  [-v7_ordinal1(_G6267), _G6218=_G6267, v7_ordinal1(_G6218)]
+
+Connection Proof:
+-----------------
+1  [k2_newton(np__2, 1^[])=k18_rvsum_1(k8_newton(1^[]))]   (2)  
+1.1  [- (k2_newton(np__2, 1^[])=k18_rvsum_1(k8_newton(1^[]))), k2_newton(np__2, 1^[])=k1_newton(np__2, 1^[]), k1_newton(np__2, 1^[])=k18_rvsum_1(k8_newton(1^[]))]   (24)  substitution:[[_G3596, _G3709, _G3652], [k2_newton(np__2, 1^[]), k18_rvsum_1(k8_newton(1^[])), k1_newton(np__2, 1^[])]]
+1.1.1  [- (k2_newton(np__2, 1^[])=k1_newton(np__2, 1^[])), m1_subset_1(np__2, k1_numbers), v7_ordinal1(1^[])]   (4)  substitution:[[_G10250, _G10306], [np__2, 1^[]]]
+1.1.1.1  [-m1_subset_1(np__2, k1_numbers)]   (13)  
+1.1.1.2  [-v7_ordinal1(1^[])]   (1)  
+1.1.2  [- (k1_newton(np__2, 1^[])=k18_rvsum_1(k8_newton(1^[]))), k1_newton(np__2, 1^[])=k18_rvsum_1(k7_newton(np__1, np__1, 1^[])), k18_rvsum_1(k7_newton(np__1, np__1, 1^[]))=k18_rvsum_1(k8_newton(1^[]))]   (24)  substitution:[[_G3596, _G3709, _G3652], [k1_newton(np__2, 1^[]), k18_rvsum_1(k8_newton(1^[])), k18_rvsum_1(k7_newton(np__1, np__1, 1^[]))]]
+1.1.2.1  [- (k1_newton(np__2, 1^[])=k18_rvsum_1(k7_newton(np__1, np__1, 1^[]))), k1_newton(np__2, 1^[])=k1_newton(k2_xcmplx_0(np__1, np__1), 1^[]), k1_newton(k2_xcmplx_0(np__1, np__1), 1^[])=k18_rvsum_1(k7_newton(np__1, np__1, 1^[]))]   (24)  substitution:[[_G3596, _G3709, _G3652], [k1_newton(np__2, 1^[]), k18_rvsum_1(k7_newton(np__1, np__1, 1^[])), k1_newton(k2_xcmplx_0(np__1, np__1), 1^[])]]
+1.1.2.1.1  [- (k1_newton(np__2, 1^[])=k1_newton(k2_xcmplx_0(np__1, np__1), 1^[])), np__2=k2_xcmplx_0(np__1, np__1), 1^[]=1^[]]   (16)  substitution:[[_G6601, _G6736, _G6668, _G6805], [np__2, 1^[], k2_xcmplx_0(np__1, np__1), 1^[]]]
+1.1.2.1.1.1  [- (np__2=k2_xcmplx_0(np__1, np__1)), k2_xcmplx_0(np__1, np__1)=np__2]   (23)  substitution:[[_G3408, _G3363], [np__2, k2_xcmplx_0(np__1, np__1)]]
+1.1.2.1.1.1.1  [- (k2_xcmplx_0(np__1, np__1)=np__2)]   (5)  
+1.1.2.1.1.2  [- (1^[]=1^[])]   (22)  substitution:[[_G3264], [1^[]]]
+1.1.2.1.2  [- (k1_newton(k2_xcmplx_0(np__1, np__1), 1^[])=k18_rvsum_1(k7_newton(np__1, np__1, 1^[]))), v7_ordinal1(1^[]), v1_xreal_0(np__1), v1_xreal_0(np__1)]   (15)  substitution:[[_G11462, _G11561, _G11359], [np__1, np__1, 1^[]]]
+1.1.2.1.2.1  [-v7_ordinal1(1^[])]   (1)  
+1.1.2.1.2.2  [-v1_xreal_0(np__1), m1_subset_1(np__1, k1_numbers)]   (3)  substitution:[[_G10093], [np__1]]
+1.1.2.1.2.2.1  [-m1_subset_1(np__1, k1_numbers)]   (9)  
+1.1.2.1.2.3  [-v1_xreal_0(np__1)]   (lemmata:1.1.2.1.2)  
+1.1.2.2  [- (k18_rvsum_1(k7_newton(np__1, np__1, 1^[]))=k18_rvsum_1(k8_newton(1^[]))), k7_newton(np__1, np__1, 1^[])=k8_newton(1^[])]   (20)  substitution:[[_G9420, _G9469], [k7_newton(np__1, np__1, 1^[]), k8_newton(1^[])]]
+1.1.2.2.1  [- (k7_newton(np__1, np__1, 1^[])=k8_newton(1^[])), k8_newton(1^[])=k7_newton(np__1, np__1, 1^[])]   (23)  substitution:[[_G3408, _G3363], [k7_newton(np__1, np__1, 1^[]), k8_newton(1^[])]]
+1.1.2.2.1.1  [- (k8_newton(1^[])=k7_newton(np__1, np__1, 1^[])), v7_ordinal1(1^[])]   (14)  substitution:[[_G11965], [1^[]]]
+1.1.2.2.1.1.1  [-v7_ordinal1(1^[])]   (1)  
+------------------------------------------------------
+End of proof for t32_newton

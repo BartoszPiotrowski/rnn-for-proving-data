@@ -1,0 +1,25 @@
+
+t46_eqrel_1 is a Theorem
+Start of proof for t46_eqrel_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(3^[])]
+ (2)  [-v1_funct_1(3^[])]
+ (3)  [-r1_tarski(1^[], k8_relat_1(3^[], 2^[]))]
+ (4)  [r1_tarski(k7_relat_1(3^[], 1^[]), 2^[])]
+ (5)  [v1_relat_1(_G1085), r1_tarski(_G962, _G1023), -r1_tarski(k7_relat_1(_G1085, _G962), k7_relat_1(_G1085, _G1023))]
+ (6)  [-r1_tarski(_G1438, _G1551), r1_tarski(_G1438, _G1494), r1_tarski(_G1494, _G1551)]
+ (7)  [-r1_tarski(k7_relat_1(_G1892, k8_relat_1(_G1892, _G1837)), _G1837), v1_relat_1(_G1892), v1_funct_1(_G1892)]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k7_relat_1(3^[], 1^[]), 2^[])]   (4)  
+1.1  [-r1_tarski(k7_relat_1(3^[], 1^[]), 2^[]), r1_tarski(k7_relat_1(3^[], 1^[]), k7_relat_1(3^[], k8_relat_1(3^[], 2^[]))), r1_tarski(k7_relat_1(3^[], k8_relat_1(3^[], 2^[])), 2^[])]   (6)  substitution:[[_G1438, _G1551, _G1494], [k7_relat_1(3^[], 1^[]), 2^[], k7_relat_1(3^[], k8_relat_1(3^[], 2^[]))]]
+1.1.1  [-r1_tarski(k7_relat_1(3^[], 1^[]), k7_relat_1(3^[], k8_relat_1(3^[], 2^[]))), v1_relat_1(3^[]), r1_tarski(1^[], k8_relat_1(3^[], 2^[]))]   (5)  substitution:[[_G1085, _G962, _G1023], [3^[], 1^[], k8_relat_1(3^[], 2^[])]]
+1.1.1.1  [-v1_relat_1(3^[])]   (1)  
+1.1.1.2  [-r1_tarski(1^[], k8_relat_1(3^[], 2^[]))]   (3)  
+1.1.2  [-r1_tarski(k7_relat_1(3^[], k8_relat_1(3^[], 2^[])), 2^[]), v1_relat_1(3^[]), v1_funct_1(3^[])]   (7)  substitution:[[_G1892, _G1837], [3^[], 2^[]]]
+1.1.2.1  [-v1_relat_1(3^[])]   (1)  
+1.1.2.2  [-v1_funct_1(3^[])]   (2)  
+------------------------------------------------------
+End of proof for t46_eqrel_1

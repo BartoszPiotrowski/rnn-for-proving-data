@@ -1,0 +1,51 @@
+
+t48_setfam_1 is a Theorem
+Start of proof for t48_setfam_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v1_xboole_0(2^[])]
+ (2)  [-v3_setfam_1(3^[], 2^[])]
+ (3)  [-m1_subset_1(3^[], k1_zfmisc_1(k1_zfmisc_1(2^[])))]
+ (4)  [-v3_setfam_1(4^[], 2^[])]
+ (5)  [-m1_subset_1(4^[], k1_zfmisc_1(k1_zfmisc_1(2^[])))]
+ (6)  [v3_setfam_1(k4_subset_1(k1_zfmisc_1(2^[]), 3^[], 4^[]), 2^[])]
+ (7)  [m1_subset_1(_G8039, k1_zfmisc_1(k1_zfmisc_1(_G7982))), v3_setfam_1(_G8039, _G7982), r2_hidden(_G7982, _G8039)]
+ (8)  [m1_subset_1(_G8039, k1_zfmisc_1(k1_zfmisc_1(_G7982))), -v3_setfam_1(_G8039, _G7982), -r2_hidden(_G7982, _G8039)]
+ (9)  [-m1_subset_1(k4_subset_1(_G9007, _G9073, _G9140), k1_zfmisc_1(_G9007)), m1_subset_1(_G9073, k1_zfmisc_1(_G9007)), m1_subset_1(_G9140, k1_zfmisc_1(_G9007))]
+ (10)  [- (k4_subset_1(_G9560, _G9627, _G9695)=k2_xboole_0(_G9627, _G9695)), m1_subset_1(_G9627, k1_zfmisc_1(_G9560)), m1_subset_1(_G9695, k1_zfmisc_1(_G9560))]
+ (11)  [_G8509=k2_xboole_0(_G8368, _G8438), -r2_hidden(_G8677, _G8509), r2_hidden(_G8677, _G8368)]
+ (12)  [_G8509=k2_xboole_0(_G8368, _G8438), -r2_hidden(_G8677, _G8509), r2_hidden(_G8677, _G8438)]
+ (13)  [_G8509=k2_xboole_0(_G8368, _G8438), r2_hidden(_G8677, _G8509), -r2_hidden(_G8677, _G8368), -r2_hidden(_G8677, _G8438)]
+ (14)  [- (_G8509=k2_xboole_0(_G8368, _G8438)), r2_hidden(1^[_G8509, _G8438, _G8368], _G8509), r2_hidden(1^[_G8509, _G8438, _G8368], _G8368)]
+ (15)  [- (_G8509=k2_xboole_0(_G8368, _G8438)), r2_hidden(1^[_G8509, _G8438, _G8368], _G8509), r2_hidden(1^[_G8509, _G8438, _G8368], _G8438)]
+ (16)  [- (_G8509=k2_xboole_0(_G8368, _G8438)), -r2_hidden(1^[_G8509, _G8438, _G8368], _G8509), -r2_hidden(1^[_G8509, _G8438, _G8368], _G8368), -r2_hidden(1^[_G8509, _G8438, _G8368], _G8438)]
+ (17)  [- (k2_xboole_0(_G6025, _G6160)=k2_xboole_0(_G6092, _G6229)), _G6025=_G6092, _G6160=_G6229]
+ (18)  [_G7641=_G7690, - (k1_zfmisc_1(_G7641)=k1_zfmisc_1(_G7690))]
+ (19)  [- (k4_subset_1(_G6622, _G6793, _G6968)=k4_subset_1(_G6707, _G6880, _G7057)), _G6622=_G6707, _G6793=_G6880, _G6968=_G7057]
+ (20)  [- (_G3099=_G3099)]
+ (21)  [_G3198=_G3243, - (_G3243=_G3198)]
+ (22)  [- (_G3431=_G3544), _G3431=_G3487, _G3487=_G3544]
+ (23)  [-r2_hidden(_G3948, _G4085), r2_hidden(_G3881, _G4016), _G3881=_G3948, _G4016=_G4085]
+ (24)  [-v1_xboole_0(_G4527), _G4478=_G4527, v1_xboole_0(_G4478)]
+ (25)  [-m1_subset_1(_G4823, _G4960), m1_subset_1(_G4756, _G4891), _G4756=_G4823, _G4891=_G4960]
+ (26)  [-v3_setfam_1(_G5411, _G5548), v3_setfam_1(_G5344, _G5479), _G5344=_G5411, _G5479=_G5548]
+
+Connection Proof:
+-----------------
+1  [v3_setfam_1(k4_subset_1(k1_zfmisc_1(2^[]), 3^[], 4^[]), 2^[])]   (6)  
+1.1  [-v3_setfam_1(k4_subset_1(k1_zfmisc_1(2^[]), 3^[], 4^[]), 2^[]), m1_subset_1(k4_subset_1(k1_zfmisc_1(2^[]), 3^[], 4^[]), k1_zfmisc_1(k1_zfmisc_1(2^[]))), -r2_hidden(2^[], k4_subset_1(k1_zfmisc_1(2^[]), 3^[], 4^[]))]   (8)  substitution:[[_G8039, _G7982], [k4_subset_1(k1_zfmisc_1(2^[]), 3^[], 4^[]), 2^[]]]
+1.1.1  [-m1_subset_1(k4_subset_1(k1_zfmisc_1(2^[]), 3^[], 4^[]), k1_zfmisc_1(k1_zfmisc_1(2^[]))), m1_subset_1(3^[], k1_zfmisc_1(k1_zfmisc_1(2^[]))), m1_subset_1(4^[], k1_zfmisc_1(k1_zfmisc_1(2^[])))]   (9)  substitution:[[_G9007, _G9073, _G9140], [k1_zfmisc_1(2^[]), 3^[], 4^[]]]
+1.1.1.1  [-m1_subset_1(3^[], k1_zfmisc_1(k1_zfmisc_1(2^[])))]   (3)  
+1.1.1.2  [-m1_subset_1(4^[], k1_zfmisc_1(k1_zfmisc_1(2^[])))]   (5)  
+1.1.2  [r2_hidden(2^[], k4_subset_1(k1_zfmisc_1(2^[]), 3^[], 4^[])), k4_subset_1(k1_zfmisc_1(2^[]), 3^[], 4^[])=k2_xboole_0(3^[], 4^[]), -r2_hidden(2^[], 3^[]), -r2_hidden(2^[], 4^[])]   (13)  substitution:[[_G8677, _G8509, _G8368, _G8438], [2^[], k4_subset_1(k1_zfmisc_1(2^[]), 3^[], 4^[]), 3^[], 4^[]]]
+1.1.2.1  [- (k4_subset_1(k1_zfmisc_1(2^[]), 3^[], 4^[])=k2_xboole_0(3^[], 4^[])), m1_subset_1(3^[], k1_zfmisc_1(k1_zfmisc_1(2^[]))), m1_subset_1(4^[], k1_zfmisc_1(k1_zfmisc_1(2^[])))]   (10)  substitution:[[_G9560, _G9627, _G9695], [k1_zfmisc_1(2^[]), 3^[], 4^[]]]
+1.1.2.1.1  [-m1_subset_1(3^[], k1_zfmisc_1(k1_zfmisc_1(2^[])))]   (3)  
+1.1.2.1.2  [-m1_subset_1(4^[], k1_zfmisc_1(k1_zfmisc_1(2^[])))]   (5)  
+1.1.2.2  [r2_hidden(2^[], 3^[]), m1_subset_1(3^[], k1_zfmisc_1(k1_zfmisc_1(2^[]))), v3_setfam_1(3^[], 2^[])]   (7)  substitution:[[_G7982, _G8039], [2^[], 3^[]]]
+1.1.2.2.1  [-m1_subset_1(3^[], k1_zfmisc_1(k1_zfmisc_1(2^[])))]   (3)  
+1.1.2.2.2  [-v3_setfam_1(3^[], 2^[])]   (2)  
+1.1.2.3  [r2_hidden(2^[], 4^[]), m1_subset_1(4^[], k1_zfmisc_1(k1_zfmisc_1(2^[]))), v3_setfam_1(4^[], 2^[])]   (7)  substitution:[[_G7982, _G8039], [2^[], 4^[]]]
+1.1.2.3.1  [-m1_subset_1(4^[], k1_zfmisc_1(k1_zfmisc_1(2^[])))]   (5)  
+1.1.2.3.2  [-v3_setfam_1(4^[], 2^[])]   (4)  
+------------------------------------------------------
+End of proof for t48_setfam_1

@@ -1,0 +1,44 @@
+
+t35_scmyciel is a Theorem
+Start of proof for t35_scmyciel
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k5_scmyciel(k1_xboole_0)=k1_tarski(k1_xboole_0)]
+ (2)  [- (k1_xboole_0=o_0_0_xboole_0)]
+ (3)  [-v1_xboole_0(o_0_0_xboole_0)]
+ (4)  [-v1_xboole_0(k3_tarski(k1_tarski(k1_xboole_0)))]
+ (5)  [-v4_scmyciel(k1_tarski(k1_xboole_0))]
+ (6)  [v4_scmyciel(_G6050), -r2_hidden(1^[_G6050], k3_tarski(_G6050)), - (_G6050=k5_scmyciel(k3_tarski(_G6050)))]
+ (7)  [v4_scmyciel(_G6050), -r2_hidden(2^[_G6050], k3_tarski(_G6050)), - (_G6050=k5_scmyciel(k3_tarski(_G6050)))]
+ (8)  [v4_scmyciel(_G6050), r2_hidden(k2_tarski(1^[_G6050], 2^[_G6050]), _G6050), - (_G6050=k5_scmyciel(k3_tarski(_G6050)))]
+ (9)  [r2_hidden(_G6720, _G6766), v1_xboole_0(_G6766)]
+ (10)  [v1_xboole_0(_G6944), - (_G6944=_G6997), v1_xboole_0(_G6997)]
+ (11)  [- (k2_tarski(_G4349, _G4484)=k2_tarski(_G4416, _G4553)), _G4349=_G4416, _G4484=_G4553]
+ (12)  [_G4946=_G4995, - (k3_tarski(_G4946)=k3_tarski(_G4995))]
+ (13)  [_G5224=_G5273, - (k5_scmyciel(_G5224)=k5_scmyciel(_G5273))]
+ (14)  [_G5493=_G5542, - (k1_tarski(_G5493)=k1_tarski(_G5542))]
+ (15)  [- (_G2360=_G2360)]
+ (16)  [_G2459=_G2504, - (_G2504=_G2459)]
+ (17)  [- (_G2692=_G2805), _G2692=_G2748, _G2748=_G2805]
+ (18)  [-v4_scmyciel(_G3191), _G3142=_G3191, v4_scmyciel(_G3142)]
+ (19)  [-v1_xboole_0(_G4057), _G4008=_G4057, v1_xboole_0(_G4008)]
+ (20)  [-r2_hidden(_G3487, _G3624), r2_hidden(_G3420, _G3555), _G3420=_G3487, _G3555=_G3624]
+
+Connection Proof:
+-----------------
+1  [k5_scmyciel(k1_xboole_0)=k1_tarski(k1_xboole_0)]   (1)  
+1.1  [- (k5_scmyciel(k1_xboole_0)=k1_tarski(k1_xboole_0)), k1_tarski(k1_xboole_0)=k5_scmyciel(k1_xboole_0)]   (16)  substitution:[[_G2504, _G2459], [k5_scmyciel(k1_xboole_0), k1_tarski(k1_xboole_0)]]
+1.1.1  [- (k1_tarski(k1_xboole_0)=k5_scmyciel(k1_xboole_0)), k1_tarski(k1_xboole_0)=k5_scmyciel(k3_tarski(k1_tarski(k1_xboole_0))), k5_scmyciel(k3_tarski(k1_tarski(k1_xboole_0)))=k5_scmyciel(k1_xboole_0)]   (17)  substitution:[[_G2692, _G2805, _G2748], [k1_tarski(k1_xboole_0), k5_scmyciel(k1_xboole_0), k5_scmyciel(k3_tarski(k1_tarski(k1_xboole_0)))]]
+1.1.1.1  [- (k1_tarski(k1_xboole_0)=k5_scmyciel(k3_tarski(k1_tarski(k1_xboole_0)))), v4_scmyciel(k1_tarski(k1_xboole_0)), -r2_hidden(1^[k1_tarski(k1_xboole_0)], k3_tarski(k1_tarski(k1_xboole_0)))]   (6)  substitution:[[_G6050], [k1_tarski(k1_xboole_0)]]
+1.1.1.1.1  [-v4_scmyciel(k1_tarski(k1_xboole_0))]   (5)  
+1.1.1.1.2  [r2_hidden(1^[k1_tarski(k1_xboole_0)], k3_tarski(k1_tarski(k1_xboole_0))), v1_xboole_0(k3_tarski(k1_tarski(k1_xboole_0)))]   (9)  substitution:[[_G6720, _G6766], [1^[k1_tarski(k1_xboole_0)], k3_tarski(k1_tarski(k1_xboole_0))]]
+1.1.1.1.2.1  [-v1_xboole_0(k3_tarski(k1_tarski(k1_xboole_0)))]   (4)  
+1.1.1.2  [- (k5_scmyciel(k3_tarski(k1_tarski(k1_xboole_0)))=k5_scmyciel(k1_xboole_0)), k3_tarski(k1_tarski(k1_xboole_0))=k1_xboole_0]   (13)  substitution:[[_G5224, _G5273], [k3_tarski(k1_tarski(k1_xboole_0)), k1_xboole_0]]
+1.1.1.2.1  [- (k3_tarski(k1_tarski(k1_xboole_0))=k1_xboole_0), k3_tarski(k1_tarski(k1_xboole_0))=o_0_0_xboole_0, o_0_0_xboole_0=k1_xboole_0]   (17)  substitution:[[_G2692, _G2805, _G2748], [k3_tarski(k1_tarski(k1_xboole_0)), k1_xboole_0, o_0_0_xboole_0]]
+1.1.1.2.1.1  [- (k3_tarski(k1_tarski(k1_xboole_0))=o_0_0_xboole_0), v1_xboole_0(k3_tarski(k1_tarski(k1_xboole_0))), v1_xboole_0(o_0_0_xboole_0)]   (10)  substitution:[[_G6944, _G6997], [k3_tarski(k1_tarski(k1_xboole_0)), o_0_0_xboole_0]]
+1.1.1.2.1.1.1  [-v1_xboole_0(k3_tarski(k1_tarski(k1_xboole_0)))]   (4)  
+1.1.1.2.1.1.2  [-v1_xboole_0(o_0_0_xboole_0)]   (3)  
+1.1.1.2.1.2  [- (o_0_0_xboole_0=k1_xboole_0), k1_xboole_0=o_0_0_xboole_0]   (16)  substitution:[[_G2504, _G2459], [o_0_0_xboole_0, k1_xboole_0]]
+1.1.1.2.1.2.1  [- (k1_xboole_0=o_0_0_xboole_0)]   (2)  
+------------------------------------------------------
+End of proof for t35_scmyciel

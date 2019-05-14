@@ -1,0 +1,85 @@
+
+t21_facirc_1 is a Theorem
+Start of proof for t21_facirc_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(2^[])]
+ (2)  [-v1_circcomb(2^[])]
+ (3)  [-v2_circcomb(2^[])]
+ (4)  [-l1_msualg_1(2^[])]
+ (5)  [v2_struct_0(3^[])]
+ (6)  [-v1_circcomb(3^[])]
+ (7)  [-v2_circcomb(3^[])]
+ (8)  [-l1_msualg_1(3^[])]
+ (9)  [-r2_hidden(4^[], k3_msafree2(2^[]))]
+ (10)  [r2_hidden(4^[], k3_msafree2(k2_circcomb(2^[], 3^[]))), r2_hidden(4^[], k3_msafree2(k2_circcomb(3^[], 2^[])))]
+ (11)  [- (k2_xboole_0(_G9704, _G9749)=k2_xboole_0(_G9749, _G9704))]
+ (12)  [_G10087=k2_xboole_0(_G9946, _G10016), -r2_hidden(_G10255, _G10087), r2_hidden(_G10255, _G9946)]
+ (13)  [_G10087=k2_xboole_0(_G9946, _G10016), -r2_hidden(_G10255, _G10087), r2_hidden(_G10255, _G10016)]
+ (14)  [_G10087=k2_xboole_0(_G9946, _G10016), r2_hidden(_G10255, _G10087), -r2_hidden(_G10255, _G9946), -r2_hidden(_G10255, _G10016)]
+ (15)  [- (_G10087=k2_xboole_0(_G9946, _G10016)), r2_hidden(1^[_G10087, _G10016, _G9946], _G10087), r2_hidden(1^[_G10087, _G10016, _G9946], _G9946)]
+ (16)  [- (_G10087=k2_xboole_0(_G9946, _G10016)), r2_hidden(1^[_G10087, _G10016, _G9946], _G10087), r2_hidden(1^[_G10087, _G10016, _G9946], _G10016)]
+ (17)  [- (_G10087=k2_xboole_0(_G9946, _G10016)), -r2_hidden(1^[_G10087, _G10016, _G9946], _G10087), -r2_hidden(1^[_G10087, _G10016, _G9946], _G9946), -r2_hidden(1^[_G10087, _G10016, _G9946], _G10016)]
+ (18)  [l1_msualg_1(_G10585), -v2_struct_0(_G10585), l1_msualg_1(_G10783), -v2_struct_0(_G10783), r1_circcomb(_G10585, _G10783), - (k3_msafree2(k2_circcomb(_G10585, _G10783))=k2_xboole_0(k3_msafree2(_G10585), k3_msafree2(_G10783)))]
+ (19)  [l1_msualg_1(_G10585), -v2_struct_0(_G10585), l1_msualg_1(_G10783), -v2_struct_0(_G10783), r1_circcomb(_G10585, _G10783), -r1_tarski(k2_msafree2(k2_circcomb(_G10585, _G10783)), k2_xboole_0(k2_msafree2(_G10585), k2_msafree2(_G10783)))]
+ (20)  [l1_msualg_1(_G11472), v2_circcomb(_G11472), v1_circcomb(_G11472), -v2_struct_0(_G11472), -r1_circcomb(_G11472, _G11760), -v2_struct_0(_G11760), v1_circcomb(_G11760), v2_circcomb(_G11760), l1_msualg_1(_G11760)]
+ (21)  [- (k2_xboole_0(_G7879, _G8014)=k2_xboole_0(_G7946, _G8083)), _G7879=_G7946, _G8014=_G8083]
+ (22)  [_G8476=_G8525, - (k2_msafree2(_G8476)=k2_msafree2(_G8525))]
+ (23)  [_G8754=_G8803, - (k3_msafree2(_G8754)=k3_msafree2(_G8803))]
+ (24)  [- (k2_circcomb(_G9023, _G9158)=k2_circcomb(_G9090, _G9227)), _G9023=_G9090, _G9158=_G9227]
+ (25)  [- (_G4056=_G4056)]
+ (26)  [_G4155=_G4200, - (_G4200=_G4155)]
+ (27)  [- (_G4388=_G4501), _G4388=_G4444, _G4444=_G4501]
+ (28)  [-r1_tarski(_G4905, _G5042), r1_tarski(_G4838, _G4973), _G4838=_G4905, _G4973=_G5042]
+ (29)  [-r1_circcomb(_G5502, _G5639), r1_circcomb(_G5435, _G5570), _G5435=_G5502, _G5570=_G5639]
+ (30)  [-v2_struct_0(_G6081), _G6032=_G6081, v2_struct_0(_G6032)]
+ (31)  [-v1_circcomb(_G6359), _G6310=_G6359, v1_circcomb(_G6310)]
+ (32)  [-v2_circcomb(_G6637), _G6588=_G6637, v2_circcomb(_G6588)]
+ (33)  [-l1_msualg_1(_G6915), _G6866=_G6915, l1_msualg_1(_G6866)]
+ (34)  [-r2_hidden(_G7202, _G7339), r2_hidden(_G7135, _G7270), _G7135=_G7202, _G7270=_G7339]
+
+Connection Proof:
+-----------------
+1  [v2_struct_0(3^[])]   (5)  
+1.1  [-v2_struct_0(3^[]), l1_msualg_1(3^[]), l1_msualg_1(2^[]), -v2_struct_0(2^[]), r1_circcomb(3^[], 2^[]), - (k3_msafree2(k2_circcomb(3^[], 2^[]))=k2_xboole_0(k3_msafree2(3^[]), k3_msafree2(2^[])))]   (18)  substitution:[[_G10585, _G10783], [3^[], 2^[]]]
+1.1.1  [-l1_msualg_1(3^[])]   (8)  
+1.1.2  [-l1_msualg_1(2^[])]   (4)  
+1.1.3  [v2_struct_0(2^[])]   (1)  
+1.1.4  [-r1_circcomb(3^[], 2^[]), l1_msualg_1(3^[]), v2_circcomb(3^[]), v1_circcomb(3^[]), -v2_struct_0(3^[]), -v2_struct_0(2^[]), v1_circcomb(2^[]), v2_circcomb(2^[]), l1_msualg_1(2^[])]   (20)  substitution:[[_G11472, _G11760], [3^[], 2^[]]]
+1.1.4.1  [-l1_msualg_1(3^[])]   (8)  
+1.1.4.2  [-v2_circcomb(3^[])]   (7)  
+1.1.4.3  [-v1_circcomb(3^[])]   (6)  
+1.1.4.4  [v2_struct_0(3^[])]   (5)  
+1.1.4.5  [v2_struct_0(2^[])]   (1)  
+1.1.4.6  [-v1_circcomb(2^[])]   (2)  
+1.1.4.7  [-v2_circcomb(2^[])]   (3)  
+1.1.4.8  [-l1_msualg_1(2^[])]   (4)  
+1.1.5  [k3_msafree2(k2_circcomb(3^[], 2^[]))=k2_xboole_0(k3_msafree2(3^[]), k3_msafree2(2^[])), - (k3_msafree2(k2_circcomb(3^[], 2^[]))=k3_msafree2(k2_circcomb(2^[], 3^[]))), k2_xboole_0(k3_msafree2(3^[]), k3_msafree2(2^[]))=k3_msafree2(k2_circcomb(2^[], 3^[]))]   (27)  substitution:[[_G4388, _G4444, _G4501], [k3_msafree2(k2_circcomb(3^[], 2^[])), k2_xboole_0(k3_msafree2(3^[]), k3_msafree2(2^[])), k3_msafree2(k2_circcomb(2^[], 3^[]))]]
+1.1.5.1  [k3_msafree2(k2_circcomb(3^[], 2^[]))=k3_msafree2(k2_circcomb(2^[], 3^[])), -r2_hidden(4^[], k3_msafree2(k2_circcomb(2^[], 3^[]))), r2_hidden(4^[], k3_msafree2(k2_circcomb(3^[], 2^[]))), 4^[]=4^[]]   (34)  substitution:[[_G7270, _G7339, _G7202, _G7135], [k3_msafree2(k2_circcomb(3^[], 2^[])), k3_msafree2(k2_circcomb(2^[], 3^[])), 4^[], 4^[]]]
+1.1.5.1.1  [r2_hidden(4^[], k3_msafree2(k2_circcomb(2^[], 3^[]))), r2_hidden(4^[], k3_msafree2(k2_circcomb(3^[], 2^[])))]   (10)  
+1.1.5.1.1.1  [-r2_hidden(4^[], k3_msafree2(k2_circcomb(3^[], 2^[]))), k3_msafree2(k2_circcomb(3^[], 2^[]))=k2_xboole_0(k3_msafree2(3^[]), k3_msafree2(2^[])), r2_hidden(4^[], k3_msafree2(2^[]))]   (13)  substitution:[[_G10255, _G10087, _G9946, _G10016], [4^[], k3_msafree2(k2_circcomb(3^[], 2^[])), k3_msafree2(3^[]), k3_msafree2(2^[])]]
+1.1.5.1.1.1.1  [- (k3_msafree2(k2_circcomb(3^[], 2^[]))=k2_xboole_0(k3_msafree2(3^[]), k3_msafree2(2^[])))]   (reduction:1.1)  
+1.1.5.1.1.1.2  [-r2_hidden(4^[], k3_msafree2(2^[]))]   (9)  
+1.1.5.1.2  [-r2_hidden(4^[], k3_msafree2(k2_circcomb(3^[], 2^[]))), k3_msafree2(k2_circcomb(3^[], 2^[]))=k2_xboole_0(k3_msafree2(3^[]), k3_msafree2(2^[])), r2_hidden(4^[], k3_msafree2(2^[]))]   (13)  substitution:[[_G10255, _G10087, _G9946, _G10016], [4^[], k3_msafree2(k2_circcomb(3^[], 2^[])), k3_msafree2(3^[]), k3_msafree2(2^[])]]
+1.1.5.1.2.1  [- (k3_msafree2(k2_circcomb(3^[], 2^[]))=k2_xboole_0(k3_msafree2(3^[]), k3_msafree2(2^[])))]   (reduction:1.1)  
+1.1.5.1.2.2  [-r2_hidden(4^[], k3_msafree2(2^[]))]   (9)  
+1.1.5.1.3  [- (4^[]=4^[])]   (25)  substitution:[[_G4056], [4^[]]]
+1.1.5.2  [- (k2_xboole_0(k3_msafree2(3^[]), k3_msafree2(2^[]))=k3_msafree2(k2_circcomb(2^[], 3^[]))), k2_xboole_0(k3_msafree2(3^[]), k3_msafree2(2^[]))=k2_xboole_0(k3_msafree2(2^[]), k3_msafree2(3^[])), k2_xboole_0(k3_msafree2(2^[]), k3_msafree2(3^[]))=k3_msafree2(k2_circcomb(2^[], 3^[]))]   (27)  substitution:[[_G4388, _G4501, _G4444], [k2_xboole_0(k3_msafree2(3^[]), k3_msafree2(2^[])), k3_msafree2(k2_circcomb(2^[], 3^[])), k2_xboole_0(k3_msafree2(2^[]), k3_msafree2(3^[]))]]
+1.1.5.2.1  [- (k2_xboole_0(k3_msafree2(3^[]), k3_msafree2(2^[]))=k2_xboole_0(k3_msafree2(2^[]), k3_msafree2(3^[])))]   (11)  substitution:[[_G9704, _G9749], [k3_msafree2(3^[]), k3_msafree2(2^[])]]
+1.1.5.2.2  [- (k2_xboole_0(k3_msafree2(2^[]), k3_msafree2(3^[]))=k3_msafree2(k2_circcomb(2^[], 3^[]))), k3_msafree2(k2_circcomb(2^[], 3^[]))=k2_xboole_0(k3_msafree2(2^[]), k3_msafree2(3^[]))]   (26)  substitution:[[_G4200, _G4155], [k2_xboole_0(k3_msafree2(2^[]), k3_msafree2(3^[])), k3_msafree2(k2_circcomb(2^[], 3^[]))]]
+1.1.5.2.2.1  [- (k3_msafree2(k2_circcomb(2^[], 3^[]))=k2_xboole_0(k3_msafree2(2^[]), k3_msafree2(3^[]))), l1_msualg_1(2^[]), -v2_struct_0(2^[]), l1_msualg_1(3^[]), -v2_struct_0(3^[]), r1_circcomb(2^[], 3^[])]   (18)  substitution:[[_G10585, _G10783], [2^[], 3^[]]]
+1.1.5.2.2.1.1  [-l1_msualg_1(2^[])]   (4)  
+1.1.5.2.2.1.2  [v2_struct_0(2^[])]   (1)  
+1.1.5.2.2.1.3  [-l1_msualg_1(3^[])]   (8)  
+1.1.5.2.2.1.4  [v2_struct_0(3^[])]   (5)  
+1.1.5.2.2.1.5  [-r1_circcomb(2^[], 3^[]), l1_msualg_1(2^[]), v2_circcomb(2^[]), v1_circcomb(2^[]), -v2_struct_0(2^[]), -v2_struct_0(3^[]), v1_circcomb(3^[]), v2_circcomb(3^[]), l1_msualg_1(3^[])]   (20)  substitution:[[_G11472, _G11760], [2^[], 3^[]]]
+1.1.5.2.2.1.5.1  [-l1_msualg_1(2^[])]   (4)  
+1.1.5.2.2.1.5.2  [-v2_circcomb(2^[])]   (3)  
+1.1.5.2.2.1.5.3  [-v1_circcomb(2^[])]   (2)  
+1.1.5.2.2.1.5.4  [v2_struct_0(2^[])]   (1)  
+1.1.5.2.2.1.5.5  [v2_struct_0(3^[])]   (5)  
+1.1.5.2.2.1.5.6  [-v1_circcomb(3^[])]   (6)  
+1.1.5.2.2.1.5.7  [-v2_circcomb(3^[])]   (7)  
+1.1.5.2.2.1.5.8  [-l1_msualg_1(3^[])]   (8)  
+------------------------------------------------------
+End of proof for t21_facirc_1

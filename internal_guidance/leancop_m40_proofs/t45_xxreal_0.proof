@@ -1,0 +1,38 @@
+
+t45_xxreal_0 is a Theorem
+Start of proof for t45_xxreal_0
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xxreal_0(1^[])]
+ (2)  [-v1_xxreal_0(2^[])]
+ (3)  [-v1_xxreal_0(3^[])]
+ (4)  [-r2_hidden(1^[], k1_numbers)]
+ (5)  [-r2_hidden(2^[], k1_numbers)]
+ (6)  [-r1_xxreal_0(1^[], 3^[])]
+ (7)  [-r1_xxreal_0(3^[], 2^[])]
+ (8)  [r2_hidden(3^[], k1_numbers)]
+ (9)  [v1_xxreal_0(_G4236), r2_hidden(_G4236, k1_numbers), r1_xxreal_0(_G4236, k2_xxreal_0)]
+ (10)  [v1_xxreal_0(_G4484), v1_xxreal_0(_G4589), r2_hidden(_G4484, k1_numbers), r1_xxreal_0(_G4589, _G4484), -r2_hidden(_G4589, k1_numbers), - (_G4589=k2_xxreal_0)]
+ (11)  [- (_G1928=_G1928)]
+ (12)  [_G2027=_G2072, - (_G2072=_G2027)]
+ (13)  [- (_G2260=_G2373), _G2260=_G2316, _G2316=_G2373]
+ (14)  [-v1_xxreal_0(_G2759), _G2710=_G2759, v1_xxreal_0(_G2710)]
+ (15)  [-r1_xxreal_0(_G3055, _G3192), r1_xxreal_0(_G2988, _G3123), _G2988=_G3055, _G3123=_G3192]
+ (16)  [-r2_hidden(_G3643, _G3780), r2_hidden(_G3576, _G3711), _G3576=_G3643, _G3711=_G3780]
+
+Connection Proof:
+-----------------
+1  [v1_xxreal_0(1^[]), r2_hidden(1^[], k1_numbers), r1_xxreal_0(1^[], k2_xxreal_0)]   (9)  substitution:[[_G4236], [1^[]]]
+1.1  [-v1_xxreal_0(1^[])]   (1)  
+1.2  [-r2_hidden(1^[], k1_numbers)]   (4)  
+1.3  [-r1_xxreal_0(1^[], k2_xxreal_0), r1_xxreal_0(1^[], 3^[]), 1^[]=1^[], 3^[]=k2_xxreal_0]   (15)  substitution:[[_G3055, _G3192, _G2988, _G3123], [1^[], k2_xxreal_0, 1^[], 3^[]]]
+1.3.1  [-r1_xxreal_0(1^[], 3^[])]   (6)  
+1.3.2  [- (1^[]=1^[])]   (11)  substitution:[[_G1928], [1^[]]]
+1.3.3  [- (3^[]=k2_xxreal_0), v1_xxreal_0(2^[]), v1_xxreal_0(3^[]), r2_hidden(2^[], k1_numbers), r1_xxreal_0(3^[], 2^[]), -r2_hidden(3^[], k1_numbers)]   (10)  substitution:[[_G4589, _G4484], [3^[], 2^[]]]
+1.3.3.1  [-v1_xxreal_0(2^[])]   (2)  
+1.3.3.2  [-v1_xxreal_0(3^[])]   (3)  
+1.3.3.3  [-r2_hidden(2^[], k1_numbers)]   (5)  
+1.3.3.4  [-r1_xxreal_0(3^[], 2^[])]   (7)  
+1.3.3.5  [r2_hidden(3^[], k1_numbers)]   (8)  
+------------------------------------------------------
+End of proof for t45_xxreal_0

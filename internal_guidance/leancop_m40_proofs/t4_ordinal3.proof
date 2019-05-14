@@ -1,0 +1,27 @@
+
+t4_ordinal3 is a Theorem
+Start of proof for t4_ordinal3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v3_ordinal1(3^[])]
+ (2)  [-r1_tarski(4^[], 3^[])]
+ (3)  [v3_ordinal1(k3_tarski(4^[]))]
+ (4)  [-r1_tarski(_G888, _G944), -r2_hidden(1^[_G944, _G888], _G888)]
+ (5)  [-r1_tarski(_G888, _G944), r2_hidden(1^[_G944, _G888], _G944)]
+ (6)  [r1_tarski(_G888, _G944), r2_hidden(_G1058, _G888), -r2_hidden(_G1058, _G944)]
+ (7)  [-r2_hidden(2^[_G1559], _G1559), -v3_ordinal1(k3_tarski(_G1559))]
+ (8)  [v3_ordinal1(2^[_G1559]), -v3_ordinal1(k3_tarski(_G1559))]
+ (9)  [v3_ordinal1(_G1339), r2_hidden(_G1290, _G1339), -v3_ordinal1(_G1290)]
+
+Connection Proof:
+-----------------
+1  [v3_ordinal1(k3_tarski(4^[]))]   (3)  
+1.1  [-v3_ordinal1(k3_tarski(4^[])), -r2_hidden(2^[4^[]], 4^[])]   (7)  substitution:[[_G1559], [4^[]]]
+1.1.1  [r2_hidden(2^[4^[]], 4^[]), r1_tarski(4^[], 3^[]), -r2_hidden(2^[4^[]], 3^[])]   (6)  substitution:[[_G1058, _G888, _G944], [2^[4^[]], 4^[], 3^[]]]
+1.1.1.1  [-r1_tarski(4^[], 3^[])]   (2)  
+1.1.1.2  [r2_hidden(2^[4^[]], 3^[]), v3_ordinal1(3^[]), -v3_ordinal1(2^[4^[]])]   (9)  substitution:[[_G1290, _G1339], [2^[4^[]], 3^[]]]
+1.1.1.2.1  [-v3_ordinal1(3^[])]   (1)  
+1.1.1.2.2  [v3_ordinal1(2^[4^[]]), -v3_ordinal1(k3_tarski(4^[]))]   (8)  substitution:[[_G1559], [4^[]]]
+1.1.1.2.2.1  [v3_ordinal1(k3_tarski(4^[]))]   (3)  
+------------------------------------------------------
+End of proof for t4_ordinal3

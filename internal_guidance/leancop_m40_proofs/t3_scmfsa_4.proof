@@ -1,0 +1,61 @@
+
+t3_scmfsa_4 is a Theorem
+Start of proof for t3_scmfsa_4
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m2_subset_1(1^[], k1_numbers, k5_numbers)]
+ (2)  [-m2_subset_1(2^[], k1_numbers, k5_numbers)]
+ (3)  [-v1_ami_2(3^[])]
+ (4)  [-m1_subset_1(3^[], u1_struct_0(k1_scmfsa_2))]
+ (5)  [k5_compos_0(u1_compos_1(k1_scmfsa_2), k13_scmfsa_2(2^[], 3^[]), 1^[])=k13_scmfsa_2(k2_nat_1(2^[], 1^[]), 3^[])]
+ (6)  [v1_xboole_0(_G10659), m1_subset_1(_G10742, k1_zfmisc_1(_G10659)), -v1_xboole_0(_G10742)]
+ (7)  [m1_subset_1(_G10950, k4_ordinal1), -v7_ordinal1(_G10950)]
+ (8)  [-m1_subset_1(k5_numbers, k1_zfmisc_1(k1_numbers))]
+ (9)  [v1_xboole_0(k4_ordinal1)]
+ (10)  [-v3_ordinal1(k4_ordinal1)]
+ (11)  [- (k5_numbers=k4_ordinal1)]
+ (12)  [m2_subset_1(_G11953, k1_numbers, k5_numbers), v7_ordinal1(_G12133), - (k5_compos_0(u1_compos_1(k1_scmfsa_2), k13_scmfsa_2(_G11953, _G12239), _G12133)=k13_scmfsa_2(k2_nat_1(_G11953, _G12133), _G12239)), v1_ami_2(_G12239), m1_subset_1(_G12239, u1_struct_0(k1_scmfsa_2))]
+ (13)  [m1_subset_1(_G11407, k1_zfmisc_1(_G11334)), -v1_xboole_0(_G11407), -v1_xboole_0(_G11334), m2_subset_1(_G11686, _G11334, _G11407), -m1_subset_1(_G11686, _G11407)]
+ (14)  [m1_subset_1(_G11407, k1_zfmisc_1(_G11334)), -v1_xboole_0(_G11407), -v1_xboole_0(_G11334), -m2_subset_1(_G11686, _G11334, _G11407), m1_subset_1(_G11686, _G11407)]
+ (15)  [_G7486=_G7535, - (k1_zfmisc_1(_G7486)=k1_zfmisc_1(_G7535))]
+ (16)  [_G7764=_G7813, - (u1_struct_0(_G7764)=u1_struct_0(_G7813))]
+ (17)  [- (k5_compos_0(_G8042, _G8213, _G8388)=k5_compos_0(_G8127, _G8300, _G8477)), _G8042=_G8127, _G8213=_G8300, _G8388=_G8477]
+ (18)  [_G9070=_G9119, - (u1_compos_1(_G9070)=u1_compos_1(_G9119))]
+ (19)  [- (k13_scmfsa_2(_G9348, _G9483)=k13_scmfsa_2(_G9415, _G9552)), _G9348=_G9415, _G9483=_G9552]
+ (20)  [- (k2_nat_1(_G9936, _G10071)=k2_nat_1(_G10003, _G10140)), _G9936=_G10003, _G10071=_G10140]
+ (21)  [- (_G3850=_G3850)]
+ (22)  [_G3949=_G3994, - (_G3994=_G3949)]
+ (23)  [- (_G4182=_G4295), _G4182=_G4238, _G4238=_G4295]
+ (24)  [-v3_ordinal1(_G4681), _G4632=_G4681, v3_ordinal1(_G4632)]
+ (25)  [-v1_xboole_0(_G4959), _G4910=_G4959, v1_xboole_0(_G4910)]
+ (26)  [-v7_ordinal1(_G5237), _G5188=_G5237, v7_ordinal1(_G5188)]
+ (27)  [-m2_subset_1(_G5551, _G5724, _G5901), m2_subset_1(_G5466, _G5637, _G5812), _G5466=_G5551, _G5637=_G5724, _G5812=_G5901]
+ (28)  [-v1_ami_2(_G6543), _G6494=_G6543, v1_ami_2(_G6494)]
+ (29)  [-m1_subset_1(_G6830, _G6967), m1_subset_1(_G6763, _G6898), _G6763=_G6830, _G6898=_G6967]
+
+Connection Proof:
+-----------------
+1  [v1_xboole_0(k4_ordinal1)]   (9)  
+1.1  [-v1_xboole_0(k4_ordinal1), m1_subset_1(k4_ordinal1, k1_zfmisc_1(k1_numbers)), -v1_xboole_0(k1_numbers), m2_subset_1(1^[], k1_numbers, k4_ordinal1), -m1_subset_1(1^[], k4_ordinal1)]   (13)  substitution:[[_G11407, _G11334, _G11686], [k4_ordinal1, k1_numbers, 1^[]]]
+1.1.1  [-m1_subset_1(k4_ordinal1, k1_zfmisc_1(k1_numbers)), m1_subset_1(k5_numbers, k1_zfmisc_1(k1_numbers)), k5_numbers=k4_ordinal1, k1_zfmisc_1(k1_numbers)=k1_zfmisc_1(k1_numbers)]   (29)  substitution:[[_G6830, _G6967, _G6763, _G6898], [k4_ordinal1, k1_zfmisc_1(k1_numbers), k5_numbers, k1_zfmisc_1(k1_numbers)]]
+1.1.1.1  [-m1_subset_1(k5_numbers, k1_zfmisc_1(k1_numbers))]   (8)  
+1.1.1.2  [- (k5_numbers=k4_ordinal1)]   (11)  
+1.1.1.3  [- (k1_zfmisc_1(k1_numbers)=k1_zfmisc_1(k1_numbers))]   (21)  substitution:[[_G3850], [k1_zfmisc_1(k1_numbers)]]
+1.1.2  [v1_xboole_0(k1_numbers), m1_subset_1(k5_numbers, k1_zfmisc_1(k1_numbers)), -v1_xboole_0(k5_numbers)]   (6)  substitution:[[_G10659, _G10742], [k1_numbers, k5_numbers]]
+1.1.2.1  [-m1_subset_1(k5_numbers, k1_zfmisc_1(k1_numbers))]   (8)  
+1.1.2.2  [v1_xboole_0(k5_numbers), -v1_xboole_0(k4_ordinal1), k5_numbers=k4_ordinal1]   (25)  substitution:[[_G4910, _G4959], [k5_numbers, k4_ordinal1]]
+1.1.2.2.1  [v1_xboole_0(k4_ordinal1)]   (9)  
+1.1.2.2.2  [- (k5_numbers=k4_ordinal1)]   (11)  
+1.1.3  [-m2_subset_1(1^[], k1_numbers, k4_ordinal1), m2_subset_1(1^[], k1_numbers, k5_numbers), 1^[]=1^[], k1_numbers=k1_numbers, k5_numbers=k4_ordinal1]   (27)  substitution:[[_G5551, _G5724, _G5901, _G5466, _G5637, _G5812], [1^[], k1_numbers, k4_ordinal1, 1^[], k1_numbers, k5_numbers]]
+1.1.3.1  [-m2_subset_1(1^[], k1_numbers, k5_numbers)]   (1)  
+1.1.3.2  [- (1^[]=1^[])]   (21)  substitution:[[_G3850], [1^[]]]
+1.1.3.3  [- (k1_numbers=k1_numbers)]   (21)  substitution:[[_G3850], [k1_numbers]]
+1.1.3.4  [- (k5_numbers=k4_ordinal1)]   (11)  
+1.1.4  [m1_subset_1(1^[], k4_ordinal1), -v7_ordinal1(1^[])]   (7)  substitution:[[_G10950], [1^[]]]
+1.1.4.1  [v7_ordinal1(1^[]), m2_subset_1(2^[], k1_numbers, k5_numbers), - (k5_compos_0(u1_compos_1(k1_scmfsa_2), k13_scmfsa_2(2^[], 3^[]), 1^[])=k13_scmfsa_2(k2_nat_1(2^[], 1^[]), 3^[])), v1_ami_2(3^[]), m1_subset_1(3^[], u1_struct_0(k1_scmfsa_2))]   (12)  substitution:[[_G12133, _G11953, _G12239], [1^[], 2^[], 3^[]]]
+1.1.4.1.1  [-m2_subset_1(2^[], k1_numbers, k5_numbers)]   (2)  
+1.1.4.1.2  [k5_compos_0(u1_compos_1(k1_scmfsa_2), k13_scmfsa_2(2^[], 3^[]), 1^[])=k13_scmfsa_2(k2_nat_1(2^[], 1^[]), 3^[])]   (5)  
+1.1.4.1.3  [-v1_ami_2(3^[])]   (3)  
+1.1.4.1.4  [-m1_subset_1(3^[], u1_struct_0(k1_scmfsa_2))]   (4)  
+------------------------------------------------------
+End of proof for t3_scmfsa_4

@@ -1,0 +1,63 @@
+
+t16_funct_9 is a Theorem
+Start of proof for t16_funct_9
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xreal_0(1^[])]
+ (2)  [-v1_xreal_0(2^[])]
+ (3)  [-v1_relat_1(3^[])]
+ (4)  [-v1_funct_1(3^[])]
+ (5)  [-v3_valued_0(3^[])]
+ (6)  [-v1_funct_9(3^[], 1^[])]
+ (7)  [-v1_funct_9(3^[], 2^[])]
+ (8)  [k6_xcmplx_0(1^[], 2^[])=k6_numbers]
+ (9)  [v1_funct_9(3^[], k6_xcmplx_0(1^[], 2^[]))]
+ (10)  [v1_xreal_0(_G8057), -v1_xcmplx_0(_G8057)]
+ (11)  [v1_xcmplx_0(_G8188), v1_xcmplx_0(_G8277), - (k6_xcmplx_0(_G8188, _G8277)=k2_xcmplx_0(_G8188, k4_xcmplx_0(_G8277)))]
+ (12)  [v1_xreal_0(_G8569), -v1_xcmplx_0(k4_xcmplx_0(_G8569))]
+ (13)  [v1_xreal_0(_G8569), -v1_xreal_0(k4_xcmplx_0(_G8569))]
+ (14)  [v1_xreal_0(_G8790), -v1_funct_9(_G8889, k4_xcmplx_0(_G8790)), v1_funct_9(_G8889, _G8790), v1_relat_1(_G8889), v1_funct_1(_G8889), v3_valued_0(_G8889)]
+ (15)  [v1_xreal_0(_G9288), v1_xreal_0(_G9413), v3_valued_0(_G9534), v1_funct_1(_G9534), v1_relat_1(_G9534), v1_funct_9(_G9534, _G9413), v1_funct_9(_G9534, _G9288), - (k2_xcmplx_0(_G9288, _G9413)=k6_numbers), -v1_funct_9(_G9534, k2_xcmplx_0(_G9288, _G9413))]
+ (16)  [_G6531=_G6580, - (k4_xcmplx_0(_G6531)=k4_xcmplx_0(_G6580))]
+ (17)  [- (k2_xcmplx_0(_G6809, _G6944)=k2_xcmplx_0(_G6876, _G7013)), _G6809=_G6876, _G6944=_G7013]
+ (18)  [- (k6_xcmplx_0(_G7397, _G7532)=k6_xcmplx_0(_G7464, _G7601)), _G7397=_G7464, _G7532=_G7601]
+ (19)  [- (_G3645=_G3645)]
+ (20)  [_G3744=_G3789, - (_G3789=_G3744)]
+ (21)  [- (_G3977=_G4090), _G3977=_G4033, _G4033=_G4090]
+ (22)  [-v1_xcmplx_0(_G4476), _G4427=_G4476, v1_xcmplx_0(_G4427)]
+ (23)  [-v1_xreal_0(_G4754), _G4705=_G4754, v1_xreal_0(_G4705)]
+ (24)  [-v1_relat_1(_G5032), _G4983=_G5032, v1_relat_1(_G4983)]
+ (25)  [-v1_funct_1(_G5310), _G5261=_G5310, v1_funct_1(_G5261)]
+ (26)  [-v3_valued_0(_G5588), _G5539=_G5588, v3_valued_0(_G5539)]
+ (27)  [-v1_funct_9(_G5875, _G6012), v1_funct_9(_G5808, _G5943), _G5808=_G5875, _G5943=_G6012]
+
+Connection Proof:
+-----------------
+1  [k6_xcmplx_0(1^[], 2^[])=k6_numbers]   (8)  
+1.1  [- (k6_xcmplx_0(1^[], 2^[])=k6_numbers), k6_xcmplx_0(1^[], 2^[])=k2_xcmplx_0(1^[], k4_xcmplx_0(2^[])), k2_xcmplx_0(1^[], k4_xcmplx_0(2^[]))=k6_numbers]   (21)  substitution:[[_G3977, _G4090, _G4033], [k6_xcmplx_0(1^[], 2^[]), k6_numbers, k2_xcmplx_0(1^[], k4_xcmplx_0(2^[]))]]
+1.1.1  [- (k6_xcmplx_0(1^[], 2^[])=k2_xcmplx_0(1^[], k4_xcmplx_0(2^[]))), v1_xcmplx_0(1^[]), v1_xcmplx_0(2^[])]   (11)  substitution:[[_G8188, _G8277], [1^[], 2^[]]]
+1.1.1.1  [-v1_xcmplx_0(1^[]), v1_xreal_0(1^[])]   (10)  substitution:[[_G8057], [1^[]]]
+1.1.1.1.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.1.2  [-v1_xcmplx_0(2^[]), v1_xreal_0(2^[])]   (10)  substitution:[[_G8057], [2^[]]]
+1.1.1.2.1  [-v1_xreal_0(2^[])]   (2)  
+1.1.2  [- (k2_xcmplx_0(1^[], k4_xcmplx_0(2^[]))=k6_numbers), v1_xreal_0(1^[]), v1_xreal_0(k4_xcmplx_0(2^[])), v3_valued_0(3^[]), v1_funct_1(3^[]), v1_relat_1(3^[]), v1_funct_9(3^[], k4_xcmplx_0(2^[])), v1_funct_9(3^[], 1^[]), -v1_funct_9(3^[], k2_xcmplx_0(1^[], k4_xcmplx_0(2^[])))]   (15)  substitution:[[_G9288, _G9413, _G9534], [1^[], k4_xcmplx_0(2^[]), 3^[]]]
+1.1.2.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.2.2  [-v1_xreal_0(k4_xcmplx_0(2^[])), v1_xreal_0(2^[])]   (13)  substitution:[[_G8569], [2^[]]]
+1.1.2.2.1  [-v1_xreal_0(2^[])]   (2)  
+1.1.2.3  [-v3_valued_0(3^[])]   (5)  
+1.1.2.4  [-v1_funct_1(3^[])]   (4)  
+1.1.2.5  [-v1_relat_1(3^[])]   (3)  
+1.1.2.6  [-v1_funct_9(3^[], k4_xcmplx_0(2^[])), v1_xreal_0(2^[]), v1_funct_9(3^[], 2^[]), v1_relat_1(3^[]), v1_funct_1(3^[]), v3_valued_0(3^[])]   (14)  substitution:[[_G8889, _G8790], [3^[], 2^[]]]
+1.1.2.6.1  [-v1_xreal_0(2^[])]   (2)  
+1.1.2.6.2  [-v1_funct_9(3^[], 2^[])]   (7)  
+1.1.2.6.3  [-v1_relat_1(3^[])]   (3)  
+1.1.2.6.4  [-v1_funct_1(3^[])]   (4)  
+1.1.2.6.5  [-v3_valued_0(3^[])]   (5)  
+1.1.2.7  [-v1_funct_9(3^[], 1^[])]   (6)  
+1.1.2.8  [v1_funct_9(3^[], k2_xcmplx_0(1^[], k4_xcmplx_0(2^[]))), -v1_funct_9(3^[], k6_xcmplx_0(1^[], 2^[])), 3^[]=3^[], k2_xcmplx_0(1^[], k4_xcmplx_0(2^[]))=k6_xcmplx_0(1^[], 2^[])]   (27)  substitution:[[_G5808, _G5943, _G5875, _G6012], [3^[], k2_xcmplx_0(1^[], k4_xcmplx_0(2^[])), 3^[], k6_xcmplx_0(1^[], 2^[])]]
+1.1.2.8.1  [v1_funct_9(3^[], k6_xcmplx_0(1^[], 2^[]))]   (9)  
+1.1.2.8.2  [- (3^[]=3^[])]   (19)  substitution:[[_G3645], [3^[]]]
+1.1.2.8.3  [- (k2_xcmplx_0(1^[], k4_xcmplx_0(2^[]))=k6_xcmplx_0(1^[], 2^[])), k6_xcmplx_0(1^[], 2^[])=k2_xcmplx_0(1^[], k4_xcmplx_0(2^[]))]   (20)  substitution:[[_G3789, _G3744], [k2_xcmplx_0(1^[], k4_xcmplx_0(2^[])), k6_xcmplx_0(1^[], 2^[])]]
+1.1.2.8.3.1  [- (k6_xcmplx_0(1^[], 2^[])=k2_xcmplx_0(1^[], k4_xcmplx_0(2^[])))]   (lemmata:1.1)  
+------------------------------------------------------
+End of proof for t16_funct_9

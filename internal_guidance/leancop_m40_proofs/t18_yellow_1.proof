@@ -1,0 +1,46 @@
+
+t18_yellow_1 is a Theorem
+Start of proof for t18_yellow_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k3_yellow_0(k3_yellow_1(2^[]))=k1_xboole_0]
+ (2)  [v1_xboole_0(k1_zfmisc_1(_G7196))]
+ (3)  [- (k9_setfam_1(_G7301)=k1_zfmisc_1(_G7301))]
+ (4)  [-m1_subset_1(k1_xboole_0, k1_zfmisc_1(_G7721))]
+ (5)  [- (k3_yellow_1(_G7827)=k2_yellow_1(k9_setfam_1(_G7827)))]
+ (6)  [-v1_xboole_0(_G7432), r2_hidden(k1_xboole_0, _G7432), - (k3_yellow_0(k2_yellow_1(_G7432))=k1_xboole_0)]
+ (7)  [v1_xboole_0(_G6968), r2_hidden(_G7046, _G6968)]
+ (8)  [-v1_xboole_0(_G6968), -r2_hidden(1^[_G6968], _G6968)]
+ (9)  [-v1_xboole_0(_G6429), m1_subset_1(_G6497, _G6429), -r2_hidden(_G6497, _G6429)]
+ (10)  [-v1_xboole_0(_G6429), -m1_subset_1(_G6497, _G6429), r2_hidden(_G6497, _G6429)]
+ (11)  [v1_xboole_0(_G6429), m1_subset_1(_G6497, _G6429), -v1_xboole_0(_G6497)]
+ (12)  [v1_xboole_0(_G6429), -m1_subset_1(_G6497, _G6429), v1_xboole_0(_G6497)]
+ (13)  [_G4943=_G4992, - (k1_zfmisc_1(_G4943)=k1_zfmisc_1(_G4992))]
+ (14)  [_G5221=_G5270, - (k2_yellow_1(_G5221)=k2_yellow_1(_G5270))]
+ (15)  [_G5499=_G5548, - (k9_setfam_1(_G5499)=k9_setfam_1(_G5548))]
+ (16)  [_G5777=_G5826, - (k3_yellow_0(_G5777)=k3_yellow_0(_G5826))]
+ (17)  [_G6046=_G6095, - (k3_yellow_1(_G6046)=k3_yellow_1(_G6095))]
+ (18)  [- (_G2635=_G2635)]
+ (19)  [_G2734=_G2779, - (_G2779=_G2734)]
+ (20)  [- (_G2967=_G3080), _G2967=_G3023, _G3023=_G3080]
+ (21)  [-v1_xboole_0(_G3466), _G3417=_G3466, v1_xboole_0(_G3417)]
+ (22)  [-r2_hidden(_G3762, _G3899), r2_hidden(_G3695, _G3830), _G3695=_G3762, _G3830=_G3899]
+ (23)  [-m1_subset_1(_G4350, _G4487), m1_subset_1(_G4283, _G4418), _G4283=_G4350, _G4418=_G4487]
+
+Connection Proof:
+-----------------
+1  [k3_yellow_0(k3_yellow_1(2^[]))=k1_xboole_0]   (1)  
+1.1  [- (k3_yellow_0(k3_yellow_1(2^[]))=k1_xboole_0), k3_yellow_0(k3_yellow_1(2^[]))=k3_yellow_0(k2_yellow_1(k9_setfam_1(2^[]))), k3_yellow_0(k2_yellow_1(k9_setfam_1(2^[])))=k1_xboole_0]   (20)  substitution:[[_G2967, _G3080, _G3023], [k3_yellow_0(k3_yellow_1(2^[])), k1_xboole_0, k3_yellow_0(k2_yellow_1(k9_setfam_1(2^[])))]]
+1.1.1  [- (k3_yellow_0(k3_yellow_1(2^[]))=k3_yellow_0(k2_yellow_1(k9_setfam_1(2^[])))), k3_yellow_1(2^[])=k2_yellow_1(k9_setfam_1(2^[]))]   (16)  substitution:[[_G5777, _G5826], [k3_yellow_1(2^[]), k2_yellow_1(k9_setfam_1(2^[]))]]
+1.1.1.1  [- (k3_yellow_1(2^[])=k2_yellow_1(k9_setfam_1(2^[])))]   (5)  substitution:[[_G7827], [2^[]]]
+1.1.2  [- (k3_yellow_0(k2_yellow_1(k9_setfam_1(2^[])))=k1_xboole_0), k3_yellow_0(k2_yellow_1(k9_setfam_1(2^[])))=k3_yellow_0(k2_yellow_1(k1_zfmisc_1(2^[]))), k3_yellow_0(k2_yellow_1(k1_zfmisc_1(2^[])))=k1_xboole_0]   (20)  substitution:[[_G2967, _G3080, _G3023], [k3_yellow_0(k2_yellow_1(k9_setfam_1(2^[]))), k1_xboole_0, k3_yellow_0(k2_yellow_1(k1_zfmisc_1(2^[])))]]
+1.1.2.1  [- (k3_yellow_0(k2_yellow_1(k9_setfam_1(2^[])))=k3_yellow_0(k2_yellow_1(k1_zfmisc_1(2^[])))), k2_yellow_1(k9_setfam_1(2^[]))=k2_yellow_1(k1_zfmisc_1(2^[]))]   (16)  substitution:[[_G5777, _G5826], [k2_yellow_1(k9_setfam_1(2^[])), k2_yellow_1(k1_zfmisc_1(2^[]))]]
+1.1.2.1.1  [- (k2_yellow_1(k9_setfam_1(2^[]))=k2_yellow_1(k1_zfmisc_1(2^[]))), k9_setfam_1(2^[])=k1_zfmisc_1(2^[])]   (14)  substitution:[[_G5221, _G5270], [k9_setfam_1(2^[]), k1_zfmisc_1(2^[])]]
+1.1.2.1.1.1  [- (k9_setfam_1(2^[])=k1_zfmisc_1(2^[]))]   (3)  substitution:[[_G7301], [2^[]]]
+1.1.2.2  [- (k3_yellow_0(k2_yellow_1(k1_zfmisc_1(2^[])))=k1_xboole_0), -v1_xboole_0(k1_zfmisc_1(2^[])), r2_hidden(k1_xboole_0, k1_zfmisc_1(2^[]))]   (6)  substitution:[[_G7432], [k1_zfmisc_1(2^[])]]
+1.1.2.2.1  [v1_xboole_0(k1_zfmisc_1(2^[]))]   (2)  substitution:[[_G7196], [2^[]]]
+1.1.2.2.2  [-r2_hidden(k1_xboole_0, k1_zfmisc_1(2^[])), -v1_xboole_0(k1_zfmisc_1(2^[])), m1_subset_1(k1_xboole_0, k1_zfmisc_1(2^[]))]   (9)  substitution:[[_G6497, _G6429], [k1_xboole_0, k1_zfmisc_1(2^[])]]
+1.1.2.2.2.1  [v1_xboole_0(k1_zfmisc_1(2^[]))]   (2)  substitution:[[_G7196], [2^[]]]
+1.1.2.2.2.2  [-m1_subset_1(k1_xboole_0, k1_zfmisc_1(2^[]))]   (4)  substitution:[[_G7721], [2^[]]]
+------------------------------------------------------
+End of proof for t18_yellow_1

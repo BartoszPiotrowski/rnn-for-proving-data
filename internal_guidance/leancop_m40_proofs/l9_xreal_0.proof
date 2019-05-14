@@ -1,0 +1,32 @@
+
+l9_xreal_0 is a Theorem
+Start of proof for l9_xreal_0
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-r2_hidden(k6_numbers, k2_zfmisc_1(k1_tarski(k6_numbers), k2_arytm_2))]
+ (2)  [-v1_xboole_0(k1_xboole_0)]
+ (3)  [v1_xboole_0(k4_tarski(_G4931, _G4974))]
+ (4)  [- (k6_numbers=k1_xboole_0)]
+ (5)  [r2_hidden(_G5119, k2_zfmisc_1(_G5189, _G5260)), - (k4_tarski(1^[_G5260, _G5189, _G5119], 2^[_G5260, _G5189, _G5119])=_G5119)]
+ (6)  [- (k4_tarski(_G3373, _G3508)=k4_tarski(_G3440, _G3577)), _G3373=_G3440, _G3508=_G3577]
+ (7)  [_G4558=_G4607, - (k1_tarski(_G4558)=k1_tarski(_G4607))]
+ (8)  [- (k2_zfmisc_1(_G3970, _G4105)=k2_zfmisc_1(_G4037, _G4174)), _G3970=_G4037, _G4105=_G4174]
+ (9)  [- (_G1683=_G1683)]
+ (10)  [_G1782=_G1827, - (_G1827=_G1782)]
+ (11)  [- (_G2015=_G2128), _G2015=_G2071, _G2071=_G2128]
+ (12)  [-v1_xboole_0(_G2514), _G2465=_G2514, v1_xboole_0(_G2465)]
+ (13)  [-r2_hidden(_G2801, _G2938), r2_hidden(_G2734, _G2869), _G2734=_G2801, _G2869=_G2938]
+
+Connection Proof:
+-----------------
+1  [v1_xboole_0(k4_tarski(1^[k2_arytm_2, k1_tarski(k6_numbers), k6_numbers], 2^[k2_arytm_2, k1_tarski(k6_numbers), k6_numbers]))]   (3)  substitution:[[_G4931, _G4974], [1^[k2_arytm_2, k1_tarski(k6_numbers), k6_numbers], 2^[k2_arytm_2, k1_tarski(k6_numbers), k6_numbers]]]
+1.1  [-v1_xboole_0(k4_tarski(1^[k2_arytm_2, k1_tarski(k6_numbers), k6_numbers], 2^[k2_arytm_2, k1_tarski(k6_numbers), k6_numbers])), k6_numbers=k4_tarski(1^[k2_arytm_2, k1_tarski(k6_numbers), k6_numbers], 2^[k2_arytm_2, k1_tarski(k6_numbers), k6_numbers]), v1_xboole_0(k6_numbers)]   (12)  substitution:[[_G2514, _G2465], [k4_tarski(1^[k2_arytm_2, k1_tarski(k6_numbers), k6_numbers], 2^[k2_arytm_2, k1_tarski(k6_numbers), k6_numbers]), k6_numbers]]
+1.1.1  [- (k6_numbers=k4_tarski(1^[k2_arytm_2, k1_tarski(k6_numbers), k6_numbers], 2^[k2_arytm_2, k1_tarski(k6_numbers), k6_numbers])), k4_tarski(1^[k2_arytm_2, k1_tarski(k6_numbers), k6_numbers], 2^[k2_arytm_2, k1_tarski(k6_numbers), k6_numbers])=k6_numbers]   (10)  substitution:[[_G1827, _G1782], [k6_numbers, k4_tarski(1^[k2_arytm_2, k1_tarski(k6_numbers), k6_numbers], 2^[k2_arytm_2, k1_tarski(k6_numbers), k6_numbers])]]
+1.1.1.1  [- (k4_tarski(1^[k2_arytm_2, k1_tarski(k6_numbers), k6_numbers], 2^[k2_arytm_2, k1_tarski(k6_numbers), k6_numbers])=k6_numbers), r2_hidden(k6_numbers, k2_zfmisc_1(k1_tarski(k6_numbers), k2_arytm_2))]   (5)  substitution:[[_G5260, _G5189, _G5119], [k2_arytm_2, k1_tarski(k6_numbers), k6_numbers]]
+1.1.1.1.1  [-r2_hidden(k6_numbers, k2_zfmisc_1(k1_tarski(k6_numbers), k2_arytm_2))]   (1)  
+1.1.2  [-v1_xboole_0(k6_numbers), k1_xboole_0=k6_numbers, v1_xboole_0(k1_xboole_0)]   (12)  substitution:[[_G2514, _G2465], [k6_numbers, k1_xboole_0]]
+1.1.2.1  [- (k1_xboole_0=k6_numbers), k6_numbers=k1_xboole_0]   (10)  substitution:[[_G1827, _G1782], [k1_xboole_0, k6_numbers]]
+1.1.2.1.1  [- (k6_numbers=k1_xboole_0)]   (4)  
+1.1.2.2  [-v1_xboole_0(k1_xboole_0)]   (2)  
+------------------------------------------------------
+End of proof for l9_xreal_0

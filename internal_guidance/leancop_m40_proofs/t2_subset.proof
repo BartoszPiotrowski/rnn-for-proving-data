@@ -1,0 +1,21 @@
+
+t2_subset is a Theorem
+Start of proof for t2_subset
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], 2^[])]
+ (2)  [v1_xboole_0(2^[])]
+ (3)  [r2_hidden(1^[], 2^[])]
+ (4)  [-v1_xboole_0(_G715), m1_subset_1(_G783, _G715), -r2_hidden(_G783, _G715)]
+ (5)  [-v1_xboole_0(_G715), -m1_subset_1(_G783, _G715), r2_hidden(_G783, _G715)]
+ (6)  [v1_xboole_0(_G715), m1_subset_1(_G783, _G715), -v1_xboole_0(_G783)]
+ (7)  [v1_xboole_0(_G715), -m1_subset_1(_G783, _G715), v1_xboole_0(_G783)]
+
+Connection Proof:
+-----------------
+1  [v1_xboole_0(2^[])]   (2)  
+1.1  [-v1_xboole_0(2^[]), m1_subset_1(1^[], 2^[]), -r2_hidden(1^[], 2^[])]   (4)  substitution:[[_G715, _G783], [2^[], 1^[]]]
+1.1.1  [-m1_subset_1(1^[], 2^[])]   (1)  
+1.1.2  [r2_hidden(1^[], 2^[])]   (3)  
+------------------------------------------------------
+End of proof for t2_subset

@@ -1,0 +1,56 @@
+
+t3_mesfunc1 is a Theorem
+Start of proof for t3_mesfunc1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [r2_tarski(k5_numbers, k4_numbers)]
+ (2)  [- (k2_xboole_0(_G8358, _G8403)=k2_xboole_0(_G8403, _G8358))]
+ (3)  [-m1_subset_1(k1_mesfunc1, k1_zfmisc_1(k1_numbers))]
+ (4)  [-m1_subset_1(k5_numbers, k1_zfmisc_1(k1_numbers))]
+ (5)  [v1_finset_1(k4_ordinal1)]
+ (6)  [- (k4_subset_1(_G8788, _G8855, _G8923)=k2_xboole_0(_G8855, _G8923)), m1_subset_1(_G8855, k1_zfmisc_1(_G8788)), m1_subset_1(_G8923, k1_zfmisc_1(_G8788))]
+ (7)  [- (k5_numbers=k4_ordinal1)]
+ (8)  [r2_wellord2(_G9435, _G9480), -r2_tarski(_G9435, _G9480)]
+ (9)  [-r2_wellord2(_G9435, _G9480), r2_tarski(_G9435, _G9480)]
+ (10)  [r2_wellord2(_G9677, _G9722), -r2_wellord2(_G9722, _G9677)]
+ (11)  [-r2_tarski(k5_numbers, k1_mesfunc1)]
+ (12)  [- (k4_numbers=k4_subset_1(k1_numbers, k1_mesfunc1, k5_numbers))]
+ (13)  [-v1_finset_1(_G10106), r2_wellord2(_G10106, _G10184), -r2_wellord2(k2_xboole_0(_G10106, _G10184), _G10106)]
+ (14)  [-v1_finset_1(_G10106), r2_wellord2(_G10106, _G10184), - (k1_card_1(k2_xboole_0(_G10106, _G10184))=k1_card_1(_G10106))]
+ (15)  [-v1_finset_1(_G10106), r2_wellord2(_G10184, _G10106), -r2_wellord2(k2_xboole_0(_G10106, _G10184), _G10106)]
+ (16)  [-v1_finset_1(_G10106), r2_wellord2(_G10184, _G10106), - (k1_card_1(k2_xboole_0(_G10106, _G10184))=k1_card_1(_G10106))]
+ (17)  [_G6102=_G6151, - (k1_zfmisc_1(_G6102)=k1_zfmisc_1(_G6151))]
+ (18)  [- (k4_subset_1(_G6380, _G6551, _G6726)=k4_subset_1(_G6465, _G6638, _G6815)), _G6380=_G6465, _G6551=_G6638, _G6726=_G6815]
+ (19)  [_G7996=_G8045, - (k1_card_1(_G7996)=k1_card_1(_G8045))]
+ (20)  [- (k2_xboole_0(_G7408, _G7543)=k2_xboole_0(_G7475, _G7612)), _G7408=_G7475, _G7543=_G7612]
+ (21)  [- (_G3176=_G3176)]
+ (22)  [_G3275=_G3320, - (_G3320=_G3275)]
+ (23)  [- (_G3508=_G3621), _G3508=_G3564, _G3564=_G3621]
+ (24)  [-m1_subset_1(_G4025, _G4162), m1_subset_1(_G3958, _G4093), _G3958=_G4025, _G4093=_G4162]
+ (25)  [-v1_finset_1(_G4604), _G4555=_G4604, v1_finset_1(_G4555)]
+ (26)  [-r2_wellord2(_G4900, _G5037), r2_wellord2(_G4833, _G4968), _G4833=_G4900, _G4968=_G5037]
+ (27)  [-r2_tarski(_G5488, _G5625), r2_tarski(_G5421, _G5556), _G5421=_G5488, _G5556=_G5625]
+
+Connection Proof:
+-----------------
+1  [r2_tarski(k5_numbers, k4_numbers)]   (1)  
+1.1  [-r2_tarski(k5_numbers, k4_numbers), r2_tarski(k5_numbers, k2_xboole_0(k5_numbers, k1_mesfunc1)), k5_numbers=k5_numbers, k2_xboole_0(k5_numbers, k1_mesfunc1)=k4_numbers]   (27)  substitution:[[_G5488, _G5625, _G5421, _G5556], [k5_numbers, k4_numbers, k5_numbers, k2_xboole_0(k5_numbers, k1_mesfunc1)]]
+1.1.1  [-r2_tarski(k5_numbers, k2_xboole_0(k5_numbers, k1_mesfunc1)), r2_wellord2(k5_numbers, k2_xboole_0(k5_numbers, k1_mesfunc1))]   (8)  substitution:[[_G9435, _G9480], [k5_numbers, k2_xboole_0(k5_numbers, k1_mesfunc1)]]
+1.1.1.1  [-r2_wellord2(k5_numbers, k2_xboole_0(k5_numbers, k1_mesfunc1)), r2_wellord2(k2_xboole_0(k5_numbers, k1_mesfunc1), k5_numbers)]   (10)  substitution:[[_G9722, _G9677], [k5_numbers, k2_xboole_0(k5_numbers, k1_mesfunc1)]]
+1.1.1.1.1  [-r2_wellord2(k2_xboole_0(k5_numbers, k1_mesfunc1), k5_numbers), -v1_finset_1(k5_numbers), r2_wellord2(k5_numbers, k1_mesfunc1)]   (13)  substitution:[[_G10106, _G10184], [k5_numbers, k1_mesfunc1]]
+1.1.1.1.1.1  [v1_finset_1(k5_numbers), -v1_finset_1(k4_ordinal1), k5_numbers=k4_ordinal1]   (25)  substitution:[[_G4555, _G4604], [k5_numbers, k4_ordinal1]]
+1.1.1.1.1.1.1  [v1_finset_1(k4_ordinal1)]   (5)  
+1.1.1.1.1.1.2  [- (k5_numbers=k4_ordinal1)]   (7)  
+1.1.1.1.1.2  [-r2_wellord2(k5_numbers, k1_mesfunc1), r2_tarski(k5_numbers, k1_mesfunc1)]   (9)  substitution:[[_G9435, _G9480], [k5_numbers, k1_mesfunc1]]
+1.1.1.1.1.2.1  [-r2_tarski(k5_numbers, k1_mesfunc1)]   (11)  
+1.1.2  [- (k5_numbers=k5_numbers)]   (21)  substitution:[[_G3176], [k5_numbers]]
+1.1.3  [- (k2_xboole_0(k5_numbers, k1_mesfunc1)=k4_numbers), k4_numbers=k2_xboole_0(k5_numbers, k1_mesfunc1)]   (22)  substitution:[[_G3320, _G3275], [k2_xboole_0(k5_numbers, k1_mesfunc1), k4_numbers]]
+1.1.3.1  [- (k4_numbers=k2_xboole_0(k5_numbers, k1_mesfunc1)), k4_numbers=k4_subset_1(k1_numbers, k1_mesfunc1, k5_numbers), k4_subset_1(k1_numbers, k1_mesfunc1, k5_numbers)=k2_xboole_0(k5_numbers, k1_mesfunc1)]   (23)  substitution:[[_G3508, _G3621, _G3564], [k4_numbers, k2_xboole_0(k5_numbers, k1_mesfunc1), k4_subset_1(k1_numbers, k1_mesfunc1, k5_numbers)]]
+1.1.3.1.1  [- (k4_numbers=k4_subset_1(k1_numbers, k1_mesfunc1, k5_numbers))]   (12)  
+1.1.3.1.2  [- (k4_subset_1(k1_numbers, k1_mesfunc1, k5_numbers)=k2_xboole_0(k5_numbers, k1_mesfunc1)), k4_subset_1(k1_numbers, k1_mesfunc1, k5_numbers)=k2_xboole_0(k1_mesfunc1, k5_numbers), k2_xboole_0(k1_mesfunc1, k5_numbers)=k2_xboole_0(k5_numbers, k1_mesfunc1)]   (23)  substitution:[[_G3508, _G3621, _G3564], [k4_subset_1(k1_numbers, k1_mesfunc1, k5_numbers), k2_xboole_0(k5_numbers, k1_mesfunc1), k2_xboole_0(k1_mesfunc1, k5_numbers)]]
+1.1.3.1.2.1  [- (k4_subset_1(k1_numbers, k1_mesfunc1, k5_numbers)=k2_xboole_0(k1_mesfunc1, k5_numbers)), m1_subset_1(k1_mesfunc1, k1_zfmisc_1(k1_numbers)), m1_subset_1(k5_numbers, k1_zfmisc_1(k1_numbers))]   (6)  substitution:[[_G8788, _G8855, _G8923], [k1_numbers, k1_mesfunc1, k5_numbers]]
+1.1.3.1.2.1.1  [-m1_subset_1(k1_mesfunc1, k1_zfmisc_1(k1_numbers))]   (3)  
+1.1.3.1.2.1.2  [-m1_subset_1(k5_numbers, k1_zfmisc_1(k1_numbers))]   (4)  
+1.1.3.1.2.2  [- (k2_xboole_0(k1_mesfunc1, k5_numbers)=k2_xboole_0(k5_numbers, k1_mesfunc1))]   (2)  substitution:[[_G8358, _G8403], [k1_mesfunc1, k5_numbers]]
+------------------------------------------------------
+End of proof for t3_mesfunc1

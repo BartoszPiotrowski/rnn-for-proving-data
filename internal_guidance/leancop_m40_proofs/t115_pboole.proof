@@ -1,0 +1,43 @@
+
+t115_pboole is a Theorem
+Start of proof for t115_pboole
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(2^[])]
+ (2)  [-v4_relat_1(2^[], 1^[])]
+ (3)  [-v1_funct_1(2^[])]
+ (4)  [-v1_partfun1(2^[], 1^[])]
+ (5)  [-v1_relat_1(3^[])]
+ (6)  [-v4_relat_1(3^[], 1^[])]
+ (7)  [-v1_funct_1(3^[])]
+ (8)  [-v1_partfun1(3^[], 1^[])]
+ (9)  [-r5_pboole(1^[], 2^[], 3^[])]
+ (10)  [r6_pboole(1^[], k4_pboole(1^[], 2^[], 3^[]), 2^[])]
+ (11)  [v1_partfun1(_G1377, _G1275), v1_funct_1(_G1377), v4_relat_1(_G1377, _G1275), v1_relat_1(_G1377), -r6_pboole(_G1275, k3_pboole(_G1275, _G1377, _G1721), k1_pboole(_G1275)), r5_pboole(_G1275, _G1377, _G1721), v1_relat_1(_G1721), v4_relat_1(_G1721, _G1275), v1_funct_1(_G1721), v1_partfun1(_G1721, _G1275)]
+ (12)  [v1_partfun1(_G2524, _G2418), v1_funct_1(_G2524), v4_relat_1(_G2524, _G2418), v1_relat_1(_G2524), v1_partfun1(_G2872, _G2418), v1_funct_1(_G2872), v4_relat_1(_G2872, _G2418), v1_relat_1(_G2872), r6_pboole(_G2418, k3_pboole(_G2418, _G2524, _G2872), k1_pboole(_G2418)), -r6_pboole(_G2418, k4_pboole(_G2418, _G2524, _G2872), _G2524)]
+ (13)  [v1_partfun1(_G2524, _G2418), v1_funct_1(_G2524), v4_relat_1(_G2524, _G2418), v1_relat_1(_G2524), v1_partfun1(_G2872, _G2418), v1_funct_1(_G2872), v4_relat_1(_G2872, _G2418), v1_relat_1(_G2872), -r6_pboole(_G2418, k3_pboole(_G2418, _G2524, _G2872), k1_pboole(_G2418)), r6_pboole(_G2418, k4_pboole(_G2418, _G2524, _G2872), _G2524)]
+
+Connection Proof:
+-----------------
+1  [r6_pboole(1^[], k4_pboole(1^[], 2^[], 3^[]), 2^[])]   (10)  
+1.1  [-r6_pboole(1^[], k4_pboole(1^[], 2^[], 3^[]), 2^[]), v1_partfun1(2^[], 1^[]), v1_funct_1(2^[]), v4_relat_1(2^[], 1^[]), v1_relat_1(2^[]), v1_partfun1(3^[], 1^[]), v1_funct_1(3^[]), v4_relat_1(3^[], 1^[]), v1_relat_1(3^[]), r6_pboole(1^[], k3_pboole(1^[], 2^[], 3^[]), k1_pboole(1^[]))]   (12)  substitution:[[_G2418, _G2524, _G2872], [1^[], 2^[], 3^[]]]
+1.1.1  [-v1_partfun1(2^[], 1^[])]   (4)  
+1.1.2  [-v1_funct_1(2^[])]   (3)  
+1.1.3  [-v4_relat_1(2^[], 1^[])]   (2)  
+1.1.4  [-v1_relat_1(2^[])]   (1)  
+1.1.5  [-v1_partfun1(3^[], 1^[])]   (8)  
+1.1.6  [-v1_funct_1(3^[])]   (7)  
+1.1.7  [-v4_relat_1(3^[], 1^[])]   (6)  
+1.1.8  [-v1_relat_1(3^[])]   (5)  
+1.1.9  [-r6_pboole(1^[], k3_pboole(1^[], 2^[], 3^[]), k1_pboole(1^[])), v1_partfun1(2^[], 1^[]), v1_funct_1(2^[]), v4_relat_1(2^[], 1^[]), v1_relat_1(2^[]), r5_pboole(1^[], 2^[], 3^[]), v1_relat_1(3^[]), v4_relat_1(3^[], 1^[]), v1_funct_1(3^[]), v1_partfun1(3^[], 1^[])]   (11)  substitution:[[_G1275, _G1377, _G1721], [1^[], 2^[], 3^[]]]
+1.1.9.1  [-v1_partfun1(2^[], 1^[])]   (4)  
+1.1.9.2  [-v1_funct_1(2^[])]   (3)  
+1.1.9.3  [-v4_relat_1(2^[], 1^[])]   (2)  
+1.1.9.4  [-v1_relat_1(2^[])]   (1)  
+1.1.9.5  [-r5_pboole(1^[], 2^[], 3^[])]   (9)  
+1.1.9.6  [-v1_relat_1(3^[])]   (5)  
+1.1.9.7  [-v4_relat_1(3^[], 1^[])]   (6)  
+1.1.9.8  [-v1_funct_1(3^[])]   (7)  
+1.1.9.9  [-v1_partfun1(3^[], 1^[])]   (8)  
+------------------------------------------------------
+End of proof for t115_pboole

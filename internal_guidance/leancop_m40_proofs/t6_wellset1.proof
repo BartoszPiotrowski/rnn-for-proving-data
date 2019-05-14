@@ -1,0 +1,33 @@
+
+t6_wellset1 is a Theorem
+Start of proof for t6_wellset1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v1_relat_1(_G6686), v2_wellord1(_G6686), k1_relat_1(_G6686)=2^[]]
+ (2)  [v1_relat_1(_G4780), -v1_relat_1(k2_wellord1(_G4780, _G4826))]
+ (3)  [-v1_relat_1(1^[_G5480])]
+ (4)  [-r2_wellord1(1^[_G5480], _G5480)]
+ (5)  [v1_relat_1(_G5076), r2_wellord1(_G5076, _G5013), - (k1_relat_1(k2_wellord1(_G5076, _G5013))=_G5013)]
+ (6)  [v1_relat_1(_G5076), r2_wellord1(_G5076, _G5013), -v2_wellord1(k2_wellord1(_G5076, _G5013))]
+ (7)  [_G4460=_G4509, - (k1_relat_1(_G4460)=k1_relat_1(_G4509))]
+ (8)  [- (k2_wellord1(_G3872, _G4007)=k2_wellord1(_G3939, _G4076)), _G3872=_G3939, _G4007=_G4076]
+ (9)  [- (_G1883=_G1883)]
+ (10)  [_G1982=_G2027, - (_G2027=_G1982)]
+ (11)  [- (_G2215=_G2328), _G2215=_G2271, _G2271=_G2328]
+ (12)  [-r2_wellord1(_G2732, _G2869), r2_wellord1(_G2665, _G2800), _G2665=_G2732, _G2800=_G2869]
+ (13)  [-v1_relat_1(_G3311), _G3262=_G3311, v1_relat_1(_G3262)]
+ (14)  [-v2_wellord1(_G3580), _G3531=_G3580, v2_wellord1(_G3531)]
+
+Connection Proof:
+-----------------
+1  [v1_relat_1(k2_wellord1(1^[2^[]], 2^[])), v2_wellord1(k2_wellord1(1^[2^[]], 2^[])), k1_relat_1(k2_wellord1(1^[2^[]], 2^[]))=2^[]]   (1)  substitution:[[_G6686], [k2_wellord1(1^[2^[]], 2^[])]]
+1.1  [-v1_relat_1(k2_wellord1(1^[2^[]], 2^[])), v1_relat_1(1^[2^[]])]   (2)  substitution:[[_G4780, _G4826], [1^[2^[]], 2^[]]]
+1.1.1  [-v1_relat_1(1^[2^[]])]   (3)  substitution:[[_G5480], [2^[]]]
+1.2  [-v2_wellord1(k2_wellord1(1^[2^[]], 2^[])), v1_relat_1(1^[2^[]]), r2_wellord1(1^[2^[]], 2^[])]   (6)  substitution:[[_G5076, _G5013], [1^[2^[]], 2^[]]]
+1.2.1  [-v1_relat_1(1^[2^[]])]   (3)  substitution:[[_G5480], [2^[]]]
+1.2.2  [-r2_wellord1(1^[2^[]], 2^[])]   (4)  substitution:[[_G5480], [2^[]]]
+1.3  [- (k1_relat_1(k2_wellord1(1^[2^[]], 2^[]))=2^[]), v1_relat_1(1^[2^[]]), r2_wellord1(1^[2^[]], 2^[])]   (5)  substitution:[[_G5076, _G5013], [1^[2^[]], 2^[]]]
+1.3.1  [-v1_relat_1(1^[2^[]])]   (3)  substitution:[[_G5480], [2^[]]]
+1.3.2  [-r2_wellord1(1^[2^[]], 2^[])]   (4)  substitution:[[_G5480], [2^[]]]
+------------------------------------------------------
+End of proof for t6_wellset1

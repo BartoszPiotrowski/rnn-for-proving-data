@@ -1,0 +1,25 @@
+
+t31_normform is a Theorem
+Start of proof for t31_normform
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [r2_hidden(k1_xboole_0, k8_normform(1^[]))]
+ (2)  [- (k8_normform(_G3039)=a_1_1_normform(_G3039))]
+ (3)  [-r2_hidden(k1_xboole_0, a_1_1_normform(_G3161))]
+ (4)  [_G2450=_G2499, - (a_1_1_normform(_G2450)=a_1_1_normform(_G2499))]
+ (5)  [_G2719=_G2768, - (k8_normform(_G2719)=k8_normform(_G2768))]
+ (6)  [-r2_hidden(_G1899, _G2036), r2_hidden(_G1832, _G1967), _G1832=_G1899, _G1967=_G2036]
+ (7)  [- (_G1059=_G1059)]
+ (8)  [_G1158=_G1203, - (_G1203=_G1158)]
+ (9)  [- (_G1391=_G1504), _G1391=_G1447, _G1447=_G1504]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(k1_xboole_0, k8_normform(1^[]))]   (1)  
+1.1  [-r2_hidden(k1_xboole_0, k8_normform(1^[])), r2_hidden(k1_xboole_0, a_1_1_normform(1^[])), k1_xboole_0=k1_xboole_0, a_1_1_normform(1^[])=k8_normform(1^[])]   (6)  substitution:[[_G1899, _G2036, _G1832, _G1967], [k1_xboole_0, k8_normform(1^[]), k1_xboole_0, a_1_1_normform(1^[])]]
+1.1.1  [-r2_hidden(k1_xboole_0, a_1_1_normform(1^[]))]   (3)  substitution:[[_G3161], [1^[]]]
+1.1.2  [- (k1_xboole_0=k1_xboole_0)]   (7)  substitution:[[_G1059], [k1_xboole_0]]
+1.1.3  [- (a_1_1_normform(1^[])=k8_normform(1^[])), k8_normform(1^[])=a_1_1_normform(1^[])]   (8)  substitution:[[_G1203, _G1158], [a_1_1_normform(1^[]), k8_normform(1^[])]]
+1.1.3.1  [- (k8_normform(1^[])=a_1_1_normform(1^[]))]   (2)  substitution:[[_G3039], [1^[]]]
+------------------------------------------------------
+End of proof for t31_normform

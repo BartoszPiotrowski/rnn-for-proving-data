@@ -1,0 +1,52 @@
+
+t4_rearran1 is a Theorem
+Start of proof for t4_rearran1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v1_xboole_0(1^[])]
+ (2)  [-v1_finset_1(1^[])]
+ (3)  [-v3_rearran1(2^[], k1_zfmisc_1(1^[]))]
+ (4)  [-m2_finseq_1(2^[], k1_zfmisc_1(1^[]))]
+ (5)  [- (k3_finseq_1(2^[])=k6_numbers)]
+ (6)  [-v1_xboole_0(k1_xboole_0)]
+ (7)  [-v1_xboole_0(_G6772), v1_xboole_0(k1_card_1(_G6772))]
+ (8)  [-v1_xboole_0(_G6772), -v1_card_1(k1_card_1(_G6772))]
+ (9)  [v1_finset_1(_G7025), - (k5_card_1(_G7025)=k1_card_1(_G7025))]
+ (10)  [- (k6_numbers=k1_xboole_0)]
+ (11)  [v1_finset_1(_G7262), -v1_xboole_0(_G7262), m2_finseq_1(_G7432, k1_zfmisc_1(_G7262)), v3_rearran1(_G7432, k1_zfmisc_1(_G7262)), - (k3_finseq_1(_G7432)=k5_card_1(_G7262))]
+ (12)  [v1_finset_1(_G7262), -v1_xboole_0(_G7262), m2_finseq_1(_G7432, k1_zfmisc_1(_G7262)), -v3_rearran1(_G7432, k1_zfmisc_1(_G7262)), k3_finseq_1(_G7432)=k5_card_1(_G7262)]
+ (13)  [_G5553=_G5602, - (k1_card_1(_G5553)=k1_card_1(_G5602))]
+ (14)  [_G5831=_G5880, - (k5_card_1(_G5831)=k5_card_1(_G5880))]
+ (15)  [_G6109=_G6158, - (k1_zfmisc_1(_G6109)=k1_zfmisc_1(_G6158))]
+ (16)  [_G6378=_G6427, - (k3_finseq_1(_G6378)=k3_finseq_1(_G6427))]
+ (17)  [- (_G2647=_G2647)]
+ (18)  [_G2746=_G2791, - (_G2791=_G2746)]
+ (19)  [- (_G2979=_G3092), _G2979=_G3035, _G3035=_G3092]
+ (20)  [-v1_card_1(_G3478), _G3429=_G3478, v1_card_1(_G3429)]
+ (21)  [-v1_xboole_0(_G3756), _G3707=_G3756, v1_xboole_0(_G3707)]
+ (22)  [-v1_finset_1(_G4034), _G3985=_G4034, v1_finset_1(_G3985)]
+ (23)  [-v3_rearran1(_G4330, _G4467), v3_rearran1(_G4263, _G4398), _G4263=_G4330, _G4398=_G4467]
+ (24)  [-m2_finseq_1(_G4918, _G5055), m2_finseq_1(_G4851, _G4986), _G4851=_G4918, _G4986=_G5055]
+
+Connection Proof:
+-----------------
+1  [v1_xboole_0(1^[])]   (1)  
+1.1  [-v1_xboole_0(1^[]), v1_xboole_0(k1_card_1(1^[]))]   (7)  substitution:[[_G6772], [1^[]]]
+1.1.1  [-v1_xboole_0(k1_card_1(1^[])), k5_card_1(1^[])=k1_card_1(1^[]), v1_xboole_0(k5_card_1(1^[]))]   (21)  substitution:[[_G3756, _G3707], [k1_card_1(1^[]), k5_card_1(1^[])]]
+1.1.1.1  [- (k5_card_1(1^[])=k1_card_1(1^[])), v1_finset_1(1^[])]   (9)  substitution:[[_G7025], [1^[]]]
+1.1.1.1.1  [-v1_finset_1(1^[])]   (2)  
+1.1.1.2  [-v1_xboole_0(k5_card_1(1^[])), k6_numbers=k5_card_1(1^[]), v1_xboole_0(k6_numbers)]   (21)  substitution:[[_G3756, _G3707], [k5_card_1(1^[]), k6_numbers]]
+1.1.1.2.1  [- (k6_numbers=k5_card_1(1^[])), k6_numbers=k3_finseq_1(2^[]), k3_finseq_1(2^[])=k5_card_1(1^[])]   (19)  substitution:[[_G2979, _G3092, _G3035], [k6_numbers, k5_card_1(1^[]), k3_finseq_1(2^[])]]
+1.1.1.2.1.1  [- (k6_numbers=k3_finseq_1(2^[])), k3_finseq_1(2^[])=k6_numbers]   (18)  substitution:[[_G2791, _G2746], [k6_numbers, k3_finseq_1(2^[])]]
+1.1.1.2.1.1.1  [- (k3_finseq_1(2^[])=k6_numbers)]   (5)  
+1.1.1.2.1.2  [- (k3_finseq_1(2^[])=k5_card_1(1^[])), v1_finset_1(1^[]), -v1_xboole_0(1^[]), m2_finseq_1(2^[], k1_zfmisc_1(1^[])), v3_rearran1(2^[], k1_zfmisc_1(1^[]))]   (11)  substitution:[[_G7432, _G7262], [2^[], 1^[]]]
+1.1.1.2.1.2.1  [-v1_finset_1(1^[])]   (2)  
+1.1.1.2.1.2.2  [v1_xboole_0(1^[])]   (1)  
+1.1.1.2.1.2.3  [-m2_finseq_1(2^[], k1_zfmisc_1(1^[]))]   (4)  
+1.1.1.2.1.2.4  [-v3_rearran1(2^[], k1_zfmisc_1(1^[]))]   (3)  
+1.1.1.2.2  [-v1_xboole_0(k6_numbers), k1_xboole_0=k6_numbers, v1_xboole_0(k1_xboole_0)]   (21)  substitution:[[_G3756, _G3707], [k6_numbers, k1_xboole_0]]
+1.1.1.2.2.1  [- (k1_xboole_0=k6_numbers), k6_numbers=k1_xboole_0]   (18)  substitution:[[_G2791, _G2746], [k1_xboole_0, k6_numbers]]
+1.1.1.2.2.1.1  [- (k6_numbers=k1_xboole_0)]   (10)  
+1.1.1.2.2.2  [-v1_xboole_0(k1_xboole_0)]   (6)  
+------------------------------------------------------
+End of proof for t4_rearran1

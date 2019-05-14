@@ -1,0 +1,32 @@
+
+t45_xxreal_1 is a Theorem
+Start of proof for t45_xxreal_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xxreal_0(1^[])]
+ (2)  [-v1_xxreal_0(2^[])]
+ (3)  [-v1_xxreal_0(3^[])]
+ (4)  [-v1_xxreal_0(4^[])]
+ (5)  [-r1_xxreal_0(1^[], 2^[])]
+ (6)  [-r1_xxreal_0(3^[], 4^[])]
+ (7)  [r1_tarski(k4_xxreal_1(2^[], 3^[]), k2_xxreal_1(1^[], 4^[]))]
+ (8)  [-r1_tarski(_G1142, _G1255), r1_tarski(_G1142, _G1198), r1_tarski(_G1198, _G1255)]
+ (9)  [v1_xxreal_0(_G1550), v1_xxreal_0(_G1637), -r1_tarski(k4_xxreal_1(_G1550, _G1637), k2_xxreal_1(_G1550, _G1637))]
+ (10)  [v1_xxreal_0(_G1904), v1_xxreal_0(_G2023), v1_xxreal_0(_G2138), v1_xxreal_0(_G2249), -r1_tarski(k2_xxreal_1(_G2023, _G2138), k2_xxreal_1(_G1904, _G2249)), r1_xxreal_0(_G1904, _G2023), r1_xxreal_0(_G2138, _G2249)]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k4_xxreal_1(2^[], 3^[]), k2_xxreal_1(1^[], 4^[]))]   (7)  
+1.1  [-r1_tarski(k4_xxreal_1(2^[], 3^[]), k2_xxreal_1(1^[], 4^[])), r1_tarski(k4_xxreal_1(2^[], 3^[]), k2_xxreal_1(2^[], 3^[])), r1_tarski(k2_xxreal_1(2^[], 3^[]), k2_xxreal_1(1^[], 4^[]))]   (8)  substitution:[[_G1142, _G1255, _G1198], [k4_xxreal_1(2^[], 3^[]), k2_xxreal_1(1^[], 4^[]), k2_xxreal_1(2^[], 3^[])]]
+1.1.1  [-r1_tarski(k4_xxreal_1(2^[], 3^[]), k2_xxreal_1(2^[], 3^[])), v1_xxreal_0(2^[]), v1_xxreal_0(3^[])]   (9)  substitution:[[_G1550, _G1637], [2^[], 3^[]]]
+1.1.1.1  [-v1_xxreal_0(2^[])]   (2)  
+1.1.1.2  [-v1_xxreal_0(3^[])]   (3)  
+1.1.2  [-r1_tarski(k2_xxreal_1(2^[], 3^[]), k2_xxreal_1(1^[], 4^[])), v1_xxreal_0(1^[]), v1_xxreal_0(2^[]), v1_xxreal_0(3^[]), v1_xxreal_0(4^[]), r1_xxreal_0(1^[], 2^[]), r1_xxreal_0(3^[], 4^[])]   (10)  substitution:[[_G2023, _G2138, _G1904, _G2249], [2^[], 3^[], 1^[], 4^[]]]
+1.1.2.1  [-v1_xxreal_0(1^[])]   (1)  
+1.1.2.2  [-v1_xxreal_0(2^[])]   (2)  
+1.1.2.3  [-v1_xxreal_0(3^[])]   (3)  
+1.1.2.4  [-v1_xxreal_0(4^[])]   (4)  
+1.1.2.5  [-r1_xxreal_0(1^[], 2^[])]   (5)  
+1.1.2.6  [-r1_xxreal_0(3^[], 4^[])]   (6)  
+------------------------------------------------------
+End of proof for t45_xxreal_1

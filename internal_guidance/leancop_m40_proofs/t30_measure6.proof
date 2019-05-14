@@ -1,0 +1,67 @@
+
+t30_measure6 is a Theorem
+Start of proof for t30_measure6
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v6_xxreal_2(1^[])]
+ (2)  [-m1_subset_1(1^[], k1_zfmisc_1(k1_numbers))]
+ (3)  [-v1_xreal_0(2^[])]
+ (4)  [v6_xxreal_2(k2_measure6(1^[], 2^[])), m1_subset_1(k2_measure6(1^[], 2^[]), k1_zfmisc_1(k1_numbers))]
+ (5)  [m1_subset_1(_G1935, k1_zfmisc_1(k1_numbers)), v1_measure5(_G1935), -v6_xxreal_2(_G1935)]
+ (6)  [m1_subset_1(_G2164, k1_zfmisc_1(k1_numbers)), v2_measure5(_G2164), -v6_xxreal_2(_G2164)]
+ (7)  [m1_subset_1(_G2393, k1_zfmisc_1(k1_numbers)), v3_measure5(_G2393), -v6_xxreal_2(_G2393)]
+ (8)  [m1_subset_1(_G2622, k1_zfmisc_1(k1_numbers)), v4_measure5(_G2622), -v6_xxreal_2(_G2622)]
+ (9)  [m1_subset_1(_G2851, k1_zfmisc_1(k1_numbers)), -v3_membered(_G2851)]
+ (10)  [-m1_subset_1(k2_measure6(_G3022, _G3074), k1_zfmisc_1(k1_numbers)), v3_membered(_G3022), v1_xreal_0(_G3074)]
+ (11)  [m1_subset_1(_G3359, k1_zfmisc_1(k1_numbers)), v6_xxreal_2(_G3359), -v1_measure5(_G3359), -v2_measure5(_G3359), -v3_measure5(_G3359), -v4_measure5(_G3359)]
+ (12)  [m1_subset_1(_G3842, k1_zfmisc_1(k1_numbers)), v6_xxreal_2(_G3842), v1_xreal_0(_G4028), v1_measure5(_G3842), -v1_measure5(k2_measure6(_G3842, _G4028))]
+ (13)  [m1_subset_1(_G3842, k1_zfmisc_1(k1_numbers)), v6_xxreal_2(_G3842), v1_xreal_0(_G4028), -v1_measure5(_G3842), v1_measure5(k2_measure6(_G3842, _G4028))]
+ (14)  [m1_subset_1(_G4294, k1_zfmisc_1(k1_numbers)), v6_xxreal_2(_G4294), v1_xreal_0(_G4480), v2_measure5(_G4294), -v2_measure5(k2_measure6(_G4294, _G4480))]
+ (15)  [m1_subset_1(_G4294, k1_zfmisc_1(k1_numbers)), v6_xxreal_2(_G4294), v1_xreal_0(_G4480), -v2_measure5(_G4294), v2_measure5(k2_measure6(_G4294, _G4480))]
+ (16)  [m1_subset_1(_G4746, k1_zfmisc_1(k1_numbers)), v6_xxreal_2(_G4746), v1_xreal_0(_G4932), v3_measure5(_G4746), -v3_measure5(k2_measure6(_G4746, _G4932))]
+ (17)  [m1_subset_1(_G4746, k1_zfmisc_1(k1_numbers)), v6_xxreal_2(_G4746), v1_xreal_0(_G4932), -v3_measure5(_G4746), v3_measure5(k2_measure6(_G4746, _G4932))]
+ (18)  [m1_subset_1(_G5189, k1_zfmisc_1(k1_numbers)), v6_xxreal_2(_G5189), v1_xreal_0(_G5375), v4_measure5(_G5189), -v4_measure5(k2_measure6(_G5189, _G5375))]
+ (19)  [m1_subset_1(_G5189, k1_zfmisc_1(k1_numbers)), v6_xxreal_2(_G5189), v1_xreal_0(_G5375), -v4_measure5(_G5189), v4_measure5(k2_measure6(_G5189, _G5375))]
+
+Connection Proof:
+-----------------
+1  [v6_xxreal_2(k2_measure6(1^[], 2^[])), m1_subset_1(k2_measure6(1^[], 2^[]), k1_zfmisc_1(k1_numbers))]   (4)  
+1.1  [-v6_xxreal_2(k2_measure6(1^[], 2^[])), m1_subset_1(k2_measure6(1^[], 2^[]), k1_zfmisc_1(k1_numbers)), v1_measure5(k2_measure6(1^[], 2^[]))]   (5)  substitution:[[_G1935], [k2_measure6(1^[], 2^[])]]
+1.1.1  [-m1_subset_1(k2_measure6(1^[], 2^[]), k1_zfmisc_1(k1_numbers)), v3_membered(1^[]), v1_xreal_0(2^[])]   (10)  substitution:[[_G3022, _G3074], [1^[], 2^[]]]
+1.1.1.1  [-v3_membered(1^[]), m1_subset_1(1^[], k1_zfmisc_1(k1_numbers))]   (9)  substitution:[[_G2851], [1^[]]]
+1.1.1.1.1  [-m1_subset_1(1^[], k1_zfmisc_1(k1_numbers))]   (2)  
+1.1.1.2  [-v1_xreal_0(2^[])]   (3)  
+1.1.2  [-v1_measure5(k2_measure6(1^[], 2^[])), m1_subset_1(1^[], k1_zfmisc_1(k1_numbers)), v6_xxreal_2(1^[]), v1_xreal_0(2^[]), v1_measure5(1^[])]   (12)  substitution:[[_G3842, _G4028], [1^[], 2^[]]]
+1.1.2.1  [-m1_subset_1(1^[], k1_zfmisc_1(k1_numbers))]   (2)  
+1.1.2.2  [-v6_xxreal_2(1^[])]   (1)  
+1.1.2.3  [-v1_xreal_0(2^[])]   (3)  
+1.1.2.4  [-v1_measure5(1^[]), m1_subset_1(1^[], k1_zfmisc_1(k1_numbers)), v6_xxreal_2(1^[]), -v2_measure5(1^[]), -v3_measure5(1^[]), -v4_measure5(1^[])]   (11)  substitution:[[_G3359], [1^[]]]
+1.1.2.4.1  [-m1_subset_1(1^[], k1_zfmisc_1(k1_numbers))]   (2)  
+1.1.2.4.2  [-v6_xxreal_2(1^[])]   (1)  
+1.1.2.4.3  [v2_measure5(1^[]), m1_subset_1(1^[], k1_zfmisc_1(k1_numbers)), v6_xxreal_2(1^[]), v1_xreal_0(2^[]), -v2_measure5(k2_measure6(1^[], 2^[]))]   (14)  substitution:[[_G4294, _G4480], [1^[], 2^[]]]
+1.1.2.4.3.1  [-m1_subset_1(1^[], k1_zfmisc_1(k1_numbers))]   (2)  
+1.1.2.4.3.2  [-v6_xxreal_2(1^[])]   (1)  
+1.1.2.4.3.3  [-v1_xreal_0(2^[])]   (3)  
+1.1.2.4.3.4  [v2_measure5(k2_measure6(1^[], 2^[])), m1_subset_1(k2_measure6(1^[], 2^[]), k1_zfmisc_1(k1_numbers)), -v6_xxreal_2(k2_measure6(1^[], 2^[]))]   (6)  substitution:[[_G2164], [k2_measure6(1^[], 2^[])]]
+1.1.2.4.3.4.1  [-m1_subset_1(k2_measure6(1^[], 2^[]), k1_zfmisc_1(k1_numbers))]   (lemmata:1.1)  
+1.1.2.4.3.4.2  [v6_xxreal_2(k2_measure6(1^[], 2^[]))]   (reduction:1)  
+1.1.2.4.4  [v3_measure5(1^[]), m1_subset_1(1^[], k1_zfmisc_1(k1_numbers)), v6_xxreal_2(1^[]), v1_xreal_0(2^[]), -v3_measure5(k2_measure6(1^[], 2^[]))]   (16)  substitution:[[_G4746, _G4932], [1^[], 2^[]]]
+1.1.2.4.4.1  [-m1_subset_1(1^[], k1_zfmisc_1(k1_numbers))]   (2)  
+1.1.2.4.4.2  [-v6_xxreal_2(1^[])]   (1)  
+1.1.2.4.4.3  [-v1_xreal_0(2^[])]   (3)  
+1.1.2.4.4.4  [v3_measure5(k2_measure6(1^[], 2^[])), m1_subset_1(k2_measure6(1^[], 2^[]), k1_zfmisc_1(k1_numbers)), -v6_xxreal_2(k2_measure6(1^[], 2^[]))]   (7)  substitution:[[_G2393], [k2_measure6(1^[], 2^[])]]
+1.1.2.4.4.4.1  [-m1_subset_1(k2_measure6(1^[], 2^[]), k1_zfmisc_1(k1_numbers))]   (lemmata:1.1)  
+1.1.2.4.4.4.2  [v6_xxreal_2(k2_measure6(1^[], 2^[]))]   (reduction:1)  
+1.1.2.4.5  [v4_measure5(1^[]), m1_subset_1(1^[], k1_zfmisc_1(k1_numbers)), v6_xxreal_2(1^[]), v1_xreal_0(2^[]), -v4_measure5(k2_measure6(1^[], 2^[]))]   (18)  substitution:[[_G5189, _G5375], [1^[], 2^[]]]
+1.1.2.4.5.1  [-m1_subset_1(1^[], k1_zfmisc_1(k1_numbers))]   (2)  
+1.1.2.4.5.2  [-v6_xxreal_2(1^[])]   (1)  
+1.1.2.4.5.3  [-v1_xreal_0(2^[])]   (3)  
+1.1.2.4.5.4  [v4_measure5(k2_measure6(1^[], 2^[])), m1_subset_1(k2_measure6(1^[], 2^[]), k1_zfmisc_1(k1_numbers)), -v6_xxreal_2(k2_measure6(1^[], 2^[]))]   (8)  substitution:[[_G2622], [k2_measure6(1^[], 2^[])]]
+1.1.2.4.5.4.1  [-m1_subset_1(k2_measure6(1^[], 2^[]), k1_zfmisc_1(k1_numbers))]   (lemmata:1.1)  
+1.1.2.4.5.4.2  [v6_xxreal_2(k2_measure6(1^[], 2^[]))]   (reduction:1)  
+1.2  [-m1_subset_1(k2_measure6(1^[], 2^[]), k1_zfmisc_1(k1_numbers)), v3_membered(1^[]), v1_xreal_0(2^[])]   (10)  substitution:[[_G3022, _G3074], [1^[], 2^[]]]
+1.2.1  [-v3_membered(1^[]), m1_subset_1(1^[], k1_zfmisc_1(k1_numbers))]   (9)  substitution:[[_G2851], [1^[]]]
+1.2.1.1  [-m1_subset_1(1^[], k1_zfmisc_1(k1_numbers))]   (2)  
+1.2.2  [-v1_xreal_0(2^[])]   (3)  
+------------------------------------------------------
+End of proof for t30_measure6

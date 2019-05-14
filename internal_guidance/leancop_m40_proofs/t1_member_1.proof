@@ -1,0 +1,92 @@
+
+t1_member_1 is a Theorem
+Start of proof for t1_member_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-5^[], r2_hidden(3^[], 2^[])]
+ (2)  [-5^[], -r2_hidden(k2_xxreal_3(3^[]), k4_member_1(2^[]))]
+ (3)  [-4^[], r2_hidden(k2_xxreal_3(3^[]), k4_member_1(2^[]))]
+ (4)  [-4^[], -r2_hidden(3^[], 2^[])]
+ (5)  [-v2_membered(2^[])]
+ (6)  [-v1_xxreal_0(3^[])]
+ (7)  [4^[], 5^[]]
+ (8)  [v2_membered(_G7092), - (k4_member_1(_G7092)=a_1_0_member_1(_G7092))]
+ (9)  [v1_xxreal_0(_G7281), -r2_hidden(_G7281, k7_numbers)]
+ (10)  [-v1_xxreal_0(_G7281), r2_hidden(_G7281, k7_numbers)]
+ (11)  [v1_xxreal_0(_G7438), -v1_xxreal_0(k2_xxreal_3(_G7438))]
+ (12)  [v2_membered(_G7585), -v2_membered(k4_member_1(_G7585))]
+ (13)  [v2_membered(_G7803), r2_hidden(_G7732, a_1_0_member_1(_G7803)), -m1_subset_1(1^[_G7803, _G7732], k7_numbers)]
+ (14)  [v2_membered(_G7803), r2_hidden(_G7732, a_1_0_member_1(_G7803)), - (_G7732=k1_member_1(1^[_G7803, _G7732]))]
+ (15)  [v2_membered(_G7803), r2_hidden(_G7732, a_1_0_member_1(_G7803)), -r2_hidden(1^[_G7803, _G7732], _G7803)]
+ (16)  [v2_membered(_G7803), -r2_hidden(_G7732, a_1_0_member_1(_G7803)), m1_subset_1(_G7978, k7_numbers), _G7732=k1_member_1(_G7978), r2_hidden(_G7978, _G7803)]
+ (17)  [v1_xxreal_0(_G8331), - (k2_xxreal_3(k2_xxreal_3(_G8331))=_G8331)]
+ (18)  [v2_membered(_G8520), - (k4_member_1(k4_member_1(_G8520))=_G8520)]
+ (19)  [m1_subset_1(_G8709, k7_numbers), - (k1_member_1(_G8709)=k2_xxreal_3(_G8709))]
+ (20)  [r2_hidden(_G8915, _G8960), -m1_subset_1(_G8915, _G8960)]
+ (21)  [_G5905=_G5954, - (a_1_0_member_1(_G5905)=a_1_0_member_1(_G5954))]
+ (22)  [_G6183=_G6232, - (k1_member_1(_G6183)=k1_member_1(_G6232))]
+ (23)  [_G6461=_G6510, - (k2_xxreal_3(_G6461)=k2_xxreal_3(_G6510))]
+ (24)  [_G6730=_G6779, - (k4_member_1(_G6730)=k4_member_1(_G6779))]
+ (25)  [- (_G3298=_G3298)]
+ (26)  [_G3397=_G3442, - (_G3442=_G3397)]
+ (27)  [- (_G3630=_G3743), _G3630=_G3686, _G3686=_G3743]
+ (28)  [-m1_subset_1(_G4147, _G4284), m1_subset_1(_G4080, _G4215), _G4080=_G4147, _G4215=_G4284]
+ (29)  [-v2_membered(_G4726), _G4677=_G4726, v2_membered(_G4677)]
+ (30)  [-v1_xxreal_0(_G5004), _G4955=_G5004, v1_xxreal_0(_G4955)]
+ (31)  [-r2_hidden(_G5291, _G5428), r2_hidden(_G5224, _G5359), _G5224=_G5291, _G5359=_G5428]
+
+Connection Proof:
+-----------------
+1  [4^[], 5^[]]   (7)  
+1.1  [-4^[], -r2_hidden(3^[], 2^[])]   (4)  
+1.1.1  [r2_hidden(3^[], 2^[]), v2_membered(2^[]), -r2_hidden(k2_xxreal_3(3^[]), a_1_0_member_1(2^[])), m1_subset_1(3^[], k7_numbers), k2_xxreal_3(3^[])=k1_member_1(3^[])]   (16)  substitution:[[_G7978, _G7803, _G7732], [3^[], 2^[], k2_xxreal_3(3^[])]]
+1.1.1.1  [-v2_membered(2^[])]   (5)  
+1.1.1.2  [r2_hidden(k2_xxreal_3(3^[]), a_1_0_member_1(2^[])), v2_membered(2^[]), - (k2_xxreal_3(3^[])=k1_member_1(1^[2^[], k2_xxreal_3(3^[])]))]   (14)  substitution:[[_G7732, _G7803], [k2_xxreal_3(3^[]), 2^[]]]
+1.1.1.2.1  [-v2_membered(2^[])]   (5)  
+1.1.1.2.2  [k2_xxreal_3(3^[])=k1_member_1(1^[2^[], k2_xxreal_3(3^[])]), -r2_hidden(k1_member_1(1^[2^[], k2_xxreal_3(3^[])]), k4_member_1(2^[])), r2_hidden(k2_xxreal_3(3^[]), a_1_0_member_1(2^[])), a_1_0_member_1(2^[])=k4_member_1(2^[])]   (31)  substitution:[[_G5224, _G5291, _G5428, _G5359], [k2_xxreal_3(3^[]), k1_member_1(1^[2^[], k2_xxreal_3(3^[])]), k4_member_1(2^[]), a_1_0_member_1(2^[])]]
+1.1.1.2.2.1  [r2_hidden(k1_member_1(1^[2^[], k2_xxreal_3(3^[])]), k4_member_1(2^[])), -r2_hidden(k2_xxreal_3(3^[]), k4_member_1(2^[])), k1_member_1(1^[2^[], k2_xxreal_3(3^[])])=k2_xxreal_3(3^[]), k4_member_1(2^[])=k4_member_1(2^[])]   (31)  substitution:[[_G5224, _G5359, _G5291, _G5428], [k1_member_1(1^[2^[], k2_xxreal_3(3^[])]), k4_member_1(2^[]), k2_xxreal_3(3^[]), k4_member_1(2^[])]]
+1.1.1.2.2.1.1  [r2_hidden(k2_xxreal_3(3^[]), k4_member_1(2^[])), -4^[]]   (3)  
+1.1.1.2.2.1.1.1  [4^[]]   (reduction:1)  
+1.1.1.2.2.1.2  [- (k1_member_1(1^[2^[], k2_xxreal_3(3^[])])=k2_xxreal_3(3^[])), k2_xxreal_3(3^[])=k1_member_1(1^[2^[], k2_xxreal_3(3^[])])]   (26)  substitution:[[_G3442, _G3397], [k1_member_1(1^[2^[], k2_xxreal_3(3^[])]), k2_xxreal_3(3^[])]]
+1.1.1.2.2.1.2.1  [- (k2_xxreal_3(3^[])=k1_member_1(1^[2^[], k2_xxreal_3(3^[])]))]   (reduction:1.1.1.2)  
+1.1.1.2.2.1.3  [- (k4_member_1(2^[])=k4_member_1(2^[]))]   (25)  substitution:[[_G3298], [k4_member_1(2^[])]]
+1.1.1.2.2.2  [-r2_hidden(k2_xxreal_3(3^[]), a_1_0_member_1(2^[]))]   (reduction:1.1.1)  
+1.1.1.2.2.3  [- (a_1_0_member_1(2^[])=k4_member_1(2^[])), k4_member_1(2^[])=a_1_0_member_1(2^[])]   (26)  substitution:[[_G3442, _G3397], [a_1_0_member_1(2^[]), k4_member_1(2^[])]]
+1.1.1.2.2.3.1  [- (k4_member_1(2^[])=a_1_0_member_1(2^[])), v2_membered(2^[])]   (8)  substitution:[[_G7092], [2^[]]]
+1.1.1.2.2.3.1.1  [-v2_membered(2^[])]   (5)  
+1.1.1.3  [-m1_subset_1(3^[], k7_numbers), r2_hidden(3^[], k7_numbers)]   (20)  substitution:[[_G8915, _G8960], [3^[], k7_numbers]]
+1.1.1.3.1  [-r2_hidden(3^[], k7_numbers), v1_xxreal_0(3^[])]   (9)  substitution:[[_G7281], [3^[]]]
+1.1.1.3.1.1  [-v1_xxreal_0(3^[])]   (6)  
+1.1.1.4  [- (k2_xxreal_3(3^[])=k1_member_1(3^[])), k1_member_1(3^[])=k2_xxreal_3(3^[])]   (26)  substitution:[[_G3442, _G3397], [k2_xxreal_3(3^[]), k1_member_1(3^[])]]
+1.1.1.4.1  [- (k1_member_1(3^[])=k2_xxreal_3(3^[])), m1_subset_1(3^[], k7_numbers)]   (19)  substitution:[[_G8709], [3^[]]]
+1.1.1.4.1.1  [-m1_subset_1(3^[], k7_numbers)]   (lemmata:1.1.1)  
+1.2  [-5^[], -r2_hidden(k2_xxreal_3(3^[]), k4_member_1(2^[]))]   (2)  
+1.2.1  [r2_hidden(k2_xxreal_3(3^[]), k4_member_1(2^[])), v2_membered(k4_member_1(2^[])), -r2_hidden(3^[], a_1_0_member_1(k4_member_1(2^[]))), m1_subset_1(k2_xxreal_3(3^[]), k7_numbers), 3^[]=k1_member_1(k2_xxreal_3(3^[]))]   (16)  substitution:[[_G7978, _G7803, _G7732], [k2_xxreal_3(3^[]), k4_member_1(2^[]), 3^[]]]
+1.2.1.1  [-v2_membered(k4_member_1(2^[])), v2_membered(2^[])]   (12)  substitution:[[_G7585], [2^[]]]
+1.2.1.1.1  [-v2_membered(2^[])]   (5)  
+1.2.1.2  [r2_hidden(3^[], a_1_0_member_1(k4_member_1(2^[]))), v2_membered(k4_member_1(2^[])), - (3^[]=k1_member_1(1^[k4_member_1(2^[]), 3^[]]))]   (14)  substitution:[[_G7732, _G7803], [3^[], k4_member_1(2^[])]]
+1.2.1.2.1  [-v2_membered(k4_member_1(2^[]))]   (lemmata:1.2.1)  
+1.2.1.2.2  [3^[]=k1_member_1(1^[k4_member_1(2^[]), 3^[]]), -r2_hidden(k1_member_1(1^[k4_member_1(2^[]), 3^[]]), k4_member_1(k4_member_1(2^[]))), r2_hidden(3^[], a_1_0_member_1(k4_member_1(2^[]))), a_1_0_member_1(k4_member_1(2^[]))=k4_member_1(k4_member_1(2^[]))]   (31)  substitution:[[_G5224, _G5291, _G5428, _G5359], [3^[], k1_member_1(1^[k4_member_1(2^[]), 3^[]]), k4_member_1(k4_member_1(2^[])), a_1_0_member_1(k4_member_1(2^[]))]]
+1.2.1.2.2.1  [r2_hidden(k1_member_1(1^[k4_member_1(2^[]), 3^[]]), k4_member_1(k4_member_1(2^[]))), -r2_hidden(3^[], 2^[]), k1_member_1(1^[k4_member_1(2^[]), 3^[]])=3^[], k4_member_1(k4_member_1(2^[]))=2^[]]   (31)  substitution:[[_G5224, _G5359, _G5291, _G5428], [k1_member_1(1^[k4_member_1(2^[]), 3^[]]), k4_member_1(k4_member_1(2^[])), 3^[], 2^[]]]
+1.2.1.2.2.1.1  [r2_hidden(3^[], 2^[]), -5^[]]   (1)  
+1.2.1.2.2.1.1.1  [5^[]]   (reduction:1)  
+1.2.1.2.2.1.2  [- (k1_member_1(1^[k4_member_1(2^[]), 3^[]])=3^[]), 3^[]=k1_member_1(1^[k4_member_1(2^[]), 3^[]])]   (26)  substitution:[[_G3442, _G3397], [k1_member_1(1^[k4_member_1(2^[]), 3^[]]), 3^[]]]
+1.2.1.2.2.1.2.1  [- (3^[]=k1_member_1(1^[k4_member_1(2^[]), 3^[]]))]   (reduction:1.2.1.2)  
+1.2.1.2.2.1.3  [- (k4_member_1(k4_member_1(2^[]))=2^[]), v2_membered(2^[])]   (18)  substitution:[[_G8520], [2^[]]]
+1.2.1.2.2.1.3.1  [-v2_membered(2^[])]   (5)  
+1.2.1.2.2.2  [-r2_hidden(3^[], a_1_0_member_1(k4_member_1(2^[])))]   (reduction:1.2.1)  
+1.2.1.2.2.3  [- (a_1_0_member_1(k4_member_1(2^[]))=k4_member_1(k4_member_1(2^[]))), k4_member_1(k4_member_1(2^[]))=a_1_0_member_1(k4_member_1(2^[]))]   (26)  substitution:[[_G3442, _G3397], [a_1_0_member_1(k4_member_1(2^[])), k4_member_1(k4_member_1(2^[]))]]
+1.2.1.2.2.3.1  [- (k4_member_1(k4_member_1(2^[]))=a_1_0_member_1(k4_member_1(2^[]))), v2_membered(k4_member_1(2^[]))]   (8)  substitution:[[_G7092], [k4_member_1(2^[])]]
+1.2.1.2.2.3.1.1  [-v2_membered(k4_member_1(2^[]))]   (lemmata:1.2.1.2)  
+1.2.1.3  [-m1_subset_1(k2_xxreal_3(3^[]), k7_numbers), r2_hidden(k2_xxreal_3(3^[]), k7_numbers)]   (20)  substitution:[[_G8915, _G8960], [k2_xxreal_3(3^[]), k7_numbers]]
+1.2.1.3.1  [-r2_hidden(k2_xxreal_3(3^[]), k7_numbers), v1_xxreal_0(k2_xxreal_3(3^[]))]   (9)  substitution:[[_G7281], [k2_xxreal_3(3^[])]]
+1.2.1.3.1.1  [-v1_xxreal_0(k2_xxreal_3(3^[])), v1_xxreal_0(3^[])]   (11)  substitution:[[_G7438], [3^[]]]
+1.2.1.3.1.1.1  [-v1_xxreal_0(3^[])]   (6)  
+1.2.1.4  [- (3^[]=k1_member_1(k2_xxreal_3(3^[]))), k1_member_1(k2_xxreal_3(3^[]))=3^[]]   (26)  substitution:[[_G3442, _G3397], [3^[], k1_member_1(k2_xxreal_3(3^[]))]]
+1.2.1.4.1  [- (k1_member_1(k2_xxreal_3(3^[]))=3^[]), k1_member_1(k2_xxreal_3(3^[]))=k2_xxreal_3(k2_xxreal_3(3^[])), k2_xxreal_3(k2_xxreal_3(3^[]))=3^[]]   (27)  substitution:[[_G3630, _G3743, _G3686], [k1_member_1(k2_xxreal_3(3^[])), 3^[], k2_xxreal_3(k2_xxreal_3(3^[]))]]
+1.2.1.4.1.1  [- (k1_member_1(k2_xxreal_3(3^[]))=k2_xxreal_3(k2_xxreal_3(3^[]))), m1_subset_1(k2_xxreal_3(3^[]), k7_numbers)]   (19)  substitution:[[_G8709], [k2_xxreal_3(3^[])]]
+1.2.1.4.1.1.1  [-m1_subset_1(k2_xxreal_3(3^[]), k7_numbers)]   (lemmata:1.2.1)  
+1.2.1.4.1.2  [- (k2_xxreal_3(k2_xxreal_3(3^[]))=3^[]), v1_xxreal_0(3^[])]   (17)  substitution:[[_G8331], [3^[]]]
+1.2.1.4.1.2.1  [-v1_xxreal_0(3^[])]   (6)  
+------------------------------------------------------
+End of proof for t1_member_1

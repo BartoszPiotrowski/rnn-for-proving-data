@@ -1,0 +1,52 @@
+
+t7_gfacirc1 is a Theorem
+Start of proof for t7_gfacirc1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], k6_margrel1)]
+ (2)  [-m1_subset_1(2^[], k6_margrel1)]
+ (3)  [-m1_subset_1(3^[], k6_margrel1)]
+ (4)  [k2_binarith(k2_binarith(k9_margrel1(1^[]), 2^[]), k9_margrel1(3^[]))=k2_binarith(k2_binarith(1^[], k9_margrel1(2^[])), k9_margrel1(3^[]))]
+ (5)  [m1_subset_1(_G6815, k6_margrel1), m1_subset_1(_G6985, k6_margrel1), - (k1_funct_1(k4_gfacirc1, k10_finseq_1(_G6815, _G6985))=k2_binarith(_G6815, k9_margrel1(_G6985)))]
+ (6)  [m1_subset_1(_G6815, k6_margrel1), m1_subset_1(_G6985, k6_margrel1), - (k1_funct_1(k4_gfacirc1, k10_finseq_1(_G6815, _G6985))=k1_funct_1(k15_twoscomp, k10_finseq_1(_G6815, _G6985)))]
+ (7)  [m1_subset_1(_G6815, k6_margrel1), m1_subset_1(_G6985, k6_margrel1), - (k1_funct_1(k4_gfacirc1, k10_finseq_1(_G6815, _G6985))=k1_funct_1(k8_twoscomp, k10_finseq_1(k1_funct_1(k4_twoscomp, k10_finseq_1(_G6815, _G6985)), k1_funct_1(k2_twoscomp, k10_finseq_1(_G6815, _G6985)))))]
+ (8)  [m1_subset_1(_G6815, k6_margrel1), m1_subset_1(_G6985, k6_margrel1), - (k1_funct_1(k4_gfacirc1, k10_finseq_1(k6_numbers, k6_numbers))=np__1)]
+ (9)  [m1_subset_1(_G6815, k6_margrel1), m1_subset_1(_G6985, k6_margrel1), - (k1_funct_1(k4_gfacirc1, k10_finseq_1(k6_numbers, np__1))=k6_numbers)]
+ (10)  [m1_subset_1(_G6815, k6_margrel1), m1_subset_1(_G6985, k6_margrel1), - (k1_funct_1(k4_gfacirc1, k10_finseq_1(np__1, k6_numbers))=k6_numbers)]
+ (11)  [m1_subset_1(_G6815, k6_margrel1), m1_subset_1(_G6985, k6_margrel1), - (k1_funct_1(k4_gfacirc1, k10_finseq_1(np__1, np__1))=np__1)]
+ (12)  [m1_subset_1(_G8635, k6_margrel1), m1_subset_1(_G8788, k6_margrel1), - (k1_funct_1(k14_twoscomp, k10_finseq_1(_G8635, _G8788))=k2_binarith(_G8635, _G8788))]
+ (13)  [m1_subset_1(_G8635, k6_margrel1), m1_subset_1(_G8788, k6_margrel1), - (k1_funct_1(k15_twoscomp, k10_finseq_1(_G8635, _G8788))=k2_binarith(k9_margrel1(_G8635), _G8788))]
+ (14)  [m1_subset_1(_G8635, k6_margrel1), m1_subset_1(_G8788, k6_margrel1), - (k1_funct_1(k16_twoscomp, k10_finseq_1(_G8635, _G8788))=k2_binarith(k9_margrel1(_G8635), k9_margrel1(_G8788)))]
+ (15)  [-m1_subset_1(_G4120, _G4257), m1_subset_1(_G4053, _G4188), _G4053=_G4120, _G4188=_G4257]
+ (16)  [- (_G3280=_G3280)]
+ (17)  [_G3379=_G3424, - (_G3424=_G3379)]
+ (18)  [- (_G3612=_G3725), _G3612=_G3668, _G3668=_G3725]
+ (19)  [- (k1_funct_1(_G4671, _G4806)=k1_funct_1(_G4738, _G4875)), _G4671=_G4738, _G4806=_G4875]
+ (20)  [- (k10_finseq_1(_G5268, _G5403)=k10_finseq_1(_G5335, _G5472)), _G5268=_G5335, _G5403=_G5472]
+ (21)  [_G6453=_G6502, - (k9_margrel1(_G6453)=k9_margrel1(_G6502))]
+ (22)  [- (k2_binarith(_G5865, _G6000)=k2_binarith(_G5932, _G6069)), _G5865=_G5932, _G6000=_G6069]
+
+Connection Proof:
+-----------------
+1  [k2_binarith(k2_binarith(k9_margrel1(1^[]), 2^[]), k9_margrel1(3^[]))=k2_binarith(k2_binarith(1^[], k9_margrel1(2^[])), k9_margrel1(3^[]))]   (4)  
+1.1  [- (k2_binarith(k2_binarith(k9_margrel1(1^[]), 2^[]), k9_margrel1(3^[]))=k2_binarith(k2_binarith(1^[], k9_margrel1(2^[])), k9_margrel1(3^[]))), k2_binarith(k2_binarith(1^[], k9_margrel1(2^[])), k9_margrel1(3^[]))=k2_binarith(k2_binarith(k9_margrel1(1^[]), 2^[]), k9_margrel1(3^[]))]   (17)  substitution:[[_G3424, _G3379], [k2_binarith(k2_binarith(k9_margrel1(1^[]), 2^[]), k9_margrel1(3^[])), k2_binarith(k2_binarith(1^[], k9_margrel1(2^[])), k9_margrel1(3^[]))]]
+1.1.1  [- (k2_binarith(k2_binarith(1^[], k9_margrel1(2^[])), k9_margrel1(3^[]))=k2_binarith(k2_binarith(k9_margrel1(1^[]), 2^[]), k9_margrel1(3^[]))), k2_binarith(k2_binarith(1^[], k9_margrel1(2^[])), k9_margrel1(3^[]))=k2_binarith(k1_funct_1(k4_gfacirc1, k10_finseq_1(1^[], 2^[])), k9_margrel1(3^[])), k2_binarith(k1_funct_1(k4_gfacirc1, k10_finseq_1(1^[], 2^[])), k9_margrel1(3^[]))=k2_binarith(k2_binarith(k9_margrel1(1^[]), 2^[]), k9_margrel1(3^[]))]   (18)  substitution:[[_G3612, _G3725, _G3668], [k2_binarith(k2_binarith(1^[], k9_margrel1(2^[])), k9_margrel1(3^[])), k2_binarith(k2_binarith(k9_margrel1(1^[]), 2^[]), k9_margrel1(3^[])), k2_binarith(k1_funct_1(k4_gfacirc1, k10_finseq_1(1^[], 2^[])), k9_margrel1(3^[]))]]
+1.1.1.1  [- (k2_binarith(k2_binarith(1^[], k9_margrel1(2^[])), k9_margrel1(3^[]))=k2_binarith(k1_funct_1(k4_gfacirc1, k10_finseq_1(1^[], 2^[])), k9_margrel1(3^[]))), k2_binarith(k1_funct_1(k4_gfacirc1, k10_finseq_1(1^[], 2^[])), k9_margrel1(3^[]))=k2_binarith(k2_binarith(1^[], k9_margrel1(2^[])), k9_margrel1(3^[]))]   (17)  substitution:[[_G3424, _G3379], [k2_binarith(k2_binarith(1^[], k9_margrel1(2^[])), k9_margrel1(3^[])), k2_binarith(k1_funct_1(k4_gfacirc1, k10_finseq_1(1^[], 2^[])), k9_margrel1(3^[]))]]
+1.1.1.1.1  [- (k2_binarith(k1_funct_1(k4_gfacirc1, k10_finseq_1(1^[], 2^[])), k9_margrel1(3^[]))=k2_binarith(k2_binarith(1^[], k9_margrel1(2^[])), k9_margrel1(3^[]))), k1_funct_1(k4_gfacirc1, k10_finseq_1(1^[], 2^[]))=k2_binarith(1^[], k9_margrel1(2^[])), k9_margrel1(3^[])=k9_margrel1(3^[])]   (22)  substitution:[[_G5865, _G6000, _G5932, _G6069], [k1_funct_1(k4_gfacirc1, k10_finseq_1(1^[], 2^[])), k9_margrel1(3^[]), k2_binarith(1^[], k9_margrel1(2^[])), k9_margrel1(3^[])]]
+1.1.1.1.1.1  [- (k1_funct_1(k4_gfacirc1, k10_finseq_1(1^[], 2^[]))=k2_binarith(1^[], k9_margrel1(2^[]))), m1_subset_1(1^[], k6_margrel1), m1_subset_1(2^[], k6_margrel1)]   (5)  substitution:[[_G6815, _G6985], [1^[], 2^[]]]
+1.1.1.1.1.1.1  [-m1_subset_1(1^[], k6_margrel1)]   (1)  
+1.1.1.1.1.1.2  [-m1_subset_1(2^[], k6_margrel1)]   (2)  
+1.1.1.1.1.2  [- (k9_margrel1(3^[])=k9_margrel1(3^[]))]   (16)  substitution:[[_G3280], [k9_margrel1(3^[])]]
+1.1.1.2  [- (k2_binarith(k1_funct_1(k4_gfacirc1, k10_finseq_1(1^[], 2^[])), k9_margrel1(3^[]))=k2_binarith(k2_binarith(k9_margrel1(1^[]), 2^[]), k9_margrel1(3^[]))), k2_binarith(k1_funct_1(k4_gfacirc1, k10_finseq_1(1^[], 2^[])), k9_margrel1(3^[]))=k2_binarith(k1_funct_1(k15_twoscomp, k10_finseq_1(1^[], 2^[])), k9_margrel1(3^[])), k2_binarith(k1_funct_1(k15_twoscomp, k10_finseq_1(1^[], 2^[])), k9_margrel1(3^[]))=k2_binarith(k2_binarith(k9_margrel1(1^[]), 2^[]), k9_margrel1(3^[]))]   (18)  substitution:[[_G3612, _G3725, _G3668], [k2_binarith(k1_funct_1(k4_gfacirc1, k10_finseq_1(1^[], 2^[])), k9_margrel1(3^[])), k2_binarith(k2_binarith(k9_margrel1(1^[]), 2^[]), k9_margrel1(3^[])), k2_binarith(k1_funct_1(k15_twoscomp, k10_finseq_1(1^[], 2^[])), k9_margrel1(3^[]))]]
+1.1.1.2.1  [- (k2_binarith(k1_funct_1(k4_gfacirc1, k10_finseq_1(1^[], 2^[])), k9_margrel1(3^[]))=k2_binarith(k1_funct_1(k15_twoscomp, k10_finseq_1(1^[], 2^[])), k9_margrel1(3^[]))), k1_funct_1(k4_gfacirc1, k10_finseq_1(1^[], 2^[]))=k1_funct_1(k15_twoscomp, k10_finseq_1(1^[], 2^[])), k9_margrel1(3^[])=k9_margrel1(3^[])]   (22)  substitution:[[_G5865, _G6000, _G5932, _G6069], [k1_funct_1(k4_gfacirc1, k10_finseq_1(1^[], 2^[])), k9_margrel1(3^[]), k1_funct_1(k15_twoscomp, k10_finseq_1(1^[], 2^[])), k9_margrel1(3^[])]]
+1.1.1.2.1.1  [- (k1_funct_1(k4_gfacirc1, k10_finseq_1(1^[], 2^[]))=k1_funct_1(k15_twoscomp, k10_finseq_1(1^[], 2^[]))), m1_subset_1(1^[], k6_margrel1), m1_subset_1(2^[], k6_margrel1)]   (6)  substitution:[[_G6815, _G6985], [1^[], 2^[]]]
+1.1.1.2.1.1.1  [-m1_subset_1(1^[], k6_margrel1)]   (1)  
+1.1.1.2.1.1.2  [-m1_subset_1(2^[], k6_margrel1)]   (2)  
+1.1.1.2.1.2  [- (k9_margrel1(3^[])=k9_margrel1(3^[]))]   (16)  substitution:[[_G3280], [k9_margrel1(3^[])]]
+1.1.1.2.2  [- (k2_binarith(k1_funct_1(k15_twoscomp, k10_finseq_1(1^[], 2^[])), k9_margrel1(3^[]))=k2_binarith(k2_binarith(k9_margrel1(1^[]), 2^[]), k9_margrel1(3^[]))), k1_funct_1(k15_twoscomp, k10_finseq_1(1^[], 2^[]))=k2_binarith(k9_margrel1(1^[]), 2^[]), k9_margrel1(3^[])=k9_margrel1(3^[])]   (22)  substitution:[[_G5865, _G6000, _G5932, _G6069], [k1_funct_1(k15_twoscomp, k10_finseq_1(1^[], 2^[])), k9_margrel1(3^[]), k2_binarith(k9_margrel1(1^[]), 2^[]), k9_margrel1(3^[])]]
+1.1.1.2.2.1  [- (k1_funct_1(k15_twoscomp, k10_finseq_1(1^[], 2^[]))=k2_binarith(k9_margrel1(1^[]), 2^[])), m1_subset_1(1^[], k6_margrel1), m1_subset_1(2^[], k6_margrel1)]   (13)  substitution:[[_G8635, _G8788], [1^[], 2^[]]]
+1.1.1.2.2.1.1  [-m1_subset_1(1^[], k6_margrel1)]   (1)  
+1.1.1.2.2.1.2  [-m1_subset_1(2^[], k6_margrel1)]   (2)  
+1.1.1.2.2.2  [- (k9_margrel1(3^[])=k9_margrel1(3^[]))]   (16)  substitution:[[_G3280], [k9_margrel1(3^[])]]
+------------------------------------------------------
+End of proof for t7_gfacirc1

@@ -1,0 +1,25 @@
+
+t2_altcat_1 is a Theorem
+Start of proof for t2_altcat_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k1_funct_2(k1_xboole_0, k1_xboole_0)=k1_tarski(k4_relat_1(k1_xboole_0))]
+ (2)  [- (k4_relat_1(k1_xboole_0)=k1_xboole_0)]
+ (3)  [- (k1_funct_2(k1_xboole_0, _G3078)=k1_tarski(k1_xboole_0))]
+ (4)  [- (_G1027=_G1027)]
+ (5)  [_G1126=_G1171, - (_G1171=_G1126)]
+ (6)  [- (_G1359=_G1472), _G1359=_G1415, _G1415=_G1472]
+ (7)  [- (k1_funct_2(_G1809, _G1944)=k1_funct_2(_G1876, _G2013)), _G1809=_G1876, _G1944=_G2013]
+ (8)  [_G2406=_G2455, - (k1_tarski(_G2406)=k1_tarski(_G2455))]
+ (9)  [_G2675=_G2724, - (k4_relat_1(_G2675)=k4_relat_1(_G2724))]
+
+Connection Proof:
+-----------------
+1  [k1_funct_2(k1_xboole_0, k1_xboole_0)=k1_tarski(k4_relat_1(k1_xboole_0))]   (1)  
+1.1  [- (k1_funct_2(k1_xboole_0, k1_xboole_0)=k1_tarski(k4_relat_1(k1_xboole_0))), k1_funct_2(k1_xboole_0, k1_xboole_0)=k1_tarski(k1_xboole_0), k1_tarski(k1_xboole_0)=k1_tarski(k4_relat_1(k1_xboole_0))]   (6)  substitution:[[_G1359, _G1472, _G1415], [k1_funct_2(k1_xboole_0, k1_xboole_0), k1_tarski(k4_relat_1(k1_xboole_0)), k1_tarski(k1_xboole_0)]]
+1.1.1  [- (k1_funct_2(k1_xboole_0, k1_xboole_0)=k1_tarski(k1_xboole_0))]   (3)  substitution:[[_G3078], [k1_xboole_0]]
+1.1.2  [- (k1_tarski(k1_xboole_0)=k1_tarski(k4_relat_1(k1_xboole_0))), k1_tarski(k4_relat_1(k1_xboole_0))=k1_tarski(k1_xboole_0)]   (5)  substitution:[[_G1171, _G1126], [k1_tarski(k1_xboole_0), k1_tarski(k4_relat_1(k1_xboole_0))]]
+1.1.2.1  [- (k1_tarski(k4_relat_1(k1_xboole_0))=k1_tarski(k1_xboole_0)), k4_relat_1(k1_xboole_0)=k1_xboole_0]   (8)  substitution:[[_G2406, _G2455], [k4_relat_1(k1_xboole_0), k1_xboole_0]]
+1.1.2.1.1  [- (k4_relat_1(k1_xboole_0)=k1_xboole_0)]   (2)  
+------------------------------------------------------
+End of proof for t2_altcat_1

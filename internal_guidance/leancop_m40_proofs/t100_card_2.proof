@@ -1,0 +1,36 @@
+
+t100_card_2 is a Theorem
+Start of proof for t100_card_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v4_card_3(1^[])]
+ (2)  [-v4_card_3(2^[])]
+ (3)  [v4_card_3(k5_xboole_0(1^[], 2^[]))]
+ (4)  [- (k5_xboole_0(_G5512, _G5563)=k2_xboole_0(k4_xboole_0(_G5512, _G5563), k4_xboole_0(_G5563, _G5512)))]
+ (5)  [-v4_card_3(_G5844), r1_tarski(_G5844, _G5893), v4_card_3(_G5893)]
+ (6)  [-r1_tarski(k4_xboole_0(_G6122, _G6164), _G6122)]
+ (7)  [-v4_card_3(k2_xboole_0(_G6310, _G6361)), v4_card_3(_G6310), v4_card_3(_G6361)]
+ (8)  [- (k4_xboole_0(_G3667, _G3802)=k4_xboole_0(_G3734, _G3871)), _G3667=_G3734, _G3802=_G3871]
+ (9)  [- (k2_xboole_0(_G4264, _G4399)=k2_xboole_0(_G4331, _G4468)), _G4264=_G4331, _G4399=_G4468]
+ (10)  [- (k5_xboole_0(_G4852, _G4987)=k5_xboole_0(_G4919, _G5056)), _G4852=_G4919, _G4987=_G5056]
+ (11)  [- (_G1977=_G1977)]
+ (12)  [_G2076=_G2121, - (_G2121=_G2076)]
+ (13)  [- (_G2309=_G2422), _G2309=_G2365, _G2365=_G2422]
+ (14)  [-v4_card_3(_G3396), _G3347=_G3396, v4_card_3(_G3347)]
+ (15)  [-r1_tarski(_G2826, _G2963), r1_tarski(_G2759, _G2894), _G2759=_G2826, _G2894=_G2963]
+
+Connection Proof:
+-----------------
+1  [v4_card_3(k5_xboole_0(1^[], 2^[]))]   (3)  
+1.1  [-v4_card_3(k5_xboole_0(1^[], 2^[])), k2_xboole_0(k4_xboole_0(1^[], 2^[]), k4_xboole_0(2^[], 1^[]))=k5_xboole_0(1^[], 2^[]), v4_card_3(k2_xboole_0(k4_xboole_0(1^[], 2^[]), k4_xboole_0(2^[], 1^[])))]   (14)  substitution:[[_G3396, _G3347], [k5_xboole_0(1^[], 2^[]), k2_xboole_0(k4_xboole_0(1^[], 2^[]), k4_xboole_0(2^[], 1^[]))]]
+1.1.1  [- (k2_xboole_0(k4_xboole_0(1^[], 2^[]), k4_xboole_0(2^[], 1^[]))=k5_xboole_0(1^[], 2^[])), k5_xboole_0(1^[], 2^[])=k2_xboole_0(k4_xboole_0(1^[], 2^[]), k4_xboole_0(2^[], 1^[]))]   (12)  substitution:[[_G2121, _G2076], [k2_xboole_0(k4_xboole_0(1^[], 2^[]), k4_xboole_0(2^[], 1^[])), k5_xboole_0(1^[], 2^[])]]
+1.1.1.1  [- (k5_xboole_0(1^[], 2^[])=k2_xboole_0(k4_xboole_0(1^[], 2^[]), k4_xboole_0(2^[], 1^[])))]   (4)  substitution:[[_G5512, _G5563], [1^[], 2^[]]]
+1.1.2  [-v4_card_3(k2_xboole_0(k4_xboole_0(1^[], 2^[]), k4_xboole_0(2^[], 1^[]))), v4_card_3(k4_xboole_0(1^[], 2^[])), v4_card_3(k4_xboole_0(2^[], 1^[]))]   (7)  substitution:[[_G6310, _G6361], [k4_xboole_0(1^[], 2^[]), k4_xboole_0(2^[], 1^[])]]
+1.1.2.1  [-v4_card_3(k4_xboole_0(1^[], 2^[])), r1_tarski(k4_xboole_0(1^[], 2^[]), 1^[]), v4_card_3(1^[])]   (5)  substitution:[[_G5844, _G5893], [k4_xboole_0(1^[], 2^[]), 1^[]]]
+1.1.2.1.1  [-r1_tarski(k4_xboole_0(1^[], 2^[]), 1^[])]   (6)  substitution:[[_G6122, _G6164], [1^[], 2^[]]]
+1.1.2.1.2  [-v4_card_3(1^[])]   (1)  
+1.1.2.2  [-v4_card_3(k4_xboole_0(2^[], 1^[])), r1_tarski(k4_xboole_0(2^[], 1^[]), 2^[]), v4_card_3(2^[])]   (5)  substitution:[[_G5844, _G5893], [k4_xboole_0(2^[], 1^[]), 2^[]]]
+1.1.2.2.1  [-r1_tarski(k4_xboole_0(2^[], 1^[]), 2^[])]   (6)  substitution:[[_G6122, _G6164], [2^[], 1^[]]]
+1.1.2.2.2  [-v4_card_3(2^[])]   (2)  
+------------------------------------------------------
+End of proof for t100_card_2

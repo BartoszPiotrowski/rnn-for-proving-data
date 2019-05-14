@@ -1,0 +1,35 @@
+
+t13_xtuple_0 is a Theorem
+Start of proof for t13_xtuple_0
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-r2_hidden(k3_xtuple_0(4^[], 5^[], 6^[]), 7^[])]
+ (2)  [r2_hidden(4^[], k11_xtuple_0(7^[]))]
+ (3)  [- (k11_xtuple_0(_G6155)=k9_xtuple_0(k9_xtuple_0(_G6155)))]
+ (4)  [- (k3_xtuple_0(_G6293, _G6347, _G6402)=k4_tarski(k4_tarski(_G6293, _G6347), _G6402))]
+ (5)  [_G5675=k9_xtuple_0(_G5609), r2_hidden(_G5813, _G5675), -r2_hidden(k4_tarski(_G5813, 1^[_G5813, _G5675, _G5609]), _G5609)]
+ (6)  [_G5675=k9_xtuple_0(_G5609), -r2_hidden(_G5813, _G5675), r2_hidden(k4_tarski(_G5813, _G5930), _G5609)]
+ (7)  [- (_G5675=k9_xtuple_0(_G5609)), r2_hidden(2^[_G5675, _G5609], _G5675), r2_hidden(k4_tarski(2^[_G5675, _G5609], _G7804), _G5609)]
+ (8)  [- (_G5675=k9_xtuple_0(_G5609)), -r2_hidden(2^[_G5675, _G5609], _G5675), -r2_hidden(k4_tarski(2^[_G5675, _G5609], 3^[_G5675, _G5609]), _G5609)]
+ (9)  [-r2_hidden(_G2802, _G2939), r2_hidden(_G2735, _G2870), _G2735=_G2802, _G2870=_G2939]
+ (10)  [- (_G1962=_G1962)]
+ (11)  [_G2061=_G2106, - (_G2106=_G2061)]
+ (12)  [- (_G2294=_G2407), _G2294=_G2350, _G2350=_G2407]
+ (13)  [_G3353=_G3402, - (k9_xtuple_0(_G3353)=k9_xtuple_0(_G3402))]
+ (14)  [- (k4_tarski(_G3631, _G3766)=k4_tarski(_G3698, _G3835)), _G3631=_G3698, _G3766=_G3835]
+ (15)  [_G5247=_G5296, - (k11_xtuple_0(_G5247)=k11_xtuple_0(_G5296))]
+ (16)  [- (k3_xtuple_0(_G4228, _G4399, _G4574)=k3_xtuple_0(_G4313, _G4486, _G4663)), _G4228=_G4313, _G4399=_G4486, _G4574=_G4663]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(4^[], k11_xtuple_0(7^[]))]   (2)  
+1.1  [-r2_hidden(4^[], k11_xtuple_0(7^[])), k11_xtuple_0(7^[])=k9_xtuple_0(k9_xtuple_0(7^[])), r2_hidden(k4_tarski(4^[], 5^[]), k9_xtuple_0(7^[]))]   (6)  substitution:[[_G5813, _G5675, _G5609, _G5930], [4^[], k11_xtuple_0(7^[]), k9_xtuple_0(7^[]), 5^[]]]
+1.1.1  [- (k11_xtuple_0(7^[])=k9_xtuple_0(k9_xtuple_0(7^[])))]   (3)  substitution:[[_G6155], [7^[]]]
+1.1.2  [-r2_hidden(k4_tarski(4^[], 5^[]), k9_xtuple_0(7^[])), k9_xtuple_0(7^[])=k9_xtuple_0(7^[]), r2_hidden(k4_tarski(k4_tarski(4^[], 5^[]), 6^[]), 7^[])]   (6)  substitution:[[_G5813, _G5675, _G5609, _G5930], [k4_tarski(4^[], 5^[]), k9_xtuple_0(7^[]), 7^[], 6^[]]]
+1.1.2.1  [- (k9_xtuple_0(7^[])=k9_xtuple_0(7^[]))]   (10)  substitution:[[_G1962], [k9_xtuple_0(7^[])]]
+1.1.2.2  [-r2_hidden(k4_tarski(k4_tarski(4^[], 5^[]), 6^[]), 7^[]), r2_hidden(k3_xtuple_0(4^[], 5^[], 6^[]), 7^[]), k3_xtuple_0(4^[], 5^[], 6^[])=k4_tarski(k4_tarski(4^[], 5^[]), 6^[]), 7^[]=7^[]]   (9)  substitution:[[_G2802, _G2939, _G2735, _G2870], [k4_tarski(k4_tarski(4^[], 5^[]), 6^[]), 7^[], k3_xtuple_0(4^[], 5^[], 6^[]), 7^[]]]
+1.1.2.2.1  [-r2_hidden(k3_xtuple_0(4^[], 5^[], 6^[]), 7^[])]   (1)  
+1.1.2.2.2  [- (k3_xtuple_0(4^[], 5^[], 6^[])=k4_tarski(k4_tarski(4^[], 5^[]), 6^[]))]   (4)  substitution:[[_G6293, _G6347, _G6402], [4^[], 5^[], 6^[]]]
+1.1.2.2.3  [- (7^[]=7^[])]   (10)  substitution:[[_G1962], [7^[]]]
+------------------------------------------------------
+End of proof for t13_xtuple_0

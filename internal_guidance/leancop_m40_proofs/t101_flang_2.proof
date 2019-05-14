@@ -1,0 +1,73 @@
+
+t101_flang_2 is a Theorem
+Start of proof for t101_flang_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(2^[], k1_zfmisc_1(k8_afinsq_1(1^[])))]
+ (2)  [-m1_subset_1(3^[], k1_zfmisc_1(k8_afinsq_1(1^[])))]
+ (3)  [r1_tarski(2^[], k6_flang_1(1^[], 2^[], k2_flang_2(1^[], 3^[]))), r1_tarski(2^[], k6_flang_1(1^[], k2_flang_2(1^[], 3^[]), 2^[]))]
+ (4)  [m1_subset_1(_G8802, k1_zfmisc_1(k8_afinsq_1(_G8746))), -m1_subset_1(k2_flang_2(_G8746, _G8802), k1_zfmisc_1(k8_afinsq_1(_G8746)))]
+ (5)  [- (k3_catalan2(_G9105)=k8_afinsq_1(_G9105))]
+ (6)  [m1_subset_1(_G9322, k1_zfmisc_1(k3_catalan2(_G9236))), m1_subset_1(_G9494, k1_zfmisc_1(k3_catalan2(_G9236))), r2_hidden(k2_flang_1(_G9236), _G9322), -r1_tarski(_G9494, k6_flang_1(_G9236, _G9494, _G9322))]
+ (7)  [m1_subset_1(_G9322, k1_zfmisc_1(k3_catalan2(_G9236))), m1_subset_1(_G9494, k1_zfmisc_1(k3_catalan2(_G9236))), r2_hidden(k2_flang_1(_G9236), _G9322), -r1_tarski(_G9494, k6_flang_1(_G9236, _G9322, _G9494))]
+ (8)  [m1_subset_1(_G10248, k1_zfmisc_1(k8_afinsq_1(_G10176))), -r2_hidden(_G10105, k2_flang_2(_G10176, _G10248)), _G10105=k2_flang_1(_G10176)]
+ (9)  [m1_subset_1(_G10248, k1_zfmisc_1(k8_afinsq_1(_G10176))), -r2_hidden(_G10105, k2_flang_2(_G10176, _G10248)), r2_hidden(_G10105, _G10248)]
+ (10)  [m1_subset_1(_G10248, k1_zfmisc_1(k8_afinsq_1(_G10176))), r2_hidden(_G10105, k2_flang_2(_G10176, _G10248)), - (_G10105=k2_flang_1(_G10176)), -r2_hidden(_G10105, _G10248)]
+ (11)  [_G5892=_G5941, - (k3_catalan2(_G5892)=k3_catalan2(_G5941))]
+ (12)  [_G6170=_G6219, - (k2_flang_1(_G6170)=k2_flang_1(_G6219))]
+ (13)  [_G6448=_G6497, - (k1_zfmisc_1(_G6448)=k1_zfmisc_1(_G6497))]
+ (14)  [_G6726=_G6775, - (k8_afinsq_1(_G6726)=k8_afinsq_1(_G6775))]
+ (15)  [- (k2_flang_2(_G8023, _G8158)=k2_flang_2(_G8090, _G8227)), _G8023=_G8090, _G8158=_G8227]
+ (16)  [- (k6_flang_1(_G7004, _G7175, _G7350)=k6_flang_1(_G7089, _G7262, _G7439)), _G7004=_G7089, _G7175=_G7262, _G7350=_G7439]
+ (17)  [- (_G3265=_G3265)]
+ (18)  [_G3364=_G3409, - (_G3409=_G3364)]
+ (19)  [- (_G3597=_G3710), _G3597=_G3653, _G3653=_G3710]
+ (20)  [-r2_hidden(_G4114, _G4251), r2_hidden(_G4047, _G4182), _G4047=_G4114, _G4182=_G4251]
+ (21)  [-m1_subset_1(_G4711, _G4848), m1_subset_1(_G4644, _G4779), _G4644=_G4711, _G4779=_G4848]
+ (22)  [-r1_tarski(_G5299, _G5436), r1_tarski(_G5232, _G5367), _G5232=_G5299, _G5367=_G5436]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(2^[], k6_flang_1(1^[], 2^[], k2_flang_2(1^[], 3^[]))), r1_tarski(2^[], k6_flang_1(1^[], k2_flang_2(1^[], 3^[]), 2^[]))]   (3)  
+1.1  [-r1_tarski(2^[], k6_flang_1(1^[], 2^[], k2_flang_2(1^[], 3^[]))), m1_subset_1(k2_flang_2(1^[], 3^[]), k1_zfmisc_1(k3_catalan2(1^[]))), m1_subset_1(2^[], k1_zfmisc_1(k3_catalan2(1^[]))), r2_hidden(k2_flang_1(1^[]), k2_flang_2(1^[], 3^[]))]   (6)  substitution:[[_G9494, _G9236, _G9322], [2^[], 1^[], k2_flang_2(1^[], 3^[])]]
+1.1.1  [-m1_subset_1(k2_flang_2(1^[], 3^[]), k1_zfmisc_1(k3_catalan2(1^[]))), m1_subset_1(k2_flang_2(1^[], 3^[]), k1_zfmisc_1(k8_afinsq_1(1^[]))), k2_flang_2(1^[], 3^[])=k2_flang_2(1^[], 3^[]), k1_zfmisc_1(k8_afinsq_1(1^[]))=k1_zfmisc_1(k3_catalan2(1^[]))]   (21)  substitution:[[_G4711, _G4848, _G4644, _G4779], [k2_flang_2(1^[], 3^[]), k1_zfmisc_1(k3_catalan2(1^[])), k2_flang_2(1^[], 3^[]), k1_zfmisc_1(k8_afinsq_1(1^[]))]]
+1.1.1.1  [-m1_subset_1(k2_flang_2(1^[], 3^[]), k1_zfmisc_1(k8_afinsq_1(1^[]))), m1_subset_1(3^[], k1_zfmisc_1(k8_afinsq_1(1^[])))]   (4)  substitution:[[_G8746, _G8802], [1^[], 3^[]]]
+1.1.1.1.1  [-m1_subset_1(3^[], k1_zfmisc_1(k8_afinsq_1(1^[])))]   (2)  
+1.1.1.2  [- (k2_flang_2(1^[], 3^[])=k2_flang_2(1^[], 3^[])), 1^[]=1^[], 3^[]=3^[]]   (15)  substitution:[[_G8023, _G8158, _G8090, _G8227], [1^[], 3^[], 1^[], 3^[]]]
+1.1.1.2.1  [- (1^[]=1^[])]   (17)  substitution:[[_G3265], [1^[]]]
+1.1.1.2.2  [- (3^[]=3^[])]   (17)  substitution:[[_G3265], [3^[]]]
+1.1.1.3  [- (k1_zfmisc_1(k8_afinsq_1(1^[]))=k1_zfmisc_1(k3_catalan2(1^[]))), k8_afinsq_1(1^[])=k3_catalan2(1^[])]   (13)  substitution:[[_G6448, _G6497], [k8_afinsq_1(1^[]), k3_catalan2(1^[])]]
+1.1.1.3.1  [- (k8_afinsq_1(1^[])=k3_catalan2(1^[])), k3_catalan2(1^[])=k8_afinsq_1(1^[])]   (18)  substitution:[[_G3409, _G3364], [k8_afinsq_1(1^[]), k3_catalan2(1^[])]]
+1.1.1.3.1.1  [- (k3_catalan2(1^[])=k8_afinsq_1(1^[]))]   (5)  substitution:[[_G9105], [1^[]]]
+1.1.2  [-m1_subset_1(2^[], k1_zfmisc_1(k3_catalan2(1^[]))), m1_subset_1(2^[], k1_zfmisc_1(k8_afinsq_1(1^[]))), 2^[]=2^[], k1_zfmisc_1(k8_afinsq_1(1^[]))=k1_zfmisc_1(k3_catalan2(1^[]))]   (21)  substitution:[[_G4711, _G4848, _G4644, _G4779], [2^[], k1_zfmisc_1(k3_catalan2(1^[])), 2^[], k1_zfmisc_1(k8_afinsq_1(1^[]))]]
+1.1.2.1  [-m1_subset_1(2^[], k1_zfmisc_1(k8_afinsq_1(1^[])))]   (1)  
+1.1.2.2  [- (2^[]=2^[])]   (17)  substitution:[[_G3265], [2^[]]]
+1.1.2.3  [- (k1_zfmisc_1(k8_afinsq_1(1^[]))=k1_zfmisc_1(k3_catalan2(1^[]))), k8_afinsq_1(1^[])=k3_catalan2(1^[])]   (13)  substitution:[[_G6448, _G6497], [k8_afinsq_1(1^[]), k3_catalan2(1^[])]]
+1.1.2.3.1  [- (k8_afinsq_1(1^[])=k3_catalan2(1^[])), k3_catalan2(1^[])=k8_afinsq_1(1^[])]   (18)  substitution:[[_G3409, _G3364], [k8_afinsq_1(1^[]), k3_catalan2(1^[])]]
+1.1.2.3.1.1  [- (k3_catalan2(1^[])=k8_afinsq_1(1^[]))]   (5)  substitution:[[_G9105], [1^[]]]
+1.1.3  [-r2_hidden(k2_flang_1(1^[]), k2_flang_2(1^[], 3^[])), m1_subset_1(3^[], k1_zfmisc_1(k8_afinsq_1(1^[]))), k2_flang_1(1^[])=k2_flang_1(1^[])]   (8)  substitution:[[_G10105, _G10176, _G10248], [k2_flang_1(1^[]), 1^[], 3^[]]]
+1.1.3.1  [-m1_subset_1(3^[], k1_zfmisc_1(k8_afinsq_1(1^[])))]   (2)  
+1.1.3.2  [- (k2_flang_1(1^[])=k2_flang_1(1^[])), 1^[]=1^[]]   (12)  substitution:[[_G6170, _G6219], [1^[], 1^[]]]
+1.1.3.2.1  [- (1^[]=1^[])]   (17)  substitution:[[_G3265], [1^[]]]
+1.2  [-r1_tarski(2^[], k6_flang_1(1^[], k2_flang_2(1^[], 3^[]), 2^[])), m1_subset_1(k2_flang_2(1^[], 3^[]), k1_zfmisc_1(k3_catalan2(1^[]))), m1_subset_1(2^[], k1_zfmisc_1(k3_catalan2(1^[]))), r2_hidden(k2_flang_1(1^[]), k2_flang_2(1^[], 3^[]))]   (7)  substitution:[[_G9494, _G9236, _G9322], [2^[], 1^[], k2_flang_2(1^[], 3^[])]]
+1.2.1  [-m1_subset_1(k2_flang_2(1^[], 3^[]), k1_zfmisc_1(k3_catalan2(1^[]))), m1_subset_1(k2_flang_2(1^[], 3^[]), k1_zfmisc_1(k8_afinsq_1(1^[]))), k2_flang_2(1^[], 3^[])=k2_flang_2(1^[], 3^[]), k1_zfmisc_1(k8_afinsq_1(1^[]))=k1_zfmisc_1(k3_catalan2(1^[]))]   (21)  substitution:[[_G4711, _G4848, _G4644, _G4779], [k2_flang_2(1^[], 3^[]), k1_zfmisc_1(k3_catalan2(1^[])), k2_flang_2(1^[], 3^[]), k1_zfmisc_1(k8_afinsq_1(1^[]))]]
+1.2.1.1  [-m1_subset_1(k2_flang_2(1^[], 3^[]), k1_zfmisc_1(k8_afinsq_1(1^[]))), m1_subset_1(3^[], k1_zfmisc_1(k8_afinsq_1(1^[])))]   (4)  substitution:[[_G8746, _G8802], [1^[], 3^[]]]
+1.2.1.1.1  [-m1_subset_1(3^[], k1_zfmisc_1(k8_afinsq_1(1^[])))]   (2)  
+1.2.1.2  [- (k2_flang_2(1^[], 3^[])=k2_flang_2(1^[], 3^[])), 1^[]=1^[], 3^[]=3^[]]   (15)  substitution:[[_G8023, _G8158, _G8090, _G8227], [1^[], 3^[], 1^[], 3^[]]]
+1.2.1.2.1  [- (1^[]=1^[])]   (17)  substitution:[[_G3265], [1^[]]]
+1.2.1.2.2  [- (3^[]=3^[])]   (17)  substitution:[[_G3265], [3^[]]]
+1.2.1.3  [- (k1_zfmisc_1(k8_afinsq_1(1^[]))=k1_zfmisc_1(k3_catalan2(1^[]))), k8_afinsq_1(1^[])=k3_catalan2(1^[])]   (13)  substitution:[[_G6448, _G6497], [k8_afinsq_1(1^[]), k3_catalan2(1^[])]]
+1.2.1.3.1  [- (k8_afinsq_1(1^[])=k3_catalan2(1^[])), k3_catalan2(1^[])=k8_afinsq_1(1^[])]   (18)  substitution:[[_G3409, _G3364], [k8_afinsq_1(1^[]), k3_catalan2(1^[])]]
+1.2.1.3.1.1  [- (k3_catalan2(1^[])=k8_afinsq_1(1^[]))]   (5)  substitution:[[_G9105], [1^[]]]
+1.2.2  [-m1_subset_1(2^[], k1_zfmisc_1(k3_catalan2(1^[]))), m1_subset_1(2^[], k1_zfmisc_1(k8_afinsq_1(1^[]))), 2^[]=2^[], k1_zfmisc_1(k8_afinsq_1(1^[]))=k1_zfmisc_1(k3_catalan2(1^[]))]   (21)  substitution:[[_G4711, _G4848, _G4644, _G4779], [2^[], k1_zfmisc_1(k3_catalan2(1^[])), 2^[], k1_zfmisc_1(k8_afinsq_1(1^[]))]]
+1.2.2.1  [-m1_subset_1(2^[], k1_zfmisc_1(k8_afinsq_1(1^[])))]   (1)  
+1.2.2.2  [- (2^[]=2^[])]   (17)  substitution:[[_G3265], [2^[]]]
+1.2.2.3  [- (k1_zfmisc_1(k8_afinsq_1(1^[]))=k1_zfmisc_1(k3_catalan2(1^[]))), k8_afinsq_1(1^[])=k3_catalan2(1^[])]   (13)  substitution:[[_G6448, _G6497], [k8_afinsq_1(1^[]), k3_catalan2(1^[])]]
+1.2.2.3.1  [- (k8_afinsq_1(1^[])=k3_catalan2(1^[])), k3_catalan2(1^[])=k8_afinsq_1(1^[])]   (18)  substitution:[[_G3409, _G3364], [k8_afinsq_1(1^[]), k3_catalan2(1^[])]]
+1.2.2.3.1.1  [- (k3_catalan2(1^[])=k8_afinsq_1(1^[]))]   (5)  substitution:[[_G9105], [1^[]]]
+1.2.3  [-r2_hidden(k2_flang_1(1^[]), k2_flang_2(1^[], 3^[])), m1_subset_1(3^[], k1_zfmisc_1(k8_afinsq_1(1^[]))), k2_flang_1(1^[])=k2_flang_1(1^[])]   (8)  substitution:[[_G10105, _G10176, _G10248], [k2_flang_1(1^[]), 1^[], 3^[]]]
+1.2.3.1  [-m1_subset_1(3^[], k1_zfmisc_1(k8_afinsq_1(1^[])))]   (2)  
+1.2.3.2  [- (k2_flang_1(1^[])=k2_flang_1(1^[])), 1^[]=1^[]]   (12)  substitution:[[_G6170, _G6219], [1^[], 1^[]]]
+1.2.3.2.1  [- (1^[]=1^[])]   (17)  substitution:[[_G3265], [1^[]]]
+------------------------------------------------------
+End of proof for t101_flang_2

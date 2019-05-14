@@ -1,0 +1,35 @@
+
+l25_square_1 is a Theorem
+Start of proof for l25_square_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k5_square_1(np__2)=k3_xcmplx_0(np__2, np__2)]
+ (2)  [m1_subset_1(_G6101, k1_numbers), -v1_xcmplx_0(_G6101)]
+ (3)  [v1_xcmplx_0(_G6258), - (k3_square_1(_G6258)=k3_xcmplx_0(_G6258, _G6258))]
+ (4)  [-v2_xxreal_0(np__2)]
+ (5)  [-m2_subset_1(np__2, k1_numbers, k5_numbers)]
+ (6)  [-m1_subset_1(np__2, k5_numbers)]
+ (7)  [-m1_subset_1(np__2, k1_numbers)]
+ (8)  [m1_subset_1(_G6473, k1_numbers), - (k5_square_1(_G6473)=k3_square_1(_G6473))]
+ (9)  [_G4894=_G4943, - (k3_square_1(_G4894)=k3_square_1(_G4943))]
+ (10)  [_G5172=_G5221, - (k5_square_1(_G5172)=k5_square_1(_G5221))]
+ (11)  [- (k3_xcmplx_0(_G5441, _G5576)=k3_xcmplx_0(_G5508, _G5645)), _G5441=_G5508, _G5576=_G5645]
+ (12)  [- (_G1856=_G1856)]
+ (13)  [_G1955=_G2000, - (_G2000=_G1955)]
+ (14)  [- (_G2188=_G2301), _G2188=_G2244, _G2244=_G2301]
+ (15)  [-v1_xcmplx_0(_G2687), _G2638=_G2687, v1_xcmplx_0(_G2638)]
+ (16)  [-v2_xxreal_0(_G2965), _G2916=_G2965, v2_xxreal_0(_G2916)]
+ (17)  [-m1_subset_1(_G4280, _G4417), m1_subset_1(_G4213, _G4348), _G4213=_G4280, _G4348=_G4417]
+ (18)  [-m2_subset_1(_G3279, _G3452, _G3629), m2_subset_1(_G3194, _G3365, _G3540), _G3194=_G3279, _G3365=_G3452, _G3540=_G3629]
+
+Connection Proof:
+-----------------
+1  [k5_square_1(np__2)=k3_xcmplx_0(np__2, np__2)]   (1)  
+1.1  [- (k5_square_1(np__2)=k3_xcmplx_0(np__2, np__2)), k5_square_1(np__2)=k3_square_1(np__2), k3_square_1(np__2)=k3_xcmplx_0(np__2, np__2)]   (14)  substitution:[[_G2188, _G2301, _G2244], [k5_square_1(np__2), k3_xcmplx_0(np__2, np__2), k3_square_1(np__2)]]
+1.1.1  [- (k5_square_1(np__2)=k3_square_1(np__2)), m1_subset_1(np__2, k1_numbers)]   (8)  substitution:[[_G6473], [np__2]]
+1.1.1.1  [-m1_subset_1(np__2, k1_numbers)]   (7)  
+1.1.2  [- (k3_square_1(np__2)=k3_xcmplx_0(np__2, np__2)), v1_xcmplx_0(np__2)]   (3)  substitution:[[_G6258], [np__2]]
+1.1.2.1  [-v1_xcmplx_0(np__2), m1_subset_1(np__2, k1_numbers)]   (2)  substitution:[[_G6101], [np__2]]
+1.1.2.1.1  [-m1_subset_1(np__2, k1_numbers)]   (7)  
+------------------------------------------------------
+End of proof for l25_square_1

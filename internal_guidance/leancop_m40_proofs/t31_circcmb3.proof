@@ -1,0 +1,58 @@
+
+t31_circcmb3 is a Theorem
+Start of proof for t31_circcmb3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [r2_hidden(k6_classes1(2^[]), k6_classes1(k4_tarski(2^[], 3^[]))), r2_hidden(k6_classes1(3^[]), k6_classes1(k4_tarski(2^[], 3^[])))]
+ (2)  [v3_ordinal1(_G7115), -v1_ordinal1(_G7115)]
+ (3)  [v3_ordinal1(_G7115), -v2_ordinal1(_G7115)]
+ (4)  [- (k2_tarski(_G7304, _G7349)=k2_tarski(_G7349, _G7304))]
+ (5)  [- (k4_tarski(_G8185, _G8235)=k2_tarski(k2_tarski(_G8185, _G8235), k1_tarski(_G8185)))]
+ (6)  [-v3_ordinal1(k6_classes1(_G8490))]
+ (7)  [r2_hidden(_G9046, _G9095), -r2_hidden(k6_classes1(_G9046), k6_classes1(_G9095))]
+ (8)  [v1_ordinal1(_G8702), -r2_hidden(_G8579, _G8702), r2_hidden(_G8579, _G8640), r2_hidden(_G8640, _G8702)]
+ (9)  [_G7687=k2_tarski(_G7546, _G7616), -r2_hidden(_G7855, _G7687), _G7855=_G7546]
+ (10)  [_G7687=k2_tarski(_G7546, _G7616), -r2_hidden(_G7855, _G7687), _G7855=_G7616]
+ (11)  [_G7687=k2_tarski(_G7546, _G7616), r2_hidden(_G7855, _G7687), - (_G7855=_G7546), - (_G7855=_G7616)]
+ (12)  [- (_G7687=k2_tarski(_G7546, _G7616)), r2_hidden(1^[_G7687, _G7616, _G7546], _G7687), 1^[_G7687, _G7616, _G7546]=_G7546]
+ (13)  [- (_G7687=k2_tarski(_G7546, _G7616)), r2_hidden(1^[_G7687, _G7616, _G7546], _G7687), 1^[_G7687, _G7616, _G7546]=_G7616]
+ (14)  [- (_G7687=k2_tarski(_G7546, _G7616)), -r2_hidden(1^[_G7687, _G7616, _G7546], _G7687), - (1^[_G7687, _G7616, _G7546]=_G7546), - (1^[_G7687, _G7616, _G7546]=_G7616)]
+ (15)  [- (k2_tarski(_G5290, _G5425)=k2_tarski(_G5357, _G5494)), _G5290=_G5357, _G5425=_G5494]
+ (16)  [_G5887=_G5936, - (k1_tarski(_G5887)=k1_tarski(_G5936))]
+ (17)  [_G6165=_G6214, - (k6_classes1(_G6165)=k6_classes1(_G6214))]
+ (18)  [- (k4_tarski(_G6434, _G6569)=k4_tarski(_G6501, _G6638)), _G6434=_G6501, _G6569=_G6638]
+ (19)  [- (_G3002=_G3002)]
+ (20)  [_G3101=_G3146, - (_G3146=_G3101)]
+ (21)  [- (_G3334=_G3447), _G3334=_G3390, _G3390=_G3447]
+ (22)  [-v2_ordinal1(_G3833), _G3784=_G3833, v2_ordinal1(_G3784)]
+ (23)  [-v3_ordinal1(_G4111), _G4062=_G4111, v3_ordinal1(_G4062)]
+ (24)  [-v1_ordinal1(_G4389), _G4340=_G4389, v1_ordinal1(_G4340)]
+ (25)  [-r2_hidden(_G4676, _G4813), r2_hidden(_G4609, _G4744), _G4609=_G4676, _G4744=_G4813]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(k6_classes1(2^[]), k6_classes1(k4_tarski(2^[], 3^[]))), r2_hidden(k6_classes1(3^[]), k6_classes1(k4_tarski(2^[], 3^[])))]   (1)  
+1.1  [-r2_hidden(k6_classes1(2^[]), k6_classes1(k4_tarski(2^[], 3^[]))), v1_ordinal1(k6_classes1(k4_tarski(2^[], 3^[]))), r2_hidden(k6_classes1(2^[]), k6_classes1(k2_tarski(3^[], 2^[]))), r2_hidden(k6_classes1(k2_tarski(3^[], 2^[])), k6_classes1(k4_tarski(2^[], 3^[])))]   (8)  substitution:[[_G8579, _G8702, _G8640], [k6_classes1(2^[]), k6_classes1(k4_tarski(2^[], 3^[])), k6_classes1(k2_tarski(3^[], 2^[]))]]
+1.1.1  [-v1_ordinal1(k6_classes1(k4_tarski(2^[], 3^[]))), v3_ordinal1(k6_classes1(k4_tarski(2^[], 3^[])))]   (2)  substitution:[[_G7115], [k6_classes1(k4_tarski(2^[], 3^[]))]]
+1.1.1.1  [-v3_ordinal1(k6_classes1(k4_tarski(2^[], 3^[])))]   (6)  substitution:[[_G8490], [k4_tarski(2^[], 3^[])]]
+1.1.2  [-r2_hidden(k6_classes1(2^[]), k6_classes1(k2_tarski(3^[], 2^[]))), r2_hidden(2^[], k2_tarski(3^[], 2^[]))]   (7)  substitution:[[_G9046, _G9095], [2^[], k2_tarski(3^[], 2^[])]]
+1.1.2.1  [-r2_hidden(2^[], k2_tarski(3^[], 2^[])), k2_tarski(3^[], 2^[])=k2_tarski(2^[], 3^[]), 2^[]=2^[]]   (9)  substitution:[[_G7855, _G7687, _G7546, _G7616], [2^[], k2_tarski(3^[], 2^[]), 2^[], 3^[]]]
+1.1.2.1.1  [- (k2_tarski(3^[], 2^[])=k2_tarski(2^[], 3^[]))]   (4)  substitution:[[_G7304, _G7349], [3^[], 2^[]]]
+1.1.2.1.2  [- (2^[]=2^[])]   (19)  substitution:[[_G3002], [2^[]]]
+1.1.3  [-r2_hidden(k6_classes1(k2_tarski(3^[], 2^[])), k6_classes1(k4_tarski(2^[], 3^[]))), r2_hidden(k2_tarski(3^[], 2^[]), k4_tarski(2^[], 3^[]))]   (7)  substitution:[[_G9046, _G9095], [k2_tarski(3^[], 2^[]), k4_tarski(2^[], 3^[])]]
+1.1.3.1  [-r2_hidden(k2_tarski(3^[], 2^[]), k4_tarski(2^[], 3^[])), k4_tarski(2^[], 3^[])=k2_tarski(k2_tarski(2^[], 3^[]), k1_tarski(2^[])), k2_tarski(3^[], 2^[])=k2_tarski(2^[], 3^[])]   (9)  substitution:[[_G7855, _G7687, _G7546, _G7616], [k2_tarski(3^[], 2^[]), k4_tarski(2^[], 3^[]), k2_tarski(2^[], 3^[]), k1_tarski(2^[])]]
+1.1.3.1.1  [- (k4_tarski(2^[], 3^[])=k2_tarski(k2_tarski(2^[], 3^[]), k1_tarski(2^[])))]   (5)  substitution:[[_G8185, _G8235], [2^[], 3^[]]]
+1.1.3.1.2  [- (k2_tarski(3^[], 2^[])=k2_tarski(2^[], 3^[]))]   (4)  substitution:[[_G7304, _G7349], [3^[], 2^[]]]
+1.2  [-r2_hidden(k6_classes1(3^[]), k6_classes1(k4_tarski(2^[], 3^[]))), v1_ordinal1(k6_classes1(k4_tarski(2^[], 3^[]))), r2_hidden(k6_classes1(3^[]), k6_classes1(k2_tarski(2^[], 3^[]))), r2_hidden(k6_classes1(k2_tarski(2^[], 3^[])), k6_classes1(k4_tarski(2^[], 3^[])))]   (8)  substitution:[[_G8579, _G8702, _G8640], [k6_classes1(3^[]), k6_classes1(k4_tarski(2^[], 3^[])), k6_classes1(k2_tarski(2^[], 3^[]))]]
+1.2.1  [-v1_ordinal1(k6_classes1(k4_tarski(2^[], 3^[]))), v3_ordinal1(k6_classes1(k4_tarski(2^[], 3^[])))]   (2)  substitution:[[_G7115], [k6_classes1(k4_tarski(2^[], 3^[]))]]
+1.2.1.1  [-v3_ordinal1(k6_classes1(k4_tarski(2^[], 3^[])))]   (6)  substitution:[[_G8490], [k4_tarski(2^[], 3^[])]]
+1.2.2  [-r2_hidden(k6_classes1(3^[]), k6_classes1(k2_tarski(2^[], 3^[]))), r2_hidden(3^[], k2_tarski(2^[], 3^[]))]   (7)  substitution:[[_G9046, _G9095], [3^[], k2_tarski(2^[], 3^[])]]
+1.2.2.1  [-r2_hidden(3^[], k2_tarski(2^[], 3^[])), k2_tarski(2^[], 3^[])=k2_tarski(3^[], 2^[]), 3^[]=3^[]]   (9)  substitution:[[_G7855, _G7687, _G7546, _G7616], [3^[], k2_tarski(2^[], 3^[]), 3^[], 2^[]]]
+1.2.2.1.1  [- (k2_tarski(2^[], 3^[])=k2_tarski(3^[], 2^[]))]   (4)  substitution:[[_G7304, _G7349], [2^[], 3^[]]]
+1.2.2.1.2  [- (3^[]=3^[])]   (19)  substitution:[[_G3002], [3^[]]]
+1.2.3  [-r2_hidden(k6_classes1(k2_tarski(2^[], 3^[])), k6_classes1(k4_tarski(2^[], 3^[]))), r2_hidden(k2_tarski(2^[], 3^[]), k4_tarski(2^[], 3^[]))]   (7)  substitution:[[_G9046, _G9095], [k2_tarski(2^[], 3^[]), k4_tarski(2^[], 3^[])]]
+1.2.3.1  [-r2_hidden(k2_tarski(2^[], 3^[]), k4_tarski(2^[], 3^[])), k4_tarski(2^[], 3^[])=k2_tarski(k2_tarski(2^[], 3^[]), k1_tarski(2^[])), k2_tarski(2^[], 3^[])=k2_tarski(2^[], 3^[])]   (9)  substitution:[[_G7855, _G7687, _G7546, _G7616], [k2_tarski(2^[], 3^[]), k4_tarski(2^[], 3^[]), k2_tarski(2^[], 3^[]), k1_tarski(2^[])]]
+1.2.3.1.1  [- (k4_tarski(2^[], 3^[])=k2_tarski(k2_tarski(2^[], 3^[]), k1_tarski(2^[])))]   (5)  substitution:[[_G8185, _G8235], [2^[], 3^[]]]
+1.2.3.1.2  [- (k2_tarski(2^[], 3^[])=k2_tarski(2^[], 3^[]))]   (19)  substitution:[[_G3002], [k2_tarski(2^[], 3^[])]]
+------------------------------------------------------
+End of proof for t31_circcmb3

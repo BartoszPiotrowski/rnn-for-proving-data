@@ -1,0 +1,66 @@
+
+t46_orders_2 is a Theorem
+Start of proof for t46_orders_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(1^[])]
+ (2)  [-v3_orders_2(1^[])]
+ (3)  [-v4_orders_2(1^[])]
+ (4)  [-v5_orders_2(1^[])]
+ (5)  [-l1_orders_2(1^[])]
+ (6)  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]
+ (7)  [k1_relat_1(k2_wellord1(u1_orders_2(1^[]), 2^[]))=2^[]]
+ (8)  [m1_subset_1(_G12274, k1_zfmisc_1(k2_zfmisc_1(_G12165, _G12219))), -v1_relat_1(_G12274)]
+ (9)  [l1_orders_2(_G12517), v3_orders_2(_G12517), -r1_relat_2(u1_orders_2(_G12517), u1_struct_0(_G12517))]
+ (10)  [l1_orders_2(_G12517), -v3_orders_2(_G12517), r1_relat_2(u1_orders_2(_G12517), u1_struct_0(_G12517))]
+ (11)  [l1_orders_2(_G12764), -m1_subset_1(u1_orders_2(_G12764), k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(_G12764), u1_struct_0(_G12764))))]
+ (12)  [-v1_relat_2(u1_orders_2(_G13027)), v3_orders_2(_G13027), l1_orders_2(_G13027)]
+ (13)  [m1_subset_1(_G13299, k1_zfmisc_1(k2_zfmisc_1(_G13232, _G13232))), r1_relat_2(_G13299, _G13232), - (k1_relset_1(_G13232, _G13299)=_G13232)]
+ (14)  [m1_subset_1(_G13299, k1_zfmisc_1(k2_zfmisc_1(_G13232, _G13232))), r1_relat_2(_G13299, _G13232), - (k1_relat_1(_G13299)=_G13232)]
+ (15)  [m1_subset_1(_G13780, k1_zfmisc_1(_G13827)), -r1_tarski(_G13780, _G13827)]
+ (16)  [-m1_subset_1(_G13780, k1_zfmisc_1(_G13827)), r1_tarski(_G13780, _G13827)]
+ (17)  [v1_relat_1(_G14031), - (k1_relat_1(k2_wellord1(_G14031, _G14125))=_G14125), v1_relat_2(_G14031), r1_tarski(_G14125, k1_relat_1(_G14031))]
+ (18)  [- (k2_zfmisc_1(_G9124, _G9259)=k2_zfmisc_1(_G9191, _G9328)), _G9124=_G9191, _G9259=_G9328]
+ (19)  [- (k1_relset_1(_G9721, _G9856)=k1_relset_1(_G9788, _G9925)), _G9721=_G9788, _G9856=_G9925]
+ (20)  [_G10318=_G10367, - (k1_zfmisc_1(_G10318)=k1_zfmisc_1(_G10367))]
+ (21)  [_G10596=_G10645, - (u1_struct_0(_G10596)=u1_struct_0(_G10645))]
+ (22)  [_G10874=_G10923, - (k1_relat_1(_G10874)=k1_relat_1(_G10923))]
+ (23)  [_G11740=_G11789, - (u1_orders_2(_G11740)=u1_orders_2(_G11789))]
+ (24)  [- (k2_wellord1(_G11152, _G11287)=k2_wellord1(_G11219, _G11356)), _G11152=_G11219, _G11287=_G11356]
+ (25)  [- (_G4404=_G4404)]
+ (26)  [_G4503=_G4548, - (_G4548=_G4503)]
+ (27)  [- (_G4736=_G4849), _G4736=_G4792, _G4792=_G4849]
+ (28)  [-r1_relat_2(_G5253, _G5390), r1_relat_2(_G5186, _G5321), _G5186=_G5253, _G5321=_G5390]
+ (29)  [-v1_relat_1(_G5832), _G5783=_G5832, v1_relat_1(_G5783)]
+ (30)  [-v1_relat_2(_G6110), _G6061=_G6110, v1_relat_2(_G6061)]
+ (31)  [-r1_tarski(_G6406, _G6543), r1_tarski(_G6339, _G6474), _G6339=_G6406, _G6474=_G6543]
+ (32)  [-v2_struct_0(_G6985), _G6936=_G6985, v2_struct_0(_G6936)]
+ (33)  [-v3_orders_2(_G7263), _G7214=_G7263, v3_orders_2(_G7214)]
+ (34)  [-v4_orders_2(_G7541), _G7492=_G7541, v4_orders_2(_G7492)]
+ (35)  [-v5_orders_2(_G7819), _G7770=_G7819, v5_orders_2(_G7770)]
+ (36)  [-l1_orders_2(_G8097), _G8048=_G8097, l1_orders_2(_G8048)]
+ (37)  [-m1_subset_1(_G8384, _G8521), m1_subset_1(_G8317, _G8452), _G8317=_G8384, _G8452=_G8521]
+
+Connection Proof:
+-----------------
+1  [k1_relat_1(k2_wellord1(u1_orders_2(1^[]), 2^[]))=2^[]]   (7)  
+1.1  [- (k1_relat_1(k2_wellord1(u1_orders_2(1^[]), 2^[]))=2^[]), v1_relat_1(u1_orders_2(1^[])), v1_relat_2(u1_orders_2(1^[])), r1_tarski(2^[], k1_relat_1(u1_orders_2(1^[])))]   (17)  substitution:[[_G14031, _G14125], [u1_orders_2(1^[]), 2^[]]]
+1.1.1  [-v1_relat_1(u1_orders_2(1^[])), m1_subset_1(u1_orders_2(1^[]), k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(1^[]), u1_struct_0(1^[]))))]   (8)  substitution:[[_G12274, _G12165, _G12219], [u1_orders_2(1^[]), u1_struct_0(1^[]), u1_struct_0(1^[])]]
+1.1.1.1  [-m1_subset_1(u1_orders_2(1^[]), k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(1^[]), u1_struct_0(1^[])))), l1_orders_2(1^[])]   (11)  substitution:[[_G12764], [1^[]]]
+1.1.1.1.1  [-l1_orders_2(1^[])]   (5)  
+1.1.2  [-v1_relat_2(u1_orders_2(1^[])), v3_orders_2(1^[]), l1_orders_2(1^[])]   (12)  substitution:[[_G13027], [1^[]]]
+1.1.2.1  [-v3_orders_2(1^[])]   (2)  
+1.1.2.2  [-l1_orders_2(1^[])]   (5)  
+1.1.3  [-r1_tarski(2^[], k1_relat_1(u1_orders_2(1^[]))), r1_tarski(2^[], u1_struct_0(1^[])), 2^[]=2^[], u1_struct_0(1^[])=k1_relat_1(u1_orders_2(1^[]))]   (31)  substitution:[[_G6406, _G6543, _G6339, _G6474], [2^[], k1_relat_1(u1_orders_2(1^[])), 2^[], u1_struct_0(1^[])]]
+1.1.3.1  [-r1_tarski(2^[], u1_struct_0(1^[])), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (15)  substitution:[[_G13780, _G13827], [2^[], u1_struct_0(1^[])]]
+1.1.3.1.1  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (6)  
+1.1.3.2  [- (2^[]=2^[])]   (25)  substitution:[[_G4404], [2^[]]]
+1.1.3.3  [- (u1_struct_0(1^[])=k1_relat_1(u1_orders_2(1^[]))), k1_relat_1(u1_orders_2(1^[]))=u1_struct_0(1^[])]   (26)  substitution:[[_G4548, _G4503], [u1_struct_0(1^[]), k1_relat_1(u1_orders_2(1^[]))]]
+1.1.3.3.1  [- (k1_relat_1(u1_orders_2(1^[]))=u1_struct_0(1^[])), m1_subset_1(u1_orders_2(1^[]), k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(1^[]), u1_struct_0(1^[])))), r1_relat_2(u1_orders_2(1^[]), u1_struct_0(1^[]))]   (14)  substitution:[[_G13299, _G13232], [u1_orders_2(1^[]), u1_struct_0(1^[])]]
+1.1.3.3.1.1  [-m1_subset_1(u1_orders_2(1^[]), k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(1^[]), u1_struct_0(1^[])))), l1_orders_2(1^[])]   (11)  substitution:[[_G12764], [1^[]]]
+1.1.3.3.1.1.1  [-l1_orders_2(1^[])]   (5)  
+1.1.3.3.1.2  [-r1_relat_2(u1_orders_2(1^[]), u1_struct_0(1^[])), l1_orders_2(1^[]), v3_orders_2(1^[])]   (9)  substitution:[[_G12517], [1^[]]]
+1.1.3.3.1.2.1  [-l1_orders_2(1^[])]   (5)  
+1.1.3.3.1.2.2  [-v3_orders_2(1^[])]   (2)  
+------------------------------------------------------
+End of proof for t46_orders_2

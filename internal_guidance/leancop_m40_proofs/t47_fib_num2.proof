@@ -1,0 +1,99 @@
+
+t47_fib_num2 is a Theorem
+Start of proof for t47_fib_num2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-3^[], - (1^[]=np__1), - (1^[]=np__2)]
+ (2)  [-3^[], k1_pre_ff(1^[])=np__1]
+ (3)  [-2^[], 1^[]=np__2]
+ (4)  [-2^[], 1^[]=np__1]
+ (5)  [-2^[], - (k1_pre_ff(1^[])=np__1)]
+ (6)  [-v7_ordinal1(1^[])]
+ (7)  [2^[], 3^[]]
+ (8)  [m1_subset_1(_G9234, k4_ordinal1), -v7_ordinal1(_G9234)]
+ (9)  [- (k5_numbers=k4_ordinal1)]
+ (10)  [- (k6_numbers=k1_xboole_0)]
+ (11)  [-r1_xxreal_0(np__1, np__1)]
+ (12)  [r1_xxreal_0(np__2, np__1)]
+ (13)  [-v1_xboole_0(np__0)]
+ (14)  [-v2_xxreal_0(np__2)]
+ (15)  [-m2_subset_1(np__2, k1_numbers, k5_numbers)]
+ (16)  [-m1_subset_1(np__2, k5_numbers)]
+ (17)  [-m1_subset_1(np__2, k1_numbers)]
+ (18)  [- (k1_pre_ff(k6_numbers)=k6_numbers)]
+ (19)  [- (k1_pre_ff(np__1)=np__1)]
+ (20)  [v7_ordinal1(_G10116), - (k1_pre_ff(k2_nat_1(k1_nat_1(_G10116, np__1), np__1))=k2_nat_1(k1_pre_ff(_G10116), k1_pre_ff(k1_nat_1(_G10116, np__1))))]
+ (21)  [- (k1_pre_ff(np__2)=np__1)]
+ (22)  [v7_ordinal1(_G10602), r1_xxreal_0(_G10602, np__2), - (_G10602=k6_numbers), - (_G10602=np__1), - (_G10602=np__2)]
+ (23)  [v1_xboole_0(_G11609), - (_G11609=k1_xboole_0)]
+ (24)  [v7_ordinal1(_G11075), v7_ordinal1(_G11178), -r1_xxreal_0(_G11178, np__1), -r1_xxreal_0(_G11075, _G11178), r1_xxreal_0(k1_pre_ff(_G11075), k1_pre_ff(_G11178))]
+ (25)  [- (k2_nat_1(_G7708, _G7843)=k2_nat_1(_G7775, _G7912)), _G7708=_G7775, _G7843=_G7912]
+ (26)  [_G8893=_G8942, - (k1_pre_ff(_G8893)=k1_pre_ff(_G8942))]
+ (27)  [- (k1_nat_1(_G8305, _G8440)=k1_nat_1(_G8372, _G8509)), _G8305=_G8372, _G8440=_G8509]
+ (28)  [- (_G3753=_G3753)]
+ (29)  [_G3852=_G3897, - (_G3897=_G3852)]
+ (30)  [- (_G4085=_G4198), _G4085=_G4141, _G4141=_G4198]
+ (31)  [-v2_xxreal_0(_G4584), _G4535=_G4584, v2_xxreal_0(_G4535)]
+ (32)  [-m2_subset_1(_G4898, _G5071, _G5248), m2_subset_1(_G4813, _G4984, _G5159), _G4813=_G4898, _G4984=_G5071, _G5159=_G5248]
+ (33)  [-m1_subset_1(_G5908, _G6045), m1_subset_1(_G5841, _G5976), _G5841=_G5908, _G5976=_G6045]
+ (34)  [-r1_xxreal_0(_G6505, _G6642), r1_xxreal_0(_G6438, _G6573), _G6438=_G6505, _G6573=_G6642]
+ (35)  [-v1_xboole_0(_G7084), _G7035=_G7084, v1_xboole_0(_G7035)]
+ (36)  [-v7_ordinal1(_G7353), _G7304=_G7353, v7_ordinal1(_G7304)]
+
+Connection Proof:
+-----------------
+1  [2^[], 3^[]]   (7)  
+1.1  [-2^[], 1^[]=np__1]   (4)  
+1.1.1  [- (1^[]=np__1), v7_ordinal1(1^[]), r1_xxreal_0(1^[], np__2), - (1^[]=k6_numbers), - (1^[]=np__2)]   (22)  substitution:[[_G10602], [1^[]]]
+1.1.1.1  [-v7_ordinal1(1^[])]   (6)  
+1.1.1.2  [-r1_xxreal_0(1^[], np__2), v7_ordinal1(1^[]), v7_ordinal1(np__2), -r1_xxreal_0(np__2, np__1), r1_xxreal_0(k1_pre_ff(1^[]), k1_pre_ff(np__2))]   (24)  substitution:[[_G11075, _G11178], [1^[], np__2]]
+1.1.1.2.1  [-v7_ordinal1(1^[])]   (6)  
+1.1.1.2.2  [-v7_ordinal1(np__2), m1_subset_1(np__2, k4_ordinal1)]   (8)  substitution:[[_G9234], [np__2]]
+1.1.1.2.2.1  [-m1_subset_1(np__2, k4_ordinal1), m1_subset_1(np__2, k5_numbers), np__2=np__2, k5_numbers=k4_ordinal1]   (33)  substitution:[[_G5908, _G6045, _G5841, _G5976], [np__2, k4_ordinal1, np__2, k5_numbers]]
+1.1.1.2.2.1.1  [-m1_subset_1(np__2, k5_numbers)]   (16)  
+1.1.1.2.2.1.2  [- (np__2=np__2)]   (28)  substitution:[[_G3753], [np__2]]
+1.1.1.2.2.1.3  [- (k5_numbers=k4_ordinal1)]   (9)  
+1.1.1.2.3  [r1_xxreal_0(np__2, np__1)]   (12)  
+1.1.1.2.4  [-r1_xxreal_0(k1_pre_ff(1^[]), k1_pre_ff(np__2)), r1_xxreal_0(np__1, np__1), np__1=k1_pre_ff(1^[]), np__1=k1_pre_ff(np__2)]   (34)  substitution:[[_G6505, _G6642, _G6438, _G6573], [k1_pre_ff(1^[]), k1_pre_ff(np__2), np__1, np__1]]
+1.1.1.2.4.1  [-r1_xxreal_0(np__1, np__1)]   (11)  
+1.1.1.2.4.2  [- (np__1=k1_pre_ff(1^[])), k1_pre_ff(1^[])=np__1]   (29)  substitution:[[_G3897, _G3852], [np__1, k1_pre_ff(1^[])]]
+1.1.1.2.4.2.1  [- (k1_pre_ff(1^[])=np__1), -2^[]]   (5)  
+1.1.1.2.4.2.1.1  [2^[]]   (reduction:1)  
+1.1.1.2.4.3  [- (np__1=k1_pre_ff(np__2)), k1_pre_ff(np__2)=np__1]   (29)  substitution:[[_G3897, _G3852], [np__1, k1_pre_ff(np__2)]]
+1.1.1.2.4.3.1  [- (k1_pre_ff(np__2)=np__1)]   (21)  
+1.1.1.3  [1^[]=k6_numbers, - (k1_pre_ff(1^[])=k1_pre_ff(k6_numbers))]   (26)  substitution:[[_G8893, _G8942], [1^[], k6_numbers]]
+1.1.1.3.1  [k1_pre_ff(1^[])=k1_pre_ff(k6_numbers), - (k1_pre_ff(1^[])=1^[]), k1_pre_ff(k6_numbers)=1^[]]   (30)  substitution:[[_G4085, _G4141, _G4198], [k1_pre_ff(1^[]), k1_pre_ff(k6_numbers), 1^[]]]
+1.1.1.3.1.1  [k1_pre_ff(1^[])=1^[], - (1^[]=k1_pre_ff(1^[]))]   (29)  substitution:[[_G3852, _G3897], [k1_pre_ff(1^[]), 1^[]]]
+1.1.1.3.1.1.1  [1^[]=k1_pre_ff(1^[]), - (1^[]=np__1), k1_pre_ff(1^[])=np__1]   (30)  substitution:[[_G4085, _G4141, _G4198], [1^[], k1_pre_ff(1^[]), np__1]]
+1.1.1.3.1.1.1.1  [1^[]=np__1]   (reduction:1.1)  
+1.1.1.3.1.1.1.2  [- (k1_pre_ff(1^[])=np__1), -2^[]]   (5)  
+1.1.1.3.1.1.1.2.1  [2^[]]   (reduction:1)  
+1.1.1.3.1.2  [- (k1_pre_ff(k6_numbers)=1^[]), k1_pre_ff(k6_numbers)=k6_numbers, k6_numbers=1^[]]   (30)  substitution:[[_G4085, _G4198, _G4141], [k1_pre_ff(k6_numbers), 1^[], k6_numbers]]
+1.1.1.3.1.2.1  [- (k1_pre_ff(k6_numbers)=k6_numbers)]   (18)  
+1.1.1.3.1.2.2  [- (k6_numbers=1^[]), 1^[]=k6_numbers]   (29)  substitution:[[_G3897, _G3852], [k6_numbers, 1^[]]]
+1.1.1.3.1.2.2.1  [- (1^[]=k6_numbers)]   (reduction:1.1.1)  
+1.1.1.4  [1^[]=np__2, -2^[]]   (3)  
+1.1.1.4.1  [2^[]]   (reduction:1)  
+1.2  [-3^[], - (1^[]=np__1), - (1^[]=np__2)]   (1)  
+1.2.1  [1^[]=np__1, - (k1_pre_ff(1^[])=k1_pre_ff(np__1))]   (26)  substitution:[[_G8893, _G8942], [1^[], np__1]]
+1.2.1.1  [k1_pre_ff(1^[])=k1_pre_ff(np__1), - (k1_pre_ff(np__1)=k1_pre_ff(1^[]))]   (29)  substitution:[[_G3852, _G3897], [k1_pre_ff(1^[]), k1_pre_ff(np__1)]]
+1.2.1.1.1  [k1_pre_ff(np__1)=k1_pre_ff(1^[]), - (k1_pre_ff(np__1)=k1_pre_ff(1^[])), k1_pre_ff(1^[])=k1_pre_ff(1^[])]   (30)  substitution:[[_G4085, _G4141, _G4198], [k1_pre_ff(np__1), k1_pre_ff(1^[]), k1_pre_ff(1^[])]]
+1.2.1.1.1.1  [k1_pre_ff(np__1)=k1_pre_ff(1^[]), - (k1_pre_ff(1^[])=k1_pre_ff(np__1))]   (29)  substitution:[[_G3852, _G3897], [k1_pre_ff(np__1), k1_pre_ff(1^[])]]
+1.2.1.1.1.1.1  [k1_pre_ff(1^[])=k1_pre_ff(np__1), - (k1_pre_ff(1^[])=np__1), k1_pre_ff(np__1)=np__1]   (30)  substitution:[[_G4085, _G4141, _G4198], [k1_pre_ff(1^[]), k1_pre_ff(np__1), np__1]]
+1.2.1.1.1.1.1.1  [k1_pre_ff(1^[])=np__1, -3^[]]   (2)  
+1.2.1.1.1.1.1.1.1  [3^[]]   (reduction:1)  
+1.2.1.1.1.1.1.2  [- (k1_pre_ff(np__1)=np__1)]   (19)  
+1.2.1.1.1.2  [- (k1_pre_ff(1^[])=k1_pre_ff(1^[])), 1^[]=1^[]]   (26)  substitution:[[_G8893, _G8942], [1^[], 1^[]]]
+1.2.1.1.1.2.1  [- (1^[]=1^[])]   (28)  substitution:[[_G3753], [1^[]]]
+1.2.2  [1^[]=np__2, - (k1_pre_ff(1^[])=k1_pre_ff(np__2))]   (26)  substitution:[[_G8893, _G8942], [1^[], np__2]]
+1.2.2.1  [k1_pre_ff(1^[])=k1_pre_ff(np__2), - (k1_pre_ff(np__2)=k1_pre_ff(1^[]))]   (29)  substitution:[[_G3852, _G3897], [k1_pre_ff(1^[]), k1_pre_ff(np__2)]]
+1.2.2.1.1  [k1_pre_ff(np__2)=k1_pre_ff(1^[]), - (k1_pre_ff(np__2)=k1_pre_ff(1^[])), k1_pre_ff(1^[])=k1_pre_ff(1^[])]   (30)  substitution:[[_G4085, _G4141, _G4198], [k1_pre_ff(np__2), k1_pre_ff(1^[]), k1_pre_ff(1^[])]]
+1.2.2.1.1.1  [k1_pre_ff(np__2)=k1_pre_ff(1^[]), - (k1_pre_ff(1^[])=k1_pre_ff(np__2))]   (29)  substitution:[[_G3852, _G3897], [k1_pre_ff(np__2), k1_pre_ff(1^[])]]
+1.2.2.1.1.1.1  [k1_pre_ff(1^[])=k1_pre_ff(np__2), - (k1_pre_ff(1^[])=np__1), k1_pre_ff(np__2)=np__1]   (30)  substitution:[[_G4085, _G4141, _G4198], [k1_pre_ff(1^[]), k1_pre_ff(np__2), np__1]]
+1.2.2.1.1.1.1.1  [k1_pre_ff(1^[])=np__1, -3^[]]   (2)  
+1.2.2.1.1.1.1.1.1  [3^[]]   (reduction:1)  
+1.2.2.1.1.1.1.2  [- (k1_pre_ff(np__2)=np__1)]   (21)  
+1.2.2.1.1.2  [- (k1_pre_ff(1^[])=k1_pre_ff(1^[])), 1^[]=1^[]]   (26)  substitution:[[_G8893, _G8942], [1^[], 1^[]]]
+1.2.2.1.1.2.1  [- (1^[]=1^[])]   (28)  substitution:[[_G3753], [1^[]]]
+------------------------------------------------------
+End of proof for t47_fib_num2

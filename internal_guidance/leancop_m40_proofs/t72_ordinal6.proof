@@ -1,0 +1,58 @@
+
+t72_ordinal6 is a Theorem
+Start of proof for t72_ordinal6
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-5^[], r2_hidden(1^[], 2^[])]
+ (2)  [-5^[], -r2_hidden(k12_ordinal6(3^[], 1^[]), k12_ordinal6(3^[], 2^[]))]
+ (3)  [-4^[], r2_hidden(k12_ordinal6(3^[], 1^[]), k12_ordinal6(3^[], 2^[]))]
+ (4)  [-4^[], -r2_hidden(1^[], 2^[])]
+ (5)  [-v3_ordinal1(1^[])]
+ (6)  [-v3_ordinal1(2^[])]
+ (7)  [-v3_ordinal1(3^[])]
+ (8)  [4^[], 5^[]]
+ (9)  [-v3_ordinal1(k12_ordinal6(_G1028, _G1079)), v3_ordinal1(_G1028), v3_ordinal1(_G1079)]
+ (10)  [v3_ordinal1(_G1324), v3_ordinal1(_G1413), r1_ordinal1(_G1324, _G1413), r2_hidden(_G1413, _G1324)]
+ (11)  [v3_ordinal1(_G1324), v3_ordinal1(_G1413), -r1_ordinal1(_G1324, _G1413), -r2_hidden(_G1413, _G1324)]
+ (12)  [v3_ordinal1(_G1696), v3_ordinal1(_G1799), v3_ordinal1(_G1898), r1_ordinal1(_G1696, _G1799), -r1_ordinal1(k12_ordinal6(_G1898, _G1696), k12_ordinal6(_G1898, _G1799))]
+ (13)  [v3_ordinal1(_G1696), v3_ordinal1(_G1799), v3_ordinal1(_G1898), -r1_ordinal1(_G1696, _G1799), r1_ordinal1(k12_ordinal6(_G1898, _G1696), k12_ordinal6(_G1898, _G1799))]
+
+Connection Proof:
+-----------------
+1  [4^[], 5^[]]   (8)  
+1.1  [-4^[], r2_hidden(k12_ordinal6(3^[], 1^[]), k12_ordinal6(3^[], 2^[]))]   (3)  
+1.1.1  [-r2_hidden(k12_ordinal6(3^[], 1^[]), k12_ordinal6(3^[], 2^[])), v3_ordinal1(k12_ordinal6(3^[], 2^[])), v3_ordinal1(k12_ordinal6(3^[], 1^[])), -r1_ordinal1(k12_ordinal6(3^[], 2^[]), k12_ordinal6(3^[], 1^[]))]   (11)  substitution:[[_G1413, _G1324], [k12_ordinal6(3^[], 1^[]), k12_ordinal6(3^[], 2^[])]]
+1.1.1.1  [-v3_ordinal1(k12_ordinal6(3^[], 2^[])), v3_ordinal1(3^[]), v3_ordinal1(2^[])]   (9)  substitution:[[_G1028, _G1079], [3^[], 2^[]]]
+1.1.1.1.1  [-v3_ordinal1(3^[])]   (7)  
+1.1.1.1.2  [-v3_ordinal1(2^[])]   (6)  
+1.1.1.2  [-v3_ordinal1(k12_ordinal6(3^[], 1^[])), v3_ordinal1(3^[]), v3_ordinal1(1^[])]   (9)  substitution:[[_G1028, _G1079], [3^[], 1^[]]]
+1.1.1.2.1  [-v3_ordinal1(3^[])]   (7)  
+1.1.1.2.2  [-v3_ordinal1(1^[])]   (5)  
+1.1.1.3  [r1_ordinal1(k12_ordinal6(3^[], 2^[]), k12_ordinal6(3^[], 1^[])), v3_ordinal1(2^[]), v3_ordinal1(1^[]), v3_ordinal1(3^[]), -r1_ordinal1(2^[], 1^[])]   (13)  substitution:[[_G1898, _G1696, _G1799], [3^[], 2^[], 1^[]]]
+1.1.1.3.1  [-v3_ordinal1(2^[])]   (6)  
+1.1.1.3.2  [-v3_ordinal1(1^[])]   (5)  
+1.1.1.3.3  [-v3_ordinal1(3^[])]   (7)  
+1.1.1.3.4  [r1_ordinal1(2^[], 1^[]), v3_ordinal1(2^[]), v3_ordinal1(1^[]), r2_hidden(1^[], 2^[])]   (10)  substitution:[[_G1324, _G1413], [2^[], 1^[]]]
+1.1.1.3.4.1  [-v3_ordinal1(2^[])]   (6)  
+1.1.1.3.4.2  [-v3_ordinal1(1^[])]   (5)  
+1.1.1.3.4.3  [-r2_hidden(1^[], 2^[]), -4^[]]   (4)  
+1.1.1.3.4.3.1  [4^[]]   (reduction:1)  
+1.2  [-5^[], -r2_hidden(k12_ordinal6(3^[], 1^[]), k12_ordinal6(3^[], 2^[]))]   (2)  
+1.2.1  [r2_hidden(k12_ordinal6(3^[], 1^[]), k12_ordinal6(3^[], 2^[])), v3_ordinal1(k12_ordinal6(3^[], 2^[])), v3_ordinal1(k12_ordinal6(3^[], 1^[])), r1_ordinal1(k12_ordinal6(3^[], 2^[]), k12_ordinal6(3^[], 1^[]))]   (10)  substitution:[[_G1413, _G1324], [k12_ordinal6(3^[], 1^[]), k12_ordinal6(3^[], 2^[])]]
+1.2.1.1  [-v3_ordinal1(k12_ordinal6(3^[], 2^[])), v3_ordinal1(3^[]), v3_ordinal1(2^[])]   (9)  substitution:[[_G1028, _G1079], [3^[], 2^[]]]
+1.2.1.1.1  [-v3_ordinal1(3^[])]   (7)  
+1.2.1.1.2  [-v3_ordinal1(2^[])]   (6)  
+1.2.1.2  [-v3_ordinal1(k12_ordinal6(3^[], 1^[])), v3_ordinal1(3^[]), v3_ordinal1(1^[])]   (9)  substitution:[[_G1028, _G1079], [3^[], 1^[]]]
+1.2.1.2.1  [-v3_ordinal1(3^[])]   (7)  
+1.2.1.2.2  [-v3_ordinal1(1^[])]   (5)  
+1.2.1.3  [-r1_ordinal1(k12_ordinal6(3^[], 2^[]), k12_ordinal6(3^[], 1^[])), v3_ordinal1(2^[]), v3_ordinal1(1^[]), v3_ordinal1(3^[]), r1_ordinal1(2^[], 1^[])]   (12)  substitution:[[_G1898, _G1696, _G1799], [3^[], 2^[], 1^[]]]
+1.2.1.3.1  [-v3_ordinal1(2^[])]   (6)  
+1.2.1.3.2  [-v3_ordinal1(1^[])]   (5)  
+1.2.1.3.3  [-v3_ordinal1(3^[])]   (7)  
+1.2.1.3.4  [-r1_ordinal1(2^[], 1^[]), v3_ordinal1(2^[]), v3_ordinal1(1^[]), -r2_hidden(1^[], 2^[])]   (11)  substitution:[[_G1324, _G1413], [2^[], 1^[]]]
+1.2.1.3.4.1  [-v3_ordinal1(2^[])]   (6)  
+1.2.1.3.4.2  [-v3_ordinal1(1^[])]   (5)  
+1.2.1.3.4.3  [r2_hidden(1^[], 2^[]), -5^[]]   (1)  
+1.2.1.3.4.3.1  [5^[]]   (reduction:1)  
+------------------------------------------------------
+End of proof for t72_ordinal6

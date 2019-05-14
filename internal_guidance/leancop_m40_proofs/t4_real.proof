@@ -1,0 +1,22 @@
+
+t4_real is a Theorem
+Start of proof for t4_real
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xreal_0(1^[])]
+ (2)  [-v1_xreal_0(2^[])]
+ (3)  [-r1_xxreal_0(1^[], 2^[])]
+ (4)  [v2_xxreal_0(2^[])]
+ (5)  [-v2_xxreal_0(1^[])]
+ (6)  [v1_xreal_0(_G742), v1_xreal_0(_G833), -v2_xxreal_0(_G833), r1_xxreal_0(_G742, _G833), v2_xxreal_0(_G742)]
+
+Connection Proof:
+-----------------
+1  [v2_xxreal_0(2^[])]   (4)  
+1.1  [-v2_xxreal_0(2^[]), v1_xreal_0(1^[]), v1_xreal_0(2^[]), r1_xxreal_0(1^[], 2^[]), v2_xxreal_0(1^[])]   (6)  substitution:[[_G833, _G742], [2^[], 1^[]]]
+1.1.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.2  [-v1_xreal_0(2^[])]   (2)  
+1.1.3  [-r1_xxreal_0(1^[], 2^[])]   (3)  
+1.1.4  [-v2_xxreal_0(1^[])]   (5)  
+------------------------------------------------------
+End of proof for t4_real

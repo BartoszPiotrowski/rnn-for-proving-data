@@ -1,0 +1,75 @@
+
+t62_complsp2 is a Theorem
+Start of proof for t62_complsp2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xcmplx_0(1^[])]
+ (2)  [-m2_finseq_1(2^[], k2_numbers)]
+ (3)  [-m1_subset_1(3^[], k1_numbers)]
+ (4)  [-m2_finseq_1(4^[], k1_numbers)]
+ (5)  [- (1^[]=3^[])]
+ (6)  [- (2^[]=4^[])]
+ (7)  [- (k3_finseq_1(2^[])=k3_finseq_1(4^[]))]
+ (8)  [k12_seq_4(2^[], 1^[])=k10_rvsum_1(4^[], 3^[])]
+ (9)  [m1_subset_1(_G11765, k1_numbers), -v1_xreal_0(_G11765)]
+ (10)  [m1_finseq_1(_G11922, k1_numbers), -v3_valued_0(_G11922)]
+ (11)  [m1_finseq_1(_G12133, _G12079), -v1_relat_1(_G12133)]
+ (12)  [m1_finseq_1(_G12133, _G12079), -v1_funct_1(_G12133)]
+ (13)  [m1_finseq_1(_G12133, _G12079), -v1_finseq_1(_G12133)]
+ (14)  [m2_finseq_1(_G12480, _G12420), -v1_funct_1(_G12480)]
+ (15)  [m2_finseq_1(_G12480, _G12420), -v1_finseq_1(_G12480)]
+ (16)  [m2_finseq_1(_G12480, _G12420), -m1_subset_1(_G12480, k1_zfmisc_1(k2_zfmisc_1(k5_numbers, _G12420)))]
+ (17)  [- (k10_rvsum_1(_G12851, _G12921)=k24_valued_1(_G12851, _G12921)), v1_xreal_0(_G12921), v1_relat_1(_G12851), v1_funct_1(_G12851), v3_valued_0(_G12851), v1_finseq_1(_G12851)]
+ (18)  [- (k12_seq_4(_G13408, _G13464)=k24_valued_1(_G13408, _G13464)), m1_finseq_1(_G13408, k2_numbers), v1_xcmplx_0(_G13464)]
+ (19)  [m2_finseq_1(_G13839, _G13794), -m1_finseq_1(_G13839, _G13794)]
+ (20)  [-m2_finseq_1(_G13839, _G13794), m1_finseq_1(_G13839, _G13794)]
+ (21)  [_G8704=_G8753, - (k1_zfmisc_1(_G8704)=k1_zfmisc_1(_G8753))]
+ (22)  [- (k2_zfmisc_1(_G8982, _G9117)=k2_zfmisc_1(_G9049, _G9186)), _G8982=_G9049, _G9117=_G9186]
+ (23)  [- (k24_valued_1(_G9579, _G9714)=k24_valued_1(_G9646, _G9783)), _G9579=_G9646, _G9714=_G9783]
+ (24)  [_G10176=_G10225, - (k3_finseq_1(_G10176)=k3_finseq_1(_G10225))]
+ (25)  [- (k12_seq_4(_G10454, _G10589)=k12_seq_4(_G10521, _G10658)), _G10454=_G10521, _G10589=_G10658]
+ (26)  [- (k10_rvsum_1(_G11042, _G11177)=k10_rvsum_1(_G11109, _G11246)), _G11042=_G11109, _G11177=_G11246]
+ (27)  [- (_G4283=_G4283)]
+ (28)  [_G4382=_G4427, - (_G4427=_G4382)]
+ (29)  [- (_G4615=_G4728), _G4615=_G4671, _G4671=_G4728]
+ (30)  [-v1_relat_1(_G5114), _G5065=_G5114, v1_relat_1(_G5065)]
+ (31)  [-v1_funct_1(_G5392), _G5343=_G5392, v1_funct_1(_G5343)]
+ (32)  [-v3_valued_0(_G5670), _G5621=_G5670, v3_valued_0(_G5621)]
+ (33)  [-v1_finseq_1(_G5948), _G5899=_G5948, v1_finseq_1(_G5899)]
+ (34)  [-v1_xreal_0(_G6226), _G6177=_G6226, v1_xreal_0(_G6177)]
+ (35)  [-m1_finseq_1(_G6522, _G6659), m1_finseq_1(_G6455, _G6590), _G6455=_G6522, _G6590=_G6659]
+ (36)  [-v1_xcmplx_0(_G7101), _G7052=_G7101, v1_xcmplx_0(_G7052)]
+ (37)  [-m1_subset_1(_G7397, _G7534), m1_subset_1(_G7330, _G7465), _G7330=_G7397, _G7465=_G7534]
+ (38)  [-m2_finseq_1(_G7985, _G8122), m2_finseq_1(_G7918, _G8053), _G7918=_G7985, _G8053=_G8122]
+
+Connection Proof:
+-----------------
+1  [k12_seq_4(2^[], 1^[])=k10_rvsum_1(4^[], 3^[])]   (8)  
+1.1  [- (k12_seq_4(2^[], 1^[])=k10_rvsum_1(4^[], 3^[])), k10_rvsum_1(4^[], 3^[])=k12_seq_4(2^[], 1^[])]   (28)  substitution:[[_G4427, _G4382], [k12_seq_4(2^[], 1^[]), k10_rvsum_1(4^[], 3^[])]]
+1.1.1  [- (k10_rvsum_1(4^[], 3^[])=k12_seq_4(2^[], 1^[])), k10_rvsum_1(4^[], 3^[])=k24_valued_1(4^[], 3^[]), k24_valued_1(4^[], 3^[])=k12_seq_4(2^[], 1^[])]   (29)  substitution:[[_G4615, _G4728, _G4671], [k10_rvsum_1(4^[], 3^[]), k12_seq_4(2^[], 1^[]), k24_valued_1(4^[], 3^[])]]
+1.1.1.1  [- (k10_rvsum_1(4^[], 3^[])=k24_valued_1(4^[], 3^[])), v1_xreal_0(3^[]), v1_relat_1(4^[]), v1_funct_1(4^[]), v3_valued_0(4^[]), v1_finseq_1(4^[])]   (17)  substitution:[[_G12851, _G12921], [4^[], 3^[]]]
+1.1.1.1.1  [-v1_xreal_0(3^[]), m1_subset_1(3^[], k1_numbers)]   (9)  substitution:[[_G11765], [3^[]]]
+1.1.1.1.1.1  [-m1_subset_1(3^[], k1_numbers)]   (3)  
+1.1.1.1.2  [-v1_relat_1(4^[]), m1_finseq_1(4^[], k1_numbers)]   (11)  substitution:[[_G12133, _G12079], [4^[], k1_numbers]]
+1.1.1.1.2.1  [-m1_finseq_1(4^[], k1_numbers), m2_finseq_1(4^[], k1_numbers)]   (19)  substitution:[[_G13839, _G13794], [4^[], k1_numbers]]
+1.1.1.1.2.1.1  [-m2_finseq_1(4^[], k1_numbers)]   (4)  
+1.1.1.1.3  [-v1_funct_1(4^[]), m1_finseq_1(4^[], k1_numbers)]   (12)  substitution:[[_G12133, _G12079], [4^[], k1_numbers]]
+1.1.1.1.3.1  [-m1_finseq_1(4^[], k1_numbers), m2_finseq_1(4^[], k1_numbers)]   (19)  substitution:[[_G13839, _G13794], [4^[], k1_numbers]]
+1.1.1.1.3.1.1  [-m2_finseq_1(4^[], k1_numbers)]   (4)  
+1.1.1.1.4  [-v3_valued_0(4^[]), m1_finseq_1(4^[], k1_numbers)]   (10)  substitution:[[_G11922], [4^[]]]
+1.1.1.1.4.1  [-m1_finseq_1(4^[], k1_numbers), m2_finseq_1(4^[], k1_numbers)]   (19)  substitution:[[_G13839, _G13794], [4^[], k1_numbers]]
+1.1.1.1.4.1.1  [-m2_finseq_1(4^[], k1_numbers)]   (4)  
+1.1.1.1.5  [-v1_finseq_1(4^[]), m1_finseq_1(4^[], k1_numbers)]   (13)  substitution:[[_G12133, _G12079], [4^[], k1_numbers]]
+1.1.1.1.5.1  [-m1_finseq_1(4^[], k1_numbers), m2_finseq_1(4^[], k1_numbers)]   (19)  substitution:[[_G13839, _G13794], [4^[], k1_numbers]]
+1.1.1.1.5.1.1  [-m2_finseq_1(4^[], k1_numbers)]   (4)  
+1.1.1.2  [- (k24_valued_1(4^[], 3^[])=k12_seq_4(2^[], 1^[])), k12_seq_4(2^[], 1^[])=k24_valued_1(4^[], 3^[])]   (28)  substitution:[[_G4427, _G4382], [k24_valued_1(4^[], 3^[]), k12_seq_4(2^[], 1^[])]]
+1.1.1.2.1  [- (k12_seq_4(2^[], 1^[])=k24_valued_1(4^[], 3^[])), k12_seq_4(2^[], 1^[])=k24_valued_1(2^[], 1^[]), k24_valued_1(2^[], 1^[])=k24_valued_1(4^[], 3^[])]   (29)  substitution:[[_G4615, _G4728, _G4671], [k12_seq_4(2^[], 1^[]), k24_valued_1(4^[], 3^[]), k24_valued_1(2^[], 1^[])]]
+1.1.1.2.1.1  [- (k12_seq_4(2^[], 1^[])=k24_valued_1(2^[], 1^[])), m1_finseq_1(2^[], k2_numbers), v1_xcmplx_0(1^[])]   (18)  substitution:[[_G13408, _G13464], [2^[], 1^[]]]
+1.1.1.2.1.1.1  [-m1_finseq_1(2^[], k2_numbers), m2_finseq_1(2^[], k2_numbers)]   (19)  substitution:[[_G13839, _G13794], [2^[], k2_numbers]]
+1.1.1.2.1.1.1.1  [-m2_finseq_1(2^[], k2_numbers)]   (2)  
+1.1.1.2.1.1.2  [-v1_xcmplx_0(1^[])]   (1)  
+1.1.1.2.1.2  [- (k24_valued_1(2^[], 1^[])=k24_valued_1(4^[], 3^[])), 2^[]=4^[], 1^[]=3^[]]   (23)  substitution:[[_G9579, _G9714, _G9646, _G9783], [2^[], 1^[], 4^[], 3^[]]]
+1.1.1.2.1.2.1  [- (2^[]=4^[])]   (6)  
+1.1.1.2.1.2.2  [- (1^[]=3^[])]   (5)  
+------------------------------------------------------
+End of proof for t62_complsp2

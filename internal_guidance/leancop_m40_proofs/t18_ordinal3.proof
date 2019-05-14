@@ -1,0 +1,52 @@
+
+t18_ordinal3 is a Theorem
+Start of proof for t18_ordinal3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v3_ordinal1(1^[])]
+ (2)  [-v3_ordinal1(2^[])]
+ (3)  [-v3_ordinal1(3^[])]
+ (4)  [-v3_ordinal1(4^[])]
+ (5)  [-r1_ordinal1(1^[], 2^[])]
+ (6)  [-r1_ordinal1(3^[], 4^[])]
+ (7)  [r1_ordinal1(k10_ordinal2(1^[], 3^[]), k10_ordinal2(2^[], 4^[]))]
+ (8)  [-v3_ordinal1(k10_ordinal2(_G1377, _G1428)), v3_ordinal1(_G1377), v3_ordinal1(_G1428)]
+ (9)  [v3_ordinal1(_G1728), v3_ordinal1(_G1673), r1_ordinal1(_G1673, _G1728), -r1_tarski(_G1673, _G1728)]
+ (10)  [v3_ordinal1(_G1728), v3_ordinal1(_G1673), -r1_ordinal1(_G1673, _G1728), r1_tarski(_G1673, _G1728)]
+ (11)  [-r1_tarski(_G2041, _G2154), r1_tarski(_G2041, _G2097), r1_tarski(_G2097, _G2154)]
+ (12)  [v3_ordinal1(_G2449), v3_ordinal1(_G2552), v3_ordinal1(_G2651), r1_ordinal1(_G2449, _G2552), -r1_ordinal1(k10_ordinal2(_G2651, _G2449), k10_ordinal2(_G2651, _G2552))]
+ (13)  [v3_ordinal1(_G3037), v3_ordinal1(_G3140), v3_ordinal1(_G3239), r1_ordinal1(_G3037, _G3140), -r1_ordinal1(k10_ordinal2(_G3037, _G3239), k10_ordinal2(_G3140, _G3239))]
+
+Connection Proof:
+-----------------
+1  [r1_ordinal1(k10_ordinal2(1^[], 3^[]), k10_ordinal2(2^[], 4^[]))]   (7)  
+1.1  [-r1_ordinal1(k10_ordinal2(1^[], 3^[]), k10_ordinal2(2^[], 4^[])), v3_ordinal1(k10_ordinal2(2^[], 4^[])), v3_ordinal1(k10_ordinal2(1^[], 3^[])), r1_tarski(k10_ordinal2(1^[], 3^[]), k10_ordinal2(2^[], 4^[]))]   (10)  substitution:[[_G1673, _G1728], [k10_ordinal2(1^[], 3^[]), k10_ordinal2(2^[], 4^[])]]
+1.1.1  [-v3_ordinal1(k10_ordinal2(2^[], 4^[])), v3_ordinal1(2^[]), v3_ordinal1(4^[])]   (8)  substitution:[[_G1377, _G1428], [2^[], 4^[]]]
+1.1.1.1  [-v3_ordinal1(2^[])]   (2)  
+1.1.1.2  [-v3_ordinal1(4^[])]   (4)  
+1.1.2  [-v3_ordinal1(k10_ordinal2(1^[], 3^[])), v3_ordinal1(1^[]), v3_ordinal1(3^[])]   (8)  substitution:[[_G1377, _G1428], [1^[], 3^[]]]
+1.1.2.1  [-v3_ordinal1(1^[])]   (1)  
+1.1.2.2  [-v3_ordinal1(3^[])]   (3)  
+1.1.3  [-r1_tarski(k10_ordinal2(1^[], 3^[]), k10_ordinal2(2^[], 4^[])), r1_tarski(k10_ordinal2(1^[], 3^[]), k10_ordinal2(1^[], 4^[])), r1_tarski(k10_ordinal2(1^[], 4^[]), k10_ordinal2(2^[], 4^[]))]   (11)  substitution:[[_G2041, _G2154, _G2097], [k10_ordinal2(1^[], 3^[]), k10_ordinal2(2^[], 4^[]), k10_ordinal2(1^[], 4^[])]]
+1.1.3.1  [-r1_tarski(k10_ordinal2(1^[], 3^[]), k10_ordinal2(1^[], 4^[])), v3_ordinal1(k10_ordinal2(1^[], 4^[])), v3_ordinal1(k10_ordinal2(1^[], 3^[])), r1_ordinal1(k10_ordinal2(1^[], 3^[]), k10_ordinal2(1^[], 4^[]))]   (9)  substitution:[[_G1673, _G1728], [k10_ordinal2(1^[], 3^[]), k10_ordinal2(1^[], 4^[])]]
+1.1.3.1.1  [-v3_ordinal1(k10_ordinal2(1^[], 4^[])), v3_ordinal1(1^[]), v3_ordinal1(4^[])]   (8)  substitution:[[_G1377, _G1428], [1^[], 4^[]]]
+1.1.3.1.1.1  [-v3_ordinal1(1^[])]   (1)  
+1.1.3.1.1.2  [-v3_ordinal1(4^[])]   (4)  
+1.1.3.1.2  [-v3_ordinal1(k10_ordinal2(1^[], 3^[]))]   (lemmata:1.1)  
+1.1.3.1.3  [-r1_ordinal1(k10_ordinal2(1^[], 3^[]), k10_ordinal2(1^[], 4^[])), v3_ordinal1(3^[]), v3_ordinal1(4^[]), v3_ordinal1(1^[]), r1_ordinal1(3^[], 4^[])]   (12)  substitution:[[_G2651, _G2449, _G2552], [1^[], 3^[], 4^[]]]
+1.1.3.1.3.1  [-v3_ordinal1(3^[])]   (3)  
+1.1.3.1.3.2  [-v3_ordinal1(4^[])]   (4)  
+1.1.3.1.3.3  [-v3_ordinal1(1^[])]   (1)  
+1.1.3.1.3.4  [-r1_ordinal1(3^[], 4^[])]   (6)  
+1.1.3.2  [-r1_tarski(k10_ordinal2(1^[], 4^[]), k10_ordinal2(2^[], 4^[])), v3_ordinal1(k10_ordinal2(2^[], 4^[])), v3_ordinal1(k10_ordinal2(1^[], 4^[])), r1_ordinal1(k10_ordinal2(1^[], 4^[]), k10_ordinal2(2^[], 4^[]))]   (9)  substitution:[[_G1673, _G1728], [k10_ordinal2(1^[], 4^[]), k10_ordinal2(2^[], 4^[])]]
+1.1.3.2.1  [-v3_ordinal1(k10_ordinal2(2^[], 4^[]))]   (lemmata:1.1)  
+1.1.3.2.2  [-v3_ordinal1(k10_ordinal2(1^[], 4^[])), v3_ordinal1(1^[]), v3_ordinal1(4^[])]   (8)  substitution:[[_G1377, _G1428], [1^[], 4^[]]]
+1.1.3.2.2.1  [-v3_ordinal1(1^[])]   (1)  
+1.1.3.2.2.2  [-v3_ordinal1(4^[])]   (4)  
+1.1.3.2.3  [-r1_ordinal1(k10_ordinal2(1^[], 4^[]), k10_ordinal2(2^[], 4^[])), v3_ordinal1(1^[]), v3_ordinal1(2^[]), v3_ordinal1(4^[]), r1_ordinal1(1^[], 2^[])]   (13)  substitution:[[_G3037, _G3239, _G3140], [1^[], 4^[], 2^[]]]
+1.1.3.2.3.1  [-v3_ordinal1(1^[])]   (1)  
+1.1.3.2.3.2  [-v3_ordinal1(2^[])]   (2)  
+1.1.3.2.3.3  [-v3_ordinal1(4^[])]   (4)  
+1.1.3.2.3.4  [-r1_ordinal1(1^[], 2^[])]   (5)  
+------------------------------------------------------
+End of proof for t18_ordinal3

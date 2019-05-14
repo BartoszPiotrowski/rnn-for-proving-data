@@ -1,0 +1,47 @@
+
+t4_funcop_1 is a Theorem
+Start of proof for t4_funcop_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k1_funcop_1(k12_funct_3(1^[]))=k12_funct_3(1^[])]
+ (2)  [-v1_relat_1(k4_relat_1(_G6742))]
+ (3)  [-v4_relat_1(k4_relat_1(_G6742), _G6742)]
+ (4)  [-v1_funct_1(k4_relat_1(_G6742))]
+ (5)  [-v1_partfun1(k4_relat_1(_G6742), _G6742)]
+ (6)  [- (k6_partfun1(_G7105)=k4_relat_1(_G7105))]
+ (7)  [- (k12_funct_3(_G7236)=k13_funct_3(k6_partfun1(_G7236), k6_partfun1(_G7236)))]
+ (8)  [v1_funct_1(_G7416), v1_relat_1(_G7416), - (k13_funct_3(_G7416, _G7568)=k1_funcop_1(k13_funct_3(_G7568, _G7416))), v1_relat_1(_G7568), v1_funct_1(_G7568)]
+ (9)  [_G4937=_G4986, - (k4_relat_1(_G4937)=k4_relat_1(_G4986))]
+ (10)  [_G5215=_G5264, - (k6_partfun1(_G5215)=k6_partfun1(_G5264))]
+ (11)  [- (k13_funct_3(_G5493, _G5628)=k13_funct_3(_G5560, _G5697)), _G5493=_G5560, _G5628=_G5697]
+ (12)  [_G6090=_G6139, - (k1_funcop_1(_G6090)=k1_funcop_1(_G6139))]
+ (13)  [_G6359=_G6408, - (k12_funct_3(_G6359)=k12_funct_3(_G6408))]
+ (14)  [- (_G2330=_G2330)]
+ (15)  [_G2429=_G2474, - (_G2474=_G2429)]
+ (16)  [- (_G2662=_G2775), _G2662=_G2718, _G2718=_G2775]
+ (17)  [-v4_relat_1(_G3179, _G3316), v4_relat_1(_G3112, _G3247), _G3112=_G3179, _G3247=_G3316]
+ (18)  [-v1_partfun1(_G3776, _G3913), v1_partfun1(_G3709, _G3844), _G3709=_G3776, _G3844=_G3913]
+ (19)  [-v1_relat_1(_G4355), _G4306=_G4355, v1_relat_1(_G4306)]
+ (20)  [-v1_funct_1(_G4624), _G4575=_G4624, v1_funct_1(_G4575)]
+
+Connection Proof:
+-----------------
+1  [k1_funcop_1(k12_funct_3(1^[]))=k12_funct_3(1^[])]   (1)  
+1.1  [- (k1_funcop_1(k12_funct_3(1^[]))=k12_funct_3(1^[])), k12_funct_3(1^[])=k1_funcop_1(k12_funct_3(1^[]))]   (15)  substitution:[[_G2474, _G2429], [k1_funcop_1(k12_funct_3(1^[])), k12_funct_3(1^[])]]
+1.1.1  [- (k12_funct_3(1^[])=k1_funcop_1(k12_funct_3(1^[]))), k12_funct_3(1^[])=k13_funct_3(k4_relat_1(1^[]), k4_relat_1(1^[])), k13_funct_3(k4_relat_1(1^[]), k4_relat_1(1^[]))=k1_funcop_1(k12_funct_3(1^[]))]   (16)  substitution:[[_G2662, _G2775, _G2718], [k12_funct_3(1^[]), k1_funcop_1(k12_funct_3(1^[])), k13_funct_3(k4_relat_1(1^[]), k4_relat_1(1^[]))]]
+1.1.1.1  [- (k12_funct_3(1^[])=k13_funct_3(k4_relat_1(1^[]), k4_relat_1(1^[]))), k12_funct_3(1^[])=k13_funct_3(k6_partfun1(1^[]), k6_partfun1(1^[])), k13_funct_3(k6_partfun1(1^[]), k6_partfun1(1^[]))=k13_funct_3(k4_relat_1(1^[]), k4_relat_1(1^[]))]   (16)  substitution:[[_G2662, _G2775, _G2718], [k12_funct_3(1^[]), k13_funct_3(k4_relat_1(1^[]), k4_relat_1(1^[])), k13_funct_3(k6_partfun1(1^[]), k6_partfun1(1^[]))]]
+1.1.1.1.1  [- (k12_funct_3(1^[])=k13_funct_3(k6_partfun1(1^[]), k6_partfun1(1^[])))]   (7)  substitution:[[_G7236], [1^[]]]
+1.1.1.1.2  [- (k13_funct_3(k6_partfun1(1^[]), k6_partfun1(1^[]))=k13_funct_3(k4_relat_1(1^[]), k4_relat_1(1^[]))), k6_partfun1(1^[])=k4_relat_1(1^[]), k6_partfun1(1^[])=k4_relat_1(1^[])]   (11)  substitution:[[_G5493, _G5628, _G5560, _G5697], [k6_partfun1(1^[]), k6_partfun1(1^[]), k4_relat_1(1^[]), k4_relat_1(1^[])]]
+1.1.1.1.2.1  [- (k6_partfun1(1^[])=k4_relat_1(1^[]))]   (6)  substitution:[[_G7105], [1^[]]]
+1.1.1.1.2.2  [- (k6_partfun1(1^[])=k4_relat_1(1^[]))]   (6)  substitution:[[_G7105], [1^[]]]
+1.1.1.2  [- (k13_funct_3(k4_relat_1(1^[]), k4_relat_1(1^[]))=k1_funcop_1(k12_funct_3(1^[]))), k13_funct_3(k4_relat_1(1^[]), k4_relat_1(1^[]))=k1_funcop_1(k13_funct_3(k4_relat_1(1^[]), k4_relat_1(1^[]))), k1_funcop_1(k13_funct_3(k4_relat_1(1^[]), k4_relat_1(1^[])))=k1_funcop_1(k12_funct_3(1^[]))]   (16)  substitution:[[_G2662, _G2775, _G2718], [k13_funct_3(k4_relat_1(1^[]), k4_relat_1(1^[])), k1_funcop_1(k12_funct_3(1^[])), k1_funcop_1(k13_funct_3(k4_relat_1(1^[]), k4_relat_1(1^[])))]]
+1.1.1.2.1  [- (k13_funct_3(k4_relat_1(1^[]), k4_relat_1(1^[]))=k1_funcop_1(k13_funct_3(k4_relat_1(1^[]), k4_relat_1(1^[])))), v1_funct_1(k4_relat_1(1^[])), v1_relat_1(k4_relat_1(1^[])), v1_relat_1(k4_relat_1(1^[])), v1_funct_1(k4_relat_1(1^[]))]   (8)  substitution:[[_G7416, _G7568], [k4_relat_1(1^[]), k4_relat_1(1^[])]]
+1.1.1.2.1.1  [-v1_funct_1(k4_relat_1(1^[]))]   (4)  substitution:[[_G6742], [1^[]]]
+1.1.1.2.1.2  [-v1_relat_1(k4_relat_1(1^[]))]   (2)  substitution:[[_G6742], [1^[]]]
+1.1.1.2.1.3  [-v1_relat_1(k4_relat_1(1^[]))]   (2)  substitution:[[_G6742], [1^[]]]
+1.1.1.2.1.4  [-v1_funct_1(k4_relat_1(1^[]))]   (4)  substitution:[[_G6742], [1^[]]]
+1.1.1.2.2  [- (k1_funcop_1(k13_funct_3(k4_relat_1(1^[]), k4_relat_1(1^[])))=k1_funcop_1(k12_funct_3(1^[]))), k13_funct_3(k4_relat_1(1^[]), k4_relat_1(1^[]))=k12_funct_3(1^[])]   (12)  substitution:[[_G6090, _G6139], [k13_funct_3(k4_relat_1(1^[]), k4_relat_1(1^[])), k12_funct_3(1^[])]]
+1.1.1.2.2.1  [- (k13_funct_3(k4_relat_1(1^[]), k4_relat_1(1^[]))=k12_funct_3(1^[])), k12_funct_3(1^[])=k13_funct_3(k4_relat_1(1^[]), k4_relat_1(1^[]))]   (15)  substitution:[[_G2474, _G2429], [k13_funct_3(k4_relat_1(1^[]), k4_relat_1(1^[])), k12_funct_3(1^[])]]
+1.1.1.2.2.1.1  [- (k12_funct_3(1^[])=k13_funct_3(k4_relat_1(1^[]), k4_relat_1(1^[])))]   (lemmata:1.1.1)  
+------------------------------------------------------
+End of proof for t4_funcop_1

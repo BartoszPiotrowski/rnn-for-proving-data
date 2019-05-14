@@ -1,0 +1,69 @@
+
+t8_integra5 is a Theorem
+Start of proof for t8_integra5
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v1_xboole_0(1^[])]
+ (2)  [-v2_measure5(1^[])]
+ (3)  [-m1_subset_1(1^[], k1_zfmisc_1(k1_numbers))]
+ (4)  [-v1_funct_1(2^[])]
+ (5)  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]
+ (6)  [-v2_seq_2(k2_partfun1(k1_numbers, k1_numbers, 2^[], 1^[]))]
+ (7)  [v2_seq_2(k2_partfun1(1^[], k1_numbers, k1_integra5(2^[], 1^[]), 1^[]))]
+ (8)  [m1_subset_1(_G10842, k1_zfmisc_1(k2_zfmisc_1(_G10733, _G10787))), -v1_relat_1(_G10842)]
+ (9)  [-v1_funct_1(k1_integra5(_G11085, _G11164)), m1_subset_1(_G11085, k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(_G11085), -v1_xboole_0(_G11164), m1_subset_1(_G11164, k1_zfmisc_1(k1_numbers))]
+ (10)  [-m1_subset_1(k1_integra5(_G11085, _G11164), k1_zfmisc_1(k2_zfmisc_1(_G11164, k1_numbers))), m1_subset_1(_G11085, k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(_G11085), -v1_xboole_0(_G11164), m1_subset_1(_G11164, k1_zfmisc_1(k1_numbers))]
+ (11)  [v1_relat_1(_G11844), - (k5_relat_1(k5_relat_1(_G11844, _G11897), _G11897)=k5_relat_1(_G11844, _G11897))]
+ (12)  [- (k2_partfun1(_G12818, _G12891, _G12965, _G13040)=k5_relat_1(_G12965, _G13040)), v1_funct_1(_G12965), m1_subset_1(_G12965, k1_zfmisc_1(k2_zfmisc_1(_G12818, _G12891)))]
+ (13)  [- (k1_integra5(_G12194, _G12263)=k5_relat_1(_G12194, _G12263)), m1_subset_1(_G12194, k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(_G12194), -v1_xboole_0(_G12263), m1_subset_1(_G12263, k1_zfmisc_1(k1_numbers))]
+ (14)  [- (k5_relat_1(_G7033, _G7168)=k5_relat_1(_G7100, _G7237)), _G7033=_G7100, _G7168=_G7237]
+ (15)  [_G7630=_G7679, - (k1_zfmisc_1(_G7630)=k1_zfmisc_1(_G7679))]
+ (16)  [- (k2_zfmisc_1(_G7908, _G8043)=k2_zfmisc_1(_G7975, _G8112)), _G7908=_G7975, _G8043=_G8112]
+ (17)  [- (k1_integra5(_G10031, _G10166)=k1_integra5(_G10098, _G10235)), _G10031=_G10098, _G10166=_G10235]
+ (18)  [- (k2_partfun1(_G8505, _G8712, _G8923, _G9138)=k2_partfun1(_G8608, _G8817, _G9030, _G9247)), _G8505=_G8608, _G8712=_G8817, _G8923=_G9030, _G9138=_G9247]
+ (19)  [- (_G4147=_G4147)]
+ (20)  [_G4246=_G4291, - (_G4291=_G4246)]
+ (21)  [- (_G4479=_G4592), _G4479=_G4535, _G4535=_G4592]
+ (22)  [-v1_relat_1(_G4978), _G4929=_G4978, v1_relat_1(_G4929)]
+ (23)  [-v1_xboole_0(_G5256), _G5207=_G5256, v1_xboole_0(_G5207)]
+ (24)  [-v2_measure5(_G5534), _G5485=_G5534, v2_measure5(_G5485)]
+ (25)  [-v1_funct_1(_G5812), _G5763=_G5812, v1_funct_1(_G5763)]
+ (26)  [-v2_seq_2(_G6678), _G6629=_G6678, v2_seq_2(_G6629)]
+ (27)  [-m1_subset_1(_G6108, _G6245), m1_subset_1(_G6041, _G6176), _G6041=_G6108, _G6176=_G6245]
+
+Connection Proof:
+-----------------
+1  [v1_xboole_0(1^[])]   (1)  
+1.1  [-v1_xboole_0(1^[]), - (k1_integra5(2^[], 1^[])=k5_relat_1(2^[], 1^[])), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(2^[]), m1_subset_1(1^[], k1_zfmisc_1(k1_numbers))]   (13)  substitution:[[_G12263, _G12194], [1^[], 2^[]]]
+1.1.1  [k1_integra5(2^[], 1^[])=k5_relat_1(2^[], 1^[]), - (k5_relat_1(k1_integra5(2^[], 1^[]), 1^[])=k5_relat_1(k5_relat_1(2^[], 1^[]), 1^[])), 1^[]=1^[]]   (14)  substitution:[[_G7033, _G7100, _G7168, _G7237], [k1_integra5(2^[], 1^[]), k5_relat_1(2^[], 1^[]), 1^[], 1^[]]]
+1.1.1.1  [k5_relat_1(k1_integra5(2^[], 1^[]), 1^[])=k5_relat_1(k5_relat_1(2^[], 1^[]), 1^[]), - (k5_relat_1(k1_integra5(2^[], 1^[]), 1^[])=k2_partfun1(k1_numbers, k1_numbers, 2^[], 1^[])), k5_relat_1(k5_relat_1(2^[], 1^[]), 1^[])=k2_partfun1(k1_numbers, k1_numbers, 2^[], 1^[])]   (21)  substitution:[[_G4479, _G4535, _G4592], [k5_relat_1(k1_integra5(2^[], 1^[]), 1^[]), k5_relat_1(k5_relat_1(2^[], 1^[]), 1^[]), k2_partfun1(k1_numbers, k1_numbers, 2^[], 1^[])]]
+1.1.1.1.1  [k5_relat_1(k1_integra5(2^[], 1^[]), 1^[])=k2_partfun1(k1_numbers, k1_numbers, 2^[], 1^[]), - (k2_partfun1(1^[], k1_numbers, k1_integra5(2^[], 1^[]), 1^[])=k2_partfun1(k1_numbers, k1_numbers, 2^[], 1^[])), k2_partfun1(1^[], k1_numbers, k1_integra5(2^[], 1^[]), 1^[])=k5_relat_1(k1_integra5(2^[], 1^[]), 1^[])]   (21)  substitution:[[_G4535, _G4592, _G4479], [k5_relat_1(k1_integra5(2^[], 1^[]), 1^[]), k2_partfun1(k1_numbers, k1_numbers, 2^[], 1^[]), k2_partfun1(1^[], k1_numbers, k1_integra5(2^[], 1^[]), 1^[])]]
+1.1.1.1.1.1  [k2_partfun1(1^[], k1_numbers, k1_integra5(2^[], 1^[]), 1^[])=k2_partfun1(k1_numbers, k1_numbers, 2^[], 1^[]), - (k2_partfun1(k1_numbers, k1_numbers, 2^[], 1^[])=k2_partfun1(1^[], k1_numbers, k1_integra5(2^[], 1^[]), 1^[]))]   (20)  substitution:[[_G4246, _G4291], [k2_partfun1(1^[], k1_numbers, k1_integra5(2^[], 1^[]), 1^[]), k2_partfun1(k1_numbers, k1_numbers, 2^[], 1^[])]]
+1.1.1.1.1.1.1  [k2_partfun1(k1_numbers, k1_numbers, 2^[], 1^[])=k2_partfun1(1^[], k1_numbers, k1_integra5(2^[], 1^[]), 1^[]), -v2_seq_2(k2_partfun1(1^[], k1_numbers, k1_integra5(2^[], 1^[]), 1^[])), v2_seq_2(k2_partfun1(k1_numbers, k1_numbers, 2^[], 1^[]))]   (26)  substitution:[[_G6629, _G6678], [k2_partfun1(k1_numbers, k1_numbers, 2^[], 1^[]), k2_partfun1(1^[], k1_numbers, k1_integra5(2^[], 1^[]), 1^[])]]
+1.1.1.1.1.1.1.1  [v2_seq_2(k2_partfun1(1^[], k1_numbers, k1_integra5(2^[], 1^[]), 1^[]))]   (7)  
+1.1.1.1.1.1.1.2  [-v2_seq_2(k2_partfun1(k1_numbers, k1_numbers, 2^[], 1^[]))]   (6)  
+1.1.1.1.1.2  [- (k2_partfun1(1^[], k1_numbers, k1_integra5(2^[], 1^[]), 1^[])=k5_relat_1(k1_integra5(2^[], 1^[]), 1^[])), v1_funct_1(k1_integra5(2^[], 1^[])), m1_subset_1(k1_integra5(2^[], 1^[]), k1_zfmisc_1(k2_zfmisc_1(1^[], k1_numbers)))]   (12)  substitution:[[_G12818, _G12891, _G12965, _G13040], [1^[], k1_numbers, k1_integra5(2^[], 1^[]), 1^[]]]
+1.1.1.1.1.2.1  [-v1_funct_1(k1_integra5(2^[], 1^[])), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(2^[]), -v1_xboole_0(1^[]), m1_subset_1(1^[], k1_zfmisc_1(k1_numbers))]   (9)  substitution:[[_G11085, _G11164], [2^[], 1^[]]]
+1.1.1.1.1.2.1.1  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]   (5)  
+1.1.1.1.1.2.1.2  [-v1_funct_1(2^[])]   (4)  
+1.1.1.1.1.2.1.3  [v1_xboole_0(1^[])]   (1)  
+1.1.1.1.1.2.1.4  [-m1_subset_1(1^[], k1_zfmisc_1(k1_numbers))]   (3)  
+1.1.1.1.1.2.2  [-m1_subset_1(k1_integra5(2^[], 1^[]), k1_zfmisc_1(k2_zfmisc_1(1^[], k1_numbers))), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(2^[]), -v1_xboole_0(1^[]), m1_subset_1(1^[], k1_zfmisc_1(k1_numbers))]   (10)  substitution:[[_G11085, _G11164], [2^[], 1^[]]]
+1.1.1.1.1.2.2.1  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]   (5)  
+1.1.1.1.1.2.2.2  [-v1_funct_1(2^[])]   (4)  
+1.1.1.1.1.2.2.3  [v1_xboole_0(1^[])]   (1)  
+1.1.1.1.1.2.2.4  [-m1_subset_1(1^[], k1_zfmisc_1(k1_numbers))]   (3)  
+1.1.1.1.2  [- (k5_relat_1(k5_relat_1(2^[], 1^[]), 1^[])=k2_partfun1(k1_numbers, k1_numbers, 2^[], 1^[])), k5_relat_1(k5_relat_1(2^[], 1^[]), 1^[])=k5_relat_1(2^[], 1^[]), k5_relat_1(2^[], 1^[])=k2_partfun1(k1_numbers, k1_numbers, 2^[], 1^[])]   (21)  substitution:[[_G4479, _G4592, _G4535], [k5_relat_1(k5_relat_1(2^[], 1^[]), 1^[]), k2_partfun1(k1_numbers, k1_numbers, 2^[], 1^[]), k5_relat_1(2^[], 1^[])]]
+1.1.1.1.2.1  [- (k5_relat_1(k5_relat_1(2^[], 1^[]), 1^[])=k5_relat_1(2^[], 1^[])), v1_relat_1(2^[])]   (11)  substitution:[[_G11844, _G11897], [2^[], 1^[]]]
+1.1.1.1.2.1.1  [-v1_relat_1(2^[]), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]   (8)  substitution:[[_G10842, _G10733, _G10787], [2^[], k1_numbers, k1_numbers]]
+1.1.1.1.2.1.1.1  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]   (5)  
+1.1.1.1.2.2  [- (k5_relat_1(2^[], 1^[])=k2_partfun1(k1_numbers, k1_numbers, 2^[], 1^[])), k2_partfun1(k1_numbers, k1_numbers, 2^[], 1^[])=k5_relat_1(2^[], 1^[])]   (20)  substitution:[[_G4291, _G4246], [k5_relat_1(2^[], 1^[]), k2_partfun1(k1_numbers, k1_numbers, 2^[], 1^[])]]
+1.1.1.1.2.2.1  [- (k2_partfun1(k1_numbers, k1_numbers, 2^[], 1^[])=k5_relat_1(2^[], 1^[])), v1_funct_1(2^[]), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]   (12)  substitution:[[_G12818, _G12891, _G12965, _G13040], [k1_numbers, k1_numbers, 2^[], 1^[]]]
+1.1.1.1.2.2.1.1  [-v1_funct_1(2^[])]   (4)  
+1.1.1.1.2.2.1.2  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]   (5)  
+1.1.1.2  [- (1^[]=1^[])]   (19)  substitution:[[_G4147], [1^[]]]
+1.1.2  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]   (5)  
+1.1.3  [-v1_funct_1(2^[])]   (4)  
+1.1.4  [-m1_subset_1(1^[], k1_zfmisc_1(k1_numbers))]   (3)  
+------------------------------------------------------
+End of proof for t8_integra5

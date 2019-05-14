@@ -1,0 +1,61 @@
+
+l13_robbins3 is a Theorem
+Start of proof for l13_robbins3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v10_lattices(k1_robbins3)]
+ (2)  [l1_struct_0(_G1546), v13_struct_0(_G1546, np__1), v2_struct_0(_G1546)]
+ (3)  [l1_struct_0(_G1546), v13_struct_0(_G1546, np__1), -v7_struct_0(_G1546)]
+ (4)  [l3_lattices(_G1835), -v10_lattices(_G1835), -v2_struct_0(_G1835), v4_lattices(_G1835), v5_lattices(_G1835), v6_lattices(_G1835), v7_lattices(_G1835), v8_lattices(_G1835), v9_lattices(_G1835)]
+ (5)  [l2_lattices(_G2462), v13_struct_0(_G2462, np__1), -v4_lattices(_G2462)]
+ (6)  [l2_lattices(_G2462), v13_struct_0(_G2462, np__1), -v5_lattices(_G2462)]
+ (7)  [l1_lattices(_G2819), v13_struct_0(_G2819, np__1), -v6_lattices(_G2819)]
+ (8)  [l1_lattices(_G2819), v13_struct_0(_G2819, np__1), -v7_lattices(_G2819)]
+ (9)  [l3_lattices(_G3176), v13_struct_0(_G3176, np__1), -v8_lattices(_G3176)]
+ (10)  [l3_lattices(_G3176), v13_struct_0(_G3176, np__1), -v9_lattices(_G3176)]
+ (11)  [l3_lattices(_G3176), v13_struct_0(_G3176, np__1), -v17_lattices(_G3176)]
+ (12)  [-l3_robbins3(k1_robbins3)]
+ (13)  [l2_lattices(_G3623), -l1_struct_0(_G3623)]
+ (14)  [l3_lattices(_G3754), -l1_lattices(_G3754)]
+ (15)  [l3_lattices(_G3754), -l2_lattices(_G3754)]
+ (16)  [-v13_struct_0(k1_robbins3, np__1)]
+ (17)  [l3_robbins3(_G3943), -l2_robbins3(_G3943)]
+ (18)  [l3_robbins3(_G3943), -l1_robbins3(_G3943)]
+ (19)  [l3_robbins3(_G3943), -l3_lattices(_G3943)]
+
+Connection Proof:
+-----------------
+1  [l1_struct_0(k1_robbins3), v13_struct_0(k1_robbins3, np__1), v2_struct_0(k1_robbins3)]   (2)  substitution:[[_G1546], [k1_robbins3]]
+1.1  [-l1_struct_0(k1_robbins3), l2_lattices(k1_robbins3)]   (13)  substitution:[[_G3623], [k1_robbins3]]
+1.1.1  [-l2_lattices(k1_robbins3), l3_lattices(k1_robbins3)]   (15)  substitution:[[_G3754], [k1_robbins3]]
+1.1.1.1  [-l3_lattices(k1_robbins3), l3_robbins3(k1_robbins3)]   (19)  substitution:[[_G3943], [k1_robbins3]]
+1.1.1.1.1  [-l3_robbins3(k1_robbins3)]   (12)  
+1.2  [-v13_struct_0(k1_robbins3, np__1)]   (16)  
+1.3  [-v2_struct_0(k1_robbins3), l3_lattices(k1_robbins3), -v10_lattices(k1_robbins3), v4_lattices(k1_robbins3), v5_lattices(k1_robbins3), v6_lattices(k1_robbins3), v7_lattices(k1_robbins3), v8_lattices(k1_robbins3), v9_lattices(k1_robbins3)]   (4)  substitution:[[_G1835], [k1_robbins3]]
+1.3.1  [-l3_lattices(k1_robbins3), l3_robbins3(k1_robbins3)]   (19)  substitution:[[_G3943], [k1_robbins3]]
+1.3.1.1  [-l3_robbins3(k1_robbins3)]   (12)  
+1.3.2  [v10_lattices(k1_robbins3)]   (1)  
+1.3.3  [-v4_lattices(k1_robbins3), l2_lattices(k1_robbins3), v13_struct_0(k1_robbins3, np__1)]   (5)  substitution:[[_G2462], [k1_robbins3]]
+1.3.3.1  [-l2_lattices(k1_robbins3), l3_lattices(k1_robbins3)]   (15)  substitution:[[_G3754], [k1_robbins3]]
+1.3.3.1.1  [-l3_lattices(k1_robbins3)]   (lemmata:1.3)  
+1.3.3.2  [-v13_struct_0(k1_robbins3, np__1)]   (16)  
+1.3.4  [-v5_lattices(k1_robbins3), l2_lattices(k1_robbins3), v13_struct_0(k1_robbins3, np__1)]   (6)  substitution:[[_G2462], [k1_robbins3]]
+1.3.4.1  [-l2_lattices(k1_robbins3), l3_lattices(k1_robbins3)]   (15)  substitution:[[_G3754], [k1_robbins3]]
+1.3.4.1.1  [-l3_lattices(k1_robbins3)]   (lemmata:1.3)  
+1.3.4.2  [-v13_struct_0(k1_robbins3, np__1)]   (16)  
+1.3.5  [-v6_lattices(k1_robbins3), l1_lattices(k1_robbins3), v13_struct_0(k1_robbins3, np__1)]   (7)  substitution:[[_G2819], [k1_robbins3]]
+1.3.5.1  [-l1_lattices(k1_robbins3), l3_lattices(k1_robbins3)]   (14)  substitution:[[_G3754], [k1_robbins3]]
+1.3.5.1.1  [-l3_lattices(k1_robbins3)]   (lemmata:1.3)  
+1.3.5.2  [-v13_struct_0(k1_robbins3, np__1)]   (16)  
+1.3.6  [-v7_lattices(k1_robbins3), l1_lattices(k1_robbins3), v13_struct_0(k1_robbins3, np__1)]   (8)  substitution:[[_G2819], [k1_robbins3]]
+1.3.6.1  [-l1_lattices(k1_robbins3), l3_lattices(k1_robbins3)]   (14)  substitution:[[_G3754], [k1_robbins3]]
+1.3.6.1.1  [-l3_lattices(k1_robbins3)]   (lemmata:1.3)  
+1.3.6.2  [-v13_struct_0(k1_robbins3, np__1)]   (16)  
+1.3.7  [-v8_lattices(k1_robbins3), l3_lattices(k1_robbins3), v13_struct_0(k1_robbins3, np__1)]   (9)  substitution:[[_G3176], [k1_robbins3]]
+1.3.7.1  [-l3_lattices(k1_robbins3)]   (lemmata:1.3)  
+1.3.7.2  [-v13_struct_0(k1_robbins3, np__1)]   (16)  
+1.3.8  [-v9_lattices(k1_robbins3), l3_lattices(k1_robbins3), v13_struct_0(k1_robbins3, np__1)]   (10)  substitution:[[_G3176], [k1_robbins3]]
+1.3.8.1  [-l3_lattices(k1_robbins3)]   (lemmata:1.3)  
+1.3.8.2  [-v13_struct_0(k1_robbins3, np__1)]   (16)  
+------------------------------------------------------
+End of proof for l13_robbins3

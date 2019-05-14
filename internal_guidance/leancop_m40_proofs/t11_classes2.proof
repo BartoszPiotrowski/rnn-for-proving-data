@@ -1,0 +1,42 @@
+
+t11_classes2 is a Theorem
+Start of proof for t11_classes2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v2_classes1(2^[])]
+ (2)  [-r2_hidden(3^[], 2^[])]
+ (3)  [r2_hidden(k1_card_1(3^[]), 2^[])]
+ (4)  [v2_classes1(_G5754), -v1_classes1(_G5754)]
+ (5)  [v2_classes1(_G6813), - (k2_ordinal1(_G6813)=k1_card_1(_G6813))]
+ (6)  [r2_tarski(_G6435, _G6373), v1_classes1(_G6373), r2_hidden(_G6435, _G6373)]
+ (7)  [-r2_hidden(k1_card_1(_G6435), k1_card_1(_G6373)), v1_classes1(_G6373), r2_hidden(_G6435, _G6373)]
+ (8)  [_G5948=k2_ordinal1(_G5885), r2_hidden(_G6083, _G5948), -r2_hidden(_G6083, _G5885)]
+ (9)  [_G5948=k2_ordinal1(_G5885), r2_hidden(_G6083, _G5948), -v3_ordinal1(_G6083)]
+ (10)  [_G5948=k2_ordinal1(_G5885), -r2_hidden(_G6083, _G5948), r2_hidden(_G6083, _G5885), v3_ordinal1(_G6083)]
+ (11)  [- (_G5948=k2_ordinal1(_G5885)), -r2_hidden(1^[_G5948, _G5885], _G5948), -r2_hidden(1^[_G5948, _G5885], _G5885)]
+ (12)  [- (_G5948=k2_ordinal1(_G5885)), -r2_hidden(1^[_G5948, _G5885], _G5948), -v3_ordinal1(1^[_G5948, _G5885])]
+ (13)  [- (_G5948=k2_ordinal1(_G5885)), r2_hidden(1^[_G5948, _G5885], _G5948), r2_hidden(1^[_G5948, _G5885], _G5885), v3_ordinal1(1^[_G5948, _G5885])]
+ (14)  [_G5165=_G5214, - (k2_ordinal1(_G5165)=k2_ordinal1(_G5214))]
+ (15)  [_G5434=_G5483, - (k1_card_1(_G5434)=k1_card_1(_G5483))]
+ (16)  [- (_G2259=_G2259)]
+ (17)  [_G2358=_G2403, - (_G2403=_G2358)]
+ (18)  [- (_G2591=_G2704), _G2591=_G2647, _G2647=_G2704]
+ (19)  [-v3_ordinal1(_G3090), _G3041=_G3090, v3_ordinal1(_G3041)]
+ (20)  [-v1_classes1(_G3368), _G3319=_G3368, v1_classes1(_G3319)]
+ (21)  [-r2_tarski(_G3664, _G3801), r2_tarski(_G3597, _G3732), _G3597=_G3664, _G3732=_G3801]
+ (22)  [-v2_classes1(_G4243), _G4194=_G4243, v2_classes1(_G4194)]
+ (23)  [-r2_hidden(_G4530, _G4667), r2_hidden(_G4463, _G4598), _G4463=_G4530, _G4598=_G4667]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(k1_card_1(3^[]), 2^[])]   (3)  
+1.1  [-r2_hidden(k1_card_1(3^[]), 2^[]), k1_card_1(2^[])=k2_ordinal1(2^[]), r2_hidden(k1_card_1(3^[]), k1_card_1(2^[]))]   (8)  substitution:[[_G6083, _G5885, _G5948], [k1_card_1(3^[]), 2^[], k1_card_1(2^[])]]
+1.1.1  [- (k1_card_1(2^[])=k2_ordinal1(2^[])), k2_ordinal1(2^[])=k1_card_1(2^[])]   (17)  substitution:[[_G2403, _G2358], [k1_card_1(2^[]), k2_ordinal1(2^[])]]
+1.1.1.1  [- (k2_ordinal1(2^[])=k1_card_1(2^[])), v2_classes1(2^[])]   (5)  substitution:[[_G6813], [2^[]]]
+1.1.1.1.1  [-v2_classes1(2^[])]   (1)  
+1.1.2  [-r2_hidden(k1_card_1(3^[]), k1_card_1(2^[])), v1_classes1(2^[]), r2_hidden(3^[], 2^[])]   (7)  substitution:[[_G6435, _G6373], [3^[], 2^[]]]
+1.1.2.1  [-v1_classes1(2^[]), v2_classes1(2^[])]   (4)  substitution:[[_G5754], [2^[]]]
+1.1.2.1.1  [-v2_classes1(2^[])]   (1)  
+1.1.2.2  [-r2_hidden(3^[], 2^[])]   (2)  
+------------------------------------------------------
+End of proof for t11_classes2

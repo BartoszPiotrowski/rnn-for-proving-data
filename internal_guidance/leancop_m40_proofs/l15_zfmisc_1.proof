@@ -1,0 +1,19 @@
+
+l15_zfmisc_1 is a Theorem
+Start of proof for l15_zfmisc_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-r1_tarski(k2_xboole_0(k1_tarski(1^[]), 2^[]), 2^[])]
+ (2)  [r2_hidden(1^[], 2^[])]
+ (3)  [r1_tarski(k2_xboole_0(_G980, _G1033), _G1087), -r1_tarski(_G980, _G1087)]
+ (4)  [r1_tarski(k1_tarski(_G729), _G776), -r2_hidden(_G729, _G776)]
+ (5)  [-r1_tarski(k1_tarski(_G729), _G776), r2_hidden(_G729, _G776)]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(1^[], 2^[])]   (2)  
+1.1  [-r2_hidden(1^[], 2^[]), r1_tarski(k1_tarski(1^[]), 2^[])]   (4)  substitution:[[_G729, _G776], [1^[], 2^[]]]
+1.1.1  [-r1_tarski(k1_tarski(1^[]), 2^[]), r1_tarski(k2_xboole_0(k1_tarski(1^[]), 2^[]), 2^[])]   (3)  substitution:[[_G980, _G1087, _G1033], [k1_tarski(1^[]), 2^[], 2^[]]]
+1.1.1.1  [-r1_tarski(k2_xboole_0(k1_tarski(1^[]), 2^[]), 2^[])]   (1)  
+------------------------------------------------------
+End of proof for l15_zfmisc_1

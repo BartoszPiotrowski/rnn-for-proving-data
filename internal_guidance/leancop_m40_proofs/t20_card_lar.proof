@@ -1,0 +1,68 @@
+
+t20_card_lar is a Theorem
+Start of proof for t20_card_lar
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v1_finset_1(1^[])]
+ (2)  [-v1_card_1(1^[])]
+ (3)  [-m1_subset_1(2^[], k1_zfmisc_1(1^[]))]
+ (4)  [-v1_card_lar(2^[], 1^[])]
+ (5)  [r1_ordinal1(k1_card_5(1^[]), k1_card_1(2^[]))]
+ (6)  [r2_hidden(_G10877, _G10924), r2_hidden(_G10924, _G10877)]
+ (7)  [v1_card_1(_G11137), -v3_ordinal1(_G11137)]
+ (8)  [-v4_ordinal1(_G11268), -v1_finset_1(_G11268), v1_card_1(_G11268)]
+ (9)  [-v1_finset_1(_G11531), v4_ordinal1(_G11531), v3_ordinal1(_G11531), m1_subset_1(_G11755, k1_zfmisc_1(_G11531)), v1_card_lar(_G11755, _G11531), - (k3_ordinal2(_G11755)=_G11531)]
+ (10)  [-v1_finset_1(_G11531), v4_ordinal1(_G11531), v3_ordinal1(_G11531), m1_subset_1(_G11755, k1_zfmisc_1(_G11531)), -v1_card_lar(_G11755, _G11531), k3_ordinal2(_G11755)=_G11531]
+ (11)  [-v1_card_1(k1_card_1(_G12089))]
+ (12)  [v1_card_1(_G12178), -v1_card_1(k1_card_5(_G12178))]
+ (13)  [v3_ordinal1(_G12325), v3_ordinal1(_G12412), -r1_ordinal1(_G12325, _G12412), -r2_hidden(_G12412, _G12325)]
+ (14)  [v1_card_1(_G12758), -r2_hidden(k3_ordinal2(_G12688), _G12758), r1_tarski(_G12688, _G12758), r2_hidden(k1_card_1(_G12688), k1_card_5(_G12758))]
+ (15)  [v1_card_1(_G12758), -r2_hidden(k3_tarski(_G12688), _G12758), r1_tarski(_G12688, _G12758), r2_hidden(k1_card_1(_G12688), k1_card_5(_G12758))]
+ (16)  [m1_subset_1(_G13236, k1_zfmisc_1(_G13283)), -r1_tarski(_G13236, _G13283)]
+ (17)  [-m1_subset_1(_G13236, k1_zfmisc_1(_G13283)), r1_tarski(_G13236, _G13283)]
+ (18)  [_G9391=_G9440, - (k3_ordinal2(_G9391)=k3_ordinal2(_G9440))]
+ (19)  [_G9669=_G9718, - (k3_tarski(_G9669)=k3_tarski(_G9718))]
+ (20)  [_G9947=_G9996, - (k1_zfmisc_1(_G9947)=k1_zfmisc_1(_G9996))]
+ (21)  [_G10225=_G10274, - (k1_card_5(_G10225)=k1_card_5(_G10274))]
+ (22)  [_G10494=_G10543, - (k1_card_1(_G10494)=k1_card_1(_G10543))]
+ (23)  [- (_G4332=_G4332)]
+ (24)  [_G4431=_G4476, - (_G4476=_G4431)]
+ (25)  [- (_G4664=_G4777), _G4664=_G4720, _G4720=_G4777]
+ (26)  [-v4_ordinal1(_G5163), _G5114=_G5163, v4_ordinal1(_G5114)]
+ (27)  [-v3_ordinal1(_G5441), _G5392=_G5441, v3_ordinal1(_G5392)]
+ (28)  [-r2_hidden(_G5737, _G5874), r2_hidden(_G5670, _G5805), _G5670=_G5737, _G5805=_G5874]
+ (29)  [-r1_tarski(_G6334, _G6471), r1_tarski(_G6267, _G6402), _G6267=_G6334, _G6402=_G6471]
+ (30)  [-v1_finset_1(_G6913), _G6864=_G6913, v1_finset_1(_G6864)]
+ (31)  [-v1_card_1(_G7191), _G7142=_G7191, v1_card_1(_G7142)]
+ (32)  [-m1_subset_1(_G7487, _G7624), m1_subset_1(_G7420, _G7555), _G7420=_G7487, _G7555=_G7624]
+ (33)  [-v1_card_lar(_G8084, _G8221), v1_card_lar(_G8017, _G8152), _G8017=_G8084, _G8152=_G8221]
+ (34)  [-r1_ordinal1(_G8672, _G8809), r1_ordinal1(_G8605, _G8740), _G8605=_G8672, _G8740=_G8809]
+
+Connection Proof:
+-----------------
+1  [r1_ordinal1(k1_card_5(1^[]), k1_card_1(2^[]))]   (5)  
+1.1  [-r1_ordinal1(k1_card_5(1^[]), k1_card_1(2^[])), v3_ordinal1(k1_card_5(1^[])), v3_ordinal1(k1_card_1(2^[])), -r2_hidden(k1_card_1(2^[]), k1_card_5(1^[]))]   (13)  substitution:[[_G12325, _G12412], [k1_card_5(1^[]), k1_card_1(2^[])]]
+1.1.1  [-v3_ordinal1(k1_card_5(1^[])), v1_card_1(k1_card_5(1^[]))]   (7)  substitution:[[_G11137], [k1_card_5(1^[])]]
+1.1.1.1  [-v1_card_1(k1_card_5(1^[])), v1_card_1(1^[])]   (12)  substitution:[[_G12178], [1^[]]]
+1.1.1.1.1  [-v1_card_1(1^[])]   (2)  
+1.1.2  [-v3_ordinal1(k1_card_1(2^[])), v1_card_1(k1_card_1(2^[]))]   (7)  substitution:[[_G11137], [k1_card_1(2^[])]]
+1.1.2.1  [-v1_card_1(k1_card_1(2^[]))]   (11)  substitution:[[_G12089], [2^[]]]
+1.1.3  [r2_hidden(k1_card_1(2^[]), k1_card_5(1^[])), v1_card_1(1^[]), -r2_hidden(k3_ordinal2(2^[]), 1^[]), r1_tarski(2^[], 1^[])]   (14)  substitution:[[_G12688, _G12758], [2^[], 1^[]]]
+1.1.3.1  [-v1_card_1(1^[])]   (2)  
+1.1.3.2  [r2_hidden(k3_ordinal2(2^[]), 1^[]), -r2_hidden(1^[], 1^[]), k3_ordinal2(2^[])=1^[], 1^[]=1^[]]   (28)  substitution:[[_G5670, _G5805, _G5737, _G5874], [k3_ordinal2(2^[]), 1^[], 1^[], 1^[]]]
+1.1.3.2.1  [r2_hidden(1^[], 1^[]), r2_hidden(1^[], 1^[])]   (6)  substitution:[[_G10877, _G10924], [1^[], 1^[]]]
+1.1.3.2.1.1  [-r2_hidden(1^[], 1^[])]   (reduction:1.1.3.2)  
+1.1.3.2.2  [- (k3_ordinal2(2^[])=1^[]), -v1_finset_1(1^[]), v4_ordinal1(1^[]), v3_ordinal1(1^[]), m1_subset_1(2^[], k1_zfmisc_1(1^[])), v1_card_lar(2^[], 1^[])]   (9)  substitution:[[_G11755, _G11531], [2^[], 1^[]]]
+1.1.3.2.2.1  [v1_finset_1(1^[])]   (1)  
+1.1.3.2.2.2  [-v4_ordinal1(1^[]), -v1_finset_1(1^[]), v1_card_1(1^[])]   (8)  substitution:[[_G11268], [1^[]]]
+1.1.3.2.2.2.1  [v1_finset_1(1^[])]   (1)  
+1.1.3.2.2.2.2  [-v1_card_1(1^[])]   (2)  
+1.1.3.2.2.3  [-v3_ordinal1(1^[]), v1_card_1(1^[])]   (7)  substitution:[[_G11137], [1^[]]]
+1.1.3.2.2.3.1  [-v1_card_1(1^[])]   (2)  
+1.1.3.2.2.4  [-m1_subset_1(2^[], k1_zfmisc_1(1^[]))]   (3)  
+1.1.3.2.2.5  [-v1_card_lar(2^[], 1^[])]   (4)  
+1.1.3.2.3  [- (1^[]=1^[])]   (23)  substitution:[[_G4332], [1^[]]]
+1.1.3.3  [-r1_tarski(2^[], 1^[]), m1_subset_1(2^[], k1_zfmisc_1(1^[]))]   (16)  substitution:[[_G13236, _G13283], [2^[], 1^[]]]
+1.1.3.3.1  [-m1_subset_1(2^[], k1_zfmisc_1(1^[]))]   (3)  
+------------------------------------------------------
+End of proof for t20_card_lar

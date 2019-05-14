@@ -1,0 +1,38 @@
+
+l21_pnproc_1 is a Theorem
+Start of proof for l21_pnproc_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-r2_hidden(1^[], 2^[])]
+ (2)  [k1_funct_1(k1_pnproc_1(2^[]), 1^[])=k6_numbers]
+ (3)  [- (k16_pre_poly(_G5363)=k8_funcop_1(k5_numbers, _G5363, k6_numbers))]
+ (4)  [- (k1_pnproc_1(_G5564)=k8_funcop_1(k5_numbers, _G5564, k6_numbers))]
+ (5)  [- (c1__axioms=k6_numbers)]
+ (6)  [- (c2__arytm_0=k6_numbers)]
+ (7)  [- (k1_funct_1(k16_pre_poly(_G5870), _G5914)=k6_numbers)]
+ (8)  [-r2_hidden(_G2556, _G2693), r2_hidden(_G2489, _G2624), _G2489=_G2556, _G2624=_G2693]
+ (9)  [- (_G1716=_G1716)]
+ (10)  [_G1815=_G1860, - (_G1860=_G1815)]
+ (11)  [- (_G2048=_G2161), _G2048=_G2104, _G2104=_G2161]
+ (12)  [- (k8_funcop_1(_G3107, _G3278, _G3453)=k8_funcop_1(_G3192, _G3365, _G3542)), _G3107=_G3192, _G3278=_G3365, _G3453=_G3542]
+ (13)  [_G4135=_G4184, - (k16_pre_poly(_G4135)=k16_pre_poly(_G4184))]
+ (14)  [_G5001=_G5050, - (k1_pnproc_1(_G5001)=k1_pnproc_1(_G5050))]
+ (15)  [- (k1_funct_1(_G4413, _G4548)=k1_funct_1(_G4480, _G4617)), _G4413=_G4480, _G4548=_G4617]
+
+Connection Proof:
+-----------------
+1  [k1_funct_1(k1_pnproc_1(2^[]), 1^[])=k6_numbers]   (2)  
+1.1  [- (k1_funct_1(k1_pnproc_1(2^[]), 1^[])=k6_numbers), k6_numbers=k1_funct_1(k1_pnproc_1(2^[]), 1^[])]   (10)  substitution:[[_G1860, _G1815], [k1_funct_1(k1_pnproc_1(2^[]), 1^[]), k6_numbers]]
+1.1.1  [- (k6_numbers=k1_funct_1(k1_pnproc_1(2^[]), 1^[])), k6_numbers=k1_funct_1(k8_funcop_1(k5_numbers, 2^[], k6_numbers), 1^[]), k1_funct_1(k8_funcop_1(k5_numbers, 2^[], k6_numbers), 1^[])=k1_funct_1(k1_pnproc_1(2^[]), 1^[])]   (11)  substitution:[[_G2048, _G2161, _G2104], [k6_numbers, k1_funct_1(k1_pnproc_1(2^[]), 1^[]), k1_funct_1(k8_funcop_1(k5_numbers, 2^[], k6_numbers), 1^[])]]
+1.1.1.1  [- (k6_numbers=k1_funct_1(k8_funcop_1(k5_numbers, 2^[], k6_numbers), 1^[])), k6_numbers=k1_funct_1(k16_pre_poly(2^[]), 1^[]), k1_funct_1(k16_pre_poly(2^[]), 1^[])=k1_funct_1(k8_funcop_1(k5_numbers, 2^[], k6_numbers), 1^[])]   (11)  substitution:[[_G2048, _G2161, _G2104], [k6_numbers, k1_funct_1(k8_funcop_1(k5_numbers, 2^[], k6_numbers), 1^[]), k1_funct_1(k16_pre_poly(2^[]), 1^[])]]
+1.1.1.1.1  [- (k6_numbers=k1_funct_1(k16_pre_poly(2^[]), 1^[])), k1_funct_1(k16_pre_poly(2^[]), 1^[])=k6_numbers]   (10)  substitution:[[_G1860, _G1815], [k6_numbers, k1_funct_1(k16_pre_poly(2^[]), 1^[])]]
+1.1.1.1.1.1  [- (k1_funct_1(k16_pre_poly(2^[]), 1^[])=k6_numbers)]   (7)  substitution:[[_G5870, _G5914], [2^[], 1^[]]]
+1.1.1.1.2  [- (k1_funct_1(k16_pre_poly(2^[]), 1^[])=k1_funct_1(k8_funcop_1(k5_numbers, 2^[], k6_numbers), 1^[])), k16_pre_poly(2^[])=k8_funcop_1(k5_numbers, 2^[], k6_numbers), 1^[]=1^[]]   (15)  substitution:[[_G4413, _G4548, _G4480, _G4617], [k16_pre_poly(2^[]), 1^[], k8_funcop_1(k5_numbers, 2^[], k6_numbers), 1^[]]]
+1.1.1.1.2.1  [- (k16_pre_poly(2^[])=k8_funcop_1(k5_numbers, 2^[], k6_numbers))]   (3)  substitution:[[_G5363], [2^[]]]
+1.1.1.1.2.2  [- (1^[]=1^[])]   (9)  substitution:[[_G1716], [1^[]]]
+1.1.1.2  [- (k1_funct_1(k8_funcop_1(k5_numbers, 2^[], k6_numbers), 1^[])=k1_funct_1(k1_pnproc_1(2^[]), 1^[])), k1_funct_1(k1_pnproc_1(2^[]), 1^[])=k1_funct_1(k8_funcop_1(k5_numbers, 2^[], k6_numbers), 1^[])]   (10)  substitution:[[_G1860, _G1815], [k1_funct_1(k8_funcop_1(k5_numbers, 2^[], k6_numbers), 1^[]), k1_funct_1(k1_pnproc_1(2^[]), 1^[])]]
+1.1.1.2.1  [- (k1_funct_1(k1_pnproc_1(2^[]), 1^[])=k1_funct_1(k8_funcop_1(k5_numbers, 2^[], k6_numbers), 1^[])), k1_pnproc_1(2^[])=k8_funcop_1(k5_numbers, 2^[], k6_numbers), 1^[]=1^[]]   (15)  substitution:[[_G4413, _G4548, _G4480, _G4617], [k1_pnproc_1(2^[]), 1^[], k8_funcop_1(k5_numbers, 2^[], k6_numbers), 1^[]]]
+1.1.1.2.1.1  [- (k1_pnproc_1(2^[])=k8_funcop_1(k5_numbers, 2^[], k6_numbers))]   (4)  substitution:[[_G5564], [2^[]]]
+1.1.1.2.1.2  [- (1^[]=1^[])]   (9)  substitution:[[_G1716], [1^[]]]
+------------------------------------------------------
+End of proof for l21_pnproc_1

@@ -1,0 +1,41 @@
+
+t2_dickson is a Theorem
+Start of proof for t2_dickson
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v7_ordinal1(1^[])]
+ (2)  [r1_ordinal1(1^[], k1_nat_1(1^[], np__1))]
+ (3)  [r2_hidden(_G6200, _G6247), r2_hidden(_G6247, _G6200)]
+ (4)  [v7_ordinal1(_G6460), -v3_ordinal1(_G6460)]
+ (5)  [v7_ordinal1(_G6649), - (k1_ordinal1(_G6649)=k1_nat_1(_G6649, np__1))]
+ (6)  [v3_ordinal1(_G6864), v1_xboole_0(k1_ordinal1(_G6864))]
+ (7)  [v3_ordinal1(_G6864), -v3_ordinal1(k1_ordinal1(_G6864))]
+ (8)  [-r2_hidden(_G7455, k1_ordinal1(_G7455))]
+ (9)  [v3_ordinal1(_G7101), v3_ordinal1(_G7188), -r1_ordinal1(_G7101, _G7188), -r2_hidden(_G7188, _G7101)]
+ (10)  [_G5292=_G5341, - (k1_ordinal1(_G5292)=k1_ordinal1(_G5341))]
+ (11)  [- (k1_nat_1(_G5561, _G5696)=k1_nat_1(_G5628, _G5765)), _G5561=_G5628, _G5696=_G5765]
+ (12)  [- (_G2386=_G2386)]
+ (13)  [_G2485=_G2530, - (_G2530=_G2485)]
+ (14)  [- (_G2718=_G2831), _G2718=_G2774, _G2774=_G2831]
+ (15)  [-v1_xboole_0(_G3217), _G3168=_G3217, v1_xboole_0(_G3168)]
+ (16)  [-v3_ordinal1(_G3495), _G3446=_G3495, v3_ordinal1(_G3446)]
+ (17)  [-r2_hidden(_G3791, _G3928), r2_hidden(_G3724, _G3859), _G3724=_G3791, _G3859=_G3928]
+ (18)  [-v7_ordinal1(_G4370), _G4321=_G4370, v7_ordinal1(_G4321)]
+ (19)  [-r1_ordinal1(_G4657, _G4794), r1_ordinal1(_G4590, _G4725), _G4590=_G4657, _G4725=_G4794]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(1^[], k1_ordinal1(1^[])), r2_hidden(k1_ordinal1(1^[]), 1^[])]   (3)  substitution:[[_G6200, _G6247], [1^[], k1_ordinal1(1^[])]]
+1.1  [-r2_hidden(1^[], k1_ordinal1(1^[]))]   (8)  substitution:[[_G7455], [1^[]]]
+1.2  [-r2_hidden(k1_ordinal1(1^[]), 1^[]), v3_ordinal1(1^[]), v3_ordinal1(k1_ordinal1(1^[])), -r1_ordinal1(1^[], k1_ordinal1(1^[]))]   (9)  substitution:[[_G7188, _G7101], [k1_ordinal1(1^[]), 1^[]]]
+1.2.1  [-v3_ordinal1(1^[]), v7_ordinal1(1^[])]   (4)  substitution:[[_G6460], [1^[]]]
+1.2.1.1  [-v7_ordinal1(1^[])]   (1)  
+1.2.2  [-v3_ordinal1(k1_ordinal1(1^[])), v3_ordinal1(1^[])]   (7)  substitution:[[_G6864], [1^[]]]
+1.2.2.1  [-v3_ordinal1(1^[])]   (lemmata:1.2)  
+1.2.3  [r1_ordinal1(1^[], k1_ordinal1(1^[])), -r1_ordinal1(1^[], k1_nat_1(1^[], np__1)), 1^[]=1^[], k1_ordinal1(1^[])=k1_nat_1(1^[], np__1)]   (19)  substitution:[[_G4590, _G4725, _G4657, _G4794], [1^[], k1_ordinal1(1^[]), 1^[], k1_nat_1(1^[], np__1)]]
+1.2.3.1  [r1_ordinal1(1^[], k1_nat_1(1^[], np__1))]   (2)  
+1.2.3.2  [- (1^[]=1^[])]   (12)  substitution:[[_G2386], [1^[]]]
+1.2.3.3  [- (k1_ordinal1(1^[])=k1_nat_1(1^[], np__1)), v7_ordinal1(1^[])]   (5)  substitution:[[_G6649], [1^[]]]
+1.2.3.3.1  [-v7_ordinal1(1^[])]   (1)  
+------------------------------------------------------
+End of proof for t2_dickson

@@ -1,0 +1,61 @@
+
+t10_quatern2 is a Theorem
+Start of proof for t10_quatern2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_quaterni(2^[])]
+ (2)  [2^[]=k6_numbers]
+ (3)  [-r1_xxreal_0(k3_quatern2(2^[]), k6_numbers)]
+ (4)  [v1_quaterni(_G6388), -v1_xreal_0(k32_quaterni(_G6388))]
+ (5)  [v1_quaterni(_G6535), k3_quatern2(_G6535)=k6_numbers, - (_G6535=k6_numbers)]
+ (6)  [v1_xreal_0(_G6792), v1_xreal_0(_G6885), - (_G6792=_G6885), r1_xxreal_0(_G6792, _G6885), r1_xxreal_0(_G6885, _G6792)]
+ (7)  [-v1_xboole_0(1^[])]
+ (8)  [-v1_xcmplx_0(1^[])]
+ (9)  [-v1_xxreal_0(1^[])]
+ (10)  [-v1_xreal_0(1^[])]
+ (11)  [v1_quaterni(_G7492), - (k3_quatern2(_G7492)=k32_quaterni(_G7492))]
+ (12)  [- (k6_numbers=k1_xboole_0)]
+ (13)  [-v1_xboole_0(np__0)]
+ (14)  [v1_quaterni(_G7770), -r1_xxreal_0(k6_numbers, k32_quaterni(_G7770))]
+ (15)  [v1_xboole_0(_G7934), - (_G7934=k1_xboole_0)]
+ (16)  [_G5799=_G5848, - (k32_quaterni(_G5799)=k32_quaterni(_G5848))]
+ (17)  [_G6068=_G6117, - (k3_quatern2(_G6068)=k3_quatern2(_G6117))]
+ (18)  [- (_G2913=_G2913)]
+ (19)  [_G3012=_G3057, - (_G3057=_G3012)]
+ (20)  [- (_G3245=_G3358), _G3245=_G3301, _G3301=_G3358]
+ (21)  [-v1_xcmplx_0(_G3744), _G3695=_G3744, v1_xcmplx_0(_G3695)]
+ (22)  [-v1_xxreal_0(_G4022), _G3973=_G4022, v1_xxreal_0(_G3973)]
+ (23)  [-v1_xreal_0(_G4300), _G4251=_G4300, v1_xreal_0(_G4251)]
+ (24)  [-v1_xboole_0(_G4578), _G4529=_G4578, v1_xboole_0(_G4529)]
+ (25)  [-v1_quaterni(_G4856), _G4807=_G4856, v1_quaterni(_G4807)]
+ (26)  [-r1_xxreal_0(_G5143, _G5280), r1_xxreal_0(_G5076, _G5211), _G5076=_G5143, _G5211=_G5280]
+
+Connection Proof:
+-----------------
+1  [2^[]=k6_numbers]   (2)  
+1.1  [- (2^[]=k6_numbers), v1_quaterni(2^[]), k3_quatern2(2^[])=k6_numbers]   (5)  substitution:[[_G6535], [2^[]]]
+1.1.1  [-v1_quaterni(2^[])]   (1)  
+1.1.2  [- (k3_quatern2(2^[])=k6_numbers), v1_xreal_0(k3_quatern2(2^[])), v1_xreal_0(k6_numbers), r1_xxreal_0(k3_quatern2(2^[]), k6_numbers), r1_xxreal_0(k6_numbers, k3_quatern2(2^[]))]   (6)  substitution:[[_G6792, _G6885], [k3_quatern2(2^[]), k6_numbers]]
+1.1.2.1  [-v1_xreal_0(k3_quatern2(2^[])), k32_quaterni(2^[])=k3_quatern2(2^[]), v1_xreal_0(k32_quaterni(2^[]))]   (23)  substitution:[[_G4300, _G4251], [k3_quatern2(2^[]), k32_quaterni(2^[])]]
+1.1.2.1.1  [- (k32_quaterni(2^[])=k3_quatern2(2^[])), k3_quatern2(2^[])=k32_quaterni(2^[])]   (19)  substitution:[[_G3057, _G3012], [k32_quaterni(2^[]), k3_quatern2(2^[])]]
+1.1.2.1.1.1  [- (k3_quatern2(2^[])=k32_quaterni(2^[])), v1_quaterni(2^[])]   (11)  substitution:[[_G7492], [2^[]]]
+1.1.2.1.1.1.1  [-v1_quaterni(2^[])]   (1)  
+1.1.2.1.2  [-v1_xreal_0(k32_quaterni(2^[])), v1_quaterni(2^[])]   (4)  substitution:[[_G6388], [2^[]]]
+1.1.2.1.2.1  [-v1_quaterni(2^[])]   (1)  
+1.1.2.2  [-v1_xreal_0(k6_numbers), k1_xboole_0=k6_numbers, v1_xreal_0(k1_xboole_0)]   (23)  substitution:[[_G4300, _G4251], [k6_numbers, k1_xboole_0]]
+1.1.2.2.1  [- (k1_xboole_0=k6_numbers), k6_numbers=k1_xboole_0]   (19)  substitution:[[_G3057, _G3012], [k1_xboole_0, k6_numbers]]
+1.1.2.2.1.1  [- (k6_numbers=k1_xboole_0)]   (12)  
+1.1.2.2.2  [-v1_xreal_0(k1_xboole_0), 1^[]=k1_xboole_0, v1_xreal_0(1^[])]   (23)  substitution:[[_G4300, _G4251], [k1_xboole_0, 1^[]]]
+1.1.2.2.2.1  [- (1^[]=k1_xboole_0), v1_xboole_0(1^[])]   (15)  substitution:[[_G7934], [1^[]]]
+1.1.2.2.2.1.1  [-v1_xboole_0(1^[])]   (7)  
+1.1.2.2.2.2  [-v1_xreal_0(1^[])]   (10)  
+1.1.2.3  [-r1_xxreal_0(k3_quatern2(2^[]), k6_numbers)]   (3)  
+1.1.2.4  [-r1_xxreal_0(k6_numbers, k3_quatern2(2^[])), r1_xxreal_0(k6_numbers, k32_quaterni(2^[])), k6_numbers=k6_numbers, k32_quaterni(2^[])=k3_quatern2(2^[])]   (26)  substitution:[[_G5143, _G5280, _G5076, _G5211], [k6_numbers, k3_quatern2(2^[]), k6_numbers, k32_quaterni(2^[])]]
+1.1.2.4.1  [-r1_xxreal_0(k6_numbers, k32_quaterni(2^[])), v1_quaterni(2^[])]   (14)  substitution:[[_G7770], [2^[]]]
+1.1.2.4.1.1  [-v1_quaterni(2^[])]   (1)  
+1.1.2.4.2  [- (k6_numbers=k6_numbers)]   (18)  substitution:[[_G2913], [k6_numbers]]
+1.1.2.4.3  [- (k32_quaterni(2^[])=k3_quatern2(2^[])), k3_quatern2(2^[])=k32_quaterni(2^[])]   (19)  substitution:[[_G3057, _G3012], [k32_quaterni(2^[]), k3_quatern2(2^[])]]
+1.1.2.4.3.1  [- (k3_quatern2(2^[])=k32_quaterni(2^[])), v1_quaterni(2^[])]   (11)  substitution:[[_G7492], [2^[]]]
+1.1.2.4.3.1.1  [-v1_quaterni(2^[])]   (1)  
+------------------------------------------------------
+End of proof for t10_quatern2

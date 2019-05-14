@@ -1,0 +1,45 @@
+
+t2_sprect_1 is a Theorem
+Start of proof for t2_sprect_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v3_funct_1(k10_finseq_1(2^[], 3^[]))]
+ (2)  [2^[]=3^[]]
+ (3)  [-v1_zfmisc_1(k10_xtuple_0(_G7769)), v1_relat_1(_G7769), v1_funct_1(_G7769), v3_funct_1(_G7769)]
+ (4)  [v1_xboole_0(k2_tarski(_G8032, _G8075))]
+ (5)  [-v1_relat_1(k10_finseq_1(_G8220, _G8269))]
+ (6)  [-v1_funct_1(k10_finseq_1(_G8220, _G8269))]
+ (7)  [- (k10_xtuple_0(k10_finseq_1(_G8498, _G8545))=k2_tarski(_G8498, _G8545))]
+ (8)  [k1_tarski(_G8758)=k2_tarski(_G8813, _G8869), - (_G8813=_G8869)]
+ (9)  [- (k2_tarski(_G9138, _G9138)=k1_tarski(_G9138))]
+ (10)  [-m1_subset_1(1^[_G9286], _G9286), -v1_xboole_0(_G9286), v1_zfmisc_1(_G9286)]
+ (11)  [- (_G9286=k1_tarski(1^[_G9286])), -v1_xboole_0(_G9286), v1_zfmisc_1(_G9286)]
+ (12)  [_G5944=_G5993, - (k10_xtuple_0(_G5944)=k10_xtuple_0(_G5993))]
+ (13)  [- (k2_tarski(_G6222, _G6357)=k2_tarski(_G6289, _G6426)), _G6222=_G6289, _G6357=_G6426]
+ (14)  [_G6819=_G6868, - (k1_tarski(_G6819)=k1_tarski(_G6868))]
+ (15)  [- (k10_finseq_1(_G7088, _G7223)=k10_finseq_1(_G7155, _G7292)), _G7088=_G7155, _G7223=_G7292]
+ (16)  [- (_G3058=_G3058)]
+ (17)  [_G3157=_G3202, - (_G3202=_G3157)]
+ (18)  [- (_G3390=_G3503), _G3390=_G3446, _G3446=_G3503]
+ (19)  [-v1_relat_1(_G3889), _G3840=_G3889, v1_relat_1(_G3840)]
+ (20)  [-v1_funct_1(_G4167), _G4118=_G4167, v1_funct_1(_G4118)]
+ (21)  [-v1_xboole_0(_G4445), _G4396=_G4445, v1_xboole_0(_G4396)]
+ (22)  [-v1_zfmisc_1(_G4723), _G4674=_G4723, v1_zfmisc_1(_G4674)]
+ (23)  [-v3_funct_1(_G5589), _G5540=_G5589, v3_funct_1(_G5540)]
+ (24)  [-m1_subset_1(_G5019, _G5156), m1_subset_1(_G4952, _G5087), _G4952=_G5019, _G5087=_G5156]
+
+Connection Proof:
+-----------------
+1  [v1_xboole_0(k2_tarski(2^[], 3^[]))]   (4)  substitution:[[_G8032, _G8075], [2^[], 3^[]]]
+1.1  [-v1_xboole_0(k2_tarski(2^[], 3^[])), - (k2_tarski(2^[], 3^[])=k1_tarski(1^[k2_tarski(2^[], 3^[])])), v1_zfmisc_1(k2_tarski(2^[], 3^[]))]   (11)  substitution:[[_G9286], [k2_tarski(2^[], 3^[])]]
+1.1.1  [k2_tarski(2^[], 3^[])=k1_tarski(1^[k2_tarski(2^[], 3^[])]), - (k1_tarski(1^[k2_tarski(2^[], 3^[])])=k2_tarski(2^[], 3^[]))]   (17)  substitution:[[_G3157, _G3202], [k2_tarski(2^[], 3^[]), k1_tarski(1^[k2_tarski(2^[], 3^[])])]]
+1.1.1.1  [k1_tarski(1^[k2_tarski(2^[], 3^[])])=k2_tarski(2^[], 3^[]), - (2^[]=3^[])]   (8)  substitution:[[_G8758, _G8813, _G8869], [1^[k2_tarski(2^[], 3^[])], 2^[], 3^[]]]
+1.1.1.1.1  [2^[]=3^[]]   (2)  
+1.1.2  [-v1_zfmisc_1(k2_tarski(2^[], 3^[])), k10_xtuple_0(k10_finseq_1(2^[], 3^[]))=k2_tarski(2^[], 3^[]), v1_zfmisc_1(k10_xtuple_0(k10_finseq_1(2^[], 3^[])))]   (22)  substitution:[[_G4723, _G4674], [k2_tarski(2^[], 3^[]), k10_xtuple_0(k10_finseq_1(2^[], 3^[]))]]
+1.1.2.1  [- (k10_xtuple_0(k10_finseq_1(2^[], 3^[]))=k2_tarski(2^[], 3^[]))]   (7)  substitution:[[_G8498, _G8545], [2^[], 3^[]]]
+1.1.2.2  [-v1_zfmisc_1(k10_xtuple_0(k10_finseq_1(2^[], 3^[]))), v1_relat_1(k10_finseq_1(2^[], 3^[])), v1_funct_1(k10_finseq_1(2^[], 3^[])), v3_funct_1(k10_finseq_1(2^[], 3^[]))]   (3)  substitution:[[_G7769], [k10_finseq_1(2^[], 3^[])]]
+1.1.2.2.1  [-v1_relat_1(k10_finseq_1(2^[], 3^[]))]   (5)  substitution:[[_G8220, _G8269], [2^[], 3^[]]]
+1.1.2.2.2  [-v1_funct_1(k10_finseq_1(2^[], 3^[]))]   (6)  substitution:[[_G8220, _G8269], [2^[], 3^[]]]
+1.1.2.2.3  [-v3_funct_1(k10_finseq_1(2^[], 3^[]))]   (1)  
+------------------------------------------------------
+End of proof for t2_sprect_1

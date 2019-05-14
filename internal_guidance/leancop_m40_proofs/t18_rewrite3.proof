@@ -1,0 +1,25 @@
+
+t18_rewrite3 is a Theorem
+Start of proof for t18_rewrite3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v1_xboole_0(3^[])]
+ (2)  [-m1_subset_1(4^[], k1_zfmisc_1(k8_afinsq_1(3^[])))]
+ (3)  [-l1_rewrite3(5^[], 4^[])]
+ (4)  [r2_hidden(k2_flang_1(3^[]), k10_xtuple_0(k9_xtuple_0(u1_rewrite3(4^[], 5^[]))))]
+ (5)  [-r1_rewrite3(4^[], 5^[], 1^[], k2_flang_1(3^[]), 2^[])]
+ (6)  [l1_rewrite3(_G1454, _G976), r1_rewrite3(_G976, _G1454, _G1094, _G1213, _G1333), -r1_struct_0(_G1454, _G1094)]
+ (7)  [l1_rewrite3(_G1454, _G976), r1_rewrite3(_G976, _G1454, _G1094, _G1213, _G1333), -r2_hidden(_G1213, _G976)]
+ (8)  [l1_rewrite3(_G1454, _G976), r1_rewrite3(_G976, _G1454, _G1094, _G1213, _G1333), -r1_struct_0(_G1454, _G1333)]
+ (9)  [l1_rewrite3(_G1454, _G976), r1_rewrite3(_G976, _G1454, _G1094, _G1213, _G1333), -r2_hidden(_G1094, k9_xtuple_0(k9_xtuple_0(u1_rewrite3(_G976, _G1454))))]
+ (10)  [l1_rewrite3(_G1454, _G976), r1_rewrite3(_G976, _G1454, _G1094, _G1213, _G1333), -r2_hidden(_G1213, k10_xtuple_0(k9_xtuple_0(u1_rewrite3(_G976, _G1454))))]
+ (11)  [l1_rewrite3(_G1454, _G976), r1_rewrite3(_G976, _G1454, _G1094, _G1213, _G1333), -r2_hidden(_G1333, k10_xtuple_0(u1_rewrite3(_G976, _G1454)))]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(k2_flang_1(3^[]), k10_xtuple_0(k9_xtuple_0(u1_rewrite3(4^[], 5^[]))))]   (4)  
+1.1  [-r2_hidden(k2_flang_1(3^[]), k10_xtuple_0(k9_xtuple_0(u1_rewrite3(4^[], 5^[])))), l1_rewrite3(5^[], 4^[]), r1_rewrite3(4^[], 5^[], 1^[], k2_flang_1(3^[]), 2^[])]   (10)  substitution:[[_G1213, _G976, _G1454, _G1094, _G1333], [k2_flang_1(3^[]), 4^[], 5^[], 1^[], 2^[]]]
+1.1.1  [-l1_rewrite3(5^[], 4^[])]   (3)  
+1.1.2  [-r1_rewrite3(4^[], 5^[], 1^[], k2_flang_1(3^[]), 2^[])]   (5)  
+------------------------------------------------------
+End of proof for t18_rewrite3

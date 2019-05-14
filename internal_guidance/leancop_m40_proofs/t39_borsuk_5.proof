@@ -1,0 +1,78 @@
+
+t39_borsuk_5 is a Theorem
+Start of proof for t39_borsuk_5
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-4^[], v3_rcomp_1(1^[])]
+ (2)  [-4^[], -v3_pre_topc(2^[], k3_topmetr)]
+ (3)  [-3^[], v3_pre_topc(2^[], k3_topmetr)]
+ (4)  [-3^[], -v3_rcomp_1(1^[])]
+ (5)  [-m1_subset_1(1^[], k1_zfmisc_1(k1_numbers))]
+ (6)  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(k3_topmetr)))]
+ (7)  [- (1^[]=2^[])]
+ (8)  [3^[], 4^[]]
+ (9)  [l1_pre_topc(_G8700), m1_subset_1(_G8794, k1_zfmisc_1(u1_struct_0(_G8700))), v3_pre_topc(_G8794, _G8700), -r2_hidden(_G8794, u1_pre_topc(_G8700))]
+ (10)  [l1_pre_topc(_G8700), m1_subset_1(_G8794, k1_zfmisc_1(u1_struct_0(_G8700))), -v3_pre_topc(_G8794, _G8700), r2_hidden(_G8794, u1_pre_topc(_G8700))]
+ (11)  [- (k3_topmetr=k3_pcomps_1(k8_metric_1))]
+ (12)  [-v2_pre_topc(k3_topmetr)]
+ (13)  [-l1_pre_topc(k3_topmetr)]
+ (14)  [-v1_metric_1(k8_metric_1)]
+ (15)  [-l1_metric_1(k8_metric_1)]
+ (16)  [l1_metric_1(_G9385), - (u1_struct_0(_G9385)=u1_struct_0(k3_pcomps_1(_G9385)))]
+ (17)  [l1_metric_1(_G9385), - (u1_pre_topc(k3_pcomps_1(_G9385))=k2_pcomps_1(_G9385))]
+ (18)  [m1_subset_1(_G9713, k1_zfmisc_1(k1_numbers)), r2_hidden(_G9713, k2_pcomps_1(k8_metric_1)), -v3_rcomp_1(_G9713)]
+ (19)  [m1_subset_1(_G9713, k1_zfmisc_1(k1_numbers)), -r2_hidden(_G9713, k2_pcomps_1(k8_metric_1)), v3_rcomp_1(_G9713)]
+ (20)  [_G7214=_G7263, - (u1_pre_topc(_G7214)=u1_pre_topc(_G7263))]
+ (21)  [_G7492=_G7541, - (k3_pcomps_1(_G7492)=k3_pcomps_1(_G7541))]
+ (22)  [_G7770=_G7819, - (k2_pcomps_1(_G7770)=k2_pcomps_1(_G7819))]
+ (23)  [_G8048=_G8097, - (k1_zfmisc_1(_G8048)=k1_zfmisc_1(_G8097))]
+ (24)  [_G8317=_G8366, - (u1_struct_0(_G8317)=u1_struct_0(_G8366))]
+ (25)  [- (_G3092=_G3092)]
+ (26)  [_G3191=_G3236, - (_G3236=_G3191)]
+ (27)  [- (_G3424=_G3537), _G3424=_G3480, _G3480=_G3537]
+ (28)  [-v2_pre_topc(_G3923), _G3874=_G3923, v2_pre_topc(_G3874)]
+ (29)  [-l1_pre_topc(_G4201), _G4152=_G4201, l1_pre_topc(_G4152)]
+ (30)  [-v1_metric_1(_G4479), _G4430=_G4479, v1_metric_1(_G4430)]
+ (31)  [-l1_metric_1(_G4757), _G4708=_G4757, l1_metric_1(_G4708)]
+ (32)  [-r2_hidden(_G5053, _G5190), r2_hidden(_G4986, _G5121), _G4986=_G5053, _G5121=_G5190]
+ (33)  [-m1_subset_1(_G5650, _G5787), m1_subset_1(_G5583, _G5718), _G5583=_G5650, _G5718=_G5787]
+ (34)  [-v3_rcomp_1(_G6229), _G6180=_G6229, v3_rcomp_1(_G6180)]
+ (35)  [-v3_pre_topc(_G6516, _G6653), v3_pre_topc(_G6449, _G6584), _G6449=_G6516, _G6584=_G6653]
+
+Connection Proof:
+-----------------
+1  [3^[], 4^[]]   (8)  
+1.1  [-3^[], v3_pre_topc(2^[], k3_topmetr)]   (3)  
+1.1.1  [-v3_pre_topc(2^[], k3_topmetr), l1_pre_topc(k3_topmetr), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(k3_topmetr))), r2_hidden(2^[], u1_pre_topc(k3_topmetr))]   (10)  substitution:[[_G8794, _G8700], [2^[], k3_topmetr]]
+1.1.1.1  [-l1_pre_topc(k3_topmetr)]   (13)  
+1.1.1.2  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(k3_topmetr)))]   (6)  
+1.1.1.3  [-r2_hidden(2^[], u1_pre_topc(k3_topmetr)), r2_hidden(1^[], k2_pcomps_1(k8_metric_1)), 1^[]=2^[], k2_pcomps_1(k8_metric_1)=u1_pre_topc(k3_topmetr)]   (32)  substitution:[[_G5053, _G5190, _G4986, _G5121], [2^[], u1_pre_topc(k3_topmetr), 1^[], k2_pcomps_1(k8_metric_1)]]
+1.1.1.3.1  [-r2_hidden(1^[], k2_pcomps_1(k8_metric_1)), m1_subset_1(1^[], k1_zfmisc_1(k1_numbers)), v3_rcomp_1(1^[])]   (19)  substitution:[[_G9713], [1^[]]]
+1.1.1.3.1.1  [-m1_subset_1(1^[], k1_zfmisc_1(k1_numbers))]   (5)  
+1.1.1.3.1.2  [-v3_rcomp_1(1^[]), -3^[]]   (4)  
+1.1.1.3.1.2.1  [3^[]]   (reduction:1)  
+1.1.1.3.2  [- (1^[]=2^[])]   (7)  
+1.1.1.3.3  [- (k2_pcomps_1(k8_metric_1)=u1_pre_topc(k3_topmetr)), u1_pre_topc(k3_topmetr)=k2_pcomps_1(k8_metric_1)]   (26)  substitution:[[_G3236, _G3191], [k2_pcomps_1(k8_metric_1), u1_pre_topc(k3_topmetr)]]
+1.1.1.3.3.1  [- (u1_pre_topc(k3_topmetr)=k2_pcomps_1(k8_metric_1)), u1_pre_topc(k3_topmetr)=u1_pre_topc(k3_pcomps_1(k8_metric_1)), u1_pre_topc(k3_pcomps_1(k8_metric_1))=k2_pcomps_1(k8_metric_1)]   (27)  substitution:[[_G3424, _G3537, _G3480], [u1_pre_topc(k3_topmetr), k2_pcomps_1(k8_metric_1), u1_pre_topc(k3_pcomps_1(k8_metric_1))]]
+1.1.1.3.3.1.1  [- (u1_pre_topc(k3_topmetr)=u1_pre_topc(k3_pcomps_1(k8_metric_1))), k3_topmetr=k3_pcomps_1(k8_metric_1)]   (20)  substitution:[[_G7214, _G7263], [k3_topmetr, k3_pcomps_1(k8_metric_1)]]
+1.1.1.3.3.1.1.1  [- (k3_topmetr=k3_pcomps_1(k8_metric_1))]   (11)  
+1.1.1.3.3.1.2  [- (u1_pre_topc(k3_pcomps_1(k8_metric_1))=k2_pcomps_1(k8_metric_1)), l1_metric_1(k8_metric_1)]   (17)  substitution:[[_G9385], [k8_metric_1]]
+1.1.1.3.3.1.2.1  [-l1_metric_1(k8_metric_1)]   (15)  
+1.2  [-4^[], v3_rcomp_1(1^[])]   (1)  
+1.2.1  [-v3_rcomp_1(1^[]), m1_subset_1(1^[], k1_zfmisc_1(k1_numbers)), r2_hidden(1^[], k2_pcomps_1(k8_metric_1))]   (18)  substitution:[[_G9713], [1^[]]]
+1.2.1.1  [-m1_subset_1(1^[], k1_zfmisc_1(k1_numbers))]   (5)  
+1.2.1.2  [-r2_hidden(1^[], k2_pcomps_1(k8_metric_1)), r2_hidden(2^[], u1_pre_topc(k3_topmetr)), 2^[]=1^[], u1_pre_topc(k3_topmetr)=k2_pcomps_1(k8_metric_1)]   (32)  substitution:[[_G5053, _G5190, _G4986, _G5121], [1^[], k2_pcomps_1(k8_metric_1), 2^[], u1_pre_topc(k3_topmetr)]]
+1.2.1.2.1  [-r2_hidden(2^[], u1_pre_topc(k3_topmetr)), l1_pre_topc(k3_topmetr), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(k3_topmetr))), v3_pre_topc(2^[], k3_topmetr)]   (9)  substitution:[[_G8794, _G8700], [2^[], k3_topmetr]]
+1.2.1.2.1.1  [-l1_pre_topc(k3_topmetr)]   (13)  
+1.2.1.2.1.2  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(k3_topmetr)))]   (6)  
+1.2.1.2.1.3  [-v3_pre_topc(2^[], k3_topmetr), -4^[]]   (2)  
+1.2.1.2.1.3.1  [4^[]]   (reduction:1)  
+1.2.1.2.2  [- (2^[]=1^[]), 1^[]=2^[]]   (26)  substitution:[[_G3236, _G3191], [2^[], 1^[]]]
+1.2.1.2.2.1  [- (1^[]=2^[])]   (7)  
+1.2.1.2.3  [- (u1_pre_topc(k3_topmetr)=k2_pcomps_1(k8_metric_1)), u1_pre_topc(k3_topmetr)=u1_pre_topc(k3_pcomps_1(k8_metric_1)), u1_pre_topc(k3_pcomps_1(k8_metric_1))=k2_pcomps_1(k8_metric_1)]   (27)  substitution:[[_G3424, _G3537, _G3480], [u1_pre_topc(k3_topmetr), k2_pcomps_1(k8_metric_1), u1_pre_topc(k3_pcomps_1(k8_metric_1))]]
+1.2.1.2.3.1  [- (u1_pre_topc(k3_topmetr)=u1_pre_topc(k3_pcomps_1(k8_metric_1))), k3_topmetr=k3_pcomps_1(k8_metric_1)]   (20)  substitution:[[_G7214, _G7263], [k3_topmetr, k3_pcomps_1(k8_metric_1)]]
+1.2.1.2.3.1.1  [- (k3_topmetr=k3_pcomps_1(k8_metric_1))]   (11)  
+1.2.1.2.3.2  [- (u1_pre_topc(k3_pcomps_1(k8_metric_1))=k2_pcomps_1(k8_metric_1)), l1_metric_1(k8_metric_1)]   (17)  substitution:[[_G9385], [k8_metric_1]]
+1.2.1.2.3.2.1  [-l1_metric_1(k8_metric_1)]   (15)  
+------------------------------------------------------
+End of proof for t39_borsuk_5

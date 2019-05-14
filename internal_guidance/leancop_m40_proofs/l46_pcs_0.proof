@@ -1,0 +1,31 @@
+
+l46_pcs_0 is a Theorem
+Start of proof for l46_pcs_0
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-l2_pcs_0(2^[])]
+ (2)  [-l2_pcs_0(3^[])]
+ (3)  [-r2_hidden(4^[], u1_struct_0(2^[]))]
+ (4)  [-r3_pcs_0(2^[], 3^[])]
+ (5)  [m1_subset_1(4^[], u1_struct_0(3^[]))]
+ (6)  [l2_pcs_0(_G1017), l2_pcs_0(_G1140), r3_pcs_0(_G1017, _G1140), -r1_tarski(u1_struct_0(_G1017), u1_struct_0(_G1140))]
+ (7)  [l2_pcs_0(_G1017), l2_pcs_0(_G1140), r3_pcs_0(_G1017, _G1140), -r1_relset_1(u1_struct_0(_G1017), u1_struct_0(_G1017), u1_orders_2(_G1017), u1_orders_2(_G1140))]
+ (8)  [l2_pcs_0(_G1017), l2_pcs_0(_G1140), r3_pcs_0(_G1017, _G1140), -r1_relset_1(u1_struct_0(_G1017), u1_struct_0(_G1017), u1_pcs_0(_G1017), u1_pcs_0(_G1140))]
+ (9)  [l2_pcs_0(_G1017), l2_pcs_0(_G1140), -r3_pcs_0(_G1017, _G1140), r1_tarski(u1_struct_0(_G1017), u1_struct_0(_G1140)), r1_relset_1(u1_struct_0(_G1017), u1_struct_0(_G1017), u1_orders_2(_G1017), u1_orders_2(_G1140)), r1_relset_1(u1_struct_0(_G1017), u1_struct_0(_G1017), u1_pcs_0(_G1017), u1_pcs_0(_G1140))]
+ (10)  [r2_hidden(_G2313, _G2358), -m1_subset_1(_G2313, _G2358)]
+ (11)  [-r1_tarski(_G1920, _G1976), -r2_hidden(1^[_G1976, _G1920], _G1920)]
+ (12)  [-r1_tarski(_G1920, _G1976), r2_hidden(1^[_G1976, _G1920], _G1976)]
+ (13)  [r1_tarski(_G1920, _G1976), r2_hidden(_G2090, _G1920), -r2_hidden(_G2090, _G1976)]
+
+Connection Proof:
+-----------------
+1  [m1_subset_1(4^[], u1_struct_0(3^[]))]   (5)  
+1.1  [-m1_subset_1(4^[], u1_struct_0(3^[])), r2_hidden(4^[], u1_struct_0(3^[]))]   (10)  substitution:[[_G2313, _G2358], [4^[], u1_struct_0(3^[])]]
+1.1.1  [-r2_hidden(4^[], u1_struct_0(3^[])), r1_tarski(u1_struct_0(2^[]), u1_struct_0(3^[])), r2_hidden(4^[], u1_struct_0(2^[]))]   (13)  substitution:[[_G2090, _G1976, _G1920], [4^[], u1_struct_0(3^[]), u1_struct_0(2^[])]]
+1.1.1.1  [-r1_tarski(u1_struct_0(2^[]), u1_struct_0(3^[])), l2_pcs_0(2^[]), l2_pcs_0(3^[]), r3_pcs_0(2^[], 3^[])]   (6)  substitution:[[_G1017, _G1140], [2^[], 3^[]]]
+1.1.1.1.1  [-l2_pcs_0(2^[])]   (1)  
+1.1.1.1.2  [-l2_pcs_0(3^[])]   (2)  
+1.1.1.1.3  [-r3_pcs_0(2^[], 3^[])]   (4)  
+1.1.1.2  [-r2_hidden(4^[], u1_struct_0(2^[]))]   (3)  
+------------------------------------------------------
+End of proof for l46_pcs_0

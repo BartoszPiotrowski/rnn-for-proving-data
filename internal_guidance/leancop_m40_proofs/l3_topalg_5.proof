@@ -1,0 +1,47 @@
+
+l3_topalg_5 is a Theorem
+Start of proof for l3_topalg_5
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [r1_tarski(k6_domain_1(k1_numbers, k6_numbers), u1_struct_0(k5_topmetr))]
+ (2)  [m1_subset_1(_G6854, k1_numbers), -v1_xreal_0(_G6854)]
+ (3)  [v1_xboole_0(_G7011), r2_hidden(_G7089, _G7011)]
+ (4)  [-v1_xboole_0(_G7011), -r2_hidden(1^[_G7011], _G7011)]
+ (5)  [v1_xreal_0(_G7239), -r2_hidden(_G7239, k1_numbers)]
+ (6)  [-v1_xreal_0(_G7239), r2_hidden(_G7239, k1_numbers)]
+ (7)  [-m1_subset_1(k6_numbers, k1_numbers)]
+ (8)  [-r2_hidden(k6_numbers, u1_struct_0(k5_topmetr))]
+ (9)  [- (k6_domain_1(_G7524, _G7581)=k1_tarski(_G7581)), -v1_xboole_0(_G7524), m1_subset_1(_G7581, _G7524)]
+ (10)  [- (k6_numbers=k1_xboole_0)]
+ (11)  [r1_tarski(k1_tarski(_G7958), _G8005), -r2_hidden(_G7958, _G8005)]
+ (12)  [-r1_tarski(k1_tarski(_G7958), _G8005), r2_hidden(_G7958, _G8005)]
+ (13)  [_G5647=_G5696, - (k1_tarski(_G5647)=k1_tarski(_G5696))]
+ (14)  [_G6513=_G6562, - (u1_struct_0(_G6513)=u1_struct_0(_G6562))]
+ (15)  [- (k6_domain_1(_G5925, _G6060)=k6_domain_1(_G5992, _G6129)), _G5925=_G5992, _G6060=_G6129]
+ (16)  [- (_G2422=_G2422)]
+ (17)  [_G2521=_G2566, - (_G2566=_G2521)]
+ (18)  [- (_G2754=_G2867), _G2754=_G2810, _G2810=_G2867]
+ (19)  [-v1_xreal_0(_G3253), _G3204=_G3253, v1_xreal_0(_G3204)]
+ (20)  [-v1_xboole_0(_G3531), _G3482=_G3531, v1_xboole_0(_G3482)]
+ (21)  [-m1_subset_1(_G3827, _G3964), m1_subset_1(_G3760, _G3895), _G3760=_G3827, _G3895=_G3964]
+ (22)  [-r2_hidden(_G4424, _G4561), r2_hidden(_G4357, _G4492), _G4357=_G4424, _G4492=_G4561]
+ (23)  [-r1_tarski(_G5012, _G5149), r1_tarski(_G4945, _G5080), _G4945=_G5012, _G5080=_G5149]
+
+Connection Proof:
+-----------------
+1  [v1_xboole_0(k1_numbers), r2_hidden(1^[k1_numbers], k1_numbers)]   (3)  substitution:[[_G7011, _G7089], [k1_numbers, 1^[k1_numbers]]]
+1.1  [-v1_xboole_0(k1_numbers), - (k6_domain_1(k1_numbers, k6_numbers)=k1_tarski(k6_numbers)), m1_subset_1(k6_numbers, k1_numbers)]   (9)  substitution:[[_G7524, _G7581], [k1_numbers, k6_numbers]]
+1.1.1  [k6_domain_1(k1_numbers, k6_numbers)=k1_tarski(k6_numbers), - (k1_tarski(k6_numbers)=k6_domain_1(k1_numbers, k6_numbers))]   (17)  substitution:[[_G2521, _G2566], [k6_domain_1(k1_numbers, k6_numbers), k1_tarski(k6_numbers)]]
+1.1.1.1  [k1_tarski(k6_numbers)=k6_domain_1(k1_numbers, k6_numbers), -r1_tarski(k6_domain_1(k1_numbers, k6_numbers), u1_struct_0(k5_topmetr)), r1_tarski(k1_tarski(k6_numbers), u1_struct_0(k5_topmetr)), u1_struct_0(k5_topmetr)=u1_struct_0(k5_topmetr)]   (23)  substitution:[[_G4945, _G5012, _G5149, _G5080], [k1_tarski(k6_numbers), k6_domain_1(k1_numbers, k6_numbers), u1_struct_0(k5_topmetr), u1_struct_0(k5_topmetr)]]
+1.1.1.1.1  [r1_tarski(k6_domain_1(k1_numbers, k6_numbers), u1_struct_0(k5_topmetr))]   (1)  
+1.1.1.1.2  [-r1_tarski(k1_tarski(k6_numbers), u1_struct_0(k5_topmetr)), r2_hidden(k6_numbers, u1_struct_0(k5_topmetr))]   (12)  substitution:[[_G7958, _G8005], [k6_numbers, u1_struct_0(k5_topmetr)]]
+1.1.1.1.2.1  [-r2_hidden(k6_numbers, u1_struct_0(k5_topmetr))]   (8)  
+1.1.1.1.3  [- (u1_struct_0(k5_topmetr)=u1_struct_0(k5_topmetr))]   (16)  substitution:[[_G2422], [u1_struct_0(k5_topmetr)]]
+1.1.2  [-m1_subset_1(k6_numbers, k1_numbers)]   (7)  
+1.2  [-r2_hidden(1^[k1_numbers], k1_numbers), -v1_xboole_0(k1_numbers)]   (4)  substitution:[[_G7011], [k1_numbers]]
+1.2.1  [v1_xboole_0(k1_numbers), r2_hidden(k6_numbers, k1_numbers)]   (3)  substitution:[[_G7011, _G7089], [k1_numbers, k6_numbers]]
+1.2.1.1  [-r2_hidden(k6_numbers, k1_numbers), v1_xreal_0(k6_numbers)]   (5)  substitution:[[_G7239], [k6_numbers]]
+1.2.1.1.1  [-v1_xreal_0(k6_numbers), m1_subset_1(k6_numbers, k1_numbers)]   (2)  substitution:[[_G6854], [k6_numbers]]
+1.2.1.1.1.1  [-m1_subset_1(k6_numbers, k1_numbers)]   (7)  
+------------------------------------------------------
+End of proof for l3_topalg_5

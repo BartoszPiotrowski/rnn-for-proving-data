@@ -1,0 +1,62 @@
+
+t11_helly is a Theorem
+Start of proof for t11_helly
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(1^[])]
+ (2)  [-v4_relat_1(1^[], k5_numbers)]
+ (3)  [-v1_funct_1(1^[])]
+ (4)  [-v1_finset_1(1^[])]
+ (5)  [-v1_glib_000(1^[])]
+ (6)  [-m3_glib_001(2^[], 1^[])]
+ (7)  [-v7_ordinal1(3^[])]
+ (8)  [-v7_ordinal1(4^[])]
+ (9)  [v3_glib_001(k8_glib_001(1^[], 2^[], 3^[], 4^[]), 1^[])]
+ (10)  [-v3_glib_001(2^[], 1^[])]
+ (11)  [v7_ordinal1(_G10176), -r2_hidden(_G10176, k4_ordinal1)]
+ (12)  [-v7_ordinal1(_G10176), r2_hidden(_G10176, k4_ordinal1)]
+ (13)  [- (k5_numbers=k4_ordinal1)]
+ (14)  [r2_hidden(_G11619, _G11664), -m1_subset_1(_G11619, _G11664)]
+ (15)  [-v3_glib_001(k8_glib_001(_G10333, _G10437, _G10542, _G10648), _G10333), m1_subset_1(_G10648, k5_numbers), m1_subset_1(_G10542, k5_numbers), v3_glib_001(_G10437, _G10333), m3_glib_001(_G10437, _G10333), v1_relat_1(_G10333), v4_relat_1(_G10333, k5_numbers), v1_funct_1(_G10333), v1_finset_1(_G10333), v1_glib_000(_G10333)]
+ (16)  [- (k8_glib_001(_G8620, _G8827, _G9038, _G9253)=k8_glib_001(_G8723, _G8932, _G9145, _G9362)), _G8620=_G8723, _G8827=_G8932, _G9038=_G9145, _G9253=_G9362]
+ (17)  [- (_G3271=_G3271)]
+ (18)  [_G3370=_G3415, - (_G3415=_G3370)]
+ (19)  [- (_G3603=_G3716), _G3603=_G3659, _G3659=_G3716]
+ (20)  [-r2_hidden(_G4120, _G4257), r2_hidden(_G4053, _G4188), _G4053=_G4120, _G4188=_G4257]
+ (21)  [-m1_subset_1(_G4717, _G4854), m1_subset_1(_G4650, _G4785), _G4650=_G4717, _G4785=_G4854]
+ (22)  [-v1_relat_1(_G5296), _G5247=_G5296, v1_relat_1(_G5247)]
+ (23)  [-v4_relat_1(_G5592, _G5729), v4_relat_1(_G5525, _G5660), _G5525=_G5592, _G5660=_G5729]
+ (24)  [-v1_funct_1(_G6171), _G6122=_G6171, v1_funct_1(_G6122)]
+ (25)  [-v1_finset_1(_G6449), _G6400=_G6449, v1_finset_1(_G6400)]
+ (26)  [-v1_glib_000(_G6727), _G6678=_G6727, v1_glib_000(_G6678)]
+ (27)  [-m3_glib_001(_G7023, _G7160), m3_glib_001(_G6956, _G7091), _G6956=_G7023, _G7091=_G7160]
+ (28)  [-v7_ordinal1(_G7602), _G7553=_G7602, v7_ordinal1(_G7553)]
+ (29)  [-v3_glib_001(_G7889, _G8026), v3_glib_001(_G7822, _G7957), _G7822=_G7889, _G7957=_G8026]
+
+Connection Proof:
+-----------------
+1  [v3_glib_001(k8_glib_001(1^[], 2^[], 3^[], 4^[]), 1^[])]   (9)  
+1.1  [-v3_glib_001(k8_glib_001(1^[], 2^[], 3^[], 4^[]), 1^[]), m1_subset_1(4^[], k5_numbers), m1_subset_1(3^[], k5_numbers), v3_glib_001(2^[], 1^[]), m3_glib_001(2^[], 1^[]), v1_relat_1(1^[]), v4_relat_1(1^[], k5_numbers), v1_funct_1(1^[]), v1_finset_1(1^[]), v1_glib_000(1^[])]   (15)  substitution:[[_G10333, _G10437, _G10542, _G10648], [1^[], 2^[], 3^[], 4^[]]]
+1.1.1  [-m1_subset_1(4^[], k5_numbers), r2_hidden(4^[], k5_numbers)]   (14)  substitution:[[_G11619, _G11664], [4^[], k5_numbers]]
+1.1.1.1  [-r2_hidden(4^[], k5_numbers), r2_hidden(4^[], k4_ordinal1), 4^[]=4^[], k4_ordinal1=k5_numbers]   (20)  substitution:[[_G4120, _G4257, _G4053, _G4188], [4^[], k5_numbers, 4^[], k4_ordinal1]]
+1.1.1.1.1  [-r2_hidden(4^[], k4_ordinal1), v7_ordinal1(4^[])]   (11)  substitution:[[_G10176], [4^[]]]
+1.1.1.1.1.1  [-v7_ordinal1(4^[])]   (8)  
+1.1.1.1.2  [- (4^[]=4^[])]   (17)  substitution:[[_G3271], [4^[]]]
+1.1.1.1.3  [- (k4_ordinal1=k5_numbers), k5_numbers=k4_ordinal1]   (18)  substitution:[[_G3415, _G3370], [k4_ordinal1, k5_numbers]]
+1.1.1.1.3.1  [- (k5_numbers=k4_ordinal1)]   (13)  
+1.1.2  [-m1_subset_1(3^[], k5_numbers), r2_hidden(3^[], k5_numbers)]   (14)  substitution:[[_G11619, _G11664], [3^[], k5_numbers]]
+1.1.2.1  [-r2_hidden(3^[], k5_numbers), r2_hidden(3^[], k4_ordinal1), 3^[]=3^[], k4_ordinal1=k5_numbers]   (20)  substitution:[[_G4120, _G4257, _G4053, _G4188], [3^[], k5_numbers, 3^[], k4_ordinal1]]
+1.1.2.1.1  [-r2_hidden(3^[], k4_ordinal1), v7_ordinal1(3^[])]   (11)  substitution:[[_G10176], [3^[]]]
+1.1.2.1.1.1  [-v7_ordinal1(3^[])]   (7)  
+1.1.2.1.2  [- (3^[]=3^[])]   (17)  substitution:[[_G3271], [3^[]]]
+1.1.2.1.3  [- (k4_ordinal1=k5_numbers), k5_numbers=k4_ordinal1]   (18)  substitution:[[_G3415, _G3370], [k4_ordinal1, k5_numbers]]
+1.1.2.1.3.1  [- (k5_numbers=k4_ordinal1)]   (13)  
+1.1.3  [-v3_glib_001(2^[], 1^[])]   (10)  
+1.1.4  [-m3_glib_001(2^[], 1^[])]   (6)  
+1.1.5  [-v1_relat_1(1^[])]   (1)  
+1.1.6  [-v4_relat_1(1^[], k5_numbers)]   (2)  
+1.1.7  [-v1_funct_1(1^[])]   (3)  
+1.1.8  [-v1_finset_1(1^[])]   (4)  
+1.1.9  [-v1_glib_000(1^[])]   (5)  
+------------------------------------------------------
+End of proof for t11_helly

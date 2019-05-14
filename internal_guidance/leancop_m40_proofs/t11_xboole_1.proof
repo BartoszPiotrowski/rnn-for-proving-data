@@ -1,0 +1,18 @@
+
+t11_xboole_1 is a Theorem
+Start of proof for t11_xboole_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-r1_tarski(k2_xboole_0(1^[], 2^[]), 3^[])]
+ (2)  [r1_tarski(1^[], 3^[])]
+ (3)  [-r1_tarski(_G1143, k2_xboole_0(_G1143, _G1185))]
+ (4)  [-r1_tarski(_G744, _G857), r1_tarski(_G744, _G800), r1_tarski(_G800, _G857)]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(1^[], 3^[])]   (2)  
+1.1  [-r1_tarski(1^[], 3^[]), r1_tarski(1^[], k2_xboole_0(1^[], 2^[])), r1_tarski(k2_xboole_0(1^[], 2^[]), 3^[])]   (4)  substitution:[[_G744, _G857, _G800], [1^[], 3^[], k2_xboole_0(1^[], 2^[])]]
+1.1.1  [-r1_tarski(1^[], k2_xboole_0(1^[], 2^[]))]   (3)  substitution:[[_G1143, _G1185], [1^[], 2^[]]]
+1.1.2  [-r1_tarski(k2_xboole_0(1^[], 2^[]), 3^[])]   (1)  
+------------------------------------------------------
+End of proof for t11_xboole_1

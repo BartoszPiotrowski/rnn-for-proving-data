@@ -1,0 +1,62 @@
+
+t78_flang_3 is a Theorem
+Start of proof for t78_flang_3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(2^[], k1_zfmisc_1(k8_afinsq_1(1^[])))]
+ (2)  [-m1_subset_1(3^[], k1_zfmisc_1(k8_afinsq_1(1^[])))]
+ (3)  [-v7_ordinal1(4^[])]
+ (4)  [-r1_tarski(2^[], k2_flang_3(1^[], 3^[]))]
+ (5)  [r1_xxreal_0(4^[], k6_numbers)]
+ (6)  [r1_tarski(k7_flang_1(1^[], 2^[], 4^[]), k2_flang_3(1^[], 3^[]))]
+ (7)  [m1_subset_1(_G11271, k4_ordinal1), -v7_ordinal1(_G11271)]
+ (8)  [- (k5_numbers=k4_ordinal1)]
+ (9)  [-v2_xxreal_0(np__1)]
+ (10)  [-m2_subset_1(np__1, k1_numbers, k5_numbers)]
+ (11)  [-m1_subset_1(np__1, k5_numbers)]
+ (12)  [-m1_subset_1(np__1, k1_numbers)]
+ (13)  [m1_subset_1(_G13153, k1_zfmisc_1(k8_afinsq_1(_G13097))), - (k2_flang_3(_G13097, _G13153)=k1_flang_3(_G13097, _G13153, np__1))]
+ (14)  [m1_subset_1(_G11902, k1_zfmisc_1(k8_afinsq_1(_G11794))), m1_subset_1(_G12096, k1_zfmisc_1(k8_afinsq_1(_G11794))), v7_ordinal1(_G12281), v7_ordinal1(_G12404), r1_tarski(_G11902, k1_flang_3(_G11794, _G12096, _G12281)), -r1_xxreal_0(_G12404, k6_numbers), -r1_tarski(k7_flang_1(_G11794, _G11902, _G12404), k1_flang_3(_G11794, _G12096, _G12281))]
+ (15)  [- (k1_flang_3(_G7966, _G8137, _G8312)=k1_flang_3(_G8051, _G8224, _G8401)), _G7966=_G8051, _G8137=_G8224, _G8312=_G8401]
+ (16)  [_G8994=_G9043, - (k1_zfmisc_1(_G8994)=k1_zfmisc_1(_G9043))]
+ (17)  [_G9272=_G9321, - (k8_afinsq_1(_G9272)=k8_afinsq_1(_G9321))]
+ (18)  [- (k2_flang_3(_G10569, _G10704)=k2_flang_3(_G10636, _G10773)), _G10569=_G10636, _G10704=_G10773]
+ (19)  [- (k7_flang_1(_G9550, _G9721, _G9896)=k7_flang_1(_G9635, _G9808, _G9985)), _G9550=_G9635, _G9721=_G9808, _G9896=_G9985]
+ (20)  [- (_G3692=_G3692)]
+ (21)  [_G3791=_G3836, - (_G3836=_G3791)]
+ (22)  [- (_G4024=_G4137), _G4024=_G4080, _G4080=_G4137]
+ (23)  [-v2_xxreal_0(_G4523), _G4474=_G4523, v2_xxreal_0(_G4474)]
+ (24)  [-m2_subset_1(_G4837, _G5010, _G5187), m2_subset_1(_G4752, _G4923, _G5098), _G4752=_G4837, _G4923=_G5010, _G5098=_G5187]
+ (25)  [-m1_subset_1(_G5847, _G5984), m1_subset_1(_G5780, _G5915), _G5780=_G5847, _G5915=_G5984]
+ (26)  [-v7_ordinal1(_G6426), _G6377=_G6426, v7_ordinal1(_G6377)]
+ (27)  [-r1_xxreal_0(_G6722, _G6859), r1_xxreal_0(_G6655, _G6790), _G6655=_G6722, _G6790=_G6859]
+ (28)  [-r1_tarski(_G7310, _G7447), r1_tarski(_G7243, _G7378), _G7243=_G7310, _G7378=_G7447]
+
+Connection Proof:
+-----------------
+1  [r1_xxreal_0(4^[], k6_numbers)]   (5)  
+1.1  [-r1_xxreal_0(4^[], k6_numbers), m1_subset_1(2^[], k1_zfmisc_1(k8_afinsq_1(1^[]))), m1_subset_1(3^[], k1_zfmisc_1(k8_afinsq_1(1^[]))), v7_ordinal1(np__1), v7_ordinal1(4^[]), r1_tarski(2^[], k1_flang_3(1^[], 3^[], np__1)), -r1_tarski(k7_flang_1(1^[], 2^[], 4^[]), k1_flang_3(1^[], 3^[], np__1))]   (14)  substitution:[[_G12404, _G11902, _G11794, _G12096, _G12281], [4^[], 2^[], 1^[], 3^[], np__1]]
+1.1.1  [-m1_subset_1(2^[], k1_zfmisc_1(k8_afinsq_1(1^[])))]   (1)  
+1.1.2  [-m1_subset_1(3^[], k1_zfmisc_1(k8_afinsq_1(1^[])))]   (2)  
+1.1.3  [-v7_ordinal1(np__1), m1_subset_1(np__1, k4_ordinal1)]   (7)  substitution:[[_G11271], [np__1]]
+1.1.3.1  [-m1_subset_1(np__1, k4_ordinal1), m1_subset_1(np__1, k5_numbers), np__1=np__1, k5_numbers=k4_ordinal1]   (25)  substitution:[[_G5847, _G5984, _G5780, _G5915], [np__1, k4_ordinal1, np__1, k5_numbers]]
+1.1.3.1.1  [-m1_subset_1(np__1, k5_numbers)]   (11)  
+1.1.3.1.2  [- (np__1=np__1)]   (20)  substitution:[[_G3692], [np__1]]
+1.1.3.1.3  [- (k5_numbers=k4_ordinal1)]   (8)  
+1.1.4  [-v7_ordinal1(4^[])]   (3)  
+1.1.5  [-r1_tarski(2^[], k1_flang_3(1^[], 3^[], np__1)), r1_tarski(2^[], k2_flang_3(1^[], 3^[])), 2^[]=2^[], k2_flang_3(1^[], 3^[])=k1_flang_3(1^[], 3^[], np__1)]   (28)  substitution:[[_G7310, _G7447, _G7243, _G7378], [2^[], k1_flang_3(1^[], 3^[], np__1), 2^[], k2_flang_3(1^[], 3^[])]]
+1.1.5.1  [-r1_tarski(2^[], k2_flang_3(1^[], 3^[]))]   (4)  
+1.1.5.2  [- (2^[]=2^[])]   (20)  substitution:[[_G3692], [2^[]]]
+1.1.5.3  [- (k2_flang_3(1^[], 3^[])=k1_flang_3(1^[], 3^[], np__1)), m1_subset_1(3^[], k1_zfmisc_1(k8_afinsq_1(1^[])))]   (13)  substitution:[[_G13097, _G13153], [1^[], 3^[]]]
+1.1.5.3.1  [-m1_subset_1(3^[], k1_zfmisc_1(k8_afinsq_1(1^[])))]   (2)  
+1.1.6  [r1_tarski(k7_flang_1(1^[], 2^[], 4^[]), k1_flang_3(1^[], 3^[], np__1)), -r1_tarski(k7_flang_1(1^[], 2^[], 4^[]), k2_flang_3(1^[], 3^[])), k7_flang_1(1^[], 2^[], 4^[])=k7_flang_1(1^[], 2^[], 4^[]), k1_flang_3(1^[], 3^[], np__1)=k2_flang_3(1^[], 3^[])]   (28)  substitution:[[_G7243, _G7378, _G7310, _G7447], [k7_flang_1(1^[], 2^[], 4^[]), k1_flang_3(1^[], 3^[], np__1), k7_flang_1(1^[], 2^[], 4^[]), k2_flang_3(1^[], 3^[])]]
+1.1.6.1  [r1_tarski(k7_flang_1(1^[], 2^[], 4^[]), k2_flang_3(1^[], 3^[]))]   (6)  
+1.1.6.2  [- (k7_flang_1(1^[], 2^[], 4^[])=k7_flang_1(1^[], 2^[], 4^[])), 1^[]=1^[], 2^[]=2^[], 4^[]=4^[]]   (19)  substitution:[[_G9550, _G9721, _G9896, _G9635, _G9808, _G9985], [1^[], 2^[], 4^[], 1^[], 2^[], 4^[]]]
+1.1.6.2.1  [- (1^[]=1^[])]   (20)  substitution:[[_G3692], [1^[]]]
+1.1.6.2.2  [- (2^[]=2^[])]   (20)  substitution:[[_G3692], [2^[]]]
+1.1.6.2.3  [- (4^[]=4^[])]   (20)  substitution:[[_G3692], [4^[]]]
+1.1.6.3  [- (k1_flang_3(1^[], 3^[], np__1)=k2_flang_3(1^[], 3^[])), k2_flang_3(1^[], 3^[])=k1_flang_3(1^[], 3^[], np__1)]   (21)  substitution:[[_G3836, _G3791], [k1_flang_3(1^[], 3^[], np__1), k2_flang_3(1^[], 3^[])]]
+1.1.6.3.1  [- (k2_flang_3(1^[], 3^[])=k1_flang_3(1^[], 3^[], np__1)), m1_subset_1(3^[], k1_zfmisc_1(k8_afinsq_1(1^[])))]   (13)  substitution:[[_G13097, _G13153], [1^[], 3^[]]]
+1.1.6.3.1.1  [-m1_subset_1(3^[], k1_zfmisc_1(k8_afinsq_1(1^[])))]   (2)  
+------------------------------------------------------
+End of proof for t78_flang_3

@@ -1,0 +1,26 @@
+
+l2_mesfunc1 is a Theorem
+Start of proof for l2_mesfunc1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k6_numbers=k1_real_1(k6_numbers)]
+ (2)  [-m1_subset_1(k6_numbers, k1_numbers)]
+ (3)  [- (k4_xcmplx_0(k6_numbers)=k6_numbers)]
+ (4)  [m1_subset_1(_G3214, k1_numbers), - (k1_real_1(_G3214)=k4_xcmplx_0(_G3214))]
+ (5)  [_G2506=_G2555, - (k4_xcmplx_0(_G2506)=k4_xcmplx_0(_G2555))]
+ (6)  [_G2775=_G2824, - (k1_real_1(_G2775)=k1_real_1(_G2824))]
+ (7)  [-m1_subset_1(_G1955, _G2092), m1_subset_1(_G1888, _G2023), _G1888=_G1955, _G2023=_G2092]
+ (8)  [- (_G1115=_G1115)]
+ (9)  [_G1214=_G1259, - (_G1259=_G1214)]
+ (10)  [- (_G1447=_G1560), _G1447=_G1503, _G1503=_G1560]
+
+Connection Proof:
+-----------------
+1  [k6_numbers=k1_real_1(k6_numbers)]   (1)  
+1.1  [- (k6_numbers=k1_real_1(k6_numbers)), k1_real_1(k6_numbers)=k6_numbers]   (9)  substitution:[[_G1259, _G1214], [k6_numbers, k1_real_1(k6_numbers)]]
+1.1.1  [- (k1_real_1(k6_numbers)=k6_numbers), k1_real_1(k6_numbers)=k4_xcmplx_0(k6_numbers), k4_xcmplx_0(k6_numbers)=k6_numbers]   (10)  substitution:[[_G1447, _G1560, _G1503], [k1_real_1(k6_numbers), k6_numbers, k4_xcmplx_0(k6_numbers)]]
+1.1.1.1  [- (k1_real_1(k6_numbers)=k4_xcmplx_0(k6_numbers)), m1_subset_1(k6_numbers, k1_numbers)]   (4)  substitution:[[_G3214], [k6_numbers]]
+1.1.1.1.1  [-m1_subset_1(k6_numbers, k1_numbers)]   (2)  
+1.1.1.2  [- (k4_xcmplx_0(k6_numbers)=k6_numbers)]   (3)  
+------------------------------------------------------
+End of proof for l2_mesfunc1

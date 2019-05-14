@@ -1,0 +1,42 @@
+
+t122_pboole is a Theorem
+Start of proof for t122_pboole
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(1^[])]
+ (2)  [-v4_relat_1(1^[], k1_xboole_0)]
+ (3)  [-v1_funct_1(1^[])]
+ (4)  [-v1_partfun1(1^[], k1_xboole_0)]
+ (5)  [1^[]=k1_xboole_0]
+ (6)  [v4_relat_1(_G6089, _G6030), v1_relat_1(_G6089), v1_partfun1(_G6089, _G6030), - (k1_relset_1(_G6030, _G6089)=_G6030)]
+ (7)  [v4_relat_1(_G6089, _G6030), v1_relat_1(_G6089), -v1_partfun1(_G6089, _G6030), k1_relset_1(_G6030, _G6089)=_G6030]
+ (8)  [- (k1_relset_1(_G6470, _G6525)=k9_xtuple_0(_G6525)), v1_relat_1(_G6525), v4_relat_1(_G6525, _G6470)]
+ (9)  [v1_relat_1(_G6829), k9_xtuple_0(_G6829)=k1_xboole_0, - (_G6829=k1_xboole_0)]
+ (10)  [v1_relat_1(_G6829), k10_xtuple_0(_G6829)=k1_xboole_0, - (_G6829=k1_xboole_0)]
+ (11)  [- (k1_relset_1(_G4823, _G4958)=k1_relset_1(_G4890, _G5027)), _G4823=_G4890, _G4958=_G5027]
+ (12)  [_G5420=_G5469, - (k9_xtuple_0(_G5420)=k9_xtuple_0(_G5469))]
+ (13)  [_G5689=_G5738, - (k10_xtuple_0(_G5689)=k10_xtuple_0(_G5738))]
+ (14)  [- (_G2216=_G2216)]
+ (15)  [_G2315=_G2360, - (_G2360=_G2315)]
+ (16)  [- (_G2548=_G2661), _G2548=_G2604, _G2604=_G2661]
+ (17)  [-v1_relat_1(_G3047), _G2998=_G3047, v1_relat_1(_G2998)]
+ (18)  [-v4_relat_1(_G3343, _G3480), v4_relat_1(_G3276, _G3411), _G3276=_G3343, _G3411=_G3480]
+ (19)  [-v1_funct_1(_G3922), _G3873=_G3922, v1_funct_1(_G3873)]
+ (20)  [-v1_partfun1(_G4209, _G4346), v1_partfun1(_G4142, _G4277), _G4142=_G4209, _G4277=_G4346]
+
+Connection Proof:
+-----------------
+1  [1^[]=k1_xboole_0]   (5)  
+1.1  [- (1^[]=k1_xboole_0), v1_relat_1(1^[]), k9_xtuple_0(1^[])=k1_xboole_0]   (9)  substitution:[[_G6829], [1^[]]]
+1.1.1  [-v1_relat_1(1^[])]   (1)  
+1.1.2  [- (k9_xtuple_0(1^[])=k1_xboole_0), k9_xtuple_0(1^[])=k1_relset_1(k1_xboole_0, 1^[]), k1_relset_1(k1_xboole_0, 1^[])=k1_xboole_0]   (16)  substitution:[[_G2548, _G2661, _G2604], [k9_xtuple_0(1^[]), k1_xboole_0, k1_relset_1(k1_xboole_0, 1^[])]]
+1.1.2.1  [- (k9_xtuple_0(1^[])=k1_relset_1(k1_xboole_0, 1^[])), k1_relset_1(k1_xboole_0, 1^[])=k9_xtuple_0(1^[])]   (15)  substitution:[[_G2360, _G2315], [k9_xtuple_0(1^[]), k1_relset_1(k1_xboole_0, 1^[])]]
+1.1.2.1.1  [- (k1_relset_1(k1_xboole_0, 1^[])=k9_xtuple_0(1^[])), v1_relat_1(1^[]), v4_relat_1(1^[], k1_xboole_0)]   (8)  substitution:[[_G6470, _G6525], [k1_xboole_0, 1^[]]]
+1.1.2.1.1.1  [-v1_relat_1(1^[])]   (1)  
+1.1.2.1.1.2  [-v4_relat_1(1^[], k1_xboole_0)]   (2)  
+1.1.2.2  [- (k1_relset_1(k1_xboole_0, 1^[])=k1_xboole_0), v4_relat_1(1^[], k1_xboole_0), v1_relat_1(1^[]), v1_partfun1(1^[], k1_xboole_0)]   (6)  substitution:[[_G6030, _G6089], [k1_xboole_0, 1^[]]]
+1.1.2.2.1  [-v4_relat_1(1^[], k1_xboole_0)]   (2)  
+1.1.2.2.2  [-v1_relat_1(1^[])]   (1)  
+1.1.2.2.3  [-v1_partfun1(1^[], k1_xboole_0)]   (4)  
+------------------------------------------------------
+End of proof for t122_pboole

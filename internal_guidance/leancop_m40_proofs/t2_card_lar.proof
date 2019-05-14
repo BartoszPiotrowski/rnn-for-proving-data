@@ -1,0 +1,31 @@
+
+t2_card_lar is a Theorem
+Start of proof for t2_card_lar
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v3_ordinal1(2^[])]
+ (2)  [-v4_ordinal1(2^[])]
+ (3)  [v1_finset_1(2^[])]
+ (4)  [-m1_subset_1(3^[], k1_zfmisc_1(2^[]))]
+ (5)  [r1_tarski(3^[], k3_ordinal2(3^[]))]
+ (6)  [v3_ordinal1(_G1071), m1_subset_1(_G1152, _G1071), -v3_ordinal1(_G1152)]
+ (7)  [-r1_tarski(_G1344, _G1400), -r2_hidden(1^[_G1400, _G1344], _G1344)]
+ (8)  [-r1_tarski(_G1344, _G1400), r2_hidden(1^[_G1400, _G1344], _G1400)]
+ (9)  [r1_tarski(_G1344, _G1400), r2_hidden(_G1514, _G1344), -r2_hidden(_G1514, _G1400)]
+ (10)  [v3_ordinal1(_G1746), r2_hidden(_G1746, _G1830), -r2_hidden(_G1746, k3_ordinal2(_G1830))]
+ (11)  [-m1_subset_1(_G2055, _G2172), r2_hidden(_G2055, _G2113), m1_subset_1(_G2113, k1_zfmisc_1(_G2172))]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(3^[], k3_ordinal2(3^[]))]   (5)  
+1.1  [-r1_tarski(3^[], k3_ordinal2(3^[])), -r2_hidden(1^[k3_ordinal2(3^[]), 3^[]], 3^[])]   (7)  substitution:[[_G1344, _G1400], [3^[], k3_ordinal2(3^[])]]
+1.1.1  [r2_hidden(1^[k3_ordinal2(3^[]), 3^[]], 3^[]), v3_ordinal1(1^[k3_ordinal2(3^[]), 3^[]]), -r2_hidden(1^[k3_ordinal2(3^[]), 3^[]], k3_ordinal2(3^[]))]   (10)  substitution:[[_G1746, _G1830], [1^[k3_ordinal2(3^[]), 3^[]], 3^[]]]
+1.1.1.1  [-v3_ordinal1(1^[k3_ordinal2(3^[]), 3^[]]), v3_ordinal1(2^[]), m1_subset_1(1^[k3_ordinal2(3^[]), 3^[]], 2^[])]   (6)  substitution:[[_G1152, _G1071], [1^[k3_ordinal2(3^[]), 3^[]], 2^[]]]
+1.1.1.1.1  [-v3_ordinal1(2^[])]   (1)  
+1.1.1.1.2  [-m1_subset_1(1^[k3_ordinal2(3^[]), 3^[]], 2^[]), r2_hidden(1^[k3_ordinal2(3^[]), 3^[]], 3^[]), m1_subset_1(3^[], k1_zfmisc_1(2^[]))]   (11)  substitution:[[_G2055, _G2172, _G2113], [1^[k3_ordinal2(3^[]), 3^[]], 2^[], 3^[]]]
+1.1.1.1.2.1  [-r2_hidden(1^[k3_ordinal2(3^[]), 3^[]], 3^[])]   (reduction:1.1)  
+1.1.1.1.2.2  [-m1_subset_1(3^[], k1_zfmisc_1(2^[]))]   (4)  
+1.1.1.2  [r2_hidden(1^[k3_ordinal2(3^[]), 3^[]], k3_ordinal2(3^[])), -r1_tarski(3^[], k3_ordinal2(3^[]))]   (8)  substitution:[[_G1400, _G1344], [k3_ordinal2(3^[]), 3^[]]]
+1.1.1.2.1  [r1_tarski(3^[], k3_ordinal2(3^[]))]   (5)  
+------------------------------------------------------
+End of proof for t2_card_lar

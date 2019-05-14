@@ -1,0 +1,30 @@
+
+t134_zf_lang1 is a Theorem
+Start of proof for t134_zf_lang1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [r1_tarski(k9_zf_lang, k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k5_numbers)))]
+ (2)  [-r1_tarski(_G984, _G1040), -r2_hidden(1^[_G1040, _G984], _G984)]
+ (3)  [-r1_tarski(_G984, _G1040), r2_hidden(1^[_G1040, _G984], _G1040)]
+ (4)  [r1_tarski(_G984, _G1040), r2_hidden(_G1154, _G984), -r2_hidden(_G1154, _G1040)]
+ (5)  [m2_finseq_1(_G1446, _G1386), -v1_funct_1(_G1446)]
+ (6)  [m2_finseq_1(_G1446, _G1386), -v1_finseq_1(_G1446)]
+ (7)  [m2_finseq_1(_G1446, _G1386), -m1_subset_1(_G1446, k1_zfmisc_1(k2_zfmisc_1(k5_numbers, _G1386)))]
+ (8)  [v1_xboole_0(k1_zfmisc_1(_G1817))]
+ (9)  [m1_subset_1(_G1922, _G1972), -v1_xboole_0(_G1972), -r2_hidden(_G1922, _G1972)]
+ (10)  [-v1_zf_lang(_G2218), r2_hidden(_G2218, k9_zf_lang)]
+ (11)  [-m2_finseq_1(_G2218, k5_numbers), r2_hidden(_G2218, k9_zf_lang)]
+ (12)  [-r2_hidden(_G2218, k9_zf_lang), v1_zf_lang(_G2218), m2_finseq_1(_G2218, k5_numbers)]
+
+Connection Proof:
+-----------------
+1  [v1_xboole_0(k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k5_numbers)))]   (8)  substitution:[[_G1817], [k2_zfmisc_1(k5_numbers, k5_numbers)]]
+1.1  [-v1_xboole_0(k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k5_numbers))), m1_subset_1(1^[k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k5_numbers)), k9_zf_lang], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k5_numbers))), -r2_hidden(1^[k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k5_numbers)), k9_zf_lang], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k5_numbers)))]   (9)  substitution:[[_G1972, _G1922], [k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k5_numbers)), 1^[k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k5_numbers)), k9_zf_lang]]]
+1.1.1  [-m1_subset_1(1^[k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k5_numbers)), k9_zf_lang], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k5_numbers))), m2_finseq_1(1^[k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k5_numbers)), k9_zf_lang], k5_numbers)]   (7)  substitution:[[_G1446, _G1386], [1^[k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k5_numbers)), k9_zf_lang], k5_numbers]]
+1.1.1.1  [-m2_finseq_1(1^[k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k5_numbers)), k9_zf_lang], k5_numbers), r2_hidden(1^[k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k5_numbers)), k9_zf_lang], k9_zf_lang)]   (11)  substitution:[[_G2218], [1^[k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k5_numbers)), k9_zf_lang]]]
+1.1.1.1.1  [-r2_hidden(1^[k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k5_numbers)), k9_zf_lang], k9_zf_lang), -r1_tarski(k9_zf_lang, k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k5_numbers)))]   (2)  substitution:[[_G1040, _G984], [k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k5_numbers)), k9_zf_lang]]
+1.1.1.1.1.1  [r1_tarski(k9_zf_lang, k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k5_numbers)))]   (1)  
+1.1.2  [r2_hidden(1^[k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k5_numbers)), k9_zf_lang], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k5_numbers))), -r1_tarski(k9_zf_lang, k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k5_numbers)))]   (3)  substitution:[[_G1040, _G984], [k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k5_numbers)), k9_zf_lang]]
+1.1.2.1  [r1_tarski(k9_zf_lang, k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k5_numbers)))]   (1)  
+------------------------------------------------------
+End of proof for t134_zf_lang1

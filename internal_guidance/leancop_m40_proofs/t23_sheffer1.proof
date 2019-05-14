@@ -1,0 +1,61 @@
+
+t23_sheffer1 is a Theorem
+Start of proof for t23_sheffer1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(5^[])]
+ (2)  [-v4_lattices(5^[])]
+ (3)  [-v6_lattices(5^[])]
+ (4)  [-v11_lattices(5^[])]
+ (5)  [-v7_robbins1(5^[])]
+ (6)  [-v1_sheffer1(5^[])]
+ (7)  [-v2_sheffer1(5^[])]
+ (8)  [-v3_sheffer1(5^[])]
+ (9)  [-v4_sheffer1(5^[])]
+ (10)  [-l3_lattices(5^[])]
+ (11)  [v16_lattices(5^[])]
+ (12)  [l3_lattices(_G1463), -v2_struct_0(_G1463), v16_lattices(_G1463), m1_subset_1(_G1672, u1_struct_0(_G1463)), -m1_subset_1(1^[_G1672, _G1463], u1_struct_0(_G1463))]
+ (13)  [l3_lattices(_G1463), -v2_struct_0(_G1463), v16_lattices(_G1463), m1_subset_1(_G1672, u1_struct_0(_G1463)), -r2_lattices(_G1463, 1^[_G1672, _G1463], _G1672)]
+ (14)  [l3_lattices(_G1463), -v2_struct_0(_G1463), -v16_lattices(_G1463), -m1_subset_1(2^[_G1463], u1_struct_0(_G1463))]
+ (15)  [l3_lattices(_G1463), -v2_struct_0(_G1463), -v16_lattices(_G1463), m1_subset_1(_G4875, u1_struct_0(_G1463)), r2_lattices(_G1463, _G4875, 2^[_G1463])]
+ (16)  [l3_lattices(_G2139), -v2_struct_0(_G2139), v4_sheffer1(_G2139), m1_subset_1(_G2348, u1_struct_0(_G2139)), -m1_subset_1(3^[_G2348, _G2139], u1_struct_0(_G2139))]
+ (17)  [l3_lattices(_G2139), -v2_struct_0(_G2139), v4_sheffer1(_G2139), m1_subset_1(_G2348, u1_struct_0(_G2139)), -r1_sheffer1(_G2139, 3^[_G2348, _G2139], _G2348)]
+ (18)  [l3_lattices(_G2139), -v2_struct_0(_G2139), -v4_sheffer1(_G2139), -m1_subset_1(4^[_G2139], u1_struct_0(_G2139))]
+ (19)  [l3_lattices(_G2139), -v2_struct_0(_G2139), -v4_sheffer1(_G2139), m1_subset_1(_G5066, u1_struct_0(_G2139)), r1_sheffer1(_G2139, _G5066, 4^[_G2139])]
+ (20)  [-r2_lattices(_G2806, _G3449, _G3589), r1_sheffer1(_G2806, _G3449, _G3589), m1_subset_1(_G3589, u1_struct_0(_G2806)), m1_subset_1(_G3449, u1_struct_0(_G2806)), -v2_struct_0(_G2806), v4_lattices(_G2806), v6_lattices(_G2806), v11_lattices(_G2806), v7_robbins1(_G2806), v1_sheffer1(_G2806), v2_sheffer1(_G2806), v3_sheffer1(_G2806), v4_sheffer1(_G2806), l3_lattices(_G2806)]
+ (21)  [r2_lattices(_G2806, _G3449, _G3589), -r1_sheffer1(_G2806, _G3449, _G3589), m1_subset_1(_G3589, u1_struct_0(_G2806)), m1_subset_1(_G3449, u1_struct_0(_G2806)), -v2_struct_0(_G2806), v4_lattices(_G2806), v6_lattices(_G2806), v11_lattices(_G2806), v7_robbins1(_G2806), v1_sheffer1(_G2806), v2_sheffer1(_G2806), v3_sheffer1(_G2806), v4_sheffer1(_G2806), l3_lattices(_G2806)]
+
+Connection Proof:
+-----------------
+1  [v2_struct_0(5^[])]   (1)  
+1.1  [-v2_struct_0(5^[]), l3_lattices(5^[]), v4_sheffer1(5^[]), m1_subset_1(2^[5^[]], u1_struct_0(5^[])), -m1_subset_1(3^[2^[5^[]], 5^[]], u1_struct_0(5^[]))]   (16)  substitution:[[_G2139, _G2348], [5^[], 2^[5^[]]]]
+1.1.1  [-l3_lattices(5^[])]   (10)  
+1.1.2  [-v4_sheffer1(5^[])]   (9)  
+1.1.3  [-m1_subset_1(2^[5^[]], u1_struct_0(5^[])), l3_lattices(5^[]), -v2_struct_0(5^[]), -v16_lattices(5^[])]   (14)  substitution:[[_G1463], [5^[]]]
+1.1.3.1  [-l3_lattices(5^[])]   (10)  
+1.1.3.2  [v2_struct_0(5^[])]   (1)  
+1.1.3.3  [v16_lattices(5^[])]   (11)  
+1.1.4  [m1_subset_1(3^[2^[5^[]], 5^[]], u1_struct_0(5^[])), -r2_lattices(5^[], 3^[2^[5^[]], 5^[]], 2^[5^[]]), r1_sheffer1(5^[], 3^[2^[5^[]], 5^[]], 2^[5^[]]), m1_subset_1(2^[5^[]], u1_struct_0(5^[])), -v2_struct_0(5^[]), v4_lattices(5^[]), v6_lattices(5^[]), v11_lattices(5^[]), v7_robbins1(5^[]), v1_sheffer1(5^[]), v2_sheffer1(5^[]), v3_sheffer1(5^[]), v4_sheffer1(5^[]), l3_lattices(5^[])]   (20)  substitution:[[_G3449, _G2806, _G3589], [3^[2^[5^[]], 5^[]], 5^[], 2^[5^[]]]]
+1.1.4.1  [r2_lattices(5^[], 3^[2^[5^[]], 5^[]], 2^[5^[]]), l3_lattices(5^[]), -v2_struct_0(5^[]), -v16_lattices(5^[]), m1_subset_1(3^[2^[5^[]], 5^[]], u1_struct_0(5^[]))]   (15)  substitution:[[_G1463, _G4875], [5^[], 3^[2^[5^[]], 5^[]]]]
+1.1.4.1.1  [-l3_lattices(5^[])]   (10)  
+1.1.4.1.2  [v2_struct_0(5^[])]   (1)  
+1.1.4.1.3  [v16_lattices(5^[])]   (11)  
+1.1.4.1.4  [-m1_subset_1(3^[2^[5^[]], 5^[]], u1_struct_0(5^[]))]   (reduction:1.1)  
+1.1.4.2  [-r1_sheffer1(5^[], 3^[2^[5^[]], 5^[]], 2^[5^[]]), l3_lattices(5^[]), -v2_struct_0(5^[]), v4_sheffer1(5^[]), m1_subset_1(2^[5^[]], u1_struct_0(5^[]))]   (17)  substitution:[[_G2139, _G2348], [5^[], 2^[5^[]]]]
+1.1.4.2.1  [-l3_lattices(5^[])]   (10)  
+1.1.4.2.2  [v2_struct_0(5^[])]   (1)  
+1.1.4.2.3  [-v4_sheffer1(5^[])]   (9)  
+1.1.4.2.4  [-m1_subset_1(2^[5^[]], u1_struct_0(5^[]))]   (lemmata:1.1)  
+1.1.4.3  [-m1_subset_1(2^[5^[]], u1_struct_0(5^[]))]   (lemmata:1.1)  
+1.1.4.4  [v2_struct_0(5^[])]   (1)  
+1.1.4.5  [-v4_lattices(5^[])]   (2)  
+1.1.4.6  [-v6_lattices(5^[])]   (3)  
+1.1.4.7  [-v11_lattices(5^[])]   (4)  
+1.1.4.8  [-v7_robbins1(5^[])]   (5)  
+1.1.4.9  [-v1_sheffer1(5^[])]   (6)  
+1.1.4.10  [-v2_sheffer1(5^[])]   (7)  
+1.1.4.11  [-v3_sheffer1(5^[])]   (8)  
+1.1.4.12  [-v4_sheffer1(5^[])]   (9)  
+1.1.4.13  [-l3_lattices(5^[])]   (10)  
+------------------------------------------------------
+End of proof for t23_sheffer1

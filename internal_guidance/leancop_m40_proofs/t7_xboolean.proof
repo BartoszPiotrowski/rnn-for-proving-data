@@ -1,0 +1,30 @@
+
+t7_xboolean is a Theorem
+Start of proof for t7_xboolean
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xboolean(1^[])]
+ (2)  [-v1_xboolean(2^[])]
+ (3)  [k4_xboolean(1^[], k5_xboolean(1^[], 2^[]))=k5_xboolean(1^[], k4_xboolean(1^[], 2^[]))]
+ (4)  [v1_xboolean(_G3968), v1_xboolean(_G4055), - (k5_xboolean(_G3968, k4_xboolean(_G3968, _G4055))=_G3968)]
+ (5)  [v1_xboolean(_G4322), v1_xboolean(_G4409), - (k4_xboolean(_G4322, k5_xboolean(_G4322, _G4409))=_G4322)]
+ (6)  [- (k5_xboolean(_G2741, _G2876)=k5_xboolean(_G2808, _G2945)), _G2741=_G2808, _G2876=_G2945]
+ (7)  [- (k4_xboolean(_G3329, _G3464)=k4_xboolean(_G3396, _G3533)), _G3329=_G3396, _G3464=_G3533]
+ (8)  [-v1_xboolean(_G2491), _G2442=_G2491, v1_xboolean(_G2442)]
+ (9)  [- (_G1669=_G1669)]
+ (10)  [_G1768=_G1813, - (_G1813=_G1768)]
+ (11)  [- (_G2001=_G2114), _G2001=_G2057, _G2057=_G2114]
+
+Connection Proof:
+-----------------
+1  [k4_xboolean(1^[], k5_xboolean(1^[], 2^[]))=k5_xboolean(1^[], k4_xboolean(1^[], 2^[]))]   (3)  
+1.1  [- (k4_xboolean(1^[], k5_xboolean(1^[], 2^[]))=k5_xboolean(1^[], k4_xboolean(1^[], 2^[]))), k4_xboolean(1^[], k5_xboolean(1^[], 2^[]))=1^[], 1^[]=k5_xboolean(1^[], k4_xboolean(1^[], 2^[]))]   (11)  substitution:[[_G2001, _G2114, _G2057], [k4_xboolean(1^[], k5_xboolean(1^[], 2^[])), k5_xboolean(1^[], k4_xboolean(1^[], 2^[])), 1^[]]]
+1.1.1  [- (k4_xboolean(1^[], k5_xboolean(1^[], 2^[]))=1^[]), v1_xboolean(1^[]), v1_xboolean(2^[])]   (5)  substitution:[[_G4322, _G4409], [1^[], 2^[]]]
+1.1.1.1  [-v1_xboolean(1^[])]   (1)  
+1.1.1.2  [-v1_xboolean(2^[])]   (2)  
+1.1.2  [- (1^[]=k5_xboolean(1^[], k4_xboolean(1^[], 2^[]))), k5_xboolean(1^[], k4_xboolean(1^[], 2^[]))=1^[]]   (10)  substitution:[[_G1813, _G1768], [1^[], k5_xboolean(1^[], k4_xboolean(1^[], 2^[]))]]
+1.1.2.1  [- (k5_xboolean(1^[], k4_xboolean(1^[], 2^[]))=1^[]), v1_xboolean(1^[]), v1_xboolean(2^[])]   (4)  substitution:[[_G3968, _G4055], [1^[], 2^[]]]
+1.1.2.1.1  [-v1_xboolean(1^[])]   (1)  
+1.1.2.1.2  [-v1_xboolean(2^[])]   (2)  
+------------------------------------------------------
+End of proof for t7_xboolean

@@ -1,0 +1,35 @@
+
+t27_frechet is a Theorem
+Start of proof for t27_frechet
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [m1_subset_1(k1_numbers, u1_struct_0(k3_frechet))]
+ (2)  [-r1_tarski(k1_tarski(k1_numbers), u1_struct_0(k3_frechet))]
+ (3)  [r2_hidden(_G5889, _G5934), -m1_subset_1(_G5889, _G5934)]
+ (4)  [-r1_tarski(_G5411, _G5467), -r2_hidden(2^[_G5467, _G5411], _G5411)]
+ (5)  [-r1_tarski(_G5411, _G5467), r2_hidden(2^[_G5467, _G5411], _G5467)]
+ (6)  [r1_tarski(_G5411, _G5467), r2_hidden(_G5581, _G5411), -r2_hidden(_G5581, _G5467)]
+ (7)  [_G5049=k1_tarski(_G4991), r2_hidden(_G5179, _G5049), - (_G5179=_G4991)]
+ (8)  [_G5049=k1_tarski(_G4991), -r2_hidden(_G5179, _G5049), _G5179=_G4991]
+ (9)  [- (_G5049=k1_tarski(_G4991)), r2_hidden(1^[_G5049, _G4991], _G5049), 1^[_G5049, _G4991]=_G4991]
+ (10)  [- (_G5049=k1_tarski(_G4991)), -r2_hidden(1^[_G5049, _G4991], _G5049), - (1^[_G5049, _G4991]=_G4991)]
+ (11)  [_G4402=_G4451, - (k1_tarski(_G4402)=k1_tarski(_G4451))]
+ (12)  [_G4671=_G4720, - (u1_struct_0(_G4671)=u1_struct_0(_G4720))]
+ (13)  [- (_G1775=_G1775)]
+ (14)  [_G1874=_G1919, - (_G1919=_G1874)]
+ (15)  [- (_G2107=_G2220), _G2107=_G2163, _G2163=_G2220]
+ (16)  [-r1_tarski(_G2624, _G2761), r1_tarski(_G2557, _G2692), _G2557=_G2624, _G2692=_G2761]
+ (17)  [-r2_hidden(_G3221, _G3358), r2_hidden(_G3154, _G3289), _G3154=_G3221, _G3289=_G3358]
+ (18)  [-m1_subset_1(_G3809, _G3946), m1_subset_1(_G3742, _G3877), _G3742=_G3809, _G3877=_G3946]
+
+Connection Proof:
+-----------------
+1  [m1_subset_1(k1_numbers, u1_struct_0(k3_frechet))]   (1)  
+1.1  [-m1_subset_1(k1_numbers, u1_struct_0(k3_frechet)), r2_hidden(k1_numbers, u1_struct_0(k3_frechet))]   (3)  substitution:[[_G5889, _G5934], [k1_numbers, u1_struct_0(k3_frechet)]]
+1.1.1  [-r2_hidden(k1_numbers, u1_struct_0(k3_frechet)), r1_tarski(k1_tarski(k1_numbers), u1_struct_0(k3_frechet)), r2_hidden(k1_numbers, k1_tarski(k1_numbers))]   (6)  substitution:[[_G5581, _G5467, _G5411], [k1_numbers, u1_struct_0(k3_frechet), k1_tarski(k1_numbers)]]
+1.1.1.1  [-r1_tarski(k1_tarski(k1_numbers), u1_struct_0(k3_frechet))]   (2)  
+1.1.1.2  [-r2_hidden(k1_numbers, k1_tarski(k1_numbers)), k1_tarski(k1_numbers)=k1_tarski(k1_numbers), k1_numbers=k1_numbers]   (8)  substitution:[[_G5179, _G5049, _G4991], [k1_numbers, k1_tarski(k1_numbers), k1_numbers]]
+1.1.1.2.1  [- (k1_tarski(k1_numbers)=k1_tarski(k1_numbers))]   (13)  substitution:[[_G1775], [k1_tarski(k1_numbers)]]
+1.1.1.2.2  [- (k1_numbers=k1_numbers)]   (13)  substitution:[[_G1775], [k1_numbers]]
+------------------------------------------------------
+End of proof for t27_frechet

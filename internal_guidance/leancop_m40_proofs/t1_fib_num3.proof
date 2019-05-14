@@ -1,0 +1,41 @@
+
+t1_fib_num3 is a Theorem
+Start of proof for t1_fib_num3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xreal_0(1^[])]
+ (2)  [-m1_subset_1(2^[], k5_numbers)]
+ (3)  [- (k3_power(1^[], 2^[])=k6_numbers)]
+ (4)  [1^[]=k6_numbers]
+ (5)  [m1_subset_1(_G5272, k4_ordinal1), -v7_ordinal1(_G5272)]
+ (6)  [- (k5_numbers=k4_ordinal1)]
+ (7)  [v1_xreal_0(_G5486), v7_ordinal1(_G5573), - (k3_power(_G5486, _G5573)=k1_newton(_G5486, _G5573))]
+ (8)  [v1_xreal_0(_G5840), v7_ordinal1(_G5934), - (k6_numbers=_G5840), k6_numbers=k1_newton(_G5840, _G5934)]
+ (9)  [- (k1_newton(_G4045, _G4180)=k1_newton(_G4112, _G4249)), _G4045=_G4112, _G4180=_G4249]
+ (10)  [- (k3_power(_G4633, _G4768)=k3_power(_G4700, _G4837)), _G4633=_G4700, _G4768=_G4837]
+ (11)  [- (_G2056=_G2056)]
+ (12)  [_G2155=_G2200, - (_G2200=_G2155)]
+ (13)  [- (_G2388=_G2501), _G2388=_G2444, _G2444=_G2501]
+ (14)  [-v7_ordinal1(_G2887), _G2838=_G2887, v7_ordinal1(_G2838)]
+ (15)  [-v1_xreal_0(_G3165), _G3116=_G3165, v1_xreal_0(_G3116)]
+ (16)  [-m1_subset_1(_G3452, _G3589), m1_subset_1(_G3385, _G3520), _G3385=_G3452, _G3520=_G3589]
+
+Connection Proof:
+-----------------
+1  [1^[]=k6_numbers]   (4)  
+1.1  [- (1^[]=k6_numbers), k6_numbers=1^[]]   (12)  substitution:[[_G2200, _G2155], [1^[], k6_numbers]]
+1.1.1  [- (k6_numbers=1^[]), v1_xreal_0(1^[]), v7_ordinal1(2^[]), k6_numbers=k1_newton(1^[], 2^[])]   (8)  substitution:[[_G5840, _G5934], [1^[], 2^[]]]
+1.1.1.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.1.2  [-v7_ordinal1(2^[]), m1_subset_1(2^[], k4_ordinal1)]   (5)  substitution:[[_G5272], [2^[]]]
+1.1.1.2.1  [-m1_subset_1(2^[], k4_ordinal1), m1_subset_1(2^[], k5_numbers), 2^[]=2^[], k5_numbers=k4_ordinal1]   (16)  substitution:[[_G3452, _G3589, _G3385, _G3520], [2^[], k4_ordinal1, 2^[], k5_numbers]]
+1.1.1.2.1.1  [-m1_subset_1(2^[], k5_numbers)]   (2)  
+1.1.1.2.1.2  [- (2^[]=2^[])]   (11)  substitution:[[_G2056], [2^[]]]
+1.1.1.2.1.3  [- (k5_numbers=k4_ordinal1)]   (6)  
+1.1.1.3  [- (k6_numbers=k1_newton(1^[], 2^[])), k6_numbers=k3_power(1^[], 2^[]), k3_power(1^[], 2^[])=k1_newton(1^[], 2^[])]   (13)  substitution:[[_G2388, _G2501, _G2444], [k6_numbers, k1_newton(1^[], 2^[]), k3_power(1^[], 2^[])]]
+1.1.1.3.1  [- (k6_numbers=k3_power(1^[], 2^[])), k3_power(1^[], 2^[])=k6_numbers]   (12)  substitution:[[_G2200, _G2155], [k6_numbers, k3_power(1^[], 2^[])]]
+1.1.1.3.1.1  [- (k3_power(1^[], 2^[])=k6_numbers)]   (3)  
+1.1.1.3.2  [- (k3_power(1^[], 2^[])=k1_newton(1^[], 2^[])), v1_xreal_0(1^[]), v7_ordinal1(2^[])]   (7)  substitution:[[_G5486, _G5573], [1^[], 2^[]]]
+1.1.1.3.2.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.1.3.2.2  [-v7_ordinal1(2^[])]   (lemmata:1.1.1)  
+------------------------------------------------------
+End of proof for t1_fib_num3

@@ -1,0 +1,39 @@
+
+t6_partfun1 is a Theorem
+Start of proof for t6_partfun1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 2^[])))]
+ (2)  [k3_relat_1(k4_relat_1(1^[]), 3^[])=3^[]]
+ (3)  [m1_subset_1(_G8605, k1_zfmisc_1(k2_zfmisc_1(_G8496, _G8550))), -v1_relat_1(_G8605)]
+ (4)  [m1_subset_1(_G8971, k1_zfmisc_1(k2_zfmisc_1(_G8848, _G8909))), -v4_relat_1(_G8971, _G8848)]
+ (5)  [m1_subset_1(_G8971, k1_zfmisc_1(k2_zfmisc_1(_G8848, _G8909))), -v5_relat_1(_G8971, _G8909)]
+ (6)  [v1_relat_1(_G9695), r1_tarski(k9_xtuple_0(_G9695), _G9638), - (k3_relat_1(k4_relat_1(_G9638), _G9695)=_G9695)]
+ (7)  [v1_relat_1(_G9376), v4_relat_1(_G9376, _G9324), -r1_tarski(k9_xtuple_0(_G9376), _G9324)]
+ (8)  [v1_relat_1(_G9376), -v4_relat_1(_G9376, _G9324), r1_tarski(k9_xtuple_0(_G9376), _G9324)]
+ (9)  [_G6372=_G6421, - (k9_xtuple_0(_G6372)=k9_xtuple_0(_G6421))]
+ (10)  [_G6650=_G6699, - (k1_zfmisc_1(_G6650)=k1_zfmisc_1(_G6699))]
+ (11)  [- (k2_zfmisc_1(_G6928, _G7063)=k2_zfmisc_1(_G6995, _G7132)), _G6928=_G6995, _G7063=_G7132]
+ (12)  [_G8113=_G8162, - (k4_relat_1(_G8113)=k4_relat_1(_G8162))]
+ (13)  [- (k3_relat_1(_G7525, _G7660)=k3_relat_1(_G7592, _G7729)), _G7525=_G7592, _G7660=_G7729]
+ (14)  [- (_G2828=_G2828)]
+ (15)  [_G2927=_G2972, - (_G2972=_G2927)]
+ (16)  [- (_G3160=_G3273), _G3160=_G3216, _G3216=_G3273]
+ (17)  [-v5_relat_1(_G3677, _G3814), v5_relat_1(_G3610, _G3745), _G3610=_G3677, _G3745=_G3814]
+ (18)  [-v4_relat_1(_G4274, _G4411), v4_relat_1(_G4207, _G4342), _G4207=_G4274, _G4342=_G4411]
+ (19)  [-v1_relat_1(_G4853), _G4804=_G4853, v1_relat_1(_G4804)]
+ (20)  [-r1_tarski(_G5149, _G5286), r1_tarski(_G5082, _G5217), _G5082=_G5149, _G5217=_G5286]
+ (21)  [-m1_subset_1(_G5737, _G5874), m1_subset_1(_G5670, _G5805), _G5670=_G5737, _G5805=_G5874]
+
+Connection Proof:
+-----------------
+1  [k3_relat_1(k4_relat_1(1^[]), 3^[])=3^[]]   (2)  
+1.1  [- (k3_relat_1(k4_relat_1(1^[]), 3^[])=3^[]), v1_relat_1(3^[]), r1_tarski(k9_xtuple_0(3^[]), 1^[])]   (6)  substitution:[[_G9638, _G9695], [1^[], 3^[]]]
+1.1.1  [-v1_relat_1(3^[]), m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 2^[])))]   (3)  substitution:[[_G8605, _G8496, _G8550], [3^[], 1^[], 2^[]]]
+1.1.1.1  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 2^[])))]   (1)  
+1.1.2  [-r1_tarski(k9_xtuple_0(3^[]), 1^[]), v1_relat_1(3^[]), v4_relat_1(3^[], 1^[])]   (7)  substitution:[[_G9376, _G9324], [3^[], 1^[]]]
+1.1.2.1  [-v1_relat_1(3^[])]   (lemmata:1.1)  
+1.1.2.2  [-v4_relat_1(3^[], 1^[]), m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 2^[])))]   (4)  substitution:[[_G8971, _G8848, _G8909], [3^[], 1^[], 2^[]]]
+1.1.2.2.1  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 2^[])))]   (1)  
+------------------------------------------------------
+End of proof for t6_partfun1

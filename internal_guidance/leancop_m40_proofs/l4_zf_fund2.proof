@@ -1,0 +1,26 @@
+
+l4_zf_fund2 is a Theorem
+Start of proof for l4_zf_fund2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(2^[])]
+ (2)  [-v1_funct_1(2^[])]
+ (3)  [-r2_hidden(3^[], k3_card_3(2^[]))]
+ (4)  [r2_hidden(_G2342, k9_xtuple_0(2^[])), r2_hidden(3^[], k1_funct_1(2^[], _G2342))]
+ (5)  [v1_funct_1(_G871), v1_relat_1(_G871), r2_hidden(_G798, k3_card_3(_G871)), -r2_hidden(1^[_G871, _G798], k9_xtuple_0(_G871))]
+ (6)  [v1_funct_1(_G871), v1_relat_1(_G871), r2_hidden(_G798, k3_card_3(_G871)), -r2_hidden(_G798, k1_funct_1(_G871, 1^[_G871, _G798]))]
+ (7)  [v1_funct_1(_G871), v1_relat_1(_G871), -r2_hidden(_G798, k3_card_3(_G871)), r2_hidden(_G1101, k9_xtuple_0(_G871)), r2_hidden(_G798, k1_funct_1(_G871, _G1101))]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(1^[2^[], 3^[]], k9_xtuple_0(2^[])), r2_hidden(3^[], k1_funct_1(2^[], 1^[2^[], 3^[]]))]   (4)  substitution:[[_G2342], [1^[2^[], 3^[]]]]
+1.1  [-r2_hidden(1^[2^[], 3^[]], k9_xtuple_0(2^[])), v1_funct_1(2^[]), v1_relat_1(2^[]), r2_hidden(3^[], k3_card_3(2^[]))]   (5)  substitution:[[_G871, _G798], [2^[], 3^[]]]
+1.1.1  [-v1_funct_1(2^[])]   (2)  
+1.1.2  [-v1_relat_1(2^[])]   (1)  
+1.1.3  [-r2_hidden(3^[], k3_card_3(2^[]))]   (3)  
+1.2  [-r2_hidden(3^[], k1_funct_1(2^[], 1^[2^[], 3^[]])), v1_funct_1(2^[]), v1_relat_1(2^[]), r2_hidden(3^[], k3_card_3(2^[]))]   (6)  substitution:[[_G798, _G871], [3^[], 2^[]]]
+1.2.1  [-v1_funct_1(2^[])]   (2)  
+1.2.2  [-v1_relat_1(2^[])]   (1)  
+1.2.3  [-r2_hidden(3^[], k3_card_3(2^[]))]   (3)  
+------------------------------------------------------
+End of proof for l4_zf_fund2

@@ -1,0 +1,29 @@
+
+t30_xxreal_1 is a Theorem
+Start of proof for t30_xxreal_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xxreal_0(1^[])]
+ (2)  [-v1_xxreal_0(2^[])]
+ (3)  [-r1_xxreal_0(1^[], 2^[])]
+ (4)  [-v1_xboole_0(k1_xxreal_1(1^[], 2^[]))]
+ (5)  [-r1_xxreal_0(_G970, _G970), v1_xxreal_0(_G970), v1_xxreal_0(_G1019)]
+ (6)  [r2_hidden(_G1884, _G1930), v1_xboole_0(_G1930)]
+ (7)  [v1_xxreal_0(_G1248), v1_xxreal_0(_G1354), v1_xxreal_0(_G1456), r2_hidden(_G1248, k1_xxreal_1(_G1354, _G1456)), -r1_xxreal_0(_G1354, _G1248)]
+ (8)  [v1_xxreal_0(_G1248), v1_xxreal_0(_G1354), v1_xxreal_0(_G1456), r2_hidden(_G1248, k1_xxreal_1(_G1354, _G1456)), -r1_xxreal_0(_G1248, _G1456)]
+ (9)  [v1_xxreal_0(_G1248), v1_xxreal_0(_G1354), v1_xxreal_0(_G1456), -r2_hidden(_G1248, k1_xxreal_1(_G1354, _G1456)), r1_xxreal_0(_G1354, _G1248), r1_xxreal_0(_G1248, _G1456)]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(1^[], k1_xxreal_1(1^[], 2^[])), v1_xboole_0(k1_xxreal_1(1^[], 2^[]))]   (6)  substitution:[[_G1884, _G1930], [1^[], k1_xxreal_1(1^[], 2^[])]]
+1.1  [-r2_hidden(1^[], k1_xxreal_1(1^[], 2^[])), v1_xxreal_0(1^[]), v1_xxreal_0(1^[]), v1_xxreal_0(2^[]), r1_xxreal_0(1^[], 1^[]), r1_xxreal_0(1^[], 2^[])]   (9)  substitution:[[_G1248, _G1354, _G1456], [1^[], 1^[], 2^[]]]
+1.1.1  [-v1_xxreal_0(1^[])]   (1)  
+1.1.2  [-v1_xxreal_0(1^[])]   (1)  
+1.1.3  [-v1_xxreal_0(2^[])]   (2)  
+1.1.4  [-r1_xxreal_0(1^[], 1^[]), v1_xxreal_0(1^[]), v1_xxreal_0(1^[])]   (5)  substitution:[[_G970, _G1019], [1^[], 1^[]]]
+1.1.4.1  [-v1_xxreal_0(1^[])]   (1)  
+1.1.4.2  [-v1_xxreal_0(1^[])]   (1)  
+1.1.5  [-r1_xxreal_0(1^[], 2^[])]   (3)  
+1.2  [-v1_xboole_0(k1_xxreal_1(1^[], 2^[]))]   (4)  
+------------------------------------------------------
+End of proof for t30_xxreal_1

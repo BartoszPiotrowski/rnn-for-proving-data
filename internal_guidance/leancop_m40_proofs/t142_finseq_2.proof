@@ -1,0 +1,19 @@
+
+t142_finseq_2 is a Theorem
+Start of proof for t142_finseq_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v1_xboole_0(1^[])]
+ (2)  [-v7_ordinal1(2^[])]
+ (3)  [r1_tarski(k4_finseq_2(2^[], 1^[]), k3_finseq_2(1^[]))]
+ (4)  [v7_ordinal1(_G738), -m1_finseq_2(k4_finseq_2(_G738, _G785), _G785)]
+ (5)  [m1_finseq_2(_G1036, _G989), -r1_tarski(_G1036, k3_finseq_2(_G989))]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k4_finseq_2(2^[], 1^[]), k3_finseq_2(1^[]))]   (3)  
+1.1  [-r1_tarski(k4_finseq_2(2^[], 1^[]), k3_finseq_2(1^[])), m1_finseq_2(k4_finseq_2(2^[], 1^[]), 1^[])]   (5)  substitution:[[_G1036, _G989], [k4_finseq_2(2^[], 1^[]), 1^[]]]
+1.1.1  [-m1_finseq_2(k4_finseq_2(2^[], 1^[]), 1^[]), v7_ordinal1(2^[])]   (4)  substitution:[[_G738, _G785], [2^[], 1^[]]]
+1.1.1.1  [-v7_ordinal1(2^[])]   (2)  
+------------------------------------------------------
+End of proof for t142_finseq_2

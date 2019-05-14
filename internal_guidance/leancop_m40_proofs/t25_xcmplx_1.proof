@@ -1,0 +1,30 @@
+
+t25_xcmplx_1 is a Theorem
+Start of proof for t25_xcmplx_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xcmplx_0(1^[])]
+ (2)  [-v1_xcmplx_0(2^[])]
+ (3)  [1^[]=k2_xcmplx_0(1^[], k6_xcmplx_0(2^[], 2^[]))]
+ (4)  [v1_xcmplx_0(_G3665), - (k6_xcmplx_0(_G3665, _G3665)=k6_numbers)]
+ (5)  [v1_xcmplx_0(_G3855), - (k2_xcmplx_0(_G3855, k6_numbers)=_G3855)]
+ (6)  [- (k2_xcmplx_0(_G2438, _G2573)=k2_xcmplx_0(_G2505, _G2642)), _G2438=_G2505, _G2573=_G2642]
+ (7)  [- (k6_xcmplx_0(_G3026, _G3161)=k6_xcmplx_0(_G3093, _G3230)), _G3026=_G3093, _G3161=_G3230]
+ (8)  [-v1_xcmplx_0(_G2188), _G2139=_G2188, v1_xcmplx_0(_G2139)]
+ (9)  [- (_G1366=_G1366)]
+ (10)  [_G1465=_G1510, - (_G1510=_G1465)]
+ (11)  [- (_G1698=_G1811), _G1698=_G1754, _G1754=_G1811]
+
+Connection Proof:
+-----------------
+1  [1^[]=k2_xcmplx_0(1^[], k6_xcmplx_0(2^[], 2^[]))]   (3)  
+1.1  [- (1^[]=k2_xcmplx_0(1^[], k6_xcmplx_0(2^[], 2^[]))), k2_xcmplx_0(1^[], k6_xcmplx_0(2^[], 2^[]))=1^[]]   (10)  substitution:[[_G1510, _G1465], [1^[], k2_xcmplx_0(1^[], k6_xcmplx_0(2^[], 2^[]))]]
+1.1.1  [- (k2_xcmplx_0(1^[], k6_xcmplx_0(2^[], 2^[]))=1^[]), k2_xcmplx_0(1^[], k6_xcmplx_0(2^[], 2^[]))=k2_xcmplx_0(1^[], k6_numbers), k2_xcmplx_0(1^[], k6_numbers)=1^[]]   (11)  substitution:[[_G1698, _G1811, _G1754], [k2_xcmplx_0(1^[], k6_xcmplx_0(2^[], 2^[])), 1^[], k2_xcmplx_0(1^[], k6_numbers)]]
+1.1.1.1  [- (k2_xcmplx_0(1^[], k6_xcmplx_0(2^[], 2^[]))=k2_xcmplx_0(1^[], k6_numbers)), 1^[]=1^[], k6_xcmplx_0(2^[], 2^[])=k6_numbers]   (6)  substitution:[[_G2438, _G2573, _G2505, _G2642], [1^[], k6_xcmplx_0(2^[], 2^[]), 1^[], k6_numbers]]
+1.1.1.1.1  [- (1^[]=1^[])]   (9)  substitution:[[_G1366], [1^[]]]
+1.1.1.1.2  [- (k6_xcmplx_0(2^[], 2^[])=k6_numbers), v1_xcmplx_0(2^[])]   (4)  substitution:[[_G3665], [2^[]]]
+1.1.1.1.2.1  [-v1_xcmplx_0(2^[])]   (2)  
+1.1.1.2  [- (k2_xcmplx_0(1^[], k6_numbers)=1^[]), v1_xcmplx_0(1^[])]   (5)  substitution:[[_G3855], [1^[]]]
+1.1.1.2.1  [-v1_xcmplx_0(1^[])]   (1)  
+------------------------------------------------------
+End of proof for t25_xcmplx_1

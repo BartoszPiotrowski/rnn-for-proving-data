@@ -1,0 +1,42 @@
+
+l25_jgraph_3 is a Theorem
+Start of proof for l25_jgraph_3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [- (k22_euclid(np__2)=k4_struct_0(k15_euclid(np__2)))]
+ (2)  [-v1_xboole_0(k1_xboole_0)]
+ (3)  [- (k6_numbers=k1_xboole_0)]
+ (4)  [v1_xboole_0(np__1)]
+ (5)  [- (k17_euclid(k4_struct_0(k15_euclid(np__2)))=k6_numbers)]
+ (6)  [- (k18_euclid(k4_struct_0(k15_euclid(np__2)))=k6_numbers)]
+ (7)  [- (k17_euclid(k22_euclid(np__2))=np__1)]
+ (8)  [- (k18_euclid(k22_euclid(np__2))=np__1)]
+ (9)  [-v1_xboole_0(_G2469), _G2420=_G2469, v1_xboole_0(_G2420)]
+ (10)  [- (_G1647=_G1647)]
+ (11)  [_G1746=_G1791, - (_G1791=_G1746)]
+ (12)  [- (_G1979=_G2092), _G1979=_G2035, _G2035=_G2092]
+ (13)  [_G2719=_G2768, - (k17_euclid(_G2719)=k17_euclid(_G2768))]
+ (14)  [_G2997=_G3046, - (k18_euclid(_G2997)=k18_euclid(_G3046))]
+ (15)  [_G3275=_G3324, - (k22_euclid(_G3275)=k22_euclid(_G3324))]
+ (16)  [_G3553=_G3602, - (k4_struct_0(_G3553)=k4_struct_0(_G3602))]
+ (17)  [_G3822=_G3871, - (k15_euclid(_G3822)=k15_euclid(_G3871))]
+
+Connection Proof:
+-----------------
+1  [v1_xboole_0(np__1)]   (4)  
+1.1  [-v1_xboole_0(np__1), k17_euclid(k4_struct_0(k15_euclid(np__2)))=np__1, v1_xboole_0(k17_euclid(k4_struct_0(k15_euclid(np__2))))]   (9)  substitution:[[_G2469, _G2420], [np__1, k17_euclid(k4_struct_0(k15_euclid(np__2)))]]
+1.1.1  [- (k17_euclid(k4_struct_0(k15_euclid(np__2)))=np__1), np__1=k17_euclid(k4_struct_0(k15_euclid(np__2)))]   (11)  substitution:[[_G1791, _G1746], [k17_euclid(k4_struct_0(k15_euclid(np__2))), np__1]]
+1.1.1.1  [- (np__1=k17_euclid(k4_struct_0(k15_euclid(np__2)))), np__1=k17_euclid(k22_euclid(np__2)), k17_euclid(k22_euclid(np__2))=k17_euclid(k4_struct_0(k15_euclid(np__2)))]   (12)  substitution:[[_G1979, _G2092, _G2035], [np__1, k17_euclid(k4_struct_0(k15_euclid(np__2))), k17_euclid(k22_euclid(np__2))]]
+1.1.1.1.1  [- (np__1=k17_euclid(k22_euclid(np__2))), k17_euclid(k22_euclid(np__2))=np__1]   (11)  substitution:[[_G1791, _G1746], [np__1, k17_euclid(k22_euclid(np__2))]]
+1.1.1.1.1.1  [- (k17_euclid(k22_euclid(np__2))=np__1)]   (7)  
+1.1.1.1.2  [- (k17_euclid(k22_euclid(np__2))=k17_euclid(k4_struct_0(k15_euclid(np__2)))), k22_euclid(np__2)=k4_struct_0(k15_euclid(np__2))]   (13)  substitution:[[_G2719, _G2768], [k22_euclid(np__2), k4_struct_0(k15_euclid(np__2))]]
+1.1.1.1.2.1  [- (k22_euclid(np__2)=k4_struct_0(k15_euclid(np__2)))]   (1)  
+1.1.2  [-v1_xboole_0(k17_euclid(k4_struct_0(k15_euclid(np__2)))), k6_numbers=k17_euclid(k4_struct_0(k15_euclid(np__2))), v1_xboole_0(k6_numbers)]   (9)  substitution:[[_G2469, _G2420], [k17_euclid(k4_struct_0(k15_euclid(np__2))), k6_numbers]]
+1.1.2.1  [- (k6_numbers=k17_euclid(k4_struct_0(k15_euclid(np__2)))), k17_euclid(k4_struct_0(k15_euclid(np__2)))=k6_numbers]   (11)  substitution:[[_G1791, _G1746], [k6_numbers, k17_euclid(k4_struct_0(k15_euclid(np__2)))]]
+1.1.2.1.1  [- (k17_euclid(k4_struct_0(k15_euclid(np__2)))=k6_numbers)]   (5)  
+1.1.2.2  [-v1_xboole_0(k6_numbers), k1_xboole_0=k6_numbers, v1_xboole_0(k1_xboole_0)]   (9)  substitution:[[_G2469, _G2420], [k6_numbers, k1_xboole_0]]
+1.1.2.2.1  [- (k1_xboole_0=k6_numbers), k6_numbers=k1_xboole_0]   (11)  substitution:[[_G1791, _G1746], [k1_xboole_0, k6_numbers]]
+1.1.2.2.1.1  [- (k6_numbers=k1_xboole_0)]   (3)  
+1.1.2.2.2  [-v1_xboole_0(k1_xboole_0)]   (2)  
+------------------------------------------------------
+End of proof for l25_jgraph_3

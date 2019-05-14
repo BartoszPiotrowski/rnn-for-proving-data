@@ -1,0 +1,31 @@
+
+l3_partfun1 is a Theorem
+Start of proof for l3_partfun1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [r1_tarski(k9_xtuple_0(_G4214), 1^[]), r1_tarski(k10_xtuple_0(_G4214), 2^[])]
+ (2)  [-r1_tarski(k1_xboole_0, _G3187)]
+ (3)  [- (k9_xtuple_0(k1_xboole_0)=k1_xboole_0)]
+ (4)  [- (k10_xtuple_0(k1_xboole_0)=k1_xboole_0)]
+ (5)  [_G2598=_G2647, - (k9_xtuple_0(_G2598)=k9_xtuple_0(_G2647))]
+ (6)  [_G2867=_G2916, - (k10_xtuple_0(_G2867)=k10_xtuple_0(_G2916))]
+ (7)  [-r1_tarski(_G2047, _G2184), r1_tarski(_G1980, _G2115), _G1980=_G2047, _G2115=_G2184]
+ (8)  [- (_G1207=_G1207)]
+ (9)  [_G1306=_G1351, - (_G1351=_G1306)]
+ (10)  [- (_G1539=_G1652), _G1539=_G1595, _G1595=_G1652]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k9_xtuple_0(k1_xboole_0), 1^[]), r1_tarski(k10_xtuple_0(k1_xboole_0), 2^[])]   (1)  substitution:[[_G4214], [k1_xboole_0]]
+1.1  [-r1_tarski(k9_xtuple_0(k1_xboole_0), 1^[]), r1_tarski(k1_xboole_0, 1^[]), k1_xboole_0=k9_xtuple_0(k1_xboole_0), 1^[]=1^[]]   (7)  substitution:[[_G2047, _G2184, _G1980, _G2115], [k9_xtuple_0(k1_xboole_0), 1^[], k1_xboole_0, 1^[]]]
+1.1.1  [-r1_tarski(k1_xboole_0, 1^[])]   (2)  substitution:[[_G3187], [1^[]]]
+1.1.2  [- (k1_xboole_0=k9_xtuple_0(k1_xboole_0)), k9_xtuple_0(k1_xboole_0)=k1_xboole_0]   (9)  substitution:[[_G1351, _G1306], [k1_xboole_0, k9_xtuple_0(k1_xboole_0)]]
+1.1.2.1  [- (k9_xtuple_0(k1_xboole_0)=k1_xboole_0)]   (3)  
+1.1.3  [- (1^[]=1^[])]   (8)  substitution:[[_G1207], [1^[]]]
+1.2  [-r1_tarski(k10_xtuple_0(k1_xboole_0), 2^[]), r1_tarski(k1_xboole_0, 2^[]), k1_xboole_0=k10_xtuple_0(k1_xboole_0), 2^[]=2^[]]   (7)  substitution:[[_G2047, _G2184, _G1980, _G2115], [k10_xtuple_0(k1_xboole_0), 2^[], k1_xboole_0, 2^[]]]
+1.2.1  [-r1_tarski(k1_xboole_0, 2^[])]   (2)  substitution:[[_G3187], [2^[]]]
+1.2.2  [- (k1_xboole_0=k10_xtuple_0(k1_xboole_0)), k10_xtuple_0(k1_xboole_0)=k1_xboole_0]   (9)  substitution:[[_G1351, _G1306], [k1_xboole_0, k10_xtuple_0(k1_xboole_0)]]
+1.2.2.1  [- (k10_xtuple_0(k1_xboole_0)=k1_xboole_0)]   (4)  
+1.2.3  [- (2^[]=2^[])]   (8)  substitution:[[_G1207], [2^[]]]
+------------------------------------------------------
+End of proof for l3_partfun1

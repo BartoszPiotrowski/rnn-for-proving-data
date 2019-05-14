@@ -1,0 +1,31 @@
+
+t27_waybel21 is a Theorem
+Start of proof for t27_waybel21
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(1^[])]
+ (2)  [-l1_struct_0(1^[])]
+ (3)  [v2_struct_0(2^[])]
+ (4)  [-l1_waybel_0(2^[], 1^[])]
+ (5)  [-r1_tarski(k2_relset_1(u1_struct_0(1^[]), u1_waybel_0(1^[], 2^[])), 3^[])]
+ (6)  [r1_waybel_0(1^[], 2^[], 3^[])]
+ (7)  [l1_struct_0(_G2305), -v2_struct_0(_G2305), -r1_waybel_0(_G2305, _G2477, k2_relset_1(u1_struct_0(_G2305), u1_waybel_0(_G2305, _G2477))), -v2_struct_0(_G2477), l1_waybel_0(_G2477, _G2305)]
+ (8)  [l1_struct_0(_G1124), -v2_struct_0(_G1124), l1_waybel_0(_G1325, _G1124), -v2_struct_0(_G1325), r1_tarski(_G1540, _G1619), r1_waybel_0(_G1124, _G1325, _G1540), -r1_waybel_0(_G1124, _G1325, _G1619)]
+ (9)  [l1_struct_0(_G1124), -v2_struct_0(_G1124), l1_waybel_0(_G1325, _G1124), -v2_struct_0(_G1325), r1_tarski(_G1540, _G1619), r2_waybel_0(_G1124, _G1325, _G1540), -r2_waybel_0(_G1124, _G1325, _G1619)]
+
+Connection Proof:
+-----------------
+1  [v2_struct_0(1^[])]   (1)  
+1.1  [-v2_struct_0(1^[]), l1_struct_0(1^[]), -r1_waybel_0(1^[], 2^[], k2_relset_1(u1_struct_0(1^[]), u1_waybel_0(1^[], 2^[]))), -v2_struct_0(2^[]), l1_waybel_0(2^[], 1^[])]   (7)  substitution:[[_G2305, _G2477], [1^[], 2^[]]]
+1.1.1  [-l1_struct_0(1^[])]   (2)  
+1.1.2  [r1_waybel_0(1^[], 2^[], k2_relset_1(u1_struct_0(1^[]), u1_waybel_0(1^[], 2^[]))), l1_struct_0(1^[]), -v2_struct_0(1^[]), l1_waybel_0(2^[], 1^[]), -v2_struct_0(2^[]), r1_tarski(k2_relset_1(u1_struct_0(1^[]), u1_waybel_0(1^[], 2^[])), 3^[]), -r1_waybel_0(1^[], 2^[], 3^[])]   (8)  substitution:[[_G1124, _G1325, _G1540, _G1619], [1^[], 2^[], k2_relset_1(u1_struct_0(1^[]), u1_waybel_0(1^[], 2^[])), 3^[]]]
+1.1.2.1  [-l1_struct_0(1^[])]   (2)  
+1.1.2.2  [v2_struct_0(1^[])]   (1)  
+1.1.2.3  [-l1_waybel_0(2^[], 1^[])]   (4)  
+1.1.2.4  [v2_struct_0(2^[])]   (3)  
+1.1.2.5  [-r1_tarski(k2_relset_1(u1_struct_0(1^[]), u1_waybel_0(1^[], 2^[])), 3^[])]   (5)  
+1.1.2.6  [r1_waybel_0(1^[], 2^[], 3^[])]   (6)  
+1.1.3  [v2_struct_0(2^[])]   (3)  
+1.1.4  [-l1_waybel_0(2^[], 1^[])]   (4)  
+------------------------------------------------------
+End of proof for t27_waybel21

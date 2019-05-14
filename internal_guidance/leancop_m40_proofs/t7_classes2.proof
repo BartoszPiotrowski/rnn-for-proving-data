@@ -1,0 +1,33 @@
+
+t7_classes2 is a Theorem
+Start of proof for t7_classes2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_classes1(5^[])]
+ (2)  [-v1_ordinal1(6^[])]
+ (3)  [-r2_hidden(6^[], 5^[])]
+ (4)  [r1_tarski(6^[], 5^[])]
+ (5)  [-v1_classes1(_G947), -r2_hidden(1^[_G947], _G947)]
+ (6)  [-v1_classes1(_G947), -r1_tarski(2^[_G947], 1^[_G947])]
+ (7)  [-v1_classes1(_G947), r2_hidden(2^[_G947], _G947)]
+ (8)  [v1_classes1(_G947), -r2_hidden(_G1097, _G947), r2_hidden(_G1040, _G947), r1_tarski(_G1097, _G1040)]
+ (9)  [-v1_ordinal1(_G1413), -r2_hidden(3^[_G1413], _G1413)]
+ (10)  [-v1_ordinal1(_G1413), r1_tarski(3^[_G1413], _G1413)]
+ (11)  [v1_ordinal1(_G1413), r2_hidden(_G1495, _G1413), -r1_tarski(_G1495, _G1413)]
+ (12)  [-r1_tarski(_G1704, _G1760), -r2_hidden(4^[_G1760, _G1704], _G1704)]
+ (13)  [-r1_tarski(_G1704, _G1760), r2_hidden(4^[_G1760, _G1704], _G1760)]
+ (14)  [r1_tarski(_G1704, _G1760), r2_hidden(_G1874, _G1704), -r2_hidden(_G1874, _G1760)]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(6^[], 5^[])]   (4)  
+1.1  [-r1_tarski(6^[], 5^[]), -r2_hidden(4^[5^[], 6^[]], 6^[])]   (12)  substitution:[[_G1704, _G1760], [6^[], 5^[]]]
+1.1.1  [r2_hidden(4^[5^[], 6^[]], 6^[]), v1_ordinal1(6^[]), -r1_tarski(4^[5^[], 6^[]], 6^[])]   (11)  substitution:[[_G1495, _G1413], [4^[5^[], 6^[]], 6^[]]]
+1.1.1.1  [-v1_ordinal1(6^[])]   (2)  
+1.1.1.2  [r1_tarski(4^[5^[], 6^[]], 6^[]), v1_classes1(5^[]), -r2_hidden(4^[5^[], 6^[]], 5^[]), r2_hidden(6^[], 5^[])]   (8)  substitution:[[_G1097, _G1040, _G947], [4^[5^[], 6^[]], 6^[], 5^[]]]
+1.1.1.2.1  [-v1_classes1(5^[])]   (1)  
+1.1.1.2.2  [r2_hidden(4^[5^[], 6^[]], 5^[]), -r1_tarski(6^[], 5^[])]   (13)  substitution:[[_G1760, _G1704], [5^[], 6^[]]]
+1.1.1.2.2.1  [r1_tarski(6^[], 5^[])]   (4)  
+1.1.1.2.3  [-r2_hidden(6^[], 5^[])]   (3)  
+------------------------------------------------------
+End of proof for t7_classes2

@@ -1,0 +1,35 @@
+
+t55_xreal_1 is a Theorem
+Start of proof for t55_xreal_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xreal_0(1^[])]
+ (2)  [-v1_xreal_0(2^[])]
+ (3)  [1^[]=2^[]]
+ (4)  [-r1_xxreal_0(k6_xcmplx_0(1^[], 2^[]), k6_numbers)]
+ (5)  [-r1_xxreal_0(k6_xcmplx_0(2^[], 1^[]), k6_numbers)]
+ (6)  [v1_xreal_0(_G4602), v1_xreal_0(_G4696), -r1_xxreal_0(_G4696, _G4602), r1_xxreal_0(k6_xcmplx_0(_G4696, _G4602), k6_numbers)]
+ (7)  [v1_xreal_0(_G4158), v1_xreal_0(_G4251), - (_G4158=_G4251), r1_xxreal_0(_G4158, _G4251), r1_xxreal_0(_G4251, _G4158)]
+ (8)  [- (k6_xcmplx_0(_G3540, _G3675)=k6_xcmplx_0(_G3607, _G3744)), _G3540=_G3607, _G3675=_G3744]
+ (9)  [- (_G1859=_G1859)]
+ (10)  [_G1958=_G2003, - (_G2003=_G1958)]
+ (11)  [- (_G2191=_G2304), _G2191=_G2247, _G2247=_G2304]
+ (12)  [-v1_xreal_0(_G2690), _G2641=_G2690, v1_xreal_0(_G2641)]
+ (13)  [-r1_xxreal_0(_G2977, _G3114), r1_xxreal_0(_G2910, _G3045), _G2910=_G2977, _G3045=_G3114]
+
+Connection Proof:
+-----------------
+1  [1^[]=2^[]]   (3)  
+1.1  [- (1^[]=2^[]), v1_xreal_0(1^[]), v1_xreal_0(2^[]), r1_xxreal_0(1^[], 2^[]), r1_xxreal_0(2^[], 1^[])]   (7)  substitution:[[_G4158, _G4251], [1^[], 2^[]]]
+1.1.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.2  [-v1_xreal_0(2^[])]   (2)  
+1.1.3  [-r1_xxreal_0(1^[], 2^[]), v1_xreal_0(2^[]), v1_xreal_0(1^[]), r1_xxreal_0(k6_xcmplx_0(1^[], 2^[]), k6_numbers)]   (6)  substitution:[[_G4696, _G4602], [1^[], 2^[]]]
+1.1.3.1  [-v1_xreal_0(2^[])]   (2)  
+1.1.3.2  [-v1_xreal_0(1^[])]   (1)  
+1.1.3.3  [-r1_xxreal_0(k6_xcmplx_0(1^[], 2^[]), k6_numbers)]   (4)  
+1.1.4  [-r1_xxreal_0(2^[], 1^[]), v1_xreal_0(1^[]), v1_xreal_0(2^[]), r1_xxreal_0(k6_xcmplx_0(2^[], 1^[]), k6_numbers)]   (6)  substitution:[[_G4696, _G4602], [2^[], 1^[]]]
+1.1.4.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.4.2  [-v1_xreal_0(2^[])]   (2)  
+1.1.4.3  [-r1_xxreal_0(k6_xcmplx_0(2^[], 1^[]), k6_numbers)]   (5)  
+------------------------------------------------------
+End of proof for t55_xreal_1

@@ -1,0 +1,56 @@
+
+t40_comptrig is a Theorem
+Start of proof for t40_comptrig
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k1_comptrig(k7_complex1)=k10_real_1(k32_sin_cos, np__2)]
+ (2)  [- (k6_numbers=k1_xboole_0)]
+ (3)  [- (k7_complex1=k1_xcmplx_0)]
+ (4)  [r1_xxreal_0(np__1, np__0)]
+ (5)  [- (k3_xcmplx_0(np__1, k1_xcmplx_0)=k1_xcmplx_0)]
+ (6)  [-v1_xboole_0(np__0)]
+ (7)  [-v2_xxreal_0(np__1)]
+ (8)  [-m2_subset_1(np__1, k1_numbers, k5_numbers)]
+ (9)  [-m1_subset_1(np__1, k5_numbers)]
+ (10)  [-m1_subset_1(np__1, k1_numbers)]
+ (11)  [v1_xboole_0(_G8475), - (_G8475=k1_xboole_0)]
+ (12)  [m1_subset_1(_G8104, k1_numbers), -r1_xxreal_0(_G8104, k6_numbers), - (k1_comptrig(k3_xcmplx_0(_G8104, k7_complex1))=k10_real_1(k32_sin_cos, np__2))]
+ (13)  [- (k3_xcmplx_0(_G5956, _G6091)=k3_xcmplx_0(_G6023, _G6160)), _G5956=_G6023, _G6091=_G6160]
+ (14)  [_G6553=_G6602, - (k1_comptrig(_G6553)=k1_comptrig(_G6602))]
+ (15)  [- (k10_real_1(_G6822, _G6957)=k10_real_1(_G6889, _G7026)), _G6822=_G6889, _G6957=_G7026]
+ (16)  [- (_G2300=_G2300)]
+ (17)  [_G2399=_G2444, - (_G2444=_G2399)]
+ (18)  [- (_G2632=_G2745), _G2632=_G2688, _G2688=_G2745]
+ (19)  [-v2_xxreal_0(_G3131), _G3082=_G3131, v2_xxreal_0(_G3082)]
+ (20)  [-m2_subset_1(_G3445, _G3618, _G3795), m2_subset_1(_G3360, _G3531, _G3706), _G3360=_G3445, _G3531=_G3618, _G3706=_G3795]
+ (21)  [-m1_subset_1(_G4455, _G4592), m1_subset_1(_G4388, _G4523), _G4388=_G4455, _G4523=_G4592]
+ (22)  [-v1_xboole_0(_G5622), _G5573=_G5622, v1_xboole_0(_G5573)]
+ (23)  [-r1_xxreal_0(_G5052, _G5189), r1_xxreal_0(_G4985, _G5120), _G4985=_G5052, _G5120=_G5189]
+
+Connection Proof:
+-----------------
+1  [k1_comptrig(k7_complex1)=k10_real_1(k32_sin_cos, np__2)]   (1)  
+1.1  [- (k1_comptrig(k7_complex1)=k10_real_1(k32_sin_cos, np__2)), k1_comptrig(k7_complex1)=k1_comptrig(k3_xcmplx_0(np__1, k7_complex1)), k1_comptrig(k3_xcmplx_0(np__1, k7_complex1))=k10_real_1(k32_sin_cos, np__2)]   (18)  substitution:[[_G2632, _G2745, _G2688], [k1_comptrig(k7_complex1), k10_real_1(k32_sin_cos, np__2), k1_comptrig(k3_xcmplx_0(np__1, k7_complex1))]]
+1.1.1  [- (k1_comptrig(k7_complex1)=k1_comptrig(k3_xcmplx_0(np__1, k7_complex1))), k7_complex1=k3_xcmplx_0(np__1, k7_complex1)]   (14)  substitution:[[_G6553, _G6602], [k7_complex1, k3_xcmplx_0(np__1, k7_complex1)]]
+1.1.1.1  [- (k7_complex1=k3_xcmplx_0(np__1, k7_complex1)), k3_xcmplx_0(np__1, k7_complex1)=k7_complex1]   (17)  substitution:[[_G2444, _G2399], [k7_complex1, k3_xcmplx_0(np__1, k7_complex1)]]
+1.1.1.1.1  [- (k3_xcmplx_0(np__1, k7_complex1)=k7_complex1), k3_xcmplx_0(np__1, k7_complex1)=k3_xcmplx_0(np__1, k1_xcmplx_0), k3_xcmplx_0(np__1, k1_xcmplx_0)=k7_complex1]   (18)  substitution:[[_G2632, _G2745, _G2688], [k3_xcmplx_0(np__1, k7_complex1), k7_complex1, k3_xcmplx_0(np__1, k1_xcmplx_0)]]
+1.1.1.1.1.1  [- (k3_xcmplx_0(np__1, k7_complex1)=k3_xcmplx_0(np__1, k1_xcmplx_0)), np__1=np__1, k7_complex1=k1_xcmplx_0]   (13)  substitution:[[_G5956, _G6091, _G6023, _G6160], [np__1, k7_complex1, np__1, k1_xcmplx_0]]
+1.1.1.1.1.1.1  [- (np__1=np__1)]   (16)  substitution:[[_G2300], [np__1]]
+1.1.1.1.1.1.2  [- (k7_complex1=k1_xcmplx_0)]   (3)  
+1.1.1.1.1.2  [- (k3_xcmplx_0(np__1, k1_xcmplx_0)=k7_complex1), k3_xcmplx_0(np__1, k1_xcmplx_0)=k1_xcmplx_0, k1_xcmplx_0=k7_complex1]   (18)  substitution:[[_G2632, _G2745, _G2688], [k3_xcmplx_0(np__1, k1_xcmplx_0), k7_complex1, k1_xcmplx_0]]
+1.1.1.1.1.2.1  [- (k3_xcmplx_0(np__1, k1_xcmplx_0)=k1_xcmplx_0)]   (5)  
+1.1.1.1.1.2.2  [- (k1_xcmplx_0=k7_complex1), k7_complex1=k1_xcmplx_0]   (17)  substitution:[[_G2444, _G2399], [k1_xcmplx_0, k7_complex1]]
+1.1.1.1.1.2.2.1  [- (k7_complex1=k1_xcmplx_0)]   (3)  
+1.1.2  [- (k1_comptrig(k3_xcmplx_0(np__1, k7_complex1))=k10_real_1(k32_sin_cos, np__2)), m1_subset_1(np__1, k1_numbers), -r1_xxreal_0(np__1, k6_numbers)]   (12)  substitution:[[_G8104], [np__1]]
+1.1.2.1  [-m1_subset_1(np__1, k1_numbers)]   (10)  
+1.1.2.2  [r1_xxreal_0(np__1, k6_numbers), -r1_xxreal_0(np__1, np__0), np__1=np__1, k6_numbers=np__0]   (23)  substitution:[[_G4985, _G5120, _G5052, _G5189], [np__1, k6_numbers, np__1, np__0]]
+1.1.2.2.1  [r1_xxreal_0(np__1, np__0)]   (4)  
+1.1.2.2.2  [- (np__1=np__1)]   (16)  substitution:[[_G2300], [np__1]]
+1.1.2.2.3  [- (k6_numbers=np__0), np__0=k6_numbers]   (17)  substitution:[[_G2444, _G2399], [k6_numbers, np__0]]
+1.1.2.2.3.1  [- (np__0=k6_numbers), np__0=k1_xboole_0, k1_xboole_0=k6_numbers]   (18)  substitution:[[_G2632, _G2745, _G2688], [np__0, k6_numbers, k1_xboole_0]]
+1.1.2.2.3.1.1  [- (np__0=k1_xboole_0), v1_xboole_0(np__0)]   (11)  substitution:[[_G8475], [np__0]]
+1.1.2.2.3.1.1.1  [-v1_xboole_0(np__0)]   (6)  
+1.1.2.2.3.1.2  [- (k1_xboole_0=k6_numbers), k6_numbers=k1_xboole_0]   (17)  substitution:[[_G2444, _G2399], [k1_xboole_0, k6_numbers]]
+1.1.2.2.3.1.2.1  [- (k6_numbers=k1_xboole_0)]   (2)  
+------------------------------------------------------
+End of proof for t40_comptrig

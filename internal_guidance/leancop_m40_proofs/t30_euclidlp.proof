@@ -1,0 +1,50 @@
+
+t30_euclidlp is a Theorem
+Start of proof for t30_euclidlp
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], k5_numbers)]
+ (2)  [-m1_subset_1(2^[], k1_zfmisc_1(k1_euclid(1^[])))]
+ (3)  [-m2_finseq_2(3^[], k1_numbers, k1_euclid(1^[]))]
+ (4)  [-m2_finseq_2(4^[], k1_numbers, k1_euclid(1^[]))]
+ (5)  [-v1_euclid_4(2^[], 1^[])]
+ (6)  [-r2_hidden(3^[], 2^[])]
+ (7)  [-r2_hidden(4^[], 2^[])]
+ (8)  [3^[]=4^[]]
+ (9)  [2^[]=k2_euclid_4(1^[], 3^[], 4^[])]
+ (10)  [v6_membered(_G9168), m1_subset_1(_G9249, _G9168), -v7_ordinal1(_G9249)]
+ (11)  [-v6_membered(k4_ordinal1)]
+ (12)  [- (k5_numbers=k4_ordinal1)]
+ (13)  [v7_ordinal1(_G9473), m1_subset_1(_G9615, k1_zfmisc_1(k1_euclid(_G9473))), m2_finseq_2(_G9806, k1_numbers, k1_euclid(_G9473)), m2_finseq_2(_G10017, k1_numbers, k1_euclid(_G9473)), - (_G9615=k2_euclid_4(_G9473, _G9806, _G10017)), - (_G9806=_G10017), v1_euclid_4(_G9615, _G9473), r2_hidden(_G9806, _G9615), r2_hidden(_G10017, _G9615)]
+ (14)  [_G7530=_G7579, - (k1_zfmisc_1(_G7530)=k1_zfmisc_1(_G7579))]
+ (15)  [_G7808=_G7857, - (k1_euclid(_G7808)=k1_euclid(_G7857))]
+ (16)  [- (k2_euclid_4(_G8077, _G8248, _G8423)=k2_euclid_4(_G8162, _G8335, _G8512)), _G8077=_G8162, _G8248=_G8335, _G8423=_G8512]
+ (17)  [- (_G3256=_G3256)]
+ (18)  [_G3355=_G3400, - (_G3400=_G3355)]
+ (19)  [- (_G3588=_G3701), _G3588=_G3644, _G3644=_G3701]
+ (20)  [-v6_membered(_G4087), _G4038=_G4087, v6_membered(_G4038)]
+ (21)  [-v7_ordinal1(_G4365), _G4316=_G4365, v7_ordinal1(_G4316)]
+ (22)  [-m1_subset_1(_G4661, _G4798), m1_subset_1(_G4594, _G4729), _G4594=_G4661, _G4729=_G4798]
+ (23)  [-m2_finseq_2(_G5276, _G5449, _G5626), m2_finseq_2(_G5191, _G5362, _G5537), _G5191=_G5276, _G5362=_G5449, _G5537=_G5626]
+ (24)  [-v1_euclid_4(_G6286, _G6423), v1_euclid_4(_G6219, _G6354), _G6219=_G6286, _G6354=_G6423]
+ (25)  [-r2_hidden(_G6874, _G7011), r2_hidden(_G6807, _G6942), _G6807=_G6874, _G6942=_G7011]
+
+Connection Proof:
+-----------------
+1  [3^[]=4^[]]   (8)  
+1.1  [- (3^[]=4^[]), v7_ordinal1(1^[]), m1_subset_1(2^[], k1_zfmisc_1(k1_euclid(1^[]))), m2_finseq_2(3^[], k1_numbers, k1_euclid(1^[])), m2_finseq_2(4^[], k1_numbers, k1_euclid(1^[])), - (2^[]=k2_euclid_4(1^[], 3^[], 4^[])), v1_euclid_4(2^[], 1^[]), r2_hidden(3^[], 2^[]), r2_hidden(4^[], 2^[])]   (13)  substitution:[[_G9806, _G10017, _G9473, _G9615], [3^[], 4^[], 1^[], 2^[]]]
+1.1.1  [-v7_ordinal1(1^[]), v6_membered(k4_ordinal1), m1_subset_1(1^[], k4_ordinal1)]   (10)  substitution:[[_G9249, _G9168], [1^[], k4_ordinal1]]
+1.1.1.1  [-v6_membered(k4_ordinal1)]   (11)  
+1.1.1.2  [-m1_subset_1(1^[], k4_ordinal1), m1_subset_1(1^[], k5_numbers), 1^[]=1^[], k5_numbers=k4_ordinal1]   (22)  substitution:[[_G4661, _G4798, _G4594, _G4729], [1^[], k4_ordinal1, 1^[], k5_numbers]]
+1.1.1.2.1  [-m1_subset_1(1^[], k5_numbers)]   (1)  
+1.1.1.2.2  [- (1^[]=1^[])]   (17)  substitution:[[_G3256], [1^[]]]
+1.1.1.2.3  [- (k5_numbers=k4_ordinal1)]   (12)  
+1.1.2  [-m1_subset_1(2^[], k1_zfmisc_1(k1_euclid(1^[])))]   (2)  
+1.1.3  [-m2_finseq_2(3^[], k1_numbers, k1_euclid(1^[]))]   (3)  
+1.1.4  [-m2_finseq_2(4^[], k1_numbers, k1_euclid(1^[]))]   (4)  
+1.1.5  [2^[]=k2_euclid_4(1^[], 3^[], 4^[])]   (9)  
+1.1.6  [-v1_euclid_4(2^[], 1^[])]   (5)  
+1.1.7  [-r2_hidden(3^[], 2^[])]   (6)  
+1.1.8  [-r2_hidden(4^[], 2^[])]   (7)  
+------------------------------------------------------
+End of proof for t30_euclidlp

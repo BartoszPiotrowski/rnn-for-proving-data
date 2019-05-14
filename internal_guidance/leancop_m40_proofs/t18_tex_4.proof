@@ -1,0 +1,41 @@
+
+t18_tex_4 is a Theorem
+Start of proof for t18_tex_4
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(1^[])]
+ (2)  [-l1_pre_topc(1^[])]
+ (3)  [-m1_subset_1(2^[], u1_struct_0(1^[]))]
+ (4)  [r1_tarski(k6_domain_1(u1_struct_0(1^[]), 2^[]), k2_tex_4(1^[], 2^[]))]
+ (5)  [l1_pre_topc(_G7793), m1_subset_1(_G7888, u1_struct_0(_G7793)), - (k2_tex_4(_G7793, _G7888)=k5_setfam_1(u1_struct_0(_G7793), k1_tex_4(_G7793, _G7888)))]
+ (6)  [l1_pre_topc(_G8255), -v2_struct_0(_G8255), m1_subset_1(_G8426, u1_struct_0(_G8255)), -r1_tarski(k6_domain_1(u1_struct_0(_G8255), _G8426), k5_setfam_1(u1_struct_0(_G8255), k1_tex_4(_G8255, _G8426)))]
+ (7)  [- (k5_setfam_1(_G5031, _G5166)=k5_setfam_1(_G5098, _G5235)), _G5031=_G5098, _G5166=_G5235]
+ (8)  [- (k1_tex_4(_G5628, _G5763)=k1_tex_4(_G5695, _G5832)), _G5628=_G5695, _G5763=_G5832]
+ (9)  [- (k6_domain_1(_G6225, _G6360)=k6_domain_1(_G6292, _G6429)), _G6225=_G6292, _G6360=_G6429]
+ (10)  [_G6822=_G6871, - (u1_struct_0(_G6822)=u1_struct_0(_G6871))]
+ (11)  [- (k2_tex_4(_G7091, _G7226)=k2_tex_4(_G7158, _G7295)), _G7091=_G7158, _G7226=_G7295]
+ (12)  [- (_G2424=_G2424)]
+ (13)  [_G2523=_G2568, - (_G2568=_G2523)]
+ (14)  [- (_G2756=_G2869), _G2756=_G2812, _G2812=_G2869]
+ (15)  [-v2_struct_0(_G3255), _G3206=_G3255, v2_struct_0(_G3206)]
+ (16)  [-l1_pre_topc(_G3533), _G3484=_G3533, l1_pre_topc(_G3484)]
+ (17)  [-m1_subset_1(_G3829, _G3966), m1_subset_1(_G3762, _G3897), _G3762=_G3829, _G3897=_G3966]
+ (18)  [-r1_tarski(_G4417, _G4554), r1_tarski(_G4350, _G4485), _G4350=_G4417, _G4485=_G4554]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k6_domain_1(u1_struct_0(1^[]), 2^[]), k2_tex_4(1^[], 2^[]))]   (4)  
+1.1  [-r1_tarski(k6_domain_1(u1_struct_0(1^[]), 2^[]), k2_tex_4(1^[], 2^[])), r1_tarski(k6_domain_1(u1_struct_0(1^[]), 2^[]), k5_setfam_1(u1_struct_0(1^[]), k1_tex_4(1^[], 2^[]))), k6_domain_1(u1_struct_0(1^[]), 2^[])=k6_domain_1(u1_struct_0(1^[]), 2^[]), k5_setfam_1(u1_struct_0(1^[]), k1_tex_4(1^[], 2^[]))=k2_tex_4(1^[], 2^[])]   (18)  substitution:[[_G4417, _G4554, _G4350, _G4485], [k6_domain_1(u1_struct_0(1^[]), 2^[]), k2_tex_4(1^[], 2^[]), k6_domain_1(u1_struct_0(1^[]), 2^[]), k5_setfam_1(u1_struct_0(1^[]), k1_tex_4(1^[], 2^[]))]]
+1.1.1  [-r1_tarski(k6_domain_1(u1_struct_0(1^[]), 2^[]), k5_setfam_1(u1_struct_0(1^[]), k1_tex_4(1^[], 2^[]))), l1_pre_topc(1^[]), -v2_struct_0(1^[]), m1_subset_1(2^[], u1_struct_0(1^[]))]   (6)  substitution:[[_G8255, _G8426], [1^[], 2^[]]]
+1.1.1.1  [-l1_pre_topc(1^[])]   (2)  
+1.1.1.2  [v2_struct_0(1^[])]   (1)  
+1.1.1.3  [-m1_subset_1(2^[], u1_struct_0(1^[]))]   (3)  
+1.1.2  [- (k6_domain_1(u1_struct_0(1^[]), 2^[])=k6_domain_1(u1_struct_0(1^[]), 2^[])), u1_struct_0(1^[])=u1_struct_0(1^[]), 2^[]=2^[]]   (9)  substitution:[[_G6225, _G6360, _G6292, _G6429], [u1_struct_0(1^[]), 2^[], u1_struct_0(1^[]), 2^[]]]
+1.1.2.1  [- (u1_struct_0(1^[])=u1_struct_0(1^[]))]   (12)  substitution:[[_G2424], [u1_struct_0(1^[])]]
+1.1.2.2  [- (2^[]=2^[])]   (12)  substitution:[[_G2424], [2^[]]]
+1.1.3  [- (k5_setfam_1(u1_struct_0(1^[]), k1_tex_4(1^[], 2^[]))=k2_tex_4(1^[], 2^[])), k2_tex_4(1^[], 2^[])=k5_setfam_1(u1_struct_0(1^[]), k1_tex_4(1^[], 2^[]))]   (13)  substitution:[[_G2568, _G2523], [k5_setfam_1(u1_struct_0(1^[]), k1_tex_4(1^[], 2^[])), k2_tex_4(1^[], 2^[])]]
+1.1.3.1  [- (k2_tex_4(1^[], 2^[])=k5_setfam_1(u1_struct_0(1^[]), k1_tex_4(1^[], 2^[]))), l1_pre_topc(1^[]), m1_subset_1(2^[], u1_struct_0(1^[]))]   (5)  substitution:[[_G7793, _G7888], [1^[], 2^[]]]
+1.1.3.1.1  [-l1_pre_topc(1^[])]   (2)  
+1.1.3.1.2  [-m1_subset_1(2^[], u1_struct_0(1^[]))]   (3)  
+------------------------------------------------------
+End of proof for t18_tex_4

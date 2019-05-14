@@ -1,0 +1,35 @@
+
+t182_member_1 is a Theorem
+Start of proof for t182_member_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_membered(1^[])]
+ (2)  [-v1_xcmplx_0(2^[])]
+ (3)  [k19_member_1(1^[], 2^[])=k5_member_1(k21_member_1(1^[], 2^[]))]
+ (4)  [-v1_membered(k19_member_1(_G4848, _G4899)), v1_membered(_G4848), v1_xcmplx_0(_G4899)]
+ (5)  [v1_membered(_G5144), - (k5_member_1(k5_member_1(_G5144))=_G5144)]
+ (6)  [v1_membered(_G5324), v1_xcmplx_0(_G5413), - (k21_member_1(_G5324, _G5413)=k5_member_1(k19_member_1(_G5324, _G5413)))]
+ (7)  [- (k19_member_1(_G3322, _G3457)=k19_member_1(_G3389, _G3526)), _G3322=_G3389, _G3457=_G3526]
+ (8)  [_G3919=_G3968, - (k5_member_1(_G3919)=k5_member_1(_G3968))]
+ (9)  [- (k21_member_1(_G4188, _G4323)=k21_member_1(_G4255, _G4392)), _G4188=_G4255, _G4323=_G4392]
+ (10)  [- (_G1951=_G1951)]
+ (11)  [_G2050=_G2095, - (_G2095=_G2050)]
+ (12)  [- (_G2283=_G2396), _G2283=_G2339, _G2339=_G2396]
+ (13)  [-v1_membered(_G2782), _G2733=_G2782, v1_membered(_G2733)]
+ (14)  [-v1_xcmplx_0(_G3051), _G3002=_G3051, v1_xcmplx_0(_G3002)]
+
+Connection Proof:
+-----------------
+1  [k19_member_1(1^[], 2^[])=k5_member_1(k21_member_1(1^[], 2^[]))]   (3)  
+1.1  [- (k19_member_1(1^[], 2^[])=k5_member_1(k21_member_1(1^[], 2^[]))), k5_member_1(k21_member_1(1^[], 2^[]))=k19_member_1(1^[], 2^[])]   (11)  substitution:[[_G2095, _G2050], [k19_member_1(1^[], 2^[]), k5_member_1(k21_member_1(1^[], 2^[]))]]
+1.1.1  [- (k5_member_1(k21_member_1(1^[], 2^[]))=k19_member_1(1^[], 2^[])), k5_member_1(k21_member_1(1^[], 2^[]))=k5_member_1(k5_member_1(k19_member_1(1^[], 2^[]))), k5_member_1(k5_member_1(k19_member_1(1^[], 2^[])))=k19_member_1(1^[], 2^[])]   (12)  substitution:[[_G2283, _G2396, _G2339], [k5_member_1(k21_member_1(1^[], 2^[])), k19_member_1(1^[], 2^[]), k5_member_1(k5_member_1(k19_member_1(1^[], 2^[])))]]
+1.1.1.1  [- (k5_member_1(k21_member_1(1^[], 2^[]))=k5_member_1(k5_member_1(k19_member_1(1^[], 2^[])))), k21_member_1(1^[], 2^[])=k5_member_1(k19_member_1(1^[], 2^[]))]   (8)  substitution:[[_G3919, _G3968], [k21_member_1(1^[], 2^[]), k5_member_1(k19_member_1(1^[], 2^[]))]]
+1.1.1.1.1  [- (k21_member_1(1^[], 2^[])=k5_member_1(k19_member_1(1^[], 2^[]))), v1_membered(1^[]), v1_xcmplx_0(2^[])]   (6)  substitution:[[_G5324, _G5413], [1^[], 2^[]]]
+1.1.1.1.1.1  [-v1_membered(1^[])]   (1)  
+1.1.1.1.1.2  [-v1_xcmplx_0(2^[])]   (2)  
+1.1.1.2  [- (k5_member_1(k5_member_1(k19_member_1(1^[], 2^[])))=k19_member_1(1^[], 2^[])), v1_membered(k19_member_1(1^[], 2^[]))]   (5)  substitution:[[_G5144], [k19_member_1(1^[], 2^[])]]
+1.1.1.2.1  [-v1_membered(k19_member_1(1^[], 2^[])), v1_membered(1^[]), v1_xcmplx_0(2^[])]   (4)  substitution:[[_G4848, _G4899], [1^[], 2^[]]]
+1.1.1.2.1.1  [-v1_membered(1^[])]   (1)  
+1.1.1.2.1.2  [-v1_xcmplx_0(2^[])]   (2)  
+------------------------------------------------------
+End of proof for t182_member_1

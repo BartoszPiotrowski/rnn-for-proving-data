@@ -1,0 +1,71 @@
+
+l101_toprealb is a Theorem
+Start of proof for l101_toprealb
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k2_relset_1(k1_numbers, k1_fcont_1(k1_real_1(np__1), np__1))=k1_numbers]
+ (2)  [m1_subset_1(_G8824, k1_numbers), -v1_xcmplx_0(_G8824)]
+ (3)  [m1_subset_1(_G8981, k1_numbers), -v1_xreal_0(_G8981)]
+ (4)  [- (k1_xboole_0=o_0_0_xboole_0)]
+ (5)  [-v1_xboole_0(o_0_0_xboole_0)]
+ (6)  [v1_xreal_0(_G9227), -v1_xcmplx_0(k4_xcmplx_0(_G9227))]
+ (7)  [v1_xreal_0(_G9227), -v1_xreal_0(k4_xcmplx_0(_G9227))]
+ (8)  [v1_xboole_0(k4_xcmplx_0(_G9448)), -v1_xboole_0(_G9448), v1_xcmplx_0(_G9448)]
+ (9)  [-v1_xcmplx_0(k4_xcmplx_0(_G9448)), -v1_xboole_0(_G9448), v1_xcmplx_0(_G9448)]
+ (10)  [m1_subset_1(_G9759, k1_numbers), - (k1_real_1(_G9759)=k4_xcmplx_0(_G9759))]
+ (11)  [- (k6_numbers=k1_xboole_0)]
+ (12)  [v1_xboole_0(np__1)]
+ (13)  [-v2_xxreal_0(np__1)]
+ (14)  [-m2_subset_1(np__1, k1_numbers, k5_numbers)]
+ (15)  [-m1_subset_1(np__1, k5_numbers)]
+ (16)  [-m1_subset_1(np__1, k1_numbers)]
+ (17)  [v1_xreal_0(_G10377), v1_xreal_0(_G10472), - (_G10377=k6_numbers), - (k2_relset_1(k1_numbers, k1_fcont_1(_G10377, _G10472))=k1_numbers)]
+ (18)  [_G6999=_G7048, - (k4_xcmplx_0(_G6999)=k4_xcmplx_0(_G7048))]
+ (19)  [- (k2_relset_1(_G7277, _G7412)=k2_relset_1(_G7344, _G7481)), _G7277=_G7344, _G7412=_G7481]
+ (20)  [_G8462=_G8511, - (k1_real_1(_G8462)=k1_real_1(_G8511))]
+ (21)  [- (k1_fcont_1(_G7874, _G8009)=k1_fcont_1(_G7941, _G8078)), _G7874=_G7941, _G8009=_G8078]
+ (22)  [- (_G3363=_G3363)]
+ (23)  [_G3462=_G3507, - (_G3507=_G3462)]
+ (24)  [- (_G3695=_G3808), _G3695=_G3751, _G3751=_G3808]
+ (25)  [-v1_xcmplx_0(_G4194), _G4145=_G4194, v1_xcmplx_0(_G4145)]
+ (26)  [-v1_xboole_0(_G4472), _G4423=_G4472, v1_xboole_0(_G4423)]
+ (27)  [-v2_xxreal_0(_G4750), _G4701=_G4750, v2_xxreal_0(_G4701)]
+ (28)  [-m2_subset_1(_G5064, _G5237, _G5414), m2_subset_1(_G4979, _G5150, _G5325), _G4979=_G5064, _G5150=_G5237, _G5325=_G5414]
+ (29)  [-v1_xreal_0(_G6644), _G6595=_G6644, v1_xreal_0(_G6595)]
+ (30)  [-m1_subset_1(_G6074, _G6211), m1_subset_1(_G6007, _G6142), _G6007=_G6074, _G6142=_G6211]
+
+Connection Proof:
+-----------------
+1  [k2_relset_1(k1_numbers, k1_fcont_1(k1_real_1(np__1), np__1))=k1_numbers]   (1)  
+1.1  [- (k2_relset_1(k1_numbers, k1_fcont_1(k1_real_1(np__1), np__1))=k1_numbers), v1_xreal_0(k1_real_1(np__1)), v1_xreal_0(np__1), - (k1_real_1(np__1)=k6_numbers)]   (17)  substitution:[[_G10377, _G10472], [k1_real_1(np__1), np__1]]
+1.1.1  [-v1_xreal_0(k1_real_1(np__1)), k4_xcmplx_0(np__1)=k1_real_1(np__1), v1_xreal_0(k4_xcmplx_0(np__1))]   (29)  substitution:[[_G6644, _G6595], [k1_real_1(np__1), k4_xcmplx_0(np__1)]]
+1.1.1.1  [- (k4_xcmplx_0(np__1)=k1_real_1(np__1)), k1_real_1(np__1)=k4_xcmplx_0(np__1)]   (23)  substitution:[[_G3507, _G3462], [k4_xcmplx_0(np__1), k1_real_1(np__1)]]
+1.1.1.1.1  [- (k1_real_1(np__1)=k4_xcmplx_0(np__1)), m1_subset_1(np__1, k1_numbers)]   (10)  substitution:[[_G9759], [np__1]]
+1.1.1.1.1.1  [-m1_subset_1(np__1, k1_numbers)]   (16)  
+1.1.1.2  [-v1_xreal_0(k4_xcmplx_0(np__1)), v1_xreal_0(np__1)]   (7)  substitution:[[_G9227], [np__1]]
+1.1.1.2.1  [-v1_xreal_0(np__1), m1_subset_1(np__1, k1_numbers)]   (3)  substitution:[[_G8981], [np__1]]
+1.1.1.2.1.1  [-m1_subset_1(np__1, k1_numbers)]   (16)  
+1.1.2  [-v1_xreal_0(np__1), m1_subset_1(np__1, k1_numbers)]   (3)  substitution:[[_G8981], [np__1]]
+1.1.2.1  [-m1_subset_1(np__1, k1_numbers)]   (16)  
+1.1.3  [k1_real_1(np__1)=k6_numbers, -v1_xboole_0(k6_numbers), v1_xboole_0(k1_real_1(np__1))]   (26)  substitution:[[_G4423, _G4472], [k1_real_1(np__1), k6_numbers]]
+1.1.3.1  [v1_xboole_0(k6_numbers), -v1_xboole_0(k4_xcmplx_0(np__1)), k6_numbers=k4_xcmplx_0(np__1)]   (26)  substitution:[[_G4423, _G4472], [k6_numbers, k4_xcmplx_0(np__1)]]
+1.1.3.1.1  [v1_xboole_0(k4_xcmplx_0(np__1)), -v1_xboole_0(np__1), v1_xcmplx_0(np__1)]   (8)  substitution:[[_G9448], [np__1]]
+1.1.3.1.1.1  [v1_xboole_0(np__1)]   (12)  
+1.1.3.1.1.2  [-v1_xcmplx_0(np__1), m1_subset_1(np__1, k1_numbers)]   (2)  substitution:[[_G8824], [np__1]]
+1.1.3.1.1.2.1  [-m1_subset_1(np__1, k1_numbers)]   (16)  
+1.1.3.1.2  [- (k6_numbers=k4_xcmplx_0(np__1)), k6_numbers=k1_real_1(np__1), k1_real_1(np__1)=k4_xcmplx_0(np__1)]   (24)  substitution:[[_G3695, _G3808, _G3751], [k6_numbers, k4_xcmplx_0(np__1), k1_real_1(np__1)]]
+1.1.3.1.2.1  [- (k6_numbers=k1_real_1(np__1)), k1_real_1(np__1)=k6_numbers]   (23)  substitution:[[_G3507, _G3462], [k6_numbers, k1_real_1(np__1)]]
+1.1.3.1.2.1.1  [- (k1_real_1(np__1)=k6_numbers)]   (reduction:1.1)  
+1.1.3.1.2.2  [- (k1_real_1(np__1)=k4_xcmplx_0(np__1)), m1_subset_1(np__1, k1_numbers)]   (10)  substitution:[[_G9759], [np__1]]
+1.1.3.1.2.2.1  [-m1_subset_1(np__1, k1_numbers)]   (16)  
+1.1.3.2  [-v1_xboole_0(k1_real_1(np__1)), k1_xboole_0=k1_real_1(np__1), v1_xboole_0(k1_xboole_0)]   (26)  substitution:[[_G4472, _G4423], [k1_real_1(np__1), k1_xboole_0]]
+1.1.3.2.1  [- (k1_xboole_0=k1_real_1(np__1)), k1_real_1(np__1)=k1_xboole_0]   (23)  substitution:[[_G3507, _G3462], [k1_xboole_0, k1_real_1(np__1)]]
+1.1.3.2.1.1  [- (k1_real_1(np__1)=k1_xboole_0), k1_real_1(np__1)=k6_numbers, k6_numbers=k1_xboole_0]   (24)  substitution:[[_G3695, _G3808, _G3751], [k1_real_1(np__1), k1_xboole_0, k6_numbers]]
+1.1.3.2.1.1.1  [- (k1_real_1(np__1)=k6_numbers)]   (reduction:1.1)  
+1.1.3.2.1.1.2  [- (k6_numbers=k1_xboole_0)]   (11)  
+1.1.3.2.2  [-v1_xboole_0(k1_xboole_0), o_0_0_xboole_0=k1_xboole_0, v1_xboole_0(o_0_0_xboole_0)]   (26)  substitution:[[_G4472, _G4423], [k1_xboole_0, o_0_0_xboole_0]]
+1.1.3.2.2.1  [- (o_0_0_xboole_0=k1_xboole_0), k1_xboole_0=o_0_0_xboole_0]   (23)  substitution:[[_G3507, _G3462], [o_0_0_xboole_0, k1_xboole_0]]
+1.1.3.2.2.1.1  [- (k1_xboole_0=o_0_0_xboole_0)]   (4)  
+1.1.3.2.2.2  [-v1_xboole_0(o_0_0_xboole_0)]   (5)  
+------------------------------------------------------
+End of proof for l101_toprealb

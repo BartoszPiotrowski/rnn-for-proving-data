@@ -1,0 +1,28 @@
+
+t47_setfam_1 is a Theorem
+Start of proof for t47_setfam_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(3^[], k1_zfmisc_1(k1_zfmisc_1(2^[])))]
+ (2)  [-m1_subset_1(4^[], k1_zfmisc_1(k1_zfmisc_1(2^[])))]
+ (3)  [-v3_setfam_1(3^[], 2^[])]
+ (4)  [-r1_tarski(4^[], 3^[])]
+ (5)  [v3_setfam_1(4^[], 2^[])]
+ (6)  [m1_subset_1(_G922, k1_zfmisc_1(k1_zfmisc_1(_G865))), v3_setfam_1(_G922, _G865), r2_hidden(_G865, _G922)]
+ (7)  [m1_subset_1(_G922, k1_zfmisc_1(k1_zfmisc_1(_G865))), -v3_setfam_1(_G922, _G865), -r2_hidden(_G865, _G922)]
+ (8)  [-r1_tarski(_G1242, _G1298), -r2_hidden(1^[_G1298, _G1242], _G1242)]
+ (9)  [-r1_tarski(_G1242, _G1298), r2_hidden(1^[_G1298, _G1242], _G1298)]
+ (10)  [r1_tarski(_G1242, _G1298), r2_hidden(_G1412, _G1242), -r2_hidden(_G1412, _G1298)]
+
+Connection Proof:
+-----------------
+1  [m1_subset_1(3^[], k1_zfmisc_1(k1_zfmisc_1(2^[]))), v3_setfam_1(3^[], 2^[]), r2_hidden(2^[], 3^[])]   (6)  substitution:[[_G922, _G865], [3^[], 2^[]]]
+1.1  [-m1_subset_1(3^[], k1_zfmisc_1(k1_zfmisc_1(2^[])))]   (1)  
+1.2  [-v3_setfam_1(3^[], 2^[])]   (3)  
+1.3  [-r2_hidden(2^[], 3^[]), r1_tarski(4^[], 3^[]), r2_hidden(2^[], 4^[])]   (10)  substitution:[[_G1412, _G1298, _G1242], [2^[], 3^[], 4^[]]]
+1.3.1  [-r1_tarski(4^[], 3^[])]   (4)  
+1.3.2  [-r2_hidden(2^[], 4^[]), m1_subset_1(4^[], k1_zfmisc_1(k1_zfmisc_1(2^[]))), -v3_setfam_1(4^[], 2^[])]   (7)  substitution:[[_G865, _G922], [2^[], 4^[]]]
+1.3.2.1  [-m1_subset_1(4^[], k1_zfmisc_1(k1_zfmisc_1(2^[])))]   (2)  
+1.3.2.2  [v3_setfam_1(4^[], 2^[])]   (5)  
+------------------------------------------------------
+End of proof for t47_setfam_1

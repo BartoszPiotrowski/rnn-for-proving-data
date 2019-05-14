@@ -1,0 +1,43 @@
+
+t18_complex1 is a Theorem
+Start of proof for t18_complex1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k9_complex1(k7_complex1, k7_complex1)=k10_complex1(k6_complex1)]
+ (2)  [- (k6_complex1=np__1)]
+ (3)  [-m1_subset_1(k6_complex1, k2_numbers)]
+ (4)  [-m1_subset_1(k7_complex1, k2_numbers)]
+ (5)  [m1_subset_1(_G5211, k2_numbers), - (k10_complex1(_G5211)=k4_xcmplx_0(_G5211))]
+ (6)  [- (k7_complex1=k1_xcmplx_0)]
+ (7)  [- (k3_xcmplx_0(k1_xcmplx_0, k1_xcmplx_0)=k4_xcmplx_0(np__1))]
+ (8)  [- (k9_complex1(_G5483, _G5540)=k3_xcmplx_0(_G5483, _G5540)), m1_subset_1(_G5483, k2_numbers), m1_subset_1(_G5540, k2_numbers)]
+ (9)  [-m1_subset_1(_G2664, _G2801), m1_subset_1(_G2597, _G2732), _G2597=_G2664, _G2732=_G2801]
+ (10)  [- (_G1824=_G1824)]
+ (11)  [_G1923=_G1968, - (_G1968=_G1923)]
+ (12)  [- (_G2156=_G2269), _G2156=_G2212, _G2212=_G2269]
+ (13)  [- (k3_xcmplx_0(_G3215, _G3350)=k3_xcmplx_0(_G3282, _G3419)), _G3215=_G3282, _G3350=_G3419]
+ (14)  [_G3812=_G3861, - (k4_xcmplx_0(_G3812)=k4_xcmplx_0(_G3861))]
+ (15)  [_G4678=_G4727, - (k10_complex1(_G4678)=k10_complex1(_G4727))]
+ (16)  [- (k9_complex1(_G4090, _G4225)=k9_complex1(_G4157, _G4294)), _G4090=_G4157, _G4225=_G4294]
+
+Connection Proof:
+-----------------
+1  [k9_complex1(k7_complex1, k7_complex1)=k10_complex1(k6_complex1)]   (1)  
+1.1  [- (k9_complex1(k7_complex1, k7_complex1)=k10_complex1(k6_complex1)), k9_complex1(k7_complex1, k7_complex1)=k4_xcmplx_0(np__1), k4_xcmplx_0(np__1)=k10_complex1(k6_complex1)]   (12)  substitution:[[_G2156, _G2269, _G2212], [k9_complex1(k7_complex1, k7_complex1), k10_complex1(k6_complex1), k4_xcmplx_0(np__1)]]
+1.1.1  [- (k9_complex1(k7_complex1, k7_complex1)=k4_xcmplx_0(np__1)), k9_complex1(k7_complex1, k7_complex1)=k3_xcmplx_0(k7_complex1, k7_complex1), k3_xcmplx_0(k7_complex1, k7_complex1)=k4_xcmplx_0(np__1)]   (12)  substitution:[[_G2156, _G2269, _G2212], [k9_complex1(k7_complex1, k7_complex1), k4_xcmplx_0(np__1), k3_xcmplx_0(k7_complex1, k7_complex1)]]
+1.1.1.1  [- (k9_complex1(k7_complex1, k7_complex1)=k3_xcmplx_0(k7_complex1, k7_complex1)), m1_subset_1(k7_complex1, k2_numbers), m1_subset_1(k7_complex1, k2_numbers)]   (8)  substitution:[[_G5483, _G5540], [k7_complex1, k7_complex1]]
+1.1.1.1.1  [-m1_subset_1(k7_complex1, k2_numbers)]   (4)  
+1.1.1.1.2  [-m1_subset_1(k7_complex1, k2_numbers)]   (4)  
+1.1.1.2  [- (k3_xcmplx_0(k7_complex1, k7_complex1)=k4_xcmplx_0(np__1)), k3_xcmplx_0(k7_complex1, k7_complex1)=k3_xcmplx_0(k1_xcmplx_0, k1_xcmplx_0), k3_xcmplx_0(k1_xcmplx_0, k1_xcmplx_0)=k4_xcmplx_0(np__1)]   (12)  substitution:[[_G2156, _G2269, _G2212], [k3_xcmplx_0(k7_complex1, k7_complex1), k4_xcmplx_0(np__1), k3_xcmplx_0(k1_xcmplx_0, k1_xcmplx_0)]]
+1.1.1.2.1  [- (k3_xcmplx_0(k7_complex1, k7_complex1)=k3_xcmplx_0(k1_xcmplx_0, k1_xcmplx_0)), k7_complex1=k1_xcmplx_0, k7_complex1=k1_xcmplx_0]   (13)  substitution:[[_G3215, _G3350, _G3282, _G3419], [k7_complex1, k7_complex1, k1_xcmplx_0, k1_xcmplx_0]]
+1.1.1.2.1.1  [- (k7_complex1=k1_xcmplx_0)]   (6)  
+1.1.1.2.1.2  [- (k7_complex1=k1_xcmplx_0)]   (6)  
+1.1.1.2.2  [- (k3_xcmplx_0(k1_xcmplx_0, k1_xcmplx_0)=k4_xcmplx_0(np__1))]   (7)  
+1.1.2  [- (k4_xcmplx_0(np__1)=k10_complex1(k6_complex1)), k10_complex1(k6_complex1)=k4_xcmplx_0(np__1)]   (11)  substitution:[[_G1968, _G1923], [k4_xcmplx_0(np__1), k10_complex1(k6_complex1)]]
+1.1.2.1  [- (k10_complex1(k6_complex1)=k4_xcmplx_0(np__1)), k10_complex1(k6_complex1)=k4_xcmplx_0(k6_complex1), k4_xcmplx_0(k6_complex1)=k4_xcmplx_0(np__1)]   (12)  substitution:[[_G2156, _G2269, _G2212], [k10_complex1(k6_complex1), k4_xcmplx_0(np__1), k4_xcmplx_0(k6_complex1)]]
+1.1.2.1.1  [- (k10_complex1(k6_complex1)=k4_xcmplx_0(k6_complex1)), m1_subset_1(k6_complex1, k2_numbers)]   (5)  substitution:[[_G5211], [k6_complex1]]
+1.1.2.1.1.1  [-m1_subset_1(k6_complex1, k2_numbers)]   (3)  
+1.1.2.1.2  [- (k4_xcmplx_0(k6_complex1)=k4_xcmplx_0(np__1)), k6_complex1=np__1]   (14)  substitution:[[_G3812, _G3861], [k6_complex1, np__1]]
+1.1.2.1.2.1  [- (k6_complex1=np__1)]   (2)  
+------------------------------------------------------
+End of proof for t18_complex1

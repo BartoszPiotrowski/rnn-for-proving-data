@@ -1,0 +1,32 @@
+
+l66_scmyciel is a Theorem
+Start of proof for l66_scmyciel
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v4_scmyciel(1^[])]
+ (2)  [-r1_tarski(2^[], k3_tarski(1^[]))]
+ (3)  [k3_tarski(k7_scmyciel(1^[], 2^[]))=2^[]]
+ (4)  [- (k3_xboole_0(_G5087, _G5132)=k3_xboole_0(_G5132, _G5087))]
+ (5)  [r1_tarski(_G5329, _G5377), - (k3_xboole_0(_G5329, _G5377)=_G5329)]
+ (6)  [v4_scmyciel(_G5607), - (k3_tarski(k7_scmyciel(_G5607, _G5693))=k3_xboole_0(k3_tarski(_G5607), _G5693))]
+ (7)  [- (k3_xboole_0(_G3561, _G3696)=k3_xboole_0(_G3628, _G3765)), _G3561=_G3628, _G3696=_G3765]
+ (8)  [_G4158=_G4207, - (k3_tarski(_G4158)=k3_tarski(_G4207))]
+ (9)  [- (k7_scmyciel(_G4427, _G4562)=k7_scmyciel(_G4494, _G4631)), _G4427=_G4494, _G4562=_G4631]
+ (10)  [- (_G1871=_G1871)]
+ (11)  [_G1970=_G2015, - (_G2015=_G1970)]
+ (12)  [- (_G2203=_G2316), _G2203=_G2259, _G2259=_G2316]
+ (13)  [-v4_scmyciel(_G2702), _G2653=_G2702, v4_scmyciel(_G2653)]
+ (14)  [-r1_tarski(_G2989, _G3126), r1_tarski(_G2922, _G3057), _G2922=_G2989, _G3057=_G3126]
+
+Connection Proof:
+-----------------
+1  [k3_tarski(k7_scmyciel(1^[], 2^[]))=2^[]]   (3)  
+1.1  [- (k3_tarski(k7_scmyciel(1^[], 2^[]))=2^[]), k3_tarski(k7_scmyciel(1^[], 2^[]))=k3_xboole_0(k3_tarski(1^[]), 2^[]), k3_xboole_0(k3_tarski(1^[]), 2^[])=2^[]]   (12)  substitution:[[_G2203, _G2316, _G2259], [k3_tarski(k7_scmyciel(1^[], 2^[])), 2^[], k3_xboole_0(k3_tarski(1^[]), 2^[])]]
+1.1.1  [- (k3_tarski(k7_scmyciel(1^[], 2^[]))=k3_xboole_0(k3_tarski(1^[]), 2^[])), v4_scmyciel(1^[])]   (6)  substitution:[[_G5607, _G5693], [1^[], 2^[]]]
+1.1.1.1  [-v4_scmyciel(1^[])]   (1)  
+1.1.2  [- (k3_xboole_0(k3_tarski(1^[]), 2^[])=2^[]), k3_xboole_0(k3_tarski(1^[]), 2^[])=k3_xboole_0(2^[], k3_tarski(1^[])), k3_xboole_0(2^[], k3_tarski(1^[]))=2^[]]   (12)  substitution:[[_G2203, _G2316, _G2259], [k3_xboole_0(k3_tarski(1^[]), 2^[]), 2^[], k3_xboole_0(2^[], k3_tarski(1^[]))]]
+1.1.2.1  [- (k3_xboole_0(k3_tarski(1^[]), 2^[])=k3_xboole_0(2^[], k3_tarski(1^[])))]   (4)  substitution:[[_G5087, _G5132], [k3_tarski(1^[]), 2^[]]]
+1.1.2.2  [- (k3_xboole_0(2^[], k3_tarski(1^[]))=2^[]), r1_tarski(2^[], k3_tarski(1^[]))]   (5)  substitution:[[_G5329, _G5377], [2^[], k3_tarski(1^[])]]
+1.1.2.2.1  [-r1_tarski(2^[], k3_tarski(1^[]))]   (2)  
+------------------------------------------------------
+End of proof for l66_scmyciel

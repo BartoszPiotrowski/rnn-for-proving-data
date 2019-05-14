@@ -1,0 +1,39 @@
+
+t33_complex2 is a Theorem
+Start of proof for t33_complex2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], k2_numbers)]
+ (2)  [- (k1_complex2(1^[], 1^[])=k6_numbers)]
+ (3)  [1^[]=k6_numbers]
+ (4)  [m1_subset_1(_G6744, k2_numbers), -v1_xcmplx_0(_G6744)]
+ (5)  [m1_subset_1(_G6901, k2_numbers), - (k1_complex2(_G6901, _G6901)=k7_real_1(k8_real_1(k3_complex1(_G6901), k3_complex1(_G6901)), k8_real_1(k4_complex1(_G6901), k4_complex1(_G6901))))]
+ (6)  [m1_subset_1(_G6901, k2_numbers), - (k1_complex2(_G6901, _G6901)=k7_real_1(k5_square_1(k3_complex1(_G6901)), k5_square_1(k4_complex1(_G6901))))]
+ (7)  [v1_xcmplx_0(_G7539), _G7539=k6_numbers, - (k7_real_1(k5_square_1(k3_complex1(_G7539)), k5_square_1(k4_complex1(_G7539)))=k6_numbers)]
+ (8)  [v1_xcmplx_0(_G7539), - (_G7539=k6_numbers), k7_real_1(k5_square_1(k3_complex1(_G7539)), k5_square_1(k4_complex1(_G7539)))=k6_numbers]
+ (9)  [- (_G2312=_G2312)]
+ (10)  [_G2411=_G2456, - (_G2456=_G2411)]
+ (11)  [- (_G2644=_G2757), _G2644=_G2700, _G2700=_G2757]
+ (12)  [-v1_xcmplx_0(_G3143), _G3094=_G3143, v1_xcmplx_0(_G3094)]
+ (13)  [-m1_subset_1(_G3430, _G3567), m1_subset_1(_G3363, _G3498), _G3363=_G3430, _G3498=_G3567]
+ (14)  [- (k8_real_1(_G4002, _G4137)=k8_real_1(_G4069, _G4206)), _G4002=_G4069, _G4137=_G4206]
+ (15)  [- (k7_real_1(_G4599, _G4734)=k7_real_1(_G4666, _G4803)), _G4599=_G4666, _G4734=_G4803]
+ (16)  [_G5196=_G5245, - (k3_complex1(_G5196)=k3_complex1(_G5245))]
+ (17)  [_G5474=_G5523, - (k5_square_1(_G5474)=k5_square_1(_G5523))]
+ (18)  [_G5752=_G5801, - (k4_complex1(_G5752)=k4_complex1(_G5801))]
+ (19)  [- (k1_complex2(_G6021, _G6156)=k1_complex2(_G6088, _G6225)), _G6021=_G6088, _G6156=_G6225]
+
+Connection Proof:
+-----------------
+1  [1^[]=k6_numbers]   (3)  
+1.1  [- (1^[]=k6_numbers), v1_xcmplx_0(1^[]), k7_real_1(k5_square_1(k3_complex1(1^[])), k5_square_1(k4_complex1(1^[])))=k6_numbers]   (8)  substitution:[[_G7539], [1^[]]]
+1.1.1  [-v1_xcmplx_0(1^[]), m1_subset_1(1^[], k2_numbers)]   (4)  substitution:[[_G6744], [1^[]]]
+1.1.1.1  [-m1_subset_1(1^[], k2_numbers)]   (1)  
+1.1.2  [- (k7_real_1(k5_square_1(k3_complex1(1^[])), k5_square_1(k4_complex1(1^[])))=k6_numbers), k6_numbers=k7_real_1(k5_square_1(k3_complex1(1^[])), k5_square_1(k4_complex1(1^[])))]   (10)  substitution:[[_G2456, _G2411], [k7_real_1(k5_square_1(k3_complex1(1^[])), k5_square_1(k4_complex1(1^[]))), k6_numbers]]
+1.1.2.1  [- (k6_numbers=k7_real_1(k5_square_1(k3_complex1(1^[])), k5_square_1(k4_complex1(1^[])))), k6_numbers=k1_complex2(1^[], 1^[]), k1_complex2(1^[], 1^[])=k7_real_1(k5_square_1(k3_complex1(1^[])), k5_square_1(k4_complex1(1^[])))]   (11)  substitution:[[_G2644, _G2757, _G2700], [k6_numbers, k7_real_1(k5_square_1(k3_complex1(1^[])), k5_square_1(k4_complex1(1^[]))), k1_complex2(1^[], 1^[])]]
+1.1.2.1.1  [- (k6_numbers=k1_complex2(1^[], 1^[])), k1_complex2(1^[], 1^[])=k6_numbers]   (10)  substitution:[[_G2456, _G2411], [k6_numbers, k1_complex2(1^[], 1^[])]]
+1.1.2.1.1.1  [- (k1_complex2(1^[], 1^[])=k6_numbers)]   (2)  
+1.1.2.1.2  [- (k1_complex2(1^[], 1^[])=k7_real_1(k5_square_1(k3_complex1(1^[])), k5_square_1(k4_complex1(1^[])))), m1_subset_1(1^[], k2_numbers)]   (6)  substitution:[[_G6901], [1^[]]]
+1.1.2.1.2.1  [-m1_subset_1(1^[], k2_numbers)]   (1)  
+------------------------------------------------------
+End of proof for t33_complex2

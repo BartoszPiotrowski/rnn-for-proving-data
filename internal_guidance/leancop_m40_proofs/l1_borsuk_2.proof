@@ -1,0 +1,58 @@
+
+l1_borsuk_2 is a Theorem
+Start of proof for l1_borsuk_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-3^[], r1_xxreal_0(k6_numbers, 1^[]), r1_xxreal_0(1^[], np__1)]
+ (2)  [-3^[], -r2_hidden(1^[], u1_struct_0(k5_topmetr))]
+ (3)  [-2^[], r2_hidden(1^[], u1_struct_0(k5_topmetr))]
+ (4)  [-2^[], -r1_xxreal_0(1^[], np__1)]
+ (5)  [-2^[], -r1_xxreal_0(k6_numbers, 1^[])]
+ (6)  [-v1_xreal_0(1^[])]
+ (7)  [2^[], 3^[]]
+ (8)  [- (k5_topmetr=k17_borsuk_1)]
+ (9)  [v1_xreal_0(_G4018), -r1_xxreal_0(k6_numbers, _G4018), r2_hidden(_G4018, u1_struct_0(k17_borsuk_1))]
+ (10)  [v1_xreal_0(_G4018), -r1_xxreal_0(_G4018, np__1), r2_hidden(_G4018, u1_struct_0(k17_borsuk_1))]
+ (11)  [v1_xreal_0(_G4018), -r2_hidden(_G4018, u1_struct_0(k17_borsuk_1)), r1_xxreal_0(k6_numbers, _G4018), r1_xxreal_0(_G4018, np__1)]
+ (12)  [_G3671=_G3720, - (u1_struct_0(_G3671)=u1_struct_0(_G3720))]
+ (13)  [- (_G1372=_G1372)]
+ (14)  [_G1471=_G1516, - (_G1516=_G1471)]
+ (15)  [- (_G1704=_G1817), _G1704=_G1760, _G1760=_G1817]
+ (16)  [-v1_xreal_0(_G2203), _G2154=_G2203, v1_xreal_0(_G2154)]
+ (17)  [-r1_xxreal_0(_G2499, _G2636), r1_xxreal_0(_G2432, _G2567), _G2432=_G2499, _G2567=_G2636]
+ (18)  [-r2_hidden(_G3087, _G3224), r2_hidden(_G3020, _G3155), _G3020=_G3087, _G3155=_G3224]
+
+Connection Proof:
+-----------------
+1  [2^[], 3^[]]   (7)  
+1.1  [-2^[], r2_hidden(1^[], u1_struct_0(k5_topmetr))]   (3)  
+1.1.1  [-r2_hidden(1^[], u1_struct_0(k5_topmetr)), r2_hidden(1^[], u1_struct_0(k17_borsuk_1)), 1^[]=1^[], u1_struct_0(k17_borsuk_1)=u1_struct_0(k5_topmetr)]   (18)  substitution:[[_G3087, _G3224, _G3020, _G3155], [1^[], u1_struct_0(k5_topmetr), 1^[], u1_struct_0(k17_borsuk_1)]]
+1.1.1.1  [-r2_hidden(1^[], u1_struct_0(k17_borsuk_1)), v1_xreal_0(1^[]), r1_xxreal_0(k6_numbers, 1^[]), r1_xxreal_0(1^[], np__1)]   (11)  substitution:[[_G4018], [1^[]]]
+1.1.1.1.1  [-v1_xreal_0(1^[])]   (6)  
+1.1.1.1.2  [-r1_xxreal_0(k6_numbers, 1^[]), -2^[]]   (5)  
+1.1.1.1.2.1  [2^[]]   (reduction:1)  
+1.1.1.1.3  [-r1_xxreal_0(1^[], np__1), -2^[]]   (4)  
+1.1.1.1.3.1  [2^[]]   (reduction:1)  
+1.1.1.2  [- (1^[]=1^[])]   (13)  substitution:[[_G1372], [1^[]]]
+1.1.1.3  [- (u1_struct_0(k17_borsuk_1)=u1_struct_0(k5_topmetr)), k17_borsuk_1=k5_topmetr]   (12)  substitution:[[_G3671, _G3720], [k17_borsuk_1, k5_topmetr]]
+1.1.1.3.1  [- (k17_borsuk_1=k5_topmetr), k5_topmetr=k17_borsuk_1]   (14)  substitution:[[_G1516, _G1471], [k17_borsuk_1, k5_topmetr]]
+1.1.1.3.1.1  [- (k5_topmetr=k17_borsuk_1)]   (8)  
+1.2  [-3^[], r1_xxreal_0(k6_numbers, 1^[]), r1_xxreal_0(1^[], np__1)]   (1)  
+1.2.1  [-r1_xxreal_0(k6_numbers, 1^[]), v1_xreal_0(1^[]), r2_hidden(1^[], u1_struct_0(k17_borsuk_1))]   (9)  substitution:[[_G4018], [1^[]]]
+1.2.1.1  [-v1_xreal_0(1^[])]   (6)  
+1.2.1.2  [-r2_hidden(1^[], u1_struct_0(k17_borsuk_1)), r2_hidden(1^[], u1_struct_0(k5_topmetr)), 1^[]=1^[], u1_struct_0(k5_topmetr)=u1_struct_0(k17_borsuk_1)]   (18)  substitution:[[_G3087, _G3224, _G3020, _G3155], [1^[], u1_struct_0(k17_borsuk_1), 1^[], u1_struct_0(k5_topmetr)]]
+1.2.1.2.1  [-r2_hidden(1^[], u1_struct_0(k5_topmetr)), -3^[]]   (2)  
+1.2.1.2.1.1  [3^[]]   (reduction:1)  
+1.2.1.2.2  [- (1^[]=1^[])]   (13)  substitution:[[_G1372], [1^[]]]
+1.2.1.2.3  [- (u1_struct_0(k5_topmetr)=u1_struct_0(k17_borsuk_1)), k5_topmetr=k17_borsuk_1]   (12)  substitution:[[_G3671, _G3720], [k5_topmetr, k17_borsuk_1]]
+1.2.1.2.3.1  [- (k5_topmetr=k17_borsuk_1)]   (8)  
+1.2.2  [-r1_xxreal_0(1^[], np__1), v1_xreal_0(1^[]), r2_hidden(1^[], u1_struct_0(k17_borsuk_1))]   (10)  substitution:[[_G4018], [1^[]]]
+1.2.2.1  [-v1_xreal_0(1^[])]   (6)  
+1.2.2.2  [-r2_hidden(1^[], u1_struct_0(k17_borsuk_1)), r2_hidden(1^[], u1_struct_0(k5_topmetr)), 1^[]=1^[], u1_struct_0(k5_topmetr)=u1_struct_0(k17_borsuk_1)]   (18)  substitution:[[_G3087, _G3224, _G3020, _G3155], [1^[], u1_struct_0(k17_borsuk_1), 1^[], u1_struct_0(k5_topmetr)]]
+1.2.2.2.1  [-r2_hidden(1^[], u1_struct_0(k5_topmetr)), -3^[]]   (2)  
+1.2.2.2.1.1  [3^[]]   (reduction:1)  
+1.2.2.2.2  [- (1^[]=1^[])]   (13)  substitution:[[_G1372], [1^[]]]
+1.2.2.2.3  [- (u1_struct_0(k5_topmetr)=u1_struct_0(k17_borsuk_1)), k5_topmetr=k17_borsuk_1]   (12)  substitution:[[_G3671, _G3720], [k5_topmetr, k17_borsuk_1]]
+1.2.2.2.3.1  [- (k5_topmetr=k17_borsuk_1)]   (8)  
+------------------------------------------------------
+End of proof for l1_borsuk_2

@@ -1,0 +1,33 @@
+
+t11_ordinal3 is a Theorem
+Start of proof for t11_ordinal3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v3_ordinal1(1^[])]
+ (2)  [-r1_tarski(2^[], 1^[])]
+ (3)  [v3_ordinal1(k1_setfam_1(2^[]))]
+ (4)  [- (k2_ordinal2(_G4173)=k1_setfam_1(k2_ordinal1(_G4173)))]
+ (5)  [-v3_ordinal1(k2_ordinal2(_G4320))]
+ (6)  [v3_ordinal1(_G4400), r1_tarski(_G4484, _G4400), - (k2_ordinal1(_G4484)=_G4484)]
+ (7)  [_G3285=_G3334, - (k2_ordinal2(_G3285)=k2_ordinal2(_G3334))]
+ (8)  [_G3563=_G3612, - (k2_ordinal1(_G3563)=k2_ordinal1(_G3612))]
+ (9)  [_G3832=_G3881, - (k1_setfam_1(_G3832)=k1_setfam_1(_G3881))]
+ (10)  [- (_G1595=_G1595)]
+ (11)  [_G1694=_G1739, - (_G1739=_G1694)]
+ (12)  [- (_G1927=_G2040), _G1927=_G1983, _G1983=_G2040]
+ (13)  [-v3_ordinal1(_G3014), _G2965=_G3014, v3_ordinal1(_G2965)]
+ (14)  [-r1_tarski(_G2444, _G2581), r1_tarski(_G2377, _G2512), _G2377=_G2444, _G2512=_G2581]
+
+Connection Proof:
+-----------------
+1  [v3_ordinal1(k1_setfam_1(2^[]))]   (3)  
+1.1  [-v3_ordinal1(k1_setfam_1(2^[])), k1_setfam_1(k2_ordinal1(2^[]))=k1_setfam_1(2^[]), v3_ordinal1(k1_setfam_1(k2_ordinal1(2^[])))]   (13)  substitution:[[_G3014, _G2965], [k1_setfam_1(2^[]), k1_setfam_1(k2_ordinal1(2^[]))]]
+1.1.1  [- (k1_setfam_1(k2_ordinal1(2^[]))=k1_setfam_1(2^[])), k2_ordinal1(2^[])=2^[]]   (9)  substitution:[[_G3832, _G3881], [k2_ordinal1(2^[]), 2^[]]]
+1.1.1.1  [- (k2_ordinal1(2^[])=2^[]), v3_ordinal1(1^[]), r1_tarski(2^[], 1^[])]   (6)  substitution:[[_G4484, _G4400], [2^[], 1^[]]]
+1.1.1.1.1  [-v3_ordinal1(1^[])]   (1)  
+1.1.1.1.2  [-r1_tarski(2^[], 1^[])]   (2)  
+1.1.2  [-v3_ordinal1(k1_setfam_1(k2_ordinal1(2^[]))), k2_ordinal2(2^[])=k1_setfam_1(k2_ordinal1(2^[])), v3_ordinal1(k2_ordinal2(2^[]))]   (13)  substitution:[[_G3014, _G2965], [k1_setfam_1(k2_ordinal1(2^[])), k2_ordinal2(2^[])]]
+1.1.2.1  [- (k2_ordinal2(2^[])=k1_setfam_1(k2_ordinal1(2^[])))]   (4)  substitution:[[_G4173], [2^[]]]
+1.1.2.2  [-v3_ordinal1(k2_ordinal2(2^[]))]   (5)  substitution:[[_G4320], [2^[]]]
+------------------------------------------------------
+End of proof for t11_ordinal3

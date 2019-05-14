@@ -1,0 +1,68 @@
+
+l2_integra3 is a Theorem
+Start of proof for l2_integra3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m2_subset_1(1^[], k1_numbers, k5_numbers)]
+ (2)  [-r1_xxreal_0(np__1, 1^[])]
+ (3)  [-r1_xxreal_0(1^[], np__2)]
+ (4)  [1^[]=np__1]
+ (5)  [1^[]=np__2]
+ (6)  [m1_subset_1(_G7342, k4_ordinal1), -v7_ordinal1(_G7342)]
+ (7)  [-m1_subset_1(k5_numbers, k1_zfmisc_1(k1_numbers))]
+ (8)  [v1_xboole_0(k1_numbers)]
+ (9)  [v1_xboole_0(k4_ordinal1)]
+ (10)  [-v3_ordinal1(k4_ordinal1)]
+ (11)  [- (k5_numbers=k4_ordinal1)]
+ (12)  [- (k6_numbers=k1_xboole_0)]
+ (13)  [m1_subset_1(_G7902, k1_zfmisc_1(_G7829)), -v1_xboole_0(_G7902), -v1_xboole_0(_G7829), m2_subset_1(_G8181, _G7829, _G7902), -m1_subset_1(_G8181, _G7902)]
+ (14)  [m1_subset_1(_G7902, k1_zfmisc_1(_G7829)), -v1_xboole_0(_G7902), -v1_xboole_0(_G7829), -m2_subset_1(_G8181, _G7829, _G7902), m1_subset_1(_G8181, _G7902)]
+ (15)  [r1_xxreal_0(np__1, np__0)]
+ (16)  [-v1_xboole_0(np__0)]
+ (17)  [v1_xboole_0(_G9024), - (_G9024=k1_xboole_0)]
+ (18)  [v7_ordinal1(_G8560), r1_xxreal_0(_G8560, np__2), - (_G8560=k6_numbers), - (_G8560=np__1), - (_G8560=np__2)]
+ (19)  [_G7043=_G7092, - (k1_zfmisc_1(_G7043)=k1_zfmisc_1(_G7092))]
+ (20)  [- (_G3097=_G3097)]
+ (21)  [_G3196=_G3241, - (_G3241=_G3196)]
+ (22)  [- (_G3429=_G3542), _G3429=_G3485, _G3485=_G3542]
+ (23)  [-v3_ordinal1(_G3928), _G3879=_G3928, v3_ordinal1(_G3879)]
+ (24)  [-m1_subset_1(_G4224, _G4361), m1_subset_1(_G4157, _G4292), _G4157=_G4224, _G4292=_G4361]
+ (25)  [-v7_ordinal1(_G4803), _G4754=_G4803, v7_ordinal1(_G4754)]
+ (26)  [-v1_xboole_0(_G5081), _G5032=_G5081, v1_xboole_0(_G5032)]
+ (27)  [-r1_xxreal_0(_G6396, _G6533), r1_xxreal_0(_G6329, _G6464), _G6329=_G6396, _G6464=_G6533]
+ (28)  [-m2_subset_1(_G5395, _G5568, _G5745), m2_subset_1(_G5310, _G5481, _G5656), _G5310=_G5395, _G5481=_G5568, _G5656=_G5745]
+
+Connection Proof:
+-----------------
+1  [1^[]=np__1]   (4)  
+1.1  [- (1^[]=np__1), v7_ordinal1(1^[]), r1_xxreal_0(1^[], np__2), - (1^[]=k6_numbers), - (1^[]=np__2)]   (18)  substitution:[[_G8560], [1^[]]]
+1.1.1  [-v7_ordinal1(1^[]), m1_subset_1(1^[], k4_ordinal1)]   (6)  substitution:[[_G7342], [1^[]]]
+1.1.1.1  [-m1_subset_1(1^[], k4_ordinal1), m1_subset_1(k4_ordinal1, k1_zfmisc_1(k1_numbers)), -v1_xboole_0(k4_ordinal1), -v1_xboole_0(k1_numbers), m2_subset_1(1^[], k1_numbers, k4_ordinal1)]   (13)  substitution:[[_G8181, _G7902, _G7829], [1^[], k4_ordinal1, k1_numbers]]
+1.1.1.1.1  [-m1_subset_1(k4_ordinal1, k1_zfmisc_1(k1_numbers)), m1_subset_1(k5_numbers, k1_zfmisc_1(k1_numbers)), k5_numbers=k4_ordinal1, k1_zfmisc_1(k1_numbers)=k1_zfmisc_1(k1_numbers)]   (24)  substitution:[[_G4224, _G4361, _G4157, _G4292], [k4_ordinal1, k1_zfmisc_1(k1_numbers), k5_numbers, k1_zfmisc_1(k1_numbers)]]
+1.1.1.1.1.1  [-m1_subset_1(k5_numbers, k1_zfmisc_1(k1_numbers))]   (7)  
+1.1.1.1.1.2  [- (k5_numbers=k4_ordinal1)]   (11)  
+1.1.1.1.1.3  [- (k1_zfmisc_1(k1_numbers)=k1_zfmisc_1(k1_numbers)), k1_numbers=k1_numbers]   (19)  substitution:[[_G7043, _G7092], [k1_numbers, k1_numbers]]
+1.1.1.1.1.3.1  [- (k1_numbers=k1_numbers)]   (20)  substitution:[[_G3097], [k1_numbers]]
+1.1.1.1.2  [v1_xboole_0(k4_ordinal1)]   (9)  
+1.1.1.1.3  [v1_xboole_0(k1_numbers)]   (8)  
+1.1.1.1.4  [-m2_subset_1(1^[], k1_numbers, k4_ordinal1), m2_subset_1(1^[], k1_numbers, k5_numbers), 1^[]=1^[], k1_numbers=k1_numbers, k5_numbers=k4_ordinal1]   (28)  substitution:[[_G5395, _G5568, _G5745, _G5310, _G5481, _G5656], [1^[], k1_numbers, k4_ordinal1, 1^[], k1_numbers, k5_numbers]]
+1.1.1.1.4.1  [-m2_subset_1(1^[], k1_numbers, k5_numbers)]   (1)  
+1.1.1.1.4.2  [- (1^[]=1^[])]   (20)  substitution:[[_G3097], [1^[]]]
+1.1.1.1.4.3  [- (k1_numbers=k1_numbers)]   (20)  substitution:[[_G3097], [k1_numbers]]
+1.1.1.1.4.4  [- (k5_numbers=k4_ordinal1)]   (11)  
+1.1.2  [-r1_xxreal_0(1^[], np__2)]   (3)  
+1.1.3  [1^[]=k6_numbers, -r1_xxreal_0(np__1, k6_numbers), r1_xxreal_0(np__1, 1^[]), np__1=np__1]   (27)  substitution:[[_G6464, _G6533, _G6396, _G6329], [1^[], k6_numbers, np__1, np__1]]
+1.1.3.1  [r1_xxreal_0(np__1, k6_numbers), -r1_xxreal_0(np__1, np__0), np__1=np__1, k6_numbers=np__0]   (27)  substitution:[[_G6329, _G6464, _G6396, _G6533], [np__1, k6_numbers, np__1, np__0]]
+1.1.3.1.1  [r1_xxreal_0(np__1, np__0)]   (15)  
+1.1.3.1.2  [- (np__1=np__1)]   (20)  substitution:[[_G3097], [np__1]]
+1.1.3.1.3  [- (k6_numbers=np__0), np__0=k6_numbers]   (21)  substitution:[[_G3241, _G3196], [k6_numbers, np__0]]
+1.1.3.1.3.1  [- (np__0=k6_numbers), np__0=k1_xboole_0, k1_xboole_0=k6_numbers]   (22)  substitution:[[_G3429, _G3542, _G3485], [np__0, k6_numbers, k1_xboole_0]]
+1.1.3.1.3.1.1  [- (np__0=k1_xboole_0), v1_xboole_0(np__0)]   (17)  substitution:[[_G9024], [np__0]]
+1.1.3.1.3.1.1.1  [-v1_xboole_0(np__0)]   (16)  
+1.1.3.1.3.1.2  [- (k1_xboole_0=k6_numbers), k6_numbers=k1_xboole_0]   (21)  substitution:[[_G3241, _G3196], [k1_xboole_0, k6_numbers]]
+1.1.3.1.3.1.2.1  [- (k6_numbers=k1_xboole_0)]   (12)  
+1.1.3.2  [-r1_xxreal_0(np__1, 1^[])]   (2)  
+1.1.3.3  [- (np__1=np__1)]   (20)  substitution:[[_G3097], [np__1]]
+1.1.4  [1^[]=np__2]   (5)  
+------------------------------------------------------
+End of proof for l2_integra3

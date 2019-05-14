@@ -1,0 +1,43 @@
+
+t58_xxreal_3 is a Theorem
+Start of proof for t58_xxreal_3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xxreal_0(1^[])]
+ (2)  [-v1_xxreal_0(2^[])]
+ (3)  [-v1_xxreal_0(3^[])]
+ (4)  [1^[]=k1_xxreal_0, 2^[]=k1_xxreal_0]
+ (5)  [1^[]=k2_xxreal_0, 2^[]=k2_xxreal_0]
+ (6)  [2^[]=k1_xxreal_0, 3^[]=k2_xxreal_0]
+ (7)  [-r1_xxreal_0(k3_xxreal_3(1^[], 2^[]), 3^[])]
+ (8)  [- (2^[]=k2_xxreal_0)]
+ (9)  [2^[]=k2_xxreal_0, 3^[]=k1_xxreal_0]
+ (10)  [v1_xxreal_0(_G4475), - (_G4475=k2_xxreal_0), - (k3_xxreal_3(k2_xxreal_0, _G4475)=k2_xxreal_0)]
+ (11)  [v1_xxreal_0(_G4475), - (_G4475=k2_xxreal_0), - (k3_xxreal_3(_G4475, k2_xxreal_0)=k1_xxreal_0)]
+ (12)  [v1_xxreal_0(_G4891), r1_xxreal_0(k1_xxreal_0, _G4891), - (_G4891=k1_xxreal_0)]
+ (13)  [- (k3_xxreal_3(_G3857, _G3992)=k3_xxreal_3(_G3924, _G4061)), _G3857=_G3924, _G3992=_G4061]
+ (14)  [- (_G2176=_G2176)]
+ (15)  [_G2275=_G2320, - (_G2320=_G2275)]
+ (16)  [- (_G2508=_G2621), _G2508=_G2564, _G2564=_G2621]
+ (17)  [-v1_xxreal_0(_G3007), _G2958=_G3007, v1_xxreal_0(_G2958)]
+ (18)  [-r1_xxreal_0(_G3294, _G3431), r1_xxreal_0(_G3227, _G3362), _G3227=_G3294, _G3362=_G3431]
+
+Connection Proof:
+-----------------
+1  [2^[]=k2_xxreal_0, 3^[]=k1_xxreal_0]   (9)  
+1.1  [- (2^[]=k2_xxreal_0)]   (8)  
+1.2  [- (3^[]=k1_xxreal_0), v1_xxreal_0(3^[]), r1_xxreal_0(k1_xxreal_0, 3^[])]   (12)  substitution:[[_G4891], [3^[]]]
+1.2.1  [-v1_xxreal_0(3^[])]   (3)  
+1.2.2  [-r1_xxreal_0(k1_xxreal_0, 3^[]), r1_xxreal_0(k3_xxreal_3(1^[], 2^[]), 3^[]), k3_xxreal_3(1^[], 2^[])=k1_xxreal_0, 3^[]=3^[]]   (18)  substitution:[[_G3294, _G3431, _G3227, _G3362], [k1_xxreal_0, 3^[], k3_xxreal_3(1^[], 2^[]), 3^[]]]
+1.2.2.1  [-r1_xxreal_0(k3_xxreal_3(1^[], 2^[]), 3^[])]   (7)  
+1.2.2.2  [- (k3_xxreal_3(1^[], 2^[])=k1_xxreal_0), k3_xxreal_3(1^[], 2^[])=k3_xxreal_3(1^[], k2_xxreal_0), k3_xxreal_3(1^[], k2_xxreal_0)=k1_xxreal_0]   (16)  substitution:[[_G2508, _G2621, _G2564], [k3_xxreal_3(1^[], 2^[]), k1_xxreal_0, k3_xxreal_3(1^[], k2_xxreal_0)]]
+1.2.2.2.1  [- (k3_xxreal_3(1^[], 2^[])=k3_xxreal_3(1^[], k2_xxreal_0)), 1^[]=1^[], 2^[]=k2_xxreal_0]   (13)  substitution:[[_G3857, _G3992, _G3924, _G4061], [1^[], 2^[], 1^[], k2_xxreal_0]]
+1.2.2.2.1.1  [- (1^[]=1^[])]   (14)  substitution:[[_G2176], [1^[]]]
+1.2.2.2.1.2  [- (2^[]=k2_xxreal_0)]   (8)  
+1.2.2.2.2  [- (k3_xxreal_3(1^[], k2_xxreal_0)=k1_xxreal_0), v1_xxreal_0(1^[]), - (1^[]=k2_xxreal_0)]   (11)  substitution:[[_G4475], [1^[]]]
+1.2.2.2.2.1  [-v1_xxreal_0(1^[])]   (1)  
+1.2.2.2.2.2  [1^[]=k2_xxreal_0, 2^[]=k2_xxreal_0]   (5)  
+1.2.2.2.2.2.1  [- (2^[]=k2_xxreal_0)]   (8)  
+1.2.2.3  [- (3^[]=3^[])]   (14)  substitution:[[_G2176], [3^[]]]
+------------------------------------------------------
+End of proof for t58_xxreal_3

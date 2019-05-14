@@ -1,0 +1,37 @@
+
+t17_scmyciel is a Theorem
+Start of proof for t17_scmyciel
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_scmyciel(5^[])]
+ (2)  [k1_scmyciel(5^[])=k1_xboole_0]
+ (3)  [v1_xboole_0(_G5630), r2_hidden(_G5708, _G5630)]
+ (4)  [-v1_xboole_0(_G5630), -r2_hidden(1^[_G5630], _G5630)]
+ (5)  [- (k1_xboole_0=o_0_0_xboole_0)]
+ (6)  [v1_scmyciel(_G5915), -v1_xboole_0(k3_tarski(_G5915))]
+ (7)  [- (k6_numbers=k1_xboole_0)]
+ (8)  [r2_hidden(_G6207, k1_scmyciel(_G6119)), 2^[_G6207, _G6119]=3^[_G6207, _G6119]]
+ (9)  [r2_hidden(_G6207, k1_scmyciel(_G6119)), -r2_hidden(2^[_G6207, _G6119], k3_tarski(_G6119))]
+ (10)  [r2_hidden(_G6207, k1_scmyciel(_G6119)), -r2_hidden(3^[_G6207, _G6119], k3_tarski(_G6119))]
+ (11)  [r2_hidden(_G6207, k1_scmyciel(_G6119)), - (_G6207=k2_tarski(2^[_G6207, _G6119], 3^[_G6207, _G6119]))]
+ (12)  [- (_G6972=k1_xboole_0), -r2_hidden(4^[_G6972], _G6972)]
+ (13)  [_G4423=_G4472, - (k3_tarski(_G4423)=k3_tarski(_G4472))]
+ (14)  [_G5289=_G5338, - (k1_scmyciel(_G5289)=k1_scmyciel(_G5338))]
+ (15)  [- (k2_tarski(_G4701, _G4836)=k2_tarski(_G4768, _G4905)), _G4701=_G4768, _G4836=_G4905]
+ (16)  [- (_G2434=_G2434)]
+ (17)  [_G2533=_G2578, - (_G2578=_G2533)]
+ (18)  [- (_G2766=_G2879), _G2766=_G2822, _G2822=_G2879]
+ (19)  [-v1_xboole_0(_G3265), _G3216=_G3265, v1_xboole_0(_G3216)]
+ (20)  [-v1_scmyciel(_G4131), _G4082=_G4131, v1_scmyciel(_G4082)]
+ (21)  [-r2_hidden(_G3561, _G3698), r2_hidden(_G3494, _G3629), _G3494=_G3561, _G3629=_G3698]
+
+Connection Proof:
+-----------------
+1  [v1_xboole_0(k3_tarski(5^[])), r2_hidden(2^[4^[k1_scmyciel(5^[])], 5^[]], k3_tarski(5^[]))]   (3)  substitution:[[_G5630, _G5708], [k3_tarski(5^[]), 2^[4^[k1_scmyciel(5^[])], 5^[]]]]
+1.1  [-v1_xboole_0(k3_tarski(5^[])), v1_scmyciel(5^[])]   (6)  substitution:[[_G5915], [5^[]]]
+1.1.1  [-v1_scmyciel(5^[])]   (1)  
+1.2  [-r2_hidden(2^[4^[k1_scmyciel(5^[])], 5^[]], k3_tarski(5^[])), r2_hidden(4^[k1_scmyciel(5^[])], k1_scmyciel(5^[]))]   (9)  substitution:[[_G6207, _G6119], [4^[k1_scmyciel(5^[])], 5^[]]]
+1.2.1  [-r2_hidden(4^[k1_scmyciel(5^[])], k1_scmyciel(5^[])), - (k1_scmyciel(5^[])=k1_xboole_0)]   (12)  substitution:[[_G6972], [k1_scmyciel(5^[])]]
+1.2.1.1  [k1_scmyciel(5^[])=k1_xboole_0]   (2)  
+------------------------------------------------------
+End of proof for t17_scmyciel

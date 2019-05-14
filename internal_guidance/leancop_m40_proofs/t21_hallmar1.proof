@@ -1,0 +1,27 @@
+
+t21_hallmar1 is a Theorem
+Start of proof for t21_hallmar1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_finset_1(1^[])]
+ (2)  [-m2_finseq_1(2^[], k1_zfmisc_1(1^[]))]
+ (3)  [-m1_subset_1(3^[], k5_numbers)]
+ (4)  [-r2_hidden(3^[], k4_finseq_1(2^[]))]
+ (5)  [m2_hallmar1(k2_hallmar1(1^[], 2^[], 3^[], 4^[]), 1^[], 2^[])]
+ (6)  [v1_finset_1(_G1026), m2_finseq_1(_G1135, k1_zfmisc_1(_G1026)), m1_subset_1(_G1279, k5_numbers), m1_hallmar1(_G1402, _G1026, _G1135, _G1279), -m2_hallmar1(_G1402, _G1026, _G1135)]
+ (7)  [v1_finset_1(_G1813), m2_finseq_1(_G1928, k1_zfmisc_1(_G1813)), m1_subset_1(_G2078, k5_numbers), r2_hidden(_G2078, k4_finseq_1(_G1928)), -m1_hallmar1(k2_hallmar1(_G1813, _G1928, _G2078, _G2207), _G1813, _G1928, _G2078)]
+
+Connection Proof:
+-----------------
+1  [m2_hallmar1(k2_hallmar1(1^[], 2^[], 3^[], 4^[]), 1^[], 2^[])]   (5)  
+1.1  [-m2_hallmar1(k2_hallmar1(1^[], 2^[], 3^[], 4^[]), 1^[], 2^[]), v1_finset_1(1^[]), m2_finseq_1(2^[], k1_zfmisc_1(1^[])), m1_subset_1(3^[], k5_numbers), m1_hallmar1(k2_hallmar1(1^[], 2^[], 3^[], 4^[]), 1^[], 2^[], 3^[])]   (6)  substitution:[[_G1402, _G1026, _G1135, _G1279], [k2_hallmar1(1^[], 2^[], 3^[], 4^[]), 1^[], 2^[], 3^[]]]
+1.1.1  [-v1_finset_1(1^[])]   (1)  
+1.1.2  [-m2_finseq_1(2^[], k1_zfmisc_1(1^[]))]   (2)  
+1.1.3  [-m1_subset_1(3^[], k5_numbers)]   (3)  
+1.1.4  [-m1_hallmar1(k2_hallmar1(1^[], 2^[], 3^[], 4^[]), 1^[], 2^[], 3^[]), v1_finset_1(1^[]), m2_finseq_1(2^[], k1_zfmisc_1(1^[])), m1_subset_1(3^[], k5_numbers), r2_hidden(3^[], k4_finseq_1(2^[]))]   (7)  substitution:[[_G1813, _G1928, _G2078, _G2207], [1^[], 2^[], 3^[], 4^[]]]
+1.1.4.1  [-v1_finset_1(1^[])]   (1)  
+1.1.4.2  [-m2_finseq_1(2^[], k1_zfmisc_1(1^[]))]   (2)  
+1.1.4.3  [-m1_subset_1(3^[], k5_numbers)]   (3)  
+1.1.4.4  [-r2_hidden(3^[], k4_finseq_1(2^[]))]   (4)  
+------------------------------------------------------
+End of proof for t21_hallmar1

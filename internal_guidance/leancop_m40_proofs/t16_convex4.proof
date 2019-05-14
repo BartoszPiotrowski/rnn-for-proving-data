@@ -1,0 +1,55 @@
+
+t16_convex4 is a Theorem
+Start of proof for t16_convex4
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(1^[])]
+ (2)  [-v13_algstr_0(1^[])]
+ (3)  [-v2_rlvect_1(1^[])]
+ (4)  [-v3_rlvect_1(1^[])]
+ (5)  [-v4_rlvect_1(1^[])]
+ (6)  [-l1_clvect_1(1^[])]
+ (7)  [-m1_convex4(2^[], 1^[])]
+ (8)  [- (k1_convex4(1^[], 2^[])=k1_xboole_0)]
+ (9)  [k4_convex4(1^[], 2^[])=k4_struct_0(1^[])]
+ (10)  [l2_algstr_0(_G8366), -v2_struct_0(_G8366), m1_convex4(_G8533, _G8366), _G8533=k2_convex4(_G8366), - (k1_convex4(_G8366, _G8533)=k1_xboole_0)]
+ (11)  [l2_algstr_0(_G8366), -v2_struct_0(_G8366), m1_convex4(_G8533, _G8366), - (_G8533=k2_convex4(_G8366)), k1_convex4(_G8366, _G8533)=k1_xboole_0]
+ (12)  [l1_clvect_1(_G8893), -l2_algstr_0(_G8893)]
+ (13)  [- (k4_convex4(_G9015, k2_convex4(_G9015))=k4_struct_0(_G9015)), -v2_struct_0(_G9015), v13_algstr_0(_G9015), v2_rlvect_1(_G9015), v3_rlvect_1(_G9015), v4_rlvect_1(_G9015), l1_clvect_1(_G9015)]
+ (14)  [_G6541=_G6590, - (k2_convex4(_G6541)=k2_convex4(_G6590))]
+ (15)  [- (k1_convex4(_G6819, _G6954)=k1_convex4(_G6886, _G7023)), _G6819=_G6886, _G6954=_G7023]
+ (16)  [_G8004=_G8053, - (k4_struct_0(_G8004)=k4_struct_0(_G8053))]
+ (17)  [- (k4_convex4(_G7416, _G7551)=k4_convex4(_G7483, _G7620)), _G7416=_G7483, _G7551=_G7620]
+ (18)  [- (_G3057=_G3057)]
+ (19)  [_G3156=_G3201, - (_G3201=_G3156)]
+ (20)  [- (_G3389=_G3502), _G3389=_G3445, _G3445=_G3502]
+ (21)  [-l2_algstr_0(_G3888), _G3839=_G3888, l2_algstr_0(_G3839)]
+ (22)  [-v2_struct_0(_G4166), _G4117=_G4166, v2_struct_0(_G4117)]
+ (23)  [-v13_algstr_0(_G4444), _G4395=_G4444, v13_algstr_0(_G4395)]
+ (24)  [-v2_rlvect_1(_G4722), _G4673=_G4722, v2_rlvect_1(_G4673)]
+ (25)  [-v3_rlvect_1(_G5000), _G4951=_G5000, v3_rlvect_1(_G4951)]
+ (26)  [-v4_rlvect_1(_G5278), _G5229=_G5278, v4_rlvect_1(_G5229)]
+ (27)  [-l1_clvect_1(_G5556), _G5507=_G5556, l1_clvect_1(_G5507)]
+ (28)  [-m1_convex4(_G5843, _G5980), m1_convex4(_G5776, _G5911), _G5776=_G5843, _G5911=_G5980]
+
+Connection Proof:
+-----------------
+1  [v2_struct_0(1^[])]   (1)  
+1.1  [-v2_struct_0(1^[]), l2_algstr_0(1^[]), m1_convex4(2^[], 1^[]), - (2^[]=k2_convex4(1^[])), k1_convex4(1^[], 2^[])=k1_xboole_0]   (11)  substitution:[[_G8366, _G8533], [1^[], 2^[]]]
+1.1.1  [-l2_algstr_0(1^[]), l1_clvect_1(1^[])]   (12)  substitution:[[_G8893], [1^[]]]
+1.1.1.1  [-l1_clvect_1(1^[])]   (6)  
+1.1.2  [-m1_convex4(2^[], 1^[])]   (7)  
+1.1.3  [2^[]=k2_convex4(1^[]), - (k4_convex4(1^[], 2^[])=k4_convex4(1^[], k2_convex4(1^[]))), 1^[]=1^[]]   (17)  substitution:[[_G7551, _G7620, _G7416, _G7483], [2^[], k2_convex4(1^[]), 1^[], 1^[]]]
+1.1.3.1  [k4_convex4(1^[], 2^[])=k4_convex4(1^[], k2_convex4(1^[])), - (k4_convex4(1^[], 2^[])=k4_struct_0(1^[])), k4_convex4(1^[], k2_convex4(1^[]))=k4_struct_0(1^[])]   (20)  substitution:[[_G3389, _G3445, _G3502], [k4_convex4(1^[], 2^[]), k4_convex4(1^[], k2_convex4(1^[])), k4_struct_0(1^[])]]
+1.1.3.1.1  [k4_convex4(1^[], 2^[])=k4_struct_0(1^[])]   (9)  
+1.1.3.1.2  [- (k4_convex4(1^[], k2_convex4(1^[]))=k4_struct_0(1^[])), -v2_struct_0(1^[]), v13_algstr_0(1^[]), v2_rlvect_1(1^[]), v3_rlvect_1(1^[]), v4_rlvect_1(1^[]), l1_clvect_1(1^[])]   (13)  substitution:[[_G9015], [1^[]]]
+1.1.3.1.2.1  [v2_struct_0(1^[])]   (1)  
+1.1.3.1.2.2  [-v13_algstr_0(1^[])]   (2)  
+1.1.3.1.2.3  [-v2_rlvect_1(1^[])]   (3)  
+1.1.3.1.2.4  [-v3_rlvect_1(1^[])]   (4)  
+1.1.3.1.2.5  [-v4_rlvect_1(1^[])]   (5)  
+1.1.3.1.2.6  [-l1_clvect_1(1^[])]   (6)  
+1.1.3.2  [- (1^[]=1^[])]   (18)  substitution:[[_G3057], [1^[]]]
+1.1.4  [- (k1_convex4(1^[], 2^[])=k1_xboole_0)]   (8)  
+------------------------------------------------------
+End of proof for t16_convex4

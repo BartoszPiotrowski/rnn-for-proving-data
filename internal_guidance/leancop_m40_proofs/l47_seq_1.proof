@@ -1,0 +1,64 @@
+
+l47_seq_1 is a Theorem
+Start of proof for l47_seq_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k2_real_1(k1_real_1(np__1))=k1_real_1(np__1)]
+ (2)  [m1_subset_1(_G8134, k1_numbers), -v1_xcmplx_0(_G8134)]
+ (3)  [-m1_subset_1(c5__xreal_0, k1_numbers)]
+ (4)  [- (c5__xreal_0=k4_xcmplx_0(np__1))]
+ (5)  [- (k1_arytm_0(c3__xreal_0, c5__xreal_0)=k6_numbers)]
+ (6)  [m1_subset_1(_G8536, k1_numbers), - (k1_real_1(_G8536)=k4_xcmplx_0(_G8536))]
+ (7)  [m1_subset_1(_G8751, k1_numbers), - (k2_real_1(_G8751)=k5_xcmplx_0(_G8751))]
+ (8)  [- (k7_xcmplx_0(np__1, k4_xcmplx_0(np__1))=k4_xcmplx_0(np__1))]
+ (9)  [-v2_xxreal_0(np__1)]
+ (10)  [-m2_subset_1(np__1, k1_numbers, k5_numbers)]
+ (11)  [-m1_subset_1(np__1, k5_numbers)]
+ (12)  [-m1_subset_1(np__1, k1_numbers)]
+ (13)  [v1_xcmplx_0(_G9390), - (k7_xcmplx_0(np__1, _G9390)=k5_xcmplx_0(_G9390))]
+ (14)  [- (k1_arytm_0(_G5711, _G5846)=k1_arytm_0(_G5778, _G5915)), _G5711=_G5778, _G5846=_G5915]
+ (15)  [_G6308=_G6357, - (k4_xcmplx_0(_G6308)=k4_xcmplx_0(_G6357))]
+ (16)  [- (k7_xcmplx_0(_G6586, _G6721)=k7_xcmplx_0(_G6653, _G6790)), _G6586=_G6653, _G6721=_G6790]
+ (17)  [_G7183=_G7232, - (k5_xcmplx_0(_G7183)=k5_xcmplx_0(_G7232))]
+ (18)  [_G7461=_G7510, - (k2_real_1(_G7461)=k2_real_1(_G7510))]
+ (19)  [_G7730=_G7779, - (k1_real_1(_G7730)=k1_real_1(_G7779))]
+ (20)  [- (_G2673=_G2673)]
+ (21)  [_G2772=_G2817, - (_G2817=_G2772)]
+ (22)  [- (_G3005=_G3118), _G3005=_G3061, _G3061=_G3118]
+ (23)  [-v2_xxreal_0(_G3504), _G3455=_G3504, v2_xxreal_0(_G3455)]
+ (24)  [-m2_subset_1(_G3818, _G3991, _G4168), m2_subset_1(_G3733, _G3904, _G4079), _G3733=_G3818, _G3904=_G3991, _G4079=_G4168]
+ (25)  [-v1_xcmplx_0(_G5398), _G5349=_G5398, v1_xcmplx_0(_G5349)]
+ (26)  [-m1_subset_1(_G4828, _G4965), m1_subset_1(_G4761, _G4896), _G4761=_G4828, _G4896=_G4965]
+
+Connection Proof:
+-----------------
+1  [k2_real_1(k1_real_1(np__1))=k1_real_1(np__1)]   (1)  
+1.1  [- (k2_real_1(k1_real_1(np__1))=k1_real_1(np__1)), k1_real_1(np__1)=k2_real_1(k1_real_1(np__1))]   (21)  substitution:[[_G2817, _G2772], [k2_real_1(k1_real_1(np__1)), k1_real_1(np__1)]]
+1.1.1  [- (k1_real_1(np__1)=k2_real_1(k1_real_1(np__1))), k1_real_1(np__1)=k5_xcmplx_0(c5__xreal_0), k5_xcmplx_0(c5__xreal_0)=k2_real_1(k1_real_1(np__1))]   (22)  substitution:[[_G3005, _G3118, _G3061], [k1_real_1(np__1), k2_real_1(k1_real_1(np__1)), k5_xcmplx_0(c5__xreal_0)]]
+1.1.1.1  [- (k1_real_1(np__1)=k5_xcmplx_0(c5__xreal_0)), k1_real_1(np__1)=k7_xcmplx_0(np__1, k4_xcmplx_0(np__1)), k7_xcmplx_0(np__1, k4_xcmplx_0(np__1))=k5_xcmplx_0(c5__xreal_0)]   (22)  substitution:[[_G3005, _G3118, _G3061], [k1_real_1(np__1), k5_xcmplx_0(c5__xreal_0), k7_xcmplx_0(np__1, k4_xcmplx_0(np__1))]]
+1.1.1.1.1  [- (k1_real_1(np__1)=k7_xcmplx_0(np__1, k4_xcmplx_0(np__1))), k1_real_1(np__1)=k4_xcmplx_0(np__1), k4_xcmplx_0(np__1)=k7_xcmplx_0(np__1, k4_xcmplx_0(np__1))]   (22)  substitution:[[_G3005, _G3118, _G3061], [k1_real_1(np__1), k7_xcmplx_0(np__1, k4_xcmplx_0(np__1)), k4_xcmplx_0(np__1)]]
+1.1.1.1.1.1  [- (k1_real_1(np__1)=k4_xcmplx_0(np__1)), m1_subset_1(np__1, k1_numbers)]   (6)  substitution:[[_G8536], [np__1]]
+1.1.1.1.1.1.1  [-m1_subset_1(np__1, k1_numbers)]   (12)  
+1.1.1.1.1.2  [- (k4_xcmplx_0(np__1)=k7_xcmplx_0(np__1, k4_xcmplx_0(np__1))), k7_xcmplx_0(np__1, k4_xcmplx_0(np__1))=k4_xcmplx_0(np__1)]   (21)  substitution:[[_G2817, _G2772], [k4_xcmplx_0(np__1), k7_xcmplx_0(np__1, k4_xcmplx_0(np__1))]]
+1.1.1.1.1.2.1  [- (k7_xcmplx_0(np__1, k4_xcmplx_0(np__1))=k4_xcmplx_0(np__1))]   (8)  
+1.1.1.1.2  [- (k7_xcmplx_0(np__1, k4_xcmplx_0(np__1))=k5_xcmplx_0(c5__xreal_0)), k7_xcmplx_0(np__1, k4_xcmplx_0(np__1))=k7_xcmplx_0(np__1, c5__xreal_0), k7_xcmplx_0(np__1, c5__xreal_0)=k5_xcmplx_0(c5__xreal_0)]   (22)  substitution:[[_G3005, _G3118, _G3061], [k7_xcmplx_0(np__1, k4_xcmplx_0(np__1)), k5_xcmplx_0(c5__xreal_0), k7_xcmplx_0(np__1, c5__xreal_0)]]
+1.1.1.1.2.1  [- (k7_xcmplx_0(np__1, k4_xcmplx_0(np__1))=k7_xcmplx_0(np__1, c5__xreal_0)), np__1=np__1, k4_xcmplx_0(np__1)=c5__xreal_0]   (16)  substitution:[[_G6586, _G6721, _G6653, _G6790], [np__1, k4_xcmplx_0(np__1), np__1, c5__xreal_0]]
+1.1.1.1.2.1.1  [- (np__1=np__1)]   (20)  substitution:[[_G2673], [np__1]]
+1.1.1.1.2.1.2  [- (k4_xcmplx_0(np__1)=c5__xreal_0), c5__xreal_0=k4_xcmplx_0(np__1)]   (21)  substitution:[[_G2817, _G2772], [k4_xcmplx_0(np__1), c5__xreal_0]]
+1.1.1.1.2.1.2.1  [- (c5__xreal_0=k4_xcmplx_0(np__1))]   (4)  
+1.1.1.1.2.2  [- (k7_xcmplx_0(np__1, c5__xreal_0)=k5_xcmplx_0(c5__xreal_0)), v1_xcmplx_0(c5__xreal_0)]   (13)  substitution:[[_G9390], [c5__xreal_0]]
+1.1.1.1.2.2.1  [-v1_xcmplx_0(c5__xreal_0), m1_subset_1(c5__xreal_0, k1_numbers)]   (2)  substitution:[[_G8134], [c5__xreal_0]]
+1.1.1.1.2.2.1.1  [-m1_subset_1(c5__xreal_0, k1_numbers)]   (3)  
+1.1.1.2  [- (k5_xcmplx_0(c5__xreal_0)=k2_real_1(k1_real_1(np__1))), k5_xcmplx_0(c5__xreal_0)=k2_real_1(k4_xcmplx_0(np__1)), k2_real_1(k4_xcmplx_0(np__1))=k2_real_1(k1_real_1(np__1))]   (22)  substitution:[[_G3005, _G3118, _G3061], [k5_xcmplx_0(c5__xreal_0), k2_real_1(k1_real_1(np__1)), k2_real_1(k4_xcmplx_0(np__1))]]
+1.1.1.2.1  [- (k5_xcmplx_0(c5__xreal_0)=k2_real_1(k4_xcmplx_0(np__1))), k5_xcmplx_0(c5__xreal_0)=k2_real_1(c5__xreal_0), k2_real_1(c5__xreal_0)=k2_real_1(k4_xcmplx_0(np__1))]   (22)  substitution:[[_G3005, _G3118, _G3061], [k5_xcmplx_0(c5__xreal_0), k2_real_1(k4_xcmplx_0(np__1)), k2_real_1(c5__xreal_0)]]
+1.1.1.2.1.1  [- (k5_xcmplx_0(c5__xreal_0)=k2_real_1(c5__xreal_0)), k2_real_1(c5__xreal_0)=k5_xcmplx_0(c5__xreal_0)]   (21)  substitution:[[_G2817, _G2772], [k5_xcmplx_0(c5__xreal_0), k2_real_1(c5__xreal_0)]]
+1.1.1.2.1.1.1  [- (k2_real_1(c5__xreal_0)=k5_xcmplx_0(c5__xreal_0)), m1_subset_1(c5__xreal_0, k1_numbers)]   (7)  substitution:[[_G8751], [c5__xreal_0]]
+1.1.1.2.1.1.1.1  [-m1_subset_1(c5__xreal_0, k1_numbers)]   (3)  
+1.1.1.2.1.2  [- (k2_real_1(c5__xreal_0)=k2_real_1(k4_xcmplx_0(np__1))), c5__xreal_0=k4_xcmplx_0(np__1)]   (18)  substitution:[[_G7461, _G7510], [c5__xreal_0, k4_xcmplx_0(np__1)]]
+1.1.1.2.1.2.1  [- (c5__xreal_0=k4_xcmplx_0(np__1))]   (4)  
+1.1.1.2.2  [- (k2_real_1(k4_xcmplx_0(np__1))=k2_real_1(k1_real_1(np__1))), k4_xcmplx_0(np__1)=k1_real_1(np__1)]   (18)  substitution:[[_G7461, _G7510], [k4_xcmplx_0(np__1), k1_real_1(np__1)]]
+1.1.1.2.2.1  [- (k4_xcmplx_0(np__1)=k1_real_1(np__1)), k1_real_1(np__1)=k4_xcmplx_0(np__1)]   (21)  substitution:[[_G2817, _G2772], [k4_xcmplx_0(np__1), k1_real_1(np__1)]]
+1.1.1.2.2.1.1  [- (k1_real_1(np__1)=k4_xcmplx_0(np__1)), m1_subset_1(np__1, k1_numbers)]   (6)  substitution:[[_G8536], [np__1]]
+1.1.1.2.2.1.1.1  [-m1_subset_1(np__1, k1_numbers)]   (12)  
+------------------------------------------------------
+End of proof for l47_seq_1

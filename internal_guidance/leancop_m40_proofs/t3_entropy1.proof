@@ -1,0 +1,95 @@
+
+t3_entropy1 is a Theorem
+Start of proof for t3_entropy1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-5^[], - (1^[]=np__1)]
+ (2)  [-5^[], r1_xxreal_0(k9_real_1(1^[], np__1), k6_power(k8_power, 1^[]))]
+ (3)  [-4^[], -r1_xxreal_0(k9_real_1(1^[], np__1), k6_power(k8_power, 1^[]))]
+ (4)  [-4^[], 1^[]=np__1]
+ (5)  [-3^[], 1^[]=np__1]
+ (6)  [-3^[], - (k6_power(k8_power, 1^[])=k9_real_1(1^[], np__1))]
+ (7)  [-2^[], k6_power(k8_power, 1^[])=k9_real_1(1^[], np__1)]
+ (8)  [-2^[], - (1^[]=np__1)]
+ (9)  [-m1_subset_1(1^[], k1_numbers)]
+ (10)  [r1_xxreal_0(1^[], k6_numbers)]
+ (11)  [r1_xxreal_0(k6_power(k8_power, 1^[]), k9_real_1(1^[], np__1)), 2^[], 3^[], 4^[], 5^[]]
+ (12)  [m1_subset_1(_G8525, k1_numbers), -r1_xxreal_0(_G8525, k6_numbers), - (k6_power(k8_power, _G8525)=k1_seq_1(k3_taylor_1, _G8525))]
+ (13)  [m1_subset_1(_G7095, k1_numbers), -r1_xxreal_0(_G7095, k6_numbers), -r1_xxreal_0(k1_seq_1(k3_taylor_1, _G7095), k9_real_1(_G7095, np__1))]
+ (14)  [m1_subset_1(_G7095, k1_numbers), -r1_xxreal_0(_G7095, k6_numbers), _G7095=np__1, - (k1_seq_1(k3_taylor_1, _G7095)=k9_real_1(_G7095, np__1))]
+ (15)  [m1_subset_1(_G7095, k1_numbers), -r1_xxreal_0(_G7095, k6_numbers), k1_seq_1(k3_taylor_1, _G7095)=k9_real_1(_G7095, np__1), - (_G7095=np__1)]
+ (16)  [m1_subset_1(_G7095, k1_numbers), -r1_xxreal_0(_G7095, k6_numbers), - (_G7095=np__1), r1_xxreal_0(k9_real_1(_G7095, np__1), k1_seq_1(k3_taylor_1, _G7095))]
+ (17)  [m1_subset_1(_G7095, k1_numbers), -r1_xxreal_0(_G7095, k6_numbers), -r1_xxreal_0(k9_real_1(_G7095, np__1), k1_seq_1(k3_taylor_1, _G7095)), _G7095=np__1]
+ (18)  [- (k1_seq_1(_G5250, _G5385)=k1_seq_1(_G5317, _G5454)), _G5250=_G5317, _G5385=_G5454]
+ (19)  [- (k9_real_1(_G5847, _G5982)=k9_real_1(_G5914, _G6051)), _G5847=_G5914, _G5982=_G6051]
+ (20)  [- (k6_power(_G6435, _G6570)=k6_power(_G6502, _G6639)), _G6435=_G6502, _G6570=_G6639]
+ (21)  [- (_G3241=_G3241)]
+ (22)  [_G3340=_G3385, - (_G3385=_G3340)]
+ (23)  [- (_G3573=_G3686), _G3573=_G3629, _G3629=_G3686]
+ (24)  [-m1_subset_1(_G4090, _G4227), m1_subset_1(_G4023, _G4158), _G4023=_G4090, _G4158=_G4227]
+ (25)  [-r1_xxreal_0(_G4678, _G4815), r1_xxreal_0(_G4611, _G4746), _G4611=_G4678, _G4746=_G4815]
+
+Connection Proof:
+-----------------
+1  [r1_xxreal_0(k6_power(k8_power, 1^[]), k9_real_1(1^[], np__1)), 2^[], 3^[], 4^[], 5^[]]   (11)  
+1.1  [-r1_xxreal_0(k6_power(k8_power, 1^[]), k9_real_1(1^[], np__1)), r1_xxreal_0(k1_seq_1(k3_taylor_1, 1^[]), k9_real_1(1^[], np__1)), k1_seq_1(k3_taylor_1, 1^[])=k6_power(k8_power, 1^[]), k9_real_1(1^[], np__1)=k9_real_1(1^[], np__1)]   (25)  substitution:[[_G4678, _G4815, _G4611, _G4746], [k6_power(k8_power, 1^[]), k9_real_1(1^[], np__1), k1_seq_1(k3_taylor_1, 1^[]), k9_real_1(1^[], np__1)]]
+1.1.1  [-r1_xxreal_0(k1_seq_1(k3_taylor_1, 1^[]), k9_real_1(1^[], np__1)), m1_subset_1(1^[], k1_numbers), -r1_xxreal_0(1^[], k6_numbers)]   (13)  substitution:[[_G7095], [1^[]]]
+1.1.1.1  [-m1_subset_1(1^[], k1_numbers)]   (9)  
+1.1.1.2  [r1_xxreal_0(1^[], k6_numbers)]   (10)  
+1.1.2  [- (k1_seq_1(k3_taylor_1, 1^[])=k6_power(k8_power, 1^[])), k6_power(k8_power, 1^[])=k1_seq_1(k3_taylor_1, 1^[])]   (22)  substitution:[[_G3385, _G3340], [k1_seq_1(k3_taylor_1, 1^[]), k6_power(k8_power, 1^[])]]
+1.1.2.1  [- (k6_power(k8_power, 1^[])=k1_seq_1(k3_taylor_1, 1^[])), m1_subset_1(1^[], k1_numbers), -r1_xxreal_0(1^[], k6_numbers)]   (12)  substitution:[[_G8525], [1^[]]]
+1.1.2.1.1  [-m1_subset_1(1^[], k1_numbers)]   (9)  
+1.1.2.1.2  [r1_xxreal_0(1^[], k6_numbers)]   (10)  
+1.1.3  [- (k9_real_1(1^[], np__1)=k9_real_1(1^[], np__1)), 1^[]=1^[], np__1=np__1]   (19)  substitution:[[_G5847, _G5982, _G5914, _G6051], [1^[], np__1, 1^[], np__1]]
+1.1.3.1  [- (1^[]=1^[])]   (21)  substitution:[[_G3241], [1^[]]]
+1.1.3.2  [- (np__1=np__1)]   (21)  substitution:[[_G3241], [np__1]]
+1.2  [-2^[], k6_power(k8_power, 1^[])=k9_real_1(1^[], np__1)]   (7)  
+1.2.1  [- (k6_power(k8_power, 1^[])=k9_real_1(1^[], np__1)), k6_power(k8_power, 1^[])=k1_seq_1(k3_taylor_1, 1^[]), k1_seq_1(k3_taylor_1, 1^[])=k9_real_1(1^[], np__1)]   (23)  substitution:[[_G3573, _G3686, _G3629], [k6_power(k8_power, 1^[]), k9_real_1(1^[], np__1), k1_seq_1(k3_taylor_1, 1^[])]]
+1.2.1.1  [- (k6_power(k8_power, 1^[])=k1_seq_1(k3_taylor_1, 1^[])), m1_subset_1(1^[], k1_numbers), -r1_xxreal_0(1^[], k6_numbers)]   (12)  substitution:[[_G8525], [1^[]]]
+1.2.1.1.1  [-m1_subset_1(1^[], k1_numbers)]   (9)  
+1.2.1.1.2  [r1_xxreal_0(1^[], k6_numbers)]   (10)  
+1.2.1.2  [- (k1_seq_1(k3_taylor_1, 1^[])=k9_real_1(1^[], np__1)), m1_subset_1(1^[], k1_numbers), -r1_xxreal_0(1^[], k6_numbers), 1^[]=np__1]   (14)  substitution:[[_G7095], [1^[]]]
+1.2.1.2.1  [-m1_subset_1(1^[], k1_numbers)]   (9)  
+1.2.1.2.2  [r1_xxreal_0(1^[], k6_numbers)]   (10)  
+1.2.1.2.3  [- (1^[]=np__1), -2^[]]   (8)  
+1.2.1.2.3.1  [2^[]]   (reduction:1)  
+1.3  [-3^[], - (k6_power(k8_power, 1^[])=k9_real_1(1^[], np__1))]   (6)  
+1.3.1  [k6_power(k8_power, 1^[])=k9_real_1(1^[], np__1), - (k1_seq_1(k3_taylor_1, 1^[])=k9_real_1(1^[], np__1)), k1_seq_1(k3_taylor_1, 1^[])=k6_power(k8_power, 1^[])]   (23)  substitution:[[_G3629, _G3686, _G3573], [k6_power(k8_power, 1^[]), k9_real_1(1^[], np__1), k1_seq_1(k3_taylor_1, 1^[])]]
+1.3.1.1  [k1_seq_1(k3_taylor_1, 1^[])=k9_real_1(1^[], np__1), m1_subset_1(1^[], k1_numbers), -r1_xxreal_0(1^[], k6_numbers), - (1^[]=np__1)]   (15)  substitution:[[_G7095], [1^[]]]
+1.3.1.1.1  [-m1_subset_1(1^[], k1_numbers)]   (9)  
+1.3.1.1.2  [r1_xxreal_0(1^[], k6_numbers)]   (10)  
+1.3.1.1.3  [1^[]=np__1, -3^[]]   (5)  
+1.3.1.1.3.1  [3^[]]   (reduction:1)  
+1.3.1.2  [- (k1_seq_1(k3_taylor_1, 1^[])=k6_power(k8_power, 1^[])), k6_power(k8_power, 1^[])=k1_seq_1(k3_taylor_1, 1^[])]   (22)  substitution:[[_G3385, _G3340], [k1_seq_1(k3_taylor_1, 1^[]), k6_power(k8_power, 1^[])]]
+1.3.1.2.1  [- (k6_power(k8_power, 1^[])=k1_seq_1(k3_taylor_1, 1^[])), m1_subset_1(1^[], k1_numbers), -r1_xxreal_0(1^[], k6_numbers)]   (12)  substitution:[[_G8525], [1^[]]]
+1.3.1.2.1.1  [-m1_subset_1(1^[], k1_numbers)]   (9)  
+1.3.1.2.1.2  [r1_xxreal_0(1^[], k6_numbers)]   (10)  
+1.4  [-4^[], -r1_xxreal_0(k9_real_1(1^[], np__1), k6_power(k8_power, 1^[]))]   (3)  
+1.4.1  [r1_xxreal_0(k9_real_1(1^[], np__1), k6_power(k8_power, 1^[])), -r1_xxreal_0(k9_real_1(1^[], np__1), k1_seq_1(k3_taylor_1, 1^[])), k9_real_1(1^[], np__1)=k9_real_1(1^[], np__1), k6_power(k8_power, 1^[])=k1_seq_1(k3_taylor_1, 1^[])]   (25)  substitution:[[_G4611, _G4746, _G4678, _G4815], [k9_real_1(1^[], np__1), k6_power(k8_power, 1^[]), k9_real_1(1^[], np__1), k1_seq_1(k3_taylor_1, 1^[])]]
+1.4.1.1  [r1_xxreal_0(k9_real_1(1^[], np__1), k1_seq_1(k3_taylor_1, 1^[])), m1_subset_1(1^[], k1_numbers), -r1_xxreal_0(1^[], k6_numbers), - (1^[]=np__1)]   (16)  substitution:[[_G7095], [1^[]]]
+1.4.1.1.1  [-m1_subset_1(1^[], k1_numbers)]   (9)  
+1.4.1.1.2  [r1_xxreal_0(1^[], k6_numbers)]   (10)  
+1.4.1.1.3  [1^[]=np__1, -4^[]]   (4)  
+1.4.1.1.3.1  [4^[]]   (reduction:1)  
+1.4.1.2  [- (k9_real_1(1^[], np__1)=k9_real_1(1^[], np__1)), 1^[]=1^[], np__1=np__1]   (19)  substitution:[[_G5847, _G5982, _G5914, _G6051], [1^[], np__1, 1^[], np__1]]
+1.4.1.2.1  [- (1^[]=1^[])]   (21)  substitution:[[_G3241], [1^[]]]
+1.4.1.2.2  [- (np__1=np__1)]   (21)  substitution:[[_G3241], [np__1]]
+1.4.1.3  [- (k6_power(k8_power, 1^[])=k1_seq_1(k3_taylor_1, 1^[])), m1_subset_1(1^[], k1_numbers), -r1_xxreal_0(1^[], k6_numbers)]   (12)  substitution:[[_G8525], [1^[]]]
+1.4.1.3.1  [-m1_subset_1(1^[], k1_numbers)]   (9)  
+1.4.1.3.2  [r1_xxreal_0(1^[], k6_numbers)]   (10)  
+1.5  [-5^[], r1_xxreal_0(k9_real_1(1^[], np__1), k6_power(k8_power, 1^[]))]   (2)  
+1.5.1  [-r1_xxreal_0(k9_real_1(1^[], np__1), k6_power(k8_power, 1^[])), r1_xxreal_0(k9_real_1(1^[], np__1), k1_seq_1(k3_taylor_1, 1^[])), k9_real_1(1^[], np__1)=k9_real_1(1^[], np__1), k1_seq_1(k3_taylor_1, 1^[])=k6_power(k8_power, 1^[])]   (25)  substitution:[[_G4678, _G4815, _G4611, _G4746], [k9_real_1(1^[], np__1), k6_power(k8_power, 1^[]), k9_real_1(1^[], np__1), k1_seq_1(k3_taylor_1, 1^[])]]
+1.5.1.1  [-r1_xxreal_0(k9_real_1(1^[], np__1), k1_seq_1(k3_taylor_1, 1^[])), m1_subset_1(1^[], k1_numbers), -r1_xxreal_0(1^[], k6_numbers), 1^[]=np__1]   (17)  substitution:[[_G7095], [1^[]]]
+1.5.1.1.1  [-m1_subset_1(1^[], k1_numbers)]   (9)  
+1.5.1.1.2  [r1_xxreal_0(1^[], k6_numbers)]   (10)  
+1.5.1.1.3  [- (1^[]=np__1), -5^[]]   (1)  
+1.5.1.1.3.1  [5^[]]   (reduction:1)  
+1.5.1.2  [- (k9_real_1(1^[], np__1)=k9_real_1(1^[], np__1)), 1^[]=1^[], np__1=np__1]   (19)  substitution:[[_G5847, _G5982, _G5914, _G6051], [1^[], np__1, 1^[], np__1]]
+1.5.1.2.1  [- (1^[]=1^[])]   (21)  substitution:[[_G3241], [1^[]]]
+1.5.1.2.2  [- (np__1=np__1)]   (21)  substitution:[[_G3241], [np__1]]
+1.5.1.3  [- (k1_seq_1(k3_taylor_1, 1^[])=k6_power(k8_power, 1^[])), k6_power(k8_power, 1^[])=k1_seq_1(k3_taylor_1, 1^[])]   (22)  substitution:[[_G3385, _G3340], [k1_seq_1(k3_taylor_1, 1^[]), k6_power(k8_power, 1^[])]]
+1.5.1.3.1  [- (k6_power(k8_power, 1^[])=k1_seq_1(k3_taylor_1, 1^[])), m1_subset_1(1^[], k1_numbers), -r1_xxreal_0(1^[], k6_numbers)]   (12)  substitution:[[_G8525], [1^[]]]
+1.5.1.3.1.1  [-m1_subset_1(1^[], k1_numbers)]   (9)  
+1.5.1.3.1.2  [r1_xxreal_0(1^[], k6_numbers)]   (10)  
+------------------------------------------------------
+End of proof for t3_entropy1

@@ -1,0 +1,37 @@
+
+t6_waybel24 is a Theorem
+Start of proof for t6_waybel24
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-l1_orders_2(1^[])]
+ (2)  [v2_struct_0(2^[])]
+ (3)  [-l1_orders_2(2^[])]
+ (4)  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(k6_yellow_1(u1_struct_0(1^[]), 2^[]))))]
+ (5)  [v1_funct_1(k1_yellow_0(k6_yellow_1(u1_struct_0(1^[]), 2^[]), 3^[])), v1_funct_2(k1_yellow_0(k6_yellow_1(u1_struct_0(1^[]), 2^[]), 3^[]), u1_struct_0(1^[]), u1_struct_0(2^[])), m1_subset_1(k1_yellow_0(k6_yellow_1(u1_struct_0(1^[]), 2^[]), 3^[]), k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(1^[]), u1_struct_0(2^[]))))]
+ (6)  [l1_orders_2(_G1146), -m1_subset_1(k1_yellow_0(_G1146, _G1195), u1_struct_0(_G1146))]
+ (7)  [l1_orders_2(_G1478), -v1_orders_2(k6_yellow_1(_G1424, _G1478))]
+ (8)  [l1_orders_2(_G1478), -l1_orders_2(k6_yellow_1(_G1424, _G1478))]
+ (9)  [l1_orders_2(_G1858), -v2_struct_0(_G1858), m1_subset_1(_G2060, u1_struct_0(k6_yellow_1(_G1756, _G1858))), -r2_hidden(_G2060, u1_struct_0(k5_yellow_1(_G1756, k7_funcop_1(_G1756, _G1858))))]
+ (10)  [l1_orders_2(_G1858), -v2_struct_0(_G1858), m1_subset_1(_G2060, u1_struct_0(k6_yellow_1(_G1756, _G1858))), -v1_funct_1(_G2060)]
+ (11)  [l1_orders_2(_G1858), -v2_struct_0(_G1858), m1_subset_1(_G2060, u1_struct_0(k6_yellow_1(_G1756, _G1858))), -v1_funct_2(_G2060, _G1756, u1_struct_0(_G1858))]
+ (12)  [l1_orders_2(_G1858), -v2_struct_0(_G1858), m1_subset_1(_G2060, u1_struct_0(k6_yellow_1(_G1756, _G1858))), -m1_subset_1(_G2060, k1_zfmisc_1(k2_zfmisc_1(_G1756, u1_struct_0(_G1858))))]
+
+Connection Proof:
+-----------------
+1  [v2_struct_0(2^[])]   (2)  
+1.1  [-v2_struct_0(2^[]), l1_orders_2(2^[]), m1_subset_1(k1_yellow_0(k6_yellow_1(u1_struct_0(1^[]), 2^[]), 3^[]), u1_struct_0(k6_yellow_1(u1_struct_0(1^[]), 2^[]))), -v1_funct_1(k1_yellow_0(k6_yellow_1(u1_struct_0(1^[]), 2^[]), 3^[]))]   (10)  substitution:[[_G1858, _G2060, _G1756], [2^[], k1_yellow_0(k6_yellow_1(u1_struct_0(1^[]), 2^[]), 3^[]), u1_struct_0(1^[])]]
+1.1.1  [-l1_orders_2(2^[])]   (3)  
+1.1.2  [-m1_subset_1(k1_yellow_0(k6_yellow_1(u1_struct_0(1^[]), 2^[]), 3^[]), u1_struct_0(k6_yellow_1(u1_struct_0(1^[]), 2^[]))), l1_orders_2(k6_yellow_1(u1_struct_0(1^[]), 2^[]))]   (6)  substitution:[[_G1146, _G1195], [k6_yellow_1(u1_struct_0(1^[]), 2^[]), 3^[]]]
+1.1.2.1  [-l1_orders_2(k6_yellow_1(u1_struct_0(1^[]), 2^[])), l1_orders_2(2^[])]   (8)  substitution:[[_G1424, _G1478], [u1_struct_0(1^[]), 2^[]]]
+1.1.2.1.1  [-l1_orders_2(2^[])]   (3)  
+1.1.3  [v1_funct_1(k1_yellow_0(k6_yellow_1(u1_struct_0(1^[]), 2^[]), 3^[])), v1_funct_2(k1_yellow_0(k6_yellow_1(u1_struct_0(1^[]), 2^[]), 3^[]), u1_struct_0(1^[]), u1_struct_0(2^[])), m1_subset_1(k1_yellow_0(k6_yellow_1(u1_struct_0(1^[]), 2^[]), 3^[]), k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(1^[]), u1_struct_0(2^[]))))]   (5)  
+1.1.3.1  [-v1_funct_2(k1_yellow_0(k6_yellow_1(u1_struct_0(1^[]), 2^[]), 3^[]), u1_struct_0(1^[]), u1_struct_0(2^[])), l1_orders_2(2^[]), -v2_struct_0(2^[]), m1_subset_1(k1_yellow_0(k6_yellow_1(u1_struct_0(1^[]), 2^[]), 3^[]), u1_struct_0(k6_yellow_1(u1_struct_0(1^[]), 2^[])))]   (11)  substitution:[[_G2060, _G1756, _G1858], [k1_yellow_0(k6_yellow_1(u1_struct_0(1^[]), 2^[]), 3^[]), u1_struct_0(1^[]), 2^[]]]
+1.1.3.1.1  [-l1_orders_2(2^[])]   (3)  
+1.1.3.1.2  [v2_struct_0(2^[])]   (2)  
+1.1.3.1.3  [-m1_subset_1(k1_yellow_0(k6_yellow_1(u1_struct_0(1^[]), 2^[]), 3^[]), u1_struct_0(k6_yellow_1(u1_struct_0(1^[]), 2^[])))]   (lemmata:1.1)  
+1.1.3.2  [-m1_subset_1(k1_yellow_0(k6_yellow_1(u1_struct_0(1^[]), 2^[]), 3^[]), k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(1^[]), u1_struct_0(2^[])))), l1_orders_2(2^[]), -v2_struct_0(2^[]), m1_subset_1(k1_yellow_0(k6_yellow_1(u1_struct_0(1^[]), 2^[]), 3^[]), u1_struct_0(k6_yellow_1(u1_struct_0(1^[]), 2^[])))]   (12)  substitution:[[_G2060, _G1756, _G1858], [k1_yellow_0(k6_yellow_1(u1_struct_0(1^[]), 2^[]), 3^[]), u1_struct_0(1^[]), 2^[]]]
+1.1.3.2.1  [-l1_orders_2(2^[])]   (3)  
+1.1.3.2.2  [v2_struct_0(2^[])]   (2)  
+1.1.3.2.3  [-m1_subset_1(k1_yellow_0(k6_yellow_1(u1_struct_0(1^[]), 2^[]), 3^[]), u1_struct_0(k6_yellow_1(u1_struct_0(1^[]), 2^[])))]   (lemmata:1.1)  
+------------------------------------------------------
+End of proof for t6_waybel24

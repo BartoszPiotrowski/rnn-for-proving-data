@@ -1,0 +1,47 @@
+
+t6_waybel12 is a Theorem
+Start of proof for t6_waybel12
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(4^[])]
+ (2)  [-v5_orders_2(4^[])]
+ (3)  [-v1_yellow_0(4^[])]
+ (4)  [-l1_orders_2(4^[])]
+ (5)  [v1_xboole_0(5^[])]
+ (6)  [-v12_waybel_0(5^[], 4^[])]
+ (7)  [-m1_subset_1(5^[], k1_zfmisc_1(u1_struct_0(4^[])))]
+ (8)  [r2_hidden(k3_yellow_0(4^[]), 5^[])]
+ (9)  [l1_orders_2(_G1410), m1_subset_1(_G1541, k1_zfmisc_1(u1_struct_0(_G1410))), -v12_waybel_0(_G1541, _G1410), -m1_subset_1(1^[_G1541, _G1410], u1_struct_0(_G1410))]
+ (10)  [l1_orders_2(_G1410), m1_subset_1(_G1541, k1_zfmisc_1(u1_struct_0(_G1410))), -v12_waybel_0(_G1541, _G1410), -m1_subset_1(2^[_G1541, _G1410], u1_struct_0(_G1410))]
+ (11)  [l1_orders_2(_G1410), m1_subset_1(_G1541, k1_zfmisc_1(u1_struct_0(_G1410))), -v12_waybel_0(_G1541, _G1410), -r2_hidden(1^[_G1541, _G1410], _G1541)]
+ (12)  [l1_orders_2(_G1410), m1_subset_1(_G1541, k1_zfmisc_1(u1_struct_0(_G1410))), -v12_waybel_0(_G1541, _G1410), -r1_orders_2(_G1410, 2^[_G1541, _G1410], 1^[_G1541, _G1410])]
+ (13)  [l1_orders_2(_G1410), m1_subset_1(_G1541, k1_zfmisc_1(u1_struct_0(_G1410))), -v12_waybel_0(_G1541, _G1410), r2_hidden(2^[_G1541, _G1410], _G1541)]
+ (14)  [l1_orders_2(_G1410), m1_subset_1(_G1541, k1_zfmisc_1(u1_struct_0(_G1410))), v12_waybel_0(_G1541, _G1410), m1_subset_1(_G1778, u1_struct_0(_G1410)), m1_subset_1(_G1929, u1_struct_0(_G1410)), -r2_hidden(_G1929, _G1541), r2_hidden(_G1778, _G1541), r1_orders_2(_G1410, _G1929, _G1778)]
+ (15)  [v1_xboole_0(_G2466), r2_hidden(_G2544, _G2466)]
+ (16)  [-v1_xboole_0(_G2466), -r2_hidden(3^[_G2466], _G2466)]
+ (17)  [l1_orders_2(_G2694), -m1_subset_1(k3_yellow_0(_G2694), u1_struct_0(_G2694))]
+ (18)  [-m1_subset_1(_G3445, _G3562), r2_hidden(_G3445, _G3503), m1_subset_1(_G3503, k1_zfmisc_1(_G3562))]
+ (19)  [-r1_orders_2(_G2883, k3_yellow_0(_G2883), _G3160), m1_subset_1(_G3160, u1_struct_0(_G2883)), -v2_struct_0(_G2883), v5_orders_2(_G2883), v1_yellow_0(_G2883), l1_orders_2(_G2883)]
+
+Connection Proof:
+-----------------
+1  [v1_xboole_0(5^[])]   (5)  
+1.1  [-v1_xboole_0(5^[]), -r2_hidden(3^[5^[]], 5^[])]   (16)  substitution:[[_G2466], [5^[]]]
+1.1.1  [r2_hidden(3^[5^[]], 5^[]), l1_orders_2(4^[]), m1_subset_1(5^[], k1_zfmisc_1(u1_struct_0(4^[]))), v12_waybel_0(5^[], 4^[]), m1_subset_1(3^[5^[]], u1_struct_0(4^[])), m1_subset_1(k3_yellow_0(4^[]), u1_struct_0(4^[])), -r2_hidden(k3_yellow_0(4^[]), 5^[]), r1_orders_2(4^[], k3_yellow_0(4^[]), 3^[5^[]])]   (14)  substitution:[[_G1778, _G1541, _G1410, _G1929], [3^[5^[]], 5^[], 4^[], k3_yellow_0(4^[])]]
+1.1.1.1  [-l1_orders_2(4^[])]   (4)  
+1.1.1.2  [-m1_subset_1(5^[], k1_zfmisc_1(u1_struct_0(4^[])))]   (7)  
+1.1.1.3  [-v12_waybel_0(5^[], 4^[])]   (6)  
+1.1.1.4  [-m1_subset_1(3^[5^[]], u1_struct_0(4^[])), r2_hidden(3^[5^[]], 5^[]), m1_subset_1(5^[], k1_zfmisc_1(u1_struct_0(4^[])))]   (18)  substitution:[[_G3445, _G3562, _G3503], [3^[5^[]], u1_struct_0(4^[]), 5^[]]]
+1.1.1.4.1  [-r2_hidden(3^[5^[]], 5^[])]   (reduction:1.1)  
+1.1.1.4.2  [-m1_subset_1(5^[], k1_zfmisc_1(u1_struct_0(4^[])))]   (7)  
+1.1.1.5  [-m1_subset_1(k3_yellow_0(4^[]), u1_struct_0(4^[])), l1_orders_2(4^[])]   (17)  substitution:[[_G2694], [4^[]]]
+1.1.1.5.1  [-l1_orders_2(4^[])]   (4)  
+1.1.1.6  [r2_hidden(k3_yellow_0(4^[]), 5^[])]   (8)  
+1.1.1.7  [-r1_orders_2(4^[], k3_yellow_0(4^[]), 3^[5^[]]), m1_subset_1(3^[5^[]], u1_struct_0(4^[])), -v2_struct_0(4^[]), v5_orders_2(4^[]), v1_yellow_0(4^[]), l1_orders_2(4^[])]   (19)  substitution:[[_G2883, _G3160], [4^[], 3^[5^[]]]]
+1.1.1.7.1  [-m1_subset_1(3^[5^[]], u1_struct_0(4^[]))]   (lemmata:1.1.1)  
+1.1.1.7.2  [v2_struct_0(4^[])]   (1)  
+1.1.1.7.3  [-v5_orders_2(4^[])]   (2)  
+1.1.1.7.4  [-v1_yellow_0(4^[])]   (3)  
+1.1.1.7.5  [-l1_orders_2(4^[])]   (4)  
+------------------------------------------------------
+End of proof for t6_waybel12

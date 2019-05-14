@@ -1,0 +1,59 @@
+
+t3_polyform is a Theorem
+Start of proof for t3_polyform
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_int_1(1^[])]
+ (2)  [-r1_xxreal_0(np__1, 1^[])]
+ (3)  [v7_ordinal1(1^[])]
+ (4)  [v7_ordinal1(_G6946), -v1_xxreal_0(_G6946)]
+ (5)  [v1_int_1(_G7077), -v1_xreal_0(_G7077)]
+ (6)  [v1_xreal_0(_G7208), -v1_xxreal_0(_G7208)]
+ (7)  [m1_subset_1(_G7339, k4_ordinal1), -v7_ordinal1(_G7339)]
+ (8)  [v1_xxreal_0(_G7551), v1_xxreal_0(_G7496), -r1_xxreal_0(_G7496, _G7551), -r1_xxreal_0(_G7551, _G7496)]
+ (9)  [v1_xreal_0(_G7864), r1_xxreal_0(k6_numbers, _G7864), - (k16_complex1(_G7864)=_G7864)]
+ (10)  [v1_xreal_0(_G7864), -r1_xxreal_0(k6_numbers, _G7864), - (k16_complex1(_G7864)=k4_xcmplx_0(_G7864))]
+ (11)  [- (k1_xboole_0=o_0_0_xboole_0)]
+ (12)  [v1_int_1(_G8394), -v7_ordinal1(k16_complex1(_G8394))]
+ (13)  [v1_int_1(_G8394), -v1_xreal_0(k16_complex1(_G8394))]
+ (14)  [- (k6_numbers=k1_xboole_0)]
+ (15)  [-m1_subset_1(k1_xboole_0, k4_ordinal1)]
+ (16)  [v1_int_1(_G8615), -r1_xxreal_0(np__1, _G8615), -r1_xxreal_0(_G8615, k1_xboole_0)]
+ (17)  [v1_int_1(_G8615), r1_xxreal_0(np__1, _G8615), r1_xxreal_0(_G8615, k1_xboole_0)]
+ (18)  [_G6357=_G6406, - (k4_xcmplx_0(_G6357)=k4_xcmplx_0(_G6406))]
+ (19)  [_G6626=_G6675, - (k16_complex1(_G6626)=k16_complex1(_G6675))]
+ (20)  [- (_G3152=_G3152)]
+ (21)  [_G3251=_G3296, - (_G3296=_G3251)]
+ (22)  [- (_G3484=_G3597), _G3484=_G3540, _G3540=_G3597]
+ (23)  [-v1_xxreal_0(_G3983), _G3934=_G3983, v1_xxreal_0(_G3934)]
+ (24)  [-v1_xreal_0(_G4261), _G4212=_G4261, v1_xreal_0(_G4212)]
+ (25)  [-m1_subset_1(_G4557, _G4694), m1_subset_1(_G4490, _G4625), _G4490=_G4557, _G4625=_G4694]
+ (26)  [-v1_int_1(_G5136), _G5087=_G5136, v1_int_1(_G5087)]
+ (27)  [-v7_ordinal1(_G6002), _G5953=_G6002, v7_ordinal1(_G5953)]
+ (28)  [-r1_xxreal_0(_G5432, _G5569), r1_xxreal_0(_G5365, _G5500), _G5365=_G5432, _G5500=_G5569]
+
+Connection Proof:
+-----------------
+1  [v1_int_1(1^[]), r1_xxreal_0(np__1, 1^[]), r1_xxreal_0(1^[], k1_xboole_0)]   (17)  substitution:[[_G8615], [1^[]]]
+1.1  [-v1_int_1(1^[])]   (1)  
+1.2  [-r1_xxreal_0(np__1, 1^[])]   (2)  
+1.3  [-r1_xxreal_0(1^[], k1_xboole_0), v1_xxreal_0(k1_xboole_0), v1_xxreal_0(1^[]), -r1_xxreal_0(k1_xboole_0, 1^[])]   (8)  substitution:[[_G7496, _G7551], [1^[], k1_xboole_0]]
+1.3.1  [-v1_xxreal_0(k1_xboole_0), v7_ordinal1(k1_xboole_0)]   (4)  substitution:[[_G6946], [k1_xboole_0]]
+1.3.1.1  [-v7_ordinal1(k1_xboole_0), m1_subset_1(k1_xboole_0, k4_ordinal1)]   (7)  substitution:[[_G7339], [k1_xboole_0]]
+1.3.1.1.1  [-m1_subset_1(k1_xboole_0, k4_ordinal1)]   (15)  
+1.3.2  [-v1_xxreal_0(1^[]), v1_xreal_0(1^[])]   (6)  substitution:[[_G7208], [1^[]]]
+1.3.2.1  [-v1_xreal_0(1^[]), v1_int_1(1^[])]   (5)  substitution:[[_G7077], [1^[]]]
+1.3.2.1.1  [-v1_int_1(1^[])]   (1)  
+1.3.3  [r1_xxreal_0(k1_xboole_0, 1^[]), -r1_xxreal_0(k6_numbers, 1^[]), k1_xboole_0=k6_numbers, 1^[]=1^[]]   (28)  substitution:[[_G5365, _G5500, _G5432, _G5569], [k1_xboole_0, 1^[], k6_numbers, 1^[]]]
+1.3.3.1  [r1_xxreal_0(k6_numbers, 1^[]), v1_xreal_0(1^[]), - (k16_complex1(1^[])=1^[])]   (9)  substitution:[[_G7864], [1^[]]]
+1.3.3.1.1  [-v1_xreal_0(1^[]), v1_int_1(1^[])]   (5)  substitution:[[_G7077], [1^[]]]
+1.3.3.1.1.1  [-v1_int_1(1^[])]   (1)  
+1.3.3.1.2  [k16_complex1(1^[])=1^[], -v7_ordinal1(1^[]), v7_ordinal1(k16_complex1(1^[]))]   (27)  substitution:[[_G5953, _G6002], [k16_complex1(1^[]), 1^[]]]
+1.3.3.1.2.1  [v7_ordinal1(1^[])]   (3)  
+1.3.3.1.2.2  [-v7_ordinal1(k16_complex1(1^[])), v1_int_1(1^[])]   (12)  substitution:[[_G8394], [1^[]]]
+1.3.3.1.2.2.1  [-v1_int_1(1^[])]   (1)  
+1.3.3.2  [- (k1_xboole_0=k6_numbers), k6_numbers=k1_xboole_0]   (21)  substitution:[[_G3296, _G3251], [k1_xboole_0, k6_numbers]]
+1.3.3.2.1  [- (k6_numbers=k1_xboole_0)]   (14)  
+1.3.3.3  [- (1^[]=1^[])]   (20)  substitution:[[_G3152], [1^[]]]
+------------------------------------------------------
+End of proof for t3_polyform

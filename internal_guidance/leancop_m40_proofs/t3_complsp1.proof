@@ -1,0 +1,35 @@
+
+t3_complsp1 is a Theorem
+Start of proof for t3_complsp1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], k5_numbers)]
+ (2)  [-m1_subset_1(2^[], u1_struct_0(k1_complsp1(1^[])))]
+ (3)  [m2_finseq_2(2^[], k2_numbers, k14_seq_4(1^[]))]
+ (4)  [m1_subset_1(_G5891, k5_numbers), -m1_finseq_2(k14_seq_4(_G5891), k2_numbers)]
+ (5)  [m1_subset_1(_G6529, k5_numbers), - (u1_struct_0(k1_complsp1(_G6529))=k14_seq_4(_G6529))]
+ (6)  [m1_finseq_2(_G6147, _G6090), m2_finseq_2(_G6262, _G6090, _G6147), -m1_subset_1(_G6262, _G6147)]
+ (7)  [m1_finseq_2(_G6147, _G6090), -m2_finseq_2(_G6262, _G6090, _G6147), m1_subset_1(_G6262, _G6147)]
+ (8)  [_G5003=_G5052, - (u1_struct_0(_G5003)=u1_struct_0(_G5052))]
+ (9)  [_G5281=_G5330, - (k1_complsp1(_G5281)=k1_complsp1(_G5330))]
+ (10)  [_G5550=_G5599, - (k14_seq_4(_G5550)=k14_seq_4(_G5599))]
+ (11)  [- (_G1945=_G1945)]
+ (12)  [_G2044=_G2089, - (_G2089=_G2044)]
+ (13)  [- (_G2277=_G2390), _G2277=_G2333, _G2333=_G2390]
+ (14)  [-m1_finseq_2(_G2794, _G2931), m1_finseq_2(_G2727, _G2862), _G2727=_G2794, _G2862=_G2931]
+ (15)  [-m1_subset_1(_G3391, _G3528), m1_subset_1(_G3324, _G3459), _G3324=_G3391, _G3459=_G3528]
+ (16)  [-m2_finseq_2(_G3997, _G4170, _G4347), m2_finseq_2(_G3912, _G4083, _G4258), _G3912=_G3997, _G4083=_G4170, _G4258=_G4347]
+
+Connection Proof:
+-----------------
+1  [m2_finseq_2(2^[], k2_numbers, k14_seq_4(1^[]))]   (3)  
+1.1  [-m2_finseq_2(2^[], k2_numbers, k14_seq_4(1^[])), m1_finseq_2(k14_seq_4(1^[]), k2_numbers), m1_subset_1(2^[], k14_seq_4(1^[]))]   (7)  substitution:[[_G6262, _G6090, _G6147], [2^[], k2_numbers, k14_seq_4(1^[])]]
+1.1.1  [-m1_finseq_2(k14_seq_4(1^[]), k2_numbers), m1_subset_1(1^[], k5_numbers)]   (4)  substitution:[[_G5891], [1^[]]]
+1.1.1.1  [-m1_subset_1(1^[], k5_numbers)]   (1)  
+1.1.2  [-m1_subset_1(2^[], k14_seq_4(1^[])), m1_subset_1(2^[], u1_struct_0(k1_complsp1(1^[]))), 2^[]=2^[], u1_struct_0(k1_complsp1(1^[]))=k14_seq_4(1^[])]   (15)  substitution:[[_G3391, _G3528, _G3324, _G3459], [2^[], k14_seq_4(1^[]), 2^[], u1_struct_0(k1_complsp1(1^[]))]]
+1.1.2.1  [-m1_subset_1(2^[], u1_struct_0(k1_complsp1(1^[])))]   (2)  
+1.1.2.2  [- (2^[]=2^[])]   (11)  substitution:[[_G1945], [2^[]]]
+1.1.2.3  [- (u1_struct_0(k1_complsp1(1^[]))=k14_seq_4(1^[])), m1_subset_1(1^[], k5_numbers)]   (5)  substitution:[[_G6529], [1^[]]]
+1.1.2.3.1  [-m1_subset_1(1^[], k5_numbers)]   (1)  
+------------------------------------------------------
+End of proof for t3_complsp1

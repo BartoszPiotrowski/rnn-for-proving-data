@@ -1,0 +1,24 @@
+
+t8_xxreal_0 is a Theorem
+Start of proof for t8_xxreal_0
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-r2_hidden(k1_xxreal_0, k1_numbers)]
+ (2)  [- (k1_xxreal_0=k1_numbers)]
+ (3)  [r2_hidden(_G2307, _G2354), r2_hidden(_G2354, _G2307)]
+ (4)  [-r2_hidden(_G1756, _G1893), r2_hidden(_G1689, _G1824), _G1689=_G1756, _G1824=_G1893]
+ (5)  [- (_G916=_G916)]
+ (6)  [_G1015=_G1060, - (_G1060=_G1015)]
+ (7)  [- (_G1248=_G1361), _G1248=_G1304, _G1304=_G1361]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(k1_xxreal_0, k1_numbers), r2_hidden(k1_numbers, k1_xxreal_0)]   (3)  substitution:[[_G2307, _G2354], [k1_xxreal_0, k1_numbers]]
+1.1  [-r2_hidden(k1_xxreal_0, k1_numbers)]   (1)  
+1.2  [-r2_hidden(k1_numbers, k1_xxreal_0), r2_hidden(k1_xxreal_0, k1_numbers), k1_xxreal_0=k1_numbers, k1_numbers=k1_xxreal_0]   (4)  substitution:[[_G1756, _G1893, _G1689, _G1824], [k1_numbers, k1_xxreal_0, k1_xxreal_0, k1_numbers]]
+1.2.1  [-r2_hidden(k1_xxreal_0, k1_numbers)]   (1)  
+1.2.2  [- (k1_xxreal_0=k1_numbers)]   (2)  
+1.2.3  [- (k1_numbers=k1_xxreal_0), k1_xxreal_0=k1_numbers]   (6)  substitution:[[_G1060, _G1015], [k1_numbers, k1_xxreal_0]]
+1.2.3.1  [- (k1_xxreal_0=k1_numbers)]   (2)  
+------------------------------------------------------
+End of proof for t8_xxreal_0

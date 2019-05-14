@@ -1,0 +1,55 @@
+
+t4_compos_1 is a Theorem
+Start of proof for t4_compos_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-l1_compos_1(2^[])]
+ (2)  [k5_card_1(k4_compos_1(2^[]))=np__1]
+ (3)  [l1_compos_1(_G9301), v1_xboole_0(k4_compos_1(_G9301))]
+ (4)  [l1_compos_1(_G9301), -v1_zfmisc_1(k4_compos_1(_G9301))]
+ (5)  [l1_compos_1(_G9301), -v1_relat_1(k4_compos_1(_G9301))]
+ (6)  [l1_compos_1(_G9301), -v4_relat_1(k4_compos_1(_G9301), k5_numbers)]
+ (7)  [l1_compos_1(_G9301), -v5_relat_1(k4_compos_1(_G9301), u1_compos_1(_G9301))]
+ (8)  [l1_compos_1(_G9301), -v1_funct_1(k4_compos_1(_G9301))]
+ (9)  [l1_compos_1(_G9301), -v1_finset_1(k4_compos_1(_G9301))]
+ (10)  [l1_compos_1(_G9301), -v1_afinsq_1(k4_compos_1(_G9301))]
+ (11)  [v1_finset_1(_G10050), - (k5_card_1(_G10050)=k1_card_1(_G10050))]
+ (12)  [- (k1_card_1(k1_tarski(_G10239))=np__1)]
+ (13)  [-m1_subset_1(1^[_G10361], _G10361), -v1_xboole_0(_G10361), v1_zfmisc_1(_G10361)]
+ (14)  [- (_G10361=k1_tarski(1^[_G10361])), -v1_xboole_0(_G10361), v1_zfmisc_1(_G10361)]
+ (15)  [_G7815=_G7864, - (u1_compos_1(_G7815)=u1_compos_1(_G7864))]
+ (16)  [_G8093=_G8142, - (k1_card_1(_G8093)=k1_card_1(_G8142))]
+ (17)  [_G8371=_G8420, - (k1_tarski(_G8371)=k1_tarski(_G8420))]
+ (18)  [_G8649=_G8698, - (k5_card_1(_G8649)=k5_card_1(_G8698))]
+ (19)  [_G8918=_G8967, - (k4_compos_1(_G8918)=k4_compos_1(_G8967))]
+ (20)  [- (_G3095=_G3095)]
+ (21)  [_G3194=_G3239, - (_G3239=_G3194)]
+ (22)  [- (_G3427=_G3540), _G3427=_G3483, _G3483=_G3540]
+ (23)  [-v1_relat_1(_G3926), _G3877=_G3926, v1_relat_1(_G3877)]
+ (24)  [-v4_relat_1(_G4222, _G4359), v4_relat_1(_G4155, _G4290), _G4155=_G4222, _G4290=_G4359]
+ (25)  [-v5_relat_1(_G4819, _G4956), v5_relat_1(_G4752, _G4887), _G4752=_G4819, _G4887=_G4956]
+ (26)  [-v1_funct_1(_G5398), _G5349=_G5398, v1_funct_1(_G5349)]
+ (27)  [-v1_afinsq_1(_G5676), _G5627=_G5676, v1_afinsq_1(_G5627)]
+ (28)  [-v1_finset_1(_G5954), _G5905=_G5954, v1_finset_1(_G5905)]
+ (29)  [-v1_xboole_0(_G6232), _G6183=_G6232, v1_xboole_0(_G6183)]
+ (30)  [-v1_zfmisc_1(_G6510), _G6461=_G6510, v1_zfmisc_1(_G6461)]
+ (31)  [-l1_compos_1(_G7376), _G7327=_G7376, l1_compos_1(_G7327)]
+ (32)  [-m1_subset_1(_G6806, _G6943), m1_subset_1(_G6739, _G6874), _G6739=_G6806, _G6874=_G6943]
+
+Connection Proof:
+-----------------
+1  [k5_card_1(k4_compos_1(2^[]))=np__1]   (2)  
+1.1  [- (k5_card_1(k4_compos_1(2^[]))=np__1), k5_card_1(k4_compos_1(2^[]))=k1_card_1(k4_compos_1(2^[])), k1_card_1(k4_compos_1(2^[]))=np__1]   (22)  substitution:[[_G3427, _G3540, _G3483], [k5_card_1(k4_compos_1(2^[])), np__1, k1_card_1(k4_compos_1(2^[]))]]
+1.1.1  [- (k5_card_1(k4_compos_1(2^[]))=k1_card_1(k4_compos_1(2^[]))), v1_finset_1(k4_compos_1(2^[]))]   (11)  substitution:[[_G10050], [k4_compos_1(2^[])]]
+1.1.1.1  [-v1_finset_1(k4_compos_1(2^[])), l1_compos_1(2^[])]   (9)  substitution:[[_G9301], [2^[]]]
+1.1.1.1.1  [-l1_compos_1(2^[])]   (1)  
+1.1.2  [- (k1_card_1(k4_compos_1(2^[]))=np__1), k1_card_1(k4_compos_1(2^[]))=k1_card_1(k1_tarski(1^[k4_compos_1(2^[])])), k1_card_1(k1_tarski(1^[k4_compos_1(2^[])]))=np__1]   (22)  substitution:[[_G3427, _G3540, _G3483], [k1_card_1(k4_compos_1(2^[])), np__1, k1_card_1(k1_tarski(1^[k4_compos_1(2^[])]))]]
+1.1.2.1  [- (k1_card_1(k4_compos_1(2^[]))=k1_card_1(k1_tarski(1^[k4_compos_1(2^[])]))), k4_compos_1(2^[])=k1_tarski(1^[k4_compos_1(2^[])])]   (16)  substitution:[[_G8093, _G8142], [k4_compos_1(2^[]), k1_tarski(1^[k4_compos_1(2^[])])]]
+1.1.2.1.1  [- (k4_compos_1(2^[])=k1_tarski(1^[k4_compos_1(2^[])])), -v1_xboole_0(k4_compos_1(2^[])), v1_zfmisc_1(k4_compos_1(2^[]))]   (14)  substitution:[[_G10361], [k4_compos_1(2^[])]]
+1.1.2.1.1.1  [v1_xboole_0(k4_compos_1(2^[])), l1_compos_1(2^[])]   (3)  substitution:[[_G9301], [2^[]]]
+1.1.2.1.1.1.1  [-l1_compos_1(2^[])]   (1)  
+1.1.2.1.1.2  [-v1_zfmisc_1(k4_compos_1(2^[])), l1_compos_1(2^[])]   (4)  substitution:[[_G9301], [2^[]]]
+1.1.2.1.1.2.1  [-l1_compos_1(2^[])]   (1)  
+1.1.2.2  [- (k1_card_1(k1_tarski(1^[k4_compos_1(2^[])]))=np__1)]   (12)  substitution:[[_G10239], [1^[k4_compos_1(2^[])]]]
+------------------------------------------------------
+End of proof for t4_compos_1

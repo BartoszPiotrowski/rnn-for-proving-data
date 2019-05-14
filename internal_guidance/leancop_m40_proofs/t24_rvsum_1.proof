@@ -1,0 +1,40 @@
+
+t24_rvsum_1 is a Theorem
+Start of proof for t24_rvsum_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(1^[])]
+ (2)  [-v1_funct_1(1^[])]
+ (3)  [-v1_valued_0(1^[])]
+ (4)  [-v1_relat_1(2^[])]
+ (5)  [-v1_funct_1(2^[])]
+ (6)  [-v1_valued_0(2^[])]
+ (7)  [- (k30_valued_1(1^[])=k30_valued_1(2^[]))]
+ (8)  [1^[]=2^[]]
+ (9)  [- (k30_valued_1(k30_valued_1(_G3512))=_G3512), v1_relat_1(_G3512), v1_funct_1(_G3512), v1_valued_0(_G3512)]
+ (10)  [_G3222=_G3271, - (k30_valued_1(_G3222)=k30_valued_1(_G3271))]
+ (11)  [- (_G1561=_G1561)]
+ (12)  [_G1660=_G1705, - (_G1705=_G1660)]
+ (13)  [- (_G1893=_G2006), _G1893=_G1949, _G1949=_G2006]
+ (14)  [-v1_relat_1(_G2392), _G2343=_G2392, v1_relat_1(_G2343)]
+ (15)  [-v1_funct_1(_G2670), _G2621=_G2670, v1_funct_1(_G2621)]
+ (16)  [-v1_valued_0(_G2939), _G2890=_G2939, v1_valued_0(_G2890)]
+
+Connection Proof:
+-----------------
+1  [1^[]=2^[]]   (8)  
+1.1  [- (1^[]=2^[]), 1^[]=k30_valued_1(k30_valued_1(1^[])), k30_valued_1(k30_valued_1(1^[]))=2^[]]   (13)  substitution:[[_G1893, _G2006, _G1949], [1^[], 2^[], k30_valued_1(k30_valued_1(1^[]))]]
+1.1.1  [- (1^[]=k30_valued_1(k30_valued_1(1^[]))), k30_valued_1(k30_valued_1(1^[]))=1^[]]   (12)  substitution:[[_G1705, _G1660], [1^[], k30_valued_1(k30_valued_1(1^[]))]]
+1.1.1.1  [- (k30_valued_1(k30_valued_1(1^[]))=1^[]), v1_relat_1(1^[]), v1_funct_1(1^[]), v1_valued_0(1^[])]   (9)  substitution:[[_G3512], [1^[]]]
+1.1.1.1.1  [-v1_relat_1(1^[])]   (1)  
+1.1.1.1.2  [-v1_funct_1(1^[])]   (2)  
+1.1.1.1.3  [-v1_valued_0(1^[])]   (3)  
+1.1.2  [- (k30_valued_1(k30_valued_1(1^[]))=2^[]), k30_valued_1(k30_valued_1(1^[]))=k30_valued_1(k30_valued_1(2^[])), k30_valued_1(k30_valued_1(2^[]))=2^[]]   (13)  substitution:[[_G1893, _G2006, _G1949], [k30_valued_1(k30_valued_1(1^[])), 2^[], k30_valued_1(k30_valued_1(2^[]))]]
+1.1.2.1  [- (k30_valued_1(k30_valued_1(1^[]))=k30_valued_1(k30_valued_1(2^[]))), k30_valued_1(1^[])=k30_valued_1(2^[])]   (10)  substitution:[[_G3222, _G3271], [k30_valued_1(1^[]), k30_valued_1(2^[])]]
+1.1.2.1.1  [- (k30_valued_1(1^[])=k30_valued_1(2^[]))]   (7)  
+1.1.2.2  [- (k30_valued_1(k30_valued_1(2^[]))=2^[]), v1_relat_1(2^[]), v1_funct_1(2^[]), v1_valued_0(2^[])]   (9)  substitution:[[_G3512], [2^[]]]
+1.1.2.2.1  [-v1_relat_1(2^[])]   (4)  
+1.1.2.2.2  [-v1_funct_1(2^[])]   (5)  
+1.1.2.2.3  [-v1_valued_0(2^[])]   (6)  
+------------------------------------------------------
+End of proof for t24_rvsum_1

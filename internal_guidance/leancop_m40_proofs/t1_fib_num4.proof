@@ -1,0 +1,57 @@
+
+t1_fib_num4 is a Theorem
+Start of proof for t1_fib_num4
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xreal_0(1^[])]
+ (2)  [-v1_xreal_0(2^[])]
+ (3)  [-v7_ordinal1(3^[])]
+ (4)  [k3_power(k13_complex1(1^[], 2^[]), 3^[])=k13_complex1(k3_power(1^[], 3^[]), k3_power(2^[], 3^[]))]
+ (5)  [v1_xreal_0(_G7074), -v1_xcmplx_0(_G7074)]
+ (6)  [-v1_xreal_0(k7_xcmplx_0(_G7205, _G7256)), v1_xreal_0(_G7205), v1_xreal_0(_G7256)]
+ (7)  [- (k3_power(_G7501, _G7556)=k1_newton(_G7501, _G7556)), v1_xreal_0(_G7501), v7_ordinal1(_G7556)]
+ (8)  [- (k13_complex1(_G7869, _G7924)=k7_xcmplx_0(_G7869, _G7924)), v1_xcmplx_0(_G7869), v1_xcmplx_0(_G7924)]
+ (9)  [v1_xreal_0(_G8228), v1_xreal_0(_G8334), v7_ordinal1(_G8436), - (k1_newton(k13_complex1(_G8228, _G8334), _G8436)=k13_complex1(k1_newton(_G8228, _G8436), k1_newton(_G8334, _G8436)))]
+ (10)  [- (k7_xcmplx_0(_G4611, _G4746)=k7_xcmplx_0(_G4678, _G4815)), _G4611=_G4678, _G4746=_G4815]
+ (11)  [- (k1_newton(_G5208, _G5343)=k1_newton(_G5275, _G5412)), _G5208=_G5275, _G5343=_G5412]
+ (12)  [- (k13_complex1(_G5805, _G5940)=k13_complex1(_G5872, _G6009)), _G5805=_G5872, _G5940=_G6009]
+ (13)  [- (k3_power(_G6393, _G6528)=k3_power(_G6460, _G6597)), _G6393=_G6460, _G6528=_G6597]
+ (14)  [- (_G2941=_G2941)]
+ (15)  [_G3040=_G3085, - (_G3085=_G3040)]
+ (16)  [- (_G3273=_G3386), _G3273=_G3329, _G3329=_G3386]
+ (17)  [-v1_xcmplx_0(_G3772), _G3723=_G3772, v1_xcmplx_0(_G3723)]
+ (18)  [-v1_xreal_0(_G4050), _G4001=_G4050, v1_xreal_0(_G4001)]
+ (19)  [-v7_ordinal1(_G4319), _G4270=_G4319, v7_ordinal1(_G4270)]
+
+Connection Proof:
+-----------------
+1  [k3_power(k13_complex1(1^[], 2^[]), 3^[])=k13_complex1(k3_power(1^[], 3^[]), k3_power(2^[], 3^[]))]   (4)  
+1.1  [- (k3_power(k13_complex1(1^[], 2^[]), 3^[])=k13_complex1(k3_power(1^[], 3^[]), k3_power(2^[], 3^[]))), k3_power(k13_complex1(1^[], 2^[]), 3^[])=k1_newton(k13_complex1(1^[], 2^[]), 3^[]), k1_newton(k13_complex1(1^[], 2^[]), 3^[])=k13_complex1(k3_power(1^[], 3^[]), k3_power(2^[], 3^[]))]   (16)  substitution:[[_G3273, _G3386, _G3329], [k3_power(k13_complex1(1^[], 2^[]), 3^[]), k13_complex1(k3_power(1^[], 3^[]), k3_power(2^[], 3^[])), k1_newton(k13_complex1(1^[], 2^[]), 3^[])]]
+1.1.1  [- (k3_power(k13_complex1(1^[], 2^[]), 3^[])=k1_newton(k13_complex1(1^[], 2^[]), 3^[])), v1_xreal_0(k13_complex1(1^[], 2^[])), v7_ordinal1(3^[])]   (7)  substitution:[[_G7501, _G7556], [k13_complex1(1^[], 2^[]), 3^[]]]
+1.1.1.1  [-v1_xreal_0(k13_complex1(1^[], 2^[])), k7_xcmplx_0(1^[], 2^[])=k13_complex1(1^[], 2^[]), v1_xreal_0(k7_xcmplx_0(1^[], 2^[]))]   (18)  substitution:[[_G4050, _G4001], [k13_complex1(1^[], 2^[]), k7_xcmplx_0(1^[], 2^[])]]
+1.1.1.1.1  [- (k7_xcmplx_0(1^[], 2^[])=k13_complex1(1^[], 2^[])), k13_complex1(1^[], 2^[])=k7_xcmplx_0(1^[], 2^[])]   (15)  substitution:[[_G3085, _G3040], [k7_xcmplx_0(1^[], 2^[]), k13_complex1(1^[], 2^[])]]
+1.1.1.1.1.1  [- (k13_complex1(1^[], 2^[])=k7_xcmplx_0(1^[], 2^[])), v1_xcmplx_0(1^[]), v1_xcmplx_0(2^[])]   (8)  substitution:[[_G7869, _G7924], [1^[], 2^[]]]
+1.1.1.1.1.1.1  [-v1_xcmplx_0(1^[]), v1_xreal_0(1^[])]   (5)  substitution:[[_G7074], [1^[]]]
+1.1.1.1.1.1.1.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.1.1.1.1.2  [-v1_xcmplx_0(2^[]), v1_xreal_0(2^[])]   (5)  substitution:[[_G7074], [2^[]]]
+1.1.1.1.1.1.2.1  [-v1_xreal_0(2^[])]   (2)  
+1.1.1.1.2  [-v1_xreal_0(k7_xcmplx_0(1^[], 2^[])), v1_xreal_0(1^[]), v1_xreal_0(2^[])]   (6)  substitution:[[_G7205, _G7256], [1^[], 2^[]]]
+1.1.1.1.2.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.1.1.2.2  [-v1_xreal_0(2^[])]   (2)  
+1.1.1.2  [-v7_ordinal1(3^[])]   (3)  
+1.1.2  [- (k1_newton(k13_complex1(1^[], 2^[]), 3^[])=k13_complex1(k3_power(1^[], 3^[]), k3_power(2^[], 3^[]))), k13_complex1(k3_power(1^[], 3^[]), k3_power(2^[], 3^[]))=k1_newton(k13_complex1(1^[], 2^[]), 3^[])]   (15)  substitution:[[_G3085, _G3040], [k1_newton(k13_complex1(1^[], 2^[]), 3^[]), k13_complex1(k3_power(1^[], 3^[]), k3_power(2^[], 3^[]))]]
+1.1.2.1  [- (k13_complex1(k3_power(1^[], 3^[]), k3_power(2^[], 3^[]))=k1_newton(k13_complex1(1^[], 2^[]), 3^[])), k13_complex1(k3_power(1^[], 3^[]), k3_power(2^[], 3^[]))=k13_complex1(k1_newton(1^[], 3^[]), k1_newton(2^[], 3^[])), k13_complex1(k1_newton(1^[], 3^[]), k1_newton(2^[], 3^[]))=k1_newton(k13_complex1(1^[], 2^[]), 3^[])]   (16)  substitution:[[_G3273, _G3386, _G3329], [k13_complex1(k3_power(1^[], 3^[]), k3_power(2^[], 3^[])), k1_newton(k13_complex1(1^[], 2^[]), 3^[]), k13_complex1(k1_newton(1^[], 3^[]), k1_newton(2^[], 3^[]))]]
+1.1.2.1.1  [- (k13_complex1(k3_power(1^[], 3^[]), k3_power(2^[], 3^[]))=k13_complex1(k1_newton(1^[], 3^[]), k1_newton(2^[], 3^[]))), k3_power(1^[], 3^[])=k1_newton(1^[], 3^[]), k3_power(2^[], 3^[])=k1_newton(2^[], 3^[])]   (12)  substitution:[[_G5805, _G5940, _G5872, _G6009], [k3_power(1^[], 3^[]), k3_power(2^[], 3^[]), k1_newton(1^[], 3^[]), k1_newton(2^[], 3^[])]]
+1.1.2.1.1.1  [- (k3_power(1^[], 3^[])=k1_newton(1^[], 3^[])), v1_xreal_0(1^[]), v7_ordinal1(3^[])]   (7)  substitution:[[_G7501, _G7556], [1^[], 3^[]]]
+1.1.2.1.1.1.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.2.1.1.1.2  [-v7_ordinal1(3^[])]   (3)  
+1.1.2.1.1.2  [- (k3_power(2^[], 3^[])=k1_newton(2^[], 3^[])), v1_xreal_0(2^[]), v7_ordinal1(3^[])]   (7)  substitution:[[_G7501, _G7556], [2^[], 3^[]]]
+1.1.2.1.1.2.1  [-v1_xreal_0(2^[])]   (2)  
+1.1.2.1.1.2.2  [-v7_ordinal1(3^[])]   (3)  
+1.1.2.1.2  [- (k13_complex1(k1_newton(1^[], 3^[]), k1_newton(2^[], 3^[]))=k1_newton(k13_complex1(1^[], 2^[]), 3^[])), k1_newton(k13_complex1(1^[], 2^[]), 3^[])=k13_complex1(k1_newton(1^[], 3^[]), k1_newton(2^[], 3^[]))]   (15)  substitution:[[_G3085, _G3040], [k13_complex1(k1_newton(1^[], 3^[]), k1_newton(2^[], 3^[])), k1_newton(k13_complex1(1^[], 2^[]), 3^[])]]
+1.1.2.1.2.1  [- (k1_newton(k13_complex1(1^[], 2^[]), 3^[])=k13_complex1(k1_newton(1^[], 3^[]), k1_newton(2^[], 3^[]))), v1_xreal_0(1^[]), v1_xreal_0(2^[]), v7_ordinal1(3^[])]   (9)  substitution:[[_G8228, _G8334, _G8436], [1^[], 2^[], 3^[]]]
+1.1.2.1.2.1.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.2.1.2.1.2  [-v1_xreal_0(2^[])]   (2)  
+1.1.2.1.2.1.3  [-v7_ordinal1(3^[])]   (3)  
+------------------------------------------------------
+End of proof for t1_fib_num4

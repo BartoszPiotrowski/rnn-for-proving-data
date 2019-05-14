@@ -1,0 +1,35 @@
+
+t107_zfmisc_1 is a Theorem
+Start of proof for t107_zfmisc_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [1^[]=k1_xboole_0]
+ (2)  [- (k2_zfmisc_1(k1_tarski(2^[]), 1^[])=k1_xboole_0), - (k2_zfmisc_1(1^[], k1_tarski(2^[]))=k1_xboole_0)]
+ (3)  [- (k2_xboole_0(_G4013, k1_xboole_0)=_G4013)]
+ (4)  [k2_xboole_0(k1_tarski(_G4154), _G4200)=k1_xboole_0]
+ (5)  [- (k2_zfmisc_1(_G4378, _G4432)=k1_xboole_0), _G4378=k1_xboole_0]
+ (6)  [- (k2_zfmisc_1(_G4378, _G4432)=k1_xboole_0), _G4432=k1_xboole_0]
+ (7)  [k2_zfmisc_1(_G4378, _G4432)=k1_xboole_0, - (_G4378=k1_xboole_0), - (_G4432=k1_xboole_0)]
+ (8)  [- (_G1705=_G1705)]
+ (9)  [_G1804=_G1849, - (_G1849=_G1804)]
+ (10)  [- (_G2037=_G2150), _G2037=_G2093, _G2093=_G2150]
+ (11)  [- (k2_xboole_0(_G2487, _G2622)=k2_xboole_0(_G2554, _G2691)), _G2487=_G2554, _G2622=_G2691]
+ (12)  [_G3672=_G3721, - (k1_tarski(_G3672)=k1_tarski(_G3721))]
+ (13)  [- (k2_zfmisc_1(_G3084, _G3219)=k2_zfmisc_1(_G3151, _G3288)), _G3084=_G3151, _G3219=_G3288]
+
+Connection Proof:
+-----------------
+1  [1^[]=k1_xboole_0]   (1)  
+1.1  [- (1^[]=k1_xboole_0), k2_zfmisc_1(1^[], k1_tarski(2^[]))=k1_xboole_0, - (k1_tarski(2^[])=k1_xboole_0)]   (7)  substitution:[[_G4378, _G4432], [1^[], k1_tarski(2^[])]]
+1.1.1  [- (k2_zfmisc_1(1^[], k1_tarski(2^[]))=k1_xboole_0), - (k2_zfmisc_1(k1_tarski(2^[]), 1^[])=k1_xboole_0)]   (2)  
+1.1.1.1  [k2_zfmisc_1(k1_tarski(2^[]), 1^[])=k1_xboole_0, - (k1_tarski(2^[])=k1_xboole_0), - (1^[]=k1_xboole_0)]   (7)  substitution:[[_G4378, _G4432], [k1_tarski(2^[]), 1^[]]]
+1.1.1.1.1  [k1_tarski(2^[])=k1_xboole_0, - (k2_zfmisc_1(1^[], k1_tarski(2^[]))=k1_xboole_0)]   (6)  substitution:[[_G4432, _G4378], [k1_tarski(2^[]), 1^[]]]
+1.1.1.1.1.1  [k2_zfmisc_1(1^[], k1_tarski(2^[]))=k1_xboole_0]   (reduction:1.1)  
+1.1.1.1.2  [1^[]=k1_xboole_0]   (1)  
+1.1.2  [k1_tarski(2^[])=k1_xboole_0, - (k2_xboole_0(k1_tarski(2^[]), k1_tarski(2^[]))=k2_xboole_0(k1_xboole_0, k1_xboole_0)), k1_tarski(2^[])=k1_xboole_0]   (11)  substitution:[[_G2487, _G2554, _G2622, _G2691], [k1_tarski(2^[]), k1_xboole_0, k1_tarski(2^[]), k1_xboole_0]]
+1.1.2.1  [k2_xboole_0(k1_tarski(2^[]), k1_tarski(2^[]))=k2_xboole_0(k1_xboole_0, k1_xboole_0), - (k2_xboole_0(k1_tarski(2^[]), k1_tarski(2^[]))=k1_xboole_0), k2_xboole_0(k1_xboole_0, k1_xboole_0)=k1_xboole_0]   (10)  substitution:[[_G2037, _G2093, _G2150], [k2_xboole_0(k1_tarski(2^[]), k1_tarski(2^[])), k2_xboole_0(k1_xboole_0, k1_xboole_0), k1_xboole_0]]
+1.1.2.1.1  [k2_xboole_0(k1_tarski(2^[]), k1_tarski(2^[]))=k1_xboole_0]   (4)  substitution:[[_G4154, _G4200], [2^[], k1_tarski(2^[])]]
+1.1.2.1.2  [- (k2_xboole_0(k1_xboole_0, k1_xboole_0)=k1_xboole_0)]   (3)  substitution:[[_G4013], [k1_xboole_0]]
+1.1.2.2  [- (k1_tarski(2^[])=k1_xboole_0)]   (reduction:1.1)  
+------------------------------------------------------
+End of proof for t107_zfmisc_1

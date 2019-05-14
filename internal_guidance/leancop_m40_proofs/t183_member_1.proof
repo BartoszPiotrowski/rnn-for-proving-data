@@ -1,0 +1,56 @@
+
+t183_member_1 is a Theorem
+Start of proof for t183_member_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_membered(1^[])]
+ (2)  [-v1_membered(2^[])]
+ (3)  [-v1_xcmplx_0(3^[])]
+ (4)  [k21_member_1(k3_xboole_0(1^[], 2^[]), 3^[])=k3_xboole_0(k21_member_1(1^[], 3^[]), k21_member_1(2^[], 3^[]))]
+ (5)  [v1_membered(_G6550), -v1_membered(k3_xboole_0(_G6596, _G6550))]
+ (6)  [-v1_membered(k19_member_1(_G6783, _G6834)), v1_membered(_G6783), v1_xcmplx_0(_G6834)]
+ (7)  [v1_membered(_G7079), v1_membered(_G7185), v1_xcmplx_0(_G7287), - (k19_member_1(k3_xboole_0(_G7079, _G7185), _G7287)=k3_xboole_0(k19_member_1(_G7079, _G7287), k19_member_1(_G7185, _G7287)))]
+ (8)  [v1_membered(_G7724), v1_membered(_G7817), - (k5_member_1(k3_xboole_0(_G7724, _G7817))=k3_xboole_0(k5_member_1(_G7724), k5_member_1(_G7817)))]
+ (9)  [v1_membered(_G8132), v1_xcmplx_0(_G8221), - (k21_member_1(_G8132, _G8221)=k5_member_1(k19_member_1(_G8132, _G8221)))]
+ (10)  [- (_G3035=_G3035)]
+ (11)  [_G3134=_G3179, - (_G3179=_G3134)]
+ (12)  [- (_G3367=_G3480), _G3367=_G3423, _G3423=_G3480]
+ (13)  [-v1_membered(_G3866), _G3817=_G3866, v1_membered(_G3817)]
+ (14)  [-v1_xcmplx_0(_G4135), _G4086=_G4135, v1_xcmplx_0(_G4086)]
+ (15)  [_G4406=_G4455, - (k5_member_1(_G4406)=k5_member_1(_G4455))]
+ (16)  [- (k19_member_1(_G4684, _G4819)=k19_member_1(_G4751, _G4888)), _G4684=_G4751, _G4819=_G4888]
+ (17)  [- (k3_xboole_0(_G5281, _G5416)=k3_xboole_0(_G5348, _G5485)), _G5281=_G5348, _G5416=_G5485]
+ (18)  [- (k21_member_1(_G5869, _G6004)=k21_member_1(_G5936, _G6073)), _G5869=_G5936, _G6004=_G6073]
+
+Connection Proof:
+-----------------
+1  [k21_member_1(k3_xboole_0(1^[], 2^[]), 3^[])=k3_xboole_0(k21_member_1(1^[], 3^[]), k21_member_1(2^[], 3^[]))]   (4)  
+1.1  [- (k21_member_1(k3_xboole_0(1^[], 2^[]), 3^[])=k3_xboole_0(k21_member_1(1^[], 3^[]), k21_member_1(2^[], 3^[]))), k21_member_1(k3_xboole_0(1^[], 2^[]), 3^[])=k5_member_1(k19_member_1(k3_xboole_0(1^[], 2^[]), 3^[])), k5_member_1(k19_member_1(k3_xboole_0(1^[], 2^[]), 3^[]))=k3_xboole_0(k21_member_1(1^[], 3^[]), k21_member_1(2^[], 3^[]))]   (12)  substitution:[[_G3367, _G3480, _G3423], [k21_member_1(k3_xboole_0(1^[], 2^[]), 3^[]), k3_xboole_0(k21_member_1(1^[], 3^[]), k21_member_1(2^[], 3^[])), k5_member_1(k19_member_1(k3_xboole_0(1^[], 2^[]), 3^[]))]]
+1.1.1  [- (k21_member_1(k3_xboole_0(1^[], 2^[]), 3^[])=k5_member_1(k19_member_1(k3_xboole_0(1^[], 2^[]), 3^[]))), v1_membered(k3_xboole_0(1^[], 2^[])), v1_xcmplx_0(3^[])]   (9)  substitution:[[_G8132, _G8221], [k3_xboole_0(1^[], 2^[]), 3^[]]]
+1.1.1.1  [-v1_membered(k3_xboole_0(1^[], 2^[])), v1_membered(2^[])]   (5)  substitution:[[_G6596, _G6550], [1^[], 2^[]]]
+1.1.1.1.1  [-v1_membered(2^[])]   (2)  
+1.1.1.2  [-v1_xcmplx_0(3^[])]   (3)  
+1.1.2  [- (k5_member_1(k19_member_1(k3_xboole_0(1^[], 2^[]), 3^[]))=k3_xboole_0(k21_member_1(1^[], 3^[]), k21_member_1(2^[], 3^[]))), k5_member_1(k19_member_1(k3_xboole_0(1^[], 2^[]), 3^[]))=k3_xboole_0(k5_member_1(k19_member_1(1^[], 3^[])), k5_member_1(k19_member_1(2^[], 3^[]))), k3_xboole_0(k5_member_1(k19_member_1(1^[], 3^[])), k5_member_1(k19_member_1(2^[], 3^[])))=k3_xboole_0(k21_member_1(1^[], 3^[]), k21_member_1(2^[], 3^[]))]   (12)  substitution:[[_G3367, _G3480, _G3423], [k5_member_1(k19_member_1(k3_xboole_0(1^[], 2^[]), 3^[])), k3_xboole_0(k21_member_1(1^[], 3^[]), k21_member_1(2^[], 3^[])), k3_xboole_0(k5_member_1(k19_member_1(1^[], 3^[])), k5_member_1(k19_member_1(2^[], 3^[])))]]
+1.1.2.1  [- (k5_member_1(k19_member_1(k3_xboole_0(1^[], 2^[]), 3^[]))=k3_xboole_0(k5_member_1(k19_member_1(1^[], 3^[])), k5_member_1(k19_member_1(2^[], 3^[])))), k5_member_1(k19_member_1(k3_xboole_0(1^[], 2^[]), 3^[]))=k5_member_1(k3_xboole_0(k19_member_1(1^[], 3^[]), k19_member_1(2^[], 3^[]))), k5_member_1(k3_xboole_0(k19_member_1(1^[], 3^[]), k19_member_1(2^[], 3^[])))=k3_xboole_0(k5_member_1(k19_member_1(1^[], 3^[])), k5_member_1(k19_member_1(2^[], 3^[])))]   (12)  substitution:[[_G3367, _G3480, _G3423], [k5_member_1(k19_member_1(k3_xboole_0(1^[], 2^[]), 3^[])), k3_xboole_0(k5_member_1(k19_member_1(1^[], 3^[])), k5_member_1(k19_member_1(2^[], 3^[]))), k5_member_1(k3_xboole_0(k19_member_1(1^[], 3^[]), k19_member_1(2^[], 3^[])))]]
+1.1.2.1.1  [- (k5_member_1(k19_member_1(k3_xboole_0(1^[], 2^[]), 3^[]))=k5_member_1(k3_xboole_0(k19_member_1(1^[], 3^[]), k19_member_1(2^[], 3^[])))), k19_member_1(k3_xboole_0(1^[], 2^[]), 3^[])=k3_xboole_0(k19_member_1(1^[], 3^[]), k19_member_1(2^[], 3^[]))]   (15)  substitution:[[_G4406, _G4455], [k19_member_1(k3_xboole_0(1^[], 2^[]), 3^[]), k3_xboole_0(k19_member_1(1^[], 3^[]), k19_member_1(2^[], 3^[]))]]
+1.1.2.1.1.1  [- (k19_member_1(k3_xboole_0(1^[], 2^[]), 3^[])=k3_xboole_0(k19_member_1(1^[], 3^[]), k19_member_1(2^[], 3^[]))), v1_membered(1^[]), v1_membered(2^[]), v1_xcmplx_0(3^[])]   (7)  substitution:[[_G7079, _G7185, _G7287], [1^[], 2^[], 3^[]]]
+1.1.2.1.1.1.1  [-v1_membered(1^[])]   (1)  
+1.1.2.1.1.1.2  [-v1_membered(2^[])]   (2)  
+1.1.2.1.1.1.3  [-v1_xcmplx_0(3^[])]   (3)  
+1.1.2.1.2  [- (k5_member_1(k3_xboole_0(k19_member_1(1^[], 3^[]), k19_member_1(2^[], 3^[])))=k3_xboole_0(k5_member_1(k19_member_1(1^[], 3^[])), k5_member_1(k19_member_1(2^[], 3^[])))), v1_membered(k19_member_1(1^[], 3^[])), v1_membered(k19_member_1(2^[], 3^[]))]   (8)  substitution:[[_G7724, _G7817], [k19_member_1(1^[], 3^[]), k19_member_1(2^[], 3^[])]]
+1.1.2.1.2.1  [-v1_membered(k19_member_1(1^[], 3^[])), v1_membered(1^[]), v1_xcmplx_0(3^[])]   (6)  substitution:[[_G6783, _G6834], [1^[], 3^[]]]
+1.1.2.1.2.1.1  [-v1_membered(1^[])]   (1)  
+1.1.2.1.2.1.2  [-v1_xcmplx_0(3^[])]   (3)  
+1.1.2.1.2.2  [-v1_membered(k19_member_1(2^[], 3^[])), v1_membered(2^[]), v1_xcmplx_0(3^[])]   (6)  substitution:[[_G6783, _G6834], [2^[], 3^[]]]
+1.1.2.1.2.2.1  [-v1_membered(2^[])]   (2)  
+1.1.2.1.2.2.2  [-v1_xcmplx_0(3^[])]   (3)  
+1.1.2.2  [- (k3_xboole_0(k5_member_1(k19_member_1(1^[], 3^[])), k5_member_1(k19_member_1(2^[], 3^[])))=k3_xboole_0(k21_member_1(1^[], 3^[]), k21_member_1(2^[], 3^[]))), k3_xboole_0(k21_member_1(1^[], 3^[]), k21_member_1(2^[], 3^[]))=k3_xboole_0(k5_member_1(k19_member_1(1^[], 3^[])), k5_member_1(k19_member_1(2^[], 3^[])))]   (11)  substitution:[[_G3179, _G3134], [k3_xboole_0(k5_member_1(k19_member_1(1^[], 3^[])), k5_member_1(k19_member_1(2^[], 3^[]))), k3_xboole_0(k21_member_1(1^[], 3^[]), k21_member_1(2^[], 3^[]))]]
+1.1.2.2.1  [- (k3_xboole_0(k21_member_1(1^[], 3^[]), k21_member_1(2^[], 3^[]))=k3_xboole_0(k5_member_1(k19_member_1(1^[], 3^[])), k5_member_1(k19_member_1(2^[], 3^[])))), k21_member_1(1^[], 3^[])=k5_member_1(k19_member_1(1^[], 3^[])), k21_member_1(2^[], 3^[])=k5_member_1(k19_member_1(2^[], 3^[]))]   (17)  substitution:[[_G5281, _G5416, _G5348, _G5485], [k21_member_1(1^[], 3^[]), k21_member_1(2^[], 3^[]), k5_member_1(k19_member_1(1^[], 3^[])), k5_member_1(k19_member_1(2^[], 3^[]))]]
+1.1.2.2.1.1  [- (k21_member_1(1^[], 3^[])=k5_member_1(k19_member_1(1^[], 3^[]))), v1_membered(1^[]), v1_xcmplx_0(3^[])]   (9)  substitution:[[_G8132, _G8221], [1^[], 3^[]]]
+1.1.2.2.1.1.1  [-v1_membered(1^[])]   (1)  
+1.1.2.2.1.1.2  [-v1_xcmplx_0(3^[])]   (3)  
+1.1.2.2.1.2  [- (k21_member_1(2^[], 3^[])=k5_member_1(k19_member_1(2^[], 3^[]))), v1_membered(2^[]), v1_xcmplx_0(3^[])]   (9)  substitution:[[_G8132, _G8221], [2^[], 3^[]]]
+1.1.2.2.1.2.1  [-v1_membered(2^[])]   (2)  
+1.1.2.2.1.2.2  [-v1_xcmplx_0(3^[])]   (3)  
+------------------------------------------------------
+End of proof for t183_member_1

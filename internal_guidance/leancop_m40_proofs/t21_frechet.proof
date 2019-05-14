@@ -1,0 +1,45 @@
+
+t21_frechet is a Theorem
+Start of proof for t21_frechet
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v1_frechet(k3_topmetr)]
+ (2)  [- (k3_topmetr=k3_pcomps_1(k8_metric_1))]
+ (3)  [-v1_metric_1(k8_metric_1)]
+ (4)  [-l1_metric_1(k8_metric_1)]
+ (5)  [v2_struct_0(k8_metric_1)]
+ (6)  [-v1_metric_1(k8_metric_1)]
+ (7)  [-v1_metric_1(k8_metric_1)]
+ (8)  [-v6_metric_1(k8_metric_1)]
+ (9)  [-v7_metric_1(k8_metric_1)]
+ (10)  [-v8_metric_1(k8_metric_1)]
+ (11)  [-v9_metric_1(k8_metric_1)]
+ (12)  [-v1_frechet(k3_pcomps_1(_G6048)), -v2_struct_0(_G6048), v6_metric_1(_G6048), v7_metric_1(_G6048), v8_metric_1(_G6048), v9_metric_1(_G6048), l1_metric_1(_G6048)]
+ (13)  [_G5259=_G5308, - (k3_pcomps_1(_G5259)=k3_pcomps_1(_G5308))]
+ (14)  [- (_G2103=_G2103)]
+ (15)  [_G2202=_G2247, - (_G2247=_G2202)]
+ (16)  [- (_G2435=_G2548), _G2435=_G2491, _G2491=_G2548]
+ (17)  [-v1_metric_1(_G2934), _G2885=_G2934, v1_metric_1(_G2885)]
+ (18)  [-v2_struct_0(_G3212), _G3163=_G3212, v2_struct_0(_G3163)]
+ (19)  [-v6_metric_1(_G3490), _G3441=_G3490, v6_metric_1(_G3441)]
+ (20)  [-v7_metric_1(_G3768), _G3719=_G3768, v7_metric_1(_G3719)]
+ (21)  [-v8_metric_1(_G4046), _G3997=_G4046, v8_metric_1(_G3997)]
+ (22)  [-v9_metric_1(_G4324), _G4275=_G4324, v9_metric_1(_G4275)]
+ (23)  [-l1_metric_1(_G4602), _G4553=_G4602, l1_metric_1(_G4553)]
+ (24)  [-v1_frechet(_G4871), _G4822=_G4871, v1_frechet(_G4822)]
+
+Connection Proof:
+-----------------
+1  [v2_struct_0(k8_metric_1)]   (5)  
+1.1  [-v2_struct_0(k8_metric_1), -v1_frechet(k3_pcomps_1(k8_metric_1)), v6_metric_1(k8_metric_1), v7_metric_1(k8_metric_1), v8_metric_1(k8_metric_1), v9_metric_1(k8_metric_1), l1_metric_1(k8_metric_1)]   (12)  substitution:[[_G6048], [k8_metric_1]]
+1.1.1  [v1_frechet(k3_pcomps_1(k8_metric_1)), -v1_frechet(k3_topmetr), k3_pcomps_1(k8_metric_1)=k3_topmetr]   (24)  substitution:[[_G4822, _G4871], [k3_pcomps_1(k8_metric_1), k3_topmetr]]
+1.1.1.1  [v1_frechet(k3_topmetr)]   (1)  
+1.1.1.2  [- (k3_pcomps_1(k8_metric_1)=k3_topmetr), k3_topmetr=k3_pcomps_1(k8_metric_1)]   (15)  substitution:[[_G2247, _G2202], [k3_pcomps_1(k8_metric_1), k3_topmetr]]
+1.1.1.2.1  [- (k3_topmetr=k3_pcomps_1(k8_metric_1))]   (2)  
+1.1.2  [-v6_metric_1(k8_metric_1)]   (8)  
+1.1.3  [-v7_metric_1(k8_metric_1)]   (9)  
+1.1.4  [-v8_metric_1(k8_metric_1)]   (10)  
+1.1.5  [-v9_metric_1(k8_metric_1)]   (11)  
+1.1.6  [-l1_metric_1(k8_metric_1)]   (4)  
+------------------------------------------------------
+End of proof for t21_frechet

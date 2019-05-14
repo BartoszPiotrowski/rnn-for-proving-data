@@ -1,0 +1,51 @@
+
+l4_poset_1 is a Theorem
+Start of proof for l4_poset_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-6^[], m1_subset_1(_G4076, u1_struct_0(2^[])), -r1_orders_2(2^[], 3^[], _G4076)]
+ (2)  [-6^[], r1_lattice3(2^[], u1_struct_0(2^[]), 3^[])]
+ (3)  [-5^[], r1_orders_2(2^[], 3^[], 4^[])]
+ (4)  [-5^[], -m1_subset_1(4^[], u1_struct_0(2^[]))]
+ (5)  [-5^[], -r1_lattice3(2^[], u1_struct_0(2^[]), 3^[])]
+ (6)  [v2_struct_0(2^[])]
+ (7)  [-l1_orders_2(2^[])]
+ (8)  [-m1_subset_1(3^[], u1_struct_0(2^[]))]
+ (9)  [5^[], 6^[]]
+ (10)  [l1_orders_2(_G1140), m1_subset_1(_G1336, u1_struct_0(_G1140)), -r1_lattice3(_G1140, _G1256, _G1336), -m1_subset_1(1^[_G1336, _G1256, _G1140], u1_struct_0(_G1140))]
+ (11)  [l1_orders_2(_G1140), m1_subset_1(_G1336, u1_struct_0(_G1140)), -r1_lattice3(_G1140, _G1256, _G1336), -r2_hidden(1^[_G1336, _G1256, _G1140], _G1256)]
+ (12)  [l1_orders_2(_G1140), m1_subset_1(_G1336, u1_struct_0(_G1140)), -r1_lattice3(_G1140, _G1256, _G1336), r1_orders_2(_G1140, _G1336, 1^[_G1336, _G1256, _G1140])]
+ (13)  [l1_orders_2(_G1140), m1_subset_1(_G1336, u1_struct_0(_G1140)), r1_lattice3(_G1140, _G1256, _G1336), m1_subset_1(_G1588, u1_struct_0(_G1140)), r2_hidden(_G1588, _G1256), -r1_orders_2(_G1140, _G1336, _G1588)]
+ (14)  [l1_orders_2(_G2020), -l1_struct_0(_G2020)]
+ (15)  [v1_xboole_0(u1_struct_0(_G2151)), -v2_struct_0(_G2151), l1_struct_0(_G2151)]
+ (16)  [m1_subset_1(_G2379, _G2429), -v1_xboole_0(_G2429), -r2_hidden(_G2379, _G2429)]
+
+Connection Proof:
+-----------------
+1  [5^[], 6^[]]   (9)  
+1.1  [-5^[], r1_orders_2(2^[], 3^[], 4^[])]   (3)  
+1.1.1  [-r1_orders_2(2^[], 3^[], 4^[]), l1_orders_2(2^[]), m1_subset_1(3^[], u1_struct_0(2^[])), r1_lattice3(2^[], u1_struct_0(2^[]), 3^[]), m1_subset_1(4^[], u1_struct_0(2^[])), r2_hidden(4^[], u1_struct_0(2^[]))]   (13)  substitution:[[_G1140, _G1336, _G1588, _G1256], [2^[], 3^[], 4^[], u1_struct_0(2^[])]]
+1.1.1.1  [-l1_orders_2(2^[])]   (7)  
+1.1.1.2  [-m1_subset_1(3^[], u1_struct_0(2^[]))]   (8)  
+1.1.1.3  [-r1_lattice3(2^[], u1_struct_0(2^[]), 3^[]), -5^[]]   (5)  
+1.1.1.3.1  [5^[]]   (reduction:1)  
+1.1.1.4  [-m1_subset_1(4^[], u1_struct_0(2^[])), -5^[]]   (4)  
+1.1.1.4.1  [5^[]]   (reduction:1)  
+1.1.1.5  [-r2_hidden(4^[], u1_struct_0(2^[])), m1_subset_1(4^[], u1_struct_0(2^[])), -v1_xboole_0(u1_struct_0(2^[]))]   (16)  substitution:[[_G2379, _G2429], [4^[], u1_struct_0(2^[])]]
+1.1.1.5.1  [-m1_subset_1(4^[], u1_struct_0(2^[]))]   (lemmata:1.1.1)  
+1.1.1.5.2  [v1_xboole_0(u1_struct_0(2^[])), -v2_struct_0(2^[]), l1_struct_0(2^[])]   (15)  substitution:[[_G2151], [2^[]]]
+1.1.1.5.2.1  [v2_struct_0(2^[])]   (6)  
+1.1.1.5.2.2  [-l1_struct_0(2^[]), l1_orders_2(2^[])]   (14)  substitution:[[_G2020], [2^[]]]
+1.1.1.5.2.2.1  [-l1_orders_2(2^[])]   (7)  
+1.2  [-6^[], r1_lattice3(2^[], u1_struct_0(2^[]), 3^[])]   (2)  
+1.2.1  [-r1_lattice3(2^[], u1_struct_0(2^[]), 3^[]), l1_orders_2(2^[]), m1_subset_1(3^[], u1_struct_0(2^[])), -m1_subset_1(1^[3^[], u1_struct_0(2^[]), 2^[]], u1_struct_0(2^[]))]   (10)  substitution:[[_G1140, _G1256, _G1336], [2^[], u1_struct_0(2^[]), 3^[]]]
+1.2.1.1  [-l1_orders_2(2^[])]   (7)  
+1.2.1.2  [-m1_subset_1(3^[], u1_struct_0(2^[]))]   (8)  
+1.2.1.3  [m1_subset_1(1^[3^[], u1_struct_0(2^[]), 2^[]], u1_struct_0(2^[])), -6^[], -r1_orders_2(2^[], 3^[], 1^[3^[], u1_struct_0(2^[]), 2^[]])]   (1)  substitution:[[_G4076], [1^[3^[], u1_struct_0(2^[]), 2^[]]]]
+1.2.1.3.1  [6^[]]   (reduction:1)  
+1.2.1.3.2  [r1_orders_2(2^[], 3^[], 1^[3^[], u1_struct_0(2^[]), 2^[]]), l1_orders_2(2^[]), m1_subset_1(3^[], u1_struct_0(2^[])), -r1_lattice3(2^[], u1_struct_0(2^[]), 3^[])]   (12)  substitution:[[_G1140, _G1336, _G1256], [2^[], 3^[], u1_struct_0(2^[])]]
+1.2.1.3.2.1  [-l1_orders_2(2^[])]   (7)  
+1.2.1.3.2.2  [-m1_subset_1(3^[], u1_struct_0(2^[]))]   (8)  
+1.2.1.3.2.3  [r1_lattice3(2^[], u1_struct_0(2^[]), 3^[])]   (reduction:1.2)  
+------------------------------------------------------
+End of proof for l4_poset_1

@@ -1,0 +1,62 @@
+
+t18_square_1 is a Theorem
+Start of proof for t18_square_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k7_square_1(np__1)=np__1]
+ (2)  [m1_subset_1(_G8810, k1_numbers), -v1_xcmplx_0(_G8810)]
+ (3)  [m1_subset_1(_G8967, k1_numbers), -v1_xreal_0(_G8967)]
+ (4)  [v1_xcmplx_0(_G9124), - (k3_square_1(_G9124)=k3_xcmplx_0(_G9124, _G9124))]
+ (5)  [- (k2_xcmplx_0(np__1, k4_xcmplx_0(np__1))=k6_numbers)]
+ (6)  [- (c5__xreal_0=k4_xcmplx_0(np__1))]
+ (7)  [- (k1_arytm_0(c3__xreal_0, c5__xreal_0)=k6_numbers)]
+ (8)  [-m1_subset_1(np__1, k1_numbers)]
+ (9)  [-r1_xxreal_0(np__0, np__1)]
+ (10)  [- (k2_xcmplx_0(np__1, k4_xcmplx_0(np__1))=np__0)]
+ (11)  [- (k3_xcmplx_0(np__1, np__1)=np__1)]
+ (12)  [m1_subset_1(_G10267, k1_numbers), - (k7_square_1(_G10267)=k6_square_1(_G10267))]
+ (13)  [v1_xreal_0(_G9339), r1_xxreal_0(k6_numbers, _G9339), v1_xreal_0(_G9499), _G9499=k6_square_1(_G9339), -r1_xxreal_0(k6_numbers, _G9499)]
+ (14)  [v1_xreal_0(_G9339), r1_xxreal_0(k6_numbers, _G9339), v1_xreal_0(_G9499), _G9499=k6_square_1(_G9339), - (k3_square_1(_G9499)=_G9339)]
+ (15)  [v1_xreal_0(_G9339), r1_xxreal_0(k6_numbers, _G9339), v1_xreal_0(_G9499), - (_G9499=k6_square_1(_G9339)), r1_xxreal_0(k6_numbers, _G9499), k3_square_1(_G9499)=_G9339]
+ (16)  [_G5769=_G5818, - (k3_square_1(_G5769)=k3_square_1(_G5818))]
+ (17)  [- (k1_arytm_0(_G6047, _G6182)=k1_arytm_0(_G6114, _G6251)), _G6047=_G6114, _G6182=_G6251]
+ (18)  [_G6644=_G6693, - (k6_square_1(_G6644)=k6_square_1(_G6693))]
+ (19)  [- (k2_xcmplx_0(_G6922, _G7057)=k2_xcmplx_0(_G6989, _G7126)), _G6922=_G6989, _G7057=_G7126]
+ (20)  [_G7519=_G7568, - (k4_xcmplx_0(_G7519)=k4_xcmplx_0(_G7568))]
+ (21)  [_G8385=_G8434, - (k7_square_1(_G8385)=k7_square_1(_G8434))]
+ (22)  [- (k3_xcmplx_0(_G7797, _G7932)=k3_xcmplx_0(_G7864, _G8001)), _G7797=_G7864, _G7932=_G8001]
+ (23)  [- (_G3162=_G3162)]
+ (24)  [_G3261=_G3306, - (_G3306=_G3261)]
+ (25)  [- (_G3494=_G3607), _G3494=_G3550, _G3550=_G3607]
+ (26)  [-v1_xcmplx_0(_G3993), _G3944=_G3993, v1_xcmplx_0(_G3944)]
+ (27)  [-v1_xreal_0(_G4271), _G4222=_G4271, v1_xreal_0(_G4222)]
+ (28)  [-m1_subset_1(_G4567, _G4704), m1_subset_1(_G4500, _G4635), _G4500=_G4567, _G4635=_G4704]
+ (29)  [-r1_xxreal_0(_G5155, _G5292), r1_xxreal_0(_G5088, _G5223), _G5088=_G5155, _G5223=_G5292]
+
+Connection Proof:
+-----------------
+1  [k7_square_1(np__1)=np__1]   (1)  
+1.1  [- (k7_square_1(np__1)=np__1), np__1=k7_square_1(np__1)]   (24)  substitution:[[_G3306, _G3261], [k7_square_1(np__1), np__1]]
+1.1.1  [- (np__1=k7_square_1(np__1)), np__1=k6_square_1(np__1), k6_square_1(np__1)=k7_square_1(np__1)]   (25)  substitution:[[_G3494, _G3607, _G3550], [np__1, k7_square_1(np__1), k6_square_1(np__1)]]
+1.1.1.1  [- (np__1=k6_square_1(np__1)), v1_xreal_0(np__1), r1_xxreal_0(k6_numbers, np__1), v1_xreal_0(np__1), r1_xxreal_0(k6_numbers, np__1), k3_square_1(np__1)=np__1]   (15)  substitution:[[_G9499, _G9339], [np__1, np__1]]
+1.1.1.1.1  [-v1_xreal_0(np__1), m1_subset_1(np__1, k1_numbers)]   (3)  substitution:[[_G8967], [np__1]]
+1.1.1.1.1.1  [-m1_subset_1(np__1, k1_numbers)]   (8)  
+1.1.1.1.2  [-r1_xxreal_0(k6_numbers, np__1), r1_xxreal_0(np__0, np__1), np__0=k6_numbers, np__1=np__1]   (29)  substitution:[[_G5155, _G5292, _G5088, _G5223], [k6_numbers, np__1, np__0, np__1]]
+1.1.1.1.2.1  [-r1_xxreal_0(np__0, np__1)]   (9)  
+1.1.1.1.2.2  [- (np__0=k6_numbers), np__0=k2_xcmplx_0(np__1, k4_xcmplx_0(np__1)), k2_xcmplx_0(np__1, k4_xcmplx_0(np__1))=k6_numbers]   (25)  substitution:[[_G3494, _G3607, _G3550], [np__0, k6_numbers, k2_xcmplx_0(np__1, k4_xcmplx_0(np__1))]]
+1.1.1.1.2.2.1  [- (np__0=k2_xcmplx_0(np__1, k4_xcmplx_0(np__1))), k2_xcmplx_0(np__1, k4_xcmplx_0(np__1))=np__0]   (24)  substitution:[[_G3306, _G3261], [np__0, k2_xcmplx_0(np__1, k4_xcmplx_0(np__1))]]
+1.1.1.1.2.2.1.1  [- (k2_xcmplx_0(np__1, k4_xcmplx_0(np__1))=np__0)]   (10)  
+1.1.1.1.2.2.2  [- (k2_xcmplx_0(np__1, k4_xcmplx_0(np__1))=k6_numbers)]   (5)  
+1.1.1.1.2.3  [- (np__1=np__1)]   (23)  substitution:[[_G3162], [np__1]]
+1.1.1.1.3  [-v1_xreal_0(np__1)]   (lemmata:1.1.1.1)  
+1.1.1.1.4  [-r1_xxreal_0(k6_numbers, np__1)]   (lemmata:1.1.1.1)  
+1.1.1.1.5  [- (k3_square_1(np__1)=np__1), k3_square_1(np__1)=k3_xcmplx_0(np__1, np__1), k3_xcmplx_0(np__1, np__1)=np__1]   (25)  substitution:[[_G3494, _G3607, _G3550], [k3_square_1(np__1), np__1, k3_xcmplx_0(np__1, np__1)]]
+1.1.1.1.5.1  [- (k3_square_1(np__1)=k3_xcmplx_0(np__1, np__1)), v1_xcmplx_0(np__1)]   (4)  substitution:[[_G9124], [np__1]]
+1.1.1.1.5.1.1  [-v1_xcmplx_0(np__1), m1_subset_1(np__1, k1_numbers)]   (2)  substitution:[[_G8810], [np__1]]
+1.1.1.1.5.1.1.1  [-m1_subset_1(np__1, k1_numbers)]   (8)  
+1.1.1.1.5.2  [- (k3_xcmplx_0(np__1, np__1)=np__1)]   (11)  
+1.1.1.2  [- (k6_square_1(np__1)=k7_square_1(np__1)), k7_square_1(np__1)=k6_square_1(np__1)]   (24)  substitution:[[_G3306, _G3261], [k6_square_1(np__1), k7_square_1(np__1)]]
+1.1.1.2.1  [- (k7_square_1(np__1)=k6_square_1(np__1)), m1_subset_1(np__1, k1_numbers)]   (12)  substitution:[[_G10267], [np__1]]
+1.1.1.2.1.1  [-m1_subset_1(np__1, k1_numbers)]   (8)  
+------------------------------------------------------
+End of proof for t18_square_1

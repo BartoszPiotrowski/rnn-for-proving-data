@@ -1,0 +1,53 @@
+
+t88_xxreal_2 is a Theorem
+Start of proof for t88_xxreal_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v2_membered(4^[])]
+ (2)  [v6_xxreal_2(4^[])]
+ (3)  [v1_xxreal_0(_G4127), v1_xxreal_0(_G4137), v1_xxreal_0(_G4147), -r2_hidden(_G4147, 4^[]), r2_hidden(_G4127, 4^[]), r2_hidden(_G4137, 4^[]), r1_xxreal_0(_G4127, _G4147), r1_xxreal_0(_G4147, _G4137)]
+ (4)  [v2_membered(_G1501), -v1_xxreal_0(1^[_G1501]), -v6_xxreal_2(_G1501)]
+ (5)  [v2_membered(_G1501), -v1_xxreal_0(2^[_G1501]), -v6_xxreal_2(_G1501)]
+ (6)  [v2_membered(_G1501), -v1_xxreal_0(3^[_G1501]), -v6_xxreal_2(_G1501)]
+ (7)  [v2_membered(_G1501), -r2_hidden(1^[_G1501], _G1501), -v6_xxreal_2(_G1501)]
+ (8)  [v2_membered(_G1501), -r2_hidden(2^[_G1501], _G1501), -v6_xxreal_2(_G1501)]
+ (9)  [v2_membered(_G1501), r1_xxreal_0(3^[_G1501], 1^[_G1501]), -v6_xxreal_2(_G1501)]
+ (10)  [v2_membered(_G1501), r1_xxreal_0(2^[_G1501], 3^[_G1501]), -v6_xxreal_2(_G1501)]
+ (11)  [v2_membered(_G1501), r2_hidden(3^[_G1501], _G1501), -v6_xxreal_2(_G1501)]
+ (12)  [v1_xxreal_0(_G1197), v1_xxreal_0(_G1142), -r1_xxreal_0(_G1142, _G1197), -r1_xxreal_0(_G1197, _G1142)]
+
+Connection Proof:
+-----------------
+1  [v6_xxreal_2(4^[])]   (2)  
+1.1  [-v6_xxreal_2(4^[]), v2_membered(4^[]), r1_xxreal_0(2^[4^[]], 3^[4^[]])]   (10)  substitution:[[_G1501], [4^[]]]
+1.1.1  [-v2_membered(4^[])]   (1)  
+1.1.2  [-r1_xxreal_0(2^[4^[]], 3^[4^[]]), v1_xxreal_0(3^[4^[]]), v1_xxreal_0(2^[4^[]]), -r1_xxreal_0(3^[4^[]], 2^[4^[]])]   (12)  substitution:[[_G1142, _G1197], [2^[4^[]], 3^[4^[]]]]
+1.1.2.1  [-v1_xxreal_0(3^[4^[]]), v2_membered(4^[]), -v6_xxreal_2(4^[])]   (6)  substitution:[[_G1501], [4^[]]]
+1.1.2.1.1  [-v2_membered(4^[])]   (1)  
+1.1.2.1.2  [v6_xxreal_2(4^[])]   (2)  
+1.1.2.2  [-v1_xxreal_0(2^[4^[]]), v2_membered(4^[]), -v6_xxreal_2(4^[])]   (5)  substitution:[[_G1501], [4^[]]]
+1.1.2.2.1  [-v2_membered(4^[])]   (1)  
+1.1.2.2.2  [v6_xxreal_2(4^[])]   (2)  
+1.1.2.3  [r1_xxreal_0(3^[4^[]], 2^[4^[]]), v1_xxreal_0(1^[4^[]]), v1_xxreal_0(2^[4^[]]), v1_xxreal_0(3^[4^[]]), -r2_hidden(3^[4^[]], 4^[]), r2_hidden(1^[4^[]], 4^[]), r2_hidden(2^[4^[]], 4^[]), r1_xxreal_0(1^[4^[]], 3^[4^[]])]   (3)  substitution:[[_G4147, _G4137, _G4127], [3^[4^[]], 2^[4^[]], 1^[4^[]]]]
+1.1.2.3.1  [-v1_xxreal_0(1^[4^[]]), v2_membered(4^[]), -v6_xxreal_2(4^[])]   (4)  substitution:[[_G1501], [4^[]]]
+1.1.2.3.1.1  [-v2_membered(4^[])]   (1)  
+1.1.2.3.1.2  [v6_xxreal_2(4^[])]   (2)  
+1.1.2.3.2  [-v1_xxreal_0(2^[4^[]])]   (lemmata:1.1.2)  
+1.1.2.3.3  [-v1_xxreal_0(3^[4^[]])]   (lemmata:1.1.2)  
+1.1.2.3.4  [r2_hidden(3^[4^[]], 4^[]), v2_membered(4^[]), -v6_xxreal_2(4^[])]   (11)  substitution:[[_G1501], [4^[]]]
+1.1.2.3.4.1  [-v2_membered(4^[])]   (1)  
+1.1.2.3.4.2  [v6_xxreal_2(4^[])]   (2)  
+1.1.2.3.5  [-r2_hidden(1^[4^[]], 4^[]), v2_membered(4^[]), -v6_xxreal_2(4^[])]   (7)  substitution:[[_G1501], [4^[]]]
+1.1.2.3.5.1  [-v2_membered(4^[])]   (1)  
+1.1.2.3.5.2  [v6_xxreal_2(4^[])]   (2)  
+1.1.2.3.6  [-r2_hidden(2^[4^[]], 4^[]), v2_membered(4^[]), -v6_xxreal_2(4^[])]   (8)  substitution:[[_G1501], [4^[]]]
+1.1.2.3.6.1  [-v2_membered(4^[])]   (1)  
+1.1.2.3.6.2  [v6_xxreal_2(4^[])]   (2)  
+1.1.2.3.7  [-r1_xxreal_0(1^[4^[]], 3^[4^[]]), v1_xxreal_0(3^[4^[]]), v1_xxreal_0(1^[4^[]]), -r1_xxreal_0(3^[4^[]], 1^[4^[]])]   (12)  substitution:[[_G1142, _G1197], [1^[4^[]], 3^[4^[]]]]
+1.1.2.3.7.1  [-v1_xxreal_0(3^[4^[]])]   (lemmata:1.1.2.3)  
+1.1.2.3.7.2  [-v1_xxreal_0(1^[4^[]])]   (lemmata:1.1.2.3)  
+1.1.2.3.7.3  [r1_xxreal_0(3^[4^[]], 1^[4^[]]), v2_membered(4^[]), -v6_xxreal_2(4^[])]   (9)  substitution:[[_G1501], [4^[]]]
+1.1.2.3.7.3.1  [-v2_membered(4^[])]   (1)  
+1.1.2.3.7.3.2  [v6_xxreal_2(4^[])]   (2)  
+------------------------------------------------------
+End of proof for t88_xxreal_2

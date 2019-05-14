@@ -1,0 +1,40 @@
+
+t38_topgen_1 is a Theorem
+Start of proof for t38_topgen_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(1^[])]
+ (2)  [-v2_pre_topc(1^[])]
+ (3)  [-l1_pre_topc(1^[])]
+ (4)  [-m1_subset_1(2^[], k1_zfmisc_1(k1_zfmisc_1(u1_struct_0(1^[]))))]
+ (5)  [-v4_topgen_1(2^[], 1^[])]
+ (6)  [v2_topgen_1(k5_setfam_1(u1_struct_0(1^[]), 2^[]), 1^[])]
+ (7)  [l1_pre_topc(_G1382), v2_pre_topc(_G1382), m1_subset_1(_G1535, k1_zfmisc_1(u1_struct_0(_G1382))), v2_topgen_1(_G1535, _G1382), -r1_tarski(_G1535, k2_topgen_1(_G1382, _G1535))]
+ (8)  [l1_pre_topc(_G1382), v2_pre_topc(_G1382), m1_subset_1(_G1535, k1_zfmisc_1(u1_struct_0(_G1382))), -v2_topgen_1(_G1535, _G1382), r1_tarski(_G1535, k2_topgen_1(_G1382, _G1535))]
+ (9)  [m1_subset_1(_G1965, k1_zfmisc_1(k1_zfmisc_1(_G1911))), -m1_subset_1(k5_setfam_1(_G1911, _G1965), k1_zfmisc_1(_G1911))]
+ (10)  [-r1_tarski(_G2252, _G2365), r1_tarski(_G2252, _G2308), r1_tarski(_G2308, _G2365)]
+ (11)  [-r1_tarski(k5_setfam_1(u1_struct_0(_G2660), k3_topgen_1(_G2660, _G2896)), k2_topgen_1(_G2660, k5_setfam_1(u1_struct_0(_G2660), _G2896))), m1_subset_1(_G2896, k1_zfmisc_1(k1_zfmisc_1(u1_struct_0(_G2660)))), -v2_struct_0(_G2660), v2_pre_topc(_G2660), l1_pre_topc(_G2660)]
+ (12)  [l1_pre_topc(_G3353), v2_pre_topc(_G3353), -v2_struct_0(_G3353), m1_subset_1(_G3592, k1_zfmisc_1(k1_zfmisc_1(u1_struct_0(_G3353)))), v4_topgen_1(_G3592, _G3353), -r1_tarski(k5_setfam_1(u1_struct_0(_G3353), _G3592), k5_setfam_1(u1_struct_0(_G3353), k3_topgen_1(_G3353, _G3592)))]
+
+Connection Proof:
+-----------------
+1  [v2_topgen_1(k5_setfam_1(u1_struct_0(1^[]), 2^[]), 1^[])]   (6)  
+1.1  [-v2_topgen_1(k5_setfam_1(u1_struct_0(1^[]), 2^[]), 1^[]), l1_pre_topc(1^[]), v2_pre_topc(1^[]), m1_subset_1(k5_setfam_1(u1_struct_0(1^[]), 2^[]), k1_zfmisc_1(u1_struct_0(1^[]))), r1_tarski(k5_setfam_1(u1_struct_0(1^[]), 2^[]), k2_topgen_1(1^[], k5_setfam_1(u1_struct_0(1^[]), 2^[])))]   (8)  substitution:[[_G1535, _G1382], [k5_setfam_1(u1_struct_0(1^[]), 2^[]), 1^[]]]
+1.1.1  [-l1_pre_topc(1^[])]   (3)  
+1.1.2  [-v2_pre_topc(1^[])]   (2)  
+1.1.3  [-m1_subset_1(k5_setfam_1(u1_struct_0(1^[]), 2^[]), k1_zfmisc_1(u1_struct_0(1^[]))), m1_subset_1(2^[], k1_zfmisc_1(k1_zfmisc_1(u1_struct_0(1^[]))))]   (9)  substitution:[[_G1911, _G1965], [u1_struct_0(1^[]), 2^[]]]
+1.1.3.1  [-m1_subset_1(2^[], k1_zfmisc_1(k1_zfmisc_1(u1_struct_0(1^[]))))]   (4)  
+1.1.4  [-r1_tarski(k5_setfam_1(u1_struct_0(1^[]), 2^[]), k2_topgen_1(1^[], k5_setfam_1(u1_struct_0(1^[]), 2^[]))), r1_tarski(k5_setfam_1(u1_struct_0(1^[]), 2^[]), k5_setfam_1(u1_struct_0(1^[]), k3_topgen_1(1^[], 2^[]))), r1_tarski(k5_setfam_1(u1_struct_0(1^[]), k3_topgen_1(1^[], 2^[])), k2_topgen_1(1^[], k5_setfam_1(u1_struct_0(1^[]), 2^[])))]   (10)  substitution:[[_G2252, _G2365, _G2308], [k5_setfam_1(u1_struct_0(1^[]), 2^[]), k2_topgen_1(1^[], k5_setfam_1(u1_struct_0(1^[]), 2^[])), k5_setfam_1(u1_struct_0(1^[]), k3_topgen_1(1^[], 2^[]))]]
+1.1.4.1  [-r1_tarski(k5_setfam_1(u1_struct_0(1^[]), 2^[]), k5_setfam_1(u1_struct_0(1^[]), k3_topgen_1(1^[], 2^[]))), l1_pre_topc(1^[]), v2_pre_topc(1^[]), -v2_struct_0(1^[]), m1_subset_1(2^[], k1_zfmisc_1(k1_zfmisc_1(u1_struct_0(1^[])))), v4_topgen_1(2^[], 1^[])]   (12)  substitution:[[_G3353, _G3592], [1^[], 2^[]]]
+1.1.4.1.1  [-l1_pre_topc(1^[])]   (3)  
+1.1.4.1.2  [-v2_pre_topc(1^[])]   (2)  
+1.1.4.1.3  [v2_struct_0(1^[])]   (1)  
+1.1.4.1.4  [-m1_subset_1(2^[], k1_zfmisc_1(k1_zfmisc_1(u1_struct_0(1^[]))))]   (4)  
+1.1.4.1.5  [-v4_topgen_1(2^[], 1^[])]   (5)  
+1.1.4.2  [-r1_tarski(k5_setfam_1(u1_struct_0(1^[]), k3_topgen_1(1^[], 2^[])), k2_topgen_1(1^[], k5_setfam_1(u1_struct_0(1^[]), 2^[]))), m1_subset_1(2^[], k1_zfmisc_1(k1_zfmisc_1(u1_struct_0(1^[])))), -v2_struct_0(1^[]), v2_pre_topc(1^[]), l1_pre_topc(1^[])]   (11)  substitution:[[_G2660, _G2896], [1^[], 2^[]]]
+1.1.4.2.1  [-m1_subset_1(2^[], k1_zfmisc_1(k1_zfmisc_1(u1_struct_0(1^[]))))]   (4)  
+1.1.4.2.2  [v2_struct_0(1^[])]   (1)  
+1.1.4.2.3  [-v2_pre_topc(1^[])]   (2)  
+1.1.4.2.4  [-l1_pre_topc(1^[])]   (3)  
+------------------------------------------------------
+End of proof for t38_topgen_1

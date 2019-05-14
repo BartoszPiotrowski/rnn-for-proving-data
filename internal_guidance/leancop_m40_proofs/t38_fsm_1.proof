@@ -1,0 +1,71 @@
+
+t38_fsm_1 is a Theorem
+Start of proof for t38_fsm_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], k5_numbers)]
+ (2)  [v1_xboole_0(2^[])]
+ (3)  [v1_xboole_0(3^[])]
+ (4)  [v2_struct_0(4^[])]
+ (5)  [-v8_struct_0(4^[])]
+ (6)  [-l2_fsm_1(4^[], 2^[], 3^[])]
+ (7)  [- (k2_nat_1(1^[], np__1)=k5_card_1(u1_struct_0(4^[])))]
+ (8)  [m1_subset_1(_G1570, k5_numbers), r1_xxreal_0(_G1570, 1^[]), v4_fsm_1(k7_fsm_1(2^[], 3^[], 4^[], _G1570), 2^[], 3^[], 4^[])]
+ (9)  [v3_membered(_G1405), m1_subset_1(_G1408, _G1405), -v1_xreal_0(_G1408)]
+ (10)  [v1_xreal_0(_G1414), -v1_xxreal_0(_G1414)]
+ (11)  [m1_subset_1(_G1419, k1_zfmisc_1(k1_numbers)), -v3_membered(_G1419)]
+ (12)  [-m1_subset_1(k5_numbers, k1_zfmisc_1(k1_numbers))]
+ (13)  [-r1_xxreal_0(_G1432, _G1432), v1_xxreal_0(_G1432), v1_xxreal_0(_G1433)]
+ (14)  [m1_subset_1(_G1486, k5_numbers), -v1_xboole_0(_G1490), -v1_xboole_0(_G1493), l2_fsm_1(_G1496, _G1490, _G1493), -v2_struct_0(_G1496), k7_fsm_1(_G1490, _G1493, _G1496, _G1486)=k7_fsm_1(_G1490, _G1493, _G1496, k2_nat_1(_G1486, np__1)), -v4_fsm_1(k7_fsm_1(_G1490, _G1493, _G1496, _G1486), _G1490, _G1493, _G1496)]
+ (15)  [m1_subset_1(_G1441, k5_numbers), -v1_xboole_0(_G1445), -v1_xboole_0(_G1448), - (k7_fsm_1(_G1445, _G1448, _G1451, k2_nat_1(_G1441, np__1))=k7_fsm_1(_G1445, _G1448, _G1451, _G1441)), k2_nat_1(_G1441, np__1)=k5_card_1(u1_struct_0(_G1451)), -v2_struct_0(_G1451), v8_struct_0(_G1451), l2_fsm_1(_G1451, _G1445, _G1448)]
+ (16)  [_G1317=_G1318, - (k1_zfmisc_1(_G1317)=k1_zfmisc_1(_G1318))]
+ (17)  [- (k2_nat_1(_G1329, _G1331)=k2_nat_1(_G1330, _G1332)), _G1329=_G1330, _G1331=_G1332]
+ (18)  [_G1348=_G1349, - (k5_card_1(_G1348)=k5_card_1(_G1349))]
+ (19)  [_G1360=_G1361, - (u1_struct_0(_G1360)=u1_struct_0(_G1361))]
+ (20)  [- (k7_fsm_1(_G1372, _G1374, _G1376, _G1378)=k7_fsm_1(_G1373, _G1375, _G1377, _G1379)), _G1372=_G1373, _G1374=_G1375, _G1376=_G1377, _G1378=_G1379]
+ (21)  [- (_G1154=_G1154)]
+ (22)  [_G1158=_G1159, - (_G1159=_G1158)]
+ (23)  [- (_G1166=_G1168), _G1166=_G1167, _G1167=_G1168]
+ (24)  [-v1_xreal_0(_G1179), _G1178=_G1179, v1_xreal_0(_G1178)]
+ (25)  [-v3_membered(_G1188), _G1187=_G1188, v3_membered(_G1187)]
+ (26)  [-v1_xxreal_0(_G1197), _G1196=_G1197, v1_xxreal_0(_G1196)]
+ (27)  [-v1_xboole_0(_G1206), _G1205=_G1206, v1_xboole_0(_G1205)]
+ (28)  [-v2_struct_0(_G1215), _G1214=_G1215, v2_struct_0(_G1214)]
+ (29)  [-v8_struct_0(_G1224), _G1223=_G1224, v8_struct_0(_G1223)]
+ (30)  [-l2_fsm_1(_G1233, _G1235, _G1237), l2_fsm_1(_G1232, _G1234, _G1236), _G1232=_G1233, _G1234=_G1235, _G1236=_G1237]
+ (31)  [-m1_subset_1(_G1256, _G1258), m1_subset_1(_G1255, _G1257), _G1255=_G1256, _G1257=_G1258]
+ (32)  [-r1_xxreal_0(_G1272, _G1274), r1_xxreal_0(_G1271, _G1273), _G1271=_G1272, _G1273=_G1274]
+ (33)  [-v4_fsm_1(_G1288, _G1290, _G1292, _G1294), v4_fsm_1(_G1287, _G1289, _G1291, _G1293), _G1287=_G1288, _G1289=_G1290, _G1291=_G1292, _G1293=_G1294]
+
+Connection Proof:
+-----------------
+1  [m1_subset_1(1^[], k5_numbers), r1_xxreal_0(1^[], 1^[]), v4_fsm_1(k7_fsm_1(2^[], 3^[], 4^[], 1^[]), 2^[], 3^[], 4^[])]   (8)  substitution:[[_G1570], [1^[]]]
+1.1  [-m1_subset_1(1^[], k5_numbers)]   (1)  
+1.2  [-r1_xxreal_0(1^[], 1^[]), v1_xxreal_0(1^[]), v1_xxreal_0(1^[])]   (13)  substitution:[[_G1432, _G1433], [1^[], 1^[]]]
+1.2.1  [-v1_xxreal_0(1^[]), v1_xreal_0(1^[])]   (10)  substitution:[[_G1414], [1^[]]]
+1.2.1.1  [-v1_xreal_0(1^[]), v3_membered(k5_numbers), m1_subset_1(1^[], k5_numbers)]   (9)  substitution:[[_G1408, _G1405], [1^[], k5_numbers]]
+1.2.1.1.1  [-v3_membered(k5_numbers), m1_subset_1(k5_numbers, k1_zfmisc_1(k1_numbers))]   (11)  substitution:[[_G1419], [k5_numbers]]
+1.2.1.1.1.1  [-m1_subset_1(k5_numbers, k1_zfmisc_1(k1_numbers))]   (12)  
+1.2.1.1.2  [-m1_subset_1(1^[], k5_numbers)]   (1)  
+1.2.2  [-v1_xxreal_0(1^[]), v1_xreal_0(1^[])]   (10)  substitution:[[_G1414], [1^[]]]
+1.2.2.1  [-v1_xreal_0(1^[]), v3_membered(k5_numbers), m1_subset_1(1^[], k5_numbers)]   (9)  substitution:[[_G1408, _G1405], [1^[], k5_numbers]]
+1.2.2.1.1  [-v3_membered(k5_numbers), m1_subset_1(k5_numbers, k1_zfmisc_1(k1_numbers))]   (11)  substitution:[[_G1419], [k5_numbers]]
+1.2.2.1.1.1  [-m1_subset_1(k5_numbers, k1_zfmisc_1(k1_numbers))]   (12)  
+1.2.2.1.2  [-m1_subset_1(1^[], k5_numbers)]   (1)  
+1.3  [-v4_fsm_1(k7_fsm_1(2^[], 3^[], 4^[], 1^[]), 2^[], 3^[], 4^[]), m1_subset_1(1^[], k5_numbers), -v1_xboole_0(2^[]), -v1_xboole_0(3^[]), l2_fsm_1(4^[], 2^[], 3^[]), -v2_struct_0(4^[]), k7_fsm_1(2^[], 3^[], 4^[], 1^[])=k7_fsm_1(2^[], 3^[], 4^[], k2_nat_1(1^[], np__1))]   (14)  substitution:[[_G1490, _G1493, _G1496, _G1486], [2^[], 3^[], 4^[], 1^[]]]
+1.3.1  [-m1_subset_1(1^[], k5_numbers)]   (1)  
+1.3.2  [v1_xboole_0(2^[])]   (2)  
+1.3.3  [v1_xboole_0(3^[])]   (3)  
+1.3.4  [-l2_fsm_1(4^[], 2^[], 3^[])]   (6)  
+1.3.5  [v2_struct_0(4^[])]   (4)  
+1.3.6  [- (k7_fsm_1(2^[], 3^[], 4^[], 1^[])=k7_fsm_1(2^[], 3^[], 4^[], k2_nat_1(1^[], np__1))), k7_fsm_1(2^[], 3^[], 4^[], k2_nat_1(1^[], np__1))=k7_fsm_1(2^[], 3^[], 4^[], 1^[])]   (22)  substitution:[[_G1159, _G1158], [k7_fsm_1(2^[], 3^[], 4^[], 1^[]), k7_fsm_1(2^[], 3^[], 4^[], k2_nat_1(1^[], np__1))]]
+1.3.6.1  [- (k7_fsm_1(2^[], 3^[], 4^[], k2_nat_1(1^[], np__1))=k7_fsm_1(2^[], 3^[], 4^[], 1^[])), m1_subset_1(1^[], k5_numbers), -v1_xboole_0(2^[]), -v1_xboole_0(3^[]), k2_nat_1(1^[], np__1)=k5_card_1(u1_struct_0(4^[])), -v2_struct_0(4^[]), v8_struct_0(4^[]), l2_fsm_1(4^[], 2^[], 3^[])]   (15)  substitution:[[_G1445, _G1448, _G1451, _G1441], [2^[], 3^[], 4^[], 1^[]]]
+1.3.6.1.1  [-m1_subset_1(1^[], k5_numbers)]   (1)  
+1.3.6.1.2  [v1_xboole_0(2^[])]   (2)  
+1.3.6.1.3  [v1_xboole_0(3^[])]   (3)  
+1.3.6.1.4  [- (k2_nat_1(1^[], np__1)=k5_card_1(u1_struct_0(4^[])))]   (7)  
+1.3.6.1.5  [v2_struct_0(4^[])]   (4)  
+1.3.6.1.6  [-v8_struct_0(4^[])]   (5)  
+1.3.6.1.7  [-l2_fsm_1(4^[], 2^[], 3^[])]   (6)  
+------------------------------------------------------
+End of proof for t38_fsm_1

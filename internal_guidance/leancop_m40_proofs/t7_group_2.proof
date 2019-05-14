@@ -1,0 +1,71 @@
+
+t7_group_2 is a Theorem
+Start of proof for t7_group_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-4^[], - (2^[]=k1_xboole_0)]
+ (2)  [-4^[], k1_group_2(1^[], 2^[])=k1_xboole_0]
+ (3)  [-3^[], - (k1_group_2(1^[], 2^[])=k1_xboole_0)]
+ (4)  [-3^[], 2^[]=k1_xboole_0]
+ (5)  [v2_struct_0(1^[])]
+ (6)  [-v2_group_1(1^[])]
+ (7)  [-v3_group_1(1^[])]
+ (8)  [-l3_algstr_0(1^[])]
+ (9)  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]
+ (10)  [3^[], 4^[]]
+ (11)  [- (k1_subset_1(_G7032)=k1_xboole_0)]
+ (12)  [- (k1_group_2(_G7776, k1_subset_1(u1_struct_0(_G7776)))=k1_xboole_0), -v2_struct_0(_G7776), v2_group_1(_G7776), v3_group_1(_G7776), l3_algstr_0(_G7776)]
+ (13)  [- (k1_group_2(_G7147, k1_group_2(_G7147, _G7224))=_G7224), m1_subset_1(_G7224, k1_zfmisc_1(u1_struct_0(_G7147))), -v2_struct_0(_G7147), v2_group_1(_G7147), v3_group_1(_G7147), l3_algstr_0(_G7147)]
+ (14)  [_G5526=_G5575, - (k1_subset_1(_G5526)=k1_subset_1(_G5575))]
+ (15)  [_G5804=_G5853, - (k1_zfmisc_1(_G5804)=k1_zfmisc_1(_G5853))]
+ (16)  [_G6082=_G6131, - (u1_struct_0(_G6082)=u1_struct_0(_G6131))]
+ (17)  [- (k1_group_2(_G6351, _G6486)=k1_group_2(_G6418, _G6555)), _G6351=_G6418, _G6486=_G6555]
+ (18)  [- (_G2939=_G2939)]
+ (19)  [_G3038=_G3083, - (_G3083=_G3038)]
+ (20)  [- (_G3271=_G3384), _G3271=_G3327, _G3327=_G3384]
+ (21)  [-v2_struct_0(_G3770), _G3721=_G3770, v2_struct_0(_G3721)]
+ (22)  [-v2_group_1(_G4048), _G3999=_G4048, v2_group_1(_G3999)]
+ (23)  [-v3_group_1(_G4326), _G4277=_G4326, v3_group_1(_G4277)]
+ (24)  [-l3_algstr_0(_G4604), _G4555=_G4604, l3_algstr_0(_G4555)]
+ (25)  [-m1_subset_1(_G4891, _G5028), m1_subset_1(_G4824, _G4959), _G4824=_G4891, _G4959=_G5028]
+
+Connection Proof:
+-----------------
+1  [v2_struct_0(1^[])]   (5)  
+1.1  [-v2_struct_0(1^[]), - (k1_group_2(1^[], k1_subset_1(u1_struct_0(1^[])))=k1_xboole_0), v2_group_1(1^[]), v3_group_1(1^[]), l3_algstr_0(1^[])]   (12)  substitution:[[_G7776], [1^[]]]
+1.1.1  [k1_group_2(1^[], k1_subset_1(u1_struct_0(1^[])))=k1_xboole_0, - (2^[]=k1_xboole_0), 2^[]=k1_group_2(1^[], k1_subset_1(u1_struct_0(1^[])))]   (20)  substitution:[[_G3327, _G3384, _G3271], [k1_group_2(1^[], k1_subset_1(u1_struct_0(1^[]))), k1_xboole_0, 2^[]]]
+1.1.1.1  [2^[]=k1_xboole_0, - (2^[]=k1_subset_1(u1_struct_0(1^[]))), k1_xboole_0=k1_subset_1(u1_struct_0(1^[]))]   (20)  substitution:[[_G3271, _G3327, _G3384], [2^[], k1_xboole_0, k1_subset_1(u1_struct_0(1^[]))]]
+1.1.1.1.1  [2^[]=k1_subset_1(u1_struct_0(1^[])), - (k1_group_2(1^[], 2^[])=k1_group_2(1^[], k1_subset_1(u1_struct_0(1^[])))), 1^[]=1^[]]   (17)  substitution:[[_G6486, _G6555, _G6351, _G6418], [2^[], k1_subset_1(u1_struct_0(1^[])), 1^[], 1^[]]]
+1.1.1.1.1.1  [k1_group_2(1^[], 2^[])=k1_group_2(1^[], k1_subset_1(u1_struct_0(1^[]))), - (k1_group_2(1^[], 2^[])=k1_xboole_0), k1_group_2(1^[], k1_subset_1(u1_struct_0(1^[])))=k1_xboole_0]   (20)  substitution:[[_G3271, _G3327, _G3384], [k1_group_2(1^[], 2^[]), k1_group_2(1^[], k1_subset_1(u1_struct_0(1^[]))), k1_xboole_0]]
+1.1.1.1.1.1.1  [k1_group_2(1^[], 2^[])=k1_xboole_0, -4^[]]   (2)  
+1.1.1.1.1.1.1.1  [4^[], 3^[]]   (10)  
+1.1.1.1.1.1.1.1.1  [-3^[], 2^[]=k1_xboole_0]   (4)  
+1.1.1.1.1.1.1.1.1.1  [- (2^[]=k1_xboole_0)]   (reduction:1.1.1)  
+1.1.1.1.1.1.2  [- (k1_group_2(1^[], k1_subset_1(u1_struct_0(1^[])))=k1_xboole_0)]   (reduction:1.1)  
+1.1.1.1.1.2  [- (1^[]=1^[])]   (18)  substitution:[[_G2939], [1^[]]]
+1.1.1.1.2  [- (k1_xboole_0=k1_subset_1(u1_struct_0(1^[]))), k1_subset_1(u1_struct_0(1^[]))=k1_xboole_0]   (19)  substitution:[[_G3083, _G3038], [k1_xboole_0, k1_subset_1(u1_struct_0(1^[]))]]
+1.1.1.1.2.1  [- (k1_subset_1(u1_struct_0(1^[]))=k1_xboole_0)]   (11)  substitution:[[_G7032], [u1_struct_0(1^[])]]
+1.1.1.2  [- (2^[]=k1_group_2(1^[], k1_subset_1(u1_struct_0(1^[])))), 2^[]=k1_group_2(1^[], k1_xboole_0), k1_group_2(1^[], k1_xboole_0)=k1_group_2(1^[], k1_subset_1(u1_struct_0(1^[])))]   (20)  substitution:[[_G3271, _G3384, _G3327], [2^[], k1_group_2(1^[], k1_subset_1(u1_struct_0(1^[]))), k1_group_2(1^[], k1_xboole_0)]]
+1.1.1.2.1  [- (2^[]=k1_group_2(1^[], k1_xboole_0)), 2^[]=k1_group_2(1^[], k1_group_2(1^[], 2^[])), k1_group_2(1^[], k1_group_2(1^[], 2^[]))=k1_group_2(1^[], k1_xboole_0)]   (20)  substitution:[[_G3271, _G3384, _G3327], [2^[], k1_group_2(1^[], k1_xboole_0), k1_group_2(1^[], k1_group_2(1^[], 2^[]))]]
+1.1.1.2.1.1  [- (2^[]=k1_group_2(1^[], k1_group_2(1^[], 2^[]))), k1_group_2(1^[], k1_group_2(1^[], 2^[]))=2^[]]   (19)  substitution:[[_G3083, _G3038], [2^[], k1_group_2(1^[], k1_group_2(1^[], 2^[]))]]
+1.1.1.2.1.1.1  [- (k1_group_2(1^[], k1_group_2(1^[], 2^[]))=2^[]), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[]))), -v2_struct_0(1^[]), v2_group_1(1^[]), v3_group_1(1^[]), l3_algstr_0(1^[])]   (13)  substitution:[[_G7147, _G7224], [1^[], 2^[]]]
+1.1.1.2.1.1.1.1  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (9)  
+1.1.1.2.1.1.1.2  [v2_struct_0(1^[])]   (5)  
+1.1.1.2.1.1.1.3  [-v2_group_1(1^[])]   (6)  
+1.1.1.2.1.1.1.4  [-v3_group_1(1^[])]   (7)  
+1.1.1.2.1.1.1.5  [-l3_algstr_0(1^[])]   (8)  
+1.1.1.2.1.2  [- (k1_group_2(1^[], k1_group_2(1^[], 2^[]))=k1_group_2(1^[], k1_xboole_0)), 1^[]=1^[], k1_group_2(1^[], 2^[])=k1_xboole_0]   (17)  substitution:[[_G6351, _G6486, _G6418, _G6555], [1^[], k1_group_2(1^[], 2^[]), 1^[], k1_xboole_0]]
+1.1.1.2.1.2.1  [- (1^[]=1^[])]   (18)  substitution:[[_G2939], [1^[]]]
+1.1.1.2.1.2.2  [- (k1_group_2(1^[], 2^[])=k1_xboole_0), -3^[]]   (3)  
+1.1.1.2.1.2.2.1  [3^[], 4^[]]   (10)  
+1.1.1.2.1.2.2.1.1  [-4^[], - (2^[]=k1_xboole_0)]   (1)  
+1.1.1.2.1.2.2.1.1.1  [2^[]=k1_xboole_0]   (lemmata:1.1.1)  
+1.1.1.2.2  [- (k1_group_2(1^[], k1_xboole_0)=k1_group_2(1^[], k1_subset_1(u1_struct_0(1^[])))), 1^[]=1^[], k1_xboole_0=k1_subset_1(u1_struct_0(1^[]))]   (17)  substitution:[[_G6351, _G6486, _G6418, _G6555], [1^[], k1_xboole_0, 1^[], k1_subset_1(u1_struct_0(1^[]))]]
+1.1.1.2.2.1  [- (1^[]=1^[])]   (18)  substitution:[[_G2939], [1^[]]]
+1.1.1.2.2.2  [- (k1_xboole_0=k1_subset_1(u1_struct_0(1^[]))), k1_subset_1(u1_struct_0(1^[]))=k1_xboole_0]   (19)  substitution:[[_G3083, _G3038], [k1_xboole_0, k1_subset_1(u1_struct_0(1^[]))]]
+1.1.1.2.2.2.1  [- (k1_subset_1(u1_struct_0(1^[]))=k1_xboole_0)]   (11)  substitution:[[_G7032], [u1_struct_0(1^[])]]
+1.1.2  [-v2_group_1(1^[])]   (6)  
+1.1.3  [-v3_group_1(1^[])]   (7)  
+1.1.4  [-l3_algstr_0(1^[])]   (8)  
+------------------------------------------------------
+End of proof for t7_group_2

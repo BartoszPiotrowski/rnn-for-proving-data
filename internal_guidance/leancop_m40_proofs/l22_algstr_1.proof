@@ -1,0 +1,60 @@
+
+l22_algstr_1 is a Theorem
+Start of proof for l22_algstr_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-4^[], k6_algstr_0(k8_algstr_0, k5_struct_0(k8_algstr_0), 3^[])=3^[]]
+ (2)  [-4^[], -m1_subset_1(3^[], u1_struct_0(k8_algstr_0))]
+ (3)  [-2^[], k6_algstr_0(k8_algstr_0, 1^[], k5_struct_0(k8_algstr_0))=1^[]]
+ (4)  [-2^[], -m1_subset_1(1^[], u1_struct_0(k8_algstr_0))]
+ (5)  [2^[], 4^[]]
+ (6)  [l3_struct_0(_G6477), -m1_subset_1(k5_struct_0(_G6477), u1_struct_0(_G6477))]
+ (7)  [-l4_algstr_0(k8_algstr_0)]
+ (8)  [l4_algstr_0(_G6698), -l3_struct_0(_G6698)]
+ (9)  [l4_algstr_0(_G6698), -l3_algstr_0(_G6698)]
+ (10)  [m1_subset_1(_G6887, u1_struct_0(k8_algstr_0)), m1_subset_1(_G7013, u1_struct_0(k8_algstr_0)), - (k6_algstr_0(k8_algstr_0, _G6887, _G7013)=k5_struct_0(k8_algstr_0))]
+ (11)  [m1_subset_1(_G7336, u1_struct_0(k8_algstr_0)), m1_subset_1(_G7458, u1_struct_0(k8_algstr_0)), - (_G7336=_G7458)]
+ (12)  [_G4839=_G4888, - (u1_struct_0(_G4839)=u1_struct_0(_G4888))]
+ (13)  [_G6136=_G6185, - (k5_struct_0(_G6136)=k5_struct_0(_G6185))]
+ (14)  [- (k6_algstr_0(_G5117, _G5288, _G5463)=k6_algstr_0(_G5202, _G5375, _G5552)), _G5117=_G5202, _G5288=_G5375, _G5463=_G5552]
+ (15)  [- (_G2551=_G2551)]
+ (16)  [_G2650=_G2695, - (_G2695=_G2650)]
+ (17)  [- (_G2883=_G2996), _G2883=_G2939, _G2939=_G2996]
+ (18)  [-l4_algstr_0(_G3382), _G3333=_G3382, l4_algstr_0(_G3333)]
+ (19)  [-l3_struct_0(_G3660), _G3611=_G3660, l3_struct_0(_G3611)]
+ (20)  [-l3_algstr_0(_G3938), _G3889=_G3938, l3_algstr_0(_G3889)]
+ (21)  [-m1_subset_1(_G4225, _G4362), m1_subset_1(_G4158, _G4293), _G4158=_G4225, _G4293=_G4362]
+
+Connection Proof:
+-----------------
+1  [2^[], 4^[]]   (5)  
+1.1  [-2^[], k6_algstr_0(k8_algstr_0, 1^[], k5_struct_0(k8_algstr_0))=1^[]]   (3)  
+1.1.1  [- (k6_algstr_0(k8_algstr_0, 1^[], k5_struct_0(k8_algstr_0))=1^[]), k6_algstr_0(k8_algstr_0, 1^[], k5_struct_0(k8_algstr_0))=k5_struct_0(k8_algstr_0), k5_struct_0(k8_algstr_0)=1^[]]   (17)  substitution:[[_G2883, _G2996, _G2939], [k6_algstr_0(k8_algstr_0, 1^[], k5_struct_0(k8_algstr_0)), 1^[], k5_struct_0(k8_algstr_0)]]
+1.1.1.1  [- (k6_algstr_0(k8_algstr_0, 1^[], k5_struct_0(k8_algstr_0))=k5_struct_0(k8_algstr_0)), m1_subset_1(1^[], u1_struct_0(k8_algstr_0)), m1_subset_1(k5_struct_0(k8_algstr_0), u1_struct_0(k8_algstr_0))]   (10)  substitution:[[_G6887, _G7013], [1^[], k5_struct_0(k8_algstr_0)]]
+1.1.1.1.1  [-m1_subset_1(1^[], u1_struct_0(k8_algstr_0)), -2^[]]   (4)  
+1.1.1.1.1.1  [2^[]]   (reduction:1)  
+1.1.1.1.2  [-m1_subset_1(k5_struct_0(k8_algstr_0), u1_struct_0(k8_algstr_0)), l3_struct_0(k8_algstr_0)]   (6)  substitution:[[_G6477], [k8_algstr_0]]
+1.1.1.1.2.1  [-l3_struct_0(k8_algstr_0), l4_algstr_0(k8_algstr_0)]   (8)  substitution:[[_G6698], [k8_algstr_0]]
+1.1.1.1.2.1.1  [-l4_algstr_0(k8_algstr_0)]   (7)  
+1.1.1.2  [- (k5_struct_0(k8_algstr_0)=1^[]), m1_subset_1(k5_struct_0(k8_algstr_0), u1_struct_0(k8_algstr_0)), m1_subset_1(1^[], u1_struct_0(k8_algstr_0))]   (11)  substitution:[[_G7336, _G7458], [k5_struct_0(k8_algstr_0), 1^[]]]
+1.1.1.2.1  [-m1_subset_1(k5_struct_0(k8_algstr_0), u1_struct_0(k8_algstr_0)), l3_struct_0(k8_algstr_0)]   (6)  substitution:[[_G6477], [k8_algstr_0]]
+1.1.1.2.1.1  [-l3_struct_0(k8_algstr_0), l4_algstr_0(k8_algstr_0)]   (8)  substitution:[[_G6698], [k8_algstr_0]]
+1.1.1.2.1.1.1  [-l4_algstr_0(k8_algstr_0)]   (7)  
+1.1.1.2.2  [-m1_subset_1(1^[], u1_struct_0(k8_algstr_0)), -2^[]]   (4)  
+1.1.1.2.2.1  [2^[]]   (reduction:1)  
+1.2  [-4^[], k6_algstr_0(k8_algstr_0, k5_struct_0(k8_algstr_0), 3^[])=3^[]]   (1)  
+1.2.1  [- (k6_algstr_0(k8_algstr_0, k5_struct_0(k8_algstr_0), 3^[])=3^[]), k6_algstr_0(k8_algstr_0, k5_struct_0(k8_algstr_0), 3^[])=k5_struct_0(k8_algstr_0), k5_struct_0(k8_algstr_0)=3^[]]   (17)  substitution:[[_G2883, _G2996, _G2939], [k6_algstr_0(k8_algstr_0, k5_struct_0(k8_algstr_0), 3^[]), 3^[], k5_struct_0(k8_algstr_0)]]
+1.2.1.1  [- (k6_algstr_0(k8_algstr_0, k5_struct_0(k8_algstr_0), 3^[])=k5_struct_0(k8_algstr_0)), m1_subset_1(k5_struct_0(k8_algstr_0), u1_struct_0(k8_algstr_0)), m1_subset_1(3^[], u1_struct_0(k8_algstr_0))]   (10)  substitution:[[_G6887, _G7013], [k5_struct_0(k8_algstr_0), 3^[]]]
+1.2.1.1.1  [-m1_subset_1(k5_struct_0(k8_algstr_0), u1_struct_0(k8_algstr_0)), l3_struct_0(k8_algstr_0)]   (6)  substitution:[[_G6477], [k8_algstr_0]]
+1.2.1.1.1.1  [-l3_struct_0(k8_algstr_0), l4_algstr_0(k8_algstr_0)]   (8)  substitution:[[_G6698], [k8_algstr_0]]
+1.2.1.1.1.1.1  [-l4_algstr_0(k8_algstr_0)]   (7)  
+1.2.1.1.2  [-m1_subset_1(3^[], u1_struct_0(k8_algstr_0)), -4^[]]   (2)  
+1.2.1.1.2.1  [4^[]]   (reduction:1)  
+1.2.1.2  [- (k5_struct_0(k8_algstr_0)=3^[]), m1_subset_1(k5_struct_0(k8_algstr_0), u1_struct_0(k8_algstr_0)), m1_subset_1(3^[], u1_struct_0(k8_algstr_0))]   (11)  substitution:[[_G7336, _G7458], [k5_struct_0(k8_algstr_0), 3^[]]]
+1.2.1.2.1  [-m1_subset_1(k5_struct_0(k8_algstr_0), u1_struct_0(k8_algstr_0)), l3_struct_0(k8_algstr_0)]   (6)  substitution:[[_G6477], [k8_algstr_0]]
+1.2.1.2.1.1  [-l3_struct_0(k8_algstr_0), l4_algstr_0(k8_algstr_0)]   (8)  substitution:[[_G6698], [k8_algstr_0]]
+1.2.1.2.1.1.1  [-l4_algstr_0(k8_algstr_0)]   (7)  
+1.2.1.2.2  [-m1_subset_1(3^[], u1_struct_0(k8_algstr_0)), -4^[]]   (2)  
+1.2.1.2.2.1  [4^[]]   (reduction:1)  
+------------------------------------------------------
+End of proof for l22_algstr_1

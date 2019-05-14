@@ -1,0 +1,67 @@
+
+t3_finseqop is a Theorem
+Start of proof for t3_finseqop
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(1^[])]
+ (2)  [-v1_funct_1(1^[])]
+ (3)  [-v1_relat_1(2^[])]
+ (4)  [-v1_funct_1(2^[])]
+ (5)  [k3_funcop_1(1^[], k1_xboole_0, 2^[])=k1_xboole_0, k3_funcop_1(1^[], 2^[], k1_xboole_0)=k1_xboole_0]
+ (6)  [-v1_relat_1(k1_xboole_0)]
+ (7)  [-v5_relat_1(k1_xboole_0, _G8608)]
+ (8)  [-v1_funct_1(k1_xboole_0)]
+ (9)  [-v5_ordinal1(k1_xboole_0)]
+ (10)  [v1_relat_1(_G8863), - (k3_relat_1(k1_xboole_0, _G8863)=k1_xboole_0)]
+ (11)  [v1_relat_1(_G8863), - (k3_relat_1(_G8863, k1_xboole_0)=k1_xboole_0)]
+ (12)  [- (k13_funct_3(k1_xboole_0, _G8225)=k1_xboole_0), v1_relat_1(_G8225), v1_funct_1(_G8225)]
+ (13)  [- (k13_funct_3(_G8225, k1_xboole_0)=k1_xboole_0), v1_relat_1(_G8225), v1_funct_1(_G8225)]
+ (14)  [v1_funct_1(_G7441), v1_relat_1(_G7441), v1_funct_1(_G7610), v1_relat_1(_G7610), - (k3_funcop_1(_G7441, _G7610, _G7770)=k3_relat_1(k13_funct_3(_G7610, _G7770), _G7441)), v1_relat_1(_G7770), v1_funct_1(_G7770)]
+ (15)  [- (k13_funct_3(_G5165, _G5300)=k13_funct_3(_G5232, _G5369)), _G5165=_G5232, _G5300=_G5369]
+ (16)  [- (k3_relat_1(_G5762, _G5897)=k3_relat_1(_G5829, _G5966)), _G5762=_G5829, _G5897=_G5966]
+ (17)  [- (k3_funcop_1(_G6350, _G6521, _G6696)=k3_funcop_1(_G6435, _G6608, _G6785)), _G6350=_G6435, _G6521=_G6608, _G6696=_G6785]
+ (18)  [- (_G2877=_G2877)]
+ (19)  [_G2976=_G3021, - (_G3021=_G2976)]
+ (20)  [- (_G3209=_G3322), _G3209=_G3265, _G3265=_G3322]
+ (21)  [-v5_relat_1(_G3726, _G3863), v5_relat_1(_G3659, _G3794), _G3659=_G3726, _G3794=_G3863]
+ (22)  [-v5_ordinal1(_G4305), _G4256=_G4305, v5_ordinal1(_G4256)]
+ (23)  [-v1_relat_1(_G4583), _G4534=_G4583, v1_relat_1(_G4534)]
+ (24)  [-v1_funct_1(_G4852), _G4803=_G4852, v1_funct_1(_G4803)]
+
+Connection Proof:
+-----------------
+1  [k3_funcop_1(1^[], k1_xboole_0, 2^[])=k1_xboole_0, k3_funcop_1(1^[], 2^[], k1_xboole_0)=k1_xboole_0]   (5)  
+1.1  [- (k3_funcop_1(1^[], k1_xboole_0, 2^[])=k1_xboole_0), k3_funcop_1(1^[], k1_xboole_0, 2^[])=k3_relat_1(k13_funct_3(k1_xboole_0, 2^[]), 1^[]), k3_relat_1(k13_funct_3(k1_xboole_0, 2^[]), 1^[])=k1_xboole_0]   (20)  substitution:[[_G3209, _G3322, _G3265], [k3_funcop_1(1^[], k1_xboole_0, 2^[]), k1_xboole_0, k3_relat_1(k13_funct_3(k1_xboole_0, 2^[]), 1^[])]]
+1.1.1  [- (k3_funcop_1(1^[], k1_xboole_0, 2^[])=k3_relat_1(k13_funct_3(k1_xboole_0, 2^[]), 1^[])), v1_funct_1(1^[]), v1_relat_1(1^[]), v1_funct_1(k1_xboole_0), v1_relat_1(k1_xboole_0), v1_relat_1(2^[]), v1_funct_1(2^[])]   (14)  substitution:[[_G7441, _G7610, _G7770], [1^[], k1_xboole_0, 2^[]]]
+1.1.1.1  [-v1_funct_1(1^[])]   (2)  
+1.1.1.2  [-v1_relat_1(1^[])]   (1)  
+1.1.1.3  [-v1_funct_1(k1_xboole_0)]   (8)  
+1.1.1.4  [-v1_relat_1(k1_xboole_0)]   (6)  
+1.1.1.5  [-v1_relat_1(2^[])]   (3)  
+1.1.1.6  [-v1_funct_1(2^[])]   (4)  
+1.1.2  [- (k3_relat_1(k13_funct_3(k1_xboole_0, 2^[]), 1^[])=k1_xboole_0), k3_relat_1(k13_funct_3(k1_xboole_0, 2^[]), 1^[])=k3_relat_1(k1_xboole_0, 1^[]), k3_relat_1(k1_xboole_0, 1^[])=k1_xboole_0]   (20)  substitution:[[_G3209, _G3322, _G3265], [k3_relat_1(k13_funct_3(k1_xboole_0, 2^[]), 1^[]), k1_xboole_0, k3_relat_1(k1_xboole_0, 1^[])]]
+1.1.2.1  [- (k3_relat_1(k13_funct_3(k1_xboole_0, 2^[]), 1^[])=k3_relat_1(k1_xboole_0, 1^[])), k13_funct_3(k1_xboole_0, 2^[])=k1_xboole_0, 1^[]=1^[]]   (16)  substitution:[[_G5762, _G5897, _G5829, _G5966], [k13_funct_3(k1_xboole_0, 2^[]), 1^[], k1_xboole_0, 1^[]]]
+1.1.2.1.1  [- (k13_funct_3(k1_xboole_0, 2^[])=k1_xboole_0), v1_relat_1(2^[]), v1_funct_1(2^[])]   (12)  substitution:[[_G8225], [2^[]]]
+1.1.2.1.1.1  [-v1_relat_1(2^[])]   (3)  
+1.1.2.1.1.2  [-v1_funct_1(2^[])]   (4)  
+1.1.2.1.2  [- (1^[]=1^[])]   (18)  substitution:[[_G2877], [1^[]]]
+1.1.2.2  [- (k3_relat_1(k1_xboole_0, 1^[])=k1_xboole_0), v1_relat_1(1^[])]   (10)  substitution:[[_G8863], [1^[]]]
+1.1.2.2.1  [-v1_relat_1(1^[])]   (1)  
+1.2  [- (k3_funcop_1(1^[], 2^[], k1_xboole_0)=k1_xboole_0), k3_funcop_1(1^[], 2^[], k1_xboole_0)=k3_relat_1(k13_funct_3(2^[], k1_xboole_0), 1^[]), k3_relat_1(k13_funct_3(2^[], k1_xboole_0), 1^[])=k1_xboole_0]   (20)  substitution:[[_G3209, _G3322, _G3265], [k3_funcop_1(1^[], 2^[], k1_xboole_0), k1_xboole_0, k3_relat_1(k13_funct_3(2^[], k1_xboole_0), 1^[])]]
+1.2.1  [- (k3_funcop_1(1^[], 2^[], k1_xboole_0)=k3_relat_1(k13_funct_3(2^[], k1_xboole_0), 1^[])), v1_funct_1(1^[]), v1_relat_1(1^[]), v1_funct_1(2^[]), v1_relat_1(2^[]), v1_relat_1(k1_xboole_0), v1_funct_1(k1_xboole_0)]   (14)  substitution:[[_G7441, _G7610, _G7770], [1^[], 2^[], k1_xboole_0]]
+1.2.1.1  [-v1_funct_1(1^[])]   (2)  
+1.2.1.2  [-v1_relat_1(1^[])]   (1)  
+1.2.1.3  [-v1_funct_1(2^[])]   (4)  
+1.2.1.4  [-v1_relat_1(2^[])]   (3)  
+1.2.1.5  [-v1_relat_1(k1_xboole_0)]   (6)  
+1.2.1.6  [-v1_funct_1(k1_xboole_0)]   (8)  
+1.2.2  [- (k3_relat_1(k13_funct_3(2^[], k1_xboole_0), 1^[])=k1_xboole_0), k3_relat_1(k13_funct_3(2^[], k1_xboole_0), 1^[])=k3_relat_1(k1_xboole_0, 1^[]), k3_relat_1(k1_xboole_0, 1^[])=k1_xboole_0]   (20)  substitution:[[_G3209, _G3322, _G3265], [k3_relat_1(k13_funct_3(2^[], k1_xboole_0), 1^[]), k1_xboole_0, k3_relat_1(k1_xboole_0, 1^[])]]
+1.2.2.1  [- (k3_relat_1(k13_funct_3(2^[], k1_xboole_0), 1^[])=k3_relat_1(k1_xboole_0, 1^[])), k13_funct_3(2^[], k1_xboole_0)=k1_xboole_0, 1^[]=1^[]]   (16)  substitution:[[_G5762, _G5897, _G5829, _G5966], [k13_funct_3(2^[], k1_xboole_0), 1^[], k1_xboole_0, 1^[]]]
+1.2.2.1.1  [- (k13_funct_3(2^[], k1_xboole_0)=k1_xboole_0), v1_relat_1(2^[]), v1_funct_1(2^[])]   (13)  substitution:[[_G8225], [2^[]]]
+1.2.2.1.1.1  [-v1_relat_1(2^[])]   (3)  
+1.2.2.1.1.2  [-v1_funct_1(2^[])]   (4)  
+1.2.2.1.2  [- (1^[]=1^[])]   (18)  substitution:[[_G2877], [1^[]]]
+1.2.2.2  [- (k3_relat_1(k1_xboole_0, 1^[])=k1_xboole_0), v1_relat_1(1^[])]   (10)  substitution:[[_G8863], [1^[]]]
+1.2.2.2.1  [-v1_relat_1(1^[])]   (1)  
+------------------------------------------------------
+End of proof for t3_finseqop

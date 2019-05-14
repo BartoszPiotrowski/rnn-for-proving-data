@@ -1,0 +1,31 @@
+
+t2_xboole_1 is a Theorem
+Start of proof for t2_xboole_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [r1_tarski(k1_xboole_0, 3^[])]
+ (2)  [v1_xboole_0(_G3687), r2_hidden(_G3765, _G3687)]
+ (3)  [-v1_xboole_0(_G3687), -r2_hidden(1^[_G3687], _G3687)]
+ (4)  [- (k1_xboole_0=o_0_0_xboole_0)]
+ (5)  [-v1_xboole_0(o_0_0_xboole_0)]
+ (6)  [-r1_tarski(_G3972, _G4028), -r2_hidden(2^[_G4028, _G3972], _G3972)]
+ (7)  [-r1_tarski(_G3972, _G4028), r2_hidden(2^[_G4028, _G3972], _G4028)]
+ (8)  [r1_tarski(_G3972, _G4028), r2_hidden(_G4142, _G3972), -r2_hidden(_G4142, _G4028)]
+ (9)  [- (_G1379=_G1379)]
+ (10)  [_G1478=_G1523, - (_G1523=_G1478)]
+ (11)  [- (_G1711=_G1824), _G1711=_G1767, _G1767=_G1824]
+ (12)  [-r2_hidden(_G2228, _G2365), r2_hidden(_G2161, _G2296), _G2161=_G2228, _G2296=_G2365]
+ (13)  [-v1_xboole_0(_G2807), _G2758=_G2807, v1_xboole_0(_G2758)]
+ (14)  [-r1_tarski(_G3094, _G3231), r1_tarski(_G3027, _G3162), _G3027=_G3094, _G3162=_G3231]
+
+Connection Proof:
+-----------------
+1  [v1_xboole_0(o_0_0_xboole_0), r2_hidden(2^[3^[], k1_xboole_0], o_0_0_xboole_0)]   (2)  substitution:[[_G3687, _G3765], [o_0_0_xboole_0, 2^[3^[], k1_xboole_0]]]
+1.1  [-v1_xboole_0(o_0_0_xboole_0)]   (5)  
+1.2  [-r2_hidden(2^[3^[], k1_xboole_0], o_0_0_xboole_0), r2_hidden(2^[3^[], k1_xboole_0], k1_xboole_0), 2^[3^[], k1_xboole_0]=2^[3^[], k1_xboole_0], k1_xboole_0=o_0_0_xboole_0]   (12)  substitution:[[_G2228, _G2365, _G2161, _G2296], [2^[3^[], k1_xboole_0], o_0_0_xboole_0, 2^[3^[], k1_xboole_0], k1_xboole_0]]
+1.2.1  [-r2_hidden(2^[3^[], k1_xboole_0], k1_xboole_0), -r1_tarski(k1_xboole_0, 3^[])]   (6)  substitution:[[_G4028, _G3972], [3^[], k1_xboole_0]]
+1.2.1.1  [r1_tarski(k1_xboole_0, 3^[])]   (1)  
+1.2.2  [- (2^[3^[], k1_xboole_0]=2^[3^[], k1_xboole_0])]   (9)  substitution:[[_G1379], [2^[3^[], k1_xboole_0]]]
+1.2.3  [- (k1_xboole_0=o_0_0_xboole_0)]   (4)  
+------------------------------------------------------
+End of proof for t2_xboole_1

@@ -1,0 +1,45 @@
+
+t2_facirc_1 is a Theorem
+Start of proof for t2_facirc_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(1^[])]
+ (2)  [-l1_msualg_1(1^[])]
+ (3)  [v2_struct_0(2^[])]
+ (4)  [-l1_msualg_1(2^[])]
+ (5)  [-r1_circcomb(1^[], 2^[])]
+ (6)  [-v1_relat_1(k3_msafree2(1^[]))]
+ (7)  [-v1_relat_1(k3_msafree2(2^[]))]
+ (8)  [v1_relat_1(k3_msafree2(k2_circcomb(1^[], 2^[])))]
+ (9)  [-v1_relat_1(k2_xboole_0(_G7449, _G7500)), v1_relat_1(_G7449), v1_relat_1(_G7500)]
+ (10)  [l1_msualg_1(_G7736), -v2_struct_0(_G7736), l1_msualg_1(_G7934), -v2_struct_0(_G7934), r1_circcomb(_G7736, _G7934), - (k3_msafree2(k2_circcomb(_G7736, _G7934))=k2_xboole_0(k3_msafree2(_G7736), k3_msafree2(_G7934)))]
+ (11)  [l1_msualg_1(_G7736), -v2_struct_0(_G7736), l1_msualg_1(_G7934), -v2_struct_0(_G7934), r1_circcomb(_G7736, _G7934), -r1_tarski(k2_msafree2(k2_circcomb(_G7736, _G7934)), k2_xboole_0(k2_msafree2(_G7736), k2_msafree2(_G7934)))]
+ (12)  [- (k2_xboole_0(_G5624, _G5759)=k2_xboole_0(_G5691, _G5828)), _G5624=_G5691, _G5759=_G5828]
+ (13)  [_G6221=_G6270, - (k2_msafree2(_G6221)=k2_msafree2(_G6270))]
+ (14)  [_G6499=_G6548, - (k3_msafree2(_G6499)=k3_msafree2(_G6548))]
+ (15)  [- (k2_circcomb(_G6768, _G6903)=k2_circcomb(_G6835, _G6972)), _G6768=_G6835, _G6903=_G6972]
+ (16)  [- (_G2718=_G2718)]
+ (17)  [_G2817=_G2862, - (_G2862=_G2817)]
+ (18)  [- (_G3050=_G3163), _G3050=_G3106, _G3106=_G3163]
+ (19)  [-r1_tarski(_G3567, _G3704), r1_tarski(_G3500, _G3635), _G3500=_G3567, _G3635=_G3704]
+ (20)  [-v2_struct_0(_G4146), _G4097=_G4146, v2_struct_0(_G4097)]
+ (21)  [-l1_msualg_1(_G4424), _G4375=_G4424, l1_msualg_1(_G4375)]
+ (22)  [-v1_relat_1(_G5290), _G5241=_G5290, v1_relat_1(_G5241)]
+ (23)  [-r1_circcomb(_G4720, _G4857), r1_circcomb(_G4653, _G4788), _G4653=_G4720, _G4788=_G4857]
+
+Connection Proof:
+-----------------
+1  [v2_struct_0(2^[])]   (3)  
+1.1  [-v2_struct_0(2^[]), l1_msualg_1(1^[]), -v2_struct_0(1^[]), l1_msualg_1(2^[]), r1_circcomb(1^[], 2^[]), - (k3_msafree2(k2_circcomb(1^[], 2^[]))=k2_xboole_0(k3_msafree2(1^[]), k3_msafree2(2^[])))]   (10)  substitution:[[_G7934, _G7736], [2^[], 1^[]]]
+1.1.1  [-l1_msualg_1(1^[])]   (2)  
+1.1.2  [v2_struct_0(1^[])]   (1)  
+1.1.3  [-l1_msualg_1(2^[])]   (4)  
+1.1.4  [-r1_circcomb(1^[], 2^[])]   (5)  
+1.1.5  [k3_msafree2(k2_circcomb(1^[], 2^[]))=k2_xboole_0(k3_msafree2(1^[]), k3_msafree2(2^[])), - (k2_xboole_0(k3_msafree2(1^[]), k3_msafree2(2^[]))=k3_msafree2(k2_circcomb(1^[], 2^[])))]   (17)  substitution:[[_G2817, _G2862], [k3_msafree2(k2_circcomb(1^[], 2^[])), k2_xboole_0(k3_msafree2(1^[]), k3_msafree2(2^[]))]]
+1.1.5.1  [k2_xboole_0(k3_msafree2(1^[]), k3_msafree2(2^[]))=k3_msafree2(k2_circcomb(1^[], 2^[])), -v1_relat_1(k3_msafree2(k2_circcomb(1^[], 2^[]))), v1_relat_1(k2_xboole_0(k3_msafree2(1^[]), k3_msafree2(2^[])))]   (22)  substitution:[[_G5241, _G5290], [k2_xboole_0(k3_msafree2(1^[]), k3_msafree2(2^[])), k3_msafree2(k2_circcomb(1^[], 2^[]))]]
+1.1.5.1.1  [v1_relat_1(k3_msafree2(k2_circcomb(1^[], 2^[])))]   (8)  
+1.1.5.1.2  [-v1_relat_1(k2_xboole_0(k3_msafree2(1^[]), k3_msafree2(2^[]))), v1_relat_1(k3_msafree2(1^[])), v1_relat_1(k3_msafree2(2^[]))]   (9)  substitution:[[_G7449, _G7500], [k3_msafree2(1^[]), k3_msafree2(2^[])]]
+1.1.5.1.2.1  [-v1_relat_1(k3_msafree2(1^[]))]   (6)  
+1.1.5.1.2.2  [-v1_relat_1(k3_msafree2(2^[]))]   (7)  
+------------------------------------------------------
+End of proof for t2_facirc_1

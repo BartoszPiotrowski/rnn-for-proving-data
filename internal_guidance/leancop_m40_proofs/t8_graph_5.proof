@@ -1,0 +1,33 @@
+
+t8_graph_5 is a Theorem
+Start of proof for t8_graph_5
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], k5_numbers)]
+ (2)  [v2_struct_0(2^[])]
+ (3)  [-l1_graph_1(2^[])]
+ (4)  [-m2_finseq_1(3^[], u4_struct_0(2^[]))]
+ (5)  [-r2_hidden(1^[], k4_finseq_1(3^[]))]
+ (6)  [r2_hidden(k1_funct_1(u1_graph_1(2^[]), k1_funct_1(3^[], 1^[])), u1_struct_0(2^[])), r2_hidden(k1_funct_1(u2_graph_1(2^[]), k1_funct_1(3^[], 1^[])), u1_struct_0(2^[]))]
+ (7)  [m2_finseq_1(_G1150, _G1011), r2_hidden(_G1080, k4_finseq_1(_G1150)), -r2_hidden(k1_funct_1(_G1150, _G1080), _G1011)]
+ (8)  [m2_finseq_1(_G1150, _G1011), r2_hidden(_G1080, k4_finseq_1(_G1150)), -r2_hidden(k1_funct_1(_G1150, _G1080), _G1011)]
+ (9)  [l1_graph_1(_G1594), -v2_struct_0(_G1594), r2_hidden(_G1772, u4_struct_0(_G1594)), -r2_hidden(k1_funct_1(u1_graph_1(_G1594), _G1772), u1_struct_0(_G1594))]
+ (10)  [l1_graph_1(_G1594), -v2_struct_0(_G1594), r2_hidden(_G1772, u4_struct_0(_G1594)), -r2_hidden(k1_funct_1(u2_graph_1(_G1594), _G1772), u1_struct_0(_G1594))]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(k1_funct_1(u1_graph_1(2^[]), k1_funct_1(3^[], 1^[])), u1_struct_0(2^[])), r2_hidden(k1_funct_1(u2_graph_1(2^[]), k1_funct_1(3^[], 1^[])), u1_struct_0(2^[]))]   (6)  
+1.1  [-r2_hidden(k1_funct_1(u1_graph_1(2^[]), k1_funct_1(3^[], 1^[])), u1_struct_0(2^[])), l1_graph_1(2^[]), -v2_struct_0(2^[]), r2_hidden(k1_funct_1(3^[], 1^[]), u4_struct_0(2^[]))]   (9)  substitution:[[_G1594, _G1772], [2^[], k1_funct_1(3^[], 1^[])]]
+1.1.1  [-l1_graph_1(2^[])]   (3)  
+1.1.2  [v2_struct_0(2^[])]   (2)  
+1.1.3  [-r2_hidden(k1_funct_1(3^[], 1^[]), u4_struct_0(2^[])), m2_finseq_1(3^[], u4_struct_0(2^[])), r2_hidden(1^[], k4_finseq_1(3^[]))]   (7)  substitution:[[_G1150, _G1080, _G1011], [3^[], 1^[], u4_struct_0(2^[])]]
+1.1.3.1  [-m2_finseq_1(3^[], u4_struct_0(2^[]))]   (4)  
+1.1.3.2  [-r2_hidden(1^[], k4_finseq_1(3^[]))]   (5)  
+1.2  [-r2_hidden(k1_funct_1(u2_graph_1(2^[]), k1_funct_1(3^[], 1^[])), u1_struct_0(2^[])), l1_graph_1(2^[]), -v2_struct_0(2^[]), r2_hidden(k1_funct_1(3^[], 1^[]), u4_struct_0(2^[]))]   (10)  substitution:[[_G1594, _G1772], [2^[], k1_funct_1(3^[], 1^[])]]
+1.2.1  [-l1_graph_1(2^[])]   (3)  
+1.2.2  [v2_struct_0(2^[])]   (2)  
+1.2.3  [-r2_hidden(k1_funct_1(3^[], 1^[]), u4_struct_0(2^[])), m2_finseq_1(3^[], u4_struct_0(2^[])), r2_hidden(1^[], k4_finseq_1(3^[]))]   (7)  substitution:[[_G1150, _G1080, _G1011], [3^[], 1^[], u4_struct_0(2^[])]]
+1.2.3.1  [-m2_finseq_1(3^[], u4_struct_0(2^[]))]   (4)  
+1.2.3.2  [-r2_hidden(1^[], k4_finseq_1(3^[]))]   (5)  
+------------------------------------------------------
+End of proof for t8_graph_5

@@ -1,0 +1,83 @@
+
+t14_card_3 is a Theorem
+Start of proof for t14_card_3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(6^[])]
+ (2)  [-v1_funct_1(6^[])]
+ (3)  [k5_card_3(5^[], k1_tarski(6^[]))=k1_tarski(k1_funct_1(6^[], 5^[]))]
+ (4)  [_G5749=k1_tarski(_G5691), r2_hidden(_G5879, _G5749), - (_G5879=_G5691)]
+ (5)  [_G5749=k1_tarski(_G5691), -r2_hidden(_G5879, _G5749), _G5879=_G5691]
+ (6)  [- (_G5749=k1_tarski(_G5691)), r2_hidden(1^[_G5749, _G5691], _G5749), 1^[_G5749, _G5691]=_G5691]
+ (7)  [- (_G5749=k1_tarski(_G5691)), -r2_hidden(1^[_G5749, _G5691], _G5749), - (1^[_G5749, _G5691]=_G5691)]
+ (8)  [_G6279=k5_card_3(_G6102, _G6190), r2_hidden(_G6465, _G6279), -v1_relat_1(2^[_G6465, _G6279, _G6190, _G6102])]
+ (9)  [_G6279=k5_card_3(_G6102, _G6190), r2_hidden(_G6465, _G6279), -v1_funct_1(2^[_G6465, _G6279, _G6190, _G6102])]
+ (10)  [_G6279=k5_card_3(_G6102, _G6190), r2_hidden(_G6465, _G6279), -r2_hidden(2^[_G6465, _G6279, _G6190, _G6102], _G6190)]
+ (11)  [_G6279=k5_card_3(_G6102, _G6190), r2_hidden(_G6465, _G6279), - (_G6465=k1_funct_1(2^[_G6465, _G6279, _G6190, _G6102], _G6102))]
+ (12)  [_G6279=k5_card_3(_G6102, _G6190), -r2_hidden(_G6465, _G6279), v1_funct_1(_G6604), v1_relat_1(_G6604), r2_hidden(_G6604, _G6190), _G6465=k1_funct_1(_G6604, _G6102)]
+ (13)  [- (_G6279=k5_card_3(_G6102, _G6190)), -r2_hidden(3^[_G6279, _G6190, _G6102], _G6279), -v1_relat_1(4^[_G6279, _G6190, _G6102])]
+ (14)  [- (_G6279=k5_card_3(_G6102, _G6190)), -r2_hidden(3^[_G6279, _G6190, _G6102], _G6279), -v1_funct_1(4^[_G6279, _G6190, _G6102])]
+ (15)  [- (_G6279=k5_card_3(_G6102, _G6190)), -r2_hidden(3^[_G6279, _G6190, _G6102], _G6279), -r2_hidden(4^[_G6279, _G6190, _G6102], _G6190)]
+ (16)  [- (_G6279=k5_card_3(_G6102, _G6190)), -r2_hidden(3^[_G6279, _G6190, _G6102], _G6279), - (3^[_G6279, _G6190, _G6102]=k1_funct_1(4^[_G6279, _G6190, _G6102], _G6102))]
+ (17)  [- (_G6279=k5_card_3(_G6102, _G6190)), r2_hidden(3^[_G6279, _G6190, _G6102], _G6279), v1_funct_1(_G8240), v1_relat_1(_G8240), r2_hidden(_G8240, _G6190), 3^[_G6279, _G6190, _G6102]=k1_funct_1(_G8240, _G6102)]
+ (18)  [- (k5_card_3(_G4165, _G4300)=k5_card_3(_G4232, _G4369)), _G4165=_G4232, _G4300=_G4369]
+ (19)  [_G4762=_G4811, - (k1_tarski(_G4762)=k1_tarski(_G4811))]
+ (20)  [- (k1_funct_1(_G5031, _G5166)=k1_funct_1(_G5098, _G5235)), _G5031=_G5098, _G5166=_G5235]
+ (21)  [- (_G2176=_G2176)]
+ (22)  [_G2275=_G2320, - (_G2320=_G2275)]
+ (23)  [- (_G2508=_G2621), _G2508=_G2564, _G2564=_G2621]
+ (24)  [-r2_hidden(_G3025, _G3162), r2_hidden(_G2958, _G3093), _G2958=_G3025, _G3093=_G3162]
+ (25)  [-v1_relat_1(_G3604), _G3555=_G3604, v1_relat_1(_G3555)]
+ (26)  [-v1_funct_1(_G3873), _G3824=_G3873, v1_funct_1(_G3824)]
+
+Connection Proof:
+-----------------
+1  [k5_card_3(5^[], k1_tarski(6^[]))=k1_tarski(k1_funct_1(6^[], 5^[]))]   (3)  
+1.1  [- (k5_card_3(5^[], k1_tarski(6^[]))=k1_tarski(k1_funct_1(6^[], 5^[]))), -r2_hidden(1^[k5_card_3(5^[], k1_tarski(6^[])), k1_funct_1(6^[], 5^[])], k5_card_3(5^[], k1_tarski(6^[]))), - (1^[k5_card_3(5^[], k1_tarski(6^[])), k1_funct_1(6^[], 5^[])]=k1_funct_1(6^[], 5^[]))]   (7)  substitution:[[_G5749, _G5691], [k5_card_3(5^[], k1_tarski(6^[])), k1_funct_1(6^[], 5^[])]]
+1.1.1  [r2_hidden(1^[k5_card_3(5^[], k1_tarski(6^[])), k1_funct_1(6^[], 5^[])], k5_card_3(5^[], k1_tarski(6^[]))), k5_card_3(5^[], k1_tarski(6^[]))=k5_card_3(5^[], k1_tarski(6^[])), -r2_hidden(2^[1^[k5_card_3(5^[], k1_tarski(6^[])), k1_funct_1(6^[], 5^[])], k5_card_3(5^[], k1_tarski(6^[])), k1_tarski(6^[]), 5^[]], k1_tarski(6^[]))]   (10)  substitution:[[_G6465, _G6279, _G6102, _G6190], [1^[k5_card_3(5^[], k1_tarski(6^[])), k1_funct_1(6^[], 5^[])], k5_card_3(5^[], k1_tarski(6^[])), 5^[], k1_tarski(6^[])]]
+1.1.1.1  [- (k5_card_3(5^[], k1_tarski(6^[]))=k5_card_3(5^[], k1_tarski(6^[]))), 5^[]=5^[], k1_tarski(6^[])=k1_tarski(6^[])]   (18)  substitution:[[_G4165, _G4300, _G4232, _G4369], [5^[], k1_tarski(6^[]), 5^[], k1_tarski(6^[])]]
+1.1.1.1.1  [- (5^[]=5^[])]   (21)  substitution:[[_G2176], [5^[]]]
+1.1.1.1.2  [- (k1_tarski(6^[])=k1_tarski(6^[])), r2_hidden(1^[k1_tarski(6^[]), 6^[]], k1_tarski(6^[])), 1^[k1_tarski(6^[]), 6^[]]=6^[]]   (6)  substitution:[[_G5749, _G5691], [k1_tarski(6^[]), 6^[]]]
+1.1.1.1.2.1  [-r2_hidden(1^[k1_tarski(6^[]), 6^[]], k1_tarski(6^[])), k1_tarski(6^[])=k1_tarski(6^[]), 1^[k1_tarski(6^[]), 6^[]]=6^[]]   (5)  substitution:[[_G5879, _G5749, _G5691], [1^[k1_tarski(6^[]), 6^[]], k1_tarski(6^[]), 6^[]]]
+1.1.1.1.2.1.1  [- (k1_tarski(6^[])=k1_tarski(6^[]))]   (21)  substitution:[[_G2176], [k1_tarski(6^[])]]
+1.1.1.1.2.1.2  [- (1^[k1_tarski(6^[]), 6^[]]=6^[]), - (k1_tarski(6^[])=k1_tarski(6^[])), -r2_hidden(1^[k1_tarski(6^[]), 6^[]], k1_tarski(6^[]))]   (7)  substitution:[[_G5749, _G5691], [k1_tarski(6^[]), 6^[]]]
+1.1.1.1.2.1.2.1  [k1_tarski(6^[])=k1_tarski(6^[])]   (reduction:1.1.1.1)  
+1.1.1.1.2.1.2.2  [r2_hidden(1^[k1_tarski(6^[]), 6^[]], k1_tarski(6^[]))]   (reduction:1.1.1.1.2)  
+1.1.1.1.2.2  [- (1^[k1_tarski(6^[]), 6^[]]=6^[]), k1_tarski(6^[])=k1_tarski(6^[]), r2_hidden(1^[k1_tarski(6^[]), 6^[]], k1_tarski(6^[]))]   (4)  substitution:[[_G5879, _G5691, _G5749], [1^[k1_tarski(6^[]), 6^[]], 6^[], k1_tarski(6^[])]]
+1.1.1.1.2.2.1  [- (k1_tarski(6^[])=k1_tarski(6^[]))]   (21)  substitution:[[_G2176], [k1_tarski(6^[])]]
+1.1.1.1.2.2.2  [-r2_hidden(1^[k1_tarski(6^[]), 6^[]], k1_tarski(6^[]))]   (lemmata:1.1.1.1.2)  
+1.1.1.2  [r2_hidden(2^[1^[k5_card_3(5^[], k1_tarski(6^[])), k1_funct_1(6^[], 5^[])], k5_card_3(5^[], k1_tarski(6^[])), k1_tarski(6^[]), 5^[]], k1_tarski(6^[])), k1_tarski(6^[])=k1_tarski(6^[]), - (2^[1^[k5_card_3(5^[], k1_tarski(6^[])), k1_funct_1(6^[], 5^[])], k5_card_3(5^[], k1_tarski(6^[])), k1_tarski(6^[]), 5^[]]=6^[])]   (4)  substitution:[[_G5879, _G5749, _G5691], [2^[1^[k5_card_3(5^[], k1_tarski(6^[])), k1_funct_1(6^[], 5^[])], k5_card_3(5^[], k1_tarski(6^[])), k1_tarski(6^[]), 5^[]], k1_tarski(6^[]), 6^[]]]
+1.1.1.2.1  [- (k1_tarski(6^[])=k1_tarski(6^[])), r2_hidden(1^[k1_tarski(6^[]), 6^[]], k1_tarski(6^[])), 1^[k1_tarski(6^[]), 6^[]]=6^[]]   (6)  substitution:[[_G5749, _G5691], [k1_tarski(6^[]), 6^[]]]
+1.1.1.2.1.1  [-r2_hidden(1^[k1_tarski(6^[]), 6^[]], k1_tarski(6^[])), k1_tarski(6^[])=k1_tarski(6^[]), 1^[k1_tarski(6^[]), 6^[]]=6^[]]   (5)  substitution:[[_G5879, _G5749, _G5691], [1^[k1_tarski(6^[]), 6^[]], k1_tarski(6^[]), 6^[]]]
+1.1.1.2.1.1.1  [- (k1_tarski(6^[])=k1_tarski(6^[]))]   (21)  substitution:[[_G2176], [k1_tarski(6^[])]]
+1.1.1.2.1.1.2  [- (1^[k1_tarski(6^[]), 6^[]]=6^[]), - (k1_tarski(6^[])=k1_tarski(6^[])), -r2_hidden(1^[k1_tarski(6^[]), 6^[]], k1_tarski(6^[]))]   (7)  substitution:[[_G5749, _G5691], [k1_tarski(6^[]), 6^[]]]
+1.1.1.2.1.1.2.1  [k1_tarski(6^[])=k1_tarski(6^[])]   (reduction:1.1.1.2)  
+1.1.1.2.1.1.2.2  [r2_hidden(1^[k1_tarski(6^[]), 6^[]], k1_tarski(6^[]))]   (reduction:1.1.1.2.1)  
+1.1.1.2.1.2  [- (1^[k1_tarski(6^[]), 6^[]]=6^[]), k1_tarski(6^[])=k1_tarski(6^[]), r2_hidden(1^[k1_tarski(6^[]), 6^[]], k1_tarski(6^[]))]   (4)  substitution:[[_G5879, _G5691, _G5749], [1^[k1_tarski(6^[]), 6^[]], 6^[], k1_tarski(6^[])]]
+1.1.1.2.1.2.1  [- (k1_tarski(6^[])=k1_tarski(6^[]))]   (21)  substitution:[[_G2176], [k1_tarski(6^[])]]
+1.1.1.2.1.2.2  [-r2_hidden(1^[k1_tarski(6^[]), 6^[]], k1_tarski(6^[]))]   (lemmata:1.1.1.2.1)  
+1.1.1.2.2  [2^[1^[k5_card_3(5^[], k1_tarski(6^[])), k1_funct_1(6^[], 5^[])], k5_card_3(5^[], k1_tarski(6^[])), k1_tarski(6^[]), 5^[]]=6^[], - (k1_funct_1(2^[1^[k5_card_3(5^[], k1_tarski(6^[])), k1_funct_1(6^[], 5^[])], k5_card_3(5^[], k1_tarski(6^[])), k1_tarski(6^[]), 5^[]], 5^[])=k1_funct_1(6^[], 5^[])), 5^[]=5^[]]   (20)  substitution:[[_G5031, _G5098, _G5166, _G5235], [2^[1^[k5_card_3(5^[], k1_tarski(6^[])), k1_funct_1(6^[], 5^[])], k5_card_3(5^[], k1_tarski(6^[])), k1_tarski(6^[]), 5^[]], 6^[], 5^[], 5^[]]]
+1.1.1.2.2.1  [k1_funct_1(2^[1^[k5_card_3(5^[], k1_tarski(6^[])), k1_funct_1(6^[], 5^[])], k5_card_3(5^[], k1_tarski(6^[])), k1_tarski(6^[]), 5^[]], 5^[])=k1_funct_1(6^[], 5^[]), - (1^[k5_card_3(5^[], k1_tarski(6^[])), k1_funct_1(6^[], 5^[])]=k1_funct_1(6^[], 5^[])), 1^[k5_card_3(5^[], k1_tarski(6^[])), k1_funct_1(6^[], 5^[])]=k1_funct_1(2^[1^[k5_card_3(5^[], k1_tarski(6^[])), k1_funct_1(6^[], 5^[])], k5_card_3(5^[], k1_tarski(6^[])), k1_tarski(6^[]), 5^[]], 5^[])]   (23)  substitution:[[_G2564, _G2621, _G2508], [k1_funct_1(2^[1^[k5_card_3(5^[], k1_tarski(6^[])), k1_funct_1(6^[], 5^[])], k5_card_3(5^[], k1_tarski(6^[])), k1_tarski(6^[]), 5^[]], 5^[]), k1_funct_1(6^[], 5^[]), 1^[k5_card_3(5^[], k1_tarski(6^[])), k1_funct_1(6^[], 5^[])]]]
+1.1.1.2.2.1.1  [1^[k5_card_3(5^[], k1_tarski(6^[])), k1_funct_1(6^[], 5^[])]=k1_funct_1(6^[], 5^[]), - (k5_card_3(5^[], k1_tarski(6^[]))=k1_tarski(k1_funct_1(6^[], 5^[]))), r2_hidden(1^[k5_card_3(5^[], k1_tarski(6^[])), k1_funct_1(6^[], 5^[])], k5_card_3(5^[], k1_tarski(6^[])))]   (6)  substitution:[[_G5749, _G5691], [k5_card_3(5^[], k1_tarski(6^[])), k1_funct_1(6^[], 5^[])]]
+1.1.1.2.2.1.1.1  [k5_card_3(5^[], k1_tarski(6^[]))=k1_tarski(k1_funct_1(6^[], 5^[]))]   (3)  
+1.1.1.2.2.1.1.2  [-r2_hidden(1^[k5_card_3(5^[], k1_tarski(6^[])), k1_funct_1(6^[], 5^[])], k5_card_3(5^[], k1_tarski(6^[])))]   (reduction:1.1)  
+1.1.1.2.2.1.2  [- (1^[k5_card_3(5^[], k1_tarski(6^[])), k1_funct_1(6^[], 5^[])]=k1_funct_1(2^[1^[k5_card_3(5^[], k1_tarski(6^[])), k1_funct_1(6^[], 5^[])], k5_card_3(5^[], k1_tarski(6^[])), k1_tarski(6^[]), 5^[]], 5^[])), k5_card_3(5^[], k1_tarski(6^[]))=k5_card_3(5^[], k1_tarski(6^[])), r2_hidden(1^[k5_card_3(5^[], k1_tarski(6^[])), k1_funct_1(6^[], 5^[])], k5_card_3(5^[], k1_tarski(6^[])))]   (11)  substitution:[[_G6465, _G6279, _G6190, _G6102], [1^[k5_card_3(5^[], k1_tarski(6^[])), k1_funct_1(6^[], 5^[])], k5_card_3(5^[], k1_tarski(6^[])), k1_tarski(6^[]), 5^[]]]
+1.1.1.2.2.1.2.1  [- (k5_card_3(5^[], k1_tarski(6^[]))=k5_card_3(5^[], k1_tarski(6^[])))]   (21)  substitution:[[_G2176], [k5_card_3(5^[], k1_tarski(6^[]))]]
+1.1.1.2.2.1.2.2  [-r2_hidden(1^[k5_card_3(5^[], k1_tarski(6^[])), k1_funct_1(6^[], 5^[])], k5_card_3(5^[], k1_tarski(6^[])))]   (reduction:1.1)  
+1.1.1.2.2.2  [- (5^[]=5^[])]   (21)  substitution:[[_G2176], [5^[]]]
+1.1.2  [1^[k5_card_3(5^[], k1_tarski(6^[])), k1_funct_1(6^[], 5^[])]=k1_funct_1(6^[], 5^[]), - (k5_card_3(5^[], k1_tarski(6^[]))=k1_tarski(k1_funct_1(6^[], 5^[]))), r2_hidden(1^[k5_card_3(5^[], k1_tarski(6^[])), k1_funct_1(6^[], 5^[])], k5_card_3(5^[], k1_tarski(6^[])))]   (6)  substitution:[[_G5749, _G5691], [k5_card_3(5^[], k1_tarski(6^[])), k1_funct_1(6^[], 5^[])]]
+1.1.2.1  [k5_card_3(5^[], k1_tarski(6^[]))=k1_tarski(k1_funct_1(6^[], 5^[]))]   (3)  
+1.1.2.2  [-r2_hidden(1^[k5_card_3(5^[], k1_tarski(6^[])), k1_funct_1(6^[], 5^[])], k5_card_3(5^[], k1_tarski(6^[]))), k5_card_3(5^[], k1_tarski(6^[]))=k5_card_3(5^[], k1_tarski(6^[])), v1_funct_1(6^[]), v1_relat_1(6^[]), r2_hidden(6^[], k1_tarski(6^[])), 1^[k5_card_3(5^[], k1_tarski(6^[])), k1_funct_1(6^[], 5^[])]=k1_funct_1(6^[], 5^[])]   (12)  substitution:[[_G6465, _G6279, _G6102, _G6190, _G6604], [1^[k5_card_3(5^[], k1_tarski(6^[])), k1_funct_1(6^[], 5^[])], k5_card_3(5^[], k1_tarski(6^[])), 5^[], k1_tarski(6^[]), 6^[]]]
+1.1.2.2.1  [- (k5_card_3(5^[], k1_tarski(6^[]))=k5_card_3(5^[], k1_tarski(6^[]))), 5^[]=5^[], k1_tarski(6^[])=k1_tarski(6^[])]   (18)  substitution:[[_G4165, _G4300, _G4232, _G4369], [5^[], k1_tarski(6^[]), 5^[], k1_tarski(6^[])]]
+1.1.2.2.1.1  [- (5^[]=5^[])]   (21)  substitution:[[_G2176], [5^[]]]
+1.1.2.2.1.2  [- (k1_tarski(6^[])=k1_tarski(6^[])), 6^[]=6^[]]   (19)  substitution:[[_G4762, _G4811], [6^[], 6^[]]]
+1.1.2.2.1.2.1  [- (6^[]=6^[])]   (21)  substitution:[[_G2176], [6^[]]]
+1.1.2.2.2  [-v1_funct_1(6^[])]   (2)  
+1.1.2.2.3  [-v1_relat_1(6^[])]   (1)  
+1.1.2.2.4  [-r2_hidden(6^[], k1_tarski(6^[])), k1_tarski(6^[])=k1_tarski(6^[]), 6^[]=6^[]]   (5)  substitution:[[_G5879, _G5749, _G5691], [6^[], k1_tarski(6^[]), 6^[]]]
+1.1.2.2.4.1  [- (k1_tarski(6^[])=k1_tarski(6^[])), 6^[]=6^[]]   (19)  substitution:[[_G4762, _G4811], [6^[], 6^[]]]
+1.1.2.2.4.1.1  [- (6^[]=6^[])]   (21)  substitution:[[_G2176], [6^[]]]
+1.1.2.2.4.2  [- (6^[]=6^[])]   (21)  substitution:[[_G2176], [6^[]]]
+1.1.2.2.5  [- (1^[k5_card_3(5^[], k1_tarski(6^[])), k1_funct_1(6^[], 5^[])]=k1_funct_1(6^[], 5^[]))]   (reduction:1.1)  
+------------------------------------------------------
+End of proof for t14_card_3

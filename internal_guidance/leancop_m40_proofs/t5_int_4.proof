@@ -1,0 +1,35 @@
+
+t5_int_4 is a Theorem
+Start of proof for t5_int_4
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v3_membered(1^[])]
+ (2)  [-v1_xreal_0(2^[])]
+ (3)  [2^[]=k6_numbers]
+ (4)  [k1_card_1(1^[])=k1_card_1(k1_integra2(1^[], 2^[]))]
+ (5)  [r2_wellord2(_G5592, _G5637), -r2_tarski(_G5592, _G5637)]
+ (6)  [-r2_wellord2(_G5592, _G5637), r2_tarski(_G5592, _G5637)]
+ (7)  [v3_membered(_G5834), v1_xreal_0(_G5926), - (_G5926=k6_numbers), -r2_tarski(_G5834, k1_integra2(_G5834, _G5926))]
+ (8)  [r2_wellord2(_G6251, _G6300), - (k1_card_1(_G6251)=k1_card_1(_G6300))]
+ (9)  [-r2_wellord2(_G6251, _G6300), k1_card_1(_G6251)=k1_card_1(_G6300)]
+ (10)  [_G4684=_G4733, - (k1_card_1(_G4684)=k1_card_1(_G4733))]
+ (11)  [- (k1_integra2(_G4953, _G5088)=k1_integra2(_G5020, _G5157)), _G4953=_G5020, _G5088=_G5157]
+ (12)  [- (_G2077=_G2077)]
+ (13)  [_G2176=_G2221, - (_G2221=_G2176)]
+ (14)  [- (_G2409=_G2522), _G2409=_G2465, _G2465=_G2522]
+ (15)  [-r2_tarski(_G2926, _G3063), r2_tarski(_G2859, _G2994), _G2859=_G2926, _G2994=_G3063]
+ (16)  [-r2_wellord2(_G3523, _G3660), r2_wellord2(_G3456, _G3591), _G3456=_G3523, _G3591=_G3660]
+ (17)  [-v3_membered(_G4102), _G4053=_G4102, v3_membered(_G4053)]
+ (18)  [-v1_xreal_0(_G4371), _G4322=_G4371, v1_xreal_0(_G4322)]
+
+Connection Proof:
+-----------------
+1  [2^[]=k6_numbers]   (3)  
+1.1  [- (2^[]=k6_numbers), v3_membered(1^[]), v1_xreal_0(2^[]), -r2_tarski(1^[], k1_integra2(1^[], 2^[]))]   (7)  substitution:[[_G5926, _G5834], [2^[], 1^[]]]
+1.1.1  [-v3_membered(1^[])]   (1)  
+1.1.2  [-v1_xreal_0(2^[])]   (2)  
+1.1.3  [r2_tarski(1^[], k1_integra2(1^[], 2^[])), -r2_wellord2(1^[], k1_integra2(1^[], 2^[]))]   (6)  substitution:[[_G5592, _G5637], [1^[], k1_integra2(1^[], 2^[])]]
+1.1.3.1  [r2_wellord2(1^[], k1_integra2(1^[], 2^[])), - (k1_card_1(1^[])=k1_card_1(k1_integra2(1^[], 2^[])))]   (8)  substitution:[[_G6251, _G6300], [1^[], k1_integra2(1^[], 2^[])]]
+1.1.3.1.1  [k1_card_1(1^[])=k1_card_1(k1_integra2(1^[], 2^[]))]   (4)  
+------------------------------------------------------
+End of proof for t5_int_4

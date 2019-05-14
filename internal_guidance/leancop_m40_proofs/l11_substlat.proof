@@ -1,0 +1,22 @@
+
+l11_substlat is a Theorem
+Start of proof for l11_substlat
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(4^[], k5_finsub_1(k4_partfun1(2^[], 3^[])))]
+ (2)  [-m1_subset_1(5^[], k5_finsub_1(k4_partfun1(2^[], 3^[])))]
+ (3)  [r1_tarski(4^[], 5^[])]
+ (4)  [r2_hidden(_G2465, 4^[]), -r2_hidden(_G2465, 5^[])]
+ (5)  [-r1_tarski(_G774, _G830), -r2_hidden(1^[_G830, _G774], _G774)]
+ (6)  [-r1_tarski(_G774, _G830), r2_hidden(1^[_G830, _G774], _G830)]
+ (7)  [r1_tarski(_G774, _G830), r2_hidden(_G944, _G774), -r2_hidden(_G944, _G830)]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(4^[], 5^[])]   (3)  
+1.1  [-r1_tarski(4^[], 5^[]), -r2_hidden(1^[5^[], 4^[]], 4^[])]   (5)  substitution:[[_G774, _G830], [4^[], 5^[]]]
+1.1.1  [r2_hidden(1^[5^[], 4^[]], 4^[]), -r2_hidden(1^[5^[], 4^[]], 5^[])]   (4)  substitution:[[_G2465], [1^[5^[], 4^[]]]]
+1.1.1.1  [r2_hidden(1^[5^[], 4^[]], 5^[]), -r1_tarski(4^[], 5^[])]   (6)  substitution:[[_G830, _G774], [5^[], 4^[]]]
+1.1.1.1.1  [r1_tarski(4^[], 5^[])]   (3)  
+------------------------------------------------------
+End of proof for l11_substlat

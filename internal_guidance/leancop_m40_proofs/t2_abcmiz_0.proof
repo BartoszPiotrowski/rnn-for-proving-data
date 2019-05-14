@@ -1,0 +1,32 @@
+
+t2_abcmiz_0 is a Theorem
+Start of proof for t2_abcmiz_0
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-l1_abcmiz_0(1^[])]
+ (2)  [-l1_abcmiz_0(2^[])]
+ (3)  [- (u1_abcmiz_0(1^[])=u1_abcmiz_0(2^[]))]
+ (4)  [-v4_abcmiz_0(1^[])]
+ (5)  [v4_abcmiz_0(2^[])]
+ (6)  [l1_abcmiz_0(_G3275), v4_abcmiz_0(_G3275), -v1_xboole_0(u1_abcmiz_0(_G3275))]
+ (7)  [l1_abcmiz_0(_G3275), -v4_abcmiz_0(_G3275), v1_xboole_0(u1_abcmiz_0(_G3275))]
+ (8)  [_G2985=_G3034, - (u1_abcmiz_0(_G2985)=u1_abcmiz_0(_G3034))]
+ (9)  [- (_G1324=_G1324)]
+ (10)  [_G1423=_G1468, - (_G1468=_G1423)]
+ (11)  [- (_G1656=_G1769), _G1656=_G1712, _G1712=_G1769]
+ (12)  [-v1_xboole_0(_G2155), _G2106=_G2155, v1_xboole_0(_G2106)]
+ (13)  [-l1_abcmiz_0(_G2433), _G2384=_G2433, l1_abcmiz_0(_G2384)]
+ (14)  [-v4_abcmiz_0(_G2702), _G2653=_G2702, v4_abcmiz_0(_G2653)]
+
+Connection Proof:
+-----------------
+1  [v4_abcmiz_0(2^[])]   (5)  
+1.1  [-v4_abcmiz_0(2^[]), l1_abcmiz_0(2^[]), v1_xboole_0(u1_abcmiz_0(2^[]))]   (7)  substitution:[[_G3275], [2^[]]]
+1.1.1  [-l1_abcmiz_0(2^[])]   (2)  
+1.1.2  [-v1_xboole_0(u1_abcmiz_0(2^[])), u1_abcmiz_0(1^[])=u1_abcmiz_0(2^[]), v1_xboole_0(u1_abcmiz_0(1^[]))]   (12)  substitution:[[_G2155, _G2106], [u1_abcmiz_0(2^[]), u1_abcmiz_0(1^[])]]
+1.1.2.1  [- (u1_abcmiz_0(1^[])=u1_abcmiz_0(2^[]))]   (3)  
+1.1.2.2  [-v1_xboole_0(u1_abcmiz_0(1^[])), l1_abcmiz_0(1^[]), v4_abcmiz_0(1^[])]   (6)  substitution:[[_G3275], [1^[]]]
+1.1.2.2.1  [-l1_abcmiz_0(1^[])]   (1)  
+1.1.2.2.2  [-v4_abcmiz_0(1^[])]   (4)  
+------------------------------------------------------
+End of proof for t2_abcmiz_0

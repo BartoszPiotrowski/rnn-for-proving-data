@@ -1,0 +1,76 @@
+
+t38_boolealg is a Theorem
+Start of proof for t38_boolealg
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(1^[])]
+ (2)  [-v10_lattices(1^[])]
+ (3)  [-v17_lattices(1^[])]
+ (4)  [-l3_lattices(1^[])]
+ (5)  [-m1_subset_1(2^[], u1_struct_0(1^[]))]
+ (6)  [-m1_subset_1(3^[], u1_struct_0(1^[]))]
+ (7)  [r1_boolealg(1^[], k1_boolealg(1^[], 2^[], k1_boolealg(1^[], 2^[], 3^[])), k4_lattices(1^[], 2^[], 3^[]))]
+ (8)  [l3_lattices(_G10837), v10_lattices(_G10837), -v2_struct_0(_G10837), m1_subset_1(_G11077, u1_struct_0(_G10837)), m1_subset_1(_G11220, u1_struct_0(_G10837)), - (k1_boolealg(_G10837, _G11077, _G11220)=k4_lattices(_G10837, _G11077, k7_lattices(_G10837, _G11220)))]
+ (9)  [-m1_subset_1(k7_lattices(_G11703, _G11767), u1_struct_0(_G11703)), m1_subset_1(_G11767, u1_struct_0(_G11703)), -v2_struct_0(_G11703), l3_lattices(_G11703)]
+ (10)  [- (k7_lattices(_G12170, k7_lattices(_G12170, _G12245))=_G12245), m1_subset_1(_G12245, u1_struct_0(_G12170)), -v2_struct_0(_G12170), v10_lattices(_G12170), v17_lattices(_G12170), l3_lattices(_G12170)]
+ (11)  [-r1_boolealg(_G12781, k1_boolealg(_G12781, _G13081, k4_lattices(_G12781, _G13081, _G13226)), k1_boolealg(_G12781, _G13081, _G13226)), m1_subset_1(_G13226, u1_struct_0(_G12781)), m1_subset_1(_G13081, u1_struct_0(_G12781)), -v2_struct_0(_G12781), v10_lattices(_G12781), v17_lattices(_G12781), l3_lattices(_G12781)]
+ (12)  [- (k7_lattices(_G7831, _G7966)=k7_lattices(_G7898, _G8035)), _G7831=_G7898, _G7966=_G8035]
+ (13)  [_G8428=_G8477, - (u1_struct_0(_G8428)=u1_struct_0(_G8477))]
+ (14)  [- (k1_boolealg(_G8706, _G8877, _G9052)=k1_boolealg(_G8791, _G8964, _G9141)), _G8706=_G8791, _G8877=_G8964, _G9052=_G9141]
+ (15)  [- (k4_lattices(_G9725, _G9896, _G10071)=k4_lattices(_G9810, _G9983, _G10160)), _G9725=_G9810, _G9896=_G9983, _G10071=_G10160]
+ (16)  [- (_G4195=_G4195)]
+ (17)  [_G4294=_G4339, - (_G4339=_G4294)]
+ (18)  [- (_G4527=_G4640), _G4527=_G4583, _G4583=_G4640]
+ (19)  [-v2_struct_0(_G5026), _G4977=_G5026, v2_struct_0(_G4977)]
+ (20)  [-v10_lattices(_G5304), _G5255=_G5304, v10_lattices(_G5255)]
+ (21)  [-v17_lattices(_G5582), _G5533=_G5582, v17_lattices(_G5533)]
+ (22)  [-l3_lattices(_G5860), _G5811=_G5860, l3_lattices(_G5811)]
+ (23)  [-m1_subset_1(_G6156, _G6293), m1_subset_1(_G6089, _G6224), _G6089=_G6156, _G6224=_G6293]
+ (24)  [-r1_boolealg(_G6762, _G6935, _G7112), r1_boolealg(_G6677, _G6848, _G7023), _G6677=_G6762, _G6848=_G6935, _G7023=_G7112]
+
+Connection Proof:
+-----------------
+1  [v2_struct_0(1^[])]   (1)  
+1.1  [-v2_struct_0(1^[]), -r1_boolealg(1^[], k1_boolealg(1^[], 2^[], k4_lattices(1^[], 2^[], k7_lattices(1^[], 3^[]))), k1_boolealg(1^[], 2^[], k7_lattices(1^[], 3^[]))), m1_subset_1(k7_lattices(1^[], 3^[]), u1_struct_0(1^[])), m1_subset_1(2^[], u1_struct_0(1^[])), v10_lattices(1^[]), v17_lattices(1^[]), l3_lattices(1^[])]   (11)  substitution:[[_G12781, _G13081, _G13226], [1^[], 2^[], k7_lattices(1^[], 3^[])]]
+1.1.1  [r1_boolealg(1^[], k1_boolealg(1^[], 2^[], k4_lattices(1^[], 2^[], k7_lattices(1^[], 3^[]))), k1_boolealg(1^[], 2^[], k7_lattices(1^[], 3^[]))), -r1_boolealg(1^[], k1_boolealg(1^[], 2^[], k1_boolealg(1^[], 2^[], 3^[])), k4_lattices(1^[], 2^[], 3^[])), 1^[]=1^[], k1_boolealg(1^[], 2^[], k4_lattices(1^[], 2^[], k7_lattices(1^[], 3^[])))=k1_boolealg(1^[], 2^[], k1_boolealg(1^[], 2^[], 3^[])), k1_boolealg(1^[], 2^[], k7_lattices(1^[], 3^[]))=k4_lattices(1^[], 2^[], 3^[])]   (24)  substitution:[[_G6677, _G6848, _G7023, _G6762, _G6935, _G7112], [1^[], k1_boolealg(1^[], 2^[], k4_lattices(1^[], 2^[], k7_lattices(1^[], 3^[]))), k1_boolealg(1^[], 2^[], k7_lattices(1^[], 3^[])), 1^[], k1_boolealg(1^[], 2^[], k1_boolealg(1^[], 2^[], 3^[])), k4_lattices(1^[], 2^[], 3^[])]]
+1.1.1.1  [r1_boolealg(1^[], k1_boolealg(1^[], 2^[], k1_boolealg(1^[], 2^[], 3^[])), k4_lattices(1^[], 2^[], 3^[]))]   (7)  
+1.1.1.2  [- (1^[]=1^[])]   (16)  substitution:[[_G4195], [1^[]]]
+1.1.1.3  [- (k1_boolealg(1^[], 2^[], k4_lattices(1^[], 2^[], k7_lattices(1^[], 3^[])))=k1_boolealg(1^[], 2^[], k1_boolealg(1^[], 2^[], 3^[]))), k1_boolealg(1^[], 2^[], k1_boolealg(1^[], 2^[], 3^[]))=k1_boolealg(1^[], 2^[], k4_lattices(1^[], 2^[], k7_lattices(1^[], 3^[])))]   (17)  substitution:[[_G4339, _G4294], [k1_boolealg(1^[], 2^[], k4_lattices(1^[], 2^[], k7_lattices(1^[], 3^[]))), k1_boolealg(1^[], 2^[], k1_boolealg(1^[], 2^[], 3^[]))]]
+1.1.1.3.1  [- (k1_boolealg(1^[], 2^[], k1_boolealg(1^[], 2^[], 3^[]))=k1_boolealg(1^[], 2^[], k4_lattices(1^[], 2^[], k7_lattices(1^[], 3^[])))), 1^[]=1^[], 2^[]=2^[], k1_boolealg(1^[], 2^[], 3^[])=k4_lattices(1^[], 2^[], k7_lattices(1^[], 3^[]))]   (14)  substitution:[[_G8706, _G8877, _G9052, _G8791, _G8964, _G9141], [1^[], 2^[], k1_boolealg(1^[], 2^[], 3^[]), 1^[], 2^[], k4_lattices(1^[], 2^[], k7_lattices(1^[], 3^[]))]]
+1.1.1.3.1.1  [- (1^[]=1^[])]   (16)  substitution:[[_G4195], [1^[]]]
+1.1.1.3.1.2  [- (2^[]=2^[])]   (16)  substitution:[[_G4195], [2^[]]]
+1.1.1.3.1.3  [- (k1_boolealg(1^[], 2^[], 3^[])=k4_lattices(1^[], 2^[], k7_lattices(1^[], 3^[]))), l3_lattices(1^[]), v10_lattices(1^[]), -v2_struct_0(1^[]), m1_subset_1(2^[], u1_struct_0(1^[])), m1_subset_1(3^[], u1_struct_0(1^[]))]   (8)  substitution:[[_G10837, _G11077, _G11220], [1^[], 2^[], 3^[]]]
+1.1.1.3.1.3.1  [-l3_lattices(1^[])]   (4)  
+1.1.1.3.1.3.2  [-v10_lattices(1^[])]   (2)  
+1.1.1.3.1.3.3  [v2_struct_0(1^[])]   (1)  
+1.1.1.3.1.3.4  [-m1_subset_1(2^[], u1_struct_0(1^[]))]   (5)  
+1.1.1.3.1.3.5  [-m1_subset_1(3^[], u1_struct_0(1^[]))]   (6)  
+1.1.1.4  [- (k1_boolealg(1^[], 2^[], k7_lattices(1^[], 3^[]))=k4_lattices(1^[], 2^[], 3^[])), k1_boolealg(1^[], 2^[], k7_lattices(1^[], 3^[]))=k4_lattices(1^[], 2^[], k7_lattices(1^[], k7_lattices(1^[], 3^[]))), k4_lattices(1^[], 2^[], k7_lattices(1^[], k7_lattices(1^[], 3^[])))=k4_lattices(1^[], 2^[], 3^[])]   (18)  substitution:[[_G4527, _G4640, _G4583], [k1_boolealg(1^[], 2^[], k7_lattices(1^[], 3^[])), k4_lattices(1^[], 2^[], 3^[]), k4_lattices(1^[], 2^[], k7_lattices(1^[], k7_lattices(1^[], 3^[])))]]
+1.1.1.4.1  [- (k1_boolealg(1^[], 2^[], k7_lattices(1^[], 3^[]))=k4_lattices(1^[], 2^[], k7_lattices(1^[], k7_lattices(1^[], 3^[])))), l3_lattices(1^[]), v10_lattices(1^[]), -v2_struct_0(1^[]), m1_subset_1(2^[], u1_struct_0(1^[])), m1_subset_1(k7_lattices(1^[], 3^[]), u1_struct_0(1^[]))]   (8)  substitution:[[_G10837, _G11077, _G11220], [1^[], 2^[], k7_lattices(1^[], 3^[])]]
+1.1.1.4.1.1  [-l3_lattices(1^[])]   (4)  
+1.1.1.4.1.2  [-v10_lattices(1^[])]   (2)  
+1.1.1.4.1.3  [v2_struct_0(1^[])]   (1)  
+1.1.1.4.1.4  [-m1_subset_1(2^[], u1_struct_0(1^[]))]   (5)  
+1.1.1.4.1.5  [-m1_subset_1(k7_lattices(1^[], 3^[]), u1_struct_0(1^[])), m1_subset_1(3^[], u1_struct_0(1^[])), -v2_struct_0(1^[]), l3_lattices(1^[])]   (9)  substitution:[[_G11703, _G11767], [1^[], 3^[]]]
+1.1.1.4.1.5.1  [-m1_subset_1(3^[], u1_struct_0(1^[]))]   (6)  
+1.1.1.4.1.5.2  [v2_struct_0(1^[])]   (1)  
+1.1.1.4.1.5.3  [-l3_lattices(1^[])]   (4)  
+1.1.1.4.2  [- (k4_lattices(1^[], 2^[], k7_lattices(1^[], k7_lattices(1^[], 3^[])))=k4_lattices(1^[], 2^[], 3^[])), 1^[]=1^[], 2^[]=2^[], k7_lattices(1^[], k7_lattices(1^[], 3^[]))=3^[]]   (15)  substitution:[[_G9725, _G9896, _G10071, _G9810, _G9983, _G10160], [1^[], 2^[], k7_lattices(1^[], k7_lattices(1^[], 3^[])), 1^[], 2^[], 3^[]]]
+1.1.1.4.2.1  [- (1^[]=1^[])]   (16)  substitution:[[_G4195], [1^[]]]
+1.1.1.4.2.2  [- (2^[]=2^[])]   (16)  substitution:[[_G4195], [2^[]]]
+1.1.1.4.2.3  [- (k7_lattices(1^[], k7_lattices(1^[], 3^[]))=3^[]), m1_subset_1(3^[], u1_struct_0(1^[])), -v2_struct_0(1^[]), v10_lattices(1^[]), v17_lattices(1^[]), l3_lattices(1^[])]   (10)  substitution:[[_G12170, _G12245], [1^[], 3^[]]]
+1.1.1.4.2.3.1  [-m1_subset_1(3^[], u1_struct_0(1^[]))]   (6)  
+1.1.1.4.2.3.2  [v2_struct_0(1^[])]   (1)  
+1.1.1.4.2.3.3  [-v10_lattices(1^[])]   (2)  
+1.1.1.4.2.3.4  [-v17_lattices(1^[])]   (3)  
+1.1.1.4.2.3.5  [-l3_lattices(1^[])]   (4)  
+1.1.2  [-m1_subset_1(k7_lattices(1^[], 3^[]), u1_struct_0(1^[])), m1_subset_1(3^[], u1_struct_0(1^[])), -v2_struct_0(1^[]), l3_lattices(1^[])]   (9)  substitution:[[_G11703, _G11767], [1^[], 3^[]]]
+1.1.2.1  [-m1_subset_1(3^[], u1_struct_0(1^[]))]   (6)  
+1.1.2.2  [v2_struct_0(1^[])]   (1)  
+1.1.2.3  [-l3_lattices(1^[])]   (4)  
+1.1.3  [-m1_subset_1(2^[], u1_struct_0(1^[]))]   (5)  
+1.1.4  [-v10_lattices(1^[])]   (2)  
+1.1.5  [-v17_lattices(1^[])]   (3)  
+1.1.6  [-l3_lattices(1^[])]   (4)  
+------------------------------------------------------
+End of proof for t38_boolealg

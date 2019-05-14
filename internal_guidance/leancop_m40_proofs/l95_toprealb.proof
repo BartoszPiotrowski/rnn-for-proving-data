@@ -1,0 +1,39 @@
+
+l95_toprealb is a Theorem
+Start of proof for l95_toprealb
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k1_pre_topc(k2_topalg_2, k2_struct_0(k2_topalg_2))=k2_topalg_2]
+ (2)  [-v2_pre_topc(k3_topmetr)]
+ (3)  [-l1_pre_topc(k3_topmetr)]
+ (4)  [v2_struct_0(k3_topmetr)]
+ (5)  [-v1_pre_topc(k3_topmetr)]
+ (6)  [-v2_pre_topc(k3_topmetr)]
+ (7)  [- (k2_topalg_2=k3_topmetr)]
+ (8)  [- (k1_pre_topc(_G4730, k2_struct_0(_G4730))=_G4730), v1_pre_topc(_G4730), l1_pre_topc(_G4730)]
+ (9)  [_G4125=_G4174, - (k2_struct_0(_G4125)=k2_struct_0(_G4174))]
+ (10)  [- (k1_pre_topc(_G3537, _G3672)=k1_pre_topc(_G3604, _G3741)), _G3537=_G3604, _G3672=_G3741]
+ (11)  [- (_G1568=_G1568)]
+ (12)  [_G1667=_G1712, - (_G1712=_G1667)]
+ (13)  [- (_G1900=_G2013), _G1900=_G1956, _G1956=_G2013]
+ (14)  [-v2_struct_0(_G2399), _G2350=_G2399, v2_struct_0(_G2350)]
+ (15)  [-v2_pre_topc(_G2677), _G2628=_G2677, v2_pre_topc(_G2628)]
+ (16)  [-v1_pre_topc(_G2955), _G2906=_G2955, v1_pre_topc(_G2906)]
+ (17)  [-l1_pre_topc(_G3224), _G3175=_G3224, l1_pre_topc(_G3175)]
+
+Connection Proof:
+-----------------
+1  [k1_pre_topc(k2_topalg_2, k2_struct_0(k2_topalg_2))=k2_topalg_2]   (1)  
+1.1  [- (k1_pre_topc(k2_topalg_2, k2_struct_0(k2_topalg_2))=k2_topalg_2), k1_pre_topc(k2_topalg_2, k2_struct_0(k2_topalg_2))=k1_pre_topc(k3_topmetr, k2_struct_0(k3_topmetr)), k1_pre_topc(k3_topmetr, k2_struct_0(k3_topmetr))=k2_topalg_2]   (13)  substitution:[[_G1900, _G2013, _G1956], [k1_pre_topc(k2_topalg_2, k2_struct_0(k2_topalg_2)), k2_topalg_2, k1_pre_topc(k3_topmetr, k2_struct_0(k3_topmetr))]]
+1.1.1  [- (k1_pre_topc(k2_topalg_2, k2_struct_0(k2_topalg_2))=k1_pre_topc(k3_topmetr, k2_struct_0(k3_topmetr))), k2_topalg_2=k3_topmetr, k2_struct_0(k2_topalg_2)=k2_struct_0(k3_topmetr)]   (10)  substitution:[[_G3537, _G3672, _G3604, _G3741], [k2_topalg_2, k2_struct_0(k2_topalg_2), k3_topmetr, k2_struct_0(k3_topmetr)]]
+1.1.1.1  [- (k2_topalg_2=k3_topmetr)]   (7)  
+1.1.1.2  [- (k2_struct_0(k2_topalg_2)=k2_struct_0(k3_topmetr)), k2_topalg_2=k3_topmetr]   (9)  substitution:[[_G4125, _G4174], [k2_topalg_2, k3_topmetr]]
+1.1.1.2.1  [- (k2_topalg_2=k3_topmetr)]   (7)  
+1.1.2  [- (k1_pre_topc(k3_topmetr, k2_struct_0(k3_topmetr))=k2_topalg_2), k1_pre_topc(k3_topmetr, k2_struct_0(k3_topmetr))=k3_topmetr, k3_topmetr=k2_topalg_2]   (13)  substitution:[[_G1900, _G2013, _G1956], [k1_pre_topc(k3_topmetr, k2_struct_0(k3_topmetr)), k2_topalg_2, k3_topmetr]]
+1.1.2.1  [- (k1_pre_topc(k3_topmetr, k2_struct_0(k3_topmetr))=k3_topmetr), v1_pre_topc(k3_topmetr), l1_pre_topc(k3_topmetr)]   (8)  substitution:[[_G4730], [k3_topmetr]]
+1.1.2.1.1  [-v1_pre_topc(k3_topmetr)]   (5)  
+1.1.2.1.2  [-l1_pre_topc(k3_topmetr)]   (3)  
+1.1.2.2  [- (k3_topmetr=k2_topalg_2), k2_topalg_2=k3_topmetr]   (12)  substitution:[[_G1712, _G1667], [k3_topmetr, k2_topalg_2]]
+1.1.2.2.1  [- (k2_topalg_2=k3_topmetr)]   (7)  
+------------------------------------------------------
+End of proof for l95_toprealb

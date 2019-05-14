@@ -1,0 +1,38 @@
+
+l20_numbers is a Theorem
+Start of proof for l20_numbers
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [r2_hidden(np__2, k4_ordinal1)]
+ (2)  [v1_xboole_0(k4_ordinal1)]
+ (3)  [-v3_ordinal1(k4_ordinal1)]
+ (4)  [- (k5_numbers=k4_ordinal1)]
+ (5)  [-v2_xxreal_0(np__2)]
+ (6)  [-m2_subset_1(np__2, k1_numbers, k5_numbers)]
+ (7)  [-m1_subset_1(np__2, k5_numbers)]
+ (8)  [-m1_subset_1(np__2, k1_numbers)]
+ (9)  [-v1_xboole_0(_G5733), m1_subset_1(_G5801, _G5733), -r2_hidden(_G5801, _G5733)]
+ (10)  [-v1_xboole_0(_G5733), -m1_subset_1(_G5801, _G5733), r2_hidden(_G5801, _G5733)]
+ (11)  [v1_xboole_0(_G5733), m1_subset_1(_G5801, _G5733), -v1_xboole_0(_G5801)]
+ (12)  [v1_xboole_0(_G5733), -m1_subset_1(_G5801, _G5733), v1_xboole_0(_G5801)]
+ (13)  [- (_G1778=_G1778)]
+ (14)  [_G1877=_G1922, - (_G1922=_G1877)]
+ (15)  [- (_G2110=_G2223), _G2110=_G2166, _G2166=_G2223]
+ (16)  [-v1_xboole_0(_G2609), _G2560=_G2609, v1_xboole_0(_G2560)]
+ (17)  [-v3_ordinal1(_G2887), _G2838=_G2887, v3_ordinal1(_G2838)]
+ (18)  [-v2_xxreal_0(_G3165), _G3116=_G3165, v2_xxreal_0(_G3116)]
+ (19)  [-m2_subset_1(_G3479, _G3652, _G3829), m2_subset_1(_G3394, _G3565, _G3740), _G3394=_G3479, _G3565=_G3652, _G3740=_G3829]
+ (20)  [-m1_subset_1(_G4489, _G4626), m1_subset_1(_G4422, _G4557), _G4422=_G4489, _G4557=_G4626]
+ (21)  [-r2_hidden(_G5077, _G5214), r2_hidden(_G5010, _G5145), _G5010=_G5077, _G5145=_G5214]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(np__2, k4_ordinal1)]   (1)  
+1.1  [-r2_hidden(np__2, k4_ordinal1), -v1_xboole_0(k4_ordinal1), m1_subset_1(np__2, k4_ordinal1)]   (9)  substitution:[[_G5801, _G5733], [np__2, k4_ordinal1]]
+1.1.1  [v1_xboole_0(k4_ordinal1)]   (2)  
+1.1.2  [-m1_subset_1(np__2, k4_ordinal1), m1_subset_1(np__2, k5_numbers), np__2=np__2, k5_numbers=k4_ordinal1]   (20)  substitution:[[_G4489, _G4626, _G4422, _G4557], [np__2, k4_ordinal1, np__2, k5_numbers]]
+1.1.2.1  [-m1_subset_1(np__2, k5_numbers)]   (7)  
+1.1.2.2  [- (np__2=np__2)]   (13)  substitution:[[_G1778], [np__2]]
+1.1.2.3  [- (k5_numbers=k4_ordinal1)]   (4)  
+------------------------------------------------------
+End of proof for l20_numbers

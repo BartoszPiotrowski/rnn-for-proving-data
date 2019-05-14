@@ -1,0 +1,35 @@
+
+t18_scmyciel is a Theorem
+Start of proof for t18_scmyciel
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [- (k3_tarski(1^[])=k1_xboole_0)]
+ (2)  [1^[]=k1_xboole_0]
+ (3)  [1^[]=k1_tarski(k1_xboole_0)]
+ (4)  [- (k1_zfmisc_1(k1_xboole_0)=k1_tarski(k1_xboole_0))]
+ (5)  [-r1_tarski(_G4307, k1_zfmisc_1(k3_tarski(_G4307)))]
+ (6)  [-r1_tarski(_G3948, k1_tarski(_G4003)), _G3948=k1_xboole_0]
+ (7)  [-r1_tarski(_G3948, k1_tarski(_G4003)), _G3948=k1_tarski(_G4003)]
+ (8)  [r1_tarski(_G3948, k1_tarski(_G4003)), - (_G3948=k1_xboole_0), - (_G3948=k1_tarski(_G4003))]
+ (9)  [_G2975=_G3024, - (k1_zfmisc_1(_G2975)=k1_zfmisc_1(_G3024))]
+ (10)  [_G3253=_G3302, - (k3_tarski(_G3253)=k3_tarski(_G3302))]
+ (11)  [_G3522=_G3571, - (k1_tarski(_G3522)=k1_tarski(_G3571))]
+ (12)  [-r1_tarski(_G2424, _G2561), r1_tarski(_G2357, _G2492), _G2357=_G2424, _G2492=_G2561]
+ (13)  [- (_G1584=_G1584)]
+ (14)  [_G1683=_G1728, - (_G1728=_G1683)]
+ (15)  [- (_G1916=_G2029), _G1916=_G1972, _G1972=_G2029]
+
+Connection Proof:
+-----------------
+1  [1^[]=k1_xboole_0]   (2)  
+1.1  [- (1^[]=k1_xboole_0), r1_tarski(1^[], k1_tarski(k1_xboole_0)), - (1^[]=k1_tarski(k1_xboole_0))]   (8)  substitution:[[_G3948, _G4003], [1^[], k1_xboole_0]]
+1.1.1  [-r1_tarski(1^[], k1_tarski(k1_xboole_0)), r1_tarski(1^[], k1_zfmisc_1(k3_tarski(1^[]))), 1^[]=1^[], k1_zfmisc_1(k3_tarski(1^[]))=k1_tarski(k1_xboole_0)]   (12)  substitution:[[_G2424, _G2561, _G2357, _G2492], [1^[], k1_tarski(k1_xboole_0), 1^[], k1_zfmisc_1(k3_tarski(1^[]))]]
+1.1.1.1  [-r1_tarski(1^[], k1_zfmisc_1(k3_tarski(1^[])))]   (5)  substitution:[[_G4307], [1^[]]]
+1.1.1.2  [- (1^[]=1^[])]   (13)  substitution:[[_G1584], [1^[]]]
+1.1.1.3  [- (k1_zfmisc_1(k3_tarski(1^[]))=k1_tarski(k1_xboole_0)), k1_zfmisc_1(k3_tarski(1^[]))=k1_zfmisc_1(k1_xboole_0), k1_zfmisc_1(k1_xboole_0)=k1_tarski(k1_xboole_0)]   (15)  substitution:[[_G1916, _G2029, _G1972], [k1_zfmisc_1(k3_tarski(1^[])), k1_tarski(k1_xboole_0), k1_zfmisc_1(k1_xboole_0)]]
+1.1.1.3.1  [- (k1_zfmisc_1(k3_tarski(1^[]))=k1_zfmisc_1(k1_xboole_0)), k3_tarski(1^[])=k1_xboole_0]   (9)  substitution:[[_G2975, _G3024], [k3_tarski(1^[]), k1_xboole_0]]
+1.1.1.3.1.1  [- (k3_tarski(1^[])=k1_xboole_0)]   (1)  
+1.1.1.3.2  [- (k1_zfmisc_1(k1_xboole_0)=k1_tarski(k1_xboole_0))]   (4)  
+1.1.2  [1^[]=k1_tarski(k1_xboole_0)]   (3)  
+------------------------------------------------------
+End of proof for t18_scmyciel

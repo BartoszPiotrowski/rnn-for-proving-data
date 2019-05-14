@@ -1,0 +1,45 @@
+
+t5_ordinal2 is a Theorem
+Start of proof for t5_ordinal2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v3_ordinal1(4^[])]
+ (2)  [r1_ordinal1(k3_tarski(4^[]), 4^[])]
+ (3)  [_G4260=_G4309, - (k3_tarski(_G4260)=k3_tarski(_G4309))]
+ (4)  [- (_G1961=_G1961)]
+ (5)  [_G2060=_G2105, - (_G2105=_G2060)]
+ (6)  [- (_G2293=_G2406), _G2293=_G2349, _G2349=_G2406]
+ (7)  [-r2_hidden(_G2810, _G2947), r2_hidden(_G2743, _G2878), _G2743=_G2810, _G2878=_G2947]
+ (8)  [-v3_ordinal1(_G3389), _G3340=_G3389, v3_ordinal1(_G3340)]
+ (9)  [-r1_ordinal1(_G3676, _G3813), r1_ordinal1(_G3609, _G3744), _G3609=_G3676, _G3744=_G3813]
+ (10)  [r2_hidden(_G4559, _G4606), r2_hidden(_G4606, _G4559)]
+ (11)  [v3_ordinal1(_G5770), -v3_ordinal1(k3_tarski(_G5770))]
+ (12)  [v3_ordinal1(_G5416), v3_ordinal1(_G5503), -r1_ordinal1(_G5416, _G5503), -r2_hidden(_G5503, _G5416)]
+ (13)  [_G4888=k3_tarski(_G4819), r2_hidden(_G5029, _G4888), -r2_hidden(_G5029, 1^[_G5029, _G4888, _G4819])]
+ (14)  [_G4888=k3_tarski(_G4819), r2_hidden(_G5029, _G4888), -r2_hidden(1^[_G5029, _G4888, _G4819], _G4819)]
+ (15)  [_G4888=k3_tarski(_G4819), -r2_hidden(_G5029, _G4888), r2_hidden(_G5029, _G5149), r2_hidden(_G5149, _G4819)]
+ (16)  [- (_G4888=k3_tarski(_G4819)), -r2_hidden(2^[_G4888, _G4819], _G4888), -r2_hidden(2^[_G4888, _G4819], 3^[_G4888, _G4819])]
+ (17)  [- (_G4888=k3_tarski(_G4819)), -r2_hidden(2^[_G4888, _G4819], _G4888), -r2_hidden(3^[_G4888, _G4819], _G4819)]
+ (18)  [- (_G4888=k3_tarski(_G4819)), r2_hidden(2^[_G4888, _G4819], _G4888), r2_hidden(2^[_G4888, _G4819], _G6676), r2_hidden(_G6676, _G4819)]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(4^[], 1^[4^[], k3_tarski(4^[]), 4^[]]), r2_hidden(1^[4^[], k3_tarski(4^[]), 4^[]], 4^[])]   (10)  substitution:[[_G4559, _G4606], [4^[], 1^[4^[], k3_tarski(4^[]), 4^[]]]]
+1.1  [-r2_hidden(4^[], 1^[4^[], k3_tarski(4^[]), 4^[]]), k3_tarski(4^[])=k3_tarski(4^[]), r2_hidden(4^[], k3_tarski(4^[]))]   (13)  substitution:[[_G5029, _G4888, _G4819], [4^[], k3_tarski(4^[]), 4^[]]]
+1.1.1  [- (k3_tarski(4^[])=k3_tarski(4^[])), 4^[]=4^[]]   (3)  substitution:[[_G4260, _G4309], [4^[], 4^[]]]
+1.1.1.1  [- (4^[]=4^[])]   (4)  substitution:[[_G1961], [4^[]]]
+1.1.2  [-r2_hidden(4^[], k3_tarski(4^[])), v3_ordinal1(k3_tarski(4^[])), v3_ordinal1(4^[]), -r1_ordinal1(k3_tarski(4^[]), 4^[])]   (12)  substitution:[[_G5503, _G5416], [4^[], k3_tarski(4^[])]]
+1.1.2.1  [-v3_ordinal1(k3_tarski(4^[])), v3_ordinal1(4^[])]   (11)  substitution:[[_G5770], [4^[]]]
+1.1.2.1.1  [-v3_ordinal1(4^[])]   (1)  
+1.1.2.2  [-v3_ordinal1(4^[])]   (1)  
+1.1.2.3  [r1_ordinal1(k3_tarski(4^[]), 4^[])]   (2)  
+1.2  [-r2_hidden(1^[4^[], k3_tarski(4^[]), 4^[]], 4^[]), k3_tarski(4^[])=k3_tarski(4^[]), r2_hidden(4^[], k3_tarski(4^[]))]   (14)  substitution:[[_G5029, _G4888, _G4819], [4^[], k3_tarski(4^[]), 4^[]]]
+1.2.1  [- (k3_tarski(4^[])=k3_tarski(4^[])), 4^[]=4^[]]   (3)  substitution:[[_G4260, _G4309], [4^[], 4^[]]]
+1.2.1.1  [- (4^[]=4^[])]   (4)  substitution:[[_G1961], [4^[]]]
+1.2.2  [-r2_hidden(4^[], k3_tarski(4^[])), v3_ordinal1(k3_tarski(4^[])), v3_ordinal1(4^[]), -r1_ordinal1(k3_tarski(4^[]), 4^[])]   (12)  substitution:[[_G5503, _G5416], [4^[], k3_tarski(4^[])]]
+1.2.2.1  [-v3_ordinal1(k3_tarski(4^[])), v3_ordinal1(4^[])]   (11)  substitution:[[_G5770], [4^[]]]
+1.2.2.1.1  [-v3_ordinal1(4^[])]   (1)  
+1.2.2.2  [-v3_ordinal1(4^[])]   (1)  
+1.2.2.3  [r1_ordinal1(k3_tarski(4^[]), 4^[])]   (2)  
+------------------------------------------------------
+End of proof for t5_ordinal2

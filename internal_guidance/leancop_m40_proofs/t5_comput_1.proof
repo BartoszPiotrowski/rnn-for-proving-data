@@ -1,0 +1,54 @@
+
+t5_comput_1 is a Theorem
+Start of proof for t5_comput_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k4_finseq_2(k6_numbers, 1^[])=k1_tarski(k1_xboole_0)]
+ (2)  [- (k1_subset_1(_G8826)=k1_xboole_0)]
+ (3)  [- (k1_xboole_0=o_0_0_xboole_0)]
+ (4)  [- (k6_finseq_1(_G8998)=k1_xboole_0)]
+ (5)  [-m1_subset_1(k1_subset_1(_G9113), k1_zfmisc_1(_G9113))]
+ (6)  [- (k5_numbers=k4_ordinal1)]
+ (7)  [- (k6_numbers=k1_xboole_0)]
+ (8)  [- (k9_setfam_1(_G9744)=k1_zfmisc_1(_G9744))]
+ (9)  [v1_xboole_0(k9_setfam_1(_G9875))]
+ (10)  [-v1_classes1(k9_setfam_1(_G9875))]
+ (11)  [-v1_coh_sp(k9_setfam_1(_G9875))]
+ (12)  [- (np__1=k1_tarski(k1_xboole_0))]
+ (13)  [- (k4_finseq_2(k6_numbers, _G10190)=k6_domain_1(k1_zfmisc_1(k2_zfmisc_1(k5_numbers, _G10190)), k6_finseq_1(_G10190)))]
+ (14)  [- (k6_domain_1(_G9301, _G9358)=k1_tarski(_G9358)), -v1_xboole_0(_G9301), m1_subset_1(_G9358, _G9301)]
+ (15)  [- (_G3198=_G3198)]
+ (16)  [_G3297=_G3342, - (_G3342=_G3297)]
+ (17)  [- (_G3530=_G3643), _G3530=_G3586, _G3586=_G3643]
+ (18)  [-m1_subset_1(_G4047, _G4184), m1_subset_1(_G3980, _G4115), _G3980=_G4047, _G4115=_G4184]
+ (19)  [-v1_xboole_0(_G4626), _G4577=_G4626, v1_xboole_0(_G4577)]
+ (20)  [-v1_classes1(_G4904), _G4855=_G4904, v1_classes1(_G4855)]
+ (21)  [-v1_coh_sp(_G5173), _G5124=_G5173, v1_coh_sp(_G5124)]
+ (22)  [_G5486=_G5535, - (k1_subset_1(_G5486)=k1_subset_1(_G5535))]
+ (23)  [_G5764=_G5813, - (k9_setfam_1(_G5764)=k9_setfam_1(_G5813))]
+ (24)  [- (k6_domain_1(_G6042, _G6177)=k6_domain_1(_G6109, _G6246)), _G6042=_G6109, _G6177=_G6246]
+ (25)  [_G6639=_G6688, - (k1_zfmisc_1(_G6639)=k1_zfmisc_1(_G6688))]
+ (26)  [- (k2_zfmisc_1(_G6917, _G7052)=k2_zfmisc_1(_G6984, _G7121)), _G6917=_G6984, _G7052=_G7121]
+ (27)  [_G7514=_G7563, - (k6_finseq_1(_G7514)=k6_finseq_1(_G7563))]
+ (28)  [_G8380=_G8429, - (k1_tarski(_G8380)=k1_tarski(_G8429))]
+ (29)  [- (k4_finseq_2(_G7792, _G7927)=k4_finseq_2(_G7859, _G7996)), _G7792=_G7859, _G7927=_G7996]
+
+Connection Proof:
+-----------------
+1  [v1_xboole_0(k9_setfam_1(k2_zfmisc_1(k5_numbers, 1^[])))]   (9)  substitution:[[_G9875], [k2_zfmisc_1(k5_numbers, 1^[])]]
+1.1  [-v1_xboole_0(k9_setfam_1(k2_zfmisc_1(k5_numbers, 1^[]))), - (k6_domain_1(k9_setfam_1(k2_zfmisc_1(k5_numbers, 1^[])), k1_xboole_0)=k1_tarski(k1_xboole_0)), m1_subset_1(k1_xboole_0, k9_setfam_1(k2_zfmisc_1(k5_numbers, 1^[])))]   (14)  substitution:[[_G9301, _G9358], [k9_setfam_1(k2_zfmisc_1(k5_numbers, 1^[])), k1_xboole_0]]
+1.1.1  [k6_domain_1(k9_setfam_1(k2_zfmisc_1(k5_numbers, 1^[])), k1_xboole_0)=k1_tarski(k1_xboole_0), - (k4_finseq_2(k6_numbers, 1^[])=k1_tarski(k1_xboole_0)), k4_finseq_2(k6_numbers, 1^[])=k6_domain_1(k9_setfam_1(k2_zfmisc_1(k5_numbers, 1^[])), k1_xboole_0)]   (17)  substitution:[[_G3586, _G3643, _G3530], [k6_domain_1(k9_setfam_1(k2_zfmisc_1(k5_numbers, 1^[])), k1_xboole_0), k1_tarski(k1_xboole_0), k4_finseq_2(k6_numbers, 1^[])]]
+1.1.1.1  [k4_finseq_2(k6_numbers, 1^[])=k1_tarski(k1_xboole_0)]   (1)  
+1.1.1.2  [- (k4_finseq_2(k6_numbers, 1^[])=k6_domain_1(k9_setfam_1(k2_zfmisc_1(k5_numbers, 1^[])), k1_xboole_0)), k4_finseq_2(k6_numbers, 1^[])=k6_domain_1(k1_zfmisc_1(k2_zfmisc_1(k5_numbers, 1^[])), k6_finseq_1(1^[])), k6_domain_1(k1_zfmisc_1(k2_zfmisc_1(k5_numbers, 1^[])), k6_finseq_1(1^[]))=k6_domain_1(k9_setfam_1(k2_zfmisc_1(k5_numbers, 1^[])), k1_xboole_0)]   (17)  substitution:[[_G3530, _G3643, _G3586], [k4_finseq_2(k6_numbers, 1^[]), k6_domain_1(k9_setfam_1(k2_zfmisc_1(k5_numbers, 1^[])), k1_xboole_0), k6_domain_1(k1_zfmisc_1(k2_zfmisc_1(k5_numbers, 1^[])), k6_finseq_1(1^[]))]]
+1.1.1.2.1  [- (k4_finseq_2(k6_numbers, 1^[])=k6_domain_1(k1_zfmisc_1(k2_zfmisc_1(k5_numbers, 1^[])), k6_finseq_1(1^[])))]   (13)  substitution:[[_G10190], [1^[]]]
+1.1.1.2.2  [- (k6_domain_1(k1_zfmisc_1(k2_zfmisc_1(k5_numbers, 1^[])), k6_finseq_1(1^[]))=k6_domain_1(k9_setfam_1(k2_zfmisc_1(k5_numbers, 1^[])), k1_xboole_0)), k1_zfmisc_1(k2_zfmisc_1(k5_numbers, 1^[]))=k9_setfam_1(k2_zfmisc_1(k5_numbers, 1^[])), k6_finseq_1(1^[])=k1_xboole_0]   (24)  substitution:[[_G6042, _G6177, _G6109, _G6246], [k1_zfmisc_1(k2_zfmisc_1(k5_numbers, 1^[])), k6_finseq_1(1^[]), k9_setfam_1(k2_zfmisc_1(k5_numbers, 1^[])), k1_xboole_0]]
+1.1.1.2.2.1  [- (k1_zfmisc_1(k2_zfmisc_1(k5_numbers, 1^[]))=k9_setfam_1(k2_zfmisc_1(k5_numbers, 1^[]))), k9_setfam_1(k2_zfmisc_1(k5_numbers, 1^[]))=k1_zfmisc_1(k2_zfmisc_1(k5_numbers, 1^[]))]   (16)  substitution:[[_G3342, _G3297], [k1_zfmisc_1(k2_zfmisc_1(k5_numbers, 1^[])), k9_setfam_1(k2_zfmisc_1(k5_numbers, 1^[]))]]
+1.1.1.2.2.1.1  [- (k9_setfam_1(k2_zfmisc_1(k5_numbers, 1^[]))=k1_zfmisc_1(k2_zfmisc_1(k5_numbers, 1^[])))]   (8)  substitution:[[_G9744], [k2_zfmisc_1(k5_numbers, 1^[])]]
+1.1.1.2.2.2  [- (k6_finseq_1(1^[])=k1_xboole_0)]   (4)  substitution:[[_G8998], [1^[]]]
+1.1.2  [-m1_subset_1(k1_xboole_0, k9_setfam_1(k2_zfmisc_1(k5_numbers, 1^[]))), m1_subset_1(k1_subset_1(k2_zfmisc_1(k5_numbers, 1^[])), k1_zfmisc_1(k2_zfmisc_1(k5_numbers, 1^[]))), k1_subset_1(k2_zfmisc_1(k5_numbers, 1^[]))=k1_xboole_0, k1_zfmisc_1(k2_zfmisc_1(k5_numbers, 1^[]))=k9_setfam_1(k2_zfmisc_1(k5_numbers, 1^[]))]   (18)  substitution:[[_G4047, _G4184, _G3980, _G4115], [k1_xboole_0, k9_setfam_1(k2_zfmisc_1(k5_numbers, 1^[])), k1_subset_1(k2_zfmisc_1(k5_numbers, 1^[])), k1_zfmisc_1(k2_zfmisc_1(k5_numbers, 1^[]))]]
+1.1.2.1  [-m1_subset_1(k1_subset_1(k2_zfmisc_1(k5_numbers, 1^[])), k1_zfmisc_1(k2_zfmisc_1(k5_numbers, 1^[])))]   (5)  substitution:[[_G9113], [k2_zfmisc_1(k5_numbers, 1^[])]]
+1.1.2.2  [- (k1_subset_1(k2_zfmisc_1(k5_numbers, 1^[]))=k1_xboole_0)]   (2)  substitution:[[_G8826], [k2_zfmisc_1(k5_numbers, 1^[])]]
+1.1.2.3  [- (k1_zfmisc_1(k2_zfmisc_1(k5_numbers, 1^[]))=k9_setfam_1(k2_zfmisc_1(k5_numbers, 1^[]))), k9_setfam_1(k2_zfmisc_1(k5_numbers, 1^[]))=k1_zfmisc_1(k2_zfmisc_1(k5_numbers, 1^[]))]   (16)  substitution:[[_G3342, _G3297], [k1_zfmisc_1(k2_zfmisc_1(k5_numbers, 1^[])), k9_setfam_1(k2_zfmisc_1(k5_numbers, 1^[]))]]
+1.1.2.3.1  [- (k9_setfam_1(k2_zfmisc_1(k5_numbers, 1^[]))=k1_zfmisc_1(k2_zfmisc_1(k5_numbers, 1^[])))]   (8)  substitution:[[_G9744], [k2_zfmisc_1(k5_numbers, 1^[])]]
+------------------------------------------------------
+End of proof for t5_comput_1

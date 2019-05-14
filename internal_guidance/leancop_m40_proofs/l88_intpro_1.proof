@@ -1,0 +1,22 @@
+
+l88_intpro_1 is a Theorem
+Start of proof for l88_intpro_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], k1_intpro_1)]
+ (2)  [-m1_subset_1(2^[], k1_intpro_1)]
+ (3)  [-m1_subset_1(3^[], k1_intpro_1)]
+ (4)  [r2_hidden(k3_intpro_1(k4_intpro_1(1^[], k4_intpro_1(2^[], 3^[])), k4_intpro_1(k4_intpro_1(2^[], 3^[]), 1^[])), k8_intpro_1)]
+ (5)  [-m1_subset_1(k4_intpro_1(_G830, _G884), k1_intpro_1), m1_subset_1(_G830, k1_intpro_1), m1_subset_1(_G884, k1_intpro_1)]
+ (6)  [m1_subset_1(_G1198, k1_intpro_1), m1_subset_1(_G1315, k1_intpro_1), -r2_hidden(k3_intpro_1(k4_intpro_1(_G1198, _G1315), k4_intpro_1(_G1315, _G1198)), k8_intpro_1)]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(k3_intpro_1(k4_intpro_1(1^[], k4_intpro_1(2^[], 3^[])), k4_intpro_1(k4_intpro_1(2^[], 3^[]), 1^[])), k8_intpro_1)]   (4)  
+1.1  [-r2_hidden(k3_intpro_1(k4_intpro_1(1^[], k4_intpro_1(2^[], 3^[])), k4_intpro_1(k4_intpro_1(2^[], 3^[]), 1^[])), k8_intpro_1), m1_subset_1(1^[], k1_intpro_1), m1_subset_1(k4_intpro_1(2^[], 3^[]), k1_intpro_1)]   (6)  substitution:[[_G1198, _G1315], [1^[], k4_intpro_1(2^[], 3^[])]]
+1.1.1  [-m1_subset_1(1^[], k1_intpro_1)]   (1)  
+1.1.2  [-m1_subset_1(k4_intpro_1(2^[], 3^[]), k1_intpro_1), m1_subset_1(2^[], k1_intpro_1), m1_subset_1(3^[], k1_intpro_1)]   (5)  substitution:[[_G830, _G884], [2^[], 3^[]]]
+1.1.2.1  [-m1_subset_1(2^[], k1_intpro_1)]   (2)  
+1.1.2.2  [-m1_subset_1(3^[], k1_intpro_1)]   (3)  
+------------------------------------------------------
+End of proof for l88_intpro_1

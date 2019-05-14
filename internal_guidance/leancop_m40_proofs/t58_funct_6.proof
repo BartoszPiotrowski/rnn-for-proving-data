@@ -1,0 +1,41 @@
+
+t58_funct_6 is a Theorem
+Start of proof for t58_funct_6
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k10_funct_6(k1_xboole_0)=k1_xboole_0]
+ (2)  [v1_xboole_0(_G5127), -v1_funct_1(_G5127)]
+ (3)  [v1_xboole_0(_G5258), -v1_relat_1(_G5258)]
+ (4)  [-v1_xboole_0(k1_xboole_0)]
+ (5)  [- (k1_funct_5(k1_xboole_0)=k1_xboole_0)]
+ (6)  [- (k3_funct_5(k1_xboole_0)=k1_xboole_0)]
+ (7)  [- (k2_funct_5(k1_xboole_0)=k1_xboole_0)]
+ (8)  [- (k4_funct_5(k1_xboole_0)=k1_xboole_0)]
+ (9)  [- (k10_funct_6(_G5389)=k3_funct_5(k2_funct_5(_G5389))), v1_relat_1(_G5389), v1_funct_1(_G5389)]
+ (10)  [_G3641=_G3690, - (k1_funct_5(_G3641)=k1_funct_5(_G3690))]
+ (11)  [_G3919=_G3968, - (k3_funct_5(_G3919)=k3_funct_5(_G3968))]
+ (12)  [_G4197=_G4246, - (k2_funct_5(_G4197)=k2_funct_5(_G4246))]
+ (13)  [_G4475=_G4524, - (k4_funct_5(_G4475)=k4_funct_5(_G4524))]
+ (14)  [_G4744=_G4793, - (k10_funct_6(_G4744)=k10_funct_6(_G4793))]
+ (15)  [- (_G1971=_G1971)]
+ (16)  [_G2070=_G2115, - (_G2115=_G2070)]
+ (17)  [- (_G2303=_G2416), _G2303=_G2359, _G2359=_G2416]
+ (18)  [-v1_relat_1(_G2802), _G2753=_G2802, v1_relat_1(_G2753)]
+ (19)  [-v1_funct_1(_G3080), _G3031=_G3080, v1_funct_1(_G3031)]
+ (20)  [-v1_xboole_0(_G3349), _G3300=_G3349, v1_xboole_0(_G3300)]
+
+Connection Proof:
+-----------------
+1  [k10_funct_6(k1_xboole_0)=k1_xboole_0]   (1)  
+1.1  [- (k10_funct_6(k1_xboole_0)=k1_xboole_0), k10_funct_6(k1_xboole_0)=k3_funct_5(k2_funct_5(k1_xboole_0)), k3_funct_5(k2_funct_5(k1_xboole_0))=k1_xboole_0]   (17)  substitution:[[_G2303, _G2416, _G2359], [k10_funct_6(k1_xboole_0), k1_xboole_0, k3_funct_5(k2_funct_5(k1_xboole_0))]]
+1.1.1  [- (k10_funct_6(k1_xboole_0)=k3_funct_5(k2_funct_5(k1_xboole_0))), v1_relat_1(k1_xboole_0), v1_funct_1(k1_xboole_0)]   (9)  substitution:[[_G5389], [k1_xboole_0]]
+1.1.1.1  [-v1_relat_1(k1_xboole_0), v1_xboole_0(k1_xboole_0)]   (3)  substitution:[[_G5258], [k1_xboole_0]]
+1.1.1.1.1  [-v1_xboole_0(k1_xboole_0)]   (4)  
+1.1.1.2  [-v1_funct_1(k1_xboole_0), v1_xboole_0(k1_xboole_0)]   (2)  substitution:[[_G5127], [k1_xboole_0]]
+1.1.1.2.1  [-v1_xboole_0(k1_xboole_0)]   (4)  
+1.1.2  [- (k3_funct_5(k2_funct_5(k1_xboole_0))=k1_xboole_0), k3_funct_5(k2_funct_5(k1_xboole_0))=k3_funct_5(k1_xboole_0), k3_funct_5(k1_xboole_0)=k1_xboole_0]   (17)  substitution:[[_G2303, _G2416, _G2359], [k3_funct_5(k2_funct_5(k1_xboole_0)), k1_xboole_0, k3_funct_5(k1_xboole_0)]]
+1.1.2.1  [- (k3_funct_5(k2_funct_5(k1_xboole_0))=k3_funct_5(k1_xboole_0)), k2_funct_5(k1_xboole_0)=k1_xboole_0]   (11)  substitution:[[_G3919, _G3968], [k2_funct_5(k1_xboole_0), k1_xboole_0]]
+1.1.2.1.1  [- (k2_funct_5(k1_xboole_0)=k1_xboole_0)]   (7)  
+1.1.2.2  [- (k3_funct_5(k1_xboole_0)=k1_xboole_0)]   (6)  
+------------------------------------------------------
+End of proof for t58_funct_6

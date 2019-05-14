@@ -1,0 +1,31 @@
+
+t7_collsp is a Theorem
+Start of proof for t7_collsp
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(1^[])]
+ (2)  [-v2_collsp(1^[])]
+ (3)  [-v3_collsp(1^[])]
+ (4)  [-l1_collsp(1^[])]
+ (5)  [-m1_subset_1(2^[], u1_struct_0(1^[]))]
+ (6)  [-m1_subset_1(3^[], u1_struct_0(1^[]))]
+ (7)  [-m1_subset_1(4^[], u1_struct_0(1^[]))]
+ (8)  [-r1_collsp(1^[], 2^[], 3^[], 4^[])]
+ (9)  [r1_collsp(1^[], 3^[], 2^[], 4^[])]
+ (10)  [l1_collsp(_G1029), v3_collsp(_G1029), v2_collsp(_G1029), -v2_struct_0(_G1029), m1_subset_1(_G1347, u1_struct_0(_G1029)), m1_subset_1(_G1510, u1_struct_0(_G1029)), m1_subset_1(_G1666, u1_struct_0(_G1029)), r1_collsp(_G1029, _G1347, _G1510, _G1666), -r1_collsp(_G1029, _G1510, _G1347, _G1666)]
+ (11)  [l1_collsp(_G1029), v3_collsp(_G1029), v2_collsp(_G1029), -v2_struct_0(_G1029), m1_subset_1(_G1347, u1_struct_0(_G1029)), m1_subset_1(_G1510, u1_struct_0(_G1029)), m1_subset_1(_G1666, u1_struct_0(_G1029)), r1_collsp(_G1029, _G1347, _G1510, _G1666), -r1_collsp(_G1029, _G1347, _G1666, _G1510)]
+
+Connection Proof:
+-----------------
+1  [r1_collsp(1^[], 3^[], 2^[], 4^[])]   (9)  
+1.1  [-r1_collsp(1^[], 3^[], 2^[], 4^[]), l1_collsp(1^[]), v3_collsp(1^[]), v2_collsp(1^[]), -v2_struct_0(1^[]), m1_subset_1(2^[], u1_struct_0(1^[])), m1_subset_1(3^[], u1_struct_0(1^[])), m1_subset_1(4^[], u1_struct_0(1^[])), r1_collsp(1^[], 2^[], 3^[], 4^[])]   (10)  substitution:[[_G1029, _G1510, _G1347, _G1666], [1^[], 3^[], 2^[], 4^[]]]
+1.1.1  [-l1_collsp(1^[])]   (4)  
+1.1.2  [-v3_collsp(1^[])]   (3)  
+1.1.3  [-v2_collsp(1^[])]   (2)  
+1.1.4  [v2_struct_0(1^[])]   (1)  
+1.1.5  [-m1_subset_1(2^[], u1_struct_0(1^[]))]   (5)  
+1.1.6  [-m1_subset_1(3^[], u1_struct_0(1^[]))]   (6)  
+1.1.7  [-m1_subset_1(4^[], u1_struct_0(1^[]))]   (7)  
+1.1.8  [-r1_collsp(1^[], 2^[], 3^[], 4^[])]   (8)  
+------------------------------------------------------
+End of proof for t7_collsp

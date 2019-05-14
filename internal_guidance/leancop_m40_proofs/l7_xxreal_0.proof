@@ -1,0 +1,26 @@
+
+l7_xxreal_0 is a Theorem
+Start of proof for l7_xxreal_0
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-r2_hidden(k1_xxreal_0, k2_arytm_2)]
+ (2)  [- (k1_xxreal_0=k1_numbers)]
+ (3)  [-r1_tarski(k2_arytm_2, k1_numbers)]
+ (4)  [r2_hidden(_G3171, _G3218), r1_tarski(_G3218, _G3171)]
+ (5)  [- (_G1057=_G1057)]
+ (6)  [_G1156=_G1201, - (_G1201=_G1156)]
+ (7)  [- (_G1389=_G1502), _G1389=_G1445, _G1445=_G1502]
+ (8)  [-r1_tarski(_G1906, _G2043), r1_tarski(_G1839, _G1974), _G1839=_G1906, _G1974=_G2043]
+ (9)  [-r2_hidden(_G2494, _G2631), r2_hidden(_G2427, _G2562), _G2427=_G2494, _G2562=_G2631]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(k1_xxreal_0, k2_arytm_2), r1_tarski(k2_arytm_2, k1_xxreal_0)]   (4)  substitution:[[_G3171, _G3218], [k1_xxreal_0, k2_arytm_2]]
+1.1  [-r2_hidden(k1_xxreal_0, k2_arytm_2)]   (1)  
+1.2  [-r1_tarski(k2_arytm_2, k1_xxreal_0), r1_tarski(k2_arytm_2, k1_numbers), k2_arytm_2=k2_arytm_2, k1_numbers=k1_xxreal_0]   (8)  substitution:[[_G1906, _G2043, _G1839, _G1974], [k2_arytm_2, k1_xxreal_0, k2_arytm_2, k1_numbers]]
+1.2.1  [-r1_tarski(k2_arytm_2, k1_numbers)]   (3)  
+1.2.2  [- (k2_arytm_2=k2_arytm_2)]   (5)  substitution:[[_G1057], [k2_arytm_2]]
+1.2.3  [- (k1_numbers=k1_xxreal_0), k1_xxreal_0=k1_numbers]   (6)  substitution:[[_G1201, _G1156], [k1_numbers, k1_xxreal_0]]
+1.2.3.1  [- (k1_xxreal_0=k1_numbers)]   (2)  
+------------------------------------------------------
+End of proof for l7_xxreal_0

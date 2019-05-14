@@ -1,0 +1,55 @@
+
+l20_metric_3 is a Theorem
+Start of proof for l20_metric_3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-4^[], k6_square_1(k2_xcmplx_0(1^[], 2^[]))=k6_numbers]
+ (2)  [-4^[], - (2^[]=k6_numbers)]
+ (3)  [-4^[], - (1^[]=k6_numbers)]
+ (4)  [-3^[], 1^[]=k6_numbers, 2^[]=k6_numbers]
+ (5)  [-3^[], - (k6_square_1(k2_xcmplx_0(1^[], 2^[]))=k6_numbers)]
+ (6)  [-v1_xreal_0(1^[])]
+ (7)  [-v1_xreal_0(2^[])]
+ (8)  [-r1_xxreal_0(k6_numbers, 1^[])]
+ (9)  [-r1_xxreal_0(k6_numbers, 2^[])]
+ (10)  [4^[], 3^[]]
+ (11)  [v1_xreal_0(_G4386), v1_xreal_0(_G4496), r1_xxreal_0(k6_numbers, _G4496), r1_xxreal_0(k6_numbers, _G4386), k6_square_1(k2_xcmplx_0(_G4386, _G4496))=k6_numbers, - (_G4386=k6_numbers)]
+ (12)  [v1_xreal_0(_G4386), v1_xreal_0(_G4496), r1_xxreal_0(k6_numbers, _G4496), r1_xxreal_0(k6_numbers, _G4386), k6_square_1(k2_xcmplx_0(_G4386, _G4496))=k6_numbers, - (_G4496=k6_numbers)]
+ (13)  [v1_xreal_0(_G4386), v1_xreal_0(_G4496), r1_xxreal_0(k6_numbers, _G4496), r1_xxreal_0(k6_numbers, _G4386), - (k6_square_1(k2_xcmplx_0(_G4386, _G4496))=k6_numbers), _G4386=k6_numbers, _G4496=k6_numbers]
+ (14)  [_G3487=_G3536, - (k6_square_1(_G3487)=k6_square_1(_G3536))]
+ (15)  [- (k2_xcmplx_0(_G3756, _G3891)=k2_xcmplx_0(_G3823, _G3960)), _G3756=_G3823, _G3891=_G3960]
+ (16)  [- (_G1797=_G1797)]
+ (17)  [_G1896=_G1941, - (_G1941=_G1896)]
+ (18)  [- (_G2129=_G2242), _G2129=_G2185, _G2185=_G2242]
+ (19)  [-v1_xreal_0(_G2628), _G2579=_G2628, v1_xreal_0(_G2579)]
+ (20)  [-r1_xxreal_0(_G2915, _G3052), r1_xxreal_0(_G2848, _G2983), _G2848=_G2915, _G2983=_G3052]
+
+Connection Proof:
+-----------------
+1  [4^[], 3^[]]   (10)  
+1.1  [-4^[], k6_square_1(k2_xcmplx_0(1^[], 2^[]))=k6_numbers]   (1)  
+1.1.1  [- (k6_square_1(k2_xcmplx_0(1^[], 2^[]))=k6_numbers), v1_xreal_0(1^[]), v1_xreal_0(2^[]), r1_xxreal_0(k6_numbers, 2^[]), r1_xxreal_0(k6_numbers, 1^[]), 1^[]=k6_numbers, 2^[]=k6_numbers]   (13)  substitution:[[_G4386, _G4496], [1^[], 2^[]]]
+1.1.1.1  [-v1_xreal_0(1^[])]   (6)  
+1.1.1.2  [-v1_xreal_0(2^[])]   (7)  
+1.1.1.3  [-r1_xxreal_0(k6_numbers, 2^[])]   (9)  
+1.1.1.4  [-r1_xxreal_0(k6_numbers, 1^[])]   (8)  
+1.1.1.5  [- (1^[]=k6_numbers), -4^[]]   (3)  
+1.1.1.5.1  [4^[]]   (reduction:1)  
+1.1.1.6  [- (2^[]=k6_numbers), -4^[]]   (2)  
+1.1.1.6.1  [4^[]]   (reduction:1)  
+1.2  [-3^[], - (k6_square_1(k2_xcmplx_0(1^[], 2^[]))=k6_numbers)]   (5)  
+1.2.1  [k6_square_1(k2_xcmplx_0(1^[], 2^[]))=k6_numbers, v1_xreal_0(1^[]), v1_xreal_0(2^[]), r1_xxreal_0(k6_numbers, 2^[]), r1_xxreal_0(k6_numbers, 1^[]), - (1^[]=k6_numbers)]   (11)  substitution:[[_G4386, _G4496], [1^[], 2^[]]]
+1.2.1.1  [-v1_xreal_0(1^[])]   (6)  
+1.2.1.2  [-v1_xreal_0(2^[])]   (7)  
+1.2.1.3  [-r1_xxreal_0(k6_numbers, 2^[])]   (9)  
+1.2.1.4  [-r1_xxreal_0(k6_numbers, 1^[])]   (8)  
+1.2.1.5  [1^[]=k6_numbers, -3^[], 2^[]=k6_numbers]   (4)  
+1.2.1.5.1  [3^[]]   (reduction:1)  
+1.2.1.5.2  [- (2^[]=k6_numbers), v1_xreal_0(1^[]), v1_xreal_0(2^[]), r1_xxreal_0(k6_numbers, 2^[]), r1_xxreal_0(k6_numbers, 1^[]), k6_square_1(k2_xcmplx_0(1^[], 2^[]))=k6_numbers]   (12)  substitution:[[_G4496, _G4386], [2^[], 1^[]]]
+1.2.1.5.2.1  [-v1_xreal_0(1^[])]   (6)  
+1.2.1.5.2.2  [-v1_xreal_0(2^[])]   (7)  
+1.2.1.5.2.3  [-r1_xxreal_0(k6_numbers, 2^[])]   (9)  
+1.2.1.5.2.4  [-r1_xxreal_0(k6_numbers, 1^[])]   (8)  
+1.2.1.5.2.5  [- (k6_square_1(k2_xcmplx_0(1^[], 2^[]))=k6_numbers)]   (reduction:1.2)  
+------------------------------------------------------
+End of proof for l20_metric_3

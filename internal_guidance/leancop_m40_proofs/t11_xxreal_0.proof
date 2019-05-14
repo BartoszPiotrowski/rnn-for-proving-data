@@ -1,0 +1,38 @@
+
+t11_xxreal_0 is a Theorem
+Start of proof for t11_xxreal_0
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-r2_hidden(k2_xxreal_0, k1_numbers)]
+ (2)  [- (k2_xxreal_0=k4_tarski(k6_numbers, k1_numbers))]
+ (3)  [- (k4_tarski(_G5518, _G5568)=k2_tarski(k2_tarski(_G5518, _G5568), k1_tarski(_G5518)))]
+ (4)  [r2_hidden(_G5814, _G5872), r2_hidden(_G5872, _G5931), r2_hidden(_G5931, _G5814)]
+ (5)  [_G4924=k2_tarski(_G4783, _G4853), -r2_hidden(_G5092, _G4924), _G5092=_G4783]
+ (6)  [_G4924=k2_tarski(_G4783, _G4853), -r2_hidden(_G5092, _G4924), _G5092=_G4853]
+ (7)  [_G4924=k2_tarski(_G4783, _G4853), r2_hidden(_G5092, _G4924), - (_G5092=_G4783), - (_G5092=_G4853)]
+ (8)  [- (_G4924=k2_tarski(_G4783, _G4853)), r2_hidden(1^[_G4924, _G4853, _G4783], _G4924), 1^[_G4924, _G4853, _G4783]=_G4783]
+ (9)  [- (_G4924=k2_tarski(_G4783, _G4853)), r2_hidden(1^[_G4924, _G4853, _G4783], _G4924), 1^[_G4924, _G4853, _G4783]=_G4853]
+ (10)  [- (_G4924=k2_tarski(_G4783, _G4853)), -r2_hidden(1^[_G4924, _G4853, _G4783], _G4924), - (1^[_G4924, _G4853, _G4783]=_G4783), - (1^[_G4924, _G4853, _G4783]=_G4853)]
+ (11)  [- (k4_tarski(_G3257, _G3392)=k4_tarski(_G3324, _G3461)), _G3257=_G3324, _G3392=_G3461]
+ (12)  [_G4442=_G4491, - (k1_tarski(_G4442)=k1_tarski(_G4491))]
+ (13)  [- (k2_tarski(_G3854, _G3989)=k2_tarski(_G3921, _G4058)), _G3854=_G3921, _G3989=_G4058]
+ (14)  [-r2_hidden(_G2706, _G2843), r2_hidden(_G2639, _G2774), _G2639=_G2706, _G2774=_G2843]
+ (15)  [- (_G1866=_G1866)]
+ (16)  [_G1965=_G2010, - (_G2010=_G1965)]
+ (17)  [- (_G2198=_G2311), _G2198=_G2254, _G2254=_G2311]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(k2_tarski(k6_numbers, k1_numbers), k4_tarski(k6_numbers, k1_numbers)), r2_hidden(k4_tarski(k6_numbers, k1_numbers), k1_numbers), r2_hidden(k1_numbers, k2_tarski(k6_numbers, k1_numbers))]   (4)  substitution:[[_G5814, _G5872, _G5931], [k2_tarski(k6_numbers, k1_numbers), k4_tarski(k6_numbers, k1_numbers), k1_numbers]]
+1.1  [-r2_hidden(k2_tarski(k6_numbers, k1_numbers), k4_tarski(k6_numbers, k1_numbers)), k4_tarski(k6_numbers, k1_numbers)=k2_tarski(k2_tarski(k6_numbers, k1_numbers), k1_tarski(k6_numbers)), k2_tarski(k6_numbers, k1_numbers)=k2_tarski(k6_numbers, k1_numbers)]   (5)  substitution:[[_G5092, _G4924, _G4783, _G4853], [k2_tarski(k6_numbers, k1_numbers), k4_tarski(k6_numbers, k1_numbers), k2_tarski(k6_numbers, k1_numbers), k1_tarski(k6_numbers)]]
+1.1.1  [- (k4_tarski(k6_numbers, k1_numbers)=k2_tarski(k2_tarski(k6_numbers, k1_numbers), k1_tarski(k6_numbers)))]   (3)  substitution:[[_G5518, _G5568], [k6_numbers, k1_numbers]]
+1.1.2  [- (k2_tarski(k6_numbers, k1_numbers)=k2_tarski(k6_numbers, k1_numbers))]   (15)  substitution:[[_G1866], [k2_tarski(k6_numbers, k1_numbers)]]
+1.2  [-r2_hidden(k4_tarski(k6_numbers, k1_numbers), k1_numbers), r2_hidden(k2_xxreal_0, k1_numbers), k2_xxreal_0=k4_tarski(k6_numbers, k1_numbers), k1_numbers=k1_numbers]   (14)  substitution:[[_G2706, _G2843, _G2639, _G2774], [k4_tarski(k6_numbers, k1_numbers), k1_numbers, k2_xxreal_0, k1_numbers]]
+1.2.1  [-r2_hidden(k2_xxreal_0, k1_numbers)]   (1)  
+1.2.2  [- (k2_xxreal_0=k4_tarski(k6_numbers, k1_numbers))]   (2)  
+1.2.3  [- (k1_numbers=k1_numbers)]   (15)  substitution:[[_G1866], [k1_numbers]]
+1.3  [-r2_hidden(k1_numbers, k2_tarski(k6_numbers, k1_numbers)), k2_tarski(k6_numbers, k1_numbers)=k2_tarski(k6_numbers, k1_numbers), k1_numbers=k1_numbers]   (6)  substitution:[[_G5092, _G4924, _G4783, _G4853], [k1_numbers, k2_tarski(k6_numbers, k1_numbers), k6_numbers, k1_numbers]]
+1.3.1  [- (k2_tarski(k6_numbers, k1_numbers)=k2_tarski(k6_numbers, k1_numbers))]   (15)  substitution:[[_G1866], [k2_tarski(k6_numbers, k1_numbers)]]
+1.3.2  [- (k1_numbers=k1_numbers)]   (15)  substitution:[[_G1866], [k1_numbers]]
+------------------------------------------------------
+End of proof for t11_xxreal_0

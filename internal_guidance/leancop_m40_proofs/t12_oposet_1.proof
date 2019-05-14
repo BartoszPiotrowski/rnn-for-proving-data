@@ -1,0 +1,29 @@
+
+t12_oposet_1 is a Theorem
+Start of proof for t12_oposet_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(1^[])]
+ (2)  [-l2_qmax_1(1^[])]
+ (3)  [-v8_oposet_1(1^[])]
+ (4)  [v3_necklace(1^[])]
+ (5)  [l2_qmax_1(_G893), -v2_struct_0(_G893), v8_oposet_1(_G893), -v2_necklace(_G893)]
+ (6)  [l2_qmax_1(_G893), -v2_struct_0(_G893), v8_oposet_1(_G893), -v4_orders_2(_G893)]
+ (7)  [l2_qmax_1(_G893), -v2_struct_0(_G893), -v8_oposet_1(_G893), v2_necklace(_G893), v4_orders_2(_G893)]
+ (8)  [l2_qmax_1(_G1214), -l1_orders_2(_G1214)]
+ (9)  [l2_qmax_1(_G1214), -l1_robbins1(_G1214)]
+ (10)  [l1_orders_2(_G1394), -v2_struct_0(_G1394), v2_necklace(_G1394), -v3_necklace(_G1394)]
+
+Connection Proof:
+-----------------
+1  [v2_struct_0(1^[])]   (1)  
+1.1  [-v2_struct_0(1^[]), l1_orders_2(1^[]), v2_necklace(1^[]), -v3_necklace(1^[])]   (10)  substitution:[[_G1394], [1^[]]]
+1.1.1  [-l1_orders_2(1^[]), l2_qmax_1(1^[])]   (8)  substitution:[[_G1214], [1^[]]]
+1.1.1.1  [-l2_qmax_1(1^[])]   (2)  
+1.1.2  [-v2_necklace(1^[]), l2_qmax_1(1^[]), -v2_struct_0(1^[]), v8_oposet_1(1^[])]   (5)  substitution:[[_G893], [1^[]]]
+1.1.2.1  [-l2_qmax_1(1^[])]   (2)  
+1.1.2.2  [v2_struct_0(1^[])]   (1)  
+1.1.2.3  [-v8_oposet_1(1^[])]   (3)  
+1.1.3  [v3_necklace(1^[])]   (4)  
+------------------------------------------------------
+End of proof for t12_oposet_1

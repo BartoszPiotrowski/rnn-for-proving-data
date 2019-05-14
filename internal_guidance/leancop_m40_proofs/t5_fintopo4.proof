@@ -1,0 +1,24 @@
+
+t5_fintopo4 is a Theorem
+Start of proof for t5_fintopo4
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(1^[])]
+ (2)  [-l1_orders_2(1^[])]
+ (3)  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]
+ (4)  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(1^[])))]
+ (5)  [-r1_fintopo4(1^[], 2^[], 3^[])]
+ (6)  [r1_fintopo4(1^[], 3^[], 2^[])]
+ (7)  [-r1_fintopo4(_G846, _G1015, _G930), r1_fintopo4(_G846, _G930, _G1015), l1_orders_2(_G846), -v2_struct_0(_G846), m1_subset_1(_G930, k1_zfmisc_1(u1_struct_0(_G846))), m1_subset_1(_G1015, k1_zfmisc_1(u1_struct_0(_G846)))]
+
+Connection Proof:
+-----------------
+1  [v2_struct_0(1^[])]   (1)  
+1.1  [-v2_struct_0(1^[]), -r1_fintopo4(1^[], 3^[], 2^[]), r1_fintopo4(1^[], 2^[], 3^[]), l1_orders_2(1^[]), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[]))), m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (7)  substitution:[[_G846, _G1015, _G930], [1^[], 3^[], 2^[]]]
+1.1.1  [r1_fintopo4(1^[], 3^[], 2^[])]   (6)  
+1.1.2  [-r1_fintopo4(1^[], 2^[], 3^[])]   (5)  
+1.1.3  [-l1_orders_2(1^[])]   (2)  
+1.1.4  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (3)  
+1.1.5  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (4)  
+------------------------------------------------------
+End of proof for t5_fintopo4

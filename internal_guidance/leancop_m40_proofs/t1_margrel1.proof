@@ -1,0 +1,27 @@
+
+t1_margrel1 is a Theorem
+Start of proof for t1_margrel1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v3_finseq_1(2^[])]
+ (2)  [-v2_card_3(2^[])]
+ (3)  [-r1_tarski(1^[], 2^[])]
+ (4)  [v3_finseq_1(1^[]), v2_card_3(1^[])]
+ (5)  [v3_finseq_1(_G890), m1_subset_1(_G973, k1_zfmisc_1(_G890)), -v3_finseq_1(_G973)]
+ (6)  [v2_card_3(_G1181), m1_subset_1(_G1264, k1_zfmisc_1(_G1181)), -v2_card_3(_G1264)]
+ (7)  [m1_subset_1(_G1463, k1_zfmisc_1(_G1510)), -r1_tarski(_G1463, _G1510)]
+ (8)  [-m1_subset_1(_G1463, k1_zfmisc_1(_G1510)), r1_tarski(_G1463, _G1510)]
+
+Connection Proof:
+-----------------
+1  [v3_finseq_1(1^[]), v2_card_3(1^[])]   (4)  
+1.1  [-v3_finseq_1(1^[]), v3_finseq_1(2^[]), m1_subset_1(1^[], k1_zfmisc_1(2^[]))]   (5)  substitution:[[_G973, _G890], [1^[], 2^[]]]
+1.1.1  [-v3_finseq_1(2^[])]   (1)  
+1.1.2  [-m1_subset_1(1^[], k1_zfmisc_1(2^[])), r1_tarski(1^[], 2^[])]   (8)  substitution:[[_G1463, _G1510], [1^[], 2^[]]]
+1.1.2.1  [-r1_tarski(1^[], 2^[])]   (3)  
+1.2  [-v2_card_3(1^[]), v2_card_3(2^[]), m1_subset_1(1^[], k1_zfmisc_1(2^[]))]   (6)  substitution:[[_G1264, _G1181], [1^[], 2^[]]]
+1.2.1  [-v2_card_3(2^[])]   (2)  
+1.2.2  [-m1_subset_1(1^[], k1_zfmisc_1(2^[])), r1_tarski(1^[], 2^[])]   (8)  substitution:[[_G1463, _G1510], [1^[], 2^[]]]
+1.2.2.1  [-r1_tarski(1^[], 2^[])]   (3)  
+------------------------------------------------------
+End of proof for t1_margrel1

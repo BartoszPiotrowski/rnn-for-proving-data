@@ -1,0 +1,28 @@
+
+t53_calcul_1 is a Theorem
+Start of proof for t53_calcul_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_qc_lang1(1^[])]
+ (2)  [-m2_subset_1(2^[], k9_qc_lang1(1^[]), k3_cqc_lang(1^[]))]
+ (3)  [-m2_subset_1(3^[], k9_qc_lang1(1^[]), k3_cqc_lang(1^[]))]
+ (4)  [-m2_subset_1(4^[], k9_qc_lang1(1^[]), k3_cqc_lang(1^[]))]
+ (5)  [-m2_finseq_1(5^[], k3_cqc_lang(1^[]))]
+ (6)  [-r4_calcul_1(1^[], k8_finseq_1(k3_cqc_lang(1^[]), k8_finseq_1(k3_cqc_lang(1^[]), 5^[], k12_finseq_1(k3_cqc_lang(1^[]), 2^[])), k12_finseq_1(k3_cqc_lang(1^[]), 3^[])))]
+ (7)  [-r4_calcul_1(1^[], k8_finseq_1(k3_cqc_lang(1^[]), k8_finseq_1(k3_cqc_lang(1^[]), 5^[], k12_finseq_1(k3_cqc_lang(1^[]), 4^[])), k12_finseq_1(k3_cqc_lang(1^[]), 3^[])))]
+ (8)  [r4_calcul_1(1^[], k8_finseq_1(k3_cqc_lang(1^[]), k8_finseq_1(k3_cqc_lang(1^[]), 5^[], k12_finseq_1(k3_cqc_lang(1^[]), k9_cqc_lang(1^[], 2^[], 4^[]))), k12_finseq_1(k3_cqc_lang(1^[]), 3^[])))]
+ (9)  [m1_qc_lang1(_G1142), m2_subset_1(_G1356, k9_qc_lang1(_G1142), k3_cqc_lang(_G1142)), m2_subset_1(_G1662, k9_qc_lang1(_G1142), k3_cqc_lang(_G1142)), m2_subset_1(_G1958, k9_qc_lang1(_G1142), k3_cqc_lang(_G1142)), m2_finseq_1(_G2244, k3_cqc_lang(_G1142)), -r4_calcul_1(_G1142, k8_finseq_1(k3_cqc_lang(_G1142), k8_finseq_1(k3_cqc_lang(_G1142), _G2244, k12_finseq_1(k3_cqc_lang(_G1142), k9_cqc_lang(_G1142, _G1356, _G1958))), k12_finseq_1(k3_cqc_lang(_G1142), _G1662))), r4_calcul_1(_G1142, k8_finseq_1(k3_cqc_lang(_G1142), k8_finseq_1(k3_cqc_lang(_G1142), _G2244, k12_finseq_1(k3_cqc_lang(_G1142), _G1356)), k12_finseq_1(k3_cqc_lang(_G1142), _G1662))), r4_calcul_1(_G1142, k8_finseq_1(k3_cqc_lang(_G1142), k8_finseq_1(k3_cqc_lang(_G1142), _G2244, k12_finseq_1(k3_cqc_lang(_G1142), _G1958)), k12_finseq_1(k3_cqc_lang(_G1142), _G1662)))]
+
+Connection Proof:
+-----------------
+1  [r4_calcul_1(1^[], k8_finseq_1(k3_cqc_lang(1^[]), k8_finseq_1(k3_cqc_lang(1^[]), 5^[], k12_finseq_1(k3_cqc_lang(1^[]), k9_cqc_lang(1^[], 2^[], 4^[]))), k12_finseq_1(k3_cqc_lang(1^[]), 3^[])))]   (8)  
+1.1  [-r4_calcul_1(1^[], k8_finseq_1(k3_cqc_lang(1^[]), k8_finseq_1(k3_cqc_lang(1^[]), 5^[], k12_finseq_1(k3_cqc_lang(1^[]), k9_cqc_lang(1^[], 2^[], 4^[]))), k12_finseq_1(k3_cqc_lang(1^[]), 3^[]))), m1_qc_lang1(1^[]), m2_subset_1(2^[], k9_qc_lang1(1^[]), k3_cqc_lang(1^[])), m2_subset_1(3^[], k9_qc_lang1(1^[]), k3_cqc_lang(1^[])), m2_subset_1(4^[], k9_qc_lang1(1^[]), k3_cqc_lang(1^[])), m2_finseq_1(5^[], k3_cqc_lang(1^[])), r4_calcul_1(1^[], k8_finseq_1(k3_cqc_lang(1^[]), k8_finseq_1(k3_cqc_lang(1^[]), 5^[], k12_finseq_1(k3_cqc_lang(1^[]), 2^[])), k12_finseq_1(k3_cqc_lang(1^[]), 3^[]))), r4_calcul_1(1^[], k8_finseq_1(k3_cqc_lang(1^[]), k8_finseq_1(k3_cqc_lang(1^[]), 5^[], k12_finseq_1(k3_cqc_lang(1^[]), 4^[])), k12_finseq_1(k3_cqc_lang(1^[]), 3^[])))]   (9)  substitution:[[_G1142, _G2244, _G1356, _G1958, _G1662], [1^[], 5^[], 2^[], 4^[], 3^[]]]
+1.1.1  [-m1_qc_lang1(1^[])]   (1)  
+1.1.2  [-m2_subset_1(2^[], k9_qc_lang1(1^[]), k3_cqc_lang(1^[]))]   (2)  
+1.1.3  [-m2_subset_1(3^[], k9_qc_lang1(1^[]), k3_cqc_lang(1^[]))]   (3)  
+1.1.4  [-m2_subset_1(4^[], k9_qc_lang1(1^[]), k3_cqc_lang(1^[]))]   (4)  
+1.1.5  [-m2_finseq_1(5^[], k3_cqc_lang(1^[]))]   (5)  
+1.1.6  [-r4_calcul_1(1^[], k8_finseq_1(k3_cqc_lang(1^[]), k8_finseq_1(k3_cqc_lang(1^[]), 5^[], k12_finseq_1(k3_cqc_lang(1^[]), 2^[])), k12_finseq_1(k3_cqc_lang(1^[]), 3^[])))]   (6)  
+1.1.7  [-r4_calcul_1(1^[], k8_finseq_1(k3_cqc_lang(1^[]), k8_finseq_1(k3_cqc_lang(1^[]), 5^[], k12_finseq_1(k3_cqc_lang(1^[]), 4^[])), k12_finseq_1(k3_cqc_lang(1^[]), 3^[])))]   (7)  
+------------------------------------------------------
+End of proof for t53_calcul_1

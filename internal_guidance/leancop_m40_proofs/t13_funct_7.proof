@@ -1,0 +1,43 @@
+
+t13_funct_7 is a Theorem
+Start of proof for t13_funct_7
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [2^[]=3^[]]
+ (2)  [-r2_hidden(2^[], k10_xtuple_0(k1_funct_4(k6_partfun1(4^[]), k16_funcop_1(2^[], 3^[]))))]
+ (3)  [- (k16_funcop_1(_G7813, _G7860)=k7_funcop_1(k1_tarski(_G7813), _G7860))]
+ (4)  [-r1_xboole_0(_G8073, k10_xtuple_0(k1_funct_4(k6_partfun1(_G8135), k7_funcop_1(_G8073, _G8198)))), -r2_hidden(_G8198, _G8073)]
+ (5)  [r1_xboole_0(k1_tarski(_G8532), _G8581), r2_hidden(_G8532, _G8581)]
+ (6)  [_G7451=k1_tarski(_G7393), r2_hidden(_G7581, _G7451), - (_G7581=_G7393)]
+ (7)  [_G7451=k1_tarski(_G7393), -r2_hidden(_G7581, _G7451), _G7581=_G7393]
+ (8)  [- (_G7451=k1_tarski(_G7393)), r2_hidden(1^[_G7451, _G7393], _G7451), 1^[_G7451, _G7393]=_G7393]
+ (9)  [- (_G7451=k1_tarski(_G7393)), -r2_hidden(1^[_G7451, _G7393], _G7451), - (1^[_G7451, _G7393]=_G7393)]
+ (10)  [- (_G2642=_G2642)]
+ (11)  [_G2741=_G2786, - (_G2786=_G2741)]
+ (12)  [- (_G2974=_G3087), _G2974=_G3030, _G3030=_G3087]
+ (13)  [-r1_xboole_0(_G3491, _G3628), r1_xboole_0(_G3424, _G3559), _G3424=_G3491, _G3559=_G3628]
+ (14)  [-r2_hidden(_G4079, _G4216), r2_hidden(_G4012, _G4147), _G4012=_G4079, _G4147=_G4216]
+ (15)  [- (k7_funcop_1(_G4651, _G4786)=k7_funcop_1(_G4718, _G4855)), _G4651=_G4718, _G4786=_G4855]
+ (16)  [_G5248=_G5297, - (k1_tarski(_G5248)=k1_tarski(_G5297))]
+ (17)  [_G5526=_G5575, - (k10_xtuple_0(_G5526)=k10_xtuple_0(_G5575))]
+ (18)  [- (k1_funct_4(_G5804, _G5939)=k1_funct_4(_G5871, _G6008)), _G5804=_G5871, _G5939=_G6008]
+ (19)  [_G6401=_G6450, - (k6_partfun1(_G6401)=k6_partfun1(_G6450))]
+ (20)  [- (k16_funcop_1(_G6670, _G6805)=k16_funcop_1(_G6737, _G6874)), _G6670=_G6737, _G6805=_G6874]
+
+Connection Proof:
+-----------------
+1  [r1_xboole_0(k1_tarski(2^[]), k10_xtuple_0(k1_funct_4(k6_partfun1(4^[]), k7_funcop_1(k1_tarski(2^[]), 3^[])))), r2_hidden(2^[], k10_xtuple_0(k1_funct_4(k6_partfun1(4^[]), k7_funcop_1(k1_tarski(2^[]), 3^[]))))]   (5)  substitution:[[_G8532, _G8581], [2^[], k10_xtuple_0(k1_funct_4(k6_partfun1(4^[]), k7_funcop_1(k1_tarski(2^[]), 3^[])))]]
+1.1  [-r1_xboole_0(k1_tarski(2^[]), k10_xtuple_0(k1_funct_4(k6_partfun1(4^[]), k7_funcop_1(k1_tarski(2^[]), 3^[])))), -r2_hidden(3^[], k1_tarski(2^[]))]   (4)  substitution:[[_G8073, _G8135, _G8198], [k1_tarski(2^[]), 4^[], 3^[]]]
+1.1.1  [r2_hidden(3^[], k1_tarski(2^[])), k1_tarski(2^[])=k1_tarski(2^[]), - (3^[]=2^[])]   (6)  substitution:[[_G7581, _G7451, _G7393], [3^[], k1_tarski(2^[]), 2^[]]]
+1.1.1.1  [- (k1_tarski(2^[])=k1_tarski(2^[]))]   (10)  substitution:[[_G2642], [k1_tarski(2^[])]]
+1.1.1.2  [3^[]=2^[], - (2^[]=3^[])]   (11)  substitution:[[_G2741, _G2786], [3^[], 2^[]]]
+1.1.1.2.1  [2^[]=3^[]]   (1)  
+1.2  [-r2_hidden(2^[], k10_xtuple_0(k1_funct_4(k6_partfun1(4^[]), k7_funcop_1(k1_tarski(2^[]), 3^[])))), r2_hidden(2^[], k10_xtuple_0(k1_funct_4(k6_partfun1(4^[]), k16_funcop_1(2^[], 3^[])))), 2^[]=2^[], k10_xtuple_0(k1_funct_4(k6_partfun1(4^[]), k16_funcop_1(2^[], 3^[])))=k10_xtuple_0(k1_funct_4(k6_partfun1(4^[]), k7_funcop_1(k1_tarski(2^[]), 3^[])))]   (14)  substitution:[[_G4079, _G4216, _G4012, _G4147], [2^[], k10_xtuple_0(k1_funct_4(k6_partfun1(4^[]), k7_funcop_1(k1_tarski(2^[]), 3^[]))), 2^[], k10_xtuple_0(k1_funct_4(k6_partfun1(4^[]), k16_funcop_1(2^[], 3^[])))]]
+1.2.1  [-r2_hidden(2^[], k10_xtuple_0(k1_funct_4(k6_partfun1(4^[]), k16_funcop_1(2^[], 3^[]))))]   (2)  
+1.2.2  [- (2^[]=2^[])]   (10)  substitution:[[_G2642], [2^[]]]
+1.2.3  [- (k10_xtuple_0(k1_funct_4(k6_partfun1(4^[]), k16_funcop_1(2^[], 3^[])))=k10_xtuple_0(k1_funct_4(k6_partfun1(4^[]), k7_funcop_1(k1_tarski(2^[]), 3^[])))), k1_funct_4(k6_partfun1(4^[]), k16_funcop_1(2^[], 3^[]))=k1_funct_4(k6_partfun1(4^[]), k7_funcop_1(k1_tarski(2^[]), 3^[]))]   (17)  substitution:[[_G5526, _G5575], [k1_funct_4(k6_partfun1(4^[]), k16_funcop_1(2^[], 3^[])), k1_funct_4(k6_partfun1(4^[]), k7_funcop_1(k1_tarski(2^[]), 3^[]))]]
+1.2.3.1  [- (k1_funct_4(k6_partfun1(4^[]), k16_funcop_1(2^[], 3^[]))=k1_funct_4(k6_partfun1(4^[]), k7_funcop_1(k1_tarski(2^[]), 3^[]))), k6_partfun1(4^[])=k6_partfun1(4^[]), k16_funcop_1(2^[], 3^[])=k7_funcop_1(k1_tarski(2^[]), 3^[])]   (18)  substitution:[[_G5804, _G5939, _G5871, _G6008], [k6_partfun1(4^[]), k16_funcop_1(2^[], 3^[]), k6_partfun1(4^[]), k7_funcop_1(k1_tarski(2^[]), 3^[])]]
+1.2.3.1.1  [- (k6_partfun1(4^[])=k6_partfun1(4^[]))]   (10)  substitution:[[_G2642], [k6_partfun1(4^[])]]
+1.2.3.1.2  [- (k16_funcop_1(2^[], 3^[])=k7_funcop_1(k1_tarski(2^[]), 3^[]))]   (3)  substitution:[[_G7813, _G7860], [2^[], 3^[]]]
+------------------------------------------------------
+End of proof for t13_funct_7

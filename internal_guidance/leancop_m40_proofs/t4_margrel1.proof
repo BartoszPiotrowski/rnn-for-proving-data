@@ -1,0 +1,47 @@
+
+t4_margrel1 is a Theorem
+Start of proof for t4_margrel1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [m2_margrel1(k1_xboole_0, 2^[])]
+ (2)  [v1_xboole_0(_G7172), -v2_card_3(_G7172)]
+ (3)  [v1_xboole_0(_G7303), -v3_finseq_1(_G7303)]
+ (4)  [- (k1_xboole_0=o_0_0_xboole_0)]
+ (5)  [-v1_xboole_0(o_0_0_xboole_0)]
+ (6)  [r2_hidden(_G8266, _G8312), v1_xboole_0(_G8312)]
+ (7)  [v2_card_3(_G7574), v3_finseq_1(_G7574), -m2_margrel1(_G7574, _G7491), -v1_relat_1(1^[_G7574, _G7491])]
+ (8)  [v2_card_3(_G7574), v3_finseq_1(_G7574), -m2_margrel1(_G7574, _G7491), -v1_funct_1(1^[_G7574, _G7491])]
+ (9)  [v2_card_3(_G7574), v3_finseq_1(_G7574), -m2_margrel1(_G7574, _G7491), -v1_finseq_1(1^[_G7574, _G7491])]
+ (10)  [v2_card_3(_G7574), v3_finseq_1(_G7574), -m2_margrel1(_G7574, _G7491), -r2_hidden(1^[_G7574, _G7491], _G7574)]
+ (11)  [v2_card_3(_G7574), v3_finseq_1(_G7574), -m2_margrel1(_G7574, _G7491), r1_tarski(k10_xtuple_0(1^[_G7574, _G7491]), _G7491)]
+ (12)  [v2_card_3(_G7574), v3_finseq_1(_G7574), m2_margrel1(_G7574, _G7491), -r1_tarski(k10_xtuple_0(_G7800), _G7491), r2_hidden(_G7800, _G7574), v1_relat_1(_G7800), v1_funct_1(_G7800), v1_finseq_1(_G7800)]
+ (13)  [_G6873=_G6922, - (k10_xtuple_0(_G6873)=k10_xtuple_0(_G6922))]
+ (14)  [- (_G2461=_G2461)]
+ (15)  [_G2560=_G2605, - (_G2605=_G2560)]
+ (16)  [- (_G2793=_G2906), _G2793=_G2849, _G2849=_G2906]
+ (17)  [-v3_finseq_1(_G3292), _G3243=_G3292, v3_finseq_1(_G3243)]
+ (18)  [-v2_card_3(_G3570), _G3521=_G3570, v2_card_3(_G3521)]
+ (19)  [-v1_relat_1(_G3848), _G3799=_G3848, v1_relat_1(_G3799)]
+ (20)  [-v1_funct_1(_G4126), _G4077=_G4126, v1_funct_1(_G4077)]
+ (21)  [-v1_finseq_1(_G4404), _G4355=_G4404, v1_finseq_1(_G4355)]
+ (22)  [-r1_tarski(_G4700, _G4837), r1_tarski(_G4633, _G4768), _G4633=_G4700, _G4768=_G4837]
+ (23)  [-r2_hidden(_G5297, _G5434), r2_hidden(_G5230, _G5365), _G5230=_G5297, _G5365=_G5434]
+ (24)  [-v1_xboole_0(_G5876), _G5827=_G5876, v1_xboole_0(_G5827)]
+ (25)  [-m2_margrel1(_G6163, _G6300), m2_margrel1(_G6096, _G6231), _G6096=_G6163, _G6231=_G6300]
+
+Connection Proof:
+-----------------
+1  [m2_margrel1(k1_xboole_0, 2^[])]   (1)  
+1.1  [-m2_margrel1(k1_xboole_0, 2^[]), m2_margrel1(o_0_0_xboole_0, 2^[]), o_0_0_xboole_0=k1_xboole_0, 2^[]=2^[]]   (25)  substitution:[[_G6163, _G6300, _G6096, _G6231], [k1_xboole_0, 2^[], o_0_0_xboole_0, 2^[]]]
+1.1.1  [-m2_margrel1(o_0_0_xboole_0, 2^[]), v2_card_3(o_0_0_xboole_0), v3_finseq_1(o_0_0_xboole_0), -r2_hidden(1^[o_0_0_xboole_0, 2^[]], o_0_0_xboole_0)]   (10)  substitution:[[_G7574, _G7491], [o_0_0_xboole_0, 2^[]]]
+1.1.1.1  [-v2_card_3(o_0_0_xboole_0), v1_xboole_0(o_0_0_xboole_0)]   (2)  substitution:[[_G7172], [o_0_0_xboole_0]]
+1.1.1.1.1  [-v1_xboole_0(o_0_0_xboole_0)]   (5)  
+1.1.1.2  [-v3_finseq_1(o_0_0_xboole_0), v1_xboole_0(o_0_0_xboole_0)]   (3)  substitution:[[_G7303], [o_0_0_xboole_0]]
+1.1.1.2.1  [-v1_xboole_0(o_0_0_xboole_0)]   (5)  
+1.1.1.3  [r2_hidden(1^[o_0_0_xboole_0, 2^[]], o_0_0_xboole_0), v1_xboole_0(o_0_0_xboole_0)]   (6)  substitution:[[_G8266, _G8312], [1^[o_0_0_xboole_0, 2^[]], o_0_0_xboole_0]]
+1.1.1.3.1  [-v1_xboole_0(o_0_0_xboole_0)]   (5)  
+1.1.2  [- (o_0_0_xboole_0=k1_xboole_0), k1_xboole_0=o_0_0_xboole_0]   (15)  substitution:[[_G2605, _G2560], [o_0_0_xboole_0, k1_xboole_0]]
+1.1.2.1  [- (k1_xboole_0=o_0_0_xboole_0)]   (4)  
+1.1.3  [- (2^[]=2^[])]   (14)  substitution:[[_G2461], [2^[]]]
+------------------------------------------------------
+End of proof for t4_margrel1

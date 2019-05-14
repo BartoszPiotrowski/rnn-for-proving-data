@@ -1,0 +1,23 @@
+
+t83_exchsort is a Theorem
+Start of proof for t83_exchsort
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(3^[])]
+ (2)  [-v4_relat_1(3^[], 1^[])]
+ (3)  [-v5_relat_1(3^[], 2^[])]
+ (4)  [m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 2^[])))]
+ (5)  [-r1_tarski(_G959, k2_zfmisc_1(_G830, _G894)), v1_relat_1(_G959), v4_relat_1(_G959, _G830), v5_relat_1(_G959, _G894)]
+ (6)  [m1_subset_1(_G1345, k1_zfmisc_1(_G1392)), -r1_tarski(_G1345, _G1392)]
+ (7)  [-m1_subset_1(_G1345, k1_zfmisc_1(_G1392)), r1_tarski(_G1345, _G1392)]
+
+Connection Proof:
+-----------------
+1  [m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 2^[])))]   (4)  
+1.1  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 2^[]))), r1_tarski(3^[], k2_zfmisc_1(1^[], 2^[]))]   (7)  substitution:[[_G1345, _G1392], [3^[], k2_zfmisc_1(1^[], 2^[])]]
+1.1.1  [-r1_tarski(3^[], k2_zfmisc_1(1^[], 2^[])), v1_relat_1(3^[]), v4_relat_1(3^[], 1^[]), v5_relat_1(3^[], 2^[])]   (5)  substitution:[[_G959, _G830, _G894], [3^[], 1^[], 2^[]]]
+1.1.1.1  [-v1_relat_1(3^[])]   (1)  
+1.1.1.2  [-v4_relat_1(3^[], 1^[])]   (2)  
+1.1.1.3  [-v5_relat_1(3^[], 2^[])]   (3)  
+------------------------------------------------------
+End of proof for t83_exchsort

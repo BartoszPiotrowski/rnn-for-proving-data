@@ -1,0 +1,132 @@
+
+t32_limfunc3 is a Theorem
+Start of proof for t32_limfunc3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], k1_numbers)]
+ (2)  [-v1_funct_1(2^[])]
+ (3)  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]
+ (4)  [-r1_limfunc3(2^[], 1^[])]
+ (5)  [r1_limfunc3(k32_valued_1(k1_numbers, k1_numbers, 2^[]), 1^[]), k1_limfunc3(k32_valued_1(k1_numbers, k1_numbers, 2^[]), 1^[])=k1_real_1(k1_limfunc3(2^[], 1^[]))]
+ (6)  [-v1_funct_1(k32_valued_1(_G1341, _G1342, _G1343)), v3_membered(_G1342), v1_funct_1(_G1343), m1_subset_1(_G1343, k1_zfmisc_1(k2_zfmisc_1(_G1341, _G1342)))]
+ (7)  [-m1_subset_1(k32_valued_1(_G1341, _G1342, _G1343), k1_zfmisc_1(k2_zfmisc_1(_G1341, k1_numbers))), v3_membered(_G1342), v1_funct_1(_G1343), m1_subset_1(_G1343, k1_zfmisc_1(k2_zfmisc_1(_G1341, _G1342)))]
+ (8)  [-v3_membered(k1_numbers)]
+ (9)  [m1_subset_1(_G1376, k1_numbers), m1_subset_1(_G1380, k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(_G1380), r1_limfunc3(_G1380, _G1376), -r1_limfunc2(_G1380, _G1376)]
+ (10)  [m1_subset_1(_G1376, k1_numbers), m1_subset_1(_G1380, k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(_G1380), r1_limfunc3(_G1380, _G1376), -r4_limfunc2(_G1380, _G1376)]
+ (11)  [m1_subset_1(_G1376, k1_numbers), m1_subset_1(_G1380, k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(_G1380), r1_limfunc3(_G1380, _G1376), - (k1_limfunc2(_G1380, _G1376)=k2_limfunc2(_G1380, _G1376))]
+ (12)  [m1_subset_1(_G1376, k1_numbers), m1_subset_1(_G1380, k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(_G1380), r1_limfunc3(_G1380, _G1376), - (k1_limfunc3(_G1380, _G1376)=k1_limfunc2(_G1380, _G1376))]
+ (13)  [m1_subset_1(_G1376, k1_numbers), m1_subset_1(_G1380, k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(_G1380), r1_limfunc3(_G1380, _G1376), - (k1_limfunc3(_G1380, _G1376)=k2_limfunc2(_G1380, _G1376))]
+ (14)  [m1_subset_1(_G1427, k1_numbers), m1_subset_1(_G1431, k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(_G1431), -r1_limfunc3(_G1431, _G1427), r1_limfunc2(_G1431, _G1427), r4_limfunc2(_G1431, _G1427), k1_limfunc2(_G1431, _G1427)=k2_limfunc2(_G1431, _G1427)]
+ (15)  [m1_subset_1(_G1427, k1_numbers), m1_subset_1(_G1431, k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(_G1431), - (k1_limfunc3(_G1431, _G1427)=k1_limfunc2(_G1431, _G1427)), r1_limfunc2(_G1431, _G1427), r4_limfunc2(_G1431, _G1427), k1_limfunc2(_G1431, _G1427)=k2_limfunc2(_G1431, _G1427)]
+ (16)  [m1_subset_1(_G1427, k1_numbers), m1_subset_1(_G1431, k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(_G1431), - (k1_limfunc3(_G1431, _G1427)=k2_limfunc2(_G1431, _G1427)), r1_limfunc2(_G1431, _G1427), r4_limfunc2(_G1431, _G1427), k1_limfunc2(_G1431, _G1427)=k2_limfunc2(_G1431, _G1427)]
+ (17)  [m1_subset_1(_G1478, k1_numbers), m1_subset_1(_G1482, k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(_G1482), r1_limfunc2(_G1482, _G1478), -r1_limfunc2(k32_valued_1(k1_numbers, k1_numbers, _G1482), _G1478)]
+ (18)  [m1_subset_1(_G1478, k1_numbers), m1_subset_1(_G1482, k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(_G1482), r1_limfunc2(_G1482, _G1478), - (k1_limfunc2(k32_valued_1(k1_numbers, k1_numbers, _G1482), _G1478)=k1_real_1(k1_limfunc2(_G1482, _G1478)))]
+ (19)  [m1_subset_1(_G1518, k1_numbers), m1_subset_1(_G1522, k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(_G1522), r4_limfunc2(_G1522, _G1518), -r4_limfunc2(k32_valued_1(k1_numbers, k1_numbers, _G1522), _G1518)]
+ (20)  [m1_subset_1(_G1518, k1_numbers), m1_subset_1(_G1522, k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(_G1522), r4_limfunc2(_G1522, _G1518), - (k2_limfunc2(k32_valued_1(k1_numbers, k1_numbers, _G1522), _G1518)=k1_real_1(k2_limfunc2(_G1522, _G1518)))]
+ (21)  [- (k1_limfunc2(_G1215, _G1217)=k1_limfunc2(_G1216, _G1218)), _G1215=_G1216, _G1217=_G1218]
+ (22)  [- (k2_limfunc2(_G1234, _G1236)=k2_limfunc2(_G1235, _G1237)), _G1234=_G1235, _G1236=_G1237]
+ (23)  [_G1253=_G1254, - (k1_zfmisc_1(_G1253)=k1_zfmisc_1(_G1254))]
+ (24)  [- (k2_zfmisc_1(_G1265, _G1267)=k2_zfmisc_1(_G1266, _G1268)), _G1265=_G1266, _G1267=_G1268]
+ (25)  [- (k32_valued_1(_G1284, _G1286, _G1288)=k32_valued_1(_G1285, _G1287, _G1289)), _G1284=_G1285, _G1286=_G1287, _G1288=_G1289]
+ (26)  [_G1310=_G1311, - (k1_real_1(_G1310)=k1_real_1(_G1311))]
+ (27)  [- (k1_limfunc3(_G1322, _G1324)=k1_limfunc3(_G1323, _G1325)), _G1322=_G1323, _G1324=_G1325]
+ (28)  [- (_G1109=_G1109)]
+ (29)  [_G1113=_G1114, - (_G1114=_G1113)]
+ (30)  [- (_G1121=_G1123), _G1121=_G1122, _G1122=_G1123]
+ (31)  [-v3_membered(_G1134), _G1133=_G1134, v3_membered(_G1133)]
+ (32)  [-r1_limfunc2(_G1143, _G1145), r1_limfunc2(_G1142, _G1144), _G1142=_G1143, _G1144=_G1145]
+ (33)  [-r4_limfunc2(_G1159, _G1161), r4_limfunc2(_G1158, _G1160), _G1158=_G1159, _G1160=_G1161]
+ (34)  [-v1_funct_1(_G1175), _G1174=_G1175, v1_funct_1(_G1174)]
+ (35)  [-m1_subset_1(_G1184, _G1186), m1_subset_1(_G1183, _G1185), _G1183=_G1184, _G1185=_G1186]
+ (36)  [-r1_limfunc3(_G1200, _G1202), r1_limfunc3(_G1199, _G1201), _G1199=_G1200, _G1201=_G1202]
+
+Connection Proof:
+-----------------
+1  [r1_limfunc3(k32_valued_1(k1_numbers, k1_numbers, 2^[]), 1^[]), k1_limfunc3(k32_valued_1(k1_numbers, k1_numbers, 2^[]), 1^[])=k1_real_1(k1_limfunc3(2^[], 1^[]))]   (5)  
+1.1  [-r1_limfunc3(k32_valued_1(k1_numbers, k1_numbers, 2^[]), 1^[]), m1_subset_1(1^[], k1_numbers), m1_subset_1(k32_valued_1(k1_numbers, k1_numbers, 2^[]), k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(k32_valued_1(k1_numbers, k1_numbers, 2^[])), r1_limfunc2(k32_valued_1(k1_numbers, k1_numbers, 2^[]), 1^[]), r4_limfunc2(k32_valued_1(k1_numbers, k1_numbers, 2^[]), 1^[]), k1_limfunc2(k32_valued_1(k1_numbers, k1_numbers, 2^[]), 1^[])=k2_limfunc2(k32_valued_1(k1_numbers, k1_numbers, 2^[]), 1^[])]   (14)  substitution:[[_G1431, _G1427], [k32_valued_1(k1_numbers, k1_numbers, 2^[]), 1^[]]]
+1.1.1  [-m1_subset_1(1^[], k1_numbers)]   (1)  
+1.1.2  [-m1_subset_1(k32_valued_1(k1_numbers, k1_numbers, 2^[]), k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v3_membered(k1_numbers), v1_funct_1(2^[]), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]   (7)  substitution:[[_G1341, _G1342, _G1343], [k1_numbers, k1_numbers, 2^[]]]
+1.1.2.1  [-v3_membered(k1_numbers)]   (8)  
+1.1.2.2  [-v1_funct_1(2^[])]   (2)  
+1.1.2.3  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]   (3)  
+1.1.3  [-v1_funct_1(k32_valued_1(k1_numbers, k1_numbers, 2^[])), v3_membered(k1_numbers), v1_funct_1(2^[]), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]   (6)  substitution:[[_G1341, _G1342, _G1343], [k1_numbers, k1_numbers, 2^[]]]
+1.1.3.1  [-v3_membered(k1_numbers)]   (8)  
+1.1.3.2  [-v1_funct_1(2^[])]   (2)  
+1.1.3.3  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]   (3)  
+1.1.4  [-r1_limfunc2(k32_valued_1(k1_numbers, k1_numbers, 2^[]), 1^[]), m1_subset_1(1^[], k1_numbers), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(2^[]), r1_limfunc2(2^[], 1^[])]   (17)  substitution:[[_G1482, _G1478], [2^[], 1^[]]]
+1.1.4.1  [-m1_subset_1(1^[], k1_numbers)]   (1)  
+1.1.4.2  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]   (3)  
+1.1.4.3  [-v1_funct_1(2^[])]   (2)  
+1.1.4.4  [-r1_limfunc2(2^[], 1^[]), m1_subset_1(1^[], k1_numbers), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(2^[]), r1_limfunc3(2^[], 1^[])]   (9)  substitution:[[_G1380, _G1376], [2^[], 1^[]]]
+1.1.4.4.1  [-m1_subset_1(1^[], k1_numbers)]   (1)  
+1.1.4.4.2  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]   (3)  
+1.1.4.4.3  [-v1_funct_1(2^[])]   (2)  
+1.1.4.4.4  [-r1_limfunc3(2^[], 1^[])]   (4)  
+1.1.5  [-r4_limfunc2(k32_valued_1(k1_numbers, k1_numbers, 2^[]), 1^[]), m1_subset_1(1^[], k1_numbers), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(2^[]), r4_limfunc2(2^[], 1^[])]   (19)  substitution:[[_G1522, _G1518], [2^[], 1^[]]]
+1.1.5.1  [-m1_subset_1(1^[], k1_numbers)]   (1)  
+1.1.5.2  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]   (3)  
+1.1.5.3  [-v1_funct_1(2^[])]   (2)  
+1.1.5.4  [-r4_limfunc2(2^[], 1^[]), m1_subset_1(1^[], k1_numbers), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(2^[]), r1_limfunc3(2^[], 1^[])]   (10)  substitution:[[_G1380, _G1376], [2^[], 1^[]]]
+1.1.5.4.1  [-m1_subset_1(1^[], k1_numbers)]   (1)  
+1.1.5.4.2  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]   (3)  
+1.1.5.4.3  [-v1_funct_1(2^[])]   (2)  
+1.1.5.4.4  [-r1_limfunc3(2^[], 1^[])]   (4)  
+1.1.6  [- (k1_limfunc2(k32_valued_1(k1_numbers, k1_numbers, 2^[]), 1^[])=k2_limfunc2(k32_valued_1(k1_numbers, k1_numbers, 2^[]), 1^[])), k1_limfunc2(k32_valued_1(k1_numbers, k1_numbers, 2^[]), 1^[])=k1_real_1(k1_limfunc2(2^[], 1^[])), k1_real_1(k1_limfunc2(2^[], 1^[]))=k2_limfunc2(k32_valued_1(k1_numbers, k1_numbers, 2^[]), 1^[])]   (30)  substitution:[[_G1121, _G1123, _G1122], [k1_limfunc2(k32_valued_1(k1_numbers, k1_numbers, 2^[]), 1^[]), k2_limfunc2(k32_valued_1(k1_numbers, k1_numbers, 2^[]), 1^[]), k1_real_1(k1_limfunc2(2^[], 1^[]))]]
+1.1.6.1  [- (k1_limfunc2(k32_valued_1(k1_numbers, k1_numbers, 2^[]), 1^[])=k1_real_1(k1_limfunc2(2^[], 1^[]))), m1_subset_1(1^[], k1_numbers), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(2^[]), r1_limfunc2(2^[], 1^[])]   (18)  substitution:[[_G1482, _G1478], [2^[], 1^[]]]
+1.1.6.1.1  [-m1_subset_1(1^[], k1_numbers)]   (1)  
+1.1.6.1.2  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]   (3)  
+1.1.6.1.3  [-v1_funct_1(2^[])]   (2)  
+1.1.6.1.4  [-r1_limfunc2(2^[], 1^[]), m1_subset_1(1^[], k1_numbers), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(2^[]), r1_limfunc3(2^[], 1^[])]   (9)  substitution:[[_G1380, _G1376], [2^[], 1^[]]]
+1.1.6.1.4.1  [-m1_subset_1(1^[], k1_numbers)]   (1)  
+1.1.6.1.4.2  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]   (3)  
+1.1.6.1.4.3  [-v1_funct_1(2^[])]   (2)  
+1.1.6.1.4.4  [-r1_limfunc3(2^[], 1^[])]   (4)  
+1.1.6.2  [- (k1_real_1(k1_limfunc2(2^[], 1^[]))=k2_limfunc2(k32_valued_1(k1_numbers, k1_numbers, 2^[]), 1^[])), k1_real_1(k1_limfunc2(2^[], 1^[]))=k1_real_1(k2_limfunc2(2^[], 1^[])), k1_real_1(k2_limfunc2(2^[], 1^[]))=k2_limfunc2(k32_valued_1(k1_numbers, k1_numbers, 2^[]), 1^[])]   (30)  substitution:[[_G1121, _G1123, _G1122], [k1_real_1(k1_limfunc2(2^[], 1^[])), k2_limfunc2(k32_valued_1(k1_numbers, k1_numbers, 2^[]), 1^[]), k1_real_1(k2_limfunc2(2^[], 1^[]))]]
+1.1.6.2.1  [- (k1_real_1(k1_limfunc2(2^[], 1^[]))=k1_real_1(k2_limfunc2(2^[], 1^[]))), k1_limfunc2(2^[], 1^[])=k2_limfunc2(2^[], 1^[])]   (26)  substitution:[[_G1310, _G1311], [k1_limfunc2(2^[], 1^[]), k2_limfunc2(2^[], 1^[])]]
+1.1.6.2.1.1  [- (k1_limfunc2(2^[], 1^[])=k2_limfunc2(2^[], 1^[])), m1_subset_1(1^[], k1_numbers), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(2^[]), r1_limfunc3(2^[], 1^[])]   (11)  substitution:[[_G1380, _G1376], [2^[], 1^[]]]
+1.1.6.2.1.1.1  [-m1_subset_1(1^[], k1_numbers)]   (1)  
+1.1.6.2.1.1.2  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]   (3)  
+1.1.6.2.1.1.3  [-v1_funct_1(2^[])]   (2)  
+1.1.6.2.1.1.4  [-r1_limfunc3(2^[], 1^[])]   (4)  
+1.1.6.2.2  [- (k1_real_1(k2_limfunc2(2^[], 1^[]))=k2_limfunc2(k32_valued_1(k1_numbers, k1_numbers, 2^[]), 1^[])), k2_limfunc2(k32_valued_1(k1_numbers, k1_numbers, 2^[]), 1^[])=k1_real_1(k2_limfunc2(2^[], 1^[]))]   (29)  substitution:[[_G1114, _G1113], [k1_real_1(k2_limfunc2(2^[], 1^[])), k2_limfunc2(k32_valued_1(k1_numbers, k1_numbers, 2^[]), 1^[])]]
+1.1.6.2.2.1  [- (k2_limfunc2(k32_valued_1(k1_numbers, k1_numbers, 2^[]), 1^[])=k1_real_1(k2_limfunc2(2^[], 1^[]))), m1_subset_1(1^[], k1_numbers), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(2^[]), r4_limfunc2(2^[], 1^[])]   (20)  substitution:[[_G1522, _G1518], [2^[], 1^[]]]
+1.1.6.2.2.1.1  [-m1_subset_1(1^[], k1_numbers)]   (1)  
+1.1.6.2.2.1.2  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]   (3)  
+1.1.6.2.2.1.3  [-v1_funct_1(2^[])]   (2)  
+1.1.6.2.2.1.4  [-r4_limfunc2(2^[], 1^[]), m1_subset_1(1^[], k1_numbers), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(2^[]), r1_limfunc3(2^[], 1^[])]   (10)  substitution:[[_G1380, _G1376], [2^[], 1^[]]]
+1.1.6.2.2.1.4.1  [-m1_subset_1(1^[], k1_numbers)]   (1)  
+1.1.6.2.2.1.4.2  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]   (3)  
+1.1.6.2.2.1.4.3  [-v1_funct_1(2^[])]   (2)  
+1.1.6.2.2.1.4.4  [-r1_limfunc3(2^[], 1^[])]   (4)  
+1.2  [- (k1_limfunc3(k32_valued_1(k1_numbers, k1_numbers, 2^[]), 1^[])=k1_real_1(k1_limfunc3(2^[], 1^[]))), k1_real_1(k1_limfunc3(2^[], 1^[]))=k1_limfunc3(k32_valued_1(k1_numbers, k1_numbers, 2^[]), 1^[])]   (29)  substitution:[[_G1114, _G1113], [k1_limfunc3(k32_valued_1(k1_numbers, k1_numbers, 2^[]), 1^[]), k1_real_1(k1_limfunc3(2^[], 1^[]))]]
+1.2.1  [- (k1_real_1(k1_limfunc3(2^[], 1^[]))=k1_limfunc3(k32_valued_1(k1_numbers, k1_numbers, 2^[]), 1^[])), k1_real_1(k1_limfunc3(2^[], 1^[]))=k1_real_1(k1_limfunc2(2^[], 1^[])), k1_real_1(k1_limfunc2(2^[], 1^[]))=k1_limfunc3(k32_valued_1(k1_numbers, k1_numbers, 2^[]), 1^[])]   (30)  substitution:[[_G1121, _G1123, _G1122], [k1_real_1(k1_limfunc3(2^[], 1^[])), k1_limfunc3(k32_valued_1(k1_numbers, k1_numbers, 2^[]), 1^[]), k1_real_1(k1_limfunc2(2^[], 1^[]))]]
+1.2.1.1  [- (k1_real_1(k1_limfunc3(2^[], 1^[]))=k1_real_1(k1_limfunc2(2^[], 1^[]))), k1_limfunc3(2^[], 1^[])=k1_limfunc2(2^[], 1^[])]   (26)  substitution:[[_G1310, _G1311], [k1_limfunc3(2^[], 1^[]), k1_limfunc2(2^[], 1^[])]]
+1.2.1.1.1  [- (k1_limfunc3(2^[], 1^[])=k1_limfunc2(2^[], 1^[])), m1_subset_1(1^[], k1_numbers), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(2^[]), r1_limfunc3(2^[], 1^[])]   (12)  substitution:[[_G1380, _G1376], [2^[], 1^[]]]
+1.2.1.1.1.1  [-m1_subset_1(1^[], k1_numbers)]   (1)  
+1.2.1.1.1.2  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]   (3)  
+1.2.1.1.1.3  [-v1_funct_1(2^[])]   (2)  
+1.2.1.1.1.4  [-r1_limfunc3(2^[], 1^[])]   (4)  
+1.2.1.2  [- (k1_real_1(k1_limfunc2(2^[], 1^[]))=k1_limfunc3(k32_valued_1(k1_numbers, k1_numbers, 2^[]), 1^[])), k1_limfunc3(k32_valued_1(k1_numbers, k1_numbers, 2^[]), 1^[])=k1_real_1(k1_limfunc2(2^[], 1^[]))]   (29)  substitution:[[_G1114, _G1113], [k1_real_1(k1_limfunc2(2^[], 1^[])), k1_limfunc3(k32_valued_1(k1_numbers, k1_numbers, 2^[]), 1^[])]]
+1.2.1.2.1  [- (k1_limfunc3(k32_valued_1(k1_numbers, k1_numbers, 2^[]), 1^[])=k1_real_1(k1_limfunc2(2^[], 1^[]))), k1_limfunc3(k32_valued_1(k1_numbers, k1_numbers, 2^[]), 1^[])=k1_limfunc2(k32_valued_1(k1_numbers, k1_numbers, 2^[]), 1^[]), k1_limfunc2(k32_valued_1(k1_numbers, k1_numbers, 2^[]), 1^[])=k1_real_1(k1_limfunc2(2^[], 1^[]))]   (30)  substitution:[[_G1121, _G1123, _G1122], [k1_limfunc3(k32_valued_1(k1_numbers, k1_numbers, 2^[]), 1^[]), k1_real_1(k1_limfunc2(2^[], 1^[])), k1_limfunc2(k32_valued_1(k1_numbers, k1_numbers, 2^[]), 1^[])]]
+1.2.1.2.1.1  [- (k1_limfunc3(k32_valued_1(k1_numbers, k1_numbers, 2^[]), 1^[])=k1_limfunc2(k32_valued_1(k1_numbers, k1_numbers, 2^[]), 1^[])), m1_subset_1(1^[], k1_numbers), m1_subset_1(k32_valued_1(k1_numbers, k1_numbers, 2^[]), k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(k32_valued_1(k1_numbers, k1_numbers, 2^[])), r1_limfunc3(k32_valued_1(k1_numbers, k1_numbers, 2^[]), 1^[])]   (12)  substitution:[[_G1380, _G1376], [k32_valued_1(k1_numbers, k1_numbers, 2^[]), 1^[]]]
+1.2.1.2.1.1.1  [-m1_subset_1(1^[], k1_numbers)]   (1)  
+1.2.1.2.1.1.2  [-m1_subset_1(k32_valued_1(k1_numbers, k1_numbers, 2^[]), k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v3_membered(k1_numbers), v1_funct_1(2^[]), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]   (7)  substitution:[[_G1341, _G1342, _G1343], [k1_numbers, k1_numbers, 2^[]]]
+1.2.1.2.1.1.2.1  [-v3_membered(k1_numbers)]   (8)  
+1.2.1.2.1.1.2.2  [-v1_funct_1(2^[])]   (2)  
+1.2.1.2.1.1.2.3  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]   (3)  
+1.2.1.2.1.1.3  [-v1_funct_1(k32_valued_1(k1_numbers, k1_numbers, 2^[])), v3_membered(k1_numbers), v1_funct_1(2^[]), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]   (6)  substitution:[[_G1341, _G1342, _G1343], [k1_numbers, k1_numbers, 2^[]]]
+1.2.1.2.1.1.3.1  [-v3_membered(k1_numbers)]   (8)  
+1.2.1.2.1.1.3.2  [-v1_funct_1(2^[])]   (2)  
+1.2.1.2.1.1.3.3  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]   (3)  
+1.2.1.2.1.1.4  [-r1_limfunc3(k32_valued_1(k1_numbers, k1_numbers, 2^[]), 1^[])]   (lemmata:1)  
+1.2.1.2.1.2  [- (k1_limfunc2(k32_valued_1(k1_numbers, k1_numbers, 2^[]), 1^[])=k1_real_1(k1_limfunc2(2^[], 1^[]))), m1_subset_1(1^[], k1_numbers), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(2^[]), r1_limfunc2(2^[], 1^[])]   (18)  substitution:[[_G1482, _G1478], [2^[], 1^[]]]
+1.2.1.2.1.2.1  [-m1_subset_1(1^[], k1_numbers)]   (1)  
+1.2.1.2.1.2.2  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]   (3)  
+1.2.1.2.1.2.3  [-v1_funct_1(2^[])]   (2)  
+1.2.1.2.1.2.4  [-r1_limfunc2(2^[], 1^[]), m1_subset_1(1^[], k1_numbers), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(2^[]), r1_limfunc3(2^[], 1^[])]   (9)  substitution:[[_G1380, _G1376], [2^[], 1^[]]]
+1.2.1.2.1.2.4.1  [-m1_subset_1(1^[], k1_numbers)]   (1)  
+1.2.1.2.1.2.4.2  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]   (3)  
+1.2.1.2.1.2.4.3  [-v1_funct_1(2^[])]   (2)  
+1.2.1.2.1.2.4.4  [-r1_limfunc3(2^[], 1^[])]   (4)  
+------------------------------------------------------
+End of proof for t32_limfunc3

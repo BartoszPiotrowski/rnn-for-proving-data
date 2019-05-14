@@ -1,0 +1,47 @@
+
+t65_euclid_8 is a Theorem
+Start of proof for t65_euclid_8
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m2_finseq_2(1^[], k1_numbers, k1_euclid(np__3))]
+ (2)  [k12_euclid(1^[])=k7_square_1(k9_binop_2(k9_binop_2(k5_square_1(k1_seq_1(1^[], np__1)), k5_square_1(k1_seq_1(1^[], np__2))), k5_square_1(k1_seq_1(1^[], np__3))))]
+ (3)  [m1_subset_1(_G10167, k4_ordinal1), -v7_ordinal1(_G10167)]
+ (4)  [- (k5_numbers=k4_ordinal1)]
+ (5)  [-v2_xxreal_0(np__3)]
+ (6)  [-m2_subset_1(np__3, k1_numbers, k5_numbers)]
+ (7)  [-m1_subset_1(np__3, k5_numbers)]
+ (8)  [-m1_subset_1(np__3, k1_numbers)]
+ (9)  [m2_finseq_2(_G11125, k1_numbers, k1_euclid(np__3)), - (k23_rvsum_1(_G11125, _G11125)=k9_binop_2(k9_binop_2(k5_square_1(k1_seq_1(_G11125, np__1)), k5_square_1(k1_seq_1(_G11125, np__2))), k5_square_1(k1_seq_1(_G11125, np__3))))]
+ (10)  [v7_ordinal1(_G10690), m2_finseq_2(_G10782, k1_numbers, k1_euclid(_G10690)), - (k12_euclid(_G10782)=k7_square_1(k23_rvsum_1(_G10782, _G10782)))]
+ (11)  [- (k23_rvsum_1(_G7126, _G7261)=k23_rvsum_1(_G7193, _G7330)), _G7126=_G7193, _G7261=_G7330]
+ (12)  [_G7723=_G7772, - (k1_euclid(_G7723)=k1_euclid(_G7772))]
+ (13)  [_G8001=_G8050, - (k12_euclid(_G8001)=k12_euclid(_G8050))]
+ (14)  [_G8279=_G8328, - (k7_square_1(_G8279)=k7_square_1(_G8328))]
+ (15)  [- (k9_binop_2(_G8557, _G8692)=k9_binop_2(_G8624, _G8761)), _G8557=_G8624, _G8692=_G8761]
+ (16)  [_G9154=_G9203, - (k5_square_1(_G9154)=k5_square_1(_G9203))]
+ (17)  [- (k1_seq_1(_G9423, _G9558)=k1_seq_1(_G9490, _G9627)), _G9423=_G9490, _G9558=_G9627]
+ (18)  [- (_G3039=_G3039)]
+ (19)  [_G3138=_G3183, - (_G3183=_G3138)]
+ (20)  [- (_G3371=_G3484), _G3371=_G3427, _G3427=_G3484]
+ (21)  [-v2_xxreal_0(_G3870), _G3821=_G3870, v2_xxreal_0(_G3821)]
+ (22)  [-m2_subset_1(_G4184, _G4357, _G4534), m2_subset_1(_G4099, _G4270, _G4445), _G4099=_G4184, _G4270=_G4357, _G4445=_G4534]
+ (23)  [-m1_subset_1(_G5194, _G5331), m1_subset_1(_G5127, _G5262), _G5127=_G5194, _G5262=_G5331]
+ (24)  [-v7_ordinal1(_G5773), _G5724=_G5773, v7_ordinal1(_G5724)]
+ (25)  [-m2_finseq_2(_G6078, _G6251, _G6428), m2_finseq_2(_G5993, _G6164, _G6339), _G5993=_G6078, _G6164=_G6251, _G6339=_G6428]
+
+Connection Proof:
+-----------------
+1  [k12_euclid(1^[])=k7_square_1(k9_binop_2(k9_binop_2(k5_square_1(k1_seq_1(1^[], np__1)), k5_square_1(k1_seq_1(1^[], np__2))), k5_square_1(k1_seq_1(1^[], np__3))))]   (2)  
+1.1  [- (k12_euclid(1^[])=k7_square_1(k9_binop_2(k9_binop_2(k5_square_1(k1_seq_1(1^[], np__1)), k5_square_1(k1_seq_1(1^[], np__2))), k5_square_1(k1_seq_1(1^[], np__3))))), k12_euclid(1^[])=k7_square_1(k23_rvsum_1(1^[], 1^[])), k7_square_1(k23_rvsum_1(1^[], 1^[]))=k7_square_1(k9_binop_2(k9_binop_2(k5_square_1(k1_seq_1(1^[], np__1)), k5_square_1(k1_seq_1(1^[], np__2))), k5_square_1(k1_seq_1(1^[], np__3))))]   (20)  substitution:[[_G3371, _G3484, _G3427], [k12_euclid(1^[]), k7_square_1(k9_binop_2(k9_binop_2(k5_square_1(k1_seq_1(1^[], np__1)), k5_square_1(k1_seq_1(1^[], np__2))), k5_square_1(k1_seq_1(1^[], np__3)))), k7_square_1(k23_rvsum_1(1^[], 1^[]))]]
+1.1.1  [- (k12_euclid(1^[])=k7_square_1(k23_rvsum_1(1^[], 1^[]))), v7_ordinal1(np__3), m2_finseq_2(1^[], k1_numbers, k1_euclid(np__3))]   (10)  substitution:[[_G10782, _G10690], [1^[], np__3]]
+1.1.1.1  [-v7_ordinal1(np__3), m1_subset_1(np__3, k4_ordinal1)]   (3)  substitution:[[_G10167], [np__3]]
+1.1.1.1.1  [-m1_subset_1(np__3, k4_ordinal1), m1_subset_1(np__3, k5_numbers), np__3=np__3, k5_numbers=k4_ordinal1]   (23)  substitution:[[_G5194, _G5331, _G5127, _G5262], [np__3, k4_ordinal1, np__3, k5_numbers]]
+1.1.1.1.1.1  [-m1_subset_1(np__3, k5_numbers)]   (7)  
+1.1.1.1.1.2  [- (np__3=np__3)]   (18)  substitution:[[_G3039], [np__3]]
+1.1.1.1.1.3  [- (k5_numbers=k4_ordinal1)]   (4)  
+1.1.1.2  [-m2_finseq_2(1^[], k1_numbers, k1_euclid(np__3))]   (1)  
+1.1.2  [- (k7_square_1(k23_rvsum_1(1^[], 1^[]))=k7_square_1(k9_binop_2(k9_binop_2(k5_square_1(k1_seq_1(1^[], np__1)), k5_square_1(k1_seq_1(1^[], np__2))), k5_square_1(k1_seq_1(1^[], np__3))))), k23_rvsum_1(1^[], 1^[])=k9_binop_2(k9_binop_2(k5_square_1(k1_seq_1(1^[], np__1)), k5_square_1(k1_seq_1(1^[], np__2))), k5_square_1(k1_seq_1(1^[], np__3)))]   (14)  substitution:[[_G8279, _G8328], [k23_rvsum_1(1^[], 1^[]), k9_binop_2(k9_binop_2(k5_square_1(k1_seq_1(1^[], np__1)), k5_square_1(k1_seq_1(1^[], np__2))), k5_square_1(k1_seq_1(1^[], np__3)))]]
+1.1.2.1  [- (k23_rvsum_1(1^[], 1^[])=k9_binop_2(k9_binop_2(k5_square_1(k1_seq_1(1^[], np__1)), k5_square_1(k1_seq_1(1^[], np__2))), k5_square_1(k1_seq_1(1^[], np__3)))), m2_finseq_2(1^[], k1_numbers, k1_euclid(np__3))]   (9)  substitution:[[_G11125], [1^[]]]
+1.1.2.1.1  [-m2_finseq_2(1^[], k1_numbers, k1_euclid(np__3))]   (1)  
+------------------------------------------------------
+End of proof for t65_euclid_8

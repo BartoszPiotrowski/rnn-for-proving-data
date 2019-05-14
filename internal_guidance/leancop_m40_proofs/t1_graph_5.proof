@@ -1,0 +1,63 @@
+
+t1_graph_5 is a Theorem
+Start of proof for t1_graph_5
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(6^[])]
+ (2)  [-v1_funct_1(6^[])]
+ (3)  [-v1_relat_1(7^[])]
+ (4)  [-v1_funct_1(7^[])]
+ (5)  [-r1_tarski(k10_xtuple_0(6^[]), k10_xtuple_0(7^[]))]
+ (6)  [-r2_hidden(5^[], k9_xtuple_0(6^[]))]
+ (7)  [r2_hidden(_G10225, k9_xtuple_0(7^[])), k1_funct_1(6^[], 5^[])=k1_funct_1(7^[], _G10225)]
+ (8)  [-r1_tarski(_G7247, _G7303), -r2_hidden(4^[_G7303, _G7247], _G7247)]
+ (9)  [-r1_tarski(_G7247, _G7303), r2_hidden(4^[_G7303, _G7247], _G7303)]
+ (10)  [r1_tarski(_G7247, _G7303), r2_hidden(_G7417, _G7247), -r2_hidden(_G7417, _G7303)]
+ (11)  [v1_funct_1(_G6470), v1_relat_1(_G6470), _G6639=k10_xtuple_0(_G6470), r2_hidden(_G6785, _G6639), -r2_hidden(1^[_G6785, _G6639, _G6470], k9_xtuple_0(_G6470))]
+ (12)  [v1_funct_1(_G6470), v1_relat_1(_G6470), _G6639=k10_xtuple_0(_G6470), r2_hidden(_G6785, _G6639), - (_G6785=k1_funct_1(_G6470, 1^[_G6785, _G6639, _G6470]))]
+ (13)  [v1_funct_1(_G6470), v1_relat_1(_G6470), _G6639=k10_xtuple_0(_G6470), -r2_hidden(_G6785, _G6639), r2_hidden(_G6910, k9_xtuple_0(_G6470)), _G6785=k1_funct_1(_G6470, _G6910)]
+ (14)  [v1_funct_1(_G6470), v1_relat_1(_G6470), - (_G6639=k10_xtuple_0(_G6470)), -r2_hidden(2^[_G6639, _G6470], _G6639), -r2_hidden(3^[_G6639, _G6470], k9_xtuple_0(_G6470))]
+ (15)  [v1_funct_1(_G6470), v1_relat_1(_G6470), - (_G6639=k10_xtuple_0(_G6470)), -r2_hidden(2^[_G6639, _G6470], _G6639), - (2^[_G6639, _G6470]=k1_funct_1(_G6470, 3^[_G6639, _G6470]))]
+ (16)  [v1_funct_1(_G6470), v1_relat_1(_G6470), - (_G6639=k10_xtuple_0(_G6470)), r2_hidden(2^[_G6639, _G6470], _G6639), r2_hidden(_G9384, k9_xtuple_0(_G6470)), 2^[_G6639, _G6470]=k1_funct_1(_G6470, _G9384)]
+ (17)  [_G5263=_G5312, - (k10_xtuple_0(_G5263)=k10_xtuple_0(_G5312))]
+ (18)  [_G5541=_G5590, - (k9_xtuple_0(_G5541)=k9_xtuple_0(_G5590))]
+ (19)  [- (k1_funct_1(_G5810, _G5945)=k1_funct_1(_G5877, _G6014)), _G5810=_G5877, _G5945=_G6014]
+ (20)  [- (_G2656=_G2656)]
+ (21)  [_G2755=_G2800, - (_G2800=_G2755)]
+ (22)  [- (_G2988=_G3101), _G2988=_G3044, _G3044=_G3101]
+ (23)  [-v1_relat_1(_G3487), _G3438=_G3487, v1_relat_1(_G3438)]
+ (24)  [-v1_funct_1(_G3765), _G3716=_G3765, v1_funct_1(_G3716)]
+ (25)  [-r1_tarski(_G4061, _G4198), r1_tarski(_G3994, _G4129), _G3994=_G4061, _G4129=_G4198]
+ (26)  [-r2_hidden(_G4649, _G4786), r2_hidden(_G4582, _G4717), _G4582=_G4649, _G4717=_G4786]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(1^[k1_funct_1(6^[], 5^[]), k10_xtuple_0(7^[]), 7^[]], k9_xtuple_0(7^[])), k1_funct_1(6^[], 5^[])=k1_funct_1(7^[], 1^[k1_funct_1(6^[], 5^[]), k10_xtuple_0(7^[]), 7^[]])]   (7)  substitution:[[_G10225], [1^[k1_funct_1(6^[], 5^[]), k10_xtuple_0(7^[]), 7^[]]]]
+1.1  [-r2_hidden(1^[k1_funct_1(6^[], 5^[]), k10_xtuple_0(7^[]), 7^[]], k9_xtuple_0(7^[])), v1_funct_1(7^[]), v1_relat_1(7^[]), k10_xtuple_0(7^[])=k10_xtuple_0(7^[]), r2_hidden(k1_funct_1(6^[], 5^[]), k10_xtuple_0(7^[]))]   (11)  substitution:[[_G6785, _G6639, _G6470], [k1_funct_1(6^[], 5^[]), k10_xtuple_0(7^[]), 7^[]]]
+1.1.1  [-v1_funct_1(7^[])]   (4)  
+1.1.2  [-v1_relat_1(7^[])]   (3)  
+1.1.3  [- (k10_xtuple_0(7^[])=k10_xtuple_0(7^[])), 7^[]=7^[]]   (17)  substitution:[[_G5263, _G5312], [7^[], 7^[]]]
+1.1.3.1  [- (7^[]=7^[])]   (20)  substitution:[[_G2656], [7^[]]]
+1.1.4  [-r2_hidden(k1_funct_1(6^[], 5^[]), k10_xtuple_0(7^[])), r1_tarski(k10_xtuple_0(6^[]), k10_xtuple_0(7^[])), r2_hidden(k1_funct_1(6^[], 5^[]), k10_xtuple_0(6^[]))]   (10)  substitution:[[_G7417, _G7303, _G7247], [k1_funct_1(6^[], 5^[]), k10_xtuple_0(7^[]), k10_xtuple_0(6^[])]]
+1.1.4.1  [-r1_tarski(k10_xtuple_0(6^[]), k10_xtuple_0(7^[]))]   (5)  
+1.1.4.2  [-r2_hidden(k1_funct_1(6^[], 5^[]), k10_xtuple_0(6^[])), v1_funct_1(6^[]), v1_relat_1(6^[]), k10_xtuple_0(6^[])=k10_xtuple_0(6^[]), r2_hidden(5^[], k9_xtuple_0(6^[])), k1_funct_1(6^[], 5^[])=k1_funct_1(6^[], 5^[])]   (13)  substitution:[[_G6785, _G6639, _G6470, _G6910], [k1_funct_1(6^[], 5^[]), k10_xtuple_0(6^[]), 6^[], 5^[]]]
+1.1.4.2.1  [-v1_funct_1(6^[])]   (2)  
+1.1.4.2.2  [-v1_relat_1(6^[])]   (1)  
+1.1.4.2.3  [- (k10_xtuple_0(6^[])=k10_xtuple_0(6^[]))]   (20)  substitution:[[_G2656], [k10_xtuple_0(6^[])]]
+1.1.4.2.4  [-r2_hidden(5^[], k9_xtuple_0(6^[]))]   (6)  
+1.1.4.2.5  [- (k1_funct_1(6^[], 5^[])=k1_funct_1(6^[], 5^[]))]   (20)  substitution:[[_G2656], [k1_funct_1(6^[], 5^[])]]
+1.2  [- (k1_funct_1(6^[], 5^[])=k1_funct_1(7^[], 1^[k1_funct_1(6^[], 5^[]), k10_xtuple_0(7^[]), 7^[]])), v1_funct_1(7^[]), v1_relat_1(7^[]), k10_xtuple_0(7^[])=k10_xtuple_0(7^[]), r2_hidden(k1_funct_1(6^[], 5^[]), k10_xtuple_0(7^[]))]   (12)  substitution:[[_G6785, _G6470, _G6639], [k1_funct_1(6^[], 5^[]), 7^[], k10_xtuple_0(7^[])]]
+1.2.1  [-v1_funct_1(7^[])]   (4)  
+1.2.2  [-v1_relat_1(7^[])]   (3)  
+1.2.3  [- (k10_xtuple_0(7^[])=k10_xtuple_0(7^[])), 7^[]=7^[]]   (17)  substitution:[[_G5263, _G5312], [7^[], 7^[]]]
+1.2.3.1  [- (7^[]=7^[])]   (20)  substitution:[[_G2656], [7^[]]]
+1.2.4  [-r2_hidden(k1_funct_1(6^[], 5^[]), k10_xtuple_0(7^[])), r1_tarski(k10_xtuple_0(6^[]), k10_xtuple_0(7^[])), r2_hidden(k1_funct_1(6^[], 5^[]), k10_xtuple_0(6^[]))]   (10)  substitution:[[_G7417, _G7303, _G7247], [k1_funct_1(6^[], 5^[]), k10_xtuple_0(7^[]), k10_xtuple_0(6^[])]]
+1.2.4.1  [-r1_tarski(k10_xtuple_0(6^[]), k10_xtuple_0(7^[]))]   (5)  
+1.2.4.2  [-r2_hidden(k1_funct_1(6^[], 5^[]), k10_xtuple_0(6^[])), v1_funct_1(6^[]), v1_relat_1(6^[]), k10_xtuple_0(6^[])=k10_xtuple_0(6^[]), r2_hidden(5^[], k9_xtuple_0(6^[])), k1_funct_1(6^[], 5^[])=k1_funct_1(6^[], 5^[])]   (13)  substitution:[[_G6785, _G6639, _G6470, _G6910], [k1_funct_1(6^[], 5^[]), k10_xtuple_0(6^[]), 6^[], 5^[]]]
+1.2.4.2.1  [-v1_funct_1(6^[])]   (2)  
+1.2.4.2.2  [-v1_relat_1(6^[])]   (1)  
+1.2.4.2.3  [- (k10_xtuple_0(6^[])=k10_xtuple_0(6^[]))]   (20)  substitution:[[_G2656], [k10_xtuple_0(6^[])]]
+1.2.4.2.4  [-r2_hidden(5^[], k9_xtuple_0(6^[]))]   (6)  
+1.2.4.2.5  [- (k1_funct_1(6^[], 5^[])=k1_funct_1(6^[], 5^[]))]   (20)  substitution:[[_G2656], [k1_funct_1(6^[], 5^[])]]
+------------------------------------------------------
+End of proof for t1_graph_5

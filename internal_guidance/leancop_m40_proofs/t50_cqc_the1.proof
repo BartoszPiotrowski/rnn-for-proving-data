@@ -1,0 +1,50 @@
+
+t50_cqc_the1 is a Theorem
+Start of proof for t50_cqc_the1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_qc_lang1(1^[])]
+ (2)  [-m1_subset_1(2^[], k1_zfmisc_1(k3_cqc_lang(1^[])))]
+ (3)  [r3_cqc_the1(1^[], 2^[], k5_cqc_lang(1^[]))]
+ (4)  [m1_qc_lang1(_G8267), m1_subset_1(_G8376, k1_zfmisc_1(k3_cqc_lang(_G8267))), m1_subset_1(_G8534, k9_qc_lang1(_G8267)), r3_cqc_the1(_G8267, _G8376, _G8534), -r2_hidden(_G8534, k1_cqc_the1(_G8267, _G8376))]
+ (5)  [m1_qc_lang1(_G8267), m1_subset_1(_G8376, k1_zfmisc_1(k3_cqc_lang(_G8267))), m1_subset_1(_G8534, k9_qc_lang1(_G8267)), -r3_cqc_the1(_G8267, _G8376, _G8534), r2_hidden(_G8534, k1_cqc_the1(_G8267, _G8376))]
+ (6)  [m1_qc_lang1(_G8973), -m1_subset_1(k12_qc_lang1(_G8973), k9_qc_lang1(_G8973))]
+ (7)  [m1_qc_lang1(_G9162), - (k5_cqc_lang(_G9162)=k12_qc_lang1(_G9162))]
+ (8)  [m1_qc_lang1(_G9342), m1_subset_1(_G9433, k1_zfmisc_1(k3_cqc_lang(_G9342))), -r2_hidden(k5_cqc_lang(_G9342), k1_cqc_the1(_G9342, _G9433))]
+ (9)  [_G6163=_G6212, - (k9_qc_lang1(_G6163)=k9_qc_lang1(_G6212))]
+ (10)  [_G6441=_G6490, - (k12_qc_lang1(_G6441)=k12_qc_lang1(_G6490))]
+ (11)  [- (k1_cqc_the1(_G6719, _G6854)=k1_cqc_the1(_G6786, _G6923)), _G6719=_G6786, _G6854=_G6923]
+ (12)  [_G7316=_G7365, - (k1_zfmisc_1(_G7316)=k1_zfmisc_1(_G7365))]
+ (13)  [_G7594=_G7643, - (k3_cqc_lang(_G7594)=k3_cqc_lang(_G7643))]
+ (14)  [_G7863=_G7912, - (k5_cqc_lang(_G7863)=k5_cqc_lang(_G7912))]
+ (15)  [- (_G2806=_G2806)]
+ (16)  [_G2905=_G2950, - (_G2950=_G2905)]
+ (17)  [- (_G3138=_G3251), _G3138=_G3194, _G3194=_G3251]
+ (18)  [-r2_hidden(_G3655, _G3792), r2_hidden(_G3588, _G3723), _G3588=_G3655, _G3723=_G3792]
+ (19)  [-m1_qc_lang1(_G4234), _G4185=_G4234, m1_qc_lang1(_G4185)]
+ (20)  [-m1_subset_1(_G4530, _G4667), m1_subset_1(_G4463, _G4598), _G4463=_G4530, _G4598=_G4667]
+ (21)  [-r3_cqc_the1(_G5136, _G5309, _G5486), r3_cqc_the1(_G5051, _G5222, _G5397), _G5051=_G5136, _G5222=_G5309, _G5397=_G5486]
+
+Connection Proof:
+-----------------
+1  [r3_cqc_the1(1^[], 2^[], k5_cqc_lang(1^[]))]   (3)  
+1.1  [-r3_cqc_the1(1^[], 2^[], k5_cqc_lang(1^[])), r3_cqc_the1(1^[], 2^[], k12_qc_lang1(1^[])), 1^[]=1^[], 2^[]=2^[], k12_qc_lang1(1^[])=k5_cqc_lang(1^[])]   (21)  substitution:[[_G5136, _G5309, _G5486, _G5051, _G5222, _G5397], [1^[], 2^[], k5_cqc_lang(1^[]), 1^[], 2^[], k12_qc_lang1(1^[])]]
+1.1.1  [-r3_cqc_the1(1^[], 2^[], k12_qc_lang1(1^[])), m1_qc_lang1(1^[]), m1_subset_1(2^[], k1_zfmisc_1(k3_cqc_lang(1^[]))), m1_subset_1(k12_qc_lang1(1^[]), k9_qc_lang1(1^[])), r2_hidden(k12_qc_lang1(1^[]), k1_cqc_the1(1^[], 2^[]))]   (5)  substitution:[[_G8267, _G8376, _G8534], [1^[], 2^[], k12_qc_lang1(1^[])]]
+1.1.1.1  [-m1_qc_lang1(1^[])]   (1)  
+1.1.1.2  [-m1_subset_1(2^[], k1_zfmisc_1(k3_cqc_lang(1^[])))]   (2)  
+1.1.1.3  [-m1_subset_1(k12_qc_lang1(1^[]), k9_qc_lang1(1^[])), m1_qc_lang1(1^[])]   (6)  substitution:[[_G8973], [1^[]]]
+1.1.1.3.1  [-m1_qc_lang1(1^[])]   (1)  
+1.1.1.4  [-r2_hidden(k12_qc_lang1(1^[]), k1_cqc_the1(1^[], 2^[])), r2_hidden(k5_cqc_lang(1^[]), k1_cqc_the1(1^[], 2^[])), k5_cqc_lang(1^[])=k12_qc_lang1(1^[]), k1_cqc_the1(1^[], 2^[])=k1_cqc_the1(1^[], 2^[])]   (18)  substitution:[[_G3655, _G3792, _G3588, _G3723], [k12_qc_lang1(1^[]), k1_cqc_the1(1^[], 2^[]), k5_cqc_lang(1^[]), k1_cqc_the1(1^[], 2^[])]]
+1.1.1.4.1  [-r2_hidden(k5_cqc_lang(1^[]), k1_cqc_the1(1^[], 2^[])), m1_qc_lang1(1^[]), m1_subset_1(2^[], k1_zfmisc_1(k3_cqc_lang(1^[])))]   (8)  substitution:[[_G9342, _G9433], [1^[], 2^[]]]
+1.1.1.4.1.1  [-m1_qc_lang1(1^[])]   (1)  
+1.1.1.4.1.2  [-m1_subset_1(2^[], k1_zfmisc_1(k3_cqc_lang(1^[])))]   (2)  
+1.1.1.4.2  [- (k5_cqc_lang(1^[])=k12_qc_lang1(1^[])), m1_qc_lang1(1^[])]   (7)  substitution:[[_G9162], [1^[]]]
+1.1.1.4.2.1  [-m1_qc_lang1(1^[])]   (1)  
+1.1.1.4.3  [- (k1_cqc_the1(1^[], 2^[])=k1_cqc_the1(1^[], 2^[]))]   (15)  substitution:[[_G2806], [k1_cqc_the1(1^[], 2^[])]]
+1.1.2  [- (1^[]=1^[])]   (15)  substitution:[[_G2806], [1^[]]]
+1.1.3  [- (2^[]=2^[])]   (15)  substitution:[[_G2806], [2^[]]]
+1.1.4  [- (k12_qc_lang1(1^[])=k5_cqc_lang(1^[])), k5_cqc_lang(1^[])=k12_qc_lang1(1^[])]   (16)  substitution:[[_G2950, _G2905], [k12_qc_lang1(1^[]), k5_cqc_lang(1^[])]]
+1.1.4.1  [- (k5_cqc_lang(1^[])=k12_qc_lang1(1^[])), m1_qc_lang1(1^[])]   (7)  substitution:[[_G9162], [1^[]]]
+1.1.4.1.1  [-m1_qc_lang1(1^[])]   (1)  
+------------------------------------------------------
+End of proof for t50_cqc_the1

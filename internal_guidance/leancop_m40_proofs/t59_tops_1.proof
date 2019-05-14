@@ -1,0 +1,49 @@
+
+t59_tops_1 is a Theorem
+Start of proof for t59_tops_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v2_pre_topc(1^[])]
+ (2)  [-l1_pre_topc(1^[])]
+ (3)  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]
+ (4)  [-v4_pre_topc(2^[], 1^[])]
+ (5)  [v3_tops_1(k2_tops_1(1^[], 2^[]), 1^[])]
+ (6)  [m1_subset_1(_G9013, k1_zfmisc_1(_G8961)), -m1_subset_1(k3_subset_1(_G8961, _G9013), k1_zfmisc_1(_G8961))]
+ (7)  [-v3_tops_1(k2_tops_1(_G9284, _G9352), _G9284), l1_pre_topc(_G9284), v2_pre_topc(_G9284), v3_pre_topc(_G9352, _G9284), m1_subset_1(_G9352, k1_zfmisc_1(u1_struct_0(_G9284)))]
+ (8)  [l1_pre_topc(_G10371), m1_subset_1(_G10468, k1_zfmisc_1(u1_struct_0(_G10371))), - (k2_tops_1(_G10371, _G10468)=k2_tops_1(_G10371, k3_subset_1(u1_struct_0(_G10371), _G10468)))]
+ (9)  [-v3_pre_topc(k3_subset_1(u1_struct_0(_G9823), _G9893), _G9823), l1_pre_topc(_G9823), v2_pre_topc(_G9823), v4_pre_topc(_G9893, _G9823), m1_subset_1(_G9893, k1_zfmisc_1(u1_struct_0(_G9823)))]
+ (10)  [- (k3_subset_1(_G7136, _G7271)=k3_subset_1(_G7203, _G7340)), _G7136=_G7203, _G7271=_G7340]
+ (11)  [_G7733=_G7782, - (k1_zfmisc_1(_G7733)=k1_zfmisc_1(_G7782))]
+ (12)  [_G8011=_G8060, - (u1_struct_0(_G8011)=u1_struct_0(_G8060))]
+ (13)  [- (k2_tops_1(_G8280, _G8415)=k2_tops_1(_G8347, _G8484)), _G8280=_G8347, _G8415=_G8484]
+ (14)  [- (_G3293=_G3293)]
+ (15)  [_G3392=_G3437, - (_G3437=_G3392)]
+ (16)  [- (_G3625=_G3738), _G3625=_G3681, _G3681=_G3738]
+ (17)  [-v3_pre_topc(_G4142, _G4279), v3_pre_topc(_G4075, _G4210), _G4075=_G4142, _G4210=_G4279]
+ (18)  [-v2_pre_topc(_G4721), _G4672=_G4721, v2_pre_topc(_G4672)]
+ (19)  [-l1_pre_topc(_G4999), _G4950=_G4999, l1_pre_topc(_G4950)]
+ (20)  [-m1_subset_1(_G5295, _G5432), m1_subset_1(_G5228, _G5363), _G5228=_G5295, _G5363=_G5432]
+ (21)  [-v4_pre_topc(_G5892, _G6029), v4_pre_topc(_G5825, _G5960), _G5825=_G5892, _G5960=_G6029]
+ (22)  [-v3_tops_1(_G6480, _G6617), v3_tops_1(_G6413, _G6548), _G6413=_G6480, _G6548=_G6617]
+
+Connection Proof:
+-----------------
+1  [v3_tops_1(k2_tops_1(1^[], 2^[]), 1^[])]   (5)  
+1.1  [-v3_tops_1(k2_tops_1(1^[], 2^[]), 1^[]), v3_tops_1(k2_tops_1(1^[], k3_subset_1(u1_struct_0(1^[]), 2^[])), 1^[]), k2_tops_1(1^[], k3_subset_1(u1_struct_0(1^[]), 2^[]))=k2_tops_1(1^[], 2^[]), 1^[]=1^[]]   (22)  substitution:[[_G6480, _G6617, _G6413, _G6548], [k2_tops_1(1^[], 2^[]), 1^[], k2_tops_1(1^[], k3_subset_1(u1_struct_0(1^[]), 2^[])), 1^[]]]
+1.1.1  [-v3_tops_1(k2_tops_1(1^[], k3_subset_1(u1_struct_0(1^[]), 2^[])), 1^[]), l1_pre_topc(1^[]), v2_pre_topc(1^[]), v3_pre_topc(k3_subset_1(u1_struct_0(1^[]), 2^[]), 1^[]), m1_subset_1(k3_subset_1(u1_struct_0(1^[]), 2^[]), k1_zfmisc_1(u1_struct_0(1^[])))]   (7)  substitution:[[_G9284, _G9352], [1^[], k3_subset_1(u1_struct_0(1^[]), 2^[])]]
+1.1.1.1  [-l1_pre_topc(1^[])]   (2)  
+1.1.1.2  [-v2_pre_topc(1^[])]   (1)  
+1.1.1.3  [-v3_pre_topc(k3_subset_1(u1_struct_0(1^[]), 2^[]), 1^[]), l1_pre_topc(1^[]), v2_pre_topc(1^[]), v4_pre_topc(2^[], 1^[]), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (9)  substitution:[[_G9823, _G9893], [1^[], 2^[]]]
+1.1.1.3.1  [-l1_pre_topc(1^[])]   (2)  
+1.1.1.3.2  [-v2_pre_topc(1^[])]   (1)  
+1.1.1.3.3  [-v4_pre_topc(2^[], 1^[])]   (4)  
+1.1.1.3.4  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (3)  
+1.1.1.4  [-m1_subset_1(k3_subset_1(u1_struct_0(1^[]), 2^[]), k1_zfmisc_1(u1_struct_0(1^[]))), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (6)  substitution:[[_G8961, _G9013], [u1_struct_0(1^[]), 2^[]]]
+1.1.1.4.1  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (3)  
+1.1.2  [- (k2_tops_1(1^[], k3_subset_1(u1_struct_0(1^[]), 2^[]))=k2_tops_1(1^[], 2^[])), k2_tops_1(1^[], 2^[])=k2_tops_1(1^[], k3_subset_1(u1_struct_0(1^[]), 2^[]))]   (15)  substitution:[[_G3437, _G3392], [k2_tops_1(1^[], k3_subset_1(u1_struct_0(1^[]), 2^[])), k2_tops_1(1^[], 2^[])]]
+1.1.2.1  [- (k2_tops_1(1^[], 2^[])=k2_tops_1(1^[], k3_subset_1(u1_struct_0(1^[]), 2^[]))), l1_pre_topc(1^[]), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (8)  substitution:[[_G10371, _G10468], [1^[], 2^[]]]
+1.1.2.1.1  [-l1_pre_topc(1^[])]   (2)  
+1.1.2.1.2  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (3)  
+1.1.3  [- (1^[]=1^[])]   (14)  substitution:[[_G3293], [1^[]]]
+------------------------------------------------------
+End of proof for t59_tops_1

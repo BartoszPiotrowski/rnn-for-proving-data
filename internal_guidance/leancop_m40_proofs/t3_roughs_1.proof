@@ -1,0 +1,53 @@
+
+t3_roughs_1 is a Theorem
+Start of proof for t3_roughs_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_2(2^[])]
+ (2)  [-v1_partfun1(2^[], 1^[])]
+ (3)  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]
+ (4)  [r1_relset_1(1^[], 1^[], k6_partfun1(1^[]), 2^[])]
+ (5)  [m1_subset_1(_G10113, k1_zfmisc_1(k2_zfmisc_1(_G10004, _G10058))), -v1_relat_1(_G10113)]
+ (6)  [-v1_partfun1(k6_partfun1(_G10356), _G10356)]
+ (7)  [-m1_subset_1(k6_partfun1(_G10356), k1_zfmisc_1(k2_zfmisc_1(_G10356, _G10356)))]
+ (8)  [- (k1_relat_1(_G10687)=_G10629), v1_partfun1(_G10687, _G10629), m1_subset_1(_G10687, k1_zfmisc_1(k2_zfmisc_1(_G10629, _G10629)))]
+ (9)  [- (k6_partfun1(_G11042)=k4_relat_1(_G11042))]
+ (10)  [m1_subset_1(_G11310, k1_zfmisc_1(k2_zfmisc_1(_G11173, _G11241))), r1_relset_1(_G11173, _G11241, _G11310, _G11380), -r1_tarski(_G11310, _G11380)]
+ (11)  [m1_subset_1(_G11310, k1_zfmisc_1(k2_zfmisc_1(_G11173, _G11241))), -r1_relset_1(_G11173, _G11241, _G11310, _G11380), r1_tarski(_G11310, _G11380)]
+ (12)  [v1_relat_1(_G11826), v1_relat_2(_G11826), -r1_tarski(k4_relat_1(k1_relat_1(_G11826)), _G11826)]
+ (13)  [v1_relat_1(_G11826), -v1_relat_2(_G11826), r1_tarski(k4_relat_1(k1_relat_1(_G11826)), _G11826)]
+ (14)  [_G8199=_G8248, - (k4_relat_1(_G8199)=k4_relat_1(_G8248))]
+ (15)  [_G8477=_G8526, - (k1_relat_1(_G8477)=k1_relat_1(_G8526))]
+ (16)  [_G8755=_G8804, - (k1_zfmisc_1(_G8755)=k1_zfmisc_1(_G8804))]
+ (17)  [_G9621=_G9670, - (k6_partfun1(_G9621)=k6_partfun1(_G9670))]
+ (18)  [- (k2_zfmisc_1(_G9033, _G9168)=k2_zfmisc_1(_G9100, _G9237)), _G9033=_G9100, _G9168=_G9237]
+ (19)  [- (_G3418=_G3418)]
+ (20)  [_G3517=_G3562, - (_G3562=_G3517)]
+ (21)  [- (_G3750=_G3863), _G3750=_G3806, _G3806=_G3863]
+ (22)  [-v1_relat_1(_G4249), _G4200=_G4249, v1_relat_1(_G4200)]
+ (23)  [-r1_tarski(_G4545, _G4682), r1_tarski(_G4478, _G4613), _G4478=_G4545, _G4613=_G4682]
+ (24)  [-v1_relat_2(_G5124), _G5075=_G5124, v1_relat_2(_G5075)]
+ (25)  [-v1_partfun1(_G5420, _G5557), v1_partfun1(_G5353, _G5488), _G5353=_G5420, _G5488=_G5557]
+ (26)  [-m1_subset_1(_G6017, _G6154), m1_subset_1(_G5950, _G6085), _G5950=_G6017, _G6085=_G6154]
+ (27)  [-r1_relset_1(_G6641, _G6850, _G7063, _G7280), r1_relset_1(_G6538, _G6745, _G6956, _G7171), _G6538=_G6641, _G6745=_G6850, _G6956=_G7063, _G7171=_G7280]
+
+Connection Proof:
+-----------------
+1  [r1_relset_1(1^[], 1^[], k6_partfun1(1^[]), 2^[])]   (4)  
+1.1  [-r1_relset_1(1^[], 1^[], k6_partfun1(1^[]), 2^[]), m1_subset_1(k6_partfun1(1^[]), k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[]))), r1_tarski(k6_partfun1(1^[]), 2^[])]   (11)  substitution:[[_G11173, _G11241, _G11310, _G11380], [1^[], 1^[], k6_partfun1(1^[]), 2^[]]]
+1.1.1  [-m1_subset_1(k6_partfun1(1^[]), k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]   (7)  substitution:[[_G10356], [1^[]]]
+1.1.2  [-r1_tarski(k6_partfun1(1^[]), 2^[]), r1_tarski(k4_relat_1(k1_relat_1(2^[])), 2^[]), k4_relat_1(k1_relat_1(2^[]))=k6_partfun1(1^[]), 2^[]=2^[]]   (23)  substitution:[[_G4545, _G4682, _G4478, _G4613], [k6_partfun1(1^[]), 2^[], k4_relat_1(k1_relat_1(2^[])), 2^[]]]
+1.1.2.1  [-r1_tarski(k4_relat_1(k1_relat_1(2^[])), 2^[]), v1_relat_1(2^[]), v1_relat_2(2^[])]   (12)  substitution:[[_G11826], [2^[]]]
+1.1.2.1.1  [-v1_relat_1(2^[]), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]   (5)  substitution:[[_G10113, _G10004, _G10058], [2^[], 1^[], 1^[]]]
+1.1.2.1.1.1  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]   (3)  
+1.1.2.1.2  [-v1_relat_2(2^[])]   (1)  
+1.1.2.2  [- (k4_relat_1(k1_relat_1(2^[]))=k6_partfun1(1^[])), k4_relat_1(k1_relat_1(2^[]))=k4_relat_1(1^[]), k4_relat_1(1^[])=k6_partfun1(1^[])]   (21)  substitution:[[_G3750, _G3863, _G3806], [k4_relat_1(k1_relat_1(2^[])), k6_partfun1(1^[]), k4_relat_1(1^[])]]
+1.1.2.2.1  [- (k4_relat_1(k1_relat_1(2^[]))=k4_relat_1(1^[])), k1_relat_1(2^[])=1^[]]   (14)  substitution:[[_G8199, _G8248], [k1_relat_1(2^[]), 1^[]]]
+1.1.2.2.1.1  [- (k1_relat_1(2^[])=1^[]), v1_partfun1(2^[], 1^[]), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]   (8)  substitution:[[_G10687, _G10629], [2^[], 1^[]]]
+1.1.2.2.1.1.1  [-v1_partfun1(2^[], 1^[])]   (2)  
+1.1.2.2.1.1.2  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]   (3)  
+1.1.2.2.2  [- (k4_relat_1(1^[])=k6_partfun1(1^[])), k6_partfun1(1^[])=k4_relat_1(1^[])]   (20)  substitution:[[_G3562, _G3517], [k4_relat_1(1^[]), k6_partfun1(1^[])]]
+1.1.2.2.2.1  [- (k6_partfun1(1^[])=k4_relat_1(1^[]))]   (9)  substitution:[[_G11042], [1^[]]]
+1.1.2.3  [- (2^[]=2^[])]   (19)  substitution:[[_G3418], [2^[]]]
+------------------------------------------------------
+End of proof for t3_roughs_1

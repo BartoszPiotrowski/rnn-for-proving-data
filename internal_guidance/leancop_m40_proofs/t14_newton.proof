@@ -1,0 +1,65 @@
+
+t14_newton is a Theorem
+Start of proof for t14_newton
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k3_newton(np__2)=np__2]
+ (2)  [m1_subset_1(_G9353, k1_numbers), -v1_xcmplx_0(_G9353)]
+ (3)  [m1_subset_1(_G9510, k4_ordinal1), -v7_ordinal1(_G9510)]
+ (4)  [v7_ordinal1(_G9667), - (k3_newton(_G9667)=k19_rvsum_1(k1_finseq_2(_G9667)))]
+ (5)  [- (k5_binop_2(_G9872, _G9927)=k3_xcmplx_0(_G9872, _G9927)), v1_xcmplx_0(_G9872), v1_xcmplx_0(_G9927)]
+ (6)  [- (k5_numbers=k4_ordinal1)]
+ (7)  [- (k3_xcmplx_0(np__1, np__2)=np__2)]
+ (8)  [-v2_xxreal_0(np__1)]
+ (9)  [-m2_subset_1(np__1, k1_numbers, k5_numbers)]
+ (10)  [-m1_subset_1(np__1, k5_numbers)]
+ (11)  [-m1_subset_1(np__1, k1_numbers)]
+ (12)  [-v2_xxreal_0(np__2)]
+ (13)  [-m2_subset_1(np__2, k1_numbers, k5_numbers)]
+ (14)  [-m1_subset_1(np__2, k5_numbers)]
+ (15)  [-m1_subset_1(np__2, k1_numbers)]
+ (16)  [- (k1_finseq_2(np__2)=k10_finseq_1(np__1, np__2))]
+ (17)  [v1_xcmplx_0(_G11112), v1_xcmplx_0(_G11201), - (k19_rvsum_1(k10_finseq_1(_G11112, _G11201))=k5_binop_2(_G11112, _G11201))]
+ (18)  [- (k3_xcmplx_0(_G6611, _G6746)=k3_xcmplx_0(_G6678, _G6815)), _G6611=_G6678, _G6746=_G6815]
+ (19)  [_G7208=_G7257, - (k1_finseq_2(_G7208)=k1_finseq_2(_G7257))]
+ (20)  [_G7486=_G7535, - (k19_rvsum_1(_G7486)=k19_rvsum_1(_G7535))]
+ (21)  [- (k10_finseq_1(_G7764, _G7899)=k10_finseq_1(_G7831, _G7968)), _G7764=_G7831, _G7899=_G7968]
+ (22)  [_G8949=_G8998, - (k3_newton(_G8949)=k3_newton(_G8998))]
+ (23)  [- (k5_binop_2(_G8361, _G8496)=k5_binop_2(_G8428, _G8565)), _G8361=_G8428, _G8496=_G8565]
+ (24)  [- (_G3274=_G3274)]
+ (25)  [_G3373=_G3418, - (_G3418=_G3373)]
+ (26)  [- (_G3606=_G3719), _G3606=_G3662, _G3662=_G3719]
+ (27)  [-v7_ordinal1(_G4105), _G4056=_G4105, v7_ordinal1(_G4056)]
+ (28)  [-v2_xxreal_0(_G4383), _G4334=_G4383, v2_xxreal_0(_G4334)]
+ (29)  [-m2_subset_1(_G4697, _G4870, _G5047), m2_subset_1(_G4612, _G4783, _G4958), _G4612=_G4697, _G4783=_G4870, _G4958=_G5047]
+ (30)  [-v1_xcmplx_0(_G6277), _G6228=_G6277, v1_xcmplx_0(_G6228)]
+ (31)  [-m1_subset_1(_G5707, _G5844), m1_subset_1(_G5640, _G5775), _G5640=_G5707, _G5775=_G5844]
+
+Connection Proof:
+-----------------
+1  [k3_newton(np__2)=np__2]   (1)  
+1.1  [- (k3_newton(np__2)=np__2), k3_newton(np__2)=k19_rvsum_1(k1_finseq_2(np__2)), k19_rvsum_1(k1_finseq_2(np__2))=np__2]   (26)  substitution:[[_G3606, _G3719, _G3662], [k3_newton(np__2), np__2, k19_rvsum_1(k1_finseq_2(np__2))]]
+1.1.1  [- (k3_newton(np__2)=k19_rvsum_1(k1_finseq_2(np__2))), v7_ordinal1(np__2)]   (4)  substitution:[[_G9667], [np__2]]
+1.1.1.1  [-v7_ordinal1(np__2), m1_subset_1(np__2, k4_ordinal1)]   (3)  substitution:[[_G9510], [np__2]]
+1.1.1.1.1  [-m1_subset_1(np__2, k4_ordinal1), m1_subset_1(np__2, k5_numbers), np__2=np__2, k5_numbers=k4_ordinal1]   (31)  substitution:[[_G5707, _G5844, _G5640, _G5775], [np__2, k4_ordinal1, np__2, k5_numbers]]
+1.1.1.1.1.1  [-m1_subset_1(np__2, k5_numbers)]   (14)  
+1.1.1.1.1.2  [- (np__2=np__2)]   (24)  substitution:[[_G3274], [np__2]]
+1.1.1.1.1.3  [- (k5_numbers=k4_ordinal1)]   (6)  
+1.1.2  [- (k19_rvsum_1(k1_finseq_2(np__2))=np__2), k19_rvsum_1(k1_finseq_2(np__2))=k5_binop_2(np__1, np__2), k5_binop_2(np__1, np__2)=np__2]   (26)  substitution:[[_G3606, _G3719, _G3662], [k19_rvsum_1(k1_finseq_2(np__2)), np__2, k5_binop_2(np__1, np__2)]]
+1.1.2.1  [- (k19_rvsum_1(k1_finseq_2(np__2))=k5_binop_2(np__1, np__2)), k19_rvsum_1(k1_finseq_2(np__2))=k19_rvsum_1(k10_finseq_1(np__1, np__2)), k19_rvsum_1(k10_finseq_1(np__1, np__2))=k5_binop_2(np__1, np__2)]   (26)  substitution:[[_G3606, _G3719, _G3662], [k19_rvsum_1(k1_finseq_2(np__2)), k5_binop_2(np__1, np__2), k19_rvsum_1(k10_finseq_1(np__1, np__2))]]
+1.1.2.1.1  [- (k19_rvsum_1(k1_finseq_2(np__2))=k19_rvsum_1(k10_finseq_1(np__1, np__2))), k1_finseq_2(np__2)=k10_finseq_1(np__1, np__2)]   (20)  substitution:[[_G7486, _G7535], [k1_finseq_2(np__2), k10_finseq_1(np__1, np__2)]]
+1.1.2.1.1.1  [- (k1_finseq_2(np__2)=k10_finseq_1(np__1, np__2))]   (16)  
+1.1.2.1.2  [- (k19_rvsum_1(k10_finseq_1(np__1, np__2))=k5_binop_2(np__1, np__2)), v1_xcmplx_0(np__1), v1_xcmplx_0(np__2)]   (17)  substitution:[[_G11112, _G11201], [np__1, np__2]]
+1.1.2.1.2.1  [-v1_xcmplx_0(np__1), m1_subset_1(np__1, k1_numbers)]   (2)  substitution:[[_G9353], [np__1]]
+1.1.2.1.2.1.1  [-m1_subset_1(np__1, k1_numbers)]   (11)  
+1.1.2.1.2.2  [-v1_xcmplx_0(np__2), m1_subset_1(np__2, k1_numbers)]   (2)  substitution:[[_G9353], [np__2]]
+1.1.2.1.2.2.1  [-m1_subset_1(np__2, k1_numbers)]   (15)  
+1.1.2.2  [- (k5_binop_2(np__1, np__2)=np__2), k5_binop_2(np__1, np__2)=k3_xcmplx_0(np__1, np__2), k3_xcmplx_0(np__1, np__2)=np__2]   (26)  substitution:[[_G3606, _G3719, _G3662], [k5_binop_2(np__1, np__2), np__2, k3_xcmplx_0(np__1, np__2)]]
+1.1.2.2.1  [- (k5_binop_2(np__1, np__2)=k3_xcmplx_0(np__1, np__2)), v1_xcmplx_0(np__1), v1_xcmplx_0(np__2)]   (5)  substitution:[[_G9872, _G9927], [np__1, np__2]]
+1.1.2.2.1.1  [-v1_xcmplx_0(np__1), m1_subset_1(np__1, k1_numbers)]   (2)  substitution:[[_G9353], [np__1]]
+1.1.2.2.1.1.1  [-m1_subset_1(np__1, k1_numbers)]   (11)  
+1.1.2.2.1.2  [-v1_xcmplx_0(np__2), m1_subset_1(np__2, k1_numbers)]   (2)  substitution:[[_G9353], [np__2]]
+1.1.2.2.1.2.1  [-m1_subset_1(np__2, k1_numbers)]   (15)  
+1.1.2.2.2  [- (k3_xcmplx_0(np__1, np__2)=np__2)]   (7)  
+------------------------------------------------------
+End of proof for t14_newton

@@ -1,0 +1,47 @@
+
+t21_jordan18 is a Theorem
+Start of proof for t21_jordan18
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], u1_struct_0(k15_euclid(np__2)))]
+ (2)  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(k15_euclid(np__2))))]
+ (3)  [v2_sppol_1(k1_rltopsp1(k15_euclid(np__2), k1_jordan18(1^[], 2^[]), k2_jordan18(1^[], 2^[])))]
+ (4)  [-m1_subset_1(k1_jordan18(_G8811, _G8865), u1_struct_0(k15_euclid(np__2))), m1_subset_1(_G8811, u1_struct_0(k15_euclid(np__2))), m1_subset_1(_G8865, k1_zfmisc_1(u1_struct_0(k15_euclid(np__2))))]
+ (5)  [-m1_subset_1(k2_jordan18(_G9286, _G9340), u1_struct_0(k15_euclid(np__2))), m1_subset_1(_G9286, u1_struct_0(k15_euclid(np__2))), m1_subset_1(_G9340, k1_zfmisc_1(u1_struct_0(k15_euclid(np__2))))]
+ (6)  [m1_subset_1(_G9761, k1_zfmisc_1(u1_struct_0(k15_euclid(np__2)))), m1_subset_1(_G9931, u1_struct_0(k15_euclid(np__2))), - (k17_euclid(k1_jordan18(_G9931, _G9761))=k17_euclid(_G9931))]
+ (7)  [m1_subset_1(_G9761, k1_zfmisc_1(u1_struct_0(k15_euclid(np__2)))), m1_subset_1(_G9931, u1_struct_0(k15_euclid(np__2))), - (k17_euclid(k2_jordan18(_G9931, _G9761))=k17_euclid(_G9931))]
+ (8)  [m1_subset_1(_G10400, u1_struct_0(k15_euclid(np__2))), m1_subset_1(_G10549, u1_struct_0(k15_euclid(np__2))), k17_euclid(_G10400)=k17_euclid(_G10549), -v2_sppol_1(k1_rltopsp1(k15_euclid(np__2), _G10400, _G10549))]
+ (9)  [m1_subset_1(_G10400, u1_struct_0(k15_euclid(np__2))), m1_subset_1(_G10549, u1_struct_0(k15_euclid(np__2))), - (k17_euclid(_G10400)=k17_euclid(_G10549)), v2_sppol_1(k1_rltopsp1(k15_euclid(np__2), _G10400, _G10549))]
+ (10)  [- (_G3649=_G3649)]
+ (11)  [_G3748=_G3793, - (_G3793=_G3748)]
+ (12)  [- (_G3981=_G4094), _G3981=_G4037, _G4037=_G4094]
+ (13)  [-v2_sppol_1(_G5068), _G5019=_G5068, v2_sppol_1(_G5019)]
+ (14)  [-m1_subset_1(_G4498, _G4635), m1_subset_1(_G4431, _G4566), _G4431=_G4498, _G4566=_G4635]
+ (15)  [_G5339=_G5388, - (k17_euclid(_G5339)=k17_euclid(_G5388))]
+ (16)  [_G5617=_G5666, - (k1_zfmisc_1(_G5617)=k1_zfmisc_1(_G5666))]
+ (17)  [_G5895=_G5944, - (u1_struct_0(_G5895)=u1_struct_0(_G5944))]
+ (18)  [- (k1_rltopsp1(_G6173, _G6344, _G6519)=k1_rltopsp1(_G6258, _G6431, _G6608)), _G6173=_G6258, _G6344=_G6431, _G6519=_G6608]
+ (19)  [_G7201=_G7250, - (k15_euclid(_G7201)=k15_euclid(_G7250))]
+ (20)  [- (k1_jordan18(_G7479, _G7614)=k1_jordan18(_G7546, _G7683)), _G7479=_G7546, _G7614=_G7683]
+ (21)  [- (k2_jordan18(_G8067, _G8202)=k2_jordan18(_G8134, _G8271)), _G8067=_G8134, _G8202=_G8271]
+
+Connection Proof:
+-----------------
+1  [v2_sppol_1(k1_rltopsp1(k15_euclid(np__2), k1_jordan18(1^[], 2^[]), k2_jordan18(1^[], 2^[])))]   (3)  
+1.1  [-v2_sppol_1(k1_rltopsp1(k15_euclid(np__2), k1_jordan18(1^[], 2^[]), k2_jordan18(1^[], 2^[]))), m1_subset_1(k1_jordan18(1^[], 2^[]), u1_struct_0(k15_euclid(np__2))), m1_subset_1(k2_jordan18(1^[], 2^[]), u1_struct_0(k15_euclid(np__2))), k17_euclid(k1_jordan18(1^[], 2^[]))=k17_euclid(k2_jordan18(1^[], 2^[]))]   (8)  substitution:[[_G10400, _G10549], [k1_jordan18(1^[], 2^[]), k2_jordan18(1^[], 2^[])]]
+1.1.1  [-m1_subset_1(k1_jordan18(1^[], 2^[]), u1_struct_0(k15_euclid(np__2))), m1_subset_1(1^[], u1_struct_0(k15_euclid(np__2))), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(k15_euclid(np__2))))]   (4)  substitution:[[_G8811, _G8865], [1^[], 2^[]]]
+1.1.1.1  [-m1_subset_1(1^[], u1_struct_0(k15_euclid(np__2)))]   (1)  
+1.1.1.2  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(k15_euclid(np__2))))]   (2)  
+1.1.2  [-m1_subset_1(k2_jordan18(1^[], 2^[]), u1_struct_0(k15_euclid(np__2))), m1_subset_1(1^[], u1_struct_0(k15_euclid(np__2))), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(k15_euclid(np__2))))]   (5)  substitution:[[_G9286, _G9340], [1^[], 2^[]]]
+1.1.2.1  [-m1_subset_1(1^[], u1_struct_0(k15_euclid(np__2)))]   (1)  
+1.1.2.2  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(k15_euclid(np__2))))]   (2)  
+1.1.3  [- (k17_euclid(k1_jordan18(1^[], 2^[]))=k17_euclid(k2_jordan18(1^[], 2^[]))), k17_euclid(k1_jordan18(1^[], 2^[]))=k17_euclid(1^[]), k17_euclid(1^[])=k17_euclid(k2_jordan18(1^[], 2^[]))]   (12)  substitution:[[_G3981, _G4094, _G4037], [k17_euclid(k1_jordan18(1^[], 2^[])), k17_euclid(k2_jordan18(1^[], 2^[])), k17_euclid(1^[])]]
+1.1.3.1  [- (k17_euclid(k1_jordan18(1^[], 2^[]))=k17_euclid(1^[])), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(k15_euclid(np__2)))), m1_subset_1(1^[], u1_struct_0(k15_euclid(np__2)))]   (6)  substitution:[[_G9931, _G9761], [1^[], 2^[]]]
+1.1.3.1.1  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(k15_euclid(np__2))))]   (2)  
+1.1.3.1.2  [-m1_subset_1(1^[], u1_struct_0(k15_euclid(np__2)))]   (1)  
+1.1.3.2  [- (k17_euclid(1^[])=k17_euclid(k2_jordan18(1^[], 2^[]))), k17_euclid(k2_jordan18(1^[], 2^[]))=k17_euclid(1^[])]   (11)  substitution:[[_G3793, _G3748], [k17_euclid(1^[]), k17_euclid(k2_jordan18(1^[], 2^[]))]]
+1.1.3.2.1  [- (k17_euclid(k2_jordan18(1^[], 2^[]))=k17_euclid(1^[])), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(k15_euclid(np__2)))), m1_subset_1(1^[], u1_struct_0(k15_euclid(np__2)))]   (7)  substitution:[[_G9931, _G9761], [1^[], 2^[]]]
+1.1.3.2.1.1  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(k15_euclid(np__2))))]   (2)  
+1.1.3.2.1.2  [-m1_subset_1(1^[], u1_struct_0(k15_euclid(np__2)))]   (1)  
+------------------------------------------------------
+End of proof for t21_jordan18

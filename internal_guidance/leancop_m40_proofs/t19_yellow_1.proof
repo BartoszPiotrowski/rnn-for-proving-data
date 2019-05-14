@@ -1,0 +1,55 @@
+
+t19_yellow_1 is a Theorem
+Start of proof for t19_yellow_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k4_yellow_0(k3_yellow_1(1^[]))=1^[]]
+ (2)  [m1_subset_1(_G8016, k1_zfmisc_1(k1_zfmisc_1(_G7962))), -m1_subset_1(k5_setfam_1(_G7962, _G8016), k1_zfmisc_1(_G7962))]
+ (3)  [-m1_subset_1(k9_setfam_1(_G8303), k1_zfmisc_1(k1_zfmisc_1(_G8303)))]
+ (4)  [v1_xboole_0(k1_zfmisc_1(_G8450))]
+ (5)  [m1_subset_1(_G8609, k1_zfmisc_1(k1_zfmisc_1(_G8555))), - (k5_setfam_1(_G8555, _G8609)=k3_tarski(_G8609))]
+ (6)  [- (k9_setfam_1(_G8896)=k1_zfmisc_1(_G8896))]
+ (7)  [-v1_xboole_0(_G9027), r2_hidden(k3_tarski(_G9027), _G9027), - (k4_yellow_0(k2_yellow_1(_G9027))=k3_tarski(_G9027))]
+ (8)  [- (k3_yellow_1(_G9653)=k2_yellow_1(k9_setfam_1(_G9653)))]
+ (9)  [- (k3_tarski(k1_zfmisc_1(_G9791))=_G9791)]
+ (10)  [m1_subset_1(_G9348, _G9398), -v1_xboole_0(_G9398), -r2_hidden(_G9348, _G9398)]
+ (11)  [- (k5_setfam_1(_G5559, _G5694)=k5_setfam_1(_G5626, _G5763)), _G5559=_G5626, _G5694=_G5763]
+ (12)  [_G6156=_G6205, - (k2_yellow_1(_G6156)=k2_yellow_1(_G6205))]
+ (13)  [_G6434=_G6483, - (k9_setfam_1(_G6434)=k9_setfam_1(_G6483))]
+ (14)  [_G6712=_G6761, - (k3_tarski(_G6712)=k3_tarski(_G6761))]
+ (15)  [_G6990=_G7039, - (k1_zfmisc_1(_G6990)=k1_zfmisc_1(_G7039))]
+ (16)  [_G7268=_G7317, - (k4_yellow_0(_G7268)=k4_yellow_0(_G7317))]
+ (17)  [_G7537=_G7586, - (k3_yellow_1(_G7537)=k3_yellow_1(_G7586))]
+ (18)  [- (_G3251=_G3251)]
+ (19)  [_G3350=_G3395, - (_G3395=_G3350)]
+ (20)  [- (_G3583=_G3696), _G3583=_G3639, _G3639=_G3696]
+ (21)  [-m1_subset_1(_G4100, _G4237), m1_subset_1(_G4033, _G4168), _G4033=_G4100, _G4168=_G4237]
+ (22)  [-v1_xboole_0(_G4679), _G4630=_G4679, v1_xboole_0(_G4630)]
+ (23)  [-r2_hidden(_G4966, _G5103), r2_hidden(_G4899, _G5034), _G4899=_G4966, _G5034=_G5103]
+
+Connection Proof:
+-----------------
+1  [v1_xboole_0(k1_zfmisc_1(1^[]))]   (4)  substitution:[[_G8450], [1^[]]]
+1.1  [-v1_xboole_0(k1_zfmisc_1(1^[])), k9_setfam_1(1^[])=k1_zfmisc_1(1^[]), v1_xboole_0(k9_setfam_1(1^[]))]   (22)  substitution:[[_G4679, _G4630], [k1_zfmisc_1(1^[]), k9_setfam_1(1^[])]]
+1.1.1  [- (k9_setfam_1(1^[])=k1_zfmisc_1(1^[]))]   (6)  substitution:[[_G8896], [1^[]]]
+1.1.2  [-v1_xboole_0(k9_setfam_1(1^[])), r2_hidden(k3_tarski(k9_setfam_1(1^[])), k9_setfam_1(1^[])), - (k4_yellow_0(k2_yellow_1(k9_setfam_1(1^[])))=k3_tarski(k9_setfam_1(1^[])))]   (7)  substitution:[[_G9027], [k9_setfam_1(1^[])]]
+1.1.2.1  [-r2_hidden(k3_tarski(k9_setfam_1(1^[])), k9_setfam_1(1^[])), m1_subset_1(k3_tarski(k9_setfam_1(1^[])), k9_setfam_1(1^[])), -v1_xboole_0(k9_setfam_1(1^[]))]   (10)  substitution:[[_G9348, _G9398], [k3_tarski(k9_setfam_1(1^[])), k9_setfam_1(1^[])]]
+1.1.2.1.1  [-m1_subset_1(k3_tarski(k9_setfam_1(1^[])), k9_setfam_1(1^[])), m1_subset_1(k5_setfam_1(1^[], k9_setfam_1(1^[])), k1_zfmisc_1(1^[])), k5_setfam_1(1^[], k9_setfam_1(1^[]))=k3_tarski(k9_setfam_1(1^[])), k1_zfmisc_1(1^[])=k9_setfam_1(1^[])]   (21)  substitution:[[_G4100, _G4237, _G4033, _G4168], [k3_tarski(k9_setfam_1(1^[])), k9_setfam_1(1^[]), k5_setfam_1(1^[], k9_setfam_1(1^[])), k1_zfmisc_1(1^[])]]
+1.1.2.1.1.1  [-m1_subset_1(k5_setfam_1(1^[], k9_setfam_1(1^[])), k1_zfmisc_1(1^[])), m1_subset_1(k9_setfam_1(1^[]), k1_zfmisc_1(k1_zfmisc_1(1^[])))]   (2)  substitution:[[_G7962, _G8016], [1^[], k9_setfam_1(1^[])]]
+1.1.2.1.1.1.1  [-m1_subset_1(k9_setfam_1(1^[]), k1_zfmisc_1(k1_zfmisc_1(1^[])))]   (3)  substitution:[[_G8303], [1^[]]]
+1.1.2.1.1.2  [- (k5_setfam_1(1^[], k9_setfam_1(1^[]))=k3_tarski(k9_setfam_1(1^[]))), m1_subset_1(k9_setfam_1(1^[]), k1_zfmisc_1(k1_zfmisc_1(1^[])))]   (5)  substitution:[[_G8555, _G8609], [1^[], k9_setfam_1(1^[])]]
+1.1.2.1.1.2.1  [-m1_subset_1(k9_setfam_1(1^[]), k1_zfmisc_1(k1_zfmisc_1(1^[])))]   (3)  substitution:[[_G8303], [1^[]]]
+1.1.2.1.1.3  [- (k1_zfmisc_1(1^[])=k9_setfam_1(1^[])), k9_setfam_1(1^[])=k1_zfmisc_1(1^[])]   (19)  substitution:[[_G3395, _G3350], [k1_zfmisc_1(1^[]), k9_setfam_1(1^[])]]
+1.1.2.1.1.3.1  [- (k9_setfam_1(1^[])=k1_zfmisc_1(1^[]))]   (6)  substitution:[[_G8896], [1^[]]]
+1.1.2.1.2  [v1_xboole_0(k9_setfam_1(1^[]))]   (reduction:1.1)  
+1.1.2.2  [k4_yellow_0(k2_yellow_1(k9_setfam_1(1^[])))=k3_tarski(k9_setfam_1(1^[])), - (k4_yellow_0(k2_yellow_1(k9_setfam_1(1^[])))=1^[]), k3_tarski(k9_setfam_1(1^[]))=1^[]]   (20)  substitution:[[_G3583, _G3639, _G3696], [k4_yellow_0(k2_yellow_1(k9_setfam_1(1^[]))), k3_tarski(k9_setfam_1(1^[])), 1^[]]]
+1.1.2.2.1  [k4_yellow_0(k2_yellow_1(k9_setfam_1(1^[])))=1^[], - (k4_yellow_0(k3_yellow_1(1^[]))=1^[]), k4_yellow_0(k3_yellow_1(1^[]))=k4_yellow_0(k2_yellow_1(k9_setfam_1(1^[])))]   (20)  substitution:[[_G3639, _G3696, _G3583], [k4_yellow_0(k2_yellow_1(k9_setfam_1(1^[]))), 1^[], k4_yellow_0(k3_yellow_1(1^[]))]]
+1.1.2.2.1.1  [k4_yellow_0(k3_yellow_1(1^[]))=1^[]]   (1)  
+1.1.2.2.1.2  [- (k4_yellow_0(k3_yellow_1(1^[]))=k4_yellow_0(k2_yellow_1(k9_setfam_1(1^[])))), k3_yellow_1(1^[])=k2_yellow_1(k9_setfam_1(1^[]))]   (16)  substitution:[[_G7268, _G7317], [k3_yellow_1(1^[]), k2_yellow_1(k9_setfam_1(1^[]))]]
+1.1.2.2.1.2.1  [- (k3_yellow_1(1^[])=k2_yellow_1(k9_setfam_1(1^[])))]   (8)  substitution:[[_G9653], [1^[]]]
+1.1.2.2.2  [- (k3_tarski(k9_setfam_1(1^[]))=1^[]), k3_tarski(k9_setfam_1(1^[]))=k3_tarski(k1_zfmisc_1(1^[])), k3_tarski(k1_zfmisc_1(1^[]))=1^[]]   (20)  substitution:[[_G3583, _G3696, _G3639], [k3_tarski(k9_setfam_1(1^[])), 1^[], k3_tarski(k1_zfmisc_1(1^[]))]]
+1.1.2.2.2.1  [- (k3_tarski(k9_setfam_1(1^[]))=k3_tarski(k1_zfmisc_1(1^[]))), k9_setfam_1(1^[])=k1_zfmisc_1(1^[])]   (14)  substitution:[[_G6712, _G6761], [k9_setfam_1(1^[]), k1_zfmisc_1(1^[])]]
+1.1.2.2.2.1.1  [- (k9_setfam_1(1^[])=k1_zfmisc_1(1^[]))]   (6)  substitution:[[_G8896], [1^[]]]
+1.1.2.2.2.2  [- (k3_tarski(k1_zfmisc_1(1^[]))=1^[])]   (9)  substitution:[[_G9791], [1^[]]]
+------------------------------------------------------
+End of proof for t19_yellow_1

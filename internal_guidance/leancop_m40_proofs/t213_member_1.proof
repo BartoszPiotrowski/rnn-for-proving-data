@@ -1,0 +1,51 @@
+
+t213_member_1 is a Theorem
+Start of proof for t213_member_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_membered(2^[])]
+ (2)  [-v1_xcmplx_0(3^[])]
+ (3)  [-v1_xcmplx_0(4^[])]
+ (4)  [-r2_hidden(3^[], 2^[])]
+ (5)  [r2_hidden(k6_binop_2(4^[], 3^[]), k25_member_1(2^[], 4^[]))]
+ (6)  [_G7033=k1_tarski(_G6975), r2_hidden(_G7163, _G7033), - (_G7163=_G6975)]
+ (7)  [_G7033=k1_tarski(_G6975), -r2_hidden(_G7163, _G7033), _G7163=_G6975]
+ (8)  [- (_G7033=k1_tarski(_G6975)), r2_hidden(1^[_G7033, _G6975], _G7033), 1^[_G7033, _G6975]=_G6975]
+ (9)  [- (_G7033=k1_tarski(_G6975)), -r2_hidden(1^[_G7033, _G6975], _G7033), - (1^[_G7033, _G6975]=_G6975)]
+ (10)  [v1_membered(_G7395), v1_xcmplx_0(_G7484), - (k25_member_1(_G7395, _G7484)=k15_member_1(k1_tarski(_G7484), _G7395))]
+ (11)  [v1_xcmplx_0(_G7776), -v1_membered(k1_tarski(_G7776))]
+ (12)  [v1_membered(_G7914), v1_membered(_G8033), v1_xcmplx_0(_G8148), v1_xcmplx_0(_G8259), -r2_hidden(k6_binop_2(_G8148, _G8259), k15_member_1(_G7914, _G8033)), r2_hidden(_G8148, _G7914), r2_hidden(_G8259, _G8033)]
+ (13)  [_G4831=_G4880, - (k1_tarski(_G4831)=k1_tarski(_G4880))]
+ (14)  [- (k15_member_1(_G5109, _G5244)=k15_member_1(_G5176, _G5313)), _G5109=_G5176, _G5244=_G5313]
+ (15)  [- (k6_binop_2(_G5706, _G5841)=k6_binop_2(_G5773, _G5910)), _G5706=_G5773, _G5841=_G5910]
+ (16)  [- (k25_member_1(_G6294, _G6429)=k25_member_1(_G6361, _G6498)), _G6294=_G6361, _G6429=_G6498]
+ (17)  [- (_G2842=_G2842)]
+ (18)  [_G2941=_G2986, - (_G2986=_G2941)]
+ (19)  [- (_G3174=_G3287), _G3174=_G3230, _G3230=_G3287]
+ (20)  [-v1_membered(_G3673), _G3624=_G3673, v1_membered(_G3624)]
+ (21)  [-v1_xcmplx_0(_G3951), _G3902=_G3951, v1_xcmplx_0(_G3902)]
+ (22)  [-r2_hidden(_G4238, _G4375), r2_hidden(_G4171, _G4306), _G4171=_G4238, _G4306=_G4375]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(k6_binop_2(4^[], 3^[]), k25_member_1(2^[], 4^[]))]   (5)  
+1.1  [-r2_hidden(k6_binop_2(4^[], 3^[]), k25_member_1(2^[], 4^[])), r2_hidden(k6_binop_2(4^[], 3^[]), k15_member_1(k1_tarski(4^[]), 2^[])), k6_binop_2(4^[], 3^[])=k6_binop_2(4^[], 3^[]), k15_member_1(k1_tarski(4^[]), 2^[])=k25_member_1(2^[], 4^[])]   (22)  substitution:[[_G4238, _G4375, _G4171, _G4306], [k6_binop_2(4^[], 3^[]), k25_member_1(2^[], 4^[]), k6_binop_2(4^[], 3^[]), k15_member_1(k1_tarski(4^[]), 2^[])]]
+1.1.1  [-r2_hidden(k6_binop_2(4^[], 3^[]), k15_member_1(k1_tarski(4^[]), 2^[])), v1_membered(k1_tarski(4^[])), v1_membered(2^[]), v1_xcmplx_0(4^[]), v1_xcmplx_0(3^[]), r2_hidden(4^[], k1_tarski(4^[])), r2_hidden(3^[], 2^[])]   (12)  substitution:[[_G8148, _G8259, _G7914, _G8033], [4^[], 3^[], k1_tarski(4^[]), 2^[]]]
+1.1.1.1  [-v1_membered(k1_tarski(4^[])), v1_xcmplx_0(4^[])]   (11)  substitution:[[_G7776], [4^[]]]
+1.1.1.1.1  [-v1_xcmplx_0(4^[])]   (3)  
+1.1.1.2  [-v1_membered(2^[])]   (1)  
+1.1.1.3  [-v1_xcmplx_0(4^[])]   (3)  
+1.1.1.4  [-v1_xcmplx_0(3^[])]   (2)  
+1.1.1.5  [-r2_hidden(4^[], k1_tarski(4^[])), k1_tarski(4^[])=k1_tarski(4^[]), 4^[]=4^[]]   (7)  substitution:[[_G7163, _G7033, _G6975], [4^[], k1_tarski(4^[]), 4^[]]]
+1.1.1.5.1  [- (k1_tarski(4^[])=k1_tarski(4^[]))]   (17)  substitution:[[_G2842], [k1_tarski(4^[])]]
+1.1.1.5.2  [- (4^[]=4^[])]   (17)  substitution:[[_G2842], [4^[]]]
+1.1.1.6  [-r2_hidden(3^[], 2^[])]   (4)  
+1.1.2  [- (k6_binop_2(4^[], 3^[])=k6_binop_2(4^[], 3^[])), 4^[]=4^[], 3^[]=3^[]]   (15)  substitution:[[_G5706, _G5841, _G5773, _G5910], [4^[], 3^[], 4^[], 3^[]]]
+1.1.2.1  [- (4^[]=4^[])]   (17)  substitution:[[_G2842], [4^[]]]
+1.1.2.2  [- (3^[]=3^[])]   (17)  substitution:[[_G2842], [3^[]]]
+1.1.3  [- (k15_member_1(k1_tarski(4^[]), 2^[])=k25_member_1(2^[], 4^[])), k25_member_1(2^[], 4^[])=k15_member_1(k1_tarski(4^[]), 2^[])]   (18)  substitution:[[_G2986, _G2941], [k15_member_1(k1_tarski(4^[]), 2^[]), k25_member_1(2^[], 4^[])]]
+1.1.3.1  [- (k25_member_1(2^[], 4^[])=k15_member_1(k1_tarski(4^[]), 2^[])), v1_membered(2^[]), v1_xcmplx_0(4^[])]   (10)  substitution:[[_G7395, _G7484], [2^[], 4^[]]]
+1.1.3.1.1  [-v1_membered(2^[])]   (1)  
+1.1.3.1.2  [-v1_xcmplx_0(4^[])]   (3)  
+------------------------------------------------------
+End of proof for t213_member_1

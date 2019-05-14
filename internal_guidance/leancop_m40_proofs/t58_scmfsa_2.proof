@@ -1,0 +1,37 @@
+
+t58_scmfsa_2 is a Theorem
+Start of proof for t58_scmfsa_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_ami_2(1^[])]
+ (2)  [-m1_subset_1(1^[], u1_struct_0(k1_scmfsa_2))]
+ (3)  [-m1_scmfsa_2(2^[])]
+ (4)  [- (1^[]=2^[])]
+ (5)  [k4_numbers=k3_finseq_2(k4_numbers)]
+ (6)  [m1_scmfsa_2(_G5773), - (k4_memstr_0(np__3, k1_scmfsa_2, _G5773)=k3_finseq_2(k4_numbers))]
+ (7)  [- (k4_memstr_0(np__3, k1_scmfsa_2, _G5432)=k4_numbers), v1_ami_2(_G5432), m1_subset_1(_G5432, u1_struct_0(k1_scmfsa_2))]
+ (8)  [- (k4_memstr_0(_G3794, _G3965, _G4140)=k4_memstr_0(_G3879, _G4052, _G4229)), _G3794=_G3879, _G3965=_G4052, _G4140=_G4229]
+ (9)  [_G4822=_G4871, - (k3_finseq_2(_G4822)=k3_finseq_2(_G4871))]
+ (10)  [_G5091=_G5140, - (u1_struct_0(_G5091)=u1_struct_0(_G5140))]
+ (11)  [- (_G1805=_G1805)]
+ (12)  [_G1904=_G1949, - (_G1949=_G1904)]
+ (13)  [- (_G2137=_G2250), _G2137=_G2193, _G2193=_G2250]
+ (14)  [-v1_ami_2(_G2636), _G2587=_G2636, v1_ami_2(_G2587)]
+ (15)  [-m1_scmfsa_2(_G3502), _G3453=_G3502, m1_scmfsa_2(_G3453)]
+ (16)  [-m1_subset_1(_G2932, _G3069), m1_subset_1(_G2865, _G3000), _G2865=_G2932, _G3000=_G3069]
+
+Connection Proof:
+-----------------
+1  [k4_numbers=k3_finseq_2(k4_numbers)]   (5)  
+1.1  [- (k4_numbers=k3_finseq_2(k4_numbers)), k4_numbers=k4_memstr_0(np__3, k1_scmfsa_2, 1^[]), k4_memstr_0(np__3, k1_scmfsa_2, 1^[])=k3_finseq_2(k4_numbers)]   (13)  substitution:[[_G2137, _G2250, _G2193], [k4_numbers, k3_finseq_2(k4_numbers), k4_memstr_0(np__3, k1_scmfsa_2, 1^[])]]
+1.1.1  [- (k4_numbers=k4_memstr_0(np__3, k1_scmfsa_2, 1^[])), k4_memstr_0(np__3, k1_scmfsa_2, 1^[])=k4_numbers]   (12)  substitution:[[_G1949, _G1904], [k4_numbers, k4_memstr_0(np__3, k1_scmfsa_2, 1^[])]]
+1.1.1.1  [- (k4_memstr_0(np__3, k1_scmfsa_2, 1^[])=k4_numbers), v1_ami_2(1^[]), m1_subset_1(1^[], u1_struct_0(k1_scmfsa_2))]   (7)  substitution:[[_G5432], [1^[]]]
+1.1.1.1.1  [-v1_ami_2(1^[])]   (1)  
+1.1.1.1.2  [-m1_subset_1(1^[], u1_struct_0(k1_scmfsa_2))]   (2)  
+1.1.2  [- (k4_memstr_0(np__3, k1_scmfsa_2, 1^[])=k3_finseq_2(k4_numbers)), m1_scmfsa_2(1^[])]   (6)  substitution:[[_G5773], [1^[]]]
+1.1.2.1  [-m1_scmfsa_2(1^[]), 2^[]=1^[], m1_scmfsa_2(2^[])]   (15)  substitution:[[_G3502, _G3453], [1^[], 2^[]]]
+1.1.2.1.1  [- (2^[]=1^[]), 1^[]=2^[]]   (12)  substitution:[[_G1949, _G1904], [2^[], 1^[]]]
+1.1.2.1.1.1  [- (1^[]=2^[])]   (4)  
+1.1.2.1.2  [-m1_scmfsa_2(2^[])]   (3)  
+------------------------------------------------------
+End of proof for t58_scmfsa_2

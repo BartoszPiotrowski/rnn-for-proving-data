@@ -1,0 +1,31 @@
+
+t66_ordinal6 is a Theorem
+Start of proof for t66_ordinal6
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v3_ordinal1(3^[])]
+ (2)  [-v3_ordinal1(4^[])]
+ (3)  [-v3_ordinal1(5^[])]
+ (4)  [r2_hidden(3^[], k1_classes1(k2_xboole_0(k2_xboole_0(3^[], 4^[]), 5^[])))]
+ (5)  [v2_classes1(_G971), -v1_classes1(_G971)]
+ (6)  [-v2_classes1(k1_classes1(_G1568))]
+ (7)  [-r2_hidden(_G1657, k1_classes1(_G1657))]
+ (8)  [-r1_tarski(_G1763, k2_xboole_0(_G1763, _G1805))]
+ (9)  [-v1_classes1(_G1102), -r2_hidden(1^[_G1102], _G1102)]
+ (10)  [-v1_classes1(_G1102), -r1_tarski(2^[_G1102], 1^[_G1102])]
+ (11)  [-v1_classes1(_G1102), r2_hidden(2^[_G1102], _G1102)]
+ (12)  [v1_classes1(_G1102), -r2_hidden(_G1252, _G1102), r2_hidden(_G1195, _G1102), r1_tarski(_G1252, _G1195)]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(3^[], k1_classes1(k2_xboole_0(k2_xboole_0(3^[], 4^[]), 5^[])))]   (4)  
+1.1  [-r2_hidden(3^[], k1_classes1(k2_xboole_0(k2_xboole_0(3^[], 4^[]), 5^[]))), v1_classes1(k1_classes1(k2_xboole_0(k2_xboole_0(3^[], 4^[]), 5^[]))), r2_hidden(k2_xboole_0(3^[], 4^[]), k1_classes1(k2_xboole_0(k2_xboole_0(3^[], 4^[]), 5^[]))), r1_tarski(3^[], k2_xboole_0(3^[], 4^[]))]   (12)  substitution:[[_G1252, _G1102, _G1195], [3^[], k1_classes1(k2_xboole_0(k2_xboole_0(3^[], 4^[]), 5^[])), k2_xboole_0(3^[], 4^[])]]
+1.1.1  [-v1_classes1(k1_classes1(k2_xboole_0(k2_xboole_0(3^[], 4^[]), 5^[]))), v2_classes1(k1_classes1(k2_xboole_0(k2_xboole_0(3^[], 4^[]), 5^[])))]   (5)  substitution:[[_G971], [k1_classes1(k2_xboole_0(k2_xboole_0(3^[], 4^[]), 5^[]))]]
+1.1.1.1  [-v2_classes1(k1_classes1(k2_xboole_0(k2_xboole_0(3^[], 4^[]), 5^[])))]   (6)  substitution:[[_G1568], [k2_xboole_0(k2_xboole_0(3^[], 4^[]), 5^[])]]
+1.1.2  [-r2_hidden(k2_xboole_0(3^[], 4^[]), k1_classes1(k2_xboole_0(k2_xboole_0(3^[], 4^[]), 5^[]))), v1_classes1(k1_classes1(k2_xboole_0(k2_xboole_0(3^[], 4^[]), 5^[]))), r2_hidden(k2_xboole_0(k2_xboole_0(3^[], 4^[]), 5^[]), k1_classes1(k2_xboole_0(k2_xboole_0(3^[], 4^[]), 5^[]))), r1_tarski(k2_xboole_0(3^[], 4^[]), k2_xboole_0(k2_xboole_0(3^[], 4^[]), 5^[]))]   (12)  substitution:[[_G1252, _G1102, _G1195], [k2_xboole_0(3^[], 4^[]), k1_classes1(k2_xboole_0(k2_xboole_0(3^[], 4^[]), 5^[])), k2_xboole_0(k2_xboole_0(3^[], 4^[]), 5^[])]]
+1.1.2.1  [-v1_classes1(k1_classes1(k2_xboole_0(k2_xboole_0(3^[], 4^[]), 5^[])))]   (lemmata:1.1)  
+1.1.2.2  [-r2_hidden(k2_xboole_0(k2_xboole_0(3^[], 4^[]), 5^[]), k1_classes1(k2_xboole_0(k2_xboole_0(3^[], 4^[]), 5^[])))]   (7)  substitution:[[_G1657], [k2_xboole_0(k2_xboole_0(3^[], 4^[]), 5^[])]]
+1.1.2.3  [-r1_tarski(k2_xboole_0(3^[], 4^[]), k2_xboole_0(k2_xboole_0(3^[], 4^[]), 5^[]))]   (8)  substitution:[[_G1763, _G1805], [k2_xboole_0(3^[], 4^[]), 5^[]]]
+1.1.3  [-r1_tarski(3^[], k2_xboole_0(3^[], 4^[]))]   (8)  substitution:[[_G1763, _G1805], [3^[], 4^[]]]
+------------------------------------------------------
+End of proof for t66_ordinal6

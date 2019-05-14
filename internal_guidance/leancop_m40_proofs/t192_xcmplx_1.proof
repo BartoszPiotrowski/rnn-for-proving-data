@@ -1,0 +1,30 @@
+
+t192_xcmplx_1 is a Theorem
+Start of proof for t192_xcmplx_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xcmplx_0(1^[])]
+ (2)  [-v1_xcmplx_0(2^[])]
+ (3)  [k7_xcmplx_0(k4_xcmplx_0(1^[]), 2^[])=k7_xcmplx_0(1^[], k4_xcmplx_0(2^[]))]
+ (4)  [v1_xcmplx_0(_G3691), v1_xcmplx_0(_G3782), - (k4_xcmplx_0(k7_xcmplx_0(_G3691, _G3782))=k7_xcmplx_0(k4_xcmplx_0(_G3691), _G3782))]
+ (5)  [v1_xcmplx_0(_G4081), v1_xcmplx_0(_G4172), - (k7_xcmplx_0(_G4081, k4_xcmplx_0(_G4172))=k4_xcmplx_0(k7_xcmplx_0(_G4081, _G4172)))]
+ (6)  [_G3371=_G3420, - (k4_xcmplx_0(_G3371)=k4_xcmplx_0(_G3420))]
+ (7)  [- (k7_xcmplx_0(_G2783, _G2918)=k7_xcmplx_0(_G2850, _G2987)), _G2783=_G2850, _G2918=_G2987]
+ (8)  [-v1_xcmplx_0(_G2533), _G2484=_G2533, v1_xcmplx_0(_G2484)]
+ (9)  [- (_G1711=_G1711)]
+ (10)  [_G1810=_G1855, - (_G1855=_G1810)]
+ (11)  [- (_G2043=_G2156), _G2043=_G2099, _G2099=_G2156]
+
+Connection Proof:
+-----------------
+1  [k7_xcmplx_0(k4_xcmplx_0(1^[]), 2^[])=k7_xcmplx_0(1^[], k4_xcmplx_0(2^[]))]   (3)  
+1.1  [- (k7_xcmplx_0(k4_xcmplx_0(1^[]), 2^[])=k7_xcmplx_0(1^[], k4_xcmplx_0(2^[]))), k7_xcmplx_0(1^[], k4_xcmplx_0(2^[]))=k7_xcmplx_0(k4_xcmplx_0(1^[]), 2^[])]   (10)  substitution:[[_G1855, _G1810], [k7_xcmplx_0(k4_xcmplx_0(1^[]), 2^[]), k7_xcmplx_0(1^[], k4_xcmplx_0(2^[]))]]
+1.1.1  [- (k7_xcmplx_0(1^[], k4_xcmplx_0(2^[]))=k7_xcmplx_0(k4_xcmplx_0(1^[]), 2^[])), k7_xcmplx_0(1^[], k4_xcmplx_0(2^[]))=k4_xcmplx_0(k7_xcmplx_0(1^[], 2^[])), k4_xcmplx_0(k7_xcmplx_0(1^[], 2^[]))=k7_xcmplx_0(k4_xcmplx_0(1^[]), 2^[])]   (11)  substitution:[[_G2043, _G2156, _G2099], [k7_xcmplx_0(1^[], k4_xcmplx_0(2^[])), k7_xcmplx_0(k4_xcmplx_0(1^[]), 2^[]), k4_xcmplx_0(k7_xcmplx_0(1^[], 2^[]))]]
+1.1.1.1  [- (k7_xcmplx_0(1^[], k4_xcmplx_0(2^[]))=k4_xcmplx_0(k7_xcmplx_0(1^[], 2^[]))), v1_xcmplx_0(1^[]), v1_xcmplx_0(2^[])]   (5)  substitution:[[_G4081, _G4172], [1^[], 2^[]]]
+1.1.1.1.1  [-v1_xcmplx_0(1^[])]   (1)  
+1.1.1.1.2  [-v1_xcmplx_0(2^[])]   (2)  
+1.1.1.2  [- (k4_xcmplx_0(k7_xcmplx_0(1^[], 2^[]))=k7_xcmplx_0(k4_xcmplx_0(1^[]), 2^[])), v1_xcmplx_0(1^[]), v1_xcmplx_0(2^[])]   (4)  substitution:[[_G3691, _G3782], [1^[], 2^[]]]
+1.1.1.2.1  [-v1_xcmplx_0(1^[])]   (1)  
+1.1.1.2.2  [-v1_xcmplx_0(2^[])]   (2)  
+------------------------------------------------------
+End of proof for t192_xcmplx_1

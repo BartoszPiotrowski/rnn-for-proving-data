@@ -1,0 +1,68 @@
+
+t40_robbins1 is a Theorem
+Start of proof for t40_robbins1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(1^[])]
+ (2)  [-v4_lattices(1^[])]
+ (3)  [-v5_lattices(1^[])]
+ (4)  [-v5_robbins1(1^[])]
+ (5)  [-l2_robbins1(1^[])]
+ (6)  [-m1_subset_1(2^[], u1_struct_0(1^[]))]
+ (7)  [k9_robbins1(1^[], k12_robbins1(1^[], 2^[]), k11_robbins1(1^[], 2^[]))=2^[]]
+ (8)  [l2_robbins1(_G11964), -v2_struct_0(_G11964), m1_subset_1(_G12129, u1_struct_0(_G11964)), - (k12_robbins1(_G11964, _G12129)=k1_lattices(_G11964, _G12129, _G12129))]
+ (9)  [- (k5_robbins1(_G12491, _G12576, _G12662)=k1_lattices(_G12491, _G12576, _G12662)), m1_subset_1(_G12662, u1_struct_0(_G12491)), m1_subset_1(_G12576, u1_struct_0(_G12491)), -v2_struct_0(_G12491), v4_lattices(_G12491), l2_robbins1(_G12491)]
+ (10)  [- (k9_robbins1(_G14370, _G14709, _G14709)=k11_robbins1(_G14370, _G14709)), m1_subset_1(_G14709, u1_struct_0(_G14370)), -v2_struct_0(_G14370), v4_lattices(_G14370), v5_lattices(_G14370), v5_robbins1(_G14370), l2_robbins1(_G14370)]
+ (11)  [- (k9_robbins1(_G13351, k5_robbins1(_G13351, _G13708, _G13852), k9_robbins1(_G13351, _G13708, _G13852))=_G13852), m1_subset_1(_G13852, u1_struct_0(_G13351)), m1_subset_1(_G13708, u1_struct_0(_G13351)), -v2_struct_0(_G13351), v4_lattices(_G13351), v5_lattices(_G13351), v5_robbins1(_G13351), l2_robbins1(_G13351)]
+ (12)  [- (k1_lattices(_G7291, _G7462, _G7637)=k1_lattices(_G7376, _G7549, _G7726)), _G7291=_G7376, _G7462=_G7549, _G7637=_G7726]
+ (13)  [- (k5_robbins1(_G8319, _G8490, _G8665)=k5_robbins1(_G8404, _G8577, _G8754)), _G8319=_G8404, _G8490=_G8577, _G8665=_G8754]
+ (14)  [_G9347=_G9396, - (u1_struct_0(_G9347)=u1_struct_0(_G9396))]
+ (15)  [- (k9_robbins1(_G9625, _G9796, _G9971)=k9_robbins1(_G9710, _G9883, _G10060)), _G9625=_G9710, _G9796=_G9883, _G9971=_G10060]
+ (16)  [- (k12_robbins1(_G10653, _G10788)=k12_robbins1(_G10720, _G10857)), _G10653=_G10720, _G10788=_G10857]
+ (17)  [- (k11_robbins1(_G11241, _G11376)=k11_robbins1(_G11308, _G11445)), _G11241=_G11308, _G11376=_G11445]
+ (18)  [- (_G4405=_G4405)]
+ (19)  [_G4504=_G4549, - (_G4549=_G4504)]
+ (20)  [- (_G4737=_G4850), _G4737=_G4793, _G4793=_G4850]
+ (21)  [-v2_struct_0(_G5236), _G5187=_G5236, v2_struct_0(_G5187)]
+ (22)  [-v4_lattices(_G5514), _G5465=_G5514, v4_lattices(_G5465)]
+ (23)  [-v5_lattices(_G5792), _G5743=_G5792, v5_lattices(_G5743)]
+ (24)  [-v5_robbins1(_G6070), _G6021=_G6070, v5_robbins1(_G6021)]
+ (25)  [-l2_robbins1(_G6348), _G6299=_G6348, l2_robbins1(_G6299)]
+ (26)  [-m1_subset_1(_G6635, _G6772), m1_subset_1(_G6568, _G6703), _G6568=_G6635, _G6703=_G6772]
+
+Connection Proof:
+-----------------
+1  [v2_struct_0(1^[])]   (1)  
+1.1  [-v2_struct_0(1^[]), l2_robbins1(1^[]), m1_subset_1(2^[], u1_struct_0(1^[])), - (k12_robbins1(1^[], 2^[])=k1_lattices(1^[], 2^[], 2^[]))]   (8)  substitution:[[_G11964, _G12129], [1^[], 2^[]]]
+1.1.1  [-l2_robbins1(1^[])]   (5)  
+1.1.2  [-m1_subset_1(2^[], u1_struct_0(1^[]))]   (6)  
+1.1.3  [k12_robbins1(1^[], 2^[])=k1_lattices(1^[], 2^[], 2^[]), - (k12_robbins1(1^[], 2^[])=k5_robbins1(1^[], 2^[], 2^[])), k1_lattices(1^[], 2^[], 2^[])=k5_robbins1(1^[], 2^[], 2^[])]   (20)  substitution:[[_G4737, _G4793, _G4850], [k12_robbins1(1^[], 2^[]), k1_lattices(1^[], 2^[], 2^[]), k5_robbins1(1^[], 2^[], 2^[])]]
+1.1.3.1  [k12_robbins1(1^[], 2^[])=k5_robbins1(1^[], 2^[], 2^[]), - (k9_robbins1(1^[], k12_robbins1(1^[], 2^[]), k11_robbins1(1^[], 2^[]))=k9_robbins1(1^[], k5_robbins1(1^[], 2^[], 2^[]), k9_robbins1(1^[], 2^[], 2^[]))), 1^[]=1^[], k11_robbins1(1^[], 2^[])=k9_robbins1(1^[], 2^[], 2^[])]   (15)  substitution:[[_G9796, _G9883, _G9625, _G9971, _G9710, _G10060], [k12_robbins1(1^[], 2^[]), k5_robbins1(1^[], 2^[], 2^[]), 1^[], k11_robbins1(1^[], 2^[]), 1^[], k9_robbins1(1^[], 2^[], 2^[])]]
+1.1.3.1.1  [k9_robbins1(1^[], k12_robbins1(1^[], 2^[]), k11_robbins1(1^[], 2^[]))=k9_robbins1(1^[], k5_robbins1(1^[], 2^[], 2^[]), k9_robbins1(1^[], 2^[], 2^[])), - (k9_robbins1(1^[], k12_robbins1(1^[], 2^[]), k11_robbins1(1^[], 2^[]))=2^[]), k9_robbins1(1^[], k5_robbins1(1^[], 2^[], 2^[]), k9_robbins1(1^[], 2^[], 2^[]))=2^[]]   (20)  substitution:[[_G4737, _G4793, _G4850], [k9_robbins1(1^[], k12_robbins1(1^[], 2^[]), k11_robbins1(1^[], 2^[])), k9_robbins1(1^[], k5_robbins1(1^[], 2^[], 2^[]), k9_robbins1(1^[], 2^[], 2^[])), 2^[]]]
+1.1.3.1.1.1  [k9_robbins1(1^[], k12_robbins1(1^[], 2^[]), k11_robbins1(1^[], 2^[]))=2^[]]   (7)  
+1.1.3.1.1.2  [- (k9_robbins1(1^[], k5_robbins1(1^[], 2^[], 2^[]), k9_robbins1(1^[], 2^[], 2^[]))=2^[]), m1_subset_1(2^[], u1_struct_0(1^[])), m1_subset_1(2^[], u1_struct_0(1^[])), -v2_struct_0(1^[]), v4_lattices(1^[]), v5_lattices(1^[]), v5_robbins1(1^[]), l2_robbins1(1^[])]   (11)  substitution:[[_G13351, _G13708, _G13852], [1^[], 2^[], 2^[]]]
+1.1.3.1.1.2.1  [-m1_subset_1(2^[], u1_struct_0(1^[]))]   (6)  
+1.1.3.1.1.2.2  [-m1_subset_1(2^[], u1_struct_0(1^[]))]   (6)  
+1.1.3.1.1.2.3  [v2_struct_0(1^[])]   (1)  
+1.1.3.1.1.2.4  [-v4_lattices(1^[])]   (2)  
+1.1.3.1.1.2.5  [-v5_lattices(1^[])]   (3)  
+1.1.3.1.1.2.6  [-v5_robbins1(1^[])]   (4)  
+1.1.3.1.1.2.7  [-l2_robbins1(1^[])]   (5)  
+1.1.3.1.2  [- (1^[]=1^[])]   (18)  substitution:[[_G4405], [1^[]]]
+1.1.3.1.3  [- (k11_robbins1(1^[], 2^[])=k9_robbins1(1^[], 2^[], 2^[])), k9_robbins1(1^[], 2^[], 2^[])=k11_robbins1(1^[], 2^[])]   (19)  substitution:[[_G4549, _G4504], [k11_robbins1(1^[], 2^[]), k9_robbins1(1^[], 2^[], 2^[])]]
+1.1.3.1.3.1  [- (k9_robbins1(1^[], 2^[], 2^[])=k11_robbins1(1^[], 2^[])), m1_subset_1(2^[], u1_struct_0(1^[])), -v2_struct_0(1^[]), v4_lattices(1^[]), v5_lattices(1^[]), v5_robbins1(1^[]), l2_robbins1(1^[])]   (10)  substitution:[[_G14370, _G14709], [1^[], 2^[]]]
+1.1.3.1.3.1.1  [-m1_subset_1(2^[], u1_struct_0(1^[]))]   (6)  
+1.1.3.1.3.1.2  [v2_struct_0(1^[])]   (1)  
+1.1.3.1.3.1.3  [-v4_lattices(1^[])]   (2)  
+1.1.3.1.3.1.4  [-v5_lattices(1^[])]   (3)  
+1.1.3.1.3.1.5  [-v5_robbins1(1^[])]   (4)  
+1.1.3.1.3.1.6  [-l2_robbins1(1^[])]   (5)  
+1.1.3.2  [- (k1_lattices(1^[], 2^[], 2^[])=k5_robbins1(1^[], 2^[], 2^[])), k5_robbins1(1^[], 2^[], 2^[])=k1_lattices(1^[], 2^[], 2^[])]   (19)  substitution:[[_G4549, _G4504], [k1_lattices(1^[], 2^[], 2^[]), k5_robbins1(1^[], 2^[], 2^[])]]
+1.1.3.2.1  [- (k5_robbins1(1^[], 2^[], 2^[])=k1_lattices(1^[], 2^[], 2^[])), m1_subset_1(2^[], u1_struct_0(1^[])), m1_subset_1(2^[], u1_struct_0(1^[])), -v2_struct_0(1^[]), v4_lattices(1^[]), l2_robbins1(1^[])]   (9)  substitution:[[_G12491, _G12576, _G12662], [1^[], 2^[], 2^[]]]
+1.1.3.2.1.1  [-m1_subset_1(2^[], u1_struct_0(1^[]))]   (6)  
+1.1.3.2.1.2  [-m1_subset_1(2^[], u1_struct_0(1^[]))]   (6)  
+1.1.3.2.1.3  [v2_struct_0(1^[])]   (1)  
+1.1.3.2.1.4  [-v4_lattices(1^[])]   (2)  
+1.1.3.2.1.5  [-l2_robbins1(1^[])]   (5)  
+------------------------------------------------------
+End of proof for t40_robbins1

@@ -1,0 +1,40 @@
+
+t2_waybel_4 is a Theorem
+Start of proof for t2_waybel_4
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v3_orders_2(3^[])]
+ (2)  [-v4_orders_2(3^[])]
+ (3)  [-v5_orders_2(3^[])]
+ (4)  [-v1_yellow_0(3^[])]
+ (5)  [-v1_lattice3(3^[])]
+ (6)  [-l1_orders_2(3^[])]
+ (7)  [-v1_waybel_4(4^[], 3^[])]
+ (8)  [-m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(3^[]), u1_struct_0(3^[]))))]
+ (9)  [r1_relset_1(u1_struct_0(3^[]), u1_struct_0(3^[]), 4^[], k2_waybel_4(3^[]))]
+ (10)  [-r2_hidden(k4_tarski(_G3235, _G3300), k2_waybel_4(_G2523)), r2_hidden(k4_tarski(_G3235, _G3300), _G2934), v1_waybel_4(_G2934, _G2523), m1_subset_1(_G2934, k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(_G2523), u1_struct_0(_G2523)))), v3_orders_2(_G2523), v4_orders_2(_G2523), v5_orders_2(_G2523), v1_yellow_0(_G2523), v1_lattice3(_G2523), l1_orders_2(_G2523)]
+ (11)  [m1_subset_1(_G1453, k1_zfmisc_1(k2_zfmisc_1(_G1248, _G1350))), -r1_relset_1(_G1248, _G1350, _G1453, _G1667), -m1_subset_1(1^[_G1667, _G1453, _G1350, _G1248], _G1248)]
+ (12)  [m1_subset_1(_G1453, k1_zfmisc_1(k2_zfmisc_1(_G1248, _G1350))), -r1_relset_1(_G1248, _G1350, _G1453, _G1667), -m1_subset_1(2^[_G1667, _G1453, _G1350, _G1248], _G1350)]
+ (13)  [m1_subset_1(_G1453, k1_zfmisc_1(k2_zfmisc_1(_G1248, _G1350))), -r1_relset_1(_G1248, _G1350, _G1453, _G1667), -r2_hidden(k4_tarski(1^[_G1667, _G1453, _G1350, _G1248], 2^[_G1667, _G1453, _G1350, _G1248]), _G1453)]
+ (14)  [m1_subset_1(_G1453, k1_zfmisc_1(k2_zfmisc_1(_G1248, _G1350))), -r1_relset_1(_G1248, _G1350, _G1453, _G1667), r2_hidden(k4_tarski(1^[_G1667, _G1453, _G1350, _G1248], 2^[_G1667, _G1453, _G1350, _G1248]), _G1667)]
+ (15)  [m1_subset_1(_G1453, k1_zfmisc_1(k2_zfmisc_1(_G1248, _G1350))), r1_relset_1(_G1248, _G1350, _G1453, _G1667), m1_subset_1(_G1904, _G1248), m1_subset_1(_G2048, _G1350), r2_hidden(k4_tarski(_G1904, _G2048), _G1453), -r2_hidden(k4_tarski(_G1904, _G2048), _G1667)]
+
+Connection Proof:
+-----------------
+1  [r1_relset_1(u1_struct_0(3^[]), u1_struct_0(3^[]), 4^[], k2_waybel_4(3^[]))]   (9)  
+1.1  [-r1_relset_1(u1_struct_0(3^[]), u1_struct_0(3^[]), 4^[], k2_waybel_4(3^[])), m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(3^[]), u1_struct_0(3^[])))), -r2_hidden(k4_tarski(1^[k2_waybel_4(3^[]), 4^[], u1_struct_0(3^[]), u1_struct_0(3^[])], 2^[k2_waybel_4(3^[]), 4^[], u1_struct_0(3^[]), u1_struct_0(3^[])]), 4^[])]   (13)  substitution:[[_G1248, _G1350, _G1453, _G1667], [u1_struct_0(3^[]), u1_struct_0(3^[]), 4^[], k2_waybel_4(3^[])]]
+1.1.1  [-m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(3^[]), u1_struct_0(3^[]))))]   (8)  
+1.1.2  [r2_hidden(k4_tarski(1^[k2_waybel_4(3^[]), 4^[], u1_struct_0(3^[]), u1_struct_0(3^[])], 2^[k2_waybel_4(3^[]), 4^[], u1_struct_0(3^[]), u1_struct_0(3^[])]), 4^[]), -r2_hidden(k4_tarski(1^[k2_waybel_4(3^[]), 4^[], u1_struct_0(3^[]), u1_struct_0(3^[])], 2^[k2_waybel_4(3^[]), 4^[], u1_struct_0(3^[]), u1_struct_0(3^[])]), k2_waybel_4(3^[])), v1_waybel_4(4^[], 3^[]), m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(3^[]), u1_struct_0(3^[])))), v3_orders_2(3^[]), v4_orders_2(3^[]), v5_orders_2(3^[]), v1_yellow_0(3^[]), v1_lattice3(3^[]), l1_orders_2(3^[])]   (10)  substitution:[[_G3235, _G3300, _G2934, _G2523], [1^[k2_waybel_4(3^[]), 4^[], u1_struct_0(3^[]), u1_struct_0(3^[])], 2^[k2_waybel_4(3^[]), 4^[], u1_struct_0(3^[]), u1_struct_0(3^[])], 4^[], 3^[]]]
+1.1.2.1  [r2_hidden(k4_tarski(1^[k2_waybel_4(3^[]), 4^[], u1_struct_0(3^[]), u1_struct_0(3^[])], 2^[k2_waybel_4(3^[]), 4^[], u1_struct_0(3^[]), u1_struct_0(3^[])]), k2_waybel_4(3^[])), m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(3^[]), u1_struct_0(3^[])))), -r1_relset_1(u1_struct_0(3^[]), u1_struct_0(3^[]), 4^[], k2_waybel_4(3^[]))]   (14)  substitution:[[_G1667, _G1453, _G1350, _G1248], [k2_waybel_4(3^[]), 4^[], u1_struct_0(3^[]), u1_struct_0(3^[])]]
+1.1.2.1.1  [-m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(3^[]), u1_struct_0(3^[]))))]   (8)  
+1.1.2.1.2  [r1_relset_1(u1_struct_0(3^[]), u1_struct_0(3^[]), 4^[], k2_waybel_4(3^[]))]   (9)  
+1.1.2.2  [-v1_waybel_4(4^[], 3^[])]   (7)  
+1.1.2.3  [-m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(3^[]), u1_struct_0(3^[]))))]   (8)  
+1.1.2.4  [-v3_orders_2(3^[])]   (1)  
+1.1.2.5  [-v4_orders_2(3^[])]   (2)  
+1.1.2.6  [-v5_orders_2(3^[])]   (3)  
+1.1.2.7  [-v1_yellow_0(3^[])]   (4)  
+1.1.2.8  [-v1_lattice3(3^[])]   (5)  
+1.1.2.9  [-l1_orders_2(3^[])]   (6)  
+------------------------------------------------------
+End of proof for t2_waybel_4

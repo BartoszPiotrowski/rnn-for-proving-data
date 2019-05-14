@@ -1,0 +1,69 @@
+
+l102_finseq_1 is a Theorem
+Start of proof for l102_finseq_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [r2_hidden(np__3, k2_finseq_1(np__8)), r2_hidden(np__4, k2_finseq_1(np__8))]
+ (2)  [m1_subset_1(_G7917, k4_ordinal1), -v7_ordinal1(_G7917)]
+ (3)  [-r1_tarski(_G8074, _G8130), -r2_hidden(1^[_G8130, _G8074], _G8074)]
+ (4)  [-r1_tarski(_G8074, _G8130), r2_hidden(1^[_G8130, _G8074], _G8130)]
+ (5)  [r1_tarski(_G8074, _G8130), r2_hidden(_G8244, _G8074), -r2_hidden(_G8244, _G8130)]
+ (6)  [-r2_hidden(np__3, k2_finseq_1(np__4))]
+ (7)  [-r2_hidden(np__4, k2_finseq_1(np__4))]
+ (8)  [- (k5_numbers=k4_ordinal1)]
+ (9)  [-r1_xxreal_0(np__4, np__8)]
+ (10)  [-v2_xxreal_0(np__4)]
+ (11)  [-m2_subset_1(np__4, k1_numbers, k5_numbers)]
+ (12)  [-m1_subset_1(np__4, k5_numbers)]
+ (13)  [-m1_subset_1(np__4, k1_numbers)]
+ (14)  [-v2_xxreal_0(np__8)]
+ (15)  [-m2_subset_1(np__8, k1_numbers, k5_numbers)]
+ (16)  [-m1_subset_1(np__8, k5_numbers)]
+ (17)  [-m1_subset_1(np__8, k1_numbers)]
+ (18)  [v7_ordinal1(_G9362), v7_ordinal1(_G9453), r1_xxreal_0(_G9362, _G9453), -r1_tarski(k2_finseq_1(_G9362), k2_finseq_1(_G9453))]
+ (19)  [v7_ordinal1(_G9362), v7_ordinal1(_G9453), -r1_xxreal_0(_G9362, _G9453), r1_tarski(k2_finseq_1(_G9362), k2_finseq_1(_G9453))]
+ (20)  [_G7618=_G7667, - (k2_finseq_1(_G7618)=k2_finseq_1(_G7667))]
+ (21)  [- (_G2735=_G2735)]
+ (22)  [_G2834=_G2879, - (_G2879=_G2834)]
+ (23)  [- (_G3067=_G3180), _G3067=_G3123, _G3123=_G3180]
+ (24)  [-v2_xxreal_0(_G3566), _G3517=_G3566, v2_xxreal_0(_G3517)]
+ (25)  [-m2_subset_1(_G3880, _G4053, _G4230), m2_subset_1(_G3795, _G3966, _G4141), _G3795=_G3880, _G3966=_G4053, _G4141=_G4230]
+ (26)  [-m1_subset_1(_G4890, _G5027), m1_subset_1(_G4823, _G4958), _G4823=_G4890, _G4958=_G5027]
+ (27)  [-v7_ordinal1(_G5469), _G5420=_G5469, v7_ordinal1(_G5420)]
+ (28)  [-r1_xxreal_0(_G5765, _G5902), r1_xxreal_0(_G5698, _G5833), _G5698=_G5765, _G5833=_G5902]
+ (29)  [-r1_tarski(_G6362, _G6499), r1_tarski(_G6295, _G6430), _G6295=_G6362, _G6430=_G6499]
+ (30)  [-r2_hidden(_G6950, _G7087), r2_hidden(_G6883, _G7018), _G6883=_G6950, _G7018=_G7087]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(np__3, k2_finseq_1(np__8)), r2_hidden(np__4, k2_finseq_1(np__8))]   (1)  
+1.1  [-r2_hidden(np__3, k2_finseq_1(np__8)), r1_tarski(k2_finseq_1(np__4), k2_finseq_1(np__8)), r2_hidden(np__3, k2_finseq_1(np__4))]   (5)  substitution:[[_G8244, _G8130, _G8074], [np__3, k2_finseq_1(np__8), k2_finseq_1(np__4)]]
+1.1.1  [-r1_tarski(k2_finseq_1(np__4), k2_finseq_1(np__8)), v7_ordinal1(np__4), v7_ordinal1(np__8), r1_xxreal_0(np__4, np__8)]   (18)  substitution:[[_G9362, _G9453], [np__4, np__8]]
+1.1.1.1  [-v7_ordinal1(np__4), m1_subset_1(np__4, k4_ordinal1)]   (2)  substitution:[[_G7917], [np__4]]
+1.1.1.1.1  [-m1_subset_1(np__4, k4_ordinal1), m1_subset_1(np__4, k5_numbers), np__4=np__4, k5_numbers=k4_ordinal1]   (26)  substitution:[[_G4890, _G5027, _G4823, _G4958], [np__4, k4_ordinal1, np__4, k5_numbers]]
+1.1.1.1.1.1  [-m1_subset_1(np__4, k5_numbers)]   (12)  
+1.1.1.1.1.2  [- (np__4=np__4)]   (21)  substitution:[[_G2735], [np__4]]
+1.1.1.1.1.3  [- (k5_numbers=k4_ordinal1)]   (8)  
+1.1.1.2  [-v7_ordinal1(np__8), m1_subset_1(np__8, k4_ordinal1)]   (2)  substitution:[[_G7917], [np__8]]
+1.1.1.2.1  [-m1_subset_1(np__8, k4_ordinal1), m1_subset_1(np__8, k5_numbers), np__8=np__8, k5_numbers=k4_ordinal1]   (26)  substitution:[[_G4890, _G5027, _G4823, _G4958], [np__8, k4_ordinal1, np__8, k5_numbers]]
+1.1.1.2.1.1  [-m1_subset_1(np__8, k5_numbers)]   (16)  
+1.1.1.2.1.2  [- (np__8=np__8)]   (21)  substitution:[[_G2735], [np__8]]
+1.1.1.2.1.3  [- (k5_numbers=k4_ordinal1)]   (8)  
+1.1.1.3  [-r1_xxreal_0(np__4, np__8)]   (9)  
+1.1.2  [-r2_hidden(np__3, k2_finseq_1(np__4))]   (6)  
+1.2  [-r2_hidden(np__4, k2_finseq_1(np__8)), r1_tarski(k2_finseq_1(np__4), k2_finseq_1(np__8)), r2_hidden(np__4, k2_finseq_1(np__4))]   (5)  substitution:[[_G8244, _G8130, _G8074], [np__4, k2_finseq_1(np__8), k2_finseq_1(np__4)]]
+1.2.1  [-r1_tarski(k2_finseq_1(np__4), k2_finseq_1(np__8)), v7_ordinal1(np__4), v7_ordinal1(np__8), r1_xxreal_0(np__4, np__8)]   (18)  substitution:[[_G9362, _G9453], [np__4, np__8]]
+1.2.1.1  [-v7_ordinal1(np__4), m1_subset_1(np__4, k4_ordinal1)]   (2)  substitution:[[_G7917], [np__4]]
+1.2.1.1.1  [-m1_subset_1(np__4, k4_ordinal1), m1_subset_1(np__4, k5_numbers), np__4=np__4, k5_numbers=k4_ordinal1]   (26)  substitution:[[_G4890, _G5027, _G4823, _G4958], [np__4, k4_ordinal1, np__4, k5_numbers]]
+1.2.1.1.1.1  [-m1_subset_1(np__4, k5_numbers)]   (12)  
+1.2.1.1.1.2  [- (np__4=np__4)]   (21)  substitution:[[_G2735], [np__4]]
+1.2.1.1.1.3  [- (k5_numbers=k4_ordinal1)]   (8)  
+1.2.1.2  [-v7_ordinal1(np__8), m1_subset_1(np__8, k4_ordinal1)]   (2)  substitution:[[_G7917], [np__8]]
+1.2.1.2.1  [-m1_subset_1(np__8, k4_ordinal1), m1_subset_1(np__8, k5_numbers), np__8=np__8, k5_numbers=k4_ordinal1]   (26)  substitution:[[_G4890, _G5027, _G4823, _G4958], [np__8, k4_ordinal1, np__8, k5_numbers]]
+1.2.1.2.1.1  [-m1_subset_1(np__8, k5_numbers)]   (16)  
+1.2.1.2.1.2  [- (np__8=np__8)]   (21)  substitution:[[_G2735], [np__8]]
+1.2.1.2.1.3  [- (k5_numbers=k4_ordinal1)]   (8)  
+1.2.1.3  [-r1_xxreal_0(np__4, np__8)]   (9)  
+1.2.2  [-r2_hidden(np__4, k2_finseq_1(np__4))]   (7)  
+------------------------------------------------------
+End of proof for l102_finseq_1

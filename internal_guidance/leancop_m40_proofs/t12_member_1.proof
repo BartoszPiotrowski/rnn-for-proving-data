@@ -1,0 +1,55 @@
+
+t12_member_1 is a Theorem
+Start of proof for t12_member_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-4^[], r2_hidden(k1_binop_2(2^[]), 1^[])]
+ (2)  [-4^[], -r2_hidden(2^[], k5_member_1(1^[]))]
+ (3)  [-3^[], r2_hidden(2^[], k5_member_1(1^[]))]
+ (4)  [-3^[], -r2_hidden(k1_binop_2(2^[]), 1^[])]
+ (5)  [-v1_membered(1^[])]
+ (6)  [-v1_xcmplx_0(2^[])]
+ (7)  [3^[], 4^[]]
+ (8)  [v1_membered(_G4418), -v1_membered(k5_member_1(_G4418))]
+ (9)  [v1_membered(_G4565), - (k5_member_1(k5_member_1(_G4565))=_G4565)]
+ (10)  [v1_membered(_G4745), v1_xcmplx_0(_G4836), r2_hidden(_G4836, _G4745), -r2_hidden(k1_binop_2(_G4836), k5_member_1(_G4745))]
+ (11)  [v1_membered(_G4745), v1_xcmplx_0(_G4836), -r2_hidden(_G4836, _G4745), r2_hidden(k1_binop_2(_G4836), k5_member_1(_G4745))]
+ (12)  [_G3829=_G3878, - (k1_binop_2(_G3829)=k1_binop_2(_G3878))]
+ (13)  [_G4098=_G4147, - (k5_member_1(_G4098)=k5_member_1(_G4147))]
+ (14)  [- (_G1840=_G1840)]
+ (15)  [_G1939=_G1984, - (_G1984=_G1939)]
+ (16)  [- (_G2172=_G2285), _G2172=_G2228, _G2228=_G2285]
+ (17)  [-v1_membered(_G2671), _G2622=_G2671, v1_membered(_G2622)]
+ (18)  [-v1_xcmplx_0(_G2949), _G2900=_G2949, v1_xcmplx_0(_G2900)]
+ (19)  [-r2_hidden(_G3236, _G3373), r2_hidden(_G3169, _G3304), _G3169=_G3236, _G3304=_G3373]
+
+Connection Proof:
+-----------------
+1  [3^[], 4^[]]   (7)  
+1.1  [-3^[], r2_hidden(2^[], k5_member_1(1^[]))]   (3)  
+1.1.1  [-r2_hidden(2^[], k5_member_1(1^[])), v1_membered(k5_member_1(1^[])), v1_xcmplx_0(2^[]), r2_hidden(k1_binop_2(2^[]), k5_member_1(k5_member_1(1^[])))]   (11)  substitution:[[_G4836, _G4745], [2^[], k5_member_1(1^[])]]
+1.1.1.1  [-v1_membered(k5_member_1(1^[])), v1_membered(1^[])]   (8)  substitution:[[_G4418], [1^[]]]
+1.1.1.1.1  [-v1_membered(1^[])]   (5)  
+1.1.1.2  [-v1_xcmplx_0(2^[])]   (6)  
+1.1.1.3  [-r2_hidden(k1_binop_2(2^[]), k5_member_1(k5_member_1(1^[]))), r2_hidden(k1_binop_2(2^[]), 1^[]), k1_binop_2(2^[])=k1_binop_2(2^[]), 1^[]=k5_member_1(k5_member_1(1^[]))]   (19)  substitution:[[_G3236, _G3373, _G3169, _G3304], [k1_binop_2(2^[]), k5_member_1(k5_member_1(1^[])), k1_binop_2(2^[]), 1^[]]]
+1.1.1.3.1  [-r2_hidden(k1_binop_2(2^[]), 1^[]), -3^[]]   (4)  
+1.1.1.3.1.1  [3^[]]   (reduction:1)  
+1.1.1.3.2  [- (k1_binop_2(2^[])=k1_binop_2(2^[])), 2^[]=2^[]]   (12)  substitution:[[_G3829, _G3878], [2^[], 2^[]]]
+1.1.1.3.2.1  [- (2^[]=2^[])]   (14)  substitution:[[_G1840], [2^[]]]
+1.1.1.3.3  [- (1^[]=k5_member_1(k5_member_1(1^[]))), k5_member_1(k5_member_1(1^[]))=1^[]]   (15)  substitution:[[_G1984, _G1939], [1^[], k5_member_1(k5_member_1(1^[]))]]
+1.1.1.3.3.1  [- (k5_member_1(k5_member_1(1^[]))=1^[]), v1_membered(1^[])]   (9)  substitution:[[_G4565], [1^[]]]
+1.1.1.3.3.1.1  [-v1_membered(1^[])]   (5)  
+1.2  [-4^[], -r2_hidden(2^[], k5_member_1(1^[]))]   (2)  
+1.2.1  [r2_hidden(2^[], k5_member_1(1^[])), v1_membered(k5_member_1(1^[])), v1_xcmplx_0(2^[]), -r2_hidden(k1_binop_2(2^[]), k5_member_1(k5_member_1(1^[])))]   (10)  substitution:[[_G4836, _G4745], [2^[], k5_member_1(1^[])]]
+1.2.1.1  [-v1_membered(k5_member_1(1^[])), v1_membered(1^[])]   (8)  substitution:[[_G4418], [1^[]]]
+1.2.1.1.1  [-v1_membered(1^[])]   (5)  
+1.2.1.2  [-v1_xcmplx_0(2^[])]   (6)  
+1.2.1.3  [r2_hidden(k1_binop_2(2^[]), k5_member_1(k5_member_1(1^[]))), -r2_hidden(k1_binop_2(2^[]), 1^[]), k1_binop_2(2^[])=k1_binop_2(2^[]), k5_member_1(k5_member_1(1^[]))=1^[]]   (19)  substitution:[[_G3169, _G3304, _G3236, _G3373], [k1_binop_2(2^[]), k5_member_1(k5_member_1(1^[])), k1_binop_2(2^[]), 1^[]]]
+1.2.1.3.1  [r2_hidden(k1_binop_2(2^[]), 1^[]), -4^[]]   (1)  
+1.2.1.3.1.1  [4^[]]   (reduction:1)  
+1.2.1.3.2  [- (k1_binop_2(2^[])=k1_binop_2(2^[])), 2^[]=2^[]]   (12)  substitution:[[_G3829, _G3878], [2^[], 2^[]]]
+1.2.1.3.2.1  [- (2^[]=2^[])]   (14)  substitution:[[_G1840], [2^[]]]
+1.2.1.3.3  [- (k5_member_1(k5_member_1(1^[]))=1^[]), v1_membered(1^[])]   (9)  substitution:[[_G4565], [1^[]]]
+1.2.1.3.3.1  [-v1_membered(1^[])]   (5)  
+------------------------------------------------------
+End of proof for t12_member_1

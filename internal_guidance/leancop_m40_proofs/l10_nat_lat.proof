@@ -1,0 +1,78 @@
+
+l10_nat_lat is a Theorem
+Start of proof for l10_nat_lat
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], u1_struct_0(k3_nat_lat))]
+ (2)  [k2_lattices(k3_nat_lat, k4_nat_lat, 1^[])=k4_nat_lat, k2_lattices(k3_nat_lat, 1^[], k4_nat_lat)=k4_nat_lat]
+ (3)  [v6_membered(_G8369), m1_subset_1(_G8450, _G8369), -v7_ordinal1(_G8450)]
+ (4)  [- (k6_nat_d(_G8642, _G8697)=k6_nat_d(_G8697, _G8642)), v7_ordinal1(_G8642), v7_ordinal1(_G8697)]
+ (5)  [- (k4_nat_lat=np__1)]
+ (6)  [-m1_subset_1(k4_nat_lat, u1_struct_0(k3_nat_lat))]
+ (7)  [-v6_membered(u1_struct_0(k3_nat_lat))]
+ (8)  [-v6_membered(k4_ordinal1)]
+ (9)  [- (k5_numbers=k4_ordinal1)]
+ (10)  [-v2_xxreal_0(np__1)]
+ (11)  [-m2_subset_1(np__1, k1_numbers, k5_numbers)]
+ (12)  [-m1_subset_1(np__1, k5_numbers)]
+ (13)  [-m1_subset_1(np__1, k1_numbers)]
+ (14)  [v7_ordinal1(_G10068), - (k6_nat_d(_G10068, np__1)=np__1)]
+ (15)  [- (k2_lattices(k3_nat_lat, _G9216, _G9274)=k6_nat_d(_G9216, _G9274)), m1_subset_1(_G9216, u1_struct_0(k3_nat_lat)), m1_subset_1(_G9274, u1_struct_0(k3_nat_lat))]
+ (16)  [- (k6_nat_d(_G6412, _G6547)=k6_nat_d(_G6479, _G6616)), _G6412=_G6479, _G6547=_G6616]
+ (17)  [_G7009=_G7058, - (u1_struct_0(_G7009)=u1_struct_0(_G7058))]
+ (18)  [- (k2_lattices(_G7278, _G7449, _G7624)=k2_lattices(_G7363, _G7536, _G7713)), _G7278=_G7363, _G7449=_G7536, _G7624=_G7713]
+ (19)  [- (_G3075=_G3075)]
+ (20)  [_G3174=_G3219, - (_G3219=_G3174)]
+ (21)  [- (_G3407=_G3520), _G3407=_G3463, _G3463=_G3520]
+ (22)  [-v6_membered(_G3906), _G3857=_G3906, v6_membered(_G3857)]
+ (23)  [-v2_xxreal_0(_G4184), _G4135=_G4184, v2_xxreal_0(_G4135)]
+ (24)  [-m2_subset_1(_G4498, _G4671, _G4848), m2_subset_1(_G4413, _G4584, _G4759), _G4413=_G4498, _G4584=_G4671, _G4759=_G4848]
+ (25)  [-v7_ordinal1(_G5490), _G5441=_G5490, v7_ordinal1(_G5441)]
+ (26)  [-m1_subset_1(_G5777, _G5914), m1_subset_1(_G5710, _G5845), _G5710=_G5777, _G5845=_G5914]
+
+Connection Proof:
+-----------------
+1  [k2_lattices(k3_nat_lat, k4_nat_lat, 1^[])=k4_nat_lat, k2_lattices(k3_nat_lat, 1^[], k4_nat_lat)=k4_nat_lat]   (2)  
+1.1  [- (k2_lattices(k3_nat_lat, k4_nat_lat, 1^[])=k4_nat_lat), k2_lattices(k3_nat_lat, k4_nat_lat, 1^[])=k6_nat_d(k4_nat_lat, 1^[]), k6_nat_d(k4_nat_lat, 1^[])=k4_nat_lat]   (21)  substitution:[[_G3407, _G3520, _G3463], [k2_lattices(k3_nat_lat, k4_nat_lat, 1^[]), k4_nat_lat, k6_nat_d(k4_nat_lat, 1^[])]]
+1.1.1  [- (k2_lattices(k3_nat_lat, k4_nat_lat, 1^[])=k6_nat_d(k4_nat_lat, 1^[])), m1_subset_1(k4_nat_lat, u1_struct_0(k3_nat_lat)), m1_subset_1(1^[], u1_struct_0(k3_nat_lat))]   (15)  substitution:[[_G9216, _G9274], [k4_nat_lat, 1^[]]]
+1.1.1.1  [-m1_subset_1(k4_nat_lat, u1_struct_0(k3_nat_lat))]   (6)  
+1.1.1.2  [-m1_subset_1(1^[], u1_struct_0(k3_nat_lat))]   (1)  
+1.1.2  [- (k6_nat_d(k4_nat_lat, 1^[])=k4_nat_lat), k6_nat_d(k4_nat_lat, 1^[])=k6_nat_d(1^[], np__1), k6_nat_d(1^[], np__1)=k4_nat_lat]   (21)  substitution:[[_G3407, _G3520, _G3463], [k6_nat_d(k4_nat_lat, 1^[]), k4_nat_lat, k6_nat_d(1^[], np__1)]]
+1.1.2.1  [- (k6_nat_d(k4_nat_lat, 1^[])=k6_nat_d(1^[], np__1)), k6_nat_d(k4_nat_lat, 1^[])=k6_nat_d(1^[], k4_nat_lat), k6_nat_d(1^[], k4_nat_lat)=k6_nat_d(1^[], np__1)]   (21)  substitution:[[_G3407, _G3520, _G3463], [k6_nat_d(k4_nat_lat, 1^[]), k6_nat_d(1^[], np__1), k6_nat_d(1^[], k4_nat_lat)]]
+1.1.2.1.1  [- (k6_nat_d(k4_nat_lat, 1^[])=k6_nat_d(1^[], k4_nat_lat)), v7_ordinal1(k4_nat_lat), v7_ordinal1(1^[])]   (4)  substitution:[[_G8642, _G8697], [k4_nat_lat, 1^[]]]
+1.1.2.1.1.1  [-v7_ordinal1(k4_nat_lat), v6_membered(u1_struct_0(k3_nat_lat)), m1_subset_1(k4_nat_lat, u1_struct_0(k3_nat_lat))]   (3)  substitution:[[_G8450, _G8369], [k4_nat_lat, u1_struct_0(k3_nat_lat)]]
+1.1.2.1.1.1.1  [-v6_membered(u1_struct_0(k3_nat_lat))]   (7)  
+1.1.2.1.1.1.2  [-m1_subset_1(k4_nat_lat, u1_struct_0(k3_nat_lat))]   (6)  
+1.1.2.1.1.2  [-v7_ordinal1(1^[]), v6_membered(u1_struct_0(k3_nat_lat)), m1_subset_1(1^[], u1_struct_0(k3_nat_lat))]   (3)  substitution:[[_G8450, _G8369], [1^[], u1_struct_0(k3_nat_lat)]]
+1.1.2.1.1.2.1  [-v6_membered(u1_struct_0(k3_nat_lat))]   (7)  
+1.1.2.1.1.2.2  [-m1_subset_1(1^[], u1_struct_0(k3_nat_lat))]   (1)  
+1.1.2.1.2  [- (k6_nat_d(1^[], k4_nat_lat)=k6_nat_d(1^[], np__1)), 1^[]=1^[], k4_nat_lat=np__1]   (16)  substitution:[[_G6412, _G6547, _G6479, _G6616], [1^[], k4_nat_lat, 1^[], np__1]]
+1.1.2.1.2.1  [- (1^[]=1^[])]   (19)  substitution:[[_G3075], [1^[]]]
+1.1.2.1.2.2  [- (k4_nat_lat=np__1)]   (5)  
+1.1.2.2  [- (k6_nat_d(1^[], np__1)=k4_nat_lat), k6_nat_d(1^[], np__1)=np__1, np__1=k4_nat_lat]   (21)  substitution:[[_G3407, _G3520, _G3463], [k6_nat_d(1^[], np__1), k4_nat_lat, np__1]]
+1.1.2.2.1  [- (k6_nat_d(1^[], np__1)=np__1), v7_ordinal1(1^[])]   (14)  substitution:[[_G10068], [1^[]]]
+1.1.2.2.1.1  [-v7_ordinal1(1^[]), v6_membered(u1_struct_0(k3_nat_lat)), m1_subset_1(1^[], u1_struct_0(k3_nat_lat))]   (3)  substitution:[[_G8450, _G8369], [1^[], u1_struct_0(k3_nat_lat)]]
+1.1.2.2.1.1.1  [-v6_membered(u1_struct_0(k3_nat_lat))]   (7)  
+1.1.2.2.1.1.2  [-m1_subset_1(1^[], u1_struct_0(k3_nat_lat))]   (1)  
+1.1.2.2.2  [- (np__1=k4_nat_lat), k4_nat_lat=np__1]   (20)  substitution:[[_G3219, _G3174], [np__1, k4_nat_lat]]
+1.1.2.2.2.1  [- (k4_nat_lat=np__1)]   (5)  
+1.2  [- (k2_lattices(k3_nat_lat, 1^[], k4_nat_lat)=k4_nat_lat), k2_lattices(k3_nat_lat, 1^[], k4_nat_lat)=k6_nat_d(1^[], k4_nat_lat), k6_nat_d(1^[], k4_nat_lat)=k4_nat_lat]   (21)  substitution:[[_G3407, _G3520, _G3463], [k2_lattices(k3_nat_lat, 1^[], k4_nat_lat), k4_nat_lat, k6_nat_d(1^[], k4_nat_lat)]]
+1.2.1  [- (k2_lattices(k3_nat_lat, 1^[], k4_nat_lat)=k6_nat_d(1^[], k4_nat_lat)), m1_subset_1(1^[], u1_struct_0(k3_nat_lat)), m1_subset_1(k4_nat_lat, u1_struct_0(k3_nat_lat))]   (15)  substitution:[[_G9216, _G9274], [1^[], k4_nat_lat]]
+1.2.1.1  [-m1_subset_1(1^[], u1_struct_0(k3_nat_lat))]   (1)  
+1.2.1.2  [-m1_subset_1(k4_nat_lat, u1_struct_0(k3_nat_lat))]   (6)  
+1.2.2  [- (k6_nat_d(1^[], k4_nat_lat)=k4_nat_lat), k6_nat_d(1^[], k4_nat_lat)=k6_nat_d(k4_nat_lat, 1^[]), k6_nat_d(k4_nat_lat, 1^[])=k4_nat_lat]   (21)  substitution:[[_G3407, _G3520, _G3463], [k6_nat_d(1^[], k4_nat_lat), k4_nat_lat, k6_nat_d(k4_nat_lat, 1^[])]]
+1.2.2.1  [- (k6_nat_d(1^[], k4_nat_lat)=k6_nat_d(k4_nat_lat, 1^[])), v7_ordinal1(1^[]), v7_ordinal1(k4_nat_lat)]   (4)  substitution:[[_G8642, _G8697], [1^[], k4_nat_lat]]
+1.2.2.1.1  [-v7_ordinal1(1^[]), v6_membered(u1_struct_0(k3_nat_lat)), m1_subset_1(1^[], u1_struct_0(k3_nat_lat))]   (3)  substitution:[[_G8450, _G8369], [1^[], u1_struct_0(k3_nat_lat)]]
+1.2.2.1.1.1  [-v6_membered(u1_struct_0(k3_nat_lat))]   (7)  
+1.2.2.1.1.2  [-m1_subset_1(1^[], u1_struct_0(k3_nat_lat))]   (1)  
+1.2.2.1.2  [-v7_ordinal1(k4_nat_lat), v6_membered(u1_struct_0(k3_nat_lat)), m1_subset_1(k4_nat_lat, u1_struct_0(k3_nat_lat))]   (3)  substitution:[[_G8450, _G8369], [k4_nat_lat, u1_struct_0(k3_nat_lat)]]
+1.2.2.1.2.1  [-v6_membered(u1_struct_0(k3_nat_lat))]   (7)  
+1.2.2.1.2.2  [-m1_subset_1(k4_nat_lat, u1_struct_0(k3_nat_lat))]   (6)  
+1.2.2.2  [- (k6_nat_d(k4_nat_lat, 1^[])=k4_nat_lat), k6_nat_d(k4_nat_lat, 1^[])=k2_lattices(k3_nat_lat, k4_nat_lat, 1^[]), k2_lattices(k3_nat_lat, k4_nat_lat, 1^[])=k4_nat_lat]   (21)  substitution:[[_G3407, _G3520, _G3463], [k6_nat_d(k4_nat_lat, 1^[]), k4_nat_lat, k2_lattices(k3_nat_lat, k4_nat_lat, 1^[])]]
+1.2.2.2.1  [- (k6_nat_d(k4_nat_lat, 1^[])=k2_lattices(k3_nat_lat, k4_nat_lat, 1^[])), k2_lattices(k3_nat_lat, k4_nat_lat, 1^[])=k6_nat_d(k4_nat_lat, 1^[])]   (20)  substitution:[[_G3219, _G3174], [k6_nat_d(k4_nat_lat, 1^[]), k2_lattices(k3_nat_lat, k4_nat_lat, 1^[])]]
+1.2.2.2.1.1  [- (k2_lattices(k3_nat_lat, k4_nat_lat, 1^[])=k6_nat_d(k4_nat_lat, 1^[])), m1_subset_1(k4_nat_lat, u1_struct_0(k3_nat_lat)), m1_subset_1(1^[], u1_struct_0(k3_nat_lat))]   (15)  substitution:[[_G9216, _G9274], [k4_nat_lat, 1^[]]]
+1.2.2.2.1.1.1  [-m1_subset_1(k4_nat_lat, u1_struct_0(k3_nat_lat))]   (6)  
+1.2.2.2.1.1.2  [-m1_subset_1(1^[], u1_struct_0(k3_nat_lat))]   (1)  
+1.2.2.2.2  [- (k2_lattices(k3_nat_lat, k4_nat_lat, 1^[])=k4_nat_lat)]   (lemmata:1)  
+------------------------------------------------------
+End of proof for l10_nat_lat

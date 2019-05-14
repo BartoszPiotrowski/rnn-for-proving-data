@@ -1,0 +1,24 @@
+
+t11_quatern2 is a Theorem
+Start of proof for t11_quatern2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k1_quatern2=k6_quaterni(k6_numbers, k6_numbers, k6_numbers, k6_numbers)]
+ (2)  [- (k21_quaterni=k6_numbers)]
+ (3)  [- (k6_numbers=k6_quaterni(k6_numbers, k6_numbers, k6_numbers, k6_numbers))]
+ (4)  [- (k1_quatern2=k21_quaterni)]
+ (5)  [- (k6_quaterni(_G1705, _G1912, _G2123, _G2338)=k6_quaterni(_G1808, _G2017, _G2230, _G2447)), _G1705=_G1808, _G1912=_G2017, _G2123=_G2230, _G2338=_G2447]
+ (6)  [- (_G932=_G932)]
+ (7)  [_G1031=_G1076, - (_G1076=_G1031)]
+ (8)  [- (_G1264=_G1377), _G1264=_G1320, _G1320=_G1377]
+
+Connection Proof:
+-----------------
+1  [k1_quatern2=k6_quaterni(k6_numbers, k6_numbers, k6_numbers, k6_numbers)]   (1)  
+1.1  [- (k1_quatern2=k6_quaterni(k6_numbers, k6_numbers, k6_numbers, k6_numbers)), k1_quatern2=k21_quaterni, k21_quaterni=k6_quaterni(k6_numbers, k6_numbers, k6_numbers, k6_numbers)]   (8)  substitution:[[_G1264, _G1377, _G1320], [k1_quatern2, k6_quaterni(k6_numbers, k6_numbers, k6_numbers, k6_numbers), k21_quaterni]]
+1.1.1  [- (k1_quatern2=k21_quaterni)]   (4)  
+1.1.2  [- (k21_quaterni=k6_quaterni(k6_numbers, k6_numbers, k6_numbers, k6_numbers)), k21_quaterni=k6_numbers, k6_numbers=k6_quaterni(k6_numbers, k6_numbers, k6_numbers, k6_numbers)]   (8)  substitution:[[_G1264, _G1377, _G1320], [k21_quaterni, k6_quaterni(k6_numbers, k6_numbers, k6_numbers, k6_numbers), k6_numbers]]
+1.1.2.1  [- (k21_quaterni=k6_numbers)]   (2)  
+1.1.2.2  [- (k6_numbers=k6_quaterni(k6_numbers, k6_numbers, k6_numbers, k6_numbers))]   (3)  
+------------------------------------------------------
+End of proof for t11_quatern2

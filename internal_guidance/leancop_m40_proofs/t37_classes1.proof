@@ -1,0 +1,63 @@
+
+t37_classes1 is a Theorem
+Start of proof for t37_classes1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-4^[], r1_ordinal1(1^[], 2^[])]
+ (2)  [-4^[], -r1_tarski(k4_classes1(1^[]), k4_classes1(2^[]))]
+ (3)  [-3^[], r1_tarski(k4_classes1(1^[]), k4_classes1(2^[]))]
+ (4)  [-3^[], -r1_ordinal1(1^[], 2^[])]
+ (5)  [-v3_ordinal1(1^[])]
+ (6)  [-v3_ordinal1(2^[])]
+ (7)  [3^[], 4^[]]
+ (8)  [- (k1_ordinal1(_G7553)=k2_xboole_0(_G7553, k1_tarski(_G7553)))]
+ (9)  [v3_ordinal1(_G7726), v1_xboole_0(k1_ordinal1(_G7726))]
+ (10)  [v3_ordinal1(_G7726), -v3_ordinal1(k1_ordinal1(_G7726))]
+ (11)  [v3_ordinal1(_G7963), v3_ordinal1(_G8052), r2_hidden(_G7963, k1_ordinal1(_G8052)), -r1_ordinal1(_G7963, _G8052)]
+ (12)  [v3_ordinal1(_G7963), v3_ordinal1(_G8052), -r2_hidden(_G7963, k1_ordinal1(_G8052)), r1_ordinal1(_G7963, _G8052)]
+ (13)  [v3_ordinal1(_G8400), r1_tarski(_G8344, k4_classes1(_G8400)), -r2_hidden(_G8344, k4_classes1(k1_ordinal1(_G8400)))]
+ (14)  [v3_ordinal1(_G8400), -r1_tarski(_G8344, k4_classes1(_G8400)), r2_hidden(_G8344, k4_classes1(k1_ordinal1(_G8400)))]
+ (15)  [v3_ordinal1(_G8694), v3_ordinal1(_G8785), r2_hidden(_G8694, _G8785), -r2_hidden(k4_classes1(_G8694), k4_classes1(_G8785))]
+ (16)  [v3_ordinal1(_G8694), v3_ordinal1(_G8785), -r2_hidden(_G8694, _G8785), r2_hidden(k4_classes1(_G8694), k4_classes1(_G8785))]
+ (17)  [- (k2_xboole_0(_G6047, _G6182)=k2_xboole_0(_G6114, _G6251)), _G6047=_G6114, _G6182=_G6251]
+ (18)  [_G6644=_G6693, - (k1_tarski(_G6644)=k1_tarski(_G6693))]
+ (19)  [_G6922=_G6971, - (k1_ordinal1(_G6922)=k1_ordinal1(_G6971))]
+ (20)  [_G7191=_G7240, - (k4_classes1(_G7191)=k4_classes1(_G7240))]
+ (21)  [- (_G2822=_G2822)]
+ (22)  [_G2921=_G2966, - (_G2966=_G2921)]
+ (23)  [- (_G3154=_G3267), _G3154=_G3210, _G3210=_G3267]
+ (24)  [-v1_xboole_0(_G3653), _G3604=_G3653, v1_xboole_0(_G3604)]
+ (25)  [-r2_hidden(_G3949, _G4086), r2_hidden(_G3882, _G4017), _G3882=_G3949, _G4017=_G4086]
+ (26)  [-v3_ordinal1(_G4528), _G4479=_G4528, v3_ordinal1(_G4479)]
+ (27)  [-r1_ordinal1(_G4824, _G4961), r1_ordinal1(_G4757, _G4892), _G4757=_G4824, _G4892=_G4961]
+ (28)  [-r1_tarski(_G5412, _G5549), r1_tarski(_G5345, _G5480), _G5345=_G5412, _G5480=_G5549]
+
+Connection Proof:
+-----------------
+1  [3^[], 4^[]]   (7)  
+1.1  [-3^[], r1_tarski(k4_classes1(1^[]), k4_classes1(2^[]))]   (3)  
+1.1.1  [-r1_tarski(k4_classes1(1^[]), k4_classes1(2^[])), v3_ordinal1(2^[]), r2_hidden(k4_classes1(1^[]), k4_classes1(k1_ordinal1(2^[])))]   (14)  substitution:[[_G8344, _G8400], [k4_classes1(1^[]), 2^[]]]
+1.1.1.1  [-v3_ordinal1(2^[])]   (6)  
+1.1.1.2  [-r2_hidden(k4_classes1(1^[]), k4_classes1(k1_ordinal1(2^[]))), v3_ordinal1(1^[]), v3_ordinal1(k1_ordinal1(2^[])), r2_hidden(1^[], k1_ordinal1(2^[]))]   (15)  substitution:[[_G8694, _G8785], [1^[], k1_ordinal1(2^[])]]
+1.1.1.2.1  [-v3_ordinal1(1^[])]   (5)  
+1.1.1.2.2  [-v3_ordinal1(k1_ordinal1(2^[])), v3_ordinal1(2^[])]   (10)  substitution:[[_G7726], [2^[]]]
+1.1.1.2.2.1  [-v3_ordinal1(2^[])]   (6)  
+1.1.1.2.3  [-r2_hidden(1^[], k1_ordinal1(2^[])), v3_ordinal1(1^[]), v3_ordinal1(2^[]), r1_ordinal1(1^[], 2^[])]   (12)  substitution:[[_G7963, _G8052], [1^[], 2^[]]]
+1.1.1.2.3.1  [-v3_ordinal1(1^[])]   (5)  
+1.1.1.2.3.2  [-v3_ordinal1(2^[])]   (6)  
+1.1.1.2.3.3  [-r1_ordinal1(1^[], 2^[]), -3^[]]   (4)  
+1.1.1.2.3.3.1  [3^[]]   (reduction:1)  
+1.2  [-4^[], r1_ordinal1(1^[], 2^[])]   (1)  
+1.2.1  [-r1_ordinal1(1^[], 2^[]), v3_ordinal1(1^[]), v3_ordinal1(2^[]), r2_hidden(1^[], k1_ordinal1(2^[]))]   (11)  substitution:[[_G7963, _G8052], [1^[], 2^[]]]
+1.2.1.1  [-v3_ordinal1(1^[])]   (5)  
+1.2.1.2  [-v3_ordinal1(2^[])]   (6)  
+1.2.1.3  [-r2_hidden(1^[], k1_ordinal1(2^[])), v3_ordinal1(1^[]), v3_ordinal1(k1_ordinal1(2^[])), r2_hidden(k4_classes1(1^[]), k4_classes1(k1_ordinal1(2^[])))]   (16)  substitution:[[_G8694, _G8785], [1^[], k1_ordinal1(2^[])]]
+1.2.1.3.1  [-v3_ordinal1(1^[])]   (5)  
+1.2.1.3.2  [-v3_ordinal1(k1_ordinal1(2^[])), v3_ordinal1(2^[])]   (10)  substitution:[[_G7726], [2^[]]]
+1.2.1.3.2.1  [-v3_ordinal1(2^[])]   (6)  
+1.2.1.3.3  [-r2_hidden(k4_classes1(1^[]), k4_classes1(k1_ordinal1(2^[]))), v3_ordinal1(2^[]), r1_tarski(k4_classes1(1^[]), k4_classes1(2^[]))]   (13)  substitution:[[_G8344, _G8400], [k4_classes1(1^[]), 2^[]]]
+1.2.1.3.3.1  [-v3_ordinal1(2^[])]   (6)  
+1.2.1.3.3.2  [-r1_tarski(k4_classes1(1^[]), k4_classes1(2^[])), -4^[]]   (2)  
+1.2.1.3.3.2.1  [4^[]]   (reduction:1)  
+------------------------------------------------------
+End of proof for t37_classes1

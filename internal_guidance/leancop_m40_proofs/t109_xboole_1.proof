@@ -1,0 +1,18 @@
+
+t109_xboole_1 is a Theorem
+Start of proof for t109_xboole_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-r1_tarski(1^[], 2^[])]
+ (2)  [r1_tarski(k4_xboole_0(1^[], 3^[]), 2^[])]
+ (3)  [-r1_tarski(k4_xboole_0(_G1143, _G1185), _G1143)]
+ (4)  [-r1_tarski(_G744, _G857), r1_tarski(_G744, _G800), r1_tarski(_G800, _G857)]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k4_xboole_0(1^[], 3^[]), 2^[])]   (2)  
+1.1  [-r1_tarski(k4_xboole_0(1^[], 3^[]), 2^[]), r1_tarski(k4_xboole_0(1^[], 3^[]), 1^[]), r1_tarski(1^[], 2^[])]   (4)  substitution:[[_G744, _G857, _G800], [k4_xboole_0(1^[], 3^[]), 2^[], 1^[]]]
+1.1.1  [-r1_tarski(k4_xboole_0(1^[], 3^[]), 1^[])]   (3)  substitution:[[_G1143, _G1185], [1^[], 3^[]]]
+1.1.2  [-r1_tarski(1^[], 2^[])]   (1)  
+------------------------------------------------------
+End of proof for t109_xboole_1

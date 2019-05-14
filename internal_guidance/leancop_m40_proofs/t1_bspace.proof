@@ -1,0 +1,25 @@
+
+t1_bspace is a Theorem
+Start of proof for t1_bspace
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-l1_struct_0(1^[])]
+ (2)  [-m1_subset_1(2^[], k5_numbers)]
+ (3)  [-m2_finseq_1(3^[], u1_struct_0(1^[]))]
+ (4)  [-r2_hidden(2^[], k4_finseq_1(3^[]))]
+ (5)  [r1_struct_0(1^[], k1_funct_1(3^[], 2^[]))]
+ (6)  [m2_finseq_1(_G1326, _G1187), r2_hidden(_G1256, k4_finseq_1(_G1326)), -r2_hidden(k1_funct_1(_G1326, _G1256), _G1187)]
+ (7)  [m2_finseq_1(_G1326, _G1187), r2_hidden(_G1256, k4_finseq_1(_G1326)), -r2_hidden(k1_funct_1(_G1326, _G1256), _G1187)]
+ (8)  [l1_struct_0(_G878), r1_struct_0(_G878, _G962), -r2_hidden(_G962, u1_struct_0(_G878))]
+ (9)  [l1_struct_0(_G878), -r1_struct_0(_G878, _G962), r2_hidden(_G962, u1_struct_0(_G878))]
+
+Connection Proof:
+-----------------
+1  [r1_struct_0(1^[], k1_funct_1(3^[], 2^[]))]   (5)  
+1.1  [-r1_struct_0(1^[], k1_funct_1(3^[], 2^[])), l1_struct_0(1^[]), r2_hidden(k1_funct_1(3^[], 2^[]), u1_struct_0(1^[]))]   (9)  substitution:[[_G878, _G962], [1^[], k1_funct_1(3^[], 2^[])]]
+1.1.1  [-l1_struct_0(1^[])]   (1)  
+1.1.2  [-r2_hidden(k1_funct_1(3^[], 2^[]), u1_struct_0(1^[])), m2_finseq_1(3^[], u1_struct_0(1^[])), r2_hidden(2^[], k4_finseq_1(3^[]))]   (6)  substitution:[[_G1326, _G1256, _G1187], [3^[], 2^[], u1_struct_0(1^[])]]
+1.1.2.1  [-m2_finseq_1(3^[], u1_struct_0(1^[]))]   (3)  
+1.1.2.2  [-r2_hidden(2^[], k4_finseq_1(3^[]))]   (4)  
+------------------------------------------------------
+End of proof for t1_bspace

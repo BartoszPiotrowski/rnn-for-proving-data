@@ -1,0 +1,40 @@
+
+t49_funct_2 is a Theorem
+Start of proof for t49_funct_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_funct_1(4^[])]
+ (2)  [-v1_funct_2(4^[], k1_tarski(1^[]), 2^[])]
+ (3)  [-m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(k1_tarski(1^[]), 2^[])))]
+ (4)  [2^[]=k1_xboole_0]
+ (5)  [r1_tarski(k7_relset_1(k1_tarski(1^[]), 2^[], 4^[], 3^[]), k1_tarski(k1_funct_1(4^[], 1^[])))]
+ (6)  [m1_subset_1(_G10482, k1_zfmisc_1(k2_zfmisc_1(_G10345, _G10413))), - (k7_relset_1(_G10345, _G10413, _G10482, _G10552)=k7_relat_1(_G10482, _G10552))]
+ (7)  [-r1_tarski(k7_relat_1(_G11226, _G11149), k1_tarski(k1_funct_1(_G11226, _G10998))), v1_funct_1(_G11226), m1_subset_1(_G11226, k1_zfmisc_1(k2_zfmisc_1(k1_tarski(_G10998), _G11073)))]
+ (8)  [- (k7_relat_1(_G6346, _G6481)=k7_relat_1(_G6413, _G6550)), _G6346=_G6413, _G6481=_G6550]
+ (9)  [_G6943=_G6992, - (k1_zfmisc_1(_G6943)=k1_zfmisc_1(_G6992))]
+ (10)  [- (k2_zfmisc_1(_G7221, _G7356)=k2_zfmisc_1(_G7288, _G7425)), _G7221=_G7288, _G7356=_G7425]
+ (11)  [- (k7_relset_1(_G7818, _G8025, _G8236, _G8451)=k7_relset_1(_G7921, _G8130, _G8343, _G8560)), _G7818=_G7921, _G8025=_G8130, _G8236=_G8343, _G8451=_G8560]
+ (12)  [_G9353=_G9402, - (k1_tarski(_G9353)=k1_tarski(_G9402))]
+ (13)  [- (k1_funct_1(_G9622, _G9757)=k1_funct_1(_G9689, _G9826)), _G9622=_G9689, _G9757=_G9826]
+ (14)  [- (_G2989=_G2989)]
+ (15)  [_G3088=_G3133, - (_G3133=_G3088)]
+ (16)  [- (_G3321=_G3434), _G3321=_G3377, _G3377=_G3434]
+ (17)  [-v1_funct_1(_G3820), _G3771=_G3820, v1_funct_1(_G3771)]
+ (18)  [-v1_funct_2(_G4134, _G4307, _G4484), v1_funct_2(_G4049, _G4220, _G4395), _G4049=_G4134, _G4220=_G4307, _G4395=_G4484]
+ (19)  [-m1_subset_1(_G5144, _G5281), m1_subset_1(_G5077, _G5212), _G5077=_G5144, _G5212=_G5281]
+ (20)  [-r1_tarski(_G5732, _G5869), r1_tarski(_G5665, _G5800), _G5665=_G5732, _G5800=_G5869]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k7_relset_1(k1_tarski(1^[]), 2^[], 4^[], 3^[]), k1_tarski(k1_funct_1(4^[], 1^[])))]   (5)  
+1.1  [-r1_tarski(k7_relset_1(k1_tarski(1^[]), 2^[], 4^[], 3^[]), k1_tarski(k1_funct_1(4^[], 1^[]))), r1_tarski(k7_relat_1(4^[], 3^[]), k1_tarski(k1_funct_1(4^[], 1^[]))), k7_relat_1(4^[], 3^[])=k7_relset_1(k1_tarski(1^[]), 2^[], 4^[], 3^[]), k1_tarski(k1_funct_1(4^[], 1^[]))=k1_tarski(k1_funct_1(4^[], 1^[]))]   (20)  substitution:[[_G5732, _G5869, _G5665, _G5800], [k7_relset_1(k1_tarski(1^[]), 2^[], 4^[], 3^[]), k1_tarski(k1_funct_1(4^[], 1^[])), k7_relat_1(4^[], 3^[]), k1_tarski(k1_funct_1(4^[], 1^[]))]]
+1.1.1  [-r1_tarski(k7_relat_1(4^[], 3^[]), k1_tarski(k1_funct_1(4^[], 1^[]))), v1_funct_1(4^[]), m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(k1_tarski(1^[]), 2^[])))]   (7)  substitution:[[_G11226, _G11149, _G10998, _G11073], [4^[], 3^[], 1^[], 2^[]]]
+1.1.1.1  [-v1_funct_1(4^[])]   (1)  
+1.1.1.2  [-m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(k1_tarski(1^[]), 2^[])))]   (3)  
+1.1.2  [- (k7_relat_1(4^[], 3^[])=k7_relset_1(k1_tarski(1^[]), 2^[], 4^[], 3^[])), k7_relset_1(k1_tarski(1^[]), 2^[], 4^[], 3^[])=k7_relat_1(4^[], 3^[])]   (15)  substitution:[[_G3133, _G3088], [k7_relat_1(4^[], 3^[]), k7_relset_1(k1_tarski(1^[]), 2^[], 4^[], 3^[])]]
+1.1.2.1  [- (k7_relset_1(k1_tarski(1^[]), 2^[], 4^[], 3^[])=k7_relat_1(4^[], 3^[])), m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(k1_tarski(1^[]), 2^[])))]   (6)  substitution:[[_G10345, _G10413, _G10482, _G10552], [k1_tarski(1^[]), 2^[], 4^[], 3^[]]]
+1.1.2.1.1  [-m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(k1_tarski(1^[]), 2^[])))]   (3)  
+1.1.3  [- (k1_tarski(k1_funct_1(4^[], 1^[]))=k1_tarski(k1_funct_1(4^[], 1^[]))), k1_funct_1(4^[], 1^[])=k1_funct_1(4^[], 1^[])]   (12)  substitution:[[_G9353, _G9402], [k1_funct_1(4^[], 1^[]), k1_funct_1(4^[], 1^[])]]
+1.1.3.1  [- (k1_funct_1(4^[], 1^[])=k1_funct_1(4^[], 1^[]))]   (14)  substitution:[[_G2989], [k1_funct_1(4^[], 1^[])]]
+------------------------------------------------------
+End of proof for t49_funct_2

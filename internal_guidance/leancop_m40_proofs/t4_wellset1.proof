@@ -1,0 +1,54 @@
+
+t4_wellset1 is a Theorem
+Start of proof for t4_wellset1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(5^[])]
+ (2)  [-r2_hidden(3^[], k1_relat_1(5^[]))]
+ (3)  [-r2_hidden(4^[], k1_relat_1(5^[]))]
+ (4)  [-v2_wellord1(5^[])]
+ (5)  [-r2_hidden(3^[], k1_wellord1(5^[], 4^[]))]
+ (6)  [-r2_hidden(k4_tarski(4^[], 3^[]), 5^[])]
+ (7)  [-v1_relat_2(_G8130), v1_relat_1(_G8130), v2_wellord1(_G8130)]
+ (8)  [-v4_relat_2(_G8130), v1_relat_1(_G8130), v2_wellord1(_G8130)]
+ (9)  [-v6_relat_2(_G8130), v1_relat_1(_G8130), v2_wellord1(_G8130)]
+ (10)  [-v8_relat_2(_G8130), v1_relat_1(_G8130), v2_wellord1(_G8130)]
+ (11)  [-v1_wellord1(_G8130), v1_relat_1(_G8130), v2_wellord1(_G8130)]
+ (12)  [v1_relat_1(_G9359), r2_hidden(_G9220, k1_wellord1(_G9359, _G9289)), _G9220=_G9289]
+ (13)  [v1_relat_1(_G9359), r2_hidden(_G9220, k1_wellord1(_G9359, _G9289)), -r2_hidden(k4_tarski(_G9220, _G9289), _G9359)]
+ (14)  [v1_relat_1(_G9359), -r2_hidden(_G9220, k1_wellord1(_G9359, _G9289)), - (_G9220=_G9289), r2_hidden(k4_tarski(_G9220, _G9289), _G9359)]
+ (15)  [v1_relat_1(_G8609), -v4_relat_2(_G8609), -r2_hidden(k4_tarski(1^[_G8609], 2^[_G8609]), _G8609)]
+ (16)  [v1_relat_1(_G8609), -v4_relat_2(_G8609), -r2_hidden(k4_tarski(2^[_G8609], 1^[_G8609]), _G8609)]
+ (17)  [v1_relat_1(_G8609), -v4_relat_2(_G8609), 1^[_G8609]=2^[_G8609]]
+ (18)  [v1_relat_1(_G8609), v4_relat_2(_G8609), - (_G8745=_G8808), r2_hidden(k4_tarski(_G8745, _G8808), _G8609), r2_hidden(k4_tarski(_G8808, _G8745), _G8609)]
+ (19)  [_G6604=_G6653, - (k1_relat_1(_G6604)=k1_relat_1(_G6653))]
+ (20)  [- (k1_wellord1(_G6882, _G7017)=k1_wellord1(_G6949, _G7086)), _G6882=_G6949, _G7017=_G7086]
+ (21)  [- (k4_tarski(_G7470, _G7605)=k4_tarski(_G7537, _G7674)), _G7470=_G7537, _G7605=_G7674]
+ (22)  [- (_G3120=_G3120)]
+ (23)  [_G3219=_G3264, - (_G3264=_G3219)]
+ (24)  [- (_G3452=_G3565), _G3452=_G3508, _G3508=_G3565]
+ (25)  [-v1_relat_2(_G3951), _G3902=_G3951, v1_relat_2(_G3902)]
+ (26)  [-v6_relat_2(_G4229), _G4180=_G4229, v6_relat_2(_G4180)]
+ (27)  [-v8_relat_2(_G4507), _G4458=_G4507, v8_relat_2(_G4458)]
+ (28)  [-v1_wellord1(_G4785), _G4736=_G4785, v1_wellord1(_G4736)]
+ (29)  [-v4_relat_2(_G5063), _G5014=_G5063, v4_relat_2(_G5014)]
+ (30)  [-v1_relat_1(_G5341), _G5292=_G5341, v1_relat_1(_G5292)]
+ (31)  [-v2_wellord1(_G5619), _G5570=_G5619, v2_wellord1(_G5570)]
+ (32)  [-r2_hidden(_G5906, _G6043), r2_hidden(_G5839, _G5974), _G5839=_G5906, _G5974=_G6043]
+
+Connection Proof:
+-----------------
+1  [v1_relat_1(5^[]), r2_hidden(3^[], k1_wellord1(5^[], 4^[])), 3^[]=4^[]]   (12)  substitution:[[_G9359, _G9220, _G9289], [5^[], 3^[], 4^[]]]
+1.1  [-v1_relat_1(5^[])]   (1)  
+1.2  [-r2_hidden(3^[], k1_wellord1(5^[], 4^[]))]   (5)  
+1.3  [- (3^[]=4^[]), v1_relat_1(5^[]), v4_relat_2(5^[]), r2_hidden(k4_tarski(3^[], 4^[]), 5^[]), r2_hidden(k4_tarski(4^[], 3^[]), 5^[])]   (18)  substitution:[[_G8745, _G8808, _G8609], [3^[], 4^[], 5^[]]]
+1.3.1  [-v1_relat_1(5^[])]   (1)  
+1.3.2  [-v4_relat_2(5^[]), v1_relat_1(5^[]), v2_wellord1(5^[])]   (8)  substitution:[[_G8130], [5^[]]]
+1.3.2.1  [-v1_relat_1(5^[])]   (1)  
+1.3.2.2  [-v2_wellord1(5^[])]   (4)  
+1.3.3  [-r2_hidden(k4_tarski(3^[], 4^[]), 5^[]), v1_relat_1(5^[]), r2_hidden(3^[], k1_wellord1(5^[], 4^[]))]   (13)  substitution:[[_G9220, _G9289, _G9359], [3^[], 4^[], 5^[]]]
+1.3.3.1  [-v1_relat_1(5^[])]   (1)  
+1.3.3.2  [-r2_hidden(3^[], k1_wellord1(5^[], 4^[]))]   (5)  
+1.3.4  [-r2_hidden(k4_tarski(4^[], 3^[]), 5^[])]   (6)  
+------------------------------------------------------
+End of proof for t4_wellset1

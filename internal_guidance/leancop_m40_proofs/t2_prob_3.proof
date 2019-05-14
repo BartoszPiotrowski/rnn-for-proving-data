@@ -1,0 +1,64 @@
+
+t2_prob_3 is a Theorem
+Start of proof for t2_prob_3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-4^[], r2_hidden(1^[], k1_relset_1(k5_numbers, 2^[]))]
+ (2)  [-4^[], -r1_xxreal_0(1^[], k3_finseq_1(2^[]))]
+ (3)  [-4^[], 1^[]=k6_numbers]
+ (4)  [-3^[], - (1^[]=k6_numbers), r1_xxreal_0(1^[], k3_finseq_1(2^[]))]
+ (5)  [-3^[], -r2_hidden(1^[], k1_relset_1(k5_numbers, 2^[]))]
+ (6)  [-v7_ordinal1(1^[])]
+ (7)  [-v1_relat_1(2^[])]
+ (8)  [-v1_funct_1(2^[])]
+ (9)  [-v1_finseq_1(2^[])]
+ (10)  [4^[], 3^[]]
+ (11)  [- (k6_numbers=k1_xboole_0)]
+ (12)  [v7_ordinal1(_G7005), -r1_xxreal_0(np__1, _G7005), - (_G7005=k6_numbers)]
+ (13)  [_G7465=k6_numbers, r2_hidden(_G7465, k1_relset_1(k5_numbers, _G7262)), v1_relat_1(_G7262), v1_funct_1(_G7262), v1_finseq_1(_G7262)]
+ (14)  [v1_finseq_1(_G7732), v1_funct_1(_G7732), v1_relat_1(_G7732), v7_ordinal1(_G7946), r2_hidden(_G7946, k1_relset_1(k5_numbers, _G7732)), -r1_xxreal_0(np__1, _G7946)]
+ (15)  [v1_finseq_1(_G7732), v1_funct_1(_G7732), v1_relat_1(_G7732), v7_ordinal1(_G7946), r2_hidden(_G7946, k1_relset_1(k5_numbers, _G7732)), -r1_xxreal_0(_G7946, k3_finseq_1(_G7732))]
+ (16)  [v1_finseq_1(_G7732), v1_funct_1(_G7732), v1_relat_1(_G7732), v7_ordinal1(_G7946), -r2_hidden(_G7946, k1_relset_1(k5_numbers, _G7732)), r1_xxreal_0(np__1, _G7946), r1_xxreal_0(_G7946, k3_finseq_1(_G7732))]
+ (17)  [_G6628=_G6677, - (k3_finseq_1(_G6628)=k3_finseq_1(_G6677))]
+ (18)  [- (k1_relset_1(_G6040, _G6175)=k1_relset_1(_G6107, _G6244)), _G6040=_G6107, _G6175=_G6244]
+ (19)  [- (_G2835=_G2835)]
+ (20)  [_G2934=_G2979, - (_G2979=_G2934)]
+ (21)  [- (_G3167=_G3280), _G3167=_G3223, _G3223=_G3280]
+ (22)  [-v7_ordinal1(_G3666), _G3617=_G3666, v7_ordinal1(_G3617)]
+ (23)  [-v1_relat_1(_G3944), _G3895=_G3944, v1_relat_1(_G3895)]
+ (24)  [-v1_funct_1(_G4222), _G4173=_G4222, v1_funct_1(_G4173)]
+ (25)  [-v1_finseq_1(_G4500), _G4451=_G4500, v1_finseq_1(_G4451)]
+ (26)  [-r2_hidden(_G4796, _G4933), r2_hidden(_G4729, _G4864), _G4729=_G4796, _G4864=_G4933]
+ (27)  [-r1_xxreal_0(_G5384, _G5521), r1_xxreal_0(_G5317, _G5452), _G5317=_G5384, _G5452=_G5521]
+
+Connection Proof:
+-----------------
+1  [4^[], 3^[]]   (10)  
+1.1  [-4^[], r2_hidden(1^[], k1_relset_1(k5_numbers, 2^[]))]   (1)  
+1.1.1  [-r2_hidden(1^[], k1_relset_1(k5_numbers, 2^[])), v1_finseq_1(2^[]), v1_funct_1(2^[]), v1_relat_1(2^[]), v7_ordinal1(1^[]), r1_xxreal_0(np__1, 1^[]), r1_xxreal_0(1^[], k3_finseq_1(2^[]))]   (16)  substitution:[[_G7946, _G7732], [1^[], 2^[]]]
+1.1.1.1  [-v1_finseq_1(2^[])]   (9)  
+1.1.1.2  [-v1_funct_1(2^[])]   (8)  
+1.1.1.3  [-v1_relat_1(2^[])]   (7)  
+1.1.1.4  [-v7_ordinal1(1^[])]   (6)  
+1.1.1.5  [-r1_xxreal_0(np__1, 1^[]), v7_ordinal1(1^[]), - (1^[]=k6_numbers)]   (12)  substitution:[[_G7005], [1^[]]]
+1.1.1.5.1  [-v7_ordinal1(1^[])]   (6)  
+1.1.1.5.2  [1^[]=k6_numbers, -4^[]]   (3)  
+1.1.1.5.2.1  [4^[]]   (reduction:1)  
+1.1.1.6  [-r1_xxreal_0(1^[], k3_finseq_1(2^[])), -4^[]]   (2)  
+1.1.1.6.1  [4^[]]   (reduction:1)  
+1.2  [-3^[], - (1^[]=k6_numbers), r1_xxreal_0(1^[], k3_finseq_1(2^[]))]   (4)  
+1.2.1  [1^[]=k6_numbers, r2_hidden(1^[], k1_relset_1(k5_numbers, 2^[])), v1_relat_1(2^[]), v1_funct_1(2^[]), v1_finseq_1(2^[])]   (13)  substitution:[[_G7465, _G7262], [1^[], 2^[]]]
+1.2.1.1  [-r2_hidden(1^[], k1_relset_1(k5_numbers, 2^[])), -3^[]]   (5)  
+1.2.1.1.1  [3^[]]   (reduction:1)  
+1.2.1.2  [-v1_relat_1(2^[])]   (7)  
+1.2.1.3  [-v1_funct_1(2^[])]   (8)  
+1.2.1.4  [-v1_finseq_1(2^[])]   (9)  
+1.2.2  [-r1_xxreal_0(1^[], k3_finseq_1(2^[])), v1_finseq_1(2^[]), v1_funct_1(2^[]), v1_relat_1(2^[]), v7_ordinal1(1^[]), r2_hidden(1^[], k1_relset_1(k5_numbers, 2^[]))]   (15)  substitution:[[_G7946, _G7732], [1^[], 2^[]]]
+1.2.2.1  [-v1_finseq_1(2^[])]   (9)  
+1.2.2.2  [-v1_funct_1(2^[])]   (8)  
+1.2.2.3  [-v1_relat_1(2^[])]   (7)  
+1.2.2.4  [-v7_ordinal1(1^[])]   (6)  
+1.2.2.5  [-r2_hidden(1^[], k1_relset_1(k5_numbers, 2^[])), -3^[]]   (5)  
+1.2.2.5.1  [3^[]]   (reduction:1)  
+------------------------------------------------------
+End of proof for t2_prob_3

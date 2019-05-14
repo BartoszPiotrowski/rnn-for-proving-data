@@ -1,0 +1,20 @@
+
+l7_int_1 is a Theorem
+Start of proof for l7_int_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-r2_hidden(2^[], k4_numbers)]
+ (2)  [r2_hidden(2^[], k1_numbers)]
+ (3)  [-r1_tarski(k4_numbers, k1_numbers)]
+ (4)  [-r1_tarski(_G662, _G718), -r2_hidden(1^[_G718, _G662], _G662)]
+ (5)  [-r1_tarski(_G662, _G718), r2_hidden(1^[_G718, _G662], _G718)]
+ (6)  [r1_tarski(_G662, _G718), r2_hidden(_G832, _G662), -r2_hidden(_G832, _G718)]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(2^[], k1_numbers)]   (2)  
+1.1  [-r2_hidden(2^[], k1_numbers), r1_tarski(k4_numbers, k1_numbers), r2_hidden(2^[], k4_numbers)]   (6)  substitution:[[_G832, _G718, _G662], [2^[], k1_numbers, k4_numbers]]
+1.1.1  [-r1_tarski(k4_numbers, k1_numbers)]   (3)  
+1.1.2  [-r2_hidden(2^[], k4_numbers)]   (1)  
+------------------------------------------------------
+End of proof for l7_int_1

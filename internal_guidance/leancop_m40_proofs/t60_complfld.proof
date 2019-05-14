@@ -1,0 +1,23 @@
+
+t60_complfld is a Theorem
+Start of proof for t60_complfld
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k17_complex1(k5_struct_0(k1_complfld))=np__1]
+ (2)  [- (k5_struct_0(k1_complfld)=k6_complex1)]
+ (3)  [- (k17_complex1(k6_complex1)=np__1)]
+ (4)  [_G1650=_G1699, - (k17_complex1(_G1650)=k17_complex1(_G1699))]
+ (5)  [_G1919=_G1968, - (k5_struct_0(_G1919)=k5_struct_0(_G1968))]
+ (6)  [- (_G868=_G868)]
+ (7)  [_G967=_G1012, - (_G1012=_G967)]
+ (8)  [- (_G1200=_G1313), _G1200=_G1256, _G1256=_G1313]
+
+Connection Proof:
+-----------------
+1  [k17_complex1(k5_struct_0(k1_complfld))=np__1]   (1)  
+1.1  [- (k17_complex1(k5_struct_0(k1_complfld))=np__1), k17_complex1(k5_struct_0(k1_complfld))=k17_complex1(k6_complex1), k17_complex1(k6_complex1)=np__1]   (8)  substitution:[[_G1200, _G1313, _G1256], [k17_complex1(k5_struct_0(k1_complfld)), np__1, k17_complex1(k6_complex1)]]
+1.1.1  [- (k17_complex1(k5_struct_0(k1_complfld))=k17_complex1(k6_complex1)), k5_struct_0(k1_complfld)=k6_complex1]   (4)  substitution:[[_G1650, _G1699], [k5_struct_0(k1_complfld), k6_complex1]]
+1.1.1.1  [- (k5_struct_0(k1_complfld)=k6_complex1)]   (2)  
+1.1.2  [- (k17_complex1(k6_complex1)=np__1)]   (3)  
+------------------------------------------------------
+End of proof for t60_complfld

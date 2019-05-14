@@ -1,0 +1,38 @@
+
+t37_card_lar is a Theorem
+Start of proof for t37_card_lar
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v3_ordinal1(2^[])]
+ (2)  [v1_xboole_0(2^[])]
+ (3)  [-v1_xboole_0(k4_classes1(2^[]))]
+ (4)  [_G4841=_G4892, -r1_tarski(_G4841, _G4892)]
+ (5)  [_G4841=_G4892, -r1_tarski(_G4892, _G4841)]
+ (6)  [- (_G4841=_G4892), r1_tarski(_G4841, _G4892), r1_tarski(_G4892, _G4841)]
+ (7)  [v3_ordinal1(_G5575), -r1_tarski(_G5575, k4_classes1(_G5575))]
+ (8)  [r2_hidden(_G5739, _G5785), v1_xboole_0(_G5785)]
+ (9)  [-r1_tarski(_G5173, _G5229), -r2_hidden(1^[_G5229, _G5173], _G5173)]
+ (10)  [-r1_tarski(_G5173, _G5229), r2_hidden(1^[_G5229, _G5173], _G5229)]
+ (11)  [r1_tarski(_G5173, _G5229), r2_hidden(_G5343, _G5173), -r2_hidden(_G5343, _G5229)]
+ (12)  [_G4542=_G4591, - (k4_classes1(_G4542)=k4_classes1(_G4591))]
+ (13)  [- (_G1944=_G1944)]
+ (14)  [_G2043=_G2088, - (_G2088=_G2043)]
+ (15)  [- (_G2276=_G2389), _G2276=_G2332, _G2332=_G2389]
+ (16)  [-r1_tarski(_G2793, _G2930), r1_tarski(_G2726, _G2861), _G2726=_G2793, _G2861=_G2930]
+ (17)  [-r2_hidden(_G3390, _G3527), r2_hidden(_G3323, _G3458), _G3323=_G3390, _G3458=_G3527]
+ (18)  [-v3_ordinal1(_G3969), _G3920=_G3969, v3_ordinal1(_G3920)]
+ (19)  [-v1_xboole_0(_G4238), _G4189=_G4238, v1_xboole_0(_G4189)]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(1^[2^[], k4_classes1(2^[])], k4_classes1(2^[])), v1_xboole_0(k4_classes1(2^[]))]   (8)  substitution:[[_G5739, _G5785], [1^[2^[], k4_classes1(2^[])], k4_classes1(2^[])]]
+1.1  [-r2_hidden(1^[2^[], k4_classes1(2^[])], k4_classes1(2^[])), -r1_tarski(k4_classes1(2^[]), 2^[])]   (9)  substitution:[[_G5229, _G5173], [2^[], k4_classes1(2^[])]]
+1.1.1  [r1_tarski(k4_classes1(2^[]), 2^[]), - (k4_classes1(2^[])=2^[]), r1_tarski(2^[], k4_classes1(2^[]))]   (6)  substitution:[[_G4841, _G4892], [k4_classes1(2^[]), 2^[]]]
+1.1.1.1  [k4_classes1(2^[])=2^[], -v1_xboole_0(2^[]), v1_xboole_0(k4_classes1(2^[]))]   (19)  substitution:[[_G4189, _G4238], [k4_classes1(2^[]), 2^[]]]
+1.1.1.1.1  [v1_xboole_0(2^[])]   (2)  
+1.1.1.1.2  [-v1_xboole_0(k4_classes1(2^[]))]   (3)  
+1.1.1.2  [-r1_tarski(2^[], k4_classes1(2^[])), v3_ordinal1(2^[])]   (7)  substitution:[[_G5575], [2^[]]]
+1.1.1.2.1  [-v3_ordinal1(2^[])]   (1)  
+1.2  [-v1_xboole_0(k4_classes1(2^[]))]   (3)  
+------------------------------------------------------
+End of proof for t37_card_lar

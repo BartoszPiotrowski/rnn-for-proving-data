@@ -1,0 +1,35 @@
+
+t28_pre_poly is a Theorem
+Start of proof for t28_pre_poly
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m2_finseq_1(3^[], k3_finseq_2(1^[]))]
+ (2)  [-m2_finseq_1(4^[], k3_finseq_2(2^[]))]
+ (3)  [- (k10_pre_poly(1^[], 3^[])=k10_pre_poly(2^[], 4^[]))]
+ (4)  [k3_finseq_1(k5_pre_poly(1^[], 3^[]))=k3_finseq_1(k5_pre_poly(2^[], 4^[]))]
+ (5)  [m2_finseq_1(_G5386, k3_finseq_2(_G5329)), - (k3_finseq_1(k5_pre_poly(_G5329, _G5386))=k2_wsierp_1(k10_pre_poly(_G5329, _G5386)))]
+ (6)  [-m2_finseq_1(_G2663, _G2800), m2_finseq_1(_G2596, _G2731), _G2596=_G2663, _G2731=_G2800]
+ (7)  [- (_G1823=_G1823)]
+ (8)  [_G1922=_G1967, - (_G1967=_G1922)]
+ (9)  [- (_G2155=_G2268), _G2155=_G2211, _G2211=_G2268]
+ (10)  [_G3214=_G3263, - (k2_wsierp_1(_G3214)=k2_wsierp_1(_G3263))]
+ (11)  [_G3492=_G3541, - (k3_finseq_2(_G3492)=k3_finseq_2(_G3541))]
+ (12)  [- (k10_pre_poly(_G3770, _G3905)=k10_pre_poly(_G3837, _G3974)), _G3770=_G3837, _G3905=_G3974]
+ (13)  [_G4367=_G4416, - (k3_finseq_1(_G4367)=k3_finseq_1(_G4416))]
+ (14)  [- (k5_pre_poly(_G4636, _G4771)=k5_pre_poly(_G4703, _G4840)), _G4636=_G4703, _G4771=_G4840]
+
+Connection Proof:
+-----------------
+1  [k3_finseq_1(k5_pre_poly(1^[], 3^[]))=k3_finseq_1(k5_pre_poly(2^[], 4^[]))]   (4)  
+1.1  [- (k3_finseq_1(k5_pre_poly(1^[], 3^[]))=k3_finseq_1(k5_pre_poly(2^[], 4^[]))), k3_finseq_1(k5_pre_poly(2^[], 4^[]))=k3_finseq_1(k5_pre_poly(1^[], 3^[]))]   (8)  substitution:[[_G1967, _G1922], [k3_finseq_1(k5_pre_poly(1^[], 3^[])), k3_finseq_1(k5_pre_poly(2^[], 4^[]))]]
+1.1.1  [- (k3_finseq_1(k5_pre_poly(2^[], 4^[]))=k3_finseq_1(k5_pre_poly(1^[], 3^[]))), k3_finseq_1(k5_pre_poly(2^[], 4^[]))=k2_wsierp_1(k10_pre_poly(2^[], 4^[])), k2_wsierp_1(k10_pre_poly(2^[], 4^[]))=k3_finseq_1(k5_pre_poly(1^[], 3^[]))]   (9)  substitution:[[_G2155, _G2268, _G2211], [k3_finseq_1(k5_pre_poly(2^[], 4^[])), k3_finseq_1(k5_pre_poly(1^[], 3^[])), k2_wsierp_1(k10_pre_poly(2^[], 4^[]))]]
+1.1.1.1  [- (k3_finseq_1(k5_pre_poly(2^[], 4^[]))=k2_wsierp_1(k10_pre_poly(2^[], 4^[]))), m2_finseq_1(4^[], k3_finseq_2(2^[]))]   (5)  substitution:[[_G5329, _G5386], [2^[], 4^[]]]
+1.1.1.1.1  [-m2_finseq_1(4^[], k3_finseq_2(2^[]))]   (2)  
+1.1.1.2  [- (k2_wsierp_1(k10_pre_poly(2^[], 4^[]))=k3_finseq_1(k5_pre_poly(1^[], 3^[]))), k3_finseq_1(k5_pre_poly(1^[], 3^[]))=k2_wsierp_1(k10_pre_poly(2^[], 4^[]))]   (8)  substitution:[[_G1967, _G1922], [k2_wsierp_1(k10_pre_poly(2^[], 4^[])), k3_finseq_1(k5_pre_poly(1^[], 3^[]))]]
+1.1.1.2.1  [- (k3_finseq_1(k5_pre_poly(1^[], 3^[]))=k2_wsierp_1(k10_pre_poly(2^[], 4^[]))), k3_finseq_1(k5_pre_poly(1^[], 3^[]))=k2_wsierp_1(k10_pre_poly(1^[], 3^[])), k2_wsierp_1(k10_pre_poly(1^[], 3^[]))=k2_wsierp_1(k10_pre_poly(2^[], 4^[]))]   (9)  substitution:[[_G2155, _G2268, _G2211], [k3_finseq_1(k5_pre_poly(1^[], 3^[])), k2_wsierp_1(k10_pre_poly(2^[], 4^[])), k2_wsierp_1(k10_pre_poly(1^[], 3^[]))]]
+1.1.1.2.1.1  [- (k3_finseq_1(k5_pre_poly(1^[], 3^[]))=k2_wsierp_1(k10_pre_poly(1^[], 3^[]))), m2_finseq_1(3^[], k3_finseq_2(1^[]))]   (5)  substitution:[[_G5329, _G5386], [1^[], 3^[]]]
+1.1.1.2.1.1.1  [-m2_finseq_1(3^[], k3_finseq_2(1^[]))]   (1)  
+1.1.1.2.1.2  [- (k2_wsierp_1(k10_pre_poly(1^[], 3^[]))=k2_wsierp_1(k10_pre_poly(2^[], 4^[]))), k10_pre_poly(1^[], 3^[])=k10_pre_poly(2^[], 4^[])]   (10)  substitution:[[_G3214, _G3263], [k10_pre_poly(1^[], 3^[]), k10_pre_poly(2^[], 4^[])]]
+1.1.1.2.1.2.1  [- (k10_pre_poly(1^[], 3^[])=k10_pre_poly(2^[], 4^[]))]   (3)  
+------------------------------------------------------
+End of proof for t28_pre_poly

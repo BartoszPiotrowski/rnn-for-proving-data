@@ -1,0 +1,56 @@
+
+t3_arytm_3 is a Theorem
+Start of proof for t3_arytm_3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v3_ordinal1(4^[])]
+ (2)  [-r1_arytm_3(k1_xboole_0, 4^[])]
+ (3)  [4^[]=np__1]
+ (4)  [v1_xboole_0(_G5634), -v3_ordinal1(_G5634)]
+ (5)  [-v1_xboole_0(k1_xboole_0)]
+ (6)  [v3_ordinal1(_G6928), v1_xboole_0(k1_ordinal1(_G6928))]
+ (7)  [v3_ordinal1(_G6928), -v3_ordinal1(k1_ordinal1(_G6928))]
+ (8)  [- (np__1=k1_ordinal1(k1_xboole_0))]
+ (9)  [v3_ordinal1(_G7236), - (k11_ordinal2(_G7236, k1_xboole_0)=k1_xboole_0)]
+ (10)  [v3_ordinal1(_G7426), - (k11_ordinal2(np__1, _G7426)=_G7426)]
+ (11)  [v3_ordinal1(_G7426), - (k11_ordinal2(_G7426, np__1)=_G7426)]
+ (12)  [v3_ordinal1(_G5765), v3_ordinal1(_G5900), -r1_arytm_3(_G5765, _G5900), -v3_ordinal1(1^[_G5900, _G5765])]
+ (13)  [v3_ordinal1(_G5765), v3_ordinal1(_G5900), -r1_arytm_3(_G5765, _G5900), -v3_ordinal1(2^[_G5900, _G5765])]
+ (14)  [v3_ordinal1(_G5765), v3_ordinal1(_G5900), -r1_arytm_3(_G5765, _G5900), -v3_ordinal1(3^[_G5900, _G5765])]
+ (15)  [v3_ordinal1(_G5765), v3_ordinal1(_G5900), -r1_arytm_3(_G5765, _G5900), - (_G5765=k11_ordinal2(1^[_G5900, _G5765], 2^[_G5900, _G5765]))]
+ (16)  [v3_ordinal1(_G5765), v3_ordinal1(_G5900), -r1_arytm_3(_G5765, _G5900), - (_G5900=k11_ordinal2(1^[_G5900, _G5765], 3^[_G5900, _G5765]))]
+ (17)  [v3_ordinal1(_G5765), v3_ordinal1(_G5900), -r1_arytm_3(_G5765, _G5900), 1^[_G5900, _G5765]=np__1]
+ (18)  [v3_ordinal1(_G5765), v3_ordinal1(_G5900), r1_arytm_3(_G5765, _G5900), v3_ordinal1(_G6088), v3_ordinal1(_G6209), v3_ordinal1(_G6326), - (_G6088=np__1), _G5765=k11_ordinal2(_G6088, _G6209), _G5900=k11_ordinal2(_G6088, _G6326)]
+ (19)  [_G4726=_G4775, - (k1_ordinal1(_G4726)=k1_ordinal1(_G4775))]
+ (20)  [- (k11_ordinal2(_G4995, _G5130)=k11_ordinal2(_G5062, _G5199)), _G4995=_G5062, _G5130=_G5199]
+ (21)  [- (_G2737=_G2737)]
+ (22)  [_G2836=_G2881, - (_G2881=_G2836)]
+ (23)  [- (_G3069=_G3182), _G3069=_G3125, _G3125=_G3182]
+ (24)  [-v1_xboole_0(_G3568), _G3519=_G3568, v1_xboole_0(_G3519)]
+ (25)  [-v3_ordinal1(_G3846), _G3797=_G3846, v3_ordinal1(_G3797)]
+ (26)  [-r1_arytm_3(_G4133, _G4270), r1_arytm_3(_G4066, _G4201), _G4066=_G4133, _G4201=_G4270]
+
+Connection Proof:
+-----------------
+1  [4^[]=np__1]   (3)  
+1.1  [- (4^[]=np__1), v3_ordinal1(k1_xboole_0), v3_ordinal1(4^[]), r1_arytm_3(k1_xboole_0, 4^[]), v3_ordinal1(4^[]), v3_ordinal1(k1_xboole_0), v3_ordinal1(np__1), k1_xboole_0=k11_ordinal2(4^[], k1_xboole_0), 4^[]=k11_ordinal2(4^[], np__1)]   (18)  substitution:[[_G6088, _G5765, _G5900, _G6209, _G6326], [4^[], k1_xboole_0, 4^[], k1_xboole_0, np__1]]
+1.1.1  [-v3_ordinal1(k1_xboole_0), v1_xboole_0(k1_xboole_0)]   (4)  substitution:[[_G5634], [k1_xboole_0]]
+1.1.1.1  [-v1_xboole_0(k1_xboole_0)]   (5)  
+1.1.2  [-v3_ordinal1(4^[])]   (1)  
+1.1.3  [-r1_arytm_3(k1_xboole_0, 4^[])]   (2)  
+1.1.4  [-v3_ordinal1(4^[])]   (1)  
+1.1.5  [-v3_ordinal1(k1_xboole_0), v1_xboole_0(k1_xboole_0)]   (4)  substitution:[[_G5634], [k1_xboole_0]]
+1.1.5.1  [-v1_xboole_0(k1_xboole_0)]   (5)  
+1.1.6  [-v3_ordinal1(np__1), k1_ordinal1(k1_xboole_0)=np__1, v3_ordinal1(k1_ordinal1(k1_xboole_0))]   (25)  substitution:[[_G3846, _G3797], [np__1, k1_ordinal1(k1_xboole_0)]]
+1.1.6.1  [- (k1_ordinal1(k1_xboole_0)=np__1), np__1=k1_ordinal1(k1_xboole_0)]   (22)  substitution:[[_G2881, _G2836], [k1_ordinal1(k1_xboole_0), np__1]]
+1.1.6.1.1  [- (np__1=k1_ordinal1(k1_xboole_0))]   (8)  
+1.1.6.2  [-v3_ordinal1(k1_ordinal1(k1_xboole_0)), v3_ordinal1(k1_xboole_0)]   (7)  substitution:[[_G6928], [k1_xboole_0]]
+1.1.6.2.1  [-v3_ordinal1(k1_xboole_0)]   (lemmata:1.1)  
+1.1.7  [- (k1_xboole_0=k11_ordinal2(4^[], k1_xboole_0)), k11_ordinal2(4^[], k1_xboole_0)=k1_xboole_0]   (22)  substitution:[[_G2881, _G2836], [k1_xboole_0, k11_ordinal2(4^[], k1_xboole_0)]]
+1.1.7.1  [- (k11_ordinal2(4^[], k1_xboole_0)=k1_xboole_0), v3_ordinal1(4^[])]   (9)  substitution:[[_G7236], [4^[]]]
+1.1.7.1.1  [-v3_ordinal1(4^[])]   (1)  
+1.1.8  [- (4^[]=k11_ordinal2(4^[], np__1)), k11_ordinal2(4^[], np__1)=4^[]]   (22)  substitution:[[_G2881, _G2836], [4^[], k11_ordinal2(4^[], np__1)]]
+1.1.8.1  [- (k11_ordinal2(4^[], np__1)=4^[]), v3_ordinal1(4^[])]   (11)  substitution:[[_G7426], [4^[]]]
+1.1.8.1.1  [-v3_ordinal1(4^[])]   (1)  
+------------------------------------------------------
+End of proof for t3_arytm_3

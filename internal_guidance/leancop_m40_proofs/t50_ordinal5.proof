@@ -1,0 +1,85 @@
+
+t50_ordinal5 is a Theorem
+Start of proof for t50_ordinal5
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-4^[_G10391], -v4_ordinal5(_G10391)]
+ (2)  [-4^[_G10391], -v3_ordinal1(_G10391)]
+ (3)  [v1_xboole_0(3^[])]
+ (4)  [v3_ordinal1(k3_tarski(3^[])), v4_ordinal5(k3_tarski(3^[]))]
+ (5)  [r2_hidden(_G10391, 3^[]), 4^[_G10391]]
+ (6)  [v3_ordinal1(_G10409), r2_hidden(_G10409, 3^[]), -r2_hidden(k2_ordinal5(_G10409), 3^[])]
+ (7)  [-v1_xboole_0(_G7258), -v3_ordinal1(k3_tarski(_G7258)), -r2_hidden(2^[_G7258], _G7258)]
+ (8)  [-v1_xboole_0(_G7258), -v3_ordinal1(k3_tarski(_G7258)), v4_ordinal5(2^[_G7258]), v3_ordinal1(2^[_G7258]), v4_ordinal5(_G9654), v3_ordinal1(_G9654), r2_hidden(2^[_G7258], _G9654), r2_hidden(_G9654, _G7258)]
+ (9)  [-v1_xboole_0(_G7258), -v4_ordinal5(k3_tarski(_G7258)), -r2_hidden(2^[_G7258], _G7258)]
+ (10)  [-v1_xboole_0(_G7258), -v4_ordinal5(k3_tarski(_G7258)), v4_ordinal5(2^[_G7258]), v3_ordinal1(2^[_G7258]), v4_ordinal5(_G9654), v3_ordinal1(_G9654), r2_hidden(2^[_G7258], _G9654), r2_hidden(_G9654, _G7258)]
+ (11)  [v3_ordinal1(_G6437), v4_ordinal5(_G6558), v3_ordinal1(_G6558), - (_G6558=k2_ordinal5(_G6437)), r2_hidden(_G6437, _G6558), -v3_ordinal1(1^[_G6558, _G6437])]
+ (12)  [v3_ordinal1(_G6437), v4_ordinal5(_G6558), v3_ordinal1(_G6558), - (_G6558=k2_ordinal5(_G6437)), r2_hidden(_G6437, _G6558), -v4_ordinal5(1^[_G6558, _G6437])]
+ (13)  [v3_ordinal1(_G6437), v4_ordinal5(_G6558), v3_ordinal1(_G6558), - (_G6558=k2_ordinal5(_G6437)), r2_hidden(_G6437, _G6558), -r2_hidden(_G6437, 1^[_G6558, _G6437])]
+ (14)  [v3_ordinal1(_G6437), v4_ordinal5(_G6558), v3_ordinal1(_G6558), - (_G6558=k2_ordinal5(_G6437)), r2_hidden(_G6437, _G6558), r1_ordinal1(_G6558, 1^[_G6558, _G6437])]
+ (15)  [v3_ordinal1(_G6437), v4_ordinal5(_G6558), v3_ordinal1(_G6558), _G6558=k2_ordinal5(_G6437), -r2_hidden(_G6437, _G6558)]
+ (16)  [v3_ordinal1(_G6437), v4_ordinal5(_G6558), v3_ordinal1(_G6558), _G6558=k2_ordinal5(_G6437), v4_ordinal5(_G6856), v3_ordinal1(_G6856), r2_hidden(_G6437, _G6856), -r1_ordinal1(_G6558, _G6856)]
+ (17)  [_G5848=_G5897, - (k2_ordinal5(_G5848)=k2_ordinal5(_G5897))]
+ (18)  [_G6117=_G6166, - (k3_tarski(_G6117)=k3_tarski(_G6166))]
+ (19)  [- (_G2942=_G2942)]
+ (20)  [_G3041=_G3086, - (_G3086=_G3041)]
+ (21)  [- (_G3274=_G3387), _G3274=_G3330, _G3330=_G3387]
+ (22)  [-r1_ordinal1(_G3791, _G3928), r1_ordinal1(_G3724, _G3859), _G3724=_G3791, _G3859=_G3928]
+ (23)  [-v1_xboole_0(_G4370), _G4321=_G4370, v1_xboole_0(_G4321)]
+ (24)  [-r2_hidden(_G4666, _G4803), r2_hidden(_G4599, _G4734), _G4599=_G4666, _G4734=_G4803]
+ (25)  [-v3_ordinal1(_G5245), _G5196=_G5245, v3_ordinal1(_G5196)]
+ (26)  [-v4_ordinal5(_G5514), _G5465=_G5514, v4_ordinal5(_G5465)]
+
+Connection Proof:
+-----------------
+1  [v3_ordinal1(k3_tarski(3^[])), v4_ordinal5(k3_tarski(3^[]))]   (4)  
+1.1  [-v3_ordinal1(k3_tarski(3^[])), -v1_xboole_0(3^[]), -r2_hidden(2^[3^[]], 3^[])]   (7)  substitution:[[_G7258], [3^[]]]
+1.1.1  [v1_xboole_0(3^[])]   (3)  
+1.1.2  [r2_hidden(2^[3^[]], 3^[]), v3_ordinal1(2^[3^[]]), -r2_hidden(k2_ordinal5(2^[3^[]]), 3^[])]   (6)  substitution:[[_G10409], [2^[3^[]]]]
+1.1.2.1  [-v3_ordinal1(2^[3^[]]), -4^[2^[3^[]]]]   (2)  substitution:[[_G10391], [2^[3^[]]]]
+1.1.2.1.1  [4^[2^[3^[]]], r2_hidden(2^[3^[]], 3^[])]   (5)  substitution:[[_G10391], [2^[3^[]]]]
+1.1.2.1.1.1  [-r2_hidden(2^[3^[]], 3^[])]   (reduction:1.1)  
+1.1.2.2  [r2_hidden(k2_ordinal5(2^[3^[]]), 3^[]), -v1_xboole_0(3^[]), -v3_ordinal1(k3_tarski(3^[])), v4_ordinal5(2^[3^[]]), v3_ordinal1(2^[3^[]]), v4_ordinal5(k2_ordinal5(2^[3^[]])), v3_ordinal1(k2_ordinal5(2^[3^[]])), r2_hidden(2^[3^[]], k2_ordinal5(2^[3^[]]))]   (8)  substitution:[[_G9654, _G7258], [k2_ordinal5(2^[3^[]]), 3^[]]]
+1.1.2.2.1  [v1_xboole_0(3^[])]   (3)  
+1.1.2.2.2  [v3_ordinal1(k3_tarski(3^[]))]   (reduction:1)  
+1.1.2.2.3  [-v4_ordinal5(2^[3^[]]), -4^[2^[3^[]]]]   (1)  substitution:[[_G10391], [2^[3^[]]]]
+1.1.2.2.3.1  [4^[2^[3^[]]], r2_hidden(2^[3^[]], 3^[])]   (5)  substitution:[[_G10391], [2^[3^[]]]]
+1.1.2.2.3.1.1  [-r2_hidden(2^[3^[]], 3^[])]   (reduction:1.1)  
+1.1.2.2.4  [-v3_ordinal1(2^[3^[]])]   (lemmata:1.1.2)  
+1.1.2.2.5  [-v4_ordinal5(k2_ordinal5(2^[3^[]])), -4^[k2_ordinal5(2^[3^[]])]]   (1)  substitution:[[_G10391], [k2_ordinal5(2^[3^[]])]]
+1.1.2.2.5.1  [4^[k2_ordinal5(2^[3^[]])], r2_hidden(k2_ordinal5(2^[3^[]]), 3^[])]   (5)  substitution:[[_G10391], [k2_ordinal5(2^[3^[]])]]
+1.1.2.2.5.1.1  [-r2_hidden(k2_ordinal5(2^[3^[]]), 3^[])]   (reduction:1.1.2)  
+1.1.2.2.6  [-v3_ordinal1(k2_ordinal5(2^[3^[]])), -4^[k2_ordinal5(2^[3^[]])]]   (2)  substitution:[[_G10391], [k2_ordinal5(2^[3^[]])]]
+1.1.2.2.6.1  [4^[k2_ordinal5(2^[3^[]])], r2_hidden(k2_ordinal5(2^[3^[]]), 3^[])]   (5)  substitution:[[_G10391], [k2_ordinal5(2^[3^[]])]]
+1.1.2.2.6.1.1  [-r2_hidden(k2_ordinal5(2^[3^[]]), 3^[])]   (reduction:1.1.2)  
+1.1.2.2.7  [-r2_hidden(2^[3^[]], k2_ordinal5(2^[3^[]])), v3_ordinal1(2^[3^[]]), v4_ordinal5(k2_ordinal5(2^[3^[]])), v3_ordinal1(k2_ordinal5(2^[3^[]])), k2_ordinal5(2^[3^[]])=k2_ordinal5(2^[3^[]])]   (15)  substitution:[[_G6437, _G6558], [2^[3^[]], k2_ordinal5(2^[3^[]])]]
+1.1.2.2.7.1  [-v3_ordinal1(2^[3^[]])]   (lemmata:1.1.2.2)  
+1.1.2.2.7.2  [-v4_ordinal5(k2_ordinal5(2^[3^[]]))]   (lemmata:1.1.2.2)  
+1.1.2.2.7.3  [-v3_ordinal1(k2_ordinal5(2^[3^[]]))]   (lemmata:1.1.2.2)  
+1.1.2.2.7.4  [- (k2_ordinal5(2^[3^[]])=k2_ordinal5(2^[3^[]]))]   (19)  substitution:[[_G2942], [k2_ordinal5(2^[3^[]])]]
+1.2  [-v4_ordinal5(k3_tarski(3^[])), -v1_xboole_0(3^[]), -r2_hidden(2^[3^[]], 3^[])]   (9)  substitution:[[_G7258], [3^[]]]
+1.2.1  [v1_xboole_0(3^[])]   (3)  
+1.2.2  [r2_hidden(2^[3^[]], 3^[]), v3_ordinal1(2^[3^[]]), -r2_hidden(k2_ordinal5(2^[3^[]]), 3^[])]   (6)  substitution:[[_G10409], [2^[3^[]]]]
+1.2.2.1  [-v3_ordinal1(2^[3^[]]), -4^[2^[3^[]]]]   (2)  substitution:[[_G10391], [2^[3^[]]]]
+1.2.2.1.1  [4^[2^[3^[]]], r2_hidden(2^[3^[]], 3^[])]   (5)  substitution:[[_G10391], [2^[3^[]]]]
+1.2.2.1.1.1  [-r2_hidden(2^[3^[]], 3^[])]   (reduction:1.2)  
+1.2.2.2  [r2_hidden(k2_ordinal5(2^[3^[]]), 3^[]), -v1_xboole_0(3^[]), -v4_ordinal5(k3_tarski(3^[])), v4_ordinal5(2^[3^[]]), v3_ordinal1(2^[3^[]]), v4_ordinal5(k2_ordinal5(2^[3^[]])), v3_ordinal1(k2_ordinal5(2^[3^[]])), r2_hidden(2^[3^[]], k2_ordinal5(2^[3^[]]))]   (10)  substitution:[[_G9654, _G7258], [k2_ordinal5(2^[3^[]]), 3^[]]]
+1.2.2.2.1  [v1_xboole_0(3^[])]   (3)  
+1.2.2.2.2  [v4_ordinal5(k3_tarski(3^[]))]   (reduction:1)  
+1.2.2.2.3  [-v4_ordinal5(2^[3^[]]), -4^[2^[3^[]]]]   (1)  substitution:[[_G10391], [2^[3^[]]]]
+1.2.2.2.3.1  [4^[2^[3^[]]], r2_hidden(2^[3^[]], 3^[])]   (5)  substitution:[[_G10391], [2^[3^[]]]]
+1.2.2.2.3.1.1  [-r2_hidden(2^[3^[]], 3^[])]   (reduction:1.2)  
+1.2.2.2.4  [-v3_ordinal1(2^[3^[]])]   (lemmata:1.2.2)  
+1.2.2.2.5  [-v4_ordinal5(k2_ordinal5(2^[3^[]])), -4^[k2_ordinal5(2^[3^[]])]]   (1)  substitution:[[_G10391], [k2_ordinal5(2^[3^[]])]]
+1.2.2.2.5.1  [4^[k2_ordinal5(2^[3^[]])], r2_hidden(k2_ordinal5(2^[3^[]]), 3^[])]   (5)  substitution:[[_G10391], [k2_ordinal5(2^[3^[]])]]
+1.2.2.2.5.1.1  [-r2_hidden(k2_ordinal5(2^[3^[]]), 3^[])]   (reduction:1.2.2)  
+1.2.2.2.6  [-v3_ordinal1(k2_ordinal5(2^[3^[]])), -4^[k2_ordinal5(2^[3^[]])]]   (2)  substitution:[[_G10391], [k2_ordinal5(2^[3^[]])]]
+1.2.2.2.6.1  [4^[k2_ordinal5(2^[3^[]])], r2_hidden(k2_ordinal5(2^[3^[]]), 3^[])]   (5)  substitution:[[_G10391], [k2_ordinal5(2^[3^[]])]]
+1.2.2.2.6.1.1  [-r2_hidden(k2_ordinal5(2^[3^[]]), 3^[])]   (reduction:1.2.2)  
+1.2.2.2.7  [-r2_hidden(2^[3^[]], k2_ordinal5(2^[3^[]])), v3_ordinal1(2^[3^[]]), v4_ordinal5(k2_ordinal5(2^[3^[]])), v3_ordinal1(k2_ordinal5(2^[3^[]])), k2_ordinal5(2^[3^[]])=k2_ordinal5(2^[3^[]])]   (15)  substitution:[[_G6437, _G6558], [2^[3^[]], k2_ordinal5(2^[3^[]])]]
+1.2.2.2.7.1  [-v3_ordinal1(2^[3^[]])]   (lemmata:1.2.2.2)  
+1.2.2.2.7.2  [-v4_ordinal5(k2_ordinal5(2^[3^[]]))]   (lemmata:1.2.2.2)  
+1.2.2.2.7.3  [-v3_ordinal1(k2_ordinal5(2^[3^[]]))]   (lemmata:1.2.2.2)  
+1.2.2.2.7.4  [- (k2_ordinal5(2^[3^[]])=k2_ordinal5(2^[3^[]]))]   (19)  substitution:[[_G2942], [k2_ordinal5(2^[3^[]])]]
+------------------------------------------------------
+End of proof for t50_ordinal5

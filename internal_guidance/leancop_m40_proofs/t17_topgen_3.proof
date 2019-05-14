@@ -1,0 +1,35 @@
+
+t17_topgen_3 is a Theorem
+Start of proof for t17_topgen_3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k1_card_1(k3_numbers)=k4_ordinal1]
+ (2)  [- (c1__topgen_1=k3_numbers)]
+ (3)  [- (k5_numbers=k4_ordinal1)]
+ (4)  [r2_wellord2(_G3906, _G3951), -r2_tarski(_G3906, _G3951)]
+ (5)  [-r2_wellord2(_G3906, _G3951), r2_tarski(_G3906, _G3951)]
+ (6)  [- (k1_card_1(k4_ordinal1)=k4_ordinal1)]
+ (7)  [-r2_tarski(k5_numbers, k3_numbers)]
+ (8)  [r2_wellord2(_G4219, _G4268), - (k1_card_1(_G4219)=k1_card_1(_G4268))]
+ (9)  [-r2_wellord2(_G4219, _G4268), k1_card_1(_G4219)=k1_card_1(_G4268)]
+ (10)  [_G3493=_G3542, - (k1_card_1(_G3493)=k1_card_1(_G3542))]
+ (11)  [- (_G1493=_G1493)]
+ (12)  [_G1592=_G1637, - (_G1637=_G1592)]
+ (13)  [- (_G1825=_G1938), _G1825=_G1881, _G1881=_G1938]
+ (14)  [-r2_wellord2(_G2342, _G2479), r2_wellord2(_G2275, _G2410), _G2275=_G2342, _G2410=_G2479]
+ (15)  [-r2_tarski(_G2930, _G3067), r2_tarski(_G2863, _G2998), _G2863=_G2930, _G2998=_G3067]
+
+Connection Proof:
+-----------------
+1  [k1_card_1(k3_numbers)=k4_ordinal1]   (1)  
+1.1  [- (k1_card_1(k3_numbers)=k4_ordinal1), k1_card_1(k3_numbers)=k1_card_1(k5_numbers), k1_card_1(k5_numbers)=k4_ordinal1]   (13)  substitution:[[_G1825, _G1938, _G1881], [k1_card_1(k3_numbers), k4_ordinal1, k1_card_1(k5_numbers)]]
+1.1.1  [- (k1_card_1(k3_numbers)=k1_card_1(k5_numbers)), k1_card_1(k5_numbers)=k1_card_1(k3_numbers)]   (12)  substitution:[[_G1637, _G1592], [k1_card_1(k3_numbers), k1_card_1(k5_numbers)]]
+1.1.1.1  [- (k1_card_1(k5_numbers)=k1_card_1(k3_numbers)), r2_wellord2(k5_numbers, k3_numbers)]   (8)  substitution:[[_G4219, _G4268], [k5_numbers, k3_numbers]]
+1.1.1.1.1  [-r2_wellord2(k5_numbers, k3_numbers), r2_tarski(k5_numbers, k3_numbers)]   (5)  substitution:[[_G3906, _G3951], [k5_numbers, k3_numbers]]
+1.1.1.1.1.1  [-r2_tarski(k5_numbers, k3_numbers)]   (7)  
+1.1.2  [- (k1_card_1(k5_numbers)=k4_ordinal1), k1_card_1(k5_numbers)=k1_card_1(k4_ordinal1), k1_card_1(k4_ordinal1)=k4_ordinal1]   (13)  substitution:[[_G1825, _G1938, _G1881], [k1_card_1(k5_numbers), k4_ordinal1, k1_card_1(k4_ordinal1)]]
+1.1.2.1  [- (k1_card_1(k5_numbers)=k1_card_1(k4_ordinal1)), k5_numbers=k4_ordinal1]   (10)  substitution:[[_G3493, _G3542], [k5_numbers, k4_ordinal1]]
+1.1.2.1.1  [- (k5_numbers=k4_ordinal1)]   (3)  
+1.1.2.2  [- (k1_card_1(k4_ordinal1)=k4_ordinal1)]   (6)  
+------------------------------------------------------
+End of proof for t17_topgen_3

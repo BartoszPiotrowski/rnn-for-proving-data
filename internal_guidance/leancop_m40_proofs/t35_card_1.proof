@@ -1,0 +1,31 @@
+
+t35_card_1 is a Theorem
+Start of proof for t35_card_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-r2_wellord2(k1_ordinal1(1^[]), k1_ordinal1(2^[]))]
+ (2)  [r2_wellord2(1^[], 2^[])]
+ (3)  [- (k6_subset_1(k1_ordinal1(_G5781), k1_tarski(_G5781))=_G5781)]
+ (4)  [-r2_hidden(_G5945, k1_ordinal1(_G5945))]
+ (5)  [-r2_wellord2(k6_subset_1(_G5038, k1_tarski(_G5193)), k6_subset_1(_G5115, k1_tarski(_G5272))), r2_wellord2(_G5038, _G5115), r2_hidden(_G5193, _G5038), r2_hidden(_G5272, _G5115)]
+ (6)  [- (k6_subset_1(_G3831, _G3966)=k6_subset_1(_G3898, _G4035)), _G3831=_G3898, _G3966=_G4035]
+ (7)  [_G4428=_G4477, - (k1_tarski(_G4428)=k1_tarski(_G4477))]
+ (8)  [_G4697=_G4746, - (k1_ordinal1(_G4697)=k1_ordinal1(_G4746))]
+ (9)  [- (_G1822=_G1822)]
+ (10)  [_G1921=_G1966, - (_G1966=_G1921)]
+ (11)  [- (_G2154=_G2267), _G2154=_G2210, _G2210=_G2267]
+ (12)  [-r2_hidden(_G2671, _G2808), r2_hidden(_G2604, _G2739), _G2604=_G2671, _G2739=_G2808]
+ (13)  [-r2_wellord2(_G3259, _G3396), r2_wellord2(_G3192, _G3327), _G3192=_G3259, _G3327=_G3396]
+
+Connection Proof:
+-----------------
+1  [r2_wellord2(1^[], 2^[])]   (2)  
+1.1  [-r2_wellord2(1^[], 2^[]), r2_wellord2(k6_subset_1(k1_ordinal1(1^[]), k1_tarski(1^[])), k6_subset_1(k1_ordinal1(2^[]), k1_tarski(2^[]))), k6_subset_1(k1_ordinal1(1^[]), k1_tarski(1^[]))=1^[], k6_subset_1(k1_ordinal1(2^[]), k1_tarski(2^[]))=2^[]]   (13)  substitution:[[_G3259, _G3396, _G3192, _G3327], [1^[], 2^[], k6_subset_1(k1_ordinal1(1^[]), k1_tarski(1^[])), k6_subset_1(k1_ordinal1(2^[]), k1_tarski(2^[]))]]
+1.1.1  [-r2_wellord2(k6_subset_1(k1_ordinal1(1^[]), k1_tarski(1^[])), k6_subset_1(k1_ordinal1(2^[]), k1_tarski(2^[]))), r2_wellord2(k1_ordinal1(1^[]), k1_ordinal1(2^[])), r2_hidden(1^[], k1_ordinal1(1^[])), r2_hidden(2^[], k1_ordinal1(2^[]))]   (5)  substitution:[[_G5038, _G5193, _G5115, _G5272], [k1_ordinal1(1^[]), 1^[], k1_ordinal1(2^[]), 2^[]]]
+1.1.1.1  [-r2_wellord2(k1_ordinal1(1^[]), k1_ordinal1(2^[]))]   (1)  
+1.1.1.2  [-r2_hidden(1^[], k1_ordinal1(1^[]))]   (4)  substitution:[[_G5945], [1^[]]]
+1.1.1.3  [-r2_hidden(2^[], k1_ordinal1(2^[]))]   (4)  substitution:[[_G5945], [2^[]]]
+1.1.2  [- (k6_subset_1(k1_ordinal1(1^[]), k1_tarski(1^[]))=1^[])]   (3)  substitution:[[_G5781], [1^[]]]
+1.1.3  [- (k6_subset_1(k1_ordinal1(2^[]), k1_tarski(2^[]))=2^[])]   (3)  substitution:[[_G5781], [2^[]]]
+------------------------------------------------------
+End of proof for t35_card_1

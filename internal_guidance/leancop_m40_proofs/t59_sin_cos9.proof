@@ -1,0 +1,38 @@
+
+t59_sin_cos9 is a Theorem
+Start of proof for t59_sin_cos9
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], k1_numbers)]
+ (2)  [-r1_xxreal_0(k1_real_1(np__1), 1^[])]
+ (3)  [-r1_xxreal_0(1^[], np__1)]
+ (4)  [- (k5_sin_cos9(1^[])=k6_numbers)]
+ (5)  [1^[]=k6_numbers]
+ (6)  [- (k1_seq_1(k29_sin_cos, k6_numbers)=k6_numbers)]
+ (7)  [- (k1_sin_cos4(k6_numbers)=k6_numbers)]
+ (8)  [m1_subset_1(_G5458, k1_numbers), - (k1_sin_cos4(k5_sin_cos9(_G5458))=_G5458), r1_xxreal_0(k1_real_1(np__1), _G5458), r1_xxreal_0(_G5458, np__1)]
+ (9)  [- (k1_seq_1(_G3773, _G3908)=k1_seq_1(_G3840, _G3977)), _G3773=_G3840, _G3908=_G3977]
+ (10)  [_G4370=_G4419, - (k1_sin_cos4(_G4370)=k1_sin_cos4(_G4419))]
+ (11)  [_G4648=_G4697, - (k1_real_1(_G4648)=k1_real_1(_G4697))]
+ (12)  [_G4917=_G4966, - (k5_sin_cos9(_G4917)=k5_sin_cos9(_G4966))]
+ (13)  [- (_G1764=_G1764)]
+ (14)  [_G1863=_G1908, - (_G1908=_G1863)]
+ (15)  [- (_G2096=_G2209), _G2096=_G2152, _G2152=_G2209]
+ (16)  [-m1_subset_1(_G2613, _G2750), m1_subset_1(_G2546, _G2681), _G2546=_G2613, _G2681=_G2750]
+ (17)  [-r1_xxreal_0(_G3201, _G3338), r1_xxreal_0(_G3134, _G3269), _G3134=_G3201, _G3269=_G3338]
+
+Connection Proof:
+-----------------
+1  [1^[]=k6_numbers]   (5)  
+1.1  [- (1^[]=k6_numbers), 1^[]=k1_sin_cos4(k5_sin_cos9(1^[])), k1_sin_cos4(k5_sin_cos9(1^[]))=k6_numbers]   (15)  substitution:[[_G2096, _G2209, _G2152], [1^[], k6_numbers, k1_sin_cos4(k5_sin_cos9(1^[]))]]
+1.1.1  [- (1^[]=k1_sin_cos4(k5_sin_cos9(1^[]))), k1_sin_cos4(k5_sin_cos9(1^[]))=1^[]]   (14)  substitution:[[_G1908, _G1863], [1^[], k1_sin_cos4(k5_sin_cos9(1^[]))]]
+1.1.1.1  [- (k1_sin_cos4(k5_sin_cos9(1^[]))=1^[]), m1_subset_1(1^[], k1_numbers), r1_xxreal_0(k1_real_1(np__1), 1^[]), r1_xxreal_0(1^[], np__1)]   (8)  substitution:[[_G5458], [1^[]]]
+1.1.1.1.1  [-m1_subset_1(1^[], k1_numbers)]   (1)  
+1.1.1.1.2  [-r1_xxreal_0(k1_real_1(np__1), 1^[])]   (2)  
+1.1.1.1.3  [-r1_xxreal_0(1^[], np__1)]   (3)  
+1.1.2  [- (k1_sin_cos4(k5_sin_cos9(1^[]))=k6_numbers), k1_sin_cos4(k5_sin_cos9(1^[]))=k1_sin_cos4(k6_numbers), k1_sin_cos4(k6_numbers)=k6_numbers]   (15)  substitution:[[_G2096, _G2209, _G2152], [k1_sin_cos4(k5_sin_cos9(1^[])), k6_numbers, k1_sin_cos4(k6_numbers)]]
+1.1.2.1  [- (k1_sin_cos4(k5_sin_cos9(1^[]))=k1_sin_cos4(k6_numbers)), k5_sin_cos9(1^[])=k6_numbers]   (10)  substitution:[[_G4370, _G4419], [k5_sin_cos9(1^[]), k6_numbers]]
+1.1.2.1.1  [- (k5_sin_cos9(1^[])=k6_numbers)]   (4)  
+1.1.2.2  [- (k1_sin_cos4(k6_numbers)=k6_numbers)]   (7)  
+------------------------------------------------------
+End of proof for t59_sin_cos9

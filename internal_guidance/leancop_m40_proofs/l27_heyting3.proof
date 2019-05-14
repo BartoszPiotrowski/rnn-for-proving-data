@@ -1,0 +1,30 @@
+
+l27_heyting3 is a Theorem
+Start of proof for l27_heyting3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], k5_numbers)]
+ (2)  [-m1_subset_1(2^[], k5_numbers)]
+ (3)  [r1_tarski(k3_heyting3(1^[], 2^[]), k3_heyting3(k2_nat_1(1^[], np__1), 2^[]))]
+ (4)  [m1_subset_1(_G5998, k5_numbers), m1_subset_1(_G6115, k5_numbers), -r2_xboole_0(k3_heyting3(_G5998, _G6115), k3_heyting3(k2_nat_1(_G5998, np__1), _G6115))]
+ (5)  [r2_xboole_0(_G5657, _G5710), -r1_tarski(_G5657, _G5710)]
+ (6)  [r2_xboole_0(_G5657, _G5710), _G5657=_G5710]
+ (7)  [-r2_xboole_0(_G5657, _G5710), r1_tarski(_G5657, _G5710), - (_G5657=_G5710)]
+ (8)  [- (k3_heyting3(_G4430, _G4565)=k3_heyting3(_G4497, _G4634)), _G4430=_G4497, _G4565=_G4634]
+ (9)  [- (k2_nat_1(_G5018, _G5153)=k2_nat_1(_G5085, _G5222)), _G5018=_G5085, _G5153=_G5222]
+ (10)  [- (_G1803=_G1803)]
+ (11)  [_G1902=_G1947, - (_G1947=_G1902)]
+ (12)  [- (_G2135=_G2248), _G2135=_G2191, _G2191=_G2248]
+ (13)  [-r2_xboole_0(_G2652, _G2789), r2_xboole_0(_G2585, _G2720), _G2585=_G2652, _G2720=_G2789]
+ (14)  [-m1_subset_1(_G3249, _G3386), m1_subset_1(_G3182, _G3317), _G3182=_G3249, _G3317=_G3386]
+ (15)  [-r1_tarski(_G3837, _G3974), r1_tarski(_G3770, _G3905), _G3770=_G3837, _G3905=_G3974]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k3_heyting3(1^[], 2^[]), k3_heyting3(k2_nat_1(1^[], np__1), 2^[]))]   (3)  
+1.1  [-r1_tarski(k3_heyting3(1^[], 2^[]), k3_heyting3(k2_nat_1(1^[], np__1), 2^[])), r2_xboole_0(k3_heyting3(1^[], 2^[]), k3_heyting3(k2_nat_1(1^[], np__1), 2^[]))]   (5)  substitution:[[_G5657, _G5710], [k3_heyting3(1^[], 2^[]), k3_heyting3(k2_nat_1(1^[], np__1), 2^[])]]
+1.1.1  [-r2_xboole_0(k3_heyting3(1^[], 2^[]), k3_heyting3(k2_nat_1(1^[], np__1), 2^[])), m1_subset_1(1^[], k5_numbers), m1_subset_1(2^[], k5_numbers)]   (4)  substitution:[[_G5998, _G6115], [1^[], 2^[]]]
+1.1.1.1  [-m1_subset_1(1^[], k5_numbers)]   (1)  
+1.1.1.2  [-m1_subset_1(2^[], k5_numbers)]   (2)  
+------------------------------------------------------
+End of proof for l27_heyting3

@@ -1,0 +1,50 @@
+
+t34_power is a Theorem
+Start of proof for t34_power
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xreal_0(2^[])]
+ (2)  [-v1_xreal_0(3^[])]
+ (3)  [r1_xxreal_0(2^[], k6_numbers)]
+ (4)  [-r1_xxreal_0(k3_power(2^[], 3^[]), k6_numbers)]
+ (5)  [-v1_xreal_0(k3_power(_G8638, _G8689)), v1_xreal_0(_G8638), v1_xreal_0(_G8689)]
+ (6)  [v1_xreal_0(_G8925), v1_xreal_0(_G9019), -r1_xxreal_0(_G8925, k6_numbers), r1_xxreal_0(k9_prepower(_G8925, _G9019), k6_numbers)]
+ (7)  [v1_xreal_0(_G6884), v1_xreal_0(_G7061), v1_xreal_0(_G7234), -r1_xxreal_0(_G6884, k6_numbers), _G7234=k3_power(_G6884, _G7061), - (_G7234=k9_prepower(_G6884, _G7061))]
+ (8)  [v1_xreal_0(_G6884), v1_xreal_0(_G7061), v1_xreal_0(_G7234), -r1_xxreal_0(_G6884, k6_numbers), - (_G7234=k3_power(_G6884, _G7061)), _G7234=k9_prepower(_G6884, _G7061)]
+ (9)  [v1_xreal_0(_G6884), v1_xreal_0(_G7061), v1_xreal_0(_G7234), _G6884=k6_numbers, -r1_xxreal_0(_G7061, k6_numbers), _G7234=k3_power(_G6884, _G7061), - (_G7234=k6_numbers)]
+ (10)  [v1_xreal_0(_G6884), v1_xreal_0(_G7061), v1_xreal_0(_G7234), _G6884=k6_numbers, -r1_xxreal_0(_G7061, k6_numbers), - (_G7234=k3_power(_G6884, _G7061)), _G7234=k6_numbers]
+ (11)  [v1_xreal_0(_G6884), v1_xreal_0(_G7061), v1_xreal_0(_G7234), v1_int_1(_G7061), _G7234=k3_power(_G6884, _G7061), -v1_int_1(1^[_G7234, _G7061, _G6884])]
+ (12)  [v1_xreal_0(_G6884), v1_xreal_0(_G7061), v1_xreal_0(_G7234), v1_int_1(_G7061), _G7234=k3_power(_G6884, _G7061), - (1^[_G7234, _G7061, _G6884]=_G7061)]
+ (13)  [v1_xreal_0(_G6884), v1_xreal_0(_G7061), v1_xreal_0(_G7234), v1_int_1(_G7061), _G7234=k3_power(_G6884, _G7061), - (_G7234=k4_prepower(_G6884, 1^[_G7234, _G7061, _G6884]))]
+ (14)  [v1_xreal_0(_G6884), v1_xreal_0(_G7061), v1_xreal_0(_G7234), v1_int_1(_G7061), - (_G7234=k3_power(_G6884, _G7061)), v1_int_1(_G8166), _G8166=_G7061, _G7234=k4_prepower(_G6884, _G8166)]
+ (15)  [- (k4_prepower(_G5039, _G5174)=k4_prepower(_G5106, _G5243)), _G5039=_G5106, _G5174=_G5243]
+ (16)  [- (k9_prepower(_G5636, _G5771)=k9_prepower(_G5703, _G5840)), _G5636=_G5703, _G5771=_G5840]
+ (17)  [- (k3_power(_G6224, _G6359)=k3_power(_G6291, _G6428)), _G6224=_G6291, _G6359=_G6428]
+ (18)  [- (_G3050=_G3050)]
+ (19)  [_G3149=_G3194, - (_G3194=_G3149)]
+ (20)  [- (_G3382=_G3495), _G3382=_G3438, _G3438=_G3495]
+ (21)  [-v1_int_1(_G3881), _G3832=_G3881, v1_int_1(_G3832)]
+ (22)  [-v1_xreal_0(_G4159), _G4110=_G4159, v1_xreal_0(_G4110)]
+ (23)  [-r1_xxreal_0(_G4446, _G4583), r1_xxreal_0(_G4379, _G4514), _G4379=_G4446, _G4514=_G4583]
+
+Connection Proof:
+-----------------
+1  [r1_xxreal_0(2^[], k6_numbers)]   (3)  
+1.1  [-r1_xxreal_0(2^[], k6_numbers), v1_xreal_0(2^[]), v1_xreal_0(3^[]), v1_xreal_0(k3_power(2^[], 3^[])), k3_power(2^[], 3^[])=k3_power(2^[], 3^[]), - (k3_power(2^[], 3^[])=k9_prepower(2^[], 3^[]))]   (7)  substitution:[[_G6884, _G7061, _G7234], [2^[], 3^[], k3_power(2^[], 3^[])]]
+1.1.1  [-v1_xreal_0(2^[])]   (1)  
+1.1.2  [-v1_xreal_0(3^[])]   (2)  
+1.1.3  [-v1_xreal_0(k3_power(2^[], 3^[])), v1_xreal_0(2^[]), v1_xreal_0(3^[])]   (5)  substitution:[[_G8638, _G8689], [2^[], 3^[]]]
+1.1.3.1  [-v1_xreal_0(2^[])]   (1)  
+1.1.3.2  [-v1_xreal_0(3^[])]   (2)  
+1.1.4  [- (k3_power(2^[], 3^[])=k3_power(2^[], 3^[])), 2^[]=2^[], 3^[]=3^[]]   (17)  substitution:[[_G6224, _G6359, _G6291, _G6428], [2^[], 3^[], 2^[], 3^[]]]
+1.1.4.1  [- (2^[]=2^[])]   (18)  substitution:[[_G3050], [2^[]]]
+1.1.4.2  [- (3^[]=3^[])]   (18)  substitution:[[_G3050], [3^[]]]
+1.1.5  [k3_power(2^[], 3^[])=k9_prepower(2^[], 3^[]), -r1_xxreal_0(k9_prepower(2^[], 3^[]), k6_numbers), r1_xxreal_0(k3_power(2^[], 3^[]), k6_numbers), k6_numbers=k6_numbers]   (23)  substitution:[[_G4379, _G4446, _G4583, _G4514], [k3_power(2^[], 3^[]), k9_prepower(2^[], 3^[]), k6_numbers, k6_numbers]]
+1.1.5.1  [r1_xxreal_0(k9_prepower(2^[], 3^[]), k6_numbers), v1_xreal_0(2^[]), v1_xreal_0(3^[]), -r1_xxreal_0(2^[], k6_numbers)]   (6)  substitution:[[_G8925, _G9019], [2^[], 3^[]]]
+1.1.5.1.1  [-v1_xreal_0(2^[])]   (1)  
+1.1.5.1.2  [-v1_xreal_0(3^[])]   (2)  
+1.1.5.1.3  [r1_xxreal_0(2^[], k6_numbers)]   (3)  
+1.1.5.2  [-r1_xxreal_0(k3_power(2^[], 3^[]), k6_numbers)]   (4)  
+1.1.5.3  [- (k6_numbers=k6_numbers)]   (18)  substitution:[[_G3050], [k6_numbers]]
+------------------------------------------------------
+End of proof for t34_power

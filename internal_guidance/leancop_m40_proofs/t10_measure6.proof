@@ -1,0 +1,53 @@
+
+t10_measure6 is a Theorem
+Start of proof for t10_measure6
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v1_xboole_0(1^[])]
+ (2)  [-v6_xxreal_2(1^[])]
+ (3)  [-m1_subset_1(1^[], k1_zfmisc_1(k1_numbers))]
+ (4)  [-m1_subset_1(2^[], k7_numbers)]
+ (5)  [-m1_subset_1(3^[], k7_numbers)]
+ (6)  [-r1_xxreal_0(2^[], 3^[])]
+ (7)  [- (1^[]=k1_xxreal_1(2^[], 3^[]))]
+ (8)  [2^[]=k7_supinf_2(1^[])]
+ (9)  [m1_subset_1(_G7478, k7_numbers), -v1_xxreal_0(_G7478)]
+ (10)  [-v2_membered(k1_xxreal_1(_G7635, _G7686)), v1_xxreal_0(_G7635), v1_xxreal_0(_G7686)]
+ (11)  [v2_membered(_G7931), - (k7_supinf_2(_G7931)=k2_xxreal_2(_G7931))]
+ (12)  [v1_xxreal_0(_G8111), v1_xxreal_0(_G8203), r1_xxreal_0(_G8111, _G8203), - (k2_xxreal_2(k1_xxreal_1(_G8111, _G8203))=_G8111)]
+ (13)  [_G5972=_G6021, - (k2_xxreal_2(_G5972)=k2_xxreal_2(_G6021))]
+ (14)  [_G6250=_G6299, - (k1_zfmisc_1(_G6250)=k1_zfmisc_1(_G6299))]
+ (15)  [_G7116=_G7165, - (k7_supinf_2(_G7116)=k7_supinf_2(_G7165))]
+ (16)  [- (k1_xxreal_1(_G6528, _G6663)=k1_xxreal_1(_G6595, _G6732)), _G6528=_G6595, _G6663=_G6732]
+ (17)  [- (_G2767=_G2767)]
+ (18)  [_G2866=_G2911, - (_G2911=_G2866)]
+ (19)  [- (_G3099=_G3212), _G3099=_G3155, _G3155=_G3212]
+ (20)  [-v2_membered(_G3598), _G3549=_G3598, v2_membered(_G3549)]
+ (21)  [-v1_xxreal_0(_G3876), _G3827=_G3876, v1_xxreal_0(_G3827)]
+ (22)  [-v1_xboole_0(_G4154), _G4105=_G4154, v1_xboole_0(_G4105)]
+ (23)  [-v6_xxreal_2(_G4432), _G4383=_G4432, v6_xxreal_2(_G4383)]
+ (24)  [-m1_subset_1(_G4728, _G4865), m1_subset_1(_G4661, _G4796), _G4661=_G4728, _G4796=_G4865]
+ (25)  [-r1_xxreal_0(_G5316, _G5453), r1_xxreal_0(_G5249, _G5384), _G5249=_G5316, _G5384=_G5453]
+
+Connection Proof:
+-----------------
+1  [2^[]=k7_supinf_2(1^[])]   (8)  
+1.1  [- (2^[]=k7_supinf_2(1^[])), k7_supinf_2(1^[])=2^[]]   (18)  substitution:[[_G2911, _G2866], [2^[], k7_supinf_2(1^[])]]
+1.1.1  [- (k7_supinf_2(1^[])=2^[]), k7_supinf_2(1^[])=k7_supinf_2(k1_xxreal_1(2^[], 3^[])), k7_supinf_2(k1_xxreal_1(2^[], 3^[]))=2^[]]   (19)  substitution:[[_G3099, _G3212, _G3155], [k7_supinf_2(1^[]), 2^[], k7_supinf_2(k1_xxreal_1(2^[], 3^[]))]]
+1.1.1.1  [- (k7_supinf_2(1^[])=k7_supinf_2(k1_xxreal_1(2^[], 3^[]))), 1^[]=k1_xxreal_1(2^[], 3^[])]   (15)  substitution:[[_G7116, _G7165], [1^[], k1_xxreal_1(2^[], 3^[])]]
+1.1.1.1.1  [- (1^[]=k1_xxreal_1(2^[], 3^[]))]   (7)  
+1.1.1.2  [- (k7_supinf_2(k1_xxreal_1(2^[], 3^[]))=2^[]), k7_supinf_2(k1_xxreal_1(2^[], 3^[]))=k2_xxreal_2(k1_xxreal_1(2^[], 3^[])), k2_xxreal_2(k1_xxreal_1(2^[], 3^[]))=2^[]]   (19)  substitution:[[_G3099, _G3212, _G3155], [k7_supinf_2(k1_xxreal_1(2^[], 3^[])), 2^[], k2_xxreal_2(k1_xxreal_1(2^[], 3^[]))]]
+1.1.1.2.1  [- (k7_supinf_2(k1_xxreal_1(2^[], 3^[]))=k2_xxreal_2(k1_xxreal_1(2^[], 3^[]))), v2_membered(k1_xxreal_1(2^[], 3^[]))]   (11)  substitution:[[_G7931], [k1_xxreal_1(2^[], 3^[])]]
+1.1.1.2.1.1  [-v2_membered(k1_xxreal_1(2^[], 3^[])), v1_xxreal_0(2^[]), v1_xxreal_0(3^[])]   (10)  substitution:[[_G7635, _G7686], [2^[], 3^[]]]
+1.1.1.2.1.1.1  [-v1_xxreal_0(2^[]), m1_subset_1(2^[], k7_numbers)]   (9)  substitution:[[_G7478], [2^[]]]
+1.1.1.2.1.1.1.1  [-m1_subset_1(2^[], k7_numbers)]   (4)  
+1.1.1.2.1.1.2  [-v1_xxreal_0(3^[]), m1_subset_1(3^[], k7_numbers)]   (9)  substitution:[[_G7478], [3^[]]]
+1.1.1.2.1.1.2.1  [-m1_subset_1(3^[], k7_numbers)]   (5)  
+1.1.1.2.2  [- (k2_xxreal_2(k1_xxreal_1(2^[], 3^[]))=2^[]), v1_xxreal_0(2^[]), v1_xxreal_0(3^[]), r1_xxreal_0(2^[], 3^[])]   (12)  substitution:[[_G8111, _G8203], [2^[], 3^[]]]
+1.1.1.2.2.1  [-v1_xxreal_0(2^[]), m1_subset_1(2^[], k7_numbers)]   (9)  substitution:[[_G7478], [2^[]]]
+1.1.1.2.2.1.1  [-m1_subset_1(2^[], k7_numbers)]   (4)  
+1.1.1.2.2.2  [-v1_xxreal_0(3^[]), m1_subset_1(3^[], k7_numbers)]   (9)  substitution:[[_G7478], [3^[]]]
+1.1.1.2.2.2.1  [-m1_subset_1(3^[], k7_numbers)]   (5)  
+1.1.1.2.2.3  [-r1_xxreal_0(2^[], 3^[])]   (6)  
+------------------------------------------------------
+End of proof for t10_measure6

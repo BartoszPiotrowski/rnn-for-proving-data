@@ -1,0 +1,47 @@
+
+t19_zf_lang is a Theorem
+Start of proof for t19_zf_lang
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_zf_lang(3^[])]
+ (2)  [-m2_finseq_1(3^[], k5_numbers)]
+ (3)  [-v3_zf_lang(3^[])]
+ (4)  [k1_funct_1(3^[], np__1)=np__1]
+ (5)  [m2_subset_1(_G7850, k5_numbers, k1_zf_lang), m2_subset_1(_G8021, k5_numbers, k1_zf_lang), - (k1_funct_1(k4_zf_lang(_G7850, _G8021), np__1)=k6_numbers)]
+ (6)  [m2_subset_1(_G7850, k5_numbers, k1_zf_lang), m2_subset_1(_G8021, k5_numbers, k1_zf_lang), - (k1_funct_1(k5_zf_lang(_G7850, _G8021), np__1)=np__1)]
+ (7)  [m2_finseq_1(_G7118, k5_numbers), v1_zf_lang(_G7118), v3_zf_lang(_G7118), -m2_subset_1(1^[_G7118], k5_numbers, k1_zf_lang)]
+ (8)  [m2_finseq_1(_G7118, k5_numbers), v1_zf_lang(_G7118), v3_zf_lang(_G7118), -m2_subset_1(2^[_G7118], k5_numbers, k1_zf_lang)]
+ (9)  [m2_finseq_1(_G7118, k5_numbers), v1_zf_lang(_G7118), v3_zf_lang(_G7118), - (_G7118=k5_zf_lang(1^[_G7118], 2^[_G7118]))]
+ (10)  [m2_finseq_1(_G7118, k5_numbers), v1_zf_lang(_G7118), -v3_zf_lang(_G7118), m2_subset_1(_G7337, k5_numbers, k1_zf_lang), m2_subset_1(_G7499, k5_numbers, k1_zf_lang), _G7118=k5_zf_lang(_G7337, _G7499)]
+ (11)  [- (k4_zf_lang(_G5273, _G5408)=k4_zf_lang(_G5340, _G5477)), _G5273=_G5340, _G5408=_G5477]
+ (12)  [- (k5_zf_lang(_G5870, _G6005)=k5_zf_lang(_G5937, _G6074)), _G5870=_G5937, _G6005=_G6074]
+ (13)  [- (k1_funct_1(_G6458, _G6593)=k1_funct_1(_G6525, _G6662)), _G6458=_G6525, _G6593=_G6662]
+ (14)  [- (_G2235=_G2235)]
+ (15)  [_G2334=_G2379, - (_G2379=_G2334)]
+ (16)  [- (_G2567=_G2680), _G2567=_G2623, _G2623=_G2680]
+ (17)  [-m2_subset_1(_G3102, _G3275, _G3452), m2_subset_1(_G3017, _G3188, _G3363), _G3017=_G3102, _G3188=_G3275, _G3363=_G3452]
+ (18)  [-v1_zf_lang(_G4094), _G4045=_G4094, v1_zf_lang(_G4045)]
+ (19)  [-v3_zf_lang(_G4960), _G4911=_G4960, v3_zf_lang(_G4911)]
+ (20)  [-m2_finseq_1(_G4390, _G4527), m2_finseq_1(_G4323, _G4458), _G4323=_G4390, _G4458=_G4527]
+
+Connection Proof:
+-----------------
+1  [k1_funct_1(3^[], np__1)=np__1]   (4)  
+1.1  [- (k1_funct_1(3^[], np__1)=np__1), k1_funct_1(3^[], np__1)=k1_funct_1(k5_zf_lang(1^[3^[]], 2^[3^[]]), np__1), k1_funct_1(k5_zf_lang(1^[3^[]], 2^[3^[]]), np__1)=np__1]   (16)  substitution:[[_G2567, _G2680, _G2623], [k1_funct_1(3^[], np__1), np__1, k1_funct_1(k5_zf_lang(1^[3^[]], 2^[3^[]]), np__1)]]
+1.1.1  [- (k1_funct_1(3^[], np__1)=k1_funct_1(k5_zf_lang(1^[3^[]], 2^[3^[]]), np__1)), 3^[]=k5_zf_lang(1^[3^[]], 2^[3^[]]), np__1=np__1]   (13)  substitution:[[_G6458, _G6593, _G6525, _G6662], [3^[], np__1, k5_zf_lang(1^[3^[]], 2^[3^[]]), np__1]]
+1.1.1.1  [- (3^[]=k5_zf_lang(1^[3^[]], 2^[3^[]])), m2_finseq_1(3^[], k5_numbers), v1_zf_lang(3^[]), v3_zf_lang(3^[])]   (9)  substitution:[[_G7118], [3^[]]]
+1.1.1.1.1  [-m2_finseq_1(3^[], k5_numbers)]   (2)  
+1.1.1.1.2  [-v1_zf_lang(3^[])]   (1)  
+1.1.1.1.3  [-v3_zf_lang(3^[])]   (3)  
+1.1.1.2  [- (np__1=np__1)]   (14)  substitution:[[_G2235], [np__1]]
+1.1.2  [- (k1_funct_1(k5_zf_lang(1^[3^[]], 2^[3^[]]), np__1)=np__1), m2_subset_1(1^[3^[]], k5_numbers, k1_zf_lang), m2_subset_1(2^[3^[]], k5_numbers, k1_zf_lang)]   (6)  substitution:[[_G7850, _G8021], [1^[3^[]], 2^[3^[]]]]
+1.1.2.1  [-m2_subset_1(1^[3^[]], k5_numbers, k1_zf_lang), m2_finseq_1(3^[], k5_numbers), v1_zf_lang(3^[]), v3_zf_lang(3^[])]   (7)  substitution:[[_G7118], [3^[]]]
+1.1.2.1.1  [-m2_finseq_1(3^[], k5_numbers)]   (2)  
+1.1.2.1.2  [-v1_zf_lang(3^[])]   (1)  
+1.1.2.1.3  [-v3_zf_lang(3^[])]   (3)  
+1.1.2.2  [-m2_subset_1(2^[3^[]], k5_numbers, k1_zf_lang), m2_finseq_1(3^[], k5_numbers), v1_zf_lang(3^[]), v3_zf_lang(3^[])]   (8)  substitution:[[_G7118], [3^[]]]
+1.1.2.2.1  [-m2_finseq_1(3^[], k5_numbers)]   (2)  
+1.1.2.2.2  [-v1_zf_lang(3^[])]   (1)  
+1.1.2.2.3  [-v3_zf_lang(3^[])]   (3)  
+------------------------------------------------------
+End of proof for t19_zf_lang

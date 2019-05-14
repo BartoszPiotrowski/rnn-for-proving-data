@@ -1,0 +1,25 @@
+
+t2_ami_6 is a Theorem
+Start of proof for t2_ami_6
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k5_xtuple_0(k2_compos_1(k1_ami_3))=k1_xboole_0]
+ (2)  [- (k5_xtuple_0(k3_xtuple_0(_G3623, _G3673, _G3724))=_G3673)]
+ (3)  [- (k6_numbers=k1_xboole_0)]
+ (4)  [- (k2_compos_1(k1_ami_3)=k3_xtuple_0(k6_numbers, k1_xboole_0, k1_xboole_0))]
+ (5)  [- (_G1203=_G1203)]
+ (6)  [_G1302=_G1347, - (_G1347=_G1302)]
+ (7)  [- (_G1535=_G1648), _G1535=_G1591, _G1591=_G1648]
+ (8)  [- (k3_xtuple_0(_G1985, _G2156, _G2331)=k3_xtuple_0(_G2070, _G2243, _G2420)), _G1985=_G2070, _G2156=_G2243, _G2331=_G2420]
+ (9)  [_G3013=_G3062, - (k5_xtuple_0(_G3013)=k5_xtuple_0(_G3062))]
+ (10)  [_G3282=_G3331, - (k2_compos_1(_G3282)=k2_compos_1(_G3331))]
+
+Connection Proof:
+-----------------
+1  [k5_xtuple_0(k2_compos_1(k1_ami_3))=k1_xboole_0]   (1)  
+1.1  [- (k5_xtuple_0(k2_compos_1(k1_ami_3))=k1_xboole_0), k5_xtuple_0(k2_compos_1(k1_ami_3))=k5_xtuple_0(k3_xtuple_0(k6_numbers, k1_xboole_0, k1_xboole_0)), k5_xtuple_0(k3_xtuple_0(k6_numbers, k1_xboole_0, k1_xboole_0))=k1_xboole_0]   (7)  substitution:[[_G1535, _G1648, _G1591], [k5_xtuple_0(k2_compos_1(k1_ami_3)), k1_xboole_0, k5_xtuple_0(k3_xtuple_0(k6_numbers, k1_xboole_0, k1_xboole_0))]]
+1.1.1  [- (k5_xtuple_0(k2_compos_1(k1_ami_3))=k5_xtuple_0(k3_xtuple_0(k6_numbers, k1_xboole_0, k1_xboole_0))), k2_compos_1(k1_ami_3)=k3_xtuple_0(k6_numbers, k1_xboole_0, k1_xboole_0)]   (9)  substitution:[[_G3013, _G3062], [k2_compos_1(k1_ami_3), k3_xtuple_0(k6_numbers, k1_xboole_0, k1_xboole_0)]]
+1.1.1.1  [- (k2_compos_1(k1_ami_3)=k3_xtuple_0(k6_numbers, k1_xboole_0, k1_xboole_0))]   (4)  
+1.1.2  [- (k5_xtuple_0(k3_xtuple_0(k6_numbers, k1_xboole_0, k1_xboole_0))=k1_xboole_0)]   (2)  substitution:[[_G3623, _G3673, _G3724], [k6_numbers, k1_xboole_0, k1_xboole_0]]
+------------------------------------------------------
+End of proof for t2_ami_6

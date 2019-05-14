@@ -1,0 +1,52 @@
+
+t7_finseq_3 is a Theorem
+Start of proof for t7_finseq_3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-3^[], k2_finseq_1(1^[])=k1_xboole_0]
+ (2)  [-3^[], r2_hidden(1^[], k2_finseq_1(1^[]))]
+ (3)  [-2^[], -r2_hidden(1^[], k2_finseq_1(1^[]))]
+ (4)  [-2^[], - (k2_finseq_1(1^[])=k1_xboole_0)]
+ (5)  [-v7_ordinal1(1^[])]
+ (6)  [2^[], 3^[]]
+ (7)  [v7_ordinal1(_G5276), -r2_wellord2(k2_finseq_1(_G5276), _G5276)]
+ (8)  [- (k6_numbers=k1_xboole_0)]
+ (9)  [r2_wellord2(_G5506, k1_xboole_0), - (_G5506=k1_xboole_0)]
+ (10)  [-r1_tarski(k1_xboole_0, _G5689)]
+ (11)  [r2_hidden(_G6036, _G6083), r1_tarski(_G6083, _G6036)]
+ (12)  [v7_ordinal1(_G5788), - (_G5788=k6_numbers), -r2_hidden(_G5788, k2_finseq_1(_G5788))]
+ (13)  [_G4977=_G5026, - (k2_finseq_1(_G4977)=k2_finseq_1(_G5026))]
+ (14)  [- (_G2060=_G2060)]
+ (15)  [_G2159=_G2204, - (_G2204=_G2159)]
+ (16)  [- (_G2392=_G2505), _G2392=_G2448, _G2448=_G2505]
+ (17)  [-r2_wellord2(_G2909, _G3046), r2_wellord2(_G2842, _G2977), _G2842=_G2909, _G2977=_G3046]
+ (18)  [-r1_tarski(_G3506, _G3643), r1_tarski(_G3439, _G3574), _G3439=_G3506, _G3574=_G3643]
+ (19)  [-v7_ordinal1(_G4085), _G4036=_G4085, v7_ordinal1(_G4036)]
+ (20)  [-r2_hidden(_G4372, _G4509), r2_hidden(_G4305, _G4440), _G4305=_G4372, _G4440=_G4509]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(1^[], k2_finseq_1(1^[])), r1_tarski(k2_finseq_1(1^[]), 1^[])]   (11)  substitution:[[_G6036, _G6083], [1^[], k2_finseq_1(1^[])]]
+1.1  [-r2_hidden(1^[], k2_finseq_1(1^[])), v7_ordinal1(1^[]), - (1^[]=k6_numbers)]   (12)  substitution:[[_G5788], [1^[]]]
+1.1.1  [-v7_ordinal1(1^[])]   (5)  
+1.1.2  [1^[]=k6_numbers, - (1^[]=k1_xboole_0), k6_numbers=k1_xboole_0]   (16)  substitution:[[_G2392, _G2448, _G2505], [1^[], k6_numbers, k1_xboole_0]]
+1.1.2.1  [1^[]=k1_xboole_0, -r2_wellord2(k2_finseq_1(1^[]), k1_xboole_0), r2_wellord2(k2_finseq_1(1^[]), 1^[]), k2_finseq_1(1^[])=k2_finseq_1(1^[])]   (17)  substitution:[[_G2977, _G3046, _G2909, _G2842], [1^[], k1_xboole_0, k2_finseq_1(1^[]), k2_finseq_1(1^[])]]
+1.1.2.1.1  [r2_wellord2(k2_finseq_1(1^[]), k1_xboole_0), - (k2_finseq_1(1^[])=k1_xboole_0)]   (9)  substitution:[[_G5506], [k2_finseq_1(1^[])]]
+1.1.2.1.1.1  [k2_finseq_1(1^[])=k1_xboole_0, -3^[]]   (1)  
+1.1.2.1.1.1.1  [3^[], 2^[]]   (6)  
+1.1.2.1.1.1.1.1  [-2^[], -r2_hidden(1^[], k2_finseq_1(1^[]))]   (3)  
+1.1.2.1.1.1.1.1.1  [r2_hidden(1^[], k2_finseq_1(1^[]))]   (reduction:1)  
+1.1.2.1.2  [-r2_wellord2(k2_finseq_1(1^[]), 1^[]), v7_ordinal1(1^[])]   (7)  substitution:[[_G5276], [1^[]]]
+1.1.2.1.2.1  [-v7_ordinal1(1^[])]   (5)  
+1.1.2.1.3  [- (k2_finseq_1(1^[])=k2_finseq_1(1^[]))]   (14)  substitution:[[_G2060], [k2_finseq_1(1^[])]]
+1.1.2.2  [- (k6_numbers=k1_xboole_0)]   (8)  
+1.2  [-r1_tarski(k2_finseq_1(1^[]), 1^[]), r1_tarski(k1_xboole_0, 1^[]), k1_xboole_0=k2_finseq_1(1^[]), 1^[]=1^[]]   (18)  substitution:[[_G3506, _G3643, _G3439, _G3574], [k2_finseq_1(1^[]), 1^[], k1_xboole_0, 1^[]]]
+1.2.1  [-r1_tarski(k1_xboole_0, 1^[])]   (10)  substitution:[[_G5689], [1^[]]]
+1.2.2  [- (k1_xboole_0=k2_finseq_1(1^[])), k2_finseq_1(1^[])=k1_xboole_0]   (15)  substitution:[[_G2204, _G2159], [k1_xboole_0, k2_finseq_1(1^[])]]
+1.2.2.1  [- (k2_finseq_1(1^[])=k1_xboole_0), -2^[]]   (4)  
+1.2.2.1.1  [2^[], 3^[]]   (6)  
+1.2.2.1.1.1  [-3^[], r2_hidden(1^[], k2_finseq_1(1^[]))]   (2)  
+1.2.2.1.1.1.1  [-r2_hidden(1^[], k2_finseq_1(1^[]))]   (lemmata:1)  
+1.2.3  [- (1^[]=1^[])]   (14)  substitution:[[_G2060], [1^[]]]
+------------------------------------------------------
+End of proof for t7_finseq_3

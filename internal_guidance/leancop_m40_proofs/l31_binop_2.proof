@@ -1,0 +1,22 @@
+
+l31_binop_2 is a Theorem
+Start of proof for l31_binop_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [m1_subset_1(k6_numbers, k4_numbers)]
+ (2)  [-r2_hidden(k6_numbers, k5_numbers)]
+ (3)  [-r1_tarski(k5_numbers, k4_numbers)]
+ (4)  [r2_hidden(_G1244, _G1289), -m1_subset_1(_G1244, _G1289)]
+ (5)  [-r1_tarski(_G737, _G793), -r2_hidden(1^[_G793, _G737], _G737)]
+ (6)  [-r1_tarski(_G737, _G793), r2_hidden(1^[_G793, _G737], _G793)]
+ (7)  [r1_tarski(_G737, _G793), r2_hidden(_G907, _G737), -r2_hidden(_G907, _G793)]
+
+Connection Proof:
+-----------------
+1  [m1_subset_1(k6_numbers, k4_numbers)]   (1)  
+1.1  [-m1_subset_1(k6_numbers, k4_numbers), r2_hidden(k6_numbers, k4_numbers)]   (4)  substitution:[[_G1244, _G1289], [k6_numbers, k4_numbers]]
+1.1.1  [-r2_hidden(k6_numbers, k4_numbers), r1_tarski(k5_numbers, k4_numbers), r2_hidden(k6_numbers, k5_numbers)]   (7)  substitution:[[_G907, _G793, _G737], [k6_numbers, k4_numbers, k5_numbers]]
+1.1.1.1  [-r1_tarski(k5_numbers, k4_numbers)]   (3)  
+1.1.1.2  [-r2_hidden(k6_numbers, k5_numbers)]   (2)  
+------------------------------------------------------
+End of proof for l31_binop_2

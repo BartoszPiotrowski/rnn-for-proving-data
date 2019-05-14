@@ -1,0 +1,61 @@
+
+t11_tops_3 is a Theorem
+Start of proof for t11_tops_3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v2_pre_topc(2^[])]
+ (2)  [-l1_pre_topc(2^[])]
+ (3)  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(2^[])))]
+ (4)  [-m1_subset_1(4^[], k1_zfmisc_1(u1_struct_0(2^[])))]
+ (5)  [-v2_tops_1(3^[], 2^[])]
+ (6)  [-r1_tarski(4^[], 3^[])]
+ (7)  [v2_tops_1(4^[], 2^[])]
+ (8)  [-r1_tarski(_G7029, _G7142), r1_tarski(_G7029, _G7085), r1_tarski(_G7085, _G7142)]
+ (9)  [l1_pre_topc(_G7428), v2_pre_topc(_G7428), m1_subset_1(_G7605, k1_zfmisc_1(u1_struct_0(_G7428))), -v2_tops_1(_G7605, _G7428), -m1_subset_1(1^[_G7605, _G7428], k1_zfmisc_1(u1_struct_0(_G7428)))]
+ (10)  [l1_pre_topc(_G7428), v2_pre_topc(_G7428), m1_subset_1(_G7605, k1_zfmisc_1(u1_struct_0(_G7428))), -v2_tops_1(_G7605, _G7428), -r1_tarski(1^[_G7605, _G7428], _G7605)]
+ (11)  [l1_pre_topc(_G7428), v2_pre_topc(_G7428), m1_subset_1(_G7605, k1_zfmisc_1(u1_struct_0(_G7428))), -v2_tops_1(_G7605, _G7428), -v3_pre_topc(1^[_G7605, _G7428], _G7428)]
+ (12)  [l1_pre_topc(_G7428), v2_pre_topc(_G7428), m1_subset_1(_G7605, k1_zfmisc_1(u1_struct_0(_G7428))), -v2_tops_1(_G7605, _G7428), 1^[_G7605, _G7428]=k1_xboole_0]
+ (13)  [l1_pre_topc(_G7428), v2_pre_topc(_G7428), m1_subset_1(_G7605, k1_zfmisc_1(u1_struct_0(_G7428))), v2_tops_1(_G7605, _G7428), m1_subset_1(_G7830, k1_zfmisc_1(u1_struct_0(_G7428))), - (_G7830=k1_xboole_0), r1_tarski(_G7830, _G7605), v3_pre_topc(_G7830, _G7428)]
+ (14)  [_G6440=_G6489, - (k1_zfmisc_1(_G6440)=k1_zfmisc_1(_G6489))]
+ (15)  [_G6709=_G6758, - (u1_struct_0(_G6709)=u1_struct_0(_G6758))]
+ (16)  [- (_G2597=_G2597)]
+ (17)  [_G2696=_G2741, - (_G2741=_G2696)]
+ (18)  [- (_G2929=_G3042), _G2929=_G2985, _G2985=_G3042]
+ (19)  [-v3_pre_topc(_G3446, _G3583), v3_pre_topc(_G3379, _G3514), _G3379=_G3446, _G3514=_G3583]
+ (20)  [-v2_pre_topc(_G4025), _G3976=_G4025, v2_pre_topc(_G3976)]
+ (21)  [-l1_pre_topc(_G4303), _G4254=_G4303, l1_pre_topc(_G4254)]
+ (22)  [-m1_subset_1(_G4599, _G4736), m1_subset_1(_G4532, _G4667), _G4532=_G4599, _G4667=_G4736]
+ (23)  [-r1_tarski(_G5196, _G5333), r1_tarski(_G5129, _G5264), _G5129=_G5196, _G5264=_G5333]
+ (24)  [-v2_tops_1(_G5784, _G5921), v2_tops_1(_G5717, _G5852), _G5717=_G5784, _G5852=_G5921]
+
+Connection Proof:
+-----------------
+1  [v2_tops_1(4^[], 2^[])]   (7)  
+1.1  [-v2_tops_1(4^[], 2^[]), l1_pre_topc(2^[]), v2_pre_topc(2^[]), m1_subset_1(4^[], k1_zfmisc_1(u1_struct_0(2^[]))), -r1_tarski(1^[4^[], 2^[]], 4^[])]   (10)  substitution:[[_G7605, _G7428], [4^[], 2^[]]]
+1.1.1  [-l1_pre_topc(2^[])]   (2)  
+1.1.2  [-v2_pre_topc(2^[])]   (1)  
+1.1.3  [-m1_subset_1(4^[], k1_zfmisc_1(u1_struct_0(2^[])))]   (4)  
+1.1.4  [r1_tarski(1^[4^[], 2^[]], 4^[]), -r1_tarski(1^[4^[], 2^[]], 3^[]), r1_tarski(4^[], 3^[])]   (8)  substitution:[[_G7029, _G7085, _G7142], [1^[4^[], 2^[]], 4^[], 3^[]]]
+1.1.4.1  [r1_tarski(1^[4^[], 2^[]], 3^[]), l1_pre_topc(2^[]), v2_pre_topc(2^[]), m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(2^[]))), v2_tops_1(3^[], 2^[]), m1_subset_1(1^[4^[], 2^[]], k1_zfmisc_1(u1_struct_0(2^[]))), - (1^[4^[], 2^[]]=k1_xboole_0), v3_pre_topc(1^[4^[], 2^[]], 2^[])]   (13)  substitution:[[_G7830, _G7605, _G7428], [1^[4^[], 2^[]], 3^[], 2^[]]]
+1.1.4.1.1  [-l1_pre_topc(2^[])]   (2)  
+1.1.4.1.2  [-v2_pre_topc(2^[])]   (1)  
+1.1.4.1.3  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(2^[])))]   (3)  
+1.1.4.1.4  [-v2_tops_1(3^[], 2^[])]   (5)  
+1.1.4.1.5  [-m1_subset_1(1^[4^[], 2^[]], k1_zfmisc_1(u1_struct_0(2^[]))), l1_pre_topc(2^[]), v2_pre_topc(2^[]), m1_subset_1(4^[], k1_zfmisc_1(u1_struct_0(2^[]))), -v2_tops_1(4^[], 2^[])]   (9)  substitution:[[_G7605, _G7428], [4^[], 2^[]]]
+1.1.4.1.5.1  [-l1_pre_topc(2^[])]   (2)  
+1.1.4.1.5.2  [-v2_pre_topc(2^[])]   (1)  
+1.1.4.1.5.3  [-m1_subset_1(4^[], k1_zfmisc_1(u1_struct_0(2^[])))]   (4)  
+1.1.4.1.5.4  [v2_tops_1(4^[], 2^[])]   (7)  
+1.1.4.1.6  [1^[4^[], 2^[]]=k1_xboole_0, l1_pre_topc(2^[]), v2_pre_topc(2^[]), m1_subset_1(4^[], k1_zfmisc_1(u1_struct_0(2^[]))), -v2_tops_1(4^[], 2^[])]   (12)  substitution:[[_G7605, _G7428], [4^[], 2^[]]]
+1.1.4.1.6.1  [-l1_pre_topc(2^[])]   (2)  
+1.1.4.1.6.2  [-v2_pre_topc(2^[])]   (1)  
+1.1.4.1.6.3  [-m1_subset_1(4^[], k1_zfmisc_1(u1_struct_0(2^[])))]   (4)  
+1.1.4.1.6.4  [v2_tops_1(4^[], 2^[])]   (7)  
+1.1.4.1.7  [-v3_pre_topc(1^[4^[], 2^[]], 2^[]), l1_pre_topc(2^[]), v2_pre_topc(2^[]), m1_subset_1(4^[], k1_zfmisc_1(u1_struct_0(2^[]))), -v2_tops_1(4^[], 2^[])]   (11)  substitution:[[_G7605, _G7428], [4^[], 2^[]]]
+1.1.4.1.7.1  [-l1_pre_topc(2^[])]   (2)  
+1.1.4.1.7.2  [-v2_pre_topc(2^[])]   (1)  
+1.1.4.1.7.3  [-m1_subset_1(4^[], k1_zfmisc_1(u1_struct_0(2^[])))]   (4)  
+1.1.4.1.7.4  [v2_tops_1(4^[], 2^[])]   (7)  
+1.1.4.2  [-r1_tarski(4^[], 3^[])]   (6)  
+------------------------------------------------------
+End of proof for t11_tops_3

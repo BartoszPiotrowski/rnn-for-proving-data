@@ -1,0 +1,17 @@
+
+t14_relset_1 is a Theorem
+Start of proof for t14_relset_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [m1_subset_1(k4_relat_1(1^[]), k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]
+ (2)  [-r1_tarski(k4_relat_1(_G634), k2_zfmisc_1(_G634, _G634))]
+ (3)  [m1_subset_1(_G782, k1_zfmisc_1(_G829)), -r1_tarski(_G782, _G829)]
+ (4)  [-m1_subset_1(_G782, k1_zfmisc_1(_G829)), r1_tarski(_G782, _G829)]
+
+Connection Proof:
+-----------------
+1  [m1_subset_1(k4_relat_1(1^[]), k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]   (1)  
+1.1  [-m1_subset_1(k4_relat_1(1^[]), k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[]))), r1_tarski(k4_relat_1(1^[]), k2_zfmisc_1(1^[], 1^[]))]   (4)  substitution:[[_G782, _G829], [k4_relat_1(1^[]), k2_zfmisc_1(1^[], 1^[])]]
+1.1.1  [-r1_tarski(k4_relat_1(1^[]), k2_zfmisc_1(1^[], 1^[]))]   (2)  substitution:[[_G634], [1^[]]]
+------------------------------------------------------
+End of proof for t14_relset_1

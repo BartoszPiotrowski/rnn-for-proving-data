@@ -1,0 +1,28 @@
+
+t17_bcialg_5 is a Theorem
+Start of proof for t17_bcialg_5
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m2_subset_1(1^[], k1_numbers, k5_numbers)]
+ (2)  [-m2_subset_1(2^[], k1_numbers, k5_numbers)]
+ (3)  [-m2_subset_1(3^[], k1_numbers, k5_numbers)]
+ (4)  [-m2_subset_1(4^[], k1_numbers, k5_numbers)]
+ (5)  [-v8_bcialg_1(5^[])]
+ (6)  [-m1_bcialg_5(5^[], 1^[], 2^[], 3^[], 4^[])]
+ (7)  [-m2_subset_1(6^[], k1_numbers, k5_numbers)]
+ (8)  [v8_bcialg_1(5^[]), m1_bcialg_5(5^[], k2_nat_1(1^[], 6^[]), 2^[], 3^[], k2_nat_1(4^[], 6^[]))]
+ (9)  [m2_subset_1(_G1040, k1_numbers, k5_numbers), m2_subset_1(_G1252, k1_numbers, k5_numbers), m2_subset_1(_G1458, k1_numbers, k5_numbers), m2_subset_1(_G1658, k1_numbers, k5_numbers), m1_bcialg_5(_G1852, _G1040, _G1252, _G1458, _G1658), m2_subset_1(_G2126, k1_numbers, k5_numbers), -m1_bcialg_5(_G1852, k2_nat_1(_G1040, _G2126), _G1252, _G1458, k2_nat_1(_G1658, _G2126))]
+
+Connection Proof:
+-----------------
+1  [v8_bcialg_1(5^[]), m1_bcialg_5(5^[], k2_nat_1(1^[], 6^[]), 2^[], 3^[], k2_nat_1(4^[], 6^[]))]   (8)  
+1.1  [-v8_bcialg_1(5^[])]   (5)  
+1.2  [-m1_bcialg_5(5^[], k2_nat_1(1^[], 6^[]), 2^[], 3^[], k2_nat_1(4^[], 6^[])), m2_subset_1(1^[], k1_numbers, k5_numbers), m2_subset_1(2^[], k1_numbers, k5_numbers), m2_subset_1(3^[], k1_numbers, k5_numbers), m2_subset_1(4^[], k1_numbers, k5_numbers), m1_bcialg_5(5^[], 1^[], 2^[], 3^[], 4^[]), m2_subset_1(6^[], k1_numbers, k5_numbers)]   (9)  substitution:[[_G1852, _G1040, _G2126, _G1252, _G1458, _G1658], [5^[], 1^[], 6^[], 2^[], 3^[], 4^[]]]
+1.2.1  [-m2_subset_1(1^[], k1_numbers, k5_numbers)]   (1)  
+1.2.2  [-m2_subset_1(2^[], k1_numbers, k5_numbers)]   (2)  
+1.2.3  [-m2_subset_1(3^[], k1_numbers, k5_numbers)]   (3)  
+1.2.4  [-m2_subset_1(4^[], k1_numbers, k5_numbers)]   (4)  
+1.2.5  [-m1_bcialg_5(5^[], 1^[], 2^[], 3^[], 4^[])]   (6)  
+1.2.6  [-m2_subset_1(6^[], k1_numbers, k5_numbers)]   (7)  
+------------------------------------------------------
+End of proof for t17_bcialg_5

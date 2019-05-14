@@ -1,0 +1,39 @@
+
+t48_topgen_1 is a Theorem
+Start of proof for t48_topgen_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], k1_zfmisc_1(u1_struct_0(k3_topmetr)))]
+ (2)  [- (1^[]=k1_borsuk_5)]
+ (3)  [k3_subset_1(u1_struct_0(k3_topmetr), 1^[])=k3_numbers]
+ (4)  [- (k3_numbers=k6_subset_1(k1_numbers, k1_borsuk_5))]
+ (5)  [- (k6_subset_1(_G6134, _G6179)=k4_xboole_0(_G6134, _G6179))]
+ (6)  [- (u1_struct_0(k3_topmetr)=k1_numbers)]
+ (7)  [m1_subset_1(_G5741, k1_zfmisc_1(_G5688)), - (k3_subset_1(_G5688, _G5741)=k4_xboole_0(_G5688, _G5741))]
+ (8)  [-m1_subset_1(_G2694, _G2831), m1_subset_1(_G2627, _G2762), _G2627=_G2694, _G2762=_G2831]
+ (9)  [- (_G1854=_G1854)]
+ (10)  [_G1953=_G1998, - (_G1998=_G1953)]
+ (11)  [- (_G2186=_G2299), _G2186=_G2242, _G2242=_G2299]
+ (12)  [- (k6_subset_1(_G3245, _G3380)=k6_subset_1(_G3312, _G3449)), _G3245=_G3312, _G3380=_G3449]
+ (13)  [- (k4_xboole_0(_G3842, _G3977)=k4_xboole_0(_G3909, _G4046)), _G3842=_G3909, _G3977=_G4046]
+ (14)  [_G4439=_G4488, - (k1_zfmisc_1(_G4439)=k1_zfmisc_1(_G4488))]
+ (15)  [_G5305=_G5354, - (u1_struct_0(_G5305)=u1_struct_0(_G5354))]
+ (16)  [- (k3_subset_1(_G4717, _G4852)=k3_subset_1(_G4784, _G4921)), _G4717=_G4784, _G4852=_G4921]
+
+Connection Proof:
+-----------------
+1  [k3_subset_1(u1_struct_0(k3_topmetr), 1^[])=k3_numbers]   (3)  
+1.1  [- (k3_subset_1(u1_struct_0(k3_topmetr), 1^[])=k3_numbers), k3_numbers=k3_subset_1(u1_struct_0(k3_topmetr), 1^[])]   (10)  substitution:[[_G1998, _G1953], [k3_subset_1(u1_struct_0(k3_topmetr), 1^[]), k3_numbers]]
+1.1.1  [- (k3_numbers=k3_subset_1(u1_struct_0(k3_topmetr), 1^[])), k3_numbers=k6_subset_1(k1_numbers, k1_borsuk_5), k6_subset_1(k1_numbers, k1_borsuk_5)=k3_subset_1(u1_struct_0(k3_topmetr), 1^[])]   (11)  substitution:[[_G2186, _G2299, _G2242], [k3_numbers, k3_subset_1(u1_struct_0(k3_topmetr), 1^[]), k6_subset_1(k1_numbers, k1_borsuk_5)]]
+1.1.1.1  [- (k3_numbers=k6_subset_1(k1_numbers, k1_borsuk_5))]   (4)  
+1.1.1.2  [- (k6_subset_1(k1_numbers, k1_borsuk_5)=k3_subset_1(u1_struct_0(k3_topmetr), 1^[])), k6_subset_1(k1_numbers, k1_borsuk_5)=k4_xboole_0(k1_numbers, k1_borsuk_5), k4_xboole_0(k1_numbers, k1_borsuk_5)=k3_subset_1(u1_struct_0(k3_topmetr), 1^[])]   (11)  substitution:[[_G2186, _G2299, _G2242], [k6_subset_1(k1_numbers, k1_borsuk_5), k3_subset_1(u1_struct_0(k3_topmetr), 1^[]), k4_xboole_0(k1_numbers, k1_borsuk_5)]]
+1.1.1.2.1  [- (k6_subset_1(k1_numbers, k1_borsuk_5)=k4_xboole_0(k1_numbers, k1_borsuk_5))]   (5)  substitution:[[_G6134, _G6179], [k1_numbers, k1_borsuk_5]]
+1.1.1.2.2  [- (k4_xboole_0(k1_numbers, k1_borsuk_5)=k3_subset_1(u1_struct_0(k3_topmetr), 1^[])), k3_subset_1(u1_struct_0(k3_topmetr), 1^[])=k4_xboole_0(k1_numbers, k1_borsuk_5)]   (10)  substitution:[[_G1998, _G1953], [k4_xboole_0(k1_numbers, k1_borsuk_5), k3_subset_1(u1_struct_0(k3_topmetr), 1^[])]]
+1.1.1.2.2.1  [- (k3_subset_1(u1_struct_0(k3_topmetr), 1^[])=k4_xboole_0(k1_numbers, k1_borsuk_5)), k3_subset_1(u1_struct_0(k3_topmetr), 1^[])=k4_xboole_0(u1_struct_0(k3_topmetr), 1^[]), k4_xboole_0(u1_struct_0(k3_topmetr), 1^[])=k4_xboole_0(k1_numbers, k1_borsuk_5)]   (11)  substitution:[[_G2186, _G2299, _G2242], [k3_subset_1(u1_struct_0(k3_topmetr), 1^[]), k4_xboole_0(k1_numbers, k1_borsuk_5), k4_xboole_0(u1_struct_0(k3_topmetr), 1^[])]]
+1.1.1.2.2.1.1  [- (k3_subset_1(u1_struct_0(k3_topmetr), 1^[])=k4_xboole_0(u1_struct_0(k3_topmetr), 1^[])), m1_subset_1(1^[], k1_zfmisc_1(u1_struct_0(k3_topmetr)))]   (7)  substitution:[[_G5688, _G5741], [u1_struct_0(k3_topmetr), 1^[]]]
+1.1.1.2.2.1.1.1  [-m1_subset_1(1^[], k1_zfmisc_1(u1_struct_0(k3_topmetr)))]   (1)  
+1.1.1.2.2.1.2  [- (k4_xboole_0(u1_struct_0(k3_topmetr), 1^[])=k4_xboole_0(k1_numbers, k1_borsuk_5)), u1_struct_0(k3_topmetr)=k1_numbers, 1^[]=k1_borsuk_5]   (13)  substitution:[[_G3842, _G3977, _G3909, _G4046], [u1_struct_0(k3_topmetr), 1^[], k1_numbers, k1_borsuk_5]]
+1.1.1.2.2.1.2.1  [- (u1_struct_0(k3_topmetr)=k1_numbers)]   (6)  
+1.1.1.2.2.1.2.2  [- (1^[]=k1_borsuk_5)]   (2)  
+------------------------------------------------------
+End of proof for t48_topgen_1

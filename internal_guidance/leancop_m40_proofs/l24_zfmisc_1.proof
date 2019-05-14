@@ -1,0 +1,29 @@
+
+l24_zfmisc_1 is a Theorem
+Start of proof for l24_zfmisc_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-r2_hidden(1^[], 2^[])]
+ (2)  [k3_xboole_0(2^[], k1_tarski(1^[]))=k1_tarski(1^[])]
+ (3)  [- (k3_xboole_0(_G4594, _G4639)=k3_xboole_0(_G4639, _G4594))]
+ (4)  [r1_tarski(_G5087, _G5135), - (k3_xboole_0(_G5087, _G5135)=_G5087)]
+ (5)  [r1_tarski(k1_tarski(_G4836), _G4883), -r2_hidden(_G4836, _G4883)]
+ (6)  [-r1_tarski(k1_tarski(_G4836), _G4883), r2_hidden(_G4836, _G4883)]
+ (7)  [_G4274=_G4323, - (k1_tarski(_G4274)=k1_tarski(_G4323))]
+ (8)  [- (k3_xboole_0(_G3686, _G3821)=k3_xboole_0(_G3753, _G3890)), _G3686=_G3753, _G3821=_G3890]
+ (9)  [- (_G1677=_G1677)]
+ (10)  [_G1776=_G1821, - (_G1821=_G1776)]
+ (11)  [- (_G2009=_G2122), _G2009=_G2065, _G2065=_G2122]
+ (12)  [-r1_tarski(_G2526, _G2663), r1_tarski(_G2459, _G2594), _G2459=_G2526, _G2594=_G2663]
+ (13)  [-r2_hidden(_G3114, _G3251), r2_hidden(_G3047, _G3182), _G3047=_G3114, _G3182=_G3251]
+
+Connection Proof:
+-----------------
+1  [k3_xboole_0(2^[], k1_tarski(1^[]))=k1_tarski(1^[])]   (2)  
+1.1  [- (k3_xboole_0(2^[], k1_tarski(1^[]))=k1_tarski(1^[])), k3_xboole_0(2^[], k1_tarski(1^[]))=k3_xboole_0(k1_tarski(1^[]), 2^[]), k3_xboole_0(k1_tarski(1^[]), 2^[])=k1_tarski(1^[])]   (11)  substitution:[[_G2009, _G2122, _G2065], [k3_xboole_0(2^[], k1_tarski(1^[])), k1_tarski(1^[]), k3_xboole_0(k1_tarski(1^[]), 2^[])]]
+1.1.1  [- (k3_xboole_0(2^[], k1_tarski(1^[]))=k3_xboole_0(k1_tarski(1^[]), 2^[]))]   (3)  substitution:[[_G4594, _G4639], [2^[], k1_tarski(1^[])]]
+1.1.2  [- (k3_xboole_0(k1_tarski(1^[]), 2^[])=k1_tarski(1^[])), r1_tarski(k1_tarski(1^[]), 2^[])]   (4)  substitution:[[_G5087, _G5135], [k1_tarski(1^[]), 2^[]]]
+1.1.2.1  [-r1_tarski(k1_tarski(1^[]), 2^[]), r2_hidden(1^[], 2^[])]   (6)  substitution:[[_G4836, _G4883], [1^[], 2^[]]]
+1.1.2.1.1  [-r2_hidden(1^[], 2^[])]   (1)  
+------------------------------------------------------
+End of proof for l24_zfmisc_1

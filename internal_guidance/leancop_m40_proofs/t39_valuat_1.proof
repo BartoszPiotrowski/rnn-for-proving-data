@@ -1,0 +1,36 @@
+
+t39_valuat_1 is a Theorem
+Start of proof for t39_valuat_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_qc_lang1(2^[])]
+ (2)  [v1_xboole_0(3^[])]
+ (3)  [-m1_valuat_1(4^[], 2^[], 3^[])]
+ (4)  [r2_valuat_1(2^[], 3^[], 4^[], k5_cqc_lang(2^[]))]
+ (5)  [m1_qc_lang1(_G1158), -v1_xboole_0(_G1298), m1_valuat_1(_G1448, _G1158, _G1298), m2_subset_1(_G1646, k9_qc_lang1(_G1158), k3_cqc_lang(_G1158)), -r2_valuat_1(_G1158, _G1298, _G1448, _G1646), -m2_funct_2(1^[_G1646, _G1448, _G1298, _G1158], k3_qc_lang1(_G1158), _G1298, k2_valuat_1(_G1158, _G1298))]
+ (6)  [m1_qc_lang1(_G1158), -v1_xboole_0(_G1298), m1_valuat_1(_G1448, _G1158, _G1298), m2_subset_1(_G1646, k9_qc_lang1(_G1158), k3_cqc_lang(_G1158)), -r2_valuat_1(_G1158, _G1298, _G1448, _G1646), r1_valuat_1(_G1158, _G1298, _G1646, _G1448, 1^[_G1646, _G1448, _G1298, _G1158])]
+ (7)  [m1_qc_lang1(_G1158), -v1_xboole_0(_G1298), m1_valuat_1(_G1448, _G1158, _G1298), m2_subset_1(_G1646, k9_qc_lang1(_G1158), k3_cqc_lang(_G1158)), r2_valuat_1(_G1158, _G1298, _G1448, _G1646), m2_funct_2(_G2009, k3_qc_lang1(_G1158), _G1298, k2_valuat_1(_G1158, _G1298)), -r1_valuat_1(_G1158, _G1298, _G1646, _G1448, _G2009)]
+ (8)  [m1_qc_lang1(_G2631), -m2_subset_1(k5_cqc_lang(_G2631), k9_qc_lang1(_G2631), k3_cqc_lang(_G2631))]
+ (9)  [m1_qc_lang1(_G2871), -v1_xboole_0(_G2989), m2_funct_2(_G3117, k3_qc_lang1(_G2871), _G2989, k2_valuat_1(_G2871, _G2989)), m1_valuat_1(_G3389, _G2871, _G2989), -r1_valuat_1(_G2871, _G2989, k5_cqc_lang(_G2871), _G3389, _G3117)]
+
+Connection Proof:
+-----------------
+1  [v1_xboole_0(3^[])]   (2)  
+1.1  [-v1_xboole_0(3^[]), m1_qc_lang1(2^[]), m1_valuat_1(4^[], 2^[], 3^[]), m2_subset_1(k5_cqc_lang(2^[]), k9_qc_lang1(2^[]), k3_cqc_lang(2^[])), -r2_valuat_1(2^[], 3^[], 4^[], k5_cqc_lang(2^[])), -m2_funct_2(1^[k5_cqc_lang(2^[]), 4^[], 3^[], 2^[]], k3_qc_lang1(2^[]), 3^[], k2_valuat_1(2^[], 3^[]))]   (5)  substitution:[[_G1298, _G1158, _G1448, _G1646], [3^[], 2^[], 4^[], k5_cqc_lang(2^[])]]
+1.1.1  [-m1_qc_lang1(2^[])]   (1)  
+1.1.2  [-m1_valuat_1(4^[], 2^[], 3^[])]   (3)  
+1.1.3  [-m2_subset_1(k5_cqc_lang(2^[]), k9_qc_lang1(2^[]), k3_cqc_lang(2^[])), m1_qc_lang1(2^[])]   (8)  substitution:[[_G2631], [2^[]]]
+1.1.3.1  [-m1_qc_lang1(2^[])]   (1)  
+1.1.4  [r2_valuat_1(2^[], 3^[], 4^[], k5_cqc_lang(2^[]))]   (4)  
+1.1.5  [m2_funct_2(1^[k5_cqc_lang(2^[]), 4^[], 3^[], 2^[]], k3_qc_lang1(2^[]), 3^[], k2_valuat_1(2^[], 3^[])), m1_qc_lang1(2^[]), -v1_xboole_0(3^[]), m1_valuat_1(4^[], 2^[], 3^[]), -r1_valuat_1(2^[], 3^[], k5_cqc_lang(2^[]), 4^[], 1^[k5_cqc_lang(2^[]), 4^[], 3^[], 2^[]])]   (9)  substitution:[[_G3117, _G2871, _G2989, _G3389], [1^[k5_cqc_lang(2^[]), 4^[], 3^[], 2^[]], 2^[], 3^[], 4^[]]]
+1.1.5.1  [-m1_qc_lang1(2^[])]   (1)  
+1.1.5.2  [v1_xboole_0(3^[])]   (2)  
+1.1.5.3  [-m1_valuat_1(4^[], 2^[], 3^[])]   (3)  
+1.1.5.4  [r1_valuat_1(2^[], 3^[], k5_cqc_lang(2^[]), 4^[], 1^[k5_cqc_lang(2^[]), 4^[], 3^[], 2^[]]), m1_qc_lang1(2^[]), -v1_xboole_0(3^[]), m1_valuat_1(4^[], 2^[], 3^[]), m2_subset_1(k5_cqc_lang(2^[]), k9_qc_lang1(2^[]), k3_cqc_lang(2^[])), -r2_valuat_1(2^[], 3^[], 4^[], k5_cqc_lang(2^[]))]   (6)  substitution:[[_G1158, _G1298, _G1646, _G1448], [2^[], 3^[], k5_cqc_lang(2^[]), 4^[]]]
+1.1.5.4.1  [-m1_qc_lang1(2^[])]   (1)  
+1.1.5.4.2  [v1_xboole_0(3^[])]   (2)  
+1.1.5.4.3  [-m1_valuat_1(4^[], 2^[], 3^[])]   (3)  
+1.1.5.4.4  [-m2_subset_1(k5_cqc_lang(2^[]), k9_qc_lang1(2^[]), k3_cqc_lang(2^[]))]   (lemmata:1.1)  
+1.1.5.4.5  [r2_valuat_1(2^[], 3^[], 4^[], k5_cqc_lang(2^[]))]   (4)  
+------------------------------------------------------
+End of proof for t39_valuat_1

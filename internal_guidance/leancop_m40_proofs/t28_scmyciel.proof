@@ -1,0 +1,38 @@
+
+t28_scmyciel is a Theorem
+Start of proof for t28_scmyciel
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v4_scmyciel(1^[])]
+ (2)  [- (k3_tarski(1^[])=k1_xboole_0)]
+ (3)  [v1_scmyciel(1^[])]
+ (4)  [v4_scmyciel(_G5119), v1_xboole_0(_G5119)]
+ (5)  [v4_scmyciel(_G5119), -v1_classes1(_G5119)]
+ (6)  [v4_scmyciel(_G5119), -v3_scmyciel(_G5119, np__1)]
+ (7)  [-v1_xboole_0(k1_xboole_0)]
+ (8)  [k3_tarski(_G5602)=k1_xboole_0, - (_G5602=k1_xboole_0), - (_G5602=k1_tarski(k1_xboole_0))]
+ (9)  [v1_scmyciel(_G5408), - (_G5408=k1_tarski(k1_xboole_0))]
+ (10)  [-v1_scmyciel(_G5408), _G5408=k1_tarski(k1_xboole_0)]
+ (11)  [_G4530=_G4579, - (k1_tarski(_G4530)=k1_tarski(_G4579))]
+ (12)  [_G4799=_G4848, - (k3_tarski(_G4799)=k3_tarski(_G4848))]
+ (13)  [- (_G1943=_G1943)]
+ (14)  [_G2042=_G2087, - (_G2087=_G2042)]
+ (15)  [- (_G2275=_G2388), _G2275=_G2331, _G2331=_G2388]
+ (16)  [-v1_classes1(_G2774), _G2725=_G2774, v1_classes1(_G2725)]
+ (17)  [-v3_scmyciel(_G3070, _G3207), v3_scmyciel(_G3003, _G3138), _G3003=_G3070, _G3138=_G3207]
+ (18)  [-v1_xboole_0(_G3649), _G3600=_G3649, v1_xboole_0(_G3600)]
+ (19)  [-v4_scmyciel(_G3927), _G3878=_G3927, v4_scmyciel(_G3878)]
+ (20)  [-v1_scmyciel(_G4196), _G4147=_G4196, v1_scmyciel(_G4147)]
+
+Connection Proof:
+-----------------
+1  [v1_scmyciel(1^[])]   (3)  
+1.1  [-v1_scmyciel(1^[]), 1^[]=k1_tarski(k1_xboole_0)]   (10)  substitution:[[_G5408], [1^[]]]
+1.1.1  [- (1^[]=k1_tarski(k1_xboole_0)), k3_tarski(1^[])=k1_xboole_0, - (1^[]=k1_xboole_0)]   (8)  substitution:[[_G5602], [1^[]]]
+1.1.1.1  [- (k3_tarski(1^[])=k1_xboole_0)]   (2)  
+1.1.1.2  [1^[]=k1_xboole_0, -v4_scmyciel(k1_xboole_0), v4_scmyciel(1^[])]   (19)  substitution:[[_G3878, _G3927], [1^[], k1_xboole_0]]
+1.1.1.2.1  [v4_scmyciel(k1_xboole_0), v1_xboole_0(k1_xboole_0)]   (4)  substitution:[[_G5119], [k1_xboole_0]]
+1.1.1.2.1.1  [-v1_xboole_0(k1_xboole_0)]   (7)  
+1.1.1.2.2  [-v4_scmyciel(1^[])]   (1)  
+------------------------------------------------------
+End of proof for t28_scmyciel

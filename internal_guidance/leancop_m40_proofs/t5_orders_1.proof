@@ -1,0 +1,33 @@
+
+t5_orders_1 is a Theorem
+Start of proof for t5_orders_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_2(8^[])]
+ (2)  [-v4_relat_2(8^[])]
+ (3)  [-v8_relat_2(8^[])]
+ (4)  [-v1_partfun1(8^[], 4^[])]
+ (5)  [-m1_subset_1(8^[], k1_zfmisc_1(k2_zfmisc_1(4^[], 4^[])))]
+ (6)  [-r2_hidden(5^[], 4^[])]
+ (7)  [-r2_hidden(6^[], 4^[])]
+ (8)  [-r2_hidden(7^[], 4^[])]
+ (9)  [-r2_hidden(k4_tarski(5^[], 6^[]), 8^[])]
+ (10)  [-r2_hidden(k4_tarski(6^[], 7^[]), 8^[])]
+ (11)  [r2_hidden(k4_tarski(5^[], 7^[]), 8^[])]
+ (12)  [m1_subset_1(_G1197, k1_zfmisc_1(k2_zfmisc_1(_G1088, _G1142))), -v1_relat_1(_G1197)]
+ (13)  [v1_relat_1(_G1431), -v8_relat_2(_G1431), -r2_hidden(k4_tarski(1^[_G1431], 2^[_G1431]), _G1431)]
+ (14)  [v1_relat_1(_G1431), -v8_relat_2(_G1431), -r2_hidden(k4_tarski(2^[_G1431], 3^[_G1431]), _G1431)]
+ (15)  [v1_relat_1(_G1431), -v8_relat_2(_G1431), r2_hidden(k4_tarski(1^[_G1431], 3^[_G1431]), _G1431)]
+ (16)  [v1_relat_1(_G1431), v8_relat_2(_G1431), -r2_hidden(k4_tarski(_G1575, _G1718), _G1431), r2_hidden(k4_tarski(_G1575, _G1646), _G1431), r2_hidden(k4_tarski(_G1646, _G1718), _G1431)]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(k4_tarski(5^[], 7^[]), 8^[])]   (11)  
+1.1  [-r2_hidden(k4_tarski(5^[], 7^[]), 8^[]), v1_relat_1(8^[]), v8_relat_2(8^[]), r2_hidden(k4_tarski(5^[], 6^[]), 8^[]), r2_hidden(k4_tarski(6^[], 7^[]), 8^[])]   (16)  substitution:[[_G1575, _G1718, _G1431, _G1646], [5^[], 7^[], 8^[], 6^[]]]
+1.1.1  [-v1_relat_1(8^[]), m1_subset_1(8^[], k1_zfmisc_1(k2_zfmisc_1(4^[], 4^[])))]   (12)  substitution:[[_G1197, _G1088, _G1142], [8^[], 4^[], 4^[]]]
+1.1.1.1  [-m1_subset_1(8^[], k1_zfmisc_1(k2_zfmisc_1(4^[], 4^[])))]   (5)  
+1.1.2  [-v8_relat_2(8^[])]   (3)  
+1.1.3  [-r2_hidden(k4_tarski(5^[], 6^[]), 8^[])]   (9)  
+1.1.4  [-r2_hidden(k4_tarski(6^[], 7^[]), 8^[])]   (10)  
+------------------------------------------------------
+End of proof for t5_orders_1

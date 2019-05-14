@@ -1,0 +1,36 @@
+
+t28_xxreal_1 is a Theorem
+Start of proof for t28_xxreal_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xxreal_0(1^[])]
+ (2)  [-v1_xxreal_0(2^[])]
+ (3)  [-r1_xxreal_0(1^[], 2^[])]
+ (4)  [k4_xxreal_1(2^[], 1^[])=k1_xboole_0]
+ (5)  [v1_xxreal_0(_G5519), v1_xxreal_0(_G5606), -r1_tarski(k4_xxreal_1(_G5519, _G5606), k2_xxreal_1(_G5519, _G5606))]
+ (6)  [r1_tarski(_G6281, k1_xboole_0), - (_G6281=k1_xboole_0)]
+ (7)  [v1_xxreal_0(_G5882), v1_xxreal_0(_G5972), r1_xxreal_0(_G5882, _G5972), - (k2_xxreal_1(_G5972, _G5882)=k1_xboole_0)]
+ (8)  [- (k2_xxreal_1(_G4292, _G4427)=k2_xxreal_1(_G4359, _G4496)), _G4292=_G4359, _G4427=_G4496]
+ (9)  [- (k4_xxreal_1(_G4880, _G5015)=k4_xxreal_1(_G4947, _G5084)), _G4880=_G4947, _G5015=_G5084]
+ (10)  [- (_G1984=_G1984)]
+ (11)  [_G2083=_G2128, - (_G2128=_G2083)]
+ (12)  [- (_G2316=_G2429), _G2316=_G2372, _G2372=_G2429]
+ (13)  [-r1_tarski(_G2833, _G2970), r1_tarski(_G2766, _G2901), _G2766=_G2833, _G2901=_G2970]
+ (14)  [-v1_xxreal_0(_G3412), _G3363=_G3412, v1_xxreal_0(_G3363)]
+ (15)  [-r1_xxreal_0(_G3699, _G3836), r1_xxreal_0(_G3632, _G3767), _G3632=_G3699, _G3767=_G3836]
+
+Connection Proof:
+-----------------
+1  [k4_xxreal_1(2^[], 1^[])=k1_xboole_0]   (4)  
+1.1  [- (k4_xxreal_1(2^[], 1^[])=k1_xboole_0), r1_tarski(k4_xxreal_1(2^[], 1^[]), k1_xboole_0)]   (6)  substitution:[[_G6281], [k4_xxreal_1(2^[], 1^[])]]
+1.1.1  [-r1_tarski(k4_xxreal_1(2^[], 1^[]), k1_xboole_0), r1_tarski(k4_xxreal_1(2^[], 1^[]), k2_xxreal_1(2^[], 1^[])), k4_xxreal_1(2^[], 1^[])=k4_xxreal_1(2^[], 1^[]), k2_xxreal_1(2^[], 1^[])=k1_xboole_0]   (13)  substitution:[[_G2833, _G2970, _G2766, _G2901], [k4_xxreal_1(2^[], 1^[]), k1_xboole_0, k4_xxreal_1(2^[], 1^[]), k2_xxreal_1(2^[], 1^[])]]
+1.1.1.1  [-r1_tarski(k4_xxreal_1(2^[], 1^[]), k2_xxreal_1(2^[], 1^[])), v1_xxreal_0(2^[]), v1_xxreal_0(1^[])]   (5)  substitution:[[_G5519, _G5606], [2^[], 1^[]]]
+1.1.1.1.1  [-v1_xxreal_0(2^[])]   (2)  
+1.1.1.1.2  [-v1_xxreal_0(1^[])]   (1)  
+1.1.1.2  [- (k4_xxreal_1(2^[], 1^[])=k4_xxreal_1(2^[], 1^[]))]   (10)  substitution:[[_G1984], [k4_xxreal_1(2^[], 1^[])]]
+1.1.1.3  [- (k2_xxreal_1(2^[], 1^[])=k1_xboole_0), v1_xxreal_0(1^[]), v1_xxreal_0(2^[]), r1_xxreal_0(1^[], 2^[])]   (7)  substitution:[[_G5972, _G5882], [2^[], 1^[]]]
+1.1.1.3.1  [-v1_xxreal_0(1^[])]   (1)  
+1.1.1.3.2  [-v1_xxreal_0(2^[])]   (2)  
+1.1.1.3.3  [-r1_xxreal_0(1^[], 2^[])]   (3)  
+------------------------------------------------------
+End of proof for t28_xxreal_1

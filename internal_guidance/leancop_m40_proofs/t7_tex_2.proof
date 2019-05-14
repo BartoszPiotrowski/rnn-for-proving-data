@@ -1,0 +1,35 @@
+
+t7_tex_2 is a Theorem
+Start of proof for t7_tex_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-l1_pre_topc(1^[])]
+ (2)  [-l1_pre_topc(2^[])]
+ (3)  [- (g1_pre_topc(u1_struct_0(1^[]), u1_pre_topc(1^[]))=g1_pre_topc(u1_struct_0(2^[]), u1_pre_topc(2^[])))]
+ (4)  [-v2_pre_topc(1^[])]
+ (5)  [v2_pre_topc(2^[])]
+ (6)  [-v1_pre_topc(g1_pre_topc(u1_struct_0(_G4919), u1_pre_topc(_G4919))), v2_pre_topc(_G4919), l1_pre_topc(_G4919)]
+ (7)  [-v2_pre_topc(g1_pre_topc(u1_struct_0(_G4919), u1_pre_topc(_G4919))), v2_pre_topc(_G4919), l1_pre_topc(_G4919)]
+ (8)  [l1_pre_topc(_G5305), v2_pre_topc(g1_pre_topc(u1_struct_0(_G5305), u1_pre_topc(_G5305))), -v2_pre_topc(_G5305)]
+ (9)  [- (g1_pre_topc(_G3712, _G3847)=g1_pre_topc(_G3779, _G3916)), _G3712=_G3779, _G3847=_G3916]
+ (10)  [_G4309=_G4358, - (u1_struct_0(_G4309)=u1_struct_0(_G4358))]
+ (11)  [_G4578=_G4627, - (u1_pre_topc(_G4578)=u1_pre_topc(_G4627))]
+ (12)  [- (_G2042=_G2042)]
+ (13)  [_G2141=_G2186, - (_G2186=_G2141)]
+ (14)  [- (_G2374=_G2487), _G2374=_G2430, _G2430=_G2487]
+ (15)  [-v1_pre_topc(_G2873), _G2824=_G2873, v1_pre_topc(_G2824)]
+ (16)  [-l1_pre_topc(_G3151), _G3102=_G3151, l1_pre_topc(_G3102)]
+ (17)  [-v2_pre_topc(_G3420), _G3371=_G3420, v2_pre_topc(_G3371)]
+
+Connection Proof:
+-----------------
+1  [v2_pre_topc(2^[])]   (5)  
+1.1  [-v2_pre_topc(2^[]), l1_pre_topc(2^[]), v2_pre_topc(g1_pre_topc(u1_struct_0(2^[]), u1_pre_topc(2^[])))]   (8)  substitution:[[_G5305], [2^[]]]
+1.1.1  [-l1_pre_topc(2^[])]   (2)  
+1.1.2  [-v2_pre_topc(g1_pre_topc(u1_struct_0(2^[]), u1_pre_topc(2^[]))), g1_pre_topc(u1_struct_0(1^[]), u1_pre_topc(1^[]))=g1_pre_topc(u1_struct_0(2^[]), u1_pre_topc(2^[])), v2_pre_topc(g1_pre_topc(u1_struct_0(1^[]), u1_pre_topc(1^[])))]   (17)  substitution:[[_G3420, _G3371], [g1_pre_topc(u1_struct_0(2^[]), u1_pre_topc(2^[])), g1_pre_topc(u1_struct_0(1^[]), u1_pre_topc(1^[]))]]
+1.1.2.1  [- (g1_pre_topc(u1_struct_0(1^[]), u1_pre_topc(1^[]))=g1_pre_topc(u1_struct_0(2^[]), u1_pre_topc(2^[])))]   (3)  
+1.1.2.2  [-v2_pre_topc(g1_pre_topc(u1_struct_0(1^[]), u1_pre_topc(1^[]))), v2_pre_topc(1^[]), l1_pre_topc(1^[])]   (7)  substitution:[[_G4919], [1^[]]]
+1.1.2.2.1  [-v2_pre_topc(1^[])]   (4)  
+1.1.2.2.2  [-l1_pre_topc(1^[])]   (1)  
+------------------------------------------------------
+End of proof for t7_tex_2

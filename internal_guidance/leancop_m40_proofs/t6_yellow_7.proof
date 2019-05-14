@@ -1,0 +1,122 @@
+
+t6_yellow_7 is a Theorem
+Start of proof for t6_yellow_7
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-6^[], v4_orders_2(4^[])]
+ (2)  [-6^[], -v4_orders_2(k7_lattice3(4^[]))]
+ (3)  [-5^[], v4_orders_2(k7_lattice3(4^[]))]
+ (4)  [-5^[], -v4_orders_2(4^[])]
+ (5)  [-l1_orders_2(4^[])]
+ (6)  [5^[], 6^[]]
+ (7)  [l1_orders_2(_G1475), -v4_orders_2(_G1475), -m1_subset_1(1^[_G1475], u1_struct_0(_G1475))]
+ (8)  [l1_orders_2(_G1475), -v4_orders_2(_G1475), -m1_subset_1(2^[_G1475], u1_struct_0(_G1475))]
+ (9)  [l1_orders_2(_G1475), -v4_orders_2(_G1475), -m1_subset_1(3^[_G1475], u1_struct_0(_G1475))]
+ (10)  [l1_orders_2(_G1475), -v4_orders_2(_G1475), -r1_orders_2(_G1475, 1^[_G1475], 2^[_G1475])]
+ (11)  [l1_orders_2(_G1475), -v4_orders_2(_G1475), -r1_orders_2(_G1475, 2^[_G1475], 3^[_G1475])]
+ (12)  [l1_orders_2(_G1475), -v4_orders_2(_G1475), r1_orders_2(_G1475, 1^[_G1475], 3^[_G1475])]
+ (13)  [l1_orders_2(_G1475), v4_orders_2(_G1475), m1_subset_1(_G1637, u1_struct_0(_G1475)), m1_subset_1(_G1797, u1_struct_0(_G1475)), m1_subset_1(_G1950, u1_struct_0(_G1475)), -r1_orders_2(_G1475, _G1637, _G1950), r1_orders_2(_G1475, _G1637, _G1797), r1_orders_2(_G1475, _G1797, _G1950)]
+ (14)  [l1_orders_2(_G2575), -v1_orders_2(k7_lattice3(_G2575))]
+ (15)  [l1_orders_2(_G2575), -l1_orders_2(k7_lattice3(_G2575))]
+ (16)  [-m1_subset_1(k8_lattice3(_G2796, _G2855), u1_struct_0(k7_lattice3(_G2796))), l1_orders_2(_G2796), m1_subset_1(_G2855, u1_struct_0(_G2796))]
+ (17)  [-m1_subset_1(k9_lattice3(_G3200, _G3259), u1_struct_0(_G3200)), l1_orders_2(_G3200), m1_subset_1(_G3259, u1_struct_0(k7_lattice3(_G3200)))]
+ (18)  [l1_orders_2(_G3604), m1_subset_1(_G3721, u1_struct_0(k7_lattice3(_G3604))), m1_subset_1(_G3887, u1_struct_0(k7_lattice3(_G3604))), r1_orders_2(k7_lattice3(_G3604), _G3721, _G3887), -r1_orders_2(_G3604, k9_lattice3(_G3604, _G3887), k9_lattice3(_G3604, _G3721))]
+ (19)  [l1_orders_2(_G3604), m1_subset_1(_G3721, u1_struct_0(k7_lattice3(_G3604))), m1_subset_1(_G3887, u1_struct_0(k7_lattice3(_G3604))), -r1_orders_2(k7_lattice3(_G3604), _G3721, _G3887), r1_orders_2(_G3604, k9_lattice3(_G3604, _G3887), k9_lattice3(_G3604, _G3721))]
+ (20)  [l1_orders_2(_G4435), m1_subset_1(_G4548, u1_struct_0(_G4435)), m1_subset_1(_G4696, u1_struct_0(_G4435)), r1_orders_2(_G4435, _G4548, _G4696), -r1_orders_2(k7_lattice3(_G4435), k8_lattice3(_G4435, _G4696), k8_lattice3(_G4435, _G4548))]
+ (21)  [l1_orders_2(_G4435), m1_subset_1(_G4548, u1_struct_0(_G4435)), m1_subset_1(_G4696, u1_struct_0(_G4435)), -r1_orders_2(_G4435, _G4548, _G4696), r1_orders_2(k7_lattice3(_G4435), k8_lattice3(_G4435, _G4696), k8_lattice3(_G4435, _G4548))]
+
+Connection Proof:
+-----------------
+1  [5^[], 6^[]]   (6)  
+1.1  [-5^[], v4_orders_2(k7_lattice3(4^[]))]   (3)  
+1.1.1  [-v4_orders_2(k7_lattice3(4^[])), l1_orders_2(k7_lattice3(4^[])), -r1_orders_2(k7_lattice3(4^[]), 2^[k7_lattice3(4^[])], 3^[k7_lattice3(4^[])])]   (11)  substitution:[[_G1475], [k7_lattice3(4^[])]]
+1.1.1.1  [-l1_orders_2(k7_lattice3(4^[])), l1_orders_2(4^[])]   (15)  substitution:[[_G2575], [4^[]]]
+1.1.1.1.1  [-l1_orders_2(4^[])]   (5)  
+1.1.1.2  [r1_orders_2(k7_lattice3(4^[]), 2^[k7_lattice3(4^[])], 3^[k7_lattice3(4^[])]), l1_orders_2(4^[]), m1_subset_1(2^[k7_lattice3(4^[])], u1_struct_0(k7_lattice3(4^[]))), m1_subset_1(3^[k7_lattice3(4^[])], u1_struct_0(k7_lattice3(4^[]))), -r1_orders_2(4^[], k9_lattice3(4^[], 3^[k7_lattice3(4^[])]), k9_lattice3(4^[], 2^[k7_lattice3(4^[])]))]   (18)  substitution:[[_G3604, _G3721, _G3887], [4^[], 2^[k7_lattice3(4^[])], 3^[k7_lattice3(4^[])]]]
+1.1.1.2.1  [-l1_orders_2(4^[])]   (5)  
+1.1.1.2.2  [-m1_subset_1(2^[k7_lattice3(4^[])], u1_struct_0(k7_lattice3(4^[]))), l1_orders_2(k7_lattice3(4^[])), -v4_orders_2(k7_lattice3(4^[]))]   (8)  substitution:[[_G1475], [k7_lattice3(4^[])]]
+1.1.1.2.2.1  [-l1_orders_2(k7_lattice3(4^[]))]   (lemmata:1.1.1)  
+1.1.1.2.2.2  [v4_orders_2(k7_lattice3(4^[]))]   (reduction:1.1)  
+1.1.1.2.3  [-m1_subset_1(3^[k7_lattice3(4^[])], u1_struct_0(k7_lattice3(4^[]))), l1_orders_2(k7_lattice3(4^[])), -v4_orders_2(k7_lattice3(4^[]))]   (9)  substitution:[[_G1475], [k7_lattice3(4^[])]]
+1.1.1.2.3.1  [-l1_orders_2(k7_lattice3(4^[]))]   (lemmata:1.1.1)  
+1.1.1.2.3.2  [v4_orders_2(k7_lattice3(4^[]))]   (reduction:1.1)  
+1.1.1.2.4  [r1_orders_2(4^[], k9_lattice3(4^[], 3^[k7_lattice3(4^[])]), k9_lattice3(4^[], 2^[k7_lattice3(4^[])])), l1_orders_2(4^[]), v4_orders_2(4^[]), m1_subset_1(k9_lattice3(4^[], 3^[k7_lattice3(4^[])]), u1_struct_0(4^[])), m1_subset_1(k9_lattice3(4^[], 2^[k7_lattice3(4^[])]), u1_struct_0(4^[])), m1_subset_1(k9_lattice3(4^[], 1^[k7_lattice3(4^[])]), u1_struct_0(4^[])), -r1_orders_2(4^[], k9_lattice3(4^[], 3^[k7_lattice3(4^[])]), k9_lattice3(4^[], 1^[k7_lattice3(4^[])])), r1_orders_2(4^[], k9_lattice3(4^[], 2^[k7_lattice3(4^[])]), k9_lattice3(4^[], 1^[k7_lattice3(4^[])]))]   (13)  substitution:[[_G1475, _G1637, _G1797, _G1950], [4^[], k9_lattice3(4^[], 3^[k7_lattice3(4^[])]), k9_lattice3(4^[], 2^[k7_lattice3(4^[])]), k9_lattice3(4^[], 1^[k7_lattice3(4^[])])]]
+1.1.1.2.4.1  [-l1_orders_2(4^[])]   (5)  
+1.1.1.2.4.2  [-v4_orders_2(4^[]), -5^[]]   (4)  
+1.1.1.2.4.2.1  [5^[]]   (reduction:1)  
+1.1.1.2.4.3  [-m1_subset_1(k9_lattice3(4^[], 3^[k7_lattice3(4^[])]), u1_struct_0(4^[])), l1_orders_2(4^[]), m1_subset_1(3^[k7_lattice3(4^[])], u1_struct_0(k7_lattice3(4^[])))]   (17)  substitution:[[_G3200, _G3259], [4^[], 3^[k7_lattice3(4^[])]]]
+1.1.1.2.4.3.1  [-l1_orders_2(4^[])]   (5)  
+1.1.1.2.4.3.2  [-m1_subset_1(3^[k7_lattice3(4^[])], u1_struct_0(k7_lattice3(4^[])))]   (lemmata:1.1.1.2)  
+1.1.1.2.4.4  [-m1_subset_1(k9_lattice3(4^[], 2^[k7_lattice3(4^[])]), u1_struct_0(4^[])), l1_orders_2(4^[]), m1_subset_1(2^[k7_lattice3(4^[])], u1_struct_0(k7_lattice3(4^[])))]   (17)  substitution:[[_G3200, _G3259], [4^[], 2^[k7_lattice3(4^[])]]]
+1.1.1.2.4.4.1  [-l1_orders_2(4^[])]   (5)  
+1.1.1.2.4.4.2  [-m1_subset_1(2^[k7_lattice3(4^[])], u1_struct_0(k7_lattice3(4^[])))]   (lemmata:1.1.1.2)  
+1.1.1.2.4.5  [-m1_subset_1(k9_lattice3(4^[], 1^[k7_lattice3(4^[])]), u1_struct_0(4^[])), l1_orders_2(4^[]), m1_subset_1(1^[k7_lattice3(4^[])], u1_struct_0(k7_lattice3(4^[])))]   (17)  substitution:[[_G3200, _G3259], [4^[], 1^[k7_lattice3(4^[])]]]
+1.1.1.2.4.5.1  [-l1_orders_2(4^[])]   (5)  
+1.1.1.2.4.5.2  [-m1_subset_1(1^[k7_lattice3(4^[])], u1_struct_0(k7_lattice3(4^[]))), l1_orders_2(k7_lattice3(4^[])), -v4_orders_2(k7_lattice3(4^[]))]   (7)  substitution:[[_G1475], [k7_lattice3(4^[])]]
+1.1.1.2.4.5.2.1  [-l1_orders_2(k7_lattice3(4^[]))]   (lemmata:1.1.1)  
+1.1.1.2.4.5.2.2  [v4_orders_2(k7_lattice3(4^[]))]   (reduction:1.1)  
+1.1.1.2.4.6  [r1_orders_2(4^[], k9_lattice3(4^[], 3^[k7_lattice3(4^[])]), k9_lattice3(4^[], 1^[k7_lattice3(4^[])])), l1_orders_2(4^[]), m1_subset_1(1^[k7_lattice3(4^[])], u1_struct_0(k7_lattice3(4^[]))), m1_subset_1(3^[k7_lattice3(4^[])], u1_struct_0(k7_lattice3(4^[]))), -r1_orders_2(k7_lattice3(4^[]), 1^[k7_lattice3(4^[])], 3^[k7_lattice3(4^[])])]   (19)  substitution:[[_G3604, _G3887, _G3721], [4^[], 3^[k7_lattice3(4^[])], 1^[k7_lattice3(4^[])]]]
+1.1.1.2.4.6.1  [-l1_orders_2(4^[])]   (5)  
+1.1.1.2.4.6.2  [-m1_subset_1(1^[k7_lattice3(4^[])], u1_struct_0(k7_lattice3(4^[]))), l1_orders_2(k7_lattice3(4^[])), -v4_orders_2(k7_lattice3(4^[]))]   (7)  substitution:[[_G1475], [k7_lattice3(4^[])]]
+1.1.1.2.4.6.2.1  [-l1_orders_2(k7_lattice3(4^[]))]   (lemmata:1.1.1)  
+1.1.1.2.4.6.2.2  [v4_orders_2(k7_lattice3(4^[]))]   (reduction:1.1)  
+1.1.1.2.4.6.3  [-m1_subset_1(3^[k7_lattice3(4^[])], u1_struct_0(k7_lattice3(4^[])))]   (lemmata:1.1.1.2)  
+1.1.1.2.4.6.4  [r1_orders_2(k7_lattice3(4^[]), 1^[k7_lattice3(4^[])], 3^[k7_lattice3(4^[])]), l1_orders_2(k7_lattice3(4^[])), -v4_orders_2(k7_lattice3(4^[]))]   (12)  substitution:[[_G1475], [k7_lattice3(4^[])]]
+1.1.1.2.4.6.4.1  [-l1_orders_2(k7_lattice3(4^[]))]   (lemmata:1.1.1)  
+1.1.1.2.4.6.4.2  [v4_orders_2(k7_lattice3(4^[]))]   (reduction:1.1)  
+1.1.1.2.4.7  [-r1_orders_2(4^[], k9_lattice3(4^[], 2^[k7_lattice3(4^[])]), k9_lattice3(4^[], 1^[k7_lattice3(4^[])])), l1_orders_2(4^[]), m1_subset_1(1^[k7_lattice3(4^[])], u1_struct_0(k7_lattice3(4^[]))), m1_subset_1(2^[k7_lattice3(4^[])], u1_struct_0(k7_lattice3(4^[]))), r1_orders_2(k7_lattice3(4^[]), 1^[k7_lattice3(4^[])], 2^[k7_lattice3(4^[])])]   (18)  substitution:[[_G3604, _G3887, _G3721], [4^[], 2^[k7_lattice3(4^[])], 1^[k7_lattice3(4^[])]]]
+1.1.1.2.4.7.1  [-l1_orders_2(4^[])]   (5)  
+1.1.1.2.4.7.2  [-m1_subset_1(1^[k7_lattice3(4^[])], u1_struct_0(k7_lattice3(4^[]))), l1_orders_2(k7_lattice3(4^[])), -v4_orders_2(k7_lattice3(4^[]))]   (7)  substitution:[[_G1475], [k7_lattice3(4^[])]]
+1.1.1.2.4.7.2.1  [-l1_orders_2(k7_lattice3(4^[]))]   (lemmata:1.1.1)  
+1.1.1.2.4.7.2.2  [v4_orders_2(k7_lattice3(4^[]))]   (reduction:1.1)  
+1.1.1.2.4.7.3  [-m1_subset_1(2^[k7_lattice3(4^[])], u1_struct_0(k7_lattice3(4^[])))]   (lemmata:1.1.1.2)  
+1.1.1.2.4.7.4  [-r1_orders_2(k7_lattice3(4^[]), 1^[k7_lattice3(4^[])], 2^[k7_lattice3(4^[])]), l1_orders_2(k7_lattice3(4^[])), -v4_orders_2(k7_lattice3(4^[]))]   (10)  substitution:[[_G1475], [k7_lattice3(4^[])]]
+1.1.1.2.4.7.4.1  [-l1_orders_2(k7_lattice3(4^[]))]   (lemmata:1.1.1)  
+1.1.1.2.4.7.4.2  [v4_orders_2(k7_lattice3(4^[]))]   (reduction:1.1)  
+1.2  [-6^[], v4_orders_2(4^[])]   (1)  
+1.2.1  [-v4_orders_2(4^[]), l1_orders_2(4^[]), -r1_orders_2(4^[], 2^[4^[]], 3^[4^[]])]   (11)  substitution:[[_G1475], [4^[]]]
+1.2.1.1  [-l1_orders_2(4^[])]   (5)  
+1.2.1.2  [r1_orders_2(4^[], 2^[4^[]], 3^[4^[]]), l1_orders_2(4^[]), m1_subset_1(2^[4^[]], u1_struct_0(4^[])), m1_subset_1(3^[4^[]], u1_struct_0(4^[])), -r1_orders_2(k7_lattice3(4^[]), k8_lattice3(4^[], 3^[4^[]]), k8_lattice3(4^[], 2^[4^[]]))]   (20)  substitution:[[_G4435, _G4548, _G4696], [4^[], 2^[4^[]], 3^[4^[]]]]
+1.2.1.2.1  [-l1_orders_2(4^[])]   (5)  
+1.2.1.2.2  [-m1_subset_1(2^[4^[]], u1_struct_0(4^[])), l1_orders_2(4^[]), -v4_orders_2(4^[])]   (8)  substitution:[[_G1475], [4^[]]]
+1.2.1.2.2.1  [-l1_orders_2(4^[])]   (5)  
+1.2.1.2.2.2  [v4_orders_2(4^[])]   (reduction:1.2)  
+1.2.1.2.3  [-m1_subset_1(3^[4^[]], u1_struct_0(4^[])), l1_orders_2(4^[]), -v4_orders_2(4^[])]   (9)  substitution:[[_G1475], [4^[]]]
+1.2.1.2.3.1  [-l1_orders_2(4^[])]   (5)  
+1.2.1.2.3.2  [v4_orders_2(4^[])]   (reduction:1.2)  
+1.2.1.2.4  [r1_orders_2(k7_lattice3(4^[]), k8_lattice3(4^[], 3^[4^[]]), k8_lattice3(4^[], 2^[4^[]])), l1_orders_2(k7_lattice3(4^[])), v4_orders_2(k7_lattice3(4^[])), m1_subset_1(k8_lattice3(4^[], 3^[4^[]]), u1_struct_0(k7_lattice3(4^[]))), m1_subset_1(k8_lattice3(4^[], 2^[4^[]]), u1_struct_0(k7_lattice3(4^[]))), m1_subset_1(k8_lattice3(4^[], 1^[4^[]]), u1_struct_0(k7_lattice3(4^[]))), -r1_orders_2(k7_lattice3(4^[]), k8_lattice3(4^[], 3^[4^[]]), k8_lattice3(4^[], 1^[4^[]])), r1_orders_2(k7_lattice3(4^[]), k8_lattice3(4^[], 2^[4^[]]), k8_lattice3(4^[], 1^[4^[]]))]   (13)  substitution:[[_G1475, _G1637, _G1797, _G1950], [k7_lattice3(4^[]), k8_lattice3(4^[], 3^[4^[]]), k8_lattice3(4^[], 2^[4^[]]), k8_lattice3(4^[], 1^[4^[]])]]
+1.2.1.2.4.1  [-l1_orders_2(k7_lattice3(4^[])), l1_orders_2(4^[])]   (15)  substitution:[[_G2575], [4^[]]]
+1.2.1.2.4.1.1  [-l1_orders_2(4^[])]   (5)  
+1.2.1.2.4.2  [-v4_orders_2(k7_lattice3(4^[])), -6^[]]   (2)  
+1.2.1.2.4.2.1  [6^[]]   (reduction:1)  
+1.2.1.2.4.3  [-m1_subset_1(k8_lattice3(4^[], 3^[4^[]]), u1_struct_0(k7_lattice3(4^[]))), l1_orders_2(4^[]), m1_subset_1(3^[4^[]], u1_struct_0(4^[]))]   (16)  substitution:[[_G2796, _G2855], [4^[], 3^[4^[]]]]
+1.2.1.2.4.3.1  [-l1_orders_2(4^[])]   (5)  
+1.2.1.2.4.3.2  [-m1_subset_1(3^[4^[]], u1_struct_0(4^[]))]   (lemmata:1.2.1.2)  
+1.2.1.2.4.4  [-m1_subset_1(k8_lattice3(4^[], 2^[4^[]]), u1_struct_0(k7_lattice3(4^[]))), l1_orders_2(4^[]), m1_subset_1(2^[4^[]], u1_struct_0(4^[]))]   (16)  substitution:[[_G2796, _G2855], [4^[], 2^[4^[]]]]
+1.2.1.2.4.4.1  [-l1_orders_2(4^[])]   (5)  
+1.2.1.2.4.4.2  [-m1_subset_1(2^[4^[]], u1_struct_0(4^[]))]   (lemmata:1.2.1.2)  
+1.2.1.2.4.5  [-m1_subset_1(k8_lattice3(4^[], 1^[4^[]]), u1_struct_0(k7_lattice3(4^[]))), l1_orders_2(4^[]), m1_subset_1(1^[4^[]], u1_struct_0(4^[]))]   (16)  substitution:[[_G2796, _G2855], [4^[], 1^[4^[]]]]
+1.2.1.2.4.5.1  [-l1_orders_2(4^[])]   (5)  
+1.2.1.2.4.5.2  [-m1_subset_1(1^[4^[]], u1_struct_0(4^[])), l1_orders_2(4^[]), -v4_orders_2(4^[])]   (7)  substitution:[[_G1475], [4^[]]]
+1.2.1.2.4.5.2.1  [-l1_orders_2(4^[])]   (5)  
+1.2.1.2.4.5.2.2  [v4_orders_2(4^[])]   (reduction:1.2)  
+1.2.1.2.4.6  [r1_orders_2(k7_lattice3(4^[]), k8_lattice3(4^[], 3^[4^[]]), k8_lattice3(4^[], 1^[4^[]])), l1_orders_2(4^[]), m1_subset_1(1^[4^[]], u1_struct_0(4^[])), m1_subset_1(3^[4^[]], u1_struct_0(4^[])), -r1_orders_2(4^[], 1^[4^[]], 3^[4^[]])]   (21)  substitution:[[_G4435, _G4696, _G4548], [4^[], 3^[4^[]], 1^[4^[]]]]
+1.2.1.2.4.6.1  [-l1_orders_2(4^[])]   (5)  
+1.2.1.2.4.6.2  [-m1_subset_1(1^[4^[]], u1_struct_0(4^[])), l1_orders_2(4^[]), -v4_orders_2(4^[])]   (7)  substitution:[[_G1475], [4^[]]]
+1.2.1.2.4.6.2.1  [-l1_orders_2(4^[])]   (5)  
+1.2.1.2.4.6.2.2  [v4_orders_2(4^[])]   (reduction:1.2)  
+1.2.1.2.4.6.3  [-m1_subset_1(3^[4^[]], u1_struct_0(4^[]))]   (lemmata:1.2.1.2)  
+1.2.1.2.4.6.4  [r1_orders_2(4^[], 1^[4^[]], 3^[4^[]]), l1_orders_2(4^[]), -v4_orders_2(4^[])]   (12)  substitution:[[_G1475], [4^[]]]
+1.2.1.2.4.6.4.1  [-l1_orders_2(4^[])]   (5)  
+1.2.1.2.4.6.4.2  [v4_orders_2(4^[])]   (reduction:1.2)  
+1.2.1.2.4.7  [-r1_orders_2(k7_lattice3(4^[]), k8_lattice3(4^[], 2^[4^[]]), k8_lattice3(4^[], 1^[4^[]])), l1_orders_2(4^[]), m1_subset_1(1^[4^[]], u1_struct_0(4^[])), m1_subset_1(2^[4^[]], u1_struct_0(4^[])), r1_orders_2(4^[], 1^[4^[]], 2^[4^[]])]   (20)  substitution:[[_G4435, _G4696, _G4548], [4^[], 2^[4^[]], 1^[4^[]]]]
+1.2.1.2.4.7.1  [-l1_orders_2(4^[])]   (5)  
+1.2.1.2.4.7.2  [-m1_subset_1(1^[4^[]], u1_struct_0(4^[])), l1_orders_2(4^[]), -v4_orders_2(4^[])]   (7)  substitution:[[_G1475], [4^[]]]
+1.2.1.2.4.7.2.1  [-l1_orders_2(4^[])]   (5)  
+1.2.1.2.4.7.2.2  [v4_orders_2(4^[])]   (reduction:1.2)  
+1.2.1.2.4.7.3  [-m1_subset_1(2^[4^[]], u1_struct_0(4^[]))]   (lemmata:1.2.1.2)  
+1.2.1.2.4.7.4  [-r1_orders_2(4^[], 1^[4^[]], 2^[4^[]]), l1_orders_2(4^[]), -v4_orders_2(4^[])]   (10)  substitution:[[_G1475], [4^[]]]
+1.2.1.2.4.7.4.1  [-l1_orders_2(4^[])]   (5)  
+1.2.1.2.4.7.4.2  [v4_orders_2(4^[])]   (reduction:1.2)  
+------------------------------------------------------
+End of proof for t6_yellow_7

@@ -1,0 +1,67 @@
+
+t60_circcomb is a Theorem
+Start of proof for t60_circcomb
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(1^[])]
+ (2)  [-v1_circcomb(1^[])]
+ (3)  [-v2_circcomb(1^[])]
+ (4)  [-l1_msualg_1(1^[])]
+ (5)  [v2_struct_0(2^[])]
+ (6)  [-v1_circcomb(2^[])]
+ (7)  [-v2_circcomb(2^[])]
+ (8)  [-l1_msualg_1(2^[])]
+ (9)  [-l3_msualg_1(3^[], 1^[])]
+ (10)  [-l3_msualg_1(4^[], 2^[])]
+ (11)  [-v6_circcomb(3^[], 1^[])]
+ (12)  [-v4_circcomb(3^[], 1^[])]
+ (13)  [-v6_circcomb(4^[], 2^[])]
+ (14)  [-v4_circcomb(4^[], 2^[])]
+ (15)  [r2_circcomb(1^[], 2^[], 3^[], 4^[])]
+ (16)  [l1_msualg_1(_G2008), -v2_struct_0(_G2008), l1_msualg_1(_G2224), -v2_struct_0(_G2224), l3_msualg_1(_G2429, _G2008), l3_msualg_1(_G2581, _G2224), r2_circcomb(_G2008, _G2224, _G2429, _G2581), -r1_circcomb(_G2008, _G2224)]
+ (17)  [l1_msualg_1(_G2008), -v2_struct_0(_G2008), l1_msualg_1(_G2224), -v2_struct_0(_G2224), l3_msualg_1(_G2429, _G2008), l3_msualg_1(_G2581, _G2224), r2_circcomb(_G2008, _G2224, _G2429, _G2581), -r1_partfun1(u3_msualg_1(_G2008, _G2429), u3_msualg_1(_G2224, _G2581))]
+ (18)  [l1_msualg_1(_G2008), -v2_struct_0(_G2008), l1_msualg_1(_G2224), -v2_struct_0(_G2224), l3_msualg_1(_G2429, _G2008), l3_msualg_1(_G2581, _G2224), r2_circcomb(_G2008, _G2224, _G2429, _G2581), -r1_partfun1(u4_msualg_1(_G2008, _G2429), u4_msualg_1(_G2224, _G2581))]
+ (19)  [l1_msualg_1(_G2008), -v2_struct_0(_G2008), l1_msualg_1(_G2224), -v2_struct_0(_G2224), l3_msualg_1(_G2429, _G2008), l3_msualg_1(_G2581, _G2224), -r2_circcomb(_G2008, _G2224, _G2429, _G2581), r1_circcomb(_G2008, _G2224), r1_partfun1(u3_msualg_1(_G2008, _G2429), u3_msualg_1(_G2224, _G2581)), r1_partfun1(u4_msualg_1(_G2008, _G2429), u4_msualg_1(_G2224, _G2581))]
+ (20)  [l1_msualg_1(_G3377), v2_circcomb(_G3377), v1_circcomb(_G3377), -v2_struct_0(_G3377), -r1_circcomb(_G3377, _G3665), -v2_struct_0(_G3665), v1_circcomb(_G3665), v2_circcomb(_G3665), l1_msualg_1(_G3665)]
+ (21)  [l1_msualg_1(_G4047), -v2_struct_0(_G4047), l1_msualg_1(_G4249), -v2_struct_0(_G4249), l3_msualg_1(_G4440, _G4047), l3_msualg_1(_G4578, _G4249), -r1_partfun1(u4_msualg_1(_G4047, _G4440), u4_msualg_1(_G4249, _G4578)), v4_circcomb(_G4440, _G4047), v4_circcomb(_G4578, _G4249)]
+ (22)  [l1_msualg_1(_G5109), -v2_struct_0(_G5109), l1_msualg_1(_G5311), -v2_struct_0(_G5311), l3_msualg_1(_G5502, _G5109), l3_msualg_1(_G5640, _G5311), -r1_partfun1(u3_msualg_1(_G5109, _G5502), u3_msualg_1(_G5311, _G5640)), v6_circcomb(_G5502, _G5109), v6_circcomb(_G5640, _G5311)]
+
+Connection Proof:
+-----------------
+1  [v2_struct_0(2^[])]   (5)  
+1.1  [-v2_struct_0(2^[]), l1_msualg_1(1^[]), -v2_struct_0(1^[]), l1_msualg_1(2^[]), l3_msualg_1(3^[], 1^[]), l3_msualg_1(4^[], 2^[]), -r2_circcomb(1^[], 2^[], 3^[], 4^[]), r1_circcomb(1^[], 2^[]), r1_partfun1(u3_msualg_1(1^[], 3^[]), u3_msualg_1(2^[], 4^[])), r1_partfun1(u4_msualg_1(1^[], 3^[]), u4_msualg_1(2^[], 4^[]))]   (19)  substitution:[[_G2224, _G2008, _G2429, _G2581], [2^[], 1^[], 3^[], 4^[]]]
+1.1.1  [-l1_msualg_1(1^[])]   (4)  
+1.1.2  [v2_struct_0(1^[])]   (1)  
+1.1.3  [-l1_msualg_1(2^[])]   (8)  
+1.1.4  [-l3_msualg_1(3^[], 1^[])]   (9)  
+1.1.5  [-l3_msualg_1(4^[], 2^[])]   (10)  
+1.1.6  [r2_circcomb(1^[], 2^[], 3^[], 4^[])]   (15)  
+1.1.7  [-r1_circcomb(1^[], 2^[]), l1_msualg_1(1^[]), v2_circcomb(1^[]), v1_circcomb(1^[]), -v2_struct_0(1^[]), -v2_struct_0(2^[]), v1_circcomb(2^[]), v2_circcomb(2^[]), l1_msualg_1(2^[])]   (20)  substitution:[[_G3377, _G3665], [1^[], 2^[]]]
+1.1.7.1  [-l1_msualg_1(1^[])]   (4)  
+1.1.7.2  [-v2_circcomb(1^[])]   (3)  
+1.1.7.3  [-v1_circcomb(1^[])]   (2)  
+1.1.7.4  [v2_struct_0(1^[])]   (1)  
+1.1.7.5  [v2_struct_0(2^[])]   (5)  
+1.1.7.6  [-v1_circcomb(2^[])]   (6)  
+1.1.7.7  [-v2_circcomb(2^[])]   (7)  
+1.1.7.8  [-l1_msualg_1(2^[])]   (8)  
+1.1.8  [-r1_partfun1(u3_msualg_1(1^[], 3^[]), u3_msualg_1(2^[], 4^[])), l1_msualg_1(1^[]), -v2_struct_0(1^[]), l1_msualg_1(2^[]), -v2_struct_0(2^[]), l3_msualg_1(3^[], 1^[]), l3_msualg_1(4^[], 2^[]), v6_circcomb(3^[], 1^[]), v6_circcomb(4^[], 2^[])]   (22)  substitution:[[_G5109, _G5502, _G5311, _G5640], [1^[], 3^[], 2^[], 4^[]]]
+1.1.8.1  [-l1_msualg_1(1^[])]   (4)  
+1.1.8.2  [v2_struct_0(1^[])]   (1)  
+1.1.8.3  [-l1_msualg_1(2^[])]   (8)  
+1.1.8.4  [v2_struct_0(2^[])]   (5)  
+1.1.8.5  [-l3_msualg_1(3^[], 1^[])]   (9)  
+1.1.8.6  [-l3_msualg_1(4^[], 2^[])]   (10)  
+1.1.8.7  [-v6_circcomb(3^[], 1^[])]   (11)  
+1.1.8.8  [-v6_circcomb(4^[], 2^[])]   (13)  
+1.1.9  [-r1_partfun1(u4_msualg_1(1^[], 3^[]), u4_msualg_1(2^[], 4^[])), l1_msualg_1(1^[]), -v2_struct_0(1^[]), l1_msualg_1(2^[]), -v2_struct_0(2^[]), l3_msualg_1(3^[], 1^[]), l3_msualg_1(4^[], 2^[]), v4_circcomb(3^[], 1^[]), v4_circcomb(4^[], 2^[])]   (21)  substitution:[[_G4047, _G4440, _G4249, _G4578], [1^[], 3^[], 2^[], 4^[]]]
+1.1.9.1  [-l1_msualg_1(1^[])]   (4)  
+1.1.9.2  [v2_struct_0(1^[])]   (1)  
+1.1.9.3  [-l1_msualg_1(2^[])]   (8)  
+1.1.9.4  [v2_struct_0(2^[])]   (5)  
+1.1.9.5  [-l3_msualg_1(3^[], 1^[])]   (9)  
+1.1.9.6  [-l3_msualg_1(4^[], 2^[])]   (10)  
+1.1.9.7  [-v4_circcomb(3^[], 1^[])]   (12)  
+1.1.9.8  [-v4_circcomb(4^[], 2^[])]   (14)  
+------------------------------------------------------
+End of proof for t60_circcomb

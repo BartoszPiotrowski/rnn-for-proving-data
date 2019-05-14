@@ -1,0 +1,35 @@
+
+t78_funct_2 is a Theorem
+Start of proof for t78_funct_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_funct_1(2^[])]
+ (2)  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]
+ (3)  [-v1_funct_1(3^[])]
+ (4)  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]
+ (5)  [-v1_funct_1(4^[])]
+ (6)  [-v1_funct_2(4^[], 1^[], 1^[])]
+ (7)  [-m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]
+ (8)  [-r1_partfun1(2^[], 4^[])]
+ (9)  [-r1_partfun1(3^[], 4^[])]
+ (10)  [r1_partfun1(2^[], 3^[])]
+ (11)  [m1_subset_1(_G1240, k1_zfmisc_1(k2_zfmisc_1(_G1183, _G1183))), v1_funct_2(_G1240, _G1183, _G1183), -v1_partfun1(_G1240, _G1183)]
+ (12)  [m1_subset_1(_G1855, k1_zfmisc_1(k2_zfmisc_1(_G1614, _G1734))), v1_funct_1(_G1855), m1_subset_1(_G2140, k1_zfmisc_1(k2_zfmisc_1(_G1614, _G1734))), v1_funct_1(_G2140), m1_subset_1(_G2410, k1_zfmisc_1(k2_zfmisc_1(_G1614, _G1734))), v1_funct_1(_G2410), -r1_partfun1(_G1855, _G2140), r1_partfun1(_G1855, _G2410), r1_partfun1(_G2140, _G2410), v1_partfun1(_G2410, _G1614)]
+
+Connection Proof:
+-----------------
+1  [r1_partfun1(2^[], 3^[])]   (10)  
+1.1  [-r1_partfun1(2^[], 3^[]), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[]))), v1_funct_1(2^[]), m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[]))), v1_funct_1(3^[]), m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[]))), v1_funct_1(4^[]), r1_partfun1(2^[], 4^[]), r1_partfun1(3^[], 4^[]), v1_partfun1(4^[], 1^[])]   (12)  substitution:[[_G1855, _G2140, _G1614, _G1734, _G2410], [2^[], 3^[], 1^[], 1^[], 4^[]]]
+1.1.1  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]   (2)  
+1.1.2  [-v1_funct_1(2^[])]   (1)  
+1.1.3  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]   (4)  
+1.1.4  [-v1_funct_1(3^[])]   (3)  
+1.1.5  [-m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]   (7)  
+1.1.6  [-v1_funct_1(4^[])]   (5)  
+1.1.7  [-r1_partfun1(2^[], 4^[])]   (8)  
+1.1.8  [-r1_partfun1(3^[], 4^[])]   (9)  
+1.1.9  [-v1_partfun1(4^[], 1^[]), m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[]))), v1_funct_2(4^[], 1^[], 1^[])]   (11)  substitution:[[_G1240, _G1183], [4^[], 1^[]]]
+1.1.9.1  [-m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]   (7)  
+1.1.9.2  [-v1_funct_2(4^[], 1^[], 1^[])]   (6)  
+------------------------------------------------------
+End of proof for t78_funct_2

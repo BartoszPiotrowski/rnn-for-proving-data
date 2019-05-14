@@ -1,0 +1,43 @@
+
+t52_sheffer2 is a Theorem
+Start of proof for t52_sheffer2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(1^[])]
+ (2)  [-v1_sheffer2(1^[])]
+ (3)  [-l1_sheffer1(1^[])]
+ (4)  [-m1_subset_1(2^[], u1_struct_0(1^[]))]
+ (5)  [-m1_subset_1(3^[], u1_struct_0(1^[]))]
+ (6)  [-m1_subset_1(4^[], u1_struct_0(1^[]))]
+ (7)  [k5_sheffer1(1^[], k5_sheffer1(1^[], 2^[], k5_sheffer1(1^[], k5_sheffer1(1^[], 3^[], 4^[]), 2^[])), k5_sheffer1(1^[], 3^[], 3^[]))=3^[]]
+ (8)  [l1_sheffer1(_G6764), v1_sheffer2(_G6764), -v2_struct_0(_G6764), m1_subset_1(_G7005, u1_struct_0(_G6764)), m1_subset_1(_G7149, u1_struct_0(_G6764)), - (k5_sheffer1(_G6764, k5_sheffer1(_G6764, _G7005, _G7149), k5_sheffer1(_G6764, _G7005, _G7005))=_G7005)]
+ (9)  [l1_sheffer1(_G7667), v1_sheffer2(_G7667), -v2_struct_0(_G7667), m1_subset_1(_G7941, u1_struct_0(_G7667)), m1_subset_1(_G8118, u1_struct_0(_G7667)), m1_subset_1(_G8288, u1_struct_0(_G7667)), - (k5_sheffer1(_G7667, k5_sheffer1(_G7667, _G7941, k5_sheffer1(_G7667, k5_sheffer1(_G7667, _G8118, _G8288), _G7941)), k5_sheffer1(_G7667, _G8118, _G8118))=k5_sheffer1(_G7667, k5_sheffer1(_G7667, _G8118, _G8288), k5_sheffer1(_G7667, _G8118, _G8118)))]
+ (10)  [_G5425=_G5474, - (u1_struct_0(_G5425)=u1_struct_0(_G5474))]
+ (11)  [- (k5_sheffer1(_G5694, _G5865, _G6040)=k5_sheffer1(_G5779, _G5952, _G6129)), _G5694=_G5779, _G5865=_G5952, _G6040=_G6129]
+ (12)  [- (_G3137=_G3137)]
+ (13)  [_G3236=_G3281, - (_G3281=_G3236)]
+ (14)  [- (_G3469=_G3582), _G3469=_G3525, _G3525=_G3582]
+ (15)  [-v2_struct_0(_G3968), _G3919=_G3968, v2_struct_0(_G3919)]
+ (16)  [-v1_sheffer2(_G4246), _G4197=_G4246, v1_sheffer2(_G4197)]
+ (17)  [-l1_sheffer1(_G4524), _G4475=_G4524, l1_sheffer1(_G4475)]
+ (18)  [-m1_subset_1(_G4811, _G4948), m1_subset_1(_G4744, _G4879), _G4744=_G4811, _G4879=_G4948]
+
+Connection Proof:
+-----------------
+1  [k5_sheffer1(1^[], k5_sheffer1(1^[], 2^[], k5_sheffer1(1^[], k5_sheffer1(1^[], 3^[], 4^[]), 2^[])), k5_sheffer1(1^[], 3^[], 3^[]))=3^[]]   (7)  
+1.1  [- (k5_sheffer1(1^[], k5_sheffer1(1^[], 2^[], k5_sheffer1(1^[], k5_sheffer1(1^[], 3^[], 4^[]), 2^[])), k5_sheffer1(1^[], 3^[], 3^[]))=3^[]), k5_sheffer1(1^[], k5_sheffer1(1^[], 2^[], k5_sheffer1(1^[], k5_sheffer1(1^[], 3^[], 4^[]), 2^[])), k5_sheffer1(1^[], 3^[], 3^[]))=k5_sheffer1(1^[], k5_sheffer1(1^[], 3^[], 4^[]), k5_sheffer1(1^[], 3^[], 3^[])), k5_sheffer1(1^[], k5_sheffer1(1^[], 3^[], 4^[]), k5_sheffer1(1^[], 3^[], 3^[]))=3^[]]   (14)  substitution:[[_G3469, _G3582, _G3525], [k5_sheffer1(1^[], k5_sheffer1(1^[], 2^[], k5_sheffer1(1^[], k5_sheffer1(1^[], 3^[], 4^[]), 2^[])), k5_sheffer1(1^[], 3^[], 3^[])), 3^[], k5_sheffer1(1^[], k5_sheffer1(1^[], 3^[], 4^[]), k5_sheffer1(1^[], 3^[], 3^[]))]]
+1.1.1  [- (k5_sheffer1(1^[], k5_sheffer1(1^[], 2^[], k5_sheffer1(1^[], k5_sheffer1(1^[], 3^[], 4^[]), 2^[])), k5_sheffer1(1^[], 3^[], 3^[]))=k5_sheffer1(1^[], k5_sheffer1(1^[], 3^[], 4^[]), k5_sheffer1(1^[], 3^[], 3^[]))), l1_sheffer1(1^[]), v1_sheffer2(1^[]), -v2_struct_0(1^[]), m1_subset_1(2^[], u1_struct_0(1^[])), m1_subset_1(3^[], u1_struct_0(1^[])), m1_subset_1(4^[], u1_struct_0(1^[]))]   (9)  substitution:[[_G7667, _G7941, _G8118, _G8288], [1^[], 2^[], 3^[], 4^[]]]
+1.1.1.1  [-l1_sheffer1(1^[])]   (3)  
+1.1.1.2  [-v1_sheffer2(1^[])]   (2)  
+1.1.1.3  [v2_struct_0(1^[])]   (1)  
+1.1.1.4  [-m1_subset_1(2^[], u1_struct_0(1^[]))]   (4)  
+1.1.1.5  [-m1_subset_1(3^[], u1_struct_0(1^[]))]   (5)  
+1.1.1.6  [-m1_subset_1(4^[], u1_struct_0(1^[]))]   (6)  
+1.1.2  [- (k5_sheffer1(1^[], k5_sheffer1(1^[], 3^[], 4^[]), k5_sheffer1(1^[], 3^[], 3^[]))=3^[]), l1_sheffer1(1^[]), v1_sheffer2(1^[]), -v2_struct_0(1^[]), m1_subset_1(3^[], u1_struct_0(1^[])), m1_subset_1(4^[], u1_struct_0(1^[]))]   (8)  substitution:[[_G6764, _G7005, _G7149], [1^[], 3^[], 4^[]]]
+1.1.2.1  [-l1_sheffer1(1^[])]   (3)  
+1.1.2.2  [-v1_sheffer2(1^[])]   (2)  
+1.1.2.3  [v2_struct_0(1^[])]   (1)  
+1.1.2.4  [-m1_subset_1(3^[], u1_struct_0(1^[]))]   (5)  
+1.1.2.5  [-m1_subset_1(4^[], u1_struct_0(1^[]))]   (6)  
+------------------------------------------------------
+End of proof for t52_sheffer2

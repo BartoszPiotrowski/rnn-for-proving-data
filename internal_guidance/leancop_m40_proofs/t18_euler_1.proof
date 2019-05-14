@@ -1,0 +1,27 @@
+
+t18_euler_1 is a Theorem
+Start of proof for t18_euler_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k1_euler_1(np__2)=np__1]
+ (2)  [- (k5_card_1(k1_tarski(np__1))=k1_euler_1(np__1))]
+ (3)  [- (k5_card_1(k1_tarski(np__1))=k1_euler_1(np__2))]
+ (4)  [- (k1_euler_1(np__1)=np__1)]
+ (5)  [- (_G1062=_G1062)]
+ (6)  [_G1161=_G1206, - (_G1206=_G1161)]
+ (7)  [- (_G1394=_G1507), _G1394=_G1450, _G1450=_G1507]
+ (8)  [_G1844=_G1893, - (k5_card_1(_G1844)=k5_card_1(_G1893))]
+ (9)  [_G2122=_G2171, - (k1_tarski(_G2122)=k1_tarski(_G2171))]
+ (10)  [_G2391=_G2440, - (k1_euler_1(_G2391)=k1_euler_1(_G2440))]
+
+Connection Proof:
+-----------------
+1  [k1_euler_1(np__2)=np__1]   (1)  
+1.1  [- (k1_euler_1(np__2)=np__1), k1_euler_1(np__2)=k5_card_1(k1_tarski(np__1)), k5_card_1(k1_tarski(np__1))=np__1]   (7)  substitution:[[_G1394, _G1507, _G1450], [k1_euler_1(np__2), np__1, k5_card_1(k1_tarski(np__1))]]
+1.1.1  [- (k1_euler_1(np__2)=k5_card_1(k1_tarski(np__1))), k5_card_1(k1_tarski(np__1))=k1_euler_1(np__2)]   (6)  substitution:[[_G1206, _G1161], [k1_euler_1(np__2), k5_card_1(k1_tarski(np__1))]]
+1.1.1.1  [- (k5_card_1(k1_tarski(np__1))=k1_euler_1(np__2))]   (3)  
+1.1.2  [- (k5_card_1(k1_tarski(np__1))=np__1), k5_card_1(k1_tarski(np__1))=k1_euler_1(np__1), k1_euler_1(np__1)=np__1]   (7)  substitution:[[_G1394, _G1507, _G1450], [k5_card_1(k1_tarski(np__1)), np__1, k1_euler_1(np__1)]]
+1.1.2.1  [- (k5_card_1(k1_tarski(np__1))=k1_euler_1(np__1))]   (2)  
+1.1.2.2  [- (k1_euler_1(np__1)=np__1)]   (4)  
+------------------------------------------------------
+End of proof for t18_euler_1

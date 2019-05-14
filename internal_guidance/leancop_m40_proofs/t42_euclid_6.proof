@@ -1,0 +1,40 @@
+
+t42_euclid_6 is a Theorem
+Start of proof for t42_euclid_6
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-4^[], k12_euclid(k5_algstr_0(k15_euclid(np__2), 1^[], 2^[]))=k6_numbers]
+ (2)  [-4^[], - (1^[]=2^[])]
+ (3)  [-3^[], 1^[]=2^[]]
+ (4)  [-3^[], - (k12_euclid(k5_algstr_0(k15_euclid(np__2), 1^[], 2^[]))=k6_numbers)]
+ (5)  [-m1_subset_1(1^[], u1_struct_0(k15_euclid(np__2)))]
+ (6)  [-m1_subset_1(2^[], u1_struct_0(k15_euclid(np__2)))]
+ (7)  [3^[], 4^[]]
+ (8)  [m1_subset_1(_G5150, u1_struct_0(k15_euclid(np__2))), m1_subset_1(_G5298, u1_struct_0(k15_euclid(np__2))), k12_euclid(k5_algstr_0(k15_euclid(np__2), _G5150, _G5298))=k6_numbers, - (_G5150=_G5298)]
+ (9)  [m1_subset_1(_G5150, u1_struct_0(k15_euclid(np__2))), m1_subset_1(_G5298, u1_struct_0(k15_euclid(np__2))), - (k12_euclid(k5_algstr_0(k15_euclid(np__2), _G5150, _G5298))=k6_numbers), _G5150=_G5298]
+ (10)  [-m1_subset_1(_G2671, _G2808), m1_subset_1(_G2604, _G2739), _G2604=_G2671, _G2739=_G2808]
+ (11)  [- (_G1831=_G1831)]
+ (12)  [_G1930=_G1975, - (_G1975=_G1930)]
+ (13)  [- (_G2163=_G2276), _G2163=_G2219, _G2219=_G2276]
+ (14)  [_G3222=_G3271, - (u1_struct_0(_G3222)=u1_struct_0(_G3271))]
+ (15)  [_G3500=_G3549, - (k12_euclid(_G3500)=k12_euclid(_G3549))]
+ (16)  [_G4797=_G4846, - (k15_euclid(_G4797)=k15_euclid(_G4846))]
+ (17)  [- (k5_algstr_0(_G3778, _G3949, _G4124)=k5_algstr_0(_G3863, _G4036, _G4213)), _G3778=_G3863, _G3949=_G4036, _G4124=_G4213]
+
+Connection Proof:
+-----------------
+1  [3^[], 4^[]]   (7)  
+1.1  [-3^[], 1^[]=2^[]]   (3)  
+1.1.1  [- (1^[]=2^[]), m1_subset_1(1^[], u1_struct_0(k15_euclid(np__2))), m1_subset_1(2^[], u1_struct_0(k15_euclid(np__2))), k12_euclid(k5_algstr_0(k15_euclid(np__2), 1^[], 2^[]))=k6_numbers]   (8)  substitution:[[_G5150, _G5298], [1^[], 2^[]]]
+1.1.1.1  [-m1_subset_1(1^[], u1_struct_0(k15_euclid(np__2)))]   (5)  
+1.1.1.2  [-m1_subset_1(2^[], u1_struct_0(k15_euclid(np__2)))]   (6)  
+1.1.1.3  [- (k12_euclid(k5_algstr_0(k15_euclid(np__2), 1^[], 2^[]))=k6_numbers), -3^[]]   (4)  
+1.1.1.3.1  [3^[]]   (reduction:1)  
+1.2  [-4^[], k12_euclid(k5_algstr_0(k15_euclid(np__2), 1^[], 2^[]))=k6_numbers]   (1)  
+1.2.1  [- (k12_euclid(k5_algstr_0(k15_euclid(np__2), 1^[], 2^[]))=k6_numbers), m1_subset_1(1^[], u1_struct_0(k15_euclid(np__2))), m1_subset_1(2^[], u1_struct_0(k15_euclid(np__2))), 1^[]=2^[]]   (9)  substitution:[[_G5150, _G5298], [1^[], 2^[]]]
+1.2.1.1  [-m1_subset_1(1^[], u1_struct_0(k15_euclid(np__2)))]   (5)  
+1.2.1.2  [-m1_subset_1(2^[], u1_struct_0(k15_euclid(np__2)))]   (6)  
+1.2.1.3  [- (1^[]=2^[]), -4^[]]   (2)  
+1.2.1.3.1  [4^[]]   (reduction:1)  
+------------------------------------------------------
+End of proof for t42_euclid_6

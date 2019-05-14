@@ -1,0 +1,44 @@
+
+t2_net_1 is a Theorem
+Start of proof for t2_net_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-l1_petri(3^[])]
+ (2)  [-m1_subset_1(2^[], u1_struct_0(3^[]))]
+ (3)  [u1_struct_0(3^[])=k1_xboole_0]
+ (4)  [m1_subset_1(2^[], k2_net_1(3^[]))]
+ (5)  [l1_petri(_G6709), - (k2_net_1(_G6709)=k2_xboole_0(u1_struct_0(_G6709), u4_struct_0(_G6709)))]
+ (6)  [v1_xboole_0(_G7595), - (_G7595=k1_xboole_0)]
+ (7)  [r2_hidden(_G7752, _G7797), -m1_subset_1(_G7752, _G7797)]
+ (8)  [m1_subset_1(_G7985, _G8035), -v1_xboole_0(_G8035), -r2_hidden(_G7985, _G8035)]
+ (9)  [_G7097=k2_xboole_0(_G6956, _G7026), -r2_hidden(_G7265, _G7097), r2_hidden(_G7265, _G6956)]
+ (10)  [_G7097=k2_xboole_0(_G6956, _G7026), -r2_hidden(_G7265, _G7097), r2_hidden(_G7265, _G7026)]
+ (11)  [_G7097=k2_xboole_0(_G6956, _G7026), r2_hidden(_G7265, _G7097), -r2_hidden(_G7265, _G6956), -r2_hidden(_G7265, _G7026)]
+ (12)  [- (_G7097=k2_xboole_0(_G6956, _G7026)), r2_hidden(1^[_G7097, _G7026, _G6956], _G7097), r2_hidden(1^[_G7097, _G7026, _G6956], _G6956)]
+ (13)  [- (_G7097=k2_xboole_0(_G6956, _G7026)), r2_hidden(1^[_G7097, _G7026, _G6956], _G7097), r2_hidden(1^[_G7097, _G7026, _G6956], _G7026)]
+ (14)  [- (_G7097=k2_xboole_0(_G6956, _G7026)), -r2_hidden(1^[_G7097, _G7026, _G6956], _G7097), -r2_hidden(1^[_G7097, _G7026, _G6956], _G6956), -r2_hidden(1^[_G7097, _G7026, _G6956], _G7026)]
+ (15)  [_G5203=_G5252, - (u4_struct_0(_G5203)=u4_struct_0(_G5252))]
+ (16)  [- (k2_xboole_0(_G5481, _G5616)=k2_xboole_0(_G5548, _G5685)), _G5481=_G5548, _G5616=_G5685]
+ (17)  [_G6078=_G6127, - (u1_struct_0(_G6078)=u1_struct_0(_G6127))]
+ (18)  [_G6347=_G6396, - (k2_net_1(_G6347)=k2_net_1(_G6396))]
+ (19)  [- (_G2596=_G2596)]
+ (20)  [_G2695=_G2740, - (_G2740=_G2695)]
+ (21)  [- (_G2928=_G3041), _G2928=_G2984, _G2984=_G3041]
+ (22)  [-v1_xboole_0(_G3427), _G3378=_G3427, v1_xboole_0(_G3378)]
+ (23)  [-r2_hidden(_G3723, _G3860), r2_hidden(_G3656, _G3791), _G3656=_G3723, _G3791=_G3860]
+ (24)  [-l1_petri(_G4302), _G4253=_G4302, l1_petri(_G4253)]
+ (25)  [-m1_subset_1(_G4589, _G4726), m1_subset_1(_G4522, _G4657), _G4522=_G4589, _G4657=_G4726]
+
+Connection Proof:
+-----------------
+1  [u1_struct_0(3^[])=k1_xboole_0]   (3)  
+1.1  [- (u1_struct_0(3^[])=k1_xboole_0), v1_xboole_0(u1_struct_0(3^[]))]   (6)  substitution:[[_G7595], [u1_struct_0(3^[])]]
+1.1.1  [-v1_xboole_0(u1_struct_0(3^[])), m1_subset_1(2^[], u1_struct_0(3^[])), -r2_hidden(2^[], u1_struct_0(3^[]))]   (8)  substitution:[[_G8035, _G7985], [u1_struct_0(3^[]), 2^[]]]
+1.1.1.1  [-m1_subset_1(2^[], u1_struct_0(3^[]))]   (2)  
+1.1.1.2  [r2_hidden(2^[], u1_struct_0(3^[])), k2_net_1(3^[])=k2_xboole_0(u1_struct_0(3^[]), u4_struct_0(3^[])), -r2_hidden(2^[], k2_net_1(3^[]))]   (9)  substitution:[[_G7265, _G6956, _G7097, _G7026], [2^[], u1_struct_0(3^[]), k2_net_1(3^[]), u4_struct_0(3^[])]]
+1.1.1.2.1  [- (k2_net_1(3^[])=k2_xboole_0(u1_struct_0(3^[]), u4_struct_0(3^[]))), l1_petri(3^[])]   (5)  substitution:[[_G6709], [3^[]]]
+1.1.1.2.1.1  [-l1_petri(3^[])]   (1)  
+1.1.1.2.2  [r2_hidden(2^[], k2_net_1(3^[])), -m1_subset_1(2^[], k2_net_1(3^[]))]   (7)  substitution:[[_G7752, _G7797], [2^[], k2_net_1(3^[])]]
+1.1.1.2.2.1  [m1_subset_1(2^[], k2_net_1(3^[]))]   (4)  
+------------------------------------------------------
+End of proof for t2_net_1

@@ -1,0 +1,34 @@
+
+t73_funct_1 is a Theorem
+Start of proof for t73_funct_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(3^[])]
+ (2)  [r1_tarski(2^[], k10_xtuple_0(3^[]))]
+ (3)  [r2_hidden(_G7708, 2^[]), k8_relat_1(3^[], k1_tarski(_G7708))=k1_xboole_0]
+ (4)  [v1_relat_1(_G5973), r2_hidden(_G5914, k10_xtuple_0(_G5973)), k8_relat_1(_G5973, k1_tarski(_G5914))=k1_xboole_0]
+ (5)  [v1_relat_1(_G5973), -r2_hidden(_G5914, k10_xtuple_0(_G5973)), - (k8_relat_1(_G5973, k1_tarski(_G5914))=k1_xboole_0)]
+ (6)  [-r1_tarski(_G5521, _G5577), -r2_hidden(1^[_G5577, _G5521], _G5521)]
+ (7)  [-r1_tarski(_G5521, _G5577), r2_hidden(1^[_G5577, _G5521], _G5577)]
+ (8)  [r1_tarski(_G5521, _G5577), r2_hidden(_G5691, _G5521), -r2_hidden(_G5691, _G5577)]
+ (9)  [- (k8_relat_1(_G4314, _G4449)=k8_relat_1(_G4381, _G4518)), _G4314=_G4381, _G4449=_G4518]
+ (10)  [_G4911=_G4960, - (k1_tarski(_G4911)=k1_tarski(_G4960))]
+ (11)  [_G5180=_G5229, - (k10_xtuple_0(_G5180)=k10_xtuple_0(_G5229))]
+ (12)  [- (_G2006=_G2006)]
+ (13)  [_G2105=_G2150, - (_G2150=_G2105)]
+ (14)  [- (_G2338=_G2451), _G2338=_G2394, _G2394=_G2451]
+ (15)  [-v1_relat_1(_G2837), _G2788=_G2837, v1_relat_1(_G2788)]
+ (16)  [-r2_hidden(_G3133, _G3270), r2_hidden(_G3066, _G3201), _G3066=_G3133, _G3201=_G3270]
+ (17)  [-r1_tarski(_G3721, _G3858), r1_tarski(_G3654, _G3789), _G3654=_G3721, _G3789=_G3858]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(1^[k10_xtuple_0(3^[]), 2^[]], 2^[]), k8_relat_1(3^[], k1_tarski(1^[k10_xtuple_0(3^[]), 2^[]]))=k1_xboole_0]   (3)  substitution:[[_G7708], [1^[k10_xtuple_0(3^[]), 2^[]]]]
+1.1  [-r2_hidden(1^[k10_xtuple_0(3^[]), 2^[]], 2^[]), -r1_tarski(2^[], k10_xtuple_0(3^[]))]   (6)  substitution:[[_G5577, _G5521], [k10_xtuple_0(3^[]), 2^[]]]
+1.1.1  [r1_tarski(2^[], k10_xtuple_0(3^[]))]   (2)  
+1.2  [- (k8_relat_1(3^[], k1_tarski(1^[k10_xtuple_0(3^[]), 2^[]]))=k1_xboole_0), v1_relat_1(3^[]), -r2_hidden(1^[k10_xtuple_0(3^[]), 2^[]], k10_xtuple_0(3^[]))]   (5)  substitution:[[_G5973, _G5914], [3^[], 1^[k10_xtuple_0(3^[]), 2^[]]]]
+1.2.1  [-v1_relat_1(3^[])]   (1)  
+1.2.2  [r2_hidden(1^[k10_xtuple_0(3^[]), 2^[]], k10_xtuple_0(3^[])), -r1_tarski(2^[], k10_xtuple_0(3^[]))]   (7)  substitution:[[_G5577, _G5521], [k10_xtuple_0(3^[]), 2^[]]]
+1.2.2.1  [r1_tarski(2^[], k10_xtuple_0(3^[]))]   (2)  
+------------------------------------------------------
+End of proof for t73_funct_1

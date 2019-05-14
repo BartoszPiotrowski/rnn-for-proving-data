@@ -1,0 +1,41 @@
+
+t155_xcmplx_1 is a Theorem
+Start of proof for t155_xcmplx_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xcmplx_0(1^[])]
+ (2)  [-v1_xcmplx_0(2^[])]
+ (3)  [-v1_xcmplx_0(3^[])]
+ (4)  [k2_xcmplx_0(k6_xcmplx_0(1^[], 2^[]), 3^[])=k2_xcmplx_0(k2_xcmplx_0(k4_xcmplx_0(2^[]), 3^[]), 1^[])]
+ (5)  [- (k2_xcmplx_0(_G5060, _G5115)=k2_xcmplx_0(_G5115, _G5060)), v1_xcmplx_0(_G5060), v1_xcmplx_0(_G5115)]
+ (6)  [v1_xcmplx_0(_G5428), v1_xcmplx_0(_G5533), v1_xcmplx_0(_G5634), - (k6_xcmplx_0(k2_xcmplx_0(_G5428, _G5533), _G5634)=k2_xcmplx_0(k2_xcmplx_0(k4_xcmplx_0(_G5634), _G5428), _G5533))]
+ (7)  [v1_xcmplx_0(_G6036), v1_xcmplx_0(_G6139), v1_xcmplx_0(_G6238), - (k6_xcmplx_0(k2_xcmplx_0(_G6036, _G6139), _G6238)=k2_xcmplx_0(k6_xcmplx_0(_G6036, _G6238), _G6139))]
+ (8)  [-v1_xcmplx_0(_G3284), _G3235=_G3284, v1_xcmplx_0(_G3235)]
+ (9)  [- (_G2462=_G2462)]
+ (10)  [_G2561=_G2606, - (_G2606=_G2561)]
+ (11)  [- (_G2794=_G2907), _G2794=_G2850, _G2850=_G2907]
+ (12)  [- (k6_xcmplx_0(_G3534, _G3669)=k6_xcmplx_0(_G3601, _G3738)), _G3534=_G3601, _G3669=_G3738]
+ (13)  [_G4719=_G4768, - (k4_xcmplx_0(_G4719)=k4_xcmplx_0(_G4768))]
+ (14)  [- (k2_xcmplx_0(_G4131, _G4266)=k2_xcmplx_0(_G4198, _G4335)), _G4131=_G4198, _G4266=_G4335]
+
+Connection Proof:
+-----------------
+1  [k2_xcmplx_0(k6_xcmplx_0(1^[], 2^[]), 3^[])=k2_xcmplx_0(k2_xcmplx_0(k4_xcmplx_0(2^[]), 3^[]), 1^[])]   (4)  
+1.1  [- (k2_xcmplx_0(k6_xcmplx_0(1^[], 2^[]), 3^[])=k2_xcmplx_0(k2_xcmplx_0(k4_xcmplx_0(2^[]), 3^[]), 1^[])), k2_xcmplx_0(k6_xcmplx_0(1^[], 2^[]), 3^[])=k6_xcmplx_0(k2_xcmplx_0(1^[], 3^[]), 2^[]), k6_xcmplx_0(k2_xcmplx_0(1^[], 3^[]), 2^[])=k2_xcmplx_0(k2_xcmplx_0(k4_xcmplx_0(2^[]), 3^[]), 1^[])]   (11)  substitution:[[_G2794, _G2907, _G2850], [k2_xcmplx_0(k6_xcmplx_0(1^[], 2^[]), 3^[]), k2_xcmplx_0(k2_xcmplx_0(k4_xcmplx_0(2^[]), 3^[]), 1^[]), k6_xcmplx_0(k2_xcmplx_0(1^[], 3^[]), 2^[])]]
+1.1.1  [- (k2_xcmplx_0(k6_xcmplx_0(1^[], 2^[]), 3^[])=k6_xcmplx_0(k2_xcmplx_0(1^[], 3^[]), 2^[])), k6_xcmplx_0(k2_xcmplx_0(1^[], 3^[]), 2^[])=k2_xcmplx_0(k6_xcmplx_0(1^[], 2^[]), 3^[])]   (10)  substitution:[[_G2606, _G2561], [k2_xcmplx_0(k6_xcmplx_0(1^[], 2^[]), 3^[]), k6_xcmplx_0(k2_xcmplx_0(1^[], 3^[]), 2^[])]]
+1.1.1.1  [- (k6_xcmplx_0(k2_xcmplx_0(1^[], 3^[]), 2^[])=k2_xcmplx_0(k6_xcmplx_0(1^[], 2^[]), 3^[])), v1_xcmplx_0(1^[]), v1_xcmplx_0(3^[]), v1_xcmplx_0(2^[])]   (7)  substitution:[[_G6036, _G6139, _G6238], [1^[], 3^[], 2^[]]]
+1.1.1.1.1  [-v1_xcmplx_0(1^[])]   (1)  
+1.1.1.1.2  [-v1_xcmplx_0(3^[])]   (3)  
+1.1.1.1.3  [-v1_xcmplx_0(2^[])]   (2)  
+1.1.2  [- (k6_xcmplx_0(k2_xcmplx_0(1^[], 3^[]), 2^[])=k2_xcmplx_0(k2_xcmplx_0(k4_xcmplx_0(2^[]), 3^[]), 1^[])), k6_xcmplx_0(k2_xcmplx_0(1^[], 3^[]), 2^[])=k6_xcmplx_0(k2_xcmplx_0(3^[], 1^[]), 2^[]), k6_xcmplx_0(k2_xcmplx_0(3^[], 1^[]), 2^[])=k2_xcmplx_0(k2_xcmplx_0(k4_xcmplx_0(2^[]), 3^[]), 1^[])]   (11)  substitution:[[_G2794, _G2907, _G2850], [k6_xcmplx_0(k2_xcmplx_0(1^[], 3^[]), 2^[]), k2_xcmplx_0(k2_xcmplx_0(k4_xcmplx_0(2^[]), 3^[]), 1^[]), k6_xcmplx_0(k2_xcmplx_0(3^[], 1^[]), 2^[])]]
+1.1.2.1  [- (k6_xcmplx_0(k2_xcmplx_0(1^[], 3^[]), 2^[])=k6_xcmplx_0(k2_xcmplx_0(3^[], 1^[]), 2^[])), k2_xcmplx_0(1^[], 3^[])=k2_xcmplx_0(3^[], 1^[]), 2^[]=2^[]]   (12)  substitution:[[_G3534, _G3669, _G3601, _G3738], [k2_xcmplx_0(1^[], 3^[]), 2^[], k2_xcmplx_0(3^[], 1^[]), 2^[]]]
+1.1.2.1.1  [- (k2_xcmplx_0(1^[], 3^[])=k2_xcmplx_0(3^[], 1^[])), v1_xcmplx_0(1^[]), v1_xcmplx_0(3^[])]   (5)  substitution:[[_G5060, _G5115], [1^[], 3^[]]]
+1.1.2.1.1.1  [-v1_xcmplx_0(1^[])]   (1)  
+1.1.2.1.1.2  [-v1_xcmplx_0(3^[])]   (3)  
+1.1.2.1.2  [- (2^[]=2^[])]   (9)  substitution:[[_G2462], [2^[]]]
+1.1.2.2  [- (k6_xcmplx_0(k2_xcmplx_0(3^[], 1^[]), 2^[])=k2_xcmplx_0(k2_xcmplx_0(k4_xcmplx_0(2^[]), 3^[]), 1^[])), v1_xcmplx_0(3^[]), v1_xcmplx_0(1^[]), v1_xcmplx_0(2^[])]   (6)  substitution:[[_G5428, _G5533, _G5634], [3^[], 1^[], 2^[]]]
+1.1.2.2.1  [-v1_xcmplx_0(3^[])]   (3)  
+1.1.2.2.2  [-v1_xcmplx_0(1^[])]   (1)  
+1.1.2.2.3  [-v1_xcmplx_0(2^[])]   (2)  
+------------------------------------------------------
+End of proof for t155_xcmplx_1

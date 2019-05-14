@@ -1,0 +1,26 @@
+
+l28_simplex0 is a Theorem
+Start of proof for l28_simplex0
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-l1_pre_topc(2^[])]
+ (2)  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(2^[])))]
+ (3)  [-v3_pre_topc(3^[], 2^[])]
+ (4)  [r1_tarski(3^[], k4_simplex0(2^[]))]
+ (5)  [l1_pre_topc(_G1340), m1_subset_1(_G1446, k1_zfmisc_1(u1_struct_0(_G1340))), -r2_hidden(_G1267, k4_simplex0(_G1340)), v3_pre_topc(_G1446, _G1340), r2_hidden(_G1267, _G1446)]
+ (6)  [-r1_tarski(_G874, _G930), -r2_hidden(1^[_G930, _G874], _G874)]
+ (7)  [-r1_tarski(_G874, _G930), r2_hidden(1^[_G930, _G874], _G930)]
+ (8)  [r1_tarski(_G874, _G930), r2_hidden(_G1044, _G874), -r2_hidden(_G1044, _G930)]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(3^[], k4_simplex0(2^[]))]   (4)  
+1.1  [-r1_tarski(3^[], k4_simplex0(2^[])), -r2_hidden(1^[k4_simplex0(2^[]), 3^[]], 3^[])]   (6)  substitution:[[_G874, _G930], [3^[], k4_simplex0(2^[])]]
+1.1.1  [r2_hidden(1^[k4_simplex0(2^[]), 3^[]], 3^[]), l1_pre_topc(2^[]), m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(2^[]))), -r2_hidden(1^[k4_simplex0(2^[]), 3^[]], k4_simplex0(2^[])), v3_pre_topc(3^[], 2^[])]   (5)  substitution:[[_G1267, _G1446, _G1340], [1^[k4_simplex0(2^[]), 3^[]], 3^[], 2^[]]]
+1.1.1.1  [-l1_pre_topc(2^[])]   (1)  
+1.1.1.2  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(2^[])))]   (2)  
+1.1.1.3  [r2_hidden(1^[k4_simplex0(2^[]), 3^[]], k4_simplex0(2^[])), -r1_tarski(3^[], k4_simplex0(2^[]))]   (7)  substitution:[[_G930, _G874], [k4_simplex0(2^[]), 3^[]]]
+1.1.1.3.1  [r1_tarski(3^[], k4_simplex0(2^[]))]   (4)  
+1.1.1.4  [-v3_pre_topc(3^[], 2^[])]   (3)  
+------------------------------------------------------
+End of proof for l28_simplex0

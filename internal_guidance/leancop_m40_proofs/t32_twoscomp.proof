@@ -1,0 +1,53 @@
+
+t32_twoscomp is a Theorem
+Start of proof for t32_twoscomp
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v1_xtuple_0(2^[])]
+ (2)  [v1_xtuple_0(3^[])]
+ (3)  [r2_hidden(k4_tarski(k10_finseq_1(2^[], 3^[]), k3_twoscomp), k3_msafree2(k37_twoscomp(2^[], 3^[])))]
+ (4)  [- (k37_twoscomp(_G9910, _G9958)=k5_circcomb(k3_twoscomp, k10_finseq_1(_G9910, _G9958)))]
+ (5)  [-v1_finseq_1(k10_finseq_1(_G10197, _G10238))]
+ (6)  [-v1_relat_1(k10_finseq_1(_G10367, _G10416))]
+ (7)  [-v1_funct_1(k10_finseq_1(_G10367, _G10416))]
+ (8)  [- (k2_msafree2(k5_circcomb(_G10636, _G10713))=k10_xtuple_0(_G10713)), v1_relat_1(_G10713), v1_funct_1(_G10713), v1_finseq_1(_G10713)]
+ (9)  [- (k3_msafree2(k5_circcomb(_G10636, _G10713))=k1_tarski(k4_tarski(_G10713, _G10636))), v1_relat_1(_G10713), v1_funct_1(_G10713), v1_finseq_1(_G10713)]
+ (10)  [_G9548=k1_tarski(_G9490), r2_hidden(_G9678, _G9548), - (_G9678=_G9490)]
+ (11)  [_G9548=k1_tarski(_G9490), -r2_hidden(_G9678, _G9548), _G9678=_G9490]
+ (12)  [- (_G9548=k1_tarski(_G9490)), r2_hidden(1^[_G9548, _G9490], _G9548), 1^[_G9548, _G9490]=_G9490]
+ (13)  [- (_G9548=k1_tarski(_G9490)), -r2_hidden(1^[_G9548, _G9490], _G9548), - (1^[_G9548, _G9490]=_G9490)]
+ (14)  [_G5831=_G5880, - (k2_msafree2(_G5831)=k2_msafree2(_G5880))]
+ (15)  [_G6109=_G6158, - (k10_xtuple_0(_G6109)=k10_xtuple_0(_G6158))]
+ (16)  [- (k5_circcomb(_G6387, _G6522)=k5_circcomb(_G6454, _G6591)), _G6387=_G6454, _G6522=_G6591]
+ (17)  [_G6984=_G7033, - (k1_tarski(_G6984)=k1_tarski(_G7033))]
+ (18)  [- (k4_tarski(_G7262, _G7397)=k4_tarski(_G7329, _G7466)), _G7262=_G7329, _G7397=_G7466]
+ (19)  [- (k10_finseq_1(_G7859, _G7994)=k10_finseq_1(_G7926, _G8063)), _G7859=_G7926, _G7994=_G8063]
+ (20)  [_G8456=_G8505, - (k3_msafree2(_G8456)=k3_msafree2(_G8505))]
+ (21)  [- (k37_twoscomp(_G8725, _G8860)=k37_twoscomp(_G8792, _G8929)), _G8725=_G8792, _G8860=_G8929]
+ (22)  [- (_G3244=_G3244)]
+ (23)  [_G3343=_G3388, - (_G3388=_G3343)]
+ (24)  [- (_G3576=_G3689), _G3576=_G3632, _G3632=_G3689]
+ (25)  [-v1_relat_1(_G4075), _G4026=_G4075, v1_relat_1(_G4026)]
+ (26)  [-v1_funct_1(_G4353), _G4304=_G4353, v1_funct_1(_G4304)]
+ (27)  [-v1_finseq_1(_G4631), _G4582=_G4631, v1_finseq_1(_G4582)]
+ (28)  [-v1_xtuple_0(_G4909), _G4860=_G4909, v1_xtuple_0(_G4860)]
+ (29)  [-r2_hidden(_G5196, _G5333), r2_hidden(_G5129, _G5264), _G5129=_G5196, _G5264=_G5333]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(k4_tarski(k10_finseq_1(2^[], 3^[]), k3_twoscomp), k3_msafree2(k37_twoscomp(2^[], 3^[])))]   (3)  
+1.1  [-r2_hidden(k4_tarski(k10_finseq_1(2^[], 3^[]), k3_twoscomp), k3_msafree2(k37_twoscomp(2^[], 3^[]))), k3_msafree2(k37_twoscomp(2^[], 3^[]))=k1_tarski(k4_tarski(k10_finseq_1(2^[], 3^[]), k3_twoscomp)), k4_tarski(k10_finseq_1(2^[], 3^[]), k3_twoscomp)=k4_tarski(k10_finseq_1(2^[], 3^[]), k3_twoscomp)]   (11)  substitution:[[_G9678, _G9548, _G9490], [k4_tarski(k10_finseq_1(2^[], 3^[]), k3_twoscomp), k3_msafree2(k37_twoscomp(2^[], 3^[])), k4_tarski(k10_finseq_1(2^[], 3^[]), k3_twoscomp)]]
+1.1.1  [- (k3_msafree2(k37_twoscomp(2^[], 3^[]))=k1_tarski(k4_tarski(k10_finseq_1(2^[], 3^[]), k3_twoscomp))), k3_msafree2(k37_twoscomp(2^[], 3^[]))=k3_msafree2(k5_circcomb(k3_twoscomp, k10_finseq_1(2^[], 3^[]))), k3_msafree2(k5_circcomb(k3_twoscomp, k10_finseq_1(2^[], 3^[])))=k1_tarski(k4_tarski(k10_finseq_1(2^[], 3^[]), k3_twoscomp))]   (24)  substitution:[[_G3576, _G3689, _G3632], [k3_msafree2(k37_twoscomp(2^[], 3^[])), k1_tarski(k4_tarski(k10_finseq_1(2^[], 3^[]), k3_twoscomp)), k3_msafree2(k5_circcomb(k3_twoscomp, k10_finseq_1(2^[], 3^[])))]]
+1.1.1.1  [- (k3_msafree2(k37_twoscomp(2^[], 3^[]))=k3_msafree2(k5_circcomb(k3_twoscomp, k10_finseq_1(2^[], 3^[])))), k37_twoscomp(2^[], 3^[])=k5_circcomb(k3_twoscomp, k10_finseq_1(2^[], 3^[]))]   (20)  substitution:[[_G8456, _G8505], [k37_twoscomp(2^[], 3^[]), k5_circcomb(k3_twoscomp, k10_finseq_1(2^[], 3^[]))]]
+1.1.1.1.1  [- (k37_twoscomp(2^[], 3^[])=k5_circcomb(k3_twoscomp, k10_finseq_1(2^[], 3^[])))]   (4)  substitution:[[_G9910, _G9958], [2^[], 3^[]]]
+1.1.1.2  [- (k3_msafree2(k5_circcomb(k3_twoscomp, k10_finseq_1(2^[], 3^[])))=k1_tarski(k4_tarski(k10_finseq_1(2^[], 3^[]), k3_twoscomp))), v1_relat_1(k10_finseq_1(2^[], 3^[])), v1_funct_1(k10_finseq_1(2^[], 3^[])), v1_finseq_1(k10_finseq_1(2^[], 3^[]))]   (9)  substitution:[[_G10636, _G10713], [k3_twoscomp, k10_finseq_1(2^[], 3^[])]]
+1.1.1.2.1  [-v1_relat_1(k10_finseq_1(2^[], 3^[]))]   (6)  substitution:[[_G10367, _G10416], [2^[], 3^[]]]
+1.1.1.2.2  [-v1_funct_1(k10_finseq_1(2^[], 3^[]))]   (7)  substitution:[[_G10367, _G10416], [2^[], 3^[]]]
+1.1.1.2.3  [-v1_finseq_1(k10_finseq_1(2^[], 3^[]))]   (5)  substitution:[[_G10197, _G10238], [2^[], 3^[]]]
+1.1.2  [- (k4_tarski(k10_finseq_1(2^[], 3^[]), k3_twoscomp)=k4_tarski(k10_finseq_1(2^[], 3^[]), k3_twoscomp)), k10_finseq_1(2^[], 3^[])=k10_finseq_1(2^[], 3^[]), k3_twoscomp=k3_twoscomp]   (18)  substitution:[[_G7262, _G7397, _G7329, _G7466], [k10_finseq_1(2^[], 3^[]), k3_twoscomp, k10_finseq_1(2^[], 3^[]), k3_twoscomp]]
+1.1.2.1  [- (k10_finseq_1(2^[], 3^[])=k10_finseq_1(2^[], 3^[])), 2^[]=2^[], 3^[]=3^[]]   (19)  substitution:[[_G7859, _G7994, _G7926, _G8063], [2^[], 3^[], 2^[], 3^[]]]
+1.1.2.1.1  [- (2^[]=2^[])]   (22)  substitution:[[_G3244], [2^[]]]
+1.1.2.1.2  [- (3^[]=3^[])]   (22)  substitution:[[_G3244], [3^[]]]
+1.1.2.2  [- (k3_twoscomp=k3_twoscomp)]   (22)  substitution:[[_G3244], [k3_twoscomp]]
+------------------------------------------------------
+End of proof for t32_twoscomp

@@ -1,0 +1,65 @@
+
+t1_scmpds_8 is a Theorem
+Start of proof for t1_scmpds_8
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_ami_2(2^[])]
+ (2)  [-m1_subset_1(2^[], u1_struct_0(k1_scmpds_2))]
+ (3)  [m2_subset_1(_G12021, k1_numbers, k5_numbers), 2^[]=k1_scmp_gcd(_G12021)]
+ (4)  [m1_subset_1(_G8341, k4_ordinal1), -v7_ordinal1(_G8341)]
+ (5)  [-m2_subset_1(k2_nat_1(_G8498, _G8552), k1_numbers, k5_numbers), m1_subset_1(_G8498, k5_numbers), v7_ordinal1(_G8552)]
+ (6)  [- (k5_numbers=k4_ordinal1)]
+ (7)  [- (k6_numbers=k1_xboole_0)]
+ (8)  [-v1_xboole_0(np__0)]
+ (9)  [-m2_subset_1(np__0, k1_numbers, k5_numbers)]
+ (10)  [-m1_subset_1(np__0, k5_numbers)]
+ (11)  [-m1_subset_1(np__0, k1_numbers)]
+ (12)  [m1_subset_1(_G9295, k5_numbers), m1_subset_1(_G9411, k5_numbers), - (k2_scmpds_2(_G9295, _G9411)=k1_scmp_gcd(k2_nat_1(_G9295, _G9411)))]
+ (13)  [v1_xboole_0(_G10163), - (_G10163=k1_xboole_0)]
+ (14)  [-m1_subset_1(1^[_G9729], k5_numbers), v1_ami_2(_G9729), m1_subset_1(_G9729, u1_struct_0(k1_scmpds_2))]
+ (15)  [- (_G9729=k2_scmpds_2(1^[_G9729], k6_numbers)), v1_ami_2(_G9729), m1_subset_1(_G9729, u1_struct_0(k1_scmpds_2))]
+ (16)  [- (k2_nat_1(_G6516, _G6651)=k2_nat_1(_G6583, _G6720)), _G6516=_G6583, _G6651=_G6720]
+ (17)  [- (k2_scmpds_2(_G7113, _G7248)=k2_scmpds_2(_G7180, _G7317)), _G7113=_G7180, _G7248=_G7317]
+ (18)  [_G7710=_G7759, - (u1_struct_0(_G7710)=u1_struct_0(_G7759))]
+ (19)  [_G7979=_G8028, - (k1_scmp_gcd(_G7979)=k1_scmp_gcd(_G8028))]
+ (20)  [- (_G3179=_G3179)]
+ (21)  [_G3278=_G3323, - (_G3323=_G3278)]
+ (22)  [- (_G3511=_G3624), _G3511=_G3567, _G3567=_G3624]
+ (23)  [-v7_ordinal1(_G4010), _G3961=_G4010, v7_ordinal1(_G3961)]
+ (24)  [-v1_xboole_0(_G4288), _G4239=_G4288, v1_xboole_0(_G4239)]
+ (25)  [-v1_ami_2(_G4566), _G4517=_G4566, v1_ami_2(_G4517)]
+ (26)  [-m1_subset_1(_G4862, _G4999), m1_subset_1(_G4795, _G4930), _G4795=_G4862, _G4930=_G4999]
+ (27)  [-m2_subset_1(_G5468, _G5641, _G5818), m2_subset_1(_G5383, _G5554, _G5729), _G5383=_G5468, _G5554=_G5641, _G5729=_G5818]
+
+Connection Proof:
+-----------------
+1  [m2_subset_1(k2_nat_1(1^[2^[]], k1_xboole_0), k1_numbers, k5_numbers), 2^[]=k1_scmp_gcd(k2_nat_1(1^[2^[]], k1_xboole_0))]   (3)  substitution:[[_G12021], [k2_nat_1(1^[2^[]], k1_xboole_0)]]
+1.1  [-m2_subset_1(k2_nat_1(1^[2^[]], k1_xboole_0), k1_numbers, k5_numbers), m1_subset_1(1^[2^[]], k5_numbers), v7_ordinal1(k1_xboole_0)]   (5)  substitution:[[_G8498, _G8552], [1^[2^[]], k1_xboole_0]]
+1.1.1  [-m1_subset_1(1^[2^[]], k5_numbers), v1_ami_2(2^[]), m1_subset_1(2^[], u1_struct_0(k1_scmpds_2))]   (14)  substitution:[[_G9729], [2^[]]]
+1.1.1.1  [-v1_ami_2(2^[])]   (1)  
+1.1.1.2  [-m1_subset_1(2^[], u1_struct_0(k1_scmpds_2))]   (2)  
+1.1.2  [-v7_ordinal1(k1_xboole_0), m1_subset_1(k1_xboole_0, k4_ordinal1)]   (4)  substitution:[[_G8341], [k1_xboole_0]]
+1.1.2.1  [-m1_subset_1(k1_xboole_0, k4_ordinal1), m1_subset_1(np__0, k5_numbers), np__0=k1_xboole_0, k5_numbers=k4_ordinal1]   (26)  substitution:[[_G4862, _G4999, _G4795, _G4930], [k1_xboole_0, k4_ordinal1, np__0, k5_numbers]]
+1.1.2.1.1  [-m1_subset_1(np__0, k5_numbers)]   (10)  
+1.1.2.1.2  [- (np__0=k1_xboole_0), v1_xboole_0(np__0)]   (13)  substitution:[[_G10163], [np__0]]
+1.1.2.1.2.1  [-v1_xboole_0(np__0)]   (8)  
+1.1.2.1.3  [- (k5_numbers=k4_ordinal1)]   (6)  
+1.2  [- (2^[]=k1_scmp_gcd(k2_nat_1(1^[2^[]], k1_xboole_0))), 2^[]=k2_scmpds_2(1^[2^[]], k1_xboole_0), k2_scmpds_2(1^[2^[]], k1_xboole_0)=k1_scmp_gcd(k2_nat_1(1^[2^[]], k1_xboole_0))]   (22)  substitution:[[_G3511, _G3624, _G3567], [2^[], k1_scmp_gcd(k2_nat_1(1^[2^[]], k1_xboole_0)), k2_scmpds_2(1^[2^[]], k1_xboole_0)]]
+1.2.1  [- (2^[]=k2_scmpds_2(1^[2^[]], k1_xboole_0)), 2^[]=k2_scmpds_2(1^[2^[]], k6_numbers), k2_scmpds_2(1^[2^[]], k6_numbers)=k2_scmpds_2(1^[2^[]], k1_xboole_0)]   (22)  substitution:[[_G3511, _G3624, _G3567], [2^[], k2_scmpds_2(1^[2^[]], k1_xboole_0), k2_scmpds_2(1^[2^[]], k6_numbers)]]
+1.2.1.1  [- (2^[]=k2_scmpds_2(1^[2^[]], k6_numbers)), v1_ami_2(2^[]), m1_subset_1(2^[], u1_struct_0(k1_scmpds_2))]   (15)  substitution:[[_G9729], [2^[]]]
+1.2.1.1.1  [-v1_ami_2(2^[])]   (1)  
+1.2.1.1.2  [-m1_subset_1(2^[], u1_struct_0(k1_scmpds_2))]   (2)  
+1.2.1.2  [- (k2_scmpds_2(1^[2^[]], k6_numbers)=k2_scmpds_2(1^[2^[]], k1_xboole_0)), 1^[2^[]]=1^[2^[]], k6_numbers=k1_xboole_0]   (17)  substitution:[[_G7113, _G7248, _G7180, _G7317], [1^[2^[]], k6_numbers, 1^[2^[]], k1_xboole_0]]
+1.2.1.2.1  [- (1^[2^[]]=1^[2^[]])]   (20)  substitution:[[_G3179], [1^[2^[]]]]
+1.2.1.2.2  [- (k6_numbers=k1_xboole_0)]   (7)  
+1.2.2  [- (k2_scmpds_2(1^[2^[]], k1_xboole_0)=k1_scmp_gcd(k2_nat_1(1^[2^[]], k1_xboole_0))), m1_subset_1(1^[2^[]], k5_numbers), m1_subset_1(k1_xboole_0, k5_numbers)]   (12)  substitution:[[_G9295, _G9411], [1^[2^[]], k1_xboole_0]]
+1.2.2.1  [-m1_subset_1(1^[2^[]], k5_numbers), v1_ami_2(2^[]), m1_subset_1(2^[], u1_struct_0(k1_scmpds_2))]   (14)  substitution:[[_G9729], [2^[]]]
+1.2.2.1.1  [-v1_ami_2(2^[])]   (1)  
+1.2.2.1.2  [-m1_subset_1(2^[], u1_struct_0(k1_scmpds_2))]   (2)  
+1.2.2.2  [-m1_subset_1(k1_xboole_0, k5_numbers), m1_subset_1(np__0, k5_numbers), np__0=k1_xboole_0, k5_numbers=k5_numbers]   (26)  substitution:[[_G4862, _G4999, _G4795, _G4930], [k1_xboole_0, k5_numbers, np__0, k5_numbers]]
+1.2.2.2.1  [-m1_subset_1(np__0, k5_numbers)]   (10)  
+1.2.2.2.2  [- (np__0=k1_xboole_0), v1_xboole_0(np__0)]   (13)  substitution:[[_G10163], [np__0]]
+1.2.2.2.2.1  [-v1_xboole_0(np__0)]   (8)  
+1.2.2.2.3  [- (k5_numbers=k5_numbers)]   (20)  substitution:[[_G3179], [k5_numbers]]
+------------------------------------------------------
+End of proof for t1_scmpds_8

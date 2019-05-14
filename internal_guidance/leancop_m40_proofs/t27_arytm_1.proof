@@ -1,0 +1,52 @@
+
+t27_arytm_1 is a Theorem
+Start of proof for t27_arytm_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], k2_arytm_2)]
+ (2)  [-m1_subset_1(2^[], k2_arytm_2)]
+ (3)  [-m1_subset_1(3^[], k2_arytm_2)]
+ (4)  [r1_arytm_2(1^[], 2^[])]
+ (5)  [3^[]=k11_arytm_3]
+ (6)  [k4_tarski(k11_arytm_3, k8_arytm_2(3^[], k1_arytm_1(1^[], 2^[])))=k2_arytm_1(k8_arytm_2(3^[], 2^[]), k8_arytm_2(3^[], 1^[]))]
+ (7)  [m1_subset_1(_G8081, k2_arytm_2), m1_subset_1(_G8224, k2_arytm_2), r1_arytm_2(_G8224, _G8081), - (k2_arytm_1(_G8081, _G8224)=k1_arytm_1(_G8081, _G8224))]
+ (8)  [m1_subset_1(_G8081, k2_arytm_2), m1_subset_1(_G8224, k2_arytm_2), -r1_arytm_2(_G8224, _G8081), - (k2_arytm_1(_G8081, _G8224)=k4_tarski(k11_arytm_3, k1_arytm_1(_G8224, _G8081)))]
+ (9)  [-m1_subset_1(k8_arytm_2(_G8920, _G8974), k2_arytm_2), m1_subset_1(_G8920, k2_arytm_2), m1_subset_1(_G8974, k2_arytm_2)]
+ (10)  [m1_subset_1(_G10062, k2_arytm_2), m1_subset_1(_G10196, k2_arytm_2), m1_subset_1(_G10325, k2_arytm_2), - (k8_arytm_2(_G10062, k1_arytm_1(_G10196, _G10325))=k1_arytm_1(k8_arytm_2(_G10062, _G10196), k8_arytm_2(_G10062, _G10325)))]
+ (11)  [m1_subset_1(_G9297, k2_arytm_2), m1_subset_1(_G9434, k2_arytm_2), m1_subset_1(_G9566, k2_arytm_2), r1_arytm_2(k8_arytm_2(_G9297, _G9434), k8_arytm_2(_G9297, _G9566)), - (_G9297=k11_arytm_3), -r1_arytm_2(_G9434, _G9566)]
+ (12)  [- (k4_tarski(_G5618, _G5753)=k4_tarski(_G5685, _G5822)), _G5618=_G5685, _G5753=_G5822]
+ (13)  [- (k1_arytm_1(_G6215, _G6350)=k1_arytm_1(_G6282, _G6419)), _G6215=_G6282, _G6350=_G6419]
+ (14)  [- (k2_arytm_1(_G6812, _G6947)=k2_arytm_1(_G6879, _G7016)), _G6812=_G6879, _G6947=_G7016]
+ (15)  [- (k8_arytm_2(_G7400, _G7535)=k8_arytm_2(_G7467, _G7604)), _G7400=_G7467, _G7535=_G7604]
+ (16)  [- (_G3609=_G3609)]
+ (17)  [_G3708=_G3753, - (_G3753=_G3708)]
+ (18)  [- (_G3941=_G4054), _G3941=_G3997, _G3997=_G4054]
+ (19)  [-m1_subset_1(_G4458, _G4595), m1_subset_1(_G4391, _G4526), _G4391=_G4458, _G4526=_G4595]
+ (20)  [-r1_arytm_2(_G5046, _G5183), r1_arytm_2(_G4979, _G5114), _G4979=_G5046, _G5114=_G5183]
+
+Connection Proof:
+-----------------
+1  [k4_tarski(k11_arytm_3, k8_arytm_2(3^[], k1_arytm_1(1^[], 2^[])))=k2_arytm_1(k8_arytm_2(3^[], 2^[]), k8_arytm_2(3^[], 1^[]))]   (6)  
+1.1  [- (k4_tarski(k11_arytm_3, k8_arytm_2(3^[], k1_arytm_1(1^[], 2^[])))=k2_arytm_1(k8_arytm_2(3^[], 2^[]), k8_arytm_2(3^[], 1^[]))), k4_tarski(k11_arytm_3, k8_arytm_2(3^[], k1_arytm_1(1^[], 2^[])))=k4_tarski(k11_arytm_3, k1_arytm_1(k8_arytm_2(3^[], 1^[]), k8_arytm_2(3^[], 2^[]))), k4_tarski(k11_arytm_3, k1_arytm_1(k8_arytm_2(3^[], 1^[]), k8_arytm_2(3^[], 2^[])))=k2_arytm_1(k8_arytm_2(3^[], 2^[]), k8_arytm_2(3^[], 1^[]))]   (18)  substitution:[[_G3941, _G4054, _G3997], [k4_tarski(k11_arytm_3, k8_arytm_2(3^[], k1_arytm_1(1^[], 2^[]))), k2_arytm_1(k8_arytm_2(3^[], 2^[]), k8_arytm_2(3^[], 1^[])), k4_tarski(k11_arytm_3, k1_arytm_1(k8_arytm_2(3^[], 1^[]), k8_arytm_2(3^[], 2^[])))]]
+1.1.1  [- (k4_tarski(k11_arytm_3, k8_arytm_2(3^[], k1_arytm_1(1^[], 2^[])))=k4_tarski(k11_arytm_3, k1_arytm_1(k8_arytm_2(3^[], 1^[]), k8_arytm_2(3^[], 2^[])))), k11_arytm_3=k11_arytm_3, k8_arytm_2(3^[], k1_arytm_1(1^[], 2^[]))=k1_arytm_1(k8_arytm_2(3^[], 1^[]), k8_arytm_2(3^[], 2^[]))]   (12)  substitution:[[_G5618, _G5753, _G5685, _G5822], [k11_arytm_3, k8_arytm_2(3^[], k1_arytm_1(1^[], 2^[])), k11_arytm_3, k1_arytm_1(k8_arytm_2(3^[], 1^[]), k8_arytm_2(3^[], 2^[]))]]
+1.1.1.1  [- (k11_arytm_3=k11_arytm_3)]   (16)  substitution:[[_G3609], [k11_arytm_3]]
+1.1.1.2  [- (k8_arytm_2(3^[], k1_arytm_1(1^[], 2^[]))=k1_arytm_1(k8_arytm_2(3^[], 1^[]), k8_arytm_2(3^[], 2^[]))), m1_subset_1(3^[], k2_arytm_2), m1_subset_1(1^[], k2_arytm_2), m1_subset_1(2^[], k2_arytm_2)]   (10)  substitution:[[_G10062, _G10196, _G10325], [3^[], 1^[], 2^[]]]
+1.1.1.2.1  [-m1_subset_1(3^[], k2_arytm_2)]   (3)  
+1.1.1.2.2  [-m1_subset_1(1^[], k2_arytm_2)]   (1)  
+1.1.1.2.3  [-m1_subset_1(2^[], k2_arytm_2)]   (2)  
+1.1.2  [- (k4_tarski(k11_arytm_3, k1_arytm_1(k8_arytm_2(3^[], 1^[]), k8_arytm_2(3^[], 2^[])))=k2_arytm_1(k8_arytm_2(3^[], 2^[]), k8_arytm_2(3^[], 1^[]))), k2_arytm_1(k8_arytm_2(3^[], 2^[]), k8_arytm_2(3^[], 1^[]))=k4_tarski(k11_arytm_3, k1_arytm_1(k8_arytm_2(3^[], 1^[]), k8_arytm_2(3^[], 2^[])))]   (17)  substitution:[[_G3753, _G3708], [k4_tarski(k11_arytm_3, k1_arytm_1(k8_arytm_2(3^[], 1^[]), k8_arytm_2(3^[], 2^[]))), k2_arytm_1(k8_arytm_2(3^[], 2^[]), k8_arytm_2(3^[], 1^[]))]]
+1.1.2.1  [- (k2_arytm_1(k8_arytm_2(3^[], 2^[]), k8_arytm_2(3^[], 1^[]))=k4_tarski(k11_arytm_3, k1_arytm_1(k8_arytm_2(3^[], 1^[]), k8_arytm_2(3^[], 2^[])))), m1_subset_1(k8_arytm_2(3^[], 2^[]), k2_arytm_2), m1_subset_1(k8_arytm_2(3^[], 1^[]), k2_arytm_2), -r1_arytm_2(k8_arytm_2(3^[], 1^[]), k8_arytm_2(3^[], 2^[]))]   (8)  substitution:[[_G8081, _G8224], [k8_arytm_2(3^[], 2^[]), k8_arytm_2(3^[], 1^[])]]
+1.1.2.1.1  [-m1_subset_1(k8_arytm_2(3^[], 2^[]), k2_arytm_2), m1_subset_1(3^[], k2_arytm_2), m1_subset_1(2^[], k2_arytm_2)]   (9)  substitution:[[_G8920, _G8974], [3^[], 2^[]]]
+1.1.2.1.1.1  [-m1_subset_1(3^[], k2_arytm_2)]   (3)  
+1.1.2.1.1.2  [-m1_subset_1(2^[], k2_arytm_2)]   (2)  
+1.1.2.1.2  [-m1_subset_1(k8_arytm_2(3^[], 1^[]), k2_arytm_2), m1_subset_1(3^[], k2_arytm_2), m1_subset_1(1^[], k2_arytm_2)]   (9)  substitution:[[_G8920, _G8974], [3^[], 1^[]]]
+1.1.2.1.2.1  [-m1_subset_1(3^[], k2_arytm_2)]   (3)  
+1.1.2.1.2.2  [-m1_subset_1(1^[], k2_arytm_2)]   (1)  
+1.1.2.1.3  [r1_arytm_2(k8_arytm_2(3^[], 1^[]), k8_arytm_2(3^[], 2^[])), m1_subset_1(3^[], k2_arytm_2), m1_subset_1(1^[], k2_arytm_2), m1_subset_1(2^[], k2_arytm_2), - (3^[]=k11_arytm_3), -r1_arytm_2(1^[], 2^[])]   (11)  substitution:[[_G9297, _G9434, _G9566], [3^[], 1^[], 2^[]]]
+1.1.2.1.3.1  [-m1_subset_1(3^[], k2_arytm_2)]   (3)  
+1.1.2.1.3.2  [-m1_subset_1(1^[], k2_arytm_2)]   (1)  
+1.1.2.1.3.3  [-m1_subset_1(2^[], k2_arytm_2)]   (2)  
+1.1.2.1.3.4  [3^[]=k11_arytm_3]   (5)  
+1.1.2.1.3.5  [r1_arytm_2(1^[], 2^[])]   (4)  
+------------------------------------------------------
+End of proof for t27_arytm_1

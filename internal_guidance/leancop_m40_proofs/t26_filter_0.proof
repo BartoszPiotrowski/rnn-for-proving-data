@@ -1,0 +1,69 @@
+
+t26_filter_0 is a Theorem
+Start of proof for t26_filter_0
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(1^[])]
+ (2)  [-v10_lattices(1^[])]
+ (3)  [-l3_lattices(1^[])]
+ (4)  [v1_xboole_0(2^[])]
+ (5)  [-v19_lattices(2^[], 1^[])]
+ (6)  [-v20_lattices(2^[], 1^[])]
+ (7)  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]
+ (8)  [v2_struct_0(1^[])]
+ (9)  [-v10_lattices(1^[])]
+ (10)  [-v13_lattices(1^[])]
+ (11)  [-l3_lattices(1^[])]
+ (12)  [-r2_hidden(k5_lattices(1^[]), 2^[])]
+ (13)  [2^[]=k1_filter_0(1^[]), 2^[]=u1_struct_0(1^[])]
+ (14)  [- (k1_filter_0(_G11165)=u1_struct_0(_G11165)), -v2_struct_0(_G11165), v10_lattices(_G11165), l3_lattices(_G11165)]
+ (15)  [l3_lattices(_G11486), v10_lattices(_G11486), -v2_struct_0(_G11486), - (k3_filter_0(_G11486, _G11726)=_G11726), -v1_xboole_0(_G11726), v19_lattices(_G11726, _G11486), v20_lattices(_G11726, _G11486), m1_subset_1(_G11726, k1_zfmisc_1(u1_struct_0(_G11486)))]
+ (16)  [m1_subset_1(_G12522, k1_zfmisc_1(u1_struct_0(_G12251))), -v1_xboole_0(_G12522), - (k3_filter_0(_G12251, _G12522)=k1_filter_0(_G12251)), r2_hidden(k5_lattices(_G12251), _G12522), -v2_struct_0(_G12251), v10_lattices(_G12251), v13_lattices(_G12251), l3_lattices(_G12251)]
+ (17)  [m1_subset_1(_G12522, k1_zfmisc_1(u1_struct_0(_G12251))), -v1_xboole_0(_G12522), - (k3_filter_0(_G12251, _G12522)=u1_struct_0(_G12251)), r2_hidden(k5_lattices(_G12251), _G12522), -v2_struct_0(_G12251), v10_lattices(_G12251), v13_lattices(_G12251), l3_lattices(_G12251)]
+ (18)  [- (k3_filter_0(_G9360, _G9495)=k3_filter_0(_G9427, _G9564)), _G9360=_G9427, _G9495=_G9564]
+ (19)  [_G9957=_G10006, - (k1_zfmisc_1(_G9957)=k1_zfmisc_1(_G10006))]
+ (20)  [_G10235=_G10284, - (k5_lattices(_G10235)=k5_lattices(_G10284))]
+ (21)  [_G10513=_G10562, - (k1_filter_0(_G10513)=k1_filter_0(_G10562))]
+ (22)  [_G10782=_G10831, - (u1_struct_0(_G10782)=u1_struct_0(_G10831))]
+ (23)  [- (_G4620=_G4620)]
+ (24)  [_G4719=_G4764, - (_G4764=_G4719)]
+ (25)  [- (_G4952=_G5065), _G4952=_G5008, _G5008=_G5065]
+ (26)  [-v1_xboole_0(_G5451), _G5402=_G5451, v1_xboole_0(_G5402)]
+ (27)  [-v19_lattices(_G5747, _G5884), v19_lattices(_G5680, _G5815), _G5680=_G5747, _G5815=_G5884]
+ (28)  [-v20_lattices(_G6344, _G6481), v20_lattices(_G6277, _G6412), _G6277=_G6344, _G6412=_G6481]
+ (29)  [-m1_subset_1(_G6941, _G7078), m1_subset_1(_G6874, _G7009), _G6874=_G6941, _G7009=_G7078]
+ (30)  [-v2_struct_0(_G7520), _G7471=_G7520, v2_struct_0(_G7471)]
+ (31)  [-v10_lattices(_G7798), _G7749=_G7798, v10_lattices(_G7749)]
+ (32)  [-v13_lattices(_G8076), _G8027=_G8076, v13_lattices(_G8027)]
+ (33)  [-l3_lattices(_G8354), _G8305=_G8354, l3_lattices(_G8305)]
+ (34)  [-r2_hidden(_G8641, _G8778), r2_hidden(_G8574, _G8709), _G8574=_G8641, _G8709=_G8778]
+
+Connection Proof:
+-----------------
+1  [v2_struct_0(1^[])]   (1)  
+1.1  [-v2_struct_0(1^[]), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[]))), -v1_xboole_0(2^[]), - (k3_filter_0(1^[], 2^[])=k1_filter_0(1^[])), r2_hidden(k5_lattices(1^[]), 2^[]), v10_lattices(1^[]), v13_lattices(1^[]), l3_lattices(1^[])]   (16)  substitution:[[_G12251, _G12522], [1^[], 2^[]]]
+1.1.1  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (7)  
+1.1.2  [v1_xboole_0(2^[])]   (4)  
+1.1.3  [k3_filter_0(1^[], 2^[])=k1_filter_0(1^[]), - (2^[]=k1_filter_0(1^[])), 2^[]=k3_filter_0(1^[], 2^[])]   (25)  substitution:[[_G5008, _G5065, _G4952], [k3_filter_0(1^[], 2^[]), k1_filter_0(1^[]), 2^[]]]
+1.1.3.1  [2^[]=k1_filter_0(1^[]), - (2^[]=u1_struct_0(1^[])), k1_filter_0(1^[])=u1_struct_0(1^[])]   (25)  substitution:[[_G4952, _G5008, _G5065], [2^[], k1_filter_0(1^[]), u1_struct_0(1^[])]]
+1.1.3.1.1  [2^[]=u1_struct_0(1^[]), 2^[]=k1_filter_0(1^[])]   (13)  
+1.1.3.1.1.1  [- (2^[]=k1_filter_0(1^[]))]   (reduction:1.1.3)  
+1.1.3.1.2  [- (k1_filter_0(1^[])=u1_struct_0(1^[])), -v2_struct_0(1^[]), v10_lattices(1^[]), l3_lattices(1^[])]   (14)  substitution:[[_G11165], [1^[]]]
+1.1.3.1.2.1  [v2_struct_0(1^[])]   (1)  
+1.1.3.1.2.2  [-v10_lattices(1^[])]   (2)  
+1.1.3.1.2.3  [-l3_lattices(1^[])]   (3)  
+1.1.3.2  [- (2^[]=k3_filter_0(1^[], 2^[])), k3_filter_0(1^[], 2^[])=2^[]]   (24)  substitution:[[_G4764, _G4719], [2^[], k3_filter_0(1^[], 2^[])]]
+1.1.3.2.1  [- (k3_filter_0(1^[], 2^[])=2^[]), l3_lattices(1^[]), v10_lattices(1^[]), -v2_struct_0(1^[]), -v1_xboole_0(2^[]), v19_lattices(2^[], 1^[]), v20_lattices(2^[], 1^[]), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (15)  substitution:[[_G11486, _G11726], [1^[], 2^[]]]
+1.1.3.2.1.1  [-l3_lattices(1^[])]   (3)  
+1.1.3.2.1.2  [-v10_lattices(1^[])]   (2)  
+1.1.3.2.1.3  [v2_struct_0(1^[])]   (1)  
+1.1.3.2.1.4  [v1_xboole_0(2^[])]   (4)  
+1.1.3.2.1.5  [-v19_lattices(2^[], 1^[])]   (5)  
+1.1.3.2.1.6  [-v20_lattices(2^[], 1^[])]   (6)  
+1.1.3.2.1.7  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (7)  
+1.1.4  [-r2_hidden(k5_lattices(1^[]), 2^[])]   (12)  
+1.1.5  [-v10_lattices(1^[])]   (2)  
+1.1.6  [-v13_lattices(1^[])]   (10)  
+1.1.7  [-l3_lattices(1^[])]   (3)  
+------------------------------------------------------
+End of proof for t26_filter_0

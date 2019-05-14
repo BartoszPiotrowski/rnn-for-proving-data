@@ -1,0 +1,20 @@
+
+t3_necklace is a Theorem
+Start of proof for t3_necklace
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v7_ordinal1(2^[])]
+ (2)  [-r2_hidden(1^[], 2^[])]
+ (3)  [v7_ordinal1(1^[])]
+ (4)  [r2_hidden(_G1002, _G1047), -m1_subset_1(_G1002, _G1047)]
+ (5)  [v7_ordinal1(_G738), m1_subset_1(_G819, _G738), -v7_ordinal1(_G819)]
+
+Connection Proof:
+-----------------
+1  [v7_ordinal1(1^[])]   (3)  
+1.1  [-v7_ordinal1(1^[]), v7_ordinal1(2^[]), m1_subset_1(1^[], 2^[])]   (5)  substitution:[[_G819, _G738], [1^[], 2^[]]]
+1.1.1  [-v7_ordinal1(2^[])]   (1)  
+1.1.2  [-m1_subset_1(1^[], 2^[]), r2_hidden(1^[], 2^[])]   (4)  substitution:[[_G1002, _G1047], [1^[], 2^[]]]
+1.1.2.1  [-r2_hidden(1^[], 2^[])]   (2)  
+------------------------------------------------------
+End of proof for t3_necklace

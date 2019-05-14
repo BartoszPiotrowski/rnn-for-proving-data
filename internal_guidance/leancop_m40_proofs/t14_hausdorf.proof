@@ -1,0 +1,67 @@
+
+t14_hausdorf is a Theorem
+Start of proof for t14_hausdorf
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(2^[])]
+ (2)  [-v6_metric_1(2^[])]
+ (3)  [-v7_metric_1(2^[])]
+ (4)  [-v8_metric_1(2^[])]
+ (5)  [-v9_metric_1(2^[])]
+ (6)  [-l1_metric_1(2^[])]
+ (7)  [v1_xboole_0(3^[])]
+ (8)  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(k3_pcomps_1(2^[]))))]
+ (9)  [-v1_xreal_0(4^[])]
+ (10)  [-m1_subset_1(5^[], u1_struct_0(2^[]))]
+ (11)  [r1_xxreal_0(4^[], k1_funct_1(k6_weierstr(2^[], 3^[]), 5^[]))]
+ (12)  [m1_subset_1(_G6390, u1_struct_0(2^[])), r2_hidden(_G6390, 3^[]), -r1_xxreal_0(4^[], k4_metric_1(2^[], 5^[], _G6390))]
+ (13)  [v1_xreal_0(_G1450), -r2_hidden(_G1450, k1_numbers)]
+ (14)  [-v1_xreal_0(_G1450), r2_hidden(_G1450, k1_numbers)]
+ (15)  [r2_hidden(_G3369, _G3414), -m1_subset_1(_G3369, _G3414)]
+ (16)  [m1_subset_1(_G1607, k1_numbers), -r1_xxreal_0(_G1607, k1_funct_1(k6_weierstr(_G1813, _G2268), _G2547)), -m1_subset_1(1^[_G2547, _G2268, _G1813, _G1607], u1_struct_0(_G1813)), m1_subset_1(_G2547, u1_struct_0(_G1813)), -v1_xboole_0(_G2268), m1_subset_1(_G2268, k1_zfmisc_1(u1_struct_0(k3_pcomps_1(_G1813)))), -v2_struct_0(_G1813), v6_metric_1(_G1813), v7_metric_1(_G1813), v8_metric_1(_G1813), v9_metric_1(_G1813), l1_metric_1(_G1813)]
+ (17)  [m1_subset_1(_G1607, k1_numbers), -r1_xxreal_0(_G1607, k1_funct_1(k6_weierstr(_G1813, _G2268), _G2547)), -r2_hidden(1^[_G2547, _G2268, _G1813, _G1607], _G2268), m1_subset_1(_G2547, u1_struct_0(_G1813)), -v1_xboole_0(_G2268), m1_subset_1(_G2268, k1_zfmisc_1(u1_struct_0(k3_pcomps_1(_G1813)))), -v2_struct_0(_G1813), v6_metric_1(_G1813), v7_metric_1(_G1813), v8_metric_1(_G1813), v9_metric_1(_G1813), l1_metric_1(_G1813)]
+ (18)  [m1_subset_1(_G1607, k1_numbers), -r1_xxreal_0(_G1607, k1_funct_1(k6_weierstr(_G1813, _G2268), _G2547)), r1_xxreal_0(_G1607, k4_metric_1(_G1813, _G2547, 1^[_G2547, _G2268, _G1813, _G1607])), m1_subset_1(_G2547, u1_struct_0(_G1813)), -v1_xboole_0(_G2268), m1_subset_1(_G2268, k1_zfmisc_1(u1_struct_0(k3_pcomps_1(_G1813)))), -v2_struct_0(_G1813), v6_metric_1(_G1813), v7_metric_1(_G1813), v8_metric_1(_G1813), v9_metric_1(_G1813), l1_metric_1(_G1813)]
+
+Connection Proof:
+-----------------
+1  [v2_struct_0(2^[])]   (1)  
+1.1  [-v2_struct_0(2^[]), m1_subset_1(4^[], k1_numbers), -r1_xxreal_0(4^[], k1_funct_1(k6_weierstr(2^[], 3^[]), 5^[])), -m1_subset_1(1^[5^[], 3^[], 2^[], 4^[]], u1_struct_0(2^[])), m1_subset_1(5^[], u1_struct_0(2^[])), -v1_xboole_0(3^[]), m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(k3_pcomps_1(2^[])))), v6_metric_1(2^[]), v7_metric_1(2^[]), v8_metric_1(2^[]), v9_metric_1(2^[]), l1_metric_1(2^[])]   (16)  substitution:[[_G1813, _G1607, _G2268, _G2547], [2^[], 4^[], 3^[], 5^[]]]
+1.1.1  [-m1_subset_1(4^[], k1_numbers), r2_hidden(4^[], k1_numbers)]   (15)  substitution:[[_G3369, _G3414], [4^[], k1_numbers]]
+1.1.1.1  [-r2_hidden(4^[], k1_numbers), v1_xreal_0(4^[])]   (13)  substitution:[[_G1450], [4^[]]]
+1.1.1.1.1  [-v1_xreal_0(4^[])]   (9)  
+1.1.2  [r1_xxreal_0(4^[], k1_funct_1(k6_weierstr(2^[], 3^[]), 5^[]))]   (11)  
+1.1.3  [m1_subset_1(1^[5^[], 3^[], 2^[], 4^[]], u1_struct_0(2^[])), r2_hidden(1^[5^[], 3^[], 2^[], 4^[]], 3^[]), -r1_xxreal_0(4^[], k4_metric_1(2^[], 5^[], 1^[5^[], 3^[], 2^[], 4^[]]))]   (12)  substitution:[[_G6390], [1^[5^[], 3^[], 2^[], 4^[]]]]
+1.1.3.1  [-r2_hidden(1^[5^[], 3^[], 2^[], 4^[]], 3^[]), m1_subset_1(4^[], k1_numbers), -r1_xxreal_0(4^[], k1_funct_1(k6_weierstr(2^[], 3^[]), 5^[])), m1_subset_1(5^[], u1_struct_0(2^[])), -v1_xboole_0(3^[]), m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(k3_pcomps_1(2^[])))), -v2_struct_0(2^[]), v6_metric_1(2^[]), v7_metric_1(2^[]), v8_metric_1(2^[]), v9_metric_1(2^[]), l1_metric_1(2^[])]   (17)  substitution:[[_G2547, _G2268, _G1813, _G1607], [5^[], 3^[], 2^[], 4^[]]]
+1.1.3.1.1  [-m1_subset_1(4^[], k1_numbers)]   (lemmata:1.1)  
+1.1.3.1.2  [r1_xxreal_0(4^[], k1_funct_1(k6_weierstr(2^[], 3^[]), 5^[]))]   (11)  
+1.1.3.1.3  [-m1_subset_1(5^[], u1_struct_0(2^[]))]   (10)  
+1.1.3.1.4  [v1_xboole_0(3^[])]   (7)  
+1.1.3.1.5  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(k3_pcomps_1(2^[]))))]   (8)  
+1.1.3.1.6  [v2_struct_0(2^[])]   (1)  
+1.1.3.1.7  [-v6_metric_1(2^[])]   (2)  
+1.1.3.1.8  [-v7_metric_1(2^[])]   (3)  
+1.1.3.1.9  [-v8_metric_1(2^[])]   (4)  
+1.1.3.1.10  [-v9_metric_1(2^[])]   (5)  
+1.1.3.1.11  [-l1_metric_1(2^[])]   (6)  
+1.1.3.2  [r1_xxreal_0(4^[], k4_metric_1(2^[], 5^[], 1^[5^[], 3^[], 2^[], 4^[]])), m1_subset_1(4^[], k1_numbers), -r1_xxreal_0(4^[], k1_funct_1(k6_weierstr(2^[], 3^[]), 5^[])), m1_subset_1(5^[], u1_struct_0(2^[])), -v1_xboole_0(3^[]), m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(k3_pcomps_1(2^[])))), -v2_struct_0(2^[]), v6_metric_1(2^[]), v7_metric_1(2^[]), v8_metric_1(2^[]), v9_metric_1(2^[]), l1_metric_1(2^[])]   (18)  substitution:[[_G1607, _G1813, _G2547, _G2268], [4^[], 2^[], 5^[], 3^[]]]
+1.1.3.2.1  [-m1_subset_1(4^[], k1_numbers)]   (lemmata:1.1)  
+1.1.3.2.2  [r1_xxreal_0(4^[], k1_funct_1(k6_weierstr(2^[], 3^[]), 5^[]))]   (11)  
+1.1.3.2.3  [-m1_subset_1(5^[], u1_struct_0(2^[]))]   (10)  
+1.1.3.2.4  [v1_xboole_0(3^[])]   (7)  
+1.1.3.2.5  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(k3_pcomps_1(2^[]))))]   (8)  
+1.1.3.2.6  [v2_struct_0(2^[])]   (1)  
+1.1.3.2.7  [-v6_metric_1(2^[])]   (2)  
+1.1.3.2.8  [-v7_metric_1(2^[])]   (3)  
+1.1.3.2.9  [-v8_metric_1(2^[])]   (4)  
+1.1.3.2.10  [-v9_metric_1(2^[])]   (5)  
+1.1.3.2.11  [-l1_metric_1(2^[])]   (6)  
+1.1.4  [-m1_subset_1(5^[], u1_struct_0(2^[]))]   (10)  
+1.1.5  [v1_xboole_0(3^[])]   (7)  
+1.1.6  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(k3_pcomps_1(2^[]))))]   (8)  
+1.1.7  [-v6_metric_1(2^[])]   (2)  
+1.1.8  [-v7_metric_1(2^[])]   (3)  
+1.1.9  [-v8_metric_1(2^[])]   (4)  
+1.1.10  [-v9_metric_1(2^[])]   (5)  
+1.1.11  [-l1_metric_1(2^[])]   (6)  
+------------------------------------------------------
+End of proof for t14_hausdorf

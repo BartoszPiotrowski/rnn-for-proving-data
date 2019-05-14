@@ -1,0 +1,53 @@
+
+t59_facirc_1 is a Theorem
+Start of proof for t59_facirc_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_funct_1(1^[])]
+ (2)  [-v1_funct_2(1^[], k4_finseq_2(np__2, k6_margrel1), k6_margrel1)]
+ (3)  [-m1_subset_1(1^[], k1_zfmisc_1(k2_zfmisc_1(k4_finseq_2(np__2, k6_margrel1), k6_margrel1)))]
+ (4)  [v1_xtuple_0(2^[])]
+ (5)  [v1_xtuple_0(3^[])]
+ (6)  [v1_xtuple_0(4^[])]
+ (7)  [-v1_facirc_1(k2_msafree2(k8_facirc_1(2^[], 3^[], 4^[], 1^[])))]
+ (8)  [- (k4_tarski(_G14034, _G14084)=k2_tarski(k2_tarski(_G14034, _G14084), k1_tarski(_G14034)))]
+ (9)  [-v1_xtuple_0(k4_tarski(_G14339, _G14380))]
+ (10)  [v1_facirc_1(k1_enumset1(_G14509, _G14579, _G14650)), -v1_xtuple_0(_G14509), -v1_xtuple_0(_G14579), -v1_xtuple_0(_G14650)]
+ (11)  [- (k2_msafree2(k8_facirc_1(_G15158, _G15251, _G15066, _G15345))=k1_enumset1(_G15158, _G15251, _G15066)), - (_G15066=k4_tarski(k10_finseq_1(_G15158, _G15251), _G15345)), v1_funct_1(_G15345), v1_funct_2(_G15345, k4_finseq_2(np__2, k6_margrel1), k6_margrel1), m1_subset_1(_G15345, k1_zfmisc_1(k2_zfmisc_1(k4_finseq_2(np__2, k6_margrel1), k6_margrel1)))]
+ (12)  [- (_G4114=_G4114)]
+ (13)  [_G4213=_G4258, - (_G4258=_G4213)]
+ (14)  [- (_G4446=_G4559), _G4446=_G4502, _G4502=_G4559]
+ (15)  [-v1_funct_1(_G4945), _G4896=_G4945, v1_funct_1(_G4896)]
+ (16)  [-v1_funct_2(_G5259, _G5432, _G5609), v1_funct_2(_G5174, _G5345, _G5520), _G5174=_G5259, _G5345=_G5432, _G5520=_G5609]
+ (17)  [-m1_subset_1(_G6269, _G6406), m1_subset_1(_G6202, _G6337), _G6202=_G6269, _G6337=_G6406]
+ (18)  [-v1_xtuple_0(_G6848), _G6799=_G6848, v1_xtuple_0(_G6799)]
+ (19)  [-v1_facirc_1(_G7117), _G7068=_G7117, v1_facirc_1(_G7068)]
+ (20)  [- (k2_tarski(_G7451, _G7586)=k2_tarski(_G7518, _G7655)), _G7451=_G7518, _G7586=_G7655]
+ (21)  [_G8048=_G8097, - (k1_tarski(_G8048)=k1_tarski(_G8097))]
+ (22)  [- (k4_tarski(_G8326, _G8461)=k4_tarski(_G8393, _G8530)), _G8326=_G8393, _G8461=_G8530]
+ (23)  [- (k10_finseq_1(_G8923, _G9058)=k10_finseq_1(_G8990, _G9127)), _G8923=_G8990, _G9058=_G9127]
+ (24)  [- (k1_enumset1(_G9520, _G9691, _G9866)=k1_enumset1(_G9605, _G9778, _G9955)), _G9520=_G9605, _G9691=_G9778, _G9866=_G9955]
+ (25)  [_G10548=_G10597, - (k1_zfmisc_1(_G10548)=k1_zfmisc_1(_G10597))]
+ (26)  [- (k2_zfmisc_1(_G10826, _G10961)=k2_zfmisc_1(_G10893, _G11030)), _G10826=_G10893, _G10961=_G11030]
+ (27)  [- (k4_finseq_2(_G11423, _G11558)=k4_finseq_2(_G11490, _G11627)), _G11423=_G11490, _G11558=_G11627]
+ (28)  [_G12020=_G12069, - (k2_msafree2(_G12020)=k2_msafree2(_G12069))]
+ (29)  [- (k8_facirc_1(_G12289, _G12496, _G12707, _G12922)=k8_facirc_1(_G12392, _G12601, _G12814, _G13031)), _G12289=_G12392, _G12496=_G12601, _G12707=_G12814, _G12922=_G13031]
+
+Connection Proof:
+-----------------
+1  [v1_xtuple_0(4^[])]   (6)  
+1.1  [-v1_xtuple_0(4^[]), v1_facirc_1(k1_enumset1(2^[], 3^[], 4^[])), -v1_xtuple_0(2^[]), -v1_xtuple_0(3^[])]   (10)  substitution:[[_G14650, _G14509, _G14579], [4^[], 2^[], 3^[]]]
+1.1.1  [-v1_facirc_1(k1_enumset1(2^[], 3^[], 4^[])), k2_msafree2(k8_facirc_1(2^[], 3^[], 4^[], 1^[]))=k1_enumset1(2^[], 3^[], 4^[]), v1_facirc_1(k2_msafree2(k8_facirc_1(2^[], 3^[], 4^[], 1^[])))]   (19)  substitution:[[_G7117, _G7068], [k1_enumset1(2^[], 3^[], 4^[]), k2_msafree2(k8_facirc_1(2^[], 3^[], 4^[], 1^[]))]]
+1.1.1.1  [- (k2_msafree2(k8_facirc_1(2^[], 3^[], 4^[], 1^[]))=k1_enumset1(2^[], 3^[], 4^[])), - (4^[]=k4_tarski(k10_finseq_1(2^[], 3^[]), 1^[])), v1_funct_1(1^[]), v1_funct_2(1^[], k4_finseq_2(np__2, k6_margrel1), k6_margrel1), m1_subset_1(1^[], k1_zfmisc_1(k2_zfmisc_1(k4_finseq_2(np__2, k6_margrel1), k6_margrel1)))]   (11)  substitution:[[_G15158, _G15251, _G15066, _G15345], [2^[], 3^[], 4^[], 1^[]]]
+1.1.1.1.1  [4^[]=k4_tarski(k10_finseq_1(2^[], 3^[]), 1^[]), - (k4_tarski(k10_finseq_1(2^[], 3^[]), 1^[])=4^[])]   (13)  substitution:[[_G4213, _G4258], [4^[], k4_tarski(k10_finseq_1(2^[], 3^[]), 1^[])]]
+1.1.1.1.1.1  [k4_tarski(k10_finseq_1(2^[], 3^[]), 1^[])=4^[], -v1_xtuple_0(4^[]), v1_xtuple_0(k4_tarski(k10_finseq_1(2^[], 3^[]), 1^[]))]   (18)  substitution:[[_G6799, _G6848], [k4_tarski(k10_finseq_1(2^[], 3^[]), 1^[]), 4^[]]]
+1.1.1.1.1.1.1  [v1_xtuple_0(4^[])]   (6)  
+1.1.1.1.1.1.2  [-v1_xtuple_0(k4_tarski(k10_finseq_1(2^[], 3^[]), 1^[]))]   (9)  substitution:[[_G14339, _G14380], [k10_finseq_1(2^[], 3^[]), 1^[]]]
+1.1.1.1.2  [-v1_funct_1(1^[])]   (1)  
+1.1.1.1.3  [-v1_funct_2(1^[], k4_finseq_2(np__2, k6_margrel1), k6_margrel1)]   (2)  
+1.1.1.1.4  [-m1_subset_1(1^[], k1_zfmisc_1(k2_zfmisc_1(k4_finseq_2(np__2, k6_margrel1), k6_margrel1)))]   (3)  
+1.1.1.2  [-v1_facirc_1(k2_msafree2(k8_facirc_1(2^[], 3^[], 4^[], 1^[])))]   (7)  
+1.1.2  [v1_xtuple_0(2^[])]   (4)  
+1.1.3  [v1_xtuple_0(3^[])]   (5)  
+------------------------------------------------------
+End of proof for t59_facirc_1

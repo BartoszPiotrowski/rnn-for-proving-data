@@ -1,0 +1,24 @@
+
+t16_coh_sp is a Theorem
+Start of proof for t16_coh_sp
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(4^[], k3_coh_sp(1^[]))]
+ (2)  [-r2_hidden(k2_tarski(2^[], 3^[]), 4^[])]
+ (3)  [r2_hidden(2^[], k3_tarski(4^[])), r2_hidden(3^[], k3_tarski(4^[]))]
+ (4)  [r2_hidden(_G834, _G881), -r1_tarski(_G834, k3_tarski(_G881))]
+ (5)  [r1_tarski(k2_tarski(_G1085, _G1144), _G1204), -r2_hidden(_G1085, _G1204)]
+ (6)  [r1_tarski(k2_tarski(_G1085, _G1144), _G1204), -r2_hidden(_G1144, _G1204)]
+ (7)  [-r1_tarski(k2_tarski(_G1085, _G1144), _G1204), r2_hidden(_G1085, _G1204), r2_hidden(_G1144, _G1204)]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(2^[], k3_tarski(4^[])), r2_hidden(3^[], k3_tarski(4^[]))]   (3)  
+1.1  [-r2_hidden(2^[], k3_tarski(4^[])), r1_tarski(k2_tarski(2^[], 3^[]), k3_tarski(4^[]))]   (5)  substitution:[[_G1085, _G1204, _G1144], [2^[], k3_tarski(4^[]), 3^[]]]
+1.1.1  [-r1_tarski(k2_tarski(2^[], 3^[]), k3_tarski(4^[])), r2_hidden(k2_tarski(2^[], 3^[]), 4^[])]   (4)  substitution:[[_G834, _G881], [k2_tarski(2^[], 3^[]), 4^[]]]
+1.1.1.1  [-r2_hidden(k2_tarski(2^[], 3^[]), 4^[])]   (2)  
+1.2  [-r2_hidden(3^[], k3_tarski(4^[])), r1_tarski(k2_tarski(2^[], 3^[]), k3_tarski(4^[]))]   (6)  substitution:[[_G1144, _G1204, _G1085], [3^[], k3_tarski(4^[]), 2^[]]]
+1.2.1  [-r1_tarski(k2_tarski(2^[], 3^[]), k3_tarski(4^[])), r2_hidden(k2_tarski(2^[], 3^[]), 4^[])]   (4)  substitution:[[_G834, _G881], [k2_tarski(2^[], 3^[]), 4^[]]]
+1.2.1.1  [-r2_hidden(k2_tarski(2^[], 3^[]), 4^[])]   (2)  
+------------------------------------------------------
+End of proof for t16_coh_sp

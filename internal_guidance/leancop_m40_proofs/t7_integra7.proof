@@ -1,0 +1,39 @@
+
+t7_integra7 is a Theorem
+Start of proof for t7_integra7
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xreal_0(1^[])]
+ (2)  [-v1_funct_1(3^[])]
+ (3)  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]
+ (4)  [-r2_fdiff_1(3^[], 2^[])]
+ (5)  [r2_fdiff_1(k26_valued_1(k1_numbers, k1_numbers, 3^[], 1^[]), 2^[])]
+ (6)  [v1_xreal_0(_G1320), -r2_hidden(_G1320, k1_numbers)]
+ (7)  [-v1_xreal_0(_G1320), r2_hidden(_G1320, k1_numbers)]
+ (8)  [m1_subset_1(_G1477, k1_zfmisc_1(k1_numbers)), m1_subset_1(_G1609, k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(_G1609), r2_fdiff_1(_G1609, _G1477), -v3_rcomp_1(_G1477)]
+ (9)  [m1_subset_1(_G1996, k1_numbers), m1_subset_1(_G2160, k1_zfmisc_1(k1_numbers)), v3_rcomp_1(_G2160), m1_subset_1(_G2386, k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(_G2386), r2_fdiff_1(_G2386, _G2160), -r2_fdiff_1(k26_valued_1(k1_numbers, k1_numbers, _G2386, _G1996), _G2160)]
+ (10)  [m1_subset_1(_G1996, k1_numbers), m1_subset_1(_G2160, k1_zfmisc_1(k1_numbers)), v3_rcomp_1(_G2160), m1_subset_1(_G2386, k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(_G2386), r2_fdiff_1(_G2386, _G2160), -r2_relset_1(k1_numbers, k1_numbers, k2_fdiff_1(k26_valued_1(k1_numbers, k1_numbers, _G2386, _G1996), _G2160), k26_valued_1(k1_numbers, k1_numbers, k2_fdiff_1(_G2386, _G2160), _G1996))]
+ (11)  [r2_hidden(_G3480, _G3525), -m1_subset_1(_G3480, _G3525)]
+ (12)  [m1_subset_1(_G3769, k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(_G3769), r2_fdiff_1(_G3769, _G3713), -m1_subset_1(_G3713, k1_zfmisc_1(k1_numbers))]
+
+Connection Proof:
+-----------------
+1  [r2_fdiff_1(k26_valued_1(k1_numbers, k1_numbers, 3^[], 1^[]), 2^[])]   (5)  
+1.1  [-r2_fdiff_1(k26_valued_1(k1_numbers, k1_numbers, 3^[], 1^[]), 2^[]), m1_subset_1(1^[], k1_numbers), m1_subset_1(2^[], k1_zfmisc_1(k1_numbers)), v3_rcomp_1(2^[]), m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(3^[]), r2_fdiff_1(3^[], 2^[])]   (9)  substitution:[[_G2386, _G1996, _G2160], [3^[], 1^[], 2^[]]]
+1.1.1  [-m1_subset_1(1^[], k1_numbers), r2_hidden(1^[], k1_numbers)]   (11)  substitution:[[_G3480, _G3525], [1^[], k1_numbers]]
+1.1.1.1  [-r2_hidden(1^[], k1_numbers), v1_xreal_0(1^[])]   (6)  substitution:[[_G1320], [1^[]]]
+1.1.1.1.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.2  [-m1_subset_1(2^[], k1_zfmisc_1(k1_numbers)), m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(3^[]), r2_fdiff_1(3^[], 2^[])]   (12)  substitution:[[_G3713, _G3769], [2^[], 3^[]]]
+1.1.2.1  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]   (3)  
+1.1.2.2  [-v1_funct_1(3^[])]   (2)  
+1.1.2.3  [-r2_fdiff_1(3^[], 2^[])]   (4)  
+1.1.3  [-v3_rcomp_1(2^[]), m1_subset_1(2^[], k1_zfmisc_1(k1_numbers)), m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(3^[]), r2_fdiff_1(3^[], 2^[])]   (8)  substitution:[[_G1477, _G1609], [2^[], 3^[]]]
+1.1.3.1  [-m1_subset_1(2^[], k1_zfmisc_1(k1_numbers))]   (lemmata:1.1)  
+1.1.3.2  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]   (3)  
+1.1.3.3  [-v1_funct_1(3^[])]   (2)  
+1.1.3.4  [-r2_fdiff_1(3^[], 2^[])]   (4)  
+1.1.4  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]   (3)  
+1.1.5  [-v1_funct_1(3^[])]   (2)  
+1.1.6  [-r2_fdiff_1(3^[], 2^[])]   (4)  
+------------------------------------------------------
+End of proof for t7_integra7

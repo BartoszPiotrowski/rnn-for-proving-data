@@ -1,0 +1,30 @@
+
+l15_rvsum_1 is a Theorem
+Start of proof for l15_rvsum_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(1^[])]
+ (2)  [-v1_funct_1(1^[])]
+ (3)  [-v3_valued_0(1^[])]
+ (4)  [-v1_finseq_1(1^[])]
+ (5)  [m2_finseq_1(1^[], k1_numbers)]
+ (6)  [v1_relat_1(_G891), v3_valued_0(_G891), -r1_tarski(k10_xtuple_0(_G891), k1_numbers)]
+ (7)  [v1_relat_1(_G891), -v3_valued_0(_G891), r1_tarski(k10_xtuple_0(_G891), k1_numbers)]
+ (8)  [m2_finseq_1(_G1607, _G1562), -m1_finseq_1(_G1607, _G1562)]
+ (9)  [-m2_finseq_1(_G1607, _G1562), m1_finseq_1(_G1607, _G1562)]
+ (10)  [v1_finseq_1(_G1184), v1_funct_1(_G1184), v1_relat_1(_G1184), m1_finseq_1(_G1184, _G1122), -r1_tarski(k10_xtuple_0(_G1184), _G1122)]
+ (11)  [v1_finseq_1(_G1184), v1_funct_1(_G1184), v1_relat_1(_G1184), -m1_finseq_1(_G1184, _G1122), r1_tarski(k10_xtuple_0(_G1184), _G1122)]
+
+Connection Proof:
+-----------------
+1  [m2_finseq_1(1^[], k1_numbers)]   (5)  
+1.1  [-m2_finseq_1(1^[], k1_numbers), m1_finseq_1(1^[], k1_numbers)]   (9)  substitution:[[_G1607, _G1562], [1^[], k1_numbers]]
+1.1.1  [-m1_finseq_1(1^[], k1_numbers), v1_finseq_1(1^[]), v1_funct_1(1^[]), v1_relat_1(1^[]), r1_tarski(k10_xtuple_0(1^[]), k1_numbers)]   (11)  substitution:[[_G1184, _G1122], [1^[], k1_numbers]]
+1.1.1.1  [-v1_finseq_1(1^[])]   (4)  
+1.1.1.2  [-v1_funct_1(1^[])]   (2)  
+1.1.1.3  [-v1_relat_1(1^[])]   (1)  
+1.1.1.4  [-r1_tarski(k10_xtuple_0(1^[]), k1_numbers), v1_relat_1(1^[]), v3_valued_0(1^[])]   (6)  substitution:[[_G891], [1^[]]]
+1.1.1.4.1  [-v1_relat_1(1^[])]   (1)  
+1.1.1.4.2  [-v3_valued_0(1^[])]   (3)  
+------------------------------------------------------
+End of proof for l15_rvsum_1

@@ -1,0 +1,59 @@
+
+t101_rvsum_1 is a Theorem
+Start of proof for t101_rvsum_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m2_finseq_2(1^[], k1_numbers, k4_finseq_2(k6_numbers, k1_numbers))]
+ (2)  [k21_rvsum_1(1^[])=np__1]
+ (3)  [v7_ordinal1(_G8745), -v1_xboole_0(_G8680), m1_subset_1(_G8910, k4_finseq_2(_G8745, _G8680)), -v3_card_1(_G8910, _G8745)]
+ (4)  [v3_card_1(_G9184, k1_xboole_0), -v1_xboole_0(_G9184)]
+ (5)  [m1_subset_1(_G9341, k4_ordinal1), -v7_ordinal1(_G9341)]
+ (6)  [- (k6_finseq_1(_G9498)=k1_xboole_0)]
+ (7)  [v7_ordinal1(_G9613), -m1_finseq_2(k4_finseq_2(_G9613, _G9660), _G9660)]
+ (8)  [v1_xboole_0(k1_numbers)]
+ (9)  [- (k6_numbers=k1_xboole_0)]
+ (10)  [-m1_subset_1(k1_xboole_0, k4_ordinal1)]
+ (11)  [- (k21_rvsum_1(k6_finseq_1(k1_numbers))=np__1)]
+ (12)  [v1_xboole_0(_G10481), - (_G10481=k1_xboole_0)]
+ (13)  [m1_finseq_2(_G10033, _G9976), m2_finseq_2(_G10148, _G9976, _G10033), -m1_subset_1(_G10148, _G10033)]
+ (14)  [m1_finseq_2(_G10033, _G9976), -m2_finseq_2(_G10148, _G9976, _G10033), m1_subset_1(_G10148, _G10033)]
+ (15)  [_G7473=_G7522, - (k6_finseq_1(_G7473)=k6_finseq_1(_G7522))]
+ (16)  [_G8339=_G8388, - (k21_rvsum_1(_G8339)=k21_rvsum_1(_G8388))]
+ (17)  [- (k4_finseq_2(_G7751, _G7886)=k4_finseq_2(_G7818, _G7955)), _G7751=_G7818, _G7886=_G7955]
+ (18)  [- (_G3199=_G3199)]
+ (19)  [_G3298=_G3343, - (_G3343=_G3298)]
+ (20)  [- (_G3531=_G3644), _G3531=_G3587, _G3587=_G3644]
+ (21)  [-v3_card_1(_G4048, _G4185), v3_card_1(_G3981, _G4116), _G3981=_G4048, _G4116=_G4185]
+ (22)  [-v7_ordinal1(_G4627), _G4578=_G4627, v7_ordinal1(_G4578)]
+ (23)  [-m1_finseq_2(_G4923, _G5060), m1_finseq_2(_G4856, _G4991), _G4856=_G4923, _G4991=_G5060]
+ (24)  [-m1_subset_1(_G5520, _G5657), m1_subset_1(_G5453, _G5588), _G5453=_G5520, _G5588=_G5657]
+ (25)  [-v1_xboole_0(_G6099), _G6050=_G6099, v1_xboole_0(_G6050)]
+ (26)  [-m2_finseq_2(_G6404, _G6577, _G6754), m2_finseq_2(_G6319, _G6490, _G6665), _G6319=_G6404, _G6490=_G6577, _G6665=_G6754]
+
+Connection Proof:
+-----------------
+1  [v1_xboole_0(k1_numbers)]   (8)  
+1.1  [-v1_xboole_0(k1_numbers), v7_ordinal1(k1_xboole_0), m1_subset_1(1^[], k4_finseq_2(k1_xboole_0, k1_numbers)), -v3_card_1(1^[], k1_xboole_0)]   (3)  substitution:[[_G8680, _G8745, _G8910], [k1_numbers, k1_xboole_0, 1^[]]]
+1.1.1  [-v7_ordinal1(k1_xboole_0), m1_subset_1(k1_xboole_0, k4_ordinal1)]   (5)  substitution:[[_G9341], [k1_xboole_0]]
+1.1.1.1  [-m1_subset_1(k1_xboole_0, k4_ordinal1)]   (10)  
+1.1.2  [-m1_subset_1(1^[], k4_finseq_2(k1_xboole_0, k1_numbers)), m1_finseq_2(k4_finseq_2(k1_xboole_0, k1_numbers), k1_numbers), m2_finseq_2(1^[], k1_numbers, k4_finseq_2(k1_xboole_0, k1_numbers))]   (13)  substitution:[[_G10148, _G10033, _G9976], [1^[], k4_finseq_2(k1_xboole_0, k1_numbers), k1_numbers]]
+1.1.2.1  [-m1_finseq_2(k4_finseq_2(k1_xboole_0, k1_numbers), k1_numbers), v7_ordinal1(k1_xboole_0)]   (7)  substitution:[[_G9613, _G9660], [k1_xboole_0, k1_numbers]]
+1.1.2.1.1  [-v7_ordinal1(k1_xboole_0)]   (lemmata:1.1)  
+1.1.2.2  [-m2_finseq_2(1^[], k1_numbers, k4_finseq_2(k1_xboole_0, k1_numbers)), m2_finseq_2(1^[], k1_numbers, k4_finseq_2(k6_numbers, k1_numbers)), 1^[]=1^[], k1_numbers=k1_numbers, k4_finseq_2(k6_numbers, k1_numbers)=k4_finseq_2(k1_xboole_0, k1_numbers)]   (26)  substitution:[[_G6404, _G6577, _G6754, _G6319, _G6490, _G6665], [1^[], k1_numbers, k4_finseq_2(k1_xboole_0, k1_numbers), 1^[], k1_numbers, k4_finseq_2(k6_numbers, k1_numbers)]]
+1.1.2.2.1  [-m2_finseq_2(1^[], k1_numbers, k4_finseq_2(k6_numbers, k1_numbers))]   (1)  
+1.1.2.2.2  [- (1^[]=1^[])]   (18)  substitution:[[_G3199], [1^[]]]
+1.1.2.2.3  [- (k1_numbers=k1_numbers)]   (18)  substitution:[[_G3199], [k1_numbers]]
+1.1.2.2.4  [- (k4_finseq_2(k6_numbers, k1_numbers)=k4_finseq_2(k1_xboole_0, k1_numbers)), k6_numbers=k1_xboole_0, k1_numbers=k1_numbers]   (17)  substitution:[[_G7751, _G7886, _G7818, _G7955], [k6_numbers, k1_numbers, k1_xboole_0, k1_numbers]]
+1.1.2.2.4.1  [- (k6_numbers=k1_xboole_0)]   (9)  
+1.1.2.2.4.2  [- (k1_numbers=k1_numbers)]   (18)  substitution:[[_G3199], [k1_numbers]]
+1.1.3  [v3_card_1(1^[], k1_xboole_0), -v1_xboole_0(1^[])]   (4)  substitution:[[_G9184], [1^[]]]
+1.1.3.1  [v1_xboole_0(1^[]), - (1^[]=k1_xboole_0)]   (12)  substitution:[[_G10481], [1^[]]]
+1.1.3.1.1  [1^[]=k1_xboole_0, - (1^[]=k6_finseq_1(k1_numbers)), k1_xboole_0=k6_finseq_1(k1_numbers)]   (20)  substitution:[[_G3531, _G3587, _G3644], [1^[], k1_xboole_0, k6_finseq_1(k1_numbers)]]
+1.1.3.1.1.1  [1^[]=k6_finseq_1(k1_numbers), - (k21_rvsum_1(1^[])=k21_rvsum_1(k6_finseq_1(k1_numbers)))]   (16)  substitution:[[_G8339, _G8388], [1^[], k6_finseq_1(k1_numbers)]]
+1.1.3.1.1.1.1  [k21_rvsum_1(1^[])=k21_rvsum_1(k6_finseq_1(k1_numbers)), - (k21_rvsum_1(1^[])=np__1), k21_rvsum_1(k6_finseq_1(k1_numbers))=np__1]   (20)  substitution:[[_G3531, _G3587, _G3644], [k21_rvsum_1(1^[]), k21_rvsum_1(k6_finseq_1(k1_numbers)), np__1]]
+1.1.3.1.1.1.1.1  [k21_rvsum_1(1^[])=np__1]   (2)  
+1.1.3.1.1.1.1.2  [- (k21_rvsum_1(k6_finseq_1(k1_numbers))=np__1)]   (11)  
+1.1.3.1.1.2  [- (k1_xboole_0=k6_finseq_1(k1_numbers)), k6_finseq_1(k1_numbers)=k1_xboole_0]   (19)  substitution:[[_G3343, _G3298], [k1_xboole_0, k6_finseq_1(k1_numbers)]]
+1.1.3.1.1.2.1  [- (k6_finseq_1(k1_numbers)=k1_xboole_0)]   (6)  substitution:[[_G9498], [k1_numbers]]
+------------------------------------------------------
+End of proof for t101_rvsum_1

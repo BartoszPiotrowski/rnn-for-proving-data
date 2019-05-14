@@ -1,0 +1,314 @@
+
+t35_mssubfam is a Theorem
+Start of proof for t35_mssubfam
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(2^[])]
+ (2)  [-v4_relat_1(2^[], 1^[])]
+ (3)  [-v1_funct_1(2^[])]
+ (4)  [-v1_partfun1(2^[], 1^[])]
+ (5)  [-m3_pboole(3^[], 1^[], k1_mboolean(1^[], 2^[]))]
+ (6)  [-m3_pboole(4^[], 1^[], k1_mboolean(1^[], 2^[]))]
+ (7)  [m3_pboole(k3_pboole(1^[], 3^[], 4^[]), 1^[], k1_mboolean(1^[], 2^[]))]
+ (8)  [v1_partfun1(_G95, _G94), v1_funct_1(_G95), v4_relat_1(_G95, _G94), v1_relat_1(_G95), v1_partfun1(_G106, _G94), v1_funct_1(_G106), v4_relat_1(_G106, _G94), v1_relat_1(_G106), m3_pboole(_G106, _G94, _G95), -r2_pboole(_G94, _G106, _G95)]
+ (9)  [v1_partfun1(_G95, _G94), v1_funct_1(_G95), v4_relat_1(_G95, _G94), v1_relat_1(_G95), v1_partfun1(_G106, _G94), v1_funct_1(_G106), v4_relat_1(_G106, _G94), v1_relat_1(_G106), -m3_pboole(_G106, _G94, _G95), r2_pboole(_G94, _G106, _G95)]
+ (10)  [-v1_relat_1(k1_mboolean(_G125, _G126)), v1_relat_1(_G126), v4_relat_1(_G126, _G125), v1_funct_1(_G126), v1_partfun1(_G126, _G125)]
+ (11)  [-v4_relat_1(k1_mboolean(_G125, _G126), _G125), v1_relat_1(_G126), v4_relat_1(_G126, _G125), v1_funct_1(_G126), v1_partfun1(_G126, _G125)]
+ (12)  [-v1_funct_1(k1_mboolean(_G125, _G126)), v1_relat_1(_G126), v4_relat_1(_G126, _G125), v1_funct_1(_G126), v1_partfun1(_G126, _G125)]
+ (13)  [-v1_partfun1(k1_mboolean(_G125, _G126), _G125), v1_relat_1(_G126), v4_relat_1(_G126, _G125), v1_funct_1(_G126), v1_partfun1(_G126, _G125)]
+ (14)  [-v1_relat_1(k3_pboole(_G159, _G160, _G161)), v1_partfun1(_G160, _G159), v1_funct_1(_G160), v4_relat_1(_G160, _G159), v1_relat_1(_G160), v1_relat_1(_G161), v4_relat_1(_G161, _G159), v1_funct_1(_G161), v1_partfun1(_G161, _G159)]
+ (15)  [-v4_relat_1(k3_pboole(_G159, _G160, _G161), _G159), v1_partfun1(_G160, _G159), v1_funct_1(_G160), v4_relat_1(_G160, _G159), v1_relat_1(_G160), v1_relat_1(_G161), v4_relat_1(_G161, _G159), v1_funct_1(_G161), v1_partfun1(_G161, _G159)]
+ (16)  [-v1_funct_1(k3_pboole(_G159, _G160, _G161)), v1_partfun1(_G160, _G159), v1_funct_1(_G160), v4_relat_1(_G160, _G159), v1_relat_1(_G160), v1_relat_1(_G161), v4_relat_1(_G161, _G159), v1_funct_1(_G161), v1_partfun1(_G161, _G159)]
+ (17)  [-v1_partfun1(k3_pboole(_G159, _G160, _G161), _G159), v1_partfun1(_G160, _G159), v1_funct_1(_G160), v4_relat_1(_G160, _G159), v1_relat_1(_G160), v1_relat_1(_G161), v4_relat_1(_G161, _G159), v1_funct_1(_G161), v1_partfun1(_G161, _G159)]
+ (18)  [-v1_relat_1(_G220), m3_pboole(_G220, _G208, _G209), v1_relat_1(_G209), v4_relat_1(_G209, _G208), v1_funct_1(_G209), v1_partfun1(_G209, _G208)]
+ (19)  [-v4_relat_1(_G220, _G208), m3_pboole(_G220, _G208, _G209), v1_relat_1(_G209), v4_relat_1(_G209, _G208), v1_funct_1(_G209), v1_partfun1(_G209, _G208)]
+ (20)  [-v1_funct_1(_G220), m3_pboole(_G220, _G208, _G209), v1_relat_1(_G209), v4_relat_1(_G209, _G208), v1_funct_1(_G209), v1_partfun1(_G209, _G208)]
+ (21)  [-v1_partfun1(_G220, _G208), m3_pboole(_G220, _G208, _G209), v1_relat_1(_G209), v4_relat_1(_G209, _G208), v1_funct_1(_G209), v1_partfun1(_G209, _G208)]
+ (22)  [v1_partfun1(_G236, _G235), v1_funct_1(_G236), v4_relat_1(_G236, _G235), v1_relat_1(_G236), v1_partfun1(_G247, _G235), v1_funct_1(_G247), v4_relat_1(_G247, _G235), v1_relat_1(_G247), -r2_pboole(_G235, k3_pboole(_G235, _G236, _G258), _G247), r2_pboole(_G235, _G236, _G247), v1_relat_1(_G258), v4_relat_1(_G258, _G235), v1_funct_1(_G258), v1_partfun1(_G258, _G235)]
+ (23)  [v1_partfun1(_G236, _G235), v1_funct_1(_G236), v4_relat_1(_G236, _G235), v1_relat_1(_G236), v1_partfun1(_G247, _G235), v1_funct_1(_G247), v4_relat_1(_G247, _G235), v1_relat_1(_G247), -r2_pboole(_G235, k3_pboole(_G235, _G236, _G258), _G247), r2_pboole(_G235, _G258, _G247), v1_relat_1(_G258), v4_relat_1(_G258, _G235), v1_funct_1(_G258), v1_partfun1(_G258, _G235)]
+
+Connection Proof:
+-----------------
+1  [m3_pboole(k3_pboole(1^[], 3^[], 4^[]), 1^[], k1_mboolean(1^[], 2^[]))]   (7)  
+1.1  [-m3_pboole(k3_pboole(1^[], 3^[], 4^[]), 1^[], k1_mboolean(1^[], 2^[])), v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[]), v1_funct_1(k1_mboolean(1^[], 2^[])), v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[]), v1_relat_1(k1_mboolean(1^[], 2^[])), v1_partfun1(k3_pboole(1^[], 3^[], 4^[]), 1^[]), v1_funct_1(k3_pboole(1^[], 3^[], 4^[])), v4_relat_1(k3_pboole(1^[], 3^[], 4^[]), 1^[]), v1_relat_1(k3_pboole(1^[], 3^[], 4^[])), r2_pboole(1^[], k3_pboole(1^[], 3^[], 4^[]), k1_mboolean(1^[], 2^[]))]   (9)  substitution:[[_G106, _G94, _G95], [k3_pboole(1^[], 3^[], 4^[]), 1^[], k1_mboolean(1^[], 2^[])]]
+1.1.1  [-v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[]), v1_relat_1(2^[]), v4_relat_1(2^[], 1^[]), v1_funct_1(2^[]), v1_partfun1(2^[], 1^[])]   (13)  substitution:[[_G125, _G126], [1^[], 2^[]]]
+1.1.1.1  [-v1_relat_1(2^[])]   (1)  
+1.1.1.2  [-v4_relat_1(2^[], 1^[])]   (2)  
+1.1.1.3  [-v1_funct_1(2^[])]   (3)  
+1.1.1.4  [-v1_partfun1(2^[], 1^[])]   (4)  
+1.1.2  [-v1_funct_1(k1_mboolean(1^[], 2^[])), v1_relat_1(2^[]), v4_relat_1(2^[], 1^[]), v1_funct_1(2^[]), v1_partfun1(2^[], 1^[])]   (12)  substitution:[[_G125, _G126], [1^[], 2^[]]]
+1.1.2.1  [-v1_relat_1(2^[])]   (1)  
+1.1.2.2  [-v4_relat_1(2^[], 1^[])]   (2)  
+1.1.2.3  [-v1_funct_1(2^[])]   (3)  
+1.1.2.4  [-v1_partfun1(2^[], 1^[])]   (4)  
+1.1.3  [-v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[]), v1_relat_1(2^[]), v4_relat_1(2^[], 1^[]), v1_funct_1(2^[]), v1_partfun1(2^[], 1^[])]   (11)  substitution:[[_G125, _G126], [1^[], 2^[]]]
+1.1.3.1  [-v1_relat_1(2^[])]   (1)  
+1.1.3.2  [-v4_relat_1(2^[], 1^[])]   (2)  
+1.1.3.3  [-v1_funct_1(2^[])]   (3)  
+1.1.3.4  [-v1_partfun1(2^[], 1^[])]   (4)  
+1.1.4  [-v1_relat_1(k1_mboolean(1^[], 2^[])), v1_relat_1(2^[]), v4_relat_1(2^[], 1^[]), v1_funct_1(2^[]), v1_partfun1(2^[], 1^[])]   (10)  substitution:[[_G125, _G126], [1^[], 2^[]]]
+1.1.4.1  [-v1_relat_1(2^[])]   (1)  
+1.1.4.2  [-v4_relat_1(2^[], 1^[])]   (2)  
+1.1.4.3  [-v1_funct_1(2^[])]   (3)  
+1.1.4.4  [-v1_partfun1(2^[], 1^[])]   (4)  
+1.1.5  [-v1_partfun1(k3_pboole(1^[], 3^[], 4^[]), 1^[]), v1_partfun1(3^[], 1^[]), v1_funct_1(3^[]), v4_relat_1(3^[], 1^[]), v1_relat_1(3^[]), v1_relat_1(4^[]), v4_relat_1(4^[], 1^[]), v1_funct_1(4^[]), v1_partfun1(4^[], 1^[])]   (17)  substitution:[[_G159, _G160, _G161], [1^[], 3^[], 4^[]]]
+1.1.5.1  [-v1_partfun1(3^[], 1^[]), m3_pboole(3^[], 1^[], k1_mboolean(1^[], 2^[])), v1_relat_1(k1_mboolean(1^[], 2^[])), v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[]), v1_funct_1(k1_mboolean(1^[], 2^[])), v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (21)  substitution:[[_G220, _G208, _G209], [3^[], 1^[], k1_mboolean(1^[], 2^[])]]
+1.1.5.1.1  [-m3_pboole(3^[], 1^[], k1_mboolean(1^[], 2^[]))]   (5)  
+1.1.5.1.2  [-v1_relat_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.5.1.3  [-v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.5.1.4  [-v1_funct_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.5.1.5  [-v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.5.2  [-v1_funct_1(3^[]), m3_pboole(3^[], 1^[], k1_mboolean(1^[], 2^[])), v1_relat_1(k1_mboolean(1^[], 2^[])), v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[]), v1_funct_1(k1_mboolean(1^[], 2^[])), v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (20)  substitution:[[_G220, _G208, _G209], [3^[], 1^[], k1_mboolean(1^[], 2^[])]]
+1.1.5.2.1  [-m3_pboole(3^[], 1^[], k1_mboolean(1^[], 2^[]))]   (5)  
+1.1.5.2.2  [-v1_relat_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.5.2.3  [-v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.5.2.4  [-v1_funct_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.5.2.5  [-v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.5.3  [-v4_relat_1(3^[], 1^[]), m3_pboole(3^[], 1^[], k1_mboolean(1^[], 2^[])), v1_relat_1(k1_mboolean(1^[], 2^[])), v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[]), v1_funct_1(k1_mboolean(1^[], 2^[])), v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (19)  substitution:[[_G220, _G208, _G209], [3^[], 1^[], k1_mboolean(1^[], 2^[])]]
+1.1.5.3.1  [-m3_pboole(3^[], 1^[], k1_mboolean(1^[], 2^[]))]   (5)  
+1.1.5.3.2  [-v1_relat_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.5.3.3  [-v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.5.3.4  [-v1_funct_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.5.3.5  [-v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.5.4  [-v1_relat_1(3^[]), m3_pboole(3^[], 1^[], k1_mboolean(1^[], 2^[])), v1_relat_1(k1_mboolean(1^[], 2^[])), v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[]), v1_funct_1(k1_mboolean(1^[], 2^[])), v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (18)  substitution:[[_G220, _G208, _G209], [3^[], 1^[], k1_mboolean(1^[], 2^[])]]
+1.1.5.4.1  [-m3_pboole(3^[], 1^[], k1_mboolean(1^[], 2^[]))]   (5)  
+1.1.5.4.2  [-v1_relat_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.5.4.3  [-v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.5.4.4  [-v1_funct_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.5.4.5  [-v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.5.5  [-v1_relat_1(4^[]), m3_pboole(4^[], 1^[], k1_mboolean(1^[], 2^[])), v1_relat_1(k1_mboolean(1^[], 2^[])), v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[]), v1_funct_1(k1_mboolean(1^[], 2^[])), v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (18)  substitution:[[_G220, _G208, _G209], [4^[], 1^[], k1_mboolean(1^[], 2^[])]]
+1.1.5.5.1  [-m3_pboole(4^[], 1^[], k1_mboolean(1^[], 2^[]))]   (6)  
+1.1.5.5.2  [-v1_relat_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.5.5.3  [-v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.5.5.4  [-v1_funct_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.5.5.5  [-v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.5.6  [-v4_relat_1(4^[], 1^[]), m3_pboole(4^[], 1^[], k1_mboolean(1^[], 2^[])), v1_relat_1(k1_mboolean(1^[], 2^[])), v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[]), v1_funct_1(k1_mboolean(1^[], 2^[])), v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (19)  substitution:[[_G220, _G208, _G209], [4^[], 1^[], k1_mboolean(1^[], 2^[])]]
+1.1.5.6.1  [-m3_pboole(4^[], 1^[], k1_mboolean(1^[], 2^[]))]   (6)  
+1.1.5.6.2  [-v1_relat_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.5.6.3  [-v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.5.6.4  [-v1_funct_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.5.6.5  [-v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.5.7  [-v1_funct_1(4^[]), m3_pboole(4^[], 1^[], k1_mboolean(1^[], 2^[])), v1_relat_1(k1_mboolean(1^[], 2^[])), v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[]), v1_funct_1(k1_mboolean(1^[], 2^[])), v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (20)  substitution:[[_G220, _G208, _G209], [4^[], 1^[], k1_mboolean(1^[], 2^[])]]
+1.1.5.7.1  [-m3_pboole(4^[], 1^[], k1_mboolean(1^[], 2^[]))]   (6)  
+1.1.5.7.2  [-v1_relat_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.5.7.3  [-v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.5.7.4  [-v1_funct_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.5.7.5  [-v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.5.8  [-v1_partfun1(4^[], 1^[]), m3_pboole(4^[], 1^[], k1_mboolean(1^[], 2^[])), v1_relat_1(k1_mboolean(1^[], 2^[])), v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[]), v1_funct_1(k1_mboolean(1^[], 2^[])), v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (21)  substitution:[[_G220, _G208, _G209], [4^[], 1^[], k1_mboolean(1^[], 2^[])]]
+1.1.5.8.1  [-m3_pboole(4^[], 1^[], k1_mboolean(1^[], 2^[]))]   (6)  
+1.1.5.8.2  [-v1_relat_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.5.8.3  [-v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.5.8.4  [-v1_funct_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.5.8.5  [-v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.6  [-v1_funct_1(k3_pboole(1^[], 3^[], 4^[])), v1_partfun1(3^[], 1^[]), v1_funct_1(3^[]), v4_relat_1(3^[], 1^[]), v1_relat_1(3^[]), v1_relat_1(4^[]), v4_relat_1(4^[], 1^[]), v1_funct_1(4^[]), v1_partfun1(4^[], 1^[])]   (16)  substitution:[[_G159, _G160, _G161], [1^[], 3^[], 4^[]]]
+1.1.6.1  [-v1_partfun1(3^[], 1^[]), m3_pboole(3^[], 1^[], k1_mboolean(1^[], 2^[])), v1_relat_1(k1_mboolean(1^[], 2^[])), v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[]), v1_funct_1(k1_mboolean(1^[], 2^[])), v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (21)  substitution:[[_G220, _G208, _G209], [3^[], 1^[], k1_mboolean(1^[], 2^[])]]
+1.1.6.1.1  [-m3_pboole(3^[], 1^[], k1_mboolean(1^[], 2^[]))]   (5)  
+1.1.6.1.2  [-v1_relat_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.6.1.3  [-v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.6.1.4  [-v1_funct_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.6.1.5  [-v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.6.2  [-v1_funct_1(3^[]), m3_pboole(3^[], 1^[], k1_mboolean(1^[], 2^[])), v1_relat_1(k1_mboolean(1^[], 2^[])), v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[]), v1_funct_1(k1_mboolean(1^[], 2^[])), v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (20)  substitution:[[_G220, _G208, _G209], [3^[], 1^[], k1_mboolean(1^[], 2^[])]]
+1.1.6.2.1  [-m3_pboole(3^[], 1^[], k1_mboolean(1^[], 2^[]))]   (5)  
+1.1.6.2.2  [-v1_relat_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.6.2.3  [-v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.6.2.4  [-v1_funct_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.6.2.5  [-v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.6.3  [-v4_relat_1(3^[], 1^[]), m3_pboole(3^[], 1^[], k1_mboolean(1^[], 2^[])), v1_relat_1(k1_mboolean(1^[], 2^[])), v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[]), v1_funct_1(k1_mboolean(1^[], 2^[])), v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (19)  substitution:[[_G220, _G208, _G209], [3^[], 1^[], k1_mboolean(1^[], 2^[])]]
+1.1.6.3.1  [-m3_pboole(3^[], 1^[], k1_mboolean(1^[], 2^[]))]   (5)  
+1.1.6.3.2  [-v1_relat_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.6.3.3  [-v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.6.3.4  [-v1_funct_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.6.3.5  [-v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.6.4  [-v1_relat_1(3^[]), m3_pboole(3^[], 1^[], k1_mboolean(1^[], 2^[])), v1_relat_1(k1_mboolean(1^[], 2^[])), v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[]), v1_funct_1(k1_mboolean(1^[], 2^[])), v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (18)  substitution:[[_G220, _G208, _G209], [3^[], 1^[], k1_mboolean(1^[], 2^[])]]
+1.1.6.4.1  [-m3_pboole(3^[], 1^[], k1_mboolean(1^[], 2^[]))]   (5)  
+1.1.6.4.2  [-v1_relat_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.6.4.3  [-v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.6.4.4  [-v1_funct_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.6.4.5  [-v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.6.5  [-v1_relat_1(4^[]), m3_pboole(4^[], 1^[], k1_mboolean(1^[], 2^[])), v1_relat_1(k1_mboolean(1^[], 2^[])), v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[]), v1_funct_1(k1_mboolean(1^[], 2^[])), v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (18)  substitution:[[_G220, _G208, _G209], [4^[], 1^[], k1_mboolean(1^[], 2^[])]]
+1.1.6.5.1  [-m3_pboole(4^[], 1^[], k1_mboolean(1^[], 2^[]))]   (6)  
+1.1.6.5.2  [-v1_relat_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.6.5.3  [-v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.6.5.4  [-v1_funct_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.6.5.5  [-v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.6.6  [-v4_relat_1(4^[], 1^[]), m3_pboole(4^[], 1^[], k1_mboolean(1^[], 2^[])), v1_relat_1(k1_mboolean(1^[], 2^[])), v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[]), v1_funct_1(k1_mboolean(1^[], 2^[])), v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (19)  substitution:[[_G220, _G208, _G209], [4^[], 1^[], k1_mboolean(1^[], 2^[])]]
+1.1.6.6.1  [-m3_pboole(4^[], 1^[], k1_mboolean(1^[], 2^[]))]   (6)  
+1.1.6.6.2  [-v1_relat_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.6.6.3  [-v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.6.6.4  [-v1_funct_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.6.6.5  [-v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.6.7  [-v1_funct_1(4^[]), m3_pboole(4^[], 1^[], k1_mboolean(1^[], 2^[])), v1_relat_1(k1_mboolean(1^[], 2^[])), v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[]), v1_funct_1(k1_mboolean(1^[], 2^[])), v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (20)  substitution:[[_G220, _G208, _G209], [4^[], 1^[], k1_mboolean(1^[], 2^[])]]
+1.1.6.7.1  [-m3_pboole(4^[], 1^[], k1_mboolean(1^[], 2^[]))]   (6)  
+1.1.6.7.2  [-v1_relat_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.6.7.3  [-v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.6.7.4  [-v1_funct_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.6.7.5  [-v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.6.8  [-v1_partfun1(4^[], 1^[]), m3_pboole(4^[], 1^[], k1_mboolean(1^[], 2^[])), v1_relat_1(k1_mboolean(1^[], 2^[])), v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[]), v1_funct_1(k1_mboolean(1^[], 2^[])), v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (21)  substitution:[[_G220, _G208, _G209], [4^[], 1^[], k1_mboolean(1^[], 2^[])]]
+1.1.6.8.1  [-m3_pboole(4^[], 1^[], k1_mboolean(1^[], 2^[]))]   (6)  
+1.1.6.8.2  [-v1_relat_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.6.8.3  [-v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.6.8.4  [-v1_funct_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.6.8.5  [-v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.7  [-v4_relat_1(k3_pboole(1^[], 3^[], 4^[]), 1^[]), v1_partfun1(3^[], 1^[]), v1_funct_1(3^[]), v4_relat_1(3^[], 1^[]), v1_relat_1(3^[]), v1_relat_1(4^[]), v4_relat_1(4^[], 1^[]), v1_funct_1(4^[]), v1_partfun1(4^[], 1^[])]   (15)  substitution:[[_G159, _G160, _G161], [1^[], 3^[], 4^[]]]
+1.1.7.1  [-v1_partfun1(3^[], 1^[]), m3_pboole(3^[], 1^[], k1_mboolean(1^[], 2^[])), v1_relat_1(k1_mboolean(1^[], 2^[])), v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[]), v1_funct_1(k1_mboolean(1^[], 2^[])), v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (21)  substitution:[[_G220, _G208, _G209], [3^[], 1^[], k1_mboolean(1^[], 2^[])]]
+1.1.7.1.1  [-m3_pboole(3^[], 1^[], k1_mboolean(1^[], 2^[]))]   (5)  
+1.1.7.1.2  [-v1_relat_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.7.1.3  [-v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.7.1.4  [-v1_funct_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.7.1.5  [-v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.7.2  [-v1_funct_1(3^[]), m3_pboole(3^[], 1^[], k1_mboolean(1^[], 2^[])), v1_relat_1(k1_mboolean(1^[], 2^[])), v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[]), v1_funct_1(k1_mboolean(1^[], 2^[])), v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (20)  substitution:[[_G220, _G208, _G209], [3^[], 1^[], k1_mboolean(1^[], 2^[])]]
+1.1.7.2.1  [-m3_pboole(3^[], 1^[], k1_mboolean(1^[], 2^[]))]   (5)  
+1.1.7.2.2  [-v1_relat_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.7.2.3  [-v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.7.2.4  [-v1_funct_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.7.2.5  [-v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.7.3  [-v4_relat_1(3^[], 1^[]), m3_pboole(3^[], 1^[], k1_mboolean(1^[], 2^[])), v1_relat_1(k1_mboolean(1^[], 2^[])), v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[]), v1_funct_1(k1_mboolean(1^[], 2^[])), v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (19)  substitution:[[_G220, _G208, _G209], [3^[], 1^[], k1_mboolean(1^[], 2^[])]]
+1.1.7.3.1  [-m3_pboole(3^[], 1^[], k1_mboolean(1^[], 2^[]))]   (5)  
+1.1.7.3.2  [-v1_relat_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.7.3.3  [-v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.7.3.4  [-v1_funct_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.7.3.5  [-v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.7.4  [-v1_relat_1(3^[]), m3_pboole(3^[], 1^[], k1_mboolean(1^[], 2^[])), v1_relat_1(k1_mboolean(1^[], 2^[])), v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[]), v1_funct_1(k1_mboolean(1^[], 2^[])), v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (18)  substitution:[[_G220, _G208, _G209], [3^[], 1^[], k1_mboolean(1^[], 2^[])]]
+1.1.7.4.1  [-m3_pboole(3^[], 1^[], k1_mboolean(1^[], 2^[]))]   (5)  
+1.1.7.4.2  [-v1_relat_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.7.4.3  [-v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.7.4.4  [-v1_funct_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.7.4.5  [-v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.7.5  [-v1_relat_1(4^[]), m3_pboole(4^[], 1^[], k1_mboolean(1^[], 2^[])), v1_relat_1(k1_mboolean(1^[], 2^[])), v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[]), v1_funct_1(k1_mboolean(1^[], 2^[])), v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (18)  substitution:[[_G220, _G208, _G209], [4^[], 1^[], k1_mboolean(1^[], 2^[])]]
+1.1.7.5.1  [-m3_pboole(4^[], 1^[], k1_mboolean(1^[], 2^[]))]   (6)  
+1.1.7.5.2  [-v1_relat_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.7.5.3  [-v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.7.5.4  [-v1_funct_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.7.5.5  [-v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.7.6  [-v4_relat_1(4^[], 1^[]), m3_pboole(4^[], 1^[], k1_mboolean(1^[], 2^[])), v1_relat_1(k1_mboolean(1^[], 2^[])), v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[]), v1_funct_1(k1_mboolean(1^[], 2^[])), v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (19)  substitution:[[_G220, _G208, _G209], [4^[], 1^[], k1_mboolean(1^[], 2^[])]]
+1.1.7.6.1  [-m3_pboole(4^[], 1^[], k1_mboolean(1^[], 2^[]))]   (6)  
+1.1.7.6.2  [-v1_relat_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.7.6.3  [-v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.7.6.4  [-v1_funct_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.7.6.5  [-v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.7.7  [-v1_funct_1(4^[]), m3_pboole(4^[], 1^[], k1_mboolean(1^[], 2^[])), v1_relat_1(k1_mboolean(1^[], 2^[])), v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[]), v1_funct_1(k1_mboolean(1^[], 2^[])), v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (20)  substitution:[[_G220, _G208, _G209], [4^[], 1^[], k1_mboolean(1^[], 2^[])]]
+1.1.7.7.1  [-m3_pboole(4^[], 1^[], k1_mboolean(1^[], 2^[]))]   (6)  
+1.1.7.7.2  [-v1_relat_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.7.7.3  [-v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.7.7.4  [-v1_funct_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.7.7.5  [-v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.7.8  [-v1_partfun1(4^[], 1^[]), m3_pboole(4^[], 1^[], k1_mboolean(1^[], 2^[])), v1_relat_1(k1_mboolean(1^[], 2^[])), v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[]), v1_funct_1(k1_mboolean(1^[], 2^[])), v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (21)  substitution:[[_G220, _G208, _G209], [4^[], 1^[], k1_mboolean(1^[], 2^[])]]
+1.1.7.8.1  [-m3_pboole(4^[], 1^[], k1_mboolean(1^[], 2^[]))]   (6)  
+1.1.7.8.2  [-v1_relat_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.7.8.3  [-v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.7.8.4  [-v1_funct_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.7.8.5  [-v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.8  [-v1_relat_1(k3_pboole(1^[], 3^[], 4^[])), v1_partfun1(3^[], 1^[]), v1_funct_1(3^[]), v4_relat_1(3^[], 1^[]), v1_relat_1(3^[]), v1_relat_1(4^[]), v4_relat_1(4^[], 1^[]), v1_funct_1(4^[]), v1_partfun1(4^[], 1^[])]   (14)  substitution:[[_G159, _G160, _G161], [1^[], 3^[], 4^[]]]
+1.1.8.1  [-v1_partfun1(3^[], 1^[]), m3_pboole(3^[], 1^[], k1_mboolean(1^[], 2^[])), v1_relat_1(k1_mboolean(1^[], 2^[])), v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[]), v1_funct_1(k1_mboolean(1^[], 2^[])), v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (21)  substitution:[[_G220, _G208, _G209], [3^[], 1^[], k1_mboolean(1^[], 2^[])]]
+1.1.8.1.1  [-m3_pboole(3^[], 1^[], k1_mboolean(1^[], 2^[]))]   (5)  
+1.1.8.1.2  [-v1_relat_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.8.1.3  [-v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.8.1.4  [-v1_funct_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.8.1.5  [-v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.8.2  [-v1_funct_1(3^[]), m3_pboole(3^[], 1^[], k1_mboolean(1^[], 2^[])), v1_relat_1(k1_mboolean(1^[], 2^[])), v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[]), v1_funct_1(k1_mboolean(1^[], 2^[])), v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (20)  substitution:[[_G220, _G208, _G209], [3^[], 1^[], k1_mboolean(1^[], 2^[])]]
+1.1.8.2.1  [-m3_pboole(3^[], 1^[], k1_mboolean(1^[], 2^[]))]   (5)  
+1.1.8.2.2  [-v1_relat_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.8.2.3  [-v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.8.2.4  [-v1_funct_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.8.2.5  [-v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.8.3  [-v4_relat_1(3^[], 1^[]), m3_pboole(3^[], 1^[], k1_mboolean(1^[], 2^[])), v1_relat_1(k1_mboolean(1^[], 2^[])), v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[]), v1_funct_1(k1_mboolean(1^[], 2^[])), v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (19)  substitution:[[_G220, _G208, _G209], [3^[], 1^[], k1_mboolean(1^[], 2^[])]]
+1.1.8.3.1  [-m3_pboole(3^[], 1^[], k1_mboolean(1^[], 2^[]))]   (5)  
+1.1.8.3.2  [-v1_relat_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.8.3.3  [-v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.8.3.4  [-v1_funct_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.8.3.5  [-v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.8.4  [-v1_relat_1(3^[]), m3_pboole(3^[], 1^[], k1_mboolean(1^[], 2^[])), v1_relat_1(k1_mboolean(1^[], 2^[])), v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[]), v1_funct_1(k1_mboolean(1^[], 2^[])), v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (18)  substitution:[[_G220, _G208, _G209], [3^[], 1^[], k1_mboolean(1^[], 2^[])]]
+1.1.8.4.1  [-m3_pboole(3^[], 1^[], k1_mboolean(1^[], 2^[]))]   (5)  
+1.1.8.4.2  [-v1_relat_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.8.4.3  [-v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.8.4.4  [-v1_funct_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.8.4.5  [-v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.8.5  [-v1_relat_1(4^[]), m3_pboole(4^[], 1^[], k1_mboolean(1^[], 2^[])), v1_relat_1(k1_mboolean(1^[], 2^[])), v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[]), v1_funct_1(k1_mboolean(1^[], 2^[])), v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (18)  substitution:[[_G220, _G208, _G209], [4^[], 1^[], k1_mboolean(1^[], 2^[])]]
+1.1.8.5.1  [-m3_pboole(4^[], 1^[], k1_mboolean(1^[], 2^[]))]   (6)  
+1.1.8.5.2  [-v1_relat_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.8.5.3  [-v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.8.5.4  [-v1_funct_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.8.5.5  [-v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.8.6  [-v4_relat_1(4^[], 1^[]), m3_pboole(4^[], 1^[], k1_mboolean(1^[], 2^[])), v1_relat_1(k1_mboolean(1^[], 2^[])), v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[]), v1_funct_1(k1_mboolean(1^[], 2^[])), v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (19)  substitution:[[_G220, _G208, _G209], [4^[], 1^[], k1_mboolean(1^[], 2^[])]]
+1.1.8.6.1  [-m3_pboole(4^[], 1^[], k1_mboolean(1^[], 2^[]))]   (6)  
+1.1.8.6.2  [-v1_relat_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.8.6.3  [-v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.8.6.4  [-v1_funct_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.8.6.5  [-v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.8.7  [-v1_funct_1(4^[]), m3_pboole(4^[], 1^[], k1_mboolean(1^[], 2^[])), v1_relat_1(k1_mboolean(1^[], 2^[])), v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[]), v1_funct_1(k1_mboolean(1^[], 2^[])), v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (20)  substitution:[[_G220, _G208, _G209], [4^[], 1^[], k1_mboolean(1^[], 2^[])]]
+1.1.8.7.1  [-m3_pboole(4^[], 1^[], k1_mboolean(1^[], 2^[]))]   (6)  
+1.1.8.7.2  [-v1_relat_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.8.7.3  [-v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.8.7.4  [-v1_funct_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.8.7.5  [-v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.8.8  [-v1_partfun1(4^[], 1^[]), m3_pboole(4^[], 1^[], k1_mboolean(1^[], 2^[])), v1_relat_1(k1_mboolean(1^[], 2^[])), v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[]), v1_funct_1(k1_mboolean(1^[], 2^[])), v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (21)  substitution:[[_G220, _G208, _G209], [4^[], 1^[], k1_mboolean(1^[], 2^[])]]
+1.1.8.8.1  [-m3_pboole(4^[], 1^[], k1_mboolean(1^[], 2^[]))]   (6)  
+1.1.8.8.2  [-v1_relat_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.8.8.3  [-v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.8.8.4  [-v1_funct_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.8.8.5  [-v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.9  [-r2_pboole(1^[], k3_pboole(1^[], 3^[], 4^[]), k1_mboolean(1^[], 2^[])), v1_partfun1(3^[], 1^[]), v1_funct_1(3^[]), v4_relat_1(3^[], 1^[]), v1_relat_1(3^[]), v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[]), v1_funct_1(k1_mboolean(1^[], 2^[])), v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[]), v1_relat_1(k1_mboolean(1^[], 2^[])), r2_pboole(1^[], 3^[], k1_mboolean(1^[], 2^[])), v1_relat_1(4^[]), v4_relat_1(4^[], 1^[]), v1_funct_1(4^[]), v1_partfun1(4^[], 1^[])]   (22)  substitution:[[_G235, _G236, _G258, _G247], [1^[], 3^[], 4^[], k1_mboolean(1^[], 2^[])]]
+1.1.9.1  [-v1_partfun1(3^[], 1^[]), m3_pboole(3^[], 1^[], k1_mboolean(1^[], 2^[])), v1_relat_1(k1_mboolean(1^[], 2^[])), v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[]), v1_funct_1(k1_mboolean(1^[], 2^[])), v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (21)  substitution:[[_G220, _G208, _G209], [3^[], 1^[], k1_mboolean(1^[], 2^[])]]
+1.1.9.1.1  [-m3_pboole(3^[], 1^[], k1_mboolean(1^[], 2^[]))]   (5)  
+1.1.9.1.2  [-v1_relat_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.9.1.3  [-v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.9.1.4  [-v1_funct_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.9.1.5  [-v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.9.2  [-v1_funct_1(3^[]), m3_pboole(3^[], 1^[], k1_mboolean(1^[], 2^[])), v1_relat_1(k1_mboolean(1^[], 2^[])), v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[]), v1_funct_1(k1_mboolean(1^[], 2^[])), v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (20)  substitution:[[_G220, _G208, _G209], [3^[], 1^[], k1_mboolean(1^[], 2^[])]]
+1.1.9.2.1  [-m3_pboole(3^[], 1^[], k1_mboolean(1^[], 2^[]))]   (5)  
+1.1.9.2.2  [-v1_relat_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.9.2.3  [-v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.9.2.4  [-v1_funct_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.9.2.5  [-v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.9.3  [-v4_relat_1(3^[], 1^[]), m3_pboole(3^[], 1^[], k1_mboolean(1^[], 2^[])), v1_relat_1(k1_mboolean(1^[], 2^[])), v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[]), v1_funct_1(k1_mboolean(1^[], 2^[])), v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (19)  substitution:[[_G220, _G208, _G209], [3^[], 1^[], k1_mboolean(1^[], 2^[])]]
+1.1.9.3.1  [-m3_pboole(3^[], 1^[], k1_mboolean(1^[], 2^[]))]   (5)  
+1.1.9.3.2  [-v1_relat_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.9.3.3  [-v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.9.3.4  [-v1_funct_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.9.3.5  [-v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.9.4  [-v1_relat_1(3^[]), m3_pboole(3^[], 1^[], k1_mboolean(1^[], 2^[])), v1_relat_1(k1_mboolean(1^[], 2^[])), v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[]), v1_funct_1(k1_mboolean(1^[], 2^[])), v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (18)  substitution:[[_G220, _G208, _G209], [3^[], 1^[], k1_mboolean(1^[], 2^[])]]
+1.1.9.4.1  [-m3_pboole(3^[], 1^[], k1_mboolean(1^[], 2^[]))]   (5)  
+1.1.9.4.2  [-v1_relat_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.9.4.3  [-v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.9.4.4  [-v1_funct_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.9.4.5  [-v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.9.5  [-v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.9.6  [-v1_funct_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.9.7  [-v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1)  
+1.1.9.8  [-v1_relat_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1)  
+1.1.9.9  [-r2_pboole(1^[], 3^[], k1_mboolean(1^[], 2^[])), v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[]), v1_funct_1(k1_mboolean(1^[], 2^[])), v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[]), v1_relat_1(k1_mboolean(1^[], 2^[])), v1_partfun1(3^[], 1^[]), v1_funct_1(3^[]), v4_relat_1(3^[], 1^[]), v1_relat_1(3^[]), m3_pboole(3^[], 1^[], k1_mboolean(1^[], 2^[]))]   (8)  substitution:[[_G94, _G106, _G95], [1^[], 3^[], k1_mboolean(1^[], 2^[])]]
+1.1.9.9.1  [-v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1.9)  
+1.1.9.9.2  [-v1_funct_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1.9)  
+1.1.9.9.3  [-v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1.9)  
+1.1.9.9.4  [-v1_relat_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1.9)  
+1.1.9.9.5  [-v1_partfun1(3^[], 1^[])]   (lemmata:1.1.9)  
+1.1.9.9.6  [-v1_funct_1(3^[])]   (lemmata:1.1.9)  
+1.1.9.9.7  [-v4_relat_1(3^[], 1^[])]   (lemmata:1.1.9)  
+1.1.9.9.8  [-v1_relat_1(3^[])]   (lemmata:1.1.9)  
+1.1.9.9.9  [-m3_pboole(3^[], 1^[], k1_mboolean(1^[], 2^[]))]   (5)  
+1.1.9.10  [-v1_relat_1(4^[]), m3_pboole(4^[], 1^[], k1_mboolean(1^[], 2^[])), v1_relat_1(k1_mboolean(1^[], 2^[])), v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[]), v1_funct_1(k1_mboolean(1^[], 2^[])), v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (18)  substitution:[[_G220, _G208, _G209], [4^[], 1^[], k1_mboolean(1^[], 2^[])]]
+1.1.9.10.1  [-m3_pboole(4^[], 1^[], k1_mboolean(1^[], 2^[]))]   (6)  
+1.1.9.10.2  [-v1_relat_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1.9)  
+1.1.9.10.3  [-v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1.9)  
+1.1.9.10.4  [-v1_funct_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1.9)  
+1.1.9.10.5  [-v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1.9)  
+1.1.9.11  [-v4_relat_1(4^[], 1^[]), m3_pboole(4^[], 1^[], k1_mboolean(1^[], 2^[])), v1_relat_1(k1_mboolean(1^[], 2^[])), v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[]), v1_funct_1(k1_mboolean(1^[], 2^[])), v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (19)  substitution:[[_G220, _G208, _G209], [4^[], 1^[], k1_mboolean(1^[], 2^[])]]
+1.1.9.11.1  [-m3_pboole(4^[], 1^[], k1_mboolean(1^[], 2^[]))]   (6)  
+1.1.9.11.2  [-v1_relat_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1.9)  
+1.1.9.11.3  [-v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1.9)  
+1.1.9.11.4  [-v1_funct_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1.9)  
+1.1.9.11.5  [-v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1.9)  
+1.1.9.12  [-v1_funct_1(4^[]), m3_pboole(4^[], 1^[], k1_mboolean(1^[], 2^[])), v1_relat_1(k1_mboolean(1^[], 2^[])), v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[]), v1_funct_1(k1_mboolean(1^[], 2^[])), v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (20)  substitution:[[_G220, _G208, _G209], [4^[], 1^[], k1_mboolean(1^[], 2^[])]]
+1.1.9.12.1  [-m3_pboole(4^[], 1^[], k1_mboolean(1^[], 2^[]))]   (6)  
+1.1.9.12.2  [-v1_relat_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1.9)  
+1.1.9.12.3  [-v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1.9)  
+1.1.9.12.4  [-v1_funct_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1.9)  
+1.1.9.12.5  [-v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1.9)  
+1.1.9.13  [-v1_partfun1(4^[], 1^[]), m3_pboole(4^[], 1^[], k1_mboolean(1^[], 2^[])), v1_relat_1(k1_mboolean(1^[], 2^[])), v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[]), v1_funct_1(k1_mboolean(1^[], 2^[])), v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (21)  substitution:[[_G220, _G208, _G209], [4^[], 1^[], k1_mboolean(1^[], 2^[])]]
+1.1.9.13.1  [-m3_pboole(4^[], 1^[], k1_mboolean(1^[], 2^[]))]   (6)  
+1.1.9.13.2  [-v1_relat_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1.9)  
+1.1.9.13.3  [-v4_relat_1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1.9)  
+1.1.9.13.4  [-v1_funct_1(k1_mboolean(1^[], 2^[]))]   (lemmata:1.1.9)  
+1.1.9.13.5  [-v1_partfun1(k1_mboolean(1^[], 2^[]), 1^[])]   (lemmata:1.1.9)  
+------------------------------------------------------
+End of proof for t35_mssubfam

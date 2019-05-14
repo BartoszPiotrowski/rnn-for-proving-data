@@ -1,0 +1,22 @@
+
+t46_rewrite1 is a Theorem
+Start of proof for t46_rewrite1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(2^[])]
+ (2)  [r2_hidden(3^[], k1_relat_1(2^[]))]
+ (3)  [r9_rewrite1(2^[], 3^[])]
+ (4)  [v1_relat_1(_G1206), -r2_hidden(_G1293, k1_relat_1(_G1206)), -r4_rewrite1(_G1206, _G1293, _G1293)]
+ (5)  [v1_relat_1(_G805), r9_rewrite1(_G805, _G893), -r4_rewrite1(_G805, _G893, 1^[_G893, _G805])]
+ (6)  [v1_relat_1(_G805), -r9_rewrite1(_G805, _G893), r4_rewrite1(_G805, _G893, _G1002)]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(3^[], k1_relat_1(2^[]))]   (2)  
+1.1  [-r2_hidden(3^[], k1_relat_1(2^[])), v1_relat_1(2^[]), -r4_rewrite1(2^[], 3^[], 3^[])]   (4)  substitution:[[_G1293, _G1206], [3^[], 2^[]]]
+1.1.1  [-v1_relat_1(2^[])]   (1)  
+1.1.2  [r4_rewrite1(2^[], 3^[], 3^[]), v1_relat_1(2^[]), -r9_rewrite1(2^[], 3^[])]   (6)  substitution:[[_G805, _G893, _G1002], [2^[], 3^[], 3^[]]]
+1.1.2.1  [-v1_relat_1(2^[])]   (1)  
+1.1.2.2  [r9_rewrite1(2^[], 3^[])]   (3)  
+------------------------------------------------------
+End of proof for t46_rewrite1

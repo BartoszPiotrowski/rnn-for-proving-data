@@ -1,0 +1,42 @@
+
+t13_frechet is a Theorem
+Start of proof for t13_frechet
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-r1_tarski(2^[], 1^[])]
+ (2)  [k7_relset_1(1^[], 1^[], k6_partfun1(1^[]), 2^[])=2^[]]
+ (3)  [-v1_partfun1(k6_partfun1(_G9071), _G9071)]
+ (4)  [-m1_subset_1(k6_partfun1(_G9071), k1_zfmisc_1(k2_zfmisc_1(_G9071, _G9071)))]
+ (5)  [- (k6_partfun1(_G9344)=k4_relat_1(_G9344))]
+ (6)  [m1_subset_1(_G9612, k1_zfmisc_1(k2_zfmisc_1(_G9475, _G9543))), - (k7_relset_1(_G9475, _G9543, _G9612, _G9682)=k7_relat_1(_G9612, _G9682))]
+ (7)  [m1_subset_1(_G10440, k1_zfmisc_1(_G10388)), - (k7_relat_1(k4_relat_1(_G10388), _G10440)=_G10440)]
+ (8)  [m1_subset_1(_G10137, k1_zfmisc_1(_G10184)), -r1_tarski(_G10137, _G10184)]
+ (9)  [-m1_subset_1(_G10137, k1_zfmisc_1(_G10184)), r1_tarski(_G10137, _G10184)]
+ (10)  [- (k2_zfmisc_1(_G5391, _G5526)=k2_zfmisc_1(_G5458, _G5595)), _G5391=_G5458, _G5526=_G5595]
+ (11)  [_G5988=_G6037, - (k1_zfmisc_1(_G5988)=k1_zfmisc_1(_G6037))]
+ (12)  [- (k7_relat_1(_G6266, _G6401)=k7_relat_1(_G6333, _G6470)), _G6266=_G6333, _G6401=_G6470]
+ (13)  [_G6863=_G6912, - (k4_relat_1(_G6863)=k4_relat_1(_G6912))]
+ (14)  [_G8667=_G8716, - (k6_partfun1(_G8667)=k6_partfun1(_G8716))]
+ (15)  [- (k7_relset_1(_G7141, _G7348, _G7559, _G7774)=k7_relset_1(_G7244, _G7453, _G7666, _G7883)), _G7141=_G7244, _G7348=_G7453, _G7559=_G7666, _G7774=_G7883]
+ (16)  [- (_G2764=_G2764)]
+ (17)  [_G2863=_G2908, - (_G2908=_G2863)]
+ (18)  [- (_G3096=_G3209), _G3096=_G3152, _G3152=_G3209]
+ (19)  [-v1_partfun1(_G3613, _G3750), v1_partfun1(_G3546, _G3681), _G3546=_G3613, _G3681=_G3750]
+ (20)  [-m1_subset_1(_G4210, _G4347), m1_subset_1(_G4143, _G4278), _G4143=_G4210, _G4278=_G4347]
+ (21)  [-r1_tarski(_G4798, _G4935), r1_tarski(_G4731, _G4866), _G4731=_G4798, _G4866=_G4935]
+
+Connection Proof:
+-----------------
+1  [k7_relset_1(1^[], 1^[], k6_partfun1(1^[]), 2^[])=2^[]]   (2)  
+1.1  [- (k7_relset_1(1^[], 1^[], k6_partfun1(1^[]), 2^[])=2^[]), k7_relset_1(1^[], 1^[], k6_partfun1(1^[]), 2^[])=k7_relat_1(k6_partfun1(1^[]), 2^[]), k7_relat_1(k6_partfun1(1^[]), 2^[])=2^[]]   (18)  substitution:[[_G3096, _G3209, _G3152], [k7_relset_1(1^[], 1^[], k6_partfun1(1^[]), 2^[]), 2^[], k7_relat_1(k6_partfun1(1^[]), 2^[])]]
+1.1.1  [- (k7_relset_1(1^[], 1^[], k6_partfun1(1^[]), 2^[])=k7_relat_1(k6_partfun1(1^[]), 2^[])), m1_subset_1(k6_partfun1(1^[]), k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]   (6)  substitution:[[_G9475, _G9543, _G9612, _G9682], [1^[], 1^[], k6_partfun1(1^[]), 2^[]]]
+1.1.1.1  [-m1_subset_1(k6_partfun1(1^[]), k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]   (4)  substitution:[[_G9071], [1^[]]]
+1.1.2  [- (k7_relat_1(k6_partfun1(1^[]), 2^[])=2^[]), k7_relat_1(k6_partfun1(1^[]), 2^[])=k7_relat_1(k4_relat_1(1^[]), 2^[]), k7_relat_1(k4_relat_1(1^[]), 2^[])=2^[]]   (18)  substitution:[[_G3096, _G3209, _G3152], [k7_relat_1(k6_partfun1(1^[]), 2^[]), 2^[], k7_relat_1(k4_relat_1(1^[]), 2^[])]]
+1.1.2.1  [- (k7_relat_1(k6_partfun1(1^[]), 2^[])=k7_relat_1(k4_relat_1(1^[]), 2^[])), k6_partfun1(1^[])=k4_relat_1(1^[]), 2^[]=2^[]]   (12)  substitution:[[_G6266, _G6401, _G6333, _G6470], [k6_partfun1(1^[]), 2^[], k4_relat_1(1^[]), 2^[]]]
+1.1.2.1.1  [- (k6_partfun1(1^[])=k4_relat_1(1^[]))]   (5)  substitution:[[_G9344], [1^[]]]
+1.1.2.1.2  [- (2^[]=2^[])]   (16)  substitution:[[_G2764], [2^[]]]
+1.1.2.2  [- (k7_relat_1(k4_relat_1(1^[]), 2^[])=2^[]), m1_subset_1(2^[], k1_zfmisc_1(1^[]))]   (7)  substitution:[[_G10388, _G10440], [1^[], 2^[]]]
+1.1.2.2.1  [-m1_subset_1(2^[], k1_zfmisc_1(1^[])), r1_tarski(2^[], 1^[])]   (9)  substitution:[[_G10137, _G10184], [2^[], 1^[]]]
+1.1.2.2.1.1  [-r1_tarski(2^[], 1^[])]   (1)  
+------------------------------------------------------
+End of proof for t13_frechet

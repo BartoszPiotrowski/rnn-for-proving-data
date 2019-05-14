@@ -1,0 +1,33 @@
+
+t4_euler_1 is a Theorem
+Start of proof for t4_euler_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_finset_1(1^[])]
+ (2)  [-r2_hidden(2^[], 1^[])]
+ (3)  [k5_card_1(k6_subset_1(1^[], k1_tarski(2^[])))=k6_xcmplx_0(k5_card_1(1^[]), k5_card_1(k1_tarski(2^[])))]
+ (4)  [-v1_finset_1(k1_tarski(_G6326))]
+ (5)  [r1_tarski(k1_tarski(_G6415), _G6462), -r2_hidden(_G6415, _G6462)]
+ (6)  [-r1_tarski(k1_tarski(_G6415), _G6462), r2_hidden(_G6415, _G6462)]
+ (7)  [v1_finset_1(_G6666), v1_finset_1(_G6765), r1_tarski(_G6765, _G6666), - (k5_card_1(k6_subset_1(_G6666, _G6765))=k6_xcmplx_0(k5_card_1(_G6666), k5_card_1(_G6765)))]
+ (8)  [- (k6_subset_1(_G4501, _G4636)=k6_subset_1(_G4568, _G4705)), _G4501=_G4568, _G4636=_G4705]
+ (9)  [- (k6_xcmplx_0(_G5098, _G5233)=k6_xcmplx_0(_G5165, _G5302)), _G5098=_G5165, _G5233=_G5302]
+ (10)  [_G5695=_G5744, - (k5_card_1(_G5695)=k5_card_1(_G5744))]
+ (11)  [_G5964=_G6013, - (k1_tarski(_G5964)=k1_tarski(_G6013))]
+ (12)  [- (_G2193=_G2193)]
+ (13)  [_G2292=_G2337, - (_G2337=_G2292)]
+ (14)  [- (_G2525=_G2638), _G2525=_G2581, _G2581=_G2638]
+ (15)  [-r1_tarski(_G3042, _G3179), r1_tarski(_G2975, _G3110), _G2975=_G3042, _G3110=_G3179]
+ (16)  [-v1_finset_1(_G3621), _G3572=_G3621, v1_finset_1(_G3572)]
+ (17)  [-r2_hidden(_G3908, _G4045), r2_hidden(_G3841, _G3976), _G3841=_G3908, _G3976=_G4045]
+
+Connection Proof:
+-----------------
+1  [k5_card_1(k6_subset_1(1^[], k1_tarski(2^[])))=k6_xcmplx_0(k5_card_1(1^[]), k5_card_1(k1_tarski(2^[])))]   (3)  
+1.1  [- (k5_card_1(k6_subset_1(1^[], k1_tarski(2^[])))=k6_xcmplx_0(k5_card_1(1^[]), k5_card_1(k1_tarski(2^[])))), v1_finset_1(1^[]), v1_finset_1(k1_tarski(2^[])), r1_tarski(k1_tarski(2^[]), 1^[])]   (7)  substitution:[[_G6666, _G6765], [1^[], k1_tarski(2^[])]]
+1.1.1  [-v1_finset_1(1^[])]   (1)  
+1.1.2  [-v1_finset_1(k1_tarski(2^[]))]   (4)  substitution:[[_G6326], [2^[]]]
+1.1.3  [-r1_tarski(k1_tarski(2^[]), 1^[]), r2_hidden(2^[], 1^[])]   (6)  substitution:[[_G6415, _G6462], [2^[], 1^[]]]
+1.1.3.1  [-r2_hidden(2^[], 1^[])]   (2)  
+------------------------------------------------------
+End of proof for t4_euler_1

@@ -1,0 +1,40 @@
+
+t4_urysohn2 is a Theorem
+Start of proof for t4_urysohn2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], k1_numbers)]
+ (2)  [k1_integra2(k1_xboole_0, 1^[])=k1_xboole_0]
+ (3)  [m1_subset_1(_G5740, k1_numbers), -v1_xreal_0(_G5740)]
+ (4)  [m1_subset_1(_G5897, k1_zfmisc_1(k1_numbers)), -v3_membered(_G5897)]
+ (5)  [- (k1_subset_1(_G6068)=k1_xboole_0)]
+ (6)  [-m1_subset_1(k1_subset_1(_G6183), k1_zfmisc_1(_G6183))]
+ (7)  [-v1_xboole_0(k1_xboole_0)]
+ (8)  [v1_xboole_0(_G6346), - (_G6346=k1_xboole_0)]
+ (9)  [v3_membered(_G6494), v1_xreal_0(_G6582), v1_xboole_0(_G6494), -v1_xboole_0(k1_integra2(_G6494, _G6582))]
+ (10)  [v3_membered(_G6494), v1_xreal_0(_G6582), -v1_xboole_0(_G6494), v1_xboole_0(k1_integra2(_G6494, _G6582))]
+ (11)  [_G4533=_G4582, - (k1_subset_1(_G4533)=k1_subset_1(_G4582))]
+ (12)  [_G4811=_G4860, - (k1_zfmisc_1(_G4811)=k1_zfmisc_1(_G4860))]
+ (13)  [- (k1_integra2(_G5080, _G5215)=k1_integra2(_G5147, _G5284)), _G5080=_G5147, _G5215=_G5284]
+ (14)  [- (_G2245=_G2245)]
+ (15)  [_G2344=_G2389, - (_G2389=_G2344)]
+ (16)  [- (_G2577=_G2690), _G2577=_G2633, _G2633=_G2690]
+ (17)  [-v3_membered(_G3076), _G3027=_G3076, v3_membered(_G3027)]
+ (18)  [-v1_xreal_0(_G3354), _G3305=_G3354, v1_xreal_0(_G3305)]
+ (19)  [-v1_xboole_0(_G3632), _G3583=_G3632, v1_xboole_0(_G3583)]
+ (20)  [-m1_subset_1(_G3919, _G4056), m1_subset_1(_G3852, _G3987), _G3852=_G3919, _G3987=_G4056]
+
+Connection Proof:
+-----------------
+1  [k1_integra2(k1_xboole_0, 1^[])=k1_xboole_0]   (2)  
+1.1  [- (k1_integra2(k1_xboole_0, 1^[])=k1_xboole_0), v1_xboole_0(k1_integra2(k1_xboole_0, 1^[]))]   (8)  substitution:[[_G6346], [k1_integra2(k1_xboole_0, 1^[])]]
+1.1.1  [-v1_xboole_0(k1_integra2(k1_xboole_0, 1^[])), v3_membered(k1_xboole_0), v1_xreal_0(1^[]), v1_xboole_0(k1_xboole_0)]   (9)  substitution:[[_G6494, _G6582], [k1_xboole_0, 1^[]]]
+1.1.1.1  [-v3_membered(k1_xboole_0), k1_subset_1(k1_numbers)=k1_xboole_0, v3_membered(k1_subset_1(k1_numbers))]   (17)  substitution:[[_G3076, _G3027], [k1_xboole_0, k1_subset_1(k1_numbers)]]
+1.1.1.1.1  [- (k1_subset_1(k1_numbers)=k1_xboole_0)]   (5)  substitution:[[_G6068], [k1_numbers]]
+1.1.1.1.2  [-v3_membered(k1_subset_1(k1_numbers)), m1_subset_1(k1_subset_1(k1_numbers), k1_zfmisc_1(k1_numbers))]   (4)  substitution:[[_G5897], [k1_subset_1(k1_numbers)]]
+1.1.1.1.2.1  [-m1_subset_1(k1_subset_1(k1_numbers), k1_zfmisc_1(k1_numbers))]   (6)  substitution:[[_G6183], [k1_numbers]]
+1.1.1.2  [-v1_xreal_0(1^[]), m1_subset_1(1^[], k1_numbers)]   (3)  substitution:[[_G5740], [1^[]]]
+1.1.1.2.1  [-m1_subset_1(1^[], k1_numbers)]   (1)  
+1.1.1.3  [-v1_xboole_0(k1_xboole_0)]   (7)  
+------------------------------------------------------
+End of proof for t4_urysohn2

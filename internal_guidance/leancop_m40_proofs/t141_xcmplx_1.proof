@@ -1,0 +1,36 @@
+
+t141_xcmplx_1 is a Theorem
+Start of proof for t141_xcmplx_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xcmplx_0(1^[])]
+ (2)  [-v1_xcmplx_0(2^[])]
+ (3)  [k2_xcmplx_0(1^[], 2^[])=k4_xcmplx_0(k2_xcmplx_0(k4_xcmplx_0(1^[]), k4_xcmplx_0(2^[])))]
+ (4)  [v1_xcmplx_0(_G3727), -v1_xcmplx_0(k4_xcmplx_0(_G3727))]
+ (5)  [v1_xcmplx_0(_G3874), - (k4_xcmplx_0(k4_xcmplx_0(_G3874))=_G3874)]
+ (6)  [- (k2_xcmplx_0(k4_xcmplx_0(_G4054), k4_xcmplx_0(_G4115))=k4_xcmplx_0(k2_xcmplx_0(_G4054, _G4115))), v1_xcmplx_0(_G4054), v1_xcmplx_0(_G4115)]
+ (7)  [_G3407=_G3456, - (k4_xcmplx_0(_G3407)=k4_xcmplx_0(_G3456))]
+ (8)  [- (k2_xcmplx_0(_G2819, _G2954)=k2_xcmplx_0(_G2886, _G3023)), _G2819=_G2886, _G2954=_G3023]
+ (9)  [-v1_xcmplx_0(_G2569), _G2520=_G2569, v1_xcmplx_0(_G2520)]
+ (10)  [- (_G1747=_G1747)]
+ (11)  [_G1846=_G1891, - (_G1891=_G1846)]
+ (12)  [- (_G2079=_G2192), _G2079=_G2135, _G2135=_G2192]
+
+Connection Proof:
+-----------------
+1  [k2_xcmplx_0(1^[], 2^[])=k4_xcmplx_0(k2_xcmplx_0(k4_xcmplx_0(1^[]), k4_xcmplx_0(2^[])))]   (3)  
+1.1  [- (k2_xcmplx_0(1^[], 2^[])=k4_xcmplx_0(k2_xcmplx_0(k4_xcmplx_0(1^[]), k4_xcmplx_0(2^[])))), k2_xcmplx_0(1^[], 2^[])=k2_xcmplx_0(k4_xcmplx_0(k4_xcmplx_0(1^[])), k4_xcmplx_0(k4_xcmplx_0(2^[]))), k2_xcmplx_0(k4_xcmplx_0(k4_xcmplx_0(1^[])), k4_xcmplx_0(k4_xcmplx_0(2^[])))=k4_xcmplx_0(k2_xcmplx_0(k4_xcmplx_0(1^[]), k4_xcmplx_0(2^[])))]   (12)  substitution:[[_G2079, _G2192, _G2135], [k2_xcmplx_0(1^[], 2^[]), k4_xcmplx_0(k2_xcmplx_0(k4_xcmplx_0(1^[]), k4_xcmplx_0(2^[]))), k2_xcmplx_0(k4_xcmplx_0(k4_xcmplx_0(1^[])), k4_xcmplx_0(k4_xcmplx_0(2^[])))]]
+1.1.1  [- (k2_xcmplx_0(1^[], 2^[])=k2_xcmplx_0(k4_xcmplx_0(k4_xcmplx_0(1^[])), k4_xcmplx_0(k4_xcmplx_0(2^[])))), 1^[]=k4_xcmplx_0(k4_xcmplx_0(1^[])), 2^[]=k4_xcmplx_0(k4_xcmplx_0(2^[]))]   (8)  substitution:[[_G2819, _G2954, _G2886, _G3023], [1^[], 2^[], k4_xcmplx_0(k4_xcmplx_0(1^[])), k4_xcmplx_0(k4_xcmplx_0(2^[]))]]
+1.1.1.1  [- (1^[]=k4_xcmplx_0(k4_xcmplx_0(1^[]))), k4_xcmplx_0(k4_xcmplx_0(1^[]))=1^[]]   (11)  substitution:[[_G1891, _G1846], [1^[], k4_xcmplx_0(k4_xcmplx_0(1^[]))]]
+1.1.1.1.1  [- (k4_xcmplx_0(k4_xcmplx_0(1^[]))=1^[]), v1_xcmplx_0(1^[])]   (5)  substitution:[[_G3874], [1^[]]]
+1.1.1.1.1.1  [-v1_xcmplx_0(1^[])]   (1)  
+1.1.1.2  [- (2^[]=k4_xcmplx_0(k4_xcmplx_0(2^[]))), k4_xcmplx_0(k4_xcmplx_0(2^[]))=2^[]]   (11)  substitution:[[_G1891, _G1846], [2^[], k4_xcmplx_0(k4_xcmplx_0(2^[]))]]
+1.1.1.2.1  [- (k4_xcmplx_0(k4_xcmplx_0(2^[]))=2^[]), v1_xcmplx_0(2^[])]   (5)  substitution:[[_G3874], [2^[]]]
+1.1.1.2.1.1  [-v1_xcmplx_0(2^[])]   (2)  
+1.1.2  [- (k2_xcmplx_0(k4_xcmplx_0(k4_xcmplx_0(1^[])), k4_xcmplx_0(k4_xcmplx_0(2^[])))=k4_xcmplx_0(k2_xcmplx_0(k4_xcmplx_0(1^[]), k4_xcmplx_0(2^[])))), v1_xcmplx_0(k4_xcmplx_0(1^[])), v1_xcmplx_0(k4_xcmplx_0(2^[]))]   (6)  substitution:[[_G4054, _G4115], [k4_xcmplx_0(1^[]), k4_xcmplx_0(2^[])]]
+1.1.2.1  [-v1_xcmplx_0(k4_xcmplx_0(1^[])), v1_xcmplx_0(1^[])]   (4)  substitution:[[_G3727], [1^[]]]
+1.1.2.1.1  [-v1_xcmplx_0(1^[])]   (1)  
+1.1.2.2  [-v1_xcmplx_0(k4_xcmplx_0(2^[])), v1_xcmplx_0(2^[])]   (4)  substitution:[[_G3727], [2^[]]]
+1.1.2.2.1  [-v1_xcmplx_0(2^[])]   (2)  
+------------------------------------------------------
+End of proof for t141_xcmplx_1

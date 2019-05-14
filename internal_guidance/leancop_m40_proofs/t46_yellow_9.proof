@@ -1,0 +1,52 @@
+
+t46_yellow_9 is a Theorem
+Start of proof for t46_yellow_9
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-l1_orders_2(1^[])]
+ (2)  [-m1_yellow_9(2^[], 1^[])]
+ (3)  [-m1_yellow_9(3^[], 2^[])]
+ (4)  [m1_yellow_9(3^[], 1^[])]
+ (5)  [l1_orders_2(_G5604), l1_waybel_9(_G5705), m1_yellow_9(_G5705, _G5604), - (g1_orders_2(u1_struct_0(_G5705), u1_orders_2(_G5705))=g1_orders_2(u1_struct_0(_G5604), u1_orders_2(_G5604)))]
+ (6)  [l1_orders_2(_G5604), l1_waybel_9(_G5705), -m1_yellow_9(_G5705, _G5604), g1_orders_2(u1_struct_0(_G5705), u1_orders_2(_G5705))=g1_orders_2(u1_struct_0(_G5604), u1_orders_2(_G5604))]
+ (7)  [l1_waybel_9(_G6129), -l1_pre_topc(_G6129)]
+ (8)  [l1_waybel_9(_G6129), -l1_orders_2(_G6129)]
+ (9)  [l1_orders_2(_G6309), m1_yellow_9(_G6390, _G6309), -l1_waybel_9(_G6390)]
+ (10)  [- (g1_orders_2(_G4397, _G4532)=g1_orders_2(_G4464, _G4601)), _G4397=_G4464, _G4532=_G4601]
+ (11)  [_G4994=_G5043, - (u1_struct_0(_G4994)=u1_struct_0(_G5043))]
+ (12)  [_G5263=_G5312, - (u1_orders_2(_G5263)=u1_orders_2(_G5312))]
+ (13)  [- (_G2109=_G2109)]
+ (14)  [_G2208=_G2253, - (_G2253=_G2208)]
+ (15)  [- (_G2441=_G2554), _G2441=_G2497, _G2497=_G2554]
+ (16)  [-l1_pre_topc(_G2940), _G2891=_G2940, l1_pre_topc(_G2891)]
+ (17)  [-l1_waybel_9(_G3218), _G3169=_G3218, l1_waybel_9(_G3169)]
+ (18)  [-l1_orders_2(_G3496), _G3447=_G3496, l1_orders_2(_G3447)]
+ (19)  [-m1_yellow_9(_G3783, _G3920), m1_yellow_9(_G3716, _G3851), _G3716=_G3783, _G3851=_G3920]
+
+Connection Proof:
+-----------------
+1  [m1_yellow_9(3^[], 1^[])]   (4)  
+1.1  [-m1_yellow_9(3^[], 1^[]), l1_orders_2(1^[]), l1_waybel_9(3^[]), g1_orders_2(u1_struct_0(3^[]), u1_orders_2(3^[]))=g1_orders_2(u1_struct_0(1^[]), u1_orders_2(1^[]))]   (6)  substitution:[[_G5705, _G5604], [3^[], 1^[]]]
+1.1.1  [-l1_orders_2(1^[])]   (1)  
+1.1.2  [-l1_waybel_9(3^[]), l1_orders_2(2^[]), m1_yellow_9(3^[], 2^[])]   (9)  substitution:[[_G6390, _G6309], [3^[], 2^[]]]
+1.1.2.1  [-l1_orders_2(2^[]), l1_waybel_9(2^[])]   (8)  substitution:[[_G6129], [2^[]]]
+1.1.2.1.1  [-l1_waybel_9(2^[]), l1_orders_2(1^[]), m1_yellow_9(2^[], 1^[])]   (9)  substitution:[[_G6390, _G6309], [2^[], 1^[]]]
+1.1.2.1.1.1  [-l1_orders_2(1^[])]   (1)  
+1.1.2.1.1.2  [-m1_yellow_9(2^[], 1^[])]   (2)  
+1.1.2.2  [-m1_yellow_9(3^[], 2^[])]   (3)  
+1.1.3  [- (g1_orders_2(u1_struct_0(3^[]), u1_orders_2(3^[]))=g1_orders_2(u1_struct_0(1^[]), u1_orders_2(1^[]))), g1_orders_2(u1_struct_0(3^[]), u1_orders_2(3^[]))=g1_orders_2(u1_struct_0(2^[]), u1_orders_2(2^[])), g1_orders_2(u1_struct_0(2^[]), u1_orders_2(2^[]))=g1_orders_2(u1_struct_0(1^[]), u1_orders_2(1^[]))]   (15)  substitution:[[_G2441, _G2554, _G2497], [g1_orders_2(u1_struct_0(3^[]), u1_orders_2(3^[])), g1_orders_2(u1_struct_0(1^[]), u1_orders_2(1^[])), g1_orders_2(u1_struct_0(2^[]), u1_orders_2(2^[]))]]
+1.1.3.1  [- (g1_orders_2(u1_struct_0(3^[]), u1_orders_2(3^[]))=g1_orders_2(u1_struct_0(2^[]), u1_orders_2(2^[]))), l1_orders_2(2^[]), l1_waybel_9(3^[]), m1_yellow_9(3^[], 2^[])]   (5)  substitution:[[_G5705, _G5604], [3^[], 2^[]]]
+1.1.3.1.1  [-l1_orders_2(2^[]), l1_waybel_9(2^[])]   (8)  substitution:[[_G6129], [2^[]]]
+1.1.3.1.1.1  [-l1_waybel_9(2^[]), l1_orders_2(1^[]), m1_yellow_9(2^[], 1^[])]   (9)  substitution:[[_G6390, _G6309], [2^[], 1^[]]]
+1.1.3.1.1.1.1  [-l1_orders_2(1^[])]   (1)  
+1.1.3.1.1.1.2  [-m1_yellow_9(2^[], 1^[])]   (2)  
+1.1.3.1.2  [-l1_waybel_9(3^[])]   (lemmata:1.1)  
+1.1.3.1.3  [-m1_yellow_9(3^[], 2^[])]   (3)  
+1.1.3.2  [- (g1_orders_2(u1_struct_0(2^[]), u1_orders_2(2^[]))=g1_orders_2(u1_struct_0(1^[]), u1_orders_2(1^[]))), l1_orders_2(1^[]), l1_waybel_9(2^[]), m1_yellow_9(2^[], 1^[])]   (5)  substitution:[[_G5705, _G5604], [2^[], 1^[]]]
+1.1.3.2.1  [-l1_orders_2(1^[])]   (1)  
+1.1.3.2.2  [-l1_waybel_9(2^[]), l1_orders_2(1^[]), m1_yellow_9(2^[], 1^[])]   (9)  substitution:[[_G6390, _G6309], [2^[], 1^[]]]
+1.1.3.2.2.1  [-l1_orders_2(1^[])]   (1)  
+1.1.3.2.2.2  [-m1_yellow_9(2^[], 1^[])]   (2)  
+1.1.3.2.3  [-m1_yellow_9(2^[], 1^[])]   (2)  
+------------------------------------------------------
+End of proof for t46_yellow_9

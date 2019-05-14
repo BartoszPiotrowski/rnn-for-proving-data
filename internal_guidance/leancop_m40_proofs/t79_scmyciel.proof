@@ -1,0 +1,60 @@
+
+t79_scmyciel is a Theorem
+Start of proof for t79_scmyciel
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v4_scmyciel(1^[])]
+ (2)  [-v7_scmyciel(2^[], 1^[])]
+ (3)  [-m1_eqrel_1(2^[], k3_tarski(1^[]))]
+ (4)  [v10_scmyciel(2^[], k6_scmyciel(1^[])), m1_eqrel_1(2^[], k3_tarski(k6_scmyciel(1^[])))]
+ (5)  [v4_scmyciel(_G5685), -v4_scmyciel(k6_scmyciel(_G5685))]
+ (6)  [v4_scmyciel(_G5832), - (k6_scmyciel(k6_scmyciel(_G5832))=_G5832)]
+ (7)  [v4_scmyciel(_G6012), -v10_scmyciel(_G6114, _G6012), v7_scmyciel(_G6114, k6_scmyciel(_G6012)), m1_eqrel_1(_G6114, k3_tarski(k6_scmyciel(_G6012)))]
+ (8)  [v4_scmyciel(_G6012), -m1_eqrel_1(_G6114, k3_tarski(_G6012)), v7_scmyciel(_G6114, k6_scmyciel(_G6012)), m1_eqrel_1(_G6114, k3_tarski(k6_scmyciel(_G6012)))]
+ (9)  [_G5096=_G5145, - (k3_tarski(_G5096)=k3_tarski(_G5145))]
+ (10)  [_G5365=_G5414, - (k6_scmyciel(_G5365)=k6_scmyciel(_G5414))]
+ (11)  [- (_G2170=_G2170)]
+ (12)  [_G2269=_G2314, - (_G2314=_G2269)]
+ (13)  [- (_G2502=_G2615), _G2502=_G2558, _G2558=_G2615]
+ (14)  [-v4_scmyciel(_G3001), _G2952=_G3001, v4_scmyciel(_G2952)]
+ (15)  [-v7_scmyciel(_G3297, _G3434), v7_scmyciel(_G3230, _G3365), _G3230=_G3297, _G3365=_G3434]
+ (16)  [-v10_scmyciel(_G3894, _G4031), v10_scmyciel(_G3827, _G3962), _G3827=_G3894, _G3962=_G4031]
+ (17)  [-m1_eqrel_1(_G4482, _G4619), m1_eqrel_1(_G4415, _G4550), _G4415=_G4482, _G4550=_G4619]
+
+Connection Proof:
+-----------------
+1  [v10_scmyciel(2^[], k6_scmyciel(1^[])), m1_eqrel_1(2^[], k3_tarski(k6_scmyciel(1^[])))]   (4)  
+1.1  [-v10_scmyciel(2^[], k6_scmyciel(1^[])), v4_scmyciel(k6_scmyciel(1^[])), v7_scmyciel(2^[], k6_scmyciel(k6_scmyciel(1^[]))), m1_eqrel_1(2^[], k3_tarski(k6_scmyciel(k6_scmyciel(1^[]))))]   (7)  substitution:[[_G6114, _G6012], [2^[], k6_scmyciel(1^[])]]
+1.1.1  [-v4_scmyciel(k6_scmyciel(1^[])), v4_scmyciel(1^[])]   (5)  substitution:[[_G5685], [1^[]]]
+1.1.1.1  [-v4_scmyciel(1^[])]   (1)  
+1.1.2  [-v7_scmyciel(2^[], k6_scmyciel(k6_scmyciel(1^[]))), v7_scmyciel(2^[], 1^[]), 2^[]=2^[], 1^[]=k6_scmyciel(k6_scmyciel(1^[]))]   (15)  substitution:[[_G3297, _G3434, _G3230, _G3365], [2^[], k6_scmyciel(k6_scmyciel(1^[])), 2^[], 1^[]]]
+1.1.2.1  [-v7_scmyciel(2^[], 1^[])]   (2)  
+1.1.2.2  [- (2^[]=2^[])]   (11)  substitution:[[_G2170], [2^[]]]
+1.1.2.3  [- (1^[]=k6_scmyciel(k6_scmyciel(1^[]))), k6_scmyciel(k6_scmyciel(1^[]))=1^[]]   (12)  substitution:[[_G2314, _G2269], [1^[], k6_scmyciel(k6_scmyciel(1^[]))]]
+1.1.2.3.1  [- (k6_scmyciel(k6_scmyciel(1^[]))=1^[]), v4_scmyciel(1^[])]   (6)  substitution:[[_G5832], [1^[]]]
+1.1.2.3.1.1  [-v4_scmyciel(1^[])]   (1)  
+1.1.3  [-m1_eqrel_1(2^[], k3_tarski(k6_scmyciel(k6_scmyciel(1^[])))), m1_eqrel_1(2^[], k3_tarski(1^[])), 2^[]=2^[], k3_tarski(1^[])=k3_tarski(k6_scmyciel(k6_scmyciel(1^[])))]   (17)  substitution:[[_G4482, _G4619, _G4415, _G4550], [2^[], k3_tarski(k6_scmyciel(k6_scmyciel(1^[]))), 2^[], k3_tarski(1^[])]]
+1.1.3.1  [-m1_eqrel_1(2^[], k3_tarski(1^[]))]   (3)  
+1.1.3.2  [- (2^[]=2^[])]   (11)  substitution:[[_G2170], [2^[]]]
+1.1.3.3  [- (k3_tarski(1^[])=k3_tarski(k6_scmyciel(k6_scmyciel(1^[])))), 1^[]=k6_scmyciel(k6_scmyciel(1^[]))]   (9)  substitution:[[_G5096, _G5145], [1^[], k6_scmyciel(k6_scmyciel(1^[]))]]
+1.1.3.3.1  [- (1^[]=k6_scmyciel(k6_scmyciel(1^[]))), k6_scmyciel(k6_scmyciel(1^[]))=1^[]]   (12)  substitution:[[_G2314, _G2269], [1^[], k6_scmyciel(k6_scmyciel(1^[]))]]
+1.1.3.3.1.1  [- (k6_scmyciel(k6_scmyciel(1^[]))=1^[]), v4_scmyciel(1^[])]   (6)  substitution:[[_G5832], [1^[]]]
+1.1.3.3.1.1.1  [-v4_scmyciel(1^[])]   (1)  
+1.2  [-m1_eqrel_1(2^[], k3_tarski(k6_scmyciel(1^[]))), v4_scmyciel(k6_scmyciel(1^[])), v7_scmyciel(2^[], k6_scmyciel(k6_scmyciel(1^[]))), m1_eqrel_1(2^[], k3_tarski(k6_scmyciel(k6_scmyciel(1^[]))))]   (8)  substitution:[[_G6114, _G6012], [2^[], k6_scmyciel(1^[])]]
+1.2.1  [-v4_scmyciel(k6_scmyciel(1^[])), v4_scmyciel(1^[])]   (5)  substitution:[[_G5685], [1^[]]]
+1.2.1.1  [-v4_scmyciel(1^[])]   (1)  
+1.2.2  [-v7_scmyciel(2^[], k6_scmyciel(k6_scmyciel(1^[]))), v7_scmyciel(2^[], 1^[]), 2^[]=2^[], 1^[]=k6_scmyciel(k6_scmyciel(1^[]))]   (15)  substitution:[[_G3297, _G3434, _G3230, _G3365], [2^[], k6_scmyciel(k6_scmyciel(1^[])), 2^[], 1^[]]]
+1.2.2.1  [-v7_scmyciel(2^[], 1^[])]   (2)  
+1.2.2.2  [- (2^[]=2^[])]   (11)  substitution:[[_G2170], [2^[]]]
+1.2.2.3  [- (1^[]=k6_scmyciel(k6_scmyciel(1^[]))), k6_scmyciel(k6_scmyciel(1^[]))=1^[]]   (12)  substitution:[[_G2314, _G2269], [1^[], k6_scmyciel(k6_scmyciel(1^[]))]]
+1.2.2.3.1  [- (k6_scmyciel(k6_scmyciel(1^[]))=1^[]), v4_scmyciel(1^[])]   (6)  substitution:[[_G5832], [1^[]]]
+1.2.2.3.1.1  [-v4_scmyciel(1^[])]   (1)  
+1.2.3  [-m1_eqrel_1(2^[], k3_tarski(k6_scmyciel(k6_scmyciel(1^[])))), m1_eqrel_1(2^[], k3_tarski(1^[])), 2^[]=2^[], k3_tarski(1^[])=k3_tarski(k6_scmyciel(k6_scmyciel(1^[])))]   (17)  substitution:[[_G4482, _G4619, _G4415, _G4550], [2^[], k3_tarski(k6_scmyciel(k6_scmyciel(1^[]))), 2^[], k3_tarski(1^[])]]
+1.2.3.1  [-m1_eqrel_1(2^[], k3_tarski(1^[]))]   (3)  
+1.2.3.2  [- (2^[]=2^[])]   (11)  substitution:[[_G2170], [2^[]]]
+1.2.3.3  [- (k3_tarski(1^[])=k3_tarski(k6_scmyciel(k6_scmyciel(1^[])))), 1^[]=k6_scmyciel(k6_scmyciel(1^[]))]   (9)  substitution:[[_G5096, _G5145], [1^[], k6_scmyciel(k6_scmyciel(1^[]))]]
+1.2.3.3.1  [- (1^[]=k6_scmyciel(k6_scmyciel(1^[]))), k6_scmyciel(k6_scmyciel(1^[]))=1^[]]   (12)  substitution:[[_G2314, _G2269], [1^[], k6_scmyciel(k6_scmyciel(1^[]))]]
+1.2.3.3.1.1  [- (k6_scmyciel(k6_scmyciel(1^[]))=1^[]), v4_scmyciel(1^[])]   (6)  substitution:[[_G5832], [1^[]]]
+1.2.3.3.1.1.1  [-v4_scmyciel(1^[])]   (1)  
+------------------------------------------------------
+End of proof for t79_scmyciel

@@ -1,0 +1,37 @@
+
+l28_zfmisc_1 is a Theorem
+Start of proof for l28_zfmisc_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-4^[], k4_xboole_0(k1_tarski(1^[]), 2^[])=k1_xboole_0]
+ (2)  [-4^[], -r2_hidden(1^[], 2^[])]
+ (3)  [-3^[], r2_hidden(1^[], 2^[])]
+ (4)  [-3^[], - (k4_xboole_0(k1_tarski(1^[]), 2^[])=k1_xboole_0)]
+ (5)  [3^[], 4^[]]
+ (6)  [r1_tarski(k1_tarski(_G4385), _G4432), -r2_hidden(_G4385, _G4432)]
+ (7)  [-r1_tarski(k1_tarski(_G4385), _G4432), r2_hidden(_G4385, _G4432)]
+ (8)  [k4_xboole_0(_G4636, _G4684)=k1_xboole_0, -r1_tarski(_G4636, _G4684)]
+ (9)  [- (k4_xboole_0(_G4636, _G4684)=k1_xboole_0), r1_tarski(_G4636, _G4684)]
+ (10)  [_G4065=_G4114, - (k1_tarski(_G4065)=k1_tarski(_G4114))]
+ (11)  [- (k4_xboole_0(_G3477, _G3612)=k4_xboole_0(_G3544, _G3681)), _G3477=_G3544, _G3612=_G3681]
+ (12)  [- (_G1468=_G1468)]
+ (13)  [_G1567=_G1612, - (_G1612=_G1567)]
+ (14)  [- (_G1800=_G1913), _G1800=_G1856, _G1856=_G1913]
+ (15)  [-r1_tarski(_G2317, _G2454), r1_tarski(_G2250, _G2385), _G2250=_G2317, _G2385=_G2454]
+ (16)  [-r2_hidden(_G2905, _G3042), r2_hidden(_G2838, _G2973), _G2838=_G2905, _G2973=_G3042]
+
+Connection Proof:
+-----------------
+1  [3^[], 4^[]]   (5)  
+1.1  [-3^[], r2_hidden(1^[], 2^[])]   (3)  
+1.1.1  [-r2_hidden(1^[], 2^[]), r1_tarski(k1_tarski(1^[]), 2^[])]   (6)  substitution:[[_G4385, _G4432], [1^[], 2^[]]]
+1.1.1.1  [-r1_tarski(k1_tarski(1^[]), 2^[]), k4_xboole_0(k1_tarski(1^[]), 2^[])=k1_xboole_0]   (8)  substitution:[[_G4636, _G4684], [k1_tarski(1^[]), 2^[]]]
+1.1.1.1.1  [- (k4_xboole_0(k1_tarski(1^[]), 2^[])=k1_xboole_0), -3^[]]   (4)  
+1.1.1.1.1.1  [3^[]]   (reduction:1)  
+1.2  [-4^[], k4_xboole_0(k1_tarski(1^[]), 2^[])=k1_xboole_0]   (1)  
+1.2.1  [- (k4_xboole_0(k1_tarski(1^[]), 2^[])=k1_xboole_0), r1_tarski(k1_tarski(1^[]), 2^[])]   (9)  substitution:[[_G4636, _G4684], [k1_tarski(1^[]), 2^[]]]
+1.2.1.1  [-r1_tarski(k1_tarski(1^[]), 2^[]), r2_hidden(1^[], 2^[])]   (7)  substitution:[[_G4385, _G4432], [1^[], 2^[]]]
+1.2.1.1.1  [-r2_hidden(1^[], 2^[]), -4^[]]   (2)  
+1.2.1.1.1.1  [4^[]]   (reduction:1)  
+------------------------------------------------------
+End of proof for l28_zfmisc_1

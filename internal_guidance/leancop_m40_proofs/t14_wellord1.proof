@@ -1,0 +1,53 @@
+
+t14_wellord1 is a Theorem
+Start of proof for t14_wellord1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(5^[])]
+ (2)  [r1_tarski(k1_wellord1(k2_wellord1(5^[], 3^[]), 4^[]), k1_wellord1(5^[], 4^[]))]
+ (3)  [-r1_tarski(_G8377, _G8433), -r2_hidden(1^[_G8433, _G8377], _G8377)]
+ (4)  [-r1_tarski(_G8377, _G8433), r2_hidden(1^[_G8433, _G8377], _G8433)]
+ (5)  [r1_tarski(_G8377, _G8433), r2_hidden(_G8547, _G8377), -r2_hidden(_G8547, _G8433)]
+ (6)  [v1_relat_1(_G9418), - (k2_wellord1(_G9418, _G9503)=k3_xboole_0(_G9418, k2_zfmisc_1(_G9503, _G9503)))]
+ (7)  [v1_relat_1(_G9763), -v1_relat_1(k2_wellord1(_G9763, _G9809))]
+ (8)  [v1_relat_1(_G10126), r2_hidden(_G9987, k1_wellord1(_G10126, _G10056)), _G9987=_G10056]
+ (9)  [v1_relat_1(_G10126), r2_hidden(_G9987, k1_wellord1(_G10126, _G10056)), -r2_hidden(k4_tarski(_G9987, _G10056), _G10126)]
+ (10)  [v1_relat_1(_G10126), -r2_hidden(_G9987, k1_wellord1(_G10126, _G10056)), - (_G9987=_G10056), r2_hidden(k4_tarski(_G9987, _G10056), _G10126)]
+ (11)  [_G8920=k3_xboole_0(_G8779, _G8849), r2_hidden(_G9088, _G8920), -r2_hidden(_G9088, _G8779)]
+ (12)  [_G8920=k3_xboole_0(_G8779, _G8849), r2_hidden(_G9088, _G8920), -r2_hidden(_G9088, _G8849)]
+ (13)  [_G8920=k3_xboole_0(_G8779, _G8849), -r2_hidden(_G9088, _G8920), r2_hidden(_G9088, _G8779), r2_hidden(_G9088, _G8849)]
+ (14)  [- (_G8920=k3_xboole_0(_G8779, _G8849)), -r2_hidden(2^[_G8920, _G8849, _G8779], _G8920), -r2_hidden(2^[_G8920, _G8849, _G8779], _G8779)]
+ (15)  [- (_G8920=k3_xboole_0(_G8779, _G8849)), -r2_hidden(2^[_G8920, _G8849, _G8779], _G8920), -r2_hidden(2^[_G8920, _G8849, _G8779], _G8849)]
+ (16)  [- (_G8920=k3_xboole_0(_G8779, _G8849)), r2_hidden(2^[_G8920, _G8849, _G8779], _G8920), r2_hidden(2^[_G8920, _G8849, _G8779], _G8779), r2_hidden(2^[_G8920, _G8849, _G8779], _G8849)]
+ (17)  [- (k3_xboole_0(_G5296, _G5431)=k3_xboole_0(_G5363, _G5500)), _G5296=_G5363, _G5431=_G5500]
+ (18)  [- (k2_zfmisc_1(_G5893, _G6028)=k2_zfmisc_1(_G5960, _G6097)), _G5893=_G5960, _G6028=_G6097]
+ (19)  [- (k4_tarski(_G6490, _G6625)=k4_tarski(_G6557, _G6694)), _G6490=_G6557, _G6625=_G6694]
+ (20)  [- (k2_wellord1(_G7087, _G7222)=k2_wellord1(_G7154, _G7291)), _G7087=_G7154, _G7222=_G7291]
+ (21)  [- (k1_wellord1(_G7675, _G7810)=k1_wellord1(_G7742, _G7879)), _G7675=_G7742, _G7810=_G7879]
+ (22)  [- (_G2988=_G2988)]
+ (23)  [_G3087=_G3132, - (_G3132=_G3087)]
+ (24)  [- (_G3320=_G3433), _G3320=_G3376, _G3376=_G3433]
+ (25)  [-r2_hidden(_G3837, _G3974), r2_hidden(_G3770, _G3905), _G3770=_G3837, _G3905=_G3974]
+ (26)  [-v1_relat_1(_G4416), _G4367=_G4416, v1_relat_1(_G4367)]
+ (27)  [-r1_tarski(_G4703, _G4840), r1_tarski(_G4636, _G4771), _G4636=_G4703, _G4771=_G4840]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k1_wellord1(k2_wellord1(5^[], 3^[]), 4^[]), k1_wellord1(5^[], 4^[]))]   (2)  
+1.1  [-r1_tarski(k1_wellord1(k2_wellord1(5^[], 3^[]), 4^[]), k1_wellord1(5^[], 4^[])), -r2_hidden(1^[k1_wellord1(5^[], 4^[]), k1_wellord1(k2_wellord1(5^[], 3^[]), 4^[])], k1_wellord1(k2_wellord1(5^[], 3^[]), 4^[]))]   (3)  substitution:[[_G8377, _G8433], [k1_wellord1(k2_wellord1(5^[], 3^[]), 4^[]), k1_wellord1(5^[], 4^[])]]
+1.1.1  [r2_hidden(1^[k1_wellord1(5^[], 4^[]), k1_wellord1(k2_wellord1(5^[], 3^[]), 4^[])], k1_wellord1(k2_wellord1(5^[], 3^[]), 4^[])), v1_relat_1(k2_wellord1(5^[], 3^[])), 1^[k1_wellord1(5^[], 4^[]), k1_wellord1(k2_wellord1(5^[], 3^[]), 4^[])]=4^[]]   (8)  substitution:[[_G9987, _G10126, _G10056], [1^[k1_wellord1(5^[], 4^[]), k1_wellord1(k2_wellord1(5^[], 3^[]), 4^[])], k2_wellord1(5^[], 3^[]), 4^[]]]
+1.1.1.1  [-v1_relat_1(k2_wellord1(5^[], 3^[])), v1_relat_1(5^[])]   (7)  substitution:[[_G9763, _G9809], [5^[], 3^[]]]
+1.1.1.1.1  [-v1_relat_1(5^[])]   (1)  
+1.1.1.2  [- (1^[k1_wellord1(5^[], 4^[]), k1_wellord1(k2_wellord1(5^[], 3^[]), 4^[])]=4^[]), v1_relat_1(5^[]), -r2_hidden(1^[k1_wellord1(5^[], 4^[]), k1_wellord1(k2_wellord1(5^[], 3^[]), 4^[])], k1_wellord1(5^[], 4^[])), r2_hidden(k4_tarski(1^[k1_wellord1(5^[], 4^[]), k1_wellord1(k2_wellord1(5^[], 3^[]), 4^[])], 4^[]), 5^[])]   (10)  substitution:[[_G9987, _G10056, _G10126], [1^[k1_wellord1(5^[], 4^[]), k1_wellord1(k2_wellord1(5^[], 3^[]), 4^[])], 4^[], 5^[]]]
+1.1.1.2.1  [-v1_relat_1(5^[])]   (1)  
+1.1.1.2.2  [r2_hidden(1^[k1_wellord1(5^[], 4^[]), k1_wellord1(k2_wellord1(5^[], 3^[]), 4^[])], k1_wellord1(5^[], 4^[])), -r1_tarski(k1_wellord1(k2_wellord1(5^[], 3^[]), 4^[]), k1_wellord1(5^[], 4^[]))]   (4)  substitution:[[_G8433, _G8377], [k1_wellord1(5^[], 4^[]), k1_wellord1(k2_wellord1(5^[], 3^[]), 4^[])]]
+1.1.1.2.2.1  [r1_tarski(k1_wellord1(k2_wellord1(5^[], 3^[]), 4^[]), k1_wellord1(5^[], 4^[]))]   (2)  
+1.1.1.2.3  [-r2_hidden(k4_tarski(1^[k1_wellord1(5^[], 4^[]), k1_wellord1(k2_wellord1(5^[], 3^[]), 4^[])], 4^[]), 5^[]), k2_wellord1(5^[], 3^[])=k3_xboole_0(5^[], k2_zfmisc_1(3^[], 3^[])), r2_hidden(k4_tarski(1^[k1_wellord1(5^[], 4^[]), k1_wellord1(k2_wellord1(5^[], 3^[]), 4^[])], 4^[]), k2_wellord1(5^[], 3^[]))]   (11)  substitution:[[_G9088, _G8779, _G8920, _G8849], [k4_tarski(1^[k1_wellord1(5^[], 4^[]), k1_wellord1(k2_wellord1(5^[], 3^[]), 4^[])], 4^[]), 5^[], k2_wellord1(5^[], 3^[]), k2_zfmisc_1(3^[], 3^[])]]
+1.1.1.2.3.1  [- (k2_wellord1(5^[], 3^[])=k3_xboole_0(5^[], k2_zfmisc_1(3^[], 3^[]))), v1_relat_1(5^[])]   (6)  substitution:[[_G9418, _G9503], [5^[], 3^[]]]
+1.1.1.2.3.1.1  [-v1_relat_1(5^[])]   (1)  
+1.1.1.2.3.2  [-r2_hidden(k4_tarski(1^[k1_wellord1(5^[], 4^[]), k1_wellord1(k2_wellord1(5^[], 3^[]), 4^[])], 4^[]), k2_wellord1(5^[], 3^[])), v1_relat_1(k2_wellord1(5^[], 3^[])), r2_hidden(1^[k1_wellord1(5^[], 4^[]), k1_wellord1(k2_wellord1(5^[], 3^[]), 4^[])], k1_wellord1(k2_wellord1(5^[], 3^[]), 4^[]))]   (9)  substitution:[[_G9987, _G10056, _G10126], [1^[k1_wellord1(5^[], 4^[]), k1_wellord1(k2_wellord1(5^[], 3^[]), 4^[])], 4^[], k2_wellord1(5^[], 3^[])]]
+1.1.1.2.3.2.1  [-v1_relat_1(k2_wellord1(5^[], 3^[])), v1_relat_1(5^[])]   (7)  substitution:[[_G9763, _G9809], [5^[], 3^[]]]
+1.1.1.2.3.2.1.1  [-v1_relat_1(5^[])]   (1)  
+1.1.1.2.3.2.2  [-r2_hidden(1^[k1_wellord1(5^[], 4^[]), k1_wellord1(k2_wellord1(5^[], 3^[]), 4^[])], k1_wellord1(k2_wellord1(5^[], 3^[]), 4^[]))]   (reduction:1.1)  
+------------------------------------------------------
+End of proof for t14_wellord1

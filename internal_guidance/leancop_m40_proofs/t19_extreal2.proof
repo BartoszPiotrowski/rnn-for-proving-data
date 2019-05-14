@@ -1,0 +1,64 @@
+
+t19_extreal2 is a Theorem
+Start of proof for t19_extreal2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k3_extreal1(k1_supinf_1)=k1_supinf_1, k3_extreal1(k2_supinf_1)=k1_supinf_1]
+ (2)  [-m1_subset_1(k1_supinf_1, k7_numbers)]
+ (3)  [m1_subset_1(_G4834, k7_numbers), v3_xxreal_0(k3_extreal1(_G4834))]
+ (4)  [-v3_xxreal_0(k2_xxreal_0)]
+ (5)  [- (k1_supinf_1=k1_xxreal_0)]
+ (6)  [- (k2_supinf_1=k2_xxreal_0)]
+ (7)  [m1_subset_1(_G5169, k7_numbers), - (k2_supinf_2(_G5169)=k2_xxreal_3(_G5169))]
+ (8)  [m1_subset_1(_G5384, k7_numbers), - (k3_extreal1(_G5384)=k3_extreal1(k2_supinf_2(_G5384)))]
+ (9)  [- (k2_xxreal_3(k1_xxreal_0)=k2_xxreal_0)]
+ (10)  [m1_subset_1(_G5615, k7_numbers), - (k3_extreal1(_G5615)=_G5615), - (k3_extreal1(_G5615)=k2_supinf_2(_G5615))]
+ (11)  [_G3889=_G3938, - (k2_supinf_2(_G3889)=k2_supinf_2(_G3938))]
+ (12)  [_G4167=_G4216, - (k2_xxreal_3(_G4167)=k2_xxreal_3(_G4216))]
+ (13)  [_G4436=_G4485, - (k3_extreal1(_G4436)=k3_extreal1(_G4485))]
+ (14)  [- (_G2199=_G2199)]
+ (15)  [_G2298=_G2343, - (_G2343=_G2298)]
+ (16)  [- (_G2531=_G2644), _G2531=_G2587, _G2587=_G2644]
+ (17)  [-v3_xxreal_0(_G3030), _G2981=_G3030, v3_xxreal_0(_G2981)]
+ (18)  [-m1_subset_1(_G3317, _G3454), m1_subset_1(_G3250, _G3385), _G3250=_G3317, _G3385=_G3454]
+
+Connection Proof:
+-----------------
+1  [k3_extreal1(k1_supinf_1)=k1_supinf_1, k3_extreal1(k2_supinf_1)=k1_supinf_1]   (1)  
+1.1  [- (k3_extreal1(k1_supinf_1)=k1_supinf_1), m1_subset_1(k1_supinf_1, k7_numbers), - (k3_extreal1(k1_supinf_1)=k2_supinf_2(k1_supinf_1))]   (10)  substitution:[[_G5615], [k1_supinf_1]]
+1.1.1  [-m1_subset_1(k1_supinf_1, k7_numbers)]   (2)  
+1.1.2  [k3_extreal1(k1_supinf_1)=k2_supinf_2(k1_supinf_1), - (k3_extreal1(k1_supinf_1)=k2_xxreal_0), k2_supinf_2(k1_supinf_1)=k2_xxreal_0]   (16)  substitution:[[_G2531, _G2587, _G2644], [k3_extreal1(k1_supinf_1), k2_supinf_2(k1_supinf_1), k2_xxreal_0]]
+1.1.2.1  [k3_extreal1(k1_supinf_1)=k2_xxreal_0, - (k2_xxreal_0=k3_extreal1(k1_supinf_1))]   (15)  substitution:[[_G2298, _G2343], [k3_extreal1(k1_supinf_1), k2_xxreal_0]]
+1.1.2.1.1  [k2_xxreal_0=k3_extreal1(k1_supinf_1), -v3_xxreal_0(k3_extreal1(k1_supinf_1)), v3_xxreal_0(k2_xxreal_0)]   (17)  substitution:[[_G2981, _G3030], [k2_xxreal_0, k3_extreal1(k1_supinf_1)]]
+1.1.2.1.1.1  [v3_xxreal_0(k3_extreal1(k1_supinf_1)), m1_subset_1(k1_supinf_1, k7_numbers)]   (3)  substitution:[[_G4834], [k1_supinf_1]]
+1.1.2.1.1.1.1  [-m1_subset_1(k1_supinf_1, k7_numbers)]   (2)  
+1.1.2.1.1.2  [-v3_xxreal_0(k2_xxreal_0)]   (4)  
+1.1.2.2  [- (k2_supinf_2(k1_supinf_1)=k2_xxreal_0), k2_supinf_2(k1_supinf_1)=k2_xxreal_3(k1_supinf_1), k2_xxreal_3(k1_supinf_1)=k2_xxreal_0]   (16)  substitution:[[_G2531, _G2644, _G2587], [k2_supinf_2(k1_supinf_1), k2_xxreal_0, k2_xxreal_3(k1_supinf_1)]]
+1.1.2.2.1  [- (k2_supinf_2(k1_supinf_1)=k2_xxreal_3(k1_supinf_1)), m1_subset_1(k1_supinf_1, k7_numbers)]   (7)  substitution:[[_G5169], [k1_supinf_1]]
+1.1.2.2.1.1  [-m1_subset_1(k1_supinf_1, k7_numbers)]   (2)  
+1.1.2.2.2  [- (k2_xxreal_3(k1_supinf_1)=k2_xxreal_0), k2_xxreal_3(k1_supinf_1)=k2_xxreal_3(k1_xxreal_0), k2_xxreal_3(k1_xxreal_0)=k2_xxreal_0]   (16)  substitution:[[_G2531, _G2644, _G2587], [k2_xxreal_3(k1_supinf_1), k2_xxreal_0, k2_xxreal_3(k1_xxreal_0)]]
+1.1.2.2.2.1  [- (k2_xxreal_3(k1_supinf_1)=k2_xxreal_3(k1_xxreal_0)), k1_supinf_1=k1_xxreal_0]   (12)  substitution:[[_G4167, _G4216], [k1_supinf_1, k1_xxreal_0]]
+1.1.2.2.2.1.1  [- (k1_supinf_1=k1_xxreal_0)]   (5)  
+1.1.2.2.2.2  [- (k2_xxreal_3(k1_xxreal_0)=k2_xxreal_0)]   (9)  
+1.2  [- (k3_extreal1(k2_supinf_1)=k1_supinf_1), k3_extreal1(k2_supinf_1)=k3_extreal1(k2_xxreal_3(k1_supinf_1)), k3_extreal1(k2_xxreal_3(k1_supinf_1))=k1_supinf_1]   (16)  substitution:[[_G2531, _G2644, _G2587], [k3_extreal1(k2_supinf_1), k1_supinf_1, k3_extreal1(k2_xxreal_3(k1_supinf_1))]]
+1.2.1  [- (k3_extreal1(k2_supinf_1)=k3_extreal1(k2_xxreal_3(k1_supinf_1))), k2_supinf_1=k2_xxreal_3(k1_supinf_1)]   (13)  substitution:[[_G4436, _G4485], [k2_supinf_1, k2_xxreal_3(k1_supinf_1)]]
+1.2.1.1  [- (k2_supinf_1=k2_xxreal_3(k1_supinf_1)), k2_supinf_1=k2_xxreal_3(k1_xxreal_0), k2_xxreal_3(k1_xxreal_0)=k2_xxreal_3(k1_supinf_1)]   (16)  substitution:[[_G2531, _G2644, _G2587], [k2_supinf_1, k2_xxreal_3(k1_supinf_1), k2_xxreal_3(k1_xxreal_0)]]
+1.2.1.1.1  [- (k2_supinf_1=k2_xxreal_3(k1_xxreal_0)), k2_supinf_1=k2_xxreal_0, k2_xxreal_0=k2_xxreal_3(k1_xxreal_0)]   (16)  substitution:[[_G2531, _G2644, _G2587], [k2_supinf_1, k2_xxreal_3(k1_xxreal_0), k2_xxreal_0]]
+1.2.1.1.1.1  [- (k2_supinf_1=k2_xxreal_0)]   (6)  
+1.2.1.1.1.2  [- (k2_xxreal_0=k2_xxreal_3(k1_xxreal_0)), k2_xxreal_3(k1_xxreal_0)=k2_xxreal_0]   (15)  substitution:[[_G2343, _G2298], [k2_xxreal_0, k2_xxreal_3(k1_xxreal_0)]]
+1.2.1.1.1.2.1  [- (k2_xxreal_3(k1_xxreal_0)=k2_xxreal_0)]   (9)  
+1.2.1.1.2  [- (k2_xxreal_3(k1_xxreal_0)=k2_xxreal_3(k1_supinf_1)), k1_xxreal_0=k1_supinf_1]   (12)  substitution:[[_G4167, _G4216], [k1_xxreal_0, k1_supinf_1]]
+1.2.1.1.2.1  [- (k1_xxreal_0=k1_supinf_1), k1_supinf_1=k1_xxreal_0]   (15)  substitution:[[_G2343, _G2298], [k1_xxreal_0, k1_supinf_1]]
+1.2.1.1.2.1.1  [- (k1_supinf_1=k1_xxreal_0)]   (5)  
+1.2.2  [- (k3_extreal1(k2_xxreal_3(k1_supinf_1))=k1_supinf_1), k3_extreal1(k2_xxreal_3(k1_supinf_1))=k3_extreal1(k2_supinf_2(k1_supinf_1)), k3_extreal1(k2_supinf_2(k1_supinf_1))=k1_supinf_1]   (16)  substitution:[[_G2531, _G2644, _G2587], [k3_extreal1(k2_xxreal_3(k1_supinf_1)), k1_supinf_1, k3_extreal1(k2_supinf_2(k1_supinf_1))]]
+1.2.2.1  [- (k3_extreal1(k2_xxreal_3(k1_supinf_1))=k3_extreal1(k2_supinf_2(k1_supinf_1))), k2_xxreal_3(k1_supinf_1)=k2_supinf_2(k1_supinf_1)]   (13)  substitution:[[_G4436, _G4485], [k2_xxreal_3(k1_supinf_1), k2_supinf_2(k1_supinf_1)]]
+1.2.2.1.1  [- (k2_xxreal_3(k1_supinf_1)=k2_supinf_2(k1_supinf_1)), k2_supinf_2(k1_supinf_1)=k2_xxreal_3(k1_supinf_1)]   (15)  substitution:[[_G2343, _G2298], [k2_xxreal_3(k1_supinf_1), k2_supinf_2(k1_supinf_1)]]
+1.2.2.1.1.1  [- (k2_supinf_2(k1_supinf_1)=k2_xxreal_3(k1_supinf_1)), m1_subset_1(k1_supinf_1, k7_numbers)]   (7)  substitution:[[_G5169], [k1_supinf_1]]
+1.2.2.1.1.1.1  [-m1_subset_1(k1_supinf_1, k7_numbers)]   (2)  
+1.2.2.2  [- (k3_extreal1(k2_supinf_2(k1_supinf_1))=k1_supinf_1), k3_extreal1(k2_supinf_2(k1_supinf_1))=k3_extreal1(k1_supinf_1), k3_extreal1(k1_supinf_1)=k1_supinf_1]   (16)  substitution:[[_G2531, _G2644, _G2587], [k3_extreal1(k2_supinf_2(k1_supinf_1)), k1_supinf_1, k3_extreal1(k1_supinf_1)]]
+1.2.2.2.1  [- (k3_extreal1(k2_supinf_2(k1_supinf_1))=k3_extreal1(k1_supinf_1)), k3_extreal1(k1_supinf_1)=k3_extreal1(k2_supinf_2(k1_supinf_1))]   (15)  substitution:[[_G2343, _G2298], [k3_extreal1(k2_supinf_2(k1_supinf_1)), k3_extreal1(k1_supinf_1)]]
+1.2.2.2.1.1  [- (k3_extreal1(k1_supinf_1)=k3_extreal1(k2_supinf_2(k1_supinf_1))), m1_subset_1(k1_supinf_1, k7_numbers)]   (8)  substitution:[[_G5384], [k1_supinf_1]]
+1.2.2.2.1.1.1  [-m1_subset_1(k1_supinf_1, k7_numbers)]   (2)  
+1.2.2.2.2  [- (k3_extreal1(k1_supinf_1)=k1_supinf_1)]   (lemmata:1)  
+------------------------------------------------------
+End of proof for t19_extreal2

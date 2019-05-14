@@ -1,0 +1,27 @@
+
+t20_membered is a Theorem
+Start of proof for t20_membered
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v2_membered(4^[])]
+ (2)  [-r1_tarski(3^[], 4^[])]
+ (3)  [v2_membered(3^[])]
+ (4)  [-v2_membered(_G778), -r2_hidden(1^[_G778], _G778)]
+ (5)  [-v2_membered(_G778), v1_xxreal_0(1^[_G778])]
+ (6)  [v2_membered(_G778), r2_hidden(_G859, _G778), -v1_xxreal_0(_G859)]
+ (7)  [-r1_tarski(_G1042, _G1098), -r2_hidden(2^[_G1098, _G1042], _G1042)]
+ (8)  [-r1_tarski(_G1042, _G1098), r2_hidden(2^[_G1098, _G1042], _G1098)]
+ (9)  [r1_tarski(_G1042, _G1098), r2_hidden(_G1212, _G1042), -r2_hidden(_G1212, _G1098)]
+
+Connection Proof:
+-----------------
+1  [v2_membered(3^[])]   (3)  
+1.1  [-v2_membered(3^[]), -r2_hidden(1^[3^[]], 3^[])]   (4)  substitution:[[_G778], [3^[]]]
+1.1.1  [r2_hidden(1^[3^[]], 3^[]), r1_tarski(3^[], 4^[]), -r2_hidden(1^[3^[]], 4^[])]   (9)  substitution:[[_G1212, _G1042, _G1098], [1^[3^[]], 3^[], 4^[]]]
+1.1.1.1  [-r1_tarski(3^[], 4^[])]   (2)  
+1.1.1.2  [r2_hidden(1^[3^[]], 4^[]), v2_membered(4^[]), -v1_xxreal_0(1^[3^[]])]   (6)  substitution:[[_G859, _G778], [1^[3^[]], 4^[]]]
+1.1.1.2.1  [-v2_membered(4^[])]   (1)  
+1.1.1.2.2  [v1_xxreal_0(1^[3^[]]), -v2_membered(3^[])]   (5)  substitution:[[_G778], [3^[]]]
+1.1.1.2.2.1  [v2_membered(3^[])]   (3)  
+------------------------------------------------------
+End of proof for t20_membered

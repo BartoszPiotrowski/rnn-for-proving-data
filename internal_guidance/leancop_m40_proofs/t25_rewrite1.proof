@@ -1,0 +1,34 @@
+
+t25_rewrite1 is a Theorem
+Start of proof for t25_rewrite1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(1^[])]
+ (2)  [-r1_rewrite1(1^[], 2^[], 3^[])]
+ (3)  [r2_rewrite1(1^[], 2^[], 3^[]), r2_rewrite1(1^[], 3^[], 2^[])]
+ (4)  [v1_relat_1(_G1283), r2_rewrite1(_G1283, _G1377, _G1435), -r1_rewrite1(k2_xboole_0(_G1283, k2_relat_1(_G1283)), _G1377, _G1435)]
+ (5)  [v1_relat_1(_G1283), -r2_rewrite1(_G1283, _G1377, _G1435), r1_rewrite1(k2_xboole_0(_G1283, k2_relat_1(_G1283)), _G1377, _G1435)]
+ (6)  [v1_relat_1(_G1813), -v1_relat_1(k2_relat_1(_G1813))]
+ (7)  [-v1_relat_1(k2_xboole_0(_G1960, _G2011)), v1_relat_1(_G1960), v1_relat_1(_G2011)]
+ (8)  [v1_relat_1(_G2256), r2_rewrite1(_G2256, _G2345, _G2398), -r2_rewrite1(_G2256, _G2398, _G2345)]
+ (9)  [-r1_tarski(_G3407, k2_xboole_0(_G3407, _G3449))]
+ (10)  [v1_relat_1(_G2718), v1_relat_1(_G2823), r1_tarski(_G2718, _G2823), r1_rewrite1(_G2718, _G2981, _G3040), -r1_rewrite1(_G2823, _G2981, _G3040)]
+
+Connection Proof:
+-----------------
+1  [r2_rewrite1(1^[], 2^[], 3^[]), r2_rewrite1(1^[], 3^[], 2^[])]   (3)  
+1.1  [-r2_rewrite1(1^[], 2^[], 3^[]), v1_relat_1(1^[]), r1_rewrite1(k2_xboole_0(1^[], k2_relat_1(1^[])), 2^[], 3^[])]   (5)  substitution:[[_G1283, _G1377, _G1435], [1^[], 2^[], 3^[]]]
+1.1.1  [-v1_relat_1(1^[])]   (1)  
+1.1.2  [-r1_rewrite1(k2_xboole_0(1^[], k2_relat_1(1^[])), 2^[], 3^[]), v1_relat_1(1^[]), v1_relat_1(k2_xboole_0(1^[], k2_relat_1(1^[]))), r1_tarski(1^[], k2_xboole_0(1^[], k2_relat_1(1^[]))), r1_rewrite1(1^[], 2^[], 3^[])]   (10)  substitution:[[_G2823, _G2981, _G3040, _G2718], [k2_xboole_0(1^[], k2_relat_1(1^[])), 2^[], 3^[], 1^[]]]
+1.1.2.1  [-v1_relat_1(1^[])]   (1)  
+1.1.2.2  [-v1_relat_1(k2_xboole_0(1^[], k2_relat_1(1^[]))), v1_relat_1(1^[]), v1_relat_1(k2_relat_1(1^[]))]   (7)  substitution:[[_G1960, _G2011], [1^[], k2_relat_1(1^[])]]
+1.1.2.2.1  [-v1_relat_1(1^[])]   (1)  
+1.1.2.2.2  [-v1_relat_1(k2_relat_1(1^[])), v1_relat_1(1^[])]   (6)  substitution:[[_G1813], [1^[]]]
+1.1.2.2.2.1  [-v1_relat_1(1^[])]   (1)  
+1.1.2.3  [-r1_tarski(1^[], k2_xboole_0(1^[], k2_relat_1(1^[])))]   (9)  substitution:[[_G3407, _G3449], [1^[], k2_relat_1(1^[])]]
+1.1.2.4  [-r1_rewrite1(1^[], 2^[], 3^[])]   (2)  
+1.2  [-r2_rewrite1(1^[], 3^[], 2^[]), v1_relat_1(1^[]), r2_rewrite1(1^[], 2^[], 3^[])]   (8)  substitution:[[_G2256, _G2398, _G2345], [1^[], 3^[], 2^[]]]
+1.2.1  [-v1_relat_1(1^[])]   (1)  
+1.2.2  [-r2_rewrite1(1^[], 2^[], 3^[])]   (lemmata:1)  
+------------------------------------------------------
+End of proof for t25_rewrite1

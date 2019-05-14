@@ -1,0 +1,29 @@
+
+l49_subset_1 is a Theorem
+Start of proof for l49_subset_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(4^[], k1_zfmisc_1(3^[]))]
+ (2)  [-r2_hidden(2^[], 4^[])]
+ (3)  [m1_subset_1(2^[], 3^[])]
+ (4)  [m1_subset_1(_G1787, k1_zfmisc_1(_G1729)), r2_hidden(_G1917, _G1787), -r2_hidden(_G1917, _G1729)]
+ (5)  [v1_xboole_0(_G1510), r2_hidden(_G1588, _G1510)]
+ (6)  [-v1_xboole_0(_G1510), -r2_hidden(1^[_G1510], _G1510)]
+ (7)  [-v1_xboole_0(_G971), m1_subset_1(_G1039, _G971), -r2_hidden(_G1039, _G971)]
+ (8)  [-v1_xboole_0(_G971), -m1_subset_1(_G1039, _G971), r2_hidden(_G1039, _G971)]
+ (9)  [v1_xboole_0(_G971), m1_subset_1(_G1039, _G971), -v1_xboole_0(_G1039)]
+ (10)  [v1_xboole_0(_G971), -m1_subset_1(_G1039, _G971), v1_xboole_0(_G1039)]
+
+Connection Proof:
+-----------------
+1  [v1_xboole_0(3^[]), r2_hidden(2^[], 3^[])]   (5)  substitution:[[_G1510, _G1588], [3^[], 2^[]]]
+1.1  [-v1_xboole_0(3^[]), -m1_subset_1(2^[], 3^[]), r2_hidden(2^[], 3^[])]   (8)  substitution:[[_G971, _G1039], [3^[], 2^[]]]
+1.1.1  [m1_subset_1(2^[], 3^[])]   (3)  
+1.1.2  [-r2_hidden(2^[], 3^[]), m1_subset_1(4^[], k1_zfmisc_1(3^[])), r2_hidden(2^[], 4^[])]   (4)  substitution:[[_G1917, _G1729, _G1787], [2^[], 3^[], 4^[]]]
+1.1.2.1  [-m1_subset_1(4^[], k1_zfmisc_1(3^[]))]   (1)  
+1.1.2.2  [-r2_hidden(2^[], 4^[])]   (2)  
+1.2  [-r2_hidden(2^[], 3^[]), m1_subset_1(4^[], k1_zfmisc_1(3^[])), r2_hidden(2^[], 4^[])]   (4)  substitution:[[_G1917, _G1729, _G1787], [2^[], 3^[], 4^[]]]
+1.2.1  [-m1_subset_1(4^[], k1_zfmisc_1(3^[]))]   (1)  
+1.2.2  [-r2_hidden(2^[], 4^[])]   (2)  
+------------------------------------------------------
+End of proof for l49_subset_1

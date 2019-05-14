@@ -1,0 +1,48 @@
+
+t16_borsuk_5 is a Theorem
+Start of proof for t16_borsuk_5
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], k1_zfmisc_1(u1_struct_0(k3_topmetr)))]
+ (2)  [-v1_xreal_0(2^[])]
+ (3)  [-v1_xreal_0(3^[])]
+ (4)  [- (1^[]=k2_rcomp_1(2^[], 3^[]))]
+ (5)  [2^[]=3^[]]
+ (6)  [k2_pre_topc(k3_topmetr, 1^[])=k1_rcomp_1(2^[], 3^[])]
+ (7)  [- (u1_struct_0(k3_topmetr)=k1_numbers)]
+ (8)  [m1_subset_1(_G7076, k1_zfmisc_1(k1_numbers)), m1_subset_1(_G7209, k1_zfmisc_1(u1_struct_0(k3_topmetr))), _G7076=_G7209, - (k6_measure6(_G7076)=k2_pre_topc(k3_topmetr, _G7209))]
+ (9)  [v1_xreal_0(_G7588), v1_xreal_0(_G7685), - (_G7588=_G7685), - (k6_measure6(k2_rcomp_1(_G7588, _G7685))=k1_rcomp_1(_G7588, _G7685))]
+ (10)  [v1_xreal_0(_G7588), v1_xreal_0(_G7685), _G7588=_G7685, k6_measure6(k2_rcomp_1(_G7588, _G7685))=k1_rcomp_1(_G7588, _G7685)]
+ (11)  [- (_G2573=_G2573)]
+ (12)  [_G2672=_G2717, - (_G2717=_G2672)]
+ (13)  [- (_G2905=_G3018), _G2905=_G2961, _G2961=_G3018]
+ (14)  [-v1_xreal_0(_G3992), _G3943=_G3992, v1_xreal_0(_G3943)]
+ (15)  [-m1_subset_1(_G3422, _G3559), m1_subset_1(_G3355, _G3490), _G3355=_G3422, _G3490=_G3559]
+ (16)  [_G4263=_G4312, - (k6_measure6(_G4263)=k6_measure6(_G4312))]
+ (17)  [_G4541=_G4590, - (k1_zfmisc_1(_G4541)=k1_zfmisc_1(_G4590))]
+ (18)  [_G4819=_G4868, - (u1_struct_0(_G4819)=u1_struct_0(_G4868))]
+ (19)  [- (k2_rcomp_1(_G5097, _G5232)=k2_rcomp_1(_G5164, _G5301)), _G5097=_G5164, _G5232=_G5301]
+ (20)  [- (k2_pre_topc(_G5694, _G5829)=k2_pre_topc(_G5761, _G5898)), _G5694=_G5761, _G5829=_G5898]
+ (21)  [- (k1_rcomp_1(_G6282, _G6417)=k1_rcomp_1(_G6349, _G6486)), _G6282=_G6349, _G6417=_G6486]
+
+Connection Proof:
+-----------------
+1  [2^[]=3^[]]   (5)  
+1.1  [- (2^[]=3^[]), v1_xreal_0(2^[]), v1_xreal_0(3^[]), - (k6_measure6(k2_rcomp_1(2^[], 3^[]))=k1_rcomp_1(2^[], 3^[]))]   (9)  substitution:[[_G7588, _G7685], [2^[], 3^[]]]
+1.1.1  [-v1_xreal_0(2^[])]   (2)  
+1.1.2  [-v1_xreal_0(3^[])]   (3)  
+1.1.3  [k6_measure6(k2_rcomp_1(2^[], 3^[]))=k1_rcomp_1(2^[], 3^[]), - (k1_rcomp_1(2^[], 3^[])=k6_measure6(k2_rcomp_1(2^[], 3^[])))]   (12)  substitution:[[_G2672, _G2717], [k6_measure6(k2_rcomp_1(2^[], 3^[])), k1_rcomp_1(2^[], 3^[])]]
+1.1.3.1  [k1_rcomp_1(2^[], 3^[])=k6_measure6(k2_rcomp_1(2^[], 3^[])), - (k1_rcomp_1(2^[], 3^[])=k2_pre_topc(k3_topmetr, 1^[])), k6_measure6(k2_rcomp_1(2^[], 3^[]))=k2_pre_topc(k3_topmetr, 1^[])]   (13)  substitution:[[_G2905, _G2961, _G3018], [k1_rcomp_1(2^[], 3^[]), k6_measure6(k2_rcomp_1(2^[], 3^[])), k2_pre_topc(k3_topmetr, 1^[])]]
+1.1.3.1.1  [k1_rcomp_1(2^[], 3^[])=k2_pre_topc(k3_topmetr, 1^[]), - (k2_pre_topc(k3_topmetr, 1^[])=k1_rcomp_1(2^[], 3^[]))]   (12)  substitution:[[_G2672, _G2717], [k1_rcomp_1(2^[], 3^[]), k2_pre_topc(k3_topmetr, 1^[])]]
+1.1.3.1.1.1  [k2_pre_topc(k3_topmetr, 1^[])=k1_rcomp_1(2^[], 3^[])]   (6)  
+1.1.3.1.2  [- (k6_measure6(k2_rcomp_1(2^[], 3^[]))=k2_pre_topc(k3_topmetr, 1^[])), m1_subset_1(k2_rcomp_1(2^[], 3^[]), k1_zfmisc_1(k1_numbers)), m1_subset_1(1^[], k1_zfmisc_1(u1_struct_0(k3_topmetr))), k2_rcomp_1(2^[], 3^[])=1^[]]   (8)  substitution:[[_G7076, _G7209], [k2_rcomp_1(2^[], 3^[]), 1^[]]]
+1.1.3.1.2.1  [-m1_subset_1(k2_rcomp_1(2^[], 3^[]), k1_zfmisc_1(k1_numbers)), m1_subset_1(1^[], k1_zfmisc_1(u1_struct_0(k3_topmetr))), 1^[]=k2_rcomp_1(2^[], 3^[]), k1_zfmisc_1(u1_struct_0(k3_topmetr))=k1_zfmisc_1(k1_numbers)]   (15)  substitution:[[_G3422, _G3559, _G3355, _G3490], [k2_rcomp_1(2^[], 3^[]), k1_zfmisc_1(k1_numbers), 1^[], k1_zfmisc_1(u1_struct_0(k3_topmetr))]]
+1.1.3.1.2.1.1  [-m1_subset_1(1^[], k1_zfmisc_1(u1_struct_0(k3_topmetr)))]   (1)  
+1.1.3.1.2.1.2  [- (1^[]=k2_rcomp_1(2^[], 3^[]))]   (4)  
+1.1.3.1.2.1.3  [- (k1_zfmisc_1(u1_struct_0(k3_topmetr))=k1_zfmisc_1(k1_numbers)), u1_struct_0(k3_topmetr)=k1_numbers]   (17)  substitution:[[_G4541, _G4590], [u1_struct_0(k3_topmetr), k1_numbers]]
+1.1.3.1.2.1.3.1  [- (u1_struct_0(k3_topmetr)=k1_numbers)]   (7)  
+1.1.3.1.2.2  [-m1_subset_1(1^[], k1_zfmisc_1(u1_struct_0(k3_topmetr)))]   (1)  
+1.1.3.1.2.3  [- (k2_rcomp_1(2^[], 3^[])=1^[]), 1^[]=k2_rcomp_1(2^[], 3^[])]   (12)  substitution:[[_G2717, _G2672], [k2_rcomp_1(2^[], 3^[]), 1^[]]]
+1.1.3.1.2.3.1  [- (1^[]=k2_rcomp_1(2^[], 3^[]))]   (4)  
+------------------------------------------------------
+End of proof for t16_borsuk_5

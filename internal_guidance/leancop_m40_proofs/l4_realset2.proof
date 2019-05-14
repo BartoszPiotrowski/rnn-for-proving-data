@@ -1,0 +1,28 @@
+
+l4_realset2 is a Theorem
+Start of proof for l4_realset2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [r2_hidden(k6_numbers, np__2)]
+ (2)  [- (np__2=k2_tarski(k6_numbers, np__1))]
+ (3)  [- (k6_numbers=k1_xboole_0)]
+ (4)  [_G3399=k2_tarski(_G3258, _G3328), -r2_hidden(_G3567, _G3399), _G3567=_G3258]
+ (5)  [_G3399=k2_tarski(_G3258, _G3328), -r2_hidden(_G3567, _G3399), _G3567=_G3328]
+ (6)  [_G3399=k2_tarski(_G3258, _G3328), r2_hidden(_G3567, _G3399), - (_G3567=_G3258), - (_G3567=_G3328)]
+ (7)  [- (_G3399=k2_tarski(_G3258, _G3328)), r2_hidden(1^[_G3399, _G3328, _G3258], _G3399), 1^[_G3399, _G3328, _G3258]=_G3258]
+ (8)  [- (_G3399=k2_tarski(_G3258, _G3328)), r2_hidden(1^[_G3399, _G3328, _G3258], _G3399), 1^[_G3399, _G3328, _G3258]=_G3328]
+ (9)  [- (_G3399=k2_tarski(_G3258, _G3328)), -r2_hidden(1^[_G3399, _G3328, _G3258], _G3399), - (1^[_G3399, _G3328, _G3258]=_G3258), - (1^[_G3399, _G3328, _G3258]=_G3328)]
+ (10)  [- (k2_tarski(_G2640, _G2775)=k2_tarski(_G2707, _G2844)), _G2640=_G2707, _G2775=_G2844]
+ (11)  [-r2_hidden(_G2098, _G2235), r2_hidden(_G2031, _G2166), _G2031=_G2098, _G2166=_G2235]
+ (12)  [- (_G1258=_G1258)]
+ (13)  [_G1357=_G1402, - (_G1402=_G1357)]
+ (14)  [- (_G1590=_G1703), _G1590=_G1646, _G1646=_G1703]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(k6_numbers, np__2)]   (1)  
+1.1  [-r2_hidden(k6_numbers, np__2), np__2=k2_tarski(k6_numbers, np__1), k6_numbers=k6_numbers]   (4)  substitution:[[_G3567, _G3399, _G3258, _G3328], [k6_numbers, np__2, k6_numbers, np__1]]
+1.1.1  [- (np__2=k2_tarski(k6_numbers, np__1))]   (2)  
+1.1.2  [- (k6_numbers=k6_numbers)]   (12)  substitution:[[_G1258], [k6_numbers]]
+------------------------------------------------------
+End of proof for l4_realset2

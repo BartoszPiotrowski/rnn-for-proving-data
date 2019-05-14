@@ -1,0 +1,30 @@
+
+t2_kolmog01 is a Theorem
+Start of proof for t2_kolmog01
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], k1_numbers)]
+ (2)  [- (k3_xcmplx_0(1^[], 1^[])=1^[])]
+ (3)  [1^[]=k6_numbers]
+ (4)  [1^[]=np__1]
+ (5)  [m1_subset_1(_G3864, k1_numbers), -v1_xcmplx_0(_G3864)]
+ (6)  [v1_xcmplx_0(_G4012), v1_xcmplx_0(_G4108), k3_xcmplx_0(_G4108, _G4012)=_G4012, - (_G4012=k6_numbers), - (_G4108=np__1)]
+ (7)  [- (k3_xcmplx_0(_G3246, _G3381)=k3_xcmplx_0(_G3313, _G3450)), _G3246=_G3313, _G3381=_G3450]
+ (8)  [- (_G1565=_G1565)]
+ (9)  [_G1664=_G1709, - (_G1709=_G1664)]
+ (10)  [- (_G1897=_G2010), _G1897=_G1953, _G1953=_G2010]
+ (11)  [-v1_xcmplx_0(_G2396), _G2347=_G2396, v1_xcmplx_0(_G2347)]
+ (12)  [-m1_subset_1(_G2683, _G2820), m1_subset_1(_G2616, _G2751), _G2616=_G2683, _G2751=_G2820]
+
+Connection Proof:
+-----------------
+1  [1^[]=k6_numbers]   (3)  
+1.1  [- (1^[]=k6_numbers), v1_xcmplx_0(1^[]), v1_xcmplx_0(1^[]), k3_xcmplx_0(1^[], 1^[])=1^[], - (1^[]=np__1)]   (6)  substitution:[[_G4012, _G4108], [1^[], 1^[]]]
+1.1.1  [-v1_xcmplx_0(1^[]), m1_subset_1(1^[], k1_numbers)]   (5)  substitution:[[_G3864], [1^[]]]
+1.1.1.1  [-m1_subset_1(1^[], k1_numbers)]   (1)  
+1.1.2  [-v1_xcmplx_0(1^[]), m1_subset_1(1^[], k1_numbers)]   (5)  substitution:[[_G3864], [1^[]]]
+1.1.2.1  [-m1_subset_1(1^[], k1_numbers)]   (1)  
+1.1.3  [- (k3_xcmplx_0(1^[], 1^[])=1^[])]   (2)  
+1.1.4  [1^[]=np__1]   (4)  
+------------------------------------------------------
+End of proof for t2_kolmog01

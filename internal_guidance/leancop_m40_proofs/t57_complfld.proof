@@ -1,0 +1,32 @@
+
+t57_complfld is a Theorem
+Start of proof for t57_complfld
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k17_complex1(k4_struct_0(k1_complfld))=k6_numbers]
+ (2)  [- (k5_complex1=k1_xboole_0)]
+ (3)  [- (k6_numbers=k1_xboole_0)]
+ (4)  [- (k17_complex1(k6_numbers)=k6_numbers)]
+ (5)  [- (k4_struct_0(k1_complfld)=k5_complex1)]
+ (6)  [_G1772=_G1821, - (k17_complex1(_G1772)=k17_complex1(_G1821))]
+ (7)  [_G2041=_G2090, - (k4_struct_0(_G2041)=k4_struct_0(_G2090))]
+ (8)  [- (_G990=_G990)]
+ (9)  [_G1089=_G1134, - (_G1134=_G1089)]
+ (10)  [- (_G1322=_G1435), _G1322=_G1378, _G1378=_G1435]
+
+Connection Proof:
+-----------------
+1  [k17_complex1(k4_struct_0(k1_complfld))=k6_numbers]   (1)  
+1.1  [- (k17_complex1(k4_struct_0(k1_complfld))=k6_numbers), k17_complex1(k4_struct_0(k1_complfld))=k17_complex1(k1_xboole_0), k17_complex1(k1_xboole_0)=k6_numbers]   (10)  substitution:[[_G1322, _G1435, _G1378], [k17_complex1(k4_struct_0(k1_complfld)), k6_numbers, k17_complex1(k1_xboole_0)]]
+1.1.1  [- (k17_complex1(k4_struct_0(k1_complfld))=k17_complex1(k1_xboole_0)), k4_struct_0(k1_complfld)=k1_xboole_0]   (6)  substitution:[[_G1772, _G1821], [k4_struct_0(k1_complfld), k1_xboole_0]]
+1.1.1.1  [- (k4_struct_0(k1_complfld)=k1_xboole_0), k4_struct_0(k1_complfld)=k5_complex1, k5_complex1=k1_xboole_0]   (10)  substitution:[[_G1322, _G1435, _G1378], [k4_struct_0(k1_complfld), k1_xboole_0, k5_complex1]]
+1.1.1.1.1  [- (k4_struct_0(k1_complfld)=k5_complex1)]   (5)  
+1.1.1.1.2  [- (k5_complex1=k1_xboole_0)]   (2)  
+1.1.2  [- (k17_complex1(k1_xboole_0)=k6_numbers), k6_numbers=k17_complex1(k1_xboole_0)]   (9)  substitution:[[_G1134, _G1089], [k17_complex1(k1_xboole_0), k6_numbers]]
+1.1.2.1  [- (k6_numbers=k17_complex1(k1_xboole_0)), k6_numbers=k17_complex1(k6_numbers), k17_complex1(k6_numbers)=k17_complex1(k1_xboole_0)]   (10)  substitution:[[_G1322, _G1435, _G1378], [k6_numbers, k17_complex1(k1_xboole_0), k17_complex1(k6_numbers)]]
+1.1.2.1.1  [- (k6_numbers=k17_complex1(k6_numbers)), k17_complex1(k6_numbers)=k6_numbers]   (9)  substitution:[[_G1134, _G1089], [k6_numbers, k17_complex1(k6_numbers)]]
+1.1.2.1.1.1  [- (k17_complex1(k6_numbers)=k6_numbers)]   (4)  
+1.1.2.1.2  [- (k17_complex1(k6_numbers)=k17_complex1(k1_xboole_0)), k6_numbers=k1_xboole_0]   (6)  substitution:[[_G1772, _G1821], [k6_numbers, k1_xboole_0]]
+1.1.2.1.2.1  [- (k6_numbers=k1_xboole_0)]   (3)  
+------------------------------------------------------
+End of proof for t57_complfld

@@ -1,0 +1,86 @@
+
+t30_osalg_1 is a Theorem
+Start of proof for t30_osalg_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-5^[], r1_osalg_1(1^[], 2^[], 3^[])]
+ (2)  [-5^[], -r2_hidden(3^[], k6_eqrel_1(u4_struct_0(1^[]), u4_struct_0(1^[]), u1_osalg_1(1^[]), 2^[]))]
+ (3)  [-4^[], r2_hidden(3^[], k6_eqrel_1(u4_struct_0(1^[]), u4_struct_0(1^[]), u1_osalg_1(1^[]), 2^[]))]
+ (4)  [-4^[], -r1_osalg_1(1^[], 2^[], 3^[])]
+ (5)  [v2_struct_0(1^[])]
+ (6)  [v11_struct_0(1^[])]
+ (7)  [-v4_osalg_1(1^[])]
+ (8)  [-v5_osalg_1(1^[])]
+ (9)  [-l3_osalg_1(1^[])]
+ (10)  [-m1_subset_1(2^[], u4_struct_0(1^[]))]
+ (11)  [-m1_subset_1(3^[], u4_struct_0(1^[]))]
+ (12)  [4^[], 5^[]]
+ (13)  [l1_osalg_1(_G1628), -v11_struct_0(_G1628), -v2_struct_0(_G1628), m1_subset_1(_G1885, u4_struct_0(_G1628)), m1_subset_1(_G2029, u4_struct_0(_G1628)), r1_osalg_1(_G1628, _G1885, _G2029), -r2_hidden(k4_tarski(_G1885, _G2029), u1_osalg_1(_G1628))]
+ (14)  [l1_osalg_1(_G1628), -v11_struct_0(_G1628), -v2_struct_0(_G1628), m1_subset_1(_G1885, u4_struct_0(_G1628)), m1_subset_1(_G2029, u4_struct_0(_G1628)), -r1_osalg_1(_G1628, _G1885, _G2029), r2_hidden(k4_tarski(_G1885, _G2029), u1_osalg_1(_G1628))]
+ (15)  [l3_osalg_1(_G2484), -l1_osalg_1(_G2484)]
+ (16)  [l3_osalg_1(_G2484), -l2_osalg_1(_G2484)]
+ (17)  [l1_osalg_1(_G2673), -v3_relat_2(u1_osalg_1(_G2673))]
+ (18)  [l1_osalg_1(_G2673), -v8_relat_2(u1_osalg_1(_G2673))]
+ (19)  [l1_osalg_1(_G2673), -v1_partfun1(u1_osalg_1(_G2673), u4_struct_0(_G2673))]
+ (20)  [l1_osalg_1(_G2673), -m1_subset_1(u1_osalg_1(_G2673), k1_zfmisc_1(k2_zfmisc_1(u4_struct_0(_G2673), u4_struct_0(_G2673))))]
+ (21)  [-r1_osalg_1(_G3200, _G3375, _G3287), r1_osalg_1(_G3200, _G3287, _G3375), m1_subset_1(_G3375, u4_struct_0(_G3200)), m1_subset_1(_G3287, u4_struct_0(_G3200)), -v2_struct_0(_G3200), -v11_struct_0(_G3200), l1_osalg_1(_G3200)]
+ (22)  [m1_subset_1(_G4329, k1_zfmisc_1(k2_zfmisc_1(_G4071, _G4071))), v1_partfun1(_G4329, _G4071), v3_relat_2(_G4329), r2_hidden(_G4156, k6_eqrel_1(_G4071, _G4071, _G4329, _G4242)), -r2_hidden(k4_tarski(_G4156, _G4242), _G4329)]
+ (23)  [m1_subset_1(_G4329, k1_zfmisc_1(k2_zfmisc_1(_G4071, _G4071))), v1_partfun1(_G4329, _G4071), v3_relat_2(_G4329), -r2_hidden(_G4156, k6_eqrel_1(_G4071, _G4071, _G4329, _G4242)), r2_hidden(k4_tarski(_G4156, _G4242), _G4329)]
+
+Connection Proof:
+-----------------
+1  [4^[], 5^[]]   (12)  
+1.1  [-4^[], r2_hidden(3^[], k6_eqrel_1(u4_struct_0(1^[]), u4_struct_0(1^[]), u1_osalg_1(1^[]), 2^[]))]   (3)  
+1.1.1  [-r2_hidden(3^[], k6_eqrel_1(u4_struct_0(1^[]), u4_struct_0(1^[]), u1_osalg_1(1^[]), 2^[])), m1_subset_1(u1_osalg_1(1^[]), k1_zfmisc_1(k2_zfmisc_1(u4_struct_0(1^[]), u4_struct_0(1^[])))), v1_partfun1(u1_osalg_1(1^[]), u4_struct_0(1^[])), v3_relat_2(u1_osalg_1(1^[])), r2_hidden(k4_tarski(3^[], 2^[]), u1_osalg_1(1^[]))]   (23)  substitution:[[_G4156, _G4071, _G4329, _G4242], [3^[], u4_struct_0(1^[]), u1_osalg_1(1^[]), 2^[]]]
+1.1.1.1  [-m1_subset_1(u1_osalg_1(1^[]), k1_zfmisc_1(k2_zfmisc_1(u4_struct_0(1^[]), u4_struct_0(1^[])))), l1_osalg_1(1^[])]   (20)  substitution:[[_G2673], [1^[]]]
+1.1.1.1.1  [-l1_osalg_1(1^[]), l3_osalg_1(1^[])]   (15)  substitution:[[_G2484], [1^[]]]
+1.1.1.1.1.1  [-l3_osalg_1(1^[])]   (9)  
+1.1.1.2  [-v1_partfun1(u1_osalg_1(1^[]), u4_struct_0(1^[])), l1_osalg_1(1^[])]   (19)  substitution:[[_G2673], [1^[]]]
+1.1.1.2.1  [-l1_osalg_1(1^[]), l3_osalg_1(1^[])]   (15)  substitution:[[_G2484], [1^[]]]
+1.1.1.2.1.1  [-l3_osalg_1(1^[])]   (9)  
+1.1.1.3  [-v3_relat_2(u1_osalg_1(1^[])), l1_osalg_1(1^[])]   (17)  substitution:[[_G2673], [1^[]]]
+1.1.1.3.1  [-l1_osalg_1(1^[]), l3_osalg_1(1^[])]   (15)  substitution:[[_G2484], [1^[]]]
+1.1.1.3.1.1  [-l3_osalg_1(1^[])]   (9)  
+1.1.1.4  [-r2_hidden(k4_tarski(3^[], 2^[]), u1_osalg_1(1^[])), l1_osalg_1(1^[]), -v11_struct_0(1^[]), -v2_struct_0(1^[]), m1_subset_1(3^[], u4_struct_0(1^[])), m1_subset_1(2^[], u4_struct_0(1^[])), r1_osalg_1(1^[], 3^[], 2^[])]   (13)  substitution:[[_G1885, _G2029, _G1628], [3^[], 2^[], 1^[]]]
+1.1.1.4.1  [-l1_osalg_1(1^[]), l3_osalg_1(1^[])]   (15)  substitution:[[_G2484], [1^[]]]
+1.1.1.4.1.1  [-l3_osalg_1(1^[])]   (9)  
+1.1.1.4.2  [v11_struct_0(1^[])]   (6)  
+1.1.1.4.3  [v2_struct_0(1^[])]   (5)  
+1.1.1.4.4  [-m1_subset_1(3^[], u4_struct_0(1^[]))]   (11)  
+1.1.1.4.5  [-m1_subset_1(2^[], u4_struct_0(1^[]))]   (10)  
+1.1.1.4.6  [-r1_osalg_1(1^[], 3^[], 2^[]), r1_osalg_1(1^[], 2^[], 3^[]), m1_subset_1(3^[], u4_struct_0(1^[])), m1_subset_1(2^[], u4_struct_0(1^[])), -v2_struct_0(1^[]), -v11_struct_0(1^[]), l1_osalg_1(1^[])]   (21)  substitution:[[_G3200, _G3375, _G3287], [1^[], 3^[], 2^[]]]
+1.1.1.4.6.1  [-r1_osalg_1(1^[], 2^[], 3^[]), -4^[]]   (4)  
+1.1.1.4.6.1.1  [4^[]]   (reduction:1)  
+1.1.1.4.6.2  [-m1_subset_1(3^[], u4_struct_0(1^[]))]   (11)  
+1.1.1.4.6.3  [-m1_subset_1(2^[], u4_struct_0(1^[]))]   (10)  
+1.1.1.4.6.4  [v2_struct_0(1^[])]   (5)  
+1.1.1.4.6.5  [v11_struct_0(1^[])]   (6)  
+1.1.1.4.6.6  [-l1_osalg_1(1^[])]   (lemmata:1.1.1.4)  
+1.2  [-5^[], -r2_hidden(3^[], k6_eqrel_1(u4_struct_0(1^[]), u4_struct_0(1^[]), u1_osalg_1(1^[]), 2^[]))]   (2)  
+1.2.1  [r2_hidden(3^[], k6_eqrel_1(u4_struct_0(1^[]), u4_struct_0(1^[]), u1_osalg_1(1^[]), 2^[])), m1_subset_1(u1_osalg_1(1^[]), k1_zfmisc_1(k2_zfmisc_1(u4_struct_0(1^[]), u4_struct_0(1^[])))), v1_partfun1(u1_osalg_1(1^[]), u4_struct_0(1^[])), v3_relat_2(u1_osalg_1(1^[])), -r2_hidden(k4_tarski(3^[], 2^[]), u1_osalg_1(1^[]))]   (22)  substitution:[[_G4156, _G4071, _G4329, _G4242], [3^[], u4_struct_0(1^[]), u1_osalg_1(1^[]), 2^[]]]
+1.2.1.1  [-m1_subset_1(u1_osalg_1(1^[]), k1_zfmisc_1(k2_zfmisc_1(u4_struct_0(1^[]), u4_struct_0(1^[])))), l1_osalg_1(1^[])]   (20)  substitution:[[_G2673], [1^[]]]
+1.2.1.1.1  [-l1_osalg_1(1^[]), l3_osalg_1(1^[])]   (15)  substitution:[[_G2484], [1^[]]]
+1.2.1.1.1.1  [-l3_osalg_1(1^[])]   (9)  
+1.2.1.2  [-v1_partfun1(u1_osalg_1(1^[]), u4_struct_0(1^[])), l1_osalg_1(1^[])]   (19)  substitution:[[_G2673], [1^[]]]
+1.2.1.2.1  [-l1_osalg_1(1^[]), l3_osalg_1(1^[])]   (15)  substitution:[[_G2484], [1^[]]]
+1.2.1.2.1.1  [-l3_osalg_1(1^[])]   (9)  
+1.2.1.3  [-v3_relat_2(u1_osalg_1(1^[])), l1_osalg_1(1^[])]   (17)  substitution:[[_G2673], [1^[]]]
+1.2.1.3.1  [-l1_osalg_1(1^[]), l3_osalg_1(1^[])]   (15)  substitution:[[_G2484], [1^[]]]
+1.2.1.3.1.1  [-l3_osalg_1(1^[])]   (9)  
+1.2.1.4  [r2_hidden(k4_tarski(3^[], 2^[]), u1_osalg_1(1^[])), l1_osalg_1(1^[]), -v11_struct_0(1^[]), -v2_struct_0(1^[]), m1_subset_1(3^[], u4_struct_0(1^[])), m1_subset_1(2^[], u4_struct_0(1^[])), -r1_osalg_1(1^[], 3^[], 2^[])]   (14)  substitution:[[_G1885, _G2029, _G1628], [3^[], 2^[], 1^[]]]
+1.2.1.4.1  [-l1_osalg_1(1^[]), l3_osalg_1(1^[])]   (15)  substitution:[[_G2484], [1^[]]]
+1.2.1.4.1.1  [-l3_osalg_1(1^[])]   (9)  
+1.2.1.4.2  [v11_struct_0(1^[])]   (6)  
+1.2.1.4.3  [v2_struct_0(1^[])]   (5)  
+1.2.1.4.4  [-m1_subset_1(3^[], u4_struct_0(1^[]))]   (11)  
+1.2.1.4.5  [-m1_subset_1(2^[], u4_struct_0(1^[]))]   (10)  
+1.2.1.4.6  [r1_osalg_1(1^[], 3^[], 2^[]), -r1_osalg_1(1^[], 2^[], 3^[]), m1_subset_1(2^[], u4_struct_0(1^[])), m1_subset_1(3^[], u4_struct_0(1^[])), -v2_struct_0(1^[]), -v11_struct_0(1^[]), l1_osalg_1(1^[])]   (21)  substitution:[[_G3200, _G3287, _G3375], [1^[], 3^[], 2^[]]]
+1.2.1.4.6.1  [r1_osalg_1(1^[], 2^[], 3^[]), -5^[]]   (1)  
+1.2.1.4.6.1.1  [5^[]]   (reduction:1)  
+1.2.1.4.6.2  [-m1_subset_1(2^[], u4_struct_0(1^[]))]   (10)  
+1.2.1.4.6.3  [-m1_subset_1(3^[], u4_struct_0(1^[]))]   (11)  
+1.2.1.4.6.4  [v2_struct_0(1^[])]   (5)  
+1.2.1.4.6.5  [v11_struct_0(1^[])]   (6)  
+1.2.1.4.6.6  [-l1_osalg_1(1^[])]   (lemmata:1.2.1.4)  
+------------------------------------------------------
+End of proof for t30_osalg_1

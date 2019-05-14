@@ -1,0 +1,42 @@
+
+t44_classes1 is a Theorem
+Start of proof for t44_classes1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-5^[], r2_hidden(1^[], k4_classes1(3^[])), r2_hidden(2^[], k4_classes1(3^[]))]
+ (2)  [-5^[], -r2_hidden(k2_tarski(1^[], 2^[]), k4_classes1(k1_ordinal1(3^[])))]
+ (3)  [-4^[], r2_hidden(k2_tarski(1^[], 2^[]), k4_classes1(k1_ordinal1(3^[])))]
+ (4)  [-4^[], -r2_hidden(2^[], k4_classes1(3^[]))]
+ (5)  [-4^[], -r2_hidden(1^[], k4_classes1(3^[]))]
+ (6)  [-v3_ordinal1(3^[])]
+ (7)  [4^[], 5^[]]
+ (8)  [v3_ordinal1(_G896), r1_tarski(_G840, k4_classes1(_G896)), -r2_hidden(_G840, k4_classes1(k1_ordinal1(_G896)))]
+ (9)  [v3_ordinal1(_G896), -r1_tarski(_G840, k4_classes1(_G896)), r2_hidden(_G840, k4_classes1(k1_ordinal1(_G896)))]
+ (10)  [r1_tarski(k2_tarski(_G1190, _G1249), _G1309), -r2_hidden(_G1190, _G1309)]
+ (11)  [r1_tarski(k2_tarski(_G1190, _G1249), _G1309), -r2_hidden(_G1249, _G1309)]
+ (12)  [-r1_tarski(k2_tarski(_G1190, _G1249), _G1309), r2_hidden(_G1190, _G1309), r2_hidden(_G1249, _G1309)]
+
+Connection Proof:
+-----------------
+1  [4^[], 5^[]]   (7)  
+1.1  [-4^[], r2_hidden(k2_tarski(1^[], 2^[]), k4_classes1(k1_ordinal1(3^[])))]   (3)  
+1.1.1  [-r2_hidden(k2_tarski(1^[], 2^[]), k4_classes1(k1_ordinal1(3^[]))), v3_ordinal1(3^[]), r1_tarski(k2_tarski(1^[], 2^[]), k4_classes1(3^[]))]   (8)  substitution:[[_G840, _G896], [k2_tarski(1^[], 2^[]), 3^[]]]
+1.1.1.1  [-v3_ordinal1(3^[])]   (6)  
+1.1.1.2  [-r1_tarski(k2_tarski(1^[], 2^[]), k4_classes1(3^[])), r2_hidden(1^[], k4_classes1(3^[])), r2_hidden(2^[], k4_classes1(3^[]))]   (12)  substitution:[[_G1190, _G1249, _G1309], [1^[], 2^[], k4_classes1(3^[])]]
+1.1.1.2.1  [-r2_hidden(1^[], k4_classes1(3^[])), -4^[]]   (5)  
+1.1.1.2.1.1  [4^[]]   (reduction:1)  
+1.1.1.2.2  [-r2_hidden(2^[], k4_classes1(3^[])), -4^[]]   (4)  
+1.1.1.2.2.1  [4^[]]   (reduction:1)  
+1.2  [-5^[], r2_hidden(1^[], k4_classes1(3^[])), r2_hidden(2^[], k4_classes1(3^[]))]   (1)  
+1.2.1  [-r2_hidden(1^[], k4_classes1(3^[])), r1_tarski(k2_tarski(1^[], 2^[]), k4_classes1(3^[]))]   (10)  substitution:[[_G1190, _G1309, _G1249], [1^[], k4_classes1(3^[]), 2^[]]]
+1.2.1.1  [-r1_tarski(k2_tarski(1^[], 2^[]), k4_classes1(3^[])), v3_ordinal1(3^[]), r2_hidden(k2_tarski(1^[], 2^[]), k4_classes1(k1_ordinal1(3^[])))]   (9)  substitution:[[_G840, _G896], [k2_tarski(1^[], 2^[]), 3^[]]]
+1.2.1.1.1  [-v3_ordinal1(3^[])]   (6)  
+1.2.1.1.2  [-r2_hidden(k2_tarski(1^[], 2^[]), k4_classes1(k1_ordinal1(3^[]))), -5^[]]   (2)  
+1.2.1.1.2.1  [5^[]]   (reduction:1)  
+1.2.2  [-r2_hidden(2^[], k4_classes1(3^[])), r1_tarski(k2_tarski(1^[], 2^[]), k4_classes1(3^[]))]   (11)  substitution:[[_G1249, _G1309, _G1190], [2^[], k4_classes1(3^[]), 1^[]]]
+1.2.2.1  [-r1_tarski(k2_tarski(1^[], 2^[]), k4_classes1(3^[])), v3_ordinal1(3^[]), r2_hidden(k2_tarski(1^[], 2^[]), k4_classes1(k1_ordinal1(3^[])))]   (9)  substitution:[[_G840, _G896], [k2_tarski(1^[], 2^[]), 3^[]]]
+1.2.2.1.1  [-v3_ordinal1(3^[])]   (6)  
+1.2.2.1.2  [-r2_hidden(k2_tarski(1^[], 2^[]), k4_classes1(k1_ordinal1(3^[]))), -5^[]]   (2)  
+1.2.2.1.2.1  [5^[]]   (reduction:1)  
+------------------------------------------------------
+End of proof for t44_classes1

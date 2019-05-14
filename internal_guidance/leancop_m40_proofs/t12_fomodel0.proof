@@ -1,0 +1,22 @@
+
+t12_fomodel0 is a Theorem
+Start of proof for t12_fomodel0
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v7_ordinal1(4^[])]
+ (2)  [-r2_hidden(2^[], k4_finseq_2(4^[], 3^[]))]
+ (3)  [m2_finseq_1(2^[], 3^[])]
+ (4)  [v7_ordinal1(_G1177), -m1_finseq_2(k4_finseq_2(_G1177, _G1224), _G1224)]
+ (5)  [-m1_finseq_2(_G840, _G784), -r2_hidden(1^[_G840, _G784], _G840)]
+ (6)  [-m1_finseq_2(_G840, _G784), m2_finseq_1(1^[_G840, _G784], _G784)]
+ (7)  [m1_finseq_2(_G840, _G784), r2_hidden(_G954, _G840), -m2_finseq_1(_G954, _G784)]
+
+Connection Proof:
+-----------------
+1  [m2_finseq_1(2^[], 3^[])]   (3)  
+1.1  [-m2_finseq_1(2^[], 3^[]), m1_finseq_2(k4_finseq_2(4^[], 3^[]), 3^[]), r2_hidden(2^[], k4_finseq_2(4^[], 3^[]))]   (7)  substitution:[[_G954, _G784, _G840], [2^[], 3^[], k4_finseq_2(4^[], 3^[])]]
+1.1.1  [-m1_finseq_2(k4_finseq_2(4^[], 3^[]), 3^[]), v7_ordinal1(4^[])]   (4)  substitution:[[_G1177, _G1224], [4^[], 3^[]]]
+1.1.1.1  [-v7_ordinal1(4^[])]   (1)  
+1.1.2  [-r2_hidden(2^[], k4_finseq_2(4^[], 3^[]))]   (2)  
+------------------------------------------------------
+End of proof for t12_fomodel0

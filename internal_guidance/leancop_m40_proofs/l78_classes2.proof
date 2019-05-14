@@ -1,0 +1,24 @@
+
+l78_classes2 is a Theorem
+Start of proof for l78_classes2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [np__1=k1_ordinal1(k6_numbers)]
+ (2)  [- (np__1=k1_ordinal1(k1_xboole_0))]
+ (3)  [- (k6_numbers=k1_xboole_0)]
+ (4)  [_G1551=_G1600, - (k1_ordinal1(_G1551)=k1_ordinal1(_G1600))]
+ (5)  [- (_G778=_G778)]
+ (6)  [_G877=_G922, - (_G922=_G877)]
+ (7)  [- (_G1110=_G1223), _G1110=_G1166, _G1166=_G1223]
+
+Connection Proof:
+-----------------
+1  [np__1=k1_ordinal1(k6_numbers)]   (1)  
+1.1  [- (np__1=k1_ordinal1(k6_numbers)), k1_ordinal1(k6_numbers)=np__1]   (6)  substitution:[[_G922, _G877], [np__1, k1_ordinal1(k6_numbers)]]
+1.1.1  [- (k1_ordinal1(k6_numbers)=np__1), k1_ordinal1(k6_numbers)=k1_ordinal1(k1_xboole_0), k1_ordinal1(k1_xboole_0)=np__1]   (7)  substitution:[[_G1110, _G1223, _G1166], [k1_ordinal1(k6_numbers), np__1, k1_ordinal1(k1_xboole_0)]]
+1.1.1.1  [- (k1_ordinal1(k6_numbers)=k1_ordinal1(k1_xboole_0)), k6_numbers=k1_xboole_0]   (4)  substitution:[[_G1551, _G1600], [k6_numbers, k1_xboole_0]]
+1.1.1.1.1  [- (k6_numbers=k1_xboole_0)]   (3)  
+1.1.1.2  [- (k1_ordinal1(k1_xboole_0)=np__1), np__1=k1_ordinal1(k1_xboole_0)]   (6)  substitution:[[_G922, _G877], [k1_ordinal1(k1_xboole_0), np__1]]
+1.1.1.2.1  [- (np__1=k1_ordinal1(k1_xboole_0))]   (2)  
+------------------------------------------------------
+End of proof for l78_classes2

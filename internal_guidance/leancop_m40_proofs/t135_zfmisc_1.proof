@@ -1,0 +1,24 @@
+
+t135_zfmisc_1 is a Theorem
+Start of proof for t135_zfmisc_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-r1_tarski(3^[], k2_xboole_0(1^[], k1_tarski(2^[])))]
+ (2)  [r2_hidden(2^[], 3^[])]
+ (3)  [r1_tarski(3^[], 1^[])]
+ (4)  [r1_tarski(_G993, _G1054), -r2_hidden(_G1116, _G993), -r1_tarski(_G993, k4_xboole_0(_G1054, k1_tarski(_G1116)))]
+ (5)  [r1_tarski(_G1469, k4_xboole_0(_G1528, _G1588)), -r1_tarski(_G1469, _G1528)]
+ (6)  [r1_tarski(_G1469, k4_xboole_0(_G1528, _G1588)), -r1_xboole_0(_G1469, _G1588)]
+ (7)  [-r1_tarski(_G1916, _G1975), r1_tarski(_G1916, k2_xboole_0(_G1975, _G2035)), r1_xboole_0(_G1916, _G2035)]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(2^[], 3^[])]   (2)  
+1.1  [-r2_hidden(2^[], 3^[]), r1_tarski(3^[], k2_xboole_0(1^[], k1_tarski(2^[]))), -r1_tarski(3^[], k4_xboole_0(k2_xboole_0(1^[], k1_tarski(2^[])), k1_tarski(2^[])))]   (4)  substitution:[[_G1116, _G993, _G1054], [2^[], 3^[], k2_xboole_0(1^[], k1_tarski(2^[]))]]
+1.1.1  [-r1_tarski(3^[], k2_xboole_0(1^[], k1_tarski(2^[])))]   (1)  
+1.1.2  [r1_tarski(3^[], k4_xboole_0(k2_xboole_0(1^[], k1_tarski(2^[])), k1_tarski(2^[]))), -r1_xboole_0(3^[], k1_tarski(2^[]))]   (6)  substitution:[[_G1469, _G1528, _G1588], [3^[], k2_xboole_0(1^[], k1_tarski(2^[])), k1_tarski(2^[])]]
+1.1.2.1  [r1_xboole_0(3^[], k1_tarski(2^[])), -r1_tarski(3^[], 1^[]), r1_tarski(3^[], k2_xboole_0(1^[], k1_tarski(2^[])))]   (7)  substitution:[[_G1916, _G2035, _G1975], [3^[], k1_tarski(2^[]), 1^[]]]
+1.1.2.1.1  [r1_tarski(3^[], 1^[])]   (3)  
+1.1.2.1.2  [-r1_tarski(3^[], k2_xboole_0(1^[], k1_tarski(2^[])))]   (1)  
+------------------------------------------------------
+End of proof for t135_zfmisc_1

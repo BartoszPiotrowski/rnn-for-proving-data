@@ -1,0 +1,46 @@
+
+t12_scmyciel is a Theorem
+Start of proof for t12_scmyciel
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-r2_hidden(k2_tarski(3^[], 4^[]), 2^[])]
+ (2)  [3^[]=4^[]]
+ (3)  [r2_hidden(k2_tarski(3^[], 4^[]), k1_scmyciel(2^[]))]
+ (4)  [-m1_subset_1(k1_scmyciel(_G7374), k1_zfmisc_1(_G7374))]
+ (5)  [-v1_finset_1(k2_tarski(_G7505, _G7546))]
+ (6)  [v1_finset_1(_G7675), - (k5_card_1(_G7675)=k1_card_1(_G7675))]
+ (7)  [- (_G7855=_G7907), - (k5_card_1(k2_tarski(_G7855, _G7907))=np__2)]
+ (8)  [m1_subset_1(_G6804, k1_zfmisc_1(_G6730)), _G6804=k1_scmyciel(_G6730), r2_hidden(_G7021, _G6804), -r2_hidden(_G7021, _G6730)]
+ (9)  [m1_subset_1(_G6804, k1_zfmisc_1(_G6730)), _G6804=k1_scmyciel(_G6730), r2_hidden(_G7021, _G6804), - (k1_card_1(_G7021)=np__2)]
+ (10)  [m1_subset_1(_G6804, k1_zfmisc_1(_G6730)), _G6804=k1_scmyciel(_G6730), -r2_hidden(_G7021, _G6804), r2_hidden(_G7021, _G6730), k1_card_1(_G7021)=np__2]
+ (11)  [m1_subset_1(_G6804, k1_zfmisc_1(_G6730)), - (_G6804=k1_scmyciel(_G6730)), -r2_hidden(1^[_G6804, _G6730], _G6804), -r2_hidden(1^[_G6804, _G6730], _G6730)]
+ (12)  [m1_subset_1(_G6804, k1_zfmisc_1(_G6730)), - (_G6804=k1_scmyciel(_G6730)), -r2_hidden(1^[_G6804, _G6730], _G6804), - (k1_card_1(1^[_G6804, _G6730])=np__2)]
+ (13)  [m1_subset_1(_G6804, k1_zfmisc_1(_G6730)), - (_G6804=k1_scmyciel(_G6730)), r2_hidden(1^[_G6804, _G6730], _G6804), r2_hidden(1^[_G6804, _G6730], _G6730), k1_card_1(1^[_G6804, _G6730])=np__2]
+ (14)  [_G4925=_G4974, - (k1_zfmisc_1(_G4925)=k1_zfmisc_1(_G4974))]
+ (15)  [_G5203=_G5252, - (k1_card_1(_G5203)=k1_card_1(_G5252))]
+ (16)  [_G5481=_G5530, - (k5_card_1(_G5481)=k5_card_1(_G5530))]
+ (17)  [_G6347=_G6396, - (k1_scmyciel(_G6347)=k1_scmyciel(_G6396))]
+ (18)  [- (k2_tarski(_G5759, _G5894)=k2_tarski(_G5826, _G5963)), _G5759=_G5826, _G5894=_G5963]
+ (19)  [- (_G2617=_G2617)]
+ (20)  [_G2716=_G2761, - (_G2761=_G2716)]
+ (21)  [- (_G2949=_G3062), _G2949=_G3005, _G3005=_G3062]
+ (22)  [-m1_subset_1(_G3466, _G3603), m1_subset_1(_G3399, _G3534), _G3399=_G3466, _G3534=_G3603]
+ (23)  [-v1_finset_1(_G4045), _G3996=_G4045, v1_finset_1(_G3996)]
+ (24)  [-r2_hidden(_G4332, _G4469), r2_hidden(_G4265, _G4400), _G4265=_G4332, _G4400=_G4469]
+
+Connection Proof:
+-----------------
+1  [3^[]=4^[]]   (2)  
+1.1  [- (3^[]=4^[]), - (k5_card_1(k2_tarski(3^[], 4^[]))=np__2)]   (7)  substitution:[[_G7855, _G7907], [3^[], 4^[]]]
+1.1.1  [k5_card_1(k2_tarski(3^[], 4^[]))=np__2, - (k1_card_1(k2_tarski(3^[], 4^[]))=np__2), k1_card_1(k2_tarski(3^[], 4^[]))=k5_card_1(k2_tarski(3^[], 4^[]))]   (21)  substitution:[[_G3005, _G3062, _G2949], [k5_card_1(k2_tarski(3^[], 4^[])), np__2, k1_card_1(k2_tarski(3^[], 4^[]))]]
+1.1.1.1  [k1_card_1(k2_tarski(3^[], 4^[]))=np__2, m1_subset_1(k1_scmyciel(2^[]), k1_zfmisc_1(2^[])), k1_scmyciel(2^[])=k1_scmyciel(2^[]), -r2_hidden(k2_tarski(3^[], 4^[]), k1_scmyciel(2^[])), r2_hidden(k2_tarski(3^[], 4^[]), 2^[])]   (10)  substitution:[[_G7021, _G6804, _G6730], [k2_tarski(3^[], 4^[]), k1_scmyciel(2^[]), 2^[]]]
+1.1.1.1.1  [-m1_subset_1(k1_scmyciel(2^[]), k1_zfmisc_1(2^[]))]   (4)  substitution:[[_G7374], [2^[]]]
+1.1.1.1.2  [- (k1_scmyciel(2^[])=k1_scmyciel(2^[])), 2^[]=2^[]]   (17)  substitution:[[_G6347, _G6396], [2^[], 2^[]]]
+1.1.1.1.2.1  [- (2^[]=2^[])]   (19)  substitution:[[_G2617], [2^[]]]
+1.1.1.1.3  [r2_hidden(k2_tarski(3^[], 4^[]), k1_scmyciel(2^[]))]   (3)  
+1.1.1.1.4  [-r2_hidden(k2_tarski(3^[], 4^[]), 2^[])]   (1)  
+1.1.1.2  [- (k1_card_1(k2_tarski(3^[], 4^[]))=k5_card_1(k2_tarski(3^[], 4^[]))), k5_card_1(k2_tarski(3^[], 4^[]))=k1_card_1(k2_tarski(3^[], 4^[]))]   (20)  substitution:[[_G2761, _G2716], [k1_card_1(k2_tarski(3^[], 4^[])), k5_card_1(k2_tarski(3^[], 4^[]))]]
+1.1.1.2.1  [- (k5_card_1(k2_tarski(3^[], 4^[]))=k1_card_1(k2_tarski(3^[], 4^[]))), v1_finset_1(k2_tarski(3^[], 4^[]))]   (6)  substitution:[[_G7675], [k2_tarski(3^[], 4^[])]]
+1.1.1.2.1.1  [-v1_finset_1(k2_tarski(3^[], 4^[]))]   (5)  substitution:[[_G7505, _G7546], [3^[], 4^[]]]
+------------------------------------------------------
+End of proof for t12_scmyciel

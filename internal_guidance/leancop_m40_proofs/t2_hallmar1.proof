@@ -1,0 +1,60 @@
+
+t2_hallmar1 is a Theorem
+Start of proof for t2_hallmar1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v1_xboole_0(2^[])]
+ (2)  [-v2_relat_1(3^[])]
+ (3)  [-m2_finseq_1(3^[], k1_zfmisc_1(2^[]))]
+ (4)  [-m1_subset_1(4^[], k5_numbers)]
+ (5)  [-r2_hidden(4^[], k4_finseq_1(3^[]))]
+ (6)  [- (k1_funct_1(3^[], 4^[])=k1_xboole_0)]
+ (7)  [m1_subset_1(_G9832, k1_zfmisc_1(k2_zfmisc_1(_G9723, _G9777))), -v1_relat_1(_G9832)]
+ (8)  [v1_funct_1(_G10075), v1_relat_1(_G10075), -v2_relat_1(_G10075), -r2_hidden(1^[_G10075], k9_xtuple_0(_G10075))]
+ (9)  [v1_funct_1(_G10075), v1_relat_1(_G10075), -v2_relat_1(_G10075), -v1_xboole_0(k1_funct_1(_G10075, 1^[_G10075]))]
+ (10)  [v1_funct_1(_G10075), v1_relat_1(_G10075), v2_relat_1(_G10075), r2_hidden(_G10258, k9_xtuple_0(_G10075)), v1_xboole_0(k1_funct_1(_G10075, _G10258))]
+ (11)  [m2_finseq_1(_G10605, _G10545), -v1_funct_1(_G10605)]
+ (12)  [m2_finseq_1(_G10605, _G10545), -v1_finseq_1(_G10605)]
+ (13)  [m2_finseq_1(_G10605, _G10545), -m1_subset_1(_G10605, k1_zfmisc_1(k2_zfmisc_1(k5_numbers, _G10545)))]
+ (14)  [-v1_xboole_0(k1_xboole_0)]
+ (15)  [- (k4_finseq_1(_G10999)=k9_xtuple_0(_G10999)), v1_relat_1(_G10999), v1_funct_1(_G10999), v1_finseq_1(_G10999)]
+ (16)  [- (k2_zfmisc_1(_G7599, _G7734)=k2_zfmisc_1(_G7666, _G7803)), _G7599=_G7666, _G7734=_G7803]
+ (17)  [_G8196=_G8245, - (k9_xtuple_0(_G8196)=k9_xtuple_0(_G8245))]
+ (18)  [_G8474=_G8523, - (k1_zfmisc_1(_G8474)=k1_zfmisc_1(_G8523))]
+ (19)  [_G8752=_G8801, - (k4_finseq_1(_G8752)=k4_finseq_1(_G8801))]
+ (20)  [- (k1_funct_1(_G9021, _G9156)=k1_funct_1(_G9088, _G9225)), _G9021=_G9088, _G9156=_G9225]
+ (21)  [- (_G3477=_G3477)]
+ (22)  [_G3576=_G3621, - (_G3621=_G3576)]
+ (23)  [- (_G3809=_G3922), _G3809=_G3865, _G3865=_G3922]
+ (24)  [-v1_relat_1(_G4308), _G4259=_G4308, v1_relat_1(_G4259)]
+ (25)  [-v1_funct_1(_G4586), _G4537=_G4586, v1_funct_1(_G4537)]
+ (26)  [-v1_finseq_1(_G4864), _G4815=_G4864, v1_finseq_1(_G4815)]
+ (27)  [-v1_xboole_0(_G5142), _G5093=_G5142, v1_xboole_0(_G5093)]
+ (28)  [-v2_relat_1(_G5420), _G5371=_G5420, v2_relat_1(_G5371)]
+ (29)  [-m2_finseq_1(_G5716, _G5853), m2_finseq_1(_G5649, _G5784), _G5649=_G5716, _G5784=_G5853]
+ (30)  [-m1_subset_1(_G6313, _G6450), m1_subset_1(_G6246, _G6381), _G6246=_G6313, _G6381=_G6450]
+ (31)  [-r2_hidden(_G6901, _G7038), r2_hidden(_G6834, _G6969), _G6834=_G6901, _G6969=_G7038]
+
+Connection Proof:
+-----------------
+1  [v1_funct_1(3^[]), v1_relat_1(3^[]), v2_relat_1(3^[]), r2_hidden(4^[], k9_xtuple_0(3^[])), v1_xboole_0(k1_funct_1(3^[], 4^[]))]   (10)  substitution:[[_G10075, _G10258], [3^[], 4^[]]]
+1.1  [-v1_funct_1(3^[]), m2_finseq_1(3^[], k1_zfmisc_1(2^[]))]   (11)  substitution:[[_G10605, _G10545], [3^[], k1_zfmisc_1(2^[])]]
+1.1.1  [-m2_finseq_1(3^[], k1_zfmisc_1(2^[]))]   (3)  
+1.2  [-v1_relat_1(3^[]), m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_zfmisc_1(2^[]))))]   (7)  substitution:[[_G9832, _G9723, _G9777], [3^[], k5_numbers, k1_zfmisc_1(2^[])]]
+1.2.1  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_zfmisc_1(2^[])))), m2_finseq_1(3^[], k1_zfmisc_1(2^[]))]   (13)  substitution:[[_G10605, _G10545], [3^[], k1_zfmisc_1(2^[])]]
+1.2.1.1  [-m2_finseq_1(3^[], k1_zfmisc_1(2^[]))]   (3)  
+1.3  [-v2_relat_1(3^[])]   (2)  
+1.4  [-r2_hidden(4^[], k9_xtuple_0(3^[])), r2_hidden(4^[], k4_finseq_1(3^[])), 4^[]=4^[], k4_finseq_1(3^[])=k9_xtuple_0(3^[])]   (31)  substitution:[[_G6901, _G7038, _G6834, _G6969], [4^[], k9_xtuple_0(3^[]), 4^[], k4_finseq_1(3^[])]]
+1.4.1  [-r2_hidden(4^[], k4_finseq_1(3^[]))]   (5)  
+1.4.2  [- (4^[]=4^[])]   (21)  substitution:[[_G3477], [4^[]]]
+1.4.3  [- (k4_finseq_1(3^[])=k9_xtuple_0(3^[])), v1_relat_1(3^[]), v1_funct_1(3^[]), v1_finseq_1(3^[])]   (15)  substitution:[[_G10999], [3^[]]]
+1.4.3.1  [-v1_relat_1(3^[])]   (lemmata:1)  
+1.4.3.2  [-v1_funct_1(3^[])]   (lemmata:1)  
+1.4.3.3  [-v1_finseq_1(3^[]), m2_finseq_1(3^[], k1_zfmisc_1(2^[]))]   (12)  substitution:[[_G10605, _G10545], [3^[], k1_zfmisc_1(2^[])]]
+1.4.3.3.1  [-m2_finseq_1(3^[], k1_zfmisc_1(2^[]))]   (3)  
+1.5  [-v1_xboole_0(k1_funct_1(3^[], 4^[])), k1_xboole_0=k1_funct_1(3^[], 4^[]), v1_xboole_0(k1_xboole_0)]   (27)  substitution:[[_G5142, _G5093], [k1_funct_1(3^[], 4^[]), k1_xboole_0]]
+1.5.1  [- (k1_xboole_0=k1_funct_1(3^[], 4^[])), k1_funct_1(3^[], 4^[])=k1_xboole_0]   (22)  substitution:[[_G3621, _G3576], [k1_xboole_0, k1_funct_1(3^[], 4^[])]]
+1.5.1.1  [- (k1_funct_1(3^[], 4^[])=k1_xboole_0)]   (6)  
+1.5.2  [-v1_xboole_0(k1_xboole_0)]   (14)  
+------------------------------------------------------
+End of proof for t2_hallmar1

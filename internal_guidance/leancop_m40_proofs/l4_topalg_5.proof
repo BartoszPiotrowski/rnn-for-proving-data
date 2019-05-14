@@ -1,0 +1,32 @@
+
+l4_topalg_5 is a Theorem
+Start of proof for l4_topalg_5
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [r2_hidden(k6_numbers, k6_domain_1(k1_numbers, k6_numbers))]
+ (2)  [v1_xboole_0(k1_numbers)]
+ (3)  [-m1_subset_1(k6_numbers, k1_numbers)]
+ (4)  [- (k6_domain_1(_G5426, _G5483)=k1_tarski(_G5483)), -v1_xboole_0(_G5426), m1_subset_1(_G5483, _G5426)]
+ (5)  [_G4970=k1_tarski(_G4912), r2_hidden(_G5100, _G4970), - (_G5100=_G4912)]
+ (6)  [_G4970=k1_tarski(_G4912), -r2_hidden(_G5100, _G4970), _G5100=_G4912]
+ (7)  [- (_G4970=k1_tarski(_G4912)), r2_hidden(1^[_G4970, _G4912], _G4970), 1^[_G4970, _G4912]=_G4912]
+ (8)  [- (_G4970=k1_tarski(_G4912)), -r2_hidden(1^[_G4970, _G4912], _G4970), - (1^[_G4970, _G4912]=_G4912)]
+ (9)  [_G4004=_G4053, - (k1_tarski(_G4004)=k1_tarski(_G4053))]
+ (10)  [- (k6_domain_1(_G4273, _G4408)=k6_domain_1(_G4340, _G4477)), _G4273=_G4340, _G4408=_G4477]
+ (11)  [- (_G1696=_G1696)]
+ (12)  [_G1795=_G1840, - (_G1840=_G1795)]
+ (13)  [- (_G2028=_G2141), _G2028=_G2084, _G2084=_G2141]
+ (14)  [-v1_xboole_0(_G2527), _G2478=_G2527, v1_xboole_0(_G2478)]
+ (15)  [-m1_subset_1(_G2823, _G2960), m1_subset_1(_G2756, _G2891), _G2756=_G2823, _G2891=_G2960]
+ (16)  [-r2_hidden(_G3411, _G3548), r2_hidden(_G3344, _G3479), _G3344=_G3411, _G3479=_G3548]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(k6_numbers, k6_domain_1(k1_numbers, k6_numbers))]   (1)  
+1.1  [-r2_hidden(k6_numbers, k6_domain_1(k1_numbers, k6_numbers)), k6_domain_1(k1_numbers, k6_numbers)=k1_tarski(k6_numbers), k6_numbers=k6_numbers]   (6)  substitution:[[_G5100, _G4970, _G4912], [k6_numbers, k6_domain_1(k1_numbers, k6_numbers), k6_numbers]]
+1.1.1  [- (k6_domain_1(k1_numbers, k6_numbers)=k1_tarski(k6_numbers)), -v1_xboole_0(k1_numbers), m1_subset_1(k6_numbers, k1_numbers)]   (4)  substitution:[[_G5426, _G5483], [k1_numbers, k6_numbers]]
+1.1.1.1  [v1_xboole_0(k1_numbers)]   (2)  
+1.1.1.2  [-m1_subset_1(k6_numbers, k1_numbers)]   (3)  
+1.1.2  [- (k6_numbers=k6_numbers)]   (11)  substitution:[[_G1696], [k6_numbers]]
+------------------------------------------------------
+End of proof for l4_topalg_5

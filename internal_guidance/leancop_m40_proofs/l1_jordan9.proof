@@ -1,0 +1,62 @@
+
+l1_jordan9 is a Theorem
+Start of proof for l1_jordan9
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], k5_numbers)]
+ (2)  [-r1_xxreal_0(np__1, 1^[])]
+ (3)  [k2_nat_1(k7_nat_d(1^[], np__1), np__2)=k2_nat_1(1^[], np__1)]
+ (4)  [v1_xboole_0(_G8203), m1_subset_1(_G8286, k1_zfmisc_1(_G8203)), -v1_xboole_0(_G8286)]
+ (5)  [-m1_subset_1(k5_numbers, k1_zfmisc_1(k1_numbers))]
+ (6)  [v1_xboole_0(k4_ordinal1)]
+ (7)  [-v3_ordinal1(k4_ordinal1)]
+ (8)  [- (k5_numbers=k4_ordinal1)]
+ (9)  [r1_xxreal_0(np__1, np__0)]
+ (10)  [-v1_xboole_0(np__0)]
+ (11)  [v1_xboole_0(_G9870), - (_G9870=k1_xboole_0)]
+ (12)  [- (k2_nat_1(k7_nat_d(_G9452, np__1), np__2)=k2_nat_1(_G9452, np__1)), -v1_xboole_0(_G9452), m2_subset_1(_G9452, k1_numbers, k5_numbers)]
+ (13)  [m1_subset_1(_G8794, k1_zfmisc_1(_G8721)), -v1_xboole_0(_G8794), -v1_xboole_0(_G8721), m2_subset_1(_G9073, _G8721, _G8794), -m1_subset_1(_G9073, _G8794)]
+ (14)  [m1_subset_1(_G8794, k1_zfmisc_1(_G8721)), -v1_xboole_0(_G8794), -v1_xboole_0(_G8721), -m2_subset_1(_G9073, _G8721, _G8794), m1_subset_1(_G9073, _G8794)]
+ (15)  [_G6677=_G6726, - (k1_zfmisc_1(_G6677)=k1_zfmisc_1(_G6726))]
+ (16)  [- (k7_nat_d(_G6955, _G7090)=k7_nat_d(_G7022, _G7159)), _G6955=_G7022, _G7090=_G7159]
+ (17)  [- (k2_nat_1(_G7543, _G7678)=k2_nat_1(_G7610, _G7747)), _G7543=_G7610, _G7678=_G7747]
+ (18)  [- (_G3021=_G3021)]
+ (19)  [_G3120=_G3165, - (_G3165=_G3120)]
+ (20)  [- (_G3353=_G3466), _G3353=_G3409, _G3409=_G3466]
+ (21)  [-v3_ordinal1(_G3852), _G3803=_G3852, v3_ordinal1(_G3803)]
+ (22)  [-m2_subset_1(_G4166, _G4339, _G4516), m2_subset_1(_G4081, _G4252, _G4427), _G4081=_G4166, _G4252=_G4339, _G4427=_G4516]
+ (23)  [-v1_xboole_0(_G5158), _G5109=_G5158, v1_xboole_0(_G5109)]
+ (24)  [-m1_subset_1(_G5454, _G5591), m1_subset_1(_G5387, _G5522), _G5387=_G5454, _G5522=_G5591]
+ (25)  [-r1_xxreal_0(_G6042, _G6179), r1_xxreal_0(_G5975, _G6110), _G5975=_G6042, _G6110=_G6179]
+
+Connection Proof:
+-----------------
+1  [k2_nat_1(k7_nat_d(1^[], np__1), np__2)=k2_nat_1(1^[], np__1)]   (3)  
+1.1  [- (k2_nat_1(k7_nat_d(1^[], np__1), np__2)=k2_nat_1(1^[], np__1)), -v1_xboole_0(1^[]), m2_subset_1(1^[], k1_numbers, k5_numbers)]   (12)  substitution:[[_G9452], [1^[]]]
+1.1.1  [v1_xboole_0(1^[]), - (1^[]=k1_xboole_0)]   (11)  substitution:[[_G9870], [1^[]]]
+1.1.1.1  [1^[]=k1_xboole_0, -r1_xxreal_0(np__1, k1_xboole_0), r1_xxreal_0(np__1, 1^[]), np__1=np__1]   (25)  substitution:[[_G6110, _G6179, _G6042, _G5975], [1^[], k1_xboole_0, np__1, np__1]]
+1.1.1.1.1  [r1_xxreal_0(np__1, k1_xboole_0), -r1_xxreal_0(np__1, np__0), np__1=np__1, k1_xboole_0=np__0]   (25)  substitution:[[_G5975, _G6110, _G6042, _G6179], [np__1, k1_xboole_0, np__1, np__0]]
+1.1.1.1.1.1  [r1_xxreal_0(np__1, np__0)]   (9)  
+1.1.1.1.1.2  [- (np__1=np__1)]   (18)  substitution:[[_G3021], [np__1]]
+1.1.1.1.1.3  [- (k1_xboole_0=np__0), np__0=k1_xboole_0]   (19)  substitution:[[_G3165, _G3120], [k1_xboole_0, np__0]]
+1.1.1.1.1.3.1  [- (np__0=k1_xboole_0), v1_xboole_0(np__0)]   (11)  substitution:[[_G9870], [np__0]]
+1.1.1.1.1.3.1.1  [-v1_xboole_0(np__0)]   (10)  
+1.1.1.1.2  [-r1_xxreal_0(np__1, 1^[])]   (2)  
+1.1.1.1.3  [- (np__1=np__1)]   (18)  substitution:[[_G3021], [np__1]]
+1.1.2  [-m2_subset_1(1^[], k1_numbers, k5_numbers), m1_subset_1(k5_numbers, k1_zfmisc_1(k1_numbers)), -v1_xboole_0(k5_numbers), -v1_xboole_0(k1_numbers), m1_subset_1(1^[], k5_numbers)]   (14)  substitution:[[_G9073, _G8721, _G8794], [1^[], k1_numbers, k5_numbers]]
+1.1.2.1  [-m1_subset_1(k5_numbers, k1_zfmisc_1(k1_numbers))]   (5)  
+1.1.2.2  [v1_xboole_0(k5_numbers), - (k5_numbers=k1_xboole_0)]   (11)  substitution:[[_G9870], [k5_numbers]]
+1.1.2.2.1  [k5_numbers=k1_xboole_0, - (k5_numbers=k5_numbers), k1_xboole_0=k5_numbers]   (20)  substitution:[[_G3353, _G3409, _G3466], [k5_numbers, k1_xboole_0, k5_numbers]]
+1.1.2.2.1.1  [k5_numbers=k5_numbers, - (k5_numbers=k4_ordinal1), k5_numbers=k4_ordinal1]   (20)  substitution:[[_G3353, _G3409, _G3466], [k5_numbers, k5_numbers, k4_ordinal1]]
+1.1.2.2.1.1.1  [k5_numbers=k4_ordinal1, -v1_xboole_0(k4_ordinal1), v1_xboole_0(k5_numbers)]   (23)  substitution:[[_G5109, _G5158], [k5_numbers, k4_ordinal1]]
+1.1.2.2.1.1.1.1  [v1_xboole_0(k4_ordinal1)]   (6)  
+1.1.2.2.1.1.1.2  [-v1_xboole_0(k5_numbers)]   (reduction:1.1.2)  
+1.1.2.2.1.1.2  [- (k5_numbers=k4_ordinal1)]   (8)  
+1.1.2.2.1.2  [- (k1_xboole_0=k5_numbers), k5_numbers=k1_xboole_0]   (19)  substitution:[[_G3165, _G3120], [k1_xboole_0, k5_numbers]]
+1.1.2.2.1.2.1  [- (k5_numbers=k1_xboole_0)]   (reduction:1.1.2.2)  
+1.1.2.3  [v1_xboole_0(k1_numbers), m1_subset_1(k5_numbers, k1_zfmisc_1(k1_numbers)), -v1_xboole_0(k5_numbers)]   (4)  substitution:[[_G8203, _G8286], [k1_numbers, k5_numbers]]
+1.1.2.3.1  [-m1_subset_1(k5_numbers, k1_zfmisc_1(k1_numbers))]   (5)  
+1.1.2.3.2  [v1_xboole_0(k5_numbers)]   (lemmata:1.1.2)  
+1.1.2.4  [-m1_subset_1(1^[], k5_numbers)]   (1)  
+------------------------------------------------------
+End of proof for l1_jordan9

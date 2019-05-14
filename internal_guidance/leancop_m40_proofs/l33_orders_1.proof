@@ -1,0 +1,32 @@
+
+l33_orders_1 is a Theorem
+Start of proof for l33_orders_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(3^[])]
+ (2)  [r1_tarski(3^[], k2_zfmisc_1(k1_relat_1(3^[]), k1_relat_1(3^[])))]
+ (3)  [v1_relat_1(_G991), -r1_tarski(_G991, _G1095), -r2_hidden(k4_tarski(1^[_G1095, _G991], 2^[_G1095, _G991]), _G991)]
+ (4)  [v1_relat_1(_G991), -r1_tarski(_G991, _G1095), r2_hidden(k4_tarski(1^[_G1095, _G991], 2^[_G1095, _G991]), _G1095)]
+ (5)  [v1_relat_1(_G991), r1_tarski(_G991, _G1095), r2_hidden(k4_tarski(_G1220, _G1283), _G991), -r2_hidden(k4_tarski(_G1220, _G1283), _G1095)]
+ (6)  [v1_relat_1(_G1771), r2_hidden(k4_tarski(_G1634, _G1702), _G1771), -r2_hidden(_G1634, k1_relat_1(_G1771))]
+ (7)  [v1_relat_1(_G1771), r2_hidden(k4_tarski(_G1634, _G1702), _G1771), -r2_hidden(_G1702, k1_relat_1(_G1771))]
+ (8)  [r2_hidden(k4_tarski(_G2189, _G2256), k2_zfmisc_1(_G2324, _G2393)), -r2_hidden(_G2189, _G2324)]
+ (9)  [r2_hidden(k4_tarski(_G2189, _G2256), k2_zfmisc_1(_G2324, _G2393)), -r2_hidden(_G2256, _G2393)]
+ (10)  [-r2_hidden(k4_tarski(_G2189, _G2256), k2_zfmisc_1(_G2324, _G2393)), r2_hidden(_G2189, _G2324), r2_hidden(_G2256, _G2393)]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(3^[], k2_zfmisc_1(k1_relat_1(3^[]), k1_relat_1(3^[])))]   (2)  
+1.1  [-r1_tarski(3^[], k2_zfmisc_1(k1_relat_1(3^[]), k1_relat_1(3^[]))), v1_relat_1(3^[]), -r2_hidden(k4_tarski(1^[k2_zfmisc_1(k1_relat_1(3^[]), k1_relat_1(3^[])), 3^[]], 2^[k2_zfmisc_1(k1_relat_1(3^[]), k1_relat_1(3^[])), 3^[]]), 3^[])]   (3)  substitution:[[_G991, _G1095], [3^[], k2_zfmisc_1(k1_relat_1(3^[]), k1_relat_1(3^[]))]]
+1.1.1  [-v1_relat_1(3^[])]   (1)  
+1.1.2  [r2_hidden(k4_tarski(1^[k2_zfmisc_1(k1_relat_1(3^[]), k1_relat_1(3^[])), 3^[]], 2^[k2_zfmisc_1(k1_relat_1(3^[]), k1_relat_1(3^[])), 3^[]]), 3^[]), v1_relat_1(3^[]), -r2_hidden(1^[k2_zfmisc_1(k1_relat_1(3^[]), k1_relat_1(3^[])), 3^[]], k1_relat_1(3^[]))]   (6)  substitution:[[_G1634, _G1702, _G1771], [1^[k2_zfmisc_1(k1_relat_1(3^[]), k1_relat_1(3^[])), 3^[]], 2^[k2_zfmisc_1(k1_relat_1(3^[]), k1_relat_1(3^[])), 3^[]], 3^[]]]
+1.1.2.1  [-v1_relat_1(3^[])]   (1)  
+1.1.2.2  [r2_hidden(1^[k2_zfmisc_1(k1_relat_1(3^[]), k1_relat_1(3^[])), 3^[]], k1_relat_1(3^[])), -r2_hidden(k4_tarski(1^[k2_zfmisc_1(k1_relat_1(3^[]), k1_relat_1(3^[])), 3^[]], 2^[k2_zfmisc_1(k1_relat_1(3^[]), k1_relat_1(3^[])), 3^[]]), k2_zfmisc_1(k1_relat_1(3^[]), k1_relat_1(3^[]))), r2_hidden(2^[k2_zfmisc_1(k1_relat_1(3^[]), k1_relat_1(3^[])), 3^[]], k1_relat_1(3^[]))]   (10)  substitution:[[_G2189, _G2324, _G2256, _G2393], [1^[k2_zfmisc_1(k1_relat_1(3^[]), k1_relat_1(3^[])), 3^[]], k1_relat_1(3^[]), 2^[k2_zfmisc_1(k1_relat_1(3^[]), k1_relat_1(3^[])), 3^[]], k1_relat_1(3^[])]]
+1.1.2.2.1  [r2_hidden(k4_tarski(1^[k2_zfmisc_1(k1_relat_1(3^[]), k1_relat_1(3^[])), 3^[]], 2^[k2_zfmisc_1(k1_relat_1(3^[]), k1_relat_1(3^[])), 3^[]]), k2_zfmisc_1(k1_relat_1(3^[]), k1_relat_1(3^[]))), v1_relat_1(3^[]), -r1_tarski(3^[], k2_zfmisc_1(k1_relat_1(3^[]), k1_relat_1(3^[])))]   (4)  substitution:[[_G1095, _G991], [k2_zfmisc_1(k1_relat_1(3^[]), k1_relat_1(3^[])), 3^[]]]
+1.1.2.2.1.1  [-v1_relat_1(3^[])]   (1)  
+1.1.2.2.1.2  [r1_tarski(3^[], k2_zfmisc_1(k1_relat_1(3^[]), k1_relat_1(3^[])))]   (2)  
+1.1.2.2.2  [-r2_hidden(2^[k2_zfmisc_1(k1_relat_1(3^[]), k1_relat_1(3^[])), 3^[]], k1_relat_1(3^[])), v1_relat_1(3^[]), r2_hidden(k4_tarski(1^[k2_zfmisc_1(k1_relat_1(3^[]), k1_relat_1(3^[])), 3^[]], 2^[k2_zfmisc_1(k1_relat_1(3^[]), k1_relat_1(3^[])), 3^[]]), 3^[])]   (7)  substitution:[[_G1702, _G1771, _G1634], [2^[k2_zfmisc_1(k1_relat_1(3^[]), k1_relat_1(3^[])), 3^[]], 3^[], 1^[k2_zfmisc_1(k1_relat_1(3^[]), k1_relat_1(3^[])), 3^[]]]]
+1.1.2.2.2.1  [-v1_relat_1(3^[])]   (1)  
+1.1.2.2.2.2  [-r2_hidden(k4_tarski(1^[k2_zfmisc_1(k1_relat_1(3^[]), k1_relat_1(3^[])), 3^[]], 2^[k2_zfmisc_1(k1_relat_1(3^[]), k1_relat_1(3^[])), 3^[]]), 3^[])]   (reduction:1.1)  
+------------------------------------------------------
+End of proof for l33_orders_1

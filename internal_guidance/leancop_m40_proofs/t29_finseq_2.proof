@@ -1,0 +1,64 @@
+
+t29_finseq_2 is a Theorem
+Start of proof for t29_finseq_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(1^[])]
+ (2)  [-v1_funct_1(1^[])]
+ (3)  [-v1_finseq_1(1^[])]
+ (4)  [-v1_relat_1(2^[])]
+ (5)  [-v1_funct_1(2^[])]
+ (6)  [-v1_finseq_1(2^[])]
+ (7)  [-v1_relat_1(3^[])]
+ (8)  [-v1_funct_1(3^[])]
+ (9)  [-r1_tarski(k10_xtuple_0(1^[]), k9_xtuple_0(3^[]))]
+ (10)  [- (2^[]=k3_relat_1(1^[], 3^[]))]
+ (11)  [k3_finseq_1(2^[])=k3_finseq_1(1^[])]
+ (12)  [v1_finseq_1(_G8404), v1_funct_1(_G8404), v1_relat_1(_G8404), m2_subset_1(_G8615, k1_numbers, k5_numbers), _G8615=k3_finseq_1(_G8404), - (k2_finseq_1(_G8615)=k9_xtuple_0(_G8404))]
+ (13)  [v1_finseq_1(_G8404), v1_funct_1(_G8404), v1_relat_1(_G8404), m2_subset_1(_G8615, k1_numbers, k5_numbers), - (_G8615=k3_finseq_1(_G8404)), k2_finseq_1(_G8615)=k9_xtuple_0(_G8404)]
+ (14)  [-m2_subset_1(k3_finseq_1(_G9009), k1_numbers, k5_numbers), v1_relat_1(_G9009), v1_funct_1(_G9009), v1_finseq_1(_G9009)]
+ (15)  [v1_relat_1(_G9333), v1_relat_1(_G9431), r1_tarski(k10_xtuple_0(_G9333), k9_xtuple_0(_G9431)), - (k9_xtuple_0(k3_relat_1(_G9333, _G9431))=k9_xtuple_0(_G9333))]
+ (16)  [_G6599=_G6648, - (k2_finseq_1(_G6599)=k2_finseq_1(_G6648))]
+ (17)  [_G6877=_G6926, - (k10_xtuple_0(_G6877)=k10_xtuple_0(_G6926))]
+ (18)  [_G7155=_G7204, - (k9_xtuple_0(_G7155)=k9_xtuple_0(_G7204))]
+ (19)  [_G8021=_G8070, - (k3_finseq_1(_G8021)=k3_finseq_1(_G8070))]
+ (20)  [- (k3_relat_1(_G7433, _G7568)=k3_relat_1(_G7500, _G7637)), _G7433=_G7500, _G7568=_G7637]
+ (21)  [- (_G3262=_G3262)]
+ (22)  [_G3361=_G3406, - (_G3406=_G3361)]
+ (23)  [- (_G3594=_G3707), _G3594=_G3650, _G3650=_G3707]
+ (24)  [-m2_subset_1(_G4129, _G4302, _G4479), m2_subset_1(_G4044, _G4215, _G4390), _G4044=_G4129, _G4215=_G4302, _G4390=_G4479]
+ (25)  [-v1_finseq_1(_G5121), _G5072=_G5121, v1_finseq_1(_G5072)]
+ (26)  [-v1_relat_1(_G5399), _G5350=_G5399, v1_relat_1(_G5350)]
+ (27)  [-v1_funct_1(_G5677), _G5628=_G5677, v1_funct_1(_G5628)]
+ (28)  [-r1_tarski(_G5964, _G6101), r1_tarski(_G5897, _G6032), _G5897=_G5964, _G6032=_G6101]
+
+Connection Proof:
+-----------------
+1  [k3_finseq_1(2^[])=k3_finseq_1(1^[])]   (11)  
+1.1  [- (k3_finseq_1(2^[])=k3_finseq_1(1^[])), k3_finseq_1(1^[])=k3_finseq_1(2^[])]   (22)  substitution:[[_G3406, _G3361], [k3_finseq_1(2^[]), k3_finseq_1(1^[])]]
+1.1.1  [- (k3_finseq_1(1^[])=k3_finseq_1(2^[])), v1_finseq_1(2^[]), v1_funct_1(2^[]), v1_relat_1(2^[]), m2_subset_1(k3_finseq_1(1^[]), k1_numbers, k5_numbers), k2_finseq_1(k3_finseq_1(1^[]))=k9_xtuple_0(2^[])]   (13)  substitution:[[_G8615, _G8404], [k3_finseq_1(1^[]), 2^[]]]
+1.1.1.1  [-v1_finseq_1(2^[])]   (6)  
+1.1.1.2  [-v1_funct_1(2^[])]   (5)  
+1.1.1.3  [-v1_relat_1(2^[])]   (4)  
+1.1.1.4  [-m2_subset_1(k3_finseq_1(1^[]), k1_numbers, k5_numbers), v1_relat_1(1^[]), v1_funct_1(1^[]), v1_finseq_1(1^[])]   (14)  substitution:[[_G9009], [1^[]]]
+1.1.1.4.1  [-v1_relat_1(1^[])]   (1)  
+1.1.1.4.2  [-v1_funct_1(1^[])]   (2)  
+1.1.1.4.3  [-v1_finseq_1(1^[])]   (3)  
+1.1.1.5  [- (k2_finseq_1(k3_finseq_1(1^[]))=k9_xtuple_0(2^[])), k2_finseq_1(k3_finseq_1(1^[]))=k9_xtuple_0(1^[]), k9_xtuple_0(1^[])=k9_xtuple_0(2^[])]   (23)  substitution:[[_G3594, _G3707, _G3650], [k2_finseq_1(k3_finseq_1(1^[])), k9_xtuple_0(2^[]), k9_xtuple_0(1^[])]]
+1.1.1.5.1  [- (k2_finseq_1(k3_finseq_1(1^[]))=k9_xtuple_0(1^[])), v1_finseq_1(1^[]), v1_funct_1(1^[]), v1_relat_1(1^[]), m2_subset_1(k3_finseq_1(1^[]), k1_numbers, k5_numbers), k3_finseq_1(1^[])=k3_finseq_1(1^[])]   (12)  substitution:[[_G8615, _G8404], [k3_finseq_1(1^[]), 1^[]]]
+1.1.1.5.1.1  [-v1_finseq_1(1^[])]   (3)  
+1.1.1.5.1.2  [-v1_funct_1(1^[])]   (2)  
+1.1.1.5.1.3  [-v1_relat_1(1^[])]   (1)  
+1.1.1.5.1.4  [-m2_subset_1(k3_finseq_1(1^[]), k1_numbers, k5_numbers)]   (lemmata:1.1.1)  
+1.1.1.5.1.5  [- (k3_finseq_1(1^[])=k3_finseq_1(1^[])), 1^[]=1^[]]   (19)  substitution:[[_G8021, _G8070], [1^[], 1^[]]]
+1.1.1.5.1.5.1  [- (1^[]=1^[])]   (21)  substitution:[[_G3262], [1^[]]]
+1.1.1.5.2  [- (k9_xtuple_0(1^[])=k9_xtuple_0(2^[])), k9_xtuple_0(2^[])=k9_xtuple_0(1^[])]   (22)  substitution:[[_G3406, _G3361], [k9_xtuple_0(1^[]), k9_xtuple_0(2^[])]]
+1.1.1.5.2.1  [- (k9_xtuple_0(2^[])=k9_xtuple_0(1^[])), k9_xtuple_0(2^[])=k9_xtuple_0(k3_relat_1(1^[], 3^[])), k9_xtuple_0(k3_relat_1(1^[], 3^[]))=k9_xtuple_0(1^[])]   (23)  substitution:[[_G3594, _G3707, _G3650], [k9_xtuple_0(2^[]), k9_xtuple_0(1^[]), k9_xtuple_0(k3_relat_1(1^[], 3^[]))]]
+1.1.1.5.2.1.1  [- (k9_xtuple_0(2^[])=k9_xtuple_0(k3_relat_1(1^[], 3^[]))), 2^[]=k3_relat_1(1^[], 3^[])]   (18)  substitution:[[_G7155, _G7204], [2^[], k3_relat_1(1^[], 3^[])]]
+1.1.1.5.2.1.1.1  [- (2^[]=k3_relat_1(1^[], 3^[]))]   (10)  
+1.1.1.5.2.1.2  [- (k9_xtuple_0(k3_relat_1(1^[], 3^[]))=k9_xtuple_0(1^[])), v1_relat_1(1^[]), v1_relat_1(3^[]), r1_tarski(k10_xtuple_0(1^[]), k9_xtuple_0(3^[]))]   (15)  substitution:[[_G9333, _G9431], [1^[], 3^[]]]
+1.1.1.5.2.1.2.1  [-v1_relat_1(1^[])]   (1)  
+1.1.1.5.2.1.2.2  [-v1_relat_1(3^[])]   (7)  
+1.1.1.5.2.1.2.3  [-r1_tarski(k10_xtuple_0(1^[]), k9_xtuple_0(3^[]))]   (9)  
+------------------------------------------------------
+End of proof for t29_finseq_2

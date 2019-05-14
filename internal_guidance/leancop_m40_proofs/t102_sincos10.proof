@@ -1,0 +1,67 @@
+
+t102_sincos10 is a Theorem
+Start of proof for t102_sincos10
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-3^[], 1^[]=k1_real_1(np__1)]
+ (2)  [-3^[], - (k10_sincos10(1^[])=k32_sin_cos)]
+ (3)  [-3^[], -r1_xxreal_0(1^[], k1_real_1(np__1))]
+ (4)  [-3^[], -r1_xxreal_0(k1_real_1(k7_square_1(np__2)), 1^[])]
+ (5)  [-2^[], 1^[]=k1_real_1(k7_square_1(np__2))]
+ (6)  [-2^[], - (k10_sincos10(1^[])=k8_real_1(k10_real_1(np__3, np__4), k32_sin_cos))]
+ (7)  [-2^[], -r1_xxreal_0(1^[], k1_real_1(np__1))]
+ (8)  [-2^[], -r1_xxreal_0(k1_real_1(k7_square_1(np__2)), 1^[])]
+ (9)  [-m1_subset_1(1^[], k1_numbers)]
+ (10)  [2^[], 3^[]]
+ (11)  [- (k1_seq_1(k1_fdiff_9, k6_numbers)=np__1)]
+ (12)  [- (k1_seq_1(k1_fdiff_9, k10_real_1(k32_sin_cos, np__4))=k7_square_1(np__2))]
+ (13)  [- (k1_seq_1(k1_fdiff_9, k8_real_1(k10_real_1(np__3, np__4), k32_sin_cos))=k1_real_1(k7_square_1(np__2)))]
+ (14)  [- (k1_seq_1(k1_fdiff_9, k32_sin_cos)=k1_real_1(np__1))]
+ (15)  [m1_subset_1(_G8209, k1_numbers), - (k1_seq_1(k1_fdiff_9, k10_sincos10(_G8209))=_G8209), r1_xxreal_0(k1_real_1(k7_square_1(np__2)), _G8209), r1_xxreal_0(_G8209, k1_real_1(np__1))]
+ (16)  [- (_G2847=_G2847)]
+ (17)  [_G2946=_G2991, - (_G2991=_G2946)]
+ (18)  [- (_G3179=_G3292), _G3179=_G3235, _G3235=_G3292]
+ (19)  [-m1_subset_1(_G3696, _G3833), m1_subset_1(_G3629, _G3764), _G3629=_G3696, _G3764=_G3833]
+ (20)  [-r1_xxreal_0(_G4284, _G4421), r1_xxreal_0(_G4217, _G4352), _G4217=_G4284, _G4352=_G4421]
+ (21)  [- (k1_seq_1(_G4856, _G4991)=k1_seq_1(_G4923, _G5060)), _G4856=_G4923, _G4991=_G5060]
+ (22)  [- (k8_real_1(_G5453, _G5588)=k8_real_1(_G5520, _G5657)), _G5453=_G5520, _G5588=_G5657]
+ (23)  [- (k10_real_1(_G6050, _G6185)=k10_real_1(_G6117, _G6254)), _G6050=_G6117, _G6185=_G6254]
+ (24)  [_G6647=_G6696, - (k7_square_1(_G6647)=k7_square_1(_G6696))]
+ (25)  [_G6925=_G6974, - (k10_sincos10(_G6925)=k10_sincos10(_G6974))]
+ (26)  [_G7194=_G7243, - (k1_real_1(_G7194)=k1_real_1(_G7243))]
+
+Connection Proof:
+-----------------
+1  [2^[], 3^[]]   (10)  
+1.1  [-2^[], - (k10_sincos10(1^[])=k8_real_1(k10_real_1(np__3, np__4), k32_sin_cos))]   (6)  
+1.1.1  [k10_sincos10(1^[])=k8_real_1(k10_real_1(np__3, np__4), k32_sin_cos), - (k1_seq_1(k1_fdiff_9, k10_sincos10(1^[]))=k1_seq_1(k1_fdiff_9, k8_real_1(k10_real_1(np__3, np__4), k32_sin_cos))), k1_fdiff_9=k1_fdiff_9]   (21)  substitution:[[_G4991, _G5060, _G4856, _G4923], [k10_sincos10(1^[]), k8_real_1(k10_real_1(np__3, np__4), k32_sin_cos), k1_fdiff_9, k1_fdiff_9]]
+1.1.1.1  [k1_seq_1(k1_fdiff_9, k10_sincos10(1^[]))=k1_seq_1(k1_fdiff_9, k8_real_1(k10_real_1(np__3, np__4), k32_sin_cos)), - (1^[]=k1_seq_1(k1_fdiff_9, k8_real_1(k10_real_1(np__3, np__4), k32_sin_cos))), 1^[]=k1_seq_1(k1_fdiff_9, k10_sincos10(1^[]))]   (18)  substitution:[[_G3235, _G3292, _G3179], [k1_seq_1(k1_fdiff_9, k10_sincos10(1^[])), k1_seq_1(k1_fdiff_9, k8_real_1(k10_real_1(np__3, np__4), k32_sin_cos)), 1^[]]]
+1.1.1.1.1  [1^[]=k1_seq_1(k1_fdiff_9, k8_real_1(k10_real_1(np__3, np__4), k32_sin_cos)), - (1^[]=k1_real_1(k7_square_1(np__2))), k1_seq_1(k1_fdiff_9, k8_real_1(k10_real_1(np__3, np__4), k32_sin_cos))=k1_real_1(k7_square_1(np__2))]   (18)  substitution:[[_G3179, _G3235, _G3292], [1^[], k1_seq_1(k1_fdiff_9, k8_real_1(k10_real_1(np__3, np__4), k32_sin_cos)), k1_real_1(k7_square_1(np__2))]]
+1.1.1.1.1.1  [1^[]=k1_real_1(k7_square_1(np__2)), -2^[]]   (5)  
+1.1.1.1.1.1.1  [2^[]]   (reduction:1)  
+1.1.1.1.1.2  [- (k1_seq_1(k1_fdiff_9, k8_real_1(k10_real_1(np__3, np__4), k32_sin_cos))=k1_real_1(k7_square_1(np__2)))]   (13)  
+1.1.1.1.2  [- (1^[]=k1_seq_1(k1_fdiff_9, k10_sincos10(1^[]))), k1_seq_1(k1_fdiff_9, k10_sincos10(1^[]))=1^[]]   (17)  substitution:[[_G2991, _G2946], [1^[], k1_seq_1(k1_fdiff_9, k10_sincos10(1^[]))]]
+1.1.1.1.2.1  [- (k1_seq_1(k1_fdiff_9, k10_sincos10(1^[]))=1^[]), m1_subset_1(1^[], k1_numbers), r1_xxreal_0(k1_real_1(k7_square_1(np__2)), 1^[]), r1_xxreal_0(1^[], k1_real_1(np__1))]   (15)  substitution:[[_G8209], [1^[]]]
+1.1.1.1.2.1.1  [-m1_subset_1(1^[], k1_numbers)]   (9)  
+1.1.1.1.2.1.2  [-r1_xxreal_0(k1_real_1(k7_square_1(np__2)), 1^[]), -2^[]]   (8)  
+1.1.1.1.2.1.2.1  [2^[]]   (reduction:1)  
+1.1.1.1.2.1.3  [-r1_xxreal_0(1^[], k1_real_1(np__1)), -2^[]]   (7)  
+1.1.1.1.2.1.3.1  [2^[]]   (reduction:1)  
+1.1.1.2  [- (k1_fdiff_9=k1_fdiff_9)]   (16)  substitution:[[_G2847], [k1_fdiff_9]]
+1.2  [-3^[], - (k10_sincos10(1^[])=k32_sin_cos)]   (2)  
+1.2.1  [k10_sincos10(1^[])=k32_sin_cos, - (k1_seq_1(k1_fdiff_9, k10_sincos10(1^[]))=k1_seq_1(k1_fdiff_9, k32_sin_cos)), k1_fdiff_9=k1_fdiff_9]   (21)  substitution:[[_G4991, _G5060, _G4856, _G4923], [k10_sincos10(1^[]), k32_sin_cos, k1_fdiff_9, k1_fdiff_9]]
+1.2.1.1  [k1_seq_1(k1_fdiff_9, k10_sincos10(1^[]))=k1_seq_1(k1_fdiff_9, k32_sin_cos), - (1^[]=k1_seq_1(k1_fdiff_9, k32_sin_cos)), 1^[]=k1_seq_1(k1_fdiff_9, k10_sincos10(1^[]))]   (18)  substitution:[[_G3235, _G3292, _G3179], [k1_seq_1(k1_fdiff_9, k10_sincos10(1^[])), k1_seq_1(k1_fdiff_9, k32_sin_cos), 1^[]]]
+1.2.1.1.1  [1^[]=k1_seq_1(k1_fdiff_9, k32_sin_cos), - (1^[]=k1_real_1(np__1)), k1_seq_1(k1_fdiff_9, k32_sin_cos)=k1_real_1(np__1)]   (18)  substitution:[[_G3179, _G3235, _G3292], [1^[], k1_seq_1(k1_fdiff_9, k32_sin_cos), k1_real_1(np__1)]]
+1.2.1.1.1.1  [1^[]=k1_real_1(np__1), -3^[]]   (1)  
+1.2.1.1.1.1.1  [3^[]]   (reduction:1)  
+1.2.1.1.1.2  [- (k1_seq_1(k1_fdiff_9, k32_sin_cos)=k1_real_1(np__1))]   (14)  
+1.2.1.1.2  [- (1^[]=k1_seq_1(k1_fdiff_9, k10_sincos10(1^[]))), k1_seq_1(k1_fdiff_9, k10_sincos10(1^[]))=1^[]]   (17)  substitution:[[_G2991, _G2946], [1^[], k1_seq_1(k1_fdiff_9, k10_sincos10(1^[]))]]
+1.2.1.1.2.1  [- (k1_seq_1(k1_fdiff_9, k10_sincos10(1^[]))=1^[]), m1_subset_1(1^[], k1_numbers), r1_xxreal_0(k1_real_1(k7_square_1(np__2)), 1^[]), r1_xxreal_0(1^[], k1_real_1(np__1))]   (15)  substitution:[[_G8209], [1^[]]]
+1.2.1.1.2.1.1  [-m1_subset_1(1^[], k1_numbers)]   (9)  
+1.2.1.1.2.1.2  [-r1_xxreal_0(k1_real_1(k7_square_1(np__2)), 1^[]), -3^[]]   (4)  
+1.2.1.1.2.1.2.1  [3^[]]   (reduction:1)  
+1.2.1.1.2.1.3  [-r1_xxreal_0(1^[], k1_real_1(np__1)), -3^[]]   (3)  
+1.2.1.1.2.1.3.1  [3^[]]   (reduction:1)  
+1.2.1.2  [- (k1_fdiff_9=k1_fdiff_9)]   (16)  substitution:[[_G2847], [k1_fdiff_9]]
+------------------------------------------------------
+End of proof for t102_sincos10

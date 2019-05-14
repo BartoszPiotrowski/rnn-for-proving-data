@@ -1,0 +1,44 @@
+
+t46_cqc_sim1 is a Theorem
+Start of proof for t46_cqc_sim1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_qc_lang1(1^[])]
+ (2)  [-m2_subset_1(2^[], k9_qc_lang1(1^[]), k3_cqc_lang(1^[]))]
+ (3)  [-m2_subset_1(3^[], k9_qc_lang1(1^[]), k3_cqc_lang(1^[]))]
+ (4)  [-m2_subset_1(4^[], k9_qc_lang1(1^[]), k3_cqc_lang(1^[]))]
+ (5)  [-r2_cqc_sim1(1^[], 2^[], 3^[])]
+ (6)  [-r2_cqc_sim1(1^[], 3^[], 4^[])]
+ (7)  [r2_cqc_sim1(1^[], 2^[], 4^[])]
+ (8)  [m1_qc_lang1(_G6568), m2_subset_1(_G6684, k9_qc_lang1(_G6568), k3_cqc_lang(_G6568)), m2_subset_1(_G6892, k9_qc_lang1(_G6568), k3_cqc_lang(_G6568)), r2_cqc_sim1(_G6568, _G6684, _G6892), - (k14_cqc_sim1(_G6568, _G6684)=k14_cqc_sim1(_G6568, _G6892))]
+ (9)  [m1_qc_lang1(_G6568), m2_subset_1(_G6684, k9_qc_lang1(_G6568), k3_cqc_lang(_G6568)), m2_subset_1(_G6892, k9_qc_lang1(_G6568), k3_cqc_lang(_G6568)), -r2_cqc_sim1(_G6568, _G6684, _G6892), k14_cqc_sim1(_G6568, _G6684)=k14_cqc_sim1(_G6568, _G6892)]
+ (10)  [- (k14_cqc_sim1(_G5370, _G5505)=k14_cqc_sim1(_G5437, _G5574)), _G5370=_G5437, _G5505=_G5574]
+ (11)  [_G5967=_G6016, - (k9_qc_lang1(_G5967)=k9_qc_lang1(_G6016))]
+ (12)  [_G6236=_G6285, - (k3_cqc_lang(_G6236)=k3_cqc_lang(_G6285))]
+ (13)  [- (_G2200=_G2200)]
+ (14)  [_G2299=_G2344, - (_G2344=_G2299)]
+ (15)  [- (_G2532=_G2645), _G2532=_G2588, _G2588=_G2645]
+ (16)  [-m1_qc_lang1(_G3031), _G2982=_G3031, m1_qc_lang1(_G2982)]
+ (17)  [-m2_subset_1(_G3345, _G3518, _G3695), m2_subset_1(_G3260, _G3431, _G3606), _G3260=_G3345, _G3431=_G3518, _G3606=_G3695]
+ (18)  [-r2_cqc_sim1(_G4364, _G4537, _G4714), r2_cqc_sim1(_G4279, _G4450, _G4625), _G4279=_G4364, _G4450=_G4537, _G4625=_G4714]
+
+Connection Proof:
+-----------------
+1  [r2_cqc_sim1(1^[], 2^[], 4^[])]   (7)  
+1.1  [-r2_cqc_sim1(1^[], 2^[], 4^[]), m1_qc_lang1(1^[]), m2_subset_1(2^[], k9_qc_lang1(1^[]), k3_cqc_lang(1^[])), m2_subset_1(4^[], k9_qc_lang1(1^[]), k3_cqc_lang(1^[])), k14_cqc_sim1(1^[], 2^[])=k14_cqc_sim1(1^[], 4^[])]   (9)  substitution:[[_G6568, _G6684, _G6892], [1^[], 2^[], 4^[]]]
+1.1.1  [-m1_qc_lang1(1^[])]   (1)  
+1.1.2  [-m2_subset_1(2^[], k9_qc_lang1(1^[]), k3_cqc_lang(1^[]))]   (2)  
+1.1.3  [-m2_subset_1(4^[], k9_qc_lang1(1^[]), k3_cqc_lang(1^[]))]   (4)  
+1.1.4  [- (k14_cqc_sim1(1^[], 2^[])=k14_cqc_sim1(1^[], 4^[])), k14_cqc_sim1(1^[], 2^[])=k14_cqc_sim1(1^[], 3^[]), k14_cqc_sim1(1^[], 3^[])=k14_cqc_sim1(1^[], 4^[])]   (15)  substitution:[[_G2532, _G2645, _G2588], [k14_cqc_sim1(1^[], 2^[]), k14_cqc_sim1(1^[], 4^[]), k14_cqc_sim1(1^[], 3^[])]]
+1.1.4.1  [- (k14_cqc_sim1(1^[], 2^[])=k14_cqc_sim1(1^[], 3^[])), m1_qc_lang1(1^[]), m2_subset_1(2^[], k9_qc_lang1(1^[]), k3_cqc_lang(1^[])), m2_subset_1(3^[], k9_qc_lang1(1^[]), k3_cqc_lang(1^[])), r2_cqc_sim1(1^[], 2^[], 3^[])]   (8)  substitution:[[_G6568, _G6684, _G6892], [1^[], 2^[], 3^[]]]
+1.1.4.1.1  [-m1_qc_lang1(1^[])]   (1)  
+1.1.4.1.2  [-m2_subset_1(2^[], k9_qc_lang1(1^[]), k3_cqc_lang(1^[]))]   (2)  
+1.1.4.1.3  [-m2_subset_1(3^[], k9_qc_lang1(1^[]), k3_cqc_lang(1^[]))]   (3)  
+1.1.4.1.4  [-r2_cqc_sim1(1^[], 2^[], 3^[])]   (5)  
+1.1.4.2  [- (k14_cqc_sim1(1^[], 3^[])=k14_cqc_sim1(1^[], 4^[])), m1_qc_lang1(1^[]), m2_subset_1(3^[], k9_qc_lang1(1^[]), k3_cqc_lang(1^[])), m2_subset_1(4^[], k9_qc_lang1(1^[]), k3_cqc_lang(1^[])), r2_cqc_sim1(1^[], 3^[], 4^[])]   (8)  substitution:[[_G6568, _G6684, _G6892], [1^[], 3^[], 4^[]]]
+1.1.4.2.1  [-m1_qc_lang1(1^[])]   (1)  
+1.1.4.2.2  [-m2_subset_1(3^[], k9_qc_lang1(1^[]), k3_cqc_lang(1^[]))]   (3)  
+1.1.4.2.3  [-m2_subset_1(4^[], k9_qc_lang1(1^[]), k3_cqc_lang(1^[]))]   (4)  
+1.1.4.2.4  [-r2_cqc_sim1(1^[], 3^[], 4^[])]   (6)  
+------------------------------------------------------
+End of proof for t46_cqc_sim1

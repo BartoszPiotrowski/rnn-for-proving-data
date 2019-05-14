@@ -1,0 +1,26 @@
+
+t40_zfmisc_1 is a Theorem
+Start of proof for t40_zfmisc_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-r2_hidden(1^[], 2^[])]
+ (2)  [k2_xboole_0(k1_tarski(1^[]), 2^[])=2^[]]
+ (3)  [r1_tarski(_G4642, _G4690), - (k2_xboole_0(_G4642, _G4690)=_G4690)]
+ (4)  [r1_tarski(k1_tarski(_G4391), _G4438), -r2_hidden(_G4391, _G4438)]
+ (5)  [-r1_tarski(k1_tarski(_G4391), _G4438), r2_hidden(_G4391, _G4438)]
+ (6)  [_G4071=_G4120, - (k1_tarski(_G4071)=k1_tarski(_G4120))]
+ (7)  [- (k2_xboole_0(_G3483, _G3618)=k2_xboole_0(_G3550, _G3687)), _G3483=_G3550, _G3618=_G3687]
+ (8)  [- (_G1474=_G1474)]
+ (9)  [_G1573=_G1618, - (_G1618=_G1573)]
+ (10)  [- (_G1806=_G1919), _G1806=_G1862, _G1862=_G1919]
+ (11)  [-r1_tarski(_G2323, _G2460), r1_tarski(_G2256, _G2391), _G2256=_G2323, _G2391=_G2460]
+ (12)  [-r2_hidden(_G2911, _G3048), r2_hidden(_G2844, _G2979), _G2844=_G2911, _G2979=_G3048]
+
+Connection Proof:
+-----------------
+1  [k2_xboole_0(k1_tarski(1^[]), 2^[])=2^[]]   (2)  
+1.1  [- (k2_xboole_0(k1_tarski(1^[]), 2^[])=2^[]), r1_tarski(k1_tarski(1^[]), 2^[])]   (3)  substitution:[[_G4642, _G4690], [k1_tarski(1^[]), 2^[]]]
+1.1.1  [-r1_tarski(k1_tarski(1^[]), 2^[]), r2_hidden(1^[], 2^[])]   (5)  substitution:[[_G4391, _G4438], [1^[], 2^[]]]
+1.1.1.1  [-r2_hidden(1^[], 2^[])]   (1)  
+------------------------------------------------------
+End of proof for t40_zfmisc_1

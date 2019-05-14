@@ -1,0 +1,44 @@
+
+t1_fintopo3 is a Theorem
+Start of proof for t1_fintopo3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(4^[])]
+ (2)  [-l1_orders_2(4^[])]
+ (3)  [-m1_subset_1(5^[], k1_zfmisc_1(u1_struct_0(4^[])))]
+ (4)  [-v3_orders_2(4^[])]
+ (5)  [r1_tarski(5^[], k12_fin_topo(4^[], 5^[]))]
+ (6)  [-r1_tarski(_G1294, _G1350), -r2_hidden(1^[_G1350, _G1294], _G1294)]
+ (7)  [-r1_tarski(_G1294, _G1350), r2_hidden(1^[_G1350, _G1294], _G1350)]
+ (8)  [r1_tarski(_G1294, _G1350), r2_hidden(_G1464, _G1294), -r2_hidden(_G1464, _G1350)]
+ (9)  [l1_orders_2(_G1696), -v2_struct_0(_G1696), -v3_orders_2(_G1696), -m1_subset_1(2^[_G1696], u1_struct_0(_G1696))]
+ (10)  [l1_orders_2(_G1696), -v2_struct_0(_G1696), -v3_orders_2(_G1696), r2_hidden(2^[_G1696], k1_fin_topo(_G1696, 2^[_G1696]))]
+ (11)  [l1_orders_2(_G1696), -v2_struct_0(_G1696), v3_orders_2(_G1696), m1_subset_1(_G1894, u1_struct_0(_G1696)), -r2_hidden(_G1894, k1_fin_topo(_G1696, _G1894))]
+ (12)  [-m1_subset_1(_G3270, _G3387), r2_hidden(_G3270, _G3328), m1_subset_1(_G3328, k1_zfmisc_1(_G3387))]
+ (13)  [l1_orders_2(_G2191), -v2_struct_0(_G2191), m1_subset_1(_G2395, u1_struct_0(_G2191)), m1_subset_1(_G2560, k1_zfmisc_1(u1_struct_0(_G2191))), r2_hidden(_G2395, k12_fin_topo(_G2191, _G2560)), -m1_subset_1(3^[_G2560, _G2395, _G2191], u1_struct_0(_G2191))]
+ (14)  [l1_orders_2(_G2191), -v2_struct_0(_G2191), m1_subset_1(_G2395, u1_struct_0(_G2191)), m1_subset_1(_G2560, k1_zfmisc_1(u1_struct_0(_G2191))), r2_hidden(_G2395, k12_fin_topo(_G2191, _G2560)), -r2_hidden(3^[_G2560, _G2395, _G2191], _G2560)]
+ (15)  [l1_orders_2(_G2191), -v2_struct_0(_G2191), m1_subset_1(_G2395, u1_struct_0(_G2191)), m1_subset_1(_G2560, k1_zfmisc_1(u1_struct_0(_G2191))), r2_hidden(_G2395, k12_fin_topo(_G2191, _G2560)), -r2_hidden(_G2395, k1_fin_topo(_G2191, 3^[_G2560, _G2395, _G2191]))]
+ (16)  [l1_orders_2(_G2191), -v2_struct_0(_G2191), m1_subset_1(_G2395, u1_struct_0(_G2191)), m1_subset_1(_G2560, k1_zfmisc_1(u1_struct_0(_G2191))), -r2_hidden(_G2395, k12_fin_topo(_G2191, _G2560)), m1_subset_1(_G2828, u1_struct_0(_G2191)), r2_hidden(_G2828, _G2560), r2_hidden(_G2395, k1_fin_topo(_G2191, _G2828))]
+
+Connection Proof:
+-----------------
+1  [v2_struct_0(4^[])]   (1)  
+1.1  [-v2_struct_0(4^[]), l1_orders_2(4^[]), v3_orders_2(4^[]), m1_subset_1(1^[k12_fin_topo(4^[], 5^[]), 5^[]], u1_struct_0(4^[])), -r2_hidden(1^[k12_fin_topo(4^[], 5^[]), 5^[]], k1_fin_topo(4^[], 1^[k12_fin_topo(4^[], 5^[]), 5^[]]))]   (11)  substitution:[[_G1696, _G1894], [4^[], 1^[k12_fin_topo(4^[], 5^[]), 5^[]]]]
+1.1.1  [-l1_orders_2(4^[])]   (2)  
+1.1.2  [-v3_orders_2(4^[])]   (4)  
+1.1.3  [-m1_subset_1(1^[k12_fin_topo(4^[], 5^[]), 5^[]], u1_struct_0(4^[])), r2_hidden(1^[k12_fin_topo(4^[], 5^[]), 5^[]], 5^[]), m1_subset_1(5^[], k1_zfmisc_1(u1_struct_0(4^[])))]   (12)  substitution:[[_G3270, _G3387, _G3328], [1^[k12_fin_topo(4^[], 5^[]), 5^[]], u1_struct_0(4^[]), 5^[]]]
+1.1.3.1  [-r2_hidden(1^[k12_fin_topo(4^[], 5^[]), 5^[]], 5^[]), -r1_tarski(5^[], k12_fin_topo(4^[], 5^[]))]   (6)  substitution:[[_G1350, _G1294], [k12_fin_topo(4^[], 5^[]), 5^[]]]
+1.1.3.1.1  [r1_tarski(5^[], k12_fin_topo(4^[], 5^[]))]   (5)  
+1.1.3.2  [-m1_subset_1(5^[], k1_zfmisc_1(u1_struct_0(4^[])))]   (3)  
+1.1.4  [r2_hidden(1^[k12_fin_topo(4^[], 5^[]), 5^[]], k1_fin_topo(4^[], 1^[k12_fin_topo(4^[], 5^[]), 5^[]])), l1_orders_2(4^[]), -v2_struct_0(4^[]), m1_subset_1(1^[k12_fin_topo(4^[], 5^[]), 5^[]], u1_struct_0(4^[])), m1_subset_1(5^[], k1_zfmisc_1(u1_struct_0(4^[]))), -r2_hidden(1^[k12_fin_topo(4^[], 5^[]), 5^[]], k12_fin_topo(4^[], 5^[])), m1_subset_1(1^[k12_fin_topo(4^[], 5^[]), 5^[]], u1_struct_0(4^[])), r2_hidden(1^[k12_fin_topo(4^[], 5^[]), 5^[]], 5^[])]   (16)  substitution:[[_G2395, _G2191, _G2828, _G2560], [1^[k12_fin_topo(4^[], 5^[]), 5^[]], 4^[], 1^[k12_fin_topo(4^[], 5^[]), 5^[]], 5^[]]]
+1.1.4.1  [-l1_orders_2(4^[])]   (2)  
+1.1.4.2  [v2_struct_0(4^[])]   (1)  
+1.1.4.3  [-m1_subset_1(1^[k12_fin_topo(4^[], 5^[]), 5^[]], u1_struct_0(4^[]))]   (lemmata:1.1)  
+1.1.4.4  [-m1_subset_1(5^[], k1_zfmisc_1(u1_struct_0(4^[])))]   (3)  
+1.1.4.5  [r2_hidden(1^[k12_fin_topo(4^[], 5^[]), 5^[]], k12_fin_topo(4^[], 5^[])), -r1_tarski(5^[], k12_fin_topo(4^[], 5^[]))]   (7)  substitution:[[_G1350, _G1294], [k12_fin_topo(4^[], 5^[]), 5^[]]]
+1.1.4.5.1  [r1_tarski(5^[], k12_fin_topo(4^[], 5^[]))]   (5)  
+1.1.4.6  [-m1_subset_1(1^[k12_fin_topo(4^[], 5^[]), 5^[]], u1_struct_0(4^[]))]   (lemmata:1.1.4)  
+1.1.4.7  [-r2_hidden(1^[k12_fin_topo(4^[], 5^[]), 5^[]], 5^[]), -r1_tarski(5^[], k12_fin_topo(4^[], 5^[]))]   (6)  substitution:[[_G1350, _G1294], [k12_fin_topo(4^[], 5^[]), 5^[]]]
+1.1.4.7.1  [r1_tarski(5^[], k12_fin_topo(4^[], 5^[]))]   (5)  
+------------------------------------------------------
+End of proof for t1_fintopo3

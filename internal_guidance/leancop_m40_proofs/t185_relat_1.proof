@@ -1,0 +1,32 @@
+
+t185_relat_1 is a Theorem
+Start of proof for t185_relat_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(3^[])]
+ (2)  [-v4_relat_1(3^[], 1^[])]
+ (3)  [-v5_relat_1(3^[], 2^[])]
+ (4)  [r1_tarski(3^[], k2_zfmisc_1(1^[], 2^[]))]
+ (5)  [v1_relat_1(_G1212), v4_relat_1(_G1212, _G1160), -r1_tarski(k9_xtuple_0(_G1212), _G1160)]
+ (6)  [v1_relat_1(_G1212), -v4_relat_1(_G1212, _G1160), r1_tarski(k9_xtuple_0(_G1212), _G1160)]
+ (7)  [v1_relat_1(_G1535), v5_relat_1(_G1535, _G1483), -r1_tarski(k10_xtuple_0(_G1535), _G1483)]
+ (8)  [v1_relat_1(_G1535), -v5_relat_1(_G1535, _G1483), r1_tarski(k10_xtuple_0(_G1535), _G1483)]
+ (9)  [-r1_tarski(_G1806, _G1919), r1_tarski(_G1806, _G1862), r1_tarski(_G1862, _G1919)]
+ (10)  [v1_relat_1(_G2214), -r1_tarski(_G2214, k2_zfmisc_1(k9_xtuple_0(_G2214), k10_xtuple_0(_G2214)))]
+ (11)  [-r1_tarski(k2_zfmisc_1(_G2436, _G2571), k2_zfmisc_1(_G2503, _G2640)), r1_tarski(_G2436, _G2503), r1_tarski(_G2571, _G2640)]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(3^[], k2_zfmisc_1(1^[], 2^[]))]   (4)  
+1.1  [-r1_tarski(3^[], k2_zfmisc_1(1^[], 2^[])), r1_tarski(3^[], k2_zfmisc_1(k9_xtuple_0(3^[]), k10_xtuple_0(3^[]))), r1_tarski(k2_zfmisc_1(k9_xtuple_0(3^[]), k10_xtuple_0(3^[])), k2_zfmisc_1(1^[], 2^[]))]   (9)  substitution:[[_G1806, _G1919, _G1862], [3^[], k2_zfmisc_1(1^[], 2^[]), k2_zfmisc_1(k9_xtuple_0(3^[]), k10_xtuple_0(3^[]))]]
+1.1.1  [-r1_tarski(3^[], k2_zfmisc_1(k9_xtuple_0(3^[]), k10_xtuple_0(3^[]))), v1_relat_1(3^[])]   (10)  substitution:[[_G2214], [3^[]]]
+1.1.1.1  [-v1_relat_1(3^[])]   (1)  
+1.1.2  [-r1_tarski(k2_zfmisc_1(k9_xtuple_0(3^[]), k10_xtuple_0(3^[])), k2_zfmisc_1(1^[], 2^[])), r1_tarski(k9_xtuple_0(3^[]), 1^[]), r1_tarski(k10_xtuple_0(3^[]), 2^[])]   (11)  substitution:[[_G2436, _G2571, _G2503, _G2640], [k9_xtuple_0(3^[]), k10_xtuple_0(3^[]), 1^[], 2^[]]]
+1.1.2.1  [-r1_tarski(k9_xtuple_0(3^[]), 1^[]), v1_relat_1(3^[]), v4_relat_1(3^[], 1^[])]   (5)  substitution:[[_G1212, _G1160], [3^[], 1^[]]]
+1.1.2.1.1  [-v1_relat_1(3^[])]   (1)  
+1.1.2.1.2  [-v4_relat_1(3^[], 1^[])]   (2)  
+1.1.2.2  [-r1_tarski(k10_xtuple_0(3^[]), 2^[]), v1_relat_1(3^[]), v5_relat_1(3^[], 2^[])]   (7)  substitution:[[_G1535, _G1483], [3^[], 2^[]]]
+1.1.2.2.1  [-v1_relat_1(3^[])]   (1)  
+1.1.2.2.2  [-v5_relat_1(3^[], 2^[])]   (3)  
+------------------------------------------------------
+End of proof for t185_relat_1

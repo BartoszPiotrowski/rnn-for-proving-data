@@ -1,0 +1,34 @@
+
+t11_catalg_1 is a Theorem
+Start of proof for t11_catalg_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [- (k5_catalg_1(1^[])=k5_catalg_1(2^[]))]
+ (2)  [1^[]=2^[]]
+ (3)  [- (k4_tarski(_G4909, _G4959)=k2_tarski(k2_tarski(_G4909, _G4959), k1_tarski(_G4909)))]
+ (4)  [- (k5_catalg_1(_G5214)=k4_tarski(np__1, k9_finseq_1(_G5214)))]
+ (5)  [k9_finseq_1(_G5387)=k9_finseq_1(_G5436), - (_G5387=_G5436)]
+ (6)  [k4_tarski(_G5656, _G5723)=k4_tarski(_G5791, _G5860), - (_G5656=_G5791)]
+ (7)  [k4_tarski(_G5656, _G5723)=k4_tarski(_G5791, _G5860), - (_G5723=_G5860)]
+ (8)  [- (_G2003=_G2003)]
+ (9)  [_G2102=_G2147, - (_G2147=_G2102)]
+ (10)  [- (_G2335=_G2448), _G2335=_G2391, _G2391=_G2448]
+ (11)  [- (k2_tarski(_G2785, _G2920)=k2_tarski(_G2852, _G2989)), _G2785=_G2852, _G2920=_G2989]
+ (12)  [_G3382=_G3431, - (k1_tarski(_G3382)=k1_tarski(_G3431))]
+ (13)  [_G3660=_G3709, - (k9_finseq_1(_G3660)=k9_finseq_1(_G3709))]
+ (14)  [_G4526=_G4575, - (k5_catalg_1(_G4526)=k5_catalg_1(_G4575))]
+ (15)  [- (k4_tarski(_G3938, _G4073)=k4_tarski(_G4005, _G4142)), _G3938=_G4005, _G4073=_G4142]
+
+Connection Proof:
+-----------------
+1  [1^[]=2^[]]   (2)  
+1.1  [- (1^[]=2^[]), k9_finseq_1(1^[])=k9_finseq_1(2^[])]   (5)  substitution:[[_G5387, _G5436], [1^[], 2^[]]]
+1.1.1  [- (k9_finseq_1(1^[])=k9_finseq_1(2^[])), k4_tarski(np__1, k9_finseq_1(1^[]))=k4_tarski(np__1, k9_finseq_1(2^[]))]   (7)  substitution:[[_G5723, _G5860, _G5656, _G5791], [k9_finseq_1(1^[]), k9_finseq_1(2^[]), np__1, np__1]]
+1.1.1.1  [- (k4_tarski(np__1, k9_finseq_1(1^[]))=k4_tarski(np__1, k9_finseq_1(2^[]))), k4_tarski(np__1, k9_finseq_1(1^[]))=k5_catalg_1(1^[]), k5_catalg_1(1^[])=k4_tarski(np__1, k9_finseq_1(2^[]))]   (10)  substitution:[[_G2335, _G2448, _G2391], [k4_tarski(np__1, k9_finseq_1(1^[])), k4_tarski(np__1, k9_finseq_1(2^[])), k5_catalg_1(1^[])]]
+1.1.1.1.1  [- (k4_tarski(np__1, k9_finseq_1(1^[]))=k5_catalg_1(1^[])), k5_catalg_1(1^[])=k4_tarski(np__1, k9_finseq_1(1^[]))]   (9)  substitution:[[_G2147, _G2102], [k4_tarski(np__1, k9_finseq_1(1^[])), k5_catalg_1(1^[])]]
+1.1.1.1.1.1  [- (k5_catalg_1(1^[])=k4_tarski(np__1, k9_finseq_1(1^[])))]   (4)  substitution:[[_G5214], [1^[]]]
+1.1.1.1.2  [- (k5_catalg_1(1^[])=k4_tarski(np__1, k9_finseq_1(2^[]))), k5_catalg_1(1^[])=k5_catalg_1(2^[]), k5_catalg_1(2^[])=k4_tarski(np__1, k9_finseq_1(2^[]))]   (10)  substitution:[[_G2335, _G2448, _G2391], [k5_catalg_1(1^[]), k4_tarski(np__1, k9_finseq_1(2^[])), k5_catalg_1(2^[])]]
+1.1.1.1.2.1  [- (k5_catalg_1(1^[])=k5_catalg_1(2^[]))]   (1)  
+1.1.1.1.2.2  [- (k5_catalg_1(2^[])=k4_tarski(np__1, k9_finseq_1(2^[])))]   (4)  substitution:[[_G5214], [2^[]]]
+------------------------------------------------------
+End of proof for t11_catalg_1

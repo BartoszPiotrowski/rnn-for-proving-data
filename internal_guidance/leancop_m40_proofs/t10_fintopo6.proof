@@ -1,0 +1,56 @@
+
+t10_fintopo6 is a Theorem
+Start of proof for t10_fintopo6
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(3^[])]
+ (2)  [-l1_orders_2(3^[])]
+ (3)  [-m1_fintopo6(4^[], 3^[])]
+ (4)  [-m1_subset_1(5^[], k1_zfmisc_1(u1_struct_0(4^[])))]
+ (5)  [m1_subset_1(5^[], k1_zfmisc_1(u1_struct_0(3^[])))]
+ (6)  [l1_orders_2(_G9948), l1_orders_2(_G10079), -m1_fintopo6(_G10079, _G9948), r1_tarski(u1_struct_0(_G10079), u1_struct_0(_G9948)), -m1_subset_1(1^[_G10079, _G9948], u1_struct_0(_G10079))]
+ (7)  [l1_orders_2(_G9948), l1_orders_2(_G10079), -m1_fintopo6(_G10079, _G9948), r1_tarski(u1_struct_0(_G10079), u1_struct_0(_G9948)), -r2_hidden(1^[_G10079, _G9948], u1_struct_0(_G10079))]
+ (8)  [l1_orders_2(_G9948), l1_orders_2(_G10079), -m1_fintopo6(_G10079, _G9948), r1_tarski(u1_struct_0(_G10079), u1_struct_0(_G9948)), k1_fin_topo(_G10079, 1^[_G10079, _G9948])=k3_xboole_0(k9_relat_1(u1_orders_2(_G9948), 1^[_G10079, _G9948]), u1_struct_0(_G10079))]
+ (9)  [l1_orders_2(_G9948), l1_orders_2(_G10079), m1_fintopo6(_G10079, _G9948), -r1_tarski(u1_struct_0(_G10079), u1_struct_0(_G9948))]
+ (10)  [l1_orders_2(_G9948), l1_orders_2(_G10079), m1_fintopo6(_G10079, _G9948), m1_subset_1(_G10348, u1_struct_0(_G10079)), r2_hidden(_G10348, u1_struct_0(_G10079)), - (k1_fin_topo(_G10079, _G10348)=k3_xboole_0(k9_relat_1(u1_orders_2(_G9948), _G10348), u1_struct_0(_G10079)))]
+ (11)  [-r1_tarski(_G10917, _G10973), -r2_hidden(2^[_G10973, _G10917], _G10917)]
+ (12)  [-r1_tarski(_G10917, _G10973), r2_hidden(2^[_G10973, _G10917], _G10973)]
+ (13)  [r1_tarski(_G10917, _G10973), r2_hidden(_G11087, _G10917), -r2_hidden(_G11087, _G10973)]
+ (14)  [l1_orders_2(_G11319), m1_fintopo6(_G11400, _G11319), -l1_orders_2(_G11400)]
+ (15)  [m1_subset_1(_G11583, k1_zfmisc_1(_G11630)), -r1_tarski(_G11583, _G11630)]
+ (16)  [-m1_subset_1(_G11583, k1_zfmisc_1(_G11630)), r1_tarski(_G11583, _G11630)]
+ (17)  [- (k1_fin_topo(_G7206, _G7341)=k1_fin_topo(_G7273, _G7410)), _G7206=_G7273, _G7341=_G7410]
+ (18)  [- (k3_xboole_0(_G7803, _G7938)=k3_xboole_0(_G7870, _G8007)), _G7803=_G7870, _G7938=_G8007]
+ (19)  [- (k9_relat_1(_G8400, _G8535)=k9_relat_1(_G8467, _G8604)), _G8400=_G8467, _G8535=_G8604]
+ (20)  [_G8997=_G9046, - (u1_orders_2(_G8997)=u1_orders_2(_G9046))]
+ (21)  [_G9275=_G9324, - (k1_zfmisc_1(_G9275)=k1_zfmisc_1(_G9324))]
+ (22)  [_G9544=_G9593, - (u1_struct_0(_G9544)=u1_struct_0(_G9593))]
+ (23)  [- (_G3363=_G3363)]
+ (24)  [_G3462=_G3507, - (_G3507=_G3462)]
+ (25)  [- (_G3695=_G3808), _G3695=_G3751, _G3751=_G3808]
+ (26)  [-r2_hidden(_G4212, _G4349), r2_hidden(_G4145, _G4280), _G4145=_G4212, _G4280=_G4349]
+ (27)  [-r1_tarski(_G4809, _G4946), r1_tarski(_G4742, _G4877), _G4742=_G4809, _G4877=_G4946]
+ (28)  [-v2_struct_0(_G5388), _G5339=_G5388, v2_struct_0(_G5339)]
+ (29)  [-l1_orders_2(_G5666), _G5617=_G5666, l1_orders_2(_G5617)]
+ (30)  [-m1_fintopo6(_G5962, _G6099), m1_fintopo6(_G5895, _G6030), _G5895=_G5962, _G6030=_G6099]
+ (31)  [-m1_subset_1(_G6550, _G6687), m1_subset_1(_G6483, _G6618), _G6483=_G6550, _G6618=_G6687]
+
+Connection Proof:
+-----------------
+1  [m1_subset_1(5^[], k1_zfmisc_1(u1_struct_0(3^[])))]   (5)  
+1.1  [-m1_subset_1(5^[], k1_zfmisc_1(u1_struct_0(3^[]))), r1_tarski(5^[], u1_struct_0(3^[]))]   (16)  substitution:[[_G11583, _G11630], [5^[], u1_struct_0(3^[])]]
+1.1.1  [-r1_tarski(5^[], u1_struct_0(3^[])), r2_hidden(2^[u1_struct_0(3^[]), 5^[]], u1_struct_0(3^[]))]   (12)  substitution:[[_G10917, _G10973], [5^[], u1_struct_0(3^[])]]
+1.1.1.1  [-r2_hidden(2^[u1_struct_0(3^[]), 5^[]], u1_struct_0(3^[])), r1_tarski(u1_struct_0(4^[]), u1_struct_0(3^[])), r2_hidden(2^[u1_struct_0(3^[]), 5^[]], u1_struct_0(4^[]))]   (13)  substitution:[[_G11087, _G10973, _G10917], [2^[u1_struct_0(3^[]), 5^[]], u1_struct_0(3^[]), u1_struct_0(4^[])]]
+1.1.1.1.1  [-r1_tarski(u1_struct_0(4^[]), u1_struct_0(3^[])), l1_orders_2(3^[]), l1_orders_2(4^[]), m1_fintopo6(4^[], 3^[])]   (9)  substitution:[[_G10079, _G9948], [4^[], 3^[]]]
+1.1.1.1.1.1  [-l1_orders_2(3^[])]   (2)  
+1.1.1.1.1.2  [-l1_orders_2(4^[]), l1_orders_2(3^[]), m1_fintopo6(4^[], 3^[])]   (14)  substitution:[[_G11400, _G11319], [4^[], 3^[]]]
+1.1.1.1.1.2.1  [-l1_orders_2(3^[])]   (2)  
+1.1.1.1.1.2.2  [-m1_fintopo6(4^[], 3^[])]   (3)  
+1.1.1.1.1.3  [-m1_fintopo6(4^[], 3^[])]   (3)  
+1.1.1.1.2  [-r2_hidden(2^[u1_struct_0(3^[]), 5^[]], u1_struct_0(4^[])), r1_tarski(5^[], u1_struct_0(4^[])), r2_hidden(2^[u1_struct_0(3^[]), 5^[]], 5^[])]   (13)  substitution:[[_G11087, _G10973, _G10917], [2^[u1_struct_0(3^[]), 5^[]], u1_struct_0(4^[]), 5^[]]]
+1.1.1.1.2.1  [-r1_tarski(5^[], u1_struct_0(4^[])), m1_subset_1(5^[], k1_zfmisc_1(u1_struct_0(4^[])))]   (15)  substitution:[[_G11583, _G11630], [5^[], u1_struct_0(4^[])]]
+1.1.1.1.2.1.1  [-m1_subset_1(5^[], k1_zfmisc_1(u1_struct_0(4^[])))]   (4)  
+1.1.1.1.2.2  [-r2_hidden(2^[u1_struct_0(3^[]), 5^[]], 5^[]), -r1_tarski(5^[], u1_struct_0(3^[]))]   (11)  substitution:[[_G10973, _G10917], [u1_struct_0(3^[]), 5^[]]]
+1.1.1.1.2.2.1  [r1_tarski(5^[], u1_struct_0(3^[]))]   (reduction:1.1)  
+------------------------------------------------------
+End of proof for t10_fintopo6

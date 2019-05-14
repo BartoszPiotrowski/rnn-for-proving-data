@@ -1,0 +1,35 @@
+
+l8_xcmplx_0 is a Theorem
+Start of proof for l8_xcmplx_0
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], k1_numbers)]
+ (2)  [-m1_subset_1(2^[], k1_numbers)]
+ (3)  [-m1_subset_1(3^[], k1_numbers)]
+ (4)  [- (k1_arytm_0(1^[], 2^[])=k6_numbers)]
+ (5)  [- (k1_arytm_0(1^[], 3^[])=k6_numbers)]
+ (6)  [2^[]=3^[]]
+ (7)  [m1_subset_1(_G3851, k1_numbers), m1_subset_1(_G3970, k1_numbers), _G3970=k3_arytm_0(_G3851), - (k1_arytm_0(_G3851, _G3970)=k6_numbers)]
+ (8)  [m1_subset_1(_G3851, k1_numbers), m1_subset_1(_G3970, k1_numbers), - (_G3970=k3_arytm_0(_G3851)), k1_arytm_0(_G3851, _G3970)=k6_numbers]
+ (9)  [_G2952=_G3001, - (k3_arytm_0(_G2952)=k3_arytm_0(_G3001))]
+ (10)  [- (k1_arytm_0(_G3221, _G3356)=k1_arytm_0(_G3288, _G3425)), _G3221=_G3288, _G3356=_G3425]
+ (11)  [-m1_subset_1(_G2401, _G2538), m1_subset_1(_G2334, _G2469), _G2334=_G2401, _G2469=_G2538]
+ (12)  [- (_G1561=_G1561)]
+ (13)  [_G1660=_G1705, - (_G1705=_G1660)]
+ (14)  [- (_G1893=_G2006), _G1893=_G1949, _G1949=_G2006]
+
+Connection Proof:
+-----------------
+1  [2^[]=3^[]]   (6)  
+1.1  [- (2^[]=3^[]), 2^[]=k3_arytm_0(1^[]), k3_arytm_0(1^[])=3^[]]   (14)  substitution:[[_G1893, _G2006, _G1949], [2^[], 3^[], k3_arytm_0(1^[])]]
+1.1.1  [- (2^[]=k3_arytm_0(1^[])), m1_subset_1(1^[], k1_numbers), m1_subset_1(2^[], k1_numbers), k1_arytm_0(1^[], 2^[])=k6_numbers]   (8)  substitution:[[_G3970, _G3851], [2^[], 1^[]]]
+1.1.1.1  [-m1_subset_1(1^[], k1_numbers)]   (1)  
+1.1.1.2  [-m1_subset_1(2^[], k1_numbers)]   (2)  
+1.1.1.3  [- (k1_arytm_0(1^[], 2^[])=k6_numbers)]   (4)  
+1.1.2  [- (k3_arytm_0(1^[])=3^[]), 3^[]=k3_arytm_0(1^[])]   (13)  substitution:[[_G1705, _G1660], [k3_arytm_0(1^[]), 3^[]]]
+1.1.2.1  [- (3^[]=k3_arytm_0(1^[])), m1_subset_1(1^[], k1_numbers), m1_subset_1(3^[], k1_numbers), k1_arytm_0(1^[], 3^[])=k6_numbers]   (8)  substitution:[[_G3970, _G3851], [3^[], 1^[]]]
+1.1.2.1.1  [-m1_subset_1(1^[], k1_numbers)]   (1)  
+1.1.2.1.2  [-m1_subset_1(3^[], k1_numbers)]   (3)  
+1.1.2.1.3  [- (k1_arytm_0(1^[], 3^[])=k6_numbers)]   (5)  
+------------------------------------------------------
+End of proof for l8_xcmplx_0

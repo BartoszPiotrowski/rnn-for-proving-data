@@ -1,0 +1,59 @@
+
+t15_card_fil is a Theorem
+Start of proof for t15_card_fil
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-5^[], r2_hidden(3^[], k3_card_fil(2^[]))]
+ (2)  [-5^[], -m1_card_fil(3^[], 2^[])]
+ (3)  [-4^[], m1_card_fil(3^[], 2^[])]
+ (4)  [-4^[], -r2_hidden(3^[], k3_card_fil(2^[]))]
+ (5)  [v1_xboole_0(2^[])]
+ (6)  [4^[], 5^[]]
+ (7)  [-v1_xboole_0(_G6460), - (k3_card_fil(_G6460)=a_1_0_card_fil(_G6460))]
+ (8)  [-v1_xboole_0(_G6665), m1_card_fil(_G6774, _G6665), v1_xboole_0(_G6774)]
+ (9)  [-v1_xboole_0(_G6665), m1_card_fil(_G6774, _G6665), -m1_subset_1(_G6774, k1_zfmisc_1(k1_zfmisc_1(_G6665)))]
+ (10)  [-v1_xboole_0(_G7726), r2_hidden(_G7780, a_1_0_card_fil(_G7726)), -m1_card_fil(_G7780, _G7726)]
+ (11)  [-v1_xboole_0(_G7173), r2_hidden(_G7098, a_1_0_card_fil(_G7173)), -m1_subset_1(1^[_G7173, _G7098], k1_zfmisc_1(k1_zfmisc_1(_G7173)))]
+ (12)  [-v1_xboole_0(_G7173), r2_hidden(_G7098, a_1_0_card_fil(_G7173)), - (_G7098=1^[_G7173, _G7098])]
+ (13)  [-v1_xboole_0(_G7173), r2_hidden(_G7098, a_1_0_card_fil(_G7173)), -m1_card_fil(1^[_G7173, _G7098], _G7173)]
+ (14)  [-v1_xboole_0(_G7173), -r2_hidden(_G7098, a_1_0_card_fil(_G7173)), m1_subset_1(_G7366, k1_zfmisc_1(k1_zfmisc_1(_G7173))), _G7098=_G7366, m1_card_fil(_G7366, _G7173)]
+ (15)  [_G5572=_G5621, - (k1_zfmisc_1(_G5572)=k1_zfmisc_1(_G5621))]
+ (16)  [_G5850=_G5899, - (a_1_0_card_fil(_G5850)=a_1_0_card_fil(_G5899))]
+ (17)  [_G6119=_G6168, - (k3_card_fil(_G6119)=k3_card_fil(_G6168))]
+ (18)  [- (_G2646=_G2646)]
+ (19)  [_G2745=_G2790, - (_G2790=_G2745)]
+ (20)  [- (_G2978=_G3091), _G2978=_G3034, _G3034=_G3091]
+ (21)  [-m1_subset_1(_G3495, _G3632), m1_subset_1(_G3428, _G3563), _G3428=_G3495, _G3563=_G3632]
+ (22)  [-v1_xboole_0(_G4074), _G4025=_G4074, v1_xboole_0(_G4025)]
+ (23)  [-r2_hidden(_G4370, _G4507), r2_hidden(_G4303, _G4438), _G4303=_G4370, _G4438=_G4507]
+ (24)  [-m1_card_fil(_G4958, _G5095), m1_card_fil(_G4891, _G5026), _G4891=_G4958, _G5026=_G5095]
+
+Connection Proof:
+-----------------
+1  [4^[], 5^[]]   (6)  
+1.1  [-4^[], m1_card_fil(3^[], 2^[])]   (3)  
+1.1.1  [-m1_card_fil(3^[], 2^[]), -v1_xboole_0(2^[]), r2_hidden(3^[], a_1_0_card_fil(2^[]))]   (10)  substitution:[[_G7780, _G7726], [3^[], 2^[]]]
+1.1.1.1  [v1_xboole_0(2^[])]   (5)  
+1.1.1.2  [-r2_hidden(3^[], a_1_0_card_fil(2^[])), r2_hidden(3^[], k3_card_fil(2^[])), 3^[]=3^[], k3_card_fil(2^[])=a_1_0_card_fil(2^[])]   (23)  substitution:[[_G4370, _G4507, _G4303, _G4438], [3^[], a_1_0_card_fil(2^[]), 3^[], k3_card_fil(2^[])]]
+1.1.1.2.1  [-r2_hidden(3^[], k3_card_fil(2^[])), -4^[]]   (4)  
+1.1.1.2.1.1  [4^[]]   (reduction:1)  
+1.1.1.2.2  [- (3^[]=3^[])]   (18)  substitution:[[_G2646], [3^[]]]
+1.1.1.2.3  [- (k3_card_fil(2^[])=a_1_0_card_fil(2^[])), -v1_xboole_0(2^[])]   (7)  substitution:[[_G6460], [2^[]]]
+1.1.1.2.3.1  [v1_xboole_0(2^[])]   (5)  
+1.2  [-5^[], r2_hidden(3^[], k3_card_fil(2^[]))]   (1)  
+1.2.1  [-r2_hidden(3^[], k3_card_fil(2^[])), r2_hidden(3^[], a_1_0_card_fil(2^[])), 3^[]=3^[], a_1_0_card_fil(2^[])=k3_card_fil(2^[])]   (23)  substitution:[[_G4370, _G4507, _G4303, _G4438], [3^[], k3_card_fil(2^[]), 3^[], a_1_0_card_fil(2^[])]]
+1.2.1.1  [-r2_hidden(3^[], a_1_0_card_fil(2^[])), -v1_xboole_0(2^[]), m1_subset_1(3^[], k1_zfmisc_1(k1_zfmisc_1(2^[]))), 3^[]=3^[], m1_card_fil(3^[], 2^[])]   (14)  substitution:[[_G7098, _G7173, _G7366], [3^[], 2^[], 3^[]]]
+1.2.1.1.1  [v1_xboole_0(2^[])]   (5)  
+1.2.1.1.2  [-m1_subset_1(3^[], k1_zfmisc_1(k1_zfmisc_1(2^[]))), -v1_xboole_0(2^[]), m1_card_fil(3^[], 2^[])]   (9)  substitution:[[_G6774, _G6665], [3^[], 2^[]]]
+1.2.1.1.2.1  [v1_xboole_0(2^[])]   (5)  
+1.2.1.1.2.2  [-m1_card_fil(3^[], 2^[]), -5^[]]   (2)  
+1.2.1.1.2.2.1  [5^[]]   (reduction:1)  
+1.2.1.1.3  [- (3^[]=3^[])]   (18)  substitution:[[_G2646], [3^[]]]
+1.2.1.1.4  [-m1_card_fil(3^[], 2^[]), -5^[]]   (2)  
+1.2.1.1.4.1  [5^[]]   (reduction:1)  
+1.2.1.2  [- (3^[]=3^[])]   (18)  substitution:[[_G2646], [3^[]]]
+1.2.1.3  [- (a_1_0_card_fil(2^[])=k3_card_fil(2^[])), k3_card_fil(2^[])=a_1_0_card_fil(2^[])]   (19)  substitution:[[_G2790, _G2745], [a_1_0_card_fil(2^[]), k3_card_fil(2^[])]]
+1.2.1.3.1  [- (k3_card_fil(2^[])=a_1_0_card_fil(2^[])), -v1_xboole_0(2^[])]   (7)  substitution:[[_G6460], [2^[]]]
+1.2.1.3.1.1  [v1_xboole_0(2^[])]   (5)  
+------------------------------------------------------
+End of proof for t15_card_fil

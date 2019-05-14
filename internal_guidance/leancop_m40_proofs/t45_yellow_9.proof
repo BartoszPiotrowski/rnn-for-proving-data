@@ -1,0 +1,45 @@
+
+t45_yellow_9 is a Theorem
+Start of proof for t45_yellow_9
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-l1_waybel_9(1^[])]
+ (2)  [-m1_yellow_9(2^[], 1^[])]
+ (3)  [m1_yellow_9(1^[], 2^[])]
+ (4)  [l1_orders_2(_G5522), l1_waybel_9(_G5623), m1_yellow_9(_G5623, _G5522), - (g1_orders_2(u1_struct_0(_G5623), u1_orders_2(_G5623))=g1_orders_2(u1_struct_0(_G5522), u1_orders_2(_G5522)))]
+ (5)  [l1_orders_2(_G5522), l1_waybel_9(_G5623), -m1_yellow_9(_G5623, _G5522), g1_orders_2(u1_struct_0(_G5623), u1_orders_2(_G5623))=g1_orders_2(u1_struct_0(_G5522), u1_orders_2(_G5522))]
+ (6)  [l1_waybel_9(_G6047), -l1_pre_topc(_G6047)]
+ (7)  [l1_waybel_9(_G6047), -l1_orders_2(_G6047)]
+ (8)  [l1_orders_2(_G6227), m1_yellow_9(_G6308, _G6227), -l1_waybel_9(_G6308)]
+ (9)  [- (g1_orders_2(_G4315, _G4450)=g1_orders_2(_G4382, _G4519)), _G4315=_G4382, _G4450=_G4519]
+ (10)  [_G4912=_G4961, - (u1_struct_0(_G4912)=u1_struct_0(_G4961))]
+ (11)  [_G5181=_G5230, - (u1_orders_2(_G5181)=u1_orders_2(_G5230))]
+ (12)  [- (_G2027=_G2027)]
+ (13)  [_G2126=_G2171, - (_G2171=_G2126)]
+ (14)  [- (_G2359=_G2472), _G2359=_G2415, _G2415=_G2472]
+ (15)  [-l1_pre_topc(_G2858), _G2809=_G2858, l1_pre_topc(_G2809)]
+ (16)  [-l1_orders_2(_G3136), _G3087=_G3136, l1_orders_2(_G3087)]
+ (17)  [-l1_waybel_9(_G3414), _G3365=_G3414, l1_waybel_9(_G3365)]
+ (18)  [-m1_yellow_9(_G3701, _G3838), m1_yellow_9(_G3634, _G3769), _G3634=_G3701, _G3769=_G3838]
+
+Connection Proof:
+-----------------
+1  [m1_yellow_9(1^[], 2^[])]   (3)  
+1.1  [-m1_yellow_9(1^[], 2^[]), l1_orders_2(2^[]), l1_waybel_9(1^[]), g1_orders_2(u1_struct_0(1^[]), u1_orders_2(1^[]))=g1_orders_2(u1_struct_0(2^[]), u1_orders_2(2^[]))]   (5)  substitution:[[_G5623, _G5522], [1^[], 2^[]]]
+1.1.1  [-l1_orders_2(2^[]), l1_waybel_9(2^[])]   (7)  substitution:[[_G6047], [2^[]]]
+1.1.1.1  [-l1_waybel_9(2^[]), l1_orders_2(1^[]), m1_yellow_9(2^[], 1^[])]   (8)  substitution:[[_G6308, _G6227], [2^[], 1^[]]]
+1.1.1.1.1  [-l1_orders_2(1^[]), l1_waybel_9(1^[])]   (7)  substitution:[[_G6047], [1^[]]]
+1.1.1.1.1.1  [-l1_waybel_9(1^[])]   (1)  
+1.1.1.1.2  [-m1_yellow_9(2^[], 1^[])]   (2)  
+1.1.2  [-l1_waybel_9(1^[])]   (1)  
+1.1.3  [- (g1_orders_2(u1_struct_0(1^[]), u1_orders_2(1^[]))=g1_orders_2(u1_struct_0(2^[]), u1_orders_2(2^[]))), g1_orders_2(u1_struct_0(2^[]), u1_orders_2(2^[]))=g1_orders_2(u1_struct_0(1^[]), u1_orders_2(1^[]))]   (13)  substitution:[[_G2171, _G2126], [g1_orders_2(u1_struct_0(1^[]), u1_orders_2(1^[])), g1_orders_2(u1_struct_0(2^[]), u1_orders_2(2^[]))]]
+1.1.3.1  [- (g1_orders_2(u1_struct_0(2^[]), u1_orders_2(2^[]))=g1_orders_2(u1_struct_0(1^[]), u1_orders_2(1^[]))), l1_orders_2(1^[]), l1_waybel_9(2^[]), m1_yellow_9(2^[], 1^[])]   (4)  substitution:[[_G5623, _G5522], [2^[], 1^[]]]
+1.1.3.1.1  [-l1_orders_2(1^[]), l1_waybel_9(1^[])]   (7)  substitution:[[_G6047], [1^[]]]
+1.1.3.1.1.1  [-l1_waybel_9(1^[])]   (1)  
+1.1.3.1.2  [-l1_waybel_9(2^[]), l1_orders_2(1^[]), m1_yellow_9(2^[], 1^[])]   (8)  substitution:[[_G6308, _G6227], [2^[], 1^[]]]
+1.1.3.1.2.1  [-l1_orders_2(1^[]), l1_waybel_9(1^[])]   (7)  substitution:[[_G6047], [1^[]]]
+1.1.3.1.2.1.1  [-l1_waybel_9(1^[])]   (1)  
+1.1.3.1.2.2  [-m1_yellow_9(2^[], 1^[])]   (2)  
+1.1.3.1.3  [-m1_yellow_9(2^[], 1^[])]   (2)  
+------------------------------------------------------
+End of proof for t45_yellow_9

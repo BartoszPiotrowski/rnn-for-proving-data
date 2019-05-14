@@ -1,0 +1,35 @@
+
+t17_zfmisc_1 is a Theorem
+Start of proof for t17_zfmisc_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [2^[]=3^[]]
+ (2)  [k4_xboole_0(k2_tarski(2^[], 3^[]), k1_tarski(3^[]))=k1_tarski(2^[])]
+ (3)  [k4_xboole_0(k2_tarski(_G5179, _G5251), _G5324)=k1_tarski(_G5179), r2_hidden(_G5179, _G5324)]
+ (4)  [k4_xboole_0(k2_tarski(_G5179, _G5251), _G5324)=k1_tarski(_G5179), -r2_hidden(_G5251, _G5324), - (_G5179=_G5251)]
+ (5)  [- (k4_xboole_0(k2_tarski(_G5179, _G5251), _G5324)=k1_tarski(_G5179)), -r2_hidden(_G5179, _G5324), r2_hidden(_G5251, _G5324)]
+ (6)  [- (k4_xboole_0(k2_tarski(_G5179, _G5251), _G5324)=k1_tarski(_G5179)), -r2_hidden(_G5179, _G5324), _G5179=_G5251]
+ (7)  [_G4826=k1_tarski(_G4768), r2_hidden(_G4956, _G4826), - (_G4956=_G4768)]
+ (8)  [_G4826=k1_tarski(_G4768), -r2_hidden(_G4956, _G4826), _G4956=_G4768]
+ (9)  [- (_G4826=k1_tarski(_G4768)), r2_hidden(1^[_G4826, _G4768], _G4826), 1^[_G4826, _G4768]=_G4768]
+ (10)  [- (_G4826=k1_tarski(_G4768)), -r2_hidden(1^[_G4826, _G4768], _G4826), - (1^[_G4826, _G4768]=_G4768)]
+ (11)  [- (k4_xboole_0(_G3242, _G3377)=k4_xboole_0(_G3309, _G3446)), _G3242=_G3309, _G3377=_G3446]
+ (12)  [_G4427=_G4476, - (k1_tarski(_G4427)=k1_tarski(_G4476))]
+ (13)  [- (k2_tarski(_G3839, _G3974)=k2_tarski(_G3906, _G4043)), _G3839=_G3906, _G3974=_G4043]
+ (14)  [-r2_hidden(_G2691, _G2828), r2_hidden(_G2624, _G2759), _G2624=_G2691, _G2759=_G2828]
+ (15)  [- (_G1851=_G1851)]
+ (16)  [_G1950=_G1995, - (_G1995=_G1950)]
+ (17)  [- (_G2183=_G2296), _G2183=_G2239, _G2239=_G2296]
+
+Connection Proof:
+-----------------
+1  [k4_xboole_0(k2_tarski(2^[], 3^[]), k1_tarski(3^[]))=k1_tarski(2^[])]   (2)  
+1.1  [- (k4_xboole_0(k2_tarski(2^[], 3^[]), k1_tarski(3^[]))=k1_tarski(2^[])), -r2_hidden(2^[], k1_tarski(3^[])), r2_hidden(3^[], k1_tarski(3^[]))]   (5)  substitution:[[_G5179, _G5251, _G5324], [2^[], 3^[], k1_tarski(3^[])]]
+1.1.1  [r2_hidden(2^[], k1_tarski(3^[])), k1_tarski(3^[])=k1_tarski(3^[]), - (2^[]=3^[])]   (7)  substitution:[[_G4956, _G4826, _G4768], [2^[], k1_tarski(3^[]), 3^[]]]
+1.1.1.1  [- (k1_tarski(3^[])=k1_tarski(3^[]))]   (15)  substitution:[[_G1851], [k1_tarski(3^[])]]
+1.1.1.2  [2^[]=3^[]]   (1)  
+1.1.2  [-r2_hidden(3^[], k1_tarski(3^[])), k1_tarski(3^[])=k1_tarski(3^[]), 3^[]=3^[]]   (8)  substitution:[[_G4956, _G4826, _G4768], [3^[], k1_tarski(3^[]), 3^[]]]
+1.1.2.1  [- (k1_tarski(3^[])=k1_tarski(3^[]))]   (15)  substitution:[[_G1851], [k1_tarski(3^[])]]
+1.1.2.2  [- (3^[]=3^[])]   (15)  substitution:[[_G1851], [3^[]]]
+------------------------------------------------------
+End of proof for t17_zfmisc_1

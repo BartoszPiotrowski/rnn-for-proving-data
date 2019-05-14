@@ -1,0 +1,47 @@
+
+t98_sin_cos6 is a Theorem
+Start of proof for t98_sin_cos6
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xreal_0(1^[])]
+ (2)  [-r1_xxreal_0(k1_real_1(np__1), 1^[])]
+ (3)  [-r1_xxreal_0(1^[], np__1)]
+ (4)  [- (k6_sin_cos6(1^[])=k32_sin_cos)]
+ (5)  [1^[]=k1_real_1(np__1)]
+ (6)  [- (k21_sin_cos(k10_real_1(k32_sin_cos, np__2))=k6_numbers)]
+ (7)  [- (k18_sin_cos(k10_real_1(k32_sin_cos, np__2))=np__1)]
+ (8)  [- (k21_sin_cos(k32_sin_cos)=k1_real_1(np__1))]
+ (9)  [- (k18_sin_cos(k32_sin_cos)=k6_numbers)]
+ (10)  [- (k21_sin_cos(k7_real_1(k32_sin_cos, k10_real_1(k32_sin_cos, np__2)))=k6_numbers)]
+ (11)  [- (k18_sin_cos(k7_real_1(k32_sin_cos, k10_real_1(k32_sin_cos, np__2)))=k1_real_1(np__1))]
+ (12)  [- (k21_sin_cos(k8_real_1(np__2, k32_sin_cos))=np__1)]
+ (13)  [- (k18_sin_cos(k8_real_1(np__2, k32_sin_cos))=k6_numbers)]
+ (14)  [v1_xreal_0(_G8495), - (k21_sin_cos(k6_sin_cos6(_G8495))=_G8495), r1_xxreal_0(k1_real_1(np__1), _G8495), r1_xxreal_0(_G8495, np__1)]
+ (15)  [- (_G2718=_G2718)]
+ (16)  [_G2817=_G2862, - (_G2862=_G2817)]
+ (17)  [- (_G3050=_G3163), _G3050=_G3106, _G3106=_G3163]
+ (18)  [-v1_xreal_0(_G3549), _G3500=_G3549, v1_xreal_0(_G3500)]
+ (19)  [-r1_xxreal_0(_G3836, _G3973), r1_xxreal_0(_G3769, _G3904), _G3769=_G3836, _G3904=_G3973]
+ (20)  [- (k7_real_1(_G4408, _G4543)=k7_real_1(_G4475, _G4612)), _G4408=_G4475, _G4543=_G4612]
+ (21)  [- (k10_real_1(_G5005, _G5140)=k10_real_1(_G5072, _G5209)), _G5005=_G5072, _G5140=_G5209]
+ (22)  [_G5602=_G5651, - (k18_sin_cos(_G5602)=k18_sin_cos(_G5651))]
+ (23)  [- (k8_real_1(_G5880, _G6015)=k8_real_1(_G5947, _G6084)), _G5880=_G5947, _G6015=_G6084]
+ (24)  [_G6477=_G6526, - (k21_sin_cos(_G6477)=k21_sin_cos(_G6526))]
+ (25)  [_G6755=_G6804, - (k6_sin_cos6(_G6755)=k6_sin_cos6(_G6804))]
+ (26)  [_G7024=_G7073, - (k1_real_1(_G7024)=k1_real_1(_G7073))]
+
+Connection Proof:
+-----------------
+1  [1^[]=k1_real_1(np__1)]   (5)  
+1.1  [- (1^[]=k1_real_1(np__1)), 1^[]=k21_sin_cos(k6_sin_cos6(1^[])), k21_sin_cos(k6_sin_cos6(1^[]))=k1_real_1(np__1)]   (17)  substitution:[[_G3050, _G3163, _G3106], [1^[], k1_real_1(np__1), k21_sin_cos(k6_sin_cos6(1^[]))]]
+1.1.1  [- (1^[]=k21_sin_cos(k6_sin_cos6(1^[]))), k21_sin_cos(k6_sin_cos6(1^[]))=1^[]]   (16)  substitution:[[_G2862, _G2817], [1^[], k21_sin_cos(k6_sin_cos6(1^[]))]]
+1.1.1.1  [- (k21_sin_cos(k6_sin_cos6(1^[]))=1^[]), v1_xreal_0(1^[]), r1_xxreal_0(k1_real_1(np__1), 1^[]), r1_xxreal_0(1^[], np__1)]   (14)  substitution:[[_G8495], [1^[]]]
+1.1.1.1.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.1.1.2  [-r1_xxreal_0(k1_real_1(np__1), 1^[])]   (2)  
+1.1.1.1.3  [-r1_xxreal_0(1^[], np__1)]   (3)  
+1.1.2  [- (k21_sin_cos(k6_sin_cos6(1^[]))=k1_real_1(np__1)), k21_sin_cos(k6_sin_cos6(1^[]))=k21_sin_cos(k32_sin_cos), k21_sin_cos(k32_sin_cos)=k1_real_1(np__1)]   (17)  substitution:[[_G3050, _G3163, _G3106], [k21_sin_cos(k6_sin_cos6(1^[])), k1_real_1(np__1), k21_sin_cos(k32_sin_cos)]]
+1.1.2.1  [- (k21_sin_cos(k6_sin_cos6(1^[]))=k21_sin_cos(k32_sin_cos)), k6_sin_cos6(1^[])=k32_sin_cos]   (24)  substitution:[[_G6477, _G6526], [k6_sin_cos6(1^[]), k32_sin_cos]]
+1.1.2.1.1  [- (k6_sin_cos6(1^[])=k32_sin_cos)]   (4)  
+1.1.2.2  [- (k21_sin_cos(k32_sin_cos)=k1_real_1(np__1))]   (8)  
+------------------------------------------------------
+End of proof for t98_sin_cos6

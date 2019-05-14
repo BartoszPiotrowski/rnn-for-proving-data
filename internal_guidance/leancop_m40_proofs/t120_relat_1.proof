@@ -1,0 +1,39 @@
+
+t120_relat_1 is a Theorem
+Start of proof for t120_relat_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(3^[])]
+ (2)  [k7_relat_1(3^[], k2_xboole_0(1^[], 2^[]))=k2_xboole_0(k7_relat_1(3^[], 1^[]), k7_relat_1(3^[], 2^[]))]
+ (3)  [v1_relat_1(_G5350), - (k10_xtuple_0(k5_relat_1(_G5350, _G5298))=k7_relat_1(_G5350, _G5298))]
+ (4)  [- (k10_xtuple_0(k2_xboole_0(_G5621, _G5672))=k2_xboole_0(k10_xtuple_0(_G5621), k10_xtuple_0(_G5672)))]
+ (5)  [v1_relat_1(_G6037), - (k5_relat_1(_G6037, k2_xboole_0(_G5908, _G5972))=k2_xboole_0(k5_relat_1(_G6037, _G5908), k5_relat_1(_G6037, _G5972)))]
+ (6)  [-v1_relat_1(_G2904), _G2855=_G2904, v1_relat_1(_G2855)]
+ (7)  [- (_G2082=_G2082)]
+ (8)  [_G2181=_G2226, - (_G2226=_G2181)]
+ (9)  [- (_G2414=_G2527), _G2414=_G2470, _G2470=_G2527]
+ (10)  [_G3154=_G3203, - (k10_xtuple_0(_G3154)=k10_xtuple_0(_G3203))]
+ (11)  [- (k5_relat_1(_G3432, _G3567)=k5_relat_1(_G3499, _G3636)), _G3432=_G3499, _G3567=_G3636]
+ (12)  [- (k2_xboole_0(_G4029, _G4164)=k2_xboole_0(_G4096, _G4233)), _G4029=_G4096, _G4164=_G4233]
+ (13)  [- (k7_relat_1(_G4617, _G4752)=k7_relat_1(_G4684, _G4821)), _G4617=_G4684, _G4752=_G4821]
+
+Connection Proof:
+-----------------
+1  [k7_relat_1(3^[], k2_xboole_0(1^[], 2^[]))=k2_xboole_0(k7_relat_1(3^[], 1^[]), k7_relat_1(3^[], 2^[]))]   (2)  
+1.1  [- (k7_relat_1(3^[], k2_xboole_0(1^[], 2^[]))=k2_xboole_0(k7_relat_1(3^[], 1^[]), k7_relat_1(3^[], 2^[]))), k7_relat_1(3^[], k2_xboole_0(1^[], 2^[]))=k10_xtuple_0(k2_xboole_0(k5_relat_1(3^[], 1^[]), k5_relat_1(3^[], 2^[]))), k10_xtuple_0(k2_xboole_0(k5_relat_1(3^[], 1^[]), k5_relat_1(3^[], 2^[])))=k2_xboole_0(k7_relat_1(3^[], 1^[]), k7_relat_1(3^[], 2^[]))]   (9)  substitution:[[_G2414, _G2527, _G2470], [k7_relat_1(3^[], k2_xboole_0(1^[], 2^[])), k2_xboole_0(k7_relat_1(3^[], 1^[]), k7_relat_1(3^[], 2^[])), k10_xtuple_0(k2_xboole_0(k5_relat_1(3^[], 1^[]), k5_relat_1(3^[], 2^[])))]]
+1.1.1  [- (k7_relat_1(3^[], k2_xboole_0(1^[], 2^[]))=k10_xtuple_0(k2_xboole_0(k5_relat_1(3^[], 1^[]), k5_relat_1(3^[], 2^[])))), k7_relat_1(3^[], k2_xboole_0(1^[], 2^[]))=k10_xtuple_0(k5_relat_1(3^[], k2_xboole_0(1^[], 2^[]))), k10_xtuple_0(k5_relat_1(3^[], k2_xboole_0(1^[], 2^[])))=k10_xtuple_0(k2_xboole_0(k5_relat_1(3^[], 1^[]), k5_relat_1(3^[], 2^[])))]   (9)  substitution:[[_G2414, _G2527, _G2470], [k7_relat_1(3^[], k2_xboole_0(1^[], 2^[])), k10_xtuple_0(k2_xboole_0(k5_relat_1(3^[], 1^[]), k5_relat_1(3^[], 2^[]))), k10_xtuple_0(k5_relat_1(3^[], k2_xboole_0(1^[], 2^[])))]]
+1.1.1.1  [- (k7_relat_1(3^[], k2_xboole_0(1^[], 2^[]))=k10_xtuple_0(k5_relat_1(3^[], k2_xboole_0(1^[], 2^[])))), k10_xtuple_0(k5_relat_1(3^[], k2_xboole_0(1^[], 2^[])))=k7_relat_1(3^[], k2_xboole_0(1^[], 2^[]))]   (8)  substitution:[[_G2226, _G2181], [k7_relat_1(3^[], k2_xboole_0(1^[], 2^[])), k10_xtuple_0(k5_relat_1(3^[], k2_xboole_0(1^[], 2^[])))]]
+1.1.1.1.1  [- (k10_xtuple_0(k5_relat_1(3^[], k2_xboole_0(1^[], 2^[])))=k7_relat_1(3^[], k2_xboole_0(1^[], 2^[]))), v1_relat_1(3^[])]   (3)  substitution:[[_G5350, _G5298], [3^[], k2_xboole_0(1^[], 2^[])]]
+1.1.1.1.1.1  [-v1_relat_1(3^[])]   (1)  
+1.1.1.2  [- (k10_xtuple_0(k5_relat_1(3^[], k2_xboole_0(1^[], 2^[])))=k10_xtuple_0(k2_xboole_0(k5_relat_1(3^[], 1^[]), k5_relat_1(3^[], 2^[])))), k5_relat_1(3^[], k2_xboole_0(1^[], 2^[]))=k2_xboole_0(k5_relat_1(3^[], 1^[]), k5_relat_1(3^[], 2^[]))]   (10)  substitution:[[_G3154, _G3203], [k5_relat_1(3^[], k2_xboole_0(1^[], 2^[])), k2_xboole_0(k5_relat_1(3^[], 1^[]), k5_relat_1(3^[], 2^[]))]]
+1.1.1.2.1  [- (k5_relat_1(3^[], k2_xboole_0(1^[], 2^[]))=k2_xboole_0(k5_relat_1(3^[], 1^[]), k5_relat_1(3^[], 2^[]))), v1_relat_1(3^[])]   (5)  substitution:[[_G6037, _G5908, _G5972], [3^[], 1^[], 2^[]]]
+1.1.1.2.1.1  [-v1_relat_1(3^[])]   (1)  
+1.1.2  [- (k10_xtuple_0(k2_xboole_0(k5_relat_1(3^[], 1^[]), k5_relat_1(3^[], 2^[])))=k2_xboole_0(k7_relat_1(3^[], 1^[]), k7_relat_1(3^[], 2^[]))), k10_xtuple_0(k2_xboole_0(k5_relat_1(3^[], 1^[]), k5_relat_1(3^[], 2^[])))=k2_xboole_0(k10_xtuple_0(k5_relat_1(3^[], 1^[])), k10_xtuple_0(k5_relat_1(3^[], 2^[]))), k2_xboole_0(k10_xtuple_0(k5_relat_1(3^[], 1^[])), k10_xtuple_0(k5_relat_1(3^[], 2^[])))=k2_xboole_0(k7_relat_1(3^[], 1^[]), k7_relat_1(3^[], 2^[]))]   (9)  substitution:[[_G2414, _G2527, _G2470], [k10_xtuple_0(k2_xboole_0(k5_relat_1(3^[], 1^[]), k5_relat_1(3^[], 2^[]))), k2_xboole_0(k7_relat_1(3^[], 1^[]), k7_relat_1(3^[], 2^[])), k2_xboole_0(k10_xtuple_0(k5_relat_1(3^[], 1^[])), k10_xtuple_0(k5_relat_1(3^[], 2^[])))]]
+1.1.2.1  [- (k10_xtuple_0(k2_xboole_0(k5_relat_1(3^[], 1^[]), k5_relat_1(3^[], 2^[])))=k2_xboole_0(k10_xtuple_0(k5_relat_1(3^[], 1^[])), k10_xtuple_0(k5_relat_1(3^[], 2^[]))))]   (4)  substitution:[[_G5621, _G5672], [k5_relat_1(3^[], 1^[]), k5_relat_1(3^[], 2^[])]]
+1.1.2.2  [- (k2_xboole_0(k10_xtuple_0(k5_relat_1(3^[], 1^[])), k10_xtuple_0(k5_relat_1(3^[], 2^[])))=k2_xboole_0(k7_relat_1(3^[], 1^[]), k7_relat_1(3^[], 2^[]))), k10_xtuple_0(k5_relat_1(3^[], 1^[]))=k7_relat_1(3^[], 1^[]), k10_xtuple_0(k5_relat_1(3^[], 2^[]))=k7_relat_1(3^[], 2^[])]   (12)  substitution:[[_G4029, _G4164, _G4096, _G4233], [k10_xtuple_0(k5_relat_1(3^[], 1^[])), k10_xtuple_0(k5_relat_1(3^[], 2^[])), k7_relat_1(3^[], 1^[]), k7_relat_1(3^[], 2^[])]]
+1.1.2.2.1  [- (k10_xtuple_0(k5_relat_1(3^[], 1^[]))=k7_relat_1(3^[], 1^[])), v1_relat_1(3^[])]   (3)  substitution:[[_G5350, _G5298], [3^[], 1^[]]]
+1.1.2.2.1.1  [-v1_relat_1(3^[])]   (1)  
+1.1.2.2.2  [- (k10_xtuple_0(k5_relat_1(3^[], 2^[]))=k7_relat_1(3^[], 2^[])), v1_relat_1(3^[])]   (3)  substitution:[[_G5350, _G5298], [3^[], 2^[]]]
+1.1.2.2.2.1  [-v1_relat_1(3^[])]   (1)  
+------------------------------------------------------
+End of proof for t120_relat_1

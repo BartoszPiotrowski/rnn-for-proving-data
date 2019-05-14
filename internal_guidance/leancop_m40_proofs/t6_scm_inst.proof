@@ -1,0 +1,64 @@
+
+t6_scm_inst is a Theorem
+Start of proof for t6_scm_inst
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(2^[], k3_scm_inst)]
+ (2)  [-m1_subset_1(3^[], k5_numbers)]
+ (3)  [-m1_subset_1(4^[], k7_card_1(np__9))]
+ (4)  [- (2^[]=k3_xtuple_0(4^[], k12_finseq_1(k5_numbers, 3^[]), k1_xboole_0))]
+ (5)  [k6_scm_inst(2^[])=3^[]]
+ (6)  [v1_xboole_0(_G10099), -v1_finset_1(_G10099)]
+ (7)  [-m2_finseq_1(k12_finseq_1(_G11577, _G11632), _G11577), -v1_xboole_0(_G11577), m1_subset_1(_G11632, _G11577)]
+ (8)  [v1_finset_1(k4_ordinal1)]
+ (9)  [- (k5_xtuple_0(k3_xtuple_0(_G11991, _G12041, _G12092))=_G12041)]
+ (10)  [- (k5_numbers=k4_ordinal1)]
+ (11)  [-v1_xboole_0(_G12369), m1_subset_1(_G12474, _G12369), - (k7_partfun1(_G12369, k12_finseq_1(_G12369, _G12474), np__1)=_G12474)]
+ (12)  [m1_subset_1(_G10230, k3_scm_inst), _G10230=k3_xtuple_0(_G10534, k12_finseq_1(k5_numbers, _G10413), k1_xboole_0), m1_subset_1(_G10534, k7_card_1(np__9)), m1_subset_1(_G10413, k5_numbers), m1_subset_1(_G10891, k5_numbers), _G10891=k6_scm_inst(_G10230), -m2_finseq_1(1^[_G10891, _G10230], k5_numbers)]
+ (13)  [m1_subset_1(_G10230, k3_scm_inst), _G10230=k3_xtuple_0(_G10534, k12_finseq_1(k5_numbers, _G10413), k1_xboole_0), m1_subset_1(_G10534, k7_card_1(np__9)), m1_subset_1(_G10413, k5_numbers), m1_subset_1(_G10891, k5_numbers), _G10891=k6_scm_inst(_G10230), - (1^[_G10891, _G10230]=k5_xtuple_0(_G10230))]
+ (14)  [m1_subset_1(_G10230, k3_scm_inst), _G10230=k3_xtuple_0(_G10534, k12_finseq_1(k5_numbers, _G10413), k1_xboole_0), m1_subset_1(_G10534, k7_card_1(np__9)), m1_subset_1(_G10413, k5_numbers), m1_subset_1(_G10891, k5_numbers), _G10891=k6_scm_inst(_G10230), - (_G10891=k7_partfun1(k5_numbers, 1^[_G10891, _G10230], np__1))]
+ (15)  [m1_subset_1(_G10230, k3_scm_inst), _G10230=k3_xtuple_0(_G10534, k12_finseq_1(k5_numbers, _G10413), k1_xboole_0), m1_subset_1(_G10534, k7_card_1(np__9)), m1_subset_1(_G10413, k5_numbers), m1_subset_1(_G10891, k5_numbers), - (_G10891=k6_scm_inst(_G10230)), m2_finseq_1(_G11096, k5_numbers), _G11096=k5_xtuple_0(_G10230), _G10891=k7_partfun1(k5_numbers, _G11096, np__1)]
+ (16)  [_G6495=_G6544, - (k5_xtuple_0(_G6495)=k5_xtuple_0(_G6544))]
+ (17)  [- (k7_partfun1(_G6773, _G6944, _G7119)=k7_partfun1(_G6858, _G7031, _G7208)), _G6773=_G6858, _G6944=_G7031, _G7119=_G7208]
+ (18)  [_G7801=_G7850, - (k7_card_1(_G7801)=k7_card_1(_G7850))]
+ (19)  [- (k3_xtuple_0(_G8079, _G8250, _G8425)=k3_xtuple_0(_G8164, _G8337, _G8514)), _G8079=_G8164, _G8250=_G8337, _G8425=_G8514]
+ (20)  [_G9695=_G9744, - (k6_scm_inst(_G9695)=k6_scm_inst(_G9744))]
+ (21)  [- (k12_finseq_1(_G9107, _G9242)=k12_finseq_1(_G9174, _G9311)), _G9107=_G9174, _G9242=_G9311]
+ (22)  [- (_G3888=_G3888)]
+ (23)  [_G3987=_G4032, - (_G4032=_G3987)]
+ (24)  [- (_G4220=_G4333), _G4220=_G4276, _G4276=_G4333]
+ (25)  [-m2_finseq_1(_G4737, _G4874), m2_finseq_1(_G4670, _G4805), _G4670=_G4737, _G4805=_G4874]
+ (26)  [-v1_finset_1(_G5316), _G5267=_G5316, v1_finset_1(_G5267)]
+ (27)  [-v1_xboole_0(_G5594), _G5545=_G5594, v1_xboole_0(_G5545)]
+ (28)  [-m1_subset_1(_G5881, _G6018), m1_subset_1(_G5814, _G5949), _G5814=_G5881, _G5949=_G6018]
+
+Connection Proof:
+-----------------
+1  [k6_scm_inst(2^[])=3^[]]   (5)  
+1.1  [- (k6_scm_inst(2^[])=3^[]), 3^[]=k6_scm_inst(2^[])]   (23)  substitution:[[_G4032, _G3987], [k6_scm_inst(2^[]), 3^[]]]
+1.1.1  [- (3^[]=k6_scm_inst(2^[])), m1_subset_1(2^[], k3_scm_inst), 2^[]=k3_xtuple_0(4^[], k12_finseq_1(k5_numbers, 3^[]), k1_xboole_0), m1_subset_1(4^[], k7_card_1(np__9)), m1_subset_1(3^[], k5_numbers), m1_subset_1(3^[], k5_numbers), m2_finseq_1(k12_finseq_1(k5_numbers, 3^[]), k5_numbers), k12_finseq_1(k5_numbers, 3^[])=k5_xtuple_0(2^[]), 3^[]=k7_partfun1(k5_numbers, k12_finseq_1(k5_numbers, 3^[]), np__1)]   (15)  substitution:[[_G10891, _G10230, _G10534, _G10413, _G11096], [3^[], 2^[], 4^[], 3^[], k12_finseq_1(k5_numbers, 3^[])]]
+1.1.1.1  [-m1_subset_1(2^[], k3_scm_inst)]   (1)  
+1.1.1.2  [- (2^[]=k3_xtuple_0(4^[], k12_finseq_1(k5_numbers, 3^[]), k1_xboole_0))]   (4)  
+1.1.1.3  [-m1_subset_1(4^[], k7_card_1(np__9))]   (3)  
+1.1.1.4  [-m1_subset_1(3^[], k5_numbers)]   (2)  
+1.1.1.5  [-m1_subset_1(3^[], k5_numbers)]   (2)  
+1.1.1.6  [-m2_finseq_1(k12_finseq_1(k5_numbers, 3^[]), k5_numbers), -v1_xboole_0(k5_numbers), m1_subset_1(3^[], k5_numbers)]   (7)  substitution:[[_G11577, _G11632], [k5_numbers, 3^[]]]
+1.1.1.6.1  [v1_xboole_0(k5_numbers), -v1_finset_1(k5_numbers)]   (6)  substitution:[[_G10099], [k5_numbers]]
+1.1.1.6.1.1  [v1_finset_1(k5_numbers), -v1_finset_1(k4_ordinal1), k5_numbers=k4_ordinal1]   (26)  substitution:[[_G5267, _G5316], [k5_numbers, k4_ordinal1]]
+1.1.1.6.1.1.1  [v1_finset_1(k4_ordinal1)]   (8)  
+1.1.1.6.1.1.2  [- (k5_numbers=k4_ordinal1)]   (10)  
+1.1.1.6.2  [-m1_subset_1(3^[], k5_numbers)]   (2)  
+1.1.1.7  [- (k12_finseq_1(k5_numbers, 3^[])=k5_xtuple_0(2^[])), k5_xtuple_0(2^[])=k12_finseq_1(k5_numbers, 3^[])]   (23)  substitution:[[_G4032, _G3987], [k12_finseq_1(k5_numbers, 3^[]), k5_xtuple_0(2^[])]]
+1.1.1.7.1  [- (k5_xtuple_0(2^[])=k12_finseq_1(k5_numbers, 3^[])), k5_xtuple_0(2^[])=k5_xtuple_0(k3_xtuple_0(4^[], k12_finseq_1(k5_numbers, 3^[]), k1_xboole_0)), k5_xtuple_0(k3_xtuple_0(4^[], k12_finseq_1(k5_numbers, 3^[]), k1_xboole_0))=k12_finseq_1(k5_numbers, 3^[])]   (24)  substitution:[[_G4220, _G4333, _G4276], [k5_xtuple_0(2^[]), k12_finseq_1(k5_numbers, 3^[]), k5_xtuple_0(k3_xtuple_0(4^[], k12_finseq_1(k5_numbers, 3^[]), k1_xboole_0))]]
+1.1.1.7.1.1  [- (k5_xtuple_0(2^[])=k5_xtuple_0(k3_xtuple_0(4^[], k12_finseq_1(k5_numbers, 3^[]), k1_xboole_0))), 2^[]=k3_xtuple_0(4^[], k12_finseq_1(k5_numbers, 3^[]), k1_xboole_0)]   (16)  substitution:[[_G6495, _G6544], [2^[], k3_xtuple_0(4^[], k12_finseq_1(k5_numbers, 3^[]), k1_xboole_0)]]
+1.1.1.7.1.1.1  [- (2^[]=k3_xtuple_0(4^[], k12_finseq_1(k5_numbers, 3^[]), k1_xboole_0))]   (4)  
+1.1.1.7.1.2  [- (k5_xtuple_0(k3_xtuple_0(4^[], k12_finseq_1(k5_numbers, 3^[]), k1_xboole_0))=k12_finseq_1(k5_numbers, 3^[]))]   (9)  substitution:[[_G11991, _G12041, _G12092], [4^[], k12_finseq_1(k5_numbers, 3^[]), k1_xboole_0]]
+1.1.1.8  [- (3^[]=k7_partfun1(k5_numbers, k12_finseq_1(k5_numbers, 3^[]), np__1)), k7_partfun1(k5_numbers, k12_finseq_1(k5_numbers, 3^[]), np__1)=3^[]]   (23)  substitution:[[_G4032, _G3987], [3^[], k7_partfun1(k5_numbers, k12_finseq_1(k5_numbers, 3^[]), np__1)]]
+1.1.1.8.1  [- (k7_partfun1(k5_numbers, k12_finseq_1(k5_numbers, 3^[]), np__1)=3^[]), -v1_xboole_0(k5_numbers), m1_subset_1(3^[], k5_numbers)]   (11)  substitution:[[_G12369, _G12474], [k5_numbers, 3^[]]]
+1.1.1.8.1.1  [v1_xboole_0(k5_numbers), -v1_finset_1(k5_numbers)]   (6)  substitution:[[_G10099], [k5_numbers]]
+1.1.1.8.1.1.1  [v1_finset_1(k5_numbers), -v1_finset_1(k4_ordinal1), k5_numbers=k4_ordinal1]   (26)  substitution:[[_G5267, _G5316], [k5_numbers, k4_ordinal1]]
+1.1.1.8.1.1.1.1  [v1_finset_1(k4_ordinal1)]   (8)  
+1.1.1.8.1.1.1.2  [- (k5_numbers=k4_ordinal1)]   (10)  
+1.1.1.8.1.2  [-m1_subset_1(3^[], k5_numbers)]   (2)  
+------------------------------------------------------
+End of proof for t6_scm_inst

@@ -1,0 +1,44 @@
+
+t2_finseq_8 is a Theorem
+Start of proof for t2_finseq_8
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m2_finseq_1(2^[], 1^[])]
+ (2)  [-m1_subset_1(3^[], k5_numbers)]
+ (3)  [-r1_xxreal_0(k3_finseq_1(2^[]), 3^[])]
+ (4)  [k2_rfinseq(1^[], 3^[], 2^[])=k6_finseq_1(1^[])]
+ (5)  [m1_subset_1(_G7383, k4_ordinal1), -v7_ordinal1(_G7383)]
+ (6)  [- (k1_xboole_0=o_0_0_xboole_0)]
+ (7)  [- (k6_finseq_1(_G7597)=k1_xboole_0)]
+ (8)  [- (k5_numbers=k4_ordinal1)]
+ (9)  [v1_xboole_0(_G8312), - (_G8312=k1_xboole_0)]
+ (10)  [v7_ordinal1(_G7769), m2_finseq_1(_G7929, _G7867), r1_xxreal_0(k3_finseq_1(_G7929), _G7769), -v1_xboole_0(k2_rfinseq(_G7867, _G7769, _G7929))]
+ (11)  [_G5745=_G5794, - (k3_finseq_1(_G5745)=k3_finseq_1(_G5794))]
+ (12)  [_G7042=_G7091, - (k6_finseq_1(_G7042)=k6_finseq_1(_G7091))]
+ (13)  [- (k2_rfinseq(_G6023, _G6194, _G6369)=k2_rfinseq(_G6108, _G6281, _G6458)), _G6023=_G6108, _G6194=_G6281, _G6369=_G6458]
+ (14)  [- (_G2520=_G2520)]
+ (15)  [_G2619=_G2664, - (_G2664=_G2619)]
+ (16)  [- (_G2852=_G2965), _G2852=_G2908, _G2908=_G2965]
+ (17)  [-v7_ordinal1(_G3351), _G3302=_G3351, v7_ordinal1(_G3302)]
+ (18)  [-v1_xboole_0(_G3629), _G3580=_G3629, v1_xboole_0(_G3580)]
+ (19)  [-m2_finseq_1(_G3925, _G4062), m2_finseq_1(_G3858, _G3993), _G3858=_G3925, _G3993=_G4062]
+ (20)  [-m1_subset_1(_G4522, _G4659), m1_subset_1(_G4455, _G4590), _G4455=_G4522, _G4590=_G4659]
+ (21)  [-r1_xxreal_0(_G5110, _G5247), r1_xxreal_0(_G5043, _G5178), _G5043=_G5110, _G5178=_G5247]
+
+Connection Proof:
+-----------------
+1  [k2_rfinseq(1^[], 3^[], 2^[])=k6_finseq_1(1^[])]   (4)  
+1.1  [- (k2_rfinseq(1^[], 3^[], 2^[])=k6_finseq_1(1^[])), k2_rfinseq(1^[], 3^[], 2^[])=k1_xboole_0, k1_xboole_0=k6_finseq_1(1^[])]   (16)  substitution:[[_G2852, _G2965, _G2908], [k2_rfinseq(1^[], 3^[], 2^[]), k6_finseq_1(1^[]), k1_xboole_0]]
+1.1.1  [- (k2_rfinseq(1^[], 3^[], 2^[])=k1_xboole_0), v1_xboole_0(k2_rfinseq(1^[], 3^[], 2^[]))]   (9)  substitution:[[_G8312], [k2_rfinseq(1^[], 3^[], 2^[])]]
+1.1.1.1  [-v1_xboole_0(k2_rfinseq(1^[], 3^[], 2^[])), v7_ordinal1(3^[]), m2_finseq_1(2^[], 1^[]), r1_xxreal_0(k3_finseq_1(2^[]), 3^[])]   (10)  substitution:[[_G7867, _G7769, _G7929], [1^[], 3^[], 2^[]]]
+1.1.1.1.1  [-v7_ordinal1(3^[]), m1_subset_1(3^[], k4_ordinal1)]   (5)  substitution:[[_G7383], [3^[]]]
+1.1.1.1.1.1  [-m1_subset_1(3^[], k4_ordinal1), m1_subset_1(3^[], k5_numbers), 3^[]=3^[], k5_numbers=k4_ordinal1]   (20)  substitution:[[_G4522, _G4659, _G4455, _G4590], [3^[], k4_ordinal1, 3^[], k5_numbers]]
+1.1.1.1.1.1.1  [-m1_subset_1(3^[], k5_numbers)]   (2)  
+1.1.1.1.1.1.2  [- (3^[]=3^[])]   (14)  substitution:[[_G2520], [3^[]]]
+1.1.1.1.1.1.3  [- (k5_numbers=k4_ordinal1)]   (8)  
+1.1.1.1.2  [-m2_finseq_1(2^[], 1^[])]   (1)  
+1.1.1.1.3  [-r1_xxreal_0(k3_finseq_1(2^[]), 3^[])]   (3)  
+1.1.2  [- (k1_xboole_0=k6_finseq_1(1^[])), k6_finseq_1(1^[])=k1_xboole_0]   (15)  substitution:[[_G2664, _G2619], [k1_xboole_0, k6_finseq_1(1^[])]]
+1.1.2.1  [- (k6_finseq_1(1^[])=k1_xboole_0)]   (7)  substitution:[[_G7597], [1^[]]]
+------------------------------------------------------
+End of proof for t2_finseq_8

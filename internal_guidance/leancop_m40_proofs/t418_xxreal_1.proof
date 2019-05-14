@@ -1,0 +1,37 @@
+
+t418_xxreal_1 is a Theorem
+Start of proof for t418_xxreal_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xxreal_0(1^[])]
+ (2)  [-v1_xxreal_0(2^[])]
+ (3)  [-v1_xxreal_0(3^[])]
+ (4)  [-r1_xxreal_0(1^[], 2^[])]
+ (5)  [-r1_xxreal_0(2^[], 3^[])]
+ (6)  [k3_xboole_0(k1_xxreal_1(1^[], 2^[]), k1_xxreal_1(2^[], 3^[]))=k1_tarski(2^[])]
+ (7)  [v1_xxreal_0(_G6457), - (k1_xxreal_1(_G6457, _G6457)=k1_tarski(_G6457))]
+ (8)  [v1_xxreal_0(_G5505), v1_xxreal_0(_G5630), v1_xxreal_0(_G5751), v1_xxreal_0(_G5868), - (k3_xboole_0(k1_xxreal_1(_G5505, _G5751), k1_xxreal_1(_G5630, _G5868))=k1_xxreal_1(_G5630, _G5751)), r1_xxreal_0(_G5505, _G5630), r1_xxreal_0(_G5751, _G5868)]
+ (9)  [- (k3_xboole_0(_G3979, _G4114)=k3_xboole_0(_G4046, _G4183)), _G3979=_G4046, _G4114=_G4183]
+ (10)  [_G5164=_G5213, - (k1_tarski(_G5164)=k1_tarski(_G5213))]
+ (11)  [- (k1_xxreal_1(_G4576, _G4711)=k1_xxreal_1(_G4643, _G4780)), _G4576=_G4643, _G4711=_G4780]
+ (12)  [- (_G2289=_G2289)]
+ (13)  [_G2388=_G2433, - (_G2433=_G2388)]
+ (14)  [- (_G2621=_G2734), _G2621=_G2677, _G2677=_G2734]
+ (15)  [-v1_xxreal_0(_G3120), _G3071=_G3120, v1_xxreal_0(_G3071)]
+ (16)  [-r1_xxreal_0(_G3407, _G3544), r1_xxreal_0(_G3340, _G3475), _G3340=_G3407, _G3475=_G3544]
+
+Connection Proof:
+-----------------
+1  [k3_xboole_0(k1_xxreal_1(1^[], 2^[]), k1_xxreal_1(2^[], 3^[]))=k1_tarski(2^[])]   (6)  
+1.1  [- (k3_xboole_0(k1_xxreal_1(1^[], 2^[]), k1_xxreal_1(2^[], 3^[]))=k1_tarski(2^[])), k3_xboole_0(k1_xxreal_1(1^[], 2^[]), k1_xxreal_1(2^[], 3^[]))=k1_xxreal_1(2^[], 2^[]), k1_xxreal_1(2^[], 2^[])=k1_tarski(2^[])]   (14)  substitution:[[_G2621, _G2734, _G2677], [k3_xboole_0(k1_xxreal_1(1^[], 2^[]), k1_xxreal_1(2^[], 3^[])), k1_tarski(2^[]), k1_xxreal_1(2^[], 2^[])]]
+1.1.1  [- (k3_xboole_0(k1_xxreal_1(1^[], 2^[]), k1_xxreal_1(2^[], 3^[]))=k1_xxreal_1(2^[], 2^[])), v1_xxreal_0(1^[]), v1_xxreal_0(2^[]), v1_xxreal_0(2^[]), v1_xxreal_0(3^[]), r1_xxreal_0(1^[], 2^[]), r1_xxreal_0(2^[], 3^[])]   (8)  substitution:[[_G5505, _G5751, _G5630, _G5868], [1^[], 2^[], 2^[], 3^[]]]
+1.1.1.1  [-v1_xxreal_0(1^[])]   (1)  
+1.1.1.2  [-v1_xxreal_0(2^[])]   (2)  
+1.1.1.3  [-v1_xxreal_0(2^[])]   (2)  
+1.1.1.4  [-v1_xxreal_0(3^[])]   (3)  
+1.1.1.5  [-r1_xxreal_0(1^[], 2^[])]   (4)  
+1.1.1.6  [-r1_xxreal_0(2^[], 3^[])]   (5)  
+1.1.2  [- (k1_xxreal_1(2^[], 2^[])=k1_tarski(2^[])), v1_xxreal_0(2^[])]   (7)  substitution:[[_G6457], [2^[]]]
+1.1.2.1  [-v1_xxreal_0(2^[])]   (2)  
+------------------------------------------------------
+End of proof for t418_xxreal_1

@@ -1,0 +1,38 @@
+
+t3_ordinal6 is a Theorem
+Start of proof for t3_ordinal6
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_ordinal6(2^[])]
+ (2)  [r1_tarski(2^[], k3_ordinal2(2^[]))]
+ (3)  [-v3_ordinal1(k3_ordinal2(_G5744))]
+ (4)  [v1_ordinal6(_G5824), - (k2_ordinal1(_G5824)=_G5824)]
+ (5)  [-v1_ordinal6(_G5824), k2_ordinal1(_G5824)=_G5824]
+ (6)  [v3_ordinal1(_G5143), - (_G5143=k3_ordinal2(_G5065)), r1_tarski(k2_ordinal1(_G5065), _G5143), -v3_ordinal1(1^[_G5143, _G5065])]
+ (7)  [v3_ordinal1(_G5143), - (_G5143=k3_ordinal2(_G5065)), r1_tarski(k2_ordinal1(_G5065), _G5143), -r1_tarski(k2_ordinal1(_G5065), 1^[_G5143, _G5065])]
+ (8)  [v3_ordinal1(_G5143), - (_G5143=k3_ordinal2(_G5065)), r1_tarski(k2_ordinal1(_G5065), _G5143), r1_ordinal1(_G5143, 1^[_G5143, _G5065])]
+ (9)  [v3_ordinal1(_G5143), _G5143=k3_ordinal2(_G5065), -r1_tarski(k2_ordinal1(_G5065), _G5143)]
+ (10)  [v3_ordinal1(_G5143), _G5143=k3_ordinal2(_G5065), v3_ordinal1(_G5396), r1_tarski(k2_ordinal1(_G5065), _G5396), -r1_ordinal1(_G5143, _G5396)]
+ (11)  [_G4476=_G4525, - (k2_ordinal1(_G4476)=k2_ordinal1(_G4525))]
+ (12)  [_G4745=_G4794, - (k3_ordinal2(_G4745)=k3_ordinal2(_G4794))]
+ (13)  [- (_G1869=_G1869)]
+ (14)  [_G1968=_G2013, - (_G2013=_G1968)]
+ (15)  [- (_G2201=_G2314), _G2201=_G2257, _G2257=_G2314]
+ (16)  [-r1_ordinal1(_G2718, _G2855), r1_ordinal1(_G2651, _G2786), _G2651=_G2718, _G2786=_G2855]
+ (17)  [-v3_ordinal1(_G3297), _G3248=_G3297, v3_ordinal1(_G3248)]
+ (18)  [-v1_ordinal6(_G3575), _G3526=_G3575, v1_ordinal6(_G3526)]
+ (19)  [-r1_tarski(_G3862, _G3999), r1_tarski(_G3795, _G3930), _G3795=_G3862, _G3930=_G3999]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(2^[], k3_ordinal2(2^[]))]   (2)  
+1.1  [-r1_tarski(2^[], k3_ordinal2(2^[])), r1_tarski(k2_ordinal1(2^[]), k3_ordinal2(2^[])), k2_ordinal1(2^[])=2^[], k3_ordinal2(2^[])=k3_ordinal2(2^[])]   (19)  substitution:[[_G3862, _G3999, _G3795, _G3930], [2^[], k3_ordinal2(2^[]), k2_ordinal1(2^[]), k3_ordinal2(2^[])]]
+1.1.1  [-r1_tarski(k2_ordinal1(2^[]), k3_ordinal2(2^[])), v3_ordinal1(k3_ordinal2(2^[])), k3_ordinal2(2^[])=k3_ordinal2(2^[])]   (9)  substitution:[[_G5065, _G5143], [2^[], k3_ordinal2(2^[])]]
+1.1.1.1  [-v3_ordinal1(k3_ordinal2(2^[]))]   (3)  substitution:[[_G5744], [2^[]]]
+1.1.1.2  [- (k3_ordinal2(2^[])=k3_ordinal2(2^[]))]   (13)  substitution:[[_G1869], [k3_ordinal2(2^[])]]
+1.1.2  [- (k2_ordinal1(2^[])=2^[]), v1_ordinal6(2^[])]   (4)  substitution:[[_G5824], [2^[]]]
+1.1.2.1  [-v1_ordinal6(2^[])]   (1)  
+1.1.3  [- (k3_ordinal2(2^[])=k3_ordinal2(2^[])), 2^[]=2^[]]   (12)  substitution:[[_G4745, _G4794], [2^[], 2^[]]]
+1.1.3.1  [- (2^[]=2^[])]   (13)  substitution:[[_G1869], [2^[]]]
+------------------------------------------------------
+End of proof for t3_ordinal6

@@ -1,0 +1,49 @@
+
+l23_numbers is a Theorem
+Start of proof for l23_numbers
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], k5_arytm_3)]
+ (2)  [k9_arytm_3(1^[], 1^[])=k10_arytm_3(c2__numbers, 1^[])]
+ (3)  [- (k10_arytm_3(_G5606, _G5663)=k10_arytm_3(_G5663, _G5606)), m1_subset_1(_G5606, k5_arytm_3), m1_subset_1(_G5663, k5_arytm_3)]
+ (4)  [-v3_ordinal1(c2__numbers)]
+ (5)  [-m1_subset_1(c2__numbers, k5_arytm_3)]
+ (6)  [v1_xboole_0(k12_arytm_3)]
+ (7)  [-v3_ordinal1(k12_arytm_3)]
+ (8)  [-m1_subset_1(k12_arytm_3, k5_arytm_3)]
+ (9)  [- (k9_arytm_3(k12_arytm_3, k12_arytm_3)=c2__numbers)]
+ (10)  [m1_subset_1(_G6411, k5_arytm_3), - (k10_arytm_3(_G6411, k12_arytm_3)=_G6411)]
+ (11)  [m1_subset_1(_G6627, k5_arytm_3), m1_subset_1(_G6761, k5_arytm_3), m1_subset_1(_G6890, k5_arytm_3), - (k10_arytm_3(_G6627, k9_arytm_3(_G6761, _G6890))=k9_arytm_3(k10_arytm_3(_G6627, _G6761), k10_arytm_3(_G6627, _G6890)))]
+ (12)  [- (k9_arytm_3(_G4379, _G4514)=k9_arytm_3(_G4446, _G4583)), _G4379=_G4446, _G4514=_G4583]
+ (13)  [- (k10_arytm_3(_G4967, _G5102)=k10_arytm_3(_G5034, _G5171)), _G4967=_G5034, _G5102=_G5171]
+ (14)  [- (_G2390=_G2390)]
+ (15)  [_G2489=_G2534, - (_G2534=_G2489)]
+ (16)  [- (_G2722=_G2835), _G2722=_G2778, _G2778=_G2835]
+ (17)  [-v1_xboole_0(_G3221), _G3172=_G3221, v1_xboole_0(_G3172)]
+ (18)  [-v3_ordinal1(_G3499), _G3450=_G3499, v3_ordinal1(_G3450)]
+ (19)  [-m1_subset_1(_G3786, _G3923), m1_subset_1(_G3719, _G3854), _G3719=_G3786, _G3854=_G3923]
+
+Connection Proof:
+-----------------
+1  [k9_arytm_3(1^[], 1^[])=k10_arytm_3(c2__numbers, 1^[])]   (2)  
+1.1  [- (k9_arytm_3(1^[], 1^[])=k10_arytm_3(c2__numbers, 1^[])), k10_arytm_3(c2__numbers, 1^[])=k9_arytm_3(1^[], 1^[])]   (15)  substitution:[[_G2534, _G2489], [k9_arytm_3(1^[], 1^[]), k10_arytm_3(c2__numbers, 1^[])]]
+1.1.1  [- (k10_arytm_3(c2__numbers, 1^[])=k9_arytm_3(1^[], 1^[])), k10_arytm_3(c2__numbers, 1^[])=k10_arytm_3(1^[], k9_arytm_3(k12_arytm_3, k12_arytm_3)), k10_arytm_3(1^[], k9_arytm_3(k12_arytm_3, k12_arytm_3))=k9_arytm_3(1^[], 1^[])]   (16)  substitution:[[_G2722, _G2835, _G2778], [k10_arytm_3(c2__numbers, 1^[]), k9_arytm_3(1^[], 1^[]), k10_arytm_3(1^[], k9_arytm_3(k12_arytm_3, k12_arytm_3))]]
+1.1.1.1  [- (k10_arytm_3(c2__numbers, 1^[])=k10_arytm_3(1^[], k9_arytm_3(k12_arytm_3, k12_arytm_3))), k10_arytm_3(c2__numbers, 1^[])=k10_arytm_3(1^[], c2__numbers), k10_arytm_3(1^[], c2__numbers)=k10_arytm_3(1^[], k9_arytm_3(k12_arytm_3, k12_arytm_3))]   (16)  substitution:[[_G2722, _G2835, _G2778], [k10_arytm_3(c2__numbers, 1^[]), k10_arytm_3(1^[], k9_arytm_3(k12_arytm_3, k12_arytm_3)), k10_arytm_3(1^[], c2__numbers)]]
+1.1.1.1.1  [- (k10_arytm_3(c2__numbers, 1^[])=k10_arytm_3(1^[], c2__numbers)), m1_subset_1(c2__numbers, k5_arytm_3), m1_subset_1(1^[], k5_arytm_3)]   (3)  substitution:[[_G5606, _G5663], [c2__numbers, 1^[]]]
+1.1.1.1.1.1  [-m1_subset_1(c2__numbers, k5_arytm_3)]   (5)  
+1.1.1.1.1.2  [-m1_subset_1(1^[], k5_arytm_3)]   (1)  
+1.1.1.1.2  [- (k10_arytm_3(1^[], c2__numbers)=k10_arytm_3(1^[], k9_arytm_3(k12_arytm_3, k12_arytm_3))), 1^[]=1^[], c2__numbers=k9_arytm_3(k12_arytm_3, k12_arytm_3)]   (13)  substitution:[[_G4967, _G5102, _G5034, _G5171], [1^[], c2__numbers, 1^[], k9_arytm_3(k12_arytm_3, k12_arytm_3)]]
+1.1.1.1.2.1  [- (1^[]=1^[])]   (14)  substitution:[[_G2390], [1^[]]]
+1.1.1.1.2.2  [- (c2__numbers=k9_arytm_3(k12_arytm_3, k12_arytm_3)), k9_arytm_3(k12_arytm_3, k12_arytm_3)=c2__numbers]   (15)  substitution:[[_G2534, _G2489], [c2__numbers, k9_arytm_3(k12_arytm_3, k12_arytm_3)]]
+1.1.1.1.2.2.1  [- (k9_arytm_3(k12_arytm_3, k12_arytm_3)=c2__numbers)]   (9)  
+1.1.1.2  [- (k10_arytm_3(1^[], k9_arytm_3(k12_arytm_3, k12_arytm_3))=k9_arytm_3(1^[], 1^[])), k10_arytm_3(1^[], k9_arytm_3(k12_arytm_3, k12_arytm_3))=k9_arytm_3(k10_arytm_3(1^[], k12_arytm_3), k10_arytm_3(1^[], k12_arytm_3)), k9_arytm_3(k10_arytm_3(1^[], k12_arytm_3), k10_arytm_3(1^[], k12_arytm_3))=k9_arytm_3(1^[], 1^[])]   (16)  substitution:[[_G2722, _G2835, _G2778], [k10_arytm_3(1^[], k9_arytm_3(k12_arytm_3, k12_arytm_3)), k9_arytm_3(1^[], 1^[]), k9_arytm_3(k10_arytm_3(1^[], k12_arytm_3), k10_arytm_3(1^[], k12_arytm_3))]]
+1.1.1.2.1  [- (k10_arytm_3(1^[], k9_arytm_3(k12_arytm_3, k12_arytm_3))=k9_arytm_3(k10_arytm_3(1^[], k12_arytm_3), k10_arytm_3(1^[], k12_arytm_3))), m1_subset_1(1^[], k5_arytm_3), m1_subset_1(k12_arytm_3, k5_arytm_3), m1_subset_1(k12_arytm_3, k5_arytm_3)]   (11)  substitution:[[_G6627, _G6761, _G6890], [1^[], k12_arytm_3, k12_arytm_3]]
+1.1.1.2.1.1  [-m1_subset_1(1^[], k5_arytm_3)]   (1)  
+1.1.1.2.1.2  [-m1_subset_1(k12_arytm_3, k5_arytm_3)]   (8)  
+1.1.1.2.1.3  [-m1_subset_1(k12_arytm_3, k5_arytm_3)]   (8)  
+1.1.1.2.2  [- (k9_arytm_3(k10_arytm_3(1^[], k12_arytm_3), k10_arytm_3(1^[], k12_arytm_3))=k9_arytm_3(1^[], 1^[])), k10_arytm_3(1^[], k12_arytm_3)=1^[], k10_arytm_3(1^[], k12_arytm_3)=1^[]]   (12)  substitution:[[_G4379, _G4514, _G4446, _G4583], [k10_arytm_3(1^[], k12_arytm_3), k10_arytm_3(1^[], k12_arytm_3), 1^[], 1^[]]]
+1.1.1.2.2.1  [- (k10_arytm_3(1^[], k12_arytm_3)=1^[]), m1_subset_1(1^[], k5_arytm_3)]   (10)  substitution:[[_G6411], [1^[]]]
+1.1.1.2.2.1.1  [-m1_subset_1(1^[], k5_arytm_3)]   (1)  
+1.1.1.2.2.2  [- (k10_arytm_3(1^[], k12_arytm_3)=1^[])]   (lemmata:1.1.1.2.2)  
+------------------------------------------------------
+End of proof for l23_numbers

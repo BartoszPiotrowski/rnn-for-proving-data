@@ -1,0 +1,40 @@
+
+t72_funcop_1 is a Theorem
+Start of proof for t72_funcop_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k1_funct_1(k16_funcop_1(2^[], 3^[]), 2^[])=3^[]]
+ (2)  [- (k16_funcop_1(_G6716, _G6763)=k7_funcop_1(k1_tarski(_G6716), _G6763))]
+ (3)  [- (k7_funcop_1(_G6976, _G7021)=k2_funcop_1(_G6976, _G7021))]
+ (4)  [r2_hidden(_G7265, _G7209), - (k1_funct_1(k2_funcop_1(_G7209, _G7322), _G7265)=_G7322)]
+ (5)  [_G6354=k1_tarski(_G6296), r2_hidden(_G6484, _G6354), - (_G6484=_G6296)]
+ (6)  [_G6354=k1_tarski(_G6296), -r2_hidden(_G6484, _G6354), _G6484=_G6296]
+ (7)  [- (_G6354=k1_tarski(_G6296)), r2_hidden(1^[_G6354, _G6296], _G6354), 1^[_G6354, _G6296]=_G6296]
+ (8)  [- (_G6354=k1_tarski(_G6296)), -r2_hidden(1^[_G6354, _G6296], _G6354), - (1^[_G6354, _G6296]=_G6296)]
+ (9)  [-r2_hidden(_G2983, _G3120), r2_hidden(_G2916, _G3051), _G2916=_G2983, _G3051=_G3120]
+ (10)  [- (_G2143=_G2143)]
+ (11)  [_G2242=_G2287, - (_G2287=_G2242)]
+ (12)  [- (_G2475=_G2588), _G2475=_G2531, _G2531=_G2588]
+ (13)  [_G3534=_G3583, - (k1_tarski(_G3534)=k1_tarski(_G3583))]
+ (14)  [- (k7_funcop_1(_G3812, _G3947)=k7_funcop_1(_G3879, _G4016)), _G3812=_G3879, _G3947=_G4016]
+ (15)  [- (k2_funcop_1(_G4409, _G4544)=k2_funcop_1(_G4476, _G4613)), _G4409=_G4476, _G4544=_G4613]
+ (16)  [- (k1_funct_1(_G5006, _G5141)=k1_funct_1(_G5073, _G5210)), _G5006=_G5073, _G5141=_G5210]
+ (17)  [- (k16_funcop_1(_G5594, _G5729)=k16_funcop_1(_G5661, _G5798)), _G5594=_G5661, _G5729=_G5798]
+
+Connection Proof:
+-----------------
+1  [k1_funct_1(k16_funcop_1(2^[], 3^[]), 2^[])=3^[]]   (1)  
+1.1  [- (k1_funct_1(k16_funcop_1(2^[], 3^[]), 2^[])=3^[]), k1_funct_1(k16_funcop_1(2^[], 3^[]), 2^[])=k1_funct_1(k2_funcop_1(k1_tarski(2^[]), 3^[]), 2^[]), k1_funct_1(k2_funcop_1(k1_tarski(2^[]), 3^[]), 2^[])=3^[]]   (12)  substitution:[[_G2475, _G2588, _G2531], [k1_funct_1(k16_funcop_1(2^[], 3^[]), 2^[]), 3^[], k1_funct_1(k2_funcop_1(k1_tarski(2^[]), 3^[]), 2^[])]]
+1.1.1  [- (k1_funct_1(k16_funcop_1(2^[], 3^[]), 2^[])=k1_funct_1(k2_funcop_1(k1_tarski(2^[]), 3^[]), 2^[])), k1_funct_1(k16_funcop_1(2^[], 3^[]), 2^[])=k1_funct_1(k7_funcop_1(k1_tarski(2^[]), 3^[]), 2^[]), k1_funct_1(k7_funcop_1(k1_tarski(2^[]), 3^[]), 2^[])=k1_funct_1(k2_funcop_1(k1_tarski(2^[]), 3^[]), 2^[])]   (12)  substitution:[[_G2475, _G2588, _G2531], [k1_funct_1(k16_funcop_1(2^[], 3^[]), 2^[]), k1_funct_1(k2_funcop_1(k1_tarski(2^[]), 3^[]), 2^[]), k1_funct_1(k7_funcop_1(k1_tarski(2^[]), 3^[]), 2^[])]]
+1.1.1.1  [- (k1_funct_1(k16_funcop_1(2^[], 3^[]), 2^[])=k1_funct_1(k7_funcop_1(k1_tarski(2^[]), 3^[]), 2^[])), k16_funcop_1(2^[], 3^[])=k7_funcop_1(k1_tarski(2^[]), 3^[]), 2^[]=2^[]]   (16)  substitution:[[_G5006, _G5141, _G5073, _G5210], [k16_funcop_1(2^[], 3^[]), 2^[], k7_funcop_1(k1_tarski(2^[]), 3^[]), 2^[]]]
+1.1.1.1.1  [- (k16_funcop_1(2^[], 3^[])=k7_funcop_1(k1_tarski(2^[]), 3^[]))]   (2)  substitution:[[_G6716, _G6763], [2^[], 3^[]]]
+1.1.1.1.2  [- (2^[]=2^[])]   (10)  substitution:[[_G2143], [2^[]]]
+1.1.1.2  [- (k1_funct_1(k7_funcop_1(k1_tarski(2^[]), 3^[]), 2^[])=k1_funct_1(k2_funcop_1(k1_tarski(2^[]), 3^[]), 2^[])), k7_funcop_1(k1_tarski(2^[]), 3^[])=k2_funcop_1(k1_tarski(2^[]), 3^[]), 2^[]=2^[]]   (16)  substitution:[[_G5006, _G5141, _G5073, _G5210], [k7_funcop_1(k1_tarski(2^[]), 3^[]), 2^[], k2_funcop_1(k1_tarski(2^[]), 3^[]), 2^[]]]
+1.1.1.2.1  [- (k7_funcop_1(k1_tarski(2^[]), 3^[])=k2_funcop_1(k1_tarski(2^[]), 3^[]))]   (3)  substitution:[[_G6976, _G7021], [k1_tarski(2^[]), 3^[]]]
+1.1.1.2.2  [- (2^[]=2^[])]   (10)  substitution:[[_G2143], [2^[]]]
+1.1.2  [- (k1_funct_1(k2_funcop_1(k1_tarski(2^[]), 3^[]), 2^[])=3^[]), r2_hidden(2^[], k1_tarski(2^[]))]   (4)  substitution:[[_G7209, _G7322, _G7265], [k1_tarski(2^[]), 3^[], 2^[]]]
+1.1.2.1  [-r2_hidden(2^[], k1_tarski(2^[])), k1_tarski(2^[])=k1_tarski(2^[]), 2^[]=2^[]]   (6)  substitution:[[_G6484, _G6354, _G6296], [2^[], k1_tarski(2^[]), 2^[]]]
+1.1.2.1.1  [- (k1_tarski(2^[])=k1_tarski(2^[]))]   (10)  substitution:[[_G2143], [k1_tarski(2^[])]]
+1.1.2.1.2  [- (2^[]=2^[])]   (10)  substitution:[[_G2143], [2^[]]]
+------------------------------------------------------
+End of proof for t72_funcop_1

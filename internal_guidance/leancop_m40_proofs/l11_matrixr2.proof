@@ -1,0 +1,48 @@
+
+l11_matrixr2 is a Theorem
+Start of proof for l11_matrixr2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], k5_numbers)]
+ (2)  [-m1_subset_1(2^[], k5_numbers)]
+ (3)  [-v1_matrix_1(3^[])]
+ (4)  [-m2_finseq_1(3^[], k3_finseq_2(k1_numbers))]
+ (5)  [-r2_hidden(k4_tarski(1^[], 2^[]), k2_matrix_1(3^[]))]
+ (6)  [k3_matrix_1(k1_numbers, k4_matrixr1(3^[]), 1^[], 2^[])=k1_real_1(k3_matrix_1(k1_numbers, 3^[], 1^[], 2^[]))]
+ (7)  [m1_subset_1(_G9576, k4_ordinal1), -v7_ordinal1(_G9576)]
+ (8)  [- (k5_numbers=k4_ordinal1)]
+ (9)  [v7_ordinal1(_G9781), v7_ordinal1(_G9903), m2_finseq_1(_G10021, k3_finseq_2(k1_numbers)), v1_matrix_1(_G10021), r2_hidden(k4_tarski(_G9781, _G9903), k2_matrix_1(_G10021)), - (k3_matrix_1(k1_numbers, k4_matrixr1(_G10021), _G9781, _G9903)=k1_real_1(k3_matrix_1(k1_numbers, _G10021, _G9781, _G9903)))]
+ (10)  [_G6215=_G6264, - (k3_finseq_2(_G6215)=k3_finseq_2(_G6264))]
+ (11)  [- (k4_tarski(_G6493, _G6628)=k4_tarski(_G6560, _G6697)), _G6493=_G6560, _G6628=_G6697]
+ (12)  [_G7090=_G7139, - (k2_matrix_1(_G7090)=k2_matrix_1(_G7139))]
+ (13)  [_G7368=_G7417, - (k4_matrixr1(_G7368)=k4_matrixr1(_G7417))]
+ (14)  [_G7646=_G7695, - (k1_real_1(_G7646)=k1_real_1(_G7695))]
+ (15)  [- (k3_matrix_1(_G7915, _G8122, _G8333, _G8548)=k3_matrix_1(_G8018, _G8227, _G8440, _G8657)), _G7915=_G8018, _G8122=_G8227, _G8333=_G8440, _G8548=_G8657]
+ (16)  [- (_G2990=_G2990)]
+ (17)  [_G3089=_G3134, - (_G3134=_G3089)]
+ (18)  [- (_G3322=_G3435), _G3322=_G3378, _G3378=_G3435]
+ (19)  [-v7_ordinal1(_G3821), _G3772=_G3821, v7_ordinal1(_G3772)]
+ (20)  [-m1_subset_1(_G4117, _G4254), m1_subset_1(_G4050, _G4185), _G4050=_G4117, _G4185=_G4254]
+ (21)  [-v1_matrix_1(_G4696), _G4647=_G4696, v1_matrix_1(_G4647)]
+ (22)  [-m2_finseq_1(_G4992, _G5129), m2_finseq_1(_G4925, _G5060), _G4925=_G4992, _G5060=_G5129]
+ (23)  [-r2_hidden(_G5580, _G5717), r2_hidden(_G5513, _G5648), _G5513=_G5580, _G5648=_G5717]
+
+Connection Proof:
+-----------------
+1  [k3_matrix_1(k1_numbers, k4_matrixr1(3^[]), 1^[], 2^[])=k1_real_1(k3_matrix_1(k1_numbers, 3^[], 1^[], 2^[]))]   (6)  
+1.1  [- (k3_matrix_1(k1_numbers, k4_matrixr1(3^[]), 1^[], 2^[])=k1_real_1(k3_matrix_1(k1_numbers, 3^[], 1^[], 2^[]))), v7_ordinal1(1^[]), v7_ordinal1(2^[]), m2_finseq_1(3^[], k3_finseq_2(k1_numbers)), v1_matrix_1(3^[]), r2_hidden(k4_tarski(1^[], 2^[]), k2_matrix_1(3^[]))]   (9)  substitution:[[_G10021, _G9781, _G9903], [3^[], 1^[], 2^[]]]
+1.1.1  [-v7_ordinal1(1^[]), m1_subset_1(1^[], k4_ordinal1)]   (7)  substitution:[[_G9576], [1^[]]]
+1.1.1.1  [-m1_subset_1(1^[], k4_ordinal1), m1_subset_1(1^[], k5_numbers), 1^[]=1^[], k5_numbers=k4_ordinal1]   (20)  substitution:[[_G4117, _G4254, _G4050, _G4185], [1^[], k4_ordinal1, 1^[], k5_numbers]]
+1.1.1.1.1  [-m1_subset_1(1^[], k5_numbers)]   (1)  
+1.1.1.1.2  [- (1^[]=1^[])]   (16)  substitution:[[_G2990], [1^[]]]
+1.1.1.1.3  [- (k5_numbers=k4_ordinal1)]   (8)  
+1.1.2  [-v7_ordinal1(2^[]), m1_subset_1(2^[], k4_ordinal1)]   (7)  substitution:[[_G9576], [2^[]]]
+1.1.2.1  [-m1_subset_1(2^[], k4_ordinal1), m1_subset_1(2^[], k5_numbers), 2^[]=2^[], k5_numbers=k4_ordinal1]   (20)  substitution:[[_G4117, _G4254, _G4050, _G4185], [2^[], k4_ordinal1, 2^[], k5_numbers]]
+1.1.2.1.1  [-m1_subset_1(2^[], k5_numbers)]   (2)  
+1.1.2.1.2  [- (2^[]=2^[])]   (16)  substitution:[[_G2990], [2^[]]]
+1.1.2.1.3  [- (k5_numbers=k4_ordinal1)]   (8)  
+1.1.3  [-m2_finseq_1(3^[], k3_finseq_2(k1_numbers))]   (4)  
+1.1.4  [-v1_matrix_1(3^[])]   (3)  
+1.1.5  [-r2_hidden(k4_tarski(1^[], 2^[]), k2_matrix_1(3^[]))]   (5)  
+------------------------------------------------------
+End of proof for l11_matrixr2

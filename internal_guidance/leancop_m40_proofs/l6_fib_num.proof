@@ -1,0 +1,64 @@
+
+l6_fib_num is a Theorem
+Start of proof for l6_fib_num
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k2_nat_1(k2_nat_1(np__1, np__1), np__1)=np__3]
+ (2)  [m1_subset_1(_G6456, k4_ordinal1), -v7_ordinal1(_G6456)]
+ (3)  [- (k5_numbers=k4_ordinal1)]
+ (4)  [- (k2_xcmplx_0(np__1, np__1)=np__2)]
+ (5)  [- (k2_xcmplx_0(np__2, np__1)=np__3)]
+ (6)  [-v2_xxreal_0(np__1)]
+ (7)  [-m2_subset_1(np__1, k1_numbers, k5_numbers)]
+ (8)  [-m1_subset_1(np__1, k5_numbers)]
+ (9)  [-m1_subset_1(np__1, k1_numbers)]
+ (10)  [-v2_xxreal_0(np__2)]
+ (11)  [-m2_subset_1(np__2, k1_numbers, k5_numbers)]
+ (12)  [-m1_subset_1(np__2, k5_numbers)]
+ (13)  [-m1_subset_1(np__2, k1_numbers)]
+ (14)  [- (k2_nat_1(_G6613, _G6669)=k2_xcmplx_0(_G6613, _G6669)), m1_subset_1(_G6613, k5_numbers), v7_ordinal1(_G6669)]
+ (15)  [- (k2_xcmplx_0(_G5229, _G5364)=k2_xcmplx_0(_G5296, _G5433)), _G5229=_G5296, _G5364=_G5433]
+ (16)  [- (k2_nat_1(_G5817, _G5952)=k2_nat_1(_G5884, _G6021)), _G5817=_G5884, _G5952=_G6021]
+ (17)  [- (_G2191=_G2191)]
+ (18)  [_G2290=_G2335, - (_G2335=_G2290)]
+ (19)  [- (_G2523=_G2636), _G2523=_G2579, _G2579=_G2636]
+ (20)  [-v7_ordinal1(_G3022), _G2973=_G3022, v7_ordinal1(_G2973)]
+ (21)  [-v2_xxreal_0(_G3300), _G3251=_G3300, v2_xxreal_0(_G3251)]
+ (22)  [-m1_subset_1(_G4615, _G4752), m1_subset_1(_G4548, _G4683), _G4548=_G4615, _G4683=_G4752]
+ (23)  [-m2_subset_1(_G3614, _G3787, _G3964), m2_subset_1(_G3529, _G3700, _G3875), _G3529=_G3614, _G3700=_G3787, _G3875=_G3964]
+
+Connection Proof:
+-----------------
+1  [k2_nat_1(k2_nat_1(np__1, np__1), np__1)=np__3]   (1)  
+1.1  [- (k2_nat_1(k2_nat_1(np__1, np__1), np__1)=np__3), k2_nat_1(k2_nat_1(np__1, np__1), np__1)=k2_nat_1(k2_xcmplx_0(np__1, np__1), np__1), k2_nat_1(k2_xcmplx_0(np__1, np__1), np__1)=np__3]   (19)  substitution:[[_G2523, _G2636, _G2579], [k2_nat_1(k2_nat_1(np__1, np__1), np__1), np__3, k2_nat_1(k2_xcmplx_0(np__1, np__1), np__1)]]
+1.1.1  [- (k2_nat_1(k2_nat_1(np__1, np__1), np__1)=k2_nat_1(k2_xcmplx_0(np__1, np__1), np__1)), k2_nat_1(np__1, np__1)=k2_xcmplx_0(np__1, np__1), np__1=np__1]   (16)  substitution:[[_G5817, _G5952, _G5884, _G6021], [k2_nat_1(np__1, np__1), np__1, k2_xcmplx_0(np__1, np__1), np__1]]
+1.1.1.1  [- (k2_nat_1(np__1, np__1)=k2_xcmplx_0(np__1, np__1)), m1_subset_1(np__1, k5_numbers), v7_ordinal1(np__1)]   (14)  substitution:[[_G6613, _G6669], [np__1, np__1]]
+1.1.1.1.1  [-m1_subset_1(np__1, k5_numbers)]   (8)  
+1.1.1.1.2  [-v7_ordinal1(np__1), m1_subset_1(np__1, k4_ordinal1)]   (2)  substitution:[[_G6456], [np__1]]
+1.1.1.1.2.1  [-m1_subset_1(np__1, k4_ordinal1), m1_subset_1(np__1, k5_numbers), np__1=np__1, k5_numbers=k4_ordinal1]   (22)  substitution:[[_G4615, _G4752, _G4548, _G4683], [np__1, k4_ordinal1, np__1, k5_numbers]]
+1.1.1.1.2.1.1  [-m1_subset_1(np__1, k5_numbers)]   (8)  
+1.1.1.1.2.1.2  [- (np__1=np__1)]   (17)  substitution:[[_G2191], [np__1]]
+1.1.1.1.2.1.3  [- (k5_numbers=k4_ordinal1)]   (3)  
+1.1.1.2  [- (np__1=np__1)]   (17)  substitution:[[_G2191], [np__1]]
+1.1.2  [- (k2_nat_1(k2_xcmplx_0(np__1, np__1), np__1)=np__3), k2_nat_1(k2_xcmplx_0(np__1, np__1), np__1)=k2_xcmplx_0(k2_xcmplx_0(np__1, np__1), np__1), k2_xcmplx_0(k2_xcmplx_0(np__1, np__1), np__1)=np__3]   (19)  substitution:[[_G2523, _G2636, _G2579], [k2_nat_1(k2_xcmplx_0(np__1, np__1), np__1), np__3, k2_xcmplx_0(k2_xcmplx_0(np__1, np__1), np__1)]]
+1.1.2.1  [- (k2_nat_1(k2_xcmplx_0(np__1, np__1), np__1)=k2_xcmplx_0(k2_xcmplx_0(np__1, np__1), np__1)), m1_subset_1(k2_xcmplx_0(np__1, np__1), k5_numbers), v7_ordinal1(np__1)]   (14)  substitution:[[_G6613, _G6669], [k2_xcmplx_0(np__1, np__1), np__1]]
+1.1.2.1.1  [-m1_subset_1(k2_xcmplx_0(np__1, np__1), k5_numbers), m1_subset_1(np__2, k5_numbers), np__2=k2_xcmplx_0(np__1, np__1), k5_numbers=k5_numbers]   (22)  substitution:[[_G4615, _G4752, _G4548, _G4683], [k2_xcmplx_0(np__1, np__1), k5_numbers, np__2, k5_numbers]]
+1.1.2.1.1.1  [-m1_subset_1(np__2, k5_numbers)]   (12)  
+1.1.2.1.1.2  [- (np__2=k2_xcmplx_0(np__1, np__1)), k2_xcmplx_0(np__1, np__1)=np__2]   (18)  substitution:[[_G2335, _G2290], [np__2, k2_xcmplx_0(np__1, np__1)]]
+1.1.2.1.1.2.1  [- (k2_xcmplx_0(np__1, np__1)=np__2)]   (4)  
+1.1.2.1.1.3  [- (k5_numbers=k5_numbers)]   (17)  substitution:[[_G2191], [k5_numbers]]
+1.1.2.1.2  [-v7_ordinal1(np__1), m1_subset_1(np__1, k4_ordinal1)]   (2)  substitution:[[_G6456], [np__1]]
+1.1.2.1.2.1  [-m1_subset_1(np__1, k4_ordinal1), m1_subset_1(np__1, k5_numbers), np__1=np__1, k5_numbers=k4_ordinal1]   (22)  substitution:[[_G4615, _G4752, _G4548, _G4683], [np__1, k4_ordinal1, np__1, k5_numbers]]
+1.1.2.1.2.1.1  [-m1_subset_1(np__1, k5_numbers)]   (8)  
+1.1.2.1.2.1.2  [- (np__1=np__1)]   (17)  substitution:[[_G2191], [np__1]]
+1.1.2.1.2.1.3  [- (k5_numbers=k4_ordinal1)]   (3)  
+1.1.2.2  [- (k2_xcmplx_0(k2_xcmplx_0(np__1, np__1), np__1)=np__3), np__3=k2_xcmplx_0(k2_xcmplx_0(np__1, np__1), np__1)]   (18)  substitution:[[_G2335, _G2290], [k2_xcmplx_0(k2_xcmplx_0(np__1, np__1), np__1), np__3]]
+1.1.2.2.1  [- (np__3=k2_xcmplx_0(k2_xcmplx_0(np__1, np__1), np__1)), np__3=k2_xcmplx_0(np__2, np__1), k2_xcmplx_0(np__2, np__1)=k2_xcmplx_0(k2_xcmplx_0(np__1, np__1), np__1)]   (19)  substitution:[[_G2523, _G2636, _G2579], [np__3, k2_xcmplx_0(k2_xcmplx_0(np__1, np__1), np__1), k2_xcmplx_0(np__2, np__1)]]
+1.1.2.2.1.1  [- (np__3=k2_xcmplx_0(np__2, np__1)), k2_xcmplx_0(np__2, np__1)=np__3]   (18)  substitution:[[_G2335, _G2290], [np__3, k2_xcmplx_0(np__2, np__1)]]
+1.1.2.2.1.1.1  [- (k2_xcmplx_0(np__2, np__1)=np__3)]   (5)  
+1.1.2.2.1.2  [- (k2_xcmplx_0(np__2, np__1)=k2_xcmplx_0(k2_xcmplx_0(np__1, np__1), np__1)), np__2=k2_xcmplx_0(np__1, np__1), np__1=np__1]   (15)  substitution:[[_G5229, _G5364, _G5296, _G5433], [np__2, np__1, k2_xcmplx_0(np__1, np__1), np__1]]
+1.1.2.2.1.2.1  [- (np__2=k2_xcmplx_0(np__1, np__1)), k2_xcmplx_0(np__1, np__1)=np__2]   (18)  substitution:[[_G2335, _G2290], [np__2, k2_xcmplx_0(np__1, np__1)]]
+1.1.2.2.1.2.1.1  [- (k2_xcmplx_0(np__1, np__1)=np__2)]   (4)  
+1.1.2.2.1.2.2  [- (np__1=np__1)]   (17)  substitution:[[_G2191], [np__1]]
+------------------------------------------------------
+End of proof for l6_fib_num

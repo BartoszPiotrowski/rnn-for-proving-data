@@ -1,0 +1,40 @@
+
+t10_taxonom2 is a Theorem
+Start of proof for t10_taxonom2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v4_taxonom2(k1_tarski(4^[]))]
+ (2)  [-v4_taxonom2(_G4575), -r2_hidden(2^[_G4575], _G4575)]
+ (3)  [-v4_taxonom2(_G4575), -r2_hidden(3^[_G4575], _G4575)]
+ (4)  [-v4_taxonom2(_G4575), 2^[_G4575]=3^[_G4575]]
+ (5)  [-v4_taxonom2(_G4575), r1_xboole_0(2^[_G4575], 3^[_G4575])]
+ (6)  [v4_taxonom2(_G4575), r2_hidden(_G4737, _G4575), r2_hidden(_G4674, _G4575), - (_G4674=_G4737), -r1_xboole_0(_G4674, _G4737)]
+ (7)  [_G4222=k1_tarski(_G4164), r2_hidden(_G4352, _G4222), - (_G4352=_G4164)]
+ (8)  [_G4222=k1_tarski(_G4164), -r2_hidden(_G4352, _G4222), _G4352=_G4164]
+ (9)  [- (_G4222=k1_tarski(_G4164)), r2_hidden(1^[_G4222, _G4164], _G4222), 1^[_G4222, _G4164]=_G4164]
+ (10)  [- (_G4222=k1_tarski(_G4164)), -r2_hidden(1^[_G4222, _G4164], _G4222), - (1^[_G4222, _G4164]=_G4164)]
+ (11)  [_G3865=_G3914, - (k1_tarski(_G3865)=k1_tarski(_G3914))]
+ (12)  [- (_G1566=_G1566)]
+ (13)  [_G1665=_G1710, - (_G1710=_G1665)]
+ (14)  [- (_G1898=_G2011), _G1898=_G1954, _G1954=_G2011]
+ (15)  [-r2_hidden(_G2415, _G2552), r2_hidden(_G2348, _G2483), _G2348=_G2415, _G2483=_G2552]
+ (16)  [-v4_taxonom2(_G3582), _G3533=_G3582, v4_taxonom2(_G3533)]
+ (17)  [-r1_xboole_0(_G3012, _G3149), r1_xboole_0(_G2945, _G3080), _G2945=_G3012, _G3080=_G3149]
+
+Connection Proof:
+-----------------
+1  [v4_taxonom2(k1_tarski(4^[]))]   (1)  
+1.1  [-v4_taxonom2(k1_tarski(4^[])), 2^[k1_tarski(4^[])]=3^[k1_tarski(4^[])]]   (4)  substitution:[[_G4575], [k1_tarski(4^[])]]
+1.1.1  [- (2^[k1_tarski(4^[])]=3^[k1_tarski(4^[])]), 2^[k1_tarski(4^[])]=4^[], 4^[]=3^[k1_tarski(4^[])]]   (14)  substitution:[[_G1898, _G2011, _G1954], [2^[k1_tarski(4^[])], 3^[k1_tarski(4^[])], 4^[]]]
+1.1.1.1  [- (2^[k1_tarski(4^[])]=4^[]), k1_tarski(4^[])=k1_tarski(4^[]), r2_hidden(2^[k1_tarski(4^[])], k1_tarski(4^[]))]   (7)  substitution:[[_G4352, _G4164, _G4222], [2^[k1_tarski(4^[])], 4^[], k1_tarski(4^[])]]
+1.1.1.1.1  [- (k1_tarski(4^[])=k1_tarski(4^[])), 4^[]=4^[]]   (11)  substitution:[[_G3865, _G3914], [4^[], 4^[]]]
+1.1.1.1.1.1  [- (4^[]=4^[])]   (12)  substitution:[[_G1566], [4^[]]]
+1.1.1.1.2  [-r2_hidden(2^[k1_tarski(4^[])], k1_tarski(4^[])), -v4_taxonom2(k1_tarski(4^[]))]   (2)  substitution:[[_G4575], [k1_tarski(4^[])]]
+1.1.1.1.2.1  [v4_taxonom2(k1_tarski(4^[]))]   (1)  
+1.1.1.2  [- (4^[]=3^[k1_tarski(4^[])]), 3^[k1_tarski(4^[])]=4^[]]   (13)  substitution:[[_G1710, _G1665], [4^[], 3^[k1_tarski(4^[])]]]
+1.1.1.2.1  [- (3^[k1_tarski(4^[])]=4^[]), k1_tarski(4^[])=k1_tarski(4^[]), r2_hidden(3^[k1_tarski(4^[])], k1_tarski(4^[]))]   (7)  substitution:[[_G4352, _G4164, _G4222], [3^[k1_tarski(4^[])], 4^[], k1_tarski(4^[])]]
+1.1.1.2.1.1  [- (k1_tarski(4^[])=k1_tarski(4^[]))]   (12)  substitution:[[_G1566], [k1_tarski(4^[])]]
+1.1.1.2.1.2  [-r2_hidden(3^[k1_tarski(4^[])], k1_tarski(4^[])), -v4_taxonom2(k1_tarski(4^[]))]   (3)  substitution:[[_G4575], [k1_tarski(4^[])]]
+1.1.1.2.1.2.1  [v4_taxonom2(k1_tarski(4^[]))]   (1)  
+------------------------------------------------------
+End of proof for t10_taxonom2

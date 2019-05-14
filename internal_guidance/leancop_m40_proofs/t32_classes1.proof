@@ -1,0 +1,53 @@
+
+t32_classes1 is a Theorem
+Start of proof for t32_classes1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-5^[], r1_tarski(2^[], k4_classes1(3^[]))]
+ (2)  [-5^[], -r2_hidden(2^[], k4_classes1(k1_ordinal1(3^[])))]
+ (3)  [-4^[], r2_hidden(2^[], k4_classes1(k1_ordinal1(3^[])))]
+ (4)  [-4^[], -r1_tarski(2^[], k4_classes1(3^[]))]
+ (5)  [-v3_ordinal1(3^[])]
+ (6)  [4^[], 5^[]]
+ (7)  [- (k1_ordinal1(_G6647)=k2_xboole_0(_G6647, k1_tarski(_G6647)))]
+ (8)  [- (k9_setfam_1(_G7240)=k1_zfmisc_1(_G7240))]
+ (9)  [v3_ordinal1(_G7362), - (k4_classes1(k1_ordinal1(_G7362))=k9_setfam_1(k4_classes1(_G7362)))]
+ (10)  [_G6878=k1_zfmisc_1(_G6820), r2_hidden(_G7008, _G6878), -r1_tarski(_G7008, _G6820)]
+ (11)  [_G6878=k1_zfmisc_1(_G6820), -r2_hidden(_G7008, _G6878), r1_tarski(_G7008, _G6820)]
+ (12)  [- (_G6878=k1_zfmisc_1(_G6820)), r2_hidden(1^[_G6878, _G6820], _G6878), r1_tarski(1^[_G6878, _G6820], _G6820)]
+ (13)  [- (_G6878=k1_zfmisc_1(_G6820)), -r2_hidden(1^[_G6878, _G6820], _G6878), -r1_tarski(1^[_G6878, _G6820], _G6820)]
+ (14)  [- (k2_xboole_0(_G4543, _G4678)=k2_xboole_0(_G4610, _G4747)), _G4543=_G4610, _G4678=_G4747]
+ (15)  [_G5140=_G5189, - (k1_tarski(_G5140)=k1_tarski(_G5189))]
+ (16)  [_G5418=_G5467, - (k1_zfmisc_1(_G5418)=k1_zfmisc_1(_G5467))]
+ (17)  [_G5696=_G5745, - (k9_setfam_1(_G5696)=k9_setfam_1(_G5745))]
+ (18)  [_G5974=_G6023, - (k4_classes1(_G5974)=k4_classes1(_G6023))]
+ (19)  [_G6243=_G6292, - (k1_ordinal1(_G6243)=k1_ordinal1(_G6292))]
+ (20)  [- (_G2235=_G2235)]
+ (21)  [_G2334=_G2379, - (_G2379=_G2334)]
+ (22)  [- (_G2567=_G2680), _G2567=_G2623, _G2623=_G2680]
+ (23)  [-v3_ordinal1(_G3066), _G3017=_G3066, v3_ordinal1(_G3017)]
+ (24)  [-r1_tarski(_G3362, _G3499), r1_tarski(_G3295, _G3430), _G3295=_G3362, _G3430=_G3499]
+ (25)  [-r2_hidden(_G3950, _G4087), r2_hidden(_G3883, _G4018), _G3883=_G3950, _G4018=_G4087]
+
+Connection Proof:
+-----------------
+1  [4^[], 5^[]]   (6)  
+1.1  [-4^[], r2_hidden(2^[], k4_classes1(k1_ordinal1(3^[])))]   (3)  
+1.1.1  [-r2_hidden(2^[], k4_classes1(k1_ordinal1(3^[]))), k4_classes1(k1_ordinal1(3^[]))=k1_zfmisc_1(k4_classes1(3^[])), r1_tarski(2^[], k4_classes1(3^[]))]   (11)  substitution:[[_G7008, _G6878, _G6820], [2^[], k4_classes1(k1_ordinal1(3^[])), k4_classes1(3^[])]]
+1.1.1.1  [- (k4_classes1(k1_ordinal1(3^[]))=k1_zfmisc_1(k4_classes1(3^[]))), k4_classes1(k1_ordinal1(3^[]))=k9_setfam_1(k4_classes1(3^[])), k9_setfam_1(k4_classes1(3^[]))=k1_zfmisc_1(k4_classes1(3^[]))]   (22)  substitution:[[_G2567, _G2680, _G2623], [k4_classes1(k1_ordinal1(3^[])), k1_zfmisc_1(k4_classes1(3^[])), k9_setfam_1(k4_classes1(3^[]))]]
+1.1.1.1.1  [- (k4_classes1(k1_ordinal1(3^[]))=k9_setfam_1(k4_classes1(3^[]))), v3_ordinal1(3^[])]   (9)  substitution:[[_G7362], [3^[]]]
+1.1.1.1.1.1  [-v3_ordinal1(3^[])]   (5)  
+1.1.1.1.2  [- (k9_setfam_1(k4_classes1(3^[]))=k1_zfmisc_1(k4_classes1(3^[])))]   (8)  substitution:[[_G7240], [k4_classes1(3^[])]]
+1.1.1.2  [-r1_tarski(2^[], k4_classes1(3^[])), -4^[]]   (4)  
+1.1.1.2.1  [4^[]]   (reduction:1)  
+1.2  [-5^[], r1_tarski(2^[], k4_classes1(3^[]))]   (1)  
+1.2.1  [-r1_tarski(2^[], k4_classes1(3^[])), k9_setfam_1(k4_classes1(3^[]))=k1_zfmisc_1(k4_classes1(3^[])), r2_hidden(2^[], k9_setfam_1(k4_classes1(3^[])))]   (10)  substitution:[[_G7008, _G6820, _G6878], [2^[], k4_classes1(3^[]), k9_setfam_1(k4_classes1(3^[]))]]
+1.2.1.1  [- (k9_setfam_1(k4_classes1(3^[]))=k1_zfmisc_1(k4_classes1(3^[])))]   (8)  substitution:[[_G7240], [k4_classes1(3^[])]]
+1.2.1.2  [-r2_hidden(2^[], k9_setfam_1(k4_classes1(3^[]))), r2_hidden(2^[], k4_classes1(k1_ordinal1(3^[]))), 2^[]=2^[], k4_classes1(k1_ordinal1(3^[]))=k9_setfam_1(k4_classes1(3^[]))]   (25)  substitution:[[_G3950, _G4087, _G3883, _G4018], [2^[], k9_setfam_1(k4_classes1(3^[])), 2^[], k4_classes1(k1_ordinal1(3^[]))]]
+1.2.1.2.1  [-r2_hidden(2^[], k4_classes1(k1_ordinal1(3^[]))), -5^[]]   (2)  
+1.2.1.2.1.1  [5^[]]   (reduction:1)  
+1.2.1.2.2  [- (2^[]=2^[])]   (20)  substitution:[[_G2235], [2^[]]]
+1.2.1.2.3  [- (k4_classes1(k1_ordinal1(3^[]))=k9_setfam_1(k4_classes1(3^[]))), v3_ordinal1(3^[])]   (9)  substitution:[[_G7362], [3^[]]]
+1.2.1.2.3.1  [-v3_ordinal1(3^[])]   (5)  
+------------------------------------------------------
+End of proof for t32_classes1

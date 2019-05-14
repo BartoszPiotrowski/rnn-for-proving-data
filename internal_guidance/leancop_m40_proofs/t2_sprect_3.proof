@@ -1,0 +1,38 @@
+
+t2_sprect_3 is a Theorem
+Start of proof for t2_sprect_3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k2_matrix_1(k3_matrix_2(1^[], 2^[], 3^[], 4^[]))=k2_enumset1(k4_tarski(np__1, np__1), k4_tarski(np__1, np__2), k4_tarski(np__2, np__1), k4_tarski(np__2, np__2))]
+ (2)  [- (k2_zfmisc_1(k2_tarski(_G10136, _G10211), k2_tarski(_G10287, _G10364))=k2_enumset1(k4_tarski(_G10136, _G10287), k4_tarski(_G10136, _G10364), k4_tarski(_G10211, _G10287), k4_tarski(_G10211, _G10364)))]
+ (3)  [- (k2_finseq_1(np__1)=k1_tarski(np__1))]
+ (4)  [- (k2_finseq_1(np__2)=k2_tarski(np__1, np__2))]
+ (5)  [- (k3_finseq_1(k3_matrix_2(_G11136, _G11218, _G11301, _G11385))=np__2)]
+ (6)  [- (k1_matrix_1(k3_matrix_2(_G11136, _G11218, _G11301, _G11385))=np__2)]
+ (7)  [- (k2_matrix_1(k3_matrix_2(_G11136, _G11218, _G11301, _G11385))=k2_zfmisc_1(k2_finseq_1(np__2), k2_finseq_1(np__2)))]
+ (8)  [- (_G2902=_G2902)]
+ (9)  [_G3001=_G3046, - (_G3046=_G3001)]
+ (10)  [- (_G3234=_G3347), _G3234=_G3290, _G3290=_G3347]
+ (11)  [_G3684=_G3733, - (k1_tarski(_G3684)=k1_tarski(_G3733))]
+ (12)  [- (k2_tarski(_G3962, _G4097)=k2_tarski(_G4029, _G4166)), _G3962=_G4029, _G4097=_G4166]
+ (13)  [_G4559=_G4608, - (k3_finseq_1(_G4559)=k3_finseq_1(_G4608))]
+ (14)  [_G4837=_G4886, - (k1_matrix_1(_G4837)=k1_matrix_1(_G4886))]
+ (15)  [- (k2_zfmisc_1(_G5115, _G5250)=k2_zfmisc_1(_G5182, _G5319)), _G5115=_G5182, _G5250=_G5319]
+ (16)  [_G5712=_G5761, - (k2_finseq_1(_G5712)=k2_finseq_1(_G5761))]
+ (17)  [_G5990=_G6039, - (k2_matrix_1(_G5990)=k2_matrix_1(_G6039))]
+ (18)  [- (k3_matrix_2(_G6268, _G6475, _G6686, _G6901)=k3_matrix_2(_G6371, _G6580, _G6793, _G7010)), _G6268=_G6371, _G6475=_G6580, _G6686=_G6793, _G6901=_G7010]
+ (19)  [- (k4_tarski(_G9329, _G9464)=k4_tarski(_G9396, _G9533)), _G9329=_G9396, _G9464=_G9533]
+ (20)  [- (k2_enumset1(_G7803, _G8010, _G8221, _G8436)=k2_enumset1(_G7906, _G8115, _G8328, _G8545)), _G7803=_G7906, _G8010=_G8115, _G8221=_G8328, _G8436=_G8545]
+
+Connection Proof:
+-----------------
+1  [k2_matrix_1(k3_matrix_2(1^[], 2^[], 3^[], 4^[]))=k2_enumset1(k4_tarski(np__1, np__1), k4_tarski(np__1, np__2), k4_tarski(np__2, np__1), k4_tarski(np__2, np__2))]   (1)  
+1.1  [- (k2_matrix_1(k3_matrix_2(1^[], 2^[], 3^[], 4^[]))=k2_enumset1(k4_tarski(np__1, np__1), k4_tarski(np__1, np__2), k4_tarski(np__2, np__1), k4_tarski(np__2, np__2))), k2_matrix_1(k3_matrix_2(1^[], 2^[], 3^[], 4^[]))=k2_zfmisc_1(k2_finseq_1(np__2), k2_finseq_1(np__2)), k2_zfmisc_1(k2_finseq_1(np__2), k2_finseq_1(np__2))=k2_enumset1(k4_tarski(np__1, np__1), k4_tarski(np__1, np__2), k4_tarski(np__2, np__1), k4_tarski(np__2, np__2))]   (10)  substitution:[[_G3234, _G3347, _G3290], [k2_matrix_1(k3_matrix_2(1^[], 2^[], 3^[], 4^[])), k2_enumset1(k4_tarski(np__1, np__1), k4_tarski(np__1, np__2), k4_tarski(np__2, np__1), k4_tarski(np__2, np__2)), k2_zfmisc_1(k2_finseq_1(np__2), k2_finseq_1(np__2))]]
+1.1.1  [- (k2_matrix_1(k3_matrix_2(1^[], 2^[], 3^[], 4^[]))=k2_zfmisc_1(k2_finseq_1(np__2), k2_finseq_1(np__2)))]   (7)  substitution:[[_G11136, _G11218, _G11301, _G11385], [1^[], 2^[], 3^[], 4^[]]]
+1.1.2  [- (k2_zfmisc_1(k2_finseq_1(np__2), k2_finseq_1(np__2))=k2_enumset1(k4_tarski(np__1, np__1), k4_tarski(np__1, np__2), k4_tarski(np__2, np__1), k4_tarski(np__2, np__2))), k2_zfmisc_1(k2_finseq_1(np__2), k2_finseq_1(np__2))=k2_zfmisc_1(k2_tarski(np__1, np__2), k2_tarski(np__1, np__2)), k2_zfmisc_1(k2_tarski(np__1, np__2), k2_tarski(np__1, np__2))=k2_enumset1(k4_tarski(np__1, np__1), k4_tarski(np__1, np__2), k4_tarski(np__2, np__1), k4_tarski(np__2, np__2))]   (10)  substitution:[[_G3234, _G3347, _G3290], [k2_zfmisc_1(k2_finseq_1(np__2), k2_finseq_1(np__2)), k2_enumset1(k4_tarski(np__1, np__1), k4_tarski(np__1, np__2), k4_tarski(np__2, np__1), k4_tarski(np__2, np__2)), k2_zfmisc_1(k2_tarski(np__1, np__2), k2_tarski(np__1, np__2))]]
+1.1.2.1  [- (k2_zfmisc_1(k2_finseq_1(np__2), k2_finseq_1(np__2))=k2_zfmisc_1(k2_tarski(np__1, np__2), k2_tarski(np__1, np__2))), k2_finseq_1(np__2)=k2_tarski(np__1, np__2), k2_finseq_1(np__2)=k2_tarski(np__1, np__2)]   (15)  substitution:[[_G5115, _G5250, _G5182, _G5319], [k2_finseq_1(np__2), k2_finseq_1(np__2), k2_tarski(np__1, np__2), k2_tarski(np__1, np__2)]]
+1.1.2.1.1  [- (k2_finseq_1(np__2)=k2_tarski(np__1, np__2))]   (4)  
+1.1.2.1.2  [- (k2_finseq_1(np__2)=k2_tarski(np__1, np__2))]   (4)  
+1.1.2.2  [- (k2_zfmisc_1(k2_tarski(np__1, np__2), k2_tarski(np__1, np__2))=k2_enumset1(k4_tarski(np__1, np__1), k4_tarski(np__1, np__2), k4_tarski(np__2, np__1), k4_tarski(np__2, np__2)))]   (2)  substitution:[[_G10136, _G10211, _G10287, _G10364], [np__1, np__2, np__1, np__2]]
+------------------------------------------------------
+End of proof for t2_sprect_3

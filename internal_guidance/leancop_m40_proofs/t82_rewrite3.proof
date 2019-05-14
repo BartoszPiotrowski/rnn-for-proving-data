@@ -1,0 +1,33 @@
+
+t82_rewrite3 is a Theorem
+Start of proof for t82_rewrite3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v1_xboole_0(3^[])]
+ (2)  [-m1_subset_1(4^[], k1_zfmisc_1(k8_afinsq_1(3^[])))]
+ (3)  [v2_struct_0(5^[])]
+ (4)  [-l1_rewrite3(5^[], 4^[])]
+ (5)  [r3_rewrite3(3^[], 4^[], 5^[], 1^[], 2^[], 1^[], 2^[])]
+ (6)  [m1_subset_1(_G1497, k1_zfmisc_1(k2_zfmisc_1(_G1388, _G1442))), -v1_relat_1(_G1497)]
+ (7)  [-v1_xboole_0(_G1740), m1_subset_1(_G1902, k1_zfmisc_1(k8_afinsq_1(_G1740))), l1_rewrite3(_G2097, _G1902), -v2_struct_0(_G2097), r3_rewrite3(_G1740, _G1902, _G2097, _G2322, _G2411, _G2501, _G2592), -r1_rewrite1(k1_rewrite3(_G1740, _G1902, _G2097), k4_tarski(_G2322, _G2411), k4_tarski(_G2501, _G2592))]
+ (8)  [-v1_xboole_0(_G1740), m1_subset_1(_G1902, k1_zfmisc_1(k8_afinsq_1(_G1740))), l1_rewrite3(_G2097, _G1902), -v2_struct_0(_G2097), -r3_rewrite3(_G1740, _G1902, _G2097, _G2322, _G2411, _G2501, _G2592), r1_rewrite1(k1_rewrite3(_G1740, _G1902, _G2097), k4_tarski(_G2322, _G2411), k4_tarski(_G2501, _G2592))]
+ (9)  [v1_relat_1(_G4309), -r1_rewrite1(_G4309, _G4386, _G4386)]
+ (10)  [-m1_subset_1(k1_rewrite3(_G3356, _G3453, _G3551), k1_zfmisc_1(k2_zfmisc_1(k2_zfmisc_1(u1_struct_0(_G3551), k8_afinsq_1(_G3356)), k2_zfmisc_1(u1_struct_0(_G3551), k8_afinsq_1(_G3356))))), -v1_xboole_0(_G3356), m1_subset_1(_G3453, k1_zfmisc_1(k8_afinsq_1(_G3356))), -v2_struct_0(_G3551), l1_rewrite3(_G3551, _G3453)]
+
+Connection Proof:
+-----------------
+1  [v1_xboole_0(3^[])]   (1)  
+1.1  [-v1_xboole_0(3^[]), m1_subset_1(4^[], k1_zfmisc_1(k8_afinsq_1(3^[]))), l1_rewrite3(5^[], 4^[]), -v2_struct_0(5^[]), -r3_rewrite3(3^[], 4^[], 5^[], 1^[], 2^[], 1^[], 2^[]), r1_rewrite1(k1_rewrite3(3^[], 4^[], 5^[]), k4_tarski(1^[], 2^[]), k4_tarski(1^[], 2^[]))]   (8)  substitution:[[_G1740, _G1902, _G2097, _G2322, _G2411, _G2501, _G2592], [3^[], 4^[], 5^[], 1^[], 2^[], 1^[], 2^[]]]
+1.1.1  [-m1_subset_1(4^[], k1_zfmisc_1(k8_afinsq_1(3^[])))]   (2)  
+1.1.2  [-l1_rewrite3(5^[], 4^[])]   (4)  
+1.1.3  [v2_struct_0(5^[])]   (3)  
+1.1.4  [r3_rewrite3(3^[], 4^[], 5^[], 1^[], 2^[], 1^[], 2^[])]   (5)  
+1.1.5  [-r1_rewrite1(k1_rewrite3(3^[], 4^[], 5^[]), k4_tarski(1^[], 2^[]), k4_tarski(1^[], 2^[])), v1_relat_1(k1_rewrite3(3^[], 4^[], 5^[]))]   (9)  substitution:[[_G4309, _G4386], [k1_rewrite3(3^[], 4^[], 5^[]), k4_tarski(1^[], 2^[])]]
+1.1.5.1  [-v1_relat_1(k1_rewrite3(3^[], 4^[], 5^[])), m1_subset_1(k1_rewrite3(3^[], 4^[], 5^[]), k1_zfmisc_1(k2_zfmisc_1(k2_zfmisc_1(u1_struct_0(5^[]), k8_afinsq_1(3^[])), k2_zfmisc_1(u1_struct_0(5^[]), k8_afinsq_1(3^[])))))]   (6)  substitution:[[_G1497, _G1388, _G1442], [k1_rewrite3(3^[], 4^[], 5^[]), k2_zfmisc_1(u1_struct_0(5^[]), k8_afinsq_1(3^[])), k2_zfmisc_1(u1_struct_0(5^[]), k8_afinsq_1(3^[]))]]
+1.1.5.1.1  [-m1_subset_1(k1_rewrite3(3^[], 4^[], 5^[]), k1_zfmisc_1(k2_zfmisc_1(k2_zfmisc_1(u1_struct_0(5^[]), k8_afinsq_1(3^[])), k2_zfmisc_1(u1_struct_0(5^[]), k8_afinsq_1(3^[]))))), -v1_xboole_0(3^[]), m1_subset_1(4^[], k1_zfmisc_1(k8_afinsq_1(3^[]))), -v2_struct_0(5^[]), l1_rewrite3(5^[], 4^[])]   (10)  substitution:[[_G3356, _G3453, _G3551], [3^[], 4^[], 5^[]]]
+1.1.5.1.1.1  [v1_xboole_0(3^[])]   (1)  
+1.1.5.1.1.2  [-m1_subset_1(4^[], k1_zfmisc_1(k8_afinsq_1(3^[])))]   (2)  
+1.1.5.1.1.3  [v2_struct_0(5^[])]   (3)  
+1.1.5.1.1.4  [-l1_rewrite3(5^[], 4^[])]   (4)  
+------------------------------------------------------
+End of proof for t82_rewrite3

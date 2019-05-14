@@ -1,0 +1,24 @@
+
+t1_borsuk_1 is a Theorem
+Start of proof for t1_borsuk_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-l1_pre_topc(1^[])]
+ (2)  [-m1_pre_topc(2^[], 1^[])]
+ (3)  [r1_tarski(u1_struct_0(2^[]), u1_struct_0(1^[]))]
+ (4)  [-r1_tarski(_G860, _G860)]
+ (5)  [l1_pre_topc(_G1012), m1_pre_topc(_G1113, _G1012), m1_subset_1(_G1235, k1_zfmisc_1(u1_struct_0(_G1113))), -m1_subset_1(_G1235, k1_zfmisc_1(u1_struct_0(_G1012)))]
+ (6)  [m1_subset_1(_G1543, k1_zfmisc_1(_G1590)), -r1_tarski(_G1543, _G1590)]
+ (7)  [-m1_subset_1(_G1543, k1_zfmisc_1(_G1590)), r1_tarski(_G1543, _G1590)]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(u1_struct_0(2^[]), u1_struct_0(1^[]))]   (3)  
+1.1  [-r1_tarski(u1_struct_0(2^[]), u1_struct_0(1^[])), m1_subset_1(u1_struct_0(2^[]), k1_zfmisc_1(u1_struct_0(1^[])))]   (6)  substitution:[[_G1543, _G1590], [u1_struct_0(2^[]), u1_struct_0(1^[])]]
+1.1.1  [-m1_subset_1(u1_struct_0(2^[]), k1_zfmisc_1(u1_struct_0(1^[]))), l1_pre_topc(1^[]), m1_pre_topc(2^[], 1^[]), m1_subset_1(u1_struct_0(2^[]), k1_zfmisc_1(u1_struct_0(2^[])))]   (5)  substitution:[[_G1235, _G1012, _G1113], [u1_struct_0(2^[]), 1^[], 2^[]]]
+1.1.1.1  [-l1_pre_topc(1^[])]   (1)  
+1.1.1.2  [-m1_pre_topc(2^[], 1^[])]   (2)  
+1.1.1.3  [-m1_subset_1(u1_struct_0(2^[]), k1_zfmisc_1(u1_struct_0(2^[]))), r1_tarski(u1_struct_0(2^[]), u1_struct_0(2^[]))]   (7)  substitution:[[_G1543, _G1590], [u1_struct_0(2^[]), u1_struct_0(2^[])]]
+1.1.1.3.1  [-r1_tarski(u1_struct_0(2^[]), u1_struct_0(2^[]))]   (4)  substitution:[[_G860], [u1_struct_0(2^[])]]
+------------------------------------------------------
+End of proof for t1_borsuk_1

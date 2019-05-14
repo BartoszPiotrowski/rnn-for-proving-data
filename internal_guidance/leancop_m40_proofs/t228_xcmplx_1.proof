@@ -1,0 +1,29 @@
+
+t228_xcmplx_1 is a Theorem
+Start of proof for t228_xcmplx_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xcmplx_0(1^[])]
+ (2)  [-v1_xcmplx_0(2^[])]
+ (3)  [k6_xcmplx_0(k6_xcmplx_0(1^[], 1^[]), 2^[])=k4_xcmplx_0(2^[])]
+ (4)  [v1_xcmplx_0(_G3362), - (k6_xcmplx_0(k6_numbers, _G3362)=k4_xcmplx_0(_G3362))]
+ (5)  [v1_xcmplx_0(_G3568), - (k6_xcmplx_0(_G3568, _G3568)=k6_numbers)]
+ (6)  [_G3042=_G3091, - (k4_xcmplx_0(_G3042)=k4_xcmplx_0(_G3091))]
+ (7)  [- (k6_xcmplx_0(_G2454, _G2589)=k6_xcmplx_0(_G2521, _G2658)), _G2454=_G2521, _G2589=_G2658]
+ (8)  [-v1_xcmplx_0(_G2204), _G2155=_G2204, v1_xcmplx_0(_G2155)]
+ (9)  [- (_G1382=_G1382)]
+ (10)  [_G1481=_G1526, - (_G1526=_G1481)]
+ (11)  [- (_G1714=_G1827), _G1714=_G1770, _G1770=_G1827]
+
+Connection Proof:
+-----------------
+1  [k6_xcmplx_0(k6_xcmplx_0(1^[], 1^[]), 2^[])=k4_xcmplx_0(2^[])]   (3)  
+1.1  [- (k6_xcmplx_0(k6_xcmplx_0(1^[], 1^[]), 2^[])=k4_xcmplx_0(2^[])), k6_xcmplx_0(k6_xcmplx_0(1^[], 1^[]), 2^[])=k6_xcmplx_0(k6_numbers, 2^[]), k6_xcmplx_0(k6_numbers, 2^[])=k4_xcmplx_0(2^[])]   (11)  substitution:[[_G1714, _G1827, _G1770], [k6_xcmplx_0(k6_xcmplx_0(1^[], 1^[]), 2^[]), k4_xcmplx_0(2^[]), k6_xcmplx_0(k6_numbers, 2^[])]]
+1.1.1  [- (k6_xcmplx_0(k6_xcmplx_0(1^[], 1^[]), 2^[])=k6_xcmplx_0(k6_numbers, 2^[])), k6_xcmplx_0(1^[], 1^[])=k6_numbers, 2^[]=2^[]]   (7)  substitution:[[_G2454, _G2589, _G2521, _G2658], [k6_xcmplx_0(1^[], 1^[]), 2^[], k6_numbers, 2^[]]]
+1.1.1.1  [- (k6_xcmplx_0(1^[], 1^[])=k6_numbers), v1_xcmplx_0(1^[])]   (5)  substitution:[[_G3568], [1^[]]]
+1.1.1.1.1  [-v1_xcmplx_0(1^[])]   (1)  
+1.1.1.2  [- (2^[]=2^[])]   (9)  substitution:[[_G1382], [2^[]]]
+1.1.2  [- (k6_xcmplx_0(k6_numbers, 2^[])=k4_xcmplx_0(2^[])), v1_xcmplx_0(2^[])]   (4)  substitution:[[_G3362], [2^[]]]
+1.1.2.1  [-v1_xcmplx_0(2^[])]   (2)  
+------------------------------------------------------
+End of proof for t228_xcmplx_1

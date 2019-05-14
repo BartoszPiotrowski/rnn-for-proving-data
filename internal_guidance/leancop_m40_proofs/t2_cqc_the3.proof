@@ -1,0 +1,29 @@
+
+t2_cqc_the3 is a Theorem
+Start of proof for t2_cqc_the3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_qc_lang1(1^[])]
+ (2)  [-m1_subset_1(2^[], k1_zfmisc_1(k3_cqc_lang(1^[])))]
+ (3)  [-m1_subset_1(3^[], k1_zfmisc_1(k3_cqc_lang(1^[])))]
+ (4)  [-r1_tarski(2^[], k1_cqc_the1(1^[], 3^[]))]
+ (5)  [r1_tarski(k1_cqc_the1(1^[], 2^[]), k1_cqc_the1(1^[], 3^[]))]
+ (6)  [-m1_subset_1(k1_cqc_the1(_G1056, _G1117), k1_zfmisc_1(k3_cqc_lang(_G1056))), m1_qc_lang1(_G1056), m1_subset_1(_G1117, k1_zfmisc_1(k3_cqc_lang(_G1056)))]
+ (7)  [m1_qc_lang1(_G1478), m1_subset_1(_G1567, k1_zfmisc_1(k3_cqc_lang(_G1478))), -v1_cqc_the1(k1_cqc_the1(_G1478, _G1567), _G1478)]
+ (8)  [m1_qc_lang1(_G1850), m1_subset_1(_G1966, k1_zfmisc_1(k3_cqc_lang(_G1850))), m1_subset_1(_G2131, k1_zfmisc_1(k3_cqc_lang(_G1850))), -r1_tarski(k1_cqc_the1(_G1850, _G2131), _G1966), v1_cqc_the1(_G1966, _G1850), r1_tarski(_G2131, _G1966)]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k1_cqc_the1(1^[], 2^[]), k1_cqc_the1(1^[], 3^[]))]   (5)  
+1.1  [-r1_tarski(k1_cqc_the1(1^[], 2^[]), k1_cqc_the1(1^[], 3^[])), m1_qc_lang1(1^[]), m1_subset_1(k1_cqc_the1(1^[], 3^[]), k1_zfmisc_1(k3_cqc_lang(1^[]))), m1_subset_1(2^[], k1_zfmisc_1(k3_cqc_lang(1^[]))), v1_cqc_the1(k1_cqc_the1(1^[], 3^[]), 1^[]), r1_tarski(2^[], k1_cqc_the1(1^[], 3^[]))]   (8)  substitution:[[_G1850, _G2131, _G1966], [1^[], 2^[], k1_cqc_the1(1^[], 3^[])]]
+1.1.1  [-m1_qc_lang1(1^[])]   (1)  
+1.1.2  [-m1_subset_1(k1_cqc_the1(1^[], 3^[]), k1_zfmisc_1(k3_cqc_lang(1^[]))), m1_qc_lang1(1^[]), m1_subset_1(3^[], k1_zfmisc_1(k3_cqc_lang(1^[])))]   (6)  substitution:[[_G1056, _G1117], [1^[], 3^[]]]
+1.1.2.1  [-m1_qc_lang1(1^[])]   (1)  
+1.1.2.2  [-m1_subset_1(3^[], k1_zfmisc_1(k3_cqc_lang(1^[])))]   (3)  
+1.1.3  [-m1_subset_1(2^[], k1_zfmisc_1(k3_cqc_lang(1^[])))]   (2)  
+1.1.4  [-v1_cqc_the1(k1_cqc_the1(1^[], 3^[]), 1^[]), m1_qc_lang1(1^[]), m1_subset_1(3^[], k1_zfmisc_1(k3_cqc_lang(1^[])))]   (7)  substitution:[[_G1478, _G1567], [1^[], 3^[]]]
+1.1.4.1  [-m1_qc_lang1(1^[])]   (1)  
+1.1.4.2  [-m1_subset_1(3^[], k1_zfmisc_1(k3_cqc_lang(1^[])))]   (3)  
+1.1.5  [-r1_tarski(2^[], k1_cqc_the1(1^[], 3^[]))]   (4)  
+------------------------------------------------------
+End of proof for t2_cqc_the3

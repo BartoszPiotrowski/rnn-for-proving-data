@@ -1,0 +1,55 @@
+
+l87_pepin is a Theorem
+Start of proof for l87_pepin
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k4_nat_d(k13_newton(np__3, np__4), k4_pepin(np__3))=np__81]
+ (2)  [m1_subset_1(_G7698, k4_ordinal1), -v7_ordinal1(_G7698)]
+ (3)  [- (k13_newton(np__3, np__4)=np__81)]
+ (4)  [- (k5_numbers=k4_ordinal1)]
+ (5)  [r1_xxreal_0(np__257, np__81)]
+ (6)  [-v2_xxreal_0(np__257)]
+ (7)  [-m2_subset_1(np__257, k1_numbers, k5_numbers)]
+ (8)  [-m1_subset_1(np__257, k5_numbers)]
+ (9)  [-m1_subset_1(np__257, k1_numbers)]
+ (10)  [-v2_xxreal_0(np__81)]
+ (11)  [-m2_subset_1(np__81, k1_numbers, k5_numbers)]
+ (12)  [-m1_subset_1(np__81, k5_numbers)]
+ (13)  [-m1_subset_1(np__81, k1_numbers)]
+ (14)  [- (k4_pepin(np__3)=np__257)]
+ (15)  [v7_ordinal1(_G8697), v7_ordinal1(_G8789), -r1_xxreal_0(_G8789, _G8697), - (k4_nat_d(_G8697, _G8789)=_G8697)]
+ (16)  [- (k4_nat_d(_G6172, _G6307)=k4_nat_d(_G6239, _G6376)), _G6172=_G6239, _G6307=_G6376]
+ (17)  [_G7357=_G7406, - (k4_pepin(_G7357)=k4_pepin(_G7406))]
+ (18)  [- (k13_newton(_G6769, _G6904)=k13_newton(_G6836, _G6973)), _G6769=_G6836, _G6904=_G6973]
+ (19)  [- (_G2516=_G2516)]
+ (20)  [_G2615=_G2660, - (_G2660=_G2615)]
+ (21)  [- (_G2848=_G2961), _G2848=_G2904, _G2904=_G2961]
+ (22)  [-v2_xxreal_0(_G3347), _G3298=_G3347, v2_xxreal_0(_G3298)]
+ (23)  [-m2_subset_1(_G3661, _G3834, _G4011), m2_subset_1(_G3576, _G3747, _G3922), _G3576=_G3661, _G3747=_G3834, _G3922=_G4011]
+ (24)  [-m1_subset_1(_G4671, _G4808), m1_subset_1(_G4604, _G4739), _G4604=_G4671, _G4739=_G4808]
+ (25)  [-v7_ordinal1(_G5250), _G5201=_G5250, v7_ordinal1(_G5201)]
+ (26)  [-r1_xxreal_0(_G5537, _G5674), r1_xxreal_0(_G5470, _G5605), _G5470=_G5537, _G5605=_G5674]
+
+Connection Proof:
+-----------------
+1  [r1_xxreal_0(np__257, np__81)]   (5)  
+1.1  [-r1_xxreal_0(np__257, np__81), v7_ordinal1(np__81), v7_ordinal1(np__257), - (k4_nat_d(np__81, np__257)=np__81)]   (15)  substitution:[[_G8789, _G8697], [np__257, np__81]]
+1.1.1  [-v7_ordinal1(np__81), m1_subset_1(np__81, k4_ordinal1)]   (2)  substitution:[[_G7698], [np__81]]
+1.1.1.1  [-m1_subset_1(np__81, k4_ordinal1), m1_subset_1(np__81, k5_numbers), np__81=np__81, k5_numbers=k4_ordinal1]   (24)  substitution:[[_G4671, _G4808, _G4604, _G4739], [np__81, k4_ordinal1, np__81, k5_numbers]]
+1.1.1.1.1  [-m1_subset_1(np__81, k5_numbers)]   (12)  
+1.1.1.1.2  [- (np__81=np__81)]   (19)  substitution:[[_G2516], [np__81]]
+1.1.1.1.3  [- (k5_numbers=k4_ordinal1)]   (4)  
+1.1.2  [-v7_ordinal1(np__257), m1_subset_1(np__257, k4_ordinal1)]   (2)  substitution:[[_G7698], [np__257]]
+1.1.2.1  [-m1_subset_1(np__257, k4_ordinal1), m1_subset_1(np__257, k5_numbers), np__257=np__257, k5_numbers=k4_ordinal1]   (24)  substitution:[[_G4671, _G4808, _G4604, _G4739], [np__257, k4_ordinal1, np__257, k5_numbers]]
+1.1.2.1.1  [-m1_subset_1(np__257, k5_numbers)]   (8)  
+1.1.2.1.2  [- (np__257=np__257)]   (19)  substitution:[[_G2516], [np__257]]
+1.1.2.1.3  [- (k5_numbers=k4_ordinal1)]   (4)  
+1.1.3  [k4_nat_d(np__81, np__257)=np__81, - (k4_nat_d(np__81, np__257)=np__81), np__81=np__81]   (21)  substitution:[[_G2848, _G2904, _G2961], [k4_nat_d(np__81, np__257), np__81, np__81]]
+1.1.3.1  [k4_nat_d(np__81, np__257)=np__81, - (k4_nat_d(k13_newton(np__3, np__4), k4_pepin(np__3))=np__81), k4_nat_d(k13_newton(np__3, np__4), k4_pepin(np__3))=k4_nat_d(np__81, np__257)]   (21)  substitution:[[_G2904, _G2961, _G2848], [k4_nat_d(np__81, np__257), np__81, k4_nat_d(k13_newton(np__3, np__4), k4_pepin(np__3))]]
+1.1.3.1.1  [k4_nat_d(k13_newton(np__3, np__4), k4_pepin(np__3))=np__81]   (1)  
+1.1.3.1.2  [- (k4_nat_d(k13_newton(np__3, np__4), k4_pepin(np__3))=k4_nat_d(np__81, np__257)), k13_newton(np__3, np__4)=np__81, k4_pepin(np__3)=np__257]   (16)  substitution:[[_G6172, _G6307, _G6239, _G6376], [k13_newton(np__3, np__4), k4_pepin(np__3), np__81, np__257]]
+1.1.3.1.2.1  [- (k13_newton(np__3, np__4)=np__81)]   (3)  
+1.1.3.1.2.2  [- (k4_pepin(np__3)=np__257)]   (14)  
+1.1.3.2  [- (np__81=np__81)]   (19)  substitution:[[_G2516], [np__81]]
+------------------------------------------------------
+End of proof for l87_pepin

@@ -1,0 +1,27 @@
+
+t77_relat_1 is a Theorem
+Start of proof for t77_relat_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(3^[])]
+ (2)  [-v1_relat_1(4^[])]
+ (3)  [-r1_tarski(3^[], 4^[])]
+ (4)  [-r1_tarski(1^[], 2^[])]
+ (5)  [r1_tarski(k5_relat_1(3^[], 1^[]), k5_relat_1(4^[], 2^[]))]
+ (6)  [-r1_tarski(_G1042, _G1155), r1_tarski(_G1042, _G1098), r1_tarski(_G1098, _G1155)]
+ (7)  [v1_relat_1(_G1573), r1_tarski(_G1450, _G1511), -r1_tarski(k5_relat_1(_G1573, _G1450), k5_relat_1(_G1573, _G1511))]
+ (8)  [v1_relat_1(_G1983), v1_relat_1(_G2082), r1_tarski(_G1983, _G2082), -r1_tarski(k5_relat_1(_G1983, _G1917), k5_relat_1(_G2082, _G1917))]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k5_relat_1(3^[], 1^[]), k5_relat_1(4^[], 2^[]))]   (5)  
+1.1  [-r1_tarski(k5_relat_1(3^[], 1^[]), k5_relat_1(4^[], 2^[])), r1_tarski(k5_relat_1(3^[], 1^[]), k5_relat_1(3^[], 2^[])), r1_tarski(k5_relat_1(3^[], 2^[]), k5_relat_1(4^[], 2^[]))]   (6)  substitution:[[_G1042, _G1155, _G1098], [k5_relat_1(3^[], 1^[]), k5_relat_1(4^[], 2^[]), k5_relat_1(3^[], 2^[])]]
+1.1.1  [-r1_tarski(k5_relat_1(3^[], 1^[]), k5_relat_1(3^[], 2^[])), v1_relat_1(3^[]), r1_tarski(1^[], 2^[])]   (7)  substitution:[[_G1573, _G1450, _G1511], [3^[], 1^[], 2^[]]]
+1.1.1.1  [-v1_relat_1(3^[])]   (1)  
+1.1.1.2  [-r1_tarski(1^[], 2^[])]   (4)  
+1.1.2  [-r1_tarski(k5_relat_1(3^[], 2^[]), k5_relat_1(4^[], 2^[])), v1_relat_1(3^[]), v1_relat_1(4^[]), r1_tarski(3^[], 4^[])]   (8)  substitution:[[_G1983, _G1917, _G2082], [3^[], 2^[], 4^[]]]
+1.1.2.1  [-v1_relat_1(3^[])]   (1)  
+1.1.2.2  [-v1_relat_1(4^[])]   (2)  
+1.1.2.3  [-r1_tarski(3^[], 4^[])]   (3)  
+------------------------------------------------------
+End of proof for t77_relat_1

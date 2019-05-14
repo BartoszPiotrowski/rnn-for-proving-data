@@ -1,0 +1,65 @@
+
+t47_prepower is a Theorem
+Start of proof for t47_prepower
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xreal_0(1^[])]
+ (2)  [-v1_rat_1(2^[])]
+ (3)  [- (2^[]=k6_numbers)]
+ (4)  [k6_prepower(1^[], 2^[])=np__1]
+ (5)  [m1_subset_1(_G8118, k1_numbers), -v1_xreal_0(_G8118)]
+ (6)  [v1_xreal_0(_G8275), v1_rat_1(_G8369), - (k6_prepower(_G8275, _G8369)=k2_prepower(k1_rat_1(_G8369), k4_prepower(_G8275, k2_rat_1(_G8369))))]
+ (7)  [-r1_xxreal_0(k6_numbers, np__1)]
+ (8)  [-m1_subset_1(np__1, k1_numbers)]
+ (9)  [v1_rat_1(_G8833), k2_rat_1(_G8833)=k6_numbers, - (_G8833=k6_numbers)]
+ (10)  [v1_rat_1(_G8833), - (k2_rat_1(_G8833)=k6_numbers), _G8833=k6_numbers]
+ (11)  [v1_rat_1(_G9090), k2_rat_1(_G9090)=_G9090, - (k1_rat_1(_G9090)=np__1)]
+ (12)  [v1_rat_1(_G9090), - (k2_rat_1(_G9090)=_G9090), k1_rat_1(_G9090)=np__1]
+ (13)  [v1_xreal_0(_G9637), - (k4_prepower(_G9637, k6_numbers)=np__1)]
+ (14)  [v1_xreal_0(_G9363), r1_xxreal_0(k6_numbers, _G9363), - (k2_prepower(np__1, _G9363)=_G9363)]
+ (15)  [_G5675=_G5724, - (k2_rat_1(_G5675)=k2_rat_1(_G5724))]
+ (16)  [_G5953=_G6002, - (k1_rat_1(_G5953)=k1_rat_1(_G6002))]
+ (17)  [- (k2_prepower(_G6231, _G6366)=k2_prepower(_G6298, _G6435)), _G6231=_G6298, _G6366=_G6435]
+ (18)  [- (k4_prepower(_G6828, _G6963)=k4_prepower(_G6895, _G7032)), _G6828=_G6895, _G6963=_G7032]
+ (19)  [- (k6_prepower(_G7416, _G7551)=k6_prepower(_G7483, _G7620)), _G7416=_G7483, _G7551=_G7620]
+ (20)  [- (_G3068=_G3068)]
+ (21)  [_G3167=_G3212, - (_G3212=_G3167)]
+ (22)  [- (_G3400=_G3513), _G3400=_G3456, _G3456=_G3513]
+ (23)  [-m1_subset_1(_G3917, _G4054), m1_subset_1(_G3850, _G3985), _G3850=_G3917, _G3985=_G4054]
+ (24)  [-r1_xxreal_0(_G4514, _G4651), r1_xxreal_0(_G4447, _G4582), _G4447=_G4514, _G4582=_G4651]
+ (25)  [-v1_xreal_0(_G5093), _G5044=_G5093, v1_xreal_0(_G5044)]
+ (26)  [-v1_rat_1(_G5362), _G5313=_G5362, v1_rat_1(_G5313)]
+
+Connection Proof:
+-----------------
+1  [k6_prepower(1^[], 2^[])=np__1]   (4)  
+1.1  [- (k6_prepower(1^[], 2^[])=np__1), k6_prepower(1^[], 2^[])=k2_prepower(k1_rat_1(2^[]), k4_prepower(1^[], k2_rat_1(2^[]))), k2_prepower(k1_rat_1(2^[]), k4_prepower(1^[], k2_rat_1(2^[])))=np__1]   (22)  substitution:[[_G3400, _G3513, _G3456], [k6_prepower(1^[], 2^[]), np__1, k2_prepower(k1_rat_1(2^[]), k4_prepower(1^[], k2_rat_1(2^[])))]]
+1.1.1  [- (k6_prepower(1^[], 2^[])=k2_prepower(k1_rat_1(2^[]), k4_prepower(1^[], k2_rat_1(2^[])))), v1_xreal_0(1^[]), v1_rat_1(2^[])]   (6)  substitution:[[_G8275, _G8369], [1^[], 2^[]]]
+1.1.1.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.1.2  [-v1_rat_1(2^[])]   (2)  
+1.1.2  [- (k2_prepower(k1_rat_1(2^[]), k4_prepower(1^[], k2_rat_1(2^[])))=np__1), k2_prepower(k1_rat_1(2^[]), k4_prepower(1^[], k2_rat_1(2^[])))=k2_prepower(np__1, k4_prepower(1^[], k6_numbers)), k2_prepower(np__1, k4_prepower(1^[], k6_numbers))=np__1]   (22)  substitution:[[_G3400, _G3513, _G3456], [k2_prepower(k1_rat_1(2^[]), k4_prepower(1^[], k2_rat_1(2^[]))), np__1, k2_prepower(np__1, k4_prepower(1^[], k6_numbers))]]
+1.1.2.1  [- (k2_prepower(k1_rat_1(2^[]), k4_prepower(1^[], k2_rat_1(2^[])))=k2_prepower(np__1, k4_prepower(1^[], k6_numbers))), k1_rat_1(2^[])=np__1, k4_prepower(1^[], k2_rat_1(2^[]))=k4_prepower(1^[], k6_numbers)]   (17)  substitution:[[_G6231, _G6366, _G6298, _G6435], [k1_rat_1(2^[]), k4_prepower(1^[], k2_rat_1(2^[])), np__1, k4_prepower(1^[], k6_numbers)]]
+1.1.2.1.1  [- (k1_rat_1(2^[])=np__1), v1_rat_1(2^[]), k2_rat_1(2^[])=2^[]]   (11)  substitution:[[_G9090], [2^[]]]
+1.1.2.1.1.1  [-v1_rat_1(2^[])]   (2)  
+1.1.2.1.1.2  [- (k2_rat_1(2^[])=2^[]), k2_rat_1(2^[])=k6_numbers, k6_numbers=2^[]]   (22)  substitution:[[_G3400, _G3513, _G3456], [k2_rat_1(2^[]), 2^[], k6_numbers]]
+1.1.2.1.1.2.1  [- (k2_rat_1(2^[])=k6_numbers), v1_rat_1(2^[]), 2^[]=k6_numbers]   (10)  substitution:[[_G8833], [2^[]]]
+1.1.2.1.1.2.1.1  [-v1_rat_1(2^[])]   (2)  
+1.1.2.1.1.2.1.2  [- (2^[]=k6_numbers)]   (3)  
+1.1.2.1.1.2.2  [- (k6_numbers=2^[]), 2^[]=k6_numbers]   (21)  substitution:[[_G3212, _G3167], [k6_numbers, 2^[]]]
+1.1.2.1.1.2.2.1  [- (2^[]=k6_numbers)]   (3)  
+1.1.2.1.2  [- (k4_prepower(1^[], k2_rat_1(2^[]))=k4_prepower(1^[], k6_numbers)), 1^[]=1^[], k2_rat_1(2^[])=k6_numbers]   (18)  substitution:[[_G6828, _G6963, _G6895, _G7032], [1^[], k2_rat_1(2^[]), 1^[], k6_numbers]]
+1.1.2.1.2.1  [- (1^[]=1^[])]   (20)  substitution:[[_G3068], [1^[]]]
+1.1.2.1.2.2  [- (k2_rat_1(2^[])=k6_numbers), v1_rat_1(2^[]), 2^[]=k6_numbers]   (10)  substitution:[[_G8833], [2^[]]]
+1.1.2.1.2.2.1  [-v1_rat_1(2^[])]   (2)  
+1.1.2.1.2.2.2  [- (2^[]=k6_numbers)]   (3)  
+1.1.2.2  [- (k2_prepower(np__1, k4_prepower(1^[], k6_numbers))=np__1), k2_prepower(np__1, k4_prepower(1^[], k6_numbers))=k2_prepower(np__1, np__1), k2_prepower(np__1, np__1)=np__1]   (22)  substitution:[[_G3400, _G3513, _G3456], [k2_prepower(np__1, k4_prepower(1^[], k6_numbers)), np__1, k2_prepower(np__1, np__1)]]
+1.1.2.2.1  [- (k2_prepower(np__1, k4_prepower(1^[], k6_numbers))=k2_prepower(np__1, np__1)), np__1=np__1, k4_prepower(1^[], k6_numbers)=np__1]   (17)  substitution:[[_G6231, _G6366, _G6298, _G6435], [np__1, k4_prepower(1^[], k6_numbers), np__1, np__1]]
+1.1.2.2.1.1  [- (np__1=np__1)]   (20)  substitution:[[_G3068], [np__1]]
+1.1.2.2.1.2  [- (k4_prepower(1^[], k6_numbers)=np__1), v1_xreal_0(1^[])]   (13)  substitution:[[_G9637], [1^[]]]
+1.1.2.2.1.2.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.2.2.2  [- (k2_prepower(np__1, np__1)=np__1), v1_xreal_0(np__1), r1_xxreal_0(k6_numbers, np__1)]   (14)  substitution:[[_G9363], [np__1]]
+1.1.2.2.2.1  [-v1_xreal_0(np__1), m1_subset_1(np__1, k1_numbers)]   (5)  substitution:[[_G8118], [np__1]]
+1.1.2.2.2.1.1  [-m1_subset_1(np__1, k1_numbers)]   (8)  
+1.1.2.2.2.2  [-r1_xxreal_0(k6_numbers, np__1)]   (7)  
+------------------------------------------------------
+End of proof for t47_prepower

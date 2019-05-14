@@ -1,0 +1,34 @@
+
+t1_yellow14 is a Theorem
+Start of proof for t1_yellow14
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k9_setfam_1(np__1)=k2_tarski(k6_numbers, np__1)]
+ (2)  [- (k6_numbers=k1_xboole_0)]
+ (3)  [- (k9_setfam_1(_G3653)=k1_zfmisc_1(_G3653))]
+ (4)  [- (k1_zfmisc_1(k1_tarski(_G3784))=k2_tarski(k1_xboole_0, k1_tarski(_G3784)))]
+ (5)  [- (np__1=k1_tarski(k1_xboole_0))]
+ (6)  [- (_G1308=_G1308)]
+ (7)  [_G1407=_G1452, - (_G1452=_G1407)]
+ (8)  [- (_G1640=_G1753), _G1640=_G1696, _G1696=_G1753]
+ (9)  [_G2090=_G2139, - (k1_zfmisc_1(_G2090)=k1_zfmisc_1(_G2139))]
+ (10)  [_G2368=_G2417, - (k1_tarski(_G2368)=k1_tarski(_G2417))]
+ (11)  [_G2646=_G2695, - (k9_setfam_1(_G2646)=k9_setfam_1(_G2695))]
+ (12)  [- (k2_tarski(_G2915, _G3050)=k2_tarski(_G2982, _G3119)), _G2915=_G2982, _G3050=_G3119]
+
+Connection Proof:
+-----------------
+1  [k9_setfam_1(np__1)=k2_tarski(k6_numbers, np__1)]   (1)  
+1.1  [- (k9_setfam_1(np__1)=k2_tarski(k6_numbers, np__1)), k9_setfam_1(np__1)=k1_zfmisc_1(np__1), k1_zfmisc_1(np__1)=k2_tarski(k6_numbers, np__1)]   (8)  substitution:[[_G1640, _G1753, _G1696], [k9_setfam_1(np__1), k2_tarski(k6_numbers, np__1), k1_zfmisc_1(np__1)]]
+1.1.1  [- (k9_setfam_1(np__1)=k1_zfmisc_1(np__1))]   (3)  substitution:[[_G3653], [np__1]]
+1.1.2  [- (k1_zfmisc_1(np__1)=k2_tarski(k6_numbers, np__1)), k1_zfmisc_1(np__1)=k2_tarski(k1_xboole_0, k1_tarski(k1_xboole_0)), k2_tarski(k1_xboole_0, k1_tarski(k1_xboole_0))=k2_tarski(k6_numbers, np__1)]   (8)  substitution:[[_G1640, _G1753, _G1696], [k1_zfmisc_1(np__1), k2_tarski(k6_numbers, np__1), k2_tarski(k1_xboole_0, k1_tarski(k1_xboole_0))]]
+1.1.2.1  [- (k1_zfmisc_1(np__1)=k2_tarski(k1_xboole_0, k1_tarski(k1_xboole_0))), k1_zfmisc_1(np__1)=k1_zfmisc_1(k1_tarski(k1_xboole_0)), k1_zfmisc_1(k1_tarski(k1_xboole_0))=k2_tarski(k1_xboole_0, k1_tarski(k1_xboole_0))]   (8)  substitution:[[_G1640, _G1753, _G1696], [k1_zfmisc_1(np__1), k2_tarski(k1_xboole_0, k1_tarski(k1_xboole_0)), k1_zfmisc_1(k1_tarski(k1_xboole_0))]]
+1.1.2.1.1  [- (k1_zfmisc_1(np__1)=k1_zfmisc_1(k1_tarski(k1_xboole_0))), np__1=k1_tarski(k1_xboole_0)]   (9)  substitution:[[_G2090, _G2139], [np__1, k1_tarski(k1_xboole_0)]]
+1.1.2.1.1.1  [- (np__1=k1_tarski(k1_xboole_0))]   (5)  
+1.1.2.1.2  [- (k1_zfmisc_1(k1_tarski(k1_xboole_0))=k2_tarski(k1_xboole_0, k1_tarski(k1_xboole_0)))]   (4)  substitution:[[_G3784], [k1_xboole_0]]
+1.1.2.2  [- (k2_tarski(k1_xboole_0, k1_tarski(k1_xboole_0))=k2_tarski(k6_numbers, np__1)), k2_tarski(k6_numbers, np__1)=k2_tarski(k1_xboole_0, k1_tarski(k1_xboole_0))]   (7)  substitution:[[_G1452, _G1407], [k2_tarski(k1_xboole_0, k1_tarski(k1_xboole_0)), k2_tarski(k6_numbers, np__1)]]
+1.1.2.2.1  [- (k2_tarski(k6_numbers, np__1)=k2_tarski(k1_xboole_0, k1_tarski(k1_xboole_0))), k6_numbers=k1_xboole_0, np__1=k1_tarski(k1_xboole_0)]   (12)  substitution:[[_G2915, _G3050, _G2982, _G3119], [k6_numbers, np__1, k1_xboole_0, k1_tarski(k1_xboole_0)]]
+1.1.2.2.1.1  [- (k6_numbers=k1_xboole_0)]   (2)  
+1.1.2.2.1.2  [- (np__1=k1_tarski(k1_xboole_0))]   (5)  
+------------------------------------------------------
+End of proof for t1_yellow14

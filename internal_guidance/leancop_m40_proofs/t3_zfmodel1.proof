@@ -1,0 +1,63 @@
+
+t3_zfmodel1 is a Theorem
+Start of proof for t3_zfmodel1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-7^[], -r2_hidden(k2_tarski(_G3919, _G3924), 3^[]), r2_hidden(_G3919, 3^[]), r2_hidden(_G3924, 3^[])]
+ (2)  [-7^[], r2_zf_model(3^[], k7_zf_model)]
+ (3)  [-6^[], r2_hidden(k2_tarski(4^[], 5^[]), 3^[])]
+ (4)  [-6^[], -r2_hidden(5^[], 3^[])]
+ (5)  [-6^[], -r2_hidden(4^[], 3^[])]
+ (6)  [-6^[], -r2_zf_model(3^[], k7_zf_model)]
+ (7)  [v1_xboole_0(3^[])]
+ (8)  [-v1_ordinal1(3^[])]
+ (9)  [6^[], 7^[]]
+ (10)  [-v1_xboole_0(_G1126), m1_subset_1(_G1194, _G1126), -r2_hidden(_G1194, _G1126)]
+ (11)  [-v1_xboole_0(_G1126), -m1_subset_1(_G1194, _G1126), r2_hidden(_G1194, _G1126)]
+ (12)  [v1_xboole_0(_G1126), m1_subset_1(_G1194, _G1126), -v1_xboole_0(_G1194)]
+ (13)  [v1_xboole_0(_G1126), -m1_subset_1(_G1194, _G1126), v1_xboole_0(_G1194)]
+ (14)  [m1_subset_1(_G1665, _G1715), -v1_xboole_0(_G1715), -r2_hidden(_G1665, _G1715)]
+ (15)  [-v1_xboole_0(_G1961), v1_ordinal1(_G1961), -r2_zf_model(_G1961, k7_zf_model), -m1_subset_1(1^[_G1961], _G1961)]
+ (16)  [-v1_xboole_0(_G1961), v1_ordinal1(_G1961), -r2_zf_model(_G1961, k7_zf_model), -m1_subset_1(2^[_G1961], _G1961)]
+ (17)  [-v1_xboole_0(_G1961), v1_ordinal1(_G1961), -r2_zf_model(_G1961, k7_zf_model), r2_hidden(k2_tarski(1^[_G1961], 2^[_G1961]), _G1961)]
+ (18)  [-v1_xboole_0(_G1961), v1_ordinal1(_G1961), r2_zf_model(_G1961, k7_zf_model), m1_subset_1(_G2173, _G1961), m1_subset_1(_G2290, _G1961), -r2_hidden(k2_tarski(_G2173, _G2290), _G1961)]
+
+Connection Proof:
+-----------------
+1  [6^[], 7^[]]   (9)  
+1.1  [-6^[], r2_hidden(k2_tarski(4^[], 5^[]), 3^[])]   (3)  
+1.1.1  [-r2_hidden(k2_tarski(4^[], 5^[]), 3^[]), -v1_xboole_0(3^[]), v1_ordinal1(3^[]), r2_zf_model(3^[], k7_zf_model), m1_subset_1(4^[], 3^[]), m1_subset_1(5^[], 3^[])]   (18)  substitution:[[_G2173, _G2290, _G1961], [4^[], 5^[], 3^[]]]
+1.1.1.1  [v1_xboole_0(3^[])]   (7)  
+1.1.1.2  [-v1_ordinal1(3^[])]   (8)  
+1.1.1.3  [-r2_zf_model(3^[], k7_zf_model), -6^[]]   (6)  
+1.1.1.3.1  [6^[]]   (reduction:1)  
+1.1.1.4  [-m1_subset_1(4^[], 3^[]), -v1_xboole_0(3^[]), r2_hidden(4^[], 3^[])]   (11)  substitution:[[_G1194, _G1126], [4^[], 3^[]]]
+1.1.1.4.1  [v1_xboole_0(3^[])]   (7)  
+1.1.1.4.2  [-r2_hidden(4^[], 3^[]), -6^[]]   (5)  
+1.1.1.4.2.1  [6^[]]   (reduction:1)  
+1.1.1.5  [-m1_subset_1(5^[], 3^[]), -v1_xboole_0(3^[]), r2_hidden(5^[], 3^[])]   (11)  substitution:[[_G1194, _G1126], [5^[], 3^[]]]
+1.1.1.5.1  [v1_xboole_0(3^[])]   (7)  
+1.1.1.5.2  [-r2_hidden(5^[], 3^[]), -6^[]]   (4)  
+1.1.1.5.2.1  [6^[]]   (reduction:1)  
+1.2  [-7^[], -r2_hidden(k2_tarski(1^[3^[]], 2^[3^[]]), 3^[]), r2_hidden(1^[3^[]], 3^[]), r2_hidden(2^[3^[]], 3^[])]   (1)  substitution:[[_G3919, _G3924], [1^[3^[]], 2^[3^[]]]]
+1.2.1  [r2_hidden(k2_tarski(1^[3^[]], 2^[3^[]]), 3^[]), -v1_xboole_0(3^[]), v1_ordinal1(3^[]), -r2_zf_model(3^[], k7_zf_model)]   (17)  substitution:[[_G1961], [3^[]]]
+1.2.1.1  [v1_xboole_0(3^[])]   (7)  
+1.2.1.2  [-v1_ordinal1(3^[])]   (8)  
+1.2.1.3  [r2_zf_model(3^[], k7_zf_model), -7^[]]   (2)  
+1.2.1.3.1  [7^[]]   (reduction:1)  
+1.2.2  [-r2_hidden(1^[3^[]], 3^[]), -v1_xboole_0(3^[]), m1_subset_1(1^[3^[]], 3^[])]   (10)  substitution:[[_G1194, _G1126], [1^[3^[]], 3^[]]]
+1.2.2.1  [v1_xboole_0(3^[])]   (7)  
+1.2.2.2  [-m1_subset_1(1^[3^[]], 3^[]), -v1_xboole_0(3^[]), v1_ordinal1(3^[]), -r2_zf_model(3^[], k7_zf_model)]   (15)  substitution:[[_G1961], [3^[]]]
+1.2.2.2.1  [v1_xboole_0(3^[])]   (7)  
+1.2.2.2.2  [-v1_ordinal1(3^[])]   (8)  
+1.2.2.2.3  [r2_zf_model(3^[], k7_zf_model), -7^[]]   (2)  
+1.2.2.2.3.1  [7^[]]   (reduction:1)  
+1.2.3  [-r2_hidden(2^[3^[]], 3^[]), -v1_xboole_0(3^[]), m1_subset_1(2^[3^[]], 3^[])]   (10)  substitution:[[_G1194, _G1126], [2^[3^[]], 3^[]]]
+1.2.3.1  [v1_xboole_0(3^[])]   (7)  
+1.2.3.2  [-m1_subset_1(2^[3^[]], 3^[]), -v1_xboole_0(3^[]), v1_ordinal1(3^[]), -r2_zf_model(3^[], k7_zf_model)]   (16)  substitution:[[_G1961], [3^[]]]
+1.2.3.2.1  [v1_xboole_0(3^[])]   (7)  
+1.2.3.2.2  [-v1_ordinal1(3^[])]   (8)  
+1.2.3.2.3  [r2_zf_model(3^[], k7_zf_model), -7^[]]   (2)  
+1.2.3.2.3.1  [7^[]]   (reduction:1)  
+------------------------------------------------------
+End of proof for t3_zfmodel1

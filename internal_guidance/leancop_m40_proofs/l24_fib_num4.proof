@@ -1,0 +1,30 @@
+
+l24_fib_num4 is a Theorem
+Start of proof for l24_fib_num4
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k3_square_1(k2_fib_num)=k13_complex1(k6_xcmplx_0(np__3, k7_square_1(np__5)), np__2)]
+ (2)  [-v1_xreal_0(k2_fib_num)]
+ (3)  [- (k3_power(k2_fib_num, np__2)=k13_complex1(k6_xcmplx_0(np__3, k7_square_1(np__5)), np__2))]
+ (4)  [v1_xreal_0(_G5193), - (k3_power(_G5193, np__2)=k3_square_1(_G5193))]
+ (5)  [-v1_xreal_0(_G2289), _G2240=_G2289, v1_xreal_0(_G2240)]
+ (6)  [- (_G1467=_G1467)]
+ (7)  [_G1566=_G1611, - (_G1611=_G1566)]
+ (8)  [- (_G1799=_G1912), _G1799=_G1855, _G1855=_G1912]
+ (9)  [- (k3_power(_G2539, _G2674)=k3_power(_G2606, _G2743)), _G2539=_G2606, _G2674=_G2743]
+ (10)  [_G3136=_G3185, - (k3_square_1(_G3136)=k3_square_1(_G3185))]
+ (11)  [- (k13_complex1(_G3414, _G3549)=k13_complex1(_G3481, _G3618)), _G3414=_G3481, _G3549=_G3618]
+ (12)  [_G4599=_G4648, - (k7_square_1(_G4599)=k7_square_1(_G4648))]
+ (13)  [- (k6_xcmplx_0(_G4011, _G4146)=k6_xcmplx_0(_G4078, _G4215)), _G4011=_G4078, _G4146=_G4215]
+
+Connection Proof:
+-----------------
+1  [k3_square_1(k2_fib_num)=k13_complex1(k6_xcmplx_0(np__3, k7_square_1(np__5)), np__2)]   (1)  
+1.1  [- (k3_square_1(k2_fib_num)=k13_complex1(k6_xcmplx_0(np__3, k7_square_1(np__5)), np__2)), k13_complex1(k6_xcmplx_0(np__3, k7_square_1(np__5)), np__2)=k3_square_1(k2_fib_num)]   (7)  substitution:[[_G1611, _G1566], [k3_square_1(k2_fib_num), k13_complex1(k6_xcmplx_0(np__3, k7_square_1(np__5)), np__2)]]
+1.1.1  [- (k13_complex1(k6_xcmplx_0(np__3, k7_square_1(np__5)), np__2)=k3_square_1(k2_fib_num)), k13_complex1(k6_xcmplx_0(np__3, k7_square_1(np__5)), np__2)=k3_power(k2_fib_num, np__2), k3_power(k2_fib_num, np__2)=k3_square_1(k2_fib_num)]   (8)  substitution:[[_G1799, _G1912, _G1855], [k13_complex1(k6_xcmplx_0(np__3, k7_square_1(np__5)), np__2), k3_square_1(k2_fib_num), k3_power(k2_fib_num, np__2)]]
+1.1.1.1  [- (k13_complex1(k6_xcmplx_0(np__3, k7_square_1(np__5)), np__2)=k3_power(k2_fib_num, np__2)), k3_power(k2_fib_num, np__2)=k13_complex1(k6_xcmplx_0(np__3, k7_square_1(np__5)), np__2)]   (7)  substitution:[[_G1611, _G1566], [k13_complex1(k6_xcmplx_0(np__3, k7_square_1(np__5)), np__2), k3_power(k2_fib_num, np__2)]]
+1.1.1.1.1  [- (k3_power(k2_fib_num, np__2)=k13_complex1(k6_xcmplx_0(np__3, k7_square_1(np__5)), np__2))]   (3)  
+1.1.1.2  [- (k3_power(k2_fib_num, np__2)=k3_square_1(k2_fib_num)), v1_xreal_0(k2_fib_num)]   (4)  substitution:[[_G5193], [k2_fib_num]]
+1.1.1.2.1  [-v1_xreal_0(k2_fib_num)]   (2)  
+------------------------------------------------------
+End of proof for l24_fib_num4

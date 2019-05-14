@@ -1,0 +1,46 @@
+
+t19_ordinal2 is a Theorem
+Start of proof for t19_ordinal2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v3_ordinal1(4^[])]
+ (2)  [-r2_hidden(4^[], 5^[])]
+ (3)  [r2_hidden(4^[], k3_ordinal2(5^[]))]
+ (4)  [v3_ordinal1(_G6039), - (_G6039=k3_ordinal2(_G5961)), r1_tarski(k2_ordinal1(_G5961), _G6039), -v3_ordinal1(1^[_G6039, _G5961])]
+ (5)  [v3_ordinal1(_G6039), - (_G6039=k3_ordinal2(_G5961)), r1_tarski(k2_ordinal1(_G5961), _G6039), -r1_tarski(k2_ordinal1(_G5961), 1^[_G6039, _G5961])]
+ (6)  [v3_ordinal1(_G6039), - (_G6039=k3_ordinal2(_G5961)), r1_tarski(k2_ordinal1(_G5961), _G6039), r1_ordinal1(_G6039, 1^[_G6039, _G5961])]
+ (7)  [v3_ordinal1(_G6039), _G6039=k3_ordinal2(_G5961), -r1_tarski(k2_ordinal1(_G5961), _G6039)]
+ (8)  [v3_ordinal1(_G6039), _G6039=k3_ordinal2(_G5961), v3_ordinal1(_G6292), r1_tarski(k2_ordinal1(_G5961), _G6292), -r1_ordinal1(_G6039, _G6292)]
+ (9)  [-r1_tarski(_G6640, _G6696), -r2_hidden(2^[_G6696, _G6640], _G6640)]
+ (10)  [-r1_tarski(_G6640, _G6696), r2_hidden(2^[_G6696, _G6640], _G6696)]
+ (11)  [r1_tarski(_G6640, _G6696), r2_hidden(_G6810, _G6640), -r2_hidden(_G6810, _G6696)]
+ (12)  [-v3_ordinal1(k3_ordinal2(_G7521))]
+ (13)  [_G7105=k2_ordinal1(_G7042), r2_hidden(_G7240, _G7105), -r2_hidden(_G7240, _G7042)]
+ (14)  [_G7105=k2_ordinal1(_G7042), r2_hidden(_G7240, _G7105), -v3_ordinal1(_G7240)]
+ (15)  [_G7105=k2_ordinal1(_G7042), -r2_hidden(_G7240, _G7105), r2_hidden(_G7240, _G7042), v3_ordinal1(_G7240)]
+ (16)  [- (_G7105=k2_ordinal1(_G7042)), -r2_hidden(3^[_G7105, _G7042], _G7105), -r2_hidden(3^[_G7105, _G7042], _G7042)]
+ (17)  [- (_G7105=k2_ordinal1(_G7042)), -r2_hidden(3^[_G7105, _G7042], _G7105), -v3_ordinal1(3^[_G7105, _G7042])]
+ (18)  [- (_G7105=k2_ordinal1(_G7042)), r2_hidden(3^[_G7105, _G7042], _G7105), r2_hidden(3^[_G7105, _G7042], _G7042), v3_ordinal1(3^[_G7105, _G7042])]
+ (19)  [_G5372=_G5421, - (k2_ordinal1(_G5372)=k2_ordinal1(_G5421))]
+ (20)  [_G5641=_G5690, - (k3_ordinal2(_G5641)=k3_ordinal2(_G5690))]
+ (21)  [- (_G2446=_G2446)]
+ (22)  [_G2545=_G2590, - (_G2590=_G2545)]
+ (23)  [- (_G2778=_G2891), _G2778=_G2834, _G2834=_G2891]
+ (24)  [-r1_ordinal1(_G3295, _G3432), r1_ordinal1(_G3228, _G3363), _G3228=_G3295, _G3363=_G3432]
+ (25)  [-r1_tarski(_G3892, _G4029), r1_tarski(_G3825, _G3960), _G3825=_G3892, _G3960=_G4029]
+ (26)  [-v3_ordinal1(_G4471), _G4422=_G4471, v3_ordinal1(_G4422)]
+ (27)  [-r2_hidden(_G4758, _G4895), r2_hidden(_G4691, _G4826), _G4691=_G4758, _G4826=_G4895]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(4^[], k3_ordinal2(5^[]))]   (3)  
+1.1  [-r2_hidden(4^[], k3_ordinal2(5^[])), r1_tarski(k2_ordinal1(5^[]), k3_ordinal2(5^[])), r2_hidden(4^[], k2_ordinal1(5^[]))]   (11)  substitution:[[_G6810, _G6696, _G6640], [4^[], k3_ordinal2(5^[]), k2_ordinal1(5^[])]]
+1.1.1  [-r1_tarski(k2_ordinal1(5^[]), k3_ordinal2(5^[])), v3_ordinal1(k3_ordinal2(5^[])), k3_ordinal2(5^[])=k3_ordinal2(5^[])]   (7)  substitution:[[_G5961, _G6039], [5^[], k3_ordinal2(5^[])]]
+1.1.1.1  [-v3_ordinal1(k3_ordinal2(5^[]))]   (12)  substitution:[[_G7521], [5^[]]]
+1.1.1.2  [- (k3_ordinal2(5^[])=k3_ordinal2(5^[]))]   (21)  substitution:[[_G2446], [k3_ordinal2(5^[])]]
+1.1.2  [-r2_hidden(4^[], k2_ordinal1(5^[])), k2_ordinal1(5^[])=k2_ordinal1(5^[]), r2_hidden(4^[], 5^[]), v3_ordinal1(4^[])]   (15)  substitution:[[_G7240, _G7105, _G7042], [4^[], k2_ordinal1(5^[]), 5^[]]]
+1.1.2.1  [- (k2_ordinal1(5^[])=k2_ordinal1(5^[]))]   (21)  substitution:[[_G2446], [k2_ordinal1(5^[])]]
+1.1.2.2  [-r2_hidden(4^[], 5^[])]   (2)  
+1.1.2.3  [-v3_ordinal1(4^[])]   (1)  
+------------------------------------------------------
+End of proof for t19_ordinal2

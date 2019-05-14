@@ -1,0 +1,40 @@
+
+t21_subset_1 is a Theorem
+Start of proof for t21_subset_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(2^[], k1_zfmisc_1(1^[]))]
+ (2)  [-m1_subset_1(3^[], k1_zfmisc_1(1^[]))]
+ (3)  [r1_tarski(k3_subset_1(1^[], k4_subset_1(1^[], 2^[], 3^[])), k3_subset_1(1^[], 2^[]))]
+ (4)  [-m1_subset_1(k4_subset_1(_G7355, _G7421, _G7488), k1_zfmisc_1(_G7355)), m1_subset_1(_G7421, k1_zfmisc_1(_G7355)), m1_subset_1(_G7488, k1_zfmisc_1(_G7355))]
+ (5)  [- (k4_subset_1(_G7917, _G7984, _G8052)=k2_xboole_0(_G7984, _G8052)), m1_subset_1(_G7984, k1_zfmisc_1(_G7917)), m1_subset_1(_G8052, k1_zfmisc_1(_G7917))]
+ (6)  [-r1_tarski(_G9130, k2_xboole_0(_G9130, _G9172))]
+ (7)  [m1_subset_1(_G8579, k1_zfmisc_1(_G8507)), m1_subset_1(_G8723, k1_zfmisc_1(_G8507)), r1_tarski(_G8579, _G8723), -r1_tarski(k3_subset_1(_G8507, _G8723), k3_subset_1(_G8507, _G8579))]
+ (8)  [m1_subset_1(_G8579, k1_zfmisc_1(_G8507)), m1_subset_1(_G8723, k1_zfmisc_1(_G8507)), -r1_tarski(_G8579, _G8723), r1_tarski(k3_subset_1(_G8507, _G8723), k3_subset_1(_G8507, _G8579))]
+ (9)  [- (k2_xboole_0(_G4780, _G4915)=k2_xboole_0(_G4847, _G4984)), _G4780=_G4847, _G4915=_G4984]
+ (10)  [_G5377=_G5426, - (k1_zfmisc_1(_G5377)=k1_zfmisc_1(_G5426))]
+ (11)  [- (k3_subset_1(_G6674, _G6809)=k3_subset_1(_G6741, _G6878)), _G6674=_G6741, _G6809=_G6878]
+ (12)  [- (k4_subset_1(_G5655, _G5826, _G6001)=k4_subset_1(_G5740, _G5913, _G6090)), _G5655=_G5740, _G5826=_G5913, _G6001=_G6090]
+ (13)  [- (_G2771=_G2771)]
+ (14)  [_G2870=_G2915, - (_G2915=_G2870)]
+ (15)  [- (_G3103=_G3216), _G3103=_G3159, _G3159=_G3216]
+ (16)  [-m1_subset_1(_G3620, _G3757), m1_subset_1(_G3553, _G3688), _G3553=_G3620, _G3688=_G3757]
+ (17)  [-r1_tarski(_G4208, _G4345), r1_tarski(_G4141, _G4276), _G4141=_G4208, _G4276=_G4345]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k3_subset_1(1^[], k4_subset_1(1^[], 2^[], 3^[])), k3_subset_1(1^[], 2^[]))]   (3)  
+1.1  [-r1_tarski(k3_subset_1(1^[], k4_subset_1(1^[], 2^[], 3^[])), k3_subset_1(1^[], 2^[])), m1_subset_1(2^[], k1_zfmisc_1(1^[])), m1_subset_1(k4_subset_1(1^[], 2^[], 3^[]), k1_zfmisc_1(1^[])), r1_tarski(2^[], k4_subset_1(1^[], 2^[], 3^[]))]   (7)  substitution:[[_G8507, _G8723, _G8579], [1^[], k4_subset_1(1^[], 2^[], 3^[]), 2^[]]]
+1.1.1  [-m1_subset_1(2^[], k1_zfmisc_1(1^[]))]   (1)  
+1.1.2  [-m1_subset_1(k4_subset_1(1^[], 2^[], 3^[]), k1_zfmisc_1(1^[])), m1_subset_1(2^[], k1_zfmisc_1(1^[])), m1_subset_1(3^[], k1_zfmisc_1(1^[]))]   (4)  substitution:[[_G7355, _G7421, _G7488], [1^[], 2^[], 3^[]]]
+1.1.2.1  [-m1_subset_1(2^[], k1_zfmisc_1(1^[]))]   (1)  
+1.1.2.2  [-m1_subset_1(3^[], k1_zfmisc_1(1^[]))]   (2)  
+1.1.3  [-r1_tarski(2^[], k4_subset_1(1^[], 2^[], 3^[])), r1_tarski(2^[], k2_xboole_0(2^[], 3^[])), 2^[]=2^[], k2_xboole_0(2^[], 3^[])=k4_subset_1(1^[], 2^[], 3^[])]   (17)  substitution:[[_G4208, _G4345, _G4141, _G4276], [2^[], k4_subset_1(1^[], 2^[], 3^[]), 2^[], k2_xboole_0(2^[], 3^[])]]
+1.1.3.1  [-r1_tarski(2^[], k2_xboole_0(2^[], 3^[]))]   (6)  substitution:[[_G9130, _G9172], [2^[], 3^[]]]
+1.1.3.2  [- (2^[]=2^[])]   (13)  substitution:[[_G2771], [2^[]]]
+1.1.3.3  [- (k2_xboole_0(2^[], 3^[])=k4_subset_1(1^[], 2^[], 3^[])), k4_subset_1(1^[], 2^[], 3^[])=k2_xboole_0(2^[], 3^[])]   (14)  substitution:[[_G2915, _G2870], [k2_xboole_0(2^[], 3^[]), k4_subset_1(1^[], 2^[], 3^[])]]
+1.1.3.3.1  [- (k4_subset_1(1^[], 2^[], 3^[])=k2_xboole_0(2^[], 3^[])), m1_subset_1(2^[], k1_zfmisc_1(1^[])), m1_subset_1(3^[], k1_zfmisc_1(1^[]))]   (5)  substitution:[[_G7917, _G7984, _G8052], [1^[], 2^[], 3^[]]]
+1.1.3.3.1.1  [-m1_subset_1(2^[], k1_zfmisc_1(1^[]))]   (1)  
+1.1.3.3.1.2  [-m1_subset_1(3^[], k1_zfmisc_1(1^[]))]   (2)  
+------------------------------------------------------
+End of proof for t21_subset_1

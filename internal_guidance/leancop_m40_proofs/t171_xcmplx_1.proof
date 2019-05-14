@@ -1,0 +1,38 @@
+
+t171_xcmplx_1 is a Theorem
+Start of proof for t171_xcmplx_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xcmplx_0(1^[])]
+ (2)  [-v1_xcmplx_0(2^[])]
+ (3)  [-v1_xcmplx_0(3^[])]
+ (4)  [k4_xcmplx_0(k6_xcmplx_0(k2_xcmplx_0(k4_xcmplx_0(1^[]), 2^[]), 3^[]))=k2_xcmplx_0(k6_xcmplx_0(1^[], 2^[]), 3^[])]
+ (5)  [-v1_xcmplx_0(k6_xcmplx_0(_G4833, _G4884)), v1_xcmplx_0(_G4833), v1_xcmplx_0(_G4884)]
+ (6)  [v1_xcmplx_0(_G5129), v1_xcmplx_0(_G5220), - (k4_xcmplx_0(k6_xcmplx_0(_G5129, _G5220))=k2_xcmplx_0(k4_xcmplx_0(_G5129), _G5220))]
+ (7)  [v1_xcmplx_0(_G5519), v1_xcmplx_0(_G5610), - (k2_xcmplx_0(_G5519, _G5610)=k4_xcmplx_0(k6_xcmplx_0(k4_xcmplx_0(_G5519), _G5610)))]
+ (8)  [-v1_xcmplx_0(_G3057), _G3008=_G3057, v1_xcmplx_0(_G3008)]
+ (9)  [- (_G2235=_G2235)]
+ (10)  [_G2334=_G2379, - (_G2379=_G2334)]
+ (11)  [- (_G2567=_G2680), _G2567=_G2623, _G2623=_G2680]
+ (12)  [_G3307=_G3356, - (k4_xcmplx_0(_G3307)=k4_xcmplx_0(_G3356))]
+ (13)  [- (k2_xcmplx_0(_G3585, _G3720)=k2_xcmplx_0(_G3652, _G3789)), _G3585=_G3652, _G3720=_G3789]
+ (14)  [- (k6_xcmplx_0(_G4173, _G4308)=k6_xcmplx_0(_G4240, _G4377)), _G4173=_G4240, _G4308=_G4377]
+
+Connection Proof:
+-----------------
+1  [k4_xcmplx_0(k6_xcmplx_0(k2_xcmplx_0(k4_xcmplx_0(1^[]), 2^[]), 3^[]))=k2_xcmplx_0(k6_xcmplx_0(1^[], 2^[]), 3^[])]   (4)  
+1.1  [- (k4_xcmplx_0(k6_xcmplx_0(k2_xcmplx_0(k4_xcmplx_0(1^[]), 2^[]), 3^[]))=k2_xcmplx_0(k6_xcmplx_0(1^[], 2^[]), 3^[])), k2_xcmplx_0(k6_xcmplx_0(1^[], 2^[]), 3^[])=k4_xcmplx_0(k6_xcmplx_0(k2_xcmplx_0(k4_xcmplx_0(1^[]), 2^[]), 3^[]))]   (10)  substitution:[[_G2379, _G2334], [k4_xcmplx_0(k6_xcmplx_0(k2_xcmplx_0(k4_xcmplx_0(1^[]), 2^[]), 3^[])), k2_xcmplx_0(k6_xcmplx_0(1^[], 2^[]), 3^[])]]
+1.1.1  [- (k2_xcmplx_0(k6_xcmplx_0(1^[], 2^[]), 3^[])=k4_xcmplx_0(k6_xcmplx_0(k2_xcmplx_0(k4_xcmplx_0(1^[]), 2^[]), 3^[]))), k2_xcmplx_0(k6_xcmplx_0(1^[], 2^[]), 3^[])=k4_xcmplx_0(k6_xcmplx_0(k4_xcmplx_0(k6_xcmplx_0(1^[], 2^[])), 3^[])), k4_xcmplx_0(k6_xcmplx_0(k4_xcmplx_0(k6_xcmplx_0(1^[], 2^[])), 3^[]))=k4_xcmplx_0(k6_xcmplx_0(k2_xcmplx_0(k4_xcmplx_0(1^[]), 2^[]), 3^[]))]   (11)  substitution:[[_G2567, _G2680, _G2623], [k2_xcmplx_0(k6_xcmplx_0(1^[], 2^[]), 3^[]), k4_xcmplx_0(k6_xcmplx_0(k2_xcmplx_0(k4_xcmplx_0(1^[]), 2^[]), 3^[])), k4_xcmplx_0(k6_xcmplx_0(k4_xcmplx_0(k6_xcmplx_0(1^[], 2^[])), 3^[]))]]
+1.1.1.1  [- (k2_xcmplx_0(k6_xcmplx_0(1^[], 2^[]), 3^[])=k4_xcmplx_0(k6_xcmplx_0(k4_xcmplx_0(k6_xcmplx_0(1^[], 2^[])), 3^[]))), v1_xcmplx_0(k6_xcmplx_0(1^[], 2^[])), v1_xcmplx_0(3^[])]   (7)  substitution:[[_G5519, _G5610], [k6_xcmplx_0(1^[], 2^[]), 3^[]]]
+1.1.1.1.1  [-v1_xcmplx_0(k6_xcmplx_0(1^[], 2^[])), v1_xcmplx_0(1^[]), v1_xcmplx_0(2^[])]   (5)  substitution:[[_G4833, _G4884], [1^[], 2^[]]]
+1.1.1.1.1.1  [-v1_xcmplx_0(1^[])]   (1)  
+1.1.1.1.1.2  [-v1_xcmplx_0(2^[])]   (2)  
+1.1.1.1.2  [-v1_xcmplx_0(3^[])]   (3)  
+1.1.1.2  [- (k4_xcmplx_0(k6_xcmplx_0(k4_xcmplx_0(k6_xcmplx_0(1^[], 2^[])), 3^[]))=k4_xcmplx_0(k6_xcmplx_0(k2_xcmplx_0(k4_xcmplx_0(1^[]), 2^[]), 3^[]))), k6_xcmplx_0(k4_xcmplx_0(k6_xcmplx_0(1^[], 2^[])), 3^[])=k6_xcmplx_0(k2_xcmplx_0(k4_xcmplx_0(1^[]), 2^[]), 3^[])]   (12)  substitution:[[_G3307, _G3356], [k6_xcmplx_0(k4_xcmplx_0(k6_xcmplx_0(1^[], 2^[])), 3^[]), k6_xcmplx_0(k2_xcmplx_0(k4_xcmplx_0(1^[]), 2^[]), 3^[])]]
+1.1.1.2.1  [- (k6_xcmplx_0(k4_xcmplx_0(k6_xcmplx_0(1^[], 2^[])), 3^[])=k6_xcmplx_0(k2_xcmplx_0(k4_xcmplx_0(1^[]), 2^[]), 3^[])), k4_xcmplx_0(k6_xcmplx_0(1^[], 2^[]))=k2_xcmplx_0(k4_xcmplx_0(1^[]), 2^[]), 3^[]=3^[]]   (14)  substitution:[[_G4173, _G4308, _G4240, _G4377], [k4_xcmplx_0(k6_xcmplx_0(1^[], 2^[])), 3^[], k2_xcmplx_0(k4_xcmplx_0(1^[]), 2^[]), 3^[]]]
+1.1.1.2.1.1  [- (k4_xcmplx_0(k6_xcmplx_0(1^[], 2^[]))=k2_xcmplx_0(k4_xcmplx_0(1^[]), 2^[])), v1_xcmplx_0(1^[]), v1_xcmplx_0(2^[])]   (6)  substitution:[[_G5129, _G5220], [1^[], 2^[]]]
+1.1.1.2.1.1.1  [-v1_xcmplx_0(1^[])]   (1)  
+1.1.1.2.1.1.2  [-v1_xcmplx_0(2^[])]   (2)  
+1.1.1.2.1.2  [- (3^[]=3^[])]   (9)  substitution:[[_G2235], [3^[]]]
+------------------------------------------------------
+End of proof for t171_xcmplx_1

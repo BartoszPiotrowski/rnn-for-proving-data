@@ -1,0 +1,60 @@
+
+t33_zf_fund1 is a Theorem
+Start of proof for t33_zf_fund1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-6^[], r2_hidden(2^[], k4_zf_fund1(3^[]))]
+ (2)  [-6^[], - (2^[]=k3_zf_fund1(5^[]))]
+ (3)  [-6^[], -r2_hidden(5^[], 3^[])]
+ (4)  [-6^[], -m2_subset_1(5^[], k5_numbers, k1_zf_lang)]
+ (5)  [-4^[], m2_subset_1(_G8740, k5_numbers, k1_zf_lang), r2_hidden(_G8740, 3^[]), 2^[]=k3_zf_fund1(_G8740)]
+ (6)  [-4^[], -r2_hidden(2^[], k4_zf_fund1(3^[]))]
+ (7)  [-v1_finset_1(3^[])]
+ (8)  [-m1_subset_1(3^[], k1_zfmisc_1(k1_zf_lang))]
+ (9)  [6^[], 4^[]]
+ (10)  [m1_subset_1(_G6401, k1_zfmisc_1(k1_zf_lang)), v1_finset_1(_G6401), r2_hidden(_G6323, k4_zf_fund1(_G6401)), -m2_subset_1(1^[_G6401, _G6323], k5_numbers, k1_zf_lang)]
+ (11)  [m1_subset_1(_G6401, k1_zfmisc_1(k1_zf_lang)), v1_finset_1(_G6401), r2_hidden(_G6323, k4_zf_fund1(_G6401)), -r2_hidden(1^[_G6401, _G6323], _G6401)]
+ (12)  [m1_subset_1(_G6401, k1_zfmisc_1(k1_zf_lang)), v1_finset_1(_G6401), r2_hidden(_G6323, k4_zf_fund1(_G6401)), - (_G6323=k3_zf_fund1(1^[_G6401, _G6323]))]
+ (13)  [m1_subset_1(_G6401, k1_zfmisc_1(k1_zf_lang)), v1_finset_1(_G6401), -r2_hidden(_G6323, k4_zf_fund1(_G6401)), m2_subset_1(_G6675, k5_numbers, k1_zf_lang), r2_hidden(_G6675, _G6401), _G6323=k3_zf_fund1(_G6675)]
+ (14)  [_G5444=_G5493, - (k1_zfmisc_1(_G5444)=k1_zfmisc_1(_G5493))]
+ (15)  [_G5722=_G5771, - (k4_zf_fund1(_G5722)=k4_zf_fund1(_G5771))]
+ (16)  [_G5991=_G6040, - (k3_zf_fund1(_G5991)=k3_zf_fund1(_G6040))]
+ (17)  [- (_G2087=_G2087)]
+ (18)  [_G2186=_G2231, - (_G2231=_G2186)]
+ (19)  [- (_G2419=_G2532), _G2419=_G2475, _G2475=_G2532]
+ (20)  [-v1_finset_1(_G2918), _G2869=_G2918, v1_finset_1(_G2869)]
+ (21)  [-m1_subset_1(_G3214, _G3351), m1_subset_1(_G3147, _G3282), _G3147=_G3214, _G3282=_G3351]
+ (22)  [-r2_hidden(_G4830, _G4967), r2_hidden(_G4763, _G4898), _G4763=_G4830, _G4898=_G4967]
+ (23)  [-m2_subset_1(_G3829, _G4002, _G4179), m2_subset_1(_G3744, _G3915, _G4090), _G3744=_G3829, _G3915=_G4002, _G4090=_G4179]
+
+Connection Proof:
+-----------------
+1  [6^[], 4^[]]   (9)  
+1.1  [-6^[], r2_hidden(2^[], k4_zf_fund1(3^[]))]   (1)  
+1.1.1  [-r2_hidden(2^[], k4_zf_fund1(3^[])), m1_subset_1(3^[], k1_zfmisc_1(k1_zf_lang)), v1_finset_1(3^[]), m2_subset_1(5^[], k5_numbers, k1_zf_lang), r2_hidden(5^[], 3^[]), 2^[]=k3_zf_fund1(5^[])]   (13)  substitution:[[_G6323, _G6401, _G6675], [2^[], 3^[], 5^[]]]
+1.1.1.1  [-m1_subset_1(3^[], k1_zfmisc_1(k1_zf_lang))]   (8)  
+1.1.1.2  [-v1_finset_1(3^[])]   (7)  
+1.1.1.3  [-m2_subset_1(5^[], k5_numbers, k1_zf_lang), -6^[]]   (4)  
+1.1.1.3.1  [6^[]]   (reduction:1)  
+1.1.1.4  [-r2_hidden(5^[], 3^[]), -6^[]]   (3)  
+1.1.1.4.1  [6^[]]   (reduction:1)  
+1.1.1.5  [- (2^[]=k3_zf_fund1(5^[])), -6^[]]   (2)  
+1.1.1.5.1  [6^[]]   (reduction:1)  
+1.2  [-4^[], m2_subset_1(1^[3^[], 2^[]], k5_numbers, k1_zf_lang), r2_hidden(1^[3^[], 2^[]], 3^[]), 2^[]=k3_zf_fund1(1^[3^[], 2^[]])]   (5)  substitution:[[_G8740], [1^[3^[], 2^[]]]]
+1.2.1  [-m2_subset_1(1^[3^[], 2^[]], k5_numbers, k1_zf_lang), m1_subset_1(3^[], k1_zfmisc_1(k1_zf_lang)), v1_finset_1(3^[]), r2_hidden(2^[], k4_zf_fund1(3^[]))]   (10)  substitution:[[_G6401, _G6323], [3^[], 2^[]]]
+1.2.1.1  [-m1_subset_1(3^[], k1_zfmisc_1(k1_zf_lang))]   (8)  
+1.2.1.2  [-v1_finset_1(3^[])]   (7)  
+1.2.1.3  [-r2_hidden(2^[], k4_zf_fund1(3^[])), -4^[]]   (6)  
+1.2.1.3.1  [4^[]]   (reduction:1)  
+1.2.2  [-r2_hidden(1^[3^[], 2^[]], 3^[]), m1_subset_1(3^[], k1_zfmisc_1(k1_zf_lang)), v1_finset_1(3^[]), r2_hidden(2^[], k4_zf_fund1(3^[]))]   (11)  substitution:[[_G6401, _G6323], [3^[], 2^[]]]
+1.2.2.1  [-m1_subset_1(3^[], k1_zfmisc_1(k1_zf_lang))]   (8)  
+1.2.2.2  [-v1_finset_1(3^[])]   (7)  
+1.2.2.3  [-r2_hidden(2^[], k4_zf_fund1(3^[])), -4^[]]   (6)  
+1.2.2.3.1  [4^[]]   (reduction:1)  
+1.2.3  [- (2^[]=k3_zf_fund1(1^[3^[], 2^[]])), m1_subset_1(3^[], k1_zfmisc_1(k1_zf_lang)), v1_finset_1(3^[]), r2_hidden(2^[], k4_zf_fund1(3^[]))]   (12)  substitution:[[_G6323, _G6401], [2^[], 3^[]]]
+1.2.3.1  [-m1_subset_1(3^[], k1_zfmisc_1(k1_zf_lang))]   (8)  
+1.2.3.2  [-v1_finset_1(3^[])]   (7)  
+1.2.3.3  [-r2_hidden(2^[], k4_zf_fund1(3^[])), -4^[]]   (6)  
+1.2.3.3.1  [4^[]]   (reduction:1)  
+------------------------------------------------------
+End of proof for t33_zf_fund1

@@ -1,0 +1,22 @@
+
+l13_quaterni is a Theorem
+Start of proof for l13_quaterni
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k1_xcmplx_0=k5_arytm_0(k6_numbers, np__1)]
+ (2)  [- (k7_complex1=k5_arytm_0(k6_numbers, np__1))]
+ (3)  [- (k7_complex1=k1_xcmplx_0)]
+ (4)  [- (k5_arytm_0(_G1583, _G1718)=k5_arytm_0(_G1650, _G1787)), _G1583=_G1650, _G1718=_G1787]
+ (5)  [- (_G810=_G810)]
+ (6)  [_G909=_G954, - (_G954=_G909)]
+ (7)  [- (_G1142=_G1255), _G1142=_G1198, _G1198=_G1255]
+
+Connection Proof:
+-----------------
+1  [k1_xcmplx_0=k5_arytm_0(k6_numbers, np__1)]   (1)  
+1.1  [- (k1_xcmplx_0=k5_arytm_0(k6_numbers, np__1)), k1_xcmplx_0=k7_complex1, k7_complex1=k5_arytm_0(k6_numbers, np__1)]   (7)  substitution:[[_G1142, _G1255, _G1198], [k1_xcmplx_0, k5_arytm_0(k6_numbers, np__1), k7_complex1]]
+1.1.1  [- (k1_xcmplx_0=k7_complex1), k7_complex1=k1_xcmplx_0]   (6)  substitution:[[_G954, _G909], [k1_xcmplx_0, k7_complex1]]
+1.1.1.1  [- (k7_complex1=k1_xcmplx_0)]   (3)  
+1.1.2  [- (k7_complex1=k5_arytm_0(k6_numbers, np__1))]   (2)  
+------------------------------------------------------
+End of proof for l13_quaterni

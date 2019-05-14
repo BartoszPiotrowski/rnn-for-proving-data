@@ -1,0 +1,164 @@
+
+t69_exchsort is a Theorem
+Start of proof for t69_exchsort
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(2^[])]
+ (2)  [-v3_orders_2(2^[])]
+ (3)  [-v4_orders_2(2^[])]
+ (4)  [-v5_orders_2(2^[])]
+ (5)  [-v16_waybel_0(2^[])]
+ (6)  [-l1_orders_2(2^[])]
+ (7)  [v1_xboole_0(3^[])]
+ (8)  [-v1_relat_1(3^[])]
+ (9)  [-v5_relat_1(3^[], u1_struct_0(2^[]))]
+ (10)  [-v1_funct_1(3^[])]
+ (11)  [-v1_exchsort(3^[])]
+ (12)  [-m1_subset_1(4^[], k9_xtuple_0(3^[]))]
+ (13)  [-m1_subset_1(5^[], k9_xtuple_0(3^[]))]
+ (14)  [-m1_subset_1(6^[], k9_xtuple_0(3^[]))]
+ (15)  [-r2_hidden(4^[], 5^[])]
+ (16)  [-r2_hidden(5^[], 6^[])]
+ (17)  [k1_binop_1(k7_exchsort(2^[], 3^[], 4^[], 6^[]), 4^[], 5^[])=k4_tarski(4^[], 5^[]), k1_binop_1(k7_exchsort(2^[], 3^[], 4^[], 6^[]), 5^[], 6^[])=k4_tarski(5^[], 6^[])]
+ (18)  [v3_ordinal1(_G1929), -v1_ordinal1(_G1929)]
+ (19)  [v3_ordinal1(_G1929), -v2_ordinal1(_G1929)]
+ (20)  [v1_ordinal6(_G1936), m1_subset_1(_G1939, _G1936), -v3_ordinal1(_G1939)]
+ (21)  [-v1_ordinal1(_G1945), -r2_hidden(1^[_G1945], _G1945)]
+ (22)  [-v1_ordinal1(_G1945), r1_tarski(1^[_G1945], _G1945)]
+ (23)  [v1_ordinal1(_G1945), r2_hidden(_G1948, _G1945), -r1_tarski(_G1948, _G1945)]
+ (24)  [-v1_ordinal6(k9_xtuple_0(_G1955)), v1_relat_1(_G1955), v1_funct_1(_G1955), v1_exchsort(_G1955)]
+ (25)  [v3_ordinal1(_G1967), v3_ordinal1(_G1966), r1_ordinal1(_G1966, _G1967), -r1_tarski(_G1966, _G1967)]
+ (26)  [v3_ordinal1(_G1967), v3_ordinal1(_G1966), -r1_ordinal1(_G1966, _G1967), r1_tarski(_G1966, _G1967)]
+ (27)  [l1_orders_2(_G1978), v16_waybel_0(_G1978), v5_orders_2(_G1978), v4_orders_2(_G1978), v3_orders_2(_G1978), -v2_struct_0(_G1978), v1_exchsort(_G1993), v1_funct_1(_G1993), v5_relat_1(_G1993, u1_struct_0(_G1978)), v1_relat_1(_G1993), -v1_xboole_0(_G1993), m1_subset_1(_G2009, k9_xtuple_0(_G1993)), m1_subset_1(_G2015, k9_xtuple_0(_G1993)), m1_subset_1(_G2021, k9_xtuple_0(_G1993)), - (k1_binop_1(k7_exchsort(_G1978, _G1993, _G2009, _G2021), _G2009, _G2015)=k4_tarski(_G2009, _G2015)), r1_ordinal1(_G2009, _G2015), r1_ordinal1(_G2015, _G2021)]
+ (28)  [l1_orders_2(_G1978), v16_waybel_0(_G1978), v5_orders_2(_G1978), v4_orders_2(_G1978), v3_orders_2(_G1978), -v2_struct_0(_G1978), v1_exchsort(_G1993), v1_funct_1(_G1993), v5_relat_1(_G1993, u1_struct_0(_G1978)), v1_relat_1(_G1993), -v1_xboole_0(_G1993), m1_subset_1(_G2009, k9_xtuple_0(_G1993)), m1_subset_1(_G2015, k9_xtuple_0(_G1993)), m1_subset_1(_G2021, k9_xtuple_0(_G1993)), - (k1_binop_1(k7_exchsort(_G1978, _G1993, _G2009, _G2021), _G2015, _G2021)=k4_tarski(_G2015, _G2021)), r1_ordinal1(_G2009, _G2015), r1_ordinal1(_G2015, _G2021)]
+ (29)  [_G1827=_G1828, - (u1_struct_0(_G1827)=u1_struct_0(_G1828))]
+ (30)  [_G1839=_G1840, - (k9_xtuple_0(_G1839)=k9_xtuple_0(_G1840))]
+ (31)  [- (k1_binop_1(_G1851, _G1853, _G1855)=k1_binop_1(_G1852, _G1854, _G1856)), _G1851=_G1852, _G1853=_G1854, _G1855=_G1856]
+ (32)  [- (k4_tarski(_G1910, _G1912)=k4_tarski(_G1911, _G1913)), _G1910=_G1911, _G1912=_G1913]
+ (33)  [- (k7_exchsort(_G1877, _G1879, _G1881, _G1883)=k7_exchsort(_G1878, _G1880, _G1882, _G1884)), _G1877=_G1878, _G1879=_G1880, _G1881=_G1882, _G1883=_G1884]
+ (34)  [- (_G1597=_G1597)]
+ (35)  [_G1601=_G1602, - (_G1602=_G1601)]
+ (36)  [- (_G1609=_G1611), _G1609=_G1610, _G1610=_G1611]
+ (37)  [-v2_ordinal1(_G1622), _G1621=_G1622, v2_ordinal1(_G1621)]
+ (38)  [-v1_ordinal1(_G1631), _G1630=_G1631, v1_ordinal1(_G1630)]
+ (39)  [-v1_ordinal6(_G1640), _G1639=_G1640, v1_ordinal6(_G1639)]
+ (40)  [-v3_ordinal1(_G1649), _G1648=_G1649, v3_ordinal1(_G1648)]
+ (41)  [-r1_tarski(_G1658, _G1660), r1_tarski(_G1657, _G1659), _G1657=_G1658, _G1659=_G1660]
+ (42)  [-r1_ordinal1(_G1674, _G1676), r1_ordinal1(_G1673, _G1675), _G1673=_G1674, _G1675=_G1676]
+ (43)  [-v2_struct_0(_G1690), _G1689=_G1690, v2_struct_0(_G1689)]
+ (44)  [-v3_orders_2(_G1699), _G1698=_G1699, v3_orders_2(_G1698)]
+ (45)  [-v4_orders_2(_G1708), _G1707=_G1708, v4_orders_2(_G1707)]
+ (46)  [-v5_orders_2(_G1717), _G1716=_G1717, v5_orders_2(_G1716)]
+ (47)  [-v16_waybel_0(_G1726), _G1725=_G1726, v16_waybel_0(_G1725)]
+ (48)  [-l1_orders_2(_G1735), _G1734=_G1735, l1_orders_2(_G1734)]
+ (49)  [-v1_xboole_0(_G1744), _G1743=_G1744, v1_xboole_0(_G1743)]
+ (50)  [-v1_relat_1(_G1753), _G1752=_G1753, v1_relat_1(_G1752)]
+ (51)  [-v5_relat_1(_G1762, _G1764), v5_relat_1(_G1761, _G1763), _G1761=_G1762, _G1763=_G1764]
+ (52)  [-v1_funct_1(_G1778), _G1777=_G1778, v1_funct_1(_G1777)]
+ (53)  [-v1_exchsort(_G1787), _G1786=_G1787, v1_exchsort(_G1786)]
+ (54)  [-m1_subset_1(_G1796, _G1798), m1_subset_1(_G1795, _G1797), _G1795=_G1796, _G1797=_G1798]
+ (55)  [-r2_hidden(_G1812, _G1814), r2_hidden(_G1811, _G1813), _G1811=_G1812, _G1813=_G1814]
+
+Connection Proof:
+-----------------
+1  [k1_binop_1(k7_exchsort(2^[], 3^[], 4^[], 6^[]), 4^[], 5^[])=k4_tarski(4^[], 5^[]), k1_binop_1(k7_exchsort(2^[], 3^[], 4^[], 6^[]), 5^[], 6^[])=k4_tarski(5^[], 6^[])]   (17)  
+1.1  [- (k1_binop_1(k7_exchsort(2^[], 3^[], 4^[], 6^[]), 4^[], 5^[])=k4_tarski(4^[], 5^[])), l1_orders_2(2^[]), v16_waybel_0(2^[]), v5_orders_2(2^[]), v4_orders_2(2^[]), v3_orders_2(2^[]), -v2_struct_0(2^[]), v1_exchsort(3^[]), v1_funct_1(3^[]), v5_relat_1(3^[], u1_struct_0(2^[])), v1_relat_1(3^[]), -v1_xboole_0(3^[]), m1_subset_1(4^[], k9_xtuple_0(3^[])), m1_subset_1(5^[], k9_xtuple_0(3^[])), m1_subset_1(6^[], k9_xtuple_0(3^[])), r1_ordinal1(4^[], 5^[]), r1_ordinal1(5^[], 6^[])]   (27)  substitution:[[_G1978, _G1993, _G2009, _G2021, _G2015], [2^[], 3^[], 4^[], 6^[], 5^[]]]
+1.1.1  [-l1_orders_2(2^[])]   (6)  
+1.1.2  [-v16_waybel_0(2^[])]   (5)  
+1.1.3  [-v5_orders_2(2^[])]   (4)  
+1.1.4  [-v4_orders_2(2^[])]   (3)  
+1.1.5  [-v3_orders_2(2^[])]   (2)  
+1.1.6  [v2_struct_0(2^[])]   (1)  
+1.1.7  [-v1_exchsort(3^[])]   (11)  
+1.1.8  [-v1_funct_1(3^[])]   (10)  
+1.1.9  [-v5_relat_1(3^[], u1_struct_0(2^[]))]   (9)  
+1.1.10  [-v1_relat_1(3^[])]   (8)  
+1.1.11  [v1_xboole_0(3^[])]   (7)  
+1.1.12  [-m1_subset_1(4^[], k9_xtuple_0(3^[]))]   (12)  
+1.1.13  [-m1_subset_1(5^[], k9_xtuple_0(3^[]))]   (13)  
+1.1.14  [-m1_subset_1(6^[], k9_xtuple_0(3^[]))]   (14)  
+1.1.15  [-r1_ordinal1(4^[], 5^[]), v3_ordinal1(5^[]), v3_ordinal1(4^[]), r1_tarski(4^[], 5^[])]   (26)  substitution:[[_G1966, _G1967], [4^[], 5^[]]]
+1.1.15.1  [-v3_ordinal1(5^[]), v1_ordinal6(k9_xtuple_0(3^[])), m1_subset_1(5^[], k9_xtuple_0(3^[]))]   (20)  substitution:[[_G1939, _G1936], [5^[], k9_xtuple_0(3^[])]]
+1.1.15.1.1  [-v1_ordinal6(k9_xtuple_0(3^[])), v1_relat_1(3^[]), v1_funct_1(3^[]), v1_exchsort(3^[])]   (24)  substitution:[[_G1955], [3^[]]]
+1.1.15.1.1.1  [-v1_relat_1(3^[])]   (8)  
+1.1.15.1.1.2  [-v1_funct_1(3^[])]   (10)  
+1.1.15.1.1.3  [-v1_exchsort(3^[])]   (11)  
+1.1.15.1.2  [-m1_subset_1(5^[], k9_xtuple_0(3^[]))]   (13)  
+1.1.15.2  [-v3_ordinal1(4^[]), v1_ordinal6(k9_xtuple_0(3^[])), m1_subset_1(4^[], k9_xtuple_0(3^[]))]   (20)  substitution:[[_G1939, _G1936], [4^[], k9_xtuple_0(3^[])]]
+1.1.15.2.1  [-v1_ordinal6(k9_xtuple_0(3^[])), v1_relat_1(3^[]), v1_funct_1(3^[]), v1_exchsort(3^[])]   (24)  substitution:[[_G1955], [3^[]]]
+1.1.15.2.1.1  [-v1_relat_1(3^[])]   (8)  
+1.1.15.2.1.2  [-v1_funct_1(3^[])]   (10)  
+1.1.15.2.1.3  [-v1_exchsort(3^[])]   (11)  
+1.1.15.2.2  [-m1_subset_1(4^[], k9_xtuple_0(3^[]))]   (12)  
+1.1.15.3  [-r1_tarski(4^[], 5^[]), v1_ordinal1(5^[]), r2_hidden(4^[], 5^[])]   (23)  substitution:[[_G1948, _G1945], [4^[], 5^[]]]
+1.1.15.3.1  [-v1_ordinal1(5^[]), v3_ordinal1(5^[])]   (18)  substitution:[[_G1929], [5^[]]]
+1.1.15.3.1.1  [-v3_ordinal1(5^[])]   (lemmata:1.1.15)  
+1.1.15.3.2  [-r2_hidden(4^[], 5^[])]   (15)  
+1.1.16  [-r1_ordinal1(5^[], 6^[]), v3_ordinal1(6^[]), v3_ordinal1(5^[]), r1_tarski(5^[], 6^[])]   (26)  substitution:[[_G1966, _G1967], [5^[], 6^[]]]
+1.1.16.1  [-v3_ordinal1(6^[]), v1_ordinal6(k9_xtuple_0(3^[])), m1_subset_1(6^[], k9_xtuple_0(3^[]))]   (20)  substitution:[[_G1939, _G1936], [6^[], k9_xtuple_0(3^[])]]
+1.1.16.1.1  [-v1_ordinal6(k9_xtuple_0(3^[])), v1_relat_1(3^[]), v1_funct_1(3^[]), v1_exchsort(3^[])]   (24)  substitution:[[_G1955], [3^[]]]
+1.1.16.1.1.1  [-v1_relat_1(3^[])]   (8)  
+1.1.16.1.1.2  [-v1_funct_1(3^[])]   (10)  
+1.1.16.1.1.3  [-v1_exchsort(3^[])]   (11)  
+1.1.16.1.2  [-m1_subset_1(6^[], k9_xtuple_0(3^[]))]   (14)  
+1.1.16.2  [-v3_ordinal1(5^[]), v1_ordinal6(k9_xtuple_0(3^[])), m1_subset_1(5^[], k9_xtuple_0(3^[]))]   (20)  substitution:[[_G1939, _G1936], [5^[], k9_xtuple_0(3^[])]]
+1.1.16.2.1  [-v1_ordinal6(k9_xtuple_0(3^[])), v1_relat_1(3^[]), v1_funct_1(3^[]), v1_exchsort(3^[])]   (24)  substitution:[[_G1955], [3^[]]]
+1.1.16.2.1.1  [-v1_relat_1(3^[])]   (8)  
+1.1.16.2.1.2  [-v1_funct_1(3^[])]   (10)  
+1.1.16.2.1.3  [-v1_exchsort(3^[])]   (11)  
+1.1.16.2.2  [-m1_subset_1(5^[], k9_xtuple_0(3^[]))]   (13)  
+1.1.16.3  [-r1_tarski(5^[], 6^[]), v1_ordinal1(6^[]), r2_hidden(5^[], 6^[])]   (23)  substitution:[[_G1948, _G1945], [5^[], 6^[]]]
+1.1.16.3.1  [-v1_ordinal1(6^[]), v3_ordinal1(6^[])]   (18)  substitution:[[_G1929], [6^[]]]
+1.1.16.3.1.1  [-v3_ordinal1(6^[])]   (lemmata:1.1.16)  
+1.1.16.3.2  [-r2_hidden(5^[], 6^[])]   (16)  
+1.2  [- (k1_binop_1(k7_exchsort(2^[], 3^[], 4^[], 6^[]), 5^[], 6^[])=k4_tarski(5^[], 6^[])), l1_orders_2(2^[]), v16_waybel_0(2^[]), v5_orders_2(2^[]), v4_orders_2(2^[]), v3_orders_2(2^[]), -v2_struct_0(2^[]), v1_exchsort(3^[]), v1_funct_1(3^[]), v5_relat_1(3^[], u1_struct_0(2^[])), v1_relat_1(3^[]), -v1_xboole_0(3^[]), m1_subset_1(4^[], k9_xtuple_0(3^[])), m1_subset_1(5^[], k9_xtuple_0(3^[])), m1_subset_1(6^[], k9_xtuple_0(3^[])), r1_ordinal1(4^[], 5^[]), r1_ordinal1(5^[], 6^[])]   (28)  substitution:[[_G1978, _G1993, _G2009, _G2021, _G2015], [2^[], 3^[], 4^[], 6^[], 5^[]]]
+1.2.1  [-l1_orders_2(2^[])]   (6)  
+1.2.2  [-v16_waybel_0(2^[])]   (5)  
+1.2.3  [-v5_orders_2(2^[])]   (4)  
+1.2.4  [-v4_orders_2(2^[])]   (3)  
+1.2.5  [-v3_orders_2(2^[])]   (2)  
+1.2.6  [v2_struct_0(2^[])]   (1)  
+1.2.7  [-v1_exchsort(3^[])]   (11)  
+1.2.8  [-v1_funct_1(3^[])]   (10)  
+1.2.9  [-v5_relat_1(3^[], u1_struct_0(2^[]))]   (9)  
+1.2.10  [-v1_relat_1(3^[])]   (8)  
+1.2.11  [v1_xboole_0(3^[])]   (7)  
+1.2.12  [-m1_subset_1(4^[], k9_xtuple_0(3^[]))]   (12)  
+1.2.13  [-m1_subset_1(5^[], k9_xtuple_0(3^[]))]   (13)  
+1.2.14  [-m1_subset_1(6^[], k9_xtuple_0(3^[]))]   (14)  
+1.2.15  [-r1_ordinal1(4^[], 5^[]), v3_ordinal1(5^[]), v3_ordinal1(4^[]), r1_tarski(4^[], 5^[])]   (26)  substitution:[[_G1966, _G1967], [4^[], 5^[]]]
+1.2.15.1  [-v3_ordinal1(5^[]), v1_ordinal6(k9_xtuple_0(3^[])), m1_subset_1(5^[], k9_xtuple_0(3^[]))]   (20)  substitution:[[_G1939, _G1936], [5^[], k9_xtuple_0(3^[])]]
+1.2.15.1.1  [-v1_ordinal6(k9_xtuple_0(3^[])), v1_relat_1(3^[]), v1_funct_1(3^[]), v1_exchsort(3^[])]   (24)  substitution:[[_G1955], [3^[]]]
+1.2.15.1.1.1  [-v1_relat_1(3^[])]   (8)  
+1.2.15.1.1.2  [-v1_funct_1(3^[])]   (10)  
+1.2.15.1.1.3  [-v1_exchsort(3^[])]   (11)  
+1.2.15.1.2  [-m1_subset_1(5^[], k9_xtuple_0(3^[]))]   (13)  
+1.2.15.2  [-v3_ordinal1(4^[]), v1_ordinal6(k9_xtuple_0(3^[])), m1_subset_1(4^[], k9_xtuple_0(3^[]))]   (20)  substitution:[[_G1939, _G1936], [4^[], k9_xtuple_0(3^[])]]
+1.2.15.2.1  [-v1_ordinal6(k9_xtuple_0(3^[])), v1_relat_1(3^[]), v1_funct_1(3^[]), v1_exchsort(3^[])]   (24)  substitution:[[_G1955], [3^[]]]
+1.2.15.2.1.1  [-v1_relat_1(3^[])]   (8)  
+1.2.15.2.1.2  [-v1_funct_1(3^[])]   (10)  
+1.2.15.2.1.3  [-v1_exchsort(3^[])]   (11)  
+1.2.15.2.2  [-m1_subset_1(4^[], k9_xtuple_0(3^[]))]   (12)  
+1.2.15.3  [-r1_tarski(4^[], 5^[]), v1_ordinal1(5^[]), r2_hidden(4^[], 5^[])]   (23)  substitution:[[_G1948, _G1945], [4^[], 5^[]]]
+1.2.15.3.1  [-v1_ordinal1(5^[]), v3_ordinal1(5^[])]   (18)  substitution:[[_G1929], [5^[]]]
+1.2.15.3.1.1  [-v3_ordinal1(5^[])]   (lemmata:1.2.15)  
+1.2.15.3.2  [-r2_hidden(4^[], 5^[])]   (15)  
+1.2.16  [-r1_ordinal1(5^[], 6^[]), v3_ordinal1(6^[]), v3_ordinal1(5^[]), r1_tarski(5^[], 6^[])]   (26)  substitution:[[_G1966, _G1967], [5^[], 6^[]]]
+1.2.16.1  [-v3_ordinal1(6^[]), v1_ordinal6(k9_xtuple_0(3^[])), m1_subset_1(6^[], k9_xtuple_0(3^[]))]   (20)  substitution:[[_G1939, _G1936], [6^[], k9_xtuple_0(3^[])]]
+1.2.16.1.1  [-v1_ordinal6(k9_xtuple_0(3^[])), v1_relat_1(3^[]), v1_funct_1(3^[]), v1_exchsort(3^[])]   (24)  substitution:[[_G1955], [3^[]]]
+1.2.16.1.1.1  [-v1_relat_1(3^[])]   (8)  
+1.2.16.1.1.2  [-v1_funct_1(3^[])]   (10)  
+1.2.16.1.1.3  [-v1_exchsort(3^[])]   (11)  
+1.2.16.1.2  [-m1_subset_1(6^[], k9_xtuple_0(3^[]))]   (14)  
+1.2.16.2  [-v3_ordinal1(5^[]), v1_ordinal6(k9_xtuple_0(3^[])), m1_subset_1(5^[], k9_xtuple_0(3^[]))]   (20)  substitution:[[_G1939, _G1936], [5^[], k9_xtuple_0(3^[])]]
+1.2.16.2.1  [-v1_ordinal6(k9_xtuple_0(3^[])), v1_relat_1(3^[]), v1_funct_1(3^[]), v1_exchsort(3^[])]   (24)  substitution:[[_G1955], [3^[]]]
+1.2.16.2.1.1  [-v1_relat_1(3^[])]   (8)  
+1.2.16.2.1.2  [-v1_funct_1(3^[])]   (10)  
+1.2.16.2.1.3  [-v1_exchsort(3^[])]   (11)  
+1.2.16.2.2  [-m1_subset_1(5^[], k9_xtuple_0(3^[]))]   (13)  
+1.2.16.3  [-r1_tarski(5^[], 6^[]), v1_ordinal1(6^[]), r2_hidden(5^[], 6^[])]   (23)  substitution:[[_G1948, _G1945], [5^[], 6^[]]]
+1.2.16.3.1  [-v1_ordinal1(6^[]), v3_ordinal1(6^[])]   (18)  substitution:[[_G1929], [6^[]]]
+1.2.16.3.1.1  [-v3_ordinal1(6^[])]   (lemmata:1.2.16)  
+1.2.16.3.2  [-r2_hidden(5^[], 6^[])]   (16)  
+------------------------------------------------------
+End of proof for t69_exchsort

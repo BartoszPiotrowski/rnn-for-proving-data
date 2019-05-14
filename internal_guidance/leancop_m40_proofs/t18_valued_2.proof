@@ -1,0 +1,85 @@
+
+t18_valued_2 is a Theorem
+Start of proof for t18_valued_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(1^[])]
+ (2)  [-v1_funct_1(1^[])]
+ (3)  [-v1_valued_0(1^[])]
+ (4)  [-v1_relat_1(2^[])]
+ (5)  [-v1_funct_1(2^[])]
+ (6)  [-v1_valued_0(2^[])]
+ (7)  [k45_valued_1(1^[], 2^[])=k30_valued_1(k45_valued_1(2^[], 1^[]))]
+ (8)  [- (k1_valued_1(_G5446, _G5581)=k1_valued_1(_G5513, _G5650)), _G5446=_G5513, _G5581=_G5650]
+ (9)  [_G6043=_G6092, - (k30_valued_1(_G6043)=k30_valued_1(_G6092))]
+ (10)  [- (k45_valued_1(_G6312, _G6447)=k45_valued_1(_G6379, _G6516)), _G6312=_G6379, _G6447=_G6516]
+ (11)  [- (_G3776=_G3776)]
+ (12)  [_G3875=_G3920, - (_G3920=_G3875)]
+ (13)  [- (_G4108=_G4221), _G4108=_G4164, _G4164=_G4221]
+ (14)  [-v1_relat_1(_G4607), _G4558=_G4607, v1_relat_1(_G4558)]
+ (15)  [-v1_funct_1(_G4885), _G4836=_G4885, v1_funct_1(_G4836)]
+ (16)  [-v1_valued_0(_G5154), _G5105=_G5154, v1_valued_0(_G5105)]
+ (17)  [- (k1_valued_1(_G6972, _G7047)=k1_valued_1(_G7047, _G6972)), v1_valued_0(_G6972), v1_funct_1(_G6972), v1_relat_1(_G6972), v1_relat_1(_G7047), v1_funct_1(_G7047), v1_valued_0(_G7047)]
+ (18)  [v1_valued_0(_G7592), v1_funct_1(_G7592), v1_relat_1(_G7592), - (k45_valued_1(_G7592, _G7807)=k1_valued_1(_G7592, k30_valued_1(_G7807))), v1_relat_1(_G7807), v1_funct_1(_G7807), v1_valued_0(_G7807)]
+ (19)  [-v1_relat_1(k30_valued_1(_G8215)), v1_relat_1(_G8215), v1_funct_1(_G8215), v1_valued_0(_G8215)]
+ (20)  [-v1_funct_1(k30_valued_1(_G8215)), v1_relat_1(_G8215), v1_funct_1(_G8215), v1_valued_0(_G8215)]
+ (21)  [-v1_valued_0(k30_valued_1(_G8215)), v1_relat_1(_G8215), v1_funct_1(_G8215), v1_valued_0(_G8215)]
+ (22)  [- (k30_valued_1(k30_valued_1(_G8626))=_G8626), v1_relat_1(_G8626), v1_funct_1(_G8626), v1_valued_0(_G8626)]
+ (23)  [v1_valued_0(_G8922), v1_funct_1(_G8922), v1_relat_1(_G8922), - (k30_valued_1(k1_valued_1(_G8922, _G9139))=k45_valued_1(k30_valued_1(_G8922), _G9139)), v1_relat_1(_G9139), v1_funct_1(_G9139), v1_valued_0(_G9139)]
+
+Connection Proof:
+-----------------
+1  [k45_valued_1(1^[], 2^[])=k30_valued_1(k45_valued_1(2^[], 1^[]))]   (7)  
+1.1  [- (k45_valued_1(1^[], 2^[])=k30_valued_1(k45_valued_1(2^[], 1^[]))), k45_valued_1(1^[], 2^[])=k30_valued_1(k1_valued_1(k30_valued_1(1^[]), 2^[])), k30_valued_1(k1_valued_1(k30_valued_1(1^[]), 2^[]))=k30_valued_1(k45_valued_1(2^[], 1^[]))]   (13)  substitution:[[_G4108, _G4221, _G4164], [k45_valued_1(1^[], 2^[]), k30_valued_1(k45_valued_1(2^[], 1^[])), k30_valued_1(k1_valued_1(k30_valued_1(1^[]), 2^[]))]]
+1.1.1  [- (k45_valued_1(1^[], 2^[])=k30_valued_1(k1_valued_1(k30_valued_1(1^[]), 2^[]))), k30_valued_1(k1_valued_1(k30_valued_1(1^[]), 2^[]))=k45_valued_1(1^[], 2^[])]   (12)  substitution:[[_G3920, _G3875], [k45_valued_1(1^[], 2^[]), k30_valued_1(k1_valued_1(k30_valued_1(1^[]), 2^[]))]]
+1.1.1.1  [- (k30_valued_1(k1_valued_1(k30_valued_1(1^[]), 2^[]))=k45_valued_1(1^[], 2^[])), k30_valued_1(k1_valued_1(k30_valued_1(1^[]), 2^[]))=k45_valued_1(k30_valued_1(k30_valued_1(1^[])), 2^[]), k45_valued_1(k30_valued_1(k30_valued_1(1^[])), 2^[])=k45_valued_1(1^[], 2^[])]   (13)  substitution:[[_G4108, _G4221, _G4164], [k30_valued_1(k1_valued_1(k30_valued_1(1^[]), 2^[])), k45_valued_1(1^[], 2^[]), k45_valued_1(k30_valued_1(k30_valued_1(1^[])), 2^[])]]
+1.1.1.1.1  [- (k30_valued_1(k1_valued_1(k30_valued_1(1^[]), 2^[]))=k45_valued_1(k30_valued_1(k30_valued_1(1^[])), 2^[])), v1_valued_0(k30_valued_1(1^[])), v1_funct_1(k30_valued_1(1^[])), v1_relat_1(k30_valued_1(1^[])), v1_relat_1(2^[]), v1_funct_1(2^[]), v1_valued_0(2^[])]   (23)  substitution:[[_G8922, _G9139], [k30_valued_1(1^[]), 2^[]]]
+1.1.1.1.1.1  [-v1_valued_0(k30_valued_1(1^[])), v1_relat_1(1^[]), v1_funct_1(1^[]), v1_valued_0(1^[])]   (21)  substitution:[[_G8215], [1^[]]]
+1.1.1.1.1.1.1  [-v1_relat_1(1^[])]   (1)  
+1.1.1.1.1.1.2  [-v1_funct_1(1^[])]   (2)  
+1.1.1.1.1.1.3  [-v1_valued_0(1^[])]   (3)  
+1.1.1.1.1.2  [-v1_funct_1(k30_valued_1(1^[])), v1_relat_1(1^[]), v1_funct_1(1^[]), v1_valued_0(1^[])]   (20)  substitution:[[_G8215], [1^[]]]
+1.1.1.1.1.2.1  [-v1_relat_1(1^[])]   (1)  
+1.1.1.1.1.2.2  [-v1_funct_1(1^[])]   (2)  
+1.1.1.1.1.2.3  [-v1_valued_0(1^[])]   (3)  
+1.1.1.1.1.3  [-v1_relat_1(k30_valued_1(1^[])), v1_relat_1(1^[]), v1_funct_1(1^[]), v1_valued_0(1^[])]   (19)  substitution:[[_G8215], [1^[]]]
+1.1.1.1.1.3.1  [-v1_relat_1(1^[])]   (1)  
+1.1.1.1.1.3.2  [-v1_funct_1(1^[])]   (2)  
+1.1.1.1.1.3.3  [-v1_valued_0(1^[])]   (3)  
+1.1.1.1.1.4  [-v1_relat_1(2^[])]   (4)  
+1.1.1.1.1.5  [-v1_funct_1(2^[])]   (5)  
+1.1.1.1.1.6  [-v1_valued_0(2^[])]   (6)  
+1.1.1.1.2  [- (k45_valued_1(k30_valued_1(k30_valued_1(1^[])), 2^[])=k45_valued_1(1^[], 2^[])), k30_valued_1(k30_valued_1(1^[]))=1^[], 2^[]=2^[]]   (10)  substitution:[[_G6312, _G6447, _G6379, _G6516], [k30_valued_1(k30_valued_1(1^[])), 2^[], 1^[], 2^[]]]
+1.1.1.1.2.1  [- (k30_valued_1(k30_valued_1(1^[]))=1^[]), v1_relat_1(1^[]), v1_funct_1(1^[]), v1_valued_0(1^[])]   (22)  substitution:[[_G8626], [1^[]]]
+1.1.1.1.2.1.1  [-v1_relat_1(1^[])]   (1)  
+1.1.1.1.2.1.2  [-v1_funct_1(1^[])]   (2)  
+1.1.1.1.2.1.3  [-v1_valued_0(1^[])]   (3)  
+1.1.1.1.2.2  [- (2^[]=2^[])]   (11)  substitution:[[_G3776], [2^[]]]
+1.1.2  [- (k30_valued_1(k1_valued_1(k30_valued_1(1^[]), 2^[]))=k30_valued_1(k45_valued_1(2^[], 1^[]))), k1_valued_1(k30_valued_1(1^[]), 2^[])=k45_valued_1(2^[], 1^[])]   (9)  substitution:[[_G6043, _G6092], [k1_valued_1(k30_valued_1(1^[]), 2^[]), k45_valued_1(2^[], 1^[])]]
+1.1.2.1  [- (k1_valued_1(k30_valued_1(1^[]), 2^[])=k45_valued_1(2^[], 1^[])), k1_valued_1(k30_valued_1(1^[]), 2^[])=k1_valued_1(2^[], k30_valued_1(1^[])), k1_valued_1(2^[], k30_valued_1(1^[]))=k45_valued_1(2^[], 1^[])]   (13)  substitution:[[_G4108, _G4221, _G4164], [k1_valued_1(k30_valued_1(1^[]), 2^[]), k45_valued_1(2^[], 1^[]), k1_valued_1(2^[], k30_valued_1(1^[]))]]
+1.1.2.1.1  [- (k1_valued_1(k30_valued_1(1^[]), 2^[])=k1_valued_1(2^[], k30_valued_1(1^[]))), v1_valued_0(k30_valued_1(1^[])), v1_funct_1(k30_valued_1(1^[])), v1_relat_1(k30_valued_1(1^[])), v1_relat_1(2^[]), v1_funct_1(2^[]), v1_valued_0(2^[])]   (17)  substitution:[[_G6972, _G7047], [k30_valued_1(1^[]), 2^[]]]
+1.1.2.1.1.1  [-v1_valued_0(k30_valued_1(1^[])), v1_relat_1(1^[]), v1_funct_1(1^[]), v1_valued_0(1^[])]   (21)  substitution:[[_G8215], [1^[]]]
+1.1.2.1.1.1.1  [-v1_relat_1(1^[])]   (1)  
+1.1.2.1.1.1.2  [-v1_funct_1(1^[])]   (2)  
+1.1.2.1.1.1.3  [-v1_valued_0(1^[])]   (3)  
+1.1.2.1.1.2  [-v1_funct_1(k30_valued_1(1^[])), v1_relat_1(1^[]), v1_funct_1(1^[]), v1_valued_0(1^[])]   (20)  substitution:[[_G8215], [1^[]]]
+1.1.2.1.1.2.1  [-v1_relat_1(1^[])]   (1)  
+1.1.2.1.1.2.2  [-v1_funct_1(1^[])]   (2)  
+1.1.2.1.1.2.3  [-v1_valued_0(1^[])]   (3)  
+1.1.2.1.1.3  [-v1_relat_1(k30_valued_1(1^[])), v1_relat_1(1^[]), v1_funct_1(1^[]), v1_valued_0(1^[])]   (19)  substitution:[[_G8215], [1^[]]]
+1.1.2.1.1.3.1  [-v1_relat_1(1^[])]   (1)  
+1.1.2.1.1.3.2  [-v1_funct_1(1^[])]   (2)  
+1.1.2.1.1.3.3  [-v1_valued_0(1^[])]   (3)  
+1.1.2.1.1.4  [-v1_relat_1(2^[])]   (4)  
+1.1.2.1.1.5  [-v1_funct_1(2^[])]   (5)  
+1.1.2.1.1.6  [-v1_valued_0(2^[])]   (6)  
+1.1.2.1.2  [- (k1_valued_1(2^[], k30_valued_1(1^[]))=k45_valued_1(2^[], 1^[])), k45_valued_1(2^[], 1^[])=k1_valued_1(2^[], k30_valued_1(1^[]))]   (12)  substitution:[[_G3920, _G3875], [k1_valued_1(2^[], k30_valued_1(1^[])), k45_valued_1(2^[], 1^[])]]
+1.1.2.1.2.1  [- (k45_valued_1(2^[], 1^[])=k1_valued_1(2^[], k30_valued_1(1^[]))), v1_valued_0(2^[]), v1_funct_1(2^[]), v1_relat_1(2^[]), v1_relat_1(1^[]), v1_funct_1(1^[]), v1_valued_0(1^[])]   (18)  substitution:[[_G7592, _G7807], [2^[], 1^[]]]
+1.1.2.1.2.1.1  [-v1_valued_0(2^[])]   (6)  
+1.1.2.1.2.1.2  [-v1_funct_1(2^[])]   (5)  
+1.1.2.1.2.1.3  [-v1_relat_1(2^[])]   (4)  
+1.1.2.1.2.1.4  [-v1_relat_1(1^[])]   (1)  
+1.1.2.1.2.1.5  [-v1_funct_1(1^[])]   (2)  
+1.1.2.1.2.1.6  [-v1_valued_0(1^[])]   (3)  
+------------------------------------------------------
+End of proof for t18_valued_2

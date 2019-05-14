@@ -1,0 +1,34 @@
+
+t70_member_1 is a Theorem
+Start of proof for t70_member_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_membered(1^[])]
+ (2)  [-v1_membered(2^[])]
+ (3)  [k5_member_1(k9_member_1(1^[], 2^[]))=k11_member_1(k5_member_1(1^[]), 2^[])]
+ (4)  [v1_membered(_G4571), v1_membered(_G4660), - (k11_member_1(_G4571, _G4660)=k9_member_1(_G4571, k5_member_1(_G4660)))]
+ (5)  [v1_membered(_G4952), -v1_membered(k5_member_1(_G4952))]
+ (6)  [v1_membered(_G5090), v1_membered(_G5183), - (k5_member_1(k9_member_1(_G5090, _G5183))=k9_member_1(k5_member_1(_G5090), k5_member_1(_G5183)))]
+ (7)  [-v1_membered(_G2795), _G2746=_G2795, v1_membered(_G2746)]
+ (8)  [- (_G1973=_G1973)]
+ (9)  [_G2072=_G2117, - (_G2117=_G2072)]
+ (10)  [- (_G2305=_G2418), _G2305=_G2361, _G2361=_G2418]
+ (11)  [- (k9_member_1(_G3045, _G3180)=k9_member_1(_G3112, _G3249)), _G3045=_G3112, _G3180=_G3249]
+ (12)  [_G4230=_G4279, - (k5_member_1(_G4230)=k5_member_1(_G4279))]
+ (13)  [- (k11_member_1(_G3642, _G3777)=k11_member_1(_G3709, _G3846)), _G3642=_G3709, _G3777=_G3846]
+
+Connection Proof:
+-----------------
+1  [k5_member_1(k9_member_1(1^[], 2^[]))=k11_member_1(k5_member_1(1^[]), 2^[])]   (3)  
+1.1  [- (k5_member_1(k9_member_1(1^[], 2^[]))=k11_member_1(k5_member_1(1^[]), 2^[])), k11_member_1(k5_member_1(1^[]), 2^[])=k5_member_1(k9_member_1(1^[], 2^[]))]   (9)  substitution:[[_G2117, _G2072], [k5_member_1(k9_member_1(1^[], 2^[])), k11_member_1(k5_member_1(1^[]), 2^[])]]
+1.1.1  [- (k11_member_1(k5_member_1(1^[]), 2^[])=k5_member_1(k9_member_1(1^[], 2^[]))), k11_member_1(k5_member_1(1^[]), 2^[])=k9_member_1(k5_member_1(1^[]), k5_member_1(2^[])), k9_member_1(k5_member_1(1^[]), k5_member_1(2^[]))=k5_member_1(k9_member_1(1^[], 2^[]))]   (10)  substitution:[[_G2305, _G2418, _G2361], [k11_member_1(k5_member_1(1^[]), 2^[]), k5_member_1(k9_member_1(1^[], 2^[])), k9_member_1(k5_member_1(1^[]), k5_member_1(2^[]))]]
+1.1.1.1  [- (k11_member_1(k5_member_1(1^[]), 2^[])=k9_member_1(k5_member_1(1^[]), k5_member_1(2^[]))), v1_membered(k5_member_1(1^[])), v1_membered(2^[])]   (4)  substitution:[[_G4571, _G4660], [k5_member_1(1^[]), 2^[]]]
+1.1.1.1.1  [-v1_membered(k5_member_1(1^[])), v1_membered(1^[])]   (5)  substitution:[[_G4952], [1^[]]]
+1.1.1.1.1.1  [-v1_membered(1^[])]   (1)  
+1.1.1.1.2  [-v1_membered(2^[])]   (2)  
+1.1.1.2  [- (k9_member_1(k5_member_1(1^[]), k5_member_1(2^[]))=k5_member_1(k9_member_1(1^[], 2^[]))), k5_member_1(k9_member_1(1^[], 2^[]))=k9_member_1(k5_member_1(1^[]), k5_member_1(2^[]))]   (9)  substitution:[[_G2117, _G2072], [k9_member_1(k5_member_1(1^[]), k5_member_1(2^[])), k5_member_1(k9_member_1(1^[], 2^[]))]]
+1.1.1.2.1  [- (k5_member_1(k9_member_1(1^[], 2^[]))=k9_member_1(k5_member_1(1^[]), k5_member_1(2^[]))), v1_membered(1^[]), v1_membered(2^[])]   (6)  substitution:[[_G5090, _G5183], [1^[], 2^[]]]
+1.1.1.2.1.1  [-v1_membered(1^[])]   (1)  
+1.1.1.2.1.2  [-v1_membered(2^[])]   (2)  
+------------------------------------------------------
+End of proof for t70_member_1

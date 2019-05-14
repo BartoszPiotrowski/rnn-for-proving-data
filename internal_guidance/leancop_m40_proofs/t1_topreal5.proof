@@ -1,0 +1,53 @@
+
+t1_topreal5 is a Theorem
+Start of proof for t1_topreal5
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(1^[])]
+ (2)  [-v2_pre_topc(1^[])]
+ (3)  [-l1_pre_topc(1^[])]
+ (4)  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]
+ (5)  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(1^[])))]
+ (6)  [-m1_subset_1(4^[], k1_zfmisc_1(u1_struct_0(1^[])))]
+ (7)  [-v3_pre_topc(3^[], 1^[])]
+ (8)  [-v3_pre_topc(4^[], 1^[])]
+ (9)  [r1_xboole_0(3^[], 2^[])]
+ (10)  [r1_xboole_0(4^[], 2^[])]
+ (11)  [-r1_tarski(2^[], k4_subset_1(u1_struct_0(1^[]), 3^[], 4^[]))]
+ (12)  [-r1_xboole_0(3^[], 4^[])]
+ (13)  [-v2_connsp_1(2^[], 1^[])]
+ (14)  [r1_xboole_0(_G1643, _G1688), -r1_xboole_0(_G1688, _G1643)]
+ (15)  [l1_pre_topc(_G1885), v2_pre_topc(_G1885), m1_subset_1(_G2096, k1_zfmisc_1(u1_struct_0(_G1885))), m1_subset_1(_G2298, k1_zfmisc_1(u1_struct_0(_G1885))), m1_subset_1(_G2491, k1_zfmisc_1(u1_struct_0(_G1885))), v2_connsp_1(_G2096, _G1885), r1_tarski(_G2096, k4_subset_1(u1_struct_0(_G1885), _G2298, _G2491)), r1_connsp_1(_G1885, _G2298, _G2491), -r1_tarski(_G2096, _G2298), -r1_tarski(_G2096, _G2491)]
+ (16)  [-r1_xboole_0(_G4260, _G4373), r1_tarski(_G4260, _G4316), r1_xboole_0(_G4316, _G4373)]
+ (17)  [l1_pre_topc(_G3341), v2_pre_topc(_G3341), m1_subset_1(_G3519, k1_zfmisc_1(u1_struct_0(_G3341))), m1_subset_1(_G3688, k1_zfmisc_1(u1_struct_0(_G3341))), v3_pre_topc(_G3688, _G3341), v3_pre_topc(_G3519, _G3341), r1_xboole_0(_G3519, _G3688), -r1_connsp_1(_G3341, _G3519, _G3688)]
+ (18)  [l1_pre_topc(_G3341), v2_pre_topc(_G3341), m1_subset_1(_G3519, k1_zfmisc_1(u1_struct_0(_G3341))), m1_subset_1(_G3688, k1_zfmisc_1(u1_struct_0(_G3341))), v3_pre_topc(_G3688, _G3341), v3_pre_topc(_G3519, _G3341), -r1_xboole_0(_G3519, _G3688), r1_connsp_1(_G3341, _G3519, _G3688)]
+
+Connection Proof:
+-----------------
+1  [r1_xboole_0(3^[], 2^[])]   (9)  
+1.1  [-r1_xboole_0(3^[], 2^[]), r1_xboole_0(2^[], 3^[])]   (14)  substitution:[[_G1688, _G1643], [3^[], 2^[]]]
+1.1.1  [-r1_xboole_0(2^[], 3^[]), r1_tarski(2^[], 4^[]), r1_xboole_0(4^[], 3^[])]   (16)  substitution:[[_G4260, _G4373, _G4316], [2^[], 3^[], 4^[]]]
+1.1.1.1  [-r1_tarski(2^[], 4^[]), l1_pre_topc(1^[]), v2_pre_topc(1^[]), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[]))), m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(1^[]))), m1_subset_1(4^[], k1_zfmisc_1(u1_struct_0(1^[]))), v2_connsp_1(2^[], 1^[]), r1_tarski(2^[], k4_subset_1(u1_struct_0(1^[]), 3^[], 4^[])), r1_connsp_1(1^[], 3^[], 4^[]), -r1_tarski(2^[], 3^[])]   (15)  substitution:[[_G2096, _G2491, _G1885, _G2298], [2^[], 4^[], 1^[], 3^[]]]
+1.1.1.1.1  [-l1_pre_topc(1^[])]   (3)  
+1.1.1.1.2  [-v2_pre_topc(1^[])]   (2)  
+1.1.1.1.3  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (4)  
+1.1.1.1.4  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (5)  
+1.1.1.1.5  [-m1_subset_1(4^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (6)  
+1.1.1.1.6  [-v2_connsp_1(2^[], 1^[])]   (13)  
+1.1.1.1.7  [-r1_tarski(2^[], k4_subset_1(u1_struct_0(1^[]), 3^[], 4^[]))]   (11)  
+1.1.1.1.8  [-r1_connsp_1(1^[], 3^[], 4^[]), l1_pre_topc(1^[]), v2_pre_topc(1^[]), m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(1^[]))), m1_subset_1(4^[], k1_zfmisc_1(u1_struct_0(1^[]))), v3_pre_topc(4^[], 1^[]), v3_pre_topc(3^[], 1^[]), r1_xboole_0(3^[], 4^[])]   (17)  substitution:[[_G3341, _G3519, _G3688], [1^[], 3^[], 4^[]]]
+1.1.1.1.8.1  [-l1_pre_topc(1^[])]   (3)  
+1.1.1.1.8.2  [-v2_pre_topc(1^[])]   (2)  
+1.1.1.1.8.3  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (5)  
+1.1.1.1.8.4  [-m1_subset_1(4^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (6)  
+1.1.1.1.8.5  [-v3_pre_topc(4^[], 1^[])]   (8)  
+1.1.1.1.8.6  [-v3_pre_topc(3^[], 1^[])]   (7)  
+1.1.1.1.8.7  [-r1_xboole_0(3^[], 4^[])]   (12)  
+1.1.1.1.9  [r1_tarski(2^[], 3^[]), -r1_xboole_0(2^[], 4^[]), r1_xboole_0(3^[], 4^[])]   (16)  substitution:[[_G4260, _G4316, _G4373], [2^[], 3^[], 4^[]]]
+1.1.1.1.9.1  [r1_xboole_0(2^[], 4^[]), -r1_xboole_0(4^[], 2^[])]   (14)  substitution:[[_G1643, _G1688], [2^[], 4^[]]]
+1.1.1.1.9.1.1  [r1_xboole_0(4^[], 2^[])]   (10)  
+1.1.1.1.9.2  [-r1_xboole_0(3^[], 4^[])]   (12)  
+1.1.1.2  [-r1_xboole_0(4^[], 3^[]), r1_xboole_0(3^[], 4^[])]   (14)  substitution:[[_G1688, _G1643], [4^[], 3^[]]]
+1.1.1.2.1  [-r1_xboole_0(3^[], 4^[])]   (12)  
+------------------------------------------------------
+End of proof for t1_topreal5

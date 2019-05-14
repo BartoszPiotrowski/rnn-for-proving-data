@@ -1,0 +1,29 @@
+
+t2_fraenkel is a Theorem
+Start of proof for t2_fraenkel
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [r1_tarski(k1_funct_2(2^[], 3^[]), k1_zfmisc_1(k2_zfmisc_1(2^[], 3^[])))]
+ (2)  [v1_xboole_0(k1_zfmisc_1(_G1973))]
+ (3)  [r2_hidden(_G2210, k1_funct_2(_G2069, _G2139)), -v1_funct_1(_G2210)]
+ (4)  [r2_hidden(_G2210, k1_funct_2(_G2069, _G2139)), -v1_funct_2(_G2210, _G2069, _G2139)]
+ (5)  [r2_hidden(_G2210, k1_funct_2(_G2069, _G2139)), -m1_subset_1(_G2210, k1_zfmisc_1(k2_zfmisc_1(_G2069, _G2139)))]
+ (6)  [-r1_tarski(_G1571, _G1627), -r2_hidden(1^[_G1627, _G1571], _G1571)]
+ (7)  [-r1_tarski(_G1571, _G1627), r2_hidden(1^[_G1627, _G1571], _G1627)]
+ (8)  [r1_tarski(_G1571, _G1627), r2_hidden(_G1741, _G1571), -r2_hidden(_G1741, _G1627)]
+ (9)  [-v1_xboole_0(_G1032), m1_subset_1(_G1100, _G1032), -r2_hidden(_G1100, _G1032)]
+ (10)  [-v1_xboole_0(_G1032), -m1_subset_1(_G1100, _G1032), r2_hidden(_G1100, _G1032)]
+ (11)  [v1_xboole_0(_G1032), m1_subset_1(_G1100, _G1032), -v1_xboole_0(_G1100)]
+ (12)  [v1_xboole_0(_G1032), -m1_subset_1(_G1100, _G1032), v1_xboole_0(_G1100)]
+
+Connection Proof:
+-----------------
+1  [v1_xboole_0(k1_zfmisc_1(k2_zfmisc_1(2^[], 3^[])))]   (2)  substitution:[[_G1973], [k2_zfmisc_1(2^[], 3^[])]]
+1.1  [-v1_xboole_0(k1_zfmisc_1(k2_zfmisc_1(2^[], 3^[]))), m1_subset_1(1^[k1_zfmisc_1(k2_zfmisc_1(2^[], 3^[])), k1_funct_2(2^[], 3^[])], k1_zfmisc_1(k2_zfmisc_1(2^[], 3^[]))), -r2_hidden(1^[k1_zfmisc_1(k2_zfmisc_1(2^[], 3^[])), k1_funct_2(2^[], 3^[])], k1_zfmisc_1(k2_zfmisc_1(2^[], 3^[])))]   (9)  substitution:[[_G1032, _G1100], [k1_zfmisc_1(k2_zfmisc_1(2^[], 3^[])), 1^[k1_zfmisc_1(k2_zfmisc_1(2^[], 3^[])), k1_funct_2(2^[], 3^[])]]]
+1.1.1  [-m1_subset_1(1^[k1_zfmisc_1(k2_zfmisc_1(2^[], 3^[])), k1_funct_2(2^[], 3^[])], k1_zfmisc_1(k2_zfmisc_1(2^[], 3^[]))), r2_hidden(1^[k1_zfmisc_1(k2_zfmisc_1(2^[], 3^[])), k1_funct_2(2^[], 3^[])], k1_funct_2(2^[], 3^[]))]   (5)  substitution:[[_G2210, _G2069, _G2139], [1^[k1_zfmisc_1(k2_zfmisc_1(2^[], 3^[])), k1_funct_2(2^[], 3^[])], 2^[], 3^[]]]
+1.1.1.1  [-r2_hidden(1^[k1_zfmisc_1(k2_zfmisc_1(2^[], 3^[])), k1_funct_2(2^[], 3^[])], k1_funct_2(2^[], 3^[])), -r1_tarski(k1_funct_2(2^[], 3^[]), k1_zfmisc_1(k2_zfmisc_1(2^[], 3^[])))]   (6)  substitution:[[_G1627, _G1571], [k1_zfmisc_1(k2_zfmisc_1(2^[], 3^[])), k1_funct_2(2^[], 3^[])]]
+1.1.1.1.1  [r1_tarski(k1_funct_2(2^[], 3^[]), k1_zfmisc_1(k2_zfmisc_1(2^[], 3^[])))]   (1)  
+1.1.2  [r2_hidden(1^[k1_zfmisc_1(k2_zfmisc_1(2^[], 3^[])), k1_funct_2(2^[], 3^[])], k1_zfmisc_1(k2_zfmisc_1(2^[], 3^[]))), -r1_tarski(k1_funct_2(2^[], 3^[]), k1_zfmisc_1(k2_zfmisc_1(2^[], 3^[])))]   (7)  substitution:[[_G1627, _G1571], [k1_zfmisc_1(k2_zfmisc_1(2^[], 3^[])), k1_funct_2(2^[], 3^[])]]
+1.1.2.1  [r1_tarski(k1_funct_2(2^[], 3^[]), k1_zfmisc_1(k2_zfmisc_1(2^[], 3^[])))]   (1)  
+------------------------------------------------------
+End of proof for t2_fraenkel

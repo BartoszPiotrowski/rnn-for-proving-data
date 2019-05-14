@@ -1,0 +1,36 @@
+
+t2_rat_1 is a Theorem
+Start of proof for t2_rat_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_rat_1(3^[])]
+ (2)  [v1_int_1(_G6531), v1_int_1(_G6541), - (_G6541=k6_numbers), 3^[]=k7_xcmplx_0(_G6531, _G6541)]
+ (3)  [r2_hidden(_G4628, k3_numbers), -v1_int_1(1^[_G4628])]
+ (4)  [r2_hidden(_G4628, k3_numbers), -v1_int_1(2^[_G4628])]
+ (5)  [r2_hidden(_G4628, k3_numbers), 2^[_G4628]=k6_numbers]
+ (6)  [r2_hidden(_G4628, k3_numbers), - (_G4628=k7_xcmplx_0(1^[_G4628], 2^[_G4628]))]
+ (7)  [v1_rat_1(_G4480), -r2_hidden(_G4480, k3_numbers)]
+ (8)  [-v1_rat_1(_G4480), r2_hidden(_G4480, k3_numbers)]
+ (9)  [- (k7_xcmplx_0(_G3862, _G3997)=k7_xcmplx_0(_G3929, _G4066)), _G3862=_G3929, _G3997=_G4066]
+ (10)  [- (_G1882=_G1882)]
+ (11)  [_G1981=_G2026, - (_G2026=_G1981)]
+ (12)  [- (_G2214=_G2327), _G2214=_G2270, _G2270=_G2327]
+ (13)  [-r2_hidden(_G2731, _G2868), r2_hidden(_G2664, _G2799), _G2664=_G2731, _G2799=_G2868]
+ (14)  [-v1_rat_1(_G3310), _G3261=_G3310, v1_rat_1(_G3261)]
+ (15)  [-v1_int_1(_G3579), _G3530=_G3579, v1_int_1(_G3530)]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(3^[], k3_numbers), 2^[3^[]]=k6_numbers]   (5)  substitution:[[_G4628], [3^[]]]
+1.1  [-r2_hidden(3^[], k3_numbers), v1_rat_1(3^[])]   (7)  substitution:[[_G4480], [3^[]]]
+1.1.1  [-v1_rat_1(3^[])]   (1)  
+1.2  [- (2^[3^[]]=k6_numbers), v1_int_1(1^[3^[]]), v1_int_1(2^[3^[]]), 3^[]=k7_xcmplx_0(1^[3^[]], 2^[3^[]])]   (2)  substitution:[[_G6541, _G6531], [2^[3^[]], 1^[3^[]]]]
+1.2.1  [-v1_int_1(1^[3^[]]), r2_hidden(3^[], k3_numbers)]   (3)  substitution:[[_G4628], [3^[]]]
+1.2.1.1  [-r2_hidden(3^[], k3_numbers), v1_rat_1(3^[])]   (7)  substitution:[[_G4480], [3^[]]]
+1.2.1.1.1  [-v1_rat_1(3^[])]   (1)  
+1.2.2  [-v1_int_1(2^[3^[]]), r2_hidden(3^[], k3_numbers)]   (4)  substitution:[[_G4628], [3^[]]]
+1.2.2.1  [-r2_hidden(3^[], k3_numbers)]   (lemmata:1)  
+1.2.3  [- (3^[]=k7_xcmplx_0(1^[3^[]], 2^[3^[]])), r2_hidden(3^[], k3_numbers)]   (6)  substitution:[[_G4628], [3^[]]]
+1.2.3.1  [-r2_hidden(3^[], k3_numbers)]   (lemmata:1)  
+------------------------------------------------------
+End of proof for t2_rat_1

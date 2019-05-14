@@ -1,0 +1,50 @@
+
+l76_card_2 is a Theorem
+Start of proof for l76_card_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v7_ordinal1(1^[])]
+ (2)  [-v1_finset_1(k4_classes1(1^[]))]
+ (3)  [v1_finset_1(k4_classes1(k1_nat_1(1^[], np__1)))]
+ (4)  [v7_ordinal1(_G6173), -v3_ordinal1(_G6173)]
+ (5)  [v1_finset_1(_G6304), -v1_finset_1(k1_zfmisc_1(_G6304))]
+ (6)  [v7_ordinal1(_G6451), - (k4_card_1(_G6451)=k1_ordinal1(_G6451))]
+ (7)  [- (k9_setfam_1(_G6640)=k1_zfmisc_1(_G6640))]
+ (8)  [v3_ordinal1(_G6771), - (k4_classes1(k1_ordinal1(_G6771))=k9_setfam_1(k4_classes1(_G6771)))]
+ (9)  [v7_ordinal1(_G6983), - (k4_card_1(_G6983)=k1_nat_1(_G6983, np__1))]
+ (10)  [_G4069=_G4118, - (k1_zfmisc_1(_G4069)=k1_zfmisc_1(_G4118))]
+ (11)  [_G4347=_G4396, - (k1_ordinal1(_G4347)=k1_ordinal1(_G4396))]
+ (12)  [_G4625=_G4674, - (k9_setfam_1(_G4625)=k9_setfam_1(_G4674))]
+ (13)  [_G4903=_G4952, - (k4_card_1(_G4903)=k4_card_1(_G4952))]
+ (14)  [_G5181=_G5230, - (k4_classes1(_G5181)=k4_classes1(_G5230))]
+ (15)  [- (k1_nat_1(_G5450, _G5585)=k1_nat_1(_G5517, _G5654)), _G5450=_G5517, _G5585=_G5654]
+ (16)  [- (_G2399=_G2399)]
+ (17)  [_G2498=_G2543, - (_G2543=_G2498)]
+ (18)  [- (_G2731=_G2844), _G2731=_G2787, _G2787=_G2844]
+ (19)  [-v3_ordinal1(_G3230), _G3181=_G3230, v3_ordinal1(_G3181)]
+ (20)  [-v7_ordinal1(_G3508), _G3459=_G3508, v7_ordinal1(_G3459)]
+ (21)  [-v1_finset_1(_G3777), _G3728=_G3777, v1_finset_1(_G3728)]
+
+Connection Proof:
+-----------------
+1  [v1_finset_1(k4_classes1(k1_nat_1(1^[], np__1)))]   (3)  
+1.1  [-v1_finset_1(k4_classes1(k1_nat_1(1^[], np__1))), k4_classes1(k1_ordinal1(1^[]))=k4_classes1(k1_nat_1(1^[], np__1)), v1_finset_1(k4_classes1(k1_ordinal1(1^[])))]   (21)  substitution:[[_G3777, _G3728], [k4_classes1(k1_nat_1(1^[], np__1)), k4_classes1(k1_ordinal1(1^[]))]]
+1.1.1  [- (k4_classes1(k1_ordinal1(1^[]))=k4_classes1(k1_nat_1(1^[], np__1))), k1_ordinal1(1^[])=k1_nat_1(1^[], np__1)]   (14)  substitution:[[_G5181, _G5230], [k1_ordinal1(1^[]), k1_nat_1(1^[], np__1)]]
+1.1.1.1  [- (k1_ordinal1(1^[])=k1_nat_1(1^[], np__1)), k1_ordinal1(1^[])=k4_card_1(1^[]), k4_card_1(1^[])=k1_nat_1(1^[], np__1)]   (18)  substitution:[[_G2731, _G2844, _G2787], [k1_ordinal1(1^[]), k1_nat_1(1^[], np__1), k4_card_1(1^[])]]
+1.1.1.1.1  [- (k1_ordinal1(1^[])=k4_card_1(1^[])), k4_card_1(1^[])=k1_ordinal1(1^[])]   (17)  substitution:[[_G2543, _G2498], [k1_ordinal1(1^[]), k4_card_1(1^[])]]
+1.1.1.1.1.1  [- (k4_card_1(1^[])=k1_ordinal1(1^[])), v7_ordinal1(1^[])]   (6)  substitution:[[_G6451], [1^[]]]
+1.1.1.1.1.1.1  [-v7_ordinal1(1^[])]   (1)  
+1.1.1.1.2  [- (k4_card_1(1^[])=k1_nat_1(1^[], np__1)), v7_ordinal1(1^[])]   (9)  substitution:[[_G6983], [1^[]]]
+1.1.1.1.2.1  [-v7_ordinal1(1^[])]   (1)  
+1.1.2  [-v1_finset_1(k4_classes1(k1_ordinal1(1^[]))), k9_setfam_1(k4_classes1(1^[]))=k4_classes1(k1_ordinal1(1^[])), v1_finset_1(k9_setfam_1(k4_classes1(1^[])))]   (21)  substitution:[[_G3777, _G3728], [k4_classes1(k1_ordinal1(1^[])), k9_setfam_1(k4_classes1(1^[]))]]
+1.1.2.1  [- (k9_setfam_1(k4_classes1(1^[]))=k4_classes1(k1_ordinal1(1^[]))), k4_classes1(k1_ordinal1(1^[]))=k9_setfam_1(k4_classes1(1^[]))]   (17)  substitution:[[_G2543, _G2498], [k9_setfam_1(k4_classes1(1^[])), k4_classes1(k1_ordinal1(1^[]))]]
+1.1.2.1.1  [- (k4_classes1(k1_ordinal1(1^[]))=k9_setfam_1(k4_classes1(1^[]))), v3_ordinal1(1^[])]   (8)  substitution:[[_G6771], [1^[]]]
+1.1.2.1.1.1  [-v3_ordinal1(1^[]), v7_ordinal1(1^[])]   (4)  substitution:[[_G6173], [1^[]]]
+1.1.2.1.1.1.1  [-v7_ordinal1(1^[])]   (1)  
+1.1.2.2  [-v1_finset_1(k9_setfam_1(k4_classes1(1^[]))), k1_zfmisc_1(k4_classes1(1^[]))=k9_setfam_1(k4_classes1(1^[])), v1_finset_1(k1_zfmisc_1(k4_classes1(1^[])))]   (21)  substitution:[[_G3777, _G3728], [k9_setfam_1(k4_classes1(1^[])), k1_zfmisc_1(k4_classes1(1^[]))]]
+1.1.2.2.1  [- (k1_zfmisc_1(k4_classes1(1^[]))=k9_setfam_1(k4_classes1(1^[]))), k9_setfam_1(k4_classes1(1^[]))=k1_zfmisc_1(k4_classes1(1^[]))]   (17)  substitution:[[_G2543, _G2498], [k1_zfmisc_1(k4_classes1(1^[])), k9_setfam_1(k4_classes1(1^[]))]]
+1.1.2.2.1.1  [- (k9_setfam_1(k4_classes1(1^[]))=k1_zfmisc_1(k4_classes1(1^[])))]   (7)  substitution:[[_G6640], [k4_classes1(1^[])]]
+1.1.2.2.2  [-v1_finset_1(k1_zfmisc_1(k4_classes1(1^[]))), v1_finset_1(k4_classes1(1^[]))]   (5)  substitution:[[_G6304], [k4_classes1(1^[])]]
+1.1.2.2.2.1  [-v1_finset_1(k4_classes1(1^[]))]   (2)  
+------------------------------------------------------
+End of proof for l76_card_2

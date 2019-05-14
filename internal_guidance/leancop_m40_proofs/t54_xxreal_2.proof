@@ -1,0 +1,64 @@
+
+t54_xxreal_2 is a Theorem
+Start of proof for t54_xxreal_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v2_membered(2^[])]
+ (2)  [v1_xboole_0(2^[])]
+ (3)  [-m2_xxreal_2(3^[], 2^[])]
+ (4)  [3^[]=k2_xxreal_0]
+ (5)  [v3_xxreal_2(2^[])]
+ (6)  [v1_xreal_0(_G8677), -r2_hidden(_G8677, k1_numbers)]
+ (7)  [-v1_xreal_0(_G8677), r2_hidden(_G8677, k1_numbers)]
+ (8)  [- (k1_xxreal_0=k1_numbers)]
+ (9)  [v2_membered(_G8891), v3_xxreal_2(_G8891), -v1_xreal_0(1^[_G8891])]
+ (10)  [v2_membered(_G8891), v3_xxreal_2(_G8891), -m2_xxreal_2(1^[_G8891], _G8891)]
+ (11)  [v2_membered(_G8891), -v3_xxreal_2(_G8891), v1_xreal_0(_G9009), m2_xxreal_2(_G9009, _G8891)]
+ (12)  [v2_membered(_G9222), m2_xxreal_2(_G9303, _G9222), -v1_xxreal_0(_G9303)]
+ (13)  [v1_xxreal_0(_G9495), -v2_membered(k1_tarski(_G9495))]
+ (14)  [v1_xxreal_0(_G9642), -r2_hidden(_G9642, k1_numbers), - (_G9642=k1_xxreal_0), - (_G9642=k2_xxreal_0)]
+ (15)  [- (k2_tarski(_G10031, _G10031)=k1_tarski(_G10031))]
+ (16)  [-v3_xxreal_2(k1_tarski(k1_xxreal_0))]
+ (17)  [v2_membered(_G10624), m2_xxreal_2(k1_xxreal_0, _G10624), -r1_tarski(_G10624, k1_tarski(k1_xxreal_0))]
+ (18)  [v2_membered(_G10188), v2_membered(_G10279), -v3_xxreal_2(_G10188), r1_tarski(_G10188, _G10279), v3_xxreal_2(_G10279)]
+ (19)  [_G8357=_G8406, - (k1_tarski(_G8357)=k1_tarski(_G8406))]
+ (20)  [- (k2_tarski(_G7769, _G7904)=k2_tarski(_G7836, _G7973)), _G7769=_G7836, _G7904=_G7973]
+ (21)  [- (_G3647=_G3647)]
+ (22)  [_G3746=_G3791, - (_G3791=_G3746)]
+ (23)  [- (_G3979=_G4092), _G3979=_G4035, _G4035=_G4092]
+ (24)  [-v1_xreal_0(_G4478), _G4429=_G4478, v1_xreal_0(_G4429)]
+ (25)  [-v1_xxreal_0(_G4756), _G4707=_G4756, v1_xxreal_0(_G4707)]
+ (26)  [-r2_hidden(_G5052, _G5189), r2_hidden(_G4985, _G5120), _G4985=_G5052, _G5120=_G5189]
+ (27)  [-r1_tarski(_G5649, _G5786), r1_tarski(_G5582, _G5717), _G5582=_G5649, _G5717=_G5786]
+ (28)  [-v2_membered(_G6228), _G6179=_G6228, v2_membered(_G6179)]
+ (29)  [-v1_xboole_0(_G6506), _G6457=_G6506, v1_xboole_0(_G6457)]
+ (30)  [-v3_xxreal_2(_G7372), _G7323=_G7372, v3_xxreal_2(_G7323)]
+ (31)  [-m2_xxreal_2(_G6802, _G6939), m2_xxreal_2(_G6735, _G6870), _G6735=_G6802, _G6870=_G6939]
+
+Connection Proof:
+-----------------
+1  [3^[]=k2_xxreal_0]   (4)  
+1.1  [- (3^[]=k2_xxreal_0), v1_xxreal_0(3^[]), -r2_hidden(3^[], k1_numbers), - (3^[]=k1_xxreal_0)]   (14)  substitution:[[_G9642], [3^[]]]
+1.1.1  [-v1_xxreal_0(3^[]), v2_membered(2^[]), m2_xxreal_2(3^[], 2^[])]   (12)  substitution:[[_G9303, _G9222], [3^[], 2^[]]]
+1.1.1.1  [-v2_membered(2^[])]   (1)  
+1.1.1.2  [-m2_xxreal_2(3^[], 2^[])]   (3)  
+1.1.2  [r2_hidden(3^[], k1_numbers), -v1_xreal_0(3^[])]   (7)  substitution:[[_G8677], [3^[]]]
+1.1.2.1  [v1_xreal_0(3^[]), v2_membered(2^[]), -v3_xxreal_2(2^[]), m2_xxreal_2(3^[], 2^[])]   (11)  substitution:[[_G9009, _G8891], [3^[], 2^[]]]
+1.1.2.1.1  [-v2_membered(2^[])]   (1)  
+1.1.2.1.2  [v3_xxreal_2(2^[])]   (5)  
+1.1.2.1.3  [-m2_xxreal_2(3^[], 2^[])]   (3)  
+1.1.3  [3^[]=k1_xxreal_0, -m2_xxreal_2(k1_xxreal_0, 2^[]), m2_xxreal_2(3^[], 2^[]), 2^[]=2^[]]   (31)  substitution:[[_G6735, _G6802, _G6939, _G6870], [3^[], k1_xxreal_0, 2^[], 2^[]]]
+1.1.3.1  [m2_xxreal_2(k1_xxreal_0, 2^[]), v2_membered(2^[]), -r1_tarski(2^[], k1_tarski(k1_xxreal_0))]   (17)  substitution:[[_G10624], [2^[]]]
+1.1.3.1.1  [-v2_membered(2^[])]   (1)  
+1.1.3.1.2  [r1_tarski(2^[], k1_tarski(k1_xxreal_0)), v2_membered(2^[]), v2_membered(k1_tarski(k1_xxreal_0)), -v3_xxreal_2(2^[]), v3_xxreal_2(k1_tarski(k1_xxreal_0))]   (18)  substitution:[[_G10188, _G10279], [2^[], k1_tarski(k1_xxreal_0)]]
+1.1.3.1.2.1  [-v2_membered(2^[])]   (1)  
+1.1.3.1.2.2  [-v2_membered(k1_tarski(k1_xxreal_0)), v1_xxreal_0(k1_xxreal_0)]   (13)  substitution:[[_G9495], [k1_xxreal_0]]
+1.1.3.1.2.2.1  [-v1_xxreal_0(k1_xxreal_0), v2_membered(2^[]), m2_xxreal_2(k1_xxreal_0, 2^[])]   (12)  substitution:[[_G9303, _G9222], [k1_xxreal_0, 2^[]]]
+1.1.3.1.2.2.1.1  [-v2_membered(2^[])]   (1)  
+1.1.3.1.2.2.1.2  [-m2_xxreal_2(k1_xxreal_0, 2^[])]   (reduction:1.1.3)  
+1.1.3.1.2.3  [v3_xxreal_2(2^[])]   (5)  
+1.1.3.1.2.4  [-v3_xxreal_2(k1_tarski(k1_xxreal_0))]   (16)  
+1.1.3.2  [-m2_xxreal_2(3^[], 2^[])]   (3)  
+1.1.3.3  [- (2^[]=2^[])]   (21)  substitution:[[_G3647], [2^[]]]
+------------------------------------------------------
+End of proof for t54_xxreal_2

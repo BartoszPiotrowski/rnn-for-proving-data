@@ -1,0 +1,22 @@
+
+t3_relset_1 is a Theorem
+Start of proof for t3_relset_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-r2_hidden(1^[], 2^[])]
+ (2)  [-r2_hidden(3^[], 4^[])]
+ (3)  [m1_subset_1(k1_tarski(k4_tarski(1^[], 3^[])), k1_zfmisc_1(k2_zfmisc_1(2^[], 4^[])))]
+ (4)  [r2_hidden(_G1426, _G1475), -m1_subset_1(k1_tarski(_G1426), k1_zfmisc_1(_G1475))]
+ (5)  [r2_hidden(k4_tarski(_G838, _G905), k2_zfmisc_1(_G973, _G1042)), -r2_hidden(_G838, _G973)]
+ (6)  [r2_hidden(k4_tarski(_G838, _G905), k2_zfmisc_1(_G973, _G1042)), -r2_hidden(_G905, _G1042)]
+ (7)  [-r2_hidden(k4_tarski(_G838, _G905), k2_zfmisc_1(_G973, _G1042)), r2_hidden(_G838, _G973), r2_hidden(_G905, _G1042)]
+
+Connection Proof:
+-----------------
+1  [m1_subset_1(k1_tarski(k4_tarski(1^[], 3^[])), k1_zfmisc_1(k2_zfmisc_1(2^[], 4^[])))]   (3)  
+1.1  [-m1_subset_1(k1_tarski(k4_tarski(1^[], 3^[])), k1_zfmisc_1(k2_zfmisc_1(2^[], 4^[]))), r2_hidden(k4_tarski(1^[], 3^[]), k2_zfmisc_1(2^[], 4^[]))]   (4)  substitution:[[_G1426, _G1475], [k4_tarski(1^[], 3^[]), k2_zfmisc_1(2^[], 4^[])]]
+1.1.1  [-r2_hidden(k4_tarski(1^[], 3^[]), k2_zfmisc_1(2^[], 4^[])), r2_hidden(1^[], 2^[]), r2_hidden(3^[], 4^[])]   (7)  substitution:[[_G838, _G905, _G973, _G1042], [1^[], 3^[], 2^[], 4^[]]]
+1.1.1.1  [-r2_hidden(1^[], 2^[])]   (1)  
+1.1.1.2  [-r2_hidden(3^[], 4^[])]   (2)  
+------------------------------------------------------
+End of proof for t3_relset_1

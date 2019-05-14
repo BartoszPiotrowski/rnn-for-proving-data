@@ -1,0 +1,46 @@
+
+t82_sprect_1 is a Theorem
+Start of proof for t82_sprect_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_sprect_1(2^[])]
+ (2)  [-m2_finseq_1(2^[], u1_struct_0(k15_euclid(np__2)))]
+ (3)  [k3_finseq_1(2^[])=np__5]
+ (4)  [m1_subset_1(_G8768, k1_zfmisc_1(u1_struct_0(k15_euclid(np__2)))), - (k3_finseq_1(k1_sprect_1(_G8768))=np__5)]
+ (5)  [m2_finseq_1(_G7958, u1_struct_0(k15_euclid(np__2))), v1_sprect_1(_G7958), v1_xboole_0(1^[_G7958])]
+ (6)  [m2_finseq_1(_G7958, u1_struct_0(k15_euclid(np__2))), v1_sprect_1(_G7958), -v2_compts_1(1^[_G7958], k15_euclid(np__2))]
+ (7)  [m2_finseq_1(_G7958, u1_struct_0(k15_euclid(np__2))), v1_sprect_1(_G7958), v1_sppol_1(1^[_G7958])]
+ (8)  [m2_finseq_1(_G7958, u1_struct_0(k15_euclid(np__2))), v1_sprect_1(_G7958), v2_sppol_1(1^[_G7958])]
+ (9)  [m2_finseq_1(_G7958, u1_struct_0(k15_euclid(np__2))), v1_sprect_1(_G7958), -m1_subset_1(1^[_G7958], k1_zfmisc_1(u1_struct_0(k15_euclid(np__2))))]
+ (10)  [m2_finseq_1(_G7958, u1_struct_0(k15_euclid(np__2))), v1_sprect_1(_G7958), - (_G7958=k1_sprect_1(1^[_G7958]))]
+ (11)  [m2_finseq_1(_G7958, u1_struct_0(k15_euclid(np__2))), -v1_sprect_1(_G7958), _G7958=k1_sprect_1(_G8160), -v1_xboole_0(_G8160), v2_compts_1(_G8160, k15_euclid(np__2)), -v1_sppol_1(_G8160), -v2_sppol_1(_G8160), m1_subset_1(_G8160, k1_zfmisc_1(u1_struct_0(k15_euclid(np__2))))]
+ (12)  [_G6472=_G6521, - (k1_zfmisc_1(_G6472)=k1_zfmisc_1(_G6521))]
+ (13)  [_G6750=_G6799, - (k1_sprect_1(_G6750)=k1_sprect_1(_G6799))]
+ (14)  [_G7028=_G7077, - (u1_struct_0(_G7028)=u1_struct_0(_G7077))]
+ (15)  [_G7306=_G7355, - (k15_euclid(_G7306)=k15_euclid(_G7355))]
+ (16)  [_G7575=_G7624, - (k3_finseq_1(_G7575)=k3_finseq_1(_G7624))]
+ (17)  [- (_G2649=_G2649)]
+ (18)  [_G2748=_G2793, - (_G2793=_G2748)]
+ (19)  [- (_G2981=_G3094), _G2981=_G3037, _G3037=_G3094]
+ (20)  [-v1_xboole_0(_G3480), _G3431=_G3480, v1_xboole_0(_G3431)]
+ (21)  [-v2_compts_1(_G3776, _G3913), v2_compts_1(_G3709, _G3844), _G3709=_G3776, _G3844=_G3913]
+ (22)  [-v1_sppol_1(_G4355), _G4306=_G4355, v1_sppol_1(_G4306)]
+ (23)  [-v2_sppol_1(_G4633), _G4584=_G4633, v2_sppol_1(_G4584)]
+ (24)  [-m1_subset_1(_G4929, _G5066), m1_subset_1(_G4862, _G4997), _G4862=_G4929, _G4997=_G5066]
+ (25)  [-v1_sprect_1(_G5508), _G5459=_G5508, v1_sprect_1(_G5459)]
+ (26)  [-m2_finseq_1(_G5795, _G5932), m2_finseq_1(_G5728, _G5863), _G5728=_G5795, _G5863=_G5932]
+
+Connection Proof:
+-----------------
+1  [k3_finseq_1(2^[])=np__5]   (3)  
+1.1  [- (k3_finseq_1(2^[])=np__5), k3_finseq_1(2^[])=k3_finseq_1(k1_sprect_1(1^[2^[]])), k3_finseq_1(k1_sprect_1(1^[2^[]]))=np__5]   (19)  substitution:[[_G2981, _G3094, _G3037], [k3_finseq_1(2^[]), np__5, k3_finseq_1(k1_sprect_1(1^[2^[]]))]]
+1.1.1  [- (k3_finseq_1(2^[])=k3_finseq_1(k1_sprect_1(1^[2^[]]))), 2^[]=k1_sprect_1(1^[2^[]])]   (16)  substitution:[[_G7575, _G7624], [2^[], k1_sprect_1(1^[2^[]])]]
+1.1.1.1  [- (2^[]=k1_sprect_1(1^[2^[]])), m2_finseq_1(2^[], u1_struct_0(k15_euclid(np__2))), v1_sprect_1(2^[])]   (10)  substitution:[[_G7958], [2^[]]]
+1.1.1.1.1  [-m2_finseq_1(2^[], u1_struct_0(k15_euclid(np__2)))]   (2)  
+1.1.1.1.2  [-v1_sprect_1(2^[])]   (1)  
+1.1.2  [- (k3_finseq_1(k1_sprect_1(1^[2^[]]))=np__5), m1_subset_1(1^[2^[]], k1_zfmisc_1(u1_struct_0(k15_euclid(np__2))))]   (4)  substitution:[[_G8768], [1^[2^[]]]]
+1.1.2.1  [-m1_subset_1(1^[2^[]], k1_zfmisc_1(u1_struct_0(k15_euclid(np__2)))), m2_finseq_1(2^[], u1_struct_0(k15_euclid(np__2))), v1_sprect_1(2^[])]   (9)  substitution:[[_G7958], [2^[]]]
+1.1.2.1.1  [-m2_finseq_1(2^[], u1_struct_0(k15_euclid(np__2)))]   (2)  
+1.1.2.1.2  [-v1_sprect_1(2^[])]   (1)  
+------------------------------------------------------
+End of proof for t82_sprect_1

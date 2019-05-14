@@ -1,0 +1,47 @@
+
+t11_mcart_1 is a Theorem
+Start of proof for t11_mcart_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-r2_hidden(k1_xtuple_0(1^[]), 2^[])]
+ (2)  [-r2_hidden(k2_xtuple_0(1^[]), 3^[])]
+ (3)  [- (1^[]=k4_tarski(4^[], 5^[]))]
+ (4)  [r2_hidden(1^[], k2_zfmisc_1(2^[], 3^[]))]
+ (5)  [- (k1_xtuple_0(k4_tarski(_G5863, _G5918))=_G5863)]
+ (6)  [- (k2_xtuple_0(k4_tarski(_G5863, _G5918))=_G5918)]
+ (7)  [r2_hidden(k4_tarski(_G5275, _G5342), k2_zfmisc_1(_G5410, _G5479)), -r2_hidden(_G5275, _G5410)]
+ (8)  [r2_hidden(k4_tarski(_G5275, _G5342), k2_zfmisc_1(_G5410, _G5479)), -r2_hidden(_G5342, _G5479)]
+ (9)  [-r2_hidden(k4_tarski(_G5275, _G5342), k2_zfmisc_1(_G5410, _G5479)), r2_hidden(_G5275, _G5410), r2_hidden(_G5342, _G5479)]
+ (10)  [-r2_hidden(_G2899, _G3036), r2_hidden(_G2832, _G2967), _G2832=_G2899, _G2967=_G3036]
+ (11)  [- (_G2059=_G2059)]
+ (12)  [_G2158=_G2203, - (_G2203=_G2158)]
+ (13)  [- (_G2391=_G2504), _G2391=_G2447, _G2447=_G2504]
+ (14)  [_G3450=_G3499, - (k1_xtuple_0(_G3450)=k1_xtuple_0(_G3499))]
+ (15)  [_G3728=_G3777, - (k2_xtuple_0(_G3728)=k2_xtuple_0(_G3777))]
+ (16)  [- (k4_tarski(_G4006, _G4141)=k4_tarski(_G4073, _G4210)), _G4006=_G4073, _G4141=_G4210]
+ (17)  [- (k2_zfmisc_1(_G4594, _G4729)=k2_zfmisc_1(_G4661, _G4798)), _G4594=_G4661, _G4729=_G4798]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(1^[], k2_zfmisc_1(2^[], 3^[]))]   (4)  
+1.1  [-r2_hidden(1^[], k2_zfmisc_1(2^[], 3^[])), r2_hidden(k4_tarski(k1_xtuple_0(k4_tarski(4^[], 5^[])), k2_xtuple_0(k4_tarski(4^[], 5^[]))), k2_zfmisc_1(2^[], 3^[])), k4_tarski(k1_xtuple_0(k4_tarski(4^[], 5^[])), k2_xtuple_0(k4_tarski(4^[], 5^[])))=1^[], k2_zfmisc_1(2^[], 3^[])=k2_zfmisc_1(2^[], 3^[])]   (10)  substitution:[[_G2899, _G3036, _G2832, _G2967], [1^[], k2_zfmisc_1(2^[], 3^[]), k4_tarski(k1_xtuple_0(k4_tarski(4^[], 5^[])), k2_xtuple_0(k4_tarski(4^[], 5^[]))), k2_zfmisc_1(2^[], 3^[])]]
+1.1.1  [-r2_hidden(k4_tarski(k1_xtuple_0(k4_tarski(4^[], 5^[])), k2_xtuple_0(k4_tarski(4^[], 5^[]))), k2_zfmisc_1(2^[], 3^[])), r2_hidden(k1_xtuple_0(k4_tarski(4^[], 5^[])), 2^[]), r2_hidden(k2_xtuple_0(k4_tarski(4^[], 5^[])), 3^[])]   (9)  substitution:[[_G5275, _G5342, _G5410, _G5479], [k1_xtuple_0(k4_tarski(4^[], 5^[])), k2_xtuple_0(k4_tarski(4^[], 5^[])), 2^[], 3^[]]]
+1.1.1.1  [-r2_hidden(k1_xtuple_0(k4_tarski(4^[], 5^[])), 2^[]), r2_hidden(k1_xtuple_0(1^[]), 2^[]), k1_xtuple_0(1^[])=k1_xtuple_0(k4_tarski(4^[], 5^[])), 2^[]=2^[]]   (10)  substitution:[[_G2899, _G3036, _G2832, _G2967], [k1_xtuple_0(k4_tarski(4^[], 5^[])), 2^[], k1_xtuple_0(1^[]), 2^[]]]
+1.1.1.1.1  [-r2_hidden(k1_xtuple_0(1^[]), 2^[])]   (1)  
+1.1.1.1.2  [- (k1_xtuple_0(1^[])=k1_xtuple_0(k4_tarski(4^[], 5^[]))), 1^[]=k4_tarski(4^[], 5^[])]   (14)  substitution:[[_G3450, _G3499], [1^[], k4_tarski(4^[], 5^[])]]
+1.1.1.1.2.1  [- (1^[]=k4_tarski(4^[], 5^[]))]   (3)  
+1.1.1.1.3  [- (2^[]=2^[])]   (11)  substitution:[[_G2059], [2^[]]]
+1.1.1.2  [-r2_hidden(k2_xtuple_0(k4_tarski(4^[], 5^[])), 3^[]), r2_hidden(k2_xtuple_0(1^[]), 3^[]), k2_xtuple_0(1^[])=k2_xtuple_0(k4_tarski(4^[], 5^[])), 3^[]=3^[]]   (10)  substitution:[[_G2899, _G3036, _G2832, _G2967], [k2_xtuple_0(k4_tarski(4^[], 5^[])), 3^[], k2_xtuple_0(1^[]), 3^[]]]
+1.1.1.2.1  [-r2_hidden(k2_xtuple_0(1^[]), 3^[])]   (2)  
+1.1.1.2.2  [- (k2_xtuple_0(1^[])=k2_xtuple_0(k4_tarski(4^[], 5^[]))), 1^[]=k4_tarski(4^[], 5^[])]   (15)  substitution:[[_G3728, _G3777], [1^[], k4_tarski(4^[], 5^[])]]
+1.1.1.2.2.1  [- (1^[]=k4_tarski(4^[], 5^[]))]   (3)  
+1.1.1.2.3  [- (3^[]=3^[])]   (11)  substitution:[[_G2059], [3^[]]]
+1.1.2  [- (k4_tarski(k1_xtuple_0(k4_tarski(4^[], 5^[])), k2_xtuple_0(k4_tarski(4^[], 5^[])))=1^[]), k4_tarski(k1_xtuple_0(k4_tarski(4^[], 5^[])), k2_xtuple_0(k4_tarski(4^[], 5^[])))=k4_tarski(4^[], 5^[]), k4_tarski(4^[], 5^[])=1^[]]   (13)  substitution:[[_G2391, _G2504, _G2447], [k4_tarski(k1_xtuple_0(k4_tarski(4^[], 5^[])), k2_xtuple_0(k4_tarski(4^[], 5^[]))), 1^[], k4_tarski(4^[], 5^[])]]
+1.1.2.1  [- (k4_tarski(k1_xtuple_0(k4_tarski(4^[], 5^[])), k2_xtuple_0(k4_tarski(4^[], 5^[])))=k4_tarski(4^[], 5^[])), k1_xtuple_0(k4_tarski(4^[], 5^[]))=4^[], k2_xtuple_0(k4_tarski(4^[], 5^[]))=5^[]]   (16)  substitution:[[_G4006, _G4141, _G4073, _G4210], [k1_xtuple_0(k4_tarski(4^[], 5^[])), k2_xtuple_0(k4_tarski(4^[], 5^[])), 4^[], 5^[]]]
+1.1.2.1.1  [- (k1_xtuple_0(k4_tarski(4^[], 5^[]))=4^[])]   (5)  substitution:[[_G5863, _G5918], [4^[], 5^[]]]
+1.1.2.1.2  [- (k2_xtuple_0(k4_tarski(4^[], 5^[]))=5^[])]   (6)  substitution:[[_G5863, _G5918], [4^[], 5^[]]]
+1.1.2.2  [- (k4_tarski(4^[], 5^[])=1^[]), 1^[]=k4_tarski(4^[], 5^[])]   (12)  substitution:[[_G2203, _G2158], [k4_tarski(4^[], 5^[]), 1^[]]]
+1.1.2.2.1  [- (1^[]=k4_tarski(4^[], 5^[]))]   (3)  
+1.1.3  [- (k2_zfmisc_1(2^[], 3^[])=k2_zfmisc_1(2^[], 3^[]))]   (11)  substitution:[[_G2059], [k2_zfmisc_1(2^[], 3^[])]]
+------------------------------------------------------
+End of proof for t11_mcart_1

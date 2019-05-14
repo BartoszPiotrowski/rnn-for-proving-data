@@ -1,0 +1,69 @@
+
+t5_supinf_2 is a Theorem
+Start of proof for t5_supinf_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-4^[], r2_hidden(2^[], 1^[])]
+ (2)  [-4^[], -r2_hidden(k2_supinf_2(2^[]), k6_supinf_2(1^[]))]
+ (3)  [-3^[], r2_hidden(k2_supinf_2(2^[]), k6_supinf_2(1^[]))]
+ (4)  [-3^[], -r2_hidden(2^[], 1^[])]
+ (5)  [v1_xboole_0(1^[])]
+ (6)  [-m1_subset_1(1^[], k1_zfmisc_1(k7_numbers))]
+ (7)  [-m1_subset_1(2^[], k7_numbers)]
+ (8)  [3^[], 4^[]]
+ (9)  [v2_membered(_G7205), m1_subset_1(_G7286, _G7205), -v1_xxreal_0(_G7286)]
+ (10)  [m1_subset_1(_G7478, k1_zfmisc_1(k7_numbers)), -v2_membered(_G7478)]
+ (11)  [-v2_membered(k7_numbers)]
+ (12)  [m1_subset_1(_G7681, k7_numbers), - (k2_supinf_2(_G7681)=k2_xxreal_3(_G7681))]
+ (13)  [m1_subset_1(_G7896, k1_zfmisc_1(k7_numbers)), - (k6_supinf_2(_G7896)=k4_member_1(_G7896))]
+ (14)  [v2_membered(_G8116), v1_xxreal_0(_G8207), r2_hidden(_G8207, _G8116), -r2_hidden(k2_xxreal_3(_G8207), k4_member_1(_G8116))]
+ (15)  [v2_membered(_G8116), v1_xxreal_0(_G8207), -r2_hidden(_G8207, _G8116), r2_hidden(k2_xxreal_3(_G8207), k4_member_1(_G8116))]
+ (16)  [_G5719=_G5768, - (k2_xxreal_3(_G5719)=k2_xxreal_3(_G5768))]
+ (17)  [_G5997=_G6046, - (k4_member_1(_G5997)=k4_member_1(_G6046))]
+ (18)  [_G6275=_G6324, - (k1_zfmisc_1(_G6275)=k1_zfmisc_1(_G6324))]
+ (19)  [_G6553=_G6602, - (k2_supinf_2(_G6553)=k2_supinf_2(_G6602))]
+ (20)  [_G6822=_G6871, - (k6_supinf_2(_G6822)=k6_supinf_2(_G6871))]
+ (21)  [- (_G2813=_G2813)]
+ (22)  [_G2912=_G2957, - (_G2957=_G2912)]
+ (23)  [- (_G3145=_G3258), _G3145=_G3201, _G3201=_G3258]
+ (24)  [-v2_membered(_G3644), _G3595=_G3644, v2_membered(_G3595)]
+ (25)  [-v1_xxreal_0(_G3922), _G3873=_G3922, v1_xxreal_0(_G3873)]
+ (26)  [-v1_xboole_0(_G4200), _G4151=_G4200, v1_xboole_0(_G4151)]
+ (27)  [-m1_subset_1(_G4496, _G4633), m1_subset_1(_G4429, _G4564), _G4429=_G4496, _G4564=_G4633]
+ (28)  [-r2_hidden(_G5084, _G5221), r2_hidden(_G5017, _G5152), _G5017=_G5084, _G5152=_G5221]
+
+Connection Proof:
+-----------------
+1  [3^[], 4^[]]   (8)  
+1.1  [-3^[], r2_hidden(k2_supinf_2(2^[]), k6_supinf_2(1^[]))]   (3)  
+1.1.1  [-r2_hidden(k2_supinf_2(2^[]), k6_supinf_2(1^[])), r2_hidden(k2_xxreal_3(2^[]), k4_member_1(1^[])), k2_xxreal_3(2^[])=k2_supinf_2(2^[]), k4_member_1(1^[])=k6_supinf_2(1^[])]   (28)  substitution:[[_G5084, _G5221, _G5017, _G5152], [k2_supinf_2(2^[]), k6_supinf_2(1^[]), k2_xxreal_3(2^[]), k4_member_1(1^[])]]
+1.1.1.1  [-r2_hidden(k2_xxreal_3(2^[]), k4_member_1(1^[])), v2_membered(1^[]), v1_xxreal_0(2^[]), r2_hidden(2^[], 1^[])]   (14)  substitution:[[_G8207, _G8116], [2^[], 1^[]]]
+1.1.1.1.1  [-v2_membered(1^[]), m1_subset_1(1^[], k1_zfmisc_1(k7_numbers))]   (10)  substitution:[[_G7478], [1^[]]]
+1.1.1.1.1.1  [-m1_subset_1(1^[], k1_zfmisc_1(k7_numbers))]   (6)  
+1.1.1.1.2  [-v1_xxreal_0(2^[]), v2_membered(k7_numbers), m1_subset_1(2^[], k7_numbers)]   (9)  substitution:[[_G7286, _G7205], [2^[], k7_numbers]]
+1.1.1.1.2.1  [-v2_membered(k7_numbers)]   (11)  
+1.1.1.1.2.2  [-m1_subset_1(2^[], k7_numbers)]   (7)  
+1.1.1.1.3  [-r2_hidden(2^[], 1^[]), -3^[]]   (4)  
+1.1.1.1.3.1  [3^[]]   (reduction:1)  
+1.1.1.2  [- (k2_xxreal_3(2^[])=k2_supinf_2(2^[])), k2_supinf_2(2^[])=k2_xxreal_3(2^[])]   (22)  substitution:[[_G2957, _G2912], [k2_xxreal_3(2^[]), k2_supinf_2(2^[])]]
+1.1.1.2.1  [- (k2_supinf_2(2^[])=k2_xxreal_3(2^[])), m1_subset_1(2^[], k7_numbers)]   (12)  substitution:[[_G7681], [2^[]]]
+1.1.1.2.1.1  [-m1_subset_1(2^[], k7_numbers)]   (7)  
+1.1.1.3  [- (k4_member_1(1^[])=k6_supinf_2(1^[])), k6_supinf_2(1^[])=k4_member_1(1^[])]   (22)  substitution:[[_G2957, _G2912], [k4_member_1(1^[]), k6_supinf_2(1^[])]]
+1.1.1.3.1  [- (k6_supinf_2(1^[])=k4_member_1(1^[])), m1_subset_1(1^[], k1_zfmisc_1(k7_numbers))]   (13)  substitution:[[_G7896], [1^[]]]
+1.1.1.3.1.1  [-m1_subset_1(1^[], k1_zfmisc_1(k7_numbers))]   (6)  
+1.2  [-4^[], r2_hidden(2^[], 1^[])]   (1)  
+1.2.1  [-r2_hidden(2^[], 1^[]), v2_membered(1^[]), v1_xxreal_0(2^[]), r2_hidden(k2_xxreal_3(2^[]), k4_member_1(1^[]))]   (15)  substitution:[[_G8207, _G8116], [2^[], 1^[]]]
+1.2.1.1  [-v2_membered(1^[]), m1_subset_1(1^[], k1_zfmisc_1(k7_numbers))]   (10)  substitution:[[_G7478], [1^[]]]
+1.2.1.1.1  [-m1_subset_1(1^[], k1_zfmisc_1(k7_numbers))]   (6)  
+1.2.1.2  [-v1_xxreal_0(2^[]), v2_membered(k7_numbers), m1_subset_1(2^[], k7_numbers)]   (9)  substitution:[[_G7286, _G7205], [2^[], k7_numbers]]
+1.2.1.2.1  [-v2_membered(k7_numbers)]   (11)  
+1.2.1.2.2  [-m1_subset_1(2^[], k7_numbers)]   (7)  
+1.2.1.3  [-r2_hidden(k2_xxreal_3(2^[]), k4_member_1(1^[])), r2_hidden(k2_supinf_2(2^[]), k6_supinf_2(1^[])), k2_supinf_2(2^[])=k2_xxreal_3(2^[]), k6_supinf_2(1^[])=k4_member_1(1^[])]   (28)  substitution:[[_G5084, _G5221, _G5017, _G5152], [k2_xxreal_3(2^[]), k4_member_1(1^[]), k2_supinf_2(2^[]), k6_supinf_2(1^[])]]
+1.2.1.3.1  [-r2_hidden(k2_supinf_2(2^[]), k6_supinf_2(1^[])), -4^[]]   (2)  
+1.2.1.3.1.1  [4^[]]   (reduction:1)  
+1.2.1.3.2  [- (k2_supinf_2(2^[])=k2_xxreal_3(2^[])), m1_subset_1(2^[], k7_numbers)]   (12)  substitution:[[_G7681], [2^[]]]
+1.2.1.3.2.1  [-m1_subset_1(2^[], k7_numbers)]   (7)  
+1.2.1.3.3  [- (k6_supinf_2(1^[])=k4_member_1(1^[])), m1_subset_1(1^[], k1_zfmisc_1(k7_numbers))]   (13)  substitution:[[_G7896], [1^[]]]
+1.2.1.3.3.1  [-m1_subset_1(1^[], k1_zfmisc_1(k7_numbers))]   (6)  
+------------------------------------------------------
+End of proof for t5_supinf_2

@@ -1,0 +1,73 @@
+
+t52_pre_poly is a Theorem
+Start of proof for t52_pre_poly
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k1_funct_1(k16_pre_poly(1^[]), 2^[])=k6_numbers]
+ (2)  [- (k16_pre_poly(_G12183)=k8_funcop_1(k5_numbers, _G12183, k6_numbers))]
+ (3)  [-v1_relat_1(k2_funcop_1(_G13400, _G13449))]
+ (4)  [-v1_funct_1(k2_funcop_1(_G13400, _G13449))]
+ (5)  [v1_xboole_0(k4_ordinal1)]
+ (6)  [-v3_ordinal1(k4_ordinal1)]
+ (7)  [- (k5_numbers=k4_ordinal1)]
+ (8)  [- (k6_numbers=k1_xboole_0)]
+ (9)  [- (k9_xtuple_0(k2_funcop_1(_G14433, _G14490))=_G14433)]
+ (10)  [-r1_tarski(k10_xtuple_0(k2_funcop_1(_G14433, _G14490)), k1_tarski(_G14490))]
+ (11)  [-m1_subset_1(k1_xboole_0, k4_ordinal1)]
+ (12)  [r2_hidden(_G14923, _G14867), - (k1_funct_1(k2_funcop_1(_G14867, _G14980), _G14923)=_G14980)]
+ (13)  [- (k8_funcop_1(_G13891, _G13955, _G14020)=k2_funcop_1(_G13955, _G14020)), -v1_xboole_0(_G13891), m1_subset_1(_G14020, _G13891)]
+ (14)  [v1_funct_1(_G12384), v1_relat_1(_G12384), r2_hidden(_G12568, k9_xtuple_0(_G12384)), _G12658=k1_funct_1(_G12384, _G12568), -r2_hidden(k4_tarski(_G12568, _G12658), _G12384)]
+ (15)  [v1_funct_1(_G12384), v1_relat_1(_G12384), r2_hidden(_G12568, k9_xtuple_0(_G12384)), - (_G12658=k1_funct_1(_G12384, _G12568)), r2_hidden(k4_tarski(_G12568, _G12658), _G12384)]
+ (16)  [v1_funct_1(_G12384), v1_relat_1(_G12384), -r2_hidden(_G12568, k9_xtuple_0(_G12384)), _G12658=k1_funct_1(_G12384, _G12568), - (_G12658=k1_xboole_0)]
+ (17)  [v1_funct_1(_G12384), v1_relat_1(_G12384), -r2_hidden(_G12568, k9_xtuple_0(_G12384)), - (_G12658=k1_funct_1(_G12384, _G12568)), _G12658=k1_xboole_0]
+ (18)  [- (k4_tarski(_G8093, _G8228)=k4_tarski(_G8160, _G8297)), _G8093=_G8160, _G8228=_G8297]
+ (19)  [- (k8_funcop_1(_G8690, _G8861, _G9036)=k8_funcop_1(_G8775, _G8948, _G9125)), _G8690=_G8775, _G8861=_G8948, _G9036=_G9125]
+ (20)  [_G9718=_G9767, - (k9_xtuple_0(_G9718)=k9_xtuple_0(_G9767))]
+ (21)  [_G9996=_G10045, - (k10_xtuple_0(_G9996)=k10_xtuple_0(_G10045))]
+ (22)  [_G10274=_G10323, - (k1_tarski(_G10274)=k1_tarski(_G10323))]
+ (23)  [- (k2_funcop_1(_G10552, _G10687)=k2_funcop_1(_G10619, _G10756)), _G10552=_G10619, _G10687=_G10756]
+ (24)  [_G11737=_G11786, - (k16_pre_poly(_G11737)=k16_pre_poly(_G11786))]
+ (25)  [- (k1_funct_1(_G11149, _G11284)=k1_funct_1(_G11216, _G11353)), _G11149=_G11216, _G11284=_G11353]
+ (26)  [- (_G4270=_G4270)]
+ (27)  [_G4369=_G4414, - (_G4414=_G4369)]
+ (28)  [- (_G4602=_G4715), _G4602=_G4658, _G4658=_G4715]
+ (29)  [-v1_relat_1(_G5101), _G5052=_G5101, v1_relat_1(_G5052)]
+ (30)  [-v1_funct_1(_G5379), _G5330=_G5379, v1_funct_1(_G5330)]
+ (31)  [-v3_ordinal1(_G5657), _G5608=_G5657, v3_ordinal1(_G5608)]
+ (32)  [-v1_xboole_0(_G5935), _G5886=_G5935, v1_xboole_0(_G5886)]
+ (33)  [-r1_tarski(_G6231, _G6368), r1_tarski(_G6164, _G6299), _G6164=_G6231, _G6299=_G6368]
+ (34)  [-m1_subset_1(_G6828, _G6965), m1_subset_1(_G6761, _G6896), _G6761=_G6828, _G6896=_G6965]
+ (35)  [-r2_hidden(_G7416, _G7553), r2_hidden(_G7349, _G7484), _G7349=_G7416, _G7484=_G7553]
+
+Connection Proof:
+-----------------
+1  [k1_funct_1(k16_pre_poly(1^[]), 2^[])=k6_numbers]   (1)  
+1.1  [- (k1_funct_1(k16_pre_poly(1^[]), 2^[])=k6_numbers), k1_funct_1(k16_pre_poly(1^[]), 2^[])=k1_funct_1(k8_funcop_1(k5_numbers, 1^[], k6_numbers), 2^[]), k1_funct_1(k8_funcop_1(k5_numbers, 1^[], k6_numbers), 2^[])=k6_numbers]   (28)  substitution:[[_G4602, _G4715, _G4658], [k1_funct_1(k16_pre_poly(1^[]), 2^[]), k6_numbers, k1_funct_1(k8_funcop_1(k5_numbers, 1^[], k6_numbers), 2^[])]]
+1.1.1  [- (k1_funct_1(k16_pre_poly(1^[]), 2^[])=k1_funct_1(k8_funcop_1(k5_numbers, 1^[], k6_numbers), 2^[])), k16_pre_poly(1^[])=k8_funcop_1(k5_numbers, 1^[], k6_numbers), 2^[]=2^[]]   (25)  substitution:[[_G11149, _G11284, _G11216, _G11353], [k16_pre_poly(1^[]), 2^[], k8_funcop_1(k5_numbers, 1^[], k6_numbers), 2^[]]]
+1.1.1.1  [- (k16_pre_poly(1^[])=k8_funcop_1(k5_numbers, 1^[], k6_numbers))]   (2)  substitution:[[_G12183], [1^[]]]
+1.1.1.2  [- (2^[]=2^[])]   (26)  substitution:[[_G4270], [2^[]]]
+1.1.2  [- (k1_funct_1(k8_funcop_1(k5_numbers, 1^[], k6_numbers), 2^[])=k6_numbers), k1_funct_1(k8_funcop_1(k5_numbers, 1^[], k6_numbers), 2^[])=k1_funct_1(k2_funcop_1(1^[], k6_numbers), 2^[]), k1_funct_1(k2_funcop_1(1^[], k6_numbers), 2^[])=k6_numbers]   (28)  substitution:[[_G4602, _G4715, _G4658], [k1_funct_1(k8_funcop_1(k5_numbers, 1^[], k6_numbers), 2^[]), k6_numbers, k1_funct_1(k2_funcop_1(1^[], k6_numbers), 2^[])]]
+1.1.2.1  [- (k1_funct_1(k8_funcop_1(k5_numbers, 1^[], k6_numbers), 2^[])=k1_funct_1(k2_funcop_1(1^[], k6_numbers), 2^[])), k8_funcop_1(k5_numbers, 1^[], k6_numbers)=k2_funcop_1(1^[], k6_numbers), 2^[]=2^[]]   (25)  substitution:[[_G11149, _G11284, _G11216, _G11353], [k8_funcop_1(k5_numbers, 1^[], k6_numbers), 2^[], k2_funcop_1(1^[], k6_numbers), 2^[]]]
+1.1.2.1.1  [- (k8_funcop_1(k5_numbers, 1^[], k6_numbers)=k2_funcop_1(1^[], k6_numbers)), -v1_xboole_0(k5_numbers), m1_subset_1(k6_numbers, k5_numbers)]   (13)  substitution:[[_G13891, _G13955, _G14020], [k5_numbers, 1^[], k6_numbers]]
+1.1.2.1.1.1  [v1_xboole_0(k5_numbers), -v1_xboole_0(k4_ordinal1), k5_numbers=k4_ordinal1]   (32)  substitution:[[_G5886, _G5935], [k5_numbers, k4_ordinal1]]
+1.1.2.1.1.1.1  [v1_xboole_0(k4_ordinal1)]   (5)  
+1.1.2.1.1.1.2  [- (k5_numbers=k4_ordinal1)]   (7)  
+1.1.2.1.1.2  [-m1_subset_1(k6_numbers, k5_numbers), m1_subset_1(k1_xboole_0, k4_ordinal1), k1_xboole_0=k6_numbers, k4_ordinal1=k5_numbers]   (34)  substitution:[[_G6828, _G6965, _G6761, _G6896], [k6_numbers, k5_numbers, k1_xboole_0, k4_ordinal1]]
+1.1.2.1.1.2.1  [-m1_subset_1(k1_xboole_0, k4_ordinal1)]   (11)  
+1.1.2.1.1.2.2  [- (k1_xboole_0=k6_numbers), k6_numbers=k1_xboole_0]   (27)  substitution:[[_G4414, _G4369], [k1_xboole_0, k6_numbers]]
+1.1.2.1.1.2.2.1  [- (k6_numbers=k1_xboole_0)]   (8)  
+1.1.2.1.1.2.3  [- (k4_ordinal1=k5_numbers), k5_numbers=k4_ordinal1]   (27)  substitution:[[_G4414, _G4369], [k4_ordinal1, k5_numbers]]
+1.1.2.1.1.2.3.1  [- (k5_numbers=k4_ordinal1)]   (7)  
+1.1.2.1.2  [- (2^[]=2^[])]   (26)  substitution:[[_G4270], [2^[]]]
+1.1.2.2  [- (k1_funct_1(k2_funcop_1(1^[], k6_numbers), 2^[])=k6_numbers), r2_hidden(2^[], 1^[])]   (12)  substitution:[[_G14867, _G14980, _G14923], [1^[], k6_numbers, 2^[]]]
+1.1.2.2.1  [-r2_hidden(2^[], 1^[]), r2_hidden(2^[], k9_xtuple_0(k2_funcop_1(1^[], k6_numbers))), 2^[]=2^[], k9_xtuple_0(k2_funcop_1(1^[], k6_numbers))=1^[]]   (35)  substitution:[[_G7416, _G7553, _G7349, _G7484], [2^[], 1^[], 2^[], k9_xtuple_0(k2_funcop_1(1^[], k6_numbers))]]
+1.1.2.2.1.1  [-r2_hidden(2^[], k9_xtuple_0(k2_funcop_1(1^[], k6_numbers))), v1_funct_1(k2_funcop_1(1^[], k6_numbers)), v1_relat_1(k2_funcop_1(1^[], k6_numbers)), - (k6_numbers=k1_funct_1(k2_funcop_1(1^[], k6_numbers), 2^[])), k6_numbers=k1_xboole_0]   (17)  substitution:[[_G12568, _G12384, _G12658], [2^[], k2_funcop_1(1^[], k6_numbers), k6_numbers]]
+1.1.2.2.1.1.1  [-v1_funct_1(k2_funcop_1(1^[], k6_numbers))]   (4)  substitution:[[_G13400, _G13449], [1^[], k6_numbers]]
+1.1.2.2.1.1.2  [-v1_relat_1(k2_funcop_1(1^[], k6_numbers))]   (3)  substitution:[[_G13400, _G13449], [1^[], k6_numbers]]
+1.1.2.2.1.1.3  [k6_numbers=k1_funct_1(k2_funcop_1(1^[], k6_numbers), 2^[]), - (k1_funct_1(k2_funcop_1(1^[], k6_numbers), 2^[])=k6_numbers)]   (27)  substitution:[[_G4369, _G4414], [k6_numbers, k1_funct_1(k2_funcop_1(1^[], k6_numbers), 2^[])]]
+1.1.2.2.1.1.3.1  [k1_funct_1(k2_funcop_1(1^[], k6_numbers), 2^[])=k6_numbers]   (reduction:1.1.2)  
+1.1.2.2.1.1.4  [- (k6_numbers=k1_xboole_0)]   (8)  
+1.1.2.2.1.2  [- (2^[]=2^[])]   (26)  substitution:[[_G4270], [2^[]]]
+1.1.2.2.1.3  [- (k9_xtuple_0(k2_funcop_1(1^[], k6_numbers))=1^[])]   (9)  substitution:[[_G14433, _G14490], [1^[], k6_numbers]]
+------------------------------------------------------
+End of proof for t52_pre_poly

@@ -1,0 +1,42 @@
+
+t29_topgen_4 is a Theorem
+Start of proof for t29_topgen_4
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k2_setfam_1(k1_xboole_0, 6^[])=k1_xboole_0]
+ (2)  [- (k1_xboole_0=o_0_0_xboole_0)]
+ (3)  [-v1_xboole_0(o_0_0_xboole_0)]
+ (4)  [r2_hidden(_G5815, _G5861), v1_xboole_0(_G5861)]
+ (5)  [_G4966=k2_setfam_1(_G4787, _G4876), r2_hidden(_G5153, _G4966), -r2_hidden(1^[_G5153, _G4966, _G4876, _G4787], _G4787)]
+ (6)  [_G4966=k2_setfam_1(_G4787, _G4876), r2_hidden(_G5153, _G4966), -r2_hidden(2^[_G5153, _G4966, _G4876, _G4787], _G4876)]
+ (7)  [_G4966=k2_setfam_1(_G4787, _G4876), r2_hidden(_G5153, _G4966), - (_G5153=k2_xboole_0(1^[_G5153, _G4966, _G4876, _G4787], 2^[_G5153, _G4966, _G4876, _G4787]))]
+ (8)  [_G4966=k2_setfam_1(_G4787, _G4876), -r2_hidden(_G5153, _G4966), r2_hidden(_G5293, _G4787), r2_hidden(_G5371, _G4876), _G5153=k2_xboole_0(_G5293, _G5371)]
+ (9)  [- (_G4966=k2_setfam_1(_G4787, _G4876)), -r2_hidden(3^[_G4966, _G4876, _G4787], _G4966), -r2_hidden(4^[_G4966, _G4876, _G4787], _G4787)]
+ (10)  [- (_G4966=k2_setfam_1(_G4787, _G4876)), -r2_hidden(3^[_G4966, _G4876, _G4787], _G4966), -r2_hidden(5^[_G4966, _G4876, _G4787], _G4876)]
+ (11)  [- (_G4966=k2_setfam_1(_G4787, _G4876)), -r2_hidden(3^[_G4966, _G4876, _G4787], _G4966), - (3^[_G4966, _G4876, _G4787]=k2_xboole_0(4^[_G4966, _G4876, _G4787], 5^[_G4966, _G4876, _G4787]))]
+ (12)  [- (_G4966=k2_setfam_1(_G4787, _G4876)), r2_hidden(3^[_G4966, _G4876, _G4787], _G4966), r2_hidden(_G6874, _G4787), r2_hidden(_G6879, _G4876), 3^[_G4966, _G4876, _G4787]=k2_xboole_0(_G6874, _G6879)]
+ (13)  [- (k2_xboole_0(_G3503, _G3638)=k2_xboole_0(_G3570, _G3707)), _G3503=_G3570, _G3638=_G3707]
+ (14)  [- (k2_setfam_1(_G4091, _G4226)=k2_setfam_1(_G4158, _G4295)), _G4091=_G4158, _G4226=_G4295]
+ (15)  [- (_G1813=_G1813)]
+ (16)  [_G1912=_G1957, - (_G1957=_G1912)]
+ (17)  [- (_G2145=_G2258), _G2145=_G2201, _G2201=_G2258]
+ (18)  [-v1_xboole_0(_G3232), _G3183=_G3232, v1_xboole_0(_G3183)]
+ (19)  [-r2_hidden(_G2662, _G2799), r2_hidden(_G2595, _G2730), _G2595=_G2662, _G2730=_G2799]
+
+Connection Proof:
+-----------------
+1  [k2_setfam_1(k1_xboole_0, 6^[])=k1_xboole_0]   (1)  
+1.1  [- (k2_setfam_1(k1_xboole_0, 6^[])=k1_xboole_0), k1_xboole_0=k2_setfam_1(k1_xboole_0, 6^[])]   (16)  substitution:[[_G1957, _G1912], [k2_setfam_1(k1_xboole_0, 6^[]), k1_xboole_0]]
+1.1.1  [- (k1_xboole_0=k2_setfam_1(k1_xboole_0, 6^[])), -r2_hidden(3^[k1_xboole_0, 6^[], k1_xboole_0], k1_xboole_0), -r2_hidden(4^[k1_xboole_0, 6^[], k1_xboole_0], k1_xboole_0)]   (9)  substitution:[[_G4966, _G4787, _G4876], [k1_xboole_0, k1_xboole_0, 6^[]]]
+1.1.1.1  [r2_hidden(3^[k1_xboole_0, 6^[], k1_xboole_0], k1_xboole_0), -r2_hidden(3^[k1_xboole_0, 6^[], k1_xboole_0], o_0_0_xboole_0), 3^[k1_xboole_0, 6^[], k1_xboole_0]=3^[k1_xboole_0, 6^[], k1_xboole_0], k1_xboole_0=o_0_0_xboole_0]   (19)  substitution:[[_G2595, _G2730, _G2662, _G2799], [3^[k1_xboole_0, 6^[], k1_xboole_0], k1_xboole_0, 3^[k1_xboole_0, 6^[], k1_xboole_0], o_0_0_xboole_0]]
+1.1.1.1.1  [r2_hidden(3^[k1_xboole_0, 6^[], k1_xboole_0], o_0_0_xboole_0), v1_xboole_0(o_0_0_xboole_0)]   (4)  substitution:[[_G5815, _G5861], [3^[k1_xboole_0, 6^[], k1_xboole_0], o_0_0_xboole_0]]
+1.1.1.1.1.1  [-v1_xboole_0(o_0_0_xboole_0)]   (3)  
+1.1.1.1.2  [- (3^[k1_xboole_0, 6^[], k1_xboole_0]=3^[k1_xboole_0, 6^[], k1_xboole_0])]   (15)  substitution:[[_G1813], [3^[k1_xboole_0, 6^[], k1_xboole_0]]]
+1.1.1.1.3  [- (k1_xboole_0=o_0_0_xboole_0)]   (2)  
+1.1.1.2  [r2_hidden(4^[k1_xboole_0, 6^[], k1_xboole_0], k1_xboole_0), -r2_hidden(4^[k1_xboole_0, 6^[], k1_xboole_0], o_0_0_xboole_0), 4^[k1_xboole_0, 6^[], k1_xboole_0]=4^[k1_xboole_0, 6^[], k1_xboole_0], k1_xboole_0=o_0_0_xboole_0]   (19)  substitution:[[_G2595, _G2730, _G2662, _G2799], [4^[k1_xboole_0, 6^[], k1_xboole_0], k1_xboole_0, 4^[k1_xboole_0, 6^[], k1_xboole_0], o_0_0_xboole_0]]
+1.1.1.2.1  [r2_hidden(4^[k1_xboole_0, 6^[], k1_xboole_0], o_0_0_xboole_0), v1_xboole_0(o_0_0_xboole_0)]   (4)  substitution:[[_G5815, _G5861], [4^[k1_xboole_0, 6^[], k1_xboole_0], o_0_0_xboole_0]]
+1.1.1.2.1.1  [-v1_xboole_0(o_0_0_xboole_0)]   (3)  
+1.1.1.2.2  [- (4^[k1_xboole_0, 6^[], k1_xboole_0]=4^[k1_xboole_0, 6^[], k1_xboole_0])]   (15)  substitution:[[_G1813], [4^[k1_xboole_0, 6^[], k1_xboole_0]]]
+1.1.1.2.3  [- (k1_xboole_0=o_0_0_xboole_0)]   (2)  
+------------------------------------------------------
+End of proof for t29_topgen_4

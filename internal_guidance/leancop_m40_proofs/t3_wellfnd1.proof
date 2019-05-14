@@ -1,0 +1,45 @@
+
+t3_wellfnd1 is a Theorem
+Start of proof for t3_wellfnd1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-l1_orders_2(1^[])]
+ (2)  [r1_tarski(k1_wellord1(u1_orders_2(1^[]), 2^[]), u1_struct_0(1^[]))]
+ (3)  [m1_subset_1(_G8852, k1_zfmisc_1(k2_zfmisc_1(_G8743, _G8797))), -v1_relat_1(_G8852)]
+ (4)  [l1_orders_2(_G9095), -m1_subset_1(u1_orders_2(_G9095), k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(_G9095), u1_struct_0(_G9095))))]
+ (5)  [- (k2_xboole_0(_G9358, _G9358)=_G9358)]
+ (6)  [-r1_tarski(_G9555, _G9668), r1_tarski(_G9555, _G9611), r1_tarski(_G9611, _G9668)]
+ (7)  [m1_subset_1(_G10084, k1_zfmisc_1(k2_zfmisc_1(_G9963, _G10023))), -r1_tarski(k1_relat_1(_G10084), k2_xboole_0(_G9963, _G10023))]
+ (8)  [v1_relat_1(_G10451), -r1_tarski(k1_wellord1(_G10451, _G10402), k1_relat_1(_G10451))]
+ (9)  [_G5702=_G5751, - (k1_zfmisc_1(_G5702)=k1_zfmisc_1(_G5751))]
+ (10)  [- (k2_zfmisc_1(_G5980, _G6115)=k2_zfmisc_1(_G6047, _G6184)), _G5980=_G6047, _G6115=_G6184]
+ (11)  [- (k2_xboole_0(_G6577, _G6712)=k2_xboole_0(_G6644, _G6781)), _G6577=_G6644, _G6712=_G6781]
+ (12)  [_G7174=_G7223, - (k1_relat_1(_G7174)=k1_relat_1(_G7223))]
+ (13)  [- (k1_wellord1(_G7452, _G7587)=k1_wellord1(_G7519, _G7656)), _G7452=_G7519, _G7587=_G7656]
+ (14)  [_G8049=_G8098, - (u1_orders_2(_G8049)=u1_orders_2(_G8098))]
+ (15)  [_G8318=_G8367, - (u1_struct_0(_G8318)=u1_struct_0(_G8367))]
+ (16)  [- (_G3095=_G3095)]
+ (17)  [_G3194=_G3239, - (_G3239=_G3194)]
+ (18)  [- (_G3427=_G3540), _G3427=_G3483, _G3483=_G3540]
+ (19)  [-m1_subset_1(_G3944, _G4081), m1_subset_1(_G3877, _G4012), _G3877=_G3944, _G4012=_G4081]
+ (20)  [-v1_relat_1(_G4523), _G4474=_G4523, v1_relat_1(_G4474)]
+ (21)  [-l1_orders_2(_G4801), _G4752=_G4801, l1_orders_2(_G4752)]
+ (22)  [-r1_tarski(_G5088, _G5225), r1_tarski(_G5021, _G5156), _G5021=_G5088, _G5156=_G5225]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k1_wellord1(u1_orders_2(1^[]), 2^[]), u1_struct_0(1^[]))]   (2)  
+1.1  [-r1_tarski(k1_wellord1(u1_orders_2(1^[]), 2^[]), u1_struct_0(1^[])), r1_tarski(k1_wellord1(u1_orders_2(1^[]), 2^[]), k1_relat_1(u1_orders_2(1^[]))), r1_tarski(k1_relat_1(u1_orders_2(1^[])), u1_struct_0(1^[]))]   (6)  substitution:[[_G9555, _G9668, _G9611], [k1_wellord1(u1_orders_2(1^[]), 2^[]), u1_struct_0(1^[]), k1_relat_1(u1_orders_2(1^[]))]]
+1.1.1  [-r1_tarski(k1_wellord1(u1_orders_2(1^[]), 2^[]), k1_relat_1(u1_orders_2(1^[]))), v1_relat_1(u1_orders_2(1^[]))]   (8)  substitution:[[_G10451, _G10402], [u1_orders_2(1^[]), 2^[]]]
+1.1.1.1  [-v1_relat_1(u1_orders_2(1^[])), m1_subset_1(u1_orders_2(1^[]), k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(1^[]), u1_struct_0(1^[]))))]   (3)  substitution:[[_G8852, _G8743, _G8797], [u1_orders_2(1^[]), u1_struct_0(1^[]), u1_struct_0(1^[])]]
+1.1.1.1.1  [-m1_subset_1(u1_orders_2(1^[]), k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(1^[]), u1_struct_0(1^[])))), l1_orders_2(1^[])]   (4)  substitution:[[_G9095], [1^[]]]
+1.1.1.1.1.1  [-l1_orders_2(1^[])]   (1)  
+1.1.2  [-r1_tarski(k1_relat_1(u1_orders_2(1^[])), u1_struct_0(1^[])), r1_tarski(k1_relat_1(u1_orders_2(1^[])), k2_xboole_0(u1_struct_0(1^[]), u1_struct_0(1^[]))), k1_relat_1(u1_orders_2(1^[]))=k1_relat_1(u1_orders_2(1^[])), k2_xboole_0(u1_struct_0(1^[]), u1_struct_0(1^[]))=u1_struct_0(1^[])]   (22)  substitution:[[_G5088, _G5225, _G5021, _G5156], [k1_relat_1(u1_orders_2(1^[])), u1_struct_0(1^[]), k1_relat_1(u1_orders_2(1^[])), k2_xboole_0(u1_struct_0(1^[]), u1_struct_0(1^[]))]]
+1.1.2.1  [-r1_tarski(k1_relat_1(u1_orders_2(1^[])), k2_xboole_0(u1_struct_0(1^[]), u1_struct_0(1^[]))), m1_subset_1(u1_orders_2(1^[]), k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(1^[]), u1_struct_0(1^[]))))]   (7)  substitution:[[_G10084, _G9963, _G10023], [u1_orders_2(1^[]), u1_struct_0(1^[]), u1_struct_0(1^[])]]
+1.1.2.1.1  [-m1_subset_1(u1_orders_2(1^[]), k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(1^[]), u1_struct_0(1^[])))), l1_orders_2(1^[])]   (4)  substitution:[[_G9095], [1^[]]]
+1.1.2.1.1.1  [-l1_orders_2(1^[])]   (1)  
+1.1.2.2  [- (k1_relat_1(u1_orders_2(1^[]))=k1_relat_1(u1_orders_2(1^[]))), u1_orders_2(1^[])=u1_orders_2(1^[])]   (12)  substitution:[[_G7174, _G7223], [u1_orders_2(1^[]), u1_orders_2(1^[])]]
+1.1.2.2.1  [- (u1_orders_2(1^[])=u1_orders_2(1^[]))]   (16)  substitution:[[_G3095], [u1_orders_2(1^[])]]
+1.1.2.3  [- (k2_xboole_0(u1_struct_0(1^[]), u1_struct_0(1^[]))=u1_struct_0(1^[]))]   (5)  substitution:[[_G9358], [u1_struct_0(1^[])]]
+------------------------------------------------------
+End of proof for t3_wellfnd1

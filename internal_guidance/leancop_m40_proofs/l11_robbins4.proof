@@ -1,0 +1,30 @@
+
+l11_robbins4 is a Theorem
+Start of proof for l11_robbins4
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [r1_tarski(np__1, np__2)]
+ (2)  [- (k1_ordinal1(_G3826)=k2_xboole_0(_G3826, k1_tarski(_G3826)))]
+ (3)  [- (k1_ordinal1(np__1)=np__2)]
+ (4)  [-r1_tarski(_G4061, k2_xboole_0(_G4061, _G4103))]
+ (5)  [_G2619=_G2668, - (k1_tarski(_G2619)=k1_tarski(_G2668))]
+ (6)  [_G2897=_G2946, - (k1_ordinal1(_G2897)=k1_ordinal1(_G2946))]
+ (7)  [- (k2_xboole_0(_G3166, _G3301)=k2_xboole_0(_G3233, _G3370)), _G3166=_G3233, _G3301=_G3370]
+ (8)  [-r1_tarski(_G2068, _G2205), r1_tarski(_G2001, _G2136), _G2001=_G2068, _G2136=_G2205]
+ (9)  [- (_G1228=_G1228)]
+ (10)  [_G1327=_G1372, - (_G1372=_G1327)]
+ (11)  [- (_G1560=_G1673), _G1560=_G1616, _G1616=_G1673]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(np__1, np__2)]   (1)  
+1.1  [-r1_tarski(np__1, np__2), r1_tarski(np__1, k2_xboole_0(np__1, k1_tarski(np__1))), np__1=np__1, k2_xboole_0(np__1, k1_tarski(np__1))=np__2]   (8)  substitution:[[_G2068, _G2205, _G2001, _G2136], [np__1, np__2, np__1, k2_xboole_0(np__1, k1_tarski(np__1))]]
+1.1.1  [-r1_tarski(np__1, k2_xboole_0(np__1, k1_tarski(np__1)))]   (4)  substitution:[[_G4061, _G4103], [np__1, k1_tarski(np__1)]]
+1.1.2  [- (np__1=np__1)]   (9)  substitution:[[_G1228], [np__1]]
+1.1.3  [- (k2_xboole_0(np__1, k1_tarski(np__1))=np__2), np__2=k2_xboole_0(np__1, k1_tarski(np__1))]   (10)  substitution:[[_G1372, _G1327], [k2_xboole_0(np__1, k1_tarski(np__1)), np__2]]
+1.1.3.1  [- (np__2=k2_xboole_0(np__1, k1_tarski(np__1))), np__2=k1_ordinal1(np__1), k1_ordinal1(np__1)=k2_xboole_0(np__1, k1_tarski(np__1))]   (11)  substitution:[[_G1560, _G1673, _G1616], [np__2, k2_xboole_0(np__1, k1_tarski(np__1)), k1_ordinal1(np__1)]]
+1.1.3.1.1  [- (np__2=k1_ordinal1(np__1)), k1_ordinal1(np__1)=np__2]   (10)  substitution:[[_G1372, _G1327], [np__2, k1_ordinal1(np__1)]]
+1.1.3.1.1.1  [- (k1_ordinal1(np__1)=np__2)]   (3)  
+1.1.3.1.2  [- (k1_ordinal1(np__1)=k2_xboole_0(np__1, k1_tarski(np__1)))]   (2)  substitution:[[_G3826], [np__1]]
+------------------------------------------------------
+End of proof for l11_robbins4

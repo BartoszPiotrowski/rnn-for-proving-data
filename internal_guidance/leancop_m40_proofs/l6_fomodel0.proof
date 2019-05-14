@@ -1,0 +1,30 @@
+
+l6_fomodel0 is a Theorem
+Start of proof for l6_fomodel0
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-r1_tarski(3^[], k1_funct_2(4^[], 5^[]))]
+ (2)  [r1_tarski(k3_tarski(3^[]), k2_zfmisc_1(4^[], 5^[]))]
+ (3)  [-r1_tarski(_G1054, _G1110), -r2_hidden(1^[_G1110, _G1054], _G1054)]
+ (4)  [-r1_tarski(_G1054, _G1110), r2_hidden(1^[_G1110, _G1054], _G1110)]
+ (5)  [r1_tarski(_G1054, _G1110), r2_hidden(_G1224, _G1054), -r2_hidden(_G1224, _G1110)]
+ (6)  [m1_subset_1(_G1456, k1_zfmisc_1(_G1503)), -r1_tarski(_G1456, _G1503)]
+ (7)  [-m1_subset_1(_G1456, k1_zfmisc_1(_G1503)), r1_tarski(_G1456, _G1503)]
+ (8)  [r2_hidden(_G1857, k1_funct_2(_G1716, _G1786)), -v1_funct_1(_G1857)]
+ (9)  [r2_hidden(_G1857, k1_funct_2(_G1716, _G1786)), -v1_funct_2(_G1857, _G1716, _G1786)]
+ (10)  [r2_hidden(_G1857, k1_funct_2(_G1716, _G1786)), -m1_subset_1(_G1857, k1_zfmisc_1(k2_zfmisc_1(_G1716, _G1786)))]
+ (11)  [-r2_hidden(2^[_G2403, _G2345], _G2345), -r1_tarski(k3_tarski(_G2345), _G2403)]
+ (12)  [r1_tarski(2^[_G2403, _G2345], _G2403), -r1_tarski(k3_tarski(_G2345), _G2403)]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k3_tarski(3^[]), k2_zfmisc_1(4^[], 5^[]))]   (2)  
+1.1  [-r1_tarski(k3_tarski(3^[]), k2_zfmisc_1(4^[], 5^[])), -r2_hidden(2^[k2_zfmisc_1(4^[], 5^[]), 3^[]], 3^[])]   (11)  substitution:[[_G2345, _G2403], [3^[], k2_zfmisc_1(4^[], 5^[])]]
+1.1.1  [r2_hidden(2^[k2_zfmisc_1(4^[], 5^[]), 3^[]], 3^[]), r1_tarski(3^[], k1_funct_2(4^[], 5^[])), -r2_hidden(2^[k2_zfmisc_1(4^[], 5^[]), 3^[]], k1_funct_2(4^[], 5^[]))]   (5)  substitution:[[_G1224, _G1054, _G1110], [2^[k2_zfmisc_1(4^[], 5^[]), 3^[]], 3^[], k1_funct_2(4^[], 5^[])]]
+1.1.1.1  [-r1_tarski(3^[], k1_funct_2(4^[], 5^[]))]   (1)  
+1.1.1.2  [r2_hidden(2^[k2_zfmisc_1(4^[], 5^[]), 3^[]], k1_funct_2(4^[], 5^[])), -m1_subset_1(2^[k2_zfmisc_1(4^[], 5^[]), 3^[]], k1_zfmisc_1(k2_zfmisc_1(4^[], 5^[])))]   (10)  substitution:[[_G1857, _G1716, _G1786], [2^[k2_zfmisc_1(4^[], 5^[]), 3^[]], 4^[], 5^[]]]
+1.1.1.2.1  [m1_subset_1(2^[k2_zfmisc_1(4^[], 5^[]), 3^[]], k1_zfmisc_1(k2_zfmisc_1(4^[], 5^[]))), -r1_tarski(2^[k2_zfmisc_1(4^[], 5^[]), 3^[]], k2_zfmisc_1(4^[], 5^[]))]   (6)  substitution:[[_G1456, _G1503], [2^[k2_zfmisc_1(4^[], 5^[]), 3^[]], k2_zfmisc_1(4^[], 5^[])]]
+1.1.1.2.1.1  [r1_tarski(2^[k2_zfmisc_1(4^[], 5^[]), 3^[]], k2_zfmisc_1(4^[], 5^[])), -r1_tarski(k3_tarski(3^[]), k2_zfmisc_1(4^[], 5^[]))]   (12)  substitution:[[_G2403, _G2345], [k2_zfmisc_1(4^[], 5^[]), 3^[]]]
+1.1.1.2.1.1.1  [r1_tarski(k3_tarski(3^[]), k2_zfmisc_1(4^[], 5^[]))]   (2)  
+------------------------------------------------------
+End of proof for l6_fomodel0

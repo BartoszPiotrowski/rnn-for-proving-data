@@ -1,0 +1,24 @@
+
+l4_borsuk_7 is a Theorem
+Start of proof for l4_borsuk_7
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [r2_hidden(k6_numbers, k1_tarski(k6_numbers))]
+ (2)  [_G2749=k1_tarski(_G2691), r2_hidden(_G2879, _G2749), - (_G2879=_G2691)]
+ (3)  [_G2749=k1_tarski(_G2691), -r2_hidden(_G2879, _G2749), _G2879=_G2691]
+ (4)  [- (_G2749=k1_tarski(_G2691)), r2_hidden(1^[_G2749, _G2691], _G2749), 1^[_G2749, _G2691]=_G2691]
+ (5)  [- (_G2749=k1_tarski(_G2691)), -r2_hidden(1^[_G2749, _G2691], _G2749), - (1^[_G2749, _G2691]=_G2691)]
+ (6)  [_G2401=_G2450, - (k1_tarski(_G2401)=k1_tarski(_G2450))]
+ (7)  [-r2_hidden(_G1859, _G1996), r2_hidden(_G1792, _G1927), _G1792=_G1859, _G1927=_G1996]
+ (8)  [- (_G1019=_G1019)]
+ (9)  [_G1118=_G1163, - (_G1163=_G1118)]
+ (10)  [- (_G1351=_G1464), _G1351=_G1407, _G1407=_G1464]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(k6_numbers, k1_tarski(k6_numbers))]   (1)  
+1.1  [-r2_hidden(k6_numbers, k1_tarski(k6_numbers)), k1_tarski(k6_numbers)=k1_tarski(k6_numbers), k6_numbers=k6_numbers]   (3)  substitution:[[_G2879, _G2749, _G2691], [k6_numbers, k1_tarski(k6_numbers), k6_numbers]]
+1.1.1  [- (k1_tarski(k6_numbers)=k1_tarski(k6_numbers))]   (8)  substitution:[[_G1019], [k1_tarski(k6_numbers)]]
+1.1.2  [- (k6_numbers=k6_numbers)]   (8)  substitution:[[_G1019], [k6_numbers]]
+------------------------------------------------------
+End of proof for l4_borsuk_7

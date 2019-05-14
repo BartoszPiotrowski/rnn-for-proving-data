@@ -1,0 +1,26 @@
+
+t3_quatern2 is a Theorem
+Start of proof for t3_quatern2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_quaterni(1^[])]
+ (2)  [k26_quaterni(1^[], k1_quatern2)=1^[]]
+ (3)  [- (k1_quatern2=k21_quaterni)]
+ (4)  [v1_quaterni(_G2733), - (k26_quaterni(_G2733, k21_quaterni)=_G2733)]
+ (5)  [- (k26_quaterni(_G2115, _G2250)=k26_quaterni(_G2182, _G2319)), _G2115=_G2182, _G2250=_G2319]
+ (6)  [-v1_quaterni(_G1874), _G1825=_G1874, v1_quaterni(_G1825)]
+ (7)  [- (_G1052=_G1052)]
+ (8)  [_G1151=_G1196, - (_G1196=_G1151)]
+ (9)  [- (_G1384=_G1497), _G1384=_G1440, _G1440=_G1497]
+
+Connection Proof:
+-----------------
+1  [k26_quaterni(1^[], k1_quatern2)=1^[]]   (2)  
+1.1  [- (k26_quaterni(1^[], k1_quatern2)=1^[]), k26_quaterni(1^[], k1_quatern2)=k26_quaterni(1^[], k21_quaterni), k26_quaterni(1^[], k21_quaterni)=1^[]]   (9)  substitution:[[_G1384, _G1497, _G1440], [k26_quaterni(1^[], k1_quatern2), 1^[], k26_quaterni(1^[], k21_quaterni)]]
+1.1.1  [- (k26_quaterni(1^[], k1_quatern2)=k26_quaterni(1^[], k21_quaterni)), 1^[]=1^[], k1_quatern2=k21_quaterni]   (5)  substitution:[[_G2115, _G2250, _G2182, _G2319], [1^[], k1_quatern2, 1^[], k21_quaterni]]
+1.1.1.1  [- (1^[]=1^[])]   (7)  substitution:[[_G1052], [1^[]]]
+1.1.1.2  [- (k1_quatern2=k21_quaterni)]   (3)  
+1.1.2  [- (k26_quaterni(1^[], k21_quaterni)=1^[]), v1_quaterni(1^[])]   (4)  substitution:[[_G2733], [1^[]]]
+1.1.2.1  [-v1_quaterni(1^[])]   (1)  
+------------------------------------------------------
+End of proof for t3_quatern2

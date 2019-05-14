@@ -1,0 +1,47 @@
+
+t4_topalg_2 is a Theorem
+Start of proof for t4_topalg_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xreal_0(1^[])]
+ (2)  [k7_partfun1(k1_numbers, k1_jordan2b(1^[]), np__1)=1^[]]
+ (3)  [v1_xreal_0(_G7435), -r2_hidden(_G7435, k1_numbers)]
+ (4)  [-v1_xreal_0(_G7435), r2_hidden(_G7435, k1_numbers)]
+ (5)  [v1_xboole_0(k1_numbers)]
+ (6)  [- (k12_finseq_1(_G7638, _G7695)=k5_finseq_1(_G7695)), -v1_xboole_0(_G7638), m1_subset_1(_G7695, _G7638)]
+ (7)  [v1_xreal_0(_G8024), - (k1_jordan2b(_G8024)=k5_finseq_1(_G8024))]
+ (8)  [r2_hidden(_G8655, _G8700), -m1_subset_1(_G8655, _G8700)]
+ (9)  [-v1_xboole_0(_G8213), m1_subset_1(_G8318, _G8213), - (k7_partfun1(_G8213, k12_finseq_1(_G8213, _G8318), np__1)=_G8318)]
+ (10)  [_G5179=_G5228, - (k5_finseq_1(_G5179)=k5_finseq_1(_G5228))]
+ (11)  [- (k12_finseq_1(_G5457, _G5592)=k12_finseq_1(_G5524, _G5661)), _G5457=_G5524, _G5592=_G5661]
+ (12)  [_G7073=_G7122, - (k1_jordan2b(_G7073)=k1_jordan2b(_G7122))]
+ (13)  [- (k7_partfun1(_G6054, _G6225, _G6400)=k7_partfun1(_G6139, _G6312, _G6489)), _G6054=_G6139, _G6225=_G6312, _G6400=_G6489]
+ (14)  [- (_G2572=_G2572)]
+ (15)  [_G2671=_G2716, - (_G2716=_G2671)]
+ (16)  [- (_G2904=_G3017), _G2904=_G2960, _G2960=_G3017]
+ (17)  [-v1_xboole_0(_G3403), _G3354=_G3403, v1_xboole_0(_G3354)]
+ (18)  [-r2_hidden(_G3699, _G3836), r2_hidden(_G3632, _G3767), _G3632=_G3699, _G3767=_G3836]
+ (19)  [-v1_xreal_0(_G4866), _G4817=_G4866, v1_xreal_0(_G4817)]
+ (20)  [-m1_subset_1(_G4296, _G4433), m1_subset_1(_G4229, _G4364), _G4229=_G4296, _G4364=_G4433]
+
+Connection Proof:
+-----------------
+1  [v1_xboole_0(k1_numbers)]   (5)  
+1.1  [-v1_xboole_0(k1_numbers), m1_subset_1(1^[], k1_numbers), - (k7_partfun1(k1_numbers, k12_finseq_1(k1_numbers, 1^[]), np__1)=1^[])]   (9)  substitution:[[_G8213, _G8318], [k1_numbers, 1^[]]]
+1.1.1  [-m1_subset_1(1^[], k1_numbers), r2_hidden(1^[], k1_numbers)]   (8)  substitution:[[_G8655, _G8700], [1^[], k1_numbers]]
+1.1.1.1  [-r2_hidden(1^[], k1_numbers), v1_xreal_0(1^[])]   (3)  substitution:[[_G7435], [1^[]]]
+1.1.1.1.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.2  [k7_partfun1(k1_numbers, k12_finseq_1(k1_numbers, 1^[]), np__1)=1^[], - (k7_partfun1(k1_numbers, k1_jordan2b(1^[]), np__1)=1^[]), k7_partfun1(k1_numbers, k1_jordan2b(1^[]), np__1)=k7_partfun1(k1_numbers, k12_finseq_1(k1_numbers, 1^[]), np__1)]   (16)  substitution:[[_G2960, _G3017, _G2904], [k7_partfun1(k1_numbers, k12_finseq_1(k1_numbers, 1^[]), np__1), 1^[], k7_partfun1(k1_numbers, k1_jordan2b(1^[]), np__1)]]
+1.1.2.1  [k7_partfun1(k1_numbers, k1_jordan2b(1^[]), np__1)=1^[]]   (2)  
+1.1.2.2  [- (k7_partfun1(k1_numbers, k1_jordan2b(1^[]), np__1)=k7_partfun1(k1_numbers, k12_finseq_1(k1_numbers, 1^[]), np__1)), k1_numbers=k1_numbers, k1_jordan2b(1^[])=k12_finseq_1(k1_numbers, 1^[]), np__1=np__1]   (13)  substitution:[[_G6054, _G6225, _G6400, _G6139, _G6312, _G6489], [k1_numbers, k1_jordan2b(1^[]), np__1, k1_numbers, k12_finseq_1(k1_numbers, 1^[]), np__1]]
+1.1.2.2.1  [- (k1_numbers=k1_numbers)]   (14)  substitution:[[_G2572], [k1_numbers]]
+1.1.2.2.2  [- (k1_jordan2b(1^[])=k12_finseq_1(k1_numbers, 1^[])), k1_jordan2b(1^[])=k5_finseq_1(1^[]), k5_finseq_1(1^[])=k12_finseq_1(k1_numbers, 1^[])]   (16)  substitution:[[_G2904, _G3017, _G2960], [k1_jordan2b(1^[]), k12_finseq_1(k1_numbers, 1^[]), k5_finseq_1(1^[])]]
+1.1.2.2.2.1  [- (k1_jordan2b(1^[])=k5_finseq_1(1^[])), v1_xreal_0(1^[])]   (7)  substitution:[[_G8024], [1^[]]]
+1.1.2.2.2.1.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.2.2.2.2  [- (k5_finseq_1(1^[])=k12_finseq_1(k1_numbers, 1^[])), k12_finseq_1(k1_numbers, 1^[])=k5_finseq_1(1^[])]   (15)  substitution:[[_G2716, _G2671], [k5_finseq_1(1^[]), k12_finseq_1(k1_numbers, 1^[])]]
+1.1.2.2.2.2.1  [- (k12_finseq_1(k1_numbers, 1^[])=k5_finseq_1(1^[])), -v1_xboole_0(k1_numbers), m1_subset_1(1^[], k1_numbers)]   (6)  substitution:[[_G7638, _G7695], [k1_numbers, 1^[]]]
+1.1.2.2.2.2.1.1  [v1_xboole_0(k1_numbers)]   (5)  
+1.1.2.2.2.2.1.2  [-m1_subset_1(1^[], k1_numbers)]   (lemmata:1.1)  
+1.1.2.2.3  [- (np__1=np__1)]   (14)  substitution:[[_G2572], [np__1]]
+------------------------------------------------------
+End of proof for t4_topalg_2

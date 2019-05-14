@@ -1,0 +1,31 @@
+
+t39_card_fil is a Theorem
+Start of proof for t39_card_fil
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v1_finset_1(1^[])]
+ (2)  [-v1_card_1(1^[])]
+ (3)  [-v7_card_fil(1^[])]
+ (4)  [v4_card_fil(1^[])]
+ (5)  [v1_card_1(_G923), -v1_finset_1(_G923), v4_card_fil(_G923), -v1_card_5(_G923)]
+ (6)  [v1_card_1(_G923), -v1_finset_1(_G923), v4_card_fil(_G923), -v2_card_1(_G923)]
+ (7)  [v1_card_1(_G923), -v1_finset_1(_G923), -v4_card_fil(_G923), v1_card_5(_G923), v2_card_1(_G923)]
+ (8)  [v1_card_1(_G1244), -v1_finset_1(_G1244), v7_card_fil(_G1244), -v1_card_5(_G1244)]
+ (9)  [v1_card_1(_G1498), -v1_finset_1(_G1498), v7_card_fil(_G1498), -v2_card_1(_G1498)]
+
+Connection Proof:
+-----------------
+1  [v1_finset_1(1^[])]   (1)  
+1.1  [-v1_finset_1(1^[]), v1_card_1(1^[]), -v4_card_fil(1^[]), v1_card_5(1^[]), v2_card_1(1^[])]   (7)  substitution:[[_G923], [1^[]]]
+1.1.1  [-v1_card_1(1^[])]   (2)  
+1.1.2  [v4_card_fil(1^[])]   (4)  
+1.1.3  [-v1_card_5(1^[]), v1_card_1(1^[]), -v1_finset_1(1^[]), v7_card_fil(1^[])]   (8)  substitution:[[_G1244], [1^[]]]
+1.1.3.1  [-v1_card_1(1^[])]   (2)  
+1.1.3.2  [v1_finset_1(1^[])]   (1)  
+1.1.3.3  [-v7_card_fil(1^[])]   (3)  
+1.1.4  [-v2_card_1(1^[]), v1_card_1(1^[]), -v1_finset_1(1^[]), v7_card_fil(1^[])]   (9)  substitution:[[_G1498], [1^[]]]
+1.1.4.1  [-v1_card_1(1^[])]   (2)  
+1.1.4.2  [v1_finset_1(1^[])]   (1)  
+1.1.4.3  [-v7_card_fil(1^[])]   (3)  
+------------------------------------------------------
+End of proof for t39_card_fil

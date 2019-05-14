@@ -1,0 +1,45 @@
+
+t77_zfmisc_1 is a Theorem
+Start of proof for t77_zfmisc_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-r1_tarski(5^[], 6^[])]
+ (2)  [r1_tarski(k3_tarski(5^[]), k3_tarski(6^[]))]
+ (3)  [_G3576=_G3625, - (k3_tarski(_G3576)=k3_tarski(_G3625))]
+ (4)  [- (_G1576=_G1576)]
+ (5)  [_G1675=_G1720, - (_G1720=_G1675)]
+ (6)  [- (_G1908=_G2021), _G1908=_G1964, _G1964=_G2021]
+ (7)  [-r2_hidden(_G2425, _G2562), r2_hidden(_G2358, _G2493), _G2358=_G2425, _G2493=_G2562]
+ (8)  [-r1_tarski(_G3013, _G3150), r1_tarski(_G2946, _G3081), _G2946=_G3013, _G3081=_G3150]
+ (9)  [-r1_tarski(_G3875, _G3931), -r2_hidden(1^[_G3931, _G3875], _G3875)]
+ (10)  [-r1_tarski(_G3875, _G3931), r2_hidden(1^[_G3931, _G3875], _G3931)]
+ (11)  [r1_tarski(_G3875, _G3931), r2_hidden(_G4045, _G3875), -r2_hidden(_G4045, _G3931)]
+ (12)  [_G4337=k3_tarski(_G4268), r2_hidden(_G4478, _G4337), -r2_hidden(_G4478, 2^[_G4478, _G4337, _G4268])]
+ (13)  [_G4337=k3_tarski(_G4268), r2_hidden(_G4478, _G4337), -r2_hidden(2^[_G4478, _G4337, _G4268], _G4268)]
+ (14)  [_G4337=k3_tarski(_G4268), -r2_hidden(_G4478, _G4337), r2_hidden(_G4478, _G4598), r2_hidden(_G4598, _G4268)]
+ (15)  [- (_G4337=k3_tarski(_G4268)), -r2_hidden(3^[_G4337, _G4268], _G4337), -r2_hidden(3^[_G4337, _G4268], 4^[_G4337, _G4268])]
+ (16)  [- (_G4337=k3_tarski(_G4268)), -r2_hidden(3^[_G4337, _G4268], _G4337), -r2_hidden(4^[_G4337, _G4268], _G4268)]
+ (17)  [- (_G4337=k3_tarski(_G4268)), r2_hidden(3^[_G4337, _G4268], _G4337), r2_hidden(3^[_G4337, _G4268], _G5716), r2_hidden(_G5716, _G4268)]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k3_tarski(5^[]), k3_tarski(6^[]))]   (2)  
+1.1  [-r1_tarski(k3_tarski(5^[]), k3_tarski(6^[])), -r2_hidden(1^[k3_tarski(6^[]), k3_tarski(5^[])], k3_tarski(5^[]))]   (9)  substitution:[[_G3875, _G3931], [k3_tarski(5^[]), k3_tarski(6^[])]]
+1.1.1  [r2_hidden(1^[k3_tarski(6^[]), k3_tarski(5^[])], k3_tarski(5^[])), k3_tarski(5^[])=k3_tarski(5^[]), -r2_hidden(1^[k3_tarski(6^[]), k3_tarski(5^[])], 2^[1^[k3_tarski(6^[]), k3_tarski(5^[])], k3_tarski(5^[]), 5^[]])]   (12)  substitution:[[_G4478, _G4337, _G4268], [1^[k3_tarski(6^[]), k3_tarski(5^[])], k3_tarski(5^[]), 5^[]]]
+1.1.1.1  [- (k3_tarski(5^[])=k3_tarski(5^[])), 5^[]=5^[]]   (3)  substitution:[[_G3576, _G3625], [5^[], 5^[]]]
+1.1.1.1.1  [- (5^[]=5^[])]   (4)  substitution:[[_G1576], [5^[]]]
+1.1.1.2  [r2_hidden(1^[k3_tarski(6^[]), k3_tarski(5^[])], 2^[1^[k3_tarski(6^[]), k3_tarski(5^[])], k3_tarski(5^[]), 5^[]]), k3_tarski(6^[])=k3_tarski(6^[]), -r2_hidden(1^[k3_tarski(6^[]), k3_tarski(5^[])], k3_tarski(6^[])), r2_hidden(2^[1^[k3_tarski(6^[]), k3_tarski(5^[])], k3_tarski(5^[]), 5^[]], 6^[])]   (14)  substitution:[[_G4478, _G4598, _G4337, _G4268], [1^[k3_tarski(6^[]), k3_tarski(5^[])], 2^[1^[k3_tarski(6^[]), k3_tarski(5^[])], k3_tarski(5^[]), 5^[]], k3_tarski(6^[]), 6^[]]]
+1.1.1.2.1  [- (k3_tarski(6^[])=k3_tarski(6^[])), 6^[]=6^[]]   (3)  substitution:[[_G3576, _G3625], [6^[], 6^[]]]
+1.1.1.2.1.1  [- (6^[]=6^[])]   (4)  substitution:[[_G1576], [6^[]]]
+1.1.1.2.2  [r2_hidden(1^[k3_tarski(6^[]), k3_tarski(5^[])], k3_tarski(6^[])), -r2_hidden(1^[k3_tarski(6^[]), k3_tarski(5^[])], k3_tarski(6^[])), 1^[k3_tarski(6^[]), k3_tarski(5^[])]=1^[k3_tarski(6^[]), k3_tarski(5^[])], k3_tarski(6^[])=k3_tarski(6^[])]   (7)  substitution:[[_G2358, _G2493, _G2425, _G2562], [1^[k3_tarski(6^[]), k3_tarski(5^[])], k3_tarski(6^[]), 1^[k3_tarski(6^[]), k3_tarski(5^[])], k3_tarski(6^[])]]
+1.1.1.2.2.1  [r2_hidden(1^[k3_tarski(6^[]), k3_tarski(5^[])], k3_tarski(6^[])), -r1_tarski(k3_tarski(5^[]), k3_tarski(6^[]))]   (10)  substitution:[[_G3931, _G3875], [k3_tarski(6^[]), k3_tarski(5^[])]]
+1.1.1.2.2.1.1  [r1_tarski(k3_tarski(5^[]), k3_tarski(6^[]))]   (2)  
+1.1.1.2.2.2  [- (1^[k3_tarski(6^[]), k3_tarski(5^[])]=1^[k3_tarski(6^[]), k3_tarski(5^[])])]   (4)  substitution:[[_G1576], [1^[k3_tarski(6^[]), k3_tarski(5^[])]]]
+1.1.1.2.2.3  [- (k3_tarski(6^[])=k3_tarski(6^[]))]   (4)  substitution:[[_G1576], [k3_tarski(6^[])]]
+1.1.1.2.3  [-r2_hidden(2^[1^[k3_tarski(6^[]), k3_tarski(5^[])], k3_tarski(5^[]), 5^[]], 6^[]), r1_tarski(5^[], 6^[]), r2_hidden(2^[1^[k3_tarski(6^[]), k3_tarski(5^[])], k3_tarski(5^[]), 5^[]], 5^[])]   (11)  substitution:[[_G4045, _G3931, _G3875], [2^[1^[k3_tarski(6^[]), k3_tarski(5^[])], k3_tarski(5^[]), 5^[]], 6^[], 5^[]]]
+1.1.1.2.3.1  [-r1_tarski(5^[], 6^[])]   (1)  
+1.1.1.2.3.2  [-r2_hidden(2^[1^[k3_tarski(6^[]), k3_tarski(5^[])], k3_tarski(5^[]), 5^[]], 5^[]), k3_tarski(5^[])=k3_tarski(5^[]), r2_hidden(1^[k3_tarski(6^[]), k3_tarski(5^[])], k3_tarski(5^[]))]   (13)  substitution:[[_G4478, _G4337, _G4268], [1^[k3_tarski(6^[]), k3_tarski(5^[])], k3_tarski(5^[]), 5^[]]]
+1.1.1.2.3.2.1  [- (k3_tarski(5^[])=k3_tarski(5^[]))]   (4)  substitution:[[_G1576], [k3_tarski(5^[])]]
+1.1.1.2.3.2.2  [-r2_hidden(1^[k3_tarski(6^[]), k3_tarski(5^[])], k3_tarski(5^[]))]   (reduction:1.1)  
+------------------------------------------------------
+End of proof for t77_zfmisc_1

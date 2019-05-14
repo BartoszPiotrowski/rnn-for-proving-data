@@ -1,0 +1,49 @@
+
+t35_intpro_1 is a Theorem
+Start of proof for t35_intpro_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-4^[], r2_hidden(k4_intpro_1(1^[], 2^[]), k8_intpro_1)]
+ (2)  [-4^[], -r2_hidden(k4_intpro_1(2^[], 1^[]), k8_intpro_1)]
+ (3)  [-3^[], r2_hidden(k4_intpro_1(2^[], 1^[]), k8_intpro_1)]
+ (4)  [-3^[], -r2_hidden(k4_intpro_1(1^[], 2^[]), k8_intpro_1)]
+ (5)  [-m1_subset_1(1^[], k1_intpro_1)]
+ (6)  [-m1_subset_1(2^[], k1_intpro_1)]
+ (7)  [3^[], 4^[]]
+ (8)  [m1_subset_1(_G718, k1_intpro_1), m1_subset_1(_G841, k1_intpro_1), r2_hidden(k4_intpro_1(_G718, _G841), k8_intpro_1), -r2_hidden(_G718, k8_intpro_1)]
+ (9)  [m1_subset_1(_G718, k1_intpro_1), m1_subset_1(_G841, k1_intpro_1), r2_hidden(k4_intpro_1(_G718, _G841), k8_intpro_1), -r2_hidden(_G841, k8_intpro_1)]
+ (10)  [m1_subset_1(_G718, k1_intpro_1), m1_subset_1(_G841, k1_intpro_1), -r2_hidden(k4_intpro_1(_G718, _G841), k8_intpro_1), r2_hidden(_G718, k8_intpro_1), r2_hidden(_G841, k8_intpro_1)]
+
+Connection Proof:
+-----------------
+1  [3^[], 4^[]]   (7)  
+1.1  [-3^[], r2_hidden(k4_intpro_1(2^[], 1^[]), k8_intpro_1)]   (3)  
+1.1.1  [-r2_hidden(k4_intpro_1(2^[], 1^[]), k8_intpro_1), m1_subset_1(2^[], k1_intpro_1), m1_subset_1(1^[], k1_intpro_1), r2_hidden(2^[], k8_intpro_1), r2_hidden(1^[], k8_intpro_1)]   (10)  substitution:[[_G718, _G841], [2^[], 1^[]]]
+1.1.1.1  [-m1_subset_1(2^[], k1_intpro_1)]   (6)  
+1.1.1.2  [-m1_subset_1(1^[], k1_intpro_1)]   (5)  
+1.1.1.3  [-r2_hidden(2^[], k8_intpro_1), m1_subset_1(1^[], k1_intpro_1), m1_subset_1(2^[], k1_intpro_1), r2_hidden(k4_intpro_1(1^[], 2^[]), k8_intpro_1)]   (9)  substitution:[[_G841, _G718], [2^[], 1^[]]]
+1.1.1.3.1  [-m1_subset_1(1^[], k1_intpro_1)]   (5)  
+1.1.1.3.2  [-m1_subset_1(2^[], k1_intpro_1)]   (6)  
+1.1.1.3.3  [-r2_hidden(k4_intpro_1(1^[], 2^[]), k8_intpro_1), -3^[]]   (4)  
+1.1.1.3.3.1  [3^[]]   (reduction:1)  
+1.1.1.4  [-r2_hidden(1^[], k8_intpro_1), m1_subset_1(1^[], k1_intpro_1), m1_subset_1(2^[], k1_intpro_1), r2_hidden(k4_intpro_1(1^[], 2^[]), k8_intpro_1)]   (8)  substitution:[[_G718, _G841], [1^[], 2^[]]]
+1.1.1.4.1  [-m1_subset_1(1^[], k1_intpro_1)]   (5)  
+1.1.1.4.2  [-m1_subset_1(2^[], k1_intpro_1)]   (6)  
+1.1.1.4.3  [-r2_hidden(k4_intpro_1(1^[], 2^[]), k8_intpro_1), -3^[]]   (4)  
+1.1.1.4.3.1  [3^[]]   (reduction:1)  
+1.2  [-4^[], r2_hidden(k4_intpro_1(1^[], 2^[]), k8_intpro_1)]   (1)  
+1.2.1  [-r2_hidden(k4_intpro_1(1^[], 2^[]), k8_intpro_1), m1_subset_1(1^[], k1_intpro_1), m1_subset_1(2^[], k1_intpro_1), r2_hidden(1^[], k8_intpro_1), r2_hidden(2^[], k8_intpro_1)]   (10)  substitution:[[_G718, _G841], [1^[], 2^[]]]
+1.2.1.1  [-m1_subset_1(1^[], k1_intpro_1)]   (5)  
+1.2.1.2  [-m1_subset_1(2^[], k1_intpro_1)]   (6)  
+1.2.1.3  [-r2_hidden(1^[], k8_intpro_1), m1_subset_1(2^[], k1_intpro_1), m1_subset_1(1^[], k1_intpro_1), r2_hidden(k4_intpro_1(2^[], 1^[]), k8_intpro_1)]   (9)  substitution:[[_G841, _G718], [1^[], 2^[]]]
+1.2.1.3.1  [-m1_subset_1(2^[], k1_intpro_1)]   (6)  
+1.2.1.3.2  [-m1_subset_1(1^[], k1_intpro_1)]   (5)  
+1.2.1.3.3  [-r2_hidden(k4_intpro_1(2^[], 1^[]), k8_intpro_1), -4^[]]   (2)  
+1.2.1.3.3.1  [4^[]]   (reduction:1)  
+1.2.1.4  [-r2_hidden(2^[], k8_intpro_1), m1_subset_1(2^[], k1_intpro_1), m1_subset_1(1^[], k1_intpro_1), r2_hidden(k4_intpro_1(2^[], 1^[]), k8_intpro_1)]   (8)  substitution:[[_G718, _G841], [2^[], 1^[]]]
+1.2.1.4.1  [-m1_subset_1(2^[], k1_intpro_1)]   (6)  
+1.2.1.4.2  [-m1_subset_1(1^[], k1_intpro_1)]   (5)  
+1.2.1.4.3  [-r2_hidden(k4_intpro_1(2^[], 1^[]), k8_intpro_1), -4^[]]   (2)  
+1.2.1.4.3.1  [4^[]]   (reduction:1)  
+------------------------------------------------------
+End of proof for t35_intpro_1

@@ -1,0 +1,37 @@
+
+t3_modal_1 is a Theorem
+Start of proof for t3_modal_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], k5_numbers)]
+ (2)  [-m1_subset_1(2^[], k5_numbers)]
+ (3)  [-m2_finseq_1(3^[], k5_numbers)]
+ (4)  [1^[]=2^[]]
+ (5)  [-r2_xboole_0(k12_finseq_1(k5_numbers, 1^[]), k8_finseq_1(k5_numbers, k12_finseq_1(k5_numbers, 2^[]), 3^[]))]
+ (6)  [- (k5_numbers=k4_ordinal1)]
+ (7)  [m1_subset_1(_G8021, k5_numbers), m1_subset_1(_G8160, k5_numbers), m2_finseq_1(_G8294, k5_numbers), - (_G8021=_G8160), r3_xboole_0(k12_finseq_1(k5_numbers, _G8021), k8_finseq_1(k5_numbers, k12_finseq_1(k5_numbers, _G8160), _G8294))]
+ (8)  [r2_xboole_0(_G7536, _G7601), -r3_xboole_0(_G7536, _G7601)]
+ (9)  [_G7536=_G7601, -r3_xboole_0(_G7536, _G7601)]
+ (10)  [r2_xboole_0(_G7601, _G7536), -r3_xboole_0(_G7536, _G7601)]
+ (11)  [r3_xboole_0(_G7536, _G7601), -r2_xboole_0(_G7536, _G7601), - (_G7536=_G7601), -r2_xboole_0(_G7601, _G7536)]
+ (12)  [- (k12_finseq_1(_G6840, _G6975)=k12_finseq_1(_G6907, _G7044)), _G6840=_G6907, _G6975=_G7044]
+ (13)  [- (k8_finseq_1(_G5821, _G5992, _G6167)=k8_finseq_1(_G5906, _G6079, _G6256)), _G5821=_G5906, _G5992=_G6079, _G6167=_G6256]
+ (14)  [- (_G2576=_G2576)]
+ (15)  [_G2675=_G2720, - (_G2720=_G2675)]
+ (16)  [- (_G2908=_G3021), _G2908=_G2964, _G2964=_G3021]
+ (17)  [-r3_xboole_0(_G3425, _G3562), r3_xboole_0(_G3358, _G3493), _G3358=_G3425, _G3493=_G3562]
+ (18)  [-m1_subset_1(_G4022, _G4159), m1_subset_1(_G3955, _G4090), _G3955=_G4022, _G4090=_G4159]
+ (19)  [-m2_finseq_1(_G4619, _G4756), m2_finseq_1(_G4552, _G4687), _G4552=_G4619, _G4687=_G4756]
+ (20)  [-r2_xboole_0(_G5207, _G5344), r2_xboole_0(_G5140, _G5275), _G5140=_G5207, _G5275=_G5344]
+
+Connection Proof:
+-----------------
+1  [1^[]=2^[]]   (4)  
+1.1  [- (1^[]=2^[]), m1_subset_1(1^[], k5_numbers), m1_subset_1(2^[], k5_numbers), m2_finseq_1(3^[], k5_numbers), r3_xboole_0(k12_finseq_1(k5_numbers, 1^[]), k8_finseq_1(k5_numbers, k12_finseq_1(k5_numbers, 2^[]), 3^[]))]   (7)  substitution:[[_G8021, _G8160, _G8294], [1^[], 2^[], 3^[]]]
+1.1.1  [-m1_subset_1(1^[], k5_numbers)]   (1)  
+1.1.2  [-m1_subset_1(2^[], k5_numbers)]   (2)  
+1.1.3  [-m2_finseq_1(3^[], k5_numbers)]   (3)  
+1.1.4  [-r3_xboole_0(k12_finseq_1(k5_numbers, 1^[]), k8_finseq_1(k5_numbers, k12_finseq_1(k5_numbers, 2^[]), 3^[])), r2_xboole_0(k12_finseq_1(k5_numbers, 1^[]), k8_finseq_1(k5_numbers, k12_finseq_1(k5_numbers, 2^[]), 3^[]))]   (8)  substitution:[[_G7536, _G7601], [k12_finseq_1(k5_numbers, 1^[]), k8_finseq_1(k5_numbers, k12_finseq_1(k5_numbers, 2^[]), 3^[])]]
+1.1.4.1  [-r2_xboole_0(k12_finseq_1(k5_numbers, 1^[]), k8_finseq_1(k5_numbers, k12_finseq_1(k5_numbers, 2^[]), 3^[]))]   (5)  
+------------------------------------------------------
+End of proof for t3_modal_1

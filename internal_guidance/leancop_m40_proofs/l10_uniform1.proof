@@ -1,0 +1,27 @@
+
+l10_uniform1 is a Theorem
+Start of proof for l10_uniform1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k5_topmetr=k3_pcomps_1(k2_topmetr(k6_numbers, np__1))]
+ (2)  [- (k4_topmetr(k6_numbers, np__1)=k3_pcomps_1(k2_topmetr(k6_numbers, np__1)))]
+ (3)  [- (k5_topmetr=k17_borsuk_1)]
+ (4)  [- (k4_topmetr(k6_numbers, np__1)=k17_borsuk_1)]
+ (5)  [- (_G1080=_G1080)]
+ (6)  [_G1179=_G1224, - (_G1224=_G1179)]
+ (7)  [- (_G1412=_G1525), _G1412=_G1468, _G1468=_G1525]
+ (8)  [- (k4_topmetr(_G1862, _G1997)=k4_topmetr(_G1929, _G2066)), _G1862=_G1929, _G1997=_G2066]
+ (9)  [_G2459=_G2508, - (k3_pcomps_1(_G2459)=k3_pcomps_1(_G2508))]
+ (10)  [- (k2_topmetr(_G2728, _G2863)=k2_topmetr(_G2795, _G2932)), _G2728=_G2795, _G2863=_G2932]
+
+Connection Proof:
+-----------------
+1  [k5_topmetr=k3_pcomps_1(k2_topmetr(k6_numbers, np__1))]   (1)  
+1.1  [- (k5_topmetr=k3_pcomps_1(k2_topmetr(k6_numbers, np__1))), k5_topmetr=k17_borsuk_1, k17_borsuk_1=k3_pcomps_1(k2_topmetr(k6_numbers, np__1))]   (7)  substitution:[[_G1412, _G1525, _G1468], [k5_topmetr, k3_pcomps_1(k2_topmetr(k6_numbers, np__1)), k17_borsuk_1]]
+1.1.1  [- (k5_topmetr=k17_borsuk_1)]   (3)  
+1.1.2  [- (k17_borsuk_1=k3_pcomps_1(k2_topmetr(k6_numbers, np__1))), k17_borsuk_1=k4_topmetr(k6_numbers, np__1), k4_topmetr(k6_numbers, np__1)=k3_pcomps_1(k2_topmetr(k6_numbers, np__1))]   (7)  substitution:[[_G1412, _G1525, _G1468], [k17_borsuk_1, k3_pcomps_1(k2_topmetr(k6_numbers, np__1)), k4_topmetr(k6_numbers, np__1)]]
+1.1.2.1  [- (k17_borsuk_1=k4_topmetr(k6_numbers, np__1)), k4_topmetr(k6_numbers, np__1)=k17_borsuk_1]   (6)  substitution:[[_G1224, _G1179], [k17_borsuk_1, k4_topmetr(k6_numbers, np__1)]]
+1.1.2.1.1  [- (k4_topmetr(k6_numbers, np__1)=k17_borsuk_1)]   (4)  
+1.1.2.2  [- (k4_topmetr(k6_numbers, np__1)=k3_pcomps_1(k2_topmetr(k6_numbers, np__1)))]   (2)  
+------------------------------------------------------
+End of proof for l10_uniform1

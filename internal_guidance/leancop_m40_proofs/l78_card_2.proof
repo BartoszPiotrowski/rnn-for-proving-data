@@ -1,0 +1,34 @@
+
+l78_card_2 is a Theorem
+Start of proof for l78_card_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [np__2=k5_card_1(np__2)]
+ (2)  [-v1_finset_1(k2_tarski(_G4655, _G4696))]
+ (3)  [v1_finset_1(_G4825), - (k5_card_1(k5_card_1(_G4825))=k5_card_1(_G4825))]
+ (4)  [- (k2_tarski(_G5030, _G5079)=k2_xboole_0(k1_tarski(_G5030), k1_tarski(_G5079)))]
+ (5)  [- (_G5299=_G5351), - (k5_card_1(k2_tarski(_G5299, _G5351))=np__2)]
+ (6)  [-v1_finset_1(_G2580), _G2531=_G2580, v1_finset_1(_G2531)]
+ (7)  [- (_G1758=_G1758)]
+ (8)  [_G1857=_G1902, - (_G1902=_G1857)]
+ (9)  [- (_G2090=_G2203), _G2090=_G2146, _G2146=_G2203]
+ (10)  [- (k2_xboole_0(_G2830, _G2965)=k2_xboole_0(_G2897, _G3034)), _G2830=_G2897, _G2965=_G3034]
+ (11)  [_G3427=_G3476, - (k1_tarski(_G3427)=k1_tarski(_G3476))]
+ (12)  [_G4293=_G4342, - (k5_card_1(_G4293)=k5_card_1(_G4342))]
+ (13)  [- (k2_tarski(_G3705, _G3840)=k2_tarski(_G3772, _G3909)), _G3705=_G3772, _G3840=_G3909]
+
+Connection Proof:
+-----------------
+1  [np__2=k5_card_1(np__2)]   (1)  
+1.1  [- (np__2=k5_card_1(np__2)), - (k5_card_1(k2_tarski(np__2, k5_card_1(np__2)))=np__2)]   (5)  substitution:[[_G5299, _G5351], [np__2, k5_card_1(np__2)]]
+1.1.1  [k5_card_1(k2_tarski(np__2, k5_card_1(np__2)))=np__2, - (k5_card_1(np__2)=np__2), k5_card_1(np__2)=k5_card_1(k2_tarski(np__2, k5_card_1(np__2)))]   (9)  substitution:[[_G2146, _G2203, _G2090], [k5_card_1(k2_tarski(np__2, k5_card_1(np__2))), np__2, k5_card_1(np__2)]]
+1.1.1.1  [k5_card_1(np__2)=np__2, - (np__2=k5_card_1(np__2))]   (8)  substitution:[[_G1857, _G1902], [k5_card_1(np__2), np__2]]
+1.1.1.1.1  [np__2=k5_card_1(np__2)]   (1)  
+1.1.1.2  [- (k5_card_1(np__2)=k5_card_1(k2_tarski(np__2, k5_card_1(np__2)))), k5_card_1(np__2)=k5_card_1(k5_card_1(k2_tarski(np__2, k5_card_1(np__2)))), k5_card_1(k5_card_1(k2_tarski(np__2, k5_card_1(np__2))))=k5_card_1(k2_tarski(np__2, k5_card_1(np__2)))]   (9)  substitution:[[_G2090, _G2203, _G2146], [k5_card_1(np__2), k5_card_1(k2_tarski(np__2, k5_card_1(np__2))), k5_card_1(k5_card_1(k2_tarski(np__2, k5_card_1(np__2))))]]
+1.1.1.2.1  [- (k5_card_1(np__2)=k5_card_1(k5_card_1(k2_tarski(np__2, k5_card_1(np__2))))), k5_card_1(k5_card_1(k2_tarski(np__2, k5_card_1(np__2))))=k5_card_1(np__2)]   (8)  substitution:[[_G1902, _G1857], [k5_card_1(np__2), k5_card_1(k5_card_1(k2_tarski(np__2, k5_card_1(np__2))))]]
+1.1.1.2.1.1  [- (k5_card_1(k5_card_1(k2_tarski(np__2, k5_card_1(np__2))))=k5_card_1(np__2)), k5_card_1(k2_tarski(np__2, k5_card_1(np__2)))=np__2]   (12)  substitution:[[_G4293, _G4342], [k5_card_1(k2_tarski(np__2, k5_card_1(np__2))), np__2]]
+1.1.1.2.1.1.1  [- (k5_card_1(k2_tarski(np__2, k5_card_1(np__2)))=np__2)]   (reduction:1.1)  
+1.1.1.2.2  [- (k5_card_1(k5_card_1(k2_tarski(np__2, k5_card_1(np__2))))=k5_card_1(k2_tarski(np__2, k5_card_1(np__2)))), v1_finset_1(k2_tarski(np__2, k5_card_1(np__2)))]   (3)  substitution:[[_G4825], [k2_tarski(np__2, k5_card_1(np__2))]]
+1.1.1.2.2.1  [-v1_finset_1(k2_tarski(np__2, k5_card_1(np__2)))]   (2)  substitution:[[_G4655, _G4696], [np__2, k5_card_1(np__2)]]
+------------------------------------------------------
+End of proof for l78_card_2

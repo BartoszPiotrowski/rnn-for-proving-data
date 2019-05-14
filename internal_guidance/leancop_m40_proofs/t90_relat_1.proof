@@ -1,0 +1,24 @@
+
+t90_relat_1 is a Theorem
+Start of proof for t90_relat_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(2^[])]
+ (2)  [-v1_relat_1(3^[])]
+ (3)  [r1_tarski(k3_relat_1(k6_relat_1(1^[], 2^[]), 3^[]), k3_relat_1(2^[], 3^[]))]
+ (4)  [v1_relat_1(_G968), -v1_relat_1(k6_relat_1(_G922, _G968))]
+ (5)  [v1_relat_1(_G1790), -r1_tarski(k6_relat_1(_G1743, _G1790), _G1790)]
+ (6)  [v1_relat_1(_G1155), v1_relat_1(_G1258), v1_relat_1(_G1357), r1_tarski(_G1155, _G1258), -r1_tarski(k3_relat_1(_G1155, _G1357), k3_relat_1(_G1258, _G1357))]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k3_relat_1(k6_relat_1(1^[], 2^[]), 3^[]), k3_relat_1(2^[], 3^[]))]   (3)  
+1.1  [-r1_tarski(k3_relat_1(k6_relat_1(1^[], 2^[]), 3^[]), k3_relat_1(2^[], 3^[])), v1_relat_1(k6_relat_1(1^[], 2^[])), v1_relat_1(2^[]), v1_relat_1(3^[]), r1_tarski(k6_relat_1(1^[], 2^[]), 2^[])]   (6)  substitution:[[_G1155, _G1357, _G1258], [k6_relat_1(1^[], 2^[]), 3^[], 2^[]]]
+1.1.1  [-v1_relat_1(k6_relat_1(1^[], 2^[])), v1_relat_1(2^[])]   (4)  substitution:[[_G922, _G968], [1^[], 2^[]]]
+1.1.1.1  [-v1_relat_1(2^[])]   (1)  
+1.1.2  [-v1_relat_1(2^[])]   (1)  
+1.1.3  [-v1_relat_1(3^[])]   (2)  
+1.1.4  [-r1_tarski(k6_relat_1(1^[], 2^[]), 2^[]), v1_relat_1(2^[])]   (5)  substitution:[[_G1743, _G1790], [1^[], 2^[]]]
+1.1.4.1  [-v1_relat_1(2^[])]   (1)  
+------------------------------------------------------
+End of proof for t90_relat_1

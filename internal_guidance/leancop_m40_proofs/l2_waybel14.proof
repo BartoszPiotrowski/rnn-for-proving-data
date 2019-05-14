@@ -1,0 +1,42 @@
+
+l2_waybel14 is a Theorem
+Start of proof for l2_waybel14
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-5^[], r1_tarski(2^[], k3_subset_1(u1_struct_0(1^[]), 3^[]))]
+ (2)  [-5^[], -r1_tarski(3^[], k3_subset_1(u1_struct_0(1^[]), 2^[]))]
+ (3)  [-4^[], r1_tarski(3^[], k3_subset_1(u1_struct_0(1^[]), 2^[]))]
+ (4)  [-4^[], -r1_tarski(2^[], k3_subset_1(u1_struct_0(1^[]), 3^[]))]
+ (5)  [-l1_struct_0(1^[])]
+ (6)  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]
+ (7)  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(1^[])))]
+ (8)  [4^[], 5^[]]
+ (9)  [r1_xboole_0(_G867, _G912), -r1_xboole_0(_G912, _G867)]
+ (10)  [m1_subset_1(_G1169, k1_zfmisc_1(_G1100)), m1_subset_1(_G1310, k1_zfmisc_1(_G1100)), r1_xboole_0(_G1169, _G1310), -r1_tarski(_G1169, k3_subset_1(_G1100, _G1310))]
+ (11)  [m1_subset_1(_G1169, k1_zfmisc_1(_G1100)), m1_subset_1(_G1310, k1_zfmisc_1(_G1100)), -r1_xboole_0(_G1169, _G1310), r1_tarski(_G1169, k3_subset_1(_G1100, _G1310))]
+
+Connection Proof:
+-----------------
+1  [4^[], 5^[]]   (8)  
+1.1  [-4^[], r1_tarski(3^[], k3_subset_1(u1_struct_0(1^[]), 2^[]))]   (3)  
+1.1.1  [-r1_tarski(3^[], k3_subset_1(u1_struct_0(1^[]), 2^[])), m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(1^[]))), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[]))), r1_xboole_0(3^[], 2^[])]   (10)  substitution:[[_G1169, _G1100, _G1310], [3^[], u1_struct_0(1^[]), 2^[]]]
+1.1.1.1  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (7)  
+1.1.1.2  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (6)  
+1.1.1.3  [-r1_xboole_0(3^[], 2^[]), r1_xboole_0(2^[], 3^[])]   (9)  substitution:[[_G912, _G867], [3^[], 2^[]]]
+1.1.1.3.1  [-r1_xboole_0(2^[], 3^[]), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[]))), m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(1^[]))), r1_tarski(2^[], k3_subset_1(u1_struct_0(1^[]), 3^[]))]   (11)  substitution:[[_G1169, _G1310, _G1100], [2^[], 3^[], u1_struct_0(1^[])]]
+1.1.1.3.1.1  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (6)  
+1.1.1.3.1.2  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (7)  
+1.1.1.3.1.3  [-r1_tarski(2^[], k3_subset_1(u1_struct_0(1^[]), 3^[])), -4^[]]   (4)  
+1.1.1.3.1.3.1  [4^[]]   (reduction:1)  
+1.2  [-5^[], r1_tarski(2^[], k3_subset_1(u1_struct_0(1^[]), 3^[]))]   (1)  
+1.2.1  [-r1_tarski(2^[], k3_subset_1(u1_struct_0(1^[]), 3^[])), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[]))), m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(1^[]))), r1_xboole_0(2^[], 3^[])]   (10)  substitution:[[_G1169, _G1100, _G1310], [2^[], u1_struct_0(1^[]), 3^[]]]
+1.2.1.1  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (6)  
+1.2.1.2  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (7)  
+1.2.1.3  [-r1_xboole_0(2^[], 3^[]), r1_xboole_0(3^[], 2^[])]   (9)  substitution:[[_G912, _G867], [2^[], 3^[]]]
+1.2.1.3.1  [-r1_xboole_0(3^[], 2^[]), m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(1^[]))), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[]))), r1_tarski(3^[], k3_subset_1(u1_struct_0(1^[]), 2^[]))]   (11)  substitution:[[_G1169, _G1310, _G1100], [3^[], 2^[], u1_struct_0(1^[])]]
+1.2.1.3.1.1  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (7)  
+1.2.1.3.1.2  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (6)  
+1.2.1.3.1.3  [-r1_tarski(3^[], k3_subset_1(u1_struct_0(1^[]), 2^[])), -5^[]]   (2)  
+1.2.1.3.1.3.1  [5^[]]   (reduction:1)  
+------------------------------------------------------
+End of proof for l2_waybel14

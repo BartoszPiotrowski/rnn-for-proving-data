@@ -1,0 +1,52 @@
+
+t20_topdim_1 is a Theorem
+Start of proof for t20_topdim_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v2_pre_topc(1^[])]
+ (2)  [-v3_topdim_1(1^[])]
+ (3)  [-l1_pre_topc(1^[])]
+ (4)  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]
+ (5)  [r1_xxreal_0(k2_topdim_1(1^[], 2^[]), k4_topdim_1(1^[]))]
+ (6)  [-v1_topdim_1(_G9148, _G8946), m1_subset_1(_G9148, k1_zfmisc_1(u1_struct_0(_G8946))), v2_pre_topc(_G8946), v3_topdim_1(_G8946), l1_pre_topc(_G8946)]
+ (7)  [l1_pre_topc(_G9398), v2_pre_topc(_G9398), -v3_topdim_1(k1_pre_topc(_G9398, _G9564)), v1_topdim_1(_G9564, _G9398), m1_subset_1(_G9564, k1_zfmisc_1(u1_struct_0(_G9398)))]
+ (8)  [l1_pre_topc(_G9398), v2_pre_topc(_G9398), - (k4_topdim_1(k1_pre_topc(_G9398, _G9564))=k2_topdim_1(_G9398, _G9564)), v1_topdim_1(_G9564, _G9398), m1_subset_1(_G9564, k1_zfmisc_1(u1_struct_0(_G9398)))]
+ (9)  [-v3_topdim_1(k1_pre_topc(_G10089, _G10306)), m1_subset_1(_G10306, k1_zfmisc_1(u1_struct_0(_G10089))), v2_pre_topc(_G10089), v3_topdim_1(_G10089), l1_pre_topc(_G10089)]
+ (10)  [-r1_xxreal_0(k4_topdim_1(k1_pre_topc(_G10089, _G10306)), k4_topdim_1(_G10089)), m1_subset_1(_G10306, k1_zfmisc_1(u1_struct_0(_G10089))), v2_pre_topc(_G10089), v3_topdim_1(_G10089), l1_pre_topc(_G10089)]
+ (11)  [- (k1_pre_topc(_G6822, _G6957)=k1_pre_topc(_G6889, _G7026)), _G6822=_G6889, _G6957=_G7026]
+ (12)  [_G7419=_G7468, - (k1_zfmisc_1(_G7419)=k1_zfmisc_1(_G7468))]
+ (13)  [_G7697=_G7746, - (u1_struct_0(_G7697)=u1_struct_0(_G7746))]
+ (14)  [_G8563=_G8612, - (k4_topdim_1(_G8563)=k4_topdim_1(_G8612))]
+ (15)  [- (k2_topdim_1(_G7975, _G8110)=k2_topdim_1(_G8042, _G8179)), _G7975=_G8042, _G8110=_G8179]
+ (16)  [- (_G3298=_G3298)]
+ (17)  [_G3397=_G3442, - (_G3442=_G3397)]
+ (18)  [- (_G3630=_G3743), _G3630=_G3686, _G3686=_G3743]
+ (19)  [-v1_topdim_1(_G4147, _G4284), v1_topdim_1(_G4080, _G4215), _G4080=_G4147, _G4215=_G4284]
+ (20)  [-v2_pre_topc(_G4726), _G4677=_G4726, v2_pre_topc(_G4677)]
+ (21)  [-v3_topdim_1(_G5004), _G4955=_G5004, v3_topdim_1(_G4955)]
+ (22)  [-l1_pre_topc(_G5282), _G5233=_G5282, l1_pre_topc(_G5233)]
+ (23)  [-m1_subset_1(_G5578, _G5715), m1_subset_1(_G5511, _G5646), _G5511=_G5578, _G5646=_G5715]
+ (24)  [-r1_xxreal_0(_G6166, _G6303), r1_xxreal_0(_G6099, _G6234), _G6099=_G6166, _G6234=_G6303]
+
+Connection Proof:
+-----------------
+1  [r1_xxreal_0(k2_topdim_1(1^[], 2^[]), k4_topdim_1(1^[]))]   (5)  
+1.1  [-r1_xxreal_0(k2_topdim_1(1^[], 2^[]), k4_topdim_1(1^[])), r1_xxreal_0(k4_topdim_1(k1_pre_topc(1^[], 2^[])), k4_topdim_1(1^[])), k4_topdim_1(k1_pre_topc(1^[], 2^[]))=k2_topdim_1(1^[], 2^[]), k4_topdim_1(1^[])=k4_topdim_1(1^[])]   (24)  substitution:[[_G6166, _G6303, _G6099, _G6234], [k2_topdim_1(1^[], 2^[]), k4_topdim_1(1^[]), k4_topdim_1(k1_pre_topc(1^[], 2^[])), k4_topdim_1(1^[])]]
+1.1.1  [-r1_xxreal_0(k4_topdim_1(k1_pre_topc(1^[], 2^[])), k4_topdim_1(1^[])), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[]))), v2_pre_topc(1^[]), v3_topdim_1(1^[]), l1_pre_topc(1^[])]   (10)  substitution:[[_G10089, _G10306], [1^[], 2^[]]]
+1.1.1.1  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (4)  
+1.1.1.2  [-v2_pre_topc(1^[])]   (1)  
+1.1.1.3  [-v3_topdim_1(1^[])]   (2)  
+1.1.1.4  [-l1_pre_topc(1^[])]   (3)  
+1.1.2  [- (k4_topdim_1(k1_pre_topc(1^[], 2^[]))=k2_topdim_1(1^[], 2^[])), l1_pre_topc(1^[]), v2_pre_topc(1^[]), v1_topdim_1(2^[], 1^[]), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (8)  substitution:[[_G9398, _G9564], [1^[], 2^[]]]
+1.1.2.1  [-l1_pre_topc(1^[])]   (3)  
+1.1.2.2  [-v2_pre_topc(1^[])]   (1)  
+1.1.2.3  [-v1_topdim_1(2^[], 1^[]), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[]))), v2_pre_topc(1^[]), v3_topdim_1(1^[]), l1_pre_topc(1^[])]   (6)  substitution:[[_G9148, _G8946], [2^[], 1^[]]]
+1.1.2.3.1  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (4)  
+1.1.2.3.2  [-v2_pre_topc(1^[])]   (1)  
+1.1.2.3.3  [-v3_topdim_1(1^[])]   (2)  
+1.1.2.3.4  [-l1_pre_topc(1^[])]   (3)  
+1.1.2.4  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (4)  
+1.1.3  [- (k4_topdim_1(1^[])=k4_topdim_1(1^[])), 1^[]=1^[]]   (14)  substitution:[[_G8563, _G8612], [1^[], 1^[]]]
+1.1.3.1  [- (1^[]=1^[])]   (16)  substitution:[[_G3298], [1^[]]]
+------------------------------------------------------
+End of proof for t20_topdim_1

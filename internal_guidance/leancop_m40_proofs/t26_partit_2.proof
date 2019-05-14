@@ -1,0 +1,40 @@
+
+t26_partit_2 is a Theorem
+Start of proof for t26_partit_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v1_xboole_0(7^[])]
+ (2)  [v1_xboole_0(8^[])]
+ (3)  [-m1_subset_1(9^[], k1_zfmisc_1(k2_zfmisc_1(7^[], 7^[])))]
+ (4)  [-v8_relat_2(9^[])]
+ (5)  [r8_relat_2(9^[], 8^[])]
+ (6)  [m1_subset_1(_G1322, k1_zfmisc_1(k2_zfmisc_1(_G1213, _G1267))), -v1_relat_1(_G1322)]
+ (7)  [v1_relat_1(_G2783), -v8_relat_2(_G2783), -r2_hidden(k4_tarski(4^[_G2783], 5^[_G2783]), _G2783)]
+ (8)  [v1_relat_1(_G2783), -v8_relat_2(_G2783), -r2_hidden(k4_tarski(5^[_G2783], 6^[_G2783]), _G2783)]
+ (9)  [v1_relat_1(_G2783), -v8_relat_2(_G2783), r2_hidden(k4_tarski(4^[_G2783], 6^[_G2783]), _G2783)]
+ (10)  [v1_relat_1(_G2783), v8_relat_2(_G2783), -r2_hidden(k4_tarski(_G2927, _G3070), _G2783), r2_hidden(k4_tarski(_G2927, _G2998), _G2783), r2_hidden(k4_tarski(_G2998, _G3070), _G2783)]
+ (11)  [v1_relat_1(_G1565), -r8_relat_2(_G1565, _G1701), -r2_hidden(1^[_G1701, _G1565], _G1701)]
+ (12)  [v1_relat_1(_G1565), -r8_relat_2(_G1565, _G1701), -r2_hidden(2^[_G1701, _G1565], _G1701)]
+ (13)  [v1_relat_1(_G1565), -r8_relat_2(_G1565, _G1701), -r2_hidden(3^[_G1701, _G1565], _G1701)]
+ (14)  [v1_relat_1(_G1565), -r8_relat_2(_G1565, _G1701), -r2_hidden(k4_tarski(1^[_G1701, _G1565], 2^[_G1701, _G1565]), _G1565)]
+ (15)  [v1_relat_1(_G1565), -r8_relat_2(_G1565, _G1701), -r2_hidden(k4_tarski(2^[_G1701, _G1565], 3^[_G1701, _G1565]), _G1565)]
+ (16)  [v1_relat_1(_G1565), -r8_relat_2(_G1565, _G1701), r2_hidden(k4_tarski(1^[_G1701, _G1565], 3^[_G1701, _G1565]), _G1565)]
+ (17)  [v1_relat_1(_G1565), r8_relat_2(_G1565, _G1701), -r2_hidden(k4_tarski(_G1858, _G2049), _G1565), r2_hidden(_G1858, _G1701), r2_hidden(_G1953, _G1701), r2_hidden(_G2049, _G1701), r2_hidden(k4_tarski(_G1858, _G1953), _G1565), r2_hidden(k4_tarski(_G1953, _G2049), _G1565)]
+
+Connection Proof:
+-----------------
+1  [r8_relat_2(9^[], 8^[])]   (5)  
+1.1  [-r8_relat_2(9^[], 8^[]), v1_relat_1(9^[]), -r2_hidden(k4_tarski(1^[8^[], 9^[]], 2^[8^[], 9^[]]), 9^[])]   (14)  substitution:[[_G1565, _G1701], [9^[], 8^[]]]
+1.1.1  [-v1_relat_1(9^[]), m1_subset_1(9^[], k1_zfmisc_1(k2_zfmisc_1(7^[], 7^[])))]   (6)  substitution:[[_G1322, _G1213, _G1267], [9^[], 7^[], 7^[]]]
+1.1.1.1  [-m1_subset_1(9^[], k1_zfmisc_1(k2_zfmisc_1(7^[], 7^[])))]   (3)  
+1.1.2  [r2_hidden(k4_tarski(1^[8^[], 9^[]], 2^[8^[], 9^[]]), 9^[]), v1_relat_1(9^[]), v8_relat_2(9^[]), -r2_hidden(k4_tarski(1^[8^[], 9^[]], 3^[8^[], 9^[]]), 9^[]), r2_hidden(k4_tarski(2^[8^[], 9^[]], 3^[8^[], 9^[]]), 9^[])]   (10)  substitution:[[_G2927, _G2998, _G2783, _G3070], [1^[8^[], 9^[]], 2^[8^[], 9^[]], 9^[], 3^[8^[], 9^[]]]]
+1.1.2.1  [-v1_relat_1(9^[])]   (lemmata:1.1)  
+1.1.2.2  [-v8_relat_2(9^[])]   (4)  
+1.1.2.3  [r2_hidden(k4_tarski(1^[8^[], 9^[]], 3^[8^[], 9^[]]), 9^[]), v1_relat_1(9^[]), -r8_relat_2(9^[], 8^[])]   (16)  substitution:[[_G1701, _G1565], [8^[], 9^[]]]
+1.1.2.3.1  [-v1_relat_1(9^[])]   (lemmata:1.1.2)  
+1.1.2.3.2  [r8_relat_2(9^[], 8^[])]   (5)  
+1.1.2.4  [-r2_hidden(k4_tarski(2^[8^[], 9^[]], 3^[8^[], 9^[]]), 9^[]), v1_relat_1(9^[]), -r8_relat_2(9^[], 8^[])]   (15)  substitution:[[_G1701, _G1565], [8^[], 9^[]]]
+1.1.2.4.1  [-v1_relat_1(9^[])]   (lemmata:1.1.2)  
+1.1.2.4.2  [r8_relat_2(9^[], 8^[])]   (5)  
+------------------------------------------------------
+End of proof for t26_partit_2

@@ -1,0 +1,27 @@
+
+l9_modelc_3 is a Theorem
+Start of proof for l9_modelc_3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_modelc_2(1^[])]
+ (2)  [-m2_finseq_1(1^[], k5_numbers)]
+ (3)  [-v1_modelc_2(2^[])]
+ (4)  [-m2_finseq_1(2^[], k5_numbers)]
+ (5)  [-r2_modelc_2(1^[], 2^[])]
+ (6)  [m1_subset_1(k1_tarski(1^[]), k1_zfmisc_1(k13_modelc_2(2^[])))]
+ (7)  [r2_hidden(_G876, _G925), -m1_subset_1(k1_tarski(_G876), k1_zfmisc_1(_G925))]
+ (8)  [m2_finseq_1(_G1145, k5_numbers), v1_modelc_2(_G1145), m2_finseq_1(_G1324, k5_numbers), v1_modelc_2(_G1324), r2_hidden(_G1145, k13_modelc_2(_G1324)), -r2_modelc_2(_G1145, _G1324)]
+ (9)  [m2_finseq_1(_G1145, k5_numbers), v1_modelc_2(_G1145), m2_finseq_1(_G1324, k5_numbers), v1_modelc_2(_G1324), -r2_hidden(_G1145, k13_modelc_2(_G1324)), r2_modelc_2(_G1145, _G1324)]
+
+Connection Proof:
+-----------------
+1  [m1_subset_1(k1_tarski(1^[]), k1_zfmisc_1(k13_modelc_2(2^[])))]   (6)  
+1.1  [-m1_subset_1(k1_tarski(1^[]), k1_zfmisc_1(k13_modelc_2(2^[]))), r2_hidden(1^[], k13_modelc_2(2^[]))]   (7)  substitution:[[_G876, _G925], [1^[], k13_modelc_2(2^[])]]
+1.1.1  [-r2_hidden(1^[], k13_modelc_2(2^[])), m2_finseq_1(1^[], k5_numbers), v1_modelc_2(1^[]), m2_finseq_1(2^[], k5_numbers), v1_modelc_2(2^[]), r2_modelc_2(1^[], 2^[])]   (9)  substitution:[[_G1145, _G1324], [1^[], 2^[]]]
+1.1.1.1  [-m2_finseq_1(1^[], k5_numbers)]   (2)  
+1.1.1.2  [-v1_modelc_2(1^[])]   (1)  
+1.1.1.3  [-m2_finseq_1(2^[], k5_numbers)]   (4)  
+1.1.1.4  [-v1_modelc_2(2^[])]   (3)  
+1.1.1.5  [-r2_modelc_2(1^[], 2^[])]   (5)  
+------------------------------------------------------
+End of proof for l9_modelc_3

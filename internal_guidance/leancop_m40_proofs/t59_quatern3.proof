@@ -1,0 +1,38 @@
+
+t59_quatern3 is a Theorem
+Start of proof for t59_quatern3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_quaterni(1^[])]
+ (2)  [-v1_quaterni(2^[])]
+ (3)  [-v1_quaterni(3^[])]
+ (4)  [k28_quaterni(k29_quaterni(k29_quaterni(1^[], 2^[]), 3^[]))=k26_quaterni(k26_quaterni(k28_quaterni(1^[]), 2^[]), 3^[])]
+ (5)  [m1_subset_1(_G5324, k1_quaterni), -v1_quaterni(_G5324)]
+ (6)  [-m1_subset_1(k29_quaterni(_G5481, _G5533), k1_quaterni), v1_quaterni(_G5481), v1_quaterni(_G5533)]
+ (7)  [v1_quaterni(_G5795), v1_quaterni(_G5886), - (k28_quaterni(k29_quaterni(_G5795, _G5886))=k26_quaterni(k28_quaterni(_G5795), _G5886))]
+ (8)  [- (k29_quaterni(_G3798, _G3933)=k29_quaterni(_G3865, _G4002)), _G3798=_G3865, _G3933=_G4002]
+ (9)  [_G4983=_G5032, - (k28_quaterni(_G4983)=k28_quaterni(_G5032))]
+ (10)  [- (k26_quaterni(_G4395, _G4530)=k26_quaterni(_G4462, _G4599)), _G4395=_G4462, _G4530=_G4599]
+ (11)  [- (_G2108=_G2108)]
+ (12)  [_G2207=_G2252, - (_G2252=_G2207)]
+ (13)  [- (_G2440=_G2553), _G2440=_G2496, _G2496=_G2553]
+ (14)  [-v1_quaterni(_G3527), _G3478=_G3527, v1_quaterni(_G3478)]
+ (15)  [-m1_subset_1(_G2957, _G3094), m1_subset_1(_G2890, _G3025), _G2890=_G2957, _G3025=_G3094]
+
+Connection Proof:
+-----------------
+1  [k28_quaterni(k29_quaterni(k29_quaterni(1^[], 2^[]), 3^[]))=k26_quaterni(k26_quaterni(k28_quaterni(1^[]), 2^[]), 3^[])]   (4)  
+1.1  [- (k28_quaterni(k29_quaterni(k29_quaterni(1^[], 2^[]), 3^[]))=k26_quaterni(k26_quaterni(k28_quaterni(1^[]), 2^[]), 3^[])), k28_quaterni(k29_quaterni(k29_quaterni(1^[], 2^[]), 3^[]))=k26_quaterni(k28_quaterni(k29_quaterni(1^[], 2^[])), 3^[]), k26_quaterni(k28_quaterni(k29_quaterni(1^[], 2^[])), 3^[])=k26_quaterni(k26_quaterni(k28_quaterni(1^[]), 2^[]), 3^[])]   (13)  substitution:[[_G2440, _G2553, _G2496], [k28_quaterni(k29_quaterni(k29_quaterni(1^[], 2^[]), 3^[])), k26_quaterni(k26_quaterni(k28_quaterni(1^[]), 2^[]), 3^[]), k26_quaterni(k28_quaterni(k29_quaterni(1^[], 2^[])), 3^[])]]
+1.1.1  [- (k28_quaterni(k29_quaterni(k29_quaterni(1^[], 2^[]), 3^[]))=k26_quaterni(k28_quaterni(k29_quaterni(1^[], 2^[])), 3^[])), v1_quaterni(k29_quaterni(1^[], 2^[])), v1_quaterni(3^[])]   (7)  substitution:[[_G5795, _G5886], [k29_quaterni(1^[], 2^[]), 3^[]]]
+1.1.1.1  [-v1_quaterni(k29_quaterni(1^[], 2^[])), m1_subset_1(k29_quaterni(1^[], 2^[]), k1_quaterni)]   (5)  substitution:[[_G5324], [k29_quaterni(1^[], 2^[])]]
+1.1.1.1.1  [-m1_subset_1(k29_quaterni(1^[], 2^[]), k1_quaterni), v1_quaterni(1^[]), v1_quaterni(2^[])]   (6)  substitution:[[_G5481, _G5533], [1^[], 2^[]]]
+1.1.1.1.1.1  [-v1_quaterni(1^[])]   (1)  
+1.1.1.1.1.2  [-v1_quaterni(2^[])]   (2)  
+1.1.1.2  [-v1_quaterni(3^[])]   (3)  
+1.1.2  [- (k26_quaterni(k28_quaterni(k29_quaterni(1^[], 2^[])), 3^[])=k26_quaterni(k26_quaterni(k28_quaterni(1^[]), 2^[]), 3^[])), k28_quaterni(k29_quaterni(1^[], 2^[]))=k26_quaterni(k28_quaterni(1^[]), 2^[]), 3^[]=3^[]]   (10)  substitution:[[_G4395, _G4530, _G4462, _G4599], [k28_quaterni(k29_quaterni(1^[], 2^[])), 3^[], k26_quaterni(k28_quaterni(1^[]), 2^[]), 3^[]]]
+1.1.2.1  [- (k28_quaterni(k29_quaterni(1^[], 2^[]))=k26_quaterni(k28_quaterni(1^[]), 2^[])), v1_quaterni(1^[]), v1_quaterni(2^[])]   (7)  substitution:[[_G5795, _G5886], [1^[], 2^[]]]
+1.1.2.1.1  [-v1_quaterni(1^[])]   (1)  
+1.1.2.1.2  [-v1_quaterni(2^[])]   (2)  
+1.1.2.2  [- (3^[]=3^[])]   (11)  substitution:[[_G2108], [3^[]]]
+------------------------------------------------------
+End of proof for t59_quatern3

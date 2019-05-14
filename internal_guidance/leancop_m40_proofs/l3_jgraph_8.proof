@@ -1,0 +1,59 @@
+
+l3_jgraph_8 is a Theorem
+Start of proof for l3_jgraph_8
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m2_finseq_1(2^[], k1_numbers)]
+ (2)  [v5_valued_0(2^[])]
+ (3)  [m1_subset_1(_G14647, k5_numbers), r1_xxreal_0(np__1, _G14647), -r1_xxreal_0(k3_finseq_1(2^[]), _G14647), r1_xxreal_0(k7_partfun1(k1_numbers, 2^[], k2_nat_1(_G14647, np__1)), k7_partfun1(k1_numbers, 2^[], _G14647))]
+ (4)  [v1_xboole_0(_G10345), m1_subset_1(_G10428, k1_zfmisc_1(_G10345)), -v1_xboole_0(_G10428)]
+ (5)  [-m1_subset_1(k5_numbers, k1_zfmisc_1(k1_numbers))]
+ (6)  [v1_xboole_0(k4_ordinal1)]
+ (7)  [-v3_ordinal1(k4_ordinal1)]
+ (8)  [m2_finseq_1(_G10806, k1_numbers), -m2_subset_1(1^[_G10806], k1_numbers, k5_numbers), -v5_valued_0(_G10806)]
+ (9)  [m2_finseq_1(_G10806, k1_numbers), -r1_xxreal_0(np__1, 1^[_G10806]), -v5_valued_0(_G10806)]
+ (10)  [m2_finseq_1(_G10806, k1_numbers), r1_xxreal_0(k3_finseq_1(_G10806), 1^[_G10806]), -v5_valued_0(_G10806)]
+ (11)  [m2_finseq_1(_G10806, k1_numbers), -r1_xxreal_0(k7_partfun1(k1_numbers, _G10806, k2_nat_1(1^[_G10806], np__1)), k7_partfun1(k1_numbers, _G10806, 1^[_G10806])), -v5_valued_0(_G10806)]
+ (12)  [- (k5_numbers=k4_ordinal1)]
+ (13)  [m1_subset_1(_G11815, k1_zfmisc_1(_G11742)), -v1_xboole_0(_G11815), -v1_xboole_0(_G11742), m2_subset_1(_G12094, _G11742, _G11815), -m1_subset_1(_G12094, _G11815)]
+ (14)  [m1_subset_1(_G11815, k1_zfmisc_1(_G11742)), -v1_xboole_0(_G11815), -v1_xboole_0(_G11742), -m2_subset_1(_G12094, _G11742, _G11815), m1_subset_1(_G12094, _G11815)]
+ (15)  [_G8089=_G8138, - (k1_zfmisc_1(_G8089)=k1_zfmisc_1(_G8138))]
+ (16)  [_G8367=_G8416, - (k3_finseq_1(_G8367)=k3_finseq_1(_G8416))]
+ (17)  [- (k2_nat_1(_G8645, _G8780)=k2_nat_1(_G8712, _G8849)), _G8645=_G8712, _G8780=_G8849]
+ (18)  [- (k7_partfun1(_G9233, _G9404, _G9579)=k7_partfun1(_G9318, _G9491, _G9668)), _G9233=_G9318, _G9404=_G9491, _G9579=_G9668]
+ (19)  [- (_G3516=_G3516)]
+ (20)  [_G3615=_G3660, - (_G3660=_G3615)]
+ (21)  [- (_G3848=_G3961), _G3848=_G3904, _G3904=_G3961]
+ (22)  [-v3_ordinal1(_G4347), _G4298=_G4347, v3_ordinal1(_G4298)]
+ (23)  [-v1_xboole_0(_G4625), _G4576=_G4625, v1_xboole_0(_G4576)]
+ (24)  [-m2_subset_1(_G4939, _G5112, _G5289), m2_subset_1(_G4854, _G5025, _G5200), _G4854=_G4939, _G5025=_G5112, _G5200=_G5289]
+ (25)  [-m2_finseq_1(_G5949, _G6086), m2_finseq_1(_G5882, _G6017), _G5882=_G5949, _G6017=_G6086]
+ (26)  [-m1_subset_1(_G6546, _G6683), m1_subset_1(_G6479, _G6614), _G6479=_G6546, _G6614=_G6683]
+ (27)  [-v5_valued_0(_G7713), _G7664=_G7713, v5_valued_0(_G7664)]
+ (28)  [-r1_xxreal_0(_G7143, _G7280), r1_xxreal_0(_G7076, _G7211), _G7076=_G7143, _G7211=_G7280]
+
+Connection Proof:
+-----------------
+1  [v5_valued_0(2^[])]   (2)  
+1.1  [-v5_valued_0(2^[]), m2_finseq_1(2^[], k1_numbers), -m2_subset_1(1^[2^[]], k1_numbers, k5_numbers)]   (8)  substitution:[[_G10806], [2^[]]]
+1.1.1  [-m2_finseq_1(2^[], k1_numbers)]   (1)  
+1.1.2  [m2_subset_1(1^[2^[]], k1_numbers, k5_numbers), m1_subset_1(k5_numbers, k1_zfmisc_1(k1_numbers)), -v1_xboole_0(k5_numbers), -v1_xboole_0(k1_numbers), -m1_subset_1(1^[2^[]], k5_numbers)]   (13)  substitution:[[_G12094, _G11742, _G11815], [1^[2^[]], k1_numbers, k5_numbers]]
+1.1.2.1  [-m1_subset_1(k5_numbers, k1_zfmisc_1(k1_numbers))]   (5)  
+1.1.2.2  [v1_xboole_0(k5_numbers), -v1_xboole_0(k4_ordinal1), k5_numbers=k4_ordinal1]   (23)  substitution:[[_G4576, _G4625], [k5_numbers, k4_ordinal1]]
+1.1.2.2.1  [v1_xboole_0(k4_ordinal1)]   (6)  
+1.1.2.2.2  [- (k5_numbers=k4_ordinal1)]   (12)  
+1.1.2.3  [v1_xboole_0(k1_numbers), m1_subset_1(k5_numbers, k1_zfmisc_1(k1_numbers)), -v1_xboole_0(k5_numbers)]   (4)  substitution:[[_G10345, _G10428], [k1_numbers, k5_numbers]]
+1.1.2.3.1  [-m1_subset_1(k5_numbers, k1_zfmisc_1(k1_numbers))]   (5)  
+1.1.2.3.2  [v1_xboole_0(k5_numbers)]   (lemmata:1.1.2)  
+1.1.2.4  [m1_subset_1(1^[2^[]], k5_numbers), r1_xxreal_0(np__1, 1^[2^[]]), -r1_xxreal_0(k3_finseq_1(2^[]), 1^[2^[]]), r1_xxreal_0(k7_partfun1(k1_numbers, 2^[], k2_nat_1(1^[2^[]], np__1)), k7_partfun1(k1_numbers, 2^[], 1^[2^[]]))]   (3)  substitution:[[_G14647], [1^[2^[]]]]
+1.1.2.4.1  [-r1_xxreal_0(np__1, 1^[2^[]]), m2_finseq_1(2^[], k1_numbers), -v5_valued_0(2^[])]   (9)  substitution:[[_G10806], [2^[]]]
+1.1.2.4.1.1  [-m2_finseq_1(2^[], k1_numbers)]   (1)  
+1.1.2.4.1.2  [v5_valued_0(2^[])]   (2)  
+1.1.2.4.2  [r1_xxreal_0(k3_finseq_1(2^[]), 1^[2^[]]), m2_finseq_1(2^[], k1_numbers), -v5_valued_0(2^[])]   (10)  substitution:[[_G10806], [2^[]]]
+1.1.2.4.2.1  [-m2_finseq_1(2^[], k1_numbers)]   (1)  
+1.1.2.4.2.2  [v5_valued_0(2^[])]   (2)  
+1.1.2.4.3  [-r1_xxreal_0(k7_partfun1(k1_numbers, 2^[], k2_nat_1(1^[2^[]], np__1)), k7_partfun1(k1_numbers, 2^[], 1^[2^[]])), m2_finseq_1(2^[], k1_numbers), -v5_valued_0(2^[])]   (11)  substitution:[[_G10806], [2^[]]]
+1.1.2.4.3.1  [-m2_finseq_1(2^[], k1_numbers)]   (1)  
+1.1.2.4.3.2  [v5_valued_0(2^[])]   (2)  
+------------------------------------------------------
+End of proof for l3_jgraph_8

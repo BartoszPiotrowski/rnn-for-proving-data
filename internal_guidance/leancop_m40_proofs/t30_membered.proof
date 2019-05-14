@@ -1,0 +1,40 @@
+
+t30_membered is a Theorem
+Start of proof for t30_membered
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v6_membered(k3_tarski(5^[]))]
+ (2)  [r2_hidden(_G5946, 5^[]), -v6_membered(_G5946)]
+ (3)  [-v6_membered(_G4465), -r2_hidden(4^[_G4465], _G4465)]
+ (4)  [-v6_membered(_G4465), v7_ordinal1(4^[_G4465])]
+ (5)  [v6_membered(_G4465), r2_hidden(_G4546, _G4465), -v7_ordinal1(_G4546)]
+ (6)  [_G3946=k3_tarski(_G3877), r2_hidden(_G4087, _G3946), -r2_hidden(_G4087, 1^[_G4087, _G3946, _G3877])]
+ (7)  [_G3946=k3_tarski(_G3877), r2_hidden(_G4087, _G3946), -r2_hidden(1^[_G4087, _G3946, _G3877], _G3877)]
+ (8)  [_G3946=k3_tarski(_G3877), -r2_hidden(_G4087, _G3946), r2_hidden(_G4087, _G4207), r2_hidden(_G4207, _G3877)]
+ (9)  [- (_G3946=k3_tarski(_G3877)), -r2_hidden(2^[_G3946, _G3877], _G3946), -r2_hidden(2^[_G3946, _G3877], 3^[_G3946, _G3877])]
+ (10)  [- (_G3946=k3_tarski(_G3877)), -r2_hidden(2^[_G3946, _G3877], _G3946), -r2_hidden(3^[_G3946, _G3877], _G3877)]
+ (11)  [- (_G3946=k3_tarski(_G3877)), r2_hidden(2^[_G3946, _G3877], _G3946), r2_hidden(2^[_G3946, _G3877], _G5513), r2_hidden(_G5513, _G3877)]
+ (12)  [_G3578=_G3627, - (k3_tarski(_G3578)=k3_tarski(_G3627))]
+ (13)  [- (_G1598=_G1598)]
+ (14)  [_G1697=_G1742, - (_G1742=_G1697)]
+ (15)  [- (_G1930=_G2043), _G1930=_G1986, _G1986=_G2043]
+ (16)  [-v7_ordinal1(_G2429), _G2380=_G2429, v7_ordinal1(_G2380)]
+ (17)  [-v6_membered(_G3295), _G3246=_G3295, v6_membered(_G3246)]
+ (18)  [-r2_hidden(_G2725, _G2862), r2_hidden(_G2658, _G2793), _G2658=_G2725, _G2793=_G2862]
+
+Connection Proof:
+-----------------
+1  [v6_membered(k3_tarski(5^[]))]   (1)  
+1.1  [-v6_membered(k3_tarski(5^[])), -r2_hidden(4^[k3_tarski(5^[])], k3_tarski(5^[]))]   (3)  substitution:[[_G4465], [k3_tarski(5^[])]]
+1.1.1  [r2_hidden(4^[k3_tarski(5^[])], k3_tarski(5^[])), k3_tarski(5^[])=k3_tarski(5^[]), -r2_hidden(4^[k3_tarski(5^[])], 1^[4^[k3_tarski(5^[])], k3_tarski(5^[]), 5^[]])]   (6)  substitution:[[_G4087, _G3946, _G3877], [4^[k3_tarski(5^[])], k3_tarski(5^[]), 5^[]]]
+1.1.1.1  [- (k3_tarski(5^[])=k3_tarski(5^[])), 5^[]=5^[]]   (12)  substitution:[[_G3578, _G3627], [5^[], 5^[]]]
+1.1.1.1.1  [- (5^[]=5^[])]   (13)  substitution:[[_G1598], [5^[]]]
+1.1.1.2  [r2_hidden(4^[k3_tarski(5^[])], 1^[4^[k3_tarski(5^[])], k3_tarski(5^[]), 5^[]]), v6_membered(1^[4^[k3_tarski(5^[])], k3_tarski(5^[]), 5^[]]), -v7_ordinal1(4^[k3_tarski(5^[])])]   (5)  substitution:[[_G4546, _G4465], [4^[k3_tarski(5^[])], 1^[4^[k3_tarski(5^[])], k3_tarski(5^[]), 5^[]]]]
+1.1.1.2.1  [-v6_membered(1^[4^[k3_tarski(5^[])], k3_tarski(5^[]), 5^[]]), r2_hidden(1^[4^[k3_tarski(5^[])], k3_tarski(5^[]), 5^[]], 5^[])]   (2)  substitution:[[_G5946], [1^[4^[k3_tarski(5^[])], k3_tarski(5^[]), 5^[]]]]
+1.1.1.2.1.1  [-r2_hidden(1^[4^[k3_tarski(5^[])], k3_tarski(5^[]), 5^[]], 5^[]), k3_tarski(5^[])=k3_tarski(5^[]), r2_hidden(4^[k3_tarski(5^[])], k3_tarski(5^[]))]   (7)  substitution:[[_G4087, _G3946, _G3877], [4^[k3_tarski(5^[])], k3_tarski(5^[]), 5^[]]]
+1.1.1.2.1.1.1  [- (k3_tarski(5^[])=k3_tarski(5^[]))]   (13)  substitution:[[_G1598], [k3_tarski(5^[])]]
+1.1.1.2.1.1.2  [-r2_hidden(4^[k3_tarski(5^[])], k3_tarski(5^[]))]   (reduction:1.1)  
+1.1.1.2.2  [v7_ordinal1(4^[k3_tarski(5^[])]), -v6_membered(k3_tarski(5^[]))]   (4)  substitution:[[_G4465], [k3_tarski(5^[])]]
+1.1.1.2.2.1  [v6_membered(k3_tarski(5^[]))]   (1)  
+------------------------------------------------------
+End of proof for t30_membered

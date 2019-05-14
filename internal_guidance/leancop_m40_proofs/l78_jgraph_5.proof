@@ -1,0 +1,47 @@
+
+l78_jgraph_5 is a Theorem
+Start of proof for l78_jgraph_5
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k18_euclid(k19_euclid(k6_numbers, k1_real_1(np__1)))=k1_real_1(np__1)]
+ (2)  [m1_subset_1(_G6088, k1_numbers), -v1_xreal_0(_G6088)]
+ (3)  [v1_xreal_0(_G6245), -v1_xcmplx_0(k4_xcmplx_0(_G6245))]
+ (4)  [v1_xreal_0(_G6245), -v1_xreal_0(k4_xcmplx_0(_G6245))]
+ (5)  [-m1_subset_1(k6_numbers, k1_numbers)]
+ (6)  [-m1_subset_1(np__1, k1_numbers)]
+ (7)  [m1_subset_1(_G6580, k1_numbers), - (k1_real_1(_G6580)=k4_xcmplx_0(_G6580))]
+ (8)  [v1_xreal_0(_G6786), v1_xreal_0(_G6883), - (k17_euclid(k19_euclid(_G6786, _G6883))=_G6786)]
+ (9)  [v1_xreal_0(_G6786), v1_xreal_0(_G6883), - (k18_euclid(k19_euclid(_G6786, _G6883))=_G6883)]
+ (10)  [_G4283=_G4332, - (k4_xcmplx_0(_G4283)=k4_xcmplx_0(_G4332))]
+ (11)  [_G4561=_G4610, - (k17_euclid(_G4561)=k17_euclid(_G4610))]
+ (12)  [_G4839=_G4888, - (k18_euclid(_G4839)=k18_euclid(_G4888))]
+ (13)  [_G5705=_G5754, - (k1_real_1(_G5705)=k1_real_1(_G5754))]
+ (14)  [- (k19_euclid(_G5117, _G5252)=k19_euclid(_G5184, _G5321)), _G5117=_G5184, _G5252=_G5321]
+ (15)  [- (_G2294=_G2294)]
+ (16)  [_G2393=_G2438, - (_G2438=_G2393)]
+ (17)  [- (_G2626=_G2739), _G2626=_G2682, _G2682=_G2739]
+ (18)  [-v1_xcmplx_0(_G3125), _G3076=_G3125, v1_xcmplx_0(_G3076)]
+ (19)  [-v1_xreal_0(_G3991), _G3942=_G3991, v1_xreal_0(_G3942)]
+ (20)  [-m1_subset_1(_G3421, _G3558), m1_subset_1(_G3354, _G3489), _G3354=_G3421, _G3489=_G3558]
+
+Connection Proof:
+-----------------
+1  [k18_euclid(k19_euclid(k6_numbers, k1_real_1(np__1)))=k1_real_1(np__1)]   (1)  
+1.1  [- (k18_euclid(k19_euclid(k6_numbers, k1_real_1(np__1)))=k1_real_1(np__1)), k18_euclid(k19_euclid(k6_numbers, k1_real_1(np__1)))=k18_euclid(k19_euclid(k6_numbers, k4_xcmplx_0(np__1))), k18_euclid(k19_euclid(k6_numbers, k4_xcmplx_0(np__1)))=k1_real_1(np__1)]   (17)  substitution:[[_G2626, _G2739, _G2682], [k18_euclid(k19_euclid(k6_numbers, k1_real_1(np__1))), k1_real_1(np__1), k18_euclid(k19_euclid(k6_numbers, k4_xcmplx_0(np__1)))]]
+1.1.1  [- (k18_euclid(k19_euclid(k6_numbers, k1_real_1(np__1)))=k18_euclid(k19_euclid(k6_numbers, k4_xcmplx_0(np__1)))), k19_euclid(k6_numbers, k1_real_1(np__1))=k19_euclid(k6_numbers, k4_xcmplx_0(np__1))]   (12)  substitution:[[_G4839, _G4888], [k19_euclid(k6_numbers, k1_real_1(np__1)), k19_euclid(k6_numbers, k4_xcmplx_0(np__1))]]
+1.1.1.1  [- (k19_euclid(k6_numbers, k1_real_1(np__1))=k19_euclid(k6_numbers, k4_xcmplx_0(np__1))), k6_numbers=k6_numbers, k1_real_1(np__1)=k4_xcmplx_0(np__1)]   (14)  substitution:[[_G5117, _G5252, _G5184, _G5321], [k6_numbers, k1_real_1(np__1), k6_numbers, k4_xcmplx_0(np__1)]]
+1.1.1.1.1  [- (k6_numbers=k6_numbers)]   (15)  substitution:[[_G2294], [k6_numbers]]
+1.1.1.1.2  [- (k1_real_1(np__1)=k4_xcmplx_0(np__1)), m1_subset_1(np__1, k1_numbers)]   (7)  substitution:[[_G6580], [np__1]]
+1.1.1.1.2.1  [-m1_subset_1(np__1, k1_numbers)]   (6)  
+1.1.2  [- (k18_euclid(k19_euclid(k6_numbers, k4_xcmplx_0(np__1)))=k1_real_1(np__1)), k18_euclid(k19_euclid(k6_numbers, k4_xcmplx_0(np__1)))=k4_xcmplx_0(np__1), k4_xcmplx_0(np__1)=k1_real_1(np__1)]   (17)  substitution:[[_G2626, _G2739, _G2682], [k18_euclid(k19_euclid(k6_numbers, k4_xcmplx_0(np__1))), k1_real_1(np__1), k4_xcmplx_0(np__1)]]
+1.1.2.1  [- (k18_euclid(k19_euclid(k6_numbers, k4_xcmplx_0(np__1)))=k4_xcmplx_0(np__1)), v1_xreal_0(k6_numbers), v1_xreal_0(k4_xcmplx_0(np__1))]   (9)  substitution:[[_G6786, _G6883], [k6_numbers, k4_xcmplx_0(np__1)]]
+1.1.2.1.1  [-v1_xreal_0(k6_numbers), m1_subset_1(k6_numbers, k1_numbers)]   (2)  substitution:[[_G6088], [k6_numbers]]
+1.1.2.1.1.1  [-m1_subset_1(k6_numbers, k1_numbers)]   (5)  
+1.1.2.1.2  [-v1_xreal_0(k4_xcmplx_0(np__1)), v1_xreal_0(np__1)]   (4)  substitution:[[_G6245], [np__1]]
+1.1.2.1.2.1  [-v1_xreal_0(np__1), m1_subset_1(np__1, k1_numbers)]   (2)  substitution:[[_G6088], [np__1]]
+1.1.2.1.2.1.1  [-m1_subset_1(np__1, k1_numbers)]   (6)  
+1.1.2.2  [- (k4_xcmplx_0(np__1)=k1_real_1(np__1)), k1_real_1(np__1)=k4_xcmplx_0(np__1)]   (16)  substitution:[[_G2438, _G2393], [k4_xcmplx_0(np__1), k1_real_1(np__1)]]
+1.1.2.2.1  [- (k1_real_1(np__1)=k4_xcmplx_0(np__1)), m1_subset_1(np__1, k1_numbers)]   (7)  substitution:[[_G6580], [np__1]]
+1.1.2.2.1.1  [-m1_subset_1(np__1, k1_numbers)]   (6)  
+------------------------------------------------------
+End of proof for l78_jgraph_5

@@ -1,0 +1,35 @@
+
+l35_zf_fund1 is a Theorem
+Start of proof for l35_zf_fund1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v1_xboole_0(2^[])]
+ (2)  [-v1_classes2(2^[])]
+ (3)  [v1_xboole_0(3^[])]
+ (4)  [-m1_subset_1(3^[], k1_zfmisc_1(2^[]))]
+ (5)  [-m1_subset_1(4^[], k4_ordinal1)]
+ (6)  [-v8_zf_fund1(3^[], 2^[])]
+ (7)  [r2_hidden(4^[], 3^[])]
+ (8)  [-r1_tarski(_G1150, _G1206), -r2_hidden(1^[_G1206, _G1150], _G1150)]
+ (9)  [-r1_tarski(_G1150, _G1206), r2_hidden(1^[_G1206, _G1150], _G1206)]
+ (10)  [r1_tarski(_G1150, _G1206), r2_hidden(_G1320, _G1150), -r2_hidden(_G1320, _G1206)]
+ (11)  [v1_xboole_0(k4_ordinal1)]
+ (12)  [-v3_ordinal1(k4_ordinal1)]
+ (13)  [m1_subset_1(_G1651, _G1701), -v1_xboole_0(_G1701), -r2_hidden(_G1651, _G1701)]
+ (14)  [v1_classes2(_G1947), -v1_xboole_0(_G1947), m1_subset_1(_G2118, k1_zfmisc_1(_G1947)), -v1_xboole_0(_G2118), v8_zf_fund1(_G2118, _G1947), -r1_tarski(k4_ordinal1, _G2118)]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(4^[], 3^[])]   (7)  
+1.1  [-r2_hidden(4^[], 3^[]), r1_tarski(k4_ordinal1, 3^[]), r2_hidden(4^[], k4_ordinal1)]   (10)  substitution:[[_G1320, _G1206, _G1150], [4^[], 3^[], k4_ordinal1]]
+1.1.1  [-r1_tarski(k4_ordinal1, 3^[]), v1_classes2(2^[]), -v1_xboole_0(2^[]), m1_subset_1(3^[], k1_zfmisc_1(2^[])), -v1_xboole_0(3^[]), v8_zf_fund1(3^[], 2^[])]   (14)  substitution:[[_G2118, _G1947], [3^[], 2^[]]]
+1.1.1.1  [-v1_classes2(2^[])]   (2)  
+1.1.1.2  [v1_xboole_0(2^[])]   (1)  
+1.1.1.3  [-m1_subset_1(3^[], k1_zfmisc_1(2^[]))]   (4)  
+1.1.1.4  [v1_xboole_0(3^[])]   (3)  
+1.1.1.5  [-v8_zf_fund1(3^[], 2^[])]   (6)  
+1.1.2  [-r2_hidden(4^[], k4_ordinal1), m1_subset_1(4^[], k4_ordinal1), -v1_xboole_0(k4_ordinal1)]   (13)  substitution:[[_G1651, _G1701], [4^[], k4_ordinal1]]
+1.1.2.1  [-m1_subset_1(4^[], k4_ordinal1)]   (5)  
+1.1.2.2  [v1_xboole_0(k4_ordinal1)]   (11)  
+------------------------------------------------------
+End of proof for l35_zf_fund1

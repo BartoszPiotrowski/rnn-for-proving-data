@@ -1,0 +1,39 @@
+
+t6_kolmog01 is a Theorem
+Start of proof for t6_kolmog01
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v1_xboole_0(1^[])]
+ (2)  [v1_xboole_0(2^[])]
+ (3)  [-v1_prob_1(2^[], 1^[])]
+ (4)  [-v4_prob_1(2^[], 1^[])]
+ (5)  [-m1_subset_1(2^[], k1_zfmisc_1(k1_zfmisc_1(1^[])))]
+ (6)  [-m2_prob_1(3^[], 1^[], 2^[])]
+ (7)  [v1_xboole_0(4^[])]
+ (8)  [-m1_subset_1(4^[], k1_zfmisc_1(2^[]))]
+ (9)  [-m1_subset_1(5^[], k1_zfmisc_1(k1_zfmisc_1(1^[])))]
+ (10)  [-v2_finsub_1(5^[])]
+ (11)  [-r1_tarski(5^[], k1_kolmog01(1^[], 2^[], 4^[], 3^[]))]
+ (12)  [r1_tarski(k9_prob_1(1^[], 5^[]), k1_kolmog01(1^[], 2^[], 4^[], 3^[]))]
+ (13)  [-v1_xboole_0(_G1359), m1_subset_1(_G1486, k1_zfmisc_1(k1_zfmisc_1(_G1359))), v2_finsub_1(_G1486), m1_dynkin(_G1678, _G1359), r1_tarski(_G1486, _G1678), -r1_tarski(k9_prob_1(_G1359, _G1486), _G1678)]
+ (14)  [-v1_xboole_0(_G2069), m1_subset_1(_G2227, k1_zfmisc_1(k1_zfmisc_1(_G2069))), v4_prob_1(_G2227, _G2069), v1_prob_1(_G2227, _G2069), -v1_xboole_0(_G2227), m2_prob_1(_G2641, _G2069, _G2227), -m1_dynkin(k1_kolmog01(_G2069, _G2227, _G2819, _G2641), _G2069), -v1_xboole_0(_G2819), m1_subset_1(_G2819, k1_zfmisc_1(_G2227))]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k9_prob_1(1^[], 5^[]), k1_kolmog01(1^[], 2^[], 4^[], 3^[]))]   (12)  
+1.1  [-r1_tarski(k9_prob_1(1^[], 5^[]), k1_kolmog01(1^[], 2^[], 4^[], 3^[])), -v1_xboole_0(1^[]), m1_subset_1(5^[], k1_zfmisc_1(k1_zfmisc_1(1^[]))), v2_finsub_1(5^[]), m1_dynkin(k1_kolmog01(1^[], 2^[], 4^[], 3^[]), 1^[]), r1_tarski(5^[], k1_kolmog01(1^[], 2^[], 4^[], 3^[]))]   (13)  substitution:[[_G1359, _G1486, _G1678], [1^[], 5^[], k1_kolmog01(1^[], 2^[], 4^[], 3^[])]]
+1.1.1  [v1_xboole_0(1^[])]   (1)  
+1.1.2  [-m1_subset_1(5^[], k1_zfmisc_1(k1_zfmisc_1(1^[])))]   (9)  
+1.1.3  [-v2_finsub_1(5^[])]   (10)  
+1.1.4  [-m1_dynkin(k1_kolmog01(1^[], 2^[], 4^[], 3^[]), 1^[]), -v1_xboole_0(1^[]), m1_subset_1(2^[], k1_zfmisc_1(k1_zfmisc_1(1^[]))), v4_prob_1(2^[], 1^[]), v1_prob_1(2^[], 1^[]), -v1_xboole_0(2^[]), m2_prob_1(3^[], 1^[], 2^[]), -v1_xboole_0(4^[]), m1_subset_1(4^[], k1_zfmisc_1(2^[]))]   (14)  substitution:[[_G2069, _G2227, _G2819, _G2641], [1^[], 2^[], 4^[], 3^[]]]
+1.1.4.1  [v1_xboole_0(1^[])]   (1)  
+1.1.4.2  [-m1_subset_1(2^[], k1_zfmisc_1(k1_zfmisc_1(1^[])))]   (5)  
+1.1.4.3  [-v4_prob_1(2^[], 1^[])]   (4)  
+1.1.4.4  [-v1_prob_1(2^[], 1^[])]   (3)  
+1.1.4.5  [v1_xboole_0(2^[])]   (2)  
+1.1.4.6  [-m2_prob_1(3^[], 1^[], 2^[])]   (6)  
+1.1.4.7  [v1_xboole_0(4^[])]   (7)  
+1.1.4.8  [-m1_subset_1(4^[], k1_zfmisc_1(2^[]))]   (8)  
+1.1.5  [-r1_tarski(5^[], k1_kolmog01(1^[], 2^[], 4^[], 3^[]))]   (11)  
+------------------------------------------------------
+End of proof for t6_kolmog01

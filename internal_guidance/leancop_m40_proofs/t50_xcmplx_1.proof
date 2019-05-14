@@ -1,0 +1,45 @@
+
+t50_xcmplx_1 is a Theorem
+Start of proof for t50_xcmplx_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xcmplx_0(1^[])]
+ (2)  [-v1_xcmplx_0(2^[])]
+ (3)  [1^[]=k6_numbers]
+ (4)  [2^[]=k6_numbers]
+ (5)  [- (k7_xcmplx_0(1^[], 2^[])=k6_numbers)]
+ (6)  [-v1_xboole_0(k1_xboole_0)]
+ (7)  [- (k6_numbers=k1_xboole_0)]
+ (8)  [v1_xboole_0(_G4332), - (_G4332=k1_xboole_0)]
+ (9)  [v1_xboole_0(k7_xcmplx_0(_G3808, _G3875)), v1_xcmplx_0(_G3808), -v1_xboole_0(_G3808), -v1_xboole_0(_G3875), v1_xcmplx_0(_G3875)]
+ (10)  [- (k7_xcmplx_0(_G3158, _G3293)=k7_xcmplx_0(_G3225, _G3362)), _G3158=_G3225, _G3293=_G3362]
+ (11)  [- (_G1796=_G1796)]
+ (12)  [_G1895=_G1940, - (_G1940=_G1895)]
+ (13)  [- (_G2128=_G2241), _G2128=_G2184, _G2184=_G2241]
+ (14)  [-v1_xboole_0(_G2627), _G2578=_G2627, v1_xboole_0(_G2578)]
+ (15)  [-v1_xcmplx_0(_G2896), _G2847=_G2896, v1_xcmplx_0(_G2847)]
+
+Connection Proof:
+-----------------
+1  [1^[]=k6_numbers]   (3)  
+1.1  [- (1^[]=k6_numbers), 1^[]=k1_xboole_0, k1_xboole_0=k6_numbers]   (13)  substitution:[[_G2128, _G2241, _G2184], [1^[], k6_numbers, k1_xboole_0]]
+1.1.1  [- (1^[]=k1_xboole_0), v1_xboole_0(1^[])]   (8)  substitution:[[_G4332], [1^[]]]
+1.1.1.1  [-v1_xboole_0(1^[]), v1_xboole_0(k7_xcmplx_0(1^[], 2^[])), v1_xcmplx_0(1^[]), -v1_xboole_0(2^[]), v1_xcmplx_0(2^[])]   (9)  substitution:[[_G3808, _G3875], [1^[], 2^[]]]
+1.1.1.1.1  [-v1_xboole_0(k7_xcmplx_0(1^[], 2^[])), k6_numbers=k7_xcmplx_0(1^[], 2^[]), v1_xboole_0(k6_numbers)]   (14)  substitution:[[_G2627, _G2578], [k7_xcmplx_0(1^[], 2^[]), k6_numbers]]
+1.1.1.1.1.1  [- (k6_numbers=k7_xcmplx_0(1^[], 2^[])), k7_xcmplx_0(1^[], 2^[])=k6_numbers]   (12)  substitution:[[_G1940, _G1895], [k6_numbers, k7_xcmplx_0(1^[], 2^[])]]
+1.1.1.1.1.1.1  [- (k7_xcmplx_0(1^[], 2^[])=k6_numbers)]   (5)  
+1.1.1.1.1.2  [-v1_xboole_0(k6_numbers), k1_xboole_0=k6_numbers, v1_xboole_0(k1_xboole_0)]   (14)  substitution:[[_G2627, _G2578], [k6_numbers, k1_xboole_0]]
+1.1.1.1.1.2.1  [- (k1_xboole_0=k6_numbers), k6_numbers=k1_xboole_0]   (12)  substitution:[[_G1940, _G1895], [k1_xboole_0, k6_numbers]]
+1.1.1.1.1.2.1.1  [- (k6_numbers=k1_xboole_0)]   (7)  
+1.1.1.1.1.2.2  [-v1_xboole_0(k1_xboole_0)]   (6)  
+1.1.1.1.2  [-v1_xcmplx_0(1^[])]   (1)  
+1.1.1.1.3  [v1_xboole_0(2^[]), - (2^[]=k1_xboole_0)]   (8)  substitution:[[_G4332], [2^[]]]
+1.1.1.1.3.1  [2^[]=k1_xboole_0, - (2^[]=k6_numbers), k1_xboole_0=k6_numbers]   (13)  substitution:[[_G2128, _G2184, _G2241], [2^[], k1_xboole_0, k6_numbers]]
+1.1.1.1.3.1.1  [2^[]=k6_numbers]   (4)  
+1.1.1.1.3.1.2  [- (k1_xboole_0=k6_numbers), k6_numbers=k1_xboole_0]   (12)  substitution:[[_G1940, _G1895], [k1_xboole_0, k6_numbers]]
+1.1.1.1.3.1.2.1  [- (k6_numbers=k1_xboole_0)]   (7)  
+1.1.1.1.4  [-v1_xcmplx_0(2^[])]   (2)  
+1.1.2  [- (k1_xboole_0=k6_numbers), k6_numbers=k1_xboole_0]   (12)  substitution:[[_G1940, _G1895], [k1_xboole_0, k6_numbers]]
+1.1.2.1  [- (k6_numbers=k1_xboole_0)]   (7)  
+------------------------------------------------------
+End of proof for t50_xcmplx_1

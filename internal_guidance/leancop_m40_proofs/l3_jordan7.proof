@@ -1,0 +1,51 @@
+
+l3_jordan7 is a Theorem
+Start of proof for l3_jordan7
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], k5_numbers)]
+ (2)  [-m1_subset_1(2^[], k5_numbers)]
+ (3)  [-m1_subset_1(3^[], k5_numbers)]
+ (4)  [-r1_xxreal_0(k2_nat_1(2^[], 3^[]), 1^[])]
+ (5)  [r1_xxreal_0(3^[], k7_nat_d(1^[], 2^[]))]
+ (6)  [m1_subset_1(_G6518, k4_ordinal1), -v7_ordinal1(_G6518)]
+ (7)  [- (k2_nat_1(_G6675, _G6731)=k2_xcmplx_0(_G6675, _G6731)), m1_subset_1(_G6675, k5_numbers), v7_ordinal1(_G6731)]
+ (8)  [- (k5_numbers=k4_ordinal1)]
+ (9)  [v7_ordinal1(_G7118), v7_ordinal1(_G7221), v7_ordinal1(_G7320), r1_xxreal_0(k2_xcmplx_0(_G7118, _G7221), _G7320), -r1_xxreal_0(_G7221, k7_nat_d(_G7320, _G7118))]
+ (10)  [- (k2_xcmplx_0(_G4673, _G4808)=k2_xcmplx_0(_G4740, _G4877)), _G4673=_G4740, _G4808=_G4877]
+ (11)  [- (k2_nat_1(_G5270, _G5405)=k2_nat_1(_G5337, _G5474)), _G5270=_G5337, _G5405=_G5474]
+ (12)  [- (k7_nat_d(_G5858, _G5993)=k7_nat_d(_G5925, _G6062)), _G5858=_G5925, _G5993=_G6062]
+ (13)  [- (_G2365=_G2365)]
+ (14)  [_G2464=_G2509, - (_G2509=_G2464)]
+ (15)  [- (_G2697=_G2810), _G2697=_G2753, _G2753=_G2810]
+ (16)  [-v7_ordinal1(_G3196), _G3147=_G3196, v7_ordinal1(_G3147)]
+ (17)  [-m1_subset_1(_G3492, _G3629), m1_subset_1(_G3425, _G3560), _G3425=_G3492, _G3560=_G3629]
+ (18)  [-r1_xxreal_0(_G4080, _G4217), r1_xxreal_0(_G4013, _G4148), _G4013=_G4080, _G4148=_G4217]
+
+Connection Proof:
+-----------------
+1  [r1_xxreal_0(3^[], k7_nat_d(1^[], 2^[]))]   (5)  
+1.1  [-r1_xxreal_0(3^[], k7_nat_d(1^[], 2^[])), v7_ordinal1(2^[]), v7_ordinal1(3^[]), v7_ordinal1(1^[]), r1_xxreal_0(k2_xcmplx_0(2^[], 3^[]), 1^[])]   (9)  substitution:[[_G7221, _G7320, _G7118], [3^[], 1^[], 2^[]]]
+1.1.1  [-v7_ordinal1(2^[]), m1_subset_1(2^[], k4_ordinal1)]   (6)  substitution:[[_G6518], [2^[]]]
+1.1.1.1  [-m1_subset_1(2^[], k4_ordinal1), m1_subset_1(2^[], k5_numbers), 2^[]=2^[], k5_numbers=k4_ordinal1]   (17)  substitution:[[_G3492, _G3629, _G3425, _G3560], [2^[], k4_ordinal1, 2^[], k5_numbers]]
+1.1.1.1.1  [-m1_subset_1(2^[], k5_numbers)]   (2)  
+1.1.1.1.2  [- (2^[]=2^[])]   (13)  substitution:[[_G2365], [2^[]]]
+1.1.1.1.3  [- (k5_numbers=k4_ordinal1)]   (8)  
+1.1.2  [-v7_ordinal1(3^[]), m1_subset_1(3^[], k4_ordinal1)]   (6)  substitution:[[_G6518], [3^[]]]
+1.1.2.1  [-m1_subset_1(3^[], k4_ordinal1), m1_subset_1(3^[], k5_numbers), 3^[]=3^[], k5_numbers=k4_ordinal1]   (17)  substitution:[[_G3492, _G3629, _G3425, _G3560], [3^[], k4_ordinal1, 3^[], k5_numbers]]
+1.1.2.1.1  [-m1_subset_1(3^[], k5_numbers)]   (3)  
+1.1.2.1.2  [- (3^[]=3^[])]   (13)  substitution:[[_G2365], [3^[]]]
+1.1.2.1.3  [- (k5_numbers=k4_ordinal1)]   (8)  
+1.1.3  [-v7_ordinal1(1^[]), m1_subset_1(1^[], k4_ordinal1)]   (6)  substitution:[[_G6518], [1^[]]]
+1.1.3.1  [-m1_subset_1(1^[], k4_ordinal1), m1_subset_1(1^[], k5_numbers), 1^[]=1^[], k5_numbers=k4_ordinal1]   (17)  substitution:[[_G3492, _G3629, _G3425, _G3560], [1^[], k4_ordinal1, 1^[], k5_numbers]]
+1.1.3.1.1  [-m1_subset_1(1^[], k5_numbers)]   (1)  
+1.1.3.1.2  [- (1^[]=1^[])]   (13)  substitution:[[_G2365], [1^[]]]
+1.1.3.1.3  [- (k5_numbers=k4_ordinal1)]   (8)  
+1.1.4  [-r1_xxreal_0(k2_xcmplx_0(2^[], 3^[]), 1^[]), r1_xxreal_0(k2_nat_1(2^[], 3^[]), 1^[]), k2_nat_1(2^[], 3^[])=k2_xcmplx_0(2^[], 3^[]), 1^[]=1^[]]   (18)  substitution:[[_G4080, _G4217, _G4013, _G4148], [k2_xcmplx_0(2^[], 3^[]), 1^[], k2_nat_1(2^[], 3^[]), 1^[]]]
+1.1.4.1  [-r1_xxreal_0(k2_nat_1(2^[], 3^[]), 1^[])]   (4)  
+1.1.4.2  [- (k2_nat_1(2^[], 3^[])=k2_xcmplx_0(2^[], 3^[])), m1_subset_1(2^[], k5_numbers), v7_ordinal1(3^[])]   (7)  substitution:[[_G6675, _G6731], [2^[], 3^[]]]
+1.1.4.2.1  [-m1_subset_1(2^[], k5_numbers)]   (2)  
+1.1.4.2.2  [-v7_ordinal1(3^[])]   (lemmata:1.1)  
+1.1.4.3  [- (1^[]=1^[])]   (13)  substitution:[[_G2365], [1^[]]]
+------------------------------------------------------
+End of proof for l3_jordan7

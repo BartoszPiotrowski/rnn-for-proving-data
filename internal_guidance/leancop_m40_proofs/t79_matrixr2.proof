@@ -1,0 +1,40 @@
+
+t79_matrixr2 is a Theorem
+Start of proof for t79_matrixr2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], k5_numbers)]
+ (2)  [k7_matrixr2(1^[], k4_matrixr2(1^[]))=k4_matrixr2(1^[])]
+ (3)  [m1_subset_1(_G8165, k5_numbers), m1_matrix_1(_G8321, k1_numbers, _G8165, _G8165), v1_matrixr2(_G8321, _G8165), m1_matrix_1(_G8615, k1_numbers, _G8165, _G8165), _G8615=k7_matrixr2(_G8165, _G8321), - (k1_matrixr2(_G8165, _G8615, _G8321)=k4_matrixr2(_G8165))]
+ (4)  [m1_subset_1(_G8165, k5_numbers), m1_matrix_1(_G8321, k1_numbers, _G8165, _G8165), v1_matrixr2(_G8321, _G8165), m1_matrix_1(_G8615, k1_numbers, _G8165, _G8165), _G8615=k7_matrixr2(_G8165, _G8321), - (k1_matrixr2(_G8165, _G8321, _G8615)=k4_matrixr2(_G8165))]
+ (5)  [m1_subset_1(_G8165, k5_numbers), m1_matrix_1(_G8321, k1_numbers, _G8165, _G8165), v1_matrixr2(_G8321, _G8165), m1_matrix_1(_G8615, k1_numbers, _G8165, _G8165), - (_G8615=k7_matrixr2(_G8165, _G8321)), k1_matrixr2(_G8165, _G8615, _G8321)=k4_matrixr2(_G8165), k1_matrixr2(_G8165, _G8321, _G8615)=k4_matrixr2(_G8165)]
+ (6)  [m1_subset_1(_G9391, k5_numbers), -m1_matrix_1(k4_matrixr2(_G9391), k1_numbers, _G9391, _G9391)]
+ (7)  [m1_subset_1(_G9678, k5_numbers), -v1_matrixr2(k4_matrixr2(_G9678), _G9678)]
+ (8)  [m1_subset_1(_G9868, k5_numbers), m1_matrix_1(_G9984, k1_numbers, _G9868, _G9868), - (k1_matrixr2(_G9868, k4_matrixr2(_G9868), _G9984)=_G9984)]
+ (9)  [- (k1_matrixr2(_G6208, _G6379, _G6554)=k1_matrixr2(_G6293, _G6466, _G6643)), _G6208=_G6293, _G6379=_G6466, _G6554=_G6643]
+ (10)  [_G7824=_G7873, - (k4_matrixr2(_G7824)=k4_matrixr2(_G7873))]
+ (11)  [- (k7_matrixr2(_G7236, _G7371)=k7_matrixr2(_G7303, _G7440)), _G7236=_G7303, _G7371=_G7440]
+ (12)  [- (_G2643=_G2643)]
+ (13)  [_G2742=_G2787, - (_G2787=_G2742)]
+ (14)  [- (_G2975=_G3088), _G2975=_G3031, _G3031=_G3088]
+ (15)  [-v1_matrixr2(_G3492, _G3629), v1_matrixr2(_G3425, _G3560), _G3425=_G3492, _G3560=_G3629]
+ (16)  [-m1_subset_1(_G5615, _G5752), m1_subset_1(_G5548, _G5683), _G5548=_G5615, _G5683=_G5752]
+ (17)  [-m1_matrix_1(_G4125, _G4334, _G4547, _G4764), m1_matrix_1(_G4022, _G4229, _G4440, _G4655), _G4022=_G4125, _G4229=_G4334, _G4440=_G4547, _G4655=_G4764]
+
+Connection Proof:
+-----------------
+1  [k7_matrixr2(1^[], k4_matrixr2(1^[]))=k4_matrixr2(1^[])]   (2)  
+1.1  [- (k7_matrixr2(1^[], k4_matrixr2(1^[]))=k4_matrixr2(1^[])), k4_matrixr2(1^[])=k7_matrixr2(1^[], k4_matrixr2(1^[]))]   (13)  substitution:[[_G2787, _G2742], [k7_matrixr2(1^[], k4_matrixr2(1^[])), k4_matrixr2(1^[])]]
+1.1.1  [- (k4_matrixr2(1^[])=k7_matrixr2(1^[], k4_matrixr2(1^[]))), m1_subset_1(1^[], k5_numbers), m1_matrix_1(k4_matrixr2(1^[]), k1_numbers, 1^[], 1^[]), v1_matrixr2(k4_matrixr2(1^[]), 1^[]), m1_matrix_1(k4_matrixr2(1^[]), k1_numbers, 1^[], 1^[]), k1_matrixr2(1^[], k4_matrixr2(1^[]), k4_matrixr2(1^[]))=k4_matrixr2(1^[]), k1_matrixr2(1^[], k4_matrixr2(1^[]), k4_matrixr2(1^[]))=k4_matrixr2(1^[])]   (5)  substitution:[[_G8615, _G8165, _G8321], [k4_matrixr2(1^[]), 1^[], k4_matrixr2(1^[])]]
+1.1.1.1  [-m1_subset_1(1^[], k5_numbers)]   (1)  
+1.1.1.2  [-m1_matrix_1(k4_matrixr2(1^[]), k1_numbers, 1^[], 1^[]), m1_subset_1(1^[], k5_numbers)]   (6)  substitution:[[_G9391], [1^[]]]
+1.1.1.2.1  [-m1_subset_1(1^[], k5_numbers)]   (1)  
+1.1.1.3  [-v1_matrixr2(k4_matrixr2(1^[]), 1^[]), m1_subset_1(1^[], k5_numbers)]   (7)  substitution:[[_G9678], [1^[]]]
+1.1.1.3.1  [-m1_subset_1(1^[], k5_numbers)]   (1)  
+1.1.1.4  [-m1_matrix_1(k4_matrixr2(1^[]), k1_numbers, 1^[], 1^[])]   (lemmata:1.1.1)  
+1.1.1.5  [- (k1_matrixr2(1^[], k4_matrixr2(1^[]), k4_matrixr2(1^[]))=k4_matrixr2(1^[])), m1_subset_1(1^[], k5_numbers), m1_matrix_1(k4_matrixr2(1^[]), k1_numbers, 1^[], 1^[])]   (8)  substitution:[[_G9868, _G9984], [1^[], k4_matrixr2(1^[])]]
+1.1.1.5.1  [-m1_subset_1(1^[], k5_numbers)]   (1)  
+1.1.1.5.2  [-m1_matrix_1(k4_matrixr2(1^[]), k1_numbers, 1^[], 1^[])]   (lemmata:1.1.1)  
+1.1.1.6  [- (k1_matrixr2(1^[], k4_matrixr2(1^[]), k4_matrixr2(1^[]))=k4_matrixr2(1^[]))]   (lemmata:1.1.1)  
+------------------------------------------------------
+End of proof for t79_matrixr2

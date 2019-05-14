@@ -1,0 +1,50 @@
+
+t32_goedelcp is a Theorem
+Start of proof for t32_goedelcp
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_qc_lang1(3^[])]
+ (2)  [-m1_subset_1(4^[], k1_zfmisc_1(k3_cqc_lang(3^[])))]
+ (3)  [-m1_subset_1(5^[], k1_zfmisc_1(k3_cqc_lang(3^[])))]
+ (4)  [-m2_subset_1(6^[], k9_qc_lang1(3^[]), k3_cqc_lang(3^[]))]
+ (5)  [-r1_henmodel(3^[], 4^[], 6^[])]
+ (6)  [-r1_tarski(4^[], 5^[])]
+ (7)  [r1_henmodel(3^[], 5^[], 6^[])]
+ (8)  [-r1_tarski(_G2349, _G2405), -r2_hidden(2^[_G2405, _G2349], _G2349)]
+ (9)  [-r1_tarski(_G2349, _G2405), r2_hidden(2^[_G2405, _G2349], _G2405)]
+ (10)  [r1_tarski(_G2349, _G2405), r2_hidden(_G2519, _G2349), -r2_hidden(_G2519, _G2405)]
+ (11)  [m1_qc_lang1(_G1067), m1_subset_1(_G1211, k1_zfmisc_1(k3_cqc_lang(_G1067))), m2_subset_1(_G1404, k9_qc_lang1(_G1067), k3_cqc_lang(_G1067)), r1_henmodel(_G1067, _G1211, _G1404), -m2_finseq_1(1^[_G1404, _G1211, _G1067], k3_cqc_lang(_G1067))]
+ (12)  [m1_qc_lang1(_G1067), m1_subset_1(_G1211, k1_zfmisc_1(k3_cqc_lang(_G1067))), m2_subset_1(_G1404, k9_qc_lang1(_G1067), k3_cqc_lang(_G1067)), r1_henmodel(_G1067, _G1211, _G1404), -r1_tarski(k2_relset_1(k3_cqc_lang(_G1067), 1^[_G1404, _G1211, _G1067]), _G1211)]
+ (13)  [m1_qc_lang1(_G1067), m1_subset_1(_G1211, k1_zfmisc_1(k3_cqc_lang(_G1067))), m2_subset_1(_G1404, k9_qc_lang1(_G1067), k3_cqc_lang(_G1067)), r1_henmodel(_G1067, _G1211, _G1404), -r4_calcul_1(_G1067, k8_finseq_1(k3_cqc_lang(_G1067), 1^[_G1404, _G1211, _G1067], k12_finseq_1(k3_cqc_lang(_G1067), _G1404)))]
+ (14)  [m1_qc_lang1(_G1067), m1_subset_1(_G1211, k1_zfmisc_1(k3_cqc_lang(_G1067))), m2_subset_1(_G1404, k9_qc_lang1(_G1067), k3_cqc_lang(_G1067)), -r1_henmodel(_G1067, _G1211, _G1404), m2_finseq_1(_G1731, k3_cqc_lang(_G1067)), r1_tarski(k2_relset_1(k3_cqc_lang(_G1067), _G1731), _G1211), r4_calcul_1(_G1067, k8_finseq_1(k3_cqc_lang(_G1067), _G1731, k12_finseq_1(k3_cqc_lang(_G1067), _G1404)))]
+
+Connection Proof:
+-----------------
+1  [r1_henmodel(3^[], 5^[], 6^[])]   (7)  
+1.1  [-r1_henmodel(3^[], 5^[], 6^[]), m1_qc_lang1(3^[]), m1_subset_1(5^[], k1_zfmisc_1(k3_cqc_lang(3^[]))), m2_subset_1(6^[], k9_qc_lang1(3^[]), k3_cqc_lang(3^[])), m2_finseq_1(1^[6^[], 4^[], 3^[]], k3_cqc_lang(3^[])), r1_tarski(k2_relset_1(k3_cqc_lang(3^[]), 1^[6^[], 4^[], 3^[]]), 5^[]), r4_calcul_1(3^[], k8_finseq_1(k3_cqc_lang(3^[]), 1^[6^[], 4^[], 3^[]], k12_finseq_1(k3_cqc_lang(3^[]), 6^[])))]   (14)  substitution:[[_G1067, _G1211, _G1404, _G1731], [3^[], 5^[], 6^[], 1^[6^[], 4^[], 3^[]]]]
+1.1.1  [-m1_qc_lang1(3^[])]   (1)  
+1.1.2  [-m1_subset_1(5^[], k1_zfmisc_1(k3_cqc_lang(3^[])))]   (3)  
+1.1.3  [-m2_subset_1(6^[], k9_qc_lang1(3^[]), k3_cqc_lang(3^[]))]   (4)  
+1.1.4  [-m2_finseq_1(1^[6^[], 4^[], 3^[]], k3_cqc_lang(3^[])), m1_qc_lang1(3^[]), m1_subset_1(4^[], k1_zfmisc_1(k3_cqc_lang(3^[]))), m2_subset_1(6^[], k9_qc_lang1(3^[]), k3_cqc_lang(3^[])), r1_henmodel(3^[], 4^[], 6^[])]   (11)  substitution:[[_G1404, _G1211, _G1067], [6^[], 4^[], 3^[]]]
+1.1.4.1  [-m1_qc_lang1(3^[])]   (1)  
+1.1.4.2  [-m1_subset_1(4^[], k1_zfmisc_1(k3_cqc_lang(3^[])))]   (2)  
+1.1.4.3  [-m2_subset_1(6^[], k9_qc_lang1(3^[]), k3_cqc_lang(3^[]))]   (4)  
+1.1.4.4  [-r1_henmodel(3^[], 4^[], 6^[])]   (5)  
+1.1.5  [-r1_tarski(k2_relset_1(k3_cqc_lang(3^[]), 1^[6^[], 4^[], 3^[]]), 5^[]), r2_hidden(2^[5^[], k2_relset_1(k3_cqc_lang(3^[]), 1^[6^[], 4^[], 3^[]])], 5^[])]   (9)  substitution:[[_G2349, _G2405], [k2_relset_1(k3_cqc_lang(3^[]), 1^[6^[], 4^[], 3^[]]), 5^[]]]
+1.1.5.1  [-r2_hidden(2^[5^[], k2_relset_1(k3_cqc_lang(3^[]), 1^[6^[], 4^[], 3^[]])], 5^[]), r1_tarski(4^[], 5^[]), r2_hidden(2^[5^[], k2_relset_1(k3_cqc_lang(3^[]), 1^[6^[], 4^[], 3^[]])], 4^[])]   (10)  substitution:[[_G2519, _G2405, _G2349], [2^[5^[], k2_relset_1(k3_cqc_lang(3^[]), 1^[6^[], 4^[], 3^[]])], 5^[], 4^[]]]
+1.1.5.1.1  [-r1_tarski(4^[], 5^[])]   (6)  
+1.1.5.1.2  [-r2_hidden(2^[5^[], k2_relset_1(k3_cqc_lang(3^[]), 1^[6^[], 4^[], 3^[]])], 4^[]), r1_tarski(k2_relset_1(k3_cqc_lang(3^[]), 1^[6^[], 4^[], 3^[]]), 4^[]), r2_hidden(2^[5^[], k2_relset_1(k3_cqc_lang(3^[]), 1^[6^[], 4^[], 3^[]])], k2_relset_1(k3_cqc_lang(3^[]), 1^[6^[], 4^[], 3^[]]))]   (10)  substitution:[[_G2519, _G2405, _G2349], [2^[5^[], k2_relset_1(k3_cqc_lang(3^[]), 1^[6^[], 4^[], 3^[]])], 4^[], k2_relset_1(k3_cqc_lang(3^[]), 1^[6^[], 4^[], 3^[]])]]
+1.1.5.1.2.1  [-r1_tarski(k2_relset_1(k3_cqc_lang(3^[]), 1^[6^[], 4^[], 3^[]]), 4^[]), m1_qc_lang1(3^[]), m1_subset_1(4^[], k1_zfmisc_1(k3_cqc_lang(3^[]))), m2_subset_1(6^[], k9_qc_lang1(3^[]), k3_cqc_lang(3^[])), r1_henmodel(3^[], 4^[], 6^[])]   (12)  substitution:[[_G1067, _G1404, _G1211], [3^[], 6^[], 4^[]]]
+1.1.5.1.2.1.1  [-m1_qc_lang1(3^[])]   (1)  
+1.1.5.1.2.1.2  [-m1_subset_1(4^[], k1_zfmisc_1(k3_cqc_lang(3^[])))]   (2)  
+1.1.5.1.2.1.3  [-m2_subset_1(6^[], k9_qc_lang1(3^[]), k3_cqc_lang(3^[]))]   (4)  
+1.1.5.1.2.1.4  [-r1_henmodel(3^[], 4^[], 6^[])]   (5)  
+1.1.5.1.2.2  [-r2_hidden(2^[5^[], k2_relset_1(k3_cqc_lang(3^[]), 1^[6^[], 4^[], 3^[]])], k2_relset_1(k3_cqc_lang(3^[]), 1^[6^[], 4^[], 3^[]])), -r1_tarski(k2_relset_1(k3_cqc_lang(3^[]), 1^[6^[], 4^[], 3^[]]), 5^[])]   (8)  substitution:[[_G2405, _G2349], [5^[], k2_relset_1(k3_cqc_lang(3^[]), 1^[6^[], 4^[], 3^[]])]]
+1.1.5.1.2.2.1  [r1_tarski(k2_relset_1(k3_cqc_lang(3^[]), 1^[6^[], 4^[], 3^[]]), 5^[])]   (reduction:1.1)  
+1.1.6  [-r4_calcul_1(3^[], k8_finseq_1(k3_cqc_lang(3^[]), 1^[6^[], 4^[], 3^[]], k12_finseq_1(k3_cqc_lang(3^[]), 6^[]))), m1_qc_lang1(3^[]), m1_subset_1(4^[], k1_zfmisc_1(k3_cqc_lang(3^[]))), m2_subset_1(6^[], k9_qc_lang1(3^[]), k3_cqc_lang(3^[])), r1_henmodel(3^[], 4^[], 6^[])]   (13)  substitution:[[_G1067, _G1404, _G1211], [3^[], 6^[], 4^[]]]
+1.1.6.1  [-m1_qc_lang1(3^[])]   (1)  
+1.1.6.2  [-m1_subset_1(4^[], k1_zfmisc_1(k3_cqc_lang(3^[])))]   (2)  
+1.1.6.3  [-m2_subset_1(6^[], k9_qc_lang1(3^[]), k3_cqc_lang(3^[]))]   (4)  
+1.1.6.4  [-r1_henmodel(3^[], 4^[], 6^[])]   (5)  
+------------------------------------------------------
+End of proof for t32_goedelcp

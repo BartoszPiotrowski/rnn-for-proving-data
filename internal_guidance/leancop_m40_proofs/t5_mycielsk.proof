@@ -1,0 +1,36 @@
+
+t5_mycielsk is a Theorem
+Start of proof for t5_mycielsk
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_necklace(3^[])]
+ (2)  [-l1_orders_2(3^[])]
+ (3)  [-r2_hidden(4^[], u1_struct_0(3^[]))]
+ (4)  [-r2_hidden(5^[], u1_struct_0(3^[]))]
+ (5)  [-r2_hidden(k4_tarski(4^[], 5^[]), u1_orders_2(3^[]))]
+ (6)  [r2_hidden(k4_tarski(5^[], 4^[]), u1_orders_2(3^[]))]
+ (7)  [m1_subset_1(_G1243, k1_zfmisc_1(k2_zfmisc_1(_G1134, _G1188))), -v1_relat_1(_G1243)]
+ (8)  [l1_orders_2(_G1486), v1_necklace(_G1486), -r3_relat_2(u1_orders_2(_G1486), u1_struct_0(_G1486))]
+ (9)  [l1_orders_2(_G1486), -v1_necklace(_G1486), r3_relat_2(u1_orders_2(_G1486), u1_struct_0(_G1486))]
+ (10)  [l1_orders_2(_G2571), -m1_subset_1(u1_orders_2(_G2571), k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(_G2571), u1_struct_0(_G2571))))]
+ (11)  [v1_relat_1(_G1733), -r3_relat_2(_G1733, _G1849), -r2_hidden(1^[_G1849, _G1733], _G1849)]
+ (12)  [v1_relat_1(_G1733), -r3_relat_2(_G1733, _G1849), -r2_hidden(2^[_G1849, _G1733], _G1849)]
+ (13)  [v1_relat_1(_G1733), -r3_relat_2(_G1733, _G1849), -r2_hidden(k4_tarski(1^[_G1849, _G1733], 2^[_G1849, _G1733]), _G1733)]
+ (14)  [v1_relat_1(_G1733), -r3_relat_2(_G1733, _G1849), r2_hidden(k4_tarski(2^[_G1849, _G1733], 1^[_G1849, _G1733]), _G1733)]
+ (15)  [v1_relat_1(_G1733), r3_relat_2(_G1733, _G1849), -r2_hidden(k4_tarski(_G2061, _G1986), _G1733), r2_hidden(_G1986, _G1849), r2_hidden(_G2061, _G1849), r2_hidden(k4_tarski(_G1986, _G2061), _G1733)]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(k4_tarski(5^[], 4^[]), u1_orders_2(3^[]))]   (6)  
+1.1  [-r2_hidden(k4_tarski(5^[], 4^[]), u1_orders_2(3^[])), v1_relat_1(u1_orders_2(3^[])), r3_relat_2(u1_orders_2(3^[]), u1_struct_0(3^[])), r2_hidden(4^[], u1_struct_0(3^[])), r2_hidden(5^[], u1_struct_0(3^[])), r2_hidden(k4_tarski(4^[], 5^[]), u1_orders_2(3^[]))]   (15)  substitution:[[_G2061, _G1986, _G1733, _G1849], [5^[], 4^[], u1_orders_2(3^[]), u1_struct_0(3^[])]]
+1.1.1  [-v1_relat_1(u1_orders_2(3^[])), m1_subset_1(u1_orders_2(3^[]), k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(3^[]), u1_struct_0(3^[]))))]   (7)  substitution:[[_G1243, _G1134, _G1188], [u1_orders_2(3^[]), u1_struct_0(3^[]), u1_struct_0(3^[])]]
+1.1.1.1  [-m1_subset_1(u1_orders_2(3^[]), k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(3^[]), u1_struct_0(3^[])))), l1_orders_2(3^[])]   (10)  substitution:[[_G2571], [3^[]]]
+1.1.1.1.1  [-l1_orders_2(3^[])]   (2)  
+1.1.2  [-r3_relat_2(u1_orders_2(3^[]), u1_struct_0(3^[])), l1_orders_2(3^[]), v1_necklace(3^[])]   (8)  substitution:[[_G1486], [3^[]]]
+1.1.2.1  [-l1_orders_2(3^[])]   (2)  
+1.1.2.2  [-v1_necklace(3^[])]   (1)  
+1.1.3  [-r2_hidden(4^[], u1_struct_0(3^[]))]   (3)  
+1.1.4  [-r2_hidden(5^[], u1_struct_0(3^[]))]   (4)  
+1.1.5  [-r2_hidden(k4_tarski(4^[], 5^[]), u1_orders_2(3^[]))]   (5)  
+------------------------------------------------------
+End of proof for t5_mycielsk

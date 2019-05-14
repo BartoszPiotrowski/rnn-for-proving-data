@@ -1,0 +1,41 @@
+
+t13_relset_2 is a Theorem
+Start of proof for t13_relset_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(2^[])]
+ (2)  [-v1_relat_1(3^[])]
+ (3)  [r1_tarski(k7_relat_1(k3_xboole_0(2^[], 3^[]), k10_eqrel_1(1^[])), k3_xboole_0(k7_relat_1(2^[], k10_eqrel_1(1^[])), k7_relat_1(3^[], k10_eqrel_1(1^[]))))]
+ (4)  [- (k3_xboole_0(_G5747, _G5792)=k3_xboole_0(_G5792, _G5747))]
+ (5)  [v1_relat_1(_G5989), -v1_relat_1(k3_xboole_0(_G5989, _G6035))]
+ (6)  [-r1_tarski(k3_xboole_0(_G6761, _G6803), _G6761)]
+ (7)  [-r1_tarski(_G6949, k3_xboole_0(_G7008, _G7068)), r1_tarski(_G6949, _G7008), r1_tarski(_G6949, _G7068)]
+ (8)  [v1_relat_1(_G6288), v1_relat_1(_G6387), r1_tarski(_G6288, _G6387), -r1_tarski(k7_relat_1(_G6288, _G6222), k7_relat_1(_G6387, _G6222))]
+ (9)  [- (k3_xboole_0(_G4221, _G4356)=k3_xboole_0(_G4288, _G4425)), _G4221=_G4288, _G4356=_G4425]
+ (10)  [_G5406=_G5455, - (k10_eqrel_1(_G5406)=k10_eqrel_1(_G5455))]
+ (11)  [- (k7_relat_1(_G4818, _G4953)=k7_relat_1(_G4885, _G5022)), _G4818=_G4885, _G4953=_G5022]
+ (12)  [- (_G2531=_G2531)]
+ (13)  [_G2630=_G2675, - (_G2675=_G2630)]
+ (14)  [- (_G2863=_G2976), _G2863=_G2919, _G2919=_G2976]
+ (15)  [-v1_relat_1(_G3362), _G3313=_G3362, v1_relat_1(_G3313)]
+ (16)  [-r1_tarski(_G3649, _G3786), r1_tarski(_G3582, _G3717), _G3582=_G3649, _G3717=_G3786]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k7_relat_1(k3_xboole_0(2^[], 3^[]), k10_eqrel_1(1^[])), k3_xboole_0(k7_relat_1(2^[], k10_eqrel_1(1^[])), k7_relat_1(3^[], k10_eqrel_1(1^[]))))]   (3)  
+1.1  [-r1_tarski(k7_relat_1(k3_xboole_0(2^[], 3^[]), k10_eqrel_1(1^[])), k3_xboole_0(k7_relat_1(2^[], k10_eqrel_1(1^[])), k7_relat_1(3^[], k10_eqrel_1(1^[])))), r1_tarski(k7_relat_1(k3_xboole_0(2^[], 3^[]), k10_eqrel_1(1^[])), k7_relat_1(2^[], k10_eqrel_1(1^[]))), r1_tarski(k7_relat_1(k3_xboole_0(2^[], 3^[]), k10_eqrel_1(1^[])), k7_relat_1(3^[], k10_eqrel_1(1^[])))]   (7)  substitution:[[_G6949, _G7008, _G7068], [k7_relat_1(k3_xboole_0(2^[], 3^[]), k10_eqrel_1(1^[])), k7_relat_1(2^[], k10_eqrel_1(1^[])), k7_relat_1(3^[], k10_eqrel_1(1^[]))]]
+1.1.1  [-r1_tarski(k7_relat_1(k3_xboole_0(2^[], 3^[]), k10_eqrel_1(1^[])), k7_relat_1(2^[], k10_eqrel_1(1^[]))), v1_relat_1(k3_xboole_0(2^[], 3^[])), v1_relat_1(2^[]), r1_tarski(k3_xboole_0(2^[], 3^[]), 2^[])]   (8)  substitution:[[_G6288, _G6222, _G6387], [k3_xboole_0(2^[], 3^[]), k10_eqrel_1(1^[]), 2^[]]]
+1.1.1.1  [-v1_relat_1(k3_xboole_0(2^[], 3^[])), v1_relat_1(2^[])]   (5)  substitution:[[_G5989, _G6035], [2^[], 3^[]]]
+1.1.1.1.1  [-v1_relat_1(2^[])]   (1)  
+1.1.1.2  [-v1_relat_1(2^[])]   (1)  
+1.1.1.3  [-r1_tarski(k3_xboole_0(2^[], 3^[]), 2^[])]   (6)  substitution:[[_G6761, _G6803], [2^[], 3^[]]]
+1.1.2  [-r1_tarski(k7_relat_1(k3_xboole_0(2^[], 3^[]), k10_eqrel_1(1^[])), k7_relat_1(3^[], k10_eqrel_1(1^[]))), v1_relat_1(k3_xboole_0(2^[], 3^[])), v1_relat_1(3^[]), r1_tarski(k3_xboole_0(2^[], 3^[]), 3^[])]   (8)  substitution:[[_G6288, _G6222, _G6387], [k3_xboole_0(2^[], 3^[]), k10_eqrel_1(1^[]), 3^[]]]
+1.1.2.1  [-v1_relat_1(k3_xboole_0(2^[], 3^[])), v1_relat_1(2^[])]   (5)  substitution:[[_G5989, _G6035], [2^[], 3^[]]]
+1.1.2.1.1  [-v1_relat_1(2^[])]   (1)  
+1.1.2.2  [-v1_relat_1(3^[])]   (2)  
+1.1.2.3  [-r1_tarski(k3_xboole_0(2^[], 3^[]), 3^[]), r1_tarski(k3_xboole_0(3^[], 2^[]), 3^[]), k3_xboole_0(3^[], 2^[])=k3_xboole_0(2^[], 3^[]), 3^[]=3^[]]   (16)  substitution:[[_G3649, _G3786, _G3582, _G3717], [k3_xboole_0(2^[], 3^[]), 3^[], k3_xboole_0(3^[], 2^[]), 3^[]]]
+1.1.2.3.1  [-r1_tarski(k3_xboole_0(3^[], 2^[]), 3^[])]   (6)  substitution:[[_G6761, _G6803], [3^[], 2^[]]]
+1.1.2.3.2  [- (k3_xboole_0(3^[], 2^[])=k3_xboole_0(2^[], 3^[]))]   (4)  substitution:[[_G5747, _G5792], [3^[], 2^[]]]
+1.1.2.3.3  [- (3^[]=3^[])]   (12)  substitution:[[_G2531], [3^[]]]
+------------------------------------------------------
+End of proof for t13_relset_2

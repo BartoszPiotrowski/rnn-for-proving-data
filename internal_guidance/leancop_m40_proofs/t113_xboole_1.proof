@@ -1,0 +1,26 @@
+
+t113_xboole_1 is a Theorem
+Start of proof for t113_xboole_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k2_xboole_0(k2_xboole_0(k2_xboole_0(1^[], 2^[]), 3^[]), 4^[])=k2_xboole_0(1^[], k2_xboole_0(k2_xboole_0(2^[], 3^[]), 4^[]))]
+ (2)  [- (k2_xboole_0(k2_xboole_0(_G2561, _G2617), _G2674)=k2_xboole_0(_G2561, k2_xboole_0(_G2617, _G2674)))]
+ (3)  [- (k2_xboole_0(_G1952, _G2087)=k2_xboole_0(_G2019, _G2156)), _G1952=_G2019, _G2087=_G2156]
+ (4)  [- (_G1179=_G1179)]
+ (5)  [_G1278=_G1323, - (_G1323=_G1278)]
+ (6)  [- (_G1511=_G1624), _G1511=_G1567, _G1567=_G1624]
+
+Connection Proof:
+-----------------
+1  [k2_xboole_0(k2_xboole_0(k2_xboole_0(1^[], 2^[]), 3^[]), 4^[])=k2_xboole_0(1^[], k2_xboole_0(k2_xboole_0(2^[], 3^[]), 4^[]))]   (1)  
+1.1  [- (k2_xboole_0(k2_xboole_0(k2_xboole_0(1^[], 2^[]), 3^[]), 4^[])=k2_xboole_0(1^[], k2_xboole_0(k2_xboole_0(2^[], 3^[]), 4^[]))), k2_xboole_0(1^[], k2_xboole_0(k2_xboole_0(2^[], 3^[]), 4^[]))=k2_xboole_0(k2_xboole_0(k2_xboole_0(1^[], 2^[]), 3^[]), 4^[])]   (5)  substitution:[[_G1323, _G1278], [k2_xboole_0(k2_xboole_0(k2_xboole_0(1^[], 2^[]), 3^[]), 4^[]), k2_xboole_0(1^[], k2_xboole_0(k2_xboole_0(2^[], 3^[]), 4^[]))]]
+1.1.1  [- (k2_xboole_0(1^[], k2_xboole_0(k2_xboole_0(2^[], 3^[]), 4^[]))=k2_xboole_0(k2_xboole_0(k2_xboole_0(1^[], 2^[]), 3^[]), 4^[])), k2_xboole_0(1^[], k2_xboole_0(k2_xboole_0(2^[], 3^[]), 4^[]))=k2_xboole_0(1^[], k2_xboole_0(2^[], k2_xboole_0(3^[], 4^[]))), k2_xboole_0(1^[], k2_xboole_0(2^[], k2_xboole_0(3^[], 4^[])))=k2_xboole_0(k2_xboole_0(k2_xboole_0(1^[], 2^[]), 3^[]), 4^[])]   (6)  substitution:[[_G1511, _G1624, _G1567], [k2_xboole_0(1^[], k2_xboole_0(k2_xboole_0(2^[], 3^[]), 4^[])), k2_xboole_0(k2_xboole_0(k2_xboole_0(1^[], 2^[]), 3^[]), 4^[]), k2_xboole_0(1^[], k2_xboole_0(2^[], k2_xboole_0(3^[], 4^[])))]]
+1.1.1.1  [- (k2_xboole_0(1^[], k2_xboole_0(k2_xboole_0(2^[], 3^[]), 4^[]))=k2_xboole_0(1^[], k2_xboole_0(2^[], k2_xboole_0(3^[], 4^[])))), 1^[]=1^[], k2_xboole_0(k2_xboole_0(2^[], 3^[]), 4^[])=k2_xboole_0(2^[], k2_xboole_0(3^[], 4^[]))]   (3)  substitution:[[_G1952, _G2087, _G2019, _G2156], [1^[], k2_xboole_0(k2_xboole_0(2^[], 3^[]), 4^[]), 1^[], k2_xboole_0(2^[], k2_xboole_0(3^[], 4^[]))]]
+1.1.1.1.1  [- (1^[]=1^[])]   (4)  substitution:[[_G1179], [1^[]]]
+1.1.1.1.2  [- (k2_xboole_0(k2_xboole_0(2^[], 3^[]), 4^[])=k2_xboole_0(2^[], k2_xboole_0(3^[], 4^[])))]   (2)  substitution:[[_G2561, _G2617, _G2674], [2^[], 3^[], 4^[]]]
+1.1.1.2  [- (k2_xboole_0(1^[], k2_xboole_0(2^[], k2_xboole_0(3^[], 4^[])))=k2_xboole_0(k2_xboole_0(k2_xboole_0(1^[], 2^[]), 3^[]), 4^[])), k2_xboole_0(k2_xboole_0(k2_xboole_0(1^[], 2^[]), 3^[]), 4^[])=k2_xboole_0(1^[], k2_xboole_0(2^[], k2_xboole_0(3^[], 4^[])))]   (5)  substitution:[[_G1323, _G1278], [k2_xboole_0(1^[], k2_xboole_0(2^[], k2_xboole_0(3^[], 4^[]))), k2_xboole_0(k2_xboole_0(k2_xboole_0(1^[], 2^[]), 3^[]), 4^[])]]
+1.1.1.2.1  [- (k2_xboole_0(k2_xboole_0(k2_xboole_0(1^[], 2^[]), 3^[]), 4^[])=k2_xboole_0(1^[], k2_xboole_0(2^[], k2_xboole_0(3^[], 4^[])))), k2_xboole_0(k2_xboole_0(k2_xboole_0(1^[], 2^[]), 3^[]), 4^[])=k2_xboole_0(k2_xboole_0(1^[], 2^[]), k2_xboole_0(3^[], 4^[])), k2_xboole_0(k2_xboole_0(1^[], 2^[]), k2_xboole_0(3^[], 4^[]))=k2_xboole_0(1^[], k2_xboole_0(2^[], k2_xboole_0(3^[], 4^[])))]   (6)  substitution:[[_G1511, _G1624, _G1567], [k2_xboole_0(k2_xboole_0(k2_xboole_0(1^[], 2^[]), 3^[]), 4^[]), k2_xboole_0(1^[], k2_xboole_0(2^[], k2_xboole_0(3^[], 4^[]))), k2_xboole_0(k2_xboole_0(1^[], 2^[]), k2_xboole_0(3^[], 4^[]))]]
+1.1.1.2.1.1  [- (k2_xboole_0(k2_xboole_0(k2_xboole_0(1^[], 2^[]), 3^[]), 4^[])=k2_xboole_0(k2_xboole_0(1^[], 2^[]), k2_xboole_0(3^[], 4^[])))]   (2)  substitution:[[_G2561, _G2617, _G2674], [k2_xboole_0(1^[], 2^[]), 3^[], 4^[]]]
+1.1.1.2.1.2  [- (k2_xboole_0(k2_xboole_0(1^[], 2^[]), k2_xboole_0(3^[], 4^[]))=k2_xboole_0(1^[], k2_xboole_0(2^[], k2_xboole_0(3^[], 4^[]))))]   (2)  substitution:[[_G2561, _G2617, _G2674], [1^[], 2^[], k2_xboole_0(3^[], 4^[])]]
+------------------------------------------------------
+End of proof for t113_xboole_1

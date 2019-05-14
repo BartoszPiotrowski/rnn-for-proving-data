@@ -1,0 +1,44 @@
+
+l58_orders_1 is a Theorem
+Start of proof for l58_orders_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(4^[])]
+ (2)  [-r1_relat_2(4^[], 5^[])]
+ (3)  [r1_relat_2(k2_relat_1(4^[]), 5^[])]
+ (4)  [v1_relat_1(_G5344), -r1_relat_2(_G5344, _G5440), -r2_hidden(1^[_G5440, _G5344], _G5440)]
+ (5)  [v1_relat_1(_G5344), -r1_relat_2(_G5344, _G5440), r2_hidden(k4_tarski(1^[_G5440, _G5344], 1^[_G5440, _G5344]), _G5344)]
+ (6)  [v1_relat_1(_G5344), r1_relat_2(_G5344, _G5440), r2_hidden(_G5557, _G5440), -r2_hidden(k4_tarski(_G5557, _G5557), _G5344)]
+ (7)  [v1_relat_1(_G6567), -v1_relat_1(k2_relat_1(_G6567))]
+ (8)  [v1_relat_1(_G5852), v1_relat_1(_G5963), _G5963=k2_relat_1(_G5852), r2_hidden(k4_tarski(_G6141, _G6204), _G5963), -r2_hidden(k4_tarski(_G6204, _G6141), _G5852)]
+ (9)  [v1_relat_1(_G5852), v1_relat_1(_G5963), _G5963=k2_relat_1(_G5852), -r2_hidden(k4_tarski(_G6141, _G6204), _G5963), r2_hidden(k4_tarski(_G6204, _G6141), _G5852)]
+ (10)  [v1_relat_1(_G5852), v1_relat_1(_G5963), - (_G5963=k2_relat_1(_G5852)), r2_hidden(k4_tarski(2^[_G5963, _G5852], 3^[_G5963, _G5852]), _G5963), r2_hidden(k4_tarski(3^[_G5963, _G5852], 2^[_G5963, _G5852]), _G5852)]
+ (11)  [v1_relat_1(_G5852), v1_relat_1(_G5963), - (_G5963=k2_relat_1(_G5852)), -r2_hidden(k4_tarski(2^[_G5963, _G5852], 3^[_G5963, _G5852]), _G5963), -r2_hidden(k4_tarski(3^[_G5963, _G5852], 2^[_G5963, _G5852]), _G5852)]
+ (12)  [_G5024=_G5073, - (k2_relat_1(_G5024)=k2_relat_1(_G5073))]
+ (13)  [- (k4_tarski(_G4436, _G4571)=k4_tarski(_G4503, _G4640)), _G4436=_G4503, _G4571=_G4640]
+ (14)  [- (_G2128=_G2128)]
+ (15)  [_G2227=_G2272, - (_G2272=_G2227)]
+ (16)  [- (_G2460=_G2573), _G2460=_G2516, _G2516=_G2573]
+ (17)  [-r2_hidden(_G2977, _G3114), r2_hidden(_G2910, _G3045), _G2910=_G2977, _G3045=_G3114]
+ (18)  [-v1_relat_1(_G3556), _G3507=_G3556, v1_relat_1(_G3507)]
+ (19)  [-r1_relat_2(_G3843, _G3980), r1_relat_2(_G3776, _G3911), _G3776=_G3843, _G3911=_G3980]
+
+Connection Proof:
+-----------------
+1  [r1_relat_2(k2_relat_1(4^[]), 5^[])]   (3)  
+1.1  [-r1_relat_2(k2_relat_1(4^[]), 5^[]), v1_relat_1(k2_relat_1(4^[])), r2_hidden(k4_tarski(1^[5^[], k2_relat_1(4^[])], 1^[5^[], k2_relat_1(4^[])]), k2_relat_1(4^[]))]   (5)  substitution:[[_G5344, _G5440], [k2_relat_1(4^[]), 5^[]]]
+1.1.1  [-v1_relat_1(k2_relat_1(4^[])), v1_relat_1(4^[])]   (7)  substitution:[[_G6567], [4^[]]]
+1.1.1.1  [-v1_relat_1(4^[])]   (1)  
+1.1.2  [-r2_hidden(k4_tarski(1^[5^[], k2_relat_1(4^[])], 1^[5^[], k2_relat_1(4^[])]), k2_relat_1(4^[])), v1_relat_1(4^[]), v1_relat_1(k2_relat_1(4^[])), k2_relat_1(4^[])=k2_relat_1(4^[]), r2_hidden(k4_tarski(1^[5^[], k2_relat_1(4^[])], 1^[5^[], k2_relat_1(4^[])]), 4^[])]   (9)  substitution:[[_G6141, _G6204, _G5963, _G5852], [1^[5^[], k2_relat_1(4^[])], 1^[5^[], k2_relat_1(4^[])], k2_relat_1(4^[]), 4^[]]]
+1.1.2.1  [-v1_relat_1(4^[])]   (1)  
+1.1.2.2  [-v1_relat_1(k2_relat_1(4^[]))]   (lemmata:1.1)  
+1.1.2.3  [- (k2_relat_1(4^[])=k2_relat_1(4^[])), 4^[]=4^[]]   (12)  substitution:[[_G5024, _G5073], [4^[], 4^[]]]
+1.1.2.3.1  [- (4^[]=4^[])]   (14)  substitution:[[_G2128], [4^[]]]
+1.1.2.4  [-r2_hidden(k4_tarski(1^[5^[], k2_relat_1(4^[])], 1^[5^[], k2_relat_1(4^[])]), 4^[]), v1_relat_1(4^[]), r1_relat_2(4^[], 5^[]), r2_hidden(1^[5^[], k2_relat_1(4^[])], 5^[])]   (6)  substitution:[[_G5557, _G5344, _G5440], [1^[5^[], k2_relat_1(4^[])], 4^[], 5^[]]]
+1.1.2.4.1  [-v1_relat_1(4^[])]   (1)  
+1.1.2.4.2  [-r1_relat_2(4^[], 5^[])]   (2)  
+1.1.2.4.3  [-r2_hidden(1^[5^[], k2_relat_1(4^[])], 5^[]), v1_relat_1(k2_relat_1(4^[])), -r1_relat_2(k2_relat_1(4^[]), 5^[])]   (4)  substitution:[[_G5440, _G5344], [5^[], k2_relat_1(4^[])]]
+1.1.2.4.3.1  [-v1_relat_1(k2_relat_1(4^[]))]   (lemmata:1.1.2)  
+1.1.2.4.3.2  [r1_relat_2(k2_relat_1(4^[]), 5^[])]   (3)  
+------------------------------------------------------
+End of proof for l58_orders_1

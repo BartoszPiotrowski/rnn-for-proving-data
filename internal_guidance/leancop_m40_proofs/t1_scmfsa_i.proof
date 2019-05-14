@@ -1,0 +1,35 @@
+
+t1_scmfsa_i is a Theorem
+Start of proof for t1_scmfsa_i
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [r1_tarski(k3_scm_inst, k2_scmfsa_i)]
+ (2)  [- (k2_xboole_0(_G3557, _G3692)=k2_xboole_0(_G3624, _G3761)), _G3557=_G3624, _G3692=_G3761]
+ (3)  [- (_G1557=_G1557)]
+ (4)  [_G1656=_G1701, - (_G1701=_G1656)]
+ (5)  [- (_G1889=_G2002), _G1889=_G1945, _G1945=_G2002]
+ (6)  [-r2_hidden(_G2406, _G2543), r2_hidden(_G2339, _G2474), _G2339=_G2406, _G2474=_G2543]
+ (7)  [-r1_tarski(_G2994, _G3131), r1_tarski(_G2927, _G3062), _G2927=_G2994, _G3062=_G3131]
+ (8)  [- (k2_scmfsa_i=k2_xboole_0(k2_xboole_0(k3_scm_inst, a_0_0_scmfsa_i), a_0_1_scmfsa_i))]
+ (9)  [-r1_tarski(_G4310, _G4366), -r2_hidden(1^[_G4366, _G4310], _G4310)]
+ (10)  [-r1_tarski(_G4310, _G4366), r2_hidden(1^[_G4366, _G4310], _G4366)]
+ (11)  [r1_tarski(_G4310, _G4366), r2_hidden(_G4480, _G4310), -r2_hidden(_G4480, _G4366)]
+ (12)  [_G4844=k2_xboole_0(_G4703, _G4773), -r2_hidden(_G5012, _G4844), r2_hidden(_G5012, _G4703)]
+ (13)  [_G4844=k2_xboole_0(_G4703, _G4773), -r2_hidden(_G5012, _G4844), r2_hidden(_G5012, _G4773)]
+ (14)  [_G4844=k2_xboole_0(_G4703, _G4773), r2_hidden(_G5012, _G4844), -r2_hidden(_G5012, _G4703), -r2_hidden(_G5012, _G4773)]
+ (15)  [- (_G4844=k2_xboole_0(_G4703, _G4773)), r2_hidden(2^[_G4844, _G4773, _G4703], _G4844), r2_hidden(2^[_G4844, _G4773, _G4703], _G4703)]
+ (16)  [- (_G4844=k2_xboole_0(_G4703, _G4773)), r2_hidden(2^[_G4844, _G4773, _G4703], _G4844), r2_hidden(2^[_G4844, _G4773, _G4703], _G4773)]
+ (17)  [- (_G4844=k2_xboole_0(_G4703, _G4773)), -r2_hidden(2^[_G4844, _G4773, _G4703], _G4844), -r2_hidden(2^[_G4844, _G4773, _G4703], _G4703), -r2_hidden(2^[_G4844, _G4773, _G4703], _G4773)]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k3_scm_inst, k2_scmfsa_i)]   (1)  
+1.1  [-r1_tarski(k3_scm_inst, k2_scmfsa_i), r2_hidden(1^[k2_scmfsa_i, k3_scm_inst], k2_scmfsa_i)]   (10)  substitution:[[_G4310, _G4366], [k3_scm_inst, k2_scmfsa_i]]
+1.1.1  [-r2_hidden(1^[k2_scmfsa_i, k3_scm_inst], k2_scmfsa_i), k2_scmfsa_i=k2_xboole_0(k2_xboole_0(k3_scm_inst, a_0_0_scmfsa_i), a_0_1_scmfsa_i), r2_hidden(1^[k2_scmfsa_i, k3_scm_inst], k2_xboole_0(k3_scm_inst, a_0_0_scmfsa_i))]   (12)  substitution:[[_G5012, _G4844, _G4703, _G4773], [1^[k2_scmfsa_i, k3_scm_inst], k2_scmfsa_i, k2_xboole_0(k3_scm_inst, a_0_0_scmfsa_i), a_0_1_scmfsa_i]]
+1.1.1.1  [- (k2_scmfsa_i=k2_xboole_0(k2_xboole_0(k3_scm_inst, a_0_0_scmfsa_i), a_0_1_scmfsa_i))]   (8)  
+1.1.1.2  [-r2_hidden(1^[k2_scmfsa_i, k3_scm_inst], k2_xboole_0(k3_scm_inst, a_0_0_scmfsa_i)), k2_xboole_0(k3_scm_inst, a_0_0_scmfsa_i)=k2_xboole_0(k3_scm_inst, a_0_0_scmfsa_i), r2_hidden(1^[k2_scmfsa_i, k3_scm_inst], k3_scm_inst)]   (12)  substitution:[[_G5012, _G4844, _G4703, _G4773], [1^[k2_scmfsa_i, k3_scm_inst], k2_xboole_0(k3_scm_inst, a_0_0_scmfsa_i), k3_scm_inst, a_0_0_scmfsa_i]]
+1.1.1.2.1  [- (k2_xboole_0(k3_scm_inst, a_0_0_scmfsa_i)=k2_xboole_0(k3_scm_inst, a_0_0_scmfsa_i))]   (3)  substitution:[[_G1557], [k2_xboole_0(k3_scm_inst, a_0_0_scmfsa_i)]]
+1.1.1.2.2  [-r2_hidden(1^[k2_scmfsa_i, k3_scm_inst], k3_scm_inst), -r1_tarski(k3_scm_inst, k2_scmfsa_i)]   (9)  substitution:[[_G4366, _G4310], [k2_scmfsa_i, k3_scm_inst]]
+1.1.1.2.2.1  [r1_tarski(k3_scm_inst, k2_scmfsa_i)]   (1)  
+------------------------------------------------------
+End of proof for t1_scmfsa_i

@@ -1,0 +1,73 @@
+
+t20_trees_2 is a Theorem
+Start of proof for t20_trees_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v1_xboole_0(4^[])]
+ (2)  [-v1_trees_1(4^[])]
+ (3)  [m1_trees_2(k1_tarski(k1_xboole_0), 4^[])]
+ (4)  [_G9388=k1_tarski(_G9330), r2_hidden(_G9518, _G9388), - (_G9518=_G9330)]
+ (5)  [_G9388=k1_tarski(_G9330), -r2_hidden(_G9518, _G9388), _G9518=_G9330]
+ (6)  [- (_G9388=k1_tarski(_G9330)), r2_hidden(1^[_G9388, _G9330], _G9388), 1^[_G9388, _G9330]=_G9330]
+ (7)  [- (_G9388=k1_tarski(_G9330)), -r2_hidden(1^[_G9388, _G9330], _G9388), - (1^[_G9388, _G9330]=_G9330)]
+ (8)  [v1_trees_1(_G9750), -v1_xboole_0(_G9750), m1_subset_1(_G9948, k1_zfmisc_1(_G9750)), -m1_trees_2(_G9948, _G9750), -m2_finseq_1(2^[_G9948, _G9750], k5_numbers)]
+ (9)  [v1_trees_1(_G9750), -v1_xboole_0(_G9750), m1_subset_1(_G9948, k1_zfmisc_1(_G9750)), -m1_trees_2(_G9948, _G9750), -m2_finseq_1(3^[_G9948, _G9750], k5_numbers)]
+ (10)  [v1_trees_1(_G9750), -v1_xboole_0(_G9750), m1_subset_1(_G9948, k1_zfmisc_1(_G9750)), -m1_trees_2(_G9948, _G9750), -r2_hidden(2^[_G9948, _G9750], _G9948)]
+ (11)  [v1_trees_1(_G9750), -v1_xboole_0(_G9750), m1_subset_1(_G9948, k1_zfmisc_1(_G9750)), -m1_trees_2(_G9948, _G9750), -r2_hidden(3^[_G9948, _G9750], _G9948)]
+ (12)  [v1_trees_1(_G9750), -v1_xboole_0(_G9750), m1_subset_1(_G9948, k1_zfmisc_1(_G9750)), -m1_trees_2(_G9948, _G9750), r3_xboole_0(2^[_G9948, _G9750], 3^[_G9948, _G9750])]
+ (13)  [v1_trees_1(_G9750), -v1_xboole_0(_G9750), m1_subset_1(_G9948, k1_zfmisc_1(_G9750)), m1_trees_2(_G9948, _G9750), m2_finseq_1(_G10164, k5_numbers), m2_finseq_1(_G10296, k5_numbers), -r3_xboole_0(_G10164, _G10296), r2_hidden(_G10164, _G9948), r2_hidden(_G10296, _G9948)]
+ (14)  [-r3_xboole_0(_G10773, _G10773)]
+ (15)  [-r2_hidden(k1_xboole_0, _G10925), -v1_xboole_0(_G10925), v1_trees_1(_G10925)]
+ (16)  [-r2_hidden(k6_finseq_1(k5_numbers), _G10925), -v1_xboole_0(_G10925), v1_trees_1(_G10925)]
+ (17)  [r1_tarski(k1_tarski(_G11254), _G11301), -r2_hidden(_G11254, _G11301)]
+ (18)  [-r1_tarski(k1_tarski(_G11254), _G11301), r2_hidden(_G11254, _G11301)]
+ (19)  [m1_subset_1(_G11505, k1_zfmisc_1(_G11552)), -r1_tarski(_G11505, _G11552)]
+ (20)  [-m1_subset_1(_G11505, k1_zfmisc_1(_G11552)), r1_tarski(_G11505, _G11552)]
+ (21)  [_G8442=_G8491, - (k6_finseq_1(_G8442)=k6_finseq_1(_G8491))]
+ (22)  [_G8720=_G8769, - (k1_zfmisc_1(_G8720)=k1_zfmisc_1(_G8769))]
+ (23)  [_G8989=_G9038, - (k1_tarski(_G8989)=k1_tarski(_G9038))]
+ (24)  [- (_G3363=_G3363)]
+ (25)  [_G3462=_G3507, - (_G3507=_G3462)]
+ (26)  [- (_G3695=_G3808), _G3695=_G3751, _G3751=_G3808]
+ (27)  [-m2_finseq_1(_G4212, _G4349), m2_finseq_1(_G4145, _G4280), _G4145=_G4212, _G4280=_G4349]
+ (28)  [-r3_xboole_0(_G4809, _G4946), r3_xboole_0(_G4742, _G4877), _G4742=_G4809, _G4877=_G4946]
+ (29)  [-r2_hidden(_G5406, _G5543), r2_hidden(_G5339, _G5474), _G5339=_G5406, _G5474=_G5543]
+ (30)  [-m1_subset_1(_G6003, _G6140), m1_subset_1(_G5936, _G6071), _G5936=_G6003, _G6071=_G6140]
+ (31)  [-r1_tarski(_G6600, _G6737), r1_tarski(_G6533, _G6668), _G6533=_G6600, _G6668=_G6737]
+ (32)  [-v1_xboole_0(_G7179), _G7130=_G7179, v1_xboole_0(_G7130)]
+ (33)  [-v1_trees_1(_G7457), _G7408=_G7457, v1_trees_1(_G7408)]
+ (34)  [-m1_trees_2(_G7744, _G7881), m1_trees_2(_G7677, _G7812), _G7677=_G7744, _G7812=_G7881]
+
+Connection Proof:
+-----------------
+1  [v1_xboole_0(4^[])]   (1)  
+1.1  [-v1_xboole_0(4^[]), v1_trees_1(4^[]), m1_subset_1(k1_tarski(k1_xboole_0), k1_zfmisc_1(4^[])), -m1_trees_2(k1_tarski(k1_xboole_0), 4^[]), r3_xboole_0(2^[k1_tarski(k1_xboole_0), 4^[]], 3^[k1_tarski(k1_xboole_0), 4^[]])]   (12)  substitution:[[_G9750, _G9948], [4^[], k1_tarski(k1_xboole_0)]]
+1.1.1  [-v1_trees_1(4^[])]   (2)  
+1.1.2  [-m1_subset_1(k1_tarski(k1_xboole_0), k1_zfmisc_1(4^[])), r1_tarski(k1_tarski(k1_xboole_0), 4^[])]   (20)  substitution:[[_G11505, _G11552], [k1_tarski(k1_xboole_0), 4^[]]]
+1.1.2.1  [-r1_tarski(k1_tarski(k1_xboole_0), 4^[]), r2_hidden(k1_xboole_0, 4^[])]   (18)  substitution:[[_G11254, _G11301], [k1_xboole_0, 4^[]]]
+1.1.2.1.1  [-r2_hidden(k1_xboole_0, 4^[]), -v1_xboole_0(4^[]), v1_trees_1(4^[])]   (15)  substitution:[[_G10925], [4^[]]]
+1.1.2.1.1.1  [v1_xboole_0(4^[])]   (1)  
+1.1.2.1.1.2  [-v1_trees_1(4^[])]   (2)  
+1.1.3  [m1_trees_2(k1_tarski(k1_xboole_0), 4^[])]   (3)  
+1.1.4  [-r3_xboole_0(2^[k1_tarski(k1_xboole_0), 4^[]], 3^[k1_tarski(k1_xboole_0), 4^[]]), r3_xboole_0(2^[k1_tarski(k1_xboole_0), 4^[]], 2^[k1_tarski(k1_xboole_0), 4^[]]), 2^[k1_tarski(k1_xboole_0), 4^[]]=2^[k1_tarski(k1_xboole_0), 4^[]], 2^[k1_tarski(k1_xboole_0), 4^[]]=3^[k1_tarski(k1_xboole_0), 4^[]]]   (28)  substitution:[[_G4809, _G4946, _G4742, _G4877], [2^[k1_tarski(k1_xboole_0), 4^[]], 3^[k1_tarski(k1_xboole_0), 4^[]], 2^[k1_tarski(k1_xboole_0), 4^[]], 2^[k1_tarski(k1_xboole_0), 4^[]]]]
+1.1.4.1  [-r3_xboole_0(2^[k1_tarski(k1_xboole_0), 4^[]], 2^[k1_tarski(k1_xboole_0), 4^[]])]   (14)  substitution:[[_G10773], [2^[k1_tarski(k1_xboole_0), 4^[]]]]
+1.1.4.2  [- (2^[k1_tarski(k1_xboole_0), 4^[]]=2^[k1_tarski(k1_xboole_0), 4^[]])]   (24)  substitution:[[_G3363], [2^[k1_tarski(k1_xboole_0), 4^[]]]]
+1.1.4.3  [- (2^[k1_tarski(k1_xboole_0), 4^[]]=3^[k1_tarski(k1_xboole_0), 4^[]]), 2^[k1_tarski(k1_xboole_0), 4^[]]=k1_xboole_0, k1_xboole_0=3^[k1_tarski(k1_xboole_0), 4^[]]]   (26)  substitution:[[_G3695, _G3808, _G3751], [2^[k1_tarski(k1_xboole_0), 4^[]], 3^[k1_tarski(k1_xboole_0), 4^[]], k1_xboole_0]]
+1.1.4.3.1  [- (2^[k1_tarski(k1_xboole_0), 4^[]]=k1_xboole_0), k1_tarski(k1_xboole_0)=k1_tarski(k1_xboole_0), r2_hidden(2^[k1_tarski(k1_xboole_0), 4^[]], k1_tarski(k1_xboole_0))]   (4)  substitution:[[_G9518, _G9330, _G9388], [2^[k1_tarski(k1_xboole_0), 4^[]], k1_xboole_0, k1_tarski(k1_xboole_0)]]
+1.1.4.3.1.1  [- (k1_tarski(k1_xboole_0)=k1_tarski(k1_xboole_0)), k1_xboole_0=k1_xboole_0]   (23)  substitution:[[_G8989, _G9038], [k1_xboole_0, k1_xboole_0]]
+1.1.4.3.1.1.1  [- (k1_xboole_0=k1_xboole_0)]   (24)  substitution:[[_G3363], [k1_xboole_0]]
+1.1.4.3.1.2  [-r2_hidden(2^[k1_tarski(k1_xboole_0), 4^[]], k1_tarski(k1_xboole_0)), v1_trees_1(4^[]), -v1_xboole_0(4^[]), m1_subset_1(k1_tarski(k1_xboole_0), k1_zfmisc_1(4^[])), -m1_trees_2(k1_tarski(k1_xboole_0), 4^[])]   (10)  substitution:[[_G9948, _G9750], [k1_tarski(k1_xboole_0), 4^[]]]
+1.1.4.3.1.2.1  [-v1_trees_1(4^[])]   (2)  
+1.1.4.3.1.2.2  [v1_xboole_0(4^[])]   (1)  
+1.1.4.3.1.2.3  [-m1_subset_1(k1_tarski(k1_xboole_0), k1_zfmisc_1(4^[]))]   (lemmata:1.1)  
+1.1.4.3.1.2.4  [m1_trees_2(k1_tarski(k1_xboole_0), 4^[])]   (3)  
+1.1.4.3.2  [- (k1_xboole_0=3^[k1_tarski(k1_xboole_0), 4^[]]), 3^[k1_tarski(k1_xboole_0), 4^[]]=k1_xboole_0]   (25)  substitution:[[_G3507, _G3462], [k1_xboole_0, 3^[k1_tarski(k1_xboole_0), 4^[]]]]
+1.1.4.3.2.1  [- (3^[k1_tarski(k1_xboole_0), 4^[]]=k1_xboole_0), k1_tarski(k1_xboole_0)=k1_tarski(k1_xboole_0), r2_hidden(3^[k1_tarski(k1_xboole_0), 4^[]], k1_tarski(k1_xboole_0))]   (4)  substitution:[[_G9518, _G9330, _G9388], [3^[k1_tarski(k1_xboole_0), 4^[]], k1_xboole_0, k1_tarski(k1_xboole_0)]]
+1.1.4.3.2.1.1  [- (k1_tarski(k1_xboole_0)=k1_tarski(k1_xboole_0))]   (24)  substitution:[[_G3363], [k1_tarski(k1_xboole_0)]]
+1.1.4.3.2.1.2  [-r2_hidden(3^[k1_tarski(k1_xboole_0), 4^[]], k1_tarski(k1_xboole_0)), v1_trees_1(4^[]), -v1_xboole_0(4^[]), m1_subset_1(k1_tarski(k1_xboole_0), k1_zfmisc_1(4^[])), -m1_trees_2(k1_tarski(k1_xboole_0), 4^[])]   (11)  substitution:[[_G9948, _G9750], [k1_tarski(k1_xboole_0), 4^[]]]
+1.1.4.3.2.1.2.1  [-v1_trees_1(4^[])]   (2)  
+1.1.4.3.2.1.2.2  [v1_xboole_0(4^[])]   (1)  
+1.1.4.3.2.1.2.3  [-m1_subset_1(k1_tarski(k1_xboole_0), k1_zfmisc_1(4^[]))]   (lemmata:1.1)  
+1.1.4.3.2.1.2.4  [m1_trees_2(k1_tarski(k1_xboole_0), 4^[])]   (3)  
+------------------------------------------------------
+End of proof for t20_trees_2

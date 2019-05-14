@@ -1,0 +1,50 @@
+
+t16_topalg_2 is a Theorem
+Start of proof for t16_topalg_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], u1_struct_0(k5_topmetr))]
+ (2)  [-m1_subset_1(2^[], u1_struct_0(k5_topmetr))]
+ (3)  [-m1_borsuk_2(3^[], k5_topmetr, 1^[], 2^[])]
+ (4)  [-m1_borsuk_2(4^[], k5_topmetr, 1^[], 2^[])]
+ (5)  [r4_borsuk_2(k5_topmetr, 1^[], 2^[], 3^[], 4^[])]
+ (6)  [-m1_pre_topc(k5_topmetr, k3_topmetr)]
+ (7)  [v2_struct_0(k17_borsuk_1)]
+ (8)  [-v1_pre_topc(k17_borsuk_1)]
+ (9)  [-v2_pre_topc(k17_borsuk_1)]
+ (10)  [- (k2_topalg_2=k3_topmetr)]
+ (11)  [- (k5_topmetr=k17_borsuk_1)]
+ (12)  [-v2_topalg_2(k5_topmetr)]
+ (13)  [m1_pre_topc(_G10424, k2_topalg_2), v2_topalg_2(_G10424), -v2_struct_0(_G10424), m1_subset_1(_G10708, u1_struct_0(_G10424)), m1_subset_1(_G10869, u1_struct_0(_G10424)), m1_borsuk_2(_G11023, _G10424, _G10708, _G10869), m1_borsuk_2(_G11242, _G10424, _G10708, _G10869), -r4_borsuk_2(_G10424, _G10708, _G10869, _G11023, _G11242)]
+ (14)  [_G9779=_G9828, - (u1_struct_0(_G9779)=u1_struct_0(_G9828))]
+ (15)  [- (_G2888=_G2888)]
+ (16)  [_G2987=_G3032, - (_G3032=_G2987)]
+ (17)  [- (_G3220=_G3333), _G3220=_G3276, _G3276=_G3333]
+ (18)  [-v1_pre_topc(_G3719), _G3670=_G3719, v1_pre_topc(_G3670)]
+ (19)  [-v2_pre_topc(_G3997), _G3948=_G3997, v2_pre_topc(_G3948)]
+ (20)  [-v2_struct_0(_G4275), _G4226=_G4275, v2_struct_0(_G4226)]
+ (21)  [-v2_topalg_2(_G4553), _G4504=_G4553, v2_topalg_2(_G4504)]
+ (22)  [-m1_pre_topc(_G4849, _G4986), m1_pre_topc(_G4782, _G4917), _G4782=_G4849, _G4917=_G4986]
+ (23)  [-m1_subset_1(_G5446, _G5583), m1_subset_1(_G5379, _G5514), _G5379=_G5446, _G5514=_G5583]
+ (24)  [-m1_borsuk_2(_G6079, _G6288, _G6501, _G6718), m1_borsuk_2(_G5976, _G6183, _G6394, _G6609), _G5976=_G6079, _G6183=_G6288, _G6394=_G6501, _G6609=_G6718]
+ (25)  [-r4_borsuk_2(_G7623, _G7868, _G8117, _G8370, _G8627), r4_borsuk_2(_G7502, _G7745, _G7992, _G8243, _G8498), _G7502=_G7623, _G7745=_G7868, _G7992=_G8117, _G8243=_G8370, _G8498=_G8627]
+
+Connection Proof:
+-----------------
+1  [r4_borsuk_2(k5_topmetr, 1^[], 2^[], 3^[], 4^[])]   (5)  
+1.1  [-r4_borsuk_2(k5_topmetr, 1^[], 2^[], 3^[], 4^[]), m1_pre_topc(k5_topmetr, k2_topalg_2), v2_topalg_2(k5_topmetr), -v2_struct_0(k5_topmetr), m1_subset_1(1^[], u1_struct_0(k5_topmetr)), m1_subset_1(2^[], u1_struct_0(k5_topmetr)), m1_borsuk_2(3^[], k5_topmetr, 1^[], 2^[]), m1_borsuk_2(4^[], k5_topmetr, 1^[], 2^[])]   (13)  substitution:[[_G10424, _G10708, _G10869, _G11023, _G11242], [k5_topmetr, 1^[], 2^[], 3^[], 4^[]]]
+1.1.1  [-m1_pre_topc(k5_topmetr, k2_topalg_2), m1_pre_topc(k5_topmetr, k3_topmetr), k5_topmetr=k5_topmetr, k3_topmetr=k2_topalg_2]   (22)  substitution:[[_G4849, _G4986, _G4782, _G4917], [k5_topmetr, k2_topalg_2, k5_topmetr, k3_topmetr]]
+1.1.1.1  [-m1_pre_topc(k5_topmetr, k3_topmetr)]   (6)  
+1.1.1.2  [- (k5_topmetr=k5_topmetr)]   (15)  substitution:[[_G2888], [k5_topmetr]]
+1.1.1.3  [- (k3_topmetr=k2_topalg_2), k2_topalg_2=k3_topmetr]   (16)  substitution:[[_G3032, _G2987], [k3_topmetr, k2_topalg_2]]
+1.1.1.3.1  [- (k2_topalg_2=k3_topmetr)]   (10)  
+1.1.2  [-v2_topalg_2(k5_topmetr)]   (12)  
+1.1.3  [v2_struct_0(k5_topmetr), -v2_struct_0(k17_borsuk_1), k5_topmetr=k17_borsuk_1]   (20)  substitution:[[_G4226, _G4275], [k5_topmetr, k17_borsuk_1]]
+1.1.3.1  [v2_struct_0(k17_borsuk_1)]   (7)  
+1.1.3.2  [- (k5_topmetr=k17_borsuk_1)]   (11)  
+1.1.4  [-m1_subset_1(1^[], u1_struct_0(k5_topmetr))]   (1)  
+1.1.5  [-m1_subset_1(2^[], u1_struct_0(k5_topmetr))]   (2)  
+1.1.6  [-m1_borsuk_2(3^[], k5_topmetr, 1^[], 2^[])]   (3)  
+1.1.7  [-m1_borsuk_2(4^[], k5_topmetr, 1^[], 2^[])]   (4)  
+------------------------------------------------------
+End of proof for t16_topalg_2

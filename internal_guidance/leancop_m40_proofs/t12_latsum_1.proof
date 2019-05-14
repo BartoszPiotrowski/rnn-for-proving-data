@@ -1,0 +1,37 @@
+
+t12_latsum_1 is a Theorem
+Start of proof for t12_latsum_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(2^[])]
+ (2)  [-l1_orders_2(2^[])]
+ (3)  [v2_struct_0(3^[])]
+ (4)  [-l1_orders_2(3^[])]
+ (5)  [-r2_hidden(4^[], k3_xboole_0(u1_struct_0(2^[]), u1_struct_0(3^[])))]
+ (6)  [m1_subset_1(4^[], u1_struct_0(2^[]))]
+ (7)  [r2_hidden(_G6175, _G6220), -m1_subset_1(_G6175, _G6220)]
+ (8)  [_G5686=k3_xboole_0(_G5545, _G5615), r2_hidden(_G5854, _G5686), -r2_hidden(_G5854, _G5545)]
+ (9)  [_G5686=k3_xboole_0(_G5545, _G5615), r2_hidden(_G5854, _G5686), -r2_hidden(_G5854, _G5615)]
+ (10)  [_G5686=k3_xboole_0(_G5545, _G5615), -r2_hidden(_G5854, _G5686), r2_hidden(_G5854, _G5545), r2_hidden(_G5854, _G5615)]
+ (11)  [- (_G5686=k3_xboole_0(_G5545, _G5615)), -r2_hidden(1^[_G5686, _G5615, _G5545], _G5686), -r2_hidden(1^[_G5686, _G5615, _G5545], _G5545)]
+ (12)  [- (_G5686=k3_xboole_0(_G5545, _G5615)), -r2_hidden(1^[_G5686, _G5615, _G5545], _G5686), -r2_hidden(1^[_G5686, _G5615, _G5545], _G5615)]
+ (13)  [- (_G5686=k3_xboole_0(_G5545, _G5615)), r2_hidden(1^[_G5686, _G5615, _G5545], _G5686), r2_hidden(1^[_G5686, _G5615, _G5545], _G5545), r2_hidden(1^[_G5686, _G5615, _G5545], _G5615)]
+ (14)  [_G5225=_G5274, - (u1_struct_0(_G5225)=u1_struct_0(_G5274))]
+ (15)  [- (k3_xboole_0(_G4637, _G4772)=k3_xboole_0(_G4704, _G4841)), _G4637=_G4704, _G4772=_G4841]
+ (16)  [- (_G2030=_G2030)]
+ (17)  [_G2129=_G2174, - (_G2174=_G2129)]
+ (18)  [- (_G2362=_G2475), _G2362=_G2418, _G2418=_G2475]
+ (19)  [-v2_struct_0(_G2861), _G2812=_G2861, v2_struct_0(_G2812)]
+ (20)  [-l1_orders_2(_G3139), _G3090=_G3139, l1_orders_2(_G3090)]
+ (21)  [-r2_hidden(_G3435, _G3572), r2_hidden(_G3368, _G3503), _G3368=_G3435, _G3503=_G3572]
+ (22)  [-m1_subset_1(_G4023, _G4160), m1_subset_1(_G3956, _G4091), _G3956=_G4023, _G4091=_G4160]
+
+Connection Proof:
+-----------------
+1  [m1_subset_1(4^[], u1_struct_0(2^[]))]   (6)  
+1.1  [-m1_subset_1(4^[], u1_struct_0(2^[])), r2_hidden(4^[], u1_struct_0(2^[]))]   (7)  substitution:[[_G6175, _G6220], [4^[], u1_struct_0(2^[])]]
+1.1.1  [-r2_hidden(4^[], u1_struct_0(2^[])), k3_xboole_0(u1_struct_0(2^[]), u1_struct_0(3^[]))=k3_xboole_0(u1_struct_0(2^[]), u1_struct_0(3^[])), r2_hidden(4^[], k3_xboole_0(u1_struct_0(2^[]), u1_struct_0(3^[])))]   (8)  substitution:[[_G5854, _G5545, _G5686, _G5615], [4^[], u1_struct_0(2^[]), k3_xboole_0(u1_struct_0(2^[]), u1_struct_0(3^[])), u1_struct_0(3^[])]]
+1.1.1.1  [- (k3_xboole_0(u1_struct_0(2^[]), u1_struct_0(3^[]))=k3_xboole_0(u1_struct_0(2^[]), u1_struct_0(3^[])))]   (16)  substitution:[[_G2030], [k3_xboole_0(u1_struct_0(2^[]), u1_struct_0(3^[]))]]
+1.1.1.2  [-r2_hidden(4^[], k3_xboole_0(u1_struct_0(2^[]), u1_struct_0(3^[])))]   (5)  
+------------------------------------------------------
+End of proof for t12_latsum_1

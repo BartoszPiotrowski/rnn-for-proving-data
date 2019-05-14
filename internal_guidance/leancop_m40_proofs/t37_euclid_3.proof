@@ -1,0 +1,56 @@
+
+t37_euclid_3 is a Theorem
+Start of proof for t37_euclid_3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], u1_struct_0(k15_euclid(np__2)))]
+ (2)  [-m1_subset_1(2^[], u1_struct_0(k15_euclid(np__2)))]
+ (3)  [-m1_subset_1(3^[], u1_struct_0(k15_euclid(np__2)))]
+ (4)  [k4_euclid_3(1^[], 2^[], 3^[])=k6_numbers]
+ (5)  [k4_euclid_3(3^[], 2^[], 1^[])=k9_real_1(k8_real_1(np__2, k32_sin_cos), k4_euclid_3(1^[], 2^[], 3^[]))]
+ (6)  [m1_subset_1(_G8927, u1_struct_0(k15_euclid(np__2))), m1_subset_1(_G9088, u1_struct_0(k15_euclid(np__2))), m1_subset_1(_G9244, u1_struct_0(k15_euclid(np__2))), - (k4_euclid_3(_G8927, _G9088, _G9244)=k4_complex2(k2_euclid_3(_G8927), k2_euclid_3(_G9088), k2_euclid_3(_G9244)))]
+ (7)  [m1_subset_1(_G9745, u1_struct_0(k15_euclid(np__2))), -m1_subset_1(k2_euclid_3(_G9745), k2_numbers)]
+ (8)  [m1_subset_1(_G9963, k2_numbers), m1_subset_1(_G10105, k2_numbers), m1_subset_1(_G10242, k2_numbers), - (k4_complex2(_G9963, _G10105, _G10242)=k6_numbers), - (k4_complex2(_G10242, _G10105, _G9963)=k9_real_1(k8_real_1(np__2, k32_sin_cos), k4_complex2(_G9963, _G10105, _G10242)))]
+ (9)  [-m1_subset_1(_G4154, _G4291), m1_subset_1(_G4087, _G4222), _G4087=_G4154, _G4222=_G4291]
+ (10)  [- (_G3314=_G3314)]
+ (11)  [_G3413=_G3458, - (_G3458=_G3413)]
+ (12)  [- (_G3646=_G3759), _G3646=_G3702, _G3702=_G3759]
+ (13)  [_G4705=_G4754, - (k2_euclid_3(_G4705)=k2_euclid_3(_G4754))]
+ (14)  [- (k4_complex2(_G4983, _G5154, _G5329)=k4_complex2(_G5068, _G5241, _G5418)), _G4983=_G5068, _G5154=_G5241, _G5329=_G5418]
+ (15)  [_G6011=_G6060, - (u1_struct_0(_G6011)=u1_struct_0(_G6060))]
+ (16)  [_G6289=_G6338, - (k15_euclid(_G6289)=k15_euclid(_G6338))]
+ (17)  [- (k9_real_1(_G6567, _G6702)=k9_real_1(_G6634, _G6771)), _G6567=_G6634, _G6702=_G6771]
+ (18)  [- (k8_real_1(_G7164, _G7299)=k8_real_1(_G7231, _G7368)), _G7164=_G7231, _G7299=_G7368]
+ (19)  [- (k4_euclid_3(_G7752, _G7923, _G8098)=k4_euclid_3(_G7837, _G8010, _G8187)), _G7752=_G7837, _G7923=_G8010, _G8098=_G8187]
+
+Connection Proof:
+-----------------
+1  [k4_euclid_3(3^[], 2^[], 1^[])=k9_real_1(k8_real_1(np__2, k32_sin_cos), k4_euclid_3(1^[], 2^[], 3^[]))]   (5)  
+1.1  [- (k4_euclid_3(3^[], 2^[], 1^[])=k9_real_1(k8_real_1(np__2, k32_sin_cos), k4_euclid_3(1^[], 2^[], 3^[]))), k4_euclid_3(3^[], 2^[], 1^[])=k4_complex2(k2_euclid_3(3^[]), k2_euclid_3(2^[]), k2_euclid_3(1^[])), k4_complex2(k2_euclid_3(3^[]), k2_euclid_3(2^[]), k2_euclid_3(1^[]))=k9_real_1(k8_real_1(np__2, k32_sin_cos), k4_euclid_3(1^[], 2^[], 3^[]))]   (12)  substitution:[[_G3646, _G3759, _G3702], [k4_euclid_3(3^[], 2^[], 1^[]), k9_real_1(k8_real_1(np__2, k32_sin_cos), k4_euclid_3(1^[], 2^[], 3^[])), k4_complex2(k2_euclid_3(3^[]), k2_euclid_3(2^[]), k2_euclid_3(1^[]))]]
+1.1.1  [- (k4_euclid_3(3^[], 2^[], 1^[])=k4_complex2(k2_euclid_3(3^[]), k2_euclid_3(2^[]), k2_euclid_3(1^[]))), m1_subset_1(3^[], u1_struct_0(k15_euclid(np__2))), m1_subset_1(2^[], u1_struct_0(k15_euclid(np__2))), m1_subset_1(1^[], u1_struct_0(k15_euclid(np__2)))]   (6)  substitution:[[_G8927, _G9088, _G9244], [3^[], 2^[], 1^[]]]
+1.1.1.1  [-m1_subset_1(3^[], u1_struct_0(k15_euclid(np__2)))]   (3)  
+1.1.1.2  [-m1_subset_1(2^[], u1_struct_0(k15_euclid(np__2)))]   (2)  
+1.1.1.3  [-m1_subset_1(1^[], u1_struct_0(k15_euclid(np__2)))]   (1)  
+1.1.2  [- (k4_complex2(k2_euclid_3(3^[]), k2_euclid_3(2^[]), k2_euclid_3(1^[]))=k9_real_1(k8_real_1(np__2, k32_sin_cos), k4_euclid_3(1^[], 2^[], 3^[]))), k4_complex2(k2_euclid_3(3^[]), k2_euclid_3(2^[]), k2_euclid_3(1^[]))=k9_real_1(k8_real_1(np__2, k32_sin_cos), k4_complex2(k2_euclid_3(1^[]), k2_euclid_3(2^[]), k2_euclid_3(3^[]))), k9_real_1(k8_real_1(np__2, k32_sin_cos), k4_complex2(k2_euclid_3(1^[]), k2_euclid_3(2^[]), k2_euclid_3(3^[])))=k9_real_1(k8_real_1(np__2, k32_sin_cos), k4_euclid_3(1^[], 2^[], 3^[]))]   (12)  substitution:[[_G3646, _G3759, _G3702], [k4_complex2(k2_euclid_3(3^[]), k2_euclid_3(2^[]), k2_euclid_3(1^[])), k9_real_1(k8_real_1(np__2, k32_sin_cos), k4_euclid_3(1^[], 2^[], 3^[])), k9_real_1(k8_real_1(np__2, k32_sin_cos), k4_complex2(k2_euclid_3(1^[]), k2_euclid_3(2^[]), k2_euclid_3(3^[])))]]
+1.1.2.1  [- (k4_complex2(k2_euclid_3(3^[]), k2_euclid_3(2^[]), k2_euclid_3(1^[]))=k9_real_1(k8_real_1(np__2, k32_sin_cos), k4_complex2(k2_euclid_3(1^[]), k2_euclid_3(2^[]), k2_euclid_3(3^[])))), m1_subset_1(k2_euclid_3(1^[]), k2_numbers), m1_subset_1(k2_euclid_3(2^[]), k2_numbers), m1_subset_1(k2_euclid_3(3^[]), k2_numbers), - (k4_complex2(k2_euclid_3(1^[]), k2_euclid_3(2^[]), k2_euclid_3(3^[]))=k6_numbers)]   (8)  substitution:[[_G10242, _G10105, _G9963], [k2_euclid_3(3^[]), k2_euclid_3(2^[]), k2_euclid_3(1^[])]]
+1.1.2.1.1  [-m1_subset_1(k2_euclid_3(1^[]), k2_numbers), m1_subset_1(1^[], u1_struct_0(k15_euclid(np__2)))]   (7)  substitution:[[_G9745], [1^[]]]
+1.1.2.1.1.1  [-m1_subset_1(1^[], u1_struct_0(k15_euclid(np__2)))]   (1)  
+1.1.2.1.2  [-m1_subset_1(k2_euclid_3(2^[]), k2_numbers), m1_subset_1(2^[], u1_struct_0(k15_euclid(np__2)))]   (7)  substitution:[[_G9745], [2^[]]]
+1.1.2.1.2.1  [-m1_subset_1(2^[], u1_struct_0(k15_euclid(np__2)))]   (2)  
+1.1.2.1.3  [-m1_subset_1(k2_euclid_3(3^[]), k2_numbers), m1_subset_1(3^[], u1_struct_0(k15_euclid(np__2)))]   (7)  substitution:[[_G9745], [3^[]]]
+1.1.2.1.3.1  [-m1_subset_1(3^[], u1_struct_0(k15_euclid(np__2)))]   (3)  
+1.1.2.1.4  [k4_complex2(k2_euclid_3(1^[]), k2_euclid_3(2^[]), k2_euclid_3(3^[]))=k6_numbers, - (k4_euclid_3(1^[], 2^[], 3^[])=k6_numbers), k4_euclid_3(1^[], 2^[], 3^[])=k4_complex2(k2_euclid_3(1^[]), k2_euclid_3(2^[]), k2_euclid_3(3^[]))]   (12)  substitution:[[_G3702, _G3759, _G3646], [k4_complex2(k2_euclid_3(1^[]), k2_euclid_3(2^[]), k2_euclid_3(3^[])), k6_numbers, k4_euclid_3(1^[], 2^[], 3^[])]]
+1.1.2.1.4.1  [k4_euclid_3(1^[], 2^[], 3^[])=k6_numbers]   (4)  
+1.1.2.1.4.2  [- (k4_euclid_3(1^[], 2^[], 3^[])=k4_complex2(k2_euclid_3(1^[]), k2_euclid_3(2^[]), k2_euclid_3(3^[]))), m1_subset_1(1^[], u1_struct_0(k15_euclid(np__2))), m1_subset_1(2^[], u1_struct_0(k15_euclid(np__2))), m1_subset_1(3^[], u1_struct_0(k15_euclid(np__2)))]   (6)  substitution:[[_G8927, _G9088, _G9244], [1^[], 2^[], 3^[]]]
+1.1.2.1.4.2.1  [-m1_subset_1(1^[], u1_struct_0(k15_euclid(np__2)))]   (1)  
+1.1.2.1.4.2.2  [-m1_subset_1(2^[], u1_struct_0(k15_euclid(np__2)))]   (2)  
+1.1.2.1.4.2.3  [-m1_subset_1(3^[], u1_struct_0(k15_euclid(np__2)))]   (3)  
+1.1.2.2  [- (k9_real_1(k8_real_1(np__2, k32_sin_cos), k4_complex2(k2_euclid_3(1^[]), k2_euclid_3(2^[]), k2_euclid_3(3^[])))=k9_real_1(k8_real_1(np__2, k32_sin_cos), k4_euclid_3(1^[], 2^[], 3^[]))), k9_real_1(k8_real_1(np__2, k32_sin_cos), k4_euclid_3(1^[], 2^[], 3^[]))=k9_real_1(k8_real_1(np__2, k32_sin_cos), k4_complex2(k2_euclid_3(1^[]), k2_euclid_3(2^[]), k2_euclid_3(3^[])))]   (11)  substitution:[[_G3458, _G3413], [k9_real_1(k8_real_1(np__2, k32_sin_cos), k4_complex2(k2_euclid_3(1^[]), k2_euclid_3(2^[]), k2_euclid_3(3^[]))), k9_real_1(k8_real_1(np__2, k32_sin_cos), k4_euclid_3(1^[], 2^[], 3^[]))]]
+1.1.2.2.1  [- (k9_real_1(k8_real_1(np__2, k32_sin_cos), k4_euclid_3(1^[], 2^[], 3^[]))=k9_real_1(k8_real_1(np__2, k32_sin_cos), k4_complex2(k2_euclid_3(1^[]), k2_euclid_3(2^[]), k2_euclid_3(3^[])))), k8_real_1(np__2, k32_sin_cos)=k8_real_1(np__2, k32_sin_cos), k4_euclid_3(1^[], 2^[], 3^[])=k4_complex2(k2_euclid_3(1^[]), k2_euclid_3(2^[]), k2_euclid_3(3^[]))]   (17)  substitution:[[_G6567, _G6702, _G6634, _G6771], [k8_real_1(np__2, k32_sin_cos), k4_euclid_3(1^[], 2^[], 3^[]), k8_real_1(np__2, k32_sin_cos), k4_complex2(k2_euclid_3(1^[]), k2_euclid_3(2^[]), k2_euclid_3(3^[]))]]
+1.1.2.2.1.1  [- (k8_real_1(np__2, k32_sin_cos)=k8_real_1(np__2, k32_sin_cos))]   (10)  substitution:[[_G3314], [k8_real_1(np__2, k32_sin_cos)]]
+1.1.2.2.1.2  [- (k4_euclid_3(1^[], 2^[], 3^[])=k4_complex2(k2_euclid_3(1^[]), k2_euclid_3(2^[]), k2_euclid_3(3^[]))), m1_subset_1(1^[], u1_struct_0(k15_euclid(np__2))), m1_subset_1(2^[], u1_struct_0(k15_euclid(np__2))), m1_subset_1(3^[], u1_struct_0(k15_euclid(np__2)))]   (6)  substitution:[[_G8927, _G9088, _G9244], [1^[], 2^[], 3^[]]]
+1.1.2.2.1.2.1  [-m1_subset_1(1^[], u1_struct_0(k15_euclid(np__2)))]   (1)  
+1.1.2.2.1.2.2  [-m1_subset_1(2^[], u1_struct_0(k15_euclid(np__2)))]   (2)  
+1.1.2.2.1.2.3  [-m1_subset_1(3^[], u1_struct_0(k15_euclid(np__2)))]   (3)  
+------------------------------------------------------
+End of proof for t37_euclid_3

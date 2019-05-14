@@ -1,0 +1,43 @@
+
+t23_partit_2 is a Theorem
+Start of proof for t23_partit_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v1_xboole_0(3^[])]
+ (2)  [v1_xboole_0(4^[])]
+ (3)  [-m1_subset_1(5^[], k1_zfmisc_1(k2_zfmisc_1(3^[], 3^[])))]
+ (4)  [-v3_relat_2(5^[])]
+ (5)  [r3_relat_2(5^[], 4^[])]
+ (6)  [m1_subset_1(_G1306, k1_zfmisc_1(k2_zfmisc_1(_G1197, _G1251))), -v1_relat_1(_G1306)]
+ (7)  [v1_relat_1(_G1549), v3_relat_2(_G1549), -r3_relat_2(_G1549, k1_relat_1(_G1549))]
+ (8)  [v1_relat_1(_G1549), -v3_relat_2(_G1549), r3_relat_2(_G1549, k1_relat_1(_G1549))]
+ (9)  [v1_relat_1(_G2755), r2_hidden(k4_tarski(_G2618, _G2686), _G2755), -r2_hidden(_G2618, k1_relat_1(_G2755))]
+ (10)  [v1_relat_1(_G2755), r2_hidden(k4_tarski(_G2618, _G2686), _G2755), -r2_hidden(_G2686, k1_relat_1(_G2755))]
+ (11)  [v1_relat_1(_G1780), -r3_relat_2(_G1780, _G1896), -r2_hidden(1^[_G1896, _G1780], _G1896)]
+ (12)  [v1_relat_1(_G1780), -r3_relat_2(_G1780, _G1896), -r2_hidden(2^[_G1896, _G1780], _G1896)]
+ (13)  [v1_relat_1(_G1780), -r3_relat_2(_G1780, _G1896), -r2_hidden(k4_tarski(1^[_G1896, _G1780], 2^[_G1896, _G1780]), _G1780)]
+ (14)  [v1_relat_1(_G1780), -r3_relat_2(_G1780, _G1896), r2_hidden(k4_tarski(2^[_G1896, _G1780], 1^[_G1896, _G1780]), _G1780)]
+ (15)  [v1_relat_1(_G1780), r3_relat_2(_G1780, _G1896), -r2_hidden(k4_tarski(_G2108, _G2033), _G1780), r2_hidden(_G2033, _G1896), r2_hidden(_G2108, _G1896), r2_hidden(k4_tarski(_G2033, _G2108), _G1780)]
+
+Connection Proof:
+-----------------
+1  [r3_relat_2(5^[], 4^[])]   (5)  
+1.1  [-r3_relat_2(5^[], 4^[]), v1_relat_1(5^[]), -r2_hidden(k4_tarski(1^[4^[], 5^[]], 2^[4^[], 5^[]]), 5^[])]   (13)  substitution:[[_G1780, _G1896], [5^[], 4^[]]]
+1.1.1  [-v1_relat_1(5^[]), m1_subset_1(5^[], k1_zfmisc_1(k2_zfmisc_1(3^[], 3^[])))]   (6)  substitution:[[_G1306, _G1197, _G1251], [5^[], 3^[], 3^[]]]
+1.1.1.1  [-m1_subset_1(5^[], k1_zfmisc_1(k2_zfmisc_1(3^[], 3^[])))]   (3)  
+1.1.2  [r2_hidden(k4_tarski(1^[4^[], 5^[]], 2^[4^[], 5^[]]), 5^[]), v1_relat_1(5^[]), r3_relat_2(5^[], k1_relat_1(5^[])), -r2_hidden(k4_tarski(2^[4^[], 5^[]], 1^[4^[], 5^[]]), 5^[]), r2_hidden(1^[4^[], 5^[]], k1_relat_1(5^[])), r2_hidden(2^[4^[], 5^[]], k1_relat_1(5^[]))]   (15)  substitution:[[_G2033, _G2108, _G1780, _G1896], [1^[4^[], 5^[]], 2^[4^[], 5^[]], 5^[], k1_relat_1(5^[])]]
+1.1.2.1  [-v1_relat_1(5^[])]   (lemmata:1.1)  
+1.1.2.2  [-r3_relat_2(5^[], k1_relat_1(5^[])), v1_relat_1(5^[]), v3_relat_2(5^[])]   (7)  substitution:[[_G1549], [5^[]]]
+1.1.2.2.1  [-v1_relat_1(5^[])]   (lemmata:1.1.2)  
+1.1.2.2.2  [-v3_relat_2(5^[])]   (4)  
+1.1.2.3  [r2_hidden(k4_tarski(2^[4^[], 5^[]], 1^[4^[], 5^[]]), 5^[]), v1_relat_1(5^[]), -r3_relat_2(5^[], 4^[])]   (14)  substitution:[[_G1896, _G1780], [4^[], 5^[]]]
+1.1.2.3.1  [-v1_relat_1(5^[])]   (lemmata:1.1.2)  
+1.1.2.3.2  [r3_relat_2(5^[], 4^[])]   (5)  
+1.1.2.4  [-r2_hidden(1^[4^[], 5^[]], k1_relat_1(5^[])), v1_relat_1(5^[]), r2_hidden(k4_tarski(1^[4^[], 5^[]], 2^[4^[], 5^[]]), 5^[])]   (9)  substitution:[[_G2618, _G2755, _G2686], [1^[4^[], 5^[]], 5^[], 2^[4^[], 5^[]]]]
+1.1.2.4.1  [-v1_relat_1(5^[])]   (lemmata:1.1.2)  
+1.1.2.4.2  [-r2_hidden(k4_tarski(1^[4^[], 5^[]], 2^[4^[], 5^[]]), 5^[])]   (reduction:1.1)  
+1.1.2.5  [-r2_hidden(2^[4^[], 5^[]], k1_relat_1(5^[])), v1_relat_1(5^[]), r2_hidden(k4_tarski(1^[4^[], 5^[]], 2^[4^[], 5^[]]), 5^[])]   (10)  substitution:[[_G2686, _G2755, _G2618], [2^[4^[], 5^[]], 5^[], 1^[4^[], 5^[]]]]
+1.1.2.5.1  [-v1_relat_1(5^[])]   (lemmata:1.1.2)  
+1.1.2.5.2  [-r2_hidden(k4_tarski(1^[4^[], 5^[]], 2^[4^[], 5^[]]), 5^[])]   (reduction:1.1)  
+------------------------------------------------------
+End of proof for t23_partit_2

@@ -1,0 +1,38 @@
+
+t10_scmfsa10 is a Theorem
+Start of proof for t10_scmfsa10
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_ami_2(1^[])]
+ (2)  [-m1_subset_1(1^[], u1_struct_0(k1_scmfsa_2))]
+ (3)  [-v1_ami_2(2^[])]
+ (4)  [-m1_subset_1(2^[], u1_struct_0(k1_scmfsa_2))]
+ (5)  [k5_xtuple_0(k6_scmfsa_2(1^[], 2^[]))=k1_xboole_0]
+ (6)  [- (k3_xtuple_0(_G7720, _G7774, _G7829)=k4_tarski(k4_tarski(_G7720, _G7774), _G7829))]
+ (7)  [- (k5_xtuple_0(k3_xtuple_0(_G8126, _G8176, _G8227))=_G8176)]
+ (8)  [m1_subset_1(_G8447, u1_struct_0(k1_scmfsa_2)), v1_ami_2(_G8447), - (k6_scmfsa_2(_G8447, _G8642)=k3_xtuple_0(np__1, k1_xboole_0, k10_finseq_1(_G8447, _G8642))), v1_ami_2(_G8642), m1_subset_1(_G8642, u1_struct_0(k1_scmfsa_2))]
+ (9)  [- (_G2538=_G2538)]
+ (10)  [_G2637=_G2682, - (_G2682=_G2637)]
+ (11)  [- (_G2870=_G2983), _G2870=_G2926, _G2926=_G2983]
+ (12)  [-v1_ami_2(_G3369), _G3320=_G3369, v1_ami_2(_G3320)]
+ (13)  [-m1_subset_1(_G3656, _G3793), m1_subset_1(_G3589, _G3724), _G3589=_G3656, _G3724=_G3793]
+ (14)  [- (k4_tarski(_G4228, _G4363)=k4_tarski(_G4295, _G4432)), _G4228=_G4295, _G4363=_G4432]
+ (15)  [- (k3_xtuple_0(_G4825, _G4996, _G5171)=k3_xtuple_0(_G4910, _G5083, _G5260)), _G4825=_G4910, _G4996=_G5083, _G5171=_G5260]
+ (16)  [- (k10_finseq_1(_G5853, _G5988)=k10_finseq_1(_G5920, _G6057)), _G5853=_G5920, _G5988=_G6057]
+ (17)  [_G6450=_G6499, - (u1_struct_0(_G6450)=u1_struct_0(_G6499))]
+ (18)  [_G6728=_G6777, - (k5_xtuple_0(_G6728)=k5_xtuple_0(_G6777))]
+ (19)  [- (k6_scmfsa_2(_G6997, _G7132)=k6_scmfsa_2(_G7064, _G7201)), _G6997=_G7064, _G7132=_G7201]
+
+Connection Proof:
+-----------------
+1  [k5_xtuple_0(k6_scmfsa_2(1^[], 2^[]))=k1_xboole_0]   (5)  
+1.1  [- (k5_xtuple_0(k6_scmfsa_2(1^[], 2^[]))=k1_xboole_0), k5_xtuple_0(k6_scmfsa_2(1^[], 2^[]))=k5_xtuple_0(k3_xtuple_0(np__1, k1_xboole_0, k10_finseq_1(1^[], 2^[]))), k5_xtuple_0(k3_xtuple_0(np__1, k1_xboole_0, k10_finseq_1(1^[], 2^[])))=k1_xboole_0]   (11)  substitution:[[_G2870, _G2983, _G2926], [k5_xtuple_0(k6_scmfsa_2(1^[], 2^[])), k1_xboole_0, k5_xtuple_0(k3_xtuple_0(np__1, k1_xboole_0, k10_finseq_1(1^[], 2^[])))]]
+1.1.1  [- (k5_xtuple_0(k6_scmfsa_2(1^[], 2^[]))=k5_xtuple_0(k3_xtuple_0(np__1, k1_xboole_0, k10_finseq_1(1^[], 2^[])))), k6_scmfsa_2(1^[], 2^[])=k3_xtuple_0(np__1, k1_xboole_0, k10_finseq_1(1^[], 2^[]))]   (18)  substitution:[[_G6728, _G6777], [k6_scmfsa_2(1^[], 2^[]), k3_xtuple_0(np__1, k1_xboole_0, k10_finseq_1(1^[], 2^[]))]]
+1.1.1.1  [- (k6_scmfsa_2(1^[], 2^[])=k3_xtuple_0(np__1, k1_xboole_0, k10_finseq_1(1^[], 2^[]))), m1_subset_1(1^[], u1_struct_0(k1_scmfsa_2)), v1_ami_2(1^[]), v1_ami_2(2^[]), m1_subset_1(2^[], u1_struct_0(k1_scmfsa_2))]   (8)  substitution:[[_G8447, _G8642], [1^[], 2^[]]]
+1.1.1.1.1  [-m1_subset_1(1^[], u1_struct_0(k1_scmfsa_2))]   (2)  
+1.1.1.1.2  [-v1_ami_2(1^[])]   (1)  
+1.1.1.1.3  [-v1_ami_2(2^[])]   (3)  
+1.1.1.1.4  [-m1_subset_1(2^[], u1_struct_0(k1_scmfsa_2))]   (4)  
+1.1.2  [- (k5_xtuple_0(k3_xtuple_0(np__1, k1_xboole_0, k10_finseq_1(1^[], 2^[])))=k1_xboole_0)]   (7)  substitution:[[_G8126, _G8176, _G8227], [np__1, k1_xboole_0, k10_finseq_1(1^[], 2^[])]]
+------------------------------------------------------
+End of proof for t10_scmfsa10

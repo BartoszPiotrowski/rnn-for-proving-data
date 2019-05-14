@@ -1,0 +1,62 @@
+
+t46_rvsum_2 is a Theorem
+Start of proof for t46_rvsum_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v7_ordinal1(1^[])]
+ (2)  [-v7_ordinal1(2^[])]
+ (3)  [-v1_xcmplx_0(3^[])]
+ (4)  [k19_rvsum_1(k2_finseq_2(k24_binop_2(1^[], 2^[]), 3^[]))=k19_rvsum_1(k2_finseq_2(2^[], k19_rvsum_1(k2_finseq_2(1^[], 3^[]))))]
+ (5)  [v1_xcmplx_0(_G7247), v7_ordinal1(_G7336), - (k1_newton(_G7247, _G7336)=k19_rvsum_1(k2_finseq_2(_G7336, _G7247)))]
+ (6)  [-v7_ordinal1(k3_xcmplx_0(_G7628, _G7679)), v7_ordinal1(_G7628), v7_ordinal1(_G7679)]
+ (7)  [-v1_xcmplx_0(k1_newton(_G7924, _G7975)), v1_xcmplx_0(_G7924), v7_ordinal1(_G7975)]
+ (8)  [- (k24_binop_2(_G8220, _G8275)=k3_xcmplx_0(_G8220, _G8275)), v7_ordinal1(_G8220), v7_ordinal1(_G8275)]
+ (9)  [v7_ordinal1(_G8579), v7_ordinal1(_G8682), v1_xcmplx_0(_G8781), - (k1_newton(k1_newton(_G8781, _G8579), _G8682)=k1_newton(_G8781, k3_xcmplx_0(_G8579, _G8682)))]
+ (10)  [- (_G3114=_G3114)]
+ (11)  [_G3213=_G3258, - (_G3258=_G3213)]
+ (12)  [- (_G3446=_G3559), _G3446=_G3502, _G3502=_G3559]
+ (13)  [-v7_ordinal1(_G3945), _G3896=_G3945, v7_ordinal1(_G3896)]
+ (14)  [-v1_xcmplx_0(_G4214), _G4165=_G4214, v1_xcmplx_0(_G4165)]
+ (15)  [- (k1_newton(_G4485, _G4620)=k1_newton(_G4552, _G4689)), _G4485=_G4552, _G4620=_G4689]
+ (16)  [- (k3_xcmplx_0(_G5082, _G5217)=k3_xcmplx_0(_G5149, _G5286)), _G5082=_G5149, _G5217=_G5286]
+ (17)  [- (k24_binop_2(_G5679, _G5814)=k24_binop_2(_G5746, _G5883)), _G5679=_G5746, _G5814=_G5883]
+ (18)  [_G6276=_G6325, - (k19_rvsum_1(_G6276)=k19_rvsum_1(_G6325))]
+ (19)  [- (k2_finseq_2(_G6545, _G6680)=k2_finseq_2(_G6612, _G6749)), _G6545=_G6612, _G6680=_G6749]
+
+Connection Proof:
+-----------------
+1  [k19_rvsum_1(k2_finseq_2(k24_binop_2(1^[], 2^[]), 3^[]))=k19_rvsum_1(k2_finseq_2(2^[], k19_rvsum_1(k2_finseq_2(1^[], 3^[]))))]   (4)  
+1.1  [- (k19_rvsum_1(k2_finseq_2(k24_binop_2(1^[], 2^[]), 3^[]))=k19_rvsum_1(k2_finseq_2(2^[], k19_rvsum_1(k2_finseq_2(1^[], 3^[]))))), k19_rvsum_1(k2_finseq_2(k24_binop_2(1^[], 2^[]), 3^[]))=k1_newton(3^[], k3_xcmplx_0(1^[], 2^[])), k1_newton(3^[], k3_xcmplx_0(1^[], 2^[]))=k19_rvsum_1(k2_finseq_2(2^[], k19_rvsum_1(k2_finseq_2(1^[], 3^[]))))]   (12)  substitution:[[_G3446, _G3559, _G3502], [k19_rvsum_1(k2_finseq_2(k24_binop_2(1^[], 2^[]), 3^[])), k19_rvsum_1(k2_finseq_2(2^[], k19_rvsum_1(k2_finseq_2(1^[], 3^[])))), k1_newton(3^[], k3_xcmplx_0(1^[], 2^[]))]]
+1.1.1  [- (k19_rvsum_1(k2_finseq_2(k24_binop_2(1^[], 2^[]), 3^[]))=k1_newton(3^[], k3_xcmplx_0(1^[], 2^[]))), k19_rvsum_1(k2_finseq_2(k24_binop_2(1^[], 2^[]), 3^[]))=k19_rvsum_1(k2_finseq_2(k3_xcmplx_0(1^[], 2^[]), 3^[])), k19_rvsum_1(k2_finseq_2(k3_xcmplx_0(1^[], 2^[]), 3^[]))=k1_newton(3^[], k3_xcmplx_0(1^[], 2^[]))]   (12)  substitution:[[_G3446, _G3559, _G3502], [k19_rvsum_1(k2_finseq_2(k24_binop_2(1^[], 2^[]), 3^[])), k1_newton(3^[], k3_xcmplx_0(1^[], 2^[])), k19_rvsum_1(k2_finseq_2(k3_xcmplx_0(1^[], 2^[]), 3^[]))]]
+1.1.1.1  [- (k19_rvsum_1(k2_finseq_2(k24_binop_2(1^[], 2^[]), 3^[]))=k19_rvsum_1(k2_finseq_2(k3_xcmplx_0(1^[], 2^[]), 3^[]))), k2_finseq_2(k24_binop_2(1^[], 2^[]), 3^[])=k2_finseq_2(k3_xcmplx_0(1^[], 2^[]), 3^[])]   (18)  substitution:[[_G6276, _G6325], [k2_finseq_2(k24_binop_2(1^[], 2^[]), 3^[]), k2_finseq_2(k3_xcmplx_0(1^[], 2^[]), 3^[])]]
+1.1.1.1.1  [- (k2_finseq_2(k24_binop_2(1^[], 2^[]), 3^[])=k2_finseq_2(k3_xcmplx_0(1^[], 2^[]), 3^[])), k24_binop_2(1^[], 2^[])=k3_xcmplx_0(1^[], 2^[]), 3^[]=3^[]]   (19)  substitution:[[_G6545, _G6680, _G6612, _G6749], [k24_binop_2(1^[], 2^[]), 3^[], k3_xcmplx_0(1^[], 2^[]), 3^[]]]
+1.1.1.1.1.1  [- (k24_binop_2(1^[], 2^[])=k3_xcmplx_0(1^[], 2^[])), v7_ordinal1(1^[]), v7_ordinal1(2^[])]   (8)  substitution:[[_G8220, _G8275], [1^[], 2^[]]]
+1.1.1.1.1.1.1  [-v7_ordinal1(1^[])]   (1)  
+1.1.1.1.1.1.2  [-v7_ordinal1(2^[])]   (2)  
+1.1.1.1.1.2  [- (3^[]=3^[])]   (10)  substitution:[[_G3114], [3^[]]]
+1.1.1.2  [- (k19_rvsum_1(k2_finseq_2(k3_xcmplx_0(1^[], 2^[]), 3^[]))=k1_newton(3^[], k3_xcmplx_0(1^[], 2^[]))), k1_newton(3^[], k3_xcmplx_0(1^[], 2^[]))=k19_rvsum_1(k2_finseq_2(k3_xcmplx_0(1^[], 2^[]), 3^[]))]   (11)  substitution:[[_G3258, _G3213], [k19_rvsum_1(k2_finseq_2(k3_xcmplx_0(1^[], 2^[]), 3^[])), k1_newton(3^[], k3_xcmplx_0(1^[], 2^[]))]]
+1.1.1.2.1  [- (k1_newton(3^[], k3_xcmplx_0(1^[], 2^[]))=k19_rvsum_1(k2_finseq_2(k3_xcmplx_0(1^[], 2^[]), 3^[]))), v1_xcmplx_0(3^[]), v7_ordinal1(k3_xcmplx_0(1^[], 2^[]))]   (5)  substitution:[[_G7247, _G7336], [3^[], k3_xcmplx_0(1^[], 2^[])]]
+1.1.1.2.1.1  [-v1_xcmplx_0(3^[])]   (3)  
+1.1.1.2.1.2  [-v7_ordinal1(k3_xcmplx_0(1^[], 2^[])), v7_ordinal1(1^[]), v7_ordinal1(2^[])]   (6)  substitution:[[_G7628, _G7679], [1^[], 2^[]]]
+1.1.1.2.1.2.1  [-v7_ordinal1(1^[])]   (1)  
+1.1.1.2.1.2.2  [-v7_ordinal1(2^[])]   (2)  
+1.1.2  [- (k1_newton(3^[], k3_xcmplx_0(1^[], 2^[]))=k19_rvsum_1(k2_finseq_2(2^[], k19_rvsum_1(k2_finseq_2(1^[], 3^[]))))), k1_newton(3^[], k3_xcmplx_0(1^[], 2^[]))=k19_rvsum_1(k2_finseq_2(2^[], k1_newton(3^[], 1^[]))), k19_rvsum_1(k2_finseq_2(2^[], k1_newton(3^[], 1^[])))=k19_rvsum_1(k2_finseq_2(2^[], k19_rvsum_1(k2_finseq_2(1^[], 3^[]))))]   (12)  substitution:[[_G3446, _G3559, _G3502], [k1_newton(3^[], k3_xcmplx_0(1^[], 2^[])), k19_rvsum_1(k2_finseq_2(2^[], k19_rvsum_1(k2_finseq_2(1^[], 3^[])))), k19_rvsum_1(k2_finseq_2(2^[], k1_newton(3^[], 1^[])))]]
+1.1.2.1  [- (k1_newton(3^[], k3_xcmplx_0(1^[], 2^[]))=k19_rvsum_1(k2_finseq_2(2^[], k1_newton(3^[], 1^[])))), k1_newton(3^[], k3_xcmplx_0(1^[], 2^[]))=k1_newton(k1_newton(3^[], 1^[]), 2^[]), k1_newton(k1_newton(3^[], 1^[]), 2^[])=k19_rvsum_1(k2_finseq_2(2^[], k1_newton(3^[], 1^[])))]   (12)  substitution:[[_G3446, _G3559, _G3502], [k1_newton(3^[], k3_xcmplx_0(1^[], 2^[])), k19_rvsum_1(k2_finseq_2(2^[], k1_newton(3^[], 1^[]))), k1_newton(k1_newton(3^[], 1^[]), 2^[])]]
+1.1.2.1.1  [- (k1_newton(3^[], k3_xcmplx_0(1^[], 2^[]))=k1_newton(k1_newton(3^[], 1^[]), 2^[])), k1_newton(k1_newton(3^[], 1^[]), 2^[])=k1_newton(3^[], k3_xcmplx_0(1^[], 2^[]))]   (11)  substitution:[[_G3258, _G3213], [k1_newton(3^[], k3_xcmplx_0(1^[], 2^[])), k1_newton(k1_newton(3^[], 1^[]), 2^[])]]
+1.1.2.1.1.1  [- (k1_newton(k1_newton(3^[], 1^[]), 2^[])=k1_newton(3^[], k3_xcmplx_0(1^[], 2^[]))), v7_ordinal1(1^[]), v7_ordinal1(2^[]), v1_xcmplx_0(3^[])]   (9)  substitution:[[_G8781, _G8579, _G8682], [3^[], 1^[], 2^[]]]
+1.1.2.1.1.1.1  [-v7_ordinal1(1^[])]   (1)  
+1.1.2.1.1.1.2  [-v7_ordinal1(2^[])]   (2)  
+1.1.2.1.1.1.3  [-v1_xcmplx_0(3^[])]   (3)  
+1.1.2.1.2  [- (k1_newton(k1_newton(3^[], 1^[]), 2^[])=k19_rvsum_1(k2_finseq_2(2^[], k1_newton(3^[], 1^[])))), v1_xcmplx_0(k1_newton(3^[], 1^[])), v7_ordinal1(2^[])]   (5)  substitution:[[_G7247, _G7336], [k1_newton(3^[], 1^[]), 2^[]]]
+1.1.2.1.2.1  [-v1_xcmplx_0(k1_newton(3^[], 1^[])), v1_xcmplx_0(3^[]), v7_ordinal1(1^[])]   (7)  substitution:[[_G7924, _G7975], [3^[], 1^[]]]
+1.1.2.1.2.1.1  [-v1_xcmplx_0(3^[])]   (3)  
+1.1.2.1.2.1.2  [-v7_ordinal1(1^[])]   (1)  
+1.1.2.1.2.2  [-v7_ordinal1(2^[])]   (2)  
+1.1.2.2  [- (k19_rvsum_1(k2_finseq_2(2^[], k1_newton(3^[], 1^[])))=k19_rvsum_1(k2_finseq_2(2^[], k19_rvsum_1(k2_finseq_2(1^[], 3^[]))))), k2_finseq_2(2^[], k1_newton(3^[], 1^[]))=k2_finseq_2(2^[], k19_rvsum_1(k2_finseq_2(1^[], 3^[])))]   (18)  substitution:[[_G6276, _G6325], [k2_finseq_2(2^[], k1_newton(3^[], 1^[])), k2_finseq_2(2^[], k19_rvsum_1(k2_finseq_2(1^[], 3^[])))]]
+1.1.2.2.1  [- (k2_finseq_2(2^[], k1_newton(3^[], 1^[]))=k2_finseq_2(2^[], k19_rvsum_1(k2_finseq_2(1^[], 3^[])))), 2^[]=2^[], k1_newton(3^[], 1^[])=k19_rvsum_1(k2_finseq_2(1^[], 3^[]))]   (19)  substitution:[[_G6545, _G6680, _G6612, _G6749], [2^[], k1_newton(3^[], 1^[]), 2^[], k19_rvsum_1(k2_finseq_2(1^[], 3^[]))]]
+1.1.2.2.1.1  [- (2^[]=2^[])]   (10)  substitution:[[_G3114], [2^[]]]
+1.1.2.2.1.2  [- (k1_newton(3^[], 1^[])=k19_rvsum_1(k2_finseq_2(1^[], 3^[]))), v1_xcmplx_0(3^[]), v7_ordinal1(1^[])]   (5)  substitution:[[_G7247, _G7336], [3^[], 1^[]]]
+1.1.2.2.1.2.1  [-v1_xcmplx_0(3^[])]   (3)  
+1.1.2.2.1.2.2  [-v7_ordinal1(1^[])]   (1)  
+------------------------------------------------------
+End of proof for t46_rvsum_2

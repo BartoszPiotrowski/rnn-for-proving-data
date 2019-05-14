@@ -1,0 +1,33 @@
+
+l7_topalg_5 is a Theorem
+Start of proof for l7_topalg_5
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k2_struct_0(k5_topmetr)=u1_struct_0(k5_topmetr)]
+ (2)  [l1_struct_0(_G3234), - (k2_struct_0(_G3234)=u1_struct_0(_G3234))]
+ (3)  [-l1_pre_topc(k17_borsuk_1)]
+ (4)  [- (k5_topmetr=k17_borsuk_1)]
+ (5)  [l1_pre_topc(_G3455), -l1_struct_0(_G3455)]
+ (6)  [_G2645=_G2694, - (k2_struct_0(_G2645)=k2_struct_0(_G2694))]
+ (7)  [_G2914=_G2963, - (u1_struct_0(_G2914)=u1_struct_0(_G2963))]
+ (8)  [- (_G1274=_G1274)]
+ (9)  [_G1373=_G1418, - (_G1418=_G1373)]
+ (10)  [- (_G1606=_G1719), _G1606=_G1662, _G1662=_G1719]
+ (11)  [-l1_pre_topc(_G2105), _G2056=_G2105, l1_pre_topc(_G2056)]
+ (12)  [-l1_struct_0(_G2374), _G2325=_G2374, l1_struct_0(_G2325)]
+
+Connection Proof:
+-----------------
+1  [k2_struct_0(k5_topmetr)=u1_struct_0(k5_topmetr)]   (1)  
+1.1  [- (k2_struct_0(k5_topmetr)=u1_struct_0(k5_topmetr)), k2_struct_0(k5_topmetr)=k2_struct_0(k17_borsuk_1), k2_struct_0(k17_borsuk_1)=u1_struct_0(k5_topmetr)]   (10)  substitution:[[_G1606, _G1719, _G1662], [k2_struct_0(k5_topmetr), u1_struct_0(k5_topmetr), k2_struct_0(k17_borsuk_1)]]
+1.1.1  [- (k2_struct_0(k5_topmetr)=k2_struct_0(k17_borsuk_1)), k5_topmetr=k17_borsuk_1]   (6)  substitution:[[_G2645, _G2694], [k5_topmetr, k17_borsuk_1]]
+1.1.1.1  [- (k5_topmetr=k17_borsuk_1)]   (4)  
+1.1.2  [- (k2_struct_0(k17_borsuk_1)=u1_struct_0(k5_topmetr)), k2_struct_0(k17_borsuk_1)=u1_struct_0(k17_borsuk_1), u1_struct_0(k17_borsuk_1)=u1_struct_0(k5_topmetr)]   (10)  substitution:[[_G1606, _G1719, _G1662], [k2_struct_0(k17_borsuk_1), u1_struct_0(k5_topmetr), u1_struct_0(k17_borsuk_1)]]
+1.1.2.1  [- (k2_struct_0(k17_borsuk_1)=u1_struct_0(k17_borsuk_1)), l1_struct_0(k17_borsuk_1)]   (2)  substitution:[[_G3234], [k17_borsuk_1]]
+1.1.2.1.1  [-l1_struct_0(k17_borsuk_1), l1_pre_topc(k17_borsuk_1)]   (5)  substitution:[[_G3455], [k17_borsuk_1]]
+1.1.2.1.1.1  [-l1_pre_topc(k17_borsuk_1)]   (3)  
+1.1.2.2  [- (u1_struct_0(k17_borsuk_1)=u1_struct_0(k5_topmetr)), k17_borsuk_1=k5_topmetr]   (7)  substitution:[[_G2914, _G2963], [k17_borsuk_1, k5_topmetr]]
+1.1.2.2.1  [- (k17_borsuk_1=k5_topmetr), k5_topmetr=k17_borsuk_1]   (9)  substitution:[[_G1418, _G1373], [k17_borsuk_1, k5_topmetr]]
+1.1.2.2.1.1  [- (k5_topmetr=k17_borsuk_1)]   (4)  
+------------------------------------------------------
+End of proof for l7_topalg_5

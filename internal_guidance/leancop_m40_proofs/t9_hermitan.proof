@@ -1,0 +1,81 @@
+
+t9_hermitan is a Theorem
+Start of proof for t9_hermitan
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], u1_struct_0(k1_complfld))]
+ (2)  [-m1_subset_1(2^[], u1_struct_0(k1_complfld))]
+ (3)  [k3_complex1(k5_algstr_0(k1_complfld, 1^[], 2^[]))=k9_real_1(k3_complex1(1^[]), k3_complex1(2^[])), k4_complex1(k5_algstr_0(k1_complfld, 1^[], 2^[]))=k9_real_1(k4_complex1(1^[]), k4_complex1(2^[]))]
+ (4)  [m1_subset_1(_G8927, u1_struct_0(k1_complfld)), -v1_xcmplx_0(_G8927)]
+ (5)  [- (k4_binop_2(_G9098, _G9153)=k6_xcmplx_0(_G9098, _G9153)), v1_xcmplx_0(_G9098), v1_xcmplx_0(_G9153)]
+ (6)  [v1_xcmplx_0(_G9466), v1_xcmplx_0(_G9577), - (k3_complex1(k6_xcmplx_0(_G9466, _G9577))=k9_real_1(k3_complex1(_G9466), k3_complex1(_G9577)))]
+ (7)  [v1_xcmplx_0(_G9466), v1_xcmplx_0(_G9577), - (k4_complex1(k6_xcmplx_0(_G9466, _G9577))=k9_real_1(k4_complex1(_G9466), k4_complex1(_G9577)))]
+ (8)  [m1_subset_1(_G10108, u1_struct_0(k1_complfld)), m1_subset_1(_G10269, u1_struct_0(k1_complfld)), v1_xcmplx_0(_G10425), v1_xcmplx_0(_G10537), - (k5_algstr_0(k1_complfld, _G10108, _G10269)=k4_binop_2(_G10425, _G10537)), _G10108=_G10425, _G10269=_G10537]
+ (9)  [- (_G3446=_G3446)]
+ (10)  [_G3545=_G3590, - (_G3590=_G3545)]
+ (11)  [- (_G3778=_G3891), _G3778=_G3834, _G3834=_G3891]
+ (12)  [-v1_xcmplx_0(_G4277), _G4228=_G4277, v1_xcmplx_0(_G4228)]
+ (13)  [-m1_subset_1(_G4564, _G4701), m1_subset_1(_G4497, _G4632), _G4497=_G4564, _G4632=_G4701]
+ (14)  [- (k6_xcmplx_0(_G5136, _G5271)=k6_xcmplx_0(_G5203, _G5340)), _G5136=_G5203, _G5271=_G5340]
+ (15)  [- (k4_binop_2(_G5733, _G5868)=k4_binop_2(_G5800, _G5937)), _G5733=_G5800, _G5868=_G5937]
+ (16)  [_G6330=_G6379, - (u1_struct_0(_G6330)=u1_struct_0(_G6379))]
+ (17)  [_G6608=_G6657, - (k3_complex1(_G6608)=k3_complex1(_G6657))]
+ (18)  [- (k5_algstr_0(_G6886, _G7057, _G7232)=k5_algstr_0(_G6971, _G7144, _G7321)), _G6886=_G6971, _G7057=_G7144, _G7232=_G7321]
+ (19)  [_G8502=_G8551, - (k4_complex1(_G8502)=k4_complex1(_G8551))]
+ (20)  [- (k9_real_1(_G7914, _G8049)=k9_real_1(_G7981, _G8118)), _G7914=_G7981, _G8049=_G8118]
+
+Connection Proof:
+-----------------
+1  [k3_complex1(k5_algstr_0(k1_complfld, 1^[], 2^[]))=k9_real_1(k3_complex1(1^[]), k3_complex1(2^[])), k4_complex1(k5_algstr_0(k1_complfld, 1^[], 2^[]))=k9_real_1(k4_complex1(1^[]), k4_complex1(2^[]))]   (3)  
+1.1  [- (k3_complex1(k5_algstr_0(k1_complfld, 1^[], 2^[]))=k9_real_1(k3_complex1(1^[]), k3_complex1(2^[]))), k3_complex1(k5_algstr_0(k1_complfld, 1^[], 2^[]))=k3_complex1(k4_binop_2(1^[], 2^[])), k3_complex1(k4_binop_2(1^[], 2^[]))=k9_real_1(k3_complex1(1^[]), k3_complex1(2^[]))]   (11)  substitution:[[_G3778, _G3891, _G3834], [k3_complex1(k5_algstr_0(k1_complfld, 1^[], 2^[])), k9_real_1(k3_complex1(1^[]), k3_complex1(2^[])), k3_complex1(k4_binop_2(1^[], 2^[]))]]
+1.1.1  [- (k3_complex1(k5_algstr_0(k1_complfld, 1^[], 2^[]))=k3_complex1(k4_binop_2(1^[], 2^[]))), k3_complex1(k5_algstr_0(k1_complfld, 1^[], 2^[]))=k3_complex1(k4_binop_2(1^[], 2^[])), k3_complex1(k4_binop_2(1^[], 2^[]))=k3_complex1(k4_binop_2(1^[], 2^[]))]   (11)  substitution:[[_G3778, _G3891, _G3834], [k3_complex1(k5_algstr_0(k1_complfld, 1^[], 2^[])), k3_complex1(k4_binop_2(1^[], 2^[])), k3_complex1(k4_binop_2(1^[], 2^[]))]]
+1.1.1.1  [- (k3_complex1(k5_algstr_0(k1_complfld, 1^[], 2^[]))=k3_complex1(k4_binop_2(1^[], 2^[]))), k5_algstr_0(k1_complfld, 1^[], 2^[])=k4_binop_2(1^[], 2^[])]   (17)  substitution:[[_G6608, _G6657], [k5_algstr_0(k1_complfld, 1^[], 2^[]), k4_binop_2(1^[], 2^[])]]
+1.1.1.1.1  [- (k5_algstr_0(k1_complfld, 1^[], 2^[])=k4_binop_2(1^[], 2^[])), m1_subset_1(1^[], u1_struct_0(k1_complfld)), m1_subset_1(2^[], u1_struct_0(k1_complfld)), v1_xcmplx_0(1^[]), v1_xcmplx_0(2^[]), 1^[]=1^[], 2^[]=2^[]]   (8)  substitution:[[_G10108, _G10269, _G10425, _G10537], [1^[], 2^[], 1^[], 2^[]]]
+1.1.1.1.1.1  [-m1_subset_1(1^[], u1_struct_0(k1_complfld))]   (1)  
+1.1.1.1.1.2  [-m1_subset_1(2^[], u1_struct_0(k1_complfld))]   (2)  
+1.1.1.1.1.3  [-v1_xcmplx_0(1^[]), m1_subset_1(1^[], u1_struct_0(k1_complfld))]   (4)  substitution:[[_G8927], [1^[]]]
+1.1.1.1.1.3.1  [-m1_subset_1(1^[], u1_struct_0(k1_complfld))]   (1)  
+1.1.1.1.1.4  [-v1_xcmplx_0(2^[]), m1_subset_1(2^[], u1_struct_0(k1_complfld))]   (4)  substitution:[[_G8927], [2^[]]]
+1.1.1.1.1.4.1  [-m1_subset_1(2^[], u1_struct_0(k1_complfld))]   (2)  
+1.1.1.1.1.5  [- (1^[]=1^[])]   (9)  substitution:[[_G3446], [1^[]]]
+1.1.1.1.1.6  [- (2^[]=2^[])]   (9)  substitution:[[_G3446], [2^[]]]
+1.1.1.2  [- (k3_complex1(k4_binop_2(1^[], 2^[]))=k3_complex1(k4_binop_2(1^[], 2^[])))]   (9)  substitution:[[_G3446], [k3_complex1(k4_binop_2(1^[], 2^[]))]]
+1.1.2  [- (k3_complex1(k4_binop_2(1^[], 2^[]))=k9_real_1(k3_complex1(1^[]), k3_complex1(2^[]))), k3_complex1(k4_binop_2(1^[], 2^[]))=k3_complex1(k6_xcmplx_0(1^[], 2^[])), k3_complex1(k6_xcmplx_0(1^[], 2^[]))=k9_real_1(k3_complex1(1^[]), k3_complex1(2^[]))]   (11)  substitution:[[_G3778, _G3891, _G3834], [k3_complex1(k4_binop_2(1^[], 2^[])), k9_real_1(k3_complex1(1^[]), k3_complex1(2^[])), k3_complex1(k6_xcmplx_0(1^[], 2^[]))]]
+1.1.2.1  [- (k3_complex1(k4_binop_2(1^[], 2^[]))=k3_complex1(k6_xcmplx_0(1^[], 2^[]))), k4_binop_2(1^[], 2^[])=k6_xcmplx_0(1^[], 2^[])]   (17)  substitution:[[_G6608, _G6657], [k4_binop_2(1^[], 2^[]), k6_xcmplx_0(1^[], 2^[])]]
+1.1.2.1.1  [- (k4_binop_2(1^[], 2^[])=k6_xcmplx_0(1^[], 2^[])), v1_xcmplx_0(1^[]), v1_xcmplx_0(2^[])]   (5)  substitution:[[_G9098, _G9153], [1^[], 2^[]]]
+1.1.2.1.1.1  [-v1_xcmplx_0(1^[]), m1_subset_1(1^[], u1_struct_0(k1_complfld))]   (4)  substitution:[[_G8927], [1^[]]]
+1.1.2.1.1.1.1  [-m1_subset_1(1^[], u1_struct_0(k1_complfld))]   (1)  
+1.1.2.1.1.2  [-v1_xcmplx_0(2^[]), m1_subset_1(2^[], u1_struct_0(k1_complfld))]   (4)  substitution:[[_G8927], [2^[]]]
+1.1.2.1.1.2.1  [-m1_subset_1(2^[], u1_struct_0(k1_complfld))]   (2)  
+1.1.2.2  [- (k3_complex1(k6_xcmplx_0(1^[], 2^[]))=k9_real_1(k3_complex1(1^[]), k3_complex1(2^[]))), v1_xcmplx_0(1^[]), v1_xcmplx_0(2^[])]   (6)  substitution:[[_G9466, _G9577], [1^[], 2^[]]]
+1.1.2.2.1  [-v1_xcmplx_0(1^[]), m1_subset_1(1^[], u1_struct_0(k1_complfld))]   (4)  substitution:[[_G8927], [1^[]]]
+1.1.2.2.1.1  [-m1_subset_1(1^[], u1_struct_0(k1_complfld))]   (1)  
+1.1.2.2.2  [-v1_xcmplx_0(2^[]), m1_subset_1(2^[], u1_struct_0(k1_complfld))]   (4)  substitution:[[_G8927], [2^[]]]
+1.1.2.2.2.1  [-m1_subset_1(2^[], u1_struct_0(k1_complfld))]   (2)  
+1.2  [- (k4_complex1(k5_algstr_0(k1_complfld, 1^[], 2^[]))=k9_real_1(k4_complex1(1^[]), k4_complex1(2^[]))), k4_complex1(k5_algstr_0(k1_complfld, 1^[], 2^[]))=k4_complex1(k4_binop_2(1^[], 2^[])), k4_complex1(k4_binop_2(1^[], 2^[]))=k9_real_1(k4_complex1(1^[]), k4_complex1(2^[]))]   (11)  substitution:[[_G3778, _G3891, _G3834], [k4_complex1(k5_algstr_0(k1_complfld, 1^[], 2^[])), k9_real_1(k4_complex1(1^[]), k4_complex1(2^[])), k4_complex1(k4_binop_2(1^[], 2^[]))]]
+1.2.1  [- (k4_complex1(k5_algstr_0(k1_complfld, 1^[], 2^[]))=k4_complex1(k4_binop_2(1^[], 2^[]))), k4_complex1(k5_algstr_0(k1_complfld, 1^[], 2^[]))=k4_complex1(k4_binop_2(1^[], 2^[])), k4_complex1(k4_binop_2(1^[], 2^[]))=k4_complex1(k4_binop_2(1^[], 2^[]))]   (11)  substitution:[[_G3778, _G3891, _G3834], [k4_complex1(k5_algstr_0(k1_complfld, 1^[], 2^[])), k4_complex1(k4_binop_2(1^[], 2^[])), k4_complex1(k4_binop_2(1^[], 2^[]))]]
+1.2.1.1  [- (k4_complex1(k5_algstr_0(k1_complfld, 1^[], 2^[]))=k4_complex1(k4_binop_2(1^[], 2^[]))), k5_algstr_0(k1_complfld, 1^[], 2^[])=k4_binop_2(1^[], 2^[])]   (19)  substitution:[[_G8502, _G8551], [k5_algstr_0(k1_complfld, 1^[], 2^[]), k4_binop_2(1^[], 2^[])]]
+1.2.1.1.1  [- (k5_algstr_0(k1_complfld, 1^[], 2^[])=k4_binop_2(1^[], 2^[])), m1_subset_1(1^[], u1_struct_0(k1_complfld)), m1_subset_1(2^[], u1_struct_0(k1_complfld)), v1_xcmplx_0(1^[]), v1_xcmplx_0(2^[]), 1^[]=1^[], 2^[]=2^[]]   (8)  substitution:[[_G10108, _G10269, _G10425, _G10537], [1^[], 2^[], 1^[], 2^[]]]
+1.2.1.1.1.1  [-m1_subset_1(1^[], u1_struct_0(k1_complfld))]   (1)  
+1.2.1.1.1.2  [-m1_subset_1(2^[], u1_struct_0(k1_complfld))]   (2)  
+1.2.1.1.1.3  [-v1_xcmplx_0(1^[]), m1_subset_1(1^[], u1_struct_0(k1_complfld))]   (4)  substitution:[[_G8927], [1^[]]]
+1.2.1.1.1.3.1  [-m1_subset_1(1^[], u1_struct_0(k1_complfld))]   (1)  
+1.2.1.1.1.4  [-v1_xcmplx_0(2^[]), m1_subset_1(2^[], u1_struct_0(k1_complfld))]   (4)  substitution:[[_G8927], [2^[]]]
+1.2.1.1.1.4.1  [-m1_subset_1(2^[], u1_struct_0(k1_complfld))]   (2)  
+1.2.1.1.1.5  [- (1^[]=1^[])]   (9)  substitution:[[_G3446], [1^[]]]
+1.2.1.1.1.6  [- (2^[]=2^[])]   (9)  substitution:[[_G3446], [2^[]]]
+1.2.1.2  [- (k4_complex1(k4_binop_2(1^[], 2^[]))=k4_complex1(k4_binop_2(1^[], 2^[])))]   (9)  substitution:[[_G3446], [k4_complex1(k4_binop_2(1^[], 2^[]))]]
+1.2.2  [- (k4_complex1(k4_binop_2(1^[], 2^[]))=k9_real_1(k4_complex1(1^[]), k4_complex1(2^[]))), k4_complex1(k4_binop_2(1^[], 2^[]))=k4_complex1(k6_xcmplx_0(1^[], 2^[])), k4_complex1(k6_xcmplx_0(1^[], 2^[]))=k9_real_1(k4_complex1(1^[]), k4_complex1(2^[]))]   (11)  substitution:[[_G3778, _G3891, _G3834], [k4_complex1(k4_binop_2(1^[], 2^[])), k9_real_1(k4_complex1(1^[]), k4_complex1(2^[])), k4_complex1(k6_xcmplx_0(1^[], 2^[]))]]
+1.2.2.1  [- (k4_complex1(k4_binop_2(1^[], 2^[]))=k4_complex1(k6_xcmplx_0(1^[], 2^[]))), k4_binop_2(1^[], 2^[])=k6_xcmplx_0(1^[], 2^[])]   (19)  substitution:[[_G8502, _G8551], [k4_binop_2(1^[], 2^[]), k6_xcmplx_0(1^[], 2^[])]]
+1.2.2.1.1  [- (k4_binop_2(1^[], 2^[])=k6_xcmplx_0(1^[], 2^[])), v1_xcmplx_0(1^[]), v1_xcmplx_0(2^[])]   (5)  substitution:[[_G9098, _G9153], [1^[], 2^[]]]
+1.2.2.1.1.1  [-v1_xcmplx_0(1^[]), m1_subset_1(1^[], u1_struct_0(k1_complfld))]   (4)  substitution:[[_G8927], [1^[]]]
+1.2.2.1.1.1.1  [-m1_subset_1(1^[], u1_struct_0(k1_complfld))]   (1)  
+1.2.2.1.1.2  [-v1_xcmplx_0(2^[]), m1_subset_1(2^[], u1_struct_0(k1_complfld))]   (4)  substitution:[[_G8927], [2^[]]]
+1.2.2.1.1.2.1  [-m1_subset_1(2^[], u1_struct_0(k1_complfld))]   (2)  
+1.2.2.2  [- (k4_complex1(k6_xcmplx_0(1^[], 2^[]))=k9_real_1(k4_complex1(1^[]), k4_complex1(2^[]))), v1_xcmplx_0(1^[]), v1_xcmplx_0(2^[])]   (7)  substitution:[[_G9466, _G9577], [1^[], 2^[]]]
+1.2.2.2.1  [-v1_xcmplx_0(1^[]), m1_subset_1(1^[], u1_struct_0(k1_complfld))]   (4)  substitution:[[_G8927], [1^[]]]
+1.2.2.2.1.1  [-m1_subset_1(1^[], u1_struct_0(k1_complfld))]   (1)  
+1.2.2.2.2  [-v1_xcmplx_0(2^[]), m1_subset_1(2^[], u1_struct_0(k1_complfld))]   (4)  substitution:[[_G8927], [2^[]]]
+1.2.2.2.2.1  [-m1_subset_1(2^[], u1_struct_0(k1_complfld))]   (2)  
+------------------------------------------------------
+End of proof for t9_hermitan

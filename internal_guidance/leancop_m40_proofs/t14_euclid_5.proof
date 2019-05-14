@@ -1,0 +1,51 @@
+
+t14_euclid_5 is a Theorem
+Start of proof for t14_euclid_5
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], k1_numbers)]
+ (2)  [-m1_subset_1(2^[], k1_numbers)]
+ (3)  [-m1_subset_1(3^[], k1_numbers)]
+ (4)  [-m1_subset_1(4^[], u1_struct_0(k15_euclid(np__3)))]
+ (5)  [- (4^[]=k4_euclid_5(1^[], 2^[], 3^[]))]
+ (6)  [k1_euclid_5(4^[])=1^[], k2_euclid_5(4^[])=2^[], k3_euclid_5(4^[])=3^[]]
+ (7)  [m1_subset_1(_G6352, k1_numbers), m1_subset_1(_G6501, k1_numbers), m1_subset_1(_G6645, k1_numbers), - (k1_euclid_5(k4_euclid_5(_G6352, _G6501, _G6645))=_G6352)]
+ (8)  [m1_subset_1(_G6352, k1_numbers), m1_subset_1(_G6501, k1_numbers), m1_subset_1(_G6645, k1_numbers), - (k2_euclid_5(k4_euclid_5(_G6352, _G6501, _G6645))=_G6501)]
+ (9)  [m1_subset_1(_G6352, k1_numbers), m1_subset_1(_G6501, k1_numbers), m1_subset_1(_G6645, k1_numbers), - (k3_euclid_5(k4_euclid_5(_G6352, _G6501, _G6645))=_G6645)]
+ (10)  [-m1_subset_1(_G3275, _G3412), m1_subset_1(_G3208, _G3343), _G3208=_G3275, _G3343=_G3412]
+ (11)  [- (_G2435=_G2435)]
+ (12)  [_G2534=_G2579, - (_G2579=_G2534)]
+ (13)  [- (_G2767=_G2880), _G2767=_G2823, _G2823=_G2880]
+ (14)  [_G3826=_G3875, - (u1_struct_0(_G3826)=u1_struct_0(_G3875))]
+ (15)  [_G4104=_G4153, - (k15_euclid(_G4104)=k15_euclid(_G4153))]
+ (16)  [- (k4_euclid_5(_G4382, _G4553, _G4728)=k4_euclid_5(_G4467, _G4640, _G4817)), _G4382=_G4467, _G4553=_G4640, _G4728=_G4817]
+ (17)  [_G5410=_G5459, - (k1_euclid_5(_G5410)=k1_euclid_5(_G5459))]
+ (18)  [_G5688=_G5737, - (k2_euclid_5(_G5688)=k2_euclid_5(_G5737))]
+ (19)  [_G5957=_G6006, - (k3_euclid_5(_G5957)=k3_euclid_5(_G6006))]
+
+Connection Proof:
+-----------------
+1  [k1_euclid_5(4^[])=1^[], k2_euclid_5(4^[])=2^[], k3_euclid_5(4^[])=3^[]]   (6)  
+1.1  [- (k1_euclid_5(4^[])=1^[]), k1_euclid_5(4^[])=k1_euclid_5(k4_euclid_5(1^[], 2^[], 3^[])), k1_euclid_5(k4_euclid_5(1^[], 2^[], 3^[]))=1^[]]   (13)  substitution:[[_G2767, _G2880, _G2823], [k1_euclid_5(4^[]), 1^[], k1_euclid_5(k4_euclid_5(1^[], 2^[], 3^[]))]]
+1.1.1  [- (k1_euclid_5(4^[])=k1_euclid_5(k4_euclid_5(1^[], 2^[], 3^[]))), 4^[]=k4_euclid_5(1^[], 2^[], 3^[])]   (17)  substitution:[[_G5410, _G5459], [4^[], k4_euclid_5(1^[], 2^[], 3^[])]]
+1.1.1.1  [- (4^[]=k4_euclid_5(1^[], 2^[], 3^[]))]   (5)  
+1.1.2  [- (k1_euclid_5(k4_euclid_5(1^[], 2^[], 3^[]))=1^[]), m1_subset_1(1^[], k1_numbers), m1_subset_1(2^[], k1_numbers), m1_subset_1(3^[], k1_numbers)]   (7)  substitution:[[_G6352, _G6501, _G6645], [1^[], 2^[], 3^[]]]
+1.1.2.1  [-m1_subset_1(1^[], k1_numbers)]   (1)  
+1.1.2.2  [-m1_subset_1(2^[], k1_numbers)]   (2)  
+1.1.2.3  [-m1_subset_1(3^[], k1_numbers)]   (3)  
+1.2  [- (k2_euclid_5(4^[])=2^[]), k2_euclid_5(4^[])=k2_euclid_5(k4_euclid_5(1^[], 2^[], 3^[])), k2_euclid_5(k4_euclid_5(1^[], 2^[], 3^[]))=2^[]]   (13)  substitution:[[_G2767, _G2880, _G2823], [k2_euclid_5(4^[]), 2^[], k2_euclid_5(k4_euclid_5(1^[], 2^[], 3^[]))]]
+1.2.1  [- (k2_euclid_5(4^[])=k2_euclid_5(k4_euclid_5(1^[], 2^[], 3^[]))), 4^[]=k4_euclid_5(1^[], 2^[], 3^[])]   (18)  substitution:[[_G5688, _G5737], [4^[], k4_euclid_5(1^[], 2^[], 3^[])]]
+1.2.1.1  [- (4^[]=k4_euclid_5(1^[], 2^[], 3^[]))]   (5)  
+1.2.2  [- (k2_euclid_5(k4_euclid_5(1^[], 2^[], 3^[]))=2^[]), m1_subset_1(1^[], k1_numbers), m1_subset_1(2^[], k1_numbers), m1_subset_1(3^[], k1_numbers)]   (8)  substitution:[[_G6352, _G6501, _G6645], [1^[], 2^[], 3^[]]]
+1.2.2.1  [-m1_subset_1(1^[], k1_numbers)]   (1)  
+1.2.2.2  [-m1_subset_1(2^[], k1_numbers)]   (2)  
+1.2.2.3  [-m1_subset_1(3^[], k1_numbers)]   (3)  
+1.3  [- (k3_euclid_5(4^[])=3^[]), k3_euclid_5(4^[])=k3_euclid_5(k4_euclid_5(1^[], 2^[], 3^[])), k3_euclid_5(k4_euclid_5(1^[], 2^[], 3^[]))=3^[]]   (13)  substitution:[[_G2767, _G2880, _G2823], [k3_euclid_5(4^[]), 3^[], k3_euclid_5(k4_euclid_5(1^[], 2^[], 3^[]))]]
+1.3.1  [- (k3_euclid_5(4^[])=k3_euclid_5(k4_euclid_5(1^[], 2^[], 3^[]))), 4^[]=k4_euclid_5(1^[], 2^[], 3^[])]   (19)  substitution:[[_G5957, _G6006], [4^[], k4_euclid_5(1^[], 2^[], 3^[])]]
+1.3.1.1  [- (4^[]=k4_euclid_5(1^[], 2^[], 3^[]))]   (5)  
+1.3.2  [- (k3_euclid_5(k4_euclid_5(1^[], 2^[], 3^[]))=3^[]), m1_subset_1(1^[], k1_numbers), m1_subset_1(2^[], k1_numbers), m1_subset_1(3^[], k1_numbers)]   (9)  substitution:[[_G6352, _G6501, _G6645], [1^[], 2^[], 3^[]]]
+1.3.2.1  [-m1_subset_1(1^[], k1_numbers)]   (1)  
+1.3.2.2  [-m1_subset_1(2^[], k1_numbers)]   (2)  
+1.3.2.3  [-m1_subset_1(3^[], k1_numbers)]   (3)  
+------------------------------------------------------
+End of proof for t14_euclid_5

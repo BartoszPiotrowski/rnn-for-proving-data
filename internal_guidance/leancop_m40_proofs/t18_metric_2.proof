@@ -1,0 +1,51 @@
+
+t18_metric_2 is a Theorem
+Start of proof for t18_metric_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(2^[])]
+ (2)  [-v6_metric_1(2^[])]
+ (3)  [-v7_metric_1(2^[])]
+ (4)  [-v8_metric_1(2^[])]
+ (5)  [-v9_metric_1(2^[])]
+ (6)  [-l1_metric_1(2^[])]
+ (7)  [-m1_subset_1(3^[], u1_struct_0(2^[]))]
+ (8)  [r2_hidden(k6_domain_1(u1_struct_0(2^[]), 3^[]), k2_metric_2(2^[]))]
+ (9)  [- (k1_metric_2(_G8690, _G9088)=k6_domain_1(u1_struct_0(_G8690), _G9088)), m1_subset_1(_G9088, u1_struct_0(_G8690)), -v2_struct_0(_G8690), v6_metric_1(_G8690), v7_metric_1(_G8690), v8_metric_1(_G8690), v9_metric_1(_G8690), l1_metric_1(_G8690)]
+ (10)  [l1_metric_1(_G9488), -v2_struct_0(_G9488), r2_hidden(_G9413, k2_metric_2(_G9488)), -m1_subset_1(1^[_G9488, _G9413], u1_struct_0(_G9488))]
+ (11)  [l1_metric_1(_G9488), -v2_struct_0(_G9488), r2_hidden(_G9413, k2_metric_2(_G9488)), - (_G9413=k1_metric_2(_G9488, 1^[_G9488, _G9413]))]
+ (12)  [l1_metric_1(_G9488), -v2_struct_0(_G9488), -r2_hidden(_G9413, k2_metric_2(_G9488)), m1_subset_1(_G9734, u1_struct_0(_G9488)), _G9413=k1_metric_2(_G9488, _G9734)]
+ (13)  [- (k1_metric_2(_G6865, _G7000)=k1_metric_2(_G6932, _G7069)), _G6865=_G6932, _G7000=_G7069]
+ (14)  [- (k6_domain_1(_G7462, _G7597)=k6_domain_1(_G7529, _G7666)), _G7462=_G7529, _G7597=_G7666]
+ (15)  [_G8059=_G8108, - (u1_struct_0(_G8059)=u1_struct_0(_G8108))]
+ (16)  [_G8328=_G8377, - (k2_metric_2(_G8328)=k2_metric_2(_G8377))]
+ (17)  [- (_G3062=_G3062)]
+ (18)  [_G3161=_G3206, - (_G3206=_G3161)]
+ (19)  [- (_G3394=_G3507), _G3394=_G3450, _G3450=_G3507]
+ (20)  [-v2_struct_0(_G3893), _G3844=_G3893, v2_struct_0(_G3844)]
+ (21)  [-v6_metric_1(_G4171), _G4122=_G4171, v6_metric_1(_G4122)]
+ (22)  [-v7_metric_1(_G4449), _G4400=_G4449, v7_metric_1(_G4400)]
+ (23)  [-v8_metric_1(_G4727), _G4678=_G4727, v8_metric_1(_G4678)]
+ (24)  [-v9_metric_1(_G5005), _G4956=_G5005, v9_metric_1(_G4956)]
+ (25)  [-l1_metric_1(_G5283), _G5234=_G5283, l1_metric_1(_G5234)]
+ (26)  [-m1_subset_1(_G5579, _G5716), m1_subset_1(_G5512, _G5647), _G5512=_G5579, _G5647=_G5716]
+ (27)  [-r2_hidden(_G6167, _G6304), r2_hidden(_G6100, _G6235), _G6100=_G6167, _G6235=_G6304]
+
+Connection Proof:
+-----------------
+1  [v2_struct_0(2^[])]   (1)  
+1.1  [-v2_struct_0(2^[]), - (k1_metric_2(2^[], 3^[])=k6_domain_1(u1_struct_0(2^[]), 3^[])), m1_subset_1(3^[], u1_struct_0(2^[])), v6_metric_1(2^[]), v7_metric_1(2^[]), v8_metric_1(2^[]), v9_metric_1(2^[]), l1_metric_1(2^[])]   (9)  substitution:[[_G8690, _G9088], [2^[], 3^[]]]
+1.1.1  [k1_metric_2(2^[], 3^[])=k6_domain_1(u1_struct_0(2^[]), 3^[]), - (k6_domain_1(u1_struct_0(2^[]), 3^[])=k1_metric_2(2^[], 3^[]))]   (18)  substitution:[[_G3161, _G3206], [k1_metric_2(2^[], 3^[]), k6_domain_1(u1_struct_0(2^[]), 3^[])]]
+1.1.1.1  [k6_domain_1(u1_struct_0(2^[]), 3^[])=k1_metric_2(2^[], 3^[]), l1_metric_1(2^[]), -v2_struct_0(2^[]), -r2_hidden(k6_domain_1(u1_struct_0(2^[]), 3^[]), k2_metric_2(2^[])), m1_subset_1(3^[], u1_struct_0(2^[]))]   (12)  substitution:[[_G9413, _G9488, _G9734], [k6_domain_1(u1_struct_0(2^[]), 3^[]), 2^[], 3^[]]]
+1.1.1.1.1  [-l1_metric_1(2^[])]   (6)  
+1.1.1.1.2  [v2_struct_0(2^[])]   (1)  
+1.1.1.1.3  [r2_hidden(k6_domain_1(u1_struct_0(2^[]), 3^[]), k2_metric_2(2^[]))]   (8)  
+1.1.1.1.4  [-m1_subset_1(3^[], u1_struct_0(2^[]))]   (7)  
+1.1.2  [-m1_subset_1(3^[], u1_struct_0(2^[]))]   (7)  
+1.1.3  [-v6_metric_1(2^[])]   (2)  
+1.1.4  [-v7_metric_1(2^[])]   (3)  
+1.1.5  [-v8_metric_1(2^[])]   (4)  
+1.1.6  [-v9_metric_1(2^[])]   (5)  
+1.1.7  [-l1_metric_1(2^[])]   (6)  
+------------------------------------------------------
+End of proof for t18_metric_2

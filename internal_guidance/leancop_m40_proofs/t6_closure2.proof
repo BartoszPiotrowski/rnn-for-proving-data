@@ -1,0 +1,22 @@
+
+t6_closure2 is a Theorem
+Start of proof for t6_closure2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(2^[])]
+ (2)  [-v4_relat_1(2^[], 1^[])]
+ (3)  [-v1_funct_1(2^[])]
+ (4)  [-v1_partfun1(2^[], 1^[])]
+ (5)  [-m1_subset_1(3^[], k1_zfmisc_1(k1_closure2(1^[], 2^[])))]
+ (6)  [-m1_subset_1(4^[], k1_zfmisc_1(k1_closure2(1^[], 2^[])))]
+ (7)  [m1_subset_1(k5_subset_1(k1_closure2(1^[], 2^[]), 3^[], 4^[]), k1_zfmisc_1(k1_closure2(1^[], 2^[])))]
+ (8)  [-m1_subset_1(k5_subset_1(_G817, _G883, _G950), k1_zfmisc_1(_G817)), m1_subset_1(_G883, k1_zfmisc_1(_G817)), m1_subset_1(_G950, k1_zfmisc_1(_G817))]
+
+Connection Proof:
+-----------------
+1  [m1_subset_1(k5_subset_1(k1_closure2(1^[], 2^[]), 3^[], 4^[]), k1_zfmisc_1(k1_closure2(1^[], 2^[])))]   (7)  
+1.1  [-m1_subset_1(k5_subset_1(k1_closure2(1^[], 2^[]), 3^[], 4^[]), k1_zfmisc_1(k1_closure2(1^[], 2^[]))), m1_subset_1(3^[], k1_zfmisc_1(k1_closure2(1^[], 2^[]))), m1_subset_1(4^[], k1_zfmisc_1(k1_closure2(1^[], 2^[])))]   (8)  substitution:[[_G817, _G883, _G950], [k1_closure2(1^[], 2^[]), 3^[], 4^[]]]
+1.1.1  [-m1_subset_1(3^[], k1_zfmisc_1(k1_closure2(1^[], 2^[])))]   (5)  
+1.1.2  [-m1_subset_1(4^[], k1_zfmisc_1(k1_closure2(1^[], 2^[])))]   (6)  
+------------------------------------------------------
+End of proof for t6_closure2

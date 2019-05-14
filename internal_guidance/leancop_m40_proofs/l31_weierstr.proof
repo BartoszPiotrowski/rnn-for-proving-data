@@ -1,0 +1,37 @@
+
+l31_weierstr is a Theorem
+Start of proof for l31_weierstr
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [- (k2_struct_0(k3_topmetr)=k1_xboole_0)]
+ (2)  [-v2_pre_topc(k3_topmetr)]
+ (3)  [-l1_pre_topc(k3_topmetr)]
+ (4)  [l1_pre_topc(_G4690), -l1_struct_0(_G4690)]
+ (5)  [-v1_xboole_0(k1_xboole_0)]
+ (6)  [v2_struct_0(k3_topmetr)]
+ (7)  [-v1_pre_topc(k3_topmetr)]
+ (8)  [-v2_pre_topc(k3_topmetr)]
+ (9)  [v1_xboole_0(k2_struct_0(_G4996)), -v2_struct_0(_G4996), l1_struct_0(_G4996)]
+ (10)  [_G4306=_G4355, - (k2_struct_0(_G4306)=k2_struct_0(_G4355))]
+ (11)  [- (_G1748=_G1748)]
+ (12)  [_G1847=_G1892, - (_G1892=_G1847)]
+ (13)  [- (_G2080=_G2193), _G2080=_G2136, _G2136=_G2193]
+ (14)  [-l1_pre_topc(_G2579), _G2530=_G2579, l1_pre_topc(_G2530)]
+ (15)  [-v1_pre_topc(_G2857), _G2808=_G2857, v1_pre_topc(_G2808)]
+ (16)  [-v2_pre_topc(_G3135), _G3086=_G3135, v2_pre_topc(_G3086)]
+ (17)  [-v2_struct_0(_G3413), _G3364=_G3413, v2_struct_0(_G3364)]
+ (18)  [-l1_struct_0(_G3691), _G3642=_G3691, l1_struct_0(_G3642)]
+ (19)  [-v1_xboole_0(_G3960), _G3911=_G3960, v1_xboole_0(_G3911)]
+
+Connection Proof:
+-----------------
+1  [v2_struct_0(k3_topmetr)]   (6)  
+1.1  [-v2_struct_0(k3_topmetr), v1_xboole_0(k2_struct_0(k3_topmetr)), l1_struct_0(k3_topmetr)]   (9)  substitution:[[_G4996], [k3_topmetr]]
+1.1.1  [-v1_xboole_0(k2_struct_0(k3_topmetr)), k1_xboole_0=k2_struct_0(k3_topmetr), v1_xboole_0(k1_xboole_0)]   (19)  substitution:[[_G3960, _G3911], [k2_struct_0(k3_topmetr), k1_xboole_0]]
+1.1.1.1  [- (k1_xboole_0=k2_struct_0(k3_topmetr)), k2_struct_0(k3_topmetr)=k1_xboole_0]   (12)  substitution:[[_G1892, _G1847], [k1_xboole_0, k2_struct_0(k3_topmetr)]]
+1.1.1.1.1  [- (k2_struct_0(k3_topmetr)=k1_xboole_0)]   (1)  
+1.1.1.2  [-v1_xboole_0(k1_xboole_0)]   (5)  
+1.1.2  [-l1_struct_0(k3_topmetr), l1_pre_topc(k3_topmetr)]   (4)  substitution:[[_G4690], [k3_topmetr]]
+1.1.2.1  [-l1_pre_topc(k3_topmetr)]   (3)  
+------------------------------------------------------
+End of proof for l31_weierstr

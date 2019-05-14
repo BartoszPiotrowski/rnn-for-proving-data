@@ -1,0 +1,80 @@
+
+t88_orders_1 is a Theorem
+Start of proof for t88_orders_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v3_ordinal1(2^[])]
+ (2)  [k2_wellord2(k1_wellord2(2^[]))=2^[]]
+ (3)  [v1_relat_1(_G6327), v2_wellord1(_G6327), v3_ordinal1(_G6455), _G6455=k2_wellord2(_G6327), -r4_wellord1(_G6327, k1_wellord2(_G6455))]
+ (4)  [v1_relat_1(_G6327), v2_wellord1(_G6327), v3_ordinal1(_G6455), - (_G6455=k2_wellord2(_G6327)), r4_wellord1(_G6327, k1_wellord2(_G6455))]
+ (5)  [-v1_relat_1(k1_wellord2(_G6784))]
+ (6)  [-r1_tarski(_G6873, _G6873)]
+ (7)  [v3_ordinal1(_G7025), v3_ordinal1(_G7116), r4_wellord1(k1_wellord2(_G7025), k1_wellord2(_G7116)), - (_G7025=_G7116)]
+ (8)  [v1_relat_1(_G7424), v2_wellord1(_G7424), -v3_ordinal1(1^[_G7424])]
+ (9)  [v1_relat_1(_G7424), v2_wellord1(_G7424), -r4_wellord1(_G7424, k1_wellord2(1^[_G7424]))]
+ (10)  [v3_ordinal1(_G7798), r1_tarski(_G7881, _G7798), -v2_wellord1(k1_wellord2(_G7881))]
+ (11)  [_G5738=_G5787, - (k2_wellord2(_G5738)=k2_wellord2(_G5787))]
+ (12)  [_G6007=_G6056, - (k1_wellord2(_G6007)=k1_wellord2(_G6056))]
+ (13)  [- (_G2832=_G2832)]
+ (14)  [_G2931=_G2976, - (_G2976=_G2931)]
+ (15)  [- (_G3164=_G3277), _G3164=_G3220, _G3220=_G3277]
+ (16)  [-v1_relat_1(_G3663), _G3614=_G3663, v1_relat_1(_G3614)]
+ (17)  [-r4_wellord1(_G3959, _G4096), r4_wellord1(_G3892, _G4027), _G3892=_G3959, _G4027=_G4096]
+ (18)  [-r1_tarski(_G4556, _G4693), r1_tarski(_G4489, _G4624), _G4489=_G4556, _G4624=_G4693]
+ (19)  [-v2_wellord1(_G5135), _G5086=_G5135, v2_wellord1(_G5086)]
+ (20)  [-v3_ordinal1(_G5404), _G5355=_G5404, v3_ordinal1(_G5355)]
+
+Connection Proof:
+-----------------
+1  [k2_wellord2(k1_wellord2(2^[]))=2^[]]   (2)  
+1.1  [- (k2_wellord2(k1_wellord2(2^[]))=2^[]), v3_ordinal1(k2_wellord2(k1_wellord2(2^[]))), v3_ordinal1(2^[]), r4_wellord1(k1_wellord2(k2_wellord2(k1_wellord2(2^[]))), k1_wellord2(2^[]))]   (7)  substitution:[[_G7025, _G7116], [k2_wellord2(k1_wellord2(2^[])), 2^[]]]
+1.1.1  [-v3_ordinal1(k2_wellord2(k1_wellord2(2^[]))), 1^[k1_wellord2(2^[])]=k2_wellord2(k1_wellord2(2^[])), v3_ordinal1(1^[k1_wellord2(2^[])])]   (20)  substitution:[[_G5404, _G5355], [k2_wellord2(k1_wellord2(2^[])), 1^[k1_wellord2(2^[])]]]
+1.1.1.1  [- (1^[k1_wellord2(2^[])]=k2_wellord2(k1_wellord2(2^[]))), v1_relat_1(k1_wellord2(2^[])), v2_wellord1(k1_wellord2(2^[])), v3_ordinal1(1^[k1_wellord2(2^[])]), r4_wellord1(k1_wellord2(2^[]), k1_wellord2(1^[k1_wellord2(2^[])]))]   (4)  substitution:[[_G6455, _G6327], [1^[k1_wellord2(2^[])], k1_wellord2(2^[])]]
+1.1.1.1.1  [-v1_relat_1(k1_wellord2(2^[]))]   (5)  substitution:[[_G6784], [2^[]]]
+1.1.1.1.2  [-v2_wellord1(k1_wellord2(2^[])), v3_ordinal1(2^[]), r1_tarski(2^[], 2^[])]   (10)  substitution:[[_G7881, _G7798], [2^[], 2^[]]]
+1.1.1.1.2.1  [-v3_ordinal1(2^[])]   (1)  
+1.1.1.1.2.2  [-r1_tarski(2^[], 2^[])]   (6)  substitution:[[_G6873], [2^[]]]
+1.1.1.1.3  [-v3_ordinal1(1^[k1_wellord2(2^[])]), v1_relat_1(k1_wellord2(2^[])), v2_wellord1(k1_wellord2(2^[]))]   (8)  substitution:[[_G7424], [k1_wellord2(2^[])]]
+1.1.1.1.3.1  [-v1_relat_1(k1_wellord2(2^[]))]   (5)  substitution:[[_G6784], [2^[]]]
+1.1.1.1.3.2  [-v2_wellord1(k1_wellord2(2^[])), v3_ordinal1(2^[]), r1_tarski(2^[], 2^[])]   (10)  substitution:[[_G7881, _G7798], [2^[], 2^[]]]
+1.1.1.1.3.2.1  [-v3_ordinal1(2^[])]   (1)  
+1.1.1.1.3.2.2  [-r1_tarski(2^[], 2^[])]   (6)  substitution:[[_G6873], [2^[]]]
+1.1.1.1.4  [-r4_wellord1(k1_wellord2(2^[]), k1_wellord2(1^[k1_wellord2(2^[])])), v1_relat_1(k1_wellord2(2^[])), v2_wellord1(k1_wellord2(2^[]))]   (9)  substitution:[[_G7424], [k1_wellord2(2^[])]]
+1.1.1.1.4.1  [-v1_relat_1(k1_wellord2(2^[]))]   (5)  substitution:[[_G6784], [2^[]]]
+1.1.1.1.4.2  [-v2_wellord1(k1_wellord2(2^[]))]   (lemmata:1.1.1.1)  
+1.1.1.2  [-v3_ordinal1(1^[k1_wellord2(2^[])]), v1_relat_1(k1_wellord2(2^[])), v2_wellord1(k1_wellord2(2^[]))]   (8)  substitution:[[_G7424], [k1_wellord2(2^[])]]
+1.1.1.2.1  [-v1_relat_1(k1_wellord2(2^[]))]   (5)  substitution:[[_G6784], [2^[]]]
+1.1.1.2.2  [-v2_wellord1(k1_wellord2(2^[])), v3_ordinal1(2^[]), r1_tarski(2^[], 2^[])]   (10)  substitution:[[_G7881, _G7798], [2^[], 2^[]]]
+1.1.1.2.2.1  [-v3_ordinal1(2^[])]   (1)  
+1.1.1.2.2.2  [-r1_tarski(2^[], 2^[])]   (6)  substitution:[[_G6873], [2^[]]]
+1.1.2  [-v3_ordinal1(2^[])]   (1)  
+1.1.3  [-r4_wellord1(k1_wellord2(k2_wellord2(k1_wellord2(2^[]))), k1_wellord2(2^[])), r4_wellord1(k1_wellord2(2^[]), k1_wellord2(2^[])), k1_wellord2(2^[])=k1_wellord2(k2_wellord2(k1_wellord2(2^[]))), k1_wellord2(2^[])=k1_wellord2(2^[])]   (17)  substitution:[[_G3959, _G4096, _G3892, _G4027], [k1_wellord2(k2_wellord2(k1_wellord2(2^[]))), k1_wellord2(2^[]), k1_wellord2(2^[]), k1_wellord2(2^[])]]
+1.1.3.1  [-r4_wellord1(k1_wellord2(2^[]), k1_wellord2(2^[])), v1_relat_1(k1_wellord2(2^[])), v2_wellord1(k1_wellord2(2^[])), v3_ordinal1(2^[]), 2^[]=k2_wellord2(k1_wellord2(2^[]))]   (3)  substitution:[[_G6327, _G6455], [k1_wellord2(2^[]), 2^[]]]
+1.1.3.1.1  [-v1_relat_1(k1_wellord2(2^[]))]   (5)  substitution:[[_G6784], [2^[]]]
+1.1.3.1.2  [-v2_wellord1(k1_wellord2(2^[])), v3_ordinal1(2^[]), r1_tarski(2^[], 2^[])]   (10)  substitution:[[_G7881, _G7798], [2^[], 2^[]]]
+1.1.3.1.2.1  [-v3_ordinal1(2^[])]   (1)  
+1.1.3.1.2.2  [-r1_tarski(2^[], 2^[])]   (6)  substitution:[[_G6873], [2^[]]]
+1.1.3.1.3  [-v3_ordinal1(2^[])]   (1)  
+1.1.3.1.4  [- (2^[]=k2_wellord2(k1_wellord2(2^[]))), v3_ordinal1(2^[]), v3_ordinal1(k2_wellord2(k1_wellord2(2^[]))), r4_wellord1(k1_wellord2(2^[]), k1_wellord2(k2_wellord2(k1_wellord2(2^[]))))]   (7)  substitution:[[_G7025, _G7116], [2^[], k2_wellord2(k1_wellord2(2^[]))]]
+1.1.3.1.4.1  [-v3_ordinal1(2^[])]   (1)  
+1.1.3.1.4.2  [-v3_ordinal1(k2_wellord2(k1_wellord2(2^[])))]   (lemmata:1.1)  
+1.1.3.1.4.3  [-r4_wellord1(k1_wellord2(2^[]), k1_wellord2(k2_wellord2(k1_wellord2(2^[])))), v1_relat_1(k1_wellord2(2^[])), v2_wellord1(k1_wellord2(2^[])), v3_ordinal1(k2_wellord2(k1_wellord2(2^[]))), k2_wellord2(k1_wellord2(2^[]))=k2_wellord2(k1_wellord2(2^[]))]   (3)  substitution:[[_G6327, _G6455], [k1_wellord2(2^[]), k2_wellord2(k1_wellord2(2^[]))]]
+1.1.3.1.4.3.1  [-v1_relat_1(k1_wellord2(2^[]))]   (5)  substitution:[[_G6784], [2^[]]]
+1.1.3.1.4.3.2  [-v2_wellord1(k1_wellord2(2^[]))]   (lemmata:1.1.3.1)  
+1.1.3.1.4.3.3  [-v3_ordinal1(k2_wellord2(k1_wellord2(2^[])))]   (lemmata:1.1.3.1.4)  
+1.1.3.1.4.3.4  [- (k2_wellord2(k1_wellord2(2^[]))=k2_wellord2(k1_wellord2(2^[])))]   (13)  substitution:[[_G2832], [k2_wellord2(k1_wellord2(2^[]))]]
+1.1.3.2  [- (k1_wellord2(2^[])=k1_wellord2(k2_wellord2(k1_wellord2(2^[])))), 2^[]=k2_wellord2(k1_wellord2(2^[]))]   (12)  substitution:[[_G6007, _G6056], [2^[], k2_wellord2(k1_wellord2(2^[]))]]
+1.1.3.2.1  [- (2^[]=k2_wellord2(k1_wellord2(2^[]))), v1_relat_1(k1_wellord2(2^[])), v2_wellord1(k1_wellord2(2^[])), v3_ordinal1(2^[]), r4_wellord1(k1_wellord2(2^[]), k1_wellord2(2^[]))]   (4)  substitution:[[_G6455, _G6327], [2^[], k1_wellord2(2^[])]]
+1.1.3.2.1.1  [-v1_relat_1(k1_wellord2(2^[]))]   (5)  substitution:[[_G6784], [2^[]]]
+1.1.3.2.1.2  [-v2_wellord1(k1_wellord2(2^[])), v3_ordinal1(2^[]), r1_tarski(2^[], 2^[])]   (10)  substitution:[[_G7881, _G7798], [2^[], 2^[]]]
+1.1.3.2.1.2.1  [-v3_ordinal1(2^[])]   (1)  
+1.1.3.2.1.2.2  [-r1_tarski(2^[], 2^[])]   (6)  substitution:[[_G6873], [2^[]]]
+1.1.3.2.1.3  [-v3_ordinal1(2^[])]   (1)  
+1.1.3.2.1.4  [-r4_wellord1(k1_wellord2(2^[]), k1_wellord2(2^[]))]   (lemmata:1.1.3)  
+1.1.3.3  [- (k1_wellord2(2^[])=k1_wellord2(2^[])), 2^[]=2^[]]   (12)  substitution:[[_G6007, _G6056], [2^[], 2^[]]]
+1.1.3.3.1  [- (2^[]=2^[]), v3_ordinal1(2^[]), v3_ordinal1(2^[]), r4_wellord1(k1_wellord2(2^[]), k1_wellord2(2^[]))]   (7)  substitution:[[_G7025, _G7116], [2^[], 2^[]]]
+1.1.3.3.1.1  [-v3_ordinal1(2^[])]   (1)  
+1.1.3.3.1.2  [-v3_ordinal1(2^[])]   (1)  
+1.1.3.3.1.3  [-r4_wellord1(k1_wellord2(2^[]), k1_wellord2(2^[]))]   (lemmata:1.1.3)  
+------------------------------------------------------
+End of proof for t88_orders_1

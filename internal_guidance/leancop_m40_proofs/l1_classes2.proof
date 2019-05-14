@@ -1,0 +1,30 @@
+
+l1_classes2 is a Theorem
+Start of proof for l1_classes2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_classes1(k1_classes1(2^[]))]
+ (2)  [r1_classes1(_G4765, _G4815), -r2_hidden(_G4765, _G4815)]
+ (3)  [r1_classes1(_G4765, _G4815), -v2_classes1(_G4815)]
+ (4)  [-r1_classes1(_G4765, _G4815), r2_hidden(_G4765, _G4815), v2_classes1(_G4815)]
+ (5)  [_G5125=k1_classes1(_G5061), -r1_classes1(_G5061, _G5125)]
+ (6)  [_G5125=k1_classes1(_G5061), r1_classes1(_G5061, _G5318), -r1_tarski(_G5125, _G5318)]
+ (7)  [- (_G5125=k1_classes1(_G5061)), r1_classes1(_G5061, _G5125), -r1_classes1(_G5061, 1^[_G5125, _G5061])]
+ (8)  [- (_G5125=k1_classes1(_G5061)), r1_classes1(_G5061, _G5125), r1_tarski(_G5125, 1^[_G5125, _G5061])]
+ (9)  [_G4466=_G4515, - (k1_classes1(_G4466)=k1_classes1(_G4515))]
+ (10)  [- (_G1549=_G1549)]
+ (11)  [_G1648=_G1693, - (_G1693=_G1648)]
+ (12)  [- (_G1881=_G1994), _G1881=_G1937, _G1937=_G1994]
+ (13)  [-r2_hidden(_G2398, _G2535), r2_hidden(_G2331, _G2466), _G2331=_G2398, _G2466=_G2535]
+ (14)  [-r1_classes1(_G2995, _G3132), r1_classes1(_G2928, _G3063), _G2928=_G2995, _G3063=_G3132]
+ (15)  [-v2_classes1(_G4162), _G4113=_G4162, v2_classes1(_G4113)]
+ (16)  [-r1_tarski(_G3592, _G3729), r1_tarski(_G3525, _G3660), _G3525=_G3592, _G3660=_G3729]
+
+Connection Proof:
+-----------------
+1  [v2_classes1(k1_classes1(2^[]))]   (1)  
+1.1  [-v2_classes1(k1_classes1(2^[])), r1_classes1(2^[], k1_classes1(2^[]))]   (3)  substitution:[[_G4815, _G4765], [k1_classes1(2^[]), 2^[]]]
+1.1.1  [-r1_classes1(2^[], k1_classes1(2^[])), k1_classes1(2^[])=k1_classes1(2^[])]   (5)  substitution:[[_G5061, _G5125], [2^[], k1_classes1(2^[])]]
+1.1.1.1  [- (k1_classes1(2^[])=k1_classes1(2^[]))]   (10)  substitution:[[_G1549], [k1_classes1(2^[])]]
+------------------------------------------------------
+End of proof for l1_classes2

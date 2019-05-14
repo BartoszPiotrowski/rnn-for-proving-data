@@ -1,0 +1,60 @@
+
+t46_member_1 is a Theorem
+Start of proof for t46_member_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_membered(3^[])]
+ (2)  [-v1_membered(4^[])]
+ (3)  [-v1_xcmplx_0(5^[])]
+ (4)  [-v1_xcmplx_0(6^[])]
+ (5)  [-r2_hidden(5^[], 3^[])]
+ (6)  [-r2_hidden(6^[], 4^[])]
+ (7)  [r2_hidden(k3_binop_2(5^[], 6^[]), k9_member_1(3^[], 4^[]))]
+ (8)  [v1_xcmplx_0(_G7390), -r2_hidden(_G7390, k2_numbers)]
+ (9)  [-v1_xcmplx_0(_G7390), r2_hidden(_G7390, k2_numbers)]
+ (10)  [v1_membered(_G7547), v1_membered(_G7634), - (k9_member_1(_G7547, _G7634)=a_2_1_member_1(_G7547, _G7634))]
+ (11)  [r2_hidden(_G9044, _G9089), -m1_subset_1(_G9044, _G9089)]
+ (12)  [v1_membered(_G8111), v1_membered(_G8010), r2_hidden(_G7910, a_2_1_member_1(_G8010, _G8111)), -m1_subset_1(1^[_G8111, _G8010, _G7910], k2_numbers)]
+ (13)  [v1_membered(_G8111), v1_membered(_G8010), r2_hidden(_G7910, a_2_1_member_1(_G8010, _G8111)), -m1_subset_1(2^[_G8111, _G8010, _G7910], k2_numbers)]
+ (14)  [v1_membered(_G8111), v1_membered(_G8010), r2_hidden(_G7910, a_2_1_member_1(_G8010, _G8111)), - (_G7910=k3_binop_2(1^[_G8111, _G8010, _G7910], 2^[_G8111, _G8010, _G7910]))]
+ (15)  [v1_membered(_G8111), v1_membered(_G8010), r2_hidden(_G7910, a_2_1_member_1(_G8010, _G8111)), -r2_hidden(1^[_G8111, _G8010, _G7910], _G8010)]
+ (16)  [v1_membered(_G8111), v1_membered(_G8010), r2_hidden(_G7910, a_2_1_member_1(_G8010, _G8111)), -r2_hidden(2^[_G8111, _G8010, _G7910], _G8111)]
+ (17)  [v1_membered(_G8111), v1_membered(_G8010), -r2_hidden(_G7910, a_2_1_member_1(_G8010, _G8111)), m1_subset_1(_G8478, k2_numbers), m1_subset_1(_G8394, k2_numbers), _G7910=k3_binop_2(_G8394, _G8478), r2_hidden(_G8394, _G8010), r2_hidden(_G8478, _G8111)]
+ (18)  [- (a_2_1_member_1(_G5545, _G5680)=a_2_1_member_1(_G5612, _G5749)), _G5545=_G5612, _G5680=_G5749]
+ (19)  [- (k3_binop_2(_G6142, _G6277)=k3_binop_2(_G6209, _G6346)), _G6142=_G6209, _G6277=_G6346]
+ (20)  [- (k9_member_1(_G6730, _G6865)=k9_member_1(_G6797, _G6934)), _G6730=_G6797, _G6865=_G6934]
+ (21)  [- (_G2938=_G2938)]
+ (22)  [_G3037=_G3082, - (_G3082=_G3037)]
+ (23)  [- (_G3270=_G3383), _G3270=_G3326, _G3326=_G3383]
+ (24)  [-m1_subset_1(_G3787, _G3924), m1_subset_1(_G3720, _G3855), _G3720=_G3787, _G3855=_G3924]
+ (25)  [-v1_membered(_G4366), _G4317=_G4366, v1_membered(_G4317)]
+ (26)  [-v1_xcmplx_0(_G4644), _G4595=_G4644, v1_xcmplx_0(_G4595)]
+ (27)  [-r2_hidden(_G4931, _G5068), r2_hidden(_G4864, _G4999), _G4864=_G4931, _G4999=_G5068]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(k3_binop_2(5^[], 6^[]), k9_member_1(3^[], 4^[]))]   (7)  
+1.1  [-r2_hidden(k3_binop_2(5^[], 6^[]), k9_member_1(3^[], 4^[])), r2_hidden(k3_binop_2(5^[], 6^[]), a_2_1_member_1(3^[], 4^[])), k3_binop_2(5^[], 6^[])=k3_binop_2(5^[], 6^[]), a_2_1_member_1(3^[], 4^[])=k9_member_1(3^[], 4^[])]   (27)  substitution:[[_G4931, _G5068, _G4864, _G4999], [k3_binop_2(5^[], 6^[]), k9_member_1(3^[], 4^[]), k3_binop_2(5^[], 6^[]), a_2_1_member_1(3^[], 4^[])]]
+1.1.1  [-r2_hidden(k3_binop_2(5^[], 6^[]), a_2_1_member_1(3^[], 4^[])), v1_membered(4^[]), v1_membered(3^[]), m1_subset_1(6^[], k2_numbers), m1_subset_1(5^[], k2_numbers), k3_binop_2(5^[], 6^[])=k3_binop_2(5^[], 6^[]), r2_hidden(5^[], 3^[]), r2_hidden(6^[], 4^[])]   (17)  substitution:[[_G7910, _G8010, _G8111, _G8478, _G8394], [k3_binop_2(5^[], 6^[]), 3^[], 4^[], 6^[], 5^[]]]
+1.1.1.1  [-v1_membered(4^[])]   (2)  
+1.1.1.2  [-v1_membered(3^[])]   (1)  
+1.1.1.3  [-m1_subset_1(6^[], k2_numbers), r2_hidden(6^[], k2_numbers)]   (11)  substitution:[[_G9044, _G9089], [6^[], k2_numbers]]
+1.1.1.3.1  [-r2_hidden(6^[], k2_numbers), v1_xcmplx_0(6^[])]   (8)  substitution:[[_G7390], [6^[]]]
+1.1.1.3.1.1  [-v1_xcmplx_0(6^[])]   (4)  
+1.1.1.4  [-m1_subset_1(5^[], k2_numbers), r2_hidden(5^[], k2_numbers)]   (11)  substitution:[[_G9044, _G9089], [5^[], k2_numbers]]
+1.1.1.4.1  [-r2_hidden(5^[], k2_numbers), v1_xcmplx_0(5^[])]   (8)  substitution:[[_G7390], [5^[]]]
+1.1.1.4.1.1  [-v1_xcmplx_0(5^[])]   (3)  
+1.1.1.5  [- (k3_binop_2(5^[], 6^[])=k3_binop_2(5^[], 6^[])), 5^[]=5^[], 6^[]=6^[]]   (19)  substitution:[[_G6142, _G6277, _G6209, _G6346], [5^[], 6^[], 5^[], 6^[]]]
+1.1.1.5.1  [- (5^[]=5^[])]   (21)  substitution:[[_G2938], [5^[]]]
+1.1.1.5.2  [- (6^[]=6^[])]   (21)  substitution:[[_G2938], [6^[]]]
+1.1.1.6  [-r2_hidden(5^[], 3^[])]   (5)  
+1.1.1.7  [-r2_hidden(6^[], 4^[])]   (6)  
+1.1.2  [- (k3_binop_2(5^[], 6^[])=k3_binop_2(5^[], 6^[])), 5^[]=5^[], 6^[]=6^[]]   (19)  substitution:[[_G6142, _G6277, _G6209, _G6346], [5^[], 6^[], 5^[], 6^[]]]
+1.1.2.1  [- (5^[]=5^[])]   (21)  substitution:[[_G2938], [5^[]]]
+1.1.2.2  [- (6^[]=6^[])]   (21)  substitution:[[_G2938], [6^[]]]
+1.1.3  [- (a_2_1_member_1(3^[], 4^[])=k9_member_1(3^[], 4^[])), k9_member_1(3^[], 4^[])=a_2_1_member_1(3^[], 4^[])]   (22)  substitution:[[_G3082, _G3037], [a_2_1_member_1(3^[], 4^[]), k9_member_1(3^[], 4^[])]]
+1.1.3.1  [- (k9_member_1(3^[], 4^[])=a_2_1_member_1(3^[], 4^[])), v1_membered(3^[]), v1_membered(4^[])]   (10)  substitution:[[_G7547, _G7634], [3^[], 4^[]]]
+1.1.3.1.1  [-v1_membered(3^[])]   (1)  
+1.1.3.1.2  [-v1_membered(4^[])]   (2)  
+------------------------------------------------------
+End of proof for t46_member_1

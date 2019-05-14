@@ -1,0 +1,44 @@
+
+t7_pre_poly is a Theorem
+Start of proof for t7_pre_poly
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k2_wellord1(k1_xboole_0, 2^[])=k1_xboole_0]
+ (2)  [- (k3_xboole_0(_G7856, _G7901)=k3_xboole_0(_G7901, _G7856))]
+ (3)  [v1_relat_1(_G8098), - (k2_wellord1(_G8098, _G8183)=k3_xboole_0(_G8098, k2_zfmisc_1(_G8183, _G8183)))]
+ (4)  [-m1_subset_1(1^[_G8514, _G8443], k1_zfmisc_1(k2_zfmisc_1(_G8443, _G8514)))]
+ (5)  [-v1_xboole_0(1^[_G8514, _G8443])]
+ (6)  [-v1_relat_1(1^[_G8514, _G8443])]
+ (7)  [-v4_relat_1(1^[_G8514, _G8443], _G8443)]
+ (8)  [-v5_relat_1(1^[_G8514, _G8443], _G8514)]
+ (9)  [- (k3_xboole_0(_G9055, k1_xboole_0)=k1_xboole_0)]
+ (10)  [v1_xboole_0(_G9187), - (_G9187=k1_xboole_0)]
+ (11)  [_G5712=_G5761, - (k1_zfmisc_1(_G5712)=k1_zfmisc_1(_G5761))]
+ (12)  [- (k2_zfmisc_1(_G5990, _G6125)=k2_zfmisc_1(_G6057, _G6194)), _G5990=_G6057, _G6125=_G6194]
+ (13)  [- (k3_xboole_0(_G6587, _G6722)=k3_xboole_0(_G6654, _G6791)), _G6587=_G6654, _G6722=_G6791]
+ (14)  [- (k2_wellord1(_G7175, _G7310)=k2_wellord1(_G7242, _G7379)), _G7175=_G7242, _G7310=_G7379]
+ (15)  [- (_G2487=_G2487)]
+ (16)  [_G2586=_G2631, - (_G2631=_G2586)]
+ (17)  [- (_G2819=_G2932), _G2819=_G2875, _G2875=_G2932]
+ (18)  [-m1_subset_1(_G3336, _G3473), m1_subset_1(_G3269, _G3404), _G3269=_G3336, _G3404=_G3473]
+ (19)  [-v1_relat_1(_G3915), _G3866=_G3915, v1_relat_1(_G3866)]
+ (20)  [-v4_relat_1(_G4211, _G4348), v4_relat_1(_G4144, _G4279), _G4144=_G4211, _G4279=_G4348]
+ (21)  [-v1_xboole_0(_G5378), _G5329=_G5378, v1_xboole_0(_G5329)]
+ (22)  [-v5_relat_1(_G4808, _G4945), v5_relat_1(_G4741, _G4876), _G4741=_G4808, _G4876=_G4945]
+
+Connection Proof:
+-----------------
+1  [k2_wellord1(k1_xboole_0, 2^[])=k1_xboole_0]   (1)  
+1.1  [- (k2_wellord1(k1_xboole_0, 2^[])=k1_xboole_0), k2_wellord1(k1_xboole_0, 2^[])=k3_xboole_0(k1_xboole_0, k2_zfmisc_1(2^[], 2^[])), k3_xboole_0(k1_xboole_0, k2_zfmisc_1(2^[], 2^[]))=k1_xboole_0]   (17)  substitution:[[_G2819, _G2932, _G2875], [k2_wellord1(k1_xboole_0, 2^[]), k1_xboole_0, k3_xboole_0(k1_xboole_0, k2_zfmisc_1(2^[], 2^[]))]]
+1.1.1  [- (k2_wellord1(k1_xboole_0, 2^[])=k3_xboole_0(k1_xboole_0, k2_zfmisc_1(2^[], 2^[]))), v1_relat_1(k1_xboole_0)]   (3)  substitution:[[_G8098, _G8183], [k1_xboole_0, 2^[]]]
+1.1.1.1  [-v1_relat_1(k1_xboole_0), 1^[_G14286, _G14289]=k1_xboole_0, v1_relat_1(1^[_G14286, _G14289])]   (19)  substitution:[[_G3915, _G3866], [k1_xboole_0, 1^[_G14286, _G14289]]]
+1.1.1.1.1  [- (1^[_G14286, _G14289]=k1_xboole_0), v1_xboole_0(1^[_G14286, _G14289])]   (10)  substitution:[[_G9187], [1^[_G14286, _G14289]]]
+1.1.1.1.1.1  [-v1_xboole_0(1^[_G14286, _G14289])]   (5)  substitution:[[_G8514, _G8443], [_G14286, _G14289]]
+1.1.1.1.2  [-v1_relat_1(1^[_G14286, _G14289])]   (6)  substitution:[[_G8514, _G8443], [_G14286, _G14289]]
+1.1.2  [- (k3_xboole_0(k1_xboole_0, k2_zfmisc_1(2^[], 2^[]))=k1_xboole_0), k1_xboole_0=k3_xboole_0(k1_xboole_0, k2_zfmisc_1(2^[], 2^[]))]   (16)  substitution:[[_G2631, _G2586], [k3_xboole_0(k1_xboole_0, k2_zfmisc_1(2^[], 2^[])), k1_xboole_0]]
+1.1.2.1  [- (k1_xboole_0=k3_xboole_0(k1_xboole_0, k2_zfmisc_1(2^[], 2^[]))), k1_xboole_0=k3_xboole_0(k2_zfmisc_1(2^[], 2^[]), k1_xboole_0), k3_xboole_0(k2_zfmisc_1(2^[], 2^[]), k1_xboole_0)=k3_xboole_0(k1_xboole_0, k2_zfmisc_1(2^[], 2^[]))]   (17)  substitution:[[_G2819, _G2932, _G2875], [k1_xboole_0, k3_xboole_0(k1_xboole_0, k2_zfmisc_1(2^[], 2^[])), k3_xboole_0(k2_zfmisc_1(2^[], 2^[]), k1_xboole_0)]]
+1.1.2.1.1  [- (k1_xboole_0=k3_xboole_0(k2_zfmisc_1(2^[], 2^[]), k1_xboole_0)), k3_xboole_0(k2_zfmisc_1(2^[], 2^[]), k1_xboole_0)=k1_xboole_0]   (16)  substitution:[[_G2631, _G2586], [k1_xboole_0, k3_xboole_0(k2_zfmisc_1(2^[], 2^[]), k1_xboole_0)]]
+1.1.2.1.1.1  [- (k3_xboole_0(k2_zfmisc_1(2^[], 2^[]), k1_xboole_0)=k1_xboole_0)]   (9)  substitution:[[_G9055], [k2_zfmisc_1(2^[], 2^[])]]
+1.1.2.1.2  [- (k3_xboole_0(k2_zfmisc_1(2^[], 2^[]), k1_xboole_0)=k3_xboole_0(k1_xboole_0, k2_zfmisc_1(2^[], 2^[])))]   (2)  substitution:[[_G7856, _G7901], [k2_zfmisc_1(2^[], 2^[]), k1_xboole_0]]
+------------------------------------------------------
+End of proof for t7_pre_poly

@@ -1,0 +1,85 @@
+
+t51_yellow_0 is a Theorem
+Start of proof for t51_yellow_0
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(2^[])]
+ (2)  [-l1_orders_2(2^[])]
+ (3)  [k1_yellow_0(2^[], 3^[])=k1_yellow_0(2^[], k3_xboole_0(3^[], u1_struct_0(2^[])))]
+ (4)  [-r1_yellow_0(2^[], 3^[]), -r1_yellow_0(2^[], k3_xboole_0(3^[], u1_struct_0(2^[])))]
+ (5)  [l1_orders_2(_G9642), -v2_struct_0(_G9642), - (k1_yellow_0(_G9642, _G9836)=k1_yellow_0(_G9642, _G9920)), r1_yellow_0(_G9642, _G9836), -m1_subset_1(1^[_G9920, _G9836, _G9642], u1_struct_0(_G9642))]
+ (6)  [l1_orders_2(_G9642), -v2_struct_0(_G9642), - (k1_yellow_0(_G9642, _G9836)=k1_yellow_0(_G9642, _G9920)), r1_yellow_0(_G9642, _G9836), r2_lattice3(_G9642, _G9836, 1^[_G9920, _G9836, _G9642]), r2_lattice3(_G9642, _G9920, 1^[_G9920, _G9836, _G9642])]
+ (7)  [l1_orders_2(_G9642), -v2_struct_0(_G9642), - (k1_yellow_0(_G9642, _G9836)=k1_yellow_0(_G9642, _G9920)), r1_yellow_0(_G9642, _G9836), -r2_lattice3(_G9642, _G9836, 1^[_G9920, _G9836, _G9642]), -r2_lattice3(_G9642, _G9920, 1^[_G9920, _G9836, _G9642])]
+ (8)  [l1_orders_2(_G10664), -v2_struct_0(_G10664), m1_subset_1(_G11020, u1_struct_0(_G10664)), r2_lattice3(_G10664, _G10897, _G11020), -r2_lattice3(_G10664, k3_xboole_0(_G10897, u1_struct_0(_G10664)), _G11020)]
+ (9)  [l1_orders_2(_G10664), -v2_struct_0(_G10664), m1_subset_1(_G11020, u1_struct_0(_G10664)), r2_lattice3(_G10664, k3_xboole_0(_G10897, u1_struct_0(_G10664)), _G11020), -r2_lattice3(_G10664, _G10897, _G11020)]
+ (10)  [l1_orders_2(_G10664), -v2_struct_0(_G10664), m1_subset_1(_G11020, u1_struct_0(_G10664)), r1_lattice3(_G10664, _G10897, _G11020), -r1_lattice3(_G10664, k3_xboole_0(_G10897, u1_struct_0(_G10664)), _G11020)]
+ (11)  [l1_orders_2(_G10664), -v2_struct_0(_G10664), m1_subset_1(_G11020, u1_struct_0(_G10664)), r1_lattice3(_G10664, k3_xboole_0(_G10897, u1_struct_0(_G10664)), _G11020), -r1_lattice3(_G10664, _G10897, _G11020)]
+ (12)  [- (k1_yellow_0(_G8116, _G8251)=k1_yellow_0(_G8183, _G8320)), _G8116=_G8183, _G8251=_G8320]
+ (13)  [_G9301=_G9350, - (u1_struct_0(_G9301)=u1_struct_0(_G9350))]
+ (14)  [- (k3_xboole_0(_G8713, _G8848)=k3_xboole_0(_G8780, _G8917)), _G8713=_G8780, _G8848=_G8917]
+ (15)  [- (_G3411=_G3411)]
+ (16)  [_G3510=_G3555, - (_G3555=_G3510)]
+ (17)  [- (_G3743=_G3856), _G3743=_G3799, _G3799=_G3856]
+ (18)  [-m1_subset_1(_G4260, _G4397), m1_subset_1(_G4193, _G4328), _G4193=_G4260, _G4328=_G4397]
+ (19)  [-r2_lattice3(_G4875, _G5048, _G5225), r2_lattice3(_G4790, _G4961, _G5136), _G4790=_G4875, _G4961=_G5048, _G5136=_G5225]
+ (20)  [-r1_lattice3(_G5903, _G6076, _G6253), r1_lattice3(_G5818, _G5989, _G6164), _G5818=_G5903, _G5989=_G6076, _G6164=_G6253]
+ (21)  [-v2_struct_0(_G6895), _G6846=_G6895, v2_struct_0(_G6846)]
+ (22)  [-l1_orders_2(_G7173), _G7124=_G7173, l1_orders_2(_G7124)]
+ (23)  [-r1_yellow_0(_G7460, _G7597), r1_yellow_0(_G7393, _G7528), _G7393=_G7460, _G7528=_G7597]
+
+Connection Proof:
+-----------------
+1  [v2_struct_0(2^[])]   (1)  
+1.1  [-v2_struct_0(2^[]), l1_orders_2(2^[]), - (k1_yellow_0(2^[], 3^[])=k1_yellow_0(2^[], k3_xboole_0(3^[], u1_struct_0(2^[])))), r1_yellow_0(2^[], 3^[]), -m1_subset_1(1^[k3_xboole_0(3^[], u1_struct_0(2^[])), 3^[], 2^[]], u1_struct_0(2^[]))]   (5)  substitution:[[_G9642, _G9836, _G9920], [2^[], 3^[], k3_xboole_0(3^[], u1_struct_0(2^[]))]]
+1.1.1  [-l1_orders_2(2^[])]   (2)  
+1.1.2  [k1_yellow_0(2^[], 3^[])=k1_yellow_0(2^[], k3_xboole_0(3^[], u1_struct_0(2^[])))]   (3)  
+1.1.3  [-r1_yellow_0(2^[], 3^[]), -r1_yellow_0(2^[], k3_xboole_0(3^[], u1_struct_0(2^[])))]   (4)  
+1.1.3.1  [r1_yellow_0(2^[], k3_xboole_0(3^[], u1_struct_0(2^[]))), l1_orders_2(2^[]), -v2_struct_0(2^[]), - (k1_yellow_0(2^[], k3_xboole_0(3^[], u1_struct_0(2^[])))=k1_yellow_0(2^[], 3^[])), r2_lattice3(2^[], k3_xboole_0(3^[], u1_struct_0(2^[])), 1^[3^[], k3_xboole_0(3^[], u1_struct_0(2^[])), 2^[]]), r2_lattice3(2^[], 3^[], 1^[3^[], k3_xboole_0(3^[], u1_struct_0(2^[])), 2^[]])]   (6)  substitution:[[_G9642, _G9836, _G9920], [2^[], k3_xboole_0(3^[], u1_struct_0(2^[])), 3^[]]]
+1.1.3.1.1  [-l1_orders_2(2^[])]   (2)  
+1.1.3.1.2  [v2_struct_0(2^[])]   (1)  
+1.1.3.1.3  [k1_yellow_0(2^[], k3_xboole_0(3^[], u1_struct_0(2^[])))=k1_yellow_0(2^[], 3^[]), - (k1_yellow_0(2^[], 3^[])=k1_yellow_0(2^[], k3_xboole_0(3^[], u1_struct_0(2^[]))))]   (16)  substitution:[[_G3510, _G3555], [k1_yellow_0(2^[], k3_xboole_0(3^[], u1_struct_0(2^[]))), k1_yellow_0(2^[], 3^[])]]
+1.1.3.1.3.1  [k1_yellow_0(2^[], 3^[])=k1_yellow_0(2^[], k3_xboole_0(3^[], u1_struct_0(2^[])))]   (3)  
+1.1.3.1.4  [-r2_lattice3(2^[], k3_xboole_0(3^[], u1_struct_0(2^[])), 1^[3^[], k3_xboole_0(3^[], u1_struct_0(2^[])), 2^[]]), l1_orders_2(2^[]), -v2_struct_0(2^[]), m1_subset_1(1^[3^[], k3_xboole_0(3^[], u1_struct_0(2^[])), 2^[]], u1_struct_0(2^[])), r2_lattice3(2^[], 3^[], 1^[3^[], k3_xboole_0(3^[], u1_struct_0(2^[])), 2^[]])]   (8)  substitution:[[_G10664, _G10897, _G11020], [2^[], 3^[], 1^[3^[], k3_xboole_0(3^[], u1_struct_0(2^[])), 2^[]]]]
+1.1.3.1.4.1  [-l1_orders_2(2^[])]   (2)  
+1.1.3.1.4.2  [v2_struct_0(2^[])]   (1)  
+1.1.3.1.4.3  [-m1_subset_1(1^[3^[], k3_xboole_0(3^[], u1_struct_0(2^[])), 2^[]], u1_struct_0(2^[])), l1_orders_2(2^[]), -v2_struct_0(2^[]), - (k1_yellow_0(2^[], k3_xboole_0(3^[], u1_struct_0(2^[])))=k1_yellow_0(2^[], 3^[])), r1_yellow_0(2^[], k3_xboole_0(3^[], u1_struct_0(2^[])))]   (5)  substitution:[[_G9920, _G9836, _G9642], [3^[], k3_xboole_0(3^[], u1_struct_0(2^[])), 2^[]]]
+1.1.3.1.4.3.1  [-l1_orders_2(2^[])]   (2)  
+1.1.3.1.4.3.2  [v2_struct_0(2^[])]   (1)  
+1.1.3.1.4.3.3  [k1_yellow_0(2^[], k3_xboole_0(3^[], u1_struct_0(2^[])))=k1_yellow_0(2^[], 3^[])]   (lemmata:1.1.3.1)  
+1.1.3.1.4.3.4  [-r1_yellow_0(2^[], k3_xboole_0(3^[], u1_struct_0(2^[])))]   (reduction:1.1.3)  
+1.1.3.1.4.4  [-r2_lattice3(2^[], 3^[], 1^[3^[], k3_xboole_0(3^[], u1_struct_0(2^[])), 2^[]]), l1_orders_2(2^[]), -v2_struct_0(2^[]), - (k1_yellow_0(2^[], k3_xboole_0(3^[], u1_struct_0(2^[])))=k1_yellow_0(2^[], 3^[])), r1_yellow_0(2^[], k3_xboole_0(3^[], u1_struct_0(2^[]))), -r2_lattice3(2^[], k3_xboole_0(3^[], u1_struct_0(2^[])), 1^[3^[], k3_xboole_0(3^[], u1_struct_0(2^[])), 2^[]])]   (7)  substitution:[[_G9642, _G9920, _G9836], [2^[], 3^[], k3_xboole_0(3^[], u1_struct_0(2^[]))]]
+1.1.3.1.4.4.1  [-l1_orders_2(2^[])]   (2)  
+1.1.3.1.4.4.2  [v2_struct_0(2^[])]   (1)  
+1.1.3.1.4.4.3  [k1_yellow_0(2^[], k3_xboole_0(3^[], u1_struct_0(2^[])))=k1_yellow_0(2^[], 3^[])]   (lemmata:1.1.3.1)  
+1.1.3.1.4.4.4  [-r1_yellow_0(2^[], k3_xboole_0(3^[], u1_struct_0(2^[])))]   (reduction:1.1.3)  
+1.1.3.1.4.4.5  [r2_lattice3(2^[], k3_xboole_0(3^[], u1_struct_0(2^[])), 1^[3^[], k3_xboole_0(3^[], u1_struct_0(2^[])), 2^[]])]   (reduction:1.1.3.1)  
+1.1.3.1.5  [-r2_lattice3(2^[], 3^[], 1^[3^[], k3_xboole_0(3^[], u1_struct_0(2^[])), 2^[]]), l1_orders_2(2^[]), -v2_struct_0(2^[]), m1_subset_1(1^[3^[], k3_xboole_0(3^[], u1_struct_0(2^[])), 2^[]], u1_struct_0(2^[])), r2_lattice3(2^[], k3_xboole_0(3^[], u1_struct_0(2^[])), 1^[3^[], k3_xboole_0(3^[], u1_struct_0(2^[])), 2^[]])]   (9)  substitution:[[_G10664, _G10897, _G11020], [2^[], 3^[], 1^[3^[], k3_xboole_0(3^[], u1_struct_0(2^[])), 2^[]]]]
+1.1.3.1.5.1  [-l1_orders_2(2^[])]   (2)  
+1.1.3.1.5.2  [v2_struct_0(2^[])]   (1)  
+1.1.3.1.5.3  [-m1_subset_1(1^[3^[], k3_xboole_0(3^[], u1_struct_0(2^[])), 2^[]], u1_struct_0(2^[])), l1_orders_2(2^[]), -v2_struct_0(2^[]), - (k1_yellow_0(2^[], k3_xboole_0(3^[], u1_struct_0(2^[])))=k1_yellow_0(2^[], 3^[])), r1_yellow_0(2^[], k3_xboole_0(3^[], u1_struct_0(2^[])))]   (5)  substitution:[[_G9920, _G9836, _G9642], [3^[], k3_xboole_0(3^[], u1_struct_0(2^[])), 2^[]]]
+1.1.3.1.5.3.1  [-l1_orders_2(2^[])]   (2)  
+1.1.3.1.5.3.2  [v2_struct_0(2^[])]   (1)  
+1.1.3.1.5.3.3  [k1_yellow_0(2^[], k3_xboole_0(3^[], u1_struct_0(2^[])))=k1_yellow_0(2^[], 3^[])]   (lemmata:1.1.3.1)  
+1.1.3.1.5.3.4  [-r1_yellow_0(2^[], k3_xboole_0(3^[], u1_struct_0(2^[])))]   (reduction:1.1.3)  
+1.1.3.1.5.4  [-r2_lattice3(2^[], k3_xboole_0(3^[], u1_struct_0(2^[])), 1^[3^[], k3_xboole_0(3^[], u1_struct_0(2^[])), 2^[]])]   (lemmata:1.1.3.1)  
+1.1.4  [m1_subset_1(1^[k3_xboole_0(3^[], u1_struct_0(2^[])), 3^[], 2^[]], u1_struct_0(2^[])), l1_orders_2(2^[]), -v2_struct_0(2^[]), r2_lattice3(2^[], 3^[], 1^[k3_xboole_0(3^[], u1_struct_0(2^[])), 3^[], 2^[]]), -r2_lattice3(2^[], k3_xboole_0(3^[], u1_struct_0(2^[])), 1^[k3_xboole_0(3^[], u1_struct_0(2^[])), 3^[], 2^[]])]   (8)  substitution:[[_G11020, _G10664, _G10897], [1^[k3_xboole_0(3^[], u1_struct_0(2^[])), 3^[], 2^[]], 2^[], 3^[]]]
+1.1.4.1  [-l1_orders_2(2^[])]   (2)  
+1.1.4.2  [v2_struct_0(2^[])]   (1)  
+1.1.4.3  [-r2_lattice3(2^[], 3^[], 1^[k3_xboole_0(3^[], u1_struct_0(2^[])), 3^[], 2^[]]), l1_orders_2(2^[]), -v2_struct_0(2^[]), - (k1_yellow_0(2^[], 3^[])=k1_yellow_0(2^[], k3_xboole_0(3^[], u1_struct_0(2^[])))), r1_yellow_0(2^[], 3^[]), -r2_lattice3(2^[], k3_xboole_0(3^[], u1_struct_0(2^[])), 1^[k3_xboole_0(3^[], u1_struct_0(2^[])), 3^[], 2^[]])]   (7)  substitution:[[_G9642, _G9836, _G9920], [2^[], 3^[], k3_xboole_0(3^[], u1_struct_0(2^[]))]]
+1.1.4.3.1  [-l1_orders_2(2^[])]   (2)  
+1.1.4.3.2  [v2_struct_0(2^[])]   (1)  
+1.1.4.3.3  [k1_yellow_0(2^[], 3^[])=k1_yellow_0(2^[], k3_xboole_0(3^[], u1_struct_0(2^[])))]   (3)  
+1.1.4.3.4  [-r1_yellow_0(2^[], 3^[])]   (lemmata:1.1)  
+1.1.4.3.5  [r2_lattice3(2^[], k3_xboole_0(3^[], u1_struct_0(2^[])), 1^[k3_xboole_0(3^[], u1_struct_0(2^[])), 3^[], 2^[]]), l1_orders_2(2^[]), -v2_struct_0(2^[]), m1_subset_1(1^[k3_xboole_0(3^[], u1_struct_0(2^[])), 3^[], 2^[]], u1_struct_0(2^[])), -r2_lattice3(2^[], 3^[], 1^[k3_xboole_0(3^[], u1_struct_0(2^[])), 3^[], 2^[]])]   (9)  substitution:[[_G10664, _G10897, _G11020], [2^[], 3^[], 1^[k3_xboole_0(3^[], u1_struct_0(2^[])), 3^[], 2^[]]]]
+1.1.4.3.5.1  [-l1_orders_2(2^[])]   (2)  
+1.1.4.3.5.2  [v2_struct_0(2^[])]   (1)  
+1.1.4.3.5.3  [-m1_subset_1(1^[k3_xboole_0(3^[], u1_struct_0(2^[])), 3^[], 2^[]], u1_struct_0(2^[]))]   (reduction:1.1)  
+1.1.4.3.5.4  [r2_lattice3(2^[], 3^[], 1^[k3_xboole_0(3^[], u1_struct_0(2^[])), 3^[], 2^[]])]   (reduction:1.1.4)  
+1.1.4.4  [r2_lattice3(2^[], k3_xboole_0(3^[], u1_struct_0(2^[])), 1^[k3_xboole_0(3^[], u1_struct_0(2^[])), 3^[], 2^[]]), l1_orders_2(2^[]), -v2_struct_0(2^[]), - (k1_yellow_0(2^[], 3^[])=k1_yellow_0(2^[], k3_xboole_0(3^[], u1_struct_0(2^[])))), r1_yellow_0(2^[], 3^[]), r2_lattice3(2^[], 3^[], 1^[k3_xboole_0(3^[], u1_struct_0(2^[])), 3^[], 2^[]])]   (6)  substitution:[[_G9642, _G9920, _G9836], [2^[], k3_xboole_0(3^[], u1_struct_0(2^[])), 3^[]]]
+1.1.4.4.1  [-l1_orders_2(2^[])]   (2)  
+1.1.4.4.2  [v2_struct_0(2^[])]   (1)  
+1.1.4.4.3  [k1_yellow_0(2^[], 3^[])=k1_yellow_0(2^[], k3_xboole_0(3^[], u1_struct_0(2^[])))]   (3)  
+1.1.4.4.4  [-r1_yellow_0(2^[], 3^[])]   (lemmata:1.1)  
+1.1.4.4.5  [-r2_lattice3(2^[], 3^[], 1^[k3_xboole_0(3^[], u1_struct_0(2^[])), 3^[], 2^[]])]   (lemmata:1.1.4)  
+------------------------------------------------------
+End of proof for t51_yellow_0

@@ -1,0 +1,62 @@
+
+t21_orders_2 is a Theorem
+Start of proof for t21_orders_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(2^[])]
+ (2)  [-v3_orders_2(2^[])]
+ (3)  [-v4_orders_2(2^[])]
+ (4)  [-v5_orders_2(2^[])]
+ (5)  [-l1_orders_2(2^[])]
+ (6)  [-m1_subset_1(3^[], u1_struct_0(2^[]))]
+ (7)  [-r2_hidden(3^[], k2_orders_2(2^[], k6_domain_1(u1_struct_0(2^[]), 3^[])))]
+ (8)  [_G10489=k1_tarski(_G10431), r2_hidden(_G10619, _G10489), - (_G10619=_G10431)]
+ (9)  [_G10489=k1_tarski(_G10431), -r2_hidden(_G10619, _G10489), _G10619=_G10431]
+ (10)  [- (_G10489=k1_tarski(_G10431)), r2_hidden(1^[_G10489, _G10431], _G10489), 1^[_G10489, _G10431]=_G10431]
+ (11)  [- (_G10489=k1_tarski(_G10431)), -r2_hidden(1^[_G10489, _G10431], _G10489), - (1^[_G10489, _G10431]=_G10431)]
+ (12)  [-m1_subset_1(k6_domain_1(_G10851, _G10908), k1_zfmisc_1(_G10851)), -v1_xboole_0(_G10851), m1_subset_1(_G10908, _G10851)]
+ (13)  [l1_orders_2(_G11237), -l1_struct_0(_G11237)]
+ (14)  [v1_xboole_0(u1_struct_0(_G11368)), -v2_struct_0(_G11368), l1_struct_0(_G11368)]
+ (15)  [- (k6_domain_1(_G11605, _G11662)=k1_tarski(_G11662)), -v1_xboole_0(_G11605), m1_subset_1(_G11662, _G11605)]
+ (16)  [r2_hidden(_G12340, k2_orders_2(_G11982, _G12485)), r2_hidden(_G12340, _G12485), m1_subset_1(_G12485, k1_zfmisc_1(u1_struct_0(_G11982))), m1_subset_1(_G12340, u1_struct_0(_G11982)), -v2_struct_0(_G11982), v3_orders_2(_G11982), v4_orders_2(_G11982), v5_orders_2(_G11982), l1_orders_2(_G11982)]
+ (17)  [_G8307=_G8356, - (k1_tarski(_G8307)=k1_tarski(_G8356))]
+ (18)  [_G8585=_G8634, - (k1_zfmisc_1(_G8585)=k1_zfmisc_1(_G8634))]
+ (19)  [- (k2_orders_2(_G8863, _G8998)=k2_orders_2(_G8930, _G9067)), _G8863=_G8930, _G8998=_G9067]
+ (20)  [_G10048=_G10097, - (u1_struct_0(_G10048)=u1_struct_0(_G10097))]
+ (21)  [- (k6_domain_1(_G9460, _G9595)=k6_domain_1(_G9527, _G9664)), _G9460=_G9527, _G9595=_G9664]
+ (22)  [- (_G4205=_G4205)]
+ (23)  [_G4304=_G4349, - (_G4349=_G4304)]
+ (24)  [- (_G4537=_G4650), _G4537=_G4593, _G4593=_G4650]
+ (25)  [-l1_struct_0(_G5036), _G4987=_G5036, l1_struct_0(_G4987)]
+ (26)  [-v1_xboole_0(_G5314), _G5265=_G5314, v1_xboole_0(_G5265)]
+ (27)  [-v2_struct_0(_G5592), _G5543=_G5592, v2_struct_0(_G5543)]
+ (28)  [-v3_orders_2(_G5870), _G5821=_G5870, v3_orders_2(_G5821)]
+ (29)  [-v4_orders_2(_G6148), _G6099=_G6148, v4_orders_2(_G6099)]
+ (30)  [-v5_orders_2(_G6426), _G6377=_G6426, v5_orders_2(_G6377)]
+ (31)  [-l1_orders_2(_G6704), _G6655=_G6704, l1_orders_2(_G6655)]
+ (32)  [-m1_subset_1(_G7000, _G7137), m1_subset_1(_G6933, _G7068), _G6933=_G7000, _G7068=_G7137]
+ (33)  [-r2_hidden(_G7588, _G7725), r2_hidden(_G7521, _G7656), _G7521=_G7588, _G7656=_G7725]
+
+Connection Proof:
+-----------------
+1  [v2_struct_0(2^[])]   (1)  
+1.1  [-v2_struct_0(2^[]), v1_xboole_0(u1_struct_0(2^[])), l1_struct_0(2^[])]   (14)  substitution:[[_G11368], [2^[]]]
+1.1.1  [-v1_xboole_0(u1_struct_0(2^[])), -m1_subset_1(k6_domain_1(u1_struct_0(2^[]), 3^[]), k1_zfmisc_1(u1_struct_0(2^[]))), m1_subset_1(3^[], u1_struct_0(2^[]))]   (12)  substitution:[[_G10851, _G10908], [u1_struct_0(2^[]), 3^[]]]
+1.1.1.1  [m1_subset_1(k6_domain_1(u1_struct_0(2^[]), 3^[]), k1_zfmisc_1(u1_struct_0(2^[]))), r2_hidden(3^[], k2_orders_2(2^[], k6_domain_1(u1_struct_0(2^[]), 3^[]))), r2_hidden(3^[], k6_domain_1(u1_struct_0(2^[]), 3^[])), m1_subset_1(3^[], u1_struct_0(2^[])), -v2_struct_0(2^[]), v3_orders_2(2^[]), v4_orders_2(2^[]), v5_orders_2(2^[]), l1_orders_2(2^[])]   (16)  substitution:[[_G12485, _G11982, _G12340], [k6_domain_1(u1_struct_0(2^[]), 3^[]), 2^[], 3^[]]]
+1.1.1.1.1  [-r2_hidden(3^[], k2_orders_2(2^[], k6_domain_1(u1_struct_0(2^[]), 3^[])))]   (7)  
+1.1.1.1.2  [-r2_hidden(3^[], k6_domain_1(u1_struct_0(2^[]), 3^[])), k6_domain_1(u1_struct_0(2^[]), 3^[])=k1_tarski(3^[]), 3^[]=3^[]]   (9)  substitution:[[_G10619, _G10489, _G10431], [3^[], k6_domain_1(u1_struct_0(2^[]), 3^[]), 3^[]]]
+1.1.1.1.2.1  [- (k6_domain_1(u1_struct_0(2^[]), 3^[])=k1_tarski(3^[])), -v1_xboole_0(u1_struct_0(2^[])), m1_subset_1(3^[], u1_struct_0(2^[]))]   (15)  substitution:[[_G11605, _G11662], [u1_struct_0(2^[]), 3^[]]]
+1.1.1.1.2.1.1  [v1_xboole_0(u1_struct_0(2^[]))]   (reduction:1.1)  
+1.1.1.1.2.1.2  [-m1_subset_1(3^[], u1_struct_0(2^[]))]   (6)  
+1.1.1.1.2.2  [- (3^[]=3^[])]   (22)  substitution:[[_G4205], [3^[]]]
+1.1.1.1.3  [-m1_subset_1(3^[], u1_struct_0(2^[]))]   (6)  
+1.1.1.1.4  [v2_struct_0(2^[])]   (1)  
+1.1.1.1.5  [-v3_orders_2(2^[])]   (2)  
+1.1.1.1.6  [-v4_orders_2(2^[])]   (3)  
+1.1.1.1.7  [-v5_orders_2(2^[])]   (4)  
+1.1.1.1.8  [-l1_orders_2(2^[])]   (5)  
+1.1.1.2  [-m1_subset_1(3^[], u1_struct_0(2^[]))]   (6)  
+1.1.2  [-l1_struct_0(2^[]), l1_orders_2(2^[])]   (13)  substitution:[[_G11237], [2^[]]]
+1.1.2.1  [-l1_orders_2(2^[])]   (5)  
+------------------------------------------------------
+End of proof for t21_orders_2

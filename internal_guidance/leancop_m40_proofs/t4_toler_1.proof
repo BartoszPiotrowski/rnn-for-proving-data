@@ -1,0 +1,47 @@
+
+t4_toler_1 is a Theorem
+Start of proof for t4_toler_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v7_relat_2(k1_eqrel_1(3^[]))]
+ (2)  [v1_relat_1(_G7121), v7_relat_2(_G7121), -r7_relat_2(_G7121, k1_relat_1(_G7121))]
+ (3)  [v1_relat_1(_G7121), -v7_relat_2(_G7121), r7_relat_2(_G7121, k1_relat_1(_G7121))]
+ (4)  [- (k1_eqrel_1(_G7352)=k2_zfmisc_1(_G7352, _G7352))]
+ (5)  [-v1_relat_1(k2_zfmisc_1(_G8422, _G8463))]
+ (6)  [-r2_hidden(k4_tarski(_G8652, _G8722), k1_eqrel_1(_G8583)), r2_hidden(_G8652, k1_relat_1(k1_eqrel_1(_G8583))), r2_hidden(_G8722, k1_relat_1(k1_eqrel_1(_G8583)))]
+ (7)  [v1_relat_1(_G7509), -r7_relat_2(_G7509, _G7631), -r2_hidden(1^[_G7631, _G7509], _G7631)]
+ (8)  [v1_relat_1(_G7509), -r7_relat_2(_G7509, _G7631), -r2_hidden(2^[_G7631, _G7509], _G7631)]
+ (9)  [v1_relat_1(_G7509), -r7_relat_2(_G7509, _G7631), r2_hidden(k4_tarski(1^[_G7631, _G7509], 2^[_G7631, _G7509]), _G7509)]
+ (10)  [v1_relat_1(_G7509), -r7_relat_2(_G7509, _G7631), r2_hidden(k4_tarski(2^[_G7631, _G7509], 1^[_G7631, _G7509]), _G7509)]
+ (11)  [v1_relat_1(_G7509), r7_relat_2(_G7509, _G7631), r2_hidden(_G7774, _G7631), r2_hidden(_G7855, _G7631), -r2_hidden(k4_tarski(_G7774, _G7855), _G7509), -r2_hidden(k4_tarski(_G7855, _G7774), _G7509)]
+ (12)  [- (k2_zfmisc_1(_G5296, _G5431)=k2_zfmisc_1(_G5363, _G5500)), _G5296=_G5363, _G5431=_G5500]
+ (13)  [_G5893=_G5942, - (k1_relat_1(_G5893)=k1_relat_1(_G5942))]
+ (14)  [_G6759=_G6808, - (k1_eqrel_1(_G6759)=k1_eqrel_1(_G6808))]
+ (15)  [- (k4_tarski(_G6171, _G6306)=k4_tarski(_G6238, _G6375)), _G6171=_G6238, _G6306=_G6375]
+ (16)  [- (_G2689=_G2689)]
+ (17)  [_G2788=_G2833, - (_G2833=_G2788)]
+ (18)  [- (_G3021=_G3134), _G3021=_G3077, _G3077=_G3134]
+ (19)  [-r7_relat_2(_G3538, _G3675), r7_relat_2(_G3471, _G3606), _G3471=_G3538, _G3606=_G3675]
+ (20)  [-v1_relat_1(_G4117), _G4068=_G4117, v1_relat_1(_G4068)]
+ (21)  [-v7_relat_2(_G4983), _G4934=_G4983, v7_relat_2(_G4934)]
+ (22)  [-r2_hidden(_G4413, _G4550), r2_hidden(_G4346, _G4481), _G4346=_G4413, _G4481=_G4550]
+
+Connection Proof:
+-----------------
+1  [v7_relat_2(k1_eqrel_1(3^[]))]   (1)  
+1.1  [-v7_relat_2(k1_eqrel_1(3^[])), v1_relat_1(k1_eqrel_1(3^[])), r7_relat_2(k1_eqrel_1(3^[]), k1_relat_1(k1_eqrel_1(3^[])))]   (3)  substitution:[[_G7121], [k1_eqrel_1(3^[])]]
+1.1.1  [-v1_relat_1(k1_eqrel_1(3^[])), k2_zfmisc_1(3^[], 3^[])=k1_eqrel_1(3^[]), v1_relat_1(k2_zfmisc_1(3^[], 3^[]))]   (20)  substitution:[[_G4117, _G4068], [k1_eqrel_1(3^[]), k2_zfmisc_1(3^[], 3^[])]]
+1.1.1.1  [- (k2_zfmisc_1(3^[], 3^[])=k1_eqrel_1(3^[])), k1_eqrel_1(3^[])=k2_zfmisc_1(3^[], 3^[])]   (17)  substitution:[[_G2833, _G2788], [k2_zfmisc_1(3^[], 3^[]), k1_eqrel_1(3^[])]]
+1.1.1.1.1  [- (k1_eqrel_1(3^[])=k2_zfmisc_1(3^[], 3^[]))]   (4)  substitution:[[_G7352], [3^[]]]
+1.1.1.2  [-v1_relat_1(k2_zfmisc_1(3^[], 3^[]))]   (5)  substitution:[[_G8422, _G8463], [3^[], 3^[]]]
+1.1.2  [-r7_relat_2(k1_eqrel_1(3^[]), k1_relat_1(k1_eqrel_1(3^[]))), v1_relat_1(k1_eqrel_1(3^[])), -r2_hidden(1^[k1_relat_1(k1_eqrel_1(3^[])), k1_eqrel_1(3^[])], k1_relat_1(k1_eqrel_1(3^[])))]   (7)  substitution:[[_G7509, _G7631], [k1_eqrel_1(3^[]), k1_relat_1(k1_eqrel_1(3^[]))]]
+1.1.2.1  [-v1_relat_1(k1_eqrel_1(3^[]))]   (lemmata:1.1)  
+1.1.2.2  [r2_hidden(1^[k1_relat_1(k1_eqrel_1(3^[])), k1_eqrel_1(3^[])], k1_relat_1(k1_eqrel_1(3^[]))), -r2_hidden(k4_tarski(1^[k1_relat_1(k1_eqrel_1(3^[])), k1_eqrel_1(3^[])], 2^[k1_relat_1(k1_eqrel_1(3^[])), k1_eqrel_1(3^[])]), k1_eqrel_1(3^[])), r2_hidden(2^[k1_relat_1(k1_eqrel_1(3^[])), k1_eqrel_1(3^[])], k1_relat_1(k1_eqrel_1(3^[])))]   (6)  substitution:[[_G8652, _G8583, _G8722], [1^[k1_relat_1(k1_eqrel_1(3^[])), k1_eqrel_1(3^[])], 3^[], 2^[k1_relat_1(k1_eqrel_1(3^[])), k1_eqrel_1(3^[])]]]
+1.1.2.2.1  [r2_hidden(k4_tarski(1^[k1_relat_1(k1_eqrel_1(3^[])), k1_eqrel_1(3^[])], 2^[k1_relat_1(k1_eqrel_1(3^[])), k1_eqrel_1(3^[])]), k1_eqrel_1(3^[])), v1_relat_1(k1_eqrel_1(3^[])), -r7_relat_2(k1_eqrel_1(3^[]), k1_relat_1(k1_eqrel_1(3^[])))]   (9)  substitution:[[_G7631, _G7509], [k1_relat_1(k1_eqrel_1(3^[])), k1_eqrel_1(3^[])]]
+1.1.2.2.1.1  [-v1_relat_1(k1_eqrel_1(3^[]))]   (lemmata:1.1.2)  
+1.1.2.2.1.2  [r7_relat_2(k1_eqrel_1(3^[]), k1_relat_1(k1_eqrel_1(3^[])))]   (reduction:1.1)  
+1.1.2.2.2  [-r2_hidden(2^[k1_relat_1(k1_eqrel_1(3^[])), k1_eqrel_1(3^[])], k1_relat_1(k1_eqrel_1(3^[]))), v1_relat_1(k1_eqrel_1(3^[])), -r7_relat_2(k1_eqrel_1(3^[]), k1_relat_1(k1_eqrel_1(3^[])))]   (8)  substitution:[[_G7631, _G7509], [k1_relat_1(k1_eqrel_1(3^[])), k1_eqrel_1(3^[])]]
+1.1.2.2.2.1  [-v1_relat_1(k1_eqrel_1(3^[]))]   (lemmata:1.1.2)  
+1.1.2.2.2.2  [r7_relat_2(k1_eqrel_1(3^[]), k1_relat_1(k1_eqrel_1(3^[])))]   (reduction:1.1)  
+------------------------------------------------------
+End of proof for t4_toler_1

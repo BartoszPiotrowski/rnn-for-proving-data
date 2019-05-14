@@ -1,0 +1,47 @@
+
+t4_pcs_0 is a Theorem
+Start of proof for t4_pcs_0
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-l1_pcs_0(1^[])]
+ (2)  [-l1_pcs_0(2^[])]
+ (3)  [- (g1_pcs_0(u1_struct_0(1^[]), u1_pcs_0(1^[]))=g1_pcs_0(u1_struct_0(2^[]), u1_pcs_0(2^[])))]
+ (4)  [-v5_pcs_0(1^[])]
+ (5)  [v5_pcs_0(2^[])]
+ (6)  [l1_pcs_0(_G7333), v5_pcs_0(_G7333), -r2_relat_2(u1_pcs_0(_G7333), u1_struct_0(_G7333))]
+ (7)  [l1_pcs_0(_G7333), -v5_pcs_0(_G7333), r2_relat_2(u1_pcs_0(_G7333), u1_struct_0(_G7333))]
+ (8)  [l1_pcs_0(_G7580), -m1_subset_1(u1_pcs_0(_G7580), k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(_G7580), u1_struct_0(_G7580))))]
+ (9)  [m1_subset_1(_G7912, k1_zfmisc_1(k2_zfmisc_1(_G7834, _G7834))), g1_pcs_0(_G7834, _G7912)=g1_pcs_0(_G8101, _G8170), - (_G7834=_G8101)]
+ (10)  [m1_subset_1(_G7912, k1_zfmisc_1(k2_zfmisc_1(_G7834, _G7834))), g1_pcs_0(_G7834, _G7912)=g1_pcs_0(_G8101, _G8170), - (_G7912=_G8170)]
+ (11)  [_G5209=_G5258, - (k1_zfmisc_1(_G5209)=k1_zfmisc_1(_G5258))]
+ (12)  [- (k2_zfmisc_1(_G5487, _G5622)=k2_zfmisc_1(_G5554, _G5691)), _G5487=_G5554, _G5622=_G5691]
+ (13)  [- (g1_pcs_0(_G6084, _G6219)=g1_pcs_0(_G6151, _G6288)), _G6084=_G6151, _G6219=_G6288]
+ (14)  [_G6681=_G6730, - (u1_struct_0(_G6681)=u1_struct_0(_G6730))]
+ (15)  [_G6950=_G6999, - (u1_pcs_0(_G6950)=u1_pcs_0(_G6999))]
+ (16)  [- (_G2602=_G2602)]
+ (17)  [_G2701=_G2746, - (_G2746=_G2701)]
+ (18)  [- (_G2934=_G3047), _G2934=_G2990, _G2990=_G3047]
+ (19)  [-r2_relat_2(_G3451, _G3588), r2_relat_2(_G3384, _G3519), _G3384=_G3451, _G3519=_G3588]
+ (20)  [-m1_subset_1(_G4048, _G4185), m1_subset_1(_G3981, _G4116), _G3981=_G4048, _G4116=_G4185]
+ (21)  [-l1_pcs_0(_G4627), _G4578=_G4627, l1_pcs_0(_G4578)]
+ (22)  [-v5_pcs_0(_G4896), _G4847=_G4896, v5_pcs_0(_G4847)]
+
+Connection Proof:
+-----------------
+1  [v5_pcs_0(2^[])]   (5)  
+1.1  [-v5_pcs_0(2^[]), l1_pcs_0(2^[]), r2_relat_2(u1_pcs_0(2^[]), u1_struct_0(2^[]))]   (7)  substitution:[[_G7333], [2^[]]]
+1.1.1  [-l1_pcs_0(2^[])]   (2)  
+1.1.2  [-r2_relat_2(u1_pcs_0(2^[]), u1_struct_0(2^[])), r2_relat_2(u1_pcs_0(1^[]), u1_struct_0(1^[])), u1_pcs_0(1^[])=u1_pcs_0(2^[]), u1_struct_0(1^[])=u1_struct_0(2^[])]   (19)  substitution:[[_G3451, _G3588, _G3384, _G3519], [u1_pcs_0(2^[]), u1_struct_0(2^[]), u1_pcs_0(1^[]), u1_struct_0(1^[])]]
+1.1.2.1  [-r2_relat_2(u1_pcs_0(1^[]), u1_struct_0(1^[])), l1_pcs_0(1^[]), v5_pcs_0(1^[])]   (6)  substitution:[[_G7333], [1^[]]]
+1.1.2.1.1  [-l1_pcs_0(1^[])]   (1)  
+1.1.2.1.2  [-v5_pcs_0(1^[])]   (4)  
+1.1.2.2  [- (u1_pcs_0(1^[])=u1_pcs_0(2^[])), m1_subset_1(u1_pcs_0(1^[]), k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(1^[]), u1_struct_0(1^[])))), g1_pcs_0(u1_struct_0(1^[]), u1_pcs_0(1^[]))=g1_pcs_0(u1_struct_0(2^[]), u1_pcs_0(2^[]))]   (10)  substitution:[[_G7912, _G8170, _G7834, _G8101], [u1_pcs_0(1^[]), u1_pcs_0(2^[]), u1_struct_0(1^[]), u1_struct_0(2^[])]]
+1.1.2.2.1  [-m1_subset_1(u1_pcs_0(1^[]), k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(1^[]), u1_struct_0(1^[])))), l1_pcs_0(1^[])]   (8)  substitution:[[_G7580], [1^[]]]
+1.1.2.2.1.1  [-l1_pcs_0(1^[])]   (1)  
+1.1.2.2.2  [- (g1_pcs_0(u1_struct_0(1^[]), u1_pcs_0(1^[]))=g1_pcs_0(u1_struct_0(2^[]), u1_pcs_0(2^[])))]   (3)  
+1.1.2.3  [- (u1_struct_0(1^[])=u1_struct_0(2^[])), m1_subset_1(u1_pcs_0(1^[]), k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(1^[]), u1_struct_0(1^[])))), g1_pcs_0(u1_struct_0(1^[]), u1_pcs_0(1^[]))=g1_pcs_0(u1_struct_0(2^[]), u1_pcs_0(2^[]))]   (9)  substitution:[[_G7834, _G8101, _G7912, _G8170], [u1_struct_0(1^[]), u1_struct_0(2^[]), u1_pcs_0(1^[]), u1_pcs_0(2^[])]]
+1.1.2.3.1  [-m1_subset_1(u1_pcs_0(1^[]), k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(1^[]), u1_struct_0(1^[])))), l1_pcs_0(1^[])]   (8)  substitution:[[_G7580], [1^[]]]
+1.1.2.3.1.1  [-l1_pcs_0(1^[])]   (1)  
+1.1.2.3.2  [- (g1_pcs_0(u1_struct_0(1^[]), u1_pcs_0(1^[]))=g1_pcs_0(u1_struct_0(2^[]), u1_pcs_0(2^[])))]   (3)  
+------------------------------------------------------
+End of proof for t4_pcs_0

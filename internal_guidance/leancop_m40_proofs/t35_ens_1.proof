@@ -1,0 +1,46 @@
+
+t35_ens_1 is a Theorem
+Start of proof for t35_ens_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v1_xboole_0(2^[])]
+ (2)  [-v1_classes2(2^[])]
+ (3)  [-m1_subset_1(3^[], u1_struct_0(k11_ens_1(2^[])))]
+ (4)  [-v10_cat_1(3^[], k11_ens_1(2^[]))]
+ (5)  [3^[]=k1_tarski(_G10340)]
+ (6)  [r2_hidden(_G7097, _G7144), r2_hidden(_G7144, _G7097)]
+ (7)  [-v1_xboole_0(_G7357), m1_subset_1(_G7486, u1_struct_0(k11_ens_1(_G7357))), - (_G7357=k1_tarski(k1_xboole_0)), v10_cat_1(_G7486, k11_ens_1(_G7357)), - (_G7486=k1_tarski(1^[_G7486, _G7357]))]
+ (8)  [-r2_hidden(k1_xboole_0, _G8061), -v1_xboole_0(_G8061), v1_classes2(_G8061)]
+ (9)  [v1_classes2(_G8342), -v1_xboole_0(_G8342), r2_hidden(_G8283, _G8342), -r2_hidden(k1_tarski(_G8283), _G8342)]
+ (10)  [_G6209=_G6258, - (u1_struct_0(_G6209)=u1_struct_0(_G6258))]
+ (11)  [_G6487=_G6536, - (k11_ens_1(_G6487)=k11_ens_1(_G6536))]
+ (12)  [_G6756=_G6805, - (k1_tarski(_G6756)=k1_tarski(_G6805))]
+ (13)  [- (_G2984=_G2984)]
+ (14)  [_G3083=_G3128, - (_G3128=_G3083)]
+ (15)  [- (_G3316=_G3429), _G3316=_G3372, _G3372=_G3429]
+ (16)  [-r2_hidden(_G3833, _G3970), r2_hidden(_G3766, _G3901), _G3766=_G3833, _G3901=_G3970]
+ (17)  [-v1_xboole_0(_G4412), _G4363=_G4412, v1_xboole_0(_G4363)]
+ (18)  [-v1_classes2(_G4690), _G4641=_G4690, v1_classes2(_G4641)]
+ (19)  [-m1_subset_1(_G4986, _G5123), m1_subset_1(_G4919, _G5054), _G4919=_G4986, _G5054=_G5123]
+ (20)  [-v10_cat_1(_G5574, _G5711), v10_cat_1(_G5507, _G5642), _G5507=_G5574, _G5642=_G5711]
+
+Connection Proof:
+-----------------
+1  [v1_xboole_0(2^[])]   (1)  
+1.1  [-v1_xboole_0(2^[]), v1_classes2(2^[]), r2_hidden(k1_xboole_0, 2^[]), -r2_hidden(k1_tarski(k1_xboole_0), 2^[])]   (9)  substitution:[[_G8342, _G8283], [2^[], k1_xboole_0]]
+1.1.1  [-v1_classes2(2^[])]   (2)  
+1.1.2  [-r2_hidden(k1_xboole_0, 2^[]), -v1_xboole_0(2^[]), v1_classes2(2^[])]   (8)  substitution:[[_G8061], [2^[]]]
+1.1.2.1  [v1_xboole_0(2^[])]   (1)  
+1.1.2.2  [-v1_classes2(2^[])]   (2)  
+1.1.3  [r2_hidden(k1_tarski(k1_xboole_0), 2^[]), -r2_hidden(k1_tarski(k1_xboole_0), k1_tarski(k1_xboole_0)), k1_tarski(k1_xboole_0)=k1_tarski(k1_xboole_0), 2^[]=k1_tarski(k1_xboole_0)]   (16)  substitution:[[_G3766, _G3901, _G3833, _G3970], [k1_tarski(k1_xboole_0), 2^[], k1_tarski(k1_xboole_0), k1_tarski(k1_xboole_0)]]
+1.1.3.1  [r2_hidden(k1_tarski(k1_xboole_0), k1_tarski(k1_xboole_0)), r2_hidden(k1_tarski(k1_xboole_0), k1_tarski(k1_xboole_0))]   (6)  substitution:[[_G7097, _G7144], [k1_tarski(k1_xboole_0), k1_tarski(k1_xboole_0)]]
+1.1.3.1.1  [-r2_hidden(k1_tarski(k1_xboole_0), k1_tarski(k1_xboole_0))]   (reduction:1.1.3)  
+1.1.3.2  [- (k1_tarski(k1_xboole_0)=k1_tarski(k1_xboole_0)), k1_xboole_0=k1_xboole_0]   (12)  substitution:[[_G6756, _G6805], [k1_xboole_0, k1_xboole_0]]
+1.1.3.2.1  [- (k1_xboole_0=k1_xboole_0)]   (13)  substitution:[[_G2984], [k1_xboole_0]]
+1.1.3.3  [- (2^[]=k1_tarski(k1_xboole_0)), -v1_xboole_0(2^[]), m1_subset_1(3^[], u1_struct_0(k11_ens_1(2^[]))), v10_cat_1(3^[], k11_ens_1(2^[])), - (3^[]=k1_tarski(1^[3^[], 2^[]]))]   (7)  substitution:[[_G7357, _G7486], [2^[], 3^[]]]
+1.1.3.3.1  [v1_xboole_0(2^[])]   (1)  
+1.1.3.3.2  [-m1_subset_1(3^[], u1_struct_0(k11_ens_1(2^[])))]   (3)  
+1.1.3.3.3  [-v10_cat_1(3^[], k11_ens_1(2^[]))]   (4)  
+1.1.3.3.4  [3^[]=k1_tarski(1^[3^[], 2^[]])]   (5)  substitution:[[_G10340], [1^[3^[], 2^[]]]]
+------------------------------------------------------
+End of proof for t35_ens_1

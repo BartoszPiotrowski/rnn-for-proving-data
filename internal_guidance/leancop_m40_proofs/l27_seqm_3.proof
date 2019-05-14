@@ -1,0 +1,55 @@
+
+l27_seqm_3 is a Theorem
+Start of proof for l27_seqm_3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v5_valued_0(k6_funct_3(k1_numbers, k5_numbers)), v4_valued_0(k6_funct_3(k1_numbers, k5_numbers))]
+ (2)  [v3_membered(_G8604), -v2_membered(_G8604)]
+ (3)  [m1_subset_1(_G8735, k1_zfmisc_1(k1_numbers)), -v3_membered(_G8735)]
+ (4)  [-m1_subset_1(k5_numbers, k1_zfmisc_1(k1_numbers))]
+ (5)  [v6_membered(_G8977), -v1_relat_1(k4_relat_1(_G8977))]
+ (6)  [v6_membered(_G8977), -v4_valued_0(k4_relat_1(_G8977))]
+ (7)  [-v6_membered(k4_ordinal1)]
+ (8)  [v2_membered(_G9230), -v1_funct_1(k4_relat_1(_G9230))]
+ (9)  [v2_membered(_G9230), -v1_funct_2(k4_relat_1(_G9230), _G9230, _G9230)]
+ (10)  [v2_membered(_G9230), -v5_valued_0(k4_relat_1(_G9230))]
+ (11)  [- (k5_numbers=k4_ordinal1)]
+ (12)  [m1_subset_1(_G9695, k1_zfmisc_1(_G9643)), - (k6_funct_3(_G9643, _G9695)=k4_relat_1(_G9695))]
+ (13)  [_G7397=_G7446, - (k1_zfmisc_1(_G7397)=k1_zfmisc_1(_G7446))]
+ (14)  [_G7675=_G7724, - (k4_relat_1(_G7675)=k4_relat_1(_G7724))]
+ (15)  [- (k6_funct_3(_G7944, _G8079)=k6_funct_3(_G8011, _G8148)), _G7944=_G8011, _G8079=_G8148]
+ (16)  [- (_G2864=_G2864)]
+ (17)  [_G2963=_G3008, - (_G3008=_G2963)]
+ (18)  [- (_G3196=_G3309), _G3196=_G3252, _G3252=_G3309]
+ (19)  [-v3_membered(_G3695), _G3646=_G3695, v3_membered(_G3646)]
+ (20)  [-v1_relat_1(_G3973), _G3924=_G3973, v1_relat_1(_G3924)]
+ (21)  [-v6_membered(_G4251), _G4202=_G4251, v6_membered(_G4202)]
+ (22)  [-v2_membered(_G4529), _G4480=_G4529, v2_membered(_G4480)]
+ (23)  [-v1_funct_1(_G4807), _G4758=_G4807, v1_funct_1(_G4758)]
+ (24)  [-v1_funct_2(_G5121, _G5294, _G5471), v1_funct_2(_G5036, _G5207, _G5382), _G5036=_G5121, _G5207=_G5294, _G5382=_G5471]
+ (25)  [-m1_subset_1(_G6131, _G6268), m1_subset_1(_G6064, _G6199), _G6064=_G6131, _G6199=_G6268]
+ (26)  [-v5_valued_0(_G6710), _G6661=_G6710, v5_valued_0(_G6661)]
+ (27)  [-v4_valued_0(_G6979), _G6930=_G6979, v4_valued_0(_G6930)]
+
+Connection Proof:
+-----------------
+1  [v5_valued_0(k6_funct_3(k1_numbers, k5_numbers)), v4_valued_0(k6_funct_3(k1_numbers, k5_numbers))]   (1)  
+1.1  [-v5_valued_0(k6_funct_3(k1_numbers, k5_numbers)), k4_relat_1(k5_numbers)=k6_funct_3(k1_numbers, k5_numbers), v5_valued_0(k4_relat_1(k5_numbers))]   (26)  substitution:[[_G6710, _G6661], [k6_funct_3(k1_numbers, k5_numbers), k4_relat_1(k5_numbers)]]
+1.1.1  [- (k4_relat_1(k5_numbers)=k6_funct_3(k1_numbers, k5_numbers)), k6_funct_3(k1_numbers, k5_numbers)=k4_relat_1(k5_numbers)]   (17)  substitution:[[_G3008, _G2963], [k4_relat_1(k5_numbers), k6_funct_3(k1_numbers, k5_numbers)]]
+1.1.1.1  [- (k6_funct_3(k1_numbers, k5_numbers)=k4_relat_1(k5_numbers)), m1_subset_1(k5_numbers, k1_zfmisc_1(k1_numbers))]   (12)  substitution:[[_G9643, _G9695], [k1_numbers, k5_numbers]]
+1.1.1.1.1  [-m1_subset_1(k5_numbers, k1_zfmisc_1(k1_numbers))]   (4)  
+1.1.2  [-v5_valued_0(k4_relat_1(k5_numbers)), v2_membered(k5_numbers)]   (10)  substitution:[[_G9230], [k5_numbers]]
+1.1.2.1  [-v2_membered(k5_numbers), v3_membered(k5_numbers)]   (2)  substitution:[[_G8604], [k5_numbers]]
+1.1.2.1.1  [-v3_membered(k5_numbers), m1_subset_1(k5_numbers, k1_zfmisc_1(k1_numbers))]   (3)  substitution:[[_G8735], [k5_numbers]]
+1.1.2.1.1.1  [-m1_subset_1(k5_numbers, k1_zfmisc_1(k1_numbers))]   (4)  
+1.2  [-v4_valued_0(k6_funct_3(k1_numbers, k5_numbers)), k4_relat_1(k5_numbers)=k6_funct_3(k1_numbers, k5_numbers), v4_valued_0(k4_relat_1(k5_numbers))]   (27)  substitution:[[_G6979, _G6930], [k6_funct_3(k1_numbers, k5_numbers), k4_relat_1(k5_numbers)]]
+1.2.1  [- (k4_relat_1(k5_numbers)=k6_funct_3(k1_numbers, k5_numbers)), k6_funct_3(k1_numbers, k5_numbers)=k4_relat_1(k5_numbers)]   (17)  substitution:[[_G3008, _G2963], [k4_relat_1(k5_numbers), k6_funct_3(k1_numbers, k5_numbers)]]
+1.2.1.1  [- (k6_funct_3(k1_numbers, k5_numbers)=k4_relat_1(k5_numbers)), m1_subset_1(k5_numbers, k1_zfmisc_1(k1_numbers))]   (12)  substitution:[[_G9643, _G9695], [k1_numbers, k5_numbers]]
+1.2.1.1.1  [-m1_subset_1(k5_numbers, k1_zfmisc_1(k1_numbers))]   (4)  
+1.2.2  [-v4_valued_0(k4_relat_1(k5_numbers)), v6_membered(k5_numbers)]   (6)  substitution:[[_G8977], [k5_numbers]]
+1.2.2.1  [-v6_membered(k5_numbers), k4_ordinal1=k5_numbers, v6_membered(k4_ordinal1)]   (21)  substitution:[[_G4251, _G4202], [k5_numbers, k4_ordinal1]]
+1.2.2.1.1  [- (k4_ordinal1=k5_numbers), k5_numbers=k4_ordinal1]   (17)  substitution:[[_G3008, _G2963], [k4_ordinal1, k5_numbers]]
+1.2.2.1.1.1  [- (k5_numbers=k4_ordinal1)]   (11)  
+1.2.2.1.2  [-v6_membered(k4_ordinal1)]   (7)  
+------------------------------------------------------
+End of proof for l27_seqm_3

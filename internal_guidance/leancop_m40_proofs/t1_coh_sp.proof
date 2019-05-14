@@ -1,0 +1,27 @@
+
+t1_coh_sp is a Theorem
+Start of proof for t1_coh_sp
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v1_xboole_0(4^[])]
+ (2)  [-v1_classes1(4^[])]
+ (3)  [-v1_coh_sp(4^[])]
+ (4)  [r2_hidden(k1_xboole_0, 4^[])]
+ (5)  [-r1_tarski(k1_xboole_0, _G1531)]
+ (6)  [v1_xboole_0(_G1312), r2_hidden(_G1390, _G1312)]
+ (7)  [-v1_xboole_0(_G1312), -r2_hidden(3^[_G1312], _G1312)]
+ (8)  [-v1_classes1(_G846), -r2_hidden(1^[_G846], _G846)]
+ (9)  [-v1_classes1(_G846), -r1_tarski(2^[_G846], 1^[_G846])]
+ (10)  [-v1_classes1(_G846), r2_hidden(2^[_G846], _G846)]
+ (11)  [v1_classes1(_G846), -r2_hidden(_G996, _G846), r2_hidden(_G939, _G846), r1_tarski(_G996, _G939)]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(k1_xboole_0, 4^[])]   (4)  
+1.1  [-r2_hidden(k1_xboole_0, 4^[]), v1_classes1(4^[]), r2_hidden(3^[4^[]], 4^[]), r1_tarski(k1_xboole_0, 3^[4^[]])]   (11)  substitution:[[_G996, _G846, _G939], [k1_xboole_0, 4^[], 3^[4^[]]]]
+1.1.1  [-v1_classes1(4^[])]   (2)  
+1.1.2  [-r2_hidden(3^[4^[]], 4^[]), -v1_xboole_0(4^[])]   (7)  substitution:[[_G1312], [4^[]]]
+1.1.2.1  [v1_xboole_0(4^[])]   (1)  
+1.1.3  [-r1_tarski(k1_xboole_0, 3^[4^[]])]   (5)  substitution:[[_G1531], [3^[4^[]]]]
+------------------------------------------------------
+End of proof for t1_coh_sp

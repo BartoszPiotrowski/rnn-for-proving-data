@@ -1,0 +1,41 @@
+
+t6_bspace is a Theorem
+Start of proof for t6_bspace
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k5_struct_0(k2_bspace)=np__1]
+ (2)  [m1_subset_1(_G6221, k4_ordinal1), -v7_ordinal1(_G6221)]
+ (3)  [- (k2_bspace=k9_int_3(np__2))]
+ (4)  [- (k5_numbers=k4_ordinal1)]
+ (5)  [r1_xxreal_0(np__2, np__1)]
+ (6)  [-v2_xxreal_0(np__2)]
+ (7)  [-m2_subset_1(np__2, k1_numbers, k5_numbers)]
+ (8)  [-m1_subset_1(np__2, k5_numbers)]
+ (9)  [-m1_subset_1(np__2, k1_numbers)]
+ (10)  [v7_ordinal1(_G6877), -r1_xxreal_0(_G6877, np__1), - (k5_struct_0(k9_int_3(_G6877))=np__1)]
+ (11)  [_G5632=_G5681, - (k9_int_3(_G5632)=k9_int_3(_G5681))]
+ (12)  [_G5901=_G5950, - (k5_struct_0(_G5901)=k5_struct_0(_G5950))]
+ (13)  [- (_G1976=_G1976)]
+ (14)  [_G2075=_G2120, - (_G2120=_G2075)]
+ (15)  [- (_G2308=_G2421), _G2308=_G2364, _G2364=_G2421]
+ (16)  [-v2_xxreal_0(_G2807), _G2758=_G2807, v2_xxreal_0(_G2758)]
+ (17)  [-m2_subset_1(_G3121, _G3294, _G3471), m2_subset_1(_G3036, _G3207, _G3382), _G3036=_G3121, _G3207=_G3294, _G3382=_G3471]
+ (18)  [-m1_subset_1(_G4131, _G4268), m1_subset_1(_G4064, _G4199), _G4064=_G4131, _G4199=_G4268]
+ (19)  [-v7_ordinal1(_G4710), _G4661=_G4710, v7_ordinal1(_G4661)]
+ (20)  [-r1_xxreal_0(_G4997, _G5134), r1_xxreal_0(_G4930, _G5065), _G4930=_G4997, _G5065=_G5134]
+
+Connection Proof:
+-----------------
+1  [r1_xxreal_0(np__2, np__1)]   (5)  
+1.1  [-r1_xxreal_0(np__2, np__1), v7_ordinal1(np__2), - (k5_struct_0(k9_int_3(np__2))=np__1)]   (10)  substitution:[[_G6877], [np__2]]
+1.1.1  [-v7_ordinal1(np__2), m1_subset_1(np__2, k4_ordinal1)]   (2)  substitution:[[_G6221], [np__2]]
+1.1.1.1  [-m1_subset_1(np__2, k4_ordinal1), m1_subset_1(np__2, k5_numbers), np__2=np__2, k5_numbers=k4_ordinal1]   (18)  substitution:[[_G4131, _G4268, _G4064, _G4199], [np__2, k4_ordinal1, np__2, k5_numbers]]
+1.1.1.1.1  [-m1_subset_1(np__2, k5_numbers)]   (8)  
+1.1.1.1.2  [- (np__2=np__2)]   (13)  substitution:[[_G1976], [np__2]]
+1.1.1.1.3  [- (k5_numbers=k4_ordinal1)]   (4)  
+1.1.2  [k5_struct_0(k9_int_3(np__2))=np__1, - (k5_struct_0(k2_bspace)=np__1), k5_struct_0(k2_bspace)=k5_struct_0(k9_int_3(np__2))]   (15)  substitution:[[_G2364, _G2421, _G2308], [k5_struct_0(k9_int_3(np__2)), np__1, k5_struct_0(k2_bspace)]]
+1.1.2.1  [k5_struct_0(k2_bspace)=np__1]   (1)  
+1.1.2.2  [- (k5_struct_0(k2_bspace)=k5_struct_0(k9_int_3(np__2))), k2_bspace=k9_int_3(np__2)]   (12)  substitution:[[_G5901, _G5950], [k2_bspace, k9_int_3(np__2)]]
+1.1.2.2.1  [- (k2_bspace=k9_int_3(np__2))]   (3)  
+------------------------------------------------------
+End of proof for t6_bspace

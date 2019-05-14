@@ -1,0 +1,72 @@
+
+t36_lopclset is a Theorem
+Start of proof for t36_lopclset
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(1^[])]
+ (2)  [v7_struct_0(1^[])]
+ (3)  [-v10_lattices(1^[])]
+ (4)  [-v17_lattices(1^[])]
+ (5)  [-l3_lattices(1^[])]
+ (6)  [r1_filter_1(1^[], k6_lopclset(_G12560)), -v2_struct_0(_G12560), v2_pre_topc(_G12560), l1_pre_topc(_G12560)]
+ (7)  [- (k12_lopclset(_G8619)=k6_lopclset(k11_lopclset(_G8619))), -v2_struct_0(_G8619), -v7_struct_0(_G8619), v10_lattices(_G8619), v17_lattices(_G8619), l3_lattices(_G8619)]
+ (8)  [-v1_pre_topc(k11_lopclset(_G9088)), -v2_struct_0(_G9088), -v7_struct_0(_G9088), v10_lattices(_G9088), v17_lattices(_G9088), l3_lattices(_G9088)]
+ (9)  [-v2_pre_topc(k11_lopclset(_G9088)), -v2_struct_0(_G9088), -v7_struct_0(_G9088), v10_lattices(_G9088), v17_lattices(_G9088), l3_lattices(_G9088)]
+ (10)  [-l1_pre_topc(k11_lopclset(_G9088)), -v2_struct_0(_G9088), -v7_struct_0(_G9088), v10_lattices(_G9088), v17_lattices(_G9088), l3_lattices(_G9088)]
+ (11)  [v2_struct_0(k11_lopclset(_G9647)), -v2_struct_0(_G9647), -v7_struct_0(_G9647), v10_lattices(_G9647), v17_lattices(_G9647), l3_lattices(_G9647)]
+ (12)  [-v1_pre_topc(k11_lopclset(_G9647)), -v2_struct_0(_G9647), -v7_struct_0(_G9647), v10_lattices(_G9647), v17_lattices(_G9647), l3_lattices(_G9647)]
+ (13)  [-v2_pre_topc(k11_lopclset(_G9647)), -v2_struct_0(_G9647), -v7_struct_0(_G9647), v10_lattices(_G9647), v17_lattices(_G9647), l3_lattices(_G9647)]
+ (14)  [-r1_filter_1(_G10213, k12_lopclset(_G10213)), -v2_struct_0(_G10213), -v7_struct_0(_G10213), v10_lattices(_G10213), v17_lattices(_G10213), l3_lattices(_G10213)]
+ (15)  [_G7731=_G7780, - (k11_lopclset(_G7731)=k11_lopclset(_G7780))]
+ (16)  [_G8009=_G8058, - (k12_lopclset(_G8009)=k12_lopclset(_G8058))]
+ (17)  [_G8278=_G8327, - (k6_lopclset(_G8278)=k6_lopclset(_G8327))]
+ (18)  [- (_G3948=_G3948)]
+ (19)  [_G4047=_G4092, - (_G4092=_G4047)]
+ (20)  [- (_G4280=_G4393), _G4280=_G4336, _G4336=_G4393]
+ (21)  [-v1_pre_topc(_G4779), _G4730=_G4779, v1_pre_topc(_G4730)]
+ (22)  [-v7_struct_0(_G5057), _G5008=_G5057, v7_struct_0(_G5008)]
+ (23)  [-v10_lattices(_G5335), _G5286=_G5335, v10_lattices(_G5286)]
+ (24)  [-v17_lattices(_G5613), _G5564=_G5613, v17_lattices(_G5564)]
+ (25)  [-l3_lattices(_G5891), _G5842=_G5891, l3_lattices(_G5842)]
+ (26)  [-v2_struct_0(_G6169), _G6120=_G6169, v2_struct_0(_G6120)]
+ (27)  [-v2_pre_topc(_G6447), _G6398=_G6447, v2_pre_topc(_G6398)]
+ (28)  [-l1_pre_topc(_G6725), _G6676=_G6725, l1_pre_topc(_G6676)]
+ (29)  [-r1_filter_1(_G7012, _G7149), r1_filter_1(_G6945, _G7080), _G6945=_G7012, _G7080=_G7149]
+
+Connection Proof:
+-----------------
+1  [v2_struct_0(1^[])]   (1)  
+1.1  [-v2_struct_0(1^[]), - (k12_lopclset(1^[])=k6_lopclset(k11_lopclset(1^[]))), -v7_struct_0(1^[]), v10_lattices(1^[]), v17_lattices(1^[]), l3_lattices(1^[])]   (7)  substitution:[[_G8619], [1^[]]]
+1.1.1  [k12_lopclset(1^[])=k6_lopclset(k11_lopclset(1^[])), -r1_filter_1(1^[], k6_lopclset(k11_lopclset(1^[]))), r1_filter_1(1^[], k12_lopclset(1^[])), 1^[]=1^[]]   (29)  substitution:[[_G7080, _G7149, _G7012, _G6945], [k12_lopclset(1^[]), k6_lopclset(k11_lopclset(1^[])), 1^[], 1^[]]]
+1.1.1.1  [r1_filter_1(1^[], k6_lopclset(k11_lopclset(1^[]))), -v2_struct_0(k11_lopclset(1^[])), v2_pre_topc(k11_lopclset(1^[])), l1_pre_topc(k11_lopclset(1^[]))]   (6)  substitution:[[_G12560], [k11_lopclset(1^[])]]
+1.1.1.1.1  [v2_struct_0(k11_lopclset(1^[])), -v2_struct_0(1^[]), -v7_struct_0(1^[]), v10_lattices(1^[]), v17_lattices(1^[]), l3_lattices(1^[])]   (11)  substitution:[[_G9647], [1^[]]]
+1.1.1.1.1.1  [v2_struct_0(1^[])]   (1)  
+1.1.1.1.1.2  [v7_struct_0(1^[])]   (2)  
+1.1.1.1.1.3  [-v10_lattices(1^[])]   (3)  
+1.1.1.1.1.4  [-v17_lattices(1^[])]   (4)  
+1.1.1.1.1.5  [-l3_lattices(1^[])]   (5)  
+1.1.1.1.2  [-v2_pre_topc(k11_lopclset(1^[])), -v2_struct_0(1^[]), -v7_struct_0(1^[]), v10_lattices(1^[]), v17_lattices(1^[]), l3_lattices(1^[])]   (9)  substitution:[[_G9088], [1^[]]]
+1.1.1.1.2.1  [v2_struct_0(1^[])]   (1)  
+1.1.1.1.2.2  [v7_struct_0(1^[])]   (2)  
+1.1.1.1.2.3  [-v10_lattices(1^[])]   (3)  
+1.1.1.1.2.4  [-v17_lattices(1^[])]   (4)  
+1.1.1.1.2.5  [-l3_lattices(1^[])]   (5)  
+1.1.1.1.3  [-l1_pre_topc(k11_lopclset(1^[])), -v2_struct_0(1^[]), -v7_struct_0(1^[]), v10_lattices(1^[]), v17_lattices(1^[]), l3_lattices(1^[])]   (10)  substitution:[[_G9088], [1^[]]]
+1.1.1.1.3.1  [v2_struct_0(1^[])]   (1)  
+1.1.1.1.3.2  [v7_struct_0(1^[])]   (2)  
+1.1.1.1.3.3  [-v10_lattices(1^[])]   (3)  
+1.1.1.1.3.4  [-v17_lattices(1^[])]   (4)  
+1.1.1.1.3.5  [-l3_lattices(1^[])]   (5)  
+1.1.1.2  [-r1_filter_1(1^[], k12_lopclset(1^[])), -v2_struct_0(1^[]), -v7_struct_0(1^[]), v10_lattices(1^[]), v17_lattices(1^[]), l3_lattices(1^[])]   (14)  substitution:[[_G10213], [1^[]]]
+1.1.1.2.1  [v2_struct_0(1^[])]   (1)  
+1.1.1.2.2  [v7_struct_0(1^[])]   (2)  
+1.1.1.2.3  [-v10_lattices(1^[])]   (3)  
+1.1.1.2.4  [-v17_lattices(1^[])]   (4)  
+1.1.1.2.5  [-l3_lattices(1^[])]   (5)  
+1.1.1.3  [- (1^[]=1^[])]   (18)  substitution:[[_G3948], [1^[]]]
+1.1.2  [v7_struct_0(1^[])]   (2)  
+1.1.3  [-v10_lattices(1^[])]   (3)  
+1.1.4  [-v17_lattices(1^[])]   (4)  
+1.1.5  [-l3_lattices(1^[])]   (5)  
+------------------------------------------------------
+End of proof for t36_lopclset

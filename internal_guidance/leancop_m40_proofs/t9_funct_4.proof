@@ -1,0 +1,29 @@
+
+t9_funct_4 is a Theorem
+Start of proof for t9_funct_4
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(3^[])]
+ (2)  [-v1_funct_1(3^[])]
+ (3)  [-v1_relat_1(4^[])]
+ (4)  [-v1_funct_1(4^[])]
+ (5)  [-r1_tarski(3^[], 4^[])]
+ (6)  [r1_tarski(k5_relat_1(k6_relat_1(1^[], 3^[]), 2^[]), k5_relat_1(k6_relat_1(1^[], 4^[]), 2^[]))]
+ (7)  [v1_relat_1(_G1094), -v1_relat_1(k6_relat_1(_G1048, _G1094))]
+ (8)  [v1_relat_1(_G1347), v1_relat_1(_G1446), r1_tarski(_G1347, _G1446), -r1_tarski(k6_relat_1(_G1281, _G1347), k6_relat_1(_G1281, _G1446))]
+ (9)  [v1_relat_1(_G1877), v1_relat_1(_G1976), r1_tarski(_G1877, _G1976), -r1_tarski(k5_relat_1(_G1877, _G1811), k5_relat_1(_G1976, _G1811))]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k5_relat_1(k6_relat_1(1^[], 3^[]), 2^[]), k5_relat_1(k6_relat_1(1^[], 4^[]), 2^[]))]   (6)  
+1.1  [-r1_tarski(k5_relat_1(k6_relat_1(1^[], 3^[]), 2^[]), k5_relat_1(k6_relat_1(1^[], 4^[]), 2^[])), v1_relat_1(k6_relat_1(1^[], 3^[])), v1_relat_1(k6_relat_1(1^[], 4^[])), r1_tarski(k6_relat_1(1^[], 3^[]), k6_relat_1(1^[], 4^[]))]   (9)  substitution:[[_G1877, _G1811, _G1976], [k6_relat_1(1^[], 3^[]), 2^[], k6_relat_1(1^[], 4^[])]]
+1.1.1  [-v1_relat_1(k6_relat_1(1^[], 3^[])), v1_relat_1(3^[])]   (7)  substitution:[[_G1048, _G1094], [1^[], 3^[]]]
+1.1.1.1  [-v1_relat_1(3^[])]   (1)  
+1.1.2  [-v1_relat_1(k6_relat_1(1^[], 4^[])), v1_relat_1(4^[])]   (7)  substitution:[[_G1048, _G1094], [1^[], 4^[]]]
+1.1.2.1  [-v1_relat_1(4^[])]   (3)  
+1.1.3  [-r1_tarski(k6_relat_1(1^[], 3^[]), k6_relat_1(1^[], 4^[])), v1_relat_1(3^[]), v1_relat_1(4^[]), r1_tarski(3^[], 4^[])]   (8)  substitution:[[_G1281, _G1347, _G1446], [1^[], 3^[], 4^[]]]
+1.1.3.1  [-v1_relat_1(3^[])]   (1)  
+1.1.3.2  [-v1_relat_1(4^[])]   (3)  
+1.1.3.3  [-r1_tarski(3^[], 4^[])]   (5)  
+------------------------------------------------------
+End of proof for t9_funct_4

@@ -1,0 +1,25 @@
+
+t12_radix_1 is a Theorem
+Start of proof for t12_radix_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v7_ordinal1(2^[])]
+ (2)  [r1_tarski(k2_radix_1(2^[]), k4_numbers)]
+ (3)  [v1_int_1(_G810), -r2_hidden(_G810, k4_numbers)]
+ (4)  [-v1_int_1(_G810), r2_hidden(_G810, k4_numbers)]
+ (5)  [v7_ordinal1(_G1411), r2_hidden(_G1360, k2_radix_1(_G1411)), -v1_int_1(_G1360)]
+ (6)  [-r1_tarski(_G967, _G1023), -r2_hidden(1^[_G1023, _G967], _G967)]
+ (7)  [-r1_tarski(_G967, _G1023), r2_hidden(1^[_G1023, _G967], _G1023)]
+ (8)  [r1_tarski(_G967, _G1023), r2_hidden(_G1137, _G967), -r2_hidden(_G1137, _G1023)]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k2_radix_1(2^[]), k4_numbers)]   (2)  
+1.1  [-r1_tarski(k2_radix_1(2^[]), k4_numbers), -r2_hidden(1^[k4_numbers, k2_radix_1(2^[])], k2_radix_1(2^[]))]   (6)  substitution:[[_G967, _G1023], [k2_radix_1(2^[]), k4_numbers]]
+1.1.1  [r2_hidden(1^[k4_numbers, k2_radix_1(2^[])], k2_radix_1(2^[])), v7_ordinal1(2^[]), -v1_int_1(1^[k4_numbers, k2_radix_1(2^[])])]   (5)  substitution:[[_G1360, _G1411], [1^[k4_numbers, k2_radix_1(2^[])], 2^[]]]
+1.1.1.1  [-v7_ordinal1(2^[])]   (1)  
+1.1.1.2  [v1_int_1(1^[k4_numbers, k2_radix_1(2^[])]), -r2_hidden(1^[k4_numbers, k2_radix_1(2^[])], k4_numbers)]   (3)  substitution:[[_G810], [1^[k4_numbers, k2_radix_1(2^[])]]]
+1.1.1.2.1  [r2_hidden(1^[k4_numbers, k2_radix_1(2^[])], k4_numbers), -r1_tarski(k2_radix_1(2^[]), k4_numbers)]   (7)  substitution:[[_G1023, _G967], [k4_numbers, k2_radix_1(2^[])]]
+1.1.1.2.1.1  [r1_tarski(k2_radix_1(2^[]), k4_numbers)]   (2)  
+------------------------------------------------------
+End of proof for t12_radix_1

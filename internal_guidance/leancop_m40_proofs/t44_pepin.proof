@@ -1,0 +1,30 @@
+
+t44_pepin is a Theorem
+Start of proof for t44_pepin
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v7_ordinal1(1^[])]
+ (2)  [1^[]=k6_numbers]
+ (3)  [k3_nat_d(1^[], 1^[])=np__1]
+ (4)  [- (k6_numbers=k1_xboole_0)]
+ (5)  [v1_xboole_0(_G3696), - (_G3696=k1_xboole_0)]
+ (6)  [- (k3_nat_d(_G3432, _G3432)=np__1), -v1_xboole_0(_G3432), v7_ordinal1(_G3432)]
+ (7)  [- (k3_nat_d(_G2757, _G2892)=k3_nat_d(_G2824, _G2961)), _G2757=_G2824, _G2892=_G2961]
+ (8)  [- (_G1395=_G1395)]
+ (9)  [_G1494=_G1539, - (_G1539=_G1494)]
+ (10)  [- (_G1727=_G1840), _G1727=_G1783, _G1783=_G1840]
+ (11)  [-v1_xboole_0(_G2226), _G2177=_G2226, v1_xboole_0(_G2177)]
+ (12)  [-v7_ordinal1(_G2495), _G2446=_G2495, v7_ordinal1(_G2446)]
+
+Connection Proof:
+-----------------
+1  [1^[]=k6_numbers]   (2)  
+1.1  [- (1^[]=k6_numbers), 1^[]=k1_xboole_0, k1_xboole_0=k6_numbers]   (10)  substitution:[[_G1727, _G1840, _G1783], [1^[], k6_numbers, k1_xboole_0]]
+1.1.1  [- (1^[]=k1_xboole_0), v1_xboole_0(1^[])]   (5)  substitution:[[_G3696], [1^[]]]
+1.1.1.1  [-v1_xboole_0(1^[]), - (k3_nat_d(1^[], 1^[])=np__1), v7_ordinal1(1^[])]   (6)  substitution:[[_G3432], [1^[]]]
+1.1.1.1.1  [k3_nat_d(1^[], 1^[])=np__1]   (3)  
+1.1.1.1.2  [-v7_ordinal1(1^[])]   (1)  
+1.1.2  [- (k1_xboole_0=k6_numbers), k6_numbers=k1_xboole_0]   (9)  substitution:[[_G1539, _G1494], [k1_xboole_0, k6_numbers]]
+1.1.2.1  [- (k6_numbers=k1_xboole_0)]   (4)  
+------------------------------------------------------
+End of proof for t44_pepin

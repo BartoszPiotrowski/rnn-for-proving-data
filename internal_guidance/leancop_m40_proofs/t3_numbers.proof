@@ -1,0 +1,18 @@
+
+t3_numbers is a Theorem
+Start of proof for t3_numbers
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [r2_xboole_0(k3_numbers, k2_numbers)]
+ (2)  [-r1_tarski(k3_numbers, k1_numbers)]
+ (3)  [-r2_xboole_0(k1_numbers, k2_numbers)]
+ (4)  [-r2_xboole_0(_G755, _G868), r1_tarski(_G755, _G811), r2_xboole_0(_G811, _G868)]
+
+Connection Proof:
+-----------------
+1  [r2_xboole_0(k3_numbers, k2_numbers)]   (1)  
+1.1  [-r2_xboole_0(k3_numbers, k2_numbers), r1_tarski(k3_numbers, k1_numbers), r2_xboole_0(k1_numbers, k2_numbers)]   (4)  substitution:[[_G755, _G868, _G811], [k3_numbers, k2_numbers, k1_numbers]]
+1.1.1  [-r1_tarski(k3_numbers, k1_numbers)]   (2)  
+1.1.2  [-r2_xboole_0(k1_numbers, k2_numbers)]   (3)  
+------------------------------------------------------
+End of proof for t3_numbers

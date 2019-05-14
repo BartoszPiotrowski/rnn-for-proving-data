@@ -1,0 +1,55 @@
+
+t16_euclid_7 is a Theorem
+Start of proof for t16_euclid_7
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(3^[])]
+ (2)  [-v1_funct_1(3^[])]
+ (3)  [-v1_finseq_1(3^[])]
+ (4)  [-v3_valued_0(3^[])]
+ (5)  [- (k12_euclid(3^[])=np__1)]
+ (6)  [v2_euclid_7(k1_tarski(3^[]))]
+ (7)  [-v2_euclid_7(_G6079), -v1_relat_1(2^[_G6079])]
+ (8)  [-v2_euclid_7(_G6079), -v1_funct_1(2^[_G6079])]
+ (9)  [-v2_euclid_7(_G6079), -v1_finseq_1(2^[_G6079])]
+ (10)  [-v2_euclid_7(_G6079), -v3_valued_0(2^[_G6079])]
+ (11)  [-v2_euclid_7(_G6079), -r2_hidden(2^[_G6079], _G6079)]
+ (12)  [-v2_euclid_7(_G6079), k12_euclid(2^[_G6079])=np__1]
+ (13)  [v2_euclid_7(_G6079), - (k12_euclid(_G6183)=np__1), r2_hidden(_G6183, _G6079), v1_relat_1(_G6183), v1_funct_1(_G6183), v1_finseq_1(_G6183), v3_valued_0(_G6183)]
+ (14)  [_G5726=k1_tarski(_G5668), r2_hidden(_G5856, _G5726), - (_G5856=_G5668)]
+ (15)  [_G5726=k1_tarski(_G5668), -r2_hidden(_G5856, _G5726), _G5856=_G5668]
+ (16)  [- (_G5726=k1_tarski(_G5668)), r2_hidden(1^[_G5726, _G5668], _G5726), 1^[_G5726, _G5668]=_G5668]
+ (17)  [- (_G5726=k1_tarski(_G5668)), -r2_hidden(1^[_G5726, _G5668], _G5726), - (1^[_G5726, _G5668]=_G5668)]
+ (18)  [_G5079=_G5128, - (k12_euclid(_G5079)=k12_euclid(_G5128))]
+ (19)  [_G5348=_G5397, - (k1_tarski(_G5348)=k1_tarski(_G5397))]
+ (20)  [- (_G2193=_G2193)]
+ (21)  [_G2292=_G2337, - (_G2337=_G2292)]
+ (22)  [- (_G2525=_G2638), _G2525=_G2581, _G2581=_G2638]
+ (23)  [-r2_hidden(_G3042, _G3179), r2_hidden(_G2975, _G3110), _G2975=_G3042, _G3110=_G3179]
+ (24)  [-v1_relat_1(_G3621), _G3572=_G3621, v1_relat_1(_G3572)]
+ (25)  [-v1_funct_1(_G3899), _G3850=_G3899, v1_funct_1(_G3850)]
+ (26)  [-v1_finseq_1(_G4177), _G4128=_G4177, v1_finseq_1(_G4128)]
+ (27)  [-v3_valued_0(_G4455), _G4406=_G4455, v3_valued_0(_G4406)]
+ (28)  [-v2_euclid_7(_G4724), _G4675=_G4724, v2_euclid_7(_G4675)]
+
+Connection Proof:
+-----------------
+1  [v2_euclid_7(k1_tarski(3^[]))]   (6)  
+1.1  [-v2_euclid_7(k1_tarski(3^[])), -r2_hidden(2^[k1_tarski(3^[])], k1_tarski(3^[]))]   (11)  substitution:[[_G6079], [k1_tarski(3^[])]]
+1.1.1  [r2_hidden(2^[k1_tarski(3^[])], k1_tarski(3^[])), k1_tarski(3^[])=k1_tarski(3^[]), - (2^[k1_tarski(3^[])]=3^[])]   (14)  substitution:[[_G5856, _G5726, _G5668], [2^[k1_tarski(3^[])], k1_tarski(3^[]), 3^[]]]
+1.1.1.1  [- (k1_tarski(3^[])=k1_tarski(3^[])), r2_hidden(1^[k1_tarski(3^[]), 3^[]], k1_tarski(3^[])), 1^[k1_tarski(3^[]), 3^[]]=3^[]]   (16)  substitution:[[_G5726, _G5668], [k1_tarski(3^[]), 3^[]]]
+1.1.1.1.1  [-r2_hidden(1^[k1_tarski(3^[]), 3^[]], k1_tarski(3^[])), k1_tarski(3^[])=k1_tarski(3^[]), 1^[k1_tarski(3^[]), 3^[]]=3^[]]   (15)  substitution:[[_G5856, _G5726, _G5668], [1^[k1_tarski(3^[]), 3^[]], k1_tarski(3^[]), 3^[]]]
+1.1.1.1.1.1  [- (k1_tarski(3^[])=k1_tarski(3^[]))]   (20)  substitution:[[_G2193], [k1_tarski(3^[])]]
+1.1.1.1.1.2  [- (1^[k1_tarski(3^[]), 3^[]]=3^[]), - (k1_tarski(3^[])=k1_tarski(3^[])), -r2_hidden(1^[k1_tarski(3^[]), 3^[]], k1_tarski(3^[]))]   (17)  substitution:[[_G5726, _G5668], [k1_tarski(3^[]), 3^[]]]
+1.1.1.1.1.2.1  [k1_tarski(3^[])=k1_tarski(3^[])]   (reduction:1.1.1)  
+1.1.1.1.1.2.2  [r2_hidden(1^[k1_tarski(3^[]), 3^[]], k1_tarski(3^[]))]   (reduction:1.1.1.1)  
+1.1.1.1.2  [- (1^[k1_tarski(3^[]), 3^[]]=3^[]), k1_tarski(3^[])=k1_tarski(3^[]), r2_hidden(1^[k1_tarski(3^[]), 3^[]], k1_tarski(3^[]))]   (14)  substitution:[[_G5856, _G5668, _G5726], [1^[k1_tarski(3^[]), 3^[]], 3^[], k1_tarski(3^[])]]
+1.1.1.1.2.1  [- (k1_tarski(3^[])=k1_tarski(3^[]))]   (20)  substitution:[[_G2193], [k1_tarski(3^[])]]
+1.1.1.1.2.2  [-r2_hidden(1^[k1_tarski(3^[]), 3^[]], k1_tarski(3^[]))]   (lemmata:1.1.1.1)  
+1.1.1.2  [2^[k1_tarski(3^[])]=3^[], - (k12_euclid(2^[k1_tarski(3^[])])=k12_euclid(3^[]))]   (18)  substitution:[[_G5079, _G5128], [2^[k1_tarski(3^[])], 3^[]]]
+1.1.1.2.1  [k12_euclid(2^[k1_tarski(3^[])])=k12_euclid(3^[]), - (k12_euclid(2^[k1_tarski(3^[])])=np__1), k12_euclid(3^[])=np__1]   (22)  substitution:[[_G2525, _G2581, _G2638], [k12_euclid(2^[k1_tarski(3^[])]), k12_euclid(3^[]), np__1]]
+1.1.1.2.1.1  [k12_euclid(2^[k1_tarski(3^[])])=np__1, -v2_euclid_7(k1_tarski(3^[]))]   (12)  substitution:[[_G6079], [k1_tarski(3^[])]]
+1.1.1.2.1.1.1  [v2_euclid_7(k1_tarski(3^[]))]   (6)  
+1.1.1.2.1.2  [- (k12_euclid(3^[])=np__1)]   (5)  
+------------------------------------------------------
+End of proof for t16_euclid_7

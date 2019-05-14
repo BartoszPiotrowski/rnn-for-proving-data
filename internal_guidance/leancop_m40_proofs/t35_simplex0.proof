@@ -1,0 +1,58 @@
+
+t35_simplex0 is a Theorem
+Start of proof for t35_simplex0
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_simplex0(4^[], 3^[])]
+ (2)  [-m2_simplex0(5^[], 3^[], 4^[])]
+ (3)  [-m2_simplex0(6^[], 3^[], 5^[])]
+ (4)  [-v7_simplex0(6^[], 3^[], 4^[])]
+ (5)  [-m2_simplex0(6^[], 3^[], 4^[])]
+ (6)  [v7_simplex0(6^[], 3^[], 5^[])]
+ (7)  [m1_simplex0(_G1470, _G1383), m1_simplex0(_G1615, _G1383), v3_matroid0(_G1615), v1_matroid0(_G1615), m2_simplex0(_G1615, _G1383, _G1470), -r1_tarski(k2_struct_0(_G1615), k2_struct_0(_G1470))]
+ (8)  [m1_simplex0(_G1470, _G1383), m1_simplex0(_G1615, _G1383), v3_matroid0(_G1615), v1_matroid0(_G1615), m2_simplex0(_G1615, _G1383, _G1470), -r1_tarski(u1_pre_topc(_G1615), u1_pre_topc(_G1470))]
+ (9)  [m1_simplex0(_G1470, _G1383), m1_simplex0(_G1615, _G1383), v3_matroid0(_G1615), v1_matroid0(_G1615), -m2_simplex0(_G1615, _G1383, _G1470), r1_tarski(k2_struct_0(_G1615), k2_struct_0(_G1470)), r1_tarski(u1_pre_topc(_G1615), u1_pre_topc(_G1470))]
+ (10)  [m1_simplex0(_G2326, _G2239), m2_simplex0(_G2471, _G2239, _G2326), -v7_simplex0(_G2471, _G2239, _G2326), -m1_subset_1(1^[_G2471, _G2326, _G2239], k1_zfmisc_1(u1_struct_0(_G2471)))]
+ (11)  [m1_simplex0(_G2326, _G2239), m2_simplex0(_G2471, _G2239, _G2326), -v7_simplex0(_G2471, _G2239, _G2326), -r2_hidden(1^[_G2471, _G2326, _G2239], u1_pre_topc(_G2326))]
+ (12)  [m1_simplex0(_G2326, _G2239), m2_simplex0(_G2471, _G2239, _G2326), -v7_simplex0(_G2471, _G2239, _G2326), v3_pre_topc(1^[_G2471, _G2326, _G2239], _G2471)]
+ (13)  [m1_simplex0(_G2326, _G2239), m2_simplex0(_G2471, _G2239, _G2326), v7_simplex0(_G2471, _G2239, _G2326), m1_subset_1(_G2754, k1_zfmisc_1(u1_struct_0(_G2471))), r2_hidden(_G2754, u1_pre_topc(_G2326)), -v3_pre_topc(_G2754, _G2471)]
+ (14)  [m1_simplex0(_G3634, _G3567), m2_simplex0(_G3759, _G3567, _G3634), -v1_matroid0(_G3759)]
+ (15)  [m1_simplex0(_G3634, _G3567), m2_simplex0(_G3759, _G3567, _G3634), -v3_matroid0(_G3759)]
+ (16)  [m1_simplex0(_G3634, _G3567), m2_simplex0(_G3759, _G3567, _G3634), -m1_simplex0(_G3759, _G3567)]
+ (17)  [-r1_tarski(_G3174, _G3230), -r2_hidden(2^[_G3230, _G3174], _G3174)]
+ (18)  [-r1_tarski(_G3174, _G3230), r2_hidden(2^[_G3230, _G3174], _G3230)]
+ (19)  [r1_tarski(_G3174, _G3230), r2_hidden(_G3344, _G3174), -r2_hidden(_G3344, _G3230)]
+
+Connection Proof:
+-----------------
+1  [v7_simplex0(6^[], 3^[], 5^[])]   (6)  
+1.1  [-v7_simplex0(6^[], 3^[], 5^[]), m1_simplex0(5^[], 3^[]), m2_simplex0(6^[], 3^[], 5^[]), -r2_hidden(1^[6^[], 5^[], 3^[]], u1_pre_topc(5^[]))]   (11)  substitution:[[_G2471, _G2239, _G2326], [6^[], 3^[], 5^[]]]
+1.1.1  [-m1_simplex0(5^[], 3^[]), m1_simplex0(4^[], 3^[]), m2_simplex0(5^[], 3^[], 4^[])]   (16)  substitution:[[_G3759, _G3567, _G3634], [5^[], 3^[], 4^[]]]
+1.1.1.1  [-m1_simplex0(4^[], 3^[])]   (1)  
+1.1.1.2  [-m2_simplex0(5^[], 3^[], 4^[])]   (2)  
+1.1.2  [-m2_simplex0(6^[], 3^[], 5^[])]   (3)  
+1.1.3  [r2_hidden(1^[6^[], 5^[], 3^[]], u1_pre_topc(5^[])), r1_tarski(u1_pre_topc(5^[]), u1_pre_topc(4^[])), -r2_hidden(1^[6^[], 5^[], 3^[]], u1_pre_topc(4^[]))]   (19)  substitution:[[_G3344, _G3174, _G3230], [1^[6^[], 5^[], 3^[]], u1_pre_topc(5^[]), u1_pre_topc(4^[])]]
+1.1.3.1  [-r1_tarski(u1_pre_topc(5^[]), u1_pre_topc(4^[])), m1_simplex0(4^[], 3^[]), m1_simplex0(5^[], 3^[]), v3_matroid0(5^[]), v1_matroid0(5^[]), m2_simplex0(5^[], 3^[], 4^[])]   (8)  substitution:[[_G1615, _G1470, _G1383], [5^[], 4^[], 3^[]]]
+1.1.3.1.1  [-m1_simplex0(4^[], 3^[])]   (1)  
+1.1.3.1.2  [-m1_simplex0(5^[], 3^[])]   (lemmata:1.1)  
+1.1.3.1.3  [-v3_matroid0(5^[]), m1_simplex0(4^[], 3^[]), m2_simplex0(5^[], 3^[], 4^[])]   (15)  substitution:[[_G3759, _G3634, _G3567], [5^[], 4^[], 3^[]]]
+1.1.3.1.3.1  [-m1_simplex0(4^[], 3^[])]   (1)  
+1.1.3.1.3.2  [-m2_simplex0(5^[], 3^[], 4^[])]   (2)  
+1.1.3.1.4  [-v1_matroid0(5^[]), m1_simplex0(4^[], 3^[]), m2_simplex0(5^[], 3^[], 4^[])]   (14)  substitution:[[_G3759, _G3634, _G3567], [5^[], 4^[], 3^[]]]
+1.1.3.1.4.1  [-m1_simplex0(4^[], 3^[])]   (1)  
+1.1.3.1.4.2  [-m2_simplex0(5^[], 3^[], 4^[])]   (2)  
+1.1.3.1.5  [-m2_simplex0(5^[], 3^[], 4^[])]   (2)  
+1.1.3.2  [r2_hidden(1^[6^[], 5^[], 3^[]], u1_pre_topc(4^[])), m1_simplex0(4^[], 3^[]), m2_simplex0(6^[], 3^[], 4^[]), v7_simplex0(6^[], 3^[], 4^[]), m1_subset_1(1^[6^[], 5^[], 3^[]], k1_zfmisc_1(u1_struct_0(6^[]))), -v3_pre_topc(1^[6^[], 5^[], 3^[]], 6^[])]   (13)  substitution:[[_G2754, _G2326, _G2239, _G2471], [1^[6^[], 5^[], 3^[]], 4^[], 3^[], 6^[]]]
+1.1.3.2.1  [-m1_simplex0(4^[], 3^[])]   (1)  
+1.1.3.2.2  [-m2_simplex0(6^[], 3^[], 4^[])]   (5)  
+1.1.3.2.3  [-v7_simplex0(6^[], 3^[], 4^[])]   (4)  
+1.1.3.2.4  [-m1_subset_1(1^[6^[], 5^[], 3^[]], k1_zfmisc_1(u1_struct_0(6^[]))), m1_simplex0(5^[], 3^[]), m2_simplex0(6^[], 3^[], 5^[]), -v7_simplex0(6^[], 3^[], 5^[])]   (10)  substitution:[[_G2471, _G2326, _G2239], [6^[], 5^[], 3^[]]]
+1.1.3.2.4.1  [-m1_simplex0(5^[], 3^[])]   (lemmata:1.1)  
+1.1.3.2.4.2  [-m2_simplex0(6^[], 3^[], 5^[])]   (3)  
+1.1.3.2.4.3  [v7_simplex0(6^[], 3^[], 5^[])]   (6)  
+1.1.3.2.5  [v3_pre_topc(1^[6^[], 5^[], 3^[]], 6^[]), m1_simplex0(5^[], 3^[]), m2_simplex0(6^[], 3^[], 5^[]), -v7_simplex0(6^[], 3^[], 5^[])]   (12)  substitution:[[_G2471, _G2326, _G2239], [6^[], 5^[], 3^[]]]
+1.1.3.2.5.1  [-m1_simplex0(5^[], 3^[])]   (lemmata:1.1)  
+1.1.3.2.5.2  [-m2_simplex0(6^[], 3^[], 5^[])]   (3)  
+1.1.3.2.5.3  [v7_simplex0(6^[], 3^[], 5^[])]   (6)  
+------------------------------------------------------
+End of proof for t35_simplex0

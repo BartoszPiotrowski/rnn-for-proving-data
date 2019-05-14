@@ -1,0 +1,49 @@
+
+t25_card_2 is a Theorem
+Start of proof for t25_card_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_card_1(1^[])]
+ (2)  [k3_card_2(1^[], k6_numbers)=np__1]
+ (3)  [v1_xboole_0(_G5211), -v1_card_1(_G5211)]
+ (4)  [- (k1_xboole_0=o_0_0_xboole_0)]
+ (5)  [-v1_xboole_0(o_0_0_xboole_0)]
+ (6)  [- (k6_numbers=k1_xboole_0)]
+ (7)  [- (k1_card_1(k1_tarski(_G5869))=np__1)]
+ (8)  [- (k1_funct_2(k1_xboole_0, _G5991)=k1_tarski(k1_xboole_0))]
+ (9)  [v1_card_1(_G5399), v1_card_1(_G5488), - (k3_card_2(_G5399, _G5488)=k1_card_1(k1_funct_2(_G5488, _G5399)))]
+ (10)  [_G3386=_G3435, - (k1_card_1(_G3386)=k1_card_1(_G3435))]
+ (11)  [- (k1_funct_2(_G3664, _G3799)=k1_funct_2(_G3731, _G3868)), _G3664=_G3731, _G3799=_G3868]
+ (12)  [_G4261=_G4310, - (k1_tarski(_G4261)=k1_tarski(_G4310))]
+ (13)  [- (k3_card_2(_G4530, _G4665)=k3_card_2(_G4597, _G4734)), _G4530=_G4597, _G4665=_G4734]
+ (14)  [- (_G2015=_G2015)]
+ (15)  [_G2114=_G2159, - (_G2159=_G2114)]
+ (16)  [- (_G2347=_G2460), _G2347=_G2403, _G2403=_G2460]
+ (17)  [-v1_xboole_0(_G2846), _G2797=_G2846, v1_xboole_0(_G2797)]
+ (18)  [-v1_card_1(_G3115), _G3066=_G3115, v1_card_1(_G3066)]
+
+Connection Proof:
+-----------------
+1  [k3_card_2(1^[], k6_numbers)=np__1]   (2)  
+1.1  [- (k3_card_2(1^[], k6_numbers)=np__1), k3_card_2(1^[], k6_numbers)=k1_card_1(k1_funct_2(k6_numbers, 1^[])), k1_card_1(k1_funct_2(k6_numbers, 1^[]))=np__1]   (16)  substitution:[[_G2347, _G2460, _G2403], [k3_card_2(1^[], k6_numbers), np__1, k1_card_1(k1_funct_2(k6_numbers, 1^[]))]]
+1.1.1  [- (k3_card_2(1^[], k6_numbers)=k1_card_1(k1_funct_2(k6_numbers, 1^[]))), v1_card_1(1^[]), v1_card_1(k6_numbers)]   (9)  substitution:[[_G5399, _G5488], [1^[], k6_numbers]]
+1.1.1.1  [-v1_card_1(1^[])]   (1)  
+1.1.1.2  [-v1_card_1(k6_numbers), k1_xboole_0=k6_numbers, v1_card_1(k1_xboole_0)]   (18)  substitution:[[_G3115, _G3066], [k6_numbers, k1_xboole_0]]
+1.1.1.2.1  [- (k1_xboole_0=k6_numbers), k6_numbers=k1_xboole_0]   (15)  substitution:[[_G2159, _G2114], [k1_xboole_0, k6_numbers]]
+1.1.1.2.1.1  [- (k6_numbers=k1_xboole_0)]   (6)  
+1.1.1.2.2  [-v1_card_1(k1_xboole_0), o_0_0_xboole_0=k1_xboole_0, v1_card_1(o_0_0_xboole_0)]   (18)  substitution:[[_G3115, _G3066], [k1_xboole_0, o_0_0_xboole_0]]
+1.1.1.2.2.1  [- (o_0_0_xboole_0=k1_xboole_0), k1_xboole_0=o_0_0_xboole_0]   (15)  substitution:[[_G2159, _G2114], [o_0_0_xboole_0, k1_xboole_0]]
+1.1.1.2.2.1.1  [- (k1_xboole_0=o_0_0_xboole_0)]   (4)  
+1.1.1.2.2.2  [-v1_card_1(o_0_0_xboole_0), v1_xboole_0(o_0_0_xboole_0)]   (3)  substitution:[[_G5211], [o_0_0_xboole_0]]
+1.1.1.2.2.2.1  [-v1_xboole_0(o_0_0_xboole_0)]   (5)  
+1.1.2  [- (k1_card_1(k1_funct_2(k6_numbers, 1^[]))=np__1), k1_card_1(k1_funct_2(k6_numbers, 1^[]))=k1_card_1(k1_funct_2(k1_xboole_0, 1^[])), k1_card_1(k1_funct_2(k1_xboole_0, 1^[]))=np__1]   (16)  substitution:[[_G2347, _G2460, _G2403], [k1_card_1(k1_funct_2(k6_numbers, 1^[])), np__1, k1_card_1(k1_funct_2(k1_xboole_0, 1^[]))]]
+1.1.2.1  [- (k1_card_1(k1_funct_2(k6_numbers, 1^[]))=k1_card_1(k1_funct_2(k1_xboole_0, 1^[]))), k1_funct_2(k6_numbers, 1^[])=k1_funct_2(k1_xboole_0, 1^[])]   (10)  substitution:[[_G3386, _G3435], [k1_funct_2(k6_numbers, 1^[]), k1_funct_2(k1_xboole_0, 1^[])]]
+1.1.2.1.1  [- (k1_funct_2(k6_numbers, 1^[])=k1_funct_2(k1_xboole_0, 1^[])), k6_numbers=k1_xboole_0, 1^[]=1^[]]   (11)  substitution:[[_G3664, _G3799, _G3731, _G3868], [k6_numbers, 1^[], k1_xboole_0, 1^[]]]
+1.1.2.1.1.1  [- (k6_numbers=k1_xboole_0)]   (6)  
+1.1.2.1.1.2  [- (1^[]=1^[])]   (14)  substitution:[[_G2015], [1^[]]]
+1.1.2.2  [- (k1_card_1(k1_funct_2(k1_xboole_0, 1^[]))=np__1), k1_card_1(k1_funct_2(k1_xboole_0, 1^[]))=k1_card_1(k1_tarski(k1_xboole_0)), k1_card_1(k1_tarski(k1_xboole_0))=np__1]   (16)  substitution:[[_G2347, _G2460, _G2403], [k1_card_1(k1_funct_2(k1_xboole_0, 1^[])), np__1, k1_card_1(k1_tarski(k1_xboole_0))]]
+1.1.2.2.1  [- (k1_card_1(k1_funct_2(k1_xboole_0, 1^[]))=k1_card_1(k1_tarski(k1_xboole_0))), k1_funct_2(k1_xboole_0, 1^[])=k1_tarski(k1_xboole_0)]   (10)  substitution:[[_G3386, _G3435], [k1_funct_2(k1_xboole_0, 1^[]), k1_tarski(k1_xboole_0)]]
+1.1.2.2.1.1  [- (k1_funct_2(k1_xboole_0, 1^[])=k1_tarski(k1_xboole_0))]   (8)  substitution:[[_G5991], [1^[]]]
+1.1.2.2.2  [- (k1_card_1(k1_tarski(k1_xboole_0))=np__1)]   (7)  substitution:[[_G5869], [k1_xboole_0]]
+------------------------------------------------------
+End of proof for t25_card_2

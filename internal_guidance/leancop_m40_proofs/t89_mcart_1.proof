@@ -1,0 +1,38 @@
+
+t89_mcart_1 is a Theorem
+Start of proof for t89_mcart_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(2^[])]
+ (2)  [-r2_hidden(3^[], 2^[])]
+ (3)  [-r2_hidden(1^[], 2^[])]
+ (4)  [- (k1_xtuple_0(3^[])=k1_xtuple_0(1^[]))]
+ (5)  [- (k2_xtuple_0(3^[])=k2_xtuple_0(1^[]))]
+ (6)  [3^[]=1^[]]
+ (7)  [v1_relat_1(_G4647), r2_hidden(_G4590, _G4647), - (_G4590=k4_tarski(k1_xtuple_0(_G4590), k2_xtuple_0(_G4590)))]
+ (8)  [- (k4_tarski(_G3392, _G3527)=k4_tarski(_G3459, _G3596)), _G3392=_G3459, _G3527=_G3596]
+ (9)  [_G3989=_G4038, - (k1_xtuple_0(_G3989)=k1_xtuple_0(_G4038))]
+ (10)  [_G4258=_G4307, - (k2_xtuple_0(_G4258)=k2_xtuple_0(_G4307))]
+ (11)  [- (_G1702=_G1702)]
+ (12)  [_G1801=_G1846, - (_G1846=_G1801)]
+ (13)  [- (_G2034=_G2147), _G2034=_G2090, _G2090=_G2147]
+ (14)  [-v1_relat_1(_G2533), _G2484=_G2533, v1_relat_1(_G2484)]
+ (15)  [-r2_hidden(_G2820, _G2957), r2_hidden(_G2753, _G2888), _G2753=_G2820, _G2888=_G2957]
+
+Connection Proof:
+-----------------
+1  [3^[]=1^[]]   (6)  
+1.1  [- (3^[]=1^[]), 3^[]=k4_tarski(k1_xtuple_0(3^[]), k2_xtuple_0(3^[])), k4_tarski(k1_xtuple_0(3^[]), k2_xtuple_0(3^[]))=1^[]]   (13)  substitution:[[_G2034, _G2147, _G2090], [3^[], 1^[], k4_tarski(k1_xtuple_0(3^[]), k2_xtuple_0(3^[]))]]
+1.1.1  [- (3^[]=k4_tarski(k1_xtuple_0(3^[]), k2_xtuple_0(3^[]))), v1_relat_1(2^[]), r2_hidden(3^[], 2^[])]   (7)  substitution:[[_G4590, _G4647], [3^[], 2^[]]]
+1.1.1.1  [-v1_relat_1(2^[])]   (1)  
+1.1.1.2  [-r2_hidden(3^[], 2^[])]   (2)  
+1.1.2  [- (k4_tarski(k1_xtuple_0(3^[]), k2_xtuple_0(3^[]))=1^[]), k4_tarski(k1_xtuple_0(3^[]), k2_xtuple_0(3^[]))=k4_tarski(k1_xtuple_0(1^[]), k2_xtuple_0(1^[])), k4_tarski(k1_xtuple_0(1^[]), k2_xtuple_0(1^[]))=1^[]]   (13)  substitution:[[_G2034, _G2147, _G2090], [k4_tarski(k1_xtuple_0(3^[]), k2_xtuple_0(3^[])), 1^[], k4_tarski(k1_xtuple_0(1^[]), k2_xtuple_0(1^[]))]]
+1.1.2.1  [- (k4_tarski(k1_xtuple_0(3^[]), k2_xtuple_0(3^[]))=k4_tarski(k1_xtuple_0(1^[]), k2_xtuple_0(1^[]))), k1_xtuple_0(3^[])=k1_xtuple_0(1^[]), k2_xtuple_0(3^[])=k2_xtuple_0(1^[])]   (8)  substitution:[[_G3392, _G3527, _G3459, _G3596], [k1_xtuple_0(3^[]), k2_xtuple_0(3^[]), k1_xtuple_0(1^[]), k2_xtuple_0(1^[])]]
+1.1.2.1.1  [- (k1_xtuple_0(3^[])=k1_xtuple_0(1^[]))]   (4)  
+1.1.2.1.2  [- (k2_xtuple_0(3^[])=k2_xtuple_0(1^[]))]   (5)  
+1.1.2.2  [- (k4_tarski(k1_xtuple_0(1^[]), k2_xtuple_0(1^[]))=1^[]), 1^[]=k4_tarski(k1_xtuple_0(1^[]), k2_xtuple_0(1^[]))]   (12)  substitution:[[_G1846, _G1801], [k4_tarski(k1_xtuple_0(1^[]), k2_xtuple_0(1^[])), 1^[]]]
+1.1.2.2.1  [- (1^[]=k4_tarski(k1_xtuple_0(1^[]), k2_xtuple_0(1^[]))), v1_relat_1(2^[]), r2_hidden(1^[], 2^[])]   (7)  substitution:[[_G4590, _G4647], [1^[], 2^[]]]
+1.1.2.2.1.1  [-v1_relat_1(2^[])]   (1)  
+1.1.2.2.1.2  [-r2_hidden(1^[], 2^[])]   (3)  
+------------------------------------------------------
+End of proof for t89_mcart_1

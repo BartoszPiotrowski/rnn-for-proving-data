@@ -1,0 +1,45 @@
+
+t24_card_3 is a Theorem
+Start of proof for t24_card_3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(1^[])]
+ (2)  [-v1_funct_1(1^[])]
+ (3)  [-v1_relat_1(2^[])]
+ (4)  [-v1_funct_1(2^[])]
+ (5)  [-r1_tarski(1^[], 2^[])]
+ (6)  [r1_tarski(k3_card_3(1^[]), k3_card_3(2^[]))]
+ (7)  [- (k3_card_3(_G5424)=k3_tarski(k10_xtuple_0(_G5424))), v1_relat_1(_G5424), v1_funct_1(_G5424)]
+ (8)  [r1_tarski(_G6203, _G6252), -r1_tarski(k3_tarski(_G6203), k3_tarski(_G6252))]
+ (9)  [v1_relat_1(_G5687), v1_relat_1(_G5788), r1_tarski(_G5687, _G5788), -r1_tarski(k9_xtuple_0(_G5687), k9_xtuple_0(_G5788))]
+ (10)  [v1_relat_1(_G5687), v1_relat_1(_G5788), r1_tarski(_G5687, _G5788), -r1_tarski(k10_xtuple_0(_G5687), k10_xtuple_0(_G5788))]
+ (11)  [_G4237=_G4286, - (k9_xtuple_0(_G4237)=k9_xtuple_0(_G4286))]
+ (12)  [_G4515=_G4564, - (k10_xtuple_0(_G4515)=k10_xtuple_0(_G4564))]
+ (13)  [_G4793=_G4842, - (k3_tarski(_G4793)=k3_tarski(_G4842))]
+ (14)  [_G5062=_G5111, - (k3_card_3(_G5062)=k3_card_3(_G5111))]
+ (15)  [- (_G2248=_G2248)]
+ (16)  [_G2347=_G2392, - (_G2392=_G2347)]
+ (17)  [- (_G2580=_G2693), _G2580=_G2636, _G2636=_G2693]
+ (18)  [-v1_relat_1(_G3079), _G3030=_G3079, v1_relat_1(_G3030)]
+ (19)  [-v1_funct_1(_G3357), _G3308=_G3357, v1_funct_1(_G3308)]
+ (20)  [-r1_tarski(_G3644, _G3781), r1_tarski(_G3577, _G3712), _G3577=_G3644, _G3712=_G3781]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k3_card_3(1^[]), k3_card_3(2^[]))]   (6)  
+1.1  [-r1_tarski(k3_card_3(1^[]), k3_card_3(2^[])), r1_tarski(k3_tarski(k10_xtuple_0(1^[])), k3_tarski(k10_xtuple_0(2^[]))), k3_tarski(k10_xtuple_0(1^[]))=k3_card_3(1^[]), k3_tarski(k10_xtuple_0(2^[]))=k3_card_3(2^[])]   (20)  substitution:[[_G3644, _G3781, _G3577, _G3712], [k3_card_3(1^[]), k3_card_3(2^[]), k3_tarski(k10_xtuple_0(1^[])), k3_tarski(k10_xtuple_0(2^[]))]]
+1.1.1  [-r1_tarski(k3_tarski(k10_xtuple_0(1^[])), k3_tarski(k10_xtuple_0(2^[]))), r1_tarski(k10_xtuple_0(1^[]), k10_xtuple_0(2^[]))]   (8)  substitution:[[_G6203, _G6252], [k10_xtuple_0(1^[]), k10_xtuple_0(2^[])]]
+1.1.1.1  [-r1_tarski(k10_xtuple_0(1^[]), k10_xtuple_0(2^[])), v1_relat_1(1^[]), v1_relat_1(2^[]), r1_tarski(1^[], 2^[])]   (10)  substitution:[[_G5687, _G5788], [1^[], 2^[]]]
+1.1.1.1.1  [-v1_relat_1(1^[])]   (1)  
+1.1.1.1.2  [-v1_relat_1(2^[])]   (3)  
+1.1.1.1.3  [-r1_tarski(1^[], 2^[])]   (5)  
+1.1.2  [- (k3_tarski(k10_xtuple_0(1^[]))=k3_card_3(1^[])), k3_card_3(1^[])=k3_tarski(k10_xtuple_0(1^[]))]   (16)  substitution:[[_G2392, _G2347], [k3_tarski(k10_xtuple_0(1^[])), k3_card_3(1^[])]]
+1.1.2.1  [- (k3_card_3(1^[])=k3_tarski(k10_xtuple_0(1^[]))), v1_relat_1(1^[]), v1_funct_1(1^[])]   (7)  substitution:[[_G5424], [1^[]]]
+1.1.2.1.1  [-v1_relat_1(1^[])]   (1)  
+1.1.2.1.2  [-v1_funct_1(1^[])]   (2)  
+1.1.3  [- (k3_tarski(k10_xtuple_0(2^[]))=k3_card_3(2^[])), k3_card_3(2^[])=k3_tarski(k10_xtuple_0(2^[]))]   (16)  substitution:[[_G2392, _G2347], [k3_tarski(k10_xtuple_0(2^[])), k3_card_3(2^[])]]
+1.1.3.1  [- (k3_card_3(2^[])=k3_tarski(k10_xtuple_0(2^[]))), v1_relat_1(2^[]), v1_funct_1(2^[])]   (7)  substitution:[[_G5424], [2^[]]]
+1.1.3.1.1  [-v1_relat_1(2^[])]   (3)  
+1.1.3.1.2  [-v1_funct_1(2^[])]   (4)  
+------------------------------------------------------
+End of proof for t24_card_3

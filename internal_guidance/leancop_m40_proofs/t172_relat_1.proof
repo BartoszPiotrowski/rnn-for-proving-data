@@ -1,0 +1,35 @@
+
+t172_relat_1 is a Theorem
+Start of proof for t172_relat_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(3^[])]
+ (2)  [-r1_xboole_0(1^[], 2^[])]
+ (3)  [k5_relat_1(k5_relat_1(3^[], 1^[]), 2^[])=k1_xboole_0]
+ (4)  [r1_xboole_0(_G4781, _G4829), - (k3_xboole_0(_G4781, _G4829)=k1_xboole_0)]
+ (5)  [-r1_xboole_0(_G4781, _G4829), k3_xboole_0(_G4781, _G4829)=k1_xboole_0]
+ (6)  [v1_relat_1(_G5191), - (k5_relat_1(k5_relat_1(_G5191, _G5068), _G5129)=k5_relat_1(_G5191, k3_xboole_0(_G5068, _G5129)))]
+ (7)  [v1_relat_1(_G5535), - (k5_relat_1(_G5535, k1_xboole_0)=k1_xboole_0)]
+ (8)  [- (k3_xboole_0(_G3554, _G3689)=k3_xboole_0(_G3621, _G3758)), _G3554=_G3621, _G3689=_G3758]
+ (9)  [- (k5_relat_1(_G4142, _G4277)=k5_relat_1(_G4209, _G4346)), _G4142=_G4209, _G4277=_G4346]
+ (10)  [- (_G1864=_G1864)]
+ (11)  [_G1963=_G2008, - (_G2008=_G1963)]
+ (12)  [- (_G2196=_G2309), _G2196=_G2252, _G2252=_G2309]
+ (13)  [-v1_relat_1(_G2695), _G2646=_G2695, v1_relat_1(_G2646)]
+ (14)  [-r1_xboole_0(_G2982, _G3119), r1_xboole_0(_G2915, _G3050), _G2915=_G2982, _G3050=_G3119]
+
+Connection Proof:
+-----------------
+1  [k5_relat_1(k5_relat_1(3^[], 1^[]), 2^[])=k1_xboole_0]   (3)  
+1.1  [- (k5_relat_1(k5_relat_1(3^[], 1^[]), 2^[])=k1_xboole_0), k5_relat_1(k5_relat_1(3^[], 1^[]), 2^[])=k5_relat_1(3^[], k3_xboole_0(1^[], 2^[])), k5_relat_1(3^[], k3_xboole_0(1^[], 2^[]))=k1_xboole_0]   (12)  substitution:[[_G2196, _G2309, _G2252], [k5_relat_1(k5_relat_1(3^[], 1^[]), 2^[]), k1_xboole_0, k5_relat_1(3^[], k3_xboole_0(1^[], 2^[]))]]
+1.1.1  [- (k5_relat_1(k5_relat_1(3^[], 1^[]), 2^[])=k5_relat_1(3^[], k3_xboole_0(1^[], 2^[]))), v1_relat_1(3^[])]   (6)  substitution:[[_G5191, _G5068, _G5129], [3^[], 1^[], 2^[]]]
+1.1.1.1  [-v1_relat_1(3^[])]   (1)  
+1.1.2  [- (k5_relat_1(3^[], k3_xboole_0(1^[], 2^[]))=k1_xboole_0), k5_relat_1(3^[], k3_xboole_0(1^[], 2^[]))=k5_relat_1(3^[], k1_xboole_0), k5_relat_1(3^[], k1_xboole_0)=k1_xboole_0]   (12)  substitution:[[_G2196, _G2309, _G2252], [k5_relat_1(3^[], k3_xboole_0(1^[], 2^[])), k1_xboole_0, k5_relat_1(3^[], k1_xboole_0)]]
+1.1.2.1  [- (k5_relat_1(3^[], k3_xboole_0(1^[], 2^[]))=k5_relat_1(3^[], k1_xboole_0)), 3^[]=3^[], k3_xboole_0(1^[], 2^[])=k1_xboole_0]   (9)  substitution:[[_G4142, _G4277, _G4209, _G4346], [3^[], k3_xboole_0(1^[], 2^[]), 3^[], k1_xboole_0]]
+1.1.2.1.1  [- (3^[]=3^[])]   (10)  substitution:[[_G1864], [3^[]]]
+1.1.2.1.2  [- (k3_xboole_0(1^[], 2^[])=k1_xboole_0), r1_xboole_0(1^[], 2^[])]   (4)  substitution:[[_G4781, _G4829], [1^[], 2^[]]]
+1.1.2.1.2.1  [-r1_xboole_0(1^[], 2^[])]   (2)  
+1.1.2.2  [- (k5_relat_1(3^[], k1_xboole_0)=k1_xboole_0), v1_relat_1(3^[])]   (7)  substitution:[[_G5535], [3^[]]]
+1.1.2.2.1  [-v1_relat_1(3^[])]   (1)  
+------------------------------------------------------
+End of proof for t172_relat_1

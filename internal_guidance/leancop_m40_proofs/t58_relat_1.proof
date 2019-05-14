@@ -1,0 +1,24 @@
+
+t58_relat_1 is a Theorem
+Start of proof for t58_relat_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(3^[])]
+ (2)  [r1_tarski(k9_xtuple_0(k5_relat_1(3^[], 2^[])), 2^[])]
+ (3)  [-r1_tarski(_G811, _G867), -r2_hidden(1^[_G867, _G811], _G811)]
+ (4)  [-r1_tarski(_G811, _G867), r2_hidden(1^[_G867, _G811], _G867)]
+ (5)  [r1_tarski(_G811, _G867), r2_hidden(_G981, _G811), -r2_hidden(_G981, _G867)]
+ (6)  [v1_relat_1(_G1341), r2_hidden(_G1204, k9_xtuple_0(k5_relat_1(_G1341, _G1272))), -r2_hidden(_G1204, _G1272)]
+ (7)  [v1_relat_1(_G1341), r2_hidden(_G1204, k9_xtuple_0(k5_relat_1(_G1341, _G1272))), -r2_hidden(_G1204, k9_xtuple_0(_G1341))]
+ (8)  [v1_relat_1(_G1341), -r2_hidden(_G1204, k9_xtuple_0(k5_relat_1(_G1341, _G1272))), r2_hidden(_G1204, _G1272), r2_hidden(_G1204, k9_xtuple_0(_G1341))]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k9_xtuple_0(k5_relat_1(3^[], 2^[])), 2^[])]   (2)  
+1.1  [-r1_tarski(k9_xtuple_0(k5_relat_1(3^[], 2^[])), 2^[]), -r2_hidden(1^[2^[], k9_xtuple_0(k5_relat_1(3^[], 2^[]))], k9_xtuple_0(k5_relat_1(3^[], 2^[])))]   (3)  substitution:[[_G811, _G867], [k9_xtuple_0(k5_relat_1(3^[], 2^[])), 2^[]]]
+1.1.1  [r2_hidden(1^[2^[], k9_xtuple_0(k5_relat_1(3^[], 2^[]))], k9_xtuple_0(k5_relat_1(3^[], 2^[]))), v1_relat_1(3^[]), -r2_hidden(1^[2^[], k9_xtuple_0(k5_relat_1(3^[], 2^[]))], 2^[])]   (6)  substitution:[[_G1204, _G1341, _G1272], [1^[2^[], k9_xtuple_0(k5_relat_1(3^[], 2^[]))], 3^[], 2^[]]]
+1.1.1.1  [-v1_relat_1(3^[])]   (1)  
+1.1.1.2  [r2_hidden(1^[2^[], k9_xtuple_0(k5_relat_1(3^[], 2^[]))], 2^[]), -r1_tarski(k9_xtuple_0(k5_relat_1(3^[], 2^[])), 2^[])]   (4)  substitution:[[_G867, _G811], [2^[], k9_xtuple_0(k5_relat_1(3^[], 2^[]))]]
+1.1.1.2.1  [r1_tarski(k9_xtuple_0(k5_relat_1(3^[], 2^[])), 2^[])]   (2)  
+------------------------------------------------------
+End of proof for t58_relat_1

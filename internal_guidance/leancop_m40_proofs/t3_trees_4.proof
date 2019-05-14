@@ -1,0 +1,60 @@
+
+t3_trees_4 is a Theorem
+Start of proof for t3_trees_4
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k9_xtuple_0(k1_trees_4(2^[]))=k2_trees_1(k6_numbers), k1_funct_1(k1_trees_4(2^[]), k1_xboole_0)=2^[]]
+ (2)  [- (k1_trees_4(_G8717)=k7_funcop_1(k2_trees_1(k6_numbers), _G8717))]
+ (3)  [- (k6_numbers=k1_xboole_0)]
+ (4)  [- (k7_funcop_1(_G8945, _G8990)=k2_funcop_1(_G8945, _G8990))]
+ (5)  [- (k9_xtuple_0(k2_funcop_1(_G9187, _G9244))=_G9187)]
+ (6)  [-r1_tarski(k10_xtuple_0(k2_funcop_1(_G9187, _G9244)), k1_tarski(_G9244))]
+ (7)  [- (k2_trees_1(k6_numbers)=k1_tarski(k1_xboole_0))]
+ (8)  [r2_hidden(_G9705, _G9649), - (k1_funct_1(k2_funcop_1(_G9649, _G9762), _G9705)=_G9762)]
+ (9)  [_G8355=k1_tarski(_G8297), r2_hidden(_G8485, _G8355), - (_G8485=_G8297)]
+ (10)  [_G8355=k1_tarski(_G8297), -r2_hidden(_G8485, _G8355), _G8485=_G8297]
+ (11)  [- (_G8355=k1_tarski(_G8297)), r2_hidden(1^[_G8355, _G8297], _G8355), 1^[_G8355, _G8297]=_G8297]
+ (12)  [- (_G8355=k1_tarski(_G8297)), -r2_hidden(1^[_G8355, _G8297], _G8355), - (1^[_G8355, _G8297]=_G8297)]
+ (13)  [- (_G2948=_G2948)]
+ (14)  [_G3047=_G3092, - (_G3092=_G3047)]
+ (15)  [- (_G3280=_G3393), _G3280=_G3336, _G3336=_G3393]
+ (16)  [-r1_tarski(_G3797, _G3934), r1_tarski(_G3730, _G3865), _G3730=_G3797, _G3865=_G3934]
+ (17)  [-r2_hidden(_G4385, _G4522), r2_hidden(_G4318, _G4453), _G4318=_G4385, _G4453=_G4522]
+ (18)  [- (k7_funcop_1(_G4957, _G5092)=k7_funcop_1(_G5024, _G5161)), _G4957=_G5024, _G5092=_G5161]
+ (19)  [_G5554=_G5603, - (k10_xtuple_0(_G5554)=k10_xtuple_0(_G5603))]
+ (20)  [_G5832=_G5881, - (k1_tarski(_G5832)=k1_tarski(_G5881))]
+ (21)  [- (k2_funcop_1(_G6110, _G6245)=k2_funcop_1(_G6177, _G6314)), _G6110=_G6177, _G6245=_G6314]
+ (22)  [_G6707=_G6756, - (k9_xtuple_0(_G6707)=k9_xtuple_0(_G6756))]
+ (23)  [_G6985=_G7034, - (k2_trees_1(_G6985)=k2_trees_1(_G7034))]
+ (24)  [_G7851=_G7900, - (k1_trees_4(_G7851)=k1_trees_4(_G7900))]
+ (25)  [- (k1_funct_1(_G7263, _G7398)=k1_funct_1(_G7330, _G7467)), _G7263=_G7330, _G7398=_G7467]
+
+Connection Proof:
+-----------------
+1  [k9_xtuple_0(k1_trees_4(2^[]))=k2_trees_1(k6_numbers), k1_funct_1(k1_trees_4(2^[]), k1_xboole_0)=2^[]]   (1)  
+1.1  [- (k9_xtuple_0(k1_trees_4(2^[]))=k2_trees_1(k6_numbers)), k9_xtuple_0(k1_trees_4(2^[]))=k9_xtuple_0(k7_funcop_1(k2_trees_1(k6_numbers), 2^[])), k9_xtuple_0(k7_funcop_1(k2_trees_1(k6_numbers), 2^[]))=k2_trees_1(k6_numbers)]   (15)  substitution:[[_G3280, _G3393, _G3336], [k9_xtuple_0(k1_trees_4(2^[])), k2_trees_1(k6_numbers), k9_xtuple_0(k7_funcop_1(k2_trees_1(k6_numbers), 2^[]))]]
+1.1.1  [- (k9_xtuple_0(k1_trees_4(2^[]))=k9_xtuple_0(k7_funcop_1(k2_trees_1(k6_numbers), 2^[]))), k9_xtuple_0(k1_trees_4(2^[]))=k9_xtuple_0(k7_funcop_1(k2_trees_1(k6_numbers), 2^[])), k9_xtuple_0(k7_funcop_1(k2_trees_1(k6_numbers), 2^[]))=k9_xtuple_0(k7_funcop_1(k2_trees_1(k6_numbers), 2^[]))]   (15)  substitution:[[_G3280, _G3393, _G3336], [k9_xtuple_0(k1_trees_4(2^[])), k9_xtuple_0(k7_funcop_1(k2_trees_1(k6_numbers), 2^[])), k9_xtuple_0(k7_funcop_1(k2_trees_1(k6_numbers), 2^[]))]]
+1.1.1.1  [- (k9_xtuple_0(k1_trees_4(2^[]))=k9_xtuple_0(k7_funcop_1(k2_trees_1(k6_numbers), 2^[]))), k1_trees_4(2^[])=k7_funcop_1(k2_trees_1(k6_numbers), 2^[])]   (22)  substitution:[[_G6707, _G6756], [k1_trees_4(2^[]), k7_funcop_1(k2_trees_1(k6_numbers), 2^[])]]
+1.1.1.1.1  [- (k1_trees_4(2^[])=k7_funcop_1(k2_trees_1(k6_numbers), 2^[]))]   (2)  substitution:[[_G8717], [2^[]]]
+1.1.1.2  [- (k9_xtuple_0(k7_funcop_1(k2_trees_1(k6_numbers), 2^[]))=k9_xtuple_0(k7_funcop_1(k2_trees_1(k6_numbers), 2^[])))]   (13)  substitution:[[_G2948], [k9_xtuple_0(k7_funcop_1(k2_trees_1(k6_numbers), 2^[]))]]
+1.1.2  [- (k9_xtuple_0(k7_funcop_1(k2_trees_1(k6_numbers), 2^[]))=k2_trees_1(k6_numbers)), k9_xtuple_0(k7_funcop_1(k2_trees_1(k6_numbers), 2^[]))=k9_xtuple_0(k2_funcop_1(k2_trees_1(k6_numbers), 2^[])), k9_xtuple_0(k2_funcop_1(k2_trees_1(k6_numbers), 2^[]))=k2_trees_1(k6_numbers)]   (15)  substitution:[[_G3280, _G3393, _G3336], [k9_xtuple_0(k7_funcop_1(k2_trees_1(k6_numbers), 2^[])), k2_trees_1(k6_numbers), k9_xtuple_0(k2_funcop_1(k2_trees_1(k6_numbers), 2^[]))]]
+1.1.2.1  [- (k9_xtuple_0(k7_funcop_1(k2_trees_1(k6_numbers), 2^[]))=k9_xtuple_0(k2_funcop_1(k2_trees_1(k6_numbers), 2^[]))), k7_funcop_1(k2_trees_1(k6_numbers), 2^[])=k2_funcop_1(k2_trees_1(k6_numbers), 2^[])]   (22)  substitution:[[_G6707, _G6756], [k7_funcop_1(k2_trees_1(k6_numbers), 2^[]), k2_funcop_1(k2_trees_1(k6_numbers), 2^[])]]
+1.1.2.1.1  [- (k7_funcop_1(k2_trees_1(k6_numbers), 2^[])=k2_funcop_1(k2_trees_1(k6_numbers), 2^[]))]   (4)  substitution:[[_G8945, _G8990], [k2_trees_1(k6_numbers), 2^[]]]
+1.1.2.2  [- (k9_xtuple_0(k2_funcop_1(k2_trees_1(k6_numbers), 2^[]))=k2_trees_1(k6_numbers))]   (5)  substitution:[[_G9187, _G9244], [k2_trees_1(k6_numbers), 2^[]]]
+1.2  [- (k1_funct_1(k1_trees_4(2^[]), k1_xboole_0)=2^[]), k1_funct_1(k1_trees_4(2^[]), k1_xboole_0)=k1_funct_1(k7_funcop_1(k2_trees_1(k6_numbers), 2^[]), k1_xboole_0), k1_funct_1(k7_funcop_1(k2_trees_1(k6_numbers), 2^[]), k1_xboole_0)=2^[]]   (15)  substitution:[[_G3280, _G3393, _G3336], [k1_funct_1(k1_trees_4(2^[]), k1_xboole_0), 2^[], k1_funct_1(k7_funcop_1(k2_trees_1(k6_numbers), 2^[]), k1_xboole_0)]]
+1.2.1  [- (k1_funct_1(k1_trees_4(2^[]), k1_xboole_0)=k1_funct_1(k7_funcop_1(k2_trees_1(k6_numbers), 2^[]), k1_xboole_0)), k1_funct_1(k1_trees_4(2^[]), k1_xboole_0)=k1_funct_1(k7_funcop_1(k2_trees_1(k6_numbers), 2^[]), k1_xboole_0), k1_funct_1(k7_funcop_1(k2_trees_1(k6_numbers), 2^[]), k1_xboole_0)=k1_funct_1(k7_funcop_1(k2_trees_1(k6_numbers), 2^[]), k1_xboole_0)]   (15)  substitution:[[_G3280, _G3393, _G3336], [k1_funct_1(k1_trees_4(2^[]), k1_xboole_0), k1_funct_1(k7_funcop_1(k2_trees_1(k6_numbers), 2^[]), k1_xboole_0), k1_funct_1(k7_funcop_1(k2_trees_1(k6_numbers), 2^[]), k1_xboole_0)]]
+1.2.1.1  [- (k1_funct_1(k1_trees_4(2^[]), k1_xboole_0)=k1_funct_1(k7_funcop_1(k2_trees_1(k6_numbers), 2^[]), k1_xboole_0)), k1_trees_4(2^[])=k7_funcop_1(k2_trees_1(k6_numbers), 2^[]), k1_xboole_0=k1_xboole_0]   (25)  substitution:[[_G7263, _G7398, _G7330, _G7467], [k1_trees_4(2^[]), k1_xboole_0, k7_funcop_1(k2_trees_1(k6_numbers), 2^[]), k1_xboole_0]]
+1.2.1.1.1  [- (k1_trees_4(2^[])=k7_funcop_1(k2_trees_1(k6_numbers), 2^[]))]   (2)  substitution:[[_G8717], [2^[]]]
+1.2.1.1.2  [- (k1_xboole_0=k1_xboole_0)]   (13)  substitution:[[_G2948], [k1_xboole_0]]
+1.2.1.2  [- (k1_funct_1(k7_funcop_1(k2_trees_1(k6_numbers), 2^[]), k1_xboole_0)=k1_funct_1(k7_funcop_1(k2_trees_1(k6_numbers), 2^[]), k1_xboole_0))]   (13)  substitution:[[_G2948], [k1_funct_1(k7_funcop_1(k2_trees_1(k6_numbers), 2^[]), k1_xboole_0)]]
+1.2.2  [- (k1_funct_1(k7_funcop_1(k2_trees_1(k6_numbers), 2^[]), k1_xboole_0)=2^[]), k1_funct_1(k7_funcop_1(k2_trees_1(k6_numbers), 2^[]), k1_xboole_0)=k1_funct_1(k2_funcop_1(k2_trees_1(k6_numbers), 2^[]), k6_numbers), k1_funct_1(k2_funcop_1(k2_trees_1(k6_numbers), 2^[]), k6_numbers)=2^[]]   (15)  substitution:[[_G3280, _G3393, _G3336], [k1_funct_1(k7_funcop_1(k2_trees_1(k6_numbers), 2^[]), k1_xboole_0), 2^[], k1_funct_1(k2_funcop_1(k2_trees_1(k6_numbers), 2^[]), k6_numbers)]]
+1.2.2.1  [- (k1_funct_1(k7_funcop_1(k2_trees_1(k6_numbers), 2^[]), k1_xboole_0)=k1_funct_1(k2_funcop_1(k2_trees_1(k6_numbers), 2^[]), k6_numbers)), k7_funcop_1(k2_trees_1(k6_numbers), 2^[])=k2_funcop_1(k2_trees_1(k6_numbers), 2^[]), k1_xboole_0=k6_numbers]   (25)  substitution:[[_G7263, _G7398, _G7330, _G7467], [k7_funcop_1(k2_trees_1(k6_numbers), 2^[]), k1_xboole_0, k2_funcop_1(k2_trees_1(k6_numbers), 2^[]), k6_numbers]]
+1.2.2.1.1  [- (k7_funcop_1(k2_trees_1(k6_numbers), 2^[])=k2_funcop_1(k2_trees_1(k6_numbers), 2^[]))]   (4)  substitution:[[_G8945, _G8990], [k2_trees_1(k6_numbers), 2^[]]]
+1.2.2.1.2  [- (k1_xboole_0=k6_numbers), k6_numbers=k1_xboole_0]   (14)  substitution:[[_G3092, _G3047], [k1_xboole_0, k6_numbers]]
+1.2.2.1.2.1  [- (k6_numbers=k1_xboole_0)]   (3)  
+1.2.2.2  [- (k1_funct_1(k2_funcop_1(k2_trees_1(k6_numbers), 2^[]), k6_numbers)=2^[]), r2_hidden(k6_numbers, k2_trees_1(k6_numbers))]   (8)  substitution:[[_G9649, _G9762, _G9705], [k2_trees_1(k6_numbers), 2^[], k6_numbers]]
+1.2.2.2.1  [-r2_hidden(k6_numbers, k2_trees_1(k6_numbers)), k2_trees_1(k6_numbers)=k1_tarski(k1_xboole_0), k6_numbers=k1_xboole_0]   (10)  substitution:[[_G8485, _G8355, _G8297], [k6_numbers, k2_trees_1(k6_numbers), k1_xboole_0]]
+1.2.2.2.1.1  [- (k2_trees_1(k6_numbers)=k1_tarski(k1_xboole_0))]   (7)  
+1.2.2.2.1.2  [- (k6_numbers=k1_xboole_0)]   (3)  
+------------------------------------------------------
+End of proof for t3_trees_4

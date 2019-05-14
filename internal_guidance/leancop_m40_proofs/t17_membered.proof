@@ -1,0 +1,80 @@
+
+t17_membered is a Theorem
+Start of proof for t17_membered
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v5_membered(5^[])]
+ (2)  [5^[]=k4_numbers]
+ (3)  [v1_int_1(_G8114), -r2_hidden(_G8114, 5^[])]
+ (4)  [_G5048=_G5097, - (k1_real_1(_G5048)=k1_real_1(_G5097))]
+ (5)  [- (_G2019=_G2019)]
+ (6)  [_G2118=_G2163, - (_G2163=_G2118)]
+ (7)  [- (_G2351=_G2464), _G2351=_G2407, _G2407=_G2464]
+ (8)  [-m2_subset_1(_G2886, _G3059, _G3236), m2_subset_1(_G2801, _G2972, _G3147), _G2801=_G2886, _G2972=_G3059, _G3147=_G3236]
+ (9)  [-v5_membered(_G3878), _G3829=_G3878, v5_membered(_G3829)]
+ (10)  [-v1_int_1(_G4156), _G4107=_G4156, v1_int_1(_G4107)]
+ (11)  [-r2_hidden(_G4443, _G4580), r2_hidden(_G4376, _G4511), _G4376=_G4443, _G4511=_G4580]
+ (12)  [v1_int_1(_G6053), -r2_hidden(_G6053, k4_numbers)]
+ (13)  [-v1_int_1(_G6053), r2_hidden(_G6053, k4_numbers)]
+ (14)  [-v5_membered(_G6201), -r2_hidden(4^[_G6201], _G6201)]
+ (15)  [-v5_membered(_G6201), v1_int_1(4^[_G6201])]
+ (16)  [v5_membered(_G6201), r2_hidden(_G6282, _G6201), -v1_int_1(_G6282)]
+ (17)  [_G5347=k4_numbers, r2_hidden(_G5481, _G5347), -m2_subset_1(1^[_G5481, _G5347], k1_numbers, k5_numbers)]
+ (18)  [_G5347=k4_numbers, r2_hidden(_G5481, _G5347), - (_G5481=1^[_G5481, _G5347]), - (_G5481=k1_real_1(1^[_G5481, _G5347]))]
+ (19)  [_G5347=k4_numbers, -r2_hidden(_G5481, _G5347), m2_subset_1(_G5616, k1_numbers, k5_numbers), _G5481=_G5616]
+ (20)  [_G5347=k4_numbers, -r2_hidden(_G5481, _G5347), m2_subset_1(_G5616, k1_numbers, k5_numbers), _G5481=k1_real_1(_G5616)]
+ (21)  [- (_G5347=k4_numbers), r2_hidden(2^[_G5347], _G5347), m2_subset_1(_G7441, k1_numbers, k5_numbers), 2^[_G5347]=_G7441]
+ (22)  [- (_G5347=k4_numbers), r2_hidden(2^[_G5347], _G5347), m2_subset_1(_G7441, k1_numbers, k5_numbers), 2^[_G5347]=k1_real_1(_G7441)]
+ (23)  [- (_G5347=k4_numbers), -r2_hidden(2^[_G5347], _G5347), -m2_subset_1(3^[_G5347], k1_numbers, k5_numbers)]
+ (24)  [- (_G5347=k4_numbers), -r2_hidden(2^[_G5347], _G5347), - (2^[_G5347]=3^[_G5347]), - (2^[_G5347]=k1_real_1(3^[_G5347]))]
+
+Connection Proof:
+-----------------
+1  [5^[]=k4_numbers]   (2)  
+1.1  [- (5^[]=k4_numbers), -r2_hidden(2^[5^[]], 5^[]), - (2^[5^[]]=3^[5^[]]), - (2^[5^[]]=k1_real_1(3^[5^[]]))]   (24)  substitution:[[_G5347], [5^[]]]
+1.1.1  [r2_hidden(2^[5^[]], 5^[]), - (5^[]=k4_numbers), m2_subset_1(1^[2^[5^[]], k4_numbers], k1_numbers, k5_numbers), 2^[5^[]]=1^[2^[5^[]], k4_numbers]]   (21)  substitution:[[_G5347, _G7441], [5^[], 1^[2^[5^[]], k4_numbers]]]
+1.1.1.1  [5^[]=k4_numbers]   (2)  
+1.1.1.2  [-m2_subset_1(1^[2^[5^[]], k4_numbers], k1_numbers, k5_numbers), k4_numbers=k4_numbers, r2_hidden(2^[5^[]], k4_numbers)]   (17)  substitution:[[_G5481, _G5347], [2^[5^[]], k4_numbers]]
+1.1.1.2.1  [- (k4_numbers=k4_numbers)]   (5)  substitution:[[_G2019], [k4_numbers]]
+1.1.1.2.2  [-r2_hidden(2^[5^[]], k4_numbers), v1_int_1(2^[5^[]])]   (12)  substitution:[[_G6053], [2^[5^[]]]]
+1.1.1.2.2.1  [-v1_int_1(2^[5^[]]), v5_membered(5^[]), r2_hidden(2^[5^[]], 5^[])]   (16)  substitution:[[_G6282, _G6201], [2^[5^[]], 5^[]]]
+1.1.1.2.2.1.1  [-v5_membered(5^[])]   (1)  
+1.1.1.2.2.1.2  [-r2_hidden(2^[5^[]], 5^[])]   (reduction:1.1)  
+1.1.1.3  [- (2^[5^[]]=1^[2^[5^[]], k4_numbers]), k4_numbers=k4_numbers, r2_hidden(2^[5^[]], k4_numbers), - (2^[5^[]]=k1_real_1(1^[2^[5^[]], k4_numbers]))]   (18)  substitution:[[_G5481, _G5347], [2^[5^[]], k4_numbers]]
+1.1.1.3.1  [- (k4_numbers=k4_numbers)]   (5)  substitution:[[_G2019], [k4_numbers]]
+1.1.1.3.2  [-r2_hidden(2^[5^[]], k4_numbers), v1_int_1(2^[5^[]])]   (12)  substitution:[[_G6053], [2^[5^[]]]]
+1.1.1.3.2.1  [-v1_int_1(2^[5^[]]), v5_membered(5^[]), r2_hidden(2^[5^[]], 5^[])]   (16)  substitution:[[_G6282, _G6201], [2^[5^[]], 5^[]]]
+1.1.1.3.2.1.1  [-v5_membered(5^[])]   (1)  
+1.1.1.3.2.1.2  [-r2_hidden(2^[5^[]], 5^[])]   (reduction:1.1)  
+1.1.1.3.3  [2^[5^[]]=k1_real_1(1^[2^[5^[]], k4_numbers]), - (2^[5^[]]=k1_real_1(1^[2^[5^[]], k4_numbers])), 2^[5^[]]=2^[5^[]]]   (7)  substitution:[[_G2407, _G2464, _G2351], [2^[5^[]], k1_real_1(1^[2^[5^[]], k4_numbers]), 2^[5^[]]]]
+1.1.1.3.3.1  [2^[5^[]]=k1_real_1(1^[2^[5^[]], k4_numbers]), - (5^[]=k4_numbers), r2_hidden(2^[5^[]], 5^[]), m2_subset_1(1^[2^[5^[]], k4_numbers], k1_numbers, k5_numbers)]   (22)  substitution:[[_G5347, _G7441], [5^[], 1^[2^[5^[]], k4_numbers]]]
+1.1.1.3.3.1.1  [5^[]=k4_numbers]   (2)  
+1.1.1.3.3.1.2  [-r2_hidden(2^[5^[]], 5^[])]   (reduction:1.1)  
+1.1.1.3.3.1.3  [-m2_subset_1(1^[2^[5^[]], k4_numbers], k1_numbers, k5_numbers)]   (lemmata:1.1.1)  
+1.1.1.3.3.2  [- (2^[5^[]]=2^[5^[]])]   (5)  substitution:[[_G2019], [2^[5^[]]]]
+1.1.2  [2^[5^[]]=3^[5^[]], - (3^[5^[]]=2^[5^[]])]   (6)  substitution:[[_G2118, _G2163], [2^[5^[]], 3^[5^[]]]]
+1.1.2.1  [3^[5^[]]=2^[5^[]], -r2_hidden(2^[5^[]], k4_numbers), r2_hidden(3^[5^[]], k4_numbers), k4_numbers=k4_numbers]   (11)  substitution:[[_G4376, _G4443, _G4580, _G4511], [3^[5^[]], 2^[5^[]], k4_numbers, k4_numbers]]
+1.1.2.1.1  [r2_hidden(2^[5^[]], k4_numbers), -v1_int_1(2^[5^[]])]   (13)  substitution:[[_G6053], [2^[5^[]]]]
+1.1.2.1.1.1  [v1_int_1(2^[5^[]]), -r2_hidden(2^[5^[]], 5^[])]   (3)  substitution:[[_G8114], [2^[5^[]]]]
+1.1.2.1.1.1.1  [r2_hidden(2^[5^[]], 5^[])]   (lemmata:1.1)  
+1.1.2.1.2  [-r2_hidden(3^[5^[]], k4_numbers), k4_numbers=k4_numbers, m2_subset_1(3^[5^[]], k1_numbers, k5_numbers), 3^[5^[]]=3^[5^[]]]   (19)  substitution:[[_G5481, _G5347, _G5616], [3^[5^[]], k4_numbers, 3^[5^[]]]]
+1.1.2.1.2.1  [- (k4_numbers=k4_numbers)]   (5)  substitution:[[_G2019], [k4_numbers]]
+1.1.2.1.2.2  [-m2_subset_1(3^[5^[]], k1_numbers, k5_numbers), - (5^[]=k4_numbers), -r2_hidden(2^[5^[]], 5^[])]   (23)  substitution:[[_G5347], [5^[]]]
+1.1.2.1.2.2.1  [5^[]=k4_numbers]   (2)  
+1.1.2.1.2.2.2  [r2_hidden(2^[5^[]], 5^[])]   (lemmata:1.1)  
+1.1.2.1.2.3  [- (3^[5^[]]=3^[5^[]])]   (5)  substitution:[[_G2019], [3^[5^[]]]]
+1.1.2.1.3  [- (k4_numbers=k4_numbers)]   (5)  substitution:[[_G2019], [k4_numbers]]
+1.1.3  [2^[5^[]]=k1_real_1(3^[5^[]]), - (k1_real_1(3^[5^[]])=2^[5^[]])]   (6)  substitution:[[_G2118, _G2163], [2^[5^[]], k1_real_1(3^[5^[]])]]
+1.1.3.1  [k1_real_1(3^[5^[]])=2^[5^[]], -r2_hidden(2^[5^[]], k4_numbers), r2_hidden(k1_real_1(3^[5^[]]), k4_numbers), k4_numbers=k4_numbers]   (11)  substitution:[[_G4376, _G4443, _G4580, _G4511], [k1_real_1(3^[5^[]]), 2^[5^[]], k4_numbers, k4_numbers]]
+1.1.3.1.1  [r2_hidden(2^[5^[]], k4_numbers), -v1_int_1(2^[5^[]])]   (13)  substitution:[[_G6053], [2^[5^[]]]]
+1.1.3.1.1.1  [v1_int_1(2^[5^[]]), -r2_hidden(2^[5^[]], 5^[])]   (3)  substitution:[[_G8114], [2^[5^[]]]]
+1.1.3.1.1.1.1  [r2_hidden(2^[5^[]], 5^[])]   (lemmata:1.1)  
+1.1.3.1.2  [-r2_hidden(k1_real_1(3^[5^[]]), k4_numbers), k4_numbers=k4_numbers, m2_subset_1(3^[5^[]], k1_numbers, k5_numbers), k1_real_1(3^[5^[]])=k1_real_1(3^[5^[]])]   (20)  substitution:[[_G5481, _G5347, _G5616], [k1_real_1(3^[5^[]]), k4_numbers, 3^[5^[]]]]
+1.1.3.1.2.1  [- (k4_numbers=k4_numbers)]   (5)  substitution:[[_G2019], [k4_numbers]]
+1.1.3.1.2.2  [-m2_subset_1(3^[5^[]], k1_numbers, k5_numbers), - (5^[]=k4_numbers), -r2_hidden(2^[5^[]], 5^[])]   (23)  substitution:[[_G5347], [5^[]]]
+1.1.3.1.2.2.1  [5^[]=k4_numbers]   (2)  
+1.1.3.1.2.2.2  [r2_hidden(2^[5^[]], 5^[])]   (lemmata:1.1)  
+1.1.3.1.2.3  [- (k1_real_1(3^[5^[]])=k1_real_1(3^[5^[]]))]   (5)  substitution:[[_G2019], [k1_real_1(3^[5^[]])]]
+1.1.3.1.3  [- (k4_numbers=k4_numbers)]   (5)  substitution:[[_G2019], [k4_numbers]]
+------------------------------------------------------
+End of proof for t17_membered

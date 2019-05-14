@@ -1,0 +1,27 @@
+
+l1_symsp_1 is a Theorem
+Start of proof for l1_symsp_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [m1_subset_1(k6_numbers, k1_tarski(k6_numbers))]
+ (2)  [r2_hidden(_G3986, _G4031), -m1_subset_1(_G3986, _G4031)]
+ (3)  [_G3633=k1_tarski(_G3575), r2_hidden(_G3763, _G3633), - (_G3763=_G3575)]
+ (4)  [_G3633=k1_tarski(_G3575), -r2_hidden(_G3763, _G3633), _G3763=_G3575]
+ (5)  [- (_G3633=k1_tarski(_G3575)), r2_hidden(1^[_G3633, _G3575], _G3633), 1^[_G3633, _G3575]=_G3575]
+ (6)  [- (_G3633=k1_tarski(_G3575)), -r2_hidden(1^[_G3633, _G3575], _G3633), - (1^[_G3633, _G3575]=_G3575)]
+ (7)  [_G3276=_G3325, - (k1_tarski(_G3276)=k1_tarski(_G3325))]
+ (8)  [- (_G1276=_G1276)]
+ (9)  [_G1375=_G1420, - (_G1420=_G1375)]
+ (10)  [- (_G1608=_G1721), _G1608=_G1664, _G1664=_G1721]
+ (11)  [-r2_hidden(_G2125, _G2262), r2_hidden(_G2058, _G2193), _G2058=_G2125, _G2193=_G2262]
+ (12)  [-m1_subset_1(_G2713, _G2850), m1_subset_1(_G2646, _G2781), _G2646=_G2713, _G2781=_G2850]
+
+Connection Proof:
+-----------------
+1  [m1_subset_1(k6_numbers, k1_tarski(k6_numbers))]   (1)  
+1.1  [-m1_subset_1(k6_numbers, k1_tarski(k6_numbers)), r2_hidden(k6_numbers, k1_tarski(k6_numbers))]   (2)  substitution:[[_G3986, _G4031], [k6_numbers, k1_tarski(k6_numbers)]]
+1.1.1  [-r2_hidden(k6_numbers, k1_tarski(k6_numbers)), k1_tarski(k6_numbers)=k1_tarski(k6_numbers), k6_numbers=k6_numbers]   (4)  substitution:[[_G3763, _G3633, _G3575], [k6_numbers, k1_tarski(k6_numbers), k6_numbers]]
+1.1.1.1  [- (k1_tarski(k6_numbers)=k1_tarski(k6_numbers))]   (8)  substitution:[[_G1276], [k1_tarski(k6_numbers)]]
+1.1.1.2  [- (k6_numbers=k6_numbers)]   (8)  substitution:[[_G1276], [k6_numbers]]
+------------------------------------------------------
+End of proof for l1_symsp_1

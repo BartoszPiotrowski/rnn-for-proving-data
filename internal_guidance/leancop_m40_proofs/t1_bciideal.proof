@@ -1,0 +1,57 @@
+
+t1_bciideal is a Theorem
+Start of proof for t1_bciideal
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(1^[])]
+ (2)  [-v3_bcialg_1(1^[])]
+ (3)  [-v4_bcialg_1(1^[])]
+ (4)  [-v5_bcialg_1(1^[])]
+ (5)  [-v7_bcialg_1(1^[])]
+ (6)  [-l2_bcialg_1(1^[])]
+ (7)  [-m1_subset_1(2^[], u1_struct_0(1^[]))]
+ (8)  [-m1_subset_1(3^[], u1_struct_0(1^[]))]
+ (9)  [-m1_subset_1(4^[], u1_struct_0(1^[]))]
+ (10)  [-m1_subset_1(5^[], u1_struct_0(1^[]))]
+ (11)  [-r1_bcialg_1(1^[], 2^[], 3^[])]
+ (12)  [r1_bcialg_1(1^[], k1_bcialg_1(1^[], 5^[], k1_bcialg_1(1^[], 4^[], 2^[])), k1_bcialg_1(1^[], 5^[], k1_bcialg_1(1^[], 4^[], 3^[])))]
+ (13)  [-m1_subset_1(k1_bcialg_1(_G1430, _G1501, _G1573), u1_struct_0(_G1430)), l1_bcialg_1(_G1430), m1_subset_1(_G1501, u1_struct_0(_G1430)), m1_subset_1(_G1573, u1_struct_0(_G1430))]
+ (14)  [l2_bcialg_1(_G2060), -l1_bcialg_1(_G2060)]
+ (15)  [l2_bcialg_1(_G2060), -l2_struct_0(_G2060)]
+ (16)  [-r1_bcialg_1(_G2240, k1_bcialg_1(_G2240, _G2687, _G3032), k1_bcialg_1(_G2240, _G2863, _G3032)), r1_bcialg_1(_G2240, _G2687, _G2863), m1_subset_1(_G3032, u1_struct_0(_G2240)), m1_subset_1(_G2863, u1_struct_0(_G2240)), m1_subset_1(_G2687, u1_struct_0(_G2240)), -v2_struct_0(_G2240), v3_bcialg_1(_G2240), v4_bcialg_1(_G2240), v5_bcialg_1(_G2240), v7_bcialg_1(_G2240), l2_bcialg_1(_G2240)]
+ (17)  [-r1_bcialg_1(_G2240, k1_bcialg_1(_G2240, _G3032, _G2863), k1_bcialg_1(_G2240, _G3032, _G2687)), r1_bcialg_1(_G2240, _G2687, _G2863), m1_subset_1(_G3032, u1_struct_0(_G2240)), m1_subset_1(_G2863, u1_struct_0(_G2240)), m1_subset_1(_G2687, u1_struct_0(_G2240)), -v2_struct_0(_G2240), v3_bcialg_1(_G2240), v4_bcialg_1(_G2240), v5_bcialg_1(_G2240), v7_bcialg_1(_G2240), l2_bcialg_1(_G2240)]
+
+Connection Proof:
+-----------------
+1  [v2_struct_0(1^[])]   (1)  
+1.1  [-v2_struct_0(1^[]), -r1_bcialg_1(1^[], k1_bcialg_1(1^[], 5^[], k1_bcialg_1(1^[], 4^[], 2^[])), k1_bcialg_1(1^[], 5^[], k1_bcialg_1(1^[], 4^[], 3^[]))), r1_bcialg_1(1^[], k1_bcialg_1(1^[], 4^[], 3^[]), k1_bcialg_1(1^[], 4^[], 2^[])), m1_subset_1(5^[], u1_struct_0(1^[])), m1_subset_1(k1_bcialg_1(1^[], 4^[], 2^[]), u1_struct_0(1^[])), m1_subset_1(k1_bcialg_1(1^[], 4^[], 3^[]), u1_struct_0(1^[])), v3_bcialg_1(1^[]), v4_bcialg_1(1^[]), v5_bcialg_1(1^[]), v7_bcialg_1(1^[]), l2_bcialg_1(1^[])]   (17)  substitution:[[_G2240, _G3032, _G2863, _G2687], [1^[], 5^[], k1_bcialg_1(1^[], 4^[], 2^[]), k1_bcialg_1(1^[], 4^[], 3^[])]]
+1.1.1  [r1_bcialg_1(1^[], k1_bcialg_1(1^[], 5^[], k1_bcialg_1(1^[], 4^[], 2^[])), k1_bcialg_1(1^[], 5^[], k1_bcialg_1(1^[], 4^[], 3^[])))]   (12)  
+1.1.2  [-r1_bcialg_1(1^[], k1_bcialg_1(1^[], 4^[], 3^[]), k1_bcialg_1(1^[], 4^[], 2^[])), r1_bcialg_1(1^[], 2^[], 3^[]), m1_subset_1(4^[], u1_struct_0(1^[])), m1_subset_1(3^[], u1_struct_0(1^[])), m1_subset_1(2^[], u1_struct_0(1^[])), -v2_struct_0(1^[]), v3_bcialg_1(1^[]), v4_bcialg_1(1^[]), v5_bcialg_1(1^[]), v7_bcialg_1(1^[]), l2_bcialg_1(1^[])]   (17)  substitution:[[_G2240, _G3032, _G2863, _G2687], [1^[], 4^[], 3^[], 2^[]]]
+1.1.2.1  [-r1_bcialg_1(1^[], 2^[], 3^[])]   (11)  
+1.1.2.2  [-m1_subset_1(4^[], u1_struct_0(1^[]))]   (9)  
+1.1.2.3  [-m1_subset_1(3^[], u1_struct_0(1^[]))]   (8)  
+1.1.2.4  [-m1_subset_1(2^[], u1_struct_0(1^[]))]   (7)  
+1.1.2.5  [v2_struct_0(1^[])]   (1)  
+1.1.2.6  [-v3_bcialg_1(1^[])]   (2)  
+1.1.2.7  [-v4_bcialg_1(1^[])]   (3)  
+1.1.2.8  [-v5_bcialg_1(1^[])]   (4)  
+1.1.2.9  [-v7_bcialg_1(1^[])]   (5)  
+1.1.2.10  [-l2_bcialg_1(1^[])]   (6)  
+1.1.3  [-m1_subset_1(5^[], u1_struct_0(1^[]))]   (10)  
+1.1.4  [-m1_subset_1(k1_bcialg_1(1^[], 4^[], 2^[]), u1_struct_0(1^[])), l1_bcialg_1(1^[]), m1_subset_1(4^[], u1_struct_0(1^[])), m1_subset_1(2^[], u1_struct_0(1^[]))]   (13)  substitution:[[_G1430, _G1501, _G1573], [1^[], 4^[], 2^[]]]
+1.1.4.1  [-l1_bcialg_1(1^[]), l2_bcialg_1(1^[])]   (14)  substitution:[[_G2060], [1^[]]]
+1.1.4.1.1  [-l2_bcialg_1(1^[])]   (6)  
+1.1.4.2  [-m1_subset_1(4^[], u1_struct_0(1^[]))]   (9)  
+1.1.4.3  [-m1_subset_1(2^[], u1_struct_0(1^[]))]   (7)  
+1.1.5  [-m1_subset_1(k1_bcialg_1(1^[], 4^[], 3^[]), u1_struct_0(1^[])), l1_bcialg_1(1^[]), m1_subset_1(4^[], u1_struct_0(1^[])), m1_subset_1(3^[], u1_struct_0(1^[]))]   (13)  substitution:[[_G1430, _G1501, _G1573], [1^[], 4^[], 3^[]]]
+1.1.5.1  [-l1_bcialg_1(1^[]), l2_bcialg_1(1^[])]   (14)  substitution:[[_G2060], [1^[]]]
+1.1.5.1.1  [-l2_bcialg_1(1^[])]   (6)  
+1.1.5.2  [-m1_subset_1(4^[], u1_struct_0(1^[]))]   (9)  
+1.1.5.3  [-m1_subset_1(3^[], u1_struct_0(1^[]))]   (8)  
+1.1.6  [-v3_bcialg_1(1^[])]   (2)  
+1.1.7  [-v4_bcialg_1(1^[])]   (3)  
+1.1.8  [-v5_bcialg_1(1^[])]   (4)  
+1.1.9  [-v7_bcialg_1(1^[])]   (5)  
+1.1.10  [-l2_bcialg_1(1^[])]   (6)  
+------------------------------------------------------
+End of proof for t1_bciideal

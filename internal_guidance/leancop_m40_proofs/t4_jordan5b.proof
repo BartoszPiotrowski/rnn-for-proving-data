@@ -1,0 +1,43 @@
+
+t4_jordan5b is a Theorem
+Start of proof for t4_jordan5b
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xreal_0(1^[])]
+ (2)  [-r2_hidden(1^[], u1_struct_0(k17_borsuk_1))]
+ (3)  [r2_hidden(k9_real_1(np__1, 1^[]), u1_struct_0(k17_borsuk_1))]
+ (4)  [v1_xreal_0(_G4992), -r2_hidden(_G4992, k1_numbers)]
+ (5)  [-v1_xreal_0(_G4992), r2_hidden(_G4992, k1_numbers)]
+ (6)  [- (k5_topmetr=k17_borsuk_1)]
+ (7)  [r2_hidden(_G5534, _G5579), -m1_subset_1(_G5534, _G5579)]
+ (8)  [m1_subset_1(_G5149, k1_numbers), r2_hidden(_G5149, u1_struct_0(k5_topmetr)), -r2_hidden(k9_real_1(np__1, _G5149), u1_struct_0(k5_topmetr))]
+ (9)  [_G4672=_G4721, - (u1_struct_0(_G4672)=u1_struct_0(_G4721))]
+ (10)  [- (k9_real_1(_G4084, _G4219)=k9_real_1(_G4151, _G4288)), _G4084=_G4151, _G4219=_G4288]
+ (11)  [- (_G1776=_G1776)]
+ (12)  [_G1875=_G1920, - (_G1920=_G1875)]
+ (13)  [- (_G2108=_G2221), _G2108=_G2164, _G2164=_G2221]
+ (14)  [-m1_subset_1(_G2625, _G2762), m1_subset_1(_G2558, _G2693), _G2558=_G2625, _G2693=_G2762]
+ (15)  [-v1_xreal_0(_G3204), _G3155=_G3204, v1_xreal_0(_G3155)]
+ (16)  [-r2_hidden(_G3491, _G3628), r2_hidden(_G3424, _G3559), _G3424=_G3491, _G3559=_G3628]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(k9_real_1(np__1, 1^[]), u1_struct_0(k17_borsuk_1))]   (3)  
+1.1  [-r2_hidden(k9_real_1(np__1, 1^[]), u1_struct_0(k17_borsuk_1)), r2_hidden(k9_real_1(np__1, 1^[]), u1_struct_0(k5_topmetr)), k9_real_1(np__1, 1^[])=k9_real_1(np__1, 1^[]), u1_struct_0(k5_topmetr)=u1_struct_0(k17_borsuk_1)]   (16)  substitution:[[_G3491, _G3628, _G3424, _G3559], [k9_real_1(np__1, 1^[]), u1_struct_0(k17_borsuk_1), k9_real_1(np__1, 1^[]), u1_struct_0(k5_topmetr)]]
+1.1.1  [-r2_hidden(k9_real_1(np__1, 1^[]), u1_struct_0(k5_topmetr)), m1_subset_1(1^[], k1_numbers), r2_hidden(1^[], u1_struct_0(k5_topmetr))]   (8)  substitution:[[_G5149], [1^[]]]
+1.1.1.1  [-m1_subset_1(1^[], k1_numbers), r2_hidden(1^[], k1_numbers)]   (7)  substitution:[[_G5534, _G5579], [1^[], k1_numbers]]
+1.1.1.1.1  [-r2_hidden(1^[], k1_numbers), v1_xreal_0(1^[])]   (4)  substitution:[[_G4992], [1^[]]]
+1.1.1.1.1.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.1.2  [-r2_hidden(1^[], u1_struct_0(k5_topmetr)), r2_hidden(1^[], u1_struct_0(k17_borsuk_1)), 1^[]=1^[], u1_struct_0(k17_borsuk_1)=u1_struct_0(k5_topmetr)]   (16)  substitution:[[_G3491, _G3628, _G3424, _G3559], [1^[], u1_struct_0(k5_topmetr), 1^[], u1_struct_0(k17_borsuk_1)]]
+1.1.1.2.1  [-r2_hidden(1^[], u1_struct_0(k17_borsuk_1))]   (2)  
+1.1.1.2.2  [- (1^[]=1^[])]   (11)  substitution:[[_G1776], [1^[]]]
+1.1.1.2.3  [- (u1_struct_0(k17_borsuk_1)=u1_struct_0(k5_topmetr)), k17_borsuk_1=k5_topmetr]   (9)  substitution:[[_G4672, _G4721], [k17_borsuk_1, k5_topmetr]]
+1.1.1.2.3.1  [- (k17_borsuk_1=k5_topmetr), k5_topmetr=k17_borsuk_1]   (12)  substitution:[[_G1920, _G1875], [k17_borsuk_1, k5_topmetr]]
+1.1.1.2.3.1.1  [- (k5_topmetr=k17_borsuk_1)]   (6)  
+1.1.2  [- (k9_real_1(np__1, 1^[])=k9_real_1(np__1, 1^[])), np__1=np__1, 1^[]=1^[]]   (10)  substitution:[[_G4084, _G4219, _G4151, _G4288], [np__1, 1^[], np__1, 1^[]]]
+1.1.2.1  [- (np__1=np__1)]   (11)  substitution:[[_G1776], [np__1]]
+1.1.2.2  [- (1^[]=1^[])]   (11)  substitution:[[_G1776], [1^[]]]
+1.1.3  [- (u1_struct_0(k5_topmetr)=u1_struct_0(k17_borsuk_1)), k5_topmetr=k17_borsuk_1]   (9)  substitution:[[_G4672, _G4721], [k5_topmetr, k17_borsuk_1]]
+1.1.3.1  [- (k5_topmetr=k17_borsuk_1)]   (6)  
+------------------------------------------------------
+End of proof for t4_jordan5b

@@ -1,0 +1,57 @@
+
+t17_msafree is a Theorem
+Start of proof for t17_msafree
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(2^[])]
+ (2)  [v11_struct_0(2^[])]
+ (3)  [-l1_msualg_1(2^[])]
+ (4)  [-v1_relat_1(3^[])]
+ (5)  [-v2_relat_1(3^[])]
+ (6)  [-v4_relat_1(3^[], u1_struct_0(2^[]))]
+ (7)  [-v1_funct_1(3^[])]
+ (8)  [-v1_partfun1(3^[], u1_struct_0(2^[]))]
+ (9)  [v2_msafree(k11_msafree(2^[], 3^[]), 2^[])]
+ (10)  [l1_msualg_1(_G1697), -v11_struct_0(_G1697), -v2_struct_0(_G1697), l3_msualg_1(_G1946, _G1697), v2_msafree(_G1946, _G1697), -m1_msafree(1^[_G1946, _G1697], _G1697, _G1946)]
+ (11)  [l1_msualg_1(_G1697), -v11_struct_0(_G1697), -v2_struct_0(_G1697), l3_msualg_1(_G1946, _G1697), v2_msafree(_G1946, _G1697), -v1_msafree(1^[_G1946, _G1697], _G1697, _G1946)]
+ (12)  [l1_msualg_1(_G1697), -v11_struct_0(_G1697), -v2_struct_0(_G1697), l3_msualg_1(_G1946, _G1697), -v2_msafree(_G1946, _G1697), m1_msafree(_G2125, _G1697, _G1946), v1_msafree(_G2125, _G1697, _G1946)]
+ (13)  [-l3_msualg_1(k11_msafree(_G2487, _G2579), _G2487), l1_msualg_1(_G2487), -v11_struct_0(_G2487), -v2_struct_0(_G2487), v1_relat_1(_G2579), v2_relat_1(_G2579), v4_relat_1(_G2579, u1_struct_0(_G2487)), v1_funct_1(_G2579), v1_partfun1(_G2579, u1_struct_0(_G2487))]
+ (14)  [-m1_msafree(k13_msafree(_G3314, _G3410), _G3314, k11_msafree(_G3314, _G3410)), l1_msualg_1(_G3314), -v11_struct_0(_G3314), -v2_struct_0(_G3314), v1_relat_1(_G3410), v2_relat_1(_G3410), v4_relat_1(_G3410, u1_struct_0(_G3314)), v1_funct_1(_G3410), v1_partfun1(_G3410, u1_struct_0(_G3314))]
+ (15)  [l1_msualg_1(_G4222), -v11_struct_0(_G4222), -v2_struct_0(_G4222), -v1_msafree(k13_msafree(_G4222, _G4484), _G4222, k11_msafree(_G4222, _G4484)), v1_relat_1(_G4484), v2_relat_1(_G4484), v4_relat_1(_G4484, u1_struct_0(_G4222)), v1_funct_1(_G4484), v1_partfun1(_G4484, u1_struct_0(_G4222))]
+
+Connection Proof:
+-----------------
+1  [v2_struct_0(2^[])]   (1)  
+1.1  [-v2_struct_0(2^[]), l1_msualg_1(2^[]), -v11_struct_0(2^[]), l3_msualg_1(k11_msafree(2^[], 3^[]), 2^[]), -v2_msafree(k11_msafree(2^[], 3^[]), 2^[]), m1_msafree(k13_msafree(2^[], 3^[]), 2^[], k11_msafree(2^[], 3^[])), v1_msafree(k13_msafree(2^[], 3^[]), 2^[], k11_msafree(2^[], 3^[]))]   (12)  substitution:[[_G1697, _G1946, _G2125], [2^[], k11_msafree(2^[], 3^[]), k13_msafree(2^[], 3^[])]]
+1.1.1  [-l1_msualg_1(2^[])]   (3)  
+1.1.2  [v11_struct_0(2^[])]   (2)  
+1.1.3  [-l3_msualg_1(k11_msafree(2^[], 3^[]), 2^[]), l1_msualg_1(2^[]), -v11_struct_0(2^[]), -v2_struct_0(2^[]), v1_relat_1(3^[]), v2_relat_1(3^[]), v4_relat_1(3^[], u1_struct_0(2^[])), v1_funct_1(3^[]), v1_partfun1(3^[], u1_struct_0(2^[]))]   (13)  substitution:[[_G2487, _G2579], [2^[], 3^[]]]
+1.1.3.1  [-l1_msualg_1(2^[])]   (3)  
+1.1.3.2  [v11_struct_0(2^[])]   (2)  
+1.1.3.3  [v2_struct_0(2^[])]   (1)  
+1.1.3.4  [-v1_relat_1(3^[])]   (4)  
+1.1.3.5  [-v2_relat_1(3^[])]   (5)  
+1.1.3.6  [-v4_relat_1(3^[], u1_struct_0(2^[]))]   (6)  
+1.1.3.7  [-v1_funct_1(3^[])]   (7)  
+1.1.3.8  [-v1_partfun1(3^[], u1_struct_0(2^[]))]   (8)  
+1.1.4  [v2_msafree(k11_msafree(2^[], 3^[]), 2^[])]   (9)  
+1.1.5  [-m1_msafree(k13_msafree(2^[], 3^[]), 2^[], k11_msafree(2^[], 3^[])), l1_msualg_1(2^[]), -v11_struct_0(2^[]), -v2_struct_0(2^[]), v1_relat_1(3^[]), v2_relat_1(3^[]), v4_relat_1(3^[], u1_struct_0(2^[])), v1_funct_1(3^[]), v1_partfun1(3^[], u1_struct_0(2^[]))]   (14)  substitution:[[_G3314, _G3410], [2^[], 3^[]]]
+1.1.5.1  [-l1_msualg_1(2^[])]   (3)  
+1.1.5.2  [v11_struct_0(2^[])]   (2)  
+1.1.5.3  [v2_struct_0(2^[])]   (1)  
+1.1.5.4  [-v1_relat_1(3^[])]   (4)  
+1.1.5.5  [-v2_relat_1(3^[])]   (5)  
+1.1.5.6  [-v4_relat_1(3^[], u1_struct_0(2^[]))]   (6)  
+1.1.5.7  [-v1_funct_1(3^[])]   (7)  
+1.1.5.8  [-v1_partfun1(3^[], u1_struct_0(2^[]))]   (8)  
+1.1.6  [-v1_msafree(k13_msafree(2^[], 3^[]), 2^[], k11_msafree(2^[], 3^[])), l1_msualg_1(2^[]), -v11_struct_0(2^[]), -v2_struct_0(2^[]), v1_relat_1(3^[]), v2_relat_1(3^[]), v4_relat_1(3^[], u1_struct_0(2^[])), v1_funct_1(3^[]), v1_partfun1(3^[], u1_struct_0(2^[]))]   (15)  substitution:[[_G4222, _G4484], [2^[], 3^[]]]
+1.1.6.1  [-l1_msualg_1(2^[])]   (3)  
+1.1.6.2  [v11_struct_0(2^[])]   (2)  
+1.1.6.3  [v2_struct_0(2^[])]   (1)  
+1.1.6.4  [-v1_relat_1(3^[])]   (4)  
+1.1.6.5  [-v2_relat_1(3^[])]   (5)  
+1.1.6.6  [-v4_relat_1(3^[], u1_struct_0(2^[]))]   (6)  
+1.1.6.7  [-v1_funct_1(3^[])]   (7)  
+1.1.6.8  [-v1_partfun1(3^[], u1_struct_0(2^[]))]   (8)  
+------------------------------------------------------
+End of proof for t17_msafree

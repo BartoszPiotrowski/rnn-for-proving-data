@@ -1,0 +1,25 @@
+
+t7_membered is a Theorem
+Start of proof for t7_membered
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v1_xboole_0(3^[])]
+ (2)  [-v1_membered(3^[])]
+ (3)  [v1_xcmplx_0(_G1866), r2_hidden(_G1866, 3^[])]
+ (4)  [v1_xboole_0(_G1041), r2_hidden(_G1119, _G1041)]
+ (5)  [-v1_xboole_0(_G1041), -r2_hidden(2^[_G1041], _G1041)]
+ (6)  [-v1_membered(_G777), -r2_hidden(1^[_G777], _G777)]
+ (7)  [-v1_membered(_G777), v1_xcmplx_0(1^[_G777])]
+ (8)  [v1_membered(_G777), r2_hidden(_G858, _G777), -v1_xcmplx_0(_G858)]
+
+Connection Proof:
+-----------------
+1  [v1_xcmplx_0(2^[3^[]]), r2_hidden(2^[3^[]], 3^[])]   (3)  substitution:[[_G1866], [2^[3^[]]]]
+1.1  [-v1_xcmplx_0(2^[3^[]]), v1_membered(3^[]), r2_hidden(2^[3^[]], 3^[])]   (8)  substitution:[[_G858, _G777], [2^[3^[]], 3^[]]]
+1.1.1  [-v1_membered(3^[])]   (2)  
+1.1.2  [-r2_hidden(2^[3^[]], 3^[]), -v1_xboole_0(3^[])]   (5)  substitution:[[_G1041], [3^[]]]
+1.1.2.1  [v1_xboole_0(3^[])]   (1)  
+1.2  [-r2_hidden(2^[3^[]], 3^[]), -v1_xboole_0(3^[])]   (5)  substitution:[[_G1041], [3^[]]]
+1.2.1  [v1_xboole_0(3^[])]   (1)  
+------------------------------------------------------
+End of proof for t7_membered

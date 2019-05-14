@@ -1,0 +1,29 @@
+
+l13_xreal_0 is a Theorem
+Start of proof for l13_xreal_0
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k2_xcmplx_0(np__1, k4_xcmplx_0(np__1))=k6_numbers]
+ (2)  [- (k6_numbers=k1_xboole_0)]
+ (3)  [- (k2_xcmplx_0(np__1, k4_xcmplx_0(np__1))=np__0)]
+ (4)  [-v1_xboole_0(np__0)]
+ (5)  [v1_xboole_0(_G3337), - (_G3337=k1_xboole_0)]
+ (6)  [_G2827=_G2876, - (k4_xcmplx_0(_G2827)=k4_xcmplx_0(_G2876))]
+ (7)  [- (k2_xcmplx_0(_G2239, _G2374)=k2_xcmplx_0(_G2306, _G2443)), _G2239=_G2306, _G2374=_G2443]
+ (8)  [-v1_xboole_0(_G1989), _G1940=_G1989, v1_xboole_0(_G1940)]
+ (9)  [- (_G1167=_G1167)]
+ (10)  [_G1266=_G1311, - (_G1311=_G1266)]
+ (11)  [- (_G1499=_G1612), _G1499=_G1555, _G1555=_G1612]
+
+Connection Proof:
+-----------------
+1  [k2_xcmplx_0(np__1, k4_xcmplx_0(np__1))=k6_numbers]   (1)  
+1.1  [- (k2_xcmplx_0(np__1, k4_xcmplx_0(np__1))=k6_numbers), k2_xcmplx_0(np__1, k4_xcmplx_0(np__1))=np__0, np__0=k6_numbers]   (11)  substitution:[[_G1499, _G1612, _G1555], [k2_xcmplx_0(np__1, k4_xcmplx_0(np__1)), k6_numbers, np__0]]
+1.1.1  [- (k2_xcmplx_0(np__1, k4_xcmplx_0(np__1))=np__0)]   (3)  
+1.1.2  [- (np__0=k6_numbers), np__0=k1_xboole_0, k1_xboole_0=k6_numbers]   (11)  substitution:[[_G1499, _G1612, _G1555], [np__0, k6_numbers, k1_xboole_0]]
+1.1.2.1  [- (np__0=k1_xboole_0), v1_xboole_0(np__0)]   (5)  substitution:[[_G3337], [np__0]]
+1.1.2.1.1  [-v1_xboole_0(np__0)]   (4)  
+1.1.2.2  [- (k1_xboole_0=k6_numbers), k6_numbers=k1_xboole_0]   (10)  substitution:[[_G1311, _G1266], [k1_xboole_0, k6_numbers]]
+1.1.2.2.1  [- (k6_numbers=k1_xboole_0)]   (2)  
+------------------------------------------------------
+End of proof for l13_xreal_0

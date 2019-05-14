@@ -1,0 +1,41 @@
+
+t2_ff_siec is a Theorem
+Start of proof for t2_ff_siec
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [u1_struct_0(k2_ff_siec(1^[]))=1^[], u4_struct_0(k2_ff_siec(1^[]))=k1_xboole_0, k1_net_1(k2_ff_siec(1^[]))=k1_xboole_0]
+ (2)  [- (k2_ff_siec(_G5131)=k1_ff_siec(_G5131, k1_xboole_0))]
+ (3)  [-r1_xboole_0(_G5890, k1_xboole_0)]
+ (4)  [r1_xboole_0(_G5288, _G5360), - (u1_struct_0(k1_ff_siec(_G5288, _G5360))=_G5288)]
+ (5)  [r1_xboole_0(_G5288, _G5360), - (u4_struct_0(k1_ff_siec(_G5288, _G5360))=_G5360)]
+ (6)  [r1_xboole_0(_G5288, _G5360), - (k1_net_1(k1_ff_siec(_G5288, _G5360))=k1_xboole_0)]
+ (7)  [-r1_xboole_0(_G2775, _G2912), r1_xboole_0(_G2708, _G2843), _G2708=_G2775, _G2843=_G2912]
+ (8)  [- (_G1935=_G1935)]
+ (9)  [_G2034=_G2079, - (_G2079=_G2034)]
+ (10)  [- (_G2267=_G2380), _G2267=_G2323, _G2323=_G2380]
+ (11)  [- (k1_ff_siec(_G3326, _G3461)=k1_ff_siec(_G3393, _G3530)), _G3326=_G3393, _G3461=_G3530]
+ (12)  [_G3923=_G3972, - (u1_struct_0(_G3923)=u1_struct_0(_G3972))]
+ (13)  [_G4201=_G4250, - (u4_struct_0(_G4201)=u4_struct_0(_G4250))]
+ (14)  [_G4479=_G4528, - (k1_net_1(_G4479)=k1_net_1(_G4528))]
+ (15)  [_G4748=_G4797, - (k2_ff_siec(_G4748)=k2_ff_siec(_G4797))]
+
+Connection Proof:
+-----------------
+1  [u1_struct_0(k2_ff_siec(1^[]))=1^[], u4_struct_0(k2_ff_siec(1^[]))=k1_xboole_0, k1_net_1(k2_ff_siec(1^[]))=k1_xboole_0]   (1)  
+1.1  [- (u1_struct_0(k2_ff_siec(1^[]))=1^[]), u1_struct_0(k2_ff_siec(1^[]))=u1_struct_0(k1_ff_siec(1^[], k1_xboole_0)), u1_struct_0(k1_ff_siec(1^[], k1_xboole_0))=1^[]]   (10)  substitution:[[_G2267, _G2380, _G2323], [u1_struct_0(k2_ff_siec(1^[])), 1^[], u1_struct_0(k1_ff_siec(1^[], k1_xboole_0))]]
+1.1.1  [- (u1_struct_0(k2_ff_siec(1^[]))=u1_struct_0(k1_ff_siec(1^[], k1_xboole_0))), k2_ff_siec(1^[])=k1_ff_siec(1^[], k1_xboole_0)]   (12)  substitution:[[_G3923, _G3972], [k2_ff_siec(1^[]), k1_ff_siec(1^[], k1_xboole_0)]]
+1.1.1.1  [- (k2_ff_siec(1^[])=k1_ff_siec(1^[], k1_xboole_0))]   (2)  substitution:[[_G5131], [1^[]]]
+1.1.2  [- (u1_struct_0(k1_ff_siec(1^[], k1_xboole_0))=1^[]), r1_xboole_0(1^[], k1_xboole_0)]   (4)  substitution:[[_G5288, _G5360], [1^[], k1_xboole_0]]
+1.1.2.1  [-r1_xboole_0(1^[], k1_xboole_0)]   (3)  substitution:[[_G5890], [1^[]]]
+1.2  [- (u4_struct_0(k2_ff_siec(1^[]))=k1_xboole_0), u4_struct_0(k2_ff_siec(1^[]))=u4_struct_0(k1_ff_siec(1^[], k1_xboole_0)), u4_struct_0(k1_ff_siec(1^[], k1_xboole_0))=k1_xboole_0]   (10)  substitution:[[_G2267, _G2380, _G2323], [u4_struct_0(k2_ff_siec(1^[])), k1_xboole_0, u4_struct_0(k1_ff_siec(1^[], k1_xboole_0))]]
+1.2.1  [- (u4_struct_0(k2_ff_siec(1^[]))=u4_struct_0(k1_ff_siec(1^[], k1_xboole_0))), k2_ff_siec(1^[])=k1_ff_siec(1^[], k1_xboole_0)]   (13)  substitution:[[_G4201, _G4250], [k2_ff_siec(1^[]), k1_ff_siec(1^[], k1_xboole_0)]]
+1.2.1.1  [- (k2_ff_siec(1^[])=k1_ff_siec(1^[], k1_xboole_0))]   (2)  substitution:[[_G5131], [1^[]]]
+1.2.2  [- (u4_struct_0(k1_ff_siec(1^[], k1_xboole_0))=k1_xboole_0), r1_xboole_0(1^[], k1_xboole_0)]   (5)  substitution:[[_G5288, _G5360], [1^[], k1_xboole_0]]
+1.2.2.1  [-r1_xboole_0(1^[], k1_xboole_0)]   (3)  substitution:[[_G5890], [1^[]]]
+1.3  [- (k1_net_1(k2_ff_siec(1^[]))=k1_xboole_0), k1_net_1(k2_ff_siec(1^[]))=k1_net_1(k1_ff_siec(1^[], k1_xboole_0)), k1_net_1(k1_ff_siec(1^[], k1_xboole_0))=k1_xboole_0]   (10)  substitution:[[_G2267, _G2380, _G2323], [k1_net_1(k2_ff_siec(1^[])), k1_xboole_0, k1_net_1(k1_ff_siec(1^[], k1_xboole_0))]]
+1.3.1  [- (k1_net_1(k2_ff_siec(1^[]))=k1_net_1(k1_ff_siec(1^[], k1_xboole_0))), k2_ff_siec(1^[])=k1_ff_siec(1^[], k1_xboole_0)]   (14)  substitution:[[_G4479, _G4528], [k2_ff_siec(1^[]), k1_ff_siec(1^[], k1_xboole_0)]]
+1.3.1.1  [- (k2_ff_siec(1^[])=k1_ff_siec(1^[], k1_xboole_0))]   (2)  substitution:[[_G5131], [1^[]]]
+1.3.2  [- (k1_net_1(k1_ff_siec(1^[], k1_xboole_0))=k1_xboole_0), r1_xboole_0(1^[], k1_xboole_0)]   (6)  substitution:[[_G5288, _G5360], [1^[], k1_xboole_0]]
+1.3.2.1  [-r1_xboole_0(1^[], k1_xboole_0)]   (3)  substitution:[[_G5890], [1^[]]]
+------------------------------------------------------
+End of proof for t2_ff_siec

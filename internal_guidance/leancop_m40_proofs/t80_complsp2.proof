@@ -1,0 +1,86 @@
+
+t80_complsp2 is a Theorem
+Start of proof for t80_complsp2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], k2_numbers)]
+ (2)  [-m1_subset_1(2^[], k2_numbers)]
+ (3)  [-m2_finseq_1(3^[], k2_numbers)]
+ (4)  [-m2_finseq_1(4^[], k2_numbers)]
+ (5)  [-m2_finseq_1(5^[], k2_numbers)]
+ (6)  [- (k3_finseq_1(3^[])=k3_finseq_1(4^[]))]
+ (7)  [- (k3_finseq_1(4^[])=k3_finseq_1(5^[]))]
+ (8)  [k8_complsp2(k9_seq_4(k12_seq_4(3^[], 1^[]), k12_seq_4(4^[], 2^[])), 5^[])=k3_binop_2(k5_binop_2(1^[], k8_complsp2(3^[], 5^[])), k5_binop_2(2^[], k8_complsp2(4^[], 5^[])))]
+ (9)  [m1_subset_1(_G10939, k2_numbers), -v1_xcmplx_0(_G10939)]
+ (10)  [-m2_finseq_1(k12_seq_4(_G11096, _G11149), k2_numbers), m1_finseq_1(_G11096, k2_numbers), v1_xcmplx_0(_G11149)]
+ (11)  [m2_finseq_1(_G11491, _G11446), -m1_finseq_1(_G11491, _G11446)]
+ (12)  [-m2_finseq_1(_G11491, _G11446), m1_finseq_1(_G11491, _G11446)]
+ (13)  [v1_xcmplx_0(_G11688), m2_finseq_1(_G11777, k2_numbers), - (k3_finseq_1(k12_seq_4(_G11777, _G11688))=k3_finseq_1(_G11777))]
+ (14)  [m1_subset_1(_G13058, k2_numbers), m2_finseq_1(_G13199, k2_numbers), m2_finseq_1(_G13335, k2_numbers), k3_finseq_1(_G13199)=k3_finseq_1(_G13335), - (k8_complsp2(k12_seq_4(_G13199, _G13058), _G13335)=k5_binop_2(_G13058, k8_complsp2(_G13199, _G13335)))]
+ (15)  [m2_finseq_1(_G12069, k2_numbers), m2_finseq_1(_G12223, k2_numbers), m2_finseq_1(_G12372, k2_numbers), - (k8_complsp2(k9_seq_4(_G12069, _G12223), _G12372)=k3_binop_2(k8_complsp2(_G12069, _G12372), k8_complsp2(_G12223, _G12372))), k3_finseq_1(_G12069)=k3_finseq_1(_G12223), k3_finseq_1(_G12223)=k3_finseq_1(_G12372)]
+ (16)  [_G7559=_G7608, - (k3_finseq_1(_G7559)=k3_finseq_1(_G7608))]
+ (17)  [- (k9_seq_4(_G7837, _G7972)=k9_seq_4(_G7904, _G8041)), _G7837=_G7904, _G7972=_G8041]
+ (18)  [- (k12_seq_4(_G8434, _G8569)=k12_seq_4(_G8501, _G8638)), _G8434=_G8501, _G8569=_G8638]
+ (19)  [- (k3_binop_2(_G9031, _G9166)=k3_binop_2(_G9098, _G9235)), _G9031=_G9098, _G9166=_G9235]
+ (20)  [- (k5_binop_2(_G9628, _G9763)=k5_binop_2(_G9695, _G9832)), _G9628=_G9695, _G9763=_G9832]
+ (21)  [- (k8_complsp2(_G10216, _G10351)=k8_complsp2(_G10283, _G10420)), _G10216=_G10283, _G10351=_G10420]
+ (22)  [- (_G4633=_G4633)]
+ (23)  [_G4732=_G4777, - (_G4777=_G4732)]
+ (24)  [- (_G4965=_G5078), _G4965=_G5021, _G5021=_G5078]
+ (25)  [-m1_finseq_1(_G5482, _G5619), m1_finseq_1(_G5415, _G5550), _G5415=_G5482, _G5550=_G5619]
+ (26)  [-v1_xcmplx_0(_G6061), _G6012=_G6061, v1_xcmplx_0(_G6012)]
+ (27)  [-m1_subset_1(_G6357, _G6494), m1_subset_1(_G6290, _G6425), _G6290=_G6357, _G6425=_G6494]
+ (28)  [-m2_finseq_1(_G6945, _G7082), m2_finseq_1(_G6878, _G7013), _G6878=_G6945, _G7013=_G7082]
+
+Connection Proof:
+-----------------
+1  [k8_complsp2(k9_seq_4(k12_seq_4(3^[], 1^[]), k12_seq_4(4^[], 2^[])), 5^[])=k3_binop_2(k5_binop_2(1^[], k8_complsp2(3^[], 5^[])), k5_binop_2(2^[], k8_complsp2(4^[], 5^[])))]   (8)  
+1.1  [- (k8_complsp2(k9_seq_4(k12_seq_4(3^[], 1^[]), k12_seq_4(4^[], 2^[])), 5^[])=k3_binop_2(k5_binop_2(1^[], k8_complsp2(3^[], 5^[])), k5_binop_2(2^[], k8_complsp2(4^[], 5^[])))), k8_complsp2(k9_seq_4(k12_seq_4(3^[], 1^[]), k12_seq_4(4^[], 2^[])), 5^[])=k3_binop_2(k8_complsp2(k12_seq_4(3^[], 1^[]), 5^[]), k8_complsp2(k12_seq_4(4^[], 2^[]), 5^[])), k3_binop_2(k8_complsp2(k12_seq_4(3^[], 1^[]), 5^[]), k8_complsp2(k12_seq_4(4^[], 2^[]), 5^[]))=k3_binop_2(k5_binop_2(1^[], k8_complsp2(3^[], 5^[])), k5_binop_2(2^[], k8_complsp2(4^[], 5^[])))]   (24)  substitution:[[_G4965, _G5078, _G5021], [k8_complsp2(k9_seq_4(k12_seq_4(3^[], 1^[]), k12_seq_4(4^[], 2^[])), 5^[]), k3_binop_2(k5_binop_2(1^[], k8_complsp2(3^[], 5^[])), k5_binop_2(2^[], k8_complsp2(4^[], 5^[]))), k3_binop_2(k8_complsp2(k12_seq_4(3^[], 1^[]), 5^[]), k8_complsp2(k12_seq_4(4^[], 2^[]), 5^[]))]]
+1.1.1  [- (k8_complsp2(k9_seq_4(k12_seq_4(3^[], 1^[]), k12_seq_4(4^[], 2^[])), 5^[])=k3_binop_2(k8_complsp2(k12_seq_4(3^[], 1^[]), 5^[]), k8_complsp2(k12_seq_4(4^[], 2^[]), 5^[]))), m2_finseq_1(k12_seq_4(3^[], 1^[]), k2_numbers), m2_finseq_1(k12_seq_4(4^[], 2^[]), k2_numbers), m2_finseq_1(5^[], k2_numbers), k3_finseq_1(k12_seq_4(3^[], 1^[]))=k3_finseq_1(k12_seq_4(4^[], 2^[])), k3_finseq_1(k12_seq_4(4^[], 2^[]))=k3_finseq_1(5^[])]   (15)  substitution:[[_G12069, _G12223, _G12372], [k12_seq_4(3^[], 1^[]), k12_seq_4(4^[], 2^[]), 5^[]]]
+1.1.1.1  [-m2_finseq_1(k12_seq_4(3^[], 1^[]), k2_numbers), m1_finseq_1(3^[], k2_numbers), v1_xcmplx_0(1^[])]   (10)  substitution:[[_G11096, _G11149], [3^[], 1^[]]]
+1.1.1.1.1  [-m1_finseq_1(3^[], k2_numbers), m2_finseq_1(3^[], k2_numbers)]   (11)  substitution:[[_G11491, _G11446], [3^[], k2_numbers]]
+1.1.1.1.1.1  [-m2_finseq_1(3^[], k2_numbers)]   (3)  
+1.1.1.1.2  [-v1_xcmplx_0(1^[]), m1_subset_1(1^[], k2_numbers)]   (9)  substitution:[[_G10939], [1^[]]]
+1.1.1.1.2.1  [-m1_subset_1(1^[], k2_numbers)]   (1)  
+1.1.1.2  [-m2_finseq_1(k12_seq_4(4^[], 2^[]), k2_numbers), m1_finseq_1(4^[], k2_numbers), v1_xcmplx_0(2^[])]   (10)  substitution:[[_G11096, _G11149], [4^[], 2^[]]]
+1.1.1.2.1  [-m1_finseq_1(4^[], k2_numbers), m2_finseq_1(4^[], k2_numbers)]   (11)  substitution:[[_G11491, _G11446], [4^[], k2_numbers]]
+1.1.1.2.1.1  [-m2_finseq_1(4^[], k2_numbers)]   (4)  
+1.1.1.2.2  [-v1_xcmplx_0(2^[]), m1_subset_1(2^[], k2_numbers)]   (9)  substitution:[[_G1065], [2^[]]]
+1.1.1.2.2.1  [-m1_subset_1(2^[], k2_numbers)]   (2)  
+1.1.1.3  [-m2_finseq_1(5^[], k2_numbers)]   (5)  
+1.1.1.4  [- (k3_finseq_1(k12_seq_4(3^[], 1^[]))=k3_finseq_1(k12_seq_4(4^[], 2^[]))), k3_finseq_1(k12_seq_4(3^[], 1^[]))=k3_finseq_1(4^[]), k3_finseq_1(4^[])=k3_finseq_1(k12_seq_4(4^[], 2^[]))]   (24)  substitution:[[_G889, _G891, _G890], [k3_finseq_1(k12_seq_4(3^[], 1^[])), k3_finseq_1(k12_seq_4(4^[], 2^[])), k3_finseq_1(4^[])]]
+1.1.1.4.1  [- (k3_finseq_1(k12_seq_4(3^[], 1^[]))=k3_finseq_1(4^[])), k3_finseq_1(k12_seq_4(3^[], 1^[]))=k3_finseq_1(3^[]), k3_finseq_1(3^[])=k3_finseq_1(4^[])]   (24)  substitution:[[_G889, _G891, _G890], [k3_finseq_1(k12_seq_4(3^[], 1^[])), k3_finseq_1(4^[]), k3_finseq_1(3^[])]]
+1.1.1.4.1.1  [- (k3_finseq_1(k12_seq_4(3^[], 1^[]))=k3_finseq_1(3^[])), v1_xcmplx_0(1^[]), m2_finseq_1(3^[], k2_numbers)]   (13)  substitution:[[_G1095, _G1092], [3^[], 1^[]]]
+1.1.1.4.1.1.1  [-v1_xcmplx_0(1^[]), m1_subset_1(1^[], k2_numbers)]   (9)  substitution:[[_G1065], [1^[]]]
+1.1.1.4.1.1.1.1  [-m1_subset_1(1^[], k2_numbers)]   (1)  
+1.1.1.4.1.1.2  [-m2_finseq_1(3^[], k2_numbers)]   (3)  
+1.1.1.4.1.2  [- (k3_finseq_1(3^[])=k3_finseq_1(4^[]))]   (6)  
+1.1.1.4.2  [- (k3_finseq_1(4^[])=k3_finseq_1(k12_seq_4(4^[], 2^[]))), k3_finseq_1(k12_seq_4(4^[], 2^[]))=k3_finseq_1(4^[])]   (23)  substitution:[[_G882, _G881], [k3_finseq_1(4^[]), k3_finseq_1(k12_seq_4(4^[], 2^[]))]]
+1.1.1.4.2.1  [- (k3_finseq_1(k12_seq_4(4^[], 2^[]))=k3_finseq_1(4^[])), v1_xcmplx_0(2^[]), m2_finseq_1(4^[], k2_numbers)]   (13)  substitution:[[_G1095, _G1092], [4^[], 2^[]]]
+1.1.1.4.2.1.1  [-v1_xcmplx_0(2^[]), m1_subset_1(2^[], k2_numbers)]   (9)  substitution:[[_G1065], [2^[]]]
+1.1.1.4.2.1.1.1  [-m1_subset_1(2^[], k2_numbers)]   (2)  
+1.1.1.4.2.1.2  [-m2_finseq_1(4^[], k2_numbers)]   (4)  
+1.1.1.5  [- (k3_finseq_1(k12_seq_4(4^[], 2^[]))=k3_finseq_1(5^[])), k3_finseq_1(k12_seq_4(4^[], 2^[]))=k3_finseq_1(4^[]), k3_finseq_1(4^[])=k3_finseq_1(5^[])]   (24)  substitution:[[_G889, _G891, _G890], [k3_finseq_1(k12_seq_4(4^[], 2^[])), k3_finseq_1(5^[]), k3_finseq_1(4^[])]]
+1.1.1.5.1  [- (k3_finseq_1(k12_seq_4(4^[], 2^[]))=k3_finseq_1(4^[])), v1_xcmplx_0(2^[]), m2_finseq_1(4^[], k2_numbers)]   (13)  substitution:[[_G1095, _G1092], [4^[], 2^[]]]
+1.1.1.5.1.1  [-v1_xcmplx_0(2^[]), m1_subset_1(2^[], k2_numbers)]   (9)  substitution:[[_G1065], [2^[]]]
+1.1.1.5.1.1.1  [-m1_subset_1(2^[], k2_numbers)]   (2)  
+1.1.1.5.1.2  [-m2_finseq_1(4^[], k2_numbers)]   (4)  
+1.1.1.5.2  [- (k3_finseq_1(4^[])=k3_finseq_1(5^[]))]   (7)  
+1.1.2  [- (k3_binop_2(k8_complsp2(k12_seq_4(3^[], 1^[]), 5^[]), k8_complsp2(k12_seq_4(4^[], 2^[]), 5^[]))=k3_binop_2(k5_binop_2(1^[], k8_complsp2(3^[], 5^[])), k5_binop_2(2^[], k8_complsp2(4^[], 5^[])))), k8_complsp2(k12_seq_4(3^[], 1^[]), 5^[])=k5_binop_2(1^[], k8_complsp2(3^[], 5^[])), k8_complsp2(k12_seq_4(4^[], 2^[]), 5^[])=k5_binop_2(2^[], k8_complsp2(4^[], 5^[]))]   (19)  substitution:[[_G1008, _G1010, _G1009, _G1011], [k8_complsp2(k12_seq_4(3^[], 1^[]), 5^[]), k8_complsp2(k12_seq_4(4^[], 2^[]), 5^[]), k5_binop_2(1^[], k8_complsp2(3^[], 5^[])), k5_binop_2(2^[], k8_complsp2(4^[], 5^[]))]]
+1.1.2.1  [- (k8_complsp2(k12_seq_4(3^[], 1^[]), 5^[])=k5_binop_2(1^[], k8_complsp2(3^[], 5^[]))), m1_subset_1(1^[], k2_numbers), m2_finseq_1(3^[], k2_numbers), m2_finseq_1(5^[], k2_numbers), k3_finseq_1(3^[])=k3_finseq_1(5^[])]   (14)  substitution:[[_G1157, _G1153, _G1161], [3^[], 1^[], 5^[]]]
+1.1.2.1.1  [-m1_subset_1(1^[], k2_numbers)]   (1)  
+1.1.2.1.2  [-m2_finseq_1(3^[], k2_numbers)]   (3)  
+1.1.2.1.3  [-m2_finseq_1(5^[], k2_numbers)]   (5)  
+1.1.2.1.4  [- (k3_finseq_1(3^[])=k3_finseq_1(5^[])), k3_finseq_1(5^[])=k3_finseq_1(3^[])]   (23)  substitution:[[_G882, _G881], [k3_finseq_1(3^[]), k3_finseq_1(5^[])]]
+1.1.2.1.4.1  [- (k3_finseq_1(5^[])=k3_finseq_1(3^[])), k3_finseq_1(5^[])=k3_finseq_1(4^[]), k3_finseq_1(4^[])=k3_finseq_1(3^[])]   (24)  substitution:[[_G889, _G891, _G890], [k3_finseq_1(5^[]), k3_finseq_1(3^[]), k3_finseq_1(4^[])]]
+1.1.2.1.4.1.1  [- (k3_finseq_1(5^[])=k3_finseq_1(4^[])), k3_finseq_1(4^[])=k3_finseq_1(5^[])]   (23)  substitution:[[_G882, _G881], [k3_finseq_1(5^[]), k3_finseq_1(4^[])]]
+1.1.2.1.4.1.1.1  [- (k3_finseq_1(4^[])=k3_finseq_1(5^[]))]   (7)  
+1.1.2.1.4.1.2  [- (k3_finseq_1(4^[])=k3_finseq_1(3^[])), k3_finseq_1(3^[])=k3_finseq_1(4^[])]   (23)  substitution:[[_G882, _G881], [k3_finseq_1(4^[]), k3_finseq_1(3^[])]]
+1.1.2.1.4.1.2.1  [- (k3_finseq_1(3^[])=k3_finseq_1(4^[]))]   (6)  
+1.1.2.2  [- (k8_complsp2(k12_seq_4(4^[], 2^[]), 5^[])=k5_binop_2(2^[], k8_complsp2(4^[], 5^[]))), m1_subset_1(2^[], k2_numbers), m2_finseq_1(4^[], k2_numbers), m2_finseq_1(5^[], k2_numbers), k3_finseq_1(4^[])=k3_finseq_1(5^[])]   (14)  substitution:[[_G1157, _G1153, _G1161], [4^[], 2^[], 5^[]]]
+1.1.2.2.1  [-m1_subset_1(2^[], k2_numbers)]   (2)  
+1.1.2.2.2  [-m2_finseq_1(4^[], k2_numbers)]   (4)  
+1.1.2.2.3  [-m2_finseq_1(5^[], k2_numbers)]   (5)  
+1.1.2.2.4  [- (k3_finseq_1(4^[])=k3_finseq_1(5^[]))]   (7)  
+------------------------------------------------------
+End of proof for t80_complsp2

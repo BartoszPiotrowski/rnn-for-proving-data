@@ -1,0 +1,44 @@
+
+l8_numbers is a Theorem
+Start of proof for l8_numbers
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [r1_tarski(k5_arytm_3, k3_numbers)]
+ (2)  [- (k3_numbers=k6_subset_1(k2_xboole_0(k5_arytm_3, k2_zfmisc_1(k1_tarski(k1_xboole_0), k5_arytm_3)), k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0))))]
+ (3)  [- (k11_arytm_3=k1_xboole_0)]
+ (4)  [- (k6_subset_1(_G7973, _G8018)=k4_xboole_0(_G7973, _G8018))]
+ (5)  [r2_hidden(k4_tarski(k11_arytm_3, _G8691), k5_arytm_3)]
+ (6)  [-r1_tarski(_G8839, k2_xboole_0(_G8839, _G8881))]
+ (7)  [r1_tarski(_G8215, _G8276), -r2_hidden(_G8338, _G8215), -r1_tarski(_G8215, k4_xboole_0(_G8276, k1_tarski(_G8338)))]
+ (8)  [- (_G2286=_G2286)]
+ (9)  [_G2385=_G2430, - (_G2430=_G2385)]
+ (10)  [- (_G2618=_G2731), _G2618=_G2674, _G2674=_G2731]
+ (11)  [-r2_hidden(_G3135, _G3272), r2_hidden(_G3068, _G3203), _G3068=_G3135, _G3203=_G3272]
+ (12)  [-r1_tarski(_G3723, _G3860), r1_tarski(_G3656, _G3791), _G3656=_G3723, _G3791=_G3860]
+ (13)  [- (k2_zfmisc_1(_G4295, _G4430)=k2_zfmisc_1(_G4362, _G4499)), _G4295=_G4362, _G4430=_G4499]
+ (14)  [- (k6_subset_1(_G4892, _G5027)=k6_subset_1(_G4959, _G5096)), _G4892=_G4959, _G5027=_G5096]
+ (15)  [- (k4_xboole_0(_G5489, _G5624)=k4_xboole_0(_G5556, _G5693)), _G5489=_G5556, _G5624=_G5693]
+ (16)  [_G6086=_G6135, - (k1_tarski(_G6086)=k1_tarski(_G6135))]
+ (17)  [- (k4_tarski(_G6364, _G6499)=k4_tarski(_G6431, _G6568)), _G6364=_G6431, _G6499=_G6568]
+ (18)  [- (k2_xboole_0(_G6952, _G7087)=k2_xboole_0(_G7019, _G7156)), _G6952=_G7019, _G7087=_G7156]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(k4_tarski(k11_arytm_3, k11_arytm_3), k5_arytm_3)]   (5)  substitution:[[_G8691], [k11_arytm_3]]
+1.1  [-r2_hidden(k4_tarski(k11_arytm_3, k11_arytm_3), k5_arytm_3), r2_hidden(k4_tarski(k1_xboole_0, k1_xboole_0), k5_arytm_3), k4_tarski(k1_xboole_0, k1_xboole_0)=k4_tarski(k11_arytm_3, k11_arytm_3), k5_arytm_3=k5_arytm_3]   (11)  substitution:[[_G3135, _G3272, _G3068, _G3203], [k4_tarski(k11_arytm_3, k11_arytm_3), k5_arytm_3, k4_tarski(k1_xboole_0, k1_xboole_0), k5_arytm_3]]
+1.1.1  [-r2_hidden(k4_tarski(k1_xboole_0, k1_xboole_0), k5_arytm_3), r1_tarski(k5_arytm_3, k2_xboole_0(k5_arytm_3, k2_zfmisc_1(k1_tarski(k1_xboole_0), k5_arytm_3))), -r1_tarski(k5_arytm_3, k4_xboole_0(k2_xboole_0(k5_arytm_3, k2_zfmisc_1(k1_tarski(k1_xboole_0), k5_arytm_3)), k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0))))]   (7)  substitution:[[_G8338, _G8215, _G8276], [k4_tarski(k1_xboole_0, k1_xboole_0), k5_arytm_3, k2_xboole_0(k5_arytm_3, k2_zfmisc_1(k1_tarski(k1_xboole_0), k5_arytm_3))]]
+1.1.1.1  [-r1_tarski(k5_arytm_3, k2_xboole_0(k5_arytm_3, k2_zfmisc_1(k1_tarski(k1_xboole_0), k5_arytm_3)))]   (6)  substitution:[[_G8839, _G8881], [k5_arytm_3, k2_zfmisc_1(k1_tarski(k1_xboole_0), k5_arytm_3)]]
+1.1.1.2  [r1_tarski(k5_arytm_3, k4_xboole_0(k2_xboole_0(k5_arytm_3, k2_zfmisc_1(k1_tarski(k1_xboole_0), k5_arytm_3)), k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0)))), -r1_tarski(k5_arytm_3, k3_numbers), k5_arytm_3=k5_arytm_3, k4_xboole_0(k2_xboole_0(k5_arytm_3, k2_zfmisc_1(k1_tarski(k1_xboole_0), k5_arytm_3)), k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0)))=k3_numbers]   (12)  substitution:[[_G3656, _G3791, _G3723, _G3860], [k5_arytm_3, k4_xboole_0(k2_xboole_0(k5_arytm_3, k2_zfmisc_1(k1_tarski(k1_xboole_0), k5_arytm_3)), k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0))), k5_arytm_3, k3_numbers]]
+1.1.1.2.1  [r1_tarski(k5_arytm_3, k3_numbers)]   (1)  
+1.1.1.2.2  [- (k5_arytm_3=k5_arytm_3)]   (8)  substitution:[[_G2286], [k5_arytm_3]]
+1.1.1.2.3  [- (k4_xboole_0(k2_xboole_0(k5_arytm_3, k2_zfmisc_1(k1_tarski(k1_xboole_0), k5_arytm_3)), k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0)))=k3_numbers), k3_numbers=k4_xboole_0(k2_xboole_0(k5_arytm_3, k2_zfmisc_1(k1_tarski(k1_xboole_0), k5_arytm_3)), k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0)))]   (9)  substitution:[[_G2430, _G2385], [k4_xboole_0(k2_xboole_0(k5_arytm_3, k2_zfmisc_1(k1_tarski(k1_xboole_0), k5_arytm_3)), k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0))), k3_numbers]]
+1.1.1.2.3.1  [- (k3_numbers=k4_xboole_0(k2_xboole_0(k5_arytm_3, k2_zfmisc_1(k1_tarski(k1_xboole_0), k5_arytm_3)), k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0)))), k3_numbers=k6_subset_1(k2_xboole_0(k5_arytm_3, k2_zfmisc_1(k1_tarski(k1_xboole_0), k5_arytm_3)), k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0))), k6_subset_1(k2_xboole_0(k5_arytm_3, k2_zfmisc_1(k1_tarski(k1_xboole_0), k5_arytm_3)), k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0)))=k4_xboole_0(k2_xboole_0(k5_arytm_3, k2_zfmisc_1(k1_tarski(k1_xboole_0), k5_arytm_3)), k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0)))]   (10)  substitution:[[_G2618, _G2731, _G2674], [k3_numbers, k4_xboole_0(k2_xboole_0(k5_arytm_3, k2_zfmisc_1(k1_tarski(k1_xboole_0), k5_arytm_3)), k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0))), k6_subset_1(k2_xboole_0(k5_arytm_3, k2_zfmisc_1(k1_tarski(k1_xboole_0), k5_arytm_3)), k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0)))]]
+1.1.1.2.3.1.1  [- (k3_numbers=k6_subset_1(k2_xboole_0(k5_arytm_3, k2_zfmisc_1(k1_tarski(k1_xboole_0), k5_arytm_3)), k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0))))]   (2)  
+1.1.1.2.3.1.2  [- (k6_subset_1(k2_xboole_0(k5_arytm_3, k2_zfmisc_1(k1_tarski(k1_xboole_0), k5_arytm_3)), k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0)))=k4_xboole_0(k2_xboole_0(k5_arytm_3, k2_zfmisc_1(k1_tarski(k1_xboole_0), k5_arytm_3)), k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0))))]   (4)  substitution:[[_G7973, _G8018], [k2_xboole_0(k5_arytm_3, k2_zfmisc_1(k1_tarski(k1_xboole_0), k5_arytm_3)), k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0))]]
+1.1.2  [- (k4_tarski(k1_xboole_0, k1_xboole_0)=k4_tarski(k11_arytm_3, k11_arytm_3)), k4_tarski(k11_arytm_3, k11_arytm_3)=k4_tarski(k1_xboole_0, k1_xboole_0)]   (9)  substitution:[[_G2430, _G2385], [k4_tarski(k1_xboole_0, k1_xboole_0), k4_tarski(k11_arytm_3, k11_arytm_3)]]
+1.1.2.1  [- (k4_tarski(k11_arytm_3, k11_arytm_3)=k4_tarski(k1_xboole_0, k1_xboole_0)), k11_arytm_3=k1_xboole_0, k11_arytm_3=k1_xboole_0]   (17)  substitution:[[_G6364, _G6499, _G6431, _G6568], [k11_arytm_3, k11_arytm_3, k1_xboole_0, k1_xboole_0]]
+1.1.2.1.1  [- (k11_arytm_3=k1_xboole_0)]   (3)  
+1.1.2.1.2  [- (k11_arytm_3=k1_xboole_0)]   (3)  
+1.1.3  [- (k5_arytm_3=k5_arytm_3)]   (8)  substitution:[[_G2286], [k5_arytm_3]]
+------------------------------------------------------
+End of proof for l8_numbers

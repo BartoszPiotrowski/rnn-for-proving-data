@@ -1,0 +1,23 @@
+
+t48_classes1 is a Theorem
+Start of proof for t48_classes1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_ordinal1(3^[])]
+ (2)  [r1_tarski(k3_tarski(3^[]), 3^[])]
+ (3)  [-r2_hidden(2^[_G1093, _G1035], _G1035), -r1_tarski(k3_tarski(_G1035), _G1093)]
+ (4)  [r1_tarski(2^[_G1093, _G1035], _G1093), -r1_tarski(k3_tarski(_G1035), _G1093)]
+ (5)  [-v1_ordinal1(_G744), -r2_hidden(1^[_G744], _G744)]
+ (6)  [-v1_ordinal1(_G744), r1_tarski(1^[_G744], _G744)]
+ (7)  [v1_ordinal1(_G744), r2_hidden(_G826, _G744), -r1_tarski(_G826, _G744)]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k3_tarski(3^[]), 3^[])]   (2)  
+1.1  [-r1_tarski(k3_tarski(3^[]), 3^[]), -r2_hidden(2^[3^[], 3^[]], 3^[])]   (3)  substitution:[[_G1035, _G1093], [3^[], 3^[]]]
+1.1.1  [r2_hidden(2^[3^[], 3^[]], 3^[]), v1_ordinal1(3^[]), -r1_tarski(2^[3^[], 3^[]], 3^[])]   (7)  substitution:[[_G826, _G744], [2^[3^[], 3^[]], 3^[]]]
+1.1.1.1  [-v1_ordinal1(3^[])]   (1)  
+1.1.1.2  [r1_tarski(2^[3^[], 3^[]], 3^[]), -r1_tarski(k3_tarski(3^[]), 3^[])]   (4)  substitution:[[_G1093, _G1035], [3^[], 3^[]]]
+1.1.1.2.1  [r1_tarski(k3_tarski(3^[]), 3^[])]   (2)  
+------------------------------------------------------
+End of proof for t48_classes1

@@ -1,0 +1,25 @@
+
+l34_afinsq_1 is a Theorem
+Start of proof for l34_afinsq_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-r2_hidden(k4_tarski(1^[], 2^[]), k1_tarski(k4_tarski(3^[], 4^[])))]
+ (2)  [1^[]=3^[], 2^[]=4^[]]
+ (3)  [r2_hidden(k4_tarski(_G3811, _G3880), k1_tarski(k4_tarski(_G3950, _G4021))), - (_G3811=_G3950)]
+ (4)  [r2_hidden(k4_tarski(_G3811, _G3880), k1_tarski(k4_tarski(_G3950, _G4021))), - (_G3880=_G4021)]
+ (5)  [_G2912=_G2961, - (k1_tarski(_G2912)=k1_tarski(_G2961))]
+ (6)  [- (k4_tarski(_G3181, _G3316)=k4_tarski(_G3248, _G3385)), _G3181=_G3248, _G3316=_G3385]
+ (7)  [-r2_hidden(_G2361, _G2498), r2_hidden(_G2294, _G2429), _G2294=_G2361, _G2429=_G2498]
+ (8)  [- (_G1521=_G1521)]
+ (9)  [_G1620=_G1665, - (_G1665=_G1620)]
+ (10)  [- (_G1853=_G1966), _G1853=_G1909, _G1909=_G1966]
+
+Connection Proof:
+-----------------
+1  [1^[]=3^[], 2^[]=4^[]]   (2)  
+1.1  [- (1^[]=3^[]), r2_hidden(k4_tarski(1^[], 2^[]), k1_tarski(k4_tarski(3^[], 4^[])))]   (3)  substitution:[[_G3811, _G3950, _G3880, _G4021], [1^[], 3^[], 2^[], 4^[]]]
+1.1.1  [-r2_hidden(k4_tarski(1^[], 2^[]), k1_tarski(k4_tarski(3^[], 4^[])))]   (1)  
+1.2  [- (2^[]=4^[]), r2_hidden(k4_tarski(1^[], 2^[]), k1_tarski(k4_tarski(3^[], 4^[])))]   (4)  substitution:[[_G3880, _G4021, _G3811, _G3950], [2^[], 4^[], 1^[], 3^[]]]
+1.2.1  [-r2_hidden(k4_tarski(1^[], 2^[]), k1_tarski(k4_tarski(3^[], 4^[])))]   (1)  
+------------------------------------------------------
+End of proof for l34_afinsq_1

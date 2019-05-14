@@ -1,0 +1,68 @@
+
+t32_mmlquery is a Theorem
+Start of proof for t32_mmlquery
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(2^[], 1^[])]
+ (2)  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]
+ (3)  [-m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]
+ (4)  [k1_mmlquery(1^[], k20_mmlquery(1^[], 3^[], 4^[]), 2^[])=k16_mmlquery(1^[], k1_mmlquery(1^[], 3^[], 2^[]), k1_mmlquery(1^[], 4^[], 2^[]))]
+ (5)  [m1_subset_1(_G11945, k1_zfmisc_1(k2_zfmisc_1(_G11836, _G11890))), -v1_relat_1(_G11945)]
+ (6)  [-m1_subset_1(k1_mmlquery(_G12188, _G12255, _G12323), k1_zfmisc_1(_G12188)), m1_subset_1(_G12255, k1_zfmisc_1(k2_zfmisc_1(_G12188, _G12188))), m1_subset_1(_G12323, _G12188)]
+ (7)  [-m1_subset_1(k20_mmlquery(_G12778, _G12853, _G12929), k1_zfmisc_1(k2_zfmisc_1(_G12778, _G12778))), m1_subset_1(_G12853, k1_zfmisc_1(k2_zfmisc_1(_G12778, _G12778))), m1_subset_1(_G12929, k1_zfmisc_1(k2_zfmisc_1(_G12778, _G12778)))]
+ (8)  [- (k16_mmlquery(_G13484, _G13551, _G13619)=k2_xboole_0(_G13551, _G13619)), m1_subset_1(_G13551, k1_zfmisc_1(_G13484)), m1_subset_1(_G13619, k1_zfmisc_1(_G13484))]
+ (9)  [- (k1_mmlquery(_G14074, _G14142, _G14211)=k9_relat_1(_G14142, _G14211)), m1_subset_1(_G14142, k1_zfmisc_1(k2_zfmisc_1(_G14074, _G14074))), m1_subset_1(_G14211, _G14074)]
+ (10)  [- (k20_mmlquery(_G14692, _G14765, _G14839)=k2_xboole_0(_G14765, _G14839)), m1_subset_1(_G14765, k1_zfmisc_1(k2_zfmisc_1(_G14692, _G14692))), m1_subset_1(_G14839, k1_zfmisc_1(k2_zfmisc_1(_G14692, _G14692)))]
+ (11)  [v1_relat_1(_G15438), v1_relat_1(_G15540), - (k9_relat_1(k2_xboole_0(_G15438, _G15540), _G15369)=k2_xboole_0(k9_relat_1(_G15438, _G15369), k9_relat_1(_G15540, _G15369)))]
+ (12)  [- (_G4855=_G4855)]
+ (13)  [_G4954=_G4999, - (_G4999=_G4954)]
+ (14)  [- (_G5187=_G5300), _G5187=_G5243, _G5243=_G5300]
+ (15)  [-v1_relat_1(_G5686), _G5637=_G5686, v1_relat_1(_G5637)]
+ (16)  [-m1_subset_1(_G5973, _G6110), m1_subset_1(_G5906, _G6041), _G5906=_G5973, _G6041=_G6110]
+ (17)  [- (k2_xboole_0(_G6545, _G6680)=k2_xboole_0(_G6612, _G6749)), _G6545=_G6612, _G6680=_G6749]
+ (18)  [- (k9_relat_1(_G7142, _G7277)=k9_relat_1(_G7209, _G7346)), _G7142=_G7209, _G7277=_G7346]
+ (19)  [_G7739=_G7788, - (k1_zfmisc_1(_G7739)=k1_zfmisc_1(_G7788))]
+ (20)  [- (k2_zfmisc_1(_G8017, _G8152)=k2_zfmisc_1(_G8084, _G8221)), _G8017=_G8084, _G8152=_G8221]
+ (21)  [- (k20_mmlquery(_G8614, _G8785, _G8960)=k20_mmlquery(_G8699, _G8872, _G9049)), _G8614=_G8699, _G8785=_G8872, _G8960=_G9049]
+ (22)  [- (k16_mmlquery(_G9642, _G9813, _G9988)=k16_mmlquery(_G9727, _G9900, _G10077)), _G9642=_G9727, _G9813=_G9900, _G9988=_G10077]
+ (23)  [- (k1_mmlquery(_G10661, _G10832, _G11007)=k1_mmlquery(_G10746, _G10919, _G11096)), _G10661=_G10746, _G10832=_G10919, _G11007=_G11096]
+
+Connection Proof:
+-----------------
+1  [k1_mmlquery(1^[], k20_mmlquery(1^[], 3^[], 4^[]), 2^[])=k16_mmlquery(1^[], k1_mmlquery(1^[], 3^[], 2^[]), k1_mmlquery(1^[], 4^[], 2^[]))]   (4)  
+1.1  [- (k1_mmlquery(1^[], k20_mmlquery(1^[], 3^[], 4^[]), 2^[])=k16_mmlquery(1^[], k1_mmlquery(1^[], 3^[], 2^[]), k1_mmlquery(1^[], 4^[], 2^[]))), k1_mmlquery(1^[], k20_mmlquery(1^[], 3^[], 4^[]), 2^[])=k2_xboole_0(k9_relat_1(3^[], 2^[]), k9_relat_1(4^[], 2^[])), k2_xboole_0(k9_relat_1(3^[], 2^[]), k9_relat_1(4^[], 2^[]))=k16_mmlquery(1^[], k1_mmlquery(1^[], 3^[], 2^[]), k1_mmlquery(1^[], 4^[], 2^[]))]   (14)  substitution:[[_G5187, _G5300, _G5243], [k1_mmlquery(1^[], k20_mmlquery(1^[], 3^[], 4^[]), 2^[]), k16_mmlquery(1^[], k1_mmlquery(1^[], 3^[], 2^[]), k1_mmlquery(1^[], 4^[], 2^[])), k2_xboole_0(k9_relat_1(3^[], 2^[]), k9_relat_1(4^[], 2^[]))]]
+1.1.1  [- (k1_mmlquery(1^[], k20_mmlquery(1^[], 3^[], 4^[]), 2^[])=k2_xboole_0(k9_relat_1(3^[], 2^[]), k9_relat_1(4^[], 2^[]))), k1_mmlquery(1^[], k20_mmlquery(1^[], 3^[], 4^[]), 2^[])=k9_relat_1(k20_mmlquery(1^[], 3^[], 4^[]), 2^[]), k9_relat_1(k20_mmlquery(1^[], 3^[], 4^[]), 2^[])=k2_xboole_0(k9_relat_1(3^[], 2^[]), k9_relat_1(4^[], 2^[]))]   (14)  substitution:[[_G5187, _G5300, _G5243], [k1_mmlquery(1^[], k20_mmlquery(1^[], 3^[], 4^[]), 2^[]), k2_xboole_0(k9_relat_1(3^[], 2^[]), k9_relat_1(4^[], 2^[])), k9_relat_1(k20_mmlquery(1^[], 3^[], 4^[]), 2^[])]]
+1.1.1.1  [- (k1_mmlquery(1^[], k20_mmlquery(1^[], 3^[], 4^[]), 2^[])=k9_relat_1(k20_mmlquery(1^[], 3^[], 4^[]), 2^[])), m1_subset_1(k20_mmlquery(1^[], 3^[], 4^[]), k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[]))), m1_subset_1(2^[], 1^[])]   (9)  substitution:[[_G14074, _G14142, _G14211], [1^[], k20_mmlquery(1^[], 3^[], 4^[]), 2^[]]]
+1.1.1.1.1  [-m1_subset_1(k20_mmlquery(1^[], 3^[], 4^[]), k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[]))), m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[]))), m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]   (7)  substitution:[[_G12778, _G12853, _G12929], [1^[], 3^[], 4^[]]]
+1.1.1.1.1.1  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]   (2)  
+1.1.1.1.1.2  [-m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]   (3)  
+1.1.1.1.2  [-m1_subset_1(2^[], 1^[])]   (1)  
+1.1.1.2  [- (k9_relat_1(k20_mmlquery(1^[], 3^[], 4^[]), 2^[])=k2_xboole_0(k9_relat_1(3^[], 2^[]), k9_relat_1(4^[], 2^[]))), k9_relat_1(k20_mmlquery(1^[], 3^[], 4^[]), 2^[])=k9_relat_1(k2_xboole_0(3^[], 4^[]), 2^[]), k9_relat_1(k2_xboole_0(3^[], 4^[]), 2^[])=k2_xboole_0(k9_relat_1(3^[], 2^[]), k9_relat_1(4^[], 2^[]))]   (14)  substitution:[[_G5187, _G5300, _G5243], [k9_relat_1(k20_mmlquery(1^[], 3^[], 4^[]), 2^[]), k2_xboole_0(k9_relat_1(3^[], 2^[]), k9_relat_1(4^[], 2^[])), k9_relat_1(k2_xboole_0(3^[], 4^[]), 2^[])]]
+1.1.1.2.1  [- (k9_relat_1(k20_mmlquery(1^[], 3^[], 4^[]), 2^[])=k9_relat_1(k2_xboole_0(3^[], 4^[]), 2^[])), k20_mmlquery(1^[], 3^[], 4^[])=k2_xboole_0(3^[], 4^[]), 2^[]=2^[]]   (18)  substitution:[[_G7142, _G7277, _G7209, _G7346], [k20_mmlquery(1^[], 3^[], 4^[]), 2^[], k2_xboole_0(3^[], 4^[]), 2^[]]]
+1.1.1.2.1.1  [- (k20_mmlquery(1^[], 3^[], 4^[])=k2_xboole_0(3^[], 4^[])), m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[]))), m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]   (10)  substitution:[[_G14692, _G14765, _G14839], [1^[], 3^[], 4^[]]]
+1.1.1.2.1.1.1  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]   (2)  
+1.1.1.2.1.1.2  [-m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]   (3)  
+1.1.1.2.1.2  [- (2^[]=2^[])]   (12)  substitution:[[_G898], [2^[]]]
+1.1.1.2.2  [- (k9_relat_1(k2_xboole_0(3^[], 4^[]), 2^[])=k2_xboole_0(k9_relat_1(3^[], 2^[]), k9_relat_1(4^[], 2^[]))), v1_relat_1(3^[]), v1_relat_1(4^[])]   (11)  substitution:[[_G1238, _G1241, _G1237], [3^[], 4^[], 2^[]]]
+1.1.1.2.2.1  [-v1_relat_1(3^[]), m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]   (5)  substitution:[[_G1096, _G1094, _G1095], [3^[], 1^[], 1^[]]]
+1.1.1.2.2.1.1  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]   (2)  
+1.1.1.2.2.2  [-v1_relat_1(4^[]), m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]   (5)  substitution:[[_G1096, _G1094, _G1095], [4^[], 1^[], 1^[]]]
+1.1.1.2.2.2.1  [-m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]   (3)  
+1.1.2  [- (k2_xboole_0(k9_relat_1(3^[], 2^[]), k9_relat_1(4^[], 2^[]))=k16_mmlquery(1^[], k1_mmlquery(1^[], 3^[], 2^[]), k1_mmlquery(1^[], 4^[], 2^[]))), k16_mmlquery(1^[], k1_mmlquery(1^[], 3^[], 2^[]), k1_mmlquery(1^[], 4^[], 2^[]))=k2_xboole_0(k9_relat_1(3^[], 2^[]), k9_relat_1(4^[], 2^[]))]   (13)  substitution:[[_G903, _G902], [k2_xboole_0(k9_relat_1(3^[], 2^[]), k9_relat_1(4^[], 2^[])), k16_mmlquery(1^[], k1_mmlquery(1^[], 3^[], 2^[]), k1_mmlquery(1^[], 4^[], 2^[]))]]
+1.1.2.1  [- (k16_mmlquery(1^[], k1_mmlquery(1^[], 3^[], 2^[]), k1_mmlquery(1^[], 4^[], 2^[]))=k2_xboole_0(k9_relat_1(3^[], 2^[]), k9_relat_1(4^[], 2^[]))), k16_mmlquery(1^[], k1_mmlquery(1^[], 3^[], 2^[]), k1_mmlquery(1^[], 4^[], 2^[]))=k2_xboole_0(k1_mmlquery(1^[], 3^[], 2^[]), k1_mmlquery(1^[], 4^[], 2^[])), k2_xboole_0(k1_mmlquery(1^[], 3^[], 2^[]), k1_mmlquery(1^[], 4^[], 2^[]))=k2_xboole_0(k9_relat_1(3^[], 2^[]), k9_relat_1(4^[], 2^[]))]   (14)  substitution:[[_G910, _G912, _G911], [k16_mmlquery(1^[], k1_mmlquery(1^[], 3^[], 2^[]), k1_mmlquery(1^[], 4^[], 2^[])), k2_xboole_0(k9_relat_1(3^[], 2^[]), k9_relat_1(4^[], 2^[])), k2_xboole_0(k1_mmlquery(1^[], 3^[], 2^[]), k1_mmlquery(1^[], 4^[], 2^[]))]]
+1.1.2.1.1  [- (k16_mmlquery(1^[], k1_mmlquery(1^[], 3^[], 2^[]), k1_mmlquery(1^[], 4^[], 2^[]))=k2_xboole_0(k1_mmlquery(1^[], 3^[], 2^[]), k1_mmlquery(1^[], 4^[], 2^[]))), m1_subset_1(k1_mmlquery(1^[], 3^[], 2^[]), k1_zfmisc_1(1^[])), m1_subset_1(k1_mmlquery(1^[], 4^[], 2^[]), k1_zfmisc_1(1^[]))]   (8)  substitution:[[_G1161, _G1162, _G1163], [1^[], k1_mmlquery(1^[], 3^[], 2^[]), k1_mmlquery(1^[], 4^[], 2^[])]]
+1.1.2.1.1.1  [-m1_subset_1(k1_mmlquery(1^[], 3^[], 2^[]), k1_zfmisc_1(1^[])), m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[]))), m1_subset_1(2^[], 1^[])]   (6)  substitution:[[_G1107, _G1108, _G1109], [1^[], 3^[], 2^[]]]
+1.1.2.1.1.1.1  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]   (2)  
+1.1.2.1.1.1.2  [-m1_subset_1(2^[], 1^[])]   (1)  
+1.1.2.1.1.2  [-m1_subset_1(k1_mmlquery(1^[], 4^[], 2^[]), k1_zfmisc_1(1^[])), m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[]))), m1_subset_1(2^[], 1^[])]   (6)  substitution:[[_G1107, _G1108, _G1109], [1^[], 4^[], 2^[]]]
+1.1.2.1.1.2.1  [-m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]   (3)  
+1.1.2.1.1.2.2  [-m1_subset_1(2^[], 1^[])]   (1)  
+1.1.2.1.2  [- (k2_xboole_0(k1_mmlquery(1^[], 3^[], 2^[]), k1_mmlquery(1^[], 4^[], 2^[]))=k2_xboole_0(k9_relat_1(3^[], 2^[]), k9_relat_1(4^[], 2^[]))), k1_mmlquery(1^[], 3^[], 2^[])=k9_relat_1(3^[], 2^[]), k1_mmlquery(1^[], 4^[], 2^[])=k9_relat_1(4^[], 2^[])]   (17)  substitution:[[_G947, _G949, _G948, _G950], [k1_mmlquery(1^[], 3^[], 2^[]), k1_mmlquery(1^[], 4^[], 2^[]), k9_relat_1(3^[], 2^[]), k9_relat_1(4^[], 2^[])]]
+1.1.2.1.2.1  [- (k1_mmlquery(1^[], 3^[], 2^[])=k9_relat_1(3^[], 2^[])), m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[]))), m1_subset_1(2^[], 1^[])]   (9)  substitution:[[_G1184, _G1185, _G1186], [1^[], 3^[], 2^[]]]
+1.1.2.1.2.1.1  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]   (2)  
+1.1.2.1.2.1.2  [-m1_subset_1(2^[], 1^[])]   (1)  
+1.1.2.1.2.2  [- (k1_mmlquery(1^[], 4^[], 2^[])=k9_relat_1(4^[], 2^[])), m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[]))), m1_subset_1(2^[], 1^[])]   (9)  substitution:[[_G1184, _G1185, _G1186], [1^[], 4^[], 2^[]]]
+1.1.2.1.2.2.1  [-m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]   (3)  
+1.1.2.1.2.2.2  [-m1_subset_1(2^[], 1^[])]   (1)  
+------------------------------------------------------
+End of proof for t32_mmlquery

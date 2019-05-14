@@ -1,0 +1,36 @@
+
+t4_matrix_5 is a Theorem
+Start of proof for t4_matrix_5
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_matrix_1(1^[])]
+ (2)  [-m2_finseq_1(1^[], k3_finseq_2(u1_struct_0(k1_complfld)))]
+ (3)  [-v1_matrix_1(2^[])]
+ (4)  [-m2_finseq_1(2^[], k3_finseq_2(u1_struct_0(k1_complfld)))]
+ (5)  [- (k2_matrix_5(1^[])=k2_matrix_5(2^[]))]
+ (6)  [1^[]=2^[]]
+ (7)  [- (k2_matrix_5(_G4202)=_G4202), v1_matrix_1(_G4202), m2_finseq_1(_G4202, k3_finseq_2(u1_struct_0(k1_complfld)))]
+ (8)  [_G3323=_G3372, - (k3_finseq_2(_G3323)=k3_finseq_2(_G3372))]
+ (9)  [_G3601=_G3650, - (u1_struct_0(_G3601)=u1_struct_0(_G3650))]
+ (10)  [_G3870=_G3919, - (k2_matrix_5(_G3870)=k2_matrix_5(_G3919))]
+ (11)  [- (_G1633=_G1633)]
+ (12)  [_G1732=_G1777, - (_G1777=_G1732)]
+ (13)  [- (_G1965=_G2078), _G1965=_G2021, _G2021=_G2078]
+ (14)  [-v1_matrix_1(_G2464), _G2415=_G2464, v1_matrix_1(_G2415)]
+ (15)  [-m2_finseq_1(_G2751, _G2888), m2_finseq_1(_G2684, _G2819), _G2684=_G2751, _G2819=_G2888]
+
+Connection Proof:
+-----------------
+1  [1^[]=2^[]]   (6)  
+1.1  [- (1^[]=2^[]), 1^[]=k2_matrix_5(1^[]), k2_matrix_5(1^[])=2^[]]   (13)  substitution:[[_G1965, _G2078, _G2021], [1^[], 2^[], k2_matrix_5(1^[])]]
+1.1.1  [- (1^[]=k2_matrix_5(1^[])), k2_matrix_5(1^[])=1^[]]   (12)  substitution:[[_G1777, _G1732], [1^[], k2_matrix_5(1^[])]]
+1.1.1.1  [- (k2_matrix_5(1^[])=1^[]), v1_matrix_1(1^[]), m2_finseq_1(1^[], k3_finseq_2(u1_struct_0(k1_complfld)))]   (7)  substitution:[[_G4202], [1^[]]]
+1.1.1.1.1  [-v1_matrix_1(1^[])]   (1)  
+1.1.1.1.2  [-m2_finseq_1(1^[], k3_finseq_2(u1_struct_0(k1_complfld)))]   (2)  
+1.1.2  [- (k2_matrix_5(1^[])=2^[]), k2_matrix_5(1^[])=k2_matrix_5(2^[]), k2_matrix_5(2^[])=2^[]]   (13)  substitution:[[_G1965, _G2078, _G2021], [k2_matrix_5(1^[]), 2^[], k2_matrix_5(2^[])]]
+1.1.2.1  [- (k2_matrix_5(1^[])=k2_matrix_5(2^[]))]   (5)  
+1.1.2.2  [- (k2_matrix_5(2^[])=2^[]), v1_matrix_1(2^[]), m2_finseq_1(2^[], k3_finseq_2(u1_struct_0(k1_complfld)))]   (7)  substitution:[[_G4202], [2^[]]]
+1.1.2.2.1  [-v1_matrix_1(2^[])]   (3)  
+1.1.2.2.2  [-m2_finseq_1(2^[], k3_finseq_2(u1_struct_0(k1_complfld)))]   (4)  
+------------------------------------------------------
+End of proof for t4_matrix_5

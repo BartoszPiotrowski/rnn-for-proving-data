@@ -1,0 +1,67 @@
+
+t39_card_1 is a Theorem
+Start of proof for t39_card_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v7_ordinal1(2^[])]
+ (2)  [v1_finset_1(2^[]), v1_finset_1(k1_card_1(2^[]))]
+ (3)  [v7_ordinal1(_G7654), -v1_card_1(_G7654)]
+ (4)  [v7_ordinal1(_G7785), -r2_hidden(_G7785, k4_ordinal1)]
+ (5)  [-v7_ordinal1(_G7785), r2_hidden(_G7785, k4_ordinal1)]
+ (6)  [-v1_relat_1(k4_relat_1(_G8727))]
+ (7)  [-v1_funct_1(k4_relat_1(_G8727))]
+ (8)  [-r2_wellord2(_G8890, _G8890)]
+ (9)  [- (k9_xtuple_0(k4_relat_1(_G9033))=_G9033)]
+ (10)  [- (k10_xtuple_0(k4_relat_1(_G9033))=_G9033)]
+ (11)  [v1_card_1(_G8456), _G8456=k1_card_1(_G8404), -r2_wellord2(_G8404, _G8456)]
+ (12)  [v1_card_1(_G8456), - (_G8456=k1_card_1(_G8404)), r2_wellord2(_G8404, _G8456)]
+ (13)  [v1_finset_1(_G7942), -v1_relat_1(1^[_G7942])]
+ (14)  [v1_finset_1(_G7942), -v1_funct_1(1^[_G7942])]
+ (15)  [v1_finset_1(_G7942), - (k10_xtuple_0(1^[_G7942])=_G7942)]
+ (16)  [v1_finset_1(_G7942), -r2_hidden(k9_xtuple_0(1^[_G7942]), k4_ordinal1)]
+ (17)  [-v1_finset_1(_G7942), v1_funct_1(_G8038), v1_relat_1(_G8038), k10_xtuple_0(_G8038)=_G7942, r2_hidden(k9_xtuple_0(_G8038), k4_ordinal1)]
+ (18)  [_G6467=_G6516, - (k9_xtuple_0(_G6467)=k9_xtuple_0(_G6516))]
+ (19)  [_G6745=_G6794, - (k10_xtuple_0(_G6745)=k10_xtuple_0(_G6794))]
+ (20)  [_G7023=_G7072, - (k4_relat_1(_G7023)=k4_relat_1(_G7072))]
+ (21)  [_G7292=_G7341, - (k1_card_1(_G7292)=k1_card_1(_G7341))]
+ (22)  [- (_G2963=_G2963)]
+ (23)  [_G3062=_G3107, - (_G3107=_G3062)]
+ (24)  [- (_G3295=_G3408), _G3295=_G3351, _G3351=_G3408]
+ (25)  [-r2_hidden(_G3812, _G3949), r2_hidden(_G3745, _G3880), _G3745=_G3812, _G3880=_G3949]
+ (26)  [-v1_card_1(_G4391), _G4342=_G4391, v1_card_1(_G4342)]
+ (27)  [-v1_relat_1(_G4669), _G4620=_G4669, v1_relat_1(_G4620)]
+ (28)  [-v1_funct_1(_G4947), _G4898=_G4947, v1_funct_1(_G4898)]
+ (29)  [-r2_wellord2(_G5243, _G5380), r2_wellord2(_G5176, _G5311), _G5176=_G5243, _G5311=_G5380]
+ (30)  [-v7_ordinal1(_G5822), _G5773=_G5822, v7_ordinal1(_G5773)]
+ (31)  [-v1_finset_1(_G6091), _G6042=_G6091, v1_finset_1(_G6042)]
+
+Connection Proof:
+-----------------
+1  [v1_finset_1(2^[]), v1_finset_1(k1_card_1(2^[]))]   (2)  
+1.1  [-v1_finset_1(2^[]), v1_funct_1(k4_relat_1(2^[])), v1_relat_1(k4_relat_1(2^[])), k10_xtuple_0(k4_relat_1(2^[]))=2^[], r2_hidden(k9_xtuple_0(k4_relat_1(2^[])), k4_ordinal1)]   (17)  substitution:[[_G7942, _G8038], [2^[], k4_relat_1(2^[])]]
+1.1.1  [-v1_funct_1(k4_relat_1(2^[]))]   (7)  substitution:[[_G8727], [2^[]]]
+1.1.2  [-v1_relat_1(k4_relat_1(2^[]))]   (6)  substitution:[[_G8727], [2^[]]]
+1.1.3  [- (k10_xtuple_0(k4_relat_1(2^[]))=2^[])]   (10)  substitution:[[_G9033], [2^[]]]
+1.1.4  [-r2_hidden(k9_xtuple_0(k4_relat_1(2^[])), k4_ordinal1), r2_hidden(2^[], k4_ordinal1), 2^[]=k9_xtuple_0(k4_relat_1(2^[])), k4_ordinal1=k4_ordinal1]   (25)  substitution:[[_G3812, _G3949, _G3745, _G3880], [k9_xtuple_0(k4_relat_1(2^[])), k4_ordinal1, 2^[], k4_ordinal1]]
+1.1.4.1  [-r2_hidden(2^[], k4_ordinal1), v7_ordinal1(2^[])]   (4)  substitution:[[_G7785], [2^[]]]
+1.1.4.1.1  [-v7_ordinal1(2^[])]   (1)  
+1.1.4.2  [- (2^[]=k9_xtuple_0(k4_relat_1(2^[]))), k9_xtuple_0(k4_relat_1(2^[]))=2^[]]   (23)  substitution:[[_G3107, _G3062], [2^[], k9_xtuple_0(k4_relat_1(2^[]))]]
+1.1.4.2.1  [- (k9_xtuple_0(k4_relat_1(2^[]))=2^[])]   (9)  substitution:[[_G9033], [2^[]]]
+1.1.4.3  [- (k4_ordinal1=k4_ordinal1)]   (22)  substitution:[[_G2963], [k4_ordinal1]]
+1.2  [-v1_finset_1(k1_card_1(2^[])), v1_funct_1(k4_relat_1(k1_card_1(2^[]))), v1_relat_1(k4_relat_1(k1_card_1(2^[]))), k10_xtuple_0(k4_relat_1(k1_card_1(2^[])))=k1_card_1(2^[]), r2_hidden(k9_xtuple_0(k4_relat_1(k1_card_1(2^[]))), k4_ordinal1)]   (17)  substitution:[[_G7942, _G8038], [k1_card_1(2^[]), k4_relat_1(k1_card_1(2^[]))]]
+1.2.1  [-v1_funct_1(k4_relat_1(k1_card_1(2^[])))]   (7)  substitution:[[_G8727], [k1_card_1(2^[])]]
+1.2.2  [-v1_relat_1(k4_relat_1(k1_card_1(2^[])))]   (6)  substitution:[[_G8727], [k1_card_1(2^[])]]
+1.2.3  [- (k10_xtuple_0(k4_relat_1(k1_card_1(2^[])))=k1_card_1(2^[]))]   (10)  substitution:[[_G9033], [k1_card_1(2^[])]]
+1.2.4  [-r2_hidden(k9_xtuple_0(k4_relat_1(k1_card_1(2^[]))), k4_ordinal1), r2_hidden(2^[], k4_ordinal1), 2^[]=k9_xtuple_0(k4_relat_1(k1_card_1(2^[]))), k4_ordinal1=k4_ordinal1]   (25)  substitution:[[_G3812, _G3949, _G3745, _G3880], [k9_xtuple_0(k4_relat_1(k1_card_1(2^[]))), k4_ordinal1, 2^[], k4_ordinal1]]
+1.2.4.1  [-r2_hidden(2^[], k4_ordinal1), v7_ordinal1(2^[])]   (4)  substitution:[[_G7785], [2^[]]]
+1.2.4.1.1  [-v7_ordinal1(2^[])]   (1)  
+1.2.4.2  [- (2^[]=k9_xtuple_0(k4_relat_1(k1_card_1(2^[])))), 2^[]=k1_card_1(2^[]), k1_card_1(2^[])=k9_xtuple_0(k4_relat_1(k1_card_1(2^[])))]   (24)  substitution:[[_G3295, _G3408, _G3351], [2^[], k9_xtuple_0(k4_relat_1(k1_card_1(2^[]))), k1_card_1(2^[])]]
+1.2.4.2.1  [- (2^[]=k1_card_1(2^[])), v1_card_1(2^[]), r2_wellord2(2^[], 2^[])]   (12)  substitution:[[_G8456, _G8404], [2^[], 2^[]]]
+1.2.4.2.1.1  [-v1_card_1(2^[]), v7_ordinal1(2^[])]   (3)  substitution:[[_G7654], [2^[]]]
+1.2.4.2.1.1.1  [-v7_ordinal1(2^[])]   (1)  
+1.2.4.2.1.2  [-r2_wellord2(2^[], 2^[])]   (8)  substitution:[[_G8890], [2^[]]]
+1.2.4.2.2  [- (k1_card_1(2^[])=k9_xtuple_0(k4_relat_1(k1_card_1(2^[])))), k9_xtuple_0(k4_relat_1(k1_card_1(2^[])))=k1_card_1(2^[])]   (23)  substitution:[[_G3107, _G3062], [k1_card_1(2^[]), k9_xtuple_0(k4_relat_1(k1_card_1(2^[])))]]
+1.2.4.2.2.1  [- (k9_xtuple_0(k4_relat_1(k1_card_1(2^[])))=k1_card_1(2^[]))]   (9)  substitution:[[_G9033], [k1_card_1(2^[])]]
+1.2.4.3  [- (k4_ordinal1=k4_ordinal1)]   (22)  substitution:[[_G2963], [k4_ordinal1]]
+------------------------------------------------------
+End of proof for t39_card_1

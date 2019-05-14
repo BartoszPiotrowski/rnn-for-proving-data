@@ -1,0 +1,48 @@
+
+t16_comput_1 is a Theorem
+Start of proof for t16_comput_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], k5_numbers)]
+ (2)  [v1_xboole_0(2^[])]
+ (3)  [-v1_relat_1(3^[])]
+ (4)  [-r1_tarski(k9_xtuple_0(3^[]), k4_finseq_2(1^[], 2^[]))]
+ (5)  [v2_margrel1(3^[])]
+ (6)  [v2_card_3(_G7457), m1_subset_1(_G7540, k1_zfmisc_1(_G7457)), -v2_card_3(_G7540)]
+ (7)  [m1_subset_1(_G7748, k4_ordinal1), -v7_ordinal1(_G7748)]
+ (8)  [v1_relat_1(_G7905), v2_margrel1(_G7905), -v2_card_3(k9_xtuple_0(_G7905))]
+ (9)  [v1_relat_1(_G7905), -v2_margrel1(_G7905), v2_card_3(k9_xtuple_0(_G7905))]
+ (10)  [v7_ordinal1(_G8110), -v2_card_3(k4_finseq_2(_G8110, _G8156))]
+ (11)  [- (k5_numbers=k4_ordinal1)]
+ (12)  [m1_subset_1(_G8391, k1_zfmisc_1(_G8438)), -r1_tarski(_G8391, _G8438)]
+ (13)  [-m1_subset_1(_G8391, k1_zfmisc_1(_G8438)), r1_tarski(_G8391, _G8438)]
+ (14)  [_G6250=_G6299, - (k1_zfmisc_1(_G6250)=k1_zfmisc_1(_G6299))]
+ (15)  [_G6528=_G6577, - (k9_xtuple_0(_G6528)=k9_xtuple_0(_G6577))]
+ (16)  [- (k4_finseq_2(_G6797, _G6932)=k4_finseq_2(_G6864, _G7001)), _G6797=_G6864, _G6932=_G7001]
+ (17)  [- (_G2746=_G2746)]
+ (18)  [_G2845=_G2890, - (_G2890=_G2845)]
+ (19)  [- (_G3078=_G3191), _G3078=_G3134, _G3134=_G3191]
+ (20)  [-v7_ordinal1(_G3577), _G3528=_G3577, v7_ordinal1(_G3528)]
+ (21)  [-v2_card_3(_G3855), _G3806=_G3855, v2_card_3(_G3806)]
+ (22)  [-m1_subset_1(_G4151, _G4288), m1_subset_1(_G4084, _G4219), _G4084=_G4151, _G4219=_G4288]
+ (23)  [-v1_xboole_0(_G4730), _G4681=_G4730, v1_xboole_0(_G4681)]
+ (24)  [-v1_relat_1(_G5008), _G4959=_G5008, v1_relat_1(_G4959)]
+ (25)  [-v2_margrel1(_G5874), _G5825=_G5874, v2_margrel1(_G5825)]
+ (26)  [-r1_tarski(_G5304, _G5441), r1_tarski(_G5237, _G5372), _G5237=_G5304, _G5372=_G5441]
+
+Connection Proof:
+-----------------
+1  [v2_margrel1(3^[])]   (5)  
+1.1  [-v2_margrel1(3^[]), v1_relat_1(3^[]), v2_card_3(k9_xtuple_0(3^[]))]   (9)  substitution:[[_G7905], [3^[]]]
+1.1.1  [-v1_relat_1(3^[])]   (3)  
+1.1.2  [-v2_card_3(k9_xtuple_0(3^[])), v2_card_3(k4_finseq_2(1^[], 2^[])), m1_subset_1(k9_xtuple_0(3^[]), k1_zfmisc_1(k4_finseq_2(1^[], 2^[])))]   (6)  substitution:[[_G7540, _G7457], [k9_xtuple_0(3^[]), k4_finseq_2(1^[], 2^[])]]
+1.1.2.1  [-v2_card_3(k4_finseq_2(1^[], 2^[])), v7_ordinal1(1^[])]   (10)  substitution:[[_G8110, _G8156], [1^[], 2^[]]]
+1.1.2.1.1  [-v7_ordinal1(1^[]), m1_subset_1(1^[], k4_ordinal1)]   (7)  substitution:[[_G7748], [1^[]]]
+1.1.2.1.1.1  [-m1_subset_1(1^[], k4_ordinal1), m1_subset_1(1^[], k5_numbers), 1^[]=1^[], k5_numbers=k4_ordinal1]   (22)  substitution:[[_G4151, _G4288, _G4084, _G4219], [1^[], k4_ordinal1, 1^[], k5_numbers]]
+1.1.2.1.1.1.1  [-m1_subset_1(1^[], k5_numbers)]   (1)  
+1.1.2.1.1.1.2  [- (1^[]=1^[])]   (17)  substitution:[[_G2746], [1^[]]]
+1.1.2.1.1.1.3  [- (k5_numbers=k4_ordinal1)]   (11)  
+1.1.2.2  [-m1_subset_1(k9_xtuple_0(3^[]), k1_zfmisc_1(k4_finseq_2(1^[], 2^[]))), r1_tarski(k9_xtuple_0(3^[]), k4_finseq_2(1^[], 2^[]))]   (13)  substitution:[[_G8391, _G8438], [k9_xtuple_0(3^[]), k4_finseq_2(1^[], 2^[])]]
+1.1.2.2.1  [-r1_tarski(k9_xtuple_0(3^[]), k4_finseq_2(1^[], 2^[]))]   (4)  
+------------------------------------------------------
+End of proof for t16_comput_1

@@ -1,0 +1,71 @@
+
+t40_sysrel is a Theorem
+Start of proof for t40_sysrel
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-4^[], k1_sysrel(1^[])=k1_sysrel(2^[])]
+ (2)  [-4^[], - (k3_relat_1(k6_subset_1(1^[], k4_relat_1(k9_xtuple_0(1^[]))), 1^[])=k1_xboole_0)]
+ (3)  [-4^[], - (k3_relat_1(1^[], 2^[])=2^[])]
+ (4)  [-4^[], - (k3_relat_1(k6_subset_1(2^[], k4_relat_1(k9_xtuple_0(2^[]))), 2^[])=k1_xboole_0)]
+ (5)  [-4^[], - (k3_relat_1(2^[], 1^[])=1^[])]
+ (6)  [-3^[], k1_sysrel(1^[])=k1_sysrel(2^[])]
+ (7)  [-3^[], - (k3_relat_1(1^[], k6_subset_1(1^[], k4_relat_1(k9_xtuple_0(1^[]))))=k1_xboole_0)]
+ (8)  [-3^[], - (k3_relat_1(2^[], 1^[])=2^[])]
+ (9)  [-3^[], - (k3_relat_1(2^[], k6_subset_1(2^[], k4_relat_1(k9_xtuple_0(2^[]))))=k1_xboole_0)]
+ (10)  [-3^[], - (k3_relat_1(1^[], 2^[])=1^[])]
+ (11)  [-v1_relat_1(1^[])]
+ (12)  [-v1_relat_1(2^[])]
+ (13)  [3^[], 4^[]]
+ (14)  [_G7363=_G7414, -r1_tarski(_G7363, _G7414)]
+ (15)  [_G7363=_G7414, -r1_tarski(_G7414, _G7363)]
+ (16)  [- (_G7363=_G7414), r1_tarski(_G7363, _G7414), r1_tarski(_G7414, _G7363)]
+ (17)  [v1_relat_1(_G7686), v1_relat_1(_G7831), -r1_tarski(k1_sysrel(_G7686), k1_sysrel(_G7831)), k3_relat_1(_G7686, _G7831)=_G7686, k3_relat_1(_G7831, k6_subset_1(_G7831, k4_relat_1(k9_xtuple_0(_G7831))))=k1_xboole_0]
+ (18)  [v1_relat_1(_G7686), v1_relat_1(_G7831), -r1_tarski(k1_sysrel(_G7686), k1_sysrel(_G7831)), k3_relat_1(_G7831, _G7686)=_G7686, k3_relat_1(k6_subset_1(_G7831, k4_relat_1(k9_xtuple_0(_G7831))), _G7831)=k1_xboole_0]
+ (19)  [- (_G3549=_G3549)]
+ (20)  [_G3648=_G3693, - (_G3693=_G3648)]
+ (21)  [- (_G3881=_G3994), _G3881=_G3937, _G3937=_G3994]
+ (22)  [-v1_relat_1(_G4968), _G4919=_G4968, v1_relat_1(_G4919)]
+ (23)  [-r1_tarski(_G4398, _G4535), r1_tarski(_G4331, _G4466), _G4331=_G4398, _G4466=_G4535]
+ (24)  [- (k3_relat_1(_G5239, _G5374)=k3_relat_1(_G5306, _G5443)), _G5239=_G5306, _G5374=_G5443]
+ (25)  [- (k6_subset_1(_G5836, _G5971)=k6_subset_1(_G5903, _G6040)), _G5836=_G5903, _G5971=_G6040]
+ (26)  [_G6433=_G6482, - (k4_relat_1(_G6433)=k4_relat_1(_G6482))]
+ (27)  [_G6711=_G6760, - (k9_xtuple_0(_G6711)=k9_xtuple_0(_G6760))]
+ (28)  [_G6980=_G7029, - (k1_sysrel(_G6980)=k1_sysrel(_G7029))]
+
+Connection Proof:
+-----------------
+1  [3^[], 4^[]]   (13)  
+1.1  [-3^[], k1_sysrel(1^[])=k1_sysrel(2^[])]   (6)  
+1.1.1  [- (k1_sysrel(1^[])=k1_sysrel(2^[])), r1_tarski(k1_sysrel(1^[]), k1_sysrel(2^[])), r1_tarski(k1_sysrel(2^[]), k1_sysrel(1^[]))]   (16)  substitution:[[_G7363, _G7414], [k1_sysrel(1^[]), k1_sysrel(2^[])]]
+1.1.1.1  [-r1_tarski(k1_sysrel(1^[]), k1_sysrel(2^[])), v1_relat_1(1^[]), v1_relat_1(2^[]), k3_relat_1(1^[], 2^[])=1^[], k3_relat_1(2^[], k6_subset_1(2^[], k4_relat_1(k9_xtuple_0(2^[]))))=k1_xboole_0]   (17)  substitution:[[_G7686, _G7831], [1^[], 2^[]]]
+1.1.1.1.1  [-v1_relat_1(1^[])]   (11)  
+1.1.1.1.2  [-v1_relat_1(2^[])]   (12)  
+1.1.1.1.3  [- (k3_relat_1(1^[], 2^[])=1^[]), -3^[]]   (10)  
+1.1.1.1.3.1  [3^[]]   (reduction:1)  
+1.1.1.1.4  [- (k3_relat_1(2^[], k6_subset_1(2^[], k4_relat_1(k9_xtuple_0(2^[]))))=k1_xboole_0), -3^[]]   (9)  
+1.1.1.1.4.1  [3^[]]   (reduction:1)  
+1.1.1.2  [-r1_tarski(k1_sysrel(2^[]), k1_sysrel(1^[])), v1_relat_1(2^[]), v1_relat_1(1^[]), k3_relat_1(2^[], 1^[])=2^[], k3_relat_1(1^[], k6_subset_1(1^[], k4_relat_1(k9_xtuple_0(1^[]))))=k1_xboole_0]   (17)  substitution:[[_G7686, _G7831], [2^[], 1^[]]]
+1.1.1.2.1  [-v1_relat_1(2^[])]   (12)  
+1.1.1.2.2  [-v1_relat_1(1^[])]   (11)  
+1.1.1.2.3  [- (k3_relat_1(2^[], 1^[])=2^[]), -3^[]]   (8)  
+1.1.1.2.3.1  [3^[]]   (reduction:1)  
+1.1.1.2.4  [- (k3_relat_1(1^[], k6_subset_1(1^[], k4_relat_1(k9_xtuple_0(1^[]))))=k1_xboole_0), -3^[]]   (7)  
+1.1.1.2.4.1  [3^[]]   (reduction:1)  
+1.2  [-4^[], k1_sysrel(1^[])=k1_sysrel(2^[])]   (1)  
+1.2.1  [- (k1_sysrel(1^[])=k1_sysrel(2^[])), r1_tarski(k1_sysrel(1^[]), k1_sysrel(2^[])), r1_tarski(k1_sysrel(2^[]), k1_sysrel(1^[]))]   (16)  substitution:[[_G7363, _G7414], [k1_sysrel(1^[]), k1_sysrel(2^[])]]
+1.2.1.1  [-r1_tarski(k1_sysrel(1^[]), k1_sysrel(2^[])), v1_relat_1(1^[]), v1_relat_1(2^[]), k3_relat_1(2^[], 1^[])=1^[], k3_relat_1(k6_subset_1(2^[], k4_relat_1(k9_xtuple_0(2^[]))), 2^[])=k1_xboole_0]   (18)  substitution:[[_G7686, _G7831], [1^[], 2^[]]]
+1.2.1.1.1  [-v1_relat_1(1^[])]   (11)  
+1.2.1.1.2  [-v1_relat_1(2^[])]   (12)  
+1.2.1.1.3  [- (k3_relat_1(2^[], 1^[])=1^[]), -4^[]]   (5)  
+1.2.1.1.3.1  [4^[]]   (reduction:1)  
+1.2.1.1.4  [- (k3_relat_1(k6_subset_1(2^[], k4_relat_1(k9_xtuple_0(2^[]))), 2^[])=k1_xboole_0), -4^[]]   (4)  
+1.2.1.1.4.1  [4^[]]   (reduction:1)  
+1.2.1.2  [-r1_tarski(k1_sysrel(2^[]), k1_sysrel(1^[])), v1_relat_1(2^[]), v1_relat_1(1^[]), k3_relat_1(1^[], 2^[])=2^[], k3_relat_1(k6_subset_1(1^[], k4_relat_1(k9_xtuple_0(1^[]))), 1^[])=k1_xboole_0]   (18)  substitution:[[_G7686, _G7831], [2^[], 1^[]]]
+1.2.1.2.1  [-v1_relat_1(2^[])]   (12)  
+1.2.1.2.2  [-v1_relat_1(1^[])]   (11)  
+1.2.1.2.3  [- (k3_relat_1(1^[], 2^[])=2^[]), -4^[]]   (3)  
+1.2.1.2.3.1  [4^[]]   (reduction:1)  
+1.2.1.2.4  [- (k3_relat_1(k6_subset_1(1^[], k4_relat_1(k9_xtuple_0(1^[]))), 1^[])=k1_xboole_0), -4^[]]   (2)  
+1.2.1.2.4.1  [4^[]]   (reduction:1)  
+------------------------------------------------------
+End of proof for t40_sysrel

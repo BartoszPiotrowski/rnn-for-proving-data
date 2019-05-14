@@ -1,0 +1,84 @@
+
+t3_wellord1 is a Theorem
+Start of proof for t3_wellord1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-7^[], v1_wellord1(5^[])]
+ (2)  [-7^[], -r1_wellord1(5^[], k1_relat_1(5^[]))]
+ (3)  [-6^[], r1_wellord1(5^[], k1_relat_1(5^[]))]
+ (4)  [-6^[], -v1_wellord1(5^[])]
+ (5)  [-v1_relat_1(5^[])]
+ (6)  [6^[], 7^[]]
+ (7)  [v1_relat_1(_G7268), -v1_wellord1(_G7268), -r1_tarski(2^[_G7268], k1_relat_1(_G7268))]
+ (8)  [v1_relat_1(_G7268), -v1_wellord1(_G7268), 2^[_G7268]=k1_xboole_0]
+ (9)  [v1_relat_1(_G7268), -v1_wellord1(_G7268), r2_hidden(_G9783, 2^[_G7268]), r1_xboole_0(k1_wellord1(_G7268, _G9783), 2^[_G7268])]
+ (10)  [v1_relat_1(_G7268), v1_wellord1(_G7268), r1_tarski(_G7415, k1_relat_1(_G7268)), - (_G7415=k1_xboole_0), -r2_hidden(1^[_G7415, _G7268], _G7415)]
+ (11)  [v1_relat_1(_G7268), v1_wellord1(_G7268), r1_tarski(_G7415, k1_relat_1(_G7268)), - (_G7415=k1_xboole_0), -r1_xboole_0(k1_wellord1(_G7268, 1^[_G7415, _G7268]), _G7415)]
+ (12)  [v1_relat_1(_G7989), -r1_wellord1(_G7989, _G8108), -r1_tarski(4^[_G8108, _G7989], _G8108)]
+ (13)  [v1_relat_1(_G7989), -r1_wellord1(_G7989, _G8108), 4^[_G8108, _G7989]=k1_xboole_0]
+ (14)  [v1_relat_1(_G7989), -r1_wellord1(_G7989, _G8108), r2_hidden(_G9997, 4^[_G8108, _G7989]), r1_xboole_0(k1_wellord1(_G7989, _G9997), 4^[_G8108, _G7989])]
+ (15)  [v1_relat_1(_G7989), r1_wellord1(_G7989, _G8108), r1_tarski(_G8248, _G8108), - (_G8248=k1_xboole_0), -r2_hidden(3^[_G8248, _G8108, _G7989], _G8248)]
+ (16)  [v1_relat_1(_G7989), r1_wellord1(_G7989, _G8108), r1_tarski(_G8248, _G8108), - (_G8248=k1_xboole_0), -r1_xboole_0(k1_wellord1(_G7989, 3^[_G8248, _G8108, _G7989]), _G8248)]
+ (17)  [_G6948=_G6997, - (k1_relat_1(_G6948)=k1_relat_1(_G6997))]
+ (18)  [- (k1_wellord1(_G6360, _G6495)=k1_wellord1(_G6427, _G6564)), _G6360=_G6427, _G6495=_G6564]
+ (19)  [- (_G2517=_G2517)]
+ (20)  [_G2616=_G2661, - (_G2661=_G2616)]
+ (21)  [- (_G2849=_G2962), _G2849=_G2905, _G2905=_G2962]
+ (22)  [-r1_tarski(_G3366, _G3503), r1_tarski(_G3299, _G3434), _G3299=_G3366, _G3434=_G3503]
+ (23)  [-r2_hidden(_G3963, _G4100), r2_hidden(_G3896, _G4031), _G3896=_G3963, _G4031=_G4100]
+ (24)  [-r1_xboole_0(_G4560, _G4697), r1_xboole_0(_G4493, _G4628), _G4493=_G4560, _G4628=_G4697]
+ (25)  [-v1_relat_1(_G5139), _G5090=_G5139, v1_relat_1(_G5090)]
+ (26)  [-v1_wellord1(_G5417), _G5368=_G5417, v1_wellord1(_G5368)]
+ (27)  [-r1_wellord1(_G5704, _G5841), r1_wellord1(_G5637, _G5772), _G5637=_G5704, _G5772=_G5841]
+
+Connection Proof:
+-----------------
+1  [6^[], 7^[]]   (6)  
+1.1  [-6^[], r1_wellord1(5^[], k1_relat_1(5^[]))]   (3)  
+1.1.1  [-r1_wellord1(5^[], k1_relat_1(5^[])), v1_relat_1(5^[]), r2_hidden(1^[4^[k1_relat_1(5^[]), 5^[]], 5^[]], 4^[k1_relat_1(5^[]), 5^[]]), r1_xboole_0(k1_wellord1(5^[], 1^[4^[k1_relat_1(5^[]), 5^[]], 5^[]]), 4^[k1_relat_1(5^[]), 5^[]])]   (14)  substitution:[[_G7989, _G8108, _G9997], [5^[], k1_relat_1(5^[]), 1^[4^[k1_relat_1(5^[]), 5^[]], 5^[]]]]
+1.1.1.1  [-v1_relat_1(5^[])]   (5)  
+1.1.1.2  [-r2_hidden(1^[4^[k1_relat_1(5^[]), 5^[]], 5^[]], 4^[k1_relat_1(5^[]), 5^[]]), v1_relat_1(5^[]), v1_wellord1(5^[]), r1_tarski(4^[k1_relat_1(5^[]), 5^[]], k1_relat_1(5^[])), - (4^[k1_relat_1(5^[]), 5^[]]=k1_xboole_0)]   (10)  substitution:[[_G7415, _G7268], [4^[k1_relat_1(5^[]), 5^[]], 5^[]]]
+1.1.1.2.1  [-v1_relat_1(5^[])]   (5)  
+1.1.1.2.2  [-v1_wellord1(5^[]), -6^[]]   (4)  
+1.1.1.2.2.1  [6^[]]   (reduction:1)  
+1.1.1.2.3  [-r1_tarski(4^[k1_relat_1(5^[]), 5^[]], k1_relat_1(5^[])), v1_relat_1(5^[]), -r1_wellord1(5^[], k1_relat_1(5^[]))]   (12)  substitution:[[_G8108, _G7989], [k1_relat_1(5^[]), 5^[]]]
+1.1.1.2.3.1  [-v1_relat_1(5^[])]   (5)  
+1.1.1.2.3.2  [r1_wellord1(5^[], k1_relat_1(5^[]))]   (reduction:1.1)  
+1.1.1.2.4  [4^[k1_relat_1(5^[]), 5^[]]=k1_xboole_0, v1_relat_1(5^[]), -r1_wellord1(5^[], k1_relat_1(5^[]))]   (13)  substitution:[[_G8108, _G7989], [k1_relat_1(5^[]), 5^[]]]
+1.1.1.2.4.1  [-v1_relat_1(5^[])]   (5)  
+1.1.1.2.4.2  [r1_wellord1(5^[], k1_relat_1(5^[]))]   (reduction:1.1)  
+1.1.1.3  [-r1_xboole_0(k1_wellord1(5^[], 1^[4^[k1_relat_1(5^[]), 5^[]], 5^[]]), 4^[k1_relat_1(5^[]), 5^[]]), v1_relat_1(5^[]), v1_wellord1(5^[]), r1_tarski(4^[k1_relat_1(5^[]), 5^[]], k1_relat_1(5^[])), - (4^[k1_relat_1(5^[]), 5^[]]=k1_xboole_0)]   (11)  substitution:[[_G7268, _G7415], [5^[], 4^[k1_relat_1(5^[]), 5^[]]]]
+1.1.1.3.1  [-v1_relat_1(5^[])]   (5)  
+1.1.1.3.2  [-v1_wellord1(5^[]), -6^[]]   (4)  
+1.1.1.3.2.1  [6^[]]   (reduction:1)  
+1.1.1.3.3  [-r1_tarski(4^[k1_relat_1(5^[]), 5^[]], k1_relat_1(5^[])), v1_relat_1(5^[]), -r1_wellord1(5^[], k1_relat_1(5^[]))]   (12)  substitution:[[_G8108, _G7989], [k1_relat_1(5^[]), 5^[]]]
+1.1.1.3.3.1  [-v1_relat_1(5^[])]   (5)  
+1.1.1.3.3.2  [r1_wellord1(5^[], k1_relat_1(5^[]))]   (reduction:1.1)  
+1.1.1.3.4  [4^[k1_relat_1(5^[]), 5^[]]=k1_xboole_0, v1_relat_1(5^[]), -r1_wellord1(5^[], k1_relat_1(5^[]))]   (13)  substitution:[[_G8108, _G7989], [k1_relat_1(5^[]), 5^[]]]
+1.1.1.3.4.1  [-v1_relat_1(5^[])]   (5)  
+1.1.1.3.4.2  [r1_wellord1(5^[], k1_relat_1(5^[]))]   (reduction:1.1)  
+1.2  [-7^[], v1_wellord1(5^[])]   (1)  
+1.2.1  [-v1_wellord1(5^[]), v1_relat_1(5^[]), r2_hidden(3^[2^[5^[]], k1_relat_1(5^[]), 5^[]], 2^[5^[]]), r1_xboole_0(k1_wellord1(5^[], 3^[2^[5^[]], k1_relat_1(5^[]), 5^[]]), 2^[5^[]])]   (9)  substitution:[[_G7268, _G9783], [5^[], 3^[2^[5^[]], k1_relat_1(5^[]), 5^[]]]]
+1.2.1.1  [-v1_relat_1(5^[])]   (5)  
+1.2.1.2  [-r2_hidden(3^[2^[5^[]], k1_relat_1(5^[]), 5^[]], 2^[5^[]]), v1_relat_1(5^[]), r1_wellord1(5^[], k1_relat_1(5^[])), r1_tarski(2^[5^[]], k1_relat_1(5^[])), - (2^[5^[]]=k1_xboole_0)]   (15)  substitution:[[_G8248, _G8108, _G7989], [2^[5^[]], k1_relat_1(5^[]), 5^[]]]
+1.2.1.2.1  [-v1_relat_1(5^[])]   (5)  
+1.2.1.2.2  [-r1_wellord1(5^[], k1_relat_1(5^[])), -7^[]]   (2)  
+1.2.1.2.2.1  [7^[]]   (reduction:1)  
+1.2.1.2.3  [-r1_tarski(2^[5^[]], k1_relat_1(5^[])), v1_relat_1(5^[]), -v1_wellord1(5^[])]   (7)  substitution:[[_G7268], [5^[]]]
+1.2.1.2.3.1  [-v1_relat_1(5^[])]   (5)  
+1.2.1.2.3.2  [v1_wellord1(5^[])]   (reduction:1.2)  
+1.2.1.2.4  [2^[5^[]]=k1_xboole_0, v1_relat_1(5^[]), -v1_wellord1(5^[])]   (8)  substitution:[[_G7268], [5^[]]]
+1.2.1.2.4.1  [-v1_relat_1(5^[])]   (5)  
+1.2.1.2.4.2  [v1_wellord1(5^[])]   (reduction:1.2)  
+1.2.1.3  [-r1_xboole_0(k1_wellord1(5^[], 3^[2^[5^[]], k1_relat_1(5^[]), 5^[]]), 2^[5^[]]), v1_relat_1(5^[]), r1_wellord1(5^[], k1_relat_1(5^[])), r1_tarski(2^[5^[]], k1_relat_1(5^[])), - (2^[5^[]]=k1_xboole_0)]   (16)  substitution:[[_G7989, _G8248, _G8108], [5^[], 2^[5^[]], k1_relat_1(5^[])]]
+1.2.1.3.1  [-v1_relat_1(5^[])]   (5)  
+1.2.1.3.2  [-r1_wellord1(5^[], k1_relat_1(5^[])), -7^[]]   (2)  
+1.2.1.3.2.1  [7^[]]   (reduction:1)  
+1.2.1.3.3  [-r1_tarski(2^[5^[]], k1_relat_1(5^[])), v1_relat_1(5^[]), -v1_wellord1(5^[])]   (7)  substitution:[[_G7268], [5^[]]]
+1.2.1.3.3.1  [-v1_relat_1(5^[])]   (5)  
+1.2.1.3.3.2  [v1_wellord1(5^[])]   (reduction:1.2)  
+1.2.1.3.4  [2^[5^[]]=k1_xboole_0, v1_relat_1(5^[]), -v1_wellord1(5^[])]   (8)  substitution:[[_G7268], [5^[]]]
+1.2.1.3.4.1  [-v1_relat_1(5^[])]   (5)  
+1.2.1.3.4.2  [v1_wellord1(5^[])]   (reduction:1.2)  
+------------------------------------------------------
+End of proof for t3_wellord1

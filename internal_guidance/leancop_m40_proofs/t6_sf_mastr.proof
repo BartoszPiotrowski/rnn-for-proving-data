@@ -1,0 +1,48 @@
+
+t6_sf_mastr is a Theorem
+Start of proof for t6_sf_mastr
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m2_subset_1(2^[], k1_numbers, k5_numbers)]
+ (2)  [-m2_subset_1(3^[], k1_numbers, k5_numbers)]
+ (3)  [- (k11_scmfsa_2(2^[])=k11_scmfsa_2(3^[]))]
+ (4)  [2^[]=3^[]]
+ (5)  [m2_subset_1(_G6908, k1_numbers, k5_numbers), m2_subset_1(_G7070, k1_numbers, k5_numbers), - (k1_amistd_1(np__3, k1_scmfsa_2, _G7070, k11_scmfsa_2(_G6908))=k1_tarski(_G6908))]
+ (6)  [_G6555=k1_tarski(_G6497), r2_hidden(_G6685, _G6555), - (_G6685=_G6497)]
+ (7)  [_G6555=k1_tarski(_G6497), -r2_hidden(_G6685, _G6555), _G6685=_G6497]
+ (8)  [- (_G6555=k1_tarski(_G6497)), r2_hidden(1^[_G6555, _G6497], _G6555), 1^[_G6555, _G6497]=_G6497]
+ (9)  [- (_G6555=k1_tarski(_G6497)), -r2_hidden(1^[_G6555, _G6497], _G6555), - (1^[_G6555, _G6497]=_G6497)]
+ (10)  [_G5887=_G5936, - (k1_tarski(_G5887)=k1_tarski(_G5936))]
+ (11)  [_G6156=_G6205, - (k11_scmfsa_2(_G6156)=k11_scmfsa_2(_G6205))]
+ (12)  [- (k1_amistd_1(_G4352, _G4559, _G4770, _G4985)=k1_amistd_1(_G4455, _G4664, _G4877, _G5094)), _G4352=_G4455, _G4559=_G4664, _G4770=_G4877, _G4985=_G5094]
+ (13)  [- (_G1912=_G1912)]
+ (14)  [_G2011=_G2056, - (_G2056=_G2011)]
+ (15)  [- (_G2244=_G2357), _G2244=_G2300, _G2300=_G2357]
+ (16)  [-r2_hidden(_G2761, _G2898), r2_hidden(_G2694, _G2829), _G2694=_G2761, _G2829=_G2898]
+ (17)  [-m2_subset_1(_G3367, _G3540, _G3717), m2_subset_1(_G3282, _G3453, _G3628), _G3282=_G3367, _G3453=_G3540, _G3628=_G3717]
+
+Connection Proof:
+-----------------
+1  [2^[]=3^[]]   (4)  
+1.1  [- (2^[]=3^[]), k1_amistd_1(np__3, k1_scmfsa_2, 2^[], k11_scmfsa_2(3^[]))=k1_tarski(3^[]), r2_hidden(2^[], k1_amistd_1(np__3, k1_scmfsa_2, 2^[], k11_scmfsa_2(3^[])))]   (6)  substitution:[[_G6685, _G6497, _G6555], [2^[], 3^[], k1_amistd_1(np__3, k1_scmfsa_2, 2^[], k11_scmfsa_2(3^[]))]]
+1.1.1  [- (k1_amistd_1(np__3, k1_scmfsa_2, 2^[], k11_scmfsa_2(3^[]))=k1_tarski(3^[])), m2_subset_1(3^[], k1_numbers, k5_numbers), m2_subset_1(2^[], k1_numbers, k5_numbers)]   (5)  substitution:[[_G7070, _G6908], [2^[], 3^[]]]
+1.1.1.1  [-m2_subset_1(3^[], k1_numbers, k5_numbers)]   (2)  
+1.1.1.2  [-m2_subset_1(2^[], k1_numbers, k5_numbers)]   (1)  
+1.1.2  [-r2_hidden(2^[], k1_amistd_1(np__3, k1_scmfsa_2, 2^[], k11_scmfsa_2(3^[]))), r2_hidden(2^[], k1_amistd_1(np__3, k1_scmfsa_2, 2^[], k11_scmfsa_2(2^[]))), 2^[]=2^[], k1_amistd_1(np__3, k1_scmfsa_2, 2^[], k11_scmfsa_2(2^[]))=k1_amistd_1(np__3, k1_scmfsa_2, 2^[], k11_scmfsa_2(3^[]))]   (16)  substitution:[[_G2761, _G2898, _G2694, _G2829], [2^[], k1_amistd_1(np__3, k1_scmfsa_2, 2^[], k11_scmfsa_2(3^[])), 2^[], k1_amistd_1(np__3, k1_scmfsa_2, 2^[], k11_scmfsa_2(2^[]))]]
+1.1.2.1  [-r2_hidden(2^[], k1_amistd_1(np__3, k1_scmfsa_2, 2^[], k11_scmfsa_2(2^[]))), k1_amistd_1(np__3, k1_scmfsa_2, 2^[], k11_scmfsa_2(2^[]))=k1_tarski(2^[]), 2^[]=2^[]]   (7)  substitution:[[_G6685, _G6555, _G6497], [2^[], k1_amistd_1(np__3, k1_scmfsa_2, 2^[], k11_scmfsa_2(2^[])), 2^[]]]
+1.1.2.1.1  [- (k1_amistd_1(np__3, k1_scmfsa_2, 2^[], k11_scmfsa_2(2^[]))=k1_tarski(2^[])), m2_subset_1(2^[], k1_numbers, k5_numbers), m2_subset_1(2^[], k1_numbers, k5_numbers)]   (5)  substitution:[[_G7070, _G6908], [2^[], 2^[]]]
+1.1.2.1.1.1  [-m2_subset_1(2^[], k1_numbers, k5_numbers)]   (1)  
+1.1.2.1.1.2  [-m2_subset_1(2^[], k1_numbers, k5_numbers)]   (1)  
+1.1.2.1.2  [- (2^[]=2^[])]   (13)  substitution:[[_G1912], [2^[]]]
+1.1.2.2  [- (2^[]=2^[]), k1_amistd_1(np__3, k1_scmfsa_2, 2^[], k11_scmfsa_2(2^[]))=k1_tarski(2^[]), r2_hidden(2^[], k1_amistd_1(np__3, k1_scmfsa_2, 2^[], k11_scmfsa_2(2^[])))]   (6)  substitution:[[_G6685, _G6497, _G6555], [2^[], 2^[], k1_amistd_1(np__3, k1_scmfsa_2, 2^[], k11_scmfsa_2(2^[]))]]
+1.1.2.2.1  [- (k1_amistd_1(np__3, k1_scmfsa_2, 2^[], k11_scmfsa_2(2^[]))=k1_tarski(2^[])), m2_subset_1(2^[], k1_numbers, k5_numbers), m2_subset_1(2^[], k1_numbers, k5_numbers)]   (5)  substitution:[[_G7070, _G6908], [2^[], 2^[]]]
+1.1.2.2.1.1  [-m2_subset_1(2^[], k1_numbers, k5_numbers)]   (1)  
+1.1.2.2.1.2  [-m2_subset_1(2^[], k1_numbers, k5_numbers)]   (1)  
+1.1.2.2.2  [-r2_hidden(2^[], k1_amistd_1(np__3, k1_scmfsa_2, 2^[], k11_scmfsa_2(2^[])))]   (lemmata:1.1.2)  
+1.1.2.3  [- (k1_amistd_1(np__3, k1_scmfsa_2, 2^[], k11_scmfsa_2(2^[]))=k1_amistd_1(np__3, k1_scmfsa_2, 2^[], k11_scmfsa_2(3^[]))), np__3=np__3, k1_scmfsa_2=k1_scmfsa_2, 2^[]=2^[], k11_scmfsa_2(2^[])=k11_scmfsa_2(3^[])]   (12)  substitution:[[_G4352, _G4559, _G4770, _G4985, _G4455, _G4664, _G4877, _G5094], [np__3, k1_scmfsa_2, 2^[], k11_scmfsa_2(2^[]), np__3, k1_scmfsa_2, 2^[], k11_scmfsa_2(3^[])]]
+1.1.2.3.1  [- (np__3=np__3)]   (13)  substitution:[[_G1912], [np__3]]
+1.1.2.3.2  [- (k1_scmfsa_2=k1_scmfsa_2)]   (13)  substitution:[[_G1912], [k1_scmfsa_2]]
+1.1.2.3.3  [- (2^[]=2^[])]   (13)  substitution:[[_G1912], [2^[]]]
+1.1.2.3.4  [- (k11_scmfsa_2(2^[])=k11_scmfsa_2(3^[]))]   (3)  
+------------------------------------------------------
+End of proof for t6_sf_mastr

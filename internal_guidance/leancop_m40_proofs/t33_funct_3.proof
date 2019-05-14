@@ -1,0 +1,43 @@
+
+t33_funct_3 is a Theorem
+Start of proof for t33_funct_3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(1^[])]
+ (2)  [-v1_funct_1(1^[])]
+ (3)  [-v2_funct_1(1^[])]
+ (4)  [-r1_tarski(2^[], k1_zfmisc_1(k9_xtuple_0(1^[])))]
+ (5)  [k8_relat_1(k3_funct_3(1^[]), 2^[])=k7_relat_1(k1_funct_3(1^[]), 2^[])]
+ (6)  [_G7534=_G7585, -r1_tarski(_G7534, _G7585)]
+ (7)  [_G7534=_G7585, -r1_tarski(_G7585, _G7534)]
+ (8)  [- (_G7534=_G7585), r1_tarski(_G7534, _G7585), r1_tarski(_G7585, _G7534)]
+ (9)  [v1_funct_1(_G7866), v1_relat_1(_G7866), r1_tarski(_G8020, k1_zfmisc_1(k9_xtuple_0(_G7866))), -r1_tarski(k8_relat_1(k3_funct_3(_G7866), _G8020), k7_relat_1(k1_funct_3(_G7866), _G8020))]
+ (10)  [v1_funct_1(_G8377), v1_relat_1(_G8377), v2_funct_1(_G8377), -r1_tarski(k7_relat_1(k1_funct_3(_G8377), _G8526), k8_relat_1(k3_funct_3(_G8377), _G8526))]
+ (11)  [_G5111=_G5160, - (k1_zfmisc_1(_G5111)=k1_zfmisc_1(_G5160))]
+ (12)  [_G5389=_G5438, - (k9_xtuple_0(_G5389)=k9_xtuple_0(_G5438))]
+ (13)  [- (k8_relat_1(_G5667, _G5802)=k8_relat_1(_G5734, _G5871)), _G5667=_G5734, _G5802=_G5871]
+ (14)  [_G6264=_G6313, - (k3_funct_3(_G6264)=k3_funct_3(_G6313))]
+ (15)  [_G7130=_G7179, - (k1_funct_3(_G7130)=k1_funct_3(_G7179))]
+ (16)  [- (k7_relat_1(_G6542, _G6677)=k7_relat_1(_G6609, _G6746)), _G6542=_G6609, _G6677=_G6746]
+ (17)  [- (_G2823=_G2823)]
+ (18)  [_G2922=_G2967, - (_G2967=_G2922)]
+ (19)  [- (_G3155=_G3268), _G3155=_G3211, _G3211=_G3268]
+ (20)  [-v1_relat_1(_G3654), _G3605=_G3654, v1_relat_1(_G3605)]
+ (21)  [-v1_funct_1(_G3932), _G3883=_G3932, v1_funct_1(_G3883)]
+ (22)  [-v2_funct_1(_G4210), _G4161=_G4210, v2_funct_1(_G4161)]
+ (23)  [-r1_tarski(_G4497, _G4634), r1_tarski(_G4430, _G4565), _G4430=_G4497, _G4565=_G4634]
+
+Connection Proof:
+-----------------
+1  [k8_relat_1(k3_funct_3(1^[]), 2^[])=k7_relat_1(k1_funct_3(1^[]), 2^[])]   (5)  
+1.1  [- (k8_relat_1(k3_funct_3(1^[]), 2^[])=k7_relat_1(k1_funct_3(1^[]), 2^[])), r1_tarski(k8_relat_1(k3_funct_3(1^[]), 2^[]), k7_relat_1(k1_funct_3(1^[]), 2^[])), r1_tarski(k7_relat_1(k1_funct_3(1^[]), 2^[]), k8_relat_1(k3_funct_3(1^[]), 2^[]))]   (8)  substitution:[[_G7534, _G7585], [k8_relat_1(k3_funct_3(1^[]), 2^[]), k7_relat_1(k1_funct_3(1^[]), 2^[])]]
+1.1.1  [-r1_tarski(k8_relat_1(k3_funct_3(1^[]), 2^[]), k7_relat_1(k1_funct_3(1^[]), 2^[])), v1_funct_1(1^[]), v1_relat_1(1^[]), r1_tarski(2^[], k1_zfmisc_1(k9_xtuple_0(1^[])))]   (9)  substitution:[[_G7866, _G8020], [1^[], 2^[]]]
+1.1.1.1  [-v1_funct_1(1^[])]   (2)  
+1.1.1.2  [-v1_relat_1(1^[])]   (1)  
+1.1.1.3  [-r1_tarski(2^[], k1_zfmisc_1(k9_xtuple_0(1^[])))]   (4)  
+1.1.2  [-r1_tarski(k7_relat_1(k1_funct_3(1^[]), 2^[]), k8_relat_1(k3_funct_3(1^[]), 2^[])), v1_funct_1(1^[]), v1_relat_1(1^[]), v2_funct_1(1^[])]   (10)  substitution:[[_G8377, _G8526], [1^[], 2^[]]]
+1.1.2.1  [-v1_funct_1(1^[])]   (2)  
+1.1.2.2  [-v1_relat_1(1^[])]   (1)  
+1.1.2.3  [-v2_funct_1(1^[])]   (3)  
+------------------------------------------------------
+End of proof for t33_funct_3

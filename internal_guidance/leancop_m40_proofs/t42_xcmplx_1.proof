@@ -1,0 +1,60 @@
+
+t42_xcmplx_1 is a Theorem
+Start of proof for t42_xcmplx_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xcmplx_0(1^[])]
+ (2)  [-v1_xcmplx_0(2^[])]
+ (3)  [-v1_xcmplx_0(3^[])]
+ (4)  [-v1_xcmplx_0(4^[])]
+ (5)  [k3_xcmplx_0(k6_xcmplx_0(k6_xcmplx_0(1^[], 2^[]), 3^[]), 4^[])=k6_xcmplx_0(k6_xcmplx_0(k3_xcmplx_0(1^[], 4^[]), k3_xcmplx_0(2^[], 4^[])), k3_xcmplx_0(3^[], 4^[]))]
+ (6)  [- (k3_xcmplx_0(_G4634, _G4689)=k3_xcmplx_0(_G4689, _G4634)), v1_xcmplx_0(_G4634), v1_xcmplx_0(_G4689)]
+ (7)  [-v1_xcmplx_0(k6_xcmplx_0(_G5002, _G5053)), v1_xcmplx_0(_G5002), v1_xcmplx_0(_G5053)]
+ (8)  [v1_xcmplx_0(_G5289), v1_xcmplx_0(_G5395), v1_xcmplx_0(_G5497), - (k3_xcmplx_0(_G5289, k6_xcmplx_0(_G5395, _G5497))=k6_xcmplx_0(k3_xcmplx_0(_G5289, _G5395), k3_xcmplx_0(_G5289, _G5497)))]
+ (9)  [- (k6_xcmplx_0(_G3407, _G3542)=k6_xcmplx_0(_G3474, _G3611)), _G3407=_G3474, _G3542=_G3611]
+ (10)  [- (k3_xcmplx_0(_G3995, _G4130)=k3_xcmplx_0(_G4062, _G4199)), _G3995=_G4062, _G4130=_G4199]
+ (11)  [-v1_xcmplx_0(_G3157), _G3108=_G3157, v1_xcmplx_0(_G3108)]
+ (12)  [- (_G2335=_G2335)]
+ (13)  [_G2434=_G2479, - (_G2479=_G2434)]
+ (14)  [- (_G2667=_G2780), _G2667=_G2723, _G2723=_G2780]
+
+Connection Proof:
+-----------------
+1  [k3_xcmplx_0(k6_xcmplx_0(k6_xcmplx_0(1^[], 2^[]), 3^[]), 4^[])=k6_xcmplx_0(k6_xcmplx_0(k3_xcmplx_0(1^[], 4^[]), k3_xcmplx_0(2^[], 4^[])), k3_xcmplx_0(3^[], 4^[]))]   (5)  
+1.1  [- (k3_xcmplx_0(k6_xcmplx_0(k6_xcmplx_0(1^[], 2^[]), 3^[]), 4^[])=k6_xcmplx_0(k6_xcmplx_0(k3_xcmplx_0(1^[], 4^[]), k3_xcmplx_0(2^[], 4^[])), k3_xcmplx_0(3^[], 4^[]))), k3_xcmplx_0(k6_xcmplx_0(k6_xcmplx_0(1^[], 2^[]), 3^[]), 4^[])=k3_xcmplx_0(4^[], k6_xcmplx_0(k6_xcmplx_0(1^[], 2^[]), 3^[])), k3_xcmplx_0(4^[], k6_xcmplx_0(k6_xcmplx_0(1^[], 2^[]), 3^[]))=k6_xcmplx_0(k6_xcmplx_0(k3_xcmplx_0(1^[], 4^[]), k3_xcmplx_0(2^[], 4^[])), k3_xcmplx_0(3^[], 4^[]))]   (14)  substitution:[[_G2667, _G2780, _G2723], [k3_xcmplx_0(k6_xcmplx_0(k6_xcmplx_0(1^[], 2^[]), 3^[]), 4^[]), k6_xcmplx_0(k6_xcmplx_0(k3_xcmplx_0(1^[], 4^[]), k3_xcmplx_0(2^[], 4^[])), k3_xcmplx_0(3^[], 4^[])), k3_xcmplx_0(4^[], k6_xcmplx_0(k6_xcmplx_0(1^[], 2^[]), 3^[]))]]
+1.1.1  [- (k3_xcmplx_0(k6_xcmplx_0(k6_xcmplx_0(1^[], 2^[]), 3^[]), 4^[])=k3_xcmplx_0(4^[], k6_xcmplx_0(k6_xcmplx_0(1^[], 2^[]), 3^[]))), v1_xcmplx_0(k6_xcmplx_0(k6_xcmplx_0(1^[], 2^[]), 3^[])), v1_xcmplx_0(4^[])]   (6)  substitution:[[_G4634, _G4689], [k6_xcmplx_0(k6_xcmplx_0(1^[], 2^[]), 3^[]), 4^[]]]
+1.1.1.1  [-v1_xcmplx_0(k6_xcmplx_0(k6_xcmplx_0(1^[], 2^[]), 3^[])), v1_xcmplx_0(k6_xcmplx_0(1^[], 2^[])), v1_xcmplx_0(3^[])]   (7)  substitution:[[_G5002, _G5053], [k6_xcmplx_0(1^[], 2^[]), 3^[]]]
+1.1.1.1.1  [-v1_xcmplx_0(k6_xcmplx_0(1^[], 2^[])), v1_xcmplx_0(1^[]), v1_xcmplx_0(2^[])]   (7)  substitution:[[_G5002, _G5053], [1^[], 2^[]]]
+1.1.1.1.1.1  [-v1_xcmplx_0(1^[])]   (1)  
+1.1.1.1.1.2  [-v1_xcmplx_0(2^[])]   (2)  
+1.1.1.1.2  [-v1_xcmplx_0(3^[])]   (3)  
+1.1.1.2  [-v1_xcmplx_0(4^[])]   (4)  
+1.1.2  [- (k3_xcmplx_0(4^[], k6_xcmplx_0(k6_xcmplx_0(1^[], 2^[]), 3^[]))=k6_xcmplx_0(k6_xcmplx_0(k3_xcmplx_0(1^[], 4^[]), k3_xcmplx_0(2^[], 4^[])), k3_xcmplx_0(3^[], 4^[]))), k3_xcmplx_0(4^[], k6_xcmplx_0(k6_xcmplx_0(1^[], 2^[]), 3^[]))=k6_xcmplx_0(k6_xcmplx_0(k3_xcmplx_0(4^[], 1^[]), k3_xcmplx_0(4^[], 2^[])), k3_xcmplx_0(3^[], 4^[])), k6_xcmplx_0(k6_xcmplx_0(k3_xcmplx_0(4^[], 1^[]), k3_xcmplx_0(4^[], 2^[])), k3_xcmplx_0(3^[], 4^[]))=k6_xcmplx_0(k6_xcmplx_0(k3_xcmplx_0(1^[], 4^[]), k3_xcmplx_0(2^[], 4^[])), k3_xcmplx_0(3^[], 4^[]))]   (14)  substitution:[[_G2667, _G2780, _G2723], [k3_xcmplx_0(4^[], k6_xcmplx_0(k6_xcmplx_0(1^[], 2^[]), 3^[])), k6_xcmplx_0(k6_xcmplx_0(k3_xcmplx_0(1^[], 4^[]), k3_xcmplx_0(2^[], 4^[])), k3_xcmplx_0(3^[], 4^[])), k6_xcmplx_0(k6_xcmplx_0(k3_xcmplx_0(4^[], 1^[]), k3_xcmplx_0(4^[], 2^[])), k3_xcmplx_0(3^[], 4^[]))]]
+1.1.2.1  [- (k3_xcmplx_0(4^[], k6_xcmplx_0(k6_xcmplx_0(1^[], 2^[]), 3^[]))=k6_xcmplx_0(k6_xcmplx_0(k3_xcmplx_0(4^[], 1^[]), k3_xcmplx_0(4^[], 2^[])), k3_xcmplx_0(3^[], 4^[]))), k3_xcmplx_0(4^[], k6_xcmplx_0(k6_xcmplx_0(1^[], 2^[]), 3^[]))=k6_xcmplx_0(k3_xcmplx_0(4^[], k6_xcmplx_0(1^[], 2^[])), k3_xcmplx_0(4^[], 3^[])), k6_xcmplx_0(k3_xcmplx_0(4^[], k6_xcmplx_0(1^[], 2^[])), k3_xcmplx_0(4^[], 3^[]))=k6_xcmplx_0(k6_xcmplx_0(k3_xcmplx_0(4^[], 1^[]), k3_xcmplx_0(4^[], 2^[])), k3_xcmplx_0(3^[], 4^[]))]   (14)  substitution:[[_G2667, _G2780, _G2723], [k3_xcmplx_0(4^[], k6_xcmplx_0(k6_xcmplx_0(1^[], 2^[]), 3^[])), k6_xcmplx_0(k6_xcmplx_0(k3_xcmplx_0(4^[], 1^[]), k3_xcmplx_0(4^[], 2^[])), k3_xcmplx_0(3^[], 4^[])), k6_xcmplx_0(k3_xcmplx_0(4^[], k6_xcmplx_0(1^[], 2^[])), k3_xcmplx_0(4^[], 3^[]))]]
+1.1.2.1.1  [- (k3_xcmplx_0(4^[], k6_xcmplx_0(k6_xcmplx_0(1^[], 2^[]), 3^[]))=k6_xcmplx_0(k3_xcmplx_0(4^[], k6_xcmplx_0(1^[], 2^[])), k3_xcmplx_0(4^[], 3^[]))), v1_xcmplx_0(4^[]), v1_xcmplx_0(k6_xcmplx_0(1^[], 2^[])), v1_xcmplx_0(3^[])]   (8)  substitution:[[_G5289, _G5395, _G5497], [4^[], k6_xcmplx_0(1^[], 2^[]), 3^[]]]
+1.1.2.1.1.1  [-v1_xcmplx_0(4^[])]   (4)  
+1.1.2.1.1.2  [-v1_xcmplx_0(k6_xcmplx_0(1^[], 2^[])), v1_xcmplx_0(1^[]), v1_xcmplx_0(2^[])]   (7)  substitution:[[_G5002, _G5053], [1^[], 2^[]]]
+1.1.2.1.1.2.1  [-v1_xcmplx_0(1^[])]   (1)  
+1.1.2.1.1.2.2  [-v1_xcmplx_0(2^[])]   (2)  
+1.1.2.1.1.3  [-v1_xcmplx_0(3^[])]   (3)  
+1.1.2.1.2  [- (k6_xcmplx_0(k3_xcmplx_0(4^[], k6_xcmplx_0(1^[], 2^[])), k3_xcmplx_0(4^[], 3^[]))=k6_xcmplx_0(k6_xcmplx_0(k3_xcmplx_0(4^[], 1^[]), k3_xcmplx_0(4^[], 2^[])), k3_xcmplx_0(3^[], 4^[]))), k3_xcmplx_0(4^[], k6_xcmplx_0(1^[], 2^[]))=k6_xcmplx_0(k3_xcmplx_0(4^[], 1^[]), k3_xcmplx_0(4^[], 2^[])), k3_xcmplx_0(4^[], 3^[])=k3_xcmplx_0(3^[], 4^[])]   (9)  substitution:[[_G3407, _G3542, _G3474, _G3611], [k3_xcmplx_0(4^[], k6_xcmplx_0(1^[], 2^[])), k3_xcmplx_0(4^[], 3^[]), k6_xcmplx_0(k3_xcmplx_0(4^[], 1^[]), k3_xcmplx_0(4^[], 2^[])), k3_xcmplx_0(3^[], 4^[])]]
+1.1.2.1.2.1  [- (k3_xcmplx_0(4^[], k6_xcmplx_0(1^[], 2^[]))=k6_xcmplx_0(k3_xcmplx_0(4^[], 1^[]), k3_xcmplx_0(4^[], 2^[]))), v1_xcmplx_0(4^[]), v1_xcmplx_0(1^[]), v1_xcmplx_0(2^[])]   (8)  substitution:[[_G5289, _G5395, _G5497], [4^[], 1^[], 2^[]]]
+1.1.2.1.2.1.1  [-v1_xcmplx_0(4^[])]   (4)  
+1.1.2.1.2.1.2  [-v1_xcmplx_0(1^[])]   (1)  
+1.1.2.1.2.1.3  [-v1_xcmplx_0(2^[])]   (2)  
+1.1.2.1.2.2  [- (k3_xcmplx_0(4^[], 3^[])=k3_xcmplx_0(3^[], 4^[])), v1_xcmplx_0(4^[]), v1_xcmplx_0(3^[])]   (6)  substitution:[[_G4634, _G4689], [4^[], 3^[]]]
+1.1.2.1.2.2.1  [-v1_xcmplx_0(4^[])]   (4)  
+1.1.2.1.2.2.2  [-v1_xcmplx_0(3^[])]   (3)  
+1.1.2.2  [- (k6_xcmplx_0(k6_xcmplx_0(k3_xcmplx_0(4^[], 1^[]), k3_xcmplx_0(4^[], 2^[])), k3_xcmplx_0(3^[], 4^[]))=k6_xcmplx_0(k6_xcmplx_0(k3_xcmplx_0(1^[], 4^[]), k3_xcmplx_0(2^[], 4^[])), k3_xcmplx_0(3^[], 4^[]))), k6_xcmplx_0(k3_xcmplx_0(4^[], 1^[]), k3_xcmplx_0(4^[], 2^[]))=k6_xcmplx_0(k3_xcmplx_0(1^[], 4^[]), k3_xcmplx_0(2^[], 4^[])), k3_xcmplx_0(3^[], 4^[])=k3_xcmplx_0(3^[], 4^[])]   (9)  substitution:[[_G3407, _G3542, _G3474, _G3611], [k6_xcmplx_0(k3_xcmplx_0(4^[], 1^[]), k3_xcmplx_0(4^[], 2^[])), k3_xcmplx_0(3^[], 4^[]), k6_xcmplx_0(k3_xcmplx_0(1^[], 4^[]), k3_xcmplx_0(2^[], 4^[])), k3_xcmplx_0(3^[], 4^[])]]
+1.1.2.2.1  [- (k6_xcmplx_0(k3_xcmplx_0(4^[], 1^[]), k3_xcmplx_0(4^[], 2^[]))=k6_xcmplx_0(k3_xcmplx_0(1^[], 4^[]), k3_xcmplx_0(2^[], 4^[]))), k3_xcmplx_0(4^[], 1^[])=k3_xcmplx_0(1^[], 4^[]), k3_xcmplx_0(4^[], 2^[])=k3_xcmplx_0(2^[], 4^[])]   (9)  substitution:[[_G3407, _G3542, _G3474, _G3611], [k3_xcmplx_0(4^[], 1^[]), k3_xcmplx_0(4^[], 2^[]), k3_xcmplx_0(1^[], 4^[]), k3_xcmplx_0(2^[], 4^[])]]
+1.1.2.2.1.1  [- (k3_xcmplx_0(4^[], 1^[])=k3_xcmplx_0(1^[], 4^[])), v1_xcmplx_0(4^[]), v1_xcmplx_0(1^[])]   (6)  substitution:[[_G4634, _G4689], [4^[], 1^[]]]
+1.1.2.2.1.1.1  [-v1_xcmplx_0(4^[])]   (4)  
+1.1.2.2.1.1.2  [-v1_xcmplx_0(1^[])]   (1)  
+1.1.2.2.1.2  [- (k3_xcmplx_0(4^[], 2^[])=k3_xcmplx_0(2^[], 4^[])), v1_xcmplx_0(4^[]), v1_xcmplx_0(2^[])]   (6)  substitution:[[_G4634, _G4689], [4^[], 2^[]]]
+1.1.2.2.1.2.1  [-v1_xcmplx_0(4^[])]   (4)  
+1.1.2.2.1.2.2  [-v1_xcmplx_0(2^[])]   (2)  
+1.1.2.2.2  [- (k3_xcmplx_0(3^[], 4^[])=k3_xcmplx_0(3^[], 4^[])), 3^[]=3^[], 4^[]=4^[]]   (10)  substitution:[[_G3995, _G4130, _G4062, _G4199], [3^[], 4^[], 3^[], 4^[]]]
+1.1.2.2.2.1  [- (3^[]=3^[])]   (12)  substitution:[[_G2335], [3^[]]]
+1.1.2.2.2.2  [- (4^[]=4^[])]   (12)  substitution:[[_G2335], [4^[]]]
+------------------------------------------------------
+End of proof for t42_xcmplx_1

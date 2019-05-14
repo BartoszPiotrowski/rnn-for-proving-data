@@ -1,0 +1,38 @@
+
+t21_ordinal2 is a Theorem
+Start of proof for t21_ordinal2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v3_ordinal1(2^[])]
+ (2)  [-r2_hidden(2^[], k3_ordinal2(3^[]))]
+ (3)  [v3_ordinal1(_G3950), r2_hidden(_G3950, 3^[]), r1_ordinal1(2^[], _G3950)]
+ (4)  [-v3_ordinal1(k3_ordinal2(_G1196))]
+ (5)  [v3_ordinal1(_G1340), v3_ordinal1(_G1285), r1_ordinal1(_G1285, _G1340), -r1_tarski(_G1285, _G1340)]
+ (6)  [v3_ordinal1(_G1340), v3_ordinal1(_G1285), -r1_ordinal1(_G1285, _G1340), r1_tarski(_G1285, _G1340)]
+ (7)  [v3_ordinal1(_G1653), v3_ordinal1(_G1740), -r1_ordinal1(_G1653, _G1740), -r2_hidden(_G1740, _G1653)]
+ (8)  [r2_hidden(_G2553, _G2600), r1_tarski(_G2600, _G2553)]
+ (9)  [v3_ordinal1(_G2016), -v3_ordinal1(1^[_G2116, _G2016]), -r1_ordinal1(k3_ordinal2(_G2116), _G2016)]
+ (10)  [v3_ordinal1(_G2016), -r2_hidden(1^[_G2116, _G2016], _G2116), -r1_ordinal1(k3_ordinal2(_G2116), _G2016)]
+ (11)  [v3_ordinal1(_G2016), r2_hidden(1^[_G2116, _G2016], _G2016), -r1_ordinal1(k3_ordinal2(_G2116), _G2016)]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(2^[], k3_ordinal2(3^[])), r1_tarski(k3_ordinal2(3^[]), 2^[])]   (8)  substitution:[[_G2553, _G2600], [2^[], k3_ordinal2(3^[])]]
+1.1  [-r2_hidden(2^[], k3_ordinal2(3^[]))]   (2)  
+1.2  [-r1_tarski(k3_ordinal2(3^[]), 2^[]), v3_ordinal1(2^[]), v3_ordinal1(k3_ordinal2(3^[])), r1_ordinal1(k3_ordinal2(3^[]), 2^[])]   (5)  substitution:[[_G1285, _G1340], [k3_ordinal2(3^[]), 2^[]]]
+1.2.1  [-v3_ordinal1(2^[])]   (1)  
+1.2.2  [-v3_ordinal1(k3_ordinal2(3^[]))]   (4)  substitution:[[_G1196], [3^[]]]
+1.2.3  [-r1_ordinal1(k3_ordinal2(3^[]), 2^[]), v3_ordinal1(2^[]), -v3_ordinal1(1^[3^[], 2^[]])]   (9)  substitution:[[_G2116, _G2016], [3^[], 2^[]]]
+1.2.3.1  [-v3_ordinal1(2^[])]   (1)  
+1.2.3.2  [v3_ordinal1(1^[3^[], 2^[]]), r2_hidden(1^[3^[], 2^[]], 3^[]), r1_ordinal1(2^[], 1^[3^[], 2^[]])]   (3)  substitution:[[_G3950], [1^[3^[], 2^[]]]]
+1.2.3.2.1  [-r2_hidden(1^[3^[], 2^[]], 3^[]), v3_ordinal1(2^[]), -r1_ordinal1(k3_ordinal2(3^[]), 2^[])]   (10)  substitution:[[_G2116, _G2016], [3^[], 2^[]]]
+1.2.3.2.1.1  [-v3_ordinal1(2^[])]   (1)  
+1.2.3.2.1.2  [r1_ordinal1(k3_ordinal2(3^[]), 2^[])]   (reduction:1.2)  
+1.2.3.2.2  [-r1_ordinal1(2^[], 1^[3^[], 2^[]]), v3_ordinal1(2^[]), v3_ordinal1(1^[3^[], 2^[]]), -r2_hidden(1^[3^[], 2^[]], 2^[])]   (7)  substitution:[[_G1653, _G1740], [2^[], 1^[3^[], 2^[]]]]
+1.2.3.2.2.1  [-v3_ordinal1(2^[])]   (1)  
+1.2.3.2.2.2  [-v3_ordinal1(1^[3^[], 2^[]])]   (reduction:1.2.3)  
+1.2.3.2.2.3  [r2_hidden(1^[3^[], 2^[]], 2^[]), v3_ordinal1(2^[]), -r1_ordinal1(k3_ordinal2(3^[]), 2^[])]   (11)  substitution:[[_G2116, _G2016], [3^[], 2^[]]]
+1.2.3.2.2.3.1  [-v3_ordinal1(2^[])]   (1)  
+1.2.3.2.2.3.2  [r1_ordinal1(k3_ordinal2(3^[]), 2^[])]   (reduction:1.2)  
+------------------------------------------------------
+End of proof for t21_ordinal2

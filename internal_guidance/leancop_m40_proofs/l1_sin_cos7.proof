@@ -1,0 +1,23 @@
+
+l1_sin_cos7 is a Theorem
+Start of proof for l1_sin_cos7
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [- (k8_power=np__1)]
+ (2)  [r1_xxreal_0(k8_power, np__1)]
+ (3)  [-r1_xxreal_0(np__1, np__1)]
+ (4)  [-r1_xxreal_0(_G1643, _G1780), r1_xxreal_0(_G1576, _G1711), _G1576=_G1643, _G1711=_G1780]
+ (5)  [- (_G803=_G803)]
+ (6)  [_G902=_G947, - (_G947=_G902)]
+ (7)  [- (_G1135=_G1248), _G1135=_G1191, _G1191=_G1248]
+
+Connection Proof:
+-----------------
+1  [r1_xxreal_0(k8_power, np__1)]   (2)  
+1.1  [-r1_xxreal_0(k8_power, np__1), r1_xxreal_0(np__1, np__1), np__1=k8_power, np__1=np__1]   (4)  substitution:[[_G1643, _G1780, _G1576, _G1711], [k8_power, np__1, np__1, np__1]]
+1.1.1  [-r1_xxreal_0(np__1, np__1)]   (3)  
+1.1.2  [- (np__1=k8_power), k8_power=np__1]   (6)  substitution:[[_G947, _G902], [np__1, k8_power]]
+1.1.2.1  [- (k8_power=np__1)]   (1)  
+1.1.3  [- (np__1=np__1)]   (5)  substitution:[[_G803], [np__1]]
+------------------------------------------------------
+End of proof for l1_sin_cos7

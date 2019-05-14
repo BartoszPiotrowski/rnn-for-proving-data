@@ -1,0 +1,40 @@
+
+t143_xboolean is a Theorem
+Start of proof for t143_xboolean
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xboolean(1^[])]
+ (2)  [k3_xboolean(k7_xboolean(1^[], 1^[]))=k1_xboolean]
+ (3)  [- (k1_xboolean=k6_numbers)]
+ (4)  [- (k1_xboole_0=o_0_0_xboole_0)]
+ (5)  [- (k2_xboolean=np__1)]
+ (6)  [- (k6_numbers=k1_xboole_0)]
+ (7)  [v1_xboolean(_G4617), - (k6_xboolean(_G4617, _G4617)=k2_xboolean)]
+ (8)  [v1_xboolean(_G4816), - (k7_xboolean(_G4816, _G4816)=k2_xboolean)]
+ (9)  [v1_xboolean(_G5006), - (k3_xboolean(k6_xboolean(_G5006, _G5006))=k1_xboolean)]
+ (10)  [-v1_xboolean(_G2613), _G2564=_G2613, v1_xboolean(_G2564)]
+ (11)  [- (_G1791=_G1791)]
+ (12)  [_G1890=_G1935, - (_G1935=_G1890)]
+ (13)  [- (_G2123=_G2236), _G2123=_G2179, _G2179=_G2236]
+ (14)  [- (k6_xboolean(_G2863, _G2998)=k6_xboolean(_G2930, _G3067)), _G2863=_G2930, _G2998=_G3067]
+ (15)  [_G3460=_G3509, - (k3_xboolean(_G3460)=k3_xboolean(_G3509))]
+ (16)  [- (k7_xboolean(_G3729, _G3864)=k7_xboolean(_G3796, _G3933)), _G3729=_G3796, _G3864=_G3933]
+
+Connection Proof:
+-----------------
+1  [k3_xboolean(k7_xboolean(1^[], 1^[]))=k1_xboolean]   (2)  
+1.1  [- (k3_xboolean(k7_xboolean(1^[], 1^[]))=k1_xboolean), k1_xboolean=k3_xboolean(k7_xboolean(1^[], 1^[]))]   (12)  substitution:[[_G1935, _G1890], [k3_xboolean(k7_xboolean(1^[], 1^[])), k1_xboolean]]
+1.1.1  [- (k1_xboolean=k3_xboolean(k7_xboolean(1^[], 1^[]))), k1_xboolean=k3_xboolean(k2_xboolean), k3_xboolean(k2_xboolean)=k3_xboolean(k7_xboolean(1^[], 1^[]))]   (13)  substitution:[[_G2123, _G2236, _G2179], [k1_xboolean, k3_xboolean(k7_xboolean(1^[], 1^[])), k3_xboolean(k2_xboolean)]]
+1.1.1.1  [- (k1_xboolean=k3_xboolean(k2_xboolean)), k1_xboolean=k3_xboolean(k6_xboolean(1^[], 1^[])), k3_xboolean(k6_xboolean(1^[], 1^[]))=k3_xboolean(k2_xboolean)]   (13)  substitution:[[_G2123, _G2236, _G2179], [k1_xboolean, k3_xboolean(k2_xboolean), k3_xboolean(k6_xboolean(1^[], 1^[]))]]
+1.1.1.1.1  [- (k1_xboolean=k3_xboolean(k6_xboolean(1^[], 1^[]))), k3_xboolean(k6_xboolean(1^[], 1^[]))=k1_xboolean]   (12)  substitution:[[_G1935, _G1890], [k1_xboolean, k3_xboolean(k6_xboolean(1^[], 1^[]))]]
+1.1.1.1.1.1  [- (k3_xboolean(k6_xboolean(1^[], 1^[]))=k1_xboolean), v1_xboolean(1^[])]   (9)  substitution:[[_G5006], [1^[]]]
+1.1.1.1.1.1.1  [-v1_xboolean(1^[])]   (1)  
+1.1.1.1.2  [- (k3_xboolean(k6_xboolean(1^[], 1^[]))=k3_xboolean(k2_xboolean)), k6_xboolean(1^[], 1^[])=k2_xboolean]   (15)  substitution:[[_G3460, _G3509], [k6_xboolean(1^[], 1^[]), k2_xboolean]]
+1.1.1.1.2.1  [- (k6_xboolean(1^[], 1^[])=k2_xboolean), v1_xboolean(1^[])]   (7)  substitution:[[_G4617], [1^[]]]
+1.1.1.1.2.1.1  [-v1_xboolean(1^[])]   (1)  
+1.1.1.2  [- (k3_xboolean(k2_xboolean)=k3_xboolean(k7_xboolean(1^[], 1^[]))), k3_xboolean(k7_xboolean(1^[], 1^[]))=k3_xboolean(k2_xboolean)]   (12)  substitution:[[_G1935, _G1890], [k3_xboolean(k2_xboolean), k3_xboolean(k7_xboolean(1^[], 1^[]))]]
+1.1.1.2.1  [- (k3_xboolean(k7_xboolean(1^[], 1^[]))=k3_xboolean(k2_xboolean)), k7_xboolean(1^[], 1^[])=k2_xboolean]   (15)  substitution:[[_G3460, _G3509], [k7_xboolean(1^[], 1^[]), k2_xboolean]]
+1.1.1.2.1.1  [- (k7_xboolean(1^[], 1^[])=k2_xboolean), v1_xboolean(1^[])]   (8)  substitution:[[_G4816], [1^[]]]
+1.1.1.2.1.1.1  [-v1_xboolean(1^[])]   (1)  
+------------------------------------------------------
+End of proof for t143_xboolean

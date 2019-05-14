@@ -1,0 +1,61 @@
+
+t7_filter_0 is a Theorem
+Start of proof for t7_filter_0
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(1^[])]
+ (2)  [-v6_lattices(1^[])]
+ (3)  [-v7_lattices(1^[])]
+ (4)  [-v8_lattices(1^[])]
+ (5)  [-v9_lattices(1^[])]
+ (6)  [-l3_lattices(1^[])]
+ (7)  [-m1_subset_1(2^[], u1_struct_0(1^[]))]
+ (8)  [-m1_subset_1(3^[], u1_struct_0(1^[]))]
+ (9)  [-m1_subset_1(4^[], u1_struct_0(1^[]))]
+ (10)  [-r3_lattices(1^[], 2^[], 3^[])]
+ (11)  [-r3_lattices(1^[], 2^[], 4^[])]
+ (12)  [r3_lattices(1^[], 2^[], k4_lattices(1^[], 3^[], 4^[]))]
+ (13)  [- (k4_lattices(_G9361, _G9439, _G9439)=_G9439), m1_subset_1(_G9439, u1_struct_0(_G9361)), -v2_struct_0(_G9361), v6_lattices(_G9361), v8_lattices(_G9361), v9_lattices(_G9361), l3_lattices(_G9361)]
+ (14)  [l3_lattices(_G10035), v9_lattices(_G10035), v8_lattices(_G10035), v7_lattices(_G10035), v6_lattices(_G10035), -v2_struct_0(_G10035), m1_subset_1(_G10487, u1_struct_0(_G10035)), m1_subset_1(_G10668, u1_struct_0(_G10035)), m1_subset_1(_G10842, u1_struct_0(_G10035)), m1_subset_1(_G11009, u1_struct_0(_G10035)), -r3_lattices(_G10035, k4_lattices(_G10035, _G10487, _G10842), k4_lattices(_G10035, _G10668, _G11009)), r3_lattices(_G10035, _G10487, _G10668), r3_lattices(_G10035, _G10842, _G11009)]
+ (15)  [_G8022=_G8071, - (u1_struct_0(_G8022)=u1_struct_0(_G8071))]
+ (16)  [- (k4_lattices(_G8291, _G8462, _G8637)=k4_lattices(_G8376, _G8549, _G8726)), _G8291=_G8376, _G8462=_G8549, _G8637=_G8726]
+ (17)  [- (_G3788=_G3788)]
+ (18)  [_G3887=_G3932, - (_G3932=_G3887)]
+ (19)  [- (_G4120=_G4233), _G4120=_G4176, _G4176=_G4233]
+ (20)  [-v2_struct_0(_G4619), _G4570=_G4619, v2_struct_0(_G4570)]
+ (21)  [-v6_lattices(_G4897), _G4848=_G4897, v6_lattices(_G4848)]
+ (22)  [-v7_lattices(_G5175), _G5126=_G5175, v7_lattices(_G5126)]
+ (23)  [-v8_lattices(_G5453), _G5404=_G5453, v8_lattices(_G5404)]
+ (24)  [-v9_lattices(_G5731), _G5682=_G5731, v9_lattices(_G5682)]
+ (25)  [-l3_lattices(_G6009), _G5960=_G6009, l3_lattices(_G5960)]
+ (26)  [-m1_subset_1(_G6305, _G6442), m1_subset_1(_G6238, _G6373), _G6238=_G6305, _G6373=_G6442]
+ (27)  [-r3_lattices(_G6911, _G7084, _G7261), r3_lattices(_G6826, _G6997, _G7172), _G6826=_G6911, _G6997=_G7084, _G7172=_G7261]
+
+Connection Proof:
+-----------------
+1  [r3_lattices(1^[], 2^[], k4_lattices(1^[], 3^[], 4^[]))]   (12)  
+1.1  [-r3_lattices(1^[], 2^[], k4_lattices(1^[], 3^[], 4^[])), r3_lattices(1^[], k4_lattices(1^[], 2^[], 2^[]), k4_lattices(1^[], 3^[], 4^[])), 1^[]=1^[], k4_lattices(1^[], 2^[], 2^[])=2^[], k4_lattices(1^[], 3^[], 4^[])=k4_lattices(1^[], 3^[], 4^[])]   (27)  substitution:[[_G6911, _G7084, _G7261, _G6826, _G6997, _G7172], [1^[], 2^[], k4_lattices(1^[], 3^[], 4^[]), 1^[], k4_lattices(1^[], 2^[], 2^[]), k4_lattices(1^[], 3^[], 4^[])]]
+1.1.1  [-r3_lattices(1^[], k4_lattices(1^[], 2^[], 2^[]), k4_lattices(1^[], 3^[], 4^[])), l3_lattices(1^[]), v9_lattices(1^[]), v8_lattices(1^[]), v7_lattices(1^[]), v6_lattices(1^[]), -v2_struct_0(1^[]), m1_subset_1(2^[], u1_struct_0(1^[])), m1_subset_1(3^[], u1_struct_0(1^[])), m1_subset_1(2^[], u1_struct_0(1^[])), m1_subset_1(4^[], u1_struct_0(1^[])), r3_lattices(1^[], 2^[], 3^[]), r3_lattices(1^[], 2^[], 4^[])]   (14)  substitution:[[_G10035, _G10487, _G10842, _G10668, _G11009], [1^[], 2^[], 2^[], 3^[], 4^[]]]
+1.1.1.1  [-l3_lattices(1^[])]   (6)  
+1.1.1.2  [-v9_lattices(1^[])]   (5)  
+1.1.1.3  [-v8_lattices(1^[])]   (4)  
+1.1.1.4  [-v7_lattices(1^[])]   (3)  
+1.1.1.5  [-v6_lattices(1^[])]   (2)  
+1.1.1.6  [v2_struct_0(1^[])]   (1)  
+1.1.1.7  [-m1_subset_1(2^[], u1_struct_0(1^[]))]   (7)  
+1.1.1.8  [-m1_subset_1(3^[], u1_struct_0(1^[]))]   (8)  
+1.1.1.9  [-m1_subset_1(2^[], u1_struct_0(1^[]))]   (7)  
+1.1.1.10  [-m1_subset_1(4^[], u1_struct_0(1^[]))]   (9)  
+1.1.1.11  [-r3_lattices(1^[], 2^[], 3^[])]   (10)  
+1.1.1.12  [-r3_lattices(1^[], 2^[], 4^[])]   (11)  
+1.1.2  [- (1^[]=1^[])]   (17)  substitution:[[_G3788], [1^[]]]
+1.1.3  [- (k4_lattices(1^[], 2^[], 2^[])=2^[]), m1_subset_1(2^[], u1_struct_0(1^[])), -v2_struct_0(1^[]), v6_lattices(1^[]), v8_lattices(1^[]), v9_lattices(1^[]), l3_lattices(1^[])]   (13)  substitution:[[_G9361, _G9439], [1^[], 2^[]]]
+1.1.3.1  [-m1_subset_1(2^[], u1_struct_0(1^[]))]   (7)  
+1.1.3.2  [v2_struct_0(1^[])]   (1)  
+1.1.3.3  [-v6_lattices(1^[])]   (2)  
+1.1.3.4  [-v8_lattices(1^[])]   (4)  
+1.1.3.5  [-v9_lattices(1^[])]   (5)  
+1.1.3.6  [-l3_lattices(1^[])]   (6)  
+1.1.4  [- (k4_lattices(1^[], 3^[], 4^[])=k4_lattices(1^[], 3^[], 4^[]))]   (17)  substitution:[[_G3788], [k4_lattices(1^[], 3^[], 4^[])]]
+------------------------------------------------------
+End of proof for t7_filter_0

@@ -1,0 +1,51 @@
+
+t1_mazurulm is a Theorem
+Start of proof for t1_mazurulm
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v1_tops_1(k2_urysohn1, k5_topmetr), m1_subset_1(k2_urysohn1, k1_zfmisc_1(u1_struct_0(k5_topmetr)))]
+ (2)  [- (c1__mazurulm=k2_urysohn1)]
+ (3)  [-m1_subset_1(c1__mazurulm, k1_zfmisc_1(u1_struct_0(k5_topmetr)))]
+ (4)  [-l1_pre_topc(k17_borsuk_1)]
+ (5)  [- (k2_pre_topc(k5_topmetr, c1__mazurulm)=k2_struct_0(k5_topmetr))]
+ (6)  [- (k5_topmetr=k17_borsuk_1)]
+ (7)  [l1_pre_topc(_G5757), m1_subset_1(_G5854, k1_zfmisc_1(u1_struct_0(_G5757))), v1_tops_1(_G5854, _G5757), - (k2_pre_topc(_G5757, _G5854)=k2_struct_0(_G5757))]
+ (8)  [l1_pre_topc(_G5757), m1_subset_1(_G5854, k1_zfmisc_1(u1_struct_0(_G5757))), -v1_tops_1(_G5854, _G5757), k2_pre_topc(_G5757, _G5854)=k2_struct_0(_G5757)]
+ (9)  [- (k2_pre_topc(_G4251, _G4386)=k2_pre_topc(_G4318, _G4455)), _G4251=_G4318, _G4386=_G4455]
+ (10)  [_G4848=_G4897, - (k2_struct_0(_G4848)=k2_struct_0(_G4897))]
+ (11)  [_G5126=_G5175, - (k1_zfmisc_1(_G5126)=k1_zfmisc_1(_G5175))]
+ (12)  [_G5395=_G5444, - (u1_struct_0(_G5395)=u1_struct_0(_G5444))]
+ (13)  [- (_G1943=_G1943)]
+ (14)  [_G2042=_G2087, - (_G2087=_G2042)]
+ (15)  [- (_G2275=_G2388), _G2275=_G2331, _G2331=_G2388]
+ (16)  [-l1_pre_topc(_G2774), _G2725=_G2774, l1_pre_topc(_G2725)]
+ (17)  [-v1_tops_1(_G3070, _G3207), v1_tops_1(_G3003, _G3138), _G3003=_G3070, _G3138=_G3207]
+ (18)  [-m1_subset_1(_G3658, _G3795), m1_subset_1(_G3591, _G3726), _G3591=_G3658, _G3726=_G3795]
+
+Connection Proof:
+-----------------
+1  [v1_tops_1(k2_urysohn1, k5_topmetr), m1_subset_1(k2_urysohn1, k1_zfmisc_1(u1_struct_0(k5_topmetr)))]   (1)  
+1.1  [-v1_tops_1(k2_urysohn1, k5_topmetr), l1_pre_topc(k5_topmetr), m1_subset_1(k2_urysohn1, k1_zfmisc_1(u1_struct_0(k5_topmetr))), k2_pre_topc(k5_topmetr, k2_urysohn1)=k2_struct_0(k5_topmetr)]   (8)  substitution:[[_G5854, _G5757], [k2_urysohn1, k5_topmetr]]
+1.1.1  [-l1_pre_topc(k5_topmetr), k17_borsuk_1=k5_topmetr, l1_pre_topc(k17_borsuk_1)]   (16)  substitution:[[_G2774, _G2725], [k5_topmetr, k17_borsuk_1]]
+1.1.1.1  [- (k17_borsuk_1=k5_topmetr), k5_topmetr=k17_borsuk_1]   (14)  substitution:[[_G2087, _G2042], [k17_borsuk_1, k5_topmetr]]
+1.1.1.1.1  [- (k5_topmetr=k17_borsuk_1)]   (6)  
+1.1.1.2  [-l1_pre_topc(k17_borsuk_1)]   (4)  
+1.1.2  [-m1_subset_1(k2_urysohn1, k1_zfmisc_1(u1_struct_0(k5_topmetr))), m1_subset_1(c1__mazurulm, k1_zfmisc_1(u1_struct_0(k5_topmetr))), c1__mazurulm=k2_urysohn1, k1_zfmisc_1(u1_struct_0(k5_topmetr))=k1_zfmisc_1(u1_struct_0(k5_topmetr))]   (18)  substitution:[[_G3658, _G3795, _G3591, _G3726], [k2_urysohn1, k1_zfmisc_1(u1_struct_0(k5_topmetr)), c1__mazurulm, k1_zfmisc_1(u1_struct_0(k5_topmetr))]]
+1.1.2.1  [-m1_subset_1(c1__mazurulm, k1_zfmisc_1(u1_struct_0(k5_topmetr)))]   (3)  
+1.1.2.2  [- (c1__mazurulm=k2_urysohn1)]   (2)  
+1.1.2.3  [- (k1_zfmisc_1(u1_struct_0(k5_topmetr))=k1_zfmisc_1(u1_struct_0(k5_topmetr))), u1_struct_0(k5_topmetr)=u1_struct_0(k5_topmetr)]   (11)  substitution:[[_G5126, _G5175], [u1_struct_0(k5_topmetr), u1_struct_0(k5_topmetr)]]
+1.1.2.3.1  [- (u1_struct_0(k5_topmetr)=u1_struct_0(k5_topmetr))]   (13)  substitution:[[_G1943], [u1_struct_0(k5_topmetr)]]
+1.1.3  [- (k2_pre_topc(k5_topmetr, k2_urysohn1)=k2_struct_0(k5_topmetr)), k2_pre_topc(k5_topmetr, k2_urysohn1)=k2_pre_topc(k5_topmetr, c1__mazurulm), k2_pre_topc(k5_topmetr, c1__mazurulm)=k2_struct_0(k5_topmetr)]   (15)  substitution:[[_G2275, _G2388, _G2331], [k2_pre_topc(k5_topmetr, k2_urysohn1), k2_struct_0(k5_topmetr), k2_pre_topc(k5_topmetr, c1__mazurulm)]]
+1.1.3.1  [- (k2_pre_topc(k5_topmetr, k2_urysohn1)=k2_pre_topc(k5_topmetr, c1__mazurulm)), k5_topmetr=k5_topmetr, k2_urysohn1=c1__mazurulm]   (9)  substitution:[[_G4251, _G4386, _G4318, _G4455], [k5_topmetr, k2_urysohn1, k5_topmetr, c1__mazurulm]]
+1.1.3.1.1  [- (k5_topmetr=k5_topmetr)]   (13)  substitution:[[_G1943], [k5_topmetr]]
+1.1.3.1.2  [- (k2_urysohn1=c1__mazurulm), c1__mazurulm=k2_urysohn1]   (14)  substitution:[[_G2087, _G2042], [k2_urysohn1, c1__mazurulm]]
+1.1.3.1.2.1  [- (c1__mazurulm=k2_urysohn1)]   (2)  
+1.1.3.2  [- (k2_pre_topc(k5_topmetr, c1__mazurulm)=k2_struct_0(k5_topmetr))]   (5)  
+1.2  [-m1_subset_1(k2_urysohn1, k1_zfmisc_1(u1_struct_0(k5_topmetr))), m1_subset_1(c1__mazurulm, k1_zfmisc_1(u1_struct_0(k5_topmetr))), c1__mazurulm=k2_urysohn1, k1_zfmisc_1(u1_struct_0(k5_topmetr))=k1_zfmisc_1(u1_struct_0(k5_topmetr))]   (18)  substitution:[[_G3658, _G3795, _G3591, _G3726], [k2_urysohn1, k1_zfmisc_1(u1_struct_0(k5_topmetr)), c1__mazurulm, k1_zfmisc_1(u1_struct_0(k5_topmetr))]]
+1.2.1  [-m1_subset_1(c1__mazurulm, k1_zfmisc_1(u1_struct_0(k5_topmetr)))]   (3)  
+1.2.2  [- (c1__mazurulm=k2_urysohn1)]   (2)  
+1.2.3  [- (k1_zfmisc_1(u1_struct_0(k5_topmetr))=k1_zfmisc_1(u1_struct_0(k5_topmetr))), u1_struct_0(k5_topmetr)=u1_struct_0(k5_topmetr)]   (11)  substitution:[[_G5126, _G5175], [u1_struct_0(k5_topmetr), u1_struct_0(k5_topmetr)]]
+1.2.3.1  [- (u1_struct_0(k5_topmetr)=u1_struct_0(k5_topmetr)), k5_topmetr=k5_topmetr]   (12)  substitution:[[_G5395, _G5444], [k5_topmetr, k5_topmetr]]
+1.2.3.1.1  [- (k5_topmetr=k5_topmetr)]   (13)  substitution:[[_G1943], [k5_topmetr]]
+------------------------------------------------------
+End of proof for t1_mazurulm

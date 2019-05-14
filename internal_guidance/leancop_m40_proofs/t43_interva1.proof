@@ -1,0 +1,39 @@
+
+t43_interva1 is a Theorem
+Start of proof for t43_interva1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v1_xboole_0(1^[])]
+ (2)  [-v1_xboole_0(k2_interva1(1^[], k2_subset_1(1^[]), k2_subset_1(1^[]))), m1_interva1(k2_interva1(1^[], k2_subset_1(1^[]), k2_subset_1(1^[])), 1^[])]
+ (3)  [- (k2_subset_1(_G8170)=_G8170)]
+ (4)  [-m1_interva1(k2_interva1(_G8285, _G8349, _G8414), _G8285), m1_subset_1(_G8349, k1_zfmisc_1(_G8285)), m1_subset_1(_G8414, k1_zfmisc_1(_G8285))]
+ (5)  [-m1_subset_1(k2_subset_1(_G8827), k1_zfmisc_1(_G8827))]
+ (6)  [-r1_tarski(_G8958, _G8958)]
+ (7)  [-v1_xboole_0(_G9101), m1_subset_1(_G9249, k1_zfmisc_1(_G9101)), m1_subset_1(_G9416, k1_zfmisc_1(_G9101)), r1_tarski(_G9249, _G9416), v1_xboole_0(k2_interva1(_G9101, _G9249, _G9416))]
+ (8)  [-v1_xboole_0(_G9101), m1_subset_1(_G9249, k1_zfmisc_1(_G9101)), m1_subset_1(_G9416, k1_zfmisc_1(_G9101)), r1_tarski(_G9249, _G9416), -v1_interva1(k2_interva1(_G9101, _G9249, _G9416), _G9101)]
+ (9)  [-v1_xboole_0(_G9101), m1_subset_1(_G9249, k1_zfmisc_1(_G9101)), m1_subset_1(_G9416, k1_zfmisc_1(_G9101)), r1_tarski(_G9249, _G9416), -m1_subset_1(k2_interva1(_G9101, _G9249, _G9416), k1_zfmisc_1(k1_zfmisc_1(_G9101)))]
+ (10)  [_G6532=_G6581, - (k1_zfmisc_1(_G6532)=k1_zfmisc_1(_G6581))]
+ (11)  [_G7829=_G7878, - (k2_subset_1(_G7829)=k2_subset_1(_G7878))]
+ (12)  [- (k2_interva1(_G6810, _G6981, _G7156)=k2_interva1(_G6895, _G7068, _G7245)), _G6810=_G6895, _G6981=_G7068, _G7156=_G7245]
+ (13)  [- (_G2988=_G2988)]
+ (14)  [_G3087=_G3132, - (_G3132=_G3087)]
+ (15)  [- (_G3320=_G3433), _G3320=_G3376, _G3376=_G3433]
+ (16)  [-r1_tarski(_G3837, _G3974), r1_tarski(_G3770, _G3905), _G3770=_G3837, _G3905=_G3974]
+ (17)  [-v1_interva1(_G4434, _G4571), v1_interva1(_G4367, _G4502), _G4367=_G4434, _G4502=_G4571]
+ (18)  [-m1_subset_1(_G5031, _G5168), m1_subset_1(_G4964, _G5099), _G4964=_G5031, _G5099=_G5168]
+ (19)  [-v1_xboole_0(_G5610), _G5561=_G5610, v1_xboole_0(_G5561)]
+ (20)  [-m1_interva1(_G5897, _G6034), m1_interva1(_G5830, _G5965), _G5830=_G5897, _G5965=_G6034]
+
+Connection Proof:
+-----------------
+1  [v1_xboole_0(1^[])]   (1)  
+1.1  [-v1_xboole_0(1^[]), m1_subset_1(k2_subset_1(1^[]), k1_zfmisc_1(1^[])), m1_subset_1(k2_subset_1(1^[]), k1_zfmisc_1(1^[])), r1_tarski(k2_subset_1(1^[]), k2_subset_1(1^[])), v1_xboole_0(k2_interva1(1^[], k2_subset_1(1^[]), k2_subset_1(1^[])))]   (7)  substitution:[[_G9101, _G9249, _G9416], [1^[], k2_subset_1(1^[]), k2_subset_1(1^[])]]
+1.1.1  [-m1_subset_1(k2_subset_1(1^[]), k1_zfmisc_1(1^[]))]   (5)  substitution:[[_G8827], [1^[]]]
+1.1.2  [-m1_subset_1(k2_subset_1(1^[]), k1_zfmisc_1(1^[]))]   (5)  substitution:[[_G8827], [1^[]]]
+1.1.3  [-r1_tarski(k2_subset_1(1^[]), k2_subset_1(1^[]))]   (6)  substitution:[[_G8958], [k2_subset_1(1^[])]]
+1.1.4  [-v1_xboole_0(k2_interva1(1^[], k2_subset_1(1^[]), k2_subset_1(1^[]))), m1_interva1(k2_interva1(1^[], k2_subset_1(1^[]), k2_subset_1(1^[])), 1^[])]   (2)  
+1.1.4.1  [-m1_interva1(k2_interva1(1^[], k2_subset_1(1^[]), k2_subset_1(1^[])), 1^[]), m1_subset_1(k2_subset_1(1^[]), k1_zfmisc_1(1^[])), m1_subset_1(k2_subset_1(1^[]), k1_zfmisc_1(1^[]))]   (4)  substitution:[[_G8285, _G8349, _G8414], [1^[], k2_subset_1(1^[]), k2_subset_1(1^[])]]
+1.1.4.1.1  [-m1_subset_1(k2_subset_1(1^[]), k1_zfmisc_1(1^[]))]   (5)  substitution:[[_G8827], [1^[]]]
+1.1.4.1.2  [-m1_subset_1(k2_subset_1(1^[]), k1_zfmisc_1(1^[]))]   (5)  substitution:[[_G8827], [1^[]]]
+------------------------------------------------------
+End of proof for t43_interva1

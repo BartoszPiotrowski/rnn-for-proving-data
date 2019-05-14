@@ -1,0 +1,34 @@
+
+t2_xtuple_0 is a Theorem
+Start of proof for t2_xtuple_0
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xtuple_0(1^[])]
+ (2)  [-v1_xtuple_0(2^[])]
+ (3)  [- (k1_xtuple_0(1^[])=k1_xtuple_0(2^[]))]
+ (4)  [- (k2_xtuple_0(1^[])=k2_xtuple_0(2^[]))]
+ (5)  [1^[]=2^[]]
+ (6)  [v1_xtuple_0(_G3667), - (k4_tarski(k1_xtuple_0(_G3667), k2_xtuple_0(_G3667))=_G3667)]
+ (7)  [- (k4_tarski(_G2469, _G2604)=k4_tarski(_G2536, _G2673)), _G2469=_G2536, _G2604=_G2673]
+ (8)  [_G3066=_G3115, - (k1_xtuple_0(_G3066)=k1_xtuple_0(_G3115))]
+ (9)  [_G3335=_G3384, - (k2_xtuple_0(_G3335)=k2_xtuple_0(_G3384))]
+ (10)  [-v1_xtuple_0(_G2219), _G2170=_G2219, v1_xtuple_0(_G2170)]
+ (11)  [- (_G1397=_G1397)]
+ (12)  [_G1496=_G1541, - (_G1541=_G1496)]
+ (13)  [- (_G1729=_G1842), _G1729=_G1785, _G1785=_G1842]
+
+Connection Proof:
+-----------------
+1  [1^[]=2^[]]   (5)  
+1.1  [- (1^[]=2^[]), 1^[]=k4_tarski(k1_xtuple_0(1^[]), k2_xtuple_0(1^[])), k4_tarski(k1_xtuple_0(1^[]), k2_xtuple_0(1^[]))=2^[]]   (13)  substitution:[[_G1729, _G1842, _G1785], [1^[], 2^[], k4_tarski(k1_xtuple_0(1^[]), k2_xtuple_0(1^[]))]]
+1.1.1  [- (1^[]=k4_tarski(k1_xtuple_0(1^[]), k2_xtuple_0(1^[]))), k4_tarski(k1_xtuple_0(1^[]), k2_xtuple_0(1^[]))=1^[]]   (12)  substitution:[[_G1541, _G1496], [1^[], k4_tarski(k1_xtuple_0(1^[]), k2_xtuple_0(1^[]))]]
+1.1.1.1  [- (k4_tarski(k1_xtuple_0(1^[]), k2_xtuple_0(1^[]))=1^[]), v1_xtuple_0(1^[])]   (6)  substitution:[[_G3667], [1^[]]]
+1.1.1.1.1  [-v1_xtuple_0(1^[])]   (1)  
+1.1.2  [- (k4_tarski(k1_xtuple_0(1^[]), k2_xtuple_0(1^[]))=2^[]), k4_tarski(k1_xtuple_0(1^[]), k2_xtuple_0(1^[]))=k4_tarski(k1_xtuple_0(2^[]), k2_xtuple_0(2^[])), k4_tarski(k1_xtuple_0(2^[]), k2_xtuple_0(2^[]))=2^[]]   (13)  substitution:[[_G1729, _G1842, _G1785], [k4_tarski(k1_xtuple_0(1^[]), k2_xtuple_0(1^[])), 2^[], k4_tarski(k1_xtuple_0(2^[]), k2_xtuple_0(2^[]))]]
+1.1.2.1  [- (k4_tarski(k1_xtuple_0(1^[]), k2_xtuple_0(1^[]))=k4_tarski(k1_xtuple_0(2^[]), k2_xtuple_0(2^[]))), k1_xtuple_0(1^[])=k1_xtuple_0(2^[]), k2_xtuple_0(1^[])=k2_xtuple_0(2^[])]   (7)  substitution:[[_G2469, _G2604, _G2536, _G2673], [k1_xtuple_0(1^[]), k2_xtuple_0(1^[]), k1_xtuple_0(2^[]), k2_xtuple_0(2^[])]]
+1.1.2.1.1  [- (k1_xtuple_0(1^[])=k1_xtuple_0(2^[]))]   (3)  
+1.1.2.1.2  [- (k2_xtuple_0(1^[])=k2_xtuple_0(2^[]))]   (4)  
+1.1.2.2  [- (k4_tarski(k1_xtuple_0(2^[]), k2_xtuple_0(2^[]))=2^[]), v1_xtuple_0(2^[])]   (6)  substitution:[[_G3667], [2^[]]]
+1.1.2.2.1  [-v1_xtuple_0(2^[])]   (2)  
+------------------------------------------------------
+End of proof for t2_xtuple_0

@@ -1,0 +1,37 @@
+
+t6_orders_1 is a Theorem
+Start of proof for t6_orders_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-5^[], - (_G5492=k1_xboole_0), r2_hidden(_G5492, 2^[])]
+ (2)  [-5^[], k3_tarski(2^[])=k1_xboole_0]
+ (3)  [-4^[], - (k3_tarski(2^[])=k1_xboole_0)]
+ (4)  [-4^[], -r2_hidden(3^[], 2^[])]
+ (5)  [-4^[], 3^[]=k1_xboole_0]
+ (6)  [4^[], 5^[]]
+ (7)  [- (k3_tarski(_G3529)=k1_xboole_0), 1^[_G3529]=k1_xboole_0]
+ (8)  [- (k3_tarski(_G3529)=k1_xboole_0), -r2_hidden(1^[_G3529], _G3529)]
+ (9)  [k3_tarski(_G3529)=k1_xboole_0, - (_G3643=k1_xboole_0), r2_hidden(_G3643, _G3529)]
+ (10)  [_G3239=_G3288, - (k3_tarski(_G3239)=k3_tarski(_G3288))]
+ (11)  [-r2_hidden(_G2697, _G2834), r2_hidden(_G2630, _G2765), _G2630=_G2697, _G2765=_G2834]
+ (12)  [- (_G1857=_G1857)]
+ (13)  [_G1956=_G2001, - (_G2001=_G1956)]
+ (14)  [- (_G2189=_G2302), _G2189=_G2245, _G2245=_G2302]
+
+Connection Proof:
+-----------------
+1  [4^[], 5^[]]   (6)  
+1.1  [-4^[], - (k3_tarski(2^[])=k1_xboole_0)]   (3)  
+1.1.1  [k3_tarski(2^[])=k1_xboole_0, - (3^[]=k1_xboole_0), r2_hidden(3^[], 2^[])]   (9)  substitution:[[_G3529, _G3643], [2^[], 3^[]]]
+1.1.1.1  [3^[]=k1_xboole_0, -4^[]]   (5)  
+1.1.1.1.1  [4^[]]   (reduction:1)  
+1.1.1.2  [-r2_hidden(3^[], 2^[]), -4^[]]   (4)  
+1.1.1.2.1  [4^[]]   (reduction:1)  
+1.2  [-5^[], k3_tarski(2^[])=k1_xboole_0]   (2)  
+1.2.1  [- (k3_tarski(2^[])=k1_xboole_0), 1^[2^[]]=k1_xboole_0]   (7)  substitution:[[_G3529], [2^[]]]
+1.2.1.1  [- (1^[2^[]]=k1_xboole_0), -5^[], r2_hidden(1^[2^[]], 2^[])]   (1)  substitution:[[_G5492], [1^[2^[]]]]
+1.2.1.1.1  [5^[]]   (reduction:1)  
+1.2.1.1.2  [-r2_hidden(1^[2^[]], 2^[]), - (k3_tarski(2^[])=k1_xboole_0)]   (8)  substitution:[[_G3529], [2^[]]]
+1.2.1.1.2.1  [k3_tarski(2^[])=k1_xboole_0]   (reduction:1.2)  
+------------------------------------------------------
+End of proof for t6_orders_1

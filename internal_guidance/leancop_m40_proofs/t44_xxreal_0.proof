@@ -1,0 +1,33 @@
+
+t44_xxreal_0 is a Theorem
+Start of proof for t44_xxreal_0
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xxreal_0(1^[])]
+ (2)  [k3_xxreal_0(1^[], k2_xxreal_0)=k2_xxreal_0]
+ (3)  [- (k3_xxreal_0(_G4156, _G4211)=k3_xxreal_0(_G4211, _G4156)), v1_xxreal_0(_G4156), v1_xxreal_0(_G4211)]
+ (4)  [-v1_xxreal_0(k2_xxreal_0)]
+ (5)  [v1_xxreal_0(_G5198), -r1_xxreal_0(k2_xxreal_0, _G5198)]
+ (6)  [v1_xxreal_0(_G4524), v1_xxreal_0(_G4631), r1_xxreal_0(_G4524, _G4631), - (k3_xxreal_0(_G4524, _G4631)=_G4524)]
+ (7)  [v1_xxreal_0(_G4524), v1_xxreal_0(_G4631), -r1_xxreal_0(_G4524, _G4631), - (k3_xxreal_0(_G4524, _G4631)=_G4631)]
+ (8)  [- (k3_xxreal_0(_G3538, _G3673)=k3_xxreal_0(_G3605, _G3742)), _G3538=_G3605, _G3673=_G3742]
+ (9)  [- (_G1857=_G1857)]
+ (10)  [_G1956=_G2001, - (_G2001=_G1956)]
+ (11)  [- (_G2189=_G2302), _G2189=_G2245, _G2245=_G2302]
+ (12)  [-v1_xxreal_0(_G3276), _G3227=_G3276, v1_xxreal_0(_G3227)]
+ (13)  [-r1_xxreal_0(_G2706, _G2843), r1_xxreal_0(_G2639, _G2774), _G2639=_G2706, _G2774=_G2843]
+
+Connection Proof:
+-----------------
+1  [k3_xxreal_0(1^[], k2_xxreal_0)=k2_xxreal_0]   (2)  
+1.1  [- (k3_xxreal_0(1^[], k2_xxreal_0)=k2_xxreal_0), k3_xxreal_0(1^[], k2_xxreal_0)=k3_xxreal_0(k2_xxreal_0, 1^[]), k3_xxreal_0(k2_xxreal_0, 1^[])=k2_xxreal_0]   (11)  substitution:[[_G2189, _G2302, _G2245], [k3_xxreal_0(1^[], k2_xxreal_0), k2_xxreal_0, k3_xxreal_0(k2_xxreal_0, 1^[])]]
+1.1.1  [- (k3_xxreal_0(1^[], k2_xxreal_0)=k3_xxreal_0(k2_xxreal_0, 1^[])), v1_xxreal_0(1^[]), v1_xxreal_0(k2_xxreal_0)]   (3)  substitution:[[_G4156, _G4211], [1^[], k2_xxreal_0]]
+1.1.1.1  [-v1_xxreal_0(1^[])]   (1)  
+1.1.1.2  [-v1_xxreal_0(k2_xxreal_0)]   (4)  
+1.1.2  [- (k3_xxreal_0(k2_xxreal_0, 1^[])=k2_xxreal_0), v1_xxreal_0(k2_xxreal_0), v1_xxreal_0(1^[]), r1_xxreal_0(k2_xxreal_0, 1^[])]   (6)  substitution:[[_G4524, _G4631], [k2_xxreal_0, 1^[]]]
+1.1.2.1  [-v1_xxreal_0(k2_xxreal_0)]   (4)  
+1.1.2.2  [-v1_xxreal_0(1^[])]   (1)  
+1.1.2.3  [-r1_xxreal_0(k2_xxreal_0, 1^[]), v1_xxreal_0(1^[])]   (5)  substitution:[[_G5198], [1^[]]]
+1.1.2.3.1  [-v1_xxreal_0(1^[])]   (1)  
+------------------------------------------------------
+End of proof for t44_xxreal_0

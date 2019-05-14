@@ -1,0 +1,55 @@
+
+l15_zf_fund1 is a Theorem
+Start of proof for l15_zf_fund1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], k4_ordinal1)]
+ (2)  [1^[]=k3_zf_fund1(k2_zf_lang(k5_card_1(1^[])))]
+ (3)  [m1_subset_1(_G6374, k4_ordinal1), -v7_ordinal1(_G6374)]
+ (4)  [- (k1_zf_lang=a_0_0_zf_lang)]
+ (5)  [m2_subset_1(_G6588, k5_numbers, k1_zf_lang), m1_subset_1(_G6750, k5_numbers), _G6750=k3_zf_fund1(_G6588), - (k2_zf_lang(_G6750)=_G6588)]
+ (6)  [m2_subset_1(_G6588, k5_numbers, k1_zf_lang), m1_subset_1(_G6750, k5_numbers), - (_G6750=k3_zf_fund1(_G6588)), k2_zf_lang(_G6750)=_G6588]
+ (7)  [m1_subset_1(_G7084, k5_numbers), -m2_subset_1(k2_zf_lang(_G7084), k5_numbers, k1_zf_lang)]
+ (8)  [- (k5_numbers=k4_ordinal1)]
+ (9)  [v7_ordinal1(_G7384), - (k5_card_1(k2_finseq_1(_G7384))=k5_card_1(_G7384))]
+ (10)  [v7_ordinal1(_G7580), - (k5_card_1(k2_finseq_1(_G7580))=_G7580)]
+ (11)  [_G5187=_G5236, - (k2_finseq_1(_G5187)=k2_finseq_1(_G5236))]
+ (12)  [_G5465=_G5514, - (k3_zf_fund1(_G5465)=k3_zf_fund1(_G5514))]
+ (13)  [_G5743=_G5792, - (k2_zf_lang(_G5743)=k2_zf_lang(_G5792))]
+ (14)  [_G6012=_G6061, - (k5_card_1(_G6012)=k5_card_1(_G6061))]
+ (15)  [- (_G2448=_G2448)]
+ (16)  [_G2547=_G2592, - (_G2592=_G2547)]
+ (17)  [- (_G2780=_G2893), _G2780=_G2836, _G2836=_G2893]
+ (18)  [-m2_subset_1(_G3315, _G3488, _G3665), m2_subset_1(_G3230, _G3401, _G3576), _G3230=_G3315, _G3401=_G3488, _G3576=_G3665]
+ (19)  [-v7_ordinal1(_G4307), _G4258=_G4307, v7_ordinal1(_G4258)]
+ (20)  [-m1_subset_1(_G4594, _G4731), m1_subset_1(_G4527, _G4662), _G4527=_G4594, _G4662=_G4731]
+
+Connection Proof:
+-----------------
+1  [1^[]=k3_zf_fund1(k2_zf_lang(k5_card_1(1^[])))]   (2)  
+1.1  [- (1^[]=k3_zf_fund1(k2_zf_lang(k5_card_1(1^[])))), 1^[]=k5_card_1(1^[]), k5_card_1(1^[])=k3_zf_fund1(k2_zf_lang(k5_card_1(1^[])))]   (17)  substitution:[[_G2780, _G2893, _G2836], [1^[], k3_zf_fund1(k2_zf_lang(k5_card_1(1^[]))), k5_card_1(1^[])]]
+1.1.1  [- (1^[]=k5_card_1(1^[])), 1^[]=k5_card_1(k2_finseq_1(1^[])), k5_card_1(k2_finseq_1(1^[]))=k5_card_1(1^[])]   (17)  substitution:[[_G2780, _G2893, _G2836], [1^[], k5_card_1(1^[]), k5_card_1(k2_finseq_1(1^[]))]]
+1.1.1.1  [- (1^[]=k5_card_1(k2_finseq_1(1^[]))), k5_card_1(k2_finseq_1(1^[]))=1^[]]   (16)  substitution:[[_G2592, _G2547], [1^[], k5_card_1(k2_finseq_1(1^[]))]]
+1.1.1.1.1  [- (k5_card_1(k2_finseq_1(1^[]))=1^[]), v7_ordinal1(1^[])]   (10)  substitution:[[_G7580], [1^[]]]
+1.1.1.1.1.1  [-v7_ordinal1(1^[]), m1_subset_1(1^[], k4_ordinal1)]   (3)  substitution:[[_G6374], [1^[]]]
+1.1.1.1.1.1.1  [-m1_subset_1(1^[], k4_ordinal1)]   (1)  
+1.1.1.2  [- (k5_card_1(k2_finseq_1(1^[]))=k5_card_1(1^[])), v7_ordinal1(1^[])]   (9)  substitution:[[_G7384], [1^[]]]
+1.1.1.2.1  [-v7_ordinal1(1^[]), m1_subset_1(1^[], k4_ordinal1)]   (3)  substitution:[[_G6374], [1^[]]]
+1.1.1.2.1.1  [-m1_subset_1(1^[], k4_ordinal1)]   (1)  
+1.1.2  [- (k5_card_1(1^[])=k3_zf_fund1(k2_zf_lang(k5_card_1(1^[])))), m2_subset_1(k2_zf_lang(k5_card_1(1^[])), k5_numbers, k1_zf_lang), m1_subset_1(k5_card_1(1^[]), k5_numbers), k2_zf_lang(k5_card_1(1^[]))=k2_zf_lang(k5_card_1(1^[]))]   (6)  substitution:[[_G6750, _G6588], [k5_card_1(1^[]), k2_zf_lang(k5_card_1(1^[]))]]
+1.1.2.1  [-m2_subset_1(k2_zf_lang(k5_card_1(1^[])), k5_numbers, k1_zf_lang), m1_subset_1(k5_card_1(1^[]), k5_numbers)]   (7)  substitution:[[_G7084], [k5_card_1(1^[])]]
+1.1.2.1.1  [-m1_subset_1(k5_card_1(1^[]), k5_numbers), m1_subset_1(1^[], k4_ordinal1), 1^[]=k5_card_1(1^[]), k4_ordinal1=k5_numbers]   (20)  substitution:[[_G4594, _G4731, _G4527, _G4662], [k5_card_1(1^[]), k5_numbers, 1^[], k4_ordinal1]]
+1.1.2.1.1.1  [-m1_subset_1(1^[], k4_ordinal1)]   (1)  
+1.1.2.1.1.2  [- (1^[]=k5_card_1(1^[]))]   (lemmata:1.1)  
+1.1.2.1.1.3  [- (k4_ordinal1=k5_numbers), k5_numbers=k4_ordinal1]   (16)  substitution:[[_G2592, _G2547], [k4_ordinal1, k5_numbers]]
+1.1.2.1.1.3.1  [- (k5_numbers=k4_ordinal1)]   (8)  
+1.1.2.2  [-m1_subset_1(k5_card_1(1^[]), k5_numbers), m1_subset_1(1^[], k4_ordinal1), 1^[]=k5_card_1(1^[]), k4_ordinal1=k5_numbers]   (20)  substitution:[[_G4594, _G4731, _G4527, _G4662], [k5_card_1(1^[]), k5_numbers, 1^[], k4_ordinal1]]
+1.1.2.2.1  [-m1_subset_1(1^[], k4_ordinal1)]   (1)  
+1.1.2.2.2  [- (1^[]=k5_card_1(1^[]))]   (lemmata:1.1)  
+1.1.2.2.3  [- (k4_ordinal1=k5_numbers), k5_numbers=k4_ordinal1]   (16)  substitution:[[_G2592, _G2547], [k4_ordinal1, k5_numbers]]
+1.1.2.2.3.1  [- (k5_numbers=k4_ordinal1)]   (8)  
+1.1.2.3  [- (k2_zf_lang(k5_card_1(1^[]))=k2_zf_lang(k5_card_1(1^[]))), k5_card_1(1^[])=k5_card_1(1^[])]   (13)  substitution:[[_G5743, _G5792], [k5_card_1(1^[]), k5_card_1(1^[])]]
+1.1.2.3.1  [- (k5_card_1(1^[])=k5_card_1(1^[])), 1^[]=1^[]]   (14)  substitution:[[_G6012, _G6061], [1^[], 1^[]]]
+1.1.2.3.1.1  [- (1^[]=1^[])]   (15)  substitution:[[_G2448], [1^[]]]
+------------------------------------------------------
+End of proof for l15_zf_fund1

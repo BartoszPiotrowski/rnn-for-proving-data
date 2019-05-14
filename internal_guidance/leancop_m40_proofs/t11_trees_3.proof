@@ -1,0 +1,99 @@
+
+t11_trees_3 is a Theorem
+Start of proof for t11_trees_3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v3_trees_3(4^[])]
+ (2)  [v3_trees_3(k3_xboole_0(4^[], 5^[])), v3_trees_3(k3_xboole_0(5^[], 4^[])), v3_trees_3(k6_subset_1(4^[], 5^[]))]
+ (3)  [_G7305=k3_xboole_0(_G7164, _G7234), r2_hidden(_G7473, _G7305), -r2_hidden(_G7473, _G7164)]
+ (4)  [_G7305=k3_xboole_0(_G7164, _G7234), r2_hidden(_G7473, _G7305), -r2_hidden(_G7473, _G7234)]
+ (5)  [_G7305=k3_xboole_0(_G7164, _G7234), -r2_hidden(_G7473, _G7305), r2_hidden(_G7473, _G7164), r2_hidden(_G7473, _G7234)]
+ (6)  [- (_G7305=k3_xboole_0(_G7164, _G7234)), -r2_hidden(1^[_G7305, _G7234, _G7164], _G7305), -r2_hidden(1^[_G7305, _G7234, _G7164], _G7164)]
+ (7)  [- (_G7305=k3_xboole_0(_G7164, _G7234)), -r2_hidden(1^[_G7305, _G7234, _G7164], _G7305), -r2_hidden(1^[_G7305, _G7234, _G7164], _G7234)]
+ (8)  [- (_G7305=k3_xboole_0(_G7164, _G7234)), r2_hidden(1^[_G7305, _G7234, _G7164], _G7305), r2_hidden(1^[_G7305, _G7234, _G7164], _G7164), r2_hidden(1^[_G7305, _G7234, _G7164], _G7234)]
+ (9)  [v3_trees_3(_G7803), r2_hidden(_G7894, _G7803), -v1_relat_1(_G7894)]
+ (10)  [v3_trees_3(_G7803), r2_hidden(_G7894, _G7803), -v1_funct_1(_G7894)]
+ (11)  [v3_trees_3(_G7803), r2_hidden(_G7894, _G7803), -v3_trees_2(_G7894)]
+ (12)  [-v3_trees_3(_G7803), -r2_hidden(2^[_G7803], _G7803)]
+ (13)  [-v3_trees_3(_G7803), v1_relat_1(2^[_G7803]), v1_funct_1(2^[_G7803]), v3_trees_2(2^[_G7803])]
+ (14)  [- (k6_subset_1(_G8854, _G8899)=k4_xboole_0(_G8854, _G8899))]
+ (15)  [_G8347=k4_xboole_0(_G8202, _G8274), r2_hidden(_G8517, _G8347), -r2_hidden(_G8517, _G8202)]
+ (16)  [_G8347=k4_xboole_0(_G8202, _G8274), r2_hidden(_G8517, _G8347), r2_hidden(_G8517, _G8274)]
+ (17)  [_G8347=k4_xboole_0(_G8202, _G8274), -r2_hidden(_G8517, _G8347), r2_hidden(_G8517, _G8202), -r2_hidden(_G8517, _G8274)]
+ (18)  [- (_G8347=k4_xboole_0(_G8202, _G8274)), -r2_hidden(3^[_G8347, _G8274, _G8202], _G8347), -r2_hidden(3^[_G8347, _G8274, _G8202], _G8202)]
+ (19)  [- (_G8347=k4_xboole_0(_G8202, _G8274)), -r2_hidden(3^[_G8347, _G8274, _G8202], _G8347), r2_hidden(3^[_G8347, _G8274, _G8202], _G8274)]
+ (20)  [- (_G8347=k4_xboole_0(_G8202, _G8274)), r2_hidden(3^[_G8347, _G8274, _G8202], _G8347), r2_hidden(3^[_G8347, _G8274, _G8202], _G8202), -r2_hidden(3^[_G8347, _G8274, _G8202], _G8274)]
+ (21)  [- (k4_xboole_0(_G5319, _G5454)=k4_xboole_0(_G5386, _G5523)), _G5319=_G5386, _G5454=_G5523]
+ (22)  [- (k3_xboole_0(_G5916, _G6051)=k3_xboole_0(_G5983, _G6120)), _G5916=_G5983, _G6051=_G6120]
+ (23)  [- (k6_subset_1(_G6504, _G6639)=k6_subset_1(_G6571, _G6708)), _G6504=_G6571, _G6639=_G6708]
+ (24)  [- (_G2732=_G2732)]
+ (25)  [_G2831=_G2876, - (_G2876=_G2831)]
+ (26)  [- (_G3064=_G3177), _G3064=_G3120, _G3120=_G3177]
+ (27)  [-v1_relat_1(_G3563), _G3514=_G3563, v1_relat_1(_G3514)]
+ (28)  [-v1_funct_1(_G3841), _G3792=_G3841, v1_funct_1(_G3792)]
+ (29)  [-v3_trees_2(_G4119), _G4070=_G4119, v3_trees_2(_G4070)]
+ (30)  [-v3_trees_3(_G4985), _G4936=_G4985, v3_trees_3(_G4936)]
+ (31)  [-r2_hidden(_G4415, _G4552), r2_hidden(_G4348, _G4483), _G4348=_G4415, _G4483=_G4552]
+
+Connection Proof:
+-----------------
+1  [v3_trees_3(k3_xboole_0(4^[], 5^[])), v3_trees_3(k3_xboole_0(5^[], 4^[])), v3_trees_3(k6_subset_1(4^[], 5^[]))]   (2)  
+1.1  [-v3_trees_3(k3_xboole_0(4^[], 5^[])), v1_relat_1(2^[k3_xboole_0(4^[], 5^[])]), v1_funct_1(2^[k3_xboole_0(4^[], 5^[])]), v3_trees_2(2^[k3_xboole_0(4^[], 5^[])])]   (13)  substitution:[[_G7803], [k3_xboole_0(4^[], 5^[])]]
+1.1.1  [-v1_relat_1(2^[k3_xboole_0(4^[], 5^[])]), v3_trees_3(4^[]), r2_hidden(2^[k3_xboole_0(4^[], 5^[])], 4^[])]   (9)  substitution:[[_G7894, _G7803], [2^[k3_xboole_0(4^[], 5^[])], 4^[]]]
+1.1.1.1  [-v3_trees_3(4^[])]   (1)  
+1.1.1.2  [-r2_hidden(2^[k3_xboole_0(4^[], 5^[])], 4^[]), k3_xboole_0(4^[], 5^[])=k3_xboole_0(4^[], 5^[]), r2_hidden(2^[k3_xboole_0(4^[], 5^[])], k3_xboole_0(4^[], 5^[]))]   (3)  substitution:[[_G7473, _G7164, _G7305, _G7234], [2^[k3_xboole_0(4^[], 5^[])], 4^[], k3_xboole_0(4^[], 5^[]), 5^[]]]
+1.1.1.2.1  [- (k3_xboole_0(4^[], 5^[])=k3_xboole_0(4^[], 5^[]))]   (24)  substitution:[[_G2732], [k3_xboole_0(4^[], 5^[])]]
+1.1.1.2.2  [-r2_hidden(2^[k3_xboole_0(4^[], 5^[])], k3_xboole_0(4^[], 5^[])), -v3_trees_3(k3_xboole_0(4^[], 5^[]))]   (12)  substitution:[[_G7803], [k3_xboole_0(4^[], 5^[])]]
+1.1.1.2.2.1  [v3_trees_3(k3_xboole_0(4^[], 5^[]))]   (reduction:1)  
+1.1.2  [-v1_funct_1(2^[k3_xboole_0(4^[], 5^[])]), v3_trees_3(4^[]), r2_hidden(2^[k3_xboole_0(4^[], 5^[])], 4^[])]   (10)  substitution:[[_G7894, _G7803], [2^[k3_xboole_0(4^[], 5^[])], 4^[]]]
+1.1.2.1  [-v3_trees_3(4^[])]   (1)  
+1.1.2.2  [-r2_hidden(2^[k3_xboole_0(4^[], 5^[])], 4^[]), k3_xboole_0(4^[], 5^[])=k3_xboole_0(4^[], 5^[]), r2_hidden(2^[k3_xboole_0(4^[], 5^[])], k3_xboole_0(4^[], 5^[]))]   (3)  substitution:[[_G7473, _G7164, _G7305, _G7234], [2^[k3_xboole_0(4^[], 5^[])], 4^[], k3_xboole_0(4^[], 5^[]), 5^[]]]
+1.1.2.2.1  [- (k3_xboole_0(4^[], 5^[])=k3_xboole_0(4^[], 5^[]))]   (24)  substitution:[[_G2732], [k3_xboole_0(4^[], 5^[])]]
+1.1.2.2.2  [-r2_hidden(2^[k3_xboole_0(4^[], 5^[])], k3_xboole_0(4^[], 5^[])), -v3_trees_3(k3_xboole_0(4^[], 5^[]))]   (12)  substitution:[[_G7803], [k3_xboole_0(4^[], 5^[])]]
+1.1.2.2.2.1  [v3_trees_3(k3_xboole_0(4^[], 5^[]))]   (reduction:1)  
+1.1.3  [-v3_trees_2(2^[k3_xboole_0(4^[], 5^[])]), v3_trees_3(4^[]), r2_hidden(2^[k3_xboole_0(4^[], 5^[])], 4^[])]   (11)  substitution:[[_G7894, _G7803], [2^[k3_xboole_0(4^[], 5^[])], 4^[]]]
+1.1.3.1  [-v3_trees_3(4^[])]   (1)  
+1.1.3.2  [-r2_hidden(2^[k3_xboole_0(4^[], 5^[])], 4^[]), k3_xboole_0(4^[], 5^[])=k3_xboole_0(4^[], 5^[]), r2_hidden(2^[k3_xboole_0(4^[], 5^[])], k3_xboole_0(4^[], 5^[]))]   (3)  substitution:[[_G7473, _G7164, _G7305, _G7234], [2^[k3_xboole_0(4^[], 5^[])], 4^[], k3_xboole_0(4^[], 5^[]), 5^[]]]
+1.1.3.2.1  [- (k3_xboole_0(4^[], 5^[])=k3_xboole_0(4^[], 5^[]))]   (24)  substitution:[[_G2732], [k3_xboole_0(4^[], 5^[])]]
+1.1.3.2.2  [-r2_hidden(2^[k3_xboole_0(4^[], 5^[])], k3_xboole_0(4^[], 5^[])), -v3_trees_3(k3_xboole_0(4^[], 5^[]))]   (12)  substitution:[[_G7803], [k3_xboole_0(4^[], 5^[])]]
+1.1.3.2.2.1  [v3_trees_3(k3_xboole_0(4^[], 5^[]))]   (reduction:1)  
+1.2  [-v3_trees_3(k3_xboole_0(5^[], 4^[])), v1_relat_1(2^[k3_xboole_0(5^[], 4^[])]), v1_funct_1(2^[k3_xboole_0(5^[], 4^[])]), v3_trees_2(2^[k3_xboole_0(5^[], 4^[])])]   (13)  substitution:[[_G7803], [k3_xboole_0(5^[], 4^[])]]
+1.2.1  [-v1_relat_1(2^[k3_xboole_0(5^[], 4^[])]), v3_trees_3(4^[]), r2_hidden(2^[k3_xboole_0(5^[], 4^[])], 4^[])]   (9)  substitution:[[_G7894, _G7803], [2^[k3_xboole_0(5^[], 4^[])], 4^[]]]
+1.2.1.1  [-v3_trees_3(4^[])]   (1)  
+1.2.1.2  [-r2_hidden(2^[k3_xboole_0(5^[], 4^[])], 4^[]), k3_xboole_0(5^[], 4^[])=k3_xboole_0(5^[], 4^[]), r2_hidden(2^[k3_xboole_0(5^[], 4^[])], k3_xboole_0(5^[], 4^[]))]   (4)  substitution:[[_G7473, _G7234, _G7305, _G7164], [2^[k3_xboole_0(5^[], 4^[])], 4^[], k3_xboole_0(5^[], 4^[]), 5^[]]]
+1.2.1.2.1  [- (k3_xboole_0(5^[], 4^[])=k3_xboole_0(5^[], 4^[]))]   (24)  substitution:[[_G2732], [k3_xboole_0(5^[], 4^[])]]
+1.2.1.2.2  [-r2_hidden(2^[k3_xboole_0(5^[], 4^[])], k3_xboole_0(5^[], 4^[])), -v3_trees_3(k3_xboole_0(5^[], 4^[]))]   (12)  substitution:[[_G7803], [k3_xboole_0(5^[], 4^[])]]
+1.2.1.2.2.1  [v3_trees_3(k3_xboole_0(5^[], 4^[]))]   (reduction:1)  
+1.2.2  [-v1_funct_1(2^[k3_xboole_0(5^[], 4^[])]), v3_trees_3(4^[]), r2_hidden(2^[k3_xboole_0(5^[], 4^[])], 4^[])]   (10)  substitution:[[_G7894, _G7803], [2^[k3_xboole_0(5^[], 4^[])], 4^[]]]
+1.2.2.1  [-v3_trees_3(4^[])]   (1)  
+1.2.2.2  [-r2_hidden(2^[k3_xboole_0(5^[], 4^[])], 4^[]), k3_xboole_0(5^[], 4^[])=k3_xboole_0(5^[], 4^[]), r2_hidden(2^[k3_xboole_0(5^[], 4^[])], k3_xboole_0(5^[], 4^[]))]   (4)  substitution:[[_G7473, _G7234, _G7305, _G7164], [2^[k3_xboole_0(5^[], 4^[])], 4^[], k3_xboole_0(5^[], 4^[]), 5^[]]]
+1.2.2.2.1  [- (k3_xboole_0(5^[], 4^[])=k3_xboole_0(5^[], 4^[]))]   (24)  substitution:[[_G2732], [k3_xboole_0(5^[], 4^[])]]
+1.2.2.2.2  [-r2_hidden(2^[k3_xboole_0(5^[], 4^[])], k3_xboole_0(5^[], 4^[])), -v3_trees_3(k3_xboole_0(5^[], 4^[]))]   (12)  substitution:[[_G7803], [k3_xboole_0(5^[], 4^[])]]
+1.2.2.2.2.1  [v3_trees_3(k3_xboole_0(5^[], 4^[]))]   (reduction:1)  
+1.2.3  [-v3_trees_2(2^[k3_xboole_0(5^[], 4^[])]), v3_trees_3(4^[]), r2_hidden(2^[k3_xboole_0(5^[], 4^[])], 4^[])]   (11)  substitution:[[_G7894, _G7803], [2^[k3_xboole_0(5^[], 4^[])], 4^[]]]
+1.2.3.1  [-v3_trees_3(4^[])]   (1)  
+1.2.3.2  [-r2_hidden(2^[k3_xboole_0(5^[], 4^[])], 4^[]), k3_xboole_0(5^[], 4^[])=k3_xboole_0(5^[], 4^[]), r2_hidden(2^[k3_xboole_0(5^[], 4^[])], k3_xboole_0(5^[], 4^[]))]   (4)  substitution:[[_G7473, _G7234, _G7305, _G7164], [2^[k3_xboole_0(5^[], 4^[])], 4^[], k3_xboole_0(5^[], 4^[]), 5^[]]]
+1.2.3.2.1  [- (k3_xboole_0(5^[], 4^[])=k3_xboole_0(5^[], 4^[]))]   (24)  substitution:[[_G2732], [k3_xboole_0(5^[], 4^[])]]
+1.2.3.2.2  [-r2_hidden(2^[k3_xboole_0(5^[], 4^[])], k3_xboole_0(5^[], 4^[])), -v3_trees_3(k3_xboole_0(5^[], 4^[]))]   (12)  substitution:[[_G7803], [k3_xboole_0(5^[], 4^[])]]
+1.2.3.2.2.1  [v3_trees_3(k3_xboole_0(5^[], 4^[]))]   (reduction:1)  
+1.3  [-v3_trees_3(k6_subset_1(4^[], 5^[])), v1_relat_1(2^[k6_subset_1(4^[], 5^[])]), v1_funct_1(2^[k6_subset_1(4^[], 5^[])]), v3_trees_2(2^[k6_subset_1(4^[], 5^[])])]   (13)  substitution:[[_G7803], [k6_subset_1(4^[], 5^[])]]
+1.3.1  [-v1_relat_1(2^[k6_subset_1(4^[], 5^[])]), v3_trees_3(4^[]), r2_hidden(2^[k6_subset_1(4^[], 5^[])], 4^[])]   (9)  substitution:[[_G7894, _G7803], [2^[k6_subset_1(4^[], 5^[])], 4^[]]]
+1.3.1.1  [-v3_trees_3(4^[])]   (1)  
+1.3.1.2  [-r2_hidden(2^[k6_subset_1(4^[], 5^[])], 4^[]), k6_subset_1(4^[], 5^[])=k4_xboole_0(4^[], 5^[]), r2_hidden(2^[k6_subset_1(4^[], 5^[])], k6_subset_1(4^[], 5^[]))]   (15)  substitution:[[_G8517, _G8202, _G8347, _G8274], [2^[k6_subset_1(4^[], 5^[])], 4^[], k6_subset_1(4^[], 5^[]), 5^[]]]
+1.3.1.2.1  [- (k6_subset_1(4^[], 5^[])=k4_xboole_0(4^[], 5^[]))]   (14)  substitution:[[_G8854, _G8899], [4^[], 5^[]]]
+1.3.1.2.2  [-r2_hidden(2^[k6_subset_1(4^[], 5^[])], k6_subset_1(4^[], 5^[])), -v3_trees_3(k6_subset_1(4^[], 5^[]))]   (12)  substitution:[[_G7803], [k6_subset_1(4^[], 5^[])]]
+1.3.1.2.2.1  [v3_trees_3(k6_subset_1(4^[], 5^[]))]   (reduction:1)  
+1.3.2  [-v1_funct_1(2^[k6_subset_1(4^[], 5^[])]), v3_trees_3(4^[]), r2_hidden(2^[k6_subset_1(4^[], 5^[])], 4^[])]   (10)  substitution:[[_G7894, _G7803], [2^[k6_subset_1(4^[], 5^[])], 4^[]]]
+1.3.2.1  [-v3_trees_3(4^[])]   (1)  
+1.3.2.2  [-r2_hidden(2^[k6_subset_1(4^[], 5^[])], 4^[]), k6_subset_1(4^[], 5^[])=k4_xboole_0(4^[], 5^[]), r2_hidden(2^[k6_subset_1(4^[], 5^[])], k6_subset_1(4^[], 5^[]))]   (15)  substitution:[[_G8517, _G8202, _G8347, _G8274], [2^[k6_subset_1(4^[], 5^[])], 4^[], k6_subset_1(4^[], 5^[]), 5^[]]]
+1.3.2.2.1  [- (k6_subset_1(4^[], 5^[])=k4_xboole_0(4^[], 5^[]))]   (14)  substitution:[[_G8854, _G8899], [4^[], 5^[]]]
+1.3.2.2.2  [-r2_hidden(2^[k6_subset_1(4^[], 5^[])], k6_subset_1(4^[], 5^[])), -v3_trees_3(k6_subset_1(4^[], 5^[]))]   (12)  substitution:[[_G7803], [k6_subset_1(4^[], 5^[])]]
+1.3.2.2.2.1  [v3_trees_3(k6_subset_1(4^[], 5^[]))]   (reduction:1)  
+1.3.3  [-v3_trees_2(2^[k6_subset_1(4^[], 5^[])]), v3_trees_3(4^[]), r2_hidden(2^[k6_subset_1(4^[], 5^[])], 4^[])]   (11)  substitution:[[_G7894, _G7803], [2^[k6_subset_1(4^[], 5^[])], 4^[]]]
+1.3.3.1  [-v3_trees_3(4^[])]   (1)  
+1.3.3.2  [-r2_hidden(2^[k6_subset_1(4^[], 5^[])], 4^[]), k6_subset_1(4^[], 5^[])=k4_xboole_0(4^[], 5^[]), r2_hidden(2^[k6_subset_1(4^[], 5^[])], k6_subset_1(4^[], 5^[]))]   (15)  substitution:[[_G8517, _G8202, _G8347, _G8274], [2^[k6_subset_1(4^[], 5^[])], 4^[], k6_subset_1(4^[], 5^[]), 5^[]]]
+1.3.3.2.1  [- (k6_subset_1(4^[], 5^[])=k4_xboole_0(4^[], 5^[]))]   (14)  substitution:[[_G8854, _G8899], [4^[], 5^[]]]
+1.3.3.2.2  [-r2_hidden(2^[k6_subset_1(4^[], 5^[])], k6_subset_1(4^[], 5^[])), -v3_trees_3(k6_subset_1(4^[], 5^[]))]   (12)  substitution:[[_G7803], [k6_subset_1(4^[], 5^[])]]
+1.3.3.2.2.1  [v3_trees_3(k6_subset_1(4^[], 5^[]))]   (reduction:1)  
+------------------------------------------------------
+End of proof for t11_trees_3

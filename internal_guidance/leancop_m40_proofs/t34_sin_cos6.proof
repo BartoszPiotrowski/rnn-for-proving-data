@@ -1,0 +1,56 @@
+
+t34_sin_cos6 is a Theorem
+Start of proof for t34_sin_cos6
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xreal_0(1^[])]
+ (2)  [r1_xxreal_0(1^[], k6_numbers)]
+ (3)  [r1_xxreal_0(k8_real_1(np__2, k32_sin_cos), 1^[])]
+ (4)  [-r1_xxreal_0(np__1, k20_sin_cos(1^[]))]
+ (5)  [m1_subset_1(_G7723, k1_numbers), -v1_xreal_0(_G7723)]
+ (6)  [v1_xreal_0(_G7880), -v1_xcmplx_0(_G7880)]
+ (7)  [v1_xreal_0(_G8011), -v1_xreal_0(k20_sin_cos(_G8011))]
+ (8)  [-m1_subset_1(np__1, k1_numbers)]
+ (9)  [v1_xreal_0(_G8215), v1_xreal_0(_G8308), - (_G8215=_G8308), r1_xxreal_0(_G8215, _G8308), r1_xxreal_0(_G8308, _G8215)]
+ (10)  [v1_xreal_0(_G8668), v1_xreal_0(_G8770), -r1_xxreal_0(_G8668, k6_numbers), -r1_xxreal_0(k6_numbers, _G8770), r1_xxreal_0(k6_numbers, k3_xcmplx_0(_G8668, _G8770))]
+ (11)  [v1_xcmplx_0(_G9220), - (k3_xcmplx_0(_G9220, k6_numbers)=k6_numbers)]
+ (12)  [v1_xreal_0(_G9883), -r1_xxreal_0(k6_numbers, k3_xcmplx_0(_G9883, _G9883))]
+ (13)  [v1_xreal_0(_G10073), -r1_xxreal_0(k20_sin_cos(_G10073), np__1)]
+ (14)  [v1_xreal_0(_G9419), k20_sin_cos(_G9419)=np__1, r1_xxreal_0(k6_numbers, _G9419), -r1_xxreal_0(k8_real_1(np__2, k32_sin_cos), _G9419), - (_G9419=k6_numbers)]
+ (15)  [- (k3_xcmplx_0(_G6197, _G6332)=k3_xcmplx_0(_G6264, _G6401)), _G6197=_G6264, _G6332=_G6401]
+ (16)  [_G7382=_G7431, - (k20_sin_cos(_G7382)=k20_sin_cos(_G7431))]
+ (17)  [- (k8_real_1(_G6794, _G6929)=k8_real_1(_G6861, _G6998)), _G6794=_G6861, _G6929=_G6998]
+ (18)  [- (_G3590=_G3590)]
+ (19)  [_G3689=_G3734, - (_G3734=_G3689)]
+ (20)  [- (_G3922=_G4035), _G3922=_G3978, _G3978=_G4035]
+ (21)  [-m1_subset_1(_G4439, _G4576), m1_subset_1(_G4372, _G4507), _G4372=_G4439, _G4507=_G4576]
+ (22)  [-v1_xcmplx_0(_G5018), _G4969=_G5018, v1_xcmplx_0(_G4969)]
+ (23)  [-v1_xreal_0(_G5296), _G5247=_G5296, v1_xreal_0(_G5247)]
+ (24)  [-r1_xxreal_0(_G5583, _G5720), r1_xxreal_0(_G5516, _G5651), _G5516=_G5583, _G5651=_G5720]
+
+Connection Proof:
+-----------------
+1  [r1_xxreal_0(1^[], k6_numbers)]   (2)  
+1.1  [-r1_xxreal_0(1^[], k6_numbers), v1_xreal_0(1^[]), v1_xreal_0(1^[]), -r1_xxreal_0(k6_numbers, 1^[]), r1_xxreal_0(k6_numbers, k3_xcmplx_0(1^[], 1^[]))]   (10)  substitution:[[_G8668, _G8770], [1^[], 1^[]]]
+1.1.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.2  [-v1_xreal_0(1^[])]   (1)  
+1.1.3  [r1_xxreal_0(k6_numbers, 1^[]), v1_xreal_0(1^[]), k20_sin_cos(1^[])=np__1, -r1_xxreal_0(k8_real_1(np__2, k32_sin_cos), 1^[]), - (1^[]=k6_numbers)]   (14)  substitution:[[_G9419], [1^[]]]
+1.1.3.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.3.2  [- (k20_sin_cos(1^[])=np__1), v1_xreal_0(k20_sin_cos(1^[])), v1_xreal_0(np__1), r1_xxreal_0(k20_sin_cos(1^[]), np__1), r1_xxreal_0(np__1, k20_sin_cos(1^[]))]   (9)  substitution:[[_G8215, _G8308], [k20_sin_cos(1^[]), np__1]]
+1.1.3.2.1  [-v1_xreal_0(k20_sin_cos(1^[])), v1_xreal_0(1^[])]   (7)  substitution:[[_G8011], [1^[]]]
+1.1.3.2.1.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.3.2.2  [-v1_xreal_0(np__1), m1_subset_1(np__1, k1_numbers)]   (5)  substitution:[[_G7723], [np__1]]
+1.1.3.2.2.1  [-m1_subset_1(np__1, k1_numbers)]   (8)  
+1.1.3.2.3  [-r1_xxreal_0(k20_sin_cos(1^[]), np__1), v1_xreal_0(1^[])]   (13)  substitution:[[_G10073], [1^[]]]
+1.1.3.2.3.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.3.2.4  [-r1_xxreal_0(np__1, k20_sin_cos(1^[]))]   (4)  
+1.1.3.3  [r1_xxreal_0(k8_real_1(np__2, k32_sin_cos), 1^[])]   (3)  
+1.1.3.4  [1^[]=k6_numbers, - (k6_numbers=1^[])]   (19)  substitution:[[_G3689, _G3734], [1^[], k6_numbers]]
+1.1.3.4.1  [k6_numbers=1^[], -r1_xxreal_0(1^[], k6_numbers), r1_xxreal_0(k6_numbers, 1^[]), 1^[]=k6_numbers]   (24)  substitution:[[_G5516, _G5583, _G5720, _G5651], [k6_numbers, 1^[], k6_numbers, 1^[]]]
+1.1.3.4.1.1  [r1_xxreal_0(1^[], k6_numbers)]   (2)  
+1.1.3.4.1.2  [-r1_xxreal_0(k6_numbers, 1^[])]   (reduction:1.1)  
+1.1.3.4.1.3  [- (1^[]=k6_numbers)]   (reduction:1.1.3)  
+1.1.4  [-r1_xxreal_0(k6_numbers, k3_xcmplx_0(1^[], 1^[])), v1_xreal_0(1^[])]   (12)  substitution:[[_G9883], [1^[]]]
+1.1.4.1  [-v1_xreal_0(1^[])]   (1)  
+------------------------------------------------------
+End of proof for t34_sin_cos6

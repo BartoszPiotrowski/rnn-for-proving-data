@@ -1,0 +1,180 @@
+
+t15_scpqsort is a Theorem
+Start of proof for t15_scpqsort
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(3^[])]
+ (2)  [-v4_relat_1(3^[], k5_numbers)]
+ (3)  [-v5_relat_1(3^[], u1_compos_1(k1_scmpds_2))]
+ (4)  [-v1_funct_1(3^[])]
+ (5)  [-v1_partfun1(3^[], k5_numbers)]
+ (6)  [-v1_relat_1(4^[])]
+ (7)  [-v4_relat_1(4^[], u1_struct_0(k1_scmpds_2))]
+ (8)  [-v1_funct_1(4^[])]
+ (9)  [-v5_funct_1(4^[], k2_memstr_0(np__2, k1_scmpds_2))]
+ (10)  [-v1_partfun1(4^[], u1_struct_0(k1_scmpds_2))]
+ (11)  [-v5_memstr_0(4^[], np__2, k1_scmpds_2, k6_numbers)]
+ (12)  [-m2_subset_1(5^[], k1_numbers, k5_numbers)]
+ (13)  [-m2_subset_1(6^[], k1_numbers, k5_numbers)]
+ (14)  [-r1_xxreal_0(np__7, 5^[])]
+ (15)  [m2_finseq_1(_G6271, k4_numbers), m2_finseq_1(_G6282, k4_numbers), k3_finseq_1(_G6271)=6^[], r1_scpisort(_G6271, 4^[], 5^[]), k3_finseq_1(_G6282)=6^[], r1_scpisort(_G6282, k6_scmpds_4(k2_scpqsort(6^[], 5^[]), 4^[], 3^[]), 5^[]), r2_classes1(_G6271, _G6282), r3_graph_2(_G6282, np__1, 6^[])]
+ (16)  [v1_partfun1(_G2408, k5_numbers), v1_funct_1(_G2408), v5_relat_1(_G2408, u1_compos_1(k1_scmpds_2)), v4_relat_1(_G2408, k5_numbers), v1_relat_1(_G2408), - (k5_card_1(k2_scpqsort(_G2482, _G2477))=np__57), m2_subset_1(_G2482, k1_numbers, k5_numbers), m2_subset_1(_G2477, k1_numbers, k5_numbers), v1_relat_1(_G2436), v4_relat_1(_G2436, u1_struct_0(k1_scmpds_2)), v1_funct_1(_G2436), v5_funct_1(_G2436, k2_memstr_0(np__2, k1_scmpds_2)), v1_partfun1(_G2436, u1_struct_0(k1_scmpds_2)), v5_memstr_0(_G2436, np__2, k1_scmpds_2, k6_numbers)]
+ (17)  [v1_partfun1(_G2408, k5_numbers), v1_funct_1(_G2408), v5_relat_1(_G2408, u1_compos_1(k1_scmpds_2)), v4_relat_1(_G2408, k5_numbers), v1_relat_1(_G2408), -r2_scmpds_6(k2_scpqsort(_G2482, _G2477), _G2436, _G2408), r1_xxreal_0(np__7, _G2477), m2_subset_1(_G2482, k1_numbers, k5_numbers), m2_subset_1(_G2477, k1_numbers, k5_numbers), v1_relat_1(_G2436), v4_relat_1(_G2436, u1_struct_0(k1_scmpds_2)), v1_funct_1(_G2436), v5_funct_1(_G2436, k2_memstr_0(np__2, k1_scmpds_2)), v1_partfun1(_G2436, u1_struct_0(k1_scmpds_2)), v5_memstr_0(_G2436, np__2, k1_scmpds_2, k6_numbers)]
+ (18)  [v1_partfun1(_G2408, k5_numbers), v1_funct_1(_G2408), v5_relat_1(_G2408, u1_compos_1(k1_scmpds_2)), v4_relat_1(_G2408, k5_numbers), v1_relat_1(_G2408), -m2_finseq_1(1^[_G2482, _G2477, _G2436, _G2408], k4_numbers), r1_xxreal_0(np__7, _G2477), m2_subset_1(_G2482, k1_numbers, k5_numbers), m2_subset_1(_G2477, k1_numbers, k5_numbers), v1_relat_1(_G2436), v4_relat_1(_G2436, u1_struct_0(k1_scmpds_2)), v1_funct_1(_G2436), v5_funct_1(_G2436, k2_memstr_0(np__2, k1_scmpds_2)), v1_partfun1(_G2436, u1_struct_0(k1_scmpds_2)), v5_memstr_0(_G2436, np__2, k1_scmpds_2, k6_numbers)]
+ (19)  [v1_partfun1(_G2408, k5_numbers), v1_funct_1(_G2408), v5_relat_1(_G2408, u1_compos_1(k1_scmpds_2)), v4_relat_1(_G2408, k5_numbers), v1_relat_1(_G2408), -m2_finseq_1(2^[_G2482, _G2477, _G2436, _G2408], k4_numbers), r1_xxreal_0(np__7, _G2477), m2_subset_1(_G2482, k1_numbers, k5_numbers), m2_subset_1(_G2477, k1_numbers, k5_numbers), v1_relat_1(_G2436), v4_relat_1(_G2436, u1_struct_0(k1_scmpds_2)), v1_funct_1(_G2436), v5_funct_1(_G2436, k2_memstr_0(np__2, k1_scmpds_2)), v1_partfun1(_G2436, u1_struct_0(k1_scmpds_2)), v5_memstr_0(_G2436, np__2, k1_scmpds_2, k6_numbers)]
+ (20)  [v1_partfun1(_G2408, k5_numbers), v1_funct_1(_G2408), v5_relat_1(_G2408, u1_compos_1(k1_scmpds_2)), v4_relat_1(_G2408, k5_numbers), v1_relat_1(_G2408), - (k3_finseq_1(1^[_G2482, _G2477, _G2436, _G2408])=_G2482), r1_xxreal_0(np__7, _G2477), m2_subset_1(_G2482, k1_numbers, k5_numbers), m2_subset_1(_G2477, k1_numbers, k5_numbers), v1_relat_1(_G2436), v4_relat_1(_G2436, u1_struct_0(k1_scmpds_2)), v1_funct_1(_G2436), v5_funct_1(_G2436, k2_memstr_0(np__2, k1_scmpds_2)), v1_partfun1(_G2436, u1_struct_0(k1_scmpds_2)), v5_memstr_0(_G2436, np__2, k1_scmpds_2, k6_numbers)]
+ (21)  [v1_partfun1(_G2408, k5_numbers), v1_funct_1(_G2408), v5_relat_1(_G2408, u1_compos_1(k1_scmpds_2)), v4_relat_1(_G2408, k5_numbers), v1_relat_1(_G2408), -r1_scpisort(1^[_G2482, _G2477, _G2436, _G2408], _G2436, _G2477), r1_xxreal_0(np__7, _G2477), m2_subset_1(_G2482, k1_numbers, k5_numbers), m2_subset_1(_G2477, k1_numbers, k5_numbers), v1_relat_1(_G2436), v4_relat_1(_G2436, u1_struct_0(k1_scmpds_2)), v1_funct_1(_G2436), v5_funct_1(_G2436, k2_memstr_0(np__2, k1_scmpds_2)), v1_partfun1(_G2436, u1_struct_0(k1_scmpds_2)), v5_memstr_0(_G2436, np__2, k1_scmpds_2, k6_numbers)]
+ (22)  [v1_partfun1(_G2408, k5_numbers), v1_funct_1(_G2408), v5_relat_1(_G2408, u1_compos_1(k1_scmpds_2)), v4_relat_1(_G2408, k5_numbers), v1_relat_1(_G2408), - (k3_finseq_1(2^[_G2482, _G2477, _G2436, _G2408])=_G2482), r1_xxreal_0(np__7, _G2477), m2_subset_1(_G2482, k1_numbers, k5_numbers), m2_subset_1(_G2477, k1_numbers, k5_numbers), v1_relat_1(_G2436), v4_relat_1(_G2436, u1_struct_0(k1_scmpds_2)), v1_funct_1(_G2436), v5_funct_1(_G2436, k2_memstr_0(np__2, k1_scmpds_2)), v1_partfun1(_G2436, u1_struct_0(k1_scmpds_2)), v5_memstr_0(_G2436, np__2, k1_scmpds_2, k6_numbers)]
+ (23)  [v1_partfun1(_G2408, k5_numbers), v1_funct_1(_G2408), v5_relat_1(_G2408, u1_compos_1(k1_scmpds_2)), v4_relat_1(_G2408, k5_numbers), v1_relat_1(_G2408), -r1_scpisort(2^[_G2482, _G2477, _G2436, _G2408], k6_scmpds_4(k2_scpqsort(_G2482, _G2477), _G2436, _G2408), _G2477), r1_xxreal_0(np__7, _G2477), m2_subset_1(_G2482, k1_numbers, k5_numbers), m2_subset_1(_G2477, k1_numbers, k5_numbers), v1_relat_1(_G2436), v4_relat_1(_G2436, u1_struct_0(k1_scmpds_2)), v1_funct_1(_G2436), v5_funct_1(_G2436, k2_memstr_0(np__2, k1_scmpds_2)), v1_partfun1(_G2436, u1_struct_0(k1_scmpds_2)), v5_memstr_0(_G2436, np__2, k1_scmpds_2, k6_numbers)]
+ (24)  [v1_partfun1(_G2408, k5_numbers), v1_funct_1(_G2408), v5_relat_1(_G2408, u1_compos_1(k1_scmpds_2)), v4_relat_1(_G2408, k5_numbers), v1_relat_1(_G2408), -r2_classes1(1^[_G2482, _G2477, _G2436, _G2408], 2^[_G2482, _G2477, _G2436, _G2408]), r1_xxreal_0(np__7, _G2477), m2_subset_1(_G2482, k1_numbers, k5_numbers), m2_subset_1(_G2477, k1_numbers, k5_numbers), v1_relat_1(_G2436), v4_relat_1(_G2436, u1_struct_0(k1_scmpds_2)), v1_funct_1(_G2436), v5_funct_1(_G2436, k2_memstr_0(np__2, k1_scmpds_2)), v1_partfun1(_G2436, u1_struct_0(k1_scmpds_2)), v5_memstr_0(_G2436, np__2, k1_scmpds_2, k6_numbers)]
+ (25)  [v1_partfun1(_G2408, k5_numbers), v1_funct_1(_G2408), v5_relat_1(_G2408, u1_compos_1(k1_scmpds_2)), v4_relat_1(_G2408, k5_numbers), v1_relat_1(_G2408), -r3_graph_2(2^[_G2482, _G2477, _G2436, _G2408], np__1, _G2482), r1_xxreal_0(np__7, _G2477), m2_subset_1(_G2482, k1_numbers, k5_numbers), m2_subset_1(_G2477, k1_numbers, k5_numbers), v1_relat_1(_G2436), v4_relat_1(_G2436, u1_struct_0(k1_scmpds_2)), v1_funct_1(_G2436), v5_funct_1(_G2436, k2_memstr_0(np__2, k1_scmpds_2)), v1_partfun1(_G2436, u1_struct_0(k1_scmpds_2)), v5_memstr_0(_G2436, np__2, k1_scmpds_2, k6_numbers)]
+ (26)  [_G2135=_G2136, - (k5_card_1(_G2135)=k5_card_1(_G2136))]
+ (27)  [_G2160=_G2161, - (u1_compos_1(_G2160)=u1_compos_1(_G2161))]
+ (28)  [- (k2_memstr_0(_G2185, _G2187)=k2_memstr_0(_G2186, _G2188)), _G2185=_G2186, _G2187=_G2188]
+ (29)  [_G2230=_G2231, - (u1_struct_0(_G2230)=u1_struct_0(_G2231))]
+ (30)  [_G2255=_G2256, - (k3_finseq_1(_G2255)=k3_finseq_1(_G2256))]
+ (31)  [- (k2_scpqsort(_G2345, _G2347)=k2_scpqsort(_G2346, _G2348)), _G2345=_G2346, _G2347=_G2348]
+ (32)  [- (k6_scmpds_4(_G2280, _G2282, _G2284)=k6_scmpds_4(_G2281, _G2283, _G2285)), _G2280=_G2281, _G2282=_G2283, _G2284=_G2285]
+ (33)  [- (_G1664=_G1664)]
+ (34)  [_G1668=_G1669, - (_G1669=_G1668)]
+ (35)  [- (_G1676=_G1678), _G1676=_G1677, _G1677=_G1678]
+ (36)  [-r2_scmpds_6(_G1689, _G1691, _G1693), r2_scmpds_6(_G1688, _G1690, _G1692), _G1688=_G1689, _G1690=_G1691, _G1692=_G1693]
+ (37)  [-v5_relat_1(_G1712, _G1714), v5_relat_1(_G1711, _G1713), _G1711=_G1712, _G1713=_G1714]
+ (38)  [-v1_relat_1(_G1728), _G1727=_G1728, v1_relat_1(_G1727)]
+ (39)  [-v4_relat_1(_G1737, _G1739), v4_relat_1(_G1736, _G1738), _G1736=_G1737, _G1738=_G1739]
+ (40)  [-v1_funct_1(_G1753), _G1752=_G1753, v1_funct_1(_G1752)]
+ (41)  [-v5_funct_1(_G1762, _G1764), v5_funct_1(_G1761, _G1763), _G1761=_G1762, _G1763=_G1764]
+ (42)  [-v1_partfun1(_G1778, _G1780), v1_partfun1(_G1777, _G1779), _G1777=_G1778, _G1779=_G1780]
+ (43)  [-v5_memstr_0(_G1794, _G1796, _G1798, _G1800), v5_memstr_0(_G1793, _G1795, _G1797, _G1799), _G1793=_G1794, _G1795=_G1796, _G1797=_G1798, _G1799=_G1800]
+ (44)  [-m2_subset_1(_G1824, _G1826, _G1828), m2_subset_1(_G1823, _G1825, _G1827), _G1823=_G1824, _G1825=_G1826, _G1827=_G1828]
+ (45)  [-r1_xxreal_0(_G1859, _G1861), r1_xxreal_0(_G1858, _G1860), _G1858=_G1859, _G1860=_G1861]
+ (46)  [-m2_finseq_1(_G1904, _G1906), m2_finseq_1(_G1903, _G1905), _G1903=_G1904, _G1905=_G1906]
+ (47)  [-r1_scpisort(_G1949, _G1951, _G1953), r1_scpisort(_G1948, _G1950, _G1952), _G1948=_G1949, _G1950=_G1951, _G1952=_G1953]
+ (48)  [-r2_classes1(_G2014, _G2016), r2_classes1(_G2013, _G2015), _G2013=_G2014, _G2015=_G2016]
+ (49)  [-r3_graph_2(_G2059, _G2061, _G2063), r3_graph_2(_G2058, _G2060, _G2062), _G2058=_G2059, _G2060=_G2061, _G2062=_G2063]
+
+Connection Proof:
+-----------------
+1  [m2_finseq_1(1^[6^[], 5^[], 4^[], 3^[]], k4_numbers), m2_finseq_1(2^[6^[], 5^[], 4^[], 3^[]], k4_numbers), k3_finseq_1(1^[6^[], 5^[], 4^[], 3^[]])=6^[], r1_scpisort(1^[6^[], 5^[], 4^[], 3^[]], 4^[], 5^[]), k3_finseq_1(2^[6^[], 5^[], 4^[], 3^[]])=6^[], r1_scpisort(2^[6^[], 5^[], 4^[], 3^[]], k6_scmpds_4(k2_scpqsort(6^[], 5^[]), 4^[], 3^[]), 5^[]), r2_classes1(1^[6^[], 5^[], 4^[], 3^[]], 2^[6^[], 5^[], 4^[], 3^[]]), r3_graph_2(2^[6^[], 5^[], 4^[], 3^[]], np__1, 6^[])]   (15)  substitution:[[_G2262, _G2266], [1^[6^[], 5^[], 4^[], 3^[]], 2^[6^[], 5^[], 4^[], 3^[]]]]
+1.1  [-m2_finseq_1(1^[6^[], 5^[], 4^[], 3^[]], k4_numbers), v1_partfun1(3^[], k5_numbers), v1_funct_1(3^[]), v5_relat_1(3^[], u1_compos_1(k1_scmpds_2)), v4_relat_1(3^[], k5_numbers), v1_relat_1(3^[]), r1_xxreal_0(np__7, 5^[]), m2_subset_1(6^[], k1_numbers, k5_numbers), m2_subset_1(5^[], k1_numbers, k5_numbers), v1_relat_1(4^[]), v4_relat_1(4^[], u1_struct_0(k1_scmpds_2)), v1_funct_1(4^[]), v5_funct_1(4^[], k2_memstr_0(np__2, k1_scmpds_2)), v1_partfun1(4^[], u1_struct_0(k1_scmpds_2)), v5_memstr_0(4^[], np__2, k1_scmpds_2, k6_numbers)]   (18)  substitution:[[_G2099, _G2094, _G2068, _G2052], [6^[], 5^[], 4^[], 3^[]]]
+1.1.1  [-v1_partfun1(3^[], k5_numbers)]   (5)  
+1.1.2  [-v1_funct_1(3^[])]   (4)  
+1.1.3  [-v5_relat_1(3^[], u1_compos_1(k1_scmpds_2))]   (3)  
+1.1.4  [-v4_relat_1(3^[], k5_numbers)]   (2)  
+1.1.5  [-v1_relat_1(3^[])]   (1)  
+1.1.6  [-r1_xxreal_0(np__7, 5^[])]   (14)  
+1.1.7  [-m2_subset_1(6^[], k1_numbers, k5_numbers)]   (13)  
+1.1.8  [-m2_subset_1(5^[], k1_numbers, k5_numbers)]   (12)  
+1.1.9  [-v1_relat_1(4^[])]   (6)  
+1.1.10  [-v4_relat_1(4^[], u1_struct_0(k1_scmpds_2))]   (7)  
+1.1.11  [-v1_funct_1(4^[])]   (8)  
+1.1.12  [-v5_funct_1(4^[], k2_memstr_0(np__2, k1_scmpds_2))]   (9)  
+1.1.13  [-v1_partfun1(4^[], u1_struct_0(k1_scmpds_2))]   (10)  
+1.1.14  [-v5_memstr_0(4^[], np__2, k1_scmpds_2, k6_numbers)]   (11)  
+1.2  [-m2_finseq_1(2^[6^[], 5^[], 4^[], 3^[]], k4_numbers), v1_partfun1(3^[], k5_numbers), v1_funct_1(3^[]), v5_relat_1(3^[], u1_compos_1(k1_scmpds_2)), v4_relat_1(3^[], k5_numbers), v1_relat_1(3^[]), r1_xxreal_0(np__7, 5^[]), m2_subset_1(6^[], k1_numbers, k5_numbers), m2_subset_1(5^[], k1_numbers, k5_numbers), v1_relat_1(4^[]), v4_relat_1(4^[], u1_struct_0(k1_scmpds_2)), v1_funct_1(4^[]), v5_funct_1(4^[], k2_memstr_0(np__2, k1_scmpds_2)), v1_partfun1(4^[], u1_struct_0(k1_scmpds_2)), v5_memstr_0(4^[], np__2, k1_scmpds_2, k6_numbers)]   (19)  substitution:[[_G2099, _G2094, _G2068, _G2052], [6^[], 5^[], 4^[], 3^[]]]
+1.2.1  [-v1_partfun1(3^[], k5_numbers)]   (5)  
+1.2.2  [-v1_funct_1(3^[])]   (4)  
+1.2.3  [-v5_relat_1(3^[], u1_compos_1(k1_scmpds_2))]   (3)  
+1.2.4  [-v4_relat_1(3^[], k5_numbers)]   (2)  
+1.2.5  [-v1_relat_1(3^[])]   (1)  
+1.2.6  [-r1_xxreal_0(np__7, 5^[])]   (14)  
+1.2.7  [-m2_subset_1(6^[], k1_numbers, k5_numbers)]   (13)  
+1.2.8  [-m2_subset_1(5^[], k1_numbers, k5_numbers)]   (12)  
+1.2.9  [-v1_relat_1(4^[])]   (6)  
+1.2.10  [-v4_relat_1(4^[], u1_struct_0(k1_scmpds_2))]   (7)  
+1.2.11  [-v1_funct_1(4^[])]   (8)  
+1.2.12  [-v5_funct_1(4^[], k2_memstr_0(np__2, k1_scmpds_2))]   (9)  
+1.2.13  [-v1_partfun1(4^[], u1_struct_0(k1_scmpds_2))]   (10)  
+1.2.14  [-v5_memstr_0(4^[], np__2, k1_scmpds_2, k6_numbers)]   (11)  
+1.3  [- (k3_finseq_1(1^[6^[], 5^[], 4^[], 3^[]])=6^[]), v1_partfun1(3^[], k5_numbers), v1_funct_1(3^[]), v5_relat_1(3^[], u1_compos_1(k1_scmpds_2)), v4_relat_1(3^[], k5_numbers), v1_relat_1(3^[]), r1_xxreal_0(np__7, 5^[]), m2_subset_1(6^[], k1_numbers, k5_numbers), m2_subset_1(5^[], k1_numbers, k5_numbers), v1_relat_1(4^[]), v4_relat_1(4^[], u1_struct_0(k1_scmpds_2)), v1_funct_1(4^[]), v5_funct_1(4^[], k2_memstr_0(np__2, k1_scmpds_2)), v1_partfun1(4^[], u1_struct_0(k1_scmpds_2)), v5_memstr_0(4^[], np__2, k1_scmpds_2, k6_numbers)]   (20)  substitution:[[_G2099, _G2094, _G2068, _G2052], [6^[], 5^[], 4^[], 3^[]]]
+1.3.1  [-v1_partfun1(3^[], k5_numbers)]   (5)  
+1.3.2  [-v1_funct_1(3^[])]   (4)  
+1.3.3  [-v5_relat_1(3^[], u1_compos_1(k1_scmpds_2))]   (3)  
+1.3.4  [-v4_relat_1(3^[], k5_numbers)]   (2)  
+1.3.5  [-v1_relat_1(3^[])]   (1)  
+1.3.6  [-r1_xxreal_0(np__7, 5^[])]   (14)  
+1.3.7  [-m2_subset_1(6^[], k1_numbers, k5_numbers)]   (13)  
+1.3.8  [-m2_subset_1(5^[], k1_numbers, k5_numbers)]   (12)  
+1.3.9  [-v1_relat_1(4^[])]   (6)  
+1.3.10  [-v4_relat_1(4^[], u1_struct_0(k1_scmpds_2))]   (7)  
+1.3.11  [-v1_funct_1(4^[])]   (8)  
+1.3.12  [-v5_funct_1(4^[], k2_memstr_0(np__2, k1_scmpds_2))]   (9)  
+1.3.13  [-v1_partfun1(4^[], u1_struct_0(k1_scmpds_2))]   (10)  
+1.3.14  [-v5_memstr_0(4^[], np__2, k1_scmpds_2, k6_numbers)]   (11)  
+1.4  [-r1_scpisort(1^[6^[], 5^[], 4^[], 3^[]], 4^[], 5^[]), v1_partfun1(3^[], k5_numbers), v1_funct_1(3^[]), v5_relat_1(3^[], u1_compos_1(k1_scmpds_2)), v4_relat_1(3^[], k5_numbers), v1_relat_1(3^[]), r1_xxreal_0(np__7, 5^[]), m2_subset_1(6^[], k1_numbers, k5_numbers), m2_subset_1(5^[], k1_numbers, k5_numbers), v1_relat_1(4^[]), v4_relat_1(4^[], u1_struct_0(k1_scmpds_2)), v1_funct_1(4^[]), v5_funct_1(4^[], k2_memstr_0(np__2, k1_scmpds_2)), v1_partfun1(4^[], u1_struct_0(k1_scmpds_2)), v5_memstr_0(4^[], np__2, k1_scmpds_2, k6_numbers)]   (21)  substitution:[[_G2099, _G2094, _G2068, _G2052], [6^[], 5^[], 4^[], 3^[]]]
+1.4.1  [-v1_partfun1(3^[], k5_numbers)]   (5)  
+1.4.2  [-v1_funct_1(3^[])]   (4)  
+1.4.3  [-v5_relat_1(3^[], u1_compos_1(k1_scmpds_2))]   (3)  
+1.4.4  [-v4_relat_1(3^[], k5_numbers)]   (2)  
+1.4.5  [-v1_relat_1(3^[])]   (1)  
+1.4.6  [-r1_xxreal_0(np__7, 5^[])]   (14)  
+1.4.7  [-m2_subset_1(6^[], k1_numbers, k5_numbers)]   (13)  
+1.4.8  [-m2_subset_1(5^[], k1_numbers, k5_numbers)]   (12)  
+1.4.9  [-v1_relat_1(4^[])]   (6)  
+1.4.10  [-v4_relat_1(4^[], u1_struct_0(k1_scmpds_2))]   (7)  
+1.4.11  [-v1_funct_1(4^[])]   (8)  
+1.4.12  [-v5_funct_1(4^[], k2_memstr_0(np__2, k1_scmpds_2))]   (9)  
+1.4.13  [-v1_partfun1(4^[], u1_struct_0(k1_scmpds_2))]   (10)  
+1.4.14  [-v5_memstr_0(4^[], np__2, k1_scmpds_2, k6_numbers)]   (11)  
+1.5  [- (k3_finseq_1(2^[6^[], 5^[], 4^[], 3^[]])=6^[]), v1_partfun1(3^[], k5_numbers), v1_funct_1(3^[]), v5_relat_1(3^[], u1_compos_1(k1_scmpds_2)), v4_relat_1(3^[], k5_numbers), v1_relat_1(3^[]), r1_xxreal_0(np__7, 5^[]), m2_subset_1(6^[], k1_numbers, k5_numbers), m2_subset_1(5^[], k1_numbers, k5_numbers), v1_relat_1(4^[]), v4_relat_1(4^[], u1_struct_0(k1_scmpds_2)), v1_funct_1(4^[]), v5_funct_1(4^[], k2_memstr_0(np__2, k1_scmpds_2)), v1_partfun1(4^[], u1_struct_0(k1_scmpds_2)), v5_memstr_0(4^[], np__2, k1_scmpds_2, k6_numbers)]   (22)  substitution:[[_G2099, _G2094, _G2068, _G2052], [6^[], 5^[], 4^[], 3^[]]]
+1.5.1  [-v1_partfun1(3^[], k5_numbers)]   (5)  
+1.5.2  [-v1_funct_1(3^[])]   (4)  
+1.5.3  [-v5_relat_1(3^[], u1_compos_1(k1_scmpds_2))]   (3)  
+1.5.4  [-v4_relat_1(3^[], k5_numbers)]   (2)  
+1.5.5  [-v1_relat_1(3^[])]   (1)  
+1.5.6  [-r1_xxreal_0(np__7, 5^[])]   (14)  
+1.5.7  [-m2_subset_1(6^[], k1_numbers, k5_numbers)]   (13)  
+1.5.8  [-m2_subset_1(5^[], k1_numbers, k5_numbers)]   (12)  
+1.5.9  [-v1_relat_1(4^[])]   (6)  
+1.5.10  [-v4_relat_1(4^[], u1_struct_0(k1_scmpds_2))]   (7)  
+1.5.11  [-v1_funct_1(4^[])]   (8)  
+1.5.12  [-v5_funct_1(4^[], k2_memstr_0(np__2, k1_scmpds_2))]   (9)  
+1.5.13  [-v1_partfun1(4^[], u1_struct_0(k1_scmpds_2))]   (10)  
+1.5.14  [-v5_memstr_0(4^[], np__2, k1_scmpds_2, k6_numbers)]   (11)  
+1.6  [-r1_scpisort(2^[6^[], 5^[], 4^[], 3^[]], k6_scmpds_4(k2_scpqsort(6^[], 5^[]), 4^[], 3^[]), 5^[]), v1_partfun1(3^[], k5_numbers), v1_funct_1(3^[]), v5_relat_1(3^[], u1_compos_1(k1_scmpds_2)), v4_relat_1(3^[], k5_numbers), v1_relat_1(3^[]), r1_xxreal_0(np__7, 5^[]), m2_subset_1(6^[], k1_numbers, k5_numbers), m2_subset_1(5^[], k1_numbers, k5_numbers), v1_relat_1(4^[]), v4_relat_1(4^[], u1_struct_0(k1_scmpds_2)), v1_funct_1(4^[]), v5_funct_1(4^[], k2_memstr_0(np__2, k1_scmpds_2)), v1_partfun1(4^[], u1_struct_0(k1_scmpds_2)), v5_memstr_0(4^[], np__2, k1_scmpds_2, k6_numbers)]   (23)  substitution:[[_G2099, _G2094, _G2068, _G2052], [6^[], 5^[], 4^[], 3^[]]]
+1.6.1  [-v1_partfun1(3^[], k5_numbers)]   (5)  
+1.6.2  [-v1_funct_1(3^[])]   (4)  
+1.6.3  [-v5_relat_1(3^[], u1_compos_1(k1_scmpds_2))]   (3)  
+1.6.4  [-v4_relat_1(3^[], k5_numbers)]   (2)  
+1.6.5  [-v1_relat_1(3^[])]   (1)  
+1.6.6  [-r1_xxreal_0(np__7, 5^[])]   (14)  
+1.6.7  [-m2_subset_1(6^[], k1_numbers, k5_numbers)]   (13)  
+1.6.8  [-m2_subset_1(5^[], k1_numbers, k5_numbers)]   (12)  
+1.6.9  [-v1_relat_1(4^[])]   (6)  
+1.6.10  [-v4_relat_1(4^[], u1_struct_0(k1_scmpds_2))]   (7)  
+1.6.11  [-v1_funct_1(4^[])]   (8)  
+1.6.12  [-v5_funct_1(4^[], k2_memstr_0(np__2, k1_scmpds_2))]   (9)  
+1.6.13  [-v1_partfun1(4^[], u1_struct_0(k1_scmpds_2))]   (10)  
+1.6.14  [-v5_memstr_0(4^[], np__2, k1_scmpds_2, k6_numbers)]   (11)  
+1.7  [-r2_classes1(1^[6^[], 5^[], 4^[], 3^[]], 2^[6^[], 5^[], 4^[], 3^[]]), v1_partfun1(3^[], k5_numbers), v1_funct_1(3^[]), v5_relat_1(3^[], u1_compos_1(k1_scmpds_2)), v4_relat_1(3^[], k5_numbers), v1_relat_1(3^[]), r1_xxreal_0(np__7, 5^[]), m2_subset_1(6^[], k1_numbers, k5_numbers), m2_subset_1(5^[], k1_numbers, k5_numbers), v1_relat_1(4^[]), v4_relat_1(4^[], u1_struct_0(k1_scmpds_2)), v1_funct_1(4^[]), v5_funct_1(4^[], k2_memstr_0(np__2, k1_scmpds_2)), v1_partfun1(4^[], u1_struct_0(k1_scmpds_2)), v5_memstr_0(4^[], np__2, k1_scmpds_2, k6_numbers)]   (24)  substitution:[[_G2099, _G2094, _G2068, _G2052], [6^[], 5^[], 4^[], 3^[]]]
+1.7.1  [-v1_partfun1(3^[], k5_numbers)]   (5)  
+1.7.2  [-v1_funct_1(3^[])]   (4)  
+1.7.3  [-v5_relat_1(3^[], u1_compos_1(k1_scmpds_2))]   (3)  
+1.7.4  [-v4_relat_1(3^[], k5_numbers)]   (2)  
+1.7.5  [-v1_relat_1(3^[])]   (1)  
+1.7.6  [-r1_xxreal_0(np__7, 5^[])]   (14)  
+1.7.7  [-m2_subset_1(6^[], k1_numbers, k5_numbers)]   (13)  
+1.7.8  [-m2_subset_1(5^[], k1_numbers, k5_numbers)]   (12)  
+1.7.9  [-v1_relat_1(4^[])]   (6)  
+1.7.10  [-v4_relat_1(4^[], u1_struct_0(k1_scmpds_2))]   (7)  
+1.7.11  [-v1_funct_1(4^[])]   (8)  
+1.7.12  [-v5_funct_1(4^[], k2_memstr_0(np__2, k1_scmpds_2))]   (9)  
+1.7.13  [-v1_partfun1(4^[], u1_struct_0(k1_scmpds_2))]   (10)  
+1.7.14  [-v5_memstr_0(4^[], np__2, k1_scmpds_2, k6_numbers)]   (11)  
+1.8  [-r3_graph_2(2^[6^[], 5^[], 4^[], 3^[]], np__1, 6^[]), v1_partfun1(3^[], k5_numbers), v1_funct_1(3^[]), v5_relat_1(3^[], u1_compos_1(k1_scmpds_2)), v4_relat_1(3^[], k5_numbers), v1_relat_1(3^[]), r1_xxreal_0(np__7, 5^[]), m2_subset_1(6^[], k1_numbers, k5_numbers), m2_subset_1(5^[], k1_numbers, k5_numbers), v1_relat_1(4^[]), v4_relat_1(4^[], u1_struct_0(k1_scmpds_2)), v1_funct_1(4^[]), v5_funct_1(4^[], k2_memstr_0(np__2, k1_scmpds_2)), v1_partfun1(4^[], u1_struct_0(k1_scmpds_2)), v5_memstr_0(4^[], np__2, k1_scmpds_2, k6_numbers)]   (25)  substitution:[[_G2099, _G2094, _G2068, _G2052], [6^[], 5^[], 4^[], 3^[]]]
+1.8.1  [-v1_partfun1(3^[], k5_numbers)]   (5)  
+1.8.2  [-v1_funct_1(3^[])]   (4)  
+1.8.3  [-v5_relat_1(3^[], u1_compos_1(k1_scmpds_2))]   (3)  
+1.8.4  [-v4_relat_1(3^[], k5_numbers)]   (2)  
+1.8.5  [-v1_relat_1(3^[])]   (1)  
+1.8.6  [-r1_xxreal_0(np__7, 5^[])]   (14)  
+1.8.7  [-m2_subset_1(6^[], k1_numbers, k5_numbers)]   (13)  
+1.8.8  [-m2_subset_1(5^[], k1_numbers, k5_numbers)]   (12)  
+1.8.9  [-v1_relat_1(4^[])]   (6)  
+1.8.10  [-v4_relat_1(4^[], u1_struct_0(k1_scmpds_2))]   (7)  
+1.8.11  [-v1_funct_1(4^[])]   (8)  
+1.8.12  [-v5_funct_1(4^[], k2_memstr_0(np__2, k1_scmpds_2))]   (9)  
+1.8.13  [-v1_partfun1(4^[], u1_struct_0(k1_scmpds_2))]   (10)  
+1.8.14  [-v5_memstr_0(4^[], np__2, k1_scmpds_2, k6_numbers)]   (11)  
+------------------------------------------------------
+End of proof for t15_scpqsort

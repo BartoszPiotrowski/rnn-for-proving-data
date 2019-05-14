@@ -1,0 +1,45 @@
+
+t50_classes1 is a Theorem
+Start of proof for t50_classes1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_ordinal1(3^[])]
+ (2)  [-v1_ordinal1(4^[])]
+ (3)  [v1_ordinal1(k3_xboole_0(3^[], 4^[]))]
+ (4)  [- (k3_xboole_0(_G4248, _G4383)=k3_xboole_0(_G4315, _G4452)), _G4248=_G4315, _G4383=_G4452]
+ (5)  [- (_G1949=_G1949)]
+ (6)  [_G2048=_G2093, - (_G2093=_G2048)]
+ (7)  [- (_G2281=_G2394), _G2281=_G2337, _G2337=_G2394]
+ (8)  [-r2_hidden(_G2798, _G2935), r2_hidden(_G2731, _G2866), _G2731=_G2798, _G2866=_G2935]
+ (9)  [-v1_ordinal1(_G3965), _G3916=_G3965, v1_ordinal1(_G3916)]
+ (10)  [-r1_tarski(_G3395, _G3532), r1_tarski(_G3328, _G3463), _G3328=_G3395, _G3463=_G3532]
+ (11)  [-v1_ordinal1(_G4866), -r2_hidden(1^[_G4866], _G4866)]
+ (12)  [-v1_ordinal1(_G4866), r1_tarski(1^[_G4866], _G4866)]
+ (13)  [v1_ordinal1(_G4866), r2_hidden(_G4948, _G4866), -r1_tarski(_G4948, _G4866)]
+ (14)  [-r1_tarski(_G5796, k3_xboole_0(_G5855, _G5915)), r1_tarski(_G5796, _G5855), r1_tarski(_G5796, _G5915)]
+ (15)  [_G5307=k3_xboole_0(_G5166, _G5236), r2_hidden(_G5475, _G5307), -r2_hidden(_G5475, _G5166)]
+ (16)  [_G5307=k3_xboole_0(_G5166, _G5236), r2_hidden(_G5475, _G5307), -r2_hidden(_G5475, _G5236)]
+ (17)  [_G5307=k3_xboole_0(_G5166, _G5236), -r2_hidden(_G5475, _G5307), r2_hidden(_G5475, _G5166), r2_hidden(_G5475, _G5236)]
+ (18)  [- (_G5307=k3_xboole_0(_G5166, _G5236)), -r2_hidden(2^[_G5307, _G5236, _G5166], _G5307), -r2_hidden(2^[_G5307, _G5236, _G5166], _G5166)]
+ (19)  [- (_G5307=k3_xboole_0(_G5166, _G5236)), -r2_hidden(2^[_G5307, _G5236, _G5166], _G5307), -r2_hidden(2^[_G5307, _G5236, _G5166], _G5236)]
+ (20)  [- (_G5307=k3_xboole_0(_G5166, _G5236)), r2_hidden(2^[_G5307, _G5236, _G5166], _G5307), r2_hidden(2^[_G5307, _G5236, _G5166], _G5166), r2_hidden(2^[_G5307, _G5236, _G5166], _G5236)]
+
+Connection Proof:
+-----------------
+1  [v1_ordinal1(k3_xboole_0(3^[], 4^[]))]   (3)  
+1.1  [-v1_ordinal1(k3_xboole_0(3^[], 4^[])), r1_tarski(1^[k3_xboole_0(3^[], 4^[])], k3_xboole_0(3^[], 4^[]))]   (12)  substitution:[[_G4866], [k3_xboole_0(3^[], 4^[])]]
+1.1.1  [-r1_tarski(1^[k3_xboole_0(3^[], 4^[])], k3_xboole_0(3^[], 4^[])), r1_tarski(1^[k3_xboole_0(3^[], 4^[])], 3^[]), r1_tarski(1^[k3_xboole_0(3^[], 4^[])], 4^[])]   (14)  substitution:[[_G5796, _G5855, _G5915], [1^[k3_xboole_0(3^[], 4^[])], 3^[], 4^[]]]
+1.1.1.1  [-r1_tarski(1^[k3_xboole_0(3^[], 4^[])], 3^[]), v1_ordinal1(3^[]), r2_hidden(1^[k3_xboole_0(3^[], 4^[])], 3^[])]   (13)  substitution:[[_G4948, _G4866], [1^[k3_xboole_0(3^[], 4^[])], 3^[]]]
+1.1.1.1.1  [-v1_ordinal1(3^[])]   (1)  
+1.1.1.1.2  [-r2_hidden(1^[k3_xboole_0(3^[], 4^[])], 3^[]), k3_xboole_0(3^[], 4^[])=k3_xboole_0(3^[], 4^[]), r2_hidden(1^[k3_xboole_0(3^[], 4^[])], k3_xboole_0(3^[], 4^[]))]   (15)  substitution:[[_G5475, _G5166, _G5307, _G5236], [1^[k3_xboole_0(3^[], 4^[])], 3^[], k3_xboole_0(3^[], 4^[]), 4^[]]]
+1.1.1.1.2.1  [- (k3_xboole_0(3^[], 4^[])=k3_xboole_0(3^[], 4^[]))]   (5)  substitution:[[_G1949], [k3_xboole_0(3^[], 4^[])]]
+1.1.1.1.2.2  [-r2_hidden(1^[k3_xboole_0(3^[], 4^[])], k3_xboole_0(3^[], 4^[])), -v1_ordinal1(k3_xboole_0(3^[], 4^[]))]   (11)  substitution:[[_G4866], [k3_xboole_0(3^[], 4^[])]]
+1.1.1.1.2.2.1  [v1_ordinal1(k3_xboole_0(3^[], 4^[]))]   (3)  
+1.1.1.2  [-r1_tarski(1^[k3_xboole_0(3^[], 4^[])], 4^[]), v1_ordinal1(4^[]), r2_hidden(1^[k3_xboole_0(3^[], 4^[])], 4^[])]   (13)  substitution:[[_G4948, _G4866], [1^[k3_xboole_0(3^[], 4^[])], 4^[]]]
+1.1.1.2.1  [-v1_ordinal1(4^[])]   (2)  
+1.1.1.2.2  [-r2_hidden(1^[k3_xboole_0(3^[], 4^[])], 4^[]), k3_xboole_0(3^[], 4^[])=k3_xboole_0(3^[], 4^[]), r2_hidden(1^[k3_xboole_0(3^[], 4^[])], k3_xboole_0(3^[], 4^[]))]   (16)  substitution:[[_G5475, _G5236, _G5307, _G5166], [1^[k3_xboole_0(3^[], 4^[])], 4^[], k3_xboole_0(3^[], 4^[]), 3^[]]]
+1.1.1.2.2.1  [- (k3_xboole_0(3^[], 4^[])=k3_xboole_0(3^[], 4^[]))]   (5)  substitution:[[_G1949], [k3_xboole_0(3^[], 4^[])]]
+1.1.1.2.2.2  [-r2_hidden(1^[k3_xboole_0(3^[], 4^[])], k3_xboole_0(3^[], 4^[])), -v1_ordinal1(k3_xboole_0(3^[], 4^[]))]   (11)  substitution:[[_G4866], [k3_xboole_0(3^[], 4^[])]]
+1.1.1.2.2.2.1  [v1_ordinal1(k3_xboole_0(3^[], 4^[]))]   (3)  
+------------------------------------------------------
+End of proof for t50_classes1

@@ -1,0 +1,53 @@
+
+l2_toprealb is a Theorem
+Start of proof for l2_toprealb
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v1_xreal_0(k1_real_1(np__1)), v3_xxreal_0(k1_real_1(np__1))]
+ (2)  [m1_subset_1(_G6623, k1_numbers), -v1_xreal_0(_G6623)]
+ (3)  [-v1_xcmplx_0(k4_xcmplx_0(_G6780)), -v3_xxreal_0(_G6780), v1_xreal_0(_G6780)]
+ (4)  [v2_xxreal_0(k4_xcmplx_0(_G6780)), -v3_xxreal_0(_G6780), v1_xreal_0(_G6780)]
+ (5)  [v1_xreal_0(_G7091), -v1_xcmplx_0(k4_xcmplx_0(_G7091))]
+ (6)  [v1_xreal_0(_G7091), -v1_xreal_0(k4_xcmplx_0(_G7091))]
+ (7)  [- (k4_xcmplx_0(k4_xcmplx_0(np__1))=np__1)]
+ (8)  [-v2_xxreal_0(np__1)]
+ (9)  [-m2_subset_1(np__1, k1_numbers, k5_numbers)]
+ (10)  [-m1_subset_1(np__1, k5_numbers)]
+ (11)  [-m1_subset_1(np__1, k1_numbers)]
+ (12)  [m1_subset_1(_G7312, k1_numbers), - (k1_real_1(_G7312)=k4_xcmplx_0(_G7312))]
+ (13)  [_G6034=_G6083, - (k4_xcmplx_0(_G6034)=k4_xcmplx_0(_G6083))]
+ (14)  [_G6303=_G6352, - (k1_real_1(_G6303)=k1_real_1(_G6352))]
+ (15)  [- (_G2398=_G2398)]
+ (16)  [_G2497=_G2542, - (_G2542=_G2497)]
+ (17)  [- (_G2730=_G2843), _G2730=_G2786, _G2786=_G2843]
+ (18)  [-v1_xcmplx_0(_G3229), _G3180=_G3229, v1_xcmplx_0(_G3180)]
+ (19)  [-v2_xxreal_0(_G3507), _G3458=_G3507, v2_xxreal_0(_G3458)]
+ (20)  [-m2_subset_1(_G3821, _G3994, _G4171), m2_subset_1(_G3736, _G3907, _G4082), _G3736=_G3821, _G3907=_G3994, _G4082=_G4171]
+ (21)  [-m1_subset_1(_G4831, _G4968), m1_subset_1(_G4764, _G4899), _G4764=_G4831, _G4899=_G4968]
+ (22)  [-v1_xreal_0(_G5410), _G5361=_G5410, v1_xreal_0(_G5361)]
+ (23)  [-v3_xxreal_0(_G5679), _G5630=_G5679, v3_xxreal_0(_G5630)]
+
+Connection Proof:
+-----------------
+1  [v1_xreal_0(k1_real_1(np__1)), v3_xxreal_0(k1_real_1(np__1))]   (1)  
+1.1  [-v1_xreal_0(k1_real_1(np__1)), k4_xcmplx_0(np__1)=k1_real_1(np__1), v1_xreal_0(k4_xcmplx_0(np__1))]   (22)  substitution:[[_G5410, _G5361], [k1_real_1(np__1), k4_xcmplx_0(np__1)]]
+1.1.1  [- (k4_xcmplx_0(np__1)=k1_real_1(np__1)), k1_real_1(np__1)=k4_xcmplx_0(np__1)]   (16)  substitution:[[_G2542, _G2497], [k4_xcmplx_0(np__1), k1_real_1(np__1)]]
+1.1.1.1  [- (k1_real_1(np__1)=k4_xcmplx_0(np__1)), m1_subset_1(np__1, k1_numbers)]   (12)  substitution:[[_G7312], [np__1]]
+1.1.1.1.1  [-m1_subset_1(np__1, k1_numbers)]   (11)  
+1.1.2  [-v1_xreal_0(k4_xcmplx_0(np__1)), v1_xreal_0(np__1)]   (6)  substitution:[[_G7091], [np__1]]
+1.1.2.1  [-v1_xreal_0(np__1), m1_subset_1(np__1, k1_numbers)]   (2)  substitution:[[_G6623], [np__1]]
+1.1.2.1.1  [-m1_subset_1(np__1, k1_numbers)]   (11)  
+1.2  [-v3_xxreal_0(k1_real_1(np__1)), k4_xcmplx_0(np__1)=k1_real_1(np__1), v3_xxreal_0(k4_xcmplx_0(np__1))]   (23)  substitution:[[_G5679, _G5630], [k1_real_1(np__1), k4_xcmplx_0(np__1)]]
+1.2.1  [- (k4_xcmplx_0(np__1)=k1_real_1(np__1)), k1_real_1(np__1)=k4_xcmplx_0(np__1)]   (16)  substitution:[[_G2542, _G2497], [k4_xcmplx_0(np__1), k1_real_1(np__1)]]
+1.2.1.1  [- (k1_real_1(np__1)=k4_xcmplx_0(np__1)), m1_subset_1(np__1, k1_numbers)]   (12)  substitution:[[_G7312], [np__1]]
+1.2.1.1.1  [-m1_subset_1(np__1, k1_numbers)]   (11)  
+1.2.2  [-v3_xxreal_0(k4_xcmplx_0(np__1)), v2_xxreal_0(k4_xcmplx_0(k4_xcmplx_0(np__1))), v1_xreal_0(k4_xcmplx_0(np__1))]   (4)  substitution:[[_G6780], [k4_xcmplx_0(np__1)]]
+1.2.2.1  [-v2_xxreal_0(k4_xcmplx_0(k4_xcmplx_0(np__1))), np__1=k4_xcmplx_0(k4_xcmplx_0(np__1)), v2_xxreal_0(np__1)]   (19)  substitution:[[_G3507, _G3458], [k4_xcmplx_0(k4_xcmplx_0(np__1)), np__1]]
+1.2.2.1.1  [- (np__1=k4_xcmplx_0(k4_xcmplx_0(np__1))), k4_xcmplx_0(k4_xcmplx_0(np__1))=np__1]   (16)  substitution:[[_G2542, _G2497], [np__1, k4_xcmplx_0(k4_xcmplx_0(np__1))]]
+1.2.2.1.1.1  [- (k4_xcmplx_0(k4_xcmplx_0(np__1))=np__1)]   (7)  
+1.2.2.1.2  [-v2_xxreal_0(np__1)]   (8)  
+1.2.2.2  [-v1_xreal_0(k4_xcmplx_0(np__1)), v1_xreal_0(np__1)]   (6)  substitution:[[_G7091], [np__1]]
+1.2.2.2.1  [-v1_xreal_0(np__1), m1_subset_1(np__1, k1_numbers)]   (2)  substitution:[[_G6623], [np__1]]
+1.2.2.2.1.1  [-m1_subset_1(np__1, k1_numbers)]   (11)  
+------------------------------------------------------
+End of proof for l2_toprealb

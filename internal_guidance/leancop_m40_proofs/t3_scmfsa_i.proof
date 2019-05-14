@@ -1,0 +1,27 @@
+
+t3_scmfsa_i is a Theorem
+Start of proof for t3_scmfsa_i
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [r2_hidden(k3_xtuple_0(k6_numbers, k1_xboole_0, k1_xboole_0), k2_scmfsa_i)]
+ (2)  [- (k6_numbers=k1_xboole_0)]
+ (3)  [-r2_hidden(k3_xtuple_0(k6_numbers, k1_xboole_0, k1_xboole_0), k3_scm_inst)]
+ (4)  [-r1_tarski(k3_scm_inst, k2_scmfsa_i)]
+ (5)  [-r1_tarski(_G4374, _G4430), -r2_hidden(1^[_G4430, _G4374], _G4374)]
+ (6)  [-r1_tarski(_G4374, _G4430), r2_hidden(1^[_G4430, _G4374], _G4430)]
+ (7)  [r1_tarski(_G4374, _G4430), r2_hidden(_G4544, _G4374), -r2_hidden(_G4544, _G4430)]
+ (8)  [- (k3_xtuple_0(_G3325, _G3496, _G3671)=k3_xtuple_0(_G3410, _G3583, _G3760)), _G3325=_G3410, _G3496=_G3583, _G3671=_G3760]
+ (9)  [- (_G1325=_G1325)]
+ (10)  [_G1424=_G1469, - (_G1469=_G1424)]
+ (11)  [- (_G1657=_G1770), _G1657=_G1713, _G1713=_G1770]
+ (12)  [-r1_tarski(_G2174, _G2311), r1_tarski(_G2107, _G2242), _G2107=_G2174, _G2242=_G2311]
+ (13)  [-r2_hidden(_G2762, _G2899), r2_hidden(_G2695, _G2830), _G2695=_G2762, _G2830=_G2899]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(k3_xtuple_0(k6_numbers, k1_xboole_0, k1_xboole_0), k2_scmfsa_i)]   (1)  
+1.1  [-r2_hidden(k3_xtuple_0(k6_numbers, k1_xboole_0, k1_xboole_0), k2_scmfsa_i), r1_tarski(k3_scm_inst, k2_scmfsa_i), r2_hidden(k3_xtuple_0(k6_numbers, k1_xboole_0, k1_xboole_0), k3_scm_inst)]   (7)  substitution:[[_G4544, _G4430, _G4374], [k3_xtuple_0(k6_numbers, k1_xboole_0, k1_xboole_0), k2_scmfsa_i, k3_scm_inst]]
+1.1.1  [-r1_tarski(k3_scm_inst, k2_scmfsa_i)]   (4)  
+1.1.2  [-r2_hidden(k3_xtuple_0(k6_numbers, k1_xboole_0, k1_xboole_0), k3_scm_inst)]   (3)  
+------------------------------------------------------
+End of proof for t3_scmfsa_i

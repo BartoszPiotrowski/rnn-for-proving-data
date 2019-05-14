@@ -1,0 +1,32 @@
+
+t60_zfmisc_1 is a Theorem
+Start of proof for t60_zfmisc_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-4^[], k4_xboole_0(k1_tarski(1^[]), 2^[])=k1_xboole_0]
+ (2)  [-4^[], -r2_hidden(1^[], 2^[])]
+ (3)  [-3^[], r2_hidden(1^[], 2^[])]
+ (4)  [-3^[], - (k4_xboole_0(k1_tarski(1^[]), 2^[])=k1_xboole_0)]
+ (5)  [3^[], 4^[]]
+ (6)  [k4_xboole_0(k1_tarski(_G3495), _G3545)=k1_xboole_0, -r2_hidden(_G3495, _G3545)]
+ (7)  [- (k4_xboole_0(k1_tarski(_G3495), _G3545)=k1_xboole_0), r2_hidden(_G3495, _G3545)]
+ (8)  [_G3184=_G3233, - (k1_tarski(_G3184)=k1_tarski(_G3233))]
+ (9)  [- (k4_xboole_0(_G2596, _G2731)=k4_xboole_0(_G2663, _G2800)), _G2596=_G2663, _G2731=_G2800]
+ (10)  [-r2_hidden(_G2045, _G2182), r2_hidden(_G1978, _G2113), _G1978=_G2045, _G2113=_G2182]
+ (11)  [- (_G1205=_G1205)]
+ (12)  [_G1304=_G1349, - (_G1349=_G1304)]
+ (13)  [- (_G1537=_G1650), _G1537=_G1593, _G1593=_G1650]
+
+Connection Proof:
+-----------------
+1  [3^[], 4^[]]   (5)  
+1.1  [-3^[], r2_hidden(1^[], 2^[])]   (3)  
+1.1.1  [-r2_hidden(1^[], 2^[]), k4_xboole_0(k1_tarski(1^[]), 2^[])=k1_xboole_0]   (6)  substitution:[[_G3495, _G3545], [1^[], 2^[]]]
+1.1.1.1  [- (k4_xboole_0(k1_tarski(1^[]), 2^[])=k1_xboole_0), -3^[]]   (4)  
+1.1.1.1.1  [3^[]]   (reduction:1)  
+1.2  [-4^[], k4_xboole_0(k1_tarski(1^[]), 2^[])=k1_xboole_0]   (1)  
+1.2.1  [- (k4_xboole_0(k1_tarski(1^[]), 2^[])=k1_xboole_0), r2_hidden(1^[], 2^[])]   (7)  substitution:[[_G3495, _G3545], [1^[], 2^[]]]
+1.2.1.1  [-r2_hidden(1^[], 2^[]), -4^[]]   (2)  
+1.2.1.1.1  [4^[]]   (reduction:1)  
+------------------------------------------------------
+End of proof for t60_zfmisc_1

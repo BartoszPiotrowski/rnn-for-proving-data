@@ -1,0 +1,51 @@
+
+t87_rinfsup1 is a Theorem
+Start of proof for t87_rinfsup1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_funct_1(1^[])]
+ (2)  [-v1_funct_2(1^[], k5_numbers, k1_numbers)]
+ (3)  [-m1_subset_1(1^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_numbers)))]
+ (4)  [-v1_comseq_2(1^[])]
+ (5)  [r1_xxreal_0(k6_rinfsup1(1^[]), k5_rinfsup1(1^[]))]
+ (6)  [- (k5_rinfsup1(_G9432)=k2_rinfsup1(k4_rinfsup1(_G9432))), v1_funct_1(_G9432), v1_funct_2(_G9432, k5_numbers, k1_numbers), m1_subset_1(_G9432, k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_numbers)))]
+ (7)  [- (k6_rinfsup1(_G9902)=k1_rinfsup1(k3_rinfsup1(_G9902))), v1_funct_1(_G9902), v1_funct_2(_G9902, k5_numbers, k1_numbers), m1_subset_1(_G9902, k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_numbers)))]
+ (8)  [-r1_xxreal_0(k1_rinfsup1(k3_rinfsup1(_G10363)), k2_rinfsup1(k4_rinfsup1(_G10363))), v1_comseq_2(_G10363), v1_funct_1(_G10363), v1_funct_2(_G10363, k5_numbers, k1_numbers), m1_subset_1(_G10363, k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_numbers)))]
+ (9)  [_G6730=_G6779, - (k1_rinfsup1(_G6730)=k1_rinfsup1(_G6779))]
+ (10)  [_G7008=_G7057, - (k3_rinfsup1(_G7008)=k3_rinfsup1(_G7057))]
+ (11)  [_G7286=_G7335, - (k2_rinfsup1(_G7286)=k2_rinfsup1(_G7335))]
+ (12)  [_G7564=_G7613, - (k4_rinfsup1(_G7564)=k4_rinfsup1(_G7613))]
+ (13)  [_G7842=_G7891, - (k1_zfmisc_1(_G7842)=k1_zfmisc_1(_G7891))]
+ (14)  [- (k2_zfmisc_1(_G8120, _G8255)=k2_zfmisc_1(_G8187, _G8324)), _G8120=_G8187, _G8255=_G8324]
+ (15)  [_G8717=_G8766, - (k6_rinfsup1(_G8717)=k6_rinfsup1(_G8766))]
+ (16)  [_G8986=_G9035, - (k5_rinfsup1(_G8986)=k5_rinfsup1(_G9035))]
+ (17)  [- (_G3074=_G3074)]
+ (18)  [_G3173=_G3218, - (_G3218=_G3173)]
+ (19)  [- (_G3406=_G3519), _G3406=_G3462, _G3462=_G3519]
+ (20)  [-v1_funct_1(_G3905), _G3856=_G3905, v1_funct_1(_G3856)]
+ (21)  [-v1_funct_2(_G4219, _G4392, _G4569), v1_funct_2(_G4134, _G4305, _G4480), _G4134=_G4219, _G4305=_G4392, _G4480=_G4569]
+ (22)  [-m1_subset_1(_G5229, _G5366), m1_subset_1(_G5162, _G5297), _G5162=_G5229, _G5297=_G5366]
+ (23)  [-v1_comseq_2(_G5808), _G5759=_G5808, v1_comseq_2(_G5759)]
+ (24)  [-r1_xxreal_0(_G6095, _G6232), r1_xxreal_0(_G6028, _G6163), _G6028=_G6095, _G6163=_G6232]
+
+Connection Proof:
+-----------------
+1  [r1_xxreal_0(k6_rinfsup1(1^[]), k5_rinfsup1(1^[]))]   (5)  
+1.1  [-r1_xxreal_0(k6_rinfsup1(1^[]), k5_rinfsup1(1^[])), r1_xxreal_0(k1_rinfsup1(k3_rinfsup1(1^[])), k2_rinfsup1(k4_rinfsup1(1^[]))), k1_rinfsup1(k3_rinfsup1(1^[]))=k6_rinfsup1(1^[]), k2_rinfsup1(k4_rinfsup1(1^[]))=k5_rinfsup1(1^[])]   (24)  substitution:[[_G6095, _G6232, _G6028, _G6163], [k6_rinfsup1(1^[]), k5_rinfsup1(1^[]), k1_rinfsup1(k3_rinfsup1(1^[])), k2_rinfsup1(k4_rinfsup1(1^[]))]]
+1.1.1  [-r1_xxreal_0(k1_rinfsup1(k3_rinfsup1(1^[])), k2_rinfsup1(k4_rinfsup1(1^[]))), v1_comseq_2(1^[]), v1_funct_1(1^[]), v1_funct_2(1^[], k5_numbers, k1_numbers), m1_subset_1(1^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_numbers)))]   (8)  substitution:[[_G10363], [1^[]]]
+1.1.1.1  [-v1_comseq_2(1^[])]   (4)  
+1.1.1.2  [-v1_funct_1(1^[])]   (1)  
+1.1.1.3  [-v1_funct_2(1^[], k5_numbers, k1_numbers)]   (2)  
+1.1.1.4  [-m1_subset_1(1^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_numbers)))]   (3)  
+1.1.2  [- (k1_rinfsup1(k3_rinfsup1(1^[]))=k6_rinfsup1(1^[])), k6_rinfsup1(1^[])=k1_rinfsup1(k3_rinfsup1(1^[]))]   (18)  substitution:[[_G3218, _G3173], [k1_rinfsup1(k3_rinfsup1(1^[])), k6_rinfsup1(1^[])]]
+1.1.2.1  [- (k6_rinfsup1(1^[])=k1_rinfsup1(k3_rinfsup1(1^[]))), v1_funct_1(1^[]), v1_funct_2(1^[], k5_numbers, k1_numbers), m1_subset_1(1^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_numbers)))]   (7)  substitution:[[_G9902], [1^[]]]
+1.1.2.1.1  [-v1_funct_1(1^[])]   (1)  
+1.1.2.1.2  [-v1_funct_2(1^[], k5_numbers, k1_numbers)]   (2)  
+1.1.2.1.3  [-m1_subset_1(1^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_numbers)))]   (3)  
+1.1.3  [- (k2_rinfsup1(k4_rinfsup1(1^[]))=k5_rinfsup1(1^[])), k5_rinfsup1(1^[])=k2_rinfsup1(k4_rinfsup1(1^[]))]   (18)  substitution:[[_G3218, _G3173], [k2_rinfsup1(k4_rinfsup1(1^[])), k5_rinfsup1(1^[])]]
+1.1.3.1  [- (k5_rinfsup1(1^[])=k2_rinfsup1(k4_rinfsup1(1^[]))), v1_funct_1(1^[]), v1_funct_2(1^[], k5_numbers, k1_numbers), m1_subset_1(1^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_numbers)))]   (6)  substitution:[[_G9432], [1^[]]]
+1.1.3.1.1  [-v1_funct_1(1^[])]   (1)  
+1.1.3.1.2  [-v1_funct_2(1^[], k5_numbers, k1_numbers)]   (2)  
+1.1.3.1.3  [-m1_subset_1(1^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_numbers)))]   (3)  
+------------------------------------------------------
+End of proof for t87_rinfsup1

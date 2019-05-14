@@ -1,0 +1,35 @@
+
+t87_quatern3 is a Theorem
+Start of proof for t87_quatern3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k2_quatern3(k28_quaterni(k2_quatern2))=np__1]
+ (2)  [m1_subset_1(_G4208, k1_quaterni), -v1_quaterni(_G4208)]
+ (3)  [-m1_subset_1(k2_quatern2, k1_quaterni)]
+ (4)  [m1_subset_1(_G4422, k1_quaterni), - (k2_quatern3(_G4422)=k1_quatern3(_G4422))]
+ (5)  [- (k2_quatern3(k2_quatern2)=np__1)]
+ (6)  [v1_quaterni(_G4699), - (k1_quatern3(_G4699)=k2_quatern3(k28_quaterni(_G4699)))]
+ (7)  [_G3320=_G3369, - (k1_quatern3(_G3320)=k1_quatern3(_G3369))]
+ (8)  [_G3598=_G3647, - (k2_quatern3(_G3598)=k2_quatern3(_G3647))]
+ (9)  [_G3867=_G3916, - (k28_quaterni(_G3867)=k28_quaterni(_G3916))]
+ (10)  [- (_G1630=_G1630)]
+ (11)  [_G1729=_G1774, - (_G1774=_G1729)]
+ (12)  [- (_G1962=_G2075), _G1962=_G2018, _G2018=_G2075]
+ (13)  [-v1_quaterni(_G3049), _G3000=_G3049, v1_quaterni(_G3000)]
+ (14)  [-m1_subset_1(_G2479, _G2616), m1_subset_1(_G2412, _G2547), _G2412=_G2479, _G2547=_G2616]
+
+Connection Proof:
+-----------------
+1  [k2_quatern3(k28_quaterni(k2_quatern2))=np__1]   (1)  
+1.1  [- (k2_quatern3(k28_quaterni(k2_quatern2))=np__1), np__1=k2_quatern3(k28_quaterni(k2_quatern2))]   (11)  substitution:[[_G1774, _G1729], [k2_quatern3(k28_quaterni(k2_quatern2)), np__1]]
+1.1.1  [- (np__1=k2_quatern3(k28_quaterni(k2_quatern2))), np__1=k1_quatern3(k2_quatern2), k1_quatern3(k2_quatern2)=k2_quatern3(k28_quaterni(k2_quatern2))]   (12)  substitution:[[_G1962, _G2075, _G2018], [np__1, k2_quatern3(k28_quaterni(k2_quatern2)), k1_quatern3(k2_quatern2)]]
+1.1.1.1  [- (np__1=k1_quatern3(k2_quatern2)), np__1=k2_quatern3(k2_quatern2), k2_quatern3(k2_quatern2)=k1_quatern3(k2_quatern2)]   (12)  substitution:[[_G1962, _G2075, _G2018], [np__1, k1_quatern3(k2_quatern2), k2_quatern3(k2_quatern2)]]
+1.1.1.1.1  [- (np__1=k2_quatern3(k2_quatern2)), k2_quatern3(k2_quatern2)=np__1]   (11)  substitution:[[_G1774, _G1729], [np__1, k2_quatern3(k2_quatern2)]]
+1.1.1.1.1.1  [- (k2_quatern3(k2_quatern2)=np__1)]   (5)  
+1.1.1.1.2  [- (k2_quatern3(k2_quatern2)=k1_quatern3(k2_quatern2)), m1_subset_1(k2_quatern2, k1_quaterni)]   (4)  substitution:[[_G4422], [k2_quatern2]]
+1.1.1.1.2.1  [-m1_subset_1(k2_quatern2, k1_quaterni)]   (3)  
+1.1.1.2  [- (k1_quatern3(k2_quatern2)=k2_quatern3(k28_quaterni(k2_quatern2))), v1_quaterni(k2_quatern2)]   (6)  substitution:[[_G4699], [k2_quatern2]]
+1.1.1.2.1  [-v1_quaterni(k2_quatern2), m1_subset_1(k2_quatern2, k1_quaterni)]   (2)  substitution:[[_G4208], [k2_quatern2]]
+1.1.1.2.1.1  [-m1_subset_1(k2_quatern2, k1_quaterni)]   (3)  
+------------------------------------------------------
+End of proof for t87_quatern3

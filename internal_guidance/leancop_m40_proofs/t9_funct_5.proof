@@ -1,0 +1,54 @@
+
+t9_funct_5 is a Theorem
+Start of proof for t9_funct_5
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k9_xtuple_0(k2_zfmisc_1(2^[], 1^[]))=2^[], k10_xtuple_0(k2_zfmisc_1(1^[], 2^[]))=2^[]]
+ (2)  [1^[]=k1_xboole_0, k2_zfmisc_1(2^[], 1^[])=k1_xboole_0, k2_zfmisc_1(1^[], 2^[])=k1_xboole_0]
+ (3)  [- (_G4111=k1_xboole_0), - (_G4186=k1_xboole_0), - (k9_xtuple_0(k2_zfmisc_1(_G4111, _G4186))=_G4111)]
+ (4)  [- (_G4111=k1_xboole_0), - (_G4186=k1_xboole_0), - (k10_xtuple_0(k2_zfmisc_1(_G4111, _G4186))=_G4186)]
+ (5)  [- (k9_xtuple_0(k1_xboole_0)=k1_xboole_0)]
+ (6)  [- (k10_xtuple_0(k1_xboole_0)=k1_xboole_0)]
+ (7)  [- (k2_zfmisc_1(_G4885, _G4939)=k1_xboole_0), _G4885=k1_xboole_0]
+ (8)  [- (k2_zfmisc_1(_G4885, _G4939)=k1_xboole_0), _G4939=k1_xboole_0]
+ (9)  [k2_zfmisc_1(_G4885, _G4939)=k1_xboole_0, - (_G4885=k1_xboole_0), - (_G4939=k1_xboole_0)]
+ (10)  [- (_G2122=_G2122)]
+ (11)  [_G2221=_G2266, - (_G2266=_G2221)]
+ (12)  [- (_G2454=_G2567), _G2454=_G2510, _G2510=_G2567]
+ (13)  [_G2904=_G2953, - (k9_xtuple_0(_G2904)=k9_xtuple_0(_G2953))]
+ (14)  [_G3182=_G3231, - (k10_xtuple_0(_G3182)=k10_xtuple_0(_G3231))]
+ (15)  [- (k2_zfmisc_1(_G3451, _G3586)=k2_zfmisc_1(_G3518, _G3655)), _G3451=_G3518, _G3586=_G3655]
+
+Connection Proof:
+-----------------
+1  [k9_xtuple_0(k2_zfmisc_1(2^[], 1^[]))=2^[], k10_xtuple_0(k2_zfmisc_1(1^[], 2^[]))=2^[]]   (1)  
+1.1  [- (k9_xtuple_0(k2_zfmisc_1(2^[], 1^[]))=2^[]), - (2^[]=k1_xboole_0), - (1^[]=k1_xboole_0)]   (3)  substitution:[[_G4111, _G4186], [2^[], 1^[]]]
+1.1.1  [2^[]=k1_xboole_0, - (k2_zfmisc_1(2^[], 1^[])=k1_xboole_0)]   (7)  substitution:[[_G4885, _G4939], [2^[], 1^[]]]
+1.1.1.1  [k2_zfmisc_1(2^[], 1^[])=k1_xboole_0, - (k9_xtuple_0(k2_zfmisc_1(2^[], 1^[]))=k9_xtuple_0(k1_xboole_0))]   (13)  substitution:[[_G2904, _G2953], [k2_zfmisc_1(2^[], 1^[]), k1_xboole_0]]
+1.1.1.1.1  [k9_xtuple_0(k2_zfmisc_1(2^[], 1^[]))=k9_xtuple_0(k1_xboole_0), - (k9_xtuple_0(k2_zfmisc_1(2^[], 1^[]))=2^[]), k9_xtuple_0(k1_xboole_0)=2^[]]   (12)  substitution:[[_G2454, _G2510, _G2567], [k9_xtuple_0(k2_zfmisc_1(2^[], 1^[])), k9_xtuple_0(k1_xboole_0), 2^[]]]
+1.1.1.1.1.1  [k9_xtuple_0(k2_zfmisc_1(2^[], 1^[]))=2^[]]   (reduction:1)  
+1.1.1.1.1.2  [- (k9_xtuple_0(k1_xboole_0)=2^[]), k9_xtuple_0(k1_xboole_0)=k1_xboole_0, k1_xboole_0=2^[]]   (12)  substitution:[[_G2454, _G2567, _G2510], [k9_xtuple_0(k1_xboole_0), 2^[], k1_xboole_0]]
+1.1.1.1.1.2.1  [- (k9_xtuple_0(k1_xboole_0)=k1_xboole_0)]   (5)  
+1.1.1.1.1.2.2  [- (k1_xboole_0=2^[]), 2^[]=k1_xboole_0]   (11)  substitution:[[_G2266, _G2221], [k1_xboole_0, 2^[]]]
+1.1.1.1.1.2.2.1  [- (2^[]=k1_xboole_0)]   (reduction:1.1)  
+1.1.2  [1^[]=k1_xboole_0, k2_zfmisc_1(2^[], 1^[])=k1_xboole_0, k2_zfmisc_1(1^[], 2^[])=k1_xboole_0]   (2)  
+1.1.2.1  [- (k2_zfmisc_1(2^[], 1^[])=k1_xboole_0), 1^[]=k1_xboole_0]   (8)  substitution:[[_G4885, _G4939], [2^[], 1^[]]]
+1.1.2.1.1  [- (1^[]=k1_xboole_0)]   (reduction:1.1)  
+1.1.2.2  [- (k2_zfmisc_1(1^[], 2^[])=k1_xboole_0), 1^[]=k1_xboole_0]   (7)  substitution:[[_G4885, _G4939], [1^[], 2^[]]]
+1.1.2.2.1  [- (1^[]=k1_xboole_0)]   (reduction:1.1)  
+1.2  [- (k10_xtuple_0(k2_zfmisc_1(1^[], 2^[]))=2^[]), - (1^[]=k1_xboole_0), - (2^[]=k1_xboole_0)]   (4)  substitution:[[_G4111, _G4186], [1^[], 2^[]]]
+1.2.1  [1^[]=k1_xboole_0, k2_zfmisc_1(2^[], 1^[])=k1_xboole_0, k2_zfmisc_1(1^[], 2^[])=k1_xboole_0]   (2)  
+1.2.1.1  [- (k2_zfmisc_1(2^[], 1^[])=k1_xboole_0), 1^[]=k1_xboole_0]   (8)  substitution:[[_G4885, _G4939], [2^[], 1^[]]]
+1.2.1.1.1  [- (1^[]=k1_xboole_0)]   (reduction:1.2)  
+1.2.1.2  [- (k2_zfmisc_1(1^[], 2^[])=k1_xboole_0), 1^[]=k1_xboole_0]   (7)  substitution:[[_G4885, _G4939], [1^[], 2^[]]]
+1.2.1.2.1  [- (1^[]=k1_xboole_0)]   (reduction:1.2)  
+1.2.2  [2^[]=k1_xboole_0, - (k2_zfmisc_1(1^[], 2^[])=k1_xboole_0)]   (8)  substitution:[[_G4939, _G4885], [2^[], 1^[]]]
+1.2.2.1  [k2_zfmisc_1(1^[], 2^[])=k1_xboole_0, - (k10_xtuple_0(k2_zfmisc_1(1^[], 2^[]))=k10_xtuple_0(k1_xboole_0))]   (14)  substitution:[[_G3182, _G3231], [k2_zfmisc_1(1^[], 2^[]), k1_xboole_0]]
+1.2.2.1.1  [k10_xtuple_0(k2_zfmisc_1(1^[], 2^[]))=k10_xtuple_0(k1_xboole_0), - (k10_xtuple_0(k2_zfmisc_1(1^[], 2^[]))=2^[]), k10_xtuple_0(k1_xboole_0)=2^[]]   (12)  substitution:[[_G2454, _G2510, _G2567], [k10_xtuple_0(k2_zfmisc_1(1^[], 2^[])), k10_xtuple_0(k1_xboole_0), 2^[]]]
+1.2.2.1.1.1  [k10_xtuple_0(k2_zfmisc_1(1^[], 2^[]))=2^[]]   (reduction:1)  
+1.2.2.1.1.2  [- (k10_xtuple_0(k1_xboole_0)=2^[]), k10_xtuple_0(k1_xboole_0)=k1_xboole_0, k1_xboole_0=2^[]]   (12)  substitution:[[_G2454, _G2567, _G2510], [k10_xtuple_0(k1_xboole_0), 2^[], k1_xboole_0]]
+1.2.2.1.1.2.1  [- (k10_xtuple_0(k1_xboole_0)=k1_xboole_0)]   (6)  
+1.2.2.1.1.2.2  [- (k1_xboole_0=2^[]), 2^[]=k1_xboole_0]   (11)  substitution:[[_G2266, _G2221], [k1_xboole_0, 2^[]]]
+1.2.2.1.1.2.2.1  [- (2^[]=k1_xboole_0)]   (reduction:1.2)  
+------------------------------------------------------
+End of proof for t9_funct_5

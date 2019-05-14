@@ -1,0 +1,26 @@
+
+l10_integr16 is a Theorem
+Start of proof for l10_integr16
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k17_rvsum_1(k6_finseq_1(k2_numbers))=k6_numbers]
+ (2)  [- (k5_complex1=k1_xboole_0)]
+ (3)  [- (k6_numbers=k1_xboole_0)]
+ (4)  [- (k17_rvsum_1(k6_finseq_1(k2_numbers))=k5_complex1)]
+ (5)  [_G1714=_G1763, - (k17_rvsum_1(_G1714)=k17_rvsum_1(_G1763))]
+ (6)  [_G1983=_G2032, - (k6_finseq_1(_G1983)=k6_finseq_1(_G2032))]
+ (7)  [- (_G932=_G932)]
+ (8)  [_G1031=_G1076, - (_G1076=_G1031)]
+ (9)  [- (_G1264=_G1377), _G1264=_G1320, _G1320=_G1377]
+
+Connection Proof:
+-----------------
+1  [k17_rvsum_1(k6_finseq_1(k2_numbers))=k6_numbers]   (1)  
+1.1  [- (k17_rvsum_1(k6_finseq_1(k2_numbers))=k6_numbers), k17_rvsum_1(k6_finseq_1(k2_numbers))=k5_complex1, k5_complex1=k6_numbers]   (9)  substitution:[[_G1264, _G1377, _G1320], [k17_rvsum_1(k6_finseq_1(k2_numbers)), k6_numbers, k5_complex1]]
+1.1.1  [- (k17_rvsum_1(k6_finseq_1(k2_numbers))=k5_complex1)]   (4)  
+1.1.2  [- (k5_complex1=k6_numbers), k5_complex1=k1_xboole_0, k1_xboole_0=k6_numbers]   (9)  substitution:[[_G1264, _G1377, _G1320], [k5_complex1, k6_numbers, k1_xboole_0]]
+1.1.2.1  [- (k5_complex1=k1_xboole_0)]   (2)  
+1.1.2.2  [- (k1_xboole_0=k6_numbers), k6_numbers=k1_xboole_0]   (8)  substitution:[[_G1076, _G1031], [k1_xboole_0, k6_numbers]]
+1.1.2.2.1  [- (k6_numbers=k1_xboole_0)]   (3)  
+------------------------------------------------------
+End of proof for l10_integr16

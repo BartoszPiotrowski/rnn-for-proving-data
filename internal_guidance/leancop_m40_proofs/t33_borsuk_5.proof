@@ -1,0 +1,53 @@
+
+t33_borsuk_5 is a Theorem
+Start of proof for t33_borsuk_5
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v2_pre_topc(2^[])]
+ (2)  [-v1_connsp_1(2^[])]
+ (3)  [-l1_pre_topc(2^[])]
+ (4)  [-v3_pre_topc(3^[], 2^[])]
+ (5)  [-v4_pre_topc(3^[], 2^[])]
+ (6)  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(2^[])))]
+ (7)  [3^[]=k1_xboole_0]
+ (8)  [3^[]=k2_struct_0(2^[])]
+ (9)  [l1_struct_0(_G7903), - (k1_struct_0(_G7903)=k1_xboole_0)]
+ (10)  [l1_pre_topc(_G8076), -l1_struct_0(_G8076)]
+ (11)  [l1_pre_topc(_G8198), v2_pre_topc(_G8198), -v1_connsp_1(_G8198), -m1_subset_1(1^[_G8198], k1_zfmisc_1(u1_struct_0(_G8198)))]
+ (12)  [l1_pre_topc(_G8198), v2_pre_topc(_G8198), -v1_connsp_1(_G8198), -v3_pre_topc(1^[_G8198], _G8198)]
+ (13)  [l1_pre_topc(_G8198), v2_pre_topc(_G8198), -v1_connsp_1(_G8198), -v4_pre_topc(1^[_G8198], _G8198)]
+ (14)  [l1_pre_topc(_G8198), v2_pre_topc(_G8198), -v1_connsp_1(_G8198), 1^[_G8198]=k1_struct_0(_G8198)]
+ (15)  [l1_pre_topc(_G8198), v2_pre_topc(_G8198), -v1_connsp_1(_G8198), 1^[_G8198]=k2_struct_0(_G8198)]
+ (16)  [l1_pre_topc(_G8198), v2_pre_topc(_G8198), v1_connsp_1(_G8198), m1_subset_1(_G8407, k1_zfmisc_1(u1_struct_0(_G8198))), v3_pre_topc(_G8407, _G8198), v4_pre_topc(_G8407, _G8198), - (_G8407=k1_struct_0(_G8198)), - (_G8407=k2_struct_0(_G8198))]
+ (17)  [_G6716=_G6765, - (k1_struct_0(_G6716)=k1_struct_0(_G6765))]
+ (18)  [_G6994=_G7043, - (k1_zfmisc_1(_G6994)=k1_zfmisc_1(_G7043))]
+ (19)  [_G7272=_G7321, - (u1_struct_0(_G7272)=u1_struct_0(_G7321))]
+ (20)  [_G7541=_G7590, - (k2_struct_0(_G7541)=k2_struct_0(_G7590))]
+ (21)  [- (_G2893=_G2893)]
+ (22)  [_G2992=_G3037, - (_G3037=_G2992)]
+ (23)  [- (_G3225=_G3338), _G3225=_G3281, _G3281=_G3338]
+ (24)  [-l1_struct_0(_G3724), _G3675=_G3724, l1_struct_0(_G3675)]
+ (25)  [-v2_pre_topc(_G4002), _G3953=_G4002, v2_pre_topc(_G3953)]
+ (26)  [-v1_connsp_1(_G4280), _G4231=_G4280, v1_connsp_1(_G4231)]
+ (27)  [-l1_pre_topc(_G4558), _G4509=_G4558, l1_pre_topc(_G4509)]
+ (28)  [-v3_pre_topc(_G4854, _G4991), v3_pre_topc(_G4787, _G4922), _G4787=_G4854, _G4922=_G4991]
+ (29)  [-v4_pre_topc(_G5451, _G5588), v4_pre_topc(_G5384, _G5519), _G5384=_G5451, _G5519=_G5588]
+ (30)  [-m1_subset_1(_G6039, _G6176), m1_subset_1(_G5972, _G6107), _G5972=_G6039, _G6107=_G6176]
+
+Connection Proof:
+-----------------
+1  [3^[]=k1_xboole_0]   (7)  
+1.1  [- (3^[]=k1_xboole_0), 3^[]=k1_struct_0(2^[]), k1_struct_0(2^[])=k1_xboole_0]   (23)  substitution:[[_G3225, _G3338, _G3281], [3^[], k1_xboole_0, k1_struct_0(2^[])]]
+1.1.1  [- (3^[]=k1_struct_0(2^[])), l1_pre_topc(2^[]), v2_pre_topc(2^[]), v1_connsp_1(2^[]), m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(2^[]))), v3_pre_topc(3^[], 2^[]), v4_pre_topc(3^[], 2^[]), - (3^[]=k2_struct_0(2^[]))]   (16)  substitution:[[_G8407, _G8198], [3^[], 2^[]]]
+1.1.1.1  [-l1_pre_topc(2^[])]   (3)  
+1.1.1.2  [-v2_pre_topc(2^[])]   (1)  
+1.1.1.3  [-v1_connsp_1(2^[])]   (2)  
+1.1.1.4  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(2^[])))]   (6)  
+1.1.1.5  [-v3_pre_topc(3^[], 2^[])]   (4)  
+1.1.1.6  [-v4_pre_topc(3^[], 2^[])]   (5)  
+1.1.1.7  [3^[]=k2_struct_0(2^[])]   (8)  
+1.1.2  [- (k1_struct_0(2^[])=k1_xboole_0), l1_struct_0(2^[])]   (9)  substitution:[[_G7903], [2^[]]]
+1.1.2.1  [-l1_struct_0(2^[]), l1_pre_topc(2^[])]   (10)  substitution:[[_G8076], [2^[]]]
+1.1.2.1.1  [-l1_pre_topc(2^[])]   (3)  
+------------------------------------------------------
+End of proof for t33_borsuk_5

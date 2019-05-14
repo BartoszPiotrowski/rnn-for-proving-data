@@ -1,0 +1,41 @@
+
+t11_taxonom2 is a Theorem
+Start of proof for t11_taxonom2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(5^[], k1_zfmisc_1(k1_zfmisc_1(4^[])))]
+ (2)  [- (5^[]=k1_xboole_0)]
+ (3)  [v5_taxonom2(5^[], 4^[])]
+ (4)  [-v1_xboole_0(k1_xboole_0)]
+ (5)  [r2_hidden(_G7683, _G7729), v1_xboole_0(_G7729)]
+ (6)  [m1_subset_1(_G6357, k1_zfmisc_1(k1_zfmisc_1(_G6235))), -v5_taxonom2(_G6357, _G6235), -m1_subset_1(2^[_G6357, _G6235], k1_zfmisc_1(_G6235))]
+ (7)  [m1_subset_1(_G6357, k1_zfmisc_1(k1_zfmisc_1(_G6235))), -v5_taxonom2(_G6357, _G6235), -r2_hidden(2^[_G6357, _G6235], _G6357)]
+ (8)  [m1_subset_1(_G6357, k1_zfmisc_1(k1_zfmisc_1(_G6235))), -v5_taxonom2(_G6357, _G6235), -m1_subset_1(3^[_G6357, _G6235], _G6235)]
+ (9)  [m1_subset_1(_G6357, k1_zfmisc_1(k1_zfmisc_1(_G6235))), -v5_taxonom2(_G6357, _G6235), r2_hidden(3^[_G6357, _G6235], 2^[_G6357, _G6235])]
+ (10)  [m1_subset_1(_G6357, k1_zfmisc_1(k1_zfmisc_1(_G6235))), -v5_taxonom2(_G6357, _G6235), m1_subset_1(_G9106, k1_zfmisc_1(_G6235)), r2_hidden(3^[_G6357, _G6235], _G9106), r2_hidden(_G9106, _G6357), r1_xboole_0(2^[_G6357, _G6235], _G9106)]
+ (11)  [m1_subset_1(_G6357, k1_zfmisc_1(k1_zfmisc_1(_G6235))), v5_taxonom2(_G6357, _G6235), m1_subset_1(_G6622, k1_zfmisc_1(_G6235)), r2_hidden(_G6622, _G6357), m1_subset_1(_G6858, _G6235), -r2_hidden(_G6858, _G6622), -m1_subset_1(1^[_G6858, _G6622, _G6357, _G6235], k1_zfmisc_1(_G6235))]
+ (12)  [m1_subset_1(_G6357, k1_zfmisc_1(k1_zfmisc_1(_G6235))), v5_taxonom2(_G6357, _G6235), m1_subset_1(_G6622, k1_zfmisc_1(_G6235)), r2_hidden(_G6622, _G6357), m1_subset_1(_G6858, _G6235), -r2_hidden(_G6858, _G6622), -r2_hidden(_G6858, 1^[_G6858, _G6622, _G6357, _G6235])]
+ (13)  [m1_subset_1(_G6357, k1_zfmisc_1(k1_zfmisc_1(_G6235))), v5_taxonom2(_G6357, _G6235), m1_subset_1(_G6622, k1_zfmisc_1(_G6235)), r2_hidden(_G6622, _G6357), m1_subset_1(_G6858, _G6235), -r2_hidden(_G6858, _G6622), -r2_hidden(1^[_G6858, _G6622, _G6357, _G6235], _G6357)]
+ (14)  [m1_subset_1(_G6357, k1_zfmisc_1(k1_zfmisc_1(_G6235))), v5_taxonom2(_G6357, _G6235), m1_subset_1(_G6622, k1_zfmisc_1(_G6235)), r2_hidden(_G6622, _G6357), m1_subset_1(_G6858, _G6235), -r2_hidden(_G6858, _G6622), -r1_xboole_0(_G6622, 1^[_G6858, _G6622, _G6357, _G6235])]
+ (15)  [_G5936=_G5985, - (k1_zfmisc_1(_G5936)=k1_zfmisc_1(_G5985))]
+ (16)  [- (_G2401=_G2401)]
+ (17)  [_G2500=_G2545, - (_G2545=_G2500)]
+ (18)  [- (_G2733=_G2846), _G2733=_G2789, _G2789=_G2846]
+ (19)  [-r1_xboole_0(_G3250, _G3387), r1_xboole_0(_G3183, _G3318), _G3183=_G3250, _G3318=_G3387]
+ (20)  [-r2_hidden(_G3847, _G3984), r2_hidden(_G3780, _G3915), _G3780=_G3847, _G3915=_G3984]
+ (21)  [-v1_xboole_0(_G4426), _G4377=_G4426, v1_xboole_0(_G4377)]
+ (22)  [-m1_subset_1(_G4722, _G4859), m1_subset_1(_G4655, _G4790), _G4655=_G4722, _G4790=_G4859]
+ (23)  [-v5_taxonom2(_G5310, _G5447), v5_taxonom2(_G5243, _G5378), _G5243=_G5310, _G5378=_G5447]
+
+Connection Proof:
+-----------------
+1  [v5_taxonom2(5^[], 4^[])]   (3)  
+1.1  [-v5_taxonom2(5^[], 4^[]), m1_subset_1(5^[], k1_zfmisc_1(k1_zfmisc_1(4^[]))), -r2_hidden(2^[5^[], 4^[]], 5^[])]   (7)  substitution:[[_G6357, _G6235], [5^[], 4^[]]]
+1.1.1  [-m1_subset_1(5^[], k1_zfmisc_1(k1_zfmisc_1(4^[])))]   (1)  
+1.1.2  [r2_hidden(2^[5^[], 4^[]], 5^[]), -r2_hidden(2^[5^[], 4^[]], k1_xboole_0), 2^[5^[], 4^[]]=2^[5^[], 4^[]], 5^[]=k1_xboole_0]   (20)  substitution:[[_G3780, _G3915, _G3847, _G3984], [2^[5^[], 4^[]], 5^[], 2^[5^[], 4^[]], k1_xboole_0]]
+1.1.2.1  [r2_hidden(2^[5^[], 4^[]], k1_xboole_0), v1_xboole_0(k1_xboole_0)]   (5)  substitution:[[_G7683, _G7729], [2^[5^[], 4^[]], k1_xboole_0]]
+1.1.2.1.1  [-v1_xboole_0(k1_xboole_0)]   (4)  
+1.1.2.2  [- (2^[5^[], 4^[]]=2^[5^[], 4^[]])]   (16)  substitution:[[_G2401], [2^[5^[], 4^[]]]]
+1.1.2.3  [- (5^[]=k1_xboole_0)]   (2)  
+------------------------------------------------------
+End of proof for t11_taxonom2

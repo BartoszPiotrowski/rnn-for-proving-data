@@ -1,0 +1,77 @@
+
+t51_complsp2 is a Theorem
+Start of proof for t51_complsp2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m2_finseq_1(1^[], k2_numbers)]
+ (2)  [-m2_finseq_1(2^[], k2_numbers)]
+ (3)  [-m2_finseq_1(3^[], k1_numbers)]
+ (4)  [-m2_finseq_1(4^[], k1_numbers)]
+ (5)  [- (1^[]=3^[])]
+ (6)  [- (2^[]=4^[])]
+ (7)  [- (k3_finseq_1(1^[])=k3_finseq_1(4^[]))]
+ (8)  [k10_seq_4(1^[], 2^[])=k8_rvsum_1(3^[], 4^[])]
+ (9)  [m1_finseq_1(_G8834, k1_numbers), -v3_valued_0(_G8834)]
+ (10)  [m1_finseq_1(_G9045, _G8991), -v1_relat_1(_G9045)]
+ (11)  [m1_finseq_1(_G9045, _G8991), -v1_funct_1(_G9045)]
+ (12)  [m1_finseq_1(_G9045, _G8991), -v1_finseq_1(_G9045)]
+ (13)  [- (k10_seq_4(_G9332, _G9389)=k45_valued_1(_G9332, _G9389)), m1_finseq_1(_G9332, k2_numbers), m1_finseq_1(_G9389, k2_numbers)]
+ (14)  [m2_finseq_1(_G10536, _G10491), -m1_finseq_1(_G10536, _G10491)]
+ (15)  [-m2_finseq_1(_G10536, _G10491), m1_finseq_1(_G10536, _G10491)]
+ (16)  [- (k8_rvsum_1(_G9754, _G9839)=k45_valued_1(_G9754, _G9839)), v1_finseq_1(_G9754), v3_valued_0(_G9754), v1_funct_1(_G9754), v1_relat_1(_G9754), v1_relat_1(_G9839), v1_funct_1(_G9839), v3_valued_0(_G9839), v1_finseq_1(_G9839)]
+ (17)  [- (k45_valued_1(_G6690, _G6825)=k45_valued_1(_G6757, _G6894)), _G6690=_G6757, _G6825=_G6894]
+ (18)  [_G7287=_G7336, - (k3_finseq_1(_G7287)=k3_finseq_1(_G7336))]
+ (19)  [- (k10_seq_4(_G7565, _G7700)=k10_seq_4(_G7632, _G7769)), _G7565=_G7632, _G7700=_G7769]
+ (20)  [- (k8_rvsum_1(_G8153, _G8288)=k8_rvsum_1(_G8220, _G8357)), _G8153=_G8220, _G8288=_G8357]
+ (21)  [- (_G3485=_G3485)]
+ (22)  [_G3584=_G3629, - (_G3629=_G3584)]
+ (23)  [- (_G3817=_G3930), _G3817=_G3873, _G3873=_G3930]
+ (24)  [-v1_relat_1(_G4316), _G4267=_G4316, v1_relat_1(_G4267)]
+ (25)  [-v1_funct_1(_G4594), _G4545=_G4594, v1_funct_1(_G4545)]
+ (26)  [-v3_valued_0(_G4872), _G4823=_G4872, v3_valued_0(_G4823)]
+ (27)  [-v1_finseq_1(_G5150), _G5101=_G5150, v1_finseq_1(_G5101)]
+ (28)  [-m1_finseq_1(_G5446, _G5583), m1_finseq_1(_G5379, _G5514), _G5379=_G5446, _G5514=_G5583]
+ (29)  [-m2_finseq_1(_G6034, _G6171), m2_finseq_1(_G5967, _G6102), _G5967=_G6034, _G6102=_G6171]
+
+Connection Proof:
+-----------------
+1  [k10_seq_4(1^[], 2^[])=k8_rvsum_1(3^[], 4^[])]   (8)  
+1.1  [- (k10_seq_4(1^[], 2^[])=k8_rvsum_1(3^[], 4^[])), k8_rvsum_1(3^[], 4^[])=k10_seq_4(1^[], 2^[])]   (22)  substitution:[[_G3629, _G3584], [k10_seq_4(1^[], 2^[]), k8_rvsum_1(3^[], 4^[])]]
+1.1.1  [- (k8_rvsum_1(3^[], 4^[])=k10_seq_4(1^[], 2^[])), k8_rvsum_1(3^[], 4^[])=k45_valued_1(3^[], 4^[]), k45_valued_1(3^[], 4^[])=k10_seq_4(1^[], 2^[])]   (23)  substitution:[[_G3817, _G3930, _G3873], [k8_rvsum_1(3^[], 4^[]), k10_seq_4(1^[], 2^[]), k45_valued_1(3^[], 4^[])]]
+1.1.1.1  [- (k8_rvsum_1(3^[], 4^[])=k45_valued_1(3^[], 4^[])), v1_finseq_1(3^[]), v3_valued_0(3^[]), v1_funct_1(3^[]), v1_relat_1(3^[]), v1_relat_1(4^[]), v1_funct_1(4^[]), v3_valued_0(4^[]), v1_finseq_1(4^[])]   (16)  substitution:[[_G9754, _G9839], [3^[], 4^[]]]
+1.1.1.1.1  [-v1_finseq_1(3^[]), m1_finseq_1(3^[], k1_numbers)]   (12)  substitution:[[_G9045, _G8991], [3^[], k1_numbers]]
+1.1.1.1.1.1  [-m1_finseq_1(3^[], k1_numbers), m2_finseq_1(3^[], k1_numbers)]   (14)  substitution:[[_G10536, _G10491], [3^[], k1_numbers]]
+1.1.1.1.1.1.1  [-m2_finseq_1(3^[], k1_numbers)]   (3)  
+1.1.1.1.2  [-v3_valued_0(3^[]), m1_finseq_1(3^[], k1_numbers)]   (9)  substitution:[[_G8834], [3^[]]]
+1.1.1.1.2.1  [-m1_finseq_1(3^[], k1_numbers), m2_finseq_1(3^[], k1_numbers)]   (14)  substitution:[[_G10536, _G10491], [3^[], k1_numbers]]
+1.1.1.1.2.1.1  [-m2_finseq_1(3^[], k1_numbers)]   (3)  
+1.1.1.1.3  [-v1_funct_1(3^[]), m1_finseq_1(3^[], k1_numbers)]   (11)  substitution:[[_G9045, _G8991], [3^[], k1_numbers]]
+1.1.1.1.3.1  [-m1_finseq_1(3^[], k1_numbers), m2_finseq_1(3^[], k1_numbers)]   (14)  substitution:[[_G10536, _G10491], [3^[], k1_numbers]]
+1.1.1.1.3.1.1  [-m2_finseq_1(3^[], k1_numbers)]   (3)  
+1.1.1.1.4  [-v1_relat_1(3^[]), m1_finseq_1(3^[], k1_numbers)]   (10)  substitution:[[_G9045, _G8991], [3^[], k1_numbers]]
+1.1.1.1.4.1  [-m1_finseq_1(3^[], k1_numbers), m2_finseq_1(3^[], k1_numbers)]   (14)  substitution:[[_G10536, _G10491], [3^[], k1_numbers]]
+1.1.1.1.4.1.1  [-m2_finseq_1(3^[], k1_numbers)]   (3)  
+1.1.1.1.5  [-v1_relat_1(4^[]), m1_finseq_1(4^[], k1_numbers)]   (10)  substitution:[[_G9045, _G8991], [4^[], k1_numbers]]
+1.1.1.1.5.1  [-m1_finseq_1(4^[], k1_numbers), m2_finseq_1(4^[], k1_numbers)]   (14)  substitution:[[_G10536, _G10491], [4^[], k1_numbers]]
+1.1.1.1.5.1.1  [-m2_finseq_1(4^[], k1_numbers)]   (4)  
+1.1.1.1.6  [-v1_funct_1(4^[]), m1_finseq_1(4^[], k1_numbers)]   (11)  substitution:[[_G9045, _G8991], [4^[], k1_numbers]]
+1.1.1.1.6.1  [-m1_finseq_1(4^[], k1_numbers), m2_finseq_1(4^[], k1_numbers)]   (14)  substitution:[[_G10536, _G10491], [4^[], k1_numbers]]
+1.1.1.1.6.1.1  [-m2_finseq_1(4^[], k1_numbers)]   (4)  
+1.1.1.1.7  [-v3_valued_0(4^[]), m1_finseq_1(4^[], k1_numbers)]   (9)  substitution:[[_G8834], [4^[]]]
+1.1.1.1.7.1  [-m1_finseq_1(4^[], k1_numbers), m2_finseq_1(4^[], k1_numbers)]   (14)  substitution:[[_G10536, _G10491], [4^[], k1_numbers]]
+1.1.1.1.7.1.1  [-m2_finseq_1(4^[], k1_numbers)]   (4)  
+1.1.1.1.8  [-v1_finseq_1(4^[]), m1_finseq_1(4^[], k1_numbers)]   (12)  substitution:[[_G9045, _G8991], [4^[], k1_numbers]]
+1.1.1.1.8.1  [-m1_finseq_1(4^[], k1_numbers), m2_finseq_1(4^[], k1_numbers)]   (14)  substitution:[[_G10536, _G10491], [4^[], k1_numbers]]
+1.1.1.1.8.1.1  [-m2_finseq_1(4^[], k1_numbers)]   (4)  
+1.1.1.2  [- (k45_valued_1(3^[], 4^[])=k10_seq_4(1^[], 2^[])), k10_seq_4(1^[], 2^[])=k45_valued_1(3^[], 4^[])]   (22)  substitution:[[_G3629, _G3584], [k45_valued_1(3^[], 4^[]), k10_seq_4(1^[], 2^[])]]
+1.1.1.2.1  [- (k10_seq_4(1^[], 2^[])=k45_valued_1(3^[], 4^[])), k10_seq_4(1^[], 2^[])=k45_valued_1(1^[], 2^[]), k45_valued_1(1^[], 2^[])=k45_valued_1(3^[], 4^[])]   (23)  substitution:[[_G3817, _G3930, _G3873], [k10_seq_4(1^[], 2^[]), k45_valued_1(3^[], 4^[]), k45_valued_1(1^[], 2^[])]]
+1.1.1.2.1.1  [- (k10_seq_4(1^[], 2^[])=k45_valued_1(1^[], 2^[])), m1_finseq_1(1^[], k2_numbers), m1_finseq_1(2^[], k2_numbers)]   (13)  substitution:[[_G9332, _G9389], [1^[], 2^[]]]
+1.1.1.2.1.1.1  [-m1_finseq_1(1^[], k2_numbers), m2_finseq_1(1^[], k2_numbers)]   (14)  substitution:[[_G10536, _G10491], [1^[], k2_numbers]]
+1.1.1.2.1.1.1.1  [-m2_finseq_1(1^[], k2_numbers)]   (1)  
+1.1.1.2.1.1.2  [-m1_finseq_1(2^[], k2_numbers), m2_finseq_1(2^[], k2_numbers)]   (14)  substitution:[[_G10536, _G10491], [2^[], k2_numbers]]
+1.1.1.2.1.1.2.1  [-m2_finseq_1(2^[], k2_numbers)]   (2)  
+1.1.1.2.1.2  [- (k45_valued_1(1^[], 2^[])=k45_valued_1(3^[], 4^[])), 1^[]=3^[], 2^[]=4^[]]   (17)  substitution:[[_G6690, _G6825, _G6757, _G6894], [1^[], 2^[], 3^[], 4^[]]]
+1.1.1.2.1.2.1  [- (1^[]=3^[])]   (5)  
+1.1.1.2.1.2.2  [- (2^[]=4^[])]   (6)  
+------------------------------------------------------
+End of proof for t51_complsp2

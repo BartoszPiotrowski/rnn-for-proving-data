@@ -1,0 +1,47 @@
+
+t45_flang_1 is a Theorem
+Start of proof for t45_flang_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(3^[], k1_zfmisc_1(k3_catalan2(2^[])))]
+ (2)  [-m1_subset_1(4^[], k3_catalan2(2^[]))]
+ (3)  [-m1_subset_1(5^[], k3_catalan2(2^[]))]
+ (4)  [-r2_hidden(4^[], k8_flang_1(2^[], 3^[]))]
+ (5)  [-r2_hidden(5^[], k8_flang_1(2^[], 3^[]))]
+ (6)  [r2_hidden(k1_flang_1(2^[], 4^[], 5^[]), k8_flang_1(2^[], 3^[]))]
+ (7)  [-v7_ordinal1(k2_xcmplx_0(_G1268, _G1319)), v7_ordinal1(_G1268), v7_ordinal1(_G1319)]
+ (8)  [m1_subset_1(_G3420, k1_zfmisc_1(k3_catalan2(_G3265))), r2_hidden(_G3342, k8_flang_1(_G3265, _G3420)), -v7_ordinal1(1^[_G3420, _G3342, _G3265])]
+ (9)  [m1_subset_1(_G3420, k1_zfmisc_1(k3_catalan2(_G3265))), r2_hidden(_G3342, k8_flang_1(_G3265, _G3420)), -r2_hidden(_G3342, k7_flang_1(_G3265, _G3420, 1^[_G3420, _G3342, _G3265]))]
+ (10)  [m1_subset_1(_G3420, k1_zfmisc_1(k3_catalan2(_G3265))), -r2_hidden(_G3342, k8_flang_1(_G3265, _G3420)), v7_ordinal1(_G3680), r2_hidden(_G3342, k7_flang_1(_G3265, _G3420, _G3680))]
+ (11)  [m1_subset_1(_G1690, k1_zfmisc_1(k3_catalan2(_G1564))), m1_subset_1(_G1902, k3_catalan2(_G1564)), m1_subset_1(_G2091, k3_catalan2(_G1564)), v7_ordinal1(_G2273), v7_ordinal1(_G2409), -r2_hidden(k1_flang_1(_G1564, _G1902, _G2091), k7_flang_1(_G1564, _G1690, k2_xcmplx_0(_G2273, _G2409))), r2_hidden(_G1902, k7_flang_1(_G1564, _G1690, _G2273)), r2_hidden(_G2091, k7_flang_1(_G1564, _G1690, _G2409))]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(k1_flang_1(2^[], 4^[], 5^[]), k8_flang_1(2^[], 3^[]))]   (6)  
+1.1  [-r2_hidden(k1_flang_1(2^[], 4^[], 5^[]), k8_flang_1(2^[], 3^[])), m1_subset_1(3^[], k1_zfmisc_1(k3_catalan2(2^[]))), v7_ordinal1(k2_xcmplx_0(1^[3^[], 4^[], 2^[]], 1^[3^[], 5^[], 2^[]])), r2_hidden(k1_flang_1(2^[], 4^[], 5^[]), k7_flang_1(2^[], 3^[], k2_xcmplx_0(1^[3^[], 4^[], 2^[]], 1^[3^[], 5^[], 2^[]])))]   (10)  substitution:[[_G3342, _G3265, _G3420, _G3680], [k1_flang_1(2^[], 4^[], 5^[]), 2^[], 3^[], k2_xcmplx_0(1^[3^[], 4^[], 2^[]], 1^[3^[], 5^[], 2^[]])]]
+1.1.1  [-m1_subset_1(3^[], k1_zfmisc_1(k3_catalan2(2^[])))]   (1)  
+1.1.2  [-v7_ordinal1(k2_xcmplx_0(1^[3^[], 4^[], 2^[]], 1^[3^[], 5^[], 2^[]])), v7_ordinal1(1^[3^[], 4^[], 2^[]]), v7_ordinal1(1^[3^[], 5^[], 2^[]])]   (7)  substitution:[[_G1268, _G1319], [1^[3^[], 4^[], 2^[]], 1^[3^[], 5^[], 2^[]]]]
+1.1.2.1  [-v7_ordinal1(1^[3^[], 4^[], 2^[]]), m1_subset_1(3^[], k1_zfmisc_1(k3_catalan2(2^[]))), r2_hidden(4^[], k8_flang_1(2^[], 3^[]))]   (8)  substitution:[[_G3420, _G3342, _G3265], [3^[], 4^[], 2^[]]]
+1.1.2.1.1  [-m1_subset_1(3^[], k1_zfmisc_1(k3_catalan2(2^[])))]   (1)  
+1.1.2.1.2  [-r2_hidden(4^[], k8_flang_1(2^[], 3^[]))]   (4)  
+1.1.2.2  [-v7_ordinal1(1^[3^[], 5^[], 2^[]]), m1_subset_1(3^[], k1_zfmisc_1(k3_catalan2(2^[]))), r2_hidden(5^[], k8_flang_1(2^[], 3^[]))]   (8)  substitution:[[_G3420, _G3342, _G3265], [3^[], 5^[], 2^[]]]
+1.1.2.2.1  [-m1_subset_1(3^[], k1_zfmisc_1(k3_catalan2(2^[])))]   (1)  
+1.1.2.2.2  [-r2_hidden(5^[], k8_flang_1(2^[], 3^[]))]   (5)  
+1.1.3  [-r2_hidden(k1_flang_1(2^[], 4^[], 5^[]), k7_flang_1(2^[], 3^[], k2_xcmplx_0(1^[3^[], 4^[], 2^[]], 1^[3^[], 5^[], 2^[]]))), m1_subset_1(3^[], k1_zfmisc_1(k3_catalan2(2^[]))), m1_subset_1(4^[], k3_catalan2(2^[])), m1_subset_1(5^[], k3_catalan2(2^[])), v7_ordinal1(1^[3^[], 4^[], 2^[]]), v7_ordinal1(1^[3^[], 5^[], 2^[]]), r2_hidden(4^[], k7_flang_1(2^[], 3^[], 1^[3^[], 4^[], 2^[]])), r2_hidden(5^[], k7_flang_1(2^[], 3^[], 1^[3^[], 5^[], 2^[]]))]   (11)  substitution:[[_G1564, _G1902, _G2091, _G1690, _G2273, _G2409], [2^[], 4^[], 5^[], 3^[], 1^[3^[], 4^[], 2^[]], 1^[3^[], 5^[], 2^[]]]]
+1.1.3.1  [-m1_subset_1(3^[], k1_zfmisc_1(k3_catalan2(2^[])))]   (1)  
+1.1.3.2  [-m1_subset_1(4^[], k3_catalan2(2^[]))]   (2)  
+1.1.3.3  [-m1_subset_1(5^[], k3_catalan2(2^[]))]   (3)  
+1.1.3.4  [-v7_ordinal1(1^[3^[], 4^[], 2^[]]), m1_subset_1(3^[], k1_zfmisc_1(k3_catalan2(2^[]))), r2_hidden(4^[], k8_flang_1(2^[], 3^[]))]   (8)  substitution:[[_G3420, _G3342, _G3265], [3^[], 4^[], 2^[]]]
+1.1.3.4.1  [-m1_subset_1(3^[], k1_zfmisc_1(k3_catalan2(2^[])))]   (1)  
+1.1.3.4.2  [-r2_hidden(4^[], k8_flang_1(2^[], 3^[]))]   (4)  
+1.1.3.5  [-v7_ordinal1(1^[3^[], 5^[], 2^[]]), m1_subset_1(3^[], k1_zfmisc_1(k3_catalan2(2^[]))), r2_hidden(5^[], k8_flang_1(2^[], 3^[]))]   (8)  substitution:[[_G3420, _G3342, _G3265], [3^[], 5^[], 2^[]]]
+1.1.3.5.1  [-m1_subset_1(3^[], k1_zfmisc_1(k3_catalan2(2^[])))]   (1)  
+1.1.3.5.2  [-r2_hidden(5^[], k8_flang_1(2^[], 3^[]))]   (5)  
+1.1.3.6  [-r2_hidden(4^[], k7_flang_1(2^[], 3^[], 1^[3^[], 4^[], 2^[]])), m1_subset_1(3^[], k1_zfmisc_1(k3_catalan2(2^[]))), r2_hidden(4^[], k8_flang_1(2^[], 3^[]))]   (9)  substitution:[[_G3342, _G3265, _G3420], [4^[], 2^[], 3^[]]]
+1.1.3.6.1  [-m1_subset_1(3^[], k1_zfmisc_1(k3_catalan2(2^[])))]   (1)  
+1.1.3.6.2  [-r2_hidden(4^[], k8_flang_1(2^[], 3^[]))]   (4)  
+1.1.3.7  [-r2_hidden(5^[], k7_flang_1(2^[], 3^[], 1^[3^[], 5^[], 2^[]])), m1_subset_1(3^[], k1_zfmisc_1(k3_catalan2(2^[]))), r2_hidden(5^[], k8_flang_1(2^[], 3^[]))]   (9)  substitution:[[_G3342, _G3265, _G3420], [5^[], 2^[], 3^[]]]
+1.1.3.7.1  [-m1_subset_1(3^[], k1_zfmisc_1(k3_catalan2(2^[])))]   (1)  
+1.1.3.7.2  [-r2_hidden(5^[], k8_flang_1(2^[], 3^[]))]   (5)  
+------------------------------------------------------
+End of proof for t45_flang_1

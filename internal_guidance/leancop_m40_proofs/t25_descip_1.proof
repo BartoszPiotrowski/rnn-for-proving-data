@@ -1,0 +1,50 @@
+
+t25_descip_1 is a Theorem
+Start of proof for t25_descip_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v7_ordinal1(1^[])]
+ (2)  [v1_xboole_0(1^[])]
+ (3)  [-r2_hidden(2^[], 1^[])]
+ (4)  [2^[]=k6_numbers]
+ (5)  [r2_hidden(2^[], k2_finseq_1(1^[])), - (2^[]=1^[])]
+ (6)  [r2_hidden(_G5598, _G5645), r2_hidden(_G5645, _G5598)]
+ (7)  [v7_ordinal1(_G5858), -r1_xxreal_0(np__1, _G5858), - (_G5858=k6_numbers)]
+ (8)  [v7_ordinal1(_G6115), v7_ordinal1(_G6210), r2_hidden(_G6115, k2_finseq_1(_G6210)), -r1_xxreal_0(np__1, _G6115)]
+ (9)  [v7_ordinal1(_G6115), v7_ordinal1(_G6210), r2_hidden(_G6115, k2_finseq_1(_G6210)), -r1_xxreal_0(_G6115, _G6210)]
+ (10)  [v7_ordinal1(_G6115), v7_ordinal1(_G6210), -r2_hidden(_G6115, k2_finseq_1(_G6210)), r1_xxreal_0(np__1, _G6115), r1_xxreal_0(_G6115, _G6210)]
+ (11)  [v7_ordinal1(_G6635), r2_hidden(_G6586, _G6635), -v7_ordinal1(_G6586)]
+ (12)  [v7_ordinal1(_G6855), v7_ordinal1(_G6944), r2_hidden(_G6855, _G6944), r1_xxreal_0(_G6944, _G6855)]
+ (13)  [v7_ordinal1(_G6855), v7_ordinal1(_G6944), -r2_hidden(_G6855, _G6944), -r1_xxreal_0(_G6944, _G6855)]
+ (14)  [_G5299=_G5348, - (k2_finseq_1(_G5299)=k2_finseq_1(_G5348))]
+ (15)  [- (_G2701=_G2701)]
+ (16)  [_G2800=_G2845, - (_G2845=_G2800)]
+ (17)  [- (_G3033=_G3146), _G3033=_G3089, _G3089=_G3146]
+ (18)  [-r1_xxreal_0(_G3550, _G3687), r1_xxreal_0(_G3483, _G3618), _G3483=_G3550, _G3618=_G3687]
+ (19)  [-v7_ordinal1(_G4129), _G4080=_G4129, v7_ordinal1(_G4080)]
+ (20)  [-v1_xboole_0(_G4407), _G4358=_G4407, v1_xboole_0(_G4358)]
+ (21)  [-r2_hidden(_G4694, _G4831), r2_hidden(_G4627, _G4762), _G4627=_G4694, _G4762=_G4831]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(2^[], 1^[]), r2_hidden(1^[], 2^[])]   (6)  substitution:[[_G5598, _G5645], [2^[], 1^[]]]
+1.1  [-r2_hidden(2^[], 1^[])]   (3)  
+1.2  [-r2_hidden(1^[], 2^[]), r2_hidden(2^[], 1^[]), 2^[]=1^[], 1^[]=2^[]]   (21)  substitution:[[_G4694, _G4831, _G4627, _G4762], [1^[], 2^[], 2^[], 1^[]]]
+1.2.1  [-r2_hidden(2^[], 1^[])]   (3)  
+1.2.2  [- (2^[]=1^[]), r2_hidden(2^[], k2_finseq_1(1^[]))]   (5)  
+1.2.2.1  [-r2_hidden(2^[], k2_finseq_1(1^[])), v7_ordinal1(2^[]), v7_ordinal1(1^[]), r1_xxreal_0(np__1, 2^[]), r1_xxreal_0(2^[], 1^[])]   (10)  substitution:[[_G6115, _G6210], [2^[], 1^[]]]
+1.2.2.1.1  [-v7_ordinal1(2^[]), v7_ordinal1(1^[]), r2_hidden(2^[], 1^[])]   (11)  substitution:[[_G6586, _G6635], [2^[], 1^[]]]
+1.2.2.1.1.1  [-v7_ordinal1(1^[])]   (1)  
+1.2.2.1.1.2  [-r2_hidden(2^[], 1^[])]   (3)  
+1.2.2.1.2  [-v7_ordinal1(1^[])]   (1)  
+1.2.2.1.3  [-r1_xxreal_0(np__1, 2^[]), v7_ordinal1(2^[]), - (2^[]=k6_numbers)]   (7)  substitution:[[_G5858], [2^[]]]
+1.2.2.1.3.1  [-v7_ordinal1(2^[])]   (lemmata:1.2.2.1)  
+1.2.2.1.3.2  [2^[]=k6_numbers]   (4)  
+1.2.2.1.4  [-r1_xxreal_0(2^[], 1^[]), v7_ordinal1(1^[]), v7_ordinal1(2^[]), -r2_hidden(1^[], 2^[])]   (13)  substitution:[[_G6944, _G6855], [2^[], 1^[]]]
+1.2.2.1.4.1  [-v7_ordinal1(1^[])]   (1)  
+1.2.2.1.4.2  [-v7_ordinal1(2^[])]   (lemmata:1.2.2.1)  
+1.2.2.1.4.3  [r2_hidden(1^[], 2^[])]   (reduction:1)  
+1.2.3  [- (1^[]=2^[]), 2^[]=1^[]]   (16)  substitution:[[_G2845, _G2800], [1^[], 2^[]]]
+1.2.3.1  [- (2^[]=1^[])]   (lemmata:1.2)  
+------------------------------------------------------
+End of proof for t25_descip_1

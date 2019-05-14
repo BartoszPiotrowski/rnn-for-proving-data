@@ -1,0 +1,32 @@
+
+t49_finseq_1 is a Theorem
+Start of proof for t49_finseq_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [r2_hidden(k1_xboole_0, k13_finseq_1(2^[]))]
+ (2)  [- (k6_finseq_1(_G4437)=k1_xboole_0)]
+ (3)  [-m2_finseq_1(k6_finseq_1(_G4543), _G4543)]
+ (4)  [_G4075=k13_finseq_1(_G4017), r2_hidden(_G4205, _G4075), -m2_finseq_1(_G4205, _G4017)]
+ (5)  [_G4075=k13_finseq_1(_G4017), -r2_hidden(_G4205, _G4075), m2_finseq_1(_G4205, _G4017)]
+ (6)  [- (_G4075=k13_finseq_1(_G4017)), r2_hidden(1^[_G4075, _G4017], _G4075), m2_finseq_1(1^[_G4075, _G4017], _G4017)]
+ (7)  [- (_G4075=k13_finseq_1(_G4017)), -r2_hidden(1^[_G4075, _G4017], _G4075), -m2_finseq_1(1^[_G4075, _G4017], _G4017)]
+ (8)  [_G3428=_G3477, - (k6_finseq_1(_G3428)=k6_finseq_1(_G3477))]
+ (9)  [_G3697=_G3746, - (k13_finseq_1(_G3697)=k13_finseq_1(_G3746))]
+ (10)  [- (_G1419=_G1419)]
+ (11)  [_G1518=_G1563, - (_G1563=_G1518)]
+ (12)  [- (_G1751=_G1864), _G1751=_G1807, _G1807=_G1864]
+ (13)  [-m2_finseq_1(_G2268, _G2405), m2_finseq_1(_G2201, _G2336), _G2201=_G2268, _G2336=_G2405]
+ (14)  [-r2_hidden(_G2856, _G2993), r2_hidden(_G2789, _G2924), _G2789=_G2856, _G2924=_G2993]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(k1_xboole_0, k13_finseq_1(2^[]))]   (1)  
+1.1  [-r2_hidden(k1_xboole_0, k13_finseq_1(2^[])), k13_finseq_1(2^[])=k13_finseq_1(2^[]), m2_finseq_1(k1_xboole_0, 2^[])]   (5)  substitution:[[_G4205, _G4075, _G4017], [k1_xboole_0, k13_finseq_1(2^[]), 2^[]]]
+1.1.1  [- (k13_finseq_1(2^[])=k13_finseq_1(2^[])), 2^[]=2^[]]   (9)  substitution:[[_G3697, _G3746], [2^[], 2^[]]]
+1.1.1.1  [- (2^[]=2^[])]   (10)  substitution:[[_G1419], [2^[]]]
+1.1.2  [-m2_finseq_1(k1_xboole_0, 2^[]), m2_finseq_1(k6_finseq_1(2^[]), 2^[]), k6_finseq_1(2^[])=k1_xboole_0, 2^[]=2^[]]   (13)  substitution:[[_G2268, _G2405, _G2201, _G2336], [k1_xboole_0, 2^[], k6_finseq_1(2^[]), 2^[]]]
+1.1.2.1  [-m2_finseq_1(k6_finseq_1(2^[]), 2^[])]   (3)  substitution:[[_G4543], [2^[]]]
+1.1.2.2  [- (k6_finseq_1(2^[])=k1_xboole_0)]   (2)  substitution:[[_G4437], [2^[]]]
+1.1.2.3  [- (2^[]=2^[])]   (10)  substitution:[[_G1419], [2^[]]]
+------------------------------------------------------
+End of proof for t49_finseq_1

@@ -1,0 +1,28 @@
+
+t18_finsub_1 is a Theorem
+Start of proof for t18_finsub_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(2^[], k1_zfmisc_1(1^[]))]
+ (2)  [-v1_finset_1(1^[])]
+ (3)  [m1_subset_1(2^[], k5_finsub_1(1^[]))]
+ (4)  [v1_finset_1(_G3484), - (k5_finsub_1(_G3484)=k1_zfmisc_1(_G3484))]
+ (5)  [_G2904=_G2953, - (k1_zfmisc_1(_G2904)=k1_zfmisc_1(_G2953))]
+ (6)  [_G3173=_G3222, - (k5_finsub_1(_G3173)=k5_finsub_1(_G3222))]
+ (7)  [- (_G1214=_G1214)]
+ (8)  [_G1313=_G1358, - (_G1358=_G1313)]
+ (9)  [- (_G1546=_G1659), _G1546=_G1602, _G1602=_G1659]
+ (10)  [-v1_finset_1(_G2045), _G1996=_G2045, v1_finset_1(_G1996)]
+ (11)  [-m1_subset_1(_G2332, _G2469), m1_subset_1(_G2265, _G2400), _G2265=_G2332, _G2400=_G2469]
+
+Connection Proof:
+-----------------
+1  [m1_subset_1(2^[], k5_finsub_1(1^[]))]   (3)  
+1.1  [-m1_subset_1(2^[], k5_finsub_1(1^[])), m1_subset_1(2^[], k1_zfmisc_1(1^[])), 2^[]=2^[], k1_zfmisc_1(1^[])=k5_finsub_1(1^[])]   (11)  substitution:[[_G2332, _G2469, _G2265, _G2400], [2^[], k5_finsub_1(1^[]), 2^[], k1_zfmisc_1(1^[])]]
+1.1.1  [-m1_subset_1(2^[], k1_zfmisc_1(1^[]))]   (1)  
+1.1.2  [- (2^[]=2^[])]   (7)  substitution:[[_G1214], [2^[]]]
+1.1.3  [- (k1_zfmisc_1(1^[])=k5_finsub_1(1^[])), k5_finsub_1(1^[])=k1_zfmisc_1(1^[])]   (8)  substitution:[[_G1358, _G1313], [k1_zfmisc_1(1^[]), k5_finsub_1(1^[])]]
+1.1.3.1  [- (k5_finsub_1(1^[])=k1_zfmisc_1(1^[])), v1_finset_1(1^[])]   (4)  substitution:[[_G3484], [1^[]]]
+1.1.3.1.1  [-v1_finset_1(1^[])]   (2)  
+------------------------------------------------------
+End of proof for t18_finsub_1

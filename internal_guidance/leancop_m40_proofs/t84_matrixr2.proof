@@ -1,0 +1,71 @@
+
+t84_matrixr2 is a Theorem
+Start of proof for t84_matrixr2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(2^[], k5_numbers)]
+ (2)  [-m1_matrix_1(3^[], k1_numbers, 2^[], 2^[])]
+ (3)  [-v1_matrixr2(3^[], 2^[])]
+ (4)  [k7_matrixr2(2^[], k7_matrixr2(2^[], 3^[]))=3^[]]
+ (5)  [m1_subset_1(_G8515, k5_numbers), m1_matrix_1(_G8662, k1_numbers, _G8515, _G8515), v1_matrixr2(_G8662, _G8515), -m1_matrix_1(1^[_G8662, _G8515], k1_numbers, _G8515, _G8515)]
+ (6)  [m1_subset_1(_G8515, k5_numbers), m1_matrix_1(_G8662, k1_numbers, _G8515, _G8515), v1_matrixr2(_G8662, _G8515), - (k1_matrixr2(_G8515, 1^[_G8662, _G8515], _G8662)=k4_matrixr2(_G8515))]
+ (7)  [m1_subset_1(_G8515, k5_numbers), m1_matrix_1(_G8662, k1_numbers, _G8515, _G8515), v1_matrixr2(_G8662, _G8515), - (k1_matrixr2(_G8515, _G8662, 1^[_G8662, _G8515])=k4_matrixr2(_G8515))]
+ (8)  [m1_subset_1(_G8515, k5_numbers), m1_matrix_1(_G8662, k1_numbers, _G8515, _G8515), -v1_matrixr2(_G8662, _G8515), m1_matrix_1(_G8947, k1_numbers, _G8515, _G8515), k1_matrixr2(_G8515, _G8947, _G8662)=k4_matrixr2(_G8515), k1_matrixr2(_G8515, _G8662, _G8947)=k4_matrixr2(_G8515)]
+ (9)  [-m1_matrix_1(k7_matrixr2(_G10814, _G10872), k1_numbers, _G10814, _G10814), m1_subset_1(_G10814, k5_numbers), m1_matrix_1(_G10872, k1_numbers, _G10814, _G10814)]
+ (10)  [m1_subset_1(_G9597, k5_numbers), m1_matrix_1(_G9753, k1_numbers, _G9597, _G9597), v1_matrixr2(_G9753, _G9597), m1_matrix_1(_G10047, k1_numbers, _G9597, _G9597), _G10047=k7_matrixr2(_G9597, _G9753), - (k1_matrixr2(_G9597, _G10047, _G9753)=k4_matrixr2(_G9597))]
+ (11)  [m1_subset_1(_G9597, k5_numbers), m1_matrix_1(_G9753, k1_numbers, _G9597, _G9597), v1_matrixr2(_G9753, _G9597), m1_matrix_1(_G10047, k1_numbers, _G9597, _G9597), _G10047=k7_matrixr2(_G9597, _G9753), - (k1_matrixr2(_G9597, _G9753, _G10047)=k4_matrixr2(_G9597))]
+ (12)  [m1_subset_1(_G9597, k5_numbers), m1_matrix_1(_G9753, k1_numbers, _G9597, _G9597), v1_matrixr2(_G9753, _G9597), m1_matrix_1(_G10047, k1_numbers, _G9597, _G9597), - (_G10047=k7_matrixr2(_G9597, _G9753)), k1_matrixr2(_G9597, _G10047, _G9753)=k4_matrixr2(_G9597), k1_matrixr2(_G9597, _G9753, _G10047)=k4_matrixr2(_G9597)]
+ (13)  [- (k1_matrixr2(_G6558, _G6729, _G6904)=k1_matrixr2(_G6643, _G6816, _G6993)), _G6558=_G6643, _G6729=_G6816, _G6904=_G6993]
+ (14)  [_G7586=_G7635, - (k4_matrixr2(_G7586)=k4_matrixr2(_G7635))]
+ (15)  [- (k7_matrixr2(_G7855, _G7990)=k7_matrixr2(_G7922, _G8059)), _G7855=_G7922, _G7990=_G8059]
+ (16)  [- (_G2993=_G2993)]
+ (17)  [_G3092=_G3137, - (_G3137=_G3092)]
+ (18)  [- (_G3325=_G3438), _G3325=_G3381, _G3381=_G3438]
+ (19)  [-m1_subset_1(_G3842, _G3979), m1_subset_1(_G3775, _G3910), _G3775=_G3842, _G3910=_G3979]
+ (20)  [-v1_matrixr2(_G5965, _G6102), v1_matrixr2(_G5898, _G6033), _G5898=_G5965, _G6033=_G6102]
+ (21)  [-m1_matrix_1(_G4475, _G4684, _G4897, _G5114), m1_matrix_1(_G4372, _G4579, _G4790, _G5005), _G4372=_G4475, _G4579=_G4684, _G4790=_G4897, _G5005=_G5114]
+
+Connection Proof:
+-----------------
+1  [k7_matrixr2(2^[], k7_matrixr2(2^[], 3^[]))=3^[]]   (4)  
+1.1  [- (k7_matrixr2(2^[], k7_matrixr2(2^[], 3^[]))=3^[]), 3^[]=k7_matrixr2(2^[], k7_matrixr2(2^[], 3^[]))]   (17)  substitution:[[_G3137, _G3092], [k7_matrixr2(2^[], k7_matrixr2(2^[], 3^[])), 3^[]]]
+1.1.1  [- (3^[]=k7_matrixr2(2^[], k7_matrixr2(2^[], 3^[]))), m1_subset_1(2^[], k5_numbers), m1_matrix_1(k7_matrixr2(2^[], 3^[]), k1_numbers, 2^[], 2^[]), v1_matrixr2(k7_matrixr2(2^[], 3^[]), 2^[]), m1_matrix_1(3^[], k1_numbers, 2^[], 2^[]), k1_matrixr2(2^[], 3^[], k7_matrixr2(2^[], 3^[]))=k4_matrixr2(2^[]), k1_matrixr2(2^[], k7_matrixr2(2^[], 3^[]), 3^[])=k4_matrixr2(2^[])]   (12)  substitution:[[_G10047, _G9597, _G9753], [3^[], 2^[], k7_matrixr2(2^[], 3^[])]]
+1.1.1.1  [-m1_subset_1(2^[], k5_numbers)]   (1)  
+1.1.1.2  [-m1_matrix_1(k7_matrixr2(2^[], 3^[]), k1_numbers, 2^[], 2^[]), m1_subset_1(2^[], k5_numbers), m1_matrix_1(3^[], k1_numbers, 2^[], 2^[])]   (9)  substitution:[[_G10814, _G10872], [2^[], 3^[]]]
+1.1.1.2.1  [-m1_subset_1(2^[], k5_numbers)]   (1)  
+1.1.1.2.2  [-m1_matrix_1(3^[], k1_numbers, 2^[], 2^[])]   (2)  
+1.1.1.3  [-v1_matrixr2(k7_matrixr2(2^[], 3^[]), 2^[]), m1_subset_1(2^[], k5_numbers), m1_matrix_1(k7_matrixr2(2^[], 3^[]), k1_numbers, 2^[], 2^[]), m1_matrix_1(3^[], k1_numbers, 2^[], 2^[]), k1_matrixr2(2^[], 3^[], k7_matrixr2(2^[], 3^[]))=k4_matrixr2(2^[]), k1_matrixr2(2^[], k7_matrixr2(2^[], 3^[]), 3^[])=k4_matrixr2(2^[])]   (8)  substitution:[[_G8662, _G8515, _G8947], [k7_matrixr2(2^[], 3^[]), 2^[], 3^[]]]
+1.1.1.3.1  [-m1_subset_1(2^[], k5_numbers)]   (1)  
+1.1.1.3.2  [-m1_matrix_1(k7_matrixr2(2^[], 3^[]), k1_numbers, 2^[], 2^[])]   (lemmata:1.1.1)  
+1.1.1.3.3  [-m1_matrix_1(3^[], k1_numbers, 2^[], 2^[])]   (2)  
+1.1.1.3.4  [- (k1_matrixr2(2^[], 3^[], k7_matrixr2(2^[], 3^[]))=k4_matrixr2(2^[])), m1_subset_1(2^[], k5_numbers), m1_matrix_1(3^[], k1_numbers, 2^[], 2^[]), v1_matrixr2(3^[], 2^[]), m1_matrix_1(k7_matrixr2(2^[], 3^[]), k1_numbers, 2^[], 2^[]), k7_matrixr2(2^[], 3^[])=k7_matrixr2(2^[], 3^[])]   (11)  substitution:[[_G9597, _G9753, _G10047], [2^[], 3^[], k7_matrixr2(2^[], 3^[])]]
+1.1.1.3.4.1  [-m1_subset_1(2^[], k5_numbers)]   (1)  
+1.1.1.3.4.2  [-m1_matrix_1(3^[], k1_numbers, 2^[], 2^[])]   (2)  
+1.1.1.3.4.3  [-v1_matrixr2(3^[], 2^[])]   (3)  
+1.1.1.3.4.4  [-m1_matrix_1(k7_matrixr2(2^[], 3^[]), k1_numbers, 2^[], 2^[])]   (lemmata:1.1.1.3)  
+1.1.1.3.4.5  [- (k7_matrixr2(2^[], 3^[])=k7_matrixr2(2^[], 3^[]))]   (16)  substitution:[[_G2993], [k7_matrixr2(2^[], 3^[])]]
+1.1.1.3.5  [- (k1_matrixr2(2^[], k7_matrixr2(2^[], 3^[]), 3^[])=k4_matrixr2(2^[])), m1_subset_1(2^[], k5_numbers), m1_matrix_1(3^[], k1_numbers, 2^[], 2^[]), v1_matrixr2(3^[], 2^[]), m1_matrix_1(k7_matrixr2(2^[], 3^[]), k1_numbers, 2^[], 2^[]), k7_matrixr2(2^[], 3^[])=k7_matrixr2(2^[], 3^[])]   (10)  substitution:[[_G9597, _G10047, _G9753], [2^[], k7_matrixr2(2^[], 3^[]), 3^[]]]
+1.1.1.3.5.1  [-m1_subset_1(2^[], k5_numbers)]   (1)  
+1.1.1.3.5.2  [-m1_matrix_1(3^[], k1_numbers, 2^[], 2^[])]   (2)  
+1.1.1.3.5.3  [-v1_matrixr2(3^[], 2^[])]   (3)  
+1.1.1.3.5.4  [-m1_matrix_1(k7_matrixr2(2^[], 3^[]), k1_numbers, 2^[], 2^[])]   (lemmata:1.1.1.3)  
+1.1.1.3.5.5  [- (k7_matrixr2(2^[], 3^[])=k7_matrixr2(2^[], 3^[]))]   (16)  substitution:[[_G2993], [k7_matrixr2(2^[], 3^[])]]
+1.1.1.4  [-m1_matrix_1(3^[], k1_numbers, 2^[], 2^[])]   (2)  
+1.1.1.5  [- (k1_matrixr2(2^[], 3^[], k7_matrixr2(2^[], 3^[]))=k4_matrixr2(2^[])), m1_subset_1(2^[], k5_numbers), m1_matrix_1(3^[], k1_numbers, 2^[], 2^[]), v1_matrixr2(3^[], 2^[]), m1_matrix_1(k7_matrixr2(2^[], 3^[]), k1_numbers, 2^[], 2^[]), k7_matrixr2(2^[], 3^[])=k7_matrixr2(2^[], 3^[])]   (11)  substitution:[[_G9597, _G9753, _G10047], [2^[], 3^[], k7_matrixr2(2^[], 3^[])]]
+1.1.1.5.1  [-m1_subset_1(2^[], k5_numbers)]   (1)  
+1.1.1.5.2  [-m1_matrix_1(3^[], k1_numbers, 2^[], 2^[])]   (2)  
+1.1.1.5.3  [-v1_matrixr2(3^[], 2^[])]   (3)  
+1.1.1.5.4  [-m1_matrix_1(k7_matrixr2(2^[], 3^[]), k1_numbers, 2^[], 2^[])]   (lemmata:1.1.1)  
+1.1.1.5.5  [- (k7_matrixr2(2^[], 3^[])=k7_matrixr2(2^[], 3^[])), 2^[]=2^[], 3^[]=3^[]]   (15)  substitution:[[_G7855, _G7990, _G7922, _G8059], [2^[], 3^[], 2^[], 3^[]]]
+1.1.1.5.5.1  [- (2^[]=2^[])]   (16)  substitution:[[_G2993], [2^[]]]
+1.1.1.5.5.2  [- (3^[]=3^[])]   (16)  substitution:[[_G2993], [3^[]]]
+1.1.1.6  [- (k1_matrixr2(2^[], k7_matrixr2(2^[], 3^[]), 3^[])=k4_matrixr2(2^[])), m1_subset_1(2^[], k5_numbers), m1_matrix_1(3^[], k1_numbers, 2^[], 2^[]), v1_matrixr2(3^[], 2^[]), m1_matrix_1(k7_matrixr2(2^[], 3^[]), k1_numbers, 2^[], 2^[]), k7_matrixr2(2^[], 3^[])=k7_matrixr2(2^[], 3^[])]   (10)  substitution:[[_G9597, _G10047, _G9753], [2^[], k7_matrixr2(2^[], 3^[]), 3^[]]]
+1.1.1.6.1  [-m1_subset_1(2^[], k5_numbers)]   (1)  
+1.1.1.6.2  [-m1_matrix_1(3^[], k1_numbers, 2^[], 2^[])]   (2)  
+1.1.1.6.3  [-v1_matrixr2(3^[], 2^[])]   (3)  
+1.1.1.6.4  [-m1_matrix_1(k7_matrixr2(2^[], 3^[]), k1_numbers, 2^[], 2^[])]   (lemmata:1.1.1)  
+1.1.1.6.5  [- (k7_matrixr2(2^[], 3^[])=k7_matrixr2(2^[], 3^[])), 2^[]=2^[], 3^[]=3^[]]   (15)  substitution:[[_G7855, _G7990, _G7922, _G8059], [2^[], 3^[], 2^[], 3^[]]]
+1.1.1.6.5.1  [- (2^[]=2^[])]   (16)  substitution:[[_G2993], [2^[]]]
+1.1.1.6.5.2  [- (3^[]=3^[])]   (16)  substitution:[[_G2993], [3^[]]]
+------------------------------------------------------
+End of proof for t84_matrixr2

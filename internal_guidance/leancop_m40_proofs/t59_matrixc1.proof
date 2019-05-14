@@ -1,0 +1,63 @@
+
+t59_matrixc1 is a Theorem
+Start of proof for t59_matrixc1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m2_finseq_1(1^[], k2_numbers)]
+ (2)  [-m2_finseq_1(2^[], k2_numbers)]
+ (3)  [-v1_matrix_1(3^[])]
+ (4)  [-m2_finseq_1(3^[], k3_finseq_2(k2_numbers))]
+ (5)  [- (k3_finseq_1(1^[])=k1_matrix_1(3^[]))]
+ (6)  [- (k3_finseq_1(2^[])=k3_finseq_1(3^[]))]
+ (7)  [r1_xxreal_0(k1_matrix_1(3^[]), k6_numbers)]
+ (8)  [r1_xxreal_0(k3_finseq_1(3^[]), k6_numbers)]
+ (9)  [k8_complsp2(k6_matrixc1(3^[], 1^[]), 2^[])=k8_complsp2(1^[], k6_matrixc1(k2_matrixc1(3^[]), 2^[]))]
+ (10)  [m2_finseq_1(_G11220, k2_numbers), m2_finseq_1(_G11397, k2_numbers), m2_finseq_1(_G11569, k3_finseq_2(k2_numbers)), v1_matrix_1(_G11569), k3_finseq_1(_G11397)=k3_finseq_1(_G11569), k3_finseq_1(_G11220)=k1_matrix_1(_G11569), -r1_xxreal_0(k3_finseq_1(_G11220), k6_numbers), -r1_xxreal_0(k3_finseq_1(_G11397), k6_numbers), - (k8_complsp2(_G11220, k6_matrixc1(k2_matrixc1(_G11569), _G11397))=k12_matrixc1(k13_matrixc1(_G11220, _G11397, k4_matrix_1(k2_numbers, _G11569))))]
+ (11)  [m2_finseq_1(_G12561, k2_numbers), m2_finseq_1(_G12736, k2_numbers), m2_finseq_1(_G12906, k3_finseq_2(k2_numbers)), v1_matrix_1(_G12906), k3_finseq_1(_G12561)=k1_matrix_1(_G12906), k3_finseq_1(_G12736)=k3_finseq_1(_G12906), -r1_xxreal_0(k3_finseq_1(_G12561), k6_numbers), -r1_xxreal_0(k3_finseq_1(_G12736), k6_numbers), - (k8_complsp2(k6_matrixc1(_G12906, _G12561), _G12736)=k12_matrixc1(k13_matrixc1(_G12561, _G12736, k4_matrix_1(k2_numbers, _G12906))))]
+ (12)  [- (_G4523=_G4523)]
+ (13)  [_G4622=_G4667, - (_G4667=_G4622)]
+ (14)  [- (_G4855=_G4968), _G4855=_G4911, _G4911=_G4968]
+ (15)  [-v1_matrix_1(_G5354), _G5305=_G5354, v1_matrix_1(_G5305)]
+ (16)  [-m2_finseq_1(_G5650, _G5787), m2_finseq_1(_G5583, _G5718), _G5583=_G5650, _G5718=_G5787]
+ (17)  [-r1_xxreal_0(_G6238, _G6375), r1_xxreal_0(_G6171, _G6306), _G6171=_G6238, _G6306=_G6375]
+ (18)  [_G6831=_G6880, - (k12_matrixc1(_G6831)=k12_matrixc1(_G6880))]
+ (19)  [- (k13_matrixc1(_G7109, _G7280, _G7455)=k13_matrixc1(_G7194, _G7367, _G7544)), _G7109=_G7194, _G7280=_G7367, _G7455=_G7544]
+ (20)  [- (k4_matrix_1(_G8137, _G8272)=k4_matrix_1(_G8204, _G8341)), _G8137=_G8204, _G8272=_G8341]
+ (21)  [_G8734=_G8783, - (k3_finseq_2(_G8734)=k3_finseq_2(_G8783))]
+ (22)  [_G9012=_G9061, - (k1_matrix_1(_G9012)=k1_matrix_1(_G9061))]
+ (23)  [_G9290=_G9339, - (k3_finseq_1(_G9290)=k3_finseq_1(_G9339))]
+ (24)  [- (k8_complsp2(_G9568, _G9703)=k8_complsp2(_G9635, _G9772)), _G9568=_G9635, _G9703=_G9772]
+ (25)  [_G10753=_G10802, - (k2_matrixc1(_G10753)=k2_matrixc1(_G10802))]
+ (26)  [- (k6_matrixc1(_G10165, _G10300)=k6_matrixc1(_G10232, _G10369)), _G10165=_G10232, _G10300=_G10369]
+
+Connection Proof:
+-----------------
+1  [r1_xxreal_0(k1_matrix_1(3^[]), k6_numbers)]   (7)  
+1.1  [-r1_xxreal_0(k1_matrix_1(3^[]), k6_numbers), r1_xxreal_0(k3_finseq_1(1^[]), k6_numbers), k3_finseq_1(1^[])=k1_matrix_1(3^[]), k6_numbers=k6_numbers]   (17)  substitution:[[_G6238, _G6375, _G6171, _G6306], [k1_matrix_1(3^[]), k6_numbers, k3_finseq_1(1^[]), k6_numbers]]
+1.1.1  [-r1_xxreal_0(k3_finseq_1(1^[]), k6_numbers), m2_finseq_1(1^[], k2_numbers), m2_finseq_1(2^[], k2_numbers), m2_finseq_1(3^[], k3_finseq_2(k2_numbers)), v1_matrix_1(3^[]), k3_finseq_1(2^[])=k3_finseq_1(3^[]), k3_finseq_1(1^[])=k1_matrix_1(3^[]), -r1_xxreal_0(k3_finseq_1(2^[]), k6_numbers), - (k8_complsp2(1^[], k6_matrixc1(k2_matrixc1(3^[]), 2^[]))=k12_matrixc1(k13_matrixc1(1^[], 2^[], k4_matrix_1(k2_numbers, 3^[]))))]   (10)  substitution:[[_G11220, _G11397, _G11569], [1^[], 2^[], 3^[]]]
+1.1.1.1  [-m2_finseq_1(1^[], k2_numbers)]   (1)  
+1.1.1.2  [-m2_finseq_1(2^[], k2_numbers)]   (2)  
+1.1.1.3  [-m2_finseq_1(3^[], k3_finseq_2(k2_numbers))]   (4)  
+1.1.1.4  [-v1_matrix_1(3^[])]   (3)  
+1.1.1.5  [- (k3_finseq_1(2^[])=k3_finseq_1(3^[]))]   (6)  
+1.1.1.6  [- (k3_finseq_1(1^[])=k1_matrix_1(3^[]))]   (5)  
+1.1.1.7  [r1_xxreal_0(k3_finseq_1(2^[]), k6_numbers), -r1_xxreal_0(k3_finseq_1(3^[]), k6_numbers), k3_finseq_1(2^[])=k3_finseq_1(3^[]), k6_numbers=k6_numbers]   (17)  substitution:[[_G6171, _G6306, _G6238, _G6375], [k3_finseq_1(2^[]), k6_numbers, k3_finseq_1(3^[]), k6_numbers]]
+1.1.1.7.1  [r1_xxreal_0(k3_finseq_1(3^[]), k6_numbers)]   (8)  
+1.1.1.7.2  [- (k3_finseq_1(2^[])=k3_finseq_1(3^[]))]   (6)  
+1.1.1.7.3  [- (k6_numbers=k6_numbers)]   (12)  substitution:[[_G4523], [k6_numbers]]
+1.1.1.8  [k8_complsp2(1^[], k6_matrixc1(k2_matrixc1(3^[]), 2^[]))=k12_matrixc1(k13_matrixc1(1^[], 2^[], k4_matrix_1(k2_numbers, 3^[]))), - (k12_matrixc1(k13_matrixc1(1^[], 2^[], k4_matrix_1(k2_numbers, 3^[])))=k8_complsp2(1^[], k6_matrixc1(k2_matrixc1(3^[]), 2^[])))]   (13)  substitution:[[_G4622, _G4667], [k8_complsp2(1^[], k6_matrixc1(k2_matrixc1(3^[]), 2^[])), k12_matrixc1(k13_matrixc1(1^[], 2^[], k4_matrix_1(k2_numbers, 3^[])))]]
+1.1.1.8.1  [k12_matrixc1(k13_matrixc1(1^[], 2^[], k4_matrix_1(k2_numbers, 3^[])))=k8_complsp2(1^[], k6_matrixc1(k2_matrixc1(3^[]), 2^[])), - (k8_complsp2(k6_matrixc1(3^[], 1^[]), 2^[])=k8_complsp2(1^[], k6_matrixc1(k2_matrixc1(3^[]), 2^[]))), k8_complsp2(k6_matrixc1(3^[], 1^[]), 2^[])=k12_matrixc1(k13_matrixc1(1^[], 2^[], k4_matrix_1(k2_numbers, 3^[])))]   (14)  substitution:[[_G4911, _G4968, _G4855], [k12_matrixc1(k13_matrixc1(1^[], 2^[], k4_matrix_1(k2_numbers, 3^[]))), k8_complsp2(1^[], k6_matrixc1(k2_matrixc1(3^[]), 2^[])), k8_complsp2(k6_matrixc1(3^[], 1^[]), 2^[])]]
+1.1.1.8.1.1  [k8_complsp2(k6_matrixc1(3^[], 1^[]), 2^[])=k8_complsp2(1^[], k6_matrixc1(k2_matrixc1(3^[]), 2^[]))]   (9)  
+1.1.1.8.1.2  [- (k8_complsp2(k6_matrixc1(3^[], 1^[]), 2^[])=k12_matrixc1(k13_matrixc1(1^[], 2^[], k4_matrix_1(k2_numbers, 3^[])))), m2_finseq_1(1^[], k2_numbers), m2_finseq_1(2^[], k2_numbers), m2_finseq_1(3^[], k3_finseq_2(k2_numbers)), v1_matrix_1(3^[]), k3_finseq_1(1^[])=k1_matrix_1(3^[]), k3_finseq_1(2^[])=k3_finseq_1(3^[]), -r1_xxreal_0(k3_finseq_1(1^[]), k6_numbers), -r1_xxreal_0(k3_finseq_1(2^[]), k6_numbers)]   (11)  substitution:[[_G12906, _G12561, _G12736], [3^[], 1^[], 2^[]]]
+1.1.1.8.1.2.1  [-m2_finseq_1(1^[], k2_numbers)]   (1)  
+1.1.1.8.1.2.2  [-m2_finseq_1(2^[], k2_numbers)]   (2)  
+1.1.1.8.1.2.3  [-m2_finseq_1(3^[], k3_finseq_2(k2_numbers))]   (4)  
+1.1.1.8.1.2.4  [-v1_matrix_1(3^[])]   (3)  
+1.1.1.8.1.2.5  [- (k3_finseq_1(1^[])=k1_matrix_1(3^[]))]   (5)  
+1.1.1.8.1.2.6  [- (k3_finseq_1(2^[])=k3_finseq_1(3^[]))]   (6)  
+1.1.1.8.1.2.7  [r1_xxreal_0(k3_finseq_1(1^[]), k6_numbers)]   (reduction:1.1)  
+1.1.1.8.1.2.8  [r1_xxreal_0(k3_finseq_1(2^[]), k6_numbers)]   (lemmata:1.1.1)  
+1.1.2  [- (k3_finseq_1(1^[])=k1_matrix_1(3^[]))]   (5)  
+1.1.3  [- (k6_numbers=k6_numbers)]   (12)  substitution:[[_G4523], [k6_numbers]]
+------------------------------------------------------
+End of proof for t59_matrixc1

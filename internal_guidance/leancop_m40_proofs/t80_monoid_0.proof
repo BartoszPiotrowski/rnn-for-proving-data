@@ -1,0 +1,32 @@
+
+t80_monoid_0 is a Theorem
+Start of proof for t80_monoid_0
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-l1_struct_0(2^[])]
+ (2)  [-v4_funct_1(u1_struct_0(2^[]))]
+ (3)  [v1_monoid_0(2^[])]
+ (4)  [v4_funct_1(_G801), m1_subset_1(_G887, _G801), -v1_relat_1(_G887)]
+ (5)  [v4_funct_1(_G801), m1_subset_1(_G887, _G801), -v1_funct_1(_G887)]
+ (6)  [l1_struct_0(_G1128), v1_monoid_0(_G1128), m1_subset_1(_G1253, u1_struct_0(_G1128)), -v1_relat_1(_G1253)]
+ (7)  [l1_struct_0(_G1128), v1_monoid_0(_G1128), m1_subset_1(_G1253, u1_struct_0(_G1128)), -v1_funct_1(_G1253)]
+ (8)  [l1_struct_0(_G1128), -v1_monoid_0(_G1128), -m1_subset_1(1^[_G1128], u1_struct_0(_G1128))]
+ (9)  [l1_struct_0(_G1128), -v1_monoid_0(_G1128), v1_relat_1(1^[_G1128]), v1_funct_1(1^[_G1128])]
+
+Connection Proof:
+-----------------
+1  [v1_monoid_0(2^[])]   (3)  
+1.1  [-v1_monoid_0(2^[]), l1_struct_0(2^[]), v1_relat_1(1^[2^[]]), v1_funct_1(1^[2^[]])]   (9)  substitution:[[_G1128], [2^[]]]
+1.1.1  [-l1_struct_0(2^[])]   (1)  
+1.1.2  [-v1_relat_1(1^[2^[]]), v4_funct_1(u1_struct_0(2^[])), m1_subset_1(1^[2^[]], u1_struct_0(2^[]))]   (4)  substitution:[[_G887, _G801], [1^[2^[]], u1_struct_0(2^[])]]
+1.1.2.1  [-v4_funct_1(u1_struct_0(2^[]))]   (2)  
+1.1.2.2  [-m1_subset_1(1^[2^[]], u1_struct_0(2^[])), l1_struct_0(2^[]), -v1_monoid_0(2^[])]   (8)  substitution:[[_G1128], [2^[]]]
+1.1.2.2.1  [-l1_struct_0(2^[])]   (1)  
+1.1.2.2.2  [v1_monoid_0(2^[])]   (3)  
+1.1.3  [-v1_funct_1(1^[2^[]]), v4_funct_1(u1_struct_0(2^[])), m1_subset_1(1^[2^[]], u1_struct_0(2^[]))]   (5)  substitution:[[_G887, _G801], [1^[2^[]], u1_struct_0(2^[])]]
+1.1.3.1  [-v4_funct_1(u1_struct_0(2^[]))]   (2)  
+1.1.3.2  [-m1_subset_1(1^[2^[]], u1_struct_0(2^[])), l1_struct_0(2^[]), -v1_monoid_0(2^[])]   (8)  substitution:[[_G1128], [2^[]]]
+1.1.3.2.1  [-l1_struct_0(2^[])]   (1)  
+1.1.3.2.2  [v1_monoid_0(2^[])]   (3)  
+------------------------------------------------------
+End of proof for t80_monoid_0

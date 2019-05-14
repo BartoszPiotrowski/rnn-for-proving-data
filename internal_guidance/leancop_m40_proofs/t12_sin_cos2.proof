@@ -1,0 +1,33 @@
+
+t12_sin_cos2 is a Theorem
+Start of proof for t12_sin_cos2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xreal_0(1^[])]
+ (2)  [-v1_xreal_0(2^[])]
+ (3)  [k1_seq_1(k24_sin_cos, k9_binop_2(1^[], 2^[]))=k8_real_1(k1_seq_1(k24_sin_cos, 1^[]), k1_seq_1(k24_sin_cos, 2^[]))]
+ (4)  [v1_xreal_0(_G5451), v1_xreal_0(_G5547), - (k1_seq_1(k24_sin_cos, k2_xcmplx_0(_G5451, _G5547))=k8_real_1(k1_seq_1(k24_sin_cos, _G5451), k1_seq_1(k24_sin_cos, _G5547)))]
+ (5)  [- (k9_binop_2(_G5940, _G5995)=k2_xcmplx_0(_G5940, _G5995)), v1_xreal_0(_G5940), v1_xreal_0(_G5995)]
+ (6)  [-v1_xreal_0(_G2738), _G2689=_G2738, v1_xreal_0(_G2689)]
+ (7)  [- (_G1916=_G1916)]
+ (8)  [_G2015=_G2060, - (_G2060=_G2015)]
+ (9)  [- (_G2248=_G2361), _G2248=_G2304, _G2304=_G2361]
+ (10)  [- (k2_xcmplx_0(_G2988, _G3123)=k2_xcmplx_0(_G3055, _G3192)), _G2988=_G3055, _G3123=_G3192]
+ (11)  [- (k9_binop_2(_G3585, _G3720)=k9_binop_2(_G3652, _G3789)), _G3585=_G3652, _G3720=_G3789]
+ (12)  [- (k8_real_1(_G4182, _G4317)=k8_real_1(_G4249, _G4386)), _G4182=_G4249, _G4317=_G4386]
+ (13)  [- (k1_seq_1(_G4770, _G4905)=k1_seq_1(_G4837, _G4974)), _G4770=_G4837, _G4905=_G4974]
+
+Connection Proof:
+-----------------
+1  [k1_seq_1(k24_sin_cos, k9_binop_2(1^[], 2^[]))=k8_real_1(k1_seq_1(k24_sin_cos, 1^[]), k1_seq_1(k24_sin_cos, 2^[]))]   (3)  
+1.1  [- (k1_seq_1(k24_sin_cos, k9_binop_2(1^[], 2^[]))=k8_real_1(k1_seq_1(k24_sin_cos, 1^[]), k1_seq_1(k24_sin_cos, 2^[]))), k1_seq_1(k24_sin_cos, k9_binop_2(1^[], 2^[]))=k1_seq_1(k24_sin_cos, k2_xcmplx_0(1^[], 2^[])), k1_seq_1(k24_sin_cos, k2_xcmplx_0(1^[], 2^[]))=k8_real_1(k1_seq_1(k24_sin_cos, 1^[]), k1_seq_1(k24_sin_cos, 2^[]))]   (9)  substitution:[[_G2248, _G2361, _G2304], [k1_seq_1(k24_sin_cos, k9_binop_2(1^[], 2^[])), k8_real_1(k1_seq_1(k24_sin_cos, 1^[]), k1_seq_1(k24_sin_cos, 2^[])), k1_seq_1(k24_sin_cos, k2_xcmplx_0(1^[], 2^[]))]]
+1.1.1  [- (k1_seq_1(k24_sin_cos, k9_binop_2(1^[], 2^[]))=k1_seq_1(k24_sin_cos, k2_xcmplx_0(1^[], 2^[]))), k24_sin_cos=k24_sin_cos, k9_binop_2(1^[], 2^[])=k2_xcmplx_0(1^[], 2^[])]   (13)  substitution:[[_G4770, _G4905, _G4837, _G4974], [k24_sin_cos, k9_binop_2(1^[], 2^[]), k24_sin_cos, k2_xcmplx_0(1^[], 2^[])]]
+1.1.1.1  [- (k24_sin_cos=k24_sin_cos)]   (7)  substitution:[[_G1916], [k24_sin_cos]]
+1.1.1.2  [- (k9_binop_2(1^[], 2^[])=k2_xcmplx_0(1^[], 2^[])), v1_xreal_0(1^[]), v1_xreal_0(2^[])]   (5)  substitution:[[_G5940, _G5995], [1^[], 2^[]]]
+1.1.1.2.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.1.2.2  [-v1_xreal_0(2^[])]   (2)  
+1.1.2  [- (k1_seq_1(k24_sin_cos, k2_xcmplx_0(1^[], 2^[]))=k8_real_1(k1_seq_1(k24_sin_cos, 1^[]), k1_seq_1(k24_sin_cos, 2^[]))), v1_xreal_0(1^[]), v1_xreal_0(2^[])]   (4)  substitution:[[_G5451, _G5547], [1^[], 2^[]]]
+1.1.2.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.2.2  [-v1_xreal_0(2^[])]   (2)  
+------------------------------------------------------
+End of proof for t12_sin_cos2

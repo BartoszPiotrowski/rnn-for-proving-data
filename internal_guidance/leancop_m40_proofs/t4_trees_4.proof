@@ -1,0 +1,30 @@
+
+t4_trees_4 is a Theorem
+Start of proof for t4_trees_4
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [- (k1_trees_4(1^[])=k1_trees_4(2^[]))]
+ (2)  [1^[]=2^[]]
+ (3)  [- (k9_xtuple_0(k1_trees_4(_G3493))=k2_trees_1(k6_numbers))]
+ (4)  [- (k1_funct_1(k1_trees_4(_G3493), k1_xboole_0)=_G3493)]
+ (5)  [- (_G1214=_G1214)]
+ (6)  [_G1313=_G1358, - (_G1358=_G1313)]
+ (7)  [- (_G1546=_G1659), _G1546=_G1602, _G1602=_G1659]
+ (8)  [_G1996=_G2045, - (k9_xtuple_0(_G1996)=k9_xtuple_0(_G2045))]
+ (9)  [_G2274=_G2323, - (k2_trees_1(_G2274)=k2_trees_1(_G2323))]
+ (10)  [_G3140=_G3189, - (k1_trees_4(_G3140)=k1_trees_4(_G3189))]
+ (11)  [- (k1_funct_1(_G2552, _G2687)=k1_funct_1(_G2619, _G2756)), _G2552=_G2619, _G2687=_G2756]
+
+Connection Proof:
+-----------------
+1  [1^[]=2^[]]   (2)  
+1.1  [- (1^[]=2^[]), 1^[]=k1_funct_1(k1_trees_4(1^[]), k1_xboole_0), k1_funct_1(k1_trees_4(1^[]), k1_xboole_0)=2^[]]   (7)  substitution:[[_G1546, _G1659, _G1602], [1^[], 2^[], k1_funct_1(k1_trees_4(1^[]), k1_xboole_0)]]
+1.1.1  [- (1^[]=k1_funct_1(k1_trees_4(1^[]), k1_xboole_0)), k1_funct_1(k1_trees_4(1^[]), k1_xboole_0)=1^[]]   (6)  substitution:[[_G1358, _G1313], [1^[], k1_funct_1(k1_trees_4(1^[]), k1_xboole_0)]]
+1.1.1.1  [- (k1_funct_1(k1_trees_4(1^[]), k1_xboole_0)=1^[])]   (4)  substitution:[[_G3493], [1^[]]]
+1.1.2  [- (k1_funct_1(k1_trees_4(1^[]), k1_xboole_0)=2^[]), k1_funct_1(k1_trees_4(1^[]), k1_xboole_0)=k1_funct_1(k1_trees_4(2^[]), k1_xboole_0), k1_funct_1(k1_trees_4(2^[]), k1_xboole_0)=2^[]]   (7)  substitution:[[_G1546, _G1659, _G1602], [k1_funct_1(k1_trees_4(1^[]), k1_xboole_0), 2^[], k1_funct_1(k1_trees_4(2^[]), k1_xboole_0)]]
+1.1.2.1  [- (k1_funct_1(k1_trees_4(1^[]), k1_xboole_0)=k1_funct_1(k1_trees_4(2^[]), k1_xboole_0)), k1_trees_4(1^[])=k1_trees_4(2^[]), k1_xboole_0=k1_xboole_0]   (11)  substitution:[[_G2552, _G2687, _G2619, _G2756], [k1_trees_4(1^[]), k1_xboole_0, k1_trees_4(2^[]), k1_xboole_0]]
+1.1.2.1.1  [- (k1_trees_4(1^[])=k1_trees_4(2^[]))]   (1)  
+1.1.2.1.2  [- (k1_xboole_0=k1_xboole_0)]   (5)  substitution:[[_G1214], [k1_xboole_0]]
+1.1.2.2  [- (k1_funct_1(k1_trees_4(2^[]), k1_xboole_0)=2^[])]   (4)  substitution:[[_G3493], [2^[]]]
+------------------------------------------------------
+End of proof for t4_trees_4

@@ -1,0 +1,57 @@
+
+t15_matrixr1 is a Theorem
+Start of proof for t15_matrixr1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m2_finseq_1(1^[], k1_numbers)]
+ (2)  [-m2_finseq_1(2^[], k1_numbers)]
+ (3)  [- (k3_finseq_1(1^[])=k3_finseq_1(2^[]))]
+ (4)  [1^[]=k4_rvsum_1(k8_rvsum_1(1^[], 2^[]), 2^[])]
+ (5)  [m2_finseq_1(_G7065, k1_numbers), - (k4_rvsum_1(_G7065, k6_rvsum_1(_G7065))=k5_euclid(k3_finseq_1(_G7065)))]
+ (6)  [m2_finseq_1(_G7065, k1_numbers), - (k8_rvsum_1(_G7065, _G7065)=k5_euclid(k3_finseq_1(_G7065)))]
+ (7)  [m2_finseq_1(_G7487, k1_numbers), - (k8_rvsum_1(_G7487, k5_euclid(k3_finseq_1(_G7487)))=_G7487)]
+ (8)  [m2_finseq_1(_G6115, k1_numbers), m2_finseq_1(_G6266, k1_numbers), m2_finseq_1(_G6412, k1_numbers), - (k8_rvsum_1(_G6115, k8_rvsum_1(_G6266, _G6412))=k4_rvsum_1(k8_rvsum_1(_G6115, _G6266), _G6412)), k3_finseq_1(_G6115)=k3_finseq_1(_G6266), k3_finseq_1(_G6266)=k3_finseq_1(_G6412)]
+ (9)  [-m2_finseq_1(_G3440, _G3577), m2_finseq_1(_G3373, _G3508), _G3373=_G3440, _G3508=_G3577]
+ (10)  [- (_G2600=_G2600)]
+ (11)  [_G2699=_G2744, - (_G2744=_G2699)]
+ (12)  [- (_G2932=_G3045), _G2932=_G2988, _G2988=_G3045]
+ (13)  [_G3991=_G4040, - (k6_rvsum_1(_G3991)=k6_rvsum_1(_G4040))]
+ (14)  [_G4269=_G4318, - (k5_euclid(_G4269)=k5_euclid(_G4318))]
+ (15)  [_G4547=_G4596, - (k3_finseq_1(_G4547)=k3_finseq_1(_G4596))]
+ (16)  [- (k4_rvsum_1(_G4825, _G4960)=k4_rvsum_1(_G4892, _G5029)), _G4825=_G4892, _G4960=_G5029]
+ (17)  [- (k8_rvsum_1(_G5413, _G5548)=k8_rvsum_1(_G5480, _G5617)), _G5413=_G5480, _G5548=_G5617]
+
+Connection Proof:
+-----------------
+1  [1^[]=k4_rvsum_1(k8_rvsum_1(1^[], 2^[]), 2^[])]   (4)  
+1.1  [- (1^[]=k4_rvsum_1(k8_rvsum_1(1^[], 2^[]), 2^[])), 1^[]=k8_rvsum_1(1^[], k5_euclid(k3_finseq_1(2^[]))), k8_rvsum_1(1^[], k5_euclid(k3_finseq_1(2^[])))=k4_rvsum_1(k8_rvsum_1(1^[], 2^[]), 2^[])]   (12)  substitution:[[_G2932, _G3045, _G2988], [1^[], k4_rvsum_1(k8_rvsum_1(1^[], 2^[]), 2^[]), k8_rvsum_1(1^[], k5_euclid(k3_finseq_1(2^[])))]]
+1.1.1  [- (1^[]=k8_rvsum_1(1^[], k5_euclid(k3_finseq_1(2^[])))), 1^[]=k8_rvsum_1(1^[], k5_euclid(k3_finseq_1(1^[]))), k8_rvsum_1(1^[], k5_euclid(k3_finseq_1(1^[])))=k8_rvsum_1(1^[], k5_euclid(k3_finseq_1(2^[])))]   (12)  substitution:[[_G2932, _G3045, _G2988], [1^[], k8_rvsum_1(1^[], k5_euclid(k3_finseq_1(2^[]))), k8_rvsum_1(1^[], k5_euclid(k3_finseq_1(1^[])))]]
+1.1.1.1  [- (1^[]=k8_rvsum_1(1^[], k5_euclid(k3_finseq_1(1^[])))), k8_rvsum_1(1^[], k5_euclid(k3_finseq_1(1^[])))=1^[]]   (11)  substitution:[[_G2744, _G2699], [1^[], k8_rvsum_1(1^[], k5_euclid(k3_finseq_1(1^[])))]]
+1.1.1.1.1  [- (k8_rvsum_1(1^[], k5_euclid(k3_finseq_1(1^[])))=1^[]), m2_finseq_1(1^[], k1_numbers)]   (7)  substitution:[[_G7487], [1^[]]]
+1.1.1.1.1.1  [-m2_finseq_1(1^[], k1_numbers)]   (1)  
+1.1.1.2  [- (k8_rvsum_1(1^[], k5_euclid(k3_finseq_1(1^[])))=k8_rvsum_1(1^[], k5_euclid(k3_finseq_1(2^[])))), k8_rvsum_1(1^[], k5_euclid(k3_finseq_1(1^[])))=k8_rvsum_1(1^[], k5_euclid(k3_finseq_1(2^[]))), k8_rvsum_1(1^[], k5_euclid(k3_finseq_1(2^[])))=k8_rvsum_1(1^[], k5_euclid(k3_finseq_1(2^[])))]   (12)  substitution:[[_G2932, _G3045, _G2988], [k8_rvsum_1(1^[], k5_euclid(k3_finseq_1(1^[]))), k8_rvsum_1(1^[], k5_euclid(k3_finseq_1(2^[]))), k8_rvsum_1(1^[], k5_euclid(k3_finseq_1(2^[])))]]
+1.1.1.2.1  [- (k8_rvsum_1(1^[], k5_euclid(k3_finseq_1(1^[])))=k8_rvsum_1(1^[], k5_euclid(k3_finseq_1(2^[])))), 1^[]=1^[], k5_euclid(k3_finseq_1(1^[]))=k5_euclid(k3_finseq_1(2^[]))]   (17)  substitution:[[_G5413, _G5548, _G5480, _G5617], [1^[], k5_euclid(k3_finseq_1(1^[])), 1^[], k5_euclid(k3_finseq_1(2^[]))]]
+1.1.1.2.1.1  [- (1^[]=1^[])]   (10)  substitution:[[_G2600], [1^[]]]
+1.1.1.2.1.2  [- (k5_euclid(k3_finseq_1(1^[]))=k5_euclid(k3_finseq_1(2^[]))), k3_finseq_1(1^[])=k3_finseq_1(2^[])]   (14)  substitution:[[_G4269, _G4318], [k3_finseq_1(1^[]), k3_finseq_1(2^[])]]
+1.1.1.2.1.2.1  [- (k3_finseq_1(1^[])=k3_finseq_1(2^[]))]   (3)  
+1.1.1.2.2  [- (k8_rvsum_1(1^[], k5_euclid(k3_finseq_1(2^[])))=k8_rvsum_1(1^[], k5_euclid(k3_finseq_1(2^[]))))]   (10)  substitution:[[_G2600], [k8_rvsum_1(1^[], k5_euclid(k3_finseq_1(2^[])))]]
+1.1.2  [- (k8_rvsum_1(1^[], k5_euclid(k3_finseq_1(2^[])))=k4_rvsum_1(k8_rvsum_1(1^[], 2^[]), 2^[])), k8_rvsum_1(1^[], k5_euclid(k3_finseq_1(2^[])))=k8_rvsum_1(k8_rvsum_1(1^[], k5_euclid(k3_finseq_1(1^[]))), k8_rvsum_1(2^[], 2^[])), k8_rvsum_1(k8_rvsum_1(1^[], k5_euclid(k3_finseq_1(1^[]))), k8_rvsum_1(2^[], 2^[]))=k4_rvsum_1(k8_rvsum_1(1^[], 2^[]), 2^[])]   (12)  substitution:[[_G2932, _G3045, _G2988], [k8_rvsum_1(1^[], k5_euclid(k3_finseq_1(2^[]))), k4_rvsum_1(k8_rvsum_1(1^[], 2^[]), 2^[]), k8_rvsum_1(k8_rvsum_1(1^[], k5_euclid(k3_finseq_1(1^[]))), k8_rvsum_1(2^[], 2^[]))]]
+1.1.2.1  [- (k8_rvsum_1(1^[], k5_euclid(k3_finseq_1(2^[])))=k8_rvsum_1(k8_rvsum_1(1^[], k5_euclid(k3_finseq_1(1^[]))), k8_rvsum_1(2^[], 2^[]))), k8_rvsum_1(k8_rvsum_1(1^[], k5_euclid(k3_finseq_1(1^[]))), k8_rvsum_1(2^[], 2^[]))=k8_rvsum_1(1^[], k5_euclid(k3_finseq_1(2^[])))]   (11)  substitution:[[_G2744, _G2699], [k8_rvsum_1(1^[], k5_euclid(k3_finseq_1(2^[]))), k8_rvsum_1(k8_rvsum_1(1^[], k5_euclid(k3_finseq_1(1^[]))), k8_rvsum_1(2^[], 2^[]))]]
+1.1.2.1.1  [- (k8_rvsum_1(k8_rvsum_1(1^[], k5_euclid(k3_finseq_1(1^[]))), k8_rvsum_1(2^[], 2^[]))=k8_rvsum_1(1^[], k5_euclid(k3_finseq_1(2^[])))), k8_rvsum_1(1^[], k5_euclid(k3_finseq_1(1^[])))=1^[], k8_rvsum_1(2^[], 2^[])=k5_euclid(k3_finseq_1(2^[]))]   (17)  substitution:[[_G5413, _G5548, _G5480, _G5617], [k8_rvsum_1(1^[], k5_euclid(k3_finseq_1(1^[]))), k8_rvsum_1(2^[], 2^[]), 1^[], k5_euclid(k3_finseq_1(2^[]))]]
+1.1.2.1.1.1  [- (k8_rvsum_1(1^[], k5_euclid(k3_finseq_1(1^[])))=1^[]), m2_finseq_1(1^[], k1_numbers)]   (7)  substitution:[[_G7487], [1^[]]]
+1.1.2.1.1.1.1  [-m2_finseq_1(1^[], k1_numbers)]   (1)  
+1.1.2.1.1.2  [- (k8_rvsum_1(2^[], 2^[])=k5_euclid(k3_finseq_1(2^[]))), m2_finseq_1(2^[], k1_numbers)]   (6)  substitution:[[_G7065], [2^[]]]
+1.1.2.1.1.2.1  [-m2_finseq_1(2^[], k1_numbers)]   (2)  
+1.1.2.2  [- (k8_rvsum_1(k8_rvsum_1(1^[], k5_euclid(k3_finseq_1(1^[]))), k8_rvsum_1(2^[], 2^[]))=k4_rvsum_1(k8_rvsum_1(1^[], 2^[]), 2^[])), k8_rvsum_1(k8_rvsum_1(1^[], k5_euclid(k3_finseq_1(1^[]))), k8_rvsum_1(2^[], 2^[]))=k8_rvsum_1(1^[], k8_rvsum_1(2^[], 2^[])), k8_rvsum_1(1^[], k8_rvsum_1(2^[], 2^[]))=k4_rvsum_1(k8_rvsum_1(1^[], 2^[]), 2^[])]   (12)  substitution:[[_G2932, _G3045, _G2988], [k8_rvsum_1(k8_rvsum_1(1^[], k5_euclid(k3_finseq_1(1^[]))), k8_rvsum_1(2^[], 2^[])), k4_rvsum_1(k8_rvsum_1(1^[], 2^[]), 2^[]), k8_rvsum_1(1^[], k8_rvsum_1(2^[], 2^[]))]]
+1.1.2.2.1  [- (k8_rvsum_1(k8_rvsum_1(1^[], k5_euclid(k3_finseq_1(1^[]))), k8_rvsum_1(2^[], 2^[]))=k8_rvsum_1(1^[], k8_rvsum_1(2^[], 2^[]))), k8_rvsum_1(1^[], k5_euclid(k3_finseq_1(1^[])))=1^[], k8_rvsum_1(2^[], 2^[])=k8_rvsum_1(2^[], 2^[])]   (17)  substitution:[[_G5413, _G5548, _G5480, _G5617], [k8_rvsum_1(1^[], k5_euclid(k3_finseq_1(1^[]))), k8_rvsum_1(2^[], 2^[]), 1^[], k8_rvsum_1(2^[], 2^[])]]
+1.1.2.2.1.1  [- (k8_rvsum_1(1^[], k5_euclid(k3_finseq_1(1^[])))=1^[]), m2_finseq_1(1^[], k1_numbers)]   (7)  substitution:[[_G7487], [1^[]]]
+1.1.2.2.1.1.1  [-m2_finseq_1(1^[], k1_numbers)]   (1)  
+1.1.2.2.1.2  [- (k8_rvsum_1(2^[], 2^[])=k8_rvsum_1(2^[], 2^[]))]   (10)  substitution:[[_G2600], [k8_rvsum_1(2^[], 2^[])]]
+1.1.2.2.2  [- (k8_rvsum_1(1^[], k8_rvsum_1(2^[], 2^[]))=k4_rvsum_1(k8_rvsum_1(1^[], 2^[]), 2^[])), m2_finseq_1(1^[], k1_numbers), m2_finseq_1(2^[], k1_numbers), m2_finseq_1(2^[], k1_numbers), k3_finseq_1(1^[])=k3_finseq_1(2^[]), k3_finseq_1(2^[])=k3_finseq_1(2^[])]   (8)  substitution:[[_G6115, _G6266, _G6412], [1^[], 2^[], 2^[]]]
+1.1.2.2.2.1  [-m2_finseq_1(1^[], k1_numbers)]   (1)  
+1.1.2.2.2.2  [-m2_finseq_1(2^[], k1_numbers)]   (2)  
+1.1.2.2.2.3  [-m2_finseq_1(2^[], k1_numbers)]   (2)  
+1.1.2.2.2.4  [- (k3_finseq_1(1^[])=k3_finseq_1(2^[]))]   (3)  
+1.1.2.2.2.5  [- (k3_finseq_1(2^[])=k3_finseq_1(2^[]))]   (10)  substitution:[[_G2600], [k3_finseq_1(2^[])]]
+------------------------------------------------------
+End of proof for t15_matrixr1

@@ -1,0 +1,21 @@
+
+t117_finseq_3 is a Theorem
+Start of proof for t117_finseq_3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m2_finseq_1(1^[], k4_numbers)]
+ (2)  [m2_finseq_1(1^[], k1_numbers)]
+ (3)  [-r1_tarski(k4_numbers, k1_numbers)]
+ (4)  [m1_subset_1(_G868, k1_zfmisc_1(_G810)), m2_finseq_1(_G998, _G868), -m2_finseq_1(_G998, _G810)]
+ (5)  [m1_subset_1(_G1221, k1_zfmisc_1(_G1268)), -r1_tarski(_G1221, _G1268)]
+ (6)  [-m1_subset_1(_G1221, k1_zfmisc_1(_G1268)), r1_tarski(_G1221, _G1268)]
+
+Connection Proof:
+-----------------
+1  [m2_finseq_1(1^[], k1_numbers)]   (2)  
+1.1  [-m2_finseq_1(1^[], k1_numbers), m1_subset_1(k4_numbers, k1_zfmisc_1(k1_numbers)), m2_finseq_1(1^[], k4_numbers)]   (4)  substitution:[[_G998, _G810, _G868], [1^[], k1_numbers, k4_numbers]]
+1.1.1  [-m1_subset_1(k4_numbers, k1_zfmisc_1(k1_numbers)), r1_tarski(k4_numbers, k1_numbers)]   (6)  substitution:[[_G1221, _G1268], [k4_numbers, k1_numbers]]
+1.1.1.1  [-r1_tarski(k4_numbers, k1_numbers)]   (3)  
+1.1.2  [-m2_finseq_1(1^[], k4_numbers)]   (1)  
+------------------------------------------------------
+End of proof for t117_finseq_3

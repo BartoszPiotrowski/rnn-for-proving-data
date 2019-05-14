@@ -1,0 +1,49 @@
+
+t46_borsuk_5 is a Theorem
+Start of proof for t46_borsuk_5
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xreal_0(2^[])]
+ (2)  [- (k3_rcomp_1(2^[], k1_xxreal_0)=k1_numbers)]
+ (3)  [v1_xreal_0(_G6300), -v1_xxreal_0(_G6300)]
+ (4)  [v1_xreal_0(_G6431), -r2_hidden(_G6431, k1_numbers)]
+ (5)  [-v1_xreal_0(_G6431), r2_hidden(_G6431, k1_numbers)]
+ (6)  [- (k1_xxreal_0=k1_numbers)]
+ (7)  [-v1_xxreal_0(k1_xxreal_0)]
+ (8)  [- (k3_rcomp_1(_G6677, _G6732)=k2_xxreal_1(_G6677, _G6732)), v1_xreal_0(_G6677), v1_xxreal_0(_G6732)]
+ (9)  [v1_xreal_0(_G7444), -v1_xreal_0(1^[_G7444])]
+ (10)  [v1_xreal_0(_G7444), r1_xxreal_0(_G7444, 1^[_G7444])]
+ (11)  [v1_xxreal_0(_G7045), v1_xreal_0(_G7135), r2_hidden(_G7135, k2_xxreal_1(_G7045, k1_xxreal_0)), -r1_xxreal_0(_G7045, _G7135)]
+ (12)  [v1_xxreal_0(_G7045), v1_xreal_0(_G7135), -r2_hidden(_G7135, k2_xxreal_1(_G7045, k1_xxreal_0)), r1_xxreal_0(_G7045, _G7135)]
+ (13)  [- (k2_xxreal_1(_G5073, _G5208)=k2_xxreal_1(_G5140, _G5277)), _G5073=_G5140, _G5208=_G5277]
+ (14)  [- (k3_rcomp_1(_G5661, _G5796)=k3_rcomp_1(_G5728, _G5865)), _G5661=_G5728, _G5796=_G5865]
+ (15)  [- (_G2466=_G2466)]
+ (16)  [_G2565=_G2610, - (_G2610=_G2565)]
+ (17)  [- (_G2798=_G2911), _G2798=_G2854, _G2854=_G2911]
+ (18)  [-v1_xxreal_0(_G3297), _G3248=_G3297, v1_xxreal_0(_G3248)]
+ (19)  [-r2_hidden(_G3593, _G3730), r2_hidden(_G3526, _G3661), _G3526=_G3593, _G3661=_G3730]
+ (20)  [-v1_xreal_0(_G4760), _G4711=_G4760, v1_xreal_0(_G4711)]
+ (21)  [-r1_xxreal_0(_G4190, _G4327), r1_xxreal_0(_G4123, _G4258), _G4123=_G4190, _G4258=_G4327]
+
+Connection Proof:
+-----------------
+1  [v1_xreal_0(2^[]), r1_xxreal_0(2^[], 1^[2^[]])]   (10)  substitution:[[_G7444], [2^[]]]
+1.1  [-v1_xreal_0(2^[])]   (1)  
+1.2  [-r1_xxreal_0(2^[], 1^[2^[]]), v1_xxreal_0(2^[]), v1_xreal_0(1^[2^[]]), r2_hidden(1^[2^[]], k2_xxreal_1(2^[], k1_xxreal_0))]   (11)  substitution:[[_G7045, _G7135], [2^[], 1^[2^[]]]]
+1.2.1  [-v1_xxreal_0(2^[]), v1_xreal_0(2^[])]   (3)  substitution:[[_G6300], [2^[]]]
+1.2.1.1  [-v1_xreal_0(2^[])]   (1)  
+1.2.2  [-v1_xreal_0(1^[2^[]]), v1_xreal_0(2^[])]   (9)  substitution:[[_G7444], [2^[]]]
+1.2.2.1  [-v1_xreal_0(2^[])]   (1)  
+1.2.3  [-r2_hidden(1^[2^[]], k2_xxreal_1(2^[], k1_xxreal_0)), r2_hidden(1^[2^[]], k1_numbers), 1^[2^[]]=1^[2^[]], k1_numbers=k2_xxreal_1(2^[], k1_xxreal_0)]   (19)  substitution:[[_G3593, _G3730, _G3526, _G3661], [1^[2^[]], k2_xxreal_1(2^[], k1_xxreal_0), 1^[2^[]], k1_numbers]]
+1.2.3.1  [-r2_hidden(1^[2^[]], k1_numbers), v1_xreal_0(1^[2^[]])]   (4)  substitution:[[_G6431], [1^[2^[]]]]
+1.2.3.1.1  [-v1_xreal_0(1^[2^[]]), v1_xreal_0(2^[])]   (9)  substitution:[[_G7444], [2^[]]]
+1.2.3.1.1.1  [-v1_xreal_0(2^[])]   (1)  
+1.2.3.2  [- (1^[2^[]]=1^[2^[]])]   (15)  substitution:[[_G2466], [1^[2^[]]]]
+1.2.3.3  [- (k1_numbers=k2_xxreal_1(2^[], k1_xxreal_0)), k1_numbers=k3_rcomp_1(2^[], k1_xxreal_0), k3_rcomp_1(2^[], k1_xxreal_0)=k2_xxreal_1(2^[], k1_xxreal_0)]   (17)  substitution:[[_G2798, _G2911, _G2854], [k1_numbers, k2_xxreal_1(2^[], k1_xxreal_0), k3_rcomp_1(2^[], k1_xxreal_0)]]
+1.2.3.3.1  [- (k1_numbers=k3_rcomp_1(2^[], k1_xxreal_0)), k3_rcomp_1(2^[], k1_xxreal_0)=k1_numbers]   (16)  substitution:[[_G2610, _G2565], [k1_numbers, k3_rcomp_1(2^[], k1_xxreal_0)]]
+1.2.3.3.1.1  [- (k3_rcomp_1(2^[], k1_xxreal_0)=k1_numbers)]   (2)  
+1.2.3.3.2  [- (k3_rcomp_1(2^[], k1_xxreal_0)=k2_xxreal_1(2^[], k1_xxreal_0)), v1_xreal_0(2^[]), v1_xxreal_0(k1_xxreal_0)]   (8)  substitution:[[_G6677, _G6732], [2^[], k1_xxreal_0]]
+1.2.3.3.2.1  [-v1_xreal_0(2^[])]   (1)  
+1.2.3.3.2.2  [-v1_xxreal_0(k1_xxreal_0)]   (7)  
+------------------------------------------------------
+End of proof for t46_borsuk_5

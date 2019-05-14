@@ -1,0 +1,45 @@
+
+t9_abcmiz_1 is a Theorem
+Start of proof for t9_abcmiz_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-r1_tarski(6^[], 7^[])]
+ (2)  [r1_tarski(k1_abcmiz_1(6^[]), k1_abcmiz_1(7^[]))]
+ (3)  [-r1_tarski(_G6283, _G6396), r1_tarski(_G6283, _G6339), r1_tarski(_G6339, _G6396)]
+ (4)  [- (_G5095=k1_abcmiz_1(_G4981)), r1_tarski(_G4981, _G5095), -r2_hidden(k4_tarski(3^[_G5095, _G4981], 4^[_G5095, _G4981]), _G5095), r1_tarski(_G5095, 5^[_G5095, _G4981])]
+ (5)  [- (_G5095=k1_abcmiz_1(_G4981)), r1_tarski(_G4981, _G5095), -r2_hidden(k4_tarski(3^[_G5095, _G4981], 4^[_G5095, _G4981]), _G5095), -r1_tarski(_G4981, 5^[_G5095, _G4981])]
+ (6)  [- (_G5095=k1_abcmiz_1(_G4981)), r1_tarski(_G4981, _G5095), -r2_hidden(k4_tarski(3^[_G5095, _G4981], 4^[_G5095, _G4981]), _G5095), r2_hidden(k4_tarski(_G7671, _G7676), 5^[_G5095, _G4981]), -r1_tarski(_G7671, 5^[_G5095, _G4981])]
+ (7)  [- (_G5095=k1_abcmiz_1(_G4981)), r1_tarski(_G4981, _G5095), r1_tarski(3^[_G5095, _G4981], _G5095), r1_tarski(_G5095, 5^[_G5095, _G4981])]
+ (8)  [- (_G5095=k1_abcmiz_1(_G4981)), r1_tarski(_G4981, _G5095), r1_tarski(3^[_G5095, _G4981], _G5095), -r1_tarski(_G4981, 5^[_G5095, _G4981])]
+ (9)  [- (_G5095=k1_abcmiz_1(_G4981)), r1_tarski(_G4981, _G5095), r1_tarski(3^[_G5095, _G4981], _G5095), r2_hidden(k4_tarski(_G7671, _G7676), 5^[_G5095, _G4981]), -r1_tarski(_G7671, 5^[_G5095, _G4981])]
+ (10)  [_G5095=k1_abcmiz_1(_G4981), -r1_tarski(_G4981, _G5095)]
+ (11)  [_G5095=k1_abcmiz_1(_G4981), r2_hidden(k4_tarski(_G5347, _G5407), _G5095), -r1_tarski(_G5347, _G5095)]
+ (12)  [_G5095=k1_abcmiz_1(_G4981), -r1_tarski(_G5095, _G5649), r1_tarski(_G4981, _G5649), -r2_hidden(k4_tarski(1^[_G5649, _G5095, _G4981], 2^[_G5649, _G5095, _G4981]), _G5649)]
+ (13)  [_G5095=k1_abcmiz_1(_G4981), -r1_tarski(_G5095, _G5649), r1_tarski(_G4981, _G5649), r1_tarski(1^[_G5649, _G5095, _G4981], _G5649)]
+ (14)  [_G4661=_G4710, - (k1_abcmiz_1(_G4661)=k1_abcmiz_1(_G4710))]
+ (15)  [- (k4_tarski(_G4073, _G4208)=k4_tarski(_G4140, _G4277)), _G4073=_G4140, _G4208=_G4277]
+ (16)  [- (_G2064=_G2064)]
+ (17)  [_G2163=_G2208, - (_G2208=_G2163)]
+ (18)  [- (_G2396=_G2509), _G2396=_G2452, _G2452=_G2509]
+ (19)  [-r2_hidden(_G2913, _G3050), r2_hidden(_G2846, _G2981), _G2846=_G2913, _G2981=_G3050]
+ (20)  [-r1_tarski(_G3501, _G3638), r1_tarski(_G3434, _G3569), _G3434=_G3501, _G3569=_G3638]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k1_abcmiz_1(6^[]), k1_abcmiz_1(7^[]))]   (2)  
+1.1  [-r1_tarski(k1_abcmiz_1(6^[]), k1_abcmiz_1(7^[])), k1_abcmiz_1(6^[])=k1_abcmiz_1(6^[]), r1_tarski(6^[], k1_abcmiz_1(7^[])), -r2_hidden(k4_tarski(1^[k1_abcmiz_1(7^[]), k1_abcmiz_1(6^[]), 6^[]], 2^[k1_abcmiz_1(7^[]), k1_abcmiz_1(6^[]), 6^[]]), k1_abcmiz_1(7^[]))]   (12)  substitution:[[_G5095, _G5649, _G4981], [k1_abcmiz_1(6^[]), k1_abcmiz_1(7^[]), 6^[]]]
+1.1.1  [- (k1_abcmiz_1(6^[])=k1_abcmiz_1(6^[])), 6^[]=6^[]]   (14)  substitution:[[_G4661, _G4710], [6^[], 6^[]]]
+1.1.1.1  [- (6^[]=6^[])]   (16)  substitution:[[_G2064], [6^[]]]
+1.1.2  [-r1_tarski(6^[], k1_abcmiz_1(7^[])), r1_tarski(6^[], 7^[]), r1_tarski(7^[], k1_abcmiz_1(7^[]))]   (3)  substitution:[[_G6283, _G6396, _G6339], [6^[], k1_abcmiz_1(7^[]), 7^[]]]
+1.1.2.1  [-r1_tarski(6^[], 7^[])]   (1)  
+1.1.2.2  [-r1_tarski(7^[], k1_abcmiz_1(7^[])), k1_abcmiz_1(7^[])=k1_abcmiz_1(7^[])]   (10)  substitution:[[_G4981, _G5095], [7^[], k1_abcmiz_1(7^[])]]
+1.1.2.2.1  [- (k1_abcmiz_1(7^[])=k1_abcmiz_1(7^[]))]   (16)  substitution:[[_G2064], [k1_abcmiz_1(7^[])]]
+1.1.3  [r2_hidden(k4_tarski(1^[k1_abcmiz_1(7^[]), k1_abcmiz_1(6^[]), 6^[]], 2^[k1_abcmiz_1(7^[]), k1_abcmiz_1(6^[]), 6^[]]), k1_abcmiz_1(7^[])), k1_abcmiz_1(7^[])=k1_abcmiz_1(7^[]), -r1_tarski(1^[k1_abcmiz_1(7^[]), k1_abcmiz_1(6^[]), 6^[]], k1_abcmiz_1(7^[]))]   (11)  substitution:[[_G5347, _G5407, _G5095, _G4981], [1^[k1_abcmiz_1(7^[]), k1_abcmiz_1(6^[]), 6^[]], 2^[k1_abcmiz_1(7^[]), k1_abcmiz_1(6^[]), 6^[]], k1_abcmiz_1(7^[]), 7^[]]]
+1.1.3.1  [- (k1_abcmiz_1(7^[])=k1_abcmiz_1(7^[])), 7^[]=7^[]]   (14)  substitution:[[_G4661, _G4710], [7^[], 7^[]]]
+1.1.3.1.1  [- (7^[]=7^[])]   (16)  substitution:[[_G2064], [7^[]]]
+1.1.3.2  [r1_tarski(1^[k1_abcmiz_1(7^[]), k1_abcmiz_1(6^[]), 6^[]], k1_abcmiz_1(7^[])), k1_abcmiz_1(6^[])=k1_abcmiz_1(6^[]), -r1_tarski(k1_abcmiz_1(6^[]), k1_abcmiz_1(7^[])), r1_tarski(6^[], k1_abcmiz_1(7^[]))]   (13)  substitution:[[_G5649, _G5095, _G4981], [k1_abcmiz_1(7^[]), k1_abcmiz_1(6^[]), 6^[]]]
+1.1.3.2.1  [- (k1_abcmiz_1(6^[])=k1_abcmiz_1(6^[]))]   (16)  substitution:[[_G2064], [k1_abcmiz_1(6^[])]]
+1.1.3.2.2  [r1_tarski(k1_abcmiz_1(6^[]), k1_abcmiz_1(7^[]))]   (2)  
+1.1.3.2.3  [-r1_tarski(6^[], k1_abcmiz_1(7^[]))]   (lemmata:1.1)  
+------------------------------------------------------
+End of proof for t9_abcmiz_1

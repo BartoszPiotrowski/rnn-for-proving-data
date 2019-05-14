@@ -1,0 +1,44 @@
+
+t352_xxreal_1 is a Theorem
+Start of proof for t352_xxreal_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xxreal_0(1^[])]
+ (2)  [-v1_xreal_0(2^[])]
+ (3)  [-r1_xxreal_0(1^[], 2^[])]
+ (4)  [k6_subset_1(k3_xxreal_1(k2_xxreal_0, 2^[]), k2_xxreal_1(1^[], 2^[]))=k2_xboole_0(k4_xxreal_1(k2_xxreal_0, 1^[]), k1_tarski(2^[]))]
+ (5)  [v1_xreal_0(_G8946), -v1_xxreal_0(_G8946)]
+ (6)  [- (k2_xboole_0(_G9077, _G9122)=k2_xboole_0(_G9122, _G9077))]
+ (7)  [v1_xxreal_0(_G9319), - (k1_xxreal_1(_G9319, _G9319)=k1_tarski(_G9319))]
+ (8)  [v1_xxreal_0(_G9525), v1_xxreal_0(_G9640), v1_xreal_0(_G9751), r1_xxreal_0(_G9525, _G9640), - (k6_subset_1(k3_xxreal_1(k2_xxreal_0, _G9640), k2_xxreal_1(_G9525, _G9751))=k2_xboole_0(k4_xxreal_1(k2_xxreal_0, _G9525), k1_xxreal_1(_G9751, _G9640)))]
+ (9)  [- (_G2959=_G2959)]
+ (10)  [_G3058=_G3103, - (_G3103=_G3058)]
+ (11)  [- (_G3291=_G3404), _G3291=_G3347, _G3347=_G3404]
+ (12)  [-v1_xxreal_0(_G3790), _G3741=_G3790, v1_xxreal_0(_G3741)]
+ (13)  [-v1_xreal_0(_G4068), _G4019=_G4068, v1_xreal_0(_G4019)]
+ (14)  [-r1_xxreal_0(_G4355, _G4492), r1_xxreal_0(_G4288, _G4423), _G4288=_G4355, _G4423=_G4492]
+ (15)  [- (k1_xxreal_1(_G4948, _G5083)=k1_xxreal_1(_G5015, _G5152)), _G4948=_G5015, _G5083=_G5152]
+ (16)  [- (k6_subset_1(_G5545, _G5680)=k6_subset_1(_G5612, _G5749)), _G5545=_G5612, _G5680=_G5749]
+ (17)  [- (k3_xxreal_1(_G6142, _G6277)=k3_xxreal_1(_G6209, _G6346)), _G6142=_G6209, _G6277=_G6346]
+ (18)  [- (k2_xxreal_1(_G6739, _G6874)=k2_xxreal_1(_G6806, _G6943)), _G6739=_G6806, _G6874=_G6943]
+ (19)  [- (k2_xboole_0(_G7336, _G7471)=k2_xboole_0(_G7403, _G7540)), _G7336=_G7403, _G7471=_G7540]
+ (20)  [_G8521=_G8570, - (k1_tarski(_G8521)=k1_tarski(_G8570))]
+ (21)  [- (k4_xxreal_1(_G7933, _G8068)=k4_xxreal_1(_G8000, _G8137)), _G7933=_G8000, _G8068=_G8137]
+
+Connection Proof:
+-----------------
+1  [k6_subset_1(k3_xxreal_1(k2_xxreal_0, 2^[]), k2_xxreal_1(1^[], 2^[]))=k2_xboole_0(k4_xxreal_1(k2_xxreal_0, 1^[]), k1_tarski(2^[]))]   (4)  
+1.1  [- (k6_subset_1(k3_xxreal_1(k2_xxreal_0, 2^[]), k2_xxreal_1(1^[], 2^[]))=k2_xboole_0(k4_xxreal_1(k2_xxreal_0, 1^[]), k1_tarski(2^[]))), k6_subset_1(k3_xxreal_1(k2_xxreal_0, 2^[]), k2_xxreal_1(1^[], 2^[]))=k2_xboole_0(k4_xxreal_1(k2_xxreal_0, 1^[]), k1_xxreal_1(2^[], 2^[])), k2_xboole_0(k4_xxreal_1(k2_xxreal_0, 1^[]), k1_xxreal_1(2^[], 2^[]))=k2_xboole_0(k4_xxreal_1(k2_xxreal_0, 1^[]), k1_tarski(2^[]))]   (11)  substitution:[[_G3291, _G3404, _G3347], [k6_subset_1(k3_xxreal_1(k2_xxreal_0, 2^[]), k2_xxreal_1(1^[], 2^[])), k2_xboole_0(k4_xxreal_1(k2_xxreal_0, 1^[]), k1_tarski(2^[])), k2_xboole_0(k4_xxreal_1(k2_xxreal_0, 1^[]), k1_xxreal_1(2^[], 2^[]))]]
+1.1.1  [- (k6_subset_1(k3_xxreal_1(k2_xxreal_0, 2^[]), k2_xxreal_1(1^[], 2^[]))=k2_xboole_0(k4_xxreal_1(k2_xxreal_0, 1^[]), k1_xxreal_1(2^[], 2^[]))), v1_xxreal_0(1^[]), v1_xxreal_0(2^[]), v1_xreal_0(2^[]), r1_xxreal_0(1^[], 2^[])]   (8)  substitution:[[_G9640, _G9525, _G9751], [2^[], 1^[], 2^[]]]
+1.1.1.1  [-v1_xxreal_0(1^[])]   (1)  
+1.1.1.2  [-v1_xxreal_0(2^[]), v1_xreal_0(2^[])]   (5)  substitution:[[_G8946], [2^[]]]
+1.1.1.2.1  [-v1_xreal_0(2^[])]   (2)  
+1.1.1.3  [-v1_xreal_0(2^[])]   (2)  
+1.1.1.4  [-r1_xxreal_0(1^[], 2^[])]   (3)  
+1.1.2  [- (k2_xboole_0(k4_xxreal_1(k2_xxreal_0, 1^[]), k1_xxreal_1(2^[], 2^[]))=k2_xboole_0(k4_xxreal_1(k2_xxreal_0, 1^[]), k1_tarski(2^[]))), k4_xxreal_1(k2_xxreal_0, 1^[])=k4_xxreal_1(k2_xxreal_0, 1^[]), k1_xxreal_1(2^[], 2^[])=k1_tarski(2^[])]   (19)  substitution:[[_G7336, _G7471, _G7403, _G7540], [k4_xxreal_1(k2_xxreal_0, 1^[]), k1_xxreal_1(2^[], 2^[]), k4_xxreal_1(k2_xxreal_0, 1^[]), k1_tarski(2^[])]]
+1.1.2.1  [- (k4_xxreal_1(k2_xxreal_0, 1^[])=k4_xxreal_1(k2_xxreal_0, 1^[]))]   (9)  substitution:[[_G2959], [k4_xxreal_1(k2_xxreal_0, 1^[])]]
+1.1.2.2  [- (k1_xxreal_1(2^[], 2^[])=k1_tarski(2^[])), v1_xxreal_0(2^[])]   (7)  substitution:[[_G9319], [2^[]]]
+1.1.2.2.1  [-v1_xxreal_0(2^[]), v1_xreal_0(2^[])]   (5)  substitution:[[_G8946], [2^[]]]
+1.1.2.2.1.1  [-v1_xreal_0(2^[])]   (2)  
+------------------------------------------------------
+End of proof for t352_xxreal_1

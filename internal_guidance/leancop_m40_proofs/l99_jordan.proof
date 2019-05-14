@@ -1,0 +1,48 @@
+
+l99_jordan is a Theorem
+Start of proof for l99_jordan
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k17_euclid(k19_euclid(k6_numbers, k1_real_1(np__3)))=k6_numbers]
+ (2)  [m1_subset_1(_G7744, k1_numbers), -v1_xreal_0(_G7744)]
+ (3)  [v1_xreal_0(_G7901), -v1_xcmplx_0(k4_xcmplx_0(_G7901))]
+ (4)  [v1_xreal_0(_G7901), -v1_xreal_0(k4_xcmplx_0(_G7901))]
+ (5)  [-m1_subset_1(k6_numbers, k1_numbers)]
+ (6)  [m1_subset_1(_G8179, k1_numbers), - (k1_real_1(_G8179)=k4_xcmplx_0(_G8179))]
+ (7)  [-v2_xxreal_0(np__3)]
+ (8)  [-m2_subset_1(np__3, k1_numbers, k5_numbers)]
+ (9)  [-m1_subset_1(np__3, k5_numbers)]
+ (10)  [-m1_subset_1(np__3, k1_numbers)]
+ (11)  [v1_xreal_0(_G8694), v1_xreal_0(_G8791), - (k17_euclid(k19_euclid(_G8694, _G8791))=_G8694)]
+ (12)  [v1_xreal_0(_G8694), v1_xreal_0(_G8791), - (k18_euclid(k19_euclid(_G8694, _G8791))=_G8791)]
+ (13)  [_G5939=_G5988, - (k4_xcmplx_0(_G5939)=k4_xcmplx_0(_G5988))]
+ (14)  [_G6217=_G6266, - (k18_euclid(_G6217)=k18_euclid(_G6266))]
+ (15)  [_G6495=_G6544, - (k17_euclid(_G6495)=k17_euclid(_G6544))]
+ (16)  [_G7361=_G7410, - (k1_real_1(_G7361)=k1_real_1(_G7410))]
+ (17)  [- (k19_euclid(_G6773, _G6908)=k19_euclid(_G6840, _G6977)), _G6773=_G6840, _G6908=_G6977]
+ (18)  [- (_G2602=_G2602)]
+ (19)  [_G2701=_G2746, - (_G2746=_G2701)]
+ (20)  [- (_G2934=_G3047), _G2934=_G2990, _G2990=_G3047]
+ (21)  [-v1_xcmplx_0(_G3433), _G3384=_G3433, v1_xcmplx_0(_G3384)]
+ (22)  [-v2_xxreal_0(_G3711), _G3662=_G3711, v2_xxreal_0(_G3662)]
+ (23)  [-m2_subset_1(_G4025, _G4198, _G4375), m2_subset_1(_G3940, _G4111, _G4286), _G3940=_G4025, _G4111=_G4198, _G4286=_G4375]
+ (24)  [-v1_xreal_0(_G5605), _G5556=_G5605, v1_xreal_0(_G5556)]
+ (25)  [-m1_subset_1(_G5035, _G5172), m1_subset_1(_G4968, _G5103), _G4968=_G5035, _G5103=_G5172]
+
+Connection Proof:
+-----------------
+1  [k17_euclid(k19_euclid(k6_numbers, k1_real_1(np__3)))=k6_numbers]   (1)  
+1.1  [- (k17_euclid(k19_euclid(k6_numbers, k1_real_1(np__3)))=k6_numbers), k17_euclid(k19_euclid(k6_numbers, k1_real_1(np__3)))=k17_euclid(k19_euclid(k6_numbers, k4_xcmplx_0(np__3))), k17_euclid(k19_euclid(k6_numbers, k4_xcmplx_0(np__3)))=k6_numbers]   (20)  substitution:[[_G2934, _G3047, _G2990], [k17_euclid(k19_euclid(k6_numbers, k1_real_1(np__3))), k6_numbers, k17_euclid(k19_euclid(k6_numbers, k4_xcmplx_0(np__3)))]]
+1.1.1  [- (k17_euclid(k19_euclid(k6_numbers, k1_real_1(np__3)))=k17_euclid(k19_euclid(k6_numbers, k4_xcmplx_0(np__3)))), k19_euclid(k6_numbers, k1_real_1(np__3))=k19_euclid(k6_numbers, k4_xcmplx_0(np__3))]   (15)  substitution:[[_G6495, _G6544], [k19_euclid(k6_numbers, k1_real_1(np__3)), k19_euclid(k6_numbers, k4_xcmplx_0(np__3))]]
+1.1.1.1  [- (k19_euclid(k6_numbers, k1_real_1(np__3))=k19_euclid(k6_numbers, k4_xcmplx_0(np__3))), k6_numbers=k6_numbers, k1_real_1(np__3)=k4_xcmplx_0(np__3)]   (17)  substitution:[[_G6773, _G6908, _G6840, _G6977], [k6_numbers, k1_real_1(np__3), k6_numbers, k4_xcmplx_0(np__3)]]
+1.1.1.1.1  [- (k6_numbers=k6_numbers)]   (18)  substitution:[[_G2602], [k6_numbers]]
+1.1.1.1.2  [- (k1_real_1(np__3)=k4_xcmplx_0(np__3)), m1_subset_1(np__3, k1_numbers)]   (6)  substitution:[[_G8179], [np__3]]
+1.1.1.1.2.1  [-m1_subset_1(np__3, k1_numbers)]   (10)  
+1.1.2  [- (k17_euclid(k19_euclid(k6_numbers, k4_xcmplx_0(np__3)))=k6_numbers), v1_xreal_0(k6_numbers), v1_xreal_0(k4_xcmplx_0(np__3))]   (11)  substitution:[[_G8694, _G8791], [k6_numbers, k4_xcmplx_0(np__3)]]
+1.1.2.1  [-v1_xreal_0(k6_numbers), m1_subset_1(k6_numbers, k1_numbers)]   (2)  substitution:[[_G7744], [k6_numbers]]
+1.1.2.1.1  [-m1_subset_1(k6_numbers, k1_numbers)]   (5)  
+1.1.2.2  [-v1_xreal_0(k4_xcmplx_0(np__3)), v1_xreal_0(np__3)]   (4)  substitution:[[_G7901], [np__3]]
+1.1.2.2.1  [-v1_xreal_0(np__3), m1_subset_1(np__3, k1_numbers)]   (2)  substitution:[[_G7744], [np__3]]
+1.1.2.2.1.1  [-m1_subset_1(np__3, k1_numbers)]   (10)  
+------------------------------------------------------
+End of proof for l99_jordan

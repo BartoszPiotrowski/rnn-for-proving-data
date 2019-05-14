@@ -1,0 +1,31 @@
+
+t42_twoscomp is a Theorem
+Start of proof for t42_twoscomp
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v1_xtuple_0(1^[])]
+ (2)  [v1_xtuple_0(2^[])]
+ (3)  [-v1_facirc_1(k2_msafree2(k40_twoscomp(1^[], 2^[])))]
+ (4)  [v1_facirc_1(k2_tarski(_G4745, _G4802)), -v1_xtuple_0(_G4745), -v1_xtuple_0(_G4802)]
+ (5)  [-v1_xtuple_0(_G5086), -v1_xtuple_0(_G5193), - (k2_msafree2(k40_twoscomp(_G5086, _G5193))=k2_tarski(_G5086, _G5193))]
+ (6)  [- (k2_tarski(_G3219, _G3354)=k2_tarski(_G3286, _G3423)), _G3219=_G3286, _G3354=_G3423]
+ (7)  [_G3816=_G3865, - (k2_msafree2(_G3816)=k2_msafree2(_G3865))]
+ (8)  [- (k40_twoscomp(_G4085, _G4220)=k40_twoscomp(_G4152, _G4289)), _G4085=_G4152, _G4220=_G4289]
+ (9)  [- (_G1848=_G1848)]
+ (10)  [_G1947=_G1992, - (_G1992=_G1947)]
+ (11)  [- (_G2180=_G2293), _G2180=_G2236, _G2236=_G2293]
+ (12)  [-v1_xtuple_0(_G2679), _G2630=_G2679, v1_xtuple_0(_G2630)]
+ (13)  [-v1_facirc_1(_G2948), _G2899=_G2948, v1_facirc_1(_G2899)]
+
+Connection Proof:
+-----------------
+1  [v1_xtuple_0(1^[])]   (1)  
+1.1  [-v1_xtuple_0(1^[]), v1_facirc_1(k2_tarski(1^[], 2^[])), -v1_xtuple_0(2^[])]   (4)  substitution:[[_G4745, _G4802], [1^[], 2^[]]]
+1.1.1  [-v1_facirc_1(k2_tarski(1^[], 2^[])), k2_msafree2(k40_twoscomp(1^[], 2^[]))=k2_tarski(1^[], 2^[]), v1_facirc_1(k2_msafree2(k40_twoscomp(1^[], 2^[])))]   (13)  substitution:[[_G2948, _G2899], [k2_tarski(1^[], 2^[]), k2_msafree2(k40_twoscomp(1^[], 2^[]))]]
+1.1.1.1  [- (k2_msafree2(k40_twoscomp(1^[], 2^[]))=k2_tarski(1^[], 2^[])), -v1_xtuple_0(1^[]), -v1_xtuple_0(2^[])]   (5)  substitution:[[_G5086, _G5193], [1^[], 2^[]]]
+1.1.1.1.1  [v1_xtuple_0(1^[])]   (1)  
+1.1.1.1.2  [v1_xtuple_0(2^[])]   (2)  
+1.1.1.2  [-v1_facirc_1(k2_msafree2(k40_twoscomp(1^[], 2^[])))]   (3)  
+1.1.2  [v1_xtuple_0(2^[])]   (2)  
+------------------------------------------------------
+End of proof for t42_twoscomp

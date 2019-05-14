@@ -1,0 +1,29 @@
+
+l4_topreal2 is a Theorem
+Start of proof for l4_topreal2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k17_euclid(k19_euclid(k6_numbers, k6_numbers))=k6_numbers]
+ (2)  [m1_subset_1(_G4518, k1_numbers), -v1_xreal_0(_G4518)]
+ (3)  [- (k1_xboolean=k6_numbers)]
+ (4)  [-m1_subset_1(k6_numbers, k1_numbers)]
+ (5)  [v1_xreal_0(_G4780), v1_xreal_0(_G4877), - (k17_euclid(k19_euclid(_G4780, _G4877))=_G4780)]
+ (6)  [v1_xreal_0(_G4780), v1_xreal_0(_G4877), - (k18_euclid(k19_euclid(_G4780, _G4877))=_G4877)]
+ (7)  [_G3311=_G3360, - (k18_euclid(_G3311)=k18_euclid(_G3360))]
+ (8)  [_G3589=_G3638, - (k17_euclid(_G3589)=k17_euclid(_G3638))]
+ (9)  [- (k19_euclid(_G3858, _G3993)=k19_euclid(_G3925, _G4062)), _G3858=_G3925, _G3993=_G4062]
+ (10)  [- (_G1621=_G1621)]
+ (11)  [_G1720=_G1765, - (_G1765=_G1720)]
+ (12)  [- (_G1953=_G2066), _G1953=_G2009, _G2009=_G2066]
+ (13)  [-v1_xreal_0(_G3040), _G2991=_G3040, v1_xreal_0(_G2991)]
+ (14)  [-m1_subset_1(_G2470, _G2607), m1_subset_1(_G2403, _G2538), _G2403=_G2470, _G2538=_G2607]
+
+Connection Proof:
+-----------------
+1  [k17_euclid(k19_euclid(k6_numbers, k6_numbers))=k6_numbers]   (1)  
+1.1  [- (k17_euclid(k19_euclid(k6_numbers, k6_numbers))=k6_numbers), v1_xreal_0(k6_numbers), v1_xreal_0(k6_numbers)]   (5)  substitution:[[_G4780, _G4877], [k6_numbers, k6_numbers]]
+1.1.1  [-v1_xreal_0(k6_numbers), m1_subset_1(k6_numbers, k1_numbers)]   (2)  substitution:[[_G4518], [k6_numbers]]
+1.1.1.1  [-m1_subset_1(k6_numbers, k1_numbers)]   (4)  
+1.1.2  [-v1_xreal_0(k6_numbers)]   (lemmata:1.1)  
+------------------------------------------------------
+End of proof for l4_topreal2

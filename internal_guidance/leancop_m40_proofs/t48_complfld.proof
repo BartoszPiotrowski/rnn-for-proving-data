@@ -1,0 +1,31 @@
+
+t48_complfld is a Theorem
+Start of proof for t48_complfld
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], u1_struct_0(k1_complfld))]
+ (2)  [- (k2_complfld(1^[])=k4_struct_0(k1_complfld))]
+ (3)  [1^[]=k4_struct_0(k1_complfld)]
+ (4)  [- (k2_complfld(k4_struct_0(k1_complfld))=k4_struct_0(k1_complfld))]
+ (5)  [m1_subset_1(_G3654, u1_struct_0(k1_complfld)), - (k2_complfld(k2_complfld(_G3654))=_G3654)]
+ (6)  [_G2766=_G2815, - (u1_struct_0(_G2766)=u1_struct_0(_G2815))]
+ (7)  [_G3044=_G3093, - (k2_complfld(_G3044)=k2_complfld(_G3093))]
+ (8)  [_G3313=_G3362, - (k4_struct_0(_G3313)=k4_struct_0(_G3362))]
+ (9)  [-m1_subset_1(_G2215, _G2352), m1_subset_1(_G2148, _G2283), _G2148=_G2215, _G2283=_G2352]
+ (10)  [- (_G1375=_G1375)]
+ (11)  [_G1474=_G1519, - (_G1519=_G1474)]
+ (12)  [- (_G1707=_G1820), _G1707=_G1763, _G1763=_G1820]
+
+Connection Proof:
+-----------------
+1  [1^[]=k4_struct_0(k1_complfld)]   (3)  
+1.1  [- (1^[]=k4_struct_0(k1_complfld)), 1^[]=k2_complfld(k2_complfld(1^[])), k2_complfld(k2_complfld(1^[]))=k4_struct_0(k1_complfld)]   (12)  substitution:[[_G1707, _G1820, _G1763], [1^[], k4_struct_0(k1_complfld), k2_complfld(k2_complfld(1^[]))]]
+1.1.1  [- (1^[]=k2_complfld(k2_complfld(1^[]))), k2_complfld(k2_complfld(1^[]))=1^[]]   (11)  substitution:[[_G1519, _G1474], [1^[], k2_complfld(k2_complfld(1^[]))]]
+1.1.1.1  [- (k2_complfld(k2_complfld(1^[]))=1^[]), m1_subset_1(1^[], u1_struct_0(k1_complfld))]   (5)  substitution:[[_G3654], [1^[]]]
+1.1.1.1.1  [-m1_subset_1(1^[], u1_struct_0(k1_complfld))]   (1)  
+1.1.2  [- (k2_complfld(k2_complfld(1^[]))=k4_struct_0(k1_complfld)), k2_complfld(k2_complfld(1^[]))=k2_complfld(k4_struct_0(k1_complfld)), k2_complfld(k4_struct_0(k1_complfld))=k4_struct_0(k1_complfld)]   (12)  substitution:[[_G1707, _G1820, _G1763], [k2_complfld(k2_complfld(1^[])), k4_struct_0(k1_complfld), k2_complfld(k4_struct_0(k1_complfld))]]
+1.1.2.1  [- (k2_complfld(k2_complfld(1^[]))=k2_complfld(k4_struct_0(k1_complfld))), k2_complfld(1^[])=k4_struct_0(k1_complfld)]   (7)  substitution:[[_G3044, _G3093], [k2_complfld(1^[]), k4_struct_0(k1_complfld)]]
+1.1.2.1.1  [- (k2_complfld(1^[])=k4_struct_0(k1_complfld))]   (2)  
+1.1.2.2  [- (k2_complfld(k4_struct_0(k1_complfld))=k4_struct_0(k1_complfld))]   (4)  
+------------------------------------------------------
+End of proof for t48_complfld

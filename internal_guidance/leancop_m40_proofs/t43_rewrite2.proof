@@ -1,0 +1,53 @@
+
+t43_rewrite2 is a Theorem
+Start of proof for t43_rewrite2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k8_afinsq_1(1^[]), k8_afinsq_1(1^[]))))]
+ (2)  [-m1_subset_1(3^[], k8_afinsq_1(1^[]))]
+ (3)  [-m1_subset_1(4^[], k8_afinsq_1(1^[]))]
+ (4)  [-r3_rewrite2(1^[], k7_rewrite2(1^[], 2^[]), 3^[], 4^[])]
+ (5)  [r3_rewrite2(1^[], 2^[], 3^[], 4^[])]
+ (6)  [m1_subset_1(_G11314, k1_zfmisc_1(k2_zfmisc_1(k8_afinsq_1(_G11222), k8_afinsq_1(_G11222)))), m1_subset_1(_G11545, k8_afinsq_1(_G11222)), m1_subset_1(_G11695, k8_afinsq_1(_G11222)), r3_rewrite2(_G11222, _G11314, _G11545, _G11695), -r1_rewrite1(k7_rewrite2(_G11222, _G11314), _G11545, _G11695)]
+ (7)  [m1_subset_1(_G11314, k1_zfmisc_1(k2_zfmisc_1(k8_afinsq_1(_G11222), k8_afinsq_1(_G11222)))), m1_subset_1(_G11545, k8_afinsq_1(_G11222)), m1_subset_1(_G11695, k8_afinsq_1(_G11222)), -r3_rewrite2(_G11222, _G11314, _G11545, _G11695), r1_rewrite1(k7_rewrite2(_G11222, _G11314), _G11545, _G11695)]
+ (8)  [m1_subset_1(_G12302, k1_zfmisc_1(k2_zfmisc_1(k8_afinsq_1(_G12236), k8_afinsq_1(_G12236)))), -m1_subset_1(k7_rewrite2(_G12236, _G12302), k1_zfmisc_1(k2_zfmisc_1(k8_afinsq_1(_G12236), k8_afinsq_1(_G12236))))]
+ (9)  [m1_subset_1(_G13618, k1_zfmisc_1(k2_zfmisc_1(k8_afinsq_1(_G13549), k8_afinsq_1(_G13549)))), -r2_relset_1(k8_afinsq_1(_G13549), k8_afinsq_1(_G13549), k7_rewrite2(_G13549, k7_rewrite2(_G13549, _G13618)), k7_rewrite2(_G13549, _G13618))]
+ (10)  [m1_subset_1(_G12961, k1_zfmisc_1(k2_zfmisc_1(_G12721, _G12800))), m1_subset_1(_G12880, k1_zfmisc_1(k2_zfmisc_1(_G12721, _G12800))), r2_relset_1(_G12721, _G12800, _G12880, _G12961), - (_G12880=_G12961)]
+ (11)  [m1_subset_1(_G12961, k1_zfmisc_1(k2_zfmisc_1(_G12721, _G12800))), m1_subset_1(_G12880, k1_zfmisc_1(k2_zfmisc_1(_G12721, _G12800))), -r2_relset_1(_G12721, _G12800, _G12880, _G12961), _G12880=_G12961]
+ (12)  [_G9397=_G9446, - (k1_zfmisc_1(_G9397)=k1_zfmisc_1(_G9446))]
+ (13)  [- (k2_zfmisc_1(_G9675, _G9810)=k2_zfmisc_1(_G9742, _G9879)), _G9675=_G9742, _G9810=_G9879]
+ (14)  [_G10272=_G10321, - (k8_afinsq_1(_G10272)=k8_afinsq_1(_G10321))]
+ (15)  [- (k7_rewrite2(_G10541, _G10676)=k7_rewrite2(_G10608, _G10745)), _G10541=_G10608, _G10676=_G10745]
+ (16)  [- (_G3845=_G3845)]
+ (17)  [_G3944=_G3989, - (_G3989=_G3944)]
+ (18)  [- (_G4177=_G4290), _G4177=_G4233, _G4233=_G4290]
+ (19)  [-r1_rewrite1(_G4712, _G4885, _G5062), r1_rewrite1(_G4627, _G4798, _G4973), _G4627=_G4712, _G4798=_G4885, _G4973=_G5062]
+ (20)  [-r2_relset_1(_G5758, _G5967, _G6180, _G6397), r2_relset_1(_G5655, _G5862, _G6073, _G6288), _G5655=_G5758, _G5862=_G5967, _G6073=_G6180, _G6288=_G6397]
+ (21)  [-m1_subset_1(_G7257, _G7394), m1_subset_1(_G7190, _G7325), _G7190=_G7257, _G7325=_G7394]
+ (22)  [-r3_rewrite2(_G7881, _G8090, _G8303, _G8520), r3_rewrite2(_G7778, _G7985, _G8196, _G8411), _G7778=_G7881, _G7985=_G8090, _G8196=_G8303, _G8411=_G8520]
+
+Connection Proof:
+-----------------
+1  [r3_rewrite2(1^[], 2^[], 3^[], 4^[])]   (5)  
+1.1  [-r3_rewrite2(1^[], 2^[], 3^[], 4^[]), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k8_afinsq_1(1^[]), k8_afinsq_1(1^[])))), m1_subset_1(3^[], k8_afinsq_1(1^[])), m1_subset_1(4^[], k8_afinsq_1(1^[])), r1_rewrite1(k7_rewrite2(1^[], 2^[]), 3^[], 4^[])]   (7)  substitution:[[_G11222, _G11314, _G11545, _G11695], [1^[], 2^[], 3^[], 4^[]]]
+1.1.1  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k8_afinsq_1(1^[]), k8_afinsq_1(1^[]))))]   (1)  
+1.1.2  [-m1_subset_1(3^[], k8_afinsq_1(1^[]))]   (2)  
+1.1.3  [-m1_subset_1(4^[], k8_afinsq_1(1^[]))]   (3)  
+1.1.4  [-r1_rewrite1(k7_rewrite2(1^[], 2^[]), 3^[], 4^[]), r1_rewrite1(k7_rewrite2(1^[], k7_rewrite2(1^[], 2^[])), 3^[], 4^[]), k7_rewrite2(1^[], k7_rewrite2(1^[], 2^[]))=k7_rewrite2(1^[], 2^[]), 3^[]=3^[], 4^[]=4^[]]   (19)  substitution:[[_G4712, _G4885, _G5062, _G4627, _G4798, _G4973], [k7_rewrite2(1^[], 2^[]), 3^[], 4^[], k7_rewrite2(1^[], k7_rewrite2(1^[], 2^[])), 3^[], 4^[]]]
+1.1.4.1  [-r1_rewrite1(k7_rewrite2(1^[], k7_rewrite2(1^[], 2^[])), 3^[], 4^[]), m1_subset_1(k7_rewrite2(1^[], 2^[]), k1_zfmisc_1(k2_zfmisc_1(k8_afinsq_1(1^[]), k8_afinsq_1(1^[])))), m1_subset_1(3^[], k8_afinsq_1(1^[])), m1_subset_1(4^[], k8_afinsq_1(1^[])), r3_rewrite2(1^[], k7_rewrite2(1^[], 2^[]), 3^[], 4^[])]   (6)  substitution:[[_G11222, _G11314, _G11545, _G11695], [1^[], k7_rewrite2(1^[], 2^[]), 3^[], 4^[]]]
+1.1.4.1.1  [-m1_subset_1(k7_rewrite2(1^[], 2^[]), k1_zfmisc_1(k2_zfmisc_1(k8_afinsq_1(1^[]), k8_afinsq_1(1^[])))), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k8_afinsq_1(1^[]), k8_afinsq_1(1^[]))))]   (8)  substitution:[[_G12236, _G12302], [1^[], 2^[]]]
+1.1.4.1.1.1  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k8_afinsq_1(1^[]), k8_afinsq_1(1^[]))))]   (1)  
+1.1.4.1.2  [-m1_subset_1(3^[], k8_afinsq_1(1^[]))]   (2)  
+1.1.4.1.3  [-m1_subset_1(4^[], k8_afinsq_1(1^[]))]   (3)  
+1.1.4.1.4  [-r3_rewrite2(1^[], k7_rewrite2(1^[], 2^[]), 3^[], 4^[])]   (4)  
+1.1.4.2  [- (k7_rewrite2(1^[], k7_rewrite2(1^[], 2^[]))=k7_rewrite2(1^[], 2^[])), m1_subset_1(k7_rewrite2(1^[], 2^[]), k1_zfmisc_1(k2_zfmisc_1(k8_afinsq_1(1^[]), k8_afinsq_1(1^[])))), m1_subset_1(k7_rewrite2(1^[], k7_rewrite2(1^[], 2^[])), k1_zfmisc_1(k2_zfmisc_1(k8_afinsq_1(1^[]), k8_afinsq_1(1^[])))), r2_relset_1(k8_afinsq_1(1^[]), k8_afinsq_1(1^[]), k7_rewrite2(1^[], k7_rewrite2(1^[], 2^[])), k7_rewrite2(1^[], 2^[]))]   (10)  substitution:[[_G12880, _G12961, _G12721, _G12800], [k7_rewrite2(1^[], k7_rewrite2(1^[], 2^[])), k7_rewrite2(1^[], 2^[]), k8_afinsq_1(1^[]), k8_afinsq_1(1^[])]]
+1.1.4.2.1  [-m1_subset_1(k7_rewrite2(1^[], 2^[]), k1_zfmisc_1(k2_zfmisc_1(k8_afinsq_1(1^[]), k8_afinsq_1(1^[])))), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k8_afinsq_1(1^[]), k8_afinsq_1(1^[]))))]   (8)  substitution:[[_G12236, _G12302], [1^[], 2^[]]]
+1.1.4.2.1.1  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k8_afinsq_1(1^[]), k8_afinsq_1(1^[]))))]   (1)  
+1.1.4.2.2  [-m1_subset_1(k7_rewrite2(1^[], k7_rewrite2(1^[], 2^[])), k1_zfmisc_1(k2_zfmisc_1(k8_afinsq_1(1^[]), k8_afinsq_1(1^[])))), m1_subset_1(k7_rewrite2(1^[], 2^[]), k1_zfmisc_1(k2_zfmisc_1(k8_afinsq_1(1^[]), k8_afinsq_1(1^[]))))]   (8)  substitution:[[_G12236, _G12302], [1^[], k7_rewrite2(1^[], 2^[])]]
+1.1.4.2.2.1  [-m1_subset_1(k7_rewrite2(1^[], 2^[]), k1_zfmisc_1(k2_zfmisc_1(k8_afinsq_1(1^[]), k8_afinsq_1(1^[]))))]   (lemmata:1.1.4.2)  
+1.1.4.2.3  [-r2_relset_1(k8_afinsq_1(1^[]), k8_afinsq_1(1^[]), k7_rewrite2(1^[], k7_rewrite2(1^[], 2^[])), k7_rewrite2(1^[], 2^[])), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k8_afinsq_1(1^[]), k8_afinsq_1(1^[]))))]   (9)  substitution:[[_G13549, _G13618], [1^[], 2^[]]]
+1.1.4.2.3.1  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k8_afinsq_1(1^[]), k8_afinsq_1(1^[]))))]   (1)  
+1.1.4.3  [- (3^[]=3^[])]   (16)  substitution:[[_G3845], [3^[]]]
+1.1.4.4  [- (4^[]=4^[])]   (16)  substitution:[[_G3845], [4^[]]]
+------------------------------------------------------
+End of proof for t43_rewrite2

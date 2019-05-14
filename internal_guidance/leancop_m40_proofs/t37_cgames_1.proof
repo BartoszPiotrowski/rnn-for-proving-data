@@ -1,0 +1,66 @@
+
+t37_cgames_1 is a Theorem
+Start of proof for t37_cgames_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k12_cgames_1(k1_xboole_0, k3_cgames_1)=k1_tarski(k3_cgames_1)]
+ (2)  [v1_xboole_0(_G7941), -v3_ordinal1(_G7941)]
+ (3)  [-m1_subset_1(k12_cgames_1(_G8072, _G8131), k1_zfmisc_1(k2_cgames_1(_G8072))), v3_ordinal1(_G8072), m1_subset_1(_G8131, k2_cgames_1(_G8072))]
+ (4)  [-m1_subset_1(k3_cgames_1, k2_cgames_1(k1_xboole_0))]
+ (5)  [-v1_xboole_0(k1_xboole_0)]
+ (6)  [-v2_cgames_1(k1_cgames_1)]
+ (7)  [v2_cgames_1(_G8611), v1_xboole_0(k10_cgames_1(_G8611))]
+ (8)  [- (k12_cgames_1(_G8774, _G8831)=k10_cgames_1(_G8831)), v3_ordinal1(_G8774), m1_subset_1(_G8831, k2_cgames_1(_G8774))]
+ (9)  [- (k3_cgames_1=k1_cgames_1)]
+ (10)  [- (k2_cgames_1(k1_xboole_0)=k1_tarski(k1_cgames_1))]
+ (11)  [m1_subset_1(_G9661, k1_zfmisc_1(_G9708)), -r1_tarski(_G9661, _G9708)]
+ (12)  [-m1_subset_1(_G9661, k1_zfmisc_1(_G9708)), r1_tarski(_G9661, _G9708)]
+ (13)  [-r1_tarski(_G9302, k1_tarski(_G9357)), _G9302=k1_xboole_0]
+ (14)  [-r1_tarski(_G9302, k1_tarski(_G9357)), _G9302=k1_tarski(_G9357)]
+ (15)  [r1_tarski(_G9302, k1_tarski(_G9357)), - (_G9302=k1_xboole_0), - (_G9302=k1_tarski(_G9357))]
+ (16)  [_G6136=_G6185, - (k10_cgames_1(_G6136)=k10_cgames_1(_G6185))]
+ (17)  [_G6414=_G6463, - (k2_cgames_1(_G6414)=k2_cgames_1(_G6463))]
+ (18)  [_G6692=_G6741, - (k1_zfmisc_1(_G6692)=k1_zfmisc_1(_G6741))]
+ (19)  [_G7558=_G7607, - (k1_tarski(_G7558)=k1_tarski(_G7607))]
+ (20)  [- (k12_cgames_1(_G6970, _G7105)=k12_cgames_1(_G7037, _G7174)), _G6970=_G7037, _G7105=_G7174]
+ (21)  [- (_G3230=_G3230)]
+ (22)  [_G3329=_G3374, - (_G3374=_G3329)]
+ (23)  [- (_G3562=_G3675), _G3562=_G3618, _G3618=_G3675]
+ (24)  [-v2_cgames_1(_G4061), _G4012=_G4061, v2_cgames_1(_G4012)]
+ (25)  [-v1_xboole_0(_G4339), _G4290=_G4339, v1_xboole_0(_G4290)]
+ (26)  [-v3_ordinal1(_G4617), _G4568=_G4617, v3_ordinal1(_G4568)]
+ (27)  [-m1_subset_1(_G4913, _G5050), m1_subset_1(_G4846, _G4981), _G4846=_G4913, _G4981=_G5050]
+ (28)  [-r1_tarski(_G5501, _G5638), r1_tarski(_G5434, _G5569), _G5434=_G5501, _G5569=_G5638]
+
+Connection Proof:
+-----------------
+1  [k12_cgames_1(k1_xboole_0, k3_cgames_1)=k1_tarski(k3_cgames_1)]   (1)  
+1.1  [- (k12_cgames_1(k1_xboole_0, k3_cgames_1)=k1_tarski(k3_cgames_1)), k12_cgames_1(k1_xboole_0, k3_cgames_1)=k10_cgames_1(k3_cgames_1), k10_cgames_1(k3_cgames_1)=k1_tarski(k3_cgames_1)]   (23)  substitution:[[_G3562, _G3675, _G3618], [k12_cgames_1(k1_xboole_0, k3_cgames_1), k1_tarski(k3_cgames_1), k10_cgames_1(k3_cgames_1)]]
+1.1.1  [- (k12_cgames_1(k1_xboole_0, k3_cgames_1)=k10_cgames_1(k3_cgames_1)), v3_ordinal1(k1_xboole_0), m1_subset_1(k3_cgames_1, k2_cgames_1(k1_xboole_0))]   (8)  substitution:[[_G8774, _G8831], [k1_xboole_0, k3_cgames_1]]
+1.1.1.1  [-v3_ordinal1(k1_xboole_0), v1_xboole_0(k1_xboole_0)]   (2)  substitution:[[_G7941], [k1_xboole_0]]
+1.1.1.1.1  [-v1_xboole_0(k1_xboole_0)]   (5)  
+1.1.1.2  [-m1_subset_1(k3_cgames_1, k2_cgames_1(k1_xboole_0))]   (4)  
+1.1.2  [- (k10_cgames_1(k3_cgames_1)=k1_tarski(k3_cgames_1)), r1_tarski(k10_cgames_1(k3_cgames_1), k1_tarski(k3_cgames_1)), - (k10_cgames_1(k3_cgames_1)=k1_xboole_0)]   (15)  substitution:[[_G9302, _G9357], [k10_cgames_1(k3_cgames_1), k3_cgames_1]]
+1.1.2.1  [-r1_tarski(k10_cgames_1(k3_cgames_1), k1_tarski(k3_cgames_1)), r1_tarski(k12_cgames_1(k1_xboole_0, k3_cgames_1), k2_cgames_1(k1_xboole_0)), k12_cgames_1(k1_xboole_0, k3_cgames_1)=k10_cgames_1(k3_cgames_1), k2_cgames_1(k1_xboole_0)=k1_tarski(k3_cgames_1)]   (28)  substitution:[[_G5501, _G5638, _G5434, _G5569], [k10_cgames_1(k3_cgames_1), k1_tarski(k3_cgames_1), k12_cgames_1(k1_xboole_0, k3_cgames_1), k2_cgames_1(k1_xboole_0)]]
+1.1.2.1.1  [-r1_tarski(k12_cgames_1(k1_xboole_0, k3_cgames_1), k2_cgames_1(k1_xboole_0)), m1_subset_1(k12_cgames_1(k1_xboole_0, k3_cgames_1), k1_zfmisc_1(k2_cgames_1(k1_xboole_0)))]   (11)  substitution:[[_G9661, _G9708], [k12_cgames_1(k1_xboole_0, k3_cgames_1), k2_cgames_1(k1_xboole_0)]]
+1.1.2.1.1.1  [-m1_subset_1(k12_cgames_1(k1_xboole_0, k3_cgames_1), k1_zfmisc_1(k2_cgames_1(k1_xboole_0))), v3_ordinal1(k1_xboole_0), m1_subset_1(k3_cgames_1, k2_cgames_1(k1_xboole_0))]   (3)  substitution:[[_G8072, _G8131], [k1_xboole_0, k3_cgames_1]]
+1.1.2.1.1.1.1  [-v3_ordinal1(k1_xboole_0), v1_xboole_0(k1_xboole_0)]   (2)  substitution:[[_G7941], [k1_xboole_0]]
+1.1.2.1.1.1.1.1  [-v1_xboole_0(k1_xboole_0)]   (5)  
+1.1.2.1.1.1.2  [-m1_subset_1(k3_cgames_1, k2_cgames_1(k1_xboole_0))]   (4)  
+1.1.2.1.2  [- (k12_cgames_1(k1_xboole_0, k3_cgames_1)=k10_cgames_1(k3_cgames_1))]   (lemmata:1.1)  
+1.1.2.1.3  [- (k2_cgames_1(k1_xboole_0)=k1_tarski(k3_cgames_1)), k1_tarski(k3_cgames_1)=k2_cgames_1(k1_xboole_0)]   (22)  substitution:[[_G3374, _G3329], [k2_cgames_1(k1_xboole_0), k1_tarski(k3_cgames_1)]]
+1.1.2.1.3.1  [- (k1_tarski(k3_cgames_1)=k2_cgames_1(k1_xboole_0)), k1_tarski(k3_cgames_1)=k1_tarski(k1_cgames_1), k1_tarski(k1_cgames_1)=k2_cgames_1(k1_xboole_0)]   (23)  substitution:[[_G3562, _G3675, _G3618], [k1_tarski(k3_cgames_1), k2_cgames_1(k1_xboole_0), k1_tarski(k1_cgames_1)]]
+1.1.2.1.3.1.1  [- (k1_tarski(k3_cgames_1)=k1_tarski(k1_cgames_1)), k3_cgames_1=k1_cgames_1]   (19)  substitution:[[_G7558, _G7607], [k3_cgames_1, k1_cgames_1]]
+1.1.2.1.3.1.1.1  [- (k3_cgames_1=k1_cgames_1)]   (9)  
+1.1.2.1.3.1.2  [- (k1_tarski(k1_cgames_1)=k2_cgames_1(k1_xboole_0)), k2_cgames_1(k1_xboole_0)=k1_tarski(k1_cgames_1)]   (22)  substitution:[[_G3374, _G3329], [k1_tarski(k1_cgames_1), k2_cgames_1(k1_xboole_0)]]
+1.1.2.1.3.1.2.1  [- (k2_cgames_1(k1_xboole_0)=k1_tarski(k1_cgames_1))]   (10)  
+1.1.2.2  [k10_cgames_1(k3_cgames_1)=k1_xboole_0, - (k1_xboole_0=k10_cgames_1(k3_cgames_1))]   (22)  substitution:[[_G3329, _G3374], [k10_cgames_1(k3_cgames_1), k1_xboole_0]]
+1.1.2.2.1  [k1_xboole_0=k10_cgames_1(k3_cgames_1), -v1_xboole_0(k10_cgames_1(k3_cgames_1)), v1_xboole_0(k1_xboole_0)]   (25)  substitution:[[_G4290, _G4339], [k1_xboole_0, k10_cgames_1(k3_cgames_1)]]
+1.1.2.2.1.1  [v1_xboole_0(k10_cgames_1(k3_cgames_1)), -v1_xboole_0(k10_cgames_1(k1_cgames_1)), k10_cgames_1(k3_cgames_1)=k10_cgames_1(k1_cgames_1)]   (25)  substitution:[[_G4290, _G4339], [k10_cgames_1(k3_cgames_1), k10_cgames_1(k1_cgames_1)]]
+1.1.2.2.1.1.1  [v1_xboole_0(k10_cgames_1(k1_cgames_1)), v2_cgames_1(k1_cgames_1)]   (7)  substitution:[[_G8611], [k1_cgames_1]]
+1.1.2.2.1.1.1.1  [-v2_cgames_1(k1_cgames_1)]   (6)  
+1.1.2.2.1.1.2  [- (k10_cgames_1(k3_cgames_1)=k10_cgames_1(k1_cgames_1)), k3_cgames_1=k1_cgames_1]   (16)  substitution:[[_G6136, _G6185], [k3_cgames_1, k1_cgames_1]]
+1.1.2.2.1.1.2.1  [- (k3_cgames_1=k1_cgames_1)]   (9)  
+1.1.2.2.1.2  [-v1_xboole_0(k1_xboole_0)]   (5)  
+------------------------------------------------------
+End of proof for t37_cgames_1

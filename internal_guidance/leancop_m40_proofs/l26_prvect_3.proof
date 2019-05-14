@@ -1,0 +1,24 @@
+
+l26_prvect_3 is a Theorem
+Start of proof for l26_prvect_3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m2_finseq_1(1^[], k1_numbers)]
+ (2)  [-m2_finseq_1(2^[], k1_numbers)]
+ (3)  [k12_rvsum_1(k8_finseq_1(k1_numbers, 1^[], 2^[]))=k8_finseq_1(k1_numbers, k12_rvsum_1(1^[]), k12_rvsum_1(2^[]))]
+ (4)  [m2_finseq_1(_G4202, k1_numbers), m2_finseq_1(_G4324, k1_numbers), - (k12_rvsum_1(k8_finseq_1(k1_numbers, _G4202, _G4324))=k8_finseq_1(k1_numbers, k12_rvsum_1(_G4202), k12_rvsum_1(_G4324)))]
+ (5)  [_G3891=_G3940, - (k12_rvsum_1(_G3891)=k12_rvsum_1(_G3940))]
+ (6)  [- (k8_finseq_1(_G2872, _G3043, _G3218)=k8_finseq_1(_G2957, _G3130, _G3307)), _G2872=_G2957, _G3043=_G3130, _G3218=_G3307]
+ (7)  [-m2_finseq_1(_G2321, _G2458), m2_finseq_1(_G2254, _G2389), _G2254=_G2321, _G2389=_G2458]
+ (8)  [- (_G1481=_G1481)]
+ (9)  [_G1580=_G1625, - (_G1625=_G1580)]
+ (10)  [- (_G1813=_G1926), _G1813=_G1869, _G1869=_G1926]
+
+Connection Proof:
+-----------------
+1  [k12_rvsum_1(k8_finseq_1(k1_numbers, 1^[], 2^[]))=k8_finseq_1(k1_numbers, k12_rvsum_1(1^[]), k12_rvsum_1(2^[]))]   (3)  
+1.1  [- (k12_rvsum_1(k8_finseq_1(k1_numbers, 1^[], 2^[]))=k8_finseq_1(k1_numbers, k12_rvsum_1(1^[]), k12_rvsum_1(2^[]))), m2_finseq_1(1^[], k1_numbers), m2_finseq_1(2^[], k1_numbers)]   (4)  substitution:[[_G4202, _G4324], [1^[], 2^[]]]
+1.1.1  [-m2_finseq_1(1^[], k1_numbers)]   (1)  
+1.1.2  [-m2_finseq_1(2^[], k1_numbers)]   (2)  
+------------------------------------------------------
+End of proof for l26_prvect_3

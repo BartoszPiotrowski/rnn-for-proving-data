@@ -1,0 +1,22 @@
+
+t38_kurato_1 is a Theorem
+Start of proof for t38_kurato_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [- (k2_pre_topc(k3_topmetr, k1_tops_1(k3_topmetr, k6_kurato_1))=k2_pre_topc(k3_topmetr, k6_kurato_1))]
+ (2)  [k1_tops_1(k3_topmetr, k2_pre_topc(k3_topmetr, k6_kurato_1))=k1_tops_1(k3_topmetr, k2_pre_topc(k3_topmetr, k1_tops_1(k3_topmetr, k6_kurato_1)))]
+ (3)  [- (_G1014=_G1014)]
+ (4)  [_G1113=_G1158, - (_G1158=_G1113)]
+ (5)  [- (_G1346=_G1459), _G1346=_G1402, _G1402=_G1459]
+ (6)  [- (k1_tops_1(_G1796, _G1931)=k1_tops_1(_G1863, _G2000)), _G1796=_G1863, _G1931=_G2000]
+ (7)  [- (k2_pre_topc(_G2384, _G2519)=k2_pre_topc(_G2451, _G2588)), _G2384=_G2451, _G2519=_G2588]
+
+Connection Proof:
+-----------------
+1  [k1_tops_1(k3_topmetr, k2_pre_topc(k3_topmetr, k6_kurato_1))=k1_tops_1(k3_topmetr, k2_pre_topc(k3_topmetr, k1_tops_1(k3_topmetr, k6_kurato_1)))]   (2)  
+1.1  [- (k1_tops_1(k3_topmetr, k2_pre_topc(k3_topmetr, k6_kurato_1))=k1_tops_1(k3_topmetr, k2_pre_topc(k3_topmetr, k1_tops_1(k3_topmetr, k6_kurato_1)))), k3_topmetr=k3_topmetr, k2_pre_topc(k3_topmetr, k6_kurato_1)=k2_pre_topc(k3_topmetr, k1_tops_1(k3_topmetr, k6_kurato_1))]   (6)  substitution:[[_G1796, _G1931, _G1863, _G2000], [k3_topmetr, k2_pre_topc(k3_topmetr, k6_kurato_1), k3_topmetr, k2_pre_topc(k3_topmetr, k1_tops_1(k3_topmetr, k6_kurato_1))]]
+1.1.1  [- (k3_topmetr=k3_topmetr)]   (3)  substitution:[[_G1014], [k3_topmetr]]
+1.1.2  [- (k2_pre_topc(k3_topmetr, k6_kurato_1)=k2_pre_topc(k3_topmetr, k1_tops_1(k3_topmetr, k6_kurato_1))), k2_pre_topc(k3_topmetr, k1_tops_1(k3_topmetr, k6_kurato_1))=k2_pre_topc(k3_topmetr, k6_kurato_1)]   (4)  substitution:[[_G1158, _G1113], [k2_pre_topc(k3_topmetr, k6_kurato_1), k2_pre_topc(k3_topmetr, k1_tops_1(k3_topmetr, k6_kurato_1))]]
+1.1.2.1  [- (k2_pre_topc(k3_topmetr, k1_tops_1(k3_topmetr, k6_kurato_1))=k2_pre_topc(k3_topmetr, k6_kurato_1))]   (1)  
+------------------------------------------------------
+End of proof for t38_kurato_1

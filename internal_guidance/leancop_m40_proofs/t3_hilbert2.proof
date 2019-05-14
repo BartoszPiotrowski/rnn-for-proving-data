@@ -1,0 +1,34 @@
+
+t3_hilbert2 is a Theorem
+Start of proof for t3_hilbert2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m2_finseq_1(k9_finseq_1(2^[]), 3^[])]
+ (2)  [r2_hidden(2^[], 3^[])]
+ (3)  [- (k3_finseq_2(_G5869)=k13_finseq_1(_G5869))]
+ (4)  [- (k5_funct_7(k1_xboole_0, _G6269)=k9_finseq_1(_G6269))]
+ (5)  [r2_hidden(k9_finseq_1(_G6000), k3_finseq_2(_G6049)), -r2_hidden(_G6000, _G6049)]
+ (6)  [-r2_hidden(k9_finseq_1(_G6000), k3_finseq_2(_G6049)), r2_hidden(_G6000, _G6049)]
+ (7)  [_G5507=k13_finseq_1(_G5449), r2_hidden(_G5637, _G5507), -m2_finseq_1(_G5637, _G5449)]
+ (8)  [_G5507=k13_finseq_1(_G5449), -r2_hidden(_G5637, _G5507), m2_finseq_1(_G5637, _G5449)]
+ (9)  [- (_G5507=k13_finseq_1(_G5449)), r2_hidden(1^[_G5507, _G5449], _G5507), m2_finseq_1(1^[_G5507, _G5449], _G5449)]
+ (10)  [- (_G5507=k13_finseq_1(_G5449)), -r2_hidden(1^[_G5507, _G5449], _G5507), -m2_finseq_1(1^[_G5507, _G5449], _G5449)]
+ (11)  [_G3943=_G3992, - (k13_finseq_1(_G3943)=k13_finseq_1(_G3992))]
+ (12)  [_G4221=_G4270, - (k3_finseq_2(_G4221)=k3_finseq_2(_G4270))]
+ (13)  [_G5087=_G5136, - (k9_finseq_1(_G5087)=k9_finseq_1(_G5136))]
+ (14)  [- (k5_funct_7(_G4499, _G4634)=k5_funct_7(_G4566, _G4703)), _G4499=_G4566, _G4634=_G4703]
+ (15)  [- (_G1934=_G1934)]
+ (16)  [_G2033=_G2078, - (_G2078=_G2033)]
+ (17)  [- (_G2266=_G2379), _G2266=_G2322, _G2322=_G2379]
+ (18)  [-m2_finseq_1(_G2783, _G2920), m2_finseq_1(_G2716, _G2851), _G2716=_G2783, _G2851=_G2920]
+ (19)  [-r2_hidden(_G3371, _G3508), r2_hidden(_G3304, _G3439), _G3304=_G3371, _G3439=_G3508]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(2^[], 3^[])]   (2)  
+1.1  [-r2_hidden(2^[], 3^[]), r2_hidden(k9_finseq_1(2^[]), k3_finseq_2(3^[]))]   (5)  substitution:[[_G6000, _G6049], [2^[], 3^[]]]
+1.1.1  [-r2_hidden(k9_finseq_1(2^[]), k3_finseq_2(3^[])), k3_finseq_2(3^[])=k13_finseq_1(3^[]), m2_finseq_1(k9_finseq_1(2^[]), 3^[])]   (8)  substitution:[[_G5637, _G5507, _G5449], [k9_finseq_1(2^[]), k3_finseq_2(3^[]), 3^[]]]
+1.1.1.1  [- (k3_finseq_2(3^[])=k13_finseq_1(3^[]))]   (3)  substitution:[[_G5869], [3^[]]]
+1.1.1.2  [-m2_finseq_1(k9_finseq_1(2^[]), 3^[])]   (1)  
+------------------------------------------------------
+End of proof for t3_hilbert2

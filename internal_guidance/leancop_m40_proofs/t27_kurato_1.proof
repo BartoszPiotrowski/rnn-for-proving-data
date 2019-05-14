@@ -1,0 +1,36 @@
+
+t27_kurato_1 is a Theorem
+Start of proof for t27_kurato_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k2_pre_topc(k3_topmetr, k1_tops_1(k3_topmetr, k2_pre_topc(k3_topmetr, k6_kurato_1)))=k3_rcomp_1(np__2, k1_xxreal_0)]
+ (2)  [- (k3_subset_1(u1_struct_0(k3_topmetr), k2_pre_topc(k3_topmetr, k3_subset_1(u1_struct_0(k3_topmetr), k2_pre_topc(k3_topmetr, k6_kurato_1))))=k2_rcomp_1(np__2, k1_xxreal_0))]
+ (3)  [- (k2_pre_topc(k3_topmetr, k3_subset_1(u1_struct_0(k3_topmetr), k2_pre_topc(k3_topmetr, k3_subset_1(u1_struct_0(k3_topmetr), k2_pre_topc(k3_topmetr, k6_kurato_1)))))=k3_rcomp_1(np__2, k1_xxreal_0))]
+ (4)  [- (k1_tops_1(k3_topmetr, k2_pre_topc(k3_topmetr, k6_kurato_1))=k2_rcomp_1(np__2, k1_xxreal_0))]
+ (5)  [- (_G1705=_G1705)]
+ (6)  [_G1804=_G1849, - (_G1849=_G1804)]
+ (7)  [- (_G2037=_G2150), _G2037=_G2093, _G2093=_G2150]
+ (8)  [- (k3_subset_1(_G2487, _G2622)=k3_subset_1(_G2554, _G2691)), _G2487=_G2554, _G2622=_G2691]
+ (9)  [_G3084=_G3133, - (u1_struct_0(_G3084)=u1_struct_0(_G3133))]
+ (10)  [- (k2_rcomp_1(_G3362, _G3497)=k2_rcomp_1(_G3429, _G3566)), _G3362=_G3429, _G3497=_G3566]
+ (11)  [- (k1_tops_1(_G3959, _G4094)=k1_tops_1(_G4026, _G4163)), _G3959=_G4026, _G4094=_G4163]
+ (12)  [- (k2_pre_topc(_G4556, _G4691)=k2_pre_topc(_G4623, _G4760)), _G4556=_G4623, _G4691=_G4760]
+ (13)  [- (k3_rcomp_1(_G5144, _G5279)=k3_rcomp_1(_G5211, _G5348)), _G5144=_G5211, _G5279=_G5348]
+
+Connection Proof:
+-----------------
+1  [k2_pre_topc(k3_topmetr, k1_tops_1(k3_topmetr, k2_pre_topc(k3_topmetr, k6_kurato_1)))=k3_rcomp_1(np__2, k1_xxreal_0)]   (1)  
+1.1  [- (k2_pre_topc(k3_topmetr, k1_tops_1(k3_topmetr, k2_pre_topc(k3_topmetr, k6_kurato_1)))=k3_rcomp_1(np__2, k1_xxreal_0)), k2_pre_topc(k3_topmetr, k1_tops_1(k3_topmetr, k2_pre_topc(k3_topmetr, k6_kurato_1)))=k2_pre_topc(k3_topmetr, k2_rcomp_1(np__2, k1_xxreal_0)), k2_pre_topc(k3_topmetr, k2_rcomp_1(np__2, k1_xxreal_0))=k3_rcomp_1(np__2, k1_xxreal_0)]   (7)  substitution:[[_G2037, _G2150, _G2093], [k2_pre_topc(k3_topmetr, k1_tops_1(k3_topmetr, k2_pre_topc(k3_topmetr, k6_kurato_1))), k3_rcomp_1(np__2, k1_xxreal_0), k2_pre_topc(k3_topmetr, k2_rcomp_1(np__2, k1_xxreal_0))]]
+1.1.1  [- (k2_pre_topc(k3_topmetr, k1_tops_1(k3_topmetr, k2_pre_topc(k3_topmetr, k6_kurato_1)))=k2_pre_topc(k3_topmetr, k2_rcomp_1(np__2, k1_xxreal_0))), k2_pre_topc(k3_topmetr, k2_rcomp_1(np__2, k1_xxreal_0))=k2_pre_topc(k3_topmetr, k1_tops_1(k3_topmetr, k2_pre_topc(k3_topmetr, k6_kurato_1)))]   (6)  substitution:[[_G1849, _G1804], [k2_pre_topc(k3_topmetr, k1_tops_1(k3_topmetr, k2_pre_topc(k3_topmetr, k6_kurato_1))), k2_pre_topc(k3_topmetr, k2_rcomp_1(np__2, k1_xxreal_0))]]
+1.1.1.1  [- (k2_pre_topc(k3_topmetr, k2_rcomp_1(np__2, k1_xxreal_0))=k2_pre_topc(k3_topmetr, k1_tops_1(k3_topmetr, k2_pre_topc(k3_topmetr, k6_kurato_1)))), k3_topmetr=k3_topmetr, k2_rcomp_1(np__2, k1_xxreal_0)=k1_tops_1(k3_topmetr, k2_pre_topc(k3_topmetr, k6_kurato_1))]   (12)  substitution:[[_G4556, _G4691, _G4623, _G4760], [k3_topmetr, k2_rcomp_1(np__2, k1_xxreal_0), k3_topmetr, k1_tops_1(k3_topmetr, k2_pre_topc(k3_topmetr, k6_kurato_1))]]
+1.1.1.1.1  [- (k3_topmetr=k3_topmetr)]   (5)  substitution:[[_G1705], [k3_topmetr]]
+1.1.1.1.2  [- (k2_rcomp_1(np__2, k1_xxreal_0)=k1_tops_1(k3_topmetr, k2_pre_topc(k3_topmetr, k6_kurato_1))), k1_tops_1(k3_topmetr, k2_pre_topc(k3_topmetr, k6_kurato_1))=k2_rcomp_1(np__2, k1_xxreal_0)]   (6)  substitution:[[_G1849, _G1804], [k2_rcomp_1(np__2, k1_xxreal_0), k1_tops_1(k3_topmetr, k2_pre_topc(k3_topmetr, k6_kurato_1))]]
+1.1.1.1.2.1  [- (k1_tops_1(k3_topmetr, k2_pre_topc(k3_topmetr, k6_kurato_1))=k2_rcomp_1(np__2, k1_xxreal_0))]   (4)  
+1.1.2  [- (k2_pre_topc(k3_topmetr, k2_rcomp_1(np__2, k1_xxreal_0))=k3_rcomp_1(np__2, k1_xxreal_0)), k2_pre_topc(k3_topmetr, k2_rcomp_1(np__2, k1_xxreal_0))=k2_pre_topc(k3_topmetr, k3_subset_1(u1_struct_0(k3_topmetr), k2_pre_topc(k3_topmetr, k3_subset_1(u1_struct_0(k3_topmetr), k2_pre_topc(k3_topmetr, k6_kurato_1))))), k2_pre_topc(k3_topmetr, k3_subset_1(u1_struct_0(k3_topmetr), k2_pre_topc(k3_topmetr, k3_subset_1(u1_struct_0(k3_topmetr), k2_pre_topc(k3_topmetr, k6_kurato_1)))))=k3_rcomp_1(np__2, k1_xxreal_0)]   (7)  substitution:[[_G2037, _G2150, _G2093], [k2_pre_topc(k3_topmetr, k2_rcomp_1(np__2, k1_xxreal_0)), k3_rcomp_1(np__2, k1_xxreal_0), k2_pre_topc(k3_topmetr, k3_subset_1(u1_struct_0(k3_topmetr), k2_pre_topc(k3_topmetr, k3_subset_1(u1_struct_0(k3_topmetr), k2_pre_topc(k3_topmetr, k6_kurato_1)))))]]
+1.1.2.1  [- (k2_pre_topc(k3_topmetr, k2_rcomp_1(np__2, k1_xxreal_0))=k2_pre_topc(k3_topmetr, k3_subset_1(u1_struct_0(k3_topmetr), k2_pre_topc(k3_topmetr, k3_subset_1(u1_struct_0(k3_topmetr), k2_pre_topc(k3_topmetr, k6_kurato_1)))))), k3_topmetr=k3_topmetr, k2_rcomp_1(np__2, k1_xxreal_0)=k3_subset_1(u1_struct_0(k3_topmetr), k2_pre_topc(k3_topmetr, k3_subset_1(u1_struct_0(k3_topmetr), k2_pre_topc(k3_topmetr, k6_kurato_1))))]   (12)  substitution:[[_G4556, _G4691, _G4623, _G4760], [k3_topmetr, k2_rcomp_1(np__2, k1_xxreal_0), k3_topmetr, k3_subset_1(u1_struct_0(k3_topmetr), k2_pre_topc(k3_topmetr, k3_subset_1(u1_struct_0(k3_topmetr), k2_pre_topc(k3_topmetr, k6_kurato_1))))]]
+1.1.2.1.1  [- (k3_topmetr=k3_topmetr)]   (5)  substitution:[[_G1705], [k3_topmetr]]
+1.1.2.1.2  [- (k2_rcomp_1(np__2, k1_xxreal_0)=k3_subset_1(u1_struct_0(k3_topmetr), k2_pre_topc(k3_topmetr, k3_subset_1(u1_struct_0(k3_topmetr), k2_pre_topc(k3_topmetr, k6_kurato_1))))), k3_subset_1(u1_struct_0(k3_topmetr), k2_pre_topc(k3_topmetr, k3_subset_1(u1_struct_0(k3_topmetr), k2_pre_topc(k3_topmetr, k6_kurato_1))))=k2_rcomp_1(np__2, k1_xxreal_0)]   (6)  substitution:[[_G1849, _G1804], [k2_rcomp_1(np__2, k1_xxreal_0), k3_subset_1(u1_struct_0(k3_topmetr), k2_pre_topc(k3_topmetr, k3_subset_1(u1_struct_0(k3_topmetr), k2_pre_topc(k3_topmetr, k6_kurato_1))))]]
+1.1.2.1.2.1  [- (k3_subset_1(u1_struct_0(k3_topmetr), k2_pre_topc(k3_topmetr, k3_subset_1(u1_struct_0(k3_topmetr), k2_pre_topc(k3_topmetr, k6_kurato_1))))=k2_rcomp_1(np__2, k1_xxreal_0))]   (2)  
+1.1.2.2  [- (k2_pre_topc(k3_topmetr, k3_subset_1(u1_struct_0(k3_topmetr), k2_pre_topc(k3_topmetr, k3_subset_1(u1_struct_0(k3_topmetr), k2_pre_topc(k3_topmetr, k6_kurato_1)))))=k3_rcomp_1(np__2, k1_xxreal_0))]   (3)  
+------------------------------------------------------
+End of proof for t27_kurato_1

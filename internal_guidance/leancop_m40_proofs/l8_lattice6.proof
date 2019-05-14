@@ -1,0 +1,71 @@
+
+l8_lattice6 is a Theorem
+Start of proof for l8_lattice6
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(1^[])]
+ (2)  [-v8_struct_0(1^[])]
+ (3)  [-v10_lattices(1^[])]
+ (4)  [-l3_lattices(1^[])]
+ (5)  [v1_wellfnd1(k7_lattice3(k3_lattice3(1^[])))]
+ (6)  [l3_lattices(_G10227), -v3_lattices(k1_lattice2(_G10227))]
+ (7)  [l3_lattices(_G10227), -l3_lattices(k1_lattice2(_G10227))]
+ (8)  [v2_struct_0(k1_lattice2(_G10448)), -v2_struct_0(_G10448), l3_lattices(_G10448)]
+ (9)  [-v3_lattices(k1_lattice2(_G10448)), -v2_struct_0(_G10448), l3_lattices(_G10448)]
+ (10)  [-v1_orders_2(k3_lattice3(_G10759)), -v2_struct_0(_G10759), v8_struct_0(_G10759), v10_lattices(_G10759), l3_lattices(_G10759)]
+ (11)  [-v3_orders_2(k3_lattice3(_G10759)), -v2_struct_0(_G10759), v8_struct_0(_G10759), v10_lattices(_G10759), l3_lattices(_G10759)]
+ (12)  [-v4_orders_2(k3_lattice3(_G10759)), -v2_struct_0(_G10759), v8_struct_0(_G10759), v10_lattices(_G10759), l3_lattices(_G10759)]
+ (13)  [-v5_orders_2(k3_lattice3(_G10759)), -v2_struct_0(_G10759), v8_struct_0(_G10759), v10_lattices(_G10759), l3_lattices(_G10759)]
+ (14)  [-v1_wellfnd1(k3_lattice3(_G10759)), -v2_struct_0(_G10759), v8_struct_0(_G10759), v10_lattices(_G10759), l3_lattices(_G10759)]
+ (15)  [-v3_lattices(k1_lattice2(_G11392)), -v2_struct_0(_G11392), v10_lattices(_G11392), l3_lattices(_G11392)]
+ (16)  [-v10_lattices(k1_lattice2(_G11392)), -v2_struct_0(_G11392), v10_lattices(_G11392), l3_lattices(_G11392)]
+ (17)  [- (k6_lattice3(u1_struct_0(_G11745), k2_lattice3(_G11745))=k2_lattice3(k1_lattice2(_G11745))), -v2_struct_0(_G11745), v10_lattices(_G11745), l3_lattices(_G11745)]
+ (18)  [- (k7_lattice3(k3_lattice3(_G11745))=k3_lattice3(k1_lattice2(_G11745))), -v2_struct_0(_G11745), v10_lattices(_G11745), l3_lattices(_G11745)]
+ (19)  [l3_lattices(_G12279), v10_lattices(_G12279), -v2_struct_0(_G12279), v8_struct_0(_G12279), -v8_struct_0(k1_lattice2(_G12279))]
+ (20)  [l3_lattices(_G12279), v10_lattices(_G12279), -v2_struct_0(_G12279), -v8_struct_0(_G12279), v8_struct_0(k1_lattice2(_G12279))]
+ (21)  [- (k6_lattice3(_G8123, _G8258)=k6_lattice3(_G8190, _G8327)), _G8123=_G8190, _G8258=_G8327]
+ (22)  [_G8720=_G8769, - (u1_struct_0(_G8720)=u1_struct_0(_G8769))]
+ (23)  [_G8998=_G9047, - (k2_lattice3(_G8998)=k2_lattice3(_G9047))]
+ (24)  [_G9276=_G9325, - (k1_lattice2(_G9276)=k1_lattice2(_G9325))]
+ (25)  [_G9554=_G9603, - (k7_lattice3(_G9554)=k7_lattice3(_G9603))]
+ (26)  [_G9823=_G9872, - (k3_lattice3(_G9823)=k3_lattice3(_G9872))]
+ (27)  [- (_G4360=_G4360)]
+ (28)  [_G4459=_G4504, - (_G4504=_G4459)]
+ (29)  [- (_G4692=_G4805), _G4692=_G4748, _G4748=_G4805]
+ (30)  [-v1_orders_2(_G5191), _G5142=_G5191, v1_orders_2(_G5142)]
+ (31)  [-v3_orders_2(_G5469), _G5420=_G5469, v3_orders_2(_G5420)]
+ (32)  [-v4_orders_2(_G5747), _G5698=_G5747, v4_orders_2(_G5698)]
+ (33)  [-v5_orders_2(_G6025), _G5976=_G6025, v5_orders_2(_G5976)]
+ (34)  [-v3_lattices(_G6303), _G6254=_G6303, v3_lattices(_G6254)]
+ (35)  [-v2_struct_0(_G6581), _G6532=_G6581, v2_struct_0(_G6532)]
+ (36)  [-v8_struct_0(_G6859), _G6810=_G6859, v8_struct_0(_G6810)]
+ (37)  [-v10_lattices(_G7137), _G7088=_G7137, v10_lattices(_G7088)]
+ (38)  [-l3_lattices(_G7415), _G7366=_G7415, l3_lattices(_G7366)]
+ (39)  [-v1_wellfnd1(_G7684), _G7635=_G7684, v1_wellfnd1(_G7635)]
+
+Connection Proof:
+-----------------
+1  [v2_struct_0(1^[])]   (1)  
+1.1  [-v2_struct_0(1^[]), v2_struct_0(k1_lattice2(1^[])), l3_lattices(1^[])]   (8)  substitution:[[_G10448], [1^[]]]
+1.1.1  [-v2_struct_0(k1_lattice2(1^[])), -v1_wellfnd1(k3_lattice3(k1_lattice2(1^[]))), v8_struct_0(k1_lattice2(1^[])), v10_lattices(k1_lattice2(1^[])), l3_lattices(k1_lattice2(1^[]))]   (14)  substitution:[[_G10759], [k1_lattice2(1^[])]]
+1.1.1.1  [v1_wellfnd1(k3_lattice3(k1_lattice2(1^[]))), -v1_wellfnd1(k7_lattice3(k3_lattice3(1^[]))), k3_lattice3(k1_lattice2(1^[]))=k7_lattice3(k3_lattice3(1^[]))]   (39)  substitution:[[_G7635, _G7684], [k3_lattice3(k1_lattice2(1^[])), k7_lattice3(k3_lattice3(1^[]))]]
+1.1.1.1.1  [v1_wellfnd1(k7_lattice3(k3_lattice3(1^[])))]   (5)  
+1.1.1.1.2  [- (k3_lattice3(k1_lattice2(1^[]))=k7_lattice3(k3_lattice3(1^[]))), k7_lattice3(k3_lattice3(1^[]))=k3_lattice3(k1_lattice2(1^[]))]   (28)  substitution:[[_G4504, _G4459], [k3_lattice3(k1_lattice2(1^[])), k7_lattice3(k3_lattice3(1^[]))]]
+1.1.1.1.2.1  [- (k7_lattice3(k3_lattice3(1^[]))=k3_lattice3(k1_lattice2(1^[]))), -v2_struct_0(1^[]), v10_lattices(1^[]), l3_lattices(1^[])]   (18)  substitution:[[_G11745], [1^[]]]
+1.1.1.1.2.1.1  [v2_struct_0(1^[])]   (1)  
+1.1.1.1.2.1.2  [-v10_lattices(1^[])]   (3)  
+1.1.1.1.2.1.3  [-l3_lattices(1^[])]   (4)  
+1.1.1.2  [-v8_struct_0(k1_lattice2(1^[])), l3_lattices(1^[]), v10_lattices(1^[]), -v2_struct_0(1^[]), v8_struct_0(1^[])]   (19)  substitution:[[_G12279], [1^[]]]
+1.1.1.2.1  [-l3_lattices(1^[])]   (4)  
+1.1.1.2.2  [-v10_lattices(1^[])]   (3)  
+1.1.1.2.3  [v2_struct_0(1^[])]   (1)  
+1.1.1.2.4  [-v8_struct_0(1^[])]   (2)  
+1.1.1.3  [-v10_lattices(k1_lattice2(1^[])), -v2_struct_0(1^[]), v10_lattices(1^[]), l3_lattices(1^[])]   (16)  substitution:[[_G11392], [1^[]]]
+1.1.1.3.1  [v2_struct_0(1^[])]   (1)  
+1.1.1.3.2  [-v10_lattices(1^[])]   (3)  
+1.1.1.3.3  [-l3_lattices(1^[])]   (4)  
+1.1.1.4  [-l3_lattices(k1_lattice2(1^[])), l3_lattices(1^[])]   (7)  substitution:[[_G10227], [1^[]]]
+1.1.1.4.1  [-l3_lattices(1^[])]   (4)  
+1.1.2  [-l3_lattices(1^[])]   (4)  
+------------------------------------------------------
+End of proof for l8_lattice6

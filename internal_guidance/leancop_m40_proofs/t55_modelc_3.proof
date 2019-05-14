@@ -1,0 +1,57 @@
+
+t55_modelc_3 is a Theorem
+Start of proof for t55_modelc_3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k3_tarski(k1_orders_1(5^[]))=5^[]]
+ (2)  [_G4558=_G4607, - (k3_tarski(_G4558)=k3_tarski(_G4607))]
+ (3)  [_G4827=_G4876, - (k1_orders_1(_G4827)=k1_orders_1(_G4876))]
+ (4)  [- (_G2250=_G2250)]
+ (5)  [_G2349=_G2394, - (_G2394=_G2349)]
+ (6)  [- (_G2582=_G2695), _G2582=_G2638, _G2638=_G2695]
+ (7)  [-r1_tarski(_G3099, _G3236), r1_tarski(_G3032, _G3167), _G3032=_G3099, _G3167=_G3236]
+ (8)  [-v1_xboole_0(_G4266), _G4217=_G4266, v1_xboole_0(_G4217)]
+ (9)  [-r2_hidden(_G3696, _G3833), r2_hidden(_G3629, _G3764), _G3629=_G3696, _G3764=_G3833]
+ (10)  [-r1_tarski(_G5147, _G5203), -r2_hidden(1^[_G5203, _G5147], _G5147)]
+ (11)  [-r1_tarski(_G5147, _G5203), r2_hidden(1^[_G5203, _G5147], _G5203)]
+ (12)  [r1_tarski(_G5147, _G5203), r2_hidden(_G5317, _G5147), -r2_hidden(_G5317, _G5203)]
+ (13)  [-r1_tarski(_G6146, _G6146)]
+ (14)  [r2_hidden(_G6630, _G6676), v1_xboole_0(_G6676)]
+ (15)  [-v1_xboole_0(_G6352), r1_tarski(_G6352, _G6298), -r2_hidden(_G6352, k1_orders_1(_G6298))]
+ (16)  [-v1_xboole_0(_G6352), -r1_tarski(_G6352, _G6298), r2_hidden(_G6352, k1_orders_1(_G6298))]
+ (17)  [_G5618=k3_tarski(_G5549), r2_hidden(_G5759, _G5618), -r2_hidden(_G5759, 2^[_G5759, _G5618, _G5549])]
+ (18)  [_G5618=k3_tarski(_G5549), r2_hidden(_G5759, _G5618), -r2_hidden(2^[_G5759, _G5618, _G5549], _G5549)]
+ (19)  [_G5618=k3_tarski(_G5549), -r2_hidden(_G5759, _G5618), r2_hidden(_G5759, _G5879), r2_hidden(_G5879, _G5549)]
+ (20)  [- (_G5618=k3_tarski(_G5549)), -r2_hidden(3^[_G5618, _G5549], _G5618), -r2_hidden(3^[_G5618, _G5549], 4^[_G5618, _G5549])]
+ (21)  [- (_G5618=k3_tarski(_G5549)), -r2_hidden(3^[_G5618, _G5549], _G5618), -r2_hidden(4^[_G5618, _G5549], _G5549)]
+ (22)  [- (_G5618=k3_tarski(_G5549)), r2_hidden(3^[_G5618, _G5549], _G5618), r2_hidden(3^[_G5618, _G5549], _G7716), r2_hidden(_G7716, _G5549)]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(3^[5^[], k1_orders_1(5^[])], 5^[]), v1_xboole_0(5^[])]   (14)  substitution:[[_G6630, _G6676], [3^[5^[], k1_orders_1(5^[])], 5^[]]]
+1.1  [-r2_hidden(3^[5^[], k1_orders_1(5^[])], 5^[]), - (5^[]=k3_tarski(k1_orders_1(5^[]))), -r2_hidden(3^[5^[], k1_orders_1(5^[])], 4^[5^[], k1_orders_1(5^[])])]   (20)  substitution:[[_G5618, _G5549], [5^[], k1_orders_1(5^[])]]
+1.1.1  [5^[]=k3_tarski(k1_orders_1(5^[])), - (k3_tarski(k1_orders_1(5^[]))=5^[])]   (5)  substitution:[[_G2349, _G2394], [5^[], k3_tarski(k1_orders_1(5^[]))]]
+1.1.1.1  [k3_tarski(k1_orders_1(5^[]))=5^[]]   (1)  
+1.1.2  [r2_hidden(3^[5^[], k1_orders_1(5^[])], 4^[5^[], k1_orders_1(5^[])]), v1_xboole_0(4^[5^[], k1_orders_1(5^[])])]   (14)  substitution:[[_G6630, _G6676], [3^[5^[], k1_orders_1(5^[])], 4^[5^[], k1_orders_1(5^[])]]]
+1.1.2.1  [-v1_xboole_0(4^[5^[], k1_orders_1(5^[])]), -r1_tarski(4^[5^[], k1_orders_1(5^[])], 5^[]), r2_hidden(4^[5^[], k1_orders_1(5^[])], k1_orders_1(5^[]))]   (16)  substitution:[[_G6352, _G6298], [4^[5^[], k1_orders_1(5^[])], 5^[]]]
+1.1.2.1.1  [r1_tarski(4^[5^[], k1_orders_1(5^[])], 5^[]), r2_hidden(3^[5^[], k1_orders_1(5^[])], 4^[5^[], k1_orders_1(5^[])]), -r2_hidden(3^[5^[], k1_orders_1(5^[])], 5^[])]   (12)  substitution:[[_G5147, _G5203, _G5317], [4^[5^[], k1_orders_1(5^[])], 5^[], 3^[5^[], k1_orders_1(5^[])]]]
+1.1.2.1.1.1  [-r2_hidden(3^[5^[], k1_orders_1(5^[])], 4^[5^[], k1_orders_1(5^[])])]   (reduction:1.1)  
+1.1.2.1.1.2  [r2_hidden(3^[5^[], k1_orders_1(5^[])], 5^[])]   (reduction:1)  
+1.1.2.1.2  [-r2_hidden(4^[5^[], k1_orders_1(5^[])], k1_orders_1(5^[])), - (5^[]=k3_tarski(k1_orders_1(5^[]))), -r2_hidden(3^[5^[], k1_orders_1(5^[])], 5^[])]   (21)  substitution:[[_G5618, _G5549], [5^[], k1_orders_1(5^[])]]
+1.1.2.1.2.1  [5^[]=k3_tarski(k1_orders_1(5^[]))]   (lemmata:1.1)  
+1.1.2.1.2.2  [r2_hidden(3^[5^[], k1_orders_1(5^[])], 5^[])]   (reduction:1)  
+1.2  [-v1_xboole_0(5^[]), r1_tarski(5^[], 5^[]), -r2_hidden(5^[], k1_orders_1(5^[]))]   (15)  substitution:[[_G6352, _G6298], [5^[], 5^[]]]
+1.2.1  [-r1_tarski(5^[], 5^[]), r1_tarski(5^[], 5^[]), 5^[]=5^[], 5^[]=5^[]]   (7)  substitution:[[_G3099, _G3236, _G3032, _G3167], [5^[], 5^[], 5^[], 5^[]]]
+1.2.1.1  [-r1_tarski(5^[], 5^[]), r1_tarski(5^[], 5^[]), 5^[]=5^[], 5^[]=5^[]]   (7)  substitution:[[_G3099, _G3236, _G3032, _G3167], [5^[], 5^[], 5^[], 5^[]]]
+1.2.1.1.1  [-r1_tarski(5^[], 5^[])]   (13)  substitution:[[_G6146], [5^[]]]
+1.2.1.1.2  [- (5^[]=5^[])]   (4)  substitution:[[_G2250], [5^[]]]
+1.2.1.1.3  [- (5^[]=5^[])]   (4)  substitution:[[_G2250], [5^[]]]
+1.2.1.2  [- (5^[]=5^[])]   (4)  substitution:[[_G2250], [5^[]]]
+1.2.1.3  [- (5^[]=5^[])]   (4)  substitution:[[_G2250], [5^[]]]
+1.2.2  [r2_hidden(5^[], k1_orders_1(5^[])), - (5^[]=k3_tarski(k1_orders_1(5^[]))), r2_hidden(3^[5^[], k1_orders_1(5^[])], 5^[]), r2_hidden(3^[5^[], k1_orders_1(5^[])], 5^[])]   (22)  substitution:[[_G7716, _G5549, _G5618], [5^[], k1_orders_1(5^[]), 5^[]]]
+1.2.2.1  [5^[]=k3_tarski(k1_orders_1(5^[])), - (k3_tarski(k1_orders_1(5^[]))=5^[])]   (5)  substitution:[[_G2349, _G2394], [5^[], k3_tarski(k1_orders_1(5^[]))]]
+1.2.2.1.1  [k3_tarski(k1_orders_1(5^[]))=5^[]]   (1)  
+1.2.2.2  [-r2_hidden(3^[5^[], k1_orders_1(5^[])], 5^[])]   (lemmata:1)  
+1.2.2.3  [-r2_hidden(3^[5^[], k1_orders_1(5^[])], 5^[])]   (lemmata:1.2.2)  
+------------------------------------------------------
+End of proof for t55_modelc_3

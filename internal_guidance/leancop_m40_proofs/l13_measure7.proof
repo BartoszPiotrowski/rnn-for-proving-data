@@ -1,0 +1,28 @@
+
+l13_measure7 is a Theorem
+Start of proof for l13_measure7
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [r2_hidden(k1_numbers, k9_setfam_1(k1_numbers))]
+ (2)  [- (k9_setfam_1(_G4437)=k1_zfmisc_1(_G4437))]
+ (3)  [-r1_tarski(_G4559, _G4559)]
+ (4)  [_G4075=k1_zfmisc_1(_G4017), r2_hidden(_G4205, _G4075), -r1_tarski(_G4205, _G4017)]
+ (5)  [_G4075=k1_zfmisc_1(_G4017), -r2_hidden(_G4205, _G4075), r1_tarski(_G4205, _G4017)]
+ (6)  [- (_G4075=k1_zfmisc_1(_G4017)), r2_hidden(1^[_G4075, _G4017], _G4075), r1_tarski(1^[_G4075, _G4017], _G4017)]
+ (7)  [- (_G4075=k1_zfmisc_1(_G4017)), -r2_hidden(1^[_G4075, _G4017], _G4075), -r1_tarski(1^[_G4075, _G4017], _G4017)]
+ (8)  [_G3428=_G3477, - (k1_zfmisc_1(_G3428)=k1_zfmisc_1(_G3477))]
+ (9)  [_G3697=_G3746, - (k9_setfam_1(_G3697)=k9_setfam_1(_G3746))]
+ (10)  [- (_G1419=_G1419)]
+ (11)  [_G1518=_G1563, - (_G1563=_G1518)]
+ (12)  [- (_G1751=_G1864), _G1751=_G1807, _G1807=_G1864]
+ (13)  [-r1_tarski(_G2268, _G2405), r1_tarski(_G2201, _G2336), _G2201=_G2268, _G2336=_G2405]
+ (14)  [-r2_hidden(_G2856, _G2993), r2_hidden(_G2789, _G2924), _G2789=_G2856, _G2924=_G2993]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(k1_numbers, k9_setfam_1(k1_numbers))]   (1)  
+1.1  [-r2_hidden(k1_numbers, k9_setfam_1(k1_numbers)), k9_setfam_1(k1_numbers)=k1_zfmisc_1(k1_numbers), r1_tarski(k1_numbers, k1_numbers)]   (5)  substitution:[[_G4205, _G4075, _G4017], [k1_numbers, k9_setfam_1(k1_numbers), k1_numbers]]
+1.1.1  [- (k9_setfam_1(k1_numbers)=k1_zfmisc_1(k1_numbers))]   (2)  substitution:[[_G4437], [k1_numbers]]
+1.1.2  [-r1_tarski(k1_numbers, k1_numbers)]   (3)  substitution:[[_G4559], [k1_numbers]]
+------------------------------------------------------
+End of proof for l13_measure7

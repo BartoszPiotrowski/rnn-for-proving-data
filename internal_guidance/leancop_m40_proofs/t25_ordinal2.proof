@@ -1,0 +1,40 @@
+
+t25_ordinal2 is a Theorem
+Start of proof for t25_ordinal2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v3_ordinal1(2^[])]
+ (2)  [-v5_ordinal1(3^[])]
+ (3)  [-v1_relat_1(3^[])]
+ (4)  [-v1_funct_1(3^[])]
+ (5)  [-v1_ordinal2(3^[])]
+ (6)  [-r2_hidden(2^[], k9_xtuple_0(3^[]))]
+ (7)  [v3_ordinal1(k1_funct_1(3^[], 2^[]))]
+ (8)  [v1_relat_1(_G1217), v5_relat_1(_G1217, _G1165), -r1_tarski(k10_xtuple_0(_G1217), _G1165)]
+ (9)  [v1_relat_1(_G1217), -v5_relat_1(_G1217, _G1165), r1_tarski(k10_xtuple_0(_G1217), _G1165)]
+ (10)  [v1_funct_1(_G1488), v1_relat_1(_G1488), v1_ordinal2(_G1488), -v3_ordinal1(1^[_G1488])]
+ (11)  [v1_funct_1(_G1488), v1_relat_1(_G1488), v1_ordinal2(_G1488), -r1_tarski(k10_xtuple_0(_G1488), 1^[_G1488])]
+ (12)  [v1_funct_1(_G1488), v1_relat_1(_G1488), -v1_ordinal2(_G1488), v3_ordinal1(_G1666), r1_tarski(k10_xtuple_0(_G1488), _G1666)]
+ (13)  [v3_ordinal1(_G2531), r2_hidden(_G2482, _G2531), -v3_ordinal1(_G2482)]
+ (14)  [-r2_hidden(k1_funct_1(_G1966, _G2201), _G1895), r2_hidden(_G2201, k9_xtuple_0(_G1966)), v1_relat_1(_G1966), v5_relat_1(_G1966, _G1895), v1_funct_1(_G1966)]
+
+Connection Proof:
+-----------------
+1  [v3_ordinal1(k1_funct_1(3^[], 2^[]))]   (7)  
+1.1  [-v3_ordinal1(k1_funct_1(3^[], 2^[])), v3_ordinal1(1^[3^[]]), r2_hidden(k1_funct_1(3^[], 2^[]), 1^[3^[]])]   (13)  substitution:[[_G2482, _G2531], [k1_funct_1(3^[], 2^[]), 1^[3^[]]]]
+1.1.1  [-v3_ordinal1(1^[3^[]]), v1_funct_1(3^[]), v1_relat_1(3^[]), v1_ordinal2(3^[])]   (10)  substitution:[[_G1488], [3^[]]]
+1.1.1.1  [-v1_funct_1(3^[])]   (4)  
+1.1.1.2  [-v1_relat_1(3^[])]   (3)  
+1.1.1.3  [-v1_ordinal2(3^[])]   (5)  
+1.1.2  [-r2_hidden(k1_funct_1(3^[], 2^[]), 1^[3^[]]), r2_hidden(2^[], k9_xtuple_0(3^[])), v1_relat_1(3^[]), v5_relat_1(3^[], 1^[3^[]]), v1_funct_1(3^[])]   (14)  substitution:[[_G1966, _G2201, _G1895], [3^[], 2^[], 1^[3^[]]]]
+1.1.2.1  [-r2_hidden(2^[], k9_xtuple_0(3^[]))]   (6)  
+1.1.2.2  [-v1_relat_1(3^[])]   (3)  
+1.1.2.3  [-v5_relat_1(3^[], 1^[3^[]]), v1_relat_1(3^[]), r1_tarski(k10_xtuple_0(3^[]), 1^[3^[]])]   (9)  substitution:[[_G1217, _G1165], [3^[], 1^[3^[]]]]
+1.1.2.3.1  [-v1_relat_1(3^[])]   (3)  
+1.1.2.3.2  [-r1_tarski(k10_xtuple_0(3^[]), 1^[3^[]]), v1_funct_1(3^[]), v1_relat_1(3^[]), v1_ordinal2(3^[])]   (11)  substitution:[[_G1488], [3^[]]]
+1.1.2.3.2.1  [-v1_funct_1(3^[])]   (4)  
+1.1.2.3.2.2  [-v1_relat_1(3^[])]   (3)  
+1.1.2.3.2.3  [-v1_ordinal2(3^[])]   (5)  
+1.1.2.4  [-v1_funct_1(3^[])]   (4)  
+------------------------------------------------------
+End of proof for t25_ordinal2

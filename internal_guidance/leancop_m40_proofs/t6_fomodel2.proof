@@ -1,0 +1,40 @@
+
+t6_fomodel2 is a Theorem
+Start of proof for t6_fomodel2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-6^[], -r2_hidden(1^[], 2^[]), -r2_hidden(1^[], 3^[]), -r2_hidden(1^[], 4^[])]
+ (2)  [-6^[], r2_hidden(1^[], k2_xboole_0(k2_xboole_0(2^[], 3^[]), 4^[]))]
+ (3)  [-5^[], r2_hidden(1^[], 4^[])]
+ (4)  [-5^[], r2_hidden(1^[], 3^[])]
+ (5)  [-5^[], r2_hidden(1^[], 2^[])]
+ (6)  [-5^[], -r2_hidden(1^[], k2_xboole_0(k2_xboole_0(2^[], 3^[]), 4^[]))]
+ (7)  [5^[], 6^[]]
+ (8)  [-r2_hidden(_G856, k2_xboole_0(k2_xboole_0(_G937, _G1019), _G1102)), r2_hidden(_G856, _G937)]
+ (9)  [-r2_hidden(_G856, k2_xboole_0(k2_xboole_0(_G937, _G1019), _G1102)), r2_hidden(_G856, _G1019)]
+ (10)  [-r2_hidden(_G856, k2_xboole_0(k2_xboole_0(_G937, _G1019), _G1102)), r2_hidden(_G856, _G1102)]
+ (11)  [r2_hidden(_G856, k2_xboole_0(k2_xboole_0(_G937, _G1019), _G1102)), -r2_hidden(_G856, _G937), -r2_hidden(_G856, _G1019), -r2_hidden(_G856, _G1102)]
+
+Connection Proof:
+-----------------
+1  [5^[], 6^[]]   (7)  
+1.1  [-5^[], r2_hidden(1^[], 4^[])]   (3)  
+1.1.1  [-r2_hidden(1^[], 4^[]), r2_hidden(1^[], k2_xboole_0(k2_xboole_0(2^[], 3^[]), 4^[])), -r2_hidden(1^[], 2^[]), -r2_hidden(1^[], 3^[])]   (11)  substitution:[[_G856, _G1102, _G937, _G1019], [1^[], 4^[], 2^[], 3^[]]]
+1.1.1.1  [-r2_hidden(1^[], k2_xboole_0(k2_xboole_0(2^[], 3^[]), 4^[])), -5^[]]   (6)  
+1.1.1.1.1  [5^[]]   (reduction:1)  
+1.1.1.2  [r2_hidden(1^[], 2^[]), -5^[]]   (5)  
+1.1.1.2.1  [5^[]]   (reduction:1)  
+1.1.1.3  [r2_hidden(1^[], 3^[]), -5^[]]   (4)  
+1.1.1.3.1  [5^[]]   (reduction:1)  
+1.2  [-6^[], -r2_hidden(1^[], 2^[]), -r2_hidden(1^[], 3^[]), -r2_hidden(1^[], 4^[])]   (1)  
+1.2.1  [r2_hidden(1^[], 2^[]), -r2_hidden(1^[], k2_xboole_0(k2_xboole_0(2^[], 3^[]), 4^[]))]   (8)  substitution:[[_G856, _G937, _G1019, _G1102], [1^[], 2^[], 3^[], 4^[]]]
+1.2.1.1  [r2_hidden(1^[], k2_xboole_0(k2_xboole_0(2^[], 3^[]), 4^[])), -6^[]]   (2)  
+1.2.1.1.1  [6^[]]   (reduction:1)  
+1.2.2  [r2_hidden(1^[], 3^[]), -r2_hidden(1^[], k2_xboole_0(k2_xboole_0(2^[], 3^[]), 4^[]))]   (9)  substitution:[[_G856, _G1019, _G937, _G1102], [1^[], 3^[], 2^[], 4^[]]]
+1.2.2.1  [r2_hidden(1^[], k2_xboole_0(k2_xboole_0(2^[], 3^[]), 4^[])), -6^[]]   (2)  
+1.2.2.1.1  [6^[]]   (reduction:1)  
+1.2.3  [r2_hidden(1^[], 4^[]), -r2_hidden(1^[], k2_xboole_0(k2_xboole_0(2^[], 3^[]), 4^[]))]   (10)  substitution:[[_G856, _G1102, _G937, _G1019], [1^[], 4^[], 2^[], 3^[]]]
+1.2.3.1  [r2_hidden(1^[], k2_xboole_0(k2_xboole_0(2^[], 3^[]), 4^[])), -6^[]]   (2)  
+1.2.3.1.1  [6^[]]   (reduction:1)  
+------------------------------------------------------
+End of proof for t6_fomodel2

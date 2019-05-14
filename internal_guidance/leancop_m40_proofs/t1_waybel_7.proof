@@ -1,0 +1,72 @@
+
+t1_waybel_7 is a Theorem
+Start of proof for t1_waybel_7
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v3_orders_2(1^[])]
+ (2)  [-v4_orders_2(1^[])]
+ (3)  [-v5_orders_2(1^[])]
+ (4)  [-v1_lattice3(1^[])]
+ (5)  [-v2_lattice3(1^[])]
+ (6)  [-v3_lattice3(1^[])]
+ (7)  [-l1_orders_2(1^[])]
+ (8)  [-r1_tarski(2^[], 3^[])]
+ (9)  [r3_orders_2(1^[], k1_yellow_0(1^[], 2^[]), k1_yellow_0(1^[], 3^[])), r1_orders_2(1^[], k2_yellow_0(1^[], 3^[]), k2_yellow_0(1^[], 2^[]))]
+ (10)  [l1_orders_2(_G1658), v1_lattice3(_G1658), v2_struct_0(_G1658)]
+ (11)  [l1_orders_2(_G1863), -m1_subset_1(k1_yellow_0(_G1863, _G1912), u1_struct_0(_G1863))]
+ (12)  [-r1_orders_2(_G2141, _G2226, _G2312), r3_orders_2(_G2141, _G2226, _G2312), m1_subset_1(_G2312, u1_struct_0(_G2141)), m1_subset_1(_G2226, u1_struct_0(_G2141)), -v2_struct_0(_G2141), v3_orders_2(_G2141), l1_orders_2(_G2141)]
+ (13)  [r1_orders_2(_G2141, _G2226, _G2312), -r3_orders_2(_G2141, _G2226, _G2312), m1_subset_1(_G2312, u1_struct_0(_G2141)), m1_subset_1(_G2226, u1_struct_0(_G2141)), -v2_struct_0(_G2141), v3_orders_2(_G2141), l1_orders_2(_G2141)]
+ (14)  [-r1_yellow_0(_G3001, _G3273), -v2_struct_0(_G3001), v5_orders_2(_G3001), v3_lattice3(_G3001), l1_orders_2(_G3001)]
+ (15)  [-r2_yellow_0(_G3001, _G3273), -v2_struct_0(_G3001), v5_orders_2(_G3001), v3_lattice3(_G3001), l1_orders_2(_G3001)]
+ (16)  [l1_orders_2(_G3491), -r1_orders_2(_G3491, k1_yellow_0(_G3491, _G3597), k1_yellow_0(_G3491, _G3667)), r1_tarski(_G3597, _G3667), r1_yellow_0(_G3491, _G3597), r1_yellow_0(_G3491, _G3667)]
+ (17)  [l1_orders_2(_G4186), -r1_orders_2(_G4186, k2_yellow_0(_G4186, _G4362), k2_yellow_0(_G4186, _G4292)), r1_tarski(_G4292, _G4362), r2_yellow_0(_G4186, _G4292), r2_yellow_0(_G4186, _G4362)]
+
+Connection Proof:
+-----------------
+1  [r3_orders_2(1^[], k1_yellow_0(1^[], 2^[]), k1_yellow_0(1^[], 3^[])), r1_orders_2(1^[], k2_yellow_0(1^[], 3^[]), k2_yellow_0(1^[], 2^[]))]   (9)  
+1.1  [-r3_orders_2(1^[], k1_yellow_0(1^[], 2^[]), k1_yellow_0(1^[], 3^[])), r1_orders_2(1^[], k1_yellow_0(1^[], 2^[]), k1_yellow_0(1^[], 3^[])), m1_subset_1(k1_yellow_0(1^[], 3^[]), u1_struct_0(1^[])), m1_subset_1(k1_yellow_0(1^[], 2^[]), u1_struct_0(1^[])), -v2_struct_0(1^[]), v3_orders_2(1^[]), l1_orders_2(1^[])]   (13)  substitution:[[_G2141, _G2226, _G2312], [1^[], k1_yellow_0(1^[], 2^[]), k1_yellow_0(1^[], 3^[])]]
+1.1.1  [-r1_orders_2(1^[], k1_yellow_0(1^[], 2^[]), k1_yellow_0(1^[], 3^[])), l1_orders_2(1^[]), r1_tarski(2^[], 3^[]), r1_yellow_0(1^[], 2^[]), r1_yellow_0(1^[], 3^[])]   (16)  substitution:[[_G3491, _G3597, _G3667], [1^[], 2^[], 3^[]]]
+1.1.1.1  [-l1_orders_2(1^[])]   (7)  
+1.1.1.2  [-r1_tarski(2^[], 3^[])]   (8)  
+1.1.1.3  [-r1_yellow_0(1^[], 2^[]), -v2_struct_0(1^[]), v5_orders_2(1^[]), v3_lattice3(1^[]), l1_orders_2(1^[])]   (14)  substitution:[[_G3001, _G3273], [1^[], 2^[]]]
+1.1.1.3.1  [v2_struct_0(1^[]), l1_orders_2(1^[]), v1_lattice3(1^[])]   (10)  substitution:[[_G1658], [1^[]]]
+1.1.1.3.1.1  [-l1_orders_2(1^[])]   (7)  
+1.1.1.3.1.2  [-v1_lattice3(1^[])]   (4)  
+1.1.1.3.2  [-v5_orders_2(1^[])]   (3)  
+1.1.1.3.3  [-v3_lattice3(1^[])]   (6)  
+1.1.1.3.4  [-l1_orders_2(1^[])]   (7)  
+1.1.1.4  [-r1_yellow_0(1^[], 3^[]), -v2_struct_0(1^[]), v5_orders_2(1^[]), v3_lattice3(1^[]), l1_orders_2(1^[])]   (14)  substitution:[[_G3001, _G3273], [1^[], 3^[]]]
+1.1.1.4.1  [v2_struct_0(1^[]), l1_orders_2(1^[]), v1_lattice3(1^[])]   (10)  substitution:[[_G1658], [1^[]]]
+1.1.1.4.1.1  [-l1_orders_2(1^[])]   (7)  
+1.1.1.4.1.2  [-v1_lattice3(1^[])]   (4)  
+1.1.1.4.2  [-v5_orders_2(1^[])]   (3)  
+1.1.1.4.3  [-v3_lattice3(1^[])]   (6)  
+1.1.1.4.4  [-l1_orders_2(1^[])]   (7)  
+1.1.2  [-m1_subset_1(k1_yellow_0(1^[], 3^[]), u1_struct_0(1^[])), l1_orders_2(1^[])]   (11)  substitution:[[_G1863, _G1912], [1^[], 3^[]]]
+1.1.2.1  [-l1_orders_2(1^[])]   (7)  
+1.1.3  [-m1_subset_1(k1_yellow_0(1^[], 2^[]), u1_struct_0(1^[])), l1_orders_2(1^[])]   (11)  substitution:[[_G1863, _G1912], [1^[], 2^[]]]
+1.1.3.1  [-l1_orders_2(1^[])]   (7)  
+1.1.4  [v2_struct_0(1^[]), l1_orders_2(1^[]), v1_lattice3(1^[])]   (10)  substitution:[[_G1658], [1^[]]]
+1.1.4.1  [-l1_orders_2(1^[])]   (7)  
+1.1.4.2  [-v1_lattice3(1^[])]   (4)  
+1.1.5  [-v3_orders_2(1^[])]   (1)  
+1.1.6  [-l1_orders_2(1^[])]   (7)  
+1.2  [-r1_orders_2(1^[], k2_yellow_0(1^[], 3^[]), k2_yellow_0(1^[], 2^[])), l1_orders_2(1^[]), r1_tarski(2^[], 3^[]), r2_yellow_0(1^[], 2^[]), r2_yellow_0(1^[], 3^[])]   (17)  substitution:[[_G4186, _G4362, _G4292], [1^[], 3^[], 2^[]]]
+1.2.1  [-l1_orders_2(1^[])]   (7)  
+1.2.2  [-r1_tarski(2^[], 3^[])]   (8)  
+1.2.3  [-r2_yellow_0(1^[], 2^[]), -v2_struct_0(1^[]), v5_orders_2(1^[]), v3_lattice3(1^[]), l1_orders_2(1^[])]   (15)  substitution:[[_G3001, _G3273], [1^[], 2^[]]]
+1.2.3.1  [v2_struct_0(1^[]), l1_orders_2(1^[]), v1_lattice3(1^[])]   (10)  substitution:[[_G1658], [1^[]]]
+1.2.3.1.1  [-l1_orders_2(1^[])]   (7)  
+1.2.3.1.2  [-v1_lattice3(1^[])]   (4)  
+1.2.3.2  [-v5_orders_2(1^[])]   (3)  
+1.2.3.3  [-v3_lattice3(1^[])]   (6)  
+1.2.3.4  [-l1_orders_2(1^[])]   (7)  
+1.2.4  [-r2_yellow_0(1^[], 3^[]), -v2_struct_0(1^[]), v5_orders_2(1^[]), v3_lattice3(1^[]), l1_orders_2(1^[])]   (15)  substitution:[[_G3001, _G3273], [1^[], 3^[]]]
+1.2.4.1  [v2_struct_0(1^[]), l1_orders_2(1^[]), v1_lattice3(1^[])]   (10)  substitution:[[_G1658], [1^[]]]
+1.2.4.1.1  [-l1_orders_2(1^[])]   (7)  
+1.2.4.1.2  [-v1_lattice3(1^[])]   (4)  
+1.2.4.2  [-v5_orders_2(1^[])]   (3)  
+1.2.4.3  [-v3_lattice3(1^[])]   (6)  
+1.2.4.4  [-l1_orders_2(1^[])]   (7)  
+------------------------------------------------------
+End of proof for t1_waybel_7

@@ -1,0 +1,37 @@
+
+t54_wellord1 is a Theorem
+Start of proof for t54_wellord1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(2^[])]
+ (2)  [-v1_relat_1(3^[])]
+ (3)  [-r4_wellord1(2^[], 3^[])]
+ (4)  [-v2_wellord1(2^[])]
+ (5)  [v2_wellord1(3^[])]
+ (6)  [v1_relat_1(_G1578), v1_relat_1(_G1685), v1_funct_1(_G1788), v1_relat_1(_G1788), -v2_wellord1(_G1685), v2_wellord1(_G1578), r3_wellord1(_G1578, _G1685, _G1788)]
+ (7)  [v1_relat_1(_G978), v1_relat_1(_G1081), r4_wellord1(_G978, _G1081), -v1_relat_1(1^[_G1081, _G978])]
+ (8)  [v1_relat_1(_G978), v1_relat_1(_G1081), r4_wellord1(_G978, _G1081), -v1_funct_1(1^[_G1081, _G978])]
+ (9)  [v1_relat_1(_G978), v1_relat_1(_G1081), r4_wellord1(_G978, _G1081), -r3_wellord1(_G978, _G1081, 1^[_G1081, _G978])]
+ (10)  [v1_relat_1(_G978), v1_relat_1(_G1081), -r4_wellord1(_G978, _G1081), r3_wellord1(_G978, _G1081, _G1237), v1_relat_1(_G1237), v1_funct_1(_G1237)]
+
+Connection Proof:
+-----------------
+1  [v2_wellord1(3^[])]   (5)  
+1.1  [-v2_wellord1(3^[]), v1_relat_1(2^[]), v1_relat_1(3^[]), v1_funct_1(1^[3^[], 2^[]]), v1_relat_1(1^[3^[], 2^[]]), v2_wellord1(2^[]), r3_wellord1(2^[], 3^[], 1^[3^[], 2^[]])]   (6)  substitution:[[_G1685, _G1578, _G1788], [3^[], 2^[], 1^[3^[], 2^[]]]]
+1.1.1  [-v1_relat_1(2^[])]   (1)  
+1.1.2  [-v1_relat_1(3^[])]   (2)  
+1.1.3  [-v1_funct_1(1^[3^[], 2^[]]), v1_relat_1(2^[]), v1_relat_1(3^[]), r4_wellord1(2^[], 3^[])]   (8)  substitution:[[_G1081, _G978], [3^[], 2^[]]]
+1.1.3.1  [-v1_relat_1(2^[])]   (1)  
+1.1.3.2  [-v1_relat_1(3^[])]   (2)  
+1.1.3.3  [-r4_wellord1(2^[], 3^[])]   (3)  
+1.1.4  [-v1_relat_1(1^[3^[], 2^[]]), v1_relat_1(2^[]), v1_relat_1(3^[]), r4_wellord1(2^[], 3^[])]   (7)  substitution:[[_G1081, _G978], [3^[], 2^[]]]
+1.1.4.1  [-v1_relat_1(2^[])]   (1)  
+1.1.4.2  [-v1_relat_1(3^[])]   (2)  
+1.1.4.3  [-r4_wellord1(2^[], 3^[])]   (3)  
+1.1.5  [-v2_wellord1(2^[])]   (4)  
+1.1.6  [-r3_wellord1(2^[], 3^[], 1^[3^[], 2^[]]), v1_relat_1(2^[]), v1_relat_1(3^[]), r4_wellord1(2^[], 3^[])]   (9)  substitution:[[_G978, _G1081], [2^[], 3^[]]]
+1.1.6.1  [-v1_relat_1(2^[])]   (1)  
+1.1.6.2  [-v1_relat_1(3^[])]   (2)  
+1.1.6.3  [-r4_wellord1(2^[], 3^[])]   (3)  
+------------------------------------------------------
+End of proof for t54_wellord1

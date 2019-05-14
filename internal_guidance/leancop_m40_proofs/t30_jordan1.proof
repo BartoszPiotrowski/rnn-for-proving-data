@@ -1,0 +1,44 @@
+
+t30_jordan1 is a Theorem
+Start of proof for t30_jordan1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], k1_numbers)]
+ (2)  [-m1_subset_1(2^[], k1_numbers)]
+ (3)  [-m1_subset_1(3^[], k1_numbers)]
+ (4)  [-m1_subset_1(4^[], k1_numbers)]
+ (5)  [m1_subset_1(a_4_5_jordan1(1^[], 2^[], 3^[], 4^[]), k1_zfmisc_1(u1_struct_0(k15_euclid(np__2))))]
+ (6)  [m1_subset_1(_G8487, k1_numbers), m1_subset_1(_G8622, k1_numbers), m1_subset_1(_G8752, k1_numbers), m1_subset_1(_G8877, k1_numbers), -m1_subset_1(a_4_1_jordan1(_G8487, _G8622, _G8752, _G8877), k1_zfmisc_1(k1_euclid(np__2)))]
+ (7)  [- (u1_struct_0(k15_euclid(np__2))=k1_euclid(np__2))]
+ (8)  [m1_subset_1(_G9413, k1_numbers), m1_subset_1(_G9553, k1_numbers), m1_subset_1(_G9688, k1_numbers), m1_subset_1(_G9818, k1_numbers), - (a_4_5_jordan1(_G9413, _G9553, _G9688, _G9818)=a_4_1_jordan1(_G9413, _G9553, _G9688, _G9818))]
+ (9)  [-m1_subset_1(_G3637, _G3774), m1_subset_1(_G3570, _G3705), _G3570=_G3637, _G3705=_G3774]
+ (10)  [- (_G2797=_G2797)]
+ (11)  [_G2896=_G2941, - (_G2941=_G2896)]
+ (12)  [- (_G3129=_G3242), _G3129=_G3185, _G3185=_G3242]
+ (13)  [_G4188=_G4237, - (k1_euclid(_G4188)=k1_euclid(_G4237))]
+ (14)  [- (a_4_1_jordan1(_G4466, _G4673, _G4884, _G5099)=a_4_1_jordan1(_G4569, _G4778, _G4991, _G5208)), _G4466=_G4569, _G4673=_G4778, _G4884=_G4991, _G5099=_G5208]
+ (15)  [- (a_4_5_jordan1(_G6001, _G6208, _G6419, _G6634)=a_4_5_jordan1(_G6104, _G6313, _G6526, _G6743)), _G6001=_G6104, _G6208=_G6313, _G6419=_G6526, _G6634=_G6743]
+ (16)  [_G7536=_G7585, - (k1_zfmisc_1(_G7536)=k1_zfmisc_1(_G7585))]
+ (17)  [_G7814=_G7863, - (u1_struct_0(_G7814)=u1_struct_0(_G7863))]
+ (18)  [_G8083=_G8132, - (k15_euclid(_G8083)=k15_euclid(_G8132))]
+
+Connection Proof:
+-----------------
+1  [m1_subset_1(a_4_5_jordan1(1^[], 2^[], 3^[], 4^[]), k1_zfmisc_1(u1_struct_0(k15_euclid(np__2))))]   (5)  
+1.1  [-m1_subset_1(a_4_5_jordan1(1^[], 2^[], 3^[], 4^[]), k1_zfmisc_1(u1_struct_0(k15_euclid(np__2)))), m1_subset_1(a_4_1_jordan1(1^[], 2^[], 3^[], 4^[]), k1_zfmisc_1(k1_euclid(np__2))), a_4_1_jordan1(1^[], 2^[], 3^[], 4^[])=a_4_5_jordan1(1^[], 2^[], 3^[], 4^[]), k1_zfmisc_1(k1_euclid(np__2))=k1_zfmisc_1(u1_struct_0(k15_euclid(np__2)))]   (9)  substitution:[[_G3637, _G3774, _G3570, _G3705], [a_4_5_jordan1(1^[], 2^[], 3^[], 4^[]), k1_zfmisc_1(u1_struct_0(k15_euclid(np__2))), a_4_1_jordan1(1^[], 2^[], 3^[], 4^[]), k1_zfmisc_1(k1_euclid(np__2))]]
+1.1.1  [-m1_subset_1(a_4_1_jordan1(1^[], 2^[], 3^[], 4^[]), k1_zfmisc_1(k1_euclid(np__2))), m1_subset_1(1^[], k1_numbers), m1_subset_1(2^[], k1_numbers), m1_subset_1(3^[], k1_numbers), m1_subset_1(4^[], k1_numbers)]   (6)  substitution:[[_G8487, _G8622, _G8752, _G8877], [1^[], 2^[], 3^[], 4^[]]]
+1.1.1.1  [-m1_subset_1(1^[], k1_numbers)]   (1)  
+1.1.1.2  [-m1_subset_1(2^[], k1_numbers)]   (2)  
+1.1.1.3  [-m1_subset_1(3^[], k1_numbers)]   (3)  
+1.1.1.4  [-m1_subset_1(4^[], k1_numbers)]   (4)  
+1.1.2  [- (a_4_1_jordan1(1^[], 2^[], 3^[], 4^[])=a_4_5_jordan1(1^[], 2^[], 3^[], 4^[])), a_4_5_jordan1(1^[], 2^[], 3^[], 4^[])=a_4_1_jordan1(1^[], 2^[], 3^[], 4^[])]   (11)  substitution:[[_G2941, _G2896], [a_4_1_jordan1(1^[], 2^[], 3^[], 4^[]), a_4_5_jordan1(1^[], 2^[], 3^[], 4^[])]]
+1.1.2.1  [- (a_4_5_jordan1(1^[], 2^[], 3^[], 4^[])=a_4_1_jordan1(1^[], 2^[], 3^[], 4^[])), m1_subset_1(1^[], k1_numbers), m1_subset_1(2^[], k1_numbers), m1_subset_1(3^[], k1_numbers), m1_subset_1(4^[], k1_numbers)]   (8)  substitution:[[_G9413, _G9553, _G9688, _G9818], [1^[], 2^[], 3^[], 4^[]]]
+1.1.2.1.1  [-m1_subset_1(1^[], k1_numbers)]   (1)  
+1.1.2.1.2  [-m1_subset_1(2^[], k1_numbers)]   (2)  
+1.1.2.1.3  [-m1_subset_1(3^[], k1_numbers)]   (3)  
+1.1.2.1.4  [-m1_subset_1(4^[], k1_numbers)]   (4)  
+1.1.3  [- (k1_zfmisc_1(k1_euclid(np__2))=k1_zfmisc_1(u1_struct_0(k15_euclid(np__2)))), k1_zfmisc_1(u1_struct_0(k15_euclid(np__2)))=k1_zfmisc_1(k1_euclid(np__2))]   (11)  substitution:[[_G2941, _G2896], [k1_zfmisc_1(k1_euclid(np__2)), k1_zfmisc_1(u1_struct_0(k15_euclid(np__2)))]]
+1.1.3.1  [- (k1_zfmisc_1(u1_struct_0(k15_euclid(np__2)))=k1_zfmisc_1(k1_euclid(np__2))), u1_struct_0(k15_euclid(np__2))=k1_euclid(np__2)]   (16)  substitution:[[_G7536, _G7585], [u1_struct_0(k15_euclid(np__2)), k1_euclid(np__2)]]
+1.1.3.1.1  [- (u1_struct_0(k15_euclid(np__2))=k1_euclid(np__2))]   (7)  
+------------------------------------------------------
+End of proof for t30_jordan1

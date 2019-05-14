@@ -1,0 +1,62 @@
+
+t26_power is a Theorem
+Start of proof for t26_power
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xreal_0(2^[])]
+ (2)  [k3_power(np__1, 2^[])=np__1]
+ (3)  [m1_subset_1(_G9615, k1_numbers), -v1_xreal_0(_G9615)]
+ (4)  [- (k6_numbers=k1_xboole_0)]
+ (5)  [r1_xxreal_0(np__1, np__0)]
+ (6)  [-v1_xboole_0(np__0)]
+ (7)  [-v2_xxreal_0(np__1)]
+ (8)  [-m2_subset_1(np__1, k1_numbers, k5_numbers)]
+ (9)  [-m1_subset_1(np__1, k5_numbers)]
+ (10)  [-m1_subset_1(np__1, k1_numbers)]
+ (11)  [v1_xboole_0(_G11995), - (_G11995=k1_xboole_0)]
+ (12)  [v1_xreal_0(_G12143), - (k9_prepower(np__1, _G12143)=np__1)]
+ (13)  [v1_xreal_0(_G9772), v1_xreal_0(_G9949), v1_xreal_0(_G10122), -r1_xxreal_0(_G9772, k6_numbers), _G10122=k3_power(_G9772, _G9949), - (_G10122=k9_prepower(_G9772, _G9949))]
+ (14)  [v1_xreal_0(_G9772), v1_xreal_0(_G9949), v1_xreal_0(_G10122), -r1_xxreal_0(_G9772, k6_numbers), - (_G10122=k3_power(_G9772, _G9949)), _G10122=k9_prepower(_G9772, _G9949)]
+ (15)  [v1_xreal_0(_G9772), v1_xreal_0(_G9949), v1_xreal_0(_G10122), _G9772=k6_numbers, -r1_xxreal_0(_G9949, k6_numbers), _G10122=k3_power(_G9772, _G9949), - (_G10122=k6_numbers)]
+ (16)  [v1_xreal_0(_G9772), v1_xreal_0(_G9949), v1_xreal_0(_G10122), _G9772=k6_numbers, -r1_xxreal_0(_G9949, k6_numbers), - (_G10122=k3_power(_G9772, _G9949)), _G10122=k6_numbers]
+ (17)  [v1_xreal_0(_G9772), v1_xreal_0(_G9949), v1_xreal_0(_G10122), v1_int_1(_G9949), _G10122=k3_power(_G9772, _G9949), -v1_int_1(1^[_G10122, _G9949, _G9772])]
+ (18)  [v1_xreal_0(_G9772), v1_xreal_0(_G9949), v1_xreal_0(_G10122), v1_int_1(_G9949), _G10122=k3_power(_G9772, _G9949), - (1^[_G10122, _G9949, _G9772]=_G9949)]
+ (19)  [v1_xreal_0(_G9772), v1_xreal_0(_G9949), v1_xreal_0(_G10122), v1_int_1(_G9949), _G10122=k3_power(_G9772, _G9949), - (_G10122=k4_prepower(_G9772, 1^[_G10122, _G9949, _G9772]))]
+ (20)  [v1_xreal_0(_G9772), v1_xreal_0(_G9949), v1_xreal_0(_G10122), v1_int_1(_G9949), - (_G10122=k3_power(_G9772, _G9949)), v1_int_1(_G11054), _G11054=_G9949, _G10122=k4_prepower(_G9772, _G11054)]
+ (21)  [- (k4_prepower(_G7770, _G7905)=k4_prepower(_G7837, _G7974)), _G7770=_G7837, _G7905=_G7974]
+ (22)  [- (k9_prepower(_G8367, _G8502)=k9_prepower(_G8434, _G8571)), _G8367=_G8434, _G8502=_G8571]
+ (23)  [- (k3_power(_G8955, _G9090)=k3_power(_G9022, _G9159)), _G8955=_G9022, _G9090=_G9159]
+ (24)  [- (_G3516=_G3516)]
+ (25)  [_G3615=_G3660, - (_G3660=_G3615)]
+ (26)  [- (_G3848=_G3961), _G3848=_G3904, _G3904=_G3961]
+ (27)  [-v1_int_1(_G4347), _G4298=_G4347, v1_int_1(_G4298)]
+ (28)  [-r1_xxreal_0(_G4643, _G4780), r1_xxreal_0(_G4576, _G4711), _G4576=_G4643, _G4711=_G4780]
+ (29)  [-v2_xxreal_0(_G5222), _G5173=_G5222, v2_xxreal_0(_G5173)]
+ (30)  [-m2_subset_1(_G5536, _G5709, _G5886), m2_subset_1(_G5451, _G5622, _G5797), _G5451=_G5536, _G5622=_G5709, _G5797=_G5886]
+ (31)  [-m1_subset_1(_G6546, _G6683), m1_subset_1(_G6479, _G6614), _G6479=_G6546, _G6614=_G6683]
+ (32)  [-v1_xboole_0(_G7125), _G7076=_G7125, v1_xboole_0(_G7076)]
+ (33)  [-v1_xreal_0(_G7394), _G7345=_G7394, v1_xreal_0(_G7345)]
+
+Connection Proof:
+-----------------
+1  [k3_power(np__1, 2^[])=np__1]   (2)  
+1.1  [- (k3_power(np__1, 2^[])=np__1), np__1=k3_power(np__1, 2^[])]   (25)  substitution:[[_G3660, _G3615], [k3_power(np__1, 2^[]), np__1]]
+1.1.1  [- (np__1=k3_power(np__1, 2^[])), v1_xreal_0(np__1), v1_xreal_0(2^[]), v1_xreal_0(np__1), -r1_xxreal_0(np__1, k6_numbers), np__1=k9_prepower(np__1, 2^[])]   (14)  substitution:[[_G10122, _G9772, _G9949], [np__1, np__1, 2^[]]]
+1.1.1.1  [-v1_xreal_0(np__1), m1_subset_1(np__1, k1_numbers)]   (3)  substitution:[[_G9615], [np__1]]
+1.1.1.1.1  [-m1_subset_1(np__1, k1_numbers)]   (10)  
+1.1.1.2  [-v1_xreal_0(2^[])]   (1)  
+1.1.1.3  [-v1_xreal_0(np__1)]   (lemmata:1.1.1)  
+1.1.1.4  [r1_xxreal_0(np__1, k6_numbers), -r1_xxreal_0(np__1, np__0), np__1=np__1, k6_numbers=np__0]   (28)  substitution:[[_G4576, _G4711, _G4643, _G4780], [np__1, k6_numbers, np__1, np__0]]
+1.1.1.4.1  [r1_xxreal_0(np__1, np__0)]   (5)  
+1.1.1.4.2  [- (np__1=np__1)]   (24)  substitution:[[_G3516], [np__1]]
+1.1.1.4.3  [- (k6_numbers=np__0), np__0=k6_numbers]   (25)  substitution:[[_G3660, _G3615], [k6_numbers, np__0]]
+1.1.1.4.3.1  [- (np__0=k6_numbers), np__0=k1_xboole_0, k1_xboole_0=k6_numbers]   (26)  substitution:[[_G3848, _G3961, _G3904], [np__0, k6_numbers, k1_xboole_0]]
+1.1.1.4.3.1.1  [- (np__0=k1_xboole_0), v1_xboole_0(np__0)]   (11)  substitution:[[_G11995], [np__0]]
+1.1.1.4.3.1.1.1  [-v1_xboole_0(np__0)]   (6)  
+1.1.1.4.3.1.2  [- (k1_xboole_0=k6_numbers), k6_numbers=k1_xboole_0]   (25)  substitution:[[_G3660, _G3615], [k1_xboole_0, k6_numbers]]
+1.1.1.4.3.1.2.1  [- (k6_numbers=k1_xboole_0)]   (4)  
+1.1.1.5  [- (np__1=k9_prepower(np__1, 2^[])), k9_prepower(np__1, 2^[])=np__1]   (25)  substitution:[[_G3660, _G3615], [np__1, k9_prepower(np__1, 2^[])]]
+1.1.1.5.1  [- (k9_prepower(np__1, 2^[])=np__1), v1_xreal_0(2^[])]   (12)  substitution:[[_G12143], [2^[]]]
+1.1.1.5.1.1  [-v1_xreal_0(2^[])]   (1)  
+------------------------------------------------------
+End of proof for t26_power

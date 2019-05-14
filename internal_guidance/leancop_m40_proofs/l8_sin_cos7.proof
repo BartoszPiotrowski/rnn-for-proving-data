@@ -1,0 +1,55 @@
+
+l8_sin_cos7 is a Theorem
+Start of proof for l8_sin_cos7
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xreal_0(1^[])]
+ (2)  [-r1_xxreal_0(np__1, 1^[])]
+ (3)  [r1_xxreal_0(k6_numbers, k10_binop_2(k3_square_1(1^[]), np__1))]
+ (4)  [m1_subset_1(_G9347, k1_numbers), -v1_xreal_0(_G9347)]
+ (5)  [v1_xreal_0(_G9504), -v1_xreal_0(k3_square_1(_G9504))]
+ (6)  [- (k2_xcmplx_0(np__1, k4_xcmplx_0(np__1))=k6_numbers)]
+ (7)  [v1_xreal_0(_G9761), v1_xreal_0(_G9851), r1_xxreal_0(_G9761, _G9851), -r1_xxreal_0(k6_numbers, k6_xcmplx_0(_G9851, _G9761))]
+ (8)  [- (k10_binop_2(_G10169, _G10224)=k6_xcmplx_0(_G10169, _G10224)), v1_xreal_0(_G10169), v1_xreal_0(_G10224)]
+ (9)  [- (k2_xcmplx_0(np__1, k4_xcmplx_0(np__1))=np__0)]
+ (10)  [-v2_xxreal_0(np__1)]
+ (11)  [-m2_subset_1(np__1, k1_numbers, k5_numbers)]
+ (12)  [-m1_subset_1(np__1, k5_numbers)]
+ (13)  [-m1_subset_1(np__1, k1_numbers)]
+ (14)  [v1_xreal_0(_G10947), -r1_xxreal_0(np__1, k3_square_1(_G10947)), r1_xxreal_0(_G10947, k4_xcmplx_0(np__1))]
+ (15)  [v1_xreal_0(_G10947), -r1_xxreal_0(np__1, k3_square_1(_G10947)), r1_xxreal_0(np__1, _G10947)]
+ (16)  [- (k6_xcmplx_0(_G6904, _G7039)=k6_xcmplx_0(_G6971, _G7108)), _G6904=_G6971, _G7039=_G7108]
+ (17)  [- (k2_xcmplx_0(_G7501, _G7636)=k2_xcmplx_0(_G7568, _G7705)), _G7501=_G7568, _G7636=_G7705]
+ (18)  [_G8098=_G8147, - (k4_xcmplx_0(_G8098)=k4_xcmplx_0(_G8147))]
+ (19)  [_G8964=_G9013, - (k3_square_1(_G8964)=k3_square_1(_G9013))]
+ (20)  [- (k10_binop_2(_G8376, _G8511)=k10_binop_2(_G8443, _G8580)), _G8376=_G8443, _G8511=_G8580]
+ (21)  [- (_G3248=_G3248)]
+ (22)  [_G3347=_G3392, - (_G3392=_G3347)]
+ (23)  [- (_G3580=_G3693), _G3580=_G3636, _G3636=_G3693]
+ (24)  [-v2_xxreal_0(_G4079), _G4030=_G4079, v2_xxreal_0(_G4030)]
+ (25)  [-m2_subset_1(_G4393, _G4566, _G4743), m2_subset_1(_G4308, _G4479, _G4654), _G4308=_G4393, _G4479=_G4566, _G4654=_G4743]
+ (26)  [-m1_subset_1(_G5403, _G5540), m1_subset_1(_G5336, _G5471), _G5336=_G5403, _G5471=_G5540]
+ (27)  [-v1_xreal_0(_G5982), _G5933=_G5982, v1_xreal_0(_G5933)]
+ (28)  [-r1_xxreal_0(_G6269, _G6406), r1_xxreal_0(_G6202, _G6337), _G6202=_G6269, _G6337=_G6406]
+
+Connection Proof:
+-----------------
+1  [r1_xxreal_0(k6_numbers, k10_binop_2(k3_square_1(1^[]), np__1))]   (3)  
+1.1  [-r1_xxreal_0(k6_numbers, k10_binop_2(k3_square_1(1^[]), np__1)), r1_xxreal_0(k6_numbers, k6_xcmplx_0(k3_square_1(1^[]), np__1)), k6_numbers=k6_numbers, k6_xcmplx_0(k3_square_1(1^[]), np__1)=k10_binop_2(k3_square_1(1^[]), np__1)]   (28)  substitution:[[_G6269, _G6406, _G6202, _G6337], [k6_numbers, k10_binop_2(k3_square_1(1^[]), np__1), k6_numbers, k6_xcmplx_0(k3_square_1(1^[]), np__1)]]
+1.1.1  [-r1_xxreal_0(k6_numbers, k6_xcmplx_0(k3_square_1(1^[]), np__1)), v1_xreal_0(np__1), v1_xreal_0(k3_square_1(1^[])), r1_xxreal_0(np__1, k3_square_1(1^[]))]   (7)  substitution:[[_G9851, _G9761], [k3_square_1(1^[]), np__1]]
+1.1.1.1  [-v1_xreal_0(np__1), m1_subset_1(np__1, k1_numbers)]   (4)  substitution:[[_G9347], [np__1]]
+1.1.1.1.1  [-m1_subset_1(np__1, k1_numbers)]   (13)  
+1.1.1.2  [-v1_xreal_0(k3_square_1(1^[])), v1_xreal_0(1^[])]   (5)  substitution:[[_G9504], [1^[]]]
+1.1.1.2.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.1.3  [-r1_xxreal_0(np__1, k3_square_1(1^[])), v1_xreal_0(1^[]), r1_xxreal_0(np__1, 1^[])]   (15)  substitution:[[_G10947], [1^[]]]
+1.1.1.3.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.1.3.2  [-r1_xxreal_0(np__1, 1^[])]   (2)  
+1.1.2  [- (k6_numbers=k6_numbers)]   (21)  substitution:[[_G3248], [k6_numbers]]
+1.1.3  [- (k6_xcmplx_0(k3_square_1(1^[]), np__1)=k10_binop_2(k3_square_1(1^[]), np__1)), k10_binop_2(k3_square_1(1^[]), np__1)=k6_xcmplx_0(k3_square_1(1^[]), np__1)]   (22)  substitution:[[_G3392, _G3347], [k6_xcmplx_0(k3_square_1(1^[]), np__1), k10_binop_2(k3_square_1(1^[]), np__1)]]
+1.1.3.1  [- (k10_binop_2(k3_square_1(1^[]), np__1)=k6_xcmplx_0(k3_square_1(1^[]), np__1)), v1_xreal_0(k3_square_1(1^[])), v1_xreal_0(np__1)]   (8)  substitution:[[_G10169, _G10224], [k3_square_1(1^[]), np__1]]
+1.1.3.1.1  [-v1_xreal_0(k3_square_1(1^[])), v1_xreal_0(1^[])]   (5)  substitution:[[_G9504], [1^[]]]
+1.1.3.1.1.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.3.1.2  [-v1_xreal_0(np__1), m1_subset_1(np__1, k1_numbers)]   (4)  substitution:[[_G9347], [np__1]]
+1.1.3.1.2.1  [-m1_subset_1(np__1, k1_numbers)]   (13)  
+------------------------------------------------------
+End of proof for l8_sin_cos7

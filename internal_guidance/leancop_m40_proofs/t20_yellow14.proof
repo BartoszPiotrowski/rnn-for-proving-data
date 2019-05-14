@@ -1,0 +1,43 @@
+
+t20_yellow14 is a Theorem
+Start of proof for t20_yellow14
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-l1_pre_topc(1^[])]
+ (2)  [-m1_subset_1(2^[], u1_struct_0(1^[]))]
+ (3)  [-m1_subset_1(3^[], u1_struct_0(1^[]))]
+ (4)  [-m1_subset_1(4^[], k1_zfmisc_1(u1_struct_0(1^[])))]
+ (5)  [-m1_subset_1(5^[], k1_zfmisc_1(u1_struct_0(1^[])))]
+ (6)  [- (4^[]=k1_tarski(2^[]))]
+ (7)  [-r1_tarski(k2_pre_topc(1^[], 4^[]), k2_pre_topc(1^[], 5^[]))]
+ (8)  [r2_hidden(2^[], k2_pre_topc(1^[], 5^[]))]
+ (9)  [l1_pre_topc(_G7261), m1_subset_1(_G7350, k1_zfmisc_1(u1_struct_0(_G7261))), -r1_tarski(_G7350, k2_pre_topc(_G7261, _G7350))]
+ (10)  [-r1_tarski(_G7642, _G7755), r1_tarski(_G7642, _G7698), r1_tarski(_G7698, _G7755)]
+ (11)  [r1_tarski(k1_tarski(_G8041), _G8088), -r2_hidden(_G8041, _G8088)]
+ (12)  [-r1_tarski(k1_tarski(_G8041), _G8088), r2_hidden(_G8041, _G8088)]
+ (13)  [_G5755=_G5804, - (k1_zfmisc_1(_G5755)=k1_zfmisc_1(_G5804))]
+ (14)  [_G6033=_G6082, - (u1_struct_0(_G6033)=u1_struct_0(_G6082))]
+ (15)  [_G6311=_G6360, - (k1_tarski(_G6311)=k1_tarski(_G6360))]
+ (16)  [- (k2_pre_topc(_G6580, _G6715)=k2_pre_topc(_G6647, _G6784)), _G6580=_G6647, _G6715=_G6784]
+ (17)  [- (_G2829=_G2829)]
+ (18)  [_G2928=_G2973, - (_G2973=_G2928)]
+ (19)  [- (_G3161=_G3274), _G3161=_G3217, _G3217=_G3274]
+ (20)  [-l1_pre_topc(_G3660), _G3611=_G3660, l1_pre_topc(_G3611)]
+ (21)  [-m1_subset_1(_G3956, _G4093), m1_subset_1(_G3889, _G4024), _G3889=_G3956, _G4024=_G4093]
+ (22)  [-r1_tarski(_G4553, _G4690), r1_tarski(_G4486, _G4621), _G4486=_G4553, _G4621=_G4690]
+ (23)  [-r2_hidden(_G5141, _G5278), r2_hidden(_G5074, _G5209), _G5074=_G5141, _G5209=_G5278]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(2^[], k2_pre_topc(1^[], 5^[]))]   (8)  
+1.1  [-r2_hidden(2^[], k2_pre_topc(1^[], 5^[])), r1_tarski(k1_tarski(2^[]), k2_pre_topc(1^[], 5^[]))]   (11)  substitution:[[_G8041, _G8088], [2^[], k2_pre_topc(1^[], 5^[])]]
+1.1.1  [-r1_tarski(k1_tarski(2^[]), k2_pre_topc(1^[], 5^[])), r1_tarski(k1_tarski(2^[]), k2_pre_topc(1^[], 4^[])), r1_tarski(k2_pre_topc(1^[], 4^[]), k2_pre_topc(1^[], 5^[]))]   (10)  substitution:[[_G7642, _G7755, _G7698], [k1_tarski(2^[]), k2_pre_topc(1^[], 5^[]), k2_pre_topc(1^[], 4^[])]]
+1.1.1.1  [-r1_tarski(k1_tarski(2^[]), k2_pre_topc(1^[], 4^[])), r1_tarski(4^[], k2_pre_topc(1^[], 4^[])), 4^[]=k1_tarski(2^[]), k2_pre_topc(1^[], 4^[])=k2_pre_topc(1^[], 4^[])]   (22)  substitution:[[_G4553, _G4690, _G4486, _G4621], [k1_tarski(2^[]), k2_pre_topc(1^[], 4^[]), 4^[], k2_pre_topc(1^[], 4^[])]]
+1.1.1.1.1  [-r1_tarski(4^[], k2_pre_topc(1^[], 4^[])), l1_pre_topc(1^[]), m1_subset_1(4^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (9)  substitution:[[_G7350, _G7261], [4^[], 1^[]]]
+1.1.1.1.1.1  [-l1_pre_topc(1^[])]   (1)  
+1.1.1.1.1.2  [-m1_subset_1(4^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (4)  
+1.1.1.1.2  [- (4^[]=k1_tarski(2^[]))]   (6)  
+1.1.1.1.3  [- (k2_pre_topc(1^[], 4^[])=k2_pre_topc(1^[], 4^[]))]   (17)  substitution:[[_G2829], [k2_pre_topc(1^[], 4^[])]]
+1.1.1.2  [-r1_tarski(k2_pre_topc(1^[], 4^[]), k2_pre_topc(1^[], 5^[]))]   (7)  
+------------------------------------------------------
+End of proof for t20_yellow14

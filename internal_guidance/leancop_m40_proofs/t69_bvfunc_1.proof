@@ -1,0 +1,36 @@
+
+t69_bvfunc_1 is a Theorem
+Start of proof for t69_bvfunc_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xboolean(1^[])]
+ (2)  [-v1_xboolean(2^[])]
+ (3)  [-v1_xboolean(3^[])]
+ (4)  [- (k6_xboolean(1^[], k6_xboolean(2^[], 3^[]))=k8_margrel1)]
+ (5)  [- (2^[]=k8_margrel1)]
+ (6)  [k6_xboolean(1^[], 3^[])=k8_margrel1]
+ (7)  [- (k6_xboolean(_G3291, _G3426)=k6_xboolean(_G3358, _G3495)), _G3291=_G3358, _G3426=_G3495]
+ (8)  [-v1_xboolean(_G3050), _G3001=_G3050, v1_xboolean(_G3001)]
+ (9)  [- (_G2228=_G2228)]
+ (10)  [_G2327=_G2372, - (_G2372=_G2327)]
+ (11)  [- (_G2560=_G2673), _G2560=_G2616, _G2616=_G2673]
+ (12)  [-v1_xboolean(k6_xboolean(_G3909, _G3960)), v1_xboolean(_G3909), v1_xboolean(_G3960)]
+ (13)  [v1_xboolean(_G4205), v1_xboolean(_G4301), - (_G4301=k8_margrel1), _G4205=k8_margrel1, k6_xboolean(_G4205, _G4301)=k8_margrel1]
+ (14)  [v1_xboolean(_G4694), v1_xboolean(_G4803), v1_xboolean(_G4908), k6_xboolean(_G4694, k6_xboolean(_G4803, _G4908))=k8_margrel1, - (k6_xboolean(_G4803, k6_xboolean(_G4694, _G4908))=k8_margrel1)]
+
+Connection Proof:
+-----------------
+1  [k6_xboolean(1^[], 3^[])=k8_margrel1]   (6)  
+1.1  [- (k6_xboolean(1^[], 3^[])=k8_margrel1), v1_xboolean(2^[]), v1_xboolean(k6_xboolean(1^[], 3^[])), 2^[]=k8_margrel1, k6_xboolean(2^[], k6_xboolean(1^[], 3^[]))=k8_margrel1]   (13)  substitution:[[_G4301, _G4205], [k6_xboolean(1^[], 3^[]), 2^[]]]
+1.1.1  [-v1_xboolean(2^[])]   (2)  
+1.1.2  [-v1_xboolean(k6_xboolean(1^[], 3^[])), v1_xboolean(1^[]), v1_xboolean(3^[])]   (12)  substitution:[[_G3909, _G3960], [1^[], 3^[]]]
+1.1.2.1  [-v1_xboolean(1^[])]   (1)  
+1.1.2.2  [-v1_xboolean(3^[])]   (3)  
+1.1.3  [- (2^[]=k8_margrel1)]   (5)  
+1.1.4  [- (k6_xboolean(2^[], k6_xboolean(1^[], 3^[]))=k8_margrel1), v1_xboolean(1^[]), v1_xboolean(2^[]), v1_xboolean(3^[]), k6_xboolean(1^[], k6_xboolean(2^[], 3^[]))=k8_margrel1]   (14)  substitution:[[_G4803, _G4694, _G4908], [2^[], 1^[], 3^[]]]
+1.1.4.1  [-v1_xboolean(1^[])]   (1)  
+1.1.4.2  [-v1_xboolean(2^[])]   (2)  
+1.1.4.3  [-v1_xboolean(3^[])]   (3)  
+1.1.4.4  [- (k6_xboolean(1^[], k6_xboolean(2^[], 3^[]))=k8_margrel1)]   (4)  
+------------------------------------------------------
+End of proof for t69_bvfunc_1

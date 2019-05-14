@@ -1,0 +1,54 @@
+
+t13_setfam_1 is a Theorem
+Start of proof for t13_setfam_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-r1_setfam_1(7^[], 8^[])]
+ (2)  [r1_tarski(k3_tarski(7^[]), k3_tarski(8^[]))]
+ (3)  [_G4692=_G4741, - (k3_tarski(_G4692)=k3_tarski(_G4741))]
+ (4)  [- (_G2074=_G2074)]
+ (5)  [_G2173=_G2218, - (_G2218=_G2173)]
+ (6)  [- (_G2406=_G2519), _G2406=_G2462, _G2462=_G2519]
+ (7)  [-r2_hidden(_G2923, _G3060), r2_hidden(_G2856, _G2991), _G2856=_G2923, _G2991=_G3060]
+ (8)  [-r1_setfam_1(_G3520, _G3657), r1_setfam_1(_G3453, _G3588), _G3453=_G3520, _G3588=_G3657]
+ (9)  [-r1_tarski(_G4108, _G4245), r1_tarski(_G4041, _G4176), _G4041=_G4108, _G4176=_G4245]
+ (10)  [r1_setfam_1(_G4991, _G5062), r2_hidden(_G5191, _G4991), -r2_hidden(1^[_G5191, _G5062, _G4991], _G5062)]
+ (11)  [r1_setfam_1(_G4991, _G5062), r2_hidden(_G5191, _G4991), -r1_tarski(_G5191, 1^[_G5191, _G5062, _G4991])]
+ (12)  [-r1_setfam_1(_G4991, _G5062), -r2_hidden(2^[_G5062, _G4991], _G4991)]
+ (13)  [-r1_setfam_1(_G4991, _G5062), r2_hidden(_G7403, _G5062), r1_tarski(2^[_G5062, _G4991], _G7403)]
+ (14)  [-r1_tarski(_G5612, _G5668), -r2_hidden(3^[_G5668, _G5612], _G5612)]
+ (15)  [-r1_tarski(_G5612, _G5668), r2_hidden(3^[_G5668, _G5612], _G5668)]
+ (16)  [r1_tarski(_G5612, _G5668), r2_hidden(_G5782, _G5612), -r2_hidden(_G5782, _G5668)]
+ (17)  [_G6074=k3_tarski(_G6005), r2_hidden(_G6215, _G6074), -r2_hidden(_G6215, 4^[_G6215, _G6074, _G6005])]
+ (18)  [_G6074=k3_tarski(_G6005), r2_hidden(_G6215, _G6074), -r2_hidden(4^[_G6215, _G6074, _G6005], _G6005)]
+ (19)  [_G6074=k3_tarski(_G6005), -r2_hidden(_G6215, _G6074), r2_hidden(_G6215, _G6335), r2_hidden(_G6335, _G6005)]
+ (20)  [- (_G6074=k3_tarski(_G6005)), -r2_hidden(5^[_G6074, _G6005], _G6074), -r2_hidden(5^[_G6074, _G6005], 6^[_G6074, _G6005])]
+ (21)  [- (_G6074=k3_tarski(_G6005)), -r2_hidden(5^[_G6074, _G6005], _G6074), -r2_hidden(6^[_G6074, _G6005], _G6005)]
+ (22)  [- (_G6074=k3_tarski(_G6005)), r2_hidden(5^[_G6074, _G6005], _G6074), r2_hidden(5^[_G6074, _G6005], _G7727), r2_hidden(_G7727, _G6005)]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k3_tarski(7^[]), k3_tarski(8^[]))]   (2)  
+1.1  [-r1_tarski(k3_tarski(7^[]), k3_tarski(8^[])), -r2_hidden(3^[k3_tarski(8^[]), k3_tarski(7^[])], k3_tarski(7^[]))]   (14)  substitution:[[_G5612, _G5668], [k3_tarski(7^[]), k3_tarski(8^[])]]
+1.1.1  [r2_hidden(3^[k3_tarski(8^[]), k3_tarski(7^[])], k3_tarski(7^[])), k3_tarski(7^[])=k3_tarski(7^[]), -r2_hidden(4^[3^[k3_tarski(8^[]), k3_tarski(7^[])], k3_tarski(7^[]), 7^[]], 7^[])]   (18)  substitution:[[_G6215, _G6074, _G6005], [3^[k3_tarski(8^[]), k3_tarski(7^[])], k3_tarski(7^[]), 7^[]]]
+1.1.1.1  [- (k3_tarski(7^[])=k3_tarski(7^[])), 7^[]=7^[]]   (3)  substitution:[[_G4692, _G4741], [7^[], 7^[]]]
+1.1.1.1.1  [- (7^[]=7^[])]   (4)  substitution:[[_G2074], [7^[]]]
+1.1.1.2  [r2_hidden(4^[3^[k3_tarski(8^[]), k3_tarski(7^[])], k3_tarski(7^[]), 7^[]], 7^[]), r1_setfam_1(7^[], 8^[]), -r2_hidden(1^[4^[3^[k3_tarski(8^[]), k3_tarski(7^[])], k3_tarski(7^[]), 7^[]], 8^[], 7^[]], 8^[])]   (10)  substitution:[[_G5191, _G4991, _G5062], [4^[3^[k3_tarski(8^[]), k3_tarski(7^[])], k3_tarski(7^[]), 7^[]], 7^[], 8^[]]]
+1.1.1.2.1  [-r1_setfam_1(7^[], 8^[])]   (1)  
+1.1.1.2.2  [r2_hidden(1^[4^[3^[k3_tarski(8^[]), k3_tarski(7^[])], k3_tarski(7^[]), 7^[]], 8^[], 7^[]], 8^[]), k3_tarski(8^[])=k3_tarski(8^[]), -r2_hidden(3^[k3_tarski(8^[]), k3_tarski(7^[])], k3_tarski(8^[])), r2_hidden(3^[k3_tarski(8^[]), k3_tarski(7^[])], 1^[4^[3^[k3_tarski(8^[]), k3_tarski(7^[])], k3_tarski(7^[]), 7^[]], 8^[], 7^[]])]   (19)  substitution:[[_G6335, _G6005, _G6074, _G6215], [1^[4^[3^[k3_tarski(8^[]), k3_tarski(7^[])], k3_tarski(7^[]), 7^[]], 8^[], 7^[]], 8^[], k3_tarski(8^[]), 3^[k3_tarski(8^[]), k3_tarski(7^[])]]]
+1.1.1.2.2.1  [- (k3_tarski(8^[])=k3_tarski(8^[])), 8^[]=8^[]]   (3)  substitution:[[_G4692, _G4741], [8^[], 8^[]]]
+1.1.1.2.2.1.1  [- (8^[]=8^[])]   (4)  substitution:[[_G2074], [8^[]]]
+1.1.1.2.2.2  [r2_hidden(3^[k3_tarski(8^[]), k3_tarski(7^[])], k3_tarski(8^[])), -r2_hidden(3^[k3_tarski(8^[]), k3_tarski(7^[])], k3_tarski(8^[])), 3^[k3_tarski(8^[]), k3_tarski(7^[])]=3^[k3_tarski(8^[]), k3_tarski(7^[])], k3_tarski(8^[])=k3_tarski(8^[])]   (7)  substitution:[[_G2856, _G2991, _G2923, _G3060], [3^[k3_tarski(8^[]), k3_tarski(7^[])], k3_tarski(8^[]), 3^[k3_tarski(8^[]), k3_tarski(7^[])], k3_tarski(8^[])]]
+1.1.1.2.2.2.1  [r2_hidden(3^[k3_tarski(8^[]), k3_tarski(7^[])], k3_tarski(8^[])), -r1_tarski(k3_tarski(7^[]), k3_tarski(8^[]))]   (15)  substitution:[[_G5668, _G5612], [k3_tarski(8^[]), k3_tarski(7^[])]]
+1.1.1.2.2.2.1.1  [r1_tarski(k3_tarski(7^[]), k3_tarski(8^[]))]   (2)  
+1.1.1.2.2.2.2  [- (3^[k3_tarski(8^[]), k3_tarski(7^[])]=3^[k3_tarski(8^[]), k3_tarski(7^[])])]   (4)  substitution:[[_G2074], [3^[k3_tarski(8^[]), k3_tarski(7^[])]]]
+1.1.1.2.2.2.3  [- (k3_tarski(8^[])=k3_tarski(8^[]))]   (4)  substitution:[[_G2074], [k3_tarski(8^[])]]
+1.1.1.2.2.3  [-r2_hidden(3^[k3_tarski(8^[]), k3_tarski(7^[])], 1^[4^[3^[k3_tarski(8^[]), k3_tarski(7^[])], k3_tarski(7^[]), 7^[]], 8^[], 7^[]]), r1_tarski(4^[3^[k3_tarski(8^[]), k3_tarski(7^[])], k3_tarski(7^[]), 7^[]], 1^[4^[3^[k3_tarski(8^[]), k3_tarski(7^[])], k3_tarski(7^[]), 7^[]], 8^[], 7^[]]), r2_hidden(3^[k3_tarski(8^[]), k3_tarski(7^[])], 4^[3^[k3_tarski(8^[]), k3_tarski(7^[])], k3_tarski(7^[]), 7^[]])]   (16)  substitution:[[_G5782, _G5668, _G5612], [3^[k3_tarski(8^[]), k3_tarski(7^[])], 1^[4^[3^[k3_tarski(8^[]), k3_tarski(7^[])], k3_tarski(7^[]), 7^[]], 8^[], 7^[]], 4^[3^[k3_tarski(8^[]), k3_tarski(7^[])], k3_tarski(7^[]), 7^[]]]]
+1.1.1.2.2.3.1  [-r1_tarski(4^[3^[k3_tarski(8^[]), k3_tarski(7^[])], k3_tarski(7^[]), 7^[]], 1^[4^[3^[k3_tarski(8^[]), k3_tarski(7^[])], k3_tarski(7^[]), 7^[]], 8^[], 7^[]]), r1_setfam_1(7^[], 8^[]), r2_hidden(4^[3^[k3_tarski(8^[]), k3_tarski(7^[])], k3_tarski(7^[]), 7^[]], 7^[])]   (11)  substitution:[[_G5191, _G5062, _G4991], [4^[3^[k3_tarski(8^[]), k3_tarski(7^[])], k3_tarski(7^[]), 7^[]], 8^[], 7^[]]]
+1.1.1.2.2.3.1.1  [-r1_setfam_1(7^[], 8^[])]   (1)  
+1.1.1.2.2.3.1.2  [-r2_hidden(4^[3^[k3_tarski(8^[]), k3_tarski(7^[])], k3_tarski(7^[]), 7^[]], 7^[])]   (reduction:1.1.1)  
+1.1.1.2.2.3.2  [-r2_hidden(3^[k3_tarski(8^[]), k3_tarski(7^[])], 4^[3^[k3_tarski(8^[]), k3_tarski(7^[])], k3_tarski(7^[]), 7^[]]), k3_tarski(7^[])=k3_tarski(7^[]), r2_hidden(3^[k3_tarski(8^[]), k3_tarski(7^[])], k3_tarski(7^[]))]   (17)  substitution:[[_G6215, _G6074, _G6005], [3^[k3_tarski(8^[]), k3_tarski(7^[])], k3_tarski(7^[]), 7^[]]]
+1.1.1.2.2.3.2.1  [- (k3_tarski(7^[])=k3_tarski(7^[]))]   (4)  substitution:[[_G2074], [k3_tarski(7^[])]]
+1.1.1.2.2.3.2.2  [-r2_hidden(3^[k3_tarski(8^[]), k3_tarski(7^[])], k3_tarski(7^[]))]   (reduction:1.1)  
+------------------------------------------------------
+End of proof for t13_setfam_1

@@ -1,0 +1,35 @@
+
+t27_toler_1 is a Theorem
+Start of proof for t27_toler_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-6^[], r2_hidden(4^[], k9_relat_1(3^[], 2^[]))]
+ (2)  [-6^[], -r2_hidden(k4_tarski(2^[], 4^[]), 3^[])]
+ (3)  [-5^[], r2_hidden(k4_tarski(2^[], 4^[]), 3^[])]
+ (4)  [-5^[], -r2_hidden(4^[], k9_relat_1(3^[], 2^[]))]
+ (5)  [-v1_relat_2(3^[])]
+ (6)  [-v3_relat_2(3^[])]
+ (7)  [-v1_partfun1(3^[], 1^[])]
+ (8)  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]
+ (9)  [5^[], 6^[]]
+ (10)  [m1_subset_1(_G1008, k1_zfmisc_1(k2_zfmisc_1(_G899, _G953))), -v1_relat_1(_G1008)]
+ (11)  [v1_relat_1(_G1365), r2_hidden(k4_tarski(_G1242, _G1303), _G1365), -r2_hidden(_G1303, k9_relat_1(_G1365, _G1242))]
+ (12)  [v1_relat_1(_G1365), -r2_hidden(k4_tarski(_G1242, _G1303), _G1365), r2_hidden(_G1303, k9_relat_1(_G1365, _G1242))]
+
+Connection Proof:
+-----------------
+1  [5^[], 6^[]]   (9)  
+1.1  [-5^[], r2_hidden(k4_tarski(2^[], 4^[]), 3^[])]   (3)  
+1.1.1  [-r2_hidden(k4_tarski(2^[], 4^[]), 3^[]), v1_relat_1(3^[]), r2_hidden(4^[], k9_relat_1(3^[], 2^[]))]   (12)  substitution:[[_G1242, _G1303, _G1365], [2^[], 4^[], 3^[]]]
+1.1.1.1  [-v1_relat_1(3^[]), m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]   (10)  substitution:[[_G1008, _G899, _G953], [3^[], 1^[], 1^[]]]
+1.1.1.1.1  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]   (8)  
+1.1.1.2  [-r2_hidden(4^[], k9_relat_1(3^[], 2^[])), -5^[]]   (4)  
+1.1.1.2.1  [5^[]]   (reduction:1)  
+1.2  [-6^[], r2_hidden(4^[], k9_relat_1(3^[], 2^[]))]   (1)  
+1.2.1  [-r2_hidden(4^[], k9_relat_1(3^[], 2^[])), v1_relat_1(3^[]), r2_hidden(k4_tarski(2^[], 4^[]), 3^[])]   (11)  substitution:[[_G1303, _G1365, _G1242], [4^[], 3^[], 2^[]]]
+1.2.1.1  [-v1_relat_1(3^[]), m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]   (10)  substitution:[[_G1008, _G899, _G953], [3^[], 1^[], 1^[]]]
+1.2.1.1.1  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]   (8)  
+1.2.1.2  [-r2_hidden(k4_tarski(2^[], 4^[]), 3^[]), -6^[]]   (2)  
+1.2.1.2.1  [6^[]]   (reduction:1)  
+------------------------------------------------------
+End of proof for t27_toler_1

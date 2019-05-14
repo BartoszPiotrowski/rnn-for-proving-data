@@ -1,0 +1,79 @@
+
+t56_zfmisc_1 is a Theorem
+Start of proof for t56_zfmisc_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-7^[], r2_hidden(3^[], k4_xboole_0(4^[], k1_tarski(5^[])))]
+ (2)  [-7^[], 3^[]=5^[]]
+ (3)  [-7^[], -r2_hidden(3^[], 4^[])]
+ (4)  [-6^[], r2_hidden(3^[], 4^[]), - (3^[]=5^[])]
+ (5)  [-6^[], -r2_hidden(3^[], k4_xboole_0(4^[], k1_tarski(5^[])))]
+ (6)  [7^[], 6^[]]
+ (7)  [_G3766=_G3815, - (k1_tarski(_G3766)=k1_tarski(_G3815))]
+ (8)  [- (k4_xboole_0(_G3178, _G3313)=k4_xboole_0(_G3245, _G3382)), _G3178=_G3245, _G3313=_G3382]
+ (9)  [-r2_hidden(_G2627, _G2764), r2_hidden(_G2560, _G2695), _G2560=_G2627, _G2695=_G2764]
+ (10)  [- (_G1787=_G1787)]
+ (11)  [_G1886=_G1931, - (_G1931=_G1886)]
+ (12)  [- (_G2119=_G2232), _G2119=_G2175, _G2175=_G2232]
+ (13)  [_G4144=k1_tarski(_G4086), r2_hidden(_G4274, _G4144), - (_G4274=_G4086)]
+ (14)  [_G4144=k1_tarski(_G4086), -r2_hidden(_G4274, _G4144), _G4274=_G4086]
+ (15)  [- (_G4144=k1_tarski(_G4086)), r2_hidden(1^[_G4144, _G4086], _G4144), 1^[_G4144, _G4086]=_G4086]
+ (16)  [- (_G4144=k1_tarski(_G4086)), -r2_hidden(1^[_G4144, _G4086], _G4144), - (1^[_G4144, _G4086]=_G4086)]
+ (17)  [_G4642=k4_xboole_0(_G4497, _G4569), r2_hidden(_G4812, _G4642), -r2_hidden(_G4812, _G4497)]
+ (18)  [_G4642=k4_xboole_0(_G4497, _G4569), r2_hidden(_G4812, _G4642), r2_hidden(_G4812, _G4569)]
+ (19)  [_G4642=k4_xboole_0(_G4497, _G4569), -r2_hidden(_G4812, _G4642), r2_hidden(_G4812, _G4497), -r2_hidden(_G4812, _G4569)]
+ (20)  [- (_G4642=k4_xboole_0(_G4497, _G4569)), -r2_hidden(2^[_G4642, _G4569, _G4497], _G4642), -r2_hidden(2^[_G4642, _G4569, _G4497], _G4497)]
+ (21)  [- (_G4642=k4_xboole_0(_G4497, _G4569)), -r2_hidden(2^[_G4642, _G4569, _G4497], _G4642), r2_hidden(2^[_G4642, _G4569, _G4497], _G4569)]
+ (22)  [- (_G4642=k4_xboole_0(_G4497, _G4569)), r2_hidden(2^[_G4642, _G4569, _G4497], _G4642), r2_hidden(2^[_G4642, _G4569, _G4497], _G4497), -r2_hidden(2^[_G4642, _G4569, _G4497], _G4569)]
+
+Connection Proof:
+-----------------
+1  [7^[], 6^[]]   (6)  
+1.1  [-7^[], r2_hidden(3^[], k4_xboole_0(4^[], k1_tarski(5^[])))]   (1)  
+1.1.1  [-r2_hidden(3^[], k4_xboole_0(4^[], k1_tarski(5^[]))), k4_xboole_0(k4_xboole_0(4^[], k1_tarski(5^[])), k1_tarski(k1_tarski(_G12637)))=k4_xboole_0(k4_xboole_0(4^[], k1_tarski(5^[])), k1_tarski(k1_tarski(_G12637))), r2_hidden(3^[], k4_xboole_0(k4_xboole_0(4^[], k1_tarski(5^[])), k1_tarski(k1_tarski(_G12637))))]   (17)  substitution:[[_G4812, _G4497, _G4642, _G4569], [3^[], k4_xboole_0(4^[], k1_tarski(5^[])), k4_xboole_0(k4_xboole_0(4^[], k1_tarski(5^[])), k1_tarski(k1_tarski(_G12637))), k1_tarski(k1_tarski(_G12637))]]
+1.1.1.1  [- (k4_xboole_0(k4_xboole_0(4^[], k1_tarski(5^[])), k1_tarski(k1_tarski(_G12637)))=k4_xboole_0(k4_xboole_0(4^[], k1_tarski(5^[])), k1_tarski(k1_tarski(_G12637)))), k4_xboole_0(4^[], k1_tarski(5^[]))=k4_xboole_0(4^[], k1_tarski(5^[])), k1_tarski(k1_tarski(_G12637))=k1_tarski(k1_tarski(_G12637))]   (8)  substitution:[[_G3178, _G3313, _G3245, _G3382], [k4_xboole_0(4^[], k1_tarski(5^[])), k1_tarski(k1_tarski(_G12637)), k4_xboole_0(4^[], k1_tarski(5^[])), k1_tarski(k1_tarski(_G12637))]]
+1.1.1.1.1  [- (k4_xboole_0(4^[], k1_tarski(5^[]))=k4_xboole_0(4^[], k1_tarski(5^[]))), 4^[]=4^[], k1_tarski(5^[])=k1_tarski(5^[])]   (8)  substitution:[[_G3178, _G3313, _G3245, _G3382], [4^[], k1_tarski(5^[]), 4^[], k1_tarski(5^[])]]
+1.1.1.1.1.1  [- (4^[]=4^[])]   (10)  substitution:[[_G1787], [4^[]]]
+1.1.1.1.1.2  [- (k1_tarski(5^[])=k1_tarski(5^[])), 5^[]=5^[]]   (7)  substitution:[[_G3766, _G3815], [5^[], 5^[]]]
+1.1.1.1.1.2.1  [- (5^[]=5^[])]   (10)  substitution:[[_G1787], [5^[]]]
+1.1.1.1.2  [- (k1_tarski(k1_tarski(_G12637))=k1_tarski(k1_tarski(_G12637))), k1_tarski(_G12637)=k1_tarski(_G12637)]   (7)  substitution:[[_G3766, _G3815], [k1_tarski(_G12637), k1_tarski(_G12637)]]
+1.1.1.1.2.1  [- (k1_tarski(_G12637)=k1_tarski(_G12637)), _G12637=_G12637]   (7)  substitution:[[_G3766, _G3815], [_G12637, _G12637]]
+1.1.1.1.2.1.1  [- (_G12637=_G12637)]   (10)  substitution:[[_G1787], [_G12637]]
+1.1.1.2  [-r2_hidden(3^[], k4_xboole_0(k4_xboole_0(4^[], k1_tarski(5^[])), k1_tarski(k1_tarski(_G12637)))), k4_xboole_0(k1_tarski(5^[]), k4_xboole_0(k4_xboole_0(4^[], k1_tarski(5^[])), k1_tarski(k1_tarski(_G12637))))=k4_xboole_0(k1_tarski(5^[]), k4_xboole_0(k4_xboole_0(4^[], k1_tarski(5^[])), k1_tarski(k1_tarski(_G12637)))), -r2_hidden(3^[], k4_xboole_0(k1_tarski(5^[]), k4_xboole_0(k4_xboole_0(4^[], k1_tarski(5^[])), k1_tarski(k1_tarski(_G12637))))), r2_hidden(3^[], k1_tarski(5^[]))]   (19)  substitution:[[_G4812, _G4569, _G4642, _G4497], [3^[], k4_xboole_0(k4_xboole_0(4^[], k1_tarski(5^[])), k1_tarski(k1_tarski(_G12637))), k4_xboole_0(k1_tarski(5^[]), k4_xboole_0(k4_xboole_0(4^[], k1_tarski(5^[])), k1_tarski(k1_tarski(_G12637)))), k1_tarski(5^[])]]
+1.1.1.2.1  [- (k4_xboole_0(k1_tarski(5^[]), k4_xboole_0(k4_xboole_0(4^[], k1_tarski(5^[])), k1_tarski(k1_tarski(_G12637))))=k4_xboole_0(k1_tarski(5^[]), k4_xboole_0(k4_xboole_0(4^[], k1_tarski(5^[])), k1_tarski(k1_tarski(_G12637))))), k1_tarski(5^[])=k1_tarski(5^[]), k4_xboole_0(k4_xboole_0(4^[], k1_tarski(5^[])), k1_tarski(k1_tarski(_G12637)))=k4_xboole_0(k4_xboole_0(4^[], k1_tarski(5^[])), k1_tarski(k1_tarski(_G12637)))]   (8)  substitution:[[_G3178, _G3313, _G3245, _G3382], [k1_tarski(5^[]), k4_xboole_0(k4_xboole_0(4^[], k1_tarski(5^[])), k1_tarski(k1_tarski(_G12637))), k1_tarski(5^[]), k4_xboole_0(k4_xboole_0(4^[], k1_tarski(5^[])), k1_tarski(k1_tarski(_G12637)))]]
+1.1.1.2.1.1  [- (k1_tarski(5^[])=k1_tarski(5^[])), 5^[]=5^[]]   (7)  substitution:[[_G3766, _G3815], [5^[], 5^[]]]
+1.1.1.2.1.1.1  [- (5^[]=5^[])]   (10)  substitution:[[_G1787], [5^[]]]
+1.1.1.2.1.2  [- (k4_xboole_0(k4_xboole_0(4^[], k1_tarski(5^[])), k1_tarski(k1_tarski(_G12637)))=k4_xboole_0(k4_xboole_0(4^[], k1_tarski(5^[])), k1_tarski(k1_tarski(_G12637)))), k4_xboole_0(4^[], k1_tarski(5^[]))=k4_xboole_0(4^[], k1_tarski(5^[])), k1_tarski(k1_tarski(_G12637))=k1_tarski(k1_tarski(_G12637))]   (8)  substitution:[[_G3178, _G3313, _G3245, _G3382], [k4_xboole_0(4^[], k1_tarski(5^[])), k1_tarski(k1_tarski(_G12637)), k4_xboole_0(4^[], k1_tarski(5^[])), k1_tarski(k1_tarski(_G12637))]]
+1.1.1.2.1.2.1  [- (k4_xboole_0(4^[], k1_tarski(5^[]))=k4_xboole_0(4^[], k1_tarski(5^[])))]   (10)  substitution:[[_G1787], [k4_xboole_0(4^[], k1_tarski(5^[]))]]
+1.1.1.2.1.2.2  [- (k1_tarski(k1_tarski(_G12637))=k1_tarski(k1_tarski(_G12637)))]   (10)  substitution:[[_G1787], [k1_tarski(k1_tarski(_G12637))]]
+1.1.1.2.2  [r2_hidden(3^[], k4_xboole_0(k1_tarski(5^[]), k4_xboole_0(k4_xboole_0(4^[], k1_tarski(5^[])), k1_tarski(k1_tarski(_G12637))))), k4_xboole_0(k1_tarski(5^[]), k4_xboole_0(k4_xboole_0(4^[], k1_tarski(5^[])), k1_tarski(k1_tarski(_G12637))))=k4_xboole_0(k1_tarski(5^[]), k4_xboole_0(k4_xboole_0(4^[], k1_tarski(5^[])), k1_tarski(k1_tarski(_G12637)))), -r2_hidden(3^[], k1_tarski(5^[]))]   (17)  substitution:[[_G4812, _G4642, _G4497, _G4569], [3^[], k4_xboole_0(k1_tarski(5^[]), k4_xboole_0(k4_xboole_0(4^[], k1_tarski(5^[])), k1_tarski(k1_tarski(_G12637)))), k1_tarski(5^[]), k4_xboole_0(k4_xboole_0(4^[], k1_tarski(5^[])), k1_tarski(k1_tarski(_G12637)))]]
+1.1.1.2.2.1  [- (k4_xboole_0(k1_tarski(5^[]), k4_xboole_0(k4_xboole_0(4^[], k1_tarski(5^[])), k1_tarski(k1_tarski(_G12637))))=k4_xboole_0(k1_tarski(5^[]), k4_xboole_0(k4_xboole_0(4^[], k1_tarski(5^[])), k1_tarski(k1_tarski(_G12637))))), k1_tarski(5^[])=k1_tarski(5^[]), k4_xboole_0(k4_xboole_0(4^[], k1_tarski(5^[])), k1_tarski(k1_tarski(_G12637)))=k4_xboole_0(k4_xboole_0(4^[], k1_tarski(5^[])), k1_tarski(k1_tarski(_G12637)))]   (8)  substitution:[[_G3178, _G3313, _G3245, _G3382], [k1_tarski(5^[]), k4_xboole_0(k4_xboole_0(4^[], k1_tarski(5^[])), k1_tarski(k1_tarski(_G12637))), k1_tarski(5^[]), k4_xboole_0(k4_xboole_0(4^[], k1_tarski(5^[])), k1_tarski(k1_tarski(_G12637)))]]
+1.1.1.2.2.1.1  [- (k1_tarski(5^[])=k1_tarski(5^[]))]   (10)  substitution:[[_G1787], [k1_tarski(5^[])]]
+1.1.1.2.2.1.2  [- (k4_xboole_0(k4_xboole_0(4^[], k1_tarski(5^[])), k1_tarski(k1_tarski(_G12637)))=k4_xboole_0(k4_xboole_0(4^[], k1_tarski(5^[])), k1_tarski(k1_tarski(_G12637))))]   (10)  substitution:[[_G1787], [k4_xboole_0(k4_xboole_0(4^[], k1_tarski(5^[])), k1_tarski(k1_tarski(_G12637)))]]
+1.1.1.2.2.2  [r2_hidden(3^[], k1_tarski(5^[])), k1_tarski(5^[])=k1_tarski(5^[]), - (3^[]=5^[])]   (13)  substitution:[[_G4274, _G4144, _G4086], [3^[], k1_tarski(5^[]), 5^[]]]
+1.1.1.2.2.2.1  [- (k1_tarski(5^[])=k1_tarski(5^[]))]   (10)  substitution:[[_G1787], [k1_tarski(5^[])]]
+1.1.1.2.2.2.2  [3^[]=5^[], -7^[]]   (2)  
+1.1.1.2.2.2.2.1  [7^[]]   (reduction:1)  
+1.1.1.2.3  [-r2_hidden(3^[], k1_tarski(5^[])), k4_xboole_0(4^[], k1_tarski(5^[]))=k4_xboole_0(4^[], k1_tarski(5^[])), -r2_hidden(3^[], k4_xboole_0(4^[], k1_tarski(5^[]))), r2_hidden(3^[], 4^[])]   (19)  substitution:[[_G4812, _G4569, _G4642, _G4497], [3^[], k1_tarski(5^[]), k4_xboole_0(4^[], k1_tarski(5^[])), 4^[]]]
+1.1.1.2.3.1  [- (k4_xboole_0(4^[], k1_tarski(5^[]))=k4_xboole_0(4^[], k1_tarski(5^[]))), 4^[]=4^[], k1_tarski(5^[])=k1_tarski(5^[])]   (8)  substitution:[[_G3178, _G3313, _G3245, _G3382], [4^[], k1_tarski(5^[]), 4^[], k1_tarski(5^[])]]
+1.1.1.2.3.1.1  [- (4^[]=4^[])]   (10)  substitution:[[_G1787], [4^[]]]
+1.1.1.2.3.1.2  [- (k1_tarski(5^[])=k1_tarski(5^[]))]   (10)  substitution:[[_G1787], [k1_tarski(5^[])]]
+1.1.1.2.3.2  [r2_hidden(3^[], k4_xboole_0(4^[], k1_tarski(5^[])))]   (reduction:1.1)  
+1.1.1.2.3.3  [-r2_hidden(3^[], 4^[]), -7^[]]   (3)  
+1.1.1.2.3.3.1  [7^[]]   (reduction:1)  
+1.2  [-6^[], -r2_hidden(3^[], k4_xboole_0(4^[], k1_tarski(5^[])))]   (5)  
+1.2.1  [r2_hidden(3^[], k4_xboole_0(4^[], k1_tarski(5^[]))), k4_xboole_0(4^[], k1_tarski(5^[]))=k4_xboole_0(4^[], k1_tarski(5^[])), r2_hidden(3^[], k1_tarski(5^[]))]   (18)  substitution:[[_G4812, _G4642, _G4497, _G4569], [3^[], k4_xboole_0(4^[], k1_tarski(5^[])), 4^[], k1_tarski(5^[])]]
+1.2.1.1  [- (k4_xboole_0(4^[], k1_tarski(5^[]))=k4_xboole_0(4^[], k1_tarski(5^[]))), 4^[]=4^[], k1_tarski(5^[])=k1_tarski(5^[])]   (8)  substitution:[[_G3178, _G3313, _G3245, _G3382], [4^[], k1_tarski(5^[]), 4^[], k1_tarski(5^[])]]
+1.2.1.1.1  [- (4^[]=4^[])]   (10)  substitution:[[_G1787], [4^[]]]
+1.2.1.1.2  [- (k1_tarski(5^[])=k1_tarski(5^[])), 5^[]=5^[]]   (7)  substitution:[[_G3766, _G3815], [5^[], 5^[]]]
+1.2.1.1.2.1  [- (5^[]=5^[])]   (10)  substitution:[[_G1787], [5^[]]]
+1.2.1.2  [-r2_hidden(3^[], k1_tarski(5^[])), k1_tarski(5^[])=k1_tarski(5^[]), 3^[]=5^[]]   (14)  substitution:[[_G4274, _G4144, _G4086], [3^[], k1_tarski(5^[]), 5^[]]]
+1.2.1.2.1  [- (k1_tarski(5^[])=k1_tarski(5^[])), 5^[]=5^[]]   (7)  substitution:[[_G3766, _G3815], [5^[], 5^[]]]
+1.2.1.2.1.1  [- (5^[]=5^[])]   (10)  substitution:[[_G1787], [5^[]]]
+1.2.1.2.2  [- (3^[]=5^[]), -6^[], r2_hidden(3^[], 4^[])]   (4)  
+1.2.1.2.2.1  [6^[]]   (reduction:1)  
+1.2.1.2.2.2  [-r2_hidden(3^[], 4^[]), k4_xboole_0(4^[], k1_tarski(5^[]))=k4_xboole_0(4^[], k1_tarski(5^[])), r2_hidden(3^[], k4_xboole_0(4^[], k1_tarski(5^[])))]   (17)  substitution:[[_G4812, _G4497, _G4642, _G4569], [3^[], 4^[], k4_xboole_0(4^[], k1_tarski(5^[])), k1_tarski(5^[])]]
+1.2.1.2.2.2.1  [- (k4_xboole_0(4^[], k1_tarski(5^[]))=k4_xboole_0(4^[], k1_tarski(5^[])))]   (10)  substitution:[[_G1787], [k4_xboole_0(4^[], k1_tarski(5^[]))]]
+1.2.1.2.2.2.2  [-r2_hidden(3^[], k4_xboole_0(4^[], k1_tarski(5^[])))]   (reduction:1.2)  
+------------------------------------------------------
+End of proof for t56_zfmisc_1

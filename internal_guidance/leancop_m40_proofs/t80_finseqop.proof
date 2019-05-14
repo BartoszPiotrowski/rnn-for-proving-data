@@ -1,0 +1,70 @@
+
+t80_finseqop is a Theorem
+Start of proof for t80_finseqop
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v1_xboole_0(1^[])]
+ (2)  [-v1_funct_1(2^[])]
+ (3)  [-v1_funct_2(2^[], k2_zfmisc_1(1^[], 1^[]), 1^[])]
+ (4)  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k2_zfmisc_1(1^[], 1^[]), 1^[])))]
+ (5)  [-v1_funct_1(3^[])]
+ (6)  [-v1_funct_2(3^[], 1^[], 1^[])]
+ (7)  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]
+ (8)  [-v1_funct_1(4^[])]
+ (9)  [-v1_funct_2(4^[], 1^[], 1^[])]
+ (10)  [-m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]
+ (11)  [v1_funct_1(k6_finseqop(2^[], 3^[], 4^[])), v1_funct_2(k6_finseqop(2^[], 3^[], 4^[]), k2_zfmisc_1(1^[], 1^[]), 1^[]), m1_subset_1(k6_finseqop(2^[], 3^[], 4^[]), k1_zfmisc_1(k2_zfmisc_1(k2_zfmisc_1(1^[], 1^[]), 1^[])))]
+ (12)  [-v1_xboole_0(_G1444), -v1_xboole_0(_G1704), -v1_xboole_0(_G1958), -v1_xboole_0(_G2206), -v1_xboole_0(_G2448), m1_subset_1(_G2684, k1_zfmisc_1(k2_zfmisc_1(k2_zfmisc_1(_G1444, _G1704), _G1958))), v1_funct_2(_G2684, k2_zfmisc_1(_G1444, _G1704), _G1958), v1_funct_1(_G2684), m1_subset_1(_G3230, k1_zfmisc_1(k2_zfmisc_1(_G2206, _G1444))), v1_funct_2(_G3230, _G2206, _G1444), v1_funct_1(_G3230), -v1_funct_1(k6_finseqop(_G2684, _G3230, _G3670)), v1_funct_1(_G3670), v1_funct_2(_G3670, _G2448, _G1704), m1_subset_1(_G3670, k1_zfmisc_1(k2_zfmisc_1(_G2448, _G1704)))]
+ (13)  [-v1_xboole_0(_G1444), -v1_xboole_0(_G1704), -v1_xboole_0(_G1958), -v1_xboole_0(_G2206), -v1_xboole_0(_G2448), m1_subset_1(_G2684, k1_zfmisc_1(k2_zfmisc_1(k2_zfmisc_1(_G1444, _G1704), _G1958))), v1_funct_2(_G2684, k2_zfmisc_1(_G1444, _G1704), _G1958), v1_funct_1(_G2684), m1_subset_1(_G3230, k1_zfmisc_1(k2_zfmisc_1(_G2206, _G1444))), v1_funct_2(_G3230, _G2206, _G1444), v1_funct_1(_G3230), -v1_funct_2(k6_finseqop(_G2684, _G3230, _G3670), k2_zfmisc_1(_G2206, _G2448), _G1958), v1_funct_1(_G3670), v1_funct_2(_G3670, _G2448, _G1704), m1_subset_1(_G3670, k1_zfmisc_1(k2_zfmisc_1(_G2448, _G1704)))]
+ (14)  [-v1_xboole_0(_G1444), -v1_xboole_0(_G1704), -v1_xboole_0(_G1958), -v1_xboole_0(_G2206), -v1_xboole_0(_G2448), m1_subset_1(_G2684, k1_zfmisc_1(k2_zfmisc_1(k2_zfmisc_1(_G1444, _G1704), _G1958))), v1_funct_2(_G2684, k2_zfmisc_1(_G1444, _G1704), _G1958), v1_funct_1(_G2684), m1_subset_1(_G3230, k1_zfmisc_1(k2_zfmisc_1(_G2206, _G1444))), v1_funct_2(_G3230, _G2206, _G1444), v1_funct_1(_G3230), -m1_subset_1(k6_finseqop(_G2684, _G3230, _G3670), k1_zfmisc_1(k2_zfmisc_1(k2_zfmisc_1(_G2206, _G2448), _G1958))), v1_funct_1(_G3670), v1_funct_2(_G3670, _G2448, _G1704), m1_subset_1(_G3670, k1_zfmisc_1(k2_zfmisc_1(_G2448, _G1704)))]
+
+Connection Proof:
+-----------------
+1  [v1_funct_1(k6_finseqop(2^[], 3^[], 4^[])), v1_funct_2(k6_finseqop(2^[], 3^[], 4^[]), k2_zfmisc_1(1^[], 1^[]), 1^[]), m1_subset_1(k6_finseqop(2^[], 3^[], 4^[]), k1_zfmisc_1(k2_zfmisc_1(k2_zfmisc_1(1^[], 1^[]), 1^[])))]   (11)  
+1.1  [-v1_funct_1(k6_finseqop(2^[], 3^[], 4^[])), -v1_xboole_0(1^[]), -v1_xboole_0(1^[]), -v1_xboole_0(1^[]), -v1_xboole_0(1^[]), -v1_xboole_0(1^[]), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k2_zfmisc_1(1^[], 1^[]), 1^[]))), v1_funct_2(2^[], k2_zfmisc_1(1^[], 1^[]), 1^[]), v1_funct_1(2^[]), m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[]))), v1_funct_2(3^[], 1^[], 1^[]), v1_funct_1(3^[]), v1_funct_1(4^[]), v1_funct_2(4^[], 1^[], 1^[]), m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]   (12)  substitution:[[_G2684, _G3230, _G3670, _G1444, _G1704, _G1958, _G2206, _G2448], [2^[], 3^[], 4^[], 1^[], 1^[], 1^[], 1^[], 1^[]]]
+1.1.1  [v1_xboole_0(1^[])]   (1)  
+1.1.2  [v1_xboole_0(1^[])]   (1)  
+1.1.3  [v1_xboole_0(1^[])]   (1)  
+1.1.4  [v1_xboole_0(1^[])]   (1)  
+1.1.5  [v1_xboole_0(1^[])]   (1)  
+1.1.6  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k2_zfmisc_1(1^[], 1^[]), 1^[])))]   (4)  
+1.1.7  [-v1_funct_2(2^[], k2_zfmisc_1(1^[], 1^[]), 1^[])]   (3)  
+1.1.8  [-v1_funct_1(2^[])]   (2)  
+1.1.9  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]   (7)  
+1.1.10  [-v1_funct_2(3^[], 1^[], 1^[])]   (6)  
+1.1.11  [-v1_funct_1(3^[])]   (5)  
+1.1.12  [-v1_funct_1(4^[])]   (8)  
+1.1.13  [-v1_funct_2(4^[], 1^[], 1^[])]   (9)  
+1.1.14  [-m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]   (10)  
+1.2  [-v1_funct_2(k6_finseqop(2^[], 3^[], 4^[]), k2_zfmisc_1(1^[], 1^[]), 1^[]), -v1_xboole_0(1^[]), -v1_xboole_0(1^[]), -v1_xboole_0(1^[]), -v1_xboole_0(1^[]), -v1_xboole_0(1^[]), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k2_zfmisc_1(1^[], 1^[]), 1^[]))), v1_funct_2(2^[], k2_zfmisc_1(1^[], 1^[]), 1^[]), v1_funct_1(2^[]), m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[]))), v1_funct_2(3^[], 1^[], 1^[]), v1_funct_1(3^[]), v1_funct_1(4^[]), v1_funct_2(4^[], 1^[], 1^[]), m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]   (13)  substitution:[[_G2684, _G3230, _G3670, _G2206, _G2448, _G1958, _G1444, _G1704], [2^[], 3^[], 4^[], 1^[], 1^[], 1^[], 1^[], 1^[]]]
+1.2.1  [v1_xboole_0(1^[])]   (1)  
+1.2.2  [v1_xboole_0(1^[])]   (1)  
+1.2.3  [v1_xboole_0(1^[])]   (1)  
+1.2.4  [v1_xboole_0(1^[])]   (1)  
+1.2.5  [v1_xboole_0(1^[])]   (1)  
+1.2.6  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k2_zfmisc_1(1^[], 1^[]), 1^[])))]   (4)  
+1.2.7  [-v1_funct_2(2^[], k2_zfmisc_1(1^[], 1^[]), 1^[])]   (3)  
+1.2.8  [-v1_funct_1(2^[])]   (2)  
+1.2.9  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]   (7)  
+1.2.10  [-v1_funct_2(3^[], 1^[], 1^[])]   (6)  
+1.2.11  [-v1_funct_1(3^[])]   (5)  
+1.2.12  [-v1_funct_1(4^[])]   (8)  
+1.2.13  [-v1_funct_2(4^[], 1^[], 1^[])]   (9)  
+1.2.14  [-m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]   (10)  
+1.3  [-m1_subset_1(k6_finseqop(2^[], 3^[], 4^[]), k1_zfmisc_1(k2_zfmisc_1(k2_zfmisc_1(1^[], 1^[]), 1^[]))), -v1_xboole_0(1^[]), -v1_xboole_0(1^[]), -v1_xboole_0(1^[]), -v1_xboole_0(1^[]), -v1_xboole_0(1^[]), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k2_zfmisc_1(1^[], 1^[]), 1^[]))), v1_funct_2(2^[], k2_zfmisc_1(1^[], 1^[]), 1^[]), v1_funct_1(2^[]), m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[]))), v1_funct_2(3^[], 1^[], 1^[]), v1_funct_1(3^[]), v1_funct_1(4^[]), v1_funct_2(4^[], 1^[], 1^[]), m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]   (14)  substitution:[[_G2684, _G3230, _G3670, _G2206, _G2448, _G1958, _G1444, _G1704], [2^[], 3^[], 4^[], 1^[], 1^[], 1^[], 1^[], 1^[]]]
+1.3.1  [v1_xboole_0(1^[])]   (1)  
+1.3.2  [v1_xboole_0(1^[])]   (1)  
+1.3.3  [v1_xboole_0(1^[])]   (1)  
+1.3.4  [v1_xboole_0(1^[])]   (1)  
+1.3.5  [v1_xboole_0(1^[])]   (1)  
+1.3.6  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k2_zfmisc_1(1^[], 1^[]), 1^[])))]   (4)  
+1.3.7  [-v1_funct_2(2^[], k2_zfmisc_1(1^[], 1^[]), 1^[])]   (3)  
+1.3.8  [-v1_funct_1(2^[])]   (2)  
+1.3.9  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]   (7)  
+1.3.10  [-v1_funct_2(3^[], 1^[], 1^[])]   (6)  
+1.3.11  [-v1_funct_1(3^[])]   (5)  
+1.3.12  [-v1_funct_1(4^[])]   (8)  
+1.3.13  [-v1_funct_2(4^[], 1^[], 1^[])]   (9)  
+1.3.14  [-m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]   (10)  
+------------------------------------------------------
+End of proof for t80_finseqop

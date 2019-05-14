@@ -1,0 +1,85 @@
+
+t11_relset_1 is a Theorem
+Start of proof for t11_relset_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 2^[])))]
+ (2)  [k1_relset_1(2^[], k3_relset_1(1^[], 2^[], 3^[]))=k2_relset_1(2^[], 3^[]), k2_relset_1(1^[], k3_relset_1(1^[], 2^[], 3^[]))=k1_relset_1(1^[], 3^[])]
+ (3)  [m1_subset_1(_G11435, k1_zfmisc_1(k2_zfmisc_1(_G11326, _G11380))), -v1_relat_1(_G11435)]
+ (4)  [m1_subset_1(_G11801, k1_zfmisc_1(k2_zfmisc_1(_G11678, _G11739))), -v4_relat_1(_G11801, _G11678)]
+ (5)  [m1_subset_1(_G11801, k1_zfmisc_1(k2_zfmisc_1(_G11678, _G11739))), -v5_relat_1(_G11801, _G11739)]
+ (6)  [m1_subset_1(_G12283, k1_zfmisc_1(k2_zfmisc_1(_G12154, _G12218))), -m1_subset_1(k3_relset_1(_G12154, _G12218, _G12283), k1_zfmisc_1(k2_zfmisc_1(_G12218, _G12154)))]
+ (7)  [- (k1_relset_1(_G12696, _G12751)=k9_xtuple_0(_G12751)), v1_relat_1(_G12751), v4_relat_1(_G12751, _G12696)]
+ (8)  [- (k2_relset_1(_G13064, _G13119)=k10_xtuple_0(_G13119)), v1_relat_1(_G13119), v5_relat_1(_G13119, _G13064)]
+ (9)  [m1_subset_1(_G13555, k1_zfmisc_1(k2_zfmisc_1(_G13432, _G13493))), - (k3_relset_1(_G13432, _G13493, _G13555)=k2_relat_1(_G13555))]
+ (10)  [v1_relat_1(_G13917), - (k10_xtuple_0(_G13917)=k9_xtuple_0(k2_relat_1(_G13917)))]
+ (11)  [v1_relat_1(_G13917), - (k9_xtuple_0(_G13917)=k10_xtuple_0(k2_relat_1(_G13917)))]
+ (12)  [- (_G4310=_G4310)]
+ (13)  [_G4409=_G4454, - (_G4454=_G4409)]
+ (14)  [- (_G4642=_G4755), _G4642=_G4698, _G4698=_G4755]
+ (15)  [-v4_relat_1(_G5159, _G5296), v4_relat_1(_G5092, _G5227), _G5092=_G5159, _G5227=_G5296]
+ (16)  [-v5_relat_1(_G5756, _G5893), v5_relat_1(_G5689, _G5824), _G5689=_G5756, _G5824=_G5893]
+ (17)  [-v1_relat_1(_G6335), _G6286=_G6335, v1_relat_1(_G6286)]
+ (18)  [-m1_subset_1(_G6622, _G6759), m1_subset_1(_G6555, _G6690), _G6555=_G6622, _G6690=_G6759]
+ (19)  [_G7236=_G7285, - (k9_xtuple_0(_G7236)=k9_xtuple_0(_G7285))]
+ (20)  [_G7514=_G7563, - (k10_xtuple_0(_G7514)=k10_xtuple_0(_G7563))]
+ (21)  [_G7792=_G7841, - (k2_relat_1(_G7792)=k2_relat_1(_G7841))]
+ (22)  [_G8070=_G8119, - (k1_zfmisc_1(_G8070)=k1_zfmisc_1(_G8119))]
+ (23)  [- (k2_zfmisc_1(_G8348, _G8483)=k2_zfmisc_1(_G8415, _G8552)), _G8348=_G8415, _G8483=_G8552]
+ (24)  [- (k2_relset_1(_G8945, _G9080)=k2_relset_1(_G9012, _G9149)), _G8945=_G9012, _G9080=_G9149]
+ (25)  [- (k1_relset_1(_G10561, _G10696)=k1_relset_1(_G10628, _G10765)), _G10561=_G10628, _G10696=_G10765]
+ (26)  [- (k3_relset_1(_G9542, _G9713, _G9888)=k3_relset_1(_G9627, _G9800, _G9977)), _G9542=_G9627, _G9713=_G9800, _G9888=_G9977]
+
+Connection Proof:
+-----------------
+1  [k1_relset_1(2^[], k3_relset_1(1^[], 2^[], 3^[]))=k2_relset_1(2^[], 3^[]), k2_relset_1(1^[], k3_relset_1(1^[], 2^[], 3^[]))=k1_relset_1(1^[], 3^[])]   (2)  
+1.1  [- (k1_relset_1(2^[], k3_relset_1(1^[], 2^[], 3^[]))=k2_relset_1(2^[], 3^[])), k1_relset_1(2^[], k3_relset_1(1^[], 2^[], 3^[]))=k9_xtuple_0(k2_relat_1(3^[])), k9_xtuple_0(k2_relat_1(3^[]))=k2_relset_1(2^[], 3^[])]   (14)  substitution:[[_G4642, _G4755, _G4698], [k1_relset_1(2^[], k3_relset_1(1^[], 2^[], 3^[])), k2_relset_1(2^[], 3^[]), k9_xtuple_0(k2_relat_1(3^[]))]]
+1.1.1  [- (k1_relset_1(2^[], k3_relset_1(1^[], 2^[], 3^[]))=k9_xtuple_0(k2_relat_1(3^[]))), k1_relset_1(2^[], k3_relset_1(1^[], 2^[], 3^[]))=k9_xtuple_0(k3_relset_1(1^[], 2^[], 3^[])), k9_xtuple_0(k3_relset_1(1^[], 2^[], 3^[]))=k9_xtuple_0(k2_relat_1(3^[]))]   (14)  substitution:[[_G4642, _G4755, _G4698], [k1_relset_1(2^[], k3_relset_1(1^[], 2^[], 3^[])), k9_xtuple_0(k2_relat_1(3^[])), k9_xtuple_0(k3_relset_1(1^[], 2^[], 3^[]))]]
+1.1.1.1  [- (k1_relset_1(2^[], k3_relset_1(1^[], 2^[], 3^[]))=k9_xtuple_0(k3_relset_1(1^[], 2^[], 3^[]))), v1_relat_1(k3_relset_1(1^[], 2^[], 3^[])), v4_relat_1(k3_relset_1(1^[], 2^[], 3^[]), 2^[])]   (7)  substitution:[[_G12696, _G12751], [2^[], k3_relset_1(1^[], 2^[], 3^[])]]
+1.1.1.1.1  [-v1_relat_1(k3_relset_1(1^[], 2^[], 3^[])), m1_subset_1(k3_relset_1(1^[], 2^[], 3^[]), k1_zfmisc_1(k2_zfmisc_1(2^[], 1^[])))]   (3)  substitution:[[_G11435, _G11326, _G11380], [k3_relset_1(1^[], 2^[], 3^[]), 2^[], 1^[]]]
+1.1.1.1.1.1  [-m1_subset_1(k3_relset_1(1^[], 2^[], 3^[]), k1_zfmisc_1(k2_zfmisc_1(2^[], 1^[]))), m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 2^[])))]   (6)  substitution:[[_G12154, _G12218, _G12283], [1^[], 2^[], 3^[]]]
+1.1.1.1.1.1.1  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 2^[])))]   (1)  
+1.1.1.1.2  [-v4_relat_1(k3_relset_1(1^[], 2^[], 3^[]), 2^[]), m1_subset_1(k3_relset_1(1^[], 2^[], 3^[]), k1_zfmisc_1(k2_zfmisc_1(2^[], 1^[])))]   (4)  substitution:[[_G11801, _G11678, _G11739], [k3_relset_1(1^[], 2^[], 3^[]), 2^[], 1^[]]]
+1.1.1.1.2.1  [-m1_subset_1(k3_relset_1(1^[], 2^[], 3^[]), k1_zfmisc_1(k2_zfmisc_1(2^[], 1^[]))), m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 2^[])))]   (6)  substitution:[[_G12154, _G12218, _G12283], [1^[], 2^[], 3^[]]]
+1.1.1.1.2.1.1  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 2^[])))]   (1)  
+1.1.1.2  [- (k9_xtuple_0(k3_relset_1(1^[], 2^[], 3^[]))=k9_xtuple_0(k2_relat_1(3^[]))), k9_xtuple_0(k3_relset_1(1^[], 2^[], 3^[]))=k9_xtuple_0(k2_relat_1(3^[])), k9_xtuple_0(k2_relat_1(3^[]))=k9_xtuple_0(k2_relat_1(3^[]))]   (14)  substitution:[[_G4642, _G4755, _G4698], [k9_xtuple_0(k3_relset_1(1^[], 2^[], 3^[])), k9_xtuple_0(k2_relat_1(3^[])), k9_xtuple_0(k2_relat_1(3^[]))]]
+1.1.1.2.1  [- (k9_xtuple_0(k3_relset_1(1^[], 2^[], 3^[]))=k9_xtuple_0(k2_relat_1(3^[]))), k3_relset_1(1^[], 2^[], 3^[])=k2_relat_1(3^[])]   (19)  substitution:[[_G7236, _G7285], [k3_relset_1(1^[], 2^[], 3^[]), k2_relat_1(3^[])]]
+1.1.1.2.1.1  [- (k3_relset_1(1^[], 2^[], 3^[])=k2_relat_1(3^[])), m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 2^[])))]   (9)  substitution:[[_G13432, _G13493, _G13555], [1^[], 2^[], 3^[]]]
+1.1.1.2.1.1.1  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 2^[])))]   (1)  
+1.1.1.2.2  [- (k9_xtuple_0(k2_relat_1(3^[]))=k9_xtuple_0(k2_relat_1(3^[])))]   (12)  substitution:[[_G4310], [k9_xtuple_0(k2_relat_1(3^[]))]]
+1.1.2  [- (k9_xtuple_0(k2_relat_1(3^[]))=k2_relset_1(2^[], 3^[])), k2_relset_1(2^[], 3^[])=k9_xtuple_0(k2_relat_1(3^[]))]   (13)  substitution:[[_G4454, _G4409], [k9_xtuple_0(k2_relat_1(3^[])), k2_relset_1(2^[], 3^[])]]
+1.1.2.1  [- (k2_relset_1(2^[], 3^[])=k9_xtuple_0(k2_relat_1(3^[]))), k2_relset_1(2^[], 3^[])=k10_xtuple_0(3^[]), k10_xtuple_0(3^[])=k9_xtuple_0(k2_relat_1(3^[]))]   (14)  substitution:[[_G4642, _G4755, _G4698], [k2_relset_1(2^[], 3^[]), k9_xtuple_0(k2_relat_1(3^[])), k10_xtuple_0(3^[])]]
+1.1.2.1.1  [- (k2_relset_1(2^[], 3^[])=k10_xtuple_0(3^[])), v1_relat_1(3^[]), v5_relat_1(3^[], 2^[])]   (8)  substitution:[[_G13064, _G13119], [2^[], 3^[]]]
+1.1.2.1.1.1  [-v1_relat_1(3^[]), m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 2^[])))]   (3)  substitution:[[_G11435, _G11326, _G11380], [3^[], 1^[], 2^[]]]
+1.1.2.1.1.1.1  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 2^[])))]   (1)  
+1.1.2.1.1.2  [-v5_relat_1(3^[], 2^[]), m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 2^[])))]   (5)  substitution:[[_G11801, _G11739, _G11678], [3^[], 2^[], 1^[]]]
+1.1.2.1.1.2.1  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 2^[])))]   (1)  
+1.1.2.1.2  [- (k10_xtuple_0(3^[])=k9_xtuple_0(k2_relat_1(3^[]))), v1_relat_1(3^[])]   (10)  substitution:[[_G13917], [3^[]]]
+1.1.2.1.2.1  [-v1_relat_1(3^[]), m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 2^[])))]   (3)  substitution:[[_G1102, _G1100, _G1101], [3^[], 1^[], 2^[]]]
+1.1.2.1.2.1.1  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 2^[])))]   (1)  
+1.2  [- (k2_relset_1(1^[], k3_relset_1(1^[], 2^[], 3^[]))=k1_relset_1(1^[], 3^[])), k2_relset_1(1^[], k3_relset_1(1^[], 2^[], 3^[]))=k10_xtuple_0(k2_relat_1(3^[])), k10_xtuple_0(k2_relat_1(3^[]))=k1_relset_1(1^[], 3^[])]   (14)  substitution:[[_G900, _G902, _G901], [k2_relset_1(1^[], k3_relset_1(1^[], 2^[], 3^[])), k1_relset_1(1^[], 3^[]), k10_xtuple_0(k2_relat_1(3^[]))]]
+1.2.1  [- (k2_relset_1(1^[], k3_relset_1(1^[], 2^[], 3^[]))=k10_xtuple_0(k2_relat_1(3^[]))), k2_relset_1(1^[], k3_relset_1(1^[], 2^[], 3^[]))=k10_xtuple_0(k3_relset_1(1^[], 2^[], 3^[])), k10_xtuple_0(k3_relset_1(1^[], 2^[], 3^[]))=k10_xtuple_0(k2_relat_1(3^[]))]   (14)  substitution:[[_G900, _G902, _G901], [k2_relset_1(1^[], k3_relset_1(1^[], 2^[], 3^[])), k10_xtuple_0(k2_relat_1(3^[])), k10_xtuple_0(k3_relset_1(1^[], 2^[], 3^[]))]]
+1.2.1.1  [- (k2_relset_1(1^[], k3_relset_1(1^[], 2^[], 3^[]))=k10_xtuple_0(k3_relset_1(1^[], 2^[], 3^[]))), v1_relat_1(k3_relset_1(1^[], 2^[], 3^[])), v5_relat_1(k3_relset_1(1^[], 2^[], 3^[]), 1^[])]   (8)  substitution:[[_G1168, _G1169], [1^[], k3_relset_1(1^[], 2^[], 3^[])]]
+1.2.1.1.1  [-v1_relat_1(k3_relset_1(1^[], 2^[], 3^[])), m1_subset_1(k3_relset_1(1^[], 2^[], 3^[]), k1_zfmisc_1(k2_zfmisc_1(2^[], 1^[])))]   (3)  substitution:[[_G1102, _G1100, _G1101], [k3_relset_1(1^[], 2^[], 3^[]), 2^[], 1^[]]]
+1.2.1.1.1.1  [-m1_subset_1(k3_relset_1(1^[], 2^[], 3^[]), k1_zfmisc_1(k2_zfmisc_1(2^[], 1^[]))), m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 2^[])))]   (6)  substitution:[[_G1130, _G1131, _G1132], [1^[], 2^[], 3^[]]]
+1.2.1.1.1.1.1  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 2^[])))]   (1)  
+1.2.1.1.2  [-v5_relat_1(k3_relset_1(1^[], 2^[], 3^[]), 1^[]), m1_subset_1(k3_relset_1(1^[], 2^[], 3^[]), k1_zfmisc_1(k2_zfmisc_1(2^[], 1^[])))]   (5)  substitution:[[_G1115, _G1114, _G1113], [k3_relset_1(1^[], 2^[], 3^[]), 1^[], 2^[]]]
+1.2.1.1.2.1  [-m1_subset_1(k3_relset_1(1^[], 2^[], 3^[]), k1_zfmisc_1(k2_zfmisc_1(2^[], 1^[]))), m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 2^[])))]   (6)  substitution:[[_G1130, _G1131, _G1132], [1^[], 2^[], 3^[]]]
+1.2.1.1.2.1.1  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 2^[])))]   (1)  
+1.2.1.2  [- (k10_xtuple_0(k3_relset_1(1^[], 2^[], 3^[]))=k10_xtuple_0(k2_relat_1(3^[]))), k10_xtuple_0(k3_relset_1(1^[], 2^[], 3^[]))=k10_xtuple_0(k2_relat_1(3^[])), k10_xtuple_0(k2_relat_1(3^[]))=k10_xtuple_0(k2_relat_1(3^[]))]   (14)  substitution:[[_G900, _G902, _G901], [k10_xtuple_0(k3_relset_1(1^[], 2^[], 3^[])), k10_xtuple_0(k2_relat_1(3^[])), k10_xtuple_0(k2_relat_1(3^[]))]]
+1.2.1.2.1  [- (k10_xtuple_0(k3_relset_1(1^[], 2^[], 3^[]))=k10_xtuple_0(k2_relat_1(3^[]))), k3_relset_1(1^[], 2^[], 3^[])=k2_relat_1(3^[])]   (20)  substitution:[[_G981, _G982], [k3_relset_1(1^[], 2^[], 3^[]), k2_relat_1(3^[])]]
+1.2.1.2.1.1  [- (k3_relset_1(1^[], 2^[], 3^[])=k2_relat_1(3^[])), m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 2^[])))]   (9)  substitution:[[_G1183, _G1184, _G1185], [1^[], 2^[], 3^[]]]
+1.2.1.2.1.1.1  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 2^[])))]   (1)  
+1.2.1.2.2  [- (k10_xtuple_0(k2_relat_1(3^[]))=k10_xtuple_0(k2_relat_1(3^[])))]   (12)  substitution:[[_G888], [k10_xtuple_0(k2_relat_1(3^[]))]]
+1.2.2  [- (k10_xtuple_0(k2_relat_1(3^[]))=k1_relset_1(1^[], 3^[])), k1_relset_1(1^[], 3^[])=k10_xtuple_0(k2_relat_1(3^[]))]   (13)  substitution:[[_G893, _G892], [k10_xtuple_0(k2_relat_1(3^[])), k1_relset_1(1^[], 3^[])]]
+1.2.2.1  [- (k1_relset_1(1^[], 3^[])=k10_xtuple_0(k2_relat_1(3^[]))), k1_relset_1(1^[], 3^[])=k9_xtuple_0(3^[]), k9_xtuple_0(3^[])=k10_xtuple_0(k2_relat_1(3^[]))]   (14)  substitution:[[_G900, _G902, _G901], [k1_relset_1(1^[], 3^[]), k10_xtuple_0(k2_relat_1(3^[])), k9_xtuple_0(3^[])]]
+1.2.2.1.1  [- (k1_relset_1(1^[], 3^[])=k9_xtuple_0(3^[])), v1_relat_1(3^[]), v4_relat_1(3^[], 1^[])]   (7)  substitution:[[_G1153, _G1154], [1^[], 3^[]]]
+1.2.2.1.1.1  [-v1_relat_1(3^[]), m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 2^[])))]   (3)  substitution:[[_G1102, _G1100, _G1101], [3^[], 1^[], 2^[]]]
+1.2.2.1.1.1.1  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 2^[])))]   (1)  
+1.2.2.1.1.2  [-v4_relat_1(3^[], 1^[]), m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 2^[])))]   (4)  substitution:[[_G1115, _G1113, _G1114], [3^[], 1^[], 2^[]]]
+1.2.2.1.1.2.1  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 2^[])))]   (1)  
+1.2.2.1.2  [- (k9_xtuple_0(3^[])=k10_xtuple_0(k2_relat_1(3^[]))), v1_relat_1(3^[])]   (11)  substitution:[[_G1203], [3^[]]]
+1.2.2.1.2.1  [-v1_relat_1(3^[]), m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 2^[])))]   (3)  substitution:[[_G1102, _G1100, _G1101], [3^[], 1^[], 2^[]]]
+1.2.2.1.2.1.1  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 2^[])))]   (1)  
+------------------------------------------------------
+End of proof for t11_relset_1

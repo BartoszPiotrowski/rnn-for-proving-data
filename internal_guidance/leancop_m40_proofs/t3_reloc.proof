@@ -1,0 +1,44 @@
+
+t3_reloc is a Theorem
+Start of proof for t3_reloc
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v7_ordinal1(1^[])]
+ (2)  [-v7_ordinal1(2^[])]
+ (3)  [-v1_ami_2(3^[])]
+ (4)  [-m1_subset_1(3^[], u1_struct_0(k1_ami_3))]
+ (5)  [k5_compos_0(u1_compos_1(k1_ami_3), k9_ami_3(2^[], 3^[]), 1^[])=k9_ami_3(k2_xcmplx_0(2^[], 1^[]), 3^[])]
+ (6)  [v7_ordinal1(_G8269), -r2_hidden(_G8269, k4_ordinal1)]
+ (7)  [-v7_ordinal1(_G8269), r2_hidden(_G8269, k4_ordinal1)]
+ (8)  [- (k5_numbers=k4_ordinal1)]
+ (9)  [r2_hidden(_G8483, _G8528), -m1_subset_1(_G8483, _G8528)]
+ (10)  [m1_subset_1(_G8716, u1_struct_0(k1_ami_3)), v1_ami_2(_G8716), m1_subset_1(_G8919, k5_numbers), v7_ordinal1(_G9045), - (k5_compos_0(u1_compos_1(k1_ami_3), k9_ami_3(_G8919, _G8716), _G9045)=k9_ami_3(k2_xcmplx_0(_G8919, _G9045), _G8716))]
+ (11)  [_G5395=_G5444, - (u1_struct_0(_G5395)=u1_struct_0(_G5444))]
+ (12)  [- (k5_compos_0(_G5673, _G5844, _G6019)=k5_compos_0(_G5758, _G5931, _G6108)), _G5673=_G5758, _G5844=_G5931, _G6019=_G6108]
+ (13)  [_G6701=_G6750, - (u1_compos_1(_G6701)=u1_compos_1(_G6750))]
+ (14)  [- (k9_ami_3(_G6979, _G7114)=k9_ami_3(_G7046, _G7183)), _G6979=_G7046, _G7114=_G7183]
+ (15)  [- (k2_xcmplx_0(_G7567, _G7702)=k2_xcmplx_0(_G7634, _G7771)), _G7567=_G7634, _G7702=_G7771]
+ (16)  [- (_G2788=_G2788)]
+ (17)  [_G2887=_G2932, - (_G2932=_G2887)]
+ (18)  [- (_G3120=_G3233), _G3120=_G3176, _G3176=_G3233]
+ (19)  [-r2_hidden(_G3637, _G3774), r2_hidden(_G3570, _G3705), _G3570=_G3637, _G3705=_G3774]
+ (20)  [-v7_ordinal1(_G4216), _G4167=_G4216, v7_ordinal1(_G4167)]
+ (21)  [-v1_ami_2(_G4494), _G4445=_G4494, v1_ami_2(_G4445)]
+ (22)  [-m1_subset_1(_G4781, _G4918), m1_subset_1(_G4714, _G4849), _G4714=_G4781, _G4849=_G4918]
+
+Connection Proof:
+-----------------
+1  [k5_compos_0(u1_compos_1(k1_ami_3), k9_ami_3(2^[], 3^[]), 1^[])=k9_ami_3(k2_xcmplx_0(2^[], 1^[]), 3^[])]   (5)  
+1.1  [- (k5_compos_0(u1_compos_1(k1_ami_3), k9_ami_3(2^[], 3^[]), 1^[])=k9_ami_3(k2_xcmplx_0(2^[], 1^[]), 3^[])), m1_subset_1(3^[], u1_struct_0(k1_ami_3)), v1_ami_2(3^[]), m1_subset_1(2^[], k5_numbers), v7_ordinal1(1^[])]   (10)  substitution:[[_G8919, _G8716, _G9045], [2^[], 3^[], 1^[]]]
+1.1.1  [-m1_subset_1(3^[], u1_struct_0(k1_ami_3))]   (4)  
+1.1.2  [-v1_ami_2(3^[])]   (3)  
+1.1.3  [-m1_subset_1(2^[], k5_numbers), r2_hidden(2^[], k5_numbers)]   (9)  substitution:[[_G8483, _G8528], [2^[], k5_numbers]]
+1.1.3.1  [-r2_hidden(2^[], k5_numbers), r2_hidden(2^[], k4_ordinal1), 2^[]=2^[], k4_ordinal1=k5_numbers]   (19)  substitution:[[_G3637, _G3774, _G3570, _G3705], [2^[], k5_numbers, 2^[], k4_ordinal1]]
+1.1.3.1.1  [-r2_hidden(2^[], k4_ordinal1), v7_ordinal1(2^[])]   (6)  substitution:[[_G8269], [2^[]]]
+1.1.3.1.1.1  [-v7_ordinal1(2^[])]   (2)  
+1.1.3.1.2  [- (2^[]=2^[])]   (16)  substitution:[[_G2788], [2^[]]]
+1.1.3.1.3  [- (k4_ordinal1=k5_numbers), k5_numbers=k4_ordinal1]   (17)  substitution:[[_G2932, _G2887], [k4_ordinal1, k5_numbers]]
+1.1.3.1.3.1  [- (k5_numbers=k4_ordinal1)]   (8)  
+1.1.4  [-v7_ordinal1(1^[])]   (1)  
+------------------------------------------------------
+End of proof for t3_reloc

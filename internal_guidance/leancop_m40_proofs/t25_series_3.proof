@@ -1,0 +1,47 @@
+
+t25_series_3 is a Theorem
+Start of proof for t25_series_3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xreal_0(1^[])]
+ (2)  [-v2_xxreal_0(1^[])]
+ (3)  [-v1_xreal_0(2^[])]
+ (4)  [-r1_xxreal_0(1^[], k18_complex1(2^[]))]
+ (5)  [r1_xxreal_0(k3_square_1(1^[]), k3_square_1(2^[]))]
+ (6)  [v1_xreal_0(_G1383), -v1_xxreal_0(_G1383)]
+ (7)  [v1_xxreal_0(_G1514), v2_xxreal_0(_G1514), r1_xxreal_0(_G1514, k6_numbers)]
+ (8)  [v1_xxreal_0(_G1514), -v2_xxreal_0(_G1514), -r1_xxreal_0(_G1514, k6_numbers)]
+ (9)  [v1_xreal_0(_G1745), v1_xreal_0(_G1847), -r1_xxreal_0(_G1745, k6_numbers), -r1_xxreal_0(k6_numbers, _G1847), r1_xxreal_0(k6_numbers, k3_xcmplx_0(_G1745, _G1847))]
+ (10)  [v1_xreal_0(_G2297), v1_xreal_0(_G2400), r1_xxreal_0(_G2400, k4_xcmplx_0(_G2297)), -r1_xxreal_0(_G2297, k18_complex1(_G2400))]
+ (11)  [v1_xreal_0(_G2297), v1_xreal_0(_G2400), r1_xxreal_0(_G2297, _G2400), -r1_xxreal_0(_G2297, k18_complex1(_G2400))]
+ (12)  [v1_xreal_0(_G2297), v1_xreal_0(_G2400), r1_xxreal_0(_G2297, k18_complex1(_G2400)), -r1_xxreal_0(_G2400, k4_xcmplx_0(_G2297)), -r1_xxreal_0(_G2297, _G2400)]
+ (13)  [v1_xreal_0(_G3464), -r1_xxreal_0(k6_numbers, k3_xcmplx_0(_G3464, _G3464))]
+ (14)  [v1_xreal_0(_G2840), v1_xreal_0(_G2949), r1_xxreal_0(k6_numbers, _G2949), -r1_xxreal_0(k3_square_1(_G2949), k3_square_1(_G2840)), r1_xxreal_0(_G2840, k4_xcmplx_0(_G2949))]
+ (15)  [v1_xreal_0(_G2840), v1_xreal_0(_G2949), r1_xxreal_0(k6_numbers, _G2949), -r1_xxreal_0(k3_square_1(_G2949), k3_square_1(_G2840)), r1_xxreal_0(_G2949, _G2840)]
+
+Connection Proof:
+-----------------
+1  [r1_xxreal_0(k3_square_1(1^[]), k3_square_1(2^[]))]   (5)  
+1.1  [-r1_xxreal_0(k3_square_1(1^[]), k3_square_1(2^[])), v1_xreal_0(2^[]), v1_xreal_0(1^[]), r1_xxreal_0(k6_numbers, 1^[]), r1_xxreal_0(2^[], k4_xcmplx_0(1^[]))]   (14)  substitution:[[_G2949, _G2840], [1^[], 2^[]]]
+1.1.1  [-v1_xreal_0(2^[])]   (3)  
+1.1.2  [-v1_xreal_0(1^[])]   (1)  
+1.1.3  [-r1_xxreal_0(k6_numbers, 1^[]), v1_xreal_0(1^[]), v1_xreal_0(1^[]), -r1_xxreal_0(1^[], k6_numbers), r1_xxreal_0(k6_numbers, k3_xcmplx_0(1^[], 1^[]))]   (9)  substitution:[[_G1847, _G1745], [1^[], 1^[]]]
+1.1.3.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.3.2  [-v1_xreal_0(1^[])]   (1)  
+1.1.3.3  [r1_xxreal_0(1^[], k6_numbers), v1_xxreal_0(1^[]), v2_xxreal_0(1^[])]   (7)  substitution:[[_G1514], [1^[]]]
+1.1.3.3.1  [-v1_xxreal_0(1^[]), v1_xreal_0(1^[])]   (6)  substitution:[[_G1383], [1^[]]]
+1.1.3.3.1.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.3.3.2  [-v2_xxreal_0(1^[])]   (2)  
+1.1.3.4  [-r1_xxreal_0(k6_numbers, k3_xcmplx_0(1^[], 1^[])), v1_xreal_0(1^[])]   (13)  substitution:[[_G3464], [1^[]]]
+1.1.3.4.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.4  [-r1_xxreal_0(2^[], k4_xcmplx_0(1^[])), v1_xreal_0(1^[]), v1_xreal_0(2^[]), r1_xxreal_0(1^[], k18_complex1(2^[])), -r1_xxreal_0(1^[], 2^[])]   (12)  substitution:[[_G2400, _G2297], [2^[], 1^[]]]
+1.1.4.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.4.2  [-v1_xreal_0(2^[])]   (3)  
+1.1.4.3  [-r1_xxreal_0(1^[], k18_complex1(2^[]))]   (4)  
+1.1.4.4  [r1_xxreal_0(1^[], 2^[]), v1_xreal_0(2^[]), v1_xreal_0(1^[]), r1_xxreal_0(k6_numbers, 1^[]), -r1_xxreal_0(k3_square_1(1^[]), k3_square_1(2^[]))]   (15)  substitution:[[_G2949, _G2840], [1^[], 2^[]]]
+1.1.4.4.1  [-v1_xreal_0(2^[])]   (3)  
+1.1.4.4.2  [-v1_xreal_0(1^[])]   (1)  
+1.1.4.4.3  [-r1_xxreal_0(k6_numbers, 1^[])]   (lemmata:1.1)  
+1.1.4.4.4  [r1_xxreal_0(k3_square_1(1^[]), k3_square_1(2^[]))]   (5)  
+------------------------------------------------------
+End of proof for t25_series_3

@@ -1,0 +1,74 @@
+
+t31_connsp_1 is a Theorem
+Start of proof for t31_connsp_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-5^[_G15168], -r2_hidden(3^[], _G15168)]
+ (2)  [-5^[_G15168], -v2_connsp_1(_G15168, 2^[])]
+ (3)  [-6^[_G15168], -r2_hidden(_G15168, 4^[]), v2_connsp_1(_G15168, 2^[]), r2_hidden(3^[], _G15168)]
+ (4)  [-6^[_G15168], r2_hidden(_G15168, 4^[]), 5^[_G15168]]
+ (5)  [v2_struct_0(2^[])]
+ (6)  [-v2_pre_topc(2^[])]
+ (7)  [-l1_pre_topc(2^[])]
+ (8)  [-m1_subset_1(3^[], u1_struct_0(2^[]))]
+ (9)  [-m1_subset_1(4^[], k1_zfmisc_1(k1_zfmisc_1(u1_struct_0(2^[]))))]
+ (10)  [- (4^[]=k1_xboole_0)]
+ (11)  [m1_subset_1(_G15168, k1_zfmisc_1(u1_struct_0(2^[]))), 6^[_G15168]]
+ (12)  [_G10044=k1_tarski(_G9986), r2_hidden(_G10174, _G10044), - (_G10174=_G9986)]
+ (13)  [_G10044=k1_tarski(_G9986), -r2_hidden(_G10174, _G10044), _G10174=_G9986]
+ (14)  [- (_G10044=k1_tarski(_G9986)), r2_hidden(1^[_G10044, _G9986], _G10044), 1^[_G10044, _G9986]=_G9986]
+ (15)  [- (_G10044=k1_tarski(_G9986)), -r2_hidden(1^[_G10044, _G9986], _G10044), - (1^[_G10044, _G9986]=_G9986)]
+ (16)  [-m1_subset_1(k6_domain_1(_G10406, _G10463), k1_zfmisc_1(_G10406)), -v1_xboole_0(_G10406), m1_subset_1(_G10463, _G10406)]
+ (17)  [l1_pre_topc(_G10792), -l1_struct_0(_G10792)]
+ (18)  [-v2_connsp_1(k1_tarski(_G10989), _G10923), m1_subset_1(_G10989, u1_struct_0(_G10923)), -v2_struct_0(_G10923), v2_pre_topc(_G10923), l1_pre_topc(_G10923)]
+ (19)  [-v1_xboole_0(k1_xboole_0)]
+ (20)  [v1_xboole_0(u1_struct_0(_G11440)), -v2_struct_0(_G11440), l1_struct_0(_G11440)]
+ (21)  [r2_hidden(_G12054, _G12100), v1_xboole_0(_G12100)]
+ (22)  [- (k6_domain_1(_G11677, _G11734)=k1_tarski(_G11734)), -v1_xboole_0(_G11677), m1_subset_1(_G11734, _G11677)]
+ (23)  [- (k6_domain_1(_G8480, _G8615)=k6_domain_1(_G8547, _G8684)), _G8480=_G8547, _G8615=_G8684]
+ (24)  [_G9077=_G9126, - (k1_tarski(_G9077)=k1_tarski(_G9126))]
+ (25)  [_G9355=_G9404, - (k1_zfmisc_1(_G9355)=k1_zfmisc_1(_G9404))]
+ (26)  [_G9624=_G9673, - (u1_struct_0(_G9624)=u1_struct_0(_G9673))]
+ (27)  [- (_G4358=_G4358)]
+ (28)  [_G4457=_G4502, - (_G4502=_G4457)]
+ (29)  [- (_G4690=_G4803), _G4690=_G4746, _G4746=_G4803]
+ (30)  [-l1_struct_0(_G5189), _G5140=_G5189, l1_struct_0(_G5140)]
+ (31)  [-v1_xboole_0(_G5467), _G5418=_G5467, v1_xboole_0(_G5418)]
+ (32)  [-v2_struct_0(_G5745), _G5696=_G5745, v2_struct_0(_G5696)]
+ (33)  [-v2_pre_topc(_G6023), _G5974=_G6023, v2_pre_topc(_G5974)]
+ (34)  [-l1_pre_topc(_G6301), _G6252=_G6301, l1_pre_topc(_G6252)]
+ (35)  [-m1_subset_1(_G6597, _G6734), m1_subset_1(_G6530, _G6665), _G6530=_G6597, _G6665=_G6734]
+ (36)  [-v2_connsp_1(_G7194, _G7331), v2_connsp_1(_G7127, _G7262), _G7127=_G7194, _G7262=_G7331]
+ (37)  [-r2_hidden(_G7782, _G7919), r2_hidden(_G7715, _G7850), _G7715=_G7782, _G7850=_G7919]
+
+Connection Proof:
+-----------------
+1  [v2_struct_0(2^[])]   (5)  
+1.1  [-v2_struct_0(2^[]), v1_xboole_0(u1_struct_0(2^[])), l1_struct_0(2^[])]   (20)  substitution:[[_G11440], [2^[]]]
+1.1.1  [-v1_xboole_0(u1_struct_0(2^[])), - (k6_domain_1(u1_struct_0(2^[]), 3^[])=k1_tarski(3^[])), m1_subset_1(3^[], u1_struct_0(2^[]))]   (22)  substitution:[[_G11677, _G11734], [u1_struct_0(2^[]), 3^[]]]
+1.1.1.1  [k6_domain_1(u1_struct_0(2^[]), 3^[])=k1_tarski(3^[]), -r2_hidden(3^[], k6_domain_1(u1_struct_0(2^[]), 3^[])), 3^[]=3^[]]   (13)  substitution:[[_G10044, _G9986, _G10174], [k6_domain_1(u1_struct_0(2^[]), 3^[]), 3^[], 3^[]]]
+1.1.1.1.1  [r2_hidden(3^[], k6_domain_1(u1_struct_0(2^[]), 3^[])), -6^[k6_domain_1(u1_struct_0(2^[]), 3^[])], -r2_hidden(k6_domain_1(u1_struct_0(2^[]), 3^[]), 4^[]), v2_connsp_1(k6_domain_1(u1_struct_0(2^[]), 3^[]), 2^[])]   (3)  substitution:[[_G15168], [k6_domain_1(u1_struct_0(2^[]), 3^[])]]
+1.1.1.1.1.1  [6^[k6_domain_1(u1_struct_0(2^[]), 3^[])], m1_subset_1(k6_domain_1(u1_struct_0(2^[]), 3^[]), k1_zfmisc_1(u1_struct_0(2^[])))]   (11)  substitution:[[_G15168], [k6_domain_1(u1_struct_0(2^[]), 3^[])]]
+1.1.1.1.1.1.1  [-m1_subset_1(k6_domain_1(u1_struct_0(2^[]), 3^[]), k1_zfmisc_1(u1_struct_0(2^[]))), -v1_xboole_0(u1_struct_0(2^[])), m1_subset_1(3^[], u1_struct_0(2^[]))]   (16)  substitution:[[_G10406, _G10463], [u1_struct_0(2^[]), 3^[]]]
+1.1.1.1.1.1.1.1  [v1_xboole_0(u1_struct_0(2^[]))]   (reduction:1.1)  
+1.1.1.1.1.1.1.2  [-m1_subset_1(3^[], u1_struct_0(2^[]))]   (8)  
+1.1.1.1.1.2  [r2_hidden(k6_domain_1(u1_struct_0(2^[]), 3^[]), 4^[]), -r2_hidden(k1_tarski(3^[]), k1_xboole_0), k6_domain_1(u1_struct_0(2^[]), 3^[])=k1_tarski(3^[]), 4^[]=k1_xboole_0]   (37)  substitution:[[_G7715, _G7850, _G7782, _G7919], [k6_domain_1(u1_struct_0(2^[]), 3^[]), 4^[], k1_tarski(3^[]), k1_xboole_0]]
+1.1.1.1.1.2.1  [r2_hidden(k1_tarski(3^[]), k1_xboole_0), v1_xboole_0(k1_xboole_0)]   (21)  substitution:[[_G12054, _G12100], [k1_tarski(3^[]), k1_xboole_0]]
+1.1.1.1.1.2.1.1  [-v1_xboole_0(k1_xboole_0)]   (19)  
+1.1.1.1.1.2.2  [- (k6_domain_1(u1_struct_0(2^[]), 3^[])=k1_tarski(3^[]))]   (reduction:1.1.1)  
+1.1.1.1.1.2.3  [- (4^[]=k1_xboole_0)]   (10)  
+1.1.1.1.1.3  [-v2_connsp_1(k6_domain_1(u1_struct_0(2^[]), 3^[]), 2^[]), v2_connsp_1(k1_tarski(3^[]), 2^[]), k1_tarski(3^[])=k6_domain_1(u1_struct_0(2^[]), 3^[]), 2^[]=2^[]]   (36)  substitution:[[_G7194, _G7331, _G7127, _G7262], [k6_domain_1(u1_struct_0(2^[]), 3^[]), 2^[], k1_tarski(3^[]), 2^[]]]
+1.1.1.1.1.3.1  [-v2_connsp_1(k1_tarski(3^[]), 2^[]), m1_subset_1(3^[], u1_struct_0(2^[])), -v2_struct_0(2^[]), v2_pre_topc(2^[]), l1_pre_topc(2^[])]   (18)  substitution:[[_G10989, _G10923], [3^[], 2^[]]]
+1.1.1.1.1.3.1.1  [-m1_subset_1(3^[], u1_struct_0(2^[]))]   (8)  
+1.1.1.1.1.3.1.2  [v2_struct_0(2^[])]   (5)  
+1.1.1.1.1.3.1.3  [-v2_pre_topc(2^[])]   (6)  
+1.1.1.1.1.3.1.4  [-l1_pre_topc(2^[])]   (7)  
+1.1.1.1.1.3.2  [- (k1_tarski(3^[])=k6_domain_1(u1_struct_0(2^[]), 3^[])), k6_domain_1(u1_struct_0(2^[]), 3^[])=k1_tarski(3^[])]   (28)  substitution:[[_G4502, _G4457], [k1_tarski(3^[]), k6_domain_1(u1_struct_0(2^[]), 3^[])]]
+1.1.1.1.1.3.2.1  [- (k6_domain_1(u1_struct_0(2^[]), 3^[])=k1_tarski(3^[]))]   (reduction:1.1.1)  
+1.1.1.1.1.3.3  [- (2^[]=2^[])]   (27)  substitution:[[_G4358], [2^[]]]
+1.1.1.1.2  [- (3^[]=3^[])]   (27)  substitution:[[_G4358], [3^[]]]
+1.1.1.2  [-m1_subset_1(3^[], u1_struct_0(2^[]))]   (8)  
+1.1.2  [-l1_struct_0(2^[]), l1_pre_topc(2^[])]   (17)  substitution:[[_G10792], [2^[]]]
+1.1.2.1  [-l1_pre_topc(2^[])]   (7)  
+------------------------------------------------------
+End of proof for t31_connsp_1

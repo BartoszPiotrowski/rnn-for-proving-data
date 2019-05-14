@@ -1,0 +1,65 @@
+
+t6_int_4 is a Theorem
+Start of proof for t6_int_4
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_int_1(1^[])]
+ (2)  [-v1_int_1(2^[])]
+ (3)  [-r1_int_1(1^[], 2^[])]
+ (4)  [2^[]=k6_numbers]
+ (5)  [r1_xxreal_0(k1_int_2(1^[]), k1_int_2(2^[]))]
+ (6)  [v1_int_1(_G6740), -v7_ordinal1(k16_complex1(_G6740))]
+ (7)  [v1_int_1(_G6740), -v1_xreal_0(k16_complex1(_G6740))]
+ (8)  [v7_ordinal1(_G6961), v7_ordinal1(_G7054), r1_int_1(_G7054, _G6961), -r1_xxreal_0(_G6961, k6_numbers), -r1_xxreal_0(_G7054, _G6961)]
+ (9)  [v1_int_1(_G7414), - (k1_int_2(_G7414)=k16_complex1(_G7414))]
+ (10)  [- (k6_numbers=k1_xboole_0)]
+ (11)  [v1_int_1(_G7660), -r1_int_1(k1_int_2(_G7660), _G7660)]
+ (12)  [v1_int_1(_G7660), -r1_int_1(_G7660, k1_int_2(_G7660))]
+ (13)  [v1_int_1(_G7933), v1_int_1(_G8024), r1_int_1(_G7933, _G8024), -r1_int_1(k1_int_2(_G7933), k1_int_2(_G8024))]
+ (14)  [v1_int_1(_G7933), v1_int_1(_G8024), -r1_int_1(_G7933, _G8024), r1_int_1(k1_int_2(_G7933), k1_int_2(_G8024))]
+ (15)  [v7_ordinal1(_G8564), - (k6_numbers=_G8564), r1_xxreal_0(_G8564, k6_numbers)]
+ (16)  [v1_int_1(_G8332), r1_int_1(k6_numbers, _G8332), - (_G8332=k6_numbers)]
+ (17)  [v1_int_1(_G8332), -r1_int_1(k6_numbers, _G8332), _G8332=k6_numbers]
+ (18)  [_G6151=_G6200, - (k16_complex1(_G6151)=k16_complex1(_G6200))]
+ (19)  [_G6420=_G6469, - (k1_int_2(_G6420)=k1_int_2(_G6469))]
+ (20)  [- (_G3245=_G3245)]
+ (21)  [_G3344=_G3389, - (_G3389=_G3344)]
+ (22)  [- (_G3577=_G3690), _G3577=_G3633, _G3633=_G3690]
+ (23)  [-v1_xreal_0(_G4076), _G4027=_G4076, v1_xreal_0(_G4027)]
+ (24)  [-v7_ordinal1(_G4354), _G4305=_G4354, v7_ordinal1(_G4305)]
+ (25)  [-v1_int_1(_G4632), _G4583=_G4632, v1_int_1(_G4583)]
+ (26)  [-r1_int_1(_G4928, _G5065), r1_int_1(_G4861, _G4996), _G4861=_G4928, _G4996=_G5065]
+ (27)  [-r1_xxreal_0(_G5516, _G5653), r1_xxreal_0(_G5449, _G5584), _G5449=_G5516, _G5584=_G5653]
+
+Connection Proof:
+-----------------
+1  [r1_xxreal_0(k1_int_2(1^[]), k1_int_2(2^[]))]   (5)  
+1.1  [-r1_xxreal_0(k1_int_2(1^[]), k1_int_2(2^[])), v7_ordinal1(k1_int_2(2^[])), v7_ordinal1(k1_int_2(1^[])), r1_int_1(k1_int_2(1^[]), k1_int_2(2^[])), -r1_xxreal_0(k1_int_2(2^[]), k6_numbers)]   (8)  substitution:[[_G7054, _G6961], [k1_int_2(1^[]), k1_int_2(2^[])]]
+1.1.1  [-v7_ordinal1(k1_int_2(2^[])), k16_complex1(2^[])=k1_int_2(2^[]), v7_ordinal1(k16_complex1(2^[]))]   (24)  substitution:[[_G4354, _G4305], [k1_int_2(2^[]), k16_complex1(2^[])]]
+1.1.1.1  [- (k16_complex1(2^[])=k1_int_2(2^[])), k1_int_2(2^[])=k16_complex1(2^[])]   (21)  substitution:[[_G3389, _G3344], [k16_complex1(2^[]), k1_int_2(2^[])]]
+1.1.1.1.1  [- (k1_int_2(2^[])=k16_complex1(2^[])), v1_int_1(2^[])]   (9)  substitution:[[_G7414], [2^[]]]
+1.1.1.1.1.1  [-v1_int_1(2^[])]   (2)  
+1.1.1.2  [-v7_ordinal1(k16_complex1(2^[])), v1_int_1(2^[])]   (6)  substitution:[[_G6740], [2^[]]]
+1.1.1.2.1  [-v1_int_1(2^[])]   (2)  
+1.1.2  [-v7_ordinal1(k1_int_2(1^[])), k16_complex1(1^[])=k1_int_2(1^[]), v7_ordinal1(k16_complex1(1^[]))]   (24)  substitution:[[_G4354, _G4305], [k1_int_2(1^[]), k16_complex1(1^[])]]
+1.1.2.1  [- (k16_complex1(1^[])=k1_int_2(1^[])), k1_int_2(1^[])=k16_complex1(1^[])]   (21)  substitution:[[_G3389, _G3344], [k16_complex1(1^[]), k1_int_2(1^[])]]
+1.1.2.1.1  [- (k1_int_2(1^[])=k16_complex1(1^[])), v1_int_1(1^[])]   (9)  substitution:[[_G7414], [1^[]]]
+1.1.2.1.1.1  [-v1_int_1(1^[])]   (1)  
+1.1.2.2  [-v7_ordinal1(k16_complex1(1^[])), v1_int_1(1^[])]   (6)  substitution:[[_G6740], [1^[]]]
+1.1.2.2.1  [-v1_int_1(1^[])]   (1)  
+1.1.3  [-r1_int_1(k1_int_2(1^[]), k1_int_2(2^[])), v1_int_1(1^[]), v1_int_1(2^[]), r1_int_1(1^[], 2^[])]   (13)  substitution:[[_G7933, _G8024], [1^[], 2^[]]]
+1.1.3.1  [-v1_int_1(1^[])]   (1)  
+1.1.3.2  [-v1_int_1(2^[])]   (2)  
+1.1.3.3  [-r1_int_1(1^[], 2^[])]   (3)  
+1.1.4  [r1_xxreal_0(k1_int_2(2^[]), k6_numbers), v7_ordinal1(k1_int_2(2^[])), - (k6_numbers=k1_int_2(2^[]))]   (15)  substitution:[[_G8564], [k1_int_2(2^[])]]
+1.1.4.1  [-v7_ordinal1(k1_int_2(2^[]))]   (lemmata:1.1)  
+1.1.4.2  [k6_numbers=k1_int_2(2^[]), - (k1_int_2(2^[])=k6_numbers)]   (21)  substitution:[[_G3344, _G3389], [k6_numbers, k1_int_2(2^[])]]
+1.1.4.2.1  [k1_int_2(2^[])=k6_numbers, -r1_int_1(k6_numbers, 2^[]), r1_int_1(k1_int_2(2^[]), 2^[]), 2^[]=2^[]]   (26)  substitution:[[_G4861, _G4928, _G5065, _G4996], [k1_int_2(2^[]), k6_numbers, 2^[], 2^[]]]
+1.1.4.2.1.1  [r1_int_1(k6_numbers, 2^[]), v1_int_1(2^[]), - (2^[]=k6_numbers)]   (16)  substitution:[[_G8332], [2^[]]]
+1.1.4.2.1.1.1  [-v1_int_1(2^[])]   (2)  
+1.1.4.2.1.1.2  [2^[]=k6_numbers]   (4)  
+1.1.4.2.1.2  [-r1_int_1(k1_int_2(2^[]), 2^[]), v1_int_1(2^[])]   (11)  substitution:[[_G7660], [2^[]]]
+1.1.4.2.1.2.1  [-v1_int_1(2^[])]   (2)  
+1.1.4.2.1.3  [- (2^[]=2^[])]   (20)  substitution:[[_G3245], [2^[]]]
+------------------------------------------------------
+End of proof for t6_int_4

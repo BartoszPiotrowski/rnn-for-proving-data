@@ -1,0 +1,39 @@
+
+t7_taylor_1 is a Theorem
+Start of proof for t7_taylor_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xreal_0(1^[])]
+ (2)  [-v1_rat_1(2^[])]
+ (3)  [k6_prepower(k25_sin_cos(1^[]), 2^[])=k25_sin_cos(k3_xcmplx_0(2^[], 1^[]))]
+ (4)  [v1_xreal_0(_G6593), -v1_xreal_0(k25_sin_cos(_G6593))]
+ (5)  [v1_xreal_0(_G6740), v1_rat_1(_G6831), - (k9_prepower(k25_sin_cos(_G6740), _G6831)=k25_sin_cos(k3_xcmplx_0(_G6831, _G6740)))]
+ (6)  [v1_xreal_0(_G7139), r1_xxreal_0(k25_sin_cos(_G7139), k6_numbers)]
+ (7)  [v1_xreal_0(_G7319), v1_rat_1(_G7414), -r1_xxreal_0(_G7319, k6_numbers), - (k9_prepower(_G7319, _G7414)=k6_prepower(_G7319, _G7414))]
+ (8)  [- (k9_prepower(_G4449, _G4584)=k9_prepower(_G4516, _G4653)), _G4449=_G4516, _G4584=_G4653]
+ (9)  [- (k6_prepower(_G5046, _G5181)=k6_prepower(_G5113, _G5250)), _G5046=_G5113, _G5181=_G5250]
+ (10)  [_G5643=_G5692, - (k25_sin_cos(_G5643)=k25_sin_cos(_G5692))]
+ (11)  [- (k3_xcmplx_0(_G5912, _G6047)=k3_xcmplx_0(_G5979, _G6116)), _G5912=_G5979, _G6047=_G6116]
+ (12)  [- (_G2460=_G2460)]
+ (13)  [_G2559=_G2604, - (_G2604=_G2559)]
+ (14)  [- (_G2792=_G2905), _G2792=_G2848, _G2848=_G2905]
+ (15)  [-r1_xxreal_0(_G3309, _G3446), r1_xxreal_0(_G3242, _G3377), _G3242=_G3309, _G3377=_G3446]
+ (16)  [-v1_xreal_0(_G3888), _G3839=_G3888, v1_xreal_0(_G3839)]
+ (17)  [-v1_rat_1(_G4157), _G4108=_G4157, v1_rat_1(_G4108)]
+
+Connection Proof:
+-----------------
+1  [v1_xreal_0(1^[]), r1_xxreal_0(k25_sin_cos(1^[]), k6_numbers)]   (6)  substitution:[[_G7139], [1^[]]]
+1.1  [-v1_xreal_0(1^[])]   (1)  
+1.2  [-r1_xxreal_0(k25_sin_cos(1^[]), k6_numbers), v1_xreal_0(k25_sin_cos(1^[])), v1_rat_1(2^[]), - (k9_prepower(k25_sin_cos(1^[]), 2^[])=k6_prepower(k25_sin_cos(1^[]), 2^[]))]   (7)  substitution:[[_G7319, _G7414], [k25_sin_cos(1^[]), 2^[]]]
+1.2.1  [-v1_xreal_0(k25_sin_cos(1^[])), v1_xreal_0(1^[])]   (4)  substitution:[[_G6593], [1^[]]]
+1.2.1.1  [-v1_xreal_0(1^[])]   (1)  
+1.2.2  [-v1_rat_1(2^[])]   (2)  
+1.2.3  [k9_prepower(k25_sin_cos(1^[]), 2^[])=k6_prepower(k25_sin_cos(1^[]), 2^[]), - (k6_prepower(k25_sin_cos(1^[]), 2^[])=k9_prepower(k25_sin_cos(1^[]), 2^[]))]   (13)  substitution:[[_G2559, _G2604], [k9_prepower(k25_sin_cos(1^[]), 2^[]), k6_prepower(k25_sin_cos(1^[]), 2^[])]]
+1.2.3.1  [k6_prepower(k25_sin_cos(1^[]), 2^[])=k9_prepower(k25_sin_cos(1^[]), 2^[]), - (k6_prepower(k25_sin_cos(1^[]), 2^[])=k25_sin_cos(k3_xcmplx_0(2^[], 1^[]))), k9_prepower(k25_sin_cos(1^[]), 2^[])=k25_sin_cos(k3_xcmplx_0(2^[], 1^[]))]   (14)  substitution:[[_G2792, _G2848, _G2905], [k6_prepower(k25_sin_cos(1^[]), 2^[]), k9_prepower(k25_sin_cos(1^[]), 2^[]), k25_sin_cos(k3_xcmplx_0(2^[], 1^[]))]]
+1.2.3.1.1  [k6_prepower(k25_sin_cos(1^[]), 2^[])=k25_sin_cos(k3_xcmplx_0(2^[], 1^[]))]   (3)  
+1.2.3.1.2  [- (k9_prepower(k25_sin_cos(1^[]), 2^[])=k25_sin_cos(k3_xcmplx_0(2^[], 1^[]))), v1_xreal_0(1^[]), v1_rat_1(2^[])]   (5)  substitution:[[_G6740, _G6831], [1^[], 2^[]]]
+1.2.3.1.2.1  [-v1_xreal_0(1^[])]   (1)  
+1.2.3.1.2.2  [-v1_rat_1(2^[])]   (2)  
+------------------------------------------------------
+End of proof for t7_taylor_1

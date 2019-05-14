@@ -1,0 +1,59 @@
+
+t9_xxreal_1 is a Theorem
+Start of proof for t9_xxreal_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xxreal_0(3^[])]
+ (2)  [-v1_xxreal_0(4^[])]
+ (3)  [-r2_hidden(2^[], k3_xxreal_1(3^[], 4^[]))]
+ (4)  [r2_hidden(2^[], k4_xxreal_1(3^[], 4^[]))]
+ (5)  [2^[]=4^[]]
+ (6)  [-v2_membered(_G7156), -r2_hidden(1^[_G7156], _G7156)]
+ (7)  [-v2_membered(_G7156), v1_xxreal_0(1^[_G7156])]
+ (8)  [v2_membered(_G7156), r2_hidden(_G7237, _G7156), -v1_xxreal_0(_G7237)]
+ (9)  [-v2_membered(k3_xxreal_1(_G7429, _G7480)), v1_xxreal_0(_G7429), v1_xxreal_0(_G7480)]
+ (10)  [v1_xxreal_0(_G7725), v1_xxreal_0(_G7818), - (_G7725=_G7818), r1_xxreal_0(_G7725, _G7818), r1_xxreal_0(_G7818, _G7725)]
+ (11)  [v1_xxreal_0(_G8178), v1_xxreal_0(_G8286), v1_xxreal_0(_G8390), r2_hidden(_G8178, k3_xxreal_1(_G8286, _G8390)), r1_xxreal_0(_G8178, _G8286)]
+ (12)  [v1_xxreal_0(_G8178), v1_xxreal_0(_G8286), v1_xxreal_0(_G8390), r2_hidden(_G8178, k3_xxreal_1(_G8286, _G8390)), -r1_xxreal_0(_G8178, _G8390)]
+ (13)  [v1_xxreal_0(_G8178), v1_xxreal_0(_G8286), v1_xxreal_0(_G8390), -r2_hidden(_G8178, k3_xxreal_1(_G8286, _G8390)), -r1_xxreal_0(_G8178, _G8286), r1_xxreal_0(_G8178, _G8390)]
+ (14)  [v1_xxreal_0(_G8834), v1_xxreal_0(_G8944), v1_xxreal_0(_G9050), r2_hidden(_G8834, k4_xxreal_1(_G8944, _G9050)), r1_xxreal_0(_G8834, _G8944)]
+ (15)  [v1_xxreal_0(_G8834), v1_xxreal_0(_G8944), v1_xxreal_0(_G9050), r2_hidden(_G8834, k4_xxreal_1(_G8944, _G9050)), r1_xxreal_0(_G9050, _G8834)]
+ (16)  [v1_xxreal_0(_G8834), v1_xxreal_0(_G8944), v1_xxreal_0(_G9050), -r2_hidden(_G8834, k4_xxreal_1(_G8944, _G9050)), -r1_xxreal_0(_G8834, _G8944), -r1_xxreal_0(_G9050, _G8834)]
+ (17)  [- (k3_xxreal_1(_G5929, _G6064)=k3_xxreal_1(_G5996, _G6133)), _G5929=_G5996, _G6064=_G6133]
+ (18)  [- (k4_xxreal_1(_G6517, _G6652)=k4_xxreal_1(_G6584, _G6721)), _G6517=_G6584, _G6652=_G6721]
+ (19)  [- (_G3322=_G3322)]
+ (20)  [_G3421=_G3466, - (_G3466=_G3421)]
+ (21)  [- (_G3654=_G3767), _G3654=_G3710, _G3710=_G3767]
+ (22)  [-v2_membered(_G4153), _G4104=_G4153, v2_membered(_G4104)]
+ (23)  [-r1_xxreal_0(_G4449, _G4586), r1_xxreal_0(_G4382, _G4517), _G4382=_G4449, _G4517=_G4586]
+ (24)  [-v1_xxreal_0(_G5028), _G4979=_G5028, v1_xxreal_0(_G4979)]
+ (25)  [-r2_hidden(_G5315, _G5452), r2_hidden(_G5248, _G5383), _G5248=_G5315, _G5383=_G5452]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(2^[], k4_xxreal_1(3^[], 4^[]))]   (4)  
+1.1  [-r2_hidden(2^[], k4_xxreal_1(3^[], 4^[])), v1_xxreal_0(2^[]), v1_xxreal_0(3^[]), v1_xxreal_0(4^[]), -r1_xxreal_0(2^[], 3^[]), -r1_xxreal_0(4^[], 2^[])]   (16)  substitution:[[_G8834, _G8944, _G9050], [2^[], 3^[], 4^[]]]
+1.1.1  [-v1_xxreal_0(2^[]), v2_membered(k3_xxreal_1(3^[], 4^[])), r2_hidden(2^[], k3_xxreal_1(3^[], 4^[]))]   (8)  substitution:[[_G7237, _G7156], [2^[], k3_xxreal_1(3^[], 4^[])]]
+1.1.1.1  [-v2_membered(k3_xxreal_1(3^[], 4^[])), v1_xxreal_0(3^[]), v1_xxreal_0(4^[])]   (9)  substitution:[[_G7429, _G7480], [3^[], 4^[]]]
+1.1.1.1.1  [-v1_xxreal_0(3^[])]   (1)  
+1.1.1.1.2  [-v1_xxreal_0(4^[])]   (2)  
+1.1.1.2  [-r2_hidden(2^[], k3_xxreal_1(3^[], 4^[]))]   (3)  
+1.1.2  [-v1_xxreal_0(3^[])]   (1)  
+1.1.3  [-v1_xxreal_0(4^[])]   (2)  
+1.1.4  [r1_xxreal_0(2^[], 3^[]), v1_xxreal_0(2^[]), v1_xxreal_0(3^[]), v1_xxreal_0(4^[]), r2_hidden(2^[], k3_xxreal_1(3^[], 4^[]))]   (11)  substitution:[[_G8178, _G8286, _G8390], [2^[], 3^[], 4^[]]]
+1.1.4.1  [-v1_xxreal_0(2^[])]   (lemmata:1.1)  
+1.1.4.2  [-v1_xxreal_0(3^[])]   (1)  
+1.1.4.3  [-v1_xxreal_0(4^[])]   (2)  
+1.1.4.4  [-r2_hidden(2^[], k3_xxreal_1(3^[], 4^[]))]   (3)  
+1.1.5  [r1_xxreal_0(4^[], 2^[]), v1_xxreal_0(4^[]), v1_xxreal_0(2^[]), - (4^[]=2^[]), r1_xxreal_0(2^[], 4^[])]   (10)  substitution:[[_G7725, _G7818], [4^[], 2^[]]]
+1.1.5.1  [-v1_xxreal_0(4^[])]   (2)  
+1.1.5.2  [-v1_xxreal_0(2^[])]   (lemmata:1.1)  
+1.1.5.3  [4^[]=2^[], - (2^[]=4^[])]   (20)  substitution:[[_G3421, _G3466], [4^[], 2^[]]]
+1.1.5.3.1  [2^[]=4^[]]   (5)  
+1.1.5.4  [-r1_xxreal_0(2^[], 4^[]), v1_xxreal_0(2^[]), v1_xxreal_0(3^[]), v1_xxreal_0(4^[]), r2_hidden(2^[], k3_xxreal_1(3^[], 4^[]))]   (12)  substitution:[[_G8178, _G8390, _G8286], [2^[], 4^[], 3^[]]]
+1.1.5.4.1  [-v1_xxreal_0(2^[])]   (lemmata:1.1.5)  
+1.1.5.4.2  [-v1_xxreal_0(3^[])]   (1)  
+1.1.5.4.3  [-v1_xxreal_0(4^[])]   (2)  
+1.1.5.4.4  [-r2_hidden(2^[], k3_xxreal_1(3^[], 4^[]))]   (3)  
+------------------------------------------------------
+End of proof for t9_xxreal_1

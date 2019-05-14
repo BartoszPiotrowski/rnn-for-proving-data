@@ -1,0 +1,35 @@
+
+t3_matrix_5 is a Theorem
+Start of proof for t3_matrix_5
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_matrix_1(1^[])]
+ (2)  [-m2_finseq_1(1^[], k3_finseq_2(k2_numbers))]
+ (3)  [-v1_matrix_1(2^[])]
+ (4)  [-m2_finseq_1(2^[], k3_finseq_2(k2_numbers))]
+ (5)  [- (k1_matrix_5(1^[])=k1_matrix_5(2^[]))]
+ (6)  [1^[]=2^[]]
+ (7)  [- (k1_matrix_5(_G3763)=_G3763), v1_matrix_1(_G3763), m2_finseq_1(_G3763, k3_finseq_2(k2_numbers))]
+ (8)  [_G3183=_G3232, - (k3_finseq_2(_G3183)=k3_finseq_2(_G3232))]
+ (9)  [_G3452=_G3501, - (k1_matrix_5(_G3452)=k1_matrix_5(_G3501))]
+ (10)  [- (_G1493=_G1493)]
+ (11)  [_G1592=_G1637, - (_G1637=_G1592)]
+ (12)  [- (_G1825=_G1938), _G1825=_G1881, _G1881=_G1938]
+ (13)  [-v1_matrix_1(_G2324), _G2275=_G2324, v1_matrix_1(_G2275)]
+ (14)  [-m2_finseq_1(_G2611, _G2748), m2_finseq_1(_G2544, _G2679), _G2544=_G2611, _G2679=_G2748]
+
+Connection Proof:
+-----------------
+1  [1^[]=2^[]]   (6)  
+1.1  [- (1^[]=2^[]), 1^[]=k1_matrix_5(1^[]), k1_matrix_5(1^[])=2^[]]   (12)  substitution:[[_G1825, _G1938, _G1881], [1^[], 2^[], k1_matrix_5(1^[])]]
+1.1.1  [- (1^[]=k1_matrix_5(1^[])), k1_matrix_5(1^[])=1^[]]   (11)  substitution:[[_G1637, _G1592], [1^[], k1_matrix_5(1^[])]]
+1.1.1.1  [- (k1_matrix_5(1^[])=1^[]), v1_matrix_1(1^[]), m2_finseq_1(1^[], k3_finseq_2(k2_numbers))]   (7)  substitution:[[_G3763], [1^[]]]
+1.1.1.1.1  [-v1_matrix_1(1^[])]   (1)  
+1.1.1.1.2  [-m2_finseq_1(1^[], k3_finseq_2(k2_numbers))]   (2)  
+1.1.2  [- (k1_matrix_5(1^[])=2^[]), k1_matrix_5(1^[])=k1_matrix_5(2^[]), k1_matrix_5(2^[])=2^[]]   (12)  substitution:[[_G1825, _G1938, _G1881], [k1_matrix_5(1^[]), 2^[], k1_matrix_5(2^[])]]
+1.1.2.1  [- (k1_matrix_5(1^[])=k1_matrix_5(2^[]))]   (5)  
+1.1.2.2  [- (k1_matrix_5(2^[])=2^[]), v1_matrix_1(2^[]), m2_finseq_1(2^[], k3_finseq_2(k2_numbers))]   (7)  substitution:[[_G3763], [2^[]]]
+1.1.2.2.1  [-v1_matrix_1(2^[])]   (3)  
+1.1.2.2.2  [-m2_finseq_1(2^[], k3_finseq_2(k2_numbers))]   (4)  
+------------------------------------------------------
+End of proof for t3_matrix_5

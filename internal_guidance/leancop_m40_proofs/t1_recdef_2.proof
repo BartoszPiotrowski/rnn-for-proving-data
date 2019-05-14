@@ -1,0 +1,29 @@
+
+t1_recdef_2 is a Theorem
+Start of proof for t1_recdef_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [- (1^[]=k3_xtuple_0(2^[], 3^[], 4^[]))]
+ (2)  [1^[]=k3_xtuple_0(k4_xtuple_0(1^[]), k5_xtuple_0(1^[]), k2_xtuple_0(1^[]))]
+ (3)  [-v2_xtuple_0(k3_xtuple_0(_G4680, _G4727, _G4775))]
+ (4)  [v2_xtuple_0(_G4953), - (k3_xtuple_0(k4_xtuple_0(_G4953), k5_xtuple_0(_G4953), k2_xtuple_0(_G4953))=_G4953)]
+ (5)  [-v2_xtuple_0(_G2493), _G2444=_G2493, v2_xtuple_0(_G2444)]
+ (6)  [- (_G1671=_G1671)]
+ (7)  [_G1770=_G1815, - (_G1815=_G1770)]
+ (8)  [- (_G2003=_G2116), _G2003=_G2059, _G2059=_G2116]
+ (9)  [- (k3_xtuple_0(_G2743, _G2914, _G3089)=k3_xtuple_0(_G2828, _G3001, _G3178)), _G2743=_G2828, _G2914=_G3001, _G3089=_G3178]
+ (10)  [_G3771=_G3820, - (k4_xtuple_0(_G3771)=k4_xtuple_0(_G3820))]
+ (11)  [_G4049=_G4098, - (k5_xtuple_0(_G4049)=k5_xtuple_0(_G4098))]
+ (12)  [_G4318=_G4367, - (k2_xtuple_0(_G4318)=k2_xtuple_0(_G4367))]
+
+Connection Proof:
+-----------------
+1  [1^[]=k3_xtuple_0(k4_xtuple_0(1^[]), k5_xtuple_0(1^[]), k2_xtuple_0(1^[]))]   (2)  
+1.1  [- (1^[]=k3_xtuple_0(k4_xtuple_0(1^[]), k5_xtuple_0(1^[]), k2_xtuple_0(1^[]))), k3_xtuple_0(k4_xtuple_0(1^[]), k5_xtuple_0(1^[]), k2_xtuple_0(1^[]))=1^[]]   (7)  substitution:[[_G1815, _G1770], [1^[], k3_xtuple_0(k4_xtuple_0(1^[]), k5_xtuple_0(1^[]), k2_xtuple_0(1^[]))]]
+1.1.1  [- (k3_xtuple_0(k4_xtuple_0(1^[]), k5_xtuple_0(1^[]), k2_xtuple_0(1^[]))=1^[]), v2_xtuple_0(1^[])]   (4)  substitution:[[_G4953], [1^[]]]
+1.1.1.1  [-v2_xtuple_0(1^[]), k3_xtuple_0(2^[], 3^[], 4^[])=1^[], v2_xtuple_0(k3_xtuple_0(2^[], 3^[], 4^[]))]   (5)  substitution:[[_G2493, _G2444], [1^[], k3_xtuple_0(2^[], 3^[], 4^[])]]
+1.1.1.1.1  [- (k3_xtuple_0(2^[], 3^[], 4^[])=1^[]), 1^[]=k3_xtuple_0(2^[], 3^[], 4^[])]   (7)  substitution:[[_G1815, _G1770], [k3_xtuple_0(2^[], 3^[], 4^[]), 1^[]]]
+1.1.1.1.1.1  [- (1^[]=k3_xtuple_0(2^[], 3^[], 4^[]))]   (1)  
+1.1.1.1.2  [-v2_xtuple_0(k3_xtuple_0(2^[], 3^[], 4^[]))]   (3)  substitution:[[_G4680, _G4727, _G4775], [2^[], 3^[], 4^[]]]
+------------------------------------------------------
+End of proof for t1_recdef_2

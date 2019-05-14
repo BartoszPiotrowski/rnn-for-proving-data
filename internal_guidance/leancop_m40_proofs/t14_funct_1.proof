@@ -1,0 +1,26 @@
+
+t14_funct_1 is a Theorem
+Start of proof for t14_funct_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(3^[])]
+ (2)  [-v1_funct_1(3^[])]
+ (3)  [-v1_relat_1(4^[])]
+ (4)  [-v1_funct_1(4^[])]
+ (5)  [-r2_hidden(2^[], k10_xtuple_0(k3_relat_1(4^[], 3^[])))]
+ (6)  [r2_hidden(2^[], k10_xtuple_0(3^[]))]
+ (7)  [v1_relat_1(_G1265), v1_relat_1(_G1353), -r1_tarski(k10_xtuple_0(k3_relat_1(_G1265, _G1353)), k10_xtuple_0(_G1353))]
+ (8)  [-r1_tarski(_G872, _G928), -r2_hidden(1^[_G928, _G872], _G872)]
+ (9)  [-r1_tarski(_G872, _G928), r2_hidden(1^[_G928, _G872], _G928)]
+ (10)  [r1_tarski(_G872, _G928), r2_hidden(_G1042, _G872), -r2_hidden(_G1042, _G928)]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(2^[], k10_xtuple_0(3^[]))]   (6)  
+1.1  [-r2_hidden(2^[], k10_xtuple_0(3^[])), r1_tarski(k10_xtuple_0(k3_relat_1(4^[], 3^[])), k10_xtuple_0(3^[])), r2_hidden(2^[], k10_xtuple_0(k3_relat_1(4^[], 3^[])))]   (10)  substitution:[[_G1042, _G928, _G872], [2^[], k10_xtuple_0(3^[]), k10_xtuple_0(k3_relat_1(4^[], 3^[]))]]
+1.1.1  [-r1_tarski(k10_xtuple_0(k3_relat_1(4^[], 3^[])), k10_xtuple_0(3^[])), v1_relat_1(4^[]), v1_relat_1(3^[])]   (7)  substitution:[[_G1265, _G1353], [4^[], 3^[]]]
+1.1.1.1  [-v1_relat_1(4^[])]   (3)  
+1.1.1.2  [-v1_relat_1(3^[])]   (1)  
+1.1.2  [-r2_hidden(2^[], k10_xtuple_0(k3_relat_1(4^[], 3^[])))]   (5)  
+------------------------------------------------------
+End of proof for t14_funct_1

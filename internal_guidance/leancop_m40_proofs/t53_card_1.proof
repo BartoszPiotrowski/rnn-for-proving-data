@@ -1,0 +1,35 @@
+
+t53_card_1 is a Theorem
+Start of proof for t53_card_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [np__5=k3_enumset1(k1_xboole_0, np__1, np__2, np__3, np__4)]
+ (2)  [- (k1_ordinal1(_G7485)=k2_xboole_0(_G7485, k1_tarski(_G7485)))]
+ (3)  [- (k1_ordinal1(np__4)=np__5)]
+ (4)  [- (k3_enumset1(_G7729, _G7799, _G7870, _G7942, _G8015)=k2_xboole_0(k2_enumset1(_G7729, _G7799, _G7870, _G7942), k1_tarski(_G8015)))]
+ (5)  [- (np__4=k2_enumset1(k1_xboole_0, np__1, np__2, np__3))]
+ (6)  [- (_G1801=_G1801)]
+ (7)  [_G1900=_G1945, - (_G1945=_G1900)]
+ (8)  [- (_G2133=_G2246), _G2133=_G2189, _G2189=_G2246]
+ (9)  [_G2583=_G2632, - (k1_ordinal1(_G2583)=k1_ordinal1(_G2632))]
+ (10)  [- (k2_xboole_0(_G2861, _G2996)=k2_xboole_0(_G2928, _G3065)), _G2861=_G2928, _G2996=_G3065]
+ (11)  [_G3458=_G3507, - (k1_tarski(_G3458)=k1_tarski(_G3507))]
+ (12)  [- (k2_enumset1(_G3736, _G3943, _G4154, _G4369)=k2_enumset1(_G3839, _G4048, _G4261, _G4478)), _G3736=_G3839, _G3943=_G4048, _G4154=_G4261, _G4369=_G4478]
+ (13)  [- (k3_enumset1(_G5262, _G5505, _G5752, _G6003, _G6258)=k3_enumset1(_G5383, _G5628, _G5877, _G6130, _G6387)), _G5262=_G5383, _G5505=_G5628, _G5752=_G5877, _G6003=_G6130, _G6258=_G6387]
+
+Connection Proof:
+-----------------
+1  [np__5=k3_enumset1(k1_xboole_0, np__1, np__2, np__3, np__4)]   (1)  
+1.1  [- (np__5=k3_enumset1(k1_xboole_0, np__1, np__2, np__3, np__4)), np__5=k2_xboole_0(np__4, k1_tarski(np__4)), k2_xboole_0(np__4, k1_tarski(np__4))=k3_enumset1(k1_xboole_0, np__1, np__2, np__3, np__4)]   (8)  substitution:[[_G2133, _G2246, _G2189], [np__5, k3_enumset1(k1_xboole_0, np__1, np__2, np__3, np__4), k2_xboole_0(np__4, k1_tarski(np__4))]]
+1.1.1  [- (np__5=k2_xboole_0(np__4, k1_tarski(np__4))), np__5=k1_ordinal1(np__4), k1_ordinal1(np__4)=k2_xboole_0(np__4, k1_tarski(np__4))]   (8)  substitution:[[_G2133, _G2246, _G2189], [np__5, k2_xboole_0(np__4, k1_tarski(np__4)), k1_ordinal1(np__4)]]
+1.1.1.1  [- (np__5=k1_ordinal1(np__4)), k1_ordinal1(np__4)=np__5]   (7)  substitution:[[_G1945, _G1900], [np__5, k1_ordinal1(np__4)]]
+1.1.1.1.1  [- (k1_ordinal1(np__4)=np__5)]   (3)  
+1.1.1.2  [- (k1_ordinal1(np__4)=k2_xboole_0(np__4, k1_tarski(np__4)))]   (2)  substitution:[[_G7485], [np__4]]
+1.1.2  [- (k2_xboole_0(np__4, k1_tarski(np__4))=k3_enumset1(k1_xboole_0, np__1, np__2, np__3, np__4)), k2_xboole_0(np__4, k1_tarski(np__4))=k2_xboole_0(k2_enumset1(k1_xboole_0, np__1, np__2, np__3), k1_tarski(np__4)), k2_xboole_0(k2_enumset1(k1_xboole_0, np__1, np__2, np__3), k1_tarski(np__4))=k3_enumset1(k1_xboole_0, np__1, np__2, np__3, np__4)]   (8)  substitution:[[_G2133, _G2246, _G2189], [k2_xboole_0(np__4, k1_tarski(np__4)), k3_enumset1(k1_xboole_0, np__1, np__2, np__3, np__4), k2_xboole_0(k2_enumset1(k1_xboole_0, np__1, np__2, np__3), k1_tarski(np__4))]]
+1.1.2.1  [- (k2_xboole_0(np__4, k1_tarski(np__4))=k2_xboole_0(k2_enumset1(k1_xboole_0, np__1, np__2, np__3), k1_tarski(np__4))), np__4=k2_enumset1(k1_xboole_0, np__1, np__2, np__3), k1_tarski(np__4)=k1_tarski(np__4)]   (10)  substitution:[[_G2861, _G2996, _G2928, _G3065], [np__4, k1_tarski(np__4), k2_enumset1(k1_xboole_0, np__1, np__2, np__3), k1_tarski(np__4)]]
+1.1.2.1.1  [- (np__4=k2_enumset1(k1_xboole_0, np__1, np__2, np__3))]   (5)  
+1.1.2.1.2  [- (k1_tarski(np__4)=k1_tarski(np__4))]   (6)  substitution:[[_G1801], [k1_tarski(np__4)]]
+1.1.2.2  [- (k2_xboole_0(k2_enumset1(k1_xboole_0, np__1, np__2, np__3), k1_tarski(np__4))=k3_enumset1(k1_xboole_0, np__1, np__2, np__3, np__4)), k3_enumset1(k1_xboole_0, np__1, np__2, np__3, np__4)=k2_xboole_0(k2_enumset1(k1_xboole_0, np__1, np__2, np__3), k1_tarski(np__4))]   (7)  substitution:[[_G1945, _G1900], [k2_xboole_0(k2_enumset1(k1_xboole_0, np__1, np__2, np__3), k1_tarski(np__4)), k3_enumset1(k1_xboole_0, np__1, np__2, np__3, np__4)]]
+1.1.2.2.1  [- (k3_enumset1(k1_xboole_0, np__1, np__2, np__3, np__4)=k2_xboole_0(k2_enumset1(k1_xboole_0, np__1, np__2, np__3), k1_tarski(np__4)))]   (4)  substitution:[[_G7729, _G7799, _G7870, _G7942, _G8015], [k1_xboole_0, np__1, np__2, np__3, np__4]]
+------------------------------------------------------
+End of proof for t53_card_1

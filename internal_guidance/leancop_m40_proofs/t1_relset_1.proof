@@ -1,0 +1,22 @@
+
+t1_relset_1 is a Theorem
+Start of proof for t1_relset_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(2^[], 3^[])))]
+ (2)  [-r1_tarski(1^[], 4^[])]
+ (3)  [m1_subset_1(1^[], k1_zfmisc_1(k2_zfmisc_1(2^[], 3^[])))]
+ (4)  [-r1_tarski(_G811, _G924), r1_tarski(_G811, _G867), r1_tarski(_G867, _G924)]
+ (5)  [m1_subset_1(_G1210, k1_zfmisc_1(_G1257)), -r1_tarski(_G1210, _G1257)]
+ (6)  [-m1_subset_1(_G1210, k1_zfmisc_1(_G1257)), r1_tarski(_G1210, _G1257)]
+
+Connection Proof:
+-----------------
+1  [m1_subset_1(1^[], k1_zfmisc_1(k2_zfmisc_1(2^[], 3^[])))]   (3)  
+1.1  [-m1_subset_1(1^[], k1_zfmisc_1(k2_zfmisc_1(2^[], 3^[]))), r1_tarski(1^[], k2_zfmisc_1(2^[], 3^[]))]   (6)  substitution:[[_G1210, _G1257], [1^[], k2_zfmisc_1(2^[], 3^[])]]
+1.1.1  [-r1_tarski(1^[], k2_zfmisc_1(2^[], 3^[])), r1_tarski(1^[], 4^[]), r1_tarski(4^[], k2_zfmisc_1(2^[], 3^[]))]   (4)  substitution:[[_G811, _G924, _G867], [1^[], k2_zfmisc_1(2^[], 3^[]), 4^[]]]
+1.1.1.1  [-r1_tarski(1^[], 4^[])]   (2)  
+1.1.1.2  [-r1_tarski(4^[], k2_zfmisc_1(2^[], 3^[])), m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(2^[], 3^[])))]   (5)  substitution:[[_G1210, _G1257], [4^[], k2_zfmisc_1(2^[], 3^[])]]
+1.1.1.2.1  [-m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(2^[], 3^[])))]   (1)  
+------------------------------------------------------
+End of proof for t1_relset_1

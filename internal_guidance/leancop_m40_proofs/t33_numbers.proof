@@ -1,0 +1,25 @@
+
+t33_numbers is a Theorem
+Start of proof for t33_numbers
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [r2_xboole_0(k1_numbers, k7_numbers)]
+ (2)  [-r1_tarski(k1_numbers, k7_numbers)]
+ (3)  [k1_numbers=k7_numbers]
+ (4)  [r2_xboole_0(_G3129, _G3182), -r1_tarski(_G3129, _G3182)]
+ (5)  [r2_xboole_0(_G3129, _G3182), _G3129=_G3182]
+ (6)  [-r2_xboole_0(_G3129, _G3182), r1_tarski(_G3129, _G3182), - (_G3129=_G3182)]
+ (7)  [- (_G1120=_G1120)]
+ (8)  [_G1219=_G1264, - (_G1264=_G1219)]
+ (9)  [- (_G1452=_G1565), _G1452=_G1508, _G1508=_G1565]
+ (10)  [-r1_tarski(_G1969, _G2106), r1_tarski(_G1902, _G2037), _G1902=_G1969, _G2037=_G2106]
+ (11)  [-r2_xboole_0(_G2557, _G2694), r2_xboole_0(_G2490, _G2625), _G2490=_G2557, _G2625=_G2694]
+
+Connection Proof:
+-----------------
+1  [r2_xboole_0(k1_numbers, k7_numbers)]   (1)  
+1.1  [-r2_xboole_0(k1_numbers, k7_numbers), r1_tarski(k1_numbers, k7_numbers), - (k1_numbers=k7_numbers)]   (6)  substitution:[[_G3129, _G3182], [k1_numbers, k7_numbers]]
+1.1.1  [-r1_tarski(k1_numbers, k7_numbers)]   (2)  
+1.1.2  [k1_numbers=k7_numbers]   (3)  
+------------------------------------------------------
+End of proof for t33_numbers

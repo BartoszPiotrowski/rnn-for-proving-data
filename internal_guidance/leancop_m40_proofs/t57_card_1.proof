@@ -1,0 +1,36 @@
+
+t57_card_1 is a Theorem
+Start of proof for t57_card_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [np__9=k7_enumset1(k1_xboole_0, np__1, np__2, np__3, np__4, np__5, np__6, np__7, np__8)]
+ (2)  [- (k2_xboole_0(_G13994, _G14039)=k2_xboole_0(_G14039, _G13994))]
+ (3)  [- (k1_ordinal1(_G14236)=k2_xboole_0(_G14236, k1_tarski(_G14236)))]
+ (4)  [- (k1_ordinal1(np__8)=np__9)]
+ (5)  [- (np__8=k6_enumset1(k1_xboole_0, np__1, np__2, np__3, np__4, np__5, np__6, np__7))]
+ (6)  [- (k7_enumset1(_G14825, _G14923, _G15022, _G15122, _G15223, _G15325, _G15428, _G15532, _G15637)=k2_xboole_0(k6_enumset1(_G14825, _G14923, _G15022, _G15122, _G15223, _G15325, _G15428, _G15532), k1_tarski(_G15637)))]
+ (7)  [- (_G2430=_G2430)]
+ (8)  [_G2529=_G2574, - (_G2574=_G2529)]
+ (9)  [- (_G2762=_G2875), _G2762=_G2818, _G2818=_G2875]
+ (10)  [_G3212=_G3261, - (k1_ordinal1(_G3212)=k1_ordinal1(_G3261))]
+ (11)  [- (k2_xboole_0(_G3490, _G3625)=k2_xboole_0(_G3557, _G3694)), _G3490=_G3557, _G3625=_G3694]
+ (12)  [- (k6_enumset1(_G4087, _G4438, _G4793, _G5152, _G5515, _G5882, _G6253, _G6628)=k6_enumset1(_G4262, _G4615, _G4972, _G5333, _G5698, _G6067, _G6440, _G6817)), _G4087=_G4262, _G4438=_G4615, _G4793=_G4972, _G5152=_G5333, _G5515=_G5698, _G5882=_G6067, _G6253=_G6440, _G6628=_G6817]
+ (13)  [_G8410=_G8459, - (k1_tarski(_G8410)=k1_tarski(_G8459))]
+ (14)  [- (k7_enumset1(_G8679, _G9066, _G9457, _G9852, _G10251, _G10654, _G11061, _G11472, _G11887)=k7_enumset1(_G8872, _G9261, _G9654, _G10051, _G10452, _G10857, _G11266, _G11679, _G12096)), _G8679=_G8872, _G9066=_G9261, _G9457=_G9654, _G9852=_G10051, _G10251=_G10452, _G10654=_G10857, _G11061=_G11266, _G11472=_G11679, _G11887=_G12096]
+
+Connection Proof:
+-----------------
+1  [np__9=k7_enumset1(k1_xboole_0, np__1, np__2, np__3, np__4, np__5, np__6, np__7, np__8)]   (1)  
+1.1  [- (np__9=k7_enumset1(k1_xboole_0, np__1, np__2, np__3, np__4, np__5, np__6, np__7, np__8)), np__9=k2_xboole_0(np__8, k1_tarski(np__8)), k2_xboole_0(np__8, k1_tarski(np__8))=k7_enumset1(k1_xboole_0, np__1, np__2, np__3, np__4, np__5, np__6, np__7, np__8)]   (9)  substitution:[[_G2762, _G2875, _G2818], [np__9, k7_enumset1(k1_xboole_0, np__1, np__2, np__3, np__4, np__5, np__6, np__7, np__8), k2_xboole_0(np__8, k1_tarski(np__8))]]
+1.1.1  [- (np__9=k2_xboole_0(np__8, k1_tarski(np__8))), np__9=k1_ordinal1(np__8), k1_ordinal1(np__8)=k2_xboole_0(np__8, k1_tarski(np__8))]   (9)  substitution:[[_G2762, _G2875, _G2818], [np__9, k2_xboole_0(np__8, k1_tarski(np__8)), k1_ordinal1(np__8)]]
+1.1.1.1  [- (np__9=k1_ordinal1(np__8)), k1_ordinal1(np__8)=np__9]   (8)  substitution:[[_G2574, _G2529], [np__9, k1_ordinal1(np__8)]]
+1.1.1.1.1  [- (k1_ordinal1(np__8)=np__9)]   (4)  
+1.1.1.2  [- (k1_ordinal1(np__8)=k2_xboole_0(np__8, k1_tarski(np__8)))]   (3)  substitution:[[_G14236], [np__8]]
+1.1.2  [- (k2_xboole_0(np__8, k1_tarski(np__8))=k7_enumset1(k1_xboole_0, np__1, np__2, np__3, np__4, np__5, np__6, np__7, np__8)), k2_xboole_0(np__8, k1_tarski(np__8))=k2_xboole_0(k6_enumset1(k1_xboole_0, np__1, np__2, np__3, np__4, np__5, np__6, np__7), k1_tarski(np__8)), k2_xboole_0(k6_enumset1(k1_xboole_0, np__1, np__2, np__3, np__4, np__5, np__6, np__7), k1_tarski(np__8))=k7_enumset1(k1_xboole_0, np__1, np__2, np__3, np__4, np__5, np__6, np__7, np__8)]   (9)  substitution:[[_G2762, _G2875, _G2818], [k2_xboole_0(np__8, k1_tarski(np__8)), k7_enumset1(k1_xboole_0, np__1, np__2, np__3, np__4, np__5, np__6, np__7, np__8), k2_xboole_0(k6_enumset1(k1_xboole_0, np__1, np__2, np__3, np__4, np__5, np__6, np__7), k1_tarski(np__8))]]
+1.1.2.1  [- (k2_xboole_0(np__8, k1_tarski(np__8))=k2_xboole_0(k6_enumset1(k1_xboole_0, np__1, np__2, np__3, np__4, np__5, np__6, np__7), k1_tarski(np__8))), np__8=k6_enumset1(k1_xboole_0, np__1, np__2, np__3, np__4, np__5, np__6, np__7), k1_tarski(np__8)=k1_tarski(np__8)]   (11)  substitution:[[_G3490, _G3625, _G3557, _G3694], [np__8, k1_tarski(np__8), k6_enumset1(k1_xboole_0, np__1, np__2, np__3, np__4, np__5, np__6, np__7), k1_tarski(np__8)]]
+1.1.2.1.1  [- (np__8=k6_enumset1(k1_xboole_0, np__1, np__2, np__3, np__4, np__5, np__6, np__7))]   (5)  
+1.1.2.1.2  [- (k1_tarski(np__8)=k1_tarski(np__8))]   (7)  substitution:[[_G2430], [k1_tarski(np__8)]]
+1.1.2.2  [- (k2_xboole_0(k6_enumset1(k1_xboole_0, np__1, np__2, np__3, np__4, np__5, np__6, np__7), k1_tarski(np__8))=k7_enumset1(k1_xboole_0, np__1, np__2, np__3, np__4, np__5, np__6, np__7, np__8)), k7_enumset1(k1_xboole_0, np__1, np__2, np__3, np__4, np__5, np__6, np__7, np__8)=k2_xboole_0(k6_enumset1(k1_xboole_0, np__1, np__2, np__3, np__4, np__5, np__6, np__7), k1_tarski(np__8))]   (8)  substitution:[[_G2574, _G2529], [k2_xboole_0(k6_enumset1(k1_xboole_0, np__1, np__2, np__3, np__4, np__5, np__6, np__7), k1_tarski(np__8)), k7_enumset1(k1_xboole_0, np__1, np__2, np__3, np__4, np__5, np__6, np__7, np__8)]]
+1.1.2.2.1  [- (k7_enumset1(k1_xboole_0, np__1, np__2, np__3, np__4, np__5, np__6, np__7, np__8)=k2_xboole_0(k6_enumset1(k1_xboole_0, np__1, np__2, np__3, np__4, np__5, np__6, np__7), k1_tarski(np__8)))]   (6)  substitution:[[_G14825, _G14923, _G15022, _G15122, _G15223, _G15325, _G15428, _G15532, _G15637], [k1_xboole_0, np__1, np__2, np__3, np__4, np__5, np__6, np__7, np__8]]
+------------------------------------------------------
+End of proof for t57_card_1

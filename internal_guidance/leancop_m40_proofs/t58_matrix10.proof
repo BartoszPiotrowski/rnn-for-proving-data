@@ -1,0 +1,33 @@
+
+t58_matrix10 is a Theorem
+Start of proof for t58_matrix10
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v7_ordinal1(1^[])]
+ (2)  [-m1_matrix_1(2^[], k1_numbers, 1^[], 1^[])]
+ (3)  [-m1_matrix_1(3^[], k1_numbers, 1^[], 1^[])]
+ (4)  [-m1_matrix_1(4^[], k1_numbers, 1^[], 1^[])]
+ (5)  [-m1_matrix_1(5^[], k1_numbers, 1^[], 1^[])]
+ (6)  [-r2_matrix10(k4_matrix10(1^[], 2^[], 3^[]), k4_matrix10(1^[], 4^[], 5^[]))]
+ (7)  [r2_matrix10(k4_matrix10(1^[], 5^[], 4^[]), k4_matrix10(1^[], 3^[], 2^[]))]
+ (8)  [v7_ordinal1(_G1255), m1_matrix_1(_G1400, k1_numbers, _G1255, _G1255), m1_matrix_1(_G1652, k1_numbers, _G1255, _G1255), m1_matrix_1(_G1897, k1_numbers, _G1255, _G1255), m1_matrix_1(_G2135, k1_numbers, _G1255, _G1255), r2_matrix10(k4_matrix10(_G1255, _G1400, _G1652), k4_matrix10(_G1255, _G1897, _G2135)), -r2_matrix10(k4_matrix10(_G1255, _G1400, _G1897), k4_matrix10(_G1255, _G1652, _G2135))]
+ (9)  [v7_ordinal1(_G2965), m1_matrix_1(_G3110, k1_numbers, _G2965, _G2965), m1_matrix_1(_G3362, k1_numbers, _G2965, _G2965), m1_matrix_1(_G3607, k1_numbers, _G2965, _G2965), m1_matrix_1(_G3845, k1_numbers, _G2965, _G2965), r2_matrix10(k4_matrix10(_G2965, _G3110, _G3362), k4_matrix10(_G2965, _G3607, _G3845)), -r2_matrix10(k4_matrix10(_G2965, _G3845, _G3362), k4_matrix10(_G2965, _G3607, _G3110))]
+
+Connection Proof:
+-----------------
+1  [r2_matrix10(k4_matrix10(1^[], 5^[], 4^[]), k4_matrix10(1^[], 3^[], 2^[]))]   (7)  
+1.1  [-r2_matrix10(k4_matrix10(1^[], 5^[], 4^[]), k4_matrix10(1^[], 3^[], 2^[])), v7_ordinal1(1^[]), m1_matrix_1(5^[], k1_numbers, 1^[], 1^[]), m1_matrix_1(3^[], k1_numbers, 1^[], 1^[]), m1_matrix_1(4^[], k1_numbers, 1^[], 1^[]), m1_matrix_1(2^[], k1_numbers, 1^[], 1^[]), r2_matrix10(k4_matrix10(1^[], 5^[], 3^[]), k4_matrix10(1^[], 4^[], 2^[]))]   (8)  substitution:[[_G1255, _G1400, _G1897, _G1652, _G2135], [1^[], 5^[], 4^[], 3^[], 2^[]]]
+1.1.1  [-v7_ordinal1(1^[])]   (1)  
+1.1.2  [-m1_matrix_1(5^[], k1_numbers, 1^[], 1^[])]   (5)  
+1.1.3  [-m1_matrix_1(3^[], k1_numbers, 1^[], 1^[])]   (3)  
+1.1.4  [-m1_matrix_1(4^[], k1_numbers, 1^[], 1^[])]   (4)  
+1.1.5  [-m1_matrix_1(2^[], k1_numbers, 1^[], 1^[])]   (2)  
+1.1.6  [-r2_matrix10(k4_matrix10(1^[], 5^[], 3^[]), k4_matrix10(1^[], 4^[], 2^[])), v7_ordinal1(1^[]), m1_matrix_1(2^[], k1_numbers, 1^[], 1^[]), m1_matrix_1(3^[], k1_numbers, 1^[], 1^[]), m1_matrix_1(4^[], k1_numbers, 1^[], 1^[]), m1_matrix_1(5^[], k1_numbers, 1^[], 1^[]), r2_matrix10(k4_matrix10(1^[], 2^[], 3^[]), k4_matrix10(1^[], 4^[], 5^[]))]   (9)  substitution:[[_G2965, _G3845, _G3362, _G3607, _G3110], [1^[], 5^[], 3^[], 4^[], 2^[]]]
+1.1.6.1  [-v7_ordinal1(1^[])]   (1)  
+1.1.6.2  [-m1_matrix_1(2^[], k1_numbers, 1^[], 1^[])]   (2)  
+1.1.6.3  [-m1_matrix_1(3^[], k1_numbers, 1^[], 1^[])]   (3)  
+1.1.6.4  [-m1_matrix_1(4^[], k1_numbers, 1^[], 1^[])]   (4)  
+1.1.6.5  [-m1_matrix_1(5^[], k1_numbers, 1^[], 1^[])]   (5)  
+1.1.6.6  [-r2_matrix10(k4_matrix10(1^[], 2^[], 3^[]), k4_matrix10(1^[], 4^[], 5^[]))]   (6)  
+------------------------------------------------------
+End of proof for t58_matrix10

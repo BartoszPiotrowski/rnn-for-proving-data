@@ -1,0 +1,40 @@
+
+t9_fdiff_2 is a Theorem
+Start of proof for t9_fdiff_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_funct_1(1^[])]
+ (2)  [-v1_funct_2(1^[], k5_numbers, k1_numbers)]
+ (3)  [-m1_subset_1(1^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_numbers)))]
+ (4)  [-v1_funct_1(2^[])]
+ (5)  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]
+ (6)  [-v1_funct_1(3^[])]
+ (7)  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]
+ (8)  [-r1_tarski(k2_relset_1(k1_numbers, 1^[]), k1_relset_1(k1_numbers, k1_partfun1(k1_numbers, k1_numbers, k1_numbers, k1_numbers, 3^[], 2^[])))]
+ (9)  [r1_tarski(k2_relset_1(k1_numbers, 1^[]), k1_relset_1(k1_numbers, 3^[])), r1_tarski(k2_relset_1(k1_numbers, k8_funct_2(k5_numbers, k1_numbers, k1_numbers, 1^[], 3^[])), k1_relset_1(k1_numbers, 2^[]))]
+ (10)  [m1_subset_1(_G1066, k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(_G1066), m1_subset_1(_G1356, k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(_G1356), -r1_tarski(k2_relset_1(k1_numbers, _G1636), k1_relset_1(k1_numbers, _G1356)), r1_tarski(k2_relset_1(k1_numbers, _G1636), k1_relset_1(k1_numbers, k1_partfun1(k1_numbers, k1_numbers, k1_numbers, k1_numbers, _G1356, _G1066))), v1_funct_1(_G1636), v1_funct_2(_G1636, k5_numbers, k1_numbers), m1_subset_1(_G1636, k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_numbers)))]
+ (11)  [m1_subset_1(_G1066, k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(_G1066), m1_subset_1(_G1356, k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(_G1356), -r1_tarski(k2_relset_1(k1_numbers, k8_funct_2(k5_numbers, k1_numbers, k1_numbers, _G1636, _G1356)), k1_relset_1(k1_numbers, _G1066)), r1_tarski(k2_relset_1(k1_numbers, _G1636), k1_relset_1(k1_numbers, k1_partfun1(k1_numbers, k1_numbers, k1_numbers, k1_numbers, _G1356, _G1066))), v1_funct_1(_G1636), v1_funct_2(_G1636, k5_numbers, k1_numbers), m1_subset_1(_G1636, k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_numbers)))]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k2_relset_1(k1_numbers, 1^[]), k1_relset_1(k1_numbers, 3^[])), r1_tarski(k2_relset_1(k1_numbers, k8_funct_2(k5_numbers, k1_numbers, k1_numbers, 1^[], 3^[])), k1_relset_1(k1_numbers, 2^[]))]   (9)  
+1.1  [-r1_tarski(k2_relset_1(k1_numbers, 1^[]), k1_relset_1(k1_numbers, 3^[])), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(2^[]), m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(3^[]), r1_tarski(k2_relset_1(k1_numbers, 1^[]), k1_relset_1(k1_numbers, k1_partfun1(k1_numbers, k1_numbers, k1_numbers, k1_numbers, 3^[], 2^[]))), v1_funct_1(1^[]), v1_funct_2(1^[], k5_numbers, k1_numbers), m1_subset_1(1^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_numbers)))]   (10)  substitution:[[_G1636, _G1356, _G1066], [1^[], 3^[], 2^[]]]
+1.1.1  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]   (5)  
+1.1.2  [-v1_funct_1(2^[])]   (4)  
+1.1.3  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]   (7)  
+1.1.4  [-v1_funct_1(3^[])]   (6)  
+1.1.5  [-r1_tarski(k2_relset_1(k1_numbers, 1^[]), k1_relset_1(k1_numbers, k1_partfun1(k1_numbers, k1_numbers, k1_numbers, k1_numbers, 3^[], 2^[])))]   (8)  
+1.1.6  [-v1_funct_1(1^[])]   (1)  
+1.1.7  [-v1_funct_2(1^[], k5_numbers, k1_numbers)]   (2)  
+1.1.8  [-m1_subset_1(1^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_numbers)))]   (3)  
+1.2  [-r1_tarski(k2_relset_1(k1_numbers, k8_funct_2(k5_numbers, k1_numbers, k1_numbers, 1^[], 3^[])), k1_relset_1(k1_numbers, 2^[])), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(2^[]), m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(3^[]), r1_tarski(k2_relset_1(k1_numbers, 1^[]), k1_relset_1(k1_numbers, k1_partfun1(k1_numbers, k1_numbers, k1_numbers, k1_numbers, 3^[], 2^[]))), v1_funct_1(1^[]), v1_funct_2(1^[], k5_numbers, k1_numbers), m1_subset_1(1^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_numbers)))]   (11)  substitution:[[_G1636, _G1356, _G1066], [1^[], 3^[], 2^[]]]
+1.2.1  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]   (5)  
+1.2.2  [-v1_funct_1(2^[])]   (4)  
+1.2.3  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]   (7)  
+1.2.4  [-v1_funct_1(3^[])]   (6)  
+1.2.5  [-r1_tarski(k2_relset_1(k1_numbers, 1^[]), k1_relset_1(k1_numbers, k1_partfun1(k1_numbers, k1_numbers, k1_numbers, k1_numbers, 3^[], 2^[])))]   (8)  
+1.2.6  [-v1_funct_1(1^[])]   (1)  
+1.2.7  [-v1_funct_2(1^[], k5_numbers, k1_numbers)]   (2)  
+1.2.8  [-m1_subset_1(1^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_numbers)))]   (3)  
+------------------------------------------------------
+End of proof for t9_fdiff_2

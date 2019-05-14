@@ -1,0 +1,33 @@
+
+t7_ordinal2 is a Theorem
+Start of proof for t7_ordinal2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [r1_tarski(k2_ordinal1(3^[]), 3^[])]
+ (2)  [-r1_tarski(_G4096, _G4152), -r2_hidden(1^[_G4152, _G4096], _G4096)]
+ (3)  [-r1_tarski(_G4096, _G4152), r2_hidden(1^[_G4152, _G4096], _G4152)]
+ (4)  [r1_tarski(_G4096, _G4152), r2_hidden(_G4266, _G4096), -r2_hidden(_G4266, _G4152)]
+ (5)  [_G4552=k2_ordinal1(_G4489), r2_hidden(_G4687, _G4552), -r2_hidden(_G4687, _G4489)]
+ (6)  [_G4552=k2_ordinal1(_G4489), r2_hidden(_G4687, _G4552), -v3_ordinal1(_G4687)]
+ (7)  [_G4552=k2_ordinal1(_G4489), -r2_hidden(_G4687, _G4552), r2_hidden(_G4687, _G4489), v3_ordinal1(_G4687)]
+ (8)  [- (_G4552=k2_ordinal1(_G4489)), -r2_hidden(2^[_G4552, _G4489], _G4552), -r2_hidden(2^[_G4552, _G4489], _G4489)]
+ (9)  [- (_G4552=k2_ordinal1(_G4489)), -r2_hidden(2^[_G4552, _G4489], _G4552), -v3_ordinal1(2^[_G4552, _G4489])]
+ (10)  [- (_G4552=k2_ordinal1(_G4489)), r2_hidden(2^[_G4552, _G4489], _G4552), r2_hidden(2^[_G4552, _G4489], _G4489), v3_ordinal1(2^[_G4552, _G4489])]
+ (11)  [_G3797=_G3846, - (k2_ordinal1(_G3797)=k2_ordinal1(_G3846))]
+ (12)  [- (_G1498=_G1498)]
+ (13)  [_G1597=_G1642, - (_G1642=_G1597)]
+ (14)  [- (_G1830=_G1943), _G1830=_G1886, _G1886=_G1943]
+ (15)  [-r2_hidden(_G2347, _G2484), r2_hidden(_G2280, _G2415), _G2280=_G2347, _G2415=_G2484]
+ (16)  [-v3_ordinal1(_G2926), _G2877=_G2926, v3_ordinal1(_G2877)]
+ (17)  [-r1_tarski(_G3213, _G3350), r1_tarski(_G3146, _G3281), _G3146=_G3213, _G3281=_G3350]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k2_ordinal1(3^[]), 3^[])]   (1)  
+1.1  [-r1_tarski(k2_ordinal1(3^[]), 3^[]), -r2_hidden(1^[3^[], k2_ordinal1(3^[])], k2_ordinal1(3^[]))]   (2)  substitution:[[_G4096, _G4152], [k2_ordinal1(3^[]), 3^[]]]
+1.1.1  [r2_hidden(1^[3^[], k2_ordinal1(3^[])], k2_ordinal1(3^[])), k2_ordinal1(3^[])=k2_ordinal1(3^[]), -r2_hidden(1^[3^[], k2_ordinal1(3^[])], 3^[])]   (5)  substitution:[[_G4687, _G4552, _G4489], [1^[3^[], k2_ordinal1(3^[])], k2_ordinal1(3^[]), 3^[]]]
+1.1.1.1  [- (k2_ordinal1(3^[])=k2_ordinal1(3^[]))]   (12)  substitution:[[_G1498], [k2_ordinal1(3^[])]]
+1.1.1.2  [r2_hidden(1^[3^[], k2_ordinal1(3^[])], 3^[]), -r1_tarski(k2_ordinal1(3^[]), 3^[])]   (3)  substitution:[[_G4152, _G4096], [3^[], k2_ordinal1(3^[])]]
+1.1.1.2.1  [r1_tarski(k2_ordinal1(3^[]), 3^[])]   (1)  
+------------------------------------------------------
+End of proof for t7_ordinal2

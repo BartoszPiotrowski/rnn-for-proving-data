@@ -1,0 +1,37 @@
+
+l40_tex_2 is a Theorem
+Start of proof for l40_tex_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-r1_tarski(1^[], 2^[])]
+ (2)  [1^[]=2^[]]
+ (3)  [- (k6_subset_1(2^[], 1^[])=k1_xboole_0)]
+ (4)  [- (k6_subset_1(_G4923, _G4968)=k4_xboole_0(_G4923, _G4968))]
+ (5)  [k4_xboole_0(_G4645, _G4693)=k1_xboole_0, -r1_tarski(_G4645, _G4693)]
+ (6)  [- (k4_xboole_0(_G4645, _G4693)=k1_xboole_0), r1_tarski(_G4645, _G4693)]
+ (7)  [_G4313=_G4364, -r1_tarski(_G4313, _G4364)]
+ (8)  [_G4313=_G4364, -r1_tarski(_G4364, _G4313)]
+ (9)  [- (_G4313=_G4364), r1_tarski(_G4313, _G4364), r1_tarski(_G4364, _G4313)]
+ (10)  [- (k4_xboole_0(_G3086, _G3221)=k4_xboole_0(_G3153, _G3290)), _G3086=_G3153, _G3221=_G3290]
+ (11)  [- (k6_subset_1(_G3674, _G3809)=k6_subset_1(_G3741, _G3878)), _G3674=_G3741, _G3809=_G3878]
+ (12)  [-r1_tarski(_G2535, _G2672), r1_tarski(_G2468, _G2603), _G2468=_G2535, _G2603=_G2672]
+ (13)  [- (_G1695=_G1695)]
+ (14)  [_G1794=_G1839, - (_G1839=_G1794)]
+ (15)  [- (_G2027=_G2140), _G2027=_G2083, _G2083=_G2140]
+
+Connection Proof:
+-----------------
+1  [1^[]=2^[]]   (2)  
+1.1  [- (1^[]=2^[]), r1_tarski(1^[], 2^[]), r1_tarski(2^[], 1^[])]   (9)  substitution:[[_G4313, _G4364], [1^[], 2^[]]]
+1.1.1  [-r1_tarski(1^[], 2^[])]   (1)  
+1.1.2  [-r1_tarski(2^[], 1^[]), k4_xboole_0(2^[], 1^[])=k1_xboole_0]   (5)  substitution:[[_G4645, _G4693], [2^[], 1^[]]]
+1.1.2.1  [- (k4_xboole_0(2^[], 1^[])=k1_xboole_0), k1_xboole_0=k4_xboole_0(2^[], 1^[])]   (14)  substitution:[[_G1839, _G1794], [k4_xboole_0(2^[], 1^[]), k1_xboole_0]]
+1.1.2.1.1  [- (k1_xboole_0=k4_xboole_0(2^[], 1^[])), k1_xboole_0=k6_subset_1(2^[], 1^[]), k6_subset_1(2^[], 1^[])=k4_xboole_0(2^[], 1^[])]   (15)  substitution:[[_G2027, _G2140, _G2083], [k1_xboole_0, k4_xboole_0(2^[], 1^[]), k6_subset_1(2^[], 1^[])]]
+1.1.2.1.1.1  [- (k1_xboole_0=k6_subset_1(2^[], 1^[])), r1_tarski(k1_xboole_0, k6_subset_1(2^[], 1^[])), r1_tarski(k6_subset_1(2^[], 1^[]), k1_xboole_0)]   (9)  substitution:[[_G4313, _G4364], [k1_xboole_0, k6_subset_1(2^[], 1^[])]]
+1.1.2.1.1.1.1  [-r1_tarski(k1_xboole_0, k6_subset_1(2^[], 1^[])), k6_subset_1(2^[], 1^[])=k1_xboole_0]   (8)  substitution:[[_G4364, _G4313], [k1_xboole_0, k6_subset_1(2^[], 1^[])]]
+1.1.2.1.1.1.1.1  [- (k6_subset_1(2^[], 1^[])=k1_xboole_0)]   (3)  
+1.1.2.1.1.1.2  [-r1_tarski(k6_subset_1(2^[], 1^[]), k1_xboole_0), k6_subset_1(2^[], 1^[])=k1_xboole_0]   (7)  substitution:[[_G4313, _G4364], [k6_subset_1(2^[], 1^[]), k1_xboole_0]]
+1.1.2.1.1.1.2.1  [- (k6_subset_1(2^[], 1^[])=k1_xboole_0)]   (3)  
+1.1.2.1.1.2  [- (k6_subset_1(2^[], 1^[])=k4_xboole_0(2^[], 1^[]))]   (4)  substitution:[[_G4923, _G4968], [2^[], 1^[]]]
+------------------------------------------------------
+End of proof for l40_tex_2

@@ -1,0 +1,34 @@
+
+t27_graph_2 is a Theorem
+Start of proof for t27_graph_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m2_finseq_1(3^[], 1^[])]
+ (2)  [-m1_subset_1(4^[], k1_zfmisc_1(3^[]))]
+ (3)  [m1_subset_1(k5_relat_1(4^[], 2^[]), k1_zfmisc_1(3^[]))]
+ (4)  [v1_relat_1(_G1218), m1_subset_1(_G1301, k1_zfmisc_1(_G1218)), -v1_relat_1(_G1301)]
+ (5)  [m1_finseq_1(_G1563, _G1509), -v1_relat_1(_G1563)]
+ (6)  [m1_finseq_1(_G1563, _G1509), -v1_funct_1(_G1563)]
+ (7)  [m1_finseq_1(_G1563, _G1509), -v1_finseq_1(_G1563)]
+ (8)  [m2_finseq_1(_G1895, _G1850), -m1_finseq_1(_G1895, _G1850)]
+ (9)  [-m2_finseq_1(_G1895, _G1850), m1_finseq_1(_G1895, _G1850)]
+ (10)  [-r1_tarski(_G2092, _G2205), r1_tarski(_G2092, _G2148), r1_tarski(_G2148, _G2205)]
+ (11)  [v1_relat_1(_G2798), -r1_tarski(k5_relat_1(_G2798, _G2751), _G2798)]
+ (12)  [m1_subset_1(_G2500, k1_zfmisc_1(_G2547)), -r1_tarski(_G2500, _G2547)]
+ (13)  [-m1_subset_1(_G2500, k1_zfmisc_1(_G2547)), r1_tarski(_G2500, _G2547)]
+
+Connection Proof:
+-----------------
+1  [m1_subset_1(k5_relat_1(4^[], 2^[]), k1_zfmisc_1(3^[]))]   (3)  
+1.1  [-m1_subset_1(k5_relat_1(4^[], 2^[]), k1_zfmisc_1(3^[])), r1_tarski(k5_relat_1(4^[], 2^[]), 3^[])]   (13)  substitution:[[_G2500, _G2547], [k5_relat_1(4^[], 2^[]), 3^[]]]
+1.1.1  [-r1_tarski(k5_relat_1(4^[], 2^[]), 3^[]), r1_tarski(k5_relat_1(4^[], 2^[]), 4^[]), r1_tarski(4^[], 3^[])]   (10)  substitution:[[_G2092, _G2205, _G2148], [k5_relat_1(4^[], 2^[]), 3^[], 4^[]]]
+1.1.1.1  [-r1_tarski(k5_relat_1(4^[], 2^[]), 4^[]), v1_relat_1(4^[])]   (11)  substitution:[[_G2798, _G2751], [4^[], 2^[]]]
+1.1.1.1.1  [-v1_relat_1(4^[]), v1_relat_1(3^[]), m1_subset_1(4^[], k1_zfmisc_1(3^[]))]   (4)  substitution:[[_G1301, _G1218], [4^[], 3^[]]]
+1.1.1.1.1.1  [-v1_relat_1(3^[]), m1_finseq_1(3^[], 1^[])]   (5)  substitution:[[_G1563, _G1509], [3^[], 1^[]]]
+1.1.1.1.1.1.1  [-m1_finseq_1(3^[], 1^[]), m2_finseq_1(3^[], 1^[])]   (8)  substitution:[[_G1895, _G1850], [3^[], 1^[]]]
+1.1.1.1.1.1.1.1  [-m2_finseq_1(3^[], 1^[])]   (1)  
+1.1.1.1.1.2  [-m1_subset_1(4^[], k1_zfmisc_1(3^[]))]   (2)  
+1.1.1.2  [-r1_tarski(4^[], 3^[]), m1_subset_1(4^[], k1_zfmisc_1(3^[]))]   (12)  substitution:[[_G2500, _G2547], [4^[], 3^[]]]
+1.1.1.2.1  [-m1_subset_1(4^[], k1_zfmisc_1(3^[]))]   (2)  
+------------------------------------------------------
+End of proof for t27_graph_2

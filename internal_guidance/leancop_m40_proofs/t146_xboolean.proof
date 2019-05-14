@@ -1,0 +1,44 @@
+
+t146_xboolean is a Theorem
+Start of proof for t146_xboolean
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xboolean(1^[])]
+ (2)  [-v1_xboolean(2^[])]
+ (3)  [k9_xboolean(1^[], k8_xboolean(1^[], 2^[]))=k1_xboolean]
+ (4)  [-v1_xboolean(_G3594), _G3545=_G3594, v1_xboolean(_G3545)]
+ (5)  [- (_G2772=_G2772)]
+ (6)  [_G2871=_G2916, - (_G2916=_G2871)]
+ (7)  [- (_G3104=_G3217), _G3104=_G3160, _G3160=_G3217]
+ (8)  [- (k6_xboolean(_G3844, _G3979)=k6_xboolean(_G3911, _G4048)), _G3844=_G3911, _G3979=_G4048]
+ (9)  [- (k9_xboolean(_G4441, _G4576)=k9_xboolean(_G4508, _G4645)), _G4441=_G4508, _G4576=_G4645]
+ (10)  [- (k8_xboolean(_G5029, _G5164)=k8_xboolean(_G5096, _G5233)), _G5029=_G5096, _G5164=_G5233]
+ (11)  [- (k8_xboolean(_G5689, _G5744)=k8_xboolean(_G5744, _G5689)), v1_xboolean(_G5689), v1_xboolean(_G5744)]
+ (12)  [- (k2_xboolean=np__1)]
+ (13)  [-v1_xboolean(_G6114), _G6114=k1_xboolean]
+ (14)  [-v1_xboolean(_G6114), _G6114=k2_xboolean]
+ (15)  [v1_xboolean(_G6114), - (_G6114=k1_xboolean), - (_G6114=k2_xboolean)]
+ (16)  [-v1_xboolean(k8_xboolean(_G6355, _G6406)), v1_xboolean(_G6355), v1_xboolean(_G6406)]
+ (17)  [-v1_xboolean(k9_xboolean(_G6651, _G6702)), v1_xboolean(_G6651), v1_xboolean(_G6702)]
+ (18)  [v1_xboolean(_G6947), v1_xboolean(_G7034), - (k9_xboolean(_G6947, k6_xboolean(_G6947, _G7034))=k1_xboolean)]
+ (19)  [v1_xboolean(_G7301), v1_xboolean(_G7391), - (k6_xboolean(_G7301, k8_xboolean(_G7301, _G7391))=k8_xboolean(_G7301, _G7391))]
+
+Connection Proof:
+-----------------
+1  [k9_xboolean(1^[], k8_xboolean(1^[], 2^[]))=k1_xboolean]   (3)  
+1.1  [- (k9_xboolean(1^[], k8_xboolean(1^[], 2^[]))=k1_xboolean), k9_xboolean(1^[], k8_xboolean(1^[], 2^[]))=k9_xboolean(1^[], k6_xboolean(1^[], k8_xboolean(1^[], 2^[]))), k9_xboolean(1^[], k6_xboolean(1^[], k8_xboolean(1^[], 2^[])))=k1_xboolean]   (7)  substitution:[[_G3104, _G3217, _G3160], [k9_xboolean(1^[], k8_xboolean(1^[], 2^[])), k1_xboolean, k9_xboolean(1^[], k6_xboolean(1^[], k8_xboolean(1^[], 2^[])))]]
+1.1.1  [- (k9_xboolean(1^[], k8_xboolean(1^[], 2^[]))=k9_xboolean(1^[], k6_xboolean(1^[], k8_xboolean(1^[], 2^[])))), k9_xboolean(1^[], k6_xboolean(1^[], k8_xboolean(1^[], 2^[])))=k9_xboolean(1^[], k8_xboolean(1^[], 2^[]))]   (6)  substitution:[[_G2916, _G2871], [k9_xboolean(1^[], k8_xboolean(1^[], 2^[])), k9_xboolean(1^[], k6_xboolean(1^[], k8_xboolean(1^[], 2^[])))]]
+1.1.1.1  [- (k9_xboolean(1^[], k6_xboolean(1^[], k8_xboolean(1^[], 2^[])))=k9_xboolean(1^[], k8_xboolean(1^[], 2^[]))), 1^[]=1^[], k6_xboolean(1^[], k8_xboolean(1^[], 2^[]))=k8_xboolean(1^[], 2^[])]   (9)  substitution:[[_G4441, _G4576, _G4508, _G4645], [1^[], k6_xboolean(1^[], k8_xboolean(1^[], 2^[])), 1^[], k8_xboolean(1^[], 2^[])]]
+1.1.1.1.1  [- (1^[]=1^[])]   (5)  substitution:[[_G2772], [1^[]]]
+1.1.1.1.2  [- (k6_xboolean(1^[], k8_xboolean(1^[], 2^[]))=k8_xboolean(1^[], 2^[])), v1_xboolean(1^[]), v1_xboolean(2^[])]   (19)  substitution:[[_G7301, _G7391], [1^[], 2^[]]]
+1.1.1.1.2.1  [-v1_xboolean(1^[])]   (1)  
+1.1.1.1.2.2  [-v1_xboolean(2^[])]   (2)  
+1.1.2  [- (k9_xboolean(1^[], k6_xboolean(1^[], k8_xboolean(1^[], 2^[])))=k1_xboolean), k9_xboolean(1^[], k6_xboolean(1^[], k8_xboolean(1^[], 2^[])))=k1_xboolean, k1_xboolean=k1_xboolean]   (7)  substitution:[[_G3104, _G3217, _G3160], [k9_xboolean(1^[], k6_xboolean(1^[], k8_xboolean(1^[], 2^[]))), k1_xboolean, k1_xboolean]]
+1.1.2.1  [- (k9_xboolean(1^[], k6_xboolean(1^[], k8_xboolean(1^[], 2^[])))=k1_xboolean), v1_xboolean(1^[]), v1_xboolean(k8_xboolean(1^[], 2^[]))]   (18)  substitution:[[_G6947, _G7034], [1^[], k8_xboolean(1^[], 2^[])]]
+1.1.2.1.1  [-v1_xboolean(1^[])]   (1)  
+1.1.2.1.2  [-v1_xboolean(k8_xboolean(1^[], 2^[])), v1_xboolean(1^[]), v1_xboolean(2^[])]   (16)  substitution:[[_G6355, _G6406], [1^[], 2^[]]]
+1.1.2.1.2.1  [-v1_xboolean(1^[])]   (1)  
+1.1.2.1.2.2  [-v1_xboolean(2^[])]   (2)  
+1.1.2.2  [- (k1_xboolean=k1_xboolean)]   (5)  substitution:[[_G2772], [k1_xboolean]]
+------------------------------------------------------
+End of proof for t146_xboolean

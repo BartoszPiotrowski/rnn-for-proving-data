@@ -1,0 +1,70 @@
+
+t36_dickson is a Theorem
+Start of proof for t36_dickson
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-l1_orders_2(5^[])]
+ (2)  [-v2_struct_0(5^[])]
+ (3)  [v4_dickson(5^[])]
+ (4)  [v1_xboole_0(_G8798), -v1_finset_1(_G8798)]
+ (5)  [v1_xboole_0(_G8929), m1_subset_1(_G9012, k1_zfmisc_1(_G8929)), -v1_xboole_0(_G9012)]
+ (6)  [l1_orders_2(_G9220), v4_dickson(_G9220), m1_subset_1(_G9354, k1_zfmisc_1(u1_struct_0(_G9220))), -r1_dickson(_G9220, _G9354, 1^[_G9354, _G9220])]
+ (7)  [l1_orders_2(_G9220), v4_dickson(_G9220), m1_subset_1(_G9354, k1_zfmisc_1(u1_struct_0(_G9220))), -v1_finset_1(1^[_G9354, _G9220])]
+ (8)  [l1_orders_2(_G9220), -v4_dickson(_G9220), -m1_subset_1(2^[_G9220], k1_zfmisc_1(u1_struct_0(_G9220)))]
+ (9)  [l1_orders_2(_G9220), -v4_dickson(_G9220), r1_dickson(_G9220, 2^[_G9220], _G12328), v1_finset_1(_G12328)]
+ (10)  [l1_orders_2(_G9792), -l1_struct_0(_G9792)]
+ (11)  [-v1_xboole_0(k1_subset_1(_G9923))]
+ (12)  [-v1_xboole_0(u1_struct_0(_G10012)), v2_struct_0(_G10012), l1_struct_0(_G10012)]
+ (13)  [-v1_xboole_0(k1_xboole_0)]
+ (14)  [-v1_xboole_0(3^[])]
+ (15)  [-m1_subset_1(4^[_G10322], k1_zfmisc_1(_G10322))]
+ (16)  [-v1_xboole_0(4^[_G10322])]
+ (17)  [l1_orders_2(_G10555), -r1_dickson(_G10555, k1_subset_1(u1_struct_0(_G10555)), k1_xboole_0)]
+ (18)  [v1_xboole_0(_G10779), - (_G10779=_G10832), v1_xboole_0(_G10832)]
+ (19)  [_G7910=_G7959, - (k1_zfmisc_1(_G7910)=k1_zfmisc_1(_G7959))]
+ (20)  [_G8188=_G8237, - (k1_subset_1(_G8188)=k1_subset_1(_G8237))]
+ (21)  [_G8457=_G8506, - (u1_struct_0(_G8457)=u1_struct_0(_G8506))]
+ (22)  [- (_G3676=_G3676)]
+ (23)  [_G3775=_G3820, - (_G3820=_G3775)]
+ (24)  [- (_G4008=_G4121), _G4008=_G4064, _G4064=_G4121]
+ (25)  [-v1_finset_1(_G4507), _G4458=_G4507, v1_finset_1(_G4458)]
+ (26)  [-l1_struct_0(_G4785), _G4736=_G4785, l1_struct_0(_G4736)]
+ (27)  [-m1_subset_1(_G5081, _G5218), m1_subset_1(_G5014, _G5149), _G5014=_G5081, _G5149=_G5218]
+ (28)  [-r1_dickson(_G5696, _G5869, _G6046), r1_dickson(_G5611, _G5782, _G5957), _G5611=_G5696, _G5782=_G5869, _G5957=_G6046]
+ (29)  [-v1_xboole_0(_G6688), _G6639=_G6688, v1_xboole_0(_G6639)]
+ (30)  [-l1_orders_2(_G6966), _G6917=_G6966, l1_orders_2(_G6917)]
+ (31)  [-v2_struct_0(_G7244), _G7195=_G7244, v2_struct_0(_G7195)]
+ (32)  [-v4_dickson(_G7513), _G7464=_G7513, v4_dickson(_G7464)]
+
+Connection Proof:
+-----------------
+1  [v4_dickson(5^[])]   (3)  
+1.1  [-v4_dickson(5^[]), l1_orders_2(5^[]), -m1_subset_1(2^[5^[]], k1_zfmisc_1(u1_struct_0(5^[])))]   (8)  substitution:[[_G9220], [5^[]]]
+1.1.1  [-l1_orders_2(5^[])]   (1)  
+1.1.2  [m1_subset_1(2^[5^[]], k1_zfmisc_1(u1_struct_0(5^[]))), v1_xboole_0(u1_struct_0(5^[])), -v1_xboole_0(2^[5^[]])]   (5)  substitution:[[_G9012, _G8929], [2^[5^[]], u1_struct_0(5^[])]]
+1.1.2.1  [-v1_xboole_0(u1_struct_0(5^[])), v2_struct_0(5^[]), l1_struct_0(5^[])]   (12)  substitution:[[_G10012], [5^[]]]
+1.1.2.1.1  [-v2_struct_0(5^[])]   (2)  
+1.1.2.1.2  [-l1_struct_0(5^[]), l1_orders_2(5^[])]   (10)  substitution:[[_G9792], [5^[]]]
+1.1.2.1.2.1  [-l1_orders_2(5^[])]   (1)  
+1.1.2.2  [v1_xboole_0(2^[5^[]]), v1_xboole_0(2^[5^[]]), - (2^[5^[]]=2^[5^[]])]   (18)  substitution:[[_G10832, _G10779], [2^[5^[]], 2^[5^[]]]]
+1.1.2.2.1  [-v1_xboole_0(2^[5^[]])]   (reduction:1.1.2)  
+1.1.2.2.2  [2^[5^[]]=2^[5^[]], -r1_dickson(5^[], 2^[5^[]], 2^[5^[]]), r1_dickson(5^[], k1_subset_1(u1_struct_0(5^[])), 2^[5^[]]), 5^[]=5^[], k1_subset_1(u1_struct_0(5^[]))=2^[5^[]]]   (28)  substitution:[[_G5957, _G6046, _G5696, _G5869, _G5611, _G5782], [2^[5^[]], 2^[5^[]], 5^[], 2^[5^[]], 5^[], k1_subset_1(u1_struct_0(5^[]))]]
+1.1.2.2.2.1  [r1_dickson(5^[], 2^[5^[]], 2^[5^[]]), l1_orders_2(5^[]), -v4_dickson(5^[]), v1_finset_1(2^[5^[]])]   (9)  substitution:[[_G9220, _G12328], [5^[], 2^[5^[]]]]
+1.1.2.2.2.1.1  [-l1_orders_2(5^[])]   (1)  
+1.1.2.2.2.1.2  [v4_dickson(5^[])]   (3)  
+1.1.2.2.2.1.3  [-v1_finset_1(2^[5^[]]), v1_xboole_0(2^[5^[]])]   (4)  substitution:[[_G8798], [2^[5^[]]]]
+1.1.2.2.2.1.3.1  [-v1_xboole_0(2^[5^[]])]   (lemmata:1.1.2.2)  
+1.1.2.2.2.2  [-r1_dickson(5^[], k1_subset_1(u1_struct_0(5^[])), 2^[5^[]]), r1_dickson(5^[], k1_subset_1(u1_struct_0(5^[])), k1_xboole_0), 5^[]=5^[], k1_subset_1(u1_struct_0(5^[]))=k1_subset_1(u1_struct_0(5^[])), k1_xboole_0=2^[5^[]]]   (28)  substitution:[[_G5696, _G5869, _G6046, _G5611, _G5782, _G5957], [5^[], k1_subset_1(u1_struct_0(5^[])), 2^[5^[]], 5^[], k1_subset_1(u1_struct_0(5^[])), k1_xboole_0]]
+1.1.2.2.2.2.1  [-r1_dickson(5^[], k1_subset_1(u1_struct_0(5^[])), k1_xboole_0), l1_orders_2(5^[])]   (17)  substitution:[[_G10555], [5^[]]]
+1.1.2.2.2.2.1.1  [-l1_orders_2(5^[])]   (1)  
+1.1.2.2.2.2.2  [- (5^[]=5^[])]   (22)  substitution:[[_G3676], [5^[]]]
+1.1.2.2.2.2.3  [- (k1_subset_1(u1_struct_0(5^[]))=k1_subset_1(u1_struct_0(5^[])))]   (22)  substitution:[[_G3676], [k1_subset_1(u1_struct_0(5^[]))]]
+1.1.2.2.2.2.4  [- (k1_xboole_0=2^[5^[]]), v1_xboole_0(k1_xboole_0), v1_xboole_0(2^[5^[]])]   (18)  substitution:[[_G10779, _G10832], [k1_xboole_0, 2^[5^[]]]]
+1.1.2.2.2.2.4.1  [-v1_xboole_0(k1_xboole_0)]   (13)  
+1.1.2.2.2.2.4.2  [-v1_xboole_0(2^[5^[]])]   (lemmata:1.1.2.2)  
+1.1.2.2.2.3  [- (5^[]=5^[])]   (22)  substitution:[[_G3676], [5^[]]]
+1.1.2.2.2.4  [- (k1_subset_1(u1_struct_0(5^[]))=2^[5^[]]), v1_xboole_0(k1_subset_1(u1_struct_0(5^[]))), v1_xboole_0(2^[5^[]])]   (18)  substitution:[[_G10779, _G10832], [k1_subset_1(u1_struct_0(5^[])), 2^[5^[]]]]
+1.1.2.2.2.4.1  [-v1_xboole_0(k1_subset_1(u1_struct_0(5^[])))]   (11)  substitution:[[_G9923], [u1_struct_0(5^[])]]
+1.1.2.2.2.4.2  [-v1_xboole_0(2^[5^[]])]   (lemmata:1.1.2.2)  
+------------------------------------------------------
+End of proof for t36_dickson

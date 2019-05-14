@@ -1,0 +1,37 @@
+
+t7_cantor_1 is a Theorem
+Start of proof for t7_cantor_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(1^[])]
+ (2)  [-v2_pre_topc(1^[])]
+ (3)  [-l1_pre_topc(1^[])]
+ (4)  [u1_pre_topc(1^[])=k1_cantor_1(u1_struct_0(1^[]), k2_cantor_1(u1_struct_0(1^[]), u1_pre_topc(1^[])))]
+ (5)  [- (u1_pre_topc(_G5892)=k1_cantor_1(u1_struct_0(_G5892), u1_pre_topc(_G5892))), v2_pre_topc(_G5892), l1_pre_topc(_G5892)]
+ (6)  [- (u1_pre_topc(_G5522)=k2_cantor_1(u1_struct_0(_G5522), u1_pre_topc(_G5522))), -v2_struct_0(_G5522), v2_pre_topc(_G5522), l1_pre_topc(_G5522)]
+ (7)  [- (k1_cantor_1(_G3697, _G3832)=k1_cantor_1(_G3764, _G3901)), _G3697=_G3764, _G3832=_G3901]
+ (8)  [- (k2_cantor_1(_G4294, _G4429)=k2_cantor_1(_G4361, _G4498)), _G4294=_G4361, _G4429=_G4498]
+ (9)  [_G4891=_G4940, - (u1_struct_0(_G4891)=u1_struct_0(_G4940))]
+ (10)  [_G5160=_G5209, - (u1_pre_topc(_G5160)=u1_pre_topc(_G5209))]
+ (11)  [- (_G2027=_G2027)]
+ (12)  [_G2126=_G2171, - (_G2171=_G2126)]
+ (13)  [- (_G2359=_G2472), _G2359=_G2415, _G2415=_G2472]
+ (14)  [-v2_struct_0(_G2858), _G2809=_G2858, v2_struct_0(_G2809)]
+ (15)  [-v2_pre_topc(_G3136), _G3087=_G3136, v2_pre_topc(_G3087)]
+ (16)  [-l1_pre_topc(_G3405), _G3356=_G3405, l1_pre_topc(_G3356)]
+
+Connection Proof:
+-----------------
+1  [u1_pre_topc(1^[])=k1_cantor_1(u1_struct_0(1^[]), k2_cantor_1(u1_struct_0(1^[]), u1_pre_topc(1^[])))]   (4)  
+1.1  [- (u1_pre_topc(1^[])=k1_cantor_1(u1_struct_0(1^[]), k2_cantor_1(u1_struct_0(1^[]), u1_pre_topc(1^[])))), u1_pre_topc(1^[])=k1_cantor_1(u1_struct_0(1^[]), u1_pre_topc(1^[])), k1_cantor_1(u1_struct_0(1^[]), u1_pre_topc(1^[]))=k1_cantor_1(u1_struct_0(1^[]), k2_cantor_1(u1_struct_0(1^[]), u1_pre_topc(1^[])))]   (13)  substitution:[[_G2359, _G2472, _G2415], [u1_pre_topc(1^[]), k1_cantor_1(u1_struct_0(1^[]), k2_cantor_1(u1_struct_0(1^[]), u1_pre_topc(1^[]))), k1_cantor_1(u1_struct_0(1^[]), u1_pre_topc(1^[]))]]
+1.1.1  [- (u1_pre_topc(1^[])=k1_cantor_1(u1_struct_0(1^[]), u1_pre_topc(1^[]))), v2_pre_topc(1^[]), l1_pre_topc(1^[])]   (5)  substitution:[[_G5892], [1^[]]]
+1.1.1.1  [-v2_pre_topc(1^[])]   (2)  
+1.1.1.2  [-l1_pre_topc(1^[])]   (3)  
+1.1.2  [- (k1_cantor_1(u1_struct_0(1^[]), u1_pre_topc(1^[]))=k1_cantor_1(u1_struct_0(1^[]), k2_cantor_1(u1_struct_0(1^[]), u1_pre_topc(1^[])))), u1_struct_0(1^[])=u1_struct_0(1^[]), u1_pre_topc(1^[])=k2_cantor_1(u1_struct_0(1^[]), u1_pre_topc(1^[]))]   (7)  substitution:[[_G3697, _G3832, _G3764, _G3901], [u1_struct_0(1^[]), u1_pre_topc(1^[]), u1_struct_0(1^[]), k2_cantor_1(u1_struct_0(1^[]), u1_pre_topc(1^[]))]]
+1.1.2.1  [- (u1_struct_0(1^[])=u1_struct_0(1^[]))]   (11)  substitution:[[_G2027], [u1_struct_0(1^[])]]
+1.1.2.2  [- (u1_pre_topc(1^[])=k2_cantor_1(u1_struct_0(1^[]), u1_pre_topc(1^[]))), -v2_struct_0(1^[]), v2_pre_topc(1^[]), l1_pre_topc(1^[])]   (6)  substitution:[[_G5522], [1^[]]]
+1.1.2.2.1  [v2_struct_0(1^[])]   (1)  
+1.1.2.2.2  [-v2_pre_topc(1^[])]   (2)  
+1.1.2.2.3  [-l1_pre_topc(1^[])]   (3)  
+------------------------------------------------------
+End of proof for t7_cantor_1

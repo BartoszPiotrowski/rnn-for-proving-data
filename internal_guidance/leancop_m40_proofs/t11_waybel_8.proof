@@ -1,0 +1,48 @@
+
+t11_waybel_8 is a Theorem
+Start of proof for t11_waybel_8
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-l1_orders_2(1^[])]
+ (2)  [-l1_orders_2(2^[])]
+ (3)  [- (g1_orders_2(u1_struct_0(1^[]), u1_orders_2(1^[]))=g1_orders_2(u1_struct_0(2^[]), u1_orders_2(2^[])))]
+ (4)  [v2_struct_0(1^[])]
+ (5)  [-v2_struct_0(2^[])]
+ (6)  [l1_orders_2(_G7791), -l1_struct_0(_G7791)]
+ (7)  [l1_orders_2(_G7922), -m1_subset_1(u1_orders_2(_G7922), k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(_G7922), u1_struct_0(_G7922))))]
+ (8)  [-v1_xboole_0(u1_struct_0(_G8185)), v2_struct_0(_G8185), l1_struct_0(_G8185)]
+ (9)  [v1_xboole_0(u1_struct_0(_G8390)), -v2_struct_0(_G8390), l1_struct_0(_G8390)]
+ (10)  [m1_subset_1(_G8696, k1_zfmisc_1(k2_zfmisc_1(_G8618, _G8618))), g1_orders_2(_G8618, _G8696)=g1_orders_2(_G8885, _G8954), - (_G8618=_G8885)]
+ (11)  [m1_subset_1(_G8696, k1_zfmisc_1(k2_zfmisc_1(_G8618, _G8618))), g1_orders_2(_G8618, _G8696)=g1_orders_2(_G8885, _G8954), - (_G8696=_G8954)]
+ (12)  [_G5667=_G5716, - (k1_zfmisc_1(_G5667)=k1_zfmisc_1(_G5716))]
+ (13)  [- (k2_zfmisc_1(_G5945, _G6080)=k2_zfmisc_1(_G6012, _G6149)), _G5945=_G6012, _G6080=_G6149]
+ (14)  [- (g1_orders_2(_G6542, _G6677)=g1_orders_2(_G6609, _G6746)), _G6542=_G6609, _G6677=_G6746]
+ (15)  [_G7139=_G7188, - (u1_struct_0(_G7139)=u1_struct_0(_G7188))]
+ (16)  [_G7408=_G7457, - (u1_orders_2(_G7408)=u1_orders_2(_G7457))]
+ (17)  [- (_G3080=_G3080)]
+ (18)  [_G3179=_G3224, - (_G3224=_G3179)]
+ (19)  [- (_G3412=_G3525), _G3412=_G3468, _G3468=_G3525]
+ (20)  [-l1_struct_0(_G3911), _G3862=_G3911, l1_struct_0(_G3862)]
+ (21)  [-v1_xboole_0(_G4189), _G4140=_G4189, v1_xboole_0(_G4140)]
+ (22)  [-m1_subset_1(_G4485, _G4622), m1_subset_1(_G4418, _G4553), _G4418=_G4485, _G4553=_G4622]
+ (23)  [-l1_orders_2(_G5064), _G5015=_G5064, l1_orders_2(_G5015)]
+ (24)  [-v2_struct_0(_G5333), _G5284=_G5333, v2_struct_0(_G5284)]
+
+Connection Proof:
+-----------------
+1  [v2_struct_0(1^[])]   (4)  
+1.1  [-v2_struct_0(1^[]), v1_xboole_0(u1_struct_0(1^[])), l1_struct_0(1^[])]   (9)  substitution:[[_G8390], [1^[]]]
+1.1.1  [-v1_xboole_0(u1_struct_0(1^[])), u1_struct_0(2^[])=u1_struct_0(1^[]), v1_xboole_0(u1_struct_0(2^[]))]   (21)  substitution:[[_G4189, _G4140], [u1_struct_0(1^[]), u1_struct_0(2^[])]]
+1.1.1.1  [- (u1_struct_0(2^[])=u1_struct_0(1^[])), m1_subset_1(u1_orders_2(2^[]), k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(2^[]), u1_struct_0(2^[])))), g1_orders_2(u1_struct_0(2^[]), u1_orders_2(2^[]))=g1_orders_2(u1_struct_0(1^[]), u1_orders_2(1^[]))]   (10)  substitution:[[_G8618, _G8885, _G8696, _G8954], [u1_struct_0(2^[]), u1_struct_0(1^[]), u1_orders_2(2^[]), u1_orders_2(1^[])]]
+1.1.1.1.1  [-m1_subset_1(u1_orders_2(2^[]), k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(2^[]), u1_struct_0(2^[])))), l1_orders_2(2^[])]   (7)  substitution:[[_G7922], [2^[]]]
+1.1.1.1.1.1  [-l1_orders_2(2^[])]   (2)  
+1.1.1.1.2  [- (g1_orders_2(u1_struct_0(2^[]), u1_orders_2(2^[]))=g1_orders_2(u1_struct_0(1^[]), u1_orders_2(1^[]))), g1_orders_2(u1_struct_0(1^[]), u1_orders_2(1^[]))=g1_orders_2(u1_struct_0(2^[]), u1_orders_2(2^[]))]   (18)  substitution:[[_G3224, _G3179], [g1_orders_2(u1_struct_0(2^[]), u1_orders_2(2^[])), g1_orders_2(u1_struct_0(1^[]), u1_orders_2(1^[]))]]
+1.1.1.1.2.1  [- (g1_orders_2(u1_struct_0(1^[]), u1_orders_2(1^[]))=g1_orders_2(u1_struct_0(2^[]), u1_orders_2(2^[])))]   (3)  
+1.1.1.2  [-v1_xboole_0(u1_struct_0(2^[])), v2_struct_0(2^[]), l1_struct_0(2^[])]   (8)  substitution:[[_G8185], [2^[]]]
+1.1.1.2.1  [-v2_struct_0(2^[])]   (5)  
+1.1.1.2.2  [-l1_struct_0(2^[]), l1_orders_2(2^[])]   (6)  substitution:[[_G7791], [2^[]]]
+1.1.1.2.2.1  [-l1_orders_2(2^[])]   (2)  
+1.1.2  [-l1_struct_0(1^[]), l1_orders_2(1^[])]   (6)  substitution:[[_G7791], [1^[]]]
+1.1.2.1  [-l1_orders_2(1^[])]   (1)  
+------------------------------------------------------
+End of proof for t11_waybel_8

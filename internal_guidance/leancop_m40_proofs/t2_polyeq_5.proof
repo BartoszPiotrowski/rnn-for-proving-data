@@ -1,0 +1,54 @@
+
+t2_polyeq_5 is a Theorem
+Start of proof for t2_polyeq_5
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xcmplx_0(1^[])]
+ (2)  [k3_xcmplx_0(k3_xcmplx_0(1^[], 1^[]), 1^[])=k1_newton(1^[], np__3)]
+ (3)  [v1_xcmplx_0(_G8139), - (k3_square_1(_G8139)=k3_xcmplx_0(_G8139, _G8139))]
+ (4)  [v1_xcmplx_0(_G8354), - (k3_polyeq_3(_G8354)=k5_binop_2(k3_square_1(_G8354), _G8354))]
+ (5)  [v1_xcmplx_0(_G8585), -r2_hidden(_G8585, k2_numbers)]
+ (6)  [-v1_xcmplx_0(_G8585), r2_hidden(_G8585, k2_numbers)]
+ (7)  [v1_xcmplx_0(_G8742), -v1_xcmplx_0(k3_square_1(_G8742))]
+ (8)  [- (k5_binop_2(_G8889, _G8944)=k3_xcmplx_0(_G8889, _G8944)), v1_xcmplx_0(_G8889), v1_xcmplx_0(_G8944)]
+ (9)  [r2_hidden(_G9257, _G9302), -m1_subset_1(_G9257, _G9302)]
+ (10)  [m1_subset_1(_G9490, k2_numbers), - (k1_newton(_G9490, np__3)=k5_binop_2(k5_binop_2(_G9490, _G9490), _G9490))]
+ (11)  [m1_subset_1(_G9490, k2_numbers), - (k1_newton(_G9490, np__3)=k5_binop_2(k1_polyeq_3(_G9490), _G9490))]
+ (12)  [m1_subset_1(_G9490, k2_numbers), - (k1_newton(_G9490, np__3)=k3_polyeq_3(_G9490))]
+ (13)  [_G5397=_G5446, - (k3_square_1(_G5397)=k3_square_1(_G5446))]
+ (14)  [- (k5_binop_2(_G5675, _G5810)=k5_binop_2(_G5742, _G5879)), _G5675=_G5742, _G5810=_G5879]
+ (15)  [_G6272=_G6321, - (k1_polyeq_3(_G6272)=k1_polyeq_3(_G6321))]
+ (16)  [_G6550=_G6599, - (k3_polyeq_3(_G6550)=k3_polyeq_3(_G6599))]
+ (17)  [- (k3_xcmplx_0(_G6828, _G6963)=k3_xcmplx_0(_G6895, _G7032)), _G6828=_G6895, _G6963=_G7032]
+ (18)  [- (k1_newton(_G7416, _G7551)=k1_newton(_G7483, _G7620)), _G7416=_G7483, _G7551=_G7620]
+ (19)  [- (_G3089=_G3089)]
+ (20)  [_G3188=_G3233, - (_G3233=_G3188)]
+ (21)  [- (_G3421=_G3534), _G3421=_G3477, _G3477=_G3534]
+ (22)  [-r2_hidden(_G3938, _G4075), r2_hidden(_G3871, _G4006), _G3871=_G3938, _G4006=_G4075]
+ (23)  [-v1_xcmplx_0(_G5105), _G5056=_G5105, v1_xcmplx_0(_G5056)]
+ (24)  [-m1_subset_1(_G4535, _G4672), m1_subset_1(_G4468, _G4603), _G4468=_G4535, _G4603=_G4672]
+
+Connection Proof:
+-----------------
+1  [k3_xcmplx_0(k3_xcmplx_0(1^[], 1^[]), 1^[])=k1_newton(1^[], np__3)]   (2)  
+1.1  [- (k3_xcmplx_0(k3_xcmplx_0(1^[], 1^[]), 1^[])=k1_newton(1^[], np__3)), k1_newton(1^[], np__3)=k3_xcmplx_0(k3_xcmplx_0(1^[], 1^[]), 1^[])]   (20)  substitution:[[_G3233, _G3188], [k3_xcmplx_0(k3_xcmplx_0(1^[], 1^[]), 1^[]), k1_newton(1^[], np__3)]]
+1.1.1  [- (k1_newton(1^[], np__3)=k3_xcmplx_0(k3_xcmplx_0(1^[], 1^[]), 1^[])), k1_newton(1^[], np__3)=k5_binop_2(k5_binop_2(1^[], 1^[]), 1^[]), k5_binop_2(k5_binop_2(1^[], 1^[]), 1^[])=k3_xcmplx_0(k3_xcmplx_0(1^[], 1^[]), 1^[])]   (21)  substitution:[[_G3421, _G3534, _G3477], [k1_newton(1^[], np__3), k3_xcmplx_0(k3_xcmplx_0(1^[], 1^[]), 1^[]), k5_binop_2(k5_binop_2(1^[], 1^[]), 1^[])]]
+1.1.1.1  [- (k1_newton(1^[], np__3)=k5_binop_2(k5_binop_2(1^[], 1^[]), 1^[])), m1_subset_1(1^[], k2_numbers)]   (10)  substitution:[[_G9490], [1^[]]]
+1.1.1.1.1  [-m1_subset_1(1^[], k2_numbers), r2_hidden(1^[], k2_numbers)]   (9)  substitution:[[_G9257, _G9302], [1^[], k2_numbers]]
+1.1.1.1.1.1  [-r2_hidden(1^[], k2_numbers), v1_xcmplx_0(1^[])]   (5)  substitution:[[_G8585], [1^[]]]
+1.1.1.1.1.1.1  [-v1_xcmplx_0(1^[])]   (1)  
+1.1.1.2  [- (k5_binop_2(k5_binop_2(1^[], 1^[]), 1^[])=k3_xcmplx_0(k3_xcmplx_0(1^[], 1^[]), 1^[])), k5_binop_2(k5_binop_2(1^[], 1^[]), 1^[])=k5_binop_2(k3_xcmplx_0(1^[], 1^[]), 1^[]), k5_binop_2(k3_xcmplx_0(1^[], 1^[]), 1^[])=k3_xcmplx_0(k3_xcmplx_0(1^[], 1^[]), 1^[])]   (21)  substitution:[[_G3421, _G3534, _G3477], [k5_binop_2(k5_binop_2(1^[], 1^[]), 1^[]), k3_xcmplx_0(k3_xcmplx_0(1^[], 1^[]), 1^[]), k5_binop_2(k3_xcmplx_0(1^[], 1^[]), 1^[])]]
+1.1.1.2.1  [- (k5_binop_2(k5_binop_2(1^[], 1^[]), 1^[])=k5_binop_2(k3_xcmplx_0(1^[], 1^[]), 1^[])), k5_binop_2(1^[], 1^[])=k3_xcmplx_0(1^[], 1^[]), 1^[]=1^[]]   (14)  substitution:[[_G5675, _G5810, _G5742, _G5879], [k5_binop_2(1^[], 1^[]), 1^[], k3_xcmplx_0(1^[], 1^[]), 1^[]]]
+1.1.1.2.1.1  [- (k5_binop_2(1^[], 1^[])=k3_xcmplx_0(1^[], 1^[])), v1_xcmplx_0(1^[]), v1_xcmplx_0(1^[])]   (8)  substitution:[[_G8889, _G8944], [1^[], 1^[]]]
+1.1.1.2.1.1.1  [-v1_xcmplx_0(1^[])]   (1)  
+1.1.1.2.1.1.2  [-v1_xcmplx_0(1^[])]   (1)  
+1.1.1.2.1.2  [- (1^[]=1^[])]   (19)  substitution:[[_G3089], [1^[]]]
+1.1.1.2.2  [- (k5_binop_2(k3_xcmplx_0(1^[], 1^[]), 1^[])=k3_xcmplx_0(k3_xcmplx_0(1^[], 1^[]), 1^[])), v1_xcmplx_0(k3_xcmplx_0(1^[], 1^[])), v1_xcmplx_0(1^[])]   (8)  substitution:[[_G8889, _G8944], [k3_xcmplx_0(1^[], 1^[]), 1^[]]]
+1.1.1.2.2.1  [-v1_xcmplx_0(k3_xcmplx_0(1^[], 1^[])), k3_square_1(1^[])=k3_xcmplx_0(1^[], 1^[]), v1_xcmplx_0(k3_square_1(1^[]))]   (23)  substitution:[[_G5105, _G5056], [k3_xcmplx_0(1^[], 1^[]), k3_square_1(1^[])]]
+1.1.1.2.2.1.1  [- (k3_square_1(1^[])=k3_xcmplx_0(1^[], 1^[])), v1_xcmplx_0(1^[])]   (3)  substitution:[[_G8139], [1^[]]]
+1.1.1.2.2.1.1.1  [-v1_xcmplx_0(1^[])]   (1)  
+1.1.1.2.2.1.2  [-v1_xcmplx_0(k3_square_1(1^[])), v1_xcmplx_0(1^[])]   (7)  substitution:[[_G8742], [1^[]]]
+1.1.1.2.2.1.2.1  [-v1_xcmplx_0(1^[])]   (1)  
+1.1.1.2.2.2  [-v1_xcmplx_0(1^[])]   (1)  
+------------------------------------------------------
+End of proof for t2_polyeq_5

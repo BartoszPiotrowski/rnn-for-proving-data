@@ -1,0 +1,51 @@
+
+t8_topalg_3 is a Theorem
+Start of proof for t8_topalg_3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v2_pre_topc(1^[])]
+ (2)  [-l1_pre_topc(1^[])]
+ (3)  [-v1_connsp_1(g1_pre_topc(u1_struct_0(1^[]), u1_pre_topc(1^[])))]
+ (4)  [v1_connsp_1(1^[])]
+ (5)  [l1_pre_topc(_G8803), m1_subset_1(_G8897, k1_zfmisc_1(u1_struct_0(_G8803))), v2_connsp_1(_G8897, _G8803), -v1_connsp_1(k1_pre_topc(_G8803, _G8897))]
+ (6)  [l1_pre_topc(_G8803), m1_subset_1(_G8897, k1_zfmisc_1(u1_struct_0(_G8803))), -v2_connsp_1(_G8897, _G8803), v1_connsp_1(k1_pre_topc(_G8803, _G8897))]
+ (7)  [l1_struct_0(_G9247), - (k2_struct_0(_G9247)=u1_struct_0(_G9247))]
+ (8)  [l1_struct_0(_G9436), -m1_subset_1(k2_struct_0(_G9436), k1_zfmisc_1(u1_struct_0(_G9436)))]
+ (9)  [l1_pre_topc(_G9641), -l1_struct_0(_G9641)]
+ (10)  [l1_pre_topc(_G10052), - (k1_pre_topc(_G10052, k2_struct_0(_G10052))=g1_pre_topc(u1_struct_0(_G10052), u1_pre_topc(_G10052)))]
+ (11)  [l1_pre_topc(_G9772), v2_pre_topc(_G9772), v2_connsp_1(k2_struct_0(_G9772), _G9772), -v1_connsp_1(_G9772)]
+ (12)  [l1_pre_topc(_G9772), v2_pre_topc(_G9772), -v2_connsp_1(k2_struct_0(_G9772), _G9772), v1_connsp_1(_G9772)]
+ (13)  [_G6380=_G6429, - (k1_zfmisc_1(_G6380)=k1_zfmisc_1(_G6429))]
+ (14)  [- (k1_pre_topc(_G6658, _G6793)=k1_pre_topc(_G6725, _G6862)), _G6658=_G6725, _G6793=_G6862]
+ (15)  [_G7255=_G7304, - (k2_struct_0(_G7255)=k2_struct_0(_G7304))]
+ (16)  [- (g1_pre_topc(_G7533, _G7668)=g1_pre_topc(_G7600, _G7737)), _G7533=_G7600, _G7668=_G7737]
+ (17)  [_G8130=_G8179, - (u1_struct_0(_G8130)=u1_struct_0(_G8179))]
+ (18)  [_G8399=_G8448, - (u1_pre_topc(_G8399)=u1_pre_topc(_G8448))]
+ (19)  [- (_G3175=_G3175)]
+ (20)  [_G3274=_G3319, - (_G3319=_G3274)]
+ (21)  [- (_G3507=_G3620), _G3507=_G3563, _G3563=_G3620]
+ (22)  [-m1_subset_1(_G4024, _G4161), m1_subset_1(_G3957, _G4092), _G3957=_G4024, _G4092=_G4161]
+ (23)  [-l1_struct_0(_G4603), _G4554=_G4603, l1_struct_0(_G4554)]
+ (24)  [-v2_connsp_1(_G4899, _G5036), v2_connsp_1(_G4832, _G4967), _G4832=_G4899, _G4967=_G5036]
+ (25)  [-v2_pre_topc(_G5478), _G5429=_G5478, v2_pre_topc(_G5429)]
+ (26)  [-l1_pre_topc(_G5756), _G5707=_G5756, l1_pre_topc(_G5707)]
+ (27)  [-v1_connsp_1(_G6025), _G5976=_G6025, v1_connsp_1(_G5976)]
+
+Connection Proof:
+-----------------
+1  [v1_connsp_1(1^[])]   (4)  
+1.1  [-v1_connsp_1(1^[]), l1_pre_topc(1^[]), v2_pre_topc(1^[]), v2_connsp_1(k2_struct_0(1^[]), 1^[])]   (11)  substitution:[[_G9772], [1^[]]]
+1.1.1  [-l1_pre_topc(1^[])]   (2)  
+1.1.2  [-v2_pre_topc(1^[])]   (1)  
+1.1.3  [-v2_connsp_1(k2_struct_0(1^[]), 1^[]), l1_pre_topc(1^[]), m1_subset_1(k2_struct_0(1^[]), k1_zfmisc_1(u1_struct_0(1^[]))), v1_connsp_1(k1_pre_topc(1^[], k2_struct_0(1^[])))]   (6)  substitution:[[_G8897, _G8803], [k2_struct_0(1^[]), 1^[]]]
+1.1.3.1  [-l1_pre_topc(1^[])]   (2)  
+1.1.3.2  [-m1_subset_1(k2_struct_0(1^[]), k1_zfmisc_1(u1_struct_0(1^[]))), l1_struct_0(1^[])]   (8)  substitution:[[_G9436], [1^[]]]
+1.1.3.2.1  [-l1_struct_0(1^[]), l1_pre_topc(1^[])]   (9)  substitution:[[_G9641], [1^[]]]
+1.1.3.2.1.1  [-l1_pre_topc(1^[])]   (2)  
+1.1.3.3  [-v1_connsp_1(k1_pre_topc(1^[], k2_struct_0(1^[]))), g1_pre_topc(u1_struct_0(1^[]), u1_pre_topc(1^[]))=k1_pre_topc(1^[], k2_struct_0(1^[])), v1_connsp_1(g1_pre_topc(u1_struct_0(1^[]), u1_pre_topc(1^[])))]   (27)  substitution:[[_G6025, _G5976], [k1_pre_topc(1^[], k2_struct_0(1^[])), g1_pre_topc(u1_struct_0(1^[]), u1_pre_topc(1^[]))]]
+1.1.3.3.1  [- (g1_pre_topc(u1_struct_0(1^[]), u1_pre_topc(1^[]))=k1_pre_topc(1^[], k2_struct_0(1^[]))), k1_pre_topc(1^[], k2_struct_0(1^[]))=g1_pre_topc(u1_struct_0(1^[]), u1_pre_topc(1^[]))]   (20)  substitution:[[_G3319, _G3274], [g1_pre_topc(u1_struct_0(1^[]), u1_pre_topc(1^[])), k1_pre_topc(1^[], k2_struct_0(1^[]))]]
+1.1.3.3.1.1  [- (k1_pre_topc(1^[], k2_struct_0(1^[]))=g1_pre_topc(u1_struct_0(1^[]), u1_pre_topc(1^[]))), l1_pre_topc(1^[])]   (10)  substitution:[[_G10052], [1^[]]]
+1.1.3.3.1.1.1  [-l1_pre_topc(1^[])]   (2)  
+1.1.3.3.2  [-v1_connsp_1(g1_pre_topc(u1_struct_0(1^[]), u1_pre_topc(1^[])))]   (3)  
+------------------------------------------------------
+End of proof for t8_topalg_3

@@ -1,0 +1,27 @@
+
+t46_procal_1 is a Theorem
+Start of proof for t46_procal_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_qc_lang1(1^[])]
+ (2)  [-m2_subset_1(2^[], k9_qc_lang1(1^[]), k3_cqc_lang(1^[]))]
+ (3)  [-m2_subset_1(3^[], k9_qc_lang1(1^[]), k3_cqc_lang(1^[]))]
+ (4)  [-r2_hidden(k7_cqc_lang(1^[], 2^[], 3^[]), k4_cqc_the1(1^[]))]
+ (5)  [r2_hidden(k9_cqc_lang(1^[], 2^[], 3^[]), k4_cqc_the1(1^[]))]
+ (6)  [m1_qc_lang1(_G1001), m2_subset_1(_G1118, k9_qc_lang1(_G1001), k3_cqc_lang(_G1001)), m2_subset_1(_G1327, k9_qc_lang1(_G1001), k3_cqc_lang(_G1001)), r2_hidden(_G1118, k4_cqc_the1(_G1001)), -r2_hidden(k9_cqc_lang(_G1001, _G1118, _G1327), k4_cqc_the1(_G1001))]
+ (7)  [m1_qc_lang1(_G1849), m2_subset_1(_G1966, k9_qc_lang1(_G1849), k3_cqc_lang(_G1849)), m2_subset_1(_G2175, k9_qc_lang1(_G1849), k3_cqc_lang(_G1849)), r2_hidden(k7_cqc_lang(_G1849, _G1966, _G2175), k4_cqc_the1(_G1849)), -r2_hidden(_G1966, k4_cqc_the1(_G1849))]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(k9_cqc_lang(1^[], 2^[], 3^[]), k4_cqc_the1(1^[]))]   (5)  
+1.1  [-r2_hidden(k9_cqc_lang(1^[], 2^[], 3^[]), k4_cqc_the1(1^[])), m1_qc_lang1(1^[]), m2_subset_1(2^[], k9_qc_lang1(1^[]), k3_cqc_lang(1^[])), m2_subset_1(3^[], k9_qc_lang1(1^[]), k3_cqc_lang(1^[])), r2_hidden(2^[], k4_cqc_the1(1^[]))]   (6)  substitution:[[_G1001, _G1118, _G1327], [1^[], 2^[], 3^[]]]
+1.1.1  [-m1_qc_lang1(1^[])]   (1)  
+1.1.2  [-m2_subset_1(2^[], k9_qc_lang1(1^[]), k3_cqc_lang(1^[]))]   (2)  
+1.1.3  [-m2_subset_1(3^[], k9_qc_lang1(1^[]), k3_cqc_lang(1^[]))]   (3)  
+1.1.4  [-r2_hidden(2^[], k4_cqc_the1(1^[])), m1_qc_lang1(1^[]), m2_subset_1(2^[], k9_qc_lang1(1^[]), k3_cqc_lang(1^[])), m2_subset_1(3^[], k9_qc_lang1(1^[]), k3_cqc_lang(1^[])), r2_hidden(k7_cqc_lang(1^[], 2^[], 3^[]), k4_cqc_the1(1^[]))]   (7)  substitution:[[_G1966, _G1849, _G2175], [2^[], 1^[], 3^[]]]
+1.1.4.1  [-m1_qc_lang1(1^[])]   (1)  
+1.1.4.2  [-m2_subset_1(2^[], k9_qc_lang1(1^[]), k3_cqc_lang(1^[]))]   (2)  
+1.1.4.3  [-m2_subset_1(3^[], k9_qc_lang1(1^[]), k3_cqc_lang(1^[]))]   (3)  
+1.1.4.4  [-r2_hidden(k7_cqc_lang(1^[], 2^[], 3^[]), k4_cqc_the1(1^[]))]   (4)  
+------------------------------------------------------
+End of proof for t46_procal_1

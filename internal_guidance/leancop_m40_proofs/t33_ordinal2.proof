@@ -1,0 +1,56 @@
+
+t33_ordinal2 is a Theorem
+Start of proof for t33_ordinal2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v3_ordinal1(1^[])]
+ (2)  [-v3_ordinal1(2^[])]
+ (3)  [-v3_ordinal1(3^[])]
+ (4)  [-r1_ordinal1(1^[], 2^[])]
+ (5)  [r1_ordinal1(k10_ordinal2(3^[], 1^[]), k10_ordinal2(3^[], 2^[]))]
+ (6)  [- (k1_ordinal1(_G7207)=k2_xboole_0(_G7207, k1_tarski(_G7207)))]
+ (7)  [-v3_ordinal1(k10_ordinal2(_G7380, _G7431)), v3_ordinal1(_G7380), v3_ordinal1(_G7431)]
+ (8)  [v3_ordinal1(_G7725), r2_hidden(_G7676, _G7725), -v3_ordinal1(_G7676)]
+ (9)  [v3_ordinal1(_G7954), v3_ordinal1(_G8043), r2_hidden(_G7954, k1_ordinal1(_G8043)), -r1_ordinal1(_G7954, _G8043)]
+ (10)  [v3_ordinal1(_G7954), v3_ordinal1(_G8043), -r2_hidden(_G7954, k1_ordinal1(_G8043)), r1_ordinal1(_G7954, _G8043)]
+ (11)  [v3_ordinal1(_G8335), v3_ordinal1(_G8438), v3_ordinal1(_G8537), r2_hidden(_G8335, _G8438), -r2_hidden(k10_ordinal2(_G8537, _G8335), k10_ordinal2(_G8537, _G8438))]
+ (12)  [-r2_hidden(_G8923, k1_ordinal1(_G8976)), r2_hidden(_G8923, _G8976)]
+ (13)  [-r2_hidden(_G8923, k1_ordinal1(_G8976)), _G8923=_G8976]
+ (14)  [r2_hidden(_G8923, k1_ordinal1(_G8976)), -r2_hidden(_G8923, _G8976), - (_G8923=_G8976)]
+ (15)  [- (k2_xboole_0(_G5382, _G5517)=k2_xboole_0(_G5449, _G5586)), _G5382=_G5449, _G5517=_G5586]
+ (16)  [_G5979=_G6028, - (k1_tarski(_G5979)=k1_tarski(_G6028))]
+ (17)  [_G6257=_G6306, - (k1_ordinal1(_G6257)=k1_ordinal1(_G6306))]
+ (18)  [- (k10_ordinal2(_G6526, _G6661)=k10_ordinal2(_G6593, _G6730)), _G6526=_G6593, _G6661=_G6730]
+ (19)  [- (_G3074=_G3074)]
+ (20)  [_G3173=_G3218, - (_G3218=_G3173)]
+ (21)  [- (_G3406=_G3519), _G3406=_G3462, _G3462=_G3519]
+ (22)  [-r2_hidden(_G3923, _G4060), r2_hidden(_G3856, _G3991), _G3856=_G3923, _G3991=_G4060]
+ (23)  [-v3_ordinal1(_G4502), _G4453=_G4502, v3_ordinal1(_G4453)]
+ (24)  [-r1_ordinal1(_G4789, _G4926), r1_ordinal1(_G4722, _G4857), _G4722=_G4789, _G4857=_G4926]
+
+Connection Proof:
+-----------------
+1  [r1_ordinal1(k10_ordinal2(3^[], 1^[]), k10_ordinal2(3^[], 2^[]))]   (5)  
+1.1  [-r1_ordinal1(k10_ordinal2(3^[], 1^[]), k10_ordinal2(3^[], 2^[])), v3_ordinal1(k10_ordinal2(3^[], 1^[])), v3_ordinal1(k10_ordinal2(3^[], 2^[])), r2_hidden(k10_ordinal2(3^[], 1^[]), k1_ordinal1(k10_ordinal2(3^[], 2^[])))]   (9)  substitution:[[_G7954, _G8043], [k10_ordinal2(3^[], 1^[]), k10_ordinal2(3^[], 2^[])]]
+1.1.1  [-v3_ordinal1(k10_ordinal2(3^[], 1^[])), v3_ordinal1(3^[]), v3_ordinal1(1^[])]   (7)  substitution:[[_G7380, _G7431], [3^[], 1^[]]]
+1.1.1.1  [-v3_ordinal1(3^[])]   (3)  
+1.1.1.2  [-v3_ordinal1(1^[])]   (1)  
+1.1.2  [-v3_ordinal1(k10_ordinal2(3^[], 2^[])), v3_ordinal1(3^[]), v3_ordinal1(2^[])]   (7)  substitution:[[_G7380, _G7431], [3^[], 2^[]]]
+1.1.2.1  [-v3_ordinal1(3^[])]   (3)  
+1.1.2.2  [-v3_ordinal1(2^[])]   (2)  
+1.1.3  [-r2_hidden(k10_ordinal2(3^[], 1^[]), k1_ordinal1(k10_ordinal2(3^[], 2^[]))), r2_hidden(k10_ordinal2(3^[], 1^[]), k10_ordinal2(3^[], 2^[]))]   (12)  substitution:[[_G8923, _G8976], [k10_ordinal2(3^[], 1^[]), k10_ordinal2(3^[], 2^[])]]
+1.1.3.1  [-r2_hidden(k10_ordinal2(3^[], 1^[]), k10_ordinal2(3^[], 2^[])), v3_ordinal1(1^[]), v3_ordinal1(2^[]), v3_ordinal1(3^[]), r2_hidden(1^[], 2^[])]   (11)  substitution:[[_G8537, _G8335, _G8438], [3^[], 1^[], 2^[]]]
+1.1.3.1.1  [-v3_ordinal1(1^[])]   (1)  
+1.1.3.1.2  [-v3_ordinal1(2^[])]   (2)  
+1.1.3.1.3  [-v3_ordinal1(3^[])]   (3)  
+1.1.3.1.4  [-r2_hidden(1^[], 2^[]), r2_hidden(1^[], k1_ordinal1(2^[])), - (1^[]=2^[])]   (14)  substitution:[[_G8923, _G8976], [1^[], 2^[]]]
+1.1.3.1.4.1  [-r2_hidden(1^[], k1_ordinal1(2^[])), v3_ordinal1(1^[]), v3_ordinal1(2^[]), r1_ordinal1(1^[], 2^[])]   (10)  substitution:[[_G7954, _G8043], [1^[], 2^[]]]
+1.1.3.1.4.1.1  [-v3_ordinal1(1^[])]   (1)  
+1.1.3.1.4.1.2  [-v3_ordinal1(2^[])]   (2)  
+1.1.3.1.4.1.3  [-r1_ordinal1(1^[], 2^[])]   (4)  
+1.1.3.1.4.2  [1^[]=2^[], - (k10_ordinal2(3^[], 1^[])=k10_ordinal2(3^[], 2^[])), 3^[]=3^[]]   (18)  substitution:[[_G6661, _G6730, _G6526, _G6593], [1^[], 2^[], 3^[], 3^[]]]
+1.1.3.1.4.2.1  [k10_ordinal2(3^[], 1^[])=k10_ordinal2(3^[], 2^[]), -r2_hidden(k10_ordinal2(3^[], 1^[]), k1_ordinal1(k10_ordinal2(3^[], 2^[])))]   (13)  substitution:[[_G8923, _G8976], [k10_ordinal2(3^[], 1^[]), k10_ordinal2(3^[], 2^[])]]
+1.1.3.1.4.2.1.1  [r2_hidden(k10_ordinal2(3^[], 1^[]), k1_ordinal1(k10_ordinal2(3^[], 2^[])))]   (reduction:1.1)  
+1.1.3.1.4.2.2  [- (3^[]=3^[])]   (19)  substitution:[[_G3074], [3^[]]]
+------------------------------------------------------
+End of proof for t33_ordinal2

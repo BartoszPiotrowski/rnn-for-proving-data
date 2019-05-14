@@ -1,0 +1,44 @@
+
+t59_roughs_1 is a Theorem
+Start of proof for t59_roughs_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(1^[])]
+ (2)  [-v3_roughs_1(1^[])]
+ (3)  [-l1_orders_2(1^[])]
+ (4)  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]
+ (5)  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(1^[])))]
+ (6)  [-m1_subset_1(4^[], k1_zfmisc_1(u1_struct_0(1^[])))]
+ (7)  [-r1_roughs_1(1^[], 2^[], 3^[])]
+ (8)  [-r1_roughs_1(1^[], 3^[], 4^[])]
+ (9)  [r1_roughs_1(1^[], 2^[], 4^[])]
+ (10)  [-r1_tarski(_G1990, _G2103), r1_tarski(_G1990, _G2046), r1_tarski(_G2046, _G2103)]
+ (11)  [l1_orders_2(_G1093), v3_roughs_1(_G1093), -v2_struct_0(_G1093), m1_subset_1(_G1339, k1_zfmisc_1(u1_struct_0(_G1093))), m1_subset_1(_G1502, k1_zfmisc_1(u1_struct_0(_G1093))), r1_roughs_1(_G1093, _G1339, _G1502), -r1_tarski(k3_roughs_1(_G1093, _G1339), k3_roughs_1(_G1093, _G1502))]
+ (12)  [l1_orders_2(_G1093), v3_roughs_1(_G1093), -v2_struct_0(_G1093), m1_subset_1(_G1339, k1_zfmisc_1(u1_struct_0(_G1093))), m1_subset_1(_G1502, k1_zfmisc_1(u1_struct_0(_G1093))), -r1_roughs_1(_G1093, _G1339, _G1502), r1_tarski(k3_roughs_1(_G1093, _G1339), k3_roughs_1(_G1093, _G1502))]
+
+Connection Proof:
+-----------------
+1  [v2_struct_0(1^[])]   (1)  
+1.1  [-v2_struct_0(1^[]), l1_orders_2(1^[]), v3_roughs_1(1^[]), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[]))), m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(1^[]))), r1_roughs_1(1^[], 2^[], 3^[]), -r1_tarski(k3_roughs_1(1^[], 2^[]), k3_roughs_1(1^[], 3^[]))]   (11)  substitution:[[_G1093, _G1339, _G1502], [1^[], 2^[], 3^[]]]
+1.1.1  [-l1_orders_2(1^[])]   (3)  
+1.1.2  [-v3_roughs_1(1^[])]   (2)  
+1.1.3  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (4)  
+1.1.4  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (5)  
+1.1.5  [-r1_roughs_1(1^[], 2^[], 3^[])]   (7)  
+1.1.6  [r1_tarski(k3_roughs_1(1^[], 2^[]), k3_roughs_1(1^[], 3^[])), -r1_tarski(k3_roughs_1(1^[], 2^[]), k3_roughs_1(1^[], 4^[])), r1_tarski(k3_roughs_1(1^[], 3^[]), k3_roughs_1(1^[], 4^[]))]   (10)  substitution:[[_G1990, _G2046, _G2103], [k3_roughs_1(1^[], 2^[]), k3_roughs_1(1^[], 3^[]), k3_roughs_1(1^[], 4^[])]]
+1.1.6.1  [r1_tarski(k3_roughs_1(1^[], 2^[]), k3_roughs_1(1^[], 4^[])), l1_orders_2(1^[]), v3_roughs_1(1^[]), -v2_struct_0(1^[]), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[]))), m1_subset_1(4^[], k1_zfmisc_1(u1_struct_0(1^[]))), -r1_roughs_1(1^[], 2^[], 4^[])]   (12)  substitution:[[_G1093, _G1339, _G1502], [1^[], 2^[], 4^[]]]
+1.1.6.1.1  [-l1_orders_2(1^[])]   (3)  
+1.1.6.1.2  [-v3_roughs_1(1^[])]   (2)  
+1.1.6.1.3  [v2_struct_0(1^[])]   (1)  
+1.1.6.1.4  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (4)  
+1.1.6.1.5  [-m1_subset_1(4^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (6)  
+1.1.6.1.6  [r1_roughs_1(1^[], 2^[], 4^[])]   (9)  
+1.1.6.2  [-r1_tarski(k3_roughs_1(1^[], 3^[]), k3_roughs_1(1^[], 4^[])), l1_orders_2(1^[]), v3_roughs_1(1^[]), -v2_struct_0(1^[]), m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(1^[]))), m1_subset_1(4^[], k1_zfmisc_1(u1_struct_0(1^[]))), r1_roughs_1(1^[], 3^[], 4^[])]   (11)  substitution:[[_G1093, _G1339, _G1502], [1^[], 3^[], 4^[]]]
+1.1.6.2.1  [-l1_orders_2(1^[])]   (3)  
+1.1.6.2.2  [-v3_roughs_1(1^[])]   (2)  
+1.1.6.2.3  [v2_struct_0(1^[])]   (1)  
+1.1.6.2.4  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (5)  
+1.1.6.2.5  [-m1_subset_1(4^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (6)  
+1.1.6.2.6  [-r1_roughs_1(1^[], 3^[], 4^[])]   (8)  
+------------------------------------------------------
+End of proof for t59_roughs_1

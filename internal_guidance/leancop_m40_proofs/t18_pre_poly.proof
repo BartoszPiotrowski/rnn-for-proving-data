@@ -1,0 +1,24 @@
+
+t18_pre_poly is a Theorem
+Start of proof for t18_pre_poly
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(2^[])]
+ (2)  [-r1_tarski(k1_relat_1(2^[]), 1^[])]
+ (3)  [m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]
+ (4)  [v1_relat_1(_G912), -r1_tarski(_G912, k2_zfmisc_1(k1_relat_1(_G912), k1_relat_1(_G912)))]
+ (5)  [m1_subset_1(_G1143, k1_zfmisc_1(_G1190)), -r1_tarski(_G1143, _G1190)]
+ (6)  [-m1_subset_1(_G1143, k1_zfmisc_1(_G1190)), r1_tarski(_G1143, _G1190)]
+ (7)  [m1_subset_1(_G1728, k1_zfmisc_1(k2_zfmisc_1(_G1394, _G1559))), -m1_subset_1(_G1728, k1_zfmisc_1(k2_zfmisc_1(_G1476, _G1643))), r1_tarski(_G1394, _G1476), r1_tarski(_G1559, _G1643)]
+
+Connection Proof:
+-----------------
+1  [m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]   (3)  
+1.1  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[]))), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k1_relat_1(2^[]), k1_relat_1(2^[])))), r1_tarski(k1_relat_1(2^[]), 1^[]), r1_tarski(k1_relat_1(2^[]), 1^[])]   (7)  substitution:[[_G1728, _G1476, _G1643, _G1394, _G1559], [2^[], 1^[], 1^[], k1_relat_1(2^[]), k1_relat_1(2^[])]]
+1.1.1  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k1_relat_1(2^[]), k1_relat_1(2^[])))), r1_tarski(2^[], k2_zfmisc_1(k1_relat_1(2^[]), k1_relat_1(2^[])))]   (6)  substitution:[[_G1143, _G1190], [2^[], k2_zfmisc_1(k1_relat_1(2^[]), k1_relat_1(2^[]))]]
+1.1.1.1  [-r1_tarski(2^[], k2_zfmisc_1(k1_relat_1(2^[]), k1_relat_1(2^[]))), v1_relat_1(2^[])]   (4)  substitution:[[_G912], [2^[]]]
+1.1.1.1.1  [-v1_relat_1(2^[])]   (1)  
+1.1.2  [-r1_tarski(k1_relat_1(2^[]), 1^[])]   (2)  
+1.1.3  [-r1_tarski(k1_relat_1(2^[]), 1^[])]   (2)  
+------------------------------------------------------
+End of proof for t18_pre_poly

@@ -1,0 +1,66 @@
+
+t11_prepower is a Theorem
+Start of proof for t11_prepower
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xreal_0(1^[])]
+ (2)  [-v7_ordinal1(2^[])]
+ (3)  [-r1_xxreal_0(np__1, 1^[])]
+ (4)  [r1_xxreal_0(np__1, k1_newton(1^[], 2^[]))]
+ (5)  [m1_subset_1(_G8712, k1_numbers), -v1_xreal_0(_G8712)]
+ (6)  [- (k2_newton(_G8869, _G8925)=k1_newton(_G8869, _G8925)), m1_subset_1(_G8869, k1_numbers), v7_ordinal1(_G8925)]
+ (7)  [- (k6_numbers=k1_xboole_0)]
+ (8)  [r1_xxreal_0(np__1, np__0)]
+ (9)  [-v1_xboole_0(np__0)]
+ (10)  [-v2_xxreal_0(np__1)]
+ (11)  [-m2_subset_1(np__1, k1_numbers, k5_numbers)]
+ (12)  [-m1_subset_1(np__1, k5_numbers)]
+ (13)  [-m1_subset_1(np__1, k1_numbers)]
+ (14)  [v7_ordinal1(_G9733), - (k2_newton(np__1, _G9733)=np__1)]
+ (15)  [v1_xboole_0(_G9932), - (_G9932=k1_xboole_0)]
+ (16)  [v1_xreal_0(_G10080), v1_xreal_0(_G10189), v7_ordinal1(_G10294), r1_xxreal_0(_G10080, _G10189), -r1_xxreal_0(_G10080, k6_numbers), -r1_xxreal_0(k1_newton(_G10080, _G10294), k1_newton(_G10189, _G10294))]
+ (17)  [- (k2_newton(_G7485, _G7620)=k2_newton(_G7552, _G7689)), _G7485=_G7552, _G7620=_G7689]
+ (18)  [- (k1_newton(_G8073, _G8208)=k1_newton(_G8140, _G8277)), _G8073=_G8140, _G8208=_G8277]
+ (19)  [- (_G3231=_G3231)]
+ (20)  [_G3330=_G3375, - (_G3375=_G3330)]
+ (21)  [- (_G3563=_G3676), _G3563=_G3619, _G3619=_G3676]
+ (22)  [-v2_xxreal_0(_G4062), _G4013=_G4062, v2_xxreal_0(_G4013)]
+ (23)  [-m2_subset_1(_G4376, _G4549, _G4726), m2_subset_1(_G4291, _G4462, _G4637), _G4291=_G4376, _G4462=_G4549, _G4637=_G4726]
+ (24)  [-m1_subset_1(_G5386, _G5523), m1_subset_1(_G5319, _G5454), _G5319=_G5386, _G5454=_G5523]
+ (25)  [-v1_xboole_0(_G5965), _G5916=_G5965, v1_xboole_0(_G5916)]
+ (26)  [-v1_xreal_0(_G6243), _G6194=_G6243, v1_xreal_0(_G6194)]
+ (27)  [-v7_ordinal1(_G6521), _G6472=_G6521, v7_ordinal1(_G6472)]
+ (28)  [-r1_xxreal_0(_G6808, _G6945), r1_xxreal_0(_G6741, _G6876), _G6741=_G6808, _G6876=_G6945]
+
+Connection Proof:
+-----------------
+1  [r1_xxreal_0(np__1, np__0)]   (8)  
+1.1  [-r1_xxreal_0(np__1, np__0), r1_xxreal_0(np__1, k6_numbers), np__1=np__1, k6_numbers=np__0]   (28)  substitution:[[_G6808, _G6945, _G6741, _G6876], [np__1, np__0, np__1, k6_numbers]]
+1.1.1  [-r1_xxreal_0(np__1, k6_numbers), v1_xreal_0(np__1), v1_xreal_0(1^[]), v7_ordinal1(2^[]), r1_xxreal_0(np__1, 1^[]), -r1_xxreal_0(k1_newton(np__1, 2^[]), k1_newton(1^[], 2^[]))]   (16)  substitution:[[_G10080, _G10189, _G10294], [np__1, 1^[], 2^[]]]
+1.1.1.1  [-v1_xreal_0(np__1), m1_subset_1(np__1, k1_numbers)]   (5)  substitution:[[_G8712], [np__1]]
+1.1.1.1.1  [-m1_subset_1(np__1, k1_numbers)]   (13)  
+1.1.1.2  [-v1_xreal_0(1^[])]   (1)  
+1.1.1.3  [-v7_ordinal1(2^[])]   (2)  
+1.1.1.4  [-r1_xxreal_0(np__1, 1^[])]   (3)  
+1.1.1.5  [r1_xxreal_0(k1_newton(np__1, 2^[]), k1_newton(1^[], 2^[])), -r1_xxreal_0(k2_newton(np__1, 2^[]), k1_newton(1^[], 2^[])), k1_newton(np__1, 2^[])=k2_newton(np__1, 2^[]), k1_newton(1^[], 2^[])=k1_newton(1^[], 2^[])]   (28)  substitution:[[_G6741, _G6876, _G6808, _G6945], [k1_newton(np__1, 2^[]), k1_newton(1^[], 2^[]), k2_newton(np__1, 2^[]), k1_newton(1^[], 2^[])]]
+1.1.1.5.1  [r1_xxreal_0(k2_newton(np__1, 2^[]), k1_newton(1^[], 2^[])), -r1_xxreal_0(np__1, k1_newton(1^[], 2^[])), k2_newton(np__1, 2^[])=np__1, k1_newton(1^[], 2^[])=k1_newton(1^[], 2^[])]   (28)  substitution:[[_G6741, _G6876, _G6808, _G6945], [k2_newton(np__1, 2^[]), k1_newton(1^[], 2^[]), np__1, k1_newton(1^[], 2^[])]]
+1.1.1.5.1.1  [r1_xxreal_0(np__1, k1_newton(1^[], 2^[]))]   (4)  
+1.1.1.5.1.2  [- (k2_newton(np__1, 2^[])=np__1), v7_ordinal1(2^[])]   (14)  substitution:[[_G9733], [2^[]]]
+1.1.1.5.1.2.1  [-v7_ordinal1(2^[])]   (2)  
+1.1.1.5.1.3  [- (k1_newton(1^[], 2^[])=k1_newton(1^[], 2^[]))]   (19)  substitution:[[_G3231], [k1_newton(1^[], 2^[])]]
+1.1.1.5.2  [- (k1_newton(np__1, 2^[])=k2_newton(np__1, 2^[])), k2_newton(np__1, 2^[])=k1_newton(np__1, 2^[])]   (20)  substitution:[[_G3375, _G3330], [k1_newton(np__1, 2^[]), k2_newton(np__1, 2^[])]]
+1.1.1.5.2.1  [- (k2_newton(np__1, 2^[])=k1_newton(np__1, 2^[])), m1_subset_1(np__1, k1_numbers), v7_ordinal1(2^[])]   (6)  substitution:[[_G8869, _G8925], [np__1, 2^[]]]
+1.1.1.5.2.1.1  [-m1_subset_1(np__1, k1_numbers)]   (13)  
+1.1.1.5.2.1.2  [-v7_ordinal1(2^[])]   (2)  
+1.1.1.5.3  [- (k1_newton(1^[], 2^[])=k1_newton(1^[], 2^[])), 1^[]=1^[], 2^[]=2^[]]   (18)  substitution:[[_G8073, _G8208, _G8140, _G8277], [1^[], 2^[], 1^[], 2^[]]]
+1.1.1.5.3.1  [- (1^[]=1^[])]   (19)  substitution:[[_G3231], [1^[]]]
+1.1.1.5.3.2  [- (2^[]=2^[])]   (19)  substitution:[[_G3231], [2^[]]]
+1.1.2  [- (np__1=np__1)]   (19)  substitution:[[_G3231], [np__1]]
+1.1.3  [- (k6_numbers=np__0), np__0=k6_numbers]   (20)  substitution:[[_G3375, _G3330], [k6_numbers, np__0]]
+1.1.3.1  [- (np__0=k6_numbers), np__0=k1_xboole_0, k1_xboole_0=k6_numbers]   (21)  substitution:[[_G3563, _G3676, _G3619], [np__0, k6_numbers, k1_xboole_0]]
+1.1.3.1.1  [- (np__0=k1_xboole_0), v1_xboole_0(np__0)]   (15)  substitution:[[_G9932], [np__0]]
+1.1.3.1.1.1  [-v1_xboole_0(np__0)]   (9)  
+1.1.3.1.2  [- (k1_xboole_0=k6_numbers), k6_numbers=k1_xboole_0]   (20)  substitution:[[_G3375, _G3330], [k1_xboole_0, k6_numbers]]
+1.1.3.1.2.1  [- (k6_numbers=k1_xboole_0)]   (7)  
+------------------------------------------------------
+End of proof for t11_prepower

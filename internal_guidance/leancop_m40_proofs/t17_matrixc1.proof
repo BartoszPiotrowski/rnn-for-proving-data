@@ -1,0 +1,42 @@
+
+t17_matrixc1 is a Theorem
+Start of proof for t17_matrixc1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], k2_numbers)]
+ (2)  [-v1_matrix_1(2^[])]
+ (3)  [-m2_finseq_1(2^[], k3_finseq_2(k2_numbers))]
+ (4)  [k1_matrixc1(k7_matrixc1(2^[], 1^[]))=k7_matrix_5(k15_complex1(1^[]), k1_matrixc1(2^[]))]
+ (5)  [m1_subset_1(_G7326, k2_numbers), -v1_xcmplx_0(_G7326)]
+ (6)  [m2_finseq_1(_G7483, k3_finseq_2(k2_numbers)), v1_matrix_1(_G7483), v1_xcmplx_0(_G7668), - (k7_matrixc1(_G7483, _G7668)=k7_matrix_5(_G7668, _G7483))]
+ (7)  [v1_xcmplx_0(_G7935), - (k1_matrixc1(k7_matrix_5(_G7935, _G8034))=k7_matrix_5(k15_complex1(_G7935), k1_matrixc1(_G8034))), v1_matrix_1(_G8034), m2_finseq_1(_G8034, k3_finseq_2(k2_numbers))]
+ (8)  [_G5202=_G5251, - (k3_finseq_2(_G5202)=k3_finseq_2(_G5251))]
+ (9)  [- (k7_matrixc1(_G5480, _G5615)=k7_matrixc1(_G5547, _G5684)), _G5480=_G5547, _G5615=_G5684]
+ (10)  [- (k7_matrix_5(_G6077, _G6212)=k7_matrix_5(_G6144, _G6281)), _G6077=_G6144, _G6212=_G6281]
+ (11)  [_G6674=_G6723, - (k15_complex1(_G6674)=k15_complex1(_G6723))]
+ (12)  [_G6943=_G6992, - (k1_matrixc1(_G6943)=k1_matrixc1(_G6992))]
+ (13)  [- (_G2595=_G2595)]
+ (14)  [_G2694=_G2739, - (_G2739=_G2694)]
+ (15)  [- (_G2927=_G3040), _G2927=_G2983, _G2983=_G3040]
+ (16)  [-v1_xcmplx_0(_G3426), _G3377=_G3426, v1_xcmplx_0(_G3377)]
+ (17)  [-m1_subset_1(_G3722, _G3859), m1_subset_1(_G3655, _G3790), _G3655=_G3722, _G3790=_G3859]
+ (18)  [-v1_matrix_1(_G4301), _G4252=_G4301, v1_matrix_1(_G4252)]
+ (19)  [-m2_finseq_1(_G4588, _G4725), m2_finseq_1(_G4521, _G4656), _G4521=_G4588, _G4656=_G4725]
+
+Connection Proof:
+-----------------
+1  [k1_matrixc1(k7_matrixc1(2^[], 1^[]))=k7_matrix_5(k15_complex1(1^[]), k1_matrixc1(2^[]))]   (4)  
+1.1  [- (k1_matrixc1(k7_matrixc1(2^[], 1^[]))=k7_matrix_5(k15_complex1(1^[]), k1_matrixc1(2^[]))), k1_matrixc1(k7_matrixc1(2^[], 1^[]))=k1_matrixc1(k7_matrix_5(1^[], 2^[])), k1_matrixc1(k7_matrix_5(1^[], 2^[]))=k7_matrix_5(k15_complex1(1^[]), k1_matrixc1(2^[]))]   (15)  substitution:[[_G2927, _G3040, _G2983], [k1_matrixc1(k7_matrixc1(2^[], 1^[])), k7_matrix_5(k15_complex1(1^[]), k1_matrixc1(2^[])), k1_matrixc1(k7_matrix_5(1^[], 2^[]))]]
+1.1.1  [- (k1_matrixc1(k7_matrixc1(2^[], 1^[]))=k1_matrixc1(k7_matrix_5(1^[], 2^[]))), k7_matrixc1(2^[], 1^[])=k7_matrix_5(1^[], 2^[])]   (12)  substitution:[[_G6943, _G6992], [k7_matrixc1(2^[], 1^[]), k7_matrix_5(1^[], 2^[])]]
+1.1.1.1  [- (k7_matrixc1(2^[], 1^[])=k7_matrix_5(1^[], 2^[])), m2_finseq_1(2^[], k3_finseq_2(k2_numbers)), v1_matrix_1(2^[]), v1_xcmplx_0(1^[])]   (6)  substitution:[[_G7483, _G7668], [2^[], 1^[]]]
+1.1.1.1.1  [-m2_finseq_1(2^[], k3_finseq_2(k2_numbers))]   (3)  
+1.1.1.1.2  [-v1_matrix_1(2^[])]   (2)  
+1.1.1.1.3  [-v1_xcmplx_0(1^[]), m1_subset_1(1^[], k2_numbers)]   (5)  substitution:[[_G7326], [1^[]]]
+1.1.1.1.3.1  [-m1_subset_1(1^[], k2_numbers)]   (1)  
+1.1.2  [- (k1_matrixc1(k7_matrix_5(1^[], 2^[]))=k7_matrix_5(k15_complex1(1^[]), k1_matrixc1(2^[]))), v1_xcmplx_0(1^[]), v1_matrix_1(2^[]), m2_finseq_1(2^[], k3_finseq_2(k2_numbers))]   (7)  substitution:[[_G7935, _G8034], [1^[], 2^[]]]
+1.1.2.1  [-v1_xcmplx_0(1^[]), m1_subset_1(1^[], k2_numbers)]   (5)  substitution:[[_G7326], [1^[]]]
+1.1.2.1.1  [-m1_subset_1(1^[], k2_numbers)]   (1)  
+1.1.2.2  [-v1_matrix_1(2^[])]   (2)  
+1.1.2.3  [-m2_finseq_1(2^[], k3_finseq_2(k2_numbers))]   (3)  
+------------------------------------------------------
+End of proof for t17_matrixc1

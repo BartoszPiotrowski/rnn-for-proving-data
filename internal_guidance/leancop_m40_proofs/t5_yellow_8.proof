@@ -1,0 +1,33 @@
+
+t5_yellow_8 is a Theorem
+Start of proof for t5_yellow_8
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-5^[], r2_hidden(k3_subset_1(u1_struct_0(1^[]), 3^[]), k7_setfam_1(u1_struct_0(1^[]), 2^[]))]
+ (2)  [-5^[], -r2_hidden(3^[], 2^[])]
+ (3)  [-4^[], r2_hidden(3^[], 2^[])]
+ (4)  [-4^[], -r2_hidden(k3_subset_1(u1_struct_0(1^[]), 3^[]), k7_setfam_1(u1_struct_0(1^[]), 2^[]))]
+ (5)  [-l1_struct_0(1^[])]
+ (6)  [-m1_subset_1(2^[], k1_zfmisc_1(k1_zfmisc_1(u1_struct_0(1^[]))))]
+ (7)  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(1^[])))]
+ (8)  [4^[], 5^[]]
+ (9)  [m1_subset_1(_G852, k1_zfmisc_1(k1_zfmisc_1(_G778))), m1_subset_1(_G1012, k1_zfmisc_1(_G778)), r2_hidden(k3_subset_1(_G778, _G1012), k7_setfam_1(_G778, _G852)), -r2_hidden(_G1012, _G852)]
+ (10)  [m1_subset_1(_G852, k1_zfmisc_1(k1_zfmisc_1(_G778))), m1_subset_1(_G1012, k1_zfmisc_1(_G778)), -r2_hidden(k3_subset_1(_G778, _G1012), k7_setfam_1(_G778, _G852)), r2_hidden(_G1012, _G852)]
+
+Connection Proof:
+-----------------
+1  [4^[], 5^[]]   (8)  
+1.1  [-4^[], r2_hidden(3^[], 2^[])]   (3)  
+1.1.1  [-r2_hidden(3^[], 2^[]), m1_subset_1(2^[], k1_zfmisc_1(k1_zfmisc_1(u1_struct_0(1^[])))), m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(1^[]))), r2_hidden(k3_subset_1(u1_struct_0(1^[]), 3^[]), k7_setfam_1(u1_struct_0(1^[]), 2^[]))]   (9)  substitution:[[_G1012, _G852, _G778], [3^[], 2^[], u1_struct_0(1^[])]]
+1.1.1.1  [-m1_subset_1(2^[], k1_zfmisc_1(k1_zfmisc_1(u1_struct_0(1^[]))))]   (6)  
+1.1.1.2  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (7)  
+1.1.1.3  [-r2_hidden(k3_subset_1(u1_struct_0(1^[]), 3^[]), k7_setfam_1(u1_struct_0(1^[]), 2^[])), -4^[]]   (4)  
+1.1.1.3.1  [4^[]]   (reduction:1)  
+1.2  [-5^[], r2_hidden(k3_subset_1(u1_struct_0(1^[]), 3^[]), k7_setfam_1(u1_struct_0(1^[]), 2^[]))]   (1)  
+1.2.1  [-r2_hidden(k3_subset_1(u1_struct_0(1^[]), 3^[]), k7_setfam_1(u1_struct_0(1^[]), 2^[])), m1_subset_1(2^[], k1_zfmisc_1(k1_zfmisc_1(u1_struct_0(1^[])))), m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(1^[]))), r2_hidden(3^[], 2^[])]   (10)  substitution:[[_G778, _G1012, _G852], [u1_struct_0(1^[]), 3^[], 2^[]]]
+1.2.1.1  [-m1_subset_1(2^[], k1_zfmisc_1(k1_zfmisc_1(u1_struct_0(1^[]))))]   (6)  
+1.2.1.2  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (7)  
+1.2.1.3  [-r2_hidden(3^[], 2^[]), -5^[]]   (2)  
+1.2.1.3.1  [5^[]]   (reduction:1)  
+------------------------------------------------------
+End of proof for t5_yellow_8

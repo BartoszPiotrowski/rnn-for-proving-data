@@ -1,0 +1,61 @@
+
+t105_sheffer2 is a Theorem
+Start of proof for t105_sheffer2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(1^[])]
+ (2)  [-v10_sheffer1(1^[])]
+ (3)  [-v11_sheffer1(1^[])]
+ (4)  [-v12_sheffer1(1^[])]
+ (5)  [-l1_sheffer1(1^[])]
+ (6)  [-m1_subset_1(2^[], u1_struct_0(1^[]))]
+ (7)  [-m1_subset_1(3^[], u1_struct_0(1^[]))]
+ (8)  [k5_sheffer1(1^[], k5_sheffer1(1^[], 3^[], 2^[]), k5_sheffer1(1^[], 2^[], k5_sheffer1(1^[], 3^[], 3^[])))=2^[]]
+ (9)  [-m1_subset_1(k5_sheffer1(_G7976, _G8054, _G8133), u1_struct_0(_G7976)), l1_sheffer1(_G7976), -v2_struct_0(_G7976), m1_subset_1(_G8054, u1_struct_0(_G7976)), m1_subset_1(_G8133, u1_struct_0(_G7976))]
+ (10)  [- (k5_sheffer1(_G8694, _G9187, _G9047)=k5_sheffer1(_G8694, _G9047, _G9187)), m1_subset_1(_G9187, u1_struct_0(_G8694)), m1_subset_1(_G9047, u1_struct_0(_G8694)), -v2_struct_0(_G8694), v10_sheffer1(_G8694), v11_sheffer1(_G8694), v12_sheffer1(_G8694), l1_sheffer1(_G8694)]
+ (11)  [- (_G9980=k5_sheffer1(_G9619, k5_sheffer1(_G9619, _G10128, _G9980), k5_sheffer1(_G9619, k5_sheffer1(_G9619, _G10128, _G10128), _G9980))), m1_subset_1(_G10128, u1_struct_0(_G9619)), m1_subset_1(_G9980, u1_struct_0(_G9619)), -v2_struct_0(_G9619), v10_sheffer1(_G9619), v11_sheffer1(_G9619), v12_sheffer1(_G9619), l1_sheffer1(_G9619)]
+ (12)  [_G6637=_G6686, - (u1_struct_0(_G6637)=u1_struct_0(_G6686))]
+ (13)  [- (k5_sheffer1(_G6906, _G7077, _G7252)=k5_sheffer1(_G6991, _G7164, _G7341)), _G6906=_G6991, _G7077=_G7164, _G7252=_G7341]
+ (14)  [- (_G3751=_G3751)]
+ (15)  [_G3850=_G3895, - (_G3895=_G3850)]
+ (16)  [- (_G4083=_G4196), _G4083=_G4139, _G4139=_G4196]
+ (17)  [-v2_struct_0(_G4582), _G4533=_G4582, v2_struct_0(_G4533)]
+ (18)  [-v10_sheffer1(_G4860), _G4811=_G4860, v10_sheffer1(_G4811)]
+ (19)  [-v11_sheffer1(_G5138), _G5089=_G5138, v11_sheffer1(_G5089)]
+ (20)  [-v12_sheffer1(_G5416), _G5367=_G5416, v12_sheffer1(_G5367)]
+ (21)  [-l1_sheffer1(_G5694), _G5645=_G5694, l1_sheffer1(_G5645)]
+ (22)  [-m1_subset_1(_G5981, _G6118), m1_subset_1(_G5914, _G6049), _G5914=_G5981, _G6049=_G6118]
+
+Connection Proof:
+-----------------
+1  [v2_struct_0(1^[])]   (1)  
+1.1  [-v2_struct_0(1^[]), - (k5_sheffer1(1^[], k5_sheffer1(1^[], 3^[], 3^[]), 2^[])=k5_sheffer1(1^[], 2^[], k5_sheffer1(1^[], 3^[], 3^[]))), m1_subset_1(k5_sheffer1(1^[], 3^[], 3^[]), u1_struct_0(1^[])), m1_subset_1(2^[], u1_struct_0(1^[])), v10_sheffer1(1^[]), v11_sheffer1(1^[]), v12_sheffer1(1^[]), l1_sheffer1(1^[])]   (10)  substitution:[[_G8694, _G9187, _G9047], [1^[], k5_sheffer1(1^[], 3^[], 3^[]), 2^[]]]
+1.1.1  [k5_sheffer1(1^[], k5_sheffer1(1^[], 3^[], 3^[]), 2^[])=k5_sheffer1(1^[], 2^[], k5_sheffer1(1^[], 3^[], 3^[])), - (k5_sheffer1(1^[], k5_sheffer1(1^[], 3^[], 2^[]), k5_sheffer1(1^[], k5_sheffer1(1^[], 3^[], 3^[]), 2^[]))=k5_sheffer1(1^[], k5_sheffer1(1^[], 3^[], 2^[]), k5_sheffer1(1^[], 2^[], k5_sheffer1(1^[], 3^[], 3^[])))), 1^[]=1^[], k5_sheffer1(1^[], 3^[], 2^[])=k5_sheffer1(1^[], 3^[], 2^[])]   (13)  substitution:[[_G7252, _G7341, _G6906, _G7077, _G6991, _G7164], [k5_sheffer1(1^[], k5_sheffer1(1^[], 3^[], 3^[]), 2^[]), k5_sheffer1(1^[], 2^[], k5_sheffer1(1^[], 3^[], 3^[])), 1^[], k5_sheffer1(1^[], 3^[], 2^[]), 1^[], k5_sheffer1(1^[], 3^[], 2^[])]]
+1.1.1.1  [k5_sheffer1(1^[], k5_sheffer1(1^[], 3^[], 2^[]), k5_sheffer1(1^[], k5_sheffer1(1^[], 3^[], 3^[]), 2^[]))=k5_sheffer1(1^[], k5_sheffer1(1^[], 3^[], 2^[]), k5_sheffer1(1^[], 2^[], k5_sheffer1(1^[], 3^[], 3^[]))), - (2^[]=k5_sheffer1(1^[], k5_sheffer1(1^[], 3^[], 2^[]), k5_sheffer1(1^[], 2^[], k5_sheffer1(1^[], 3^[], 3^[])))), 2^[]=k5_sheffer1(1^[], k5_sheffer1(1^[], 3^[], 2^[]), k5_sheffer1(1^[], k5_sheffer1(1^[], 3^[], 3^[]), 2^[]))]   (16)  substitution:[[_G4139, _G4196, _G4083], [k5_sheffer1(1^[], k5_sheffer1(1^[], 3^[], 2^[]), k5_sheffer1(1^[], k5_sheffer1(1^[], 3^[], 3^[]), 2^[])), k5_sheffer1(1^[], k5_sheffer1(1^[], 3^[], 2^[]), k5_sheffer1(1^[], 2^[], k5_sheffer1(1^[], 3^[], 3^[]))), 2^[]]]
+1.1.1.1.1  [2^[]=k5_sheffer1(1^[], k5_sheffer1(1^[], 3^[], 2^[]), k5_sheffer1(1^[], 2^[], k5_sheffer1(1^[], 3^[], 3^[]))), - (k5_sheffer1(1^[], k5_sheffer1(1^[], 3^[], 2^[]), k5_sheffer1(1^[], 2^[], k5_sheffer1(1^[], 3^[], 3^[])))=2^[])]   (15)  substitution:[[_G3850, _G3895], [2^[], k5_sheffer1(1^[], k5_sheffer1(1^[], 3^[], 2^[]), k5_sheffer1(1^[], 2^[], k5_sheffer1(1^[], 3^[], 3^[])))]]
+1.1.1.1.1.1  [k5_sheffer1(1^[], k5_sheffer1(1^[], 3^[], 2^[]), k5_sheffer1(1^[], 2^[], k5_sheffer1(1^[], 3^[], 3^[])))=2^[]]   (8)  
+1.1.1.1.2  [- (2^[]=k5_sheffer1(1^[], k5_sheffer1(1^[], 3^[], 2^[]), k5_sheffer1(1^[], k5_sheffer1(1^[], 3^[], 3^[]), 2^[]))), m1_subset_1(3^[], u1_struct_0(1^[])), m1_subset_1(2^[], u1_struct_0(1^[])), -v2_struct_0(1^[]), v10_sheffer1(1^[]), v11_sheffer1(1^[]), v12_sheffer1(1^[]), l1_sheffer1(1^[])]   (11)  substitution:[[_G9980, _G9619, _G10128], [2^[], 1^[], 3^[]]]
+1.1.1.1.2.1  [-m1_subset_1(3^[], u1_struct_0(1^[]))]   (7)  
+1.1.1.1.2.2  [-m1_subset_1(2^[], u1_struct_0(1^[]))]   (6)  
+1.1.1.1.2.3  [v2_struct_0(1^[])]   (1)  
+1.1.1.1.2.4  [-v10_sheffer1(1^[])]   (2)  
+1.1.1.1.2.5  [-v11_sheffer1(1^[])]   (3)  
+1.1.1.1.2.6  [-v12_sheffer1(1^[])]   (4)  
+1.1.1.1.2.7  [-l1_sheffer1(1^[])]   (5)  
+1.1.1.2  [- (1^[]=1^[])]   (14)  substitution:[[_G3751], [1^[]]]
+1.1.1.3  [- (k5_sheffer1(1^[], 3^[], 2^[])=k5_sheffer1(1^[], 3^[], 2^[])), 1^[]=1^[], 3^[]=3^[], 2^[]=2^[]]   (13)  substitution:[[_G6906, _G7077, _G7252, _G6991, _G7164, _G7341], [1^[], 3^[], 2^[], 1^[], 3^[], 2^[]]]
+1.1.1.3.1  [- (1^[]=1^[])]   (14)  substitution:[[_G3751], [1^[]]]
+1.1.1.3.2  [- (3^[]=3^[])]   (14)  substitution:[[_G3751], [3^[]]]
+1.1.1.3.3  [- (2^[]=2^[])]   (14)  substitution:[[_G3751], [2^[]]]
+1.1.2  [-m1_subset_1(k5_sheffer1(1^[], 3^[], 3^[]), u1_struct_0(1^[])), l1_sheffer1(1^[]), -v2_struct_0(1^[]), m1_subset_1(3^[], u1_struct_0(1^[])), m1_subset_1(3^[], u1_struct_0(1^[]))]   (9)  substitution:[[_G7976, _G8054, _G8133], [1^[], 3^[], 3^[]]]
+1.1.2.1  [-l1_sheffer1(1^[])]   (5)  
+1.1.2.2  [v2_struct_0(1^[])]   (1)  
+1.1.2.3  [-m1_subset_1(3^[], u1_struct_0(1^[]))]   (7)  
+1.1.2.4  [-m1_subset_1(3^[], u1_struct_0(1^[]))]   (7)  
+1.1.3  [-m1_subset_1(2^[], u1_struct_0(1^[]))]   (6)  
+1.1.4  [-v10_sheffer1(1^[])]   (2)  
+1.1.5  [-v11_sheffer1(1^[])]   (3)  
+1.1.6  [-v12_sheffer1(1^[])]   (4)  
+1.1.7  [-l1_sheffer1(1^[])]   (5)  
+------------------------------------------------------
+End of proof for t105_sheffer2

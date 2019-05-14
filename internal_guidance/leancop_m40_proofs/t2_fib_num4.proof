@@ -1,0 +1,48 @@
+
+t2_fib_num4 is a Theorem
+Start of proof for t2_fib_num4
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xreal_0(1^[])]
+ (2)  [-v1_int_1(2^[])]
+ (3)  [-v1_int_1(3^[])]
+ (4)  [1^[]=k6_numbers]
+ (5)  [k3_power(1^[], k2_xcmplx_0(2^[], 3^[]))=k3_xcmplx_0(k3_power(1^[], 2^[]), k3_power(1^[], 3^[]))]
+ (6)  [-v1_int_1(k2_xcmplx_0(_G6444, _G6495)), v1_int_1(_G6444), v1_int_1(_G6495)]
+ (7)  [v1_xreal_0(_G6740), v1_int_1(_G6827), - (k3_power(_G6740, _G6827)=k4_prepower(_G6740, _G6827))]
+ (8)  [v1_xreal_0(_G7094), v1_int_1(_G7208), v1_int_1(_G7318), - (_G7094=k6_numbers), - (k4_prepower(_G7094, k2_xcmplx_0(_G7208, _G7318))=k3_xcmplx_0(k4_prepower(_G7094, _G7208), k4_prepower(_G7094, _G7318)))]
+ (9)  [- (_G2610=_G2610)]
+ (10)  [_G2709=_G2754, - (_G2754=_G2709)]
+ (11)  [- (_G2942=_G3055), _G2942=_G2998, _G2998=_G3055]
+ (12)  [-v1_xreal_0(_G3441), _G3392=_G3441, v1_xreal_0(_G3392)]
+ (13)  [-v1_int_1(_G3710), _G3661=_G3710, v1_int_1(_G3661)]
+ (14)  [- (k4_prepower(_G3981, _G4116)=k4_prepower(_G4048, _G4185)), _G3981=_G4048, _G4116=_G4185]
+ (15)  [- (k2_xcmplx_0(_G4578, _G4713)=k2_xcmplx_0(_G4645, _G4782)), _G4578=_G4645, _G4713=_G4782]
+ (16)  [- (k3_xcmplx_0(_G5175, _G5310)=k3_xcmplx_0(_G5242, _G5379)), _G5175=_G5242, _G5310=_G5379]
+ (17)  [- (k3_power(_G5763, _G5898)=k3_power(_G5830, _G5967)), _G5763=_G5830, _G5898=_G5967]
+
+Connection Proof:
+-----------------
+1  [k3_power(1^[], k2_xcmplx_0(2^[], 3^[]))=k3_xcmplx_0(k3_power(1^[], 2^[]), k3_power(1^[], 3^[]))]   (5)  
+1.1  [- (k3_power(1^[], k2_xcmplx_0(2^[], 3^[]))=k3_xcmplx_0(k3_power(1^[], 2^[]), k3_power(1^[], 3^[]))), k3_power(1^[], k2_xcmplx_0(2^[], 3^[]))=k4_prepower(1^[], k2_xcmplx_0(2^[], 3^[])), k4_prepower(1^[], k2_xcmplx_0(2^[], 3^[]))=k3_xcmplx_0(k3_power(1^[], 2^[]), k3_power(1^[], 3^[]))]   (11)  substitution:[[_G2942, _G3055, _G2998], [k3_power(1^[], k2_xcmplx_0(2^[], 3^[])), k3_xcmplx_0(k3_power(1^[], 2^[]), k3_power(1^[], 3^[])), k4_prepower(1^[], k2_xcmplx_0(2^[], 3^[]))]]
+1.1.1  [- (k3_power(1^[], k2_xcmplx_0(2^[], 3^[]))=k4_prepower(1^[], k2_xcmplx_0(2^[], 3^[]))), v1_xreal_0(1^[]), v1_int_1(k2_xcmplx_0(2^[], 3^[]))]   (7)  substitution:[[_G6740, _G6827], [1^[], k2_xcmplx_0(2^[], 3^[])]]
+1.1.1.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.1.2  [-v1_int_1(k2_xcmplx_0(2^[], 3^[])), v1_int_1(2^[]), v1_int_1(3^[])]   (6)  substitution:[[_G6444, _G6495], [2^[], 3^[]]]
+1.1.1.2.1  [-v1_int_1(2^[])]   (2)  
+1.1.1.2.2  [-v1_int_1(3^[])]   (3)  
+1.1.2  [- (k4_prepower(1^[], k2_xcmplx_0(2^[], 3^[]))=k3_xcmplx_0(k3_power(1^[], 2^[]), k3_power(1^[], 3^[]))), k4_prepower(1^[], k2_xcmplx_0(2^[], 3^[]))=k3_xcmplx_0(k4_prepower(1^[], 2^[]), k4_prepower(1^[], 3^[])), k3_xcmplx_0(k4_prepower(1^[], 2^[]), k4_prepower(1^[], 3^[]))=k3_xcmplx_0(k3_power(1^[], 2^[]), k3_power(1^[], 3^[]))]   (11)  substitution:[[_G2942, _G3055, _G2998], [k4_prepower(1^[], k2_xcmplx_0(2^[], 3^[])), k3_xcmplx_0(k3_power(1^[], 2^[]), k3_power(1^[], 3^[])), k3_xcmplx_0(k4_prepower(1^[], 2^[]), k4_prepower(1^[], 3^[]))]]
+1.1.2.1  [- (k4_prepower(1^[], k2_xcmplx_0(2^[], 3^[]))=k3_xcmplx_0(k4_prepower(1^[], 2^[]), k4_prepower(1^[], 3^[]))), v1_xreal_0(1^[]), v1_int_1(2^[]), v1_int_1(3^[]), - (1^[]=k6_numbers)]   (8)  substitution:[[_G7094, _G7208, _G7318], [1^[], 2^[], 3^[]]]
+1.1.2.1.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.2.1.2  [-v1_int_1(2^[])]   (2)  
+1.1.2.1.3  [-v1_int_1(3^[])]   (3)  
+1.1.2.1.4  [1^[]=k6_numbers]   (4)  
+1.1.2.2  [- (k3_xcmplx_0(k4_prepower(1^[], 2^[]), k4_prepower(1^[], 3^[]))=k3_xcmplx_0(k3_power(1^[], 2^[]), k3_power(1^[], 3^[]))), k3_xcmplx_0(k3_power(1^[], 2^[]), k3_power(1^[], 3^[]))=k3_xcmplx_0(k4_prepower(1^[], 2^[]), k4_prepower(1^[], 3^[]))]   (10)  substitution:[[_G2754, _G2709], [k3_xcmplx_0(k4_prepower(1^[], 2^[]), k4_prepower(1^[], 3^[])), k3_xcmplx_0(k3_power(1^[], 2^[]), k3_power(1^[], 3^[]))]]
+1.1.2.2.1  [- (k3_xcmplx_0(k3_power(1^[], 2^[]), k3_power(1^[], 3^[]))=k3_xcmplx_0(k4_prepower(1^[], 2^[]), k4_prepower(1^[], 3^[]))), k3_power(1^[], 2^[])=k4_prepower(1^[], 2^[]), k3_power(1^[], 3^[])=k4_prepower(1^[], 3^[])]   (16)  substitution:[[_G5175, _G5310, _G5242, _G5379], [k3_power(1^[], 2^[]), k3_power(1^[], 3^[]), k4_prepower(1^[], 2^[]), k4_prepower(1^[], 3^[])]]
+1.1.2.2.1.1  [- (k3_power(1^[], 2^[])=k4_prepower(1^[], 2^[])), v1_xreal_0(1^[]), v1_int_1(2^[])]   (7)  substitution:[[_G6740, _G6827], [1^[], 2^[]]]
+1.1.2.2.1.1.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.2.2.1.1.2  [-v1_int_1(2^[])]   (2)  
+1.1.2.2.1.2  [- (k3_power(1^[], 3^[])=k4_prepower(1^[], 3^[])), v1_xreal_0(1^[]), v1_int_1(3^[])]   (7)  substitution:[[_G6740, _G6827], [1^[], 3^[]]]
+1.1.2.2.1.2.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.2.2.1.2.2  [-v1_int_1(3^[])]   (3)  
+------------------------------------------------------
+End of proof for t2_fib_num4

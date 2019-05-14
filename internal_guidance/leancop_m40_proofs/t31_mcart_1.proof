@@ -1,0 +1,72 @@
+
+t31_mcart_1 is a Theorem
+Start of proof for t31_mcart_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-5^[], - (1^[]=k1_xboole_0), - (2^[]=k1_xboole_0), - (3^[]=k1_xboole_0)]
+ (2)  [-5^[], k3_zfmisc_1(1^[], 2^[], 3^[])=k1_xboole_0]
+ (3)  [-4^[], - (k3_zfmisc_1(1^[], 2^[], 3^[])=k1_xboole_0)]
+ (4)  [-4^[], 3^[]=k1_xboole_0]
+ (5)  [-4^[], 2^[]=k1_xboole_0]
+ (6)  [-4^[], 1^[]=k1_xboole_0]
+ (7)  [4^[], 5^[]]
+ (8)  [- (k3_zfmisc_1(_G4052, _G4106, _G4161)=k2_zfmisc_1(k2_zfmisc_1(_G4052, _G4106), _G4161))]
+ (9)  [- (k2_zfmisc_1(_G4449, _G4503)=k1_xboole_0), _G4449=k1_xboole_0]
+ (10)  [- (k2_zfmisc_1(_G4449, _G4503)=k1_xboole_0), _G4503=k1_xboole_0]
+ (11)  [k2_zfmisc_1(_G4449, _G4503)=k1_xboole_0, - (_G4449=k1_xboole_0), - (_G4503=k1_xboole_0)]
+ (12)  [- (_G1612=_G1612)]
+ (13)  [_G1711=_G1756, - (_G1756=_G1711)]
+ (14)  [- (_G1944=_G2057), _G1944=_G2000, _G2000=_G2057]
+ (15)  [- (k2_zfmisc_1(_G2394, _G2529)=k2_zfmisc_1(_G2461, _G2598)), _G2394=_G2461, _G2529=_G2598]
+ (16)  [- (k3_zfmisc_1(_G2982, _G3153, _G3328)=k3_zfmisc_1(_G3067, _G3240, _G3417)), _G2982=_G3067, _G3153=_G3240, _G3328=_G3417]
+
+Connection Proof:
+-----------------
+1  [4^[], 5^[]]   (7)  
+1.1  [-4^[], - (k3_zfmisc_1(1^[], 2^[], 3^[])=k1_xboole_0)]   (3)  
+1.1.1  [k3_zfmisc_1(1^[], 2^[], 3^[])=k1_xboole_0, - (k3_zfmisc_1(1^[], 2^[], 3^[])=k1_xboole_0), k1_xboole_0=k1_xboole_0]   (14)  substitution:[[_G1944, _G2000, _G2057], [k3_zfmisc_1(1^[], 2^[], 3^[]), k1_xboole_0, k1_xboole_0]]
+1.1.1.1  [k3_zfmisc_1(1^[], 2^[], 3^[])=k1_xboole_0, - (k2_zfmisc_1(k2_zfmisc_1(1^[], 2^[]), 3^[])=k1_xboole_0), k2_zfmisc_1(k2_zfmisc_1(1^[], 2^[]), 3^[])=k3_zfmisc_1(1^[], 2^[], 3^[])]   (14)  substitution:[[_G2000, _G2057, _G1944], [k3_zfmisc_1(1^[], 2^[], 3^[]), k1_xboole_0, k2_zfmisc_1(k2_zfmisc_1(1^[], 2^[]), 3^[])]]
+1.1.1.1.1  [k2_zfmisc_1(k2_zfmisc_1(1^[], 2^[]), 3^[])=k1_xboole_0, - (k2_zfmisc_1(1^[], 2^[])=k1_xboole_0), - (3^[]=k1_xboole_0)]   (11)  substitution:[[_G4449, _G4503], [k2_zfmisc_1(1^[], 2^[]), 3^[]]]
+1.1.1.1.1.1  [k2_zfmisc_1(1^[], 2^[])=k1_xboole_0, - (1^[]=k1_xboole_0), - (2^[]=k1_xboole_0)]   (11)  substitution:[[_G4449, _G4503], [1^[], 2^[]]]
+1.1.1.1.1.1.1  [1^[]=k1_xboole_0, -4^[]]   (6)  
+1.1.1.1.1.1.1.1  [4^[]]   (reduction:1)  
+1.1.1.1.1.1.2  [2^[]=k1_xboole_0, -4^[]]   (5)  
+1.1.1.1.1.1.2.1  [4^[]]   (reduction:1)  
+1.1.1.1.1.2  [3^[]=k1_xboole_0, -4^[]]   (4)  
+1.1.1.1.1.2.1  [4^[]]   (reduction:1)  
+1.1.1.1.2  [- (k2_zfmisc_1(k2_zfmisc_1(1^[], 2^[]), 3^[])=k3_zfmisc_1(1^[], 2^[], 3^[])), k3_zfmisc_1(1^[], 2^[], 3^[])=k2_zfmisc_1(k2_zfmisc_1(1^[], 2^[]), 3^[])]   (13)  substitution:[[_G1756, _G1711], [k2_zfmisc_1(k2_zfmisc_1(1^[], 2^[]), 3^[]), k3_zfmisc_1(1^[], 2^[], 3^[])]]
+1.1.1.1.2.1  [- (k3_zfmisc_1(1^[], 2^[], 3^[])=k2_zfmisc_1(k2_zfmisc_1(1^[], 2^[]), 3^[]))]   (8)  substitution:[[_G4052, _G4106, _G4161], [1^[], 2^[], 3^[]]]
+1.1.1.2  [- (k1_xboole_0=k1_xboole_0), k2_zfmisc_1(k1_xboole_0, k2_zfmisc_1(k3_zfmisc_1(1^[], 2^[], 3^[]), _G9895))=k1_xboole_0, - (k2_zfmisc_1(k3_zfmisc_1(1^[], 2^[], 3^[]), _G9895)=k1_xboole_0)]   (11)  substitution:[[_G4449, _G4503], [k1_xboole_0, k2_zfmisc_1(k3_zfmisc_1(1^[], 2^[], 3^[]), _G9895)]]
+1.1.1.2.1  [- (k2_zfmisc_1(k1_xboole_0, k2_zfmisc_1(k3_zfmisc_1(1^[], 2^[], 3^[]), _G9895))=k1_xboole_0), k2_zfmisc_1(k3_zfmisc_1(1^[], 2^[], 3^[]), _G9895)=k1_xboole_0]   (10)  substitution:[[_G4449, _G4503], [k1_xboole_0, k2_zfmisc_1(k3_zfmisc_1(1^[], 2^[], 3^[]), _G9895)]]
+1.1.1.2.1.1  [- (k2_zfmisc_1(k3_zfmisc_1(1^[], 2^[], 3^[]), _G9895)=k1_xboole_0), k3_zfmisc_1(1^[], 2^[], 3^[])=k1_xboole_0]   (9)  substitution:[[_G4449, _G4503], [k3_zfmisc_1(1^[], 2^[], 3^[]), _G9895]]
+1.1.1.2.1.1.1  [- (k3_zfmisc_1(1^[], 2^[], 3^[])=k1_xboole_0)]   (reduction:1.1)  
+1.1.1.2.2  [k2_zfmisc_1(k3_zfmisc_1(1^[], 2^[], 3^[]), _G9895)=k1_xboole_0, - (k1_xboole_0=k2_zfmisc_1(k3_zfmisc_1(1^[], 2^[], 3^[]), _G9895))]   (13)  substitution:[[_G1711, _G1756], [k2_zfmisc_1(k3_zfmisc_1(1^[], 2^[], 3^[]), _G9895), k1_xboole_0]]
+1.1.1.2.2.1  [k1_xboole_0=k2_zfmisc_1(k3_zfmisc_1(1^[], 2^[], 3^[]), _G9895), - (k1_xboole_0=k1_xboole_0), k2_zfmisc_1(k3_zfmisc_1(1^[], 2^[], 3^[]), _G9895)=k1_xboole_0]   (14)  substitution:[[_G1944, _G2000, _G2057], [k1_xboole_0, k2_zfmisc_1(k3_zfmisc_1(1^[], 2^[], 3^[]), _G9895), k1_xboole_0]]
+1.1.1.2.2.1.1  [k1_xboole_0=k1_xboole_0]   (reduction:1.1.1)  
+1.1.1.2.2.1.2  [- (k2_zfmisc_1(k3_zfmisc_1(1^[], 2^[], 3^[]), _G9895)=k1_xboole_0)]   (reduction:1.1.1.2)  
+1.2  [-5^[], - (1^[]=k1_xboole_0), - (2^[]=k1_xboole_0), - (3^[]=k1_xboole_0)]   (1)  
+1.2.1  [1^[]=k1_xboole_0, - (k2_zfmisc_1(1^[], 2^[])=k1_xboole_0)]   (9)  substitution:[[_G4449, _G4503], [1^[], 2^[]]]
+1.2.1.1  [k2_zfmisc_1(1^[], 2^[])=k1_xboole_0, - (k2_zfmisc_1(k2_zfmisc_1(1^[], 2^[]), 3^[])=k1_xboole_0)]   (9)  substitution:[[_G4449, _G4503], [k2_zfmisc_1(1^[], 2^[]), 3^[]]]
+1.2.1.1.1  [k2_zfmisc_1(k2_zfmisc_1(1^[], 2^[]), 3^[])=k1_xboole_0, - (k3_zfmisc_1(1^[], 2^[], 3^[])=k1_xboole_0), k3_zfmisc_1(1^[], 2^[], 3^[])=k2_zfmisc_1(k2_zfmisc_1(1^[], 2^[]), 3^[])]   (14)  substitution:[[_G2000, _G2057, _G1944], [k2_zfmisc_1(k2_zfmisc_1(1^[], 2^[]), 3^[]), k1_xboole_0, k3_zfmisc_1(1^[], 2^[], 3^[])]]
+1.2.1.1.1.1  [k3_zfmisc_1(1^[], 2^[], 3^[])=k1_xboole_0, -5^[]]   (2)  
+1.2.1.1.1.1.1  [5^[]]   (reduction:1)  
+1.2.1.1.1.2  [- (k3_zfmisc_1(1^[], 2^[], 3^[])=k2_zfmisc_1(k2_zfmisc_1(1^[], 2^[]), 3^[]))]   (8)  substitution:[[_G4052, _G4106, _G4161], [1^[], 2^[], 3^[]]]
+1.2.2  [2^[]=k1_xboole_0, - (k2_zfmisc_1(1^[], 2^[])=k1_xboole_0)]   (10)  substitution:[[_G4503, _G4449], [2^[], 1^[]]]
+1.2.2.1  [k2_zfmisc_1(1^[], 2^[])=k1_xboole_0, - (k2_zfmisc_1(k2_zfmisc_1(1^[], 2^[]), 3^[])=k1_xboole_0)]   (9)  substitution:[[_G4449, _G4503], [k2_zfmisc_1(1^[], 2^[]), 3^[]]]
+1.2.2.1.1  [k2_zfmisc_1(k2_zfmisc_1(1^[], 2^[]), 3^[])=k1_xboole_0, - (k3_zfmisc_1(1^[], 2^[], 3^[])=k1_xboole_0), k3_zfmisc_1(1^[], 2^[], 3^[])=k2_zfmisc_1(k2_zfmisc_1(1^[], 2^[]), 3^[])]   (14)  substitution:[[_G2000, _G2057, _G1944], [k2_zfmisc_1(k2_zfmisc_1(1^[], 2^[]), 3^[]), k1_xboole_0, k3_zfmisc_1(1^[], 2^[], 3^[])]]
+1.2.2.1.1.1  [k3_zfmisc_1(1^[], 2^[], 3^[])=k1_xboole_0, -5^[]]   (2)  
+1.2.2.1.1.1.1  [5^[]]   (reduction:1)  
+1.2.2.1.1.2  [- (k3_zfmisc_1(1^[], 2^[], 3^[])=k2_zfmisc_1(k2_zfmisc_1(1^[], 2^[]), 3^[]))]   (8)  substitution:[[_G4052, _G4106, _G4161], [1^[], 2^[], 3^[]]]
+1.2.3  [3^[]=k1_xboole_0, - (k2_zfmisc_1(3^[], _G10472)=k1_xboole_0)]   (9)  substitution:[[_G4449, _G4503], [3^[], _G10472]]
+1.2.3.1  [k2_zfmisc_1(3^[], _G10472)=k1_xboole_0, - (k2_zfmisc_1(k2_zfmisc_1(1^[], 2^[]), 3^[])=k1_xboole_0), k2_zfmisc_1(k2_zfmisc_1(1^[], 2^[]), 3^[])=k2_zfmisc_1(3^[], _G10472)]   (14)  substitution:[[_G2000, _G2057, _G1944], [k2_zfmisc_1(3^[], _G10472), k1_xboole_0, k2_zfmisc_1(k2_zfmisc_1(1^[], 2^[]), 3^[])]]
+1.2.3.1.1  [k2_zfmisc_1(k2_zfmisc_1(1^[], 2^[]), 3^[])=k1_xboole_0, - (k3_zfmisc_1(1^[], 2^[], 3^[])=k1_xboole_0), k3_zfmisc_1(1^[], 2^[], 3^[])=k2_zfmisc_1(k2_zfmisc_1(1^[], 2^[]), 3^[])]   (14)  substitution:[[_G2000, _G2057, _G1944], [k2_zfmisc_1(k2_zfmisc_1(1^[], 2^[]), 3^[]), k1_xboole_0, k3_zfmisc_1(1^[], 2^[], 3^[])]]
+1.2.3.1.1.1  [k3_zfmisc_1(1^[], 2^[], 3^[])=k1_xboole_0, -5^[]]   (2)  
+1.2.3.1.1.1.1  [5^[]]   (reduction:1)  
+1.2.3.1.1.2  [- (k3_zfmisc_1(1^[], 2^[], 3^[])=k2_zfmisc_1(k2_zfmisc_1(1^[], 2^[]), 3^[]))]   (8)  substitution:[[_G4052, _G4106, _G4161], [1^[], 2^[], 3^[]]]
+1.2.3.1.2  [- (k2_zfmisc_1(k2_zfmisc_1(1^[], 2^[]), 3^[])=k2_zfmisc_1(3^[], _G10472)), k2_zfmisc_1(k2_zfmisc_1(1^[], 2^[]), 3^[])=k1_xboole_0, k1_xboole_0=k2_zfmisc_1(3^[], _G10472)]   (14)  substitution:[[_G1944, _G2057, _G2000], [k2_zfmisc_1(k2_zfmisc_1(1^[], 2^[]), 3^[]), k2_zfmisc_1(3^[], _G10472), k1_xboole_0]]
+1.2.3.1.2.1  [- (k2_zfmisc_1(k2_zfmisc_1(1^[], 2^[]), 3^[])=k1_xboole_0), 3^[]=k1_xboole_0]   (10)  substitution:[[_G4449, _G4503], [k2_zfmisc_1(1^[], 2^[]), 3^[]]]
+1.2.3.1.2.1.1  [- (3^[]=k1_xboole_0)]   (reduction:1.2)  
+1.2.3.1.2.2  [- (k1_xboole_0=k2_zfmisc_1(3^[], _G10472)), k2_zfmisc_1(3^[], _G10472)=k1_xboole_0]   (13)  substitution:[[_G1756, _G1711], [k1_xboole_0, k2_zfmisc_1(3^[], _G10472)]]
+1.2.3.1.2.2.1  [- (k2_zfmisc_1(3^[], _G10472)=k1_xboole_0)]   (reduction:1.2.3)  
+------------------------------------------------------
+End of proof for t31_mcart_1

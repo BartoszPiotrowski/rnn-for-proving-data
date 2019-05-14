@@ -1,0 +1,61 @@
+
+t10_topalg_2 is a Theorem
+Start of proof for t10_topalg_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_topalg_2(k5_topmetr)]
+ (2)  [m1_subset_1(_G7403, k1_numbers), -v1_xreal_0(_G7403)]
+ (3)  [- (k5_topmetr=k17_borsuk_1)]
+ (4)  [- (k6_numbers=k1_xboole_0)]
+ (5)  [-r1_xxreal_0(np__0, np__1)]
+ (6)  [-v1_xboole_0(np__0)]
+ (7)  [-m2_subset_1(np__0, k1_numbers, k5_numbers)]
+ (8)  [-m1_subset_1(np__0, k5_numbers)]
+ (9)  [-m1_subset_1(np__0, k1_numbers)]
+ (10)  [-v2_xxreal_0(np__1)]
+ (11)  [-m2_subset_1(np__1, k1_numbers, k5_numbers)]
+ (12)  [-m1_subset_1(np__1, k5_numbers)]
+ (13)  [-m1_subset_1(np__1, k1_numbers)]
+ (14)  [- (k4_topmetr(k6_numbers, np__1)=k17_borsuk_1)]
+ (15)  [v1_xboole_0(_G8424), - (_G8424=k1_xboole_0)]
+ (16)  [v1_xreal_0(_G8572), v1_xreal_0(_G8661), r1_xxreal_0(_G8572, _G8661), -v2_topalg_2(k4_topmetr(_G8572, _G8661))]
+ (17)  [- (k4_topmetr(_G6785, _G6920)=k4_topmetr(_G6852, _G6989)), _G6785=_G6852, _G6920=_G6989]
+ (18)  [- (_G2540=_G2540)]
+ (19)  [_G2639=_G2684, - (_G2684=_G2639)]
+ (20)  [- (_G2872=_G2985), _G2872=_G2928, _G2928=_G2985]
+ (21)  [-v2_xxreal_0(_G3371), _G3322=_G3371, v2_xxreal_0(_G3322)]
+ (22)  [-m2_subset_1(_G3685, _G3858, _G4035), m2_subset_1(_G3600, _G3771, _G3946), _G3600=_G3685, _G3771=_G3858, _G3946=_G4035]
+ (23)  [-m1_subset_1(_G4695, _G4832), m1_subset_1(_G4628, _G4763), _G4628=_G4695, _G4763=_G4832]
+ (24)  [-v1_xboole_0(_G5274), _G5225=_G5274, v1_xboole_0(_G5225)]
+ (25)  [-v1_xreal_0(_G5552), _G5503=_G5552, v1_xreal_0(_G5503)]
+ (26)  [-v2_topalg_2(_G6418), _G6369=_G6418, v2_topalg_2(_G6369)]
+ (27)  [-r1_xxreal_0(_G5848, _G5985), r1_xxreal_0(_G5781, _G5916), _G5781=_G5848, _G5916=_G5985]
+
+Connection Proof:
+-----------------
+1  [v2_topalg_2(k5_topmetr)]   (1)  
+1.1  [-v2_topalg_2(k5_topmetr), k4_topmetr(k1_xboole_0, np__1)=k5_topmetr, v2_topalg_2(k4_topmetr(k1_xboole_0, np__1))]   (26)  substitution:[[_G6418, _G6369], [k5_topmetr, k4_topmetr(k1_xboole_0, np__1)]]
+1.1.1  [- (k4_topmetr(k1_xboole_0, np__1)=k5_topmetr), k4_topmetr(k1_xboole_0, np__1)=k4_topmetr(k6_numbers, np__1), k4_topmetr(k6_numbers, np__1)=k5_topmetr]   (20)  substitution:[[_G2872, _G2985, _G2928], [k4_topmetr(k1_xboole_0, np__1), k5_topmetr, k4_topmetr(k6_numbers, np__1)]]
+1.1.1.1  [- (k4_topmetr(k1_xboole_0, np__1)=k4_topmetr(k6_numbers, np__1)), k1_xboole_0=k6_numbers, np__1=np__1]   (17)  substitution:[[_G6785, _G6920, _G6852, _G6989], [k1_xboole_0, np__1, k6_numbers, np__1]]
+1.1.1.1.1  [- (k1_xboole_0=k6_numbers), k6_numbers=k1_xboole_0]   (19)  substitution:[[_G2684, _G2639], [k1_xboole_0, k6_numbers]]
+1.1.1.1.1.1  [- (k6_numbers=k1_xboole_0)]   (4)  
+1.1.1.1.2  [- (np__1=np__1)]   (18)  substitution:[[_G2540], [np__1]]
+1.1.1.2  [- (k4_topmetr(k6_numbers, np__1)=k5_topmetr), k4_topmetr(k6_numbers, np__1)=k17_borsuk_1, k17_borsuk_1=k5_topmetr]   (20)  substitution:[[_G2872, _G2985, _G2928], [k4_topmetr(k6_numbers, np__1), k5_topmetr, k17_borsuk_1]]
+1.1.1.2.1  [- (k4_topmetr(k6_numbers, np__1)=k17_borsuk_1)]   (14)  
+1.1.1.2.2  [- (k17_borsuk_1=k5_topmetr), k5_topmetr=k17_borsuk_1]   (19)  substitution:[[_G2684, _G2639], [k17_borsuk_1, k5_topmetr]]
+1.1.1.2.2.1  [- (k5_topmetr=k17_borsuk_1)]   (3)  
+1.1.2  [-v2_topalg_2(k4_topmetr(k1_xboole_0, np__1)), v1_xreal_0(k1_xboole_0), v1_xreal_0(np__1), r1_xxreal_0(k1_xboole_0, np__1)]   (16)  substitution:[[_G8572, _G8661], [k1_xboole_0, np__1]]
+1.1.2.1  [-v1_xreal_0(k1_xboole_0), np__0=k1_xboole_0, v1_xreal_0(np__0)]   (25)  substitution:[[_G5552, _G5503], [k1_xboole_0, np__0]]
+1.1.2.1.1  [- (np__0=k1_xboole_0), v1_xboole_0(np__0)]   (15)  substitution:[[_G8424], [np__0]]
+1.1.2.1.1.1  [-v1_xboole_0(np__0)]   (6)  
+1.1.2.1.2  [-v1_xreal_0(np__0), m1_subset_1(np__0, k1_numbers)]   (2)  substitution:[[_G7403], [np__0]]
+1.1.2.1.2.1  [-m1_subset_1(np__0, k1_numbers)]   (9)  
+1.1.2.2  [-v1_xreal_0(np__1), m1_subset_1(np__1, k1_numbers)]   (2)  substitution:[[_G7403], [np__1]]
+1.1.2.2.1  [-m1_subset_1(np__1, k1_numbers)]   (13)  
+1.1.2.3  [-r1_xxreal_0(k1_xboole_0, np__1), r1_xxreal_0(np__0, np__1), np__0=k1_xboole_0, np__1=np__1]   (27)  substitution:[[_G5848, _G5985, _G5781, _G5916], [k1_xboole_0, np__1, np__0, np__1]]
+1.1.2.3.1  [-r1_xxreal_0(np__0, np__1)]   (5)  
+1.1.2.3.2  [- (np__0=k1_xboole_0), v1_xboole_0(np__0)]   (15)  substitution:[[_G8424], [np__0]]
+1.1.2.3.2.1  [-v1_xboole_0(np__0)]   (6)  
+1.1.2.3.3  [- (np__1=np__1)]   (18)  substitution:[[_G2540], [np__1]]
+------------------------------------------------------
+End of proof for t10_topalg_2

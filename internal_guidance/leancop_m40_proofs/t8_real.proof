@@ -1,0 +1,22 @@
+
+t8_real is a Theorem
+Start of proof for t8_real
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xreal_0(1^[])]
+ (2)  [-v1_xreal_0(2^[])]
+ (3)  [r1_xxreal_0(1^[], 2^[])]
+ (4)  [v3_xxreal_0(2^[])]
+ (5)  [v2_xxreal_0(1^[])]
+ (6)  [v1_xreal_0(_G802), v1_xreal_0(_G901), -r1_xxreal_0(_G802, _G901), -v2_xxreal_0(_G802), -v3_xxreal_0(_G901)]
+
+Connection Proof:
+-----------------
+1  [r1_xxreal_0(1^[], 2^[])]   (3)  
+1.1  [-r1_xxreal_0(1^[], 2^[]), v1_xreal_0(1^[]), v1_xreal_0(2^[]), -v2_xxreal_0(1^[]), -v3_xxreal_0(2^[])]   (6)  substitution:[[_G802, _G901], [1^[], 2^[]]]
+1.1.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.2  [-v1_xreal_0(2^[])]   (2)  
+1.1.3  [v2_xxreal_0(1^[])]   (5)  
+1.1.4  [v3_xxreal_0(2^[])]   (4)  
+------------------------------------------------------
+End of proof for t8_real

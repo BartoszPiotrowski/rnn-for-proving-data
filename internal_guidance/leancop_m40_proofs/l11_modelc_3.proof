@@ -1,0 +1,81 @@
+
+l11_modelc_3 is a Theorem
+Start of proof for l11_modelc_3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_modelc_2(1^[])]
+ (2)  [-m2_finseq_1(1^[], k5_numbers)]
+ (3)  [m1_subset_1(k2_tarski(k11_modelc_2(1^[]), k12_modelc_2(1^[])), k1_zfmisc_1(k13_modelc_2(1^[])))]
+ (4)  [-v5_modelc_2(1^[]), -v4_modelc_2(1^[]), -v7_modelc_2(1^[]), -v8_modelc_2(1^[])]
+ (5)  [-v1_modelc_2(k11_modelc_2(_G1479)), v1_modelc_2(_G1479), m1_finseq_1(_G1479, k5_numbers)]
+ (6)  [-m2_finseq_1(k11_modelc_2(_G1479), k5_numbers), v1_modelc_2(_G1479), m1_finseq_1(_G1479, k5_numbers)]
+ (7)  [-v1_modelc_2(k12_modelc_2(_G1810)), v1_modelc_2(_G1810), m1_finseq_1(_G1810, k5_numbers)]
+ (8)  [-m2_finseq_1(k12_modelc_2(_G1810), k5_numbers), v1_modelc_2(_G1810), m1_finseq_1(_G1810, k5_numbers)]
+ (9)  [m2_finseq_1(_G2141, k5_numbers), v1_modelc_2(_G2141), m2_finseq_1(_G2347, k5_numbers), v1_modelc_2(_G2347), m2_finseq_1(_G2543, k5_numbers), v1_modelc_2(_G2543), -m1_subset_1(k2_tarski(_G2141, _G2543), k1_zfmisc_1(k13_modelc_2(_G2347))), r2_modelc_2(_G2141, _G2347), r2_modelc_2(_G2543, _G2347)]
+ (10)  [m2_finseq_1(_G3096, k5_numbers), v1_modelc_2(_G3096), v4_modelc_2(_G3096), -r2_modelc_2(k11_modelc_2(_G3096), _G3096)]
+ (11)  [m2_finseq_1(_G3096, k5_numbers), v1_modelc_2(_G3096), v4_modelc_2(_G3096), -r2_modelc_2(k12_modelc_2(_G3096), _G3096)]
+ (12)  [m2_finseq_1(_G3096, k5_numbers), v1_modelc_2(_G3096), v5_modelc_2(_G3096), -r2_modelc_2(k11_modelc_2(_G3096), _G3096)]
+ (13)  [m2_finseq_1(_G3096, k5_numbers), v1_modelc_2(_G3096), v5_modelc_2(_G3096), -r2_modelc_2(k12_modelc_2(_G3096), _G3096)]
+ (14)  [m2_finseq_1(_G3096, k5_numbers), v1_modelc_2(_G3096), v7_modelc_2(_G3096), -r2_modelc_2(k11_modelc_2(_G3096), _G3096)]
+ (15)  [m2_finseq_1(_G3096, k5_numbers), v1_modelc_2(_G3096), v7_modelc_2(_G3096), -r2_modelc_2(k12_modelc_2(_G3096), _G3096)]
+ (16)  [m2_finseq_1(_G3096, k5_numbers), v1_modelc_2(_G3096), v8_modelc_2(_G3096), -r2_modelc_2(k11_modelc_2(_G3096), _G3096)]
+ (17)  [m2_finseq_1(_G3096, k5_numbers), v1_modelc_2(_G3096), v8_modelc_2(_G3096), -r2_modelc_2(k12_modelc_2(_G3096), _G3096)]
+ (18)  [m2_finseq_1(_G3801, _G3756), -m1_finseq_1(_G3801, _G3756)]
+ (19)  [-m2_finseq_1(_G3801, _G3756), m1_finseq_1(_G3801, _G3756)]
+
+Connection Proof:
+-----------------
+1  [m1_subset_1(k2_tarski(k11_modelc_2(1^[]), k12_modelc_2(1^[])), k1_zfmisc_1(k13_modelc_2(1^[])))]   (3)  
+1.1  [-m1_subset_1(k2_tarski(k11_modelc_2(1^[]), k12_modelc_2(1^[])), k1_zfmisc_1(k13_modelc_2(1^[]))), m2_finseq_1(k11_modelc_2(1^[]), k5_numbers), v1_modelc_2(k11_modelc_2(1^[])), m2_finseq_1(1^[], k5_numbers), v1_modelc_2(1^[]), m2_finseq_1(k12_modelc_2(1^[]), k5_numbers), v1_modelc_2(k12_modelc_2(1^[])), r2_modelc_2(k11_modelc_2(1^[]), 1^[]), r2_modelc_2(k12_modelc_2(1^[]), 1^[])]   (9)  substitution:[[_G2141, _G2543, _G2347], [k11_modelc_2(1^[]), k12_modelc_2(1^[]), 1^[]]]
+1.1.1  [-m2_finseq_1(k11_modelc_2(1^[]), k5_numbers), v1_modelc_2(1^[]), m1_finseq_1(1^[], k5_numbers)]   (6)  substitution:[[_G1479], [1^[]]]
+1.1.1.1  [-v1_modelc_2(1^[])]   (1)  
+1.1.1.2  [-m1_finseq_1(1^[], k5_numbers), m2_finseq_1(1^[], k5_numbers)]   (18)  substitution:[[_G3801, _G3756], [1^[], k5_numbers]]
+1.1.1.2.1  [-m2_finseq_1(1^[], k5_numbers)]   (2)  
+1.1.2  [-v1_modelc_2(k11_modelc_2(1^[])), v1_modelc_2(1^[]), m1_finseq_1(1^[], k5_numbers)]   (5)  substitution:[[_G1479], [1^[]]]
+1.1.2.1  [-v1_modelc_2(1^[])]   (1)  
+1.1.2.2  [-m1_finseq_1(1^[], k5_numbers), m2_finseq_1(1^[], k5_numbers)]   (18)  substitution:[[_G3801, _G3756], [1^[], k5_numbers]]
+1.1.2.2.1  [-m2_finseq_1(1^[], k5_numbers)]   (2)  
+1.1.3  [-m2_finseq_1(1^[], k5_numbers)]   (2)  
+1.1.4  [-v1_modelc_2(1^[])]   (1)  
+1.1.5  [-m2_finseq_1(k12_modelc_2(1^[]), k5_numbers), v1_modelc_2(1^[]), m1_finseq_1(1^[], k5_numbers)]   (8)  substitution:[[_G1810], [1^[]]]
+1.1.5.1  [-v1_modelc_2(1^[])]   (1)  
+1.1.5.2  [-m1_finseq_1(1^[], k5_numbers), m2_finseq_1(1^[], k5_numbers)]   (18)  substitution:[[_G3801, _G3756], [1^[], k5_numbers]]
+1.1.5.2.1  [-m2_finseq_1(1^[], k5_numbers)]   (2)  
+1.1.6  [-v1_modelc_2(k12_modelc_2(1^[])), v1_modelc_2(1^[]), m1_finseq_1(1^[], k5_numbers)]   (7)  substitution:[[_G1810], [1^[]]]
+1.1.6.1  [-v1_modelc_2(1^[])]   (1)  
+1.1.6.2  [-m1_finseq_1(1^[], k5_numbers), m2_finseq_1(1^[], k5_numbers)]   (18)  substitution:[[_G3801, _G3756], [1^[], k5_numbers]]
+1.1.6.2.1  [-m2_finseq_1(1^[], k5_numbers)]   (2)  
+1.1.7  [-r2_modelc_2(k11_modelc_2(1^[]), 1^[]), m2_finseq_1(1^[], k5_numbers), v1_modelc_2(1^[]), v4_modelc_2(1^[])]   (10)  substitution:[[_G3096], [1^[]]]
+1.1.7.1  [-m2_finseq_1(1^[], k5_numbers)]   (2)  
+1.1.7.2  [-v1_modelc_2(1^[])]   (1)  
+1.1.7.3  [-v4_modelc_2(1^[]), -v5_modelc_2(1^[]), -v7_modelc_2(1^[]), -v8_modelc_2(1^[])]   (4)  
+1.1.7.3.1  [v5_modelc_2(1^[]), m2_finseq_1(1^[], k5_numbers), v1_modelc_2(1^[]), -r2_modelc_2(k11_modelc_2(1^[]), 1^[])]   (12)  substitution:[[_G3096], [1^[]]]
+1.1.7.3.1.1  [-m2_finseq_1(1^[], k5_numbers)]   (2)  
+1.1.7.3.1.2  [-v1_modelc_2(1^[])]   (1)  
+1.1.7.3.1.3  [r2_modelc_2(k11_modelc_2(1^[]), 1^[])]   (reduction:1.1)  
+1.1.7.3.2  [v7_modelc_2(1^[]), m2_finseq_1(1^[], k5_numbers), v1_modelc_2(1^[]), -r2_modelc_2(k11_modelc_2(1^[]), 1^[])]   (14)  substitution:[[_G3096], [1^[]]]
+1.1.7.3.2.1  [-m2_finseq_1(1^[], k5_numbers)]   (2)  
+1.1.7.3.2.2  [-v1_modelc_2(1^[])]   (1)  
+1.1.7.3.2.3  [r2_modelc_2(k11_modelc_2(1^[]), 1^[])]   (reduction:1.1)  
+1.1.7.3.3  [v8_modelc_2(1^[]), m2_finseq_1(1^[], k5_numbers), v1_modelc_2(1^[]), -r2_modelc_2(k11_modelc_2(1^[]), 1^[])]   (16)  substitution:[[_G3096], [1^[]]]
+1.1.7.3.3.1  [-m2_finseq_1(1^[], k5_numbers)]   (2)  
+1.1.7.3.3.2  [-v1_modelc_2(1^[])]   (1)  
+1.1.7.3.3.3  [r2_modelc_2(k11_modelc_2(1^[]), 1^[])]   (reduction:1.1)  
+1.1.8  [-r2_modelc_2(k12_modelc_2(1^[]), 1^[]), m2_finseq_1(1^[], k5_numbers), v1_modelc_2(1^[]), v4_modelc_2(1^[])]   (11)  substitution:[[_G3096], [1^[]]]
+1.1.8.1  [-m2_finseq_1(1^[], k5_numbers)]   (2)  
+1.1.8.2  [-v1_modelc_2(1^[])]   (1)  
+1.1.8.3  [-v4_modelc_2(1^[]), -v5_modelc_2(1^[]), -v7_modelc_2(1^[]), -v8_modelc_2(1^[])]   (4)  
+1.1.8.3.1  [v5_modelc_2(1^[]), m2_finseq_1(1^[], k5_numbers), v1_modelc_2(1^[]), -r2_modelc_2(k12_modelc_2(1^[]), 1^[])]   (13)  substitution:[[_G3096], [1^[]]]
+1.1.8.3.1.1  [-m2_finseq_1(1^[], k5_numbers)]   (2)  
+1.1.8.3.1.2  [-v1_modelc_2(1^[])]   (1)  
+1.1.8.3.1.3  [r2_modelc_2(k12_modelc_2(1^[]), 1^[])]   (reduction:1.1)  
+1.1.8.3.2  [v7_modelc_2(1^[]), m2_finseq_1(1^[], k5_numbers), v1_modelc_2(1^[]), -r2_modelc_2(k12_modelc_2(1^[]), 1^[])]   (15)  substitution:[[_G3096], [1^[]]]
+1.1.8.3.2.1  [-m2_finseq_1(1^[], k5_numbers)]   (2)  
+1.1.8.3.2.2  [-v1_modelc_2(1^[])]   (1)  
+1.1.8.3.2.3  [r2_modelc_2(k12_modelc_2(1^[]), 1^[])]   (reduction:1.1)  
+1.1.8.3.3  [v8_modelc_2(1^[]), m2_finseq_1(1^[], k5_numbers), v1_modelc_2(1^[]), -r2_modelc_2(k12_modelc_2(1^[]), 1^[])]   (17)  substitution:[[_G3096], [1^[]]]
+1.1.8.3.3.1  [-m2_finseq_1(1^[], k5_numbers)]   (2)  
+1.1.8.3.3.2  [-v1_modelc_2(1^[])]   (1)  
+1.1.8.3.3.3  [r2_modelc_2(k12_modelc_2(1^[]), 1^[])]   (reduction:1.1)  
+------------------------------------------------------
+End of proof for l11_modelc_3

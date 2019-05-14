@@ -1,0 +1,44 @@
+
+t4_isomichi is a Theorem
+Start of proof for t4_isomichi
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v2_pre_topc(1^[])]
+ (2)  [-l1_pre_topc(1^[])]
+ (3)  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]
+ (4)  [-v3_pre_topc(2^[], 1^[])]
+ (5)  [v2_isomichi(2^[], 1^[])]
+ (6)  [l1_pre_topc(_G7865), m1_subset_1(_G7966, k1_zfmisc_1(u1_struct_0(_G7865))), v2_isomichi(_G7966, _G7865), - (k2_pre_topc(_G7865, k1_tops_1(_G7865, _G7966))=k2_pre_topc(_G7865, _G7966))]
+ (7)  [l1_pre_topc(_G7865), m1_subset_1(_G7966, k1_zfmisc_1(u1_struct_0(_G7865))), -v2_isomichi(_G7966, _G7865), k2_pre_topc(_G7865, k1_tops_1(_G7865, _G7966))=k2_pre_topc(_G7865, _G7966)]
+ (8)  [l1_pre_topc(_G8417), v2_pre_topc(_G8417), l1_pre_topc(_G8610), m1_subset_1(_G8741, k1_zfmisc_1(u1_struct_0(_G8417))), m1_subset_1(_G8921, k1_zfmisc_1(u1_struct_0(_G8610))), v3_pre_topc(_G8921, _G8610), - (k1_tops_1(_G8610, _G8921)=_G8921)]
+ (9)  [l1_pre_topc(_G8417), v2_pre_topc(_G8417), l1_pre_topc(_G8610), m1_subset_1(_G8741, k1_zfmisc_1(u1_struct_0(_G8417))), m1_subset_1(_G8921, k1_zfmisc_1(u1_struct_0(_G8610))), k1_tops_1(_G8417, _G8741)=_G8741, -v3_pre_topc(_G8741, _G8417)]
+ (10)  [- (k2_pre_topc(_G6040, _G6175)=k2_pre_topc(_G6107, _G6244)), _G6040=_G6107, _G6175=_G6244]
+ (11)  [- (k1_tops_1(_G6637, _G6772)=k1_tops_1(_G6704, _G6841)), _G6637=_G6704, _G6772=_G6841]
+ (12)  [_G7234=_G7283, - (k1_zfmisc_1(_G7234)=k1_zfmisc_1(_G7283))]
+ (13)  [_G7503=_G7552, - (u1_struct_0(_G7503)=u1_struct_0(_G7552))]
+ (14)  [- (_G2815=_G2815)]
+ (15)  [_G2914=_G2959, - (_G2959=_G2914)]
+ (16)  [- (_G3147=_G3260), _G3147=_G3203, _G3203=_G3260]
+ (17)  [-v2_pre_topc(_G3646), _G3597=_G3646, v2_pre_topc(_G3597)]
+ (18)  [-l1_pre_topc(_G3924), _G3875=_G3924, l1_pre_topc(_G3875)]
+ (19)  [-m1_subset_1(_G4220, _G4357), m1_subset_1(_G4153, _G4288), _G4153=_G4220, _G4288=_G4357]
+ (20)  [-v3_pre_topc(_G4817, _G4954), v3_pre_topc(_G4750, _G4885), _G4750=_G4817, _G4885=_G4954]
+ (21)  [-v2_isomichi(_G5405, _G5542), v2_isomichi(_G5338, _G5473), _G5338=_G5405, _G5473=_G5542]
+
+Connection Proof:
+-----------------
+1  [v2_isomichi(2^[], 1^[])]   (5)  
+1.1  [-v2_isomichi(2^[], 1^[]), l1_pre_topc(1^[]), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[]))), k2_pre_topc(1^[], k1_tops_1(1^[], 2^[]))=k2_pre_topc(1^[], 2^[])]   (7)  substitution:[[_G7966, _G7865], [2^[], 1^[]]]
+1.1.1  [-l1_pre_topc(1^[])]   (2)  
+1.1.2  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (3)  
+1.1.3  [- (k2_pre_topc(1^[], k1_tops_1(1^[], 2^[]))=k2_pre_topc(1^[], 2^[])), 1^[]=1^[], k1_tops_1(1^[], 2^[])=2^[]]   (10)  substitution:[[_G6040, _G6175, _G6107, _G6244], [1^[], k1_tops_1(1^[], 2^[]), 1^[], 2^[]]]
+1.1.3.1  [- (1^[]=1^[])]   (14)  substitution:[[_G2815], [1^[]]]
+1.1.3.2  [- (k1_tops_1(1^[], 2^[])=2^[]), l1_pre_topc(1^[]), v2_pre_topc(1^[]), l1_pre_topc(1^[]), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[]))), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[]))), v3_pre_topc(2^[], 1^[])]   (8)  substitution:[[_G8610, _G8921, _G8417, _G8741], [1^[], 2^[], 1^[], 2^[]]]
+1.1.3.2.1  [-l1_pre_topc(1^[])]   (2)  
+1.1.3.2.2  [-v2_pre_topc(1^[])]   (1)  
+1.1.3.2.3  [-l1_pre_topc(1^[])]   (2)  
+1.1.3.2.4  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (3)  
+1.1.3.2.5  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (3)  
+1.1.3.2.6  [-v3_pre_topc(2^[], 1^[])]   (4)  
+------------------------------------------------------
+End of proof for t4_isomichi

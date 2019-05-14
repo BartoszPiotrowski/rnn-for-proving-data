@@ -1,0 +1,24 @@
+
+t28_numbers is a Theorem
+Start of proof for t28_numbers
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [- (k5_numbers=k3_numbers)]
+ (2)  [-r2_xboole_0(k5_numbers, k3_numbers)]
+ (3)  [r2_xboole_0(_G2310, _G2357), r2_xboole_0(_G2357, _G2310)]
+ (4)  [-r2_xboole_0(_G1759, _G1896), r2_xboole_0(_G1692, _G1827), _G1692=_G1759, _G1827=_G1896]
+ (5)  [- (_G919=_G919)]
+ (6)  [_G1018=_G1063, - (_G1063=_G1018)]
+ (7)  [- (_G1251=_G1364), _G1251=_G1307, _G1307=_G1364]
+
+Connection Proof:
+-----------------
+1  [r2_xboole_0(k5_numbers, k3_numbers), r2_xboole_0(k3_numbers, k5_numbers)]   (3)  substitution:[[_G2310, _G2357], [k5_numbers, k3_numbers]]
+1.1  [-r2_xboole_0(k5_numbers, k3_numbers)]   (2)  
+1.2  [-r2_xboole_0(k3_numbers, k5_numbers), r2_xboole_0(k5_numbers, k3_numbers), k5_numbers=k3_numbers, k3_numbers=k5_numbers]   (4)  substitution:[[_G1759, _G1896, _G1692, _G1827], [k3_numbers, k5_numbers, k5_numbers, k3_numbers]]
+1.2.1  [-r2_xboole_0(k5_numbers, k3_numbers)]   (2)  
+1.2.2  [- (k5_numbers=k3_numbers)]   (1)  
+1.2.3  [- (k3_numbers=k5_numbers), k5_numbers=k3_numbers]   (6)  substitution:[[_G1063, _G1018], [k3_numbers, k5_numbers]]
+1.2.3.1  [- (k5_numbers=k3_numbers)]   (1)  
+------------------------------------------------------
+End of proof for t28_numbers

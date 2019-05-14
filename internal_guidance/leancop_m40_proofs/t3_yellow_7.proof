@@ -1,0 +1,60 @@
+
+t3_yellow_7 is a Theorem
+Start of proof for t3_yellow_7
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-3^[], v2_struct_0(1^[])]
+ (2)  [-3^[], -v2_struct_0(k7_lattice3(1^[]))]
+ (3)  [-2^[], v2_struct_0(k7_lattice3(1^[]))]
+ (4)  [-2^[], -v2_struct_0(1^[])]
+ (5)  [-l1_orders_2(1^[])]
+ (6)  [2^[], 3^[]]
+ (7)  [l1_orders_2(_G5047), -v1_orders_2(k7_lattice3(_G5047))]
+ (8)  [l1_orders_2(_G5047), -l1_orders_2(k7_lattice3(_G5047))]
+ (9)  [l1_orders_2(_G5268), -l1_struct_0(_G5268)]
+ (10)  [-v1_xboole_0(u1_struct_0(_G5399)), v2_struct_0(_G5399), l1_struct_0(_G5399)]
+ (11)  [l1_orders_2(_G5832), - (u1_struct_0(_G5832)=u1_struct_0(k7_lattice3(_G5832)))]
+ (12)  [v1_xboole_0(u1_struct_0(_G5604)), -v2_struct_0(_G5604), l1_struct_0(_G5604)]
+ (13)  [_G4458=_G4507, - (u1_struct_0(_G4458)=u1_struct_0(_G4507))]
+ (14)  [_G4727=_G4776, - (k7_lattice3(_G4727)=k7_lattice3(_G4776))]
+ (15)  [- (_G2190=_G2190)]
+ (16)  [_G2289=_G2334, - (_G2334=_G2289)]
+ (17)  [- (_G2522=_G2635), _G2522=_G2578, _G2578=_G2635]
+ (18)  [-v1_orders_2(_G3021), _G2972=_G3021, v1_orders_2(_G2972)]
+ (19)  [-l1_struct_0(_G3299), _G3250=_G3299, l1_struct_0(_G3250)]
+ (20)  [-v1_xboole_0(_G3577), _G3528=_G3577, v1_xboole_0(_G3528)]
+ (21)  [-l1_orders_2(_G3855), _G3806=_G3855, l1_orders_2(_G3806)]
+ (22)  [-v2_struct_0(_G4124), _G4075=_G4124, v2_struct_0(_G4075)]
+
+Connection Proof:
+-----------------
+1  [2^[], 3^[]]   (6)  
+1.1  [-2^[], v2_struct_0(k7_lattice3(1^[]))]   (3)  
+1.1.1  [-v2_struct_0(k7_lattice3(1^[])), v1_xboole_0(u1_struct_0(k7_lattice3(1^[]))), l1_struct_0(k7_lattice3(1^[]))]   (12)  substitution:[[_G5604], [k7_lattice3(1^[])]]
+1.1.1.1  [-v1_xboole_0(u1_struct_0(k7_lattice3(1^[]))), u1_struct_0(1^[])=u1_struct_0(k7_lattice3(1^[])), v1_xboole_0(u1_struct_0(1^[]))]   (20)  substitution:[[_G3577, _G3528], [u1_struct_0(k7_lattice3(1^[])), u1_struct_0(1^[])]]
+1.1.1.1.1  [- (u1_struct_0(1^[])=u1_struct_0(k7_lattice3(1^[]))), l1_orders_2(1^[])]   (11)  substitution:[[_G5832], [1^[]]]
+1.1.1.1.1.1  [-l1_orders_2(1^[])]   (5)  
+1.1.1.1.2  [-v1_xboole_0(u1_struct_0(1^[])), v2_struct_0(1^[]), l1_struct_0(1^[])]   (10)  substitution:[[_G5399], [1^[]]]
+1.1.1.1.2.1  [-v2_struct_0(1^[]), -2^[]]   (4)  
+1.1.1.1.2.1.1  [2^[]]   (reduction:1)  
+1.1.1.1.2.2  [-l1_struct_0(1^[]), l1_orders_2(1^[])]   (9)  substitution:[[_G5268], [1^[]]]
+1.1.1.1.2.2.1  [-l1_orders_2(1^[])]   (5)  
+1.1.1.2  [-l1_struct_0(k7_lattice3(1^[])), l1_orders_2(k7_lattice3(1^[]))]   (9)  substitution:[[_G5268], [k7_lattice3(1^[])]]
+1.1.1.2.1  [-l1_orders_2(k7_lattice3(1^[])), l1_orders_2(1^[])]   (8)  substitution:[[_G5047], [1^[]]]
+1.1.1.2.1.1  [-l1_orders_2(1^[])]   (5)  
+1.2  [-3^[], -v2_struct_0(k7_lattice3(1^[]))]   (2)  
+1.2.1  [v2_struct_0(k7_lattice3(1^[])), -v1_xboole_0(u1_struct_0(k7_lattice3(1^[]))), l1_struct_0(k7_lattice3(1^[]))]   (10)  substitution:[[_G5399], [k7_lattice3(1^[])]]
+1.2.1.1  [v1_xboole_0(u1_struct_0(k7_lattice3(1^[]))), -v1_xboole_0(u1_struct_0(1^[])), u1_struct_0(k7_lattice3(1^[]))=u1_struct_0(1^[])]   (20)  substitution:[[_G3528, _G3577], [u1_struct_0(k7_lattice3(1^[])), u1_struct_0(1^[])]]
+1.2.1.1.1  [v1_xboole_0(u1_struct_0(1^[])), -v2_struct_0(1^[]), l1_struct_0(1^[])]   (12)  substitution:[[_G5604], [1^[]]]
+1.2.1.1.1.1  [v2_struct_0(1^[]), -3^[]]   (1)  
+1.2.1.1.1.1.1  [3^[]]   (reduction:1)  
+1.2.1.1.1.2  [-l1_struct_0(1^[]), l1_orders_2(1^[])]   (9)  substitution:[[_G5268], [1^[]]]
+1.2.1.1.1.2.1  [-l1_orders_2(1^[])]   (5)  
+1.2.1.1.2  [- (u1_struct_0(k7_lattice3(1^[]))=u1_struct_0(1^[])), u1_struct_0(1^[])=u1_struct_0(k7_lattice3(1^[]))]   (16)  substitution:[[_G2334, _G2289], [u1_struct_0(k7_lattice3(1^[])), u1_struct_0(1^[])]]
+1.2.1.1.2.1  [- (u1_struct_0(1^[])=u1_struct_0(k7_lattice3(1^[]))), l1_orders_2(1^[])]   (11)  substitution:[[_G5832], [1^[]]]
+1.2.1.1.2.1.1  [-l1_orders_2(1^[])]   (5)  
+1.2.1.2  [-l1_struct_0(k7_lattice3(1^[])), l1_orders_2(k7_lattice3(1^[]))]   (9)  substitution:[[_G5268], [k7_lattice3(1^[])]]
+1.2.1.2.1  [-l1_orders_2(k7_lattice3(1^[])), l1_orders_2(1^[])]   (8)  substitution:[[_G5047], [1^[]]]
+1.2.1.2.1.1  [-l1_orders_2(1^[])]   (5)  
+------------------------------------------------------
+End of proof for t3_yellow_7

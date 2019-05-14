@@ -1,0 +1,38 @@
+
+l27_arytm_2 is a Theorem
+Start of proof for l27_arytm_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-r2_hidden(2^[], k1_arytm_2)]
+ (2)  [2^[]=k11_arytm_3]
+ (3)  [r2_hidden(k11_arytm_3, 2^[])]
+ (4)  [-m1_subset_1(k11_arytm_3, k5_arytm_3)]
+ (5)  [r2_hidden(_G4772, k1_arytm_2), - (_G4772=k11_arytm_3), -m1_subset_1(1^[_G4772], k5_arytm_3)]
+ (6)  [r2_hidden(_G4772, k1_arytm_2), - (_G4772=k11_arytm_3), -r2_hidden(1^[_G4772], _G4772)]
+ (7)  [r2_hidden(_G4772, k1_arytm_2), - (_G4772=k11_arytm_3), 1^[_G4772]=k11_arytm_3]
+ (8)  [- (k11_arytm_3=k1_xboole_0)]
+ (9)  [m1_subset_1(_G6066, k5_arytm_3), -r3_arytm_3(k11_arytm_3, _G6066)]
+ (10)  [m1_subset_1(_G5340, k5_arytm_3), m1_subset_1(_G5471, k5_arytm_3), -r2_hidden(_G5471, _G5597), r2_hidden(_G5597, k1_arytm_2), r2_hidden(_G5340, _G5597), r3_arytm_3(_G5471, _G5340)]
+ (11)  [- (_G2088=_G2088)]
+ (12)  [_G2187=_G2232, - (_G2232=_G2187)]
+ (13)  [- (_G2420=_G2533), _G2420=_G2476, _G2476=_G2533]
+ (14)  [-m1_subset_1(_G2937, _G3074), m1_subset_1(_G2870, _G3005), _G2870=_G2937, _G3005=_G3074]
+ (15)  [-r3_arytm_3(_G3534, _G3671), r3_arytm_3(_G3467, _G3602), _G3467=_G3534, _G3602=_G3671]
+ (16)  [-r2_hidden(_G4122, _G4259), r2_hidden(_G4055, _G4190), _G4055=_G4122, _G4190=_G4259]
+
+Connection Proof:
+-----------------
+1  [2^[]=k11_arytm_3]   (2)  
+1.1  [- (2^[]=k11_arytm_3), r2_hidden(2^[], k1_arytm_2), -r2_hidden(1^[2^[]], 2^[])]   (6)  substitution:[[_G4772], [2^[]]]
+1.1.1  [-r2_hidden(2^[], k1_arytm_2)]   (1)  
+1.1.2  [r2_hidden(1^[2^[]], 2^[]), m1_subset_1(1^[2^[]], k5_arytm_3), m1_subset_1(k11_arytm_3, k5_arytm_3), -r2_hidden(k11_arytm_3, 2^[]), r2_hidden(2^[], k1_arytm_2), r3_arytm_3(k11_arytm_3, 1^[2^[]])]   (10)  substitution:[[_G5340, _G5597, _G5471], [1^[2^[]], 2^[], k11_arytm_3]]
+1.1.2.1  [-m1_subset_1(1^[2^[]], k5_arytm_3), r2_hidden(2^[], k1_arytm_2), - (2^[]=k11_arytm_3)]   (5)  substitution:[[_G4772], [2^[]]]
+1.1.2.1.1  [-r2_hidden(2^[], k1_arytm_2)]   (1)  
+1.1.2.1.2  [2^[]=k11_arytm_3]   (2)  
+1.1.2.2  [-m1_subset_1(k11_arytm_3, k5_arytm_3)]   (4)  
+1.1.2.3  [r2_hidden(k11_arytm_3, 2^[])]   (3)  
+1.1.2.4  [-r2_hidden(2^[], k1_arytm_2)]   (1)  
+1.1.2.5  [-r3_arytm_3(k11_arytm_3, 1^[2^[]]), m1_subset_1(1^[2^[]], k5_arytm_3)]   (9)  substitution:[[_G6066], [1^[2^[]]]]
+1.1.2.5.1  [-m1_subset_1(1^[2^[]], k5_arytm_3)]   (lemmata:1.1.2)  
+------------------------------------------------------
+End of proof for l27_arytm_2

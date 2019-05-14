@@ -1,0 +1,34 @@
+
+t35_gfacirc1 is a Theorem
+Start of proof for t35_gfacirc1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v1_xtuple_0(1^[])]
+ (2)  [v1_xtuple_0(2^[])]
+ (3)  [v1_xtuple_0(3^[])]
+ (4)  [-v1_facirc_1(k2_msafree2(k13_gfacirc1(1^[], 2^[], 3^[])))]
+ (5)  [v1_facirc_1(k1_enumset1(_G6010, _G6080, _G6151)), -v1_xtuple_0(_G6010), -v1_xtuple_0(_G6080), -v1_xtuple_0(_G6151)]
+ (6)  [-v1_xtuple_0(_G6567), -v1_xtuple_0(_G6688), -v1_xtuple_0(_G6803), - (k2_msafree2(k13_gfacirc1(_G6567, _G6688, _G6803))=k1_enumset1(_G6567, _G6688, _G6803))]
+ (7)  [- (k1_enumset1(_G3622, _G3793, _G3968)=k1_enumset1(_G3707, _G3880, _G4057)), _G3622=_G3707, _G3793=_G3880, _G3968=_G4057]
+ (8)  [_G4650=_G4699, - (k2_msafree2(_G4650)=k2_msafree2(_G4699))]
+ (9)  [- (k13_gfacirc1(_G4919, _G5090, _G5265)=k13_gfacirc1(_G5004, _G5177, _G5354)), _G4919=_G5004, _G5090=_G5177, _G5265=_G5354]
+ (10)  [- (_G2251=_G2251)]
+ (11)  [_G2350=_G2395, - (_G2395=_G2350)]
+ (12)  [- (_G2583=_G2696), _G2583=_G2639, _G2639=_G2696]
+ (13)  [-v1_xtuple_0(_G3082), _G3033=_G3082, v1_xtuple_0(_G3033)]
+ (14)  [-v1_facirc_1(_G3351), _G3302=_G3351, v1_facirc_1(_G3302)]
+
+Connection Proof:
+-----------------
+1  [v1_xtuple_0(1^[])]   (1)  
+1.1  [-v1_xtuple_0(1^[]), v1_facirc_1(k1_enumset1(1^[], 2^[], 3^[])), -v1_xtuple_0(2^[]), -v1_xtuple_0(3^[])]   (5)  substitution:[[_G6010, _G6080, _G6151], [1^[], 2^[], 3^[]]]
+1.1.1  [-v1_facirc_1(k1_enumset1(1^[], 2^[], 3^[])), k2_msafree2(k13_gfacirc1(1^[], 2^[], 3^[]))=k1_enumset1(1^[], 2^[], 3^[]), v1_facirc_1(k2_msafree2(k13_gfacirc1(1^[], 2^[], 3^[])))]   (14)  substitution:[[_G3351, _G3302], [k1_enumset1(1^[], 2^[], 3^[]), k2_msafree2(k13_gfacirc1(1^[], 2^[], 3^[]))]]
+1.1.1.1  [- (k2_msafree2(k13_gfacirc1(1^[], 2^[], 3^[]))=k1_enumset1(1^[], 2^[], 3^[])), -v1_xtuple_0(1^[]), -v1_xtuple_0(2^[]), -v1_xtuple_0(3^[])]   (6)  substitution:[[_G6567, _G6688, _G6803], [1^[], 2^[], 3^[]]]
+1.1.1.1.1  [v1_xtuple_0(1^[])]   (1)  
+1.1.1.1.2  [v1_xtuple_0(2^[])]   (2)  
+1.1.1.1.3  [v1_xtuple_0(3^[])]   (3)  
+1.1.1.2  [-v1_facirc_1(k2_msafree2(k13_gfacirc1(1^[], 2^[], 3^[])))]   (4)  
+1.1.2  [v1_xtuple_0(2^[])]   (2)  
+1.1.3  [v1_xtuple_0(3^[])]   (3)  
+------------------------------------------------------
+End of proof for t35_gfacirc1

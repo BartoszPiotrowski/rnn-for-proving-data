@@ -1,0 +1,34 @@
+
+t39_rewrite1 is a Theorem
+Start of proof for t39_rewrite1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [1^[]=2^[]]
+ (2)  [-r5_rewrite1(k1_xboole_0, 1^[], 2^[]), -r6_rewrite1(k1_xboole_0, 1^[], 2^[])]
+ (3)  [v1_xboole_0(_G6446), -v1_relat_1(_G6446)]
+ (4)  [-v1_xboole_0(k1_xboole_0)]
+ (5)  [r2_rewrite1(k1_xboole_0, _G6609, _G6655), - (_G6609=_G6655)]
+ (6)  [v1_relat_1(_G6887), r5_rewrite1(_G6887, _G6983, _G7043), -r2_rewrite1(_G6887, _G6983, _G7043)]
+ (7)  [v1_relat_1(_G6887), r6_rewrite1(_G6887, _G6983, _G7043), -r2_rewrite1(_G6887, _G6983, _G7043)]
+ (8)  [- (_G1928=_G1928)]
+ (9)  [_G2027=_G2072, - (_G2072=_G2027)]
+ (10)  [- (_G2260=_G2373), _G2260=_G2316, _G2316=_G2373]
+ (11)  [-v1_xboole_0(_G2759), _G2710=_G2759, v1_xboole_0(_G2710)]
+ (12)  [-v1_relat_1(_G3037), _G2988=_G3037, v1_relat_1(_G2988)]
+ (13)  [-r2_rewrite1(_G3351, _G3524, _G3701), r2_rewrite1(_G3266, _G3437, _G3612), _G3266=_G3351, _G3437=_G3524, _G3612=_G3701]
+ (14)  [-r5_rewrite1(_G4379, _G4552, _G4729), r5_rewrite1(_G4294, _G4465, _G4640), _G4294=_G4379, _G4465=_G4552, _G4640=_G4729]
+ (15)  [-r6_rewrite1(_G5398, _G5571, _G5748), r6_rewrite1(_G5313, _G5484, _G5659), _G5313=_G5398, _G5484=_G5571, _G5659=_G5748]
+
+Connection Proof:
+-----------------
+1  [1^[]=2^[]]   (1)  
+1.1  [- (1^[]=2^[]), r2_rewrite1(k1_xboole_0, 1^[], 2^[])]   (5)  substitution:[[_G6609, _G6655], [1^[], 2^[]]]
+1.1.1  [-r2_rewrite1(k1_xboole_0, 1^[], 2^[]), v1_relat_1(k1_xboole_0), r5_rewrite1(k1_xboole_0, 1^[], 2^[])]   (6)  substitution:[[_G6887, _G6983, _G7043], [k1_xboole_0, 1^[], 2^[]]]
+1.1.1.1  [-v1_relat_1(k1_xboole_0), v1_xboole_0(k1_xboole_0)]   (3)  substitution:[[_G6446], [k1_xboole_0]]
+1.1.1.1.1  [-v1_xboole_0(k1_xboole_0)]   (4)  
+1.1.1.2  [-r5_rewrite1(k1_xboole_0, 1^[], 2^[]), -r6_rewrite1(k1_xboole_0, 1^[], 2^[])]   (2)  
+1.1.1.2.1  [r6_rewrite1(k1_xboole_0, 1^[], 2^[]), v1_relat_1(k1_xboole_0), -r2_rewrite1(k1_xboole_0, 1^[], 2^[])]   (7)  substitution:[[_G6887, _G6983, _G7043], [k1_xboole_0, 1^[], 2^[]]]
+1.1.1.2.1.1  [-v1_relat_1(k1_xboole_0)]   (lemmata:1.1.1)  
+1.1.1.2.1.2  [r2_rewrite1(k1_xboole_0, 1^[], 2^[])]   (reduction:1.1)  
+------------------------------------------------------
+End of proof for t39_rewrite1

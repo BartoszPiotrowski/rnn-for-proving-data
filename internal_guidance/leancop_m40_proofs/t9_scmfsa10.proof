@@ -1,0 +1,25 @@
+
+t9_scmfsa10 is a Theorem
+Start of proof for t9_scmfsa10
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k5_xtuple_0(k2_compos_1(k1_scmfsa_2))=k1_xboole_0]
+ (2)  [- (k5_xtuple_0(k2_compos_1(k1_ami_3))=k1_xboole_0)]
+ (3)  [- (k2_compos_1(k1_ami_3)=k2_compos_1(k1_scmfsa_2))]
+ (4)  [_G1690=_G1739, - (k5_xtuple_0(_G1690)=k5_xtuple_0(_G1739))]
+ (5)  [_G1959=_G2008, - (k2_compos_1(_G1959)=k2_compos_1(_G2008))]
+ (6)  [- (_G908=_G908)]
+ (7)  [_G1007=_G1052, - (_G1052=_G1007)]
+ (8)  [- (_G1240=_G1353), _G1240=_G1296, _G1296=_G1353]
+
+Connection Proof:
+-----------------
+1  [k5_xtuple_0(k2_compos_1(k1_scmfsa_2))=k1_xboole_0]   (1)  
+1.1  [- (k5_xtuple_0(k2_compos_1(k1_scmfsa_2))=k1_xboole_0), k1_xboole_0=k5_xtuple_0(k2_compos_1(k1_scmfsa_2))]   (7)  substitution:[[_G1052, _G1007], [k5_xtuple_0(k2_compos_1(k1_scmfsa_2)), k1_xboole_0]]
+1.1.1  [- (k1_xboole_0=k5_xtuple_0(k2_compos_1(k1_scmfsa_2))), k1_xboole_0=k5_xtuple_0(k2_compos_1(k1_ami_3)), k5_xtuple_0(k2_compos_1(k1_ami_3))=k5_xtuple_0(k2_compos_1(k1_scmfsa_2))]   (8)  substitution:[[_G1240, _G1353, _G1296], [k1_xboole_0, k5_xtuple_0(k2_compos_1(k1_scmfsa_2)), k5_xtuple_0(k2_compos_1(k1_ami_3))]]
+1.1.1.1  [- (k1_xboole_0=k5_xtuple_0(k2_compos_1(k1_ami_3))), k5_xtuple_0(k2_compos_1(k1_ami_3))=k1_xboole_0]   (7)  substitution:[[_G1052, _G1007], [k1_xboole_0, k5_xtuple_0(k2_compos_1(k1_ami_3))]]
+1.1.1.1.1  [- (k5_xtuple_0(k2_compos_1(k1_ami_3))=k1_xboole_0)]   (2)  
+1.1.1.2  [- (k5_xtuple_0(k2_compos_1(k1_ami_3))=k5_xtuple_0(k2_compos_1(k1_scmfsa_2))), k2_compos_1(k1_ami_3)=k2_compos_1(k1_scmfsa_2)]   (4)  substitution:[[_G1690, _G1739], [k2_compos_1(k1_ami_3), k2_compos_1(k1_scmfsa_2)]]
+1.1.1.2.1  [- (k2_compos_1(k1_ami_3)=k2_compos_1(k1_scmfsa_2))]   (3)  
+------------------------------------------------------
+End of proof for t9_scmfsa10

@@ -1,0 +1,65 @@
+
+l11_uniform1 is a Theorem
+Start of proof for l11_uniform1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [u1_struct_0(k5_topmetr)=u1_struct_0(k2_topmetr(k6_numbers, np__1))]
+ (2)  [m1_subset_1(_G8288, k1_numbers), -v1_xreal_0(_G8288)]
+ (3)  [- (k5_topmetr=k17_borsuk_1)]
+ (4)  [- (k6_numbers=k1_xboole_0)]
+ (5)  [-r1_xxreal_0(np__0, np__1)]
+ (6)  [-v1_xboole_0(np__0)]
+ (7)  [-m2_subset_1(np__0, k1_numbers, k5_numbers)]
+ (8)  [-m1_subset_1(np__0, k5_numbers)]
+ (9)  [-m1_subset_1(np__0, k1_numbers)]
+ (10)  [-v2_xxreal_0(np__1)]
+ (11)  [-m2_subset_1(np__1, k1_numbers, k5_numbers)]
+ (12)  [-m1_subset_1(np__1, k5_numbers)]
+ (13)  [-m1_subset_1(np__1, k1_numbers)]
+ (14)  [- (u1_struct_0(k17_borsuk_1)=k1_rcomp_1(k6_numbers, np__1))]
+ (15)  [v1_xboole_0(_G9785), - (_G9785=k1_xboole_0)]
+ (16)  [v1_xreal_0(_G9213), v1_xreal_0(_G9308), r1_xxreal_0(_G9213, _G9308), - (u1_struct_0(k2_topmetr(_G9213, _G9308))=k1_rcomp_1(_G9213, _G9308))]
+ (17)  [- (k1_rcomp_1(_G6762, _G6897)=k1_rcomp_1(_G6829, _G6966)), _G6762=_G6829, _G6897=_G6966]
+ (18)  [_G7359=_G7408, - (u1_struct_0(_G7359)=u1_struct_0(_G7408))]
+ (19)  [- (k2_topmetr(_G7628, _G7763)=k2_topmetr(_G7695, _G7832)), _G7628=_G7695, _G7763=_G7832]
+ (20)  [- (_G2807=_G2807)]
+ (21)  [_G2906=_G2951, - (_G2951=_G2906)]
+ (22)  [- (_G3139=_G3252), _G3139=_G3195, _G3195=_G3252]
+ (23)  [-v2_xxreal_0(_G3638), _G3589=_G3638, v2_xxreal_0(_G3589)]
+ (24)  [-m2_subset_1(_G3952, _G4125, _G4302), m2_subset_1(_G3867, _G4038, _G4213), _G3867=_G3952, _G4038=_G4125, _G4213=_G4302]
+ (25)  [-m1_subset_1(_G4962, _G5099), m1_subset_1(_G4895, _G5030), _G4895=_G4962, _G5030=_G5099]
+ (26)  [-v1_xreal_0(_G5541), _G5492=_G5541, v1_xreal_0(_G5492)]
+ (27)  [-v1_xboole_0(_G6407), _G6358=_G6407, v1_xboole_0(_G6358)]
+ (28)  [-r1_xxreal_0(_G5837, _G5974), r1_xxreal_0(_G5770, _G5905), _G5770=_G5837, _G5905=_G5974]
+
+Connection Proof:
+-----------------
+1  [u1_struct_0(k5_topmetr)=u1_struct_0(k2_topmetr(k6_numbers, np__1))]   (1)  
+1.1  [- (u1_struct_0(k5_topmetr)=u1_struct_0(k2_topmetr(k6_numbers, np__1))), u1_struct_0(k2_topmetr(k6_numbers, np__1))=u1_struct_0(k5_topmetr)]   (21)  substitution:[[_G2951, _G2906], [u1_struct_0(k5_topmetr), u1_struct_0(k2_topmetr(k6_numbers, np__1))]]
+1.1.1  [- (u1_struct_0(k2_topmetr(k6_numbers, np__1))=u1_struct_0(k5_topmetr)), u1_struct_0(k2_topmetr(k6_numbers, np__1))=k1_rcomp_1(k6_numbers, np__1), k1_rcomp_1(k6_numbers, np__1)=u1_struct_0(k5_topmetr)]   (22)  substitution:[[_G3139, _G3252, _G3195], [u1_struct_0(k2_topmetr(k6_numbers, np__1)), u1_struct_0(k5_topmetr), k1_rcomp_1(k6_numbers, np__1)]]
+1.1.1.1  [- (u1_struct_0(k2_topmetr(k6_numbers, np__1))=k1_rcomp_1(k6_numbers, np__1)), v1_xreal_0(k6_numbers), v1_xreal_0(np__1), r1_xxreal_0(k6_numbers, np__1)]   (16)  substitution:[[_G9213, _G9308], [k6_numbers, np__1]]
+1.1.1.1.1  [-v1_xreal_0(k6_numbers), k1_xboole_0=k6_numbers, v1_xreal_0(k1_xboole_0)]   (26)  substitution:[[_G5541, _G5492], [k6_numbers, k1_xboole_0]]
+1.1.1.1.1.1  [- (k1_xboole_0=k6_numbers), k6_numbers=k1_xboole_0]   (21)  substitution:[[_G2951, _G2906], [k1_xboole_0, k6_numbers]]
+1.1.1.1.1.1.1  [- (k6_numbers=k1_xboole_0)]   (4)  
+1.1.1.1.1.2  [-v1_xreal_0(k1_xboole_0), np__0=k1_xboole_0, v1_xreal_0(np__0)]   (26)  substitution:[[_G5541, _G5492], [k1_xboole_0, np__0]]
+1.1.1.1.1.2.1  [- (np__0=k1_xboole_0), v1_xboole_0(np__0)]   (15)  substitution:[[_G9785], [np__0]]
+1.1.1.1.1.2.1.1  [-v1_xboole_0(np__0)]   (6)  
+1.1.1.1.1.2.2  [-v1_xreal_0(np__0), m1_subset_1(np__0, k1_numbers)]   (2)  substitution:[[_G8288], [np__0]]
+1.1.1.1.1.2.2.1  [-m1_subset_1(np__0, k1_numbers)]   (9)  
+1.1.1.1.2  [-v1_xreal_0(np__1), m1_subset_1(np__1, k1_numbers)]   (2)  substitution:[[_G8288], [np__1]]
+1.1.1.1.2.1  [-m1_subset_1(np__1, k1_numbers)]   (13)  
+1.1.1.1.3  [-r1_xxreal_0(k6_numbers, np__1), r1_xxreal_0(np__0, np__1), np__0=k6_numbers, np__1=np__1]   (28)  substitution:[[_G5837, _G5974, _G5770, _G5905], [k6_numbers, np__1, np__0, np__1]]
+1.1.1.1.3.1  [-r1_xxreal_0(np__0, np__1)]   (5)  
+1.1.1.1.3.2  [- (np__0=k6_numbers), np__0=k1_xboole_0, k1_xboole_0=k6_numbers]   (22)  substitution:[[_G3139, _G3252, _G3195], [np__0, k6_numbers, k1_xboole_0]]
+1.1.1.1.3.2.1  [- (np__0=k1_xboole_0), v1_xboole_0(np__0)]   (15)  substitution:[[_G9785], [np__0]]
+1.1.1.1.3.2.1.1  [-v1_xboole_0(np__0)]   (6)  
+1.1.1.1.3.2.2  [- (k1_xboole_0=k6_numbers), k6_numbers=k1_xboole_0]   (21)  substitution:[[_G2951, _G2906], [k1_xboole_0, k6_numbers]]
+1.1.1.1.3.2.2.1  [- (k6_numbers=k1_xboole_0)]   (4)  
+1.1.1.1.3.3  [- (np__1=np__1)]   (20)  substitution:[[_G2807], [np__1]]
+1.1.1.2  [- (k1_rcomp_1(k6_numbers, np__1)=u1_struct_0(k5_topmetr)), u1_struct_0(k5_topmetr)=k1_rcomp_1(k6_numbers, np__1)]   (21)  substitution:[[_G2951, _G2906], [k1_rcomp_1(k6_numbers, np__1), u1_struct_0(k5_topmetr)]]
+1.1.1.2.1  [- (u1_struct_0(k5_topmetr)=k1_rcomp_1(k6_numbers, np__1)), u1_struct_0(k5_topmetr)=u1_struct_0(k17_borsuk_1), u1_struct_0(k17_borsuk_1)=k1_rcomp_1(k6_numbers, np__1)]   (22)  substitution:[[_G3139, _G3252, _G3195], [u1_struct_0(k5_topmetr), k1_rcomp_1(k6_numbers, np__1), u1_struct_0(k17_borsuk_1)]]
+1.1.1.2.1.1  [- (u1_struct_0(k5_topmetr)=u1_struct_0(k17_borsuk_1)), k5_topmetr=k17_borsuk_1]   (18)  substitution:[[_G7359, _G7408], [k5_topmetr, k17_borsuk_1]]
+1.1.1.2.1.1.1  [- (k5_topmetr=k17_borsuk_1)]   (3)  
+1.1.1.2.1.2  [- (u1_struct_0(k17_borsuk_1)=k1_rcomp_1(k6_numbers, np__1))]   (14)  
+------------------------------------------------------
+End of proof for l11_uniform1

@@ -1,0 +1,31 @@
+
+t52_euclid_8 is a Theorem
+Start of proof for t52_euclid_8
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], k1_numbers)]
+ (2)  [-m2_finseq_2(2^[], k1_numbers, k1_euclid(np__3))]
+ (3)  [k9_euclid(np__3, 2^[], 1^[])=k1_euclid_8(k11_binop_2(1^[], k1_seq_1(2^[], np__1)), k11_binop_2(1^[], k1_seq_1(2^[], np__2)), k11_binop_2(1^[], k1_seq_1(2^[], np__3)))]
+ (4)  [m1_subset_1(_G8685, k1_numbers), -v1_xreal_0(_G8685)]
+ (5)  [m2_finseq_2(_G8833, k1_numbers, k1_euclid(np__3)), v1_xreal_0(_G9024), - (k9_euclid(np__3, _G8833, _G9024)=k1_euclid_8(k11_binop_2(_G9024, k1_seq_1(_G8833, np__1)), k11_binop_2(_G9024, k1_seq_1(_G8833, np__2)), k11_binop_2(_G9024, k1_seq_1(_G8833, np__3))))]
+ (6)  [_G5061=_G5110, - (k1_euclid(_G5061)=k1_euclid(_G5110))]
+ (7)  [- (k9_euclid(_G5339, _G5510, _G5685)=k9_euclid(_G5424, _G5597, _G5774)), _G5339=_G5424, _G5510=_G5597, _G5685=_G5774]
+ (8)  [- (k1_euclid_8(_G6367, _G6538, _G6713)=k1_euclid_8(_G6452, _G6625, _G6802)), _G6367=_G6452, _G6538=_G6625, _G6713=_G6802]
+ (9)  [- (k11_binop_2(_G7395, _G7530)=k11_binop_2(_G7462, _G7599)), _G7395=_G7462, _G7530=_G7599]
+ (10)  [- (k1_seq_1(_G7983, _G8118)=k1_seq_1(_G8050, _G8187)), _G7983=_G8050, _G8118=_G8187]
+ (11)  [- (_G2322=_G2322)]
+ (12)  [_G2421=_G2466, - (_G2466=_G2421)]
+ (13)  [- (_G2654=_G2767), _G2654=_G2710, _G2710=_G2767]
+ (14)  [-v1_xreal_0(_G3153), _G3104=_G3153, v1_xreal_0(_G3104)]
+ (15)  [-m1_subset_1(_G3449, _G3586), m1_subset_1(_G3382, _G3517), _G3382=_G3449, _G3517=_G3586]
+ (16)  [-m2_finseq_2(_G4055, _G4228, _G4405), m2_finseq_2(_G3970, _G4141, _G4316), _G3970=_G4055, _G4141=_G4228, _G4316=_G4405]
+
+Connection Proof:
+-----------------
+1  [k9_euclid(np__3, 2^[], 1^[])=k1_euclid_8(k11_binop_2(1^[], k1_seq_1(2^[], np__1)), k11_binop_2(1^[], k1_seq_1(2^[], np__2)), k11_binop_2(1^[], k1_seq_1(2^[], np__3)))]   (3)  
+1.1  [- (k9_euclid(np__3, 2^[], 1^[])=k1_euclid_8(k11_binop_2(1^[], k1_seq_1(2^[], np__1)), k11_binop_2(1^[], k1_seq_1(2^[], np__2)), k11_binop_2(1^[], k1_seq_1(2^[], np__3)))), m2_finseq_2(2^[], k1_numbers, k1_euclid(np__3)), v1_xreal_0(1^[])]   (5)  substitution:[[_G8833, _G9024], [2^[], 1^[]]]
+1.1.1  [-m2_finseq_2(2^[], k1_numbers, k1_euclid(np__3))]   (2)  
+1.1.2  [-v1_xreal_0(1^[]), m1_subset_1(1^[], k1_numbers)]   (4)  substitution:[[_G8685], [1^[]]]
+1.1.2.1  [-m1_subset_1(1^[], k1_numbers)]   (1)  
+------------------------------------------------------
+End of proof for t52_euclid_8

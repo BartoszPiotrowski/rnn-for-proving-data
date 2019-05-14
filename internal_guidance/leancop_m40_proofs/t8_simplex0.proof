@@ -1,0 +1,35 @@
+
+t8_simplex0 is a Theorem
+Start of proof for t8_simplex0
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-r1_tarski(k1_simplex0(2^[]), 2^[])]
+ (2)  [v1_classes1(2^[])]
+ (3)  [_G3647=_G3698, -r1_tarski(_G3647, _G3698)]
+ (4)  [_G3647=_G3698, -r1_tarski(_G3698, _G3647)]
+ (5)  [- (_G3647=_G3698), r1_tarski(_G3647, _G3698), r1_tarski(_G3698, _G3647)]
+ (6)  [-v1_classes1(k1_simplex0(_G4611))]
+ (7)  [v1_classes1(_G4053), - (_G4053=k1_simplex0(_G3979)), r1_tarski(_G3979, _G4053), -r1_tarski(_G3979, 1^[_G4053, _G3979])]
+ (8)  [v1_classes1(_G4053), - (_G4053=k1_simplex0(_G3979)), r1_tarski(_G3979, _G4053), -v1_classes1(1^[_G4053, _G3979])]
+ (9)  [v1_classes1(_G4053), - (_G4053=k1_simplex0(_G3979)), r1_tarski(_G3979, _G4053), r1_tarski(_G4053, 1^[_G4053, _G3979])]
+ (10)  [v1_classes1(_G4053), _G4053=k1_simplex0(_G3979), -r1_tarski(_G3979, _G4053)]
+ (11)  [v1_classes1(_G4053), _G4053=k1_simplex0(_G3979), -r1_tarski(_G4053, _G4288), r1_tarski(_G3979, _G4288), v1_classes1(_G4288)]
+ (12)  [_G3348=_G3397, - (k1_simplex0(_G3348)=k1_simplex0(_G3397))]
+ (13)  [- (_G1667=_G1667)]
+ (14)  [_G1766=_G1811, - (_G1811=_G1766)]
+ (15)  [- (_G1999=_G2112), _G1999=_G2055, _G2055=_G2112]
+ (16)  [-v1_classes1(_G3086), _G3037=_G3086, v1_classes1(_G3037)]
+ (17)  [-r1_tarski(_G2516, _G2653), r1_tarski(_G2449, _G2584), _G2449=_G2516, _G2584=_G2653]
+
+Connection Proof:
+-----------------
+1  [v1_classes1(2^[])]   (2)  
+1.1  [-v1_classes1(2^[]), k1_simplex0(2^[])=2^[], v1_classes1(k1_simplex0(2^[]))]   (16)  substitution:[[_G3086, _G3037], [2^[], k1_simplex0(2^[])]]
+1.1.1  [- (k1_simplex0(2^[])=2^[]), r1_tarski(k1_simplex0(2^[]), 2^[]), r1_tarski(2^[], k1_simplex0(2^[]))]   (5)  substitution:[[_G3647, _G3698], [k1_simplex0(2^[]), 2^[]]]
+1.1.1.1  [-r1_tarski(k1_simplex0(2^[]), 2^[])]   (1)  
+1.1.1.2  [-r1_tarski(2^[], k1_simplex0(2^[])), v1_classes1(k1_simplex0(2^[])), k1_simplex0(2^[])=k1_simplex0(2^[])]   (10)  substitution:[[_G3979, _G4053], [2^[], k1_simplex0(2^[])]]
+1.1.1.2.1  [-v1_classes1(k1_simplex0(2^[]))]   (6)  substitution:[[_G4611], [2^[]]]
+1.1.1.2.2  [- (k1_simplex0(2^[])=k1_simplex0(2^[]))]   (13)  substitution:[[_G1667], [k1_simplex0(2^[])]]
+1.1.2  [-v1_classes1(k1_simplex0(2^[]))]   (6)  substitution:[[_G4611], [2^[]]]
+------------------------------------------------------
+End of proof for t8_simplex0

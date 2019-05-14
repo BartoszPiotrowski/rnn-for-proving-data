@@ -1,0 +1,79 @@
+
+t3_cgames_1 is a Theorem
+Start of proof for t3_cgames_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v3_ordinal1(5^[])]
+ (2)  [-v3_ordinal1(6^[])]
+ (3)  [-r1_ordinal1(5^[], 6^[])]
+ (4)  [r1_tarski(k2_cgames_1(5^[]), k2_cgames_1(6^[]))]
+ (5)  [-r1_tarski(_G8022, _G8078), -r2_hidden(1^[_G8078, _G8022], _G8022)]
+ (6)  [-r1_tarski(_G8022, _G8078), r2_hidden(1^[_G8078, _G8022], _G8078)]
+ (7)  [r1_tarski(_G8022, _G8078), r2_hidden(_G8192, _G8022), -r2_hidden(_G8192, _G8078)]
+ (8)  [v3_ordinal1(_G8479), v3_ordinal1(_G8424), r1_ordinal1(_G8424, _G8479), -r1_tarski(_G8424, _G8479)]
+ (9)  [v3_ordinal1(_G8479), v3_ordinal1(_G8424), -r1_ordinal1(_G8424, _G8479), r1_tarski(_G8424, _G8479)]
+ (10)  [v3_ordinal1(_G8896), r2_hidden(_G8783, k2_cgames_1(_G8896)), -v1_cgames_1(2^[_G8896, _G8783])]
+ (11)  [v3_ordinal1(_G8896), r2_hidden(_G8783, k2_cgames_1(_G8896)), -l1_cgames_1(2^[_G8896, _G8783])]
+ (12)  [v3_ordinal1(_G8896), r2_hidden(_G8783, k2_cgames_1(_G8896)), - (_G8783=2^[_G8896, _G8783])]
+ (13)  [v3_ordinal1(_G8896), r2_hidden(_G8783, k2_cgames_1(_G8896)), r2_hidden(_G11317, k2_xboole_0(u1_cgames_1(2^[_G8896, _G8783]), u2_cgames_1(2^[_G8896, _G8783]))), -v3_ordinal1(3^[_G11317, _G8896, _G8783])]
+ (14)  [v3_ordinal1(_G8896), r2_hidden(_G8783, k2_cgames_1(_G8896)), r2_hidden(_G11317, k2_xboole_0(u1_cgames_1(2^[_G8896, _G8783]), u2_cgames_1(2^[_G8896, _G8783]))), -r2_hidden(3^[_G11317, _G8896, _G8783], _G8896)]
+ (15)  [v3_ordinal1(_G8896), r2_hidden(_G8783, k2_cgames_1(_G8896)), r2_hidden(_G11317, k2_xboole_0(u1_cgames_1(2^[_G8896, _G8783]), u2_cgames_1(2^[_G8896, _G8783]))), -r2_hidden(_G11317, k2_cgames_1(3^[_G11317, _G8896, _G8783]))]
+ (16)  [v3_ordinal1(_G8896), -r2_hidden(_G8783, k2_cgames_1(_G8896)), l1_cgames_1(_G9113), v1_cgames_1(_G9113), _G8783=_G9113, -r2_hidden(4^[_G9113, _G8896, _G8783], k2_xboole_0(u1_cgames_1(_G9113), u2_cgames_1(_G9113)))]
+ (17)  [v3_ordinal1(_G8896), -r2_hidden(_G8783, k2_cgames_1(_G8896)), l1_cgames_1(_G9113), v1_cgames_1(_G9113), _G8783=_G9113, v3_ordinal1(_G11522), r2_hidden(_G11522, _G8896), r2_hidden(4^[_G9113, _G8896, _G8783], k2_cgames_1(_G11522))]
+ (18)  [- (k2_xboole_0(_G6516, _G6651)=k2_xboole_0(_G6583, _G6720)), _G6516=_G6583, _G6651=_G6720]
+ (19)  [_G7113=_G7162, - (u1_cgames_1(_G7113)=u1_cgames_1(_G7162))]
+ (20)  [_G7391=_G7440, - (u2_cgames_1(_G7391)=u2_cgames_1(_G7440))]
+ (21)  [_G7660=_G7709, - (k2_cgames_1(_G7660)=k2_cgames_1(_G7709))]
+ (22)  [- (_G2992=_G2992)]
+ (23)  [_G3091=_G3136, - (_G3136=_G3091)]
+ (24)  [- (_G3324=_G3437), _G3324=_G3380, _G3380=_G3437]
+ (25)  [-v1_cgames_1(_G3823), _G3774=_G3823, v1_cgames_1(_G3774)]
+ (26)  [-l1_cgames_1(_G4101), _G4052=_G4101, l1_cgames_1(_G4052)]
+ (27)  [-r2_hidden(_G4397, _G4534), r2_hidden(_G4330, _G4465), _G4330=_G4397, _G4465=_G4534]
+ (28)  [-v3_ordinal1(_G4976), _G4927=_G4976, v3_ordinal1(_G4927)]
+ (29)  [-r1_ordinal1(_G5272, _G5409), r1_ordinal1(_G5205, _G5340), _G5205=_G5272, _G5340=_G5409]
+ (30)  [-r1_tarski(_G5860, _G5997), r1_tarski(_G5793, _G5928), _G5793=_G5860, _G5928=_G5997]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k2_cgames_1(5^[]), k2_cgames_1(6^[]))]   (4)  
+1.1  [-r1_tarski(k2_cgames_1(5^[]), k2_cgames_1(6^[])), r2_hidden(1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])], k2_cgames_1(6^[]))]   (6)  substitution:[[_G8022, _G8078], [k2_cgames_1(5^[]), k2_cgames_1(6^[])]]
+1.1.1  [-r2_hidden(1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])], k2_cgames_1(6^[])), v3_ordinal1(6^[]), l1_cgames_1(2^[5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]]), v1_cgames_1(2^[5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]]), 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]=2^[5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]], -r2_hidden(4^[2^[5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]], 6^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]], k2_xboole_0(u1_cgames_1(2^[5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]]), u2_cgames_1(2^[5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]])))]   (16)  substitution:[[_G8783, _G8896, _G9113], [1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])], 6^[], 2^[5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]]]]
+1.1.1.1  [-v3_ordinal1(6^[])]   (2)  
+1.1.1.2  [-l1_cgames_1(2^[5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]]), v3_ordinal1(5^[]), r2_hidden(1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])], k2_cgames_1(5^[]))]   (11)  substitution:[[_G8896, _G8783], [5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]]]
+1.1.1.2.1  [-v3_ordinal1(5^[])]   (1)  
+1.1.1.2.2  [-r2_hidden(1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])], k2_cgames_1(5^[])), -r1_tarski(k2_cgames_1(5^[]), k2_cgames_1(6^[]))]   (5)  substitution:[[_G8078, _G8022], [k2_cgames_1(6^[]), k2_cgames_1(5^[])]]
+1.1.1.2.2.1  [r1_tarski(k2_cgames_1(5^[]), k2_cgames_1(6^[]))]   (4)  
+1.1.1.3  [-v1_cgames_1(2^[5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]]), v3_ordinal1(5^[]), r2_hidden(1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])], k2_cgames_1(5^[]))]   (10)  substitution:[[_G8896, _G8783], [5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]]]
+1.1.1.3.1  [-v3_ordinal1(5^[])]   (1)  
+1.1.1.3.2  [-r2_hidden(1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])], k2_cgames_1(5^[])), -r1_tarski(k2_cgames_1(5^[]), k2_cgames_1(6^[]))]   (5)  substitution:[[_G8078, _G8022], [k2_cgames_1(6^[]), k2_cgames_1(5^[])]]
+1.1.1.3.2.1  [r1_tarski(k2_cgames_1(5^[]), k2_cgames_1(6^[]))]   (4)  
+1.1.1.4  [- (1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]=2^[5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]]), v3_ordinal1(5^[]), r2_hidden(1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])], k2_cgames_1(5^[]))]   (12)  substitution:[[_G8783, _G8896], [1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])], 5^[]]]
+1.1.1.4.1  [-v3_ordinal1(5^[])]   (1)  
+1.1.1.4.2  [-r2_hidden(1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])], k2_cgames_1(5^[])), -r1_tarski(k2_cgames_1(5^[]), k2_cgames_1(6^[]))]   (5)  substitution:[[_G8078, _G8022], [k2_cgames_1(6^[]), k2_cgames_1(5^[])]]
+1.1.1.4.2.1  [r1_tarski(k2_cgames_1(5^[]), k2_cgames_1(6^[]))]   (4)  
+1.1.1.5  [r2_hidden(4^[2^[5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]], 6^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]], k2_xboole_0(u1_cgames_1(2^[5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]]), u2_cgames_1(2^[5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]]))), v3_ordinal1(5^[]), r2_hidden(1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])], k2_cgames_1(5^[])), -r2_hidden(4^[2^[5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]], 6^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]], k2_cgames_1(3^[4^[2^[5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]], 6^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]], 5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]]))]   (15)  substitution:[[_G11317, _G8896, _G8783], [4^[2^[5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]], 6^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]], 5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]]]
+1.1.1.5.1  [-v3_ordinal1(5^[])]   (1)  
+1.1.1.5.2  [-r2_hidden(1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])], k2_cgames_1(5^[])), -r1_tarski(k2_cgames_1(5^[]), k2_cgames_1(6^[]))]   (5)  substitution:[[_G8078, _G8022], [k2_cgames_1(6^[]), k2_cgames_1(5^[])]]
+1.1.1.5.2.1  [r1_tarski(k2_cgames_1(5^[]), k2_cgames_1(6^[]))]   (4)  
+1.1.1.5.3  [r2_hidden(4^[2^[5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]], 6^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]], k2_cgames_1(3^[4^[2^[5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]], 6^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]], 5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]])), v3_ordinal1(6^[]), -r2_hidden(1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])], k2_cgames_1(6^[])), l1_cgames_1(2^[5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]]), v1_cgames_1(2^[5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]]), 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]=2^[5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]], v3_ordinal1(3^[4^[2^[5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]], 6^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]], 5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]]), r2_hidden(3^[4^[2^[5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]], 6^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]], 5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]], 6^[])]   (17)  substitution:[[_G9113, _G8896, _G8783, _G11522], [2^[5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]], 6^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])], 3^[4^[2^[5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]], 6^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]], 5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]]]]
+1.1.1.5.3.1  [-v3_ordinal1(6^[])]   (2)  
+1.1.1.5.3.2  [r2_hidden(1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])], k2_cgames_1(6^[]))]   (reduction:1.1)  
+1.1.1.5.3.3  [-l1_cgames_1(2^[5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]])]   (lemmata:1.1.1)  
+1.1.1.5.3.4  [-v1_cgames_1(2^[5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]])]   (lemmata:1.1.1)  
+1.1.1.5.3.5  [- (1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]=2^[5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]])]   (lemmata:1.1.1)  
+1.1.1.5.3.6  [-v3_ordinal1(3^[4^[2^[5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]], 6^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]], 5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]]), v3_ordinal1(5^[]), r2_hidden(1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])], k2_cgames_1(5^[])), r2_hidden(4^[2^[5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]], 6^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]], k2_xboole_0(u1_cgames_1(2^[5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]]), u2_cgames_1(2^[5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]])))]   (13)  substitution:[[_G11317, _G8896, _G8783], [4^[2^[5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]], 6^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]], 5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]]]
+1.1.1.5.3.6.1  [-v3_ordinal1(5^[])]   (1)  
+1.1.1.5.3.6.2  [-r2_hidden(1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])], k2_cgames_1(5^[]))]   (lemmata:1.1.1.5)  
+1.1.1.5.3.6.3  [-r2_hidden(4^[2^[5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]], 6^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]], k2_xboole_0(u1_cgames_1(2^[5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]]), u2_cgames_1(2^[5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]])))]   (reduction:1.1.1)  
+1.1.1.5.3.7  [-r2_hidden(3^[4^[2^[5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]], 6^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]], 5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]], 6^[]), r1_tarski(5^[], 6^[]), r2_hidden(3^[4^[2^[5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]], 6^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]], 5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]], 5^[])]   (7)  substitution:[[_G8192, _G8078, _G8022], [3^[4^[2^[5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]], 6^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]], 5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]], 6^[], 5^[]]]
+1.1.1.5.3.7.1  [-r1_tarski(5^[], 6^[]), v3_ordinal1(6^[]), v3_ordinal1(5^[]), r1_ordinal1(5^[], 6^[])]   (8)  substitution:[[_G8424, _G8479], [5^[], 6^[]]]
+1.1.1.5.3.7.1.1  [-v3_ordinal1(6^[])]   (2)  
+1.1.1.5.3.7.1.2  [-v3_ordinal1(5^[])]   (1)  
+1.1.1.5.3.7.1.3  [-r1_ordinal1(5^[], 6^[])]   (3)  
+1.1.1.5.3.7.2  [-r2_hidden(3^[4^[2^[5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]], 6^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]], 5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]], 5^[]), v3_ordinal1(5^[]), r2_hidden(1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])], k2_cgames_1(5^[])), r2_hidden(4^[2^[5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]], 6^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]], k2_xboole_0(u1_cgames_1(2^[5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]]), u2_cgames_1(2^[5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]])))]   (14)  substitution:[[_G11317, _G8896, _G8783], [4^[2^[5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]], 6^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]], 5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]]]
+1.1.1.5.3.7.2.1  [-v3_ordinal1(5^[])]   (1)  
+1.1.1.5.3.7.2.2  [-r2_hidden(1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])], k2_cgames_1(5^[]))]   (lemmata:1.1.1.5)  
+1.1.1.5.3.7.2.3  [-r2_hidden(4^[2^[5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]], 6^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]], k2_xboole_0(u1_cgames_1(2^[5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]]), u2_cgames_1(2^[5^[], 1^[k2_cgames_1(6^[]), k2_cgames_1(5^[])]])))]   (reduction:1.1.1)  
+------------------------------------------------------
+End of proof for t3_cgames_1

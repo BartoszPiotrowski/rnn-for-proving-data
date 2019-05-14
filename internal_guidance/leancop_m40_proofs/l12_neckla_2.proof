@@ -1,0 +1,40 @@
+
+l12_neckla_2 is a Theorem
+Start of proof for l12_neckla_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [u1_struct_0(k4_necklace(np__4))=k2_enumset1(k6_numbers, np__1, np__2, np__3)]
+ (2)  [m1_subset_1(_G7082, k4_ordinal1), -v7_ordinal1(_G7082)]
+ (3)  [- (k5_numbers=k4_ordinal1)]
+ (4)  [-v2_xxreal_0(np__4)]
+ (5)  [-m2_subset_1(np__4, k1_numbers, k5_numbers)]
+ (6)  [-m1_subset_1(np__4, k5_numbers)]
+ (7)  [-m1_subset_1(np__4, k1_numbers)]
+ (8)  [- (np__4=k2_enumset1(k6_numbers, np__1, np__2, np__3))]
+ (9)  [v7_ordinal1(_G7778), - (u1_struct_0(k4_necklace(_G7778))=_G7778)]
+ (10)  [_G4937=_G4986, - (u1_struct_0(_G4937)=u1_struct_0(_G4986))]
+ (11)  [_G5215=_G5264, - (k4_necklace(_G5215)=k4_necklace(_G5264))]
+ (12)  [- (k2_enumset1(_G5484, _G5691, _G5902, _G6117)=k2_enumset1(_G5587, _G5796, _G6009, _G6226)), _G5484=_G5587, _G5691=_G5796, _G5902=_G6009, _G6117=_G6226]
+ (13)  [- (_G1899=_G1899)]
+ (14)  [_G1998=_G2043, - (_G2043=_G1998)]
+ (15)  [- (_G2231=_G2344), _G2231=_G2287, _G2287=_G2344]
+ (16)  [-v2_xxreal_0(_G2730), _G2681=_G2730, v2_xxreal_0(_G2681)]
+ (17)  [-m2_subset_1(_G3044, _G3217, _G3394), m2_subset_1(_G2959, _G3130, _G3305), _G2959=_G3044, _G3130=_G3217, _G3305=_G3394]
+ (18)  [-v7_ordinal1(_G4624), _G4575=_G4624, v7_ordinal1(_G4575)]
+ (19)  [-m1_subset_1(_G4054, _G4191), m1_subset_1(_G3987, _G4122), _G3987=_G4054, _G4122=_G4191]
+
+Connection Proof:
+-----------------
+1  [u1_struct_0(k4_necklace(np__4))=k2_enumset1(k6_numbers, np__1, np__2, np__3)]   (1)  
+1.1  [- (u1_struct_0(k4_necklace(np__4))=k2_enumset1(k6_numbers, np__1, np__2, np__3)), u1_struct_0(k4_necklace(np__4))=u1_struct_0(k4_necklace(k2_enumset1(k6_numbers, np__1, np__2, np__3))), u1_struct_0(k4_necklace(k2_enumset1(k6_numbers, np__1, np__2, np__3)))=k2_enumset1(k6_numbers, np__1, np__2, np__3)]   (15)  substitution:[[_G2231, _G2344, _G2287], [u1_struct_0(k4_necklace(np__4)), k2_enumset1(k6_numbers, np__1, np__2, np__3), u1_struct_0(k4_necklace(k2_enumset1(k6_numbers, np__1, np__2, np__3)))]]
+1.1.1  [- (u1_struct_0(k4_necklace(np__4))=u1_struct_0(k4_necklace(k2_enumset1(k6_numbers, np__1, np__2, np__3)))), k4_necklace(np__4)=k4_necklace(k2_enumset1(k6_numbers, np__1, np__2, np__3))]   (10)  substitution:[[_G4937, _G4986], [k4_necklace(np__4), k4_necklace(k2_enumset1(k6_numbers, np__1, np__2, np__3))]]
+1.1.1.1  [- (k4_necklace(np__4)=k4_necklace(k2_enumset1(k6_numbers, np__1, np__2, np__3))), np__4=k2_enumset1(k6_numbers, np__1, np__2, np__3)]   (11)  substitution:[[_G5215, _G5264], [np__4, k2_enumset1(k6_numbers, np__1, np__2, np__3)]]
+1.1.1.1.1  [- (np__4=k2_enumset1(k6_numbers, np__1, np__2, np__3))]   (8)  
+1.1.2  [- (u1_struct_0(k4_necklace(k2_enumset1(k6_numbers, np__1, np__2, np__3)))=k2_enumset1(k6_numbers, np__1, np__2, np__3)), v7_ordinal1(k2_enumset1(k6_numbers, np__1, np__2, np__3))]   (9)  substitution:[[_G7778], [k2_enumset1(k6_numbers, np__1, np__2, np__3)]]
+1.1.2.1  [-v7_ordinal1(k2_enumset1(k6_numbers, np__1, np__2, np__3)), m1_subset_1(k2_enumset1(k6_numbers, np__1, np__2, np__3), k4_ordinal1)]   (2)  substitution:[[_G7082], [k2_enumset1(k6_numbers, np__1, np__2, np__3)]]
+1.1.2.1.1  [-m1_subset_1(k2_enumset1(k6_numbers, np__1, np__2, np__3), k4_ordinal1), m1_subset_1(np__4, k5_numbers), np__4=k2_enumset1(k6_numbers, np__1, np__2, np__3), k5_numbers=k4_ordinal1]   (19)  substitution:[[_G4054, _G4191, _G3987, _G4122], [k2_enumset1(k6_numbers, np__1, np__2, np__3), k4_ordinal1, np__4, k5_numbers]]
+1.1.2.1.1.1  [-m1_subset_1(np__4, k5_numbers)]   (6)  
+1.1.2.1.1.2  [- (np__4=k2_enumset1(k6_numbers, np__1, np__2, np__3))]   (8)  
+1.1.2.1.1.3  [- (k5_numbers=k4_ordinal1)]   (3)  
+------------------------------------------------------
+End of proof for l12_neckla_2

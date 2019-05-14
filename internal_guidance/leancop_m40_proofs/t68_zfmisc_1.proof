@@ -1,0 +1,30 @@
+
+t68_zfmisc_1 is a Theorem
+Start of proof for t68_zfmisc_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [r1_tarski(k1_tarski(2^[]), k1_zfmisc_1(2^[]))]
+ (2)  [-r1_tarski(_G4819, _G4819)]
+ (3)  [r1_tarski(k1_tarski(_G4568), _G4615), -r2_hidden(_G4568, _G4615)]
+ (4)  [-r1_tarski(k1_tarski(_G4568), _G4615), r2_hidden(_G4568, _G4615)]
+ (5)  [_G4206=k1_zfmisc_1(_G4148), r2_hidden(_G4336, _G4206), -r1_tarski(_G4336, _G4148)]
+ (6)  [_G4206=k1_zfmisc_1(_G4148), -r2_hidden(_G4336, _G4206), r1_tarski(_G4336, _G4148)]
+ (7)  [- (_G4206=k1_zfmisc_1(_G4148)), r2_hidden(1^[_G4206, _G4148], _G4206), r1_tarski(1^[_G4206, _G4148], _G4148)]
+ (8)  [- (_G4206=k1_zfmisc_1(_G4148)), -r2_hidden(1^[_G4206, _G4148], _G4206), -r1_tarski(1^[_G4206, _G4148], _G4148)]
+ (9)  [_G3559=_G3608, - (k1_tarski(_G3559)=k1_tarski(_G3608))]
+ (10)  [_G3828=_G3877, - (k1_zfmisc_1(_G3828)=k1_zfmisc_1(_G3877))]
+ (11)  [- (_G1550=_G1550)]
+ (12)  [_G1649=_G1694, - (_G1694=_G1649)]
+ (13)  [- (_G1882=_G1995), _G1882=_G1938, _G1938=_G1995]
+ (14)  [-r2_hidden(_G2399, _G2536), r2_hidden(_G2332, _G2467), _G2332=_G2399, _G2467=_G2536]
+ (15)  [-r1_tarski(_G2987, _G3124), r1_tarski(_G2920, _G3055), _G2920=_G2987, _G3055=_G3124]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k1_tarski(2^[]), k1_zfmisc_1(2^[]))]   (1)  
+1.1  [-r1_tarski(k1_tarski(2^[]), k1_zfmisc_1(2^[])), r2_hidden(2^[], k1_zfmisc_1(2^[]))]   (4)  substitution:[[_G4568, _G4615], [2^[], k1_zfmisc_1(2^[])]]
+1.1.1  [-r2_hidden(2^[], k1_zfmisc_1(2^[])), k1_zfmisc_1(2^[])=k1_zfmisc_1(2^[]), r1_tarski(2^[], 2^[])]   (6)  substitution:[[_G4336, _G4206, _G4148], [2^[], k1_zfmisc_1(2^[]), 2^[]]]
+1.1.1.1  [- (k1_zfmisc_1(2^[])=k1_zfmisc_1(2^[]))]   (11)  substitution:[[_G1550], [k1_zfmisc_1(2^[])]]
+1.1.1.2  [-r1_tarski(2^[], 2^[])]   (2)  substitution:[[_G4819], [2^[]]]
+------------------------------------------------------
+End of proof for t68_zfmisc_1

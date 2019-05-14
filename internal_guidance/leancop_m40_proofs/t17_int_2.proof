@@ -1,0 +1,38 @@
+
+t17_int_2 is a Theorem
+Start of proof for t17_int_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_int_1(1^[])]
+ (2)  [-v1_int_1(2^[])]
+ (3)  [m1_subset_1(k2_int_2(1^[], 2^[]), k5_numbers)]
+ (4)  [v7_ordinal1(_G4967), -r2_hidden(_G4967, k4_ordinal1)]
+ (5)  [-v7_ordinal1(_G4967), r2_hidden(_G4967, k4_ordinal1)]
+ (6)  [- (k5_numbers=k4_ordinal1)]
+ (7)  [r2_hidden(_G5468, _G5513), -m1_subset_1(_G5468, _G5513)]
+ (8)  [-v7_ordinal1(k2_int_2(_G5124, _G5175)), v1_int_1(_G5124), v1_int_1(_G5175)]
+ (9)  [- (k2_int_2(_G4349, _G4484)=k2_int_2(_G4416, _G4553)), _G4349=_G4416, _G4484=_G4553]
+ (10)  [- (_G1751=_G1751)]
+ (11)  [_G1850=_G1895, - (_G1895=_G1850)]
+ (12)  [- (_G2083=_G2196), _G2083=_G2139, _G2139=_G2196]
+ (13)  [-v7_ordinal1(_G2582), _G2533=_G2582, v7_ordinal1(_G2533)]
+ (14)  [-r2_hidden(_G2878, _G3015), r2_hidden(_G2811, _G2946), _G2811=_G2878, _G2946=_G3015]
+ (15)  [-v1_int_1(_G3457), _G3408=_G3457, v1_int_1(_G3408)]
+ (16)  [-m1_subset_1(_G3744, _G3881), m1_subset_1(_G3677, _G3812), _G3677=_G3744, _G3812=_G3881]
+
+Connection Proof:
+-----------------
+1  [m1_subset_1(k2_int_2(1^[], 2^[]), k5_numbers)]   (3)  
+1.1  [-m1_subset_1(k2_int_2(1^[], 2^[]), k5_numbers), r2_hidden(k2_int_2(1^[], 2^[]), k5_numbers)]   (7)  substitution:[[_G5468, _G5513], [k2_int_2(1^[], 2^[]), k5_numbers]]
+1.1.1  [-r2_hidden(k2_int_2(1^[], 2^[]), k5_numbers), r2_hidden(k2_int_2(1^[], 2^[]), k4_ordinal1), k2_int_2(1^[], 2^[])=k2_int_2(1^[], 2^[]), k4_ordinal1=k5_numbers]   (14)  substitution:[[_G2878, _G3015, _G2811, _G2946], [k2_int_2(1^[], 2^[]), k5_numbers, k2_int_2(1^[], 2^[]), k4_ordinal1]]
+1.1.1.1  [-r2_hidden(k2_int_2(1^[], 2^[]), k4_ordinal1), v7_ordinal1(k2_int_2(1^[], 2^[]))]   (4)  substitution:[[_G4967], [k2_int_2(1^[], 2^[])]]
+1.1.1.1.1  [-v7_ordinal1(k2_int_2(1^[], 2^[])), v1_int_1(1^[]), v1_int_1(2^[])]   (8)  substitution:[[_G5124, _G5175], [1^[], 2^[]]]
+1.1.1.1.1.1  [-v1_int_1(1^[])]   (1)  
+1.1.1.1.1.2  [-v1_int_1(2^[])]   (2)  
+1.1.1.2  [- (k2_int_2(1^[], 2^[])=k2_int_2(1^[], 2^[])), 1^[]=1^[], 2^[]=2^[]]   (9)  substitution:[[_G4349, _G4484, _G4416, _G4553], [1^[], 2^[], 1^[], 2^[]]]
+1.1.1.2.1  [- (1^[]=1^[])]   (10)  substitution:[[_G1751], [1^[]]]
+1.1.1.2.2  [- (2^[]=2^[])]   (10)  substitution:[[_G1751], [2^[]]]
+1.1.1.3  [- (k4_ordinal1=k5_numbers), k5_numbers=k4_ordinal1]   (11)  substitution:[[_G1895, _G1850], [k4_ordinal1, k5_numbers]]
+1.1.1.3.1  [- (k5_numbers=k4_ordinal1)]   (6)  
+------------------------------------------------------
+End of proof for t17_int_2

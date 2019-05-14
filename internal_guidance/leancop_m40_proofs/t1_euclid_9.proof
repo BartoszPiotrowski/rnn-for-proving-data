@@ -1,0 +1,44 @@
+
+t1_euclid_9 is a Theorem
+Start of proof for t1_euclid_9
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v7_ordinal1(1^[])]
+ (2)  [-v1_relat_1(2^[])]
+ (3)  [-v1_funct_1(2^[])]
+ (4)  [-v3_card_1(2^[], 1^[])]
+ (5)  [-v1_finseq_1(2^[])]
+ (6)  [-v1_xboole_0(2^[])]
+ (7)  [1^[]=k6_numbers]
+ (8)  [v3_card_1(_G5611, _G5564), - (k1_card_1(_G5611)=_G5564)]
+ (9)  [-v3_card_1(_G5611, _G5564), k1_card_1(_G5611)=_G5564]
+ (10)  [v1_xboole_0(_G5824), -v1_xboole_0(k1_card_1(_G5824))]
+ (11)  [v1_xboole_0(_G5824), -v1_card_1(k1_card_1(_G5824))]
+ (12)  [- (k6_numbers=k1_xboole_0)]
+ (13)  [v1_xboole_0(_G6093), - (_G6093=k1_xboole_0)]
+ (14)  [_G5265=_G5314, - (k1_card_1(_G5265)=k1_card_1(_G5314))]
+ (15)  [- (_G2089=_G2089)]
+ (16)  [_G2188=_G2233, - (_G2233=_G2188)]
+ (17)  [- (_G2421=_G2534), _G2421=_G2477, _G2477=_G2534]
+ (18)  [-v1_card_1(_G2920), _G2871=_G2920, v1_card_1(_G2871)]
+ (19)  [-v7_ordinal1(_G3198), _G3149=_G3198, v7_ordinal1(_G3149)]
+ (20)  [-v1_relat_1(_G3476), _G3427=_G3476, v1_relat_1(_G3427)]
+ (21)  [-v1_funct_1(_G3754), _G3705=_G3754, v1_funct_1(_G3705)]
+ (22)  [-v3_card_1(_G4050, _G4187), v3_card_1(_G3983, _G4118), _G3983=_G4050, _G4118=_G4187]
+ (23)  [-v1_finseq_1(_G4629), _G4580=_G4629, v1_finseq_1(_G4580)]
+ (24)  [-v1_xboole_0(_G4898), _G4849=_G4898, v1_xboole_0(_G4849)]
+
+Connection Proof:
+-----------------
+1  [1^[]=k6_numbers]   (7)  
+1.1  [- (1^[]=k6_numbers), 1^[]=k1_xboole_0, k1_xboole_0=k6_numbers]   (17)  substitution:[[_G2421, _G2534, _G2477], [1^[], k6_numbers, k1_xboole_0]]
+1.1.1  [- (1^[]=k1_xboole_0), v1_xboole_0(1^[])]   (13)  substitution:[[_G6093], [1^[]]]
+1.1.1.1  [-v1_xboole_0(1^[]), k1_card_1(2^[])=1^[], v1_xboole_0(k1_card_1(2^[]))]   (24)  substitution:[[_G4898, _G4849], [1^[], k1_card_1(2^[])]]
+1.1.1.1.1  [- (k1_card_1(2^[])=1^[]), v3_card_1(2^[], 1^[])]   (8)  substitution:[[_G5611, _G5564], [2^[], 1^[]]]
+1.1.1.1.1.1  [-v3_card_1(2^[], 1^[])]   (4)  
+1.1.1.1.2  [-v1_xboole_0(k1_card_1(2^[])), v1_xboole_0(2^[])]   (10)  substitution:[[_G5824], [2^[]]]
+1.1.1.1.2.1  [-v1_xboole_0(2^[])]   (6)  
+1.1.2  [- (k1_xboole_0=k6_numbers), k6_numbers=k1_xboole_0]   (16)  substitution:[[_G2233, _G2188], [k1_xboole_0, k6_numbers]]
+1.1.2.1  [- (k6_numbers=k1_xboole_0)]   (12)  
+------------------------------------------------------
+End of proof for t1_euclid_9

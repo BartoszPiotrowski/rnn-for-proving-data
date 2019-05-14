@@ -1,0 +1,68 @@
+
+t13_bspace is a Theorem
+Start of proof for t13_bspace
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-7^[], -r2_hidden(3^[], 1^[]), r2_hidden(3^[], 2^[])]
+ (2)  [-7^[], r2_hidden(3^[], 1^[]), -r2_hidden(3^[], 2^[])]
+ (3)  [-7^[], k3_bspace(1^[], 3^[])=k3_bspace(2^[], 3^[])]
+ (4)  [-5^[], r2_hidden(3^[], 1^[])]
+ (5)  [-5^[], -r2_hidden(3^[], 2^[])]
+ (6)  [-4^[], r2_hidden(3^[], 2^[])]
+ (7)  [-4^[], -r2_hidden(3^[], 1^[])]
+ (8)  [-6^[], 4^[], 5^[]]
+ (9)  [-6^[], - (k3_bspace(1^[], 3^[])=k3_bspace(2^[], 3^[]))]
+ (10)  [6^[], 7^[]]
+ (11)  [r2_hidden(_G4445, _G4380), - (k3_bspace(_G4380, _G4445)=k5_struct_0(k2_bspace))]
+ (12)  [-r2_hidden(_G4445, _G4380), - (k3_bspace(_G4380, _G4445)=k4_struct_0(k2_bspace))]
+ (13)  [k3_bspace(_G4929, _G4979)=k4_struct_0(k2_bspace), r2_hidden(_G4979, _G4929)]
+ (14)  [- (k3_bspace(_G4929, _G4979)=k4_struct_0(k2_bspace)), -r2_hidden(_G4979, _G4929)]
+ (15)  [_G3173=_G3222, - (k5_struct_0(_G3173)=k5_struct_0(_G3222))]
+ (16)  [_G3451=_G3500, - (k4_struct_0(_G3451)=k4_struct_0(_G3500))]
+ (17)  [- (k3_bspace(_G3720, _G3855)=k3_bspace(_G3787, _G3924)), _G3720=_G3787, _G3855=_G3924]
+ (18)  [-r2_hidden(_G2622, _G2759), r2_hidden(_G2555, _G2690), _G2555=_G2622, _G2690=_G2759]
+ (19)  [- (_G1782=_G1782)]
+ (20)  [_G1881=_G1926, - (_G1926=_G1881)]
+ (21)  [- (_G2114=_G2227), _G2114=_G2170, _G2170=_G2227]
+
+Connection Proof:
+-----------------
+1  [6^[], 7^[]]   (10)  
+1.1  [-6^[], 4^[], 5^[]]   (8)  
+1.1.1  [-4^[], r2_hidden(3^[], 2^[])]   (6)  
+1.1.1.1  [-r2_hidden(3^[], 2^[]), - (k3_bspace(2^[], 3^[])=k4_struct_0(k2_bspace))]   (12)  substitution:[[_G4445, _G4380], [3^[], 2^[]]]
+1.1.1.1.1  [k3_bspace(2^[], 3^[])=k4_struct_0(k2_bspace), - (k3_bspace(1^[], 3^[])=k4_struct_0(k2_bspace)), k3_bspace(1^[], 3^[])=k3_bspace(2^[], 3^[])]   (21)  substitution:[[_G2170, _G2227, _G2114], [k3_bspace(2^[], 3^[]), k4_struct_0(k2_bspace), k3_bspace(1^[], 3^[])]]
+1.1.1.1.1.1  [k3_bspace(1^[], 3^[])=k4_struct_0(k2_bspace), r2_hidden(3^[], 1^[])]   (13)  substitution:[[_G4929, _G4979], [1^[], 3^[]]]
+1.1.1.1.1.1.1  [-r2_hidden(3^[], 1^[]), -4^[]]   (7)  
+1.1.1.1.1.1.1.1  [4^[]]   (reduction:1.1)  
+1.1.1.1.1.2  [- (k3_bspace(1^[], 3^[])=k3_bspace(2^[], 3^[])), -6^[]]   (9)  
+1.1.1.1.1.2.1  [6^[]]   (reduction:1)  
+1.1.2  [-5^[], r2_hidden(3^[], 1^[])]   (4)  
+1.1.2.1  [-r2_hidden(3^[], 1^[]), - (k3_bspace(1^[], 3^[])=k4_struct_0(k2_bspace))]   (12)  substitution:[[_G4445, _G4380], [3^[], 1^[]]]
+1.1.2.1.1  [k3_bspace(1^[], 3^[])=k4_struct_0(k2_bspace), - (k3_bspace(2^[], 3^[])=k4_struct_0(k2_bspace)), k3_bspace(2^[], 3^[])=k3_bspace(1^[], 3^[])]   (21)  substitution:[[_G2170, _G2227, _G2114], [k3_bspace(1^[], 3^[]), k4_struct_0(k2_bspace), k3_bspace(2^[], 3^[])]]
+1.1.2.1.1.1  [k3_bspace(2^[], 3^[])=k4_struct_0(k2_bspace), r2_hidden(3^[], 2^[])]   (13)  substitution:[[_G4929, _G4979], [2^[], 3^[]]]
+1.1.2.1.1.1.1  [-r2_hidden(3^[], 2^[]), -5^[]]   (5)  
+1.1.2.1.1.1.1.1  [5^[]]   (reduction:1.1)  
+1.1.2.1.1.2  [- (k3_bspace(2^[], 3^[])=k3_bspace(1^[], 3^[])), k3_bspace(1^[], 3^[])=k3_bspace(2^[], 3^[])]   (20)  substitution:[[_G1926, _G1881], [k3_bspace(2^[], 3^[]), k3_bspace(1^[], 3^[])]]
+1.1.2.1.1.2.1  [- (k3_bspace(1^[], 3^[])=k3_bspace(2^[], 3^[])), -6^[]]   (9)  
+1.1.2.1.1.2.1.1  [6^[]]   (reduction:1)  
+1.2  [-7^[], -r2_hidden(3^[], 1^[]), r2_hidden(3^[], 2^[])]   (1)  
+1.2.1  [r2_hidden(3^[], 1^[]), - (k3_bspace(1^[], 3^[])=k5_struct_0(k2_bspace))]   (11)  substitution:[[_G4445, _G4380], [3^[], 1^[]]]
+1.2.1.1  [k3_bspace(1^[], 3^[])=k5_struct_0(k2_bspace), - (k5_struct_0(k2_bspace)=k3_bspace(1^[], 3^[]))]   (20)  substitution:[[_G1881, _G1926], [k3_bspace(1^[], 3^[]), k5_struct_0(k2_bspace)]]
+1.2.1.1.1  [k5_struct_0(k2_bspace)=k3_bspace(1^[], 3^[]), - (k3_bspace(2^[], 3^[])=k3_bspace(1^[], 3^[])), k3_bspace(2^[], 3^[])=k5_struct_0(k2_bspace)]   (21)  substitution:[[_G2170, _G2227, _G2114], [k5_struct_0(k2_bspace), k3_bspace(1^[], 3^[]), k3_bspace(2^[], 3^[])]]
+1.2.1.1.1.1  [k3_bspace(2^[], 3^[])=k3_bspace(1^[], 3^[]), - (k3_bspace(1^[], 3^[])=k3_bspace(2^[], 3^[]))]   (20)  substitution:[[_G1881, _G1926], [k3_bspace(2^[], 3^[]), k3_bspace(1^[], 3^[])]]
+1.2.1.1.1.1.1  [k3_bspace(1^[], 3^[])=k3_bspace(2^[], 3^[]), -7^[]]   (3)  
+1.2.1.1.1.1.1.1  [7^[]]   (reduction:1)  
+1.2.1.1.1.2  [- (k3_bspace(2^[], 3^[])=k5_struct_0(k2_bspace)), r2_hidden(3^[], 2^[])]   (11)  substitution:[[_G4380, _G4445], [2^[], 3^[]]]
+1.2.1.1.1.2.1  [-r2_hidden(3^[], 2^[]), -7^[], r2_hidden(3^[], 1^[])]   (2)  
+1.2.1.1.1.2.1.1  [7^[]]   (reduction:1)  
+1.2.1.1.1.2.1.2  [-r2_hidden(3^[], 1^[])]   (reduction:1.2)  
+1.2.2  [-r2_hidden(3^[], 2^[]), - (k3_bspace(2^[], 3^[])=k4_struct_0(k2_bspace))]   (12)  substitution:[[_G4445, _G4380], [3^[], 2^[]]]
+1.2.2.1  [k3_bspace(2^[], 3^[])=k4_struct_0(k2_bspace), - (k4_struct_0(k2_bspace)=k3_bspace(2^[], 3^[]))]   (20)  substitution:[[_G1881, _G1926], [k3_bspace(2^[], 3^[]), k4_struct_0(k2_bspace)]]
+1.2.2.1.1  [k4_struct_0(k2_bspace)=k3_bspace(2^[], 3^[]), - (k3_bspace(1^[], 3^[])=k3_bspace(2^[], 3^[])), k3_bspace(1^[], 3^[])=k4_struct_0(k2_bspace)]   (21)  substitution:[[_G2170, _G2227, _G2114], [k4_struct_0(k2_bspace), k3_bspace(2^[], 3^[]), k3_bspace(1^[], 3^[])]]
+1.2.2.1.1.1  [k3_bspace(1^[], 3^[])=k3_bspace(2^[], 3^[]), -7^[]]   (3)  
+1.2.2.1.1.1.1  [7^[]]   (reduction:1)  
+1.2.2.1.1.2  [- (k3_bspace(1^[], 3^[])=k4_struct_0(k2_bspace)), -r2_hidden(3^[], 1^[])]   (12)  substitution:[[_G4380, _G4445], [1^[], 3^[]]]
+1.2.2.1.1.2.1  [r2_hidden(3^[], 1^[])]   (lemmata:1.2)  
+------------------------------------------------------
+End of proof for t13_bspace

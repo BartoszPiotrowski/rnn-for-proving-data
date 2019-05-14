@@ -1,0 +1,47 @@
+
+t13_binarith is a Theorem
+Start of proof for t13_binarith
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k2_binarith(k8_margrel1, k7_margrel1)=k8_margrel1]
+ (2)  [- (k2_xboolean=np__1)]
+ (3)  [-m1_subset_1(k7_margrel1, k6_margrel1)]
+ (4)  [-m1_subset_1(k8_margrel1, k6_margrel1)]
+ (5)  [-v1_xboolean(k1_xboolean)]
+ (6)  [- (k2_binarith(_G5836, _G5893)=k10_xboolean(_G5836, _G5893)), m1_subset_1(_G5836, k6_margrel1), m1_subset_1(_G5893, k6_margrel1)]
+ (7)  [- (k7_margrel1=k1_xboolean)]
+ (8)  [- (k8_margrel1=k2_xboolean)]
+ (9)  [v1_xboolean(_G7172), - (k10_xboolean(k8_margrel1, _G7172)=k3_xboolean(_G7172))]
+ (10)  [v1_xboolean(_G6372), _G6372=k7_margrel1, - (k3_xboolean(_G6372)=k8_margrel1)]
+ (11)  [v1_xboolean(_G6372), k3_xboolean(_G6372)=k8_margrel1, - (_G6372=k7_margrel1)]
+ (12)  [v1_xboolean(_G6372), _G6372=k8_margrel1, - (k3_xboolean(_G6372)=k7_margrel1)]
+ (13)  [v1_xboolean(_G6372), k3_xboolean(_G6372)=k7_margrel1, - (_G6372=k8_margrel1)]
+ (14)  [- (k10_xboolean(_G4107, _G4242)=k10_xboolean(_G4174, _G4311)), _G4107=_G4174, _G4242=_G4311]
+ (15)  [_G4704=_G4753, - (k3_xboolean(_G4704)=k3_xboolean(_G4753))]
+ (16)  [- (k2_binarith(_G4973, _G5108)=k2_binarith(_G5040, _G5177)), _G4973=_G5040, _G5108=_G5177]
+ (17)  [- (_G2417=_G2417)]
+ (18)  [_G2516=_G2561, - (_G2561=_G2516)]
+ (19)  [- (_G2749=_G2862), _G2749=_G2805, _G2805=_G2862]
+ (20)  [-v1_xboolean(_G3836), _G3787=_G3836, v1_xboolean(_G3787)]
+ (21)  [-m1_subset_1(_G3266, _G3403), m1_subset_1(_G3199, _G3334), _G3199=_G3266, _G3334=_G3403]
+
+Connection Proof:
+-----------------
+1  [k2_binarith(k8_margrel1, k7_margrel1)=k8_margrel1]   (1)  
+1.1  [- (k2_binarith(k8_margrel1, k7_margrel1)=k8_margrel1), k2_binarith(k8_margrel1, k7_margrel1)=k10_xboolean(k8_margrel1, k1_xboolean), k10_xboolean(k8_margrel1, k1_xboolean)=k8_margrel1]   (19)  substitution:[[_G2749, _G2862, _G2805], [k2_binarith(k8_margrel1, k7_margrel1), k8_margrel1, k10_xboolean(k8_margrel1, k1_xboolean)]]
+1.1.1  [- (k2_binarith(k8_margrel1, k7_margrel1)=k10_xboolean(k8_margrel1, k1_xboolean)), k2_binarith(k8_margrel1, k7_margrel1)=k10_xboolean(k8_margrel1, k7_margrel1), k10_xboolean(k8_margrel1, k7_margrel1)=k10_xboolean(k8_margrel1, k1_xboolean)]   (19)  substitution:[[_G2749, _G2862, _G2805], [k2_binarith(k8_margrel1, k7_margrel1), k10_xboolean(k8_margrel1, k1_xboolean), k10_xboolean(k8_margrel1, k7_margrel1)]]
+1.1.1.1  [- (k2_binarith(k8_margrel1, k7_margrel1)=k10_xboolean(k8_margrel1, k7_margrel1)), m1_subset_1(k8_margrel1, k6_margrel1), m1_subset_1(k7_margrel1, k6_margrel1)]   (6)  substitution:[[_G5836, _G5893], [k8_margrel1, k7_margrel1]]
+1.1.1.1.1  [-m1_subset_1(k8_margrel1, k6_margrel1)]   (4)  
+1.1.1.1.2  [-m1_subset_1(k7_margrel1, k6_margrel1)]   (3)  
+1.1.1.2  [- (k10_xboolean(k8_margrel1, k7_margrel1)=k10_xboolean(k8_margrel1, k1_xboolean)), k8_margrel1=k8_margrel1, k7_margrel1=k1_xboolean]   (14)  substitution:[[_G4107, _G4242, _G4174, _G4311], [k8_margrel1, k7_margrel1, k8_margrel1, k1_xboolean]]
+1.1.1.2.1  [- (k8_margrel1=k8_margrel1)]   (17)  substitution:[[_G2417], [k8_margrel1]]
+1.1.1.2.2  [- (k7_margrel1=k1_xboolean)]   (7)  
+1.1.2  [- (k10_xboolean(k8_margrel1, k1_xboolean)=k8_margrel1), k10_xboolean(k8_margrel1, k1_xboolean)=k3_xboolean(k1_xboolean), k3_xboolean(k1_xboolean)=k8_margrel1]   (19)  substitution:[[_G2749, _G2862, _G2805], [k10_xboolean(k8_margrel1, k1_xboolean), k8_margrel1, k3_xboolean(k1_xboolean)]]
+1.1.2.1  [- (k10_xboolean(k8_margrel1, k1_xboolean)=k3_xboolean(k1_xboolean)), v1_xboolean(k1_xboolean)]   (9)  substitution:[[_G7172], [k1_xboolean]]
+1.1.2.1.1  [-v1_xboolean(k1_xboolean)]   (5)  
+1.1.2.2  [- (k3_xboolean(k1_xboolean)=k8_margrel1), v1_xboolean(k1_xboolean), k1_xboolean=k7_margrel1]   (10)  substitution:[[_G6372], [k1_xboolean]]
+1.1.2.2.1  [-v1_xboolean(k1_xboolean)]   (5)  
+1.1.2.2.2  [- (k1_xboolean=k7_margrel1), k7_margrel1=k1_xboolean]   (18)  substitution:[[_G2561, _G2516], [k1_xboolean, k7_margrel1]]
+1.1.2.2.2.1  [- (k7_margrel1=k1_xboolean)]   (7)  
+------------------------------------------------------
+End of proof for t13_binarith

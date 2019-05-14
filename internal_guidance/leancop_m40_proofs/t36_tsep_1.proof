@@ -1,0 +1,43 @@
+
+t36_tsep_1 is a Theorem
+Start of proof for t36_tsep_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v2_pre_topc(3^[])]
+ (2)  [-l1_pre_topc(3^[])]
+ (3)  [-m1_subset_1(4^[], k1_zfmisc_1(u1_struct_0(3^[])))]
+ (4)  [-m1_subset_1(5^[], k1_zfmisc_1(u1_struct_0(3^[])))]
+ (5)  [-r1_xboole_0(4^[], 5^[])]
+ (6)  [-v3_pre_topc(4^[], 3^[])]
+ (7)  [r1_xboole_0(4^[], k2_pre_topc(3^[], 5^[]))]
+ (8)  [r1_xboole_0(_G1427, _G1472), -r1_xboole_0(_G1472, _G1427)]
+ (9)  [l1_pre_topc(_G1669), m1_subset_1(_G1813, k1_zfmisc_1(u1_struct_0(_G1669))), m1_subset_1(_G2006, u1_struct_0(_G1669)), -r2_hidden(_G2006, k2_pre_topc(_G1669, _G1813)), -v2_struct_0(_G1669), -m1_subset_1(1^[_G2006, _G1813, _G1669], k1_zfmisc_1(u1_struct_0(_G1669)))]
+ (10)  [l1_pre_topc(_G1669), m1_subset_1(_G1813, k1_zfmisc_1(u1_struct_0(_G1669))), m1_subset_1(_G2006, u1_struct_0(_G1669)), -r2_hidden(_G2006, k2_pre_topc(_G1669, _G1813)), -v2_struct_0(_G1669), -v3_pre_topc(1^[_G2006, _G1813, _G1669], _G1669)]
+ (11)  [l1_pre_topc(_G1669), m1_subset_1(_G1813, k1_zfmisc_1(u1_struct_0(_G1669))), m1_subset_1(_G2006, u1_struct_0(_G1669)), -r2_hidden(_G2006, k2_pre_topc(_G1669, _G1813)), -v2_struct_0(_G1669), -r2_hidden(_G2006, 1^[_G2006, _G1813, _G1669])]
+ (12)  [l1_pre_topc(_G1669), m1_subset_1(_G1813, k1_zfmisc_1(u1_struct_0(_G1669))), m1_subset_1(_G2006, u1_struct_0(_G1669)), -r2_hidden(_G2006, k2_pre_topc(_G1669, _G1813)), -v2_struct_0(_G1669), -r1_xboole_0(_G1813, 1^[_G2006, _G1813, _G1669])]
+ (13)  [l1_pre_topc(_G1669), m1_subset_1(_G1813, k1_zfmisc_1(u1_struct_0(_G1669))), m1_subset_1(_G2006, u1_struct_0(_G1669)), r2_hidden(_G2006, k2_pre_topc(_G1669, _G1813)), v2_struct_0(_G1669)]
+ (14)  [l1_pre_topc(_G1669), m1_subset_1(_G1813, k1_zfmisc_1(u1_struct_0(_G1669))), m1_subset_1(_G2006, u1_struct_0(_G1669)), r2_hidden(_G2006, k2_pre_topc(_G1669, _G1813)), m1_subset_1(_G2318, k1_zfmisc_1(u1_struct_0(_G1669))), v3_pre_topc(_G2318, _G1669), r2_hidden(_G2006, _G2318), r1_xboole_0(_G1813, _G2318)]
+ (15)  [-m1_subset_1(_G3671, _G3788), r2_hidden(_G3671, _G3729), m1_subset_1(_G3729, k1_zfmisc_1(_G3788))]
+ (16)  [-r1_xboole_0(_G2864, _G2951), -r2_hidden(2^[_G2951, _G2864], _G2864)]
+ (17)  [-r1_xboole_0(_G2864, _G2951), -r2_hidden(2^[_G2951, _G2864], _G2951)]
+ (18)  [r1_xboole_0(_G2864, _G2951), r2_hidden(_G3371, _G2864), r2_hidden(_G3371, _G2951)]
+
+Connection Proof:
+-----------------
+1  [l1_pre_topc(3^[]), m1_subset_1(5^[], k1_zfmisc_1(u1_struct_0(3^[]))), m1_subset_1(2^[k2_pre_topc(3^[], 5^[]), 4^[]], u1_struct_0(3^[])), r2_hidden(2^[k2_pre_topc(3^[], 5^[]), 4^[]], k2_pre_topc(3^[], 5^[])), m1_subset_1(4^[], k1_zfmisc_1(u1_struct_0(3^[]))), v3_pre_topc(4^[], 3^[]), r2_hidden(2^[k2_pre_topc(3^[], 5^[]), 4^[]], 4^[]), r1_xboole_0(5^[], 4^[])]   (14)  substitution:[[_G1669, _G1813, _G2006, _G2318], [3^[], 5^[], 2^[k2_pre_topc(3^[], 5^[]), 4^[]], 4^[]]]
+1.1  [-l1_pre_topc(3^[])]   (2)  
+1.2  [-m1_subset_1(5^[], k1_zfmisc_1(u1_struct_0(3^[])))]   (4)  
+1.3  [-m1_subset_1(2^[k2_pre_topc(3^[], 5^[]), 4^[]], u1_struct_0(3^[])), r2_hidden(2^[k2_pre_topc(3^[], 5^[]), 4^[]], 4^[]), m1_subset_1(4^[], k1_zfmisc_1(u1_struct_0(3^[])))]   (15)  substitution:[[_G3671, _G3788, _G3729], [2^[k2_pre_topc(3^[], 5^[]), 4^[]], u1_struct_0(3^[]), 4^[]]]
+1.3.1  [-r2_hidden(2^[k2_pre_topc(3^[], 5^[]), 4^[]], 4^[]), -r1_xboole_0(4^[], k2_pre_topc(3^[], 5^[]))]   (16)  substitution:[[_G2951, _G2864], [k2_pre_topc(3^[], 5^[]), 4^[]]]
+1.3.1.1  [r1_xboole_0(4^[], k2_pre_topc(3^[], 5^[]))]   (7)  
+1.3.2  [-m1_subset_1(4^[], k1_zfmisc_1(u1_struct_0(3^[])))]   (3)  
+1.4  [-r2_hidden(2^[k2_pre_topc(3^[], 5^[]), 4^[]], k2_pre_topc(3^[], 5^[])), -r1_xboole_0(4^[], k2_pre_topc(3^[], 5^[]))]   (17)  substitution:[[_G2951, _G2864], [k2_pre_topc(3^[], 5^[]), 4^[]]]
+1.4.1  [r1_xboole_0(4^[], k2_pre_topc(3^[], 5^[]))]   (7)  
+1.5  [-m1_subset_1(4^[], k1_zfmisc_1(u1_struct_0(3^[])))]   (3)  
+1.6  [-v3_pre_topc(4^[], 3^[])]   (6)  
+1.7  [-r2_hidden(2^[k2_pre_topc(3^[], 5^[]), 4^[]], 4^[]), -r1_xboole_0(4^[], k2_pre_topc(3^[], 5^[]))]   (16)  substitution:[[_G2951, _G2864], [k2_pre_topc(3^[], 5^[]), 4^[]]]
+1.7.1  [r1_xboole_0(4^[], k2_pre_topc(3^[], 5^[]))]   (7)  
+1.8  [-r1_xboole_0(5^[], 4^[]), r1_xboole_0(4^[], 5^[])]   (8)  substitution:[[_G1472, _G1427], [5^[], 4^[]]]
+1.8.1  [-r1_xboole_0(4^[], 5^[])]   (5)  
+------------------------------------------------------
+End of proof for t36_tsep_1

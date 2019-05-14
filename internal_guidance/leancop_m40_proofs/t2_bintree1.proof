@@ -1,0 +1,77 @@
+
+t2_bintree1 is a Theorem
+Start of proof for t2_bintree1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v1_xboole_0(1^[])]
+ (2)  [-v1_relat_1(2^[])]
+ (3)  [-v5_relat_1(2^[], 1^[])]
+ (4)  [-v1_funct_1(2^[])]
+ (5)  [-v3_trees_2(2^[])]
+ (6)  [-v1_relat_1(3^[])]
+ (7)  [-v5_relat_1(3^[], 1^[])]
+ (8)  [-v1_funct_1(3^[])]
+ (9)  [-v3_trees_2(3^[])]
+ (10)  [k14_trees_3(k10_finseq_1(2^[], 3^[]))=k4_pre_poly(1^[], k1_bintree1(1^[], 2^[]), k1_bintree1(1^[], 3^[]))]
+ (11)  [-v1_xboole_0(_G10599), - (k1_bintree1(_G10599, _G10718)=k1_funct_1(_G10718, k1_xboole_0)), v1_relat_1(_G10718), v5_relat_1(_G10718, _G10599), v1_funct_1(_G10718), v3_trees_2(_G10718)]
+ (12)  [-m1_subset_1(k1_bintree1(_G11194, _G11264), _G11194), -v1_xboole_0(_G11194), v1_relat_1(_G11264), v5_relat_1(_G11264, _G11194), v1_funct_1(_G11264), v3_trees_2(_G11264)]
+ (13)  [- (k4_pre_poly(_G11751, _G11821, _G11892)=k10_finseq_1(_G11821, _G11892)), -v1_xboole_0(_G11751), m1_subset_1(_G11821, _G11751), m1_subset_1(_G11892, _G11751)]
+ (14)  [v3_trees_2(_G12380), v1_funct_1(_G12380), v1_relat_1(_G12380), - (k14_trees_3(k10_finseq_1(_G12380, _G12601))=k10_finseq_1(k1_funct_1(_G12380, k1_xboole_0), k1_funct_1(_G12601, k1_xboole_0))), v1_relat_1(_G12601), v1_funct_1(_G12601), v3_trees_2(_G12601)]
+ (15)  [- (k1_funct_1(_G7406, _G7541)=k1_funct_1(_G7473, _G7610)), _G7406=_G7473, _G7541=_G7610]
+ (16)  [_G8003=_G8052, - (k14_trees_3(_G8003)=k14_trees_3(_G8052))]
+ (17)  [- (k10_finseq_1(_G8281, _G8416)=k10_finseq_1(_G8348, _G8485)), _G8281=_G8348, _G8416=_G8485]
+ (18)  [- (k1_bintree1(_G9897, _G10032)=k1_bintree1(_G9964, _G10101)), _G9897=_G9964, _G10032=_G10101]
+ (19)  [- (k4_pre_poly(_G8878, _G9049, _G9224)=k4_pre_poly(_G8963, _G9136, _G9313)), _G8878=_G8963, _G9049=_G9136, _G9224=_G9313]
+ (20)  [- (_G4201=_G4201)]
+ (21)  [_G4300=_G4345, - (_G4345=_G4300)]
+ (22)  [- (_G4533=_G4646), _G4533=_G4589, _G4589=_G4646]
+ (23)  [-m1_subset_1(_G5050, _G5187), m1_subset_1(_G4983, _G5118), _G4983=_G5050, _G5118=_G5187]
+ (24)  [-v1_xboole_0(_G5629), _G5580=_G5629, v1_xboole_0(_G5580)]
+ (25)  [-v1_relat_1(_G5907), _G5858=_G5907, v1_relat_1(_G5858)]
+ (26)  [-v5_relat_1(_G6203, _G6340), v5_relat_1(_G6136, _G6271), _G6136=_G6203, _G6271=_G6340]
+ (27)  [-v1_funct_1(_G6782), _G6733=_G6782, v1_funct_1(_G6733)]
+ (28)  [-v3_trees_2(_G7051), _G7002=_G7051, v3_trees_2(_G7002)]
+
+Connection Proof:
+-----------------
+1  [v1_xboole_0(1^[])]   (1)  
+1.1  [-v1_xboole_0(1^[]), - (k4_pre_poly(1^[], k1_bintree1(1^[], 2^[]), k1_bintree1(1^[], 3^[]))=k10_finseq_1(k1_bintree1(1^[], 2^[]), k1_bintree1(1^[], 3^[]))), m1_subset_1(k1_bintree1(1^[], 2^[]), 1^[]), m1_subset_1(k1_bintree1(1^[], 3^[]), 1^[])]   (13)  substitution:[[_G11751, _G11821, _G11892], [1^[], k1_bintree1(1^[], 2^[]), k1_bintree1(1^[], 3^[])]]
+1.1.1  [k4_pre_poly(1^[], k1_bintree1(1^[], 2^[]), k1_bintree1(1^[], 3^[]))=k10_finseq_1(k1_bintree1(1^[], 2^[]), k1_bintree1(1^[], 3^[])), - (k4_pre_poly(1^[], k1_bintree1(1^[], 2^[]), k1_bintree1(1^[], 3^[]))=k14_trees_3(k10_finseq_1(2^[], 3^[]))), k10_finseq_1(k1_bintree1(1^[], 2^[]), k1_bintree1(1^[], 3^[]))=k14_trees_3(k10_finseq_1(2^[], 3^[]))]   (22)  substitution:[[_G4533, _G4589, _G4646], [k4_pre_poly(1^[], k1_bintree1(1^[], 2^[]), k1_bintree1(1^[], 3^[])), k10_finseq_1(k1_bintree1(1^[], 2^[]), k1_bintree1(1^[], 3^[])), k14_trees_3(k10_finseq_1(2^[], 3^[]))]]
+1.1.1.1  [k4_pre_poly(1^[], k1_bintree1(1^[], 2^[]), k1_bintree1(1^[], 3^[]))=k14_trees_3(k10_finseq_1(2^[], 3^[])), - (k14_trees_3(k10_finseq_1(2^[], 3^[]))=k4_pre_poly(1^[], k1_bintree1(1^[], 2^[]), k1_bintree1(1^[], 3^[])))]   (21)  substitution:[[_G4300, _G4345], [k4_pre_poly(1^[], k1_bintree1(1^[], 2^[]), k1_bintree1(1^[], 3^[])), k14_trees_3(k10_finseq_1(2^[], 3^[]))]]
+1.1.1.1.1  [k14_trees_3(k10_finseq_1(2^[], 3^[]))=k4_pre_poly(1^[], k1_bintree1(1^[], 2^[]), k1_bintree1(1^[], 3^[]))]   (10)  
+1.1.1.2  [- (k10_finseq_1(k1_bintree1(1^[], 2^[]), k1_bintree1(1^[], 3^[]))=k14_trees_3(k10_finseq_1(2^[], 3^[]))), k10_finseq_1(k1_bintree1(1^[], 2^[]), k1_bintree1(1^[], 3^[]))=k10_finseq_1(k1_funct_1(2^[], k1_xboole_0), k1_funct_1(3^[], k1_xboole_0)), k10_finseq_1(k1_funct_1(2^[], k1_xboole_0), k1_funct_1(3^[], k1_xboole_0))=k14_trees_3(k10_finseq_1(2^[], 3^[]))]   (22)  substitution:[[_G4533, _G4646, _G4589], [k10_finseq_1(k1_bintree1(1^[], 2^[]), k1_bintree1(1^[], 3^[])), k14_trees_3(k10_finseq_1(2^[], 3^[])), k10_finseq_1(k1_funct_1(2^[], k1_xboole_0), k1_funct_1(3^[], k1_xboole_0))]]
+1.1.1.2.1  [- (k10_finseq_1(k1_bintree1(1^[], 2^[]), k1_bintree1(1^[], 3^[]))=k10_finseq_1(k1_funct_1(2^[], k1_xboole_0), k1_funct_1(3^[], k1_xboole_0))), k1_bintree1(1^[], 2^[])=k1_funct_1(2^[], k1_xboole_0), k1_bintree1(1^[], 3^[])=k1_funct_1(3^[], k1_xboole_0)]   (17)  substitution:[[_G8281, _G8416, _G8348, _G8485], [k1_bintree1(1^[], 2^[]), k1_bintree1(1^[], 3^[]), k1_funct_1(2^[], k1_xboole_0), k1_funct_1(3^[], k1_xboole_0)]]
+1.1.1.2.1.1  [- (k1_bintree1(1^[], 2^[])=k1_funct_1(2^[], k1_xboole_0)), -v1_xboole_0(1^[]), v1_relat_1(2^[]), v5_relat_1(2^[], 1^[]), v1_funct_1(2^[]), v3_trees_2(2^[])]   (11)  substitution:[[_G10599, _G10718], [1^[], 2^[]]]
+1.1.1.2.1.1.1  [v1_xboole_0(1^[])]   (1)  
+1.1.1.2.1.1.2  [-v1_relat_1(2^[])]   (2)  
+1.1.1.2.1.1.3  [-v5_relat_1(2^[], 1^[])]   (3)  
+1.1.1.2.1.1.4  [-v1_funct_1(2^[])]   (4)  
+1.1.1.2.1.1.5  [-v3_trees_2(2^[])]   (5)  
+1.1.1.2.1.2  [- (k1_bintree1(1^[], 3^[])=k1_funct_1(3^[], k1_xboole_0)), -v1_xboole_0(1^[]), v1_relat_1(3^[]), v5_relat_1(3^[], 1^[]), v1_funct_1(3^[]), v3_trees_2(3^[])]   (11)  substitution:[[_G10599, _G10718], [1^[], 3^[]]]
+1.1.1.2.1.2.1  [v1_xboole_0(1^[])]   (1)  
+1.1.1.2.1.2.2  [-v1_relat_1(3^[])]   (6)  
+1.1.1.2.1.2.3  [-v5_relat_1(3^[], 1^[])]   (7)  
+1.1.1.2.1.2.4  [-v1_funct_1(3^[])]   (8)  
+1.1.1.2.1.2.5  [-v3_trees_2(3^[])]   (9)  
+1.1.1.2.2  [- (k10_finseq_1(k1_funct_1(2^[], k1_xboole_0), k1_funct_1(3^[], k1_xboole_0))=k14_trees_3(k10_finseq_1(2^[], 3^[]))), k14_trees_3(k10_finseq_1(2^[], 3^[]))=k10_finseq_1(k1_funct_1(2^[], k1_xboole_0), k1_funct_1(3^[], k1_xboole_0))]   (21)  substitution:[[_G4345, _G4300], [k10_finseq_1(k1_funct_1(2^[], k1_xboole_0), k1_funct_1(3^[], k1_xboole_0)), k14_trees_3(k10_finseq_1(2^[], 3^[]))]]
+1.1.1.2.2.1  [- (k14_trees_3(k10_finseq_1(2^[], 3^[]))=k10_finseq_1(k1_funct_1(2^[], k1_xboole_0), k1_funct_1(3^[], k1_xboole_0))), v3_trees_2(2^[]), v1_funct_1(2^[]), v1_relat_1(2^[]), v1_relat_1(3^[]), v1_funct_1(3^[]), v3_trees_2(3^[])]   (14)  substitution:[[_G12380, _G12601], [2^[], 3^[]]]
+1.1.1.2.2.1.1  [-v3_trees_2(2^[])]   (5)  
+1.1.1.2.2.1.2  [-v1_funct_1(2^[])]   (4)  
+1.1.1.2.2.1.3  [-v1_relat_1(2^[])]   (2)  
+1.1.1.2.2.1.4  [-v1_relat_1(3^[])]   (6)  
+1.1.1.2.2.1.5  [-v1_funct_1(3^[])]   (8)  
+1.1.1.2.2.1.6  [-v3_trees_2(3^[])]   (9)  
+1.1.2  [-m1_subset_1(k1_bintree1(1^[], 2^[]), 1^[]), -v1_xboole_0(1^[]), v1_relat_1(2^[]), v5_relat_1(2^[], 1^[]), v1_funct_1(2^[]), v3_trees_2(2^[])]   (12)  substitution:[[_G11194, _G11264], [1^[], 2^[]]]
+1.1.2.1  [v1_xboole_0(1^[])]   (1)  
+1.1.2.2  [-v1_relat_1(2^[])]   (2)  
+1.1.2.3  [-v5_relat_1(2^[], 1^[])]   (3)  
+1.1.2.4  [-v1_funct_1(2^[])]   (4)  
+1.1.2.5  [-v3_trees_2(2^[])]   (5)  
+1.1.3  [-m1_subset_1(k1_bintree1(1^[], 3^[]), 1^[]), -v1_xboole_0(1^[]), v1_relat_1(3^[]), v5_relat_1(3^[], 1^[]), v1_funct_1(3^[]), v3_trees_2(3^[])]   (12)  substitution:[[_G11194, _G11264], [1^[], 3^[]]]
+1.1.3.1  [v1_xboole_0(1^[])]   (1)  
+1.1.3.2  [-v1_relat_1(3^[])]   (6)  
+1.1.3.3  [-v5_relat_1(3^[], 1^[])]   (7)  
+1.1.3.4  [-v1_funct_1(3^[])]   (8)  
+1.1.3.5  [-v3_trees_2(3^[])]   (9)  
+------------------------------------------------------
+End of proof for t2_bintree1

@@ -1,0 +1,44 @@
+
+t42_sublemma is a Theorem
+Start of proof for t42_sublemma
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_qc_lang1(1^[])]
+ (2)  [r1_tarski(k24_qc_lang1(1^[], k5_cqc_lang(1^[])), k9_substut1(1^[], k5_cqc_lang(1^[])))]
+ (3)  [_G5497=_G5548, -r1_tarski(_G5497, _G5548)]
+ (4)  [_G5497=_G5548, -r1_tarski(_G5548, _G5497)]
+ (5)  [- (_G5497=_G5548), r1_tarski(_G5497, _G5548), r1_tarski(_G5548, _G5497)]
+ (6)  [m1_qc_lang1(_G5829), - (k5_cqc_lang(_G5829)=k12_qc_lang1(_G5829))]
+ (7)  [m1_qc_lang1(_G6018), - (k9_substut1(_G6018, k5_cqc_lang(_G6018))=k1_xboole_0)]
+ (8)  [m1_qc_lang1(_G6224), - (k24_qc_lang1(_G6224, k12_qc_lang1(_G6224))=k1_xboole_0)]
+ (9)  [_G3672=_G3721, - (k12_qc_lang1(_G3672)=k12_qc_lang1(_G3721))]
+ (10)  [- (k24_qc_lang1(_G3950, _G4085)=k24_qc_lang1(_G4017, _G4154)), _G3950=_G4017, _G4085=_G4154]
+ (11)  [_G5135=_G5184, - (k5_cqc_lang(_G5135)=k5_cqc_lang(_G5184))]
+ (12)  [- (k9_substut1(_G4547, _G4682)=k9_substut1(_G4614, _G4751)), _G4547=_G4614, _G4682=_G4751]
+ (13)  [- (_G1982=_G1982)]
+ (14)  [_G2081=_G2126, - (_G2126=_G2081)]
+ (15)  [- (_G2314=_G2427), _G2314=_G2370, _G2370=_G2427]
+ (16)  [-m1_qc_lang1(_G2813), _G2764=_G2813, m1_qc_lang1(_G2764)]
+ (17)  [-r1_tarski(_G3100, _G3237), r1_tarski(_G3033, _G3168), _G3033=_G3100, _G3168=_G3237]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k24_qc_lang1(1^[], k5_cqc_lang(1^[])), k9_substut1(1^[], k5_cqc_lang(1^[])))]   (2)  
+1.1  [-r1_tarski(k24_qc_lang1(1^[], k5_cqc_lang(1^[])), k9_substut1(1^[], k5_cqc_lang(1^[]))), r1_tarski(k24_qc_lang1(1^[], k12_qc_lang1(1^[])), k1_xboole_0), k24_qc_lang1(1^[], k12_qc_lang1(1^[]))=k24_qc_lang1(1^[], k5_cqc_lang(1^[])), k1_xboole_0=k9_substut1(1^[], k5_cqc_lang(1^[]))]   (17)  substitution:[[_G3100, _G3237, _G3033, _G3168], [k24_qc_lang1(1^[], k5_cqc_lang(1^[])), k9_substut1(1^[], k5_cqc_lang(1^[])), k24_qc_lang1(1^[], k12_qc_lang1(1^[])), k1_xboole_0]]
+1.1.1  [-r1_tarski(k24_qc_lang1(1^[], k12_qc_lang1(1^[])), k1_xboole_0), k24_qc_lang1(1^[], k12_qc_lang1(1^[]))=k1_xboole_0]   (3)  substitution:[[_G5497, _G5548], [k24_qc_lang1(1^[], k12_qc_lang1(1^[])), k1_xboole_0]]
+1.1.1.1  [- (k24_qc_lang1(1^[], k12_qc_lang1(1^[]))=k1_xboole_0), m1_qc_lang1(1^[])]   (8)  substitution:[[_G6224], [1^[]]]
+1.1.1.1.1  [-m1_qc_lang1(1^[])]   (1)  
+1.1.2  [- (k24_qc_lang1(1^[], k12_qc_lang1(1^[]))=k24_qc_lang1(1^[], k5_cqc_lang(1^[]))), 1^[]=1^[], k12_qc_lang1(1^[])=k5_cqc_lang(1^[])]   (10)  substitution:[[_G3950, _G4085, _G4017, _G4154], [1^[], k12_qc_lang1(1^[]), 1^[], k5_cqc_lang(1^[])]]
+1.1.2.1  [- (1^[]=1^[])]   (13)  substitution:[[_G1982], [1^[]]]
+1.1.2.2  [- (k12_qc_lang1(1^[])=k5_cqc_lang(1^[])), k5_cqc_lang(1^[])=k12_qc_lang1(1^[])]   (14)  substitution:[[_G2126, _G2081], [k12_qc_lang1(1^[]), k5_cqc_lang(1^[])]]
+1.1.2.2.1  [- (k5_cqc_lang(1^[])=k12_qc_lang1(1^[])), m1_qc_lang1(1^[])]   (6)  substitution:[[_G5829], [1^[]]]
+1.1.2.2.1.1  [-m1_qc_lang1(1^[])]   (1)  
+1.1.3  [- (k1_xboole_0=k9_substut1(1^[], k5_cqc_lang(1^[]))), r1_tarski(k1_xboole_0, k9_substut1(1^[], k5_cqc_lang(1^[]))), r1_tarski(k9_substut1(1^[], k5_cqc_lang(1^[])), k1_xboole_0)]   (5)  substitution:[[_G5497, _G5548], [k1_xboole_0, k9_substut1(1^[], k5_cqc_lang(1^[]))]]
+1.1.3.1  [-r1_tarski(k1_xboole_0, k9_substut1(1^[], k5_cqc_lang(1^[]))), k9_substut1(1^[], k5_cqc_lang(1^[]))=k1_xboole_0]   (4)  substitution:[[_G5548, _G5497], [k1_xboole_0, k9_substut1(1^[], k5_cqc_lang(1^[]))]]
+1.1.3.1.1  [- (k9_substut1(1^[], k5_cqc_lang(1^[]))=k1_xboole_0), m1_qc_lang1(1^[])]   (7)  substitution:[[_G6018], [1^[]]]
+1.1.3.1.1.1  [-m1_qc_lang1(1^[])]   (1)  
+1.1.3.2  [-r1_tarski(k9_substut1(1^[], k5_cqc_lang(1^[])), k1_xboole_0), k9_substut1(1^[], k5_cqc_lang(1^[]))=k1_xboole_0]   (3)  substitution:[[_G5497, _G5548], [k9_substut1(1^[], k5_cqc_lang(1^[])), k1_xboole_0]]
+1.1.3.2.1  [- (k9_substut1(1^[], k5_cqc_lang(1^[]))=k1_xboole_0), m1_qc_lang1(1^[])]   (7)  substitution:[[_G6018], [1^[]]]
+1.1.3.2.1.1  [-m1_qc_lang1(1^[])]   (1)  
+------------------------------------------------------
+End of proof for t42_sublemma

@@ -1,0 +1,45 @@
+
+t59_xxreal_2 is a Theorem
+Start of proof for t59_xxreal_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v2_membered(2^[])]
+ (2)  [-v2_membered(3^[])]
+ (3)  [-r1_tarski(2^[], 3^[])]
+ (4)  [r1_xxreal_0(k1_xxreal_2(2^[]), k1_xxreal_2(3^[]))]
+ (5)  [v2_membered(_G6395), -v1_xxreal_0(k1_xxreal_2(_G6395))]
+ (6)  [v2_membered(_G6533), v2_membered(_G6631), r1_tarski(_G6533, _G6631), m1_xxreal_2(_G6782, _G6631), -m1_xxreal_2(_G6782, _G6533)]
+ (7)  [v2_membered(_G5764), v1_xxreal_0(_G5870), _G5870=k1_xxreal_2(_G5764), -m1_xxreal_2(_G5870, _G5764)]
+ (8)  [v2_membered(_G5764), v1_xxreal_0(_G5870), _G5870=k1_xxreal_2(_G5764), m1_xxreal_2(_G6100, _G5764), -r1_xxreal_0(_G5870, _G6100)]
+ (9)  [v2_membered(_G5764), v1_xxreal_0(_G5870), - (_G5870=k1_xxreal_2(_G5764)), m1_xxreal_2(_G5870, _G5764), -m1_xxreal_2(1^[_G5870, _G5764], _G5764)]
+ (10)  [v2_membered(_G5764), v1_xxreal_0(_G5870), - (_G5870=k1_xxreal_2(_G5764)), m1_xxreal_2(_G5870, _G5764), r1_xxreal_0(_G5870, 1^[_G5870, _G5764])]
+ (11)  [_G5465=_G5514, - (k1_xxreal_2(_G5465)=k1_xxreal_2(_G5514))]
+ (12)  [- (_G2249=_G2249)]
+ (13)  [_G2348=_G2393, - (_G2393=_G2348)]
+ (14)  [- (_G2581=_G2694), _G2581=_G2637, _G2637=_G2694]
+ (15)  [-v1_xxreal_0(_G3080), _G3031=_G3080, v1_xxreal_0(_G3031)]
+ (16)  [-m1_xxreal_2(_G3376, _G3513), m1_xxreal_2(_G3309, _G3444), _G3309=_G3376, _G3444=_G3513]
+ (17)  [-v2_membered(_G3955), _G3906=_G3955, v2_membered(_G3906)]
+ (18)  [-r1_tarski(_G4251, _G4388), r1_tarski(_G4184, _G4319), _G4184=_G4251, _G4319=_G4388]
+ (19)  [-r1_xxreal_0(_G4839, _G4976), r1_xxreal_0(_G4772, _G4907), _G4772=_G4839, _G4907=_G4976]
+
+Connection Proof:
+-----------------
+1  [r1_xxreal_0(k1_xxreal_2(2^[]), k1_xxreal_2(3^[]))]   (4)  
+1.1  [-r1_xxreal_0(k1_xxreal_2(2^[]), k1_xxreal_2(3^[])), v2_membered(2^[]), v1_xxreal_0(k1_xxreal_2(2^[])), k1_xxreal_2(2^[])=k1_xxreal_2(2^[]), m1_xxreal_2(k1_xxreal_2(3^[]), 2^[])]   (8)  substitution:[[_G5870, _G6100, _G5764], [k1_xxreal_2(2^[]), k1_xxreal_2(3^[]), 2^[]]]
+1.1.1  [-v2_membered(2^[])]   (1)  
+1.1.2  [-v1_xxreal_0(k1_xxreal_2(2^[])), v2_membered(2^[])]   (5)  substitution:[[_G6395], [2^[]]]
+1.1.2.1  [-v2_membered(2^[])]   (1)  
+1.1.3  [- (k1_xxreal_2(2^[])=k1_xxreal_2(2^[])), 2^[]=2^[]]   (11)  substitution:[[_G5465, _G5514], [2^[], 2^[]]]
+1.1.3.1  [- (2^[]=2^[])]   (12)  substitution:[[_G2249], [2^[]]]
+1.1.4  [-m1_xxreal_2(k1_xxreal_2(3^[]), 2^[]), v2_membered(2^[]), v2_membered(3^[]), r1_tarski(2^[], 3^[]), m1_xxreal_2(k1_xxreal_2(3^[]), 3^[])]   (6)  substitution:[[_G6782, _G6533, _G6631], [k1_xxreal_2(3^[]), 2^[], 3^[]]]
+1.1.4.1  [-v2_membered(2^[])]   (1)  
+1.1.4.2  [-v2_membered(3^[])]   (2)  
+1.1.4.3  [-r1_tarski(2^[], 3^[])]   (3)  
+1.1.4.4  [-m1_xxreal_2(k1_xxreal_2(3^[]), 3^[]), v2_membered(3^[]), v1_xxreal_0(k1_xxreal_2(3^[])), k1_xxreal_2(3^[])=k1_xxreal_2(3^[])]   (7)  substitution:[[_G5870, _G5764], [k1_xxreal_2(3^[]), 3^[]]]
+1.1.4.4.1  [-v2_membered(3^[])]   (2)  
+1.1.4.4.2  [-v1_xxreal_0(k1_xxreal_2(3^[])), v2_membered(3^[])]   (5)  substitution:[[_G6395], [3^[]]]
+1.1.4.4.2.1  [-v2_membered(3^[])]   (2)  
+1.1.4.4.3  [- (k1_xxreal_2(3^[])=k1_xxreal_2(3^[]))]   (12)  substitution:[[_G2249], [k1_xxreal_2(3^[])]]
+------------------------------------------------------
+End of proof for t59_xxreal_2

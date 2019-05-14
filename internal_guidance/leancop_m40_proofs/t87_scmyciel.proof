@@ -1,0 +1,29 @@
+
+t87_scmyciel is a Theorem
+Start of proof for t87_scmyciel
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v4_scmyciel(2^[])]
+ (2)  [r2_hidden(k3_tarski(2^[]), k3_tarski(k12_scmyciel(2^[])))]
+ (3)  [v4_scmyciel(_G4635), -r2_hidden(_G4763, k3_tarski(k12_scmyciel(_G4635))), r2_hidden(_G4763, k3_tarski(_G4635))]
+ (4)  [v4_scmyciel(_G4635), -r2_hidden(_G4763, k3_tarski(k12_scmyciel(_G4635))), _G4763=k3_tarski(_G4635)]
+ (5)  [v4_scmyciel(_G4635), -r2_hidden(_G4763, k3_tarski(k12_scmyciel(_G4635))), r2_hidden(_G5040, k3_tarski(_G4635)), _G4763=k4_tarski(_G5040, k3_tarski(_G4635))]
+ (6)  [v4_scmyciel(_G4635), r2_hidden(_G4763, k3_tarski(k12_scmyciel(_G4635))), -r2_hidden(_G4763, k3_tarski(_G4635)), -r2_hidden(1^[_G4763, _G4635], k3_tarski(_G4635)), - (_G4763=k3_tarski(_G4635))]
+ (7)  [v4_scmyciel(_G4635), r2_hidden(_G4763, k3_tarski(k12_scmyciel(_G4635))), -r2_hidden(_G4763, k3_tarski(_G4635)), - (_G4763=k4_tarski(1^[_G4763, _G4635], k3_tarski(_G4635))), - (_G4763=k3_tarski(_G4635))]
+ (8)  [- (k4_tarski(_G3437, _G3572)=k4_tarski(_G3504, _G3641)), _G3437=_G3504, _G3572=_G3641]
+ (9)  [_G4034=_G4083, - (k3_tarski(_G4034)=k3_tarski(_G4083))]
+ (10)  [_G4303=_G4352, - (k12_scmyciel(_G4303)=k12_scmyciel(_G4352))]
+ (11)  [- (_G1747=_G1747)]
+ (12)  [_G1846=_G1891, - (_G1891=_G1846)]
+ (13)  [- (_G2079=_G2192), _G2079=_G2135, _G2135=_G2192]
+ (14)  [-v4_scmyciel(_G2578), _G2529=_G2578, v4_scmyciel(_G2529)]
+ (15)  [-r2_hidden(_G2865, _G3002), r2_hidden(_G2798, _G2933), _G2798=_G2865, _G2933=_G3002]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(k3_tarski(2^[]), k3_tarski(k12_scmyciel(2^[])))]   (2)  
+1.1  [-r2_hidden(k3_tarski(2^[]), k3_tarski(k12_scmyciel(2^[]))), v4_scmyciel(2^[]), k3_tarski(2^[])=k3_tarski(2^[])]   (4)  substitution:[[_G4763, _G4635], [k3_tarski(2^[]), 2^[]]]
+1.1.1  [-v4_scmyciel(2^[])]   (1)  
+1.1.2  [- (k3_tarski(2^[])=k3_tarski(2^[]))]   (11)  substitution:[[_G1747], [k3_tarski(2^[])]]
+------------------------------------------------------
+End of proof for t87_scmyciel

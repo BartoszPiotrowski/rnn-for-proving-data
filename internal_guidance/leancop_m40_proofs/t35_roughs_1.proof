@@ -1,0 +1,64 @@
+
+t35_roughs_1 is a Theorem
+Start of proof for t35_roughs_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(1^[])]
+ (2)  [-v2_roughs_1(1^[])]
+ (3)  [-l1_orders_2(1^[])]
+ (4)  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]
+ (5)  [k4_roughs_1(1^[], k4_roughs_1(1^[], 2^[]))=k4_roughs_1(1^[], 2^[])]
+ (6)  [l1_orders_2(_G8291), v2_roughs_1(_G8291), -v3_roughs_1(_G8291)]
+ (7)  [-m1_subset_1(k4_roughs_1(_G8480, _G8548), k1_zfmisc_1(u1_struct_0(_G8480))), m1_subset_1(_G8548, k1_zfmisc_1(u1_struct_0(_G8480))), -v2_struct_0(_G8480), l1_orders_2(_G8480)]
+ (8)  [- (k4_roughs_1(_G8983, k3_roughs_1(_G8983, k4_roughs_1(_G8983, _G9213)))=k4_roughs_1(_G8983, _G9213)), m1_subset_1(_G9213, k1_zfmisc_1(u1_struct_0(_G8983))), -v2_struct_0(_G8983), v3_roughs_1(_G8983), l1_orders_2(_G8983)]
+ (9)  [- (k3_roughs_1(_G9631, k3_roughs_1(_G9631, _G9858))=k3_roughs_1(_G9631, _G9858)), m1_subset_1(_G9858, k1_zfmisc_1(u1_struct_0(_G9631))), -v2_struct_0(_G9631), v2_roughs_1(_G9631), l1_orders_2(_G9631)]
+ (10)  [- (k3_roughs_1(_G10225, k3_roughs_1(_G10225, _G10455))=k4_roughs_1(_G10225, k3_roughs_1(_G10225, _G10455))), m1_subset_1(_G10455, k1_zfmisc_1(u1_struct_0(_G10225))), -v2_struct_0(_G10225), v2_roughs_1(_G10225), l1_orders_2(_G10225)]
+ (11)  [- (k3_roughs_1(_G6466, _G6601)=k3_roughs_1(_G6533, _G6670)), _G6466=_G6533, _G6601=_G6670]
+ (12)  [_G7063=_G7112, - (k1_zfmisc_1(_G7063)=k1_zfmisc_1(_G7112))]
+ (13)  [_G7341=_G7390, - (u1_struct_0(_G7341)=u1_struct_0(_G7390))]
+ (14)  [- (k4_roughs_1(_G7610, _G7745)=k4_roughs_1(_G7677, _G7814)), _G7610=_G7677, _G7745=_G7814]
+ (15)  [- (_G3879=_G3879)]
+ (16)  [_G3978=_G4023, - (_G4023=_G3978)]
+ (17)  [- (_G4211=_G4324), _G4211=_G4267, _G4267=_G4324]
+ (18)  [-v3_roughs_1(_G4710), _G4661=_G4710, v3_roughs_1(_G4661)]
+ (19)  [-v2_struct_0(_G4988), _G4939=_G4988, v2_struct_0(_G4939)]
+ (20)  [-v2_roughs_1(_G5266), _G5217=_G5266, v2_roughs_1(_G5217)]
+ (21)  [-l1_orders_2(_G5544), _G5495=_G5544, l1_orders_2(_G5495)]
+ (22)  [-m1_subset_1(_G5831, _G5968), m1_subset_1(_G5764, _G5899), _G5764=_G5831, _G5899=_G5968]
+
+Connection Proof:
+-----------------
+1  [v2_struct_0(1^[])]   (1)  
+1.1  [-v2_struct_0(1^[]), - (k4_roughs_1(1^[], k3_roughs_1(1^[], k4_roughs_1(1^[], 2^[])))=k4_roughs_1(1^[], 2^[])), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[]))), v3_roughs_1(1^[]), l1_orders_2(1^[])]   (8)  substitution:[[_G8983, _G9213], [1^[], 2^[]]]
+1.1.1  [k4_roughs_1(1^[], k3_roughs_1(1^[], k4_roughs_1(1^[], 2^[])))=k4_roughs_1(1^[], 2^[]), - (k4_roughs_1(1^[], 2^[])=k4_roughs_1(1^[], k3_roughs_1(1^[], k4_roughs_1(1^[], 2^[]))))]   (16)  substitution:[[_G3978, _G4023], [k4_roughs_1(1^[], k3_roughs_1(1^[], k4_roughs_1(1^[], 2^[]))), k4_roughs_1(1^[], 2^[])]]
+1.1.1.1  [k4_roughs_1(1^[], 2^[])=k4_roughs_1(1^[], k3_roughs_1(1^[], k4_roughs_1(1^[], 2^[]))), - (k4_roughs_1(1^[], 2^[])=k3_roughs_1(1^[], k3_roughs_1(1^[], k4_roughs_1(1^[], 2^[])))), k4_roughs_1(1^[], k3_roughs_1(1^[], k4_roughs_1(1^[], 2^[])))=k3_roughs_1(1^[], k3_roughs_1(1^[], k4_roughs_1(1^[], 2^[])))]   (17)  substitution:[[_G4211, _G4267, _G4324], [k4_roughs_1(1^[], 2^[]), k4_roughs_1(1^[], k3_roughs_1(1^[], k4_roughs_1(1^[], 2^[]))), k3_roughs_1(1^[], k3_roughs_1(1^[], k4_roughs_1(1^[], 2^[])))]]
+1.1.1.1.1  [k4_roughs_1(1^[], 2^[])=k3_roughs_1(1^[], k3_roughs_1(1^[], k4_roughs_1(1^[], 2^[]))), - (k4_roughs_1(1^[], 2^[])=k3_roughs_1(1^[], k4_roughs_1(1^[], 2^[]))), k3_roughs_1(1^[], k3_roughs_1(1^[], k4_roughs_1(1^[], 2^[])))=k3_roughs_1(1^[], k4_roughs_1(1^[], 2^[]))]   (17)  substitution:[[_G4211, _G4267, _G4324], [k4_roughs_1(1^[], 2^[]), k3_roughs_1(1^[], k3_roughs_1(1^[], k4_roughs_1(1^[], 2^[]))), k3_roughs_1(1^[], k4_roughs_1(1^[], 2^[]))]]
+1.1.1.1.1.1  [k4_roughs_1(1^[], 2^[])=k3_roughs_1(1^[], k4_roughs_1(1^[], 2^[])), - (k4_roughs_1(1^[], k4_roughs_1(1^[], 2^[]))=k4_roughs_1(1^[], k3_roughs_1(1^[], k4_roughs_1(1^[], 2^[])))), 1^[]=1^[]]   (14)  substitution:[[_G7745, _G7814, _G7610, _G7677], [k4_roughs_1(1^[], 2^[]), k3_roughs_1(1^[], k4_roughs_1(1^[], 2^[])), 1^[], 1^[]]]
+1.1.1.1.1.1.1  [k4_roughs_1(1^[], k4_roughs_1(1^[], 2^[]))=k4_roughs_1(1^[], k3_roughs_1(1^[], k4_roughs_1(1^[], 2^[]))), - (k4_roughs_1(1^[], k4_roughs_1(1^[], 2^[]))=k4_roughs_1(1^[], 2^[])), k4_roughs_1(1^[], k3_roughs_1(1^[], k4_roughs_1(1^[], 2^[])))=k4_roughs_1(1^[], 2^[])]   (17)  substitution:[[_G4211, _G4267, _G4324], [k4_roughs_1(1^[], k4_roughs_1(1^[], 2^[])), k4_roughs_1(1^[], k3_roughs_1(1^[], k4_roughs_1(1^[], 2^[]))), k4_roughs_1(1^[], 2^[])]]
+1.1.1.1.1.1.1.1  [k4_roughs_1(1^[], k4_roughs_1(1^[], 2^[]))=k4_roughs_1(1^[], 2^[])]   (5)  
+1.1.1.1.1.1.1.2  [- (k4_roughs_1(1^[], k3_roughs_1(1^[], k4_roughs_1(1^[], 2^[])))=k4_roughs_1(1^[], 2^[]))]   (reduction:1.1)  
+1.1.1.1.1.1.2  [- (1^[]=1^[])]   (15)  substitution:[[_G3879], [1^[]]]
+1.1.1.1.1.2  [- (k3_roughs_1(1^[], k3_roughs_1(1^[], k4_roughs_1(1^[], 2^[])))=k3_roughs_1(1^[], k4_roughs_1(1^[], 2^[]))), m1_subset_1(k4_roughs_1(1^[], 2^[]), k1_zfmisc_1(u1_struct_0(1^[]))), -v2_struct_0(1^[]), v2_roughs_1(1^[]), l1_orders_2(1^[])]   (9)  substitution:[[_G9631, _G9858], [1^[], k4_roughs_1(1^[], 2^[])]]
+1.1.1.1.1.2.1  [-m1_subset_1(k4_roughs_1(1^[], 2^[]), k1_zfmisc_1(u1_struct_0(1^[]))), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[]))), -v2_struct_0(1^[]), l1_orders_2(1^[])]   (7)  substitution:[[_G8480, _G8548], [1^[], 2^[]]]
+1.1.1.1.1.2.1.1  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (4)  
+1.1.1.1.1.2.1.2  [v2_struct_0(1^[])]   (1)  
+1.1.1.1.1.2.1.3  [-l1_orders_2(1^[])]   (3)  
+1.1.1.1.1.2.2  [v2_struct_0(1^[])]   (1)  
+1.1.1.1.1.2.3  [-v2_roughs_1(1^[])]   (2)  
+1.1.1.1.1.2.4  [-l1_orders_2(1^[])]   (3)  
+1.1.1.1.2  [- (k4_roughs_1(1^[], k3_roughs_1(1^[], k4_roughs_1(1^[], 2^[])))=k3_roughs_1(1^[], k3_roughs_1(1^[], k4_roughs_1(1^[], 2^[])))), k3_roughs_1(1^[], k3_roughs_1(1^[], k4_roughs_1(1^[], 2^[])))=k4_roughs_1(1^[], k3_roughs_1(1^[], k4_roughs_1(1^[], 2^[])))]   (16)  substitution:[[_G4023, _G3978], [k4_roughs_1(1^[], k3_roughs_1(1^[], k4_roughs_1(1^[], 2^[]))), k3_roughs_1(1^[], k3_roughs_1(1^[], k4_roughs_1(1^[], 2^[])))]]
+1.1.1.1.2.1  [- (k3_roughs_1(1^[], k3_roughs_1(1^[], k4_roughs_1(1^[], 2^[])))=k4_roughs_1(1^[], k3_roughs_1(1^[], k4_roughs_1(1^[], 2^[])))), m1_subset_1(k4_roughs_1(1^[], 2^[]), k1_zfmisc_1(u1_struct_0(1^[]))), -v2_struct_0(1^[]), v2_roughs_1(1^[]), l1_orders_2(1^[])]   (10)  substitution:[[_G10225, _G10455], [1^[], k4_roughs_1(1^[], 2^[])]]
+1.1.1.1.2.1.1  [-m1_subset_1(k4_roughs_1(1^[], 2^[]), k1_zfmisc_1(u1_struct_0(1^[]))), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[]))), -v2_struct_0(1^[]), l1_orders_2(1^[])]   (7)  substitution:[[_G8480, _G8548], [1^[], 2^[]]]
+1.1.1.1.2.1.1.1  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (4)  
+1.1.1.1.2.1.1.2  [v2_struct_0(1^[])]   (1)  
+1.1.1.1.2.1.1.3  [-l1_orders_2(1^[])]   (3)  
+1.1.1.1.2.1.2  [v2_struct_0(1^[])]   (1)  
+1.1.1.1.2.1.3  [-v2_roughs_1(1^[])]   (2)  
+1.1.1.1.2.1.4  [-l1_orders_2(1^[])]   (3)  
+1.1.2  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (4)  
+1.1.3  [-v3_roughs_1(1^[]), l1_orders_2(1^[]), v2_roughs_1(1^[])]   (6)  substitution:[[_G8291], [1^[]]]
+1.1.3.1  [-l1_orders_2(1^[])]   (3)  
+1.1.3.2  [-v2_roughs_1(1^[])]   (2)  
+1.1.4  [-l1_orders_2(1^[])]   (3)  
+------------------------------------------------------
+End of proof for t35_roughs_1

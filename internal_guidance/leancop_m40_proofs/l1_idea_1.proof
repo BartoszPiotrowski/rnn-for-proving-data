@@ -1,0 +1,42 @@
+
+l1_idea_1 is a Theorem
+Start of proof for l1_idea_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], k5_numbers)]
+ (2)  [-m1_subset_1(2^[], k5_numbers)]
+ (3)  [-v1_int_2(2^[])]
+ (4)  [1^[]=k6_numbers]
+ (5)  [r1_xxreal_0(2^[], 1^[])]
+ (6)  [r1_int_2(1^[], 2^[])]
+ (7)  [m1_subset_1(_G5124, k4_ordinal1), -v7_ordinal1(_G5124)]
+ (8)  [- (k5_numbers=k4_ordinal1)]
+ (9)  [v7_ordinal1(_G5329), v7_ordinal1(_G5427), v1_int_2(_G5427), - (_G5329=k6_numbers), -r1_xxreal_0(_G5427, _G5329), -r1_int_2(_G5329, _G5427)]
+ (10)  [- (_G1899=_G1899)]
+ (11)  [_G1998=_G2043, - (_G2043=_G1998)]
+ (12)  [- (_G2231=_G2344), _G2231=_G2287, _G2287=_G2344]
+ (13)  [-v7_ordinal1(_G2730), _G2681=_G2730, v7_ordinal1(_G2681)]
+ (14)  [-m1_subset_1(_G3026, _G3163), m1_subset_1(_G2959, _G3094), _G2959=_G3026, _G3094=_G3163]
+ (15)  [-v1_int_2(_G3605), _G3556=_G3605, v1_int_2(_G3556)]
+ (16)  [-r1_xxreal_0(_G3901, _G4038), r1_xxreal_0(_G3834, _G3969), _G3834=_G3901, _G3969=_G4038]
+ (17)  [-r1_int_2(_G4489, _G4626), r1_int_2(_G4422, _G4557), _G4422=_G4489, _G4557=_G4626]
+
+Connection Proof:
+-----------------
+1  [1^[]=k6_numbers]   (4)  
+1.1  [- (1^[]=k6_numbers), v7_ordinal1(1^[]), v7_ordinal1(2^[]), v1_int_2(2^[]), -r1_xxreal_0(2^[], 1^[]), -r1_int_2(1^[], 2^[])]   (9)  substitution:[[_G5329, _G5427], [1^[], 2^[]]]
+1.1.1  [-v7_ordinal1(1^[]), m1_subset_1(1^[], k4_ordinal1)]   (7)  substitution:[[_G5124], [1^[]]]
+1.1.1.1  [-m1_subset_1(1^[], k4_ordinal1), m1_subset_1(1^[], k5_numbers), 1^[]=1^[], k5_numbers=k4_ordinal1]   (14)  substitution:[[_G3026, _G3163, _G2959, _G3094], [1^[], k4_ordinal1, 1^[], k5_numbers]]
+1.1.1.1.1  [-m1_subset_1(1^[], k5_numbers)]   (1)  
+1.1.1.1.2  [- (1^[]=1^[])]   (10)  substitution:[[_G1899], [1^[]]]
+1.1.1.1.3  [- (k5_numbers=k4_ordinal1)]   (8)  
+1.1.2  [-v7_ordinal1(2^[]), m1_subset_1(2^[], k4_ordinal1)]   (7)  substitution:[[_G5124], [2^[]]]
+1.1.2.1  [-m1_subset_1(2^[], k4_ordinal1), m1_subset_1(2^[], k5_numbers), 2^[]=2^[], k5_numbers=k4_ordinal1]   (14)  substitution:[[_G3026, _G3163, _G2959, _G3094], [2^[], k4_ordinal1, 2^[], k5_numbers]]
+1.1.2.1.1  [-m1_subset_1(2^[], k5_numbers)]   (2)  
+1.1.2.1.2  [- (2^[]=2^[])]   (10)  substitution:[[_G1899], [2^[]]]
+1.1.2.1.3  [- (k5_numbers=k4_ordinal1)]   (8)  
+1.1.3  [-v1_int_2(2^[])]   (3)  
+1.1.4  [r1_xxreal_0(2^[], 1^[])]   (5)  
+1.1.5  [r1_int_2(1^[], 2^[])]   (6)  
+------------------------------------------------------
+End of proof for l1_idea_1

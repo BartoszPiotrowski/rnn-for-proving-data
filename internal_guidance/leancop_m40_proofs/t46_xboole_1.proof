@@ -1,0 +1,23 @@
+
+t46_xboole_1 is a Theorem
+Start of proof for t46_xboole_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k4_xboole_0(1^[], k2_xboole_0(1^[], 2^[]))=k1_xboole_0]
+ (2)  [-r1_tarski(_G4202, k2_xboole_0(_G4202, _G4244))]
+ (3)  [k4_xboole_0(_G3924, _G3972)=k1_xboole_0, -r1_tarski(_G3924, _G3972)]
+ (4)  [- (k4_xboole_0(_G3924, _G3972)=k1_xboole_0), r1_tarski(_G3924, _G3972)]
+ (5)  [- (k4_xboole_0(_G2697, _G2832)=k4_xboole_0(_G2764, _G2901)), _G2697=_G2764, _G2832=_G2901]
+ (6)  [- (k2_xboole_0(_G3285, _G3420)=k2_xboole_0(_G3352, _G3489)), _G3285=_G3352, _G3420=_G3489]
+ (7)  [-r1_tarski(_G2146, _G2283), r1_tarski(_G2079, _G2214), _G2079=_G2146, _G2214=_G2283]
+ (8)  [- (_G1306=_G1306)]
+ (9)  [_G1405=_G1450, - (_G1450=_G1405)]
+ (10)  [- (_G1638=_G1751), _G1638=_G1694, _G1694=_G1751]
+
+Connection Proof:
+-----------------
+1  [k4_xboole_0(1^[], k2_xboole_0(1^[], 2^[]))=k1_xboole_0]   (1)  
+1.1  [- (k4_xboole_0(1^[], k2_xboole_0(1^[], 2^[]))=k1_xboole_0), r1_tarski(1^[], k2_xboole_0(1^[], 2^[]))]   (4)  substitution:[[_G3924, _G3972], [1^[], k2_xboole_0(1^[], 2^[])]]
+1.1.1  [-r1_tarski(1^[], k2_xboole_0(1^[], 2^[]))]   (2)  substitution:[[_G4202, _G4244], [1^[], 2^[]]]
+------------------------------------------------------
+End of proof for t46_xboole_1

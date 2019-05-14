@@ -1,0 +1,53 @@
+
+t111_member_1 is a Theorem
+Start of proof for t111_member_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xxreal_0(1^[])]
+ (2)  [-v1_xxreal_0(2^[])]
+ (3)  [k14_member_1(k1_tarski(1^[]), k1_tarski(2^[]))=k1_tarski(k6_xxreal_3(1^[], 2^[]))]
+ (4)  [v2_membered(_G7831), v2_membered(_G7920), - (k14_member_1(_G7831, _G7920)=k12_member_1(_G7831, k6_member_1(_G7920)))]
+ (5)  [v1_xxreal_0(_G8212), v1_xxreal_0(_G8301), - (k6_xxreal_3(_G8212, _G8301)=k4_xxreal_3(_G8212, k5_xxreal_3(_G8301)))]
+ (6)  [v1_xxreal_0(_G8593), -v1_xxreal_0(k5_xxreal_3(_G8593))]
+ (7)  [v1_xxreal_0(_G8740), -v2_membered(k1_tarski(_G8740))]
+ (8)  [v1_xxreal_0(_G8887), - (k6_member_1(k1_tarski(_G8887))=k1_tarski(k5_xxreal_3(_G8887)))]
+ (9)  [v1_xxreal_0(_G9099), v1_xxreal_0(_G9192), - (k12_member_1(k1_tarski(_G9099), k1_tarski(_G9192))=k1_tarski(k4_xxreal_3(_G9099, _G9192)))]
+ (10)  [- (_G3100=_G3100)]
+ (11)  [_G3199=_G3244, - (_G3244=_G3199)]
+ (12)  [- (_G3432=_G3545), _G3432=_G3488, _G3488=_G3545]
+ (13)  [-v2_membered(_G3931), _G3882=_G3931, v2_membered(_G3882)]
+ (14)  [-v1_xxreal_0(_G4200), _G4151=_G4200, v1_xxreal_0(_G4151)]
+ (15)  [_G4471=_G4520, - (k6_member_1(_G4471)=k6_member_1(_G4520))]
+ (16)  [_G4749=_G4798, - (k5_xxreal_3(_G4749)=k5_xxreal_3(_G4798))]
+ (17)  [- (k12_member_1(_G5027, _G5162)=k12_member_1(_G5094, _G5231)), _G5027=_G5094, _G5162=_G5231]
+ (18)  [- (k4_xxreal_3(_G5624, _G5759)=k4_xxreal_3(_G5691, _G5828)), _G5624=_G5691, _G5759=_G5828]
+ (19)  [- (k14_member_1(_G6221, _G6356)=k14_member_1(_G6288, _G6425)), _G6221=_G6288, _G6356=_G6425]
+ (20)  [_G6818=_G6867, - (k1_tarski(_G6818)=k1_tarski(_G6867))]
+ (21)  [- (k6_xxreal_3(_G7087, _G7222)=k6_xxreal_3(_G7154, _G7291)), _G7087=_G7154, _G7222=_G7291]
+
+Connection Proof:
+-----------------
+1  [k14_member_1(k1_tarski(1^[]), k1_tarski(2^[]))=k1_tarski(k6_xxreal_3(1^[], 2^[]))]   (3)  
+1.1  [- (k14_member_1(k1_tarski(1^[]), k1_tarski(2^[]))=k1_tarski(k6_xxreal_3(1^[], 2^[]))), k14_member_1(k1_tarski(1^[]), k1_tarski(2^[]))=k12_member_1(k1_tarski(1^[]), k6_member_1(k1_tarski(2^[]))), k12_member_1(k1_tarski(1^[]), k6_member_1(k1_tarski(2^[])))=k1_tarski(k6_xxreal_3(1^[], 2^[]))]   (12)  substitution:[[_G3432, _G3545, _G3488], [k14_member_1(k1_tarski(1^[]), k1_tarski(2^[])), k1_tarski(k6_xxreal_3(1^[], 2^[])), k12_member_1(k1_tarski(1^[]), k6_member_1(k1_tarski(2^[])))]]
+1.1.1  [- (k14_member_1(k1_tarski(1^[]), k1_tarski(2^[]))=k12_member_1(k1_tarski(1^[]), k6_member_1(k1_tarski(2^[])))), v2_membered(k1_tarski(1^[])), v2_membered(k1_tarski(2^[]))]   (4)  substitution:[[_G7831, _G7920], [k1_tarski(1^[]), k1_tarski(2^[])]]
+1.1.1.1  [-v2_membered(k1_tarski(1^[])), v1_xxreal_0(1^[])]   (7)  substitution:[[_G8740], [1^[]]]
+1.1.1.1.1  [-v1_xxreal_0(1^[])]   (1)  
+1.1.1.2  [-v2_membered(k1_tarski(2^[])), v1_xxreal_0(2^[])]   (7)  substitution:[[_G8740], [2^[]]]
+1.1.1.2.1  [-v1_xxreal_0(2^[])]   (2)  
+1.1.2  [- (k12_member_1(k1_tarski(1^[]), k6_member_1(k1_tarski(2^[])))=k1_tarski(k6_xxreal_3(1^[], 2^[]))), k12_member_1(k1_tarski(1^[]), k6_member_1(k1_tarski(2^[])))=k1_tarski(k4_xxreal_3(1^[], k5_xxreal_3(2^[]))), k1_tarski(k4_xxreal_3(1^[], k5_xxreal_3(2^[])))=k1_tarski(k6_xxreal_3(1^[], 2^[]))]   (12)  substitution:[[_G3432, _G3545, _G3488], [k12_member_1(k1_tarski(1^[]), k6_member_1(k1_tarski(2^[]))), k1_tarski(k6_xxreal_3(1^[], 2^[])), k1_tarski(k4_xxreal_3(1^[], k5_xxreal_3(2^[])))]]
+1.1.2.1  [- (k12_member_1(k1_tarski(1^[]), k6_member_1(k1_tarski(2^[])))=k1_tarski(k4_xxreal_3(1^[], k5_xxreal_3(2^[])))), k12_member_1(k1_tarski(1^[]), k6_member_1(k1_tarski(2^[])))=k12_member_1(k1_tarski(1^[]), k1_tarski(k5_xxreal_3(2^[]))), k12_member_1(k1_tarski(1^[]), k1_tarski(k5_xxreal_3(2^[])))=k1_tarski(k4_xxreal_3(1^[], k5_xxreal_3(2^[])))]   (12)  substitution:[[_G3432, _G3545, _G3488], [k12_member_1(k1_tarski(1^[]), k6_member_1(k1_tarski(2^[]))), k1_tarski(k4_xxreal_3(1^[], k5_xxreal_3(2^[]))), k12_member_1(k1_tarski(1^[]), k1_tarski(k5_xxreal_3(2^[])))]]
+1.1.2.1.1  [- (k12_member_1(k1_tarski(1^[]), k6_member_1(k1_tarski(2^[])))=k12_member_1(k1_tarski(1^[]), k1_tarski(k5_xxreal_3(2^[])))), k1_tarski(1^[])=k1_tarski(1^[]), k6_member_1(k1_tarski(2^[]))=k1_tarski(k5_xxreal_3(2^[]))]   (17)  substitution:[[_G5027, _G5162, _G5094, _G5231], [k1_tarski(1^[]), k6_member_1(k1_tarski(2^[])), k1_tarski(1^[]), k1_tarski(k5_xxreal_3(2^[]))]]
+1.1.2.1.1.1  [- (k1_tarski(1^[])=k1_tarski(1^[]))]   (10)  substitution:[[_G3100], [k1_tarski(1^[])]]
+1.1.2.1.1.2  [- (k6_member_1(k1_tarski(2^[]))=k1_tarski(k5_xxreal_3(2^[]))), v1_xxreal_0(2^[])]   (8)  substitution:[[_G8887], [2^[]]]
+1.1.2.1.1.2.1  [-v1_xxreal_0(2^[])]   (2)  
+1.1.2.1.2  [- (k12_member_1(k1_tarski(1^[]), k1_tarski(k5_xxreal_3(2^[])))=k1_tarski(k4_xxreal_3(1^[], k5_xxreal_3(2^[])))), v1_xxreal_0(1^[]), v1_xxreal_0(k5_xxreal_3(2^[]))]   (9)  substitution:[[_G9099, _G9192], [1^[], k5_xxreal_3(2^[])]]
+1.1.2.1.2.1  [-v1_xxreal_0(1^[])]   (1)  
+1.1.2.1.2.2  [-v1_xxreal_0(k5_xxreal_3(2^[])), v1_xxreal_0(2^[])]   (6)  substitution:[[_G8593], [2^[]]]
+1.1.2.1.2.2.1  [-v1_xxreal_0(2^[])]   (2)  
+1.1.2.2  [- (k1_tarski(k4_xxreal_3(1^[], k5_xxreal_3(2^[])))=k1_tarski(k6_xxreal_3(1^[], 2^[]))), k1_tarski(k6_xxreal_3(1^[], 2^[]))=k1_tarski(k4_xxreal_3(1^[], k5_xxreal_3(2^[])))]   (11)  substitution:[[_G3244, _G3199], [k1_tarski(k4_xxreal_3(1^[], k5_xxreal_3(2^[]))), k1_tarski(k6_xxreal_3(1^[], 2^[]))]]
+1.1.2.2.1  [- (k1_tarski(k6_xxreal_3(1^[], 2^[]))=k1_tarski(k4_xxreal_3(1^[], k5_xxreal_3(2^[])))), k6_xxreal_3(1^[], 2^[])=k4_xxreal_3(1^[], k5_xxreal_3(2^[]))]   (20)  substitution:[[_G6818, _G6867], [k6_xxreal_3(1^[], 2^[]), k4_xxreal_3(1^[], k5_xxreal_3(2^[]))]]
+1.1.2.2.1.1  [- (k6_xxreal_3(1^[], 2^[])=k4_xxreal_3(1^[], k5_xxreal_3(2^[]))), v1_xxreal_0(1^[]), v1_xxreal_0(2^[])]   (5)  substitution:[[_G8212, _G8301], [1^[], 2^[]]]
+1.1.2.2.1.1.1  [-v1_xxreal_0(1^[])]   (1)  
+1.1.2.2.1.1.2  [-v1_xxreal_0(2^[])]   (2)  
+------------------------------------------------------
+End of proof for t111_member_1

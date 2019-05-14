@@ -1,0 +1,33 @@
+
+t18_wellord1 is a Theorem
+Start of proof for t18_wellord1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(2^[])]
+ (2)  [-v4_relat_2(2^[])]
+ (3)  [v4_relat_2(k2_wellord1(2^[], 1^[]))]
+ (4)  [v1_relat_1(_G5042), - (k2_wellord1(_G5042, _G5127)=k3_xboole_0(_G5042, k2_zfmisc_1(_G5127, _G5127)))]
+ (5)  [-v1_relat_1(k2_zfmisc_1(_G5737, _G5778))]
+ (6)  [-v4_relat_2(k3_xboole_0(_G5387, _G5443)), v1_relat_1(_G5443), v1_relat_1(_G5387), v4_relat_2(_G5387)]
+ (7)  [- (k3_xboole_0(_G3197, _G3332)=k3_xboole_0(_G3264, _G3401)), _G3197=_G3264, _G3332=_G3401]
+ (8)  [- (k2_zfmisc_1(_G3794, _G3929)=k2_zfmisc_1(_G3861, _G3998)), _G3794=_G3861, _G3929=_G3998]
+ (9)  [- (k2_wellord1(_G4382, _G4517)=k2_wellord1(_G4449, _G4586)), _G4382=_G4449, _G4517=_G4586]
+ (10)  [- (_G1826=_G1826)]
+ (11)  [_G1925=_G1970, - (_G1970=_G1925)]
+ (12)  [- (_G2158=_G2271), _G2158=_G2214, _G2214=_G2271]
+ (13)  [-v1_relat_1(_G2657), _G2608=_G2657, v1_relat_1(_G2608)]
+ (14)  [-v4_relat_2(_G2926), _G2877=_G2926, v4_relat_2(_G2877)]
+
+Connection Proof:
+-----------------
+1  [v4_relat_2(k2_wellord1(2^[], 1^[]))]   (3)  
+1.1  [-v4_relat_2(k2_wellord1(2^[], 1^[])), k3_xboole_0(2^[], k2_zfmisc_1(1^[], 1^[]))=k2_wellord1(2^[], 1^[]), v4_relat_2(k3_xboole_0(2^[], k2_zfmisc_1(1^[], 1^[])))]   (14)  substitution:[[_G2926, _G2877], [k2_wellord1(2^[], 1^[]), k3_xboole_0(2^[], k2_zfmisc_1(1^[], 1^[]))]]
+1.1.1  [- (k3_xboole_0(2^[], k2_zfmisc_1(1^[], 1^[]))=k2_wellord1(2^[], 1^[])), k2_wellord1(2^[], 1^[])=k3_xboole_0(2^[], k2_zfmisc_1(1^[], 1^[]))]   (11)  substitution:[[_G1970, _G1925], [k3_xboole_0(2^[], k2_zfmisc_1(1^[], 1^[])), k2_wellord1(2^[], 1^[])]]
+1.1.1.1  [- (k2_wellord1(2^[], 1^[])=k3_xboole_0(2^[], k2_zfmisc_1(1^[], 1^[]))), v1_relat_1(2^[])]   (4)  substitution:[[_G5042, _G5127], [2^[], 1^[]]]
+1.1.1.1.1  [-v1_relat_1(2^[])]   (1)  
+1.1.2  [-v4_relat_2(k3_xboole_0(2^[], k2_zfmisc_1(1^[], 1^[]))), v1_relat_1(k2_zfmisc_1(1^[], 1^[])), v1_relat_1(2^[]), v4_relat_2(2^[])]   (6)  substitution:[[_G5387, _G5443], [2^[], k2_zfmisc_1(1^[], 1^[])]]
+1.1.2.1  [-v1_relat_1(k2_zfmisc_1(1^[], 1^[]))]   (5)  substitution:[[_G5737, _G5778], [1^[], 1^[]]]
+1.1.2.2  [-v1_relat_1(2^[])]   (1)  
+1.1.2.3  [-v4_relat_2(2^[])]   (2)  
+------------------------------------------------------
+End of proof for t18_wellord1

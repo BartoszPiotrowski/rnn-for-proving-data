@@ -1,0 +1,36 @@
+
+t11_oposet_1 is a Theorem
+Start of proof for t11_oposet_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(1^[])]
+ (2)  [-l1_orders_2(1^[])]
+ (3)  [-v4_oposet_1(1^[])]
+ (4)  [v3_oposet_1(1^[])]
+ (5)  [l1_orders_2(_G943), -v2_struct_0(_G943), v3_oposet_1(_G943), -v2_oposet_1(_G943)]
+ (6)  [l1_orders_2(_G943), -v2_struct_0(_G943), v3_oposet_1(_G943), -v4_orders_2(_G943)]
+ (7)  [l1_orders_2(_G943), -v2_struct_0(_G943), -v3_oposet_1(_G943), v2_oposet_1(_G943), v4_orders_2(_G943)]
+ (8)  [l1_orders_2(_G1576), -v2_struct_0(_G1576), v3_orders_2(_G1576), -v2_oposet_1(_G1576)]
+ (9)  [l1_orders_2(_G1264), -v2_struct_0(_G1264), v4_oposet_1(_G1264), -v3_orders_2(_G1264)]
+ (10)  [l1_orders_2(_G1264), -v2_struct_0(_G1264), v4_oposet_1(_G1264), -v4_orders_2(_G1264)]
+ (11)  [l1_orders_2(_G1264), -v2_struct_0(_G1264), -v4_oposet_1(_G1264), v3_orders_2(_G1264), v4_orders_2(_G1264)]
+
+Connection Proof:
+-----------------
+1  [v2_struct_0(1^[])]   (1)  
+1.1  [-v2_struct_0(1^[]), l1_orders_2(1^[]), -v3_oposet_1(1^[]), v2_oposet_1(1^[]), v4_orders_2(1^[])]   (7)  substitution:[[_G943], [1^[]]]
+1.1.1  [-l1_orders_2(1^[])]   (2)  
+1.1.2  [v3_oposet_1(1^[])]   (4)  
+1.1.3  [-v2_oposet_1(1^[]), l1_orders_2(1^[]), -v2_struct_0(1^[]), v3_orders_2(1^[])]   (8)  substitution:[[_G1576], [1^[]]]
+1.1.3.1  [-l1_orders_2(1^[])]   (2)  
+1.1.3.2  [v2_struct_0(1^[])]   (1)  
+1.1.3.3  [-v3_orders_2(1^[]), l1_orders_2(1^[]), -v2_struct_0(1^[]), v4_oposet_1(1^[])]   (9)  substitution:[[_G1264], [1^[]]]
+1.1.3.3.1  [-l1_orders_2(1^[])]   (2)  
+1.1.3.3.2  [v2_struct_0(1^[])]   (1)  
+1.1.3.3.3  [-v4_oposet_1(1^[])]   (3)  
+1.1.4  [-v4_orders_2(1^[]), l1_orders_2(1^[]), -v2_struct_0(1^[]), v4_oposet_1(1^[])]   (10)  substitution:[[_G1264], [1^[]]]
+1.1.4.1  [-l1_orders_2(1^[])]   (2)  
+1.1.4.2  [v2_struct_0(1^[])]   (1)  
+1.1.4.3  [-v4_oposet_1(1^[])]   (3)  
+------------------------------------------------------
+End of proof for t11_oposet_1

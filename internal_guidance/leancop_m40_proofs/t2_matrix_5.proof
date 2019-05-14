@@ -1,0 +1,25 @@
+
+t2_matrix_5 is a Theorem
+Start of proof for t2_matrix_5
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k4_struct_0(k1_complfld)=k6_numbers]
+ (2)  [- (k5_complex1=k1_xboole_0)]
+ (3)  [- (k6_numbers=k1_xboole_0)]
+ (4)  [- (k4_struct_0(k1_complfld)=k5_complex1)]
+ (5)  [_G1609=_G1658, - (k4_struct_0(_G1609)=k4_struct_0(_G1658))]
+ (6)  [- (_G836=_G836)]
+ (7)  [_G935=_G980, - (_G980=_G935)]
+ (8)  [- (_G1168=_G1281), _G1168=_G1224, _G1224=_G1281]
+
+Connection Proof:
+-----------------
+1  [k4_struct_0(k1_complfld)=k6_numbers]   (1)  
+1.1  [- (k4_struct_0(k1_complfld)=k6_numbers), k4_struct_0(k1_complfld)=k5_complex1, k5_complex1=k6_numbers]   (8)  substitution:[[_G1168, _G1281, _G1224], [k4_struct_0(k1_complfld), k6_numbers, k5_complex1]]
+1.1.1  [- (k4_struct_0(k1_complfld)=k5_complex1)]   (4)  
+1.1.2  [- (k5_complex1=k6_numbers), k5_complex1=k1_xboole_0, k1_xboole_0=k6_numbers]   (8)  substitution:[[_G1168, _G1281, _G1224], [k5_complex1, k6_numbers, k1_xboole_0]]
+1.1.2.1  [- (k5_complex1=k1_xboole_0)]   (2)  
+1.1.2.2  [- (k1_xboole_0=k6_numbers), k6_numbers=k1_xboole_0]   (7)  substitution:[[_G980, _G935], [k1_xboole_0, k6_numbers]]
+1.1.2.2.1  [- (k6_numbers=k1_xboole_0)]   (3)  
+------------------------------------------------------
+End of proof for t2_matrix_5

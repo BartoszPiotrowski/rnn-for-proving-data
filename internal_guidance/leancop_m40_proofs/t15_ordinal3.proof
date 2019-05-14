@@ -1,0 +1,29 @@
+
+t15_ordinal3 is a Theorem
+Start of proof for t15_ordinal3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [np__1=k1_tarski(k1_xboole_0)]
+ (2)  [- (k2_xboole_0(_G3300, _G3345)=k2_xboole_0(_G3345, _G3300))]
+ (3)  [- (k1_ordinal1(_G3542)=k2_xboole_0(_G3542, k1_tarski(_G3542)))]
+ (4)  [- (np__1=k1_ordinal1(k1_xboole_0))]
+ (5)  [- (k2_xboole_0(_G3777, k1_xboole_0)=_G3777)]
+ (6)  [- (_G1311=_G1311)]
+ (7)  [_G1410=_G1455, - (_G1455=_G1410)]
+ (8)  [- (_G1643=_G1756), _G1643=_G1699, _G1699=_G1756]
+ (9)  [_G2093=_G2142, - (k1_ordinal1(_G2093)=k1_ordinal1(_G2142))]
+ (10)  [_G2959=_G3008, - (k1_tarski(_G2959)=k1_tarski(_G3008))]
+ (11)  [- (k2_xboole_0(_G2371, _G2506)=k2_xboole_0(_G2438, _G2575)), _G2371=_G2438, _G2506=_G2575]
+
+Connection Proof:
+-----------------
+1  [np__1=k1_tarski(k1_xboole_0)]   (1)  
+1.1  [- (np__1=k1_tarski(k1_xboole_0)), np__1=k1_ordinal1(k1_xboole_0), k1_ordinal1(k1_xboole_0)=k1_tarski(k1_xboole_0)]   (8)  substitution:[[_G1643, _G1756, _G1699], [np__1, k1_tarski(k1_xboole_0), k1_ordinal1(k1_xboole_0)]]
+1.1.1  [- (np__1=k1_ordinal1(k1_xboole_0))]   (4)  
+1.1.2  [- (k1_ordinal1(k1_xboole_0)=k1_tarski(k1_xboole_0)), k1_ordinal1(k1_xboole_0)=k2_xboole_0(k1_xboole_0, k1_tarski(k1_xboole_0)), k2_xboole_0(k1_xboole_0, k1_tarski(k1_xboole_0))=k1_tarski(k1_xboole_0)]   (8)  substitution:[[_G1643, _G1756, _G1699], [k1_ordinal1(k1_xboole_0), k1_tarski(k1_xboole_0), k2_xboole_0(k1_xboole_0, k1_tarski(k1_xboole_0))]]
+1.1.2.1  [- (k1_ordinal1(k1_xboole_0)=k2_xboole_0(k1_xboole_0, k1_tarski(k1_xboole_0)))]   (3)  substitution:[[_G3542], [k1_xboole_0]]
+1.1.2.2  [- (k2_xboole_0(k1_xboole_0, k1_tarski(k1_xboole_0))=k1_tarski(k1_xboole_0)), k2_xboole_0(k1_xboole_0, k1_tarski(k1_xboole_0))=k2_xboole_0(k1_tarski(k1_xboole_0), k1_xboole_0), k2_xboole_0(k1_tarski(k1_xboole_0), k1_xboole_0)=k1_tarski(k1_xboole_0)]   (8)  substitution:[[_G1643, _G1756, _G1699], [k2_xboole_0(k1_xboole_0, k1_tarski(k1_xboole_0)), k1_tarski(k1_xboole_0), k2_xboole_0(k1_tarski(k1_xboole_0), k1_xboole_0)]]
+1.1.2.2.1  [- (k2_xboole_0(k1_xboole_0, k1_tarski(k1_xboole_0))=k2_xboole_0(k1_tarski(k1_xboole_0), k1_xboole_0))]   (2)  substitution:[[_G3300, _G3345], [k1_xboole_0, k1_tarski(k1_xboole_0)]]
+1.1.2.2.2  [- (k2_xboole_0(k1_tarski(k1_xboole_0), k1_xboole_0)=k1_tarski(k1_xboole_0))]   (5)  substitution:[[_G3777], [k1_tarski(k1_xboole_0)]]
+------------------------------------------------------
+End of proof for t15_ordinal3

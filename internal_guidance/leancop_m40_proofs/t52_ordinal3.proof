@@ -1,0 +1,39 @@
+
+t52_ordinal3 is a Theorem
+Start of proof for t52_ordinal3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v3_ordinal1(1^[])]
+ (2)  [-v3_ordinal1(2^[])]
+ (3)  [k5_ordinal3(k10_ordinal2(1^[], 2^[]), 1^[])=2^[]]
+ (4)  [-v3_ordinal1(k10_ordinal2(_G6376, _G6427)), v3_ordinal1(_G6376), v3_ordinal1(_G6427)]
+ (5)  [v3_ordinal1(_G6663), v3_ordinal1(_G6756), -r1_ordinal1(_G6663, k10_ordinal2(_G6663, _G6756))]
+ (6)  [v3_ordinal1(_G6663), v3_ordinal1(_G6756), -r1_ordinal1(_G6756, k10_ordinal2(_G6663, _G6756))]
+ (7)  [v3_ordinal1(_G5327), v3_ordinal1(_G5459), v3_ordinal1(_G5587), r1_ordinal1(_G5459, _G5327), _G5587=k5_ordinal3(_G5327, _G5459), - (_G5327=k10_ordinal2(_G5459, _G5587))]
+ (8)  [v3_ordinal1(_G5327), v3_ordinal1(_G5459), v3_ordinal1(_G5587), r1_ordinal1(_G5459, _G5327), - (_G5587=k5_ordinal3(_G5327, _G5459)), _G5327=k10_ordinal2(_G5459, _G5587)]
+ (9)  [v3_ordinal1(_G5327), v3_ordinal1(_G5459), v3_ordinal1(_G5587), -r1_ordinal1(_G5459, _G5327), _G5587=k5_ordinal3(_G5327, _G5459), - (_G5587=k1_xboole_0)]
+ (10)  [v3_ordinal1(_G5327), v3_ordinal1(_G5459), v3_ordinal1(_G5587), -r1_ordinal1(_G5459, _G5327), - (_G5587=k5_ordinal3(_G5327, _G5459)), _G5587=k1_xboole_0]
+ (11)  [- (k5_ordinal3(_G4100, _G4235)=k5_ordinal3(_G4167, _G4304)), _G4100=_G4167, _G4235=_G4304]
+ (12)  [- (k10_ordinal2(_G4688, _G4823)=k10_ordinal2(_G4755, _G4892)), _G4688=_G4755, _G4823=_G4892]
+ (13)  [- (_G2410=_G2410)]
+ (14)  [_G2509=_G2554, - (_G2554=_G2509)]
+ (15)  [- (_G2742=_G2855), _G2742=_G2798, _G2798=_G2855]
+ (16)  [-v3_ordinal1(_G3829), _G3780=_G3829, v3_ordinal1(_G3780)]
+ (17)  [-r1_ordinal1(_G3259, _G3396), r1_ordinal1(_G3192, _G3327), _G3192=_G3259, _G3327=_G3396]
+
+Connection Proof:
+-----------------
+1  [k5_ordinal3(k10_ordinal2(1^[], 2^[]), 1^[])=2^[]]   (3)  
+1.1  [- (k5_ordinal3(k10_ordinal2(1^[], 2^[]), 1^[])=2^[]), 2^[]=k5_ordinal3(k10_ordinal2(1^[], 2^[]), 1^[])]   (14)  substitution:[[_G2554, _G2509], [k5_ordinal3(k10_ordinal2(1^[], 2^[]), 1^[]), 2^[]]]
+1.1.1  [- (2^[]=k5_ordinal3(k10_ordinal2(1^[], 2^[]), 1^[])), v3_ordinal1(k10_ordinal2(1^[], 2^[])), v3_ordinal1(1^[]), v3_ordinal1(2^[]), r1_ordinal1(1^[], k10_ordinal2(1^[], 2^[])), k10_ordinal2(1^[], 2^[])=k10_ordinal2(1^[], 2^[])]   (8)  substitution:[[_G5587, _G5327, _G5459], [2^[], k10_ordinal2(1^[], 2^[]), 1^[]]]
+1.1.1.1  [-v3_ordinal1(k10_ordinal2(1^[], 2^[])), v3_ordinal1(1^[]), v3_ordinal1(2^[])]   (4)  substitution:[[_G6376, _G6427], [1^[], 2^[]]]
+1.1.1.1.1  [-v3_ordinal1(1^[])]   (1)  
+1.1.1.1.2  [-v3_ordinal1(2^[])]   (2)  
+1.1.1.2  [-v3_ordinal1(1^[])]   (1)  
+1.1.1.3  [-v3_ordinal1(2^[])]   (2)  
+1.1.1.4  [-r1_ordinal1(1^[], k10_ordinal2(1^[], 2^[])), v3_ordinal1(1^[]), v3_ordinal1(2^[])]   (5)  substitution:[[_G6663, _G6756], [1^[], 2^[]]]
+1.1.1.4.1  [-v3_ordinal1(1^[])]   (1)  
+1.1.1.4.2  [-v3_ordinal1(2^[])]   (2)  
+1.1.1.5  [- (k10_ordinal2(1^[], 2^[])=k10_ordinal2(1^[], 2^[]))]   (13)  substitution:[[_G2410], [k10_ordinal2(1^[], 2^[])]]
+------------------------------------------------------
+End of proof for t52_ordinal3

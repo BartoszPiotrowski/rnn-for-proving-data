@@ -1,0 +1,38 @@
+
+t13_membered is a Theorem
+Start of proof for t13_membered
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_membered(2^[])]
+ (2)  [2^[]=k2_numbers]
+ (3)  [v1_xcmplx_0(_G6649), -r2_hidden(_G6649, 2^[])]
+ (4)  [_G4465=_G4516, -r1_tarski(_G4465, _G4516)]
+ (5)  [_G4465=_G4516, -r1_tarski(_G4516, _G4465)]
+ (6)  [- (_G4465=_G4516), r1_tarski(_G4465, _G4516), r1_tarski(_G4516, _G4465)]
+ (7)  [v1_xcmplx_0(_G4797), -r2_hidden(_G4797, k2_numbers)]
+ (8)  [-v1_xcmplx_0(_G4797), r2_hidden(_G4797, k2_numbers)]
+ (9)  [v1_membered(_G5347), -r1_tarski(_G5347, k2_numbers)]
+ (10)  [-r1_tarski(_G4954, _G5010), -r2_hidden(1^[_G5010, _G4954], _G4954)]
+ (11)  [-r1_tarski(_G4954, _G5010), r2_hidden(1^[_G5010, _G4954], _G5010)]
+ (12)  [r1_tarski(_G4954, _G5010), r2_hidden(_G5124, _G4954), -r2_hidden(_G5124, _G5010)]
+ (13)  [- (_G1858=_G1858)]
+ (14)  [_G1957=_G2002, - (_G2002=_G1957)]
+ (15)  [- (_G2190=_G2303), _G2190=_G2246, _G2246=_G2303]
+ (16)  [-r1_tarski(_G2707, _G2844), r1_tarski(_G2640, _G2775), _G2640=_G2707, _G2775=_G2844]
+ (17)  [-v1_membered(_G3286), _G3237=_G3286, v1_membered(_G3237)]
+ (18)  [-v1_xcmplx_0(_G3564), _G3515=_G3564, v1_xcmplx_0(_G3515)]
+ (19)  [-r2_hidden(_G3851, _G3988), r2_hidden(_G3784, _G3919), _G3784=_G3851, _G3919=_G3988]
+
+Connection Proof:
+-----------------
+1  [2^[]=k2_numbers]   (2)  
+1.1  [- (2^[]=k2_numbers), r1_tarski(2^[], k2_numbers), r1_tarski(k2_numbers, 2^[])]   (6)  substitution:[[_G4465, _G4516], [2^[], k2_numbers]]
+1.1.1  [-r1_tarski(2^[], k2_numbers), v1_membered(2^[])]   (9)  substitution:[[_G5347], [2^[]]]
+1.1.1.1  [-v1_membered(2^[])]   (1)  
+1.1.2  [-r1_tarski(k2_numbers, 2^[]), -r2_hidden(1^[2^[], k2_numbers], k2_numbers)]   (10)  substitution:[[_G4954, _G5010], [k2_numbers, 2^[]]]
+1.1.2.1  [r2_hidden(1^[2^[], k2_numbers], k2_numbers), -v1_xcmplx_0(1^[2^[], k2_numbers])]   (8)  substitution:[[_G4797], [1^[2^[], k2_numbers]]]
+1.1.2.1.1  [v1_xcmplx_0(1^[2^[], k2_numbers]), -r2_hidden(1^[2^[], k2_numbers], 2^[])]   (3)  substitution:[[_G6649], [1^[2^[], k2_numbers]]]
+1.1.2.1.1.1  [r2_hidden(1^[2^[], k2_numbers], 2^[]), -r1_tarski(k2_numbers, 2^[])]   (11)  substitution:[[_G5010, _G4954], [2^[], k2_numbers]]
+1.1.2.1.1.1.1  [r1_tarski(k2_numbers, 2^[])]   (reduction:1.1)  
+------------------------------------------------------
+End of proof for t13_membered

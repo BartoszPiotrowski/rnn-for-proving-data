@@ -1,0 +1,21 @@
+
+t5_ordinal1 is a Theorem
+Start of proof for t5_ordinal1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-r2_hidden(2^[], 3^[])]
+ (2)  [-r1_tarski(3^[], 2^[])]
+ (3)  [r2_hidden(_G760, _G807), r2_hidden(_G807, _G760)]
+ (4)  [-r1_tarski(_G1011, _G1067), -r2_hidden(1^[_G1067, _G1011], _G1011)]
+ (5)  [-r1_tarski(_G1011, _G1067), r2_hidden(1^[_G1067, _G1011], _G1067)]
+ (6)  [r1_tarski(_G1011, _G1067), r2_hidden(_G1181, _G1011), -r2_hidden(_G1181, _G1067)]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(2^[], 2^[]), r2_hidden(2^[], 2^[])]   (3)  substitution:[[_G760, _G807], [2^[], 2^[]]]
+1.1  [-r2_hidden(2^[], 2^[]), r1_tarski(3^[], 2^[]), r2_hidden(2^[], 3^[])]   (6)  substitution:[[_G1181, _G1067, _G1011], [2^[], 2^[], 3^[]]]
+1.1.1  [-r1_tarski(3^[], 2^[])]   (2)  
+1.1.2  [-r2_hidden(2^[], 3^[])]   (1)  
+1.2  [-r2_hidden(2^[], 2^[])]   (lemmata:1)  
+------------------------------------------------------
+End of proof for t5_ordinal1

@@ -1,0 +1,20 @@
+
+t56_asympt_1 is a Theorem
+Start of proof for t56_asympt_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m2_subset_1(1^[], k1_numbers, k5_numbers)]
+ (2)  [-m2_subset_1(2^[], k1_numbers, k5_numbers)]
+ (3)  [-r1_xxreal_0(2^[], 1^[])]
+ (4)  [r1_xxreal_0(k9_newton(2^[]), k9_newton(1^[]))]
+ (5)  [m2_subset_1(_G700, k1_numbers, k5_numbers), m2_subset_1(_G863, k1_numbers, k5_numbers), r1_xxreal_0(_G863, _G700), -r1_xxreal_0(k9_newton(_G863), k9_newton(_G700))]
+
+Connection Proof:
+-----------------
+1  [r1_xxreal_0(k9_newton(2^[]), k9_newton(1^[]))]   (4)  
+1.1  [-r1_xxreal_0(k9_newton(2^[]), k9_newton(1^[])), m2_subset_1(1^[], k1_numbers, k5_numbers), m2_subset_1(2^[], k1_numbers, k5_numbers), r1_xxreal_0(2^[], 1^[])]   (5)  substitution:[[_G863, _G700], [2^[], 1^[]]]
+1.1.1  [-m2_subset_1(1^[], k1_numbers, k5_numbers)]   (1)  
+1.1.2  [-m2_subset_1(2^[], k1_numbers, k5_numbers)]   (2)  
+1.1.3  [-r1_xxreal_0(2^[], 1^[])]   (3)  
+------------------------------------------------------
+End of proof for t56_asympt_1

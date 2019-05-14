@@ -1,0 +1,26 @@
+
+l1_frechet is a Theorem
+Start of proof for l1_frechet
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(2^[], k1_numbers)]
+ (2)  [r1_xxreal_0(2^[], k6_numbers)]
+ (3)  [m2_subset_1(_G2369, k1_numbers, k5_numbers), -r1_xxreal_0(2^[], k10_real_1(np__1, _G2369)), -r1_xxreal_0(_G2369, k6_numbers)]
+ (4)  [m1_subset_1(_G838, k1_numbers), -r1_xxreal_0(_G838, k6_numbers), -m2_subset_1(1^[_G838], k1_numbers, k5_numbers)]
+ (5)  [m1_subset_1(_G838, k1_numbers), -r1_xxreal_0(_G838, k6_numbers), r1_xxreal_0(1^[_G838], k6_numbers)]
+ (6)  [m1_subset_1(_G838, k1_numbers), -r1_xxreal_0(_G838, k6_numbers), r1_xxreal_0(_G838, k10_real_1(np__1, 1^[_G838]))]
+
+Connection Proof:
+-----------------
+1  [r1_xxreal_0(2^[], k6_numbers)]   (2)  
+1.1  [-r1_xxreal_0(2^[], k6_numbers), m1_subset_1(2^[], k1_numbers), -m2_subset_1(1^[2^[]], k1_numbers, k5_numbers)]   (4)  substitution:[[_G838], [2^[]]]
+1.1.1  [-m1_subset_1(2^[], k1_numbers)]   (1)  
+1.1.2  [m2_subset_1(1^[2^[]], k1_numbers, k5_numbers), -r1_xxreal_0(2^[], k10_real_1(np__1, 1^[2^[]])), -r1_xxreal_0(1^[2^[]], k6_numbers)]   (3)  substitution:[[_G2369], [1^[2^[]]]]
+1.1.2.1  [r1_xxreal_0(2^[], k10_real_1(np__1, 1^[2^[]])), m1_subset_1(2^[], k1_numbers), -r1_xxreal_0(2^[], k6_numbers)]   (6)  substitution:[[_G838], [2^[]]]
+1.1.2.1.1  [-m1_subset_1(2^[], k1_numbers)]   (1)  
+1.1.2.1.2  [r1_xxreal_0(2^[], k6_numbers)]   (2)  
+1.1.2.2  [r1_xxreal_0(1^[2^[]], k6_numbers), m1_subset_1(2^[], k1_numbers), -r1_xxreal_0(2^[], k6_numbers)]   (5)  substitution:[[_G838], [2^[]]]
+1.1.2.2.1  [-m1_subset_1(2^[], k1_numbers)]   (1)  
+1.1.2.2.2  [r1_xxreal_0(2^[], k6_numbers)]   (2)  
+------------------------------------------------------
+End of proof for l1_frechet

@@ -1,0 +1,35 @@
+
+t4_connsp_2 is a Theorem
+Start of proof for t4_connsp_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(2^[])]
+ (2)  [-v2_pre_topc(2^[])]
+ (3)  [-l1_pre_topc(2^[])]
+ (4)  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(2^[])))]
+ (5)  [-m1_subset_1(4^[], u1_struct_0(2^[]))]
+ (6)  [-m1_connsp_2(3^[], 2^[], 4^[])]
+ (7)  [r2_hidden(4^[], 3^[])]
+ (8)  [l1_pre_topc(_G1133), v2_pre_topc(_G1133), -v2_struct_0(_G1133), m1_subset_1(_G1374, u1_struct_0(_G1133)), m1_subset_1(_G1518, k1_zfmisc_1(u1_struct_0(_G1133))), m1_connsp_2(_G1518, _G1133, _G1374), -r2_hidden(_G1374, k1_tops_1(_G1133, _G1518))]
+ (9)  [l1_pre_topc(_G1133), v2_pre_topc(_G1133), -v2_struct_0(_G1133), m1_subset_1(_G1374, u1_struct_0(_G1133)), m1_subset_1(_G1518, k1_zfmisc_1(u1_struct_0(_G1133))), -m1_connsp_2(_G1518, _G1133, _G1374), r2_hidden(_G1374, k1_tops_1(_G1133, _G1518))]
+ (10)  [l1_pre_topc(_G2366), m1_subset_1(_G2455, k1_zfmisc_1(u1_struct_0(_G2366))), -r1_tarski(k1_tops_1(_G2366, _G2455), _G2455)]
+ (11)  [-r1_tarski(_G1973, _G2029), -r2_hidden(1^[_G2029, _G1973], _G1973)]
+ (12)  [-r1_tarski(_G1973, _G2029), r2_hidden(1^[_G2029, _G1973], _G2029)]
+ (13)  [r1_tarski(_G1973, _G2029), r2_hidden(_G2143, _G1973), -r2_hidden(_G2143, _G2029)]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(4^[], 3^[])]   (7)  
+1.1  [-r2_hidden(4^[], 3^[]), r1_tarski(k1_tops_1(2^[], 3^[]), 3^[]), r2_hidden(4^[], k1_tops_1(2^[], 3^[]))]   (13)  substitution:[[_G2143, _G2029, _G1973], [4^[], 3^[], k1_tops_1(2^[], 3^[])]]
+1.1.1  [-r1_tarski(k1_tops_1(2^[], 3^[]), 3^[]), l1_pre_topc(2^[]), m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(2^[])))]   (10)  substitution:[[_G2366, _G2455], [2^[], 3^[]]]
+1.1.1.1  [-l1_pre_topc(2^[])]   (3)  
+1.1.1.2  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(2^[])))]   (4)  
+1.1.2  [-r2_hidden(4^[], k1_tops_1(2^[], 3^[])), l1_pre_topc(2^[]), v2_pre_topc(2^[]), -v2_struct_0(2^[]), m1_subset_1(4^[], u1_struct_0(2^[])), m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(2^[]))), m1_connsp_2(3^[], 2^[], 4^[])]   (8)  substitution:[[_G1374, _G1133, _G1518], [4^[], 2^[], 3^[]]]
+1.1.2.1  [-l1_pre_topc(2^[])]   (3)  
+1.1.2.2  [-v2_pre_topc(2^[])]   (2)  
+1.1.2.3  [v2_struct_0(2^[])]   (1)  
+1.1.2.4  [-m1_subset_1(4^[], u1_struct_0(2^[]))]   (5)  
+1.1.2.5  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(2^[])))]   (4)  
+1.1.2.6  [-m1_connsp_2(3^[], 2^[], 4^[])]   (6)  
+------------------------------------------------------
+End of proof for t4_connsp_2

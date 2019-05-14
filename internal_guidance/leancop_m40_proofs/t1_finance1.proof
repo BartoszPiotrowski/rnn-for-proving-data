@@ -1,0 +1,45 @@
+
+t1_finance1 is a Theorem
+Start of proof for t1_finance1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xreal_0(1^[])]
+ (2)  [k6_subset_1(k1_numbers, k3_rcomp_1(1^[], k1_xxreal_0))=k2_rcomp_1(k2_xxreal_0, 1^[])]
+ (3)  [v1_xreal_0(_G7040), -v1_xxreal_0(_G7040)]
+ (4)  [-v1_xxreal_0(k1_xxreal_0)]
+ (5)  [-v1_xxreal_0(k2_xxreal_0)]
+ (6)  [- (k2_rcomp_1(_G7235, _G7290)=k4_xxreal_1(_G7235, _G7290)), v1_xxreal_0(_G7235), v1_xxreal_0(_G7290)]
+ (7)  [- (k3_rcomp_1(_G7603, _G7658)=k2_xxreal_1(_G7603, _G7658)), v1_xreal_0(_G7603), v1_xxreal_0(_G7658)]
+ (8)  [- (k1_numbers=k4_xxreal_1(k2_xxreal_0, k1_xxreal_0))]
+ (9)  [v1_xxreal_0(_G8058), v1_xreal_0(_G8151), - (k6_subset_1(k4_xxreal_1(_G8058, k1_xxreal_0), k2_xxreal_1(_G8151, k1_xxreal_0))=k4_xxreal_1(_G8058, _G8151))]
+ (10)  [- (_G2588=_G2588)]
+ (11)  [_G2687=_G2732, - (_G2732=_G2687)]
+ (12)  [- (_G2920=_G3033), _G2920=_G2976, _G2976=_G3033]
+ (13)  [-v1_xxreal_0(_G3419), _G3370=_G3419, v1_xxreal_0(_G3370)]
+ (14)  [-v1_xreal_0(_G3688), _G3639=_G3688, v1_xreal_0(_G3639)]
+ (15)  [- (k2_xxreal_1(_G3959, _G4094)=k2_xxreal_1(_G4026, _G4163)), _G3959=_G4026, _G4094=_G4163]
+ (16)  [- (k4_xxreal_1(_G4556, _G4691)=k4_xxreal_1(_G4623, _G4760)), _G4556=_G4623, _G4691=_G4760]
+ (17)  [- (k6_subset_1(_G5153, _G5288)=k6_subset_1(_G5220, _G5357)), _G5153=_G5220, _G5288=_G5357]
+ (18)  [- (k3_rcomp_1(_G5750, _G5885)=k3_rcomp_1(_G5817, _G5954)), _G5750=_G5817, _G5885=_G5954]
+ (19)  [- (k2_rcomp_1(_G6338, _G6473)=k2_rcomp_1(_G6405, _G6542)), _G6338=_G6405, _G6473=_G6542]
+
+Connection Proof:
+-----------------
+1  [k6_subset_1(k1_numbers, k3_rcomp_1(1^[], k1_xxreal_0))=k2_rcomp_1(k2_xxreal_0, 1^[])]   (2)  
+1.1  [- (k6_subset_1(k1_numbers, k3_rcomp_1(1^[], k1_xxreal_0))=k2_rcomp_1(k2_xxreal_0, 1^[])), k6_subset_1(k1_numbers, k3_rcomp_1(1^[], k1_xxreal_0))=k4_xxreal_1(k2_xxreal_0, 1^[]), k4_xxreal_1(k2_xxreal_0, 1^[])=k2_rcomp_1(k2_xxreal_0, 1^[])]   (12)  substitution:[[_G2920, _G3033, _G2976], [k6_subset_1(k1_numbers, k3_rcomp_1(1^[], k1_xxreal_0)), k2_rcomp_1(k2_xxreal_0, 1^[]), k4_xxreal_1(k2_xxreal_0, 1^[])]]
+1.1.1  [- (k6_subset_1(k1_numbers, k3_rcomp_1(1^[], k1_xxreal_0))=k4_xxreal_1(k2_xxreal_0, 1^[])), k6_subset_1(k1_numbers, k3_rcomp_1(1^[], k1_xxreal_0))=k6_subset_1(k4_xxreal_1(k2_xxreal_0, k1_xxreal_0), k2_xxreal_1(1^[], k1_xxreal_0)), k6_subset_1(k4_xxreal_1(k2_xxreal_0, k1_xxreal_0), k2_xxreal_1(1^[], k1_xxreal_0))=k4_xxreal_1(k2_xxreal_0, 1^[])]   (12)  substitution:[[_G2920, _G3033, _G2976], [k6_subset_1(k1_numbers, k3_rcomp_1(1^[], k1_xxreal_0)), k4_xxreal_1(k2_xxreal_0, 1^[]), k6_subset_1(k4_xxreal_1(k2_xxreal_0, k1_xxreal_0), k2_xxreal_1(1^[], k1_xxreal_0))]]
+1.1.1.1  [- (k6_subset_1(k1_numbers, k3_rcomp_1(1^[], k1_xxreal_0))=k6_subset_1(k4_xxreal_1(k2_xxreal_0, k1_xxreal_0), k2_xxreal_1(1^[], k1_xxreal_0))), k1_numbers=k4_xxreal_1(k2_xxreal_0, k1_xxreal_0), k3_rcomp_1(1^[], k1_xxreal_0)=k2_xxreal_1(1^[], k1_xxreal_0)]   (17)  substitution:[[_G5153, _G5288, _G5220, _G5357], [k1_numbers, k3_rcomp_1(1^[], k1_xxreal_0), k4_xxreal_1(k2_xxreal_0, k1_xxreal_0), k2_xxreal_1(1^[], k1_xxreal_0)]]
+1.1.1.1.1  [- (k1_numbers=k4_xxreal_1(k2_xxreal_0, k1_xxreal_0))]   (8)  
+1.1.1.1.2  [- (k3_rcomp_1(1^[], k1_xxreal_0)=k2_xxreal_1(1^[], k1_xxreal_0)), v1_xreal_0(1^[]), v1_xxreal_0(k1_xxreal_0)]   (7)  substitution:[[_G7603, _G7658], [1^[], k1_xxreal_0]]
+1.1.1.1.2.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.1.1.2.2  [-v1_xxreal_0(k1_xxreal_0)]   (4)  
+1.1.1.2  [- (k6_subset_1(k4_xxreal_1(k2_xxreal_0, k1_xxreal_0), k2_xxreal_1(1^[], k1_xxreal_0))=k4_xxreal_1(k2_xxreal_0, 1^[])), v1_xxreal_0(k2_xxreal_0), v1_xreal_0(1^[])]   (9)  substitution:[[_G8058, _G8151], [k2_xxreal_0, 1^[]]]
+1.1.1.2.1  [-v1_xxreal_0(k2_xxreal_0)]   (5)  
+1.1.1.2.2  [-v1_xreal_0(1^[])]   (1)  
+1.1.2  [- (k4_xxreal_1(k2_xxreal_0, 1^[])=k2_rcomp_1(k2_xxreal_0, 1^[])), k2_rcomp_1(k2_xxreal_0, 1^[])=k4_xxreal_1(k2_xxreal_0, 1^[])]   (11)  substitution:[[_G2732, _G2687], [k4_xxreal_1(k2_xxreal_0, 1^[]), k2_rcomp_1(k2_xxreal_0, 1^[])]]
+1.1.2.1  [- (k2_rcomp_1(k2_xxreal_0, 1^[])=k4_xxreal_1(k2_xxreal_0, 1^[])), v1_xxreal_0(k2_xxreal_0), v1_xxreal_0(1^[])]   (6)  substitution:[[_G7235, _G7290], [k2_xxreal_0, 1^[]]]
+1.1.2.1.1  [-v1_xxreal_0(k2_xxreal_0)]   (5)  
+1.1.2.1.2  [-v1_xxreal_0(1^[]), v1_xreal_0(1^[])]   (3)  substitution:[[_G7040], [1^[]]]
+1.1.2.1.2.1  [-v1_xreal_0(1^[])]   (1)  
+------------------------------------------------------
+End of proof for t1_finance1

@@ -1,0 +1,26 @@
+
+t10_ordinal1 is a Theorem
+Start of proof for t10_ordinal1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_ordinal1(5^[])]
+ (2)  [-r2_hidden(3^[], 4^[])]
+ (3)  [-r2_hidden(4^[], 5^[])]
+ (4)  [r2_hidden(3^[], 5^[])]
+ (5)  [-v1_ordinal1(_G820), -r2_hidden(1^[_G820], _G820)]
+ (6)  [-v1_ordinal1(_G820), r1_tarski(1^[_G820], _G820)]
+ (7)  [v1_ordinal1(_G820), r2_hidden(_G902, _G820), -r1_tarski(_G902, _G820)]
+ (8)  [-r1_tarski(_G1111, _G1167), -r2_hidden(2^[_G1167, _G1111], _G1111)]
+ (9)  [-r1_tarski(_G1111, _G1167), r2_hidden(2^[_G1167, _G1111], _G1167)]
+ (10)  [r1_tarski(_G1111, _G1167), r2_hidden(_G1281, _G1111), -r2_hidden(_G1281, _G1167)]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(3^[], 5^[])]   (4)  
+1.1  [-r2_hidden(3^[], 5^[]), r1_tarski(4^[], 5^[]), r2_hidden(3^[], 4^[])]   (10)  substitution:[[_G1281, _G1167, _G1111], [3^[], 5^[], 4^[]]]
+1.1.1  [-r1_tarski(4^[], 5^[]), v1_ordinal1(5^[]), r2_hidden(4^[], 5^[])]   (7)  substitution:[[_G902, _G820], [4^[], 5^[]]]
+1.1.1.1  [-v1_ordinal1(5^[])]   (1)  
+1.1.1.2  [-r2_hidden(4^[], 5^[])]   (3)  
+1.1.2  [-r2_hidden(3^[], 4^[])]   (2)  
+------------------------------------------------------
+End of proof for t10_ordinal1

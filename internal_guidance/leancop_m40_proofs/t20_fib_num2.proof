@@ -1,0 +1,66 @@
+
+t20_fib_num2 is a Theorem
+Start of proof for t20_fib_num2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(3^[])]
+ (2)  [-v1_funct_1(3^[])]
+ (3)  [-v2_finseq_1(3^[])]
+ (4)  [r1_tarski(3^[], _G3149), v1_relat_1(_G3149), v1_funct_1(_G3149), v1_finseq_1(_G3149)]
+ (5)  [v1_funct_1(_G1441), v1_relat_1(_G1441), -v1_relat_1(2^[_G1441]), v7_ordinal1(_G1629), r1_tarski(k9_xtuple_0(_G1441), k2_finseq_1(_G1629))]
+ (6)  [v1_funct_1(_G1441), v1_relat_1(_G1441), -v1_funct_1(2^[_G1441]), v7_ordinal1(_G1629), r1_tarski(k9_xtuple_0(_G1441), k2_finseq_1(_G1629))]
+ (7)  [v1_funct_1(_G1441), v1_relat_1(_G1441), -v1_finseq_1(2^[_G1441]), v7_ordinal1(_G1629), r1_tarski(k9_xtuple_0(_G1441), k2_finseq_1(_G1629))]
+ (8)  [v1_funct_1(_G1441), v1_relat_1(_G1441), -r1_tarski(_G1441, 2^[_G1441]), v7_ordinal1(_G1629), r1_tarski(k9_xtuple_0(_G1441), k2_finseq_1(_G1629))]
+ (9)  [v1_funct_1(_G1025), v1_relat_1(_G1025), v2_finseq_1(_G1025), -v7_ordinal1(1^[_G1025])]
+ (10)  [v1_funct_1(_G1025), v1_relat_1(_G1025), v2_finseq_1(_G1025), -r1_tarski(k9_xtuple_0(_G1025), k2_finseq_1(1^[_G1025]))]
+ (11)  [v1_funct_1(_G1025), v1_relat_1(_G1025), -v2_finseq_1(_G1025), v7_ordinal1(_G1205), r1_tarski(k9_xtuple_0(_G1025), k2_finseq_1(_G1205))]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(3^[], 2^[3^[]]), v1_relat_1(2^[3^[]]), v1_funct_1(2^[3^[]]), v1_finseq_1(2^[3^[]])]   (4)  substitution:[[_G3149], [2^[3^[]]]]
+1.1  [-r1_tarski(3^[], 2^[3^[]]), v1_funct_1(3^[]), v1_relat_1(3^[]), v7_ordinal1(1^[3^[]]), r1_tarski(k9_xtuple_0(3^[]), k2_finseq_1(1^[3^[]]))]   (8)  substitution:[[_G1441, _G1629], [3^[], 1^[3^[]]]]
+1.1.1  [-v1_funct_1(3^[])]   (2)  
+1.1.2  [-v1_relat_1(3^[])]   (1)  
+1.1.3  [-v7_ordinal1(1^[3^[]]), v1_funct_1(3^[]), v1_relat_1(3^[]), v2_finseq_1(3^[])]   (9)  substitution:[[_G1025], [3^[]]]
+1.1.3.1  [-v1_funct_1(3^[])]   (2)  
+1.1.3.2  [-v1_relat_1(3^[])]   (1)  
+1.1.3.3  [-v2_finseq_1(3^[])]   (3)  
+1.1.4  [-r1_tarski(k9_xtuple_0(3^[]), k2_finseq_1(1^[3^[]])), v1_funct_1(3^[]), v1_relat_1(3^[]), v2_finseq_1(3^[])]   (10)  substitution:[[_G1025], [3^[]]]
+1.1.4.1  [-v1_funct_1(3^[])]   (2)  
+1.1.4.2  [-v1_relat_1(3^[])]   (1)  
+1.1.4.3  [-v2_finseq_1(3^[])]   (3)  
+1.2  [-v1_relat_1(2^[3^[]]), v1_funct_1(3^[]), v1_relat_1(3^[]), v7_ordinal1(1^[3^[]]), r1_tarski(k9_xtuple_0(3^[]), k2_finseq_1(1^[3^[]]))]   (5)  substitution:[[_G1441, _G1629], [3^[], 1^[3^[]]]]
+1.2.1  [-v1_funct_1(3^[])]   (2)  
+1.2.2  [-v1_relat_1(3^[])]   (1)  
+1.2.3  [-v7_ordinal1(1^[3^[]]), v1_funct_1(3^[]), v1_relat_1(3^[]), v2_finseq_1(3^[])]   (9)  substitution:[[_G1025], [3^[]]]
+1.2.3.1  [-v1_funct_1(3^[])]   (2)  
+1.2.3.2  [-v1_relat_1(3^[])]   (1)  
+1.2.3.3  [-v2_finseq_1(3^[])]   (3)  
+1.2.4  [-r1_tarski(k9_xtuple_0(3^[]), k2_finseq_1(1^[3^[]])), v1_funct_1(3^[]), v1_relat_1(3^[]), v2_finseq_1(3^[])]   (10)  substitution:[[_G1025], [3^[]]]
+1.2.4.1  [-v1_funct_1(3^[])]   (2)  
+1.2.4.2  [-v1_relat_1(3^[])]   (1)  
+1.2.4.3  [-v2_finseq_1(3^[])]   (3)  
+1.3  [-v1_funct_1(2^[3^[]]), v1_funct_1(3^[]), v1_relat_1(3^[]), v7_ordinal1(1^[3^[]]), r1_tarski(k9_xtuple_0(3^[]), k2_finseq_1(1^[3^[]]))]   (6)  substitution:[[_G1441, _G1629], [3^[], 1^[3^[]]]]
+1.3.1  [-v1_funct_1(3^[])]   (2)  
+1.3.2  [-v1_relat_1(3^[])]   (1)  
+1.3.3  [-v7_ordinal1(1^[3^[]]), v1_funct_1(3^[]), v1_relat_1(3^[]), v2_finseq_1(3^[])]   (9)  substitution:[[_G1025], [3^[]]]
+1.3.3.1  [-v1_funct_1(3^[])]   (2)  
+1.3.3.2  [-v1_relat_1(3^[])]   (1)  
+1.3.3.3  [-v2_finseq_1(3^[])]   (3)  
+1.3.4  [-r1_tarski(k9_xtuple_0(3^[]), k2_finseq_1(1^[3^[]])), v1_funct_1(3^[]), v1_relat_1(3^[]), v2_finseq_1(3^[])]   (10)  substitution:[[_G1025], [3^[]]]
+1.3.4.1  [-v1_funct_1(3^[])]   (2)  
+1.3.4.2  [-v1_relat_1(3^[])]   (1)  
+1.3.4.3  [-v2_finseq_1(3^[])]   (3)  
+1.4  [-v1_finseq_1(2^[3^[]]), v1_funct_1(3^[]), v1_relat_1(3^[]), v7_ordinal1(1^[3^[]]), r1_tarski(k9_xtuple_0(3^[]), k2_finseq_1(1^[3^[]]))]   (7)  substitution:[[_G1441, _G1629], [3^[], 1^[3^[]]]]
+1.4.1  [-v1_funct_1(3^[])]   (2)  
+1.4.2  [-v1_relat_1(3^[])]   (1)  
+1.4.3  [-v7_ordinal1(1^[3^[]]), v1_funct_1(3^[]), v1_relat_1(3^[]), v2_finseq_1(3^[])]   (9)  substitution:[[_G1025], [3^[]]]
+1.4.3.1  [-v1_funct_1(3^[])]   (2)  
+1.4.3.2  [-v1_relat_1(3^[])]   (1)  
+1.4.3.3  [-v2_finseq_1(3^[])]   (3)  
+1.4.4  [-r1_tarski(k9_xtuple_0(3^[]), k2_finseq_1(1^[3^[]])), v1_funct_1(3^[]), v1_relat_1(3^[]), v2_finseq_1(3^[])]   (10)  substitution:[[_G1025], [3^[]]]
+1.4.4.1  [-v1_funct_1(3^[])]   (2)  
+1.4.4.2  [-v1_relat_1(3^[])]   (1)  
+1.4.4.3  [-v2_finseq_1(3^[])]   (3)  
+------------------------------------------------------
+End of proof for t20_fib_num2

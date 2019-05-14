@@ -1,0 +1,41 @@
+
+t76_qc_lang2 is a Theorem
+Start of proof for t76_qc_lang2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_qc_lang1(1^[])]
+ (2)  [-m1_subset_1(2^[], k9_qc_lang1(1^[]))]
+ (3)  [-v3_qc_lang1(2^[], 1^[])]
+ (4)  [r3_qc_lang2(1^[], k18_qc_lang1(1^[], 2^[]), 2^[])]
+ (5)  [-m1_subset_1(k18_qc_lang1(_G8078, _G8135), k9_qc_lang1(_G8078)), m1_qc_lang1(_G8078), m1_subset_1(_G8135, k9_qc_lang1(_G8078))]
+ (6)  [m1_qc_lang1(_G9239), m1_subset_1(_G9344, k9_qc_lang1(_G9239)), m1_subset_1(_G9484, k9_qc_lang1(_G9239)), r1_qc_lang2(_G9239, _G9344, _G9484), -r3_qc_lang2(_G9239, _G9344, _G9484)]
+ (7)  [m1_qc_lang1(_G8464), m1_subset_1(_G8577, k9_qc_lang1(_G8464)), m1_subset_1(_G8725, k9_qc_lang1(_G8464)), v3_qc_lang1(_G8577, _G8464), r1_qc_lang2(_G8464, _G8725, _G8577), - (_G8725=k18_qc_lang1(_G8464, _G8577))]
+ (8)  [m1_qc_lang1(_G8464), m1_subset_1(_G8577, k9_qc_lang1(_G8464)), m1_subset_1(_G8725, k9_qc_lang1(_G8464)), v3_qc_lang1(_G8577, _G8464), -r1_qc_lang2(_G8464, _G8725, _G8577), _G8725=k18_qc_lang1(_G8464, _G8577)]
+ (9)  [_G7170=_G7219, - (k9_qc_lang1(_G7170)=k9_qc_lang1(_G7219))]
+ (10)  [- (k18_qc_lang1(_G7439, _G7574)=k18_qc_lang1(_G7506, _G7643)), _G7439=_G7506, _G7574=_G7643]
+ (11)  [- (_G2764=_G2764)]
+ (12)  [_G2863=_G2908, - (_G2908=_G2863)]
+ (13)  [- (_G3096=_G3209), _G3096=_G3152, _G3152=_G3209]
+ (14)  [-r1_qc_lang2(_G3631, _G3804, _G3981), r1_qc_lang2(_G3546, _G3717, _G3892), _G3546=_G3631, _G3717=_G3804, _G3892=_G3981]
+ (15)  [-m1_qc_lang1(_G4623), _G4574=_G4623, m1_qc_lang1(_G4574)]
+ (16)  [-m1_subset_1(_G4919, _G5056), m1_subset_1(_G4852, _G4987), _G4852=_G4919, _G4987=_G5056]
+ (17)  [-v3_qc_lang1(_G5516, _G5653), v3_qc_lang1(_G5449, _G5584), _G5449=_G5516, _G5584=_G5653]
+ (18)  [-r3_qc_lang2(_G6122, _G6295, _G6472), r3_qc_lang2(_G6037, _G6208, _G6383), _G6037=_G6122, _G6208=_G6295, _G6383=_G6472]
+
+Connection Proof:
+-----------------
+1  [r3_qc_lang2(1^[], k18_qc_lang1(1^[], 2^[]), 2^[])]   (4)  
+1.1  [-r3_qc_lang2(1^[], k18_qc_lang1(1^[], 2^[]), 2^[]), m1_qc_lang1(1^[]), m1_subset_1(k18_qc_lang1(1^[], 2^[]), k9_qc_lang1(1^[])), m1_subset_1(2^[], k9_qc_lang1(1^[])), r1_qc_lang2(1^[], k18_qc_lang1(1^[], 2^[]), 2^[])]   (6)  substitution:[[_G9239, _G9344, _G9484], [1^[], k18_qc_lang1(1^[], 2^[]), 2^[]]]
+1.1.1  [-m1_qc_lang1(1^[])]   (1)  
+1.1.2  [-m1_subset_1(k18_qc_lang1(1^[], 2^[]), k9_qc_lang1(1^[])), m1_qc_lang1(1^[]), m1_subset_1(2^[], k9_qc_lang1(1^[]))]   (5)  substitution:[[_G8078, _G8135], [1^[], 2^[]]]
+1.1.2.1  [-m1_qc_lang1(1^[])]   (1)  
+1.1.2.2  [-m1_subset_1(2^[], k9_qc_lang1(1^[]))]   (2)  
+1.1.3  [-m1_subset_1(2^[], k9_qc_lang1(1^[]))]   (2)  
+1.1.4  [-r1_qc_lang2(1^[], k18_qc_lang1(1^[], 2^[]), 2^[]), m1_qc_lang1(1^[]), m1_subset_1(2^[], k9_qc_lang1(1^[])), m1_subset_1(k18_qc_lang1(1^[], 2^[]), k9_qc_lang1(1^[])), v3_qc_lang1(2^[], 1^[]), k18_qc_lang1(1^[], 2^[])=k18_qc_lang1(1^[], 2^[])]   (8)  substitution:[[_G8464, _G8725, _G8577], [1^[], k18_qc_lang1(1^[], 2^[]), 2^[]]]
+1.1.4.1  [-m1_qc_lang1(1^[])]   (1)  
+1.1.4.2  [-m1_subset_1(2^[], k9_qc_lang1(1^[]))]   (2)  
+1.1.4.3  [-m1_subset_1(k18_qc_lang1(1^[], 2^[]), k9_qc_lang1(1^[]))]   (lemmata:1.1)  
+1.1.4.4  [-v3_qc_lang1(2^[], 1^[])]   (3)  
+1.1.4.5  [- (k18_qc_lang1(1^[], 2^[])=k18_qc_lang1(1^[], 2^[]))]   (11)  substitution:[[_G2764], [k18_qc_lang1(1^[], 2^[])]]
+------------------------------------------------------
+End of proof for t76_qc_lang2

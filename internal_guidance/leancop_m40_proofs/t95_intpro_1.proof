@@ -1,0 +1,24 @@
+
+t95_intpro_1 is a Theorem
+Start of proof for t95_intpro_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [r1_tarski(k8_intpro_1, k14_intpro_1)]
+ (2)  [-r1_tarski(k8_intpro_1, k12_intpro_1)]
+ (3)  [-r1_tarski(k12_intpro_1, k14_intpro_1)]
+ (4)  [-r1_tarski(_G650, _G706), -r2_hidden(1^[_G706, _G650], _G650)]
+ (5)  [-r1_tarski(_G650, _G706), r2_hidden(1^[_G706, _G650], _G706)]
+ (6)  [r1_tarski(_G650, _G706), r2_hidden(_G820, _G650), -r2_hidden(_G820, _G706)]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k8_intpro_1, k14_intpro_1)]   (1)  
+1.1  [-r1_tarski(k8_intpro_1, k14_intpro_1), -r2_hidden(1^[k14_intpro_1, k8_intpro_1], k8_intpro_1)]   (4)  substitution:[[_G650, _G706], [k8_intpro_1, k14_intpro_1]]
+1.1.1  [r2_hidden(1^[k14_intpro_1, k8_intpro_1], k8_intpro_1), r1_tarski(k8_intpro_1, k12_intpro_1), -r2_hidden(1^[k14_intpro_1, k8_intpro_1], k12_intpro_1)]   (6)  substitution:[[_G820, _G650, _G706], [1^[k14_intpro_1, k8_intpro_1], k8_intpro_1, k12_intpro_1]]
+1.1.1.1  [-r1_tarski(k8_intpro_1, k12_intpro_1)]   (2)  
+1.1.1.2  [r2_hidden(1^[k14_intpro_1, k8_intpro_1], k12_intpro_1), r1_tarski(k12_intpro_1, k14_intpro_1), -r2_hidden(1^[k14_intpro_1, k8_intpro_1], k14_intpro_1)]   (6)  substitution:[[_G820, _G650, _G706], [1^[k14_intpro_1, k8_intpro_1], k12_intpro_1, k14_intpro_1]]
+1.1.1.2.1  [-r1_tarski(k12_intpro_1, k14_intpro_1)]   (3)  
+1.1.1.2.2  [r2_hidden(1^[k14_intpro_1, k8_intpro_1], k14_intpro_1), -r1_tarski(k8_intpro_1, k14_intpro_1)]   (5)  substitution:[[_G706, _G650], [k14_intpro_1, k8_intpro_1]]
+1.1.1.2.2.1  [r1_tarski(k8_intpro_1, k14_intpro_1)]   (1)  
+------------------------------------------------------
+End of proof for t95_intpro_1

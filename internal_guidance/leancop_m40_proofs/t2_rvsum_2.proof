@@ -1,0 +1,21 @@
+
+t2_rvsum_2 is a Theorem
+Start of proof for t2_rvsum_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xcmplx_0(1^[])]
+ (2)  [r7_binop_1(k2_numbers, k7_seq_4(1^[]), k27_binop_2)]
+ (3)  [v1_xcmplx_0(_G734), -r2_hidden(_G734, k2_numbers)]
+ (4)  [-v1_xcmplx_0(_G734), r2_hidden(_G734, k2_numbers)]
+ (5)  [r2_hidden(_G891, _G936), -m1_subset_1(_G891, _G936)]
+ (6)  [m1_subset_1(_G1124, k2_numbers), -r7_binop_1(k2_numbers, k7_seq_4(_G1124), k27_binop_2)]
+
+Connection Proof:
+-----------------
+1  [r7_binop_1(k2_numbers, k7_seq_4(1^[]), k27_binop_2)]   (2)  
+1.1  [-r7_binop_1(k2_numbers, k7_seq_4(1^[]), k27_binop_2), m1_subset_1(1^[], k2_numbers)]   (6)  substitution:[[_G1124], [1^[]]]
+1.1.1  [-m1_subset_1(1^[], k2_numbers), r2_hidden(1^[], k2_numbers)]   (5)  substitution:[[_G891, _G936], [1^[], k2_numbers]]
+1.1.1.1  [-r2_hidden(1^[], k2_numbers), v1_xcmplx_0(1^[])]   (3)  substitution:[[_G734], [1^[]]]
+1.1.1.1.1  [-v1_xcmplx_0(1^[])]   (1)  
+------------------------------------------------------
+End of proof for t2_rvsum_2

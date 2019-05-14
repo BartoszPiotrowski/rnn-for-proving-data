@@ -1,0 +1,47 @@
+
+t63_intpro_1 is a Theorem
+Start of proof for t63_intpro_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], k1_intpro_1)]
+ (2)  [-m1_subset_1(2^[], k1_intpro_1)]
+ (3)  [-m1_subset_1(3^[], k1_intpro_1)]
+ (4)  [-r2_hidden(k3_intpro_1(1^[], 2^[]), k8_intpro_1)]
+ (5)  [r2_hidden(k3_intpro_1(k5_intpro_1(3^[], 1^[]), k5_intpro_1(3^[], 2^[])), k8_intpro_1)]
+ (6)  [-m1_subset_1(k5_intpro_1(_G1228, _G1282), k1_intpro_1), m1_subset_1(_G1228, k1_intpro_1), m1_subset_1(_G1282, k1_intpro_1)]
+ (7)  [m1_subset_1(_G1605, k1_intpro_1), m1_subset_1(_G1745, k1_intpro_1), m1_subset_1(_G1880, k1_intpro_1), -r2_hidden(k3_intpro_1(_G1605, _G1880), k8_intpro_1), r2_hidden(k3_intpro_1(_G1605, _G1745), k8_intpro_1), r2_hidden(k3_intpro_1(_G1745, _G1880), k8_intpro_1)]
+ (8)  [m1_subset_1(_G2427, k1_intpro_1), m1_subset_1(_G2544, k1_intpro_1), -r2_hidden(k3_intpro_1(k5_intpro_1(_G2427, _G2544), k5_intpro_1(_G2544, _G2427)), k8_intpro_1)]
+ (9)  [m1_subset_1(_G2879, k1_intpro_1), m1_subset_1(_G3016, k1_intpro_1), m1_subset_1(_G3148, k1_intpro_1), r2_hidden(k3_intpro_1(_G2879, _G3016), k8_intpro_1), -r2_hidden(k3_intpro_1(k5_intpro_1(_G2879, _G3148), k5_intpro_1(_G3016, _G3148)), k8_intpro_1)]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(k3_intpro_1(k5_intpro_1(3^[], 1^[]), k5_intpro_1(3^[], 2^[])), k8_intpro_1)]   (5)  
+1.1  [-r2_hidden(k3_intpro_1(k5_intpro_1(3^[], 1^[]), k5_intpro_1(3^[], 2^[])), k8_intpro_1), m1_subset_1(k5_intpro_1(3^[], 1^[]), k1_intpro_1), m1_subset_1(k5_intpro_1(1^[], 3^[]), k1_intpro_1), m1_subset_1(k5_intpro_1(3^[], 2^[]), k1_intpro_1), r2_hidden(k3_intpro_1(k5_intpro_1(3^[], 1^[]), k5_intpro_1(1^[], 3^[])), k8_intpro_1), r2_hidden(k3_intpro_1(k5_intpro_1(1^[], 3^[]), k5_intpro_1(3^[], 2^[])), k8_intpro_1)]   (7)  substitution:[[_G1605, _G1880, _G1745], [k5_intpro_1(3^[], 1^[]), k5_intpro_1(3^[], 2^[]), k5_intpro_1(1^[], 3^[])]]
+1.1.1  [-m1_subset_1(k5_intpro_1(3^[], 1^[]), k1_intpro_1), m1_subset_1(3^[], k1_intpro_1), m1_subset_1(1^[], k1_intpro_1)]   (6)  substitution:[[_G1228, _G1282], [3^[], 1^[]]]
+1.1.1.1  [-m1_subset_1(3^[], k1_intpro_1)]   (3)  
+1.1.1.2  [-m1_subset_1(1^[], k1_intpro_1)]   (1)  
+1.1.2  [-m1_subset_1(k5_intpro_1(1^[], 3^[]), k1_intpro_1), m1_subset_1(1^[], k1_intpro_1), m1_subset_1(3^[], k1_intpro_1)]   (6)  substitution:[[_G1228, _G1282], [1^[], 3^[]]]
+1.1.2.1  [-m1_subset_1(1^[], k1_intpro_1)]   (1)  
+1.1.2.2  [-m1_subset_1(3^[], k1_intpro_1)]   (3)  
+1.1.3  [-m1_subset_1(k5_intpro_1(3^[], 2^[]), k1_intpro_1), m1_subset_1(3^[], k1_intpro_1), m1_subset_1(2^[], k1_intpro_1)]   (6)  substitution:[[_G1228, _G1282], [3^[], 2^[]]]
+1.1.3.1  [-m1_subset_1(3^[], k1_intpro_1)]   (3)  
+1.1.3.2  [-m1_subset_1(2^[], k1_intpro_1)]   (2)  
+1.1.4  [-r2_hidden(k3_intpro_1(k5_intpro_1(3^[], 1^[]), k5_intpro_1(1^[], 3^[])), k8_intpro_1), m1_subset_1(3^[], k1_intpro_1), m1_subset_1(1^[], k1_intpro_1)]   (8)  substitution:[[_G2427, _G2544], [3^[], 1^[]]]
+1.1.4.1  [-m1_subset_1(3^[], k1_intpro_1)]   (3)  
+1.1.4.2  [-m1_subset_1(1^[], k1_intpro_1)]   (1)  
+1.1.5  [-r2_hidden(k3_intpro_1(k5_intpro_1(1^[], 3^[]), k5_intpro_1(3^[], 2^[])), k8_intpro_1), m1_subset_1(k5_intpro_1(1^[], 3^[]), k1_intpro_1), m1_subset_1(k5_intpro_1(2^[], 3^[]), k1_intpro_1), m1_subset_1(k5_intpro_1(3^[], 2^[]), k1_intpro_1), r2_hidden(k3_intpro_1(k5_intpro_1(1^[], 3^[]), k5_intpro_1(2^[], 3^[])), k8_intpro_1), r2_hidden(k3_intpro_1(k5_intpro_1(2^[], 3^[]), k5_intpro_1(3^[], 2^[])), k8_intpro_1)]   (7)  substitution:[[_G1605, _G1880, _G1745], [k5_intpro_1(1^[], 3^[]), k5_intpro_1(3^[], 2^[]), k5_intpro_1(2^[], 3^[])]]
+1.1.5.1  [-m1_subset_1(k5_intpro_1(1^[], 3^[]), k1_intpro_1)]   (lemmata:1.1)  
+1.1.5.2  [-m1_subset_1(k5_intpro_1(2^[], 3^[]), k1_intpro_1), m1_subset_1(2^[], k1_intpro_1), m1_subset_1(3^[], k1_intpro_1)]   (6)  substitution:[[_G1228, _G1282], [2^[], 3^[]]]
+1.1.5.2.1  [-m1_subset_1(2^[], k1_intpro_1)]   (2)  
+1.1.5.2.2  [-m1_subset_1(3^[], k1_intpro_1)]   (3)  
+1.1.5.3  [-m1_subset_1(k5_intpro_1(3^[], 2^[]), k1_intpro_1)]   (lemmata:1.1)  
+1.1.5.4  [-r2_hidden(k3_intpro_1(k5_intpro_1(1^[], 3^[]), k5_intpro_1(2^[], 3^[])), k8_intpro_1), m1_subset_1(1^[], k1_intpro_1), m1_subset_1(2^[], k1_intpro_1), m1_subset_1(3^[], k1_intpro_1), r2_hidden(k3_intpro_1(1^[], 2^[]), k8_intpro_1)]   (9)  substitution:[[_G2879, _G3148, _G3016], [1^[], 3^[], 2^[]]]
+1.1.5.4.1  [-m1_subset_1(1^[], k1_intpro_1)]   (1)  
+1.1.5.4.2  [-m1_subset_1(2^[], k1_intpro_1)]   (2)  
+1.1.5.4.3  [-m1_subset_1(3^[], k1_intpro_1)]   (3)  
+1.1.5.4.4  [-r2_hidden(k3_intpro_1(1^[], 2^[]), k8_intpro_1)]   (4)  
+1.1.5.5  [-r2_hidden(k3_intpro_1(k5_intpro_1(2^[], 3^[]), k5_intpro_1(3^[], 2^[])), k8_intpro_1), m1_subset_1(2^[], k1_intpro_1), m1_subset_1(3^[], k1_intpro_1)]   (8)  substitution:[[_G2427, _G2544], [2^[], 3^[]]]
+1.1.5.5.1  [-m1_subset_1(2^[], k1_intpro_1)]   (2)  
+1.1.5.5.2  [-m1_subset_1(3^[], k1_intpro_1)]   (3)  
+------------------------------------------------------
+End of proof for t63_intpro_1

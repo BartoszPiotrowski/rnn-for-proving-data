@@ -1,0 +1,53 @@
+
+t20_topdim_2 is a Theorem
+Start of proof for t20_topdim_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v7_ordinal1(1^[])]
+ (2)  [-r1_xxreal_0(1^[], np__1)]
+ (3)  [k4_topdim_1(k15_euclid(1^[]))=1^[]]
+ (4)  [-v3_topdim_1(k15_euclid(k6_numbers))]
+ (5)  [- (k4_topdim_1(k15_euclid(k6_numbers))=k6_numbers)]
+ (6)  [-v3_topdim_1(k15_euclid(np__1))]
+ (7)  [- (k4_topdim_1(k15_euclid(np__1))=np__1)]
+ (8)  [v7_ordinal1(_G4603), r1_xxreal_0(_G4603, np__1), - (_G4603=k6_numbers), - (_G4603=np__1)]
+ (9)  [_G3719=_G3768, - (k4_topdim_1(_G3719)=k4_topdim_1(_G3768))]
+ (10)  [_G3988=_G4037, - (k15_euclid(_G3988)=k15_euclid(_G4037))]
+ (11)  [- (_G1730=_G1730)]
+ (12)  [_G1829=_G1874, - (_G1874=_G1829)]
+ (13)  [- (_G2062=_G2175), _G2062=_G2118, _G2118=_G2175]
+ (14)  [-v3_topdim_1(_G2561), _G2512=_G2561, v3_topdim_1(_G2512)]
+ (15)  [-v7_ordinal1(_G2839), _G2790=_G2839, v7_ordinal1(_G2790)]
+ (16)  [-r1_xxreal_0(_G3126, _G3263), r1_xxreal_0(_G3059, _G3194), _G3059=_G3126, _G3194=_G3263]
+
+Connection Proof:
+-----------------
+1  [k4_topdim_1(k15_euclid(1^[]))=1^[]]   (3)  
+1.1  [- (k4_topdim_1(k15_euclid(1^[]))=1^[]), 1^[]=k4_topdim_1(k15_euclid(1^[]))]   (12)  substitution:[[_G1874, _G1829], [k4_topdim_1(k15_euclid(1^[])), 1^[]]]
+1.1.1  [- (1^[]=k4_topdim_1(k15_euclid(1^[]))), 1^[]=k6_numbers, k6_numbers=k4_topdim_1(k15_euclid(1^[]))]   (13)  substitution:[[_G2062, _G2175, _G2118], [1^[], k4_topdim_1(k15_euclid(1^[])), k6_numbers]]
+1.1.1.1  [- (1^[]=k6_numbers), v7_ordinal1(1^[]), r1_xxreal_0(1^[], np__1), - (1^[]=np__1)]   (8)  substitution:[[_G4603], [1^[]]]
+1.1.1.1.1  [-v7_ordinal1(1^[])]   (1)  
+1.1.1.1.2  [-r1_xxreal_0(1^[], np__1)]   (2)  
+1.1.1.1.3  [1^[]=np__1, - (k4_topdim_1(k15_euclid(np__1))=np__1), k4_topdim_1(k15_euclid(np__1))=1^[]]   (13)  substitution:[[_G2118, _G2175, _G2062], [1^[], np__1, k4_topdim_1(k15_euclid(np__1))]]
+1.1.1.1.3.1  [k4_topdim_1(k15_euclid(np__1))=np__1, - (k4_topdim_1(k15_euclid(1^[]))=np__1), k4_topdim_1(k15_euclid(1^[]))=k4_topdim_1(k15_euclid(np__1))]   (13)  substitution:[[_G2118, _G2175, _G2062], [k4_topdim_1(k15_euclid(np__1)), np__1, k4_topdim_1(k15_euclid(1^[]))]]
+1.1.1.1.3.1.1  [k4_topdim_1(k15_euclid(1^[]))=np__1, - (np__1=k4_topdim_1(k15_euclid(1^[])))]   (12)  substitution:[[_G1829, _G1874], [k4_topdim_1(k15_euclid(1^[])), np__1]]
+1.1.1.1.3.1.1.1  [np__1=k4_topdim_1(k15_euclid(1^[])), - (1^[]=k4_topdim_1(k15_euclid(1^[]))), 1^[]=np__1]   (13)  substitution:[[_G2118, _G2175, _G2062], [np__1, k4_topdim_1(k15_euclid(1^[])), 1^[]]]
+1.1.1.1.3.1.1.1.1  [1^[]=k4_topdim_1(k15_euclid(1^[]))]   (reduction:1.1)  
+1.1.1.1.3.1.1.1.2  [- (1^[]=np__1)]   (reduction:1.1.1.1)  
+1.1.1.1.3.1.2  [- (k4_topdim_1(k15_euclid(1^[]))=k4_topdim_1(k15_euclid(np__1))), k15_euclid(1^[])=k15_euclid(np__1)]   (9)  substitution:[[_G3719, _G3768], [k15_euclid(1^[]), k15_euclid(np__1)]]
+1.1.1.1.3.1.2.1  [- (k15_euclid(1^[])=k15_euclid(np__1)), 1^[]=np__1]   (10)  substitution:[[_G3988, _G4037], [1^[], np__1]]
+1.1.1.1.3.1.2.1.1  [- (1^[]=np__1)]   (reduction:1.1.1.1)  
+1.1.1.1.3.2  [- (k4_topdim_1(k15_euclid(np__1))=1^[]), 1^[]=k4_topdim_1(k15_euclid(np__1))]   (12)  substitution:[[_G1874, _G1829], [k4_topdim_1(k15_euclid(np__1)), 1^[]]]
+1.1.1.1.3.2.1  [- (1^[]=k4_topdim_1(k15_euclid(np__1))), 1^[]=np__1, np__1=k4_topdim_1(k15_euclid(np__1))]   (13)  substitution:[[_G2062, _G2175, _G2118], [1^[], k4_topdim_1(k15_euclid(np__1)), np__1]]
+1.1.1.1.3.2.1.1  [- (1^[]=np__1)]   (reduction:1.1.1.1)  
+1.1.1.1.3.2.1.2  [- (np__1=k4_topdim_1(k15_euclid(np__1))), k4_topdim_1(k15_euclid(np__1))=np__1]   (12)  substitution:[[_G1874, _G1829], [np__1, k4_topdim_1(k15_euclid(np__1))]]
+1.1.1.1.3.2.1.2.1  [- (k4_topdim_1(k15_euclid(np__1))=np__1)]   (7)  
+1.1.1.2  [- (k6_numbers=k4_topdim_1(k15_euclid(1^[]))), k6_numbers=k4_topdim_1(k15_euclid(k6_numbers)), k4_topdim_1(k15_euclid(k6_numbers))=k4_topdim_1(k15_euclid(1^[]))]   (13)  substitution:[[_G2062, _G2175, _G2118], [k6_numbers, k4_topdim_1(k15_euclid(1^[])), k4_topdim_1(k15_euclid(k6_numbers))]]
+1.1.1.2.1  [- (k6_numbers=k4_topdim_1(k15_euclid(k6_numbers))), k4_topdim_1(k15_euclid(k6_numbers))=k6_numbers]   (12)  substitution:[[_G1874, _G1829], [k6_numbers, k4_topdim_1(k15_euclid(k6_numbers))]]
+1.1.1.2.1.1  [- (k4_topdim_1(k15_euclid(k6_numbers))=k6_numbers)]   (5)  
+1.1.1.2.2  [- (k4_topdim_1(k15_euclid(k6_numbers))=k4_topdim_1(k15_euclid(1^[]))), k15_euclid(k6_numbers)=k15_euclid(1^[])]   (9)  substitution:[[_G3719, _G3768], [k15_euclid(k6_numbers), k15_euclid(1^[])]]
+1.1.1.2.2.1  [- (k15_euclid(k6_numbers)=k15_euclid(1^[])), k6_numbers=1^[]]   (10)  substitution:[[_G3988, _G4037], [k6_numbers, 1^[]]]
+1.1.1.2.2.1.1  [- (k6_numbers=1^[]), 1^[]=k6_numbers]   (12)  substitution:[[_G1874, _G1829], [k6_numbers, 1^[]]]
+1.1.1.2.2.1.1.1  [- (1^[]=k6_numbers)]   (lemmata:1.1.1)  
+------------------------------------------------------
+End of proof for t20_topdim_2

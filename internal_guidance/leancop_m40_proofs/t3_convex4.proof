@@ -1,0 +1,50 @@
+
+t3_convex4 is a Theorem
+Start of proof for t3_convex4
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(2^[])]
+ (2)  [-l2_algstr_0(2^[])]
+ (3)  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(2^[])))]
+ (4)  [-m1_subset_1(4^[], k1_zfmisc_1(u1_struct_0(2^[])))]
+ (5)  [-m2_convex4(5^[], 2^[], 3^[])]
+ (6)  [-r1_tarski(3^[], 4^[])]
+ (7)  [m2_convex4(5^[], 2^[], 4^[])]
+ (8)  [-r1_tarski(_G1202, _G1258), -r2_hidden(1^[_G1258, _G1202], _G1202)]
+ (9)  [-r1_tarski(_G1202, _G1258), r2_hidden(1^[_G1258, _G1202], _G1258)]
+ (10)  [r1_tarski(_G1202, _G1258), r2_hidden(_G1372, _G1202), -r2_hidden(_G1372, _G1258)]
+ (11)  [-m1_convex4(_G2707, _G2355), m2_convex4(_G2707, _G2355, _G2428), m1_subset_1(_G2428, k1_zfmisc_1(u1_struct_0(_G2355))), -v2_struct_0(_G2355), l2_algstr_0(_G2355)]
+ (12)  [l2_algstr_0(_G1604), -v2_struct_0(_G1604), m1_subset_1(_G1785, k1_zfmisc_1(u1_struct_0(_G1604))), m1_convex4(_G1941, _G1604), m2_convex4(_G1941, _G1604, _G1785), -r1_tarski(k1_convex4(_G1604, _G1941), _G1785)]
+ (13)  [l2_algstr_0(_G1604), -v2_struct_0(_G1604), m1_subset_1(_G1785, k1_zfmisc_1(u1_struct_0(_G1604))), m1_convex4(_G1941, _G1604), -m2_convex4(_G1941, _G1604, _G1785), r1_tarski(k1_convex4(_G1604, _G1941), _G1785)]
+
+Connection Proof:
+-----------------
+1  [v2_struct_0(2^[])]   (1)  
+1.1  [-v2_struct_0(2^[]), l2_algstr_0(2^[]), m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(2^[]))), m1_convex4(5^[], 2^[]), m2_convex4(5^[], 2^[], 3^[]), -r1_tarski(k1_convex4(2^[], 5^[]), 3^[])]   (12)  substitution:[[_G1604, _G1785, _G1941], [2^[], 3^[], 5^[]]]
+1.1.1  [-l2_algstr_0(2^[])]   (2)  
+1.1.2  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(2^[])))]   (3)  
+1.1.3  [-m1_convex4(5^[], 2^[]), m2_convex4(5^[], 2^[], 3^[]), m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(2^[]))), -v2_struct_0(2^[]), l2_algstr_0(2^[])]   (11)  substitution:[[_G2707, _G2355, _G2428], [5^[], 2^[], 3^[]]]
+1.1.3.1  [-m2_convex4(5^[], 2^[], 3^[])]   (5)  
+1.1.3.2  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(2^[])))]   (3)  
+1.1.3.3  [v2_struct_0(2^[])]   (1)  
+1.1.3.4  [-l2_algstr_0(2^[])]   (2)  
+1.1.4  [-m2_convex4(5^[], 2^[], 3^[])]   (5)  
+1.1.5  [r1_tarski(k1_convex4(2^[], 5^[]), 3^[]), r2_hidden(1^[4^[], k1_convex4(2^[], 5^[])], k1_convex4(2^[], 5^[])), -r2_hidden(1^[4^[], k1_convex4(2^[], 5^[])], 3^[])]   (10)  substitution:[[_G1202, _G1258, _G1372], [k1_convex4(2^[], 5^[]), 3^[], 1^[4^[], k1_convex4(2^[], 5^[])]]]
+1.1.5.1  [-r2_hidden(1^[4^[], k1_convex4(2^[], 5^[])], k1_convex4(2^[], 5^[])), -r1_tarski(k1_convex4(2^[], 5^[]), 4^[])]   (8)  substitution:[[_G1258, _G1202], [4^[], k1_convex4(2^[], 5^[])]]
+1.1.5.1.1  [r1_tarski(k1_convex4(2^[], 5^[]), 4^[]), l2_algstr_0(2^[]), -v2_struct_0(2^[]), m1_subset_1(4^[], k1_zfmisc_1(u1_struct_0(2^[]))), m1_convex4(5^[], 2^[]), -m2_convex4(5^[], 2^[], 4^[])]   (13)  substitution:[[_G1604, _G1941, _G1785], [2^[], 5^[], 4^[]]]
+1.1.5.1.1.1  [-l2_algstr_0(2^[])]   (2)  
+1.1.5.1.1.2  [v2_struct_0(2^[])]   (1)  
+1.1.5.1.1.3  [-m1_subset_1(4^[], k1_zfmisc_1(u1_struct_0(2^[])))]   (4)  
+1.1.5.1.1.4  [-m1_convex4(5^[], 2^[])]   (lemmata:1.1)  
+1.1.5.1.1.5  [m2_convex4(5^[], 2^[], 4^[])]   (7)  
+1.1.5.2  [r2_hidden(1^[4^[], k1_convex4(2^[], 5^[])], 3^[]), r1_tarski(3^[], 4^[]), -r2_hidden(1^[4^[], k1_convex4(2^[], 5^[])], 4^[])]   (10)  substitution:[[_G1372, _G1202, _G1258], [1^[4^[], k1_convex4(2^[], 5^[])], 3^[], 4^[]]]
+1.1.5.2.1  [-r1_tarski(3^[], 4^[])]   (6)  
+1.1.5.2.2  [r2_hidden(1^[4^[], k1_convex4(2^[], 5^[])], 4^[]), -r1_tarski(k1_convex4(2^[], 5^[]), 4^[])]   (9)  substitution:[[_G1258, _G1202], [4^[], k1_convex4(2^[], 5^[])]]
+1.1.5.2.2.1  [r1_tarski(k1_convex4(2^[], 5^[]), 4^[]), l2_algstr_0(2^[]), -v2_struct_0(2^[]), m1_subset_1(4^[], k1_zfmisc_1(u1_struct_0(2^[]))), m1_convex4(5^[], 2^[]), -m2_convex4(5^[], 2^[], 4^[])]   (13)  substitution:[[_G1604, _G1941, _G1785], [2^[], 5^[], 4^[]]]
+1.1.5.2.2.1.1  [-l2_algstr_0(2^[])]   (2)  
+1.1.5.2.2.1.2  [v2_struct_0(2^[])]   (1)  
+1.1.5.2.2.1.3  [-m1_subset_1(4^[], k1_zfmisc_1(u1_struct_0(2^[])))]   (4)  
+1.1.5.2.2.1.4  [-m1_convex4(5^[], 2^[])]   (lemmata:1.1)  
+1.1.5.2.2.1.5  [m2_convex4(5^[], 2^[], 4^[])]   (7)  
+------------------------------------------------------
+End of proof for t3_convex4

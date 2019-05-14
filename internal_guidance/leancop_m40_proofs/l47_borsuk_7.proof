@@ -1,0 +1,25 @@
+
+l47_borsuk_7 is a Theorem
+Start of proof for l47_borsuk_7
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [m1_subset_1(k3_numbers, k1_zfmisc_1(k1_numbers))]
+ (2)  [-m1_subset_1(k3_numbers, k1_zfmisc_1(u1_struct_0(k3_topmetr)))]
+ (3)  [- (u1_struct_0(k3_topmetr)=k1_numbers)]
+ (4)  [_G2339=_G2388, - (u1_struct_0(_G2339)=u1_struct_0(_G2388))]
+ (5)  [_G2608=_G2657, - (k1_zfmisc_1(_G2608)=k1_zfmisc_1(_G2657))]
+ (6)  [-m1_subset_1(_G1788, _G1925), m1_subset_1(_G1721, _G1856), _G1721=_G1788, _G1856=_G1925]
+ (7)  [- (_G948=_G948)]
+ (8)  [_G1047=_G1092, - (_G1092=_G1047)]
+ (9)  [- (_G1280=_G1393), _G1280=_G1336, _G1336=_G1393]
+
+Connection Proof:
+-----------------
+1  [m1_subset_1(k3_numbers, k1_zfmisc_1(k1_numbers))]   (1)  
+1.1  [-m1_subset_1(k3_numbers, k1_zfmisc_1(k1_numbers)), m1_subset_1(k3_numbers, k1_zfmisc_1(u1_struct_0(k3_topmetr))), k3_numbers=k3_numbers, k1_zfmisc_1(u1_struct_0(k3_topmetr))=k1_zfmisc_1(k1_numbers)]   (6)  substitution:[[_G1788, _G1925, _G1721, _G1856], [k3_numbers, k1_zfmisc_1(k1_numbers), k3_numbers, k1_zfmisc_1(u1_struct_0(k3_topmetr))]]
+1.1.1  [-m1_subset_1(k3_numbers, k1_zfmisc_1(u1_struct_0(k3_topmetr)))]   (2)  
+1.1.2  [- (k3_numbers=k3_numbers)]   (7)  substitution:[[_G948], [k3_numbers]]
+1.1.3  [- (k1_zfmisc_1(u1_struct_0(k3_topmetr))=k1_zfmisc_1(k1_numbers)), u1_struct_0(k3_topmetr)=k1_numbers]   (5)  substitution:[[_G2608, _G2657], [u1_struct_0(k3_topmetr), k1_numbers]]
+1.1.3.1  [- (u1_struct_0(k3_topmetr)=k1_numbers)]   (3)  
+------------------------------------------------------
+End of proof for l47_borsuk_7

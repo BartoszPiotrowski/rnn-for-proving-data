@@ -1,0 +1,26 @@
+
+t8_zfmisc_1 is a Theorem
+Start of proof for t8_zfmisc_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [- (k2_xboole_0(k1_tarski(1^[]), k1_tarski(2^[]))=k1_tarski(1^[]))]
+ (2)  [1^[]=2^[]]
+ (3)  [- (k2_tarski(_G3795, _G3844)=k2_xboole_0(k1_tarski(_G3795), k1_tarski(_G3844)))]
+ (4)  [k1_tarski(_G4064)=k2_tarski(_G4119, _G4175), - (_G4119=_G4175)]
+ (5)  [- (_G1487=_G1487)]
+ (6)  [_G1586=_G1631, - (_G1631=_G1586)]
+ (7)  [- (_G1819=_G1932), _G1819=_G1875, _G1875=_G1932]
+ (8)  [- (k2_tarski(_G2269, _G2404)=k2_tarski(_G2336, _G2473)), _G2269=_G2336, _G2404=_G2473]
+ (9)  [_G3454=_G3503, - (k1_tarski(_G3454)=k1_tarski(_G3503))]
+ (10)  [- (k2_xboole_0(_G2866, _G3001)=k2_xboole_0(_G2933, _G3070)), _G2866=_G2933, _G3001=_G3070]
+
+Connection Proof:
+-----------------
+1  [1^[]=2^[]]   (2)  
+1.1  [- (1^[]=2^[]), k1_tarski(1^[])=k2_tarski(1^[], 2^[])]   (4)  substitution:[[_G4119, _G4175, _G4064], [1^[], 2^[], 1^[]]]
+1.1.1  [- (k1_tarski(1^[])=k2_tarski(1^[], 2^[])), k2_tarski(1^[], 2^[])=k1_tarski(1^[])]   (6)  substitution:[[_G1631, _G1586], [k1_tarski(1^[]), k2_tarski(1^[], 2^[])]]
+1.1.1.1  [- (k2_tarski(1^[], 2^[])=k1_tarski(1^[])), k2_tarski(1^[], 2^[])=k2_xboole_0(k1_tarski(1^[]), k1_tarski(2^[])), k2_xboole_0(k1_tarski(1^[]), k1_tarski(2^[]))=k1_tarski(1^[])]   (7)  substitution:[[_G1819, _G1932, _G1875], [k2_tarski(1^[], 2^[]), k1_tarski(1^[]), k2_xboole_0(k1_tarski(1^[]), k1_tarski(2^[]))]]
+1.1.1.1.1  [- (k2_tarski(1^[], 2^[])=k2_xboole_0(k1_tarski(1^[]), k1_tarski(2^[])))]   (3)  substitution:[[_G3795, _G3844], [1^[], 2^[]]]
+1.1.1.1.2  [- (k2_xboole_0(k1_tarski(1^[]), k1_tarski(2^[]))=k1_tarski(1^[]))]   (1)  
+------------------------------------------------------
+End of proof for t8_zfmisc_1

@@ -1,0 +1,68 @@
+
+l62_topgen_1 is a Theorem
+Start of proof for l62_topgen_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k3_numbers=k6_subset_1(k1_numbers, k1_borsuk_5)]
+ (2)  [- (k4_xboole_0(_G4197, _G4332)=k4_xboole_0(_G4264, _G4401)), _G4197=_G4264, _G4332=_G4401]
+ (3)  [- (k6_subset_1(_G4785, _G4920)=k6_subset_1(_G4852, _G4989)), _G4785=_G4852, _G4920=_G4989]
+ (4)  [- (_G2208=_G2208)]
+ (5)  [_G2307=_G2352, - (_G2352=_G2307)]
+ (6)  [- (_G2540=_G2653), _G2540=_G2596, _G2596=_G2653]
+ (7)  [-v1_xreal_0(_G3039), _G2990=_G3039, v1_xreal_0(_G2990)]
+ (8)  [-v1_rat_1(_G3317), _G3268=_G3317, v1_rat_1(_G3268)]
+ (9)  [-r2_hidden(_G3604, _G3741), r2_hidden(_G3537, _G3672), _G3537=_G3604, _G3672=_G3741]
+ (10)  [v1_rat_1(_G5424), -v1_xreal_0(_G5424)]
+ (11)  [v1_xreal_0(_G5555), -r2_hidden(_G5555, k1_numbers)]
+ (12)  [-v1_xreal_0(_G5555), r2_hidden(_G5555, k1_numbers)]
+ (13)  [v1_rat_1(_G5712), -r2_hidden(_G5712, k3_numbers)]
+ (14)  [-v1_rat_1(_G5712), r2_hidden(_G5712, k3_numbers)]
+ (15)  [- (k6_subset_1(_G6530, _G6575)=k4_xboole_0(_G6530, _G6575))]
+ (16)  [v1_xreal_0(_G6763), -v1_rat_1(_G6763), -r2_hidden(_G6763, k1_borsuk_5)]
+ (17)  [v1_xreal_0(_G6763), v1_rat_1(_G6763), r2_hidden(_G6763, k1_borsuk_5)]
+ (18)  [_G6014=k4_xboole_0(_G5869, _G5941), r2_hidden(_G6184, _G6014), -r2_hidden(_G6184, _G5869)]
+ (19)  [_G6014=k4_xboole_0(_G5869, _G5941), r2_hidden(_G6184, _G6014), r2_hidden(_G6184, _G5941)]
+ (20)  [_G6014=k4_xboole_0(_G5869, _G5941), -r2_hidden(_G6184, _G6014), r2_hidden(_G6184, _G5869), -r2_hidden(_G6184, _G5941)]
+ (21)  [- (_G6014=k4_xboole_0(_G5869, _G5941)), -r2_hidden(1^[_G6014, _G5941, _G5869], _G6014), -r2_hidden(1^[_G6014, _G5941, _G5869], _G5869)]
+ (22)  [- (_G6014=k4_xboole_0(_G5869, _G5941)), -r2_hidden(1^[_G6014, _G5941, _G5869], _G6014), r2_hidden(1^[_G6014, _G5941, _G5869], _G5941)]
+ (23)  [- (_G6014=k4_xboole_0(_G5869, _G5941)), r2_hidden(1^[_G6014, _G5941, _G5869], _G6014), r2_hidden(1^[_G6014, _G5941, _G5869], _G5869), -r2_hidden(1^[_G6014, _G5941, _G5869], _G5941)]
+
+Connection Proof:
+-----------------
+1  [v1_xreal_0(1^[k3_numbers, k1_borsuk_5, k1_numbers]), v1_rat_1(1^[k3_numbers, k1_borsuk_5, k1_numbers]), r2_hidden(1^[k3_numbers, k1_borsuk_5, k1_numbers], k1_borsuk_5)]   (17)  substitution:[[_G6763], [1^[k3_numbers, k1_borsuk_5, k1_numbers]]]
+1.1  [-v1_xreal_0(1^[k3_numbers, k1_borsuk_5, k1_numbers]), r2_hidden(1^[k3_numbers, k1_borsuk_5, k1_numbers], k1_numbers)]   (12)  substitution:[[_G5555], [1^[k3_numbers, k1_borsuk_5, k1_numbers]]]
+1.1.1  [-r2_hidden(1^[k3_numbers, k1_borsuk_5, k1_numbers], k1_numbers), - (k3_numbers=k4_xboole_0(k1_numbers, k1_borsuk_5)), -r2_hidden(1^[k3_numbers, k1_borsuk_5, k1_numbers], k3_numbers)]   (21)  substitution:[[_G6014, _G5941, _G5869], [k3_numbers, k1_borsuk_5, k1_numbers]]
+1.1.1.1  [k3_numbers=k4_xboole_0(k1_numbers, k1_borsuk_5), - (k3_numbers=k6_subset_1(k1_numbers, k1_borsuk_5)), k4_xboole_0(k1_numbers, k1_borsuk_5)=k6_subset_1(k1_numbers, k1_borsuk_5)]   (6)  substitution:[[_G2540, _G2596, _G2653], [k3_numbers, k4_xboole_0(k1_numbers, k1_borsuk_5), k6_subset_1(k1_numbers, k1_borsuk_5)]]
+1.1.1.1.1  [k3_numbers=k6_subset_1(k1_numbers, k1_borsuk_5)]   (1)  
+1.1.1.1.2  [- (k4_xboole_0(k1_numbers, k1_borsuk_5)=k6_subset_1(k1_numbers, k1_borsuk_5)), k6_subset_1(k1_numbers, k1_borsuk_5)=k4_xboole_0(k1_numbers, k1_borsuk_5)]   (5)  substitution:[[_G2352, _G2307], [k4_xboole_0(k1_numbers, k1_borsuk_5), k6_subset_1(k1_numbers, k1_borsuk_5)]]
+1.1.1.1.2.1  [- (k6_subset_1(k1_numbers, k1_borsuk_5)=k4_xboole_0(k1_numbers, k1_borsuk_5))]   (15)  substitution:[[_G6530, _G6575], [k1_numbers, k1_borsuk_5]]
+1.1.1.2  [r2_hidden(1^[k3_numbers, k1_borsuk_5, k1_numbers], k3_numbers), -v1_rat_1(1^[k3_numbers, k1_borsuk_5, k1_numbers])]   (14)  substitution:[[_G5712], [1^[k3_numbers, k1_borsuk_5, k1_numbers]]]
+1.1.1.2.1  [v1_rat_1(1^[k3_numbers, k1_borsuk_5, k1_numbers]), -v1_rat_1(1^[k3_numbers, k1_borsuk_5, k1_numbers]), 1^[k3_numbers, k1_borsuk_5, k1_numbers]=1^[k3_numbers, k1_borsuk_5, k1_numbers]]   (8)  substitution:[[_G3268, _G3317], [1^[k3_numbers, k1_borsuk_5, k1_numbers], 1^[k3_numbers, k1_borsuk_5, k1_numbers]]]
+1.1.1.2.1.1  [v1_rat_1(1^[k3_numbers, k1_borsuk_5, k1_numbers]), -v1_xreal_0(1^[k3_numbers, k1_borsuk_5, k1_numbers])]   (10)  substitution:[[_G5424], [1^[k3_numbers, k1_borsuk_5, k1_numbers]]]
+1.1.1.2.1.1.1  [v1_xreal_0(1^[k3_numbers, k1_borsuk_5, k1_numbers])]   (reduction:1)  
+1.1.1.2.1.2  [- (1^[k3_numbers, k1_borsuk_5, k1_numbers]=1^[k3_numbers, k1_borsuk_5, k1_numbers])]   (4)  substitution:[[_G2208], [1^[k3_numbers, k1_borsuk_5, k1_numbers]]]
+1.2  [-v1_rat_1(1^[k3_numbers, k1_borsuk_5, k1_numbers]), r2_hidden(1^[k3_numbers, k1_borsuk_5, k1_numbers], k3_numbers)]   (14)  substitution:[[_G5712], [1^[k3_numbers, k1_borsuk_5, k1_numbers]]]
+1.2.1  [-r2_hidden(1^[k3_numbers, k1_borsuk_5, k1_numbers], k3_numbers), - (k3_numbers=k4_xboole_0(k1_numbers, k1_borsuk_5)), -r2_hidden(1^[k3_numbers, k1_borsuk_5, k1_numbers], k1_numbers)]   (21)  substitution:[[_G6014, _G5941, _G5869], [k3_numbers, k1_borsuk_5, k1_numbers]]
+1.2.1.1  [k3_numbers=k4_xboole_0(k1_numbers, k1_borsuk_5), - (k4_xboole_0(k1_numbers, k1_borsuk_5)=k3_numbers)]   (5)  substitution:[[_G2307, _G2352], [k3_numbers, k4_xboole_0(k1_numbers, k1_borsuk_5)]]
+1.2.1.1.1  [k4_xboole_0(k1_numbers, k1_borsuk_5)=k3_numbers, - (k6_subset_1(k1_numbers, k1_borsuk_5)=k3_numbers), k6_subset_1(k1_numbers, k1_borsuk_5)=k4_xboole_0(k1_numbers, k1_borsuk_5)]   (6)  substitution:[[_G2596, _G2653, _G2540], [k4_xboole_0(k1_numbers, k1_borsuk_5), k3_numbers, k6_subset_1(k1_numbers, k1_borsuk_5)]]
+1.2.1.1.1.1  [k6_subset_1(k1_numbers, k1_borsuk_5)=k3_numbers, - (k3_numbers=k6_subset_1(k1_numbers, k1_borsuk_5))]   (5)  substitution:[[_G2307, _G2352], [k6_subset_1(k1_numbers, k1_borsuk_5), k3_numbers]]
+1.2.1.1.1.1.1  [k3_numbers=k6_subset_1(k1_numbers, k1_borsuk_5)]   (1)  
+1.2.1.1.1.2  [- (k6_subset_1(k1_numbers, k1_borsuk_5)=k4_xboole_0(k1_numbers, k1_borsuk_5))]   (15)  substitution:[[_G6530, _G6575], [k1_numbers, k1_borsuk_5]]
+1.2.1.2  [r2_hidden(1^[k3_numbers, k1_borsuk_5, k1_numbers], k1_numbers), -v1_xreal_0(1^[k3_numbers, k1_borsuk_5, k1_numbers])]   (12)  substitution:[[_G5555], [1^[k3_numbers, k1_borsuk_5, k1_numbers]]]
+1.2.1.2.1  [v1_xreal_0(1^[k3_numbers, k1_borsuk_5, k1_numbers]), -v1_rat_1(1^[k3_numbers, k1_borsuk_5, k1_numbers]), -r2_hidden(1^[k3_numbers, k1_borsuk_5, k1_numbers], k1_borsuk_5)]   (16)  substitution:[[_G6763], [1^[k3_numbers, k1_borsuk_5, k1_numbers]]]
+1.2.1.2.1.1  [v1_rat_1(1^[k3_numbers, k1_borsuk_5, k1_numbers])]   (reduction:1)  
+1.2.1.2.1.2  [r2_hidden(1^[k3_numbers, k1_borsuk_5, k1_numbers], k1_borsuk_5), - (k3_numbers=k4_xboole_0(k1_numbers, k1_borsuk_5)), -r2_hidden(1^[k3_numbers, k1_borsuk_5, k1_numbers], k3_numbers)]   (22)  substitution:[[_G6014, _G5941, _G5869], [k3_numbers, k1_borsuk_5, k1_numbers]]
+1.2.1.2.1.2.1  [k3_numbers=k4_xboole_0(k1_numbers, k1_borsuk_5)]   (lemmata:1.2.1)  
+1.2.1.2.1.2.2  [r2_hidden(1^[k3_numbers, k1_borsuk_5, k1_numbers], k3_numbers)]   (reduction:1.2)  
+1.3  [-r2_hidden(1^[k3_numbers, k1_borsuk_5, k1_numbers], k1_borsuk_5), - (k3_numbers=k4_xboole_0(k1_numbers, k1_borsuk_5)), r2_hidden(1^[k3_numbers, k1_borsuk_5, k1_numbers], k3_numbers), r2_hidden(1^[k3_numbers, k1_borsuk_5, k1_numbers], k1_numbers)]   (23)  substitution:[[_G6014, _G5941, _G5869], [k3_numbers, k1_borsuk_5, k1_numbers]]
+1.3.1  [k3_numbers=k4_xboole_0(k1_numbers, k1_borsuk_5), - (k4_xboole_0(k1_numbers, k1_borsuk_5)=k3_numbers)]   (5)  substitution:[[_G2307, _G2352], [k3_numbers, k4_xboole_0(k1_numbers, k1_borsuk_5)]]
+1.3.1.1  [k4_xboole_0(k1_numbers, k1_borsuk_5)=k3_numbers, - (k6_subset_1(k1_numbers, k1_borsuk_5)=k3_numbers), k6_subset_1(k1_numbers, k1_borsuk_5)=k4_xboole_0(k1_numbers, k1_borsuk_5)]   (6)  substitution:[[_G2596, _G2653, _G2540], [k4_xboole_0(k1_numbers, k1_borsuk_5), k3_numbers, k6_subset_1(k1_numbers, k1_borsuk_5)]]
+1.3.1.1.1  [k6_subset_1(k1_numbers, k1_borsuk_5)=k3_numbers, - (k3_numbers=k6_subset_1(k1_numbers, k1_borsuk_5))]   (5)  substitution:[[_G2307, _G2352], [k6_subset_1(k1_numbers, k1_borsuk_5), k3_numbers]]
+1.3.1.1.1.1  [k3_numbers=k6_subset_1(k1_numbers, k1_borsuk_5)]   (1)  
+1.3.1.1.2  [- (k6_subset_1(k1_numbers, k1_borsuk_5)=k4_xboole_0(k1_numbers, k1_borsuk_5))]   (15)  substitution:[[_G6530, _G6575], [k1_numbers, k1_borsuk_5]]
+1.3.2  [-r2_hidden(1^[k3_numbers, k1_borsuk_5, k1_numbers], k3_numbers), v1_rat_1(1^[k3_numbers, k1_borsuk_5, k1_numbers])]   (13)  substitution:[[_G5712], [1^[k3_numbers, k1_borsuk_5, k1_numbers]]]
+1.3.2.1  [-v1_rat_1(1^[k3_numbers, k1_borsuk_5, k1_numbers])]   (lemmata:1)  
+1.3.3  [-r2_hidden(1^[k3_numbers, k1_borsuk_5, k1_numbers], k1_numbers), v1_xreal_0(1^[k3_numbers, k1_borsuk_5, k1_numbers])]   (11)  substitution:[[_G5555], [1^[k3_numbers, k1_borsuk_5, k1_numbers]]]
+1.3.3.1  [-v1_xreal_0(1^[k3_numbers, k1_borsuk_5, k1_numbers])]   (lemmata:1)  
+------------------------------------------------------
+End of proof for l62_topgen_1

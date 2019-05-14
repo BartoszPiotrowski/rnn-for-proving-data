@@ -1,0 +1,49 @@
+
+t40_topgen_5 is a Theorem
+Start of proof for t40_topgen_5
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v3_tops_1(k1_topgen_5, k3_topgen_5), m1_subset_1(k1_topgen_5, k1_zfmisc_1(u1_struct_0(k3_topgen_5)))]
+ (2)  [v2_struct_0(k3_topgen_5)]
+ (3)  [-v1_pre_topc(k3_topgen_5)]
+ (4)  [-v2_pre_topc(k3_topgen_5)]
+ (5)  [-l1_pre_topc(k3_topgen_5)]
+ (6)  [-v4_pre_topc(k1_topgen_5, k3_topgen_5)]
+ (7)  [-m1_subset_1(k1_topgen_5, k1_zfmisc_1(u1_struct_0(k3_topgen_5)))]
+ (8)  [m1_subset_1(_G9113, k1_zfmisc_1(u1_struct_0(k3_topgen_5))), _G9113=k1_topgen_5, - (k2_pre_topc(k3_topgen_5, _G9113)=_G9113)]
+ (9)  [m1_subset_1(_G9113, k1_zfmisc_1(u1_struct_0(k3_topgen_5))), _G9113=k1_topgen_5, - (k1_tops_1(k3_topgen_5, _G9113)=k1_xboole_0)]
+ (10)  [l1_pre_topc(_G8238), m1_subset_1(_G8336, k1_zfmisc_1(u1_struct_0(_G8238))), v3_tops_1(_G8336, _G8238), - (k1_tops_1(_G8238, k2_pre_topc(_G8238, _G8336))=k1_xboole_0)]
+ (11)  [l1_pre_topc(_G8238), m1_subset_1(_G8336, k1_zfmisc_1(u1_struct_0(_G8238))), -v3_tops_1(_G8336, _G8238), k1_tops_1(_G8238, k2_pre_topc(_G8238, _G8336))=k1_xboole_0]
+ (12)  [- (k2_pre_topc(_G6413, _G6548)=k2_pre_topc(_G6480, _G6617)), _G6413=_G6480, _G6548=_G6617]
+ (13)  [- (k1_tops_1(_G7010, _G7145)=k1_tops_1(_G7077, _G7214)), _G7010=_G7077, _G7145=_G7214]
+ (14)  [_G7607=_G7656, - (k1_zfmisc_1(_G7607)=k1_zfmisc_1(_G7656))]
+ (15)  [_G7876=_G7925, - (u1_struct_0(_G7876)=u1_struct_0(_G7925))]
+ (16)  [- (_G2590=_G2590)]
+ (17)  [_G2689=_G2734, - (_G2734=_G2689)]
+ (18)  [- (_G2922=_G3035), _G2922=_G2978, _G2978=_G3035]
+ (19)  [-v2_struct_0(_G3421), _G3372=_G3421, v2_struct_0(_G3372)]
+ (20)  [-v1_pre_topc(_G3699), _G3650=_G3699, v1_pre_topc(_G3650)]
+ (21)  [-v2_pre_topc(_G3977), _G3928=_G3977, v2_pre_topc(_G3928)]
+ (22)  [-l1_pre_topc(_G4255), _G4206=_G4255, l1_pre_topc(_G4206)]
+ (23)  [-v4_pre_topc(_G4551, _G4688), v4_pre_topc(_G4484, _G4619), _G4484=_G4551, _G4619=_G4688]
+ (24)  [-v3_tops_1(_G5148, _G5285), v3_tops_1(_G5081, _G5216), _G5081=_G5148, _G5216=_G5285]
+ (25)  [-m1_subset_1(_G5736, _G5873), m1_subset_1(_G5669, _G5804), _G5669=_G5736, _G5804=_G5873]
+
+Connection Proof:
+-----------------
+1  [v3_tops_1(k1_topgen_5, k3_topgen_5), m1_subset_1(k1_topgen_5, k1_zfmisc_1(u1_struct_0(k3_topgen_5)))]   (1)  
+1.1  [-v3_tops_1(k1_topgen_5, k3_topgen_5), l1_pre_topc(k3_topgen_5), m1_subset_1(k1_topgen_5, k1_zfmisc_1(u1_struct_0(k3_topgen_5))), k1_tops_1(k3_topgen_5, k2_pre_topc(k3_topgen_5, k1_topgen_5))=k1_xboole_0]   (11)  substitution:[[_G8336, _G8238], [k1_topgen_5, k3_topgen_5]]
+1.1.1  [-l1_pre_topc(k3_topgen_5)]   (5)  
+1.1.2  [-m1_subset_1(k1_topgen_5, k1_zfmisc_1(u1_struct_0(k3_topgen_5)))]   (7)  
+1.1.3  [- (k1_tops_1(k3_topgen_5, k2_pre_topc(k3_topgen_5, k1_topgen_5))=k1_xboole_0), k1_tops_1(k3_topgen_5, k2_pre_topc(k3_topgen_5, k1_topgen_5))=k1_tops_1(k3_topgen_5, k1_topgen_5), k1_tops_1(k3_topgen_5, k1_topgen_5)=k1_xboole_0]   (18)  substitution:[[_G2922, _G3035, _G2978], [k1_tops_1(k3_topgen_5, k2_pre_topc(k3_topgen_5, k1_topgen_5)), k1_xboole_0, k1_tops_1(k3_topgen_5, k1_topgen_5)]]
+1.1.3.1  [- (k1_tops_1(k3_topgen_5, k2_pre_topc(k3_topgen_5, k1_topgen_5))=k1_tops_1(k3_topgen_5, k1_topgen_5)), k3_topgen_5=k3_topgen_5, k2_pre_topc(k3_topgen_5, k1_topgen_5)=k1_topgen_5]   (13)  substitution:[[_G7010, _G7145, _G7077, _G7214], [k3_topgen_5, k2_pre_topc(k3_topgen_5, k1_topgen_5), k3_topgen_5, k1_topgen_5]]
+1.1.3.1.1  [- (k3_topgen_5=k3_topgen_5)]   (16)  substitution:[[_G2590], [k3_topgen_5]]
+1.1.3.1.2  [- (k2_pre_topc(k3_topgen_5, k1_topgen_5)=k1_topgen_5), m1_subset_1(k1_topgen_5, k1_zfmisc_1(u1_struct_0(k3_topgen_5))), k1_topgen_5=k1_topgen_5]   (8)  substitution:[[_G9113], [k1_topgen_5]]
+1.1.3.1.2.1  [-m1_subset_1(k1_topgen_5, k1_zfmisc_1(u1_struct_0(k3_topgen_5)))]   (7)  
+1.1.3.1.2.2  [- (k1_topgen_5=k1_topgen_5)]   (16)  substitution:[[_G2590], [k1_topgen_5]]
+1.1.3.2  [- (k1_tops_1(k3_topgen_5, k1_topgen_5)=k1_xboole_0), m1_subset_1(k1_topgen_5, k1_zfmisc_1(u1_struct_0(k3_topgen_5))), k1_topgen_5=k1_topgen_5]   (9)  substitution:[[_G9113], [k1_topgen_5]]
+1.1.3.2.1  [-m1_subset_1(k1_topgen_5, k1_zfmisc_1(u1_struct_0(k3_topgen_5)))]   (7)  
+1.1.3.2.2  [- (k1_topgen_5=k1_topgen_5)]   (16)  substitution:[[_G2590], [k1_topgen_5]]
+1.2  [-m1_subset_1(k1_topgen_5, k1_zfmisc_1(u1_struct_0(k3_topgen_5)))]   (7)  
+------------------------------------------------------
+End of proof for t40_topgen_5

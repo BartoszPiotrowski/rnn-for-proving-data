@@ -1,0 +1,40 @@
+
+l85_borsuk_7 is a Theorem
+Start of proof for l85_borsuk_7
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v1_funct_1(k19_sin_cos), v1_funct_2(k19_sin_cos, u1_struct_0(k3_topmetr), u1_struct_0(k3_topmetr)), m1_subset_1(k19_sin_cos, k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(k3_topmetr), u1_struct_0(k3_topmetr))))]
+ (2)  [-v1_funct_1(k19_sin_cos)]
+ (3)  [-v1_funct_2(k19_sin_cos, k1_numbers, k1_numbers)]
+ (4)  [-m1_subset_1(k19_sin_cos, k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]
+ (5)  [- (u1_struct_0(k3_topmetr)=k1_numbers)]
+ (6)  [_G4251=_G4300, - (k1_zfmisc_1(_G4251)=k1_zfmisc_1(_G4300))]
+ (7)  [_G5117=_G5166, - (u1_struct_0(_G5117)=u1_struct_0(_G5166))]
+ (8)  [- (k2_zfmisc_1(_G4529, _G4664)=k2_zfmisc_1(_G4596, _G4733)), _G4529=_G4596, _G4664=_G4733]
+ (9)  [- (_G1512=_G1512)]
+ (10)  [_G1611=_G1656, - (_G1656=_G1611)]
+ (11)  [- (_G1844=_G1957), _G1844=_G1900, _G1900=_G1957]
+ (12)  [-v1_funct_1(_G2343), _G2294=_G2343, v1_funct_1(_G2294)]
+ (13)  [-m1_subset_1(_G3658, _G3795), m1_subset_1(_G3591, _G3726), _G3591=_G3658, _G3726=_G3795]
+ (14)  [-v1_funct_2(_G2657, _G2830, _G3007), v1_funct_2(_G2572, _G2743, _G2918), _G2572=_G2657, _G2743=_G2830, _G2918=_G3007]
+
+Connection Proof:
+-----------------
+1  [v1_funct_1(k19_sin_cos), v1_funct_2(k19_sin_cos, u1_struct_0(k3_topmetr), u1_struct_0(k3_topmetr)), m1_subset_1(k19_sin_cos, k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(k3_topmetr), u1_struct_0(k3_topmetr))))]   (1)  
+1.1  [-v1_funct_1(k19_sin_cos)]   (2)  
+1.2  [-v1_funct_2(k19_sin_cos, u1_struct_0(k3_topmetr), u1_struct_0(k3_topmetr)), v1_funct_2(k19_sin_cos, k1_numbers, k1_numbers), k19_sin_cos=k19_sin_cos, k1_numbers=u1_struct_0(k3_topmetr), k1_numbers=u1_struct_0(k3_topmetr)]   (14)  substitution:[[_G2657, _G2830, _G3007, _G2572, _G2743, _G2918], [k19_sin_cos, u1_struct_0(k3_topmetr), u1_struct_0(k3_topmetr), k19_sin_cos, k1_numbers, k1_numbers]]
+1.2.1  [-v1_funct_2(k19_sin_cos, k1_numbers, k1_numbers)]   (3)  
+1.2.2  [- (k19_sin_cos=k19_sin_cos)]   (9)  substitution:[[_G1512], [k19_sin_cos]]
+1.2.3  [- (k1_numbers=u1_struct_0(k3_topmetr)), u1_struct_0(k3_topmetr)=k1_numbers]   (10)  substitution:[[_G1656, _G1611], [k1_numbers, u1_struct_0(k3_topmetr)]]
+1.2.3.1  [- (u1_struct_0(k3_topmetr)=k1_numbers)]   (5)  
+1.2.4  [- (k1_numbers=u1_struct_0(k3_topmetr))]   (lemmata:1.2)  
+1.3  [-m1_subset_1(k19_sin_cos, k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(k3_topmetr), u1_struct_0(k3_topmetr)))), m1_subset_1(k19_sin_cos, k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), k19_sin_cos=k19_sin_cos, k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))=k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(k3_topmetr), u1_struct_0(k3_topmetr)))]   (13)  substitution:[[_G3658, _G3795, _G3591, _G3726], [k19_sin_cos, k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(k3_topmetr), u1_struct_0(k3_topmetr))), k19_sin_cos, k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))]]
+1.3.1  [-m1_subset_1(k19_sin_cos, k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]   (4)  
+1.3.2  [- (k19_sin_cos=k19_sin_cos)]   (9)  substitution:[[_G1512], [k19_sin_cos]]
+1.3.3  [- (k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))=k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(k3_topmetr), u1_struct_0(k3_topmetr)))), k2_zfmisc_1(k1_numbers, k1_numbers)=k2_zfmisc_1(u1_struct_0(k3_topmetr), u1_struct_0(k3_topmetr))]   (6)  substitution:[[_G4251, _G4300], [k2_zfmisc_1(k1_numbers, k1_numbers), k2_zfmisc_1(u1_struct_0(k3_topmetr), u1_struct_0(k3_topmetr))]]
+1.3.3.1  [- (k2_zfmisc_1(k1_numbers, k1_numbers)=k2_zfmisc_1(u1_struct_0(k3_topmetr), u1_struct_0(k3_topmetr))), k1_numbers=u1_struct_0(k3_topmetr), k1_numbers=u1_struct_0(k3_topmetr)]   (8)  substitution:[[_G4529, _G4664, _G4596, _G4733], [k1_numbers, k1_numbers, u1_struct_0(k3_topmetr), u1_struct_0(k3_topmetr)]]
+1.3.3.1.1  [- (k1_numbers=u1_struct_0(k3_topmetr)), u1_struct_0(k3_topmetr)=k1_numbers]   (10)  substitution:[[_G1656, _G1611], [k1_numbers, u1_struct_0(k3_topmetr)]]
+1.3.3.1.1.1  [- (u1_struct_0(k3_topmetr)=k1_numbers)]   (5)  
+1.3.3.1.2  [- (k1_numbers=u1_struct_0(k3_topmetr))]   (lemmata:1.3.3.1)  
+------------------------------------------------------
+End of proof for l85_borsuk_7

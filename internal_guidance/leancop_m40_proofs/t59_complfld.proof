@@ -1,0 +1,58 @@
+
+t59_complfld is a Theorem
+Start of proof for t59_complfld
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-3^[], - (1^[]=k4_struct_0(k1_complfld))]
+ (2)  [-3^[], r1_xxreal_0(k17_complex1(1^[]), k6_numbers)]
+ (3)  [-2^[], -r1_xxreal_0(k17_complex1(1^[]), k6_numbers)]
+ (4)  [-2^[], 1^[]=k4_struct_0(k1_complfld)]
+ (5)  [-m1_subset_1(1^[], u1_struct_0(k1_complfld))]
+ (6)  [2^[], 3^[]]
+ (7)  [m1_subset_1(_G5447, u1_struct_0(k1_complfld)), -v1_xcmplx_0(_G5447)]
+ (8)  [- (k5_complex1=k1_xboole_0)]
+ (9)  [- (k6_numbers=k1_xboole_0)]
+ (10)  [- (k4_struct_0(k1_complfld)=k5_complex1)]
+ (11)  [v1_xcmplx_0(_G5732), - (_G5732=k6_numbers), r1_xxreal_0(k17_complex1(_G5732), k6_numbers)]
+ (12)  [v1_xcmplx_0(_G5732), -r1_xxreal_0(k17_complex1(_G5732), k6_numbers), _G5732=k6_numbers]
+ (13)  [_G4559=_G4608, - (u1_struct_0(_G4559)=u1_struct_0(_G4608))]
+ (14)  [_G4837=_G4886, - (k17_complex1(_G4837)=k17_complex1(_G4886))]
+ (15)  [_G5106=_G5155, - (k4_struct_0(_G5106)=k4_struct_0(_G5155))]
+ (16)  [- (_G2251=_G2251)]
+ (17)  [_G2350=_G2395, - (_G2395=_G2350)]
+ (18)  [- (_G2583=_G2696), _G2583=_G2639, _G2639=_G2696]
+ (19)  [-v1_xcmplx_0(_G3082), _G3033=_G3082, v1_xcmplx_0(_G3033)]
+ (20)  [-m1_subset_1(_G3378, _G3515), m1_subset_1(_G3311, _G3446), _G3311=_G3378, _G3446=_G3515]
+ (21)  [-r1_xxreal_0(_G3966, _G4103), r1_xxreal_0(_G3899, _G4034), _G3899=_G3966, _G4034=_G4103]
+
+Connection Proof:
+-----------------
+1  [2^[], 3^[]]   (6)  
+1.1  [-2^[], 1^[]=k4_struct_0(k1_complfld)]   (4)  
+1.1.1  [- (1^[]=k4_struct_0(k1_complfld)), 1^[]=k6_numbers, k6_numbers=k4_struct_0(k1_complfld)]   (18)  substitution:[[_G2583, _G2696, _G2639], [1^[], k4_struct_0(k1_complfld), k6_numbers]]
+1.1.1.1  [- (1^[]=k6_numbers), v1_xcmplx_0(1^[]), r1_xxreal_0(k17_complex1(1^[]), k6_numbers)]   (11)  substitution:[[_G5732], [1^[]]]
+1.1.1.1.1  [-v1_xcmplx_0(1^[]), m1_subset_1(1^[], u1_struct_0(k1_complfld))]   (7)  substitution:[[_G5447], [1^[]]]
+1.1.1.1.1.1  [-m1_subset_1(1^[], u1_struct_0(k1_complfld))]   (5)  
+1.1.1.1.2  [-r1_xxreal_0(k17_complex1(1^[]), k6_numbers), -2^[]]   (3)  
+1.1.1.1.2.1  [2^[]]   (reduction:1)  
+1.1.1.2  [- (k6_numbers=k4_struct_0(k1_complfld)), k6_numbers=k1_xboole_0, k1_xboole_0=k4_struct_0(k1_complfld)]   (18)  substitution:[[_G2583, _G2696, _G2639], [k6_numbers, k4_struct_0(k1_complfld), k1_xboole_0]]
+1.1.1.2.1  [- (k6_numbers=k1_xboole_0)]   (9)  
+1.1.1.2.2  [- (k1_xboole_0=k4_struct_0(k1_complfld)), k4_struct_0(k1_complfld)=k1_xboole_0]   (17)  substitution:[[_G2395, _G2350], [k1_xboole_0, k4_struct_0(k1_complfld)]]
+1.1.1.2.2.1  [- (k4_struct_0(k1_complfld)=k1_xboole_0), k4_struct_0(k1_complfld)=k5_complex1, k5_complex1=k1_xboole_0]   (18)  substitution:[[_G2583, _G2696, _G2639], [k4_struct_0(k1_complfld), k1_xboole_0, k5_complex1]]
+1.1.1.2.2.1.1  [- (k4_struct_0(k1_complfld)=k5_complex1)]   (10)  
+1.1.1.2.2.1.2  [- (k5_complex1=k1_xboole_0)]   (8)  
+1.2  [-3^[], - (1^[]=k4_struct_0(k1_complfld))]   (1)  
+1.2.1  [1^[]=k4_struct_0(k1_complfld), - (1^[]=k6_numbers), k4_struct_0(k1_complfld)=k6_numbers]   (18)  substitution:[[_G2583, _G2639, _G2696], [1^[], k4_struct_0(k1_complfld), k6_numbers]]
+1.2.1.1  [1^[]=k6_numbers, v1_xcmplx_0(1^[]), -r1_xxreal_0(k17_complex1(1^[]), k6_numbers)]   (12)  substitution:[[_G5732], [1^[]]]
+1.2.1.1.1  [-v1_xcmplx_0(1^[]), m1_subset_1(1^[], u1_struct_0(k1_complfld))]   (7)  substitution:[[_G5447], [1^[]]]
+1.2.1.1.1.1  [-m1_subset_1(1^[], u1_struct_0(k1_complfld))]   (5)  
+1.2.1.1.2  [r1_xxreal_0(k17_complex1(1^[]), k6_numbers), -3^[]]   (2)  
+1.2.1.1.2.1  [3^[]]   (reduction:1)  
+1.2.1.2  [- (k4_struct_0(k1_complfld)=k6_numbers), k4_struct_0(k1_complfld)=k5_complex1, k5_complex1=k6_numbers]   (18)  substitution:[[_G2583, _G2696, _G2639], [k4_struct_0(k1_complfld), k6_numbers, k5_complex1]]
+1.2.1.2.1  [- (k4_struct_0(k1_complfld)=k5_complex1)]   (10)  
+1.2.1.2.2  [- (k5_complex1=k6_numbers), k5_complex1=k1_xboole_0, k1_xboole_0=k6_numbers]   (18)  substitution:[[_G2583, _G2696, _G2639], [k5_complex1, k6_numbers, k1_xboole_0]]
+1.2.1.2.2.1  [- (k5_complex1=k1_xboole_0)]   (8)  
+1.2.1.2.2.2  [- (k1_xboole_0=k6_numbers), k6_numbers=k1_xboole_0]   (17)  substitution:[[_G2395, _G2350], [k1_xboole_0, k6_numbers]]
+1.2.1.2.2.2.1  [- (k6_numbers=k1_xboole_0)]   (9)  
+------------------------------------------------------
+End of proof for t59_complfld

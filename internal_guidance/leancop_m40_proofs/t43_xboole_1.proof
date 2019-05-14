@@ -1,0 +1,27 @@
+
+t43_xboole_1 is a Theorem
+Start of proof for t43_xboole_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-r1_tarski(1^[], k2_xboole_0(2^[], 3^[]))]
+ (2)  [r1_tarski(k4_xboole_0(1^[], 2^[]), 3^[])]
+ (3)  [- (k4_xboole_0(k4_xboole_0(_G4402, _G4458), _G4515)=k4_xboole_0(_G4402, k2_xboole_0(_G4458, _G4515)))]
+ (4)  [k4_xboole_0(_G4124, _G4172)=k1_xboole_0, -r1_tarski(_G4124, _G4172)]
+ (5)  [- (k4_xboole_0(_G4124, _G4172)=k1_xboole_0), r1_tarski(_G4124, _G4172)]
+ (6)  [- (k2_xboole_0(_G2897, _G3032)=k2_xboole_0(_G2964, _G3101)), _G2897=_G2964, _G3032=_G3101]
+ (7)  [- (k4_xboole_0(_G3485, _G3620)=k4_xboole_0(_G3552, _G3689)), _G3485=_G3552, _G3620=_G3689]
+ (8)  [-r1_tarski(_G2346, _G2483), r1_tarski(_G2279, _G2414), _G2279=_G2346, _G2414=_G2483]
+ (9)  [- (_G1506=_G1506)]
+ (10)  [_G1605=_G1650, - (_G1650=_G1605)]
+ (11)  [- (_G1838=_G1951), _G1838=_G1894, _G1894=_G1951]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k4_xboole_0(1^[], 2^[]), 3^[])]   (2)  
+1.1  [-r1_tarski(k4_xboole_0(1^[], 2^[]), 3^[]), k4_xboole_0(k4_xboole_0(1^[], 2^[]), 3^[])=k1_xboole_0]   (4)  substitution:[[_G4124, _G4172], [k4_xboole_0(1^[], 2^[]), 3^[]]]
+1.1.1  [- (k4_xboole_0(k4_xboole_0(1^[], 2^[]), 3^[])=k1_xboole_0), k4_xboole_0(k4_xboole_0(1^[], 2^[]), 3^[])=k4_xboole_0(1^[], k2_xboole_0(2^[], 3^[])), k4_xboole_0(1^[], k2_xboole_0(2^[], 3^[]))=k1_xboole_0]   (11)  substitution:[[_G1838, _G1951, _G1894], [k4_xboole_0(k4_xboole_0(1^[], 2^[]), 3^[]), k1_xboole_0, k4_xboole_0(1^[], k2_xboole_0(2^[], 3^[]))]]
+1.1.1.1  [- (k4_xboole_0(k4_xboole_0(1^[], 2^[]), 3^[])=k4_xboole_0(1^[], k2_xboole_0(2^[], 3^[])))]   (3)  substitution:[[_G4402, _G4458, _G4515], [1^[], 2^[], 3^[]]]
+1.1.1.2  [- (k4_xboole_0(1^[], k2_xboole_0(2^[], 3^[]))=k1_xboole_0), r1_tarski(1^[], k2_xboole_0(2^[], 3^[]))]   (5)  substitution:[[_G4124, _G4172], [1^[], k2_xboole_0(2^[], 3^[])]]
+1.1.1.2.1  [-r1_tarski(1^[], k2_xboole_0(2^[], 3^[]))]   (1)  
+------------------------------------------------------
+End of proof for t43_xboole_1

@@ -1,0 +1,39 @@
+
+t8_card_3 is a Theorem
+Start of proof for t8_card_3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k3_card_3(k16_funcop_1(1^[], 2^[]))=2^[]]
+ (2)  [- (k16_funcop_1(_G4575, _G4622)=k7_funcop_1(k1_tarski(_G4575), _G4622))]
+ (3)  [-v1_xboole_0(k1_xboole_0)]
+ (4)  [v1_xboole_0(k1_tarski(_G4867))]
+ (5)  [- (_G4963=k1_xboole_0), - (k3_card_3(k7_funcop_1(_G4963, _G5015))=_G5015)]
+ (6)  [-v1_xboole_0(_G2500), _G2451=_G2500, v1_xboole_0(_G2451)]
+ (7)  [- (_G1678=_G1678)]
+ (8)  [_G1777=_G1822, - (_G1822=_G1777)]
+ (9)  [- (_G2010=_G2123), _G2010=_G2066, _G2066=_G2123]
+ (10)  [_G2750=_G2799, - (k1_tarski(_G2750)=k1_tarski(_G2799))]
+ (11)  [- (k7_funcop_1(_G3028, _G3163)=k7_funcop_1(_G3095, _G3232)), _G3028=_G3095, _G3163=_G3232]
+ (12)  [_G3625=_G3674, - (k3_card_3(_G3625)=k3_card_3(_G3674))]
+ (13)  [- (k16_funcop_1(_G3894, _G4029)=k16_funcop_1(_G3961, _G4098)), _G3894=_G3961, _G4029=_G4098]
+
+Connection Proof:
+-----------------
+1  [k3_card_3(k16_funcop_1(1^[], 2^[]))=2^[]]   (1)  
+1.1  [- (k3_card_3(k16_funcop_1(1^[], 2^[]))=2^[]), k3_card_3(k16_funcop_1(1^[], 2^[]))=k3_card_3(k7_funcop_1(k1_tarski(1^[]), 2^[])), k3_card_3(k7_funcop_1(k1_tarski(1^[]), 2^[]))=2^[]]   (9)  substitution:[[_G2010, _G2123, _G2066], [k3_card_3(k16_funcop_1(1^[], 2^[])), 2^[], k3_card_3(k7_funcop_1(k1_tarski(1^[]), 2^[]))]]
+1.1.1  [- (k3_card_3(k16_funcop_1(1^[], 2^[]))=k3_card_3(k7_funcop_1(k1_tarski(1^[]), 2^[]))), k3_card_3(k7_funcop_1(k1_tarski(1^[]), 2^[]))=k3_card_3(k16_funcop_1(1^[], 2^[]))]   (8)  substitution:[[_G1822, _G1777], [k3_card_3(k16_funcop_1(1^[], 2^[])), k3_card_3(k7_funcop_1(k1_tarski(1^[]), 2^[]))]]
+1.1.1.1  [- (k3_card_3(k7_funcop_1(k1_tarski(1^[]), 2^[]))=k3_card_3(k16_funcop_1(1^[], 2^[]))), k7_funcop_1(k1_tarski(1^[]), 2^[])=k16_funcop_1(1^[], 2^[])]   (12)  substitution:[[_G3625, _G3674], [k7_funcop_1(k1_tarski(1^[]), 2^[]), k16_funcop_1(1^[], 2^[])]]
+1.1.1.1.1  [- (k7_funcop_1(k1_tarski(1^[]), 2^[])=k16_funcop_1(1^[], 2^[])), k16_funcop_1(1^[], 2^[])=k7_funcop_1(k1_tarski(1^[]), 2^[])]   (8)  substitution:[[_G1822, _G1777], [k7_funcop_1(k1_tarski(1^[]), 2^[]), k16_funcop_1(1^[], 2^[])]]
+1.1.1.1.1.1  [- (k16_funcop_1(1^[], 2^[])=k7_funcop_1(k1_tarski(1^[]), 2^[]))]   (2)  substitution:[[_G4575, _G4622], [1^[], 2^[]]]
+1.1.2  [- (k3_card_3(k7_funcop_1(k1_tarski(1^[]), 2^[]))=2^[]), - (k1_tarski(1^[])=k1_xboole_0)]   (5)  substitution:[[_G4963, _G5015], [k1_tarski(1^[]), 2^[]]]
+1.1.2.1  [k1_tarski(1^[])=k1_xboole_0, -v1_xboole_0(k1_xboole_0), v1_xboole_0(k1_tarski(1^[]))]   (6)  substitution:[[_G2451, _G2500], [k1_tarski(1^[]), k1_xboole_0]]
+1.1.2.1.1  [v1_xboole_0(k1_xboole_0), -v1_xboole_0(k1_tarski(1^[])), k1_xboole_0=k1_tarski(1^[])]   (6)  substitution:[[_G2451, _G2500], [k1_xboole_0, k1_tarski(1^[])]]
+1.1.2.1.1.1  [v1_xboole_0(k1_tarski(1^[]))]   (4)  substitution:[[_G4867], [1^[]]]
+1.1.2.1.1.2  [- (k1_xboole_0=k1_tarski(1^[])), k1_tarski(1^[])=k1_xboole_0]   (8)  substitution:[[_G1822, _G1777], [k1_xboole_0, k1_tarski(1^[])]]
+1.1.2.1.1.2.1  [- (k1_tarski(1^[])=k1_xboole_0)]   (reduction:1.1.2)  
+1.1.2.1.2  [-v1_xboole_0(k1_tarski(1^[])), k1_xboole_0=k1_tarski(1^[]), v1_xboole_0(k1_xboole_0)]   (6)  substitution:[[_G2500, _G2451], [k1_tarski(1^[]), k1_xboole_0]]
+1.1.2.1.2.1  [- (k1_xboole_0=k1_tarski(1^[])), k1_tarski(1^[])=k1_xboole_0]   (8)  substitution:[[_G1822, _G1777], [k1_xboole_0, k1_tarski(1^[])]]
+1.1.2.1.2.1.1  [- (k1_tarski(1^[])=k1_xboole_0)]   (reduction:1.1.2)  
+1.1.2.1.2.2  [-v1_xboole_0(k1_xboole_0)]   (3)  
+------------------------------------------------------
+End of proof for t8_card_3

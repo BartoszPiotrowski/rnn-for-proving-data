@@ -1,0 +1,44 @@
+
+t16_substut1 is a Theorem
+Start of proof for t16_substut1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_qc_lang1(2^[])]
+ (2)  [-m1_subset_1(3^[], k16_substut1(2^[]))]
+ (3)  [k27_substut1(2^[], k20_substut1(2^[], 3^[]))=3^[]]
+ (4)  [m1_qc_lang1(_G6520), m1_subset_1(_G6626, k16_substut1(_G6520)), v5_substut1(_G6626, _G6520), -m1_subset_1(1^[_G6626, _G6520], k16_substut1(_G6520))]
+ (5)  [m1_qc_lang1(_G6520), m1_subset_1(_G6626, k16_substut1(_G6520)), v5_substut1(_G6626, _G6520), - (_G6626=k20_substut1(_G6520, 1^[_G6626, _G6520]))]
+ (6)  [m1_qc_lang1(_G6520), m1_subset_1(_G6626, k16_substut1(_G6520)), -v5_substut1(_G6626, _G6520), m1_subset_1(_G6824, k16_substut1(_G6520)), _G6626=k20_substut1(_G6520, _G6824)]
+ (7)  [-m1_subset_1(k20_substut1(_G7927, _G7984), k16_substut1(_G7927)), m1_qc_lang1(_G7927), m1_subset_1(_G7984, k16_substut1(_G7927))]
+ (8)  [m1_qc_lang1(_G7156), m1_subset_1(_G7271, k16_substut1(_G7156)), v5_substut1(_G7271, _G7156), m1_subset_1(_G7478, k16_substut1(_G7156)), _G7478=k27_substut1(_G7156, _G7271), - (_G7271=k20_substut1(_G7156, _G7478))]
+ (9)  [m1_qc_lang1(_G7156), m1_subset_1(_G7271, k16_substut1(_G7156)), v5_substut1(_G7271, _G7156), m1_subset_1(_G7478, k16_substut1(_G7156)), - (_G7478=k27_substut1(_G7156, _G7271)), _G7271=k20_substut1(_G7156, _G7478)]
+ (10)  [_G4994=_G5043, - (k16_substut1(_G4994)=k16_substut1(_G5043))]
+ (11)  [- (k27_substut1(_G5272, _G5407)=k27_substut1(_G5339, _G5476)), _G5272=_G5339, _G5407=_G5476]
+ (12)  [- (k20_substut1(_G5860, _G5995)=k20_substut1(_G5927, _G6064)), _G5860=_G5927, _G5995=_G6064]
+ (13)  [- (_G2686=_G2686)]
+ (14)  [_G2785=_G2830, - (_G2830=_G2785)]
+ (15)  [- (_G3018=_G3131), _G3018=_G3074, _G3074=_G3131]
+ (16)  [-v5_substut1(_G3535, _G3672), v5_substut1(_G3468, _G3603), _G3468=_G3535, _G3603=_G3672]
+ (17)  [-m1_qc_lang1(_G4114), _G4065=_G4114, m1_qc_lang1(_G4065)]
+ (18)  [-m1_subset_1(_G4401, _G4538), m1_subset_1(_G4334, _G4469), _G4334=_G4401, _G4469=_G4538]
+
+Connection Proof:
+-----------------
+1  [k27_substut1(2^[], k20_substut1(2^[], 3^[]))=3^[]]   (3)  
+1.1  [- (k27_substut1(2^[], k20_substut1(2^[], 3^[]))=3^[]), 3^[]=k27_substut1(2^[], k20_substut1(2^[], 3^[]))]   (14)  substitution:[[_G2830, _G2785], [k27_substut1(2^[], k20_substut1(2^[], 3^[])), 3^[]]]
+1.1.1  [- (3^[]=k27_substut1(2^[], k20_substut1(2^[], 3^[]))), m1_qc_lang1(2^[]), m1_subset_1(k20_substut1(2^[], 3^[]), k16_substut1(2^[])), v5_substut1(k20_substut1(2^[], 3^[]), 2^[]), m1_subset_1(3^[], k16_substut1(2^[])), k20_substut1(2^[], 3^[])=k20_substut1(2^[], 3^[])]   (9)  substitution:[[_G7478, _G7156, _G7271], [3^[], 2^[], k20_substut1(2^[], 3^[])]]
+1.1.1.1  [-m1_qc_lang1(2^[])]   (1)  
+1.1.1.2  [-m1_subset_1(k20_substut1(2^[], 3^[]), k16_substut1(2^[])), m1_qc_lang1(2^[]), m1_subset_1(3^[], k16_substut1(2^[]))]   (7)  substitution:[[_G7927, _G7984], [2^[], 3^[]]]
+1.1.1.2.1  [-m1_qc_lang1(2^[])]   (1)  
+1.1.1.2.2  [-m1_subset_1(3^[], k16_substut1(2^[]))]   (2)  
+1.1.1.3  [-v5_substut1(k20_substut1(2^[], 3^[]), 2^[]), m1_qc_lang1(2^[]), m1_subset_1(k20_substut1(2^[], 3^[]), k16_substut1(2^[])), m1_subset_1(3^[], k16_substut1(2^[])), k20_substut1(2^[], 3^[])=k20_substut1(2^[], 3^[])]   (6)  substitution:[[_G6626, _G6520, _G6824], [k20_substut1(2^[], 3^[]), 2^[], 3^[]]]
+1.1.1.3.1  [-m1_qc_lang1(2^[])]   (1)  
+1.1.1.3.2  [-m1_subset_1(k20_substut1(2^[], 3^[]), k16_substut1(2^[]))]   (lemmata:1.1.1)  
+1.1.1.3.3  [-m1_subset_1(3^[], k16_substut1(2^[]))]   (2)  
+1.1.1.3.4  [- (k20_substut1(2^[], 3^[])=k20_substut1(2^[], 3^[]))]   (13)  substitution:[[_G2686], [k20_substut1(2^[], 3^[])]]
+1.1.1.4  [-m1_subset_1(3^[], k16_substut1(2^[]))]   (2)  
+1.1.1.5  [- (k20_substut1(2^[], 3^[])=k20_substut1(2^[], 3^[])), 2^[]=2^[], 3^[]=3^[]]   (12)  substitution:[[_G5860, _G5995, _G5927, _G6064], [2^[], 3^[], 2^[], 3^[]]]
+1.1.1.5.1  [- (2^[]=2^[])]   (13)  substitution:[[_G2686], [2^[]]]
+1.1.1.5.2  [- (3^[]=3^[])]   (13)  substitution:[[_G2686], [3^[]]]
+------------------------------------------------------
+End of proof for t16_substut1

@@ -1,0 +1,23 @@
+
+l1_jgraph_8 is a Theorem
+Start of proof for l1_jgraph_8
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k17_borsuk_1=k3_pcomps_1(k2_topmetr(k6_numbers, np__1))]
+ (2)  [- (k5_topmetr=k3_pcomps_1(k2_topmetr(k6_numbers, np__1)))]
+ (3)  [- (k5_topmetr=k17_borsuk_1)]
+ (4)  [- (_G903=_G903)]
+ (5)  [_G1002=_G1047, - (_G1047=_G1002)]
+ (6)  [- (_G1235=_G1348), _G1235=_G1291, _G1291=_G1348]
+ (7)  [_G1685=_G1734, - (k3_pcomps_1(_G1685)=k3_pcomps_1(_G1734))]
+ (8)  [- (k2_topmetr(_G1954, _G2089)=k2_topmetr(_G2021, _G2158)), _G1954=_G2021, _G2089=_G2158]
+
+Connection Proof:
+-----------------
+1  [k17_borsuk_1=k3_pcomps_1(k2_topmetr(k6_numbers, np__1))]   (1)  
+1.1  [- (k17_borsuk_1=k3_pcomps_1(k2_topmetr(k6_numbers, np__1))), k17_borsuk_1=k5_topmetr, k5_topmetr=k3_pcomps_1(k2_topmetr(k6_numbers, np__1))]   (6)  substitution:[[_G1235, _G1348, _G1291], [k17_borsuk_1, k3_pcomps_1(k2_topmetr(k6_numbers, np__1)), k5_topmetr]]
+1.1.1  [- (k17_borsuk_1=k5_topmetr), k5_topmetr=k17_borsuk_1]   (5)  substitution:[[_G1047, _G1002], [k17_borsuk_1, k5_topmetr]]
+1.1.1.1  [- (k5_topmetr=k17_borsuk_1)]   (3)  
+1.1.2  [- (k5_topmetr=k3_pcomps_1(k2_topmetr(k6_numbers, np__1)))]   (2)  
+------------------------------------------------------
+End of proof for l1_jgraph_8

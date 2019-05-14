@@ -1,0 +1,37 @@
+
+t1_topgen_4 is a Theorem
+Start of proof for t1_topgen_4
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-4^[], v4_card_3(2^[])]
+ (2)  [-4^[], -v4_card_3(k7_setfam_1(1^[], 2^[]))]
+ (3)  [-3^[], v4_card_3(k7_setfam_1(1^[], 2^[]))]
+ (4)  [-3^[], -v4_card_3(2^[])]
+ (5)  [-m1_subset_1(2^[], k1_zfmisc_1(k1_zfmisc_1(1^[])))]
+ (6)  [3^[], 4^[]]
+ (7)  [r2_wellord2(_G926, _G971), -r2_tarski(_G926, _G971)]
+ (8)  [-r2_wellord2(_G926, _G971), r2_tarski(_G926, _G971)]
+ (9)  [r2_wellord2(_G1168, _G1213), -r2_wellord2(_G1213, _G1168)]
+ (10)  [m1_subset_1(_G1462, k1_zfmisc_1(k1_zfmisc_1(_G1410))), -r2_tarski(_G1462, k7_setfam_1(_G1410, _G1462))]
+ (11)  [-v4_card_3(_G1773), r2_tarski(_G1724, _G1773), v4_card_3(_G1724)]
+
+Connection Proof:
+-----------------
+1  [3^[], 4^[]]   (6)  
+1.1  [-3^[], v4_card_3(k7_setfam_1(1^[], 2^[]))]   (3)  
+1.1.1  [-v4_card_3(k7_setfam_1(1^[], 2^[])), r2_tarski(2^[], k7_setfam_1(1^[], 2^[])), v4_card_3(2^[])]   (11)  substitution:[[_G1773, _G1724], [k7_setfam_1(1^[], 2^[]), 2^[]]]
+1.1.1.1  [-r2_tarski(2^[], k7_setfam_1(1^[], 2^[])), m1_subset_1(2^[], k1_zfmisc_1(k1_zfmisc_1(1^[])))]   (10)  substitution:[[_G1462, _G1410], [2^[], 1^[]]]
+1.1.1.1.1  [-m1_subset_1(2^[], k1_zfmisc_1(k1_zfmisc_1(1^[])))]   (5)  
+1.1.1.2  [-v4_card_3(2^[]), -3^[]]   (4)  
+1.1.1.2.1  [3^[]]   (reduction:1)  
+1.2  [-4^[], v4_card_3(2^[])]   (1)  
+1.2.1  [-v4_card_3(2^[]), r2_tarski(k7_setfam_1(1^[], 2^[]), 2^[]), v4_card_3(k7_setfam_1(1^[], 2^[]))]   (11)  substitution:[[_G1773, _G1724], [2^[], k7_setfam_1(1^[], 2^[])]]
+1.2.1.1  [-r2_tarski(k7_setfam_1(1^[], 2^[]), 2^[]), r2_wellord2(k7_setfam_1(1^[], 2^[]), 2^[])]   (7)  substitution:[[_G926, _G971], [k7_setfam_1(1^[], 2^[]), 2^[]]]
+1.2.1.1.1  [-r2_wellord2(k7_setfam_1(1^[], 2^[]), 2^[]), r2_wellord2(2^[], k7_setfam_1(1^[], 2^[]))]   (9)  substitution:[[_G1213, _G1168], [k7_setfam_1(1^[], 2^[]), 2^[]]]
+1.2.1.1.1.1  [-r2_wellord2(2^[], k7_setfam_1(1^[], 2^[])), r2_tarski(2^[], k7_setfam_1(1^[], 2^[]))]   (8)  substitution:[[_G926, _G971], [2^[], k7_setfam_1(1^[], 2^[])]]
+1.2.1.1.1.1.1  [-r2_tarski(2^[], k7_setfam_1(1^[], 2^[])), m1_subset_1(2^[], k1_zfmisc_1(k1_zfmisc_1(1^[])))]   (10)  substitution:[[_G1462, _G1410], [2^[], 1^[]]]
+1.2.1.1.1.1.1.1  [-m1_subset_1(2^[], k1_zfmisc_1(k1_zfmisc_1(1^[])))]   (5)  
+1.2.1.2  [-v4_card_3(k7_setfam_1(1^[], 2^[])), -4^[]]   (2)  
+1.2.1.2.1  [4^[]]   (reduction:1)  
+------------------------------------------------------
+End of proof for t1_topgen_4

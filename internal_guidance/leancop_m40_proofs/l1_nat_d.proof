@@ -1,0 +1,46 @@
+
+l1_nat_d is a Theorem
+Start of proof for l1_nat_d
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v7_ordinal1(1^[])]
+ (2)  [-v7_ordinal1(2^[])]
+ (3)  [v7_ordinal1(k5_int_1(1^[], 2^[]))]
+ (4)  [v7_ordinal1(_G6275), -v1_int_1(_G6275)]
+ (5)  [m1_subset_1(_G6406, k4_ordinal1), -v7_ordinal1(_G6406)]
+ (6)  [-v1_int_1(k5_int_1(_G6563, _G6614)), v1_int_1(_G6563), v1_int_1(_G6614)]
+ (7)  [- (k5_numbers=k4_ordinal1)]
+ (8)  [r2_hidden(_G6916, _G6961), -m1_subset_1(_G6916, _G6961)]
+ (9)  [v1_int_1(_G7158), r1_xxreal_0(k6_numbers, _G7158), -r2_hidden(_G7158, k5_numbers)]
+ (10)  [v7_ordinal1(_G7390), v7_ordinal1(_G7474), -r1_xxreal_0(k6_numbers, k5_int_1(_G7390, _G7474))]
+ (11)  [- (k5_int_1(_G5657, _G5792)=k5_int_1(_G5724, _G5861)), _G5657=_G5724, _G5792=_G5861]
+ (12)  [- (_G2441=_G2441)]
+ (13)  [_G2540=_G2585, - (_G2585=_G2540)]
+ (14)  [- (_G2773=_G2886), _G2773=_G2829, _G2829=_G2886]
+ (15)  [-m1_subset_1(_G3290, _G3427), m1_subset_1(_G3223, _G3358), _G3223=_G3290, _G3358=_G3427]
+ (16)  [-v1_int_1(_G3869), _G3820=_G3869, v1_int_1(_G3820)]
+ (17)  [-r2_hidden(_G4165, _G4302), r2_hidden(_G4098, _G4233), _G4098=_G4165, _G4233=_G4302]
+ (18)  [-v7_ordinal1(_G5332), _G5283=_G5332, v7_ordinal1(_G5283)]
+ (19)  [-r1_xxreal_0(_G4762, _G4899), r1_xxreal_0(_G4695, _G4830), _G4695=_G4762, _G4830=_G4899]
+
+Connection Proof:
+-----------------
+1  [v7_ordinal1(k5_int_1(1^[], 2^[]))]   (3)  
+1.1  [-v7_ordinal1(k5_int_1(1^[], 2^[])), m1_subset_1(k5_int_1(1^[], 2^[]), k4_ordinal1)]   (5)  substitution:[[_G6406], [k5_int_1(1^[], 2^[])]]
+1.1.1  [-m1_subset_1(k5_int_1(1^[], 2^[]), k4_ordinal1), r2_hidden(k5_int_1(1^[], 2^[]), k4_ordinal1)]   (8)  substitution:[[_G6916, _G6961], [k5_int_1(1^[], 2^[]), k4_ordinal1]]
+1.1.1.1  [-r2_hidden(k5_int_1(1^[], 2^[]), k4_ordinal1), r2_hidden(k5_int_1(1^[], 2^[]), k5_numbers), k5_int_1(1^[], 2^[])=k5_int_1(1^[], 2^[]), k5_numbers=k4_ordinal1]   (17)  substitution:[[_G4165, _G4302, _G4098, _G4233], [k5_int_1(1^[], 2^[]), k4_ordinal1, k5_int_1(1^[], 2^[]), k5_numbers]]
+1.1.1.1.1  [-r2_hidden(k5_int_1(1^[], 2^[]), k5_numbers), v1_int_1(k5_int_1(1^[], 2^[])), r1_xxreal_0(k6_numbers, k5_int_1(1^[], 2^[]))]   (9)  substitution:[[_G7158], [k5_int_1(1^[], 2^[])]]
+1.1.1.1.1.1  [-v1_int_1(k5_int_1(1^[], 2^[])), v1_int_1(1^[]), v1_int_1(2^[])]   (6)  substitution:[[_G6563, _G6614], [1^[], 2^[]]]
+1.1.1.1.1.1.1  [-v1_int_1(1^[]), v7_ordinal1(1^[])]   (4)  substitution:[[_G6275], [1^[]]]
+1.1.1.1.1.1.1.1  [-v7_ordinal1(1^[])]   (1)  
+1.1.1.1.1.1.2  [-v1_int_1(2^[]), v7_ordinal1(2^[])]   (4)  substitution:[[_G6275], [2^[]]]
+1.1.1.1.1.1.2.1  [-v7_ordinal1(2^[])]   (2)  
+1.1.1.1.1.2  [-r1_xxreal_0(k6_numbers, k5_int_1(1^[], 2^[])), v7_ordinal1(1^[]), v7_ordinal1(2^[])]   (10)  substitution:[[_G7390, _G7474], [1^[], 2^[]]]
+1.1.1.1.1.2.1  [-v7_ordinal1(1^[])]   (1)  
+1.1.1.1.1.2.2  [-v7_ordinal1(2^[])]   (2)  
+1.1.1.1.2  [- (k5_int_1(1^[], 2^[])=k5_int_1(1^[], 2^[])), 1^[]=1^[], 2^[]=2^[]]   (11)  substitution:[[_G5657, _G5792, _G5724, _G5861], [1^[], 2^[], 1^[], 2^[]]]
+1.1.1.1.2.1  [- (1^[]=1^[])]   (12)  substitution:[[_G2441], [1^[]]]
+1.1.1.1.2.2  [- (2^[]=2^[])]   (12)  substitution:[[_G2441], [2^[]]]
+1.1.1.1.3  [- (k5_numbers=k4_ordinal1)]   (7)  
+------------------------------------------------------
+End of proof for l1_nat_d

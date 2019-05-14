@@ -1,0 +1,57 @@
+
+t1_rinfsup2 is a Theorem
+Start of proof for t1_rinfsup2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v1_xboole_0(1^[])]
+ (2)  [-m1_subset_1(1^[], k1_zfmisc_1(k7_numbers))]
+ (3)  [v1_xboole_0(2^[])]
+ (4)  [-m1_subset_1(2^[], k1_zfmisc_1(k1_numbers))]
+ (5)  [- (1^[]=2^[])]
+ (6)  [-v4_xxreal_2(2^[])]
+ (7)  [v4_xxreal_2(1^[]), k8_supinf_2(1^[])=k4_seq_4(2^[])]
+ (8)  [v3_membered(_G6910), -v2_membered(_G6910)]
+ (9)  [m1_subset_1(_G7041, k1_zfmisc_1(k1_numbers)), -v3_membered(_G7041)]
+ (10)  [- (k2_seq_4(_G7212)=k1_xxreal_2(_G7212)), -v1_xboole_0(_G7212), v3_membered(_G7212), v4_xxreal_2(_G7212)]
+ (11)  [m1_subset_1(_G7533, k1_zfmisc_1(k1_numbers)), - (k4_seq_4(_G7533)=k2_seq_4(_G7533))]
+ (12)  [v2_membered(_G7753), - (k8_supinf_2(_G7753)=k1_xxreal_2(_G7753))]
+ (13)  [_G5424=_G5473, - (k2_seq_4(_G5424)=k2_seq_4(_G5473))]
+ (14)  [_G5702=_G5751, - (k1_xxreal_2(_G5702)=k1_xxreal_2(_G5751))]
+ (15)  [_G5980=_G6029, - (k1_zfmisc_1(_G5980)=k1_zfmisc_1(_G6029))]
+ (16)  [_G6258=_G6307, - (k8_supinf_2(_G6258)=k8_supinf_2(_G6307))]
+ (17)  [_G6527=_G6576, - (k4_seq_4(_G6527)=k4_seq_4(_G6576))]
+ (18)  [- (_G2837=_G2837)]
+ (19)  [_G2936=_G2981, - (_G2981=_G2936)]
+ (20)  [- (_G3169=_G3282), _G3169=_G3225, _G3225=_G3282]
+ (21)  [-v3_membered(_G3668), _G3619=_G3668, v3_membered(_G3619)]
+ (22)  [-v2_membered(_G3946), _G3897=_G3946, v2_membered(_G3897)]
+ (23)  [-v1_xboole_0(_G4224), _G4175=_G4224, v1_xboole_0(_G4175)]
+ (24)  [-v4_xxreal_2(_G5090), _G5041=_G5090, v4_xxreal_2(_G5041)]
+ (25)  [-m1_subset_1(_G4520, _G4657), m1_subset_1(_G4453, _G4588), _G4453=_G4520, _G4588=_G4657]
+
+Connection Proof:
+-----------------
+1  [v4_xxreal_2(1^[]), k8_supinf_2(1^[])=k4_seq_4(2^[])]   (7)  
+1.1  [-v4_xxreal_2(1^[]), 2^[]=1^[], v4_xxreal_2(2^[])]   (24)  substitution:[[_G5090, _G5041], [1^[], 2^[]]]
+1.1.1  [- (2^[]=1^[]), 1^[]=2^[]]   (19)  substitution:[[_G2981, _G2936], [2^[], 1^[]]]
+1.1.1.1  [- (1^[]=2^[])]   (5)  
+1.1.2  [-v4_xxreal_2(2^[])]   (6)  
+1.2  [- (k8_supinf_2(1^[])=k4_seq_4(2^[])), k8_supinf_2(1^[])=k1_xxreal_2(2^[]), k1_xxreal_2(2^[])=k4_seq_4(2^[])]   (20)  substitution:[[_G3169, _G3282, _G3225], [k8_supinf_2(1^[]), k4_seq_4(2^[]), k1_xxreal_2(2^[])]]
+1.2.1  [- (k8_supinf_2(1^[])=k1_xxreal_2(2^[])), k8_supinf_2(1^[])=k8_supinf_2(2^[]), k8_supinf_2(2^[])=k1_xxreal_2(2^[])]   (20)  substitution:[[_G3169, _G3282, _G3225], [k8_supinf_2(1^[]), k1_xxreal_2(2^[]), k8_supinf_2(2^[])]]
+1.2.1.1  [- (k8_supinf_2(1^[])=k8_supinf_2(2^[])), 1^[]=2^[]]   (16)  substitution:[[_G6258, _G6307], [1^[], 2^[]]]
+1.2.1.1.1  [- (1^[]=2^[])]   (5)  
+1.2.1.2  [- (k8_supinf_2(2^[])=k1_xxreal_2(2^[])), v2_membered(2^[])]   (12)  substitution:[[_G7753], [2^[]]]
+1.2.1.2.1  [-v2_membered(2^[]), v3_membered(2^[])]   (8)  substitution:[[_G6910], [2^[]]]
+1.2.1.2.1.1  [-v3_membered(2^[]), m1_subset_1(2^[], k1_zfmisc_1(k1_numbers))]   (9)  substitution:[[_G7041], [2^[]]]
+1.2.1.2.1.1.1  [-m1_subset_1(2^[], k1_zfmisc_1(k1_numbers))]   (4)  
+1.2.2  [- (k1_xxreal_2(2^[])=k4_seq_4(2^[])), k4_seq_4(2^[])=k1_xxreal_2(2^[])]   (19)  substitution:[[_G2981, _G2936], [k1_xxreal_2(2^[]), k4_seq_4(2^[])]]
+1.2.2.1  [- (k4_seq_4(2^[])=k1_xxreal_2(2^[])), k4_seq_4(2^[])=k2_seq_4(2^[]), k2_seq_4(2^[])=k1_xxreal_2(2^[])]   (20)  substitution:[[_G3169, _G3282, _G3225], [k4_seq_4(2^[]), k1_xxreal_2(2^[]), k2_seq_4(2^[])]]
+1.2.2.1.1  [- (k4_seq_4(2^[])=k2_seq_4(2^[])), m1_subset_1(2^[], k1_zfmisc_1(k1_numbers))]   (11)  substitution:[[_G7533], [2^[]]]
+1.2.2.1.1.1  [-m1_subset_1(2^[], k1_zfmisc_1(k1_numbers))]   (4)  
+1.2.2.1.2  [- (k2_seq_4(2^[])=k1_xxreal_2(2^[])), -v1_xboole_0(2^[]), v3_membered(2^[]), v4_xxreal_2(2^[])]   (10)  substitution:[[_G7212], [2^[]]]
+1.2.2.1.2.1  [v1_xboole_0(2^[])]   (3)  
+1.2.2.1.2.2  [-v3_membered(2^[]), m1_subset_1(2^[], k1_zfmisc_1(k1_numbers))]   (9)  substitution:[[_G7041], [2^[]]]
+1.2.2.1.2.2.1  [-m1_subset_1(2^[], k1_zfmisc_1(k1_numbers))]   (4)  
+1.2.2.1.2.3  [-v4_xxreal_2(2^[])]   (6)  
+------------------------------------------------------
+End of proof for t1_rinfsup2

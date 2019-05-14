@@ -1,0 +1,34 @@
+
+t1_moebius1 is a Theorem
+Start of proof for t1_moebius1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v1_xboole_0(1^[])]
+ (2)  [-v7_ordinal1(1^[])]
+ (3)  [1^[]=np__1]
+ (4)  [r1_xxreal_0(np__2, 1^[])]
+ (5)  [-v1_xboole_0(k1_xboole_0)]
+ (6)  [- (k6_numbers=k1_xboole_0)]
+ (7)  [v7_ordinal1(_G3494), -r1_xxreal_0(np__2, _G3494), - (_G3494=k6_numbers), - (_G3494=np__1)]
+ (8)  [- (_G1425=_G1425)]
+ (9)  [_G1524=_G1569, - (_G1569=_G1524)]
+ (10)  [- (_G1757=_G1870), _G1757=_G1813, _G1813=_G1870]
+ (11)  [-v1_xboole_0(_G2256), _G2207=_G2256, v1_xboole_0(_G2207)]
+ (12)  [-v7_ordinal1(_G2534), _G2485=_G2534, v7_ordinal1(_G2485)]
+ (13)  [-r1_xxreal_0(_G2821, _G2958), r1_xxreal_0(_G2754, _G2889), _G2754=_G2821, _G2889=_G2958]
+
+Connection Proof:
+-----------------
+1  [v1_xboole_0(1^[])]   (1)  
+1.1  [-v1_xboole_0(1^[]), k6_numbers=1^[], v1_xboole_0(k6_numbers)]   (11)  substitution:[[_G2256, _G2207], [1^[], k6_numbers]]
+1.1.1  [- (k6_numbers=1^[]), 1^[]=k6_numbers]   (9)  substitution:[[_G1569, _G1524], [k6_numbers, 1^[]]]
+1.1.1.1  [- (1^[]=k6_numbers), v7_ordinal1(1^[]), -r1_xxreal_0(np__2, 1^[]), - (1^[]=np__1)]   (7)  substitution:[[_G3494], [1^[]]]
+1.1.1.1.1  [-v7_ordinal1(1^[])]   (2)  
+1.1.1.1.2  [r1_xxreal_0(np__2, 1^[])]   (4)  
+1.1.1.1.3  [1^[]=np__1]   (3)  
+1.1.2  [-v1_xboole_0(k6_numbers), k1_xboole_0=k6_numbers, v1_xboole_0(k1_xboole_0)]   (11)  substitution:[[_G2256, _G2207], [k6_numbers, k1_xboole_0]]
+1.1.2.1  [- (k1_xboole_0=k6_numbers), k6_numbers=k1_xboole_0]   (9)  substitution:[[_G1569, _G1524], [k1_xboole_0, k6_numbers]]
+1.1.2.1.1  [- (k6_numbers=k1_xboole_0)]   (6)  
+1.1.2.2  [-v1_xboole_0(k1_xboole_0)]   (5)  
+------------------------------------------------------
+End of proof for t1_moebius1

@@ -1,0 +1,76 @@
+
+t4_ltlaxio1 is a Theorem
+Start of proof for t4_ltlaxio1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-8^[_G12793, _G12782, _G12761], m1_subset_1(_G12815, k1_hilbert1), m1_subset_1(_G12826, k1_hilbert1), 7^[]=k4_hilbert1(_G12815, _G12826)]
+ (2)  [-8^[_G12793, _G12782, _G12761], 7^[]=k3_hilbert1(_G12782, _G12793)]
+ (3)  [-9^[_G12761], m1_subset_1(_G12782, k1_hilbert1), m1_subset_1(_G12793, k1_hilbert1), 8^[_G12793, _G12782, _G12761]]
+ (4)  [-9^[_G12761], 7^[]=k1_hilbert2(_G12761)]
+ (5)  [-m1_subset_1(7^[], k1_hilbert1)]
+ (6)  [7^[]=k2_hilbert1]
+ (7)  [m1_subset_1(_G12761, k5_numbers), 9^[_G12761]]
+ (8)  [m1_subset_1(_G7535, k1_hilbert1), v1_hilbert2(_G7535), -m1_subset_1(1^[_G7535], k1_hilbert1)]
+ (9)  [m1_subset_1(_G7535, k1_hilbert1), v1_hilbert2(_G7535), -m1_subset_1(2^[_G7535], k1_hilbert1)]
+ (10)  [m1_subset_1(_G7535, k1_hilbert1), v1_hilbert2(_G7535), - (_G7535=k4_hilbert1(1^[_G7535], 2^[_G7535]))]
+ (11)  [m1_subset_1(_G7535, k1_hilbert1), -v1_hilbert2(_G7535), m1_subset_1(_G7694, k1_hilbert1), m1_subset_1(_G7811, k1_hilbert1), _G7535=k4_hilbert1(_G7694, _G7811)]
+ (12)  [m1_subset_1(_G8127, k1_hilbert1), v2_hilbert2(_G8127), -m1_subset_1(3^[_G8127], k1_hilbert1)]
+ (13)  [m1_subset_1(_G8127, k1_hilbert1), v2_hilbert2(_G8127), -m1_subset_1(4^[_G8127], k1_hilbert1)]
+ (14)  [m1_subset_1(_G8127, k1_hilbert1), v2_hilbert2(_G8127), - (_G8127=k3_hilbert1(3^[_G8127], 4^[_G8127]))]
+ (15)  [m1_subset_1(_G8127, k1_hilbert1), -v2_hilbert2(_G8127), m1_subset_1(_G8286, k1_hilbert1), m1_subset_1(_G8403, k1_hilbert1), _G8127=k3_hilbert1(_G8286, _G8403)]
+ (16)  [-m1_subset_1(6^[_G9121], _G9121)]
+ (17)  [m1_subset_1(_G9264, k1_hilbert1), -v1_hilbert2(_G9264), -v2_hilbert2(_G9264), -v3_hilbert2(_G9264), - (_G9264=k2_hilbert1)]
+ (18)  [m1_subset_1(_G8719, k1_hilbert1), v3_hilbert2(_G8719), -m1_subset_1(5^[_G8719], k5_numbers)]
+ (19)  [m1_subset_1(_G8719, k1_hilbert1), v3_hilbert2(_G8719), - (_G8719=k1_hilbert2(5^[_G8719]))]
+ (20)  [m1_subset_1(_G8719, k1_hilbert1), -v3_hilbert2(_G8719), m1_subset_1(_G8866, k5_numbers), _G8719=k1_hilbert2(_G8866)]
+ (21)  [_G6009=_G6058, - (k1_hilbert2(_G6009)=k1_hilbert2(_G6058))]
+ (22)  [- (k3_hilbert1(_G6287, _G6422)=k3_hilbert1(_G6354, _G6491)), _G6287=_G6354, _G6422=_G6491]
+ (23)  [- (k4_hilbert1(_G6875, _G7010)=k4_hilbert1(_G6942, _G7079)), _G6875=_G6942, _G7010=_G7079]
+ (24)  [- (_G3721=_G3721)]
+ (25)  [_G3820=_G3865, - (_G3865=_G3820)]
+ (26)  [- (_G4053=_G4166), _G4053=_G4109, _G4109=_G4166]
+ (27)  [-v1_hilbert2(_G4552), _G4503=_G4552, v1_hilbert2(_G4503)]
+ (28)  [-v2_hilbert2(_G4830), _G4781=_G4830, v2_hilbert2(_G4781)]
+ (29)  [-v3_hilbert2(_G5108), _G5059=_G5108, v3_hilbert2(_G5059)]
+ (30)  [-m1_subset_1(_G5395, _G5532), m1_subset_1(_G5328, _G5463), _G5328=_G5395, _G5463=_G5532]
+
+Connection Proof:
+-----------------
+1  [7^[]=k2_hilbert1]   (6)  
+1.1  [- (7^[]=k2_hilbert1), m1_subset_1(7^[], k1_hilbert1), -v1_hilbert2(7^[]), -v2_hilbert2(7^[]), -v3_hilbert2(7^[])]   (17)  substitution:[[_G9264], [7^[]]]
+1.1.1  [-m1_subset_1(7^[], k1_hilbert1)]   (5)  
+1.1.2  [v1_hilbert2(7^[]), m1_subset_1(7^[], k1_hilbert1), - (7^[]=k4_hilbert1(1^[7^[]], 2^[7^[]]))]   (10)  substitution:[[_G7535], [7^[]]]
+1.1.2.1  [-m1_subset_1(7^[], k1_hilbert1)]   (5)  
+1.1.2.2  [7^[]=k4_hilbert1(1^[7^[]], 2^[7^[]]), -8^[7^[], 7^[], 6^[k5_numbers]], m1_subset_1(1^[7^[]], k1_hilbert1), m1_subset_1(2^[7^[]], k1_hilbert1)]   (1)  substitution:[[_G12815, _G12826, _G12793, _G12782, _G12761], [1^[7^[]], 2^[7^[]], 7^[], 7^[], 6^[k5_numbers]]]
+1.1.2.2.1  [8^[7^[], 7^[], 6^[k5_numbers]], -9^[6^[k5_numbers]], m1_subset_1(7^[], k1_hilbert1), m1_subset_1(7^[], k1_hilbert1)]   (3)  substitution:[[_G12793, _G12782, _G12761], [7^[], 7^[], 6^[k5_numbers]]]
+1.1.2.2.1.1  [9^[6^[k5_numbers]], m1_subset_1(6^[k5_numbers], k5_numbers)]   (7)  substitution:[[_G12761], [6^[k5_numbers]]]
+1.1.2.2.1.1.1  [-m1_subset_1(6^[k5_numbers], k5_numbers)]   (16)  substitution:[[_G9121], [k5_numbers]]
+1.1.2.2.1.2  [-m1_subset_1(7^[], k1_hilbert1)]   (5)  
+1.1.2.2.1.3  [-m1_subset_1(7^[], k1_hilbert1)]   (5)  
+1.1.2.2.2  [-m1_subset_1(1^[7^[]], k1_hilbert1), m1_subset_1(7^[], k1_hilbert1), v1_hilbert2(7^[])]   (8)  substitution:[[_G7535], [7^[]]]
+1.1.2.2.2.1  [-m1_subset_1(7^[], k1_hilbert1)]   (5)  
+1.1.2.2.2.2  [-v1_hilbert2(7^[])]   (reduction:1.1)  
+1.1.2.2.3  [-m1_subset_1(2^[7^[]], k1_hilbert1), m1_subset_1(7^[], k1_hilbert1), v1_hilbert2(7^[])]   (9)  substitution:[[_G7535], [7^[]]]
+1.1.2.2.3.1  [-m1_subset_1(7^[], k1_hilbert1)]   (5)  
+1.1.2.2.3.2  [-v1_hilbert2(7^[])]   (reduction:1.1)  
+1.1.3  [v2_hilbert2(7^[]), m1_subset_1(7^[], k1_hilbert1), - (7^[]=k3_hilbert1(3^[7^[]], 4^[7^[]]))]   (14)  substitution:[[_G8127], [7^[]]]
+1.1.3.1  [-m1_subset_1(7^[], k1_hilbert1)]   (5)  
+1.1.3.2  [7^[]=k3_hilbert1(3^[7^[]], 4^[7^[]]), -8^[4^[7^[]], 3^[7^[]], 6^[k5_numbers]]]   (2)  substitution:[[_G12782, _G12793, _G12761], [3^[7^[]], 4^[7^[]], 6^[k5_numbers]]]
+1.1.3.2.1  [8^[4^[7^[]], 3^[7^[]], 6^[k5_numbers]], -9^[6^[k5_numbers]], m1_subset_1(3^[7^[]], k1_hilbert1), m1_subset_1(4^[7^[]], k1_hilbert1)]   (3)  substitution:[[_G12793, _G12782, _G12761], [4^[7^[]], 3^[7^[]], 6^[k5_numbers]]]
+1.1.3.2.1.1  [9^[6^[k5_numbers]], m1_subset_1(6^[k5_numbers], k5_numbers)]   (7)  substitution:[[_G12761], [6^[k5_numbers]]]
+1.1.3.2.1.1.1  [-m1_subset_1(6^[k5_numbers], k5_numbers)]   (16)  substitution:[[_G9121], [k5_numbers]]
+1.1.3.2.1.2  [-m1_subset_1(3^[7^[]], k1_hilbert1), m1_subset_1(7^[], k1_hilbert1), v2_hilbert2(7^[])]   (12)  substitution:[[_G8127], [7^[]]]
+1.1.3.2.1.2.1  [-m1_subset_1(7^[], k1_hilbert1)]   (5)  
+1.1.3.2.1.2.2  [-v2_hilbert2(7^[])]   (reduction:1.1)  
+1.1.3.2.1.3  [-m1_subset_1(4^[7^[]], k1_hilbert1), m1_subset_1(7^[], k1_hilbert1), v2_hilbert2(7^[])]   (13)  substitution:[[_G8127], [7^[]]]
+1.1.3.2.1.3.1  [-m1_subset_1(7^[], k1_hilbert1)]   (5)  
+1.1.3.2.1.3.2  [-v2_hilbert2(7^[])]   (reduction:1.1)  
+1.1.4  [v3_hilbert2(7^[]), m1_subset_1(7^[], k1_hilbert1), -m1_subset_1(5^[7^[]], k5_numbers)]   (18)  substitution:[[_G8719], [7^[]]]
+1.1.4.1  [-m1_subset_1(7^[], k1_hilbert1)]   (5)  
+1.1.4.2  [m1_subset_1(5^[7^[]], k5_numbers), 9^[5^[7^[]]]]   (7)  substitution:[[_G12761], [5^[7^[]]]]
+1.1.4.2.1  [-9^[5^[7^[]]], 7^[]=k1_hilbert2(5^[7^[]])]   (4)  substitution:[[_G12761], [5^[7^[]]]]
+1.1.4.2.1.1  [- (7^[]=k1_hilbert2(5^[7^[]])), m1_subset_1(7^[], k1_hilbert1), v3_hilbert2(7^[])]   (19)  substitution:[[_G8719], [7^[]]]
+1.1.4.2.1.1.1  [-m1_subset_1(7^[], k1_hilbert1)]   (5)  
+1.1.4.2.1.1.2  [-v3_hilbert2(7^[])]   (reduction:1.1)  
+------------------------------------------------------
+End of proof for t4_ltlaxio1

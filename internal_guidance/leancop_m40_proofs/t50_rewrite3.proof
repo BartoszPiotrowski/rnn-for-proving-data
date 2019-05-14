@@ -1,0 +1,48 @@
+
+t50_rewrite3 is a Theorem
+Start of proof for t50_rewrite3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v1_xboole_0(1^[])]
+ (2)  [-m1_subset_1(2^[], k1_zfmisc_1(k8_afinsq_1(1^[])))]
+ (3)  [-m1_subset_1(3^[], k1_zfmisc_1(k8_afinsq_1(1^[])))]
+ (4)  [v2_struct_0(4^[])]
+ (5)  [-l1_rewrite3(4^[], 2^[])]
+ (6)  [v2_struct_0(5^[])]
+ (7)  [-l1_rewrite3(5^[], 3^[])]
+ (8)  [- (u1_struct_0(4^[])=u1_struct_0(5^[]))]
+ (9)  [- (u1_rewrite3(2^[], 4^[])=u1_rewrite3(3^[], 5^[]))]
+ (10)  [-m1_rewrite1(6^[], k1_rewrite3(1^[], 2^[], 4^[]))]
+ (11)  [m1_rewrite1(6^[], k1_rewrite3(1^[], 3^[], 5^[]))]
+ (12)  [-v1_xboole_0(_G9222), m1_subset_1(_G9395, k1_zfmisc_1(k8_afinsq_1(_G9222))), m1_subset_1(_G9601, k1_zfmisc_1(k8_afinsq_1(_G9222))), l1_rewrite3(_G9798, _G9395), -v2_struct_0(_G9798), l1_rewrite3(_G10025, _G9601), -v2_struct_0(_G10025), u1_rewrite3(_G9395, _G9798)=u1_rewrite3(_G9601, _G10025), - (k1_rewrite3(_G9222, _G9395, _G9798)=k1_rewrite3(_G9222, _G9601, _G10025))]
+ (13)  [_G6676=_G6725, - (k1_zfmisc_1(_G6676)=k1_zfmisc_1(_G6725))]
+ (14)  [_G6954=_G7003, - (k8_afinsq_1(_G6954)=k8_afinsq_1(_G7003))]
+ (15)  [_G7232=_G7281, - (u1_struct_0(_G7232)=u1_struct_0(_G7281))]
+ (16)  [- (u1_rewrite3(_G7510, _G7645)=u1_rewrite3(_G7577, _G7714)), _G7510=_G7577, _G7645=_G7714]
+ (17)  [- (k1_rewrite3(_G8098, _G8269, _G8444)=k1_rewrite3(_G8183, _G8356, _G8533)), _G8098=_G8183, _G8269=_G8356, _G8444=_G8533]
+ (18)  [- (_G3451=_G3451)]
+ (19)  [_G3550=_G3595, - (_G3595=_G3550)]
+ (20)  [- (_G3783=_G3896), _G3783=_G3839, _G3839=_G3896]
+ (21)  [-v1_xboole_0(_G4282), _G4233=_G4282, v1_xboole_0(_G4233)]
+ (22)  [-m1_subset_1(_G4578, _G4715), m1_subset_1(_G4511, _G4646), _G4511=_G4578, _G4646=_G4715]
+ (23)  [-v2_struct_0(_G5157), _G5108=_G5157, v2_struct_0(_G5108)]
+ (24)  [-l1_rewrite3(_G5453, _G5590), l1_rewrite3(_G5386, _G5521), _G5386=_G5453, _G5521=_G5590]
+ (25)  [-m1_rewrite1(_G6041, _G6178), m1_rewrite1(_G5974, _G6109), _G5974=_G6041, _G6109=_G6178]
+
+Connection Proof:
+-----------------
+1  [m1_rewrite1(6^[], k1_rewrite3(1^[], 3^[], 5^[]))]   (11)  
+1.1  [-m1_rewrite1(6^[], k1_rewrite3(1^[], 3^[], 5^[])), m1_rewrite1(6^[], k1_rewrite3(1^[], 2^[], 4^[])), 6^[]=6^[], k1_rewrite3(1^[], 2^[], 4^[])=k1_rewrite3(1^[], 3^[], 5^[])]   (25)  substitution:[[_G6041, _G6178, _G5974, _G6109], [6^[], k1_rewrite3(1^[], 3^[], 5^[]), 6^[], k1_rewrite3(1^[], 2^[], 4^[])]]
+1.1.1  [-m1_rewrite1(6^[], k1_rewrite3(1^[], 2^[], 4^[]))]   (10)  
+1.1.2  [- (6^[]=6^[])]   (18)  substitution:[[_G3451], [6^[]]]
+1.1.3  [- (k1_rewrite3(1^[], 2^[], 4^[])=k1_rewrite3(1^[], 3^[], 5^[])), -v1_xboole_0(1^[]), m1_subset_1(2^[], k1_zfmisc_1(k8_afinsq_1(1^[]))), m1_subset_1(3^[], k1_zfmisc_1(k8_afinsq_1(1^[]))), l1_rewrite3(4^[], 2^[]), -v2_struct_0(4^[]), l1_rewrite3(5^[], 3^[]), -v2_struct_0(5^[]), u1_rewrite3(2^[], 4^[])=u1_rewrite3(3^[], 5^[])]   (12)  substitution:[[_G9222, _G9395, _G9798, _G9601, _G10025], [1^[], 2^[], 4^[], 3^[], 5^[]]]
+1.1.3.1  [v1_xboole_0(1^[])]   (1)  
+1.1.3.2  [-m1_subset_1(2^[], k1_zfmisc_1(k8_afinsq_1(1^[])))]   (2)  
+1.1.3.3  [-m1_subset_1(3^[], k1_zfmisc_1(k8_afinsq_1(1^[])))]   (3)  
+1.1.3.4  [-l1_rewrite3(4^[], 2^[])]   (5)  
+1.1.3.5  [v2_struct_0(4^[])]   (4)  
+1.1.3.6  [-l1_rewrite3(5^[], 3^[])]   (7)  
+1.1.3.7  [v2_struct_0(5^[])]   (6)  
+1.1.3.8  [- (u1_rewrite3(2^[], 4^[])=u1_rewrite3(3^[], 5^[]))]   (9)  
+------------------------------------------------------
+End of proof for t50_rewrite3

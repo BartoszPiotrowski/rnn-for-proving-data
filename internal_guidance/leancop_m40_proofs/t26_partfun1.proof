@@ -1,0 +1,45 @@
+
+t26_partfun1 is a Theorem
+Start of proof for t26_partfun1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(4^[])]
+ (2)  [-v1_funct_1(4^[])]
+ (3)  [-r2_hidden(1^[], k1_relset_1(2^[], k3_partfun1(4^[], 2^[], 3^[])))]
+ (4)  [k1_funct_1(k3_partfun1(4^[], 2^[], 3^[]), 1^[])=k1_funct_1(4^[], 1^[])]
+ (5)  [v1_funct_1(_G8657), v1_relat_1(_G8657), - (k1_funct_1(k3_partfun1(_G8657, _G8470, _G8563), _G8378)=k1_funct_1(_G8657, _G8378)), r2_hidden(_G8378, k9_xtuple_0(_G8657)), r2_hidden(_G8378, _G8470), r2_hidden(k1_funct_1(_G8657, _G8378), _G8563)]
+ (6)  [v1_funct_1(_G7692), v1_relat_1(_G7692), r2_hidden(_G7422, k1_relset_1(_G7511, k3_partfun1(_G7692, _G7511, _G7601))), -r2_hidden(_G7422, k9_xtuple_0(_G7692))]
+ (7)  [v1_funct_1(_G7692), v1_relat_1(_G7692), r2_hidden(_G7422, k1_relset_1(_G7511, k3_partfun1(_G7692, _G7511, _G7601))), -r2_hidden(_G7422, _G7511)]
+ (8)  [v1_funct_1(_G7692), v1_relat_1(_G7692), r2_hidden(_G7422, k1_relset_1(_G7511, k3_partfun1(_G7692, _G7511, _G7601))), -r2_hidden(k1_funct_1(_G7692, _G7422), _G7601)]
+ (9)  [v1_funct_1(_G7692), v1_relat_1(_G7692), -r2_hidden(_G7422, k1_relset_1(_G7511, k3_partfun1(_G7692, _G7511, _G7601))), r2_hidden(_G7422, k9_xtuple_0(_G7692)), r2_hidden(_G7422, _G7511), r2_hidden(k1_funct_1(_G7692, _G7422), _G7601)]
+ (10)  [_G4847=_G4896, - (k9_xtuple_0(_G4847)=k9_xtuple_0(_G4896))]
+ (11)  [- (k1_relset_1(_G5125, _G5260)=k1_relset_1(_G5192, _G5329)), _G5125=_G5192, _G5260=_G5329]
+ (12)  [- (k1_funct_1(_G6741, _G6876)=k1_funct_1(_G6808, _G6945)), _G6741=_G6808, _G6876=_G6945]
+ (13)  [- (k3_partfun1(_G5722, _G5893, _G6068)=k3_partfun1(_G5807, _G5980, _G6157)), _G5722=_G5807, _G5893=_G5980, _G6068=_G6157]
+ (14)  [- (_G2858=_G2858)]
+ (15)  [_G2957=_G3002, - (_G3002=_G2957)]
+ (16)  [- (_G3190=_G3303), _G3190=_G3246, _G3246=_G3303]
+ (17)  [-v1_relat_1(_G3689), _G3640=_G3689, v1_relat_1(_G3640)]
+ (18)  [-v1_funct_1(_G3967), _G3918=_G3967, v1_funct_1(_G3918)]
+ (19)  [-r2_hidden(_G4254, _G4391), r2_hidden(_G4187, _G4322), _G4187=_G4254, _G4322=_G4391]
+
+Connection Proof:
+-----------------
+1  [k1_funct_1(k3_partfun1(4^[], 2^[], 3^[]), 1^[])=k1_funct_1(4^[], 1^[])]   (4)  
+1.1  [- (k1_funct_1(k3_partfun1(4^[], 2^[], 3^[]), 1^[])=k1_funct_1(4^[], 1^[])), v1_funct_1(4^[]), v1_relat_1(4^[]), r2_hidden(1^[], k9_xtuple_0(4^[])), r2_hidden(1^[], 2^[]), r2_hidden(k1_funct_1(4^[], 1^[]), 3^[])]   (5)  substitution:[[_G8657, _G8470, _G8563, _G8378], [4^[], 2^[], 3^[], 1^[]]]
+1.1.1  [-v1_funct_1(4^[])]   (2)  
+1.1.2  [-v1_relat_1(4^[])]   (1)  
+1.1.3  [-r2_hidden(1^[], k9_xtuple_0(4^[])), v1_funct_1(4^[]), v1_relat_1(4^[]), r2_hidden(1^[], k1_relset_1(2^[], k3_partfun1(4^[], 2^[], 3^[])))]   (6)  substitution:[[_G7422, _G7692, _G7511, _G7601], [1^[], 4^[], 2^[], 3^[]]]
+1.1.3.1  [-v1_funct_1(4^[])]   (2)  
+1.1.3.2  [-v1_relat_1(4^[])]   (1)  
+1.1.3.3  [-r2_hidden(1^[], k1_relset_1(2^[], k3_partfun1(4^[], 2^[], 3^[])))]   (3)  
+1.1.4  [-r2_hidden(1^[], 2^[]), v1_funct_1(4^[]), v1_relat_1(4^[]), r2_hidden(1^[], k1_relset_1(2^[], k3_partfun1(4^[], 2^[], 3^[])))]   (7)  substitution:[[_G7422, _G7511, _G7692, _G7601], [1^[], 2^[], 4^[], 3^[]]]
+1.1.4.1  [-v1_funct_1(4^[])]   (2)  
+1.1.4.2  [-v1_relat_1(4^[])]   (1)  
+1.1.4.3  [-r2_hidden(1^[], k1_relset_1(2^[], k3_partfun1(4^[], 2^[], 3^[])))]   (3)  
+1.1.5  [-r2_hidden(k1_funct_1(4^[], 1^[]), 3^[]), v1_funct_1(4^[]), v1_relat_1(4^[]), r2_hidden(1^[], k1_relset_1(2^[], k3_partfun1(4^[], 2^[], 3^[])))]   (8)  substitution:[[_G7692, _G7422, _G7601, _G7511], [4^[], 1^[], 3^[], 2^[]]]
+1.1.5.1  [-v1_funct_1(4^[])]   (2)  
+1.1.5.2  [-v1_relat_1(4^[])]   (1)  
+1.1.5.3  [-r2_hidden(1^[], k1_relset_1(2^[], k3_partfun1(4^[], 2^[], 3^[])))]   (3)  
+------------------------------------------------------
+End of proof for t26_partfun1

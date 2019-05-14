@@ -1,0 +1,40 @@
+
+t12_pre_topc is a Theorem
+Start of proof for t12_pre_topc
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-l1_pre_topc(2^[])]
+ (2)  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(2^[])))]
+ (3)  [3^[]=k1_struct_0(2^[])]
+ (4)  [m1_subset_1(_G8145, u1_struct_0(2^[])), r2_hidden(_G8145, 3^[])]
+ (5)  [l1_struct_0(_G5744), - (k1_struct_0(_G5744)=k1_xboole_0)]
+ (6)  [l1_pre_topc(_G5917), -l1_struct_0(_G5917)]
+ (7)  [m1_subset_1(_G6109, k1_zfmisc_1(_G6039)), - (_G6109=k1_xboole_0), -m1_subset_1(1^[_G6109, _G6039], _G6039)]
+ (8)  [m1_subset_1(_G6109, k1_zfmisc_1(_G6039)), - (_G6109=k1_xboole_0), -r2_hidden(1^[_G6109, _G6039], _G6109)]
+ (9)  [_G4856=_G4905, - (k1_zfmisc_1(_G4856)=k1_zfmisc_1(_G4905))]
+ (10)  [_G5134=_G5183, - (k1_struct_0(_G5134)=k1_struct_0(_G5183))]
+ (11)  [_G5403=_G5452, - (u1_struct_0(_G5403)=u1_struct_0(_G5452))]
+ (12)  [- (_G2249=_G2249)]
+ (13)  [_G2348=_G2393, - (_G2393=_G2348)]
+ (14)  [- (_G2581=_G2694), _G2581=_G2637, _G2637=_G2694]
+ (15)  [-l1_struct_0(_G3080), _G3031=_G3080, l1_struct_0(_G3031)]
+ (16)  [-l1_pre_topc(_G3358), _G3309=_G3358, l1_pre_topc(_G3309)]
+ (17)  [-m1_subset_1(_G3654, _G3791), m1_subset_1(_G3587, _G3722), _G3587=_G3654, _G3722=_G3791]
+ (18)  [-r2_hidden(_G4242, _G4379), r2_hidden(_G4175, _G4310), _G4175=_G4242, _G4310=_G4379]
+
+Connection Proof:
+-----------------
+1  [3^[]=k1_struct_0(2^[])]   (3)  
+1.1  [- (3^[]=k1_struct_0(2^[])), 3^[]=k1_xboole_0, k1_xboole_0=k1_struct_0(2^[])]   (14)  substitution:[[_G2581, _G2694, _G2637], [3^[], k1_struct_0(2^[]), k1_xboole_0]]
+1.1.1  [- (3^[]=k1_xboole_0), m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(2^[]))), -m1_subset_1(1^[3^[], u1_struct_0(2^[])], u1_struct_0(2^[]))]   (7)  substitution:[[_G6109, _G6039], [3^[], u1_struct_0(2^[])]]
+1.1.1.1  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(2^[])))]   (2)  
+1.1.1.2  [m1_subset_1(1^[3^[], u1_struct_0(2^[])], u1_struct_0(2^[])), r2_hidden(1^[3^[], u1_struct_0(2^[])], 3^[])]   (4)  substitution:[[_G8145], [1^[3^[], u1_struct_0(2^[])]]]
+1.1.1.2.1  [-r2_hidden(1^[3^[], u1_struct_0(2^[])], 3^[]), m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(2^[]))), - (3^[]=k1_xboole_0)]   (8)  substitution:[[_G6109, _G6039], [3^[], u1_struct_0(2^[])]]
+1.1.1.2.1.1  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(2^[])))]   (2)  
+1.1.1.2.1.2  [3^[]=k1_xboole_0]   (reduction:1.1)  
+1.1.2  [- (k1_xboole_0=k1_struct_0(2^[])), k1_struct_0(2^[])=k1_xboole_0]   (13)  substitution:[[_G2393, _G2348], [k1_xboole_0, k1_struct_0(2^[])]]
+1.1.2.1  [- (k1_struct_0(2^[])=k1_xboole_0), l1_struct_0(2^[])]   (5)  substitution:[[_G5744], [2^[]]]
+1.1.2.1.1  [-l1_struct_0(2^[]), l1_pre_topc(2^[])]   (6)  substitution:[[_G5917], [2^[]]]
+1.1.2.1.1.1  [-l1_pre_topc(2^[])]   (1)  
+------------------------------------------------------
+End of proof for t12_pre_topc

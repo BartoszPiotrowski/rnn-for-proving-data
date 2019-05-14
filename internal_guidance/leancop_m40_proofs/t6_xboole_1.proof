@@ -1,0 +1,24 @@
+
+t6_xboole_1 is a Theorem
+Start of proof for t6_xboole_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k2_xboole_0(1^[], k2_xboole_0(1^[], 2^[]))=k2_xboole_0(1^[], 2^[])]
+ (2)  [- (k2_xboole_0(_G2589, _G2589)=_G2589)]
+ (3)  [- (k2_xboole_0(k2_xboole_0(_G2777, _G2833), _G2890)=k2_xboole_0(_G2777, k2_xboole_0(_G2833, _G2890)))]
+ (4)  [- (k2_xboole_0(_G1971, _G2106)=k2_xboole_0(_G2038, _G2175)), _G1971=_G2038, _G2106=_G2175]
+ (5)  [- (_G1198=_G1198)]
+ (6)  [_G1297=_G1342, - (_G1342=_G1297)]
+ (7)  [- (_G1530=_G1643), _G1530=_G1586, _G1586=_G1643]
+
+Connection Proof:
+-----------------
+1  [k2_xboole_0(1^[], k2_xboole_0(1^[], 2^[]))=k2_xboole_0(1^[], 2^[])]   (1)  
+1.1  [- (k2_xboole_0(1^[], k2_xboole_0(1^[], 2^[]))=k2_xboole_0(1^[], 2^[])), k2_xboole_0(1^[], k2_xboole_0(1^[], 2^[]))=k2_xboole_0(k2_xboole_0(1^[], 1^[]), 2^[]), k2_xboole_0(k2_xboole_0(1^[], 1^[]), 2^[])=k2_xboole_0(1^[], 2^[])]   (7)  substitution:[[_G1530, _G1643, _G1586], [k2_xboole_0(1^[], k2_xboole_0(1^[], 2^[])), k2_xboole_0(1^[], 2^[]), k2_xboole_0(k2_xboole_0(1^[], 1^[]), 2^[])]]
+1.1.1  [- (k2_xboole_0(1^[], k2_xboole_0(1^[], 2^[]))=k2_xboole_0(k2_xboole_0(1^[], 1^[]), 2^[])), k2_xboole_0(k2_xboole_0(1^[], 1^[]), 2^[])=k2_xboole_0(1^[], k2_xboole_0(1^[], 2^[]))]   (6)  substitution:[[_G1342, _G1297], [k2_xboole_0(1^[], k2_xboole_0(1^[], 2^[])), k2_xboole_0(k2_xboole_0(1^[], 1^[]), 2^[])]]
+1.1.1.1  [- (k2_xboole_0(k2_xboole_0(1^[], 1^[]), 2^[])=k2_xboole_0(1^[], k2_xboole_0(1^[], 2^[])))]   (3)  substitution:[[_G2777, _G2833, _G2890], [1^[], 1^[], 2^[]]]
+1.1.2  [- (k2_xboole_0(k2_xboole_0(1^[], 1^[]), 2^[])=k2_xboole_0(1^[], 2^[])), k2_xboole_0(1^[], 1^[])=1^[], 2^[]=2^[]]   (4)  substitution:[[_G1971, _G2106, _G2038, _G2175], [k2_xboole_0(1^[], 1^[]), 2^[], 1^[], 2^[]]]
+1.1.2.1  [- (k2_xboole_0(1^[], 1^[])=1^[])]   (2)  substitution:[[_G2589], [1^[]]]
+1.1.2.2  [- (2^[]=2^[])]   (5)  substitution:[[_G1198], [2^[]]]
+------------------------------------------------------
+End of proof for t6_xboole_1

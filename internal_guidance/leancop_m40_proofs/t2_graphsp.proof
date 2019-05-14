@@ -1,0 +1,35 @@
+
+t2_graphsp is a Theorem
+Start of proof for t2_graphsp
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m2_finseq_1(2^[], 1^[])]
+ (2)  [-v1_int_1(3^[])]
+ (3)  [-r1_xxreal_0(np__1, 3^[])]
+ (4)  [-r1_xxreal_0(3^[], k3_finseq_1(2^[]))]
+ (5)  [r2_hidden(k1_funct_1(2^[], 3^[]), 1^[])]
+ (6)  [m1_subset_1(_G1287, k1_zfmisc_1(k2_zfmisc_1(_G1178, _G1232))), -v1_relat_1(_G1287)]
+ (7)  [m2_finseq_1(_G1590, _G1530), -v1_funct_1(_G1590)]
+ (8)  [m2_finseq_1(_G1590, _G1530), -v1_finseq_1(_G1590)]
+ (9)  [m2_finseq_1(_G1590, _G1530), -m1_subset_1(_G1590, k1_zfmisc_1(k2_zfmisc_1(k5_numbers, _G1530)))]
+ (10)  [m2_finseq_1(_G2084, _G1961), r2_hidden(_G2022, k4_finseq_1(_G2084)), -r2_hidden(k1_funct_1(_G2084, _G2022), _G1961)]
+ (11)  [v1_int_1(_G2428), v1_finseq_1(_G2535), v1_funct_1(_G2535), v1_relat_1(_G2535), -r2_hidden(_G2428, k4_finseq_1(_G2535)), r1_xxreal_0(np__1, _G2428), r1_xxreal_0(_G2428, k3_finseq_1(_G2535))]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(k1_funct_1(2^[], 3^[]), 1^[])]   (5)  
+1.1  [-r2_hidden(k1_funct_1(2^[], 3^[]), 1^[]), m2_finseq_1(2^[], 1^[]), r2_hidden(3^[], k4_finseq_1(2^[]))]   (10)  substitution:[[_G2084, _G2022, _G1961], [2^[], 3^[], 1^[]]]
+1.1.1  [-m2_finseq_1(2^[], 1^[])]   (1)  
+1.1.2  [-r2_hidden(3^[], k4_finseq_1(2^[])), v1_int_1(3^[]), v1_finseq_1(2^[]), v1_funct_1(2^[]), v1_relat_1(2^[]), r1_xxreal_0(np__1, 3^[]), r1_xxreal_0(3^[], k3_finseq_1(2^[]))]   (11)  substitution:[[_G2428, _G2535], [3^[], 2^[]]]
+1.1.2.1  [-v1_int_1(3^[])]   (2)  
+1.1.2.2  [-v1_finseq_1(2^[]), m2_finseq_1(2^[], 1^[])]   (8)  substitution:[[_G1590, _G1530], [2^[], 1^[]]]
+1.1.2.2.1  [-m2_finseq_1(2^[], 1^[])]   (1)  
+1.1.2.3  [-v1_funct_1(2^[]), m2_finseq_1(2^[], 1^[])]   (7)  substitution:[[_G1590, _G1530], [2^[], 1^[]]]
+1.1.2.3.1  [-m2_finseq_1(2^[], 1^[])]   (1)  
+1.1.2.4  [-v1_relat_1(2^[]), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, 1^[])))]   (6)  substitution:[[_G1287, _G1178, _G1232], [2^[], k5_numbers, 1^[]]]
+1.1.2.4.1  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, 1^[]))), m2_finseq_1(2^[], 1^[])]   (9)  substitution:[[_G1590, _G1530], [2^[], 1^[]]]
+1.1.2.4.1.1  [-m2_finseq_1(2^[], 1^[])]   (1)  
+1.1.2.5  [-r1_xxreal_0(np__1, 3^[])]   (3)  
+1.1.2.6  [-r1_xxreal_0(3^[], k3_finseq_1(2^[]))]   (4)  
+------------------------------------------------------
+End of proof for t2_graphsp

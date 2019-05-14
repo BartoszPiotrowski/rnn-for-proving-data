@@ -1,0 +1,23 @@
+
+t2_sysrel is a Theorem
+Start of proof for t2_sysrel
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(3^[])]
+ (2)  [-r1_xboole_0(1^[], 2^[])]
+ (3)  [r1_xboole_0(k9_xtuple_0(k3_xboole_0(3^[], k2_zfmisc_1(1^[], 2^[]))), k10_xtuple_0(k3_xboole_0(3^[], k2_zfmisc_1(1^[], 2^[]))))]
+ (4)  [v1_relat_1(_G1033), -r1_tarski(k9_xtuple_0(k3_xboole_0(_G1033, k2_zfmisc_1(_G890, _G961))), _G890)]
+ (5)  [v1_relat_1(_G1033), -r1_tarski(k10_xtuple_0(k3_xboole_0(_G1033, k2_zfmisc_1(_G890, _G961))), _G961)]
+ (6)  [-r1_xboole_0(_G1493, _G1628), r1_tarski(_G1493, _G1560), r1_tarski(_G1628, _G1697), r1_xboole_0(_G1560, _G1697)]
+
+Connection Proof:
+-----------------
+1  [r1_xboole_0(k9_xtuple_0(k3_xboole_0(3^[], k2_zfmisc_1(1^[], 2^[]))), k10_xtuple_0(k3_xboole_0(3^[], k2_zfmisc_1(1^[], 2^[]))))]   (3)  
+1.1  [-r1_xboole_0(k9_xtuple_0(k3_xboole_0(3^[], k2_zfmisc_1(1^[], 2^[]))), k10_xtuple_0(k3_xboole_0(3^[], k2_zfmisc_1(1^[], 2^[])))), r1_tarski(k9_xtuple_0(k3_xboole_0(3^[], k2_zfmisc_1(1^[], 2^[]))), 1^[]), r1_tarski(k10_xtuple_0(k3_xboole_0(3^[], k2_zfmisc_1(1^[], 2^[]))), 2^[]), r1_xboole_0(1^[], 2^[])]   (6)  substitution:[[_G1493, _G1628, _G1560, _G1697], [k9_xtuple_0(k3_xboole_0(3^[], k2_zfmisc_1(1^[], 2^[]))), k10_xtuple_0(k3_xboole_0(3^[], k2_zfmisc_1(1^[], 2^[]))), 1^[], 2^[]]]
+1.1.1  [-r1_tarski(k9_xtuple_0(k3_xboole_0(3^[], k2_zfmisc_1(1^[], 2^[]))), 1^[]), v1_relat_1(3^[])]   (4)  substitution:[[_G1033, _G890, _G961], [3^[], 1^[], 2^[]]]
+1.1.1.1  [-v1_relat_1(3^[])]   (1)  
+1.1.2  [-r1_tarski(k10_xtuple_0(k3_xboole_0(3^[], k2_zfmisc_1(1^[], 2^[]))), 2^[]), v1_relat_1(3^[])]   (5)  substitution:[[_G1033, _G890, _G961], [3^[], 1^[], 2^[]]]
+1.1.2.1  [-v1_relat_1(3^[])]   (1)  
+1.1.3  [-r1_xboole_0(1^[], 2^[])]   (2)  
+------------------------------------------------------
+End of proof for t2_sysrel

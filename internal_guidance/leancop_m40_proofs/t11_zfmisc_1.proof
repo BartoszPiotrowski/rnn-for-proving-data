@@ -1,0 +1,28 @@
+
+t11_zfmisc_1 is a Theorem
+Start of proof for t11_zfmisc_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [2^[]=3^[]]
+ (2)  [r1_xboole_0(k1_tarski(2^[]), k1_tarski(3^[]))]
+ (3)  [-r2_hidden(_G4210, _G4259), -r1_xboole_0(k1_tarski(_G4210), _G4259)]
+ (4)  [_G3857=k1_tarski(_G3799), r2_hidden(_G3987, _G3857), - (_G3987=_G3799)]
+ (5)  [_G3857=k1_tarski(_G3799), -r2_hidden(_G3987, _G3857), _G3987=_G3799]
+ (6)  [- (_G3857=k1_tarski(_G3799)), r2_hidden(1^[_G3857, _G3799], _G3857), 1^[_G3857, _G3799]=_G3799]
+ (7)  [- (_G3857=k1_tarski(_G3799)), -r2_hidden(1^[_G3857, _G3799], _G3857), - (1^[_G3857, _G3799]=_G3799)]
+ (8)  [_G3500=_G3549, - (k1_tarski(_G3500)=k1_tarski(_G3549))]
+ (9)  [- (_G1500=_G1500)]
+ (10)  [_G1599=_G1644, - (_G1644=_G1599)]
+ (11)  [- (_G1832=_G1945), _G1832=_G1888, _G1888=_G1945]
+ (12)  [-r2_hidden(_G2349, _G2486), r2_hidden(_G2282, _G2417), _G2282=_G2349, _G2417=_G2486]
+ (13)  [-r1_xboole_0(_G2937, _G3074), r1_xboole_0(_G2870, _G3005), _G2870=_G2937, _G3005=_G3074]
+
+Connection Proof:
+-----------------
+1  [2^[]=3^[]]   (1)  
+1.1  [- (2^[]=3^[]), k1_tarski(3^[])=k1_tarski(3^[]), r2_hidden(2^[], k1_tarski(3^[]))]   (4)  substitution:[[_G3987, _G3799, _G3857], [2^[], 3^[], k1_tarski(3^[])]]
+1.1.1  [- (k1_tarski(3^[])=k1_tarski(3^[]))]   (9)  substitution:[[_G1500], [k1_tarski(3^[])]]
+1.1.2  [-r2_hidden(2^[], k1_tarski(3^[])), -r1_xboole_0(k1_tarski(2^[]), k1_tarski(3^[]))]   (3)  substitution:[[_G4210, _G4259], [2^[], k1_tarski(3^[])]]
+1.1.2.1  [r1_xboole_0(k1_tarski(2^[]), k1_tarski(3^[]))]   (2)  
+------------------------------------------------------
+End of proof for t11_zfmisc_1

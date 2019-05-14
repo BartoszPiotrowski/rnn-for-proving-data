@@ -1,0 +1,70 @@
+
+l7_prvect_3 is a Theorem
+Start of proof for l7_prvect_3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(3^[])]
+ (2)  [-l1_struct_0(3^[])]
+ (3)  [v2_struct_0(4^[])]
+ (4)  [-l1_struct_0(4^[])]
+ (5)  [-r2_hidden(5^[], k2_zfmisc_1(u1_struct_0(3^[]), u1_struct_0(4^[])))]
+ (6)  [m1_subset_1(_G14487, u1_struct_0(3^[])), m1_subset_1(_G14498, u1_struct_0(4^[])), 5^[]=k1_domain_1(u1_struct_0(3^[]), u1_struct_0(4^[]), _G14487, _G14498)]
+ (7)  [l1_struct_0(_G9595), v2_struct_0(_G9595), -v1_xboole_0(u1_struct_0(_G9595))]
+ (8)  [l1_struct_0(_G9595), -v2_struct_0(_G9595), v1_xboole_0(u1_struct_0(_G9595))]
+ (9)  [-v1_xboole_0(_G10768), -v1_xboole_0(_G10911), r2_hidden(_G10672, k2_zfmisc_1(_G10768, _G10911)), -m1_subset_1(1^[_G10911, _G10768, _G10672], _G10768)]
+ (10)  [-v1_xboole_0(_G10768), -v1_xboole_0(_G10911), r2_hidden(_G10672, k2_zfmisc_1(_G10768, _G10911)), -m1_subset_1(2^[_G10911, _G10768, _G10672], _G10911)]
+ (11)  [-v1_xboole_0(_G10768), -v1_xboole_0(_G10911), r2_hidden(_G10672, k2_zfmisc_1(_G10768, _G10911)), - (_G10672=k4_tarski(1^[_G10911, _G10768, _G10672], 2^[_G10911, _G10768, _G10672]))]
+ (12)  [- (k1_domain_1(_G9800, _G9883, _G9967, _G10052)=k4_tarski(_G9967, _G10052)), -v1_xboole_0(_G9800), -v1_xboole_0(_G9883), m1_subset_1(_G9967, _G9800), m1_subset_1(_G10052, _G9883)]
+ (13)  [- (k4_tarski(_G6513, _G6648)=k4_tarski(_G6580, _G6717)), _G6513=_G6580, _G6648=_G6717]
+ (14)  [- (k2_zfmisc_1(_G7110, _G7245)=k2_zfmisc_1(_G7177, _G7314)), _G7110=_G7177, _G7245=_G7314]
+ (15)  [_G9233=_G9282, - (u1_struct_0(_G9233)=u1_struct_0(_G9282))]
+ (16)  [- (k1_domain_1(_G7707, _G7914, _G8125, _G8340)=k1_domain_1(_G7810, _G8019, _G8232, _G8449)), _G7707=_G7810, _G7914=_G8019, _G8125=_G8232, _G8340=_G8449]
+ (17)  [- (_G3607=_G3607)]
+ (18)  [_G3706=_G3751, - (_G3751=_G3706)]
+ (19)  [- (_G3939=_G4052), _G3939=_G3995, _G3995=_G4052]
+ (20)  [-v1_xboole_0(_G4438), _G4389=_G4438, v1_xboole_0(_G4389)]
+ (21)  [-v2_struct_0(_G4716), _G4667=_G4716, v2_struct_0(_G4667)]
+ (22)  [-l1_struct_0(_G4994), _G4945=_G4994, l1_struct_0(_G4945)]
+ (23)  [-r2_hidden(_G5290, _G5427), r2_hidden(_G5223, _G5358), _G5223=_G5290, _G5358=_G5427]
+ (24)  [-m1_subset_1(_G5878, _G6015), m1_subset_1(_G5811, _G5946), _G5811=_G5878, _G5946=_G6015]
+
+Connection Proof:
+-----------------
+1  [m1_subset_1(1^[u1_struct_0(4^[]), u1_struct_0(3^[]), 5^[]], u1_struct_0(3^[])), m1_subset_1(2^[u1_struct_0(4^[]), u1_struct_0(3^[]), 5^[]], u1_struct_0(4^[])), 5^[]=k1_domain_1(u1_struct_0(3^[]), u1_struct_0(4^[]), 1^[u1_struct_0(4^[]), u1_struct_0(3^[]), 5^[]], 2^[u1_struct_0(4^[]), u1_struct_0(3^[]), 5^[]])]   (6)  substitution:[[_G14487, _G14498], [1^[u1_struct_0(4^[]), u1_struct_0(3^[]), 5^[]], 2^[u1_struct_0(4^[]), u1_struct_0(3^[]), 5^[]]]]
+1.1  [-m1_subset_1(1^[u1_struct_0(4^[]), u1_struct_0(3^[]), 5^[]], u1_struct_0(3^[])), -v1_xboole_0(u1_struct_0(3^[])), -v1_xboole_0(u1_struct_0(4^[])), r2_hidden(5^[], k2_zfmisc_1(u1_struct_0(3^[]), u1_struct_0(4^[])))]   (9)  substitution:[[_G10911, _G10768, _G10672], [u1_struct_0(4^[]), u1_struct_0(3^[]), 5^[]]]
+1.1.1  [v1_xboole_0(u1_struct_0(3^[])), l1_struct_0(3^[]), -v2_struct_0(3^[])]   (8)  substitution:[[_G9595], [3^[]]]
+1.1.1.1  [-l1_struct_0(3^[])]   (2)  
+1.1.1.2  [v2_struct_0(3^[])]   (1)  
+1.1.2  [v1_xboole_0(u1_struct_0(4^[])), l1_struct_0(4^[]), -v2_struct_0(4^[])]   (8)  substitution:[[_G9595], [4^[]]]
+1.1.2.1  [-l1_struct_0(4^[])]   (4)  
+1.1.2.2  [v2_struct_0(4^[])]   (3)  
+1.1.3  [-r2_hidden(5^[], k2_zfmisc_1(u1_struct_0(3^[]), u1_struct_0(4^[])))]   (5)  
+1.2  [-m1_subset_1(2^[u1_struct_0(4^[]), u1_struct_0(3^[]), 5^[]], u1_struct_0(4^[])), -v1_xboole_0(u1_struct_0(3^[])), -v1_xboole_0(u1_struct_0(4^[])), r2_hidden(5^[], k2_zfmisc_1(u1_struct_0(3^[]), u1_struct_0(4^[])))]   (10)  substitution:[[_G10911, _G10768, _G10672], [u1_struct_0(4^[]), u1_struct_0(3^[]), 5^[]]]
+1.2.1  [v1_xboole_0(u1_struct_0(3^[])), l1_struct_0(3^[]), -v2_struct_0(3^[])]   (8)  substitution:[[_G9595], [3^[]]]
+1.2.1.1  [-l1_struct_0(3^[])]   (2)  
+1.2.1.2  [v2_struct_0(3^[])]   (1)  
+1.2.2  [v1_xboole_0(u1_struct_0(4^[])), l1_struct_0(4^[]), -v2_struct_0(4^[])]   (8)  substitution:[[_G9595], [4^[]]]
+1.2.2.1  [-l1_struct_0(4^[])]   (4)  
+1.2.2.2  [v2_struct_0(4^[])]   (3)  
+1.2.3  [-r2_hidden(5^[], k2_zfmisc_1(u1_struct_0(3^[]), u1_struct_0(4^[])))]   (5)  
+1.3  [- (5^[]=k1_domain_1(u1_struct_0(3^[]), u1_struct_0(4^[]), 1^[u1_struct_0(4^[]), u1_struct_0(3^[]), 5^[]], 2^[u1_struct_0(4^[]), u1_struct_0(3^[]), 5^[]])), 5^[]=k4_tarski(1^[u1_struct_0(4^[]), u1_struct_0(3^[]), 5^[]], 2^[u1_struct_0(4^[]), u1_struct_0(3^[]), 5^[]]), k4_tarski(1^[u1_struct_0(4^[]), u1_struct_0(3^[]), 5^[]], 2^[u1_struct_0(4^[]), u1_struct_0(3^[]), 5^[]])=k1_domain_1(u1_struct_0(3^[]), u1_struct_0(4^[]), 1^[u1_struct_0(4^[]), u1_struct_0(3^[]), 5^[]], 2^[u1_struct_0(4^[]), u1_struct_0(3^[]), 5^[]])]   (19)  substitution:[[_G3939, _G4052, _G3995], [5^[], k1_domain_1(u1_struct_0(3^[]), u1_struct_0(4^[]), 1^[u1_struct_0(4^[]), u1_struct_0(3^[]), 5^[]], 2^[u1_struct_0(4^[]), u1_struct_0(3^[]), 5^[]]), k4_tarski(1^[u1_struct_0(4^[]), u1_struct_0(3^[]), 5^[]], 2^[u1_struct_0(4^[]), u1_struct_0(3^[]), 5^[]])]]
+1.3.1  [- (5^[]=k4_tarski(1^[u1_struct_0(4^[]), u1_struct_0(3^[]), 5^[]], 2^[u1_struct_0(4^[]), u1_struct_0(3^[]), 5^[]])), -v1_xboole_0(u1_struct_0(3^[])), -v1_xboole_0(u1_struct_0(4^[])), r2_hidden(5^[], k2_zfmisc_1(u1_struct_0(3^[]), u1_struct_0(4^[])))]   (11)  substitution:[[_G10672, _G10911, _G10768], [5^[], u1_struct_0(4^[]), u1_struct_0(3^[])]]
+1.3.1.1  [v1_xboole_0(u1_struct_0(3^[])), l1_struct_0(3^[]), -v2_struct_0(3^[])]   (8)  substitution:[[_G9595], [3^[]]]
+1.3.1.1.1  [-l1_struct_0(3^[])]   (2)  
+1.3.1.1.2  [v2_struct_0(3^[])]   (1)  
+1.3.1.2  [v1_xboole_0(u1_struct_0(4^[])), l1_struct_0(4^[]), -v2_struct_0(4^[])]   (8)  substitution:[[_G9595], [4^[]]]
+1.3.1.2.1  [-l1_struct_0(4^[])]   (4)  
+1.3.1.2.2  [v2_struct_0(4^[])]   (3)  
+1.3.1.3  [-r2_hidden(5^[], k2_zfmisc_1(u1_struct_0(3^[]), u1_struct_0(4^[])))]   (5)  
+1.3.2  [- (k4_tarski(1^[u1_struct_0(4^[]), u1_struct_0(3^[]), 5^[]], 2^[u1_struct_0(4^[]), u1_struct_0(3^[]), 5^[]])=k1_domain_1(u1_struct_0(3^[]), u1_struct_0(4^[]), 1^[u1_struct_0(4^[]), u1_struct_0(3^[]), 5^[]], 2^[u1_struct_0(4^[]), u1_struct_0(3^[]), 5^[]])), k1_domain_1(u1_struct_0(3^[]), u1_struct_0(4^[]), 1^[u1_struct_0(4^[]), u1_struct_0(3^[]), 5^[]], 2^[u1_struct_0(4^[]), u1_struct_0(3^[]), 5^[]])=k4_tarski(1^[u1_struct_0(4^[]), u1_struct_0(3^[]), 5^[]], 2^[u1_struct_0(4^[]), u1_struct_0(3^[]), 5^[]])]   (18)  substitution:[[_G3751, _G3706], [k4_tarski(1^[u1_struct_0(4^[]), u1_struct_0(3^[]), 5^[]], 2^[u1_struct_0(4^[]), u1_struct_0(3^[]), 5^[]]), k1_domain_1(u1_struct_0(3^[]), u1_struct_0(4^[]), 1^[u1_struct_0(4^[]), u1_struct_0(3^[]), 5^[]], 2^[u1_struct_0(4^[]), u1_struct_0(3^[]), 5^[]])]]
+1.3.2.1  [- (k1_domain_1(u1_struct_0(3^[]), u1_struct_0(4^[]), 1^[u1_struct_0(4^[]), u1_struct_0(3^[]), 5^[]], 2^[u1_struct_0(4^[]), u1_struct_0(3^[]), 5^[]])=k4_tarski(1^[u1_struct_0(4^[]), u1_struct_0(3^[]), 5^[]], 2^[u1_struct_0(4^[]), u1_struct_0(3^[]), 5^[]])), -v1_xboole_0(u1_struct_0(3^[])), -v1_xboole_0(u1_struct_0(4^[])), m1_subset_1(1^[u1_struct_0(4^[]), u1_struct_0(3^[]), 5^[]], u1_struct_0(3^[])), m1_subset_1(2^[u1_struct_0(4^[]), u1_struct_0(3^[]), 5^[]], u1_struct_0(4^[]))]   (12)  substitution:[[_G9800, _G9883, _G9967, _G10052], [u1_struct_0(3^[]), u1_struct_0(4^[]), 1^[u1_struct_0(4^[]), u1_struct_0(3^[]), 5^[]], 2^[u1_struct_0(4^[]), u1_struct_0(3^[]), 5^[]]]]
+1.3.2.1.1  [v1_xboole_0(u1_struct_0(3^[])), l1_struct_0(3^[]), -v2_struct_0(3^[])]   (8)  substitution:[[_G9595], [3^[]]]
+1.3.2.1.1.1  [-l1_struct_0(3^[])]   (2)  
+1.3.2.1.1.2  [v2_struct_0(3^[])]   (1)  
+1.3.2.1.2  [v1_xboole_0(u1_struct_0(4^[])), l1_struct_0(4^[]), -v2_struct_0(4^[])]   (8)  substitution:[[_G9595], [4^[]]]
+1.3.2.1.2.1  [-l1_struct_0(4^[])]   (4)  
+1.3.2.1.2.2  [v2_struct_0(4^[])]   (3)  
+1.3.2.1.3  [-m1_subset_1(1^[u1_struct_0(4^[]), u1_struct_0(3^[]), 5^[]], u1_struct_0(3^[]))]   (lemmata:1)  
+1.3.2.1.4  [-m1_subset_1(2^[u1_struct_0(4^[]), u1_struct_0(3^[]), 5^[]], u1_struct_0(4^[]))]   (lemmata:1)  
+------------------------------------------------------
+End of proof for l7_prvect_3

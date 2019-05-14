@@ -1,0 +1,28 @@
+
+l21_numbers is a Theorem
+Start of proof for l21_numbers
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v3_ordinal1(np__2), m1_subset_1(np__2, k5_arytm_3)]
+ (2)  [v7_ordinal1(_G890), -v3_ordinal1(_G890)]
+ (3)  [v7_ordinal1(_G1021), -r2_hidden(_G1021, k4_ordinal1)]
+ (4)  [-v7_ordinal1(_G1021), r2_hidden(_G1021, k4_ordinal1)]
+ (5)  [-r2_hidden(np__2, k4_ordinal1)]
+ (6)  [-r1_tarski(k4_ordinal1, k5_arytm_3)]
+ (7)  [r2_hidden(_G1685, _G1730), -m1_subset_1(_G1685, _G1730)]
+ (8)  [-r1_tarski(_G1178, _G1234), -r2_hidden(1^[_G1234, _G1178], _G1178)]
+ (9)  [-r1_tarski(_G1178, _G1234), r2_hidden(1^[_G1234, _G1178], _G1234)]
+ (10)  [r1_tarski(_G1178, _G1234), r2_hidden(_G1348, _G1178), -r2_hidden(_G1348, _G1234)]
+
+Connection Proof:
+-----------------
+1  [v3_ordinal1(np__2), m1_subset_1(np__2, k5_arytm_3)]   (1)  
+1.1  [-v3_ordinal1(np__2), v7_ordinal1(np__2)]   (2)  substitution:[[_G890], [np__2]]
+1.1.1  [-v7_ordinal1(np__2), r2_hidden(np__2, k4_ordinal1)]   (4)  substitution:[[_G1021], [np__2]]
+1.1.1.1  [-r2_hidden(np__2, k4_ordinal1)]   (5)  
+1.2  [-m1_subset_1(np__2, k5_arytm_3), r2_hidden(np__2, k5_arytm_3)]   (7)  substitution:[[_G1685, _G1730], [np__2, k5_arytm_3]]
+1.2.1  [-r2_hidden(np__2, k5_arytm_3), r1_tarski(k4_ordinal1, k5_arytm_3), r2_hidden(np__2, k4_ordinal1)]   (10)  substitution:[[_G1348, _G1234, _G1178], [np__2, k5_arytm_3, k4_ordinal1]]
+1.2.1.1  [-r1_tarski(k4_ordinal1, k5_arytm_3)]   (6)  
+1.2.1.2  [-r2_hidden(np__2, k4_ordinal1)]   (5)  
+------------------------------------------------------
+End of proof for l21_numbers

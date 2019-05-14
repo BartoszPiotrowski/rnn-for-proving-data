@@ -1,0 +1,45 @@
+
+t14_card_2 is a Theorem
+Start of proof for t14_card_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v3_ordinal1(1^[])]
+ (2)  [-v3_ordinal1(2^[])]
+ (3)  [k1_card_1(k11_ordinal2(1^[], 2^[]))=k2_card_2(k1_card_1(1^[]), k1_card_1(2^[]))]
+ (4)  [v1_card_1(_G7401), v1_card_1(_G7490), - (k2_card_2(_G7401, _G7490)=k1_card_1(k2_zfmisc_1(_G7401, _G7490)))]
+ (5)  [-v1_card_1(k1_card_1(_G7782))]
+ (6)  [-r2_wellord2(k2_zfmisc_1(_G8441, _G8574), k2_zfmisc_1(k1_card_1(_G8441), _G8574))]
+ (7)  [-r2_wellord2(k2_zfmisc_1(_G8441, _G8574), k2_zfmisc_1(_G8441, k1_card_1(_G8574)))]
+ (8)  [-r2_wellord2(k2_zfmisc_1(_G8441, _G8574), k2_zfmisc_1(k1_card_1(_G8441), k1_card_1(_G8574)))]
+ (9)  [- (k1_card_1(k2_zfmisc_1(_G8441, _G8574))=k1_card_1(k2_zfmisc_1(k1_card_1(_G8441), _G8574)))]
+ (10)  [- (k1_card_1(k2_zfmisc_1(_G8441, _G8574))=k1_card_1(k2_zfmisc_1(_G8441, k1_card_1(_G8574))))]
+ (11)  [- (k1_card_1(k2_zfmisc_1(_G8441, _G8574))=k1_card_1(k2_zfmisc_1(k1_card_1(_G8441), k1_card_1(_G8574))))]
+ (12)  [v3_ordinal1(_G7871), v3_ordinal1(_G7974), -r2_wellord2(k11_ordinal2(_G7871, _G7974), k2_zfmisc_1(_G7871, _G7974))]
+ (13)  [v3_ordinal1(_G7871), v3_ordinal1(_G7974), - (k1_card_1(k11_ordinal2(_G7871, _G7974))=k1_card_1(k2_zfmisc_1(_G7871, _G7974)))]
+ (14)  [- (k2_zfmisc_1(_G5257, _G5392)=k2_zfmisc_1(_G5324, _G5461)), _G5257=_G5324, _G5392=_G5461]
+ (15)  [- (k11_ordinal2(_G5854, _G5989)=k11_ordinal2(_G5921, _G6058)), _G5854=_G5921, _G5989=_G6058]
+ (16)  [_G7039=_G7088, - (k1_card_1(_G7039)=k1_card_1(_G7088))]
+ (17)  [- (k2_card_2(_G6451, _G6586)=k2_card_2(_G6518, _G6655)), _G6451=_G6518, _G6586=_G6655]
+ (18)  [- (_G3268=_G3268)]
+ (19)  [_G3367=_G3412, - (_G3412=_G3367)]
+ (20)  [- (_G3600=_G3713), _G3600=_G3656, _G3656=_G3713]
+ (21)  [-v1_card_1(_G4099), _G4050=_G4099, v1_card_1(_G4050)]
+ (22)  [-v3_ordinal1(_G4965), _G4916=_G4965, v3_ordinal1(_G4916)]
+ (23)  [-r2_wellord2(_G4395, _G4532), r2_wellord2(_G4328, _G4463), _G4328=_G4395, _G4463=_G4532]
+
+Connection Proof:
+-----------------
+1  [k1_card_1(k11_ordinal2(1^[], 2^[]))=k2_card_2(k1_card_1(1^[]), k1_card_1(2^[]))]   (3)  
+1.1  [- (k1_card_1(k11_ordinal2(1^[], 2^[]))=k2_card_2(k1_card_1(1^[]), k1_card_1(2^[]))), k2_card_2(k1_card_1(1^[]), k1_card_1(2^[]))=k1_card_1(k11_ordinal2(1^[], 2^[]))]   (19)  substitution:[[_G3412, _G3367], [k1_card_1(k11_ordinal2(1^[], 2^[])), k2_card_2(k1_card_1(1^[]), k1_card_1(2^[]))]]
+1.1.1  [- (k2_card_2(k1_card_1(1^[]), k1_card_1(2^[]))=k1_card_1(k11_ordinal2(1^[], 2^[]))), k2_card_2(k1_card_1(1^[]), k1_card_1(2^[]))=k1_card_1(k2_zfmisc_1(k1_card_1(1^[]), k1_card_1(2^[]))), k1_card_1(k2_zfmisc_1(k1_card_1(1^[]), k1_card_1(2^[])))=k1_card_1(k11_ordinal2(1^[], 2^[]))]   (20)  substitution:[[_G3600, _G3713, _G3656], [k2_card_2(k1_card_1(1^[]), k1_card_1(2^[])), k1_card_1(k11_ordinal2(1^[], 2^[])), k1_card_1(k2_zfmisc_1(k1_card_1(1^[]), k1_card_1(2^[])))]]
+1.1.1.1  [- (k2_card_2(k1_card_1(1^[]), k1_card_1(2^[]))=k1_card_1(k2_zfmisc_1(k1_card_1(1^[]), k1_card_1(2^[])))), v1_card_1(k1_card_1(1^[])), v1_card_1(k1_card_1(2^[]))]   (4)  substitution:[[_G7401, _G7490], [k1_card_1(1^[]), k1_card_1(2^[])]]
+1.1.1.1.1  [-v1_card_1(k1_card_1(1^[]))]   (5)  substitution:[[_G7782], [1^[]]]
+1.1.1.1.2  [-v1_card_1(k1_card_1(2^[]))]   (5)  substitution:[[_G7782], [2^[]]]
+1.1.1.2  [- (k1_card_1(k2_zfmisc_1(k1_card_1(1^[]), k1_card_1(2^[])))=k1_card_1(k11_ordinal2(1^[], 2^[]))), k1_card_1(k11_ordinal2(1^[], 2^[]))=k1_card_1(k2_zfmisc_1(k1_card_1(1^[]), k1_card_1(2^[])))]   (19)  substitution:[[_G3412, _G3367], [k1_card_1(k2_zfmisc_1(k1_card_1(1^[]), k1_card_1(2^[]))), k1_card_1(k11_ordinal2(1^[], 2^[]))]]
+1.1.1.2.1  [- (k1_card_1(k11_ordinal2(1^[], 2^[]))=k1_card_1(k2_zfmisc_1(k1_card_1(1^[]), k1_card_1(2^[])))), k1_card_1(k11_ordinal2(1^[], 2^[]))=k1_card_1(k2_zfmisc_1(1^[], 2^[])), k1_card_1(k2_zfmisc_1(1^[], 2^[]))=k1_card_1(k2_zfmisc_1(k1_card_1(1^[]), k1_card_1(2^[])))]   (20)  substitution:[[_G3600, _G3713, _G3656], [k1_card_1(k11_ordinal2(1^[], 2^[])), k1_card_1(k2_zfmisc_1(k1_card_1(1^[]), k1_card_1(2^[]))), k1_card_1(k2_zfmisc_1(1^[], 2^[]))]]
+1.1.1.2.1.1  [- (k1_card_1(k11_ordinal2(1^[], 2^[]))=k1_card_1(k2_zfmisc_1(1^[], 2^[]))), v3_ordinal1(1^[]), v3_ordinal1(2^[])]   (13)  substitution:[[_G7871, _G7974], [1^[], 2^[]]]
+1.1.1.2.1.1.1  [-v3_ordinal1(1^[])]   (1)  
+1.1.1.2.1.1.2  [-v3_ordinal1(2^[])]   (2)  
+1.1.1.2.1.2  [- (k1_card_1(k2_zfmisc_1(1^[], 2^[]))=k1_card_1(k2_zfmisc_1(k1_card_1(1^[]), k1_card_1(2^[]))))]   (11)  substitution:[[_G8441, _G8574], [1^[], 2^[]]]
+------------------------------------------------------
+End of proof for t14_card_2

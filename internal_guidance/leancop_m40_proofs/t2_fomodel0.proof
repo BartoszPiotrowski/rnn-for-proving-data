@@ -1,0 +1,39 @@
+
+t2_fomodel0 is a Theorem
+Start of proof for t2_fomodel0
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v7_ordinal1(3^[])]
+ (2)  [k3_xboole_0(k4_finseq_2(3^[], 1^[]), k3_finseq_2(2^[]))=k4_finseq_2(3^[], k3_xboole_0(1^[], 2^[]))]
+ (3)  [v7_ordinal1(_G5745), - (k4_finseq_2(_G5745, _G5829)=k1_funct_2(k2_finseq_1(_G5745), _G5829))]
+ (4)  [- (k3_xboole_0(k1_funct_2(_G6063, _G6122), k1_funct_2(_G6063, _G6182))=k1_funct_2(_G6063, k3_xboole_0(_G6122, _G6182)))]
+ (5)  [v7_ordinal1(_G6643), - (k3_xboole_0(k4_finseq_2(_G6643, _G6510), k3_finseq_2(_G6576))=k3_xboole_0(k4_finseq_2(_G6643, _G6510), k4_finseq_2(_G6643, _G6576)))]
+ (6)  [-v7_ordinal1(_G3052), _G3003=_G3052, v7_ordinal1(_G3003)]
+ (7)  [- (_G2230=_G2230)]
+ (8)  [_G2329=_G2374, - (_G2374=_G2329)]
+ (9)  [- (_G2562=_G2675), _G2562=_G2618, _G2618=_G2675]
+ (10)  [_G3302=_G3351, - (k2_finseq_1(_G3302)=k2_finseq_1(_G3351))]
+ (11)  [- (k1_funct_2(_G3580, _G3715)=k1_funct_2(_G3647, _G3784)), _G3580=_G3647, _G3715=_G3784]
+ (12)  [_G4177=_G4226, - (k3_finseq_2(_G4177)=k3_finseq_2(_G4226))]
+ (13)  [- (k4_finseq_2(_G4455, _G4590)=k4_finseq_2(_G4522, _G4659)), _G4455=_G4522, _G4590=_G4659]
+ (14)  [- (k3_xboole_0(_G5043, _G5178)=k3_xboole_0(_G5110, _G5247)), _G5043=_G5110, _G5178=_G5247]
+
+Connection Proof:
+-----------------
+1  [k3_xboole_0(k4_finseq_2(3^[], 1^[]), k3_finseq_2(2^[]))=k4_finseq_2(3^[], k3_xboole_0(1^[], 2^[]))]   (2)  
+1.1  [- (k3_xboole_0(k4_finseq_2(3^[], 1^[]), k3_finseq_2(2^[]))=k4_finseq_2(3^[], k3_xboole_0(1^[], 2^[]))), k3_xboole_0(k4_finseq_2(3^[], 1^[]), k3_finseq_2(2^[]))=k3_xboole_0(k1_funct_2(k2_finseq_1(3^[]), 1^[]), k1_funct_2(k2_finseq_1(3^[]), 2^[])), k3_xboole_0(k1_funct_2(k2_finseq_1(3^[]), 1^[]), k1_funct_2(k2_finseq_1(3^[]), 2^[]))=k4_finseq_2(3^[], k3_xboole_0(1^[], 2^[]))]   (9)  substitution:[[_G2562, _G2675, _G2618], [k3_xboole_0(k4_finseq_2(3^[], 1^[]), k3_finseq_2(2^[])), k4_finseq_2(3^[], k3_xboole_0(1^[], 2^[])), k3_xboole_0(k1_funct_2(k2_finseq_1(3^[]), 1^[]), k1_funct_2(k2_finseq_1(3^[]), 2^[]))]]
+1.1.1  [- (k3_xboole_0(k4_finseq_2(3^[], 1^[]), k3_finseq_2(2^[]))=k3_xboole_0(k1_funct_2(k2_finseq_1(3^[]), 1^[]), k1_funct_2(k2_finseq_1(3^[]), 2^[]))), k3_xboole_0(k4_finseq_2(3^[], 1^[]), k3_finseq_2(2^[]))=k3_xboole_0(k4_finseq_2(3^[], 1^[]), k4_finseq_2(3^[], 2^[])), k3_xboole_0(k4_finseq_2(3^[], 1^[]), k4_finseq_2(3^[], 2^[]))=k3_xboole_0(k1_funct_2(k2_finseq_1(3^[]), 1^[]), k1_funct_2(k2_finseq_1(3^[]), 2^[]))]   (9)  substitution:[[_G2562, _G2675, _G2618], [k3_xboole_0(k4_finseq_2(3^[], 1^[]), k3_finseq_2(2^[])), k3_xboole_0(k1_funct_2(k2_finseq_1(3^[]), 1^[]), k1_funct_2(k2_finseq_1(3^[]), 2^[])), k3_xboole_0(k4_finseq_2(3^[], 1^[]), k4_finseq_2(3^[], 2^[]))]]
+1.1.1.1  [- (k3_xboole_0(k4_finseq_2(3^[], 1^[]), k3_finseq_2(2^[]))=k3_xboole_0(k4_finseq_2(3^[], 1^[]), k4_finseq_2(3^[], 2^[]))), v7_ordinal1(3^[])]   (5)  substitution:[[_G6643, _G6510, _G6576], [3^[], 1^[], 2^[]]]
+1.1.1.1.1  [-v7_ordinal1(3^[])]   (1)  
+1.1.1.2  [- (k3_xboole_0(k4_finseq_2(3^[], 1^[]), k4_finseq_2(3^[], 2^[]))=k3_xboole_0(k1_funct_2(k2_finseq_1(3^[]), 1^[]), k1_funct_2(k2_finseq_1(3^[]), 2^[]))), k4_finseq_2(3^[], 1^[])=k1_funct_2(k2_finseq_1(3^[]), 1^[]), k4_finseq_2(3^[], 2^[])=k1_funct_2(k2_finseq_1(3^[]), 2^[])]   (14)  substitution:[[_G5043, _G5178, _G5110, _G5247], [k4_finseq_2(3^[], 1^[]), k4_finseq_2(3^[], 2^[]), k1_funct_2(k2_finseq_1(3^[]), 1^[]), k1_funct_2(k2_finseq_1(3^[]), 2^[])]]
+1.1.1.2.1  [- (k4_finseq_2(3^[], 1^[])=k1_funct_2(k2_finseq_1(3^[]), 1^[])), v7_ordinal1(3^[])]   (3)  substitution:[[_G5745, _G5829], [3^[], 1^[]]]
+1.1.1.2.1.1  [-v7_ordinal1(3^[])]   (1)  
+1.1.1.2.2  [- (k4_finseq_2(3^[], 2^[])=k1_funct_2(k2_finseq_1(3^[]), 2^[])), v7_ordinal1(3^[])]   (3)  substitution:[[_G5745, _G5829], [3^[], 2^[]]]
+1.1.1.2.2.1  [-v7_ordinal1(3^[])]   (1)  
+1.1.2  [- (k3_xboole_0(k1_funct_2(k2_finseq_1(3^[]), 1^[]), k1_funct_2(k2_finseq_1(3^[]), 2^[]))=k4_finseq_2(3^[], k3_xboole_0(1^[], 2^[]))), k3_xboole_0(k1_funct_2(k2_finseq_1(3^[]), 1^[]), k1_funct_2(k2_finseq_1(3^[]), 2^[]))=k1_funct_2(k2_finseq_1(3^[]), k3_xboole_0(1^[], 2^[])), k1_funct_2(k2_finseq_1(3^[]), k3_xboole_0(1^[], 2^[]))=k4_finseq_2(3^[], k3_xboole_0(1^[], 2^[]))]   (9)  substitution:[[_G2562, _G2675, _G2618], [k3_xboole_0(k1_funct_2(k2_finseq_1(3^[]), 1^[]), k1_funct_2(k2_finseq_1(3^[]), 2^[])), k4_finseq_2(3^[], k3_xboole_0(1^[], 2^[])), k1_funct_2(k2_finseq_1(3^[]), k3_xboole_0(1^[], 2^[]))]]
+1.1.2.1  [- (k3_xboole_0(k1_funct_2(k2_finseq_1(3^[]), 1^[]), k1_funct_2(k2_finseq_1(3^[]), 2^[]))=k1_funct_2(k2_finseq_1(3^[]), k3_xboole_0(1^[], 2^[])))]   (4)  substitution:[[_G6063, _G6122, _G6182], [k2_finseq_1(3^[]), 1^[], 2^[]]]
+1.1.2.2  [- (k1_funct_2(k2_finseq_1(3^[]), k3_xboole_0(1^[], 2^[]))=k4_finseq_2(3^[], k3_xboole_0(1^[], 2^[]))), k4_finseq_2(3^[], k3_xboole_0(1^[], 2^[]))=k1_funct_2(k2_finseq_1(3^[]), k3_xboole_0(1^[], 2^[]))]   (8)  substitution:[[_G2374, _G2329], [k1_funct_2(k2_finseq_1(3^[]), k3_xboole_0(1^[], 2^[])), k4_finseq_2(3^[], k3_xboole_0(1^[], 2^[]))]]
+1.1.2.2.1  [- (k4_finseq_2(3^[], k3_xboole_0(1^[], 2^[]))=k1_funct_2(k2_finseq_1(3^[]), k3_xboole_0(1^[], 2^[]))), v7_ordinal1(3^[])]   (3)  substitution:[[_G5745, _G5829], [3^[], k3_xboole_0(1^[], 2^[])]]
+1.1.2.2.1.1  [-v7_ordinal1(3^[])]   (1)  
+------------------------------------------------------
+End of proof for t2_fomodel0

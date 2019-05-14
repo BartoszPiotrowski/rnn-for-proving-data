@@ -1,0 +1,29 @@
+
+l3_normsp_0 is a Theorem
+Start of proof for l3_normsp_0
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [m1_subset_1(k6_numbers, np__1)]
+ (2)  [- (k6_numbers=k1_xboole_0)]
+ (3)  [- (np__1=k1_tarski(k1_xboole_0))]
+ (4)  [r2_hidden(_G4186, _G4231), -m1_subset_1(_G4186, _G4231)]
+ (5)  [_G3767=k1_tarski(_G3709), r2_hidden(_G3897, _G3767), - (_G3897=_G3709)]
+ (6)  [_G3767=k1_tarski(_G3709), -r2_hidden(_G3897, _G3767), _G3897=_G3709]
+ (7)  [- (_G3767=k1_tarski(_G3709)), r2_hidden(1^[_G3767, _G3709], _G3767), 1^[_G3767, _G3709]=_G3709]
+ (8)  [- (_G3767=k1_tarski(_G3709)), -r2_hidden(1^[_G3767, _G3709], _G3767), - (1^[_G3767, _G3709]=_G3709)]
+ (9)  [_G3410=_G3459, - (k1_tarski(_G3410)=k1_tarski(_G3459))]
+ (10)  [- (_G1410=_G1410)]
+ (11)  [_G1509=_G1554, - (_G1554=_G1509)]
+ (12)  [- (_G1742=_G1855), _G1742=_G1798, _G1798=_G1855]
+ (13)  [-r2_hidden(_G2259, _G2396), r2_hidden(_G2192, _G2327), _G2192=_G2259, _G2327=_G2396]
+ (14)  [-m1_subset_1(_G2847, _G2984), m1_subset_1(_G2780, _G2915), _G2780=_G2847, _G2915=_G2984]
+
+Connection Proof:
+-----------------
+1  [m1_subset_1(k6_numbers, np__1)]   (1)  
+1.1  [-m1_subset_1(k6_numbers, np__1), r2_hidden(k6_numbers, np__1)]   (4)  substitution:[[_G4186, _G4231], [k6_numbers, np__1]]
+1.1.1  [-r2_hidden(k6_numbers, np__1), np__1=k1_tarski(k1_xboole_0), k6_numbers=k1_xboole_0]   (6)  substitution:[[_G3897, _G3767, _G3709], [k6_numbers, np__1, k1_xboole_0]]
+1.1.1.1  [- (np__1=k1_tarski(k1_xboole_0))]   (3)  
+1.1.1.2  [- (k6_numbers=k1_xboole_0)]   (2)  
+------------------------------------------------------
+End of proof for l3_normsp_0

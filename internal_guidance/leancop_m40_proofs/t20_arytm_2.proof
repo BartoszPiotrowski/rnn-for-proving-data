@@ -1,0 +1,37 @@
+
+t20_arytm_2 is a Theorem
+Start of proof for t20_arytm_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [r2_hidden(k11_arytm_3, k2_arytm_2), r2_hidden(k12_arytm_3, k2_arytm_2)]
+ (2)  [-m1_subset_1(k11_arytm_3, k5_arytm_3)]
+ (3)  [v1_xboole_0(k2_arytm_2)]
+ (4)  [v1_xboole_0(k5_arytm_3)]
+ (5)  [- (k12_arytm_3=np__1)]
+ (6)  [-m1_subset_1(k12_arytm_3, k2_arytm_2)]
+ (7)  [-r1_tarski(k5_arytm_3, k2_arytm_2)]
+ (8)  [m1_subset_1(_G5452, _G5502), -v1_xboole_0(_G5502), -r2_hidden(_G5452, _G5502)]
+ (9)  [-r1_tarski(_G4739, _G4795), -r2_hidden(1^[_G4795, _G4739], _G4739)]
+ (10)  [-r1_tarski(_G4739, _G4795), r2_hidden(1^[_G4795, _G4739], _G4795)]
+ (11)  [r1_tarski(_G4739, _G4795), r2_hidden(_G4909, _G4739), -r2_hidden(_G4909, _G4795)]
+ (12)  [- (_G1813=_G1813)]
+ (13)  [_G1912=_G1957, - (_G1957=_G1912)]
+ (14)  [- (_G2145=_G2258), _G2145=_G2201, _G2201=_G2258]
+ (15)  [-r1_tarski(_G2662, _G2799), r1_tarski(_G2595, _G2730), _G2595=_G2662, _G2730=_G2799]
+ (16)  [-m1_subset_1(_G3259, _G3396), m1_subset_1(_G3192, _G3327), _G3192=_G3259, _G3327=_G3396]
+ (17)  [-v1_xboole_0(_G3838), _G3789=_G3838, v1_xboole_0(_G3789)]
+ (18)  [-r2_hidden(_G4125, _G4262), r2_hidden(_G4058, _G4193), _G4058=_G4125, _G4193=_G4262]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(k11_arytm_3, k2_arytm_2), r2_hidden(k12_arytm_3, k2_arytm_2)]   (1)  
+1.1  [-r2_hidden(k11_arytm_3, k2_arytm_2), r1_tarski(k5_arytm_3, k2_arytm_2), r2_hidden(k11_arytm_3, k5_arytm_3)]   (11)  substitution:[[_G4909, _G4795, _G4739], [k11_arytm_3, k2_arytm_2, k5_arytm_3]]
+1.1.1  [-r1_tarski(k5_arytm_3, k2_arytm_2)]   (7)  
+1.1.2  [-r2_hidden(k11_arytm_3, k5_arytm_3), m1_subset_1(k11_arytm_3, k5_arytm_3), -v1_xboole_0(k5_arytm_3)]   (8)  substitution:[[_G5452, _G5502], [k11_arytm_3, k5_arytm_3]]
+1.1.2.1  [-m1_subset_1(k11_arytm_3, k5_arytm_3)]   (2)  
+1.1.2.2  [v1_xboole_0(k5_arytm_3)]   (4)  
+1.2  [-r2_hidden(k12_arytm_3, k2_arytm_2), m1_subset_1(k12_arytm_3, k2_arytm_2), -v1_xboole_0(k2_arytm_2)]   (8)  substitution:[[_G5452, _G5502], [k12_arytm_3, k2_arytm_2]]
+1.2.1  [-m1_subset_1(k12_arytm_3, k2_arytm_2)]   (6)  
+1.2.2  [v1_xboole_0(k2_arytm_2)]   (3)  
+------------------------------------------------------
+End of proof for t20_arytm_2

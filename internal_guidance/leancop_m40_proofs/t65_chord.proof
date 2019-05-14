@@ -1,0 +1,35 @@
+
+t65_chord is a Theorem
+Start of proof for t65_chord
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(1^[])]
+ (2)  [-v4_relat_1(1^[], k5_numbers)]
+ (3)  [-v1_funct_1(1^[])]
+ (4)  [-v1_finset_1(1^[])]
+ (5)  [-v1_glib_000(1^[])]
+ (6)  [-v4_glib_000(1^[])]
+ (7)  [-m1_subset_1(2^[], k6_glib_000(1^[]))]
+ (8)  [v3_chord(2^[], 1^[])]
+ (9)  [-v2_chord(_G1127), v1_relat_1(_G1127), v4_relat_1(_G1127, k5_numbers), v1_funct_1(_G1127), v1_finset_1(_G1127), v1_glib_000(_G1127), v4_glib_000(_G1127)]
+ (10)  [-v3_chord(_G2281, _G1881), m1_subset_1(_G2281, k6_glib_000(_G1881)), v1_relat_1(_G1881), v4_relat_1(_G1881, k5_numbers), v1_funct_1(_G1881), v1_finset_1(_G1881), v1_glib_000(_G1881), v2_chord(_G1881)]
+
+Connection Proof:
+-----------------
+1  [v3_chord(2^[], 1^[])]   (8)  
+1.1  [-v3_chord(2^[], 1^[]), m1_subset_1(2^[], k6_glib_000(1^[])), v1_relat_1(1^[]), v4_relat_1(1^[], k5_numbers), v1_funct_1(1^[]), v1_finset_1(1^[]), v1_glib_000(1^[]), v2_chord(1^[])]   (10)  substitution:[[_G2281, _G1881], [2^[], 1^[]]]
+1.1.1  [-m1_subset_1(2^[], k6_glib_000(1^[]))]   (7)  
+1.1.2  [-v1_relat_1(1^[])]   (1)  
+1.1.3  [-v4_relat_1(1^[], k5_numbers)]   (2)  
+1.1.4  [-v1_funct_1(1^[])]   (3)  
+1.1.5  [-v1_finset_1(1^[])]   (4)  
+1.1.6  [-v1_glib_000(1^[])]   (5)  
+1.1.7  [-v2_chord(1^[]), v1_relat_1(1^[]), v4_relat_1(1^[], k5_numbers), v1_funct_1(1^[]), v1_finset_1(1^[]), v1_glib_000(1^[]), v4_glib_000(1^[])]   (9)  substitution:[[_G1127], [1^[]]]
+1.1.7.1  [-v1_relat_1(1^[])]   (1)  
+1.1.7.2  [-v4_relat_1(1^[], k5_numbers)]   (2)  
+1.1.7.3  [-v1_funct_1(1^[])]   (3)  
+1.1.7.4  [-v1_finset_1(1^[])]   (4)  
+1.1.7.5  [-v1_glib_000(1^[])]   (5)  
+1.1.7.6  [-v4_glib_000(1^[])]   (6)  
+------------------------------------------------------
+End of proof for t65_chord

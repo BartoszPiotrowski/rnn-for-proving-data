@@ -1,0 +1,37 @@
+
+t8_coh_sp is a Theorem
+Start of proof for t8_coh_sp
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v1_xboole_0(4^[])]
+ (2)  [-v1_classes1(4^[])]
+ (3)  [-v1_coh_sp(4^[])]
+ (4)  [r1_tarski(3^[], k3_tarski(4^[]))]
+ (5)  [-r2_hidden(k2_tarski(_G3460, _G3465), 4^[]), r2_hidden(_G3460, 3^[]), r2_hidden(_G3465, 3^[])]
+ (6)  [r2_hidden(_G1010, _G1057), -r1_tarski(_G1010, k3_tarski(_G1057))]
+ (7)  [v1_coh_sp(_G1348), v1_classes1(_G1348), -v1_xboole_0(_G1348), -r2_hidden(_G1261, _G1348), -r2_hidden(1^[_G1348, _G1261], _G1261)]
+ (8)  [v1_coh_sp(_G1348), v1_classes1(_G1348), -v1_xboole_0(_G1348), -r2_hidden(_G1261, _G1348), -r2_hidden(2^[_G1348, _G1261], _G1261)]
+ (9)  [v1_coh_sp(_G1348), v1_classes1(_G1348), -v1_xboole_0(_G1348), -r2_hidden(_G1261, _G1348), r2_hidden(k2_tarski(1^[_G1348, _G1261], 2^[_G1348, _G1261]), _G1348)]
+ (10)  [v1_coh_sp(_G1348), v1_classes1(_G1348), -v1_xboole_0(_G1348), r2_hidden(_G1261, _G1348), -r2_hidden(k2_tarski(_G1645, _G1711), _G1348), r2_hidden(_G1645, _G1261), r2_hidden(_G1711, _G1261)]
+
+Connection Proof:
+-----------------
+1  [v1_xboole_0(4^[])]   (1)  
+1.1  [-v1_xboole_0(4^[]), v1_coh_sp(4^[]), v1_classes1(4^[]), -r2_hidden(3^[], 4^[]), -r2_hidden(1^[4^[], 3^[]], 3^[])]   (7)  substitution:[[_G1348, _G1261], [4^[], 3^[]]]
+1.1.1  [-v1_coh_sp(4^[])]   (3)  
+1.1.2  [-v1_classes1(4^[])]   (2)  
+1.1.3  [r2_hidden(3^[], 4^[]), -r1_tarski(3^[], k3_tarski(4^[]))]   (6)  substitution:[[_G1010, _G1057], [3^[], 4^[]]]
+1.1.3.1  [r1_tarski(3^[], k3_tarski(4^[]))]   (4)  
+1.1.4  [r2_hidden(1^[4^[], 3^[]], 3^[]), -r2_hidden(k2_tarski(1^[4^[], 3^[]], 2^[4^[], 3^[]]), 4^[]), r2_hidden(2^[4^[], 3^[]], 3^[])]   (5)  substitution:[[_G3460, _G3465], [1^[4^[], 3^[]], 2^[4^[], 3^[]]]]
+1.1.4.1  [r2_hidden(k2_tarski(1^[4^[], 3^[]], 2^[4^[], 3^[]]), 4^[]), v1_coh_sp(4^[]), v1_classes1(4^[]), -v1_xboole_0(4^[]), -r2_hidden(3^[], 4^[])]   (9)  substitution:[[_G1348, _G1261], [4^[], 3^[]]]
+1.1.4.1.1  [-v1_coh_sp(4^[])]   (3)  
+1.1.4.1.2  [-v1_classes1(4^[])]   (2)  
+1.1.4.1.3  [v1_xboole_0(4^[])]   (1)  
+1.1.4.1.4  [r2_hidden(3^[], 4^[])]   (lemmata:1.1)  
+1.1.4.2  [-r2_hidden(2^[4^[], 3^[]], 3^[]), v1_coh_sp(4^[]), v1_classes1(4^[]), -v1_xboole_0(4^[]), -r2_hidden(3^[], 4^[])]   (8)  substitution:[[_G1348, _G1261], [4^[], 3^[]]]
+1.1.4.2.1  [-v1_coh_sp(4^[])]   (3)  
+1.1.4.2.2  [-v1_classes1(4^[])]   (2)  
+1.1.4.2.3  [v1_xboole_0(4^[])]   (1)  
+1.1.4.2.4  [r2_hidden(3^[], 4^[])]   (lemmata:1.1)  
+------------------------------------------------------
+End of proof for t8_coh_sp

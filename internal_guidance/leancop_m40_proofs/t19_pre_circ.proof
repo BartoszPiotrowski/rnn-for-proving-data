@@ -1,0 +1,32 @@
+
+t19_pre_circ is a Theorem
+Start of proof for t19_pre_circ
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k5_card_1(k1_trees_4(1^[]))=np__1]
+ (2)  [-v1_finset_1(k1_tarski(_G4494))]
+ (3)  [- (k1_card_1(k1_tarski(_G4772))=np__1)]
+ (4)  [- (k1_trees_4(_G4894)=k1_tarski(k4_tarski(k1_xboole_0, _G4894)))]
+ (5)  [v1_finset_1(_G4583), - (k5_card_1(_G4583)=k1_card_1(_G4583))]
+ (6)  [-v1_finset_1(_G2439), _G2390=_G2439, v1_finset_1(_G2390)]
+ (7)  [- (_G1617=_G1617)]
+ (8)  [_G1716=_G1761, - (_G1761=_G1716)]
+ (9)  [- (_G1949=_G2062), _G1949=_G2005, _G2005=_G2062]
+ (10)  [_G2689=_G2738, - (k1_card_1(_G2689)=k1_card_1(_G2738))]
+ (11)  [_G2967=_G3016, - (k1_tarski(_G2967)=k1_tarski(_G3016))]
+ (12)  [- (k4_tarski(_G3245, _G3380)=k4_tarski(_G3312, _G3449)), _G3245=_G3312, _G3380=_G3449]
+ (13)  [_G3842=_G3891, - (k5_card_1(_G3842)=k5_card_1(_G3891))]
+ (14)  [_G4111=_G4160, - (k1_trees_4(_G4111)=k1_trees_4(_G4160))]
+
+Connection Proof:
+-----------------
+1  [k5_card_1(k1_trees_4(1^[]))=np__1]   (1)  
+1.1  [- (k5_card_1(k1_trees_4(1^[]))=np__1), k5_card_1(k1_trees_4(1^[]))=k1_card_1(k1_tarski(k4_tarski(k1_xboole_0, 1^[]))), k1_card_1(k1_tarski(k4_tarski(k1_xboole_0, 1^[])))=np__1]   (9)  substitution:[[_G1949, _G2062, _G2005], [k5_card_1(k1_trees_4(1^[])), np__1, k1_card_1(k1_tarski(k4_tarski(k1_xboole_0, 1^[])))]]
+1.1.1  [- (k5_card_1(k1_trees_4(1^[]))=k1_card_1(k1_tarski(k4_tarski(k1_xboole_0, 1^[])))), k5_card_1(k1_trees_4(1^[]))=k5_card_1(k1_tarski(k4_tarski(k1_xboole_0, 1^[]))), k5_card_1(k1_tarski(k4_tarski(k1_xboole_0, 1^[])))=k1_card_1(k1_tarski(k4_tarski(k1_xboole_0, 1^[])))]   (9)  substitution:[[_G1949, _G2062, _G2005], [k5_card_1(k1_trees_4(1^[])), k1_card_1(k1_tarski(k4_tarski(k1_xboole_0, 1^[]))), k5_card_1(k1_tarski(k4_tarski(k1_xboole_0, 1^[])))]]
+1.1.1.1  [- (k5_card_1(k1_trees_4(1^[]))=k5_card_1(k1_tarski(k4_tarski(k1_xboole_0, 1^[])))), k1_trees_4(1^[])=k1_tarski(k4_tarski(k1_xboole_0, 1^[]))]   (13)  substitution:[[_G3842, _G3891], [k1_trees_4(1^[]), k1_tarski(k4_tarski(k1_xboole_0, 1^[]))]]
+1.1.1.1.1  [- (k1_trees_4(1^[])=k1_tarski(k4_tarski(k1_xboole_0, 1^[])))]   (4)  substitution:[[_G4894], [1^[]]]
+1.1.1.2  [- (k5_card_1(k1_tarski(k4_tarski(k1_xboole_0, 1^[])))=k1_card_1(k1_tarski(k4_tarski(k1_xboole_0, 1^[])))), v1_finset_1(k1_tarski(k4_tarski(k1_xboole_0, 1^[])))]   (5)  substitution:[[_G4583], [k1_tarski(k4_tarski(k1_xboole_0, 1^[]))]]
+1.1.1.2.1  [-v1_finset_1(k1_tarski(k4_tarski(k1_xboole_0, 1^[])))]   (2)  substitution:[[_G4494], [k4_tarski(k1_xboole_0, 1^[])]]
+1.1.2  [- (k1_card_1(k1_tarski(k4_tarski(k1_xboole_0, 1^[])))=np__1)]   (3)  substitution:[[_G4772], [k4_tarski(k1_xboole_0, 1^[])]]
+------------------------------------------------------
+End of proof for t19_pre_circ

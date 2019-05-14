@@ -1,0 +1,87 @@
+
+t11_scmbsort is a Theorem
+Start of proof for t11_scmbsort
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(1^[])]
+ (2)  [-v4_relat_1(1^[], k5_numbers)]
+ (3)  [-v5_relat_1(1^[], u1_compos_1(k1_scmfsa_2))]
+ (4)  [-v1_funct_1(1^[])]
+ (5)  [-v1_finset_1(1^[])]
+ (6)  [-m1_subset_1(2^[], u1_compos_1(k1_scmfsa_2))]
+ (7)  [-m1_scmfsa_2(3^[])]
+ (8)  [-v1_ami_2(4^[])]
+ (9)  [-m1_subset_1(4^[], u1_struct_0(k1_scmfsa_2))]
+ (10)  [-r2_hidden(2^[], k10_xtuple_0(1^[]))]
+ (11)  [r2_hidden(4^[], k2_sf_mastr(1^[]))]
+ (12)  [- (2^[]=k16_scmfsa_2(4^[], 3^[])), - (2^[]=k17_scmfsa_2(4^[], 3^[]))]
+ (13)  [- (k2_relset_1(_G1500, _G1501)=k10_xtuple_0(_G1501)), v1_relat_1(_G1501), v5_relat_1(_G1501, _G1500)]
+ (14)  [- (k4_scmfsa_m(_G1515)=k1_tarski(_G1515)), v1_ami_2(_G1515), m1_subset_1(_G1515, u1_struct_0(k1_scmfsa_2))]
+ (15)  [m1_subset_1(_G1530, u1_struct_0(k1_scmfsa_2)), v1_ami_2(_G1530), m1_scmfsa_2(_G1538), m1_subset_1(_G1541, u1_compos_1(k1_scmfsa_2)), _G1541=k16_scmfsa_2(_G1530, _G1538), - (k1_sf_mastr(_G1541)=k4_scmfsa_m(_G1530))]
+ (16)  [m1_subset_1(_G1530, u1_struct_0(k1_scmfsa_2)), v1_ami_2(_G1530), m1_scmfsa_2(_G1538), m1_subset_1(_G1541, u1_compos_1(k1_scmfsa_2)), _G1541=k17_scmfsa_2(_G1530, _G1538), - (k1_sf_mastr(_G1541)=k4_scmfsa_m(_G1530))]
+ (17)  [r1_tarski(k1_tarski(_G1602), _G1603), -r2_hidden(_G1602, _G1603)]
+ (18)  [-r1_tarski(k1_tarski(_G1602), _G1603), r2_hidden(_G1602, _G1603)]
+ (19)  [m1_subset_1(_G1566, u1_compos_1(k1_scmfsa_2)), -r1_tarski(k1_sf_mastr(_G1566), k2_sf_mastr(_G1572)), r2_hidden(_G1566, k2_relset_1(u1_compos_1(k1_scmfsa_2), _G1572)), v1_relat_1(_G1572), v4_relat_1(_G1572, k5_numbers), v5_relat_1(_G1572, u1_compos_1(k1_scmfsa_2)), v1_funct_1(_G1572), v1_finset_1(_G1572)]
+ (20)  [_G1359=_G1360, - (k4_scmfsa_m(_G1359)=k4_scmfsa_m(_G1360))]
+ (21)  [- (k2_relset_1(_G1371, _G1373)=k2_relset_1(_G1372, _G1374)), _G1371=_G1372, _G1373=_G1374]
+ (22)  [_G1390=_G1391, - (k1_sf_mastr(_G1390)=k1_sf_mastr(_G1391))]
+ (23)  [_G1402=_G1403, - (k1_tarski(_G1402)=k1_tarski(_G1403))]
+ (24)  [_G1414=_G1415, - (u1_compos_1(_G1414)=u1_compos_1(_G1415))]
+ (25)  [_G1426=_G1427, - (u1_struct_0(_G1426)=u1_struct_0(_G1427))]
+ (26)  [_G1438=_G1439, - (k10_xtuple_0(_G1438)=k10_xtuple_0(_G1439))]
+ (27)  [- (k16_scmfsa_2(_G1450, _G1452)=k16_scmfsa_2(_G1451, _G1453)), _G1450=_G1451, _G1452=_G1453]
+ (28)  [_G1488=_G1489, - (k2_sf_mastr(_G1488)=k2_sf_mastr(_G1489))]
+ (29)  [- (k17_scmfsa_2(_G1469, _G1471)=k17_scmfsa_2(_G1470, _G1472)), _G1469=_G1470, _G1471=_G1472]
+ (30)  [- (_G1210=_G1210)]
+ (31)  [_G1214=_G1215, - (_G1215=_G1214)]
+ (32)  [- (_G1222=_G1224), _G1222=_G1223, _G1223=_G1224]
+ (33)  [-r1_tarski(_G1235, _G1237), r1_tarski(_G1234, _G1236), _G1234=_G1235, _G1236=_G1237]
+ (34)  [-v1_relat_1(_G1251), _G1250=_G1251, v1_relat_1(_G1250)]
+ (35)  [-v4_relat_1(_G1260, _G1262), v4_relat_1(_G1259, _G1261), _G1259=_G1260, _G1261=_G1262]
+ (36)  [-v5_relat_1(_G1276, _G1278), v5_relat_1(_G1275, _G1277), _G1275=_G1276, _G1277=_G1278]
+ (37)  [-v1_funct_1(_G1292), _G1291=_G1292, v1_funct_1(_G1291)]
+ (38)  [-v1_finset_1(_G1301), _G1300=_G1301, v1_finset_1(_G1300)]
+ (39)  [-m1_scmfsa_2(_G1310), _G1309=_G1310, m1_scmfsa_2(_G1309)]
+ (40)  [-v1_ami_2(_G1319), _G1318=_G1319, v1_ami_2(_G1318)]
+ (41)  [-m1_subset_1(_G1328, _G1330), m1_subset_1(_G1327, _G1329), _G1327=_G1328, _G1329=_G1330]
+ (42)  [-r2_hidden(_G1344, _G1346), r2_hidden(_G1343, _G1345), _G1343=_G1344, _G1345=_G1346]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(4^[], k2_sf_mastr(1^[]))]   (11)  
+1.1  [-r2_hidden(4^[], k2_sf_mastr(1^[])), r1_tarski(k1_tarski(4^[]), k2_sf_mastr(1^[]))]   (17)  substitution:[[_G1602, _G1603], [4^[], k2_sf_mastr(1^[])]]
+1.1.1  [-r1_tarski(k1_tarski(4^[]), k2_sf_mastr(1^[])), r1_tarski(k1_sf_mastr(2^[]), k2_sf_mastr(1^[])), k1_sf_mastr(2^[])=k1_tarski(4^[]), k2_sf_mastr(1^[])=k2_sf_mastr(1^[])]   (33)  substitution:[[_G1235, _G1237, _G1234, _G1236], [k1_tarski(4^[]), k2_sf_mastr(1^[]), k1_sf_mastr(2^[]), k2_sf_mastr(1^[])]]
+1.1.1.1  [-r1_tarski(k1_sf_mastr(2^[]), k2_sf_mastr(1^[])), m1_subset_1(2^[], u1_compos_1(k1_scmfsa_2)), r2_hidden(2^[], k2_relset_1(u1_compos_1(k1_scmfsa_2), 1^[])), v1_relat_1(1^[]), v4_relat_1(1^[], k5_numbers), v5_relat_1(1^[], u1_compos_1(k1_scmfsa_2)), v1_funct_1(1^[]), v1_finset_1(1^[])]   (19)  substitution:[[_G1566, _G1572], [2^[], 1^[]]]
+1.1.1.1.1  [-m1_subset_1(2^[], u1_compos_1(k1_scmfsa_2))]   (6)  
+1.1.1.1.2  [-r2_hidden(2^[], k2_relset_1(u1_compos_1(k1_scmfsa_2), 1^[])), r2_hidden(2^[], k10_xtuple_0(1^[])), 2^[]=2^[], k10_xtuple_0(1^[])=k2_relset_1(u1_compos_1(k1_scmfsa_2), 1^[])]   (42)  substitution:[[_G1344, _G1346, _G1343, _G1345], [2^[], k2_relset_1(u1_compos_1(k1_scmfsa_2), 1^[]), 2^[], k10_xtuple_0(1^[])]]
+1.1.1.1.2.1  [-r2_hidden(2^[], k10_xtuple_0(1^[]))]   (10)  
+1.1.1.1.2.2  [- (2^[]=2^[])]   (30)  substitution:[[_G1210], [2^[]]]
+1.1.1.1.2.3  [- (k10_xtuple_0(1^[])=k2_relset_1(u1_compos_1(k1_scmfsa_2), 1^[])), k2_relset_1(u1_compos_1(k1_scmfsa_2), 1^[])=k10_xtuple_0(1^[])]   (31)  substitution:[[_G1215, _G1214], [k10_xtuple_0(1^[]), k2_relset_1(u1_compos_1(k1_scmfsa_2), 1^[])]]
+1.1.1.1.2.3.1  [- (k2_relset_1(u1_compos_1(k1_scmfsa_2), 1^[])=k10_xtuple_0(1^[])), v1_relat_1(1^[]), v5_relat_1(1^[], u1_compos_1(k1_scmfsa_2))]   (13)  substitution:[[_G1500, _G1501], [u1_compos_1(k1_scmfsa_2), 1^[]]]
+1.1.1.1.2.3.1.1  [-v1_relat_1(1^[])]   (1)  
+1.1.1.1.2.3.1.2  [-v5_relat_1(1^[], u1_compos_1(k1_scmfsa_2))]   (3)  
+1.1.1.1.3  [-v1_relat_1(1^[])]   (1)  
+1.1.1.1.4  [-v4_relat_1(1^[], k5_numbers)]   (2)  
+1.1.1.1.5  [-v5_relat_1(1^[], u1_compos_1(k1_scmfsa_2))]   (3)  
+1.1.1.1.6  [-v1_funct_1(1^[])]   (4)  
+1.1.1.1.7  [-v1_finset_1(1^[])]   (5)  
+1.1.1.2  [- (k1_sf_mastr(2^[])=k1_tarski(4^[])), k1_sf_mastr(2^[])=k4_scmfsa_m(4^[]), k4_scmfsa_m(4^[])=k1_tarski(4^[])]   (32)  substitution:[[_G1222, _G1224, _G1223], [k1_sf_mastr(2^[]), k1_tarski(4^[]), k4_scmfsa_m(4^[])]]
+1.1.1.2.1  [- (k1_sf_mastr(2^[])=k4_scmfsa_m(4^[])), m1_subset_1(4^[], u1_struct_0(k1_scmfsa_2)), v1_ami_2(4^[]), m1_scmfsa_2(3^[]), m1_subset_1(2^[], u1_compos_1(k1_scmfsa_2)), 2^[]=k16_scmfsa_2(4^[], 3^[])]   (15)  substitution:[[_G1541, _G1530, _G1538], [2^[], 4^[], 3^[]]]
+1.1.1.2.1.1  [-m1_subset_1(4^[], u1_struct_0(k1_scmfsa_2))]   (9)  
+1.1.1.2.1.2  [-v1_ami_2(4^[])]   (8)  
+1.1.1.2.1.3  [-m1_scmfsa_2(3^[])]   (7)  
+1.1.1.2.1.4  [-m1_subset_1(2^[], u1_compos_1(k1_scmfsa_2))]   (6)  
+1.1.1.2.1.5  [- (2^[]=k16_scmfsa_2(4^[], 3^[])), - (2^[]=k17_scmfsa_2(4^[], 3^[]))]   (12)  
+1.1.1.2.1.5.1  [2^[]=k17_scmfsa_2(4^[], 3^[]), m1_subset_1(4^[], u1_struct_0(k1_scmfsa_2)), v1_ami_2(4^[]), m1_scmfsa_2(3^[]), m1_subset_1(2^[], u1_compos_1(k1_scmfsa_2)), - (k1_sf_mastr(2^[])=k4_scmfsa_m(4^[]))]   (16)  substitution:[[_G1541, _G1530, _G1538], [2^[], 4^[], 3^[]]]
+1.1.1.2.1.5.1.1  [-m1_subset_1(4^[], u1_struct_0(k1_scmfsa_2))]   (9)  
+1.1.1.2.1.5.1.2  [-v1_ami_2(4^[])]   (8)  
+1.1.1.2.1.5.1.3  [-m1_scmfsa_2(3^[])]   (7)  
+1.1.1.2.1.5.1.4  [-m1_subset_1(2^[], u1_compos_1(k1_scmfsa_2))]   (6)  
+1.1.1.2.1.5.1.5  [k1_sf_mastr(2^[])=k4_scmfsa_m(4^[])]   (reduction:1.1.1.2)  
+1.1.1.2.2  [- (k4_scmfsa_m(4^[])=k1_tarski(4^[])), v1_ami_2(4^[]), m1_subset_1(4^[], u1_struct_0(k1_scmfsa_2))]   (14)  substitution:[[_G1515], [4^[]]]
+1.1.1.2.2.1  [-v1_ami_2(4^[])]   (8)  
+1.1.1.2.2.2  [-m1_subset_1(4^[], u1_struct_0(k1_scmfsa_2))]   (9)  
+1.1.1.3  [- (k2_sf_mastr(1^[])=k2_sf_mastr(1^[])), 1^[]=1^[]]   (28)  substitution:[[_G1488, _G1489], [1^[], 1^[]]]
+1.1.1.3.1  [- (1^[]=1^[])]   (30)  substitution:[[_G1210], [1^[]]]
+------------------------------------------------------
+End of proof for t11_scmbsort

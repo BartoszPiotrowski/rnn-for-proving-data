@@ -1,0 +1,53 @@
+
+l8_nat_5 is a Theorem
+Start of proof for l8_nat_5
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v7_ordinal1(1^[])]
+ (2)  [-v7_ordinal1(2^[])]
+ (3)  [-v7_ordinal1(3^[])]
+ (4)  [-v7_ordinal1(4^[])]
+ (5)  [v1_finset_1(k2_enumset1(1^[], 2^[], 3^[], 4^[])), m1_subset_1(k2_enumset1(1^[], 2^[], 3^[], 4^[]), k1_zfmisc_1(k5_numbers))]
+ (6)  [-m1_subset_1(k4_subset_1(_G9598, _G9664, _G9731), k1_zfmisc_1(_G9598)), m1_subset_1(_G9664, k1_zfmisc_1(_G9598)), m1_subset_1(_G9731, k1_zfmisc_1(_G9598))]
+ (7)  [-v1_finset_1(k2_enumset1(_G10160, _G10213, _G10267, _G10322))]
+ (8)  [- (k4_subset_1(_G10567, _G10634, _G10702)=k2_xboole_0(_G10634, _G10702)), m1_subset_1(_G10634, k1_zfmisc_1(_G10567)), m1_subset_1(_G10702, k1_zfmisc_1(_G10567))]
+ (9)  [- (k2_enumset1(_G11157, _G11220, _G11284, _G11349)=k2_xboole_0(k2_tarski(_G11157, _G11220), k2_tarski(_G11284, _G11349)))]
+ (10)  [v7_ordinal1(_G11737), v7_ordinal1(_G11829), -v1_finset_1(k2_tarski(_G11737, _G11829))]
+ (11)  [v7_ordinal1(_G11737), v7_ordinal1(_G11829), -m1_subset_1(k2_tarski(_G11737, _G11829), k1_zfmisc_1(k5_numbers))]
+ (12)  [- (_G3478=_G3478)]
+ (13)  [_G3577=_G3622, - (_G3622=_G3577)]
+ (14)  [- (_G3810=_G3923), _G3810=_G3866, _G3866=_G3923]
+ (15)  [-v7_ordinal1(_G4309), _G4260=_G4309, v7_ordinal1(_G4260)]
+ (16)  [-v1_finset_1(_G4587), _G4538=_G4587, v1_finset_1(_G4538)]
+ (17)  [-m1_subset_1(_G4874, _G5011), m1_subset_1(_G4807, _G4942), _G4807=_G4874, _G4942=_G5011]
+ (18)  [- (k4_subset_1(_G5467, _G5638, _G5813)=k4_subset_1(_G5552, _G5725, _G5902)), _G5467=_G5552, _G5638=_G5725, _G5813=_G5902]
+ (19)  [- (k2_xboole_0(_G6495, _G6630)=k2_xboole_0(_G6562, _G6699)), _G6495=_G6562, _G6630=_G6699]
+ (20)  [- (k2_tarski(_G7092, _G7227)=k2_tarski(_G7159, _G7296)), _G7092=_G7159, _G7227=_G7296]
+ (21)  [_G9215=_G9264, - (k1_zfmisc_1(_G9215)=k1_zfmisc_1(_G9264))]
+ (22)  [- (k2_enumset1(_G7689, _G7896, _G8107, _G8322)=k2_enumset1(_G7792, _G8001, _G8214, _G8431)), _G7689=_G7792, _G7896=_G8001, _G8107=_G8214, _G8322=_G8431]
+
+Connection Proof:
+-----------------
+1  [v1_finset_1(k2_enumset1(1^[], 2^[], 3^[], 4^[])), m1_subset_1(k2_enumset1(1^[], 2^[], 3^[], 4^[]), k1_zfmisc_1(k5_numbers))]   (5)  
+1.1  [-v1_finset_1(k2_enumset1(1^[], 2^[], 3^[], 4^[]))]   (7)  substitution:[[_G10160, _G10213, _G10267, _G10322], [1^[], 2^[], 3^[], 4^[]]]
+1.2  [-m1_subset_1(k2_enumset1(1^[], 2^[], 3^[], 4^[]), k1_zfmisc_1(k5_numbers)), m1_subset_1(k4_subset_1(k5_numbers, k2_tarski(1^[], 2^[]), k2_tarski(3^[], 4^[])), k1_zfmisc_1(k5_numbers)), k4_subset_1(k5_numbers, k2_tarski(1^[], 2^[]), k2_tarski(3^[], 4^[]))=k2_enumset1(1^[], 2^[], 3^[], 4^[]), k1_zfmisc_1(k5_numbers)=k1_zfmisc_1(k5_numbers)]   (17)  substitution:[[_G4874, _G5011, _G4807, _G4942], [k2_enumset1(1^[], 2^[], 3^[], 4^[]), k1_zfmisc_1(k5_numbers), k4_subset_1(k5_numbers, k2_tarski(1^[], 2^[]), k2_tarski(3^[], 4^[])), k1_zfmisc_1(k5_numbers)]]
+1.2.1  [-m1_subset_1(k4_subset_1(k5_numbers, k2_tarski(1^[], 2^[]), k2_tarski(3^[], 4^[])), k1_zfmisc_1(k5_numbers)), m1_subset_1(k2_tarski(1^[], 2^[]), k1_zfmisc_1(k5_numbers)), m1_subset_1(k2_tarski(3^[], 4^[]), k1_zfmisc_1(k5_numbers))]   (6)  substitution:[[_G9598, _G9664, _G9731], [k5_numbers, k2_tarski(1^[], 2^[]), k2_tarski(3^[], 4^[])]]
+1.2.1.1  [-m1_subset_1(k2_tarski(1^[], 2^[]), k1_zfmisc_1(k5_numbers)), v7_ordinal1(1^[]), v7_ordinal1(2^[])]   (11)  substitution:[[_G11737, _G11829], [1^[], 2^[]]]
+1.2.1.1.1  [-v7_ordinal1(1^[])]   (1)  
+1.2.1.1.2  [-v7_ordinal1(2^[])]   (2)  
+1.2.1.2  [-m1_subset_1(k2_tarski(3^[], 4^[]), k1_zfmisc_1(k5_numbers)), v7_ordinal1(3^[]), v7_ordinal1(4^[])]   (11)  substitution:[[_G11737, _G11829], [3^[], 4^[]]]
+1.2.1.2.1  [-v7_ordinal1(3^[])]   (3)  
+1.2.1.2.2  [-v7_ordinal1(4^[])]   (4)  
+1.2.2  [- (k4_subset_1(k5_numbers, k2_tarski(1^[], 2^[]), k2_tarski(3^[], 4^[]))=k2_enumset1(1^[], 2^[], 3^[], 4^[])), k4_subset_1(k5_numbers, k2_tarski(1^[], 2^[]), k2_tarski(3^[], 4^[]))=k2_xboole_0(k2_tarski(1^[], 2^[]), k2_tarski(3^[], 4^[])), k2_xboole_0(k2_tarski(1^[], 2^[]), k2_tarski(3^[], 4^[]))=k2_enumset1(1^[], 2^[], 3^[], 4^[])]   (14)  substitution:[[_G3810, _G3923, _G3866], [k4_subset_1(k5_numbers, k2_tarski(1^[], 2^[]), k2_tarski(3^[], 4^[])), k2_enumset1(1^[], 2^[], 3^[], 4^[]), k2_xboole_0(k2_tarski(1^[], 2^[]), k2_tarski(3^[], 4^[]))]]
+1.2.2.1  [- (k4_subset_1(k5_numbers, k2_tarski(1^[], 2^[]), k2_tarski(3^[], 4^[]))=k2_xboole_0(k2_tarski(1^[], 2^[]), k2_tarski(3^[], 4^[]))), m1_subset_1(k2_tarski(1^[], 2^[]), k1_zfmisc_1(k5_numbers)), m1_subset_1(k2_tarski(3^[], 4^[]), k1_zfmisc_1(k5_numbers))]   (8)  substitution:[[_G10567, _G10634, _G10702], [k5_numbers, k2_tarski(1^[], 2^[]), k2_tarski(3^[], 4^[])]]
+1.2.2.1.1  [-m1_subset_1(k2_tarski(1^[], 2^[]), k1_zfmisc_1(k5_numbers)), v7_ordinal1(1^[]), v7_ordinal1(2^[])]   (11)  substitution:[[_G11737, _G11829], [1^[], 2^[]]]
+1.2.2.1.1.1  [-v7_ordinal1(1^[])]   (1)  
+1.2.2.1.1.2  [-v7_ordinal1(2^[])]   (2)  
+1.2.2.1.2  [-m1_subset_1(k2_tarski(3^[], 4^[]), k1_zfmisc_1(k5_numbers)), v7_ordinal1(3^[]), v7_ordinal1(4^[])]   (11)  substitution:[[_G11737, _G11829], [3^[], 4^[]]]
+1.2.2.1.2.1  [-v7_ordinal1(3^[])]   (3)  
+1.2.2.1.2.2  [-v7_ordinal1(4^[])]   (4)  
+1.2.2.2  [- (k2_xboole_0(k2_tarski(1^[], 2^[]), k2_tarski(3^[], 4^[]))=k2_enumset1(1^[], 2^[], 3^[], 4^[])), k2_enumset1(1^[], 2^[], 3^[], 4^[])=k2_xboole_0(k2_tarski(1^[], 2^[]), k2_tarski(3^[], 4^[]))]   (13)  substitution:[[_G3622, _G3577], [k2_xboole_0(k2_tarski(1^[], 2^[]), k2_tarski(3^[], 4^[])), k2_enumset1(1^[], 2^[], 3^[], 4^[])]]
+1.2.2.2.1  [- (k2_enumset1(1^[], 2^[], 3^[], 4^[])=k2_xboole_0(k2_tarski(1^[], 2^[]), k2_tarski(3^[], 4^[])))]   (9)  substitution:[[_G11157, _G11220, _G11284, _G11349], [1^[], 2^[], 3^[], 4^[]]]
+1.2.3  [- (k1_zfmisc_1(k5_numbers)=k1_zfmisc_1(k5_numbers))]   (12)  substitution:[[_G3478], [k1_zfmisc_1(k5_numbers)]]
+------------------------------------------------------
+End of proof for l8_nat_5

@@ -1,0 +1,33 @@
+
+t16_algspec1 is a Theorem
+Start of proof for t16_algspec1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(1^[])]
+ (2)  [-v1_funct_1(1^[])]
+ (3)  [k1_algspec1(k1_xboole_0, 1^[])=k1_xboole_0]
+ (4)  [-r1_tarski(k1_xboole_0, _G5783)]
+ (5)  [v1_relat_1(_G5873), - (k5_relat_1(_G5873, k1_xboole_0)=k1_xboole_0)]
+ (6)  [v1_funct_1(_G5370), v1_relat_1(_G5370), r1_tarski(_G5307, k9_xtuple_0(_G5370)), - (k1_algspec1(_G5307, _G5370)=k5_relat_1(_G5370, _G5307))]
+ (7)  [_G3781=_G3830, - (k9_xtuple_0(_G3781)=k9_xtuple_0(_G3830))]
+ (8)  [- (k5_relat_1(_G4059, _G4194)=k5_relat_1(_G4126, _G4263)), _G4059=_G4126, _G4194=_G4263]
+ (9)  [- (k1_algspec1(_G4647, _G4782)=k1_algspec1(_G4714, _G4851)), _G4647=_G4714, _G4782=_G4851]
+ (10)  [- (_G1792=_G1792)]
+ (11)  [_G1891=_G1936, - (_G1936=_G1891)]
+ (12)  [- (_G2124=_G2237), _G2124=_G2180, _G2180=_G2237]
+ (13)  [-r1_tarski(_G2641, _G2778), r1_tarski(_G2574, _G2709), _G2574=_G2641, _G2709=_G2778]
+ (14)  [-v1_relat_1(_G3220), _G3171=_G3220, v1_relat_1(_G3171)]
+ (15)  [-v1_funct_1(_G3489), _G3440=_G3489, v1_funct_1(_G3440)]
+
+Connection Proof:
+-----------------
+1  [k1_algspec1(k1_xboole_0, 1^[])=k1_xboole_0]   (3)  
+1.1  [- (k1_algspec1(k1_xboole_0, 1^[])=k1_xboole_0), k1_algspec1(k1_xboole_0, 1^[])=k5_relat_1(1^[], k1_xboole_0), k5_relat_1(1^[], k1_xboole_0)=k1_xboole_0]   (12)  substitution:[[_G2124, _G2237, _G2180], [k1_algspec1(k1_xboole_0, 1^[]), k1_xboole_0, k5_relat_1(1^[], k1_xboole_0)]]
+1.1.1  [- (k1_algspec1(k1_xboole_0, 1^[])=k5_relat_1(1^[], k1_xboole_0)), v1_funct_1(1^[]), v1_relat_1(1^[]), r1_tarski(k1_xboole_0, k9_xtuple_0(1^[]))]   (6)  substitution:[[_G5307, _G5370], [k1_xboole_0, 1^[]]]
+1.1.1.1  [-v1_funct_1(1^[])]   (2)  
+1.1.1.2  [-v1_relat_1(1^[])]   (1)  
+1.1.1.3  [-r1_tarski(k1_xboole_0, k9_xtuple_0(1^[]))]   (4)  substitution:[[_G5783], [k9_xtuple_0(1^[])]]
+1.1.2  [- (k5_relat_1(1^[], k1_xboole_0)=k1_xboole_0), v1_relat_1(1^[])]   (5)  substitution:[[_G5873], [1^[]]]
+1.1.2.1  [-v1_relat_1(1^[])]   (1)  
+------------------------------------------------------
+End of proof for t16_algspec1

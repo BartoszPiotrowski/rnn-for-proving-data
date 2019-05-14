@@ -1,0 +1,85 @@
+
+t26_quatern2 is a Theorem
+Start of proof for t26_quatern2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_quaterni(1^[])]
+ (2)  [k31_quaterni(k31_quaterni(1^[]))=1^[]]
+ (3)  [m1_subset_1(_G7053, k1_quaterni), -v1_quaterni(_G7053)]
+ (4)  [v1_quaterni(_G7210), -m1_subset_1(k18_quaterni(_G7210), k1_numbers)]
+ (5)  [v1_quaterni(_G7383), -m1_subset_1(k19_quaterni(_G7383), k1_numbers)]
+ (6)  [v1_quaterni(_G7556), -m1_subset_1(k20_quaterni(_G7556), k1_numbers)]
+ (7)  [v1_quaterni(_G7729), -m1_subset_1(k31_quaterni(_G7729), k1_quaterni)]
+ (8)  [m1_subset_1(_G7902, k1_numbers), - (k1_real_1(k1_real_1(_G7902))=_G7902)]
+ (9)  [v1_quaterni(_G8885), - (k17_quaterni(k31_quaterni(_G8885))=k17_quaterni(_G8885))]
+ (10)  [v1_quaterni(_G8885), - (k18_quaterni(k31_quaterni(_G8885))=k1_real_1(k18_quaterni(_G8885)))]
+ (11)  [v1_quaterni(_G8885), - (k19_quaterni(k31_quaterni(_G8885))=k1_real_1(k19_quaterni(_G8885)))]
+ (12)  [v1_quaterni(_G8885), - (k20_quaterni(k31_quaterni(_G8885))=k1_real_1(k20_quaterni(_G8885)))]
+ (13)  [v1_quaterni(_G8117), v1_quaterni(_G8238), - (_G8117=_G8238), k17_quaterni(_G8117)=k17_quaterni(_G8238), k18_quaterni(_G8117)=k18_quaterni(_G8238), k19_quaterni(_G8117)=k19_quaterni(_G8238), k20_quaterni(_G8117)=k20_quaterni(_G8238)]
+ (14)  [_G5268=_G5317, - (k17_quaterni(_G5268)=k17_quaterni(_G5317))]
+ (15)  [_G5546=_G5595, - (k18_quaterni(_G5546)=k18_quaterni(_G5595))]
+ (16)  [_G5824=_G5873, - (k19_quaterni(_G5824)=k19_quaterni(_G5873))]
+ (17)  [_G6102=_G6151, - (k1_real_1(_G6102)=k1_real_1(_G6151))]
+ (18)  [_G6380=_G6429, - (k20_quaterni(_G6380)=k20_quaterni(_G6429))]
+ (19)  [_G6649=_G6698, - (k31_quaterni(_G6649)=k31_quaterni(_G6698))]
+ (20)  [- (_G3578=_G3578)]
+ (21)  [_G3677=_G3722, - (_G3722=_G3677)]
+ (22)  [- (_G3910=_G4023), _G3910=_G3966, _G3966=_G4023]
+ (23)  [-v1_quaterni(_G4997), _G4948=_G4997, v1_quaterni(_G4948)]
+ (24)  [-m1_subset_1(_G4427, _G4564), m1_subset_1(_G4360, _G4495), _G4360=_G4427, _G4495=_G4564]
+
+Connection Proof:
+-----------------
+1  [k31_quaterni(k31_quaterni(1^[]))=1^[]]   (2)  
+1.1  [- (k31_quaterni(k31_quaterni(1^[]))=1^[]), v1_quaterni(k31_quaterni(k31_quaterni(1^[]))), v1_quaterni(1^[]), k17_quaterni(k31_quaterni(k31_quaterni(1^[])))=k17_quaterni(1^[]), k18_quaterni(k31_quaterni(k31_quaterni(1^[])))=k18_quaterni(1^[]), k19_quaterni(k31_quaterni(k31_quaterni(1^[])))=k19_quaterni(1^[]), k20_quaterni(k31_quaterni(k31_quaterni(1^[])))=k20_quaterni(1^[])]   (13)  substitution:[[_G8117, _G8238], [k31_quaterni(k31_quaterni(1^[])), 1^[]]]
+1.1.1  [-v1_quaterni(k31_quaterni(k31_quaterni(1^[]))), m1_subset_1(k31_quaterni(k31_quaterni(1^[])), k1_quaterni)]   (3)  substitution:[[_G7053], [k31_quaterni(k31_quaterni(1^[]))]]
+1.1.1.1  [-m1_subset_1(k31_quaterni(k31_quaterni(1^[])), k1_quaterni), v1_quaterni(k31_quaterni(1^[]))]   (7)  substitution:[[_G7729], [k31_quaterni(1^[])]]
+1.1.1.1.1  [-v1_quaterni(k31_quaterni(1^[])), m1_subset_1(k31_quaterni(1^[]), k1_quaterni)]   (3)  substitution:[[_G7053], [k31_quaterni(1^[])]]
+1.1.1.1.1.1  [-m1_subset_1(k31_quaterni(1^[]), k1_quaterni), v1_quaterni(1^[])]   (7)  substitution:[[_G7729], [1^[]]]
+1.1.1.1.1.1.1  [-v1_quaterni(1^[])]   (1)  
+1.1.2  [-v1_quaterni(1^[])]   (1)  
+1.1.3  [- (k17_quaterni(k31_quaterni(k31_quaterni(1^[])))=k17_quaterni(1^[])), k17_quaterni(k31_quaterni(k31_quaterni(1^[])))=k17_quaterni(k31_quaterni(1^[])), k17_quaterni(k31_quaterni(1^[]))=k17_quaterni(1^[])]   (22)  substitution:[[_G3910, _G4023, _G3966], [k17_quaterni(k31_quaterni(k31_quaterni(1^[]))), k17_quaterni(1^[]), k17_quaterni(k31_quaterni(1^[]))]]
+1.1.3.1  [- (k17_quaterni(k31_quaterni(k31_quaterni(1^[])))=k17_quaterni(k31_quaterni(1^[]))), v1_quaterni(k31_quaterni(1^[]))]   (9)  substitution:[[_G8885], [k31_quaterni(1^[])]]
+1.1.3.1.1  [-v1_quaterni(k31_quaterni(1^[])), m1_subset_1(k31_quaterni(1^[]), k1_quaterni)]   (3)  substitution:[[_G7053], [k31_quaterni(1^[])]]
+1.1.3.1.1.1  [-m1_subset_1(k31_quaterni(1^[]), k1_quaterni), v1_quaterni(1^[])]   (7)  substitution:[[_G7729], [1^[]]]
+1.1.3.1.1.1.1  [-v1_quaterni(1^[])]   (1)  
+1.1.3.2  [- (k17_quaterni(k31_quaterni(1^[]))=k17_quaterni(1^[])), v1_quaterni(1^[])]   (9)  substitution:[[_G8885], [1^[]]]
+1.1.3.2.1  [-v1_quaterni(1^[])]   (1)  
+1.1.4  [- (k18_quaterni(k31_quaterni(k31_quaterni(1^[])))=k18_quaterni(1^[])), k18_quaterni(k31_quaterni(k31_quaterni(1^[])))=k1_real_1(k18_quaterni(k31_quaterni(1^[]))), k1_real_1(k18_quaterni(k31_quaterni(1^[])))=k18_quaterni(1^[])]   (22)  substitution:[[_G3910, _G4023, _G3966], [k18_quaterni(k31_quaterni(k31_quaterni(1^[]))), k18_quaterni(1^[]), k1_real_1(k18_quaterni(k31_quaterni(1^[])))]]
+1.1.4.1  [- (k18_quaterni(k31_quaterni(k31_quaterni(1^[])))=k1_real_1(k18_quaterni(k31_quaterni(1^[])))), v1_quaterni(k31_quaterni(1^[]))]   (10)  substitution:[[_G8885], [k31_quaterni(1^[])]]
+1.1.4.1.1  [-v1_quaterni(k31_quaterni(1^[])), m1_subset_1(k31_quaterni(1^[]), k1_quaterni)]   (3)  substitution:[[_G7053], [k31_quaterni(1^[])]]
+1.1.4.1.1.1  [-m1_subset_1(k31_quaterni(1^[]), k1_quaterni), v1_quaterni(1^[])]   (7)  substitution:[[_G7729], [1^[]]]
+1.1.4.1.1.1.1  [-v1_quaterni(1^[])]   (1)  
+1.1.4.2  [- (k1_real_1(k18_quaterni(k31_quaterni(1^[])))=k18_quaterni(1^[])), k1_real_1(k18_quaterni(k31_quaterni(1^[])))=k1_real_1(k1_real_1(k18_quaterni(1^[]))), k1_real_1(k1_real_1(k18_quaterni(1^[])))=k18_quaterni(1^[])]   (22)  substitution:[[_G3910, _G4023, _G3966], [k1_real_1(k18_quaterni(k31_quaterni(1^[]))), k18_quaterni(1^[]), k1_real_1(k1_real_1(k18_quaterni(1^[])))]]
+1.1.4.2.1  [- (k1_real_1(k18_quaterni(k31_quaterni(1^[])))=k1_real_1(k1_real_1(k18_quaterni(1^[])))), k18_quaterni(k31_quaterni(1^[]))=k1_real_1(k18_quaterni(1^[]))]   (17)  substitution:[[_G6102, _G6151], [k18_quaterni(k31_quaterni(1^[])), k1_real_1(k18_quaterni(1^[]))]]
+1.1.4.2.1.1  [- (k18_quaterni(k31_quaterni(1^[]))=k1_real_1(k18_quaterni(1^[]))), v1_quaterni(1^[])]   (10)  substitution:[[_G8885], [1^[]]]
+1.1.4.2.1.1.1  [-v1_quaterni(1^[])]   (1)  
+1.1.4.2.2  [- (k1_real_1(k1_real_1(k18_quaterni(1^[])))=k18_quaterni(1^[])), m1_subset_1(k18_quaterni(1^[]), k1_numbers)]   (8)  substitution:[[_G7902], [k18_quaterni(1^[])]]
+1.1.4.2.2.1  [-m1_subset_1(k18_quaterni(1^[]), k1_numbers), v1_quaterni(1^[])]   (4)  substitution:[[_G7210], [1^[]]]
+1.1.4.2.2.1.1  [-v1_quaterni(1^[])]   (1)  
+1.1.5  [- (k19_quaterni(k31_quaterni(k31_quaterni(1^[])))=k19_quaterni(1^[])), k19_quaterni(k31_quaterni(k31_quaterni(1^[])))=k1_real_1(k19_quaterni(k31_quaterni(1^[]))), k1_real_1(k19_quaterni(k31_quaterni(1^[])))=k19_quaterni(1^[])]   (22)  substitution:[[_G3910, _G4023, _G3966], [k19_quaterni(k31_quaterni(k31_quaterni(1^[]))), k19_quaterni(1^[]), k1_real_1(k19_quaterni(k31_quaterni(1^[])))]]
+1.1.5.1  [- (k19_quaterni(k31_quaterni(k31_quaterni(1^[])))=k1_real_1(k19_quaterni(k31_quaterni(1^[])))), v1_quaterni(k31_quaterni(1^[]))]   (11)  substitution:[[_G8885], [k31_quaterni(1^[])]]
+1.1.5.1.1  [-v1_quaterni(k31_quaterni(1^[])), m1_subset_1(k31_quaterni(1^[]), k1_quaterni)]   (3)  substitution:[[_G7053], [k31_quaterni(1^[])]]
+1.1.5.1.1.1  [-m1_subset_1(k31_quaterni(1^[]), k1_quaterni), v1_quaterni(1^[])]   (7)  substitution:[[_G7729], [1^[]]]
+1.1.5.1.1.1.1  [-v1_quaterni(1^[])]   (1)  
+1.1.5.2  [- (k1_real_1(k19_quaterni(k31_quaterni(1^[])))=k19_quaterni(1^[])), k1_real_1(k19_quaterni(k31_quaterni(1^[])))=k1_real_1(k1_real_1(k19_quaterni(1^[]))), k1_real_1(k1_real_1(k19_quaterni(1^[])))=k19_quaterni(1^[])]   (22)  substitution:[[_G3910, _G4023, _G3966], [k1_real_1(k19_quaterni(k31_quaterni(1^[]))), k19_quaterni(1^[]), k1_real_1(k1_real_1(k19_quaterni(1^[])))]]
+1.1.5.2.1  [- (k1_real_1(k19_quaterni(k31_quaterni(1^[])))=k1_real_1(k1_real_1(k19_quaterni(1^[])))), k19_quaterni(k31_quaterni(1^[]))=k1_real_1(k19_quaterni(1^[]))]   (17)  substitution:[[_G6102, _G6151], [k19_quaterni(k31_quaterni(1^[])), k1_real_1(k19_quaterni(1^[]))]]
+1.1.5.2.1.1  [- (k19_quaterni(k31_quaterni(1^[]))=k1_real_1(k19_quaterni(1^[]))), v1_quaterni(1^[])]   (11)  substitution:[[_G8885], [1^[]]]
+1.1.5.2.1.1.1  [-v1_quaterni(1^[])]   (1)  
+1.1.5.2.2  [- (k1_real_1(k1_real_1(k19_quaterni(1^[])))=k19_quaterni(1^[])), m1_subset_1(k19_quaterni(1^[]), k1_numbers)]   (8)  substitution:[[_G7902], [k19_quaterni(1^[])]]
+1.1.5.2.2.1  [-m1_subset_1(k19_quaterni(1^[]), k1_numbers), v1_quaterni(1^[])]   (5)  substitution:[[_G7383], [1^[]]]
+1.1.5.2.2.1.1  [-v1_quaterni(1^[])]   (1)  
+1.1.6  [- (k20_quaterni(k31_quaterni(k31_quaterni(1^[])))=k20_quaterni(1^[])), k20_quaterni(k31_quaterni(k31_quaterni(1^[])))=k1_real_1(k20_quaterni(k31_quaterni(1^[]))), k1_real_1(k20_quaterni(k31_quaterni(1^[])))=k20_quaterni(1^[])]   (22)  substitution:[[_G3910, _G4023, _G3966], [k20_quaterni(k31_quaterni(k31_quaterni(1^[]))), k20_quaterni(1^[]), k1_real_1(k20_quaterni(k31_quaterni(1^[])))]]
+1.1.6.1  [- (k20_quaterni(k31_quaterni(k31_quaterni(1^[])))=k1_real_1(k20_quaterni(k31_quaterni(1^[])))), v1_quaterni(k31_quaterni(1^[]))]   (12)  substitution:[[_G8885], [k31_quaterni(1^[])]]
+1.1.6.1.1  [-v1_quaterni(k31_quaterni(1^[])), m1_subset_1(k31_quaterni(1^[]), k1_quaterni)]   (3)  substitution:[[_G7053], [k31_quaterni(1^[])]]
+1.1.6.1.1.1  [-m1_subset_1(k31_quaterni(1^[]), k1_quaterni), v1_quaterni(1^[])]   (7)  substitution:[[_G7729], [1^[]]]
+1.1.6.1.1.1.1  [-v1_quaterni(1^[])]   (1)  
+1.1.6.2  [- (k1_real_1(k20_quaterni(k31_quaterni(1^[])))=k20_quaterni(1^[])), k1_real_1(k20_quaterni(k31_quaterni(1^[])))=k1_real_1(k1_real_1(k20_quaterni(1^[]))), k1_real_1(k1_real_1(k20_quaterni(1^[])))=k20_quaterni(1^[])]   (22)  substitution:[[_G3910, _G4023, _G3966], [k1_real_1(k20_quaterni(k31_quaterni(1^[]))), k20_quaterni(1^[]), k1_real_1(k1_real_1(k20_quaterni(1^[])))]]
+1.1.6.2.1  [- (k1_real_1(k20_quaterni(k31_quaterni(1^[])))=k1_real_1(k1_real_1(k20_quaterni(1^[])))), k20_quaterni(k31_quaterni(1^[]))=k1_real_1(k20_quaterni(1^[]))]   (17)  substitution:[[_G6102, _G6151], [k20_quaterni(k31_quaterni(1^[])), k1_real_1(k20_quaterni(1^[]))]]
+1.1.6.2.1.1  [- (k20_quaterni(k31_quaterni(1^[]))=k1_real_1(k20_quaterni(1^[]))), v1_quaterni(1^[])]   (12)  substitution:[[_G8885], [1^[]]]
+1.1.6.2.1.1.1  [-v1_quaterni(1^[])]   (1)  
+1.1.6.2.2  [- (k1_real_1(k1_real_1(k20_quaterni(1^[])))=k20_quaterni(1^[])), m1_subset_1(k20_quaterni(1^[]), k1_numbers)]   (8)  substitution:[[_G7902], [k20_quaterni(1^[])]]
+1.1.6.2.2.1  [-m1_subset_1(k20_quaterni(1^[]), k1_numbers), v1_quaterni(1^[])]   (6)  substitution:[[_G7556], [1^[]]]
+1.1.6.2.2.1.1  [-v1_quaterni(1^[])]   (1)  
+------------------------------------------------------
+End of proof for t26_quatern2

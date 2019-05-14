@@ -1,0 +1,44 @@
+
+t50_integra1 is a Theorem
+Start of proof for t50_integra1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], k1_zfmisc_1(k1_numbers))]
+ (2)  [-m1_subset_1(2^[], k1_zfmisc_1(k1_numbers))]
+ (3)  [k9_member_1(k4_measure6(1^[]), k4_measure6(2^[]))=k5_member_1(k9_member_1(1^[], 2^[]))]
+ (4)  [v3_membered(_G5764), -v1_membered(_G5764)]
+ (5)  [m1_subset_1(_G5895, k1_zfmisc_1(k1_numbers)), -v3_membered(_G5895)]
+ (6)  [m1_subset_1(_G6474, k1_zfmisc_1(k1_numbers)), - (k4_measure6(_G6474)=k5_member_1(_G6474))]
+ (7)  [v1_membered(_G6066), v1_membered(_G6159), - (k5_member_1(k9_member_1(_G6066, _G6159))=k9_member_1(k5_member_1(_G6066), k5_member_1(_G6159)))]
+ (8)  [_G4258=_G4307, - (k1_zfmisc_1(_G4258)=k1_zfmisc_1(_G4307))]
+ (9)  [_G4536=_G4585, - (k4_measure6(_G4536)=k4_measure6(_G4585))]
+ (10)  [_G4814=_G4863, - (k5_member_1(_G4814)=k5_member_1(_G4863))]
+ (11)  [- (k9_member_1(_G5083, _G5218)=k9_member_1(_G5150, _G5287)), _G5083=_G5150, _G5218=_G5287]
+ (12)  [- (_G2269=_G2269)]
+ (13)  [_G2368=_G2413, - (_G2413=_G2368)]
+ (14)  [- (_G2601=_G2714), _G2601=_G2657, _G2657=_G2714]
+ (15)  [-v3_membered(_G3100), _G3051=_G3100, v3_membered(_G3051)]
+ (16)  [-v1_membered(_G3378), _G3329=_G3378, v1_membered(_G3329)]
+ (17)  [-m1_subset_1(_G3665, _G3802), m1_subset_1(_G3598, _G3733), _G3598=_G3665, _G3733=_G3802]
+
+Connection Proof:
+-----------------
+1  [k9_member_1(k4_measure6(1^[]), k4_measure6(2^[]))=k5_member_1(k9_member_1(1^[], 2^[]))]   (3)  
+1.1  [- (k9_member_1(k4_measure6(1^[]), k4_measure6(2^[]))=k5_member_1(k9_member_1(1^[], 2^[]))), k5_member_1(k9_member_1(1^[], 2^[]))=k9_member_1(k4_measure6(1^[]), k4_measure6(2^[]))]   (13)  substitution:[[_G2413, _G2368], [k9_member_1(k4_measure6(1^[]), k4_measure6(2^[])), k5_member_1(k9_member_1(1^[], 2^[]))]]
+1.1.1  [- (k5_member_1(k9_member_1(1^[], 2^[]))=k9_member_1(k4_measure6(1^[]), k4_measure6(2^[]))), k5_member_1(k9_member_1(1^[], 2^[]))=k9_member_1(k5_member_1(1^[]), k5_member_1(2^[])), k9_member_1(k5_member_1(1^[]), k5_member_1(2^[]))=k9_member_1(k4_measure6(1^[]), k4_measure6(2^[]))]   (14)  substitution:[[_G2601, _G2714, _G2657], [k5_member_1(k9_member_1(1^[], 2^[])), k9_member_1(k4_measure6(1^[]), k4_measure6(2^[])), k9_member_1(k5_member_1(1^[]), k5_member_1(2^[]))]]
+1.1.1.1  [- (k5_member_1(k9_member_1(1^[], 2^[]))=k9_member_1(k5_member_1(1^[]), k5_member_1(2^[]))), v1_membered(1^[]), v1_membered(2^[])]   (7)  substitution:[[_G6066, _G6159], [1^[], 2^[]]]
+1.1.1.1.1  [-v1_membered(1^[]), v3_membered(1^[])]   (4)  substitution:[[_G5764], [1^[]]]
+1.1.1.1.1.1  [-v3_membered(1^[]), m1_subset_1(1^[], k1_zfmisc_1(k1_numbers))]   (5)  substitution:[[_G5895], [1^[]]]
+1.1.1.1.1.1.1  [-m1_subset_1(1^[], k1_zfmisc_1(k1_numbers))]   (1)  
+1.1.1.1.2  [-v1_membered(2^[]), v3_membered(2^[])]   (4)  substitution:[[_G5764], [2^[]]]
+1.1.1.1.2.1  [-v3_membered(2^[]), m1_subset_1(2^[], k1_zfmisc_1(k1_numbers))]   (5)  substitution:[[_G5895], [2^[]]]
+1.1.1.1.2.1.1  [-m1_subset_1(2^[], k1_zfmisc_1(k1_numbers))]   (2)  
+1.1.1.2  [- (k9_member_1(k5_member_1(1^[]), k5_member_1(2^[]))=k9_member_1(k4_measure6(1^[]), k4_measure6(2^[]))), k5_member_1(1^[])=k4_measure6(1^[]), k5_member_1(2^[])=k4_measure6(2^[])]   (11)  substitution:[[_G5083, _G5218, _G5150, _G5287], [k5_member_1(1^[]), k5_member_1(2^[]), k4_measure6(1^[]), k4_measure6(2^[])]]
+1.1.1.2.1  [- (k5_member_1(1^[])=k4_measure6(1^[])), k4_measure6(1^[])=k5_member_1(1^[])]   (13)  substitution:[[_G2413, _G2368], [k5_member_1(1^[]), k4_measure6(1^[])]]
+1.1.1.2.1.1  [- (k4_measure6(1^[])=k5_member_1(1^[])), m1_subset_1(1^[], k1_zfmisc_1(k1_numbers))]   (6)  substitution:[[_G6474], [1^[]]]
+1.1.1.2.1.1.1  [-m1_subset_1(1^[], k1_zfmisc_1(k1_numbers))]   (1)  
+1.1.1.2.2  [- (k5_member_1(2^[])=k4_measure6(2^[])), k4_measure6(2^[])=k5_member_1(2^[])]   (13)  substitution:[[_G2413, _G2368], [k5_member_1(2^[]), k4_measure6(2^[])]]
+1.1.1.2.2.1  [- (k4_measure6(2^[])=k5_member_1(2^[])), m1_subset_1(2^[], k1_zfmisc_1(k1_numbers))]   (6)  substitution:[[_G6474], [2^[]]]
+1.1.1.2.2.1.1  [-m1_subset_1(2^[], k1_zfmisc_1(k1_numbers))]   (2)  
+------------------------------------------------------
+End of proof for t50_integra1

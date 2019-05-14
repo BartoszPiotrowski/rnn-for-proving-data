@@ -1,0 +1,47 @@
+
+t7_taxonom2 is a Theorem
+Start of proof for t7_taxonom2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v3_taxonom2(k1_tarski(k1_xboole_0))]
+ (2)  [_G5300=_G5351, -r1_tarski(_G5300, _G5351)]
+ (3)  [_G5300=_G5351, -r1_tarski(_G5351, _G5300)]
+ (4)  [- (_G5300=_G5351), r1_tarski(_G5300, _G5351), r1_tarski(_G5351, _G5300)]
+ (5)  [- (np__1=k1_tarski(k1_xboole_0))]
+ (6)  [-v3_taxonom2(_G6052), -r2_hidden(2^[_G6052], _G6052)]
+ (7)  [-v3_taxonom2(_G6052), -r2_hidden(3^[_G6052], _G6052)]
+ (8)  [-v3_taxonom2(_G6052), r1_tarski(2^[_G6052], 3^[_G6052])]
+ (9)  [-v3_taxonom2(_G6052), r1_tarski(3^[_G6052], 2^[_G6052])]
+ (10)  [-v3_taxonom2(_G6052), r1_xboole_0(2^[_G6052], 3^[_G6052])]
+ (11)  [v3_taxonom2(_G6052), r2_hidden(_G6165, _G6052), r2_hidden(_G6242, _G6052), -r1_tarski(_G6165, _G6242), -r1_tarski(_G6242, _G6165), -r1_xboole_0(_G6165, _G6242)]
+ (12)  [_G5690=k1_tarski(_G5632), r2_hidden(_G5820, _G5690), - (_G5820=_G5632)]
+ (13)  [_G5690=k1_tarski(_G5632), -r2_hidden(_G5820, _G5690), _G5820=_G5632]
+ (14)  [- (_G5690=k1_tarski(_G5632)), r2_hidden(1^[_G5690, _G5632], _G5690), 1^[_G5690, _G5632]=_G5632]
+ (15)  [- (_G5690=k1_tarski(_G5632)), -r2_hidden(1^[_G5690, _G5632], _G5690), - (1^[_G5690, _G5632]=_G5632)]
+ (16)  [_G5001=_G5050, - (k1_tarski(_G5001)=k1_tarski(_G5050))]
+ (17)  [- (_G2084=_G2084)]
+ (18)  [_G2183=_G2228, - (_G2228=_G2183)]
+ (19)  [- (_G2416=_G2529), _G2416=_G2472, _G2472=_G2529]
+ (20)  [-r2_hidden(_G2933, _G3070), r2_hidden(_G2866, _G3001), _G2866=_G2933, _G3001=_G3070]
+ (21)  [-r1_tarski(_G3530, _G3667), r1_tarski(_G3463, _G3598), _G3463=_G3530, _G3598=_G3667]
+ (22)  [-v3_taxonom2(_G4697), _G4648=_G4697, v3_taxonom2(_G4648)]
+ (23)  [-r1_xboole_0(_G4127, _G4264), r1_xboole_0(_G4060, _G4195), _G4060=_G4127, _G4195=_G4264]
+
+Connection Proof:
+-----------------
+1  [v3_taxonom2(k1_tarski(k1_xboole_0))]   (1)  
+1.1  [-v3_taxonom2(k1_tarski(k1_xboole_0)), r1_tarski(2^[k1_tarski(k1_xboole_0)], 3^[k1_tarski(k1_xboole_0)])]   (8)  substitution:[[_G6052], [k1_tarski(k1_xboole_0)]]
+1.1.1  [-r1_tarski(2^[k1_tarski(k1_xboole_0)], 3^[k1_tarski(k1_xboole_0)]), r1_tarski(2^[k1_tarski(k1_xboole_0)], k1_xboole_0), 2^[k1_tarski(k1_xboole_0)]=2^[k1_tarski(k1_xboole_0)], k1_xboole_0=3^[k1_tarski(k1_xboole_0)]]   (21)  substitution:[[_G3530, _G3667, _G3463, _G3598], [2^[k1_tarski(k1_xboole_0)], 3^[k1_tarski(k1_xboole_0)], 2^[k1_tarski(k1_xboole_0)], k1_xboole_0]]
+1.1.1.1  [-r1_tarski(2^[k1_tarski(k1_xboole_0)], k1_xboole_0), 2^[k1_tarski(k1_xboole_0)]=k1_xboole_0]   (2)  substitution:[[_G5300, _G5351], [2^[k1_tarski(k1_xboole_0)], k1_xboole_0]]
+1.1.1.1.1  [- (2^[k1_tarski(k1_xboole_0)]=k1_xboole_0), k1_tarski(k1_xboole_0)=k1_tarski(k1_xboole_0), r2_hidden(2^[k1_tarski(k1_xboole_0)], k1_tarski(k1_xboole_0))]   (12)  substitution:[[_G5820, _G5632, _G5690], [2^[k1_tarski(k1_xboole_0)], k1_xboole_0, k1_tarski(k1_xboole_0)]]
+1.1.1.1.1.1  [- (k1_tarski(k1_xboole_0)=k1_tarski(k1_xboole_0))]   (17)  substitution:[[_G2084], [k1_tarski(k1_xboole_0)]]
+1.1.1.1.1.2  [-r2_hidden(2^[k1_tarski(k1_xboole_0)], k1_tarski(k1_xboole_0)), -v3_taxonom2(k1_tarski(k1_xboole_0))]   (6)  substitution:[[_G6052], [k1_tarski(k1_xboole_0)]]
+1.1.1.1.1.2.1  [v3_taxonom2(k1_tarski(k1_xboole_0))]   (1)  
+1.1.1.2  [- (2^[k1_tarski(k1_xboole_0)]=2^[k1_tarski(k1_xboole_0)])]   (17)  substitution:[[_G2084], [2^[k1_tarski(k1_xboole_0)]]]
+1.1.1.3  [- (k1_xboole_0=3^[k1_tarski(k1_xboole_0)]), 3^[k1_tarski(k1_xboole_0)]=k1_xboole_0]   (18)  substitution:[[_G2228, _G2183], [k1_xboole_0, 3^[k1_tarski(k1_xboole_0)]]]
+1.1.1.3.1  [- (3^[k1_tarski(k1_xboole_0)]=k1_xboole_0), k1_tarski(k1_xboole_0)=k1_tarski(k1_xboole_0), r2_hidden(3^[k1_tarski(k1_xboole_0)], k1_tarski(k1_xboole_0))]   (12)  substitution:[[_G5820, _G5632, _G5690], [3^[k1_tarski(k1_xboole_0)], k1_xboole_0, k1_tarski(k1_xboole_0)]]
+1.1.1.3.1.1  [- (k1_tarski(k1_xboole_0)=k1_tarski(k1_xboole_0))]   (17)  substitution:[[_G2084], [k1_tarski(k1_xboole_0)]]
+1.1.1.3.1.2  [-r2_hidden(3^[k1_tarski(k1_xboole_0)], k1_tarski(k1_xboole_0)), -v3_taxonom2(k1_tarski(k1_xboole_0))]   (7)  substitution:[[_G6052], [k1_tarski(k1_xboole_0)]]
+1.1.1.3.1.2.1  [v3_taxonom2(k1_tarski(k1_xboole_0))]   (1)  
+------------------------------------------------------
+End of proof for t7_taxonom2

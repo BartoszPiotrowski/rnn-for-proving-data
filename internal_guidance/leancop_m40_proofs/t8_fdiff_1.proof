@@ -1,0 +1,39 @@
+
+t8_fdiff_1 is a Theorem
+Start of proof for t8_fdiff_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_funct_1(3^[])]
+ (2)  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]
+ (3)  [-r2_fdiff_1(3^[], 2^[])]
+ (4)  [m1_subset_1(2^[], k1_zfmisc_1(k1_numbers))]
+ (5)  [m1_subset_1(_G1476, k1_zfmisc_1(k2_zfmisc_1(_G1367, _G1421))), -v1_relat_1(_G1476)]
+ (6)  [m1_subset_1(_G1842, k1_zfmisc_1(k2_zfmisc_1(_G1719, _G1780))), -v4_relat_1(_G1842, _G1719)]
+ (7)  [m1_subset_1(_G1842, k1_zfmisc_1(k2_zfmisc_1(_G1719, _G1780))), -v5_relat_1(_G1842, _G1780)]
+ (8)  [m1_subset_1(_G2195, k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(_G2195), -r2_fdiff_1(_G2195, _G2445), r1_tarski(_G2445, k1_relset_1(k1_numbers, _G2195)), -m1_subset_1(1^[_G2445, _G2195], k1_numbers)]
+ (9)  [m1_subset_1(_G2195, k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(_G2195), -r2_fdiff_1(_G2195, _G2445), r1_tarski(_G2445, k1_relset_1(k1_numbers, _G2195)), -r2_hidden(1^[_G2445, _G2195], _G2445)]
+ (10)  [m1_subset_1(_G2195, k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(_G2195), -r2_fdiff_1(_G2195, _G2445), r1_tarski(_G2445, k1_relset_1(k1_numbers, _G2195)), r1_fdiff_1(k2_partfun1(k1_numbers, k1_numbers, _G2195, _G2445), 1^[_G2445, _G2195])]
+ (11)  [m1_subset_1(_G2195, k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(_G2195), r2_fdiff_1(_G2195, _G2445), -r1_tarski(_G2445, k1_relset_1(k1_numbers, _G2195))]
+ (12)  [m1_subset_1(_G2195, k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(_G2195), r2_fdiff_1(_G2195, _G2445), m1_subset_1(_G2675, k1_numbers), r2_hidden(_G2675, _G2445), -r1_fdiff_1(k2_partfun1(k1_numbers, k1_numbers, _G2195, _G2445), _G2675)]
+ (13)  [-m1_subset_1(k1_relset_1(_G3163, _G3218), k1_zfmisc_1(_G3163)), v1_relat_1(_G3218), v4_relat_1(_G3218, _G3163)]
+ (14)  [-r1_tarski(_G3531, _G3644), r1_tarski(_G3531, _G3587), r1_tarski(_G3587, _G3644)]
+ (15)  [m1_subset_1(_G3930, k1_zfmisc_1(_G3977)), -r1_tarski(_G3930, _G3977)]
+ (16)  [-m1_subset_1(_G3930, k1_zfmisc_1(_G3977)), r1_tarski(_G3930, _G3977)]
+
+Connection Proof:
+-----------------
+1  [m1_subset_1(2^[], k1_zfmisc_1(k1_numbers))]   (4)  
+1.1  [-m1_subset_1(2^[], k1_zfmisc_1(k1_numbers)), r1_tarski(2^[], k1_numbers)]   (16)  substitution:[[_G3930, _G3977], [2^[], k1_numbers]]
+1.1.1  [-r1_tarski(2^[], k1_numbers), r1_tarski(2^[], k1_relset_1(k1_numbers, 3^[])), r1_tarski(k1_relset_1(k1_numbers, 3^[]), k1_numbers)]   (14)  substitution:[[_G3531, _G3644, _G3587], [2^[], k1_numbers, k1_relset_1(k1_numbers, 3^[])]]
+1.1.1.1  [-r1_tarski(2^[], k1_relset_1(k1_numbers, 3^[])), m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers))), v1_funct_1(3^[]), r2_fdiff_1(3^[], 2^[])]   (11)  substitution:[[_G2445, _G2195], [2^[], 3^[]]]
+1.1.1.1.1  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]   (2)  
+1.1.1.1.2  [-v1_funct_1(3^[])]   (1)  
+1.1.1.1.3  [-r2_fdiff_1(3^[], 2^[])]   (3)  
+1.1.1.2  [-r1_tarski(k1_relset_1(k1_numbers, 3^[]), k1_numbers), m1_subset_1(k1_relset_1(k1_numbers, 3^[]), k1_zfmisc_1(k1_numbers))]   (15)  substitution:[[_G3930, _G3977], [k1_relset_1(k1_numbers, 3^[]), k1_numbers]]
+1.1.1.2.1  [-m1_subset_1(k1_relset_1(k1_numbers, 3^[]), k1_zfmisc_1(k1_numbers)), v1_relat_1(3^[]), v4_relat_1(3^[], k1_numbers)]   (13)  substitution:[[_G3163, _G3218], [k1_numbers, 3^[]]]
+1.1.1.2.1.1  [-v1_relat_1(3^[]), m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]   (5)  substitution:[[_G1476, _G1367, _G1421], [3^[], k1_numbers, k1_numbers]]
+1.1.1.2.1.1.1  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]   (2)  
+1.1.1.2.1.2  [-v4_relat_1(3^[], k1_numbers), m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]   (6)  substitution:[[_G1842, _G1719, _G1780], [3^[], k1_numbers, k1_numbers]]
+1.1.1.2.1.2.1  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]   (2)  
+------------------------------------------------------
+End of proof for t8_fdiff_1

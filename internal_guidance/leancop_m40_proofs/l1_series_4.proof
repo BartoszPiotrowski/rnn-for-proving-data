@@ -1,0 +1,69 @@
+
+l1_series_4 is a Theorem
+Start of proof for l1_series_4
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xreal_0(1^[])]
+ (2)  [-v1_xreal_0(2^[])]
+ (3)  [np__4=k13_newton(np__2, np__2), k1_newton(k2_xcmplx_0(1^[], 2^[]), np__2)=k2_xcmplx_0(k2_xcmplx_0(k1_newton(1^[], np__2), k3_xcmplx_0(k3_xcmplx_0(np__2, 1^[]), 2^[])), k1_newton(2^[], np__2))]
+ (4)  [m1_subset_1(_G9957, k1_numbers), -v1_xcmplx_0(_G9957)]
+ (5)  [v1_xreal_0(_G10114), -v1_xcmplx_0(_G10114)]
+ (6)  [-v1_xreal_0(k2_xcmplx_0(_G10245, _G10296)), v1_xreal_0(_G10245), v1_xreal_0(_G10296)]
+ (7)  [v1_xreal_0(_G10541), - (k3_square_1(_G10541)=k1_newton(_G10541, np__2))]
+ (8)  [- (k13_newton(_G10756, _G10813)=k1_newton(_G10756, _G10813)), m1_subset_1(_G10756, k5_numbers), m1_subset_1(_G10813, k5_numbers)]
+ (9)  [- (k3_xcmplx_0(np__2, np__2)=np__4)]
+ (10)  [-v2_xxreal_0(np__2)]
+ (11)  [-m2_subset_1(np__2, k1_numbers, k5_numbers)]
+ (12)  [-m1_subset_1(np__2, k5_numbers)]
+ (13)  [-m1_subset_1(np__2, k1_numbers)]
+ (14)  [v1_xcmplx_0(_G11583), - (k3_xcmplx_0(_G11583, _G11583)=k1_newton(_G11583, np__2))]
+ (15)  [v1_xcmplx_0(_G11815), v1_xcmplx_0(_G11917), - (k3_square_1(k2_xcmplx_0(_G11815, _G11917))=k2_xcmplx_0(k2_xcmplx_0(k3_square_1(_G11815), k3_xcmplx_0(k3_xcmplx_0(np__2, _G11815), _G11917)), k3_square_1(_G11917)))]
+ (16)  [_G7195=_G7244, - (k3_square_1(_G7195)=k3_square_1(_G7244))]
+ (17)  [- (k13_newton(_G7473, _G7608)=k13_newton(_G7540, _G7677)), _G7473=_G7540, _G7608=_G7677]
+ (18)  [- (k2_xcmplx_0(_G8070, _G8205)=k2_xcmplx_0(_G8137, _G8274)), _G8070=_G8137, _G8205=_G8274]
+ (19)  [- (k3_xcmplx_0(_G8667, _G8802)=k3_xcmplx_0(_G8734, _G8871)), _G8667=_G8734, _G8802=_G8871]
+ (20)  [- (k1_newton(_G9255, _G9390)=k1_newton(_G9322, _G9459)), _G9255=_G9322, _G9390=_G9459]
+ (21)  [- (_G3858=_G3858)]
+ (22)  [_G3957=_G4002, - (_G4002=_G3957)]
+ (23)  [- (_G4190=_G4303), _G4190=_G4246, _G4246=_G4303]
+ (24)  [-v2_xxreal_0(_G4689), _G4640=_G4689, v2_xxreal_0(_G4640)]
+ (25)  [-m2_subset_1(_G5003, _G5176, _G5353), m2_subset_1(_G4918, _G5089, _G5264), _G4918=_G5003, _G5089=_G5176, _G5264=_G5353]
+ (26)  [-m1_subset_1(_G6013, _G6150), m1_subset_1(_G5946, _G6081), _G5946=_G6013, _G6081=_G6150]
+ (27)  [-v1_xcmplx_0(_G6592), _G6543=_G6592, v1_xcmplx_0(_G6543)]
+ (28)  [-v1_xreal_0(_G6861), _G6812=_G6861, v1_xreal_0(_G6812)]
+
+Connection Proof:
+-----------------
+1  [np__4=k13_newton(np__2, np__2), k1_newton(k2_xcmplx_0(1^[], 2^[]), np__2)=k2_xcmplx_0(k2_xcmplx_0(k1_newton(1^[], np__2), k3_xcmplx_0(k3_xcmplx_0(np__2, 1^[]), 2^[])), k1_newton(2^[], np__2))]   (3)  
+1.1  [- (np__4=k13_newton(np__2, np__2)), np__4=k3_xcmplx_0(np__2, np__2), k3_xcmplx_0(np__2, np__2)=k13_newton(np__2, np__2)]   (23)  substitution:[[_G4190, _G4303, _G4246], [np__4, k13_newton(np__2, np__2), k3_xcmplx_0(np__2, np__2)]]
+1.1.1  [- (np__4=k3_xcmplx_0(np__2, np__2)), k3_xcmplx_0(np__2, np__2)=np__4]   (22)  substitution:[[_G4002, _G3957], [np__4, k3_xcmplx_0(np__2, np__2)]]
+1.1.1.1  [- (k3_xcmplx_0(np__2, np__2)=np__4)]   (9)  
+1.1.2  [- (k3_xcmplx_0(np__2, np__2)=k13_newton(np__2, np__2)), k3_xcmplx_0(np__2, np__2)=k1_newton(np__2, np__2), k1_newton(np__2, np__2)=k13_newton(np__2, np__2)]   (23)  substitution:[[_G4190, _G4303, _G4246], [k3_xcmplx_0(np__2, np__2), k13_newton(np__2, np__2), k1_newton(np__2, np__2)]]
+1.1.2.1  [- (k3_xcmplx_0(np__2, np__2)=k1_newton(np__2, np__2)), v1_xcmplx_0(np__2)]   (14)  substitution:[[_G11583], [np__2]]
+1.1.2.1.1  [-v1_xcmplx_0(np__2), m1_subset_1(np__2, k1_numbers)]   (4)  substitution:[[_G9957], [np__2]]
+1.1.2.1.1.1  [-m1_subset_1(np__2, k1_numbers)]   (13)  
+1.1.2.2  [- (k1_newton(np__2, np__2)=k13_newton(np__2, np__2)), k13_newton(np__2, np__2)=k1_newton(np__2, np__2)]   (22)  substitution:[[_G4002, _G3957], [k1_newton(np__2, np__2), k13_newton(np__2, np__2)]]
+1.1.2.2.1  [- (k13_newton(np__2, np__2)=k1_newton(np__2, np__2)), m1_subset_1(np__2, k5_numbers), m1_subset_1(np__2, k5_numbers)]   (8)  substitution:[[_G10756, _G10813], [np__2, np__2]]
+1.1.2.2.1.1  [-m1_subset_1(np__2, k5_numbers)]   (12)  
+1.1.2.2.1.2  [-m1_subset_1(np__2, k5_numbers)]   (12)  
+1.2  [- (k1_newton(k2_xcmplx_0(1^[], 2^[]), np__2)=k2_xcmplx_0(k2_xcmplx_0(k1_newton(1^[], np__2), k3_xcmplx_0(k3_xcmplx_0(np__2, 1^[]), 2^[])), k1_newton(2^[], np__2))), k1_newton(k2_xcmplx_0(1^[], 2^[]), np__2)=k3_square_1(k2_xcmplx_0(1^[], 2^[])), k3_square_1(k2_xcmplx_0(1^[], 2^[]))=k2_xcmplx_0(k2_xcmplx_0(k1_newton(1^[], np__2), k3_xcmplx_0(k3_xcmplx_0(np__2, 1^[]), 2^[])), k1_newton(2^[], np__2))]   (23)  substitution:[[_G4190, _G4303, _G4246], [k1_newton(k2_xcmplx_0(1^[], 2^[]), np__2), k2_xcmplx_0(k2_xcmplx_0(k1_newton(1^[], np__2), k3_xcmplx_0(k3_xcmplx_0(np__2, 1^[]), 2^[])), k1_newton(2^[], np__2)), k3_square_1(k2_xcmplx_0(1^[], 2^[]))]]
+1.2.1  [- (k1_newton(k2_xcmplx_0(1^[], 2^[]), np__2)=k3_square_1(k2_xcmplx_0(1^[], 2^[]))), k3_square_1(k2_xcmplx_0(1^[], 2^[]))=k1_newton(k2_xcmplx_0(1^[], 2^[]), np__2)]   (22)  substitution:[[_G4002, _G3957], [k1_newton(k2_xcmplx_0(1^[], 2^[]), np__2), k3_square_1(k2_xcmplx_0(1^[], 2^[]))]]
+1.2.1.1  [- (k3_square_1(k2_xcmplx_0(1^[], 2^[]))=k1_newton(k2_xcmplx_0(1^[], 2^[]), np__2)), v1_xreal_0(k2_xcmplx_0(1^[], 2^[]))]   (7)  substitution:[[_G10541], [k2_xcmplx_0(1^[], 2^[])]]
+1.2.1.1.1  [-v1_xreal_0(k2_xcmplx_0(1^[], 2^[])), v1_xreal_0(1^[]), v1_xreal_0(2^[])]   (6)  substitution:[[_G10245, _G10296], [1^[], 2^[]]]
+1.2.1.1.1.1  [-v1_xreal_0(1^[])]   (1)  
+1.2.1.1.1.2  [-v1_xreal_0(2^[])]   (2)  
+1.2.2  [- (k3_square_1(k2_xcmplx_0(1^[], 2^[]))=k2_xcmplx_0(k2_xcmplx_0(k1_newton(1^[], np__2), k3_xcmplx_0(k3_xcmplx_0(np__2, 1^[]), 2^[])), k1_newton(2^[], np__2))), k3_square_1(k2_xcmplx_0(1^[], 2^[]))=k2_xcmplx_0(k2_xcmplx_0(k3_square_1(1^[]), k3_xcmplx_0(k3_xcmplx_0(np__2, 1^[]), 2^[])), k3_square_1(2^[])), k2_xcmplx_0(k2_xcmplx_0(k3_square_1(1^[]), k3_xcmplx_0(k3_xcmplx_0(np__2, 1^[]), 2^[])), k3_square_1(2^[]))=k2_xcmplx_0(k2_xcmplx_0(k1_newton(1^[], np__2), k3_xcmplx_0(k3_xcmplx_0(np__2, 1^[]), 2^[])), k1_newton(2^[], np__2))]   (23)  substitution:[[_G4190, _G4303, _G4246], [k3_square_1(k2_xcmplx_0(1^[], 2^[])), k2_xcmplx_0(k2_xcmplx_0(k1_newton(1^[], np__2), k3_xcmplx_0(k3_xcmplx_0(np__2, 1^[]), 2^[])), k1_newton(2^[], np__2)), k2_xcmplx_0(k2_xcmplx_0(k3_square_1(1^[]), k3_xcmplx_0(k3_xcmplx_0(np__2, 1^[]), 2^[])), k3_square_1(2^[]))]]
+1.2.2.1  [- (k3_square_1(k2_xcmplx_0(1^[], 2^[]))=k2_xcmplx_0(k2_xcmplx_0(k3_square_1(1^[]), k3_xcmplx_0(k3_xcmplx_0(np__2, 1^[]), 2^[])), k3_square_1(2^[]))), v1_xcmplx_0(1^[]), v1_xcmplx_0(2^[])]   (15)  substitution:[[_G11815, _G11917], [1^[], 2^[]]]
+1.2.2.1.1  [-v1_xcmplx_0(1^[]), v1_xreal_0(1^[])]   (5)  substitution:[[_G10114], [1^[]]]
+1.2.2.1.1.1  [-v1_xreal_0(1^[])]   (1)  
+1.2.2.1.2  [-v1_xcmplx_0(2^[]), v1_xreal_0(2^[])]   (5)  substitution:[[_G10114], [2^[]]]
+1.2.2.1.2.1  [-v1_xreal_0(2^[])]   (2)  
+1.2.2.2  [- (k2_xcmplx_0(k2_xcmplx_0(k3_square_1(1^[]), k3_xcmplx_0(k3_xcmplx_0(np__2, 1^[]), 2^[])), k3_square_1(2^[]))=k2_xcmplx_0(k2_xcmplx_0(k1_newton(1^[], np__2), k3_xcmplx_0(k3_xcmplx_0(np__2, 1^[]), 2^[])), k1_newton(2^[], np__2))), k2_xcmplx_0(k3_square_1(1^[]), k3_xcmplx_0(k3_xcmplx_0(np__2, 1^[]), 2^[]))=k2_xcmplx_0(k1_newton(1^[], np__2), k3_xcmplx_0(k3_xcmplx_0(np__2, 1^[]), 2^[])), k3_square_1(2^[])=k1_newton(2^[], np__2)]   (18)  substitution:[[_G8070, _G8205, _G8137, _G8274], [k2_xcmplx_0(k3_square_1(1^[]), k3_xcmplx_0(k3_xcmplx_0(np__2, 1^[]), 2^[])), k3_square_1(2^[]), k2_xcmplx_0(k1_newton(1^[], np__2), k3_xcmplx_0(k3_xcmplx_0(np__2, 1^[]), 2^[])), k1_newton(2^[], np__2)]]
+1.2.2.2.1  [- (k2_xcmplx_0(k3_square_1(1^[]), k3_xcmplx_0(k3_xcmplx_0(np__2, 1^[]), 2^[]))=k2_xcmplx_0(k1_newton(1^[], np__2), k3_xcmplx_0(k3_xcmplx_0(np__2, 1^[]), 2^[]))), k3_square_1(1^[])=k1_newton(1^[], np__2), k3_xcmplx_0(k3_xcmplx_0(np__2, 1^[]), 2^[])=k3_xcmplx_0(k3_xcmplx_0(np__2, 1^[]), 2^[])]   (18)  substitution:[[_G8070, _G8205, _G8137, _G8274], [k3_square_1(1^[]), k3_xcmplx_0(k3_xcmplx_0(np__2, 1^[]), 2^[]), k1_newton(1^[], np__2), k3_xcmplx_0(k3_xcmplx_0(np__2, 1^[]), 2^[])]]
+1.2.2.2.1.1  [- (k3_square_1(1^[])=k1_newton(1^[], np__2)), v1_xreal_0(1^[])]   (7)  substitution:[[_G10541], [1^[]]]
+1.2.2.2.1.1.1  [-v1_xreal_0(1^[])]   (1)  
+1.2.2.2.1.2  [- (k3_xcmplx_0(k3_xcmplx_0(np__2, 1^[]), 2^[])=k3_xcmplx_0(k3_xcmplx_0(np__2, 1^[]), 2^[]))]   (21)  substitution:[[_G3858], [k3_xcmplx_0(k3_xcmplx_0(np__2, 1^[]), 2^[])]]
+1.2.2.2.2  [- (k3_square_1(2^[])=k1_newton(2^[], np__2)), v1_xreal_0(2^[])]   (7)  substitution:[[_G10541], [2^[]]]
+1.2.2.2.2.1  [-v1_xreal_0(2^[])]   (2)  
+------------------------------------------------------
+End of proof for l1_series_4

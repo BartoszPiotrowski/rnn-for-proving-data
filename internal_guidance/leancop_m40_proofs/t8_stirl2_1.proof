@@ -1,0 +1,47 @@
+
+t8_stirl2_1 is a Theorem
+Start of proof for t8_stirl2_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v7_ordinal1(2^[])]
+ (2)  [m1_subset_1(2^[], k1_zfmisc_1(k5_numbers))]
+ (3)  [v3_ordinal1(_G6647), -v1_ordinal1(_G6647)]
+ (4)  [v3_ordinal1(_G6647), -v2_ordinal1(_G6647)]
+ (5)  [v7_ordinal1(_G6836), -r2_hidden(_G6836, k4_ordinal1)]
+ (6)  [-v7_ordinal1(_G6836), r2_hidden(_G6836, k4_ordinal1)]
+ (7)  [v1_xboole_0(k4_ordinal1)]
+ (8)  [-v3_ordinal1(k4_ordinal1)]
+ (9)  [- (k5_numbers=k4_ordinal1)]
+ (10)  [m1_subset_1(_G7440, k1_zfmisc_1(_G7487)), -r1_tarski(_G7440, _G7487)]
+ (11)  [-m1_subset_1(_G7440, k1_zfmisc_1(_G7487)), r1_tarski(_G7440, _G7487)]
+ (12)  [-v1_ordinal1(_G6993), -r2_hidden(1^[_G6993], _G6993)]
+ (13)  [-v1_ordinal1(_G6993), r1_tarski(1^[_G6993], _G6993)]
+ (14)  [v1_ordinal1(_G6993), r2_hidden(_G7075, _G6993), -r1_tarski(_G7075, _G6993)]
+ (15)  [_G6348=_G6397, - (k1_zfmisc_1(_G6348)=k1_zfmisc_1(_G6397))]
+ (16)  [- (_G2235=_G2235)]
+ (17)  [_G2334=_G2379, - (_G2379=_G2334)]
+ (18)  [- (_G2567=_G2680), _G2567=_G2623, _G2623=_G2680]
+ (19)  [-v2_ordinal1(_G3066), _G3017=_G3066, v2_ordinal1(_G3017)]
+ (20)  [-v1_ordinal1(_G3344), _G3295=_G3344, v1_ordinal1(_G3295)]
+ (21)  [-r2_hidden(_G3640, _G3777), r2_hidden(_G3573, _G3708), _G3573=_G3640, _G3708=_G3777]
+ (22)  [-v1_xboole_0(_G4219), _G4170=_G4219, v1_xboole_0(_G4170)]
+ (23)  [-v3_ordinal1(_G4497), _G4448=_G4497, v3_ordinal1(_G4448)]
+ (24)  [-r1_tarski(_G4793, _G4930), r1_tarski(_G4726, _G4861), _G4726=_G4793, _G4861=_G4930]
+ (25)  [-v7_ordinal1(_G5372), _G5323=_G5372, v7_ordinal1(_G5323)]
+ (26)  [-m1_subset_1(_G5659, _G5796), m1_subset_1(_G5592, _G5727), _G5592=_G5659, _G5727=_G5796]
+
+Connection Proof:
+-----------------
+1  [m1_subset_1(2^[], k1_zfmisc_1(k5_numbers))]   (2)  
+1.1  [-m1_subset_1(2^[], k1_zfmisc_1(k5_numbers)), r1_tarski(2^[], k5_numbers)]   (11)  substitution:[[_G7440, _G7487], [2^[], k5_numbers]]
+1.1.1  [-r1_tarski(2^[], k5_numbers), r1_tarski(2^[], k4_ordinal1), 2^[]=2^[], k4_ordinal1=k5_numbers]   (24)  substitution:[[_G4793, _G4930, _G4726, _G4861], [2^[], k5_numbers, 2^[], k4_ordinal1]]
+1.1.1.1  [-r1_tarski(2^[], k4_ordinal1), v1_ordinal1(k4_ordinal1), r2_hidden(2^[], k4_ordinal1)]   (14)  substitution:[[_G7075, _G6993], [2^[], k4_ordinal1]]
+1.1.1.1.1  [-v1_ordinal1(k4_ordinal1), v3_ordinal1(k4_ordinal1)]   (3)  substitution:[[_G6647], [k4_ordinal1]]
+1.1.1.1.1.1  [-v3_ordinal1(k4_ordinal1)]   (8)  
+1.1.1.1.2  [-r2_hidden(2^[], k4_ordinal1), v7_ordinal1(2^[])]   (5)  substitution:[[_G6836], [2^[]]]
+1.1.1.1.2.1  [-v7_ordinal1(2^[])]   (1)  
+1.1.1.2  [- (2^[]=2^[])]   (16)  substitution:[[_G2235], [2^[]]]
+1.1.1.3  [- (k4_ordinal1=k5_numbers), k5_numbers=k4_ordinal1]   (17)  substitution:[[_G2379, _G2334], [k4_ordinal1, k5_numbers]]
+1.1.1.3.1  [- (k5_numbers=k4_ordinal1)]   (9)  
+------------------------------------------------------
+End of proof for t8_stirl2_1

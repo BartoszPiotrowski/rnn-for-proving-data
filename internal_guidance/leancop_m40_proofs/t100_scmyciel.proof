@@ -1,0 +1,39 @@
+
+t100_scmyciel is a Theorem
+Start of proof for t100_scmyciel
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v4_scmyciel(1^[])]
+ (2)  [-r2_hidden(k2_tarski(k4_tarski(2^[], k3_tarski(1^[])), 3^[]), k12_scmyciel(1^[]))]
+ (3)  [- (2^[]=3^[])]
+ (4)  [- (k4_tarski(_G7091, _G7141)=k2_tarski(k2_tarski(_G7091, _G7141), k1_tarski(_G7091)))]
+ (5)  [r2_hidden(k2_tarski(_G7460, _G7525), _G7396), - (_G7460=_G7525), -r2_hidden(k2_tarski(_G7460, _G7525), k1_scmyciel(_G7396))]
+ (6)  [k4_tarski(_G7920, _G7964)=_G7920]
+ (7)  [v4_scmyciel(_G8126), r2_hidden(k2_tarski(k4_tarski(_G8251, k3_tarski(_G8126)), _G8340), k1_scmyciel(k12_scmyciel(_G8126))), _G8251=_G8340]
+ (8)  [v4_scmyciel(_G8126), r2_hidden(k2_tarski(k4_tarski(_G8251, k3_tarski(_G8126)), _G8340), k1_scmyciel(k12_scmyciel(_G8126))), -r2_hidden(_G8251, k3_tarski(_G8126))]
+ (9)  [v4_scmyciel(_G8126), r2_hidden(k2_tarski(k4_tarski(_G8251, k3_tarski(_G8126)), _G8340), k1_scmyciel(k12_scmyciel(_G8126))), -r2_hidden(_G8340, k3_tarski(_G8126)), - (_G8340=k3_tarski(_G8126))]
+ (10)  [- (_G2978=_G2978)]
+ (11)  [_G3077=_G3122, - (_G3122=_G3077)]
+ (12)  [- (_G3310=_G3423), _G3310=_G3366, _G3366=_G3423]
+ (13)  [-v4_scmyciel(_G3809), _G3760=_G3809, v4_scmyciel(_G3760)]
+ (14)  [-r2_hidden(_G4096, _G4233), r2_hidden(_G4029, _G4164), _G4029=_G4096, _G4164=_G4233]
+ (15)  [_G4668=_G4717, - (k1_tarski(_G4668)=k1_tarski(_G4717))]
+ (16)  [_G4946=_G4995, - (k1_scmyciel(_G4946)=k1_scmyciel(_G4995))]
+ (17)  [- (k2_tarski(_G5224, _G5359)=k2_tarski(_G5291, _G5428)), _G5224=_G5291, _G5359=_G5428]
+ (18)  [- (k4_tarski(_G5821, _G5956)=k4_tarski(_G5888, _G6025)), _G5821=_G5888, _G5956=_G6025]
+ (19)  [_G6418=_G6467, - (k3_tarski(_G6418)=k3_tarski(_G6467))]
+ (20)  [_G6687=_G6736, - (k12_scmyciel(_G6687)=k12_scmyciel(_G6736))]
+
+Connection Proof:
+-----------------
+1  [v4_scmyciel(1^[]), r2_hidden(k2_tarski(k4_tarski(2^[], k3_tarski(1^[])), 3^[]), k1_scmyciel(k12_scmyciel(1^[]))), 2^[]=3^[]]   (7)  substitution:[[_G8126, _G8251, _G8340], [1^[], 2^[], 3^[]]]
+1.1  [-v4_scmyciel(1^[])]   (1)  
+1.2  [-r2_hidden(k2_tarski(k4_tarski(2^[], k3_tarski(1^[])), 3^[]), k1_scmyciel(k12_scmyciel(1^[]))), r2_hidden(k2_tarski(k4_tarski(2^[], k3_tarski(1^[])), 3^[]), k12_scmyciel(1^[])), - (k4_tarski(2^[], k3_tarski(1^[]))=3^[])]   (5)  substitution:[[_G7460, _G7525, _G7396], [k4_tarski(2^[], k3_tarski(1^[])), 3^[], k12_scmyciel(1^[])]]
+1.2.1  [-r2_hidden(k2_tarski(k4_tarski(2^[], k3_tarski(1^[])), 3^[]), k12_scmyciel(1^[]))]   (2)  
+1.2.2  [k4_tarski(2^[], k3_tarski(1^[]))=3^[], - (k4_tarski(2^[], k3_tarski(1^[]))=2^[]), 3^[]=2^[]]   (12)  substitution:[[_G3310, _G3366, _G3423], [k4_tarski(2^[], k3_tarski(1^[])), 3^[], 2^[]]]
+1.2.2.1  [k4_tarski(2^[], k3_tarski(1^[]))=2^[]]   (6)  substitution:[[_G7920, _G7964], [2^[], k3_tarski(1^[])]]
+1.2.2.2  [- (3^[]=2^[]), 2^[]=3^[]]   (11)  substitution:[[_G3122, _G3077], [3^[], 2^[]]]
+1.2.2.2.1  [- (2^[]=3^[])]   (3)  
+1.3  [- (2^[]=3^[])]   (3)  
+------------------------------------------------------
+End of proof for t100_scmyciel

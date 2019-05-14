@@ -1,0 +1,45 @@
+
+t6_xxreal_2 is a Theorem
+Start of proof for t6_xxreal_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v2_membered(3^[])]
+ (2)  [-v2_membered(4^[])]
+ (3)  [-r1_tarski(3^[], 4^[])]
+ (4)  [-m1_xxreal_2(5^[], 4^[])]
+ (5)  [m1_xxreal_2(5^[], 3^[])]
+ (6)  [v2_membered(_G1026), v1_xxreal_0(_G1129), -m1_xxreal_2(_G1129, _G1026), -v1_xxreal_0(1^[_G1129, _G1026])]
+ (7)  [v2_membered(_G1026), v1_xxreal_0(_G1129), -m1_xxreal_2(_G1129, _G1026), -r2_hidden(1^[_G1129, _G1026], _G1026)]
+ (8)  [v2_membered(_G1026), v1_xxreal_0(_G1129), -m1_xxreal_2(_G1129, _G1026), r1_xxreal_0(1^[_G1129, _G1026], _G1129)]
+ (9)  [v2_membered(_G1026), v1_xxreal_0(_G1129), m1_xxreal_2(_G1129, _G1026), v1_xxreal_0(_G1285), r2_hidden(_G1285, _G1026), -r1_xxreal_0(_G1285, _G1129)]
+ (10)  [v2_membered(_G2010), m1_xxreal_2(_G2091, _G2010), -v1_xxreal_0(_G2091)]
+ (11)  [-r1_tarski(_G1617, _G1673), -r2_hidden(2^[_G1673, _G1617], _G1617)]
+ (12)  [-r1_tarski(_G1617, _G1673), r2_hidden(2^[_G1673, _G1617], _G1673)]
+ (13)  [r1_tarski(_G1617, _G1673), r2_hidden(_G1787, _G1617), -r2_hidden(_G1787, _G1673)]
+
+Connection Proof:
+-----------------
+1  [m1_xxreal_2(5^[], 3^[])]   (5)  
+1.1  [-m1_xxreal_2(5^[], 3^[]), v2_membered(3^[]), v1_xxreal_0(5^[]), -v1_xxreal_0(1^[5^[], 3^[]])]   (6)  substitution:[[_G1129, _G1026], [5^[], 3^[]]]
+1.1.1  [-v2_membered(3^[])]   (1)  
+1.1.2  [-v1_xxreal_0(5^[]), v2_membered(4^[]), m1_xxreal_2(5^[], 4^[])]   (10)  substitution:[[_G2091, _G2010], [5^[], 4^[]]]
+1.1.2.1  [-v2_membered(4^[])]   (2)  
+1.1.2.2  [-m1_xxreal_2(5^[], 4^[])]   (4)  
+1.1.3  [v1_xxreal_0(1^[5^[], 3^[]]), v2_membered(4^[]), v1_xxreal_0(5^[]), m1_xxreal_2(5^[], 4^[]), r2_hidden(1^[5^[], 3^[]], 4^[]), -r1_xxreal_0(1^[5^[], 3^[]], 5^[])]   (9)  substitution:[[_G1285, _G1026, _G1129], [1^[5^[], 3^[]], 4^[], 5^[]]]
+1.1.3.1  [-v2_membered(4^[])]   (2)  
+1.1.3.2  [-v1_xxreal_0(5^[]), v2_membered(4^[]), m1_xxreal_2(5^[], 4^[])]   (10)  substitution:[[_G2091, _G2010], [5^[], 4^[]]]
+1.1.3.2.1  [-v2_membered(4^[])]   (2)  
+1.1.3.2.2  [-m1_xxreal_2(5^[], 4^[])]   (4)  
+1.1.3.3  [-m1_xxreal_2(5^[], 4^[])]   (4)  
+1.1.3.4  [-r2_hidden(1^[5^[], 3^[]], 4^[]), r1_tarski(3^[], 4^[]), r2_hidden(1^[5^[], 3^[]], 3^[])]   (13)  substitution:[[_G1787, _G1673, _G1617], [1^[5^[], 3^[]], 4^[], 3^[]]]
+1.1.3.4.1  [-r1_tarski(3^[], 4^[])]   (3)  
+1.1.3.4.2  [-r2_hidden(1^[5^[], 3^[]], 3^[]), v2_membered(3^[]), v1_xxreal_0(5^[]), -m1_xxreal_2(5^[], 3^[])]   (7)  substitution:[[_G1129, _G1026], [5^[], 3^[]]]
+1.1.3.4.2.1  [-v2_membered(3^[])]   (1)  
+1.1.3.4.2.2  [-v1_xxreal_0(5^[])]   (lemmata:1.1.3)  
+1.1.3.4.2.3  [m1_xxreal_2(5^[], 3^[])]   (5)  
+1.1.3.5  [r1_xxreal_0(1^[5^[], 3^[]], 5^[]), v2_membered(3^[]), v1_xxreal_0(5^[]), -m1_xxreal_2(5^[], 3^[])]   (8)  substitution:[[_G1129, _G1026], [5^[], 3^[]]]
+1.1.3.5.1  [-v2_membered(3^[])]   (1)  
+1.1.3.5.2  [-v1_xxreal_0(5^[])]   (lemmata:1.1.3)  
+1.1.3.5.3  [m1_xxreal_2(5^[], 3^[])]   (5)  
+------------------------------------------------------
+End of proof for t6_xxreal_2

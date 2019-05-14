@@ -1,0 +1,90 @@
+
+t23_rfinseq is a Theorem
+Start of proof for t23_rfinseq
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v8_valued_0(1^[])]
+ (2)  [-m2_finseq_1(1^[], k1_numbers)]
+ (3)  [-v8_valued_0(2^[])]
+ (4)  [-m2_finseq_1(2^[], k1_numbers)]
+ (5)  [-r2_classes1(1^[], 2^[])]
+ (6)  [1^[]=2^[]]
+ (7)  [-v1_finset_1(_G11018), v1_relat_1(_G11018), v1_funct_1(_G11018), v1_finseq_1(_G11018)]
+ (8)  [v1_finset_1(_G11381), -m1_subset_1(k5_card_1(_G11381), k4_ordinal1)]
+ (9)  [m1_finseq_1(_G11608, _G11554), -v1_relat_1(_G11608)]
+ (10)  [m1_finseq_1(_G11608, _G11554), -v1_funct_1(_G11608)]
+ (11)  [m1_finseq_1(_G11608, _G11554), -v1_finseq_1(_G11608)]
+ (12)  [m2_finseq_1(_G11955, _G11895), -v1_funct_1(_G11955)]
+ (13)  [m2_finseq_1(_G11955, _G11895), -v1_finseq_1(_G11955)]
+ (14)  [m2_finseq_1(_G11955, _G11895), -m1_subset_1(_G11955, k1_zfmisc_1(k2_zfmisc_1(k5_numbers, _G11895)))]
+ (15)  [m1_subset_1(_G12326, k5_numbers), m2_finseq_1(_G12469, k1_numbers), v8_valued_0(_G12469), m2_finseq_1(_G12660, k1_numbers), v8_valued_0(_G12660), - (_G12469=_G12660), _G12326=k3_finseq_1(_G12469), r2_classes1(_G12469, _G12660)]
+ (16)  [- (k3_finseq_1(_G13155)=k1_card_1(_G13155)), v1_relat_1(_G13155), v1_funct_1(_G13155), v1_finseq_1(_G13155)]
+ (17)  [v1_finset_1(_G13460), - (k5_card_1(_G13460)=k1_card_1(_G13460))]
+ (18)  [- (k5_numbers=k4_ordinal1)]
+ (19)  [m2_finseq_1(_G13742, _G13697), -m1_finseq_1(_G13742, _G13697)]
+ (20)  [-m2_finseq_1(_G13742, _G13697), m1_finseq_1(_G13742, _G13697)]
+ (21)  [_G9213=_G9262, - (k1_zfmisc_1(_G9213)=k1_zfmisc_1(_G9262))]
+ (22)  [- (k2_zfmisc_1(_G9491, _G9626)=k2_zfmisc_1(_G9558, _G9695)), _G9491=_G9558, _G9626=_G9695]
+ (23)  [_G10088=_G10137, - (k3_finseq_1(_G10088)=k3_finseq_1(_G10137))]
+ (24)  [_G10366=_G10415, - (k5_card_1(_G10366)=k5_card_1(_G10415))]
+ (25)  [_G10635=_G10684, - (k1_card_1(_G10635)=k1_card_1(_G10684))]
+ (26)  [- (_G4473=_G4473)]
+ (27)  [_G4572=_G4617, - (_G4617=_G4572)]
+ (28)  [- (_G4805=_G4918), _G4805=_G4861, _G4861=_G4918]
+ (29)  [-m1_subset_1(_G5322, _G5459), m1_subset_1(_G5255, _G5390), _G5255=_G5322, _G5390=_G5459]
+ (30)  [-v1_relat_1(_G5901), _G5852=_G5901, v1_relat_1(_G5852)]
+ (31)  [-v1_funct_1(_G6179), _G6130=_G6179, v1_funct_1(_G6130)]
+ (32)  [-v1_finseq_1(_G6457), _G6408=_G6457, v1_finseq_1(_G6408)]
+ (33)  [-v1_finset_1(_G6735), _G6686=_G6735, v1_finset_1(_G6686)]
+ (34)  [-m1_finseq_1(_G7031, _G7168), m1_finseq_1(_G6964, _G7099), _G6964=_G7031, _G7099=_G7168]
+ (35)  [-v8_valued_0(_G7610), _G7561=_G7610, v8_valued_0(_G7561)]
+ (36)  [-m2_finseq_1(_G7906, _G8043), m2_finseq_1(_G7839, _G7974), _G7839=_G7906, _G7974=_G8043]
+ (37)  [-r2_classes1(_G8494, _G8631), r2_classes1(_G8427, _G8562), _G8427=_G8494, _G8562=_G8631]
+
+Connection Proof:
+-----------------
+1  [1^[]=2^[]]   (6)  
+1.1  [- (1^[]=2^[]), m1_subset_1(k1_card_1(1^[]), k5_numbers), m2_finseq_1(1^[], k1_numbers), v8_valued_0(1^[]), m2_finseq_1(2^[], k1_numbers), v8_valued_0(2^[]), k1_card_1(1^[])=k3_finseq_1(1^[]), r2_classes1(1^[], 2^[])]   (15)  substitution:[[_G12469, _G12660, _G12326], [1^[], 2^[], k1_card_1(1^[])]]
+1.1.1  [-m1_subset_1(k1_card_1(1^[]), k5_numbers), m1_subset_1(k5_card_1(1^[]), k4_ordinal1), k5_card_1(1^[])=k1_card_1(1^[]), k4_ordinal1=k5_numbers]   (29)  substitution:[[_G5322, _G5459, _G5255, _G5390], [k1_card_1(1^[]), k5_numbers, k5_card_1(1^[]), k4_ordinal1]]
+1.1.1.1  [-m1_subset_1(k5_card_1(1^[]), k4_ordinal1), v1_finset_1(1^[])]   (8)  substitution:[[_G11381], [1^[]]]
+1.1.1.1.1  [-v1_finset_1(1^[]), v1_relat_1(1^[]), v1_funct_1(1^[]), v1_finseq_1(1^[])]   (7)  substitution:[[_G11018], [1^[]]]
+1.1.1.1.1.1  [-v1_relat_1(1^[]), m1_finseq_1(1^[], k1_numbers)]   (9)  substitution:[[_G11608, _G11554], [1^[], k1_numbers]]
+1.1.1.1.1.1.1  [-m1_finseq_1(1^[], k1_numbers), m2_finseq_1(1^[], k1_numbers)]   (19)  substitution:[[_G13742, _G13697], [1^[], k1_numbers]]
+1.1.1.1.1.1.1.1  [-m2_finseq_1(1^[], k1_numbers)]   (2)  
+1.1.1.1.1.2  [-v1_funct_1(1^[]), m1_finseq_1(1^[], k1_numbers)]   (10)  substitution:[[_G11608, _G11554], [1^[], k1_numbers]]
+1.1.1.1.1.2.1  [-m1_finseq_1(1^[], k1_numbers), m2_finseq_1(1^[], k1_numbers)]   (19)  substitution:[[_G13742, _G13697], [1^[], k1_numbers]]
+1.1.1.1.1.2.1.1  [-m2_finseq_1(1^[], k1_numbers)]   (2)  
+1.1.1.1.1.3  [-v1_finseq_1(1^[]), m1_finseq_1(1^[], k1_numbers)]   (11)  substitution:[[_G11608, _G11554], [1^[], k1_numbers]]
+1.1.1.1.1.3.1  [-m1_finseq_1(1^[], k1_numbers), m2_finseq_1(1^[], k1_numbers)]   (19)  substitution:[[_G13742, _G13697], [1^[], k1_numbers]]
+1.1.1.1.1.3.1.1  [-m2_finseq_1(1^[], k1_numbers)]   (2)  
+1.1.1.2  [- (k5_card_1(1^[])=k1_card_1(1^[])), v1_finset_1(1^[])]   (17)  substitution:[[_G13460], [1^[]]]
+1.1.1.2.1  [-v1_finset_1(1^[]), v1_relat_1(1^[]), v1_funct_1(1^[]), v1_finseq_1(1^[])]   (7)  substitution:[[_G11018], [1^[]]]
+1.1.1.2.1.1  [-v1_relat_1(1^[]), m1_finseq_1(1^[], k1_numbers)]   (9)  substitution:[[_G11608, _G11554], [1^[], k1_numbers]]
+1.1.1.2.1.1.1  [-m1_finseq_1(1^[], k1_numbers), m2_finseq_1(1^[], k1_numbers)]   (19)  substitution:[[_G13742, _G13697], [1^[], k1_numbers]]
+1.1.1.2.1.1.1.1  [-m2_finseq_1(1^[], k1_numbers)]   (2)  
+1.1.1.2.1.2  [-v1_funct_1(1^[]), m1_finseq_1(1^[], k1_numbers)]   (10)  substitution:[[_G11608, _G11554], [1^[], k1_numbers]]
+1.1.1.2.1.2.1  [-m1_finseq_1(1^[], k1_numbers), m2_finseq_1(1^[], k1_numbers)]   (19)  substitution:[[_G13742, _G13697], [1^[], k1_numbers]]
+1.1.1.2.1.2.1.1  [-m2_finseq_1(1^[], k1_numbers)]   (2)  
+1.1.1.2.1.3  [-v1_finseq_1(1^[]), m1_finseq_1(1^[], k1_numbers)]   (11)  substitution:[[_G11608, _G11554], [1^[], k1_numbers]]
+1.1.1.2.1.3.1  [-m1_finseq_1(1^[], k1_numbers), m2_finseq_1(1^[], k1_numbers)]   (19)  substitution:[[_G13742, _G13697], [1^[], k1_numbers]]
+1.1.1.2.1.3.1.1  [-m2_finseq_1(1^[], k1_numbers)]   (2)  
+1.1.1.3  [- (k4_ordinal1=k5_numbers), k5_numbers=k4_ordinal1]   (27)  substitution:[[_G4617, _G4572], [k4_ordinal1, k5_numbers]]
+1.1.1.3.1  [- (k5_numbers=k4_ordinal1)]   (18)  
+1.1.2  [-m2_finseq_1(1^[], k1_numbers)]   (2)  
+1.1.3  [-v8_valued_0(1^[])]   (1)  
+1.1.4  [-m2_finseq_1(2^[], k1_numbers)]   (4)  
+1.1.5  [-v8_valued_0(2^[])]   (3)  
+1.1.6  [- (k1_card_1(1^[])=k3_finseq_1(1^[])), k3_finseq_1(1^[])=k1_card_1(1^[])]   (27)  substitution:[[_G4617, _G4572], [k1_card_1(1^[]), k3_finseq_1(1^[])]]
+1.1.6.1  [- (k3_finseq_1(1^[])=k1_card_1(1^[])), v1_relat_1(1^[]), v1_funct_1(1^[]), v1_finseq_1(1^[])]   (16)  substitution:[[_G13155], [1^[]]]
+1.1.6.1.1  [-v1_relat_1(1^[]), m1_finseq_1(1^[], k1_numbers)]   (9)  substitution:[[_G11608, _G11554], [1^[], k1_numbers]]
+1.1.6.1.1.1  [-m1_finseq_1(1^[], k1_numbers), m2_finseq_1(1^[], k1_numbers)]   (19)  substitution:[[_G13742, _G13697], [1^[], k1_numbers]]
+1.1.6.1.1.1.1  [-m2_finseq_1(1^[], k1_numbers)]   (2)  
+1.1.6.1.2  [-v1_funct_1(1^[]), m1_finseq_1(1^[], k1_numbers)]   (10)  substitution:[[_G11608, _G11554], [1^[], k1_numbers]]
+1.1.6.1.2.1  [-m1_finseq_1(1^[], k1_numbers), m2_finseq_1(1^[], k1_numbers)]   (19)  substitution:[[_G13742, _G13697], [1^[], k1_numbers]]
+1.1.6.1.2.1.1  [-m2_finseq_1(1^[], k1_numbers)]   (2)  
+1.1.6.1.3  [-v1_finseq_1(1^[]), m1_finseq_1(1^[], k1_numbers)]   (11)  substitution:[[_G11608, _G11554], [1^[], k1_numbers]]
+1.1.6.1.3.1  [-m1_finseq_1(1^[], k1_numbers), m2_finseq_1(1^[], k1_numbers)]   (19)  substitution:[[_G13742, _G13697], [1^[], k1_numbers]]
+1.1.6.1.3.1.1  [-m2_finseq_1(1^[], k1_numbers)]   (2)  
+1.1.7  [-r2_classes1(1^[], 2^[])]   (5)  
+------------------------------------------------------
+End of proof for t23_rfinseq

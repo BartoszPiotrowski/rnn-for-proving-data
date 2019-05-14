@@ -1,0 +1,46 @@
+
+t2_zfrefle1 is a Theorem
+Start of proof for t2_zfrefle1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v1_xboole_0(3^[])]
+ (2)  [-m1_subset_1(4^[], k1_zfmisc_1(k9_zf_lang))]
+ (3)  [-m1_subset_1(5^[], k1_zfmisc_1(k9_zf_lang))]
+ (4)  [-r1_tarski(4^[], 5^[])]
+ (5)  [-r1_zfrefle1(3^[], 5^[])]
+ (6)  [r1_zfrefle1(3^[], 4^[])]
+ (7)  [-r1_tarski(_G1725, _G1781), -r2_hidden(2^[_G1781, _G1725], _G1725)]
+ (8)  [-r1_tarski(_G1725, _G1781), r2_hidden(2^[_G1781, _G1725], _G1781)]
+ (9)  [r1_tarski(_G1725, _G1781), r2_hidden(_G1895, _G1725), -r2_hidden(_G1895, _G1781)]
+ (10)  [-v1_xboole_0(_G990), m1_subset_1(_G1116, k1_zfmisc_1(k9_zf_lang)), -r1_zfrefle1(_G990, _G1116), -v1_zf_lang(1^[_G1116, _G990])]
+ (11)  [-v1_xboole_0(_G990), m1_subset_1(_G1116, k1_zfmisc_1(k9_zf_lang)), -r1_zfrefle1(_G990, _G1116), -m2_finseq_1(1^[_G1116, _G990], k5_numbers)]
+ (12)  [-v1_xboole_0(_G990), m1_subset_1(_G1116, k1_zfmisc_1(k9_zf_lang)), -r1_zfrefle1(_G990, _G1116), -r2_hidden(1^[_G1116, _G990], _G1116)]
+ (13)  [-v1_xboole_0(_G990), m1_subset_1(_G1116, k1_zfmisc_1(k9_zf_lang)), -r1_zfrefle1(_G990, _G1116), r2_zf_model(_G990, 1^[_G1116, _G990])]
+ (14)  [-v1_xboole_0(_G990), m1_subset_1(_G1116, k1_zfmisc_1(k9_zf_lang)), r1_zfrefle1(_G990, _G1116), m2_finseq_1(_G1318, k5_numbers), v1_zf_lang(_G1318), r2_hidden(_G1318, _G1116), -r2_zf_model(_G990, _G1318)]
+
+Connection Proof:
+-----------------
+1  [v1_xboole_0(3^[])]   (1)  
+1.1  [-v1_xboole_0(3^[]), m1_subset_1(4^[], k1_zfmisc_1(k9_zf_lang)), -r1_zfrefle1(3^[], 4^[]), -r2_hidden(1^[4^[], 3^[]], 4^[])]   (12)  substitution:[[_G990, _G1116], [3^[], 4^[]]]
+1.1.1  [-m1_subset_1(4^[], k1_zfmisc_1(k9_zf_lang))]   (2)  
+1.1.2  [r1_zfrefle1(3^[], 4^[])]   (6)  
+1.1.3  [r2_hidden(1^[4^[], 3^[]], 4^[]), r1_tarski(4^[], 5^[]), -r2_hidden(1^[4^[], 3^[]], 5^[])]   (9)  substitution:[[_G1895, _G1725, _G1781], [1^[4^[], 3^[]], 4^[], 5^[]]]
+1.1.3.1  [-r1_tarski(4^[], 5^[])]   (4)  
+1.1.3.2  [r2_hidden(1^[4^[], 3^[]], 5^[]), -v1_xboole_0(3^[]), m1_subset_1(5^[], k1_zfmisc_1(k9_zf_lang)), r1_zfrefle1(3^[], 5^[]), m2_finseq_1(1^[4^[], 3^[]], k5_numbers), v1_zf_lang(1^[4^[], 3^[]]), -r2_zf_model(3^[], 1^[4^[], 3^[]])]   (14)  substitution:[[_G1318, _G1116, _G990], [1^[4^[], 3^[]], 5^[], 3^[]]]
+1.1.3.2.1  [v1_xboole_0(3^[])]   (1)  
+1.1.3.2.2  [-m1_subset_1(5^[], k1_zfmisc_1(k9_zf_lang))]   (3)  
+1.1.3.2.3  [-r1_zfrefle1(3^[], 5^[])]   (5)  
+1.1.3.2.4  [-m2_finseq_1(1^[4^[], 3^[]], k5_numbers), -v1_xboole_0(3^[]), m1_subset_1(4^[], k1_zfmisc_1(k9_zf_lang)), -r1_zfrefle1(3^[], 4^[])]   (11)  substitution:[[_G1116, _G990], [4^[], 3^[]]]
+1.1.3.2.4.1  [v1_xboole_0(3^[])]   (1)  
+1.1.3.2.4.2  [-m1_subset_1(4^[], k1_zfmisc_1(k9_zf_lang))]   (2)  
+1.1.3.2.4.3  [r1_zfrefle1(3^[], 4^[])]   (6)  
+1.1.3.2.5  [-v1_zf_lang(1^[4^[], 3^[]]), -v1_xboole_0(3^[]), m1_subset_1(4^[], k1_zfmisc_1(k9_zf_lang)), -r1_zfrefle1(3^[], 4^[])]   (10)  substitution:[[_G1116, _G990], [4^[], 3^[]]]
+1.1.3.2.5.1  [v1_xboole_0(3^[])]   (1)  
+1.1.3.2.5.2  [-m1_subset_1(4^[], k1_zfmisc_1(k9_zf_lang))]   (2)  
+1.1.3.2.5.3  [r1_zfrefle1(3^[], 4^[])]   (6)  
+1.1.3.2.6  [r2_zf_model(3^[], 1^[4^[], 3^[]]), -v1_xboole_0(3^[]), m1_subset_1(4^[], k1_zfmisc_1(k9_zf_lang)), -r1_zfrefle1(3^[], 4^[])]   (13)  substitution:[[_G990, _G1116], [3^[], 4^[]]]
+1.1.3.2.6.1  [v1_xboole_0(3^[])]   (1)  
+1.1.3.2.6.2  [-m1_subset_1(4^[], k1_zfmisc_1(k9_zf_lang))]   (2)  
+1.1.3.2.6.3  [r1_zfrefle1(3^[], 4^[])]   (6)  
+------------------------------------------------------
+End of proof for t2_zfrefle1

@@ -1,0 +1,51 @@
+
+t12_abian is a Theorem
+Start of proof for t12_abian
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v7_ordinal1(2^[])]
+ (2)  [v1_abian(2^[])]
+ (3)  [r1_xxreal_0(np__1, 2^[])]
+ (4)  [v7_ordinal1(_G6257), -v1_int_1(_G6257)]
+ (5)  [v1_abian(k2_xcmplx_0(_G6388, _G6453)), v1_abian(_G6388), v1_int_1(_G6388), v1_int_1(_G6453), -v1_abian(_G6453)]
+ (6)  [-v1_xxreal_0(1^[])]
+ (7)  [-v1_xcmplx_0(1^[])]
+ (8)  [-v1_xreal_0(1^[])]
+ (9)  [-v1_int_1(1^[])]
+ (10)  [-v1_abian(1^[])]
+ (11)  [v1_xcmplx_0(_G7399), - (k2_xcmplx_0(_G7399, k6_numbers)=_G7399)]
+ (12)  [v7_ordinal1(_G7151), -r1_xxreal_0(np__1, _G7151), - (_G7151=k6_numbers)]
+ (13)  [- (k2_xcmplx_0(_G5639, _G5774)=k2_xcmplx_0(_G5706, _G5843)), _G5639=_G5706, _G5774=_G5843]
+ (14)  [- (_G2463=_G2463)]
+ (15)  [_G2562=_G2607, - (_G2607=_G2562)]
+ (16)  [- (_G2795=_G2908), _G2795=_G2851, _G2851=_G2908]
+ (17)  [-v1_xxreal_0(_G3294), _G3245=_G3294, v1_xxreal_0(_G3245)]
+ (18)  [-v1_xreal_0(_G3572), _G3523=_G3572, v1_xreal_0(_G3523)]
+ (19)  [-v1_int_1(_G3850), _G3801=_G3850, v1_int_1(_G3801)]
+ (20)  [-v1_xcmplx_0(_G4128), _G4079=_G4128, v1_xcmplx_0(_G4079)]
+ (21)  [-v7_ordinal1(_G4406), _G4357=_G4406, v7_ordinal1(_G4357)]
+ (22)  [-v1_abian(_G4684), _G4635=_G4684, v1_abian(_G4635)]
+ (23)  [-r1_xxreal_0(_G4971, _G5108), r1_xxreal_0(_G4904, _G5039), _G4904=_G4971, _G5039=_G5108]
+
+Connection Proof:
+-----------------
+1  [v1_abian(2^[])]   (2)  
+1.1  [-v1_abian(2^[]), v1_abian(k2_xcmplx_0(1^[], 2^[])), v1_abian(1^[]), v1_int_1(1^[]), v1_int_1(2^[])]   (5)  substitution:[[_G6453, _G6388], [2^[], 1^[]]]
+1.1.1  [-v1_abian(k2_xcmplx_0(1^[], 2^[])), k2_xcmplx_0(1^[], k6_numbers)=k2_xcmplx_0(1^[], 2^[]), v1_abian(k2_xcmplx_0(1^[], k6_numbers))]   (22)  substitution:[[_G4684, _G4635], [k2_xcmplx_0(1^[], 2^[]), k2_xcmplx_0(1^[], k6_numbers)]]
+1.1.1.1  [- (k2_xcmplx_0(1^[], k6_numbers)=k2_xcmplx_0(1^[], 2^[])), 1^[]=1^[], k6_numbers=2^[]]   (13)  substitution:[[_G5639, _G5774, _G5706, _G5843], [1^[], k6_numbers, 1^[], 2^[]]]
+1.1.1.1.1  [- (1^[]=1^[])]   (14)  substitution:[[_G2463], [1^[]]]
+1.1.1.1.2  [- (k6_numbers=2^[]), 2^[]=k6_numbers]   (15)  substitution:[[_G2607, _G2562], [k6_numbers, 2^[]]]
+1.1.1.1.2.1  [- (2^[]=k6_numbers), v7_ordinal1(2^[]), -r1_xxreal_0(np__1, 2^[])]   (12)  substitution:[[_G7151], [2^[]]]
+1.1.1.1.2.1.1  [-v7_ordinal1(2^[])]   (1)  
+1.1.1.1.2.1.2  [r1_xxreal_0(np__1, 2^[])]   (3)  
+1.1.1.2  [-v1_abian(k2_xcmplx_0(1^[], k6_numbers)), 1^[]=k2_xcmplx_0(1^[], k6_numbers), v1_abian(1^[])]   (22)  substitution:[[_G4684, _G4635], [k2_xcmplx_0(1^[], k6_numbers), 1^[]]]
+1.1.1.2.1  [- (1^[]=k2_xcmplx_0(1^[], k6_numbers)), k2_xcmplx_0(1^[], k6_numbers)=1^[]]   (15)  substitution:[[_G2607, _G2562], [1^[], k2_xcmplx_0(1^[], k6_numbers)]]
+1.1.1.2.1.1  [- (k2_xcmplx_0(1^[], k6_numbers)=1^[]), v1_xcmplx_0(1^[])]   (11)  substitution:[[_G7399], [1^[]]]
+1.1.1.2.1.1.1  [-v1_xcmplx_0(1^[])]   (7)  
+1.1.1.2.2  [-v1_abian(1^[])]   (10)  
+1.1.2  [-v1_abian(1^[])]   (10)  
+1.1.3  [-v1_int_1(1^[])]   (9)  
+1.1.4  [-v1_int_1(2^[]), v7_ordinal1(2^[])]   (4)  substitution:[[_G6257], [2^[]]]
+1.1.4.1  [-v7_ordinal1(2^[])]   (1)  
+------------------------------------------------------
+End of proof for t12_abian

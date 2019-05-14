@@ -1,0 +1,36 @@
+
+t7_complex1 is a Theorem
+Start of proof for t7_complex1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k3_complex1(k7_complex1)=k6_numbers, k4_complex1(k7_complex1)=np__1]
+ (2)  [- (k7_complex1=k5_arytm_0(k6_numbers, np__1))]
+ (3)  [-m1_subset_1(k6_numbers, k1_numbers)]
+ (4)  [-m1_subset_1(np__1, k1_numbers)]
+ (5)  [m1_subset_1(_G4356, k1_numbers), m1_subset_1(_G4480, k1_numbers), - (k3_complex1(k5_arytm_0(_G4356, _G4480))=_G4356)]
+ (6)  [m1_subset_1(_G4356, k1_numbers), m1_subset_1(_G4480, k1_numbers), - (k4_complex1(k5_arytm_0(_G4356, _G4480))=_G4480)]
+ (7)  [- (k5_arytm_0(_G2948, _G3083)=k5_arytm_0(_G3015, _G3152)), _G2948=_G3015, _G3083=_G3152]
+ (8)  [_G3545=_G3594, - (k3_complex1(_G3545)=k3_complex1(_G3594))]
+ (9)  [_G3814=_G3863, - (k4_complex1(_G3814)=k4_complex1(_G3863))]
+ (10)  [-m1_subset_1(_G2397, _G2534), m1_subset_1(_G2330, _G2465), _G2330=_G2397, _G2465=_G2534]
+ (11)  [- (_G1557=_G1557)]
+ (12)  [_G1656=_G1701, - (_G1701=_G1656)]
+ (13)  [- (_G1889=_G2002), _G1889=_G1945, _G1945=_G2002]
+
+Connection Proof:
+-----------------
+1  [k3_complex1(k7_complex1)=k6_numbers, k4_complex1(k7_complex1)=np__1]   (1)  
+1.1  [- (k3_complex1(k7_complex1)=k6_numbers), k3_complex1(k7_complex1)=k3_complex1(k5_arytm_0(k6_numbers, np__1)), k3_complex1(k5_arytm_0(k6_numbers, np__1))=k6_numbers]   (13)  substitution:[[_G1889, _G2002, _G1945], [k3_complex1(k7_complex1), k6_numbers, k3_complex1(k5_arytm_0(k6_numbers, np__1))]]
+1.1.1  [- (k3_complex1(k7_complex1)=k3_complex1(k5_arytm_0(k6_numbers, np__1))), k7_complex1=k5_arytm_0(k6_numbers, np__1)]   (8)  substitution:[[_G3545, _G3594], [k7_complex1, k5_arytm_0(k6_numbers, np__1)]]
+1.1.1.1  [- (k7_complex1=k5_arytm_0(k6_numbers, np__1))]   (2)  
+1.1.2  [- (k3_complex1(k5_arytm_0(k6_numbers, np__1))=k6_numbers), m1_subset_1(k6_numbers, k1_numbers), m1_subset_1(np__1, k1_numbers)]   (5)  substitution:[[_G4356, _G4480], [k6_numbers, np__1]]
+1.1.2.1  [-m1_subset_1(k6_numbers, k1_numbers)]   (3)  
+1.1.2.2  [-m1_subset_1(np__1, k1_numbers)]   (4)  
+1.2  [- (k4_complex1(k7_complex1)=np__1), k4_complex1(k7_complex1)=k4_complex1(k5_arytm_0(k6_numbers, np__1)), k4_complex1(k5_arytm_0(k6_numbers, np__1))=np__1]   (13)  substitution:[[_G1889, _G2002, _G1945], [k4_complex1(k7_complex1), np__1, k4_complex1(k5_arytm_0(k6_numbers, np__1))]]
+1.2.1  [- (k4_complex1(k7_complex1)=k4_complex1(k5_arytm_0(k6_numbers, np__1))), k7_complex1=k5_arytm_0(k6_numbers, np__1)]   (9)  substitution:[[_G3814, _G3863], [k7_complex1, k5_arytm_0(k6_numbers, np__1)]]
+1.2.1.1  [- (k7_complex1=k5_arytm_0(k6_numbers, np__1))]   (2)  
+1.2.2  [- (k4_complex1(k5_arytm_0(k6_numbers, np__1))=np__1), m1_subset_1(k6_numbers, k1_numbers), m1_subset_1(np__1, k1_numbers)]   (6)  substitution:[[_G4356, _G4480], [k6_numbers, np__1]]
+1.2.2.1  [-m1_subset_1(k6_numbers, k1_numbers)]   (3)  
+1.2.2.2  [-m1_subset_1(np__1, k1_numbers)]   (4)  
+------------------------------------------------------
+End of proof for t7_complex1

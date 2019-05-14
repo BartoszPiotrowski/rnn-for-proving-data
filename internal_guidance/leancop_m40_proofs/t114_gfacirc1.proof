@@ -1,0 +1,34 @@
+
+t114_gfacirc1 is a Theorem
+Start of proof for t114_gfacirc1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v1_xtuple_0(3^[])]
+ (2)  [v1_xtuple_0(4^[])]
+ (3)  [v1_xtuple_0(5^[])]
+ (4)  [k2_msafree2(k43_gfacirc1(3^[], 4^[], 5^[]))=k1_enumset1(3^[], 4^[], 5^[])]
+ (5)  [v1_xtuple_0(_G7163), - (_G7163=k4_tarski(1^[_G7163], 2^[_G7163]))]
+ (6)  [-v1_xtuple_0(_G7163), _G7163=k4_tarski(_G7247, _G7295)]
+ (7)  [- (_G7476=k4_tarski(k10_finseq_1(_G7576, _G7677), k4_twoscomp)), - (_G7576=k4_tarski(k10_finseq_1(_G7677, _G7476), k4_twoscomp)), - (_G7677=k4_tarski(k10_finseq_1(_G7476, _G7576), k4_twoscomp)), - (k2_msafree2(k43_gfacirc1(_G7476, _G7576, _G7677))=k1_enumset1(_G7476, _G7576, _G7677))]
+ (8)  [-v1_xtuple_0(_G3289), _G3240=_G3289, v1_xtuple_0(_G3240)]
+ (9)  [- (_G2467=_G2467)]
+ (10)  [_G2566=_G2611, - (_G2611=_G2566)]
+ (11)  [- (_G2799=_G2912), _G2799=_G2855, _G2855=_G2912]
+ (12)  [- (k4_tarski(_G3539, _G3674)=k4_tarski(_G3606, _G3743)), _G3539=_G3606, _G3674=_G3743]
+ (13)  [- (k10_finseq_1(_G4136, _G4271)=k10_finseq_1(_G4203, _G4340)), _G4136=_G4203, _G4271=_G4340]
+ (14)  [_G4733=_G4782, - (k2_msafree2(_G4733)=k2_msafree2(_G4782))]
+ (15)  [- (k43_gfacirc1(_G5011, _G5182, _G5357)=k43_gfacirc1(_G5096, _G5269, _G5446)), _G5011=_G5096, _G5182=_G5269, _G5357=_G5446]
+ (16)  [- (k1_enumset1(_G6030, _G6201, _G6376)=k1_enumset1(_G6115, _G6288, _G6465)), _G6030=_G6115, _G6201=_G6288, _G6376=_G6465]
+
+Connection Proof:
+-----------------
+1  [k2_msafree2(k43_gfacirc1(3^[], 4^[], 5^[]))=k1_enumset1(3^[], 4^[], 5^[])]   (4)  
+1.1  [- (k2_msafree2(k43_gfacirc1(3^[], 4^[], 5^[]))=k1_enumset1(3^[], 4^[], 5^[])), - (3^[]=k4_tarski(k10_finseq_1(4^[], 5^[]), k4_twoscomp)), - (4^[]=k4_tarski(k10_finseq_1(5^[], 3^[]), k4_twoscomp)), - (5^[]=k4_tarski(k10_finseq_1(3^[], 4^[]), k4_twoscomp))]   (7)  substitution:[[_G7476, _G7576, _G7677], [3^[], 4^[], 5^[]]]
+1.1.1  [3^[]=k4_tarski(k10_finseq_1(4^[], 5^[]), k4_twoscomp), -v1_xtuple_0(3^[])]   (6)  substitution:[[_G7163, _G7247, _G7295], [3^[], k10_finseq_1(4^[], 5^[]), k4_twoscomp]]
+1.1.1.1  [v1_xtuple_0(3^[])]   (1)  
+1.1.2  [4^[]=k4_tarski(k10_finseq_1(5^[], 3^[]), k4_twoscomp), -v1_xtuple_0(4^[])]   (6)  substitution:[[_G7163, _G7247, _G7295], [4^[], k10_finseq_1(5^[], 3^[]), k4_twoscomp]]
+1.1.2.1  [v1_xtuple_0(4^[])]   (2)  
+1.1.3  [5^[]=k4_tarski(k10_finseq_1(3^[], 4^[]), k4_twoscomp), -v1_xtuple_0(5^[])]   (6)  substitution:[[_G7163, _G7247, _G7295], [5^[], k10_finseq_1(3^[], 4^[]), k4_twoscomp]]
+1.1.3.1  [v1_xtuple_0(5^[])]   (3)  
+------------------------------------------------------
+End of proof for t114_gfacirc1

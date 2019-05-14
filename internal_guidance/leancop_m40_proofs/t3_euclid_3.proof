@@ -1,0 +1,31 @@
+
+t3_euclid_3 is a Theorem
+Start of proof for t3_euclid_3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xcmplx_0(1^[])]
+ (2)  [-v1_xcmplx_0(2^[])]
+ (3)  [- (k1_euclid_3(1^[])=k1_euclid_3(2^[]))]
+ (4)  [1^[]=2^[]]
+ (5)  [v1_xcmplx_0(_G2842), - (k2_euclid_3(k1_euclid_3(_G2842))=_G2842)]
+ (6)  [_G2262=_G2311, - (k2_euclid_3(_G2262)=k2_euclid_3(_G2311))]
+ (7)  [_G2531=_G2580, - (k1_euclid_3(_G2531)=k1_euclid_3(_G2580))]
+ (8)  [-v1_xcmplx_0(_G2012), _G1963=_G2012, v1_xcmplx_0(_G1963)]
+ (9)  [- (_G1190=_G1190)]
+ (10)  [_G1289=_G1334, - (_G1334=_G1289)]
+ (11)  [- (_G1522=_G1635), _G1522=_G1578, _G1578=_G1635]
+
+Connection Proof:
+-----------------
+1  [1^[]=2^[]]   (4)  
+1.1  [- (1^[]=2^[]), 1^[]=k2_euclid_3(k1_euclid_3(1^[])), k2_euclid_3(k1_euclid_3(1^[]))=2^[]]   (11)  substitution:[[_G1522, _G1635, _G1578], [1^[], 2^[], k2_euclid_3(k1_euclid_3(1^[]))]]
+1.1.1  [- (1^[]=k2_euclid_3(k1_euclid_3(1^[]))), k2_euclid_3(k1_euclid_3(1^[]))=1^[]]   (10)  substitution:[[_G1334, _G1289], [1^[], k2_euclid_3(k1_euclid_3(1^[]))]]
+1.1.1.1  [- (k2_euclid_3(k1_euclid_3(1^[]))=1^[]), v1_xcmplx_0(1^[])]   (5)  substitution:[[_G2842], [1^[]]]
+1.1.1.1.1  [-v1_xcmplx_0(1^[])]   (1)  
+1.1.2  [- (k2_euclid_3(k1_euclid_3(1^[]))=2^[]), k2_euclid_3(k1_euclid_3(1^[]))=k2_euclid_3(k1_euclid_3(2^[])), k2_euclid_3(k1_euclid_3(2^[]))=2^[]]   (11)  substitution:[[_G1522, _G1635, _G1578], [k2_euclid_3(k1_euclid_3(1^[])), 2^[], k2_euclid_3(k1_euclid_3(2^[]))]]
+1.1.2.1  [- (k2_euclid_3(k1_euclid_3(1^[]))=k2_euclid_3(k1_euclid_3(2^[]))), k1_euclid_3(1^[])=k1_euclid_3(2^[])]   (6)  substitution:[[_G2262, _G2311], [k1_euclid_3(1^[]), k1_euclid_3(2^[])]]
+1.1.2.1.1  [- (k1_euclid_3(1^[])=k1_euclid_3(2^[]))]   (3)  
+1.1.2.2  [- (k2_euclid_3(k1_euclid_3(2^[]))=2^[]), v1_xcmplx_0(2^[])]   (5)  substitution:[[_G2842], [2^[]]]
+1.1.2.2.1  [-v1_xcmplx_0(2^[])]   (2)  
+------------------------------------------------------
+End of proof for t3_euclid_3

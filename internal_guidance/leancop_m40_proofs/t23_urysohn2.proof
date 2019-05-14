@@ -1,0 +1,66 @@
+
+t23_urysohn2 is a Theorem
+Start of proof for t23_urysohn2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(5^[], k5_numbers)]
+ (2)  [r1_tarski(k1_urysohn1(5^[]), k2_urysohn1)]
+ (3)  [m1_subset_1(_G6246, k4_ordinal1), -v7_ordinal1(_G6246)]
+ (4)  [- (k1_xxreal_0=k1_numbers)]
+ (5)  [-r1_tarski(_G7154, _G7210), -r2_hidden(4^[_G7210, _G7154], _G7154)]
+ (6)  [-r1_tarski(_G7154, _G7210), r2_hidden(4^[_G7210, _G7154], _G7210)]
+ (7)  [r1_tarski(_G7154, _G7210), r2_hidden(_G7324, _G7154), -r2_hidden(_G7324, _G7210)]
+ (8)  [v7_ordinal1(_G7556), -m1_subset_1(k1_urysohn1(_G7556), k1_zfmisc_1(k1_numbers))]
+ (9)  [-m1_subset_1(k2_urysohn1, k1_zfmisc_1(k1_numbers))]
+ (10)  [- (k5_numbers=k4_ordinal1)]
+ (11)  [-m1_subset_1(_G7862, _G7979), r2_hidden(_G7862, _G7920), m1_subset_1(_G7920, k1_zfmisc_1(_G7979))]
+ (12)  [m1_subset_1(_G6403, k1_zfmisc_1(k1_numbers)), - (_G6403=k2_urysohn1), -m1_subset_1(2^[_G6403], k1_numbers)]
+ (13)  [m1_subset_1(_G6403, k1_zfmisc_1(k1_numbers)), - (_G6403=k2_urysohn1), -r2_hidden(2^[_G6403], _G6403), -m1_subset_1(3^[_G6403], k5_numbers)]
+ (14)  [m1_subset_1(_G6403, k1_zfmisc_1(k1_numbers)), - (_G6403=k2_urysohn1), -r2_hidden(2^[_G6403], _G6403), -r2_hidden(2^[_G6403], k1_urysohn1(3^[_G6403]))]
+ (15)  [m1_subset_1(_G6403, k1_zfmisc_1(k1_numbers)), - (_G6403=k2_urysohn1), r2_hidden(2^[_G6403], _G6403), m1_subset_1(_G9259, k5_numbers), r2_hidden(2^[_G6403], k1_urysohn1(_G9259))]
+ (16)  [m1_subset_1(_G6403, k1_zfmisc_1(k1_numbers)), _G6403=k2_urysohn1, m1_subset_1(_G6607, k1_numbers), r2_hidden(_G6607, _G6403), -m1_subset_1(1^[_G6607, _G6403], k5_numbers)]
+ (17)  [m1_subset_1(_G6403, k1_zfmisc_1(k1_numbers)), _G6403=k2_urysohn1, m1_subset_1(_G6607, k1_numbers), r2_hidden(_G6607, _G6403), -r2_hidden(_G6607, k1_urysohn1(1^[_G6607, _G6403]))]
+ (18)  [m1_subset_1(_G6403, k1_zfmisc_1(k1_numbers)), _G6403=k2_urysohn1, m1_subset_1(_G6607, k1_numbers), -r2_hidden(_G6607, _G6403), m1_subset_1(_G6786, k5_numbers), r2_hidden(_G6607, k1_urysohn1(_G6786))]
+ (19)  [_G5657=_G5706, - (k1_zfmisc_1(_G5657)=k1_zfmisc_1(_G5706))]
+ (20)  [_G5926=_G5975, - (k1_urysohn1(_G5926)=k1_urysohn1(_G5975))]
+ (21)  [- (_G2731=_G2731)]
+ (22)  [_G2830=_G2875, - (_G2875=_G2830)]
+ (23)  [- (_G3063=_G3176), _G3063=_G3119, _G3119=_G3176]
+ (24)  [-v7_ordinal1(_G3562), _G3513=_G3562, v7_ordinal1(_G3513)]
+ (25)  [-r2_hidden(_G3858, _G3995), r2_hidden(_G3791, _G3926), _G3791=_G3858, _G3926=_G3995]
+ (26)  [-m1_subset_1(_G4455, _G4592), m1_subset_1(_G4388, _G4523), _G4388=_G4455, _G4523=_G4592]
+ (27)  [-r1_tarski(_G5043, _G5180), r1_tarski(_G4976, _G5111), _G4976=_G5043, _G5111=_G5180]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k1_urysohn1(5^[]), k2_urysohn1)]   (2)  
+1.1  [-r1_tarski(k1_urysohn1(5^[]), k2_urysohn1), -r2_hidden(4^[k2_urysohn1, k1_urysohn1(5^[])], k1_urysohn1(5^[]))]   (5)  substitution:[[_G7154, _G7210], [k1_urysohn1(5^[]), k2_urysohn1]]
+1.1.1  [r2_hidden(4^[k2_urysohn1, k1_urysohn1(5^[])], k1_urysohn1(5^[])), -m1_subset_1(4^[k2_urysohn1, k1_urysohn1(5^[])], k1_numbers), m1_subset_1(k1_urysohn1(5^[]), k1_zfmisc_1(k1_numbers))]   (11)  substitution:[[_G7862, _G7920, _G7979], [4^[k2_urysohn1, k1_urysohn1(5^[])], k1_urysohn1(5^[]), k1_numbers]]
+1.1.1.1  [m1_subset_1(4^[k2_urysohn1, k1_urysohn1(5^[])], k1_numbers), m1_subset_1(k2_urysohn1, k1_zfmisc_1(k1_numbers)), k2_urysohn1=k2_urysohn1, r2_hidden(4^[k2_urysohn1, k1_urysohn1(5^[])], k2_urysohn1), -m1_subset_1(1^[4^[k2_urysohn1, k1_urysohn1(5^[])], k2_urysohn1], k5_numbers)]   (16)  substitution:[[_G6607, _G6403], [4^[k2_urysohn1, k1_urysohn1(5^[])], k2_urysohn1]]
+1.1.1.1.1  [-m1_subset_1(k2_urysohn1, k1_zfmisc_1(k1_numbers))]   (9)  
+1.1.1.1.2  [- (k2_urysohn1=k2_urysohn1)]   (21)  substitution:[[_G2731], [k2_urysohn1]]
+1.1.1.1.3  [-r2_hidden(4^[k2_urysohn1, k1_urysohn1(5^[])], k2_urysohn1), m1_subset_1(k2_urysohn1, k1_zfmisc_1(k1_numbers)), k2_urysohn1=k2_urysohn1, m1_subset_1(4^[k2_urysohn1, k1_urysohn1(5^[])], k1_numbers), m1_subset_1(5^[], k5_numbers), r2_hidden(4^[k2_urysohn1, k1_urysohn1(5^[])], k1_urysohn1(5^[]))]   (18)  substitution:[[_G6607, _G6403, _G6786], [4^[k2_urysohn1, k1_urysohn1(5^[])], k2_urysohn1, 5^[]]]
+1.1.1.1.3.1  [-m1_subset_1(k2_urysohn1, k1_zfmisc_1(k1_numbers))]   (9)  
+1.1.1.1.3.2  [- (k2_urysohn1=k2_urysohn1)]   (21)  substitution:[[_G2731], [k2_urysohn1]]
+1.1.1.1.3.3  [-m1_subset_1(4^[k2_urysohn1, k1_urysohn1(5^[])], k1_numbers)]   (reduction:1.1.1)  
+1.1.1.1.3.4  [-m1_subset_1(5^[], k5_numbers)]   (1)  
+1.1.1.1.3.5  [-r2_hidden(4^[k2_urysohn1, k1_urysohn1(5^[])], k1_urysohn1(5^[]))]   (reduction:1.1)  
+1.1.1.1.4  [m1_subset_1(1^[4^[k2_urysohn1, k1_urysohn1(5^[])], k2_urysohn1], k5_numbers), m1_subset_1(k2_urysohn1, k1_zfmisc_1(k1_numbers)), k2_urysohn1=k2_urysohn1, m1_subset_1(4^[k2_urysohn1, k1_urysohn1(5^[])], k1_numbers), -r2_hidden(4^[k2_urysohn1, k1_urysohn1(5^[])], k2_urysohn1), r2_hidden(4^[k2_urysohn1, k1_urysohn1(5^[])], k1_urysohn1(1^[4^[k2_urysohn1, k1_urysohn1(5^[])], k2_urysohn1]))]   (18)  substitution:[[_G6786, _G6403, _G6607], [1^[4^[k2_urysohn1, k1_urysohn1(5^[])], k2_urysohn1], k2_urysohn1, 4^[k2_urysohn1, k1_urysohn1(5^[])]]]
+1.1.1.1.4.1  [-m1_subset_1(k2_urysohn1, k1_zfmisc_1(k1_numbers))]   (9)  
+1.1.1.1.4.2  [- (k2_urysohn1=k2_urysohn1)]   (21)  substitution:[[_G2731], [k2_urysohn1]]
+1.1.1.1.4.3  [-m1_subset_1(4^[k2_urysohn1, k1_urysohn1(5^[])], k1_numbers)]   (reduction:1.1.1)  
+1.1.1.1.4.4  [r2_hidden(4^[k2_urysohn1, k1_urysohn1(5^[])], k2_urysohn1), -r1_tarski(k1_urysohn1(5^[]), k2_urysohn1)]   (6)  substitution:[[_G7210, _G7154], [k2_urysohn1, k1_urysohn1(5^[])]]
+1.1.1.1.4.4.1  [r1_tarski(k1_urysohn1(5^[]), k2_urysohn1)]   (2)  
+1.1.1.1.4.5  [-r2_hidden(4^[k2_urysohn1, k1_urysohn1(5^[])], k1_urysohn1(1^[4^[k2_urysohn1, k1_urysohn1(5^[])], k2_urysohn1])), m1_subset_1(k2_urysohn1, k1_zfmisc_1(k1_numbers)), k2_urysohn1=k2_urysohn1, m1_subset_1(4^[k2_urysohn1, k1_urysohn1(5^[])], k1_numbers), r2_hidden(4^[k2_urysohn1, k1_urysohn1(5^[])], k2_urysohn1)]   (17)  substitution:[[_G6607, _G6403], [4^[k2_urysohn1, k1_urysohn1(5^[])], k2_urysohn1]]
+1.1.1.1.4.5.1  [-m1_subset_1(k2_urysohn1, k1_zfmisc_1(k1_numbers))]   (9)  
+1.1.1.1.4.5.2  [- (k2_urysohn1=k2_urysohn1)]   (21)  substitution:[[_G2731], [k2_urysohn1]]
+1.1.1.1.4.5.3  [-m1_subset_1(4^[k2_urysohn1, k1_urysohn1(5^[])], k1_numbers)]   (lemmata:1.1.1.1.4)  
+1.1.1.1.4.5.4  [-r2_hidden(4^[k2_urysohn1, k1_urysohn1(5^[])], k2_urysohn1)]   (lemmata:1.1.1.1)  
+1.1.1.2  [-m1_subset_1(k1_urysohn1(5^[]), k1_zfmisc_1(k1_numbers)), v7_ordinal1(5^[])]   (8)  substitution:[[_G7556], [5^[]]]
+1.1.1.2.1  [-v7_ordinal1(5^[]), m1_subset_1(5^[], k4_ordinal1)]   (3)  substitution:[[_G6246], [5^[]]]
+1.1.1.2.1.1  [-m1_subset_1(5^[], k4_ordinal1), m1_subset_1(5^[], k5_numbers), 5^[]=5^[], k5_numbers=k4_ordinal1]   (26)  substitution:[[_G4455, _G4592, _G4388, _G4523], [5^[], k4_ordinal1, 5^[], k5_numbers]]
+1.1.1.2.1.1.1  [-m1_subset_1(5^[], k5_numbers)]   (1)  
+1.1.1.2.1.1.2  [- (5^[]=5^[])]   (21)  substitution:[[_G2731], [5^[]]]
+1.1.1.2.1.1.3  [- (k5_numbers=k4_ordinal1)]   (10)  
+------------------------------------------------------
+End of proof for t23_urysohn2

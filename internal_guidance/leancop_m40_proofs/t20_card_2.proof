@@ -1,0 +1,48 @@
+
+t20_card_2 is a Theorem
+Start of proof for t20_card_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_card_1(1^[])]
+ (2)  [k2_card_2(1^[], k6_numbers)=k6_numbers]
+ (3)  [- (k2_card_2(_G4671, _G4726)=k2_card_2(_G4726, _G4671)), v1_card_1(_G4671), v1_card_1(_G4726)]
+ (4)  [v1_card_1(_G5039), v1_card_1(_G5128), - (k2_card_2(_G5039, _G5128)=k1_card_1(k2_zfmisc_1(_G5039, _G5128)))]
+ (5)  [-v1_card_1(k1_card_1(_G5420))]
+ (6)  [- (k6_numbers=k1_xboole_0)]
+ (7)  [- (k1_card_1(k1_xboole_0)=k1_xboole_0)]
+ (8)  [- (k2_zfmisc_1(_G5628, _G5682)=k1_xboole_0), _G5628=k1_xboole_0]
+ (9)  [- (k2_zfmisc_1(_G5628, _G5682)=k1_xboole_0), _G5682=k1_xboole_0]
+ (10)  [k2_zfmisc_1(_G5628, _G5682)=k1_xboole_0, - (_G5628=k1_xboole_0), - (_G5682=k1_xboole_0)]
+ (11)  [-v1_card_1(_G2895), _G2846=_G2895, v1_card_1(_G2846)]
+ (12)  [- (_G2073=_G2073)]
+ (13)  [_G2172=_G2217, - (_G2217=_G2172)]
+ (14)  [- (_G2405=_G2518), _G2405=_G2461, _G2461=_G2518]
+ (15)  [_G3145=_G3194, - (k1_card_1(_G3145)=k1_card_1(_G3194))]
+ (16)  [- (k2_zfmisc_1(_G3423, _G3558)=k2_zfmisc_1(_G3490, _G3627)), _G3423=_G3490, _G3558=_G3627]
+ (17)  [- (k2_card_2(_G4011, _G4146)=k2_card_2(_G4078, _G4215)), _G4011=_G4078, _G4146=_G4215]
+
+Connection Proof:
+-----------------
+1  [k2_card_2(1^[], k6_numbers)=k6_numbers]   (2)  
+1.1  [- (k2_card_2(1^[], k6_numbers)=k6_numbers), k2_card_2(1^[], k6_numbers)=k1_card_1(k2_zfmisc_1(1^[], k6_numbers)), k1_card_1(k2_zfmisc_1(1^[], k6_numbers))=k6_numbers]   (14)  substitution:[[_G2405, _G2518, _G2461], [k2_card_2(1^[], k6_numbers), k6_numbers, k1_card_1(k2_zfmisc_1(1^[], k6_numbers))]]
+1.1.1  [- (k2_card_2(1^[], k6_numbers)=k1_card_1(k2_zfmisc_1(1^[], k6_numbers))), v1_card_1(1^[]), v1_card_1(k6_numbers)]   (4)  substitution:[[_G5039, _G5128], [1^[], k6_numbers]]
+1.1.1.1  [-v1_card_1(1^[])]   (1)  
+1.1.1.2  [-v1_card_1(k6_numbers), k1_xboole_0=k6_numbers, v1_card_1(k1_xboole_0)]   (11)  substitution:[[_G2895, _G2846], [k6_numbers, k1_xboole_0]]
+1.1.1.2.1  [- (k1_xboole_0=k6_numbers), k6_numbers=k1_xboole_0]   (13)  substitution:[[_G2217, _G2172], [k1_xboole_0, k6_numbers]]
+1.1.1.2.1.1  [- (k6_numbers=k1_xboole_0)]   (6)  
+1.1.1.2.2  [-v1_card_1(k1_xboole_0), k1_card_1(k1_xboole_0)=k1_xboole_0, v1_card_1(k1_card_1(k1_xboole_0))]   (11)  substitution:[[_G2895, _G2846], [k1_xboole_0, k1_card_1(k1_xboole_0)]]
+1.1.1.2.2.1  [- (k1_card_1(k1_xboole_0)=k1_xboole_0)]   (7)  
+1.1.1.2.2.2  [-v1_card_1(k1_card_1(k1_xboole_0))]   (5)  substitution:[[_G5420], [k1_xboole_0]]
+1.1.2  [- (k1_card_1(k2_zfmisc_1(1^[], k6_numbers))=k6_numbers), k1_card_1(k2_zfmisc_1(1^[], k6_numbers))=k1_xboole_0, k1_xboole_0=k6_numbers]   (14)  substitution:[[_G2405, _G2518, _G2461], [k1_card_1(k2_zfmisc_1(1^[], k6_numbers)), k6_numbers, k1_xboole_0]]
+1.1.2.1  [- (k1_card_1(k2_zfmisc_1(1^[], k6_numbers))=k1_xboole_0), k2_zfmisc_1(k1_card_1(k2_zfmisc_1(1^[], k6_numbers)), k2_zfmisc_1(1^[], k6_numbers))=k1_xboole_0, - (k2_zfmisc_1(1^[], k6_numbers)=k1_xboole_0)]   (10)  substitution:[[_G5628, _G5682], [k1_card_1(k2_zfmisc_1(1^[], k6_numbers)), k2_zfmisc_1(1^[], k6_numbers)]]
+1.1.2.1.1  [- (k2_zfmisc_1(k1_card_1(k2_zfmisc_1(1^[], k6_numbers)), k2_zfmisc_1(1^[], k6_numbers))=k1_xboole_0), k2_zfmisc_1(1^[], k6_numbers)=k1_xboole_0]   (9)  substitution:[[_G5628, _G5682], [k1_card_1(k2_zfmisc_1(1^[], k6_numbers)), k2_zfmisc_1(1^[], k6_numbers)]]
+1.1.2.1.1.1  [- (k2_zfmisc_1(1^[], k6_numbers)=k1_xboole_0), k6_numbers=k1_xboole_0]   (9)  substitution:[[_G5628, _G5682], [1^[], k6_numbers]]
+1.1.2.1.1.1.1  [- (k6_numbers=k1_xboole_0)]   (6)  
+1.1.2.1.2  [k2_zfmisc_1(1^[], k6_numbers)=k1_xboole_0, - (k1_card_1(k2_zfmisc_1(1^[], k6_numbers))=k1_card_1(k1_xboole_0))]   (15)  substitution:[[_G3145, _G3194], [k2_zfmisc_1(1^[], k6_numbers), k1_xboole_0]]
+1.1.2.1.2.1  [k1_card_1(k2_zfmisc_1(1^[], k6_numbers))=k1_card_1(k1_xboole_0), - (k1_card_1(k2_zfmisc_1(1^[], k6_numbers))=k1_xboole_0), k1_card_1(k1_xboole_0)=k1_xboole_0]   (14)  substitution:[[_G2405, _G2461, _G2518], [k1_card_1(k2_zfmisc_1(1^[], k6_numbers)), k1_card_1(k1_xboole_0), k1_xboole_0]]
+1.1.2.1.2.1.1  [k1_card_1(k2_zfmisc_1(1^[], k6_numbers))=k1_xboole_0]   (reduction:1.1.2)  
+1.1.2.1.2.1.2  [- (k1_card_1(k1_xboole_0)=k1_xboole_0)]   (7)  
+1.1.2.2  [- (k1_xboole_0=k6_numbers), k6_numbers=k1_xboole_0]   (13)  substitution:[[_G2217, _G2172], [k1_xboole_0, k6_numbers]]
+1.1.2.2.1  [- (k6_numbers=k1_xboole_0)]   (6)  
+------------------------------------------------------
+End of proof for t20_card_2

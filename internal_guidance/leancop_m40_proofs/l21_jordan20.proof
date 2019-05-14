@@ -1,0 +1,40 @@
+
+l21_jordan20 is a Theorem
+Start of proof for l21_jordan20
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [- (k2_struct_0(k5_topmetr)=k1_xboole_0)]
+ (2)  [-l1_pre_topc(k17_borsuk_1)]
+ (3)  [l1_pre_topc(_G4666), -l1_struct_0(_G4666)]
+ (4)  [-v1_xboole_0(k1_xboole_0)]
+ (5)  [v2_struct_0(k17_borsuk_1)]
+ (6)  [-v1_pre_topc(k17_borsuk_1)]
+ (7)  [-v2_pre_topc(k17_borsuk_1)]
+ (8)  [- (k5_topmetr=k17_borsuk_1)]
+ (9)  [v1_xboole_0(k2_struct_0(_G4829)), -v2_struct_0(_G4829), l1_struct_0(_G4829)]
+ (10)  [_G4335=_G4384, - (k2_struct_0(_G4335)=k2_struct_0(_G4384))]
+ (11)  [- (_G1777=_G1777)]
+ (12)  [_G1876=_G1921, - (_G1921=_G1876)]
+ (13)  [- (_G2109=_G2222), _G2109=_G2165, _G2165=_G2222]
+ (14)  [-l1_pre_topc(_G2608), _G2559=_G2608, l1_pre_topc(_G2559)]
+ (15)  [-l1_struct_0(_G2886), _G2837=_G2886, l1_struct_0(_G2837)]
+ (16)  [-v1_xboole_0(_G3164), _G3115=_G3164, v1_xboole_0(_G3115)]
+ (17)  [-v2_struct_0(_G3442), _G3393=_G3442, v2_struct_0(_G3393)]
+ (18)  [-v1_pre_topc(_G3720), _G3671=_G3720, v1_pre_topc(_G3671)]
+ (19)  [-v2_pre_topc(_G3989), _G3940=_G3989, v2_pre_topc(_G3940)]
+
+Connection Proof:
+-----------------
+1  [v2_struct_0(k17_borsuk_1)]   (5)  
+1.1  [-v2_struct_0(k17_borsuk_1), v1_xboole_0(k2_struct_0(k17_borsuk_1)), l1_struct_0(k17_borsuk_1)]   (9)  substitution:[[_G4829], [k17_borsuk_1]]
+1.1.1  [-v1_xboole_0(k2_struct_0(k17_borsuk_1)), k2_struct_0(k5_topmetr)=k2_struct_0(k17_borsuk_1), v1_xboole_0(k2_struct_0(k5_topmetr))]   (16)  substitution:[[_G3164, _G3115], [k2_struct_0(k17_borsuk_1), k2_struct_0(k5_topmetr)]]
+1.1.1.1  [- (k2_struct_0(k5_topmetr)=k2_struct_0(k17_borsuk_1)), k5_topmetr=k17_borsuk_1]   (10)  substitution:[[_G4335, _G4384], [k5_topmetr, k17_borsuk_1]]
+1.1.1.1.1  [- (k5_topmetr=k17_borsuk_1)]   (8)  
+1.1.1.2  [-v1_xboole_0(k2_struct_0(k5_topmetr)), k1_xboole_0=k2_struct_0(k5_topmetr), v1_xboole_0(k1_xboole_0)]   (16)  substitution:[[_G3164, _G3115], [k2_struct_0(k5_topmetr), k1_xboole_0]]
+1.1.1.2.1  [- (k1_xboole_0=k2_struct_0(k5_topmetr)), k2_struct_0(k5_topmetr)=k1_xboole_0]   (12)  substitution:[[_G1921, _G1876], [k1_xboole_0, k2_struct_0(k5_topmetr)]]
+1.1.1.2.1.1  [- (k2_struct_0(k5_topmetr)=k1_xboole_0)]   (1)  
+1.1.1.2.2  [-v1_xboole_0(k1_xboole_0)]   (4)  
+1.1.2  [-l1_struct_0(k17_borsuk_1), l1_pre_topc(k17_borsuk_1)]   (3)  substitution:[[_G4666], [k17_borsuk_1]]
+1.1.2.1  [-l1_pre_topc(k17_borsuk_1)]   (2)  
+------------------------------------------------------
+End of proof for l21_jordan20

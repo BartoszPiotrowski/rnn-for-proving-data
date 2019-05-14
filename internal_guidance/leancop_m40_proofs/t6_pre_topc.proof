@@ -1,0 +1,44 @@
+
+t6_pre_topc is a Theorem
+Start of proof for t6_pre_topc
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-l1_struct_0(1^[])]
+ (2)  [k2_struct_0(1^[])=k3_subset_1(u1_struct_0(1^[]), k1_struct_0(1^[]))]
+ (3)  [l1_struct_0(_G6391), - (k1_struct_0(_G6391)=k1_xboole_0)]
+ (4)  [l1_struct_0(_G6564), - (k2_struct_0(_G6564)=u1_struct_0(_G6564))]
+ (5)  [m1_subset_1(_G6806, k1_zfmisc_1(_G6753)), - (k3_subset_1(_G6753, _G6806)=k4_xboole_0(_G6753, _G6806))]
+ (6)  [- (k4_xboole_0(_G7299, k1_xboole_0)=_G7299)]
+ (7)  [l1_struct_0(_G7103), -m1_subset_1(k1_struct_0(_G7103), k1_zfmisc_1(u1_struct_0(_G7103)))]
+ (8)  [- (_G2278=_G2278)]
+ (9)  [_G2377=_G2422, - (_G2422=_G2377)]
+ (10)  [- (_G2610=_G2723), _G2610=_G2666, _G2666=_G2723]
+ (11)  [-l1_struct_0(_G3697), _G3648=_G3697, l1_struct_0(_G3648)]
+ (12)  [-m1_subset_1(_G3127, _G3264), m1_subset_1(_G3060, _G3195), _G3060=_G3127, _G3195=_G3264]
+ (13)  [_G3968=_G4017, - (k1_zfmisc_1(_G3968)=k1_zfmisc_1(_G4017))]
+ (14)  [- (k4_xboole_0(_G4246, _G4381)=k4_xboole_0(_G4313, _G4450)), _G4246=_G4313, _G4381=_G4450]
+ (15)  [_G4843=_G4892, - (k2_struct_0(_G4843)=k2_struct_0(_G4892))]
+ (16)  [- (k3_subset_1(_G5121, _G5256)=k3_subset_1(_G5188, _G5325)), _G5121=_G5188, _G5256=_G5325]
+ (17)  [_G5718=_G5767, - (u1_struct_0(_G5718)=u1_struct_0(_G5767))]
+ (18)  [_G5987=_G6036, - (k1_struct_0(_G5987)=k1_struct_0(_G6036))]
+
+Connection Proof:
+-----------------
+1  [k2_struct_0(1^[])=k3_subset_1(u1_struct_0(1^[]), k1_struct_0(1^[]))]   (2)  
+1.1  [- (k2_struct_0(1^[])=k3_subset_1(u1_struct_0(1^[]), k1_struct_0(1^[]))), k3_subset_1(u1_struct_0(1^[]), k1_struct_0(1^[]))=k2_struct_0(1^[])]   (9)  substitution:[[_G2422, _G2377], [k2_struct_0(1^[]), k3_subset_1(u1_struct_0(1^[]), k1_struct_0(1^[]))]]
+1.1.1  [- (k3_subset_1(u1_struct_0(1^[]), k1_struct_0(1^[]))=k2_struct_0(1^[])), k3_subset_1(u1_struct_0(1^[]), k1_struct_0(1^[]))=k4_xboole_0(u1_struct_0(1^[]), k1_xboole_0), k4_xboole_0(u1_struct_0(1^[]), k1_xboole_0)=k2_struct_0(1^[])]   (10)  substitution:[[_G2610, _G2723, _G2666], [k3_subset_1(u1_struct_0(1^[]), k1_struct_0(1^[])), k2_struct_0(1^[]), k4_xboole_0(u1_struct_0(1^[]), k1_xboole_0)]]
+1.1.1.1  [- (k3_subset_1(u1_struct_0(1^[]), k1_struct_0(1^[]))=k4_xboole_0(u1_struct_0(1^[]), k1_xboole_0)), k3_subset_1(u1_struct_0(1^[]), k1_struct_0(1^[]))=k4_xboole_0(u1_struct_0(1^[]), k1_struct_0(1^[])), k4_xboole_0(u1_struct_0(1^[]), k1_struct_0(1^[]))=k4_xboole_0(u1_struct_0(1^[]), k1_xboole_0)]   (10)  substitution:[[_G2610, _G2723, _G2666], [k3_subset_1(u1_struct_0(1^[]), k1_struct_0(1^[])), k4_xboole_0(u1_struct_0(1^[]), k1_xboole_0), k4_xboole_0(u1_struct_0(1^[]), k1_struct_0(1^[]))]]
+1.1.1.1.1  [- (k3_subset_1(u1_struct_0(1^[]), k1_struct_0(1^[]))=k4_xboole_0(u1_struct_0(1^[]), k1_struct_0(1^[]))), m1_subset_1(k1_struct_0(1^[]), k1_zfmisc_1(u1_struct_0(1^[])))]   (5)  substitution:[[_G6753, _G6806], [u1_struct_0(1^[]), k1_struct_0(1^[])]]
+1.1.1.1.1.1  [-m1_subset_1(k1_struct_0(1^[]), k1_zfmisc_1(u1_struct_0(1^[]))), l1_struct_0(1^[])]   (7)  substitution:[[_G7103], [1^[]]]
+1.1.1.1.1.1.1  [-l1_struct_0(1^[])]   (1)  
+1.1.1.1.2  [- (k4_xboole_0(u1_struct_0(1^[]), k1_struct_0(1^[]))=k4_xboole_0(u1_struct_0(1^[]), k1_xboole_0)), u1_struct_0(1^[])=u1_struct_0(1^[]), k1_struct_0(1^[])=k1_xboole_0]   (14)  substitution:[[_G4246, _G4381, _G4313, _G4450], [u1_struct_0(1^[]), k1_struct_0(1^[]), u1_struct_0(1^[]), k1_xboole_0]]
+1.1.1.1.2.1  [- (u1_struct_0(1^[])=u1_struct_0(1^[]))]   (8)  substitution:[[_G2278], [u1_struct_0(1^[])]]
+1.1.1.1.2.2  [- (k1_struct_0(1^[])=k1_xboole_0), l1_struct_0(1^[])]   (3)  substitution:[[_G6391], [1^[]]]
+1.1.1.1.2.2.1  [-l1_struct_0(1^[])]   (1)  
+1.1.1.2  [- (k4_xboole_0(u1_struct_0(1^[]), k1_xboole_0)=k2_struct_0(1^[])), k4_xboole_0(u1_struct_0(1^[]), k1_xboole_0)=u1_struct_0(1^[]), u1_struct_0(1^[])=k2_struct_0(1^[])]   (10)  substitution:[[_G2610, _G2723, _G2666], [k4_xboole_0(u1_struct_0(1^[]), k1_xboole_0), k2_struct_0(1^[]), u1_struct_0(1^[])]]
+1.1.1.2.1  [- (k4_xboole_0(u1_struct_0(1^[]), k1_xboole_0)=u1_struct_0(1^[]))]   (6)  substitution:[[_G7299], [u1_struct_0(1^[])]]
+1.1.1.2.2  [- (u1_struct_0(1^[])=k2_struct_0(1^[])), k2_struct_0(1^[])=u1_struct_0(1^[])]   (9)  substitution:[[_G2422, _G2377], [u1_struct_0(1^[]), k2_struct_0(1^[])]]
+1.1.1.2.2.1  [- (k2_struct_0(1^[])=u1_struct_0(1^[])), l1_struct_0(1^[])]   (4)  substitution:[[_G6564], [1^[]]]
+1.1.1.2.2.1.1  [-l1_struct_0(1^[])]   (1)  
+------------------------------------------------------
+End of proof for t6_pre_topc

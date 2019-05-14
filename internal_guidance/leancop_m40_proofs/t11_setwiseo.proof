@@ -1,0 +1,48 @@
+
+t11_setwiseo is a Theorem
+Start of proof for t11_setwiseo
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(4^[], k5_finsub_1(3^[]))]
+ (2)  [-r1_tarski(5^[], 4^[])]
+ (3)  [m1_subset_1(5^[], k5_finsub_1(3^[]))]
+ (4)  [_G6036=_G6085, - (k1_zfmisc_1(_G6036)=k1_zfmisc_1(_G6085))]
+ (5)  [_G6305=_G6354, - (k5_finsub_1(_G6305)=k5_finsub_1(_G6354))]
+ (6)  [- (_G3110=_G3110)]
+ (7)  [_G3209=_G3254, - (_G3254=_G3209)]
+ (8)  [- (_G3442=_G3555), _G3442=_G3498, _G3498=_G3555]
+ (9)  [-v1_finset_1(_G3941), _G3892=_G3941, v1_finset_1(_G3892)]
+ (10)  [-r2_hidden(_G4237, _G4374), r2_hidden(_G4170, _G4305), _G4170=_G4237, _G4305=_G4374]
+ (11)  [-r1_tarski(_G4834, _G4971), r1_tarski(_G4767, _G4902), _G4767=_G4834, _G4902=_G4971]
+ (12)  [-m1_subset_1(_G5422, _G5559), m1_subset_1(_G5355, _G5490), _G5355=_G5422, _G5490=_G5559]
+ (13)  [m1_subset_1(_G6671, k5_finsub_1(_G6625)), -v1_finset_1(_G6671)]
+ (14)  [_G6916=k1_zfmisc_1(_G6858), r2_hidden(_G7046, _G6916), -r1_tarski(_G7046, _G6858)]
+ (15)  [_G6916=k1_zfmisc_1(_G6858), -r2_hidden(_G7046, _G6916), r1_tarski(_G7046, _G6858)]
+ (16)  [- (_G6916=k1_zfmisc_1(_G6858)), r2_hidden(1^[_G6916, _G6858], _G6916), r1_tarski(1^[_G6916, _G6858], _G6858)]
+ (17)  [- (_G6916=k1_zfmisc_1(_G6858)), -r2_hidden(1^[_G6916, _G6858], _G6916), -r1_tarski(1^[_G6916, _G6858], _G6858)]
+ (18)  [-r1_tarski(_G7278, _G7334), -r2_hidden(2^[_G7334, _G7278], _G7278)]
+ (19)  [-r1_tarski(_G7278, _G7334), r2_hidden(2^[_G7334, _G7278], _G7334)]
+ (20)  [r1_tarski(_G7278, _G7334), r2_hidden(_G7448, _G7278), -r2_hidden(_G7448, _G7334)]
+ (21)  [r1_tarski(_G7680, _G7729), -r1_tarski(k5_finsub_1(_G7680), k5_finsub_1(_G7729))]
+ (22)  [v1_finset_1(_G7958), - (k5_finsub_1(_G7958)=k1_zfmisc_1(_G7958))]
+ (23)  [m1_subset_1(_G8196, k5_finsub_1(_G8147)), -m1_subset_1(_G8196, k1_zfmisc_1(_G8147))]
+ (24)  [r2_hidden(_G8425, _G8470), -m1_subset_1(_G8425, _G8470)]
+ (25)  [m1_subset_1(_G8658, k1_zfmisc_1(_G8705)), -r1_tarski(_G8658, _G8705)]
+ (26)  [-m1_subset_1(_G8658, k1_zfmisc_1(_G8705)), r1_tarski(_G8658, _G8705)]
+
+Connection Proof:
+-----------------
+1  [m1_subset_1(5^[], k5_finsub_1(3^[]))]   (3)  
+1.1  [-m1_subset_1(5^[], k5_finsub_1(3^[])), r2_hidden(5^[], k5_finsub_1(3^[]))]   (24)  substitution:[[_G8425, _G8470], [5^[], k5_finsub_1(3^[])]]
+1.1.1  [-r2_hidden(5^[], k5_finsub_1(3^[])), r1_tarski(k5_finsub_1(4^[]), k5_finsub_1(3^[])), r2_hidden(5^[], k5_finsub_1(4^[]))]   (20)  substitution:[[_G7448, _G7334, _G7278], [5^[], k5_finsub_1(3^[]), k5_finsub_1(4^[])]]
+1.1.1.1  [-r1_tarski(k5_finsub_1(4^[]), k5_finsub_1(3^[])), r1_tarski(4^[], 3^[])]   (21)  substitution:[[_G7680, _G7729], [4^[], 3^[]]]
+1.1.1.1.1  [-r1_tarski(4^[], 3^[]), m1_subset_1(4^[], k1_zfmisc_1(3^[]))]   (25)  substitution:[[_G8658, _G8705], [4^[], 3^[]]]
+1.1.1.1.1.1  [-m1_subset_1(4^[], k1_zfmisc_1(3^[])), m1_subset_1(4^[], k5_finsub_1(3^[]))]   (23)  substitution:[[_G8196, _G8147], [4^[], 3^[]]]
+1.1.1.1.1.1.1  [-m1_subset_1(4^[], k5_finsub_1(3^[]))]   (1)  
+1.1.1.2  [-r2_hidden(5^[], k5_finsub_1(4^[])), k5_finsub_1(4^[])=k1_zfmisc_1(4^[]), r1_tarski(5^[], 4^[])]   (15)  substitution:[[_G7046, _G6916, _G6858], [5^[], k5_finsub_1(4^[]), 4^[]]]
+1.1.1.2.1  [- (k5_finsub_1(4^[])=k1_zfmisc_1(4^[])), v1_finset_1(4^[])]   (22)  substitution:[[_G7958], [4^[]]]
+1.1.1.2.1.1  [-v1_finset_1(4^[]), m1_subset_1(4^[], k5_finsub_1(3^[]))]   (13)  substitution:[[_G6671, _G6625], [4^[], 3^[]]]
+1.1.1.2.1.1.1  [-m1_subset_1(4^[], k5_finsub_1(3^[]))]   (1)  
+1.1.1.2.2  [-r1_tarski(5^[], 4^[])]   (2)  
+------------------------------------------------------
+End of proof for t11_setwiseo

@@ -1,0 +1,21 @@
+
+l111_card_3 is a Theorem
+Start of proof for l111_card_3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-r1_tarski(1^[], 2^[])]
+ (2)  [-v4_card_3(2^[])]
+ (3)  [v4_card_3(1^[])]
+ (4)  [v4_card_3(_G742), m1_subset_1(_G825, k1_zfmisc_1(_G742)), -v4_card_3(_G825)]
+ (5)  [m1_subset_1(_G1024, k1_zfmisc_1(_G1071)), -r1_tarski(_G1024, _G1071)]
+ (6)  [-m1_subset_1(_G1024, k1_zfmisc_1(_G1071)), r1_tarski(_G1024, _G1071)]
+
+Connection Proof:
+-----------------
+1  [v4_card_3(1^[])]   (3)  
+1.1  [-v4_card_3(1^[]), v4_card_3(2^[]), m1_subset_1(1^[], k1_zfmisc_1(2^[]))]   (4)  substitution:[[_G825, _G742], [1^[], 2^[]]]
+1.1.1  [-v4_card_3(2^[])]   (2)  
+1.1.2  [-m1_subset_1(1^[], k1_zfmisc_1(2^[])), r1_tarski(1^[], 2^[])]   (6)  substitution:[[_G1024, _G1071], [1^[], 2^[]]]
+1.1.2.1  [-r1_tarski(1^[], 2^[])]   (1)  
+------------------------------------------------------
+End of proof for l111_card_3

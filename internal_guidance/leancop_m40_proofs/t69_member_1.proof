@@ -1,0 +1,54 @@
+
+t69_member_1 is a Theorem
+Start of proof for t69_member_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_membered(1^[])]
+ (2)  [-v1_membered(2^[])]
+ (3)  [-v1_membered(3^[])]
+ (4)  [r1_tarski(k11_member_1(1^[], k3_xboole_0(2^[], 3^[])), k3_xboole_0(k11_member_1(1^[], 2^[]), k11_member_1(1^[], 3^[])))]
+ (5)  [- (k3_xboole_0(_G5837, _G5882)=k3_xboole_0(_G5882, _G5837))]
+ (6)  [_G6079=_G6130, -r1_tarski(_G6079, _G6130)]
+ (7)  [_G6079=_G6130, -r1_tarski(_G6130, _G6079)]
+ (8)  [- (_G6079=_G6130), r1_tarski(_G6079, _G6130), r1_tarski(_G6130, _G6079)]
+ (9)  [-r1_tarski(k3_xboole_0(_G6411, _G6453), _G6411)]
+ (10)  [v1_membered(_G6657), r1_tarski(_G6608, _G6657), -v1_membered(_G6608)]
+ (11)  [-r1_tarski(_G6886, k3_xboole_0(_G6945, _G7005)), r1_tarski(_G6886, _G6945), r1_tarski(_G6886, _G7005)]
+ (12)  [v1_membered(_G7333), v1_membered(_G7452), v1_membered(_G7567), v1_membered(_G7678), -r1_tarski(k11_member_1(_G7333, _G7567), k11_member_1(_G7452, _G7678)), r1_tarski(_G7333, _G7452), r1_tarski(_G7567, _G7678)]
+ (13)  [- (k3_xboole_0(_G4610, _G4745)=k3_xboole_0(_G4677, _G4814)), _G4610=_G4677, _G4745=_G4814]
+ (14)  [- (k11_member_1(_G5198, _G5333)=k11_member_1(_G5265, _G5402)), _G5198=_G5265, _G5333=_G5402]
+ (15)  [- (_G2920=_G2920)]
+ (16)  [_G3019=_G3064, - (_G3064=_G3019)]
+ (17)  [- (_G3252=_G3365), _G3252=_G3308, _G3308=_G3365]
+ (18)  [-v1_membered(_G3751), _G3702=_G3751, v1_membered(_G3702)]
+ (19)  [-r1_tarski(_G4038, _G4175), r1_tarski(_G3971, _G4106), _G3971=_G4038, _G4106=_G4175]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k11_member_1(1^[], k3_xboole_0(2^[], 3^[])), k3_xboole_0(k11_member_1(1^[], 2^[]), k11_member_1(1^[], 3^[])))]   (4)  
+1.1  [-r1_tarski(k11_member_1(1^[], k3_xboole_0(2^[], 3^[])), k3_xboole_0(k11_member_1(1^[], 2^[]), k11_member_1(1^[], 3^[]))), r1_tarski(k11_member_1(1^[], k3_xboole_0(2^[], 3^[])), k11_member_1(1^[], 2^[])), r1_tarski(k11_member_1(1^[], k3_xboole_0(2^[], 3^[])), k11_member_1(1^[], 3^[]))]   (11)  substitution:[[_G6886, _G6945, _G7005], [k11_member_1(1^[], k3_xboole_0(2^[], 3^[])), k11_member_1(1^[], 2^[]), k11_member_1(1^[], 3^[])]]
+1.1.1  [-r1_tarski(k11_member_1(1^[], k3_xboole_0(2^[], 3^[])), k11_member_1(1^[], 2^[])), v1_membered(1^[]), v1_membered(1^[]), v1_membered(k3_xboole_0(2^[], 3^[])), v1_membered(2^[]), r1_tarski(1^[], 1^[]), r1_tarski(k3_xboole_0(2^[], 3^[]), 2^[])]   (12)  substitution:[[_G7333, _G7567, _G7452, _G7678], [1^[], k3_xboole_0(2^[], 3^[]), 1^[], 2^[]]]
+1.1.1.1  [-v1_membered(1^[])]   (1)  
+1.1.1.2  [-v1_membered(1^[])]   (1)  
+1.1.1.3  [-v1_membered(k3_xboole_0(2^[], 3^[])), v1_membered(2^[]), r1_tarski(k3_xboole_0(2^[], 3^[]), 2^[])]   (10)  substitution:[[_G6608, _G6657], [k3_xboole_0(2^[], 3^[]), 2^[]]]
+1.1.1.3.1  [-v1_membered(2^[])]   (2)  
+1.1.1.3.2  [-r1_tarski(k3_xboole_0(2^[], 3^[]), 2^[])]   (9)  substitution:[[_G6411, _G6453], [2^[], 3^[]]]
+1.1.1.4  [-v1_membered(2^[])]   (2)  
+1.1.1.5  [-r1_tarski(1^[], 1^[]), 1^[]=1^[]]   (6)  substitution:[[_G6079, _G6130], [1^[], 1^[]]]
+1.1.1.5.1  [- (1^[]=1^[])]   (15)  substitution:[[_G2920], [1^[]]]
+1.1.1.6  [-r1_tarski(k3_xboole_0(2^[], 3^[]), 2^[])]   (9)  substitution:[[_G6411, _G6453], [2^[], 3^[]]]
+1.1.2  [-r1_tarski(k11_member_1(1^[], k3_xboole_0(2^[], 3^[])), k11_member_1(1^[], 3^[])), v1_membered(1^[]), v1_membered(1^[]), v1_membered(k3_xboole_0(2^[], 3^[])), v1_membered(3^[]), r1_tarski(1^[], 1^[]), r1_tarski(k3_xboole_0(2^[], 3^[]), 3^[])]   (12)  substitution:[[_G7333, _G7567, _G7452, _G7678], [1^[], k3_xboole_0(2^[], 3^[]), 1^[], 3^[]]]
+1.1.2.1  [-v1_membered(1^[])]   (1)  
+1.1.2.2  [-v1_membered(1^[])]   (1)  
+1.1.2.3  [-v1_membered(k3_xboole_0(2^[], 3^[])), v1_membered(2^[]), r1_tarski(k3_xboole_0(2^[], 3^[]), 2^[])]   (10)  substitution:[[_G6608, _G6657], [k3_xboole_0(2^[], 3^[]), 2^[]]]
+1.1.2.3.1  [-v1_membered(2^[])]   (2)  
+1.1.2.3.2  [-r1_tarski(k3_xboole_0(2^[], 3^[]), 2^[])]   (9)  substitution:[[_G6411, _G6453], [2^[], 3^[]]]
+1.1.2.4  [-v1_membered(3^[])]   (3)  
+1.1.2.5  [-r1_tarski(1^[], 1^[]), 1^[]=1^[]]   (6)  substitution:[[_G6079, _G6130], [1^[], 1^[]]]
+1.1.2.5.1  [- (1^[]=1^[])]   (15)  substitution:[[_G2920], [1^[]]]
+1.1.2.6  [-r1_tarski(k3_xboole_0(2^[], 3^[]), 3^[]), r1_tarski(k3_xboole_0(3^[], 2^[]), 3^[]), k3_xboole_0(3^[], 2^[])=k3_xboole_0(2^[], 3^[]), 3^[]=3^[]]   (19)  substitution:[[_G4038, _G4175, _G3971, _G4106], [k3_xboole_0(2^[], 3^[]), 3^[], k3_xboole_0(3^[], 2^[]), 3^[]]]
+1.1.2.6.1  [-r1_tarski(k3_xboole_0(3^[], 2^[]), 3^[])]   (9)  substitution:[[_G6411, _G6453], [3^[], 2^[]]]
+1.1.2.6.2  [- (k3_xboole_0(3^[], 2^[])=k3_xboole_0(2^[], 3^[]))]   (5)  substitution:[[_G5837, _G5882], [3^[], 2^[]]]
+1.1.2.6.3  [- (3^[]=3^[])]   (15)  substitution:[[_G2920], [3^[]]]
+------------------------------------------------------
+End of proof for t69_member_1

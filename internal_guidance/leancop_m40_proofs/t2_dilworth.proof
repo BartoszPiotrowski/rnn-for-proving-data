@@ -1,0 +1,27 @@
+
+t2_dilworth is a Theorem
+Start of proof for t2_dilworth
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(3^[], k1_zfmisc_1(k1_zfmisc_1(1^[])))]
+ (2)  [-m1_subset_1(4^[], k1_zfmisc_1(k1_zfmisc_1(2^[])))]
+ (3)  [m1_subset_1(k2_xboole_0(3^[], 4^[]), k1_zfmisc_1(k1_zfmisc_1(k2_xboole_0(1^[], 2^[]))))]
+ (4)  [-r1_tarski(k2_xboole_0(_G1049, _G1184), k2_xboole_0(_G1116, _G1253)), r1_tarski(_G1049, _G1116), r1_tarski(_G1184, _G1253)]
+ (5)  [-r1_tarski(_G1646, _G1759), r1_tarski(_G1646, _G1702), r1_tarski(_G1702, _G1759)]
+ (6)  [-r1_tarski(k2_xboole_0(k1_zfmisc_1(_G2305), k1_zfmisc_1(_G2356)), k1_zfmisc_1(k2_xboole_0(_G2305, _G2356)))]
+ (7)  [m1_subset_1(_G2054, k1_zfmisc_1(_G2101)), -r1_tarski(_G2054, _G2101)]
+ (8)  [-m1_subset_1(_G2054, k1_zfmisc_1(_G2101)), r1_tarski(_G2054, _G2101)]
+
+Connection Proof:
+-----------------
+1  [m1_subset_1(k2_xboole_0(3^[], 4^[]), k1_zfmisc_1(k1_zfmisc_1(k2_xboole_0(1^[], 2^[]))))]   (3)  
+1.1  [-m1_subset_1(k2_xboole_0(3^[], 4^[]), k1_zfmisc_1(k1_zfmisc_1(k2_xboole_0(1^[], 2^[])))), r1_tarski(k2_xboole_0(3^[], 4^[]), k1_zfmisc_1(k2_xboole_0(1^[], 2^[])))]   (8)  substitution:[[_G2054, _G2101], [k2_xboole_0(3^[], 4^[]), k1_zfmisc_1(k2_xboole_0(1^[], 2^[]))]]
+1.1.1  [-r1_tarski(k2_xboole_0(3^[], 4^[]), k1_zfmisc_1(k2_xboole_0(1^[], 2^[]))), r1_tarski(k2_xboole_0(3^[], 4^[]), k2_xboole_0(k1_zfmisc_1(1^[]), k1_zfmisc_1(2^[]))), r1_tarski(k2_xboole_0(k1_zfmisc_1(1^[]), k1_zfmisc_1(2^[])), k1_zfmisc_1(k2_xboole_0(1^[], 2^[])))]   (5)  substitution:[[_G1646, _G1759, _G1702], [k2_xboole_0(3^[], 4^[]), k1_zfmisc_1(k2_xboole_0(1^[], 2^[])), k2_xboole_0(k1_zfmisc_1(1^[]), k1_zfmisc_1(2^[]))]]
+1.1.1.1  [-r1_tarski(k2_xboole_0(3^[], 4^[]), k2_xboole_0(k1_zfmisc_1(1^[]), k1_zfmisc_1(2^[]))), r1_tarski(3^[], k1_zfmisc_1(1^[])), r1_tarski(4^[], k1_zfmisc_1(2^[]))]   (4)  substitution:[[_G1049, _G1184, _G1116, _G1253], [3^[], 4^[], k1_zfmisc_1(1^[]), k1_zfmisc_1(2^[])]]
+1.1.1.1.1  [-r1_tarski(3^[], k1_zfmisc_1(1^[])), m1_subset_1(3^[], k1_zfmisc_1(k1_zfmisc_1(1^[])))]   (7)  substitution:[[_G2054, _G2101], [3^[], k1_zfmisc_1(1^[])]]
+1.1.1.1.1.1  [-m1_subset_1(3^[], k1_zfmisc_1(k1_zfmisc_1(1^[])))]   (1)  
+1.1.1.1.2  [-r1_tarski(4^[], k1_zfmisc_1(2^[])), m1_subset_1(4^[], k1_zfmisc_1(k1_zfmisc_1(2^[])))]   (7)  substitution:[[_G2054, _G2101], [4^[], k1_zfmisc_1(2^[])]]
+1.1.1.1.2.1  [-m1_subset_1(4^[], k1_zfmisc_1(k1_zfmisc_1(2^[])))]   (2)  
+1.1.1.2  [-r1_tarski(k2_xboole_0(k1_zfmisc_1(1^[]), k1_zfmisc_1(2^[])), k1_zfmisc_1(k2_xboole_0(1^[], 2^[])))]   (6)  substitution:[[_G2305, _G2356], [1^[], 2^[]]]
+------------------------------------------------------
+End of proof for t2_dilworth

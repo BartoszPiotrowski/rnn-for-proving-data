@@ -1,0 +1,42 @@
+
+t16_topgen_3 is a Theorem
+Start of proof for t16_topgen_3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k1_card_1(k4_numbers)=k4_ordinal1]
+ (2)  [- (k4_numbers=k6_subset_1(k2_xboole_0(k4_ordinal1, k2_zfmisc_1(k1_tarski(k1_xboole_0), k4_ordinal1)), k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0))))]
+ (3)  [- (k5_numbers=k4_ordinal1)]
+ (4)  [r2_wellord2(_G7346, _G7391), -r2_tarski(_G7346, _G7391)]
+ (5)  [-r2_wellord2(_G7346, _G7391), r2_tarski(_G7346, _G7391)]
+ (6)  [-r2_tarski(k5_numbers, k4_numbers)]
+ (7)  [- (k1_card_1(k4_ordinal1)=k4_ordinal1)]
+ (8)  [r2_wellord2(_G7707, _G7756), - (k1_card_1(_G7707)=k1_card_1(_G7756))]
+ (9)  [-r2_wellord2(_G7707, _G7756), k1_card_1(_G7707)=k1_card_1(_G7756)]
+ (10)  [- (_G1978=_G1978)]
+ (11)  [_G2077=_G2122, - (_G2122=_G2077)]
+ (12)  [- (_G2310=_G2423), _G2310=_G2366, _G2366=_G2423]
+ (13)  [-r2_tarski(_G2827, _G2964), r2_tarski(_G2760, _G2895), _G2760=_G2827, _G2895=_G2964]
+ (14)  [-r2_wellord2(_G3415, _G3552), r2_wellord2(_G3348, _G3483), _G3348=_G3415, _G3483=_G3552]
+ (15)  [- (k6_subset_1(_G3987, _G4122)=k6_subset_1(_G4054, _G4191)), _G3987=_G4054, _G4122=_G4191]
+ (16)  [- (k2_xboole_0(_G4584, _G4719)=k2_xboole_0(_G4651, _G4788)), _G4584=_G4651, _G4719=_G4788]
+ (17)  [- (k2_zfmisc_1(_G5181, _G5316)=k2_zfmisc_1(_G5248, _G5385)), _G5181=_G5248, _G5316=_G5385]
+ (18)  [_G5778=_G5827, - (k1_tarski(_G5778)=k1_tarski(_G5827))]
+ (19)  [_G6644=_G6693, - (k1_card_1(_G6644)=k1_card_1(_G6693))]
+ (20)  [- (k4_tarski(_G6056, _G6191)=k4_tarski(_G6123, _G6260)), _G6056=_G6123, _G6191=_G6260]
+
+Connection Proof:
+-----------------
+1  [k1_card_1(k4_numbers)=k4_ordinal1]   (1)  
+1.1  [- (k1_card_1(k4_numbers)=k4_ordinal1), k1_card_1(k4_numbers)=k1_card_1(k5_numbers), k1_card_1(k5_numbers)=k4_ordinal1]   (12)  substitution:[[_G2310, _G2423, _G2366], [k1_card_1(k4_numbers), k4_ordinal1, k1_card_1(k5_numbers)]]
+1.1.1  [- (k1_card_1(k4_numbers)=k1_card_1(k5_numbers)), k1_card_1(k5_numbers)=k1_card_1(k4_numbers)]   (11)  substitution:[[_G2122, _G2077], [k1_card_1(k4_numbers), k1_card_1(k5_numbers)]]
+1.1.1.1  [- (k1_card_1(k5_numbers)=k1_card_1(k4_numbers)), r2_wellord2(k5_numbers, k4_numbers)]   (8)  substitution:[[_G7707, _G7756], [k5_numbers, k4_numbers]]
+1.1.1.1.1  [-r2_wellord2(k5_numbers, k4_numbers), r2_tarski(k5_numbers, k4_numbers)]   (5)  substitution:[[_G7346, _G7391], [k5_numbers, k4_numbers]]
+1.1.1.1.1.1  [-r2_tarski(k5_numbers, k4_numbers)]   (6)  
+1.1.2  [- (k1_card_1(k5_numbers)=k4_ordinal1), k1_card_1(k5_numbers)=k4_ordinal1, k4_ordinal1=k4_ordinal1]   (12)  substitution:[[_G2310, _G2423, _G2366], [k1_card_1(k5_numbers), k4_ordinal1, k4_ordinal1]]
+1.1.2.1  [- (k1_card_1(k5_numbers)=k4_ordinal1), k1_card_1(k5_numbers)=k1_card_1(k4_ordinal1), k1_card_1(k4_ordinal1)=k4_ordinal1]   (12)  substitution:[[_G2310, _G2423, _G2366], [k1_card_1(k5_numbers), k4_ordinal1, k1_card_1(k4_ordinal1)]]
+1.1.2.1.1  [- (k1_card_1(k5_numbers)=k1_card_1(k4_ordinal1)), k5_numbers=k4_ordinal1]   (19)  substitution:[[_G6644, _G6693], [k5_numbers, k4_ordinal1]]
+1.1.2.1.1.1  [- (k5_numbers=k4_ordinal1)]   (3)  
+1.1.2.1.2  [- (k1_card_1(k4_ordinal1)=k4_ordinal1)]   (7)  
+1.1.2.2  [- (k4_ordinal1=k4_ordinal1)]   (10)  substitution:[[_G1978], [k4_ordinal1]]
+------------------------------------------------------
+End of proof for t16_topgen_3

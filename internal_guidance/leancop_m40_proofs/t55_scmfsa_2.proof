@@ -1,0 +1,65 @@
+
+t55_scmfsa_2 is a Theorem
+Start of proof for t55_scmfsa_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_ami_2(1^[])]
+ (2)  [-m1_subset_1(1^[], u1_struct_0(k1_ami_3))]
+ (3)  [-v1_ami_2(2^[])]
+ (4)  [-m1_subset_1(2^[], u1_struct_0(k1_scmfsa_2))]
+ (5)  [-v1_relat_1(3^[])]
+ (6)  [-v4_relat_1(3^[], u1_struct_0(k1_ami_3))]
+ (7)  [-v1_funct_1(3^[])]
+ (8)  [-v5_funct_1(3^[], k2_memstr_0(np__2, k1_ami_3))]
+ (9)  [-v1_partfun1(3^[], u1_struct_0(k1_ami_3))]
+ (10)  [-v1_relat_1(4^[])]
+ (11)  [-v4_relat_1(4^[], u1_struct_0(k1_scmfsa_2))]
+ (12)  [-v1_funct_1(4^[])]
+ (13)  [-v5_funct_1(4^[], k2_memstr_0(np__3, k1_scmfsa_2))]
+ (14)  [-v1_partfun1(4^[], u1_struct_0(k1_scmfsa_2))]
+ (15)  [- (3^[]=k5_relat_1(4^[], k1_ami_2))]
+ (16)  [- (1^[]=2^[])]
+ (17)  [k1_funct_1(3^[], 1^[])=k1_funct_1(4^[], 2^[])]
+ (18)  [v1_funct_1(_G11473), v1_relat_1(_G11473), r2_hidden(_G11324, k9_xtuple_0(k5_relat_1(_G11473, _G11398))), - (k1_funct_1(k5_relat_1(_G11473, _G11398), _G11324)=k1_funct_1(_G11473, _G11324))]
+ (19)  [m1_subset_1(_G12441, u1_struct_0(k1_ami_3)), v1_ami_2(_G12441), -r2_hidden(_G12441, k9_xtuple_0(_G11975)), v1_relat_1(_G11975), v4_relat_1(_G11975, u1_struct_0(k1_ami_3)), v1_funct_1(_G11975), v5_funct_1(_G11975, k2_memstr_0(np__2, k1_ami_3)), v1_partfun1(_G11975, u1_struct_0(k1_ami_3))]
+ (20)  [_G8881=_G8930, - (k9_xtuple_0(_G8881)=k9_xtuple_0(_G8930))]
+ (21)  [- (k2_memstr_0(_G9159, _G9294)=k2_memstr_0(_G9226, _G9363)), _G9159=_G9226, _G9294=_G9363]
+ (22)  [_G9756=_G9805, - (u1_struct_0(_G9756)=u1_struct_0(_G9805))]
+ (23)  [- (k5_relat_1(_G10034, _G10169)=k5_relat_1(_G10101, _G10238)), _G10034=_G10101, _G10169=_G10238]
+ (24)  [- (k1_funct_1(_G10622, _G10757)=k1_funct_1(_G10689, _G10826)), _G10622=_G10689, _G10757=_G10826]
+ (25)  [- (_G4121=_G4121)]
+ (26)  [_G4220=_G4265, - (_G4265=_G4220)]
+ (27)  [- (_G4453=_G4566), _G4453=_G4509, _G4509=_G4566]
+ (28)  [-r2_hidden(_G4970, _G5107), r2_hidden(_G4903, _G5038), _G4903=_G4970, _G5038=_G5107]
+ (29)  [-v1_ami_2(_G5549), _G5500=_G5549, v1_ami_2(_G5500)]
+ (30)  [-m1_subset_1(_G5845, _G5982), m1_subset_1(_G5778, _G5913), _G5778=_G5845, _G5913=_G5982]
+ (31)  [-v1_relat_1(_G6424), _G6375=_G6424, v1_relat_1(_G6375)]
+ (32)  [-v4_relat_1(_G6720, _G6857), v4_relat_1(_G6653, _G6788), _G6653=_G6720, _G6788=_G6857]
+ (33)  [-v1_funct_1(_G7299), _G7250=_G7299, v1_funct_1(_G7250)]
+ (34)  [-v5_funct_1(_G7595, _G7732), v5_funct_1(_G7528, _G7663), _G7528=_G7595, _G7663=_G7732]
+ (35)  [-v1_partfun1(_G8183, _G8320), v1_partfun1(_G8116, _G8251), _G8116=_G8183, _G8251=_G8320]
+
+Connection Proof:
+-----------------
+1  [k1_funct_1(3^[], 1^[])=k1_funct_1(4^[], 2^[])]   (17)  
+1.1  [- (k1_funct_1(3^[], 1^[])=k1_funct_1(4^[], 2^[])), k1_funct_1(3^[], 1^[])=k1_funct_1(k5_relat_1(4^[], k1_ami_2), 2^[]), k1_funct_1(k5_relat_1(4^[], k1_ami_2), 2^[])=k1_funct_1(4^[], 2^[])]   (27)  substitution:[[_G4453, _G4566, _G4509], [k1_funct_1(3^[], 1^[]), k1_funct_1(4^[], 2^[]), k1_funct_1(k5_relat_1(4^[], k1_ami_2), 2^[])]]
+1.1.1  [- (k1_funct_1(3^[], 1^[])=k1_funct_1(k5_relat_1(4^[], k1_ami_2), 2^[])), 3^[]=k5_relat_1(4^[], k1_ami_2), 1^[]=2^[]]   (24)  substitution:[[_G10622, _G10757, _G10689, _G10826], [3^[], 1^[], k5_relat_1(4^[], k1_ami_2), 2^[]]]
+1.1.1.1  [- (3^[]=k5_relat_1(4^[], k1_ami_2))]   (15)  
+1.1.1.2  [- (1^[]=2^[])]   (16)  
+1.1.2  [- (k1_funct_1(k5_relat_1(4^[], k1_ami_2), 2^[])=k1_funct_1(4^[], 2^[])), v1_funct_1(4^[]), v1_relat_1(4^[]), r2_hidden(2^[], k9_xtuple_0(k5_relat_1(4^[], k1_ami_2)))]   (18)  substitution:[[_G11473, _G11398, _G11324], [4^[], k1_ami_2, 2^[]]]
+1.1.2.1  [-v1_funct_1(4^[])]   (12)  
+1.1.2.2  [-v1_relat_1(4^[])]   (10)  
+1.1.2.3  [-r2_hidden(2^[], k9_xtuple_0(k5_relat_1(4^[], k1_ami_2))), r2_hidden(1^[], k9_xtuple_0(3^[])), 1^[]=2^[], k9_xtuple_0(3^[])=k9_xtuple_0(k5_relat_1(4^[], k1_ami_2))]   (28)  substitution:[[_G4970, _G5107, _G4903, _G5038], [2^[], k9_xtuple_0(k5_relat_1(4^[], k1_ami_2)), 1^[], k9_xtuple_0(3^[])]]
+1.1.2.3.1  [-r2_hidden(1^[], k9_xtuple_0(3^[])), m1_subset_1(1^[], u1_struct_0(k1_ami_3)), v1_ami_2(1^[]), v1_relat_1(3^[]), v4_relat_1(3^[], u1_struct_0(k1_ami_3)), v1_funct_1(3^[]), v5_funct_1(3^[], k2_memstr_0(np__2, k1_ami_3)), v1_partfun1(3^[], u1_struct_0(k1_ami_3))]   (19)  substitution:[[_G12441, _G11975], [1^[], 3^[]]]
+1.1.2.3.1.1  [-m1_subset_1(1^[], u1_struct_0(k1_ami_3))]   (2)  
+1.1.2.3.1.2  [-v1_ami_2(1^[])]   (1)  
+1.1.2.3.1.3  [-v1_relat_1(3^[])]   (5)  
+1.1.2.3.1.4  [-v4_relat_1(3^[], u1_struct_0(k1_ami_3))]   (6)  
+1.1.2.3.1.5  [-v1_funct_1(3^[])]   (7)  
+1.1.2.3.1.6  [-v5_funct_1(3^[], k2_memstr_0(np__2, k1_ami_3))]   (8)  
+1.1.2.3.1.7  [-v1_partfun1(3^[], u1_struct_0(k1_ami_3))]   (9)  
+1.1.2.3.2  [- (1^[]=2^[])]   (16)  
+1.1.2.3.3  [- (k9_xtuple_0(3^[])=k9_xtuple_0(k5_relat_1(4^[], k1_ami_2))), 3^[]=k5_relat_1(4^[], k1_ami_2)]   (20)  substitution:[[_G8881, _G8930], [3^[], k5_relat_1(4^[], k1_ami_2)]]
+1.1.2.3.3.1  [- (3^[]=k5_relat_1(4^[], k1_ami_2))]   (15)  
+------------------------------------------------------
+End of proof for t55_scmfsa_2

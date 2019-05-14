@@ -1,0 +1,43 @@
+
+t74_cohsp_1 is a Theorem
+Start of proof for t74_cohsp_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k14_cohsp_1(1^[], k1_xboole_0)=k2_zfmisc_1(1^[], k1_tarski(np__1)), k14_cohsp_1(k1_xboole_0, 1^[])=k2_zfmisc_1(1^[], k1_tarski(np__2))]
+ (2)  [- (k2_xboole_0(_G4864, _G4909)=k2_xboole_0(_G4909, _G4864))]
+ (3)  [- (k2_xboole_0(_G5106, k1_xboole_0)=_G5106)]
+ (4)  [- (k14_cohsp_1(_G5247, _G5298)=k2_xboole_0(k2_zfmisc_1(_G5247, k1_tarski(np__1)), k2_zfmisc_1(_G5298, k1_tarski(np__2))))]
+ (5)  [- (k2_zfmisc_1(_G5598, _G5652)=k1_xboole_0), _G5598=k1_xboole_0]
+ (6)  [- (k2_zfmisc_1(_G5598, _G5652)=k1_xboole_0), _G5652=k1_xboole_0]
+ (7)  [k2_zfmisc_1(_G5598, _G5652)=k1_xboole_0, - (_G5598=k1_xboole_0), - (_G5652=k1_xboole_0)]
+ (8)  [- (_G1938=_G1938)]
+ (9)  [_G2037=_G2082, - (_G2082=_G2037)]
+ (10)  [- (_G2270=_G2383), _G2270=_G2326, _G2326=_G2383]
+ (11)  [- (k2_xboole_0(_G2720, _G2855)=k2_xboole_0(_G2787, _G2924)), _G2720=_G2787, _G2855=_G2924]
+ (12)  [- (k14_cohsp_1(_G3317, _G3452)=k14_cohsp_1(_G3384, _G3521)), _G3317=_G3384, _G3452=_G3521]
+ (13)  [_G4502=_G4551, - (k1_tarski(_G4502)=k1_tarski(_G4551))]
+ (14)  [- (k2_zfmisc_1(_G3914, _G4049)=k2_zfmisc_1(_G3981, _G4118)), _G3914=_G3981, _G4049=_G4118]
+
+Connection Proof:
+-----------------
+1  [k14_cohsp_1(1^[], k1_xboole_0)=k2_zfmisc_1(1^[], k1_tarski(np__1)), k14_cohsp_1(k1_xboole_0, 1^[])=k2_zfmisc_1(1^[], k1_tarski(np__2))]   (1)  
+1.1  [- (k14_cohsp_1(1^[], k1_xboole_0)=k2_zfmisc_1(1^[], k1_tarski(np__1))), k14_cohsp_1(1^[], k1_xboole_0)=k2_xboole_0(k2_zfmisc_1(1^[], k1_tarski(np__1)), k2_zfmisc_1(k1_xboole_0, k1_tarski(np__2))), k2_xboole_0(k2_zfmisc_1(1^[], k1_tarski(np__1)), k2_zfmisc_1(k1_xboole_0, k1_tarski(np__2)))=k2_zfmisc_1(1^[], k1_tarski(np__1))]   (10)  substitution:[[_G2270, _G2383, _G2326], [k14_cohsp_1(1^[], k1_xboole_0), k2_zfmisc_1(1^[], k1_tarski(np__1)), k2_xboole_0(k2_zfmisc_1(1^[], k1_tarski(np__1)), k2_zfmisc_1(k1_xboole_0, k1_tarski(np__2)))]]
+1.1.1  [- (k14_cohsp_1(1^[], k1_xboole_0)=k2_xboole_0(k2_zfmisc_1(1^[], k1_tarski(np__1)), k2_zfmisc_1(k1_xboole_0, k1_tarski(np__2))))]   (4)  substitution:[[_G5247, _G5298], [1^[], k1_xboole_0]]
+1.1.2  [- (k2_xboole_0(k2_zfmisc_1(1^[], k1_tarski(np__1)), k2_zfmisc_1(k1_xboole_0, k1_tarski(np__2)))=k2_zfmisc_1(1^[], k1_tarski(np__1))), k2_xboole_0(k2_zfmisc_1(1^[], k1_tarski(np__1)), k2_zfmisc_1(k1_xboole_0, k1_tarski(np__2)))=k2_xboole_0(k2_zfmisc_1(1^[], k1_tarski(np__1)), k1_xboole_0), k2_xboole_0(k2_zfmisc_1(1^[], k1_tarski(np__1)), k1_xboole_0)=k2_zfmisc_1(1^[], k1_tarski(np__1))]   (10)  substitution:[[_G2270, _G2383, _G2326], [k2_xboole_0(k2_zfmisc_1(1^[], k1_tarski(np__1)), k2_zfmisc_1(k1_xboole_0, k1_tarski(np__2))), k2_zfmisc_1(1^[], k1_tarski(np__1)), k2_xboole_0(k2_zfmisc_1(1^[], k1_tarski(np__1)), k1_xboole_0)]]
+1.1.2.1  [- (k2_xboole_0(k2_zfmisc_1(1^[], k1_tarski(np__1)), k2_zfmisc_1(k1_xboole_0, k1_tarski(np__2)))=k2_xboole_0(k2_zfmisc_1(1^[], k1_tarski(np__1)), k1_xboole_0)), k2_zfmisc_1(1^[], k1_tarski(np__1))=k2_zfmisc_1(1^[], k1_tarski(np__1)), k2_zfmisc_1(k1_xboole_0, k1_tarski(np__2))=k1_xboole_0]   (11)  substitution:[[_G2720, _G2855, _G2787, _G2924], [k2_zfmisc_1(1^[], k1_tarski(np__1)), k2_zfmisc_1(k1_xboole_0, k1_tarski(np__2)), k2_zfmisc_1(1^[], k1_tarski(np__1)), k1_xboole_0]]
+1.1.2.1.1  [- (k2_zfmisc_1(1^[], k1_tarski(np__1))=k2_zfmisc_1(1^[], k1_tarski(np__1)))]   (8)  substitution:[[_G1938], [k2_zfmisc_1(1^[], k1_tarski(np__1))]]
+1.1.2.1.2  [- (k2_zfmisc_1(k1_xboole_0, k1_tarski(np__2))=k1_xboole_0), k1_xboole_0=k1_xboole_0]   (5)  substitution:[[_G5598, _G5652], [k1_xboole_0, k1_tarski(np__2)]]
+1.1.2.1.2.1  [- (k1_xboole_0=k1_xboole_0)]   (8)  substitution:[[_G1938], [k1_xboole_0]]
+1.1.2.2  [- (k2_xboole_0(k2_zfmisc_1(1^[], k1_tarski(np__1)), k1_xboole_0)=k2_zfmisc_1(1^[], k1_tarski(np__1)))]   (3)  substitution:[[_G5106], [k2_zfmisc_1(1^[], k1_tarski(np__1))]]
+1.2  [- (k14_cohsp_1(k1_xboole_0, 1^[])=k2_zfmisc_1(1^[], k1_tarski(np__2))), k14_cohsp_1(k1_xboole_0, 1^[])=k2_xboole_0(k2_zfmisc_1(k1_xboole_0, k1_tarski(np__1)), k2_zfmisc_1(1^[], k1_tarski(np__2))), k2_xboole_0(k2_zfmisc_1(k1_xboole_0, k1_tarski(np__1)), k2_zfmisc_1(1^[], k1_tarski(np__2)))=k2_zfmisc_1(1^[], k1_tarski(np__2))]   (10)  substitution:[[_G2270, _G2383, _G2326], [k14_cohsp_1(k1_xboole_0, 1^[]), k2_zfmisc_1(1^[], k1_tarski(np__2)), k2_xboole_0(k2_zfmisc_1(k1_xboole_0, k1_tarski(np__1)), k2_zfmisc_1(1^[], k1_tarski(np__2)))]]
+1.2.1  [- (k14_cohsp_1(k1_xboole_0, 1^[])=k2_xboole_0(k2_zfmisc_1(k1_xboole_0, k1_tarski(np__1)), k2_zfmisc_1(1^[], k1_tarski(np__2))))]   (4)  substitution:[[_G5247, _G5298], [k1_xboole_0, 1^[]]]
+1.2.2  [- (k2_xboole_0(k2_zfmisc_1(k1_xboole_0, k1_tarski(np__1)), k2_zfmisc_1(1^[], k1_tarski(np__2)))=k2_zfmisc_1(1^[], k1_tarski(np__2))), k2_xboole_0(k2_zfmisc_1(k1_xboole_0, k1_tarski(np__1)), k2_zfmisc_1(1^[], k1_tarski(np__2)))=k2_xboole_0(k1_xboole_0, k2_zfmisc_1(1^[], k1_tarski(np__2))), k2_xboole_0(k1_xboole_0, k2_zfmisc_1(1^[], k1_tarski(np__2)))=k2_zfmisc_1(1^[], k1_tarski(np__2))]   (10)  substitution:[[_G2270, _G2383, _G2326], [k2_xboole_0(k2_zfmisc_1(k1_xboole_0, k1_tarski(np__1)), k2_zfmisc_1(1^[], k1_tarski(np__2))), k2_zfmisc_1(1^[], k1_tarski(np__2)), k2_xboole_0(k1_xboole_0, k2_zfmisc_1(1^[], k1_tarski(np__2)))]]
+1.2.2.1  [- (k2_xboole_0(k2_zfmisc_1(k1_xboole_0, k1_tarski(np__1)), k2_zfmisc_1(1^[], k1_tarski(np__2)))=k2_xboole_0(k1_xboole_0, k2_zfmisc_1(1^[], k1_tarski(np__2)))), k2_zfmisc_1(k1_xboole_0, k1_tarski(np__1))=k1_xboole_0, k2_zfmisc_1(1^[], k1_tarski(np__2))=k2_zfmisc_1(1^[], k1_tarski(np__2))]   (11)  substitution:[[_G2720, _G2855, _G2787, _G2924], [k2_zfmisc_1(k1_xboole_0, k1_tarski(np__1)), k2_zfmisc_1(1^[], k1_tarski(np__2)), k1_xboole_0, k2_zfmisc_1(1^[], k1_tarski(np__2))]]
+1.2.2.1.1  [- (k2_zfmisc_1(k1_xboole_0, k1_tarski(np__1))=k1_xboole_0), k1_xboole_0=k1_xboole_0]   (5)  substitution:[[_G5598, _G5652], [k1_xboole_0, k1_tarski(np__1)]]
+1.2.2.1.1.1  [- (k1_xboole_0=k1_xboole_0)]   (8)  substitution:[[_G1938], [k1_xboole_0]]
+1.2.2.1.2  [- (k2_zfmisc_1(1^[], k1_tarski(np__2))=k2_zfmisc_1(1^[], k1_tarski(np__2)))]   (8)  substitution:[[_G1938], [k2_zfmisc_1(1^[], k1_tarski(np__2))]]
+1.2.2.2  [- (k2_xboole_0(k1_xboole_0, k2_zfmisc_1(1^[], k1_tarski(np__2)))=k2_zfmisc_1(1^[], k1_tarski(np__2))), k2_xboole_0(k1_xboole_0, k2_zfmisc_1(1^[], k1_tarski(np__2)))=k2_xboole_0(k2_zfmisc_1(1^[], k1_tarski(np__2)), k1_xboole_0), k2_xboole_0(k2_zfmisc_1(1^[], k1_tarski(np__2)), k1_xboole_0)=k2_zfmisc_1(1^[], k1_tarski(np__2))]   (10)  substitution:[[_G2270, _G2383, _G2326], [k2_xboole_0(k1_xboole_0, k2_zfmisc_1(1^[], k1_tarski(np__2))), k2_zfmisc_1(1^[], k1_tarski(np__2)), k2_xboole_0(k2_zfmisc_1(1^[], k1_tarski(np__2)), k1_xboole_0)]]
+1.2.2.2.1  [- (k2_xboole_0(k1_xboole_0, k2_zfmisc_1(1^[], k1_tarski(np__2)))=k2_xboole_0(k2_zfmisc_1(1^[], k1_tarski(np__2)), k1_xboole_0))]   (2)  substitution:[[_G4864, _G4909], [k1_xboole_0, k2_zfmisc_1(1^[], k1_tarski(np__2))]]
+1.2.2.2.2  [- (k2_xboole_0(k2_zfmisc_1(1^[], k1_tarski(np__2)), k1_xboole_0)=k2_zfmisc_1(1^[], k1_tarski(np__2)))]   (3)  substitution:[[_G5106], [k2_zfmisc_1(1^[], k1_tarski(np__2))]]
+------------------------------------------------------
+End of proof for t74_cohsp_1

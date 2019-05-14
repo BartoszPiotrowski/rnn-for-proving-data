@@ -1,0 +1,23 @@
+
+t1_subset is a Theorem
+Start of proof for t1_subset
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-r2_hidden(2^[], 3^[])]
+ (2)  [m1_subset_1(2^[], 3^[])]
+ (3)  [v1_xboole_0(_G1330), r2_hidden(_G1408, _G1330)]
+ (4)  [-v1_xboole_0(_G1330), -r2_hidden(1^[_G1330], _G1330)]
+ (5)  [-v1_xboole_0(_G800), m1_subset_1(_G868, _G800), -r2_hidden(_G868, _G800)]
+ (6)  [-v1_xboole_0(_G800), -m1_subset_1(_G868, _G800), r2_hidden(_G868, _G800)]
+ (7)  [v1_xboole_0(_G800), m1_subset_1(_G868, _G800), -v1_xboole_0(_G868)]
+ (8)  [v1_xboole_0(_G800), -m1_subset_1(_G868, _G800), v1_xboole_0(_G868)]
+
+Connection Proof:
+-----------------
+1  [v1_xboole_0(3^[]), r2_hidden(2^[], 3^[])]   (3)  substitution:[[_G1330, _G1408], [3^[], 2^[]]]
+1.1  [-v1_xboole_0(3^[]), -m1_subset_1(2^[], 3^[]), r2_hidden(2^[], 3^[])]   (6)  substitution:[[_G800, _G868], [3^[], 2^[]]]
+1.1.1  [m1_subset_1(2^[], 3^[])]   (2)  
+1.1.2  [-r2_hidden(2^[], 3^[])]   (1)  
+1.2  [-r2_hidden(2^[], 3^[])]   (1)  
+------------------------------------------------------
+End of proof for t1_subset

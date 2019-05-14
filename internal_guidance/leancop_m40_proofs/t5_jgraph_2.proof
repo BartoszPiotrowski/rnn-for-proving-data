@@ -1,0 +1,64 @@
+
+t5_jgraph_2 is a Theorem
+Start of proof for t5_jgraph_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k17_euclid(k22_euclid(np__2))=np__1, k18_euclid(k22_euclid(np__2))=np__1]
+ (2)  [m1_subset_1(_G7676, k1_numbers), -v1_xreal_0(_G7676)]
+ (3)  [- (k19_euclid(_G7833, _G7888)=k10_finseq_1(_G7833, _G7888)), v1_xreal_0(_G7833), v1_xreal_0(_G7888)]
+ (4)  [-v2_xxreal_0(np__1)]
+ (5)  [-m2_subset_1(np__1, k1_numbers, k5_numbers)]
+ (6)  [-m1_subset_1(np__1, k5_numbers)]
+ (7)  [-m1_subset_1(np__1, k1_numbers)]
+ (8)  [- (k22_euclid(np__2)=k10_finseq_1(np__1, np__1))]
+ (9)  [v1_xreal_0(_G8611), v1_xreal_0(_G8708), - (k17_euclid(k19_euclid(_G8611, _G8708))=_G8611)]
+ (10)  [v1_xreal_0(_G8611), v1_xreal_0(_G8708), - (k18_euclid(k19_euclid(_G8611, _G8708))=_G8708)]
+ (11)  [- (k10_finseq_1(_G5552, _G5687)=k10_finseq_1(_G5619, _G5756)), _G5552=_G5619, _G5687=_G5756]
+ (12)  [- (k19_euclid(_G6149, _G6284)=k19_euclid(_G6216, _G6353)), _G6149=_G6216, _G6284=_G6353]
+ (13)  [_G6746=_G6795, - (k17_euclid(_G6746)=k17_euclid(_G6795))]
+ (14)  [_G7024=_G7073, - (k18_euclid(_G7024)=k18_euclid(_G7073))]
+ (15)  [_G7293=_G7342, - (k22_euclid(_G7293)=k22_euclid(_G7342))]
+ (16)  [- (_G2514=_G2514)]
+ (17)  [_G2613=_G2658, - (_G2658=_G2613)]
+ (18)  [- (_G2846=_G2959), _G2846=_G2902, _G2902=_G2959]
+ (19)  [-v2_xxreal_0(_G3345), _G3296=_G3345, v2_xxreal_0(_G3296)]
+ (20)  [-m2_subset_1(_G3659, _G3832, _G4009), m2_subset_1(_G3574, _G3745, _G3920), _G3574=_G3659, _G3745=_G3832, _G3920=_G4009]
+ (21)  [-v1_xreal_0(_G5239), _G5190=_G5239, v1_xreal_0(_G5190)]
+ (22)  [-m1_subset_1(_G4669, _G4806), m1_subset_1(_G4602, _G4737), _G4602=_G4669, _G4737=_G4806]
+
+Connection Proof:
+-----------------
+1  [k17_euclid(k22_euclid(np__2))=np__1, k18_euclid(k22_euclid(np__2))=np__1]   (1)  
+1.1  [- (k17_euclid(k22_euclid(np__2))=np__1), np__1=k17_euclid(k22_euclid(np__2))]   (17)  substitution:[[_G2658, _G2613], [k17_euclid(k22_euclid(np__2)), np__1]]
+1.1.1  [- (np__1=k17_euclid(k22_euclid(np__2))), np__1=k17_euclid(k19_euclid(np__1, np__1)), k17_euclid(k19_euclid(np__1, np__1))=k17_euclid(k22_euclid(np__2))]   (18)  substitution:[[_G2846, _G2959, _G2902], [np__1, k17_euclid(k22_euclid(np__2)), k17_euclid(k19_euclid(np__1, np__1))]]
+1.1.1.1  [- (np__1=k17_euclid(k19_euclid(np__1, np__1))), k17_euclid(k19_euclid(np__1, np__1))=np__1]   (17)  substitution:[[_G2658, _G2613], [np__1, k17_euclid(k19_euclid(np__1, np__1))]]
+1.1.1.1.1  [- (k17_euclid(k19_euclid(np__1, np__1))=np__1), v1_xreal_0(np__1), v1_xreal_0(np__1)]   (9)  substitution:[[_G8611, _G8708], [np__1, np__1]]
+1.1.1.1.1.1  [-v1_xreal_0(np__1), m1_subset_1(np__1, k1_numbers)]   (2)  substitution:[[_G7676], [np__1]]
+1.1.1.1.1.1.1  [-m1_subset_1(np__1, k1_numbers)]   (7)  
+1.1.1.1.1.2  [-v1_xreal_0(np__1), m1_subset_1(np__1, k1_numbers)]   (2)  substitution:[[_G7676], [np__1]]
+1.1.1.1.1.2.1  [-m1_subset_1(np__1, k1_numbers)]   (7)  
+1.1.1.2  [- (k17_euclid(k19_euclid(np__1, np__1))=k17_euclid(k22_euclid(np__2))), k19_euclid(np__1, np__1)=k22_euclid(np__2)]   (13)  substitution:[[_G6746, _G6795], [k19_euclid(np__1, np__1), k22_euclid(np__2)]]
+1.1.1.2.1  [- (k19_euclid(np__1, np__1)=k22_euclid(np__2)), k19_euclid(np__1, np__1)=k10_finseq_1(np__1, np__1), k10_finseq_1(np__1, np__1)=k22_euclid(np__2)]   (18)  substitution:[[_G2846, _G2959, _G2902], [k19_euclid(np__1, np__1), k22_euclid(np__2), k10_finseq_1(np__1, np__1)]]
+1.1.1.2.1.1  [- (k19_euclid(np__1, np__1)=k10_finseq_1(np__1, np__1)), v1_xreal_0(np__1), v1_xreal_0(np__1)]   (3)  substitution:[[_G7833, _G7888], [np__1, np__1]]
+1.1.1.2.1.1.1  [-v1_xreal_0(np__1), m1_subset_1(np__1, k1_numbers)]   (2)  substitution:[[_G7676], [np__1]]
+1.1.1.2.1.1.1.1  [-m1_subset_1(np__1, k1_numbers)]   (7)  
+1.1.1.2.1.1.2  [-v1_xreal_0(np__1)]   (lemmata:1.1.1.2.1.1)  
+1.1.1.2.1.2  [- (k10_finseq_1(np__1, np__1)=k22_euclid(np__2)), k22_euclid(np__2)=k10_finseq_1(np__1, np__1)]   (17)  substitution:[[_G2658, _G2613], [k10_finseq_1(np__1, np__1), k22_euclid(np__2)]]
+1.1.1.2.1.2.1  [- (k22_euclid(np__2)=k10_finseq_1(np__1, np__1))]   (8)  
+1.2  [- (k18_euclid(k22_euclid(np__2))=np__1), np__1=k18_euclid(k22_euclid(np__2))]   (17)  substitution:[[_G2658, _G2613], [k18_euclid(k22_euclid(np__2)), np__1]]
+1.2.1  [- (np__1=k18_euclid(k22_euclid(np__2))), np__1=k18_euclid(k19_euclid(np__1, np__1)), k18_euclid(k19_euclid(np__1, np__1))=k18_euclid(k22_euclid(np__2))]   (18)  substitution:[[_G2846, _G2959, _G2902], [np__1, k18_euclid(k22_euclid(np__2)), k18_euclid(k19_euclid(np__1, np__1))]]
+1.2.1.1  [- (np__1=k18_euclid(k19_euclid(np__1, np__1))), k18_euclid(k19_euclid(np__1, np__1))=np__1]   (17)  substitution:[[_G2658, _G2613], [np__1, k18_euclid(k19_euclid(np__1, np__1))]]
+1.2.1.1.1  [- (k18_euclid(k19_euclid(np__1, np__1))=np__1), v1_xreal_0(np__1), v1_xreal_0(np__1)]   (10)  substitution:[[_G8611, _G8708], [np__1, np__1]]
+1.2.1.1.1.1  [-v1_xreal_0(np__1), m1_subset_1(np__1, k1_numbers)]   (2)  substitution:[[_G7676], [np__1]]
+1.2.1.1.1.1.1  [-m1_subset_1(np__1, k1_numbers)]   (7)  
+1.2.1.1.1.2  [-v1_xreal_0(np__1)]   (lemmata:1.2.1.1.1)  
+1.2.1.2  [- (k18_euclid(k19_euclid(np__1, np__1))=k18_euclid(k22_euclid(np__2))), k19_euclid(np__1, np__1)=k22_euclid(np__2)]   (14)  substitution:[[_G7024, _G7073], [k19_euclid(np__1, np__1), k22_euclid(np__2)]]
+1.2.1.2.1  [- (k19_euclid(np__1, np__1)=k22_euclid(np__2)), k19_euclid(np__1, np__1)=k10_finseq_1(np__1, np__1), k10_finseq_1(np__1, np__1)=k22_euclid(np__2)]   (18)  substitution:[[_G2846, _G2959, _G2902], [k19_euclid(np__1, np__1), k22_euclid(np__2), k10_finseq_1(np__1, np__1)]]
+1.2.1.2.1.1  [- (k19_euclid(np__1, np__1)=k10_finseq_1(np__1, np__1)), v1_xreal_0(np__1), v1_xreal_0(np__1)]   (3)  substitution:[[_G7833, _G7888], [np__1, np__1]]
+1.2.1.2.1.1.1  [-v1_xreal_0(np__1), m1_subset_1(np__1, k1_numbers)]   (2)  substitution:[[_G7676], [np__1]]
+1.2.1.2.1.1.1.1  [-m1_subset_1(np__1, k1_numbers)]   (7)  
+1.2.1.2.1.1.2  [-v1_xreal_0(np__1)]   (lemmata:1.2.1.2.1.1)  
+1.2.1.2.1.2  [- (k10_finseq_1(np__1, np__1)=k22_euclid(np__2)), k22_euclid(np__2)=k10_finseq_1(np__1, np__1)]   (17)  substitution:[[_G2658, _G2613], [k10_finseq_1(np__1, np__1), k22_euclid(np__2)]]
+1.2.1.2.1.2.1  [- (k22_euclid(np__2)=k10_finseq_1(np__1, np__1))]   (8)  
+------------------------------------------------------
+End of proof for t5_jgraph_2

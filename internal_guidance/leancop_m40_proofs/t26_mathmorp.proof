@@ -1,0 +1,46 @@
+
+t26_mathmorp is a Theorem
+Start of proof for t26_mathmorp
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(1^[])]
+ (2)  [-v13_algstr_0(1^[])]
+ (3)  [-v2_rlvect_1(1^[])]
+ (4)  [-v3_rlvect_1(1^[])]
+ (5)  [-v4_rlvect_1(1^[])]
+ (6)  [-l1_rlvect_1(1^[])]
+ (7)  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]
+ (8)  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(1^[])))]
+ (9)  [-m1_subset_1(4^[], k1_zfmisc_1(u1_struct_0(1^[])))]
+ (10)  [k6_rusub_4(1^[], 2^[], k6_rusub_4(1^[], 3^[], 4^[]))=k6_rusub_4(1^[], k6_rusub_4(1^[], 2^[], 3^[]), 4^[])]
+ (11)  [l1_rlvect_1(_G8288), -l2_algstr_0(_G8288)]
+ (12)  [l2_algstr_0(_G8410), v3_rlvect_1(_G8410), -v2_struct_0(_G8410), m1_subset_1(_G8674, k1_zfmisc_1(u1_struct_0(_G8410))), m1_subset_1(_G8855, k1_zfmisc_1(u1_struct_0(_G8410))), m1_subset_1(_G9027, k1_zfmisc_1(u1_struct_0(_G8410))), - (k6_rusub_4(_G8410, k6_rusub_4(_G8410, _G8674, _G8855), _G9027)=k6_rusub_4(_G8410, _G8674, k6_rusub_4(_G8410, _G8855, _G9027)))]
+ (13)  [_G6650=_G6699, - (k1_zfmisc_1(_G6650)=k1_zfmisc_1(_G6699))]
+ (14)  [_G6928=_G6977, - (u1_struct_0(_G6928)=u1_struct_0(_G6977))]
+ (15)  [- (k6_rusub_4(_G7197, _G7368, _G7543)=k6_rusub_4(_G7282, _G7455, _G7632)), _G7197=_G7282, _G7368=_G7455, _G7543=_G7632]
+ (16)  [- (_G3166=_G3166)]
+ (17)  [_G3265=_G3310, - (_G3310=_G3265)]
+ (18)  [- (_G3498=_G3611), _G3498=_G3554, _G3554=_G3611]
+ (19)  [-l2_algstr_0(_G3997), _G3948=_G3997, l2_algstr_0(_G3948)]
+ (20)  [-v2_struct_0(_G4275), _G4226=_G4275, v2_struct_0(_G4226)]
+ (21)  [-v13_algstr_0(_G4553), _G4504=_G4553, v13_algstr_0(_G4504)]
+ (22)  [-v2_rlvect_1(_G4831), _G4782=_G4831, v2_rlvect_1(_G4782)]
+ (23)  [-v3_rlvect_1(_G5109), _G5060=_G5109, v3_rlvect_1(_G5060)]
+ (24)  [-v4_rlvect_1(_G5387), _G5338=_G5387, v4_rlvect_1(_G5338)]
+ (25)  [-l1_rlvect_1(_G5665), _G5616=_G5665, l1_rlvect_1(_G5616)]
+ (26)  [-m1_subset_1(_G5952, _G6089), m1_subset_1(_G5885, _G6020), _G5885=_G5952, _G6020=_G6089]
+
+Connection Proof:
+-----------------
+1  [k6_rusub_4(1^[], 2^[], k6_rusub_4(1^[], 3^[], 4^[]))=k6_rusub_4(1^[], k6_rusub_4(1^[], 2^[], 3^[]), 4^[])]   (10)  
+1.1  [- (k6_rusub_4(1^[], 2^[], k6_rusub_4(1^[], 3^[], 4^[]))=k6_rusub_4(1^[], k6_rusub_4(1^[], 2^[], 3^[]), 4^[])), k6_rusub_4(1^[], k6_rusub_4(1^[], 2^[], 3^[]), 4^[])=k6_rusub_4(1^[], 2^[], k6_rusub_4(1^[], 3^[], 4^[]))]   (17)  substitution:[[_G3310, _G3265], [k6_rusub_4(1^[], 2^[], k6_rusub_4(1^[], 3^[], 4^[])), k6_rusub_4(1^[], k6_rusub_4(1^[], 2^[], 3^[]), 4^[])]]
+1.1.1  [- (k6_rusub_4(1^[], k6_rusub_4(1^[], 2^[], 3^[]), 4^[])=k6_rusub_4(1^[], 2^[], k6_rusub_4(1^[], 3^[], 4^[]))), l2_algstr_0(1^[]), v3_rlvect_1(1^[]), -v2_struct_0(1^[]), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[]))), m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(1^[]))), m1_subset_1(4^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (12)  substitution:[[_G8410, _G8674, _G8855, _G9027], [1^[], 2^[], 3^[], 4^[]]]
+1.1.1.1  [-l2_algstr_0(1^[]), l1_rlvect_1(1^[])]   (11)  substitution:[[_G8288], [1^[]]]
+1.1.1.1.1  [-l1_rlvect_1(1^[])]   (6)  
+1.1.1.2  [-v3_rlvect_1(1^[])]   (4)  
+1.1.1.3  [v2_struct_0(1^[])]   (1)  
+1.1.1.4  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (7)  
+1.1.1.5  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (8)  
+1.1.1.6  [-m1_subset_1(4^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (9)  
+------------------------------------------------------
+End of proof for t26_mathmorp

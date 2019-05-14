@@ -1,0 +1,39 @@
+
+t42_tops_2 is a Theorem
+Start of proof for t42_tops_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-l1_struct_0(1^[])]
+ (2)  [v2_struct_0(2^[])]
+ (3)  [-l1_struct_0(2^[])]
+ (4)  [-v1_funct_1(3^[])]
+ (5)  [-v1_funct_2(3^[], u1_struct_0(1^[]), u1_struct_0(2^[]))]
+ (6)  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(1^[]), u1_struct_0(2^[]))))]
+ (7)  [-m1_subset_1(4^[], k1_zfmisc_1(k1_zfmisc_1(u1_struct_0(2^[]))))]
+ (8)  [m1_subset_1(k7_relat_1(k3_funct_3(3^[]), 4^[]), k1_zfmisc_1(k1_zfmisc_1(u1_struct_0(1^[]))))]
+ (9)  [m1_subset_1(_G1595, k1_zfmisc_1(k2_zfmisc_1(_G1486, _G1540))), -v1_relat_1(_G1595)]
+ (10)  [v1_xboole_0(u1_struct_0(_G1838)), -v2_struct_0(_G1838), l1_struct_0(_G1838)]
+ (11)  [-v1_xboole_0(_G2248), -r1_tarski(k8_relat_1(k1_funct_3(_G2382), _G2161), k1_zfmisc_1(_G2075)), v1_funct_1(_G2382), v1_funct_2(_G2382, _G2075, _G2248), m1_subset_1(_G2382, k1_zfmisc_1(k2_zfmisc_1(_G2075, _G2248)))]
+ (12)  [-r1_tarski(_G2946, _G3059), r1_tarski(_G2946, _G3002), r1_tarski(_G3002, _G3059)]
+ (13)  [-r1_tarski(k7_relat_1(k3_funct_3(_G3413), _G3354), k8_relat_1(k1_funct_3(_G3413), _G3354)), v1_relat_1(_G3413), v1_funct_1(_G3413)]
+ (14)  [m1_subset_1(_G3749, k1_zfmisc_1(_G3796)), -r1_tarski(_G3749, _G3796)]
+ (15)  [-m1_subset_1(_G3749, k1_zfmisc_1(_G3796)), r1_tarski(_G3749, _G3796)]
+
+Connection Proof:
+-----------------
+1  [m1_subset_1(k7_relat_1(k3_funct_3(3^[]), 4^[]), k1_zfmisc_1(k1_zfmisc_1(u1_struct_0(1^[]))))]   (8)  
+1.1  [-m1_subset_1(k7_relat_1(k3_funct_3(3^[]), 4^[]), k1_zfmisc_1(k1_zfmisc_1(u1_struct_0(1^[])))), r1_tarski(k7_relat_1(k3_funct_3(3^[]), 4^[]), k1_zfmisc_1(u1_struct_0(1^[])))]   (15)  substitution:[[_G3749, _G3796], [k7_relat_1(k3_funct_3(3^[]), 4^[]), k1_zfmisc_1(u1_struct_0(1^[]))]]
+1.1.1  [-r1_tarski(k7_relat_1(k3_funct_3(3^[]), 4^[]), k1_zfmisc_1(u1_struct_0(1^[]))), r1_tarski(k7_relat_1(k3_funct_3(3^[]), 4^[]), k8_relat_1(k1_funct_3(3^[]), 4^[])), r1_tarski(k8_relat_1(k1_funct_3(3^[]), 4^[]), k1_zfmisc_1(u1_struct_0(1^[])))]   (12)  substitution:[[_G2946, _G3059, _G3002], [k7_relat_1(k3_funct_3(3^[]), 4^[]), k1_zfmisc_1(u1_struct_0(1^[])), k8_relat_1(k1_funct_3(3^[]), 4^[])]]
+1.1.1.1  [-r1_tarski(k7_relat_1(k3_funct_3(3^[]), 4^[]), k8_relat_1(k1_funct_3(3^[]), 4^[])), v1_relat_1(3^[]), v1_funct_1(3^[])]   (13)  substitution:[[_G3413, _G3354], [3^[], 4^[]]]
+1.1.1.1.1  [-v1_relat_1(3^[]), m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(1^[]), u1_struct_0(2^[]))))]   (9)  substitution:[[_G1595, _G1486, _G1540], [3^[], u1_struct_0(1^[]), u1_struct_0(2^[])]]
+1.1.1.1.1.1  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(1^[]), u1_struct_0(2^[]))))]   (6)  
+1.1.1.1.2  [-v1_funct_1(3^[])]   (4)  
+1.1.1.2  [-r1_tarski(k8_relat_1(k1_funct_3(3^[]), 4^[]), k1_zfmisc_1(u1_struct_0(1^[]))), -v1_xboole_0(u1_struct_0(2^[])), v1_funct_1(3^[]), v1_funct_2(3^[], u1_struct_0(1^[]), u1_struct_0(2^[])), m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(1^[]), u1_struct_0(2^[]))))]   (11)  substitution:[[_G2382, _G2161, _G2075, _G2248], [3^[], 4^[], u1_struct_0(1^[]), u1_struct_0(2^[])]]
+1.1.1.2.1  [v1_xboole_0(u1_struct_0(2^[])), -v2_struct_0(2^[]), l1_struct_0(2^[])]   (10)  substitution:[[_G1838], [2^[]]]
+1.1.1.2.1.1  [v2_struct_0(2^[])]   (2)  
+1.1.1.2.1.2  [-l1_struct_0(2^[])]   (3)  
+1.1.1.2.2  [-v1_funct_1(3^[])]   (4)  
+1.1.1.2.3  [-v1_funct_2(3^[], u1_struct_0(1^[]), u1_struct_0(2^[]))]   (5)  
+1.1.1.2.4  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(1^[]), u1_struct_0(2^[]))))]   (6)  
+------------------------------------------------------
+End of proof for t42_tops_2

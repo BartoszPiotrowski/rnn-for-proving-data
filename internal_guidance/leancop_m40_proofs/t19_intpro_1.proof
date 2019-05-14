@@ -1,0 +1,27 @@
+
+t19_intpro_1 is a Theorem
+Start of proof for t19_intpro_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [r2_hidden(k10_intpro_1, k8_intpro_1)]
+ (2)  [- (k10_intpro_1=k3_intpro_1(k2_intpro_1, k2_intpro_1))]
+ (3)  [-m1_subset_1(k2_intpro_1, k1_intpro_1)]
+ (4)  [m1_subset_1(_G3878, k1_intpro_1), -r2_hidden(k3_intpro_1(_G3878, _G3878), k8_intpro_1)]
+ (5)  [- (k3_intpro_1(_G3116, _G3251)=k3_intpro_1(_G3183, _G3320)), _G3116=_G3183, _G3251=_G3320]
+ (6)  [- (_G1116=_G1116)]
+ (7)  [_G1215=_G1260, - (_G1260=_G1215)]
+ (8)  [- (_G1448=_G1561), _G1448=_G1504, _G1504=_G1561]
+ (9)  [-m1_subset_1(_G1965, _G2102), m1_subset_1(_G1898, _G2033), _G1898=_G1965, _G2033=_G2102]
+ (10)  [-r2_hidden(_G2553, _G2690), r2_hidden(_G2486, _G2621), _G2486=_G2553, _G2621=_G2690]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(k10_intpro_1, k8_intpro_1)]   (1)  
+1.1  [-r2_hidden(k10_intpro_1, k8_intpro_1), r2_hidden(k3_intpro_1(k2_intpro_1, k2_intpro_1), k8_intpro_1), k3_intpro_1(k2_intpro_1, k2_intpro_1)=k10_intpro_1, k8_intpro_1=k8_intpro_1]   (10)  substitution:[[_G2553, _G2690, _G2486, _G2621], [k10_intpro_1, k8_intpro_1, k3_intpro_1(k2_intpro_1, k2_intpro_1), k8_intpro_1]]
+1.1.1  [-r2_hidden(k3_intpro_1(k2_intpro_1, k2_intpro_1), k8_intpro_1), m1_subset_1(k2_intpro_1, k1_intpro_1)]   (4)  substitution:[[_G3878], [k2_intpro_1]]
+1.1.1.1  [-m1_subset_1(k2_intpro_1, k1_intpro_1)]   (3)  
+1.1.2  [- (k3_intpro_1(k2_intpro_1, k2_intpro_1)=k10_intpro_1), k10_intpro_1=k3_intpro_1(k2_intpro_1, k2_intpro_1)]   (7)  substitution:[[_G1260, _G1215], [k3_intpro_1(k2_intpro_1, k2_intpro_1), k10_intpro_1]]
+1.1.2.1  [- (k10_intpro_1=k3_intpro_1(k2_intpro_1, k2_intpro_1))]   (2)  
+1.1.3  [- (k8_intpro_1=k8_intpro_1)]   (6)  substitution:[[_G1116], [k8_intpro_1]]
+------------------------------------------------------
+End of proof for t19_intpro_1

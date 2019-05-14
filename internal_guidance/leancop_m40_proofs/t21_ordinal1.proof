@@ -1,0 +1,74 @@
+
+t21_ordinal1 is a Theorem
+Start of proof for t21_ordinal1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-4^[], r2_hidden(1^[], 2^[])]
+ (2)  [-4^[], -r1_ordinal1(k1_ordinal1(1^[]), 2^[])]
+ (3)  [-3^[], r1_ordinal1(k1_ordinal1(1^[]), 2^[])]
+ (4)  [-3^[], -r2_hidden(1^[], 2^[])]
+ (5)  [-v3_ordinal1(1^[])]
+ (6)  [-v3_ordinal1(2^[])]
+ (7)  [3^[], 4^[]]
+ (8)  [r2_hidden(_G7348, _G7395), r2_hidden(_G7395, _G7348)]
+ (9)  [- (k1_ordinal1(_G7608)=k2_xboole_0(_G7608, k1_tarski(_G7608)))]
+ (10)  [v3_ordinal1(_G7781), v1_xboole_0(k1_ordinal1(_G7781))]
+ (11)  [v3_ordinal1(_G7781), -v3_ordinal1(k1_ordinal1(_G7781))]
+ (12)  [v3_ordinal1(_G8073), v3_ordinal1(_G8018), r1_ordinal1(_G8018, _G8073), -r1_tarski(_G8018, _G8073)]
+ (13)  [v3_ordinal1(_G8073), v3_ordinal1(_G8018), -r1_ordinal1(_G8018, _G8073), r1_tarski(_G8018, _G8073)]
+ (14)  [v3_ordinal1(_G8853), v3_ordinal1(_G8940), -r1_ordinal1(_G8853, _G8940), -r2_hidden(_G8940, _G8853)]
+ (15)  [r1_tarski(k2_xboole_0(_G8509, k1_tarski(_G8386)), _G8447), -r2_hidden(_G8386, _G8447)]
+ (16)  [r1_tarski(k2_xboole_0(_G8509, k1_tarski(_G8386)), _G8447), -r1_tarski(_G8509, _G8447)]
+ (17)  [-r1_tarski(k2_xboole_0(_G8509, k1_tarski(_G8386)), _G8447), r2_hidden(_G8386, _G8447), r1_tarski(_G8509, _G8447)]
+ (18)  [- (k2_xboole_0(_G6141, _G6276)=k2_xboole_0(_G6208, _G6345)), _G6141=_G6208, _G6276=_G6345]
+ (19)  [_G6738=_G6787, - (k1_tarski(_G6738)=k1_tarski(_G6787))]
+ (20)  [_G7007=_G7056, - (k1_ordinal1(_G7007)=k1_ordinal1(_G7056))]
+ (21)  [- (_G2916=_G2916)]
+ (22)  [_G3015=_G3060, - (_G3060=_G3015)]
+ (23)  [- (_G3248=_G3361), _G3248=_G3304, _G3304=_G3361]
+ (24)  [-v1_xboole_0(_G3747), _G3698=_G3747, v1_xboole_0(_G3698)]
+ (25)  [-r1_tarski(_G4043, _G4180), r1_tarski(_G3976, _G4111), _G3976=_G4043, _G4111=_G4180]
+ (26)  [-v3_ordinal1(_G4622), _G4573=_G4622, v3_ordinal1(_G4573)]
+ (27)  [-r2_hidden(_G4918, _G5055), r2_hidden(_G4851, _G4986), _G4851=_G4918, _G4986=_G5055]
+ (28)  [-r1_ordinal1(_G5506, _G5643), r1_ordinal1(_G5439, _G5574), _G5439=_G5506, _G5574=_G5643]
+
+Connection Proof:
+-----------------
+1  [3^[], 4^[]]   (7)  
+1.1  [-3^[], -r2_hidden(1^[], 2^[])]   (4)  
+1.1.1  [r2_hidden(1^[], 2^[]), -r1_tarski(k2_xboole_0(1^[], k1_tarski(1^[])), 2^[]), r1_tarski(1^[], 2^[])]   (17)  substitution:[[_G8386, _G8447, _G8509], [1^[], 2^[], 1^[]]]
+1.1.1.1  [r1_tarski(k2_xboole_0(1^[], k1_tarski(1^[])), 2^[]), v3_ordinal1(2^[]), v3_ordinal1(k2_xboole_0(1^[], k1_tarski(1^[]))), -r1_ordinal1(k2_xboole_0(1^[], k1_tarski(1^[])), 2^[])]   (13)  substitution:[[_G8018, _G8073], [k2_xboole_0(1^[], k1_tarski(1^[])), 2^[]]]
+1.1.1.1.1  [-v3_ordinal1(2^[])]   (6)  
+1.1.1.1.2  [-v3_ordinal1(k2_xboole_0(1^[], k1_tarski(1^[]))), k1_ordinal1(1^[])=k2_xboole_0(1^[], k1_tarski(1^[])), v3_ordinal1(k1_ordinal1(1^[]))]   (26)  substitution:[[_G4622, _G4573], [k2_xboole_0(1^[], k1_tarski(1^[])), k1_ordinal1(1^[])]]
+1.1.1.1.2.1  [- (k1_ordinal1(1^[])=k2_xboole_0(1^[], k1_tarski(1^[])))]   (9)  substitution:[[_G7608], [1^[]]]
+1.1.1.1.2.2  [-v3_ordinal1(k1_ordinal1(1^[])), v3_ordinal1(1^[])]   (11)  substitution:[[_G7781], [1^[]]]
+1.1.1.1.2.2.1  [-v3_ordinal1(1^[])]   (5)  
+1.1.1.1.3  [r1_ordinal1(k2_xboole_0(1^[], k1_tarski(1^[])), 2^[]), -r1_ordinal1(k1_ordinal1(1^[]), 2^[]), k2_xboole_0(1^[], k1_tarski(1^[]))=k1_ordinal1(1^[]), 2^[]=2^[]]   (28)  substitution:[[_G5439, _G5574, _G5506, _G5643], [k2_xboole_0(1^[], k1_tarski(1^[])), 2^[], k1_ordinal1(1^[]), 2^[]]]
+1.1.1.1.3.1  [r1_ordinal1(k1_ordinal1(1^[]), 2^[]), -3^[]]   (3)  
+1.1.1.1.3.1.1  [3^[]]   (reduction:1)  
+1.1.1.1.3.2  [- (k2_xboole_0(1^[], k1_tarski(1^[]))=k1_ordinal1(1^[])), k1_ordinal1(1^[])=k2_xboole_0(1^[], k1_tarski(1^[]))]   (22)  substitution:[[_G3060, _G3015], [k2_xboole_0(1^[], k1_tarski(1^[])), k1_ordinal1(1^[])]]
+1.1.1.1.3.2.1  [- (k1_ordinal1(1^[])=k2_xboole_0(1^[], k1_tarski(1^[])))]   (9)  substitution:[[_G7608], [1^[]]]
+1.1.1.1.3.3  [- (2^[]=2^[])]   (21)  substitution:[[_G2916], [2^[]]]
+1.1.1.2  [-r1_tarski(1^[], 2^[]), v3_ordinal1(2^[]), v3_ordinal1(1^[]), r1_ordinal1(1^[], 2^[])]   (12)  substitution:[[_G8018, _G8073], [1^[], 2^[]]]
+1.1.1.2.1  [-v3_ordinal1(2^[])]   (6)  
+1.1.1.2.2  [-v3_ordinal1(1^[])]   (5)  
+1.1.1.2.3  [-r1_ordinal1(1^[], 2^[]), v3_ordinal1(1^[]), v3_ordinal1(2^[]), -r2_hidden(2^[], 1^[])]   (14)  substitution:[[_G8853, _G8940], [1^[], 2^[]]]
+1.1.1.2.3.1  [-v3_ordinal1(1^[])]   (5)  
+1.1.1.2.3.2  [-v3_ordinal1(2^[])]   (6)  
+1.1.1.2.3.3  [r2_hidden(2^[], 1^[]), r2_hidden(1^[], 2^[])]   (8)  substitution:[[_G7348, _G7395], [2^[], 1^[]]]
+1.1.1.2.3.3.1  [-r2_hidden(1^[], 2^[])]   (reduction:1.1)  
+1.2  [-4^[], r2_hidden(1^[], 2^[])]   (1)  
+1.2.1  [-r2_hidden(1^[], 2^[]), r1_tarski(k2_xboole_0(1^[], k1_tarski(1^[])), 2^[])]   (15)  substitution:[[_G8386, _G8447, _G8509], [1^[], 2^[], 1^[]]]
+1.2.1.1  [-r1_tarski(k2_xboole_0(1^[], k1_tarski(1^[])), 2^[]), v3_ordinal1(2^[]), v3_ordinal1(k2_xboole_0(1^[], k1_tarski(1^[]))), r1_ordinal1(k2_xboole_0(1^[], k1_tarski(1^[])), 2^[])]   (12)  substitution:[[_G8018, _G8073], [k2_xboole_0(1^[], k1_tarski(1^[])), 2^[]]]
+1.2.1.1.1  [-v3_ordinal1(2^[])]   (6)  
+1.2.1.1.2  [-v3_ordinal1(k2_xboole_0(1^[], k1_tarski(1^[]))), k1_ordinal1(1^[])=k2_xboole_0(1^[], k1_tarski(1^[])), v3_ordinal1(k1_ordinal1(1^[]))]   (26)  substitution:[[_G4622, _G4573], [k2_xboole_0(1^[], k1_tarski(1^[])), k1_ordinal1(1^[])]]
+1.2.1.1.2.1  [- (k1_ordinal1(1^[])=k2_xboole_0(1^[], k1_tarski(1^[])))]   (9)  substitution:[[_G7608], [1^[]]]
+1.2.1.1.2.2  [-v3_ordinal1(k1_ordinal1(1^[])), v3_ordinal1(1^[])]   (11)  substitution:[[_G7781], [1^[]]]
+1.2.1.1.2.2.1  [-v3_ordinal1(1^[])]   (5)  
+1.2.1.1.3  [-r1_ordinal1(k2_xboole_0(1^[], k1_tarski(1^[])), 2^[]), r1_ordinal1(k1_ordinal1(1^[]), 2^[]), k1_ordinal1(1^[])=k2_xboole_0(1^[], k1_tarski(1^[])), 2^[]=2^[]]   (28)  substitution:[[_G5506, _G5643, _G5439, _G5574], [k2_xboole_0(1^[], k1_tarski(1^[])), 2^[], k1_ordinal1(1^[]), 2^[]]]
+1.2.1.1.3.1  [-r1_ordinal1(k1_ordinal1(1^[]), 2^[]), -4^[]]   (2)  
+1.2.1.1.3.1.1  [4^[]]   (reduction:1)  
+1.2.1.1.3.2  [- (k1_ordinal1(1^[])=k2_xboole_0(1^[], k1_tarski(1^[])))]   (9)  substitution:[[_G7608], [1^[]]]
+1.2.1.1.3.3  [- (2^[]=2^[])]   (21)  substitution:[[_G2916], [2^[]]]
+------------------------------------------------------
+End of proof for t21_ordinal1

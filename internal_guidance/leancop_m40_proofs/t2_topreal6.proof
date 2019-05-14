@@ -1,0 +1,53 @@
+
+t2_topreal6 is a Theorem
+Start of proof for t2_topreal6
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xreal_0(1^[])]
+ (2)  [-v1_xreal_0(2^[])]
+ (3)  [-r1_xxreal_0(k6_numbers, 1^[])]
+ (4)  [-r1_xxreal_0(1^[], 2^[])]
+ (5)  [r1_xxreal_0(k18_complex1(1^[]), k18_complex1(2^[]))]
+ (6)  [v1_xreal_0(_G5316), -v1_xcmplx_0(_G5316)]
+ (7)  [v1_xreal_0(_G5447), r1_xxreal_0(k6_numbers, _G5447), - (k16_complex1(_G5447)=_G5447)]
+ (8)  [v1_xreal_0(_G5447), -r1_xxreal_0(k6_numbers, _G5447), - (k16_complex1(_G5447)=k4_xcmplx_0(_G5447))]
+ (9)  [v1_xcmplx_0(_G5920), - (k18_complex1(_G5920)=k16_complex1(_G5920))]
+ (10)  [v1_xreal_0(_G6100), v1_xreal_0(_G6203), r1_xxreal_0(_G6203, k4_xcmplx_0(_G6100)), -r1_xxreal_0(_G6100, k18_complex1(_G6203))]
+ (11)  [v1_xreal_0(_G6100), v1_xreal_0(_G6203), r1_xxreal_0(_G6100, _G6203), -r1_xxreal_0(_G6100, k18_complex1(_G6203))]
+ (12)  [v1_xreal_0(_G6100), v1_xreal_0(_G6203), r1_xxreal_0(_G6100, k18_complex1(_G6203)), -r1_xxreal_0(_G6203, k4_xcmplx_0(_G6100)), -r1_xxreal_0(_G6100, _G6203)]
+ (13)  [_G4428=_G4477, - (k16_complex1(_G4428)=k16_complex1(_G4477))]
+ (14)  [_G4706=_G4755, - (k4_xcmplx_0(_G4706)=k4_xcmplx_0(_G4755))]
+ (15)  [_G4975=_G5024, - (k18_complex1(_G4975)=k18_complex1(_G5024))]
+ (16)  [- (_G2439=_G2439)]
+ (17)  [_G2538=_G2583, - (_G2583=_G2538)]
+ (18)  [- (_G2771=_G2884), _G2771=_G2827, _G2827=_G2884]
+ (19)  [-v1_xcmplx_0(_G3270), _G3221=_G3270, v1_xcmplx_0(_G3221)]
+ (20)  [-v1_xreal_0(_G3548), _G3499=_G3548, v1_xreal_0(_G3499)]
+ (21)  [-r1_xxreal_0(_G3835, _G3972), r1_xxreal_0(_G3768, _G3903), _G3768=_G3835, _G3903=_G3972]
+
+Connection Proof:
+-----------------
+1  [r1_xxreal_0(k18_complex1(1^[]), k18_complex1(2^[]))]   (5)  
+1.1  [-r1_xxreal_0(k18_complex1(1^[]), k18_complex1(2^[])), r1_xxreal_0(k16_complex1(1^[]), k16_complex1(2^[])), k16_complex1(1^[])=k18_complex1(1^[]), k16_complex1(2^[])=k18_complex1(2^[])]   (21)  substitution:[[_G3835, _G3972, _G3768, _G3903], [k18_complex1(1^[]), k18_complex1(2^[]), k16_complex1(1^[]), k16_complex1(2^[])]]
+1.1.1  [-r1_xxreal_0(k16_complex1(1^[]), k16_complex1(2^[])), r1_xxreal_0(1^[], k18_complex1(2^[])), 1^[]=k16_complex1(1^[]), k18_complex1(2^[])=k16_complex1(2^[])]   (21)  substitution:[[_G3835, _G3972, _G3768, _G3903], [k16_complex1(1^[]), k16_complex1(2^[]), 1^[], k18_complex1(2^[])]]
+1.1.1.1  [-r1_xxreal_0(1^[], k18_complex1(2^[])), v1_xreal_0(1^[]), v1_xreal_0(2^[]), r1_xxreal_0(1^[], 2^[])]   (11)  substitution:[[_G6100, _G6203], [1^[], 2^[]]]
+1.1.1.1.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.1.1.2  [-v1_xreal_0(2^[])]   (2)  
+1.1.1.1.3  [-r1_xxreal_0(1^[], 2^[])]   (4)  
+1.1.1.2  [- (1^[]=k16_complex1(1^[])), k16_complex1(1^[])=1^[]]   (17)  substitution:[[_G2583, _G2538], [1^[], k16_complex1(1^[])]]
+1.1.1.2.1  [- (k16_complex1(1^[])=1^[]), v1_xreal_0(1^[]), r1_xxreal_0(k6_numbers, 1^[])]   (7)  substitution:[[_G5447], [1^[]]]
+1.1.1.2.1.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.1.2.1.2  [-r1_xxreal_0(k6_numbers, 1^[])]   (3)  
+1.1.1.3  [- (k18_complex1(2^[])=k16_complex1(2^[])), v1_xcmplx_0(2^[])]   (9)  substitution:[[_G5920], [2^[]]]
+1.1.1.3.1  [-v1_xcmplx_0(2^[]), v1_xreal_0(2^[])]   (6)  substitution:[[_G5316], [2^[]]]
+1.1.1.3.1.1  [-v1_xreal_0(2^[])]   (2)  
+1.1.2  [- (k16_complex1(1^[])=k18_complex1(1^[])), k18_complex1(1^[])=k16_complex1(1^[])]   (17)  substitution:[[_G2583, _G2538], [k16_complex1(1^[]), k18_complex1(1^[])]]
+1.1.2.1  [- (k18_complex1(1^[])=k16_complex1(1^[])), v1_xcmplx_0(1^[])]   (9)  substitution:[[_G5920], [1^[]]]
+1.1.2.1.1  [-v1_xcmplx_0(1^[]), v1_xreal_0(1^[])]   (6)  substitution:[[_G5316], [1^[]]]
+1.1.2.1.1.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.3  [- (k16_complex1(2^[])=k18_complex1(2^[])), k18_complex1(2^[])=k16_complex1(2^[])]   (17)  substitution:[[_G2583, _G2538], [k16_complex1(2^[]), k18_complex1(2^[])]]
+1.1.3.1  [- (k18_complex1(2^[])=k16_complex1(2^[])), v1_xcmplx_0(2^[])]   (9)  substitution:[[_G5920], [2^[]]]
+1.1.3.1.1  [-v1_xcmplx_0(2^[]), v1_xreal_0(2^[])]   (6)  substitution:[[_G5316], [2^[]]]
+1.1.3.1.1.1  [-v1_xreal_0(2^[])]   (2)  
+------------------------------------------------------
+End of proof for t2_topreal6

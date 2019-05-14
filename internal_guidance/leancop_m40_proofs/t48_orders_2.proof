@@ -1,0 +1,84 @@
+
+t48_orders_2 is a Theorem
+Start of proof for t48_orders_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(1^[])]
+ (2)  [-v3_orders_2(1^[])]
+ (3)  [-v4_orders_2(1^[])]
+ (4)  [-v5_orders_2(1^[])]
+ (5)  [-l1_orders_2(1^[])]
+ (6)  [-v6_orders_2(2^[], 1^[])]
+ (7)  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]
+ (8)  [v3_orders_1(k2_wellord1(u1_orders_2(1^[]), 2^[]))]
+ (9)  [l1_orders_2(_G2085), v3_orders_2(_G2085), -v2_orders_2(_G2085)]
+ (10)  [m1_subset_1(_G2383, k1_zfmisc_1(k2_zfmisc_1(_G2274, _G2328))), -v1_relat_1(_G2383)]
+ (11)  [v1_relat_1(_G2626), v3_orders_1(_G2626), -v1_relat_2(_G2626)]
+ (12)  [v1_relat_1(_G2626), v3_orders_1(_G2626), -v8_relat_2(_G2626)]
+ (13)  [v1_relat_1(_G2626), v3_orders_1(_G2626), -v4_relat_2(_G2626)]
+ (14)  [v1_relat_1(_G2626), v3_orders_1(_G2626), -v6_relat_2(_G2626)]
+ (15)  [v1_relat_1(_G2626), -v3_orders_1(_G2626), v1_relat_2(_G2626), v8_relat_2(_G2626), v4_relat_2(_G2626), v6_relat_2(_G2626)]
+ (16)  [l1_orders_2(_G2989), m1_subset_1(_G3083, k1_zfmisc_1(u1_struct_0(_G2989))), v6_orders_2(_G3083, _G2989), -r7_relat_2(u1_orders_2(_G2989), _G3083)]
+ (17)  [l1_orders_2(_G2989), m1_subset_1(_G3083, k1_zfmisc_1(u1_struct_0(_G2989))), -v6_orders_2(_G3083, _G2989), r7_relat_2(u1_orders_2(_G2989), _G3083)]
+ (18)  [v1_relat_1(_G3433), -v1_relat_1(k2_wellord1(_G3433, _G3479))]
+ (19)  [l1_orders_2(_G3666), -m1_subset_1(u1_orders_2(_G3666), k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(_G3666), u1_struct_0(_G3666))))]
+ (20)  [-v4_relat_2(u1_orders_2(_G3929)), v2_orders_2(_G3929), v5_orders_2(_G3929), l1_orders_2(_G3929)]
+ (21)  [-v8_relat_2(u1_orders_2(_G4192)), v2_orders_2(_G4192), v4_orders_2(_G4192), l1_orders_2(_G4192)]
+ (22)  [v1_relat_1(_G4455), r1_relat_2(_G4455, _G4539), -v1_relat_2(k2_wellord1(_G4455, _G4539))]
+ (23)  [v1_relat_1(_G4773), r6_relat_2(_G4773, _G4857), -v6_relat_2(k2_wellord1(_G4773, _G4857))]
+ (24)  [v1_relat_1(_G5142), v8_relat_2(_G5142), -v8_relat_2(k2_wellord1(_G5142, _G5091))]
+ (25)  [v1_relat_1(_G5438), v4_relat_2(_G5438), -v4_relat_2(k2_wellord1(_G5438, _G5387))]
+ (26)  [v1_relat_1(_G5730), r7_relat_2(_G5730, _G5674), -r1_relat_2(_G5730, _G5674)]
+ (27)  [v1_relat_1(_G5730), r7_relat_2(_G5730, _G5674), -r6_relat_2(_G5730, _G5674)]
+ (28)  [v1_relat_1(_G5730), -r7_relat_2(_G5730, _G5674), r1_relat_2(_G5730, _G5674), r6_relat_2(_G5730, _G5674)]
+
+Connection Proof:
+-----------------
+1  [v3_orders_1(k2_wellord1(u1_orders_2(1^[]), 2^[]))]   (8)  
+1.1  [-v3_orders_1(k2_wellord1(u1_orders_2(1^[]), 2^[])), v1_relat_1(k2_wellord1(u1_orders_2(1^[]), 2^[])), v1_relat_2(k2_wellord1(u1_orders_2(1^[]), 2^[])), v8_relat_2(k2_wellord1(u1_orders_2(1^[]), 2^[])), v4_relat_2(k2_wellord1(u1_orders_2(1^[]), 2^[])), v6_relat_2(k2_wellord1(u1_orders_2(1^[]), 2^[]))]   (15)  substitution:[[_G2626], [k2_wellord1(u1_orders_2(1^[]), 2^[])]]
+1.1.1  [-v1_relat_1(k2_wellord1(u1_orders_2(1^[]), 2^[])), v1_relat_1(u1_orders_2(1^[]))]   (18)  substitution:[[_G3433, _G3479], [u1_orders_2(1^[]), 2^[]]]
+1.1.1.1  [-v1_relat_1(u1_orders_2(1^[])), m1_subset_1(u1_orders_2(1^[]), k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(1^[]), u1_struct_0(1^[]))))]   (10)  substitution:[[_G2383, _G2274, _G2328], [u1_orders_2(1^[]), u1_struct_0(1^[]), u1_struct_0(1^[])]]
+1.1.1.1.1  [-m1_subset_1(u1_orders_2(1^[]), k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(1^[]), u1_struct_0(1^[])))), l1_orders_2(1^[])]   (19)  substitution:[[_G3666], [1^[]]]
+1.1.1.1.1.1  [-l1_orders_2(1^[])]   (5)  
+1.1.2  [-v1_relat_2(k2_wellord1(u1_orders_2(1^[]), 2^[])), v1_relat_1(u1_orders_2(1^[])), r1_relat_2(u1_orders_2(1^[]), 2^[])]   (22)  substitution:[[_G4455, _G4539], [u1_orders_2(1^[]), 2^[]]]
+1.1.2.1  [-v1_relat_1(u1_orders_2(1^[])), m1_subset_1(u1_orders_2(1^[]), k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(1^[]), u1_struct_0(1^[]))))]   (10)  substitution:[[_G2383, _G2274, _G2328], [u1_orders_2(1^[]), u1_struct_0(1^[]), u1_struct_0(1^[])]]
+1.1.2.1.1  [-m1_subset_1(u1_orders_2(1^[]), k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(1^[]), u1_struct_0(1^[])))), l1_orders_2(1^[])]   (19)  substitution:[[_G3666], [1^[]]]
+1.1.2.1.1.1  [-l1_orders_2(1^[])]   (5)  
+1.1.2.2  [-r1_relat_2(u1_orders_2(1^[]), 2^[]), v1_relat_1(u1_orders_2(1^[])), r7_relat_2(u1_orders_2(1^[]), 2^[])]   (26)  substitution:[[_G5730, _G5674], [u1_orders_2(1^[]), 2^[]]]
+1.1.2.2.1  [-v1_relat_1(u1_orders_2(1^[]))]   (lemmata:1.1.2)  
+1.1.2.2.2  [-r7_relat_2(u1_orders_2(1^[]), 2^[]), l1_orders_2(1^[]), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[]))), v6_orders_2(2^[], 1^[])]   (16)  substitution:[[_G2989, _G3083], [1^[], 2^[]]]
+1.1.2.2.2.1  [-l1_orders_2(1^[])]   (5)  
+1.1.2.2.2.2  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (7)  
+1.1.2.2.2.3  [-v6_orders_2(2^[], 1^[])]   (6)  
+1.1.3  [-v8_relat_2(k2_wellord1(u1_orders_2(1^[]), 2^[])), v1_relat_1(u1_orders_2(1^[])), v8_relat_2(u1_orders_2(1^[]))]   (24)  substitution:[[_G5142, _G5091], [u1_orders_2(1^[]), 2^[]]]
+1.1.3.1  [-v1_relat_1(u1_orders_2(1^[])), m1_subset_1(u1_orders_2(1^[]), k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(1^[]), u1_struct_0(1^[]))))]   (10)  substitution:[[_G2383, _G2274, _G2328], [u1_orders_2(1^[]), u1_struct_0(1^[]), u1_struct_0(1^[])]]
+1.1.3.1.1  [-m1_subset_1(u1_orders_2(1^[]), k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(1^[]), u1_struct_0(1^[])))), l1_orders_2(1^[])]   (19)  substitution:[[_G3666], [1^[]]]
+1.1.3.1.1.1  [-l1_orders_2(1^[])]   (5)  
+1.1.3.2  [-v8_relat_2(u1_orders_2(1^[])), v2_orders_2(1^[]), v4_orders_2(1^[]), l1_orders_2(1^[])]   (21)  substitution:[[_G4192], [1^[]]]
+1.1.3.2.1  [-v2_orders_2(1^[]), l1_orders_2(1^[]), v3_orders_2(1^[])]   (9)  substitution:[[_G2085], [1^[]]]
+1.1.3.2.1.1  [-l1_orders_2(1^[])]   (5)  
+1.1.3.2.1.2  [-v3_orders_2(1^[])]   (2)  
+1.1.3.2.2  [-v4_orders_2(1^[])]   (3)  
+1.1.3.2.3  [-l1_orders_2(1^[])]   (5)  
+1.1.4  [-v4_relat_2(k2_wellord1(u1_orders_2(1^[]), 2^[])), v1_relat_1(u1_orders_2(1^[])), v4_relat_2(u1_orders_2(1^[]))]   (25)  substitution:[[_G5438, _G5387], [u1_orders_2(1^[]), 2^[]]]
+1.1.4.1  [-v1_relat_1(u1_orders_2(1^[])), m1_subset_1(u1_orders_2(1^[]), k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(1^[]), u1_struct_0(1^[]))))]   (10)  substitution:[[_G2383, _G2274, _G2328], [u1_orders_2(1^[]), u1_struct_0(1^[]), u1_struct_0(1^[])]]
+1.1.4.1.1  [-m1_subset_1(u1_orders_2(1^[]), k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(1^[]), u1_struct_0(1^[])))), l1_orders_2(1^[])]   (19)  substitution:[[_G3666], [1^[]]]
+1.1.4.1.1.1  [-l1_orders_2(1^[])]   (5)  
+1.1.4.2  [-v4_relat_2(u1_orders_2(1^[])), v2_orders_2(1^[]), v5_orders_2(1^[]), l1_orders_2(1^[])]   (20)  substitution:[[_G3929], [1^[]]]
+1.1.4.2.1  [-v2_orders_2(1^[]), l1_orders_2(1^[]), v3_orders_2(1^[])]   (9)  substitution:[[_G2085], [1^[]]]
+1.1.4.2.1.1  [-l1_orders_2(1^[])]   (5)  
+1.1.4.2.1.2  [-v3_orders_2(1^[])]   (2)  
+1.1.4.2.2  [-v5_orders_2(1^[])]   (4)  
+1.1.4.2.3  [-l1_orders_2(1^[])]   (5)  
+1.1.5  [-v6_relat_2(k2_wellord1(u1_orders_2(1^[]), 2^[])), v1_relat_1(u1_orders_2(1^[])), r6_relat_2(u1_orders_2(1^[]), 2^[])]   (23)  substitution:[[_G4773, _G4857], [u1_orders_2(1^[]), 2^[]]]
+1.1.5.1  [-v1_relat_1(u1_orders_2(1^[])), m1_subset_1(u1_orders_2(1^[]), k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(1^[]), u1_struct_0(1^[]))))]   (10)  substitution:[[_G2383, _G2274, _G2328], [u1_orders_2(1^[]), u1_struct_0(1^[]), u1_struct_0(1^[])]]
+1.1.5.1.1  [-m1_subset_1(u1_orders_2(1^[]), k1_zfmisc_1(k2_zfmisc_1(u1_struct_0(1^[]), u1_struct_0(1^[])))), l1_orders_2(1^[])]   (19)  substitution:[[_G3666], [1^[]]]
+1.1.5.1.1.1  [-l1_orders_2(1^[])]   (5)  
+1.1.5.2  [-r6_relat_2(u1_orders_2(1^[]), 2^[]), v1_relat_1(u1_orders_2(1^[])), r7_relat_2(u1_orders_2(1^[]), 2^[])]   (27)  substitution:[[_G5730, _G5674], [u1_orders_2(1^[]), 2^[]]]
+1.1.5.2.1  [-v1_relat_1(u1_orders_2(1^[]))]   (lemmata:1.1.5)  
+1.1.5.2.2  [-r7_relat_2(u1_orders_2(1^[]), 2^[]), l1_orders_2(1^[]), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[]))), v6_orders_2(2^[], 1^[])]   (16)  substitution:[[_G2989, _G3083], [1^[], 2^[]]]
+1.1.5.2.2.1  [-l1_orders_2(1^[])]   (5)  
+1.1.5.2.2.2  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (7)  
+1.1.5.2.2.3  [-v6_orders_2(2^[], 1^[])]   (6)  
+------------------------------------------------------
+End of proof for t48_orders_2

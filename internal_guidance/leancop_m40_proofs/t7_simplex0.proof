@@ -1,0 +1,33 @@
+
+t7_simplex0 is a Theorem
+Start of proof for t7_simplex0
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_classes1(2^[])]
+ (2)  [k1_simplex0(2^[])=2^[]]
+ (3)  [-r1_tarski(_G4069, _G4069)]
+ (4)  [v1_classes1(_G3511), - (_G3511=k1_simplex0(_G3437)), r1_tarski(_G3437, _G3511), -r1_tarski(_G3437, 1^[_G3511, _G3437])]
+ (5)  [v1_classes1(_G3511), - (_G3511=k1_simplex0(_G3437)), r1_tarski(_G3437, _G3511), -v1_classes1(1^[_G3511, _G3437])]
+ (6)  [v1_classes1(_G3511), - (_G3511=k1_simplex0(_G3437)), r1_tarski(_G3437, _G3511), r1_tarski(_G3511, 1^[_G3511, _G3437])]
+ (7)  [v1_classes1(_G3511), _G3511=k1_simplex0(_G3437), -r1_tarski(_G3437, _G3511)]
+ (8)  [v1_classes1(_G3511), _G3511=k1_simplex0(_G3437), -r1_tarski(_G3511, _G3746), r1_tarski(_G3437, _G3746), v1_classes1(_G3746)]
+ (9)  [_G3138=_G3187, - (k1_simplex0(_G3138)=k1_simplex0(_G3187))]
+ (10)  [- (_G1457=_G1457)]
+ (11)  [_G1556=_G1601, - (_G1601=_G1556)]
+ (12)  [- (_G1789=_G1902), _G1789=_G1845, _G1845=_G1902]
+ (13)  [-v1_classes1(_G2876), _G2827=_G2876, v1_classes1(_G2827)]
+ (14)  [-r1_tarski(_G2306, _G2443), r1_tarski(_G2239, _G2374), _G2239=_G2306, _G2374=_G2443]
+
+Connection Proof:
+-----------------
+1  [k1_simplex0(2^[])=2^[]]   (2)  
+1.1  [- (k1_simplex0(2^[])=2^[]), 2^[]=k1_simplex0(2^[])]   (11)  substitution:[[_G1601, _G1556], [k1_simplex0(2^[]), 2^[]]]
+1.1.1  [- (2^[]=k1_simplex0(2^[])), v1_classes1(2^[]), r1_tarski(2^[], 2^[]), -r1_tarski(2^[], 1^[2^[], 2^[]])]   (4)  substitution:[[_G3511, _G3437], [2^[], 2^[]]]
+1.1.1.1  [-v1_classes1(2^[])]   (1)  
+1.1.1.2  [-r1_tarski(2^[], 2^[])]   (3)  substitution:[[_G4069], [2^[]]]
+1.1.1.3  [r1_tarski(2^[], 1^[2^[], 2^[]]), v1_classes1(2^[]), - (2^[]=k1_simplex0(2^[])), r1_tarski(2^[], 2^[])]   (6)  substitution:[[_G3511, _G3437], [2^[], 2^[]]]
+1.1.1.3.1  [-v1_classes1(2^[])]   (1)  
+1.1.1.3.2  [2^[]=k1_simplex0(2^[])]   (reduction:1.1)  
+1.1.1.3.3  [-r1_tarski(2^[], 2^[])]   (3)  substitution:[[_G4069], [2^[]]]
+------------------------------------------------------
+End of proof for t7_simplex0

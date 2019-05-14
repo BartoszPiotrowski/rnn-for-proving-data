@@ -1,0 +1,55 @@
+
+t20_sin_cos3 is a Theorem
+Start of proof for t20_sin_cos3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k15_sin_cos(k5_complex1)=np__1]
+ (2)  [- (k2_xcmplx_0(np__1, k4_xcmplx_0(np__1))=k6_numbers)]
+ (3)  [- (k5_complex1=k1_xboole_0)]
+ (4)  [- (k6_numbers=k1_xboole_0)]
+ (5)  [- (k2_xcmplx_0(np__1, k4_xcmplx_0(np__1))=np__0)]
+ (6)  [-m2_subset_1(np__0, k1_numbers, k5_numbers)]
+ (7)  [-m1_subset_1(np__0, k5_numbers)]
+ (8)  [-m1_subset_1(np__0, k1_numbers)]
+ (9)  [- (k26_sin_cos(k6_numbers)=np__1)]
+ (10)  [m1_subset_1(_G6353, k1_numbers), - (k15_sin_cos(_G6353)=k26_sin_cos(_G6353))]
+ (11)  [- (k2_xcmplx_0(_G4257, _G4392)=k2_xcmplx_0(_G4324, _G4461)), _G4257=_G4324, _G4392=_G4461]
+ (12)  [_G4854=_G4903, - (k4_xcmplx_0(_G4854)=k4_xcmplx_0(_G4903))]
+ (13)  [_G5132=_G5181, - (k26_sin_cos(_G5132)=k26_sin_cos(_G5181))]
+ (14)  [_G5401=_G5450, - (k15_sin_cos(_G5401)=k15_sin_cos(_G5450))]
+ (15)  [- (_G1817=_G1817)]
+ (16)  [_G1916=_G1961, - (_G1961=_G1916)]
+ (17)  [- (_G2149=_G2262), _G2149=_G2205, _G2205=_G2262]
+ (18)  [-m1_subset_1(_G3685, _G3822), m1_subset_1(_G3618, _G3753), _G3618=_G3685, _G3753=_G3822]
+ (19)  [-m2_subset_1(_G2684, _G2857, _G3034), m2_subset_1(_G2599, _G2770, _G2945), _G2599=_G2684, _G2770=_G2857, _G2945=_G3034]
+
+Connection Proof:
+-----------------
+1  [k15_sin_cos(k5_complex1)=np__1]   (1)  
+1.1  [- (k15_sin_cos(k5_complex1)=np__1), k15_sin_cos(k5_complex1)=k26_sin_cos(k5_complex1), k26_sin_cos(k5_complex1)=np__1]   (17)  substitution:[[_G2149, _G2262, _G2205], [k15_sin_cos(k5_complex1), np__1, k26_sin_cos(k5_complex1)]]
+1.1.1  [- (k15_sin_cos(k5_complex1)=k26_sin_cos(k5_complex1)), m1_subset_1(k5_complex1, k1_numbers)]   (10)  substitution:[[_G6353], [k5_complex1]]
+1.1.1.1  [-m1_subset_1(k5_complex1, k1_numbers), m1_subset_1(k2_xcmplx_0(np__1, k4_xcmplx_0(np__1)), k1_numbers), k2_xcmplx_0(np__1, k4_xcmplx_0(np__1))=k5_complex1, k1_numbers=k1_numbers]   (18)  substitution:[[_G3685, _G3822, _G3618, _G3753], [k5_complex1, k1_numbers, k2_xcmplx_0(np__1, k4_xcmplx_0(np__1)), k1_numbers]]
+1.1.1.1.1  [-m1_subset_1(k2_xcmplx_0(np__1, k4_xcmplx_0(np__1)), k1_numbers), m1_subset_1(np__0, k1_numbers), np__0=k2_xcmplx_0(np__1, k4_xcmplx_0(np__1)), k1_numbers=k1_numbers]   (18)  substitution:[[_G3685, _G3822, _G3618, _G3753], [k2_xcmplx_0(np__1, k4_xcmplx_0(np__1)), k1_numbers, np__0, k1_numbers]]
+1.1.1.1.1.1  [-m1_subset_1(np__0, k1_numbers)]   (8)  
+1.1.1.1.1.2  [- (np__0=k2_xcmplx_0(np__1, k4_xcmplx_0(np__1))), k2_xcmplx_0(np__1, k4_xcmplx_0(np__1))=np__0]   (16)  substitution:[[_G1961, _G1916], [np__0, k2_xcmplx_0(np__1, k4_xcmplx_0(np__1))]]
+1.1.1.1.1.2.1  [- (k2_xcmplx_0(np__1, k4_xcmplx_0(np__1))=np__0)]   (5)  
+1.1.1.1.1.3  [- (k1_numbers=k1_numbers)]   (15)  substitution:[[_G1817], [k1_numbers]]
+1.1.1.1.2  [- (k2_xcmplx_0(np__1, k4_xcmplx_0(np__1))=k5_complex1), k2_xcmplx_0(np__1, k4_xcmplx_0(np__1))=k1_xboole_0, k1_xboole_0=k5_complex1]   (17)  substitution:[[_G2149, _G2262, _G2205], [k2_xcmplx_0(np__1, k4_xcmplx_0(np__1)), k5_complex1, k1_xboole_0]]
+1.1.1.1.2.1  [- (k2_xcmplx_0(np__1, k4_xcmplx_0(np__1))=k1_xboole_0), k2_xcmplx_0(np__1, k4_xcmplx_0(np__1))=k6_numbers, k6_numbers=k1_xboole_0]   (17)  substitution:[[_G2149, _G2262, _G2205], [k2_xcmplx_0(np__1, k4_xcmplx_0(np__1)), k1_xboole_0, k6_numbers]]
+1.1.1.1.2.1.1  [- (k2_xcmplx_0(np__1, k4_xcmplx_0(np__1))=k6_numbers)]   (2)  
+1.1.1.1.2.1.2  [- (k6_numbers=k1_xboole_0)]   (4)  
+1.1.1.1.2.2  [- (k1_xboole_0=k5_complex1), k5_complex1=k1_xboole_0]   (16)  substitution:[[_G1961, _G1916], [k1_xboole_0, k5_complex1]]
+1.1.1.1.2.2.1  [- (k5_complex1=k1_xboole_0)]   (3)  
+1.1.1.1.3  [- (k1_numbers=k1_numbers)]   (15)  substitution:[[_G1817], [k1_numbers]]
+1.1.2  [- (k26_sin_cos(k5_complex1)=np__1), np__1=k26_sin_cos(k5_complex1)]   (16)  substitution:[[_G1961, _G1916], [k26_sin_cos(k5_complex1), np__1]]
+1.1.2.1  [- (np__1=k26_sin_cos(k5_complex1)), np__1=k26_sin_cos(k1_xboole_0), k26_sin_cos(k1_xboole_0)=k26_sin_cos(k5_complex1)]   (17)  substitution:[[_G2149, _G2262, _G2205], [np__1, k26_sin_cos(k5_complex1), k26_sin_cos(k1_xboole_0)]]
+1.1.2.1.1  [- (np__1=k26_sin_cos(k1_xboole_0)), np__1=k26_sin_cos(k6_numbers), k26_sin_cos(k6_numbers)=k26_sin_cos(k1_xboole_0)]   (17)  substitution:[[_G2149, _G2262, _G2205], [np__1, k26_sin_cos(k1_xboole_0), k26_sin_cos(k6_numbers)]]
+1.1.2.1.1.1  [- (np__1=k26_sin_cos(k6_numbers)), k26_sin_cos(k6_numbers)=np__1]   (16)  substitution:[[_G1961, _G1916], [np__1, k26_sin_cos(k6_numbers)]]
+1.1.2.1.1.1.1  [- (k26_sin_cos(k6_numbers)=np__1)]   (9)  
+1.1.2.1.1.2  [- (k26_sin_cos(k6_numbers)=k26_sin_cos(k1_xboole_0)), k6_numbers=k1_xboole_0]   (13)  substitution:[[_G5132, _G5181], [k6_numbers, k1_xboole_0]]
+1.1.2.1.1.2.1  [- (k6_numbers=k1_xboole_0)]   (4)  
+1.1.2.1.2  [- (k26_sin_cos(k1_xboole_0)=k26_sin_cos(k5_complex1)), k1_xboole_0=k5_complex1]   (13)  substitution:[[_G5132, _G5181], [k1_xboole_0, k5_complex1]]
+1.1.2.1.2.1  [- (k1_xboole_0=k5_complex1), k5_complex1=k1_xboole_0]   (16)  substitution:[[_G1961, _G1916], [k1_xboole_0, k5_complex1]]
+1.1.2.1.2.1.1  [- (k5_complex1=k1_xboole_0)]   (3)  
+------------------------------------------------------
+End of proof for t20_sin_cos3

@@ -1,0 +1,33 @@
+
+l7_grfunc_1 is a Theorem
+Start of proof for l7_grfunc_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-r2_hidden(k4_tarski(2^[], 3^[]), k1_tarski(k4_tarski(4^[], 5^[])))]
+ (2)  [2^[]=4^[], 3^[]=5^[]]
+ (3)  [k4_tarski(_G4484, _G4551)=k4_tarski(_G4619, _G4688), - (_G4484=_G4619)]
+ (4)  [k4_tarski(_G4484, _G4551)=k4_tarski(_G4619, _G4688), - (_G4551=_G4688)]
+ (5)  [_G4131=k1_tarski(_G4073), r2_hidden(_G4261, _G4131), - (_G4261=_G4073)]
+ (6)  [_G4131=k1_tarski(_G4073), -r2_hidden(_G4261, _G4131), _G4261=_G4073]
+ (7)  [- (_G4131=k1_tarski(_G4073)), r2_hidden(1^[_G4131, _G4073], _G4131), 1^[_G4131, _G4073]=_G4073]
+ (8)  [- (_G4131=k1_tarski(_G4073)), -r2_hidden(1^[_G4131, _G4073], _G4131), - (1^[_G4131, _G4073]=_G4073)]
+ (9)  [_G3165=_G3214, - (k1_tarski(_G3165)=k1_tarski(_G3214))]
+ (10)  [- (k4_tarski(_G3434, _G3569)=k4_tarski(_G3501, _G3638)), _G3434=_G3501, _G3569=_G3638]
+ (11)  [-r2_hidden(_G2614, _G2751), r2_hidden(_G2547, _G2682), _G2547=_G2614, _G2682=_G2751]
+ (12)  [- (_G1774=_G1774)]
+ (13)  [_G1873=_G1918, - (_G1918=_G1873)]
+ (14)  [- (_G2106=_G2219), _G2106=_G2162, _G2162=_G2219]
+
+Connection Proof:
+-----------------
+1  [2^[]=4^[], 3^[]=5^[]]   (2)  
+1.1  [- (2^[]=4^[]), k4_tarski(2^[], 3^[])=k4_tarski(4^[], 5^[])]   (3)  substitution:[[_G4484, _G4619, _G4551, _G4688], [2^[], 4^[], 3^[], 5^[]]]
+1.1.1  [- (k4_tarski(2^[], 3^[])=k4_tarski(4^[], 5^[])), k1_tarski(k4_tarski(4^[], 5^[]))=k1_tarski(k4_tarski(4^[], 5^[])), r2_hidden(k4_tarski(2^[], 3^[]), k1_tarski(k4_tarski(4^[], 5^[])))]   (5)  substitution:[[_G4261, _G4073, _G4131], [k4_tarski(2^[], 3^[]), k4_tarski(4^[], 5^[]), k1_tarski(k4_tarski(4^[], 5^[]))]]
+1.1.1.1  [- (k1_tarski(k4_tarski(4^[], 5^[]))=k1_tarski(k4_tarski(4^[], 5^[])))]   (12)  substitution:[[_G1774], [k1_tarski(k4_tarski(4^[], 5^[]))]]
+1.1.1.2  [-r2_hidden(k4_tarski(2^[], 3^[]), k1_tarski(k4_tarski(4^[], 5^[])))]   (1)  
+1.2  [- (3^[]=5^[]), k4_tarski(2^[], 3^[])=k4_tarski(4^[], 5^[])]   (4)  substitution:[[_G4551, _G4688, _G4484, _G4619], [3^[], 5^[], 2^[], 4^[]]]
+1.2.1  [- (k4_tarski(2^[], 3^[])=k4_tarski(4^[], 5^[])), k1_tarski(k4_tarski(4^[], 5^[]))=k1_tarski(k4_tarski(4^[], 5^[])), r2_hidden(k4_tarski(2^[], 3^[]), k1_tarski(k4_tarski(4^[], 5^[])))]   (5)  substitution:[[_G4261, _G4073, _G4131], [k4_tarski(2^[], 3^[]), k4_tarski(4^[], 5^[]), k1_tarski(k4_tarski(4^[], 5^[]))]]
+1.2.1.1  [- (k1_tarski(k4_tarski(4^[], 5^[]))=k1_tarski(k4_tarski(4^[], 5^[])))]   (12)  substitution:[[_G1774], [k1_tarski(k4_tarski(4^[], 5^[]))]]
+1.2.1.2  [-r2_hidden(k4_tarski(2^[], 3^[]), k1_tarski(k4_tarski(4^[], 5^[])))]   (1)  
+------------------------------------------------------
+End of proof for l7_grfunc_1

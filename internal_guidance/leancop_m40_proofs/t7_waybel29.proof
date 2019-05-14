@@ -1,0 +1,78 @@
+
+t7_waybel29 is a Theorem
+Start of proof for t7_waybel29
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v2_pre_topc(1^[])]
+ (2)  [-l1_pre_topc(1^[])]
+ (3)  [-v2_pre_topc(2^[])]
+ (4)  [-l1_pre_topc(2^[])]
+ (5)  [-v2_pre_topc(3^[])]
+ (6)  [-l1_pre_topc(3^[])]
+ (7)  [-v2_pre_topc(4^[])]
+ (8)  [-l1_pre_topc(4^[])]
+ (9)  [- (g1_pre_topc(u1_struct_0(1^[]), u1_pre_topc(1^[]))=g1_pre_topc(u1_struct_0(3^[]), u1_pre_topc(3^[])))]
+ (10)  [- (g1_pre_topc(u1_struct_0(2^[]), u1_pre_topc(2^[]))=g1_pre_topc(u1_struct_0(4^[]), u1_pre_topc(4^[])))]
+ (11)  [k2_borsuk_1(1^[], 2^[])=k2_borsuk_1(3^[], 4^[])]
+ (12)  [l1_pre_topc(_G7017), v1_pre_topc(_G7017), - (_G7017=g1_pre_topc(u1_struct_0(_G7017), u1_pre_topc(_G7017)))]
+ (13)  [-v1_pre_topc(k2_borsuk_1(_G7306, _G7383)), l1_pre_topc(_G7306), v2_pre_topc(_G7306), v2_pre_topc(_G7383), l1_pre_topc(_G7383)]
+ (14)  [-v2_pre_topc(k2_borsuk_1(_G7306, _G7383)), l1_pre_topc(_G7306), v2_pre_topc(_G7306), v2_pre_topc(_G7383), l1_pre_topc(_G7383)]
+ (15)  [-l1_pre_topc(k2_borsuk_1(_G7306, _G7383)), l1_pre_topc(_G7306), v2_pre_topc(_G7306), v2_pre_topc(_G7383), l1_pre_topc(_G7383)]
+ (16)  [l1_pre_topc(_G7935), v2_pre_topc(_G7935), - (g1_pre_topc(u1_struct_0(k2_borsuk_1(_G7935, _G8109)), u1_pre_topc(k2_borsuk_1(_G7935, _G8109)))=k2_borsuk_1(g1_pre_topc(u1_struct_0(_G7935), u1_pre_topc(_G7935)), g1_pre_topc(u1_struct_0(_G8109), u1_pre_topc(_G8109)))), v2_pre_topc(_G8109), l1_pre_topc(_G8109)]
+ (17)  [- (g1_pre_topc(_G5192, _G5327)=g1_pre_topc(_G5259, _G5396)), _G5192=_G5259, _G5327=_G5396]
+ (18)  [_G5789=_G5838, - (u1_struct_0(_G5789)=u1_struct_0(_G5838))]
+ (19)  [_G6067=_G6116, - (u1_pre_topc(_G6067)=u1_pre_topc(_G6116))]
+ (20)  [- (k2_borsuk_1(_G6336, _G6471)=k2_borsuk_1(_G6403, _G6540)), _G6336=_G6403, _G6471=_G6540]
+ (21)  [- (_G3522=_G3522)]
+ (22)  [_G3621=_G3666, - (_G3666=_G3621)]
+ (23)  [- (_G3854=_G3967), _G3854=_G3910, _G3910=_G3967]
+ (24)  [-v1_pre_topc(_G4353), _G4304=_G4353, v1_pre_topc(_G4304)]
+ (25)  [-v2_pre_topc(_G4631), _G4582=_G4631, v2_pre_topc(_G4582)]
+ (26)  [-l1_pre_topc(_G4900), _G4851=_G4900, l1_pre_topc(_G4851)]
+
+Connection Proof:
+-----------------
+1  [k2_borsuk_1(1^[], 2^[])=k2_borsuk_1(3^[], 4^[])]   (11)  
+1.1  [- (k2_borsuk_1(1^[], 2^[])=k2_borsuk_1(3^[], 4^[])), k2_borsuk_1(1^[], 2^[])=g1_pre_topc(u1_struct_0(k2_borsuk_1(1^[], 2^[])), u1_pre_topc(k2_borsuk_1(1^[], 2^[]))), g1_pre_topc(u1_struct_0(k2_borsuk_1(1^[], 2^[])), u1_pre_topc(k2_borsuk_1(1^[], 2^[])))=k2_borsuk_1(3^[], 4^[])]   (23)  substitution:[[_G3854, _G3967, _G3910], [k2_borsuk_1(1^[], 2^[]), k2_borsuk_1(3^[], 4^[]), g1_pre_topc(u1_struct_0(k2_borsuk_1(1^[], 2^[])), u1_pre_topc(k2_borsuk_1(1^[], 2^[])))]]
+1.1.1  [- (k2_borsuk_1(1^[], 2^[])=g1_pre_topc(u1_struct_0(k2_borsuk_1(1^[], 2^[])), u1_pre_topc(k2_borsuk_1(1^[], 2^[])))), l1_pre_topc(k2_borsuk_1(1^[], 2^[])), v1_pre_topc(k2_borsuk_1(1^[], 2^[]))]   (12)  substitution:[[_G7017], [k2_borsuk_1(1^[], 2^[])]]
+1.1.1.1  [-l1_pre_topc(k2_borsuk_1(1^[], 2^[])), l1_pre_topc(1^[]), v2_pre_topc(1^[]), v2_pre_topc(2^[]), l1_pre_topc(2^[])]   (15)  substitution:[[_G7306, _G7383], [1^[], 2^[]]]
+1.1.1.1.1  [-l1_pre_topc(1^[])]   (2)  
+1.1.1.1.2  [-v2_pre_topc(1^[])]   (1)  
+1.1.1.1.3  [-v2_pre_topc(2^[])]   (3)  
+1.1.1.1.4  [-l1_pre_topc(2^[])]   (4)  
+1.1.1.2  [-v1_pre_topc(k2_borsuk_1(1^[], 2^[])), l1_pre_topc(1^[]), v2_pre_topc(1^[]), v2_pre_topc(2^[]), l1_pre_topc(2^[])]   (13)  substitution:[[_G7306, _G7383], [1^[], 2^[]]]
+1.1.1.2.1  [-l1_pre_topc(1^[])]   (2)  
+1.1.1.2.2  [-v2_pre_topc(1^[])]   (1)  
+1.1.1.2.3  [-v2_pre_topc(2^[])]   (3)  
+1.1.1.2.4  [-l1_pre_topc(2^[])]   (4)  
+1.1.2  [- (g1_pre_topc(u1_struct_0(k2_borsuk_1(1^[], 2^[])), u1_pre_topc(k2_borsuk_1(1^[], 2^[])))=k2_borsuk_1(3^[], 4^[])), g1_pre_topc(u1_struct_0(k2_borsuk_1(1^[], 2^[])), u1_pre_topc(k2_borsuk_1(1^[], 2^[])))=g1_pre_topc(u1_struct_0(k2_borsuk_1(3^[], 4^[])), u1_pre_topc(k2_borsuk_1(3^[], 4^[]))), g1_pre_topc(u1_struct_0(k2_borsuk_1(3^[], 4^[])), u1_pre_topc(k2_borsuk_1(3^[], 4^[])))=k2_borsuk_1(3^[], 4^[])]   (23)  substitution:[[_G3854, _G3967, _G3910], [g1_pre_topc(u1_struct_0(k2_borsuk_1(1^[], 2^[])), u1_pre_topc(k2_borsuk_1(1^[], 2^[]))), k2_borsuk_1(3^[], 4^[]), g1_pre_topc(u1_struct_0(k2_borsuk_1(3^[], 4^[])), u1_pre_topc(k2_borsuk_1(3^[], 4^[])))]]
+1.1.2.1  [- (g1_pre_topc(u1_struct_0(k2_borsuk_1(1^[], 2^[])), u1_pre_topc(k2_borsuk_1(1^[], 2^[])))=g1_pre_topc(u1_struct_0(k2_borsuk_1(3^[], 4^[])), u1_pre_topc(k2_borsuk_1(3^[], 4^[])))), g1_pre_topc(u1_struct_0(k2_borsuk_1(1^[], 2^[])), u1_pre_topc(k2_borsuk_1(1^[], 2^[])))=k2_borsuk_1(g1_pre_topc(u1_struct_0(3^[]), u1_pre_topc(3^[])), g1_pre_topc(u1_struct_0(4^[]), u1_pre_topc(4^[]))), k2_borsuk_1(g1_pre_topc(u1_struct_0(3^[]), u1_pre_topc(3^[])), g1_pre_topc(u1_struct_0(4^[]), u1_pre_topc(4^[])))=g1_pre_topc(u1_struct_0(k2_borsuk_1(3^[], 4^[])), u1_pre_topc(k2_borsuk_1(3^[], 4^[])))]   (23)  substitution:[[_G3854, _G3967, _G3910], [g1_pre_topc(u1_struct_0(k2_borsuk_1(1^[], 2^[])), u1_pre_topc(k2_borsuk_1(1^[], 2^[]))), g1_pre_topc(u1_struct_0(k2_borsuk_1(3^[], 4^[])), u1_pre_topc(k2_borsuk_1(3^[], 4^[]))), k2_borsuk_1(g1_pre_topc(u1_struct_0(3^[]), u1_pre_topc(3^[])), g1_pre_topc(u1_struct_0(4^[]), u1_pre_topc(4^[])))]]
+1.1.2.1.1  [- (g1_pre_topc(u1_struct_0(k2_borsuk_1(1^[], 2^[])), u1_pre_topc(k2_borsuk_1(1^[], 2^[])))=k2_borsuk_1(g1_pre_topc(u1_struct_0(3^[]), u1_pre_topc(3^[])), g1_pre_topc(u1_struct_0(4^[]), u1_pre_topc(4^[])))), g1_pre_topc(u1_struct_0(k2_borsuk_1(1^[], 2^[])), u1_pre_topc(k2_borsuk_1(1^[], 2^[])))=k2_borsuk_1(g1_pre_topc(u1_struct_0(1^[]), u1_pre_topc(1^[])), g1_pre_topc(u1_struct_0(2^[]), u1_pre_topc(2^[]))), k2_borsuk_1(g1_pre_topc(u1_struct_0(1^[]), u1_pre_topc(1^[])), g1_pre_topc(u1_struct_0(2^[]), u1_pre_topc(2^[])))=k2_borsuk_1(g1_pre_topc(u1_struct_0(3^[]), u1_pre_topc(3^[])), g1_pre_topc(u1_struct_0(4^[]), u1_pre_topc(4^[])))]   (23)  substitution:[[_G3854, _G3967, _G3910], [g1_pre_topc(u1_struct_0(k2_borsuk_1(1^[], 2^[])), u1_pre_topc(k2_borsuk_1(1^[], 2^[]))), k2_borsuk_1(g1_pre_topc(u1_struct_0(3^[]), u1_pre_topc(3^[])), g1_pre_topc(u1_struct_0(4^[]), u1_pre_topc(4^[]))), k2_borsuk_1(g1_pre_topc(u1_struct_0(1^[]), u1_pre_topc(1^[])), g1_pre_topc(u1_struct_0(2^[]), u1_pre_topc(2^[])))]]
+1.1.2.1.1.1  [- (g1_pre_topc(u1_struct_0(k2_borsuk_1(1^[], 2^[])), u1_pre_topc(k2_borsuk_1(1^[], 2^[])))=k2_borsuk_1(g1_pre_topc(u1_struct_0(1^[]), u1_pre_topc(1^[])), g1_pre_topc(u1_struct_0(2^[]), u1_pre_topc(2^[])))), l1_pre_topc(1^[]), v2_pre_topc(1^[]), v2_pre_topc(2^[]), l1_pre_topc(2^[])]   (16)  substitution:[[_G7935, _G8109], [1^[], 2^[]]]
+1.1.2.1.1.1.1  [-l1_pre_topc(1^[])]   (2)  
+1.1.2.1.1.1.2  [-v2_pre_topc(1^[])]   (1)  
+1.1.2.1.1.1.3  [-v2_pre_topc(2^[])]   (3)  
+1.1.2.1.1.1.4  [-l1_pre_topc(2^[])]   (4)  
+1.1.2.1.1.2  [- (k2_borsuk_1(g1_pre_topc(u1_struct_0(1^[]), u1_pre_topc(1^[])), g1_pre_topc(u1_struct_0(2^[]), u1_pre_topc(2^[])))=k2_borsuk_1(g1_pre_topc(u1_struct_0(3^[]), u1_pre_topc(3^[])), g1_pre_topc(u1_struct_0(4^[]), u1_pre_topc(4^[])))), g1_pre_topc(u1_struct_0(1^[]), u1_pre_topc(1^[]))=g1_pre_topc(u1_struct_0(3^[]), u1_pre_topc(3^[])), g1_pre_topc(u1_struct_0(2^[]), u1_pre_topc(2^[]))=g1_pre_topc(u1_struct_0(4^[]), u1_pre_topc(4^[]))]   (20)  substitution:[[_G6336, _G6471, _G6403, _G6540], [g1_pre_topc(u1_struct_0(1^[]), u1_pre_topc(1^[])), g1_pre_topc(u1_struct_0(2^[]), u1_pre_topc(2^[])), g1_pre_topc(u1_struct_0(3^[]), u1_pre_topc(3^[])), g1_pre_topc(u1_struct_0(4^[]), u1_pre_topc(4^[]))]]
+1.1.2.1.1.2.1  [- (g1_pre_topc(u1_struct_0(1^[]), u1_pre_topc(1^[]))=g1_pre_topc(u1_struct_0(3^[]), u1_pre_topc(3^[])))]   (9)  
+1.1.2.1.1.2.2  [- (g1_pre_topc(u1_struct_0(2^[]), u1_pre_topc(2^[]))=g1_pre_topc(u1_struct_0(4^[]), u1_pre_topc(4^[])))]   (10)  
+1.1.2.1.2  [- (k2_borsuk_1(g1_pre_topc(u1_struct_0(3^[]), u1_pre_topc(3^[])), g1_pre_topc(u1_struct_0(4^[]), u1_pre_topc(4^[])))=g1_pre_topc(u1_struct_0(k2_borsuk_1(3^[], 4^[])), u1_pre_topc(k2_borsuk_1(3^[], 4^[])))), g1_pre_topc(u1_struct_0(k2_borsuk_1(3^[], 4^[])), u1_pre_topc(k2_borsuk_1(3^[], 4^[])))=k2_borsuk_1(g1_pre_topc(u1_struct_0(3^[]), u1_pre_topc(3^[])), g1_pre_topc(u1_struct_0(4^[]), u1_pre_topc(4^[])))]   (22)  substitution:[[_G3666, _G3621], [k2_borsuk_1(g1_pre_topc(u1_struct_0(3^[]), u1_pre_topc(3^[])), g1_pre_topc(u1_struct_0(4^[]), u1_pre_topc(4^[]))), g1_pre_topc(u1_struct_0(k2_borsuk_1(3^[], 4^[])), u1_pre_topc(k2_borsuk_1(3^[], 4^[])))]]
+1.1.2.1.2.1  [- (g1_pre_topc(u1_struct_0(k2_borsuk_1(3^[], 4^[])), u1_pre_topc(k2_borsuk_1(3^[], 4^[])))=k2_borsuk_1(g1_pre_topc(u1_struct_0(3^[]), u1_pre_topc(3^[])), g1_pre_topc(u1_struct_0(4^[]), u1_pre_topc(4^[])))), l1_pre_topc(3^[]), v2_pre_topc(3^[]), v2_pre_topc(4^[]), l1_pre_topc(4^[])]   (16)  substitution:[[_G7935, _G8109], [3^[], 4^[]]]
+1.1.2.1.2.1.1  [-l1_pre_topc(3^[])]   (6)  
+1.1.2.1.2.1.2  [-v2_pre_topc(3^[])]   (5)  
+1.1.2.1.2.1.3  [-v2_pre_topc(4^[])]   (7)  
+1.1.2.1.2.1.4  [-l1_pre_topc(4^[])]   (8)  
+1.1.2.2  [- (g1_pre_topc(u1_struct_0(k2_borsuk_1(3^[], 4^[])), u1_pre_topc(k2_borsuk_1(3^[], 4^[])))=k2_borsuk_1(3^[], 4^[])), k2_borsuk_1(3^[], 4^[])=g1_pre_topc(u1_struct_0(k2_borsuk_1(3^[], 4^[])), u1_pre_topc(k2_borsuk_1(3^[], 4^[])))]   (22)  substitution:[[_G3666, _G3621], [g1_pre_topc(u1_struct_0(k2_borsuk_1(3^[], 4^[])), u1_pre_topc(k2_borsuk_1(3^[], 4^[]))), k2_borsuk_1(3^[], 4^[])]]
+1.1.2.2.1  [- (k2_borsuk_1(3^[], 4^[])=g1_pre_topc(u1_struct_0(k2_borsuk_1(3^[], 4^[])), u1_pre_topc(k2_borsuk_1(3^[], 4^[])))), l1_pre_topc(k2_borsuk_1(3^[], 4^[])), v1_pre_topc(k2_borsuk_1(3^[], 4^[]))]   (12)  substitution:[[_G7017], [k2_borsuk_1(3^[], 4^[])]]
+1.1.2.2.1.1  [-l1_pre_topc(k2_borsuk_1(3^[], 4^[])), l1_pre_topc(3^[]), v2_pre_topc(3^[]), v2_pre_topc(4^[]), l1_pre_topc(4^[])]   (15)  substitution:[[_G7306, _G7383], [3^[], 4^[]]]
+1.1.2.2.1.1.1  [-l1_pre_topc(3^[])]   (6)  
+1.1.2.2.1.1.2  [-v2_pre_topc(3^[])]   (5)  
+1.1.2.2.1.1.3  [-v2_pre_topc(4^[])]   (7)  
+1.1.2.2.1.1.4  [-l1_pre_topc(4^[])]   (8)  
+1.1.2.2.1.2  [-v1_pre_topc(k2_borsuk_1(3^[], 4^[])), l1_pre_topc(3^[]), v2_pre_topc(3^[]), v2_pre_topc(4^[]), l1_pre_topc(4^[])]   (13)  substitution:[[_G7306, _G7383], [3^[], 4^[]]]
+1.1.2.2.1.2.1  [-l1_pre_topc(3^[])]   (6)  
+1.1.2.2.1.2.2  [-v2_pre_topc(3^[])]   (5)  
+1.1.2.2.1.2.3  [-v2_pre_topc(4^[])]   (7)  
+1.1.2.2.1.2.4  [-l1_pre_topc(4^[])]   (8)  
+------------------------------------------------------
+End of proof for t7_waybel29

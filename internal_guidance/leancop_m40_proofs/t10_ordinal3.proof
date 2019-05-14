@@ -1,0 +1,31 @@
+
+t10_ordinal3 is a Theorem
+Start of proof for t10_ordinal3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v3_ordinal1(1^[])]
+ (2)  [k2_ordinal2(k1_tarski(1^[]))=1^[]]
+ (3)  [- (k2_ordinal2(_G3751)=k1_setfam_1(k2_ordinal1(_G3751)))]
+ (4)  [- (k1_setfam_1(k1_tarski(_G3898))=_G3898)]
+ (5)  [v3_ordinal1(_G4020), - (k2_ordinal1(k1_tarski(_G4020))=k1_tarski(_G4020))]
+ (6)  [_G2564=_G2613, - (k1_setfam_1(_G2564)=k1_setfam_1(_G2613))]
+ (7)  [_G2842=_G2891, - (k2_ordinal1(_G2842)=k2_ordinal1(_G2891))]
+ (8)  [_G3120=_G3169, - (k2_ordinal2(_G3120)=k2_ordinal2(_G3169))]
+ (9)  [_G3389=_G3438, - (k1_tarski(_G3389)=k1_tarski(_G3438))]
+ (10)  [-v3_ordinal1(_G2314), _G2265=_G2314, v3_ordinal1(_G2265)]
+ (11)  [- (_G1492=_G1492)]
+ (12)  [_G1591=_G1636, - (_G1636=_G1591)]
+ (13)  [- (_G1824=_G1937), _G1824=_G1880, _G1880=_G1937]
+
+Connection Proof:
+-----------------
+1  [k2_ordinal2(k1_tarski(1^[]))=1^[]]   (2)  
+1.1  [- (k2_ordinal2(k1_tarski(1^[]))=1^[]), k2_ordinal2(k1_tarski(1^[]))=k1_setfam_1(k2_ordinal1(k1_tarski(1^[]))), k1_setfam_1(k2_ordinal1(k1_tarski(1^[])))=1^[]]   (13)  substitution:[[_G1824, _G1937, _G1880], [k2_ordinal2(k1_tarski(1^[])), 1^[], k1_setfam_1(k2_ordinal1(k1_tarski(1^[])))]]
+1.1.1  [- (k2_ordinal2(k1_tarski(1^[]))=k1_setfam_1(k2_ordinal1(k1_tarski(1^[]))))]   (3)  substitution:[[_G3751], [k1_tarski(1^[])]]
+1.1.2  [- (k1_setfam_1(k2_ordinal1(k1_tarski(1^[])))=1^[]), k1_setfam_1(k2_ordinal1(k1_tarski(1^[])))=k1_setfam_1(k1_tarski(1^[])), k1_setfam_1(k1_tarski(1^[]))=1^[]]   (13)  substitution:[[_G1824, _G1937, _G1880], [k1_setfam_1(k2_ordinal1(k1_tarski(1^[]))), 1^[], k1_setfam_1(k1_tarski(1^[]))]]
+1.1.2.1  [- (k1_setfam_1(k2_ordinal1(k1_tarski(1^[])))=k1_setfam_1(k1_tarski(1^[]))), k2_ordinal1(k1_tarski(1^[]))=k1_tarski(1^[])]   (6)  substitution:[[_G2564, _G2613], [k2_ordinal1(k1_tarski(1^[])), k1_tarski(1^[])]]
+1.1.2.1.1  [- (k2_ordinal1(k1_tarski(1^[]))=k1_tarski(1^[])), v3_ordinal1(1^[])]   (5)  substitution:[[_G4020], [1^[]]]
+1.1.2.1.1.1  [-v3_ordinal1(1^[])]   (1)  
+1.1.2.2  [- (k1_setfam_1(k1_tarski(1^[]))=1^[])]   (4)  substitution:[[_G3898], [1^[]]]
+------------------------------------------------------
+End of proof for t10_ordinal3

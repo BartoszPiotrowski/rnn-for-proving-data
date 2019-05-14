@@ -1,0 +1,31 @@
+
+t24_orders_1 is a Theorem
+Start of proof for t24_orders_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_2(2^[])]
+ (2)  [-v4_relat_2(2^[])]
+ (3)  [-v8_relat_2(2^[])]
+ (4)  [-v1_partfun1(2^[], 1^[])]
+ (5)  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]
+ (6)  [-v6_relat_2(2^[])]
+ (7)  [v3_orders_1(2^[])]
+ (8)  [m1_subset_1(_G996, k1_zfmisc_1(k2_zfmisc_1(_G887, _G941))), -v1_relat_1(_G996)]
+ (9)  [v1_relat_1(_G1230), v3_orders_1(_G1230), -v1_relat_2(_G1230)]
+ (10)  [v1_relat_1(_G1230), v3_orders_1(_G1230), -v8_relat_2(_G1230)]
+ (11)  [v1_relat_1(_G1230), v3_orders_1(_G1230), -v4_relat_2(_G1230)]
+ (12)  [v1_relat_1(_G1230), v3_orders_1(_G1230), -v6_relat_2(_G1230)]
+ (13)  [v1_relat_1(_G1230), -v3_orders_1(_G1230), v1_relat_2(_G1230), v8_relat_2(_G1230), v4_relat_2(_G1230), v6_relat_2(_G1230)]
+
+Connection Proof:
+-----------------
+1  [v3_orders_1(2^[])]   (7)  
+1.1  [-v3_orders_1(2^[]), v1_relat_1(2^[]), v1_relat_2(2^[]), v8_relat_2(2^[]), v4_relat_2(2^[]), v6_relat_2(2^[])]   (13)  substitution:[[_G1230], [2^[]]]
+1.1.1  [-v1_relat_1(2^[]), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]   (8)  substitution:[[_G996, _G887, _G941], [2^[], 1^[], 1^[]]]
+1.1.1.1  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]   (5)  
+1.1.2  [-v1_relat_2(2^[])]   (1)  
+1.1.3  [-v8_relat_2(2^[])]   (3)  
+1.1.4  [-v4_relat_2(2^[])]   (2)  
+1.1.5  [-v6_relat_2(2^[])]   (6)  
+------------------------------------------------------
+End of proof for t24_orders_1

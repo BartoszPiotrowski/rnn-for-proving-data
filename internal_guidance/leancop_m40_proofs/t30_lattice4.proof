@@ -1,0 +1,53 @@
+
+t30_lattice4 is a Theorem
+Start of proof for t30_lattice4
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(1^[])]
+ (2)  [-v10_lattices(1^[])]
+ (3)  [-v17_lattices(1^[])]
+ (4)  [-l3_lattices(1^[])]
+ (5)  [k7_lattices(1^[], k5_lattices(1^[]))=k6_lattices(1^[])]
+ (6)  [-m1_subset_1(k6_lattices(_G7693), u1_struct_0(_G7693)), -v2_struct_0(_G7693), l2_lattices(_G7693)]
+ (7)  [l3_lattices(_G7956), -l1_lattices(_G7956)]
+ (8)  [l3_lattices(_G7956), -l2_lattices(_G7956)]
+ (9)  [- (k7_lattices(_G8756, k6_lattices(_G8756))=k5_lattices(_G8756)), -v2_struct_0(_G8756), v10_lattices(_G8756), v17_lattices(_G8756), l3_lattices(_G8756)]
+ (10)  [- (k7_lattices(_G8145, k7_lattices(_G8145, _G8220))=_G8220), m1_subset_1(_G8220, u1_struct_0(_G8145)), -v2_struct_0(_G8145), v10_lattices(_G8145), v17_lattices(_G8145), l3_lattices(_G8145)]
+ (11)  [_G6187=_G6236, - (u1_struct_0(_G6187)=u1_struct_0(_G6236))]
+ (12)  [- (k7_lattices(_G6465, _G6600)=k7_lattices(_G6532, _G6669)), _G6465=_G6532, _G6600=_G6669]
+ (13)  [_G7062=_G7111, - (k5_lattices(_G7062)=k5_lattices(_G7111))]
+ (14)  [_G7331=_G7380, - (k6_lattices(_G7331)=k6_lattices(_G7380))]
+ (15)  [- (_G3002=_G3002)]
+ (16)  [_G3101=_G3146, - (_G3146=_G3101)]
+ (17)  [- (_G3334=_G3447), _G3334=_G3390, _G3390=_G3447]
+ (18)  [-l1_lattices(_G3833), _G3784=_G3833, l1_lattices(_G3784)]
+ (19)  [-l2_lattices(_G4111), _G4062=_G4111, l2_lattices(_G4062)]
+ (20)  [-m1_subset_1(_G4407, _G4544), m1_subset_1(_G4340, _G4475), _G4340=_G4407, _G4475=_G4544]
+ (21)  [-v2_struct_0(_G4986), _G4937=_G4986, v2_struct_0(_G4937)]
+ (22)  [-v10_lattices(_G5264), _G5215=_G5264, v10_lattices(_G5215)]
+ (23)  [-v17_lattices(_G5542), _G5493=_G5542, v17_lattices(_G5493)]
+ (24)  [-l3_lattices(_G5811), _G5762=_G5811, l3_lattices(_G5762)]
+
+Connection Proof:
+-----------------
+1  [v2_struct_0(1^[])]   (1)  
+1.1  [-v2_struct_0(1^[]), - (k7_lattices(1^[], k7_lattices(1^[], k6_lattices(1^[])))=k6_lattices(1^[])), m1_subset_1(k6_lattices(1^[]), u1_struct_0(1^[])), v10_lattices(1^[]), v17_lattices(1^[]), l3_lattices(1^[])]   (10)  substitution:[[_G8145, _G8220], [1^[], k6_lattices(1^[])]]
+1.1.1  [k7_lattices(1^[], k7_lattices(1^[], k6_lattices(1^[])))=k6_lattices(1^[]), - (k7_lattices(1^[], k5_lattices(1^[]))=k6_lattices(1^[])), k7_lattices(1^[], k5_lattices(1^[]))=k7_lattices(1^[], k7_lattices(1^[], k6_lattices(1^[])))]   (17)  substitution:[[_G3390, _G3447, _G3334], [k7_lattices(1^[], k7_lattices(1^[], k6_lattices(1^[]))), k6_lattices(1^[]), k7_lattices(1^[], k5_lattices(1^[]))]]
+1.1.1.1  [k7_lattices(1^[], k5_lattices(1^[]))=k6_lattices(1^[])]   (5)  
+1.1.1.2  [- (k7_lattices(1^[], k5_lattices(1^[]))=k7_lattices(1^[], k7_lattices(1^[], k6_lattices(1^[])))), 1^[]=1^[], k5_lattices(1^[])=k7_lattices(1^[], k6_lattices(1^[]))]   (12)  substitution:[[_G6465, _G6600, _G6532, _G6669], [1^[], k5_lattices(1^[]), 1^[], k7_lattices(1^[], k6_lattices(1^[]))]]
+1.1.1.2.1  [- (1^[]=1^[])]   (15)  substitution:[[_G3002], [1^[]]]
+1.1.1.2.2  [- (k5_lattices(1^[])=k7_lattices(1^[], k6_lattices(1^[]))), k7_lattices(1^[], k6_lattices(1^[]))=k5_lattices(1^[])]   (16)  substitution:[[_G3146, _G3101], [k5_lattices(1^[]), k7_lattices(1^[], k6_lattices(1^[]))]]
+1.1.1.2.2.1  [- (k7_lattices(1^[], k6_lattices(1^[]))=k5_lattices(1^[])), -v2_struct_0(1^[]), v10_lattices(1^[]), v17_lattices(1^[]), l3_lattices(1^[])]   (9)  substitution:[[_G8756], [1^[]]]
+1.1.1.2.2.1.1  [v2_struct_0(1^[])]   (1)  
+1.1.1.2.2.1.2  [-v10_lattices(1^[])]   (2)  
+1.1.1.2.2.1.3  [-v17_lattices(1^[])]   (3)  
+1.1.1.2.2.1.4  [-l3_lattices(1^[])]   (4)  
+1.1.2  [-m1_subset_1(k6_lattices(1^[]), u1_struct_0(1^[])), -v2_struct_0(1^[]), l2_lattices(1^[])]   (6)  substitution:[[_G7693], [1^[]]]
+1.1.2.1  [v2_struct_0(1^[])]   (1)  
+1.1.2.2  [-l2_lattices(1^[]), l3_lattices(1^[])]   (8)  substitution:[[_G7956], [1^[]]]
+1.1.2.2.1  [-l3_lattices(1^[])]   (4)  
+1.1.3  [-v10_lattices(1^[])]   (2)  
+1.1.4  [-v17_lattices(1^[])]   (3)  
+1.1.5  [-l3_lattices(1^[])]   (4)  
+------------------------------------------------------
+End of proof for t30_lattice4

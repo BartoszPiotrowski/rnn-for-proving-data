@@ -1,0 +1,34 @@
+
+t50_card_1 is a Theorem
+Start of proof for t50_card_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [np__2=k2_tarski(k1_xboole_0, np__1)]
+ (2)  [- (k1_ordinal1(_G4013)=k2_xboole_0(_G4013, k1_tarski(_G4013)))]
+ (3)  [- (k1_ordinal1(np__1)=np__2)]
+ (4)  [- (np__1=k1_tarski(k1_xboole_0))]
+ (5)  [- (k2_tarski(_G4319, _G4368)=k2_xboole_0(k1_tarski(_G4319), k1_tarski(_G4368)))]
+ (6)  [- (_G1406=_G1406)]
+ (7)  [_G1505=_G1550, - (_G1550=_G1505)]
+ (8)  [- (_G1738=_G1851), _G1738=_G1794, _G1794=_G1851]
+ (9)  [_G2188=_G2237, - (k1_ordinal1(_G2188)=k1_ordinal1(_G2237))]
+ (10)  [- (k2_xboole_0(_G2466, _G2601)=k2_xboole_0(_G2533, _G2670)), _G2466=_G2533, _G2601=_G2670]
+ (11)  [_G3063=_G3112, - (k1_tarski(_G3063)=k1_tarski(_G3112))]
+ (12)  [- (k2_tarski(_G3332, _G3467)=k2_tarski(_G3399, _G3536)), _G3332=_G3399, _G3467=_G3536]
+
+Connection Proof:
+-----------------
+1  [np__2=k2_tarski(k1_xboole_0, np__1)]   (1)  
+1.1  [- (np__2=k2_tarski(k1_xboole_0, np__1)), np__2=k2_xboole_0(np__1, k1_tarski(np__1)), k2_xboole_0(np__1, k1_tarski(np__1))=k2_tarski(k1_xboole_0, np__1)]   (8)  substitution:[[_G1738, _G1851, _G1794], [np__2, k2_tarski(k1_xboole_0, np__1), k2_xboole_0(np__1, k1_tarski(np__1))]]
+1.1.1  [- (np__2=k2_xboole_0(np__1, k1_tarski(np__1))), np__2=k1_ordinal1(np__1), k1_ordinal1(np__1)=k2_xboole_0(np__1, k1_tarski(np__1))]   (8)  substitution:[[_G1738, _G1851, _G1794], [np__2, k2_xboole_0(np__1, k1_tarski(np__1)), k1_ordinal1(np__1)]]
+1.1.1.1  [- (np__2=k1_ordinal1(np__1)), k1_ordinal1(np__1)=np__2]   (7)  substitution:[[_G1550, _G1505], [np__2, k1_ordinal1(np__1)]]
+1.1.1.1.1  [- (k1_ordinal1(np__1)=np__2)]   (3)  
+1.1.1.2  [- (k1_ordinal1(np__1)=k2_xboole_0(np__1, k1_tarski(np__1)))]   (2)  substitution:[[_G4013], [np__1]]
+1.1.2  [- (k2_xboole_0(np__1, k1_tarski(np__1))=k2_tarski(k1_xboole_0, np__1)), k2_xboole_0(np__1, k1_tarski(np__1))=k2_xboole_0(k1_tarski(k1_xboole_0), k1_tarski(np__1)), k2_xboole_0(k1_tarski(k1_xboole_0), k1_tarski(np__1))=k2_tarski(k1_xboole_0, np__1)]   (8)  substitution:[[_G1738, _G1851, _G1794], [k2_xboole_0(np__1, k1_tarski(np__1)), k2_tarski(k1_xboole_0, np__1), k2_xboole_0(k1_tarski(k1_xboole_0), k1_tarski(np__1))]]
+1.1.2.1  [- (k2_xboole_0(np__1, k1_tarski(np__1))=k2_xboole_0(k1_tarski(k1_xboole_0), k1_tarski(np__1))), np__1=k1_tarski(k1_xboole_0), k1_tarski(np__1)=k1_tarski(np__1)]   (10)  substitution:[[_G2466, _G2601, _G2533, _G2670], [np__1, k1_tarski(np__1), k1_tarski(k1_xboole_0), k1_tarski(np__1)]]
+1.1.2.1.1  [- (np__1=k1_tarski(k1_xboole_0))]   (4)  
+1.1.2.1.2  [- (k1_tarski(np__1)=k1_tarski(np__1))]   (6)  substitution:[[_G1406], [k1_tarski(np__1)]]
+1.1.2.2  [- (k2_xboole_0(k1_tarski(k1_xboole_0), k1_tarski(np__1))=k2_tarski(k1_xboole_0, np__1)), k2_tarski(k1_xboole_0, np__1)=k2_xboole_0(k1_tarski(k1_xboole_0), k1_tarski(np__1))]   (7)  substitution:[[_G1550, _G1505], [k2_xboole_0(k1_tarski(k1_xboole_0), k1_tarski(np__1)), k2_tarski(k1_xboole_0, np__1)]]
+1.1.2.2.1  [- (k2_tarski(k1_xboole_0, np__1)=k2_xboole_0(k1_tarski(k1_xboole_0), k1_tarski(np__1)))]   (5)  substitution:[[_G4319, _G4368], [k1_xboole_0, np__1]]
+------------------------------------------------------
+End of proof for t50_card_1

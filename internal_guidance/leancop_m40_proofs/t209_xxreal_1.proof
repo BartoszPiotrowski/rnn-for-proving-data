@@ -1,0 +1,44 @@
+
+t209_xxreal_1 is a Theorem
+Start of proof for t209_xxreal_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k1_xxreal_1(k2_xxreal_0, k1_xxreal_0)=k7_numbers]
+ (2)  [-v1_xxreal_0(k1_xxreal_0)]
+ (3)  [-v2_membered(k1_xxreal_1(_G5637, _G5688)), v1_xxreal_0(_G5637), v1_xxreal_0(_G5688)]
+ (4)  [-v1_xxreal_0(k2_xxreal_0)]
+ (5)  [v2_membered(_G5965), -v1_xxreal_0(1^[_G5965]), - (_G5965=k7_numbers)]
+ (6)  [v2_membered(_G5965), r2_hidden(1^[_G5965], _G5965), - (_G5965=k7_numbers)]
+ (7)  [v1_xxreal_0(_G6967), -r1_xxreal_0(_G6967, k1_xxreal_0)]
+ (8)  [v1_xxreal_0(_G7115), -r1_xxreal_0(k2_xxreal_0, _G7115)]
+ (9)  [v1_xxreal_0(_G6322), v1_xxreal_0(_G6428), v1_xxreal_0(_G6530), r2_hidden(_G6322, k1_xxreal_1(_G6428, _G6530)), -r1_xxreal_0(_G6428, _G6322)]
+ (10)  [v1_xxreal_0(_G6322), v1_xxreal_0(_G6428), v1_xxreal_0(_G6530), r2_hidden(_G6322, k1_xxreal_1(_G6428, _G6530)), -r1_xxreal_0(_G6322, _G6530)]
+ (11)  [v1_xxreal_0(_G6322), v1_xxreal_0(_G6428), v1_xxreal_0(_G6530), -r2_hidden(_G6322, k1_xxreal_1(_G6428, _G6530)), r1_xxreal_0(_G6428, _G6322), r1_xxreal_0(_G6322, _G6530)]
+ (12)  [- (k1_xxreal_1(_G4987, _G5122)=k1_xxreal_1(_G5054, _G5191)), _G4987=_G5054, _G5122=_G5191]
+ (13)  [- (_G2389=_G2389)]
+ (14)  [_G2488=_G2533, - (_G2533=_G2488)]
+ (15)  [- (_G2721=_G2834), _G2721=_G2777, _G2777=_G2834]
+ (16)  [-v2_membered(_G3220), _G3171=_G3220, v2_membered(_G3171)]
+ (17)  [-r2_hidden(_G3516, _G3653), r2_hidden(_G3449, _G3584), _G3449=_G3516, _G3584=_G3653]
+ (18)  [-v1_xxreal_0(_G4095), _G4046=_G4095, v1_xxreal_0(_G4046)]
+ (19)  [-r1_xxreal_0(_G4382, _G4519), r1_xxreal_0(_G4315, _G4450), _G4315=_G4382, _G4450=_G4519]
+
+Connection Proof:
+-----------------
+1  [k1_xxreal_1(k2_xxreal_0, k1_xxreal_0)=k7_numbers]   (1)  
+1.1  [- (k1_xxreal_1(k2_xxreal_0, k1_xxreal_0)=k7_numbers), v2_membered(k1_xxreal_1(k2_xxreal_0, k1_xxreal_0)), r2_hidden(1^[k1_xxreal_1(k2_xxreal_0, k1_xxreal_0)], k1_xxreal_1(k2_xxreal_0, k1_xxreal_0))]   (6)  substitution:[[_G5965], [k1_xxreal_1(k2_xxreal_0, k1_xxreal_0)]]
+1.1.1  [-v2_membered(k1_xxreal_1(k2_xxreal_0, k1_xxreal_0)), v1_xxreal_0(k2_xxreal_0), v1_xxreal_0(k1_xxreal_0)]   (3)  substitution:[[_G5637, _G5688], [k2_xxreal_0, k1_xxreal_0]]
+1.1.1.1  [-v1_xxreal_0(k2_xxreal_0)]   (4)  
+1.1.1.2  [-v1_xxreal_0(k1_xxreal_0)]   (2)  
+1.1.2  [-r2_hidden(1^[k1_xxreal_1(k2_xxreal_0, k1_xxreal_0)], k1_xxreal_1(k2_xxreal_0, k1_xxreal_0)), v1_xxreal_0(1^[k1_xxreal_1(k2_xxreal_0, k1_xxreal_0)]), v1_xxreal_0(k2_xxreal_0), v1_xxreal_0(k1_xxreal_0), r1_xxreal_0(k2_xxreal_0, 1^[k1_xxreal_1(k2_xxreal_0, k1_xxreal_0)]), r1_xxreal_0(1^[k1_xxreal_1(k2_xxreal_0, k1_xxreal_0)], k1_xxreal_0)]   (11)  substitution:[[_G6322, _G6428, _G6530], [1^[k1_xxreal_1(k2_xxreal_0, k1_xxreal_0)], k2_xxreal_0, k1_xxreal_0]]
+1.1.2.1  [-v1_xxreal_0(1^[k1_xxreal_1(k2_xxreal_0, k1_xxreal_0)]), v2_membered(k1_xxreal_1(k2_xxreal_0, k1_xxreal_0)), - (k1_xxreal_1(k2_xxreal_0, k1_xxreal_0)=k7_numbers)]   (5)  substitution:[[_G5965], [k1_xxreal_1(k2_xxreal_0, k1_xxreal_0)]]
+1.1.2.1.1  [-v2_membered(k1_xxreal_1(k2_xxreal_0, k1_xxreal_0))]   (lemmata:1.1)  
+1.1.2.1.2  [k1_xxreal_1(k2_xxreal_0, k1_xxreal_0)=k7_numbers]   (1)  
+1.1.2.2  [-v1_xxreal_0(k2_xxreal_0)]   (4)  
+1.1.2.3  [-v1_xxreal_0(k1_xxreal_0)]   (2)  
+1.1.2.4  [-r1_xxreal_0(k2_xxreal_0, 1^[k1_xxreal_1(k2_xxreal_0, k1_xxreal_0)]), v1_xxreal_0(1^[k1_xxreal_1(k2_xxreal_0, k1_xxreal_0)])]   (8)  substitution:[[_G7115], [1^[k1_xxreal_1(k2_xxreal_0, k1_xxreal_0)]]]
+1.1.2.4.1  [-v1_xxreal_0(1^[k1_xxreal_1(k2_xxreal_0, k1_xxreal_0)])]   (lemmata:1.1.2)  
+1.1.2.5  [-r1_xxreal_0(1^[k1_xxreal_1(k2_xxreal_0, k1_xxreal_0)], k1_xxreal_0), v1_xxreal_0(1^[k1_xxreal_1(k2_xxreal_0, k1_xxreal_0)])]   (7)  substitution:[[_G6967], [1^[k1_xxreal_1(k2_xxreal_0, k1_xxreal_0)]]]
+1.1.2.5.1  [-v1_xxreal_0(1^[k1_xxreal_1(k2_xxreal_0, k1_xxreal_0)])]   (lemmata:1.1.2)  
+------------------------------------------------------
+End of proof for t209_xxreal_1

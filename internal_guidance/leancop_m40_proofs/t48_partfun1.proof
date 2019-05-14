@@ -1,0 +1,58 @@
+
+t48_partfun1 is a Theorem
+Start of proof for t48_partfun1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k4_partfun1(k1_xboole_0, 2^[])=k1_tarski(k1_xboole_0)]
+ (2)  [v1_xboole_0(_G7653), -v1_funct_1(_G7653)]
+ (3)  [v1_xboole_0(_G7784), m1_subset_1(_G7935, k1_zfmisc_1(k2_zfmisc_1(_G7784, _G7843))), -v1_xboole_0(_G7935)]
+ (4)  [-v1_xboole_0(k1_xboole_0)]
+ (5)  [-m1_subset_1(k1_xboole_0, k1_zfmisc_1(k2_zfmisc_1(_G8651, _G8695)))]
+ (6)  [-r2_hidden(_G8993, k4_partfun1(_G8866, _G8929)), v1_funct_1(_G8993), m1_subset_1(_G8993, k1_zfmisc_1(k2_zfmisc_1(_G8866, _G8929)))]
+ (7)  [r2_hidden(_G9489, k4_partfun1(_G9362, _G9425)), -v1_funct_1(_G9489)]
+ (8)  [r2_hidden(_G9489, k4_partfun1(_G9362, _G9425)), -m1_subset_1(_G9489, k1_zfmisc_1(k2_zfmisc_1(_G9362, _G9425)))]
+ (9)  [v1_xboole_0(_G9849), - (_G9849=k1_xboole_0)]
+ (10)  [_G8257=k1_tarski(_G8199), r2_hidden(_G8387, _G8257), - (_G8387=_G8199)]
+ (11)  [_G8257=k1_tarski(_G8199), -r2_hidden(_G8387, _G8257), _G8387=_G8199]
+ (12)  [- (_G8257=k1_tarski(_G8199)), r2_hidden(1^[_G8257, _G8199], _G8257), 1^[_G8257, _G8199]=_G8199]
+ (13)  [- (_G8257=k1_tarski(_G8199)), -r2_hidden(1^[_G8257, _G8199], _G8257), - (1^[_G8257, _G8199]=_G8199)]
+ (14)  [_G5828=_G5877, - (k1_zfmisc_1(_G5828)=k1_zfmisc_1(_G5877))]
+ (15)  [- (k2_zfmisc_1(_G6106, _G6241)=k2_zfmisc_1(_G6173, _G6310)), _G6106=_G6173, _G6241=_G6310]
+ (16)  [_G7291=_G7340, - (k1_tarski(_G7291)=k1_tarski(_G7340))]
+ (17)  [- (k4_partfun1(_G6703, _G6838)=k4_partfun1(_G6770, _G6907)), _G6703=_G6770, _G6838=_G6907]
+ (18)  [- (_G3221=_G3221)]
+ (19)  [_G3320=_G3365, - (_G3365=_G3320)]
+ (20)  [- (_G3553=_G3666), _G3553=_G3609, _G3609=_G3666]
+ (21)  [-r2_hidden(_G4070, _G4207), r2_hidden(_G4003, _G4138), _G4003=_G4070, _G4138=_G4207]
+ (22)  [-v1_funct_1(_G4649), _G4600=_G4649, v1_funct_1(_G4600)]
+ (23)  [-v1_xboole_0(_G5515), _G5466=_G5515, v1_xboole_0(_G5466)]
+ (24)  [-m1_subset_1(_G4945, _G5082), m1_subset_1(_G4878, _G5013), _G4878=_G4945, _G5013=_G5082]
+
+Connection Proof:
+-----------------
+1  [k4_partfun1(k1_xboole_0, 2^[])=k1_tarski(k1_xboole_0)]   (1)  
+1.1  [- (k4_partfun1(k1_xboole_0, 2^[])=k1_tarski(k1_xboole_0)), r2_hidden(1^[k4_partfun1(k1_xboole_0, 2^[]), k1_xboole_0], k4_partfun1(k1_xboole_0, 2^[])), 1^[k4_partfun1(k1_xboole_0, 2^[]), k1_xboole_0]=k1_xboole_0]   (12)  substitution:[[_G8257, _G8199], [k4_partfun1(k1_xboole_0, 2^[]), k1_xboole_0]]
+1.1.1  [-r2_hidden(1^[k4_partfun1(k1_xboole_0, 2^[]), k1_xboole_0], k4_partfun1(k1_xboole_0, 2^[])), r2_hidden(k1_xboole_0, k4_partfun1(k1_xboole_0, 2^[])), k1_xboole_0=1^[k4_partfun1(k1_xboole_0, 2^[]), k1_xboole_0], k4_partfun1(k1_xboole_0, 2^[])=k4_partfun1(k1_xboole_0, 2^[])]   (21)  substitution:[[_G4070, _G4207, _G4003, _G4138], [1^[k4_partfun1(k1_xboole_0, 2^[]), k1_xboole_0], k4_partfun1(k1_xboole_0, 2^[]), k1_xboole_0, k4_partfun1(k1_xboole_0, 2^[])]]
+1.1.1.1  [-r2_hidden(k1_xboole_0, k4_partfun1(k1_xboole_0, 2^[])), v1_funct_1(k1_xboole_0), m1_subset_1(k1_xboole_0, k1_zfmisc_1(k2_zfmisc_1(k1_xboole_0, 2^[])))]   (6)  substitution:[[_G8993, _G8866, _G8929], [k1_xboole_0, k1_xboole_0, 2^[]]]
+1.1.1.1.1  [-v1_funct_1(k1_xboole_0), v1_xboole_0(k1_xboole_0)]   (2)  substitution:[[_G7653], [k1_xboole_0]]
+1.1.1.1.1.1  [-v1_xboole_0(k1_xboole_0)]   (4)  
+1.1.1.1.2  [-m1_subset_1(k1_xboole_0, k1_zfmisc_1(k2_zfmisc_1(k1_xboole_0, 2^[])))]   (5)  substitution:[[_G8651, _G8695], [k1_xboole_0, 2^[]]]
+1.1.1.2  [- (k1_xboole_0=1^[k4_partfun1(k1_xboole_0, 2^[]), k1_xboole_0]), 1^[k4_partfun1(k1_xboole_0, 2^[]), k1_xboole_0]=k1_xboole_0]   (19)  substitution:[[_G3365, _G3320], [k1_xboole_0, 1^[k4_partfun1(k1_xboole_0, 2^[]), k1_xboole_0]]]
+1.1.1.2.1  [- (1^[k4_partfun1(k1_xboole_0, 2^[]), k1_xboole_0]=k1_xboole_0), - (k4_partfun1(k1_xboole_0, 2^[])=k1_tarski(k1_xboole_0)), -r2_hidden(1^[k4_partfun1(k1_xboole_0, 2^[]), k1_xboole_0], k4_partfun1(k1_xboole_0, 2^[]))]   (13)  substitution:[[_G8257, _G8199], [k4_partfun1(k1_xboole_0, 2^[]), k1_xboole_0]]
+1.1.1.2.1.1  [k4_partfun1(k1_xboole_0, 2^[])=k1_tarski(k1_xboole_0)]   (1)  
+1.1.1.2.1.2  [r2_hidden(1^[k4_partfun1(k1_xboole_0, 2^[]), k1_xboole_0], k4_partfun1(k1_xboole_0, 2^[]))]   (reduction:1.1)  
+1.1.1.3  [- (k4_partfun1(k1_xboole_0, 2^[])=k4_partfun1(k1_xboole_0, 2^[])), k1_xboole_0=k1_xboole_0, 2^[]=2^[]]   (17)  substitution:[[_G6703, _G6838, _G6770, _G6907], [k1_xboole_0, 2^[], k1_xboole_0, 2^[]]]
+1.1.1.3.1  [- (k1_xboole_0=k1_xboole_0), v1_xboole_0(k1_xboole_0)]   (9)  substitution:[[_G9849], [k1_xboole_0]]
+1.1.1.3.1.1  [-v1_xboole_0(k1_xboole_0)]   (4)  
+1.1.1.3.2  [- (2^[]=2^[])]   (18)  substitution:[[_G3221], [2^[]]]
+1.1.2  [- (1^[k4_partfun1(k1_xboole_0, 2^[]), k1_xboole_0]=k1_xboole_0), v1_xboole_0(1^[k4_partfun1(k1_xboole_0, 2^[]), k1_xboole_0])]   (9)  substitution:[[_G9849], [1^[k4_partfun1(k1_xboole_0, 2^[]), k1_xboole_0]]]
+1.1.2.1  [-v1_xboole_0(1^[k4_partfun1(k1_xboole_0, 2^[]), k1_xboole_0]), v1_xboole_0(k1_xboole_0), m1_subset_1(1^[k4_partfun1(k1_xboole_0, 2^[]), k1_xboole_0], k1_zfmisc_1(k2_zfmisc_1(k1_xboole_0, 2^[])))]   (3)  substitution:[[_G7935, _G7784, _G7843], [1^[k4_partfun1(k1_xboole_0, 2^[]), k1_xboole_0], k1_xboole_0, 2^[]]]
+1.1.2.1.1  [-v1_xboole_0(k1_xboole_0), v1_xboole_0(k1_xboole_0), m1_subset_1(k1_xboole_0, k1_zfmisc_1(k2_zfmisc_1(k1_xboole_0, _G16227)))]   (3)  substitution:[[_G7935, _G7784, _G7843], [k1_xboole_0, k1_xboole_0, _G16227]]
+1.1.2.1.1.1  [-v1_xboole_0(k1_xboole_0)]   (4)  
+1.1.2.1.1.2  [-m1_subset_1(k1_xboole_0, k1_zfmisc_1(k2_zfmisc_1(k1_xboole_0, _G16227)))]   (5)  substitution:[[_G8651, _G8695], [k1_xboole_0, _G16227]]
+1.1.2.1.2  [-m1_subset_1(1^[k4_partfun1(k1_xboole_0, 2^[]), k1_xboole_0], k1_zfmisc_1(k2_zfmisc_1(k1_xboole_0, 2^[]))), r2_hidden(1^[k4_partfun1(k1_xboole_0, 2^[]), k1_xboole_0], k4_partfun1(k1_xboole_0, 2^[]))]   (8)  substitution:[[_G9489, _G9362, _G9425], [1^[k4_partfun1(k1_xboole_0, 2^[]), k1_xboole_0], k1_xboole_0, 2^[]]]
+1.1.2.1.2.1  [-r2_hidden(1^[k4_partfun1(k1_xboole_0, 2^[]), k1_xboole_0], k4_partfun1(k1_xboole_0, 2^[])), - (k4_partfun1(k1_xboole_0, 2^[])=k1_tarski(k1_xboole_0)), - (1^[k4_partfun1(k1_xboole_0, 2^[]), k1_xboole_0]=k1_xboole_0)]   (13)  substitution:[[_G8257, _G8199], [k4_partfun1(k1_xboole_0, 2^[]), k1_xboole_0]]
+1.1.2.1.2.1.1  [k4_partfun1(k1_xboole_0, 2^[])=k1_tarski(k1_xboole_0)]   (1)  
+1.1.2.1.2.1.2  [1^[k4_partfun1(k1_xboole_0, 2^[]), k1_xboole_0]=k1_xboole_0]   (reduction:1.1)  
+------------------------------------------------------
+End of proof for t48_partfun1

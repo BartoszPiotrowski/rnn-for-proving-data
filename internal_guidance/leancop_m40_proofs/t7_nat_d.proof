@@ -1,0 +1,27 @@
+
+t7_nat_d is a Theorem
+Start of proof for t7_nat_d
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v7_ordinal1(1^[])]
+ (2)  [-v7_ordinal1(2^[])]
+ (3)  [-r1_nat_d(2^[], 1^[])]
+ (4)  [r1_xxreal_0(1^[], k6_numbers)]
+ (5)  [r1_xxreal_0(2^[], 1^[])]
+ (6)  [v7_ordinal1(_G862), v7_ordinal1(_G955), r1_int_1(_G955, _G862), -r1_xxreal_0(_G862, k6_numbers), -r1_xxreal_0(_G955, _G862)]
+ (7)  [v7_ordinal1(_G1361), v7_ordinal1(_G1306), r1_nat_d(_G1306, _G1361), -r1_int_1(_G1306, _G1361)]
+ (8)  [v7_ordinal1(_G1361), v7_ordinal1(_G1306), -r1_nat_d(_G1306, _G1361), r1_int_1(_G1306, _G1361)]
+
+Connection Proof:
+-----------------
+1  [r1_xxreal_0(2^[], 1^[])]   (5)  
+1.1  [-r1_xxreal_0(2^[], 1^[]), v7_ordinal1(1^[]), v7_ordinal1(2^[]), r1_int_1(2^[], 1^[]), -r1_xxreal_0(1^[], k6_numbers)]   (6)  substitution:[[_G955, _G862], [2^[], 1^[]]]
+1.1.1  [-v7_ordinal1(1^[])]   (1)  
+1.1.2  [-v7_ordinal1(2^[])]   (2)  
+1.1.3  [-r1_int_1(2^[], 1^[]), v7_ordinal1(1^[]), v7_ordinal1(2^[]), r1_nat_d(2^[], 1^[])]   (7)  substitution:[[_G1306, _G1361], [2^[], 1^[]]]
+1.1.3.1  [-v7_ordinal1(1^[])]   (1)  
+1.1.3.2  [-v7_ordinal1(2^[])]   (2)  
+1.1.3.3  [-r1_nat_d(2^[], 1^[])]   (3)  
+1.1.4  [r1_xxreal_0(1^[], k6_numbers)]   (4)  
+------------------------------------------------------
+End of proof for t7_nat_d

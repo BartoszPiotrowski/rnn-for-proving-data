@@ -1,0 +1,35 @@
+
+t20_waybel28 is a Theorem
+Start of proof for t20_waybel28
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(2^[])]
+ (2)  [-l1_orders_2(2^[])]
+ (3)  [-r2_hidden(k4_tarski(3^[], 4^[]), k3_waybel28(2^[]))]
+ (4)  [r2_hidden(3^[], k6_yellow_6(2^[]))]
+ (5)  [l1_struct_0(_G1190), -v2_struct_0(_G1190), m4_yellow_6(_G1353, _G1190), -r1_tarski(_G1353, k2_zfmisc_1(k6_yellow_6(_G1190), u1_struct_0(_G1190)))]
+ (6)  [l1_struct_0(_G1190), -v2_struct_0(_G1190), -m4_yellow_6(_G1353, _G1190), r1_tarski(_G1353, k2_zfmisc_1(k6_yellow_6(_G1190), u1_struct_0(_G1190)))]
+ (7)  [-r1_tarski(_G1645, _G1701), -r2_hidden(1^[_G1701, _G1645], _G1645)]
+ (8)  [-r1_tarski(_G1645, _G1701), r2_hidden(1^[_G1701, _G1645], _G1701)]
+ (9)  [r1_tarski(_G1645, _G1701), r2_hidden(_G1815, _G1645), -r2_hidden(_G1815, _G1701)]
+ (10)  [-m4_yellow_6(k3_waybel28(_G2047), _G2047), -v2_struct_0(_G2047), l1_orders_2(_G2047)]
+ (11)  [l1_orders_2(_G2294), -l1_struct_0(_G2294)]
+ (12)  [r2_hidden(k4_tarski(_G2416, _G2483), k2_zfmisc_1(_G2551, _G2620)), -r2_hidden(_G2416, _G2551)]
+ (13)  [r2_hidden(k4_tarski(_G2416, _G2483), k2_zfmisc_1(_G2551, _G2620)), -r2_hidden(_G2483, _G2620)]
+ (14)  [-r2_hidden(k4_tarski(_G2416, _G2483), k2_zfmisc_1(_G2551, _G2620)), r2_hidden(_G2416, _G2551), r2_hidden(_G2483, _G2620)]
+
+Connection Proof:
+-----------------
+1  [v2_struct_0(2^[])]   (1)  
+1.1  [-v2_struct_0(2^[]), l1_struct_0(2^[]), m4_yellow_6(k3_waybel28(2^[]), 2^[]), -r1_tarski(k3_waybel28(2^[]), k2_zfmisc_1(k6_yellow_6(2^[]), u1_struct_0(2^[])))]   (5)  substitution:[[_G1190, _G1353], [2^[], k3_waybel28(2^[])]]
+1.1.1  [-l1_struct_0(2^[]), l1_orders_2(2^[])]   (11)  substitution:[[_G2294], [2^[]]]
+1.1.1.1  [-l1_orders_2(2^[])]   (2)  
+1.1.2  [-m4_yellow_6(k3_waybel28(2^[]), 2^[]), -v2_struct_0(2^[]), l1_orders_2(2^[])]   (10)  substitution:[[_G2047], [2^[]]]
+1.1.2.1  [v2_struct_0(2^[])]   (1)  
+1.1.2.2  [-l1_orders_2(2^[])]   (2)  
+1.1.3  [r1_tarski(k3_waybel28(2^[]), k2_zfmisc_1(k6_yellow_6(2^[]), u1_struct_0(2^[]))), r2_hidden(k4_tarski(3^[], 4^[]), k3_waybel28(2^[])), -r2_hidden(k4_tarski(3^[], 4^[]), k2_zfmisc_1(k6_yellow_6(2^[]), u1_struct_0(2^[])))]   (9)  substitution:[[_G1645, _G1701, _G1815], [k3_waybel28(2^[]), k2_zfmisc_1(k6_yellow_6(2^[]), u1_struct_0(2^[])), k4_tarski(3^[], 4^[])]]
+1.1.3.1  [-r2_hidden(k4_tarski(3^[], 4^[]), k3_waybel28(2^[]))]   (3)  
+1.1.3.2  [r2_hidden(k4_tarski(3^[], 4^[]), k2_zfmisc_1(k6_yellow_6(2^[]), u1_struct_0(2^[]))), -r2_hidden(3^[], k6_yellow_6(2^[]))]   (12)  substitution:[[_G2416, _G2483, _G2551, _G2620], [3^[], 4^[], k6_yellow_6(2^[]), u1_struct_0(2^[])]]
+1.1.3.2.1  [r2_hidden(3^[], k6_yellow_6(2^[]))]   (4)  
+------------------------------------------------------
+End of proof for t20_waybel28

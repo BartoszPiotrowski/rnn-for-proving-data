@@ -1,0 +1,40 @@
+
+t3_dynkin is a Theorem
+Start of proof for t3_dynkin
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k3_card_3(k13_funct_7(1^[], 2^[], k1_xboole_0))=k2_xboole_0(1^[], 2^[])]
+ (2)  [-v1_relat_1(k13_funct_7(_G8501, _G8557, _G8614))]
+ (3)  [-v1_funct_1(k13_funct_7(_G8501, _G8557, _G8614))]
+ (4)  [- (k10_xtuple_0(k13_funct_7(_G8945, _G8999, _G9054))=k1_enumset1(_G8945, _G8999, _G9054))]
+ (5)  [- (k3_tarski(k1_enumset1(_G9369, _G9419, k1_xboole_0))=k3_tarski(k2_tarski(_G9369, _G9419)))]
+ (6)  [- (k3_tarski(k2_tarski(_G9683, _G9730))=k2_xboole_0(_G9683, _G9730))]
+ (7)  [- (k3_card_3(_G8238)=k3_tarski(k10_xtuple_0(_G8238))), v1_relat_1(_G8238), v1_funct_1(_G8238)]
+ (8)  [- (_G2645=_G2645)]
+ (9)  [_G2744=_G2789, - (_G2789=_G2744)]
+ (10)  [- (_G2977=_G3090), _G2977=_G3033, _G3033=_G3090]
+ (11)  [-v1_relat_1(_G3476), _G3427=_G3476, v1_relat_1(_G3427)]
+ (12)  [-v1_funct_1(_G3745), _G3696=_G3745, v1_funct_1(_G3696)]
+ (13)  [_G4016=_G4065, - (k10_xtuple_0(_G4016)=k10_xtuple_0(_G4065))]
+ (14)  [- (k1_enumset1(_G4294, _G4465, _G4640)=k1_enumset1(_G4379, _G4552, _G4729)), _G4294=_G4379, _G4465=_G4552, _G4640=_G4729]
+ (15)  [_G5322=_G5371, - (k3_tarski(_G5322)=k3_tarski(_G5371))]
+ (16)  [- (k2_tarski(_G5600, _G5735)=k2_tarski(_G5667, _G5804)), _G5600=_G5667, _G5735=_G5804]
+ (17)  [_G6197=_G6246, - (k3_card_3(_G6197)=k3_card_3(_G6246))]
+ (18)  [- (k2_xboole_0(_G7494, _G7629)=k2_xboole_0(_G7561, _G7698)), _G7494=_G7561, _G7629=_G7698]
+ (19)  [- (k13_funct_7(_G6475, _G6646, _G6821)=k13_funct_7(_G6560, _G6733, _G6910)), _G6475=_G6560, _G6646=_G6733, _G6821=_G6910]
+
+Connection Proof:
+-----------------
+1  [k3_card_3(k13_funct_7(1^[], 2^[], k1_xboole_0))=k2_xboole_0(1^[], 2^[])]   (1)  
+1.1  [- (k3_card_3(k13_funct_7(1^[], 2^[], k1_xboole_0))=k2_xboole_0(1^[], 2^[])), k3_card_3(k13_funct_7(1^[], 2^[], k1_xboole_0))=k3_tarski(k10_xtuple_0(k13_funct_7(1^[], 2^[], k1_xboole_0))), k3_tarski(k10_xtuple_0(k13_funct_7(1^[], 2^[], k1_xboole_0)))=k2_xboole_0(1^[], 2^[])]   (10)  substitution:[[_G2977, _G3090, _G3033], [k3_card_3(k13_funct_7(1^[], 2^[], k1_xboole_0)), k2_xboole_0(1^[], 2^[]), k3_tarski(k10_xtuple_0(k13_funct_7(1^[], 2^[], k1_xboole_0)))]]
+1.1.1  [- (k3_card_3(k13_funct_7(1^[], 2^[], k1_xboole_0))=k3_tarski(k10_xtuple_0(k13_funct_7(1^[], 2^[], k1_xboole_0)))), v1_relat_1(k13_funct_7(1^[], 2^[], k1_xboole_0)), v1_funct_1(k13_funct_7(1^[], 2^[], k1_xboole_0))]   (7)  substitution:[[_G8238], [k13_funct_7(1^[], 2^[], k1_xboole_0)]]
+1.1.1.1  [-v1_relat_1(k13_funct_7(1^[], 2^[], k1_xboole_0))]   (2)  substitution:[[_G8501, _G8557, _G8614], [1^[], 2^[], k1_xboole_0]]
+1.1.1.2  [-v1_funct_1(k13_funct_7(1^[], 2^[], k1_xboole_0))]   (3)  substitution:[[_G8501, _G8557, _G8614], [1^[], 2^[], k1_xboole_0]]
+1.1.2  [- (k3_tarski(k10_xtuple_0(k13_funct_7(1^[], 2^[], k1_xboole_0)))=k2_xboole_0(1^[], 2^[])), k3_tarski(k10_xtuple_0(k13_funct_7(1^[], 2^[], k1_xboole_0)))=k3_tarski(k1_enumset1(1^[], 2^[], k1_xboole_0)), k3_tarski(k1_enumset1(1^[], 2^[], k1_xboole_0))=k2_xboole_0(1^[], 2^[])]   (10)  substitution:[[_G2977, _G3090, _G3033], [k3_tarski(k10_xtuple_0(k13_funct_7(1^[], 2^[], k1_xboole_0))), k2_xboole_0(1^[], 2^[]), k3_tarski(k1_enumset1(1^[], 2^[], k1_xboole_0))]]
+1.1.2.1  [- (k3_tarski(k10_xtuple_0(k13_funct_7(1^[], 2^[], k1_xboole_0)))=k3_tarski(k1_enumset1(1^[], 2^[], k1_xboole_0))), k10_xtuple_0(k13_funct_7(1^[], 2^[], k1_xboole_0))=k1_enumset1(1^[], 2^[], k1_xboole_0)]   (15)  substitution:[[_G5322, _G5371], [k10_xtuple_0(k13_funct_7(1^[], 2^[], k1_xboole_0)), k1_enumset1(1^[], 2^[], k1_xboole_0)]]
+1.1.2.1.1  [- (k10_xtuple_0(k13_funct_7(1^[], 2^[], k1_xboole_0))=k1_enumset1(1^[], 2^[], k1_xboole_0))]   (4)  substitution:[[_G8945, _G8999, _G9054], [1^[], 2^[], k1_xboole_0]]
+1.1.2.2  [- (k3_tarski(k1_enumset1(1^[], 2^[], k1_xboole_0))=k2_xboole_0(1^[], 2^[])), k3_tarski(k1_enumset1(1^[], 2^[], k1_xboole_0))=k3_tarski(k2_tarski(1^[], 2^[])), k3_tarski(k2_tarski(1^[], 2^[]))=k2_xboole_0(1^[], 2^[])]   (10)  substitution:[[_G2977, _G3090, _G3033], [k3_tarski(k1_enumset1(1^[], 2^[], k1_xboole_0)), k2_xboole_0(1^[], 2^[]), k3_tarski(k2_tarski(1^[], 2^[]))]]
+1.1.2.2.1  [- (k3_tarski(k1_enumset1(1^[], 2^[], k1_xboole_0))=k3_tarski(k2_tarski(1^[], 2^[])))]   (5)  substitution:[[_G9369, _G9419], [1^[], 2^[]]]
+1.1.2.2.2  [- (k3_tarski(k2_tarski(1^[], 2^[]))=k2_xboole_0(1^[], 2^[]))]   (6)  substitution:[[_G9683, _G9730], [1^[], 2^[]]]
+------------------------------------------------------
+End of proof for t3_dynkin

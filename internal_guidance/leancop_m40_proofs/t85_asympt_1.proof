@@ -1,0 +1,43 @@
+
+t85_asympt_1 is a Theorem
+Start of proof for t85_asympt_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_funct_1(2^[])]
+ (2)  [-v1_funct_2(2^[], k5_numbers, k1_numbers)]
+ (3)  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_numbers)))]
+ (4)  [v7_valued_0(2^[])]
+ (5)  [m2_subset_1(_G13912, k1_numbers, k5_numbers), - (k1_seq_1(2^[], _G13912)=k4_power(k7_real_1(np__1, k10_real_1(np__1, k2_nat_1(_G13912, np__1))), k2_nat_1(_G13912, np__1)))]
+ (6)  [-v7_valued_0(_G10865), -m2_subset_1(1^[_G10865], k1_numbers, k5_numbers), v1_funct_1(_G10865), v1_funct_2(_G10865, k5_numbers, k1_numbers), m1_subset_1(_G10865, k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_numbers)))]
+ (7)  [-v7_valued_0(_G10865), k1_seq_1(_G10865, 1^[_G10865])=k4_power(k7_real_1(np__1, k10_real_1(np__1, k2_nat_1(1^[_G10865], np__1))), k2_nat_1(1^[_G10865], np__1)), v1_funct_1(_G10865), v1_funct_2(_G10865, k5_numbers, k1_numbers), m1_subset_1(_G10865, k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_numbers)))]
+ (8)  [_G6876=_G6925, - (k1_zfmisc_1(_G6876)=k1_zfmisc_1(_G6925))]
+ (9)  [- (k2_zfmisc_1(_G7154, _G7289)=k2_zfmisc_1(_G7221, _G7358)), _G7154=_G7221, _G7289=_G7358]
+ (10)  [- (k1_seq_1(_G7751, _G7886)=k1_seq_1(_G7818, _G7955)), _G7751=_G7818, _G7886=_G7955]
+ (11)  [- (k4_power(_G8348, _G8483)=k4_power(_G8415, _G8552)), _G8348=_G8415, _G8483=_G8552]
+ (12)  [- (k7_real_1(_G8945, _G9080)=k7_real_1(_G9012, _G9149)), _G8945=_G9012, _G9080=_G9149]
+ (13)  [- (k10_real_1(_G9542, _G9677)=k10_real_1(_G9609, _G9746)), _G9542=_G9609, _G9677=_G9746]
+ (14)  [- (k2_nat_1(_G10130, _G10265)=k2_nat_1(_G10197, _G10334)), _G10130=_G10197, _G10265=_G10334]
+ (15)  [- (_G2789=_G2789)]
+ (16)  [_G2888=_G2933, - (_G2933=_G2888)]
+ (17)  [- (_G3121=_G3234), _G3121=_G3177, _G3177=_G3234]
+ (18)  [-v1_funct_1(_G3620), _G3571=_G3620, v1_funct_1(_G3571)]
+ (19)  [-v1_funct_2(_G3934, _G4107, _G4284), v1_funct_2(_G3849, _G4020, _G4195), _G3849=_G3934, _G4020=_G4107, _G4195=_G4284]
+ (20)  [-m1_subset_1(_G4944, _G5081), m1_subset_1(_G4877, _G5012), _G4877=_G4944, _G5012=_G5081]
+ (21)  [-v7_valued_0(_G6542), _G6493=_G6542, v7_valued_0(_G6493)]
+ (22)  [-m2_subset_1(_G5559, _G5732, _G5909), m2_subset_1(_G5474, _G5645, _G5820), _G5474=_G5559, _G5645=_G5732, _G5820=_G5909]
+
+Connection Proof:
+-----------------
+1  [v7_valued_0(2^[])]   (4)  
+1.1  [-v7_valued_0(2^[]), -m2_subset_1(1^[2^[]], k1_numbers, k5_numbers), v1_funct_1(2^[]), v1_funct_2(2^[], k5_numbers, k1_numbers), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_numbers)))]   (6)  substitution:[[_G10865], [2^[]]]
+1.1.1  [m2_subset_1(1^[2^[]], k1_numbers, k5_numbers), - (k1_seq_1(2^[], 1^[2^[]])=k4_power(k7_real_1(np__1, k10_real_1(np__1, k2_nat_1(1^[2^[]], np__1))), k2_nat_1(1^[2^[]], np__1)))]   (5)  substitution:[[_G13912], [1^[2^[]]]]
+1.1.1.1  [k1_seq_1(2^[], 1^[2^[]])=k4_power(k7_real_1(np__1, k10_real_1(np__1, k2_nat_1(1^[2^[]], np__1))), k2_nat_1(1^[2^[]], np__1)), -v7_valued_0(2^[]), v1_funct_1(2^[]), v1_funct_2(2^[], k5_numbers, k1_numbers), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_numbers)))]   (7)  substitution:[[_G10865], [2^[]]]
+1.1.1.1.1  [v7_valued_0(2^[])]   (4)  
+1.1.1.1.2  [-v1_funct_1(2^[])]   (1)  
+1.1.1.1.3  [-v1_funct_2(2^[], k5_numbers, k1_numbers)]   (2)  
+1.1.1.1.4  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_numbers)))]   (3)  
+1.1.2  [-v1_funct_1(2^[])]   (1)  
+1.1.3  [-v1_funct_2(2^[], k5_numbers, k1_numbers)]   (2)  
+1.1.4  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(k5_numbers, k1_numbers)))]   (3)  
+------------------------------------------------------
+End of proof for t85_asympt_1

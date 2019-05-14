@@ -1,0 +1,55 @@
+
+l8_modelc_3 is a Theorem
+Start of proof for l8_modelc_3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_modelc_2(1^[])]
+ (2)  [-m2_finseq_1(1^[], k5_numbers)]
+ (3)  [r2_modelc_2(k11_modelc_2(1^[]), 1^[]), r2_modelc_2(k12_modelc_2(1^[]), 1^[])]
+ (4)  [-v4_modelc_2(1^[]), -v5_modelc_2(1^[]), -v7_modelc_2(1^[]), -v8_modelc_2(1^[])]
+ (5)  [m2_finseq_1(_G916, k5_numbers), v1_modelc_2(_G916), v4_modelc_2(_G916), -r2_modelc_2(k11_modelc_2(_G916), _G916)]
+ (6)  [m2_finseq_1(_G916, k5_numbers), v1_modelc_2(_G916), v4_modelc_2(_G916), -r2_modelc_2(k12_modelc_2(_G916), _G916)]
+ (7)  [m2_finseq_1(_G916, k5_numbers), v1_modelc_2(_G916), v5_modelc_2(_G916), -r2_modelc_2(k11_modelc_2(_G916), _G916)]
+ (8)  [m2_finseq_1(_G916, k5_numbers), v1_modelc_2(_G916), v5_modelc_2(_G916), -r2_modelc_2(k12_modelc_2(_G916), _G916)]
+ (9)  [m2_finseq_1(_G916, k5_numbers), v1_modelc_2(_G916), v7_modelc_2(_G916), -r2_modelc_2(k11_modelc_2(_G916), _G916)]
+ (10)  [m2_finseq_1(_G916, k5_numbers), v1_modelc_2(_G916), v7_modelc_2(_G916), -r2_modelc_2(k12_modelc_2(_G916), _G916)]
+ (11)  [m2_finseq_1(_G916, k5_numbers), v1_modelc_2(_G916), v8_modelc_2(_G916), -r2_modelc_2(k11_modelc_2(_G916), _G916)]
+ (12)  [m2_finseq_1(_G916, k5_numbers), v1_modelc_2(_G916), v8_modelc_2(_G916), -r2_modelc_2(k12_modelc_2(_G916), _G916)]
+
+Connection Proof:
+-----------------
+1  [r2_modelc_2(k11_modelc_2(1^[]), 1^[]), r2_modelc_2(k12_modelc_2(1^[]), 1^[])]   (3)  
+1.1  [-r2_modelc_2(k11_modelc_2(1^[]), 1^[]), m2_finseq_1(1^[], k5_numbers), v1_modelc_2(1^[]), v4_modelc_2(1^[])]   (5)  substitution:[[_G916], [1^[]]]
+1.1.1  [-m2_finseq_1(1^[], k5_numbers)]   (2)  
+1.1.2  [-v1_modelc_2(1^[])]   (1)  
+1.1.3  [-v4_modelc_2(1^[]), -v5_modelc_2(1^[]), -v7_modelc_2(1^[]), -v8_modelc_2(1^[])]   (4)  
+1.1.3.1  [v5_modelc_2(1^[]), m2_finseq_1(1^[], k5_numbers), v1_modelc_2(1^[]), -r2_modelc_2(k11_modelc_2(1^[]), 1^[])]   (7)  substitution:[[_G916], [1^[]]]
+1.1.3.1.1  [-m2_finseq_1(1^[], k5_numbers)]   (2)  
+1.1.3.1.2  [-v1_modelc_2(1^[])]   (1)  
+1.1.3.1.3  [r2_modelc_2(k11_modelc_2(1^[]), 1^[])]   (reduction:1)  
+1.1.3.2  [v7_modelc_2(1^[]), m2_finseq_1(1^[], k5_numbers), v1_modelc_2(1^[]), -r2_modelc_2(k11_modelc_2(1^[]), 1^[])]   (9)  substitution:[[_G916], [1^[]]]
+1.1.3.2.1  [-m2_finseq_1(1^[], k5_numbers)]   (2)  
+1.1.3.2.2  [-v1_modelc_2(1^[])]   (1)  
+1.1.3.2.3  [r2_modelc_2(k11_modelc_2(1^[]), 1^[])]   (reduction:1)  
+1.1.3.3  [v8_modelc_2(1^[]), m2_finseq_1(1^[], k5_numbers), v1_modelc_2(1^[]), -r2_modelc_2(k11_modelc_2(1^[]), 1^[])]   (11)  substitution:[[_G916], [1^[]]]
+1.1.3.3.1  [-m2_finseq_1(1^[], k5_numbers)]   (2)  
+1.1.3.3.2  [-v1_modelc_2(1^[])]   (1)  
+1.1.3.3.3  [r2_modelc_2(k11_modelc_2(1^[]), 1^[])]   (reduction:1)  
+1.2  [-r2_modelc_2(k12_modelc_2(1^[]), 1^[]), m2_finseq_1(1^[], k5_numbers), v1_modelc_2(1^[]), v4_modelc_2(1^[])]   (6)  substitution:[[_G916], [1^[]]]
+1.2.1  [-m2_finseq_1(1^[], k5_numbers)]   (2)  
+1.2.2  [-v1_modelc_2(1^[])]   (1)  
+1.2.3  [-v4_modelc_2(1^[]), -v5_modelc_2(1^[]), -v7_modelc_2(1^[]), -v8_modelc_2(1^[])]   (4)  
+1.2.3.1  [v5_modelc_2(1^[]), m2_finseq_1(1^[], k5_numbers), v1_modelc_2(1^[]), -r2_modelc_2(k12_modelc_2(1^[]), 1^[])]   (8)  substitution:[[_G916], [1^[]]]
+1.2.3.1.1  [-m2_finseq_1(1^[], k5_numbers)]   (2)  
+1.2.3.1.2  [-v1_modelc_2(1^[])]   (1)  
+1.2.3.1.3  [r2_modelc_2(k12_modelc_2(1^[]), 1^[])]   (reduction:1)  
+1.2.3.2  [v7_modelc_2(1^[]), m2_finseq_1(1^[], k5_numbers), v1_modelc_2(1^[]), -r2_modelc_2(k12_modelc_2(1^[]), 1^[])]   (10)  substitution:[[_G916], [1^[]]]
+1.2.3.2.1  [-m2_finseq_1(1^[], k5_numbers)]   (2)  
+1.2.3.2.2  [-v1_modelc_2(1^[])]   (1)  
+1.2.3.2.3  [r2_modelc_2(k12_modelc_2(1^[]), 1^[])]   (reduction:1)  
+1.2.3.3  [v8_modelc_2(1^[]), m2_finseq_1(1^[], k5_numbers), v1_modelc_2(1^[]), -r2_modelc_2(k12_modelc_2(1^[]), 1^[])]   (12)  substitution:[[_G916], [1^[]]]
+1.2.3.3.1  [-m2_finseq_1(1^[], k5_numbers)]   (2)  
+1.2.3.3.2  [-v1_modelc_2(1^[])]   (1)  
+1.2.3.3.3  [r2_modelc_2(k12_modelc_2(1^[]), 1^[])]   (reduction:1)  
+------------------------------------------------------
+End of proof for l8_modelc_3

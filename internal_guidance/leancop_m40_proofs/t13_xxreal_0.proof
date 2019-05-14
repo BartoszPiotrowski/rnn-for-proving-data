@@ -1,0 +1,34 @@
+
+t13_xxreal_0 is a Theorem
+Start of proof for t13_xxreal_0
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xxreal_0(1^[])]
+ (2)  [-v1_xxreal_0(2^[])]
+ (3)  [-r2_hidden(1^[], k1_numbers)]
+ (4)  [-r1_xxreal_0(2^[], 1^[])]
+ (5)  [r2_hidden(2^[], k1_numbers)]
+ (6)  [2^[]=k2_xxreal_0]
+ (7)  [v1_xxreal_0(_G4431), r2_hidden(_G4431, k1_numbers), r1_xxreal_0(k1_xxreal_0, _G4431)]
+ (8)  [v1_xxreal_0(_G4051), -r2_hidden(_G4051, k1_numbers), - (_G4051=k1_xxreal_0), - (_G4051=k2_xxreal_0)]
+ (9)  [- (_G1743=_G1743)]
+ (10)  [_G1842=_G1887, - (_G1887=_G1842)]
+ (11)  [- (_G2075=_G2188), _G2075=_G2131, _G2131=_G2188]
+ (12)  [-v1_xxreal_0(_G2574), _G2525=_G2574, v1_xxreal_0(_G2525)]
+ (13)  [-r1_xxreal_0(_G2870, _G3007), r1_xxreal_0(_G2803, _G2938), _G2803=_G2870, _G2938=_G3007]
+ (14)  [-r2_hidden(_G3458, _G3595), r2_hidden(_G3391, _G3526), _G3391=_G3458, _G3526=_G3595]
+
+Connection Proof:
+-----------------
+1  [v1_xxreal_0(1^[]), r2_hidden(1^[], k1_numbers), r1_xxreal_0(k1_xxreal_0, 1^[])]   (7)  substitution:[[_G4431], [1^[]]]
+1.1  [-v1_xxreal_0(1^[])]   (1)  
+1.2  [-r2_hidden(1^[], k1_numbers)]   (3)  
+1.3  [-r1_xxreal_0(k1_xxreal_0, 1^[]), r1_xxreal_0(2^[], 1^[]), 2^[]=k1_xxreal_0, 1^[]=1^[]]   (13)  substitution:[[_G2870, _G3007, _G2803, _G2938], [k1_xxreal_0, 1^[], 2^[], 1^[]]]
+1.3.1  [-r1_xxreal_0(2^[], 1^[])]   (4)  
+1.3.2  [- (2^[]=k1_xxreal_0), v1_xxreal_0(2^[]), -r2_hidden(2^[], k1_numbers), - (2^[]=k2_xxreal_0)]   (8)  substitution:[[_G4051], [2^[]]]
+1.3.2.1  [-v1_xxreal_0(2^[])]   (2)  
+1.3.2.2  [r2_hidden(2^[], k1_numbers)]   (5)  
+1.3.2.3  [2^[]=k2_xxreal_0]   (6)  
+1.3.3  [- (1^[]=1^[])]   (9)  substitution:[[_G1743], [1^[]]]
+------------------------------------------------------
+End of proof for t13_xxreal_0

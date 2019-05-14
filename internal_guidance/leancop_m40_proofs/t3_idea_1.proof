@@ -1,0 +1,53 @@
+
+t3_idea_1 is a Theorem
+Start of proof for t3_idea_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], k5_numbers)]
+ (2)  [-m1_subset_1(2^[], k5_numbers)]
+ (3)  [r1_xxreal_0(k6_xcmplx_0(1^[], 2^[]), 1^[])]
+ (4)  [v6_membered(_G5781), m1_subset_1(_G5862, _G5781), -v7_ordinal1(_G5862)]
+ (5)  [v7_ordinal1(_G6054), -v1_xreal_0(_G6054)]
+ (6)  [-v6_membered(k4_ordinal1)]
+ (7)  [- (k11_arytm_3=k1_xboole_0)]
+ (8)  [- (k5_numbers=k4_ordinal1)]
+ (9)  [- (k6_numbers=k1_xboole_0)]
+ (10)  [v7_ordinal1(_G6388), -r1_xxreal_0(k6_numbers, _G6388)]
+ (11)  [v1_xreal_0(_G6536), v1_xreal_0(_G6626), r1_xxreal_0(k6_numbers, _G6536), -r1_xxreal_0(k6_xcmplx_0(_G6626, _G6536), _G6626)]
+ (12)  [- (k6_xcmplx_0(_G5163, _G5298)=k6_xcmplx_0(_G5230, _G5367)), _G5163=_G5230, _G5298=_G5367]
+ (13)  [- (_G2266=_G2266)]
+ (14)  [_G2365=_G2410, - (_G2410=_G2365)]
+ (15)  [- (_G2598=_G2711), _G2598=_G2654, _G2654=_G2711]
+ (16)  [-v6_membered(_G3097), _G3048=_G3097, v6_membered(_G3048)]
+ (17)  [-v7_ordinal1(_G3375), _G3326=_G3375, v7_ordinal1(_G3326)]
+ (18)  [-v1_xreal_0(_G3653), _G3604=_G3653, v1_xreal_0(_G3604)]
+ (19)  [-m1_subset_1(_G3949, _G4086), m1_subset_1(_G3882, _G4017), _G3882=_G3949, _G4017=_G4086]
+ (20)  [-r1_xxreal_0(_G4537, _G4674), r1_xxreal_0(_G4470, _G4605), _G4470=_G4537, _G4605=_G4674]
+
+Connection Proof:
+-----------------
+1  [r1_xxreal_0(k6_xcmplx_0(1^[], 2^[]), 1^[])]   (3)  
+1.1  [-r1_xxreal_0(k6_xcmplx_0(1^[], 2^[]), 1^[]), v1_xreal_0(2^[]), v1_xreal_0(1^[]), r1_xxreal_0(k6_numbers, 2^[])]   (11)  substitution:[[_G6626, _G6536], [1^[], 2^[]]]
+1.1.1  [-v1_xreal_0(2^[]), v7_ordinal1(2^[])]   (5)  substitution:[[_G6054], [2^[]]]
+1.1.1.1  [-v7_ordinal1(2^[]), v6_membered(k4_ordinal1), m1_subset_1(2^[], k4_ordinal1)]   (4)  substitution:[[_G5862, _G5781], [2^[], k4_ordinal1]]
+1.1.1.1.1  [-v6_membered(k4_ordinal1)]   (6)  
+1.1.1.1.2  [-m1_subset_1(2^[], k4_ordinal1), m1_subset_1(2^[], k5_numbers), 2^[]=2^[], k5_numbers=k4_ordinal1]   (19)  substitution:[[_G3949, _G4086, _G3882, _G4017], [2^[], k4_ordinal1, 2^[], k5_numbers]]
+1.1.1.1.2.1  [-m1_subset_1(2^[], k5_numbers)]   (2)  
+1.1.1.1.2.2  [- (2^[]=2^[])]   (13)  substitution:[[_G2266], [2^[]]]
+1.1.1.1.2.3  [- (k5_numbers=k4_ordinal1)]   (8)  
+1.1.2  [-v1_xreal_0(1^[]), v7_ordinal1(1^[])]   (5)  substitution:[[_G6054], [1^[]]]
+1.1.2.1  [-v7_ordinal1(1^[]), v6_membered(k4_ordinal1), m1_subset_1(1^[], k4_ordinal1)]   (4)  substitution:[[_G5862, _G5781], [1^[], k4_ordinal1]]
+1.1.2.1.1  [-v6_membered(k4_ordinal1)]   (6)  
+1.1.2.1.2  [-m1_subset_1(1^[], k4_ordinal1), m1_subset_1(1^[], k5_numbers), 1^[]=1^[], k5_numbers=k4_ordinal1]   (19)  substitution:[[_G3949, _G4086, _G3882, _G4017], [1^[], k4_ordinal1, 1^[], k5_numbers]]
+1.1.2.1.2.1  [-m1_subset_1(1^[], k5_numbers)]   (1)  
+1.1.2.1.2.2  [- (1^[]=1^[])]   (13)  substitution:[[_G2266], [1^[]]]
+1.1.2.1.2.3  [- (k5_numbers=k4_ordinal1)]   (8)  
+1.1.3  [-r1_xxreal_0(k6_numbers, 2^[]), v7_ordinal1(2^[])]   (10)  substitution:[[_G6388], [2^[]]]
+1.1.3.1  [-v7_ordinal1(2^[]), v6_membered(k4_ordinal1), m1_subset_1(2^[], k4_ordinal1)]   (4)  substitution:[[_G5862, _G5781], [2^[], k4_ordinal1]]
+1.1.3.1.1  [-v6_membered(k4_ordinal1)]   (6)  
+1.1.3.1.2  [-m1_subset_1(2^[], k4_ordinal1), m1_subset_1(2^[], k5_numbers), 2^[]=2^[], k5_numbers=k4_ordinal1]   (19)  substitution:[[_G3949, _G4086, _G3882, _G4017], [2^[], k4_ordinal1, 2^[], k5_numbers]]
+1.1.3.1.2.1  [-m1_subset_1(2^[], k5_numbers)]   (2)  
+1.1.3.1.2.2  [- (2^[]=2^[])]   (13)  substitution:[[_G2266], [2^[]]]
+1.1.3.1.2.3  [- (k5_numbers=k4_ordinal1)]   (8)  
+------------------------------------------------------
+End of proof for t3_idea_1

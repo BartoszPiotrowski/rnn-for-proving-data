@@ -1,0 +1,38 @@
+
+t28_classes1 is a Theorem
+Start of proof for t28_classes1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-r1_tarski(4^[], k1_classes1(5^[]))]
+ (2)  [-r1_tarski(6^[], k1_classes1(5^[]))]
+ (3)  [r1_tarski(k2_zfmisc_1(4^[], 6^[]), k1_classes1(5^[]))]
+ (4)  [v1_relat_1(_G1230), -r1_tarski(_G1230, _G1334), -r2_hidden(k4_tarski(1^[_G1334, _G1230], 2^[_G1334, _G1230]), _G1230)]
+ (5)  [v1_relat_1(_G1230), -r1_tarski(_G1230, _G1334), r2_hidden(k4_tarski(1^[_G1334, _G1230], 2^[_G1334, _G1230]), _G1334)]
+ (6)  [v1_relat_1(_G1230), r1_tarski(_G1230, _G1334), r2_hidden(k4_tarski(_G1459, _G1522), _G1230), -r2_hidden(k4_tarski(_G1459, _G1522), _G1334)]
+ (7)  [-r1_tarski(_G1873, _G1929), -r2_hidden(3^[_G1929, _G1873], _G1873)]
+ (8)  [-r1_tarski(_G1873, _G1929), r2_hidden(3^[_G1929, _G1873], _G1929)]
+ (9)  [r1_tarski(_G1873, _G1929), r2_hidden(_G2043, _G1873), -r2_hidden(_G2043, _G1929)]
+ (10)  [-v1_relat_1(k2_zfmisc_1(_G2275, _G2316))]
+ (11)  [-r2_hidden(k4_tarski(_G3098, _G3164), k1_classes1(_G3033)), r2_hidden(_G3098, k1_classes1(_G3033)), r2_hidden(_G3164, k1_classes1(_G3033))]
+ (12)  [r2_hidden(k4_tarski(_G2445, _G2512), k2_zfmisc_1(_G2580, _G2649)), -r2_hidden(_G2445, _G2580)]
+ (13)  [r2_hidden(k4_tarski(_G2445, _G2512), k2_zfmisc_1(_G2580, _G2649)), -r2_hidden(_G2512, _G2649)]
+ (14)  [-r2_hidden(k4_tarski(_G2445, _G2512), k2_zfmisc_1(_G2580, _G2649)), r2_hidden(_G2445, _G2580), r2_hidden(_G2512, _G2649)]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k2_zfmisc_1(4^[], 6^[]), k1_classes1(5^[]))]   (3)  
+1.1  [-r1_tarski(k2_zfmisc_1(4^[], 6^[]), k1_classes1(5^[])), v1_relat_1(k2_zfmisc_1(4^[], 6^[])), -r2_hidden(k4_tarski(1^[k1_classes1(5^[]), k2_zfmisc_1(4^[], 6^[])], 2^[k1_classes1(5^[]), k2_zfmisc_1(4^[], 6^[])]), k2_zfmisc_1(4^[], 6^[]))]   (4)  substitution:[[_G1230, _G1334], [k2_zfmisc_1(4^[], 6^[]), k1_classes1(5^[])]]
+1.1.1  [-v1_relat_1(k2_zfmisc_1(4^[], 6^[]))]   (10)  substitution:[[_G2275, _G2316], [4^[], 6^[]]]
+1.1.2  [r2_hidden(k4_tarski(1^[k1_classes1(5^[]), k2_zfmisc_1(4^[], 6^[])], 2^[k1_classes1(5^[]), k2_zfmisc_1(4^[], 6^[])]), k2_zfmisc_1(4^[], 6^[])), -r2_hidden(2^[k1_classes1(5^[]), k2_zfmisc_1(4^[], 6^[])], 6^[])]   (13)  substitution:[[_G2445, _G2512, _G2580, _G2649], [1^[k1_classes1(5^[]), k2_zfmisc_1(4^[], 6^[])], 2^[k1_classes1(5^[]), k2_zfmisc_1(4^[], 6^[])], 4^[], 6^[]]]
+1.1.2.1  [r2_hidden(2^[k1_classes1(5^[]), k2_zfmisc_1(4^[], 6^[])], 6^[]), r1_tarski(6^[], k1_classes1(5^[])), -r2_hidden(2^[k1_classes1(5^[]), k2_zfmisc_1(4^[], 6^[])], k1_classes1(5^[]))]   (9)  substitution:[[_G2043, _G1873, _G1929], [2^[k1_classes1(5^[]), k2_zfmisc_1(4^[], 6^[])], 6^[], k1_classes1(5^[])]]
+1.1.2.1.1  [-r1_tarski(6^[], k1_classes1(5^[]))]   (2)  
+1.1.2.1.2  [r2_hidden(2^[k1_classes1(5^[]), k2_zfmisc_1(4^[], 6^[])], k1_classes1(5^[])), -r2_hidden(k4_tarski(1^[k1_classes1(5^[]), k2_zfmisc_1(4^[], 6^[])], 2^[k1_classes1(5^[]), k2_zfmisc_1(4^[], 6^[])]), k1_classes1(5^[])), r2_hidden(1^[k1_classes1(5^[]), k2_zfmisc_1(4^[], 6^[])], k1_classes1(5^[]))]   (11)  substitution:[[_G3164, _G3033, _G3098], [2^[k1_classes1(5^[]), k2_zfmisc_1(4^[], 6^[])], 5^[], 1^[k1_classes1(5^[]), k2_zfmisc_1(4^[], 6^[])]]]
+1.1.2.1.2.1  [r2_hidden(k4_tarski(1^[k1_classes1(5^[]), k2_zfmisc_1(4^[], 6^[])], 2^[k1_classes1(5^[]), k2_zfmisc_1(4^[], 6^[])]), k1_classes1(5^[])), v1_relat_1(k2_zfmisc_1(4^[], 6^[])), -r1_tarski(k2_zfmisc_1(4^[], 6^[]), k1_classes1(5^[]))]   (5)  substitution:[[_G1334, _G1230], [k1_classes1(5^[]), k2_zfmisc_1(4^[], 6^[])]]
+1.1.2.1.2.1.1  [-v1_relat_1(k2_zfmisc_1(4^[], 6^[]))]   (10)  substitution:[[_G2275, _G2316], [4^[], 6^[]]]
+1.1.2.1.2.1.2  [r1_tarski(k2_zfmisc_1(4^[], 6^[]), k1_classes1(5^[]))]   (3)  
+1.1.2.1.2.2  [-r2_hidden(1^[k1_classes1(5^[]), k2_zfmisc_1(4^[], 6^[])], k1_classes1(5^[])), r1_tarski(4^[], k1_classes1(5^[])), r2_hidden(1^[k1_classes1(5^[]), k2_zfmisc_1(4^[], 6^[])], 4^[])]   (9)  substitution:[[_G2043, _G1929, _G1873], [1^[k1_classes1(5^[]), k2_zfmisc_1(4^[], 6^[])], k1_classes1(5^[]), 4^[]]]
+1.1.2.1.2.2.1  [-r1_tarski(4^[], k1_classes1(5^[]))]   (1)  
+1.1.2.1.2.2.2  [-r2_hidden(1^[k1_classes1(5^[]), k2_zfmisc_1(4^[], 6^[])], 4^[]), r2_hidden(k4_tarski(1^[k1_classes1(5^[]), k2_zfmisc_1(4^[], 6^[])], 2^[k1_classes1(5^[]), k2_zfmisc_1(4^[], 6^[])]), k2_zfmisc_1(4^[], 6^[]))]   (12)  substitution:[[_G2445, _G2580, _G2512, _G2649], [1^[k1_classes1(5^[]), k2_zfmisc_1(4^[], 6^[])], 4^[], 2^[k1_classes1(5^[]), k2_zfmisc_1(4^[], 6^[])], 6^[]]]
+1.1.2.1.2.2.2.1  [-r2_hidden(k4_tarski(1^[k1_classes1(5^[]), k2_zfmisc_1(4^[], 6^[])], 2^[k1_classes1(5^[]), k2_zfmisc_1(4^[], 6^[])]), k2_zfmisc_1(4^[], 6^[]))]   (reduction:1.1)  
+------------------------------------------------------
+End of proof for t28_classes1

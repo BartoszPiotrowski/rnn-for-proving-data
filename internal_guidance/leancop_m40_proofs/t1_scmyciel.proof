@@ -1,0 +1,19 @@
+
+t1_scmyciel is a Theorem
+Start of proof for t1_scmyciel
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-r2_hidden(k4_tarski(1^[], 2^[]), 2^[])]
+ (2)  [r2_hidden(_G807, _G854), r2_hidden(_G854, _G807)]
+ (3)  [-r2_hidden(k6_classes1(_G1067), k6_classes1(k4_tarski(_G1067, _G1126)))]
+ (4)  [-r2_hidden(k6_classes1(_G1126), k6_classes1(k4_tarski(_G1067, _G1126)))]
+ (5)  [r2_hidden(_G1462, _G1511), -r2_hidden(k6_classes1(_G1462), k6_classes1(_G1511))]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(k6_classes1(2^[]), k6_classes1(k4_tarski(1^[], 2^[]))), r2_hidden(k6_classes1(k4_tarski(1^[], 2^[])), k6_classes1(2^[]))]   (2)  substitution:[[_G807, _G854], [k6_classes1(2^[]), k6_classes1(k4_tarski(1^[], 2^[]))]]
+1.1  [-r2_hidden(k6_classes1(2^[]), k6_classes1(k4_tarski(1^[], 2^[])))]   (4)  substitution:[[_G1126, _G1067], [2^[], 1^[]]]
+1.2  [-r2_hidden(k6_classes1(k4_tarski(1^[], 2^[])), k6_classes1(2^[])), r2_hidden(k4_tarski(1^[], 2^[]), 2^[])]   (5)  substitution:[[_G1462, _G1511], [k4_tarski(1^[], 2^[]), 2^[]]]
+1.2.1  [-r2_hidden(k4_tarski(1^[], 2^[]), 2^[])]   (1)  
+------------------------------------------------------
+End of proof for t1_scmyciel

@@ -1,0 +1,38 @@
+
+t11_necklace is a Theorem
+Start of proof for t11_necklace
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v7_ordinal1(1^[])]
+ (2)  [-v7_ordinal1(2^[])]
+ (3)  [-v7_ordinal1(3^[])]
+ (4)  [-r2_hidden(2^[], 3^[])]
+ (5)  [r1_xxreal_0(2^[], 1^[])]
+ (6)  [r2_hidden(1^[], 3^[])]
+ (7)  [r2_hidden(_G1113, _G1160), r2_hidden(_G1160, _G1113)]
+ (8)  [v7_ordinal1(_G1373), -v1_xxreal_0(_G1373)]
+ (9)  [v1_xxreal_0(_G1504), v1_xxreal_0(_G1607), v1_xxreal_0(_G1706), -r1_xxreal_0(_G1504, _G1706), r1_xxreal_0(_G1504, _G1607), r1_xxreal_0(_G1607, _G1706)]
+ (10)  [v7_ordinal1(_G2092), v7_ordinal1(_G2181), r2_hidden(_G2092, _G2181), r1_xxreal_0(_G2181, _G2092)]
+ (11)  [v7_ordinal1(_G2092), v7_ordinal1(_G2181), -r2_hidden(_G2092, _G2181), -r1_xxreal_0(_G2181, _G2092)]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(2^[], 3^[]), r2_hidden(3^[], 2^[])]   (7)  substitution:[[_G1113, _G1160], [2^[], 3^[]]]
+1.1  [-r2_hidden(2^[], 3^[])]   (4)  
+1.2  [-r2_hidden(3^[], 2^[]), v7_ordinal1(3^[]), v7_ordinal1(2^[]), -r1_xxreal_0(2^[], 3^[])]   (11)  substitution:[[_G2092, _G2181], [3^[], 2^[]]]
+1.2.1  [-v7_ordinal1(3^[])]   (3)  
+1.2.2  [-v7_ordinal1(2^[])]   (2)  
+1.2.3  [r1_xxreal_0(2^[], 3^[]), v1_xxreal_0(2^[]), v1_xxreal_0(3^[]), v1_xxreal_0(1^[]), -r1_xxreal_0(2^[], 1^[]), r1_xxreal_0(3^[], 1^[])]   (9)  substitution:[[_G1504, _G1607, _G1706], [2^[], 3^[], 1^[]]]
+1.2.3.1  [-v1_xxreal_0(2^[]), v7_ordinal1(2^[])]   (8)  substitution:[[_G1373], [2^[]]]
+1.2.3.1.1  [-v7_ordinal1(2^[])]   (2)  
+1.2.3.2  [-v1_xxreal_0(3^[]), v7_ordinal1(3^[])]   (8)  substitution:[[_G1373], [3^[]]]
+1.2.3.2.1  [-v7_ordinal1(3^[])]   (3)  
+1.2.3.3  [-v1_xxreal_0(1^[]), v7_ordinal1(1^[])]   (8)  substitution:[[_G1373], [1^[]]]
+1.2.3.3.1  [-v7_ordinal1(1^[])]   (1)  
+1.2.3.4  [r1_xxreal_0(2^[], 1^[])]   (5)  
+1.2.3.5  [-r1_xxreal_0(3^[], 1^[]), v7_ordinal1(1^[]), v7_ordinal1(3^[]), -r2_hidden(1^[], 3^[])]   (11)  substitution:[[_G2181, _G2092], [3^[], 1^[]]]
+1.2.3.5.1  [-v7_ordinal1(1^[])]   (1)  
+1.2.3.5.2  [-v7_ordinal1(3^[])]   (3)  
+1.2.3.5.3  [r2_hidden(1^[], 3^[])]   (6)  
+------------------------------------------------------
+End of proof for t11_necklace

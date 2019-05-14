@@ -1,0 +1,58 @@
+
+l17_topalg_2 is a Theorem
+Start of proof for l17_topalg_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_pre_topc(1^[], k3_topmetr)]
+ (2)  [- (1^[]=k3_topmetr)]
+ (3)  [v2_topalg_2(1^[])]
+ (4)  [l1_struct_0(_G5984), - (k2_struct_0(_G5984)=u1_struct_0(_G5984))]
+ (5)  [-v2_pre_topc(k3_topmetr)]
+ (6)  [-l1_pre_topc(k3_topmetr)]
+ (7)  [-v6_xxreal_2(k1_numbers)]
+ (8)  [-v2_pre_topc(k3_topmetr)]
+ (9)  [-v3_topmetr(k3_topmetr)]
+ (10)  [- (u1_struct_0(k3_topmetr)=k1_numbers)]
+ (11)  [l1_pre_topc(_G6521), -l1_struct_0(_G6521)]
+ (12)  [l1_pre_topc(_G6173), v3_topmetr(_G6173), v2_topalg_2(_G6173), -v6_xxreal_2(k2_struct_0(_G6173))]
+ (13)  [l1_pre_topc(_G6173), v3_topmetr(_G6173), -v2_topalg_2(_G6173), v6_xxreal_2(k2_struct_0(_G6173))]
+ (14)  [_G5395=_G5444, - (k2_struct_0(_G5395)=k2_struct_0(_G5444))]
+ (15)  [_G5664=_G5713, - (u1_struct_0(_G5664)=u1_struct_0(_G5713))]
+ (16)  [- (_G2210=_G2210)]
+ (17)  [_G2309=_G2354, - (_G2354=_G2309)]
+ (18)  [- (_G2542=_G2655), _G2542=_G2598, _G2598=_G2655]
+ (19)  [-l1_pre_topc(_G3041), _G2992=_G3041, l1_pre_topc(_G2992)]
+ (20)  [-l1_struct_0(_G3319), _G3270=_G3319, l1_struct_0(_G3270)]
+ (21)  [-v6_xxreal_2(_G3597), _G3548=_G3597, v6_xxreal_2(_G3548)]
+ (22)  [-v2_pre_topc(_G3875), _G3826=_G3875, v2_pre_topc(_G3826)]
+ (23)  [-v3_topmetr(_G4153), _G4104=_G4153, v3_topmetr(_G4104)]
+ (24)  [-v2_topalg_2(_G5019), _G4970=_G5019, v2_topalg_2(_G4970)]
+ (25)  [-m1_pre_topc(_G4449, _G4586), m1_pre_topc(_G4382, _G4517), _G4382=_G4449, _G4517=_G4586]
+
+Connection Proof:
+-----------------
+1  [v2_topalg_2(1^[])]   (3)  
+1.1  [-v2_topalg_2(1^[]), l1_pre_topc(1^[]), v3_topmetr(1^[]), v6_xxreal_2(k2_struct_0(1^[]))]   (13)  substitution:[[_G6173], [1^[]]]
+1.1.1  [-l1_pre_topc(1^[]), k3_topmetr=1^[], l1_pre_topc(k3_topmetr)]   (19)  substitution:[[_G3041, _G2992], [1^[], k3_topmetr]]
+1.1.1.1  [- (k3_topmetr=1^[]), 1^[]=k3_topmetr]   (17)  substitution:[[_G2354, _G2309], [k3_topmetr, 1^[]]]
+1.1.1.1.1  [- (1^[]=k3_topmetr)]   (2)  
+1.1.1.2  [-l1_pre_topc(k3_topmetr)]   (6)  
+1.1.2  [-v3_topmetr(1^[]), k3_topmetr=1^[], v3_topmetr(k3_topmetr)]   (23)  substitution:[[_G4153, _G4104], [1^[], k3_topmetr]]
+1.1.2.1  [- (k3_topmetr=1^[]), 1^[]=k3_topmetr]   (17)  substitution:[[_G2354, _G2309], [k3_topmetr, 1^[]]]
+1.1.2.1.1  [- (1^[]=k3_topmetr)]   (2)  
+1.1.2.2  [-v3_topmetr(k3_topmetr)]   (9)  
+1.1.3  [-v6_xxreal_2(k2_struct_0(1^[])), u1_struct_0(1^[])=k2_struct_0(1^[]), v6_xxreal_2(u1_struct_0(1^[]))]   (21)  substitution:[[_G3597, _G3548], [k2_struct_0(1^[]), u1_struct_0(1^[])]]
+1.1.3.1  [- (u1_struct_0(1^[])=k2_struct_0(1^[])), k2_struct_0(1^[])=u1_struct_0(1^[])]   (17)  substitution:[[_G2354, _G2309], [u1_struct_0(1^[]), k2_struct_0(1^[])]]
+1.1.3.1.1  [- (k2_struct_0(1^[])=u1_struct_0(1^[])), l1_struct_0(1^[])]   (4)  substitution:[[_G5984], [1^[]]]
+1.1.3.1.1.1  [-l1_struct_0(1^[]), l1_pre_topc(1^[])]   (11)  substitution:[[_G6521], [1^[]]]
+1.1.3.1.1.1.1  [-l1_pre_topc(1^[])]   (lemmata:1.1)  
+1.1.3.2  [-v6_xxreal_2(u1_struct_0(1^[])), u1_struct_0(k3_topmetr)=u1_struct_0(1^[]), v6_xxreal_2(u1_struct_0(k3_topmetr))]   (21)  substitution:[[_G3597, _G3548], [u1_struct_0(1^[]), u1_struct_0(k3_topmetr)]]
+1.1.3.2.1  [- (u1_struct_0(k3_topmetr)=u1_struct_0(1^[])), k3_topmetr=1^[]]   (15)  substitution:[[_G5664, _G5713], [k3_topmetr, 1^[]]]
+1.1.3.2.1.1  [- (k3_topmetr=1^[]), 1^[]=k3_topmetr]   (17)  substitution:[[_G2354, _G2309], [k3_topmetr, 1^[]]]
+1.1.3.2.1.1.1  [- (1^[]=k3_topmetr)]   (2)  
+1.1.3.2.2  [-v6_xxreal_2(u1_struct_0(k3_topmetr)), k1_numbers=u1_struct_0(k3_topmetr), v6_xxreal_2(k1_numbers)]   (21)  substitution:[[_G3597, _G3548], [u1_struct_0(k3_topmetr), k1_numbers]]
+1.1.3.2.2.1  [- (k1_numbers=u1_struct_0(k3_topmetr)), u1_struct_0(k3_topmetr)=k1_numbers]   (17)  substitution:[[_G2354, _G2309], [k1_numbers, u1_struct_0(k3_topmetr)]]
+1.1.3.2.2.1.1  [- (u1_struct_0(k3_topmetr)=k1_numbers)]   (10)  
+1.1.3.2.2.2  [-v6_xxreal_2(k1_numbers)]   (7)  
+------------------------------------------------------
+End of proof for l17_topalg_2

@@ -1,0 +1,46 @@
+
+t25_partit_2 is a Theorem
+Start of proof for t25_partit_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v1_xboole_0(1^[])]
+ (2)  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]
+ (3)  [-r4_relat_2(2^[], 1^[])]
+ (4)  [v4_relat_2(2^[])]
+ (5)  [m1_subset_1(_G8620, k1_zfmisc_1(k2_zfmisc_1(_G8511, _G8565))), -v1_relat_1(_G8620)]
+ (6)  [v1_relat_1(_G8863), - (k2_wellord1(_G8863, _G8948)=k3_xboole_0(_G8863, k2_zfmisc_1(_G8948, _G8948)))]
+ (7)  [r1_tarski(_G9208, _G9256), - (k3_xboole_0(_G9208, _G9256)=_G9208)]
+ (8)  [v1_relat_1(_G9746), r4_relat_2(_G9746, _G9830), -v4_relat_2(k2_wellord1(_G9746, _G9830))]
+ (9)  [m1_subset_1(_G9495, k1_zfmisc_1(_G9542)), -r1_tarski(_G9495, _G9542)]
+ (10)  [-m1_subset_1(_G9495, k1_zfmisc_1(_G9542)), r1_tarski(_G9495, _G9542)]
+ (11)  [- (k3_xboole_0(_G6367, _G6502)=k3_xboole_0(_G6434, _G6571)), _G6367=_G6434, _G6502=_G6571]
+ (12)  [- (k2_wellord1(_G6964, _G7099)=k2_wellord1(_G7031, _G7168)), _G6964=_G7031, _G7099=_G7168]
+ (13)  [_G7561=_G7610, - (k1_zfmisc_1(_G7561)=k1_zfmisc_1(_G7610))]
+ (14)  [- (k2_zfmisc_1(_G7830, _G7965)=k2_zfmisc_1(_G7897, _G8034)), _G7830=_G7897, _G7965=_G8034]
+ (15)  [- (_G2843=_G2843)]
+ (16)  [_G2942=_G2987, - (_G2987=_G2942)]
+ (17)  [- (_G3175=_G3288), _G3175=_G3231, _G3231=_G3288]
+ (18)  [-r1_tarski(_G3692, _G3829), r1_tarski(_G3625, _G3760), _G3625=_G3692, _G3760=_G3829]
+ (19)  [-v1_relat_1(_G4271), _G4222=_G4271, v1_relat_1(_G4222)]
+ (20)  [-v1_xboole_0(_G4549), _G4500=_G4549, v1_xboole_0(_G4500)]
+ (21)  [-m1_subset_1(_G4845, _G4982), m1_subset_1(_G4778, _G4913), _G4778=_G4845, _G4913=_G4982]
+ (22)  [-v4_relat_2(_G6012), _G5963=_G6012, v4_relat_2(_G5963)]
+ (23)  [-r4_relat_2(_G5442, _G5579), r4_relat_2(_G5375, _G5510), _G5375=_G5442, _G5510=_G5579]
+
+Connection Proof:
+-----------------
+1  [v4_relat_2(2^[])]   (4)  
+1.1  [-v4_relat_2(2^[]), k3_xboole_0(2^[], k2_zfmisc_1(1^[], 1^[]))=2^[], v4_relat_2(k3_xboole_0(2^[], k2_zfmisc_1(1^[], 1^[])))]   (22)  substitution:[[_G6012, _G5963], [2^[], k3_xboole_0(2^[], k2_zfmisc_1(1^[], 1^[]))]]
+1.1.1  [- (k3_xboole_0(2^[], k2_zfmisc_1(1^[], 1^[]))=2^[]), r1_tarski(2^[], k2_zfmisc_1(1^[], 1^[]))]   (7)  substitution:[[_G9208, _G9256], [2^[], k2_zfmisc_1(1^[], 1^[])]]
+1.1.1.1  [-r1_tarski(2^[], k2_zfmisc_1(1^[], 1^[])), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]   (9)  substitution:[[_G9495, _G9542], [2^[], k2_zfmisc_1(1^[], 1^[])]]
+1.1.1.1.1  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]   (2)  
+1.1.2  [-v4_relat_2(k3_xboole_0(2^[], k2_zfmisc_1(1^[], 1^[]))), k2_wellord1(2^[], 1^[])=k3_xboole_0(2^[], k2_zfmisc_1(1^[], 1^[])), v4_relat_2(k2_wellord1(2^[], 1^[]))]   (22)  substitution:[[_G6012, _G5963], [k3_xboole_0(2^[], k2_zfmisc_1(1^[], 1^[])), k2_wellord1(2^[], 1^[])]]
+1.1.2.1  [- (k2_wellord1(2^[], 1^[])=k3_xboole_0(2^[], k2_zfmisc_1(1^[], 1^[]))), v1_relat_1(2^[])]   (6)  substitution:[[_G8863, _G8948], [2^[], 1^[]]]
+1.1.2.1.1  [-v1_relat_1(2^[]), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]   (5)  substitution:[[_G8620, _G8511, _G8565], [2^[], 1^[], 1^[]]]
+1.1.2.1.1.1  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]   (2)  
+1.1.2.2  [-v4_relat_2(k2_wellord1(2^[], 1^[])), v1_relat_1(2^[]), r4_relat_2(2^[], 1^[])]   (8)  substitution:[[_G9746, _G9830], [2^[], 1^[]]]
+1.1.2.2.1  [-v1_relat_1(2^[]), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]   (5)  substitution:[[_G8620, _G8511, _G8565], [2^[], 1^[], 1^[]]]
+1.1.2.2.1.1  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 1^[])))]   (2)  
+1.1.2.2.2  [-r4_relat_2(2^[], 1^[])]   (3)  
+------------------------------------------------------
+End of proof for t25_partit_2

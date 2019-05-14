@@ -1,0 +1,85 @@
+
+t9_dilworth is a Theorem
+Start of proof for t9_dilworth
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-l1_orders_2(4^[])]
+ (2)  [-v1_dilworth(5^[], 4^[])]
+ (3)  [-m1_subset_1(5^[], k1_zfmisc_1(u1_struct_0(4^[])))]
+ (4)  [-m1_subset_1(6^[], k1_zfmisc_1(5^[]))]
+ (5)  [v1_dilworth(6^[], 4^[]), m1_subset_1(6^[], k1_zfmisc_1(u1_struct_0(4^[])))]
+ (6)  [m1_subset_1(_G7843, k1_zfmisc_1(_G7785)), r2_hidden(_G7973, _G7843), -r2_hidden(_G7973, _G7785)]
+ (7)  [-r2_hidden(1^[_G8263, _G8205], _G8205), -m1_subset_1(_G8205, k1_zfmisc_1(_G8263))]
+ (8)  [r2_hidden(1^[_G8263, _G8205], _G8263), -m1_subset_1(_G8205, k1_zfmisc_1(_G8263))]
+ (9)  [l1_orders_2(_G8616), m1_subset_1(_G8778, k1_zfmisc_1(u1_struct_0(_G8616))), -v1_dilworth(_G8778, _G8616), -m1_subset_1(2^[_G8778, _G8616], u1_struct_0(_G8616))]
+ (10)  [l1_orders_2(_G8616), m1_subset_1(_G8778, k1_zfmisc_1(u1_struct_0(_G8616))), -v1_dilworth(_G8778, _G8616), -m1_subset_1(3^[_G8778, _G8616], u1_struct_0(_G8616))]
+ (11)  [l1_orders_2(_G8616), m1_subset_1(_G8778, k1_zfmisc_1(u1_struct_0(_G8616))), -v1_dilworth(_G8778, _G8616), -r2_hidden(2^[_G8778, _G8616], _G8778)]
+ (12)  [l1_orders_2(_G8616), m1_subset_1(_G8778, k1_zfmisc_1(u1_struct_0(_G8616))), -v1_dilworth(_G8778, _G8616), -r2_hidden(3^[_G8778, _G8616], _G8778)]
+ (13)  [l1_orders_2(_G8616), m1_subset_1(_G8778, k1_zfmisc_1(u1_struct_0(_G8616))), -v1_dilworth(_G8778, _G8616), 2^[_G8778, _G8616]=3^[_G8778, _G8616]]
+ (14)  [l1_orders_2(_G8616), m1_subset_1(_G8778, k1_zfmisc_1(u1_struct_0(_G8616))), -v1_dilworth(_G8778, _G8616), r1_orders_2(_G8616, 2^[_G8778, _G8616], 3^[_G8778, _G8616])]
+ (15)  [l1_orders_2(_G8616), m1_subset_1(_G8778, k1_zfmisc_1(u1_struct_0(_G8616))), -v1_dilworth(_G8778, _G8616), r1_orders_2(_G8616, 3^[_G8778, _G8616], 2^[_G8778, _G8616])]
+ (16)  [l1_orders_2(_G8616), m1_subset_1(_G8778, k1_zfmisc_1(u1_struct_0(_G8616))), v1_dilworth(_G8778, _G8616), m1_subset_1(_G9152, u1_struct_0(_G8616)), m1_subset_1(_G9324, u1_struct_0(_G8616)), r2_hidden(_G9152, _G8778), r2_hidden(_G9324, _G8778), - (_G9152=_G9324), -r1_orders_2(_G8616, _G9152, _G9324), -r1_orders_2(_G8616, _G9324, _G9152)]
+ (17)  [_G7196=_G7245, - (k1_zfmisc_1(_G7196)=k1_zfmisc_1(_G7245))]
+ (18)  [_G7465=_G7514, - (u1_struct_0(_G7465)=u1_struct_0(_G7514))]
+ (19)  [- (_G3221=_G3221)]
+ (20)  [_G3320=_G3365, - (_G3365=_G3320)]
+ (21)  [- (_G3553=_G3666), _G3553=_G3609, _G3609=_G3666]
+ (22)  [-r2_hidden(_G4070, _G4207), r2_hidden(_G4003, _G4138), _G4003=_G4070, _G4138=_G4207]
+ (23)  [-r1_orders_2(_G4685, _G4858, _G5035), r1_orders_2(_G4600, _G4771, _G4946), _G4600=_G4685, _G4771=_G4858, _G4946=_G5035]
+ (24)  [-l1_orders_2(_G5677), _G5628=_G5677, l1_orders_2(_G5628)]
+ (25)  [-v1_dilworth(_G5973, _G6110), v1_dilworth(_G5906, _G6041), _G5906=_G5973, _G6041=_G6110]
+ (26)  [-m1_subset_1(_G6561, _G6698), m1_subset_1(_G6494, _G6629), _G6494=_G6561, _G6629=_G6698]
+
+Connection Proof:
+-----------------
+1  [v1_dilworth(6^[], 4^[]), m1_subset_1(6^[], k1_zfmisc_1(u1_struct_0(4^[])))]   (5)  
+1.1  [-v1_dilworth(6^[], 4^[]), l1_orders_2(4^[]), m1_subset_1(6^[], k1_zfmisc_1(u1_struct_0(4^[]))), 2^[6^[], 4^[]]=3^[6^[], 4^[]]]   (13)  substitution:[[_G8778, _G8616], [6^[], 4^[]]]
+1.1.1  [-l1_orders_2(4^[])]   (1)  
+1.1.2  [-m1_subset_1(6^[], k1_zfmisc_1(u1_struct_0(4^[]))), -r2_hidden(1^[u1_struct_0(4^[]), 6^[]], 6^[])]   (7)  substitution:[[_G8205, _G8263], [6^[], u1_struct_0(4^[])]]
+1.1.2.1  [r2_hidden(1^[u1_struct_0(4^[]), 6^[]], 6^[]), m1_subset_1(6^[], k1_zfmisc_1(5^[])), -r2_hidden(1^[u1_struct_0(4^[]), 6^[]], 5^[])]   (6)  substitution:[[_G7973, _G7843, _G7785], [1^[u1_struct_0(4^[]), 6^[]], 6^[], 5^[]]]
+1.1.2.1.1  [-m1_subset_1(6^[], k1_zfmisc_1(5^[]))]   (4)  
+1.1.2.1.2  [r2_hidden(1^[u1_struct_0(4^[]), 6^[]], 5^[]), m1_subset_1(5^[], k1_zfmisc_1(u1_struct_0(4^[]))), -r2_hidden(1^[u1_struct_0(4^[]), 6^[]], u1_struct_0(4^[]))]   (6)  substitution:[[_G7973, _G7843, _G7785], [1^[u1_struct_0(4^[]), 6^[]], 5^[], u1_struct_0(4^[])]]
+1.1.2.1.2.1  [-m1_subset_1(5^[], k1_zfmisc_1(u1_struct_0(4^[])))]   (3)  
+1.1.2.1.2.2  [r2_hidden(1^[u1_struct_0(4^[]), 6^[]], u1_struct_0(4^[])), -m1_subset_1(6^[], k1_zfmisc_1(u1_struct_0(4^[])))]   (8)  substitution:[[_G8263, _G8205], [u1_struct_0(4^[]), 6^[]]]
+1.1.2.1.2.2.1  [m1_subset_1(6^[], k1_zfmisc_1(u1_struct_0(4^[])))]   (reduction:1.1)  
+1.1.3  [- (2^[6^[], 4^[]]=3^[6^[], 4^[]]), l1_orders_2(4^[]), m1_subset_1(5^[], k1_zfmisc_1(u1_struct_0(4^[]))), v1_dilworth(5^[], 4^[]), m1_subset_1(2^[6^[], 4^[]], u1_struct_0(4^[])), m1_subset_1(3^[6^[], 4^[]], u1_struct_0(4^[])), r2_hidden(2^[6^[], 4^[]], 5^[]), r2_hidden(3^[6^[], 4^[]], 5^[]), -r1_orders_2(4^[], 2^[6^[], 4^[]], 3^[6^[], 4^[]]), -r1_orders_2(4^[], 3^[6^[], 4^[]], 2^[6^[], 4^[]])]   (16)  substitution:[[_G9152, _G9324, _G8616, _G8778], [2^[6^[], 4^[]], 3^[6^[], 4^[]], 4^[], 5^[]]]
+1.1.3.1  [-l1_orders_2(4^[])]   (1)  
+1.1.3.2  [-m1_subset_1(5^[], k1_zfmisc_1(u1_struct_0(4^[])))]   (3)  
+1.1.3.3  [-v1_dilworth(5^[], 4^[])]   (2)  
+1.1.3.4  [-m1_subset_1(2^[6^[], 4^[]], u1_struct_0(4^[])), l1_orders_2(4^[]), m1_subset_1(6^[], k1_zfmisc_1(u1_struct_0(4^[]))), -v1_dilworth(6^[], 4^[])]   (9)  substitution:[[_G8778, _G8616], [6^[], 4^[]]]
+1.1.3.4.1  [-l1_orders_2(4^[])]   (1)  
+1.1.3.4.2  [-m1_subset_1(6^[], k1_zfmisc_1(u1_struct_0(4^[])))]   (lemmata:1.1)  
+1.1.3.4.3  [v1_dilworth(6^[], 4^[])]   (reduction:1)  
+1.1.3.5  [-m1_subset_1(3^[6^[], 4^[]], u1_struct_0(4^[])), l1_orders_2(4^[]), m1_subset_1(6^[], k1_zfmisc_1(u1_struct_0(4^[]))), -v1_dilworth(6^[], 4^[])]   (10)  substitution:[[_G8778, _G8616], [6^[], 4^[]]]
+1.1.3.5.1  [-l1_orders_2(4^[])]   (1)  
+1.1.3.5.2  [-m1_subset_1(6^[], k1_zfmisc_1(u1_struct_0(4^[])))]   (lemmata:1.1)  
+1.1.3.5.3  [v1_dilworth(6^[], 4^[])]   (reduction:1)  
+1.1.3.6  [-r2_hidden(2^[6^[], 4^[]], 5^[]), m1_subset_1(6^[], k1_zfmisc_1(5^[])), r2_hidden(2^[6^[], 4^[]], 6^[])]   (6)  substitution:[[_G7973, _G7785, _G7843], [2^[6^[], 4^[]], 5^[], 6^[]]]
+1.1.3.6.1  [-m1_subset_1(6^[], k1_zfmisc_1(5^[]))]   (4)  
+1.1.3.6.2  [-r2_hidden(2^[6^[], 4^[]], 6^[]), l1_orders_2(4^[]), m1_subset_1(6^[], k1_zfmisc_1(u1_struct_0(4^[]))), -v1_dilworth(6^[], 4^[])]   (11)  substitution:[[_G8778, _G8616], [6^[], 4^[]]]
+1.1.3.6.2.1  [-l1_orders_2(4^[])]   (1)  
+1.1.3.6.2.2  [-m1_subset_1(6^[], k1_zfmisc_1(u1_struct_0(4^[])))]   (lemmata:1.1)  
+1.1.3.6.2.3  [v1_dilworth(6^[], 4^[])]   (reduction:1)  
+1.1.3.7  [-r2_hidden(3^[6^[], 4^[]], 5^[]), m1_subset_1(6^[], k1_zfmisc_1(5^[])), r2_hidden(3^[6^[], 4^[]], 6^[])]   (6)  substitution:[[_G7973, _G7785, _G7843], [3^[6^[], 4^[]], 5^[], 6^[]]]
+1.1.3.7.1  [-m1_subset_1(6^[], k1_zfmisc_1(5^[]))]   (4)  
+1.1.3.7.2  [-r2_hidden(3^[6^[], 4^[]], 6^[]), l1_orders_2(4^[]), m1_subset_1(6^[], k1_zfmisc_1(u1_struct_0(4^[]))), -v1_dilworth(6^[], 4^[])]   (12)  substitution:[[_G8778, _G8616], [6^[], 4^[]]]
+1.1.3.7.2.1  [-l1_orders_2(4^[])]   (1)  
+1.1.3.7.2.2  [-m1_subset_1(6^[], k1_zfmisc_1(u1_struct_0(4^[])))]   (lemmata:1.1)  
+1.1.3.7.2.3  [v1_dilworth(6^[], 4^[])]   (reduction:1)  
+1.1.3.8  [r1_orders_2(4^[], 2^[6^[], 4^[]], 3^[6^[], 4^[]]), l1_orders_2(4^[]), m1_subset_1(6^[], k1_zfmisc_1(u1_struct_0(4^[]))), -v1_dilworth(6^[], 4^[])]   (14)  substitution:[[_G8616, _G8778], [4^[], 6^[]]]
+1.1.3.8.1  [-l1_orders_2(4^[])]   (1)  
+1.1.3.8.2  [-m1_subset_1(6^[], k1_zfmisc_1(u1_struct_0(4^[])))]   (lemmata:1.1)  
+1.1.3.8.3  [v1_dilworth(6^[], 4^[])]   (reduction:1)  
+1.1.3.9  [r1_orders_2(4^[], 3^[6^[], 4^[]], 2^[6^[], 4^[]]), l1_orders_2(4^[]), m1_subset_1(6^[], k1_zfmisc_1(u1_struct_0(4^[]))), -v1_dilworth(6^[], 4^[])]   (15)  substitution:[[_G8616, _G8778], [4^[], 6^[]]]
+1.1.3.9.1  [-l1_orders_2(4^[])]   (1)  
+1.1.3.9.2  [-m1_subset_1(6^[], k1_zfmisc_1(u1_struct_0(4^[])))]   (lemmata:1.1)  
+1.1.3.9.3  [v1_dilworth(6^[], 4^[])]   (reduction:1)  
+1.2  [-m1_subset_1(6^[], k1_zfmisc_1(u1_struct_0(4^[]))), -r2_hidden(1^[u1_struct_0(4^[]), 6^[]], 6^[])]   (7)  substitution:[[_G8205, _G8263], [6^[], u1_struct_0(4^[])]]
+1.2.1  [r2_hidden(1^[u1_struct_0(4^[]), 6^[]], 6^[]), m1_subset_1(6^[], k1_zfmisc_1(5^[])), -r2_hidden(1^[u1_struct_0(4^[]), 6^[]], 5^[])]   (6)  substitution:[[_G7973, _G7843, _G7785], [1^[u1_struct_0(4^[]), 6^[]], 6^[], 5^[]]]
+1.2.1.1  [-m1_subset_1(6^[], k1_zfmisc_1(5^[]))]   (4)  
+1.2.1.2  [r2_hidden(1^[u1_struct_0(4^[]), 6^[]], 5^[]), m1_subset_1(5^[], k1_zfmisc_1(u1_struct_0(4^[]))), -r2_hidden(1^[u1_struct_0(4^[]), 6^[]], u1_struct_0(4^[]))]   (6)  substitution:[[_G7973, _G7843, _G7785], [1^[u1_struct_0(4^[]), 6^[]], 5^[], u1_struct_0(4^[])]]
+1.2.1.2.1  [-m1_subset_1(5^[], k1_zfmisc_1(u1_struct_0(4^[])))]   (3)  
+1.2.1.2.2  [r2_hidden(1^[u1_struct_0(4^[]), 6^[]], u1_struct_0(4^[])), -m1_subset_1(6^[], k1_zfmisc_1(u1_struct_0(4^[])))]   (8)  substitution:[[_G8263, _G8205], [u1_struct_0(4^[]), 6^[]]]
+1.2.1.2.2.1  [m1_subset_1(6^[], k1_zfmisc_1(u1_struct_0(4^[])))]   (reduction:1)  
+------------------------------------------------------
+End of proof for t9_dilworth

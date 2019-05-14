@@ -1,0 +1,45 @@
+
+l48_subset_1 is a Theorem
+Start of proof for l48_subset_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [m1_subset_1(3^[], k1_zfmisc_1(4^[]))]
+ (2)  [r2_hidden(_G8432, 3^[]), -r2_hidden(_G8432, 4^[])]
+ (3)  [_G5172=_G5221, - (k1_zfmisc_1(_G5172)=k1_zfmisc_1(_G5221))]
+ (4)  [- (_G2255=_G2255)]
+ (5)  [_G2354=_G2399, - (_G2399=_G2354)]
+ (6)  [- (_G2587=_G2700), _G2587=_G2643, _G2643=_G2700]
+ (7)  [-r1_tarski(_G3104, _G3241), r1_tarski(_G3037, _G3172), _G3037=_G3104, _G3172=_G3241]
+ (8)  [-v1_xboole_0(_G3683), _G3634=_G3683, v1_xboole_0(_G3634)]
+ (9)  [-r2_hidden(_G3979, _G4116), r2_hidden(_G3912, _G4047), _G3912=_G3979, _G4047=_G4116]
+ (10)  [-m1_subset_1(_G4567, _G4704), m1_subset_1(_G4500, _G4635), _G4500=_G4567, _G4635=_G4704]
+ (11)  [-v1_xboole_0(_G5471), m1_subset_1(_G5539, _G5471), -r2_hidden(_G5539, _G5471)]
+ (12)  [-v1_xboole_0(_G5471), -m1_subset_1(_G5539, _G5471), r2_hidden(_G5539, _G5471)]
+ (13)  [v1_xboole_0(_G5471), m1_subset_1(_G5539, _G5471), -v1_xboole_0(_G5539)]
+ (14)  [v1_xboole_0(_G5471), -m1_subset_1(_G5539, _G5471), v1_xboole_0(_G5539)]
+ (15)  [v1_xboole_0(k1_zfmisc_1(_G6823))]
+ (16)  [-r1_tarski(_G6430, _G6486), -r2_hidden(2^[_G6486, _G6430], _G6430)]
+ (17)  [-r1_tarski(_G6430, _G6486), r2_hidden(2^[_G6486, _G6430], _G6486)]
+ (18)  [r1_tarski(_G6430, _G6486), r2_hidden(_G6600, _G6430), -r2_hidden(_G6600, _G6486)]
+ (19)  [_G6068=k1_zfmisc_1(_G6010), r2_hidden(_G6198, _G6068), -r1_tarski(_G6198, _G6010)]
+ (20)  [_G6068=k1_zfmisc_1(_G6010), -r2_hidden(_G6198, _G6068), r1_tarski(_G6198, _G6010)]
+ (21)  [- (_G6068=k1_zfmisc_1(_G6010)), r2_hidden(1^[_G6068, _G6010], _G6068), r1_tarski(1^[_G6068, _G6010], _G6010)]
+ (22)  [- (_G6068=k1_zfmisc_1(_G6010)), -r2_hidden(1^[_G6068, _G6010], _G6068), -r1_tarski(1^[_G6068, _G6010], _G6010)]
+
+Connection Proof:
+-----------------
+1  [m1_subset_1(3^[], k1_zfmisc_1(4^[]))]   (1)  
+1.1  [-m1_subset_1(3^[], k1_zfmisc_1(4^[])), -v1_xboole_0(k1_zfmisc_1(4^[])), r2_hidden(3^[], k1_zfmisc_1(4^[]))]   (12)  substitution:[[_G5539, _G5471], [3^[], k1_zfmisc_1(4^[])]]
+1.1.1  [v1_xboole_0(k1_zfmisc_1(4^[])), -v1_xboole_0(k1_zfmisc_1(4^[])), k1_zfmisc_1(4^[])=k1_zfmisc_1(4^[])]   (8)  substitution:[[_G3634, _G3683], [k1_zfmisc_1(4^[]), k1_zfmisc_1(4^[])]]
+1.1.1.1  [v1_xboole_0(k1_zfmisc_1(4^[]))]   (15)  substitution:[[_G6823], [4^[]]]
+1.1.1.2  [- (k1_zfmisc_1(4^[])=k1_zfmisc_1(4^[])), 4^[]=4^[]]   (3)  substitution:[[_G5172, _G5221], [4^[], 4^[]]]
+1.1.1.2.1  [- (4^[]=4^[])]   (4)  substitution:[[_G2255], [4^[]]]
+1.1.2  [-r2_hidden(3^[], k1_zfmisc_1(4^[])), k1_zfmisc_1(4^[])=k1_zfmisc_1(4^[]), r1_tarski(3^[], 4^[])]   (20)  substitution:[[_G6198, _G6068, _G6010], [3^[], k1_zfmisc_1(4^[]), 4^[]]]
+1.1.2.1  [- (k1_zfmisc_1(4^[])=k1_zfmisc_1(4^[])), 4^[]=4^[]]   (3)  substitution:[[_G5172, _G5221], [4^[], 4^[]]]
+1.1.2.1.1  [- (4^[]=4^[])]   (4)  substitution:[[_G2255], [4^[]]]
+1.1.2.2  [-r1_tarski(3^[], 4^[]), -r2_hidden(2^[4^[], 3^[]], 3^[])]   (16)  substitution:[[_G6430, _G6486], [3^[], 4^[]]]
+1.1.2.2.1  [r2_hidden(2^[4^[], 3^[]], 3^[]), -r2_hidden(2^[4^[], 3^[]], 4^[])]   (2)  substitution:[[_G8432], [2^[4^[], 3^[]]]]
+1.1.2.2.1.1  [r2_hidden(2^[4^[], 3^[]], 4^[]), -r1_tarski(3^[], 4^[])]   (17)  substitution:[[_G6486, _G6430], [4^[], 3^[]]]
+1.1.2.2.1.1.1  [r1_tarski(3^[], 4^[])]   (reduction:1.1.2)  
+------------------------------------------------------
+End of proof for l48_subset_1

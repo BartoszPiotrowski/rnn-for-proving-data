@@ -1,0 +1,27 @@
+
+t139_xboolean is a Theorem
+Start of proof for t139_xboolean
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xboolean(1^[])]
+ (2)  [- (k4_xboolean(1^[], 1^[])=k1_xboolean)]
+ (3)  [1^[]=k1_xboolean]
+ (4)  [- (k4_xboolean(_G2798, _G2798)=_G2798), v1_xboolean(_G2798), v1_xboolean(_G2850)]
+ (5)  [- (k4_xboolean(_G2189, _G2324)=k4_xboolean(_G2256, _G2393)), _G2189=_G2256, _G2324=_G2393]
+ (6)  [-v1_xboolean(_G1948), _G1899=_G1948, v1_xboolean(_G1899)]
+ (7)  [- (_G1126=_G1126)]
+ (8)  [_G1225=_G1270, - (_G1270=_G1225)]
+ (9)  [- (_G1458=_G1571), _G1458=_G1514, _G1514=_G1571]
+
+Connection Proof:
+-----------------
+1  [1^[]=k1_xboolean]   (3)  
+1.1  [- (1^[]=k1_xboolean), k1_xboolean=1^[]]   (8)  substitution:[[_G1270, _G1225], [1^[], k1_xboolean]]
+1.1.1  [- (k1_xboolean=1^[]), k1_xboolean=k4_xboolean(1^[], 1^[]), k4_xboolean(1^[], 1^[])=1^[]]   (9)  substitution:[[_G1458, _G1571, _G1514], [k1_xboolean, 1^[], k4_xboolean(1^[], 1^[])]]
+1.1.1.1  [- (k1_xboolean=k4_xboolean(1^[], 1^[])), k4_xboolean(1^[], 1^[])=k1_xboolean]   (8)  substitution:[[_G1270, _G1225], [k1_xboolean, k4_xboolean(1^[], 1^[])]]
+1.1.1.1.1  [- (k4_xboolean(1^[], 1^[])=k1_xboolean)]   (2)  
+1.1.1.2  [- (k4_xboolean(1^[], 1^[])=1^[]), v1_xboolean(1^[]), v1_xboolean(1^[])]   (4)  substitution:[[_G2798, _G2850], [1^[], 1^[]]]
+1.1.1.2.1  [-v1_xboolean(1^[])]   (1)  
+1.1.1.2.2  [-v1_xboolean(1^[])]   (1)  
+------------------------------------------------------
+End of proof for t139_xboolean

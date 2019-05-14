@@ -1,0 +1,59 @@
+
+t36_jordan is a Theorem
+Start of proof for t36_jordan
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(3^[])]
+ (2)  [-v2_pre_topc(3^[])]
+ (3)  [-v1_borsuk_2(3^[])]
+ (4)  [-l1_pre_topc(3^[])]
+ (5)  [-m1_subset_1(4^[], u1_struct_0(3^[]))]
+ (6)  [-m1_subset_1(5^[], u1_struct_0(3^[]))]
+ (7)  [-m1_subset_1(6^[], u1_struct_0(3^[]))]
+ (8)  [-m1_borsuk_2(7^[], 3^[], 5^[], 6^[])]
+ (9)  [-m1_borsuk_2(8^[], 3^[], 4^[], 5^[])]
+ (10)  [r1_tarski(k2_relset_1(u1_struct_0(3^[]), 7^[]), k2_relset_1(u1_struct_0(3^[]), k1_borsuk_2(3^[], 4^[], 5^[], 6^[], 8^[], 7^[])))]
+ (11)  [l1_pre_topc(_G1587), -v1_borsuk_2(_G1587), -m1_subset_1(1^[_G1587], u1_struct_0(_G1587))]
+ (12)  [l1_pre_topc(_G1587), -v1_borsuk_2(_G1587), -m1_subset_1(2^[_G1587], u1_struct_0(_G1587))]
+ (13)  [l1_pre_topc(_G1587), -v1_borsuk_2(_G1587), r1_borsuk_2(_G1587, 1^[_G1587], 2^[_G1587])]
+ (14)  [l1_pre_topc(_G1587), v1_borsuk_2(_G1587), m1_subset_1(_G1722, u1_struct_0(_G1587)), m1_subset_1(_G1855, u1_struct_0(_G1587)), -r1_borsuk_2(_G1587, _G1722, _G1855)]
+ (15)  [-r1_borsuk_2(_G2189, _G2274, _G2360), r1_borsuk_6(_G2189, _G2274, _G2360), m1_subset_1(_G2360, u1_struct_0(_G2189)), m1_subset_1(_G2274, u1_struct_0(_G2189)), -v2_struct_0(_G2189), v2_pre_topc(_G2189), l1_pre_topc(_G2189)]
+ (16)  [r1_borsuk_2(_G2189, _G2274, _G2360), -r1_borsuk_6(_G2189, _G2274, _G2360), m1_subset_1(_G2360, u1_struct_0(_G2189)), m1_subset_1(_G2274, u1_struct_0(_G2189)), -v2_struct_0(_G2189), v2_pre_topc(_G2189), l1_pre_topc(_G2189)]
+ (17)  [l1_pre_topc(_G3040), v2_pre_topc(_G3040), -v2_struct_0(_G3040), m1_subset_1(_G3339, u1_struct_0(_G3040)), m1_subset_1(_G3541, u1_struct_0(_G3040)), m1_subset_1(_G3736, u1_struct_0(_G3040)), m1_borsuk_2(_G3924, _G3040, _G3541, _G3736), m1_borsuk_2(_G4177, _G3040, _G3339, _G3541), -r1_tarski(k2_relset_1(u1_struct_0(_G3040), _G3924), k2_relset_1(u1_struct_0(_G3040), k1_borsuk_2(_G3040, _G3339, _G3541, _G3736, _G4177, _G3924))), r1_borsuk_6(_G3040, _G3339, _G3541), r1_borsuk_6(_G3040, _G3541, _G3736)]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k2_relset_1(u1_struct_0(3^[]), 7^[]), k2_relset_1(u1_struct_0(3^[]), k1_borsuk_2(3^[], 4^[], 5^[], 6^[], 8^[], 7^[])))]   (10)  
+1.1  [-r1_tarski(k2_relset_1(u1_struct_0(3^[]), 7^[]), k2_relset_1(u1_struct_0(3^[]), k1_borsuk_2(3^[], 4^[], 5^[], 6^[], 8^[], 7^[]))), l1_pre_topc(3^[]), v2_pre_topc(3^[]), -v2_struct_0(3^[]), m1_subset_1(4^[], u1_struct_0(3^[])), m1_subset_1(5^[], u1_struct_0(3^[])), m1_subset_1(6^[], u1_struct_0(3^[])), m1_borsuk_2(7^[], 3^[], 5^[], 6^[]), m1_borsuk_2(8^[], 3^[], 4^[], 5^[]), r1_borsuk_6(3^[], 4^[], 5^[]), r1_borsuk_6(3^[], 5^[], 6^[])]   (17)  substitution:[[_G3040, _G3924, _G3339, _G3541, _G3736, _G4177], [3^[], 7^[], 4^[], 5^[], 6^[], 8^[]]]
+1.1.1  [-l1_pre_topc(3^[])]   (4)  
+1.1.2  [-v2_pre_topc(3^[])]   (2)  
+1.1.3  [v2_struct_0(3^[])]   (1)  
+1.1.4  [-m1_subset_1(4^[], u1_struct_0(3^[]))]   (5)  
+1.1.5  [-m1_subset_1(5^[], u1_struct_0(3^[]))]   (6)  
+1.1.6  [-m1_subset_1(6^[], u1_struct_0(3^[]))]   (7)  
+1.1.7  [-m1_borsuk_2(7^[], 3^[], 5^[], 6^[])]   (8)  
+1.1.8  [-m1_borsuk_2(8^[], 3^[], 4^[], 5^[])]   (9)  
+1.1.9  [-r1_borsuk_6(3^[], 4^[], 5^[]), r1_borsuk_2(3^[], 4^[], 5^[]), m1_subset_1(5^[], u1_struct_0(3^[])), m1_subset_1(4^[], u1_struct_0(3^[])), -v2_struct_0(3^[]), v2_pre_topc(3^[]), l1_pre_topc(3^[])]   (16)  substitution:[[_G2189, _G2274, _G2360], [3^[], 4^[], 5^[]]]
+1.1.9.1  [-r1_borsuk_2(3^[], 4^[], 5^[]), l1_pre_topc(3^[]), v1_borsuk_2(3^[]), m1_subset_1(4^[], u1_struct_0(3^[])), m1_subset_1(5^[], u1_struct_0(3^[]))]   (14)  substitution:[[_G1587, _G1722, _G1855], [3^[], 4^[], 5^[]]]
+1.1.9.1.1  [-l1_pre_topc(3^[])]   (4)  
+1.1.9.1.2  [-v1_borsuk_2(3^[])]   (3)  
+1.1.9.1.3  [-m1_subset_1(4^[], u1_struct_0(3^[]))]   (5)  
+1.1.9.1.4  [-m1_subset_1(5^[], u1_struct_0(3^[]))]   (6)  
+1.1.9.2  [-m1_subset_1(5^[], u1_struct_0(3^[]))]   (6)  
+1.1.9.3  [-m1_subset_1(4^[], u1_struct_0(3^[]))]   (5)  
+1.1.9.4  [v2_struct_0(3^[])]   (1)  
+1.1.9.5  [-v2_pre_topc(3^[])]   (2)  
+1.1.9.6  [-l1_pre_topc(3^[])]   (4)  
+1.1.10  [-r1_borsuk_6(3^[], 5^[], 6^[]), r1_borsuk_2(3^[], 5^[], 6^[]), m1_subset_1(6^[], u1_struct_0(3^[])), m1_subset_1(5^[], u1_struct_0(3^[])), -v2_struct_0(3^[]), v2_pre_topc(3^[]), l1_pre_topc(3^[])]   (16)  substitution:[[_G2189, _G2274, _G2360], [3^[], 5^[], 6^[]]]
+1.1.10.1  [-r1_borsuk_2(3^[], 5^[], 6^[]), l1_pre_topc(3^[]), v1_borsuk_2(3^[]), m1_subset_1(5^[], u1_struct_0(3^[])), m1_subset_1(6^[], u1_struct_0(3^[]))]   (14)  substitution:[[_G1587, _G1722, _G1855], [3^[], 5^[], 6^[]]]
+1.1.10.1.1  [-l1_pre_topc(3^[])]   (4)  
+1.1.10.1.2  [-v1_borsuk_2(3^[])]   (3)  
+1.1.10.1.3  [-m1_subset_1(5^[], u1_struct_0(3^[]))]   (6)  
+1.1.10.1.4  [-m1_subset_1(6^[], u1_struct_0(3^[]))]   (7)  
+1.1.10.2  [-m1_subset_1(6^[], u1_struct_0(3^[]))]   (7)  
+1.1.10.3  [-m1_subset_1(5^[], u1_struct_0(3^[]))]   (6)  
+1.1.10.4  [v2_struct_0(3^[])]   (1)  
+1.1.10.5  [-v2_pre_topc(3^[])]   (2)  
+1.1.10.6  [-l1_pre_topc(3^[])]   (4)  
+------------------------------------------------------
+End of proof for t36_jordan

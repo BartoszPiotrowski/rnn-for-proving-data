@@ -1,0 +1,56 @@
+
+t13_connsp_3 is a Theorem
+Start of proof for t13_connsp_3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(1^[])]
+ (2)  [-v2_pre_topc(1^[])]
+ (3)  [-l1_pre_topc(1^[])]
+ (4)  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]
+ (5)  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(1^[])))]
+ (6)  [-v2_connsp_1(2^[], 1^[])]
+ (7)  [-v2_connsp_1(3^[], 1^[])]
+ (8)  [-r1_tarski(2^[], 3^[])]
+ (9)  [2^[]=k1_xboole_0]
+ (10)  [r1_tarski(3^[], k1_connsp_3(1^[], 2^[]))]
+ (11)  [-r1_tarski(_G8371, _G8371)]
+ (12)  [l1_pre_topc(_G9662), v2_pre_topc(_G9662), m1_subset_1(_G9836, k1_zfmisc_1(u1_struct_0(_G9662))), -r1_tarski(_G9836, k1_connsp_3(_G9662, _G9836)), m1_subset_1(_G10010, k1_zfmisc_1(u1_struct_0(_G9662))), v2_connsp_1(_G10010, _G9662), r1_tarski(_G9836, _G10010)]
+ (13)  [l1_pre_topc(_G8523), v2_pre_topc(_G8523), -v2_struct_0(_G8523), m1_subset_1(_G8786, k1_zfmisc_1(u1_struct_0(_G8523))), m1_subset_1(_G8966, k1_zfmisc_1(u1_struct_0(_G8523))), - (k1_connsp_3(_G8523, _G8786)=k1_connsp_3(_G8523, _G8966)), - (_G8786=k1_xboole_0), v2_connsp_1(_G8786, _G8523), v2_connsp_1(_G8966, _G8523), r1_tarski(_G8786, _G8966)]
+ (14)  [_G7164=_G7213, - (k1_zfmisc_1(_G7164)=k1_zfmisc_1(_G7213))]
+ (15)  [_G7442=_G7491, - (u1_struct_0(_G7442)=u1_struct_0(_G7491))]
+ (16)  [- (k1_connsp_3(_G7711, _G7846)=k1_connsp_3(_G7778, _G7915)), _G7711=_G7778, _G7846=_G7915]
+ (17)  [- (_G3640=_G3640)]
+ (18)  [_G3739=_G3784, - (_G3784=_G3739)]
+ (19)  [- (_G3972=_G4085), _G3972=_G4028, _G4028=_G4085]
+ (20)  [-v2_struct_0(_G4471), _G4422=_G4471, v2_struct_0(_G4422)]
+ (21)  [-v2_pre_topc(_G4749), _G4700=_G4749, v2_pre_topc(_G4700)]
+ (22)  [-l1_pre_topc(_G5027), _G4978=_G5027, l1_pre_topc(_G4978)]
+ (23)  [-m1_subset_1(_G5323, _G5460), m1_subset_1(_G5256, _G5391), _G5256=_G5323, _G5391=_G5460]
+ (24)  [-v2_connsp_1(_G5920, _G6057), v2_connsp_1(_G5853, _G5988), _G5853=_G5920, _G5988=_G6057]
+ (25)  [-r1_tarski(_G6508, _G6645), r1_tarski(_G6441, _G6576), _G6441=_G6508, _G6576=_G6645]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(3^[], k1_connsp_3(1^[], 2^[]))]   (10)  
+1.1  [-r1_tarski(3^[], k1_connsp_3(1^[], 2^[])), r1_tarski(3^[], k1_connsp_3(1^[], 3^[])), 3^[]=3^[], k1_connsp_3(1^[], 3^[])=k1_connsp_3(1^[], 2^[])]   (25)  substitution:[[_G6508, _G6645, _G6441, _G6576], [3^[], k1_connsp_3(1^[], 2^[]), 3^[], k1_connsp_3(1^[], 3^[])]]
+1.1.1  [-r1_tarski(3^[], k1_connsp_3(1^[], 3^[])), l1_pre_topc(1^[]), v2_pre_topc(1^[]), m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(1^[]))), m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(1^[]))), v2_connsp_1(3^[], 1^[]), r1_tarski(3^[], 3^[])]   (12)  substitution:[[_G9836, _G9662, _G10010], [3^[], 1^[], 3^[]]]
+1.1.1.1  [-l1_pre_topc(1^[])]   (3)  
+1.1.1.2  [-v2_pre_topc(1^[])]   (2)  
+1.1.1.3  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (5)  
+1.1.1.4  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (5)  
+1.1.1.5  [-v2_connsp_1(3^[], 1^[])]   (7)  
+1.1.1.6  [-r1_tarski(3^[], 3^[])]   (11)  substitution:[[_G8371], [3^[]]]
+1.1.2  [- (3^[]=3^[])]   (17)  substitution:[[_G3640], [3^[]]]
+1.1.3  [- (k1_connsp_3(1^[], 3^[])=k1_connsp_3(1^[], 2^[])), k1_connsp_3(1^[], 2^[])=k1_connsp_3(1^[], 3^[])]   (18)  substitution:[[_G3784, _G3739], [k1_connsp_3(1^[], 3^[]), k1_connsp_3(1^[], 2^[])]]
+1.1.3.1  [- (k1_connsp_3(1^[], 2^[])=k1_connsp_3(1^[], 3^[])), l1_pre_topc(1^[]), v2_pre_topc(1^[]), -v2_struct_0(1^[]), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[]))), m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(1^[]))), - (2^[]=k1_xboole_0), v2_connsp_1(2^[], 1^[]), v2_connsp_1(3^[], 1^[]), r1_tarski(2^[], 3^[])]   (13)  substitution:[[_G8523, _G8786, _G8966], [1^[], 2^[], 3^[]]]
+1.1.3.1.1  [-l1_pre_topc(1^[])]   (3)  
+1.1.3.1.2  [-v2_pre_topc(1^[])]   (2)  
+1.1.3.1.3  [v2_struct_0(1^[])]   (1)  
+1.1.3.1.4  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (4)  
+1.1.3.1.5  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (5)  
+1.1.3.1.6  [2^[]=k1_xboole_0]   (9)  
+1.1.3.1.7  [-v2_connsp_1(2^[], 1^[])]   (6)  
+1.1.3.1.8  [-v2_connsp_1(3^[], 1^[])]   (7)  
+1.1.3.1.9  [-r1_tarski(2^[], 3^[])]   (8)  
+------------------------------------------------------
+End of proof for t13_connsp_3

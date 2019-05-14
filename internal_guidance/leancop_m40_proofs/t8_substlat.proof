@@ -1,0 +1,32 @@
+
+t8_substlat is a Theorem
+Start of proof for t8_substlat
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(4^[], k5_finsub_1(k4_partfun1(2^[], 3^[])))]
+ (2)  [r1_tarski(k3_substlat(2^[], 3^[], 4^[]), 4^[])]
+ (3)  [m1_subset_1(_G7372, k5_finsub_1(k4_partfun1(_G7185, _G7278))), r2_hidden(_G7577, k3_substlat(_G7185, _G7278, _G7372)), -r2_hidden(_G7577, _G7372)]
+ (4)  [m1_subset_1(_G7372, k5_finsub_1(k4_partfun1(_G7185, _G7278))), r2_hidden(_G7577, k3_substlat(_G7185, _G7278, _G7372)), - (_G7858=_G7577), r2_hidden(_G7858, _G7372), r1_tarski(_G7858, _G7577)]
+ (5)  [-r1_tarski(_G6792, _G6848), -r2_hidden(1^[_G6848, _G6792], _G6792)]
+ (6)  [-r1_tarski(_G6792, _G6848), r2_hidden(1^[_G6848, _G6792], _G6848)]
+ (7)  [r1_tarski(_G6792, _G6848), r2_hidden(_G6962, _G6792), -r2_hidden(_G6962, _G6848)]
+ (8)  [_G4835=_G4884, - (k5_finsub_1(_G4835)=k5_finsub_1(_G4884))]
+ (9)  [- (k4_partfun1(_G5113, _G5248)=k4_partfun1(_G5180, _G5317)), _G5113=_G5180, _G5248=_G5317]
+ (10)  [- (k3_substlat(_G5701, _G5872, _G6047)=k3_substlat(_G5786, _G5959, _G6136)), _G5701=_G5786, _G5872=_G5959, _G6047=_G6136]
+ (11)  [- (_G2208=_G2208)]
+ (12)  [_G2307=_G2352, - (_G2352=_G2307)]
+ (13)  [- (_G2540=_G2653), _G2540=_G2596, _G2596=_G2653]
+ (14)  [-r2_hidden(_G3057, _G3194), r2_hidden(_G2990, _G3125), _G2990=_G3057, _G3125=_G3194]
+ (15)  [-m1_subset_1(_G3654, _G3791), m1_subset_1(_G3587, _G3722), _G3587=_G3654, _G3722=_G3791]
+ (16)  [-r1_tarski(_G4242, _G4379), r1_tarski(_G4175, _G4310), _G4175=_G4242, _G4310=_G4379]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k3_substlat(2^[], 3^[], 4^[]), 4^[])]   (2)  
+1.1  [-r1_tarski(k3_substlat(2^[], 3^[], 4^[]), 4^[]), -r2_hidden(1^[4^[], k3_substlat(2^[], 3^[], 4^[])], k3_substlat(2^[], 3^[], 4^[]))]   (5)  substitution:[[_G6792, _G6848], [k3_substlat(2^[], 3^[], 4^[]), 4^[]]]
+1.1.1  [r2_hidden(1^[4^[], k3_substlat(2^[], 3^[], 4^[])], k3_substlat(2^[], 3^[], 4^[])), m1_subset_1(4^[], k5_finsub_1(k4_partfun1(2^[], 3^[]))), -r2_hidden(1^[4^[], k3_substlat(2^[], 3^[], 4^[])], 4^[])]   (3)  substitution:[[_G7577, _G7185, _G7278, _G7372], [1^[4^[], k3_substlat(2^[], 3^[], 4^[])], 2^[], 3^[], 4^[]]]
+1.1.1.1  [-m1_subset_1(4^[], k5_finsub_1(k4_partfun1(2^[], 3^[])))]   (1)  
+1.1.1.2  [r2_hidden(1^[4^[], k3_substlat(2^[], 3^[], 4^[])], 4^[]), -r1_tarski(k3_substlat(2^[], 3^[], 4^[]), 4^[])]   (6)  substitution:[[_G6848, _G6792], [4^[], k3_substlat(2^[], 3^[], 4^[])]]
+1.1.1.2.1  [r1_tarski(k3_substlat(2^[], 3^[], 4^[]), 4^[])]   (2)  
+------------------------------------------------------
+End of proof for t8_substlat

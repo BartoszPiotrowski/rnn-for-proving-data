@@ -1,0 +1,38 @@
+
+t46_modal_1 is a Theorem
+Start of proof for t46_modal_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], k3_modal_1)]
+ (2)  [-m1_subset_1(2^[], k6_modal_1)]
+ (3)  [-m1_subset_1(3^[], k6_modal_1)]
+ (4)  [- (k17_modal_1=k16_modal_1(1^[])), - (k17_modal_1=k10_modal_1(2^[])), - (k17_modal_1=k11_modal_1(2^[])), - (k17_modal_1=k12_modal_1(2^[], 3^[]))]
+ (5)  [m1_subset_1(_G5786, k3_modal_1), k17_modal_1=k16_modal_1(_G5786)]
+ (6)  [m1_subset_1(_G5154, k6_modal_1), m1_subset_1(_G5287, k6_modal_1), k17_modal_1=k10_modal_1(_G5154)]
+ (7)  [m1_subset_1(_G5154, k6_modal_1), m1_subset_1(_G5287, k6_modal_1), k17_modal_1=k11_modal_1(_G5154)]
+ (8)  [m1_subset_1(_G5154, k6_modal_1), m1_subset_1(_G5287, k6_modal_1), k17_modal_1=k12_modal_1(_G5154, _G5287)]
+ (9)  [-m1_subset_1(_G3097, _G3234), m1_subset_1(_G3030, _G3165), _G3030=_G3097, _G3165=_G3234]
+ (10)  [- (_G2257=_G2257)]
+ (11)  [_G2356=_G2401, - (_G2401=_G2356)]
+ (12)  [- (_G2589=_G2702), _G2589=_G2645, _G2645=_G2702]
+ (13)  [_G3648=_G3697, - (k16_modal_1(_G3648)=k16_modal_1(_G3697))]
+ (14)  [_G3926=_G3975, - (k10_modal_1(_G3926)=k10_modal_1(_G3975))]
+ (15)  [_G4204=_G4253, - (k11_modal_1(_G4204)=k11_modal_1(_G4253))]
+ (16)  [- (k12_modal_1(_G4473, _G4608)=k12_modal_1(_G4540, _G4677)), _G4473=_G4540, _G4608=_G4677]
+
+Connection Proof:
+-----------------
+1  [m1_subset_1(1^[], k3_modal_1), k17_modal_1=k16_modal_1(1^[])]   (5)  substitution:[[_G5786], [1^[]]]
+1.1  [-m1_subset_1(1^[], k3_modal_1)]   (1)  
+1.2  [- (k17_modal_1=k16_modal_1(1^[])), - (k17_modal_1=k10_modal_1(2^[])), - (k17_modal_1=k11_modal_1(2^[])), - (k17_modal_1=k12_modal_1(2^[], 3^[]))]   (4)  
+1.2.1  [k17_modal_1=k10_modal_1(2^[]), m1_subset_1(2^[], k6_modal_1), m1_subset_1(2^[], k6_modal_1)]   (6)  substitution:[[_G5154, _G5287], [2^[], 2^[]]]
+1.2.1.1  [-m1_subset_1(2^[], k6_modal_1)]   (2)  
+1.2.1.2  [-m1_subset_1(2^[], k6_modal_1)]   (2)  
+1.2.2  [k17_modal_1=k11_modal_1(2^[]), m1_subset_1(2^[], k6_modal_1), m1_subset_1(2^[], k6_modal_1)]   (7)  substitution:[[_G5154, _G5287], [2^[], 2^[]]]
+1.2.2.1  [-m1_subset_1(2^[], k6_modal_1)]   (2)  
+1.2.2.2  [-m1_subset_1(2^[], k6_modal_1)]   (2)  
+1.2.3  [k17_modal_1=k12_modal_1(2^[], 3^[]), m1_subset_1(2^[], k6_modal_1), m1_subset_1(3^[], k6_modal_1)]   (8)  substitution:[[_G5154, _G5287], [2^[], 3^[]]]
+1.2.3.1  [-m1_subset_1(2^[], k6_modal_1)]   (2)  
+1.2.3.2  [-m1_subset_1(3^[], k6_modal_1)]   (3)  
+------------------------------------------------------
+End of proof for t46_modal_1

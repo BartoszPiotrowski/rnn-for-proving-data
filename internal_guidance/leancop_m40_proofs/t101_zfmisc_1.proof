@@ -1,0 +1,33 @@
+
+t101_zfmisc_1 is a Theorem
+Start of proof for t101_zfmisc_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-r1_tarski(1^[], 2^[])]
+ (2)  [-r1_tarski(3^[], 4^[])]
+ (3)  [k3_xboole_0(k2_zfmisc_1(1^[], 4^[]), k2_zfmisc_1(2^[], 3^[]))=k2_zfmisc_1(1^[], 3^[])]
+ (4)  [- (k3_xboole_0(_G4546, _G4591)=k3_xboole_0(_G4591, _G4546))]
+ (5)  [- (k2_zfmisc_1(k3_xboole_0(_G4788, _G4855), k3_xboole_0(_G4923, _G4992))=k3_xboole_0(k2_zfmisc_1(_G4788, _G4923), k2_zfmisc_1(_G4855, _G4992)))]
+ (6)  [r1_tarski(_G5376, _G5424), - (k3_xboole_0(_G5376, _G5424)=_G5376)]
+ (7)  [- (k3_xboole_0(_G3319, _G3454)=k3_xboole_0(_G3386, _G3523)), _G3319=_G3386, _G3454=_G3523]
+ (8)  [- (k2_zfmisc_1(_G3907, _G4042)=k2_zfmisc_1(_G3974, _G4111)), _G3907=_G3974, _G4042=_G4111]
+ (9)  [-r1_tarski(_G2768, _G2905), r1_tarski(_G2701, _G2836), _G2701=_G2768, _G2836=_G2905]
+ (10)  [- (_G1928=_G1928)]
+ (11)  [_G2027=_G2072, - (_G2072=_G2027)]
+ (12)  [- (_G2260=_G2373), _G2260=_G2316, _G2316=_G2373]
+
+Connection Proof:
+-----------------
+1  [k3_xboole_0(k2_zfmisc_1(1^[], 4^[]), k2_zfmisc_1(2^[], 3^[]))=k2_zfmisc_1(1^[], 3^[])]   (3)  
+1.1  [- (k3_xboole_0(k2_zfmisc_1(1^[], 4^[]), k2_zfmisc_1(2^[], 3^[]))=k2_zfmisc_1(1^[], 3^[])), k3_xboole_0(k2_zfmisc_1(1^[], 4^[]), k2_zfmisc_1(2^[], 3^[]))=k2_zfmisc_1(k3_xboole_0(1^[], 2^[]), k3_xboole_0(4^[], 3^[])), k2_zfmisc_1(k3_xboole_0(1^[], 2^[]), k3_xboole_0(4^[], 3^[]))=k2_zfmisc_1(1^[], 3^[])]   (12)  substitution:[[_G2260, _G2373, _G2316], [k3_xboole_0(k2_zfmisc_1(1^[], 4^[]), k2_zfmisc_1(2^[], 3^[])), k2_zfmisc_1(1^[], 3^[]), k2_zfmisc_1(k3_xboole_0(1^[], 2^[]), k3_xboole_0(4^[], 3^[]))]]
+1.1.1  [- (k3_xboole_0(k2_zfmisc_1(1^[], 4^[]), k2_zfmisc_1(2^[], 3^[]))=k2_zfmisc_1(k3_xboole_0(1^[], 2^[]), k3_xboole_0(4^[], 3^[]))), k2_zfmisc_1(k3_xboole_0(1^[], 2^[]), k3_xboole_0(4^[], 3^[]))=k3_xboole_0(k2_zfmisc_1(1^[], 4^[]), k2_zfmisc_1(2^[], 3^[]))]   (11)  substitution:[[_G2072, _G2027], [k3_xboole_0(k2_zfmisc_1(1^[], 4^[]), k2_zfmisc_1(2^[], 3^[])), k2_zfmisc_1(k3_xboole_0(1^[], 2^[]), k3_xboole_0(4^[], 3^[]))]]
+1.1.1.1  [- (k2_zfmisc_1(k3_xboole_0(1^[], 2^[]), k3_xboole_0(4^[], 3^[]))=k3_xboole_0(k2_zfmisc_1(1^[], 4^[]), k2_zfmisc_1(2^[], 3^[])))]   (5)  substitution:[[_G4788, _G4855, _G4923, _G4992], [1^[], 2^[], 4^[], 3^[]]]
+1.1.2  [- (k2_zfmisc_1(k3_xboole_0(1^[], 2^[]), k3_xboole_0(4^[], 3^[]))=k2_zfmisc_1(1^[], 3^[])), k3_xboole_0(1^[], 2^[])=1^[], k3_xboole_0(4^[], 3^[])=3^[]]   (8)  substitution:[[_G3907, _G4042, _G3974, _G4111], [k3_xboole_0(1^[], 2^[]), k3_xboole_0(4^[], 3^[]), 1^[], 3^[]]]
+1.1.2.1  [- (k3_xboole_0(1^[], 2^[])=1^[]), r1_tarski(1^[], 2^[])]   (6)  substitution:[[_G5376, _G5424], [1^[], 2^[]]]
+1.1.2.1.1  [-r1_tarski(1^[], 2^[])]   (1)  
+1.1.2.2  [- (k3_xboole_0(4^[], 3^[])=3^[]), k3_xboole_0(4^[], 3^[])=k3_xboole_0(3^[], 4^[]), k3_xboole_0(3^[], 4^[])=3^[]]   (12)  substitution:[[_G2260, _G2373, _G2316], [k3_xboole_0(4^[], 3^[]), 3^[], k3_xboole_0(3^[], 4^[])]]
+1.1.2.2.1  [- (k3_xboole_0(4^[], 3^[])=k3_xboole_0(3^[], 4^[]))]   (4)  substitution:[[_G4546, _G4591], [4^[], 3^[]]]
+1.1.2.2.2  [- (k3_xboole_0(3^[], 4^[])=3^[]), r1_tarski(3^[], 4^[])]   (6)  substitution:[[_G5376, _G5424], [3^[], 4^[]]]
+1.1.2.2.2.1  [-r1_tarski(3^[], 4^[])]   (2)  
+------------------------------------------------------
+End of proof for t101_zfmisc_1

@@ -1,0 +1,59 @@
+
+t73_borsuk_5 is a Theorem
+Start of proof for t73_borsuk_5
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v2_compts_1(1^[], k3_topmetr)]
+ (2)  [-m1_subset_1(1^[], k1_zfmisc_1(u1_struct_0(k3_topmetr)))]
+ (3)  [-m1_subset_1(2^[], k1_zfmisc_1(k1_numbers))]
+ (4)  [- (2^[]=1^[])]
+ (5)  [v4_xxreal_2(2^[]), v3_xxreal_2(2^[])]
+ (6)  [v3_membered(_G7257), -v2_membered(_G7257)]
+ (7)  [m1_subset_1(_G7388, k1_zfmisc_1(k1_numbers)), -v3_membered(_G7388)]
+ (8)  [v2_membered(_G7559), v5_xxreal_2(_G7559), -v3_xxreal_2(_G7559)]
+ (9)  [v2_membered(_G7559), v5_xxreal_2(_G7559), -v4_xxreal_2(_G7559)]
+ (10)  [v2_membered(_G7559), -v5_xxreal_2(_G7559), v3_xxreal_2(_G7559), v4_xxreal_2(_G7559)]
+ (11)  [m1_subset_1(_G7806, k1_zfmisc_1(k1_numbers)), v1_rcomp_1(_G7806), -v5_xxreal_2(_G7806)]
+ (12)  [m1_subset_1(_G8026, k1_zfmisc_1(k1_numbers)), m1_subset_1(_G8159, k1_zfmisc_1(u1_struct_0(k3_topmetr))), _G8026=_G8159, v1_rcomp_1(_G8026), -v2_compts_1(_G8159, k3_topmetr)]
+ (13)  [m1_subset_1(_G8026, k1_zfmisc_1(k1_numbers)), m1_subset_1(_G8159, k1_zfmisc_1(u1_struct_0(k3_topmetr))), _G8026=_G8159, -v1_rcomp_1(_G8026), v2_compts_1(_G8159, k3_topmetr)]
+ (14)  [_G6668=_G6717, - (u1_struct_0(_G6668)=u1_struct_0(_G6717))]
+ (15)  [_G6937=_G6986, - (k1_zfmisc_1(_G6937)=k1_zfmisc_1(_G6986))]
+ (16)  [- (_G2865=_G2865)]
+ (17)  [_G2964=_G3009, - (_G3009=_G2964)]
+ (18)  [- (_G3197=_G3310), _G3197=_G3253, _G3253=_G3310]
+ (19)  [-v3_membered(_G3696), _G3647=_G3696, v3_membered(_G3647)]
+ (20)  [-v2_membered(_G3974), _G3925=_G3974, v2_membered(_G3925)]
+ (21)  [-v5_xxreal_2(_G4252), _G4203=_G4252, v5_xxreal_2(_G4203)]
+ (22)  [-v1_rcomp_1(_G4530), _G4481=_G4530, v1_rcomp_1(_G4481)]
+ (23)  [-v2_compts_1(_G4826, _G4963), v2_compts_1(_G4759, _G4894), _G4759=_G4826, _G4894=_G4963]
+ (24)  [-m1_subset_1(_G5423, _G5560), m1_subset_1(_G5356, _G5491), _G5356=_G5423, _G5491=_G5560]
+ (25)  [-v4_xxreal_2(_G6002), _G5953=_G6002, v4_xxreal_2(_G5953)]
+ (26)  [-v3_xxreal_2(_G6271), _G6222=_G6271, v3_xxreal_2(_G6222)]
+
+Connection Proof:
+-----------------
+1  [v4_xxreal_2(2^[]), v3_xxreal_2(2^[])]   (5)  
+1.1  [-v4_xxreal_2(2^[]), v2_membered(2^[]), v5_xxreal_2(2^[])]   (9)  substitution:[[_G7559], [2^[]]]
+1.1.1  [-v2_membered(2^[]), v3_membered(2^[])]   (6)  substitution:[[_G7257], [2^[]]]
+1.1.1.1  [-v3_membered(2^[]), m1_subset_1(2^[], k1_zfmisc_1(k1_numbers))]   (7)  substitution:[[_G7388], [2^[]]]
+1.1.1.1.1  [-m1_subset_1(2^[], k1_zfmisc_1(k1_numbers))]   (3)  
+1.1.2  [-v5_xxreal_2(2^[]), m1_subset_1(2^[], k1_zfmisc_1(k1_numbers)), v1_rcomp_1(2^[])]   (11)  substitution:[[_G7806], [2^[]]]
+1.1.2.1  [-m1_subset_1(2^[], k1_zfmisc_1(k1_numbers))]   (3)  
+1.1.2.2  [-v1_rcomp_1(2^[]), m1_subset_1(2^[], k1_zfmisc_1(k1_numbers)), m1_subset_1(1^[], k1_zfmisc_1(u1_struct_0(k3_topmetr))), 2^[]=1^[], v2_compts_1(1^[], k3_topmetr)]   (13)  substitution:[[_G8026, _G8159], [2^[], 1^[]]]
+1.1.2.2.1  [-m1_subset_1(2^[], k1_zfmisc_1(k1_numbers))]   (3)  
+1.1.2.2.2  [-m1_subset_1(1^[], k1_zfmisc_1(u1_struct_0(k3_topmetr)))]   (2)  
+1.1.2.2.3  [- (2^[]=1^[])]   (4)  
+1.1.2.2.4  [-v2_compts_1(1^[], k3_topmetr)]   (1)  
+1.2  [-v3_xxreal_2(2^[]), v2_membered(2^[]), v5_xxreal_2(2^[])]   (8)  substitution:[[_G7559], [2^[]]]
+1.2.1  [-v2_membered(2^[]), v3_membered(2^[])]   (6)  substitution:[[_G7257], [2^[]]]
+1.2.1.1  [-v3_membered(2^[]), m1_subset_1(2^[], k1_zfmisc_1(k1_numbers))]   (7)  substitution:[[_G7388], [2^[]]]
+1.2.1.1.1  [-m1_subset_1(2^[], k1_zfmisc_1(k1_numbers))]   (3)  
+1.2.2  [-v5_xxreal_2(2^[]), m1_subset_1(2^[], k1_zfmisc_1(k1_numbers)), v1_rcomp_1(2^[])]   (11)  substitution:[[_G7806], [2^[]]]
+1.2.2.1  [-m1_subset_1(2^[], k1_zfmisc_1(k1_numbers))]   (3)  
+1.2.2.2  [-v1_rcomp_1(2^[]), m1_subset_1(2^[], k1_zfmisc_1(k1_numbers)), m1_subset_1(1^[], k1_zfmisc_1(u1_struct_0(k3_topmetr))), 2^[]=1^[], v2_compts_1(1^[], k3_topmetr)]   (13)  substitution:[[_G8026, _G8159], [2^[], 1^[]]]
+1.2.2.2.1  [-m1_subset_1(2^[], k1_zfmisc_1(k1_numbers))]   (3)  
+1.2.2.2.2  [-m1_subset_1(1^[], k1_zfmisc_1(u1_struct_0(k3_topmetr)))]   (2)  
+1.2.2.2.3  [- (2^[]=1^[])]   (4)  
+1.2.2.2.4  [-v2_compts_1(1^[], k3_topmetr)]   (1)  
+------------------------------------------------------
+End of proof for t73_borsuk_5

@@ -1,0 +1,31 @@
+
+t9_radix_1 is a Theorem
+Start of proof for t9_radix_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k2_radix_1(k6_numbers)=k1_tarski(k6_numbers)]
+ (2)  [_G2658=_G2707, - (k2_radix_1(_G2658)=k2_radix_1(_G2707))]
+ (3)  [_G2927=_G2976, - (k1_tarski(_G2927)=k1_tarski(_G2976))]
+ (4)  [-r2_hidden(_G2107, _G2244), r2_hidden(_G2040, _G2175), _G2040=_G2107, _G2175=_G2244]
+ (5)  [- (_G1267=_G1267)]
+ (6)  [_G1366=_G1411, - (_G1411=_G1366)]
+ (7)  [- (_G1599=_G1712), _G1599=_G1655, _G1655=_G1712]
+ (8)  [r2_hidden(_G3658, k2_radix_1(k6_numbers)), - (_G3658=k6_numbers)]
+ (9)  [-r2_hidden(_G3658, k2_radix_1(k6_numbers)), _G3658=k6_numbers]
+ (10)  [_G3305=k1_tarski(_G3247), r2_hidden(_G3435, _G3305), - (_G3435=_G3247)]
+ (11)  [_G3305=k1_tarski(_G3247), -r2_hidden(_G3435, _G3305), _G3435=_G3247]
+ (12)  [- (_G3305=k1_tarski(_G3247)), r2_hidden(1^[_G3305, _G3247], _G3305), 1^[_G3305, _G3247]=_G3247]
+ (13)  [- (_G3305=k1_tarski(_G3247)), -r2_hidden(1^[_G3305, _G3247], _G3305), - (1^[_G3305, _G3247]=_G3247)]
+
+Connection Proof:
+-----------------
+1  [k2_radix_1(k6_numbers)=k1_tarski(k6_numbers)]   (1)  
+1.1  [- (k2_radix_1(k6_numbers)=k1_tarski(k6_numbers)), r2_hidden(1^[k2_radix_1(k6_numbers), k6_numbers], k2_radix_1(k6_numbers)), 1^[k2_radix_1(k6_numbers), k6_numbers]=k6_numbers]   (12)  substitution:[[_G3305, _G3247], [k2_radix_1(k6_numbers), k6_numbers]]
+1.1.1  [-r2_hidden(1^[k2_radix_1(k6_numbers), k6_numbers], k2_radix_1(k6_numbers)), 1^[k2_radix_1(k6_numbers), k6_numbers]=k6_numbers]   (9)  substitution:[[_G3658], [1^[k2_radix_1(k6_numbers), k6_numbers]]]
+1.1.1.1  [- (1^[k2_radix_1(k6_numbers), k6_numbers]=k6_numbers), - (k2_radix_1(k6_numbers)=k1_tarski(k6_numbers)), -r2_hidden(1^[k2_radix_1(k6_numbers), k6_numbers], k2_radix_1(k6_numbers))]   (13)  substitution:[[_G3305, _G3247], [k2_radix_1(k6_numbers), k6_numbers]]
+1.1.1.1.1  [k2_radix_1(k6_numbers)=k1_tarski(k6_numbers)]   (1)  
+1.1.1.1.2  [r2_hidden(1^[k2_radix_1(k6_numbers), k6_numbers], k2_radix_1(k6_numbers))]   (reduction:1.1)  
+1.1.2  [- (1^[k2_radix_1(k6_numbers), k6_numbers]=k6_numbers), r2_hidden(1^[k2_radix_1(k6_numbers), k6_numbers], k2_radix_1(k6_numbers))]   (8)  substitution:[[_G3658], [1^[k2_radix_1(k6_numbers), k6_numbers]]]
+1.1.2.1  [-r2_hidden(1^[k2_radix_1(k6_numbers), k6_numbers], k2_radix_1(k6_numbers))]   (lemmata:1.1)  
+------------------------------------------------------
+End of proof for t9_radix_1

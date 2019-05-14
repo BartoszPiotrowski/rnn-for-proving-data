@@ -1,0 +1,30 @@
+
+t25_xboolean is a Theorem
+Start of proof for t25_xboolean
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xboolean(1^[])]
+ (2)  [-v1_xboolean(2^[])]
+ (3)  [-v1_xboolean(3^[])]
+ (4)  [k4_xboolean(k3_xboolean(1^[]), k7_xboolean(2^[], 3^[]))=k4_xboolean(k4_xboolean(k3_xboolean(1^[]), k5_xboolean(k3_xboolean(2^[]), 3^[])), k5_xboolean(k3_xboolean(3^[]), 2^[]))]
+ (5)  [v1_xboolean(_G5400), -v1_xboolean(k3_xboolean(_G5400))]
+ (6)  [v1_xboolean(_G5538), v1_xboolean(_G5651), v1_xboolean(_G5760), - (k4_xboolean(_G5538, k7_xboolean(_G5651, _G5760))=k4_xboolean(k4_xboolean(_G5538, k5_xboolean(k3_xboolean(_G5651), _G5760)), k5_xboolean(k3_xboolean(_G5760), _G5651)))]
+ (7)  [-v1_xboolean(_G3006), _G2957=_G3006, v1_xboolean(_G2957)]
+ (8)  [- (_G2184=_G2184)]
+ (9)  [_G2283=_G2328, - (_G2328=_G2283)]
+ (10)  [- (_G2516=_G2629), _G2516=_G2572, _G2572=_G2629]
+ (11)  [- (k7_xboolean(_G3256, _G3391)=k7_xboolean(_G3323, _G3460)), _G3256=_G3323, _G3391=_G3460]
+ (12)  [- (k4_xboolean(_G3853, _G3988)=k4_xboolean(_G3920, _G4057)), _G3853=_G3920, _G3988=_G4057]
+ (13)  [_G5038=_G5087, - (k3_xboolean(_G5038)=k3_xboolean(_G5087))]
+ (14)  [- (k5_xboolean(_G4450, _G4585)=k5_xboolean(_G4517, _G4654)), _G4450=_G4517, _G4585=_G4654]
+
+Connection Proof:
+-----------------
+1  [k4_xboolean(k3_xboolean(1^[]), k7_xboolean(2^[], 3^[]))=k4_xboolean(k4_xboolean(k3_xboolean(1^[]), k5_xboolean(k3_xboolean(2^[]), 3^[])), k5_xboolean(k3_xboolean(3^[]), 2^[]))]   (4)  
+1.1  [- (k4_xboolean(k3_xboolean(1^[]), k7_xboolean(2^[], 3^[]))=k4_xboolean(k4_xboolean(k3_xboolean(1^[]), k5_xboolean(k3_xboolean(2^[]), 3^[])), k5_xboolean(k3_xboolean(3^[]), 2^[]))), v1_xboolean(k3_xboolean(1^[])), v1_xboolean(2^[]), v1_xboolean(3^[])]   (6)  substitution:[[_G5538, _G5651, _G5760], [k3_xboolean(1^[]), 2^[], 3^[]]]
+1.1.1  [-v1_xboolean(k3_xboolean(1^[])), v1_xboolean(1^[])]   (5)  substitution:[[_G5400], [1^[]]]
+1.1.1.1  [-v1_xboolean(1^[])]   (1)  
+1.1.2  [-v1_xboolean(2^[])]   (2)  
+1.1.3  [-v1_xboolean(3^[])]   (3)  
+------------------------------------------------------
+End of proof for t25_xboolean

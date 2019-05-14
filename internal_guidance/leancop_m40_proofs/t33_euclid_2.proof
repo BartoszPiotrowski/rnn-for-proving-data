@@ -1,0 +1,59 @@
+
+t33_euclid_2 is a Theorem
+Start of proof for t33_euclid_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v7_ordinal1(1^[])]
+ (2)  [-m1_subset_1(2^[], u1_struct_0(k15_euclid(1^[])))]
+ (3)  [k23_rvsum_1(k4_struct_0(k15_euclid(1^[])), 2^[])=k6_numbers]
+ (4)  [v7_ordinal1(_G8776), m1_subset_1(_G8910, u1_struct_0(k15_euclid(_G8776))), m1_subset_1(_G9093, u1_struct_0(k15_euclid(_G8776))), m1_subset_1(_G9267, u1_struct_0(k15_euclid(_G8776))), - (k23_rvsum_1(k5_algstr_0(k15_euclid(_G8776), _G8910, _G9093), _G9267)=k10_binop_2(k23_rvsum_1(_G8910, _G9267), k23_rvsum_1(_G9093, _G9267)))]
+ (5)  [v7_ordinal1(_G9857), m1_subset_1(_G9991, u1_struct_0(k15_euclid(_G9857))), m1_subset_1(_G10174, u1_struct_0(k15_euclid(_G9857))), m1_subset_1(_G10348, u1_struct_0(k15_euclid(_G9857))), - (k23_rvsum_1(_G9991, k5_algstr_0(k15_euclid(_G9857), _G10174, _G10348))=k10_binop_2(k23_rvsum_1(_G9991, _G10174), k23_rvsum_1(_G9991, _G10348)))]
+ (6)  [v7_ordinal1(_G10938), m1_subset_1(_G11031, u1_struct_0(k15_euclid(_G10938))), - (k23_rvsum_1(_G11031, k4_struct_0(k15_euclid(_G10938)))=k6_numbers)]
+ (7)  [v7_ordinal1(_G11346), m1_subset_1(_G11442, u1_struct_0(k15_euclid(_G11346))), - (k5_algstr_0(k15_euclid(_G11346), _G11442, _G11442)=k4_struct_0(k15_euclid(_G11346)))]
+ (8)  [- (_G3913=_G3913)]
+ (9)  [_G4012=_G4057, - (_G4057=_G4012)]
+ (10)  [- (_G4245=_G4358), _G4245=_G4301, _G4301=_G4358]
+ (11)  [-v7_ordinal1(_G4744), _G4695=_G4744, v7_ordinal1(_G4695)]
+ (12)  [-m1_subset_1(_G5031, _G5168), m1_subset_1(_G4964, _G5099), _G4964=_G5031, _G5099=_G5168]
+ (13)  [- (k10_binop_2(_G5603, _G5738)=k10_binop_2(_G5670, _G5807)), _G5603=_G5670, _G5738=_G5807]
+ (14)  [- (k5_algstr_0(_G6200, _G6371, _G6546)=k5_algstr_0(_G6285, _G6458, _G6635)), _G6200=_G6285, _G6371=_G6458, _G6546=_G6635]
+ (15)  [_G7228=_G7277, - (u1_struct_0(_G7228)=u1_struct_0(_G7277))]
+ (16)  [- (k23_rvsum_1(_G7506, _G7641)=k23_rvsum_1(_G7573, _G7710)), _G7506=_G7573, _G7641=_G7710]
+ (17)  [_G8103=_G8152, - (k4_struct_0(_G8103)=k4_struct_0(_G8152))]
+ (18)  [_G8372=_G8421, - (k15_euclid(_G8372)=k15_euclid(_G8421))]
+
+Connection Proof:
+-----------------
+1  [k23_rvsum_1(k4_struct_0(k15_euclid(1^[])), 2^[])=k6_numbers]   (3)  
+1.1  [- (k23_rvsum_1(k4_struct_0(k15_euclid(1^[])), 2^[])=k6_numbers), k23_rvsum_1(k4_struct_0(k15_euclid(1^[])), 2^[])=k10_binop_2(k23_rvsum_1(2^[], 2^[]), k23_rvsum_1(2^[], 2^[])), k10_binop_2(k23_rvsum_1(2^[], 2^[]), k23_rvsum_1(2^[], 2^[]))=k6_numbers]   (10)  substitution:[[_G4245, _G4358, _G4301], [k23_rvsum_1(k4_struct_0(k15_euclid(1^[])), 2^[]), k6_numbers, k10_binop_2(k23_rvsum_1(2^[], 2^[]), k23_rvsum_1(2^[], 2^[]))]]
+1.1.1  [- (k23_rvsum_1(k4_struct_0(k15_euclid(1^[])), 2^[])=k10_binop_2(k23_rvsum_1(2^[], 2^[]), k23_rvsum_1(2^[], 2^[]))), k10_binop_2(k23_rvsum_1(2^[], 2^[]), k23_rvsum_1(2^[], 2^[]))=k23_rvsum_1(k4_struct_0(k15_euclid(1^[])), 2^[])]   (9)  substitution:[[_G4057, _G4012], [k23_rvsum_1(k4_struct_0(k15_euclid(1^[])), 2^[]), k10_binop_2(k23_rvsum_1(2^[], 2^[]), k23_rvsum_1(2^[], 2^[]))]]
+1.1.1.1  [- (k10_binop_2(k23_rvsum_1(2^[], 2^[]), k23_rvsum_1(2^[], 2^[]))=k23_rvsum_1(k4_struct_0(k15_euclid(1^[])), 2^[])), k10_binop_2(k23_rvsum_1(2^[], 2^[]), k23_rvsum_1(2^[], 2^[]))=k23_rvsum_1(k5_algstr_0(k15_euclid(1^[]), 2^[], 2^[]), 2^[]), k23_rvsum_1(k5_algstr_0(k15_euclid(1^[]), 2^[], 2^[]), 2^[])=k23_rvsum_1(k4_struct_0(k15_euclid(1^[])), 2^[])]   (10)  substitution:[[_G4245, _G4358, _G4301], [k10_binop_2(k23_rvsum_1(2^[], 2^[]), k23_rvsum_1(2^[], 2^[])), k23_rvsum_1(k4_struct_0(k15_euclid(1^[])), 2^[]), k23_rvsum_1(k5_algstr_0(k15_euclid(1^[]), 2^[], 2^[]), 2^[])]]
+1.1.1.1.1  [- (k10_binop_2(k23_rvsum_1(2^[], 2^[]), k23_rvsum_1(2^[], 2^[]))=k23_rvsum_1(k5_algstr_0(k15_euclid(1^[]), 2^[], 2^[]), 2^[])), k23_rvsum_1(k5_algstr_0(k15_euclid(1^[]), 2^[], 2^[]), 2^[])=k10_binop_2(k23_rvsum_1(2^[], 2^[]), k23_rvsum_1(2^[], 2^[]))]   (9)  substitution:[[_G4057, _G4012], [k10_binop_2(k23_rvsum_1(2^[], 2^[]), k23_rvsum_1(2^[], 2^[])), k23_rvsum_1(k5_algstr_0(k15_euclid(1^[]), 2^[], 2^[]), 2^[])]]
+1.1.1.1.1.1  [- (k23_rvsum_1(k5_algstr_0(k15_euclid(1^[]), 2^[], 2^[]), 2^[])=k10_binop_2(k23_rvsum_1(2^[], 2^[]), k23_rvsum_1(2^[], 2^[]))), v7_ordinal1(1^[]), m1_subset_1(2^[], u1_struct_0(k15_euclid(1^[]))), m1_subset_1(2^[], u1_struct_0(k15_euclid(1^[]))), m1_subset_1(2^[], u1_struct_0(k15_euclid(1^[])))]   (4)  substitution:[[_G8776, _G8910, _G9093, _G9267], [1^[], 2^[], 2^[], 2^[]]]
+1.1.1.1.1.1.1  [-v7_ordinal1(1^[])]   (1)  
+1.1.1.1.1.1.2  [-m1_subset_1(2^[], u1_struct_0(k15_euclid(1^[])))]   (2)  
+1.1.1.1.1.1.3  [-m1_subset_1(2^[], u1_struct_0(k15_euclid(1^[])))]   (2)  
+1.1.1.1.1.1.4  [-m1_subset_1(2^[], u1_struct_0(k15_euclid(1^[])))]   (2)  
+1.1.1.1.2  [- (k23_rvsum_1(k5_algstr_0(k15_euclid(1^[]), 2^[], 2^[]), 2^[])=k23_rvsum_1(k4_struct_0(k15_euclid(1^[])), 2^[])), k5_algstr_0(k15_euclid(1^[]), 2^[], 2^[])=k4_struct_0(k15_euclid(1^[])), 2^[]=2^[]]   (16)  substitution:[[_G7506, _G7641, _G7573, _G7710], [k5_algstr_0(k15_euclid(1^[]), 2^[], 2^[]), 2^[], k4_struct_0(k15_euclid(1^[])), 2^[]]]
+1.1.1.1.2.1  [- (k5_algstr_0(k15_euclid(1^[]), 2^[], 2^[])=k4_struct_0(k15_euclid(1^[]))), v7_ordinal1(1^[]), m1_subset_1(2^[], u1_struct_0(k15_euclid(1^[])))]   (7)  substitution:[[_G11346, _G11442], [1^[], 2^[]]]
+1.1.1.1.2.1.1  [-v7_ordinal1(1^[])]   (1)  
+1.1.1.1.2.1.2  [-m1_subset_1(2^[], u1_struct_0(k15_euclid(1^[])))]   (2)  
+1.1.1.1.2.2  [- (2^[]=2^[])]   (8)  substitution:[[_G3913], [2^[]]]
+1.1.2  [- (k10_binop_2(k23_rvsum_1(2^[], 2^[]), k23_rvsum_1(2^[], 2^[]))=k6_numbers), k10_binop_2(k23_rvsum_1(2^[], 2^[]), k23_rvsum_1(2^[], 2^[]))=k23_rvsum_1(2^[], k5_algstr_0(k15_euclid(1^[]), 2^[], 2^[])), k23_rvsum_1(2^[], k5_algstr_0(k15_euclid(1^[]), 2^[], 2^[]))=k6_numbers]   (10)  substitution:[[_G4245, _G4358, _G4301], [k10_binop_2(k23_rvsum_1(2^[], 2^[]), k23_rvsum_1(2^[], 2^[])), k6_numbers, k23_rvsum_1(2^[], k5_algstr_0(k15_euclid(1^[]), 2^[], 2^[]))]]
+1.1.2.1  [- (k10_binop_2(k23_rvsum_1(2^[], 2^[]), k23_rvsum_1(2^[], 2^[]))=k23_rvsum_1(2^[], k5_algstr_0(k15_euclid(1^[]), 2^[], 2^[]))), k23_rvsum_1(2^[], k5_algstr_0(k15_euclid(1^[]), 2^[], 2^[]))=k10_binop_2(k23_rvsum_1(2^[], 2^[]), k23_rvsum_1(2^[], 2^[]))]   (9)  substitution:[[_G4057, _G4012], [k10_binop_2(k23_rvsum_1(2^[], 2^[]), k23_rvsum_1(2^[], 2^[])), k23_rvsum_1(2^[], k5_algstr_0(k15_euclid(1^[]), 2^[], 2^[]))]]
+1.1.2.1.1  [- (k23_rvsum_1(2^[], k5_algstr_0(k15_euclid(1^[]), 2^[], 2^[]))=k10_binop_2(k23_rvsum_1(2^[], 2^[]), k23_rvsum_1(2^[], 2^[]))), v7_ordinal1(1^[]), m1_subset_1(2^[], u1_struct_0(k15_euclid(1^[]))), m1_subset_1(2^[], u1_struct_0(k15_euclid(1^[]))), m1_subset_1(2^[], u1_struct_0(k15_euclid(1^[])))]   (5)  substitution:[[_G9991, _G9857, _G10174, _G10348], [2^[], 1^[], 2^[], 2^[]]]
+1.1.2.1.1.1  [-v7_ordinal1(1^[])]   (1)  
+1.1.2.1.1.2  [-m1_subset_1(2^[], u1_struct_0(k15_euclid(1^[])))]   (2)  
+1.1.2.1.1.3  [-m1_subset_1(2^[], u1_struct_0(k15_euclid(1^[])))]   (2)  
+1.1.2.1.1.4  [-m1_subset_1(2^[], u1_struct_0(k15_euclid(1^[])))]   (2)  
+1.1.2.2  [- (k23_rvsum_1(2^[], k5_algstr_0(k15_euclid(1^[]), 2^[], 2^[]))=k6_numbers), k23_rvsum_1(2^[], k5_algstr_0(k15_euclid(1^[]), 2^[], 2^[]))=k23_rvsum_1(2^[], k4_struct_0(k15_euclid(1^[]))), k23_rvsum_1(2^[], k4_struct_0(k15_euclid(1^[])))=k6_numbers]   (10)  substitution:[[_G4245, _G4358, _G4301], [k23_rvsum_1(2^[], k5_algstr_0(k15_euclid(1^[]), 2^[], 2^[])), k6_numbers, k23_rvsum_1(2^[], k4_struct_0(k15_euclid(1^[])))]]
+1.1.2.2.1  [- (k23_rvsum_1(2^[], k5_algstr_0(k15_euclid(1^[]), 2^[], 2^[]))=k23_rvsum_1(2^[], k4_struct_0(k15_euclid(1^[])))), 2^[]=2^[], k5_algstr_0(k15_euclid(1^[]), 2^[], 2^[])=k4_struct_0(k15_euclid(1^[]))]   (16)  substitution:[[_G7506, _G7641, _G7573, _G7710], [2^[], k5_algstr_0(k15_euclid(1^[]), 2^[], 2^[]), 2^[], k4_struct_0(k15_euclid(1^[]))]]
+1.1.2.2.1.1  [- (2^[]=2^[])]   (8)  substitution:[[_G3913], [2^[]]]
+1.1.2.2.1.2  [- (k5_algstr_0(k15_euclid(1^[]), 2^[], 2^[])=k4_struct_0(k15_euclid(1^[]))), v7_ordinal1(1^[]), m1_subset_1(2^[], u1_struct_0(k15_euclid(1^[])))]   (7)  substitution:[[_G11346, _G11442], [1^[], 2^[]]]
+1.1.2.2.1.2.1  [-v7_ordinal1(1^[])]   (1)  
+1.1.2.2.1.2.2  [-m1_subset_1(2^[], u1_struct_0(k15_euclid(1^[])))]   (2)  
+1.1.2.2.2  [- (k23_rvsum_1(2^[], k4_struct_0(k15_euclid(1^[])))=k6_numbers), v7_ordinal1(1^[]), m1_subset_1(2^[], u1_struct_0(k15_euclid(1^[])))]   (6)  substitution:[[_G11031, _G10938], [2^[], 1^[]]]
+1.1.2.2.2.1  [-v7_ordinal1(1^[])]   (1)  
+1.1.2.2.2.2  [-m1_subset_1(2^[], u1_struct_0(k15_euclid(1^[])))]   (2)  
+------------------------------------------------------
+End of proof for t33_euclid_2

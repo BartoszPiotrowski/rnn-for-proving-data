@@ -1,0 +1,60 @@
+
+t8_wellord2 is a Theorem
+Start of proof for t8_wellord2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v3_ordinal1(1^[])]
+ (2)  [-r1_tarski(2^[], 1^[])]
+ (3)  [v2_wellord1(k1_wellord2(2^[]))]
+ (4)  [v1_relat_1(_G8199), v2_wellord1(_G8199), -v1_relat_2(_G8199)]
+ (5)  [v1_relat_1(_G8199), v2_wellord1(_G8199), -v8_relat_2(_G8199)]
+ (6)  [v1_relat_1(_G8199), v2_wellord1(_G8199), -v4_relat_2(_G8199)]
+ (7)  [v1_relat_1(_G8199), v2_wellord1(_G8199), -v6_relat_2(_G8199)]
+ (8)  [v1_relat_1(_G8199), v2_wellord1(_G8199), -v1_wellord1(_G8199)]
+ (9)  [v1_relat_1(_G8199), -v2_wellord1(_G8199), v1_relat_2(_G8199), v8_relat_2(_G8199), v4_relat_2(_G8199), v6_relat_2(_G8199), v1_wellord1(_G8199)]
+ (10)  [-v1_relat_1(k1_wellord2(_G8620))]
+ (11)  [-v1_relat_2(k1_wellord2(_G8620))]
+ (12)  [-v1_relat_1(k1_wellord2(_G8783))]
+ (13)  [-v8_relat_2(k1_wellord2(_G8783))]
+ (14)  [-v1_relat_1(k1_wellord2(_G8946))]
+ (15)  [-v4_relat_2(k1_wellord2(_G8946))]
+ (16)  [v3_ordinal1(_G9109), -v1_relat_1(k1_wellord2(_G9109))]
+ (17)  [v3_ordinal1(_G9109), -v6_relat_2(k1_wellord2(_G9109))]
+ (18)  [v3_ordinal1(_G9330), -v1_relat_1(k1_wellord2(_G9330))]
+ (19)  [v3_ordinal1(_G9330), -v1_wellord1(k1_wellord2(_G9330))]
+ (20)  [r1_tarski(_G9838, _G9890), - (k2_wellord1(k1_wellord2(_G9890), _G9838)=k1_wellord2(_G9838))]
+ (21)  [v1_relat_1(_G9602), v2_wellord1(_G9602), -v2_wellord1(k2_wellord1(_G9602, _G9551))]
+ (22)  [_G7879=_G7928, - (k1_wellord2(_G7879)=k1_wellord2(_G7928))]
+ (23)  [- (k2_wellord1(_G7291, _G7426)=k2_wellord1(_G7358, _G7495)), _G7291=_G7358, _G7426=_G7495]
+ (24)  [- (_G3508=_G3508)]
+ (25)  [_G3607=_G3652, - (_G3652=_G3607)]
+ (26)  [- (_G3840=_G3953), _G3840=_G3896, _G3896=_G3953]
+ (27)  [-v1_relat_2(_G4339), _G4290=_G4339, v1_relat_2(_G4290)]
+ (28)  [-v8_relat_2(_G4617), _G4568=_G4617, v8_relat_2(_G4568)]
+ (29)  [-v4_relat_2(_G4895), _G4846=_G4895, v4_relat_2(_G4846)]
+ (30)  [-v6_relat_2(_G5173), _G5124=_G5173, v6_relat_2(_G5124)]
+ (31)  [-v1_wellord1(_G5451), _G5402=_G5451, v1_wellord1(_G5402)]
+ (32)  [-v1_relat_1(_G5729), _G5680=_G5729, v1_relat_1(_G5680)]
+ (33)  [-v3_ordinal1(_G6007), _G5958=_G6007, v3_ordinal1(_G5958)]
+ (34)  [-v2_wellord1(_G6873), _G6824=_G6873, v2_wellord1(_G6824)]
+ (35)  [-r1_tarski(_G6303, _G6440), r1_tarski(_G6236, _G6371), _G6236=_G6303, _G6371=_G6440]
+
+Connection Proof:
+-----------------
+1  [v2_wellord1(k1_wellord2(2^[]))]   (3)  
+1.1  [-v2_wellord1(k1_wellord2(2^[])), k2_wellord1(k1_wellord2(1^[]), 2^[])=k1_wellord2(2^[]), v2_wellord1(k2_wellord1(k1_wellord2(1^[]), 2^[]))]   (34)  substitution:[[_G6873, _G6824], [k1_wellord2(2^[]), k2_wellord1(k1_wellord2(1^[]), 2^[])]]
+1.1.1  [- (k2_wellord1(k1_wellord2(1^[]), 2^[])=k1_wellord2(2^[])), r1_tarski(2^[], 1^[])]   (20)  substitution:[[_G9890, _G9838], [1^[], 2^[]]]
+1.1.1.1  [-r1_tarski(2^[], 1^[])]   (2)  
+1.1.2  [-v2_wellord1(k2_wellord1(k1_wellord2(1^[]), 2^[])), v1_relat_1(k1_wellord2(1^[])), v2_wellord1(k1_wellord2(1^[]))]   (21)  substitution:[[_G9602, _G9551], [k1_wellord2(1^[]), 2^[]]]
+1.1.2.1  [-v1_relat_1(k1_wellord2(1^[]))]   (10)  substitution:[[_G8620], [1^[]]]
+1.1.2.2  [-v2_wellord1(k1_wellord2(1^[])), v1_relat_1(k1_wellord2(1^[])), v1_relat_2(k1_wellord2(1^[])), v8_relat_2(k1_wellord2(1^[])), v4_relat_2(k1_wellord2(1^[])), v6_relat_2(k1_wellord2(1^[])), v1_wellord1(k1_wellord2(1^[]))]   (9)  substitution:[[_G8199], [k1_wellord2(1^[])]]
+1.1.2.2.1  [-v1_relat_1(k1_wellord2(1^[]))]   (10)  substitution:[[_G8620], [1^[]]]
+1.1.2.2.2  [-v1_relat_2(k1_wellord2(1^[]))]   (11)  substitution:[[_G8620], [1^[]]]
+1.1.2.2.3  [-v8_relat_2(k1_wellord2(1^[]))]   (13)  substitution:[[_G8783], [1^[]]]
+1.1.2.2.4  [-v4_relat_2(k1_wellord2(1^[]))]   (15)  substitution:[[_G8946], [1^[]]]
+1.1.2.2.5  [-v6_relat_2(k1_wellord2(1^[])), v3_ordinal1(1^[])]   (17)  substitution:[[_G9109], [1^[]]]
+1.1.2.2.5.1  [-v3_ordinal1(1^[])]   (1)  
+1.1.2.2.6  [-v1_wellord1(k1_wellord2(1^[])), v3_ordinal1(1^[])]   (19)  substitution:[[_G9330], [1^[]]]
+1.1.2.2.6.1  [-v3_ordinal1(1^[])]   (1)  
+------------------------------------------------------
+End of proof for t8_wellord2

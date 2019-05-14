@@ -1,0 +1,50 @@
+
+t62_prob_3 is a Theorem
+Start of proof for t62_prob_3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m2_finseq_1(2^[], k1_numbers)]
+ (2)  [- (k3_finseq_1(2^[])=k6_numbers)]
+ (3)  [k18_rvsum_1(2^[])=k6_numbers]
+ (4)  [m2_finseq_1(_G10469, k1_numbers), -v5_ordinal1(1^[_G10469])]
+ (5)  [m2_finseq_1(_G10469, k1_numbers), -v1_relat_1(1^[_G10469])]
+ (6)  [m2_finseq_1(_G10469, k1_numbers), -v5_relat_1(1^[_G10469], k1_numbers)]
+ (7)  [m2_finseq_1(_G10469, k1_numbers), -v1_funct_1(1^[_G10469])]
+ (8)  [m2_finseq_1(_G10469, k1_numbers), -v1_finset_1(1^[_G10469])]
+ (9)  [m2_finseq_1(_G10469, k1_numbers), - (k1_afinsq_1(1^[_G10469])=k2_nat_1(k3_finseq_1(_G10469), np__1))]
+ (10)  [m2_finseq_1(_G10469, k1_numbers), - (k1_seq_1(1^[_G10469], k6_numbers)=k6_numbers)]
+ (11)  [m2_finseq_1(_G10469, k1_numbers), - (k18_rvsum_1(_G10469)=k1_seq_1(1^[_G10469], k3_finseq_1(_G10469)))]
+ (12)  [m2_finseq_1(_G10469, k1_numbers), v7_ordinal1(_G13344), -r1_xxreal_0(k3_finseq_1(_G10469), _G13344), - (k1_seq_1(1^[_G10469], k1_nat_1(_G13344, np__1))=k7_real_1(k1_seq_1(1^[_G10469], _G13344), k1_seq_1(_G10469, k1_nat_1(_G13344, np__1))))]
+ (13)  [_G7118=_G7167, - (k1_afinsq_1(_G7118)=k1_afinsq_1(_G7167))]
+ (14)  [- (k2_nat_1(_G7396, _G7531)=k2_nat_1(_G7463, _G7600)), _G7396=_G7463, _G7531=_G7600]
+ (15)  [- (k7_real_1(_G7993, _G8128)=k7_real_1(_G8060, _G8197)), _G7993=_G8060, _G8128=_G8197]
+ (16)  [- (k1_nat_1(_G8590, _G8725)=k1_nat_1(_G8657, _G8794)), _G8590=_G8657, _G8725=_G8794]
+ (17)  [- (k1_seq_1(_G9187, _G9322)=k1_seq_1(_G9254, _G9391)), _G9187=_G9254, _G9322=_G9391]
+ (18)  [_G9784=_G9833, - (k3_finseq_1(_G9784)=k3_finseq_1(_G9833))]
+ (19)  [_G10053=_G10102, - (k18_rvsum_1(_G10053)=k18_rvsum_1(_G10102))]
+ (20)  [- (_G2996=_G2996)]
+ (21)  [_G3095=_G3140, - (_G3140=_G3095)]
+ (22)  [- (_G3328=_G3441), _G3328=_G3384, _G3384=_G3441]
+ (23)  [-v5_ordinal1(_G3827), _G3778=_G3827, v5_ordinal1(_G3778)]
+ (24)  [-v1_relat_1(_G4105), _G4056=_G4105, v1_relat_1(_G4056)]
+ (25)  [-v5_relat_1(_G4401, _G4538), v5_relat_1(_G4334, _G4469), _G4334=_G4401, _G4469=_G4538]
+ (26)  [-v1_funct_1(_G4980), _G4931=_G4980, v1_funct_1(_G4931)]
+ (27)  [-v1_finset_1(_G5258), _G5209=_G5258, v1_finset_1(_G5209)]
+ (28)  [-v7_ordinal1(_G5536), _G5487=_G5536, v7_ordinal1(_G5487)]
+ (29)  [-r1_xxreal_0(_G5832, _G5969), r1_xxreal_0(_G5765, _G5900), _G5765=_G5832, _G5900=_G5969]
+ (30)  [-m2_finseq_1(_G6420, _G6557), m2_finseq_1(_G6353, _G6488), _G6353=_G6420, _G6488=_G6557]
+
+Connection Proof:
+-----------------
+1  [k18_rvsum_1(2^[])=k6_numbers]   (3)  
+1.1  [- (k18_rvsum_1(2^[])=k6_numbers), k18_rvsum_1(2^[])=k1_seq_1(1^[2^[]], k3_finseq_1(2^[])), k1_seq_1(1^[2^[]], k3_finseq_1(2^[]))=k6_numbers]   (22)  substitution:[[_G3328, _G3441, _G3384], [k18_rvsum_1(2^[]), k6_numbers, k1_seq_1(1^[2^[]], k3_finseq_1(2^[]))]]
+1.1.1  [- (k18_rvsum_1(2^[])=k1_seq_1(1^[2^[]], k3_finseq_1(2^[]))), m2_finseq_1(2^[], k1_numbers)]   (11)  substitution:[[_G10469], [2^[]]]
+1.1.1.1  [-m2_finseq_1(2^[], k1_numbers)]   (1)  
+1.1.2  [- (k1_seq_1(1^[2^[]], k3_finseq_1(2^[]))=k6_numbers), k1_seq_1(1^[2^[]], k3_finseq_1(2^[]))=k1_seq_1(1^[2^[]], k6_numbers), k1_seq_1(1^[2^[]], k6_numbers)=k6_numbers]   (22)  substitution:[[_G3328, _G3441, _G3384], [k1_seq_1(1^[2^[]], k3_finseq_1(2^[])), k6_numbers, k1_seq_1(1^[2^[]], k6_numbers)]]
+1.1.2.1  [- (k1_seq_1(1^[2^[]], k3_finseq_1(2^[]))=k1_seq_1(1^[2^[]], k6_numbers)), 1^[2^[]]=1^[2^[]], k3_finseq_1(2^[])=k6_numbers]   (17)  substitution:[[_G9187, _G9322, _G9254, _G9391], [1^[2^[]], k3_finseq_1(2^[]), 1^[2^[]], k6_numbers]]
+1.1.2.1.1  [- (1^[2^[]]=1^[2^[]])]   (20)  substitution:[[_G2996], [1^[2^[]]]]
+1.1.2.1.2  [- (k3_finseq_1(2^[])=k6_numbers)]   (2)  
+1.1.2.2  [- (k1_seq_1(1^[2^[]], k6_numbers)=k6_numbers), m2_finseq_1(2^[], k1_numbers)]   (10)  substitution:[[_G10469], [2^[]]]
+1.1.2.2.1  [-m2_finseq_1(2^[], k1_numbers)]   (1)  
+------------------------------------------------------
+End of proof for t62_prob_3

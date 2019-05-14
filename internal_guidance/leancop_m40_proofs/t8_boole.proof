@@ -1,0 +1,25 @@
+
+t8_boole is a Theorem
+Start of proof for t8_boole
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xboole_0(1^[])]
+ (2)  [1^[]=2^[]]
+ (3)  [-v1_xboole_0(2^[])]
+ (4)  [v1_xboole_0(_G2036), - (_G2036=k1_xboole_0)]
+ (5)  [-v1_xboole_0(_G1795), _G1746=_G1795, v1_xboole_0(_G1746)]
+ (6)  [- (_G973=_G973)]
+ (7)  [_G1072=_G1117, - (_G1117=_G1072)]
+ (8)  [- (_G1305=_G1418), _G1305=_G1361, _G1361=_G1418]
+
+Connection Proof:
+-----------------
+1  [1^[]=2^[]]   (2)  
+1.1  [- (1^[]=2^[]), 1^[]=k1_xboole_0, k1_xboole_0=2^[]]   (8)  substitution:[[_G1305, _G1418, _G1361], [1^[], 2^[], k1_xboole_0]]
+1.1.1  [- (1^[]=k1_xboole_0), v1_xboole_0(1^[])]   (4)  substitution:[[_G2036], [1^[]]]
+1.1.1.1  [-v1_xboole_0(1^[])]   (1)  
+1.1.2  [- (k1_xboole_0=2^[]), 2^[]=k1_xboole_0]   (7)  substitution:[[_G1117, _G1072], [k1_xboole_0, 2^[]]]
+1.1.2.1  [- (2^[]=k1_xboole_0), v1_xboole_0(2^[])]   (4)  substitution:[[_G2036], [2^[]]]
+1.1.2.1.1  [-v1_xboole_0(2^[])]   (3)  
+------------------------------------------------------
+End of proof for t8_boole

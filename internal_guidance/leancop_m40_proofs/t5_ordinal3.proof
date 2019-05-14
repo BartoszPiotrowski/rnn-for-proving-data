@@ -1,0 +1,32 @@
+
+t5_ordinal3 is a Theorem
+Start of proof for t5_ordinal3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v3_ordinal1(k3_tarski(k2_ordinal1(3^[])))]
+ (2)  [-r2_hidden(2^[_G4241], _G4241), -v3_ordinal1(k3_tarski(_G4241))]
+ (3)  [v3_ordinal1(2^[_G4241]), -v3_ordinal1(k3_tarski(_G4241))]
+ (4)  [_G3825=k2_ordinal1(_G3762), r2_hidden(_G3960, _G3825), -r2_hidden(_G3960, _G3762)]
+ (5)  [_G3825=k2_ordinal1(_G3762), r2_hidden(_G3960, _G3825), -v3_ordinal1(_G3960)]
+ (6)  [_G3825=k2_ordinal1(_G3762), -r2_hidden(_G3960, _G3825), r2_hidden(_G3960, _G3762), v3_ordinal1(_G3960)]
+ (7)  [- (_G3825=k2_ordinal1(_G3762)), -r2_hidden(1^[_G3825, _G3762], _G3825), -r2_hidden(1^[_G3825, _G3762], _G3762)]
+ (8)  [- (_G3825=k2_ordinal1(_G3762)), -r2_hidden(1^[_G3825, _G3762], _G3825), -v3_ordinal1(1^[_G3825, _G3762])]
+ (9)  [- (_G3825=k2_ordinal1(_G3762)), r2_hidden(1^[_G3825, _G3762], _G3825), r2_hidden(1^[_G3825, _G3762], _G3762), v3_ordinal1(1^[_G3825, _G3762])]
+ (10)  [_G3173=_G3222, - (k3_tarski(_G3173)=k3_tarski(_G3222))]
+ (11)  [_G3442=_G3491, - (k2_ordinal1(_G3442)=k2_ordinal1(_G3491))]
+ (12)  [- (_G1483=_G1483)]
+ (13)  [_G1582=_G1627, - (_G1627=_G1582)]
+ (14)  [- (_G1815=_G1928), _G1815=_G1871, _G1871=_G1928]
+ (15)  [-v3_ordinal1(_G2902), _G2853=_G2902, v3_ordinal1(_G2853)]
+ (16)  [-r2_hidden(_G2332, _G2469), r2_hidden(_G2265, _G2400), _G2265=_G2332, _G2400=_G2469]
+
+Connection Proof:
+-----------------
+1  [v3_ordinal1(k3_tarski(k2_ordinal1(3^[])))]   (1)  
+1.1  [-v3_ordinal1(k3_tarski(k2_ordinal1(3^[]))), -r2_hidden(2^[k2_ordinal1(3^[])], k2_ordinal1(3^[]))]   (2)  substitution:[[_G4241], [k2_ordinal1(3^[])]]
+1.1.1  [r2_hidden(2^[k2_ordinal1(3^[])], k2_ordinal1(3^[])), k2_ordinal1(3^[])=k2_ordinal1(3^[]), -v3_ordinal1(2^[k2_ordinal1(3^[])])]   (5)  substitution:[[_G3960, _G3825, _G3762], [2^[k2_ordinal1(3^[])], k2_ordinal1(3^[]), 3^[]]]
+1.1.1.1  [- (k2_ordinal1(3^[])=k2_ordinal1(3^[]))]   (12)  substitution:[[_G1483], [k2_ordinal1(3^[])]]
+1.1.1.2  [v3_ordinal1(2^[k2_ordinal1(3^[])]), -v3_ordinal1(k3_tarski(k2_ordinal1(3^[])))]   (3)  substitution:[[_G4241], [k2_ordinal1(3^[])]]
+1.1.1.2.1  [v3_ordinal1(k3_tarski(k2_ordinal1(3^[])))]   (1)  
+------------------------------------------------------
+End of proof for t5_ordinal3

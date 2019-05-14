@@ -1,0 +1,129 @@
+
+t40_rcomp_3 is a Theorem
+Start of proof for t40_rcomp_3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xreal_0(1^[])]
+ (2)  [-v1_xreal_0(2^[])]
+ (3)  [-r1_xxreal_0(1^[], 2^[])]
+ (4)  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(k4_topmetr(1^[], 2^[]))))]
+ (5)  [v5_xxreal_2(3^[]), m1_subset_1(3^[], k1_zfmisc_1(k1_numbers))]
+ (6)  [v2_membered(_G1333), m1_subset_1(_G1336, k1_zfmisc_1(_G1333)), -v2_membered(_G1336)]
+ (7)  [v3_membered(_G1344), -v2_membered(_G1344)]
+ (8)  [-v3_xxreal_2(_G1349), v2_membered(_G1349), v5_xxreal_2(_G1349)]
+ (9)  [-v4_xxreal_2(_G1349), v2_membered(_G1349), v5_xxreal_2(_G1349)]
+ (10)  [-v5_xxreal_2(_G1358), v2_membered(_G1358), v3_xxreal_2(_G1358), v4_xxreal_2(_G1358)]
+ (11)  [-m1_subset_1(k1_rcomp_1(_G1367, _G1368), k1_zfmisc_1(k1_numbers)), v1_xreal_0(_G1367), v1_xreal_0(_G1368)]
+ (12)  [-v3_membered(k1_xxreal_1(_G1381, _G1382)), v1_xreal_0(_G1381), v1_xreal_0(_G1382)]
+ (13)  [-v5_xxreal_2(k1_xxreal_1(_G1392, _G1393)), v1_xreal_0(_G1392), v1_xreal_0(_G1393)]
+ (14)  [- (k1_rcomp_1(_G1403, _G1404)=k1_xxreal_1(_G1403, _G1404)), v1_xreal_0(_G1403), v1_xreal_0(_G1404)]
+ (15)  [v1_xreal_0(_G1418), v1_xreal_0(_G1421), r1_xxreal_0(_G1418, _G1421), - (u1_struct_0(k4_topmetr(_G1418, _G1421))=k1_rcomp_1(_G1418, _G1421))]
+ (16)  [-r1_tarski(_G1438, _G1440), r1_tarski(_G1438, _G1439), r1_tarski(_G1439, _G1440)]
+ (17)  [m1_subset_1(_G1450, k1_zfmisc_1(_G1451)), -r1_tarski(_G1450, _G1451)]
+ (18)  [-m1_subset_1(_G1450, k1_zfmisc_1(_G1451)), r1_tarski(_G1450, _G1451)]
+ (19)  [v2_membered(_G1460), v2_membered(_G1463), -v4_xxreal_2(_G1460), r1_tarski(_G1460, _G1463), v4_xxreal_2(_G1463)]
+ (20)  [v2_membered(_G1473), v2_membered(_G1476), -v3_xxreal_2(_G1473), r1_tarski(_G1473, _G1476), v3_xxreal_2(_G1476)]
+ (21)  [- (k1_xxreal_1(_G1252, _G1254)=k1_xxreal_1(_G1253, _G1255)), _G1252=_G1253, _G1254=_G1255]
+ (22)  [- (k1_rcomp_1(_G1271, _G1273)=k1_rcomp_1(_G1272, _G1274)), _G1271=_G1272, _G1273=_G1274]
+ (23)  [_G1290=_G1291, - (u1_struct_0(_G1290)=u1_struct_0(_G1291))]
+ (24)  [_G1321=_G1322, - (k1_zfmisc_1(_G1321)=k1_zfmisc_1(_G1322))]
+ (25)  [- (k4_topmetr(_G1302, _G1304)=k4_topmetr(_G1303, _G1305)), _G1302=_G1303, _G1304=_G1305]
+ (26)  [- (_G1126=_G1126)]
+ (27)  [_G1130=_G1131, - (_G1131=_G1130)]
+ (28)  [- (_G1138=_G1140), _G1138=_G1139, _G1139=_G1140]
+ (29)  [-v3_membered(_G1151), _G1150=_G1151, v3_membered(_G1150)]
+ (30)  [-v4_xxreal_2(_G1160), _G1159=_G1160, v4_xxreal_2(_G1159)]
+ (31)  [-v2_membered(_G1169), _G1168=_G1169, v2_membered(_G1168)]
+ (32)  [-r1_tarski(_G1178, _G1180), r1_tarski(_G1177, _G1179), _G1177=_G1178, _G1179=_G1180]
+ (33)  [-v3_xxreal_2(_G1194), _G1193=_G1194, v3_xxreal_2(_G1193)]
+ (34)  [-v1_xreal_0(_G1203), _G1202=_G1203, v1_xreal_0(_G1202)]
+ (35)  [-r1_xxreal_0(_G1212, _G1214), r1_xxreal_0(_G1211, _G1213), _G1211=_G1212, _G1213=_G1214]
+ (36)  [-v5_xxreal_2(_G1228), _G1227=_G1228, v5_xxreal_2(_G1227)]
+ (37)  [-m1_subset_1(_G1237, _G1239), m1_subset_1(_G1236, _G1238), _G1236=_G1237, _G1238=_G1239]
+
+Connection Proof:
+-----------------
+1  [v5_xxreal_2(3^[]), m1_subset_1(3^[], k1_zfmisc_1(k1_numbers))]   (5)  
+1.1  [-v5_xxreal_2(3^[]), v2_membered(3^[]), v3_xxreal_2(3^[]), v4_xxreal_2(3^[])]   (10)  substitution:[[_G1358], [3^[]]]
+1.1.1  [-v2_membered(3^[]), v2_membered(k1_rcomp_1(1^[], 2^[])), m1_subset_1(3^[], k1_zfmisc_1(k1_rcomp_1(1^[], 2^[])))]   (6)  substitution:[[_G1336, _G1333], [3^[], k1_rcomp_1(1^[], 2^[])]]
+1.1.1.1  [-v2_membered(k1_rcomp_1(1^[], 2^[])), k1_xxreal_1(1^[], 2^[])=k1_rcomp_1(1^[], 2^[]), v2_membered(k1_xxreal_1(1^[], 2^[]))]   (31)  substitution:[[_G1169, _G1168], [k1_rcomp_1(1^[], 2^[]), k1_xxreal_1(1^[], 2^[])]]
+1.1.1.1.1  [- (k1_xxreal_1(1^[], 2^[])=k1_rcomp_1(1^[], 2^[])), k1_rcomp_1(1^[], 2^[])=k1_xxreal_1(1^[], 2^[])]   (27)  substitution:[[_G1131, _G1130], [k1_xxreal_1(1^[], 2^[]), k1_rcomp_1(1^[], 2^[])]]
+1.1.1.1.1.1  [- (k1_rcomp_1(1^[], 2^[])=k1_xxreal_1(1^[], 2^[])), v1_xreal_0(1^[]), v1_xreal_0(2^[])]   (14)  substitution:[[_G1403, _G1404], [1^[], 2^[]]]
+1.1.1.1.1.1.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.1.1.1.1.2  [-v1_xreal_0(2^[])]   (2)  
+1.1.1.1.2  [-v2_membered(k1_xxreal_1(1^[], 2^[])), v3_membered(k1_xxreal_1(1^[], 2^[]))]   (7)  substitution:[[_G1344], [k1_xxreal_1(1^[], 2^[])]]
+1.1.1.1.2.1  [-v3_membered(k1_xxreal_1(1^[], 2^[])), v1_xreal_0(1^[]), v1_xreal_0(2^[])]   (12)  substitution:[[_G1381, _G1382], [1^[], 2^[]]]
+1.1.1.1.2.1.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.1.1.2.1.2  [-v1_xreal_0(2^[])]   (2)  
+1.1.1.2  [-m1_subset_1(3^[], k1_zfmisc_1(k1_rcomp_1(1^[], 2^[]))), r1_tarski(3^[], k1_rcomp_1(1^[], 2^[]))]   (18)  substitution:[[_G1450, _G1451], [3^[], k1_rcomp_1(1^[], 2^[])]]
+1.1.1.2.1  [-r1_tarski(3^[], k1_rcomp_1(1^[], 2^[])), r1_tarski(3^[], u1_struct_0(k4_topmetr(1^[], 2^[]))), 3^[]=3^[], u1_struct_0(k4_topmetr(1^[], 2^[]))=k1_rcomp_1(1^[], 2^[])]   (32)  substitution:[[_G1178, _G1180, _G1177, _G1179], [3^[], k1_rcomp_1(1^[], 2^[]), 3^[], u1_struct_0(k4_topmetr(1^[], 2^[]))]]
+1.1.1.2.1.1  [-r1_tarski(3^[], u1_struct_0(k4_topmetr(1^[], 2^[]))), m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(k4_topmetr(1^[], 2^[]))))]   (17)  substitution:[[_G1450, _G1451], [3^[], u1_struct_0(k4_topmetr(1^[], 2^[]))]]
+1.1.1.2.1.1.1  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(k4_topmetr(1^[], 2^[]))))]   (4)  
+1.1.1.2.1.2  [- (3^[]=3^[])]   (26)  substitution:[[_G1126], [3^[]]]
+1.1.1.2.1.3  [- (u1_struct_0(k4_topmetr(1^[], 2^[]))=k1_rcomp_1(1^[], 2^[])), v1_xreal_0(1^[]), v1_xreal_0(2^[]), r1_xxreal_0(1^[], 2^[])]   (15)  substitution:[[_G1418, _G1421], [1^[], 2^[]]]
+1.1.1.2.1.3.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.1.2.1.3.2  [-v1_xreal_0(2^[])]   (2)  
+1.1.1.2.1.3.3  [-r1_xxreal_0(1^[], 2^[])]   (3)  
+1.1.2  [-v3_xxreal_2(3^[]), v2_membered(3^[]), v2_membered(k1_xxreal_1(1^[], 2^[])), r1_tarski(3^[], k1_xxreal_1(1^[], 2^[])), v3_xxreal_2(k1_xxreal_1(1^[], 2^[]))]   (20)  substitution:[[_G1473, _G1476], [3^[], k1_xxreal_1(1^[], 2^[])]]
+1.1.2.1  [-v2_membered(3^[])]   (lemmata:1.1)  
+1.1.2.2  [-v2_membered(k1_xxreal_1(1^[], 2^[])), v3_membered(k1_xxreal_1(1^[], 2^[]))]   (7)  substitution:[[_G1344], [k1_xxreal_1(1^[], 2^[])]]
+1.1.2.2.1  [-v3_membered(k1_xxreal_1(1^[], 2^[])), v1_xreal_0(1^[]), v1_xreal_0(2^[])]   (12)  substitution:[[_G1381, _G1382], [1^[], 2^[]]]
+1.1.2.2.1.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.2.2.1.2  [-v1_xreal_0(2^[])]   (2)  
+1.1.2.3  [-r1_tarski(3^[], k1_xxreal_1(1^[], 2^[])), r1_tarski(3^[], u1_struct_0(k4_topmetr(1^[], 2^[]))), 3^[]=3^[], u1_struct_0(k4_topmetr(1^[], 2^[]))=k1_xxreal_1(1^[], 2^[])]   (32)  substitution:[[_G1178, _G1180, _G1177, _G1179], [3^[], k1_xxreal_1(1^[], 2^[]), 3^[], u1_struct_0(k4_topmetr(1^[], 2^[]))]]
+1.1.2.3.1  [-r1_tarski(3^[], u1_struct_0(k4_topmetr(1^[], 2^[]))), m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(k4_topmetr(1^[], 2^[]))))]   (17)  substitution:[[_G1450, _G1451], [3^[], u1_struct_0(k4_topmetr(1^[], 2^[]))]]
+1.1.2.3.1.1  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(k4_topmetr(1^[], 2^[]))))]   (4)  
+1.1.2.3.2  [- (3^[]=3^[])]   (26)  substitution:[[_G1126], [3^[]]]
+1.1.2.3.3  [- (u1_struct_0(k4_topmetr(1^[], 2^[]))=k1_xxreal_1(1^[], 2^[])), u1_struct_0(k4_topmetr(1^[], 2^[]))=k1_rcomp_1(1^[], 2^[]), k1_rcomp_1(1^[], 2^[])=k1_xxreal_1(1^[], 2^[])]   (28)  substitution:[[_G1138, _G1140, _G1139], [u1_struct_0(k4_topmetr(1^[], 2^[])), k1_xxreal_1(1^[], 2^[]), k1_rcomp_1(1^[], 2^[])]]
+1.1.2.3.3.1  [- (u1_struct_0(k4_topmetr(1^[], 2^[]))=k1_rcomp_1(1^[], 2^[])), v1_xreal_0(1^[]), v1_xreal_0(2^[]), r1_xxreal_0(1^[], 2^[])]   (15)  substitution:[[_G1418, _G1421], [1^[], 2^[]]]
+1.1.2.3.3.1.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.2.3.3.1.2  [-v1_xreal_0(2^[])]   (2)  
+1.1.2.3.3.1.3  [-r1_xxreal_0(1^[], 2^[])]   (3)  
+1.1.2.3.3.2  [- (k1_rcomp_1(1^[], 2^[])=k1_xxreal_1(1^[], 2^[])), v1_xreal_0(1^[]), v1_xreal_0(2^[])]   (14)  substitution:[[_G1403, _G1404], [1^[], 2^[]]]
+1.1.2.3.3.2.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.2.3.3.2.2  [-v1_xreal_0(2^[])]   (2)  
+1.1.2.4  [-v3_xxreal_2(k1_xxreal_1(1^[], 2^[])), v2_membered(k1_xxreal_1(1^[], 2^[])), v5_xxreal_2(k1_xxreal_1(1^[], 2^[]))]   (8)  substitution:[[_G1349], [k1_xxreal_1(1^[], 2^[])]]
+1.1.2.4.1  [-v2_membered(k1_xxreal_1(1^[], 2^[]))]   (lemmata:1.1.2)  
+1.1.2.4.2  [-v5_xxreal_2(k1_xxreal_1(1^[], 2^[])), v1_xreal_0(1^[]), v1_xreal_0(2^[])]   (13)  substitution:[[_G1392, _G1393], [1^[], 2^[]]]
+1.1.2.4.2.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.2.4.2.2  [-v1_xreal_0(2^[])]   (2)  
+1.1.3  [-v4_xxreal_2(3^[]), v2_membered(3^[]), v2_membered(k1_xxreal_1(1^[], 2^[])), r1_tarski(3^[], k1_xxreal_1(1^[], 2^[])), v4_xxreal_2(k1_xxreal_1(1^[], 2^[]))]   (19)  substitution:[[_G1460, _G1463], [3^[], k1_xxreal_1(1^[], 2^[])]]
+1.1.3.1  [-v2_membered(3^[])]   (lemmata:1.1)  
+1.1.3.2  [-v2_membered(k1_xxreal_1(1^[], 2^[])), v3_membered(k1_xxreal_1(1^[], 2^[]))]   (7)  substitution:[[_G1344], [k1_xxreal_1(1^[], 2^[])]]
+1.1.3.2.1  [-v3_membered(k1_xxreal_1(1^[], 2^[])), v1_xreal_0(1^[]), v1_xreal_0(2^[])]   (12)  substitution:[[_G1381, _G1382], [1^[], 2^[]]]
+1.1.3.2.1.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.3.2.1.2  [-v1_xreal_0(2^[])]   (2)  
+1.1.3.3  [-r1_tarski(3^[], k1_xxreal_1(1^[], 2^[])), r1_tarski(3^[], u1_struct_0(k4_topmetr(1^[], 2^[]))), 3^[]=3^[], u1_struct_0(k4_topmetr(1^[], 2^[]))=k1_xxreal_1(1^[], 2^[])]   (32)  substitution:[[_G1178, _G1180, _G1177, _G1179], [3^[], k1_xxreal_1(1^[], 2^[]), 3^[], u1_struct_0(k4_topmetr(1^[], 2^[]))]]
+1.1.3.3.1  [-r1_tarski(3^[], u1_struct_0(k4_topmetr(1^[], 2^[]))), m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(k4_topmetr(1^[], 2^[]))))]   (17)  substitution:[[_G1450, _G1451], [3^[], u1_struct_0(k4_topmetr(1^[], 2^[]))]]
+1.1.3.3.1.1  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(k4_topmetr(1^[], 2^[]))))]   (4)  
+1.1.3.3.2  [- (3^[]=3^[])]   (26)  substitution:[[_G1126], [3^[]]]
+1.1.3.3.3  [- (u1_struct_0(k4_topmetr(1^[], 2^[]))=k1_xxreal_1(1^[], 2^[])), u1_struct_0(k4_topmetr(1^[], 2^[]))=k1_rcomp_1(1^[], 2^[]), k1_rcomp_1(1^[], 2^[])=k1_xxreal_1(1^[], 2^[])]   (28)  substitution:[[_G1138, _G1140, _G1139], [u1_struct_0(k4_topmetr(1^[], 2^[])), k1_xxreal_1(1^[], 2^[]), k1_rcomp_1(1^[], 2^[])]]
+1.1.3.3.3.1  [- (u1_struct_0(k4_topmetr(1^[], 2^[]))=k1_rcomp_1(1^[], 2^[])), v1_xreal_0(1^[]), v1_xreal_0(2^[]), r1_xxreal_0(1^[], 2^[])]   (15)  substitution:[[_G1418, _G1421], [1^[], 2^[]]]
+1.1.3.3.3.1.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.3.3.3.1.2  [-v1_xreal_0(2^[])]   (2)  
+1.1.3.3.3.1.3  [-r1_xxreal_0(1^[], 2^[])]   (3)  
+1.1.3.3.3.2  [- (k1_rcomp_1(1^[], 2^[])=k1_xxreal_1(1^[], 2^[])), v1_xreal_0(1^[]), v1_xreal_0(2^[])]   (14)  substitution:[[_G1403, _G1404], [1^[], 2^[]]]
+1.1.3.3.3.2.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.3.3.3.2.2  [-v1_xreal_0(2^[])]   (2)  
+1.1.3.4  [-v4_xxreal_2(k1_xxreal_1(1^[], 2^[])), v2_membered(k1_xxreal_1(1^[], 2^[])), v5_xxreal_2(k1_xxreal_1(1^[], 2^[]))]   (9)  substitution:[[_G1349], [k1_xxreal_1(1^[], 2^[])]]
+1.1.3.4.1  [-v2_membered(k1_xxreal_1(1^[], 2^[]))]   (lemmata:1.1.3)  
+1.1.3.4.2  [-v5_xxreal_2(k1_xxreal_1(1^[], 2^[])), v1_xreal_0(1^[]), v1_xreal_0(2^[])]   (13)  substitution:[[_G1392, _G1393], [1^[], 2^[]]]
+1.1.3.4.2.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.3.4.2.2  [-v1_xreal_0(2^[])]   (2)  
+1.2  [-m1_subset_1(3^[], k1_zfmisc_1(k1_numbers)), r1_tarski(3^[], k1_numbers)]   (18)  substitution:[[_G1450, _G1451], [3^[], k1_numbers]]
+1.2.1  [-r1_tarski(3^[], k1_numbers), r1_tarski(3^[], u1_struct_0(k4_topmetr(1^[], 2^[]))), r1_tarski(u1_struct_0(k4_topmetr(1^[], 2^[])), k1_numbers)]   (16)  substitution:[[_G1438, _G1440, _G1439], [3^[], k1_numbers, u1_struct_0(k4_topmetr(1^[], 2^[]))]]
+1.2.1.1  [-r1_tarski(3^[], u1_struct_0(k4_topmetr(1^[], 2^[]))), m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(k4_topmetr(1^[], 2^[]))))]   (17)  substitution:[[_G1450, _G1451], [3^[], u1_struct_0(k4_topmetr(1^[], 2^[]))]]
+1.2.1.1.1  [-m1_subset_1(3^[], k1_zfmisc_1(u1_struct_0(k4_topmetr(1^[], 2^[]))))]   (4)  
+1.2.1.2  [-r1_tarski(u1_struct_0(k4_topmetr(1^[], 2^[])), k1_numbers), r1_tarski(k1_rcomp_1(1^[], 2^[]), k1_numbers), k1_rcomp_1(1^[], 2^[])=u1_struct_0(k4_topmetr(1^[], 2^[])), k1_numbers=k1_numbers]   (32)  substitution:[[_G1178, _G1180, _G1177, _G1179], [u1_struct_0(k4_topmetr(1^[], 2^[])), k1_numbers, k1_rcomp_1(1^[], 2^[]), k1_numbers]]
+1.2.1.2.1  [-r1_tarski(k1_rcomp_1(1^[], 2^[]), k1_numbers), m1_subset_1(k1_rcomp_1(1^[], 2^[]), k1_zfmisc_1(k1_numbers))]   (17)  substitution:[[_G1450, _G1451], [k1_rcomp_1(1^[], 2^[]), k1_numbers]]
+1.2.1.2.1.1  [-m1_subset_1(k1_rcomp_1(1^[], 2^[]), k1_zfmisc_1(k1_numbers)), v1_xreal_0(1^[]), v1_xreal_0(2^[])]   (11)  substitution:[[_G1367, _G1368], [1^[], 2^[]]]
+1.2.1.2.1.1.1  [-v1_xreal_0(1^[])]   (1)  
+1.2.1.2.1.1.2  [-v1_xreal_0(2^[])]   (2)  
+1.2.1.2.2  [- (k1_rcomp_1(1^[], 2^[])=u1_struct_0(k4_topmetr(1^[], 2^[]))), u1_struct_0(k4_topmetr(1^[], 2^[]))=k1_rcomp_1(1^[], 2^[])]   (27)  substitution:[[_G1131, _G1130], [k1_rcomp_1(1^[], 2^[]), u1_struct_0(k4_topmetr(1^[], 2^[]))]]
+1.2.1.2.2.1  [- (u1_struct_0(k4_topmetr(1^[], 2^[]))=k1_rcomp_1(1^[], 2^[])), v1_xreal_0(1^[]), v1_xreal_0(2^[]), r1_xxreal_0(1^[], 2^[])]   (15)  substitution:[[_G1418, _G1421], [1^[], 2^[]]]
+1.2.1.2.2.1.1  [-v1_xreal_0(1^[])]   (1)  
+1.2.1.2.2.1.2  [-v1_xreal_0(2^[])]   (2)  
+1.2.1.2.2.1.3  [-r1_xxreal_0(1^[], 2^[])]   (3)  
+1.2.1.2.3  [- (k1_numbers=k1_numbers)]   (26)  substitution:[[_G1126], [k1_numbers]]
+------------------------------------------------------
+End of proof for t40_rcomp_3

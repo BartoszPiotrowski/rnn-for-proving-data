@@ -1,0 +1,40 @@
+
+t2_ramsey_1 is a Theorem
+Start of proof for t2_ramsey_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-r1_tarski(1^[], k4_ordinal1)]
+ (2)  [v1_finset_1(1^[])]
+ (3)  [k1_card_1(1^[])=k4_ordinal1]
+ (4)  [-v1_card_1(k1_card_1(_G5746))]
+ (5)  [-v1_card_1(k4_ordinal1)]
+ (6)  [- (k5_numbers=k4_ordinal1)]
+ (7)  [v1_card_1(_G5924), v1_card_1(_G6019), r2_hidden(_G5924, _G6019), -r1_ordinal1(_G5924, _G6019)]
+ (8)  [v1_card_1(_G5924), v1_card_1(_G6019), r2_hidden(_G5924, _G6019), _G5924=_G6019]
+ (9)  [v1_card_1(_G5924), v1_card_1(_G6019), -r2_hidden(_G5924, _G6019), r1_ordinal1(_G5924, _G6019), - (_G5924=_G6019)]
+ (10)  [v1_card_1(_G6447), r1_tarski(_G6395, _G6447), -r1_ordinal1(k1_card_1(_G6395), _G6447)]
+ (11)  [v1_finset_1(_G6709), -r2_hidden(k1_card_1(_G6709), k4_ordinal1)]
+ (12)  [-v1_finset_1(_G6709), r2_hidden(k1_card_1(_G6709), k4_ordinal1)]
+ (13)  [_G5447=_G5496, - (k1_card_1(_G5447)=k1_card_1(_G5496))]
+ (14)  [- (_G2231=_G2231)]
+ (15)  [_G2330=_G2375, - (_G2375=_G2330)]
+ (16)  [- (_G2563=_G2676), _G2563=_G2619, _G2619=_G2676]
+ (17)  [-v1_card_1(_G3062), _G3013=_G3062, v1_card_1(_G3013)]
+ (18)  [-r1_ordinal1(_G3358, _G3495), r1_ordinal1(_G3291, _G3426), _G3291=_G3358, _G3426=_G3495]
+ (19)  [-r2_hidden(_G3955, _G4092), r2_hidden(_G3888, _G4023), _G3888=_G3955, _G4023=_G4092]
+ (20)  [-v1_finset_1(_G5122), _G5073=_G5122, v1_finset_1(_G5073)]
+ (21)  [-r1_tarski(_G4552, _G4689), r1_tarski(_G4485, _G4620), _G4485=_G4552, _G4620=_G4689]
+
+Connection Proof:
+-----------------
+1  [k1_card_1(1^[])=k4_ordinal1]   (3)  
+1.1  [- (k1_card_1(1^[])=k4_ordinal1), v1_card_1(k1_card_1(1^[])), v1_card_1(k4_ordinal1), -r2_hidden(k1_card_1(1^[]), k4_ordinal1), r1_ordinal1(k1_card_1(1^[]), k4_ordinal1)]   (9)  substitution:[[_G5924, _G6019], [k1_card_1(1^[]), k4_ordinal1]]
+1.1.1  [-v1_card_1(k1_card_1(1^[]))]   (4)  substitution:[[_G5746], [1^[]]]
+1.1.2  [-v1_card_1(k4_ordinal1)]   (5)  
+1.1.3  [r2_hidden(k1_card_1(1^[]), k4_ordinal1), -v1_finset_1(1^[])]   (12)  substitution:[[_G6709], [1^[]]]
+1.1.3.1  [v1_finset_1(1^[])]   (2)  
+1.1.4  [-r1_ordinal1(k1_card_1(1^[]), k4_ordinal1), v1_card_1(k4_ordinal1), r1_tarski(1^[], k4_ordinal1)]   (10)  substitution:[[_G6395, _G6447], [1^[], k4_ordinal1]]
+1.1.4.1  [-v1_card_1(k4_ordinal1)]   (5)  
+1.1.4.2  [-r1_tarski(1^[], k4_ordinal1)]   (1)  
+------------------------------------------------------
+End of proof for t2_ramsey_1

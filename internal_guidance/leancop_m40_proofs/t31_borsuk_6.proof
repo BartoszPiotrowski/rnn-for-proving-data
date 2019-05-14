@@ -1,0 +1,83 @@
+
+t31_borsuk_6 is a Theorem
+Start of proof for t31_borsuk_6
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-l1_pre_topc(1^[])]
+ (2)  [-v1_xreal_0(2^[])]
+ (3)  [-v1_xreal_0(3^[])]
+ (4)  [r1_xxreal_0(2^[], 3^[])]
+ (5)  [v1_xboole_0(k1_rcomp_1(2^[], 3^[])), v2_compts_1(k1_rcomp_1(2^[], 3^[]), 1^[]), m1_subset_1(k1_rcomp_1(2^[], 3^[]), k1_zfmisc_1(u1_struct_0(1^[])))]
+ (6)  [v1_xreal_0(_G8710), -v1_xxreal_0(_G8710)]
+ (7)  [- (k1_rcomp_1(_G8841, _G8896)=k1_xxreal_1(_G8841, _G8896)), v1_xreal_0(_G8841), v1_xreal_0(_G8896)]
+ (8)  [l1_pre_topc(_G9626), -v1_xboole_0(k1_xboole_0)]
+ (9)  [l1_pre_topc(_G9626), -v2_compts_1(k1_xboole_0, _G9626)]
+ (10)  [l1_pre_topc(_G9626), -m1_subset_1(k1_xboole_0, k1_zfmisc_1(u1_struct_0(_G9626)))]
+ (11)  [v1_xxreal_0(_G9209), v1_xxreal_0(_G9301), -r1_xxreal_0(_G9301, _G9209), - (k1_xxreal_1(_G9301, _G9209)=k1_xboole_0)]
+ (12)  [- (k1_xxreal_1(_G6885, _G7020)=k1_xxreal_1(_G6952, _G7089)), _G6885=_G6952, _G7020=_G7089]
+ (13)  [- (k1_rcomp_1(_G7482, _G7617)=k1_rcomp_1(_G7549, _G7686)), _G7482=_G7549, _G7617=_G7686]
+ (14)  [_G8079=_G8128, - (k1_zfmisc_1(_G8079)=k1_zfmisc_1(_G8128))]
+ (15)  [_G8348=_G8397, - (u1_struct_0(_G8348)=u1_struct_0(_G8397))]
+ (16)  [- (_G3062=_G3062)]
+ (17)  [_G3161=_G3206, - (_G3206=_G3161)]
+ (18)  [- (_G3394=_G3507), _G3394=_G3450, _G3450=_G3507]
+ (19)  [-v1_xxreal_0(_G3893), _G3844=_G3893, v1_xxreal_0(_G3844)]
+ (20)  [-l1_pre_topc(_G4171), _G4122=_G4171, l1_pre_topc(_G4122)]
+ (21)  [-v1_xreal_0(_G4449), _G4400=_G4449, v1_xreal_0(_G4400)]
+ (22)  [-r1_xxreal_0(_G4745, _G4882), r1_xxreal_0(_G4678, _G4813), _G4678=_G4745, _G4813=_G4882]
+ (23)  [-v1_xboole_0(_G5324), _G5275=_G5324, v1_xboole_0(_G5275)]
+ (24)  [-v2_compts_1(_G5620, _G5757), v2_compts_1(_G5553, _G5688), _G5553=_G5620, _G5688=_G5757]
+ (25)  [-m1_subset_1(_G6208, _G6345), m1_subset_1(_G6141, _G6276), _G6141=_G6208, _G6276=_G6345]
+
+Connection Proof:
+-----------------
+1  [v1_xboole_0(k1_rcomp_1(2^[], 3^[])), v2_compts_1(k1_rcomp_1(2^[], 3^[]), 1^[]), m1_subset_1(k1_rcomp_1(2^[], 3^[]), k1_zfmisc_1(u1_struct_0(1^[])))]   (5)  
+1.1  [-v1_xboole_0(k1_rcomp_1(2^[], 3^[])), k1_xxreal_1(2^[], 3^[])=k1_rcomp_1(2^[], 3^[]), v1_xboole_0(k1_xxreal_1(2^[], 3^[]))]   (23)  substitution:[[_G5324, _G5275], [k1_rcomp_1(2^[], 3^[]), k1_xxreal_1(2^[], 3^[])]]
+1.1.1  [- (k1_xxreal_1(2^[], 3^[])=k1_rcomp_1(2^[], 3^[])), k1_rcomp_1(2^[], 3^[])=k1_xxreal_1(2^[], 3^[])]   (17)  substitution:[[_G3206, _G3161], [k1_xxreal_1(2^[], 3^[]), k1_rcomp_1(2^[], 3^[])]]
+1.1.1.1  [- (k1_rcomp_1(2^[], 3^[])=k1_xxreal_1(2^[], 3^[])), v1_xreal_0(2^[]), v1_xreal_0(3^[])]   (7)  substitution:[[_G8841, _G8896], [2^[], 3^[]]]
+1.1.1.1.1  [-v1_xreal_0(2^[])]   (2)  
+1.1.1.1.2  [-v1_xreal_0(3^[])]   (3)  
+1.1.2  [-v1_xboole_0(k1_xxreal_1(2^[], 3^[])), k1_xboole_0=k1_xxreal_1(2^[], 3^[]), v1_xboole_0(k1_xboole_0)]   (23)  substitution:[[_G5324, _G5275], [k1_xxreal_1(2^[], 3^[]), k1_xboole_0]]
+1.1.2.1  [- (k1_xboole_0=k1_xxreal_1(2^[], 3^[])), k1_xxreal_1(2^[], 3^[])=k1_xboole_0]   (17)  substitution:[[_G3206, _G3161], [k1_xboole_0, k1_xxreal_1(2^[], 3^[])]]
+1.1.2.1.1  [- (k1_xxreal_1(2^[], 3^[])=k1_xboole_0), v1_xxreal_0(3^[]), v1_xxreal_0(2^[]), -r1_xxreal_0(2^[], 3^[])]   (11)  substitution:[[_G9301, _G9209], [2^[], 3^[]]]
+1.1.2.1.1.1  [-v1_xxreal_0(3^[]), v1_xreal_0(3^[])]   (6)  substitution:[[_G8710], [3^[]]]
+1.1.2.1.1.1.1  [-v1_xreal_0(3^[])]   (3)  
+1.1.2.1.1.2  [-v1_xxreal_0(2^[]), v1_xreal_0(2^[])]   (6)  substitution:[[_G8710], [2^[]]]
+1.1.2.1.1.2.1  [-v1_xreal_0(2^[])]   (2)  
+1.1.2.1.1.3  [r1_xxreal_0(2^[], 3^[])]   (4)  
+1.1.2.2  [-v1_xboole_0(k1_xboole_0), l1_pre_topc(1^[])]   (8)  substitution:[[_G9626], [1^[]]]
+1.1.2.2.1  [-l1_pre_topc(1^[])]   (1)  
+1.2  [-v2_compts_1(k1_rcomp_1(2^[], 3^[]), 1^[]), v2_compts_1(k1_xboole_0, 1^[]), k1_xboole_0=k1_rcomp_1(2^[], 3^[]), 1^[]=1^[]]   (24)  substitution:[[_G5620, _G5757, _G5553, _G5688], [k1_rcomp_1(2^[], 3^[]), 1^[], k1_xboole_0, 1^[]]]
+1.2.1  [-v2_compts_1(k1_xboole_0, 1^[]), l1_pre_topc(1^[])]   (9)  substitution:[[_G9626], [1^[]]]
+1.2.1.1  [-l1_pre_topc(1^[])]   (1)  
+1.2.2  [- (k1_xboole_0=k1_rcomp_1(2^[], 3^[])), k1_rcomp_1(2^[], 3^[])=k1_xboole_0]   (17)  substitution:[[_G3206, _G3161], [k1_xboole_0, k1_rcomp_1(2^[], 3^[])]]
+1.2.2.1  [- (k1_rcomp_1(2^[], 3^[])=k1_xboole_0), k1_rcomp_1(2^[], 3^[])=k1_xxreal_1(2^[], 3^[]), k1_xxreal_1(2^[], 3^[])=k1_xboole_0]   (18)  substitution:[[_G3394, _G3507, _G3450], [k1_rcomp_1(2^[], 3^[]), k1_xboole_0, k1_xxreal_1(2^[], 3^[])]]
+1.2.2.1.1  [- (k1_rcomp_1(2^[], 3^[])=k1_xxreal_1(2^[], 3^[])), v1_xreal_0(2^[]), v1_xreal_0(3^[])]   (7)  substitution:[[_G8841, _G8896], [2^[], 3^[]]]
+1.2.2.1.1.1  [-v1_xreal_0(2^[])]   (2)  
+1.2.2.1.1.2  [-v1_xreal_0(3^[])]   (3)  
+1.2.2.1.2  [- (k1_xxreal_1(2^[], 3^[])=k1_xboole_0), v1_xxreal_0(3^[]), v1_xxreal_0(2^[]), -r1_xxreal_0(2^[], 3^[])]   (11)  substitution:[[_G9301, _G9209], [2^[], 3^[]]]
+1.2.2.1.2.1  [-v1_xxreal_0(3^[]), v1_xreal_0(3^[])]   (6)  substitution:[[_G8710], [3^[]]]
+1.2.2.1.2.1.1  [-v1_xreal_0(3^[])]   (3)  
+1.2.2.1.2.2  [-v1_xxreal_0(2^[]), v1_xreal_0(2^[])]   (6)  substitution:[[_G8710], [2^[]]]
+1.2.2.1.2.2.1  [-v1_xreal_0(2^[])]   (2)  
+1.2.2.1.2.3  [r1_xxreal_0(2^[], 3^[])]   (4)  
+1.2.3  [- (1^[]=1^[])]   (16)  substitution:[[_G3062], [1^[]]]
+1.3  [-m1_subset_1(k1_rcomp_1(2^[], 3^[]), k1_zfmisc_1(u1_struct_0(1^[]))), m1_subset_1(k1_xboole_0, k1_zfmisc_1(u1_struct_0(1^[]))), k1_xboole_0=k1_rcomp_1(2^[], 3^[]), k1_zfmisc_1(u1_struct_0(1^[]))=k1_zfmisc_1(u1_struct_0(1^[]))]   (25)  substitution:[[_G6208, _G6345, _G6141, _G6276], [k1_rcomp_1(2^[], 3^[]), k1_zfmisc_1(u1_struct_0(1^[])), k1_xboole_0, k1_zfmisc_1(u1_struct_0(1^[]))]]
+1.3.1  [-m1_subset_1(k1_xboole_0, k1_zfmisc_1(u1_struct_0(1^[]))), l1_pre_topc(1^[])]   (10)  substitution:[[_G9626], [1^[]]]
+1.3.1.1  [-l1_pre_topc(1^[])]   (1)  
+1.3.2  [- (k1_xboole_0=k1_rcomp_1(2^[], 3^[])), k1_rcomp_1(2^[], 3^[])=k1_xboole_0]   (17)  substitution:[[_G3206, _G3161], [k1_xboole_0, k1_rcomp_1(2^[], 3^[])]]
+1.3.2.1  [- (k1_rcomp_1(2^[], 3^[])=k1_xboole_0), k1_rcomp_1(2^[], 3^[])=k1_xxreal_1(2^[], 3^[]), k1_xxreal_1(2^[], 3^[])=k1_xboole_0]   (18)  substitution:[[_G3394, _G3507, _G3450], [k1_rcomp_1(2^[], 3^[]), k1_xboole_0, k1_xxreal_1(2^[], 3^[])]]
+1.3.2.1.1  [- (k1_rcomp_1(2^[], 3^[])=k1_xxreal_1(2^[], 3^[])), v1_xreal_0(2^[]), v1_xreal_0(3^[])]   (7)  substitution:[[_G8841, _G8896], [2^[], 3^[]]]
+1.3.2.1.1.1  [-v1_xreal_0(2^[])]   (2)  
+1.3.2.1.1.2  [-v1_xreal_0(3^[])]   (3)  
+1.3.2.1.2  [- (k1_xxreal_1(2^[], 3^[])=k1_xboole_0), v1_xxreal_0(3^[]), v1_xxreal_0(2^[]), -r1_xxreal_0(2^[], 3^[])]   (11)  substitution:[[_G9301, _G9209], [2^[], 3^[]]]
+1.3.2.1.2.1  [-v1_xxreal_0(3^[]), v1_xreal_0(3^[])]   (6)  substitution:[[_G8710], [3^[]]]
+1.3.2.1.2.1.1  [-v1_xreal_0(3^[])]   (3)  
+1.3.2.1.2.2  [-v1_xxreal_0(2^[]), v1_xreal_0(2^[])]   (6)  substitution:[[_G8710], [2^[]]]
+1.3.2.1.2.2.1  [-v1_xreal_0(2^[])]   (2)  
+1.3.2.1.2.3  [r1_xxreal_0(2^[], 3^[])]   (4)  
+1.3.3  [- (k1_zfmisc_1(u1_struct_0(1^[]))=k1_zfmisc_1(u1_struct_0(1^[]))), u1_struct_0(1^[])=u1_struct_0(1^[])]   (14)  substitution:[[_G8079, _G8128], [u1_struct_0(1^[]), u1_struct_0(1^[])]]
+1.3.3.1  [- (u1_struct_0(1^[])=u1_struct_0(1^[])), 1^[]=1^[]]   (15)  substitution:[[_G8348, _G8397], [1^[], 1^[]]]
+1.3.3.1.1  [- (1^[]=1^[])]   (16)  substitution:[[_G3062], [1^[]]]
+------------------------------------------------------
+End of proof for t31_borsuk_6

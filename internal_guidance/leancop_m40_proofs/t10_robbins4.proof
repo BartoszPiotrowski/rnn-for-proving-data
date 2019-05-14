@@ -1,0 +1,53 @@
+
+t10_robbins4 is a Theorem
+Start of proof for t10_robbins4
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [r1_tarski(u1_struct_0(k2_robbins4), k1_zfmisc_1(np__3))]
+ (2)  [- (u1_struct_0(k14_lattice3(k1_robbins4))=k4_enumset1(k6_numbers, np__1, k6_subset_1(np__3, np__1), np__2, k6_subset_1(np__3, np__2), np__3))]
+ (3)  [- (u1_struct_0(k2_robbins4)=k4_enumset1(k6_numbers, np__1, k6_subset_1(np__3, np__1), np__2, k6_subset_1(np__3, np__2), np__3))]
+ (4)  [r2_hidden(_G9835, u1_struct_0(k14_lattice3(k1_robbins4))), -r1_tarski(_G9835, np__3)]
+ (5)  [-r1_tarski(_G9059, _G9115), -r2_hidden(2^[_G9115, _G9059], _G9059)]
+ (6)  [-r1_tarski(_G9059, _G9115), r2_hidden(2^[_G9115, _G9059], _G9115)]
+ (7)  [r1_tarski(_G9059, _G9115), r2_hidden(_G9229, _G9059), -r2_hidden(_G9229, _G9115)]
+ (8)  [_G8697=k1_zfmisc_1(_G8639), r2_hidden(_G8827, _G8697), -r1_tarski(_G8827, _G8639)]
+ (9)  [_G8697=k1_zfmisc_1(_G8639), -r2_hidden(_G8827, _G8697), r1_tarski(_G8827, _G8639)]
+ (10)  [- (_G8697=k1_zfmisc_1(_G8639)), r2_hidden(1^[_G8697, _G8639], _G8697), r1_tarski(1^[_G8697, _G8639], _G8639)]
+ (11)  [- (_G8697=k1_zfmisc_1(_G8639)), -r2_hidden(1^[_G8697, _G8639], _G8697), -r1_tarski(1^[_G8697, _G8639], _G8639)]
+ (12)  [- (_G2326=_G2326)]
+ (13)  [_G2425=_G2470, - (_G2470=_G2425)]
+ (14)  [- (_G2658=_G2771), _G2658=_G2714, _G2714=_G2771]
+ (15)  [-r2_hidden(_G3175, _G3312), r2_hidden(_G3108, _G3243), _G3108=_G3175, _G3243=_G3312]
+ (16)  [-r1_tarski(_G3763, _G3900), r1_tarski(_G3696, _G3831), _G3696=_G3763, _G3831=_G3900]
+ (17)  [_G4335=_G4384, - (k14_lattice3(_G4335)=k14_lattice3(_G4384))]
+ (18)  [- (k4_enumset1(_G4613, _G4892, _G5175, _G5462, _G5753, _G6048)=k4_enumset1(_G4752, _G5033, _G5318, _G5607, _G5900, _G6197)), _G4613=_G4752, _G4892=_G5033, _G5175=_G5318, _G5462=_G5607, _G5753=_G5900, _G6048=_G6197]
+ (19)  [- (k6_subset_1(_G7390, _G7525)=k6_subset_1(_G7457, _G7594)), _G7390=_G7457, _G7525=_G7594]
+ (20)  [_G7987=_G8036, - (u1_struct_0(_G7987)=u1_struct_0(_G8036))]
+ (21)  [_G8256=_G8305, - (k1_zfmisc_1(_G8256)=k1_zfmisc_1(_G8305))]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(u1_struct_0(k2_robbins4), k1_zfmisc_1(np__3))]   (1)  
+1.1  [-r1_tarski(u1_struct_0(k2_robbins4), k1_zfmisc_1(np__3)), r1_tarski(u1_struct_0(k14_lattice3(k1_robbins4)), k1_zfmisc_1(np__3)), u1_struct_0(k14_lattice3(k1_robbins4))=u1_struct_0(k2_robbins4), k1_zfmisc_1(np__3)=k1_zfmisc_1(np__3)]   (16)  substitution:[[_G3763, _G3900, _G3696, _G3831], [u1_struct_0(k2_robbins4), k1_zfmisc_1(np__3), u1_struct_0(k14_lattice3(k1_robbins4)), k1_zfmisc_1(np__3)]]
+1.1.1  [-r1_tarski(u1_struct_0(k14_lattice3(k1_robbins4)), k1_zfmisc_1(np__3)), -r2_hidden(2^[k1_zfmisc_1(np__3), u1_struct_0(k14_lattice3(k1_robbins4))], u1_struct_0(k14_lattice3(k1_robbins4)))]   (5)  substitution:[[_G9059, _G9115], [u1_struct_0(k14_lattice3(k1_robbins4)), k1_zfmisc_1(np__3)]]
+1.1.1.1  [r2_hidden(2^[k1_zfmisc_1(np__3), u1_struct_0(k14_lattice3(k1_robbins4))], u1_struct_0(k14_lattice3(k1_robbins4))), -r1_tarski(2^[k1_zfmisc_1(np__3), u1_struct_0(k14_lattice3(k1_robbins4))], np__3)]   (4)  substitution:[[_G9835], [2^[k1_zfmisc_1(np__3), u1_struct_0(k14_lattice3(k1_robbins4))]]]
+1.1.1.1.1  [r1_tarski(2^[k1_zfmisc_1(np__3), u1_struct_0(k14_lattice3(k1_robbins4))], np__3), k1_zfmisc_1(np__3)=k1_zfmisc_1(np__3), -r2_hidden(2^[k1_zfmisc_1(np__3), u1_struct_0(k14_lattice3(k1_robbins4))], k1_zfmisc_1(np__3))]   (9)  substitution:[[_G8827, _G8639, _G8697], [2^[k1_zfmisc_1(np__3), u1_struct_0(k14_lattice3(k1_robbins4))], np__3, k1_zfmisc_1(np__3)]]
+1.1.1.1.1.1  [- (k1_zfmisc_1(np__3)=k1_zfmisc_1(np__3))]   (12)  substitution:[[_G2326], [k1_zfmisc_1(np__3)]]
+1.1.1.1.1.2  [r2_hidden(2^[k1_zfmisc_1(np__3), u1_struct_0(k14_lattice3(k1_robbins4))], k1_zfmisc_1(np__3)), -r1_tarski(u1_struct_0(k14_lattice3(k1_robbins4)), k1_zfmisc_1(np__3))]   (6)  substitution:[[_G9115, _G9059], [k1_zfmisc_1(np__3), u1_struct_0(k14_lattice3(k1_robbins4))]]
+1.1.1.1.1.2.1  [r1_tarski(u1_struct_0(k14_lattice3(k1_robbins4)), k1_zfmisc_1(np__3))]   (reduction:1.1)  
+1.1.2  [- (u1_struct_0(k14_lattice3(k1_robbins4))=u1_struct_0(k2_robbins4)), u1_struct_0(k2_robbins4)=u1_struct_0(k14_lattice3(k1_robbins4))]   (13)  substitution:[[_G2470, _G2425], [u1_struct_0(k14_lattice3(k1_robbins4)), u1_struct_0(k2_robbins4)]]
+1.1.2.1  [- (u1_struct_0(k2_robbins4)=u1_struct_0(k14_lattice3(k1_robbins4))), u1_struct_0(k2_robbins4)=k4_enumset1(k6_numbers, np__1, k6_subset_1(np__3, np__1), np__2, k6_subset_1(np__3, np__2), np__3), k4_enumset1(k6_numbers, np__1, k6_subset_1(np__3, np__1), np__2, k6_subset_1(np__3, np__2), np__3)=u1_struct_0(k14_lattice3(k1_robbins4))]   (14)  substitution:[[_G2658, _G2771, _G2714], [u1_struct_0(k2_robbins4), u1_struct_0(k14_lattice3(k1_robbins4)), k4_enumset1(k6_numbers, np__1, k6_subset_1(np__3, np__1), np__2, k6_subset_1(np__3, np__2), np__3)]]
+1.1.2.1.1  [- (u1_struct_0(k2_robbins4)=k4_enumset1(k6_numbers, np__1, k6_subset_1(np__3, np__1), np__2, k6_subset_1(np__3, np__2), np__3))]   (3)  
+1.1.2.1.2  [- (k4_enumset1(k6_numbers, np__1, k6_subset_1(np__3, np__1), np__2, k6_subset_1(np__3, np__2), np__3)=u1_struct_0(k14_lattice3(k1_robbins4))), u1_struct_0(k14_lattice3(k1_robbins4))=k4_enumset1(k6_numbers, np__1, k6_subset_1(np__3, np__1), np__2, k6_subset_1(np__3, np__2), np__3)]   (13)  substitution:[[_G2470, _G2425], [k4_enumset1(k6_numbers, np__1, k6_subset_1(np__3, np__1), np__2, k6_subset_1(np__3, np__2), np__3), u1_struct_0(k14_lattice3(k1_robbins4))]]
+1.1.2.1.2.1  [- (u1_struct_0(k14_lattice3(k1_robbins4))=k4_enumset1(k6_numbers, np__1, k6_subset_1(np__3, np__1), np__2, k6_subset_1(np__3, np__2), np__3))]   (2)  
+1.1.3  [- (k1_zfmisc_1(np__3)=k1_zfmisc_1(np__3)), r2_hidden(1^[k1_zfmisc_1(np__3), np__3], k1_zfmisc_1(np__3)), r1_tarski(1^[k1_zfmisc_1(np__3), np__3], np__3)]   (10)  substitution:[[_G8697, _G8639], [k1_zfmisc_1(np__3), np__3]]
+1.1.3.1  [-r2_hidden(1^[k1_zfmisc_1(np__3), np__3], k1_zfmisc_1(np__3)), k1_zfmisc_1(np__3)=k1_zfmisc_1(np__3), r1_tarski(1^[k1_zfmisc_1(np__3), np__3], np__3)]   (9)  substitution:[[_G8827, _G8697, _G8639], [1^[k1_zfmisc_1(np__3), np__3], k1_zfmisc_1(np__3), np__3]]
+1.1.3.1.1  [- (k1_zfmisc_1(np__3)=k1_zfmisc_1(np__3))]   (12)  substitution:[[_G2326], [k1_zfmisc_1(np__3)]]
+1.1.3.1.2  [-r1_tarski(1^[k1_zfmisc_1(np__3), np__3], np__3), - (k1_zfmisc_1(np__3)=k1_zfmisc_1(np__3)), -r2_hidden(1^[k1_zfmisc_1(np__3), np__3], k1_zfmisc_1(np__3))]   (11)  substitution:[[_G8697, _G8639], [k1_zfmisc_1(np__3), np__3]]
+1.1.3.1.2.1  [k1_zfmisc_1(np__3)=k1_zfmisc_1(np__3)]   (reduction:1.1)  
+1.1.3.1.2.2  [r2_hidden(1^[k1_zfmisc_1(np__3), np__3], k1_zfmisc_1(np__3))]   (reduction:1.1.3)  
+1.1.3.2  [-r1_tarski(1^[k1_zfmisc_1(np__3), np__3], np__3), k1_zfmisc_1(np__3)=k1_zfmisc_1(np__3), r2_hidden(1^[k1_zfmisc_1(np__3), np__3], k1_zfmisc_1(np__3))]   (8)  substitution:[[_G8827, _G8639, _G8697], [1^[k1_zfmisc_1(np__3), np__3], np__3, k1_zfmisc_1(np__3)]]
+1.1.3.2.1  [- (k1_zfmisc_1(np__3)=k1_zfmisc_1(np__3))]   (12)  substitution:[[_G2326], [k1_zfmisc_1(np__3)]]
+1.1.3.2.2  [-r2_hidden(1^[k1_zfmisc_1(np__3), np__3], k1_zfmisc_1(np__3))]   (lemmata:1.1.3)  
+------------------------------------------------------
+End of proof for t10_robbins4

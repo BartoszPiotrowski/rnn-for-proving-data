@@ -1,0 +1,30 @@
+
+l13_quatern2 is a Theorem
+Start of proof for l13_quatern2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_quaterni(1^[])]
+ (2)  [- (k3_quatern2(1^[])=k6_numbers)]
+ (3)  [1^[]=k6_numbers]
+ (4)  [v1_quaterni(_G2966), - (k3_quatern2(_G2966)=k32_quaterni(_G2966))]
+ (5)  [v1_quaterni(_G3146), k32_quaterni(_G3146)=k6_numbers, - (_G3146=k6_numbers)]
+ (6)  [_G2377=_G2426, - (k32_quaterni(_G2377)=k32_quaterni(_G2426))]
+ (7)  [_G2646=_G2695, - (k3_quatern2(_G2646)=k3_quatern2(_G2695))]
+ (8)  [-v1_quaterni(_G2127), _G2078=_G2127, v1_quaterni(_G2078)]
+ (9)  [- (_G1305=_G1305)]
+ (10)  [_G1404=_G1449, - (_G1449=_G1404)]
+ (11)  [- (_G1637=_G1750), _G1637=_G1693, _G1693=_G1750]
+
+Connection Proof:
+-----------------
+1  [1^[]=k6_numbers]   (3)  
+1.1  [- (1^[]=k6_numbers), v1_quaterni(1^[]), k32_quaterni(1^[])=k6_numbers]   (5)  substitution:[[_G3146], [1^[]]]
+1.1.1  [-v1_quaterni(1^[])]   (1)  
+1.1.2  [- (k32_quaterni(1^[])=k6_numbers), k6_numbers=k32_quaterni(1^[])]   (10)  substitution:[[_G1449, _G1404], [k32_quaterni(1^[]), k6_numbers]]
+1.1.2.1  [- (k6_numbers=k32_quaterni(1^[])), k6_numbers=k3_quatern2(1^[]), k3_quatern2(1^[])=k32_quaterni(1^[])]   (11)  substitution:[[_G1637, _G1750, _G1693], [k6_numbers, k32_quaterni(1^[]), k3_quatern2(1^[])]]
+1.1.2.1.1  [- (k6_numbers=k3_quatern2(1^[])), k3_quatern2(1^[])=k6_numbers]   (10)  substitution:[[_G1449, _G1404], [k6_numbers, k3_quatern2(1^[])]]
+1.1.2.1.1.1  [- (k3_quatern2(1^[])=k6_numbers)]   (2)  
+1.1.2.1.2  [- (k3_quatern2(1^[])=k32_quaterni(1^[])), v1_quaterni(1^[])]   (4)  substitution:[[_G2966], [1^[]]]
+1.1.2.1.2.1  [-v1_quaterni(1^[])]   (1)  
+------------------------------------------------------
+End of proof for l13_quatern2

@@ -1,0 +1,50 @@
+
+t5_zfmodel1 is a Theorem
+Start of proof for t5_zfmodel1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-5^[], r2_hidden(_G3322, 2^[]), -r2_hidden(k3_tarski(_G3322), 2^[])]
+ (2)  [-5^[], r2_zf_model(2^[], k8_zf_model)]
+ (3)  [-4^[], r2_hidden(k3_tarski(3^[]), 2^[])]
+ (4)  [-4^[], -r2_hidden(3^[], 2^[])]
+ (5)  [-4^[], -r2_zf_model(2^[], k8_zf_model)]
+ (6)  [v1_xboole_0(2^[])]
+ (7)  [-v1_ordinal1(2^[])]
+ (8)  [4^[], 5^[]]
+ (9)  [m1_subset_1(_G1583, _G1633), -v1_xboole_0(_G1633), -r2_hidden(_G1583, _G1633)]
+ (10)  [-v1_xboole_0(_G1879), v1_ordinal1(_G1879), -r2_zf_model(_G1879, k8_zf_model), -m1_subset_1(1^[_G1879], _G1879)]
+ (11)  [-v1_xboole_0(_G1879), v1_ordinal1(_G1879), -r2_zf_model(_G1879, k8_zf_model), r2_hidden(k3_tarski(1^[_G1879]), _G1879)]
+ (12)  [-v1_xboole_0(_G1879), v1_ordinal1(_G1879), r2_zf_model(_G1879, k8_zf_model), m1_subset_1(_G2079, _G1879), -r2_hidden(k3_tarski(_G2079), _G1879)]
+ (13)  [-v1_xboole_0(_G1044), m1_subset_1(_G1112, _G1044), -r2_hidden(_G1112, _G1044)]
+ (14)  [-v1_xboole_0(_G1044), -m1_subset_1(_G1112, _G1044), r2_hidden(_G1112, _G1044)]
+ (15)  [v1_xboole_0(_G1044), m1_subset_1(_G1112, _G1044), -v1_xboole_0(_G1112)]
+ (16)  [v1_xboole_0(_G1044), -m1_subset_1(_G1112, _G1044), v1_xboole_0(_G1112)]
+
+Connection Proof:
+-----------------
+1  [4^[], 5^[]]   (8)  
+1.1  [-4^[], r2_hidden(k3_tarski(3^[]), 2^[])]   (3)  
+1.1.1  [-r2_hidden(k3_tarski(3^[]), 2^[]), -v1_xboole_0(2^[]), v1_ordinal1(2^[]), r2_zf_model(2^[], k8_zf_model), m1_subset_1(3^[], 2^[])]   (12)  substitution:[[_G2079, _G1879], [3^[], 2^[]]]
+1.1.1.1  [v1_xboole_0(2^[])]   (6)  
+1.1.1.2  [-v1_ordinal1(2^[])]   (7)  
+1.1.1.3  [-r2_zf_model(2^[], k8_zf_model), -4^[]]   (5)  
+1.1.1.3.1  [4^[]]   (reduction:1)  
+1.1.1.4  [-m1_subset_1(3^[], 2^[]), -v1_xboole_0(2^[]), r2_hidden(3^[], 2^[])]   (14)  substitution:[[_G1112, _G1044], [3^[], 2^[]]]
+1.1.1.4.1  [v1_xboole_0(2^[])]   (6)  
+1.1.1.4.2  [-r2_hidden(3^[], 2^[]), -4^[]]   (4)  
+1.1.1.4.2.1  [4^[]]   (reduction:1)  
+1.2  [-5^[], r2_hidden(1^[2^[]], 2^[]), -r2_hidden(k3_tarski(1^[2^[]]), 2^[])]   (1)  substitution:[[_G3322], [1^[2^[]]]]
+1.2.1  [-r2_hidden(1^[2^[]], 2^[]), m1_subset_1(1^[2^[]], 2^[]), -v1_xboole_0(2^[])]   (9)  substitution:[[_G1583, _G1633], [1^[2^[]], 2^[]]]
+1.2.1.1  [-m1_subset_1(1^[2^[]], 2^[]), -v1_xboole_0(2^[]), v1_ordinal1(2^[]), -r2_zf_model(2^[], k8_zf_model)]   (10)  substitution:[[_G1879], [2^[]]]
+1.2.1.1.1  [v1_xboole_0(2^[])]   (6)  
+1.2.1.1.2  [-v1_ordinal1(2^[])]   (7)  
+1.2.1.1.3  [r2_zf_model(2^[], k8_zf_model), -5^[]]   (2)  
+1.2.1.1.3.1  [5^[]]   (reduction:1)  
+1.2.1.2  [v1_xboole_0(2^[])]   (6)  
+1.2.2  [r2_hidden(k3_tarski(1^[2^[]]), 2^[]), -v1_xboole_0(2^[]), v1_ordinal1(2^[]), -r2_zf_model(2^[], k8_zf_model)]   (11)  substitution:[[_G1879], [2^[]]]
+1.2.2.1  [v1_xboole_0(2^[])]   (6)  
+1.2.2.2  [-v1_ordinal1(2^[])]   (7)  
+1.2.2.3  [r2_zf_model(2^[], k8_zf_model), -5^[]]   (2)  
+1.2.2.3.1  [5^[]]   (reduction:1)  
+------------------------------------------------------
+End of proof for t5_zfmodel1

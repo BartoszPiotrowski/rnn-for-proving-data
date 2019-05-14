@@ -1,0 +1,55 @@
+
+t6_radix_2 is a Theorem
+Start of proof for t6_radix_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v7_ordinal1(1^[])]
+ (2)  [-r1_xxreal_0(k1_radix_1(1^[]), k6_numbers)]
+ (3)  [m1_subset_1(_G7954, k1_numbers), -v1_xreal_0(_G7954)]
+ (4)  [v7_ordinal1(_G8111), -v1_xreal_0(_G8111)]
+ (5)  [v7_ordinal1(_G8242), - (k1_radix_1(_G8242)=k3_power(np__2, _G8242))]
+ (6)  [- (k6_numbers=k1_xboole_0)]
+ (7)  [r1_xxreal_0(np__2, np__0)]
+ (8)  [-v1_xboole_0(np__0)]
+ (9)  [-v2_xxreal_0(np__2)]
+ (10)  [-m2_subset_1(np__2, k1_numbers, k5_numbers)]
+ (11)  [-m1_subset_1(np__2, k5_numbers)]
+ (12)  [-m1_subset_1(np__2, k1_numbers)]
+ (13)  [v1_xboole_0(_G9361), - (_G9361=k1_xboole_0)]
+ (14)  [v1_xreal_0(_G8926), v1_xreal_0(_G9020), -r1_xxreal_0(_G8926, k6_numbers), r1_xxreal_0(k3_power(_G8926, _G9020), k6_numbers)]
+ (15)  [_G7634=_G7683, - (k1_radix_1(_G7634)=k1_radix_1(_G7683))]
+ (16)  [- (k3_power(_G7046, _G7181)=k3_power(_G7113, _G7250)), _G7046=_G7113, _G7181=_G7250]
+ (17)  [- (_G2792=_G2792)]
+ (18)  [_G2891=_G2936, - (_G2936=_G2891)]
+ (19)  [- (_G3124=_G3237), _G3124=_G3180, _G3180=_G3237]
+ (20)  [-v2_xxreal_0(_G3623), _G3574=_G3623, v2_xxreal_0(_G3574)]
+ (21)  [-m2_subset_1(_G3937, _G4110, _G4287), m2_subset_1(_G3852, _G4023, _G4198), _G3852=_G3937, _G4023=_G4110, _G4198=_G4287]
+ (22)  [-m1_subset_1(_G4947, _G5084), m1_subset_1(_G4880, _G5015), _G4880=_G4947, _G5015=_G5084]
+ (23)  [-v1_xreal_0(_G5526), _G5477=_G5526, v1_xreal_0(_G5477)]
+ (24)  [-v1_xboole_0(_G5804), _G5755=_G5804, v1_xboole_0(_G5755)]
+ (25)  [-v7_ordinal1(_G6082), _G6033=_G6082, v7_ordinal1(_G6033)]
+ (26)  [-r1_xxreal_0(_G6369, _G6506), r1_xxreal_0(_G6302, _G6437), _G6302=_G6369, _G6437=_G6506]
+
+Connection Proof:
+-----------------
+1  [r1_xxreal_0(np__2, np__0)]   (7)  
+1.1  [-r1_xxreal_0(np__2, np__0), r1_xxreal_0(np__2, k6_numbers), np__2=np__2, k6_numbers=np__0]   (26)  substitution:[[_G6369, _G6506, _G6302, _G6437], [np__2, np__0, np__2, k6_numbers]]
+1.1.1  [-r1_xxreal_0(np__2, k6_numbers), v1_xreal_0(np__2), v1_xreal_0(1^[]), r1_xxreal_0(k3_power(np__2, 1^[]), k6_numbers)]   (14)  substitution:[[_G8926, _G9020], [np__2, 1^[]]]
+1.1.1.1  [-v1_xreal_0(np__2), m1_subset_1(np__2, k1_numbers)]   (3)  substitution:[[_G7954], [np__2]]
+1.1.1.1.1  [-m1_subset_1(np__2, k1_numbers)]   (12)  
+1.1.1.2  [-v1_xreal_0(1^[]), v7_ordinal1(1^[])]   (4)  substitution:[[_G8111], [1^[]]]
+1.1.1.2.1  [-v7_ordinal1(1^[])]   (1)  
+1.1.1.3  [-r1_xxreal_0(k3_power(np__2, 1^[]), k6_numbers), r1_xxreal_0(k1_radix_1(1^[]), k6_numbers), k1_radix_1(1^[])=k3_power(np__2, 1^[]), k6_numbers=k6_numbers]   (26)  substitution:[[_G6369, _G6506, _G6302, _G6437], [k3_power(np__2, 1^[]), k6_numbers, k1_radix_1(1^[]), k6_numbers]]
+1.1.1.3.1  [-r1_xxreal_0(k1_radix_1(1^[]), k6_numbers)]   (2)  
+1.1.1.3.2  [- (k1_radix_1(1^[])=k3_power(np__2, 1^[])), v7_ordinal1(1^[])]   (5)  substitution:[[_G8242], [1^[]]]
+1.1.1.3.2.1  [-v7_ordinal1(1^[])]   (1)  
+1.1.1.3.3  [- (k6_numbers=k6_numbers)]   (17)  substitution:[[_G2792], [k6_numbers]]
+1.1.2  [- (np__2=np__2)]   (17)  substitution:[[_G2792], [np__2]]
+1.1.3  [- (k6_numbers=np__0), np__0=k6_numbers]   (18)  substitution:[[_G2936, _G2891], [k6_numbers, np__0]]
+1.1.3.1  [- (np__0=k6_numbers), np__0=k1_xboole_0, k1_xboole_0=k6_numbers]   (19)  substitution:[[_G3124, _G3237, _G3180], [np__0, k6_numbers, k1_xboole_0]]
+1.1.3.1.1  [- (np__0=k1_xboole_0), v1_xboole_0(np__0)]   (13)  substitution:[[_G9361], [np__0]]
+1.1.3.1.1.1  [-v1_xboole_0(np__0)]   (8)  
+1.1.3.1.2  [- (k1_xboole_0=k6_numbers), k6_numbers=k1_xboole_0]   (18)  substitution:[[_G2936, _G2891], [k1_xboole_0, k6_numbers]]
+1.1.3.1.2.1  [- (k6_numbers=k1_xboole_0)]   (6)  
+------------------------------------------------------
+End of proof for t6_radix_2

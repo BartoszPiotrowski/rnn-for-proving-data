@@ -1,0 +1,32 @@
+
+t82_funct_4 is a Theorem
+Start of proof for t82_funct_4
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k16_funcop_1(1^[], 2^[])=k1_tarski(k4_tarski(1^[], 2^[]))]
+ (2)  [- (k2_funcop_1(_G6191, _G6238)=k2_zfmisc_1(_G6191, k1_tarski(_G6238)))]
+ (3)  [- (k16_funcop_1(_G6451, _G6498)=k7_funcop_1(k1_tarski(_G6451), _G6498))]
+ (4)  [- (k7_funcop_1(_G6711, _G6756)=k2_funcop_1(_G6711, _G6756))]
+ (5)  [- (k2_zfmisc_1(k1_tarski(_G6944), k1_tarski(_G6995))=k1_tarski(k4_tarski(_G6944, _G6995)))]
+ (6)  [- (_G2029=_G2029)]
+ (7)  [_G2128=_G2173, - (_G2173=_G2128)]
+ (8)  [- (_G2361=_G2474), _G2361=_G2417, _G2417=_G2474]
+ (9)  [- (k7_funcop_1(_G2811, _G2946)=k7_funcop_1(_G2878, _G3015)), _G2811=_G2878, _G2946=_G3015]
+ (10)  [- (k2_funcop_1(_G3408, _G3543)=k2_funcop_1(_G3475, _G3612)), _G3408=_G3475, _G3543=_G3612]
+ (11)  [- (k2_zfmisc_1(_G4005, _G4140)=k2_zfmisc_1(_G4072, _G4209)), _G4005=_G4072, _G4140=_G4209]
+ (12)  [- (k16_funcop_1(_G4602, _G4737)=k16_funcop_1(_G4669, _G4806)), _G4602=_G4669, _G4737=_G4806]
+ (13)  [_G5199=_G5248, - (k1_tarski(_G5199)=k1_tarski(_G5248))]
+ (14)  [- (k4_tarski(_G5468, _G5603)=k4_tarski(_G5535, _G5672)), _G5468=_G5535, _G5603=_G5672]
+
+Connection Proof:
+-----------------
+1  [k16_funcop_1(1^[], 2^[])=k1_tarski(k4_tarski(1^[], 2^[]))]   (1)  
+1.1  [- (k16_funcop_1(1^[], 2^[])=k1_tarski(k4_tarski(1^[], 2^[]))), k16_funcop_1(1^[], 2^[])=k7_funcop_1(k1_tarski(1^[]), 2^[]), k7_funcop_1(k1_tarski(1^[]), 2^[])=k1_tarski(k4_tarski(1^[], 2^[]))]   (8)  substitution:[[_G2361, _G2474, _G2417], [k16_funcop_1(1^[], 2^[]), k1_tarski(k4_tarski(1^[], 2^[])), k7_funcop_1(k1_tarski(1^[]), 2^[])]]
+1.1.1  [- (k16_funcop_1(1^[], 2^[])=k7_funcop_1(k1_tarski(1^[]), 2^[]))]   (3)  substitution:[[_G6451, _G6498], [1^[], 2^[]]]
+1.1.2  [- (k7_funcop_1(k1_tarski(1^[]), 2^[])=k1_tarski(k4_tarski(1^[], 2^[]))), k7_funcop_1(k1_tarski(1^[]), 2^[])=k2_funcop_1(k1_tarski(1^[]), 2^[]), k2_funcop_1(k1_tarski(1^[]), 2^[])=k1_tarski(k4_tarski(1^[], 2^[]))]   (8)  substitution:[[_G2361, _G2474, _G2417], [k7_funcop_1(k1_tarski(1^[]), 2^[]), k1_tarski(k4_tarski(1^[], 2^[])), k2_funcop_1(k1_tarski(1^[]), 2^[])]]
+1.1.2.1  [- (k7_funcop_1(k1_tarski(1^[]), 2^[])=k2_funcop_1(k1_tarski(1^[]), 2^[]))]   (4)  substitution:[[_G6711, _G6756], [k1_tarski(1^[]), 2^[]]]
+1.1.2.2  [- (k2_funcop_1(k1_tarski(1^[]), 2^[])=k1_tarski(k4_tarski(1^[], 2^[]))), k2_funcop_1(k1_tarski(1^[]), 2^[])=k2_zfmisc_1(k1_tarski(1^[]), k1_tarski(2^[])), k2_zfmisc_1(k1_tarski(1^[]), k1_tarski(2^[]))=k1_tarski(k4_tarski(1^[], 2^[]))]   (8)  substitution:[[_G2361, _G2474, _G2417], [k2_funcop_1(k1_tarski(1^[]), 2^[]), k1_tarski(k4_tarski(1^[], 2^[])), k2_zfmisc_1(k1_tarski(1^[]), k1_tarski(2^[]))]]
+1.1.2.2.1  [- (k2_funcop_1(k1_tarski(1^[]), 2^[])=k2_zfmisc_1(k1_tarski(1^[]), k1_tarski(2^[])))]   (2)  substitution:[[_G6191, _G6238], [k1_tarski(1^[]), 2^[]]]
+1.1.2.2.2  [- (k2_zfmisc_1(k1_tarski(1^[]), k1_tarski(2^[]))=k1_tarski(k4_tarski(1^[], 2^[])))]   (5)  substitution:[[_G6944, _G6995], [1^[], 2^[]]]
+------------------------------------------------------
+End of proof for t82_funct_4

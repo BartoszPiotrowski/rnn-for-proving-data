@@ -1,0 +1,61 @@
+
+t16_membered is a Theorem
+Start of proof for t16_membered
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v4_membered(7^[])]
+ (2)  [7^[]=k3_numbers]
+ (3)  [v1_rat_1(_G7585), -r2_hidden(_G7585, 7^[])]
+ (4)  [- (k7_xcmplx_0(_G4243, _G4378)=k7_xcmplx_0(_G4310, _G4447)), _G4243=_G4310, _G4378=_G4447]
+ (5)  [- (_G1964=_G1964)]
+ (6)  [_G2063=_G2108, - (_G2108=_G2063)]
+ (7)  [- (_G2296=_G2409), _G2296=_G2352, _G2352=_G2409]
+ (8)  [-v1_int_1(_G2795), _G2746=_G2795, v1_int_1(_G2746)]
+ (9)  [-v4_membered(_G3073), _G3024=_G3073, v4_membered(_G3024)]
+ (10)  [-v1_rat_1(_G3351), _G3302=_G3351, v1_rat_1(_G3302)]
+ (11)  [-r2_hidden(_G3638, _G3775), r2_hidden(_G3571, _G3706), _G3571=_G3638, _G3706=_G3775]
+ (12)  [v1_rat_1(_G5518), -r2_hidden(_G5518, k3_numbers)]
+ (13)  [-v1_rat_1(_G5518), r2_hidden(_G5518, k3_numbers)]
+ (14)  [-v4_membered(_G5666), -r2_hidden(6^[_G5666], _G5666)]
+ (15)  [-v4_membered(_G5666), v1_rat_1(6^[_G5666])]
+ (16)  [v4_membered(_G5666), r2_hidden(_G5747, _G5666), -v1_rat_1(_G5747)]
+ (17)  [_G4861=k3_numbers, r2_hidden(_G4992, _G4861), -v1_int_1(1^[_G4992, _G4861])]
+ (18)  [_G4861=k3_numbers, r2_hidden(_G4992, _G4861), -v1_int_1(2^[_G4992, _G4861])]
+ (19)  [_G4861=k3_numbers, r2_hidden(_G4992, _G4861), - (_G4992=k7_xcmplx_0(1^[_G4992, _G4861], 2^[_G4992, _G4861]))]
+ (20)  [_G4861=k3_numbers, -r2_hidden(_G4992, _G4861), v1_int_1(_G5118), v1_int_1(_G5214), _G4992=k7_xcmplx_0(_G5118, _G5214)]
+ (21)  [- (_G4861=k3_numbers), -r2_hidden(3^[_G4861], _G4861), -v1_int_1(4^[_G4861])]
+ (22)  [- (_G4861=k3_numbers), -r2_hidden(3^[_G4861], _G4861), -v1_int_1(5^[_G4861])]
+ (23)  [- (_G4861=k3_numbers), -r2_hidden(3^[_G4861], _G4861), - (3^[_G4861]=k7_xcmplx_0(4^[_G4861], 5^[_G4861]))]
+ (24)  [- (_G4861=k3_numbers), r2_hidden(3^[_G4861], _G4861), v1_int_1(_G6933), v1_int_1(_G6943), 3^[_G4861]=k7_xcmplx_0(_G6933, _G6943)]
+
+Connection Proof:
+-----------------
+1  [7^[]=k3_numbers]   (2)  
+1.1  [- (7^[]=k3_numbers), -r2_hidden(3^[7^[]], 7^[]), - (3^[7^[]]=k7_xcmplx_0(4^[7^[]], 5^[7^[]]))]   (23)  substitution:[[_G4861], [7^[]]]
+1.1.1  [r2_hidden(3^[7^[]], 7^[]), v4_membered(7^[]), -v1_rat_1(3^[7^[]])]   (16)  substitution:[[_G5747, _G5666], [3^[7^[]], 7^[]]]
+1.1.1.1  [-v4_membered(7^[])]   (1)  
+1.1.1.2  [v1_rat_1(3^[7^[]]), -r2_hidden(3^[7^[]], k3_numbers)]   (12)  substitution:[[_G5518], [3^[7^[]]]]
+1.1.1.2.1  [r2_hidden(3^[7^[]], k3_numbers), k3_numbers=k3_numbers, - (3^[7^[]]=k7_xcmplx_0(1^[3^[7^[]], k3_numbers], 2^[3^[7^[]], k3_numbers]))]   (19)  substitution:[[_G4992, _G4861], [3^[7^[]], k3_numbers]]
+1.1.1.2.1.1  [- (k3_numbers=k3_numbers)]   (5)  substitution:[[_G1964], [k3_numbers]]
+1.1.1.2.1.2  [3^[7^[]]=k7_xcmplx_0(1^[3^[7^[]], k3_numbers], 2^[3^[7^[]], k3_numbers]), - (7^[]=k3_numbers), r2_hidden(3^[7^[]], 7^[]), v1_int_1(1^[3^[7^[]], k3_numbers]), v1_int_1(2^[3^[7^[]], k3_numbers])]   (24)  substitution:[[_G4861, _G6933, _G6943], [7^[], 1^[3^[7^[]], k3_numbers], 2^[3^[7^[]], k3_numbers]]]
+1.1.1.2.1.2.1  [7^[]=k3_numbers]   (2)  
+1.1.1.2.1.2.2  [-r2_hidden(3^[7^[]], 7^[])]   (reduction:1.1)  
+1.1.1.2.1.2.3  [-v1_int_1(1^[3^[7^[]], k3_numbers]), k3_numbers=k3_numbers, r2_hidden(3^[7^[]], k3_numbers)]   (17)  substitution:[[_G4992, _G4861], [3^[7^[]], k3_numbers]]
+1.1.1.2.1.2.3.1  [- (k3_numbers=k3_numbers)]   (5)  substitution:[[_G1964], [k3_numbers]]
+1.1.1.2.1.2.3.2  [-r2_hidden(3^[7^[]], k3_numbers)]   (reduction:1.1.1.2)  
+1.1.1.2.1.2.4  [-v1_int_1(2^[3^[7^[]], k3_numbers]), k3_numbers=k3_numbers, r2_hidden(3^[7^[]], k3_numbers)]   (18)  substitution:[[_G4992, _G4861], [3^[7^[]], k3_numbers]]
+1.1.1.2.1.2.4.1  [- (k3_numbers=k3_numbers)]   (5)  substitution:[[_G1964], [k3_numbers]]
+1.1.1.2.1.2.4.2  [-r2_hidden(3^[7^[]], k3_numbers)]   (reduction:1.1.1.2)  
+1.1.2  [3^[7^[]]=k7_xcmplx_0(4^[7^[]], 5^[7^[]]), k3_numbers=k3_numbers, -r2_hidden(3^[7^[]], k3_numbers), v1_int_1(4^[7^[]]), v1_int_1(5^[7^[]])]   (20)  substitution:[[_G4992, _G5118, _G5214, _G4861], [3^[7^[]], 4^[7^[]], 5^[7^[]], k3_numbers]]
+1.1.2.1  [- (k3_numbers=k3_numbers)]   (5)  substitution:[[_G1964], [k3_numbers]]
+1.1.2.2  [r2_hidden(3^[7^[]], k3_numbers), -v1_rat_1(3^[7^[]])]   (13)  substitution:[[_G5518], [3^[7^[]]]]
+1.1.2.2.1  [v1_rat_1(3^[7^[]]), -r2_hidden(3^[7^[]], 7^[])]   (3)  substitution:[[_G7585], [3^[7^[]]]]
+1.1.2.2.1.1  [r2_hidden(3^[7^[]], 7^[])]   (lemmata:1.1)  
+1.1.2.3  [-v1_int_1(4^[7^[]]), - (7^[]=k3_numbers), -r2_hidden(3^[7^[]], 7^[])]   (21)  substitution:[[_G4861], [7^[]]]
+1.1.2.3.1  [7^[]=k3_numbers]   (2)  
+1.1.2.3.2  [r2_hidden(3^[7^[]], 7^[])]   (lemmata:1.1)  
+1.1.2.4  [-v1_int_1(5^[7^[]]), - (7^[]=k3_numbers), -r2_hidden(3^[7^[]], 7^[])]   (22)  substitution:[[_G4861], [7^[]]]
+1.1.2.4.1  [7^[]=k3_numbers]   (2)  
+1.1.2.4.2  [r2_hidden(3^[7^[]], 7^[])]   (lemmata:1.1)  
+------------------------------------------------------
+End of proof for t16_membered

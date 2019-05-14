@@ -1,0 +1,23 @@
+
+t6_taxonom2 is a Theorem
+Start of proof for t6_taxonom2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v3_taxonom2(k1_xboole_0)]
+ (2)  [-v1_xboole_0(k1_xboole_0)]
+ (3)  [r2_hidden(_G1579, _G1625), v1_xboole_0(_G1625)]
+ (4)  [-v3_taxonom2(_G818), -r2_hidden(1^[_G818], _G818)]
+ (5)  [-v3_taxonom2(_G818), -r2_hidden(2^[_G818], _G818)]
+ (6)  [-v3_taxonom2(_G818), r1_tarski(1^[_G818], 2^[_G818])]
+ (7)  [-v3_taxonom2(_G818), r1_tarski(2^[_G818], 1^[_G818])]
+ (8)  [-v3_taxonom2(_G818), r1_xboole_0(1^[_G818], 2^[_G818])]
+ (9)  [v3_taxonom2(_G818), r2_hidden(_G931, _G818), r2_hidden(_G1008, _G818), -r1_tarski(_G931, _G1008), -r1_tarski(_G1008, _G931), -r1_xboole_0(_G931, _G1008)]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(1^[k1_xboole_0], k1_xboole_0), v1_xboole_0(k1_xboole_0)]   (3)  substitution:[[_G1579, _G1625], [1^[k1_xboole_0], k1_xboole_0]]
+1.1  [-r2_hidden(1^[k1_xboole_0], k1_xboole_0), -v3_taxonom2(k1_xboole_0)]   (4)  substitution:[[_G818], [k1_xboole_0]]
+1.1.1  [v3_taxonom2(k1_xboole_0)]   (1)  
+1.2  [-v1_xboole_0(k1_xboole_0)]   (2)  
+------------------------------------------------------
+End of proof for t6_taxonom2

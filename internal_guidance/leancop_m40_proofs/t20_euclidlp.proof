@@ -1,0 +1,68 @@
+
+t20_euclidlp is a Theorem
+Start of proof for t20_euclidlp
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], k1_numbers)]
+ (2)  [-m1_subset_1(2^[], k5_numbers)]
+ (3)  [-m2_finseq_2(3^[], k1_numbers, k1_euclid(2^[]))]
+ (4)  [-m2_finseq_2(4^[], k1_numbers, k1_euclid(2^[]))]
+ (5)  [-m2_finseq_2(5^[], k1_numbers, k1_euclid(2^[]))]
+ (6)  [k9_euclid(2^[], k7_euclid(2^[], k7_euclid(2^[], 3^[], 4^[]), 5^[]), 1^[])=k7_euclid(2^[], k7_euclid(2^[], k9_euclid(2^[], 3^[], 1^[]), k9_euclid(2^[], 4^[], 1^[])), k9_euclid(2^[], 5^[], 1^[]))]
+ (7)  [m1_subset_1(_G9557, k4_ordinal1), -v7_ordinal1(_G9557)]
+ (8)  [v7_ordinal1(_G9714), -m1_finseq_2(k1_euclid(_G9714), k1_numbers)]
+ (9)  [-m2_finseq_2(k7_euclid(_G9887, _G9959, _G10032), k1_numbers, k1_euclid(_G9887)), v7_ordinal1(_G9887), m1_subset_1(_G9959, k1_euclid(_G9887)), m1_subset_1(_G10032, k1_euclid(_G9887))]
+ (10)  [- (k5_numbers=k4_ordinal1)]
+ (11)  [m1_finseq_2(_G10677, _G10620), m2_finseq_2(_G10792, _G10620, _G10677), -m1_subset_1(_G10792, _G10677)]
+ (12)  [m1_finseq_2(_G10677, _G10620), -m2_finseq_2(_G10792, _G10620, _G10677), m1_subset_1(_G10792, _G10677)]
+ (13)  [m1_subset_1(_G11059, k1_numbers), v7_ordinal1(_G11214), m2_finseq_2(_G11339, k1_numbers, k1_euclid(_G11214)), m2_finseq_2(_G11542, k1_numbers, k1_euclid(_G11214)), - (k9_euclid(_G11214, k7_euclid(_G11214, _G11339, _G11542), _G11059)=k7_euclid(_G11214, k9_euclid(_G11214, _G11339, _G11059), k9_euclid(_G11214, _G11542, _G11059)))]
+ (14)  [_G7169=_G7218, - (k1_euclid(_G7169)=k1_euclid(_G7218))]
+ (15)  [- (k7_euclid(_G7447, _G7618, _G7793)=k7_euclid(_G7532, _G7705, _G7882)), _G7447=_G7532, _G7618=_G7705, _G7793=_G7882]
+ (16)  [- (k9_euclid(_G8466, _G8637, _G8812)=k9_euclid(_G8551, _G8724, _G8901)), _G8466=_G8551, _G8637=_G8724, _G8812=_G8901]
+ (17)  [- (_G3812=_G3812)]
+ (18)  [_G3911=_G3956, - (_G3956=_G3911)]
+ (19)  [- (_G4144=_G4257), _G4144=_G4200, _G4200=_G4257]
+ (20)  [-m1_finseq_2(_G4661, _G4798), m1_finseq_2(_G4594, _G4729), _G4594=_G4661, _G4729=_G4798]
+ (21)  [-v7_ordinal1(_G5240), _G5191=_G5240, v7_ordinal1(_G5191)]
+ (22)  [-m1_subset_1(_G5536, _G5673), m1_subset_1(_G5469, _G5604), _G5469=_G5536, _G5604=_G5673]
+ (23)  [-m2_finseq_2(_G6142, _G6315, _G6492), m2_finseq_2(_G6057, _G6228, _G6403), _G6057=_G6142, _G6228=_G6315, _G6403=_G6492]
+
+Connection Proof:
+-----------------
+1  [k9_euclid(2^[], k7_euclid(2^[], k7_euclid(2^[], 3^[], 4^[]), 5^[]), 1^[])=k7_euclid(2^[], k7_euclid(2^[], k9_euclid(2^[], 3^[], 1^[]), k9_euclid(2^[], 4^[], 1^[])), k9_euclid(2^[], 5^[], 1^[]))]   (6)  
+1.1  [- (k9_euclid(2^[], k7_euclid(2^[], k7_euclid(2^[], 3^[], 4^[]), 5^[]), 1^[])=k7_euclid(2^[], k7_euclid(2^[], k9_euclid(2^[], 3^[], 1^[]), k9_euclid(2^[], 4^[], 1^[])), k9_euclid(2^[], 5^[], 1^[]))), k9_euclid(2^[], k7_euclid(2^[], k7_euclid(2^[], 3^[], 4^[]), 5^[]), 1^[])=k7_euclid(2^[], k9_euclid(2^[], k7_euclid(2^[], 3^[], 4^[]), 1^[]), k9_euclid(2^[], 5^[], 1^[])), k7_euclid(2^[], k9_euclid(2^[], k7_euclid(2^[], 3^[], 4^[]), 1^[]), k9_euclid(2^[], 5^[], 1^[]))=k7_euclid(2^[], k7_euclid(2^[], k9_euclid(2^[], 3^[], 1^[]), k9_euclid(2^[], 4^[], 1^[])), k9_euclid(2^[], 5^[], 1^[]))]   (19)  substitution:[[_G4144, _G4257, _G4200], [k9_euclid(2^[], k7_euclid(2^[], k7_euclid(2^[], 3^[], 4^[]), 5^[]), 1^[]), k7_euclid(2^[], k7_euclid(2^[], k9_euclid(2^[], 3^[], 1^[]), k9_euclid(2^[], 4^[], 1^[])), k9_euclid(2^[], 5^[], 1^[])), k7_euclid(2^[], k9_euclid(2^[], k7_euclid(2^[], 3^[], 4^[]), 1^[]), k9_euclid(2^[], 5^[], 1^[]))]]
+1.1.1  [- (k9_euclid(2^[], k7_euclid(2^[], k7_euclid(2^[], 3^[], 4^[]), 5^[]), 1^[])=k7_euclid(2^[], k9_euclid(2^[], k7_euclid(2^[], 3^[], 4^[]), 1^[]), k9_euclid(2^[], 5^[], 1^[]))), m1_subset_1(1^[], k1_numbers), v7_ordinal1(2^[]), m2_finseq_2(k7_euclid(2^[], 3^[], 4^[]), k1_numbers, k1_euclid(2^[])), m2_finseq_2(5^[], k1_numbers, k1_euclid(2^[]))]   (13)  substitution:[[_G11214, _G11339, _G11542, _G11059], [2^[], k7_euclid(2^[], 3^[], 4^[]), 5^[], 1^[]]]
+1.1.1.1  [-m1_subset_1(1^[], k1_numbers)]   (1)  
+1.1.1.2  [-v7_ordinal1(2^[]), m1_subset_1(2^[], k4_ordinal1)]   (7)  substitution:[[_G9557], [2^[]]]
+1.1.1.2.1  [-m1_subset_1(2^[], k4_ordinal1), m1_subset_1(2^[], k5_numbers), 2^[]=2^[], k5_numbers=k4_ordinal1]   (22)  substitution:[[_G5536, _G5673, _G5469, _G5604], [2^[], k4_ordinal1, 2^[], k5_numbers]]
+1.1.1.2.1.1  [-m1_subset_1(2^[], k5_numbers)]   (2)  
+1.1.1.2.1.2  [- (2^[]=2^[])]   (17)  substitution:[[_G3812], [2^[]]]
+1.1.1.2.1.3  [- (k5_numbers=k4_ordinal1)]   (10)  
+1.1.1.3  [-m2_finseq_2(k7_euclid(2^[], 3^[], 4^[]), k1_numbers, k1_euclid(2^[])), v7_ordinal1(2^[]), m1_subset_1(3^[], k1_euclid(2^[])), m1_subset_1(4^[], k1_euclid(2^[]))]   (9)  substitution:[[_G9887, _G9959, _G10032], [2^[], 3^[], 4^[]]]
+1.1.1.3.1  [-v7_ordinal1(2^[])]   (lemmata:1.1.1)  
+1.1.1.3.2  [-m1_subset_1(3^[], k1_euclid(2^[])), m1_finseq_2(k1_euclid(2^[]), k1_numbers), m2_finseq_2(3^[], k1_numbers, k1_euclid(2^[]))]   (11)  substitution:[[_G10792, _G10677, _G10620], [3^[], k1_euclid(2^[]), k1_numbers]]
+1.1.1.3.2.1  [-m1_finseq_2(k1_euclid(2^[]), k1_numbers), v7_ordinal1(2^[])]   (8)  substitution:[[_G9714], [2^[]]]
+1.1.1.3.2.1.1  [-v7_ordinal1(2^[])]   (lemmata:1.1.1.3)  
+1.1.1.3.2.2  [-m2_finseq_2(3^[], k1_numbers, k1_euclid(2^[]))]   (3)  
+1.1.1.3.3  [-m1_subset_1(4^[], k1_euclid(2^[])), m1_finseq_2(k1_euclid(2^[]), k1_numbers), m2_finseq_2(4^[], k1_numbers, k1_euclid(2^[]))]   (11)  substitution:[[_G10792, _G10677, _G10620], [4^[], k1_euclid(2^[]), k1_numbers]]
+1.1.1.3.3.1  [-m1_finseq_2(k1_euclid(2^[]), k1_numbers), v7_ordinal1(2^[])]   (8)  substitution:[[_G9714], [2^[]]]
+1.1.1.3.3.1.1  [-v7_ordinal1(2^[])]   (lemmata:1.1.1.3)  
+1.1.1.3.3.2  [-m2_finseq_2(4^[], k1_numbers, k1_euclid(2^[]))]   (4)  
+1.1.1.4  [-m2_finseq_2(5^[], k1_numbers, k1_euclid(2^[]))]   (5)  
+1.1.2  [- (k7_euclid(2^[], k9_euclid(2^[], k7_euclid(2^[], 3^[], 4^[]), 1^[]), k9_euclid(2^[], 5^[], 1^[]))=k7_euclid(2^[], k7_euclid(2^[], k9_euclid(2^[], 3^[], 1^[]), k9_euclid(2^[], 4^[], 1^[])), k9_euclid(2^[], 5^[], 1^[]))), 2^[]=2^[], k9_euclid(2^[], k7_euclid(2^[], 3^[], 4^[]), 1^[])=k7_euclid(2^[], k9_euclid(2^[], 3^[], 1^[]), k9_euclid(2^[], 4^[], 1^[])), k9_euclid(2^[], 5^[], 1^[])=k9_euclid(2^[], 5^[], 1^[])]   (15)  substitution:[[_G7447, _G7618, _G7793, _G7532, _G7705, _G7882], [2^[], k9_euclid(2^[], k7_euclid(2^[], 3^[], 4^[]), 1^[]), k9_euclid(2^[], 5^[], 1^[]), 2^[], k7_euclid(2^[], k9_euclid(2^[], 3^[], 1^[]), k9_euclid(2^[], 4^[], 1^[])), k9_euclid(2^[], 5^[], 1^[])]]
+1.1.2.1  [- (2^[]=2^[])]   (17)  substitution:[[_G3812], [2^[]]]
+1.1.2.2  [- (k9_euclid(2^[], k7_euclid(2^[], 3^[], 4^[]), 1^[])=k7_euclid(2^[], k9_euclid(2^[], 3^[], 1^[]), k9_euclid(2^[], 4^[], 1^[]))), m1_subset_1(1^[], k1_numbers), v7_ordinal1(2^[]), m2_finseq_2(3^[], k1_numbers, k1_euclid(2^[])), m2_finseq_2(4^[], k1_numbers, k1_euclid(2^[]))]   (13)  substitution:[[_G11214, _G11339, _G11542, _G11059], [2^[], 3^[], 4^[], 1^[]]]
+1.1.2.2.1  [-m1_subset_1(1^[], k1_numbers)]   (1)  
+1.1.2.2.2  [-v7_ordinal1(2^[]), m1_subset_1(2^[], k4_ordinal1)]   (7)  substitution:[[_G9557], [2^[]]]
+1.1.2.2.2.1  [-m1_subset_1(2^[], k4_ordinal1), m1_subset_1(2^[], k5_numbers), 2^[]=2^[], k5_numbers=k4_ordinal1]   (22)  substitution:[[_G5536, _G5673, _G5469, _G5604], [2^[], k4_ordinal1, 2^[], k5_numbers]]
+1.1.2.2.2.1.1  [-m1_subset_1(2^[], k5_numbers)]   (2)  
+1.1.2.2.2.1.2  [- (2^[]=2^[])]   (17)  substitution:[[_G3812], [2^[]]]
+1.1.2.2.2.1.3  [- (k5_numbers=k4_ordinal1)]   (10)  
+1.1.2.2.3  [-m2_finseq_2(3^[], k1_numbers, k1_euclid(2^[]))]   (3)  
+1.1.2.2.4  [-m2_finseq_2(4^[], k1_numbers, k1_euclid(2^[]))]   (4)  
+1.1.2.3  [- (k9_euclid(2^[], 5^[], 1^[])=k9_euclid(2^[], 5^[], 1^[])), 2^[]=2^[], 5^[]=5^[], 1^[]=1^[]]   (16)  substitution:[[_G8466, _G8637, _G8812, _G8551, _G8724, _G8901], [2^[], 5^[], 1^[], 2^[], 5^[], 1^[]]]
+1.1.2.3.1  [- (2^[]=2^[])]   (17)  substitution:[[_G3812], [2^[]]]
+1.1.2.3.2  [- (5^[]=5^[])]   (17)  substitution:[[_G3812], [5^[]]]
+1.1.2.3.3  [- (1^[]=1^[])]   (17)  substitution:[[_G3812], [1^[]]]
+------------------------------------------------------
+End of proof for t20_euclidlp

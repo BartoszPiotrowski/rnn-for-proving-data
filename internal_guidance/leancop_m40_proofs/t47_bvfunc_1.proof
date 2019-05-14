@@ -1,0 +1,40 @@
+
+t47_bvfunc_1 is a Theorem
+Start of proof for t47_bvfunc_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xboolean(1^[])]
+ (2)  [k8_xboolean(1^[], k3_xboolean(1^[]))=k8_margrel1, k3_xboolean(k8_xboolean(1^[], k3_xboolean(1^[])))=k7_margrel1]
+ (3)  [- (k2_xboolean=np__1)]
+ (4)  [-v1_xboolean(k2_xboolean)]
+ (5)  [- (k8_margrel1=k2_xboolean)]
+ (6)  [v1_xboolean(_G4919), - (k8_xboolean(_G4919, k3_xboolean(_G4919))=k2_xboolean)]
+ (7)  [v1_xboolean(_G4119), _G4119=k7_margrel1, - (k3_xboolean(_G4119)=k8_margrel1)]
+ (8)  [v1_xboolean(_G4119), k3_xboolean(_G4119)=k8_margrel1, - (_G4119=k7_margrel1)]
+ (9)  [v1_xboolean(_G4119), _G4119=k8_margrel1, - (k3_xboolean(_G4119)=k7_margrel1)]
+ (10)  [v1_xboolean(_G4119), k3_xboolean(_G4119)=k7_margrel1, - (_G4119=k8_margrel1)]
+ (11)  [_G3653=_G3702, - (k3_xboolean(_G3653)=k3_xboolean(_G3702))]
+ (12)  [- (k8_xboolean(_G3065, _G3200)=k8_xboolean(_G3132, _G3269)), _G3065=_G3132, _G3200=_G3269]
+ (13)  [-v1_xboolean(_G2815), _G2766=_G2815, v1_xboolean(_G2766)]
+ (14)  [- (_G1993=_G1993)]
+ (15)  [_G2092=_G2137, - (_G2137=_G2092)]
+ (16)  [- (_G2325=_G2438), _G2325=_G2381, _G2381=_G2438]
+
+Connection Proof:
+-----------------
+1  [k8_xboolean(1^[], k3_xboolean(1^[]))=k8_margrel1, k3_xboolean(k8_xboolean(1^[], k3_xboolean(1^[])))=k7_margrel1]   (2)  
+1.1  [- (k8_xboolean(1^[], k3_xboolean(1^[]))=k8_margrel1), k8_xboolean(1^[], k3_xboolean(1^[]))=k2_xboolean, k2_xboolean=k8_margrel1]   (16)  substitution:[[_G2325, _G2438, _G2381], [k8_xboolean(1^[], k3_xboolean(1^[])), k8_margrel1, k2_xboolean]]
+1.1.1  [- (k8_xboolean(1^[], k3_xboolean(1^[]))=k2_xboolean), v1_xboolean(1^[])]   (6)  substitution:[[_G4919], [1^[]]]
+1.1.1.1  [-v1_xboolean(1^[])]   (1)  
+1.1.2  [- (k2_xboolean=k8_margrel1), k8_margrel1=k2_xboolean]   (15)  substitution:[[_G2137, _G2092], [k2_xboolean, k8_margrel1]]
+1.1.2.1  [- (k8_margrel1=k2_xboolean)]   (5)  
+1.2  [- (k3_xboolean(k8_xboolean(1^[], k3_xboolean(1^[])))=k7_margrel1), k3_xboolean(k8_xboolean(1^[], k3_xboolean(1^[])))=k3_xboolean(k2_xboolean), k3_xboolean(k2_xboolean)=k7_margrel1]   (16)  substitution:[[_G2325, _G2438, _G2381], [k3_xboolean(k8_xboolean(1^[], k3_xboolean(1^[]))), k7_margrel1, k3_xboolean(k2_xboolean)]]
+1.2.1  [- (k3_xboolean(k8_xboolean(1^[], k3_xboolean(1^[])))=k3_xboolean(k2_xboolean)), k8_xboolean(1^[], k3_xboolean(1^[]))=k2_xboolean]   (11)  substitution:[[_G3653, _G3702], [k8_xboolean(1^[], k3_xboolean(1^[])), k2_xboolean]]
+1.2.1.1  [- (k8_xboolean(1^[], k3_xboolean(1^[]))=k2_xboolean), v1_xboolean(1^[])]   (6)  substitution:[[_G4919], [1^[]]]
+1.2.1.1.1  [-v1_xboolean(1^[])]   (1)  
+1.2.2  [- (k3_xboolean(k2_xboolean)=k7_margrel1), v1_xboolean(k2_xboolean), k2_xboolean=k8_margrel1]   (9)  substitution:[[_G4119], [k2_xboolean]]
+1.2.2.1  [-v1_xboolean(k2_xboolean)]   (4)  
+1.2.2.2  [- (k2_xboolean=k8_margrel1), k8_margrel1=k2_xboolean]   (15)  substitution:[[_G2137, _G2092], [k2_xboolean, k8_margrel1]]
+1.2.2.2.1  [- (k8_margrel1=k2_xboolean)]   (5)  
+------------------------------------------------------
+End of proof for t47_bvfunc_1

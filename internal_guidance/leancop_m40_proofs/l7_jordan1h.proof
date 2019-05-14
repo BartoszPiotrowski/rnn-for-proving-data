@@ -1,0 +1,69 @@
+
+l7_jordan1h is a Theorem
+Start of proof for l7_jordan1h
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [r4_relat_2(k1_jordan1h, k1_numbers)]
+ (2)  [m1_subset_1(_G10549, k1_zfmisc_1(k2_zfmisc_1(_G10440, _G10494))), -v1_relat_1(_G10549)]
+ (3)  [m1_subset_1(_G10792, k1_numbers), -v1_xreal_0(_G10792)]
+ (4)  [v1_xreal_0(_G10949), -v1_xxreal_0(_G10949)]
+ (5)  [v1_relat_1(_G11080), -r4_relat_2(_G11080, _G11202), -r2_hidden(1^[_G11202, _G11080], _G11202)]
+ (6)  [v1_relat_1(_G11080), -r4_relat_2(_G11080, _G11202), -r2_hidden(2^[_G11202, _G11080], _G11202)]
+ (7)  [v1_relat_1(_G11080), -r4_relat_2(_G11080, _G11202), -r2_hidden(k4_tarski(1^[_G11202, _G11080], 2^[_G11202, _G11080]), _G11080)]
+ (8)  [v1_relat_1(_G11080), -r4_relat_2(_G11080, _G11202), -r2_hidden(k4_tarski(2^[_G11202, _G11080], 1^[_G11202, _G11080]), _G11080)]
+ (9)  [v1_relat_1(_G11080), -r4_relat_2(_G11080, _G11202), 1^[_G11202, _G11080]=2^[_G11202, _G11080]]
+ (10)  [v1_relat_1(_G11080), r4_relat_2(_G11080, _G11202), - (_G11345=_G11426), r2_hidden(_G11345, _G11202), r2_hidden(_G11426, _G11202), r2_hidden(k4_tarski(_G11345, _G11426), _G11080), r2_hidden(k4_tarski(_G11426, _G11345), _G11080)]
+ (11)  [- (k4_tarski(_G12029, _G12079)=k2_tarski(k2_tarski(_G12029, _G12079), k1_tarski(_G12029)))]
+ (12)  [-m1_subset_1(k1_jordan1h, k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]
+ (13)  [r2_hidden(_G12444, _G12489), -m1_subset_1(_G12444, _G12489)]
+ (14)  [m1_subset_1(_G13130, k1_numbers), m1_subset_1(_G13247, k1_numbers), r2_hidden(k4_tarski(_G13130, _G13247), k1_jordan1h), -r1_xxreal_0(_G13130, _G13247)]
+ (15)  [v1_xxreal_0(_G12686), v1_xxreal_0(_G12779), - (_G12686=_G12779), r1_xxreal_0(_G12686, _G12779), r1_xxreal_0(_G12779, _G12686)]
+ (16)  [- (k2_tarski(_G7997, _G8132)=k2_tarski(_G8064, _G8201)), _G7997=_G8064, _G8132=_G8201]
+ (17)  [_G8594=_G8643, - (k1_tarski(_G8594)=k1_tarski(_G8643))]
+ (18)  [_G8872=_G8921, - (k1_zfmisc_1(_G8872)=k1_zfmisc_1(_G8921))]
+ (19)  [- (k2_zfmisc_1(_G9150, _G9285)=k2_zfmisc_1(_G9217, _G9354)), _G9150=_G9217, _G9285=_G9354]
+ (20)  [- (k4_tarski(_G9738, _G9873)=k4_tarski(_G9805, _G9942)), _G9738=_G9805, _G9873=_G9942]
+ (21)  [- (_G3855=_G3855)]
+ (22)  [_G3954=_G3999, - (_G3999=_G3954)]
+ (23)  [- (_G4187=_G4300), _G4187=_G4243, _G4243=_G4300]
+ (24)  [-v1_xreal_0(_G4686), _G4637=_G4686, v1_xreal_0(_G4637)]
+ (25)  [-v1_relat_1(_G4964), _G4915=_G4964, v1_relat_1(_G4915)]
+ (26)  [-v1_xxreal_0(_G5242), _G5193=_G5242, v1_xxreal_0(_G5193)]
+ (27)  [-m1_subset_1(_G5538, _G5675), m1_subset_1(_G5471, _G5606), _G5471=_G5538, _G5606=_G5675]
+ (28)  [-r2_hidden(_G6135, _G6272), r2_hidden(_G6068, _G6203), _G6068=_G6135, _G6203=_G6272]
+ (29)  [-r1_xxreal_0(_G6732, _G6869), r1_xxreal_0(_G6665, _G6800), _G6665=_G6732, _G6800=_G6869]
+ (30)  [-r4_relat_2(_G7320, _G7457), r4_relat_2(_G7253, _G7388), _G7253=_G7320, _G7388=_G7457]
+
+Connection Proof:
+-----------------
+1  [r4_relat_2(k1_jordan1h, k1_numbers)]   (1)  
+1.1  [-r4_relat_2(k1_jordan1h, k1_numbers), v1_relat_1(k1_jordan1h), -r2_hidden(k4_tarski(1^[k1_numbers, k1_jordan1h], 2^[k1_numbers, k1_jordan1h]), k1_jordan1h)]   (7)  substitution:[[_G11080, _G11202], [k1_jordan1h, k1_numbers]]
+1.1.1  [-v1_relat_1(k1_jordan1h), m1_subset_1(k1_jordan1h, k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]   (2)  substitution:[[_G10549, _G10440, _G10494], [k1_jordan1h, k1_numbers, k1_numbers]]
+1.1.1.1  [-m1_subset_1(k1_jordan1h, k1_zfmisc_1(k2_zfmisc_1(k1_numbers, k1_numbers)))]   (12)  
+1.1.2  [r2_hidden(k4_tarski(1^[k1_numbers, k1_jordan1h], 2^[k1_numbers, k1_jordan1h]), k1_jordan1h), m1_subset_1(1^[k1_numbers, k1_jordan1h], k1_numbers), m1_subset_1(2^[k1_numbers, k1_jordan1h], k1_numbers), -r1_xxreal_0(1^[k1_numbers, k1_jordan1h], 2^[k1_numbers, k1_jordan1h])]   (14)  substitution:[[_G13130, _G13247], [1^[k1_numbers, k1_jordan1h], 2^[k1_numbers, k1_jordan1h]]]
+1.1.2.1  [-m1_subset_1(1^[k1_numbers, k1_jordan1h], k1_numbers), r2_hidden(1^[k1_numbers, k1_jordan1h], k1_numbers)]   (13)  substitution:[[_G12444, _G12489], [1^[k1_numbers, k1_jordan1h], k1_numbers]]
+1.1.2.1.1  [-r2_hidden(1^[k1_numbers, k1_jordan1h], k1_numbers), v1_relat_1(k1_jordan1h), -r4_relat_2(k1_jordan1h, k1_numbers)]   (5)  substitution:[[_G11202, _G11080], [k1_numbers, k1_jordan1h]]
+1.1.2.1.1.1  [-v1_relat_1(k1_jordan1h)]   (lemmata:1.1)  
+1.1.2.1.1.2  [r4_relat_2(k1_jordan1h, k1_numbers)]   (1)  
+1.1.2.2  [-m1_subset_1(2^[k1_numbers, k1_jordan1h], k1_numbers), r2_hidden(2^[k1_numbers, k1_jordan1h], k1_numbers)]   (13)  substitution:[[_G12444, _G12489], [2^[k1_numbers, k1_jordan1h], k1_numbers]]
+1.1.2.2.1  [-r2_hidden(2^[k1_numbers, k1_jordan1h], k1_numbers), v1_relat_1(k1_jordan1h), -r4_relat_2(k1_jordan1h, k1_numbers)]   (6)  substitution:[[_G11202, _G11080], [k1_numbers, k1_jordan1h]]
+1.1.2.2.1.1  [-v1_relat_1(k1_jordan1h)]   (lemmata:1.1)  
+1.1.2.2.1.2  [r4_relat_2(k1_jordan1h, k1_numbers)]   (1)  
+1.1.2.3  [r1_xxreal_0(1^[k1_numbers, k1_jordan1h], 2^[k1_numbers, k1_jordan1h]), v1_xxreal_0(1^[k1_numbers, k1_jordan1h]), v1_xxreal_0(2^[k1_numbers, k1_jordan1h]), - (1^[k1_numbers, k1_jordan1h]=2^[k1_numbers, k1_jordan1h]), r1_xxreal_0(2^[k1_numbers, k1_jordan1h], 1^[k1_numbers, k1_jordan1h])]   (15)  substitution:[[_G12686, _G12779], [1^[k1_numbers, k1_jordan1h], 2^[k1_numbers, k1_jordan1h]]]
+1.1.2.3.1  [-v1_xxreal_0(1^[k1_numbers, k1_jordan1h]), v1_xreal_0(1^[k1_numbers, k1_jordan1h])]   (4)  substitution:[[_G10949], [1^[k1_numbers, k1_jordan1h]]]
+1.1.2.3.1.1  [-v1_xreal_0(1^[k1_numbers, k1_jordan1h]), m1_subset_1(1^[k1_numbers, k1_jordan1h], k1_numbers)]   (3)  substitution:[[_G10792], [1^[k1_numbers, k1_jordan1h]]]
+1.1.2.3.1.1.1  [-m1_subset_1(1^[k1_numbers, k1_jordan1h], k1_numbers)]   (lemmata:1.1.2)  
+1.1.2.3.2  [-v1_xxreal_0(2^[k1_numbers, k1_jordan1h]), v1_xreal_0(2^[k1_numbers, k1_jordan1h])]   (4)  substitution:[[_G10949], [2^[k1_numbers, k1_jordan1h]]]
+1.1.2.3.2.1  [-v1_xreal_0(2^[k1_numbers, k1_jordan1h]), m1_subset_1(2^[k1_numbers, k1_jordan1h], k1_numbers)]   (3)  substitution:[[_G10792], [2^[k1_numbers, k1_jordan1h]]]
+1.1.2.3.2.1.1  [-m1_subset_1(2^[k1_numbers, k1_jordan1h], k1_numbers)]   (lemmata:1.1.2)  
+1.1.2.3.3  [1^[k1_numbers, k1_jordan1h]=2^[k1_numbers, k1_jordan1h], v1_relat_1(k1_jordan1h), -r4_relat_2(k1_jordan1h, k1_numbers)]   (9)  substitution:[[_G11202, _G11080], [k1_numbers, k1_jordan1h]]
+1.1.2.3.3.1  [-v1_relat_1(k1_jordan1h)]   (lemmata:1.1)  
+1.1.2.3.3.2  [r4_relat_2(k1_jordan1h, k1_numbers)]   (1)  
+1.1.2.3.4  [-r1_xxreal_0(2^[k1_numbers, k1_jordan1h], 1^[k1_numbers, k1_jordan1h]), m1_subset_1(2^[k1_numbers, k1_jordan1h], k1_numbers), m1_subset_1(1^[k1_numbers, k1_jordan1h], k1_numbers), r2_hidden(k4_tarski(2^[k1_numbers, k1_jordan1h], 1^[k1_numbers, k1_jordan1h]), k1_jordan1h)]   (14)  substitution:[[_G13130, _G13247], [2^[k1_numbers, k1_jordan1h], 1^[k1_numbers, k1_jordan1h]]]
+1.1.2.3.4.1  [-m1_subset_1(2^[k1_numbers, k1_jordan1h], k1_numbers)]   (lemmata:1.1.2)  
+1.1.2.3.4.2  [-m1_subset_1(1^[k1_numbers, k1_jordan1h], k1_numbers)]   (lemmata:1.1.2)  
+1.1.2.3.4.3  [-r2_hidden(k4_tarski(2^[k1_numbers, k1_jordan1h], 1^[k1_numbers, k1_jordan1h]), k1_jordan1h), v1_relat_1(k1_jordan1h), -r4_relat_2(k1_jordan1h, k1_numbers)]   (8)  substitution:[[_G11202, _G11080], [k1_numbers, k1_jordan1h]]
+1.1.2.3.4.3.1  [-v1_relat_1(k1_jordan1h)]   (lemmata:1.1)  
+1.1.2.3.4.3.2  [r4_relat_2(k1_jordan1h, k1_numbers)]   (1)  
+------------------------------------------------------
+End of proof for l7_jordan1h

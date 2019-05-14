@@ -1,0 +1,45 @@
+
+t66_pepin is a Theorem
+Start of proof for t66_pepin
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xreal_0(1^[])]
+ (2)  [-v7_ordinal1(2^[])]
+ (3)  [-v7_ordinal1(3^[])]
+ (4)  [r1_xxreal_0(1^[], np__1)]
+ (5)  [r1_xxreal_0(2^[], 3^[])]
+ (6)  [-r1_xxreal_0(k1_newton(1^[], 2^[]), k1_newton(1^[], 3^[]))]
+ (7)  [v7_ordinal1(_G5576), -v1_xreal_0(_G5576)]
+ (8)  [- (k3_power(_G5707, _G5762)=k1_newton(_G5707, _G5762)), v1_xreal_0(_G5707), v7_ordinal1(_G5762)]
+ (9)  [v1_xreal_0(_G6066), v1_xreal_0(_G6181), v1_xreal_0(_G6292), -r1_xxreal_0(_G6181, _G6066), -r1_xxreal_0(_G6292, np__1), r1_xxreal_0(k3_power(_G6292, _G6181), k3_power(_G6292, _G6066))]
+ (10)  [- (k3_power(_G4349, _G4484)=k3_power(_G4416, _G4553)), _G4349=_G4416, _G4484=_G4553]
+ (11)  [- (k1_newton(_G4937, _G5072)=k1_newton(_G5004, _G5141)), _G4937=_G5004, _G5072=_G5141]
+ (12)  [- (_G2360=_G2360)]
+ (13)  [_G2459=_G2504, - (_G2504=_G2459)]
+ (14)  [- (_G2692=_G2805), _G2692=_G2748, _G2748=_G2805]
+ (15)  [-v1_xreal_0(_G3191), _G3142=_G3191, v1_xreal_0(_G3142)]
+ (16)  [-v7_ordinal1(_G3469), _G3420=_G3469, v7_ordinal1(_G3420)]
+ (17)  [-r1_xxreal_0(_G3756, _G3893), r1_xxreal_0(_G3689, _G3824), _G3689=_G3756, _G3824=_G3893]
+
+Connection Proof:
+-----------------
+1  [r1_xxreal_0(2^[], 3^[])]   (5)  
+1.1  [-r1_xxreal_0(2^[], 3^[]), v1_xreal_0(3^[]), v1_xreal_0(2^[]), v1_xreal_0(1^[]), -r1_xxreal_0(1^[], np__1), r1_xxreal_0(k3_power(1^[], 2^[]), k3_power(1^[], 3^[]))]   (9)  substitution:[[_G6181, _G6066, _G6292], [2^[], 3^[], 1^[]]]
+1.1.1  [-v1_xreal_0(3^[]), v7_ordinal1(3^[])]   (7)  substitution:[[_G5576], [3^[]]]
+1.1.1.1  [-v7_ordinal1(3^[])]   (3)  
+1.1.2  [-v1_xreal_0(2^[]), v7_ordinal1(2^[])]   (7)  substitution:[[_G5576], [2^[]]]
+1.1.2.1  [-v7_ordinal1(2^[])]   (2)  
+1.1.3  [-v1_xreal_0(1^[])]   (1)  
+1.1.4  [r1_xxreal_0(1^[], np__1)]   (4)  
+1.1.5  [-r1_xxreal_0(k3_power(1^[], 2^[]), k3_power(1^[], 3^[])), r1_xxreal_0(k1_newton(1^[], 2^[]), k1_newton(1^[], 3^[])), k1_newton(1^[], 2^[])=k3_power(1^[], 2^[]), k1_newton(1^[], 3^[])=k3_power(1^[], 3^[])]   (17)  substitution:[[_G3756, _G3893, _G3689, _G3824], [k3_power(1^[], 2^[]), k3_power(1^[], 3^[]), k1_newton(1^[], 2^[]), k1_newton(1^[], 3^[])]]
+1.1.5.1  [-r1_xxreal_0(k1_newton(1^[], 2^[]), k1_newton(1^[], 3^[]))]   (6)  
+1.1.5.2  [- (k1_newton(1^[], 2^[])=k3_power(1^[], 2^[])), k3_power(1^[], 2^[])=k1_newton(1^[], 2^[])]   (13)  substitution:[[_G2504, _G2459], [k1_newton(1^[], 2^[]), k3_power(1^[], 2^[])]]
+1.1.5.2.1  [- (k3_power(1^[], 2^[])=k1_newton(1^[], 2^[])), v1_xreal_0(1^[]), v7_ordinal1(2^[])]   (8)  substitution:[[_G5707, _G5762], [1^[], 2^[]]]
+1.1.5.2.1.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.5.2.1.2  [-v7_ordinal1(2^[])]   (2)  
+1.1.5.3  [- (k1_newton(1^[], 3^[])=k3_power(1^[], 3^[])), k3_power(1^[], 3^[])=k1_newton(1^[], 3^[])]   (13)  substitution:[[_G2504, _G2459], [k1_newton(1^[], 3^[]), k3_power(1^[], 3^[])]]
+1.1.5.3.1  [- (k3_power(1^[], 3^[])=k1_newton(1^[], 3^[])), v1_xreal_0(1^[]), v7_ordinal1(3^[])]   (8)  substitution:[[_G5707, _G5762], [1^[], 3^[]]]
+1.1.5.3.1.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.5.3.1.2  [-v7_ordinal1(3^[])]   (3)  
+------------------------------------------------------
+End of proof for t66_pepin

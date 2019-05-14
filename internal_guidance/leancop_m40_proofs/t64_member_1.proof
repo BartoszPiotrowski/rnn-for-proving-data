@@ -1,0 +1,71 @@
+
+t64_member_1 is a Theorem
+Start of proof for t64_member_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xxreal_0(1^[])]
+ (2)  [-v1_xxreal_0(2^[])]
+ (3)  [-v1_xxreal_0(3^[])]
+ (4)  [-v1_xxreal_0(4^[])]
+ (5)  [k10_member_1(k2_tarski(1^[], 2^[]), k2_tarski(3^[], 4^[]))=k2_enumset1(k3_xxreal_3(1^[], 3^[]), k3_xxreal_3(1^[], 4^[]), k3_xxreal_3(2^[], 3^[]), k3_xxreal_3(2^[], 4^[]))]
+ (6)  [v1_xxreal_0(_G10704), v1_xxreal_0(_G10793), - (k3_xxreal_3(_G10704, _G10793)=k1_xxreal_3(_G10704, k2_xxreal_3(_G10793)))]
+ (7)  [v2_membered(_G11085), v2_membered(_G11174), - (k10_member_1(_G11085, _G11174)=k8_member_1(_G11085, k4_member_1(_G11174)))]
+ (8)  [v1_xxreal_0(_G11466), -v1_xxreal_0(k2_xxreal_3(_G11466))]
+ (9)  [-v2_membered(k2_tarski(_G11613, _G11664)), v1_xxreal_0(_G11613), v1_xxreal_0(_G11664)]
+ (10)  [v1_xxreal_0(_G11909), v1_xxreal_0(_G12002), - (k4_member_1(k2_tarski(_G11909, _G12002))=k2_tarski(k2_xxreal_3(_G11909), k2_xxreal_3(_G12002)))]
+ (11)  [v1_xxreal_0(_G12317), v1_xxreal_0(_G12444), v1_xxreal_0(_G12567), v1_xxreal_0(_G12686), - (k8_member_1(k2_tarski(_G12317, _G12444), k2_tarski(_G12567, _G12686))=k2_enumset1(k1_xxreal_3(_G12317, _G12567), k1_xxreal_3(_G12317, _G12686), k1_xxreal_3(_G12444, _G12567), k1_xxreal_3(_G12444, _G12686)))]
+ (12)  [- (_G4098=_G4098)]
+ (13)  [_G4197=_G4242, - (_G4242=_G4197)]
+ (14)  [- (_G4430=_G4543), _G4430=_G4486, _G4486=_G4543]
+ (15)  [-v2_membered(_G4929), _G4880=_G4929, v2_membered(_G4880)]
+ (16)  [-v1_xxreal_0(_G5198), _G5149=_G5198, v1_xxreal_0(_G5149)]
+ (17)  [_G5469=_G5518, - (k4_member_1(_G5469)=k4_member_1(_G5518))]
+ (18)  [_G5747=_G5796, - (k2_xxreal_3(_G5747)=k2_xxreal_3(_G5796))]
+ (19)  [- (k8_member_1(_G6025, _G6160)=k8_member_1(_G6092, _G6229)), _G6025=_G6092, _G6160=_G6229]
+ (20)  [- (k1_xxreal_3(_G6622, _G6757)=k1_xxreal_3(_G6689, _G6826)), _G6622=_G6689, _G6757=_G6826]
+ (21)  [- (k10_member_1(_G7219, _G7354)=k10_member_1(_G7286, _G7423)), _G7219=_G7286, _G7354=_G7423]
+ (22)  [- (k2_tarski(_G7816, _G7951)=k2_tarski(_G7883, _G8020)), _G7816=_G7883, _G7951=_G8020]
+ (23)  [- (k3_xxreal_3(_G9939, _G10074)=k3_xxreal_3(_G10006, _G10143)), _G9939=_G10006, _G10074=_G10143]
+ (24)  [- (k2_enumset1(_G8413, _G8620, _G8831, _G9046)=k2_enumset1(_G8516, _G8725, _G8938, _G9155)), _G8413=_G8516, _G8620=_G8725, _G8831=_G8938, _G9046=_G9155]
+
+Connection Proof:
+-----------------
+1  [k10_member_1(k2_tarski(1^[], 2^[]), k2_tarski(3^[], 4^[]))=k2_enumset1(k3_xxreal_3(1^[], 3^[]), k3_xxreal_3(1^[], 4^[]), k3_xxreal_3(2^[], 3^[]), k3_xxreal_3(2^[], 4^[]))]   (5)  
+1.1  [- (k10_member_1(k2_tarski(1^[], 2^[]), k2_tarski(3^[], 4^[]))=k2_enumset1(k3_xxreal_3(1^[], 3^[]), k3_xxreal_3(1^[], 4^[]), k3_xxreal_3(2^[], 3^[]), k3_xxreal_3(2^[], 4^[]))), k10_member_1(k2_tarski(1^[], 2^[]), k2_tarski(3^[], 4^[]))=k8_member_1(k2_tarski(1^[], 2^[]), k4_member_1(k2_tarski(3^[], 4^[]))), k8_member_1(k2_tarski(1^[], 2^[]), k4_member_1(k2_tarski(3^[], 4^[])))=k2_enumset1(k3_xxreal_3(1^[], 3^[]), k3_xxreal_3(1^[], 4^[]), k3_xxreal_3(2^[], 3^[]), k3_xxreal_3(2^[], 4^[]))]   (14)  substitution:[[_G4430, _G4543, _G4486], [k10_member_1(k2_tarski(1^[], 2^[]), k2_tarski(3^[], 4^[])), k2_enumset1(k3_xxreal_3(1^[], 3^[]), k3_xxreal_3(1^[], 4^[]), k3_xxreal_3(2^[], 3^[]), k3_xxreal_3(2^[], 4^[])), k8_member_1(k2_tarski(1^[], 2^[]), k4_member_1(k2_tarski(3^[], 4^[])))]]
+1.1.1  [- (k10_member_1(k2_tarski(1^[], 2^[]), k2_tarski(3^[], 4^[]))=k8_member_1(k2_tarski(1^[], 2^[]), k4_member_1(k2_tarski(3^[], 4^[])))), v2_membered(k2_tarski(1^[], 2^[])), v2_membered(k2_tarski(3^[], 4^[]))]   (7)  substitution:[[_G11085, _G11174], [k2_tarski(1^[], 2^[]), k2_tarski(3^[], 4^[])]]
+1.1.1.1  [-v2_membered(k2_tarski(1^[], 2^[])), v1_xxreal_0(1^[]), v1_xxreal_0(2^[])]   (9)  substitution:[[_G11613, _G11664], [1^[], 2^[]]]
+1.1.1.1.1  [-v1_xxreal_0(1^[])]   (1)  
+1.1.1.1.2  [-v1_xxreal_0(2^[])]   (2)  
+1.1.1.2  [-v2_membered(k2_tarski(3^[], 4^[])), v1_xxreal_0(3^[]), v1_xxreal_0(4^[])]   (9)  substitution:[[_G11613, _G11664], [3^[], 4^[]]]
+1.1.1.2.1  [-v1_xxreal_0(3^[])]   (3)  
+1.1.1.2.2  [-v1_xxreal_0(4^[])]   (4)  
+1.1.2  [- (k8_member_1(k2_tarski(1^[], 2^[]), k4_member_1(k2_tarski(3^[], 4^[])))=k2_enumset1(k3_xxreal_3(1^[], 3^[]), k3_xxreal_3(1^[], 4^[]), k3_xxreal_3(2^[], 3^[]), k3_xxreal_3(2^[], 4^[]))), k8_member_1(k2_tarski(1^[], 2^[]), k4_member_1(k2_tarski(3^[], 4^[])))=k2_enumset1(k1_xxreal_3(1^[], k2_xxreal_3(3^[])), k1_xxreal_3(1^[], k2_xxreal_3(4^[])), k1_xxreal_3(2^[], k2_xxreal_3(3^[])), k1_xxreal_3(2^[], k2_xxreal_3(4^[]))), k2_enumset1(k1_xxreal_3(1^[], k2_xxreal_3(3^[])), k1_xxreal_3(1^[], k2_xxreal_3(4^[])), k1_xxreal_3(2^[], k2_xxreal_3(3^[])), k1_xxreal_3(2^[], k2_xxreal_3(4^[])))=k2_enumset1(k3_xxreal_3(1^[], 3^[]), k3_xxreal_3(1^[], 4^[]), k3_xxreal_3(2^[], 3^[]), k3_xxreal_3(2^[], 4^[]))]   (14)  substitution:[[_G4430, _G4543, _G4486], [k8_member_1(k2_tarski(1^[], 2^[]), k4_member_1(k2_tarski(3^[], 4^[]))), k2_enumset1(k3_xxreal_3(1^[], 3^[]), k3_xxreal_3(1^[], 4^[]), k3_xxreal_3(2^[], 3^[]), k3_xxreal_3(2^[], 4^[])), k2_enumset1(k1_xxreal_3(1^[], k2_xxreal_3(3^[])), k1_xxreal_3(1^[], k2_xxreal_3(4^[])), k1_xxreal_3(2^[], k2_xxreal_3(3^[])), k1_xxreal_3(2^[], k2_xxreal_3(4^[])))]]
+1.1.2.1  [- (k8_member_1(k2_tarski(1^[], 2^[]), k4_member_1(k2_tarski(3^[], 4^[])))=k2_enumset1(k1_xxreal_3(1^[], k2_xxreal_3(3^[])), k1_xxreal_3(1^[], k2_xxreal_3(4^[])), k1_xxreal_3(2^[], k2_xxreal_3(3^[])), k1_xxreal_3(2^[], k2_xxreal_3(4^[])))), k8_member_1(k2_tarski(1^[], 2^[]), k4_member_1(k2_tarski(3^[], 4^[])))=k8_member_1(k2_tarski(1^[], 2^[]), k2_tarski(k2_xxreal_3(3^[]), k2_xxreal_3(4^[]))), k8_member_1(k2_tarski(1^[], 2^[]), k2_tarski(k2_xxreal_3(3^[]), k2_xxreal_3(4^[])))=k2_enumset1(k1_xxreal_3(1^[], k2_xxreal_3(3^[])), k1_xxreal_3(1^[], k2_xxreal_3(4^[])), k1_xxreal_3(2^[], k2_xxreal_3(3^[])), k1_xxreal_3(2^[], k2_xxreal_3(4^[])))]   (14)  substitution:[[_G4430, _G4543, _G4486], [k8_member_1(k2_tarski(1^[], 2^[]), k4_member_1(k2_tarski(3^[], 4^[]))), k2_enumset1(k1_xxreal_3(1^[], k2_xxreal_3(3^[])), k1_xxreal_3(1^[], k2_xxreal_3(4^[])), k1_xxreal_3(2^[], k2_xxreal_3(3^[])), k1_xxreal_3(2^[], k2_xxreal_3(4^[]))), k8_member_1(k2_tarski(1^[], 2^[]), k2_tarski(k2_xxreal_3(3^[]), k2_xxreal_3(4^[])))]]
+1.1.2.1.1  [- (k8_member_1(k2_tarski(1^[], 2^[]), k4_member_1(k2_tarski(3^[], 4^[])))=k8_member_1(k2_tarski(1^[], 2^[]), k2_tarski(k2_xxreal_3(3^[]), k2_xxreal_3(4^[])))), k2_tarski(1^[], 2^[])=k2_tarski(1^[], 2^[]), k4_member_1(k2_tarski(3^[], 4^[]))=k2_tarski(k2_xxreal_3(3^[]), k2_xxreal_3(4^[]))]   (19)  substitution:[[_G6025, _G6160, _G6092, _G6229], [k2_tarski(1^[], 2^[]), k4_member_1(k2_tarski(3^[], 4^[])), k2_tarski(1^[], 2^[]), k2_tarski(k2_xxreal_3(3^[]), k2_xxreal_3(4^[]))]]
+1.1.2.1.1.1  [- (k2_tarski(1^[], 2^[])=k2_tarski(1^[], 2^[]))]   (12)  substitution:[[_G4098], [k2_tarski(1^[], 2^[])]]
+1.1.2.1.1.2  [- (k4_member_1(k2_tarski(3^[], 4^[]))=k2_tarski(k2_xxreal_3(3^[]), k2_xxreal_3(4^[]))), v1_xxreal_0(3^[]), v1_xxreal_0(4^[])]   (10)  substitution:[[_G11909, _G12002], [3^[], 4^[]]]
+1.1.2.1.1.2.1  [-v1_xxreal_0(3^[])]   (3)  
+1.1.2.1.1.2.2  [-v1_xxreal_0(4^[])]   (4)  
+1.1.2.1.2  [- (k8_member_1(k2_tarski(1^[], 2^[]), k2_tarski(k2_xxreal_3(3^[]), k2_xxreal_3(4^[])))=k2_enumset1(k1_xxreal_3(1^[], k2_xxreal_3(3^[])), k1_xxreal_3(1^[], k2_xxreal_3(4^[])), k1_xxreal_3(2^[], k2_xxreal_3(3^[])), k1_xxreal_3(2^[], k2_xxreal_3(4^[])))), v1_xxreal_0(1^[]), v1_xxreal_0(2^[]), v1_xxreal_0(k2_xxreal_3(3^[])), v1_xxreal_0(k2_xxreal_3(4^[]))]   (11)  substitution:[[_G12317, _G12444, _G12567, _G12686], [1^[], 2^[], k2_xxreal_3(3^[]), k2_xxreal_3(4^[])]]
+1.1.2.1.2.1  [-v1_xxreal_0(1^[])]   (1)  
+1.1.2.1.2.2  [-v1_xxreal_0(2^[])]   (2)  
+1.1.2.1.2.3  [-v1_xxreal_0(k2_xxreal_3(3^[])), v1_xxreal_0(3^[])]   (8)  substitution:[[_G11466], [3^[]]]
+1.1.2.1.2.3.1  [-v1_xxreal_0(3^[])]   (3)  
+1.1.2.1.2.4  [-v1_xxreal_0(k2_xxreal_3(4^[])), v1_xxreal_0(4^[])]   (8)  substitution:[[_G11466], [4^[]]]
+1.1.2.1.2.4.1  [-v1_xxreal_0(4^[])]   (4)  
+1.1.2.2  [- (k2_enumset1(k1_xxreal_3(1^[], k2_xxreal_3(3^[])), k1_xxreal_3(1^[], k2_xxreal_3(4^[])), k1_xxreal_3(2^[], k2_xxreal_3(3^[])), k1_xxreal_3(2^[], k2_xxreal_3(4^[])))=k2_enumset1(k3_xxreal_3(1^[], 3^[]), k3_xxreal_3(1^[], 4^[]), k3_xxreal_3(2^[], 3^[]), k3_xxreal_3(2^[], 4^[]))), k2_enumset1(k3_xxreal_3(1^[], 3^[]), k3_xxreal_3(1^[], 4^[]), k3_xxreal_3(2^[], 3^[]), k3_xxreal_3(2^[], 4^[]))=k2_enumset1(k1_xxreal_3(1^[], k2_xxreal_3(3^[])), k1_xxreal_3(1^[], k2_xxreal_3(4^[])), k1_xxreal_3(2^[], k2_xxreal_3(3^[])), k1_xxreal_3(2^[], k2_xxreal_3(4^[])))]   (13)  substitution:[[_G4242, _G4197], [k2_enumset1(k1_xxreal_3(1^[], k2_xxreal_3(3^[])), k1_xxreal_3(1^[], k2_xxreal_3(4^[])), k1_xxreal_3(2^[], k2_xxreal_3(3^[])), k1_xxreal_3(2^[], k2_xxreal_3(4^[]))), k2_enumset1(k3_xxreal_3(1^[], 3^[]), k3_xxreal_3(1^[], 4^[]), k3_xxreal_3(2^[], 3^[]), k3_xxreal_3(2^[], 4^[]))]]
+1.1.2.2.1  [- (k2_enumset1(k3_xxreal_3(1^[], 3^[]), k3_xxreal_3(1^[], 4^[]), k3_xxreal_3(2^[], 3^[]), k3_xxreal_3(2^[], 4^[]))=k2_enumset1(k1_xxreal_3(1^[], k2_xxreal_3(3^[])), k1_xxreal_3(1^[], k2_xxreal_3(4^[])), k1_xxreal_3(2^[], k2_xxreal_3(3^[])), k1_xxreal_3(2^[], k2_xxreal_3(4^[])))), k3_xxreal_3(1^[], 3^[])=k1_xxreal_3(1^[], k2_xxreal_3(3^[])), k3_xxreal_3(1^[], 4^[])=k1_xxreal_3(1^[], k2_xxreal_3(4^[])), k3_xxreal_3(2^[], 3^[])=k1_xxreal_3(2^[], k2_xxreal_3(3^[])), k3_xxreal_3(2^[], 4^[])=k1_xxreal_3(2^[], k2_xxreal_3(4^[]))]   (24)  substitution:[[_G8413, _G8620, _G8831, _G9046, _G8516, _G8725, _G8938, _G9155], [k3_xxreal_3(1^[], 3^[]), k3_xxreal_3(1^[], 4^[]), k3_xxreal_3(2^[], 3^[]), k3_xxreal_3(2^[], 4^[]), k1_xxreal_3(1^[], k2_xxreal_3(3^[])), k1_xxreal_3(1^[], k2_xxreal_3(4^[])), k1_xxreal_3(2^[], k2_xxreal_3(3^[])), k1_xxreal_3(2^[], k2_xxreal_3(4^[]))]]
+1.1.2.2.1.1  [- (k3_xxreal_3(1^[], 3^[])=k1_xxreal_3(1^[], k2_xxreal_3(3^[]))), v1_xxreal_0(1^[]), v1_xxreal_0(3^[])]   (6)  substitution:[[_G10704, _G10793], [1^[], 3^[]]]
+1.1.2.2.1.1.1  [-v1_xxreal_0(1^[])]   (1)  
+1.1.2.2.1.1.2  [-v1_xxreal_0(3^[])]   (3)  
+1.1.2.2.1.2  [- (k3_xxreal_3(1^[], 4^[])=k1_xxreal_3(1^[], k2_xxreal_3(4^[]))), v1_xxreal_0(1^[]), v1_xxreal_0(4^[])]   (6)  substitution:[[_G10704, _G10793], [1^[], 4^[]]]
+1.1.2.2.1.2.1  [-v1_xxreal_0(1^[])]   (1)  
+1.1.2.2.1.2.2  [-v1_xxreal_0(4^[])]   (4)  
+1.1.2.2.1.3  [- (k3_xxreal_3(2^[], 3^[])=k1_xxreal_3(2^[], k2_xxreal_3(3^[]))), v1_xxreal_0(2^[]), v1_xxreal_0(3^[])]   (6)  substitution:[[_G10704, _G10793], [2^[], 3^[]]]
+1.1.2.2.1.3.1  [-v1_xxreal_0(2^[])]   (2)  
+1.1.2.2.1.3.2  [-v1_xxreal_0(3^[])]   (3)  
+1.1.2.2.1.4  [- (k3_xxreal_3(2^[], 4^[])=k1_xxreal_3(2^[], k2_xxreal_3(4^[]))), v1_xxreal_0(2^[]), v1_xxreal_0(4^[])]   (6)  substitution:[[_G10704, _G10793], [2^[], 4^[]]]
+1.1.2.2.1.4.1  [-v1_xxreal_0(2^[])]   (2)  
+1.1.2.2.1.4.2  [-v1_xxreal_0(4^[])]   (4)  
+------------------------------------------------------
+End of proof for t64_member_1

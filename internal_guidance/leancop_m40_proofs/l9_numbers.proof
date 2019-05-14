@@ -1,0 +1,39 @@
+
+l9_numbers is a Theorem
+Start of proof for l9_numbers
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [r1_tarski(k5_numbers, k4_numbers)]
+ (2)  [- (k4_numbers=k6_subset_1(k2_xboole_0(k4_ordinal1, k2_zfmisc_1(k1_tarski(k1_xboole_0), k4_ordinal1)), k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0))))]
+ (3)  [- (k5_numbers=k4_ordinal1)]
+ (4)  [- (k6_subset_1(_G8013, _G8058)=k4_xboole_0(_G8013, _G8058))]
+ (5)  [r2_hidden(k4_tarski(_G8255, _G8299), k4_ordinal1)]
+ (6)  [-r1_tarski(_G8937, k2_xboole_0(_G8937, _G8979))]
+ (7)  [r1_tarski(_G8470, _G8531), -r2_hidden(_G8593, _G8470), -r1_tarski(_G8470, k4_xboole_0(_G8531, k1_tarski(_G8593)))]
+ (8)  [- (_G2326=_G2326)]
+ (9)  [_G2425=_G2470, - (_G2470=_G2425)]
+ (10)  [- (_G2658=_G2771), _G2658=_G2714, _G2714=_G2771]
+ (11)  [-r2_hidden(_G3175, _G3312), r2_hidden(_G3108, _G3243), _G3108=_G3175, _G3243=_G3312]
+ (12)  [-r1_tarski(_G3763, _G3900), r1_tarski(_G3696, _G3831), _G3696=_G3763, _G3831=_G3900]
+ (13)  [- (k2_zfmisc_1(_G4335, _G4470)=k2_zfmisc_1(_G4402, _G4539)), _G4335=_G4402, _G4470=_G4539]
+ (14)  [- (k6_subset_1(_G4932, _G5067)=k6_subset_1(_G4999, _G5136)), _G4932=_G4999, _G5067=_G5136]
+ (15)  [- (k4_tarski(_G5529, _G5664)=k4_tarski(_G5596, _G5733)), _G5529=_G5596, _G5664=_G5733]
+ (16)  [- (k4_xboole_0(_G6126, _G6261)=k4_xboole_0(_G6193, _G6330)), _G6126=_G6193, _G6261=_G6330]
+ (17)  [_G6723=_G6772, - (k1_tarski(_G6723)=k1_tarski(_G6772))]
+ (18)  [- (k2_xboole_0(_G6992, _G7127)=k2_xboole_0(_G7059, _G7196)), _G6992=_G7059, _G7127=_G7196]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(k4_tarski(k1_xboole_0, k1_xboole_0), k4_ordinal1)]   (5)  substitution:[[_G8255, _G8299], [k1_xboole_0, k1_xboole_0]]
+1.1  [-r2_hidden(k4_tarski(k1_xboole_0, k1_xboole_0), k4_ordinal1), r1_tarski(k4_ordinal1, k2_xboole_0(k4_ordinal1, k2_zfmisc_1(k1_tarski(k1_xboole_0), k4_ordinal1))), -r1_tarski(k4_ordinal1, k4_xboole_0(k2_xboole_0(k4_ordinal1, k2_zfmisc_1(k1_tarski(k1_xboole_0), k4_ordinal1)), k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0))))]   (7)  substitution:[[_G8593, _G8470, _G8531], [k4_tarski(k1_xboole_0, k1_xboole_0), k4_ordinal1, k2_xboole_0(k4_ordinal1, k2_zfmisc_1(k1_tarski(k1_xboole_0), k4_ordinal1))]]
+1.1.1  [-r1_tarski(k4_ordinal1, k2_xboole_0(k4_ordinal1, k2_zfmisc_1(k1_tarski(k1_xboole_0), k4_ordinal1)))]   (6)  substitution:[[_G8937, _G8979], [k4_ordinal1, k2_zfmisc_1(k1_tarski(k1_xboole_0), k4_ordinal1)]]
+1.1.2  [r1_tarski(k4_ordinal1, k4_xboole_0(k2_xboole_0(k4_ordinal1, k2_zfmisc_1(k1_tarski(k1_xboole_0), k4_ordinal1)), k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0)))), -r1_tarski(k5_numbers, k4_numbers), k4_ordinal1=k5_numbers, k4_xboole_0(k2_xboole_0(k4_ordinal1, k2_zfmisc_1(k1_tarski(k1_xboole_0), k4_ordinal1)), k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0)))=k4_numbers]   (12)  substitution:[[_G3696, _G3831, _G3763, _G3900], [k4_ordinal1, k4_xboole_0(k2_xboole_0(k4_ordinal1, k2_zfmisc_1(k1_tarski(k1_xboole_0), k4_ordinal1)), k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0))), k5_numbers, k4_numbers]]
+1.1.2.1  [r1_tarski(k5_numbers, k4_numbers)]   (1)  
+1.1.2.2  [- (k4_ordinal1=k5_numbers), k5_numbers=k4_ordinal1]   (9)  substitution:[[_G2470, _G2425], [k4_ordinal1, k5_numbers]]
+1.1.2.2.1  [- (k5_numbers=k4_ordinal1)]   (3)  
+1.1.2.3  [- (k4_xboole_0(k2_xboole_0(k4_ordinal1, k2_zfmisc_1(k1_tarski(k1_xboole_0), k4_ordinal1)), k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0)))=k4_numbers), k4_numbers=k4_xboole_0(k2_xboole_0(k4_ordinal1, k2_zfmisc_1(k1_tarski(k1_xboole_0), k4_ordinal1)), k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0)))]   (9)  substitution:[[_G2470, _G2425], [k4_xboole_0(k2_xboole_0(k4_ordinal1, k2_zfmisc_1(k1_tarski(k1_xboole_0), k4_ordinal1)), k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0))), k4_numbers]]
+1.1.2.3.1  [- (k4_numbers=k4_xboole_0(k2_xboole_0(k4_ordinal1, k2_zfmisc_1(k1_tarski(k1_xboole_0), k4_ordinal1)), k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0)))), k4_numbers=k6_subset_1(k2_xboole_0(k4_ordinal1, k2_zfmisc_1(k1_tarski(k1_xboole_0), k4_ordinal1)), k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0))), k6_subset_1(k2_xboole_0(k4_ordinal1, k2_zfmisc_1(k1_tarski(k1_xboole_0), k4_ordinal1)), k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0)))=k4_xboole_0(k2_xboole_0(k4_ordinal1, k2_zfmisc_1(k1_tarski(k1_xboole_0), k4_ordinal1)), k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0)))]   (10)  substitution:[[_G2658, _G2771, _G2714], [k4_numbers, k4_xboole_0(k2_xboole_0(k4_ordinal1, k2_zfmisc_1(k1_tarski(k1_xboole_0), k4_ordinal1)), k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0))), k6_subset_1(k2_xboole_0(k4_ordinal1, k2_zfmisc_1(k1_tarski(k1_xboole_0), k4_ordinal1)), k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0)))]]
+1.1.2.3.1.1  [- (k4_numbers=k6_subset_1(k2_xboole_0(k4_ordinal1, k2_zfmisc_1(k1_tarski(k1_xboole_0), k4_ordinal1)), k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0))))]   (2)  
+1.1.2.3.1.2  [- (k6_subset_1(k2_xboole_0(k4_ordinal1, k2_zfmisc_1(k1_tarski(k1_xboole_0), k4_ordinal1)), k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0)))=k4_xboole_0(k2_xboole_0(k4_ordinal1, k2_zfmisc_1(k1_tarski(k1_xboole_0), k4_ordinal1)), k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0))))]   (4)  substitution:[[_G8013, _G8058], [k2_xboole_0(k4_ordinal1, k2_zfmisc_1(k1_tarski(k1_xboole_0), k4_ordinal1)), k1_tarski(k4_tarski(k1_xboole_0, k1_xboole_0))]]
+------------------------------------------------------
+End of proof for l9_numbers

@@ -1,0 +1,40 @@
+
+l186_jordan is a Theorem
+Start of proof for l186_jordan
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], k1_zfmisc_1(u1_struct_0(k15_euclid(np__2))))]
+ (2)  [-r1_jordan24(np__2, 1^[], k19_euclid(k1_real_1(np__1), k6_numbers), k19_euclid(np__1, k6_numbers))]
+ (3)  [k17_euclid(k19_euclid(k6_numbers, k1_real_1(np__3)))=k10_real_1(k7_real_1(k6_pscomp_1(1^[]), k8_pscomp_1(1^[])), np__2)]
+ (4)  [- (k17_euclid(k19_euclid(k6_numbers, np__3))=k6_numbers)]
+ (5)  [- (k17_euclid(k19_euclid(k6_numbers, k1_real_1(np__3)))=k6_numbers)]
+ (6)  [m1_subset_1(_G9581, k1_zfmisc_1(u1_struct_0(k15_euclid(np__2)))), r1_jordan24(np__2, _G9581, k19_euclid(k1_real_1(np__1), k6_numbers), k19_euclid(np__1, k6_numbers)), - (k17_euclid(k19_euclid(k6_numbers, np__3))=k10_real_1(k7_real_1(k6_pscomp_1(_G9581), k8_pscomp_1(_G9581)), np__2))]
+ (7)  [- (_G2696=_G2696)]
+ (8)  [_G2795=_G2840, - (_G2840=_G2795)]
+ (9)  [- (_G3028=_G3141), _G3028=_G3084, _G3084=_G3141]
+ (10)  [-m1_subset_1(_G3545, _G3682), m1_subset_1(_G3478, _G3613), _G3478=_G3545, _G3613=_G3682]
+ (11)  [-r1_jordan24(_G4169, _G4378, _G4591, _G4808), r1_jordan24(_G4066, _G4273, _G4484, _G4699), _G4066=_G4169, _G4273=_G4378, _G4484=_G4591, _G4699=_G4808]
+ (12)  [_G5643=_G5692, - (k1_zfmisc_1(_G5643)=k1_zfmisc_1(_G5692))]
+ (13)  [_G5921=_G5970, - (u1_struct_0(_G5921)=u1_struct_0(_G5970))]
+ (14)  [_G6199=_G6248, - (k15_euclid(_G6199)=k15_euclid(_G6248))]
+ (15)  [_G6477=_G6526, - (k17_euclid(_G6477)=k17_euclid(_G6526))]
+ (16)  [- (k19_euclid(_G6755, _G6890)=k19_euclid(_G6822, _G6959)), _G6755=_G6822, _G6890=_G6959]
+ (17)  [_G7352=_G7401, - (k1_real_1(_G7352)=k1_real_1(_G7401))]
+ (18)  [- (k10_real_1(_G7630, _G7765)=k10_real_1(_G7697, _G7834)), _G7630=_G7697, _G7765=_G7834]
+ (19)  [- (k7_real_1(_G8227, _G8362)=k7_real_1(_G8294, _G8431)), _G8227=_G8294, _G8362=_G8431]
+ (20)  [_G8824=_G8873, - (k6_pscomp_1(_G8824)=k6_pscomp_1(_G8873))]
+ (21)  [_G9093=_G9142, - (k8_pscomp_1(_G9093)=k8_pscomp_1(_G9142))]
+
+Connection Proof:
+-----------------
+1  [k17_euclid(k19_euclid(k6_numbers, k1_real_1(np__3)))=k10_real_1(k7_real_1(k6_pscomp_1(1^[]), k8_pscomp_1(1^[])), np__2)]   (3)  
+1.1  [- (k17_euclid(k19_euclid(k6_numbers, k1_real_1(np__3)))=k10_real_1(k7_real_1(k6_pscomp_1(1^[]), k8_pscomp_1(1^[])), np__2)), k17_euclid(k19_euclid(k6_numbers, k1_real_1(np__3)))=k6_numbers, k6_numbers=k10_real_1(k7_real_1(k6_pscomp_1(1^[]), k8_pscomp_1(1^[])), np__2)]   (9)  substitution:[[_G3028, _G3141, _G3084], [k17_euclid(k19_euclid(k6_numbers, k1_real_1(np__3))), k10_real_1(k7_real_1(k6_pscomp_1(1^[]), k8_pscomp_1(1^[])), np__2), k6_numbers]]
+1.1.1  [- (k17_euclid(k19_euclid(k6_numbers, k1_real_1(np__3)))=k6_numbers)]   (5)  
+1.1.2  [- (k6_numbers=k10_real_1(k7_real_1(k6_pscomp_1(1^[]), k8_pscomp_1(1^[])), np__2)), k6_numbers=k17_euclid(k19_euclid(k6_numbers, np__3)), k17_euclid(k19_euclid(k6_numbers, np__3))=k10_real_1(k7_real_1(k6_pscomp_1(1^[]), k8_pscomp_1(1^[])), np__2)]   (9)  substitution:[[_G3028, _G3141, _G3084], [k6_numbers, k10_real_1(k7_real_1(k6_pscomp_1(1^[]), k8_pscomp_1(1^[])), np__2), k17_euclid(k19_euclid(k6_numbers, np__3))]]
+1.1.2.1  [- (k6_numbers=k17_euclid(k19_euclid(k6_numbers, np__3))), k17_euclid(k19_euclid(k6_numbers, np__3))=k6_numbers]   (8)  substitution:[[_G2840, _G2795], [k6_numbers, k17_euclid(k19_euclid(k6_numbers, np__3))]]
+1.1.2.1.1  [- (k17_euclid(k19_euclid(k6_numbers, np__3))=k6_numbers)]   (4)  
+1.1.2.2  [- (k17_euclid(k19_euclid(k6_numbers, np__3))=k10_real_1(k7_real_1(k6_pscomp_1(1^[]), k8_pscomp_1(1^[])), np__2)), m1_subset_1(1^[], k1_zfmisc_1(u1_struct_0(k15_euclid(np__2)))), r1_jordan24(np__2, 1^[], k19_euclid(k1_real_1(np__1), k6_numbers), k19_euclid(np__1, k6_numbers))]   (6)  substitution:[[_G9581], [1^[]]]
+1.1.2.2.1  [-m1_subset_1(1^[], k1_zfmisc_1(u1_struct_0(k15_euclid(np__2))))]   (1)  
+1.1.2.2.2  [-r1_jordan24(np__2, 1^[], k19_euclid(k1_real_1(np__1), k6_numbers), k19_euclid(np__1, k6_numbers))]   (2)  
+------------------------------------------------------
+End of proof for l186_jordan

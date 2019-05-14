@@ -1,0 +1,56 @@
+
+t54_compos_1 is a Theorem
+Start of proof for t54_compos_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-l1_compos_1(1^[])]
+ (2)  [-m1_subset_1(2^[], u1_compos_1(1^[]))]
+ (3)  [k5_card_1(k9_compos_1(1^[], 2^[]))=np__1]
+ (4)  [- (k3_afinsq_1(_G8482)=k16_funcop_1(k6_numbers, _G8482))]
+ (5)  [-v5_ordinal1(k3_afinsq_1(_G8639))]
+ (6)  [-v1_finset_1(k3_afinsq_1(_G8639))]
+ (7)  [v1_finset_1(_G8802), - (k5_card_1(_G8802)=k1_card_1(_G8802))]
+ (8)  [- (k1_card_1(k1_tarski(_G9377))=np__1)]
+ (9)  [- (k16_funcop_1(_G9499, _G9546)=k1_tarski(k4_tarski(_G9499, _G9546)))]
+ (10)  [- (k9_compos_1(_G8991, _G9048)=k3_afinsq_1(_G9048)), l1_compos_1(_G8991), m1_subset_1(_G9048, u1_compos_1(_G8991))]
+ (11)  [- (_G2854=_G2854)]
+ (12)  [_G2953=_G2998, - (_G2998=_G2953)]
+ (13)  [- (_G3186=_G3299), _G3186=_G3242, _G3242=_G3299]
+ (14)  [-v5_ordinal1(_G3685), _G3636=_G3685, v5_ordinal1(_G3636)]
+ (15)  [-v1_finset_1(_G3963), _G3914=_G3963, v1_finset_1(_G3914)]
+ (16)  [-l1_compos_1(_G4241), _G4192=_G4241, l1_compos_1(_G4192)]
+ (17)  [-m1_subset_1(_G4528, _G4665), m1_subset_1(_G4461, _G4596), _G4461=_G4528, _G4596=_G4665]
+ (18)  [_G5142=_G5191, - (k3_afinsq_1(_G5142)=k3_afinsq_1(_G5191))]
+ (19)  [_G5420=_G5469, - (k1_card_1(_G5420)=k1_card_1(_G5469))]
+ (20)  [- (k16_funcop_1(_G5698, _G5833)=k16_funcop_1(_G5765, _G5902)), _G5698=_G5765, _G5833=_G5902]
+ (21)  [_G6295=_G6344, - (k1_tarski(_G6295)=k1_tarski(_G6344))]
+ (22)  [- (k4_tarski(_G6573, _G6708)=k4_tarski(_G6640, _G6777)), _G6573=_G6640, _G6708=_G6777]
+ (23)  [_G7170=_G7219, - (u1_compos_1(_G7170)=u1_compos_1(_G7219))]
+ (24)  [_G7448=_G7497, - (k5_card_1(_G7448)=k5_card_1(_G7497))]
+ (25)  [- (k9_compos_1(_G7717, _G7852)=k9_compos_1(_G7784, _G7921)), _G7717=_G7784, _G7852=_G7921]
+
+Connection Proof:
+-----------------
+1  [k5_card_1(k9_compos_1(1^[], 2^[]))=np__1]   (3)  
+1.1  [- (k5_card_1(k9_compos_1(1^[], 2^[]))=np__1), k5_card_1(k9_compos_1(1^[], 2^[]))=k1_card_1(k9_compos_1(1^[], 2^[])), k1_card_1(k9_compos_1(1^[], 2^[]))=np__1]   (13)  substitution:[[_G3186, _G3299, _G3242], [k5_card_1(k9_compos_1(1^[], 2^[])), np__1, k1_card_1(k9_compos_1(1^[], 2^[]))]]
+1.1.1  [- (k5_card_1(k9_compos_1(1^[], 2^[]))=k1_card_1(k9_compos_1(1^[], 2^[]))), v1_finset_1(k9_compos_1(1^[], 2^[]))]   (7)  substitution:[[_G8802], [k9_compos_1(1^[], 2^[])]]
+1.1.1.1  [-v1_finset_1(k9_compos_1(1^[], 2^[])), k3_afinsq_1(2^[])=k9_compos_1(1^[], 2^[]), v1_finset_1(k3_afinsq_1(2^[]))]   (15)  substitution:[[_G3963, _G3914], [k9_compos_1(1^[], 2^[]), k3_afinsq_1(2^[])]]
+1.1.1.1.1  [- (k3_afinsq_1(2^[])=k9_compos_1(1^[], 2^[])), k9_compos_1(1^[], 2^[])=k3_afinsq_1(2^[])]   (12)  substitution:[[_G2998, _G2953], [k3_afinsq_1(2^[]), k9_compos_1(1^[], 2^[])]]
+1.1.1.1.1.1  [- (k9_compos_1(1^[], 2^[])=k3_afinsq_1(2^[])), l1_compos_1(1^[]), m1_subset_1(2^[], u1_compos_1(1^[]))]   (10)  substitution:[[_G8991, _G9048], [1^[], 2^[]]]
+1.1.1.1.1.1.1  [-l1_compos_1(1^[])]   (1)  
+1.1.1.1.1.1.2  [-m1_subset_1(2^[], u1_compos_1(1^[]))]   (2)  
+1.1.1.1.2  [-v1_finset_1(k3_afinsq_1(2^[]))]   (6)  substitution:[[_G8639], [2^[]]]
+1.1.2  [- (k1_card_1(k9_compos_1(1^[], 2^[]))=np__1), k1_card_1(k9_compos_1(1^[], 2^[]))=k1_card_1(k16_funcop_1(k6_numbers, 2^[])), k1_card_1(k16_funcop_1(k6_numbers, 2^[]))=np__1]   (13)  substitution:[[_G3186, _G3299, _G3242], [k1_card_1(k9_compos_1(1^[], 2^[])), np__1, k1_card_1(k16_funcop_1(k6_numbers, 2^[]))]]
+1.1.2.1  [- (k1_card_1(k9_compos_1(1^[], 2^[]))=k1_card_1(k16_funcop_1(k6_numbers, 2^[]))), k1_card_1(k9_compos_1(1^[], 2^[]))=k1_card_1(k3_afinsq_1(2^[])), k1_card_1(k3_afinsq_1(2^[]))=k1_card_1(k16_funcop_1(k6_numbers, 2^[]))]   (13)  substitution:[[_G3186, _G3299, _G3242], [k1_card_1(k9_compos_1(1^[], 2^[])), k1_card_1(k16_funcop_1(k6_numbers, 2^[])), k1_card_1(k3_afinsq_1(2^[]))]]
+1.1.2.1.1  [- (k1_card_1(k9_compos_1(1^[], 2^[]))=k1_card_1(k3_afinsq_1(2^[]))), k9_compos_1(1^[], 2^[])=k3_afinsq_1(2^[])]   (19)  substitution:[[_G5420, _G5469], [k9_compos_1(1^[], 2^[]), k3_afinsq_1(2^[])]]
+1.1.2.1.1.1  [- (k9_compos_1(1^[], 2^[])=k3_afinsq_1(2^[])), l1_compos_1(1^[]), m1_subset_1(2^[], u1_compos_1(1^[]))]   (10)  substitution:[[_G8991, _G9048], [1^[], 2^[]]]
+1.1.2.1.1.1.1  [-l1_compos_1(1^[])]   (1)  
+1.1.2.1.1.1.2  [-m1_subset_1(2^[], u1_compos_1(1^[]))]   (2)  
+1.1.2.1.2  [- (k1_card_1(k3_afinsq_1(2^[]))=k1_card_1(k16_funcop_1(k6_numbers, 2^[]))), k3_afinsq_1(2^[])=k16_funcop_1(k6_numbers, 2^[])]   (19)  substitution:[[_G5420, _G5469], [k3_afinsq_1(2^[]), k16_funcop_1(k6_numbers, 2^[])]]
+1.1.2.1.2.1  [- (k3_afinsq_1(2^[])=k16_funcop_1(k6_numbers, 2^[]))]   (4)  substitution:[[_G8482], [2^[]]]
+1.1.2.2  [- (k1_card_1(k16_funcop_1(k6_numbers, 2^[]))=np__1), k1_card_1(k16_funcop_1(k6_numbers, 2^[]))=k1_card_1(k1_tarski(k4_tarski(k6_numbers, 2^[]))), k1_card_1(k1_tarski(k4_tarski(k6_numbers, 2^[])))=np__1]   (13)  substitution:[[_G3186, _G3299, _G3242], [k1_card_1(k16_funcop_1(k6_numbers, 2^[])), np__1, k1_card_1(k1_tarski(k4_tarski(k6_numbers, 2^[])))]]
+1.1.2.2.1  [- (k1_card_1(k16_funcop_1(k6_numbers, 2^[]))=k1_card_1(k1_tarski(k4_tarski(k6_numbers, 2^[])))), k16_funcop_1(k6_numbers, 2^[])=k1_tarski(k4_tarski(k6_numbers, 2^[]))]   (19)  substitution:[[_G5420, _G5469], [k16_funcop_1(k6_numbers, 2^[]), k1_tarski(k4_tarski(k6_numbers, 2^[]))]]
+1.1.2.2.1.1  [- (k16_funcop_1(k6_numbers, 2^[])=k1_tarski(k4_tarski(k6_numbers, 2^[])))]   (9)  substitution:[[_G9499, _G9546], [k6_numbers, 2^[]]]
+1.1.2.2.2  [- (k1_card_1(k1_tarski(k4_tarski(k6_numbers, 2^[])))=np__1)]   (8)  substitution:[[_G9377], [k4_tarski(k6_numbers, 2^[])]]
+------------------------------------------------------
+End of proof for t54_compos_1

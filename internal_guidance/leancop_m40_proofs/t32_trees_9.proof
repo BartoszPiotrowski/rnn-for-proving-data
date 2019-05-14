@@ -1,0 +1,60 @@
+
+t32_trees_9 is a Theorem
+Start of proof for t32_trees_9
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], k5_numbers)]
+ (2)  [-v1_relat_1(2^[])]
+ (3)  [-v1_funct_1(2^[])]
+ (4)  [-v1_finseq_1(2^[])]
+ (5)  [r1_tarski(_G10447, 2^[]), _G10447=k5_relat_1(2^[], k2_finseq_1(1^[])), v1_relat_1(_G10447), v1_funct_1(_G10447), v1_finseq_1(_G10447)]
+ (6)  [m1_subset_1(_G7098, k4_ordinal1), -v7_ordinal1(_G7098)]
+ (7)  [v1_relat_1(_G7255), -v1_relat_1(k5_relat_1(_G7255, _G7301))]
+ (8)  [- (k5_numbers=k4_ordinal1)]
+ (9)  [v1_relat_1(_G8270), -r1_tarski(k5_relat_1(_G8270, _G8223), _G8270)]
+ (10)  [v7_ordinal1(_G7545), -v1_relat_1(k5_relat_1(_G7660, k2_finseq_1(_G7545))), v1_relat_1(_G7660), v1_funct_1(_G7660), v1_finseq_1(_G7660)]
+ (11)  [v7_ordinal1(_G7545), -v1_funct_1(k5_relat_1(_G7660, k2_finseq_1(_G7545))), v1_relat_1(_G7660), v1_funct_1(_G7660), v1_finseq_1(_G7660)]
+ (12)  [v7_ordinal1(_G7545), -v1_finseq_1(k5_relat_1(_G7660, k2_finseq_1(_G7545))), v1_relat_1(_G7660), v1_funct_1(_G7660), v1_finseq_1(_G7660)]
+ (13)  [_G6778=_G6827, - (k2_finseq_1(_G6778)=k2_finseq_1(_G6827))]
+ (14)  [- (k5_relat_1(_G6190, _G6325)=k5_relat_1(_G6257, _G6394)), _G6190=_G6257, _G6325=_G6394]
+ (15)  [- (_G2985=_G2985)]
+ (16)  [_G3084=_G3129, - (_G3129=_G3084)]
+ (17)  [- (_G3317=_G3430), _G3317=_G3373, _G3373=_G3430]
+ (18)  [-v7_ordinal1(_G3816), _G3767=_G3816, v7_ordinal1(_G3767)]
+ (19)  [-m1_subset_1(_G4112, _G4249), m1_subset_1(_G4045, _G4180), _G4045=_G4112, _G4180=_G4249]
+ (20)  [-v1_relat_1(_G4691), _G4642=_G4691, v1_relat_1(_G4642)]
+ (21)  [-v1_funct_1(_G4969), _G4920=_G4969, v1_funct_1(_G4920)]
+ (22)  [-v1_finseq_1(_G5247), _G5198=_G5247, v1_finseq_1(_G5198)]
+ (23)  [-r1_tarski(_G5534, _G5671), r1_tarski(_G5467, _G5602), _G5467=_G5534, _G5602=_G5671]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k5_relat_1(2^[], k2_finseq_1(1^[])), 2^[]), k5_relat_1(2^[], k2_finseq_1(1^[]))=k5_relat_1(2^[], k2_finseq_1(1^[])), v1_relat_1(k5_relat_1(2^[], k2_finseq_1(1^[]))), v1_funct_1(k5_relat_1(2^[], k2_finseq_1(1^[]))), v1_finseq_1(k5_relat_1(2^[], k2_finseq_1(1^[])))]   (5)  substitution:[[_G10447], [k5_relat_1(2^[], k2_finseq_1(1^[]))]]
+1.1  [-r1_tarski(k5_relat_1(2^[], k2_finseq_1(1^[])), 2^[]), v1_relat_1(2^[])]   (9)  substitution:[[_G8270, _G8223], [2^[], k2_finseq_1(1^[])]]
+1.1.1  [-v1_relat_1(2^[])]   (2)  
+1.2  [- (k5_relat_1(2^[], k2_finseq_1(1^[]))=k5_relat_1(2^[], k2_finseq_1(1^[]))), 2^[]=2^[], k2_finseq_1(1^[])=k2_finseq_1(1^[])]   (14)  substitution:[[_G6190, _G6325, _G6257, _G6394], [2^[], k2_finseq_1(1^[]), 2^[], k2_finseq_1(1^[])]]
+1.2.1  [- (2^[]=2^[])]   (15)  substitution:[[_G2985], [2^[]]]
+1.2.2  [- (k2_finseq_1(1^[])=k2_finseq_1(1^[])), 1^[]=1^[]]   (13)  substitution:[[_G6778, _G6827], [1^[], 1^[]]]
+1.2.2.1  [- (1^[]=1^[])]   (15)  substitution:[[_G2985], [1^[]]]
+1.3  [-v1_relat_1(k5_relat_1(2^[], k2_finseq_1(1^[]))), v1_relat_1(2^[])]   (7)  substitution:[[_G7255, _G7301], [2^[], k2_finseq_1(1^[])]]
+1.3.1  [-v1_relat_1(2^[])]   (2)  
+1.4  [-v1_funct_1(k5_relat_1(2^[], k2_finseq_1(1^[]))), v7_ordinal1(1^[]), v1_relat_1(2^[]), v1_funct_1(2^[]), v1_finseq_1(2^[])]   (11)  substitution:[[_G7660, _G7545], [2^[], 1^[]]]
+1.4.1  [-v7_ordinal1(1^[]), m1_subset_1(1^[], k4_ordinal1)]   (6)  substitution:[[_G7098], [1^[]]]
+1.4.1.1  [-m1_subset_1(1^[], k4_ordinal1), m1_subset_1(1^[], k5_numbers), 1^[]=1^[], k5_numbers=k4_ordinal1]   (19)  substitution:[[_G4112, _G4249, _G4045, _G4180], [1^[], k4_ordinal1, 1^[], k5_numbers]]
+1.4.1.1.1  [-m1_subset_1(1^[], k5_numbers)]   (1)  
+1.4.1.1.2  [- (1^[]=1^[])]   (15)  substitution:[[_G2985], [1^[]]]
+1.4.1.1.3  [- (k5_numbers=k4_ordinal1)]   (8)  
+1.4.2  [-v1_relat_1(2^[])]   (2)  
+1.4.3  [-v1_funct_1(2^[])]   (3)  
+1.4.4  [-v1_finseq_1(2^[])]   (4)  
+1.5  [-v1_finseq_1(k5_relat_1(2^[], k2_finseq_1(1^[]))), v7_ordinal1(1^[]), v1_relat_1(2^[]), v1_funct_1(2^[]), v1_finseq_1(2^[])]   (12)  substitution:[[_G7660, _G7545], [2^[], 1^[]]]
+1.5.1  [-v7_ordinal1(1^[]), m1_subset_1(1^[], k4_ordinal1)]   (6)  substitution:[[_G7098], [1^[]]]
+1.5.1.1  [-m1_subset_1(1^[], k4_ordinal1), m1_subset_1(1^[], k5_numbers), 1^[]=1^[], k5_numbers=k4_ordinal1]   (19)  substitution:[[_G4112, _G4249, _G4045, _G4180], [1^[], k4_ordinal1, 1^[], k5_numbers]]
+1.5.1.1.1  [-m1_subset_1(1^[], k5_numbers)]   (1)  
+1.5.1.1.2  [- (1^[]=1^[])]   (15)  substitution:[[_G2985], [1^[]]]
+1.5.1.1.3  [- (k5_numbers=k4_ordinal1)]   (8)  
+1.5.2  [-v1_relat_1(2^[])]   (2)  
+1.5.3  [-v1_funct_1(2^[])]   (3)  
+1.5.4  [-v1_finseq_1(2^[])]   (4)  
+------------------------------------------------------
+End of proof for t32_trees_9

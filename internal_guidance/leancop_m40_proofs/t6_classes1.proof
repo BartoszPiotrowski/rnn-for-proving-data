@@ -1,0 +1,47 @@
+
+t6_classes1 is a Theorem
+Start of proof for t6_classes1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-r1_tarski(4^[], k1_classes1(5^[]))]
+ (2)  [-r2_hidden(k1_card_1(4^[]), k1_card_1(k1_classes1(5^[])))]
+ (3)  [r2_hidden(4^[], k1_classes1(5^[]))]
+ (4)  [r1_classes1(_G6637, _G6687), -r2_hidden(_G6637, _G6687)]
+ (5)  [r1_classes1(_G6637, _G6687), -v2_classes1(_G6687)]
+ (6)  [-r1_classes1(_G6637, _G6687), r2_hidden(_G6637, _G6687), v2_classes1(_G6687)]
+ (7)  [_G7006=k1_classes1(_G6942), -r1_classes1(_G6942, _G7006)]
+ (8)  [_G7006=k1_classes1(_G6942), r1_classes1(_G6942, _G7199), -r1_tarski(_G7006, _G7199)]
+ (9)  [- (_G7006=k1_classes1(_G6942)), r1_classes1(_G6942, _G7006), -r1_classes1(_G6942, 1^[_G7006, _G6942])]
+ (10)  [- (_G7006=k1_classes1(_G6942)), r1_classes1(_G6942, _G7006), r1_tarski(_G7006, 1^[_G7006, _G6942])]
+ (11)  [-v2_classes1(_G7443), v1_classes1(_G7443), -r2_hidden(2^[_G7443], _G7443), -r1_tarski(3^[_G7443], _G7443)]
+ (12)  [-v2_classes1(_G7443), v1_classes1(_G7443), -r2_hidden(2^[_G7443], _G7443), -r2_hidden(k1_card_1(3^[_G7443]), k1_card_1(_G7443))]
+ (13)  [-v2_classes1(_G7443), v1_classes1(_G7443), -r2_hidden(2^[_G7443], _G7443), r2_hidden(3^[_G7443], _G7443)]
+ (14)  [-v2_classes1(_G7443), v1_classes1(_G7443), r2_hidden(k9_setfam_1(2^[_G7443]), _G7443), -r1_tarski(3^[_G7443], _G7443)]
+ (15)  [-v2_classes1(_G7443), v1_classes1(_G7443), r2_hidden(k9_setfam_1(2^[_G7443]), _G7443), -r2_hidden(k1_card_1(3^[_G7443]), k1_card_1(_G7443))]
+ (16)  [-v2_classes1(_G7443), v1_classes1(_G7443), r2_hidden(k9_setfam_1(2^[_G7443]), _G7443), r2_hidden(3^[_G7443], _G7443)]
+ (17)  [v2_classes1(_G7443), -v1_classes1(_G7443)]
+ (18)  [v2_classes1(_G7443), r2_hidden(_G7600, _G7443), -r2_hidden(k9_setfam_1(_G7600), _G7443)]
+ (19)  [v2_classes1(_G7443), -r2_hidden(_G7796, _G7443), r1_tarski(_G7796, _G7443), r2_hidden(k1_card_1(_G7796), k1_card_1(_G7443))]
+ (20)  [_G5749=_G5798, - (k9_setfam_1(_G5749)=k9_setfam_1(_G5798))]
+ (21)  [_G6027=_G6076, - (k1_card_1(_G6027)=k1_card_1(_G6076))]
+ (22)  [_G6296=_G6345, - (k1_classes1(_G6296)=k1_classes1(_G6345))]
+ (23)  [- (_G2524=_G2524)]
+ (24)  [_G2623=_G2668, - (_G2668=_G2623)]
+ (25)  [- (_G2856=_G2969), _G2856=_G2912, _G2912=_G2969]
+ (26)  [-r1_classes1(_G3373, _G3510), r1_classes1(_G3306, _G3441), _G3306=_G3373, _G3441=_G3510]
+ (27)  [-v2_classes1(_G3952), _G3903=_G3952, v2_classes1(_G3903)]
+ (28)  [-v1_classes1(_G4230), _G4181=_G4230, v1_classes1(_G4181)]
+ (29)  [-r1_tarski(_G4526, _G4663), r1_tarski(_G4459, _G4594), _G4459=_G4526, _G4594=_G4663]
+ (30)  [-r2_hidden(_G5114, _G5251), r2_hidden(_G5047, _G5182), _G5047=_G5114, _G5182=_G5251]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(4^[], k1_classes1(5^[]))]   (3)  
+1.1  [-r2_hidden(4^[], k1_classes1(5^[])), v2_classes1(k1_classes1(5^[])), r1_tarski(4^[], k1_classes1(5^[])), r2_hidden(k1_card_1(4^[]), k1_card_1(k1_classes1(5^[])))]   (19)  substitution:[[_G7796, _G7443], [4^[], k1_classes1(5^[])]]
+1.1.1  [-v2_classes1(k1_classes1(5^[])), r1_classes1(5^[], k1_classes1(5^[]))]   (5)  substitution:[[_G6687, _G6637], [k1_classes1(5^[]), 5^[]]]
+1.1.1.1  [-r1_classes1(5^[], k1_classes1(5^[])), k1_classes1(5^[])=k1_classes1(5^[])]   (7)  substitution:[[_G6942, _G7006], [5^[], k1_classes1(5^[])]]
+1.1.1.1.1  [- (k1_classes1(5^[])=k1_classes1(5^[]))]   (23)  substitution:[[_G2524], [k1_classes1(5^[])]]
+1.1.2  [-r1_tarski(4^[], k1_classes1(5^[]))]   (1)  
+1.1.3  [-r2_hidden(k1_card_1(4^[]), k1_card_1(k1_classes1(5^[])))]   (2)  
+------------------------------------------------------
+End of proof for t6_classes1

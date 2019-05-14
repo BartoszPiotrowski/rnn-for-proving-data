@@ -1,0 +1,38 @@
+
+l48_xreal_1 is a Theorem
+Start of proof for l48_xreal_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xreal_0(1^[])]
+ (2)  [-v1_xreal_0(2^[])]
+ (3)  [-r1_xxreal_0(1^[], 2^[])]
+ (4)  [r1_xxreal_0(k6_numbers, k6_xcmplx_0(2^[], 1^[]))]
+ (5)  [v1_xreal_0(_G4422), -v1_xcmplx_0(_G4422)]
+ (6)  [v1_xcmplx_0(_G5141), - (k6_xcmplx_0(_G5141, _G5141)=k6_numbers)]
+ (7)  [v1_xreal_0(_G4553), v1_xreal_0(_G4656), v1_xreal_0(_G4755), r1_xxreal_0(_G4553, _G4656), -r1_xxreal_0(k6_xcmplx_0(_G4755, _G4656), k6_xcmplx_0(_G4755, _G4553))]
+ (8)  [v1_xreal_0(_G4553), v1_xreal_0(_G4656), v1_xreal_0(_G4755), -r1_xxreal_0(_G4553, _G4656), r1_xxreal_0(k6_xcmplx_0(_G4755, _G4656), k6_xcmplx_0(_G4755, _G4553))]
+ (9)  [- (k6_xcmplx_0(_G3804, _G3939)=k6_xcmplx_0(_G3871, _G4008)), _G3804=_G3871, _G3939=_G4008]
+ (10)  [- (_G1824=_G1824)]
+ (11)  [_G1923=_G1968, - (_G1968=_G1923)]
+ (12)  [- (_G2156=_G2269), _G2156=_G2212, _G2212=_G2269]
+ (13)  [-v1_xcmplx_0(_G2655), _G2606=_G2655, v1_xcmplx_0(_G2606)]
+ (14)  [-v1_xreal_0(_G2933), _G2884=_G2933, v1_xreal_0(_G2884)]
+ (15)  [-r1_xxreal_0(_G3220, _G3357), r1_xxreal_0(_G3153, _G3288), _G3153=_G3220, _G3288=_G3357]
+
+Connection Proof:
+-----------------
+1  [r1_xxreal_0(k6_numbers, k6_xcmplx_0(2^[], 1^[]))]   (4)  
+1.1  [-r1_xxreal_0(k6_numbers, k6_xcmplx_0(2^[], 1^[])), r1_xxreal_0(k6_xcmplx_0(2^[], 2^[]), k6_xcmplx_0(2^[], 1^[])), k6_xcmplx_0(2^[], 2^[])=k6_numbers, k6_xcmplx_0(2^[], 1^[])=k6_xcmplx_0(2^[], 1^[])]   (15)  substitution:[[_G3220, _G3357, _G3153, _G3288], [k6_numbers, k6_xcmplx_0(2^[], 1^[]), k6_xcmplx_0(2^[], 2^[]), k6_xcmplx_0(2^[], 1^[])]]
+1.1.1  [-r1_xxreal_0(k6_xcmplx_0(2^[], 2^[]), k6_xcmplx_0(2^[], 1^[])), v1_xreal_0(1^[]), v1_xreal_0(2^[]), v1_xreal_0(2^[]), r1_xxreal_0(1^[], 2^[])]   (7)  substitution:[[_G4755, _G4656, _G4553], [2^[], 2^[], 1^[]]]
+1.1.1.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.1.2  [-v1_xreal_0(2^[])]   (2)  
+1.1.1.3  [-v1_xreal_0(2^[])]   (2)  
+1.1.1.4  [-r1_xxreal_0(1^[], 2^[])]   (3)  
+1.1.2  [- (k6_xcmplx_0(2^[], 2^[])=k6_numbers), v1_xcmplx_0(2^[])]   (6)  substitution:[[_G5141], [2^[]]]
+1.1.2.1  [-v1_xcmplx_0(2^[]), v1_xreal_0(2^[])]   (5)  substitution:[[_G4422], [2^[]]]
+1.1.2.1.1  [-v1_xreal_0(2^[])]   (2)  
+1.1.3  [- (k6_xcmplx_0(2^[], 1^[])=k6_xcmplx_0(2^[], 1^[])), 2^[]=2^[], 1^[]=1^[]]   (9)  substitution:[[_G3804, _G3939, _G3871, _G4008], [2^[], 1^[], 2^[], 1^[]]]
+1.1.3.1  [- (2^[]=2^[])]   (10)  substitution:[[_G1824], [2^[]]]
+1.1.3.2  [- (1^[]=1^[])]   (10)  substitution:[[_G1824], [1^[]]]
+------------------------------------------------------
+End of proof for l48_xreal_1

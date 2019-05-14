@@ -1,0 +1,42 @@
+
+t46_topreal3 is a Theorem
+Start of proof for t46_topreal3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], k5_numbers)]
+ (2)  [-m2_finseq_1(2^[], k1_numbers)]
+ (3)  [- (k3_finseq_1(2^[])=1^[])]
+ (4)  [r2_hidden(2^[], u1_struct_0(k15_euclid(1^[])))]
+ (5)  [m1_subset_1(_G6412, k4_ordinal1), -v7_ordinal1(_G6412)]
+ (6)  [- (k5_numbers=k4_ordinal1)]
+ (7)  [v7_ordinal1(_G7087), - (u1_struct_0(k14_euclid(_G7087))=u1_struct_0(k15_euclid(_G7087)))]
+ (8)  [m1_subset_1(_G6626, k5_numbers), m2_finseq_1(_G6746, k1_numbers), k3_finseq_1(_G6746)=_G6626, -r2_hidden(_G6746, u1_struct_0(k14_euclid(_G6626)))]
+ (9)  [_G5225=_G5274, - (k14_euclid(_G5225)=k14_euclid(_G5274))]
+ (10)  [_G5503=_G5552, - (k3_finseq_1(_G5503)=k3_finseq_1(_G5552))]
+ (11)  [_G5781=_G5830, - (u1_struct_0(_G5781)=u1_struct_0(_G5830))]
+ (12)  [_G6050=_G6099, - (k15_euclid(_G6050)=k15_euclid(_G6099))]
+ (13)  [- (_G2299=_G2299)]
+ (14)  [_G2398=_G2443, - (_G2443=_G2398)]
+ (15)  [- (_G2631=_G2744), _G2631=_G2687, _G2687=_G2744]
+ (16)  [-v7_ordinal1(_G3130), _G3081=_G3130, v7_ordinal1(_G3081)]
+ (17)  [-m1_subset_1(_G3426, _G3563), m1_subset_1(_G3359, _G3494), _G3359=_G3426, _G3494=_G3563]
+ (18)  [-m2_finseq_1(_G4023, _G4160), m2_finseq_1(_G3956, _G4091), _G3956=_G4023, _G4091=_G4160]
+ (19)  [-r2_hidden(_G4611, _G4748), r2_hidden(_G4544, _G4679), _G4544=_G4611, _G4679=_G4748]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(2^[], u1_struct_0(k15_euclid(1^[])))]   (4)  
+1.1  [-r2_hidden(2^[], u1_struct_0(k15_euclid(1^[]))), r2_hidden(2^[], u1_struct_0(k14_euclid(1^[]))), 2^[]=2^[], u1_struct_0(k14_euclid(1^[]))=u1_struct_0(k15_euclid(1^[]))]   (19)  substitution:[[_G4611, _G4748, _G4544, _G4679], [2^[], u1_struct_0(k15_euclid(1^[])), 2^[], u1_struct_0(k14_euclid(1^[]))]]
+1.1.1  [-r2_hidden(2^[], u1_struct_0(k14_euclid(1^[]))), m1_subset_1(1^[], k5_numbers), m2_finseq_1(2^[], k1_numbers), k3_finseq_1(2^[])=1^[]]   (8)  substitution:[[_G6746, _G6626], [2^[], 1^[]]]
+1.1.1.1  [-m1_subset_1(1^[], k5_numbers)]   (1)  
+1.1.1.2  [-m2_finseq_1(2^[], k1_numbers)]   (2)  
+1.1.1.3  [- (k3_finseq_1(2^[])=1^[])]   (3)  
+1.1.2  [- (2^[]=2^[])]   (13)  substitution:[[_G2299], [2^[]]]
+1.1.3  [- (u1_struct_0(k14_euclid(1^[]))=u1_struct_0(k15_euclid(1^[]))), v7_ordinal1(1^[])]   (7)  substitution:[[_G7087], [1^[]]]
+1.1.3.1  [-v7_ordinal1(1^[]), m1_subset_1(1^[], k4_ordinal1)]   (5)  substitution:[[_G6412], [1^[]]]
+1.1.3.1.1  [-m1_subset_1(1^[], k4_ordinal1), m1_subset_1(1^[], k5_numbers), 1^[]=1^[], k5_numbers=k4_ordinal1]   (17)  substitution:[[_G3426, _G3563, _G3359, _G3494], [1^[], k4_ordinal1, 1^[], k5_numbers]]
+1.1.3.1.1.1  [-m1_subset_1(1^[], k5_numbers)]   (1)  
+1.1.3.1.1.2  [- (1^[]=1^[])]   (13)  substitution:[[_G2299], [1^[]]]
+1.1.3.1.1.3  [- (k5_numbers=k4_ordinal1)]   (6)  
+------------------------------------------------------
+End of proof for t46_topreal3

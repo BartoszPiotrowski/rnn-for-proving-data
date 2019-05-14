@@ -1,0 +1,52 @@
+
+t4_convex4 is a Theorem
+Start of proof for t4_convex4
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(1^[])]
+ (2)  [-l2_algstr_0(1^[])]
+ (3)  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]
+ (4)  [m2_convex4(k2_convex4(1^[]), 1^[], 2^[])]
+ (5)  [- (k1_xboole_0=o_0_0_xboole_0)]
+ (6)  [l2_algstr_0(_G8861), -v2_struct_0(_G8861), m1_convex4(_G9028, _G8861), _G9028=k2_convex4(_G8861), - (k1_convex4(_G8861, _G9028)=k1_xboole_0)]
+ (7)  [l2_algstr_0(_G8861), -v2_struct_0(_G8861), m1_convex4(_G9028, _G8861), - (_G9028=k2_convex4(_G8861)), k1_convex4(_G8861, _G9028)=k1_xboole_0]
+ (8)  [-r1_tarski(k1_xboole_0, _G10386)]
+ (9)  [-m1_convex4(k2_convex4(_G10148), _G10148), -v2_struct_0(_G10148), l2_algstr_0(_G10148)]
+ (10)  [l2_algstr_0(_G9388), -v2_struct_0(_G9388), m1_subset_1(_G9569, k1_zfmisc_1(u1_struct_0(_G9388))), m1_convex4(_G9725, _G9388), m2_convex4(_G9725, _G9388, _G9569), -r1_tarski(k1_convex4(_G9388, _G9725), _G9569)]
+ (11)  [l2_algstr_0(_G9388), -v2_struct_0(_G9388), m1_subset_1(_G9569, k1_zfmisc_1(u1_struct_0(_G9388))), m1_convex4(_G9725, _G9388), -m2_convex4(_G9725, _G9388, _G9569), r1_tarski(k1_convex4(_G9388, _G9725), _G9569)]
+ (12)  [- (k1_convex4(_G7298, _G7433)=k1_convex4(_G7365, _G7502)), _G7298=_G7365, _G7433=_G7502]
+ (13)  [_G7895=_G7944, - (k1_zfmisc_1(_G7895)=k1_zfmisc_1(_G7944))]
+ (14)  [_G8173=_G8222, - (u1_struct_0(_G8173)=u1_struct_0(_G8222))]
+ (15)  [_G8442=_G8491, - (k2_convex4(_G8442)=k2_convex4(_G8491))]
+ (16)  [- (_G3024=_G3024)]
+ (17)  [_G3123=_G3168, - (_G3168=_G3123)]
+ (18)  [- (_G3356=_G3469), _G3356=_G3412, _G3412=_G3469]
+ (19)  [-m1_convex4(_G3873, _G4010), m1_convex4(_G3806, _G3941), _G3806=_G3873, _G3941=_G4010]
+ (20)  [-r1_tarski(_G4470, _G4607), r1_tarski(_G4403, _G4538), _G4403=_G4470, _G4538=_G4607]
+ (21)  [-v2_struct_0(_G5049), _G5000=_G5049, v2_struct_0(_G5000)]
+ (22)  [-l2_algstr_0(_G5327), _G5278=_G5327, l2_algstr_0(_G5278)]
+ (23)  [-m1_subset_1(_G5623, _G5760), m1_subset_1(_G5556, _G5691), _G5556=_G5623, _G5691=_G5760]
+ (24)  [-m2_convex4(_G6229, _G6402, _G6579), m2_convex4(_G6144, _G6315, _G6490), _G6144=_G6229, _G6315=_G6402, _G6490=_G6579]
+
+Connection Proof:
+-----------------
+1  [v2_struct_0(1^[])]   (1)  
+1.1  [-v2_struct_0(1^[]), l2_algstr_0(1^[]), m1_convex4(k2_convex4(1^[]), 1^[]), k2_convex4(1^[])=k2_convex4(1^[]), - (k1_convex4(1^[], k2_convex4(1^[]))=k1_xboole_0)]   (6)  substitution:[[_G8861, _G9028], [1^[], k2_convex4(1^[])]]
+1.1.1  [-l2_algstr_0(1^[])]   (2)  
+1.1.2  [-m1_convex4(k2_convex4(1^[]), 1^[]), -v2_struct_0(1^[]), l2_algstr_0(1^[])]   (9)  substitution:[[_G10148], [1^[]]]
+1.1.2.1  [v2_struct_0(1^[])]   (1)  
+1.1.2.2  [-l2_algstr_0(1^[])]   (2)  
+1.1.3  [- (k2_convex4(1^[])=k2_convex4(1^[])), 1^[]=1^[]]   (15)  substitution:[[_G8442, _G8491], [1^[], 1^[]]]
+1.1.3.1  [- (1^[]=1^[])]   (16)  substitution:[[_G3024], [1^[]]]
+1.1.4  [k1_convex4(1^[], k2_convex4(1^[]))=k1_xboole_0, - (k1_xboole_0=k1_convex4(1^[], k2_convex4(1^[])))]   (17)  substitution:[[_G3123, _G3168], [k1_convex4(1^[], k2_convex4(1^[])), k1_xboole_0]]
+1.1.4.1  [k1_xboole_0=k1_convex4(1^[], k2_convex4(1^[])), -r1_tarski(k1_convex4(1^[], k2_convex4(1^[])), 2^[]), r1_tarski(k1_xboole_0, 2^[]), 2^[]=2^[]]   (20)  substitution:[[_G4403, _G4470, _G4607, _G4538], [k1_xboole_0, k1_convex4(1^[], k2_convex4(1^[])), 2^[], 2^[]]]
+1.1.4.1.1  [r1_tarski(k1_convex4(1^[], k2_convex4(1^[])), 2^[]), l2_algstr_0(1^[]), -v2_struct_0(1^[]), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[]))), m1_convex4(k2_convex4(1^[]), 1^[]), -m2_convex4(k2_convex4(1^[]), 1^[], 2^[])]   (11)  substitution:[[_G9388, _G9725, _G9569], [1^[], k2_convex4(1^[]), 2^[]]]
+1.1.4.1.1.1  [-l2_algstr_0(1^[])]   (2)  
+1.1.4.1.1.2  [v2_struct_0(1^[])]   (1)  
+1.1.4.1.1.3  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (3)  
+1.1.4.1.1.4  [-m1_convex4(k2_convex4(1^[]), 1^[])]   (lemmata:1.1)  
+1.1.4.1.1.5  [m2_convex4(k2_convex4(1^[]), 1^[], 2^[])]   (4)  
+1.1.4.1.2  [-r1_tarski(k1_xboole_0, 2^[])]   (8)  substitution:[[_G10386], [2^[]]]
+1.1.4.1.3  [- (2^[]=2^[])]   (16)  substitution:[[_G3024], [2^[]]]
+------------------------------------------------------
+End of proof for t4_convex4

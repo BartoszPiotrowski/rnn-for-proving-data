@@ -1,0 +1,26 @@
+
+l1_hermitan is a Theorem
+Start of proof for l1_hermitan
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k6_numbers=k2_xcmplx_0(k6_numbers, k3_xcmplx_0(k6_numbers, k7_complex1))]
+ (2)  [- (k5_complex1=k2_xcmplx_0(k6_numbers, k3_xcmplx_0(k6_numbers, k7_complex1)))]
+ (3)  [- (k5_complex1=k1_xboole_0)]
+ (4)  [- (k6_numbers=k1_xboole_0)]
+ (5)  [- (_G990=_G990)]
+ (6)  [_G1089=_G1134, - (_G1134=_G1089)]
+ (7)  [- (_G1322=_G1435), _G1322=_G1378, _G1378=_G1435]
+ (8)  [- (k2_xcmplx_0(_G1772, _G1907)=k2_xcmplx_0(_G1839, _G1976)), _G1772=_G1839, _G1907=_G1976]
+ (9)  [- (k3_xcmplx_0(_G2360, _G2495)=k3_xcmplx_0(_G2427, _G2564)), _G2360=_G2427, _G2495=_G2564]
+
+Connection Proof:
+-----------------
+1  [k6_numbers=k2_xcmplx_0(k6_numbers, k3_xcmplx_0(k6_numbers, k7_complex1))]   (1)  
+1.1  [- (k6_numbers=k2_xcmplx_0(k6_numbers, k3_xcmplx_0(k6_numbers, k7_complex1))), k6_numbers=k1_xboole_0, k1_xboole_0=k2_xcmplx_0(k6_numbers, k3_xcmplx_0(k6_numbers, k7_complex1))]   (7)  substitution:[[_G1322, _G1435, _G1378], [k6_numbers, k2_xcmplx_0(k6_numbers, k3_xcmplx_0(k6_numbers, k7_complex1)), k1_xboole_0]]
+1.1.1  [- (k6_numbers=k1_xboole_0)]   (4)  
+1.1.2  [- (k1_xboole_0=k2_xcmplx_0(k6_numbers, k3_xcmplx_0(k6_numbers, k7_complex1))), k1_xboole_0=k5_complex1, k5_complex1=k2_xcmplx_0(k6_numbers, k3_xcmplx_0(k6_numbers, k7_complex1))]   (7)  substitution:[[_G1322, _G1435, _G1378], [k1_xboole_0, k2_xcmplx_0(k6_numbers, k3_xcmplx_0(k6_numbers, k7_complex1)), k5_complex1]]
+1.1.2.1  [- (k1_xboole_0=k5_complex1), k5_complex1=k1_xboole_0]   (6)  substitution:[[_G1134, _G1089], [k1_xboole_0, k5_complex1]]
+1.1.2.1.1  [- (k5_complex1=k1_xboole_0)]   (3)  
+1.1.2.2  [- (k5_complex1=k2_xcmplx_0(k6_numbers, k3_xcmplx_0(k6_numbers, k7_complex1)))]   (2)  
+------------------------------------------------------
+End of proof for l1_hermitan

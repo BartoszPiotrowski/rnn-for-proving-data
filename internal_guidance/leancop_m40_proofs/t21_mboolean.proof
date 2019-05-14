@@ -1,0 +1,25 @@
+
+t21_mboolean is a Theorem
+Start of proof for t21_mboolean
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [r6_pboole(1^[], k2_mboolean(1^[], k1_pboole(1^[])), k1_pboole(1^[]))]
+ (2)  [-v1_relat_1(k2_mboolean(_G818, k1_pboole(_G818)))]
+ (3)  [-v3_relat_1(k2_mboolean(_G818, k1_pboole(_G818)))]
+ (4)  [-v4_relat_1(k2_mboolean(_G818, k1_pboole(_G818)), _G818)]
+ (5)  [-v1_funct_1(k2_mboolean(_G818, k1_pboole(_G818)))]
+ (6)  [-v1_partfun1(k2_mboolean(_G818, k1_pboole(_G818)), _G818)]
+ (7)  [v1_partfun1(_G1525, _G1456), v1_funct_1(_G1525), v4_relat_1(_G1525, _G1456), v1_relat_1(_G1525), v3_relat_1(_G1525), -r6_pboole(_G1456, _G1525, k1_pboole(_G1456))]
+ (8)  [v1_partfun1(_G1525, _G1456), v1_funct_1(_G1525), v4_relat_1(_G1525, _G1456), v1_relat_1(_G1525), -v3_relat_1(_G1525), r6_pboole(_G1456, _G1525, k1_pboole(_G1456))]
+
+Connection Proof:
+-----------------
+1  [r6_pboole(1^[], k2_mboolean(1^[], k1_pboole(1^[])), k1_pboole(1^[]))]   (1)  
+1.1  [-r6_pboole(1^[], k2_mboolean(1^[], k1_pboole(1^[])), k1_pboole(1^[])), v1_partfun1(k2_mboolean(1^[], k1_pboole(1^[])), 1^[]), v1_funct_1(k2_mboolean(1^[], k1_pboole(1^[]))), v4_relat_1(k2_mboolean(1^[], k1_pboole(1^[])), 1^[]), v1_relat_1(k2_mboolean(1^[], k1_pboole(1^[]))), v3_relat_1(k2_mboolean(1^[], k1_pboole(1^[])))]   (7)  substitution:[[_G1456, _G1525], [1^[], k2_mboolean(1^[], k1_pboole(1^[]))]]
+1.1.1  [-v1_partfun1(k2_mboolean(1^[], k1_pboole(1^[])), 1^[])]   (6)  substitution:[[_G818], [1^[]]]
+1.1.2  [-v1_funct_1(k2_mboolean(1^[], k1_pboole(1^[])))]   (5)  substitution:[[_G818], [1^[]]]
+1.1.3  [-v4_relat_1(k2_mboolean(1^[], k1_pboole(1^[])), 1^[])]   (4)  substitution:[[_G818], [1^[]]]
+1.1.4  [-v1_relat_1(k2_mboolean(1^[], k1_pboole(1^[])))]   (2)  substitution:[[_G818], [1^[]]]
+1.1.5  [-v3_relat_1(k2_mboolean(1^[], k1_pboole(1^[])))]   (3)  substitution:[[_G818], [1^[]]]
+------------------------------------------------------
+End of proof for t21_mboolean

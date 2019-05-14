@@ -1,0 +1,53 @@
+
+t19_scmyciel is a Theorem
+Start of proof for t19_scmyciel
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [- (k1_card_1(k3_tarski(6^[]))=np__1)]
+ (2)  [v2_scmyciel(6^[])]
+ (3)  [_G6628=k1_tarski(_G6570), r2_hidden(_G6758, _G6628), - (_G6758=_G6570)]
+ (4)  [_G6628=k1_tarski(_G6570), -r2_hidden(_G6758, _G6628), _G6758=_G6570]
+ (5)  [- (_G6628=k1_tarski(_G6570)), r2_hidden(1^[_G6628, _G6570], _G6628), 1^[_G6628, _G6570]=_G6570]
+ (6)  [- (_G6628=k1_tarski(_G6570)), -r2_hidden(1^[_G6628, _G6570], _G6628), - (1^[_G6628, _G6570]=_G6570)]
+ (7)  [v1_xboole_0(_G6990), r2_hidden(_G7068, _G6990)]
+ (8)  [-v1_xboole_0(_G6990), -r2_hidden(2^[_G6990], _G6990)]
+ (9)  [v2_scmyciel(_G7218), -v1_xboole_0(k1_scmyciel(_G7218))]
+ (10)  [-v2_scmyciel(_G7218), v1_xboole_0(k1_scmyciel(_G7218))]
+ (11)  [r2_hidden(_G7453, k1_scmyciel(_G7365)), 3^[_G7453, _G7365]=4^[_G7453, _G7365]]
+ (12)  [r2_hidden(_G7453, k1_scmyciel(_G7365)), -r2_hidden(3^[_G7453, _G7365], k3_tarski(_G7365))]
+ (13)  [r2_hidden(_G7453, k1_scmyciel(_G7365)), -r2_hidden(4^[_G7453, _G7365], k3_tarski(_G7365))]
+ (14)  [r2_hidden(_G7453, k1_scmyciel(_G7365)), - (_G7453=k2_tarski(3^[_G7453, _G7365], 4^[_G7453, _G7365]))]
+ (15)  [k1_card_1(_G8218)=np__1, - (_G8218=k1_tarski(5^[_G8218]))]
+ (16)  [- (k1_card_1(_G8218)=np__1), _G8218=k1_tarski(_G8338)]
+ (17)  [_G4765=_G4814, - (k1_scmyciel(_G4765)=k1_scmyciel(_G4814))]
+ (18)  [- (k2_tarski(_G5043, _G5178)=k2_tarski(_G5110, _G5247)), _G5043=_G5110, _G5178=_G5247]
+ (19)  [_G5640=_G5689, - (k1_tarski(_G5640)=k1_tarski(_G5689))]
+ (20)  [_G5918=_G5967, - (k1_card_1(_G5918)=k1_card_1(_G5967))]
+ (21)  [_G6187=_G6236, - (k3_tarski(_G6187)=k3_tarski(_G6236))]
+ (22)  [- (_G2776=_G2776)]
+ (23)  [_G2875=_G2920, - (_G2920=_G2875)]
+ (24)  [- (_G3108=_G3221), _G3108=_G3164, _G3164=_G3221]
+ (25)  [-v1_xboole_0(_G3607), _G3558=_G3607, v1_xboole_0(_G3558)]
+ (26)  [-v2_scmyciel(_G4473), _G4424=_G4473, v2_scmyciel(_G4424)]
+ (27)  [-r2_hidden(_G3903, _G4040), r2_hidden(_G3836, _G3971), _G3836=_G3903, _G3971=_G4040]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(2^[k1_scmyciel(6^[])], k1_scmyciel(6^[])), 3^[2^[k1_scmyciel(6^[])], 6^[]]=4^[2^[k1_scmyciel(6^[])], 6^[]]]   (11)  substitution:[[_G7453, _G7365], [2^[k1_scmyciel(6^[])], 6^[]]]
+1.1  [-r2_hidden(2^[k1_scmyciel(6^[])], k1_scmyciel(6^[])), -v1_xboole_0(k1_scmyciel(6^[]))]   (8)  substitution:[[_G6990], [k1_scmyciel(6^[])]]
+1.1.1  [v1_xboole_0(k1_scmyciel(6^[])), -v2_scmyciel(6^[])]   (10)  substitution:[[_G7218], [6^[]]]
+1.1.1.1  [v2_scmyciel(6^[])]   (2)  
+1.2  [- (3^[2^[k1_scmyciel(6^[])], 6^[]]=4^[2^[k1_scmyciel(6^[])], 6^[]]), 3^[2^[k1_scmyciel(6^[])], 6^[]]=5^[k3_tarski(6^[])], 5^[k3_tarski(6^[])]=4^[2^[k1_scmyciel(6^[])], 6^[]]]   (24)  substitution:[[_G3108, _G3221, _G3164], [3^[2^[k1_scmyciel(6^[])], 6^[]], 4^[2^[k1_scmyciel(6^[])], 6^[]], 5^[k3_tarski(6^[])]]]
+1.2.1  [- (3^[2^[k1_scmyciel(6^[])], 6^[]]=5^[k3_tarski(6^[])]), k3_tarski(6^[])=k1_tarski(5^[k3_tarski(6^[])]), r2_hidden(3^[2^[k1_scmyciel(6^[])], 6^[]], k3_tarski(6^[]))]   (3)  substitution:[[_G6758, _G6570, _G6628], [3^[2^[k1_scmyciel(6^[])], 6^[]], 5^[k3_tarski(6^[])], k3_tarski(6^[])]]
+1.2.1.1  [- (k3_tarski(6^[])=k1_tarski(5^[k3_tarski(6^[])])), k1_card_1(k3_tarski(6^[]))=np__1]   (15)  substitution:[[_G8218], [k3_tarski(6^[])]]
+1.2.1.1.1  [- (k1_card_1(k3_tarski(6^[]))=np__1)]   (1)  
+1.2.1.2  [-r2_hidden(3^[2^[k1_scmyciel(6^[])], 6^[]], k3_tarski(6^[])), r2_hidden(2^[k1_scmyciel(6^[])], k1_scmyciel(6^[]))]   (12)  substitution:[[_G7453, _G7365], [2^[k1_scmyciel(6^[])], 6^[]]]
+1.2.1.2.1  [-r2_hidden(2^[k1_scmyciel(6^[])], k1_scmyciel(6^[]))]   (lemmata:1)  
+1.2.2  [- (5^[k3_tarski(6^[])]=4^[2^[k1_scmyciel(6^[])], 6^[]]), 4^[2^[k1_scmyciel(6^[])], 6^[]]=5^[k3_tarski(6^[])]]   (23)  substitution:[[_G2920, _G2875], [5^[k3_tarski(6^[])], 4^[2^[k1_scmyciel(6^[])], 6^[]]]]
+1.2.2.1  [- (4^[2^[k1_scmyciel(6^[])], 6^[]]=5^[k3_tarski(6^[])]), k3_tarski(6^[])=k1_tarski(5^[k3_tarski(6^[])]), r2_hidden(4^[2^[k1_scmyciel(6^[])], 6^[]], k3_tarski(6^[]))]   (3)  substitution:[[_G6758, _G6570, _G6628], [4^[2^[k1_scmyciel(6^[])], 6^[]], 5^[k3_tarski(6^[])], k3_tarski(6^[])]]
+1.2.2.1.1  [- (k3_tarski(6^[])=k1_tarski(5^[k3_tarski(6^[])])), k1_card_1(k3_tarski(6^[]))=np__1]   (15)  substitution:[[_G8218], [k3_tarski(6^[])]]
+1.2.2.1.1.1  [- (k1_card_1(k3_tarski(6^[]))=np__1)]   (1)  
+1.2.2.1.2  [-r2_hidden(4^[2^[k1_scmyciel(6^[])], 6^[]], k3_tarski(6^[])), r2_hidden(2^[k1_scmyciel(6^[])], k1_scmyciel(6^[]))]   (13)  substitution:[[_G7453, _G7365], [2^[k1_scmyciel(6^[])], 6^[]]]
+1.2.2.1.2.1  [-r2_hidden(2^[k1_scmyciel(6^[])], k1_scmyciel(6^[]))]   (lemmata:1)  
+------------------------------------------------------
+End of proof for t19_scmyciel

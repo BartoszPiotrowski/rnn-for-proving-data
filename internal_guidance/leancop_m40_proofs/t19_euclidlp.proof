@@ -1,0 +1,81 @@
+
+t19_euclidlp is a Theorem
+Start of proof for t19_euclidlp
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], k5_numbers)]
+ (2)  [-m2_finseq_2(2^[], k1_numbers, k1_euclid(1^[]))]
+ (3)  [-m2_finseq_2(3^[], k1_numbers, k1_euclid(1^[]))]
+ (4)  [-m2_finseq_2(4^[], k1_numbers, k1_euclid(1^[]))]
+ (5)  [-m2_finseq_2(5^[], k1_numbers, k1_euclid(1^[]))]
+ (6)  [-m2_finseq_2(6^[], k1_numbers, k1_euclid(1^[]))]
+ (7)  [-m2_finseq_2(7^[], k1_numbers, k1_euclid(1^[]))]
+ (8)  [k8_euclid(1^[], k7_euclid(1^[], k7_euclid(1^[], 2^[], 3^[]), 4^[]), k7_euclid(1^[], k7_euclid(1^[], 5^[], 6^[]), 7^[]))=k7_euclid(1^[], k7_euclid(1^[], k8_euclid(1^[], 2^[], 5^[]), k8_euclid(1^[], 3^[], 6^[])), k8_euclid(1^[], 4^[], 7^[]))]
+ (9)  [m1_subset_1(_G10050, k4_ordinal1), -v7_ordinal1(_G10050)]
+ (10)  [v7_ordinal1(_G10207), -m1_finseq_2(k1_euclid(_G10207), k1_numbers)]
+ (11)  [-m2_finseq_2(k7_euclid(_G10380, _G10452, _G10525), k1_numbers, k1_euclid(_G10380)), v7_ordinal1(_G10380), m1_subset_1(_G10452, k1_euclid(_G10380)), m1_subset_1(_G10525, k1_euclid(_G10380))]
+ (12)  [- (k5_numbers=k4_ordinal1)]
+ (13)  [m1_finseq_2(_G11170, _G11113), m2_finseq_2(_G11285, _G11113, _G11170), -m1_subset_1(_G11285, _G11170)]
+ (14)  [m1_finseq_2(_G11170, _G11113), -m2_finseq_2(_G11285, _G11113, _G11170), m1_subset_1(_G11285, _G11170)]
+ (15)  [m1_subset_1(_G11552, k5_numbers), m2_finseq_2(_G11729, k1_numbers, k1_euclid(_G11552)), m2_finseq_2(_G11958, k1_numbers, k1_euclid(_G11552)), m2_finseq_2(_G12179, k1_numbers, k1_euclid(_G11552)), m2_finseq_2(_G12392, k1_numbers, k1_euclid(_G11552)), - (k8_euclid(_G11552, k7_euclid(_G11552, _G11729, _G11958), k7_euclid(_G11552, _G12179, _G12392))=k7_euclid(_G11552, k8_euclid(_G11552, _G11729, _G12179), k8_euclid(_G11552, _G11958, _G12392)))]
+ (16)  [_G7662=_G7711, - (k1_euclid(_G7662)=k1_euclid(_G7711))]
+ (17)  [- (k7_euclid(_G7940, _G8111, _G8286)=k7_euclid(_G8025, _G8198, _G8375)), _G7940=_G8025, _G8111=_G8198, _G8286=_G8375]
+ (18)  [- (k8_euclid(_G8959, _G9130, _G9305)=k8_euclid(_G9044, _G9217, _G9394)), _G8959=_G9044, _G9130=_G9217, _G9305=_G9394]
+ (19)  [- (_G4305=_G4305)]
+ (20)  [_G4404=_G4449, - (_G4449=_G4404)]
+ (21)  [- (_G4637=_G4750), _G4637=_G4693, _G4693=_G4750]
+ (22)  [-v7_ordinal1(_G5136), _G5087=_G5136, v7_ordinal1(_G5087)]
+ (23)  [-m1_finseq_2(_G5432, _G5569), m1_finseq_2(_G5365, _G5500), _G5365=_G5432, _G5500=_G5569]
+ (24)  [-m1_subset_1(_G6029, _G6166), m1_subset_1(_G5962, _G6097), _G5962=_G6029, _G6097=_G6166]
+ (25)  [-m2_finseq_2(_G6635, _G6808, _G6985), m2_finseq_2(_G6550, _G6721, _G6896), _G6550=_G6635, _G6721=_G6808, _G6896=_G6985]
+
+Connection Proof:
+-----------------
+1  [k8_euclid(1^[], k7_euclid(1^[], k7_euclid(1^[], 2^[], 3^[]), 4^[]), k7_euclid(1^[], k7_euclid(1^[], 5^[], 6^[]), 7^[]))=k7_euclid(1^[], k7_euclid(1^[], k8_euclid(1^[], 2^[], 5^[]), k8_euclid(1^[], 3^[], 6^[])), k8_euclid(1^[], 4^[], 7^[]))]   (8)  
+1.1  [- (k8_euclid(1^[], k7_euclid(1^[], k7_euclid(1^[], 2^[], 3^[]), 4^[]), k7_euclid(1^[], k7_euclid(1^[], 5^[], 6^[]), 7^[]))=k7_euclid(1^[], k7_euclid(1^[], k8_euclid(1^[], 2^[], 5^[]), k8_euclid(1^[], 3^[], 6^[])), k8_euclid(1^[], 4^[], 7^[]))), k8_euclid(1^[], k7_euclid(1^[], k7_euclid(1^[], 2^[], 3^[]), 4^[]), k7_euclid(1^[], k7_euclid(1^[], 5^[], 6^[]), 7^[]))=k7_euclid(1^[], k8_euclid(1^[], k7_euclid(1^[], 2^[], 3^[]), k7_euclid(1^[], 5^[], 6^[])), k8_euclid(1^[], 4^[], 7^[])), k7_euclid(1^[], k8_euclid(1^[], k7_euclid(1^[], 2^[], 3^[]), k7_euclid(1^[], 5^[], 6^[])), k8_euclid(1^[], 4^[], 7^[]))=k7_euclid(1^[], k7_euclid(1^[], k8_euclid(1^[], 2^[], 5^[]), k8_euclid(1^[], 3^[], 6^[])), k8_euclid(1^[], 4^[], 7^[]))]   (21)  substitution:[[_G818, _G820, _G819], [k8_euclid(1^[], k7_euclid(1^[], k7_euclid(1^[], 2^[], 3^[]), 4^[]), k7_euclid(1^[], k7_euclid(1^[], 5^[], 6^[]), 7^[])), k7_euclid(1^[], k7_euclid(1^[], k8_euclid(1^[], 2^[], 5^[]), k8_euclid(1^[], 3^[], 6^[])), k8_euclid(1^[], 4^[], 7^[])), k7_euclid(1^[], k8_euclid(1^[], k7_euclid(1^[], 2^[], 3^[]), k7_euclid(1^[], 5^[], 6^[])), k8_euclid(1^[], 4^[], 7^[]))]]
+1.1.1  [- (k8_euclid(1^[], k7_euclid(1^[], k7_euclid(1^[], 2^[], 3^[]), 4^[]), k7_euclid(1^[], k7_euclid(1^[], 5^[], 6^[]), 7^[]))=k7_euclid(1^[], k8_euclid(1^[], k7_euclid(1^[], 2^[], 3^[]), k7_euclid(1^[], 5^[], 6^[])), k8_euclid(1^[], 4^[], 7^[]))), m1_subset_1(1^[], k5_numbers), m2_finseq_2(k7_euclid(1^[], 2^[], 3^[]), k1_numbers, k1_euclid(1^[])), m2_finseq_2(4^[], k1_numbers, k1_euclid(1^[])), m2_finseq_2(k7_euclid(1^[], 5^[], 6^[]), k1_numbers, k1_euclid(1^[])), m2_finseq_2(7^[], k1_numbers, k1_euclid(1^[]))]   (15)  substitution:[[_G1013, _G1017, _G1024, _G1031, _G1038], [1^[], k7_euclid(1^[], 2^[], 3^[]), 4^[], k7_euclid(1^[], 5^[], 6^[]), 7^[]]]
+1.1.1.1  [-m1_subset_1(1^[], k5_numbers)]   (1)  
+1.1.1.2  [-m2_finseq_2(k7_euclid(1^[], 2^[], 3^[]), k1_numbers, k1_euclid(1^[])), v7_ordinal1(1^[]), m1_subset_1(2^[], k1_euclid(1^[])), m1_subset_1(3^[], k1_euclid(1^[]))]   (11)  substitution:[[_G972, _G973, _G974], [1^[], 2^[], 3^[]]]
+1.1.1.2.1  [-v7_ordinal1(1^[]), m1_subset_1(1^[], k4_ordinal1)]   (9)  substitution:[[_G958], [1^[]]]
+1.1.1.2.1.1  [-m1_subset_1(1^[], k4_ordinal1), m1_subset_1(1^[], k5_numbers), 1^[]=1^[], k5_numbers=k4_ordinal1]   (24)  substitution:[[_G856, _G858, _G855, _G857], [1^[], k4_ordinal1, 1^[], k5_numbers]]
+1.1.1.2.1.1.1  [-m1_subset_1(1^[], k5_numbers)]   (1)  
+1.1.1.2.1.1.2  [- (1^[]=1^[])]   (19)  substitution:[[_G806], [1^[]]]
+1.1.1.2.1.1.3  [- (k5_numbers=k4_ordinal1)]   (12)  
+1.1.1.2.2  [-m1_subset_1(2^[], k1_euclid(1^[])), m1_finseq_2(k1_euclid(1^[]), k1_numbers), m2_finseq_2(2^[], k1_numbers, k1_euclid(1^[]))]   (13)  substitution:[[_G1005, _G1001, _G1000], [2^[], k1_euclid(1^[]), k1_numbers]]
+1.1.1.2.2.1  [-m1_finseq_2(k1_euclid(1^[]), k1_numbers), v7_ordinal1(1^[])]   (10)  substitution:[[_G964], [1^[]]]
+1.1.1.2.2.1.1  [-v7_ordinal1(1^[])]   (lemmata:1.1.1.2)  
+1.1.1.2.2.2  [-m2_finseq_2(2^[], k1_numbers, k1_euclid(1^[]))]   (2)  
+1.1.1.2.3  [-m1_subset_1(3^[], k1_euclid(1^[])), m1_finseq_2(k1_euclid(1^[]), k1_numbers), m2_finseq_2(3^[], k1_numbers, k1_euclid(1^[]))]   (13)  substitution:[[_G1005, _G1001, _G1000], [3^[], k1_euclid(1^[]), k1_numbers]]
+1.1.1.2.3.1  [-m1_finseq_2(k1_euclid(1^[]), k1_numbers), v7_ordinal1(1^[])]   (10)  substitution:[[_G964], [1^[]]]
+1.1.1.2.3.1.1  [-v7_ordinal1(1^[])]   (lemmata:1.1.1.2)  
+1.1.1.2.3.2  [-m2_finseq_2(3^[], k1_numbers, k1_euclid(1^[]))]   (3)  
+1.1.1.3  [-m2_finseq_2(4^[], k1_numbers, k1_euclid(1^[]))]   (4)  
+1.1.1.4  [-m2_finseq_2(k7_euclid(1^[], 5^[], 6^[]), k1_numbers, k1_euclid(1^[])), v7_ordinal1(1^[]), m1_subset_1(5^[], k1_euclid(1^[])), m1_subset_1(6^[], k1_euclid(1^[]))]   (11)  substitution:[[_G972, _G973, _G974], [1^[], 5^[], 6^[]]]
+1.1.1.4.1  [-v7_ordinal1(1^[]), m1_subset_1(1^[], k4_ordinal1)]   (9)  substitution:[[_G958], [1^[]]]
+1.1.1.4.1.1  [-m1_subset_1(1^[], k4_ordinal1), m1_subset_1(1^[], k5_numbers), 1^[]=1^[], k5_numbers=k4_ordinal1]   (24)  substitution:[[_G856, _G858, _G855, _G857], [1^[], k4_ordinal1, 1^[], k5_numbers]]
+1.1.1.4.1.1.1  [-m1_subset_1(1^[], k5_numbers)]   (1)  
+1.1.1.4.1.1.2  [- (1^[]=1^[])]   (19)  substitution:[[_G806], [1^[]]]
+1.1.1.4.1.1.3  [- (k5_numbers=k4_ordinal1)]   (12)  
+1.1.1.4.2  [-m1_subset_1(5^[], k1_euclid(1^[])), m1_finseq_2(k1_euclid(1^[]), k1_numbers), m2_finseq_2(5^[], k1_numbers, k1_euclid(1^[]))]   (13)  substitution:[[_G1005, _G1001, _G1000], [5^[], k1_euclid(1^[]), k1_numbers]]
+1.1.1.4.2.1  [-m1_finseq_2(k1_euclid(1^[]), k1_numbers), v7_ordinal1(1^[])]   (10)  substitution:[[_G964], [1^[]]]
+1.1.1.4.2.1.1  [-v7_ordinal1(1^[])]   (lemmata:1.1.1.4)  
+1.1.1.4.2.2  [-m2_finseq_2(5^[], k1_numbers, k1_euclid(1^[]))]   (5)  
+1.1.1.4.3  [-m1_subset_1(6^[], k1_euclid(1^[])), m1_finseq_2(k1_euclid(1^[]), k1_numbers), m2_finseq_2(6^[], k1_numbers, k1_euclid(1^[]))]   (13)  substitution:[[_G1005, _G1001, _G1000], [6^[], k1_euclid(1^[]), k1_numbers]]
+1.1.1.4.3.1  [-m1_finseq_2(k1_euclid(1^[]), k1_numbers), v7_ordinal1(1^[])]   (10)  substitution:[[_G964], [1^[]]]
+1.1.1.4.3.1.1  [-v7_ordinal1(1^[])]   (lemmata:1.1.1.4)  
+1.1.1.4.3.2  [-m2_finseq_2(6^[], k1_numbers, k1_euclid(1^[]))]   (6)  
+1.1.1.5  [-m2_finseq_2(7^[], k1_numbers, k1_euclid(1^[]))]   (7)  
+1.1.2  [- (k7_euclid(1^[], k8_euclid(1^[], k7_euclid(1^[], 2^[], 3^[]), k7_euclid(1^[], 5^[], 6^[])), k8_euclid(1^[], 4^[], 7^[]))=k7_euclid(1^[], k7_euclid(1^[], k8_euclid(1^[], 2^[], 5^[]), k8_euclid(1^[], 3^[], 6^[])), k8_euclid(1^[], 4^[], 7^[]))), 1^[]=1^[], k8_euclid(1^[], k7_euclid(1^[], 2^[], 3^[]), k7_euclid(1^[], 5^[], 6^[]))=k7_euclid(1^[], k8_euclid(1^[], 2^[], 5^[]), k8_euclid(1^[], 3^[], 6^[])), k8_euclid(1^[], 4^[], 7^[])=k8_euclid(1^[], 4^[], 7^[])]   (17)  substitution:[[_G906, _G908, _G910, _G907, _G909, _G911], [1^[], k8_euclid(1^[], k7_euclid(1^[], 2^[], 3^[]), k7_euclid(1^[], 5^[], 6^[])), k8_euclid(1^[], 4^[], 7^[]), 1^[], k7_euclid(1^[], k8_euclid(1^[], 2^[], 5^[]), k8_euclid(1^[], 3^[], 6^[])), k8_euclid(1^[], 4^[], 7^[])]]
+1.1.2.1  [- (1^[]=1^[])]   (19)  substitution:[[_G806], [1^[]]]
+1.1.2.2  [- (k8_euclid(1^[], k7_euclid(1^[], 2^[], 3^[]), k7_euclid(1^[], 5^[], 6^[]))=k7_euclid(1^[], k8_euclid(1^[], 2^[], 5^[]), k8_euclid(1^[], 3^[], 6^[]))), m1_subset_1(1^[], k5_numbers), m2_finseq_2(2^[], k1_numbers, k1_euclid(1^[])), m2_finseq_2(3^[], k1_numbers, k1_euclid(1^[])), m2_finseq_2(5^[], k1_numbers, k1_euclid(1^[])), m2_finseq_2(6^[], k1_numbers, k1_euclid(1^[]))]   (15)  substitution:[[_G1013, _G1017, _G1024, _G1031, _G1038], [1^[], 2^[], 3^[], 5^[], 6^[]]]
+1.1.2.2.1  [-m1_subset_1(1^[], k5_numbers)]   (1)  
+1.1.2.2.2  [-m2_finseq_2(2^[], k1_numbers, k1_euclid(1^[]))]   (2)  
+1.1.2.2.3  [-m2_finseq_2(3^[], k1_numbers, k1_euclid(1^[]))]   (3)  
+1.1.2.2.4  [-m2_finseq_2(5^[], k1_numbers, k1_euclid(1^[]))]   (5)  
+1.1.2.2.5  [-m2_finseq_2(6^[], k1_numbers, k1_euclid(1^[]))]   (6)  
+1.1.2.3  [- (k8_euclid(1^[], 4^[], 7^[])=k8_euclid(1^[], 4^[], 7^[])), 1^[]=1^[], 4^[]=4^[], 7^[]=7^[]]   (18)  substitution:[[_G932, _G934, _G936, _G933, _G935, _G937], [1^[], 4^[], 7^[], 1^[], 4^[], 7^[]]]
+1.1.2.3.1  [- (1^[]=1^[])]   (19)  substitution:[[_G806], [1^[]]]
+1.1.2.3.2  [- (4^[]=4^[])]   (19)  substitution:[[_G806], [4^[]]]
+1.1.2.3.3  [- (7^[]=7^[])]   (19)  substitution:[[_G806], [7^[]]]
+------------------------------------------------------
+End of proof for t19_euclidlp

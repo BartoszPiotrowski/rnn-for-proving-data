@@ -1,0 +1,33 @@
+
+t1_bagorder is a Theorem
+Start of proof for t1_bagorder
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-r2_hidden(3^[], 1^[])]
+ (2)  [-r2_hidden(3^[], 2^[])]
+ (3)  [- (k6_subset_1(1^[], k1_tarski(3^[]))=k6_subset_1(2^[], k1_tarski(3^[])))]
+ (4)  [1^[]=2^[]]
+ (5)  [r2_hidden(_G4496, _G4441), - (k2_xboole_0(k6_subset_1(_G4441, k1_tarski(_G4496)), k1_tarski(_G4496))=_G4441)]
+ (6)  [- (k2_xboole_0(_G2924, _G3059)=k2_xboole_0(_G2991, _G3128)), _G2924=_G2991, _G3059=_G3128]
+ (7)  [_G4109=_G4158, - (k1_tarski(_G4109)=k1_tarski(_G4158))]
+ (8)  [- (k6_subset_1(_G3521, _G3656)=k6_subset_1(_G3588, _G3725)), _G3521=_G3588, _G3656=_G3725]
+ (9)  [-r2_hidden(_G2373, _G2510), r2_hidden(_G2306, _G2441), _G2306=_G2373, _G2441=_G2510]
+ (10)  [- (_G1533=_G1533)]
+ (11)  [_G1632=_G1677, - (_G1677=_G1632)]
+ (12)  [- (_G1865=_G1978), _G1865=_G1921, _G1921=_G1978]
+
+Connection Proof:
+-----------------
+1  [1^[]=2^[]]   (4)  
+1.1  [- (1^[]=2^[]), 1^[]=k2_xboole_0(k6_subset_1(1^[], k1_tarski(3^[])), k1_tarski(3^[])), k2_xboole_0(k6_subset_1(1^[], k1_tarski(3^[])), k1_tarski(3^[]))=2^[]]   (12)  substitution:[[_G1865, _G1978, _G1921], [1^[], 2^[], k2_xboole_0(k6_subset_1(1^[], k1_tarski(3^[])), k1_tarski(3^[]))]]
+1.1.1  [- (1^[]=k2_xboole_0(k6_subset_1(1^[], k1_tarski(3^[])), k1_tarski(3^[]))), k2_xboole_0(k6_subset_1(1^[], k1_tarski(3^[])), k1_tarski(3^[]))=1^[]]   (11)  substitution:[[_G1677, _G1632], [1^[], k2_xboole_0(k6_subset_1(1^[], k1_tarski(3^[])), k1_tarski(3^[]))]]
+1.1.1.1  [- (k2_xboole_0(k6_subset_1(1^[], k1_tarski(3^[])), k1_tarski(3^[]))=1^[]), r2_hidden(3^[], 1^[])]   (5)  substitution:[[_G4441, _G4496], [1^[], 3^[]]]
+1.1.1.1.1  [-r2_hidden(3^[], 1^[])]   (1)  
+1.1.2  [- (k2_xboole_0(k6_subset_1(1^[], k1_tarski(3^[])), k1_tarski(3^[]))=2^[]), k2_xboole_0(k6_subset_1(1^[], k1_tarski(3^[])), k1_tarski(3^[]))=k2_xboole_0(k6_subset_1(2^[], k1_tarski(3^[])), k1_tarski(3^[])), k2_xboole_0(k6_subset_1(2^[], k1_tarski(3^[])), k1_tarski(3^[]))=2^[]]   (12)  substitution:[[_G1865, _G1978, _G1921], [k2_xboole_0(k6_subset_1(1^[], k1_tarski(3^[])), k1_tarski(3^[])), 2^[], k2_xboole_0(k6_subset_1(2^[], k1_tarski(3^[])), k1_tarski(3^[]))]]
+1.1.2.1  [- (k2_xboole_0(k6_subset_1(1^[], k1_tarski(3^[])), k1_tarski(3^[]))=k2_xboole_0(k6_subset_1(2^[], k1_tarski(3^[])), k1_tarski(3^[]))), k6_subset_1(1^[], k1_tarski(3^[]))=k6_subset_1(2^[], k1_tarski(3^[])), k1_tarski(3^[])=k1_tarski(3^[])]   (6)  substitution:[[_G2924, _G3059, _G2991, _G3128], [k6_subset_1(1^[], k1_tarski(3^[])), k1_tarski(3^[]), k6_subset_1(2^[], k1_tarski(3^[])), k1_tarski(3^[])]]
+1.1.2.1.1  [- (k6_subset_1(1^[], k1_tarski(3^[]))=k6_subset_1(2^[], k1_tarski(3^[])))]   (3)  
+1.1.2.1.2  [- (k1_tarski(3^[])=k1_tarski(3^[]))]   (10)  substitution:[[_G1533], [k1_tarski(3^[])]]
+1.1.2.2  [- (k2_xboole_0(k6_subset_1(2^[], k1_tarski(3^[])), k1_tarski(3^[]))=2^[]), r2_hidden(3^[], 2^[])]   (5)  substitution:[[_G4441, _G4496], [2^[], 3^[]]]
+1.1.2.2.1  [-r2_hidden(3^[], 2^[])]   (2)  
+------------------------------------------------------
+End of proof for t1_bagorder

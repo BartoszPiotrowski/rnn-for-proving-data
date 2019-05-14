@@ -1,0 +1,41 @@
+
+l48_borsuk_7 is a Theorem
+Start of proof for l48_borsuk_7
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [u1_struct_0(k1_pre_topc(k3_topmetr, k5_toprealb(c15__borsuk_7)))=c15__borsuk_7]
+ (2)  [m1_subset_1(_G5406, k1_zfmisc_1(k1_numbers)), - (k5_toprealb(_G5406)=_G5406)]
+ (3)  [-m1_subset_1(c15__borsuk_7, k1_zfmisc_1(k1_numbers))]
+ (4)  [-v2_pre_topc(k3_topmetr)]
+ (5)  [-l1_pre_topc(k3_topmetr)]
+ (6)  [- (u1_struct_0(k3_topmetr)=k1_numbers)]
+ (7)  [l1_pre_topc(_G5837), m1_subset_1(_G5928, k1_zfmisc_1(u1_struct_0(_G5837))), - (u1_struct_0(k1_pre_topc(_G5837, _G5928))=_G5928)]
+ (8)  [_G3900=_G3949, - (k1_zfmisc_1(_G3900)=k1_zfmisc_1(_G3949))]
+ (9)  [_G4178=_G4227, - (u1_struct_0(_G4178)=u1_struct_0(_G4227))]
+ (10)  [_G5044=_G5093, - (k5_toprealb(_G5044)=k5_toprealb(_G5093))]
+ (11)  [- (k1_pre_topc(_G4456, _G4591)=k1_pre_topc(_G4523, _G4660)), _G4456=_G4523, _G4591=_G4660]
+ (12)  [- (_G1911=_G1911)]
+ (13)  [_G2010=_G2055, - (_G2055=_G2010)]
+ (14)  [- (_G2243=_G2356), _G2243=_G2299, _G2299=_G2356]
+ (15)  [-v2_pre_topc(_G2742), _G2693=_G2742, v2_pre_topc(_G2693)]
+ (16)  [-l1_pre_topc(_G3020), _G2971=_G3020, l1_pre_topc(_G2971)]
+ (17)  [-m1_subset_1(_G3307, _G3444), m1_subset_1(_G3240, _G3375), _G3240=_G3307, _G3375=_G3444]
+
+Connection Proof:
+-----------------
+1  [u1_struct_0(k1_pre_topc(k3_topmetr, k5_toprealb(c15__borsuk_7)))=c15__borsuk_7]   (1)  
+1.1  [- (u1_struct_0(k1_pre_topc(k3_topmetr, k5_toprealb(c15__borsuk_7)))=c15__borsuk_7), u1_struct_0(k1_pre_topc(k3_topmetr, k5_toprealb(c15__borsuk_7)))=k5_toprealb(c15__borsuk_7), k5_toprealb(c15__borsuk_7)=c15__borsuk_7]   (14)  substitution:[[_G2243, _G2356, _G2299], [u1_struct_0(k1_pre_topc(k3_topmetr, k5_toprealb(c15__borsuk_7))), c15__borsuk_7, k5_toprealb(c15__borsuk_7)]]
+1.1.1  [- (u1_struct_0(k1_pre_topc(k3_topmetr, k5_toprealb(c15__borsuk_7)))=k5_toprealb(c15__borsuk_7)), l1_pre_topc(k3_topmetr), m1_subset_1(k5_toprealb(c15__borsuk_7), k1_zfmisc_1(u1_struct_0(k3_topmetr)))]   (7)  substitution:[[_G5837, _G5928], [k3_topmetr, k5_toprealb(c15__borsuk_7)]]
+1.1.1.1  [-l1_pre_topc(k3_topmetr)]   (5)  
+1.1.1.2  [-m1_subset_1(k5_toprealb(c15__borsuk_7), k1_zfmisc_1(u1_struct_0(k3_topmetr))), m1_subset_1(c15__borsuk_7, k1_zfmisc_1(k1_numbers)), c15__borsuk_7=k5_toprealb(c15__borsuk_7), k1_zfmisc_1(k1_numbers)=k1_zfmisc_1(u1_struct_0(k3_topmetr))]   (17)  substitution:[[_G3307, _G3444, _G3240, _G3375], [k5_toprealb(c15__borsuk_7), k1_zfmisc_1(u1_struct_0(k3_topmetr)), c15__borsuk_7, k1_zfmisc_1(k1_numbers)]]
+1.1.1.2.1  [-m1_subset_1(c15__borsuk_7, k1_zfmisc_1(k1_numbers))]   (3)  
+1.1.1.2.2  [- (c15__borsuk_7=k5_toprealb(c15__borsuk_7)), k5_toprealb(c15__borsuk_7)=c15__borsuk_7]   (13)  substitution:[[_G2055, _G2010], [c15__borsuk_7, k5_toprealb(c15__borsuk_7)]]
+1.1.1.2.2.1  [- (k5_toprealb(c15__borsuk_7)=c15__borsuk_7), m1_subset_1(c15__borsuk_7, k1_zfmisc_1(k1_numbers))]   (2)  substitution:[[_G5406], [c15__borsuk_7]]
+1.1.1.2.2.1.1  [-m1_subset_1(c15__borsuk_7, k1_zfmisc_1(k1_numbers))]   (3)  
+1.1.1.2.3  [- (k1_zfmisc_1(k1_numbers)=k1_zfmisc_1(u1_struct_0(k3_topmetr))), k1_numbers=u1_struct_0(k3_topmetr)]   (8)  substitution:[[_G3900, _G3949], [k1_numbers, u1_struct_0(k3_topmetr)]]
+1.1.1.2.3.1  [- (k1_numbers=u1_struct_0(k3_topmetr)), u1_struct_0(k3_topmetr)=k1_numbers]   (13)  substitution:[[_G2055, _G2010], [k1_numbers, u1_struct_0(k3_topmetr)]]
+1.1.1.2.3.1.1  [- (u1_struct_0(k3_topmetr)=k1_numbers)]   (6)  
+1.1.2  [- (k5_toprealb(c15__borsuk_7)=c15__borsuk_7), m1_subset_1(c15__borsuk_7, k1_zfmisc_1(k1_numbers))]   (2)  substitution:[[_G5406], [c15__borsuk_7]]
+1.1.2.1  [-m1_subset_1(c15__borsuk_7, k1_zfmisc_1(k1_numbers))]   (3)  
+------------------------------------------------------
+End of proof for l48_borsuk_7

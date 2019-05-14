@@ -1,0 +1,49 @@
+
+l8_collsp is a Theorem
+Start of proof for l8_collsp
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v2_struct_0(g1_collsp(c2__collsp, c3__collsp)), l1_collsp(g1_collsp(c2__collsp, c3__collsp))]
+ (2)  [l1_collsp(_G6867), v1_collsp(_G6867), - (_G6867=g1_collsp(u1_struct_0(_G6867), u1_collsp(_G6867)))]
+ (3)  [v1_xboole_0(c2__collsp)]
+ (4)  [-m1_collsp(c3__collsp, c2__collsp)]
+ (5)  [m1_collsp(_G7314, _G7259), -v1_collsp(g1_collsp(_G7259, _G7314))]
+ (6)  [m1_collsp(_G7314, _G7259), -l1_collsp(g1_collsp(_G7259, _G7314))]
+ (7)  [l1_collsp(_G7627), -l1_struct_0(_G7627)]
+ (8)  [-v1_xboole_0(u1_struct_0(_G7758)), v2_struct_0(_G7758), l1_struct_0(_G7758)]
+ (9)  [m1_collsp(_G8027, _G7954), g1_collsp(_G7954, _G8027)=g1_collsp(_G8158, _G8227), - (_G7954=_G8158)]
+ (10)  [m1_collsp(_G8027, _G7954), g1_collsp(_G7954, _G8027)=g1_collsp(_G8158, _G8227), - (_G8027=_G8227)]
+ (11)  [_G5660=_G5709, - (u1_collsp(_G5660)=u1_collsp(_G5709))]
+ (12)  [_G5938=_G5987, - (u1_struct_0(_G5938)=u1_struct_0(_G5987))]
+ (13)  [- (g1_collsp(_G6207, _G6342)=g1_collsp(_G6274, _G6411)), _G6207=_G6274, _G6342=_G6411]
+ (14)  [- (_G2774=_G2774)]
+ (15)  [_G2873=_G2918, - (_G2918=_G2873)]
+ (16)  [- (_G3106=_G3219), _G3106=_G3162, _G3162=_G3219]
+ (17)  [-v1_collsp(_G3605), _G3556=_G3605, v1_collsp(_G3556)]
+ (18)  [-l1_struct_0(_G3883), _G3834=_G3883, l1_struct_0(_G3834)]
+ (19)  [-v1_xboole_0(_G4161), _G4112=_G4161, v1_xboole_0(_G4112)]
+ (20)  [-m1_collsp(_G4457, _G4594), m1_collsp(_G4390, _G4525), _G4390=_G4457, _G4525=_G4594]
+ (21)  [-v2_struct_0(_G5036), _G4987=_G5036, v2_struct_0(_G4987)]
+ (22)  [-l1_collsp(_G5305), _G5256=_G5305, l1_collsp(_G5256)]
+
+Connection Proof:
+-----------------
+1  [v1_xboole_0(c2__collsp)]   (3)  
+1.1  [-v1_xboole_0(c2__collsp), u1_struct_0(g1_collsp(c2__collsp, c3__collsp))=c2__collsp, v1_xboole_0(u1_struct_0(g1_collsp(c2__collsp, c3__collsp)))]   (19)  substitution:[[_G4161, _G4112], [c2__collsp, u1_struct_0(g1_collsp(c2__collsp, c3__collsp))]]
+1.1.1  [- (u1_struct_0(g1_collsp(c2__collsp, c3__collsp))=c2__collsp), c2__collsp=u1_struct_0(g1_collsp(c2__collsp, c3__collsp))]   (15)  substitution:[[_G2918, _G2873], [u1_struct_0(g1_collsp(c2__collsp, c3__collsp)), c2__collsp]]
+1.1.1.1  [- (c2__collsp=u1_struct_0(g1_collsp(c2__collsp, c3__collsp))), m1_collsp(c3__collsp, c2__collsp), g1_collsp(c2__collsp, c3__collsp)=g1_collsp(u1_struct_0(g1_collsp(c2__collsp, c3__collsp)), u1_collsp(g1_collsp(c2__collsp, c3__collsp)))]   (9)  substitution:[[_G7954, _G8158, _G8027, _G8227], [c2__collsp, u1_struct_0(g1_collsp(c2__collsp, c3__collsp)), c3__collsp, u1_collsp(g1_collsp(c2__collsp, c3__collsp))]]
+1.1.1.1.1  [-m1_collsp(c3__collsp, c2__collsp)]   (4)  
+1.1.1.1.2  [- (g1_collsp(c2__collsp, c3__collsp)=g1_collsp(u1_struct_0(g1_collsp(c2__collsp, c3__collsp)), u1_collsp(g1_collsp(c2__collsp, c3__collsp)))), l1_collsp(g1_collsp(c2__collsp, c3__collsp)), v1_collsp(g1_collsp(c2__collsp, c3__collsp))]   (2)  substitution:[[_G6867], [g1_collsp(c2__collsp, c3__collsp)]]
+1.1.1.1.2.1  [-l1_collsp(g1_collsp(c2__collsp, c3__collsp)), m1_collsp(c3__collsp, c2__collsp)]   (6)  substitution:[[_G7259, _G7314], [c2__collsp, c3__collsp]]
+1.1.1.1.2.1.1  [-m1_collsp(c3__collsp, c2__collsp)]   (4)  
+1.1.1.1.2.2  [-v1_collsp(g1_collsp(c2__collsp, c3__collsp)), m1_collsp(c3__collsp, c2__collsp)]   (5)  substitution:[[_G7259, _G7314], [c2__collsp, c3__collsp]]
+1.1.1.1.2.2.1  [-m1_collsp(c3__collsp, c2__collsp)]   (4)  
+1.1.2  [-v1_xboole_0(u1_struct_0(g1_collsp(c2__collsp, c3__collsp))), v2_struct_0(g1_collsp(c2__collsp, c3__collsp)), l1_struct_0(g1_collsp(c2__collsp, c3__collsp))]   (8)  substitution:[[_G7758], [g1_collsp(c2__collsp, c3__collsp)]]
+1.1.2.1  [-v2_struct_0(g1_collsp(c2__collsp, c3__collsp)), l1_collsp(g1_collsp(c2__collsp, c3__collsp))]   (1)  
+1.1.2.1.1  [-l1_collsp(g1_collsp(c2__collsp, c3__collsp)), m1_collsp(c3__collsp, c2__collsp)]   (6)  substitution:[[_G7259, _G7314], [c2__collsp, c3__collsp]]
+1.1.2.1.1.1  [-m1_collsp(c3__collsp, c2__collsp)]   (4)  
+1.1.2.2  [-l1_struct_0(g1_collsp(c2__collsp, c3__collsp)), l1_collsp(g1_collsp(c2__collsp, c3__collsp))]   (7)  substitution:[[_G7627], [g1_collsp(c2__collsp, c3__collsp)]]
+1.1.2.2.1  [-l1_collsp(g1_collsp(c2__collsp, c3__collsp)), m1_collsp(c3__collsp, c2__collsp)]   (6)  substitution:[[_G7259, _G7314], [c2__collsp, c3__collsp]]
+1.1.2.2.1.1  [-m1_collsp(c3__collsp, c2__collsp)]   (4)  
+------------------------------------------------------
+End of proof for l8_collsp

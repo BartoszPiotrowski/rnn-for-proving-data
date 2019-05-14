@@ -1,0 +1,29 @@
+
+t52_relat_1 is a Theorem
+Start of proof for t52_relat_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(1^[])]
+ (2)  [k3_relat_1(k4_relat_1(k9_xtuple_0(1^[])), 1^[])=1^[]]
+ (3)  [v1_relat_1(_G4904), r1_tarski(k9_xtuple_0(_G4904), _G4847), - (k3_relat_1(k4_relat_1(_G4847), _G4904)=_G4904)]
+ (4)  [_G4524=_G4575, -r1_tarski(_G4524, _G4575)]
+ (5)  [_G4524=_G4575, -r1_tarski(_G4575, _G4524)]
+ (6)  [- (_G4524=_G4575), r1_tarski(_G4524, _G4575), r1_tarski(_G4575, _G4524)]
+ (7)  [- (k3_relat_1(_G3317, _G3452)=k3_relat_1(_G3384, _G3521)), _G3317=_G3384, _G3452=_G3521]
+ (8)  [_G3914=_G3963, - (k4_relat_1(_G3914)=k4_relat_1(_G3963))]
+ (9)  [_G4183=_G4232, - (k9_xtuple_0(_G4183)=k9_xtuple_0(_G4232))]
+ (10)  [- (_G1627=_G1627)]
+ (11)  [_G1726=_G1771, - (_G1771=_G1726)]
+ (12)  [- (_G1959=_G2072), _G1959=_G2015, _G2015=_G2072]
+ (13)  [-v1_relat_1(_G3046), _G2997=_G3046, v1_relat_1(_G2997)]
+ (14)  [-r1_tarski(_G2476, _G2613), r1_tarski(_G2409, _G2544), _G2409=_G2476, _G2544=_G2613]
+
+Connection Proof:
+-----------------
+1  [k3_relat_1(k4_relat_1(k9_xtuple_0(1^[])), 1^[])=1^[]]   (2)  
+1.1  [- (k3_relat_1(k4_relat_1(k9_xtuple_0(1^[])), 1^[])=1^[]), v1_relat_1(1^[]), r1_tarski(k9_xtuple_0(1^[]), k9_xtuple_0(1^[]))]   (3)  substitution:[[_G4847, _G4904], [k9_xtuple_0(1^[]), 1^[]]]
+1.1.1  [-v1_relat_1(1^[])]   (1)  
+1.1.2  [-r1_tarski(k9_xtuple_0(1^[]), k9_xtuple_0(1^[])), k9_xtuple_0(1^[])=k9_xtuple_0(1^[])]   (4)  substitution:[[_G4524, _G4575], [k9_xtuple_0(1^[]), k9_xtuple_0(1^[])]]
+1.1.2.1  [- (k9_xtuple_0(1^[])=k9_xtuple_0(1^[]))]   (10)  substitution:[[_G1627], [k9_xtuple_0(1^[])]]
+------------------------------------------------------
+End of proof for t52_relat_1

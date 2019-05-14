@@ -1,0 +1,72 @@
+
+t1_waybel10 is a Theorem
+Start of proof for t1_waybel10
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-6^[], r1_tarski(k2_relat_1(1^[]), 2^[])]
+ (2)  [-6^[], -r1_tarski(1^[], k2_relat_1(2^[]))]
+ (3)  [-5^[], r1_tarski(1^[], k2_relat_1(2^[]))]
+ (4)  [-5^[], -r1_tarski(k2_relat_1(1^[]), 2^[])]
+ (5)  [-4^[], r1_tarski(1^[], 2^[])]
+ (6)  [-4^[], -r1_tarski(k2_relat_1(1^[]), k2_relat_1(2^[]))]
+ (7)  [-3^[], r1_tarski(k2_relat_1(1^[]), k2_relat_1(2^[]))]
+ (8)  [-3^[], -r1_tarski(1^[], 2^[])]
+ (9)  [-v1_relat_1(1^[])]
+ (10)  [-v1_relat_1(2^[])]
+ (11)  [3^[], 4^[], 5^[], 6^[]]
+ (12)  [v1_relat_1(_G4095), -v1_relat_1(k2_relat_1(_G4095))]
+ (13)  [v1_relat_1(_G4242), - (k2_relat_1(k2_relat_1(_G4242))=_G4242)]
+ (14)  [v1_relat_1(_G4422), v1_relat_1(_G4513), r1_tarski(_G4422, _G4513), -r1_tarski(k2_relat_1(_G4422), k2_relat_1(_G4513))]
+ (15)  [_G3796=_G3845, - (k2_relat_1(_G3796)=k2_relat_1(_G3845))]
+ (16)  [- (_G2115=_G2115)]
+ (17)  [_G2214=_G2259, - (_G2259=_G2214)]
+ (18)  [- (_G2447=_G2560), _G2447=_G2503, _G2503=_G2560]
+ (19)  [-v1_relat_1(_G2946), _G2897=_G2946, v1_relat_1(_G2897)]
+ (20)  [-r1_tarski(_G3233, _G3370), r1_tarski(_G3166, _G3301), _G3166=_G3233, _G3301=_G3370]
+
+Connection Proof:
+-----------------
+1  [3^[], 4^[], 5^[], 6^[]]   (11)  
+1.1  [-3^[], r1_tarski(k2_relat_1(1^[]), k2_relat_1(2^[]))]   (7)  
+1.1.1  [-r1_tarski(k2_relat_1(1^[]), k2_relat_1(2^[])), v1_relat_1(1^[]), v1_relat_1(2^[]), r1_tarski(1^[], 2^[])]   (14)  substitution:[[_G4422, _G4513], [1^[], 2^[]]]
+1.1.1.1  [-v1_relat_1(1^[])]   (9)  
+1.1.1.2  [-v1_relat_1(2^[])]   (10)  
+1.1.1.3  [-r1_tarski(1^[], 2^[]), -3^[]]   (8)  
+1.1.1.3.1  [3^[]]   (reduction:1)  
+1.2  [-4^[], -r1_tarski(k2_relat_1(1^[]), k2_relat_1(2^[]))]   (6)  
+1.2.1  [r1_tarski(k2_relat_1(1^[]), k2_relat_1(2^[])), v1_relat_1(k2_relat_1(1^[])), v1_relat_1(k2_relat_1(2^[])), -r1_tarski(k2_relat_1(k2_relat_1(1^[])), k2_relat_1(k2_relat_1(2^[])))]   (14)  substitution:[[_G4422, _G4513], [k2_relat_1(1^[]), k2_relat_1(2^[])]]
+1.2.1.1  [-v1_relat_1(k2_relat_1(1^[])), v1_relat_1(1^[])]   (12)  substitution:[[_G4095], [1^[]]]
+1.2.1.1.1  [-v1_relat_1(1^[])]   (9)  
+1.2.1.2  [-v1_relat_1(k2_relat_1(2^[])), v1_relat_1(2^[])]   (12)  substitution:[[_G4095], [2^[]]]
+1.2.1.2.1  [-v1_relat_1(2^[])]   (10)  
+1.2.1.3  [r1_tarski(k2_relat_1(k2_relat_1(1^[])), k2_relat_1(k2_relat_1(2^[]))), -r1_tarski(1^[], 2^[]), k2_relat_1(k2_relat_1(1^[]))=1^[], k2_relat_1(k2_relat_1(2^[]))=2^[]]   (20)  substitution:[[_G3166, _G3301, _G3233, _G3370], [k2_relat_1(k2_relat_1(1^[])), k2_relat_1(k2_relat_1(2^[])), 1^[], 2^[]]]
+1.2.1.3.1  [r1_tarski(1^[], 2^[]), -4^[]]   (5)  
+1.2.1.3.1.1  [4^[]]   (reduction:1)  
+1.2.1.3.2  [- (k2_relat_1(k2_relat_1(1^[]))=1^[]), v1_relat_1(1^[])]   (13)  substitution:[[_G4242], [1^[]]]
+1.2.1.3.2.1  [-v1_relat_1(1^[])]   (9)  
+1.2.1.3.3  [- (k2_relat_1(k2_relat_1(2^[]))=2^[]), v1_relat_1(2^[])]   (13)  substitution:[[_G4242], [2^[]]]
+1.2.1.3.3.1  [-v1_relat_1(2^[])]   (10)  
+1.3  [-5^[], -r1_tarski(k2_relat_1(1^[]), 2^[])]   (4)  
+1.3.1  [r1_tarski(k2_relat_1(1^[]), 2^[]), v1_relat_1(k2_relat_1(1^[])), v1_relat_1(2^[]), -r1_tarski(k2_relat_1(k2_relat_1(1^[])), k2_relat_1(2^[]))]   (14)  substitution:[[_G4422, _G4513], [k2_relat_1(1^[]), 2^[]]]
+1.3.1.1  [-v1_relat_1(k2_relat_1(1^[])), v1_relat_1(1^[])]   (12)  substitution:[[_G4095], [1^[]]]
+1.3.1.1.1  [-v1_relat_1(1^[])]   (9)  
+1.3.1.2  [-v1_relat_1(2^[])]   (10)  
+1.3.1.3  [r1_tarski(k2_relat_1(k2_relat_1(1^[])), k2_relat_1(2^[])), -r1_tarski(1^[], k2_relat_1(2^[])), k2_relat_1(k2_relat_1(1^[]))=1^[], k2_relat_1(2^[])=k2_relat_1(2^[])]   (20)  substitution:[[_G3166, _G3301, _G3233, _G3370], [k2_relat_1(k2_relat_1(1^[])), k2_relat_1(2^[]), 1^[], k2_relat_1(2^[])]]
+1.3.1.3.1  [r1_tarski(1^[], k2_relat_1(2^[])), -5^[]]   (3)  
+1.3.1.3.1.1  [5^[]]   (reduction:1)  
+1.3.1.3.2  [- (k2_relat_1(k2_relat_1(1^[]))=1^[]), v1_relat_1(1^[])]   (13)  substitution:[[_G4242], [1^[]]]
+1.3.1.3.2.1  [-v1_relat_1(1^[])]   (9)  
+1.3.1.3.3  [- (k2_relat_1(2^[])=k2_relat_1(2^[]))]   (16)  substitution:[[_G2115], [k2_relat_1(2^[])]]
+1.4  [-6^[], -r1_tarski(1^[], k2_relat_1(2^[]))]   (2)  
+1.4.1  [r1_tarski(1^[], k2_relat_1(2^[])), v1_relat_1(1^[]), v1_relat_1(k2_relat_1(2^[])), -r1_tarski(k2_relat_1(1^[]), k2_relat_1(k2_relat_1(2^[])))]   (14)  substitution:[[_G4422, _G4513], [1^[], k2_relat_1(2^[])]]
+1.4.1.1  [-v1_relat_1(1^[])]   (9)  
+1.4.1.2  [-v1_relat_1(k2_relat_1(2^[])), v1_relat_1(2^[])]   (12)  substitution:[[_G4095], [2^[]]]
+1.4.1.2.1  [-v1_relat_1(2^[])]   (10)  
+1.4.1.3  [r1_tarski(k2_relat_1(1^[]), k2_relat_1(k2_relat_1(2^[]))), -r1_tarski(k2_relat_1(1^[]), 2^[]), k2_relat_1(1^[])=k2_relat_1(1^[]), k2_relat_1(k2_relat_1(2^[]))=2^[]]   (20)  substitution:[[_G3166, _G3301, _G3233, _G3370], [k2_relat_1(1^[]), k2_relat_1(k2_relat_1(2^[])), k2_relat_1(1^[]), 2^[]]]
+1.4.1.3.1  [r1_tarski(k2_relat_1(1^[]), 2^[]), -6^[]]   (1)  
+1.4.1.3.1.1  [6^[]]   (reduction:1)  
+1.4.1.3.2  [- (k2_relat_1(1^[])=k2_relat_1(1^[]))]   (16)  substitution:[[_G2115], [k2_relat_1(1^[])]]
+1.4.1.3.3  [- (k2_relat_1(k2_relat_1(2^[]))=2^[]), v1_relat_1(2^[])]   (13)  substitution:[[_G4242], [2^[]]]
+1.4.1.3.3.1  [-v1_relat_1(2^[])]   (10)  
+------------------------------------------------------
+End of proof for t1_waybel10

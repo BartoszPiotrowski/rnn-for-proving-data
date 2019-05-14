@@ -1,0 +1,64 @@
+
+t14_valued_2 is a Theorem
+Start of proof for t14_valued_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xcmplx_0(1^[])]
+ (2)  [-v1_xcmplx_0(2^[])]
+ (3)  [-v1_relat_1(3^[])]
+ (4)  [-v1_funct_1(3^[])]
+ (5)  [-v1_valued_0(3^[])]
+ (6)  [k7_valued_1(k13_valued_1(3^[], 1^[]), 2^[])=k13_valued_1(3^[], k6_xcmplx_0(1^[], 2^[]))]
+ (7)  [- (k13_valued_1(_G8257, _G8462)=k7_valued_1(_G8257, k4_xcmplx_0(_G8462))), v1_xcmplx_0(_G8462), v1_relat_1(_G8257), v1_funct_1(_G8257), v1_valued_0(_G8257)]
+ (8)  [v1_xcmplx_0(_G8754), -v1_xcmplx_0(k4_xcmplx_0(_G8754))]
+ (9)  [-v1_xcmplx_0(k6_xcmplx_0(_G8901, _G8952)), v1_xcmplx_0(_G8901), v1_xcmplx_0(_G8952)]
+ (10)  [v1_xcmplx_0(_G9921), v1_xcmplx_0(_G10012), - (k4_xcmplx_0(k6_xcmplx_0(_G9921, _G10012))=k2_xcmplx_0(k4_xcmplx_0(_G9921), _G10012))]
+ (11)  [v1_xcmplx_0(_G9197), v1_xcmplx_0(_G9310), - (k7_valued_1(k7_valued_1(_G9419, _G9197), _G9310)=k7_valued_1(_G9419, k2_xcmplx_0(_G9197, _G9310))), v1_relat_1(_G9419), v1_funct_1(_G9419), v1_valued_0(_G9419)]
+ (12)  [- (k2_xcmplx_0(_G5495, _G5630)=k2_xcmplx_0(_G5562, _G5699)), _G5495=_G5562, _G5630=_G5699]
+ (13)  [_G6092=_G6141, - (k4_xcmplx_0(_G6092)=k4_xcmplx_0(_G6141))]
+ (14)  [- (k7_valued_1(_G6370, _G6505)=k7_valued_1(_G6437, _G6574)), _G6370=_G6437, _G6505=_G6574]
+ (15)  [- (k13_valued_1(_G6967, _G7102)=k13_valued_1(_G7034, _G7171)), _G6967=_G7034, _G7102=_G7171]
+ (16)  [- (k6_xcmplx_0(_G7555, _G7690)=k6_xcmplx_0(_G7622, _G7759)), _G7555=_G7622, _G7690=_G7759]
+ (17)  [- (_G3526=_G3526)]
+ (18)  [_G3625=_G3670, - (_G3670=_G3625)]
+ (19)  [- (_G3858=_G3971), _G3858=_G3914, _G3914=_G3971]
+ (20)  [-v1_xcmplx_0(_G4357), _G4308=_G4357, v1_xcmplx_0(_G4308)]
+ (21)  [-v1_relat_1(_G4635), _G4586=_G4635, v1_relat_1(_G4586)]
+ (22)  [-v1_funct_1(_G4913), _G4864=_G4913, v1_funct_1(_G4864)]
+ (23)  [-v1_valued_0(_G5182), _G5133=_G5182, v1_valued_0(_G5133)]
+
+Connection Proof:
+-----------------
+1  [k7_valued_1(k13_valued_1(3^[], 1^[]), 2^[])=k13_valued_1(3^[], k6_xcmplx_0(1^[], 2^[]))]   (6)  
+1.1  [- (k7_valued_1(k13_valued_1(3^[], 1^[]), 2^[])=k13_valued_1(3^[], k6_xcmplx_0(1^[], 2^[]))), k7_valued_1(k13_valued_1(3^[], 1^[]), 2^[])=k7_valued_1(k7_valued_1(3^[], k4_xcmplx_0(1^[])), 2^[]), k7_valued_1(k7_valued_1(3^[], k4_xcmplx_0(1^[])), 2^[])=k13_valued_1(3^[], k6_xcmplx_0(1^[], 2^[]))]   (19)  substitution:[[_G3858, _G3971, _G3914], [k7_valued_1(k13_valued_1(3^[], 1^[]), 2^[]), k13_valued_1(3^[], k6_xcmplx_0(1^[], 2^[])), k7_valued_1(k7_valued_1(3^[], k4_xcmplx_0(1^[])), 2^[])]]
+1.1.1  [- (k7_valued_1(k13_valued_1(3^[], 1^[]), 2^[])=k7_valued_1(k7_valued_1(3^[], k4_xcmplx_0(1^[])), 2^[])), k13_valued_1(3^[], 1^[])=k7_valued_1(3^[], k4_xcmplx_0(1^[])), 2^[]=2^[]]   (14)  substitution:[[_G6370, _G6505, _G6437, _G6574], [k13_valued_1(3^[], 1^[]), 2^[], k7_valued_1(3^[], k4_xcmplx_0(1^[])), 2^[]]]
+1.1.1.1  [- (k13_valued_1(3^[], 1^[])=k7_valued_1(3^[], k4_xcmplx_0(1^[]))), v1_xcmplx_0(1^[]), v1_relat_1(3^[]), v1_funct_1(3^[]), v1_valued_0(3^[])]   (7)  substitution:[[_G8257, _G8462], [3^[], 1^[]]]
+1.1.1.1.1  [-v1_xcmplx_0(1^[])]   (1)  
+1.1.1.1.2  [-v1_relat_1(3^[])]   (3)  
+1.1.1.1.3  [-v1_funct_1(3^[])]   (4)  
+1.1.1.1.4  [-v1_valued_0(3^[])]   (5)  
+1.1.1.2  [- (2^[]=2^[])]   (17)  substitution:[[_G3526], [2^[]]]
+1.1.2  [- (k7_valued_1(k7_valued_1(3^[], k4_xcmplx_0(1^[])), 2^[])=k13_valued_1(3^[], k6_xcmplx_0(1^[], 2^[]))), k7_valued_1(k7_valued_1(3^[], k4_xcmplx_0(1^[])), 2^[])=k7_valued_1(3^[], k2_xcmplx_0(k4_xcmplx_0(1^[]), 2^[])), k7_valued_1(3^[], k2_xcmplx_0(k4_xcmplx_0(1^[]), 2^[]))=k13_valued_1(3^[], k6_xcmplx_0(1^[], 2^[]))]   (19)  substitution:[[_G3858, _G3971, _G3914], [k7_valued_1(k7_valued_1(3^[], k4_xcmplx_0(1^[])), 2^[]), k13_valued_1(3^[], k6_xcmplx_0(1^[], 2^[])), k7_valued_1(3^[], k2_xcmplx_0(k4_xcmplx_0(1^[]), 2^[]))]]
+1.1.2.1  [- (k7_valued_1(k7_valued_1(3^[], k4_xcmplx_0(1^[])), 2^[])=k7_valued_1(3^[], k2_xcmplx_0(k4_xcmplx_0(1^[]), 2^[]))), v1_xcmplx_0(k4_xcmplx_0(1^[])), v1_xcmplx_0(2^[]), v1_relat_1(3^[]), v1_funct_1(3^[]), v1_valued_0(3^[])]   (11)  substitution:[[_G9419, _G9197, _G9310], [3^[], k4_xcmplx_0(1^[]), 2^[]]]
+1.1.2.1.1  [-v1_xcmplx_0(k4_xcmplx_0(1^[])), v1_xcmplx_0(1^[])]   (8)  substitution:[[_G8754], [1^[]]]
+1.1.2.1.1.1  [-v1_xcmplx_0(1^[])]   (1)  
+1.1.2.1.2  [-v1_xcmplx_0(2^[])]   (2)  
+1.1.2.1.3  [-v1_relat_1(3^[])]   (3)  
+1.1.2.1.4  [-v1_funct_1(3^[])]   (4)  
+1.1.2.1.5  [-v1_valued_0(3^[])]   (5)  
+1.1.2.2  [- (k7_valued_1(3^[], k2_xcmplx_0(k4_xcmplx_0(1^[]), 2^[]))=k13_valued_1(3^[], k6_xcmplx_0(1^[], 2^[]))), k13_valued_1(3^[], k6_xcmplx_0(1^[], 2^[]))=k7_valued_1(3^[], k2_xcmplx_0(k4_xcmplx_0(1^[]), 2^[]))]   (18)  substitution:[[_G3670, _G3625], [k7_valued_1(3^[], k2_xcmplx_0(k4_xcmplx_0(1^[]), 2^[])), k13_valued_1(3^[], k6_xcmplx_0(1^[], 2^[]))]]
+1.1.2.2.1  [- (k13_valued_1(3^[], k6_xcmplx_0(1^[], 2^[]))=k7_valued_1(3^[], k2_xcmplx_0(k4_xcmplx_0(1^[]), 2^[]))), k13_valued_1(3^[], k6_xcmplx_0(1^[], 2^[]))=k7_valued_1(3^[], k4_xcmplx_0(k6_xcmplx_0(1^[], 2^[]))), k7_valued_1(3^[], k4_xcmplx_0(k6_xcmplx_0(1^[], 2^[])))=k7_valued_1(3^[], k2_xcmplx_0(k4_xcmplx_0(1^[]), 2^[]))]   (19)  substitution:[[_G3858, _G3971, _G3914], [k13_valued_1(3^[], k6_xcmplx_0(1^[], 2^[])), k7_valued_1(3^[], k2_xcmplx_0(k4_xcmplx_0(1^[]), 2^[])), k7_valued_1(3^[], k4_xcmplx_0(k6_xcmplx_0(1^[], 2^[])))]]
+1.1.2.2.1.1  [- (k13_valued_1(3^[], k6_xcmplx_0(1^[], 2^[]))=k7_valued_1(3^[], k4_xcmplx_0(k6_xcmplx_0(1^[], 2^[])))), v1_xcmplx_0(k6_xcmplx_0(1^[], 2^[])), v1_relat_1(3^[]), v1_funct_1(3^[]), v1_valued_0(3^[])]   (7)  substitution:[[_G8257, _G8462], [3^[], k6_xcmplx_0(1^[], 2^[])]]
+1.1.2.2.1.1.1  [-v1_xcmplx_0(k6_xcmplx_0(1^[], 2^[])), v1_xcmplx_0(1^[]), v1_xcmplx_0(2^[])]   (9)  substitution:[[_G8901, _G8952], [1^[], 2^[]]]
+1.1.2.2.1.1.1.1  [-v1_xcmplx_0(1^[])]   (1)  
+1.1.2.2.1.1.1.2  [-v1_xcmplx_0(2^[])]   (2)  
+1.1.2.2.1.1.2  [-v1_relat_1(3^[])]   (3)  
+1.1.2.2.1.1.3  [-v1_funct_1(3^[])]   (4)  
+1.1.2.2.1.1.4  [-v1_valued_0(3^[])]   (5)  
+1.1.2.2.1.2  [- (k7_valued_1(3^[], k4_xcmplx_0(k6_xcmplx_0(1^[], 2^[])))=k7_valued_1(3^[], k2_xcmplx_0(k4_xcmplx_0(1^[]), 2^[]))), 3^[]=3^[], k4_xcmplx_0(k6_xcmplx_0(1^[], 2^[]))=k2_xcmplx_0(k4_xcmplx_0(1^[]), 2^[])]   (14)  substitution:[[_G6370, _G6505, _G6437, _G6574], [3^[], k4_xcmplx_0(k6_xcmplx_0(1^[], 2^[])), 3^[], k2_xcmplx_0(k4_xcmplx_0(1^[]), 2^[])]]
+1.1.2.2.1.2.1  [- (3^[]=3^[])]   (17)  substitution:[[_G3526], [3^[]]]
+1.1.2.2.1.2.2  [- (k4_xcmplx_0(k6_xcmplx_0(1^[], 2^[]))=k2_xcmplx_0(k4_xcmplx_0(1^[]), 2^[])), v1_xcmplx_0(1^[]), v1_xcmplx_0(2^[])]   (10)  substitution:[[_G9921, _G10012], [1^[], 2^[]]]
+1.1.2.2.1.2.2.1  [-v1_xcmplx_0(1^[])]   (1)  
+1.1.2.2.1.2.2.2  [-v1_xcmplx_0(2^[])]   (2)  
+------------------------------------------------------
+End of proof for t14_valued_2

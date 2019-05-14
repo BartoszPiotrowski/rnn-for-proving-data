@@ -1,0 +1,51 @@
+
+t1_partfun3 is a Theorem
+Start of proof for t1_partfun3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(1^[])]
+ (2)  [-v1_funct_1(1^[])]
+ (3)  [-v2_funct_1(1^[])]
+ (4)  [-r1_tarski(2^[], k9_xtuple_0(k2_funct_1(1^[])))]
+ (5)  [k7_relat_1(1^[], k7_relat_1(k2_funct_1(1^[]), 2^[]))=2^[]]
+ (6)  [v1_funct_1(_G7240), v1_relat_1(_G7240), v2_funct_1(_G7240), - (k10_xtuple_0(_G7240)=k9_xtuple_0(k2_funct_1(_G7240)))]
+ (7)  [v1_funct_1(_G7240), v1_relat_1(_G7240), v2_funct_1(_G7240), - (k9_xtuple_0(_G7240)=k10_xtuple_0(k2_funct_1(_G7240)))]
+ (8)  [v1_funct_1(_G7756), v1_relat_1(_G7756), r1_tarski(_G7693, k10_xtuple_0(_G7756)), - (k7_relat_1(_G7756, k8_relat_1(_G7756, _G7693))=_G7693)]
+ (9)  [v1_funct_1(_G8222), v1_relat_1(_G8222), v2_funct_1(_G8222), - (k8_relat_1(_G8222, _G8160)=k7_relat_1(k2_funct_1(_G8222), _G8160))]
+ (10)  [_G5116=_G5165, - (k10_xtuple_0(_G5116)=k10_xtuple_0(_G5165))]
+ (11)  [- (k8_relat_1(_G5394, _G5529)=k8_relat_1(_G5461, _G5598)), _G5394=_G5461, _G5529=_G5598]
+ (12)  [_G5991=_G6040, - (k9_xtuple_0(_G5991)=k9_xtuple_0(_G6040))]
+ (13)  [_G6857=_G6906, - (k2_funct_1(_G6857)=k2_funct_1(_G6906))]
+ (14)  [- (k7_relat_1(_G6269, _G6404)=k7_relat_1(_G6336, _G6473)), _G6269=_G6336, _G6404=_G6473]
+ (15)  [- (_G2828=_G2828)]
+ (16)  [_G2927=_G2972, - (_G2972=_G2927)]
+ (17)  [- (_G3160=_G3273), _G3160=_G3216, _G3216=_G3273]
+ (18)  [-v1_relat_1(_G3659), _G3610=_G3659, v1_relat_1(_G3610)]
+ (19)  [-v1_funct_1(_G3937), _G3888=_G3937, v1_funct_1(_G3888)]
+ (20)  [-v2_funct_1(_G4215), _G4166=_G4215, v2_funct_1(_G4166)]
+ (21)  [-r1_tarski(_G4502, _G4639), r1_tarski(_G4435, _G4570), _G4435=_G4502, _G4570=_G4639]
+
+Connection Proof:
+-----------------
+1  [k7_relat_1(1^[], k7_relat_1(k2_funct_1(1^[]), 2^[]))=2^[]]   (5)  
+1.1  [- (k7_relat_1(1^[], k7_relat_1(k2_funct_1(1^[]), 2^[]))=2^[]), k7_relat_1(1^[], k7_relat_1(k2_funct_1(1^[]), 2^[]))=k7_relat_1(1^[], k8_relat_1(1^[], 2^[])), k7_relat_1(1^[], k8_relat_1(1^[], 2^[]))=2^[]]   (17)  substitution:[[_G3160, _G3273, _G3216], [k7_relat_1(1^[], k7_relat_1(k2_funct_1(1^[]), 2^[])), 2^[], k7_relat_1(1^[], k8_relat_1(1^[], 2^[]))]]
+1.1.1  [- (k7_relat_1(1^[], k7_relat_1(k2_funct_1(1^[]), 2^[]))=k7_relat_1(1^[], k8_relat_1(1^[], 2^[]))), 1^[]=1^[], k7_relat_1(k2_funct_1(1^[]), 2^[])=k8_relat_1(1^[], 2^[])]   (14)  substitution:[[_G6269, _G6404, _G6336, _G6473], [1^[], k7_relat_1(k2_funct_1(1^[]), 2^[]), 1^[], k8_relat_1(1^[], 2^[])]]
+1.1.1.1  [- (1^[]=1^[])]   (15)  substitution:[[_G2828], [1^[]]]
+1.1.1.2  [- (k7_relat_1(k2_funct_1(1^[]), 2^[])=k8_relat_1(1^[], 2^[])), k8_relat_1(1^[], 2^[])=k7_relat_1(k2_funct_1(1^[]), 2^[])]   (16)  substitution:[[_G2972, _G2927], [k7_relat_1(k2_funct_1(1^[]), 2^[]), k8_relat_1(1^[], 2^[])]]
+1.1.1.2.1  [- (k8_relat_1(1^[], 2^[])=k7_relat_1(k2_funct_1(1^[]), 2^[])), v1_funct_1(1^[]), v1_relat_1(1^[]), v2_funct_1(1^[])]   (9)  substitution:[[_G8222, _G8160], [1^[], 2^[]]]
+1.1.1.2.1.1  [-v1_funct_1(1^[])]   (2)  
+1.1.1.2.1.2  [-v1_relat_1(1^[])]   (1)  
+1.1.1.2.1.3  [-v2_funct_1(1^[])]   (3)  
+1.1.2  [- (k7_relat_1(1^[], k8_relat_1(1^[], 2^[]))=2^[]), v1_funct_1(1^[]), v1_relat_1(1^[]), r1_tarski(2^[], k10_xtuple_0(1^[]))]   (8)  substitution:[[_G7756, _G7693], [1^[], 2^[]]]
+1.1.2.1  [-v1_funct_1(1^[])]   (2)  
+1.1.2.2  [-v1_relat_1(1^[])]   (1)  
+1.1.2.3  [-r1_tarski(2^[], k10_xtuple_0(1^[])), r1_tarski(2^[], k9_xtuple_0(k2_funct_1(1^[]))), 2^[]=2^[], k9_xtuple_0(k2_funct_1(1^[]))=k10_xtuple_0(1^[])]   (21)  substitution:[[_G4502, _G4639, _G4435, _G4570], [2^[], k10_xtuple_0(1^[]), 2^[], k9_xtuple_0(k2_funct_1(1^[]))]]
+1.1.2.3.1  [-r1_tarski(2^[], k9_xtuple_0(k2_funct_1(1^[])))]   (4)  
+1.1.2.3.2  [- (2^[]=2^[])]   (15)  substitution:[[_G2828], [2^[]]]
+1.1.2.3.3  [- (k9_xtuple_0(k2_funct_1(1^[]))=k10_xtuple_0(1^[])), k10_xtuple_0(1^[])=k9_xtuple_0(k2_funct_1(1^[]))]   (16)  substitution:[[_G2972, _G2927], [k9_xtuple_0(k2_funct_1(1^[])), k10_xtuple_0(1^[])]]
+1.1.2.3.3.1  [- (k10_xtuple_0(1^[])=k9_xtuple_0(k2_funct_1(1^[]))), v1_funct_1(1^[]), v1_relat_1(1^[]), v2_funct_1(1^[])]   (6)  substitution:[[_G7240], [1^[]]]
+1.1.2.3.3.1.1  [-v1_funct_1(1^[])]   (2)  
+1.1.2.3.3.1.2  [-v1_relat_1(1^[])]   (1)  
+1.1.2.3.3.1.3  [-v2_funct_1(1^[])]   (3)  
+------------------------------------------------------
+End of proof for t1_partfun3

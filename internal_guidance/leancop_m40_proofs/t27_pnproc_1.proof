@@ -1,0 +1,51 @@
+
+t27_pnproc_1 is a Theorem
+Start of proof for t27_pnproc_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_funct_1(2^[])]
+ (2)  [-v1_funct_2(2^[], 1^[], k5_numbers)]
+ (3)  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(1^[], k5_numbers)))]
+ (4)  [-v1_funct_1(3^[])]
+ (5)  [-v1_funct_2(3^[], 1^[], k5_numbers)]
+ (6)  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], k5_numbers)))]
+ (7)  [r1_pnproc_1(1^[], k3_pnproc_1(1^[], k2_pnproc_1(1^[], 2^[], 3^[]), 2^[]), 3^[])]
+ (8)  [- (k2_pnproc_1(_G10161, _G10259, _G10358)=k2_pnproc_1(_G10161, _G10358, _G10259)), m1_subset_1(_G10259, k1_zfmisc_1(k2_zfmisc_1(_G10161, k5_numbers))), v1_funct_2(_G10259, _G10161, k5_numbers), v1_funct_1(_G10259), v1_funct_1(_G10358), v1_funct_2(_G10358, _G10161, k5_numbers), m1_subset_1(_G10358, k1_zfmisc_1(k2_zfmisc_1(_G10161, k5_numbers)))]
+ (9)  [m1_subset_1(_G11403, k1_zfmisc_1(k2_zfmisc_1(_G11304, k5_numbers))), v1_funct_2(_G11403, _G11304, k5_numbers), v1_funct_1(_G11403), -r1_pnproc_1(_G11304, k3_pnproc_1(_G11304, k2_pnproc_1(_G11304, _G11403, _G11787), _G11787), _G11403), v1_funct_1(_G11787), v1_funct_2(_G11787, _G11304, k5_numbers), m1_subset_1(_G11787, k1_zfmisc_1(k2_zfmisc_1(_G11304, k5_numbers)))]
+ (10)  [_G7155=_G7204, - (k1_zfmisc_1(_G7155)=k1_zfmisc_1(_G7204))]
+ (11)  [- (k2_zfmisc_1(_G7433, _G7568)=k2_zfmisc_1(_G7500, _G7637)), _G7433=_G7500, _G7568=_G7637]
+ (12)  [- (k3_pnproc_1(_G8030, _G8201, _G8376)=k3_pnproc_1(_G8115, _G8288, _G8465)), _G8030=_G8115, _G8201=_G8288, _G8376=_G8465]
+ (13)  [- (k2_pnproc_1(_G9049, _G9220, _G9395)=k2_pnproc_1(_G9134, _G9307, _G9484)), _G9049=_G9134, _G9220=_G9307, _G9395=_G9484]
+ (14)  [- (_G3367=_G3367)]
+ (15)  [_G3466=_G3511, - (_G3511=_G3466)]
+ (16)  [- (_G3699=_G3812), _G3699=_G3755, _G3755=_G3812]
+ (17)  [-v1_funct_1(_G4198), _G4149=_G4198, v1_funct_1(_G4149)]
+ (18)  [-v1_funct_2(_G4512, _G4685, _G4862), v1_funct_2(_G4427, _G4598, _G4773), _G4427=_G4512, _G4598=_G4685, _G4773=_G4862]
+ (19)  [-m1_subset_1(_G5522, _G5659), m1_subset_1(_G5455, _G5590), _G5455=_G5522, _G5590=_G5659]
+ (20)  [-r1_pnproc_1(_G6128, _G6301, _G6478), r1_pnproc_1(_G6043, _G6214, _G6389), _G6043=_G6128, _G6214=_G6301, _G6389=_G6478]
+
+Connection Proof:
+-----------------
+1  [r1_pnproc_1(1^[], k3_pnproc_1(1^[], k2_pnproc_1(1^[], 2^[], 3^[]), 2^[]), 3^[])]   (7)  
+1.1  [-r1_pnproc_1(1^[], k3_pnproc_1(1^[], k2_pnproc_1(1^[], 2^[], 3^[]), 2^[]), 3^[]), r1_pnproc_1(1^[], k3_pnproc_1(1^[], k2_pnproc_1(1^[], 3^[], 2^[]), 2^[]), 3^[]), 1^[]=1^[], k3_pnproc_1(1^[], k2_pnproc_1(1^[], 3^[], 2^[]), 2^[])=k3_pnproc_1(1^[], k2_pnproc_1(1^[], 2^[], 3^[]), 2^[]), 3^[]=3^[]]   (20)  substitution:[[_G6128, _G6301, _G6478, _G6043, _G6214, _G6389], [1^[], k3_pnproc_1(1^[], k2_pnproc_1(1^[], 2^[], 3^[]), 2^[]), 3^[], 1^[], k3_pnproc_1(1^[], k2_pnproc_1(1^[], 3^[], 2^[]), 2^[]), 3^[]]]
+1.1.1  [-r1_pnproc_1(1^[], k3_pnproc_1(1^[], k2_pnproc_1(1^[], 3^[], 2^[]), 2^[]), 3^[]), m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], k5_numbers))), v1_funct_2(3^[], 1^[], k5_numbers), v1_funct_1(3^[]), v1_funct_1(2^[]), v1_funct_2(2^[], 1^[], k5_numbers), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(1^[], k5_numbers)))]   (9)  substitution:[[_G11304, _G11403, _G11787], [1^[], 3^[], 2^[]]]
+1.1.1.1  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], k5_numbers)))]   (6)  
+1.1.1.2  [-v1_funct_2(3^[], 1^[], k5_numbers)]   (5)  
+1.1.1.3  [-v1_funct_1(3^[])]   (4)  
+1.1.1.4  [-v1_funct_1(2^[])]   (1)  
+1.1.1.5  [-v1_funct_2(2^[], 1^[], k5_numbers)]   (2)  
+1.1.1.6  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(1^[], k5_numbers)))]   (3)  
+1.1.2  [- (1^[]=1^[])]   (14)  substitution:[[_G3367], [1^[]]]
+1.1.3  [- (k3_pnproc_1(1^[], k2_pnproc_1(1^[], 3^[], 2^[]), 2^[])=k3_pnproc_1(1^[], k2_pnproc_1(1^[], 2^[], 3^[]), 2^[])), 1^[]=1^[], k2_pnproc_1(1^[], 3^[], 2^[])=k2_pnproc_1(1^[], 2^[], 3^[]), 2^[]=2^[]]   (12)  substitution:[[_G8030, _G8201, _G8376, _G8115, _G8288, _G8465], [1^[], k2_pnproc_1(1^[], 3^[], 2^[]), 2^[], 1^[], k2_pnproc_1(1^[], 2^[], 3^[]), 2^[]]]
+1.1.3.1  [- (1^[]=1^[])]   (14)  substitution:[[_G3367], [1^[]]]
+1.1.3.2  [- (k2_pnproc_1(1^[], 3^[], 2^[])=k2_pnproc_1(1^[], 2^[], 3^[])), m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], k5_numbers))), v1_funct_2(3^[], 1^[], k5_numbers), v1_funct_1(3^[]), v1_funct_1(2^[]), v1_funct_2(2^[], 1^[], k5_numbers), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(1^[], k5_numbers)))]   (8)  substitution:[[_G10161, _G10259, _G10358], [1^[], 3^[], 2^[]]]
+1.1.3.2.1  [-m1_subset_1(3^[], k1_zfmisc_1(k2_zfmisc_1(1^[], k5_numbers)))]   (6)  
+1.1.3.2.2  [-v1_funct_2(3^[], 1^[], k5_numbers)]   (5)  
+1.1.3.2.3  [-v1_funct_1(3^[])]   (4)  
+1.1.3.2.4  [-v1_funct_1(2^[])]   (1)  
+1.1.3.2.5  [-v1_funct_2(2^[], 1^[], k5_numbers)]   (2)  
+1.1.3.2.6  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(1^[], k5_numbers)))]   (3)  
+1.1.3.3  [- (2^[]=2^[])]   (14)  substitution:[[_G3367], [2^[]]]
+1.1.4  [- (3^[]=3^[])]   (14)  substitution:[[_G3367], [3^[]]]
+------------------------------------------------------
+End of proof for t27_pnproc_1

@@ -1,0 +1,62 @@
+
+t23_zf_lang is a Theorem
+Start of proof for t23_zf_lang
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_zf_lang(1^[])]
+ (2)  [-m2_finseq_1(1^[], k5_numbers)]
+ (3)  [v2_zf_lang(1^[]), k1_funct_1(1^[], np__1)=k6_numbers]
+ (4)  [v3_zf_lang(1^[]), k1_funct_1(1^[], np__1)=np__1]
+ (5)  [v4_zf_lang(1^[]), k1_funct_1(1^[], np__1)=np__2]
+ (6)  [v5_zf_lang(1^[]), k1_funct_1(1^[], np__1)=np__3]
+ (7)  [v6_zf_lang(1^[]), k1_funct_1(1^[], np__1)=np__4]
+ (8)  [m2_finseq_1(_G7859, k5_numbers), v1_zf_lang(_G7859), v2_zf_lang(_G7859), - (k1_funct_1(_G7859, np__1)=k6_numbers)]
+ (9)  [m2_finseq_1(_G8200, k5_numbers), v1_zf_lang(_G8200), v3_zf_lang(_G8200), - (k1_funct_1(_G8200, np__1)=np__1)]
+ (10)  [m2_finseq_1(_G8541, k5_numbers), v1_zf_lang(_G8541), v4_zf_lang(_G8541), - (k1_funct_1(_G8541, np__1)=np__2)]
+ (11)  [m2_finseq_1(_G8882, k5_numbers), v1_zf_lang(_G8882), v5_zf_lang(_G8882), - (k1_funct_1(_G8882, np__1)=np__3)]
+ (12)  [m2_finseq_1(_G9223, k5_numbers), v1_zf_lang(_G9223), v6_zf_lang(_G9223), - (k1_funct_1(_G9223, np__1)=np__4)]
+ (13)  [m2_finseq_1(_G9555, k5_numbers), v1_zf_lang(_G9555), -v2_zf_lang(_G9555), -v3_zf_lang(_G9555), -v4_zf_lang(_G9555), -v5_zf_lang(_G9555), -v6_zf_lang(_G9555)]
+ (14)  [- (k1_funct_1(_G7241, _G7376)=k1_funct_1(_G7308, _G7445)), _G7241=_G7308, _G7376=_G7445]
+ (15)  [- (_G4065=_G4065)]
+ (16)  [_G4164=_G4209, - (_G4209=_G4164)]
+ (17)  [- (_G4397=_G4510), _G4397=_G4453, _G4453=_G4510]
+ (18)  [-v1_zf_lang(_G4896), _G4847=_G4896, v1_zf_lang(_G4847)]
+ (19)  [-m2_finseq_1(_G5192, _G5329), m2_finseq_1(_G5125, _G5260), _G5125=_G5192, _G5260=_G5329]
+ (20)  [-v2_zf_lang(_G5771), _G5722=_G5771, v2_zf_lang(_G5722)]
+ (21)  [-v3_zf_lang(_G6049), _G6000=_G6049, v3_zf_lang(_G6000)]
+ (22)  [-v4_zf_lang(_G6327), _G6278=_G6327, v4_zf_lang(_G6278)]
+ (23)  [-v5_zf_lang(_G6605), _G6556=_G6605, v5_zf_lang(_G6556)]
+ (24)  [-v6_zf_lang(_G6874), _G6825=_G6874, v6_zf_lang(_G6825)]
+
+Connection Proof:
+-----------------
+1  [v2_zf_lang(1^[]), k1_funct_1(1^[], np__1)=k6_numbers]   (3)  
+1.1  [-v2_zf_lang(1^[]), m2_finseq_1(1^[], k5_numbers), v1_zf_lang(1^[]), -v3_zf_lang(1^[]), -v4_zf_lang(1^[]), -v5_zf_lang(1^[]), -v6_zf_lang(1^[])]   (13)  substitution:[[_G9555], [1^[]]]
+1.1.1  [-m2_finseq_1(1^[], k5_numbers)]   (2)  
+1.1.2  [-v1_zf_lang(1^[])]   (1)  
+1.1.3  [v3_zf_lang(1^[]), m2_finseq_1(1^[], k5_numbers), v1_zf_lang(1^[]), - (k1_funct_1(1^[], np__1)=np__1)]   (9)  substitution:[[_G8200], [1^[]]]
+1.1.3.1  [-m2_finseq_1(1^[], k5_numbers)]   (2)  
+1.1.3.2  [-v1_zf_lang(1^[])]   (1)  
+1.1.3.3  [k1_funct_1(1^[], np__1)=np__1, v3_zf_lang(1^[])]   (4)  
+1.1.3.3.1  [-v3_zf_lang(1^[])]   (reduction:1.1)  
+1.1.4  [v4_zf_lang(1^[]), m2_finseq_1(1^[], k5_numbers), v1_zf_lang(1^[]), - (k1_funct_1(1^[], np__1)=np__2)]   (10)  substitution:[[_G8541], [1^[]]]
+1.1.4.1  [-m2_finseq_1(1^[], k5_numbers)]   (2)  
+1.1.4.2  [-v1_zf_lang(1^[])]   (1)  
+1.1.4.3  [k1_funct_1(1^[], np__1)=np__2, v4_zf_lang(1^[])]   (5)  
+1.1.4.3.1  [-v4_zf_lang(1^[])]   (reduction:1.1)  
+1.1.5  [v5_zf_lang(1^[]), m2_finseq_1(1^[], k5_numbers), v1_zf_lang(1^[]), - (k1_funct_1(1^[], np__1)=np__3)]   (11)  substitution:[[_G8882], [1^[]]]
+1.1.5.1  [-m2_finseq_1(1^[], k5_numbers)]   (2)  
+1.1.5.2  [-v1_zf_lang(1^[])]   (1)  
+1.1.5.3  [k1_funct_1(1^[], np__1)=np__3, v5_zf_lang(1^[])]   (6)  
+1.1.5.3.1  [-v5_zf_lang(1^[])]   (reduction:1.1)  
+1.1.6  [v6_zf_lang(1^[]), m2_finseq_1(1^[], k5_numbers), v1_zf_lang(1^[]), - (k1_funct_1(1^[], np__1)=np__4)]   (12)  substitution:[[_G9223], [1^[]]]
+1.1.6.1  [-m2_finseq_1(1^[], k5_numbers)]   (2)  
+1.1.6.2  [-v1_zf_lang(1^[])]   (1)  
+1.1.6.3  [k1_funct_1(1^[], np__1)=np__4, v6_zf_lang(1^[])]   (7)  
+1.1.6.3.1  [-v6_zf_lang(1^[])]   (reduction:1.1)  
+1.2  [- (k1_funct_1(1^[], np__1)=k6_numbers), m2_finseq_1(1^[], k5_numbers), v1_zf_lang(1^[]), v2_zf_lang(1^[])]   (8)  substitution:[[_G7859], [1^[]]]
+1.2.1  [-m2_finseq_1(1^[], k5_numbers)]   (2)  
+1.2.2  [-v1_zf_lang(1^[])]   (1)  
+1.2.3  [-v2_zf_lang(1^[])]   (lemmata:1)  
+------------------------------------------------------
+End of proof for t23_zf_lang

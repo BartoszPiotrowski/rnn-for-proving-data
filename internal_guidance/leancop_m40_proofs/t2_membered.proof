@@ -1,0 +1,27 @@
+
+t2_membered is a Theorem
+Start of proof for t2_membered
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v2_membered(3^[])]
+ (2)  [r1_tarski(3^[], k7_numbers)]
+ (3)  [v1_xxreal_0(_G806), -r2_hidden(_G806, k7_numbers)]
+ (4)  [-v1_xxreal_0(_G806), r2_hidden(_G806, k7_numbers)]
+ (5)  [-v2_membered(_G963), -r2_hidden(1^[_G963], _G963)]
+ (6)  [-v2_membered(_G963), v1_xxreal_0(1^[_G963])]
+ (7)  [v2_membered(_G963), r2_hidden(_G1044, _G963), -v1_xxreal_0(_G1044)]
+ (8)  [-r1_tarski(_G1227, _G1283), -r2_hidden(2^[_G1283, _G1227], _G1227)]
+ (9)  [-r1_tarski(_G1227, _G1283), r2_hidden(2^[_G1283, _G1227], _G1283)]
+ (10)  [r1_tarski(_G1227, _G1283), r2_hidden(_G1397, _G1227), -r2_hidden(_G1397, _G1283)]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(3^[], k7_numbers)]   (2)  
+1.1  [-r1_tarski(3^[], k7_numbers), -r2_hidden(2^[k7_numbers, 3^[]], 3^[])]   (8)  substitution:[[_G1227, _G1283], [3^[], k7_numbers]]
+1.1.1  [r2_hidden(2^[k7_numbers, 3^[]], 3^[]), v2_membered(3^[]), -v1_xxreal_0(2^[k7_numbers, 3^[]])]   (7)  substitution:[[_G1044, _G963], [2^[k7_numbers, 3^[]], 3^[]]]
+1.1.1.1  [-v2_membered(3^[])]   (1)  
+1.1.1.2  [v1_xxreal_0(2^[k7_numbers, 3^[]]), -r2_hidden(2^[k7_numbers, 3^[]], k7_numbers)]   (3)  substitution:[[_G806], [2^[k7_numbers, 3^[]]]]
+1.1.1.2.1  [r2_hidden(2^[k7_numbers, 3^[]], k7_numbers), -r1_tarski(3^[], k7_numbers)]   (9)  substitution:[[_G1283, _G1227], [k7_numbers, 3^[]]]
+1.1.1.2.1.1  [r1_tarski(3^[], k7_numbers)]   (2)  
+------------------------------------------------------
+End of proof for t2_membered

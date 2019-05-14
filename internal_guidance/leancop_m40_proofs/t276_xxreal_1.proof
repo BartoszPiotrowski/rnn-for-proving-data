@@ -1,0 +1,30 @@
+
+t276_xxreal_1 is a Theorem
+Start of proof for t276_xxreal_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xxreal_0(1^[])]
+ (2)  [-v1_xxreal_0(2^[])]
+ (3)  [-v1_xxreal_0(3^[])]
+ (4)  [-v1_xxreal_0(4^[])]
+ (5)  [-r1_xxreal_0(1^[], 2^[])]
+ (6)  [r1_xboole_0(k4_xxreal_1(3^[], 1^[]), k3_xxreal_1(2^[], 4^[]))]
+ (7)  [v1_xxreal_0(_G1100), v1_xxreal_0(_G1187), -r1_tarski(k4_xxreal_1(_G1100, _G1187), k3_xxreal_1(_G1100, _G1187))]
+ (8)  [-r1_xboole_0(_G1463, _G1576), r1_tarski(_G1463, _G1519), r1_xboole_0(_G1519, _G1576)]
+ (9)  [v1_xxreal_0(_G1862), v1_xxreal_0(_G1975), v1_xxreal_0(_G2084), v1_xxreal_0(_G2189), r1_xxreal_0(_G1862, _G1975), -r1_xboole_0(k3_xxreal_1(_G2084, _G1862), k3_xxreal_1(_G1975, _G2189))]
+
+Connection Proof:
+-----------------
+1  [r1_xboole_0(k4_xxreal_1(3^[], 1^[]), k3_xxreal_1(2^[], 4^[]))]   (6)  
+1.1  [-r1_xboole_0(k4_xxreal_1(3^[], 1^[]), k3_xxreal_1(2^[], 4^[])), r1_tarski(k4_xxreal_1(3^[], 1^[]), k3_xxreal_1(3^[], 1^[])), r1_xboole_0(k3_xxreal_1(3^[], 1^[]), k3_xxreal_1(2^[], 4^[]))]   (8)  substitution:[[_G1463, _G1576, _G1519], [k4_xxreal_1(3^[], 1^[]), k3_xxreal_1(2^[], 4^[]), k3_xxreal_1(3^[], 1^[])]]
+1.1.1  [-r1_tarski(k4_xxreal_1(3^[], 1^[]), k3_xxreal_1(3^[], 1^[])), v1_xxreal_0(3^[]), v1_xxreal_0(1^[])]   (7)  substitution:[[_G1100, _G1187], [3^[], 1^[]]]
+1.1.1.1  [-v1_xxreal_0(3^[])]   (3)  
+1.1.1.2  [-v1_xxreal_0(1^[])]   (1)  
+1.1.2  [-r1_xboole_0(k3_xxreal_1(3^[], 1^[]), k3_xxreal_1(2^[], 4^[])), v1_xxreal_0(1^[]), v1_xxreal_0(2^[]), v1_xxreal_0(3^[]), v1_xxreal_0(4^[]), r1_xxreal_0(1^[], 2^[])]   (9)  substitution:[[_G2084, _G1862, _G1975, _G2189], [3^[], 1^[], 2^[], 4^[]]]
+1.1.2.1  [-v1_xxreal_0(1^[])]   (1)  
+1.1.2.2  [-v1_xxreal_0(2^[])]   (2)  
+1.1.2.3  [-v1_xxreal_0(3^[])]   (3)  
+1.1.2.4  [-v1_xxreal_0(4^[])]   (4)  
+1.1.2.5  [-r1_xxreal_0(1^[], 2^[])]   (5)  
+------------------------------------------------------
+End of proof for t276_xxreal_1

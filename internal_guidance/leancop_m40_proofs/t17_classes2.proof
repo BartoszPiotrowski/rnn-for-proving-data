@@ -1,0 +1,23 @@
+
+t17_classes2 is a Theorem
+Start of proof for t17_classes2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_card_1(1^[])]
+ (2)  [-v2_classes1(2^[])]
+ (3)  [-r2_hidden(1^[], 2^[])]
+ (4)  [r1_tarski(1^[], 2^[])]
+ (5)  [v1_card_1(_G782), -v3_ordinal1(_G782)]
+ (6)  [v3_ordinal1(_G904), -r2_hidden(k1_ordinal1(_G904), _G999), v2_classes1(_G999), r2_hidden(_G904, _G999)]
+ (7)  [v3_ordinal1(_G904), -r1_tarski(_G904, _G999), v2_classes1(_G999), r2_hidden(_G904, _G999)]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(1^[], 2^[])]   (4)  
+1.1  [-r1_tarski(1^[], 2^[]), v3_ordinal1(1^[]), v2_classes1(2^[]), r2_hidden(1^[], 2^[])]   (7)  substitution:[[_G904, _G999], [1^[], 2^[]]]
+1.1.1  [-v3_ordinal1(1^[]), v1_card_1(1^[])]   (5)  substitution:[[_G782], [1^[]]]
+1.1.1.1  [-v1_card_1(1^[])]   (1)  
+1.1.2  [-v2_classes1(2^[])]   (2)  
+1.1.3  [-r2_hidden(1^[], 2^[])]   (3)  
+------------------------------------------------------
+End of proof for t17_classes2

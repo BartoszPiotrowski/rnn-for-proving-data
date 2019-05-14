@@ -1,0 +1,26 @@
+
+t44_zfmisc_1 is a Theorem
+Start of proof for t44_zfmisc_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [- (k2_xboole_0(k2_tarski(1^[], 2^[]), 3^[])=k1_xboole_0)]
+ (2)  [- (k2_tarski(_G4210, _G4259)=k2_xboole_0(k1_tarski(_G4210), k1_tarski(_G4259)))]
+ (3)  [k2_xboole_0(k1_tarski(_G4479), _G4525)=k1_xboole_0]
+ (4)  [k2_xboole_0(_G3923, _G3971)=k1_xboole_0, - (_G3923=k1_xboole_0)]
+ (5)  [- (_G1615=_G1615)]
+ (6)  [_G1714=_G1759, - (_G1759=_G1714)]
+ (7)  [- (_G1947=_G2060), _G1947=_G2003, _G2003=_G2060]
+ (8)  [_G2397=_G2446, - (k1_tarski(_G2397)=k1_tarski(_G2446))]
+ (9)  [- (k2_xboole_0(_G2675, _G2810)=k2_xboole_0(_G2742, _G2879)), _G2675=_G2742, _G2810=_G2879]
+ (10)  [- (k2_tarski(_G3263, _G3398)=k2_tarski(_G3330, _G3467)), _G3263=_G3330, _G3398=_G3467]
+
+Connection Proof:
+-----------------
+1  [k2_xboole_0(k1_tarski(1^[]), k1_tarski(2^[]))=k1_xboole_0]   (3)  substitution:[[_G4479, _G4525], [1^[], k1_tarski(2^[])]]
+1.1  [- (k2_xboole_0(k1_tarski(1^[]), k1_tarski(2^[]))=k1_xboole_0), k2_xboole_0(k1_tarski(1^[]), k1_tarski(2^[]))=k2_tarski(1^[], 2^[]), k2_tarski(1^[], 2^[])=k1_xboole_0]   (7)  substitution:[[_G1947, _G2060, _G2003], [k2_xboole_0(k1_tarski(1^[]), k1_tarski(2^[])), k1_xboole_0, k2_tarski(1^[], 2^[])]]
+1.1.1  [- (k2_xboole_0(k1_tarski(1^[]), k1_tarski(2^[]))=k2_tarski(1^[], 2^[])), k2_tarski(1^[], 2^[])=k2_xboole_0(k1_tarski(1^[]), k1_tarski(2^[]))]   (6)  substitution:[[_G1759, _G1714], [k2_xboole_0(k1_tarski(1^[]), k1_tarski(2^[])), k2_tarski(1^[], 2^[])]]
+1.1.1.1  [- (k2_tarski(1^[], 2^[])=k2_xboole_0(k1_tarski(1^[]), k1_tarski(2^[])))]   (2)  substitution:[[_G4210, _G4259], [1^[], 2^[]]]
+1.1.2  [- (k2_tarski(1^[], 2^[])=k1_xboole_0), k2_xboole_0(k2_tarski(1^[], 2^[]), 3^[])=k1_xboole_0]   (4)  substitution:[[_G3923, _G3971], [k2_tarski(1^[], 2^[]), 3^[]]]
+1.1.2.1  [- (k2_xboole_0(k2_tarski(1^[], 2^[]), 3^[])=k1_xboole_0)]   (1)  
+------------------------------------------------------
+End of proof for t44_zfmisc_1

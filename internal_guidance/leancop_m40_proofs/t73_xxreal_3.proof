@@ -1,0 +1,34 @@
+
+t73_xxreal_3 is a Theorem
+Start of proof for t73_xxreal_3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xxreal_0(1^[])]
+ (2)  [-v1_xxreal_0(2^[])]
+ (3)  [-r2_hidden(k4_xxreal_3(1^[], 2^[]), k1_numbers)]
+ (4)  [k4_xxreal_3(1^[], 2^[])=k6_numbers]
+ (5)  [r2_hidden(1^[], k1_numbers), r2_hidden(2^[], k1_numbers)]
+ (6)  [v1_xxreal_0(_G4051), v1_xxreal_0(_G4162), r2_hidden(k4_xxreal_3(_G4051, _G4162), k1_numbers), -r2_hidden(_G4051, k1_numbers), - (k4_xxreal_3(_G4051, _G4162)=k6_numbers)]
+ (7)  [v1_xxreal_0(_G4051), v1_xxreal_0(_G4162), r2_hidden(k4_xxreal_3(_G4051, _G4162), k1_numbers), -r2_hidden(_G4162, k1_numbers), - (k4_xxreal_3(_G4051, _G4162)=k6_numbers)]
+ (8)  [- (k4_xxreal_3(_G3442, _G3577)=k4_xxreal_3(_G3509, _G3646)), _G3442=_G3509, _G3577=_G3646]
+ (9)  [- (_G1761=_G1761)]
+ (10)  [_G1860=_G1905, - (_G1905=_G1860)]
+ (11)  [- (_G2093=_G2206), _G2093=_G2149, _G2149=_G2206]
+ (12)  [-v1_xxreal_0(_G2592), _G2543=_G2592, v1_xxreal_0(_G2543)]
+ (13)  [-r2_hidden(_G2879, _G3016), r2_hidden(_G2812, _G2947), _G2812=_G2879, _G2947=_G3016]
+
+Connection Proof:
+-----------------
+1  [k4_xxreal_3(1^[], 2^[])=k6_numbers]   (4)  
+1.1  [- (k4_xxreal_3(1^[], 2^[])=k6_numbers), v1_xxreal_0(1^[]), v1_xxreal_0(2^[]), r2_hidden(k4_xxreal_3(1^[], 2^[]), k1_numbers), -r2_hidden(1^[], k1_numbers)]   (6)  substitution:[[_G4051, _G4162], [1^[], 2^[]]]
+1.1.1  [-v1_xxreal_0(1^[])]   (1)  
+1.1.2  [-v1_xxreal_0(2^[])]   (2)  
+1.1.3  [-r2_hidden(k4_xxreal_3(1^[], 2^[]), k1_numbers)]   (3)  
+1.1.4  [r2_hidden(1^[], k1_numbers), r2_hidden(2^[], k1_numbers)]   (5)  
+1.1.4.1  [-r2_hidden(2^[], k1_numbers), v1_xxreal_0(1^[]), v1_xxreal_0(2^[]), r2_hidden(k4_xxreal_3(1^[], 2^[]), k1_numbers), - (k4_xxreal_3(1^[], 2^[])=k6_numbers)]   (7)  substitution:[[_G4162, _G4051], [2^[], 1^[]]]
+1.1.4.1.1  [-v1_xxreal_0(1^[])]   (1)  
+1.1.4.1.2  [-v1_xxreal_0(2^[])]   (2)  
+1.1.4.1.3  [-r2_hidden(k4_xxreal_3(1^[], 2^[]), k1_numbers)]   (3)  
+1.1.4.1.4  [k4_xxreal_3(1^[], 2^[])=k6_numbers]   (4)  
+------------------------------------------------------
+End of proof for t73_xxreal_3

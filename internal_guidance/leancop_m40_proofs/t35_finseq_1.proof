@@ -1,0 +1,70 @@
+
+t35_finseq_1 is a Theorem
+Start of proof for t35_finseq_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(1^[])]
+ (2)  [-v1_funct_1(1^[])]
+ (3)  [-v1_finseq_1(1^[])]
+ (4)  [-v1_relat_1(2^[])]
+ (5)  [-v1_funct_1(2^[])]
+ (6)  [-v1_finseq_1(2^[])]
+ (7)  [- (k7_finseq_1(1^[], 2^[])=k1_xboole_0)]
+ (8)  [1^[]=k1_xboole_0, 2^[]=k1_xboole_0]
+ (9)  [v1_finseq_1(_G6701), v1_funct_1(_G6701), v1_relat_1(_G6701), -r1_tarski(k10_xtuple_0(_G6701), k10_xtuple_0(k7_finseq_1(_G6701, _G6915))), v1_relat_1(_G6915), v1_funct_1(_G6915), v1_finseq_1(_G6915)]
+ (10)  [- (k9_xtuple_0(k1_xboole_0)=k1_xboole_0)]
+ (11)  [- (k10_xtuple_0(k1_xboole_0)=k1_xboole_0)]
+ (12)  [r1_tarski(_G8056, k1_xboole_0), - (_G8056=k1_xboole_0)]
+ (13)  [v1_relat_1(_G8230), k9_xtuple_0(_G8230)=k1_xboole_0, - (_G8230=k1_xboole_0)]
+ (14)  [v1_relat_1(_G8230), k10_xtuple_0(_G8230)=k1_xboole_0, - (_G8230=k1_xboole_0)]
+ (15)  [v1_finseq_1(_G7297), v1_funct_1(_G7297), v1_relat_1(_G7297), -r1_tarski(k10_xtuple_0(_G7297), k10_xtuple_0(k7_finseq_1(_G7511, _G7297))), v1_relat_1(_G7511), v1_funct_1(_G7511), v1_finseq_1(_G7511)]
+ (16)  [_G5494=_G5543, - (k9_xtuple_0(_G5494)=k9_xtuple_0(_G5543))]
+ (17)  [_G5772=_G5821, - (k10_xtuple_0(_G5772)=k10_xtuple_0(_G5821))]
+ (18)  [- (k7_finseq_1(_G6041, _G6176)=k7_finseq_1(_G6108, _G6245)), _G6041=_G6108, _G6176=_G6245]
+ (19)  [- (_G3206=_G3206)]
+ (20)  [_G3305=_G3350, - (_G3350=_G3305)]
+ (21)  [- (_G3538=_G3651), _G3538=_G3594, _G3594=_G3651]
+ (22)  [-r1_tarski(_G4055, _G4192), r1_tarski(_G3988, _G4123), _G3988=_G4055, _G4123=_G4192]
+ (23)  [-v1_relat_1(_G4634), _G4585=_G4634, v1_relat_1(_G4585)]
+ (24)  [-v1_funct_1(_G4912), _G4863=_G4912, v1_funct_1(_G4863)]
+ (25)  [-v1_finseq_1(_G5181), _G5132=_G5181, v1_finseq_1(_G5132)]
+
+Connection Proof:
+-----------------
+1  [1^[]=k1_xboole_0, 2^[]=k1_xboole_0]   (8)  
+1.1  [- (1^[]=k1_xboole_0), v1_relat_1(1^[]), k10_xtuple_0(1^[])=k1_xboole_0]   (14)  substitution:[[_G8230], [1^[]]]
+1.1.1  [-v1_relat_1(1^[])]   (1)  
+1.1.2  [- (k10_xtuple_0(1^[])=k1_xboole_0), r1_tarski(k10_xtuple_0(1^[]), k1_xboole_0)]   (12)  substitution:[[_G8056], [k10_xtuple_0(1^[])]]
+1.1.2.1  [-r1_tarski(k10_xtuple_0(1^[]), k1_xboole_0), r1_tarski(k10_xtuple_0(1^[]), k10_xtuple_0(k7_finseq_1(1^[], 2^[]))), k10_xtuple_0(1^[])=k10_xtuple_0(1^[]), k10_xtuple_0(k7_finseq_1(1^[], 2^[]))=k1_xboole_0]   (22)  substitution:[[_G4055, _G4192, _G3988, _G4123], [k10_xtuple_0(1^[]), k1_xboole_0, k10_xtuple_0(1^[]), k10_xtuple_0(k7_finseq_1(1^[], 2^[]))]]
+1.1.2.1.1  [-r1_tarski(k10_xtuple_0(1^[]), k10_xtuple_0(k7_finseq_1(1^[], 2^[]))), v1_finseq_1(1^[]), v1_funct_1(1^[]), v1_relat_1(1^[]), v1_relat_1(2^[]), v1_funct_1(2^[]), v1_finseq_1(2^[])]   (9)  substitution:[[_G6701, _G6915], [1^[], 2^[]]]
+1.1.2.1.1.1  [-v1_finseq_1(1^[])]   (3)  
+1.1.2.1.1.2  [-v1_funct_1(1^[])]   (2)  
+1.1.2.1.1.3  [-v1_relat_1(1^[])]   (1)  
+1.1.2.1.1.4  [-v1_relat_1(2^[])]   (4)  
+1.1.2.1.1.5  [-v1_funct_1(2^[])]   (5)  
+1.1.2.1.1.6  [-v1_finseq_1(2^[])]   (6)  
+1.1.2.1.2  [- (k10_xtuple_0(1^[])=k10_xtuple_0(1^[])), 1^[]=1^[]]   (17)  substitution:[[_G5772, _G5821], [1^[], 1^[]]]
+1.1.2.1.2.1  [- (1^[]=1^[])]   (19)  substitution:[[_G3206], [1^[]]]
+1.1.2.1.3  [- (k10_xtuple_0(k7_finseq_1(1^[], 2^[]))=k1_xboole_0), k10_xtuple_0(k7_finseq_1(1^[], 2^[]))=k10_xtuple_0(k1_xboole_0), k10_xtuple_0(k1_xboole_0)=k1_xboole_0]   (21)  substitution:[[_G3538, _G3651, _G3594], [k10_xtuple_0(k7_finseq_1(1^[], 2^[])), k1_xboole_0, k10_xtuple_0(k1_xboole_0)]]
+1.1.2.1.3.1  [- (k10_xtuple_0(k7_finseq_1(1^[], 2^[]))=k10_xtuple_0(k1_xboole_0)), k7_finseq_1(1^[], 2^[])=k1_xboole_0]   (17)  substitution:[[_G5772, _G5821], [k7_finseq_1(1^[], 2^[]), k1_xboole_0]]
+1.1.2.1.3.1.1  [- (k7_finseq_1(1^[], 2^[])=k1_xboole_0)]   (7)  
+1.1.2.1.3.2  [- (k10_xtuple_0(k1_xboole_0)=k1_xboole_0)]   (11)  
+1.2  [- (2^[]=k1_xboole_0), v1_relat_1(2^[]), k10_xtuple_0(2^[])=k1_xboole_0]   (14)  substitution:[[_G8230], [2^[]]]
+1.2.1  [-v1_relat_1(2^[])]   (4)  
+1.2.2  [- (k10_xtuple_0(2^[])=k1_xboole_0), r1_tarski(k10_xtuple_0(2^[]), k1_xboole_0)]   (12)  substitution:[[_G8056], [k10_xtuple_0(2^[])]]
+1.2.2.1  [-r1_tarski(k10_xtuple_0(2^[]), k1_xboole_0), r1_tarski(k10_xtuple_0(2^[]), k10_xtuple_0(k7_finseq_1(1^[], 2^[]))), k10_xtuple_0(2^[])=k10_xtuple_0(2^[]), k10_xtuple_0(k7_finseq_1(1^[], 2^[]))=k1_xboole_0]   (22)  substitution:[[_G4055, _G4192, _G3988, _G4123], [k10_xtuple_0(2^[]), k1_xboole_0, k10_xtuple_0(2^[]), k10_xtuple_0(k7_finseq_1(1^[], 2^[]))]]
+1.2.2.1.1  [-r1_tarski(k10_xtuple_0(2^[]), k10_xtuple_0(k7_finseq_1(1^[], 2^[]))), v1_finseq_1(2^[]), v1_funct_1(2^[]), v1_relat_1(2^[]), v1_relat_1(1^[]), v1_funct_1(1^[]), v1_finseq_1(1^[])]   (15)  substitution:[[_G7297, _G7511], [2^[], 1^[]]]
+1.2.2.1.1.1  [-v1_finseq_1(2^[])]   (6)  
+1.2.2.1.1.2  [-v1_funct_1(2^[])]   (5)  
+1.2.2.1.1.3  [-v1_relat_1(2^[])]   (4)  
+1.2.2.1.1.4  [-v1_relat_1(1^[])]   (1)  
+1.2.2.1.1.5  [-v1_funct_1(1^[])]   (2)  
+1.2.2.1.1.6  [-v1_finseq_1(1^[])]   (3)  
+1.2.2.1.2  [- (k10_xtuple_0(2^[])=k10_xtuple_0(2^[])), 2^[]=2^[]]   (17)  substitution:[[_G5772, _G5821], [2^[], 2^[]]]
+1.2.2.1.2.1  [- (2^[]=2^[])]   (19)  substitution:[[_G3206], [2^[]]]
+1.2.2.1.3  [- (k10_xtuple_0(k7_finseq_1(1^[], 2^[]))=k1_xboole_0), k10_xtuple_0(k7_finseq_1(1^[], 2^[]))=k10_xtuple_0(k1_xboole_0), k10_xtuple_0(k1_xboole_0)=k1_xboole_0]   (21)  substitution:[[_G3538, _G3651, _G3594], [k10_xtuple_0(k7_finseq_1(1^[], 2^[])), k1_xboole_0, k10_xtuple_0(k1_xboole_0)]]
+1.2.2.1.3.1  [- (k10_xtuple_0(k7_finseq_1(1^[], 2^[]))=k10_xtuple_0(k1_xboole_0)), k7_finseq_1(1^[], 2^[])=k1_xboole_0]   (17)  substitution:[[_G5772, _G5821], [k7_finseq_1(1^[], 2^[]), k1_xboole_0]]
+1.2.2.1.3.1.1  [- (k7_finseq_1(1^[], 2^[])=k1_xboole_0)]   (7)  
+1.2.2.1.3.2  [- (k10_xtuple_0(k1_xboole_0)=k1_xboole_0)]   (11)  
+------------------------------------------------------
+End of proof for t35_finseq_1

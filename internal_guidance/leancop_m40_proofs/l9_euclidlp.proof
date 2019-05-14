@@ -1,0 +1,37 @@
+
+l9_euclidlp is a Theorem
+Start of proof for l9_euclidlp
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], k5_numbers)]
+ (2)  [-m2_finseq_2(2^[], k1_numbers, k1_euclid(1^[]))]
+ (3)  [-m2_finseq_2(3^[], k1_numbers, k1_euclid(1^[]))]
+ (4)  [2^[]=3^[]]
+ (5)  [- (k12_euclid(k8_euclid(1^[], 2^[], 3^[]))=k6_numbers)]
+ (6)  [m1_subset_1(_G6689, k4_ordinal1), -v7_ordinal1(_G6689)]
+ (7)  [- (k5_numbers=k4_ordinal1)]
+ (8)  [v7_ordinal1(_G6846), m2_finseq_2(_G6961, k1_numbers, k1_euclid(_G6846)), m2_finseq_2(_G7154, k1_numbers, k1_euclid(_G6846)), - (_G6961=_G7154), k12_euclid(k8_euclid(_G6846, _G6961, _G7154))=k6_numbers]
+ (9)  [_G5051=_G5100, - (k1_euclid(_G5051)=k1_euclid(_G5100))]
+ (10)  [_G5329=_G5378, - (k12_euclid(_G5329)=k12_euclid(_G5378))]
+ (11)  [- (k8_euclid(_G5598, _G5769, _G5944)=k8_euclid(_G5683, _G5856, _G6033)), _G5598=_G5683, _G5769=_G5856, _G5944=_G6033]
+ (12)  [- (_G2312=_G2312)]
+ (13)  [_G2411=_G2456, - (_G2456=_G2411)]
+ (14)  [- (_G2644=_G2757), _G2644=_G2700, _G2700=_G2757]
+ (15)  [-v7_ordinal1(_G3143), _G3094=_G3143, v7_ordinal1(_G3094)]
+ (16)  [-m1_subset_1(_G3439, _G3576), m1_subset_1(_G3372, _G3507), _G3372=_G3439, _G3507=_G3576]
+ (17)  [-m2_finseq_2(_G4045, _G4218, _G4395), m2_finseq_2(_G3960, _G4131, _G4306), _G3960=_G4045, _G4131=_G4218, _G4306=_G4395]
+
+Connection Proof:
+-----------------
+1  [2^[]=3^[]]   (4)  
+1.1  [- (2^[]=3^[]), v7_ordinal1(1^[]), m2_finseq_2(2^[], k1_numbers, k1_euclid(1^[])), m2_finseq_2(3^[], k1_numbers, k1_euclid(1^[])), k12_euclid(k8_euclid(1^[], 2^[], 3^[]))=k6_numbers]   (8)  substitution:[[_G6961, _G7154, _G6846], [2^[], 3^[], 1^[]]]
+1.1.1  [-v7_ordinal1(1^[]), m1_subset_1(1^[], k4_ordinal1)]   (6)  substitution:[[_G6689], [1^[]]]
+1.1.1.1  [-m1_subset_1(1^[], k4_ordinal1), m1_subset_1(1^[], k5_numbers), 1^[]=1^[], k5_numbers=k4_ordinal1]   (16)  substitution:[[_G3439, _G3576, _G3372, _G3507], [1^[], k4_ordinal1, 1^[], k5_numbers]]
+1.1.1.1.1  [-m1_subset_1(1^[], k5_numbers)]   (1)  
+1.1.1.1.2  [- (1^[]=1^[])]   (12)  substitution:[[_G2312], [1^[]]]
+1.1.1.1.3  [- (k5_numbers=k4_ordinal1)]   (7)  
+1.1.2  [-m2_finseq_2(2^[], k1_numbers, k1_euclid(1^[]))]   (2)  
+1.1.3  [-m2_finseq_2(3^[], k1_numbers, k1_euclid(1^[]))]   (3)  
+1.1.4  [- (k12_euclid(k8_euclid(1^[], 2^[], 3^[]))=k6_numbers)]   (5)  
+------------------------------------------------------
+End of proof for l9_euclidlp

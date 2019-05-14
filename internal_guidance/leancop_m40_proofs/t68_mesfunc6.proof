@@ -1,0 +1,48 @@
+
+t68_mesfunc6 is a Theorem
+Start of proof for t68_mesfunc6
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v1_xboole_0(1^[])]
+ (2)  [-v1_funct_1(2^[])]
+ (3)  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(1^[], k1_numbers)))]
+ (4)  [-m1_subset_1(3^[], k1_numbers)]
+ (5)  [k10_relat_1(2^[], 3^[])=k8_relset_1(1^[], k1_numbers, 2^[], k6_domain_1(k1_numbers, 3^[]))]
+ (6)  [m1_subset_1(_G10329, k1_zfmisc_1(k2_zfmisc_1(_G10220, _G10274))), -v1_relat_1(_G10329)]
+ (7)  [v1_relat_1(_G10572), - (k10_relat_1(_G10572, _G10656)=k8_relat_1(_G10572, k1_tarski(_G10656)))]
+ (8)  [v1_xboole_0(k1_numbers)]
+ (9)  [m1_subset_1(_G11450, k1_zfmisc_1(k2_zfmisc_1(_G11313, _G11381))), - (k8_relset_1(_G11313, _G11381, _G11450, _G11520)=k8_relat_1(_G11450, _G11520))]
+ (10)  [- (k6_domain_1(_G10936, _G10993)=k1_tarski(_G10993)), -v1_xboole_0(_G10936), m1_subset_1(_G10993, _G10936)]
+ (11)  [- (_G3315=_G3315)]
+ (12)  [_G3414=_G3459, - (_G3459=_G3414)]
+ (13)  [- (_G3647=_G3760), _G3647=_G3703, _G3703=_G3760]
+ (14)  [-v1_relat_1(_G4146), _G4097=_G4146, v1_relat_1(_G4097)]
+ (15)  [-v1_xboole_0(_G4424), _G4375=_G4424, v1_xboole_0(_G4375)]
+ (16)  [-v1_funct_1(_G4702), _G4653=_G4702, v1_funct_1(_G4653)]
+ (17)  [-m1_subset_1(_G4989, _G5126), m1_subset_1(_G4922, _G5057), _G4922=_G4989, _G5057=_G5126]
+ (18)  [_G5603=_G5652, - (k1_tarski(_G5603)=k1_tarski(_G5652))]
+ (19)  [- (k8_relat_1(_G5881, _G6016)=k8_relat_1(_G5948, _G6085)), _G5881=_G5948, _G6016=_G6085]
+ (20)  [_G6478=_G6527, - (k1_zfmisc_1(_G6478)=k1_zfmisc_1(_G6527))]
+ (21)  [- (k2_zfmisc_1(_G6756, _G6891)=k2_zfmisc_1(_G6823, _G6960)), _G6756=_G6823, _G6891=_G6960]
+ (22)  [- (k10_relat_1(_G7353, _G7488)=k10_relat_1(_G7420, _G7557)), _G7353=_G7420, _G7488=_G7557]
+ (23)  [- (k6_domain_1(_G9476, _G9611)=k6_domain_1(_G9543, _G9680)), _G9476=_G9543, _G9611=_G9680]
+ (24)  [- (k8_relset_1(_G7950, _G8157, _G8368, _G8583)=k8_relset_1(_G8053, _G8262, _G8475, _G8692)), _G7950=_G8053, _G8157=_G8262, _G8368=_G8475, _G8583=_G8692]
+
+Connection Proof:
+-----------------
+1  [k10_relat_1(2^[], 3^[])=k8_relset_1(1^[], k1_numbers, 2^[], k6_domain_1(k1_numbers, 3^[]))]   (5)  
+1.1  [- (k10_relat_1(2^[], 3^[])=k8_relset_1(1^[], k1_numbers, 2^[], k6_domain_1(k1_numbers, 3^[]))), k10_relat_1(2^[], 3^[])=k8_relat_1(2^[], k1_tarski(3^[])), k8_relat_1(2^[], k1_tarski(3^[]))=k8_relset_1(1^[], k1_numbers, 2^[], k6_domain_1(k1_numbers, 3^[]))]   (13)  substitution:[[_G3647, _G3760, _G3703], [k10_relat_1(2^[], 3^[]), k8_relset_1(1^[], k1_numbers, 2^[], k6_domain_1(k1_numbers, 3^[])), k8_relat_1(2^[], k1_tarski(3^[]))]]
+1.1.1  [- (k10_relat_1(2^[], 3^[])=k8_relat_1(2^[], k1_tarski(3^[]))), v1_relat_1(2^[])]   (7)  substitution:[[_G10572, _G10656], [2^[], 3^[]]]
+1.1.1.1  [-v1_relat_1(2^[]), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(1^[], k1_numbers)))]   (6)  substitution:[[_G10329, _G10220, _G10274], [2^[], 1^[], k1_numbers]]
+1.1.1.1.1  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(1^[], k1_numbers)))]   (3)  
+1.1.2  [- (k8_relat_1(2^[], k1_tarski(3^[]))=k8_relset_1(1^[], k1_numbers, 2^[], k6_domain_1(k1_numbers, 3^[]))), k8_relset_1(1^[], k1_numbers, 2^[], k6_domain_1(k1_numbers, 3^[]))=k8_relat_1(2^[], k1_tarski(3^[]))]   (12)  substitution:[[_G3459, _G3414], [k8_relat_1(2^[], k1_tarski(3^[])), k8_relset_1(1^[], k1_numbers, 2^[], k6_domain_1(k1_numbers, 3^[]))]]
+1.1.2.1  [- (k8_relset_1(1^[], k1_numbers, 2^[], k6_domain_1(k1_numbers, 3^[]))=k8_relat_1(2^[], k1_tarski(3^[]))), k8_relset_1(1^[], k1_numbers, 2^[], k6_domain_1(k1_numbers, 3^[]))=k8_relat_1(2^[], k6_domain_1(k1_numbers, 3^[])), k8_relat_1(2^[], k6_domain_1(k1_numbers, 3^[]))=k8_relat_1(2^[], k1_tarski(3^[]))]   (13)  substitution:[[_G3647, _G3760, _G3703], [k8_relset_1(1^[], k1_numbers, 2^[], k6_domain_1(k1_numbers, 3^[])), k8_relat_1(2^[], k1_tarski(3^[])), k8_relat_1(2^[], k6_domain_1(k1_numbers, 3^[]))]]
+1.1.2.1.1  [- (k8_relset_1(1^[], k1_numbers, 2^[], k6_domain_1(k1_numbers, 3^[]))=k8_relat_1(2^[], k6_domain_1(k1_numbers, 3^[]))), m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(1^[], k1_numbers)))]   (9)  substitution:[[_G11313, _G11381, _G11450, _G11520], [1^[], k1_numbers, 2^[], k6_domain_1(k1_numbers, 3^[])]]
+1.1.2.1.1.1  [-m1_subset_1(2^[], k1_zfmisc_1(k2_zfmisc_1(1^[], k1_numbers)))]   (3)  
+1.1.2.1.2  [- (k8_relat_1(2^[], k6_domain_1(k1_numbers, 3^[]))=k8_relat_1(2^[], k1_tarski(3^[]))), 2^[]=2^[], k6_domain_1(k1_numbers, 3^[])=k1_tarski(3^[])]   (19)  substitution:[[_G5881, _G6016, _G5948, _G6085], [2^[], k6_domain_1(k1_numbers, 3^[]), 2^[], k1_tarski(3^[])]]
+1.1.2.1.2.1  [- (2^[]=2^[])]   (11)  substitution:[[_G3315], [2^[]]]
+1.1.2.1.2.2  [- (k6_domain_1(k1_numbers, 3^[])=k1_tarski(3^[])), -v1_xboole_0(k1_numbers), m1_subset_1(3^[], k1_numbers)]   (10)  substitution:[[_G10936, _G10993], [k1_numbers, 3^[]]]
+1.1.2.1.2.2.1  [v1_xboole_0(k1_numbers)]   (8)  
+1.1.2.1.2.2.2  [-m1_subset_1(3^[], k1_numbers)]   (4)  
+------------------------------------------------------
+End of proof for t68_mesfunc6

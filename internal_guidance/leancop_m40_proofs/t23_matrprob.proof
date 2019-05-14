@@ -1,0 +1,52 @@
+
+t23_matrprob is a Theorem
+Start of proof for t23_matrprob
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_matrix_1(1^[])]
+ (2)  [-m2_finseq_1(1^[], k3_finseq_2(k1_numbers))]
+ (3)  [- (k3_finseq_1(1^[])=k6_numbers)]
+ (4)  [k5_matrprob(1^[])=k6_numbers]
+ (5)  [- (k5_matrprob(_G11001)=k18_rvsum_1(k3_matrprob(_G11001))), v1_matrix_1(_G11001), m2_finseq_1(_G11001, k3_finseq_2(k1_numbers))]
+ (6)  [m1_finseq_1(_G11304, k3_finseq_2(k1_numbers)), -m2_finseq_1(k3_matrprob(_G11304), k1_numbers)]
+ (7)  [- (k6_numbers=k1_xboole_0)]
+ (8)  [m2_finseq_1(_G11619, _G11574), -m1_finseq_1(_G11619, _G11574)]
+ (9)  [-m2_finseq_1(_G11619, _G11574), m1_finseq_1(_G11619, _G11574)]
+ (10)  [m2_finseq_1(_G12679, k1_numbers), k3_finseq_1(_G12679)=k6_numbers, - (k18_rvsum_1(_G12679)=k6_numbers)]
+ (11)  [m2_finseq_1(_G11816, k3_finseq_2(k1_numbers)), v1_matrix_1(_G11816), - (k3_finseq_1(k3_matrprob(_G11816))=k3_finseq_1(_G11816))]
+ (12)  [m2_finseq_1(_G11816, k3_finseq_2(k1_numbers)), v1_matrix_1(_G11816), m2_subset_1(_G12129, k1_numbers, k5_numbers), r2_hidden(_G12129, k2_finseq_1(k3_finseq_1(_G11816))), - (k1_seq_1(k3_matrprob(_G11816), _G12129)=k18_rvsum_1(k8_matrix_1(k1_numbers, _G11816, _G12129)))]
+ (13)  [_G7549=_G7598, - (k2_finseq_1(_G7549)=k2_finseq_1(_G7598))]
+ (14)  [- (k1_seq_1(_G7827, _G7962)=k1_seq_1(_G7894, _G8031)), _G7827=_G7894, _G7962=_G8031]
+ (15)  [_G8424=_G8473, - (k3_matrprob(_G8424)=k3_matrprob(_G8473))]
+ (16)  [- (k8_matrix_1(_G8702, _G8873, _G9048)=k8_matrix_1(_G8787, _G8960, _G9137)), _G8702=_G8787, _G8873=_G8960, _G9048=_G9137]
+ (17)  [_G9730=_G9779, - (k18_rvsum_1(_G9730)=k18_rvsum_1(_G9779))]
+ (18)  [_G10008=_G10057, - (k3_finseq_2(_G10008)=k3_finseq_2(_G10057))]
+ (19)  [_G10286=_G10335, - (k3_finseq_1(_G10286)=k3_finseq_1(_G10335))]
+ (20)  [_G10555=_G10604, - (k5_matrprob(_G10555)=k5_matrprob(_G10604))]
+ (21)  [- (_G3574=_G3574)]
+ (22)  [_G3673=_G3718, - (_G3718=_G3673)]
+ (23)  [- (_G3906=_G4019), _G3906=_G3962, _G3962=_G4019]
+ (24)  [-m1_finseq_1(_G4423, _G4560), m1_finseq_1(_G4356, _G4491), _G4356=_G4423, _G4491=_G4560]
+ (25)  [-m2_subset_1(_G5038, _G5211, _G5388), m2_subset_1(_G4953, _G5124, _G5299), _G4953=_G5038, _G5124=_G5211, _G5299=_G5388]
+ (26)  [-r2_hidden(_G6048, _G6185), r2_hidden(_G5981, _G6116), _G5981=_G6048, _G6116=_G6185]
+ (27)  [-v1_matrix_1(_G6627), _G6578=_G6627, v1_matrix_1(_G6578)]
+ (28)  [-m2_finseq_1(_G6914, _G7051), m2_finseq_1(_G6847, _G6982), _G6847=_G6914, _G6982=_G7051]
+
+Connection Proof:
+-----------------
+1  [k5_matrprob(1^[])=k6_numbers]   (4)  
+1.1  [- (k5_matrprob(1^[])=k6_numbers), k5_matrprob(1^[])=k18_rvsum_1(k3_matrprob(1^[])), k18_rvsum_1(k3_matrprob(1^[]))=k6_numbers]   (23)  substitution:[[_G3906, _G4019, _G3962], [k5_matrprob(1^[]), k6_numbers, k18_rvsum_1(k3_matrprob(1^[]))]]
+1.1.1  [- (k5_matrprob(1^[])=k18_rvsum_1(k3_matrprob(1^[]))), v1_matrix_1(1^[]), m2_finseq_1(1^[], k3_finseq_2(k1_numbers))]   (5)  substitution:[[_G11001], [1^[]]]
+1.1.1.1  [-v1_matrix_1(1^[])]   (1)  
+1.1.1.2  [-m2_finseq_1(1^[], k3_finseq_2(k1_numbers))]   (2)  
+1.1.2  [- (k18_rvsum_1(k3_matrprob(1^[]))=k6_numbers), m2_finseq_1(k3_matrprob(1^[]), k1_numbers), k3_finseq_1(k3_matrprob(1^[]))=k6_numbers]   (10)  substitution:[[_G12679], [k3_matrprob(1^[])]]
+1.1.2.1  [-m2_finseq_1(k3_matrprob(1^[]), k1_numbers), m1_finseq_1(1^[], k3_finseq_2(k1_numbers))]   (6)  substitution:[[_G11304], [1^[]]]
+1.1.2.1.1  [-m1_finseq_1(1^[], k3_finseq_2(k1_numbers)), m2_finseq_1(1^[], k3_finseq_2(k1_numbers))]   (8)  substitution:[[_G11619, _G11574], [1^[], k3_finseq_2(k1_numbers)]]
+1.1.2.1.1.1  [-m2_finseq_1(1^[], k3_finseq_2(k1_numbers))]   (2)  
+1.1.2.2  [- (k3_finseq_1(k3_matrprob(1^[]))=k6_numbers), k3_finseq_1(k3_matrprob(1^[]))=k3_finseq_1(1^[]), k3_finseq_1(1^[])=k6_numbers]   (23)  substitution:[[_G3906, _G4019, _G3962], [k3_finseq_1(k3_matrprob(1^[])), k6_numbers, k3_finseq_1(1^[])]]
+1.1.2.2.1  [- (k3_finseq_1(k3_matrprob(1^[]))=k3_finseq_1(1^[])), m2_finseq_1(1^[], k3_finseq_2(k1_numbers)), v1_matrix_1(1^[])]   (11)  substitution:[[_G11816], [1^[]]]
+1.1.2.2.1.1  [-m2_finseq_1(1^[], k3_finseq_2(k1_numbers))]   (2)  
+1.1.2.2.1.2  [-v1_matrix_1(1^[])]   (1)  
+1.1.2.2.2  [- (k3_finseq_1(1^[])=k6_numbers)]   (3)  
+------------------------------------------------------
+End of proof for t23_matrprob

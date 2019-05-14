@@ -1,0 +1,55 @@
+
+t10_tops_2 is a Theorem
+Start of proof for t10_tops_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-4^[], v1_tops_2(2^[], 1^[])]
+ (2)  [-4^[], -v2_tops_2(k7_setfam_1(u1_struct_0(1^[]), 2^[]), 1^[])]
+ (3)  [-3^[], v2_tops_2(k7_setfam_1(u1_struct_0(1^[]), 2^[]), 1^[])]
+ (4)  [-3^[], -v1_tops_2(2^[], 1^[])]
+ (5)  [-l1_pre_topc(1^[])]
+ (6)  [-m1_subset_1(2^[], k1_zfmisc_1(k1_zfmisc_1(u1_struct_0(1^[]))))]
+ (7)  [3^[], 4^[]]
+ (8)  [m1_subset_1(_G6633, k1_zfmisc_1(k1_zfmisc_1(_G6577))), -m1_subset_1(k7_setfam_1(_G6577, _G6633), k1_zfmisc_1(k1_zfmisc_1(_G6577)))]
+ (9)  [m1_subset_1(_G6991, k1_zfmisc_1(k1_zfmisc_1(_G6936))), - (k7_setfam_1(_G6936, k7_setfam_1(_G6936, _G6991))=_G6991)]
+ (10)  [l1_pre_topc(_G7295), m1_subset_1(_G7394, k1_zfmisc_1(k1_zfmisc_1(u1_struct_0(_G7295)))), v2_tops_2(_G7394, _G7295), -v1_tops_2(k7_setfam_1(u1_struct_0(_G7295), _G7394), _G7295)]
+ (11)  [l1_pre_topc(_G7295), m1_subset_1(_G7394, k1_zfmisc_1(k1_zfmisc_1(u1_struct_0(_G7295)))), -v2_tops_2(_G7394, _G7295), v1_tops_2(k7_setfam_1(u1_struct_0(_G7295), _G7394), _G7295)]
+ (12)  [_G5370=_G5419, - (k1_zfmisc_1(_G5370)=k1_zfmisc_1(_G5419))]
+ (13)  [_G6236=_G6285, - (u1_struct_0(_G6236)=u1_struct_0(_G6285))]
+ (14)  [- (k7_setfam_1(_G5648, _G5783)=k7_setfam_1(_G5715, _G5852)), _G5648=_G5715, _G5783=_G5852]
+ (15)  [- (_G2444=_G2444)]
+ (16)  [_G2543=_G2588, - (_G2588=_G2543)]
+ (17)  [- (_G2776=_G2889), _G2776=_G2832, _G2832=_G2889]
+ (18)  [-l1_pre_topc(_G3275), _G3226=_G3275, l1_pre_topc(_G3226)]
+ (19)  [-m1_subset_1(_G3571, _G3708), m1_subset_1(_G3504, _G3639), _G3504=_G3571, _G3639=_G3708]
+ (20)  [-v1_tops_2(_G4168, _G4305), v1_tops_2(_G4101, _G4236), _G4101=_G4168, _G4236=_G4305]
+ (21)  [-v2_tops_2(_G4756, _G4893), v2_tops_2(_G4689, _G4824), _G4689=_G4756, _G4824=_G4893]
+
+Connection Proof:
+-----------------
+1  [3^[], 4^[]]   (7)  
+1.1  [-3^[], v2_tops_2(k7_setfam_1(u1_struct_0(1^[]), 2^[]), 1^[])]   (3)  
+1.1.1  [-v2_tops_2(k7_setfam_1(u1_struct_0(1^[]), 2^[]), 1^[]), l1_pre_topc(1^[]), m1_subset_1(k7_setfam_1(u1_struct_0(1^[]), 2^[]), k1_zfmisc_1(k1_zfmisc_1(u1_struct_0(1^[])))), v1_tops_2(k7_setfam_1(u1_struct_0(1^[]), k7_setfam_1(u1_struct_0(1^[]), 2^[])), 1^[])]   (11)  substitution:[[_G7394, _G7295], [k7_setfam_1(u1_struct_0(1^[]), 2^[]), 1^[]]]
+1.1.1.1  [-l1_pre_topc(1^[])]   (5)  
+1.1.1.2  [-m1_subset_1(k7_setfam_1(u1_struct_0(1^[]), 2^[]), k1_zfmisc_1(k1_zfmisc_1(u1_struct_0(1^[])))), m1_subset_1(2^[], k1_zfmisc_1(k1_zfmisc_1(u1_struct_0(1^[]))))]   (8)  substitution:[[_G6577, _G6633], [u1_struct_0(1^[]), 2^[]]]
+1.1.1.2.1  [-m1_subset_1(2^[], k1_zfmisc_1(k1_zfmisc_1(u1_struct_0(1^[]))))]   (6)  
+1.1.1.3  [-v1_tops_2(k7_setfam_1(u1_struct_0(1^[]), k7_setfam_1(u1_struct_0(1^[]), 2^[])), 1^[]), v1_tops_2(2^[], 1^[]), 2^[]=k7_setfam_1(u1_struct_0(1^[]), k7_setfam_1(u1_struct_0(1^[]), 2^[])), 1^[]=1^[]]   (20)  substitution:[[_G4168, _G4305, _G4101, _G4236], [k7_setfam_1(u1_struct_0(1^[]), k7_setfam_1(u1_struct_0(1^[]), 2^[])), 1^[], 2^[], 1^[]]]
+1.1.1.3.1  [-v1_tops_2(2^[], 1^[]), -3^[]]   (4)  
+1.1.1.3.1.1  [3^[]]   (reduction:1)  
+1.1.1.3.2  [- (2^[]=k7_setfam_1(u1_struct_0(1^[]), k7_setfam_1(u1_struct_0(1^[]), 2^[]))), k7_setfam_1(u1_struct_0(1^[]), k7_setfam_1(u1_struct_0(1^[]), 2^[]))=2^[]]   (16)  substitution:[[_G2588, _G2543], [2^[], k7_setfam_1(u1_struct_0(1^[]), k7_setfam_1(u1_struct_0(1^[]), 2^[]))]]
+1.1.1.3.2.1  [- (k7_setfam_1(u1_struct_0(1^[]), k7_setfam_1(u1_struct_0(1^[]), 2^[]))=2^[]), m1_subset_1(2^[], k1_zfmisc_1(k1_zfmisc_1(u1_struct_0(1^[]))))]   (9)  substitution:[[_G6936, _G6991], [u1_struct_0(1^[]), 2^[]]]
+1.1.1.3.2.1.1  [-m1_subset_1(2^[], k1_zfmisc_1(k1_zfmisc_1(u1_struct_0(1^[]))))]   (6)  
+1.1.1.3.3  [- (1^[]=1^[])]   (15)  substitution:[[_G2444], [1^[]]]
+1.2  [-4^[], -v2_tops_2(k7_setfam_1(u1_struct_0(1^[]), 2^[]), 1^[])]   (2)  
+1.2.1  [v2_tops_2(k7_setfam_1(u1_struct_0(1^[]), 2^[]), 1^[]), l1_pre_topc(1^[]), m1_subset_1(k7_setfam_1(u1_struct_0(1^[]), 2^[]), k1_zfmisc_1(k1_zfmisc_1(u1_struct_0(1^[])))), -v1_tops_2(k7_setfam_1(u1_struct_0(1^[]), k7_setfam_1(u1_struct_0(1^[]), 2^[])), 1^[])]   (10)  substitution:[[_G7394, _G7295], [k7_setfam_1(u1_struct_0(1^[]), 2^[]), 1^[]]]
+1.2.1.1  [-l1_pre_topc(1^[])]   (5)  
+1.2.1.2  [-m1_subset_1(k7_setfam_1(u1_struct_0(1^[]), 2^[]), k1_zfmisc_1(k1_zfmisc_1(u1_struct_0(1^[])))), m1_subset_1(2^[], k1_zfmisc_1(k1_zfmisc_1(u1_struct_0(1^[]))))]   (8)  substitution:[[_G6577, _G6633], [u1_struct_0(1^[]), 2^[]]]
+1.2.1.2.1  [-m1_subset_1(2^[], k1_zfmisc_1(k1_zfmisc_1(u1_struct_0(1^[]))))]   (6)  
+1.2.1.3  [v1_tops_2(k7_setfam_1(u1_struct_0(1^[]), k7_setfam_1(u1_struct_0(1^[]), 2^[])), 1^[]), -v1_tops_2(2^[], 1^[]), k7_setfam_1(u1_struct_0(1^[]), k7_setfam_1(u1_struct_0(1^[]), 2^[]))=2^[], 1^[]=1^[]]   (20)  substitution:[[_G4101, _G4236, _G4168, _G4305], [k7_setfam_1(u1_struct_0(1^[]), k7_setfam_1(u1_struct_0(1^[]), 2^[])), 1^[], 2^[], 1^[]]]
+1.2.1.3.1  [v1_tops_2(2^[], 1^[]), -4^[]]   (1)  
+1.2.1.3.1.1  [4^[]]   (reduction:1)  
+1.2.1.3.2  [- (k7_setfam_1(u1_struct_0(1^[]), k7_setfam_1(u1_struct_0(1^[]), 2^[]))=2^[]), m1_subset_1(2^[], k1_zfmisc_1(k1_zfmisc_1(u1_struct_0(1^[]))))]   (9)  substitution:[[_G6936, _G6991], [u1_struct_0(1^[]), 2^[]]]
+1.2.1.3.2.1  [-m1_subset_1(2^[], k1_zfmisc_1(k1_zfmisc_1(u1_struct_0(1^[]))))]   (6)  
+1.2.1.3.3  [- (1^[]=1^[])]   (15)  substitution:[[_G2444], [1^[]]]
+------------------------------------------------------
+End of proof for t10_tops_2

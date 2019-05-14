@@ -1,0 +1,26 @@
+
+t1_necklace is a Theorem
+Start of proof for t1_necklace
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [np__4=k2_enumset1(k6_numbers, np__1, np__2, np__3)]
+ (2)  [- (k6_numbers=k1_xboole_0)]
+ (3)  [- (np__4=k2_enumset1(k1_xboole_0, np__1, np__2, np__3))]
+ (4)  [- (k2_enumset1(_G1647, _G1854, _G2065, _G2280)=k2_enumset1(_G1750, _G1959, _G2172, _G2389)), _G1647=_G1750, _G1854=_G1959, _G2065=_G2172, _G2280=_G2389]
+ (5)  [- (_G874=_G874)]
+ (6)  [_G973=_G1018, - (_G1018=_G973)]
+ (7)  [- (_G1206=_G1319), _G1206=_G1262, _G1262=_G1319]
+
+Connection Proof:
+-----------------
+1  [np__4=k2_enumset1(k6_numbers, np__1, np__2, np__3)]   (1)  
+1.1  [- (np__4=k2_enumset1(k6_numbers, np__1, np__2, np__3)), np__4=k2_enumset1(k1_xboole_0, np__1, np__2, np__3), k2_enumset1(k1_xboole_0, np__1, np__2, np__3)=k2_enumset1(k6_numbers, np__1, np__2, np__3)]   (7)  substitution:[[_G1206, _G1319, _G1262], [np__4, k2_enumset1(k6_numbers, np__1, np__2, np__3), k2_enumset1(k1_xboole_0, np__1, np__2, np__3)]]
+1.1.1  [- (np__4=k2_enumset1(k1_xboole_0, np__1, np__2, np__3))]   (3)  
+1.1.2  [- (k2_enumset1(k1_xboole_0, np__1, np__2, np__3)=k2_enumset1(k6_numbers, np__1, np__2, np__3)), k1_xboole_0=k6_numbers, np__1=np__1, np__2=np__2, np__3=np__3]   (4)  substitution:[[_G1647, _G1854, _G2065, _G2280, _G1750, _G1959, _G2172, _G2389], [k1_xboole_0, np__1, np__2, np__3, k6_numbers, np__1, np__2, np__3]]
+1.1.2.1  [- (k1_xboole_0=k6_numbers), k6_numbers=k1_xboole_0]   (6)  substitution:[[_G1018, _G973], [k1_xboole_0, k6_numbers]]
+1.1.2.1.1  [- (k6_numbers=k1_xboole_0)]   (2)  
+1.1.2.2  [- (np__1=np__1)]   (5)  substitution:[[_G874], [np__1]]
+1.1.2.3  [- (np__2=np__2)]   (5)  substitution:[[_G874], [np__2]]
+1.1.2.4  [- (np__3=np__3)]   (5)  substitution:[[_G874], [np__3]]
+------------------------------------------------------
+End of proof for t1_necklace

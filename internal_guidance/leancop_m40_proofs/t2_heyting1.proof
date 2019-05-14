@@ -1,0 +1,30 @@
+
+t2_heyting1 is a Theorem
+Start of proof for t2_heyting1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(2^[], k5_finsub_1(k7_normform(1^[])))]
+ (2)  [- (2^[]=k1_xboole_0)]
+ (3)  [k9_normform(1^[], 2^[])=k1_xboole_0]
+ (4)  [r1_tarski(_G4812, k1_xboole_0), - (_G4812=k1_xboole_0)]
+ (5)  [m1_subset_1(_G5038, k5_finsub_1(k7_normform(_G4986))), -r1_tarski(k9_normform(_G4986, _G5038), _G5038)]
+ (6)  [_G3605=_G3654, - (k5_finsub_1(_G3605)=k5_finsub_1(_G3654))]
+ (7)  [_G3883=_G3932, - (k7_normform(_G3883)=k7_normform(_G3932))]
+ (8)  [- (k9_normform(_G4152, _G4287)=k9_normform(_G4219, _G4356)), _G4152=_G4219, _G4287=_G4356]
+ (9)  [- (_G1596=_G1596)]
+ (10)  [_G1695=_G1740, - (_G1740=_G1695)]
+ (11)  [- (_G1928=_G2041), _G1928=_G1984, _G1984=_G2041]
+ (12)  [-r1_tarski(_G2445, _G2582), r1_tarski(_G2378, _G2513), _G2378=_G2445, _G2513=_G2582]
+ (13)  [-m1_subset_1(_G3033, _G3170), m1_subset_1(_G2966, _G3101), _G2966=_G3033, _G3101=_G3170]
+
+Connection Proof:
+-----------------
+1  [k9_normform(1^[], 2^[])=k1_xboole_0]   (3)  
+1.1  [- (k9_normform(1^[], 2^[])=k1_xboole_0), r1_tarski(k9_normform(1^[], 2^[]), k1_xboole_0)]   (4)  substitution:[[_G4812], [k9_normform(1^[], 2^[])]]
+1.1.1  [-r1_tarski(k9_normform(1^[], 2^[]), k1_xboole_0), r1_tarski(k9_normform(1^[], 2^[]), 2^[]), k9_normform(1^[], 2^[])=k9_normform(1^[], 2^[]), 2^[]=k1_xboole_0]   (12)  substitution:[[_G2445, _G2582, _G2378, _G2513], [k9_normform(1^[], 2^[]), k1_xboole_0, k9_normform(1^[], 2^[]), 2^[]]]
+1.1.1.1  [-r1_tarski(k9_normform(1^[], 2^[]), 2^[]), m1_subset_1(2^[], k5_finsub_1(k7_normform(1^[])))]   (5)  substitution:[[_G4986, _G5038], [1^[], 2^[]]]
+1.1.1.1.1  [-m1_subset_1(2^[], k5_finsub_1(k7_normform(1^[])))]   (1)  
+1.1.1.2  [- (k9_normform(1^[], 2^[])=k9_normform(1^[], 2^[]))]   (9)  substitution:[[_G1596], [k9_normform(1^[], 2^[])]]
+1.1.1.3  [- (2^[]=k1_xboole_0)]   (2)  
+------------------------------------------------------
+End of proof for t2_heyting1

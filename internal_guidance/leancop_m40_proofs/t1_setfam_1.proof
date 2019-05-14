@@ -1,0 +1,29 @@
+
+t1_setfam_1 is a Theorem
+Start of proof for t1_setfam_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k1_setfam_1(k1_xboole_0)=k1_xboole_0]
+ (2)  [_G2732=_G2781, - (k1_setfam_1(_G2732)=k1_setfam_1(_G2781))]
+ (3)  [-r2_hidden(_G2190, _G2327), r2_hidden(_G2123, _G2258), _G2123=_G2190, _G2258=_G2327]
+ (4)  [- (_G1350=_G1350)]
+ (5)  [_G1449=_G1494, - (_G1494=_G1449)]
+ (6)  [- (_G1682=_G1795), _G1682=_G1738, _G1738=_G1795]
+ (7)  [_G3022=k1_xboole_0, _G3119=k1_setfam_1(_G3022), - (_G3119=k1_xboole_0)]
+ (8)  [_G3022=k1_xboole_0, - (_G3119=k1_setfam_1(_G3022)), _G3119=k1_xboole_0]
+ (9)  [- (_G3022=k1_xboole_0), _G3119=k1_setfam_1(_G3022), -r2_hidden(_G3368, _G3119), -r2_hidden(1^[_G3368, _G3119, _G3022], _G3022)]
+ (10)  [- (_G3022=k1_xboole_0), _G3119=k1_setfam_1(_G3022), -r2_hidden(_G3368, _G3119), r2_hidden(_G3368, 1^[_G3368, _G3119, _G3022])]
+ (11)  [- (_G3022=k1_xboole_0), _G3119=k1_setfam_1(_G3022), r2_hidden(_G3368, _G3119), r2_hidden(_G3488, _G3022), -r2_hidden(_G3368, _G3488)]
+ (12)  [- (_G3022=k1_xboole_0), - (_G3119=k1_setfam_1(_G3022)), r2_hidden(2^[_G3119, _G3022], _G3119), -r2_hidden(3^[_G3119, _G3022], _G3022)]
+ (13)  [- (_G3022=k1_xboole_0), - (_G3119=k1_setfam_1(_G3022)), r2_hidden(2^[_G3119, _G3022], _G3119), r2_hidden(2^[_G3119, _G3022], 3^[_G3119, _G3022])]
+ (14)  [- (_G3022=k1_xboole_0), - (_G3119=k1_setfam_1(_G3022)), -r2_hidden(2^[_G3119, _G3022], _G3119), r2_hidden(_G4475, _G3022), -r2_hidden(2^[_G3119, _G3022], _G4475)]
+
+Connection Proof:
+-----------------
+1  [k1_setfam_1(k1_xboole_0)=k1_xboole_0]   (1)  
+1.1  [- (k1_setfam_1(k1_xboole_0)=k1_xboole_0), k1_xboole_0=k1_xboole_0, k1_setfam_1(k1_xboole_0)=k1_setfam_1(k1_xboole_0)]   (7)  substitution:[[_G3119, _G3022], [k1_setfam_1(k1_xboole_0), k1_xboole_0]]
+1.1.1  [- (k1_xboole_0=k1_xboole_0)]   (4)  substitution:[[_G1350], [k1_xboole_0]]
+1.1.2  [- (k1_setfam_1(k1_xboole_0)=k1_setfam_1(k1_xboole_0)), k1_xboole_0=k1_xboole_0]   (2)  substitution:[[_G2732, _G2781], [k1_xboole_0, k1_xboole_0]]
+1.1.2.1  [- (k1_xboole_0=k1_xboole_0)]   (4)  substitution:[[_G1350], [k1_xboole_0]]
+------------------------------------------------------
+End of proof for t1_setfam_1

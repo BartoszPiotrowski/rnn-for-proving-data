@@ -1,0 +1,51 @@
+
+t14_ordinal6 is a Theorem
+Start of proof for t14_ordinal6
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k1_ordinal6(k1_xboole_0)=k6_numbers]
+ (2)  [v3_ordinal1(_G7126), -v1_ordinal6(_G7126)]
+ (3)  [v1_xboole_0(_G7257), -v3_ordinal1(_G7257)]
+ (4)  [- (k1_ordinal6(_G7388)=k2_wellord2(k1_wellord2(k2_ordinal1(_G7388))))]
+ (5)  [v1_ordinal6(_G7551), - (k1_ordinal6(_G7551)=k2_wellord2(k1_wellord2(_G7551)))]
+ (6)  [v1_xboole_0(_G7756), -v3_ordinal1(k2_wellord2(_G7756))]
+ (7)  [v1_xboole_0(_G7756), -v1_xboole_0(k2_wellord2(_G7756))]
+ (8)  [-v1_xboole_0(k1_xboole_0)]
+ (9)  [-v1_relat_1(k1_wellord2(k1_xboole_0))]
+ (10)  [-v1_xboole_0(k1_wellord2(k1_xboole_0))]
+ (11)  [-m1_subset_1(1^[_G8122], k1_zfmisc_1(_G8122))]
+ (12)  [-v1_xboole_0(1^[_G8122])]
+ (13)  [- (k6_numbers=k1_xboole_0)]
+ (14)  [v1_xboole_0(_G8412), - (_G8412=k1_xboole_0)]
+ (15)  [v1_xboole_0(_G8560), - (_G8560=_G8613), v1_xboole_0(_G8613)]
+ (16)  [_G5640=_G5689, - (k2_ordinal1(_G5640)=k2_ordinal1(_G5689))]
+ (17)  [_G5918=_G5967, - (k2_wellord2(_G5918)=k2_wellord2(_G5967))]
+ (18)  [_G6196=_G6245, - (k1_wellord2(_G6196)=k1_wellord2(_G6245))]
+ (19)  [_G6474=_G6523, - (k1_zfmisc_1(_G6474)=k1_zfmisc_1(_G6523))]
+ (20)  [_G6743=_G6792, - (k1_ordinal6(_G6743)=k1_ordinal6(_G6792))]
+ (21)  [- (_G3053=_G3053)]
+ (22)  [_G3152=_G3197, - (_G3197=_G3152)]
+ (23)  [- (_G3385=_G3498), _G3385=_G3441, _G3441=_G3498]
+ (24)  [-v1_ordinal6(_G3884), _G3835=_G3884, v1_ordinal6(_G3835)]
+ (25)  [-v3_ordinal1(_G4162), _G4113=_G4162, v3_ordinal1(_G4113)]
+ (26)  [-v1_relat_1(_G4440), _G4391=_G4440, v1_relat_1(_G4391)]
+ (27)  [-v1_xboole_0(_G5306), _G5257=_G5306, v1_xboole_0(_G5257)]
+ (28)  [-m1_subset_1(_G4736, _G4873), m1_subset_1(_G4669, _G4804), _G4669=_G4736, _G4804=_G4873]
+
+Connection Proof:
+-----------------
+1  [k1_ordinal6(k1_xboole_0)=k6_numbers]   (1)  
+1.1  [- (k1_ordinal6(k1_xboole_0)=k6_numbers), k1_ordinal6(k1_xboole_0)=k2_wellord2(k1_wellord2(k1_xboole_0)), k2_wellord2(k1_wellord2(k1_xboole_0))=k6_numbers]   (23)  substitution:[[_G3385, _G3498, _G3441], [k1_ordinal6(k1_xboole_0), k6_numbers, k2_wellord2(k1_wellord2(k1_xboole_0))]]
+1.1.1  [- (k1_ordinal6(k1_xboole_0)=k2_wellord2(k1_wellord2(k1_xboole_0))), v1_ordinal6(k1_xboole_0)]   (5)  substitution:[[_G7551], [k1_xboole_0]]
+1.1.1.1  [-v1_ordinal6(k1_xboole_0), v3_ordinal1(k1_xboole_0)]   (2)  substitution:[[_G7126], [k1_xboole_0]]
+1.1.1.1.1  [-v3_ordinal1(k1_xboole_0), v1_xboole_0(k1_xboole_0)]   (3)  substitution:[[_G7257], [k1_xboole_0]]
+1.1.1.1.1.1  [-v1_xboole_0(k1_xboole_0)]   (8)  
+1.1.2  [- (k2_wellord2(k1_wellord2(k1_xboole_0))=k6_numbers), v1_xboole_0(k2_wellord2(k1_wellord2(k1_xboole_0))), v1_xboole_0(k6_numbers)]   (15)  substitution:[[_G8560, _G8613], [k2_wellord2(k1_wellord2(k1_xboole_0)), k6_numbers]]
+1.1.2.1  [-v1_xboole_0(k2_wellord2(k1_wellord2(k1_xboole_0))), v1_xboole_0(k1_wellord2(k1_xboole_0))]   (7)  substitution:[[_G7756], [k1_wellord2(k1_xboole_0)]]
+1.1.2.1.1  [-v1_xboole_0(k1_wellord2(k1_xboole_0))]   (10)  
+1.1.2.2  [-v1_xboole_0(k6_numbers), k1_xboole_0=k6_numbers, v1_xboole_0(k1_xboole_0)]   (27)  substitution:[[_G5306, _G5257], [k6_numbers, k1_xboole_0]]
+1.1.2.2.1  [- (k1_xboole_0=k6_numbers), k6_numbers=k1_xboole_0]   (22)  substitution:[[_G3197, _G3152], [k1_xboole_0, k6_numbers]]
+1.1.2.2.1.1  [- (k6_numbers=k1_xboole_0)]   (13)  
+1.1.2.2.2  [-v1_xboole_0(k1_xboole_0)]   (8)  
+------------------------------------------------------
+End of proof for t14_ordinal6

@@ -1,0 +1,53 @@
+
+t25_helly is a Theorem
+Start of proof for t25_helly
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(2^[])]
+ (2)  [-v4_relat_1(2^[], k5_numbers)]
+ (3)  [-v1_funct_1(2^[])]
+ (4)  [-v1_finset_1(2^[])]
+ (5)  [-v1_glib_000(2^[])]
+ (6)  [-v3_glib_002(2^[])]
+ (7)  [-v5_glib_001(3^[], 2^[])]
+ (8)  [-m3_glib_001(3^[], 2^[])]
+ (9)  [v3_glib_001(3^[], 2^[])]
+ (10)  [-v1_glib_001(3^[], 2^[])]
+ (11)  [-v1_glib_002(_G1476), v1_relat_1(_G1476), v4_relat_1(_G1476, k5_numbers), v1_funct_1(_G1476), v1_finset_1(_G1476), v1_glib_000(_G1476), v3_glib_002(_G1476)]
+ (12)  [-v2_glib_002(_G1476), v1_relat_1(_G1476), v4_relat_1(_G1476, k5_numbers), v1_funct_1(_G1476), v1_finset_1(_G1476), v1_glib_000(_G1476), v3_glib_002(_G1476)]
+ (13)  [v1_glib_000(_G2297), v1_finset_1(_G2297), v1_funct_1(_G2297), v4_relat_1(_G2297, k5_numbers), v1_relat_1(_G2297), -v2_glib_002(_G2297), -m3_glib_001(1^[_G2297], _G2297)]
+ (14)  [v1_glib_000(_G2297), v1_finset_1(_G2297), v1_funct_1(_G2297), v4_relat_1(_G2297, k5_numbers), v1_relat_1(_G2297), -v2_glib_002(_G2297), -v8_glib_001(1^[_G2297], _G2297)]
+ (15)  [v1_glib_000(_G2297), v1_finset_1(_G2297), v1_funct_1(_G2297), v4_relat_1(_G2297, k5_numbers), v1_relat_1(_G2297), v2_glib_002(_G2297), m3_glib_001(_G2676, _G2297), v8_glib_001(_G2676, _G2297)]
+ (16)  [v1_glib_000(_G2922), v1_finset_1(_G2922), v1_funct_1(_G2922), v4_relat_1(_G2922, k5_numbers), v1_relat_1(_G2922), m3_glib_001(_G3282, _G2922), v8_glib_001(_G3282, _G2922), -v1_glib_001(_G3282, _G2922)]
+ (17)  [v1_glib_000(_G2922), v1_finset_1(_G2922), v1_funct_1(_G2922), v4_relat_1(_G2922, k5_numbers), v1_relat_1(_G2922), m3_glib_001(_G3282, _G2922), v8_glib_001(_G3282, _G2922), -v5_glib_001(_G3282, _G2922)]
+ (18)  [v1_glib_000(_G2922), v1_finset_1(_G2922), v1_funct_1(_G2922), v4_relat_1(_G2922, k5_numbers), v1_relat_1(_G2922), m3_glib_001(_G3282, _G2922), v8_glib_001(_G3282, _G2922), v3_glib_001(_G3282, _G2922)]
+ (19)  [v1_glib_000(_G2922), v1_finset_1(_G2922), v1_funct_1(_G2922), v4_relat_1(_G2922, k5_numbers), v1_relat_1(_G2922), m3_glib_001(_G3282, _G2922), -v8_glib_001(_G3282, _G2922), v1_glib_001(_G3282, _G2922), v5_glib_001(_G3282, _G2922), -v3_glib_001(_G3282, _G2922)]
+
+Connection Proof:
+-----------------
+1  [v1_glib_000(2^[]), v1_finset_1(2^[]), v1_funct_1(2^[]), v4_relat_1(2^[], k5_numbers), v1_relat_1(2^[]), v2_glib_002(2^[]), m3_glib_001(3^[], 2^[]), v8_glib_001(3^[], 2^[])]   (15)  substitution:[[_G2297, _G2676], [2^[], 3^[]]]
+1.1  [-v1_glib_000(2^[])]   (5)  
+1.2  [-v1_finset_1(2^[])]   (4)  
+1.3  [-v1_funct_1(2^[])]   (3)  
+1.4  [-v4_relat_1(2^[], k5_numbers)]   (2)  
+1.5  [-v1_relat_1(2^[])]   (1)  
+1.6  [-v2_glib_002(2^[]), v1_relat_1(2^[]), v4_relat_1(2^[], k5_numbers), v1_funct_1(2^[]), v1_finset_1(2^[]), v1_glib_000(2^[]), v3_glib_002(2^[])]   (12)  substitution:[[_G1476], [2^[]]]
+1.6.1  [-v1_relat_1(2^[])]   (1)  
+1.6.2  [-v4_relat_1(2^[], k5_numbers)]   (2)  
+1.6.3  [-v1_funct_1(2^[])]   (3)  
+1.6.4  [-v1_finset_1(2^[])]   (4)  
+1.6.5  [-v1_glib_000(2^[])]   (5)  
+1.6.6  [-v3_glib_002(2^[])]   (6)  
+1.7  [-m3_glib_001(3^[], 2^[])]   (8)  
+1.8  [-v8_glib_001(3^[], 2^[]), v1_glib_000(2^[]), v1_finset_1(2^[]), v1_funct_1(2^[]), v4_relat_1(2^[], k5_numbers), v1_relat_1(2^[]), m3_glib_001(3^[], 2^[]), v1_glib_001(3^[], 2^[]), v5_glib_001(3^[], 2^[]), -v3_glib_001(3^[], 2^[])]   (19)  substitution:[[_G3282, _G2922], [3^[], 2^[]]]
+1.8.1  [-v1_glib_000(2^[])]   (5)  
+1.8.2  [-v1_finset_1(2^[])]   (4)  
+1.8.3  [-v1_funct_1(2^[])]   (3)  
+1.8.4  [-v4_relat_1(2^[], k5_numbers)]   (2)  
+1.8.5  [-v1_relat_1(2^[])]   (1)  
+1.8.6  [-m3_glib_001(3^[], 2^[])]   (8)  
+1.8.7  [-v1_glib_001(3^[], 2^[])]   (10)  
+1.8.8  [-v5_glib_001(3^[], 2^[])]   (7)  
+1.8.9  [v3_glib_001(3^[], 2^[])]   (9)  
+------------------------------------------------------
+End of proof for t25_helly

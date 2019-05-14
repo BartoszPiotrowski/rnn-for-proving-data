@@ -1,0 +1,35 @@
+
+t3_topgrp_1 is a Theorem
+Start of proof for t3_topgrp_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-l1_struct_0(1^[])]
+ (2)  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]
+ (3)  [k8_relset_1(u1_struct_0(1^[]), u1_struct_0(1^[]), k3_struct_0(1^[]), 2^[])=2^[]]
+ (4)  [l1_struct_0(_G6326), - (k3_struct_0(_G6326)=k6_partfun1(u1_struct_0(_G6326)))]
+ (5)  [m1_subset_1(_G6576, k1_zfmisc_1(_G6522)), - (k8_relset_1(_G6522, _G6522, k6_partfun1(_G6522), _G6576)=_G6576)]
+ (6)  [- (_G1893=_G1893)]
+ (7)  [_G1992=_G2037, - (_G2037=_G1992)]
+ (8)  [- (_G2225=_G2338), _G2225=_G2281, _G2281=_G2338]
+ (9)  [-l1_struct_0(_G2724), _G2675=_G2724, l1_struct_0(_G2675)]
+ (10)  [-m1_subset_1(_G3011, _G3148), m1_subset_1(_G2944, _G3079), _G2944=_G3011, _G3079=_G3148]
+ (11)  [_G3583=_G3632, - (k6_partfun1(_G3583)=k6_partfun1(_G3632))]
+ (12)  [_G3861=_G3910, - (k1_zfmisc_1(_G3861)=k1_zfmisc_1(_G3910))]
+ (13)  [_G5674=_G5723, - (u1_struct_0(_G5674)=u1_struct_0(_G5723))]
+ (14)  [_G5943=_G5992, - (k3_struct_0(_G5943)=k3_struct_0(_G5992))]
+ (15)  [- (k8_relset_1(_G4139, _G4346, _G4557, _G4772)=k8_relset_1(_G4242, _G4451, _G4664, _G4881)), _G4139=_G4242, _G4346=_G4451, _G4557=_G4664, _G4772=_G4881]
+
+Connection Proof:
+-----------------
+1  [k8_relset_1(u1_struct_0(1^[]), u1_struct_0(1^[]), k3_struct_0(1^[]), 2^[])=2^[]]   (3)  
+1.1  [- (k8_relset_1(u1_struct_0(1^[]), u1_struct_0(1^[]), k3_struct_0(1^[]), 2^[])=2^[]), k8_relset_1(u1_struct_0(1^[]), u1_struct_0(1^[]), k3_struct_0(1^[]), 2^[])=k8_relset_1(u1_struct_0(1^[]), u1_struct_0(1^[]), k6_partfun1(u1_struct_0(1^[])), 2^[]), k8_relset_1(u1_struct_0(1^[]), u1_struct_0(1^[]), k6_partfun1(u1_struct_0(1^[])), 2^[])=2^[]]   (8)  substitution:[[_G2225, _G2338, _G2281], [k8_relset_1(u1_struct_0(1^[]), u1_struct_0(1^[]), k3_struct_0(1^[]), 2^[]), 2^[], k8_relset_1(u1_struct_0(1^[]), u1_struct_0(1^[]), k6_partfun1(u1_struct_0(1^[])), 2^[])]]
+1.1.1  [- (k8_relset_1(u1_struct_0(1^[]), u1_struct_0(1^[]), k3_struct_0(1^[]), 2^[])=k8_relset_1(u1_struct_0(1^[]), u1_struct_0(1^[]), k6_partfun1(u1_struct_0(1^[])), 2^[])), u1_struct_0(1^[])=u1_struct_0(1^[]), u1_struct_0(1^[])=u1_struct_0(1^[]), k3_struct_0(1^[])=k6_partfun1(u1_struct_0(1^[])), 2^[]=2^[]]   (15)  substitution:[[_G4139, _G4346, _G4557, _G4772, _G4242, _G4451, _G4664, _G4881], [u1_struct_0(1^[]), u1_struct_0(1^[]), k3_struct_0(1^[]), 2^[], u1_struct_0(1^[]), u1_struct_0(1^[]), k6_partfun1(u1_struct_0(1^[])), 2^[]]]
+1.1.1.1  [- (u1_struct_0(1^[])=u1_struct_0(1^[]))]   (6)  substitution:[[_G1893], [u1_struct_0(1^[])]]
+1.1.1.2  [- (u1_struct_0(1^[])=u1_struct_0(1^[]))]   (6)  substitution:[[_G1893], [u1_struct_0(1^[])]]
+1.1.1.3  [- (k3_struct_0(1^[])=k6_partfun1(u1_struct_0(1^[]))), l1_struct_0(1^[])]   (4)  substitution:[[_G6326], [1^[]]]
+1.1.1.3.1  [-l1_struct_0(1^[])]   (1)  
+1.1.1.4  [- (2^[]=2^[])]   (6)  substitution:[[_G1893], [2^[]]]
+1.1.2  [- (k8_relset_1(u1_struct_0(1^[]), u1_struct_0(1^[]), k6_partfun1(u1_struct_0(1^[])), 2^[])=2^[]), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (5)  substitution:[[_G6522, _G6576], [u1_struct_0(1^[]), 2^[]]]
+1.1.2.1  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (2)  
+------------------------------------------------------
+End of proof for t3_topgrp_1

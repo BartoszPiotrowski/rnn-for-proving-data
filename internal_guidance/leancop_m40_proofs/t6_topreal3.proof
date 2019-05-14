@@ -1,0 +1,37 @@
+
+t6_topreal3 is a Theorem
+Start of proof for t6_topreal3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], u1_struct_0(k15_euclid(np__2)))]
+ (2)  [-m1_subset_1(2^[], u1_struct_0(k15_euclid(np__2)))]
+ (3)  [- (k17_euclid(1^[])=k17_euclid(2^[]))]
+ (4)  [- (k18_euclid(1^[])=k18_euclid(2^[]))]
+ (5)  [1^[]=2^[]]
+ (6)  [m1_subset_1(_G4873, u1_struct_0(k15_euclid(np__2))), - (_G4873=k19_euclid(k17_euclid(_G4873), k18_euclid(_G4873)))]
+ (7)  [-m1_subset_1(_G2526, _G2663), m1_subset_1(_G2459, _G2594), _G2459=_G2526, _G2594=_G2663]
+ (8)  [- (_G1686=_G1686)]
+ (9)  [_G1785=_G1830, - (_G1830=_G1785)]
+ (10)  [- (_G2018=_G2131), _G2018=_G2074, _G2074=_G2131]
+ (11)  [- (k19_euclid(_G3077, _G3212)=k19_euclid(_G3144, _G3281)), _G3077=_G3144, _G3212=_G3281]
+ (12)  [_G3674=_G3723, - (u1_struct_0(_G3674)=u1_struct_0(_G3723))]
+ (13)  [_G3952=_G4001, - (k15_euclid(_G3952)=k15_euclid(_G4001))]
+ (14)  [_G4230=_G4279, - (k17_euclid(_G4230)=k17_euclid(_G4279))]
+ (15)  [_G4499=_G4548, - (k18_euclid(_G4499)=k18_euclid(_G4548))]
+
+Connection Proof:
+-----------------
+1  [1^[]=2^[]]   (5)  
+1.1  [- (1^[]=2^[]), 2^[]=1^[]]   (9)  substitution:[[_G1830, _G1785], [1^[], 2^[]]]
+1.1.1  [- (2^[]=1^[]), 2^[]=k19_euclid(k17_euclid(2^[]), k18_euclid(2^[])), k19_euclid(k17_euclid(2^[]), k18_euclid(2^[]))=1^[]]   (10)  substitution:[[_G2018, _G2131, _G2074], [2^[], 1^[], k19_euclid(k17_euclid(2^[]), k18_euclid(2^[]))]]
+1.1.1.1  [- (2^[]=k19_euclid(k17_euclid(2^[]), k18_euclid(2^[]))), m1_subset_1(2^[], u1_struct_0(k15_euclid(np__2)))]   (6)  substitution:[[_G4873], [2^[]]]
+1.1.1.1.1  [-m1_subset_1(2^[], u1_struct_0(k15_euclid(np__2)))]   (2)  
+1.1.1.2  [- (k19_euclid(k17_euclid(2^[]), k18_euclid(2^[]))=1^[]), 1^[]=k19_euclid(k17_euclid(2^[]), k18_euclid(2^[]))]   (9)  substitution:[[_G1830, _G1785], [k19_euclid(k17_euclid(2^[]), k18_euclid(2^[])), 1^[]]]
+1.1.1.2.1  [- (1^[]=k19_euclid(k17_euclid(2^[]), k18_euclid(2^[]))), 1^[]=k19_euclid(k17_euclid(1^[]), k18_euclid(1^[])), k19_euclid(k17_euclid(1^[]), k18_euclid(1^[]))=k19_euclid(k17_euclid(2^[]), k18_euclid(2^[]))]   (10)  substitution:[[_G2018, _G2131, _G2074], [1^[], k19_euclid(k17_euclid(2^[]), k18_euclid(2^[])), k19_euclid(k17_euclid(1^[]), k18_euclid(1^[]))]]
+1.1.1.2.1.1  [- (1^[]=k19_euclid(k17_euclid(1^[]), k18_euclid(1^[]))), m1_subset_1(1^[], u1_struct_0(k15_euclid(np__2)))]   (6)  substitution:[[_G4873], [1^[]]]
+1.1.1.2.1.1.1  [-m1_subset_1(1^[], u1_struct_0(k15_euclid(np__2)))]   (1)  
+1.1.1.2.1.2  [- (k19_euclid(k17_euclid(1^[]), k18_euclid(1^[]))=k19_euclid(k17_euclid(2^[]), k18_euclid(2^[]))), k17_euclid(1^[])=k17_euclid(2^[]), k18_euclid(1^[])=k18_euclid(2^[])]   (11)  substitution:[[_G3077, _G3212, _G3144, _G3281], [k17_euclid(1^[]), k18_euclid(1^[]), k17_euclid(2^[]), k18_euclid(2^[])]]
+1.1.1.2.1.2.1  [- (k17_euclid(1^[])=k17_euclid(2^[]))]   (3)  
+1.1.1.2.1.2.2  [- (k18_euclid(1^[])=k18_euclid(2^[]))]   (4)  
+------------------------------------------------------
+End of proof for t6_topreal3

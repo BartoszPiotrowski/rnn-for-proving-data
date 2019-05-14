@@ -1,0 +1,46 @@
+
+t4_topreal6 is a Theorem
+Start of proof for t4_topreal6
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], k1_numbers)]
+ (2)  [k21_rvsum_1(k5_finseq_2(k1_numbers, k6_numbers, 1^[]))=np__1]
+ (3)  [v1_xboole_0(_G7238), -v7_ordinal1(_G7238)]
+ (4)  [v1_xboole_0(k1_numbers)]
+ (5)  [-v1_xboole_0(k1_xboole_0)]
+ (6)  [- (k6_numbers=k1_xboole_0)]
+ (7)  [m2_finseq_2(_G8151, k1_numbers, k4_finseq_2(k6_numbers, k1_numbers)), - (k21_rvsum_1(_G8151)=np__1)]
+ (8)  [-m2_finseq_2(k5_finseq_2(_G7369, _G7439, _G7510), _G7369, k4_finseq_2(_G7439, _G7369)), -v1_xboole_0(_G7369), v7_ordinal1(_G7439), m1_subset_1(_G7510, _G7369)]
+ (9)  [- (k4_finseq_2(_G5281, _G5416)=k4_finseq_2(_G5348, _G5485)), _G5281=_G5348, _G5416=_G5485]
+ (10)  [_G5878=_G5927, - (k21_rvsum_1(_G5878)=k21_rvsum_1(_G5927))]
+ (11)  [- (k5_finseq_2(_G6147, _G6318, _G6493)=k5_finseq_2(_G6232, _G6405, _G6582)), _G6147=_G6232, _G6318=_G6405, _G6493=_G6582]
+ (12)  [- (_G2243=_G2243)]
+ (13)  [_G2342=_G2387, - (_G2387=_G2342)]
+ (14)  [- (_G2575=_G2688), _G2575=_G2631, _G2631=_G2688]
+ (15)  [-v7_ordinal1(_G3074), _G3025=_G3074, v7_ordinal1(_G3025)]
+ (16)  [-v1_xboole_0(_G3352), _G3303=_G3352, v1_xboole_0(_G3303)]
+ (17)  [-m1_subset_1(_G4667, _G4804), m1_subset_1(_G4600, _G4735), _G4600=_G4667, _G4735=_G4804]
+ (18)  [-m2_finseq_2(_G3666, _G3839, _G4016), m2_finseq_2(_G3581, _G3752, _G3927), _G3581=_G3666, _G3752=_G3839, _G3927=_G4016]
+
+Connection Proof:
+-----------------
+1  [k21_rvsum_1(k5_finseq_2(k1_numbers, k6_numbers, 1^[]))=np__1]   (2)  
+1.1  [- (k21_rvsum_1(k5_finseq_2(k1_numbers, k6_numbers, 1^[]))=np__1), m2_finseq_2(k5_finseq_2(k1_numbers, k6_numbers, 1^[]), k1_numbers, k4_finseq_2(k6_numbers, k1_numbers))]   (7)  substitution:[[_G8151], [k5_finseq_2(k1_numbers, k6_numbers, 1^[])]]
+1.1.1  [-m2_finseq_2(k5_finseq_2(k1_numbers, k6_numbers, 1^[]), k1_numbers, k4_finseq_2(k6_numbers, k1_numbers)), m2_finseq_2(k5_finseq_2(k1_numbers, k1_xboole_0, 1^[]), k1_numbers, k4_finseq_2(k1_xboole_0, k1_numbers)), k5_finseq_2(k1_numbers, k1_xboole_0, 1^[])=k5_finseq_2(k1_numbers, k6_numbers, 1^[]), k1_numbers=k1_numbers, k4_finseq_2(k1_xboole_0, k1_numbers)=k4_finseq_2(k6_numbers, k1_numbers)]   (18)  substitution:[[_G3666, _G3839, _G4016, _G3581, _G3752, _G3927], [k5_finseq_2(k1_numbers, k6_numbers, 1^[]), k1_numbers, k4_finseq_2(k6_numbers, k1_numbers), k5_finseq_2(k1_numbers, k1_xboole_0, 1^[]), k1_numbers, k4_finseq_2(k1_xboole_0, k1_numbers)]]
+1.1.1.1  [-m2_finseq_2(k5_finseq_2(k1_numbers, k1_xboole_0, 1^[]), k1_numbers, k4_finseq_2(k1_xboole_0, k1_numbers)), -v1_xboole_0(k1_numbers), v7_ordinal1(k1_xboole_0), m1_subset_1(1^[], k1_numbers)]   (8)  substitution:[[_G7369, _G7439, _G7510], [k1_numbers, k1_xboole_0, 1^[]]]
+1.1.1.1.1  [v1_xboole_0(k1_numbers)]   (4)  
+1.1.1.1.2  [-v7_ordinal1(k1_xboole_0), v1_xboole_0(k1_xboole_0)]   (3)  substitution:[[_G7238], [k1_xboole_0]]
+1.1.1.1.2.1  [-v1_xboole_0(k1_xboole_0)]   (5)  
+1.1.1.1.3  [-m1_subset_1(1^[], k1_numbers)]   (1)  
+1.1.1.2  [- (k5_finseq_2(k1_numbers, k1_xboole_0, 1^[])=k5_finseq_2(k1_numbers, k6_numbers, 1^[])), k1_numbers=k1_numbers, k1_xboole_0=k6_numbers, 1^[]=1^[]]   (11)  substitution:[[_G6147, _G6318, _G6493, _G6232, _G6405, _G6582], [k1_numbers, k1_xboole_0, 1^[], k1_numbers, k6_numbers, 1^[]]]
+1.1.1.2.1  [- (k1_numbers=k1_numbers)]   (12)  substitution:[[_G2243], [k1_numbers]]
+1.1.1.2.2  [- (k1_xboole_0=k6_numbers), k6_numbers=k1_xboole_0]   (13)  substitution:[[_G2387, _G2342], [k1_xboole_0, k6_numbers]]
+1.1.1.2.2.1  [- (k6_numbers=k1_xboole_0)]   (6)  
+1.1.1.2.3  [- (1^[]=1^[])]   (12)  substitution:[[_G2243], [1^[]]]
+1.1.1.3  [- (k1_numbers=k1_numbers)]   (12)  substitution:[[_G2243], [k1_numbers]]
+1.1.1.4  [- (k4_finseq_2(k1_xboole_0, k1_numbers)=k4_finseq_2(k6_numbers, k1_numbers)), k1_xboole_0=k6_numbers, k1_numbers=k1_numbers]   (9)  substitution:[[_G5281, _G5416, _G5348, _G5485], [k1_xboole_0, k1_numbers, k6_numbers, k1_numbers]]
+1.1.1.4.1  [- (k1_xboole_0=k6_numbers), k6_numbers=k1_xboole_0]   (13)  substitution:[[_G2387, _G2342], [k1_xboole_0, k6_numbers]]
+1.1.1.4.1.1  [- (k6_numbers=k1_xboole_0)]   (6)  
+1.1.1.4.2  [- (k1_numbers=k1_numbers)]   (12)  substitution:[[_G2243], [k1_numbers]]
+------------------------------------------------------
+End of proof for t4_topreal6

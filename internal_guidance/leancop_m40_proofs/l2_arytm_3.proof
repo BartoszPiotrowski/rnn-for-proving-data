@@ -1,0 +1,35 @@
+
+l2_arytm_3 is a Theorem
+Start of proof for l2_arytm_3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [r2_hidden(np__1, k4_ordinal1)]
+ (2)  [v7_ordinal1(_G3735), -v3_ordinal1(_G3735)]
+ (3)  [-r2_hidden(k1_xboole_0, k4_ordinal1)]
+ (4)  [- (np__1=k1_ordinal1(k1_xboole_0))]
+ (5)  [-v7_ordinal1(k1_ordinal1(_G4023)), v3_ordinal1(_G4023), v7_ordinal1(_G4023)]
+ (6)  [v7_ordinal1(_G3866), -r2_hidden(_G3866, k4_ordinal1)]
+ (7)  [-v7_ordinal1(_G3866), r2_hidden(_G3866, k4_ordinal1)]
+ (8)  [_G3436=_G3485, - (k1_ordinal1(_G3436)=k1_ordinal1(_G3485))]
+ (9)  [- (_G1456=_G1456)]
+ (10)  [_G1555=_G1600, - (_G1600=_G1555)]
+ (11)  [- (_G1788=_G1901), _G1788=_G1844, _G1844=_G1901]
+ (12)  [-v3_ordinal1(_G2287), _G2238=_G2287, v3_ordinal1(_G2238)]
+ (13)  [-v7_ordinal1(_G2565), _G2516=_G2565, v7_ordinal1(_G2516)]
+ (14)  [-r2_hidden(_G2852, _G2989), r2_hidden(_G2785, _G2920), _G2785=_G2852, _G2920=_G2989]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(np__1, k4_ordinal1)]   (1)  
+1.1  [-r2_hidden(np__1, k4_ordinal1), v7_ordinal1(np__1)]   (6)  substitution:[[_G3866], [np__1]]
+1.1.1  [-v7_ordinal1(np__1), k1_ordinal1(k1_xboole_0)=np__1, v7_ordinal1(k1_ordinal1(k1_xboole_0))]   (13)  substitution:[[_G2565, _G2516], [np__1, k1_ordinal1(k1_xboole_0)]]
+1.1.1.1  [- (k1_ordinal1(k1_xboole_0)=np__1), np__1=k1_ordinal1(k1_xboole_0)]   (10)  substitution:[[_G1600, _G1555], [k1_ordinal1(k1_xboole_0), np__1]]
+1.1.1.1.1  [- (np__1=k1_ordinal1(k1_xboole_0))]   (4)  
+1.1.1.2  [-v7_ordinal1(k1_ordinal1(k1_xboole_0)), v3_ordinal1(k1_xboole_0), v7_ordinal1(k1_xboole_0)]   (5)  substitution:[[_G4023], [k1_xboole_0]]
+1.1.1.2.1  [-v3_ordinal1(k1_xboole_0), v7_ordinal1(k1_xboole_0)]   (2)  substitution:[[_G3735], [k1_xboole_0]]
+1.1.1.2.1.1  [-v7_ordinal1(k1_xboole_0), r2_hidden(k1_xboole_0, k4_ordinal1)]   (7)  substitution:[[_G3866], [k1_xboole_0]]
+1.1.1.2.1.1.1  [-r2_hidden(k1_xboole_0, k4_ordinal1)]   (3)  
+1.1.1.2.2  [-v7_ordinal1(k1_xboole_0), r2_hidden(k1_xboole_0, k4_ordinal1)]   (7)  substitution:[[_G3866], [k1_xboole_0]]
+1.1.1.2.2.1  [-r2_hidden(k1_xboole_0, k4_ordinal1)]   (3)  
+------------------------------------------------------
+End of proof for l2_arytm_3

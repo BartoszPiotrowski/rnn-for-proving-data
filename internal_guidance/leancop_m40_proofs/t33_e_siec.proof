@@ -1,0 +1,37 @@
+
+t33_e_siec is a Theorem
+Start of proof for t33_e_siec
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v2_e_siec(1^[])]
+ (2)  [-v3_e_siec(1^[])]
+ (3)  [-l1_e_siec(1^[])]
+ (4)  [r1_tarski(k2_relat_1(k4_xboole_0(u1_e_siec(1^[]), k4_relat_1(u1_struct_0(1^[])))), k2_zfmisc_1(k7_e_siec(1^[]), k8_e_siec(1^[]))), r1_tarski(k2_relat_1(k4_xboole_0(u2_e_siec(1^[]), k4_relat_1(u1_struct_0(1^[])))), k2_zfmisc_1(k7_e_siec(1^[]), k8_e_siec(1^[])))]
+ (5)  [l1_e_siec(_G1121), -v1_relat_1(u1_e_siec(_G1121))]
+ (6)  [l1_e_siec(_G1268), -v1_relat_1(u2_e_siec(_G1268))]
+ (7)  [v1_relat_1(_G1415), -v1_relat_1(k4_xboole_0(_G1415, _G1461))]
+ (8)  [v1_relat_1(_G2451), r1_tarski(_G2451, k2_zfmisc_1(_G2324, _G2387)), -r1_tarski(k2_relat_1(_G2451), k2_zfmisc_1(_G2387, _G2324))]
+ (9)  [-r1_tarski(k4_xboole_0(u1_e_siec(_G1648), k4_relat_1(u1_struct_0(_G1648))), k2_zfmisc_1(k8_e_siec(_G1648), k7_e_siec(_G1648))), v2_e_siec(_G1648), v3_e_siec(_G1648), l1_e_siec(_G1648)]
+ (10)  [-r1_tarski(k4_xboole_0(u2_e_siec(_G1648), k4_relat_1(u1_struct_0(_G1648))), k2_zfmisc_1(k8_e_siec(_G1648), k7_e_siec(_G1648))), v2_e_siec(_G1648), v3_e_siec(_G1648), l1_e_siec(_G1648)]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k2_relat_1(k4_xboole_0(u1_e_siec(1^[]), k4_relat_1(u1_struct_0(1^[])))), k2_zfmisc_1(k7_e_siec(1^[]), k8_e_siec(1^[]))), r1_tarski(k2_relat_1(k4_xboole_0(u2_e_siec(1^[]), k4_relat_1(u1_struct_0(1^[])))), k2_zfmisc_1(k7_e_siec(1^[]), k8_e_siec(1^[])))]   (4)  
+1.1  [-r1_tarski(k2_relat_1(k4_xboole_0(u1_e_siec(1^[]), k4_relat_1(u1_struct_0(1^[])))), k2_zfmisc_1(k7_e_siec(1^[]), k8_e_siec(1^[]))), v1_relat_1(k4_xboole_0(u1_e_siec(1^[]), k4_relat_1(u1_struct_0(1^[])))), r1_tarski(k4_xboole_0(u1_e_siec(1^[]), k4_relat_1(u1_struct_0(1^[]))), k2_zfmisc_1(k8_e_siec(1^[]), k7_e_siec(1^[])))]   (8)  substitution:[[_G2451, _G2387, _G2324], [k4_xboole_0(u1_e_siec(1^[]), k4_relat_1(u1_struct_0(1^[]))), k7_e_siec(1^[]), k8_e_siec(1^[])]]
+1.1.1  [-v1_relat_1(k4_xboole_0(u1_e_siec(1^[]), k4_relat_1(u1_struct_0(1^[])))), v1_relat_1(u1_e_siec(1^[]))]   (7)  substitution:[[_G1415, _G1461], [u1_e_siec(1^[]), k4_relat_1(u1_struct_0(1^[]))]]
+1.1.1.1  [-v1_relat_1(u1_e_siec(1^[])), l1_e_siec(1^[])]   (5)  substitution:[[_G1121], [1^[]]]
+1.1.1.1.1  [-l1_e_siec(1^[])]   (3)  
+1.1.2  [-r1_tarski(k4_xboole_0(u1_e_siec(1^[]), k4_relat_1(u1_struct_0(1^[]))), k2_zfmisc_1(k8_e_siec(1^[]), k7_e_siec(1^[]))), v2_e_siec(1^[]), v3_e_siec(1^[]), l1_e_siec(1^[])]   (9)  substitution:[[_G1648], [1^[]]]
+1.1.2.1  [-v2_e_siec(1^[])]   (1)  
+1.1.2.2  [-v3_e_siec(1^[])]   (2)  
+1.1.2.3  [-l1_e_siec(1^[])]   (3)  
+1.2  [-r1_tarski(k2_relat_1(k4_xboole_0(u2_e_siec(1^[]), k4_relat_1(u1_struct_0(1^[])))), k2_zfmisc_1(k7_e_siec(1^[]), k8_e_siec(1^[]))), v1_relat_1(k4_xboole_0(u2_e_siec(1^[]), k4_relat_1(u1_struct_0(1^[])))), r1_tarski(k4_xboole_0(u2_e_siec(1^[]), k4_relat_1(u1_struct_0(1^[]))), k2_zfmisc_1(k8_e_siec(1^[]), k7_e_siec(1^[])))]   (8)  substitution:[[_G2451, _G2387, _G2324], [k4_xboole_0(u2_e_siec(1^[]), k4_relat_1(u1_struct_0(1^[]))), k7_e_siec(1^[]), k8_e_siec(1^[])]]
+1.2.1  [-v1_relat_1(k4_xboole_0(u2_e_siec(1^[]), k4_relat_1(u1_struct_0(1^[])))), v1_relat_1(u2_e_siec(1^[]))]   (7)  substitution:[[_G1415, _G1461], [u2_e_siec(1^[]), k4_relat_1(u1_struct_0(1^[]))]]
+1.2.1.1  [-v1_relat_1(u2_e_siec(1^[])), l1_e_siec(1^[])]   (6)  substitution:[[_G1268], [1^[]]]
+1.2.1.1.1  [-l1_e_siec(1^[])]   (3)  
+1.2.2  [-r1_tarski(k4_xboole_0(u2_e_siec(1^[]), k4_relat_1(u1_struct_0(1^[]))), k2_zfmisc_1(k8_e_siec(1^[]), k7_e_siec(1^[]))), v2_e_siec(1^[]), v3_e_siec(1^[]), l1_e_siec(1^[])]   (10)  substitution:[[_G1648], [1^[]]]
+1.2.2.1  [-v2_e_siec(1^[])]   (1)  
+1.2.2.2  [-v3_e_siec(1^[])]   (2)  
+1.2.2.3  [-l1_e_siec(1^[])]   (3)  
+------------------------------------------------------
+End of proof for t33_e_siec

@@ -1,0 +1,55 @@
+
+t6_ff_siec is a Theorem
+Start of proof for t6_ff_siec
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [u1_struct_0(k6_ff_siec)=k1_xboole_0, u4_struct_0(k6_ff_siec)=k1_xboole_0, k1_net_1(k6_ff_siec)=k1_xboole_0]
+ (2)  [- (k2_ff_siec(_G4178)=k1_ff_siec(_G4178, k1_xboole_0))]
+ (3)  [- (k6_ff_siec=k1_ff_siec(k1_xboole_0, k1_xboole_0))]
+ (4)  [- (u1_struct_0(k2_ff_siec(_G4422))=_G4422)]
+ (5)  [- (u4_struct_0(k2_ff_siec(_G4422))=k1_xboole_0)]
+ (6)  [- (k1_net_1(k2_ff_siec(_G4422))=k1_xboole_0)]
+ (7)  [- (_G1591=_G1591)]
+ (8)  [_G1690=_G1735, - (_G1735=_G1690)]
+ (9)  [- (_G1923=_G2036), _G1923=_G1979, _G1979=_G2036]
+ (10)  [- (k1_ff_siec(_G2373, _G2508)=k1_ff_siec(_G2440, _G2577)), _G2373=_G2440, _G2508=_G2577]
+ (11)  [_G2970=_G3019, - (k2_ff_siec(_G2970)=k2_ff_siec(_G3019))]
+ (12)  [_G3248=_G3297, - (u1_struct_0(_G3248)=u1_struct_0(_G3297))]
+ (13)  [_G3526=_G3575, - (u4_struct_0(_G3526)=u4_struct_0(_G3575))]
+ (14)  [_G3795=_G3844, - (k1_net_1(_G3795)=k1_net_1(_G3844))]
+
+Connection Proof:
+-----------------
+1  [u1_struct_0(k6_ff_siec)=k1_xboole_0, u4_struct_0(k6_ff_siec)=k1_xboole_0, k1_net_1(k6_ff_siec)=k1_xboole_0]   (1)  
+1.1  [- (u1_struct_0(k6_ff_siec)=k1_xboole_0), k1_xboole_0=u1_struct_0(k6_ff_siec)]   (8)  substitution:[[_G1735, _G1690], [u1_struct_0(k6_ff_siec), k1_xboole_0]]
+1.1.1  [- (k1_xboole_0=u1_struct_0(k6_ff_siec)), k1_xboole_0=u1_struct_0(k2_ff_siec(k1_xboole_0)), u1_struct_0(k2_ff_siec(k1_xboole_0))=u1_struct_0(k6_ff_siec)]   (9)  substitution:[[_G1923, _G2036, _G1979], [k1_xboole_0, u1_struct_0(k6_ff_siec), u1_struct_0(k2_ff_siec(k1_xboole_0))]]
+1.1.1.1  [- (k1_xboole_0=u1_struct_0(k2_ff_siec(k1_xboole_0))), u1_struct_0(k2_ff_siec(k1_xboole_0))=k1_xboole_0]   (8)  substitution:[[_G1735, _G1690], [k1_xboole_0, u1_struct_0(k2_ff_siec(k1_xboole_0))]]
+1.1.1.1.1  [- (u1_struct_0(k2_ff_siec(k1_xboole_0))=k1_xboole_0)]   (4)  substitution:[[_G4422], [k1_xboole_0]]
+1.1.1.2  [- (u1_struct_0(k2_ff_siec(k1_xboole_0))=u1_struct_0(k6_ff_siec)), u1_struct_0(k2_ff_siec(k1_xboole_0))=u1_struct_0(k1_ff_siec(k1_xboole_0, k1_xboole_0)), u1_struct_0(k1_ff_siec(k1_xboole_0, k1_xboole_0))=u1_struct_0(k6_ff_siec)]   (9)  substitution:[[_G1923, _G2036, _G1979], [u1_struct_0(k2_ff_siec(k1_xboole_0)), u1_struct_0(k6_ff_siec), u1_struct_0(k1_ff_siec(k1_xboole_0, k1_xboole_0))]]
+1.1.1.2.1  [- (u1_struct_0(k2_ff_siec(k1_xboole_0))=u1_struct_0(k1_ff_siec(k1_xboole_0, k1_xboole_0))), k2_ff_siec(k1_xboole_0)=k1_ff_siec(k1_xboole_0, k1_xboole_0)]   (12)  substitution:[[_G3248, _G3297], [k2_ff_siec(k1_xboole_0), k1_ff_siec(k1_xboole_0, k1_xboole_0)]]
+1.1.1.2.1.1  [- (k2_ff_siec(k1_xboole_0)=k1_ff_siec(k1_xboole_0, k1_xboole_0))]   (2)  substitution:[[_G4178], [k1_xboole_0]]
+1.1.1.2.2  [- (u1_struct_0(k1_ff_siec(k1_xboole_0, k1_xboole_0))=u1_struct_0(k6_ff_siec)), u1_struct_0(k6_ff_siec)=u1_struct_0(k1_ff_siec(k1_xboole_0, k1_xboole_0))]   (8)  substitution:[[_G1735, _G1690], [u1_struct_0(k1_ff_siec(k1_xboole_0, k1_xboole_0)), u1_struct_0(k6_ff_siec)]]
+1.1.1.2.2.1  [- (u1_struct_0(k6_ff_siec)=u1_struct_0(k1_ff_siec(k1_xboole_0, k1_xboole_0))), k6_ff_siec=k1_ff_siec(k1_xboole_0, k1_xboole_0)]   (12)  substitution:[[_G3248, _G3297], [k6_ff_siec, k1_ff_siec(k1_xboole_0, k1_xboole_0)]]
+1.1.1.2.2.1.1  [- (k6_ff_siec=k1_ff_siec(k1_xboole_0, k1_xboole_0))]   (3)  
+1.2  [- (u4_struct_0(k6_ff_siec)=k1_xboole_0), k1_xboole_0=u4_struct_0(k6_ff_siec)]   (8)  substitution:[[_G1735, _G1690], [u4_struct_0(k6_ff_siec), k1_xboole_0]]
+1.2.1  [- (k1_xboole_0=u4_struct_0(k6_ff_siec)), k1_xboole_0=u4_struct_0(k2_ff_siec(k1_xboole_0)), u4_struct_0(k2_ff_siec(k1_xboole_0))=u4_struct_0(k6_ff_siec)]   (9)  substitution:[[_G1923, _G2036, _G1979], [k1_xboole_0, u4_struct_0(k6_ff_siec), u4_struct_0(k2_ff_siec(k1_xboole_0))]]
+1.2.1.1  [- (k1_xboole_0=u4_struct_0(k2_ff_siec(k1_xboole_0))), u4_struct_0(k2_ff_siec(k1_xboole_0))=k1_xboole_0]   (8)  substitution:[[_G1735, _G1690], [k1_xboole_0, u4_struct_0(k2_ff_siec(k1_xboole_0))]]
+1.2.1.1.1  [- (u4_struct_0(k2_ff_siec(k1_xboole_0))=k1_xboole_0)]   (5)  substitution:[[_G4422], [k1_xboole_0]]
+1.2.1.2  [- (u4_struct_0(k2_ff_siec(k1_xboole_0))=u4_struct_0(k6_ff_siec)), u4_struct_0(k2_ff_siec(k1_xboole_0))=u4_struct_0(k1_ff_siec(k1_xboole_0, k1_xboole_0)), u4_struct_0(k1_ff_siec(k1_xboole_0, k1_xboole_0))=u4_struct_0(k6_ff_siec)]   (9)  substitution:[[_G1923, _G2036, _G1979], [u4_struct_0(k2_ff_siec(k1_xboole_0)), u4_struct_0(k6_ff_siec), u4_struct_0(k1_ff_siec(k1_xboole_0, k1_xboole_0))]]
+1.2.1.2.1  [- (u4_struct_0(k2_ff_siec(k1_xboole_0))=u4_struct_0(k1_ff_siec(k1_xboole_0, k1_xboole_0))), k2_ff_siec(k1_xboole_0)=k1_ff_siec(k1_xboole_0, k1_xboole_0)]   (13)  substitution:[[_G3526, _G3575], [k2_ff_siec(k1_xboole_0), k1_ff_siec(k1_xboole_0, k1_xboole_0)]]
+1.2.1.2.1.1  [- (k2_ff_siec(k1_xboole_0)=k1_ff_siec(k1_xboole_0, k1_xboole_0))]   (2)  substitution:[[_G4178], [k1_xboole_0]]
+1.2.1.2.2  [- (u4_struct_0(k1_ff_siec(k1_xboole_0, k1_xboole_0))=u4_struct_0(k6_ff_siec)), u4_struct_0(k6_ff_siec)=u4_struct_0(k1_ff_siec(k1_xboole_0, k1_xboole_0))]   (8)  substitution:[[_G1735, _G1690], [u4_struct_0(k1_ff_siec(k1_xboole_0, k1_xboole_0)), u4_struct_0(k6_ff_siec)]]
+1.2.1.2.2.1  [- (u4_struct_0(k6_ff_siec)=u4_struct_0(k1_ff_siec(k1_xboole_0, k1_xboole_0))), k6_ff_siec=k1_ff_siec(k1_xboole_0, k1_xboole_0)]   (13)  substitution:[[_G3526, _G3575], [k6_ff_siec, k1_ff_siec(k1_xboole_0, k1_xboole_0)]]
+1.2.1.2.2.1.1  [- (k6_ff_siec=k1_ff_siec(k1_xboole_0, k1_xboole_0))]   (3)  
+1.3  [- (k1_net_1(k6_ff_siec)=k1_xboole_0), k1_xboole_0=k1_net_1(k6_ff_siec)]   (8)  substitution:[[_G1735, _G1690], [k1_net_1(k6_ff_siec), k1_xboole_0]]
+1.3.1  [- (k1_xboole_0=k1_net_1(k6_ff_siec)), k1_xboole_0=k1_net_1(k2_ff_siec(k1_xboole_0)), k1_net_1(k2_ff_siec(k1_xboole_0))=k1_net_1(k6_ff_siec)]   (9)  substitution:[[_G1923, _G2036, _G1979], [k1_xboole_0, k1_net_1(k6_ff_siec), k1_net_1(k2_ff_siec(k1_xboole_0))]]
+1.3.1.1  [- (k1_xboole_0=k1_net_1(k2_ff_siec(k1_xboole_0))), k1_net_1(k2_ff_siec(k1_xboole_0))=k1_xboole_0]   (8)  substitution:[[_G1735, _G1690], [k1_xboole_0, k1_net_1(k2_ff_siec(k1_xboole_0))]]
+1.3.1.1.1  [- (k1_net_1(k2_ff_siec(k1_xboole_0))=k1_xboole_0)]   (6)  substitution:[[_G4422], [k1_xboole_0]]
+1.3.1.2  [- (k1_net_1(k2_ff_siec(k1_xboole_0))=k1_net_1(k6_ff_siec)), k1_net_1(k2_ff_siec(k1_xboole_0))=k1_net_1(k1_ff_siec(k1_xboole_0, k1_xboole_0)), k1_net_1(k1_ff_siec(k1_xboole_0, k1_xboole_0))=k1_net_1(k6_ff_siec)]   (9)  substitution:[[_G1923, _G2036, _G1979], [k1_net_1(k2_ff_siec(k1_xboole_0)), k1_net_1(k6_ff_siec), k1_net_1(k1_ff_siec(k1_xboole_0, k1_xboole_0))]]
+1.3.1.2.1  [- (k1_net_1(k2_ff_siec(k1_xboole_0))=k1_net_1(k1_ff_siec(k1_xboole_0, k1_xboole_0))), k2_ff_siec(k1_xboole_0)=k1_ff_siec(k1_xboole_0, k1_xboole_0)]   (14)  substitution:[[_G3795, _G3844], [k2_ff_siec(k1_xboole_0), k1_ff_siec(k1_xboole_0, k1_xboole_0)]]
+1.3.1.2.1.1  [- (k2_ff_siec(k1_xboole_0)=k1_ff_siec(k1_xboole_0, k1_xboole_0))]   (2)  substitution:[[_G4178], [k1_xboole_0]]
+1.3.1.2.2  [- (k1_net_1(k1_ff_siec(k1_xboole_0, k1_xboole_0))=k1_net_1(k6_ff_siec)), k1_net_1(k6_ff_siec)=k1_net_1(k1_ff_siec(k1_xboole_0, k1_xboole_0))]   (8)  substitution:[[_G1735, _G1690], [k1_net_1(k1_ff_siec(k1_xboole_0, k1_xboole_0)), k1_net_1(k6_ff_siec)]]
+1.3.1.2.2.1  [- (k1_net_1(k6_ff_siec)=k1_net_1(k1_ff_siec(k1_xboole_0, k1_xboole_0))), k6_ff_siec=k1_ff_siec(k1_xboole_0, k1_xboole_0)]   (14)  substitution:[[_G3795, _G3844], [k6_ff_siec, k1_ff_siec(k1_xboole_0, k1_xboole_0)]]
+1.3.1.2.2.1.1  [- (k6_ff_siec=k1_ff_siec(k1_xboole_0, k1_xboole_0))]   (3)  
+------------------------------------------------------
+End of proof for t6_ff_siec

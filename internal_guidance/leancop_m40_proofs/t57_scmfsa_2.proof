@@ -1,0 +1,56 @@
+
+t57_scmfsa_2 is a Theorem
+Start of proof for t57_scmfsa_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_scmfsa_2(4^[])]
+ (2)  [- (4^[]=k4_struct_0(k1_scmfsa_2))]
+ (3)  [v1_xboole_0(_G7462), r2_hidden(_G7540, _G7462)]
+ (4)  [-v1_xboole_0(_G7462), -r2_hidden(1^[_G7462], _G7462)]
+ (5)  [m1_subset_1(_G7690, u1_struct_0(k1_scmfsa_2)), m1_scmfsa_2(_G7690), -r2_hidden(_G7690, k3_scmfsa_1)]
+ (6)  [m1_subset_1(_G7690, u1_struct_0(k1_scmfsa_2)), -m1_scmfsa_2(_G7690), r2_hidden(_G7690, k3_scmfsa_1)]
+ (7)  [m1_scmfsa_2(_G7945), -m1_subset_1(_G7945, u1_struct_0(k1_scmfsa_2))]
+ (8)  [-m1_scmfsa_2(2^[])]
+ (9)  [-v1_xboole_0(_G8248), -v1_xboole_0(_G8189), r1_subset_1(_G8189, _G8248), -r1_xboole_0(_G8189, _G8248)]
+ (10)  [-v1_xboole_0(_G8248), -v1_xboole_0(_G8189), -r1_subset_1(_G8189, _G8248), r1_xboole_0(_G8189, _G8248)]
+ (11)  [- (k4_struct_0(k1_scmfsa_2)=k5_numbers)]
+ (12)  [-r2_hidden(k5_numbers, k1_ami_2)]
+ (13)  [-r1_subset_1(k3_scmfsa_1, k1_ami_2)]
+ (14)  [-r1_xboole_0(_G8769, _G8856), -r2_hidden(3^[_G8856, _G8769], _G8769)]
+ (15)  [-r1_xboole_0(_G8769, _G8856), -r2_hidden(3^[_G8856, _G8769], _G8856)]
+ (16)  [r1_xboole_0(_G8769, _G8856), r2_hidden(_G9276, _G8769), r2_hidden(_G9276, _G8856)]
+ (17)  [_G6873=_G6922, - (u1_struct_0(_G6873)=u1_struct_0(_G6922))]
+ (18)  [_G7142=_G7191, - (k4_struct_0(_G7142)=k4_struct_0(_G7191))]
+ (19)  [- (_G3030=_G3030)]
+ (20)  [_G3129=_G3174, - (_G3174=_G3129)]
+ (21)  [- (_G3362=_G3475), _G3362=_G3418, _G3418=_G3475]
+ (22)  [-m1_subset_1(_G3879, _G4016), m1_subset_1(_G3812, _G3947), _G3812=_G3879, _G3947=_G4016]
+ (23)  [-v1_xboole_0(_G4458), _G4409=_G4458, v1_xboole_0(_G4409)]
+ (24)  [-r1_subset_1(_G4754, _G4891), r1_subset_1(_G4687, _G4822), _G4687=_G4754, _G4822=_G4891]
+ (25)  [-r2_hidden(_G5351, _G5488), r2_hidden(_G5284, _G5419), _G5284=_G5351, _G5419=_G5488]
+ (26)  [-m1_scmfsa_2(_G6518), _G6469=_G6518, m1_scmfsa_2(_G6469)]
+ (27)  [-r1_xboole_0(_G5948, _G6085), r1_xboole_0(_G5881, _G6016), _G5881=_G5948, _G6016=_G6085]
+
+Connection Proof:
+-----------------
+1  [r1_xboole_0(k3_scmfsa_1, k1_ami_2), r2_hidden(4^[], k3_scmfsa_1), r2_hidden(4^[], k1_ami_2)]   (16)  substitution:[[_G8769, _G8856, _G9276], [k3_scmfsa_1, k1_ami_2, 4^[]]]
+1.1  [-r1_xboole_0(k3_scmfsa_1, k1_ami_2), -v1_xboole_0(k1_ami_2), -v1_xboole_0(k3_scmfsa_1), r1_subset_1(k3_scmfsa_1, k1_ami_2)]   (9)  substitution:[[_G8189, _G8248], [k3_scmfsa_1, k1_ami_2]]
+1.1.1  [v1_xboole_0(k1_ami_2), r2_hidden(k5_numbers, k1_ami_2)]   (3)  substitution:[[_G7462, _G7540], [k1_ami_2, k5_numbers]]
+1.1.1.1  [-r2_hidden(k5_numbers, k1_ami_2)]   (12)  
+1.1.2  [v1_xboole_0(k3_scmfsa_1), r2_hidden(3^[k1_ami_2, k3_scmfsa_1], k3_scmfsa_1)]   (3)  substitution:[[_G7462, _G7540], [k3_scmfsa_1, 3^[k1_ami_2, k3_scmfsa_1]]]
+1.1.2.1  [-r2_hidden(3^[k1_ami_2, k3_scmfsa_1], k3_scmfsa_1), -r1_xboole_0(k3_scmfsa_1, k1_ami_2)]   (14)  substitution:[[_G8856, _G8769], [k1_ami_2, k3_scmfsa_1]]
+1.1.2.1.1  [r1_xboole_0(k3_scmfsa_1, k1_ami_2)]   (reduction:1)  
+1.1.3  [-r1_subset_1(k3_scmfsa_1, k1_ami_2)]   (13)  
+1.2  [-r2_hidden(4^[], k3_scmfsa_1), m1_subset_1(4^[], u1_struct_0(k1_scmfsa_2)), m1_scmfsa_2(4^[])]   (5)  substitution:[[_G7690], [4^[]]]
+1.2.1  [-m1_subset_1(4^[], u1_struct_0(k1_scmfsa_2)), m1_scmfsa_2(4^[])]   (7)  substitution:[[_G7945], [4^[]]]
+1.2.1.1  [-m1_scmfsa_2(4^[])]   (1)  
+1.2.2  [-m1_scmfsa_2(4^[])]   (1)  
+1.3  [-r2_hidden(4^[], k1_ami_2), r2_hidden(k5_numbers, k1_ami_2), k5_numbers=4^[], k1_ami_2=k1_ami_2]   (25)  substitution:[[_G5351, _G5488, _G5284, _G5419], [4^[], k1_ami_2, k5_numbers, k1_ami_2]]
+1.3.1  [-r2_hidden(k5_numbers, k1_ami_2)]   (12)  
+1.3.2  [- (k5_numbers=4^[]), 4^[]=k5_numbers]   (20)  substitution:[[_G3174, _G3129], [k5_numbers, 4^[]]]
+1.3.2.1  [- (4^[]=k5_numbers), 4^[]=k4_struct_0(k1_scmfsa_2), k4_struct_0(k1_scmfsa_2)=k5_numbers]   (21)  substitution:[[_G3362, _G3475, _G3418], [4^[], k5_numbers, k4_struct_0(k1_scmfsa_2)]]
+1.3.2.1.1  [- (4^[]=k4_struct_0(k1_scmfsa_2))]   (2)  
+1.3.2.1.2  [- (k4_struct_0(k1_scmfsa_2)=k5_numbers)]   (11)  
+1.3.3  [- (k1_ami_2=k1_ami_2)]   (19)  substitution:[[_G3030], [k1_ami_2]]
+------------------------------------------------------
+End of proof for t57_scmfsa_2

@@ -1,0 +1,24 @@
+
+l16_numbers is a Theorem
+Start of proof for l16_numbers
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [np__2=k2_tarski(k6_numbers, np__1)]
+ (2)  [- (k6_numbers=k1_xboole_0)]
+ (3)  [- (np__2=k2_tarski(k1_xboole_0, np__1))]
+ (4)  [- (k2_tarski(_G1583, _G1718)=k2_tarski(_G1650, _G1787)), _G1583=_G1650, _G1718=_G1787]
+ (5)  [- (_G810=_G810)]
+ (6)  [_G909=_G954, - (_G954=_G909)]
+ (7)  [- (_G1142=_G1255), _G1142=_G1198, _G1198=_G1255]
+
+Connection Proof:
+-----------------
+1  [np__2=k2_tarski(k6_numbers, np__1)]   (1)  
+1.1  [- (np__2=k2_tarski(k6_numbers, np__1)), np__2=k2_tarski(k1_xboole_0, np__1), k2_tarski(k1_xboole_0, np__1)=k2_tarski(k6_numbers, np__1)]   (7)  substitution:[[_G1142, _G1255, _G1198], [np__2, k2_tarski(k6_numbers, np__1), k2_tarski(k1_xboole_0, np__1)]]
+1.1.1  [- (np__2=k2_tarski(k1_xboole_0, np__1))]   (3)  
+1.1.2  [- (k2_tarski(k1_xboole_0, np__1)=k2_tarski(k6_numbers, np__1)), k1_xboole_0=k6_numbers, np__1=np__1]   (4)  substitution:[[_G1583, _G1718, _G1650, _G1787], [k1_xboole_0, np__1, k6_numbers, np__1]]
+1.1.2.1  [- (k1_xboole_0=k6_numbers), k6_numbers=k1_xboole_0]   (6)  substitution:[[_G954, _G909], [k1_xboole_0, k6_numbers]]
+1.1.2.1.1  [- (k6_numbers=k1_xboole_0)]   (2)  
+1.1.2.2  [- (np__1=np__1)]   (5)  substitution:[[_G810], [np__1]]
+------------------------------------------------------
+End of proof for l16_numbers

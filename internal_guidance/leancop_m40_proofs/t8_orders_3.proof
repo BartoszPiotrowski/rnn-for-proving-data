@@ -1,0 +1,62 @@
+
+t8_orders_3 is a Theorem
+Start of proof for t8_orders_3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-l1_struct_0(5^[])]
+ (2)  [k2_orders_3(k1_tarski(5^[]))=k1_tarski(u1_struct_0(5^[]))]
+ (3)  [_G3530=_G3579, - (k2_orders_3(_G3530)=k2_orders_3(_G3579))]
+ (4)  [_G3808=_G3857, - (k1_tarski(_G3808)=k1_tarski(_G3857))]
+ (5)  [_G4077=_G4126, - (u1_struct_0(_G4077)=u1_struct_0(_G4126))]
+ (6)  [- (_G1840=_G1840)]
+ (7)  [_G1939=_G1984, - (_G1984=_G1939)]
+ (8)  [- (_G2172=_G2285), _G2172=_G2228, _G2228=_G2285]
+ (9)  [-l1_struct_0(_G3259), _G3210=_G3259, l1_struct_0(_G3210)]
+ (10)  [-r2_hidden(_G2689, _G2826), r2_hidden(_G2622, _G2757), _G2622=_G2689, _G2757=_G2826]
+ (11)  [_G4476=k1_tarski(_G4418), r2_hidden(_G4606, _G4476), - (_G4606=_G4418)]
+ (12)  [_G4476=k1_tarski(_G4418), -r2_hidden(_G4606, _G4476), _G4606=_G4418]
+ (13)  [- (_G4476=k1_tarski(_G4418)), r2_hidden(1^[_G4476, _G4418], _G4476), 1^[_G4476, _G4418]=_G4418]
+ (14)  [- (_G4476=k1_tarski(_G4418)), -r2_hidden(1^[_G4476, _G4418], _G4476), - (1^[_G4476, _G4418]=_G4418)]
+ (15)  [_G4905=k2_orders_3(_G4829), r2_hidden(_G5053, _G4905), -l1_struct_0(2^[_G5053, _G4905, _G4829])]
+ (16)  [_G4905=k2_orders_3(_G4829), r2_hidden(_G5053, _G4905), -r2_hidden(2^[_G5053, _G4905, _G4829], _G4829)]
+ (17)  [_G4905=k2_orders_3(_G4829), r2_hidden(_G5053, _G4905), - (_G5053=u1_struct_0(2^[_G5053, _G4905, _G4829]))]
+ (18)  [_G4905=k2_orders_3(_G4829), -r2_hidden(_G5053, _G4905), l1_struct_0(_G5180), r2_hidden(_G5180, _G4829), _G5053=u1_struct_0(_G5180)]
+ (19)  [- (_G4905=k2_orders_3(_G4829)), -r2_hidden(3^[_G4905, _G4829], _G4905), -l1_struct_0(4^[_G4905, _G4829])]
+ (20)  [- (_G4905=k2_orders_3(_G4829)), -r2_hidden(3^[_G4905, _G4829], _G4905), -r2_hidden(4^[_G4905, _G4829], _G4829)]
+ (21)  [- (_G4905=k2_orders_3(_G4829)), -r2_hidden(3^[_G4905, _G4829], _G4905), - (3^[_G4905, _G4829]=u1_struct_0(4^[_G4905, _G4829]))]
+ (22)  [- (_G4905=k2_orders_3(_G4829)), r2_hidden(3^[_G4905, _G4829], _G4905), l1_struct_0(_G6416), r2_hidden(_G6416, _G4829), 3^[_G4905, _G4829]=u1_struct_0(_G6416)]
+
+Connection Proof:
+-----------------
+1  [k2_orders_3(k1_tarski(5^[]))=k1_tarski(u1_struct_0(5^[]))]   (2)  
+1.1  [- (k2_orders_3(k1_tarski(5^[]))=k1_tarski(u1_struct_0(5^[]))), k1_tarski(u1_struct_0(5^[]))=k2_orders_3(k1_tarski(5^[]))]   (7)  substitution:[[_G1984, _G1939], [k2_orders_3(k1_tarski(5^[])), k1_tarski(u1_struct_0(5^[]))]]
+1.1.1  [- (k1_tarski(u1_struct_0(5^[]))=k2_orders_3(k1_tarski(5^[]))), -r2_hidden(3^[k1_tarski(u1_struct_0(5^[])), k1_tarski(5^[])], k1_tarski(u1_struct_0(5^[]))), - (3^[k1_tarski(u1_struct_0(5^[])), k1_tarski(5^[])]=u1_struct_0(4^[k1_tarski(u1_struct_0(5^[])), k1_tarski(5^[])]))]   (21)  substitution:[[_G4905, _G4829], [k1_tarski(u1_struct_0(5^[])), k1_tarski(5^[])]]
+1.1.1.1  [r2_hidden(3^[k1_tarski(u1_struct_0(5^[])), k1_tarski(5^[])], k1_tarski(u1_struct_0(5^[]))), k1_tarski(u1_struct_0(5^[]))=k1_tarski(u1_struct_0(5^[])), - (3^[k1_tarski(u1_struct_0(5^[])), k1_tarski(5^[])]=u1_struct_0(5^[]))]   (11)  substitution:[[_G4606, _G4476, _G4418], [3^[k1_tarski(u1_struct_0(5^[])), k1_tarski(5^[])], k1_tarski(u1_struct_0(5^[])), u1_struct_0(5^[])]]
+1.1.1.1.1  [- (k1_tarski(u1_struct_0(5^[]))=k1_tarski(u1_struct_0(5^[]))), u1_struct_0(5^[])=u1_struct_0(5^[])]   (4)  substitution:[[_G3808, _G3857], [u1_struct_0(5^[]), u1_struct_0(5^[])]]
+1.1.1.1.1.1  [- (u1_struct_0(5^[])=u1_struct_0(5^[])), 5^[]=5^[]]   (5)  substitution:[[_G4077, _G4126], [5^[], 5^[]]]
+1.1.1.1.1.1.1  [- (5^[]=5^[])]   (6)  substitution:[[_G1840], [5^[]]]
+1.1.1.1.2  [3^[k1_tarski(u1_struct_0(5^[])), k1_tarski(5^[])]=u1_struct_0(5^[]), - (k1_tarski(u1_struct_0(5^[]))=k2_orders_3(k1_tarski(5^[]))), r2_hidden(3^[k1_tarski(u1_struct_0(5^[])), k1_tarski(5^[])], k1_tarski(u1_struct_0(5^[]))), l1_struct_0(5^[]), r2_hidden(5^[], k1_tarski(5^[]))]   (22)  substitution:[[_G4905, _G4829, _G6416], [k1_tarski(u1_struct_0(5^[])), k1_tarski(5^[]), 5^[]]]
+1.1.1.1.2.1  [k1_tarski(u1_struct_0(5^[]))=k2_orders_3(k1_tarski(5^[]))]   (reduction:1.1)  
+1.1.1.1.2.2  [-r2_hidden(3^[k1_tarski(u1_struct_0(5^[])), k1_tarski(5^[])], k1_tarski(u1_struct_0(5^[])))]   (reduction:1.1.1)  
+1.1.1.1.2.3  [-l1_struct_0(5^[])]   (1)  
+1.1.1.1.2.4  [-r2_hidden(5^[], k1_tarski(5^[])), k1_tarski(5^[])=k1_tarski(5^[]), 5^[]=5^[]]   (12)  substitution:[[_G4606, _G4476, _G4418], [5^[], k1_tarski(5^[]), 5^[]]]
+1.1.1.1.2.4.1  [- (k1_tarski(5^[])=k1_tarski(5^[]))]   (6)  substitution:[[_G1840], [k1_tarski(5^[])]]
+1.1.1.1.2.4.2  [- (5^[]=5^[])]   (6)  substitution:[[_G1840], [5^[]]]
+1.1.1.2  [3^[k1_tarski(u1_struct_0(5^[])), k1_tarski(5^[])]=u1_struct_0(4^[k1_tarski(u1_struct_0(5^[])), k1_tarski(5^[])]), - (3^[k1_tarski(u1_struct_0(5^[])), k1_tarski(5^[])]=u1_struct_0(5^[])), u1_struct_0(4^[k1_tarski(u1_struct_0(5^[])), k1_tarski(5^[])])=u1_struct_0(5^[])]   (8)  substitution:[[_G2172, _G2228, _G2285], [3^[k1_tarski(u1_struct_0(5^[])), k1_tarski(5^[])], u1_struct_0(4^[k1_tarski(u1_struct_0(5^[])), k1_tarski(5^[])]), u1_struct_0(5^[])]]
+1.1.1.2.1  [3^[k1_tarski(u1_struct_0(5^[])), k1_tarski(5^[])]=u1_struct_0(5^[]), - (k1_tarski(u1_struct_0(5^[]))=k2_orders_3(k1_tarski(5^[]))), r2_hidden(3^[k1_tarski(u1_struct_0(5^[])), k1_tarski(5^[])], k1_tarski(u1_struct_0(5^[]))), l1_struct_0(5^[]), r2_hidden(5^[], k1_tarski(5^[]))]   (22)  substitution:[[_G4905, _G4829, _G6416], [k1_tarski(u1_struct_0(5^[])), k1_tarski(5^[]), 5^[]]]
+1.1.1.2.1.1  [k1_tarski(u1_struct_0(5^[]))=k2_orders_3(k1_tarski(5^[]))]   (reduction:1.1)  
+1.1.1.2.1.2  [-r2_hidden(3^[k1_tarski(u1_struct_0(5^[])), k1_tarski(5^[])], k1_tarski(u1_struct_0(5^[]))), k1_tarski(u1_struct_0(5^[]))=k1_tarski(u1_struct_0(5^[])), 3^[k1_tarski(u1_struct_0(5^[])), k1_tarski(5^[])]=u1_struct_0(5^[])]   (12)  substitution:[[_G4606, _G4476, _G4418], [3^[k1_tarski(u1_struct_0(5^[])), k1_tarski(5^[])], k1_tarski(u1_struct_0(5^[])), u1_struct_0(5^[])]]
+1.1.1.2.1.2.1  [- (k1_tarski(u1_struct_0(5^[]))=k1_tarski(u1_struct_0(5^[])))]   (6)  substitution:[[_G1840], [k1_tarski(u1_struct_0(5^[]))]]
+1.1.1.2.1.2.2  [- (3^[k1_tarski(u1_struct_0(5^[])), k1_tarski(5^[])]=u1_struct_0(5^[]))]   (reduction:1.1.1.2)  
+1.1.1.2.1.3  [-l1_struct_0(5^[])]   (1)  
+1.1.1.2.1.4  [-r2_hidden(5^[], k1_tarski(5^[])), k1_tarski(5^[])=k1_tarski(5^[]), 5^[]=5^[]]   (12)  substitution:[[_G4606, _G4476, _G4418], [5^[], k1_tarski(5^[]), 5^[]]]
+1.1.1.2.1.4.1  [- (k1_tarski(5^[])=k1_tarski(5^[]))]   (6)  substitution:[[_G1840], [k1_tarski(5^[])]]
+1.1.1.2.1.4.2  [- (5^[]=5^[])]   (6)  substitution:[[_G1840], [5^[]]]
+1.1.1.2.2  [- (u1_struct_0(4^[k1_tarski(u1_struct_0(5^[])), k1_tarski(5^[])])=u1_struct_0(5^[])), 4^[k1_tarski(u1_struct_0(5^[])), k1_tarski(5^[])]=5^[]]   (5)  substitution:[[_G4077, _G4126], [4^[k1_tarski(u1_struct_0(5^[])), k1_tarski(5^[])], 5^[]]]
+1.1.1.2.2.1  [- (4^[k1_tarski(u1_struct_0(5^[])), k1_tarski(5^[])]=5^[]), k1_tarski(5^[])=k1_tarski(5^[]), r2_hidden(4^[k1_tarski(u1_struct_0(5^[])), k1_tarski(5^[])], k1_tarski(5^[]))]   (11)  substitution:[[_G4606, _G4418, _G4476], [4^[k1_tarski(u1_struct_0(5^[])), k1_tarski(5^[])], 5^[], k1_tarski(5^[])]]
+1.1.1.2.2.1.1  [- (k1_tarski(5^[])=k1_tarski(5^[]))]   (6)  substitution:[[_G1840], [k1_tarski(5^[])]]
+1.1.1.2.2.1.2  [-r2_hidden(4^[k1_tarski(u1_struct_0(5^[])), k1_tarski(5^[])], k1_tarski(5^[])), - (k1_tarski(u1_struct_0(5^[]))=k2_orders_3(k1_tarski(5^[]))), -r2_hidden(3^[k1_tarski(u1_struct_0(5^[])), k1_tarski(5^[])], k1_tarski(u1_struct_0(5^[])))]   (20)  substitution:[[_G4905, _G4829], [k1_tarski(u1_struct_0(5^[])), k1_tarski(5^[])]]
+1.1.1.2.2.1.2.1  [k1_tarski(u1_struct_0(5^[]))=k2_orders_3(k1_tarski(5^[]))]   (reduction:1.1)  
+1.1.1.2.2.1.2.2  [r2_hidden(3^[k1_tarski(u1_struct_0(5^[])), k1_tarski(5^[])], k1_tarski(u1_struct_0(5^[])))]   (lemmata:1.1.1)  
+------------------------------------------------------
+End of proof for t8_orders_3

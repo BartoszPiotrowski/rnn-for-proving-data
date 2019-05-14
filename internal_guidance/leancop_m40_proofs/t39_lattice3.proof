@@ -1,0 +1,47 @@
+
+t39_lattice3 is a Theorem
+Start of proof for t39_lattice3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(2^[])]
+ (2)  [-v10_lattices(2^[])]
+ (3)  [-v4_lattice3(2^[])]
+ (4)  [-l3_lattices(2^[])]
+ (5)  [-m1_subset_1(3^[], u1_struct_0(2^[]))]
+ (6)  [-r3_lattice3(2^[], 3^[], 4^[])]
+ (7)  [r3_lattices(2^[], 3^[], k16_lattice3(2^[], 4^[]))]
+ (8)  [-m1_subset_1(k16_lattice3(_G8474, _G8530), u1_struct_0(_G8474)), -v2_struct_0(_G8474), l3_lattices(_G8474)]
+ (9)  [l3_lattices(_G8824), v4_lattice3(_G8824), v10_lattices(_G8824), -v2_struct_0(_G8824), m1_subset_1(_G9140, u1_struct_0(_G8824)), - (_G9140=k16_lattice3(_G8824, _G9301)), r3_lattice3(_G8824, _G9140, _G9301), -m1_subset_1(1^[_G9301, _G9140, _G8824], u1_struct_0(_G8824))]
+ (10)  [l3_lattices(_G8824), v4_lattice3(_G8824), v10_lattices(_G8824), -v2_struct_0(_G8824), m1_subset_1(_G9140, u1_struct_0(_G8824)), - (_G9140=k16_lattice3(_G8824, _G9301)), r3_lattice3(_G8824, _G9140, _G9301), -r3_lattice3(_G8824, 1^[_G9301, _G9140, _G8824], _G9301)]
+ (11)  [l3_lattices(_G8824), v4_lattice3(_G8824), v10_lattices(_G8824), -v2_struct_0(_G8824), m1_subset_1(_G9140, u1_struct_0(_G8824)), - (_G9140=k16_lattice3(_G8824, _G9301)), r3_lattice3(_G8824, _G9140, _G9301), r3_lattices(_G8824, 1^[_G9301, _G9140, _G8824], _G9140)]
+ (12)  [l3_lattices(_G8824), v4_lattice3(_G8824), v10_lattices(_G8824), -v2_struct_0(_G8824), m1_subset_1(_G9140, u1_struct_0(_G8824)), _G9140=k16_lattice3(_G8824, _G9301), -r3_lattice3(_G8824, _G9140, _G9301)]
+ (13)  [l3_lattices(_G8824), v4_lattice3(_G8824), v10_lattices(_G8824), -v2_struct_0(_G8824), m1_subset_1(_G9140, u1_struct_0(_G8824)), _G9140=k16_lattice3(_G8824, _G9301), m1_subset_1(_G9580, u1_struct_0(_G8824)), r3_lattice3(_G8824, _G9580, _G9301), -r3_lattices(_G8824, _G9580, _G9140)]
+ (14)  [_G7566=_G7615, - (u1_struct_0(_G7566)=u1_struct_0(_G7615))]
+ (15)  [- (k16_lattice3(_G7835, _G7970)=k16_lattice3(_G7902, _G8039)), _G7835=_G7902, _G7970=_G8039]
+ (16)  [- (_G2881=_G2881)]
+ (17)  [_G2980=_G3025, - (_G3025=_G2980)]
+ (18)  [- (_G3213=_G3326), _G3213=_G3269, _G3269=_G3326]
+ (19)  [-v2_struct_0(_G3712), _G3663=_G3712, v2_struct_0(_G3663)]
+ (20)  [-v10_lattices(_G3990), _G3941=_G3990, v10_lattices(_G3941)]
+ (21)  [-v4_lattice3(_G4268), _G4219=_G4268, v4_lattice3(_G4219)]
+ (22)  [-l3_lattices(_G4546), _G4497=_G4546, l3_lattices(_G4497)]
+ (23)  [-m1_subset_1(_G4842, _G4979), m1_subset_1(_G4775, _G4910), _G4775=_G4842, _G4910=_G4979]
+ (24)  [-r3_lattice3(_G5457, _G5630, _G5807), r3_lattice3(_G5372, _G5543, _G5718), _G5372=_G5457, _G5543=_G5630, _G5718=_G5807]
+ (25)  [-r3_lattices(_G6476, _G6649, _G6826), r3_lattices(_G6391, _G6562, _G6737), _G6391=_G6476, _G6562=_G6649, _G6737=_G6826]
+
+Connection Proof:
+-----------------
+1  [r3_lattices(2^[], 3^[], k16_lattice3(2^[], 4^[]))]   (7)  
+1.1  [-r3_lattices(2^[], 3^[], k16_lattice3(2^[], 4^[])), l3_lattices(2^[]), v4_lattice3(2^[]), v10_lattices(2^[]), -v2_struct_0(2^[]), m1_subset_1(k16_lattice3(2^[], 4^[]), u1_struct_0(2^[])), k16_lattice3(2^[], 4^[])=k16_lattice3(2^[], 4^[]), m1_subset_1(3^[], u1_struct_0(2^[])), r3_lattice3(2^[], 3^[], 4^[])]   (13)  substitution:[[_G8824, _G9580, _G9140, _G9301], [2^[], 3^[], k16_lattice3(2^[], 4^[]), 4^[]]]
+1.1.1  [-l3_lattices(2^[])]   (4)  
+1.1.2  [-v4_lattice3(2^[])]   (3)  
+1.1.3  [-v10_lattices(2^[])]   (2)  
+1.1.4  [v2_struct_0(2^[])]   (1)  
+1.1.5  [-m1_subset_1(k16_lattice3(2^[], 4^[]), u1_struct_0(2^[])), -v2_struct_0(2^[]), l3_lattices(2^[])]   (8)  substitution:[[_G8474, _G8530], [2^[], 4^[]]]
+1.1.5.1  [v2_struct_0(2^[])]   (1)  
+1.1.5.2  [-l3_lattices(2^[])]   (4)  
+1.1.6  [- (k16_lattice3(2^[], 4^[])=k16_lattice3(2^[], 4^[]))]   (16)  substitution:[[_G2881], [k16_lattice3(2^[], 4^[])]]
+1.1.7  [-m1_subset_1(3^[], u1_struct_0(2^[]))]   (5)  
+1.1.8  [-r3_lattice3(2^[], 3^[], 4^[])]   (6)  
+------------------------------------------------------
+End of proof for t39_lattice3

@@ -1,0 +1,31 @@
+
+l3_series_2 is a Theorem
+Start of proof for l3_series_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xreal_0(1^[])]
+ (2)  [k1_newton(1^[], np__3)=k3_xcmplx_0(k1_newton(1^[], np__2), 1^[])]
+ (3)  [v1_xreal_0(_G4295), - (k3_square_1(_G4295)=k1_newton(_G4295, np__2))]
+ (4)  [v1_xreal_0(_G4501), - (k1_newton(_G4501, np__3)=k3_xcmplx_0(k3_square_1(_G4501), _G4501))]
+ (5)  [v1_xreal_0(_G4501), - (k3_xcmplx_0(k1_newton(_G4501, np__3), _G4501)=k1_newton(_G4501, np__4))]
+ (6)  [v1_xreal_0(_G4501), - (k3_xcmplx_0(k3_square_1(_G4501), k3_square_1(_G4501))=k1_newton(_G4501, np__4))]
+ (7)  [-v1_xreal_0(_G2519), _G2470=_G2519, v1_xreal_0(_G2470)]
+ (8)  [- (_G1697=_G1697)]
+ (9)  [_G1796=_G1841, - (_G1841=_G1796)]
+ (10)  [- (_G2029=_G2142), _G2029=_G2085, _G2085=_G2142]
+ (11)  [_G2769=_G2818, - (k3_square_1(_G2769)=k3_square_1(_G2818))]
+ (12)  [- (k3_xcmplx_0(_G3047, _G3182)=k3_xcmplx_0(_G3114, _G3251)), _G3047=_G3114, _G3182=_G3251]
+ (13)  [- (k1_newton(_G3635, _G3770)=k1_newton(_G3702, _G3839)), _G3635=_G3702, _G3770=_G3839]
+
+Connection Proof:
+-----------------
+1  [k1_newton(1^[], np__3)=k3_xcmplx_0(k1_newton(1^[], np__2), 1^[])]   (2)  
+1.1  [- (k1_newton(1^[], np__3)=k3_xcmplx_0(k1_newton(1^[], np__2), 1^[])), k1_newton(1^[], np__3)=k3_xcmplx_0(k3_square_1(1^[]), 1^[]), k3_xcmplx_0(k3_square_1(1^[]), 1^[])=k3_xcmplx_0(k1_newton(1^[], np__2), 1^[])]   (10)  substitution:[[_G2029, _G2142, _G2085], [k1_newton(1^[], np__3), k3_xcmplx_0(k1_newton(1^[], np__2), 1^[]), k3_xcmplx_0(k3_square_1(1^[]), 1^[])]]
+1.1.1  [- (k1_newton(1^[], np__3)=k3_xcmplx_0(k3_square_1(1^[]), 1^[])), v1_xreal_0(1^[])]   (4)  substitution:[[_G4501], [1^[]]]
+1.1.1.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.2  [- (k3_xcmplx_0(k3_square_1(1^[]), 1^[])=k3_xcmplx_0(k1_newton(1^[], np__2), 1^[])), k3_square_1(1^[])=k1_newton(1^[], np__2), 1^[]=1^[]]   (12)  substitution:[[_G3047, _G3182, _G3114, _G3251], [k3_square_1(1^[]), 1^[], k1_newton(1^[], np__2), 1^[]]]
+1.1.2.1  [- (k3_square_1(1^[])=k1_newton(1^[], np__2)), v1_xreal_0(1^[])]   (3)  substitution:[[_G4295], [1^[]]]
+1.1.2.1.1  [-v1_xreal_0(1^[])]   (1)  
+1.1.2.2  [- (1^[]=1^[])]   (8)  substitution:[[_G1697], [1^[]]]
+------------------------------------------------------
+End of proof for l3_series_2

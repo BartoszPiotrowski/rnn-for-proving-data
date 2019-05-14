@@ -1,0 +1,54 @@
+
+t36_fintopo6 is a Theorem
+Start of proof for t36_fintopo6
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(1^[])]
+ (2)  [-l1_orders_2(1^[])]
+ (3)  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]
+ (4)  [-v3_orders_2(1^[])]
+ (5)  [-v1_fin_topo(1^[])]
+ (6)  [-v4_fin_topo(2^[], 1^[])]
+ (7)  [v4_fin_topo(k9_fin_topo(1^[], 2^[]), 1^[])]
+ (8)  [_G8719=_G8770, -r1_tarski(_G8719, _G8770)]
+ (9)  [_G8719=_G8770, -r1_tarski(_G8770, _G8719)]
+ (10)  [- (_G8719=_G8770), r1_tarski(_G8719, _G8770), r1_tarski(_G8770, _G8719)]
+ (11)  [-m1_subset_1(k9_fin_topo(_G9051, _G9119), k1_zfmisc_1(u1_struct_0(_G9051))), m1_subset_1(_G9119, k1_zfmisc_1(u1_struct_0(_G9051))), -v2_struct_0(_G9051), l1_orders_2(_G9051)]
+ (12)  [-r1_tarski(_G9775, k9_fin_topo(_G9554, _G9775)), m1_subset_1(_G9775, k1_zfmisc_1(u1_struct_0(_G9554))), -v2_struct_0(_G9554), v3_orders_2(_G9554), l1_orders_2(_G9554)]
+ (13)  [l1_orders_2(_G10058), -v2_struct_0(_G10058), m1_subset_1(_G10259, k1_zfmisc_1(u1_struct_0(_G10058))), m1_subset_1(_G10435, k1_zfmisc_1(u1_struct_0(_G10058))), -v4_fin_topo(_G10259, _G10058), v1_fin_topo(_G10058), v4_fin_topo(_G10435, _G10058), r1_tarski(_G10435, _G10259), r1_tarski(_G10259, k9_fin_topo(_G10058, _G10435))]
+ (14)  [_G7512=_G7561, - (k1_zfmisc_1(_G7512)=k1_zfmisc_1(_G7561))]
+ (15)  [_G7790=_G7839, - (u1_struct_0(_G7790)=u1_struct_0(_G7839))]
+ (16)  [- (k9_fin_topo(_G8059, _G8194)=k9_fin_topo(_G8126, _G8263)), _G8059=_G8126, _G8194=_G8263]
+ (17)  [- (_G3689=_G3689)]
+ (18)  [_G3788=_G3833, - (_G3833=_G3788)]
+ (19)  [- (_G4021=_G4134), _G4021=_G4077, _G4077=_G4134]
+ (20)  [-r1_tarski(_G4538, _G4675), r1_tarski(_G4471, _G4606), _G4471=_G4538, _G4606=_G4675]
+ (21)  [-v2_struct_0(_G5117), _G5068=_G5117, v2_struct_0(_G5068)]
+ (22)  [-l1_orders_2(_G5395), _G5346=_G5395, l1_orders_2(_G5346)]
+ (23)  [-m1_subset_1(_G5691, _G5828), m1_subset_1(_G5624, _G5759), _G5624=_G5691, _G5759=_G5828]
+ (24)  [-v3_orders_2(_G6270), _G6221=_G6270, v3_orders_2(_G6221)]
+ (25)  [-v1_fin_topo(_G6548), _G6499=_G6548, v1_fin_topo(_G6499)]
+ (26)  [-v4_fin_topo(_G6835, _G6972), v4_fin_topo(_G6768, _G6903), _G6768=_G6835, _G6903=_G6972]
+
+Connection Proof:
+-----------------
+1  [v4_fin_topo(k9_fin_topo(1^[], 2^[]), 1^[])]   (7)  
+1.1  [-v4_fin_topo(k9_fin_topo(1^[], 2^[]), 1^[]), l1_orders_2(1^[]), -v2_struct_0(1^[]), m1_subset_1(k9_fin_topo(1^[], 2^[]), k1_zfmisc_1(u1_struct_0(1^[]))), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[]))), v1_fin_topo(1^[]), v4_fin_topo(2^[], 1^[]), r1_tarski(2^[], k9_fin_topo(1^[], 2^[])), r1_tarski(k9_fin_topo(1^[], 2^[]), k9_fin_topo(1^[], 2^[]))]   (13)  substitution:[[_G10259, _G10058, _G10435], [k9_fin_topo(1^[], 2^[]), 1^[], 2^[]]]
+1.1.1  [-l1_orders_2(1^[])]   (2)  
+1.1.2  [v2_struct_0(1^[])]   (1)  
+1.1.3  [-m1_subset_1(k9_fin_topo(1^[], 2^[]), k1_zfmisc_1(u1_struct_0(1^[]))), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[]))), -v2_struct_0(1^[]), l1_orders_2(1^[])]   (11)  substitution:[[_G9051, _G9119], [1^[], 2^[]]]
+1.1.3.1  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (3)  
+1.1.3.2  [v2_struct_0(1^[])]   (1)  
+1.1.3.3  [-l1_orders_2(1^[])]   (2)  
+1.1.4  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (3)  
+1.1.5  [-v1_fin_topo(1^[])]   (5)  
+1.1.6  [-v4_fin_topo(2^[], 1^[])]   (6)  
+1.1.7  [-r1_tarski(2^[], k9_fin_topo(1^[], 2^[])), m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[]))), -v2_struct_0(1^[]), v3_orders_2(1^[]), l1_orders_2(1^[])]   (12)  substitution:[[_G9775, _G9554], [2^[], 1^[]]]
+1.1.7.1  [-m1_subset_1(2^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (3)  
+1.1.7.2  [v2_struct_0(1^[])]   (1)  
+1.1.7.3  [-v3_orders_2(1^[])]   (4)  
+1.1.7.4  [-l1_orders_2(1^[])]   (2)  
+1.1.8  [-r1_tarski(k9_fin_topo(1^[], 2^[]), k9_fin_topo(1^[], 2^[])), k9_fin_topo(1^[], 2^[])=k9_fin_topo(1^[], 2^[])]   (8)  substitution:[[_G8719, _G8770], [k9_fin_topo(1^[], 2^[]), k9_fin_topo(1^[], 2^[])]]
+1.1.8.1  [- (k9_fin_topo(1^[], 2^[])=k9_fin_topo(1^[], 2^[]))]   (17)  substitution:[[_G3689], [k9_fin_topo(1^[], 2^[])]]
+------------------------------------------------------
+End of proof for t36_fintopo6

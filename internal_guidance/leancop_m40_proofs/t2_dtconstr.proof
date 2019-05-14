@@ -1,0 +1,19 @@
+
+t2_dtconstr is a Theorem
+Start of proof for t2_dtconstr
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m2_finseq_1(3^[], 1^[])]
+ (2)  [-r2_hidden(2^[], k4_finseq_1(3^[]))]
+ (3)  [r2_hidden(k1_funct_1(3^[], 2^[]), 1^[])]
+ (4)  [m2_finseq_1(_G856, _G717), r2_hidden(_G786, k4_finseq_1(_G856)), -r2_hidden(k1_funct_1(_G856, _G786), _G717)]
+ (5)  [m2_finseq_1(_G856, _G717), r2_hidden(_G786, k4_finseq_1(_G856)), -r2_hidden(k1_funct_1(_G856, _G786), _G717)]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(k1_funct_1(3^[], 2^[]), 1^[])]   (3)  
+1.1  [-r2_hidden(k1_funct_1(3^[], 2^[]), 1^[]), m2_finseq_1(3^[], 1^[]), r2_hidden(2^[], k4_finseq_1(3^[]))]   (4)  substitution:[[_G856, _G786, _G717], [3^[], 2^[], 1^[]]]
+1.1.1  [-m2_finseq_1(3^[], 1^[])]   (1)  
+1.1.2  [-r2_hidden(2^[], k4_finseq_1(3^[]))]   (2)  
+------------------------------------------------------
+End of proof for t2_dtconstr

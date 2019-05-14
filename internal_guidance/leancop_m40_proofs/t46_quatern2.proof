@@ -1,0 +1,34 @@
+
+t46_quatern2 is a Theorem
+Start of proof for t46_quatern2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k3_quatern2(k5_struct_0(k16_quatern2))=np__1]
+ (2)  [-v1_quaterni(k22_quaterni)]
+ (3)  [- (k2_quatern2=k22_quaterni)]
+ (4)  [- (k5_struct_0(k16_quatern2)=k2_quatern2)]
+ (5)  [- (k32_quaterni(k22_quaterni)=np__1)]
+ (6)  [v1_quaterni(_G3353), - (k3_quatern2(_G3353)=k32_quaterni(_G3353))]
+ (7)  [_G2376=_G2425, - (k32_quaterni(_G2376)=k32_quaterni(_G2425))]
+ (8)  [_G2654=_G2703, - (k3_quatern2(_G2654)=k3_quatern2(_G2703))]
+ (9)  [_G2923=_G2972, - (k5_struct_0(_G2923)=k5_struct_0(_G2972))]
+ (10)  [-v1_quaterni(_G2126), _G2077=_G2126, v1_quaterni(_G2077)]
+ (11)  [- (_G1304=_G1304)]
+ (12)  [_G1403=_G1448, - (_G1448=_G1403)]
+ (13)  [- (_G1636=_G1749), _G1636=_G1692, _G1692=_G1749]
+
+Connection Proof:
+-----------------
+1  [k3_quatern2(k5_struct_0(k16_quatern2))=np__1]   (1)  
+1.1  [- (k3_quatern2(k5_struct_0(k16_quatern2))=np__1), k3_quatern2(k5_struct_0(k16_quatern2))=k3_quatern2(k2_quatern2), k3_quatern2(k2_quatern2)=np__1]   (13)  substitution:[[_G1636, _G1749, _G1692], [k3_quatern2(k5_struct_0(k16_quatern2)), np__1, k3_quatern2(k2_quatern2)]]
+1.1.1  [- (k3_quatern2(k5_struct_0(k16_quatern2))=k3_quatern2(k2_quatern2)), k5_struct_0(k16_quatern2)=k2_quatern2]   (8)  substitution:[[_G2654, _G2703], [k5_struct_0(k16_quatern2), k2_quatern2]]
+1.1.1.1  [- (k5_struct_0(k16_quatern2)=k2_quatern2)]   (4)  
+1.1.2  [- (k3_quatern2(k2_quatern2)=np__1), k3_quatern2(k2_quatern2)=k3_quatern2(k22_quaterni), k3_quatern2(k22_quaterni)=np__1]   (13)  substitution:[[_G1636, _G1749, _G1692], [k3_quatern2(k2_quatern2), np__1, k3_quatern2(k22_quaterni)]]
+1.1.2.1  [- (k3_quatern2(k2_quatern2)=k3_quatern2(k22_quaterni)), k2_quatern2=k22_quaterni]   (8)  substitution:[[_G2654, _G2703], [k2_quatern2, k22_quaterni]]
+1.1.2.1.1  [- (k2_quatern2=k22_quaterni)]   (3)  
+1.1.2.2  [- (k3_quatern2(k22_quaterni)=np__1), k3_quatern2(k22_quaterni)=k32_quaterni(k22_quaterni), k32_quaterni(k22_quaterni)=np__1]   (13)  substitution:[[_G1636, _G1749, _G1692], [k3_quatern2(k22_quaterni), np__1, k32_quaterni(k22_quaterni)]]
+1.1.2.2.1  [- (k3_quatern2(k22_quaterni)=k32_quaterni(k22_quaterni)), v1_quaterni(k22_quaterni)]   (6)  substitution:[[_G3353], [k22_quaterni]]
+1.1.2.2.1.1  [-v1_quaterni(k22_quaterni)]   (2)  
+1.1.2.2.2  [- (k32_quaterni(k22_quaterni)=np__1)]   (5)  
+------------------------------------------------------
+End of proof for t46_quatern2

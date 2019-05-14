@@ -1,0 +1,34 @@
+
+t12_ami_3 is a Theorem
+Start of proof for t12_ami_3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v7_ordinal1(1^[])]
+ (2)  [-v7_ordinal1(2^[])]
+ (3)  [- (k10_ami_3(1^[])=2^[])]
+ (4)  [v7_ordinal1(_G4173), - (k10_ami_3(_G4173)=k4_tarski(np__1, _G4173))]
+ (5)  [r2_hidden(k4_tarski(_G4536, _G4580), k4_ordinal1)]
+ (6)  [v7_ordinal1(_G4388), -r2_hidden(_G4388, k4_ordinal1)]
+ (7)  [-v7_ordinal1(_G4388), r2_hidden(_G4388, k4_ordinal1)]
+ (8)  [_G3853=_G3902, - (k10_ami_3(_G3853)=k10_ami_3(_G3902))]
+ (9)  [- (k4_tarski(_G3265, _G3400)=k4_tarski(_G3332, _G3469)), _G3265=_G3332, _G3400=_G3469]
+ (10)  [- (_G1575=_G1575)]
+ (11)  [_G1674=_G1719, - (_G1719=_G1674)]
+ (12)  [- (_G1907=_G2020), _G1907=_G1963, _G1963=_G2020]
+ (13)  [-v7_ordinal1(_G2994), _G2945=_G2994, v7_ordinal1(_G2945)]
+ (14)  [-r2_hidden(_G2424, _G2561), r2_hidden(_G2357, _G2492), _G2357=_G2424, _G2492=_G2561]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(k4_tarski(np__1, 1^[]), k4_ordinal1)]   (5)  substitution:[[_G4536, _G4580], [np__1, 1^[]]]
+1.1  [-r2_hidden(k4_tarski(np__1, 1^[]), k4_ordinal1), r2_hidden(2^[], k4_ordinal1), 2^[]=k4_tarski(np__1, 1^[]), k4_ordinal1=k4_ordinal1]   (14)  substitution:[[_G2424, _G2561, _G2357, _G2492], [k4_tarski(np__1, 1^[]), k4_ordinal1, 2^[], k4_ordinal1]]
+1.1.1  [-r2_hidden(2^[], k4_ordinal1), v7_ordinal1(2^[])]   (6)  substitution:[[_G4388], [2^[]]]
+1.1.1.1  [-v7_ordinal1(2^[])]   (2)  
+1.1.2  [- (2^[]=k4_tarski(np__1, 1^[])), 2^[]=k10_ami_3(1^[]), k10_ami_3(1^[])=k4_tarski(np__1, 1^[])]   (12)  substitution:[[_G1907, _G2020, _G1963], [2^[], k4_tarski(np__1, 1^[]), k10_ami_3(1^[])]]
+1.1.2.1  [- (2^[]=k10_ami_3(1^[])), k10_ami_3(1^[])=2^[]]   (11)  substitution:[[_G1719, _G1674], [2^[], k10_ami_3(1^[])]]
+1.1.2.1.1  [- (k10_ami_3(1^[])=2^[])]   (3)  
+1.1.2.2  [- (k10_ami_3(1^[])=k4_tarski(np__1, 1^[])), v7_ordinal1(1^[])]   (4)  substitution:[[_G4173], [1^[]]]
+1.1.2.2.1  [-v7_ordinal1(1^[])]   (1)  
+1.1.3  [- (k4_ordinal1=k4_ordinal1)]   (10)  substitution:[[_G1575], [k4_ordinal1]]
+------------------------------------------------------
+End of proof for t12_ami_3

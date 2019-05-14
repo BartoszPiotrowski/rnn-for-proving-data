@@ -1,0 +1,27 @@
+
+t74_xxreal_3 is a Theorem
+Start of proof for t74_xxreal_3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k5_xxreal_3(k1_xxreal_0)=k6_numbers]
+ (2)  [-v1_xboole_0(k5_xxreal_3(k1_xxreal_0))]
+ (3)  [-v1_xxreal_0(k5_xxreal_3(k1_xxreal_0))]
+ (4)  [- (k6_numbers=k1_xboole_0)]
+ (5)  [v1_xboole_0(_G2923), - (_G2923=k1_xboole_0)]
+ (6)  [_G2463=_G2512, - (k5_xxreal_3(_G2463)=k5_xxreal_3(_G2512))]
+ (7)  [- (_G1101=_G1101)]
+ (8)  [_G1200=_G1245, - (_G1245=_G1200)]
+ (9)  [- (_G1433=_G1546), _G1433=_G1489, _G1489=_G1546]
+ (10)  [-v1_xxreal_0(_G1932), _G1883=_G1932, v1_xxreal_0(_G1883)]
+ (11)  [-v1_xboole_0(_G2201), _G2152=_G2201, v1_xboole_0(_G2152)]
+
+Connection Proof:
+-----------------
+1  [k5_xxreal_3(k1_xxreal_0)=k6_numbers]   (1)  
+1.1  [- (k5_xxreal_3(k1_xxreal_0)=k6_numbers), k5_xxreal_3(k1_xxreal_0)=k1_xboole_0, k1_xboole_0=k6_numbers]   (9)  substitution:[[_G1433, _G1546, _G1489], [k5_xxreal_3(k1_xxreal_0), k6_numbers, k1_xboole_0]]
+1.1.1  [- (k5_xxreal_3(k1_xxreal_0)=k1_xboole_0), v1_xboole_0(k5_xxreal_3(k1_xxreal_0))]   (5)  substitution:[[_G2923], [k5_xxreal_3(k1_xxreal_0)]]
+1.1.1.1  [-v1_xboole_0(k5_xxreal_3(k1_xxreal_0))]   (2)  
+1.1.2  [- (k1_xboole_0=k6_numbers), k6_numbers=k1_xboole_0]   (8)  substitution:[[_G1245, _G1200], [k1_xboole_0, k6_numbers]]
+1.1.2.1  [- (k6_numbers=k1_xboole_0)]   (4)  
+------------------------------------------------------
+End of proof for t74_xxreal_3

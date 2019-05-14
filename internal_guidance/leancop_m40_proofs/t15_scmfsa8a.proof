@@ -1,0 +1,39 @@
+
+t15_scmfsa8a is a Theorem
+Start of proof for t15_scmfsa8a
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m2_subset_1(1^[], k1_numbers, k5_numbers)]
+ (2)  [k5_card_1(k1_scmfsa8a(1^[]))=np__1]
+ (3)  [m2_subset_1(_G8318, k1_numbers, k5_numbers), - (k1_scmfsa8a(_G8318)=k16_funcop_1(k6_numbers, k11_scmfsa_2(_G8318)))]
+ (4)  [m2_subset_1(_G8610, k1_numbers, k5_numbers), - (k9_xtuple_0(k16_funcop_1(k6_numbers, k11_scmfsa_2(_G8610)))=k1_tarski(k6_numbers))]
+ (5)  [m2_subset_1(_G8610, k1_numbers, k5_numbers), -r2_hidden(k6_numbers, k9_xtuple_0(k16_funcop_1(k6_numbers, k11_scmfsa_2(_G8610))))]
+ (6)  [m2_subset_1(_G8610, k1_numbers, k5_numbers), - (k1_funct_1(k16_funcop_1(k6_numbers, k11_scmfsa_2(_G8610)), k6_numbers)=k11_scmfsa_2(_G8610))]
+ (7)  [m2_subset_1(_G8610, k1_numbers, k5_numbers), - (k5_card_1(k16_funcop_1(k6_numbers, k11_scmfsa_2(_G8610)))=np__1)]
+ (8)  [m2_subset_1(_G8610, k1_numbers, k5_numbers), r2_hidden(k2_compos_1(k1_scmfsa_2), k10_xtuple_0(k16_funcop_1(k6_numbers, k11_scmfsa_2(_G8610))))]
+ (9)  [- (_G2558=_G2558)]
+ (10)  [_G2657=_G2702, - (_G2702=_G2657)]
+ (11)  [- (_G2890=_G3003), _G2890=_G2946, _G2946=_G3003]
+ (12)  [-r2_hidden(_G3407, _G3544), r2_hidden(_G3340, _G3475), _G3340=_G3407, _G3475=_G3544]
+ (13)  [-m2_subset_1(_G4013, _G4186, _G4363), m2_subset_1(_G3928, _G4099, _G4274), _G3928=_G4013, _G4099=_G4186, _G4274=_G4363]
+ (14)  [_G4998=_G5047, - (k1_tarski(_G4998)=k1_tarski(_G5047))]
+ (15)  [_G5276=_G5325, - (k9_xtuple_0(_G5276)=k9_xtuple_0(_G5325))]
+ (16)  [- (k1_funct_1(_G5554, _G5689)=k1_funct_1(_G5621, _G5758)), _G5554=_G5621, _G5689=_G5758]
+ (17)  [_G6151=_G6200, - (k2_compos_1(_G6151)=k2_compos_1(_G6200))]
+ (18)  [_G6429=_G6478, - (k10_xtuple_0(_G6429)=k10_xtuple_0(_G6478))]
+ (19)  [- (k16_funcop_1(_G6707, _G6842)=k16_funcop_1(_G6774, _G6911)), _G6707=_G6774, _G6842=_G6911]
+ (20)  [_G7304=_G7353, - (k11_scmfsa_2(_G7304)=k11_scmfsa_2(_G7353))]
+ (21)  [_G7582=_G7631, - (k5_card_1(_G7582)=k5_card_1(_G7631))]
+ (22)  [_G7851=_G7900, - (k1_scmfsa8a(_G7851)=k1_scmfsa8a(_G7900))]
+
+Connection Proof:
+-----------------
+1  [k5_card_1(k1_scmfsa8a(1^[]))=np__1]   (2)  
+1.1  [- (k5_card_1(k1_scmfsa8a(1^[]))=np__1), k5_card_1(k1_scmfsa8a(1^[]))=k5_card_1(k16_funcop_1(k6_numbers, k11_scmfsa_2(1^[]))), k5_card_1(k16_funcop_1(k6_numbers, k11_scmfsa_2(1^[])))=np__1]   (11)  substitution:[[_G2890, _G3003, _G2946], [k5_card_1(k1_scmfsa8a(1^[])), np__1, k5_card_1(k16_funcop_1(k6_numbers, k11_scmfsa_2(1^[])))]]
+1.1.1  [- (k5_card_1(k1_scmfsa8a(1^[]))=k5_card_1(k16_funcop_1(k6_numbers, k11_scmfsa_2(1^[])))), k1_scmfsa8a(1^[])=k16_funcop_1(k6_numbers, k11_scmfsa_2(1^[]))]   (21)  substitution:[[_G7582, _G7631], [k1_scmfsa8a(1^[]), k16_funcop_1(k6_numbers, k11_scmfsa_2(1^[]))]]
+1.1.1.1  [- (k1_scmfsa8a(1^[])=k16_funcop_1(k6_numbers, k11_scmfsa_2(1^[]))), m2_subset_1(1^[], k1_numbers, k5_numbers)]   (3)  substitution:[[_G8318], [1^[]]]
+1.1.1.1.1  [-m2_subset_1(1^[], k1_numbers, k5_numbers)]   (1)  
+1.1.2  [- (k5_card_1(k16_funcop_1(k6_numbers, k11_scmfsa_2(1^[])))=np__1), m2_subset_1(1^[], k1_numbers, k5_numbers)]   (7)  substitution:[[_G8610], [1^[]]]
+1.1.2.1  [-m2_subset_1(1^[], k1_numbers, k5_numbers)]   (1)  
+------------------------------------------------------
+End of proof for t15_scmfsa8a

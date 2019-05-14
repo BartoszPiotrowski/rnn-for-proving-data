@@ -1,0 +1,48 @@
+
+t57_asympt_1 is a Theorem
+Start of proof for t57_asympt_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-4^[_G9302], 3^[_G9302]=_G9302]
+ (2)  [-4^[_G9302], r1_xxreal_0(k9_newton(k2_nat_1(3^[_G9302], np__1)), 2^[])]
+ (3)  [-4^[_G9302], -r1_xxreal_0(k9_newton(3^[_G9302]), 2^[])]
+ (4)  [-4^[_G9302], -m2_subset_1(3^[_G9302], k1_numbers, k5_numbers)]
+ (5)  [-m2_subset_1(2^[], k1_numbers, k5_numbers)]
+ (6)  [-r1_xxreal_0(np__1, 2^[])]
+ (7)  [m2_subset_1(_G9302, k1_numbers, k5_numbers), r1_xxreal_0(k9_newton(_G9302), 2^[]), -r1_xxreal_0(k9_newton(k2_nat_1(_G9302, np__1)), 2^[]), 4^[_G9302]]
+ (8)  [m2_subset_1(_G5958, k1_numbers, k5_numbers), r1_xxreal_0(np__1, _G5958), -m2_subset_1(1^[_G5958], k1_numbers, k5_numbers)]
+ (9)  [m2_subset_1(_G5958, k1_numbers, k5_numbers), r1_xxreal_0(np__1, _G5958), -r1_xxreal_0(k9_newton(1^[_G5958]), _G5958)]
+ (10)  [m2_subset_1(_G5958, k1_numbers, k5_numbers), r1_xxreal_0(np__1, _G5958), r1_xxreal_0(k9_newton(k2_nat_1(1^[_G5958], np__1)), _G5958)]
+ (11)  [m2_subset_1(_G5958, k1_numbers, k5_numbers), r1_xxreal_0(np__1, _G5958), m2_subset_1(_G8984, k1_numbers, k5_numbers), r1_xxreal_0(k9_newton(_G8984), _G5958), -r1_xxreal_0(k9_newton(k2_nat_1(_G8984, np__1)), _G5958), - (_G8984=1^[_G5958])]
+ (12)  [_G5059=_G5108, - (k9_newton(_G5059)=k9_newton(_G5108))]
+ (13)  [- (k2_nat_1(_G5328, _G5463)=k2_nat_1(_G5395, _G5532)), _G5328=_G5395, _G5463=_G5532]
+ (14)  [- (_G2619=_G2619)]
+ (15)  [_G2718=_G2763, - (_G2763=_G2718)]
+ (16)  [- (_G2951=_G3064), _G2951=_G3007, _G3007=_G3064]
+ (17)  [-r1_xxreal_0(_G4487, _G4624), r1_xxreal_0(_G4420, _G4555), _G4420=_G4487, _G4555=_G4624]
+ (18)  [-m2_subset_1(_G3486, _G3659, _G3836), m2_subset_1(_G3401, _G3572, _G3747), _G3401=_G3486, _G3572=_G3659, _G3747=_G3836]
+
+Connection Proof:
+-----------------
+1  [m2_subset_1(2^[], k1_numbers, k5_numbers), r1_xxreal_0(np__1, 2^[]), r1_xxreal_0(k9_newton(k2_nat_1(1^[2^[]], np__1)), 2^[])]   (10)  substitution:[[_G5958], [2^[]]]
+1.1  [-m2_subset_1(2^[], k1_numbers, k5_numbers)]   (5)  
+1.2  [-r1_xxreal_0(np__1, 2^[])]   (6)  
+1.3  [-r1_xxreal_0(k9_newton(k2_nat_1(1^[2^[]], np__1)), 2^[]), m2_subset_1(1^[2^[]], k1_numbers, k5_numbers), r1_xxreal_0(k9_newton(1^[2^[]]), 2^[]), 4^[1^[2^[]]]]   (7)  substitution:[[_G9302], [1^[2^[]]]]
+1.3.1  [-m2_subset_1(1^[2^[]], k1_numbers, k5_numbers), m2_subset_1(2^[], k1_numbers, k5_numbers), r1_xxreal_0(np__1, 2^[])]   (8)  substitution:[[_G5958], [2^[]]]
+1.3.1.1  [-m2_subset_1(2^[], k1_numbers, k5_numbers)]   (5)  
+1.3.1.2  [-r1_xxreal_0(np__1, 2^[])]   (6)  
+1.3.2  [-r1_xxreal_0(k9_newton(1^[2^[]]), 2^[]), m2_subset_1(2^[], k1_numbers, k5_numbers), r1_xxreal_0(np__1, 2^[])]   (9)  substitution:[[_G5958], [2^[]]]
+1.3.2.1  [-m2_subset_1(2^[], k1_numbers, k5_numbers)]   (5)  
+1.3.2.2  [-r1_xxreal_0(np__1, 2^[])]   (6)  
+1.3.3  [-4^[1^[2^[]]], 3^[1^[2^[]]]=1^[2^[]]]   (1)  substitution:[[_G9302], [1^[2^[]]]]
+1.3.3.1  [- (3^[1^[2^[]]]=1^[2^[]]), m2_subset_1(2^[], k1_numbers, k5_numbers), r1_xxreal_0(np__1, 2^[]), m2_subset_1(3^[1^[2^[]]], k1_numbers, k5_numbers), r1_xxreal_0(k9_newton(3^[1^[2^[]]]), 2^[]), -r1_xxreal_0(k9_newton(k2_nat_1(3^[1^[2^[]]], np__1)), 2^[])]   (11)  substitution:[[_G8984, _G5958], [3^[1^[2^[]]], 2^[]]]
+1.3.3.1.1  [-m2_subset_1(2^[], k1_numbers, k5_numbers)]   (5)  
+1.3.3.1.2  [-r1_xxreal_0(np__1, 2^[])]   (6)  
+1.3.3.1.3  [-m2_subset_1(3^[1^[2^[]]], k1_numbers, k5_numbers), -4^[1^[2^[]]]]   (4)  substitution:[[_G9302], [1^[2^[]]]]
+1.3.3.1.3.1  [4^[1^[2^[]]]]   (reduction:1.3)  
+1.3.3.1.4  [-r1_xxreal_0(k9_newton(3^[1^[2^[]]]), 2^[]), -4^[1^[2^[]]]]   (3)  substitution:[[_G9302], [1^[2^[]]]]
+1.3.3.1.4.1  [4^[1^[2^[]]]]   (reduction:1.3)  
+1.3.3.1.5  [r1_xxreal_0(k9_newton(k2_nat_1(3^[1^[2^[]]], np__1)), 2^[]), -4^[1^[2^[]]]]   (2)  substitution:[[_G9302], [1^[2^[]]]]
+1.3.3.1.5.1  [4^[1^[2^[]]]]   (reduction:1.3)  
+------------------------------------------------------
+End of proof for t57_asympt_1

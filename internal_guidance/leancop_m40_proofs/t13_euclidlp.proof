@@ -1,0 +1,54 @@
+
+t13_euclidlp is a Theorem
+Start of proof for t13_euclidlp
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], k1_numbers)]
+ (2)  [-m1_subset_1(2^[], k1_numbers)]
+ (3)  [-m1_subset_1(3^[], k1_numbers)]
+ (4)  [-m1_subset_1(4^[], k5_numbers)]
+ (5)  [-m2_finseq_2(5^[], k1_numbers, k1_euclid(4^[]))]
+ (6)  [k9_euclid(4^[], 5^[], k9_real_1(k9_real_1(1^[], 2^[]), 3^[]))=k8_euclid(4^[], k8_euclid(4^[], k9_euclid(4^[], 5^[], 1^[]), k9_euclid(4^[], 5^[], 2^[])), k9_euclid(4^[], 5^[], 3^[]))]
+ (7)  [m1_subset_1(_G11510, k1_numbers), -v1_xreal_0(_G11510)]
+ (8)  [-m1_subset_1(k9_real_1(_G11667, _G11720), k1_numbers), m1_subset_1(_G11667, k1_numbers), v1_xreal_0(_G11720)]
+ (9)  [m1_subset_1(_G12008, k1_numbers), m1_subset_1(_G12215, k1_numbers), m1_subset_1(_G12417, k5_numbers), m2_finseq_2(_G12614, k1_numbers, k1_euclid(_G12417)), - (k9_euclid(_G12417, _G12614, k9_real_1(_G12008, _G12215))=k7_euclid(_G12417, k9_euclid(_G12417, _G12614, _G12008), k9_euclid(_G12417, _G12614, k1_real_1(_G12215))))]
+ (10)  [m1_subset_1(_G12008, k1_numbers), m1_subset_1(_G12215, k1_numbers), m1_subset_1(_G12417, k5_numbers), m2_finseq_2(_G12614, k1_numbers, k1_euclid(_G12417)), - (k9_euclid(_G12417, _G12614, k9_real_1(_G12008, _G12215))=k7_euclid(_G12417, k9_euclid(_G12417, _G12614, _G12008), k6_euclid(_G12417, k9_euclid(_G12417, _G12614, _G12215))))]
+ (11)  [m1_subset_1(_G12008, k1_numbers), m1_subset_1(_G12215, k1_numbers), m1_subset_1(_G12417, k5_numbers), m2_finseq_2(_G12614, k1_numbers, k1_euclid(_G12417)), - (k9_euclid(_G12417, _G12614, k9_real_1(_G12008, _G12215))=k8_euclid(_G12417, k9_euclid(_G12417, _G12614, _G12008), k9_euclid(_G12417, _G12614, _G12215)))]
+ (12)  [- (_G3799=_G3799)]
+ (13)  [_G3898=_G3943, - (_G3943=_G3898)]
+ (14)  [- (_G4131=_G4244), _G4131=_G4187, _G4187=_G4244]
+ (15)  [-v1_xreal_0(_G4630), _G4581=_G4630, v1_xreal_0(_G4581)]
+ (16)  [-m1_subset_1(_G4926, _G5063), m1_subset_1(_G4859, _G4994), _G4859=_G4926, _G4994=_G5063]
+ (17)  [-m2_finseq_2(_G5532, _G5705, _G5882), m2_finseq_2(_G5447, _G5618, _G5793), _G5447=_G5532, _G5618=_G5705, _G5793=_G5882]
+ (18)  [_G6538=_G6587, - (k1_real_1(_G6538)=k1_real_1(_G6587))]
+ (19)  [- (k7_euclid(_G6816, _G6987, _G7162)=k7_euclid(_G6901, _G7074, _G7251)), _G6816=_G6901, _G6987=_G7074, _G7162=_G7251]
+ (20)  [- (k6_euclid(_G7844, _G7979)=k6_euclid(_G7911, _G8048)), _G7844=_G7911, _G7979=_G8048]
+ (21)  [_G8441=_G8490, - (k1_euclid(_G8441)=k1_euclid(_G8490))]
+ (22)  [- (k9_real_1(_G8719, _G8854)=k9_real_1(_G8786, _G8923)), _G8719=_G8786, _G8854=_G8923]
+ (23)  [- (k8_euclid(_G9316, _G9487, _G9662)=k8_euclid(_G9401, _G9574, _G9751)), _G9316=_G9401, _G9487=_G9574, _G9662=_G9751]
+ (24)  [- (k9_euclid(_G10335, _G10506, _G10681)=k9_euclid(_G10420, _G10593, _G10770)), _G10335=_G10420, _G10506=_G10593, _G10681=_G10770]
+
+Connection Proof:
+-----------------
+1  [k9_euclid(4^[], 5^[], k9_real_1(k9_real_1(1^[], 2^[]), 3^[]))=k8_euclid(4^[], k8_euclid(4^[], k9_euclid(4^[], 5^[], 1^[]), k9_euclid(4^[], 5^[], 2^[])), k9_euclid(4^[], 5^[], 3^[]))]   (6)  
+1.1  [- (k9_euclid(4^[], 5^[], k9_real_1(k9_real_1(1^[], 2^[]), 3^[]))=k8_euclid(4^[], k8_euclid(4^[], k9_euclid(4^[], 5^[], 1^[]), k9_euclid(4^[], 5^[], 2^[])), k9_euclid(4^[], 5^[], 3^[]))), k9_euclid(4^[], 5^[], k9_real_1(k9_real_1(1^[], 2^[]), 3^[]))=k8_euclid(4^[], k9_euclid(4^[], 5^[], k9_real_1(1^[], 2^[])), k9_euclid(4^[], 5^[], 3^[])), k8_euclid(4^[], k9_euclid(4^[], 5^[], k9_real_1(1^[], 2^[])), k9_euclid(4^[], 5^[], 3^[]))=k8_euclid(4^[], k8_euclid(4^[], k9_euclid(4^[], 5^[], 1^[]), k9_euclid(4^[], 5^[], 2^[])), k9_euclid(4^[], 5^[], 3^[]))]   (14)  substitution:[[_G4131, _G4244, _G4187], [k9_euclid(4^[], 5^[], k9_real_1(k9_real_1(1^[], 2^[]), 3^[])), k8_euclid(4^[], k8_euclid(4^[], k9_euclid(4^[], 5^[], 1^[]), k9_euclid(4^[], 5^[], 2^[])), k9_euclid(4^[], 5^[], 3^[])), k8_euclid(4^[], k9_euclid(4^[], 5^[], k9_real_1(1^[], 2^[])), k9_euclid(4^[], 5^[], 3^[]))]]
+1.1.1  [- (k9_euclid(4^[], 5^[], k9_real_1(k9_real_1(1^[], 2^[]), 3^[]))=k8_euclid(4^[], k9_euclid(4^[], 5^[], k9_real_1(1^[], 2^[])), k9_euclid(4^[], 5^[], 3^[]))), m1_subset_1(k9_real_1(1^[], 2^[]), k1_numbers), m1_subset_1(3^[], k1_numbers), m1_subset_1(4^[], k5_numbers), m2_finseq_2(5^[], k1_numbers, k1_euclid(4^[]))]   (11)  substitution:[[_G12417, _G12614, _G12008, _G12215], [4^[], 5^[], k9_real_1(1^[], 2^[]), 3^[]]]
+1.1.1.1  [-m1_subset_1(k9_real_1(1^[], 2^[]), k1_numbers), m1_subset_1(1^[], k1_numbers), v1_xreal_0(2^[])]   (8)  substitution:[[_G11667, _G11720], [1^[], 2^[]]]
+1.1.1.1.1  [-m1_subset_1(1^[], k1_numbers)]   (1)  
+1.1.1.1.2  [-v1_xreal_0(2^[]), m1_subset_1(2^[], k1_numbers)]   (7)  substitution:[[_G11510], [2^[]]]
+1.1.1.1.2.1  [-m1_subset_1(2^[], k1_numbers)]   (2)  
+1.1.1.2  [-m1_subset_1(3^[], k1_numbers)]   (3)  
+1.1.1.3  [-m1_subset_1(4^[], k5_numbers)]   (4)  
+1.1.1.4  [-m2_finseq_2(5^[], k1_numbers, k1_euclid(4^[]))]   (5)  
+1.1.2  [- (k8_euclid(4^[], k9_euclid(4^[], 5^[], k9_real_1(1^[], 2^[])), k9_euclid(4^[], 5^[], 3^[]))=k8_euclid(4^[], k8_euclid(4^[], k9_euclid(4^[], 5^[], 1^[]), k9_euclid(4^[], 5^[], 2^[])), k9_euclid(4^[], 5^[], 3^[]))), k8_euclid(4^[], k9_euclid(4^[], 5^[], k9_real_1(1^[], 2^[])), k9_euclid(4^[], 5^[], 3^[]))=k8_euclid(4^[], k8_euclid(4^[], k9_euclid(4^[], 5^[], 1^[]), k9_euclid(4^[], 5^[], 2^[])), k9_euclid(4^[], 5^[], 3^[])), k8_euclid(4^[], k8_euclid(4^[], k9_euclid(4^[], 5^[], 1^[]), k9_euclid(4^[], 5^[], 2^[])), k9_euclid(4^[], 5^[], 3^[]))=k8_euclid(4^[], k8_euclid(4^[], k9_euclid(4^[], 5^[], 1^[]), k9_euclid(4^[], 5^[], 2^[])), k9_euclid(4^[], 5^[], 3^[]))]   (14)  substitution:[[_G4131, _G4244, _G4187], [k8_euclid(4^[], k9_euclid(4^[], 5^[], k9_real_1(1^[], 2^[])), k9_euclid(4^[], 5^[], 3^[])), k8_euclid(4^[], k8_euclid(4^[], k9_euclid(4^[], 5^[], 1^[]), k9_euclid(4^[], 5^[], 2^[])), k9_euclid(4^[], 5^[], 3^[])), k8_euclid(4^[], k8_euclid(4^[], k9_euclid(4^[], 5^[], 1^[]), k9_euclid(4^[], 5^[], 2^[])), k9_euclid(4^[], 5^[], 3^[]))]]
+1.1.2.1  [- (k8_euclid(4^[], k9_euclid(4^[], 5^[], k9_real_1(1^[], 2^[])), k9_euclid(4^[], 5^[], 3^[]))=k8_euclid(4^[], k8_euclid(4^[], k9_euclid(4^[], 5^[], 1^[]), k9_euclid(4^[], 5^[], 2^[])), k9_euclid(4^[], 5^[], 3^[]))), 4^[]=4^[], k9_euclid(4^[], 5^[], k9_real_1(1^[], 2^[]))=k8_euclid(4^[], k9_euclid(4^[], 5^[], 1^[]), k9_euclid(4^[], 5^[], 2^[])), k9_euclid(4^[], 5^[], 3^[])=k9_euclid(4^[], 5^[], 3^[])]   (23)  substitution:[[_G9316, _G9487, _G9662, _G9401, _G9574, _G9751], [4^[], k9_euclid(4^[], 5^[], k9_real_1(1^[], 2^[])), k9_euclid(4^[], 5^[], 3^[]), 4^[], k8_euclid(4^[], k9_euclid(4^[], 5^[], 1^[]), k9_euclid(4^[], 5^[], 2^[])), k9_euclid(4^[], 5^[], 3^[])]]
+1.1.2.1.1  [- (4^[]=4^[])]   (12)  substitution:[[_G3799], [4^[]]]
+1.1.2.1.2  [- (k9_euclid(4^[], 5^[], k9_real_1(1^[], 2^[]))=k8_euclid(4^[], k9_euclid(4^[], 5^[], 1^[]), k9_euclid(4^[], 5^[], 2^[]))), m1_subset_1(1^[], k1_numbers), m1_subset_1(2^[], k1_numbers), m1_subset_1(4^[], k5_numbers), m2_finseq_2(5^[], k1_numbers, k1_euclid(4^[]))]   (11)  substitution:[[_G12417, _G12614, _G12008, _G12215], [4^[], 5^[], 1^[], 2^[]]]
+1.1.2.1.2.1  [-m1_subset_1(1^[], k1_numbers)]   (1)  
+1.1.2.1.2.2  [-m1_subset_1(2^[], k1_numbers)]   (2)  
+1.1.2.1.2.3  [-m1_subset_1(4^[], k5_numbers)]   (4)  
+1.1.2.1.2.4  [-m2_finseq_2(5^[], k1_numbers, k1_euclid(4^[]))]   (5)  
+1.1.2.1.3  [- (k9_euclid(4^[], 5^[], 3^[])=k9_euclid(4^[], 5^[], 3^[]))]   (12)  substitution:[[_G3799], [k9_euclid(4^[], 5^[], 3^[])]]
+1.1.2.2  [- (k8_euclid(4^[], k8_euclid(4^[], k9_euclid(4^[], 5^[], 1^[]), k9_euclid(4^[], 5^[], 2^[])), k9_euclid(4^[], 5^[], 3^[]))=k8_euclid(4^[], k8_euclid(4^[], k9_euclid(4^[], 5^[], 1^[]), k9_euclid(4^[], 5^[], 2^[])), k9_euclid(4^[], 5^[], 3^[])))]   (12)  substitution:[[_G3799], [k8_euclid(4^[], k8_euclid(4^[], k9_euclid(4^[], 5^[], 1^[]), k9_euclid(4^[], 5^[], 2^[])), k9_euclid(4^[], 5^[], 3^[]))]]
+------------------------------------------------------
+End of proof for t13_euclidlp

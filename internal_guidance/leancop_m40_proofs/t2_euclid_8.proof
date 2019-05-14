@@ -1,0 +1,33 @@
+
+t2_euclid_8 is a Theorem
+Start of proof for t2_euclid_8
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m2_finseq_1(1^[], k1_numbers)]
+ (2)  [- (k3_finseq_1(1^[])=np__3)]
+ (3)  [m2_finseq_2(1^[], k1_numbers, k1_euclid(np__3))]
+ (4)  [m2_finseq_1(_G5801, k1_numbers), -m2_finseq_2(_G5801, k1_numbers, k1_euclid(k3_finseq_1(_G5801)))]
+ (5)  [m2_finseq_1(_G5801, k1_numbers), -m1_subset_1(_G5801, u1_struct_0(k15_euclid(k3_finseq_1(_G5801))))]
+ (6)  [_G4623=_G4672, - (u1_struct_0(_G4623)=u1_struct_0(_G4672))]
+ (7)  [_G4901=_G4950, - (k15_euclid(_G4901)=k15_euclid(_G4950))]
+ (8)  [_G5179=_G5228, - (k3_finseq_1(_G5179)=k3_finseq_1(_G5228))]
+ (9)  [_G5448=_G5497, - (k1_euclid(_G5448)=k1_euclid(_G5497))]
+ (10)  [- (_G1565=_G1565)]
+ (11)  [_G1664=_G1709, - (_G1709=_G1664)]
+ (12)  [- (_G1897=_G2010), _G1897=_G1953, _G1953=_G2010]
+ (13)  [-m1_subset_1(_G2414, _G2551), m1_subset_1(_G2347, _G2482), _G2347=_G2414, _G2482=_G2551]
+ (14)  [-m2_finseq_1(_G3011, _G3148), m2_finseq_1(_G2944, _G3079), _G2944=_G3011, _G3079=_G3148]
+ (15)  [-m2_finseq_2(_G3617, _G3790, _G3967), m2_finseq_2(_G3532, _G3703, _G3878), _G3532=_G3617, _G3703=_G3790, _G3878=_G3967]
+
+Connection Proof:
+-----------------
+1  [m2_finseq_2(1^[], k1_numbers, k1_euclid(np__3))]   (3)  
+1.1  [-m2_finseq_2(1^[], k1_numbers, k1_euclid(np__3)), m2_finseq_2(1^[], k1_numbers, k1_euclid(k3_finseq_1(1^[]))), 1^[]=1^[], k1_numbers=k1_numbers, k1_euclid(k3_finseq_1(1^[]))=k1_euclid(np__3)]   (15)  substitution:[[_G3617, _G3790, _G3967, _G3532, _G3703, _G3878], [1^[], k1_numbers, k1_euclid(np__3), 1^[], k1_numbers, k1_euclid(k3_finseq_1(1^[]))]]
+1.1.1  [-m2_finseq_2(1^[], k1_numbers, k1_euclid(k3_finseq_1(1^[]))), m2_finseq_1(1^[], k1_numbers)]   (4)  substitution:[[_G5801], [1^[]]]
+1.1.1.1  [-m2_finseq_1(1^[], k1_numbers)]   (1)  
+1.1.2  [- (1^[]=1^[])]   (10)  substitution:[[_G1565], [1^[]]]
+1.1.3  [- (k1_numbers=k1_numbers)]   (10)  substitution:[[_G1565], [k1_numbers]]
+1.1.4  [- (k1_euclid(k3_finseq_1(1^[]))=k1_euclid(np__3)), k3_finseq_1(1^[])=np__3]   (9)  substitution:[[_G5448, _G5497], [k3_finseq_1(1^[]), np__3]]
+1.1.4.1  [- (k3_finseq_1(1^[])=np__3)]   (2)  
+------------------------------------------------------
+End of proof for t2_euclid_8

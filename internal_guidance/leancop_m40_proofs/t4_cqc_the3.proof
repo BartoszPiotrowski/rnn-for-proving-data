@@ -1,0 +1,53 @@
+
+t4_cqc_the3 is a Theorem
+Start of proof for t4_cqc_the3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_qc_lang1(2^[])]
+ (2)  [-m2_subset_1(3^[], k9_qc_lang1(2^[]), k3_cqc_lang(2^[]))]
+ (3)  [-m1_subset_1(4^[], k1_zfmisc_1(k3_cqc_lang(2^[])))]
+ (4)  [-m1_subset_1(5^[], k1_zfmisc_1(k3_cqc_lang(2^[])))]
+ (5)  [-r3_cqc_the1(2^[], 4^[], 3^[])]
+ (6)  [-r1_tarski(4^[], 5^[])]
+ (7)  [r3_cqc_the1(2^[], 5^[], 3^[])]
+ (8)  [v1_xboole_0(_G1619), m1_subset_1(_G1702, k1_zfmisc_1(_G1619)), -v1_xboole_0(_G1702)]
+ (9)  [-r1_tarski(_G1910, _G1966), -r2_hidden(1^[_G1966, _G1910], _G1910)]
+ (10)  [-r1_tarski(_G1910, _G1966), r2_hidden(1^[_G1966, _G1910], _G1966)]
+ (11)  [r1_tarski(_G1910, _G1966), r2_hidden(_G2080, _G1910), -r2_hidden(_G2080, _G1966)]
+ (12)  [m1_qc_lang1(_G2312), m1_subset_1(_G2421, k1_zfmisc_1(k3_cqc_lang(_G2312))), m1_subset_1(_G2579, k9_qc_lang1(_G2312)), r3_cqc_the1(_G2312, _G2421, _G2579), -r2_hidden(_G2579, k1_cqc_the1(_G2312, _G2421))]
+ (13)  [m1_qc_lang1(_G2312), m1_subset_1(_G2421, k1_zfmisc_1(k3_cqc_lang(_G2312))), m1_subset_1(_G2579, k9_qc_lang1(_G2312)), -r3_cqc_the1(_G2312, _G2421, _G2579), r2_hidden(_G2579, k1_cqc_the1(_G2312, _G2421))]
+ (14)  [m1_qc_lang1(_G3018), -m1_subset_1(k3_cqc_lang(_G3018), k1_zfmisc_1(k9_qc_lang1(_G3018)))]
+ (15)  [-m1_subset_1(_G3575, _G3223), m2_subset_1(_G3575, _G3223, _G3296), -v1_xboole_0(_G3223), -v1_xboole_0(_G3296), m1_subset_1(_G3296, k1_zfmisc_1(_G3223))]
+ (16)  [m1_qc_lang1(_G3851), v1_xboole_0(k3_cqc_lang(_G3851))]
+ (17)  [m1_qc_lang1(_G4005), m1_subset_1(_G4118, k1_zfmisc_1(k3_cqc_lang(_G4005))), m1_subset_1(_G4280, k1_zfmisc_1(k3_cqc_lang(_G4005))), r1_tarski(_G4118, _G4280), -r1_tarski(k1_cqc_the1(_G4005, _G4118), k1_cqc_the1(_G4005, _G4280))]
+
+Connection Proof:
+-----------------
+1  [r3_cqc_the1(2^[], 5^[], 3^[])]   (7)  
+1.1  [-r3_cqc_the1(2^[], 5^[], 3^[]), m1_qc_lang1(2^[]), m1_subset_1(5^[], k1_zfmisc_1(k3_cqc_lang(2^[]))), m1_subset_1(3^[], k9_qc_lang1(2^[])), r2_hidden(3^[], k1_cqc_the1(2^[], 5^[]))]   (13)  substitution:[[_G2312, _G2421, _G2579], [2^[], 5^[], 3^[]]]
+1.1.1  [-m1_qc_lang1(2^[])]   (1)  
+1.1.2  [-m1_subset_1(5^[], k1_zfmisc_1(k3_cqc_lang(2^[])))]   (4)  
+1.1.3  [-m1_subset_1(3^[], k9_qc_lang1(2^[])), m2_subset_1(3^[], k9_qc_lang1(2^[]), k3_cqc_lang(2^[])), -v1_xboole_0(k9_qc_lang1(2^[])), -v1_xboole_0(k3_cqc_lang(2^[])), m1_subset_1(k3_cqc_lang(2^[]), k1_zfmisc_1(k9_qc_lang1(2^[])))]   (15)  substitution:[[_G3575, _G3223, _G3296], [3^[], k9_qc_lang1(2^[]), k3_cqc_lang(2^[])]]
+1.1.3.1  [-m2_subset_1(3^[], k9_qc_lang1(2^[]), k3_cqc_lang(2^[]))]   (2)  
+1.1.3.2  [v1_xboole_0(k9_qc_lang1(2^[])), m1_subset_1(k3_cqc_lang(2^[]), k1_zfmisc_1(k9_qc_lang1(2^[]))), -v1_xboole_0(k3_cqc_lang(2^[]))]   (8)  substitution:[[_G1619, _G1702], [k9_qc_lang1(2^[]), k3_cqc_lang(2^[])]]
+1.1.3.2.1  [-m1_subset_1(k3_cqc_lang(2^[]), k1_zfmisc_1(k9_qc_lang1(2^[]))), m1_qc_lang1(2^[])]   (14)  substitution:[[_G3018], [2^[]]]
+1.1.3.2.1.1  [-m1_qc_lang1(2^[])]   (1)  
+1.1.3.2.2  [v1_xboole_0(k3_cqc_lang(2^[])), m1_qc_lang1(2^[])]   (16)  substitution:[[_G3851], [2^[]]]
+1.1.3.2.2.1  [-m1_qc_lang1(2^[])]   (1)  
+1.1.3.3  [v1_xboole_0(k3_cqc_lang(2^[])), m1_qc_lang1(2^[])]   (16)  substitution:[[_G3851], [2^[]]]
+1.1.3.3.1  [-m1_qc_lang1(2^[])]   (1)  
+1.1.3.4  [-m1_subset_1(k3_cqc_lang(2^[]), k1_zfmisc_1(k9_qc_lang1(2^[]))), m1_qc_lang1(2^[])]   (14)  substitution:[[_G3018], [2^[]]]
+1.1.3.4.1  [-m1_qc_lang1(2^[])]   (1)  
+1.1.4  [-r2_hidden(3^[], k1_cqc_the1(2^[], 5^[])), r1_tarski(k1_cqc_the1(2^[], 4^[]), k1_cqc_the1(2^[], 5^[])), r2_hidden(3^[], k1_cqc_the1(2^[], 4^[]))]   (11)  substitution:[[_G2080, _G1966, _G1910], [3^[], k1_cqc_the1(2^[], 5^[]), k1_cqc_the1(2^[], 4^[])]]
+1.1.4.1  [-r1_tarski(k1_cqc_the1(2^[], 4^[]), k1_cqc_the1(2^[], 5^[])), m1_qc_lang1(2^[]), m1_subset_1(4^[], k1_zfmisc_1(k3_cqc_lang(2^[]))), m1_subset_1(5^[], k1_zfmisc_1(k3_cqc_lang(2^[]))), r1_tarski(4^[], 5^[])]   (17)  substitution:[[_G4005, _G4118, _G4280], [2^[], 4^[], 5^[]]]
+1.1.4.1.1  [-m1_qc_lang1(2^[])]   (1)  
+1.1.4.1.2  [-m1_subset_1(4^[], k1_zfmisc_1(k3_cqc_lang(2^[])))]   (3)  
+1.1.4.1.3  [-m1_subset_1(5^[], k1_zfmisc_1(k3_cqc_lang(2^[])))]   (4)  
+1.1.4.1.4  [-r1_tarski(4^[], 5^[])]   (6)  
+1.1.4.2  [-r2_hidden(3^[], k1_cqc_the1(2^[], 4^[])), m1_qc_lang1(2^[]), m1_subset_1(4^[], k1_zfmisc_1(k3_cqc_lang(2^[]))), m1_subset_1(3^[], k9_qc_lang1(2^[])), r3_cqc_the1(2^[], 4^[], 3^[])]   (12)  substitution:[[_G2579, _G2312, _G2421], [3^[], 2^[], 4^[]]]
+1.1.4.2.1  [-m1_qc_lang1(2^[])]   (1)  
+1.1.4.2.2  [-m1_subset_1(4^[], k1_zfmisc_1(k3_cqc_lang(2^[])))]   (3)  
+1.1.4.2.3  [-m1_subset_1(3^[], k9_qc_lang1(2^[]))]   (lemmata:1.1)  
+1.1.4.2.4  [-r3_cqc_the1(2^[], 4^[], 3^[])]   (5)  
+------------------------------------------------------
+End of proof for t4_cqc_the3

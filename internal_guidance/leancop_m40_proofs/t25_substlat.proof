@@ -1,0 +1,42 @@
+
+t25_substlat is a Theorem
+Start of proof for t25_substlat
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m2_subset_1(3^[], k5_finsub_1(k4_partfun1(1^[], 2^[])), k1_substlat(1^[], 2^[]))]
+ (2)  [k3_substlat(1^[], 2^[], k4_substlat(1^[], 2^[], 3^[], 3^[]))=3^[]]
+ (3)  [v1_xboole_0(_G10785), m1_subset_1(_G10868, k1_zfmisc_1(_G10785)), -v1_xboole_0(_G10868)]
+ (4)  [-m1_subset_1(k1_substlat(_G11076, _G11125), k1_zfmisc_1(k5_finsub_1(k4_partfun1(_G11076, _G11125))))]
+ (5)  [v1_xboole_0(k1_substlat(_G11982, _G12025))]
+ (6)  [m2_subset_1(_G12297, k5_finsub_1(k4_partfun1(_G12170, _G12233)), k1_substlat(_G12170, _G12233)), - (k3_substlat(_G12170, _G12233, _G12297)=_G12297)]
+ (7)  [m1_subset_1(_G12866, k5_finsub_1(k4_partfun1(_G12729, _G12797))), - (k3_substlat(_G12729, _G12797, k4_substlat(_G12729, _G12797, _G12866, _G12866))=k3_substlat(_G12729, _G12797, _G12866))]
+ (8)  [-m1_subset_1(_G11706, _G11354), m2_subset_1(_G11706, _G11354, _G11427), -v1_xboole_0(_G11354), -v1_xboole_0(_G11427), m1_subset_1(_G11427, k1_zfmisc_1(_G11354))]
+ (9)  [- (_G3616=_G3616)]
+ (10)  [_G3715=_G3760, - (_G3760=_G3715)]
+ (11)  [- (_G3948=_G4061), _G3948=_G4004, _G4004=_G4061]
+ (12)  [-v1_xboole_0(_G4447), _G4398=_G4447, v1_xboole_0(_G4398)]
+ (13)  [-m1_subset_1(_G4743, _G4880), m1_subset_1(_G4676, _G4811), _G4676=_G4743, _G4811=_G4880]
+ (14)  [-m2_subset_1(_G5349, _G5522, _G5699), m2_subset_1(_G5264, _G5435, _G5610), _G5264=_G5349, _G5435=_G5522, _G5610=_G5699]
+ (15)  [_G6355=_G6404, - (k1_zfmisc_1(_G6355)=k1_zfmisc_1(_G6404))]
+ (16)  [_G6633=_G6682, - (k5_finsub_1(_G6633)=k5_finsub_1(_G6682))]
+ (17)  [- (k4_partfun1(_G6911, _G7046)=k4_partfun1(_G6978, _G7115)), _G6911=_G6978, _G7046=_G7115]
+ (18)  [- (k1_substlat(_G7508, _G7643)=k1_substlat(_G7575, _G7712)), _G7508=_G7575, _G7643=_G7712]
+ (19)  [- (k3_substlat(_G8105, _G8276, _G8451)=k3_substlat(_G8190, _G8363, _G8540)), _G8105=_G8190, _G8276=_G8363, _G8451=_G8540]
+ (20)  [- (k4_substlat(_G9124, _G9331, _G9542, _G9757)=k4_substlat(_G9227, _G9436, _G9649, _G9866)), _G9124=_G9227, _G9331=_G9436, _G9542=_G9649, _G9757=_G9866]
+
+Connection Proof:
+-----------------
+1  [v1_xboole_0(k1_substlat(1^[], 2^[]))]   (5)  substitution:[[_G11982, _G12025], [1^[], 2^[]]]
+1.1  [-v1_xboole_0(k1_substlat(1^[], 2^[])), -m1_subset_1(3^[], k5_finsub_1(k4_partfun1(1^[], 2^[]))), m2_subset_1(3^[], k5_finsub_1(k4_partfun1(1^[], 2^[])), k1_substlat(1^[], 2^[])), -v1_xboole_0(k5_finsub_1(k4_partfun1(1^[], 2^[]))), m1_subset_1(k1_substlat(1^[], 2^[]), k1_zfmisc_1(k5_finsub_1(k4_partfun1(1^[], 2^[]))))]   (8)  substitution:[[_G11427, _G11706, _G11354], [k1_substlat(1^[], 2^[]), 3^[], k5_finsub_1(k4_partfun1(1^[], 2^[]))]]
+1.1.1  [m1_subset_1(3^[], k5_finsub_1(k4_partfun1(1^[], 2^[]))), - (k3_substlat(1^[], 2^[], k4_substlat(1^[], 2^[], 3^[], 3^[]))=k3_substlat(1^[], 2^[], 3^[]))]   (7)  substitution:[[_G12866, _G12729, _G12797], [3^[], 1^[], 2^[]]]
+1.1.1.1  [k3_substlat(1^[], 2^[], k4_substlat(1^[], 2^[], 3^[], 3^[]))=k3_substlat(1^[], 2^[], 3^[]), - (k3_substlat(1^[], 2^[], k4_substlat(1^[], 2^[], 3^[], 3^[]))=3^[]), k3_substlat(1^[], 2^[], 3^[])=3^[]]   (11)  substitution:[[_G3948, _G4004, _G4061], [k3_substlat(1^[], 2^[], k4_substlat(1^[], 2^[], 3^[], 3^[])), k3_substlat(1^[], 2^[], 3^[]), 3^[]]]
+1.1.1.1.1  [k3_substlat(1^[], 2^[], k4_substlat(1^[], 2^[], 3^[], 3^[]))=3^[]]   (2)  
+1.1.1.1.2  [- (k3_substlat(1^[], 2^[], 3^[])=3^[]), m2_subset_1(3^[], k5_finsub_1(k4_partfun1(1^[], 2^[])), k1_substlat(1^[], 2^[]))]   (6)  substitution:[[_G12170, _G12233, _G12297], [1^[], 2^[], 3^[]]]
+1.1.1.1.2.1  [-m2_subset_1(3^[], k5_finsub_1(k4_partfun1(1^[], 2^[])), k1_substlat(1^[], 2^[]))]   (1)  
+1.1.2  [-m2_subset_1(3^[], k5_finsub_1(k4_partfun1(1^[], 2^[])), k1_substlat(1^[], 2^[]))]   (1)  
+1.1.3  [v1_xboole_0(k5_finsub_1(k4_partfun1(1^[], 2^[]))), m1_subset_1(k1_substlat(1^[], 2^[]), k1_zfmisc_1(k5_finsub_1(k4_partfun1(1^[], 2^[])))), -v1_xboole_0(k1_substlat(1^[], 2^[]))]   (3)  substitution:[[_G10785, _G10868], [k5_finsub_1(k4_partfun1(1^[], 2^[])), k1_substlat(1^[], 2^[])]]
+1.1.3.1  [-m1_subset_1(k1_substlat(1^[], 2^[]), k1_zfmisc_1(k5_finsub_1(k4_partfun1(1^[], 2^[]))))]   (4)  substitution:[[_G11076, _G11125], [1^[], 2^[]]]
+1.1.3.2  [v1_xboole_0(k1_substlat(1^[], 2^[]))]   (5)  substitution:[[_G11982, _G12025], [1^[], 2^[]]]
+1.1.4  [-m1_subset_1(k1_substlat(1^[], 2^[]), k1_zfmisc_1(k5_finsub_1(k4_partfun1(1^[], 2^[]))))]   (4)  substitution:[[_G11076, _G11125], [1^[], 2^[]]]
+------------------------------------------------------
+End of proof for t25_substlat

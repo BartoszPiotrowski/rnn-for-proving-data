@@ -1,0 +1,29 @@
+
+t5_int_1 is a Theorem
+Start of proof for t5_int_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_int_1(1^[])]
+ (2)  [-v1_int_1(2^[])]
+ (3)  [-r1_xxreal_0(1^[], 2^[])]
+ (4)  [r2_hidden(k6_xcmplx_0(2^[], 1^[]), k5_numbers)]
+ (5)  [v1_int_1(_G961), -v1_xreal_0(_G961)]
+ (6)  [-v1_int_1(k6_xcmplx_0(_G1092, _G1143)), v1_int_1(_G1092), v1_int_1(_G1143)]
+ (7)  [v1_int_1(_G1787), r1_xxreal_0(k6_numbers, _G1787), -r2_hidden(_G1787, k5_numbers)]
+ (8)  [v1_xreal_0(_G1388), v1_xreal_0(_G1478), r1_xxreal_0(_G1388, _G1478), -r1_xxreal_0(k6_numbers, k6_xcmplx_0(_G1478, _G1388))]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(k6_xcmplx_0(2^[], 1^[]), k5_numbers)]   (4)  
+1.1  [-r2_hidden(k6_xcmplx_0(2^[], 1^[]), k5_numbers), v1_int_1(k6_xcmplx_0(2^[], 1^[])), r1_xxreal_0(k6_numbers, k6_xcmplx_0(2^[], 1^[]))]   (7)  substitution:[[_G1787], [k6_xcmplx_0(2^[], 1^[])]]
+1.1.1  [-v1_int_1(k6_xcmplx_0(2^[], 1^[])), v1_int_1(2^[]), v1_int_1(1^[])]   (6)  substitution:[[_G1092, _G1143], [2^[], 1^[]]]
+1.1.1.1  [-v1_int_1(2^[])]   (2)  
+1.1.1.2  [-v1_int_1(1^[])]   (1)  
+1.1.2  [-r1_xxreal_0(k6_numbers, k6_xcmplx_0(2^[], 1^[])), v1_xreal_0(1^[]), v1_xreal_0(2^[]), r1_xxreal_0(1^[], 2^[])]   (8)  substitution:[[_G1478, _G1388], [2^[], 1^[]]]
+1.1.2.1  [-v1_xreal_0(1^[]), v1_int_1(1^[])]   (5)  substitution:[[_G961], [1^[]]]
+1.1.2.1.1  [-v1_int_1(1^[])]   (1)  
+1.1.2.2  [-v1_xreal_0(2^[]), v1_int_1(2^[])]   (5)  substitution:[[_G961], [2^[]]]
+1.1.2.2.1  [-v1_int_1(2^[])]   (2)  
+1.1.2.3  [-r1_xxreal_0(1^[], 2^[])]   (3)  
+------------------------------------------------------
+End of proof for t5_int_1

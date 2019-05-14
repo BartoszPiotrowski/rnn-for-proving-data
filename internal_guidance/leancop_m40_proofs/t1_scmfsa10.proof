@@ -1,0 +1,65 @@
+
+t1_scmfsa10 is a Theorem
+Start of proof for t1_scmfsa10
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(2^[], u1_struct_0(k1_scmfsa_2))]
+ (2)  [-r2_hidden(2^[], k8_struct_0(k1_scmfsa_2))]
+ (3)  [m1_scmfsa_2(2^[])]
+ (4)  [v1_ami_2(2^[]), m1_subset_1(2^[], u1_struct_0(k1_scmfsa_2))]
+ (5)  [v1_ami_2(_G8500), -r2_hidden(_G8500, k2_ami_2)]
+ (6)  [-v1_ami_2(_G8500), r2_hidden(_G8500, k2_ami_2)]
+ (7)  [- (k3_scmfsa_2=k3_scmfsa_1)]
+ (8)  [-m1_subset_1(k2_scmfsa_2, k1_zfmisc_1(u1_struct_0(k1_scmfsa_2)))]
+ (9)  [-m1_subset_1(k3_scmfsa_2, k1_zfmisc_1(u1_struct_0(k1_scmfsa_2)))]
+ (10)  [- (k2_ami_2=k2_scm_inst)]
+ (11)  [- (k2_scmfsa_2=k2_scm_inst)]
+ (12)  [- (k8_struct_0(k1_scmfsa_2)=k4_subset_1(u1_struct_0(k1_scmfsa_2), k2_scmfsa_2, k3_scmfsa_2))]
+ (13)  [- (k4_subset_1(_G9892, _G9959, _G10027)=k2_xboole_0(_G9959, _G10027)), m1_subset_1(_G9959, k1_zfmisc_1(_G9892)), m1_subset_1(_G10027, k1_zfmisc_1(_G9892))]
+ (14)  [m1_subset_1(_G9353, u1_struct_0(k1_scmfsa_2)), m1_scmfsa_2(_G9353), -r2_hidden(_G9353, k3_scmfsa_1)]
+ (15)  [m1_subset_1(_G9353, u1_struct_0(k1_scmfsa_2)), -m1_scmfsa_2(_G9353), r2_hidden(_G9353, k3_scmfsa_1)]
+ (16)  [_G8855=k2_xboole_0(_G8714, _G8784), -r2_hidden(_G9023, _G8855), r2_hidden(_G9023, _G8714)]
+ (17)  [_G8855=k2_xboole_0(_G8714, _G8784), -r2_hidden(_G9023, _G8855), r2_hidden(_G9023, _G8784)]
+ (18)  [_G8855=k2_xboole_0(_G8714, _G8784), r2_hidden(_G9023, _G8855), -r2_hidden(_G9023, _G8714), -r2_hidden(_G9023, _G8784)]
+ (19)  [- (_G8855=k2_xboole_0(_G8714, _G8784)), r2_hidden(1^[_G8855, _G8784, _G8714], _G8855), r2_hidden(1^[_G8855, _G8784, _G8714], _G8714)]
+ (20)  [- (_G8855=k2_xboole_0(_G8714, _G8784)), r2_hidden(1^[_G8855, _G8784, _G8714], _G8855), r2_hidden(1^[_G8855, _G8784, _G8714], _G8784)]
+ (21)  [- (_G8855=k2_xboole_0(_G8714, _G8784)), -r2_hidden(1^[_G8855, _G8784, _G8714], _G8855), -r2_hidden(1^[_G8855, _G8784, _G8714], _G8714), -r2_hidden(1^[_G8855, _G8784, _G8714], _G8784)]
+ (22)  [_G5945=_G5994, - (k1_zfmisc_1(_G5945)=k1_zfmisc_1(_G5994))]
+ (23)  [- (k2_xboole_0(_G6223, _G6358)=k2_xboole_0(_G6290, _G6427)), _G6223=_G6290, _G6358=_G6427]
+ (24)  [- (k4_subset_1(_G6820, _G6991, _G7166)=k4_subset_1(_G6905, _G7078, _G7255)), _G6820=_G6905, _G6991=_G7078, _G7166=_G7255]
+ (25)  [_G7848=_G7897, - (k8_struct_0(_G7848)=k8_struct_0(_G7897))]
+ (26)  [_G8117=_G8166, - (u1_struct_0(_G8117)=u1_struct_0(_G8166))]
+ (27)  [- (_G3338=_G3338)]
+ (28)  [_G3437=_G3482, - (_G3482=_G3437)]
+ (29)  [- (_G3670=_G3783), _G3670=_G3726, _G3726=_G3783]
+ (30)  [-r2_hidden(_G4187, _G4324), r2_hidden(_G4120, _G4255), _G4120=_G4187, _G4255=_G4324]
+ (31)  [-v1_ami_2(_G4766), _G4717=_G4766, v1_ami_2(_G4717)]
+ (32)  [-m1_scmfsa_2(_G5632), _G5583=_G5632, m1_scmfsa_2(_G5583)]
+ (33)  [-m1_subset_1(_G5062, _G5199), m1_subset_1(_G4995, _G5130), _G4995=_G5062, _G5130=_G5199]
+
+Connection Proof:
+-----------------
+1  [m1_scmfsa_2(2^[])]   (3)  
+1.1  [-m1_scmfsa_2(2^[]), m1_subset_1(2^[], u1_struct_0(k1_scmfsa_2)), r2_hidden(2^[], k3_scmfsa_1)]   (15)  substitution:[[_G9353], [2^[]]]
+1.1.1  [-m1_subset_1(2^[], u1_struct_0(k1_scmfsa_2))]   (1)  
+1.1.2  [-r2_hidden(2^[], k3_scmfsa_1), k4_subset_1(u1_struct_0(k1_scmfsa_2), k2_scmfsa_2, k3_scmfsa_2)=k2_xboole_0(k2_scm_inst, k3_scmfsa_1), r2_hidden(2^[], k4_subset_1(u1_struct_0(k1_scmfsa_2), k2_scmfsa_2, k3_scmfsa_2)), -r2_hidden(2^[], k2_scm_inst)]   (18)  substitution:[[_G9023, _G8784, _G8855, _G8714], [2^[], k3_scmfsa_1, k4_subset_1(u1_struct_0(k1_scmfsa_2), k2_scmfsa_2, k3_scmfsa_2), k2_scm_inst]]
+1.1.2.1  [- (k4_subset_1(u1_struct_0(k1_scmfsa_2), k2_scmfsa_2, k3_scmfsa_2)=k2_xboole_0(k2_scm_inst, k3_scmfsa_1)), k4_subset_1(u1_struct_0(k1_scmfsa_2), k2_scmfsa_2, k3_scmfsa_2)=k2_xboole_0(k2_scmfsa_2, k3_scmfsa_2), k2_xboole_0(k2_scmfsa_2, k3_scmfsa_2)=k2_xboole_0(k2_scm_inst, k3_scmfsa_1)]   (29)  substitution:[[_G3670, _G3783, _G3726], [k4_subset_1(u1_struct_0(k1_scmfsa_2), k2_scmfsa_2, k3_scmfsa_2), k2_xboole_0(k2_scm_inst, k3_scmfsa_1), k2_xboole_0(k2_scmfsa_2, k3_scmfsa_2)]]
+1.1.2.1.1  [- (k4_subset_1(u1_struct_0(k1_scmfsa_2), k2_scmfsa_2, k3_scmfsa_2)=k2_xboole_0(k2_scmfsa_2, k3_scmfsa_2)), m1_subset_1(k2_scmfsa_2, k1_zfmisc_1(u1_struct_0(k1_scmfsa_2))), m1_subset_1(k3_scmfsa_2, k1_zfmisc_1(u1_struct_0(k1_scmfsa_2)))]   (13)  substitution:[[_G9892, _G9959, _G10027], [u1_struct_0(k1_scmfsa_2), k2_scmfsa_2, k3_scmfsa_2]]
+1.1.2.1.1.1  [-m1_subset_1(k2_scmfsa_2, k1_zfmisc_1(u1_struct_0(k1_scmfsa_2)))]   (8)  
+1.1.2.1.1.2  [-m1_subset_1(k3_scmfsa_2, k1_zfmisc_1(u1_struct_0(k1_scmfsa_2)))]   (9)  
+1.1.2.1.2  [- (k2_xboole_0(k2_scmfsa_2, k3_scmfsa_2)=k2_xboole_0(k2_scm_inst, k3_scmfsa_1)), k2_scmfsa_2=k2_scm_inst, k3_scmfsa_2=k3_scmfsa_1]   (23)  substitution:[[_G6223, _G6358, _G6290, _G6427], [k2_scmfsa_2, k3_scmfsa_2, k2_scm_inst, k3_scmfsa_1]]
+1.1.2.1.2.1  [- (k2_scmfsa_2=k2_scm_inst)]   (11)  
+1.1.2.1.2.2  [- (k3_scmfsa_2=k3_scmfsa_1)]   (7)  
+1.1.2.2  [-r2_hidden(2^[], k4_subset_1(u1_struct_0(k1_scmfsa_2), k2_scmfsa_2, k3_scmfsa_2)), r2_hidden(2^[], k8_struct_0(k1_scmfsa_2)), 2^[]=2^[], k8_struct_0(k1_scmfsa_2)=k4_subset_1(u1_struct_0(k1_scmfsa_2), k2_scmfsa_2, k3_scmfsa_2)]   (30)  substitution:[[_G4187, _G4324, _G4120, _G4255], [2^[], k4_subset_1(u1_struct_0(k1_scmfsa_2), k2_scmfsa_2, k3_scmfsa_2), 2^[], k8_struct_0(k1_scmfsa_2)]]
+1.1.2.2.1  [-r2_hidden(2^[], k8_struct_0(k1_scmfsa_2))]   (2)  
+1.1.2.2.2  [- (2^[]=2^[])]   (27)  substitution:[[_G3338], [2^[]]]
+1.1.2.2.3  [- (k8_struct_0(k1_scmfsa_2)=k4_subset_1(u1_struct_0(k1_scmfsa_2), k2_scmfsa_2, k3_scmfsa_2))]   (12)  
+1.1.2.3  [r2_hidden(2^[], k2_scm_inst), -r2_hidden(2^[], k2_ami_2), 2^[]=2^[], k2_scm_inst=k2_ami_2]   (30)  substitution:[[_G4120, _G4255, _G4187, _G4324], [2^[], k2_scm_inst, 2^[], k2_ami_2]]
+1.1.2.3.1  [r2_hidden(2^[], k2_ami_2), -v1_ami_2(2^[])]   (6)  substitution:[[_G8500], [2^[]]]
+1.1.2.3.1.1  [v1_ami_2(2^[]), m1_subset_1(2^[], u1_struct_0(k1_scmfsa_2))]   (4)  
+1.1.2.3.1.1.1  [-m1_subset_1(2^[], u1_struct_0(k1_scmfsa_2))]   (1)  
+1.1.2.3.2  [- (2^[]=2^[])]   (27)  substitution:[[_G3338], [2^[]]]
+1.1.2.3.3  [- (k2_scm_inst=k2_ami_2), k2_ami_2=k2_scm_inst]   (28)  substitution:[[_G3482, _G3437], [k2_scm_inst, k2_ami_2]]
+1.1.2.3.3.1  [- (k2_ami_2=k2_scm_inst)]   (10)  
+------------------------------------------------------
+End of proof for t1_scmfsa10

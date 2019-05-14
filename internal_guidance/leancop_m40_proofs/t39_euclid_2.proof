@@ -1,0 +1,29 @@
+
+t39_euclid_2 is a Theorem
+Start of proof for t39_euclid_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v7_ordinal1(1^[])]
+ (2)  [k12_euclid(k4_struct_0(k15_euclid(1^[])))=k6_numbers]
+ (3)  [v7_ordinal1(_G3675), - (k4_struct_0(k15_euclid(_G3675))=k5_euclid(_G3675))]
+ (4)  [v7_ordinal1(_G3871), - (k12_euclid(k5_euclid(_G3871))=k6_numbers)]
+ (5)  [_G2488=_G2537, - (k5_euclid(_G2488)=k5_euclid(_G2537))]
+ (6)  [_G2766=_G2815, - (k12_euclid(_G2766)=k12_euclid(_G2815))]
+ (7)  [_G3044=_G3093, - (k4_struct_0(_G3044)=k4_struct_0(_G3093))]
+ (8)  [_G3313=_G3362, - (k15_euclid(_G3313)=k15_euclid(_G3362))]
+ (9)  [-v7_ordinal1(_G2238), _G2189=_G2238, v7_ordinal1(_G2189)]
+ (10)  [- (_G1416=_G1416)]
+ (11)  [_G1515=_G1560, - (_G1560=_G1515)]
+ (12)  [- (_G1748=_G1861), _G1748=_G1804, _G1804=_G1861]
+
+Connection Proof:
+-----------------
+1  [k12_euclid(k4_struct_0(k15_euclid(1^[])))=k6_numbers]   (2)  
+1.1  [- (k12_euclid(k4_struct_0(k15_euclid(1^[])))=k6_numbers), k12_euclid(k4_struct_0(k15_euclid(1^[])))=k12_euclid(k5_euclid(1^[])), k12_euclid(k5_euclid(1^[]))=k6_numbers]   (12)  substitution:[[_G1748, _G1861, _G1804], [k12_euclid(k4_struct_0(k15_euclid(1^[]))), k6_numbers, k12_euclid(k5_euclid(1^[]))]]
+1.1.1  [- (k12_euclid(k4_struct_0(k15_euclid(1^[])))=k12_euclid(k5_euclid(1^[]))), k4_struct_0(k15_euclid(1^[]))=k5_euclid(1^[])]   (6)  substitution:[[_G2766, _G2815], [k4_struct_0(k15_euclid(1^[])), k5_euclid(1^[])]]
+1.1.1.1  [- (k4_struct_0(k15_euclid(1^[]))=k5_euclid(1^[])), v7_ordinal1(1^[])]   (3)  substitution:[[_G3675], [1^[]]]
+1.1.1.1.1  [-v7_ordinal1(1^[])]   (1)  
+1.1.2  [- (k12_euclid(k5_euclid(1^[]))=k6_numbers), v7_ordinal1(1^[])]   (4)  substitution:[[_G3871], [1^[]]]
+1.1.2.1  [-v7_ordinal1(1^[])]   (1)  
+------------------------------------------------------
+End of proof for t39_euclid_2

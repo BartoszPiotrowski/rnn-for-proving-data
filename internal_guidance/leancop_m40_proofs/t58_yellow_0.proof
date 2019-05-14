@@ -1,0 +1,44 @@
+
+t58_yellow_0 is a Theorem
+Start of proof for t58_yellow_0
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(2^[])]
+ (2)  [-l1_orders_2(2^[])]
+ (3)  [v2_struct_0(3^[])]
+ (4)  [-m1_yellow_0(3^[], 2^[])]
+ (5)  [-m1_subset_1(4^[], u1_struct_0(3^[]))]
+ (6)  [m1_subset_1(4^[], u1_struct_0(2^[]))]
+ (7)  [l1_orders_2(_G1407), l1_orders_2(_G1508), m1_yellow_0(_G1508, _G1407), -r1_tarski(u1_struct_0(_G1508), u1_struct_0(_G1407))]
+ (8)  [l1_orders_2(_G1407), l1_orders_2(_G1508), m1_yellow_0(_G1508, _G1407), -r1_tarski(u1_orders_2(_G1508), u1_orders_2(_G1407))]
+ (9)  [l1_orders_2(_G1407), l1_orders_2(_G1508), -m1_yellow_0(_G1508, _G1407), r1_tarski(u1_struct_0(_G1508), u1_struct_0(_G1407)), r1_tarski(u1_orders_2(_G1508), u1_orders_2(_G1407))]
+ (10)  [-r1_tarski(_G1932, _G1988), -r2_hidden(1^[_G1988, _G1932], _G1932)]
+ (11)  [-r1_tarski(_G1932, _G1988), r2_hidden(1^[_G1988, _G1932], _G1988)]
+ (12)  [r1_tarski(_G1932, _G1988), r2_hidden(_G2102, _G1932), -r2_hidden(_G2102, _G1988)]
+ (13)  [l1_orders_2(_G2334), -l1_struct_0(_G2334)]
+ (14)  [l1_orders_2(_G2465), m1_yellow_0(_G2546, _G2465), -l1_orders_2(_G2546)]
+ (15)  [v1_xboole_0(u1_struct_0(_G2738)), -v2_struct_0(_G2738), l1_struct_0(_G2738)]
+ (16)  [r2_hidden(_G2975, _G3020), -m1_subset_1(_G2975, _G3020)]
+ (17)  [m1_subset_1(_G3208, _G3258), -v1_xboole_0(_G3258), -r2_hidden(_G3208, _G3258)]
+
+Connection Proof:
+-----------------
+1  [v2_struct_0(3^[])]   (3)  
+1.1  [-v2_struct_0(3^[]), v1_xboole_0(u1_struct_0(3^[])), l1_struct_0(3^[])]   (15)  substitution:[[_G2738], [3^[]]]
+1.1.1  [-v1_xboole_0(u1_struct_0(3^[])), m1_subset_1(4^[], u1_struct_0(3^[])), -r2_hidden(4^[], u1_struct_0(3^[]))]   (17)  substitution:[[_G3258, _G3208], [u1_struct_0(3^[]), 4^[]]]
+1.1.1.1  [-m1_subset_1(4^[], u1_struct_0(3^[]))]   (5)  
+1.1.1.2  [r2_hidden(4^[], u1_struct_0(3^[])), r1_tarski(u1_struct_0(3^[]), u1_struct_0(2^[])), -r2_hidden(4^[], u1_struct_0(2^[]))]   (12)  substitution:[[_G2102, _G1932, _G1988], [4^[], u1_struct_0(3^[]), u1_struct_0(2^[])]]
+1.1.1.2.1  [-r1_tarski(u1_struct_0(3^[]), u1_struct_0(2^[])), l1_orders_2(2^[]), l1_orders_2(3^[]), m1_yellow_0(3^[], 2^[])]   (7)  substitution:[[_G1508, _G1407], [3^[], 2^[]]]
+1.1.1.2.1.1  [-l1_orders_2(2^[])]   (2)  
+1.1.1.2.1.2  [-l1_orders_2(3^[]), l1_orders_2(2^[]), m1_yellow_0(3^[], 2^[])]   (14)  substitution:[[_G2546, _G2465], [3^[], 2^[]]]
+1.1.1.2.1.2.1  [-l1_orders_2(2^[])]   (2)  
+1.1.1.2.1.2.2  [-m1_yellow_0(3^[], 2^[])]   (4)  
+1.1.1.2.1.3  [-m1_yellow_0(3^[], 2^[])]   (4)  
+1.1.1.2.2  [r2_hidden(4^[], u1_struct_0(2^[])), -m1_subset_1(4^[], u1_struct_0(2^[]))]   (16)  substitution:[[_G2975, _G3020], [4^[], u1_struct_0(2^[])]]
+1.1.1.2.2.1  [m1_subset_1(4^[], u1_struct_0(2^[]))]   (6)  
+1.1.2  [-l1_struct_0(3^[]), l1_orders_2(3^[])]   (13)  substitution:[[_G2334], [3^[]]]
+1.1.2.1  [-l1_orders_2(3^[]), l1_orders_2(2^[]), m1_yellow_0(3^[], 2^[])]   (14)  substitution:[[_G2546, _G2465], [3^[], 2^[]]]
+1.1.2.1.1  [-l1_orders_2(2^[])]   (2)  
+1.1.2.1.2  [-m1_yellow_0(3^[], 2^[])]   (4)  
+------------------------------------------------------
+End of proof for t58_yellow_0

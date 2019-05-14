@@ -1,0 +1,30 @@
+
+t2_setwiseo is a Theorem
+Start of proof for t2_setwiseo
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [r1_tarski(k2_tarski(1^[], 2^[]), k1_enumset1(1^[], 2^[], 3^[]))]
+ (2)  [-r1_tarski(_G5868, k1_enumset1(_G5451, _G5589, _G5728)), _G5868=k1_xboole_0]
+ (3)  [-r1_tarski(_G5868, k1_enumset1(_G5451, _G5589, _G5728)), _G5868=k1_tarski(_G5451)]
+ (4)  [-r1_tarski(_G5868, k1_enumset1(_G5451, _G5589, _G5728)), _G5868=k1_tarski(_G5589)]
+ (5)  [-r1_tarski(_G5868, k1_enumset1(_G5451, _G5589, _G5728)), _G5868=k1_tarski(_G5728)]
+ (6)  [-r1_tarski(_G5868, k1_enumset1(_G5451, _G5589, _G5728)), _G5868=k2_tarski(_G5451, _G5589)]
+ (7)  [-r1_tarski(_G5868, k1_enumset1(_G5451, _G5589, _G5728)), _G5868=k2_tarski(_G5589, _G5728)]
+ (8)  [-r1_tarski(_G5868, k1_enumset1(_G5451, _G5589, _G5728)), _G5868=k2_tarski(_G5451, _G5728)]
+ (9)  [-r1_tarski(_G5868, k1_enumset1(_G5451, _G5589, _G5728)), _G5868=k1_enumset1(_G5451, _G5589, _G5728)]
+ (10)  [r1_tarski(_G5868, k1_enumset1(_G5451, _G5589, _G5728)), - (_G5868=k1_xboole_0), - (_G5868=k1_tarski(_G5451)), - (_G5868=k1_tarski(_G5589)), - (_G5868=k1_tarski(_G5728)), - (_G5868=k2_tarski(_G5451, _G5589)), - (_G5868=k2_tarski(_G5589, _G5728)), - (_G5868=k2_tarski(_G5451, _G5728)), - (_G5868=k1_enumset1(_G5451, _G5589, _G5728))]
+ (11)  [-r1_tarski(_G2952, _G3089), r1_tarski(_G2885, _G3020), _G2885=_G2952, _G3020=_G3089]
+ (12)  [- (_G2112=_G2112)]
+ (13)  [_G2211=_G2256, - (_G2256=_G2211)]
+ (14)  [- (_G2444=_G2557), _G2444=_G2500, _G2500=_G2557]
+ (15)  [_G3503=_G3552, - (k1_tarski(_G3503)=k1_tarski(_G3552))]
+ (16)  [- (k2_tarski(_G3781, _G3916)=k2_tarski(_G3848, _G3985)), _G3781=_G3848, _G3916=_G3985]
+ (17)  [- (k1_enumset1(_G4369, _G4540, _G4715)=k1_enumset1(_G4454, _G4627, _G4804)), _G4369=_G4454, _G4540=_G4627, _G4715=_G4804]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k2_tarski(1^[], 2^[]), k1_enumset1(1^[], 2^[], 3^[]))]   (1)  
+1.1  [-r1_tarski(k2_tarski(1^[], 2^[]), k1_enumset1(1^[], 2^[], 3^[])), k2_tarski(1^[], 2^[])=k2_tarski(1^[], 2^[])]   (6)  substitution:[[_G5868, _G5451, _G5589, _G5728], [k2_tarski(1^[], 2^[]), 1^[], 2^[], 3^[]]]
+1.1.1  [- (k2_tarski(1^[], 2^[])=k2_tarski(1^[], 2^[]))]   (12)  substitution:[[_G2112], [k2_tarski(1^[], 2^[])]]
+------------------------------------------------------
+End of proof for t2_setwiseo

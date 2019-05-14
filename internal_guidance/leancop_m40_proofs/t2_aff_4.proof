@@ -1,0 +1,39 @@
+
+t2_aff_4 is a Theorem
+Start of proof for t2_aff_4
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v7_struct_0(1^[])]
+ (2)  [-v1_diraf(1^[])]
+ (3)  [-l1_analoaf(1^[])]
+ (4)  [-m1_subset_1(2^[], u1_struct_0(1^[]))]
+ (5)  [-m1_subset_1(3^[], u1_struct_0(1^[]))]
+ (6)  [-m1_subset_1(4^[], k1_zfmisc_1(u1_struct_0(1^[])))]
+ (7)  [-r2_hidden(2^[], 4^[])]
+ (8)  [r2_hidden(3^[], 4^[])]
+ (9)  [-r2_aff_1(1^[], 2^[], 3^[], 4^[]), -r2_aff_1(1^[], 3^[], 2^[], 4^[])]
+ (10)  [l1_analoaf(_G1350), v1_diraf(_G1350), -v7_struct_0(_G1350), m1_subset_1(_G1604, u1_struct_0(_G1350)), m1_subset_1(_G1761, u1_struct_0(_G1350)), m1_subset_1(_G1911, k1_zfmisc_1(u1_struct_0(_G1350))), r2_aff_1(_G1350, _G1604, _G1761, _G1911), -r2_aff_1(_G1350, _G1761, _G1604, _G1911)]
+ (11)  [l1_analoaf(_G2482), v1_diraf(_G2482), -v7_struct_0(_G2482), m1_subset_1(_G2744, u1_struct_0(_G2482)), m1_subset_1(_G2909, u1_struct_0(_G2482)), m1_subset_1(_G3067, k1_zfmisc_1(u1_struct_0(_G2482))), r2_aff_1(_G2482, _G2744, _G2909, _G3067), -r2_hidden(_G2744, _G3067), r2_hidden(_G2909, _G3067)]
+
+Connection Proof:
+-----------------
+1  [r2_hidden(3^[], 4^[])]   (8)  
+1.1  [-r2_hidden(3^[], 4^[]), l1_analoaf(1^[]), v1_diraf(1^[]), -v7_struct_0(1^[]), m1_subset_1(3^[], u1_struct_0(1^[])), m1_subset_1(2^[], u1_struct_0(1^[])), m1_subset_1(4^[], k1_zfmisc_1(u1_struct_0(1^[]))), r2_aff_1(1^[], 3^[], 2^[], 4^[]), r2_hidden(2^[], 4^[])]   (11)  substitution:[[_G2744, _G3067, _G2482, _G2909], [3^[], 4^[], 1^[], 2^[]]]
+1.1.1  [-l1_analoaf(1^[])]   (3)  
+1.1.2  [-v1_diraf(1^[])]   (2)  
+1.1.3  [v7_struct_0(1^[])]   (1)  
+1.1.4  [-m1_subset_1(3^[], u1_struct_0(1^[]))]   (5)  
+1.1.5  [-m1_subset_1(2^[], u1_struct_0(1^[]))]   (4)  
+1.1.6  [-m1_subset_1(4^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (6)  
+1.1.7  [-r2_aff_1(1^[], 3^[], 2^[], 4^[]), l1_analoaf(1^[]), v1_diraf(1^[]), -v7_struct_0(1^[]), m1_subset_1(2^[], u1_struct_0(1^[])), m1_subset_1(3^[], u1_struct_0(1^[])), m1_subset_1(4^[], k1_zfmisc_1(u1_struct_0(1^[]))), r2_aff_1(1^[], 2^[], 3^[], 4^[])]   (10)  substitution:[[_G1350, _G1761, _G1604, _G1911], [1^[], 3^[], 2^[], 4^[]]]
+1.1.7.1  [-l1_analoaf(1^[])]   (3)  
+1.1.7.2  [-v1_diraf(1^[])]   (2)  
+1.1.7.3  [v7_struct_0(1^[])]   (1)  
+1.1.7.4  [-m1_subset_1(2^[], u1_struct_0(1^[]))]   (4)  
+1.1.7.5  [-m1_subset_1(3^[], u1_struct_0(1^[]))]   (5)  
+1.1.7.6  [-m1_subset_1(4^[], k1_zfmisc_1(u1_struct_0(1^[])))]   (6)  
+1.1.7.7  [-r2_aff_1(1^[], 2^[], 3^[], 4^[]), -r2_aff_1(1^[], 3^[], 2^[], 4^[])]   (9)  
+1.1.7.7.1  [r2_aff_1(1^[], 3^[], 2^[], 4^[])]   (reduction:1.1)  
+1.1.8  [-r2_hidden(2^[], 4^[])]   (7)  
+------------------------------------------------------
+End of proof for t2_aff_4

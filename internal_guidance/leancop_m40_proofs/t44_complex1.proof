@@ -1,0 +1,35 @@
+
+t44_complex1 is a Theorem
+Start of proof for t44_complex1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k17_complex1(k6_numbers)=k6_numbers]
+ (2)  [m1_subset_1(_G5199, k1_numbers), -v1_xreal_0(_G5199)]
+ (3)  [-m1_subset_1(k6_numbers, k1_numbers)]
+ (4)  [v1_xreal_0(_G5413), v1_xreal_0(_G5515), -r1_xxreal_0(_G5413, k6_numbers), -r1_xxreal_0(k6_numbers, _G5515), r1_xxreal_0(k6_numbers, k3_xcmplx_0(_G5413, _G5515))]
+ (5)  [v1_xreal_0(_G6213), -r1_xxreal_0(k6_numbers, k3_xcmplx_0(_G6213, _G6213))]
+ (6)  [v1_xreal_0(_G5965), r1_xxreal_0(k6_numbers, _G5965), - (k17_complex1(_G5965)=_G5965)]
+ (7)  [_G4879=_G4928, - (k17_complex1(_G4879)=k17_complex1(_G4928))]
+ (8)  [- (k3_xcmplx_0(_G4291, _G4426)=k3_xcmplx_0(_G4358, _G4495)), _G4291=_G4358, _G4426=_G4495]
+ (9)  [- (_G1983=_G1983)]
+ (10)  [_G2082=_G2127, - (_G2127=_G2082)]
+ (11)  [- (_G2315=_G2428), _G2315=_G2371, _G2371=_G2428]
+ (12)  [-m1_subset_1(_G2832, _G2969), m1_subset_1(_G2765, _G2900), _G2765=_G2832, _G2900=_G2969]
+ (13)  [-v1_xreal_0(_G3411), _G3362=_G3411, v1_xreal_0(_G3362)]
+ (14)  [-r1_xxreal_0(_G3698, _G3835), r1_xxreal_0(_G3631, _G3766), _G3631=_G3698, _G3766=_G3835]
+
+Connection Proof:
+-----------------
+1  [k17_complex1(k6_numbers)=k6_numbers]   (1)  
+1.1  [- (k17_complex1(k6_numbers)=k6_numbers), v1_xreal_0(k6_numbers), r1_xxreal_0(k6_numbers, k6_numbers)]   (6)  substitution:[[_G5965], [k6_numbers]]
+1.1.1  [-v1_xreal_0(k6_numbers), m1_subset_1(k6_numbers, k1_numbers)]   (2)  substitution:[[_G5199], [k6_numbers]]
+1.1.1.1  [-m1_subset_1(k6_numbers, k1_numbers)]   (3)  
+1.1.2  [-r1_xxreal_0(k6_numbers, k6_numbers), v1_xreal_0(k6_numbers), v1_xreal_0(k6_numbers), -r1_xxreal_0(k6_numbers, k6_numbers), r1_xxreal_0(k6_numbers, k3_xcmplx_0(k6_numbers, k6_numbers))]   (4)  substitution:[[_G5413, _G5515], [k6_numbers, k6_numbers]]
+1.1.2.1  [-v1_xreal_0(k6_numbers)]   (lemmata:1.1)  
+1.1.2.2  [-v1_xreal_0(k6_numbers), m1_subset_1(k6_numbers, k1_numbers)]   (2)  substitution:[[_G5199], [k6_numbers]]
+1.1.2.2.1  [-m1_subset_1(k6_numbers, k1_numbers)]   (3)  
+1.1.2.3  [r1_xxreal_0(k6_numbers, k6_numbers)]   (reduction:1.1)  
+1.1.2.4  [-r1_xxreal_0(k6_numbers, k3_xcmplx_0(k6_numbers, k6_numbers)), v1_xreal_0(k6_numbers)]   (5)  substitution:[[_G6213], [k6_numbers]]
+1.1.2.4.1  [-v1_xreal_0(k6_numbers)]   (lemmata:1.1.2)  
+------------------------------------------------------
+End of proof for t44_complex1

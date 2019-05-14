@@ -1,0 +1,94 @@
+
+t12_trees_3 is a Theorem
+Start of proof for t12_trees_3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-5^[], v1_trees_3(k1_tarski(3^[]))]
+ (2)  [-5^[], -v1_trees_1(3^[])]
+ (3)  [-5^[], v1_xboole_0(3^[])]
+ (4)  [-4^[], -v1_xboole_0(3^[]), v1_trees_1(3^[])]
+ (5)  [-4^[], -v1_trees_3(k1_tarski(3^[]))]
+ (6)  [5^[], 4^[]]
+ (7)  [v1_trees_3(_G4620), r2_hidden(_G4708, _G4620), v1_xboole_0(_G4708)]
+ (8)  [v1_trees_3(_G4620), r2_hidden(_G4708, _G4620), -v1_trees_1(_G4708)]
+ (9)  [-v1_trees_3(_G4620), -r2_hidden(2^[_G4620], _G4620)]
+ (10)  [-v1_trees_3(_G4620), -v1_xboole_0(2^[_G4620]), v1_trees_1(2^[_G4620])]
+ (11)  [_G4267=k1_tarski(_G4209), r2_hidden(_G4397, _G4267), - (_G4397=_G4209)]
+ (12)  [_G4267=k1_tarski(_G4209), -r2_hidden(_G4397, _G4267), _G4397=_G4209]
+ (13)  [- (_G4267=k1_tarski(_G4209)), r2_hidden(1^[_G4267, _G4209], _G4267), 1^[_G4267, _G4209]=_G4209]
+ (14)  [- (_G4267=k1_tarski(_G4209)), -r2_hidden(1^[_G4267, _G4209], _G4267), - (1^[_G4267, _G4209]=_G4209)]
+ (15)  [_G3910=_G3959, - (k1_tarski(_G3910)=k1_tarski(_G3959))]
+ (16)  [- (_G1631=_G1631)]
+ (17)  [_G1730=_G1775, - (_G1775=_G1730)]
+ (18)  [- (_G1963=_G2076), _G1963=_G2019, _G2019=_G2076]
+ (19)  [-r2_hidden(_G2480, _G2617), r2_hidden(_G2413, _G2548), _G2413=_G2480, _G2548=_G2617]
+ (20)  [-v1_trees_3(_G3059), _G3010=_G3059, v1_trees_3(_G3010)]
+ (21)  [-v1_xboole_0(_G3337), _G3288=_G3337, v1_xboole_0(_G3288)]
+ (22)  [-v1_trees_1(_G3606), _G3557=_G3606, v1_trees_1(_G3557)]
+
+Connection Proof:
+-----------------
+1  [5^[], 4^[]]   (6)  
+1.1  [-5^[], -v1_trees_1(3^[])]   (2)  
+1.1.1  [v1_trees_1(3^[]), -v1_trees_1(2^[k1_tarski(3^[])]), 3^[]=2^[k1_tarski(3^[])]]   (22)  substitution:[[_G3557, _G3606], [3^[], 2^[k1_tarski(3^[])]]]
+1.1.1.1  [v1_trees_1(2^[k1_tarski(3^[])]), -v1_trees_3(k1_tarski(3^[])), -v1_xboole_0(2^[k1_tarski(3^[])])]   (10)  substitution:[[_G4620], [k1_tarski(3^[])]]
+1.1.1.1.1  [v1_trees_3(k1_tarski(3^[])), -5^[]]   (1)  
+1.1.1.1.1.1  [5^[]]   (reduction:1)  
+1.1.1.1.2  [v1_xboole_0(2^[k1_tarski(3^[])]), -v1_xboole_0(3^[]), 2^[k1_tarski(3^[])]=3^[]]   (21)  substitution:[[_G3288, _G3337], [2^[k1_tarski(3^[])], 3^[]]]
+1.1.1.1.2.1  [v1_xboole_0(3^[]), -5^[]]   (3)  
+1.1.1.1.2.1.1  [5^[]]   (reduction:1)  
+1.1.1.1.2.2  [- (2^[k1_tarski(3^[])]=3^[]), k1_tarski(3^[])=k1_tarski(3^[]), r2_hidden(2^[k1_tarski(3^[])], k1_tarski(3^[]))]   (11)  substitution:[[_G4397, _G4209, _G4267], [2^[k1_tarski(3^[])], 3^[], k1_tarski(3^[])]]
+1.1.1.1.2.2.1  [- (k1_tarski(3^[])=k1_tarski(3^[]))]   (16)  substitution:[[_G1631], [k1_tarski(3^[])]]
+1.1.1.1.2.2.2  [-r2_hidden(2^[k1_tarski(3^[])], k1_tarski(3^[])), -v1_trees_3(k1_tarski(3^[]))]   (9)  substitution:[[_G4620], [k1_tarski(3^[])]]
+1.1.1.1.2.2.2.1  [v1_trees_3(k1_tarski(3^[]))]   (lemmata:1.1.1.1)  
+1.1.1.2  [- (3^[]=2^[k1_tarski(3^[])]), k1_tarski(2^[k1_tarski(3^[])])=k1_tarski(2^[k1_tarski(3^[])]), r2_hidden(3^[], k1_tarski(2^[k1_tarski(3^[])]))]   (11)  substitution:[[_G4397, _G4209, _G4267], [3^[], 2^[k1_tarski(3^[])], k1_tarski(2^[k1_tarski(3^[])])]]
+1.1.1.2.1  [- (k1_tarski(2^[k1_tarski(3^[])])=k1_tarski(2^[k1_tarski(3^[])])), r2_hidden(1^[k1_tarski(2^[k1_tarski(3^[])]), 2^[k1_tarski(3^[])]], k1_tarski(2^[k1_tarski(3^[])])), 1^[k1_tarski(2^[k1_tarski(3^[])]), 2^[k1_tarski(3^[])]]=2^[k1_tarski(3^[])]]   (13)  substitution:[[_G4267, _G4209], [k1_tarski(2^[k1_tarski(3^[])]), 2^[k1_tarski(3^[])]]]
+1.1.1.2.1.1  [-r2_hidden(1^[k1_tarski(2^[k1_tarski(3^[])]), 2^[k1_tarski(3^[])]], k1_tarski(2^[k1_tarski(3^[])])), k1_tarski(2^[k1_tarski(3^[])])=k1_tarski(2^[k1_tarski(3^[])]), 1^[k1_tarski(2^[k1_tarski(3^[])]), 2^[k1_tarski(3^[])]]=2^[k1_tarski(3^[])]]   (12)  substitution:[[_G4397, _G4267, _G4209], [1^[k1_tarski(2^[k1_tarski(3^[])]), 2^[k1_tarski(3^[])]], k1_tarski(2^[k1_tarski(3^[])]), 2^[k1_tarski(3^[])]]]
+1.1.1.2.1.1.1  [- (k1_tarski(2^[k1_tarski(3^[])])=k1_tarski(2^[k1_tarski(3^[])]))]   (16)  substitution:[[_G1631], [k1_tarski(2^[k1_tarski(3^[])])]]
+1.1.1.2.1.1.2  [- (1^[k1_tarski(2^[k1_tarski(3^[])]), 2^[k1_tarski(3^[])]]=2^[k1_tarski(3^[])]), - (k1_tarski(2^[k1_tarski(3^[])])=k1_tarski(2^[k1_tarski(3^[])])), -r2_hidden(1^[k1_tarski(2^[k1_tarski(3^[])]), 2^[k1_tarski(3^[])]], k1_tarski(2^[k1_tarski(3^[])]))]   (14)  substitution:[[_G4267, _G4209], [k1_tarski(2^[k1_tarski(3^[])]), 2^[k1_tarski(3^[])]]]
+1.1.1.2.1.1.2.1  [k1_tarski(2^[k1_tarski(3^[])])=k1_tarski(2^[k1_tarski(3^[])])]   (reduction:1.1.1.2)  
+1.1.1.2.1.1.2.2  [r2_hidden(1^[k1_tarski(2^[k1_tarski(3^[])]), 2^[k1_tarski(3^[])]], k1_tarski(2^[k1_tarski(3^[])]))]   (reduction:1.1.1.2.1)  
+1.1.1.2.1.2  [- (1^[k1_tarski(2^[k1_tarski(3^[])]), 2^[k1_tarski(3^[])]]=2^[k1_tarski(3^[])]), k1_tarski(2^[k1_tarski(3^[])])=k1_tarski(2^[k1_tarski(3^[])]), r2_hidden(1^[k1_tarski(2^[k1_tarski(3^[])]), 2^[k1_tarski(3^[])]], k1_tarski(2^[k1_tarski(3^[])]))]   (11)  substitution:[[_G4397, _G4209, _G4267], [1^[k1_tarski(2^[k1_tarski(3^[])]), 2^[k1_tarski(3^[])]], 2^[k1_tarski(3^[])], k1_tarski(2^[k1_tarski(3^[])])]]
+1.1.1.2.1.2.1  [- (k1_tarski(2^[k1_tarski(3^[])])=k1_tarski(2^[k1_tarski(3^[])]))]   (16)  substitution:[[_G1631], [k1_tarski(2^[k1_tarski(3^[])])]]
+1.1.1.2.1.2.2  [-r2_hidden(1^[k1_tarski(2^[k1_tarski(3^[])]), 2^[k1_tarski(3^[])]], k1_tarski(2^[k1_tarski(3^[])]))]   (lemmata:1.1.1.2.1)  
+1.1.1.2.2  [-r2_hidden(3^[], k1_tarski(2^[k1_tarski(3^[])])), r2_hidden(2^[k1_tarski(3^[])], k1_tarski(3^[])), 2^[k1_tarski(3^[])]=3^[], k1_tarski(3^[])=k1_tarski(2^[k1_tarski(3^[])])]   (19)  substitution:[[_G2480, _G2617, _G2413, _G2548], [3^[], k1_tarski(2^[k1_tarski(3^[])]), 2^[k1_tarski(3^[])], k1_tarski(3^[])]]
+1.1.1.2.2.1  [-r2_hidden(2^[k1_tarski(3^[])], k1_tarski(3^[])), -v1_trees_3(k1_tarski(3^[]))]   (9)  substitution:[[_G4620], [k1_tarski(3^[])]]
+1.1.1.2.2.1.1  [v1_trees_3(k1_tarski(3^[])), -5^[]]   (1)  
+1.1.1.2.2.1.1.1  [5^[]]   (reduction:1)  
+1.1.1.2.2.2  [- (2^[k1_tarski(3^[])]=3^[]), k1_tarski(3^[])=k1_tarski(3^[]), r2_hidden(2^[k1_tarski(3^[])], k1_tarski(3^[]))]   (11)  substitution:[[_G4397, _G4209, _G4267], [2^[k1_tarski(3^[])], 3^[], k1_tarski(3^[])]]
+1.1.1.2.2.2.1  [- (k1_tarski(3^[])=k1_tarski(3^[]))]   (16)  substitution:[[_G1631], [k1_tarski(3^[])]]
+1.1.1.2.2.2.2  [-r2_hidden(2^[k1_tarski(3^[])], k1_tarski(3^[]))]   (lemmata:1.1.1.2.2)  
+1.1.1.2.2.3  [- (k1_tarski(3^[])=k1_tarski(2^[k1_tarski(3^[])])), k1_tarski(2^[k1_tarski(3^[])])=k1_tarski(3^[])]   (17)  substitution:[[_G1775, _G1730], [k1_tarski(3^[]), k1_tarski(2^[k1_tarski(3^[])])]]
+1.1.1.2.2.3.1  [- (k1_tarski(2^[k1_tarski(3^[])])=k1_tarski(3^[])), 2^[k1_tarski(3^[])]=3^[]]   (15)  substitution:[[_G3910, _G3959], [2^[k1_tarski(3^[])], 3^[]]]
+1.1.1.2.2.3.1.1  [- (2^[k1_tarski(3^[])]=3^[])]   (lemmata:1.1.1.2.2)  
+1.2  [-4^[], -v1_xboole_0(3^[]), v1_trees_1(3^[])]   (4)  
+1.2.1  [v1_xboole_0(3^[]), v1_trees_3(k1_tarski(3^[])), r2_hidden(3^[], k1_tarski(3^[]))]   (7)  substitution:[[_G4708, _G4620], [3^[], k1_tarski(3^[])]]
+1.2.1.1  [-v1_trees_3(k1_tarski(3^[])), -4^[]]   (5)  
+1.2.1.1.1  [4^[]]   (reduction:1)  
+1.2.1.2  [-r2_hidden(3^[], k1_tarski(3^[])), k1_tarski(3^[])=k1_tarski(3^[]), 3^[]=3^[]]   (12)  substitution:[[_G4397, _G4267, _G4209], [3^[], k1_tarski(3^[]), 3^[]]]
+1.2.1.2.1  [- (k1_tarski(3^[])=k1_tarski(3^[])), r2_hidden(1^[k1_tarski(3^[]), 3^[]], k1_tarski(3^[])), 1^[k1_tarski(3^[]), 3^[]]=3^[]]   (13)  substitution:[[_G4267, _G4209], [k1_tarski(3^[]), 3^[]]]
+1.2.1.2.1.1  [-r2_hidden(1^[k1_tarski(3^[]), 3^[]], k1_tarski(3^[])), k1_tarski(3^[])=k1_tarski(3^[]), 1^[k1_tarski(3^[]), 3^[]]=3^[]]   (12)  substitution:[[_G4397, _G4267, _G4209], [1^[k1_tarski(3^[]), 3^[]], k1_tarski(3^[]), 3^[]]]
+1.2.1.2.1.1.1  [- (k1_tarski(3^[])=k1_tarski(3^[]))]   (16)  substitution:[[_G1631], [k1_tarski(3^[])]]
+1.2.1.2.1.1.2  [- (1^[k1_tarski(3^[]), 3^[]]=3^[]), - (k1_tarski(3^[])=k1_tarski(3^[])), -r2_hidden(1^[k1_tarski(3^[]), 3^[]], k1_tarski(3^[]))]   (14)  substitution:[[_G4267, _G4209], [k1_tarski(3^[]), 3^[]]]
+1.2.1.2.1.1.2.1  [k1_tarski(3^[])=k1_tarski(3^[])]   (reduction:1.2.1.2)  
+1.2.1.2.1.1.2.2  [r2_hidden(1^[k1_tarski(3^[]), 3^[]], k1_tarski(3^[]))]   (reduction:1.2.1.2.1)  
+1.2.1.2.1.2  [- (1^[k1_tarski(3^[]), 3^[]]=3^[]), k1_tarski(3^[])=k1_tarski(3^[]), r2_hidden(1^[k1_tarski(3^[]), 3^[]], k1_tarski(3^[]))]   (11)  substitution:[[_G4397, _G4209, _G4267], [1^[k1_tarski(3^[]), 3^[]], 3^[], k1_tarski(3^[])]]
+1.2.1.2.1.2.1  [- (k1_tarski(3^[])=k1_tarski(3^[]))]   (16)  substitution:[[_G1631], [k1_tarski(3^[])]]
+1.2.1.2.1.2.2  [-r2_hidden(1^[k1_tarski(3^[]), 3^[]], k1_tarski(3^[]))]   (lemmata:1.2.1.2.1)  
+1.2.1.2.2  [- (3^[]=3^[])]   (16)  substitution:[[_G1631], [3^[]]]
+1.2.2  [-v1_trees_1(3^[]), v1_trees_3(k1_tarski(3^[])), r2_hidden(3^[], k1_tarski(3^[]))]   (8)  substitution:[[_G4708, _G4620], [3^[], k1_tarski(3^[])]]
+1.2.2.1  [-v1_trees_3(k1_tarski(3^[])), -4^[]]   (5)  
+1.2.2.1.1  [4^[]]   (reduction:1)  
+1.2.2.2  [-r2_hidden(3^[], k1_tarski(3^[])), k1_tarski(3^[])=k1_tarski(3^[]), 3^[]=3^[]]   (12)  substitution:[[_G4397, _G4267, _G4209], [3^[], k1_tarski(3^[]), 3^[]]]
+1.2.2.2.1  [- (k1_tarski(3^[])=k1_tarski(3^[])), r2_hidden(1^[k1_tarski(3^[]), 3^[]], k1_tarski(3^[])), 1^[k1_tarski(3^[]), 3^[]]=3^[]]   (13)  substitution:[[_G4267, _G4209], [k1_tarski(3^[]), 3^[]]]
+1.2.2.2.1.1  [-r2_hidden(1^[k1_tarski(3^[]), 3^[]], k1_tarski(3^[])), k1_tarski(3^[])=k1_tarski(3^[]), 1^[k1_tarski(3^[]), 3^[]]=3^[]]   (12)  substitution:[[_G4397, _G4267, _G4209], [1^[k1_tarski(3^[]), 3^[]], k1_tarski(3^[]), 3^[]]]
+1.2.2.2.1.1.1  [- (k1_tarski(3^[])=k1_tarski(3^[]))]   (16)  substitution:[[_G1631], [k1_tarski(3^[])]]
+1.2.2.2.1.1.2  [- (1^[k1_tarski(3^[]), 3^[]]=3^[]), - (k1_tarski(3^[])=k1_tarski(3^[])), -r2_hidden(1^[k1_tarski(3^[]), 3^[]], k1_tarski(3^[]))]   (14)  substitution:[[_G4267, _G4209], [k1_tarski(3^[]), 3^[]]]
+1.2.2.2.1.1.2.1  [k1_tarski(3^[])=k1_tarski(3^[])]   (reduction:1.2.2.2)  
+1.2.2.2.1.1.2.2  [r2_hidden(1^[k1_tarski(3^[]), 3^[]], k1_tarski(3^[]))]   (reduction:1.2.2.2.1)  
+1.2.2.2.1.2  [- (1^[k1_tarski(3^[]), 3^[]]=3^[]), k1_tarski(3^[])=k1_tarski(3^[]), r2_hidden(1^[k1_tarski(3^[]), 3^[]], k1_tarski(3^[]))]   (11)  substitution:[[_G4397, _G4209, _G4267], [1^[k1_tarski(3^[]), 3^[]], 3^[], k1_tarski(3^[])]]
+1.2.2.2.1.2.1  [- (k1_tarski(3^[])=k1_tarski(3^[]))]   (16)  substitution:[[_G1631], [k1_tarski(3^[])]]
+1.2.2.2.1.2.2  [-r2_hidden(1^[k1_tarski(3^[]), 3^[]], k1_tarski(3^[]))]   (lemmata:1.2.2.2.1)  
+1.2.2.2.2  [- (3^[]=3^[])]   (16)  substitution:[[_G1631], [3^[]]]
+------------------------------------------------------
+End of proof for t12_trees_3

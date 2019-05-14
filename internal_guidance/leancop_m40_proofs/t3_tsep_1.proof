@@ -1,0 +1,42 @@
+
+t3_tsep_1 is a Theorem
+Start of proof for t3_tsep_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_pre_topc(1^[])]
+ (2)  [-l1_pre_topc(1^[])]
+ (3)  [k1_pre_topc(1^[], k2_struct_0(1^[]))=1^[]]
+ (4)  [l1_pre_topc(_G6840), m1_subset_1(_G6953, k1_zfmisc_1(u1_struct_0(_G6840))), m1_pre_topc(_G7115, _G6840), v1_pre_topc(_G7115), _G7115=k1_pre_topc(_G6840, _G6953), - (k2_struct_0(_G7115)=_G6953)]
+ (5)  [l1_pre_topc(_G6840), m1_subset_1(_G6953, k1_zfmisc_1(u1_struct_0(_G6840))), m1_pre_topc(_G7115, _G6840), v1_pre_topc(_G7115), - (_G7115=k1_pre_topc(_G6840, _G6953)), k2_struct_0(_G7115)=_G6953]
+ (6)  [l1_struct_0(_G7568), -m1_subset_1(k2_struct_0(_G7568), k1_zfmisc_1(u1_struct_0(_G7568)))]
+ (7)  [l1_pre_topc(_G7773), -l1_struct_0(_G7773)]
+ (8)  [l1_pre_topc(_G7895), -m1_pre_topc(_G7895, _G7895)]
+ (9)  [_G5334=_G5383, - (k1_zfmisc_1(_G5334)=k1_zfmisc_1(_G5383))]
+ (10)  [_G5612=_G5661, - (u1_struct_0(_G5612)=u1_struct_0(_G5661))]
+ (11)  [_G6478=_G6527, - (k2_struct_0(_G6478)=k2_struct_0(_G6527))]
+ (12)  [- (k1_pre_topc(_G5890, _G6025)=k1_pre_topc(_G5957, _G6094)), _G5890=_G5957, _G6025=_G6094]
+ (13)  [- (_G2428=_G2428)]
+ (14)  [_G2527=_G2572, - (_G2572=_G2527)]
+ (15)  [- (_G2760=_G2873), _G2760=_G2816, _G2816=_G2873]
+ (16)  [-m1_subset_1(_G3277, _G3414), m1_subset_1(_G3210, _G3345), _G3210=_G3277, _G3345=_G3414]
+ (17)  [-l1_struct_0(_G3856), _G3807=_G3856, l1_struct_0(_G3807)]
+ (18)  [-m1_pre_topc(_G4152, _G4289), m1_pre_topc(_G4085, _G4220), _G4085=_G4152, _G4220=_G4289]
+ (19)  [-v1_pre_topc(_G4731), _G4682=_G4731, v1_pre_topc(_G4682)]
+ (20)  [-l1_pre_topc(_G5000), _G4951=_G5000, l1_pre_topc(_G4951)]
+
+Connection Proof:
+-----------------
+1  [k1_pre_topc(1^[], k2_struct_0(1^[]))=1^[]]   (3)  
+1.1  [- (k1_pre_topc(1^[], k2_struct_0(1^[]))=1^[]), 1^[]=k1_pre_topc(1^[], k2_struct_0(1^[]))]   (14)  substitution:[[_G2572, _G2527], [k1_pre_topc(1^[], k2_struct_0(1^[])), 1^[]]]
+1.1.1  [- (1^[]=k1_pre_topc(1^[], k2_struct_0(1^[]))), l1_pre_topc(1^[]), m1_subset_1(k2_struct_0(1^[]), k1_zfmisc_1(u1_struct_0(1^[]))), m1_pre_topc(1^[], 1^[]), v1_pre_topc(1^[]), k2_struct_0(1^[])=k2_struct_0(1^[])]   (5)  substitution:[[_G7115, _G6840, _G6953], [1^[], 1^[], k2_struct_0(1^[])]]
+1.1.1.1  [-l1_pre_topc(1^[])]   (2)  
+1.1.1.2  [-m1_subset_1(k2_struct_0(1^[]), k1_zfmisc_1(u1_struct_0(1^[]))), l1_struct_0(1^[])]   (6)  substitution:[[_G7568], [1^[]]]
+1.1.1.2.1  [-l1_struct_0(1^[]), l1_pre_topc(1^[])]   (7)  substitution:[[_G7773], [1^[]]]
+1.1.1.2.1.1  [-l1_pre_topc(1^[])]   (2)  
+1.1.1.3  [-m1_pre_topc(1^[], 1^[]), l1_pre_topc(1^[])]   (8)  substitution:[[_G7895], [1^[]]]
+1.1.1.3.1  [-l1_pre_topc(1^[])]   (2)  
+1.1.1.4  [-v1_pre_topc(1^[])]   (1)  
+1.1.1.5  [- (k2_struct_0(1^[])=k2_struct_0(1^[])), 1^[]=1^[]]   (11)  substitution:[[_G6478, _G6527], [1^[], 1^[]]]
+1.1.1.5.1  [- (1^[]=1^[])]   (13)  substitution:[[_G2428], [1^[]]]
+------------------------------------------------------
+End of proof for t3_tsep_1

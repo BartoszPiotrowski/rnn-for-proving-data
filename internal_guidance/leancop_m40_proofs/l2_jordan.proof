@@ -1,0 +1,24 @@
+
+l2_jordan is a Theorem
+Start of proof for l2_jordan
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-r1_tarski(1^[], 5^[])]
+ (2)  [-r1_tarski(2^[], 5^[])]
+ (3)  [-r1_tarski(3^[], 5^[])]
+ (4)  [-r1_tarski(4^[], 5^[])]
+ (5)  [r1_tarski(k2_xboole_0(k2_xboole_0(k2_xboole_0(1^[], 2^[]), 3^[]), 4^[]), 5^[])]
+ (6)  [-r1_tarski(k2_xboole_0(_G776, _G895), _G835), r1_tarski(_G776, _G835), r1_tarski(_G895, _G835)]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k2_xboole_0(k2_xboole_0(k2_xboole_0(1^[], 2^[]), 3^[]), 4^[]), 5^[])]   (5)  
+1.1  [-r1_tarski(k2_xboole_0(k2_xboole_0(k2_xboole_0(1^[], 2^[]), 3^[]), 4^[]), 5^[]), r1_tarski(k2_xboole_0(k2_xboole_0(1^[], 2^[]), 3^[]), 5^[]), r1_tarski(4^[], 5^[])]   (6)  substitution:[[_G776, _G895, _G835], [k2_xboole_0(k2_xboole_0(1^[], 2^[]), 3^[]), 4^[], 5^[]]]
+1.1.1  [-r1_tarski(k2_xboole_0(k2_xboole_0(1^[], 2^[]), 3^[]), 5^[]), r1_tarski(k2_xboole_0(1^[], 2^[]), 5^[]), r1_tarski(3^[], 5^[])]   (6)  substitution:[[_G776, _G895, _G835], [k2_xboole_0(1^[], 2^[]), 3^[], 5^[]]]
+1.1.1.1  [-r1_tarski(k2_xboole_0(1^[], 2^[]), 5^[]), r1_tarski(1^[], 5^[]), r1_tarski(2^[], 5^[])]   (6)  substitution:[[_G776, _G895, _G835], [1^[], 2^[], 5^[]]]
+1.1.1.1.1  [-r1_tarski(1^[], 5^[])]   (1)  
+1.1.1.1.2  [-r1_tarski(2^[], 5^[])]   (2)  
+1.1.1.2  [-r1_tarski(3^[], 5^[])]   (3)  
+1.1.2  [-r1_tarski(4^[], 5^[])]   (4)  
+------------------------------------------------------
+End of proof for l2_jordan

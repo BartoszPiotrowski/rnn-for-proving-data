@@ -1,0 +1,21 @@
+
+t65_xboole_1 is a Theorem
+Start of proof for t65_xboole_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [r1_xboole_0(3^[], k1_xboole_0)]
+ (2)  [v1_xboole_0(_G858), r2_hidden(_G936, _G858)]
+ (3)  [-v1_xboole_0(_G858), -r2_hidden(1^[_G858], _G858)]
+ (4)  [-v1_xboole_0(k1_xboole_0)]
+ (5)  [-r1_xboole_0(_G1109, _G1196), -r2_hidden(2^[_G1196, _G1109], _G1109)]
+ (6)  [-r1_xboole_0(_G1109, _G1196), -r2_hidden(2^[_G1196, _G1109], _G1196)]
+ (7)  [r1_xboole_0(_G1109, _G1196), r2_hidden(_G1616, _G1109), r2_hidden(_G1616, _G1196)]
+
+Connection Proof:
+-----------------
+1  [v1_xboole_0(k1_xboole_0), r2_hidden(2^[k1_xboole_0, 3^[]], k1_xboole_0)]   (2)  substitution:[[_G858, _G936], [k1_xboole_0, 2^[k1_xboole_0, 3^[]]]]
+1.1  [-v1_xboole_0(k1_xboole_0)]   (4)  
+1.2  [-r2_hidden(2^[k1_xboole_0, 3^[]], k1_xboole_0), -r1_xboole_0(3^[], k1_xboole_0)]   (6)  substitution:[[_G1196, _G1109], [k1_xboole_0, 3^[]]]
+1.2.1  [r1_xboole_0(3^[], k1_xboole_0)]   (1)  
+------------------------------------------------------
+End of proof for t65_xboole_1

@@ -1,0 +1,47 @@
+
+l28_seqm_3 is a Theorem
+Start of proof for l28_seqm_3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v5_valued_0(k6_partfun1(k5_numbers)), v4_valued_0(k6_partfun1(k5_numbers))]
+ (2)  [-m1_subset_1(k5_numbers, k1_zfmisc_1(k1_numbers))]
+ (3)  [v6_membered(_G6404), -v1_relat_1(k4_relat_1(_G6404))]
+ (4)  [v6_membered(_G6404), -v4_valued_0(k4_relat_1(_G6404))]
+ (5)  [-v6_membered(k4_ordinal1)]
+ (6)  [-v5_valued_0(k6_funct_3(k1_numbers, k5_numbers))]
+ (7)  [-v4_valued_0(k6_funct_3(k1_numbers, k5_numbers))]
+ (8)  [- (k5_numbers=k4_ordinal1)]
+ (9)  [- (k6_partfun1(_G7191)=k4_relat_1(_G7191))]
+ (10)  [m1_subset_1(_G6929, k1_zfmisc_1(_G6877)), - (k6_funct_3(_G6877, _G6929)=k4_relat_1(_G6929))]
+ (11)  [_G4827=_G4876, - (k1_zfmisc_1(_G4827)=k1_zfmisc_1(_G4876))]
+ (12)  [- (k6_funct_3(_G5105, _G5240)=k6_funct_3(_G5172, _G5309)), _G5105=_G5172, _G5240=_G5309]
+ (13)  [_G5702=_G5751, - (k4_relat_1(_G5702)=k4_relat_1(_G5751))]
+ (14)  [_G5971=_G6020, - (k6_partfun1(_G5971)=k6_partfun1(_G6020))]
+ (15)  [- (_G2240=_G2240)]
+ (16)  [_G2339=_G2384, - (_G2384=_G2339)]
+ (17)  [- (_G2572=_G2685), _G2572=_G2628, _G2628=_G2685]
+ (18)  [-v1_relat_1(_G3071), _G3022=_G3071, v1_relat_1(_G3022)]
+ (19)  [-v6_membered(_G3349), _G3300=_G3349, v6_membered(_G3300)]
+ (20)  [-m1_subset_1(_G3645, _G3782), m1_subset_1(_G3578, _G3713), _G3578=_G3645, _G3713=_G3782]
+ (21)  [-v5_valued_0(_G4224), _G4175=_G4224, v5_valued_0(_G4175)]
+ (22)  [-v4_valued_0(_G4493), _G4444=_G4493, v4_valued_0(_G4444)]
+
+Connection Proof:
+-----------------
+1  [v5_valued_0(k6_partfun1(k5_numbers)), v4_valued_0(k6_partfun1(k5_numbers))]   (1)  
+1.1  [-v5_valued_0(k6_partfun1(k5_numbers)), k4_relat_1(k5_numbers)=k6_partfun1(k5_numbers), v5_valued_0(k4_relat_1(k5_numbers))]   (21)  substitution:[[_G4224, _G4175], [k6_partfun1(k5_numbers), k4_relat_1(k5_numbers)]]
+1.1.1  [- (k4_relat_1(k5_numbers)=k6_partfun1(k5_numbers)), k6_partfun1(k5_numbers)=k4_relat_1(k5_numbers)]   (16)  substitution:[[_G2384, _G2339], [k4_relat_1(k5_numbers), k6_partfun1(k5_numbers)]]
+1.1.1.1  [- (k6_partfun1(k5_numbers)=k4_relat_1(k5_numbers))]   (9)  substitution:[[_G7191], [k5_numbers]]
+1.1.2  [-v5_valued_0(k4_relat_1(k5_numbers)), k6_funct_3(k1_numbers, k5_numbers)=k4_relat_1(k5_numbers), v5_valued_0(k6_funct_3(k1_numbers, k5_numbers))]   (21)  substitution:[[_G4224, _G4175], [k4_relat_1(k5_numbers), k6_funct_3(k1_numbers, k5_numbers)]]
+1.1.2.1  [- (k6_funct_3(k1_numbers, k5_numbers)=k4_relat_1(k5_numbers)), m1_subset_1(k5_numbers, k1_zfmisc_1(k1_numbers))]   (10)  substitution:[[_G6877, _G6929], [k1_numbers, k5_numbers]]
+1.1.2.1.1  [-m1_subset_1(k5_numbers, k1_zfmisc_1(k1_numbers))]   (2)  
+1.1.2.2  [-v5_valued_0(k6_funct_3(k1_numbers, k5_numbers))]   (6)  
+1.2  [-v4_valued_0(k6_partfun1(k5_numbers)), k4_relat_1(k5_numbers)=k6_partfun1(k5_numbers), v4_valued_0(k4_relat_1(k5_numbers))]   (22)  substitution:[[_G4493, _G4444], [k6_partfun1(k5_numbers), k4_relat_1(k5_numbers)]]
+1.2.1  [- (k4_relat_1(k5_numbers)=k6_partfun1(k5_numbers)), k6_partfun1(k5_numbers)=k4_relat_1(k5_numbers)]   (16)  substitution:[[_G2384, _G2339], [k4_relat_1(k5_numbers), k6_partfun1(k5_numbers)]]
+1.2.1.1  [- (k6_partfun1(k5_numbers)=k4_relat_1(k5_numbers))]   (9)  substitution:[[_G7191], [k5_numbers]]
+1.2.2  [-v4_valued_0(k4_relat_1(k5_numbers)), k6_funct_3(k1_numbers, k5_numbers)=k4_relat_1(k5_numbers), v4_valued_0(k6_funct_3(k1_numbers, k5_numbers))]   (22)  substitution:[[_G4493, _G4444], [k4_relat_1(k5_numbers), k6_funct_3(k1_numbers, k5_numbers)]]
+1.2.2.1  [- (k6_funct_3(k1_numbers, k5_numbers)=k4_relat_1(k5_numbers)), m1_subset_1(k5_numbers, k1_zfmisc_1(k1_numbers))]   (10)  substitution:[[_G6877, _G6929], [k1_numbers, k5_numbers]]
+1.2.2.1.1  [-m1_subset_1(k5_numbers, k1_zfmisc_1(k1_numbers))]   (2)  
+1.2.2.2  [-v4_valued_0(k6_funct_3(k1_numbers, k5_numbers))]   (7)  
+------------------------------------------------------
+End of proof for l28_seqm_3

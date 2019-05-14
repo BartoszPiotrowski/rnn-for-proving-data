@@ -1,0 +1,52 @@
+
+l20_cohsp_1 is a Theorem
+Start of proof for l20_cohsp_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v1_xboole_0(5^[])]
+ (2)  [-v1_classes1(5^[])]
+ (3)  [-m1_subset_1(6^[], 5^[])]
+ (4)  [r1_tarski(k5_finsub_1(6^[]), 5^[])]
+ (5)  [-v1_classes1(_G6847), -r2_hidden(1^[_G6847], _G6847)]
+ (6)  [-v1_classes1(_G6847), -r1_tarski(2^[_G6847], 1^[_G6847])]
+ (7)  [-v1_classes1(_G6847), r2_hidden(2^[_G6847], _G6847)]
+ (8)  [v1_classes1(_G6847), -r2_hidden(_G6997, _G6847), r2_hidden(_G6940, _G6847), r1_tarski(_G6997, _G6940)]
+ (9)  [-r1_tarski(_G7313, _G7369), -r2_hidden(3^[_G7369, _G7313], _G7313)]
+ (10)  [-r1_tarski(_G7313, _G7369), r2_hidden(3^[_G7369, _G7313], _G7369)]
+ (11)  [r1_tarski(_G7313, _G7369), r2_hidden(_G7483, _G7313), -r2_hidden(_G7483, _G7369)]
+ (12)  [-v4_finsub_1(k5_finsub_1(_G8266))]
+ (13)  [m1_subset_1(_G8346, _G8396), -v1_xboole_0(_G8396), -r2_hidden(_G8346, _G8396)]
+ (14)  [v4_finsub_1(_G7783), _G7783=k5_finsub_1(_G7715), r2_hidden(_G7955, _G7783), -r1_tarski(_G7955, _G7715)]
+ (15)  [v4_finsub_1(_G7783), _G7783=k5_finsub_1(_G7715), r2_hidden(_G7955, _G7783), -v1_finset_1(_G7955)]
+ (16)  [v4_finsub_1(_G7783), _G7783=k5_finsub_1(_G7715), -r2_hidden(_G7955, _G7783), r1_tarski(_G7955, _G7715), v1_finset_1(_G7955)]
+ (17)  [v4_finsub_1(_G7783), - (_G7783=k5_finsub_1(_G7715)), -r2_hidden(4^[_G7783, _G7715], _G7783), -r1_tarski(4^[_G7783, _G7715], _G7715)]
+ (18)  [v4_finsub_1(_G7783), - (_G7783=k5_finsub_1(_G7715)), -r2_hidden(4^[_G7783, _G7715], _G7783), -v1_finset_1(4^[_G7783, _G7715])]
+ (19)  [v4_finsub_1(_G7783), - (_G7783=k5_finsub_1(_G7715)), r2_hidden(4^[_G7783, _G7715], _G7783), r1_tarski(4^[_G7783, _G7715], _G7715), v1_finset_1(4^[_G7783, _G7715])]
+ (20)  [_G6548=_G6597, - (k5_finsub_1(_G6548)=k5_finsub_1(_G6597))]
+ (21)  [- (_G2734=_G2734)]
+ (22)  [_G2833=_G2878, - (_G2878=_G2833)]
+ (23)  [- (_G3066=_G3179), _G3066=_G3122, _G3122=_G3179]
+ (24)  [-v1_finset_1(_G3565), _G3516=_G3565, v1_finset_1(_G3516)]
+ (25)  [-v4_finsub_1(_G3843), _G3794=_G3843, v4_finsub_1(_G3794)]
+ (26)  [-r2_hidden(_G4139, _G4276), r2_hidden(_G4072, _G4207), _G4072=_G4139, _G4207=_G4276]
+ (27)  [-v1_xboole_0(_G4718), _G4669=_G4718, v1_xboole_0(_G4669)]
+ (28)  [-v1_classes1(_G4996), _G4947=_G4996, v1_classes1(_G4947)]
+ (29)  [-m1_subset_1(_G5292, _G5429), m1_subset_1(_G5225, _G5360), _G5225=_G5292, _G5360=_G5429]
+ (30)  [-r1_tarski(_G5880, _G6017), r1_tarski(_G5813, _G5948), _G5813=_G5880, _G5948=_G6017]
+
+Connection Proof:
+-----------------
+1  [v1_xboole_0(5^[])]   (1)  
+1.1  [-v1_xboole_0(5^[]), m1_subset_1(6^[], 5^[]), -r2_hidden(6^[], 5^[])]   (13)  substitution:[[_G8396, _G8346], [5^[], 6^[]]]
+1.1.1  [-m1_subset_1(6^[], 5^[])]   (3)  
+1.1.2  [r2_hidden(6^[], 5^[]), v1_classes1(5^[]), -r2_hidden(3^[5^[], k5_finsub_1(6^[])], 5^[]), r1_tarski(3^[5^[], k5_finsub_1(6^[])], 6^[])]   (8)  substitution:[[_G6940, _G6847, _G6997], [6^[], 5^[], 3^[5^[], k5_finsub_1(6^[])]]]
+1.1.2.1  [-v1_classes1(5^[])]   (2)  
+1.1.2.2  [r2_hidden(3^[5^[], k5_finsub_1(6^[])], 5^[]), -r1_tarski(k5_finsub_1(6^[]), 5^[])]   (10)  substitution:[[_G7369, _G7313], [5^[], k5_finsub_1(6^[])]]
+1.1.2.2.1  [r1_tarski(k5_finsub_1(6^[]), 5^[])]   (4)  
+1.1.2.3  [-r1_tarski(3^[5^[], k5_finsub_1(6^[])], 6^[]), v4_finsub_1(k5_finsub_1(6^[])), k5_finsub_1(6^[])=k5_finsub_1(6^[]), r2_hidden(3^[5^[], k5_finsub_1(6^[])], k5_finsub_1(6^[]))]   (14)  substitution:[[_G7955, _G7715, _G7783], [3^[5^[], k5_finsub_1(6^[])], 6^[], k5_finsub_1(6^[])]]
+1.1.2.3.1  [-v4_finsub_1(k5_finsub_1(6^[]))]   (12)  substitution:[[_G8266], [6^[]]]
+1.1.2.3.2  [- (k5_finsub_1(6^[])=k5_finsub_1(6^[]))]   (21)  substitution:[[_G2734], [k5_finsub_1(6^[])]]
+1.1.2.3.3  [-r2_hidden(3^[5^[], k5_finsub_1(6^[])], k5_finsub_1(6^[])), -r1_tarski(k5_finsub_1(6^[]), 5^[])]   (9)  substitution:[[_G7369, _G7313], [5^[], k5_finsub_1(6^[])]]
+1.1.2.3.3.1  [r1_tarski(k5_finsub_1(6^[]), 5^[])]   (4)  
+------------------------------------------------------
+End of proof for l20_cohsp_1

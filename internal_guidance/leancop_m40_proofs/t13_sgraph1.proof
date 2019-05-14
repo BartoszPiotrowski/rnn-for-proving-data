@@ -1,0 +1,20 @@
+
+t13_sgraph1 is a Theorem
+Start of proof for t13_sgraph1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_finset_1(1^[])]
+ (2)  [v1_finset_1(k2_sgraph1(1^[]))]
+ (3)  [v1_finset_1(_G732), -v1_finset_1(k1_zfmisc_1(_G732))]
+ (4)  [-r1_tarski(k2_sgraph1(_G1148), k1_zfmisc_1(_G1148))]
+ (5)  [-v1_finset_1(_G879), r1_tarski(_G879, _G928), v1_finset_1(_G928)]
+
+Connection Proof:
+-----------------
+1  [v1_finset_1(k2_sgraph1(1^[]))]   (2)  
+1.1  [-v1_finset_1(k2_sgraph1(1^[])), r1_tarski(k2_sgraph1(1^[]), k1_zfmisc_1(1^[])), v1_finset_1(k1_zfmisc_1(1^[]))]   (5)  substitution:[[_G879, _G928], [k2_sgraph1(1^[]), k1_zfmisc_1(1^[])]]
+1.1.1  [-r1_tarski(k2_sgraph1(1^[]), k1_zfmisc_1(1^[]))]   (4)  substitution:[[_G1148], [1^[]]]
+1.1.2  [-v1_finset_1(k1_zfmisc_1(1^[])), v1_finset_1(1^[])]   (3)  substitution:[[_G732], [1^[]]]
+1.1.2.1  [-v1_finset_1(1^[])]   (1)  
+------------------------------------------------------
+End of proof for t13_sgraph1

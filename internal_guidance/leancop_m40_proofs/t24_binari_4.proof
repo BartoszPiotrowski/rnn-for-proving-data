@@ -1,0 +1,51 @@
+
+t24_binari_4 is a Theorem
+Start of proof for t24_binari_4
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v7_ordinal1(2^[])]
+ (2)  [-v7_ordinal1(3^[])]
+ (3)  [-r1_xxreal_0(2^[], k5_series_1(np__2, 3^[]))]
+ (4)  [k1_binari_4(3^[], 2^[])=3^[]]
+ (5)  [r2_hidden(_G6086, _G6133), r2_hidden(_G6133, _G6086)]
+ (6)  [v7_ordinal1(_G7529), v7_ordinal1(_G7618), r2_hidden(_G7529, _G7618), r1_xxreal_0(_G7618, _G7529)]
+ (7)  [v7_ordinal1(_G7529), v7_ordinal1(_G7618), -r2_hidden(_G7529, _G7618), -r1_xxreal_0(_G7618, _G7529)]
+ (8)  [v7_ordinal1(_G6346), v7_ordinal1(_G6486), v7_ordinal1(_G6622), - (_G6622=k1_binari_4(_G6346, _G6486)), r1_xxreal_0(_G6486, k5_series_1(np__2, _G6622)), r1_xxreal_0(_G6346, _G6622), -v7_ordinal1(1^[_G6622, _G6486, _G6346])]
+ (9)  [v7_ordinal1(_G6346), v7_ordinal1(_G6486), v7_ordinal1(_G6622), - (_G6622=k1_binari_4(_G6346, _G6486)), r1_xxreal_0(_G6486, k5_series_1(np__2, _G6622)), r1_xxreal_0(_G6346, _G6622), -r1_xxreal_0(_G6486, k5_series_1(np__2, 1^[_G6622, _G6486, _G6346]))]
+ (10)  [v7_ordinal1(_G6346), v7_ordinal1(_G6486), v7_ordinal1(_G6622), - (_G6622=k1_binari_4(_G6346, _G6486)), r1_xxreal_0(_G6486, k5_series_1(np__2, _G6622)), r1_xxreal_0(_G6346, _G6622), -r1_xxreal_0(_G6346, 1^[_G6622, _G6486, _G6346])]
+ (11)  [v7_ordinal1(_G6346), v7_ordinal1(_G6486), v7_ordinal1(_G6622), - (_G6622=k1_binari_4(_G6346, _G6486)), r1_xxreal_0(_G6486, k5_series_1(np__2, _G6622)), r1_xxreal_0(_G6346, _G6622), r1_xxreal_0(_G6622, 1^[_G6622, _G6486, _G6346])]
+ (12)  [v7_ordinal1(_G6346), v7_ordinal1(_G6486), v7_ordinal1(_G6622), _G6622=k1_binari_4(_G6346, _G6486), -r1_xxreal_0(_G6486, k5_series_1(np__2, _G6622))]
+ (13)  [v7_ordinal1(_G6346), v7_ordinal1(_G6486), v7_ordinal1(_G6622), _G6622=k1_binari_4(_G6346, _G6486), -r1_xxreal_0(_G6346, _G6622)]
+ (14)  [v7_ordinal1(_G6346), v7_ordinal1(_G6486), v7_ordinal1(_G6622), _G6622=k1_binari_4(_G6346, _G6486), v7_ordinal1(_G7003), -r1_xxreal_0(_G6622, _G7003), r1_xxreal_0(_G6486, k5_series_1(np__2, _G7003)), r1_xxreal_0(_G6346, _G7003)]
+ (15)  [- (k5_series_1(_G4859, _G4994)=k5_series_1(_G4926, _G5063)), _G4859=_G4926, _G4994=_G5063]
+ (16)  [- (k1_binari_4(_G5447, _G5582)=k1_binari_4(_G5514, _G5651)), _G5447=_G5514, _G5582=_G5651]
+ (17)  [- (_G2551=_G2551)]
+ (18)  [_G2650=_G2695, - (_G2695=_G2650)]
+ (19)  [- (_G2883=_G2996), _G2883=_G2939, _G2939=_G2996]
+ (20)  [-r2_hidden(_G3400, _G3537), r2_hidden(_G3333, _G3468), _G3333=_G3400, _G3468=_G3537]
+ (21)  [-v7_ordinal1(_G3979), _G3930=_G3979, v7_ordinal1(_G3930)]
+ (22)  [-r1_xxreal_0(_G4266, _G4403), r1_xxreal_0(_G4199, _G4334), _G4199=_G4266, _G4334=_G4403]
+
+Connection Proof:
+-----------------
+1  [k1_binari_4(3^[], 2^[])=3^[]]   (4)  
+1.1  [- (k1_binari_4(3^[], 2^[])=3^[]), 3^[]=k1_binari_4(3^[], 2^[])]   (18)  substitution:[[_G2695, _G2650], [k1_binari_4(3^[], 2^[]), 3^[]]]
+1.1.1  [- (3^[]=k1_binari_4(3^[], 2^[])), v7_ordinal1(3^[]), v7_ordinal1(2^[]), v7_ordinal1(3^[]), r1_xxreal_0(2^[], k5_series_1(np__2, 3^[])), r1_xxreal_0(3^[], 3^[]), -r1_xxreal_0(3^[], 1^[3^[], 2^[], 3^[]])]   (10)  substitution:[[_G6622, _G6346, _G6486], [3^[], 3^[], 2^[]]]
+1.1.1.1  [-v7_ordinal1(3^[])]   (2)  
+1.1.1.2  [-v7_ordinal1(2^[])]   (1)  
+1.1.1.3  [-v7_ordinal1(3^[])]   (2)  
+1.1.1.4  [-r1_xxreal_0(2^[], k5_series_1(np__2, 3^[]))]   (3)  
+1.1.1.5  [-r1_xxreal_0(3^[], 3^[]), v7_ordinal1(3^[]), v7_ordinal1(3^[]), -r2_hidden(3^[], 3^[])]   (7)  substitution:[[_G7618, _G7529], [3^[], 3^[]]]
+1.1.1.5.1  [-v7_ordinal1(3^[])]   (2)  
+1.1.1.5.2  [-v7_ordinal1(3^[])]   (2)  
+1.1.1.5.3  [r2_hidden(3^[], 3^[]), r2_hidden(3^[], 3^[])]   (5)  substitution:[[_G6086, _G6133], [3^[], 3^[]]]
+1.1.1.5.3.1  [-r2_hidden(3^[], 3^[])]   (reduction:1.1.1.5)  
+1.1.1.6  [r1_xxreal_0(3^[], 1^[3^[], 2^[], 3^[]]), v7_ordinal1(3^[]), v7_ordinal1(2^[]), v7_ordinal1(3^[]), - (3^[]=k1_binari_4(3^[], 2^[])), r1_xxreal_0(2^[], k5_series_1(np__2, 3^[])), r1_xxreal_0(3^[], 3^[])]   (11)  substitution:[[_G6622, _G6486, _G6346], [3^[], 2^[], 3^[]]]
+1.1.1.6.1  [-v7_ordinal1(3^[])]   (2)  
+1.1.1.6.2  [-v7_ordinal1(2^[])]   (1)  
+1.1.1.6.3  [-v7_ordinal1(3^[])]   (2)  
+1.1.1.6.4  [3^[]=k1_binari_4(3^[], 2^[])]   (reduction:1.1)  
+1.1.1.6.5  [-r1_xxreal_0(2^[], k5_series_1(np__2, 3^[]))]   (3)  
+1.1.1.6.6  [-r1_xxreal_0(3^[], 3^[])]   (lemmata:1.1.1)  
+------------------------------------------------------
+End of proof for t24_binari_4

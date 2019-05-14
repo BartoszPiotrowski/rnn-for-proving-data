@@ -1,0 +1,29 @@
+
+t15_finsub_1 is a Theorem
+Start of proof for t15_finsub_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k5_finsub_1(k1_xboole_0)=k1_tarski(k1_xboole_0)]
+ (2)  [v1_xboole_0(_G3635), -v1_finset_1(_G3635)]
+ (3)  [-v1_xboole_0(k1_xboole_0)]
+ (4)  [- (k1_zfmisc_1(k1_xboole_0)=k1_tarski(k1_xboole_0))]
+ (5)  [v1_finset_1(_G3798), - (k5_finsub_1(_G3798)=k1_zfmisc_1(_G3798))]
+ (6)  [_G2747=_G2796, - (k1_zfmisc_1(_G2747)=k1_zfmisc_1(_G2796))]
+ (7)  [_G3025=_G3074, - (k5_finsub_1(_G3025)=k5_finsub_1(_G3074))]
+ (8)  [_G3294=_G3343, - (k1_tarski(_G3294)=k1_tarski(_G3343))]
+ (9)  [- (_G1376=_G1376)]
+ (10)  [_G1475=_G1520, - (_G1520=_G1475)]
+ (11)  [- (_G1708=_G1821), _G1708=_G1764, _G1764=_G1821]
+ (12)  [-v1_xboole_0(_G2207), _G2158=_G2207, v1_xboole_0(_G2158)]
+ (13)  [-v1_finset_1(_G2476), _G2427=_G2476, v1_finset_1(_G2427)]
+
+Connection Proof:
+-----------------
+1  [k5_finsub_1(k1_xboole_0)=k1_tarski(k1_xboole_0)]   (1)  
+1.1  [- (k5_finsub_1(k1_xboole_0)=k1_tarski(k1_xboole_0)), k5_finsub_1(k1_xboole_0)=k1_zfmisc_1(k1_xboole_0), k1_zfmisc_1(k1_xboole_0)=k1_tarski(k1_xboole_0)]   (11)  substitution:[[_G1708, _G1821, _G1764], [k5_finsub_1(k1_xboole_0), k1_tarski(k1_xboole_0), k1_zfmisc_1(k1_xboole_0)]]
+1.1.1  [- (k5_finsub_1(k1_xboole_0)=k1_zfmisc_1(k1_xboole_0)), v1_finset_1(k1_xboole_0)]   (5)  substitution:[[_G3798], [k1_xboole_0]]
+1.1.1.1  [-v1_finset_1(k1_xboole_0), v1_xboole_0(k1_xboole_0)]   (2)  substitution:[[_G3635], [k1_xboole_0]]
+1.1.1.1.1  [-v1_xboole_0(k1_xboole_0)]   (3)  
+1.1.2  [- (k1_zfmisc_1(k1_xboole_0)=k1_tarski(k1_xboole_0))]   (4)  
+------------------------------------------------------
+End of proof for t15_finsub_1

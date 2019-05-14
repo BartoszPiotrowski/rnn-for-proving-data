@@ -1,0 +1,45 @@
+
+l2_scmfsa_9 is a Theorem
+Start of proof for l2_scmfsa_9
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [k1_funct_1(k4_compos_1(k1_scmfsa_2), k6_numbers)=k2_compos_1(k1_scmfsa_2)]
+ (2)  [l1_compos_1(_G7452), - (k4_compos_1(_G7452)=k3_afinsq_1(k2_compos_1(_G7452)))]
+ (3)  [- (k3_afinsq_1(_G7657)=k16_funcop_1(k6_numbers, _G7657))]
+ (4)  [-v1_extpro_1(k1_ami_3, np__2)]
+ (5)  [-l1_extpro_1(k1_ami_3, np__2)]
+ (6)  [-v1_extpro_1(k1_scmfsa_2, np__3)]
+ (7)  [-l1_extpro_1(k1_scmfsa_2, np__3)]
+ (8)  [- (k1_funct_1(k16_funcop_1(_G8389, _G8434), _G8389)=_G8434)]
+ (9)  [- (k2_compos_1(k1_ami_3)=k2_compos_1(k1_scmfsa_2))]
+ (10)  [l1_extpro_1(_G8134, _G8084), -l1_memstr_0(_G8134, _G8084)]
+ (11)  [l1_extpro_1(_G8134, _G8084), -l1_compos_1(_G8134)]
+ (12)  [_G5328=_G5377, - (k3_afinsq_1(_G5328)=k3_afinsq_1(_G5377))]
+ (13)  [- (k16_funcop_1(_G5606, _G5741)=k16_funcop_1(_G5673, _G5810)), _G5606=_G5673, _G5741=_G5810]
+ (14)  [- (k1_funct_1(_G6203, _G6338)=k1_funct_1(_G6270, _G6407)), _G6203=_G6270, _G6338=_G6407]
+ (15)  [_G6800=_G6849, - (k4_compos_1(_G6800)=k4_compos_1(_G6849))]
+ (16)  [_G7069=_G7118, - (k2_compos_1(_G7069)=k2_compos_1(_G7118))]
+ (17)  [- (_G2402=_G2402)]
+ (18)  [_G2501=_G2546, - (_G2546=_G2501)]
+ (19)  [- (_G2734=_G2847), _G2734=_G2790, _G2790=_G2847]
+ (20)  [-v1_extpro_1(_G3251, _G3388), v1_extpro_1(_G3184, _G3319), _G3184=_G3251, _G3319=_G3388]
+ (21)  [-l1_extpro_1(_G3848, _G3985), l1_extpro_1(_G3781, _G3916), _G3781=_G3848, _G3916=_G3985]
+ (22)  [-l1_compos_1(_G5015), _G4966=_G5015, l1_compos_1(_G4966)]
+ (23)  [-l1_memstr_0(_G4445, _G4582), l1_memstr_0(_G4378, _G4513), _G4378=_G4445, _G4513=_G4582]
+
+Connection Proof:
+-----------------
+1  [k1_funct_1(k4_compos_1(k1_scmfsa_2), k6_numbers)=k2_compos_1(k1_scmfsa_2)]   (1)  
+1.1  [- (k1_funct_1(k4_compos_1(k1_scmfsa_2), k6_numbers)=k2_compos_1(k1_scmfsa_2)), k1_funct_1(k4_compos_1(k1_scmfsa_2), k6_numbers)=k1_funct_1(k3_afinsq_1(k2_compos_1(k1_scmfsa_2)), k6_numbers), k1_funct_1(k3_afinsq_1(k2_compos_1(k1_scmfsa_2)), k6_numbers)=k2_compos_1(k1_scmfsa_2)]   (19)  substitution:[[_G2734, _G2847, _G2790], [k1_funct_1(k4_compos_1(k1_scmfsa_2), k6_numbers), k2_compos_1(k1_scmfsa_2), k1_funct_1(k3_afinsq_1(k2_compos_1(k1_scmfsa_2)), k6_numbers)]]
+1.1.1  [- (k1_funct_1(k4_compos_1(k1_scmfsa_2), k6_numbers)=k1_funct_1(k3_afinsq_1(k2_compos_1(k1_scmfsa_2)), k6_numbers)), k4_compos_1(k1_scmfsa_2)=k3_afinsq_1(k2_compos_1(k1_scmfsa_2)), k6_numbers=k6_numbers]   (14)  substitution:[[_G6203, _G6338, _G6270, _G6407], [k4_compos_1(k1_scmfsa_2), k6_numbers, k3_afinsq_1(k2_compos_1(k1_scmfsa_2)), k6_numbers]]
+1.1.1.1  [- (k4_compos_1(k1_scmfsa_2)=k3_afinsq_1(k2_compos_1(k1_scmfsa_2))), l1_compos_1(k1_scmfsa_2)]   (2)  substitution:[[_G7452], [k1_scmfsa_2]]
+1.1.1.1.1  [-l1_compos_1(k1_scmfsa_2), l1_extpro_1(k1_scmfsa_2, np__3)]   (11)  substitution:[[_G8134, _G8084], [k1_scmfsa_2, np__3]]
+1.1.1.1.1.1  [-l1_extpro_1(k1_scmfsa_2, np__3)]   (7)  
+1.1.1.2  [- (k6_numbers=k6_numbers)]   (17)  substitution:[[_G2402], [k6_numbers]]
+1.1.2  [- (k1_funct_1(k3_afinsq_1(k2_compos_1(k1_scmfsa_2)), k6_numbers)=k2_compos_1(k1_scmfsa_2)), k1_funct_1(k3_afinsq_1(k2_compos_1(k1_scmfsa_2)), k6_numbers)=k1_funct_1(k16_funcop_1(k6_numbers, k2_compos_1(k1_scmfsa_2)), k6_numbers), k1_funct_1(k16_funcop_1(k6_numbers, k2_compos_1(k1_scmfsa_2)), k6_numbers)=k2_compos_1(k1_scmfsa_2)]   (19)  substitution:[[_G2734, _G2847, _G2790], [k1_funct_1(k3_afinsq_1(k2_compos_1(k1_scmfsa_2)), k6_numbers), k2_compos_1(k1_scmfsa_2), k1_funct_1(k16_funcop_1(k6_numbers, k2_compos_1(k1_scmfsa_2)), k6_numbers)]]
+1.1.2.1  [- (k1_funct_1(k3_afinsq_1(k2_compos_1(k1_scmfsa_2)), k6_numbers)=k1_funct_1(k16_funcop_1(k6_numbers, k2_compos_1(k1_scmfsa_2)), k6_numbers)), k3_afinsq_1(k2_compos_1(k1_scmfsa_2))=k16_funcop_1(k6_numbers, k2_compos_1(k1_scmfsa_2)), k6_numbers=k6_numbers]   (14)  substitution:[[_G6203, _G6338, _G6270, _G6407], [k3_afinsq_1(k2_compos_1(k1_scmfsa_2)), k6_numbers, k16_funcop_1(k6_numbers, k2_compos_1(k1_scmfsa_2)), k6_numbers]]
+1.1.2.1.1  [- (k3_afinsq_1(k2_compos_1(k1_scmfsa_2))=k16_funcop_1(k6_numbers, k2_compos_1(k1_scmfsa_2)))]   (3)  substitution:[[_G7657], [k2_compos_1(k1_scmfsa_2)]]
+1.1.2.1.2  [- (k6_numbers=k6_numbers)]   (17)  substitution:[[_G2402], [k6_numbers]]
+1.1.2.2  [- (k1_funct_1(k16_funcop_1(k6_numbers, k2_compos_1(k1_scmfsa_2)), k6_numbers)=k2_compos_1(k1_scmfsa_2))]   (8)  substitution:[[_G8389, _G8434], [k6_numbers, k2_compos_1(k1_scmfsa_2)]]
+------------------------------------------------------
+End of proof for l2_scmfsa_9

@@ -1,0 +1,38 @@
+
+t69_arytm_3 is a Theorem
+Start of proof for t69_arytm_3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-5^[], r3_arytm_3(3^[], 2^[])]
+ (2)  [-5^[], -r3_arytm_3(1^[], 2^[])]
+ (3)  [-4^[], -r3_arytm_3(2^[], 3^[])]
+ (4)  [-4^[], r3_arytm_3(2^[], 1^[])]
+ (5)  [-m1_subset_1(1^[], k5_arytm_3)]
+ (6)  [-m1_subset_1(2^[], k5_arytm_3)]
+ (7)  [-m1_subset_1(3^[], k5_arytm_3)]
+ (8)  [-r3_arytm_3(3^[], 1^[])]
+ (9)  [4^[], 5^[]]
+ (10)  [m1_subset_1(_G1077, k5_arytm_3), m1_subset_1(_G1020, k5_arytm_3), -r3_arytm_3(_G1020, _G1077), -r3_arytm_3(_G1077, _G1020)]
+ (11)  [m1_subset_1(_G1433, k5_arytm_3), m1_subset_1(_G1564, k5_arytm_3), m1_subset_1(_G1690, k5_arytm_3), -r3_arytm_3(_G1433, _G1690), r3_arytm_3(_G1433, _G1564), r3_arytm_3(_G1564, _G1690)]
+
+Connection Proof:
+-----------------
+1  [4^[], 5^[]]   (9)  
+1.1  [-4^[], -r3_arytm_3(2^[], 3^[])]   (3)  
+1.1.1  [r3_arytm_3(2^[], 3^[]), m1_subset_1(2^[], k5_arytm_3), m1_subset_1(3^[], k5_arytm_3), m1_subset_1(1^[], k5_arytm_3), -r3_arytm_3(2^[], 1^[]), r3_arytm_3(3^[], 1^[])]   (11)  substitution:[[_G1433, _G1564, _G1690], [2^[], 3^[], 1^[]]]
+1.1.1.1  [-m1_subset_1(2^[], k5_arytm_3)]   (6)  
+1.1.1.2  [-m1_subset_1(3^[], k5_arytm_3)]   (7)  
+1.1.1.3  [-m1_subset_1(1^[], k5_arytm_3)]   (5)  
+1.1.1.4  [r3_arytm_3(2^[], 1^[]), -4^[]]   (4)  
+1.1.1.4.1  [4^[]]   (reduction:1)  
+1.1.1.5  [-r3_arytm_3(3^[], 1^[])]   (8)  
+1.2  [-5^[], r3_arytm_3(3^[], 2^[])]   (1)  
+1.2.1  [-r3_arytm_3(3^[], 2^[]), m1_subset_1(3^[], k5_arytm_3), m1_subset_1(1^[], k5_arytm_3), m1_subset_1(2^[], k5_arytm_3), r3_arytm_3(3^[], 1^[]), r3_arytm_3(1^[], 2^[])]   (11)  substitution:[[_G1433, _G1690, _G1564], [3^[], 2^[], 1^[]]]
+1.2.1.1  [-m1_subset_1(3^[], k5_arytm_3)]   (7)  
+1.2.1.2  [-m1_subset_1(1^[], k5_arytm_3)]   (5)  
+1.2.1.3  [-m1_subset_1(2^[], k5_arytm_3)]   (6)  
+1.2.1.4  [-r3_arytm_3(3^[], 1^[])]   (8)  
+1.2.1.5  [-r3_arytm_3(1^[], 2^[]), -5^[]]   (2)  
+1.2.1.5.1  [5^[]]   (reduction:1)  
+------------------------------------------------------
+End of proof for t69_arytm_3

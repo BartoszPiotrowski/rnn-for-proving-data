@@ -1,0 +1,60 @@
+
+t10_afinsq_1 is a Theorem
+Start of proof for t10_afinsq_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_relat_1(1^[])]
+ (2)  [-v1_funct_1(1^[])]
+ (3)  [-v1_relat_1(2^[])]
+ (4)  [-v5_ordinal1(2^[])]
+ (5)  [-v1_funct_1(2^[])]
+ (6)  [-v1_finset_1(2^[])]
+ (7)  [-r1_tarski(k10_xtuple_0(2^[]), k9_xtuple_0(1^[]))]
+ (8)  [v1_relat_1(k3_relat_1(2^[], 1^[])), v5_ordinal1(k3_relat_1(2^[], 1^[])), v1_funct_1(k3_relat_1(2^[], 1^[])), v1_finset_1(k3_relat_1(2^[], 1^[]))]
+ (9)  [v5_ordinal1(_G7664), -v3_ordinal1(k9_xtuple_0(_G7664))]
+ (10)  [-v5_ordinal1(_G7664), v3_ordinal1(k9_xtuple_0(_G7664))]
+ (11)  [-v1_relat_1(k3_relat_1(_G7811, _G7852))]
+ (12)  [-v1_relat_1(k3_relat_1(_G8055, _G7981)), v1_funct_1(_G7981), v1_relat_1(_G7981), v1_relat_1(_G8055), v1_funct_1(_G8055), v1_finset_1(_G8055)]
+ (13)  [-v1_finset_1(k3_relat_1(_G8055, _G7981)), v1_funct_1(_G7981), v1_relat_1(_G7981), v1_relat_1(_G8055), v1_funct_1(_G8055), v1_finset_1(_G8055)]
+ (14)  [v1_relat_1(_G9095), v1_relat_1(_G9193), r1_tarski(k10_xtuple_0(_G9095), k9_xtuple_0(_G9193)), - (k9_xtuple_0(k3_relat_1(_G9095, _G9193))=k9_xtuple_0(_G9095))]
+ (15)  [-v1_relat_1(k3_relat_1(_G8574, _G8643)), v1_funct_1(_G8574), v1_relat_1(_G8574), v1_relat_1(_G8643), v1_funct_1(_G8643)]
+ (16)  [-v1_funct_1(k3_relat_1(_G8574, _G8643)), v1_funct_1(_G8574), v1_relat_1(_G8574), v1_relat_1(_G8643), v1_funct_1(_G8643)]
+ (17)  [_G6457=_G6506, - (k10_xtuple_0(_G6457)=k10_xtuple_0(_G6506))]
+ (18)  [_G6735=_G6784, - (k9_xtuple_0(_G6735)=k9_xtuple_0(_G6784))]
+ (19)  [- (k3_relat_1(_G7004, _G7139)=k3_relat_1(_G7071, _G7208)), _G7004=_G7071, _G7139=_G7208]
+ (20)  [- (_G3571=_G3571)]
+ (21)  [_G3670=_G3715, - (_G3715=_G3670)]
+ (22)  [- (_G3903=_G4016), _G3903=_G3959, _G3959=_G4016]
+ (23)  [-v3_ordinal1(_G4402), _G4353=_G4402, v3_ordinal1(_G4353)]
+ (24)  [-r1_tarski(_G4698, _G4835), r1_tarski(_G4631, _G4766), _G4631=_G4698, _G4766=_G4835]
+ (25)  [-v1_relat_1(_G5277), _G5228=_G5277, v1_relat_1(_G5228)]
+ (26)  [-v5_ordinal1(_G5555), _G5506=_G5555, v5_ordinal1(_G5506)]
+ (27)  [-v1_funct_1(_G5833), _G5784=_G5833, v1_funct_1(_G5784)]
+ (28)  [-v1_finset_1(_G6102), _G6053=_G6102, v1_finset_1(_G6053)]
+
+Connection Proof:
+-----------------
+1  [v1_relat_1(k3_relat_1(2^[], 1^[])), v5_ordinal1(k3_relat_1(2^[], 1^[])), v1_funct_1(k3_relat_1(2^[], 1^[])), v1_finset_1(k3_relat_1(2^[], 1^[]))]   (8)  
+1.1  [-v1_relat_1(k3_relat_1(2^[], 1^[]))]   (11)  substitution:[[_G7811, _G7852], [2^[], 1^[]]]
+1.2  [-v5_ordinal1(k3_relat_1(2^[], 1^[])), v3_ordinal1(k9_xtuple_0(k3_relat_1(2^[], 1^[])))]   (10)  substitution:[[_G7664], [k3_relat_1(2^[], 1^[])]]
+1.2.1  [-v3_ordinal1(k9_xtuple_0(k3_relat_1(2^[], 1^[]))), k9_xtuple_0(2^[])=k9_xtuple_0(k3_relat_1(2^[], 1^[])), v3_ordinal1(k9_xtuple_0(2^[]))]   (23)  substitution:[[_G4402, _G4353], [k9_xtuple_0(k3_relat_1(2^[], 1^[])), k9_xtuple_0(2^[])]]
+1.2.1.1  [- (k9_xtuple_0(2^[])=k9_xtuple_0(k3_relat_1(2^[], 1^[]))), k9_xtuple_0(k3_relat_1(2^[], 1^[]))=k9_xtuple_0(2^[])]   (21)  substitution:[[_G3715, _G3670], [k9_xtuple_0(2^[]), k9_xtuple_0(k3_relat_1(2^[], 1^[]))]]
+1.2.1.1.1  [- (k9_xtuple_0(k3_relat_1(2^[], 1^[]))=k9_xtuple_0(2^[])), v1_relat_1(2^[]), v1_relat_1(1^[]), r1_tarski(k10_xtuple_0(2^[]), k9_xtuple_0(1^[]))]   (14)  substitution:[[_G9095, _G9193], [2^[], 1^[]]]
+1.2.1.1.1.1  [-v1_relat_1(2^[])]   (3)  
+1.2.1.1.1.2  [-v1_relat_1(1^[])]   (1)  
+1.2.1.1.1.3  [-r1_tarski(k10_xtuple_0(2^[]), k9_xtuple_0(1^[]))]   (7)  
+1.2.1.2  [-v3_ordinal1(k9_xtuple_0(2^[])), v5_ordinal1(2^[])]   (9)  substitution:[[_G7664], [2^[]]]
+1.2.1.2.1  [-v5_ordinal1(2^[])]   (4)  
+1.3  [-v1_funct_1(k3_relat_1(2^[], 1^[])), v1_funct_1(2^[]), v1_relat_1(2^[]), v1_relat_1(1^[]), v1_funct_1(1^[])]   (16)  substitution:[[_G8574, _G8643], [2^[], 1^[]]]
+1.3.1  [-v1_funct_1(2^[])]   (5)  
+1.3.2  [-v1_relat_1(2^[])]   (3)  
+1.3.3  [-v1_relat_1(1^[])]   (1)  
+1.3.4  [-v1_funct_1(1^[])]   (2)  
+1.4  [-v1_finset_1(k3_relat_1(2^[], 1^[])), v1_funct_1(1^[]), v1_relat_1(1^[]), v1_relat_1(2^[]), v1_funct_1(2^[]), v1_finset_1(2^[])]   (13)  substitution:[[_G8055, _G7981], [2^[], 1^[]]]
+1.4.1  [-v1_funct_1(1^[])]   (2)  
+1.4.2  [-v1_relat_1(1^[])]   (1)  
+1.4.3  [-v1_relat_1(2^[])]   (3)  
+1.4.4  [-v1_funct_1(2^[])]   (5)  
+1.4.5  [-v1_finset_1(2^[])]   (6)  
+------------------------------------------------------
+End of proof for t10_afinsq_1

@@ -1,0 +1,79 @@
+
+t31_nat_1 is a Theorem
+Start of proof for t31_nat_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v7_ordinal1(1^[])]
+ (2)  [-r1_xxreal_0(1^[], np__7)]
+ (3)  [1^[]=k6_numbers]
+ (4)  [1^[]=np__1]
+ (5)  [1^[]=np__2]
+ (6)  [1^[]=np__3]
+ (7)  [1^[]=np__4]
+ (8)  [1^[]=np__5]
+ (9)  [1^[]=np__6]
+ (10)  [1^[]=np__7]
+ (11)  [m1_subset_1(_G8910, k4_ordinal1), -v7_ordinal1(_G8910)]
+ (12)  [- (k1_nat_1(_G9067, _G9123)=k2_xcmplx_0(_G9067, _G9123)), v7_ordinal1(_G9067), m1_subset_1(_G9123, k5_numbers)]
+ (13)  [- (k5_numbers=k4_ordinal1)]
+ (14)  [- (k6_numbers=k1_xboole_0)]
+ (15)  [- (k2_xcmplx_0(np__6, np__1)=np__7)]
+ (16)  [-v2_xxreal_0(np__1)]
+ (17)  [-m2_subset_1(np__1, k1_numbers, k5_numbers)]
+ (18)  [-m1_subset_1(np__1, k5_numbers)]
+ (19)  [-m1_subset_1(np__1, k1_numbers)]
+ (20)  [-v2_xxreal_0(np__6)]
+ (21)  [-m2_subset_1(np__6, k1_numbers, k5_numbers)]
+ (22)  [-m1_subset_1(np__6, k5_numbers)]
+ (23)  [-m1_subset_1(np__6, k1_numbers)]
+ (24)  [v7_ordinal1(_G11154), v7_ordinal1(_G11259), r1_xxreal_0(_G11154, k1_nat_1(_G11259, np__1)), -r1_xxreal_0(_G11154, _G11259), - (_G11154=k1_nat_1(_G11259, np__1))]
+ (25)  [v7_ordinal1(_G10290), r1_xxreal_0(_G10290, np__6), - (_G10290=k6_numbers), - (_G10290=np__1), - (_G10290=np__2), - (_G10290=np__3), - (_G10290=np__4), - (_G10290=np__5), - (_G10290=np__6)]
+ (26)  [- (k2_xcmplx_0(_G7683, _G7818)=k2_xcmplx_0(_G7750, _G7887)), _G7683=_G7750, _G7818=_G7887]
+ (27)  [- (k1_nat_1(_G8271, _G8406)=k1_nat_1(_G8338, _G8475)), _G8271=_G8338, _G8406=_G8475]
+ (28)  [- (_G4027=_G4027)]
+ (29)  [_G4126=_G4171, - (_G4171=_G4126)]
+ (30)  [- (_G4359=_G4472), _G4359=_G4415, _G4415=_G4472]
+ (31)  [-v2_xxreal_0(_G4858), _G4809=_G4858, v2_xxreal_0(_G4809)]
+ (32)  [-m2_subset_1(_G5172, _G5345, _G5522), m2_subset_1(_G5087, _G5258, _G5433), _G5087=_G5172, _G5258=_G5345, _G5433=_G5522]
+ (33)  [-m1_subset_1(_G6182, _G6319), m1_subset_1(_G6115, _G6250), _G6115=_G6182, _G6250=_G6319]
+ (34)  [-v7_ordinal1(_G6761), _G6712=_G6761, v7_ordinal1(_G6712)]
+ (35)  [-r1_xxreal_0(_G7048, _G7185), r1_xxreal_0(_G6981, _G7116), _G6981=_G7048, _G7116=_G7185]
+
+Connection Proof:
+-----------------
+1  [1^[]=k6_numbers]   (3)  
+1.1  [- (1^[]=k6_numbers), v7_ordinal1(1^[]), r1_xxreal_0(1^[], np__6), - (1^[]=np__1), - (1^[]=np__2), - (1^[]=np__3), - (1^[]=np__4), - (1^[]=np__5), - (1^[]=np__6)]   (25)  substitution:[[_G10290], [1^[]]]
+1.1.1  [-v7_ordinal1(1^[])]   (1)  
+1.1.2  [-r1_xxreal_0(1^[], np__6), v7_ordinal1(1^[]), v7_ordinal1(np__6), r1_xxreal_0(1^[], k1_nat_1(np__6, np__1)), - (1^[]=k1_nat_1(np__6, np__1))]   (24)  substitution:[[_G11154, _G11259], [1^[], np__6]]
+1.1.2.1  [-v7_ordinal1(1^[])]   (1)  
+1.1.2.2  [-v7_ordinal1(np__6), m1_subset_1(np__6, k4_ordinal1)]   (11)  substitution:[[_G8910], [np__6]]
+1.1.2.2.1  [-m1_subset_1(np__6, k4_ordinal1), m1_subset_1(np__6, k5_numbers), np__6=np__6, k5_numbers=k4_ordinal1]   (33)  substitution:[[_G6182, _G6319, _G6115, _G6250], [np__6, k4_ordinal1, np__6, k5_numbers]]
+1.1.2.2.1.1  [-m1_subset_1(np__6, k5_numbers)]   (22)  
+1.1.2.2.1.2  [- (np__6=np__6)]   (28)  substitution:[[_G4027], [np__6]]
+1.1.2.2.1.3  [- (k5_numbers=k4_ordinal1)]   (13)  
+1.1.2.3  [-r1_xxreal_0(1^[], k1_nat_1(np__6, np__1)), r1_xxreal_0(1^[], k2_xcmplx_0(np__6, np__1)), 1^[]=1^[], k2_xcmplx_0(np__6, np__1)=k1_nat_1(np__6, np__1)]   (35)  substitution:[[_G7048, _G7185, _G6981, _G7116], [1^[], k1_nat_1(np__6, np__1), 1^[], k2_xcmplx_0(np__6, np__1)]]
+1.1.2.3.1  [-r1_xxreal_0(1^[], k2_xcmplx_0(np__6, np__1)), r1_xxreal_0(1^[], np__7), 1^[]=1^[], np__7=k2_xcmplx_0(np__6, np__1)]   (35)  substitution:[[_G7048, _G7185, _G6981, _G7116], [1^[], k2_xcmplx_0(np__6, np__1), 1^[], np__7]]
+1.1.2.3.1.1  [-r1_xxreal_0(1^[], np__7)]   (2)  
+1.1.2.3.1.2  [- (1^[]=1^[])]   (28)  substitution:[[_G4027], [1^[]]]
+1.1.2.3.1.3  [- (np__7=k2_xcmplx_0(np__6, np__1)), k2_xcmplx_0(np__6, np__1)=np__7]   (29)  substitution:[[_G4171, _G4126], [np__7, k2_xcmplx_0(np__6, np__1)]]
+1.1.2.3.1.3.1  [- (k2_xcmplx_0(np__6, np__1)=np__7)]   (15)  
+1.1.2.3.2  [- (1^[]=1^[])]   (28)  substitution:[[_G4027], [1^[]]]
+1.1.2.3.3  [- (k2_xcmplx_0(np__6, np__1)=k1_nat_1(np__6, np__1)), k1_nat_1(np__6, np__1)=k2_xcmplx_0(np__6, np__1)]   (29)  substitution:[[_G4171, _G4126], [k2_xcmplx_0(np__6, np__1), k1_nat_1(np__6, np__1)]]
+1.1.2.3.3.1  [- (k1_nat_1(np__6, np__1)=k2_xcmplx_0(np__6, np__1)), v7_ordinal1(np__6), m1_subset_1(np__1, k5_numbers)]   (12)  substitution:[[_G9067, _G9123], [np__6, np__1]]
+1.1.2.3.3.1.1  [-v7_ordinal1(np__6)]   (lemmata:1.1.2)  
+1.1.2.3.3.1.2  [-m1_subset_1(np__1, k5_numbers)]   (18)  
+1.1.2.4  [1^[]=k1_nat_1(np__6, np__1), - (1^[]=np__7), k1_nat_1(np__6, np__1)=np__7]   (30)  substitution:[[_G4359, _G4415, _G4472], [1^[], k1_nat_1(np__6, np__1), np__7]]
+1.1.2.4.1  [1^[]=np__7]   (10)  
+1.1.2.4.2  [- (k1_nat_1(np__6, np__1)=np__7), k1_nat_1(np__6, np__1)=k2_xcmplx_0(np__6, np__1), k2_xcmplx_0(np__6, np__1)=np__7]   (30)  substitution:[[_G4359, _G4472, _G4415], [k1_nat_1(np__6, np__1), np__7, k2_xcmplx_0(np__6, np__1)]]
+1.1.2.4.2.1  [- (k1_nat_1(np__6, np__1)=k2_xcmplx_0(np__6, np__1)), v7_ordinal1(np__6), m1_subset_1(np__1, k5_numbers)]   (12)  substitution:[[_G9067, _G9123], [np__6, np__1]]
+1.1.2.4.2.1.1  [-v7_ordinal1(np__6)]   (lemmata:1.1.2)  
+1.1.2.4.2.1.2  [-m1_subset_1(np__1, k5_numbers)]   (18)  
+1.1.2.4.2.2  [- (k2_xcmplx_0(np__6, np__1)=np__7)]   (15)  
+1.1.3  [1^[]=np__1]   (4)  
+1.1.4  [1^[]=np__2]   (5)  
+1.1.5  [1^[]=np__3]   (6)  
+1.1.6  [1^[]=np__4]   (7)  
+1.1.7  [1^[]=np__5]   (8)  
+1.1.8  [1^[]=np__6]   (9)  
+------------------------------------------------------
+End of proof for t31_nat_1

@@ -1,0 +1,67 @@
+
+t50_euclid_2 is a Theorem
+Start of proof for t50_euclid_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v7_ordinal1(1^[])]
+ (2)  [-m1_subset_1(2^[], u1_struct_0(k15_euclid(1^[])))]
+ (3)  [-m1_subset_1(3^[], u1_struct_0(k15_euclid(1^[])))]
+ (4)  [r1_xxreal_0(k23_rvsum_1(2^[], 3^[]), k9_binop_2(k23_rvsum_1(2^[], 2^[]), k23_rvsum_1(3^[], 3^[])))]
+ (5)  [v7_ordinal1(_G10023), - (k1_euclid(_G10023)=k4_finseq_2(_G10023, k1_numbers))]
+ (6)  [v7_ordinal1(_G10238), -m1_finseq_2(k1_euclid(_G10238), k1_numbers)]
+ (7)  [m1_finseq_2(_G10468, _G10411), m2_finseq_2(_G10583, _G10411, _G10468), -m1_subset_1(_G10583, _G10468)]
+ (8)  [m1_finseq_2(_G10468, _G10411), -m2_finseq_2(_G10583, _G10411, _G10468), m1_subset_1(_G10583, _G10468)]
+ (9)  [v7_ordinal1(_G11686), - (u1_struct_0(k15_euclid(_G11686))=k1_euclid(_G11686))]
+ (10)  [v7_ordinal1(_G10859), m2_finseq_2(_G10972, k1_numbers, k4_finseq_2(_G10859, k1_numbers)), m2_finseq_2(_G11188, k1_numbers, k4_finseq_2(_G10859, k1_numbers)), -r1_xxreal_0(k23_rvsum_1(_G10972, _G11188), k9_binop_2(k23_rvsum_1(_G10972, _G10972), k23_rvsum_1(_G11188, _G11188)))]
+ (11)  [- (k4_finseq_2(_G7281, _G7416)=k4_finseq_2(_G7348, _G7485)), _G7281=_G7348, _G7416=_G7485]
+ (12)  [_G7878=_G7927, - (k1_euclid(_G7878)=k1_euclid(_G7927))]
+ (13)  [_G8156=_G8205, - (u1_struct_0(_G8156)=u1_struct_0(_G8205))]
+ (14)  [_G8434=_G8483, - (k15_euclid(_G8434)=k15_euclid(_G8483))]
+ (15)  [- (k9_binop_2(_G8712, _G8847)=k9_binop_2(_G8779, _G8916)), _G8712=_G8779, _G8847=_G8916]
+ (16)  [- (k23_rvsum_1(_G9300, _G9435)=k23_rvsum_1(_G9367, _G9504)), _G9300=_G9367, _G9435=_G9504]
+ (17)  [- (_G3306=_G3306)]
+ (18)  [_G3405=_G3450, - (_G3450=_G3405)]
+ (19)  [- (_G3638=_G3751), _G3638=_G3694, _G3694=_G3751]
+ (20)  [-m1_finseq_2(_G4155, _G4292), m1_finseq_2(_G4088, _G4223), _G4088=_G4155, _G4223=_G4292]
+ (21)  [-m2_finseq_2(_G4770, _G4943, _G5120), m2_finseq_2(_G4685, _G4856, _G5031), _G4685=_G4770, _G4856=_G4943, _G5031=_G5120]
+ (22)  [-v7_ordinal1(_G5762), _G5713=_G5762, v7_ordinal1(_G5713)]
+ (23)  [-m1_subset_1(_G6058, _G6195), m1_subset_1(_G5991, _G6126), _G5991=_G6058, _G6126=_G6195]
+ (24)  [-r1_xxreal_0(_G6646, _G6783), r1_xxreal_0(_G6579, _G6714), _G6579=_G6646, _G6714=_G6783]
+
+Connection Proof:
+-----------------
+1  [r1_xxreal_0(k23_rvsum_1(2^[], 3^[]), k9_binop_2(k23_rvsum_1(2^[], 2^[]), k23_rvsum_1(3^[], 3^[])))]   (4)  
+1.1  [-r1_xxreal_0(k23_rvsum_1(2^[], 3^[]), k9_binop_2(k23_rvsum_1(2^[], 2^[]), k23_rvsum_1(3^[], 3^[]))), v7_ordinal1(1^[]), m2_finseq_2(2^[], k1_numbers, k4_finseq_2(1^[], k1_numbers)), m2_finseq_2(3^[], k1_numbers, k4_finseq_2(1^[], k1_numbers))]   (10)  substitution:[[_G10972, _G11188, _G10859], [2^[], 3^[], 1^[]]]
+1.1.1  [-v7_ordinal1(1^[])]   (1)  
+1.1.2  [-m2_finseq_2(2^[], k1_numbers, k4_finseq_2(1^[], k1_numbers)), m1_finseq_2(k4_finseq_2(1^[], k1_numbers), k1_numbers), m1_subset_1(2^[], k4_finseq_2(1^[], k1_numbers))]   (8)  substitution:[[_G10583, _G10411, _G10468], [2^[], k1_numbers, k4_finseq_2(1^[], k1_numbers)]]
+1.1.2.1  [-m1_finseq_2(k4_finseq_2(1^[], k1_numbers), k1_numbers), m1_finseq_2(k1_euclid(1^[]), k1_numbers), k1_euclid(1^[])=k4_finseq_2(1^[], k1_numbers), k1_numbers=k1_numbers]   (20)  substitution:[[_G4155, _G4292, _G4088, _G4223], [k4_finseq_2(1^[], k1_numbers), k1_numbers, k1_euclid(1^[]), k1_numbers]]
+1.1.2.1.1  [-m1_finseq_2(k1_euclid(1^[]), k1_numbers), v7_ordinal1(1^[])]   (6)  substitution:[[_G10238], [1^[]]]
+1.1.2.1.1.1  [-v7_ordinal1(1^[])]   (1)  
+1.1.2.1.2  [- (k1_euclid(1^[])=k4_finseq_2(1^[], k1_numbers)), v7_ordinal1(1^[])]   (5)  substitution:[[_G10023], [1^[]]]
+1.1.2.1.2.1  [-v7_ordinal1(1^[])]   (1)  
+1.1.2.1.3  [- (k1_numbers=k1_numbers)]   (17)  substitution:[[_G3306], [k1_numbers]]
+1.1.2.2  [-m1_subset_1(2^[], k4_finseq_2(1^[], k1_numbers)), m1_subset_1(2^[], u1_struct_0(k15_euclid(1^[]))), 2^[]=2^[], u1_struct_0(k15_euclid(1^[]))=k4_finseq_2(1^[], k1_numbers)]   (23)  substitution:[[_G6058, _G6195, _G5991, _G6126], [2^[], k4_finseq_2(1^[], k1_numbers), 2^[], u1_struct_0(k15_euclid(1^[]))]]
+1.1.2.2.1  [-m1_subset_1(2^[], u1_struct_0(k15_euclid(1^[])))]   (2)  
+1.1.2.2.2  [- (2^[]=2^[])]   (17)  substitution:[[_G3306], [2^[]]]
+1.1.2.2.3  [- (u1_struct_0(k15_euclid(1^[]))=k4_finseq_2(1^[], k1_numbers)), u1_struct_0(k15_euclid(1^[]))=k1_euclid(1^[]), k1_euclid(1^[])=k4_finseq_2(1^[], k1_numbers)]   (19)  substitution:[[_G3638, _G3751, _G3694], [u1_struct_0(k15_euclid(1^[])), k4_finseq_2(1^[], k1_numbers), k1_euclid(1^[])]]
+1.1.2.2.3.1  [- (u1_struct_0(k15_euclid(1^[]))=k1_euclid(1^[])), v7_ordinal1(1^[])]   (9)  substitution:[[_G11686], [1^[]]]
+1.1.2.2.3.1.1  [-v7_ordinal1(1^[])]   (1)  
+1.1.2.2.3.2  [- (k1_euclid(1^[])=k4_finseq_2(1^[], k1_numbers)), v7_ordinal1(1^[])]   (5)  substitution:[[_G10023], [1^[]]]
+1.1.2.2.3.2.1  [-v7_ordinal1(1^[])]   (1)  
+1.1.3  [-m2_finseq_2(3^[], k1_numbers, k4_finseq_2(1^[], k1_numbers)), m1_finseq_2(k4_finseq_2(1^[], k1_numbers), k1_numbers), m1_subset_1(3^[], k4_finseq_2(1^[], k1_numbers))]   (8)  substitution:[[_G10583, _G10411, _G10468], [3^[], k1_numbers, k4_finseq_2(1^[], k1_numbers)]]
+1.1.3.1  [-m1_finseq_2(k4_finseq_2(1^[], k1_numbers), k1_numbers), m1_finseq_2(k1_euclid(1^[]), k1_numbers), k1_euclid(1^[])=k4_finseq_2(1^[], k1_numbers), k1_numbers=k1_numbers]   (20)  substitution:[[_G4155, _G4292, _G4088, _G4223], [k4_finseq_2(1^[], k1_numbers), k1_numbers, k1_euclid(1^[]), k1_numbers]]
+1.1.3.1.1  [-m1_finseq_2(k1_euclid(1^[]), k1_numbers), v7_ordinal1(1^[])]   (6)  substitution:[[_G10238], [1^[]]]
+1.1.3.1.1.1  [-v7_ordinal1(1^[])]   (1)  
+1.1.3.1.2  [- (k1_euclid(1^[])=k4_finseq_2(1^[], k1_numbers)), v7_ordinal1(1^[])]   (5)  substitution:[[_G10023], [1^[]]]
+1.1.3.1.2.1  [-v7_ordinal1(1^[])]   (1)  
+1.1.3.1.3  [- (k1_numbers=k1_numbers)]   (17)  substitution:[[_G3306], [k1_numbers]]
+1.1.3.2  [-m1_subset_1(3^[], k4_finseq_2(1^[], k1_numbers)), m1_subset_1(3^[], u1_struct_0(k15_euclid(1^[]))), 3^[]=3^[], u1_struct_0(k15_euclid(1^[]))=k4_finseq_2(1^[], k1_numbers)]   (23)  substitution:[[_G6058, _G6195, _G5991, _G6126], [3^[], k4_finseq_2(1^[], k1_numbers), 3^[], u1_struct_0(k15_euclid(1^[]))]]
+1.1.3.2.1  [-m1_subset_1(3^[], u1_struct_0(k15_euclid(1^[])))]   (3)  
+1.1.3.2.2  [- (3^[]=3^[])]   (17)  substitution:[[_G3306], [3^[]]]
+1.1.3.2.3  [- (u1_struct_0(k15_euclid(1^[]))=k4_finseq_2(1^[], k1_numbers)), u1_struct_0(k15_euclid(1^[]))=k1_euclid(1^[]), k1_euclid(1^[])=k4_finseq_2(1^[], k1_numbers)]   (19)  substitution:[[_G3638, _G3751, _G3694], [u1_struct_0(k15_euclid(1^[])), k4_finseq_2(1^[], k1_numbers), k1_euclid(1^[])]]
+1.1.3.2.3.1  [- (u1_struct_0(k15_euclid(1^[]))=k1_euclid(1^[])), v7_ordinal1(1^[])]   (9)  substitution:[[_G11686], [1^[]]]
+1.1.3.2.3.1.1  [-v7_ordinal1(1^[])]   (1)  
+1.1.3.2.3.2  [- (k1_euclid(1^[])=k4_finseq_2(1^[], k1_numbers)), v7_ordinal1(1^[])]   (5)  substitution:[[_G10023], [1^[]]]
+1.1.3.2.3.2.1  [-v7_ordinal1(1^[])]   (1)  
+------------------------------------------------------
+End of proof for t50_euclid_2

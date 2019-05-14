@@ -1,0 +1,62 @@
+
+t14_armstrng is a Theorem
+Start of proof for t14_armstrng
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-8^[], r2_hidden(4^[], k7_armstrng(3^[]))]
+ (2)  [-8^[], -r3_armstrng(3^[], 7^[], 6^[])]
+ (3)  [-8^[], - (4^[]=k4_tarski(6^[], 7^[]))]
+ (4)  [-8^[], -m1_subset_1(7^[], k4_armstrng(3^[]))]
+ (5)  [-8^[], -m1_subset_1(6^[], k4_armstrng(3^[]))]
+ (6)  [-5^[], m1_subset_1(_G9669, k4_armstrng(3^[])), m1_subset_1(_G9680, k4_armstrng(3^[])), 4^[]=k4_tarski(_G9669, _G9680), r3_armstrng(3^[], _G9680, _G9669)]
+ (7)  [-5^[], -r2_hidden(4^[], k7_armstrng(3^[]))]
+ (8)  [8^[], 5^[]]
+ (9)  [- (k7_armstrng(_G6844)=a_1_1_armstrng(_G6844))]
+ (10)  [r2_hidden(_G6966, a_1_1_armstrng(_G7049)), -m1_subset_1(1^[_G7049, _G6966], k4_armstrng(_G7049))]
+ (11)  [r2_hidden(_G6966, a_1_1_armstrng(_G7049)), -m1_subset_1(2^[_G7049, _G6966], k4_armstrng(_G7049))]
+ (12)  [r2_hidden(_G6966, a_1_1_armstrng(_G7049)), - (_G6966=k4_tarski(1^[_G7049, _G6966], 2^[_G7049, _G6966]))]
+ (13)  [r2_hidden(_G6966, a_1_1_armstrng(_G7049)), -r3_armstrng(_G7049, 2^[_G7049, _G6966], 1^[_G7049, _G6966])]
+ (14)  [-r2_hidden(_G6966, a_1_1_armstrng(_G7049)), m1_subset_1(_G7281, k4_armstrng(_G7049)), m1_subset_1(_G7204, k4_armstrng(_G7049)), _G6966=k4_tarski(_G7204, _G7281), r3_armstrng(_G7049, _G7281, _G7204)]
+ (15)  [_G5338=_G5387, - (a_1_1_armstrng(_G5338)=a_1_1_armstrng(_G5387))]
+ (16)  [_G5616=_G5665, - (k7_armstrng(_G5616)=k7_armstrng(_G5665))]
+ (17)  [_G5894=_G5943, - (k4_armstrng(_G5894)=k4_armstrng(_G5943))]
+ (18)  [- (k4_tarski(_G6163, _G6298)=k4_tarski(_G6230, _G6367)), _G6163=_G6230, _G6298=_G6367]
+ (19)  [- (_G2280=_G2280)]
+ (20)  [_G2379=_G2424, - (_G2424=_G2379)]
+ (21)  [- (_G2612=_G2725), _G2612=_G2668, _G2668=_G2725]
+ (22)  [-r2_hidden(_G3129, _G3266), r2_hidden(_G3062, _G3197), _G3062=_G3129, _G3197=_G3266]
+ (23)  [-m1_subset_1(_G3726, _G3863), m1_subset_1(_G3659, _G3794), _G3659=_G3726, _G3794=_G3863]
+ (24)  [-r3_armstrng(_G4332, _G4505, _G4682), r3_armstrng(_G4247, _G4418, _G4593), _G4247=_G4332, _G4418=_G4505, _G4593=_G4682]
+
+Connection Proof:
+-----------------
+1  [8^[], 5^[]]   (8)  
+1.1  [-8^[], -r3_armstrng(3^[], 7^[], 6^[])]   (2)  
+1.1.1  [r3_armstrng(3^[], 7^[], 6^[]), -r2_hidden(4^[], a_1_1_armstrng(3^[])), m1_subset_1(7^[], k4_armstrng(3^[])), m1_subset_1(6^[], k4_armstrng(3^[])), 4^[]=k4_tarski(6^[], 7^[])]   (14)  substitution:[[_G7049, _G7281, _G7204, _G6966], [3^[], 7^[], 6^[], 4^[]]]
+1.1.1.1  [r2_hidden(4^[], a_1_1_armstrng(3^[])), -r2_hidden(4^[], k7_armstrng(3^[])), 4^[]=4^[], a_1_1_armstrng(3^[])=k7_armstrng(3^[])]   (22)  substitution:[[_G3062, _G3197, _G3129, _G3266], [4^[], a_1_1_armstrng(3^[]), 4^[], k7_armstrng(3^[])]]
+1.1.1.1.1  [r2_hidden(4^[], k7_armstrng(3^[])), -8^[]]   (1)  
+1.1.1.1.1.1  [8^[]]   (reduction:1)  
+1.1.1.1.2  [- (4^[]=4^[])]   (19)  substitution:[[_G2280], [4^[]]]
+1.1.1.1.3  [- (a_1_1_armstrng(3^[])=k7_armstrng(3^[])), k7_armstrng(3^[])=a_1_1_armstrng(3^[])]   (20)  substitution:[[_G2424, _G2379], [a_1_1_armstrng(3^[]), k7_armstrng(3^[])]]
+1.1.1.1.3.1  [- (k7_armstrng(3^[])=a_1_1_armstrng(3^[]))]   (9)  substitution:[[_G6844], [3^[]]]
+1.1.1.2  [-m1_subset_1(7^[], k4_armstrng(3^[])), -8^[]]   (4)  
+1.1.1.2.1  [8^[]]   (reduction:1)  
+1.1.1.3  [-m1_subset_1(6^[], k4_armstrng(3^[])), -8^[]]   (5)  
+1.1.1.3.1  [8^[]]   (reduction:1)  
+1.1.1.4  [- (4^[]=k4_tarski(6^[], 7^[])), -8^[]]   (3)  
+1.1.1.4.1  [8^[]]   (reduction:1)  
+1.2  [-5^[], -r2_hidden(4^[], k7_armstrng(3^[]))]   (7)  
+1.2.1  [r2_hidden(4^[], k7_armstrng(3^[])), -r2_hidden(4^[], a_1_1_armstrng(3^[])), 4^[]=4^[], k7_armstrng(3^[])=a_1_1_armstrng(3^[])]   (22)  substitution:[[_G3062, _G3197, _G3129, _G3266], [4^[], k7_armstrng(3^[]), 4^[], a_1_1_armstrng(3^[])]]
+1.2.1.1  [r2_hidden(4^[], a_1_1_armstrng(3^[])), - (4^[]=k4_tarski(1^[3^[], 4^[]], 2^[3^[], 4^[]]))]   (12)  substitution:[[_G6966, _G7049], [4^[], 3^[]]]
+1.2.1.1.1  [4^[]=k4_tarski(1^[3^[], 4^[]], 2^[3^[], 4^[]]), -5^[], m1_subset_1(1^[3^[], 4^[]], k4_armstrng(3^[])), m1_subset_1(2^[3^[], 4^[]], k4_armstrng(3^[])), r3_armstrng(3^[], 2^[3^[], 4^[]], 1^[3^[], 4^[]])]   (6)  substitution:[[_G9669, _G9680], [1^[3^[], 4^[]], 2^[3^[], 4^[]]]]
+1.2.1.1.1.1  [5^[]]   (reduction:1)  
+1.2.1.1.1.2  [-m1_subset_1(1^[3^[], 4^[]], k4_armstrng(3^[])), r2_hidden(4^[], a_1_1_armstrng(3^[]))]   (10)  substitution:[[_G7049, _G6966], [3^[], 4^[]]]
+1.2.1.1.1.2.1  [-r2_hidden(4^[], a_1_1_armstrng(3^[]))]   (reduction:1.2.1)  
+1.2.1.1.1.3  [-m1_subset_1(2^[3^[], 4^[]], k4_armstrng(3^[])), r2_hidden(4^[], a_1_1_armstrng(3^[]))]   (11)  substitution:[[_G7049, _G6966], [3^[], 4^[]]]
+1.2.1.1.1.3.1  [-r2_hidden(4^[], a_1_1_armstrng(3^[]))]   (reduction:1.2.1)  
+1.2.1.1.1.4  [-r3_armstrng(3^[], 2^[3^[], 4^[]], 1^[3^[], 4^[]]), r2_hidden(4^[], a_1_1_armstrng(3^[]))]   (13)  substitution:[[_G7049, _G6966], [3^[], 4^[]]]
+1.2.1.1.1.4.1  [-r2_hidden(4^[], a_1_1_armstrng(3^[]))]   (reduction:1.2.1)  
+1.2.1.2  [- (4^[]=4^[])]   (19)  substitution:[[_G2280], [4^[]]]
+1.2.1.3  [- (k7_armstrng(3^[])=a_1_1_armstrng(3^[]))]   (9)  substitution:[[_G6844], [3^[]]]
+------------------------------------------------------
+End of proof for t14_armstrng

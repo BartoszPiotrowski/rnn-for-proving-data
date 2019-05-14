@@ -1,0 +1,21 @@
+
+t36_funct_2 is a Theorem
+Start of proof for t36_funct_2
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_funct_1(4^[])]
+ (2)  [-v1_funct_2(4^[], 1^[], 2^[])]
+ (3)  [-m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 2^[])))]
+ (4)  [r1_tarski(k7_relset_1(1^[], 2^[], 4^[], 3^[]), 2^[])]
+ (5)  [m1_subset_1(_G977, k1_zfmisc_1(k2_zfmisc_1(_G842, _G909))), -m1_subset_1(k7_relset_1(_G842, _G909, _G977, _G1046), k1_zfmisc_1(_G909))]
+ (6)  [m1_subset_1(_G1466, k1_zfmisc_1(_G1513)), -r1_tarski(_G1466, _G1513)]
+ (7)  [-m1_subset_1(_G1466, k1_zfmisc_1(_G1513)), r1_tarski(_G1466, _G1513)]
+
+Connection Proof:
+-----------------
+1  [r1_tarski(k7_relset_1(1^[], 2^[], 4^[], 3^[]), 2^[])]   (4)  
+1.1  [-r1_tarski(k7_relset_1(1^[], 2^[], 4^[], 3^[]), 2^[]), m1_subset_1(k7_relset_1(1^[], 2^[], 4^[], 3^[]), k1_zfmisc_1(2^[]))]   (6)  substitution:[[_G1466, _G1513], [k7_relset_1(1^[], 2^[], 4^[], 3^[]), 2^[]]]
+1.1.1  [-m1_subset_1(k7_relset_1(1^[], 2^[], 4^[], 3^[]), k1_zfmisc_1(2^[])), m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 2^[])))]   (5)  substitution:[[_G842, _G909, _G977, _G1046], [1^[], 2^[], 4^[], 3^[]]]
+1.1.1.1  [-m1_subset_1(4^[], k1_zfmisc_1(k2_zfmisc_1(1^[], 2^[])))]   (3)  
+------------------------------------------------------
+End of proof for t36_funct_2

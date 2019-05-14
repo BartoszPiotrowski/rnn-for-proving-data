@@ -1,0 +1,47 @@
+
+t19_xxreal_3 is a Theorem
+Start of proof for t19_xxreal_3
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-v1_xxreal_0(1^[])]
+ (2)  [-v1_xxreal_0(2^[])]
+ (3)  [- (k3_xxreal_3(1^[], 2^[])=k2_xxreal_0)]
+ (4)  [1^[]=k2_xxreal_0]
+ (5)  [2^[]=k1_xxreal_0]
+ (6)  [v1_xxreal_0(_G4980), v1_xxreal_0(_G5069), - (k3_xxreal_3(_G4980, _G5069)=k1_xxreal_3(_G4980, k2_xxreal_3(_G5069)))]
+ (7)  [v1_xxreal_0(_G5361), -v1_xxreal_0(k2_xxreal_3(_G5361))]
+ (8)  [v1_xxreal_0(_G5508), - (k2_xxreal_3(k2_xxreal_3(_G5508))=_G5508)]
+ (9)  [- (k2_xxreal_3(k2_xxreal_0)=k1_xxreal_0)]
+ (10)  [v1_xxreal_0(_G5697), v1_xxreal_0(_G5799), k1_xxreal_3(_G5697, _G5799)=k2_xxreal_0, - (_G5697=k2_xxreal_0), - (_G5799=k2_xxreal_0)]
+ (11)  [-v1_xxreal_0(_G3204), _G3155=_G3204, v1_xxreal_0(_G3155)]
+ (12)  [- (_G2382=_G2382)]
+ (13)  [_G2481=_G2526, - (_G2526=_G2481)]
+ (14)  [- (_G2714=_G2827), _G2714=_G2770, _G2770=_G2827]
+ (15)  [- (k1_xxreal_3(_G3454, _G3589)=k1_xxreal_3(_G3521, _G3658)), _G3454=_G3521, _G3589=_G3658]
+ (16)  [_G4051=_G4100, - (k2_xxreal_3(_G4051)=k2_xxreal_3(_G4100))]
+ (17)  [- (k3_xxreal_3(_G4320, _G4455)=k3_xxreal_3(_G4387, _G4524)), _G4320=_G4387, _G4455=_G4524]
+
+Connection Proof:
+-----------------
+1  [1^[]=k2_xxreal_0]   (4)  
+1.1  [- (1^[]=k2_xxreal_0), v1_xxreal_0(1^[]), v1_xxreal_0(k2_xxreal_3(2^[])), k1_xxreal_3(1^[], k2_xxreal_3(2^[]))=k2_xxreal_0, - (k2_xxreal_3(2^[])=k2_xxreal_0)]   (10)  substitution:[[_G5697, _G5799], [1^[], k2_xxreal_3(2^[])]]
+1.1.1  [-v1_xxreal_0(1^[])]   (1)  
+1.1.2  [-v1_xxreal_0(k2_xxreal_3(2^[])), v1_xxreal_0(2^[])]   (7)  substitution:[[_G5361], [2^[]]]
+1.1.2.1  [-v1_xxreal_0(2^[])]   (2)  
+1.1.3  [- (k1_xxreal_3(1^[], k2_xxreal_3(2^[]))=k2_xxreal_0), k2_xxreal_0=k1_xxreal_3(1^[], k2_xxreal_3(2^[]))]   (13)  substitution:[[_G2526, _G2481], [k1_xxreal_3(1^[], k2_xxreal_3(2^[])), k2_xxreal_0]]
+1.1.3.1  [- (k2_xxreal_0=k1_xxreal_3(1^[], k2_xxreal_3(2^[]))), k2_xxreal_0=k3_xxreal_3(1^[], 2^[]), k3_xxreal_3(1^[], 2^[])=k1_xxreal_3(1^[], k2_xxreal_3(2^[]))]   (14)  substitution:[[_G2714, _G2827, _G2770], [k2_xxreal_0, k1_xxreal_3(1^[], k2_xxreal_3(2^[])), k3_xxreal_3(1^[], 2^[])]]
+1.1.3.1.1  [- (k2_xxreal_0=k3_xxreal_3(1^[], 2^[])), k3_xxreal_3(1^[], 2^[])=k2_xxreal_0]   (13)  substitution:[[_G2526, _G2481], [k2_xxreal_0, k3_xxreal_3(1^[], 2^[])]]
+1.1.3.1.1.1  [- (k3_xxreal_3(1^[], 2^[])=k2_xxreal_0)]   (3)  
+1.1.3.1.2  [- (k3_xxreal_3(1^[], 2^[])=k1_xxreal_3(1^[], k2_xxreal_3(2^[]))), v1_xxreal_0(1^[]), v1_xxreal_0(2^[])]   (6)  substitution:[[_G4980, _G5069], [1^[], 2^[]]]
+1.1.3.1.2.1  [-v1_xxreal_0(1^[])]   (1)  
+1.1.3.1.2.2  [-v1_xxreal_0(2^[])]   (2)  
+1.1.4  [k2_xxreal_3(2^[])=k2_xxreal_0, - (k2_xxreal_3(k2_xxreal_3(2^[]))=k2_xxreal_3(k2_xxreal_0))]   (16)  substitution:[[_G4051, _G4100], [k2_xxreal_3(2^[]), k2_xxreal_0]]
+1.1.4.1  [k2_xxreal_3(k2_xxreal_3(2^[]))=k2_xxreal_3(k2_xxreal_0), - (2^[]=k2_xxreal_3(k2_xxreal_0)), 2^[]=k2_xxreal_3(k2_xxreal_3(2^[]))]   (14)  substitution:[[_G2770, _G2827, _G2714], [k2_xxreal_3(k2_xxreal_3(2^[])), k2_xxreal_3(k2_xxreal_0), 2^[]]]
+1.1.4.1.1  [2^[]=k2_xxreal_3(k2_xxreal_0), - (2^[]=k1_xxreal_0), k2_xxreal_3(k2_xxreal_0)=k1_xxreal_0]   (14)  substitution:[[_G2714, _G2770, _G2827], [2^[], k2_xxreal_3(k2_xxreal_0), k1_xxreal_0]]
+1.1.4.1.1.1  [2^[]=k1_xxreal_0]   (5)  
+1.1.4.1.1.2  [- (k2_xxreal_3(k2_xxreal_0)=k1_xxreal_0)]   (9)  
+1.1.4.1.2  [- (2^[]=k2_xxreal_3(k2_xxreal_3(2^[]))), k2_xxreal_3(k2_xxreal_3(2^[]))=2^[]]   (13)  substitution:[[_G2526, _G2481], [2^[], k2_xxreal_3(k2_xxreal_3(2^[]))]]
+1.1.4.1.2.1  [- (k2_xxreal_3(k2_xxreal_3(2^[]))=2^[]), v1_xxreal_0(2^[])]   (8)  substitution:[[_G5508], [2^[]]]
+1.1.4.1.2.1.1  [-v1_xxreal_0(2^[])]   (2)  
+------------------------------------------------------
+End of proof for t19_xxreal_3

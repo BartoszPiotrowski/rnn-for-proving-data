@@ -1,0 +1,53 @@
+
+t31_vectsp_1 is a Theorem
+Start of proof for t31_vectsp_1
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [v2_struct_0(1^[])]
+ (2)  [-v13_algstr_0(1^[])]
+ (3)  [-v3_rlvect_1(1^[])]
+ (4)  [-v4_rlvect_1(1^[])]
+ (5)  [-l2_algstr_0(1^[])]
+ (6)  [-m1_subset_1(2^[], u1_struct_0(1^[]))]
+ (7)  [-m1_subset_1(3^[], u1_struct_0(1^[]))]
+ (8)  [k1_algstr_0(1^[], 2^[], 3^[])=k4_algstr_0(1^[], k1_algstr_0(1^[], k4_algstr_0(1^[], 3^[]), k4_algstr_0(1^[], 2^[])))]
+ (9)  [l2_algstr_0(_G9513), m1_subset_1(_G9621, u1_struct_0(_G9513)), m1_subset_1(_G9764, u1_struct_0(_G9513)), - (k5_algstr_0(_G9513, _G9621, _G9764)=k1_algstr_0(_G9513, _G9621, k4_algstr_0(_G9513, _G9764)))]
+ (10)  [-m1_subset_1(k4_algstr_0(_G10247, _G10304), u1_struct_0(_G10247)), l2_algstr_0(_G10247), m1_subset_1(_G10304, u1_struct_0(_G10247))]
+ (11)  [- (k4_algstr_0(_G10624, k5_algstr_0(_G10624, k4_algstr_0(_G10624, _G10983), _G11129))=k1_algstr_0(_G10624, _G11129, _G10983)), m1_subset_1(_G11129, u1_struct_0(_G10624)), m1_subset_1(_G10983, u1_struct_0(_G10624)), -v2_struct_0(_G10624), v13_algstr_0(_G10624), v3_rlvect_1(_G10624), v4_rlvect_1(_G10624), l2_algstr_0(_G10624)]
+ (12)  [- (k5_algstr_0(_G6507, _G6678, _G6853)=k5_algstr_0(_G6592, _G6765, _G6942)), _G6507=_G6592, _G6678=_G6765, _G6853=_G6942]
+ (13)  [_G7535=_G7584, - (u1_struct_0(_G7535)=u1_struct_0(_G7584))]
+ (14)  [- (k4_algstr_0(_G8832, _G8967)=k4_algstr_0(_G8899, _G9036)), _G8832=_G8899, _G8967=_G9036]
+ (15)  [- (k1_algstr_0(_G7813, _G7984, _G8159)=k1_algstr_0(_G7898, _G8071, _G8248)), _G7813=_G7898, _G7984=_G8071, _G8159=_G8248]
+ (16)  [- (_G3621=_G3621)]
+ (17)  [_G3720=_G3765, - (_G3765=_G3720)]
+ (18)  [- (_G3953=_G4066), _G3953=_G4009, _G4009=_G4066]
+ (19)  [-v2_struct_0(_G4452), _G4403=_G4452, v2_struct_0(_G4403)]
+ (20)  [-v13_algstr_0(_G4730), _G4681=_G4730, v13_algstr_0(_G4681)]
+ (21)  [-v3_rlvect_1(_G5008), _G4959=_G5008, v3_rlvect_1(_G4959)]
+ (22)  [-v4_rlvect_1(_G5286), _G5237=_G5286, v4_rlvect_1(_G5237)]
+ (23)  [-l2_algstr_0(_G5564), _G5515=_G5564, l2_algstr_0(_G5515)]
+ (24)  [-m1_subset_1(_G5851, _G5988), m1_subset_1(_G5784, _G5919), _G5784=_G5851, _G5919=_G5988]
+
+Connection Proof:
+-----------------
+1  [v2_struct_0(1^[])]   (1)  
+1.1  [-v2_struct_0(1^[]), - (k4_algstr_0(1^[], k5_algstr_0(1^[], k4_algstr_0(1^[], 3^[]), 2^[]))=k1_algstr_0(1^[], 2^[], 3^[])), m1_subset_1(2^[], u1_struct_0(1^[])), m1_subset_1(3^[], u1_struct_0(1^[])), v13_algstr_0(1^[]), v3_rlvect_1(1^[]), v4_rlvect_1(1^[]), l2_algstr_0(1^[])]   (11)  substitution:[[_G10624, _G10983, _G11129], [1^[], 3^[], 2^[]]]
+1.1.1  [k4_algstr_0(1^[], k5_algstr_0(1^[], k4_algstr_0(1^[], 3^[]), 2^[]))=k1_algstr_0(1^[], 2^[], 3^[]), - (k1_algstr_0(1^[], 2^[], 3^[])=k4_algstr_0(1^[], k5_algstr_0(1^[], k4_algstr_0(1^[], 3^[]), 2^[])))]   (17)  substitution:[[_G3720, _G3765], [k4_algstr_0(1^[], k5_algstr_0(1^[], k4_algstr_0(1^[], 3^[]), 2^[])), k1_algstr_0(1^[], 2^[], 3^[])]]
+1.1.1.1  [k1_algstr_0(1^[], 2^[], 3^[])=k4_algstr_0(1^[], k5_algstr_0(1^[], k4_algstr_0(1^[], 3^[]), 2^[])), - (k1_algstr_0(1^[], 2^[], 3^[])=k4_algstr_0(1^[], k1_algstr_0(1^[], k4_algstr_0(1^[], 3^[]), k4_algstr_0(1^[], 2^[])))), k4_algstr_0(1^[], k5_algstr_0(1^[], k4_algstr_0(1^[], 3^[]), 2^[]))=k4_algstr_0(1^[], k1_algstr_0(1^[], k4_algstr_0(1^[], 3^[]), k4_algstr_0(1^[], 2^[])))]   (18)  substitution:[[_G3953, _G4009, _G4066], [k1_algstr_0(1^[], 2^[], 3^[]), k4_algstr_0(1^[], k5_algstr_0(1^[], k4_algstr_0(1^[], 3^[]), 2^[])), k4_algstr_0(1^[], k1_algstr_0(1^[], k4_algstr_0(1^[], 3^[]), k4_algstr_0(1^[], 2^[])))]]
+1.1.1.1.1  [k1_algstr_0(1^[], 2^[], 3^[])=k4_algstr_0(1^[], k1_algstr_0(1^[], k4_algstr_0(1^[], 3^[]), k4_algstr_0(1^[], 2^[])))]   (8)  
+1.1.1.1.2  [- (k4_algstr_0(1^[], k5_algstr_0(1^[], k4_algstr_0(1^[], 3^[]), 2^[]))=k4_algstr_0(1^[], k1_algstr_0(1^[], k4_algstr_0(1^[], 3^[]), k4_algstr_0(1^[], 2^[])))), 1^[]=1^[], k5_algstr_0(1^[], k4_algstr_0(1^[], 3^[]), 2^[])=k1_algstr_0(1^[], k4_algstr_0(1^[], 3^[]), k4_algstr_0(1^[], 2^[]))]   (14)  substitution:[[_G8832, _G8967, _G8899, _G9036], [1^[], k5_algstr_0(1^[], k4_algstr_0(1^[], 3^[]), 2^[]), 1^[], k1_algstr_0(1^[], k4_algstr_0(1^[], 3^[]), k4_algstr_0(1^[], 2^[]))]]
+1.1.1.1.2.1  [- (1^[]=1^[])]   (16)  substitution:[[_G3621], [1^[]]]
+1.1.1.1.2.2  [- (k5_algstr_0(1^[], k4_algstr_0(1^[], 3^[]), 2^[])=k1_algstr_0(1^[], k4_algstr_0(1^[], 3^[]), k4_algstr_0(1^[], 2^[]))), l2_algstr_0(1^[]), m1_subset_1(k4_algstr_0(1^[], 3^[]), u1_struct_0(1^[])), m1_subset_1(2^[], u1_struct_0(1^[]))]   (9)  substitution:[[_G9513, _G9621, _G9764], [1^[], k4_algstr_0(1^[], 3^[]), 2^[]]]
+1.1.1.1.2.2.1  [-l2_algstr_0(1^[])]   (5)  
+1.1.1.1.2.2.2  [-m1_subset_1(k4_algstr_0(1^[], 3^[]), u1_struct_0(1^[])), l2_algstr_0(1^[]), m1_subset_1(3^[], u1_struct_0(1^[]))]   (10)  substitution:[[_G10247, _G10304], [1^[], 3^[]]]
+1.1.1.1.2.2.2.1  [-l2_algstr_0(1^[])]   (5)  
+1.1.1.1.2.2.2.2  [-m1_subset_1(3^[], u1_struct_0(1^[]))]   (7)  
+1.1.1.1.2.2.3  [-m1_subset_1(2^[], u1_struct_0(1^[]))]   (6)  
+1.1.2  [-m1_subset_1(2^[], u1_struct_0(1^[]))]   (6)  
+1.1.3  [-m1_subset_1(3^[], u1_struct_0(1^[]))]   (7)  
+1.1.4  [-v13_algstr_0(1^[])]   (2)  
+1.1.5  [-v3_rlvect_1(1^[])]   (3)  
+1.1.6  [-v4_rlvect_1(1^[])]   (4)  
+1.1.7  [-l2_algstr_0(1^[])]   (5)  
+------------------------------------------------------
+End of proof for t31_vectsp_1

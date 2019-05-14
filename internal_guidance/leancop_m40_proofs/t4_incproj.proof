@@ -1,0 +1,93 @@
+
+t4_incproj is a Theorem
+Start of proof for t4_incproj
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-4^[], m1_incproj(2^[], 1^[])]
+ (2)  [-4^[], -m1_subset_1(2^[], u2_incsp_1(k3_incproj(1^[])))]
+ (3)  [-3^[], m1_subset_1(2^[], u2_incsp_1(k3_incproj(1^[])))]
+ (4)  [-3^[], -m1_incproj(2^[], 1^[])]
+ (5)  [v2_struct_0(1^[])]
+ (6)  [-v2_collsp(1^[])]
+ (7)  [-v3_collsp(1^[])]
+ (8)  [-v4_collsp(1^[])]
+ (9)  [-l1_collsp(1^[])]
+ (10)  [3^[], 4^[]]
+ (11)  [- (u1_incsp_1(k3_incproj(_G9200))=u1_struct_0(_G9200)), -v2_struct_0(_G9200), v2_collsp(_G9200), v3_collsp(_G9200), v4_collsp(_G9200), l1_collsp(_G9200)]
+ (12)  [- (u2_incsp_1(k3_incproj(_G9200))=k1_incproj(_G9200)), -v2_struct_0(_G9200), v2_collsp(_G9200), v3_collsp(_G9200), v4_collsp(_G9200), l1_collsp(_G9200)]
+ (13)  [- (u3_incsp_1(k3_incproj(_G9200))=k2_incproj(_G9200)), -v2_struct_0(_G9200), v2_collsp(_G9200), v3_collsp(_G9200), v4_collsp(_G9200), l1_collsp(_G9200)]
+ (14)  [-m1_subset_1(_G8975, k1_incproj(_G8643)), m1_incproj(_G8975, _G8643), -v2_struct_0(_G8643), v2_collsp(_G8643), v3_collsp(_G8643), v4_collsp(_G8643), l1_collsp(_G8643)]
+ (15)  [m1_subset_1(_G8975, k1_incproj(_G8643)), -m1_incproj(_G8975, _G8643), -v2_struct_0(_G8643), v2_collsp(_G8643), v3_collsp(_G8643), v4_collsp(_G8643), l1_collsp(_G8643)]
+ (16)  [_G6559=_G6608, - (u1_incsp_1(_G6559)=u1_incsp_1(_G6608))]
+ (17)  [_G6837=_G6886, - (u1_struct_0(_G6837)=u1_struct_0(_G6886))]
+ (18)  [_G7115=_G7164, - (k1_incproj(_G7115)=k1_incproj(_G7164))]
+ (19)  [_G7393=_G7442, - (u3_incsp_1(_G7393)=u3_incsp_1(_G7442))]
+ (20)  [_G7671=_G7720, - (k2_incproj(_G7671)=k2_incproj(_G7720))]
+ (21)  [_G7949=_G7998, - (u2_incsp_1(_G7949)=u2_incsp_1(_G7998))]
+ (22)  [_G8218=_G8267, - (k3_incproj(_G8218)=k3_incproj(_G8267))]
+ (23)  [- (_G3055=_G3055)]
+ (24)  [_G3154=_G3199, - (_G3199=_G3154)]
+ (25)  [- (_G3387=_G3500), _G3387=_G3443, _G3443=_G3500]
+ (26)  [-v2_struct_0(_G3886), _G3837=_G3886, v2_struct_0(_G3837)]
+ (27)  [-v2_collsp(_G4164), _G4115=_G4164, v2_collsp(_G4115)]
+ (28)  [-v3_collsp(_G4442), _G4393=_G4442, v3_collsp(_G4393)]
+ (29)  [-v4_collsp(_G4720), _G4671=_G4720, v4_collsp(_G4671)]
+ (30)  [-l1_collsp(_G4998), _G4949=_G4998, l1_collsp(_G4949)]
+ (31)  [-m1_incproj(_G5294, _G5431), m1_incproj(_G5227, _G5362), _G5227=_G5294, _G5362=_G5431]
+ (32)  [-m1_subset_1(_G5882, _G6019), m1_subset_1(_G5815, _G5950), _G5815=_G5882, _G5950=_G6019]
+
+Connection Proof:
+-----------------
+1  [v2_struct_0(1^[])]   (5)  
+1.1  [-v2_struct_0(1^[]), -m1_subset_1(2^[], k1_incproj(1^[])), m1_incproj(2^[], 1^[]), v2_collsp(1^[]), v3_collsp(1^[]), v4_collsp(1^[]), l1_collsp(1^[])]   (14)  substitution:[[_G8643, _G8975], [1^[], 2^[]]]
+1.1.1  [m1_subset_1(2^[], k1_incproj(1^[])), -m1_subset_1(2^[], u2_incsp_1(k3_incproj(1^[]))), 2^[]=2^[], k1_incproj(1^[])=u2_incsp_1(k3_incproj(1^[]))]   (32)  substitution:[[_G5815, _G5950, _G5882, _G6019], [2^[], k1_incproj(1^[]), 2^[], u2_incsp_1(k3_incproj(1^[]))]]
+1.1.1.1  [m1_subset_1(2^[], u2_incsp_1(k3_incproj(1^[]))), -m1_subset_1(2^[], k1_incproj(1^[])), 2^[]=2^[], u2_incsp_1(k3_incproj(1^[]))=k1_incproj(1^[])]   (32)  substitution:[[_G5815, _G5950, _G5882, _G6019], [2^[], u2_incsp_1(k3_incproj(1^[])), 2^[], k1_incproj(1^[])]]
+1.1.1.1.1  [m1_subset_1(2^[], k1_incproj(1^[])), -m1_incproj(2^[], 1^[]), -v2_struct_0(1^[]), v2_collsp(1^[]), v3_collsp(1^[]), v4_collsp(1^[]), l1_collsp(1^[])]   (15)  substitution:[[_G8975, _G8643], [2^[], 1^[]]]
+1.1.1.1.1.1  [m1_incproj(2^[], 1^[]), -4^[]]   (1)  
+1.1.1.1.1.1.1  [4^[], 3^[]]   (10)  
+1.1.1.1.1.1.1.1  [-3^[], m1_subset_1(2^[], u2_incsp_1(k3_incproj(1^[])))]   (3)  
+1.1.1.1.1.1.1.1.1  [-m1_subset_1(2^[], u2_incsp_1(k3_incproj(1^[])))]   (reduction:1.1.1)  
+1.1.1.1.1.2  [v2_struct_0(1^[])]   (5)  
+1.1.1.1.1.3  [-v2_collsp(1^[])]   (6)  
+1.1.1.1.1.4  [-v3_collsp(1^[])]   (7)  
+1.1.1.1.1.5  [-v4_collsp(1^[])]   (8)  
+1.1.1.1.1.6  [-l1_collsp(1^[])]   (9)  
+1.1.1.1.2  [- (2^[]=2^[])]   (23)  substitution:[[_G3055], [2^[]]]
+1.1.1.1.3  [- (u2_incsp_1(k3_incproj(1^[]))=k1_incproj(1^[])), -v2_struct_0(1^[]), v2_collsp(1^[]), v3_collsp(1^[]), v4_collsp(1^[]), l1_collsp(1^[])]   (12)  substitution:[[_G9200], [1^[]]]
+1.1.1.1.3.1  [v2_struct_0(1^[])]   (5)  
+1.1.1.1.3.2  [-v2_collsp(1^[])]   (6)  
+1.1.1.1.3.3  [-v3_collsp(1^[])]   (7)  
+1.1.1.1.3.4  [-v4_collsp(1^[])]   (8)  
+1.1.1.1.3.5  [-l1_collsp(1^[])]   (9)  
+1.1.1.2  [- (2^[]=2^[])]   (23)  substitution:[[_G3055], [2^[]]]
+1.1.1.3  [- (k1_incproj(1^[])=u2_incsp_1(k3_incproj(1^[]))), u2_incsp_1(k3_incproj(1^[]))=k1_incproj(1^[])]   (24)  substitution:[[_G3199, _G3154], [k1_incproj(1^[]), u2_incsp_1(k3_incproj(1^[]))]]
+1.1.1.3.1  [- (u2_incsp_1(k3_incproj(1^[]))=k1_incproj(1^[])), -v2_struct_0(1^[]), v2_collsp(1^[]), v3_collsp(1^[]), v4_collsp(1^[]), l1_collsp(1^[])]   (12)  substitution:[[_G9200], [1^[]]]
+1.1.1.3.1.1  [v2_struct_0(1^[])]   (5)  
+1.1.1.3.1.2  [-v2_collsp(1^[])]   (6)  
+1.1.1.3.1.3  [-v3_collsp(1^[])]   (7)  
+1.1.1.3.1.4  [-v4_collsp(1^[])]   (8)  
+1.1.1.3.1.5  [-l1_collsp(1^[])]   (9)  
+1.1.2  [-m1_incproj(2^[], 1^[]), m1_subset_1(2^[], k1_incproj(1^[])), -v2_struct_0(1^[]), v2_collsp(1^[]), v3_collsp(1^[]), v4_collsp(1^[]), l1_collsp(1^[])]   (15)  substitution:[[_G8975, _G8643], [2^[], 1^[]]]
+1.1.2.1  [-m1_subset_1(2^[], k1_incproj(1^[])), m1_subset_1(2^[], u2_incsp_1(k3_incproj(1^[]))), 2^[]=2^[], u2_incsp_1(k3_incproj(1^[]))=k1_incproj(1^[])]   (32)  substitution:[[_G5882, _G6019, _G5815, _G5950], [2^[], k1_incproj(1^[]), 2^[], u2_incsp_1(k3_incproj(1^[]))]]
+1.1.2.1.1  [-m1_subset_1(2^[], u2_incsp_1(k3_incproj(1^[]))), -4^[]]   (2)  
+1.1.2.1.1.1  [4^[], 3^[]]   (10)  
+1.1.2.1.1.1.1  [-3^[], -m1_incproj(2^[], 1^[])]   (4)  
+1.1.2.1.1.1.1.1  [m1_incproj(2^[], 1^[])]   (reduction:1.1)  
+1.1.2.1.2  [- (2^[]=2^[])]   (23)  substitution:[[_G3055], [2^[]]]
+1.1.2.1.3  [- (u2_incsp_1(k3_incproj(1^[]))=k1_incproj(1^[])), -v2_struct_0(1^[]), v2_collsp(1^[]), v3_collsp(1^[]), v4_collsp(1^[]), l1_collsp(1^[])]   (12)  substitution:[[_G9200], [1^[]]]
+1.1.2.1.3.1  [v2_struct_0(1^[])]   (5)  
+1.1.2.1.3.2  [-v2_collsp(1^[])]   (6)  
+1.1.2.1.3.3  [-v3_collsp(1^[])]   (7)  
+1.1.2.1.3.4  [-v4_collsp(1^[])]   (8)  
+1.1.2.1.3.5  [-l1_collsp(1^[])]   (9)  
+1.1.2.2  [v2_struct_0(1^[])]   (5)  
+1.1.2.3  [-v2_collsp(1^[])]   (6)  
+1.1.2.4  [-v3_collsp(1^[])]   (7)  
+1.1.2.5  [-v4_collsp(1^[])]   (8)  
+1.1.2.6  [-l1_collsp(1^[])]   (9)  
+1.1.3  [-v2_collsp(1^[])]   (6)  
+1.1.4  [-v3_collsp(1^[])]   (7)  
+1.1.5  [-v4_collsp(1^[])]   (8)  
+1.1.6  [-l1_collsp(1^[])]   (9)  
+------------------------------------------------------
+End of proof for t4_incproj

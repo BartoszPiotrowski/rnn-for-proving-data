@@ -1,0 +1,22 @@
+
+l1_fomodel4 is a Theorem
+Start of proof for l1_fomodel4
+------------------------------------------------------
+Proof for the following clauses:
+ (1)  [-m1_subset_1(1^[], k1_zfmisc_1(k1_funct_2(2^[], 3^[])))]
+ (2)  [m1_subset_1(1^[], k1_zfmisc_1(k1_zfmisc_1(k2_zfmisc_1(2^[], 3^[]))))]
+ (3)  [-r1_tarski(_G847, _G960), r1_tarski(_G847, _G903), r1_tarski(_G903, _G960)]
+ (4)  [-r1_tarski(k1_funct_2(_G1255, _G1302), k1_zfmisc_1(k2_zfmisc_1(_G1255, _G1302)))]
+ (5)  [m1_subset_1(_G1506, k1_zfmisc_1(_G1553)), -r1_tarski(_G1506, _G1553)]
+ (6)  [-m1_subset_1(_G1506, k1_zfmisc_1(_G1553)), r1_tarski(_G1506, _G1553)]
+
+Connection Proof:
+-----------------
+1  [m1_subset_1(1^[], k1_zfmisc_1(k1_zfmisc_1(k2_zfmisc_1(2^[], 3^[]))))]   (2)  
+1.1  [-m1_subset_1(1^[], k1_zfmisc_1(k1_zfmisc_1(k2_zfmisc_1(2^[], 3^[])))), r1_tarski(1^[], k1_zfmisc_1(k2_zfmisc_1(2^[], 3^[])))]   (6)  substitution:[[_G1506, _G1553], [1^[], k1_zfmisc_1(k2_zfmisc_1(2^[], 3^[]))]]
+1.1.1  [-r1_tarski(1^[], k1_zfmisc_1(k2_zfmisc_1(2^[], 3^[]))), r1_tarski(1^[], k1_funct_2(2^[], 3^[])), r1_tarski(k1_funct_2(2^[], 3^[]), k1_zfmisc_1(k2_zfmisc_1(2^[], 3^[])))]   (3)  substitution:[[_G847, _G960, _G903], [1^[], k1_zfmisc_1(k2_zfmisc_1(2^[], 3^[])), k1_funct_2(2^[], 3^[])]]
+1.1.1.1  [-r1_tarski(1^[], k1_funct_2(2^[], 3^[])), m1_subset_1(1^[], k1_zfmisc_1(k1_funct_2(2^[], 3^[])))]   (5)  substitution:[[_G1506, _G1553], [1^[], k1_funct_2(2^[], 3^[])]]
+1.1.1.1.1  [-m1_subset_1(1^[], k1_zfmisc_1(k1_funct_2(2^[], 3^[])))]   (1)  
+1.1.1.2  [-r1_tarski(k1_funct_2(2^[], 3^[]), k1_zfmisc_1(k2_zfmisc_1(2^[], 3^[])))]   (4)  substitution:[[_G1255, _G1302], [2^[], 3^[]]]
+------------------------------------------------------
+End of proof for l1_fomodel4
